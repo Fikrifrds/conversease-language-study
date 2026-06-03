@@ -1,0 +1,20 @@
+prompts:
+  - key: greet_morning
+    instruction_id: Katakan sapaan pagi.
+    prompt_en: Good morning.
+    expected_response_examples:
+      - Good morning.
+      - Hi, good morning.
+  - key: answer_how_are_you
+    instruction_id: Jawab pertanyaan "How are you?"
+    prompt_en: How are you?
+    expected_response_examples:
+      - I'm good, thank you.
+      - I'm fine, thank you.
+  - key: close_conversation
+    instruction_id: Tutup percakapan dengan sopan.
+    prompt_en: See you later.
+    expected_response_examples:
+      - See you.
+      - See you later.
+

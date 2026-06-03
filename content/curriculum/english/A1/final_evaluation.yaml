@@ -1,0 +1,87 @@
+level_code: A1
+title: A1 Level Conversation Test
+status: published
+description: Final readiness test for greeting, introducing yourself, asking simple questions, answering origin, and closing a short conversation.
+overall_threshold: 70
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 60
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a short greeting conversation and identify the speaker's name, origin, and closing phrase.
+      success_criteria:
+        - Identifies the main greeting and closing phrase.
+        - Understands a name and country from the dialogue.
+        - Chooses the correct simple response.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 60
+    task:
+      type: roleplay_response
+      prompt: Complete a short conversation with greeting, name, origin, question back, and polite closing.
+      success_criteria:
+        - Opens with a suitable greeting.
+        - Says name and origin clearly.
+        - Asks one simple follow-up question.
+        - Closes politely.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 55
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read five A1 phrases aloud with clear pacing and understandable pronunciation.
+      success_criteria:
+        - Pronounces key phrases clearly enough to understand.
+        - Uses steady pacing without long pauses.
+        - Keeps sentence stress natural for A1 phrases.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 60
+    task:
+      type: phrase_selection
+      prompt: Select useful phrases for meeting someone, asking a name, answering origin, and saying goodbye.
+      success_criteria:
+        - Chooses context-appropriate A1 phrases.
+        - Avoids phrases that do not fit the situation.
+        - Can explain the Indonesian meaning.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 60
+    task:
+      type: sentence_completion
+      prompt: Complete simple sentences using I am, my name is, where are you from, and I am from.
+      success_criteria:
+        - Uses be verbs correctly in simple sentences.
+        - Forms basic questions with correct word order.
+        - Keeps answers short and natural.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 55
+    task:
+      type: short_message_reading
+      prompt: Read a short introduction message and answer basic comprehension questions.
+      success_criteria:
+        - Finds name, country, and greeting in a short text.
+        - Understands the purpose of the message.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 55
+    task:
+      type: short_reply_writing
+      prompt: Write a short reply introducing your name, country, and one polite closing phrase.
+      success_criteria:
+        - Writes 2 to 4 clear A1 sentences.
+        - Includes name and origin.
+        - Uses one suitable closing phrase.

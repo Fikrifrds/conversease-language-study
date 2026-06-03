@@ -1,0 +1,17 @@
+questions:
+  - key: ask_name_question
+    type: multiple_choice
+    prompt: Which question asks for a name?
+    options:
+      - What's your name?
+      - Where are you from?
+      - How are you?
+    correct_answer: What's your name?
+  - key: polite_name_question
+    type: multiple_choice
+    prompt: Which phrase sounds more polite?
+    options:
+      - May I know your name?
+      - What name?
+      - Name you?
+    correct_answer: May I know your name?

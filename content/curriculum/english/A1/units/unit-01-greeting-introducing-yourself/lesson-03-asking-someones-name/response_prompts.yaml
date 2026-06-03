@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_name
+    instruction_id: Tanyakan nama seseorang.
+    prompt_en: What's your name?
+    expected_response_examples:
+      - What's your name?
+      - May I know your name?
+  - key: confirm_name
+    instruction_id: Konfirmasi nama yang kamu dengar.
+    prompt_en: Is it ...?
+    expected_response_examples:
+      - Is it Mina?
+      - Is it Sara?
+  - key: greet_with_name
+    instruction_id: Ucapkan senang bertemu sambil menyebut nama.
+    prompt_en: Nice to meet you, ...
+    expected_response_examples:
+      - Nice to meet you, Mina.
+      - Nice to meet you, Sara.

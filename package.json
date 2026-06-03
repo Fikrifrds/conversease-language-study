@@ -1,0 +1,21 @@
+{
+  "name": "conversease",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Conversation-first English learning platform for Indonesian learners.",
+  "workspaces": [
+    "apps/web",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace apps/web",
+    "build": "npm run build --workspace apps/web",
+    "lint": "npm run lint --workspace apps/web",
+    "typecheck": "npm run typecheck --workspace apps/web",
+    "test:api": "python3 -m unittest discover -s apps/api/tests -t apps/api"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}

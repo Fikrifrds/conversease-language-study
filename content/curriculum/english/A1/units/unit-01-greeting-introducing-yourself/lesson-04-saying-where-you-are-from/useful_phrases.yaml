@@ -1,0 +1,17 @@
+phrases:
+  - phrase: I'm from ...
+    meaning_id: Saya dari ...
+    usage_note: Simple answer for origin.
+    common_mistake: Do not say "I from".
+  - phrase: I live in ...
+    meaning_id: Saya tinggal di ...
+    usage_note: Use for current city.
+    common_mistake: Use "in" for city or country.
+  - phrase: How about you?
+    meaning_id: Kalau kamu?
+    usage_note: Ask the same question back.
+    common_mistake: Do not say "how you".
+  - phrase: I'm from Indonesia.
+    meaning_id: Saya dari Indonesia.
+    usage_note: A complete model answer.
+    common_mistake: Keep "am" in "I'm".

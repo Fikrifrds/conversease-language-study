@@ -1,0 +1,22 @@
+scenario_key: first_conversation_mission_online_class
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hi, good morning. My name is Sara. Where are you from?
+learner_goal: Complete a short conversation with greeting, name, origin, question back, and closing.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - Good morning
+  - My name is
+  - I'm from
+  - How about you?
+  - See you later
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

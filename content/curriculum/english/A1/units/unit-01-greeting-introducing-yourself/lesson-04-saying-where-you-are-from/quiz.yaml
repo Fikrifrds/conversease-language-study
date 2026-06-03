@@ -1,0 +1,17 @@
+questions:
+  - key: origin_sentence
+    type: multiple_choice
+    prompt: Which sentence talks about origin?
+    options:
+      - I'm from Indonesia.
+      - I am good.
+      - Nice to meet you.
+    correct_answer: I'm from Indonesia.
+  - key: keep_conversation_going
+    type: multiple_choice
+    prompt: Which phrase keeps the conversation going?
+    options:
+      - How about you?
+      - See you later.
+      - Good night.
+    correct_answer: How about you?

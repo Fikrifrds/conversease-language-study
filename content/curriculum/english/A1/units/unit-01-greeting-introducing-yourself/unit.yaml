@@ -1,0 +1,11 @@
+unit_key: unit-01-greeting-introducing-yourself
+level_code: A1
+title: Greeting & Introducing Yourself
+main_conversation_outcome: User can greet, introduce themselves, and ask someone's name.
+status: published
+lessons:
+  - lesson-01-saying-hello
+  - lesson-02-saying-your-name
+  - lesson-03-asking-someones-name
+  - lesson-04-saying-where-you-are-from
+  - lesson-05-first-conversation-mission

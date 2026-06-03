@@ -1,0 +1,113 @@
+from __future__ import annotations
+
+import time
+from dataclasses import dataclass
+from typing import Optional
+
+from fastapi import Request
+from fastapi.responses import JSONResponse
+from starlette.middleware.base import BaseHTTPMiddleware
+
+from app.core.config import settings
+from app.core.observability import current_request_id, security_headers
+
+
+AUTH_RATE_LIMIT_PATHS = {
+    "/api/auth/register",
+    "/api/auth/login",
+    "/api/auth/forgot-password",
+    "/api/auth/reset-password",
+    "/api/auth/verify-email",
+    "/api/auth/google/session",
+    "/api/auth/request-email-verification",
+}
+
+
+@dataclass
+class RateLimitBucket:
+    window_started_at: float
+    count: int
+
+
+class InMemoryRateLimiter:
+    def __init__(self) -> None:
+        self.buckets: dict[str, RateLimitBucket] = {}
+
+    def hit(self, key: str, *, limit: int, window_seconds: int, now: Optional[float] = None) -> int:
+        current_time = now if now is not None else time.monotonic()
+        bucket = self.buckets.get(key)
+
+        if bucket is None or current_time - bucket.window_started_at >= window_seconds:
+            self.buckets[key] = RateLimitBucket(window_started_at=current_time, count=1)
+            return limit - 1
+
+        bucket.count += 1
+        return limit - bucket.count
+
+    def reset(self) -> None:
+        self.buckets.clear()
+
+
+rate_limiter = InMemoryRateLimiter()
+
+
+class RateLimitMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        rule = rate_limit_rule(request)
+        if not settings.rate_limit_enabled or rule is None:
+            return await call_next(request)
+
+        rule_name, limit = rule
+        key = rate_limit_key(request, rule_name)
+        remaining = rate_limiter.hit(
+            key,
+            limit=limit,
+            window_seconds=settings.rate_limit_window_seconds,
+        )
+
+        if remaining < 0:
+            request_id = current_request_id() or request.headers.get("x-request-id", "")
+            headers = {
+                **security_headers(),
+                "retry-after": str(settings.rate_limit_window_seconds),
+                "x-ratelimit-limit": str(limit),
+                "x-ratelimit-remaining": "0",
+            }
+            if request_id:
+                headers["x-request-id"] = request_id
+
+            return JSONResponse(
+                status_code=429,
+                content={"detail": "Rate limit exceeded"},
+                headers=headers,
+            )
+
+        response = await call_next(request)
+        response.headers["x-ratelimit-limit"] = str(limit)
+        response.headers["x-ratelimit-remaining"] = str(max(remaining, 0))
+        return response
+
+
+def rate_limit_rule(request: Request) -> Optional[tuple[str, int]]:
+    if request.method == "OPTIONS":
+        return None
+
+    path = request.url.path
+    if path in AUTH_RATE_LIMIT_PATHS:
+        return ("auth", settings.auth_rate_limit_requests)
+
+    if path.startswith("/api/admin/"):
+        return ("admin", settings.admin_rate_limit_requests)
+
+    return None
+
+
+def rate_limit_key(request: Request, rule_name: str) -> str:
+    forwarded_for = request.headers.get("x-forwarded-for", "")
+    client_ip = forwarded_for.split(",")[0].strip()
+    if not client_ip and request.client:
+        client_ip = request.client.host
+    if not client_ip:
+        client_ip = "unknown"
+
+    return f"{rule_name}:{client_ip}:{request.url.path}"

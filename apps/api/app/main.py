@@ -1,0 +1,43 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.api.routes import admin_cms, auth, billing, conversation, email, health, learning
+from app.core.config import settings
+from app.core.observability import (
+    RequestContextMiddleware,
+    configure_logging,
+    unhandled_exception_handler,
+)
+from app.core.rate_limit import RateLimitMiddleware
+
+
+def create_app() -> FastAPI:
+    configure_logging()
+    app = FastAPI(
+        title="Conversease API",
+        version=settings.release_version,
+        description="Conversation-first English learning platform API.",
+    )
+
+    app.add_exception_handler(Exception, unhandled_exception_handler)
+    app.add_middleware(RateLimitMiddleware)
+    app.add_middleware(RequestContextMiddleware)
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.cors_origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
+    app.include_router(health.router, prefix="/api", tags=["health"])
+    app.include_router(auth.router, prefix="/api", tags=["auth"])
+    app.include_router(learning.router, prefix="/api", tags=["learning"])
+    app.include_router(conversation.router, prefix="/api", tags=["conversation"])
+    app.include_router(billing.router, prefix="/api", tags=["billing"])
+    app.include_router(admin_cms.router, prefix="/api", tags=["admin-cms"])
+    app.include_router(email.router, prefix="/api", tags=["email"])
+    return app
+
+
+app = create_app()

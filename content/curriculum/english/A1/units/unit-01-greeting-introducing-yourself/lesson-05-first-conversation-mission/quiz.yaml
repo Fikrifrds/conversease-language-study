@@ -1,0 +1,17 @@
+questions:
+  - key: reply_nice_to_meet_you
+    type: multiple_choice
+    prompt: What should you say after someone says "Nice to meet you"?
+    options:
+      - Nice to meet you too.
+      - Where are you from?
+      - My name question.
+    correct_answer: Nice to meet you too.
+  - key: ask_back_origin
+    type: multiple_choice
+    prompt: Which question can you ask back after answering your origin?
+    options:
+      - How about you?
+      - Good morning.
+      - See you later.
+    correct_answer: How about you?

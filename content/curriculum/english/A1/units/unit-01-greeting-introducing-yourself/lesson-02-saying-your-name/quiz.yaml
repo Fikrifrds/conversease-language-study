@@ -1,0 +1,17 @@
+questions:
+  - key: correct_name_sentence
+    type: multiple_choice
+    prompt: Which sentence is correct?
+    options:
+      - My name is Fikri.
+      - My name Fikri.
+      - I name is Fikri.
+    correct_answer: My name is Fikri.
+  - key: reply_nice_to_meet_you
+    type: multiple_choice
+    prompt: What is a natural reply to "Nice to meet you"?
+    options:
+      - Nice to meet you too.
+      - I am name Fikri.
+      - See your name.
+    correct_answer: Nice to meet you too.

@@ -1,0 +1,21 @@
+scenario_key: asking_someones_name_online_class
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hi. I am new here.
+learner_goal: Ask the coach's name, confirm it, and respond politely.
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - What's your name?
+  - May I know your name?
+  - Is it
+  - Nice to meet you
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

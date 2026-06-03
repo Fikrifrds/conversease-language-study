@@ -1,0 +1,22 @@
+phrases:
+  - phrase: Good morning
+    meaning_id: Selamat pagi
+    usage_note: Use before noon.
+    common_mistake: Do not say "good day" for a normal morning greeting.
+  - phrase: How are you?
+    meaning_id: Apa kabar?
+    usage_note: Friendly opening question.
+    common_mistake: Do not answer with only "yes" or "no".
+  - phrase: I'm good, thank you.
+    meaning_id: Aku baik, terima kasih.
+    usage_note: Simple polite answer.
+    common_mistake: Use "I'm", not "I".
+  - phrase: Nice to meet you.
+    meaning_id: Senang bertemu denganmu.
+    usage_note: Use when meeting someone for the first time.
+    common_mistake: Do not say "nice meet you".
+  - phrase: See you later.
+    meaning_id: Sampai nanti.
+    usage_note: Casual conversation closing.
+    common_mistake: Do not use this for a very formal goodbye.
+

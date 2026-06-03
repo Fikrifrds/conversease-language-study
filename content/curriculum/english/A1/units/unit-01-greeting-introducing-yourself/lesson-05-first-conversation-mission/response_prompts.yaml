@@ -1,0 +1,19 @@
+prompts:
+  - key: introduce_two_sentences
+    instruction_id: Perkenalkan diri dalam dua kalimat pendek.
+    prompt_en: Hi, good morning. My name is ...
+    expected_response_examples:
+      - Hi, good morning. My name is Fikri.
+      - Hello. My name is Rina.
+  - key: answer_origin_and_ask_back
+    instruction_id: Jawab asalmu dan tanyakan balik.
+    prompt_en: Where are you from?
+    expected_response_examples:
+      - I'm from Indonesia. How about you?
+      - I'm from Jakarta. How about you?
+  - key: close_politely
+    instruction_id: Tutup percakapan dengan sopan.
+    prompt_en: Nice to meet you.
+    expected_response_examples:
+      - Nice to meet you too. See you later.
+      - Nice to meet you too. See you.

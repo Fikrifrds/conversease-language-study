@@ -1,0 +1,78 @@
+name: Release Gates
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  api:
+    name: API
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: apps/api
+      DATABASE_URL: sqlite:///apps/api/conversease_ci.db
+      JWT_SECRET: ci-jwt-secret-at-least-32-characters
+      PAYMENT_ADMIN_API_KEY: ci-admin-key-at-least-24-chars
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install API dependencies
+        run: python -m pip install -e "apps/api[dev]"
+
+      - name: Apply migrations
+        run: alembic -c apps/api/alembic.ini upgrade head
+
+      - name: Check migration status
+        run: python -m app.db.migration_status
+
+      - name: Validate curriculum
+        run: python scripts/validate_curriculum.py
+
+      - name: Run release preflight
+        run: python scripts/release_preflight.py
+
+      - name: Check operations scripts
+        run: bash -n scripts/backup_postgres.sh scripts/verify_postgres_backup.sh
+
+      - name: Lint API
+        run: python -m ruff check apps/api/app apps/api/tests scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
+
+      - name: Test API
+        run: python -m unittest discover -s apps/api/tests -t apps/api
+
+  web:
+    name: Web
+    runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install web dependencies
+        run: npm ci
+
+      - name: Lint web
+        run: npm run lint --workspace apps/web
+
+      - name: Typecheck web
+        run: npm run typecheck --workspace apps/web
+
+      - name: Build web
+        run: npm run build --workspace apps/web

@@ -1,0 +1,7 @@
+questions:
+  - key:
+    type: multiple_choice
+    prompt:
+    options: []
+    correct_answer:
+

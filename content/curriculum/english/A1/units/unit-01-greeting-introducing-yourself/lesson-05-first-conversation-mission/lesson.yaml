@@ -1,0 +1,24 @@
+lesson_key: lesson-05-first-conversation-mission
+slug: first-conversation-mission
+title: First Conversation Mission
+status: published
+estimated_minutes: 10
+conversation_situation: first_unit_conversation_mission
+conversation_goal: Combine greeting, name, origin, and a polite closing in one short conversation.
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

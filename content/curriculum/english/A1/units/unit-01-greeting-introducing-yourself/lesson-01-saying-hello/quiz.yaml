@@ -1,0 +1,18 @@
+questions:
+  - key: phrase_first_meeting
+    type: multiple_choice
+    prompt: Which phrase is best for meeting someone for the first time?
+    options:
+      - Nice to meet you
+      - See you later
+      - Good night
+    correct_answer: Nice to meet you
+  - key: meaning_see_you_later
+    type: multiple_choice
+    prompt: What does "See you later" mean?
+    options:
+      - Sampai nanti
+      - Apa kabar
+      - Selamat pagi
+    correct_answer: Sampai nanti
+

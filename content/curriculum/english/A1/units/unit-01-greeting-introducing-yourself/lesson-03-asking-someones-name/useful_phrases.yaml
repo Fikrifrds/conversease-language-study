@@ -1,0 +1,17 @@
+phrases:
+  - phrase: What's your name?
+    meaning_id: Siapa namamu?
+    usage_note: Common simple question.
+    common_mistake: Do not say "what your name".
+  - phrase: May I know your name?
+    meaning_id: Boleh tahu nama Anda?
+    usage_note: More polite version.
+    common_mistake: Keep "may I" together.
+  - phrase: Is it Mina?
+    meaning_id: Apakah Mina?
+    usage_note: Use to confirm a name.
+    common_mistake: Do not overuse for every answer.
+  - phrase: Nice to meet you, ...
+    meaning_id: Senang bertemu denganmu, ...
+    usage_note: Add the person's name to sound attentive.
+    common_mistake: Do not forget "to".

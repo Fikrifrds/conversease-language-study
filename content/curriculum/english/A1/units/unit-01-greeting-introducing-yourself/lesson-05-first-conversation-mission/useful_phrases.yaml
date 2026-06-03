@@ -1,0 +1,17 @@
+phrases:
+  - phrase: Good morning. My name is ...
+    meaning_id: Selamat pagi. Nama saya ...
+    usage_note: Open and introduce yourself.
+    common_mistake: Do not make this too long.
+  - phrase: Where are you from?
+    meaning_id: Kamu dari mana?
+    usage_note: Ask about origin.
+    common_mistake: Do not say "where you from".
+  - phrase: How about you?
+    meaning_id: Kalau kamu?
+    usage_note: Return the question.
+    common_mistake: Use it after answering first.
+  - phrase: See you later.
+    meaning_id: Sampai nanti.
+    usage_note: Close the conversation.
+    common_mistake: Do not use "see you" at the start.

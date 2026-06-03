@@ -1,0 +1,19 @@
+prompts:
+  - key: answer_origin
+    instruction_id: Jawab asalmu.
+    prompt_en: Where are you from?
+    expected_response_examples:
+      - I'm from Indonesia.
+      - I'm from Malaysia.
+  - key: say_current_city
+    instruction_id: Sebutkan kota tempat tinggalmu.
+    prompt_en: I live in ...
+    expected_response_examples:
+      - I live in Jakarta.
+      - I live in Bandung.
+  - key: ask_back_origin
+    instruction_id: Tanyakan balik pertanyaan yang sama.
+    prompt_en: How about you?
+    expected_response_examples:
+      - How about you?
+      - And you?
