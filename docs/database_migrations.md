@@ -70,8 +70,8 @@ The app's built-in fallback uses SQLite when `DATABASE_URL` is omitted:
 apps/api/conversease_dev.db
 ```
 
-The committed local `.env` and Docker Compose setup use PostgreSQL database
-`conversease_db` so local schema behavior stays close to production:
+Use `.env.local` for local development. The recommended local database is
+`conversease_db` so schema behavior stays close to production:
 
 ```bash
 DATABASE_URL=postgresql+psycopg://conversease:conversease@localhost:5432/conversease_db

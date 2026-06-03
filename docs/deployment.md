@@ -15,7 +15,7 @@ SQLite is only for local development. Production startup fails when `APP_ENV=pro
 
 ## Environment
 
-Copy `.env.example` and replace all placeholder values. Production startup rejects template placeholders such as `replace-with...` and `<...>`. In production, set at minimum:
+Copy `.env.production.example` to `.env.production` on the server and replace all placeholder values. Production startup rejects template placeholders such as `replace-with...` and `<...>`. In production, set at minimum:
 
 ```bash
 APP_ENV=production

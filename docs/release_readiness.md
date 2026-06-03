@@ -24,7 +24,7 @@ This document tracks the Conversease MVP release candidate.
   - First Conversation Mission
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
-- Production env validation rejects unsafe production defaults and placeholder secrets from `.env.example`.
+- Production env validation rejects unsafe production defaults and placeholder secrets from `.env.production.example`.
 - API liveness, readiness, and runtime metrics endpoints are available at `/api/health`, `/api/ready`, and `/api/metrics`; readiness verifies database connectivity and Alembic migration head.
 - API request tracing, structured request logging, security headers, backup script, backup verification helper, and operations runbook are available.
 - Web app security headers are configured through Next.js and verified by the post-deploy smoke script.
@@ -61,7 +61,7 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Conversation Coach and final-test readiness preview currently use deterministic/self-check logic. Beta final-test attempts can be manually reviewed by admin, while public automated speaking assessment still needs production AI/STT/TTS credentials and worker orchestration.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.
-- Configure production env from `.env.example` with real non-placeholder values and verify `APP_ENV=production` starts only with PostgreSQL, HTTPS URLs, explicit CORS, a strong JWT secret, Google OAuth credentials, admin payment key, and Resend key.
+- Configure production env from `.env.production.example` with real non-placeholder values and verify `APP_ENV=production` starts only with PostgreSQL, HTTPS URLs, explicit CORS, a strong JWT secret, Google OAuth credentials, admin payment key, and Resend key.
 - Configure external uptime monitoring, error tracking, and edge/WAF rate limiting before public paid traffic.
 
 ## Release Policy

@@ -62,7 +62,7 @@ class Settings(BaseSettings):
     auth_rate_limit_requests: int = 30
     admin_rate_limit_requests: int = 120
 
-    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    model_config = SettingsConfigDict(env_file=(".env", ".env.local"), extra="ignore")
 
     @property
     def cors_origins(self) -> List[str]:

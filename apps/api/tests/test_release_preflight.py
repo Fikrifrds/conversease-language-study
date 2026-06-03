@@ -85,6 +85,31 @@ class ReleasePreflightTest(unittest.TestCase):
             "http://localhost:8000/api",
         )
 
+    def test_web_runtime_config_prefers_dotenv_local(self):
+        settings = SimpleNamespace(
+            api_base_url="http://localhost:9000",
+            is_production=False,
+        )
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            root = Path(tmp_dir)
+            (root / ".env").write_text(
+                "NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api\n",
+                encoding="utf-8",
+            )
+            (root / ".env.local").write_text(
+                "NEXT_PUBLIC_API_BASE_URL=http://localhost:9000/api\n",
+                encoding="utf-8",
+            )
+            with patch.dict(self.preflight.os.environ, {}, clear=True):
+                result = self.preflight.check_web_runtime_config(settings, root)
+
+        self.assertEqual(result.status, "pass")
+        self.assertEqual(
+            result.details["configured_next_public_api_base_url"],
+            "http://localhost:9000/api",
+        )
+
     def test_web_runtime_config_fails_when_missing_in_production(self):
         settings = SimpleNamespace(
             api_base_url="https://api.conversease.com",

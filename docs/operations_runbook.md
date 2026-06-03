@@ -34,7 +34,7 @@ Production env must include:
 - Bank Jago manual-transfer account details
 - Rate limit env values, unless using the documented defaults
 
-Production secrets must be real values. Do not deploy with `.env.example` placeholders such as `replace-with...` or `<...>`.
+Production secrets must be real values. Do not deploy with `.env.production.example` placeholders such as `replace-with...` or `<...>`.
 
 Before accepting paid beta users, send a real admin test email:
 

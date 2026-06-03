@@ -14,6 +14,12 @@ This repository starts the MVP foundation from the PRD:
 
 ## First Run
 
+Create local environment config:
+
+```bash
+cp .env.example .env.local
+```
+
 Install frontend dependencies:
 
 ```bash
@@ -38,9 +44,10 @@ Run database migrations:
 apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
 ```
 
-The checked-in local `.env` targets PostgreSQL database `conversease_db`.
-For direct host development, create it on local PostgreSQL; Docker Compose creates
-the same database name inside the `postgres` service on first initialization.
+The local `.env.local` should target PostgreSQL database `conversease_db`.
+For direct host development, create it on local PostgreSQL. Docker Compose creates
+the same database name inside the `postgres` service and overrides database/cache
+hostnames for containers.
 
 Check applied vs pending migration files:
 

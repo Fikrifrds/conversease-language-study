@@ -143,24 +143,28 @@ def expected_next_public_api_base_url(settings: Any) -> str:
     return f"{settings.api_base_url.rstrip('/')}/api"
 
 
+def dotenv_paths(root: Path = REPO_ROOT) -> list[Path]:
+    return [root / ".env.local", root / ".env"]
+
+
 def dotenv_value(key: str, root: Path = REPO_ROOT) -> str:
-    env_path = root / ".env"
-    if not env_path.exists():
-        return ""
-
-    for raw_line in env_path.read_text(encoding="utf-8").splitlines():
-        line = raw_line.strip()
-        if not line or line.startswith("#") or "=" not in line:
+    for env_path in dotenv_paths(root):
+        if not env_path.exists():
             continue
 
-        name, value = line.split("=", 1)
-        if name.strip() != key:
-            continue
+        for raw_line in env_path.read_text(encoding="utf-8").splitlines():
+            line = raw_line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
 
-        value = value.strip()
-        if len(value) >= 2 and value[0] == value[-1] and value[0] in {'"', "'"}:
-            value = value[1:-1]
-        return value
+            name, value = line.split("=", 1)
+            if name.strip() != key:
+                continue
+
+            value = value.strip()
+            if len(value) >= 2 and value[0] == value[-1] and value[0] in {'"', "'"}:
+                value = value[1:-1]
+            return value
 
     return ""
 
