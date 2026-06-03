@@ -24,6 +24,12 @@ class AdminCmsTest(unittest.TestCase):
         template = get_email_template("auth_verify_email")
 
         self.assertEqual(summary["course"]["lesson_count"], 5)
+        self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 200)
+        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 5)
+        self.assertEqual(
+            [level["course"]["level_code"] for level in summary["readiness_levels"]],
+            ["A1", "A2", "B1", "B2", "C1"],
+        )
         self.assertEqual(summary["validation_issues"], [])
         self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_online_class")
         self.assertEqual(len(lesson["content_hash"]), 64)
@@ -66,6 +72,10 @@ class AdminCmsTest(unittest.TestCase):
             self.assertEqual(unauthorized.status_code, 401)
             self.assertEqual(authorized.status_code, 200)
             self.assertEqual(authorized.json()["data"]["curriculum"]["course"]["lesson_count"], 5)
+            self.assertEqual(
+                authorized.json()["data"]["curriculum"]["readiness_overview"]["planned_lesson_count"],
+                200,
+            )
             self.assertEqual(legacy_email_route.status_code, 200)
         finally:
             settings.payment_admin_api_key = original_key

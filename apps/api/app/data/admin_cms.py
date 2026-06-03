@@ -6,7 +6,7 @@ from typing import Any, Optional
 
 import yaml
 
-from app.data.content_readiness import content_readiness_summary
+from app.data.content_readiness import all_content_readiness_summary, content_readiness_summary
 from app.data.curriculum import (
     A1_COURSE,
     get_lesson_or_none,
@@ -38,6 +38,7 @@ def curriculum_summary() -> dict[str, Any]:
                 )
             )
 
+    all_readiness = all_content_readiness_summary()
     return {
         "course": {
             "slug": A1_COURSE["course_slug"],
@@ -48,6 +49,8 @@ def curriculum_summary() -> dict[str, Any]:
         },
         "lessons": lessons,
         "readiness": content_readiness_summary(),
+        "readiness_overview": all_readiness["summary"],
+        "readiness_levels": all_readiness["levels"],
         "validation_issues": validate_curriculum_content(),
     }
 

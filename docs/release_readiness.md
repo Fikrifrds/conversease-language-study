@@ -14,7 +14,7 @@ This document tracks the Conversease MVP release candidate.
 - Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
 - Admin email diagnostics can list, render, and send test emails through `/api/admin/email-templates`, `/api/admin/test-email/render`, and `/api/admin/test-email/send`.
 - Admin CMS page for controlled editing of curriculum lesson metadata, lesson roleplay setup, and email templates, with content revision audit logs, revision rollback, and stale edit protection.
-- Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from `content/curriculum/english/A1/content_plan.yaml`, actual content files, and `content/production_tracker.csv`.
+- Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from every `content/curriculum/*/*/content_plan.yaml`, actual content files, and `content/production_tracker.csv`.
 - Admin A1 final-test review page for beta manual scoring of submitted attempts and official user report updates.
 - Sandbox package activation remains available for local QA only and is disabled in production.
 - A1 Unit 1 content structure with 5 published lessons:
@@ -24,7 +24,7 @@ This document tracks the Conversease MVP release candidate.
   - Saying Where You Are From
   - First Conversation Mission
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
-- Content readiness report is available at `scripts/content_readiness_report.py`; current English A1 has 40 planned lessons, 5 implemented text-ready lessons, and 0 generated audio-ready lessons.
+- Content readiness report is available at `scripts/content_readiness_report.py`; current English A1-C1 has 200 planned lessons, 5 implemented text-ready lessons, and 0 generated audio-ready lessons.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
 - Production env validation rejects unsafe production defaults and placeholder secrets from `.env.production.example`.
 - API liveness, readiness, and runtime metrics endpoints are available at `/api/health`, `/api/ready`, and `/api/metrics`; readiness verifies database connectivity and Alembic migration head.
@@ -62,6 +62,7 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Manual transfer checkout links can be reopened by the owning user through `/billing?order_id=<order-id>` to recover instructions and current order status.
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
 - Full public A1 release still needs all 40 planned A1 lessons text-ready and audio-ready. Current content supports Unit 1 beta only; Units 2-8 are planned but not implemented.
+- Full multi-level release needs all launched levels in A1-C1 text-ready and audio-ready. Current A2, B1, B2, and C1 plans are tracked but not implemented.
 - Conversation Coach and final-test readiness preview currently use deterministic/self-check logic. Beta final-test attempts can be manually reviewed by admin, while public automated speaking assessment still needs production AI/STT/TTS credentials and worker orchestration.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.

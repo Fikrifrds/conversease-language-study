@@ -1,6 +1,6 @@
 import unittest
 
-from app.data.content_readiness import content_readiness_summary
+from app.data.content_readiness import all_content_readiness_summary, content_readiness_summary
 
 
 class ContentReadinessTest(unittest.TestCase):
@@ -36,6 +36,21 @@ class ContentReadinessTest(unittest.TestCase):
         self.assertFalse(first_planned_lesson["text_ready"])
         self.assertEqual(first_planned_lesson["status"], "planned_missing_content")
         self.assertIn("Lesson metadata", first_planned_lesson["missing_items"])
+
+    def test_all_supported_english_levels_are_tracked(self):
+        readiness = all_content_readiness_summary(language="english")
+
+        self.assertEqual(readiness["level_count"], 5)
+        self.assertEqual(
+            [level["course"]["level_code"] for level in readiness["levels"]],
+            ["A1", "A2", "B1", "B2", "C1"],
+        )
+        self.assertEqual(readiness["summary"]["planned_lesson_count"], 200)
+        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 5)
+        self.assertEqual(readiness["summary"]["text_ready_count"], 5)
+        self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
+        self.assertEqual(readiness["summary"]["missing_content_count"], 195)
+        self.assertEqual(readiness["summary"]["missing_audio_count"], 200)
 
 
 if __name__ == "__main__":

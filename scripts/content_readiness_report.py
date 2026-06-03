@@ -19,15 +19,15 @@ def ensure_api_import_path() -> None:
 
 def main(argv: Optional[Sequence[str]] = None) -> int:
     parser = argparse.ArgumentParser(description="Generate Conversease content readiness reports.")
-    parser.add_argument("--language", default="english", help="Curriculum language folder. Defaults to english.")
-    parser.add_argument("--level", default="A1", help="Level code. Defaults to A1.")
+    parser.add_argument("--language", default=None, help="Optional curriculum language folder filter.")
+    parser.add_argument("--level", default=None, help="Optional level code filter.")
     parser.add_argument("--format", choices=("json", "markdown"), default="markdown")
     args = parser.parse_args(argv)
 
     ensure_api_import_path()
-    from app.data.content_readiness import content_readiness_summary, render_markdown_report
+    from app.data.content_readiness import all_content_readiness_summary, render_markdown_report
 
-    readiness = content_readiness_summary(language=args.language, level_code=args.level)
+    readiness = all_content_readiness_summary(language=args.language, level_code=args.level)
     if args.format == "json":
         print(json.dumps(readiness, indent=2, sort_keys=True))
     else:

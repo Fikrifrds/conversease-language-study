@@ -4,12 +4,12 @@ This document is the working guide for Conversease curriculum production.
 
 ## Release State
 
-The app is technically ready for controlled beta, but A1 content is not complete
-for a full public "A1 sampai selesai" release.
+The app is technically ready for controlled beta, but the full English learning
+path is not complete for a public release across all supported levels.
 
-Current English A1 status:
+Current English A1-C1 status:
 
-- Planned A1 lessons: 40
+- Planned lessons: 200
 - Implemented lessons: 5
 - Text-ready lessons: 5
 - Audio-ready lessons: 0
@@ -17,8 +17,8 @@ Current English A1 status:
 - Production-ready lessons: 0
 
 Controlled beta can use Unit 1 with text-based listening scripts and
-Conversation Coach. Full public release should complete all planned A1 lessons
-and generate listening/phrase audio.
+Conversation Coach. Full public release should complete all planned lessons for
+the intended launch level set and generate listening/phrase audio.
 
 ## Admin Checks
 
@@ -47,15 +47,29 @@ Use JSON output for automation:
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format json
 ```
 
-## A1 Chapter Checklist
+## Level Checklist
 
-The A1 roadmap is tracked in:
+Each supported level has a file-based roadmap:
 
 ```text
 content/curriculum/english/A1/content_plan.yaml
+content/curriculum/english/A2/content_plan.yaml
+content/curriculum/english/B1/content_plan.yaml
+content/curriculum/english/B2/content_plan.yaml
+content/curriculum/english/C1/content_plan.yaml
 ```
 
-Current planned units:
+Current level readiness:
+
+| Level | Planned Lessons | Implemented | Text Ready | Audio Ready | Current Gap |
+|---|---:|---:|---:|---:|---|
+| A1 | 40 | 5 | 5 | 0 | Unit 1 text-ready, audio missing; Units 2-8 missing files |
+| A2 | 40 | 0 | 0 | 0 | All lesson files missing |
+| B1 | 40 | 0 | 0 | 0 | All lesson files missing |
+| B2 | 40 | 0 | 0 | 0 | All lesson files missing |
+| C1 | 40 | 0 | 0 | 0 | All lesson files missing |
+
+A1 planned units:
 
 | Unit | Status | Lessons | Current Gap |
 |---|---:|---:|---|
@@ -103,10 +117,10 @@ after audio URLs and duration are filled in `audio_manifest.yaml`.
 Use this prompt to generate one complete lesson package.
 
 ```text
-You are creating Conversease English A1 curriculum for Indonesian learners.
+You are creating Conversease English {level_code} curriculum for Indonesian learners.
 
 Generate production-ready content for:
-- Level: A1
+- Level: {level_code}
 - Unit: {unit_key} - {unit_title}
 - Lesson: {lesson_key} - {lesson_title}
 - Conversation outcome: {conversation_outcome}
@@ -115,7 +129,12 @@ Generate production-ready content for:
 
 Constraints:
 - Conversation-first, not grammar-first.
-- Use very simple A1 English.
+- Match the CEFR level exactly:
+  - A1: very short, concrete, beginner-safe phrases.
+  - A2: everyday routines, simple past/future, short reasons.
+  - B1: connected speech, experiences, opinions, workplace basics.
+  - B2: professional discussions, arguments, tradeoffs, presentations.
+  - C1: nuanced, precise, strategic communication.
 - Explain support notes in Indonesian.
 - No slang unless explicitly useful.
 - Avoid cultural assumptions.
@@ -151,7 +170,7 @@ Quality rules:
 Use this when only the listening section is missing or weak.
 
 ```text
-Create an English A1 listening dialogue for Indonesian learners.
+Create an English {level_code} listening dialogue for Indonesian learners.
 
 Lesson:
 - Unit: {unit_title}
@@ -175,7 +194,8 @@ Output:
 ## Quiz Prompt
 
 ```text
-Create A1 quiz.yaml for this Conversease lesson:
+Create {level_code} quiz.yaml for this Conversease lesson:
+- Level: {level_code}
 - Lesson title: {lesson_title}
 - Conversation goal: {conversation_goal}
 - Target phrases: {target_phrases}
@@ -194,7 +214,7 @@ Return valid YAML only.
 ## Roleplay Prompt
 
 ```text
-Create conversation_coach_roleplay.yaml for English A1.
+Create conversation_coach_roleplay.yaml for English {level_code}.
 
 Lesson:
 - lesson_key: {lesson_key}
@@ -204,7 +224,7 @@ Lesson:
 Requirements:
 - scenario_key must be lowercase snake_case.
 - mode: lesson_practice_coach
-- level_code: A1
+- level_code: {level_code}
 - opening_line: one simple English sentence from the coach.
 - learner_goal: one clear sentence explaining what learner must do.
 - max_turns: 6-8.
@@ -221,7 +241,7 @@ not support multi-speaker generation in one pass, generate each speaker
 separately and combine the files in audio editing software.
 
 ```text
-Generate English A1 learning audio.
+Generate English {level_code} learning audio.
 
 Style:
 - clear classroom audio
@@ -281,7 +301,11 @@ For each lesson:
 content/curriculum/english/A1/units/{unit_key}/{lesson_key}/
 ```
 
-3. Add the lesson key to the unit's `unit.yaml`.
+Replace `A1` with the target level code for A2, B1, B2, or C1.
+
+3. Add the lesson key to the unit's `unit.yaml` when the level has an active
+   course loader. Planned future levels can be tracked from `content_plan.yaml`
+   before their runtime course loader is enabled.
 4. Update `content/production_tracker.csv`.
 5. Run:
 
@@ -296,5 +320,6 @@ PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
 
 ## Release Rule
 
-- Controlled beta: minimum Unit 1 text-ready, app smoke test passes, payments/admin email tested.
+- Controlled beta: minimum A1 Unit 1 text-ready, app smoke test passes, payments/admin email tested.
 - Full A1 public release: all 40 A1 lessons text-ready, all listening/phrase audio generated, final evaluation reviewed, and release preflight passes.
+- Full multi-level public release: every launched level in A1-C1 is text-ready, audio-ready, reviewed, and visible in Admin CMS Readiness.

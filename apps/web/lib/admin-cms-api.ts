@@ -70,18 +70,21 @@ export type AdminContentReadiness = {
     courseSlug: string;
     courseTitle: string;
     targetLessonCount: number;
+    planPath: string;
   };
-  summary: {
-    plannedLessonCount: number;
-    implementedLessonCount: number;
-    textReadyCount: number;
-    audioReadyCount: number;
-    betaReadyCount: number;
-    productionReadyCount: number;
-    missingContentCount: number;
-    missingAudioCount: number;
-  };
+  summary: AdminContentReadinessOverview;
   units: AdminContentReadinessUnit[];
+};
+
+export type AdminContentReadinessOverview = {
+  plannedLessonCount: number;
+  implementedLessonCount: number;
+  textReadyCount: number;
+  audioReadyCount: number;
+  betaReadyCount: number;
+  productionReadyCount: number;
+  missingContentCount: number;
+  missingAudioCount: number;
 };
 
 export type AdminEmailTemplate = {
@@ -116,6 +119,8 @@ export type AdminCmsSummary = {
     };
     lessons: AdminCmsLesson[];
     readiness: AdminContentReadiness;
+    readinessOverview: AdminContentReadinessOverview;
+    readinessLevels: AdminContentReadiness[];
     validationIssues: string[];
   };
   emailTemplates: AdminEmailTemplate[];
@@ -204,18 +209,21 @@ type ApiAdminContentReadiness = {
     course_slug: string;
     course_title: string;
     target_lesson_count: number;
+    plan_path: string;
   };
-  summary: {
-    planned_lesson_count: number;
-    implemented_lesson_count: number;
-    text_ready_count: number;
-    audio_ready_count: number;
-    beta_ready_count: number;
-    production_ready_count: number;
-    missing_content_count: number;
-    missing_audio_count: number;
-  };
+  summary: ApiAdminContentReadinessOverview;
   units: ApiAdminContentReadinessUnit[];
+};
+
+type ApiAdminContentReadinessOverview = {
+  planned_lesson_count: number;
+  implemented_lesson_count: number;
+  text_ready_count: number;
+  audio_ready_count: number;
+  beta_ready_count: number;
+  production_ready_count: number;
+  missing_content_count: number;
+  missing_audio_count: number;
 };
 
 type ApiAdminEmailTemplate = {
@@ -300,18 +308,10 @@ function mapReadiness(readiness: ApiAdminContentReadiness): AdminContentReadines
       levelCode: readiness.course.level_code,
       courseSlug: readiness.course.course_slug,
       courseTitle: readiness.course.course_title,
-      targetLessonCount: readiness.course.target_lesson_count
+      targetLessonCount: readiness.course.target_lesson_count,
+      planPath: readiness.course.plan_path
     },
-    summary: {
-      plannedLessonCount: readiness.summary.planned_lesson_count,
-      implementedLessonCount: readiness.summary.implemented_lesson_count,
-      textReadyCount: readiness.summary.text_ready_count,
-      audioReadyCount: readiness.summary.audio_ready_count,
-      betaReadyCount: readiness.summary.beta_ready_count,
-      productionReadyCount: readiness.summary.production_ready_count,
-      missingContentCount: readiness.summary.missing_content_count,
-      missingAudioCount: readiness.summary.missing_audio_count
-    },
+    summary: mapReadinessOverview(readiness.summary),
     units: readiness.units.map((unit) => ({
       unitKey: unit.unit_key,
       title: unit.title,
@@ -352,6 +352,19 @@ function mapReadiness(readiness: ApiAdminContentReadiness): AdminContentReadines
   };
 }
 
+function mapReadinessOverview(overview: ApiAdminContentReadinessOverview): AdminContentReadinessOverview {
+  return {
+    plannedLessonCount: overview.planned_lesson_count,
+    implementedLessonCount: overview.implemented_lesson_count,
+    textReadyCount: overview.text_ready_count,
+    audioReadyCount: overview.audio_ready_count,
+    betaReadyCount: overview.beta_ready_count,
+    productionReadyCount: overview.production_ready_count,
+    missingContentCount: overview.missing_content_count,
+    missingAudioCount: overview.missing_audio_count
+  };
+}
+
 function mapRevision(revision: ApiAdminContentRevision): AdminContentRevision {
   return {
     id: revision.id,
@@ -379,6 +392,8 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
         };
         lessons: ApiAdminLesson[];
         readiness: ApiAdminContentReadiness;
+        readiness_overview: ApiAdminContentReadinessOverview;
+        readiness_levels: ApiAdminContentReadiness[];
         validation_issues: string[];
       };
       email_templates: ApiAdminEmailTemplate[];
@@ -397,6 +412,8 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
       },
       lessons: response.data.curriculum.lessons.map(mapLesson),
       readiness: mapReadiness(response.data.curriculum.readiness),
+      readinessOverview: mapReadinessOverview(response.data.curriculum.readiness_overview),
+      readinessLevels: response.data.curriculum.readiness_levels.map(mapReadiness),
       validationIssues: response.data.curriculum.validation_issues
     },
     emailTemplates: response.data.email_templates.map(mapEmailTemplate),

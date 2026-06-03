@@ -10,6 +10,7 @@ from app.data.curriculum import curriculum_root, production_tracker_path
 
 
 AUDIO_READY_STATUSES = {"done", "generated", "published"}
+SUPPORTED_LEVEL_CODES = ("A1", "A2", "B1", "B2", "C1")
 
 REQUIRED_CONTENT_ITEMS = (
     {
@@ -124,6 +125,26 @@ def content_plan_path(language: str = "english", level_code: str = "A1") -> Path
     return curriculum_root() / language / level_code / "content_plan.yaml"
 
 
+def discover_content_plan_paths(
+    *,
+    language: Optional[str] = None,
+    level_code: Optional[str] = None,
+) -> list[Path]:
+    root = curriculum_root()
+    if language and level_code:
+        path = content_plan_path(language, level_code)
+        return [path] if path.exists() else []
+
+    if language:
+        paths = sorted((root / language).glob("*/content_plan.yaml"))
+    elif level_code:
+        paths = sorted(root.glob(f"*/{level_code}/content_plan.yaml"))
+    else:
+        paths = sorted(root.glob("*/*/content_plan.yaml"))
+
+    return [path for path in paths if path.is_file()]
+
+
 def load_content_plan(language: str = "english", level_code: str = "A1") -> dict[str, Any]:
     path = content_plan_path(language, level_code)
     if not path.exists():
@@ -146,8 +167,61 @@ def load_content_plan(language: str = "english", level_code: str = "A1") -> dict
     return data
 
 
+def load_content_plan_from_path(path: Path) -> dict[str, Any]:
+    with path.open("r", encoding="utf-8") as file:
+        data = yaml.safe_load(file) or {}
+
+    if not isinstance(data, dict):
+        raise ValueError(f"Content plan must be a mapping: {path}")
+
+    language = path.parents[1].name
+    level_code = path.parent.name
+    return {
+        "language": language,
+        "level_code": level_code,
+        **data,
+    }
+
+
 def content_readiness_summary(language: str = "english", level_code: str = "A1") -> dict[str, Any]:
     plan = load_content_plan(language, level_code)
+    return content_readiness_from_plan(
+        plan,
+        language=language,
+        level_code=level_code,
+        plan_path=content_plan_path(language, level_code),
+    )
+
+
+def all_content_readiness_summary(
+    *,
+    language: Optional[str] = None,
+    level_code: Optional[str] = None,
+) -> dict[str, Any]:
+    levels = [
+        content_readiness_from_plan(
+            load_content_plan_from_path(path),
+            language=path.parents[1].name,
+            level_code=path.parent.name,
+            plan_path=path,
+        )
+        for path in discover_content_plan_paths(language=language, level_code=level_code)
+    ]
+
+    return {
+        "summary": rollup_summary(levels),
+        "level_count": len(levels),
+        "levels": levels,
+    }
+
+
+def content_readiness_from_plan(
+    plan: dict[str, Any],
+    *,
+    language: str,
+    level_code: str,
+    plan_path: Path,
+) -> dict[str, Any]:
     tracker = load_tracker_rows()
     base_root = curriculum_root() / language / level_code
     units = []
@@ -213,11 +287,31 @@ def content_readiness_summary(language: str = "english", level_code: str = "A1")
             "course_slug": plan.get("course_slug", ""),
             "course_title": plan.get("course_title", ""),
             "target_lesson_count": int(plan.get("target_lesson_count") or 0),
+            "plan_path": str(plan_path),
         },
         "summary": summary,
         "required_items": list(REQUIRED_CONTENT_ITEMS),
         "units": units,
     }
+
+
+def rollup_summary(levels: list[dict[str, Any]]) -> dict[str, int]:
+    summary = {
+        "planned_lesson_count": 0,
+        "implemented_lesson_count": 0,
+        "text_ready_count": 0,
+        "audio_ready_count": 0,
+        "beta_ready_count": 0,
+        "production_ready_count": 0,
+        "missing_content_count": 0,
+        "missing_audio_count": 0,
+    }
+
+    for level in levels:
+        for key in summary:
+            summary[key] += int(level.get("summary", {}).get(key, 0))
+
+    return summary
 
 
 def lesson_readiness(
@@ -361,14 +455,45 @@ def load_tracker_rows() -> dict[tuple[str, str, str], dict[str, str]]:
 
 
 def render_markdown_report(readiness: Optional[dict[str, Any]] = None) -> str:
-    source = readiness or content_readiness_summary()
+    source = readiness or all_content_readiness_summary()
+    if "levels" in source:
+        return render_markdown_collection(source)
+
+    return render_markdown_level(source)
+
+
+def render_markdown_collection(source: dict[str, Any]) -> str:
     summary = source["summary"]
     lines = [
         "# Content Readiness Report",
         "",
-        f"Course: {source['course']['course_title']} ({source['course']['level_code']})",
+        f"- Levels tracked: {source['level_count']}",
+        f"- Planned lessons: {summary['planned_lesson_count']}",
+        f"- Implemented lessons: {summary['implemented_lesson_count']}",
+        f"- Text-ready lessons: {summary['text_ready_count']}",
+        f"- Audio-ready lessons: {summary['audio_ready_count']}",
+        f"- Beta-ready lessons: {summary['beta_ready_count']}",
+        f"- Production-ready lessons: {summary['production_ready_count']}",
+        f"- Lessons missing content: {summary['missing_content_count']}",
+        f"- Lessons missing audio: {summary['missing_audio_count']}",
         "",
-        "## Summary",
+    ]
+
+    for level in source["levels"]:
+        lines.append(render_markdown_level(level, heading_level=2).strip())
+        lines.append("")
+
+    return "\n".join(lines).strip() + "\n"
+
+
+def render_markdown_level(source: dict[str, Any], *, heading_level: int = 1) -> str:
+    summary = source["summary"]
+    heading = "#" * heading_level
+    subheading = "#" * (heading_level + 1)
+    lines = [
+        f"{heading} {source['course']['course_title']} ({source['course']['level_code']})",
+        "",
+        f"{subheading} Summary",
         "",
         f"- Planned lessons: {summary['planned_lesson_count']}",
         f"- Implemented lessons: {summary['implemented_lesson_count']}",
@@ -384,7 +509,7 @@ def render_markdown_report(readiness: Optional[dict[str, Any]] = None) -> str:
     for unit in source["units"]:
         lines.extend(
             [
-                f"## {unit['unit_key']} - {unit['title']}",
+                f"{subheading} {unit['unit_key']} - {unit['title']}",
                 "",
                 "| Lesson | Status | Missing |",
                 "|---|---|---|",

@@ -1,0 +1,214 @@
+language: english
+language_code: en
+level_code: C1
+course_slug: english-c1-advanced-fluency
+course_title: Advanced Fluency
+target_lesson_count: 40
+units:
+  - unit_key: unit-01-nuanced-opinions
+    title: Nuanced Opinions
+    status: planned
+    main_conversation_outcome: Express nuanced opinions with precision and flexibility.
+    lessons:
+      - lesson_key: lesson-01-qualifying-your-opinion
+        slug: qualifying-your-opinion
+        title: Qualifying Your Opinion
+        status: planned
+      - lesson_key: lesson-02-expressing-certainty-and-doubt
+        slug: expressing-certainty-and-doubt
+        title: Expressing Certainty and Doubt
+        status: planned
+      - lesson_key: lesson-03-balancing-two-viewpoints
+        slug: balancing-two-viewpoints
+        title: Balancing Two Viewpoints
+        status: planned
+      - lesson_key: lesson-04-softening-disagreement
+        slug: softening-disagreement
+        title: Softening Disagreement
+        status: planned
+      - lesson_key: lesson-05-nuanced-opinion-mission
+        slug: nuanced-opinion-mission
+        title: Nuanced Opinion Mission
+        status: planned
+
+  - unit_key: unit-02-strategic-workplace-communication
+    title: Strategic Workplace Communication
+    status: planned
+    main_conversation_outcome: Communicate strategically in complex professional situations.
+    lessons:
+      - lesson_key: lesson-01-aligning-stakeholders
+        slug: aligning-stakeholders
+        title: Aligning Stakeholders
+        status: planned
+      - lesson_key: lesson-02-managing-expectations
+        slug: managing-expectations
+        title: Managing Expectations
+        status: planned
+      - lesson_key: lesson-03-handling-sensitive-feedback
+        slug: handling-sensitive-feedback
+        title: Handling Sensitive Feedback
+        status: planned
+      - lesson_key: lesson-04-communicating-risk
+        slug: communicating-risk
+        title: Communicating Risk
+        status: planned
+      - lesson_key: lesson-05-strategic-workplace-mission
+        slug: strategic-workplace-mission
+        title: Strategic Workplace Mission
+        status: planned
+
+  - unit_key: unit-03-advanced-presentations
+    title: Advanced Presentations
+    status: planned
+    main_conversation_outcome: Present complex ideas and handle challenging questions.
+    lessons:
+      - lesson_key: lesson-01-framing-a-complex-topic
+        slug: framing-a-complex-topic
+        title: Framing a Complex Topic
+        status: planned
+      - lesson_key: lesson-02-building-a-persuasive-flow
+        slug: building-a-persuasive-flow
+        title: Building a Persuasive Flow
+        status: planned
+      - lesson_key: lesson-03-using-precise-transitions
+        slug: using-precise-transitions
+        title: Using Precise Transitions
+        status: planned
+      - lesson_key: lesson-04-handling-challenging-questions
+        slug: handling-challenging-questions
+        title: Handling Challenging Questions
+        status: planned
+      - lesson_key: lesson-05-advanced-presentation-mission
+        slug: advanced-presentation-mission
+        title: Advanced Presentation Mission
+        status: planned
+
+  - unit_key: unit-04-debate-and-analysis
+    title: Debate & Analysis
+    status: planned
+    main_conversation_outcome: Analyze arguments and respond persuasively in debate-style conversations.
+    lessons:
+      - lesson_key: lesson-01-identifying-assumptions
+        slug: identifying-assumptions
+        title: Identifying Assumptions
+        status: planned
+      - lesson_key: lesson-02-challenging-an-argument
+        slug: challenging-an-argument
+        title: Challenging an Argument
+        status: planned
+      - lesson_key: lesson-03-presenting-evidence
+        slug: presenting-evidence
+        title: Presenting Evidence
+        status: planned
+      - lesson_key: lesson-04-responding-under-pressure
+        slug: responding-under-pressure
+        title: Responding Under Pressure
+        status: planned
+      - lesson_key: lesson-05-debate-analysis-mission
+        slug: debate-analysis-mission
+        title: Debate Analysis Mission
+        status: planned
+
+  - unit_key: unit-05-cross-cultural-professionalism
+    title: Cross-cultural Professionalism
+    status: planned
+    main_conversation_outcome: Communicate across cultures with tact, clarity, and professionalism.
+    lessons:
+      - lesson_key: lesson-01-reading-context
+        slug: reading-context
+        title: Reading Context
+        status: planned
+      - lesson_key: lesson-02-asking-tactful-questions
+        slug: asking-tactful-questions
+        title: Asking Tactful Questions
+        status: planned
+      - lesson_key: lesson-03-explaining-local-norms
+        slug: explaining-local-norms
+        title: Explaining Local Norms
+        status: planned
+      - lesson_key: lesson-04-repairing-misunderstanding
+        slug: repairing-misunderstanding
+        title: Repairing Misunderstanding
+        status: planned
+      - lesson_key: lesson-05-cross-cultural-mission
+        slug: cross-cultural-mission
+        title: Cross-cultural Mission
+        status: planned
+
+  - unit_key: unit-06-leadership-and-coaching
+    title: Leadership & Coaching
+    status: planned
+    main_conversation_outcome: Lead conversations, coach others, and guide decisions.
+    lessons:
+      - lesson_key: lesson-01-setting-direction
+        slug: setting-direction
+        title: Setting Direction
+        status: planned
+      - lesson_key: lesson-02-coaching-with-questions
+        slug: coaching-with-questions
+        title: Coaching With Questions
+        status: planned
+      - lesson_key: lesson-03-giving-actionable-feedback
+        slug: giving-actionable-feedback
+        title: Giving Actionable Feedback
+        status: planned
+      - lesson_key: lesson-04-guiding-a-decision
+        slug: guiding-a-decision
+        title: Guiding a Decision
+        status: planned
+      - lesson_key: lesson-05-leadership-coaching-mission
+        slug: leadership-coaching-mission
+        title: Leadership Coaching Mission
+        status: planned
+
+  - unit_key: unit-07-advanced-listening-response
+    title: Advanced Listening & Response
+    status: planned
+    main_conversation_outcome: Respond accurately to dense, fast, or indirect speech.
+    lessons:
+      - lesson_key: lesson-01-catching-implied-meaning
+        slug: catching-implied-meaning
+        title: Catching Implied Meaning
+        status: planned
+      - lesson_key: lesson-02-responding-to-long-turns
+        slug: responding-to-long-turns
+        title: Responding to Long Turns
+        status: planned
+      - lesson_key: lesson-03-summarizing-what-you-heard
+        slug: summarizing-what-you-heard
+        title: Summarizing What You Heard
+        status: planned
+      - lesson_key: lesson-04-asking-high-quality-follow-ups
+        slug: asking-high-quality-follow-ups
+        title: Asking High-quality Follow-ups
+        status: planned
+      - lesson_key: lesson-05-advanced-listening-mission
+        slug: advanced-listening-mission
+        title: Advanced Listening Mission
+        status: planned
+
+  - unit_key: unit-08-c1-review-final
+    title: C1 Review & Final Conversation
+    status: planned
+    main_conversation_outcome: Use C1 skills in complex professional and social conversations.
+    lessons:
+      - lesson_key: lesson-01-review-nuance-and-strategy
+        slug: review-nuance-and-strategy
+        title: Review Nuance and Strategy
+        status: planned
+      - lesson_key: lesson-02-review-presenting-and-debate
+        slug: review-presenting-and-debate
+        title: Review Presenting and Debate
+        status: planned
+      - lesson_key: lesson-03-review-leadership-and-listening
+        slug: review-leadership-and-listening
+        title: Review Leadership and Listening
+        status: planned
+      - lesson_key: lesson-04-c1-final-test-practice
+        slug: c1-final-test-practice
+        title: C1 Final Test Practice
+        status: planned
+      - lesson_key: lesson-05-c1-final-conversation
+        slug: c1-final-conversation
+        title: C1 Final Conversation
+        status: planned

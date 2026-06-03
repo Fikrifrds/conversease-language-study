@@ -75,7 +75,7 @@ runbook, and `docs/release_readiness.md` for the current release checklist.
 The first implementation slice covers:
 
 1. Product-facing web shell and core pages.
-2. A1 Unit 1 structured curriculum and lesson content.
+2. A1 Unit 1 structured curriculum and lesson content, plus A1-C1 content readiness plans.
 3. Billing access, payment order records, and Conversation Coach minute ledger.
 4. Provider abstraction points for LLM, email, STT, TTS, and payments.
 5. Idempotent email and payment webhook surfaces.

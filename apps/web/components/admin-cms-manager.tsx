@@ -26,6 +26,7 @@ import {
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
   type AdminContentReadiness,
+  type AdminContentReadinessOverview,
   type AdminContentRevision,
   type AdminCmsLesson,
   type AdminCmsSummary,
@@ -279,7 +280,10 @@ export function AdminCmsManager() {
         </div>
 
         {tab === "readiness" ? (
-          <ReadinessPanel readiness={summary?.curriculum.readiness ?? null} />
+          <ReadinessPanel
+            overview={summary?.curriculum.readinessOverview ?? null}
+            levels={summary?.curriculum.readinessLevels ?? []}
+          />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
             apiKey={apiKey}
@@ -314,18 +318,24 @@ export function AdminCmsManager() {
   );
 }
 
-function ReadinessPanel({ readiness }: { readiness: AdminContentReadiness | null }) {
-  if (!readiness) {
+function ReadinessPanel({
+  overview,
+  levels
+}: {
+  overview: AdminContentReadinessOverview | null;
+  levels: AdminContentReadiness[];
+}) {
+  if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
   }
 
   const stats = [
-    { label: "Planned", value: readiness.summary.plannedLessonCount },
-    { label: "Implemented", value: readiness.summary.implementedLessonCount },
-    { label: "Text ready", value: readiness.summary.textReadyCount },
-    { label: "Audio ready", value: readiness.summary.audioReadyCount },
-    { label: "Beta ready", value: readiness.summary.betaReadyCount },
-    { label: "Production ready", value: readiness.summary.productionReadyCount }
+    { label: "Planned", value: overview.plannedLessonCount },
+    { label: "Implemented", value: overview.implementedLessonCount },
+    { label: "Text ready", value: overview.textReadyCount },
+    { label: "Audio ready", value: overview.audioReadyCount },
+    { label: "Beta ready", value: overview.betaReadyCount },
+    { label: "Production ready", value: overview.productionReadyCount }
   ];
 
   return (
@@ -340,6 +350,42 @@ function ReadinessPanel({ readiness }: { readiness: AdminContentReadiness | null
       </div>
 
       <div className="grid gap-4">
+        {levels.map((level) => (
+          <LevelReadinessCard key={`${level.course.language}-${level.course.levelCode}`} readiness={level} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function LevelReadinessCard({ readiness }: { readiness: AdminContentReadiness }) {
+  return (
+    <div className="rounded-lg border border-ink/10 bg-white p-4">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div>
+          <p className="text-xs font-semibold uppercase text-leaf">
+            {readiness.course.language} / {readiness.course.levelCode}
+          </p>
+          <h2 className="mt-1 text-xl font-semibold">{readiness.course.courseTitle}</h2>
+          <p className="mt-1 text-sm text-ink/55">{readiness.course.courseSlug}</p>
+        </div>
+        <div className="flex flex-wrap gap-2 text-xs font-semibold">
+          <StatusPill
+            icon={ListChecks}
+            label={`${readiness.summary.plannedLessonCount} planned`}
+            tone="neutral"
+          />
+          <StatusPill icon={CheckCircle2} label={`${readiness.summary.textReadyCount} text`} tone="ok" />
+          <StatusPill icon={Headphones} label={`${readiness.summary.audioReadyCount} audio`} tone="warn" />
+          <StatusPill
+            icon={ShieldCheck}
+            label={`${readiness.summary.productionReadyCount} prod`}
+            tone="neutral"
+          />
+        </div>
+      </div>
+
+      <div className="mt-4 grid gap-4">
         {readiness.units.map((unit) => (
           <div key={unit.unitKey} className="rounded-lg border border-ink/10 bg-white p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
