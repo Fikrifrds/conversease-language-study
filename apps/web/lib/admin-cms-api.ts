@@ -20,6 +20,70 @@ export type AdminCmsLesson = {
   };
 };
 
+export type AdminContentReadinessCheck = {
+  key: string;
+  label: string;
+  filename: string;
+  isAudio: boolean;
+  ready: boolean;
+  fileExists: boolean;
+  nonEmpty: boolean;
+  trackerColumn: string;
+  trackerValue: string;
+};
+
+export type AdminContentReadinessLesson = {
+  lessonKey: string;
+  slug: string;
+  title: string;
+  planStatus: string;
+  lessonDir: string;
+  implemented: boolean;
+  textReady: boolean;
+  audioReady: boolean;
+  betaReady: boolean;
+  productionReady: boolean;
+  reviewStatus: string;
+  publishStatus: string;
+  status: string;
+  missingItems: string[];
+  checks: AdminContentReadinessCheck[];
+};
+
+export type AdminContentReadinessUnit = {
+  unitKey: string;
+  title: string;
+  status: string;
+  mainConversationOutcome: string;
+  lessonCount: number;
+  textReadyCount: number;
+  audioReadyCount: number;
+  productionReadyCount: number;
+  lessons: AdminContentReadinessLesson[];
+};
+
+export type AdminContentReadiness = {
+  course: {
+    language: string;
+    languageCode: string;
+    levelCode: string;
+    courseSlug: string;
+    courseTitle: string;
+    targetLessonCount: number;
+  };
+  summary: {
+    plannedLessonCount: number;
+    implementedLessonCount: number;
+    textReadyCount: number;
+    audioReadyCount: number;
+    betaReadyCount: number;
+    productionReadyCount: number;
+    missingContentCount: number;
+    missingAudioCount: number;
+  };
+  units: AdminContentReadinessUnit[];
+};
+
 export type AdminEmailTemplate = {
   templateKey: string;
   contentHash: string;
@@ -51,6 +115,7 @@ export type AdminCmsSummary = {
       lessonCount: number;
     };
     lessons: AdminCmsLesson[];
+    readiness: AdminContentReadiness;
     validationIssues: string[];
   };
   emailTemplates: AdminEmailTemplate[];
@@ -87,6 +152,70 @@ type ApiAdminLesson = {
     max_turns: number;
     target_phrases: string[];
   };
+};
+
+type ApiAdminContentReadinessCheck = {
+  key: string;
+  label: string;
+  filename: string;
+  is_audio: boolean;
+  ready: boolean;
+  file_exists: boolean;
+  non_empty: boolean;
+  tracker_column: string;
+  tracker_value: string;
+};
+
+type ApiAdminContentReadinessLesson = {
+  lesson_key: string;
+  slug: string;
+  title: string;
+  plan_status: string;
+  lesson_dir: string;
+  implemented: boolean;
+  text_ready: boolean;
+  audio_ready: boolean;
+  beta_ready: boolean;
+  production_ready: boolean;
+  review_status: string;
+  publish_status: string;
+  status: string;
+  missing_items: string[];
+  checks: ApiAdminContentReadinessCheck[];
+};
+
+type ApiAdminContentReadinessUnit = {
+  unit_key: string;
+  title: string;
+  status: string;
+  main_conversation_outcome: string;
+  lesson_count: number;
+  text_ready_count: number;
+  audio_ready_count: number;
+  production_ready_count: number;
+  lessons: ApiAdminContentReadinessLesson[];
+};
+
+type ApiAdminContentReadiness = {
+  course: {
+    language: string;
+    language_code: string;
+    level_code: string;
+    course_slug: string;
+    course_title: string;
+    target_lesson_count: number;
+  };
+  summary: {
+    planned_lesson_count: number;
+    implemented_lesson_count: number;
+    text_ready_count: number;
+    audio_ready_count: number;
+    beta_ready_count: number;
+    production_ready_count: number;
+    missing_content_count: number;
+    missing_audio_count: number;
+  };
+  units: ApiAdminContentReadinessUnit[];
 };
 
 type ApiAdminEmailTemplate = {
@@ -163,6 +292,66 @@ function mapEmailTemplate(template: ApiAdminEmailTemplate): AdminEmailTemplate {
   };
 }
 
+function mapReadiness(readiness: ApiAdminContentReadiness): AdminContentReadiness {
+  return {
+    course: {
+      language: readiness.course.language,
+      languageCode: readiness.course.language_code,
+      levelCode: readiness.course.level_code,
+      courseSlug: readiness.course.course_slug,
+      courseTitle: readiness.course.course_title,
+      targetLessonCount: readiness.course.target_lesson_count
+    },
+    summary: {
+      plannedLessonCount: readiness.summary.planned_lesson_count,
+      implementedLessonCount: readiness.summary.implemented_lesson_count,
+      textReadyCount: readiness.summary.text_ready_count,
+      audioReadyCount: readiness.summary.audio_ready_count,
+      betaReadyCount: readiness.summary.beta_ready_count,
+      productionReadyCount: readiness.summary.production_ready_count,
+      missingContentCount: readiness.summary.missing_content_count,
+      missingAudioCount: readiness.summary.missing_audio_count
+    },
+    units: readiness.units.map((unit) => ({
+      unitKey: unit.unit_key,
+      title: unit.title,
+      status: unit.status,
+      mainConversationOutcome: unit.main_conversation_outcome,
+      lessonCount: unit.lesson_count,
+      textReadyCount: unit.text_ready_count,
+      audioReadyCount: unit.audio_ready_count,
+      productionReadyCount: unit.production_ready_count,
+      lessons: unit.lessons.map((lesson) => ({
+        lessonKey: lesson.lesson_key,
+        slug: lesson.slug,
+        title: lesson.title,
+        planStatus: lesson.plan_status,
+        lessonDir: lesson.lesson_dir,
+        implemented: lesson.implemented,
+        textReady: lesson.text_ready,
+        audioReady: lesson.audio_ready,
+        betaReady: lesson.beta_ready,
+        productionReady: lesson.production_ready,
+        reviewStatus: lesson.review_status,
+        publishStatus: lesson.publish_status,
+        status: lesson.status,
+        missingItems: lesson.missing_items,
+        checks: lesson.checks.map((check) => ({
+          key: check.key,
+          label: check.label,
+          filename: check.filename,
+          isAudio: check.is_audio,
+          ready: check.ready,
+          fileExists: check.file_exists,
+          nonEmpty: check.non_empty,
+          trackerColumn: check.tracker_column,
+          trackerValue: check.tracker_value
+        }))
+      }))
+    }))
+  };
+}
+
 function mapRevision(revision: ApiAdminContentRevision): AdminContentRevision {
   return {
     id: revision.id,
@@ -189,6 +378,7 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
           lesson_count: number;
         };
         lessons: ApiAdminLesson[];
+        readiness: ApiAdminContentReadiness;
         validation_issues: string[];
       };
       email_templates: ApiAdminEmailTemplate[];
@@ -206,6 +396,7 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
         lessonCount: response.data.curriculum.course.lesson_count
       },
       lessons: response.data.curriculum.lessons.map(mapLesson),
+      readiness: mapReadiness(response.data.curriculum.readiness),
       validationIssues: response.data.curriculum.validation_issues
     },
     emailTemplates: response.data.email_templates.map(mapEmailTemplate),

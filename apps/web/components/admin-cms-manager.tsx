@@ -2,14 +2,19 @@
 
 import { useEffect, useMemo, useState } from "react";
 import {
+  AlertTriangle,
   BookOpen,
+  CheckCircle2,
   Clock3,
   FileText,
+  Headphones,
   KeyRound,
+  ListChecks,
   RefreshCcw,
   RotateCcw,
   Save,
   ShieldCheck,
+  XCircle,
   type LucideIcon
 } from "lucide-react";
 import type { ReactNode } from "react";
@@ -20,6 +25,7 @@ import {
   rollbackAdminCmsRevision,
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
+  type AdminContentReadiness,
   type AdminContentRevision,
   type AdminCmsLesson,
   type AdminCmsSummary,
@@ -30,13 +36,13 @@ const adminKeyStorageKey = "conversease.admin_key";
 const adminNameStorageKey = "conversease.admin_name";
 const statusOptions = ["draft", "review", "published", "archived"];
 
-type Tab = "curriculum" | "email";
+type Tab = "readiness" | "curriculum" | "email";
 
 export function AdminCmsManager() {
   const [apiKey, setApiKey] = useState("");
   const [adminName, setAdminName] = useState("admin");
   const [summary, setSummary] = useState<AdminCmsSummary | null>(null);
-  const [tab, setTab] = useState<Tab>("curriculum");
+  const [tab, setTab] = useState<Tab>("readiness");
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<AdminEmailTemplate | null>(null);
   const [message, setMessage] = useState("");
@@ -261,6 +267,9 @@ export function AdminCmsManager() {
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex flex-wrap gap-2">
+          <TabButton active={tab === "readiness"} icon={ListChecks} onClick={() => setTab("readiness")}>
+            Readiness
+          </TabButton>
           <TabButton active={tab === "curriculum"} icon={BookOpen} onClick={() => setTab("curriculum")}>
             Curriculum
           </TabButton>
@@ -269,7 +278,9 @@ export function AdminCmsManager() {
           </TabButton>
         </div>
 
-        {tab === "curriculum" ? (
+        {tab === "readiness" ? (
+          <ReadinessPanel readiness={summary?.curriculum.readiness ?? null} />
+        ) : tab === "curriculum" ? (
           <CurriculumEditor
             apiKey={apiKey}
             updatedBy={adminName}
@@ -299,6 +310,121 @@ export function AdminCmsManager() {
           />
         )}
       </section>
+    </div>
+  );
+}
+
+function ReadinessPanel({ readiness }: { readiness: AdminContentReadiness | null }) {
+  if (!readiness) {
+    return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
+  }
+
+  const stats = [
+    { label: "Planned", value: readiness.summary.plannedLessonCount },
+    { label: "Implemented", value: readiness.summary.implementedLessonCount },
+    { label: "Text ready", value: readiness.summary.textReadyCount },
+    { label: "Audio ready", value: readiness.summary.audioReadyCount },
+    { label: "Beta ready", value: readiness.summary.betaReadyCount },
+    { label: "Production ready", value: readiness.summary.productionReadyCount }
+  ];
+
+  return (
+    <div className="mt-5 space-y-5">
+      <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
+        {stats.map((stat) => (
+          <div key={stat.label} className="rounded-lg bg-paper p-4">
+            <p className="text-xs font-semibold uppercase text-ink/45">{stat.label}</p>
+            <p className="mt-2 text-2xl font-semibold">{stat.value}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="grid gap-4">
+        {readiness.units.map((unit) => (
+          <div key={unit.unitKey} className="rounded-lg border border-ink/10 bg-white p-4">
+            <div className="flex flex-wrap items-start justify-between gap-3">
+              <div>
+                <p className="text-xs font-semibold uppercase text-leaf">{unit.status}</p>
+                <h2 className="mt-1 text-lg font-semibold">{unit.title}</h2>
+                <p className="mt-1 text-sm text-ink/55">{unit.unitKey}</p>
+              </div>
+              <div className="flex flex-wrap gap-2 text-xs font-semibold">
+                <StatusPill icon={CheckCircle2} label={`${unit.textReadyCount}/${unit.lessonCount} text`} tone="ok" />
+                <StatusPill icon={Headphones} label={`${unit.audioReadyCount}/${unit.lessonCount} audio`} tone="warn" />
+                <StatusPill
+                  icon={ShieldCheck}
+                  label={`${unit.productionReadyCount}/${unit.lessonCount} prod`}
+                  tone="neutral"
+                />
+              </div>
+            </div>
+
+            <div className="mt-4 grid gap-3">
+              {unit.lessons.map((lesson) => (
+                <details key={lesson.lessonKey} className="rounded-lg bg-paper p-4">
+                  <summary className="cursor-pointer list-none">
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <div>
+                        <p className="font-semibold">{lesson.title}</p>
+                        <p className="mt-1 text-xs text-ink/50">
+                          {lesson.lessonKey} / {lesson.slug || "slug pending"}
+                        </p>
+                      </div>
+                      <div className="flex flex-wrap gap-2">
+                        <ReadinessPill ready={lesson.textReady} label="Text" />
+                        <ReadinessPill ready={lesson.audioReady} label="Audio" />
+                        <ReadinessPill ready={lesson.productionReady} label="Production" />
+                      </div>
+                    </div>
+                  </summary>
+
+                  <div className="mt-4 grid gap-3">
+                    <div className="flex flex-wrap gap-2">
+                      <StatusPill
+                        icon={lesson.implemented ? CheckCircle2 : AlertTriangle}
+                        label={readinessStatusLabel(lesson.status)}
+                        tone={lesson.productionReady ? "ok" : lesson.implemented ? "warn" : "danger"}
+                      />
+                      {lesson.reviewStatus ? (
+                        <StatusPill icon={ShieldCheck} label={`review: ${lesson.reviewStatus}`} tone="neutral" />
+                      ) : null}
+                      {lesson.publishStatus ? (
+                        <StatusPill icon={BookOpen} label={`publish: ${lesson.publishStatus}`} tone="neutral" />
+                      ) : null}
+                    </div>
+
+                    {lesson.missingItems.length ? (
+                      <div className="rounded-lg bg-white p-3 text-sm text-ink/65">
+                        <p className="font-semibold text-ink">Missing</p>
+                        <p className="mt-1">{lesson.missingItems.join(", ")}</p>
+                      </div>
+                    ) : null}
+
+                    <div className="grid gap-2 md:grid-cols-2">
+                      {lesson.checks.map((check) => (
+                        <div key={check.key} className="flex items-start gap-2 rounded-lg bg-white p-3 text-sm">
+                          {check.ready ? (
+                            <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
+                          ) : (
+                            <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-coral" aria-hidden="true" />
+                          )}
+                          <div>
+                            <p className="font-semibold">{check.label}</p>
+                            <p className="mt-0.5 text-xs text-ink/50">
+                              {check.filename}
+                              {check.trackerColumn ? ` / tracker: ${check.trackerValue || "missing"}` : ""}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
@@ -640,6 +766,55 @@ function NumberInput({
       />
     </label>
   );
+}
+
+function ReadinessPill({ ready, label }: { ready: boolean; label: string }) {
+  return (
+    <span
+      className={`inline-flex min-h-8 items-center gap-1.5 rounded-lg px-2.5 text-xs font-semibold ${
+        ready ? "bg-mint text-leaf" : "bg-[#fde7df] text-coral"
+      }`}
+    >
+      {ready ? <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" /> : <XCircle className="h-3.5 w-3.5" aria-hidden="true" />}
+      {label}
+    </span>
+  );
+}
+
+function StatusPill({
+  icon: Icon,
+  label,
+  tone
+}: {
+  icon: LucideIcon;
+  label: string;
+  tone: "ok" | "warn" | "danger" | "neutral";
+}) {
+  const className =
+    tone === "ok"
+      ? "bg-mint text-leaf"
+      : tone === "warn"
+        ? "bg-[#fff4d5] text-[#7a5600]"
+        : tone === "danger"
+          ? "bg-[#fde7df] text-coral"
+          : "bg-paper text-ink/60";
+
+  return (
+    <span className={`inline-flex min-h-8 items-center gap-1.5 rounded-lg px-2.5 ${className}`}>
+      <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+      {label}
+    </span>
+  );
+}
+
+function readinessStatusLabel(status: string) {
+  const labels: Record<string, string> = {
+    production_ready: "production ready",
+    beta_ready_needs_audio: "beta ready, needs audio",
+    implemented_needs_content: "needs content",
+    planned_missing_content: "planned"
+  };
+  return labels[status] ?? status;
 }
 
 function contentSaveErrorMessage(error: unknown, label: string) {

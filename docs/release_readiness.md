@@ -14,6 +14,7 @@ This document tracks the Conversease MVP release candidate.
 - Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
 - Admin email diagnostics can list, render, and send test emails through `/api/admin/email-templates`, `/api/admin/test-email/render`, and `/api/admin/test-email/send`.
 - Admin CMS page for controlled editing of curriculum lesson metadata, lesson roleplay setup, and email templates, with content revision audit logs, revision rollback, and stale edit protection.
+- Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from `content/curriculum/english/A1/content_plan.yaml`, actual content files, and `content/production_tracker.csv`.
 - Admin A1 final-test review page for beta manual scoring of submitted attempts and official user report updates.
 - Sandbox package activation remains available for local QA only and is disabled in production.
 - A1 Unit 1 content structure with 5 published lessons:
@@ -23,6 +24,7 @@ This document tracks the Conversease MVP release candidate.
   - Saying Where You Are From
   - First Conversation Mission
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
+- Content readiness report is available at `scripts/content_readiness_report.py`; current English A1 has 40 planned lessons, 5 implemented text-ready lessons, and 0 generated audio-ready lessons.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
 - Production env validation rejects unsafe production defaults and placeholder secrets from `.env.production.example`.
 - API liveness, readiness, and runtime metrics endpoints are available at `/api/health`, `/api/ready`, and `/api/metrics`; readiness verifies database connectivity and Alembic migration head.
@@ -41,6 +43,7 @@ Run from the repository root:
 ```bash
 apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.migration_status
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_preflight.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m ruff check apps/api/app apps/api/tests scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
@@ -58,8 +61,9 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Manual transfer can support controlled paid beta after `RESEND_API_KEY`, `PAYMENT_ADMIN_API_KEY`, admin email, and Bank Jago account details are configured. Admin approval/rejection sends a user email, records delivery status, and supports resend from the payment detail.
 - Manual transfer checkout links can be reopened by the owning user through `/billing?order_id=<order-id>` to recover instructions and current order status.
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
+- Full public A1 release still needs all 40 planned A1 lessons text-ready and audio-ready. Current content supports Unit 1 beta only; Units 2-8 are planned but not implemented.
 - Conversation Coach and final-test readiness preview currently use deterministic/self-check logic. Beta final-test attempts can be manually reviewed by admin, while public automated speaking assessment still needs production AI/STT/TTS credentials and worker orchestration.
-- Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload and draft review workflow before multi-editor editorial operations.
+- Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.
 - Configure production env from `.env.production.example` with real non-placeholder values and verify `APP_ENV=production` starts only with PostgreSQL, HTTPS URLs, explicit CORS, a strong JWT secret, Google OAuth credentials, admin payment key, and Resend key.
 - Configure external uptime monitoring, error tracking, and edge/WAF rate limiting before public paid traffic.

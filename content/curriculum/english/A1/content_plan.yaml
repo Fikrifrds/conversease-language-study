@@ -1,0 +1,214 @@
+language: english
+language_code: en
+level_code: A1
+course_slug: english-a1-start-simple-conversations
+course_title: Start Simple Conversations
+target_lesson_count: 40
+units:
+  - unit_key: unit-01-greeting-introducing-yourself
+    title: Greeting & Introducing Yourself
+    status: in_production
+    main_conversation_outcome: Start a simple first conversation and introduce basic personal details.
+    lessons:
+      - lesson_key: lesson-01-saying-hello
+        slug: saying-hello-and-goodbye
+        title: Saying Hello and Goodbye
+        status: implemented
+      - lesson_key: lesson-02-saying-your-name
+        slug: saying-your-name
+        title: Saying Your Name
+        status: implemented
+      - lesson_key: lesson-03-asking-someones-name
+        slug: asking-someones-name
+        title: Asking Someone's Name
+        status: implemented
+      - lesson_key: lesson-04-saying-where-you-are-from
+        slug: saying-where-you-are-from
+        title: Saying Where You Are From
+        status: implemented
+      - lesson_key: lesson-05-first-conversation-mission
+        slug: first-conversation-mission
+        title: First Conversation Mission
+        status: implemented
+
+  - unit_key: unit-02-spelling-numbers-contact
+    title: Spelling, Numbers & Contact Details
+    status: planned
+    main_conversation_outcome: Exchange simple contact information and ask for repetition.
+    lessons:
+      - lesson_key: lesson-01-spelling-your-name
+        slug: spelling-your-name
+        title: Spelling Your Name
+        status: planned
+      - lesson_key: lesson-02-giving-phone-numbers
+        slug: giving-phone-numbers
+        title: Giving Phone Numbers
+        status: planned
+      - lesson_key: lesson-03-sharing-email-addresses
+        slug: sharing-email-addresses
+        title: Sharing Email Addresses
+        status: planned
+      - lesson_key: lesson-04-asking-for-repetition
+        slug: asking-for-repetition
+        title: Asking for Repetition
+        status: planned
+      - lesson_key: lesson-05-contact-details-mission
+        slug: contact-details-mission
+        title: Contact Details Mission
+        status: planned
+
+  - unit_key: unit-03-daily-routine-time
+    title: Daily Routine & Time
+    status: planned
+    main_conversation_outcome: Talk about simple routines, days, and time.
+    lessons:
+      - lesson_key: lesson-01-telling-the-time
+        slug: telling-the-time
+        title: Telling the Time
+        status: planned
+      - lesson_key: lesson-02-talking-about-daily-routines
+        slug: talking-about-daily-routines
+        title: Talking About Daily Routines
+        status: planned
+      - lesson_key: lesson-03-days-and-simple-schedules
+        slug: days-and-simple-schedules
+        title: Days and Simple Schedules
+        status: planned
+      - lesson_key: lesson-04-asking-when-something-happens
+        slug: asking-when-something-happens
+        title: Asking When Something Happens
+        status: planned
+      - lesson_key: lesson-05-routine-conversation-mission
+        slug: routine-conversation-mission
+        title: Routine Conversation Mission
+        status: planned
+
+  - unit_key: unit-04-work-study-and-preferences
+    title: Work, Study & Preferences
+    status: planned
+    main_conversation_outcome: Say what you do and talk about simple likes, dislikes, and abilities.
+    lessons:
+      - lesson_key: lesson-01-saying-what-you-do
+        slug: saying-what-you-do
+        title: Saying What You Do
+        status: planned
+      - lesson_key: lesson-02-asking-about-work-or-study
+        slug: asking-about-work-or-study
+        title: Asking About Work or Study
+        status: planned
+      - lesson_key: lesson-03-talking-about-likes
+        slug: talking-about-likes
+        title: Talking About Likes
+        status: planned
+      - lesson_key: lesson-04-saying-what-you-can-do
+        slug: saying-what-you-can-do
+        title: Saying What You Can Do
+        status: planned
+      - lesson_key: lesson-05-work-study-conversation-mission
+        slug: work-study-conversation-mission
+        title: Work and Study Conversation Mission
+        status: planned
+
+  - unit_key: unit-05-places-directions
+    title: Places & Directions
+    status: planned
+    main_conversation_outcome: Ask where places are and understand simple directions.
+    lessons:
+      - lesson_key: lesson-01-asking-where-a-place-is
+        slug: asking-where-a-place-is
+        title: Asking Where a Place Is
+        status: planned
+      - lesson_key: lesson-02-simple-place-words
+        slug: simple-place-words
+        title: Simple Place Words
+        status: planned
+      - lesson_key: lesson-03-understanding-simple-directions
+        slug: understanding-simple-directions
+        title: Understanding Simple Directions
+        status: planned
+      - lesson_key: lesson-04-asking-how-to-get-there
+        slug: asking-how-to-get-there
+        title: Asking How to Get There
+        status: planned
+      - lesson_key: lesson-05-finding-a-place-mission
+        slug: finding-a-place-mission
+        title: Finding a Place Mission
+        status: planned
+
+  - unit_key: unit-06-food-shopping-prices
+    title: Food, Shopping & Prices
+    status: planned
+    main_conversation_outcome: Order simple food or drinks, ask prices, and buy basic items.
+    lessons:
+      - lesson_key: lesson-01-ordering-a-drink
+        slug: ordering-a-drink
+        title: Ordering a Drink
+        status: planned
+      - lesson_key: lesson-02-asking-about-prices
+        slug: asking-about-prices
+        title: Asking About Prices
+        status: planned
+      - lesson_key: lesson-03-buying-a-simple-item
+        slug: buying-a-simple-item
+        title: Buying a Simple Item
+        status: planned
+      - lesson_key: lesson-04-saying-what-you-want
+        slug: saying-what-you-want
+        title: Saying What You Want
+        status: planned
+      - lesson_key: lesson-05-cafe-and-shop-mission
+        slug: cafe-and-shop-mission
+        title: Cafe and Shop Mission
+        status: planned
+
+  - unit_key: unit-07-help-problems-requests
+    title: Help, Problems & Requests
+    status: planned
+    main_conversation_outcome: Ask for help, explain a simple problem, and respond politely.
+    lessons:
+      - lesson_key: lesson-01-saying-you-do-not-understand
+        slug: saying-you-do-not-understand
+        title: Saying You Do Not Understand
+        status: planned
+      - lesson_key: lesson-02-asking-for-help
+        slug: asking-for-help
+        title: Asking for Help
+        status: planned
+      - lesson_key: lesson-03-making-simple-requests
+        slug: making-simple-requests
+        title: Making Simple Requests
+        status: planned
+      - lesson_key: lesson-04-apologizing-and-thanking
+        slug: apologizing-and-thanking
+        title: Apologizing and Thanking
+        status: planned
+      - lesson_key: lesson-05-help-and-problem-mission
+        slug: help-and-problem-mission
+        title: Help and Problem Mission
+        status: planned
+
+  - unit_key: unit-08-a1-review-final
+    title: A1 Review & Final Conversation
+    status: planned
+    main_conversation_outcome: Combine A1 skills in a longer but still simple conversation.
+    lessons:
+      - lesson_key: lesson-01-review-introductions
+        slug: review-introductions
+        title: Review Introductions
+        status: planned
+      - lesson_key: lesson-02-review-routines-and-time
+        slug: review-routines-and-time
+        title: Review Routines and Time
+        status: planned
+      - lesson_key: lesson-03-review-places-and-shopping
+        slug: review-places-and-shopping
+        title: Review Places and Shopping
+        status: planned
+      - lesson_key: lesson-04-final-test-practice
+        slug: final-test-practice
+        title: Final Test Practice
+        status: planned
+      - lesson_key: lesson-05-a1-final-conversation
+        slug: a1-final-conversation
+        title: A1 Final Conversation
+        status: planned

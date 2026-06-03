@@ -66,9 +66,9 @@ uvicorn app.main:app --reload --port 8000
 ```
 
 See `docs/database_migrations.md` for the full migration workflow,
-`docs/deployment.md` for deployment, `docs/linux_nginx_deploy.md` for a
-Linux + Nginx remote server runbook, and `docs/release_readiness.md` for the
-current release checklist.
+`docs/content_operations.md` for curriculum production, `docs/deployment.md`
+for deployment, `docs/linux_nginx_deploy.md` for a Linux + Nginx remote server
+runbook, and `docs/release_readiness.md` for the current release checklist.
 
 ## MVP Focus
 

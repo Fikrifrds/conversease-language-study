@@ -1,0 +1,300 @@
+# Content Operations
+
+This document is the working guide for Conversease curriculum production.
+
+## Release State
+
+The app is technically ready for controlled beta, but A1 content is not complete
+for a full public "A1 sampai selesai" release.
+
+Current English A1 status:
+
+- Planned A1 lessons: 40
+- Implemented lessons: 5
+- Text-ready lessons: 5
+- Audio-ready lessons: 0
+- Beta-ready lessons: 5
+- Production-ready lessons: 0
+
+Controlled beta can use Unit 1 with text-based listening scripts and
+Conversation Coach. Full public release should complete all planned A1 lessons
+and generate listening/phrase audio.
+
+## Admin Checks
+
+Admin can check content in the web app:
+
+```text
+/admin/cms
+```
+
+Use the `PAYMENT_ADMIN_API_KEY` value as the admin key. The Admin CMS has:
+
+- Readiness: level, unit, lesson, file, tracker, and audio checklist.
+- Curriculum: edit lesson title, status, goal, and roleplay metadata.
+- Email Templates: edit and validate email templates.
+- Change Log: view and rollback CMS edits.
+
+For CLI checks:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
+```
+
+Use JSON output for automation:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format json
+```
+
+## A1 Chapter Checklist
+
+The A1 roadmap is tracked in:
+
+```text
+content/curriculum/english/A1/content_plan.yaml
+```
+
+Current planned units:
+
+| Unit | Status | Lessons | Current Gap |
+|---|---:|---:|---|
+| Unit 1: Greeting & Introducing Yourself | beta-ready | 5 | Audio not generated |
+| Unit 2: Spelling, Numbers & Contact Details | planned | 5 | All lesson files missing |
+| Unit 3: Daily Routine & Time | planned | 5 | All lesson files missing |
+| Unit 4: Work, Study & Preferences | planned | 5 | All lesson files missing |
+| Unit 5: Places & Directions | planned | 5 | All lesson files missing |
+| Unit 6: Food, Shopping & Prices | planned | 5 | All lesson files missing |
+| Unit 7: Help, Problems & Requests | planned | 5 | All lesson files missing |
+| Unit 8: A1 Review & Final Conversation | planned | 5 | All lesson files missing |
+
+## Required Files Per Lesson
+
+Every lesson must have these files:
+
+| File | Purpose |
+|---|---|
+| `lesson.yaml` | lesson metadata, required sections, completion rules |
+| `lesson.md` | main lesson explanation and learner flow |
+| `conversation_goal.md` | concise outcome and success behavior |
+| `listening_script.md` | dialogue text and audio direction |
+| `transcript_translation.md` | Indonesian support translation |
+| `useful_phrases.yaml` | phrases, Indonesian meaning, usage note, common mistake |
+| `grammar_for_conversation.md` | practical grammar for speaking |
+| `pronunciation_drill.md` | pronunciation targets and repeat drills |
+| `response_prompts.yaml` | guided learner response prompts |
+| `conversation_coach_roleplay.yaml` | scenario, opening line, goal, rubric |
+| `quiz.yaml` | comprehension and usage quiz |
+| `reading_support.md` | short reading reinforcement |
+| `writing_support.md` | short writing reinforcement |
+| `audio_manifest.yaml` | generated audio asset metadata |
+
+The production tracker must also be updated:
+
+```text
+content/production_tracker.csv
+```
+
+Text columns should be `done` when reviewed. Set `audio_generated=done` only
+after audio URLs and duration are filled in `audio_manifest.yaml`.
+
+## Lesson Generation Prompt
+
+Use this prompt to generate one complete lesson package.
+
+```text
+You are creating Conversease English A1 curriculum for Indonesian learners.
+
+Generate production-ready content for:
+- Level: A1
+- Unit: {unit_key} - {unit_title}
+- Lesson: {lesson_key} - {lesson_title}
+- Conversation outcome: {conversation_outcome}
+- Learner source language: Indonesian
+- Target language: English
+
+Constraints:
+- Conversation-first, not grammar-first.
+- Use very simple A1 English.
+- Explain support notes in Indonesian.
+- No slang unless explicitly useful.
+- Avoid cultural assumptions.
+- Keep examples practical for Indonesian adult learners.
+- Do not include images of living beings. If visual ideas are needed, use objects, documents, signs, UI, maps, or faceless/isometric non-detailed figures.
+
+Return these files with exact filenames:
+1. lesson.yaml
+2. lesson.md
+3. conversation_goal.md
+4. listening_script.md
+5. transcript_translation.md
+6. useful_phrases.yaml
+7. grammar_for_conversation.md
+8. pronunciation_drill.md
+9. response_prompts.yaml
+10. conversation_coach_roleplay.yaml
+11. quiz.yaml
+12. reading_support.md
+13. writing_support.md
+14. audio_manifest.yaml with status: not_generated
+
+Quality rules:
+- listening_script.md must have a short two-speaker dialogue, 5-8 lines.
+- useful_phrases.yaml must have 5-8 phrases with meaning_id, usage_note, and common_mistake.
+- quiz.yaml must have at least 3 questions.
+- conversation_coach_roleplay.yaml must include scenario_key, mode, level_code, opening_line, learner_goal, max_turns, target_phrases, and rubric.
+- Every filename must be valid YAML or Markdown.
+```
+
+## Listening Script Prompt
+
+Use this when only the listening section is missing or weak.
+
+```text
+Create an English A1 listening dialogue for Indonesian learners.
+
+Lesson:
+- Unit: {unit_title}
+- Lesson: {lesson_title}
+- Conversation goal: {conversation_goal}
+
+Requirements:
+- 2 speakers.
+- 5-8 short turns.
+- Slow, clear, natural English.
+- Include 3-5 target phrases from the lesson.
+- Avoid idioms and advanced grammar.
+- Add Indonesian transcript translation below the English dialogue.
+- Add Audio Direction with speed, tone, pause style, and voice notes.
+
+Output:
+1. listening_script.md
+2. transcript_translation.md
+```
+
+## Quiz Prompt
+
+```text
+Create A1 quiz.yaml for this Conversease lesson:
+- Lesson title: {lesson_title}
+- Conversation goal: {conversation_goal}
+- Target phrases: {target_phrases}
+- Listening script: {listening_script}
+
+Requirements:
+- 3-5 questions.
+- Use multiple_choice or short_answer.
+- Test listening comprehension, phrase meaning, and correct response.
+- Questions must be simple and unambiguous.
+- correct_answer must exactly match one option for multiple_choice.
+
+Return valid YAML only.
+```
+
+## Roleplay Prompt
+
+```text
+Create conversation_coach_roleplay.yaml for English A1.
+
+Lesson:
+- lesson_key: {lesson_key}
+- title: {lesson_title}
+- conversation_goal: {conversation_goal}
+
+Requirements:
+- scenario_key must be lowercase snake_case.
+- mode: lesson_practice_coach
+- level_code: A1
+- opening_line: one simple English sentence from the coach.
+- learner_goal: one clear sentence explaining what learner must do.
+- max_turns: 6-8.
+- target_phrases: 4-6 useful phrases.
+- rubric minimum scores for speaking, relevance, grammar.
+
+Return valid YAML only.
+```
+
+## MiniMax Audio Prompt
+
+Use this prompt in MiniMax TTS or the selected TTS provider. If the provider does
+not support multi-speaker generation in one pass, generate each speaker
+separately and combine the files in audio editing software.
+
+```text
+Generate English A1 learning audio.
+
+Style:
+- clear classroom audio
+- slow natural speed
+- friendly but professional
+- short pauses between turns
+- no background music
+- no sound effects
+
+Dialogue:
+{listening_script_dialogue}
+
+Voice direction:
+- Speaker A: clear adult voice, warm, medium pitch
+- Speaker B: clear adult voice, calm, medium-low pitch
+- Pronunciation: standard, easy to understand for beginners
+- Export: mp3, 44.1 kHz or provider default high quality
+```
+
+After generation:
+
+1. Upload audio to the selected storage or CDN.
+2. Update `audio_manifest.yaml`.
+3. Set `status: done`.
+4. Fill each `audio_url`.
+5. Fill each `duration_seconds`.
+6. Set `audio_generated` to `done` in `content/production_tracker.csv`.
+7. Run readiness and curriculum validation.
+
+Example `audio_manifest.yaml` after audio is ready:
+
+```yaml
+lesson_key: lesson-01-saying-hello
+status: done
+provider: minimax
+assets:
+  - key: dialogue_main
+    type: dialogue
+    script_file: listening_script.md
+    audio_url: https://cdn.example.com/audio/english/A1/unit-01/lesson-01/dialogue_main.mp3
+    duration_seconds: 24
+  - key: phrases
+    type: phrase_pronunciation
+    source_file: useful_phrases.yaml
+    audio_url: https://cdn.example.com/audio/english/A1/unit-01/lesson-01/phrases.mp3
+    duration_seconds: 18
+```
+
+## Review Workflow
+
+For each lesson:
+
+1. Generate the lesson package.
+2. Place files under:
+
+```text
+content/curriculum/english/A1/units/{unit_key}/{lesson_key}/
+```
+
+3. Add the lesson key to the unit's `unit.yaml`.
+4. Update `content/production_tracker.csv`.
+5. Run:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
+```
+
+6. Open `/admin/cms`, load Admin CMS, and check the Readiness tab.
+7. Mark lesson `published` only after all text fields pass review.
+8. Mark audio ready only after TTS output is reviewed by a human.
+
+## Release Rule
+
+- Controlled beta: minimum Unit 1 text-ready, app smoke test passes, payments/admin email tested.
+- Full A1 public release: all 40 A1 lessons text-ready, all listening/phrase audio generated, final evaluation reviewed, and release preflight passes.
