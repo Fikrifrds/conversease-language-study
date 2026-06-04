@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_when
+    instruction_id: "Tanyakan kapan meeting berlangsung."
+    prompt_en: "There is a meeting."
+    expected_response_examples:
+      - "When is the meeting?"
+      - "When is it?"
+  - key: ask_online
+    instruction_id: "Tanyakan apakah meeting online."
+    prompt_en: "It's tomorrow at ten."
+    expected_response_examples:
+      - "Is it online?"
+      - "Is the meeting online?"
+  - key: confirm_detail
+    instruction_id: "Konfirmasi detail meeting."
+    prompt_en: "It's tomorrow at ten."
+    expected_response_examples:
+      - "Tomorrow at ten. Is that right?"
+      - "Is that right?"

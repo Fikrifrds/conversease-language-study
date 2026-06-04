@@ -261,6 +261,112 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "Yes, everything is correct.",
       focus: "Confirming all details"
     }
+  ],
+  "telling-the-time": [
+    {
+      coach: "What time is the class?",
+      hint: "Jawab dengan pola: It's at ...",
+      sampleAnswer: "It's at nine o'clock.",
+      focus: "Class time"
+    },
+    {
+      coach: "In the morning?",
+      hint: "Konfirmasi bagian hari.",
+      sampleAnswer: "Yes, in the morning.",
+      focus: "Time of day"
+    },
+    {
+      coach: "Thank you.",
+      hint: "Balas dengan sopan.",
+      sampleAnswer: "You're welcome.",
+      focus: "Polite reply"
+    }
+  ],
+  "talking-about-daily-routines": [
+    {
+      coach: "What do you do in the morning?",
+      hint: "Sebutkan kegiatan dan waktunya.",
+      sampleAnswer: "I wake up at six.",
+      focus: "Morning routine"
+    },
+    {
+      coach: "What do you do after that?",
+      hint: "Gunakan after that untuk kegiatan berikutnya.",
+      sampleAnswer: "I study English at seven.",
+      focus: "Next routine step"
+    },
+    {
+      coach: "Do you work in the afternoon?",
+      hint: "Jawab ya/tidak lalu beri waktu.",
+      sampleAnswer: "Yes, I work at one.",
+      focus: "Afternoon routine"
+    }
+  ],
+  "days-and-simple-schedules": [
+    {
+      coach: "When is the English class?",
+      hint: "Jawab dengan hari: on Monday and Wednesday.",
+      sampleAnswer: "It's on Monday and Wednesday.",
+      focus: "Class days"
+    },
+    {
+      coach: "What time?",
+      hint: "Jawab dengan at + time.",
+      sampleAnswer: "At seven in the evening.",
+      focus: "Class time"
+    },
+    {
+      coach: "Great. See you on Monday.",
+      hint: "Tutup dengan singkat.",
+      sampleAnswer: "See you.",
+      focus: "Schedule closing"
+    }
+  ],
+  "asking-when-something-happens": [
+    {
+      coach: "When is the meeting?",
+      hint: "Jawab dengan hari dan jam.",
+      sampleAnswer: "It's tomorrow at ten.",
+      focus: "Event time"
+    },
+    {
+      coach: "Is it online?",
+      hint: "Jawab yes/no dengan kalimat lengkap.",
+      sampleAnswer: "Yes, it is online.",
+      focus: "Meeting format"
+    },
+    {
+      coach: "Tomorrow at ten. Is that right?",
+      hint: "Konfirmasi dengan: Yes, that's right.",
+      sampleAnswer: "Yes, that's right.",
+      focus: "Confirming details"
+    }
+  ],
+  "routine-conversation-mission": [
+    {
+      coach: "What time do you wake up?",
+      hint: "Sebutkan jam bangun.",
+      sampleAnswer: "I wake up at six.",
+      focus: "Wake-up time"
+    },
+    {
+      coach: "When do you study English?",
+      hint: "Sebutkan hari dan jam.",
+      sampleAnswer: "I study on Monday and Wednesday at seven.",
+      focus: "Study schedule"
+    },
+    {
+      coach: "Is the class online?",
+      hint: "Jawab dengan yes/no lengkap.",
+      sampleAnswer: "Yes, it is online.",
+      focus: "Class format"
+    },
+    {
+      coach: "Great. See you on Monday.",
+      hint: "Tutup percakapan.",
+      sampleAnswer: "See you.",
+      focus: "Closing"
+    }
   ]
 };
 

@@ -1,0 +1,19 @@
+prompts:
+  - key: say_wakeup_time
+    instruction_id: "Sebutkan jam kamu bangun."
+    prompt_en: "What time do you wake up?"
+    expected_response_examples:
+      - "I wake up at six."
+      - "I wake up at seven."
+  - key: say_study_schedule
+    instruction_id: "Sebutkan hari dan jam belajar."
+    prompt_en: "When do you study English?"
+    expected_response_examples:
+      - "I study on Monday and Wednesday at seven."
+      - "On Monday and Wednesday at seven."
+  - key: ask_online
+    instruction_id: "Tanyakan apakah kelas online."
+    prompt_en: "The class is on Monday."
+    expected_response_examples:
+      - "Is the class online?"
+      - "Is it online?"

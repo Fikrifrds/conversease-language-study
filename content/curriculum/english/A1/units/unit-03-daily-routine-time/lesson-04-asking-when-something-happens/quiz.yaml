@@ -1,0 +1,17 @@
+questions:
+  - key: ask_event_time
+    type: multiple_choice
+    prompt: "Which question asks when an event happens?"
+    options:
+      - "When is the meeting?"
+      - "What is your name?"
+      - "How do you spell it?"
+    correct_answer: "When is the meeting?"
+  - key: online_question
+    type: multiple_choice
+    prompt: "Which sentence asks if something is online?"
+    options:
+      - "Is it online?"
+      - "It online."
+      - "Online it is."
+    correct_answer: "Is it online?"

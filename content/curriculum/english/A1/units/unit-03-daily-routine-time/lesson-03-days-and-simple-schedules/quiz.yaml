@@ -1,0 +1,17 @@
+questions:
+  - key: day_preposition
+    type: multiple_choice
+    prompt: "Which word comes before Monday?"
+    options:
+      - "on"
+      - "at"
+      - "from"
+    correct_answer: "on"
+  - key: time_followup
+    type: multiple_choice
+    prompt: "Which short question asks about time?"
+    options:
+      - "What time?"
+      - "What name?"
+      - "What country?"
+    correct_answer: "What time?"

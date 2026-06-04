@@ -1,0 +1,19 @@
+prompts:
+  - key: say_wakeup
+    instruction_id: "Sebutkan jam kamu bangun."
+    prompt_en: "What do you do in the morning?"
+    expected_response_examples:
+      - "I wake up at six."
+      - "I wake up at seven."
+  - key: say_next_step
+    instruction_id: "Sebutkan kegiatan setelah itu."
+    prompt_en: "What do you do after that?"
+    expected_response_examples:
+      - "I study English at seven."
+      - "After that, I study English."
+  - key: say_work_time
+    instruction_id: "Sebutkan jam kamu bekerja."
+    prompt_en: "Do you work in the afternoon?"
+    expected_response_examples:
+      - "Yes, I work at one."
+      - "I work at one."

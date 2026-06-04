@@ -1,0 +1,17 @@
+questions:
+  - key: combine_schedule
+    type: multiple_choice
+    prompt: "Which sentence uses day and time correctly?"
+    options:
+      - "I study on Monday at seven."
+      - "I study at Monday on seven."
+      - "I study from Monday in seven."
+    correct_answer: "I study on Monday at seven."
+  - key: routine_question
+    type: multiple_choice
+    prompt: "Which question asks about routine time?"
+    options:
+      - "What time do you wake up?"
+      - "What is your phone number?"
+      - "Where are you from?"
+    correct_answer: "What time do you wake up?"

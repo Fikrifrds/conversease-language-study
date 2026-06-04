@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_day
+    instruction_id: "Tanyakan hari kelas."
+    prompt_en: "You want to know the schedule."
+    expected_response_examples:
+      - "When is the English class?"
+      - "When is the class?"
+  - key: answer_days
+    instruction_id: "Jawab dengan hari kelas."
+    prompt_en: "When is the English class?"
+    expected_response_examples:
+      - "It's on Monday and Wednesday."
+      - "On Monday and Wednesday."
+  - key: answer_time
+    instruction_id: "Jawab jam kelas."
+    prompt_en: "What time?"
+    expected_response_examples:
+      - "At seven in the evening."
+      - "It's at seven in the evening."

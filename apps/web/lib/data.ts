@@ -474,6 +474,215 @@ export const lessonCatalog = [
       { question: "What does Is everything correct? mean?", answer: "Apakah semuanya benar?" }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "telling-the-time",
+    title: "Telling the Time",
+    unit: "Daily Routine & Time",
+    conversationGoal: "Ask and answer a simple question about time.",
+    setup: "Kamu ingin tahu jam mulai kelas online. Tanyakan waktunya, lalu cek apakah itu pagi, siang, atau malam.",
+    dialogue: [
+      { speaker: "Alya", text: "What time is the class?" },
+      { speaker: "Ben", text: "It's at nine o'clock." },
+      { speaker: "Alya", text: "In the morning?" },
+      { speaker: "Ben", text: "Yes, in the morning." },
+      { speaker: "Alya", text: "Thank you." },
+      { speaker: "Ben", text: "You're welcome." }
+    ],
+    translation: [
+      "Jam berapa kelasnya?",
+      "Kelasnya jam sembilan.",
+      "Pagi?",
+      "Ya, pagi.",
+      "Terima kasih.",
+      "Sama-sama."
+    ],
+    phrases: [
+      { phrase: "What time is the class?", meaning: "Jam berapa kelasnya?", usage: "Ask about the time of an event." },
+      { phrase: "It's at nine o'clock.", meaning: "Jam sembilan.", usage: "Answer with a clear time." },
+      { phrase: "In the morning?", meaning: "Pagi?", usage: "Check the part of the day." },
+      { phrase: "Yes, in the morning.", meaning: "Ya, pagi.", usage: "Confirm the time of day." },
+      { phrase: "You're welcome.", meaning: "Sama-sama.", usage: "Reply after someone says thank you." }
+    ],
+    grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
+    prompts: [
+      "Ask: What time is the class?",
+      "Answer with: It's at nine o'clock.",
+      "Check with: In the morning?"
+    ],
+    quiz: [
+      { question: "Which question asks about time?", answer: "What time is the class?" },
+      { question: "Which word comes before a time?", answer: "at" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "talking-about-daily-routines",
+    title: "Talking About Daily Routines",
+    unit: "Daily Routine & Time",
+    conversationGoal: "Say a simple daily routine with time words.",
+    setup: "Kamu mengobrol dengan teman kelas tentang kebiasaan pagi. Sebutkan kegiatan sederhana dan kapan kamu melakukannya.",
+    dialogue: [
+      { speaker: "Alya", text: "What do you do in the morning?" },
+      { speaker: "Ben", text: "I wake up at six." },
+      { speaker: "Alya", text: "What do you do after that?" },
+      { speaker: "Ben", text: "I study English at seven." },
+      { speaker: "Alya", text: "Nice. Do you work in the afternoon?" },
+      { speaker: "Ben", text: "Yes, I work at one." }
+    ],
+    translation: [
+      "Apa yang kamu lakukan di pagi hari?",
+      "Saya bangun jam enam.",
+      "Apa yang kamu lakukan setelah itu?",
+      "Saya belajar bahasa Inggris jam tujuh.",
+      "Bagus. Apakah kamu bekerja siang hari?",
+      "Ya, saya bekerja jam satu."
+    ],
+    phrases: [
+      { phrase: "What do you do in the morning?", meaning: "Apa yang kamu lakukan di pagi hari?", usage: "Ask about a morning routine." },
+      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say when you wake up." },
+      { phrase: "What do you do after that?", meaning: "Apa yang kamu lakukan setelah itu?", usage: "Ask for the next routine step." },
+      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
+      { phrase: "I work at one.", meaning: "Saya bekerja jam satu.", usage: "Say a work routine." }
+    ],
+    grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
+    prompts: [
+      "Say when you wake up.",
+      "Say what you do after that.",
+      "Say when you work or study."
+    ],
+    quiz: [
+      { question: "Which sentence talks about a routine?", answer: "I wake up at six." },
+      { question: "What does after that mean?", answer: "setelah itu" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "days-and-simple-schedules",
+    title: "Days and Simple Schedules",
+    unit: "Daily Routine & Time",
+    conversationGoal: "Talk about simple days and class schedules.",
+    setup: "Kamu ingin tahu hari apa kelas berlangsung. Tanyakan jadwal sederhana, lalu ulangi hari dan jamnya.",
+    dialogue: [
+      { speaker: "Alya", text: "When is the English class?" },
+      { speaker: "Ben", text: "It's on Monday and Wednesday." },
+      { speaker: "Alya", text: "What time?" },
+      { speaker: "Ben", text: "At seven in the evening." },
+      { speaker: "Alya", text: "Great. See you on Monday." },
+      { speaker: "Ben", text: "See you." }
+    ],
+    translation: [
+      "Kapan kelas bahasa Inggrisnya?",
+      "Kelasnya hari Senin dan Rabu.",
+      "Jam berapa?",
+      "Jam tujuh malam.",
+      "Bagus. Sampai jumpa hari Senin.",
+      "Sampai jumpa."
+    ],
+    phrases: [
+      { phrase: "When is the English class?", meaning: "Kapan kelas bahasa Inggrisnya?", usage: "Ask about the day or schedule." },
+      { phrase: "It's on Monday and Wednesday.", meaning: "Kelasnya hari Senin dan Rabu.", usage: "Answer with class days." },
+      { phrase: "What time?", meaning: "Jam berapa?", usage: "Ask a short follow-up about time." },
+      { phrase: "At seven in the evening.", meaning: "Jam tujuh malam.", usage: "Answer with time of day." },
+      { phrase: "See you on Monday.", meaning: "Sampai jumpa hari Senin.", usage: "Close with the day you will meet." }
+    ],
+    grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
+    prompts: [
+      "Ask when the English class is.",
+      "Answer with days: on Monday and Wednesday.",
+      "Answer the time: at seven in the evening."
+    ],
+    quiz: [
+      { question: "Which word comes before Monday?", answer: "on" },
+      { question: "Which short question asks about time?", answer: "What time?" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-when-something-happens",
+    title: "Asking When Something Happens",
+    unit: "Daily Routine & Time",
+    conversationGoal: "Ask when a simple event happens and confirm the details.",
+    setup: "Kamu perlu ikut meeting singkat. Tanyakan kapan meeting berlangsung, apakah online, dan konfirmasi waktunya.",
+    dialogue: [
+      { speaker: "Dimas", text: "When is the meeting?" },
+      { speaker: "Alya", text: "It's tomorrow at ten." },
+      { speaker: "Dimas", text: "Is it online?" },
+      { speaker: "Alya", text: "Yes, it is online." },
+      { speaker: "Dimas", text: "Tomorrow at ten. Is that right?" },
+      { speaker: "Alya", text: "Yes, that's right." }
+    ],
+    translation: [
+      "Kapan meetingnya?",
+      "Besok jam sepuluh.",
+      "Apakah online?",
+      "Ya, online.",
+      "Besok jam sepuluh. Benar begitu?",
+      "Ya, betul."
+    ],
+    phrases: [
+      { phrase: "When is the meeting?", meaning: "Kapan meetingnya?", usage: "Ask when an event happens." },
+      { phrase: "It's tomorrow at ten.", meaning: "Besok jam sepuluh.", usage: "Answer with day and time." },
+      { phrase: "Is it online?", meaning: "Apakah online?", usage: "Ask about the meeting format." },
+      { phrase: "Is that right?", meaning: "Benar begitu?", usage: "Check that your understanding is correct." },
+      { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm the detail." }
+    ],
+    grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
+    prompts: [
+      "Ask when the meeting is.",
+      "Ask if it is online.",
+      "Confirm with: Is that right?"
+    ],
+    quiz: [
+      { question: "Which question asks when an event happens?", answer: "When is the meeting?" },
+      { question: "Which sentence asks if something is online?", answer: "Is it online?" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "routine-conversation-mission",
+    title: "Routine Conversation Mission",
+    unit: "Daily Routine & Time",
+    conversationGoal: "Combine time, routine, days, and schedule questions in one simple conversation.",
+    setup: "Ini misi akhir unit. Kamu berbicara tentang rutinitas pagi, jadwal belajar, hari kelas, dan waktu meeting sederhana.",
+    dialogue: [
+      { speaker: "Alya", text: "Hi, Ben. What time do you wake up?" },
+      { speaker: "Ben", text: "I wake up at six." },
+      { speaker: "Alya", text: "When do you study English?" },
+      { speaker: "Ben", text: "I study on Monday and Wednesday at seven." },
+      { speaker: "Alya", text: "Is the class online?" },
+      { speaker: "Ben", text: "Yes, it is online." },
+      { speaker: "Alya", text: "Great. See you on Monday." },
+      { speaker: "Ben", text: "See you." }
+    ],
+    translation: [
+      "Hai, Ben. Jam berapa kamu bangun?",
+      "Saya bangun jam enam.",
+      "Kapan kamu belajar bahasa Inggris?",
+      "Saya belajar hari Senin dan Rabu jam tujuh.",
+      "Apakah kelasnya online?",
+      "Ya, online.",
+      "Bagus. Sampai jumpa hari Senin.",
+      "Sampai jumpa."
+    ],
+    phrases: [
+      { phrase: "What time do you wake up?", meaning: "Jam berapa kamu bangun?", usage: "Ask about a routine time." },
+      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a morning routine." },
+      { phrase: "When do you study English?", meaning: "Kapan kamu belajar bahasa Inggris?", usage: "Ask about a study schedule." },
+      { phrase: "I study on Monday and Wednesday at seven.", meaning: "Saya belajar hari Senin dan Rabu jam tujuh.", usage: "Give days and time together." },
+      { phrase: "Is the class online?", meaning: "Apakah kelasnya online?", usage: "Ask about class format." }
+    ],
+    grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
+    prompts: [
+      "Say your wake-up time.",
+      "Say your study schedule.",
+      "Ask if the class is online."
+    ],
+    quiz: [
+      { question: "Which sentence uses day and time correctly?", answer: "I study on Monday at seven." },
+      { question: "Which question asks about routine time?", answer: "What time do you wake up?" }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -512,10 +721,17 @@ export const course = {
         }))
     },
     {
-      title: "Talk About Yourself",
-      outcome: "Talk about job, home, routine, and hobbies.",
+      title: "Daily Routine & Time",
+      outcome: "Talk about simple routines, days, class schedules, and event times.",
       progress: 0,
-      lessons: []
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Daily Routine & Time")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "routine-conversation-mission" ? 10 : 8
+        }))
     },
     {
       title: "Family, Friends, and Simple Questions",

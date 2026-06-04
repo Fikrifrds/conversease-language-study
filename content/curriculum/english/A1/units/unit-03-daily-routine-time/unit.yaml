@@ -1,0 +1,11 @@
+unit_key: unit-03-daily-routine-time
+level_code: A1
+title: Daily Routine & Time
+main_conversation_outcome: User can talk about simple routines, days, and time.
+status: published
+lessons:
+  - lesson-01-telling-the-time
+  - lesson-02-talking-about-daily-routines
+  - lesson-03-days-and-simple-schedules
+  - lesson-04-asking-when-something-happens
+  - lesson-05-routine-conversation-mission

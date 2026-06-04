@@ -1,0 +1,17 @@
+questions:
+  - key: ask_time_question
+    type: multiple_choice
+    prompt: "Which question asks about time?"
+    options:
+      - "What time is the class?"
+      - "Where are you from?"
+      - "What is your name?"
+    correct_answer: "What time is the class?"
+  - key: time_preposition
+    type: multiple_choice
+    prompt: "Which word comes before a time?"
+    options:
+      - "at"
+      - "from"
+      - "name"
+    correct_answer: "at"

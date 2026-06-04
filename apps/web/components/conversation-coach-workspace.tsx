@@ -13,7 +13,12 @@ const scenarios = [
   { slug: "giving-phone-numbers", label: "Phone Numbers", description: "Sebutkan nomor dan cek ulang." },
   { slug: "sharing-email-addresses", label: "Email Address", description: "Sebutkan email dengan at dan dot." },
   { slug: "asking-for-repetition", label: "Ask to Repeat", description: "Minta pengulangan dengan sopan." },
-  { slug: "contact-details-mission", label: "Contact Mission", description: "Gabungkan nama, nomor, dan email." }
+  { slug: "contact-details-mission", label: "Contact Mission", description: "Gabungkan nama, nomor, dan email." },
+  { slug: "telling-the-time", label: "Telling Time", description: "Tanya dan jawab jam kelas." },
+  { slug: "talking-about-daily-routines", label: "Daily Routine", description: "Ceritakan rutinitas sederhana." },
+  { slug: "days-and-simple-schedules", label: "Class Schedule", description: "Bahas hari dan jam kelas." },
+  { slug: "asking-when-something-happens", label: "When It Happens", description: "Tanya waktu sebuah event." },
+  { slug: "routine-conversation-mission", label: "Routine Mission", description: "Gabungkan routine dan schedule." }
 ];
 
 export function ConversationCoachWorkspace() {

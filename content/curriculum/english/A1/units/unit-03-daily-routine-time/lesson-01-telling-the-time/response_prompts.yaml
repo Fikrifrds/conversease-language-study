@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_time
+    instruction_id: "Tanyakan jam mulai kelas."
+    prompt_en: "The class starts soon."
+    expected_response_examples:
+      - "What time is the class?"
+      - "What time is it?"
+  - key: answer_time
+    instruction_id: "Jawab dengan jam sederhana."
+    prompt_en: "What time is the class?"
+    expected_response_examples:
+      - "It's at nine o'clock."
+      - "At nine o'clock."
+  - key: check_morning
+    instruction_id: "Cek apakah waktunya pagi."
+    prompt_en: "It's at nine o'clock."
+    expected_response_examples:
+      - "In the morning?"
+      - "Is it in the morning?"

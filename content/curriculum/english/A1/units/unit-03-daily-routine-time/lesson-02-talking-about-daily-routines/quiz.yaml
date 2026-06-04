@@ -1,0 +1,17 @@
+questions:
+  - key: routine_sentence
+    type: multiple_choice
+    prompt: "Which sentence talks about a routine?"
+    options:
+      - "I wake up at six."
+      - "Nice to meet you."
+      - "Where are you from?"
+    correct_answer: "I wake up at six."
+  - key: after_that_meaning
+    type: multiple_choice
+    prompt: "What does \"after that\" mean?"
+    options:
+      - "setelah itu"
+      - "pagi"
+      - "sama-sama"
+    correct_answer: "setelah itu"

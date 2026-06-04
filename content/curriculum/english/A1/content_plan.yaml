@@ -59,29 +59,29 @@ units:
 
   - unit_key: unit-03-daily-routine-time
     title: Daily Routine & Time
-    status: planned
+    status: in_production
     main_conversation_outcome: Talk about simple routines, days, and time.
     lessons:
       - lesson_key: lesson-01-telling-the-time
         slug: telling-the-time
         title: Telling the Time
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-talking-about-daily-routines
         slug: talking-about-daily-routines
         title: Talking About Daily Routines
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-days-and-simple-schedules
         slug: days-and-simple-schedules
         title: Days and Simple Schedules
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-when-something-happens
         slug: asking-when-something-happens
         title: Asking When Something Happens
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-routine-conversation-mission
         slug: routine-conversation-mission
         title: Routine Conversation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-04-work-study-and-preferences
     title: Work, Study & Preferences
