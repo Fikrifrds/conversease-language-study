@@ -18,7 +18,12 @@ const scenarios = [
   { slug: "talking-about-daily-routines", label: "Daily Routine", description: "Ceritakan rutinitas sederhana." },
   { slug: "days-and-simple-schedules", label: "Class Schedule", description: "Bahas hari dan jam kelas." },
   { slug: "asking-when-something-happens", label: "When It Happens", description: "Tanya waktu sebuah event." },
-  { slug: "routine-conversation-mission", label: "Routine Mission", description: "Gabungkan routine dan schedule." }
+  { slug: "routine-conversation-mission", label: "Routine Mission", description: "Gabungkan routine dan schedule." },
+  { slug: "saying-what-you-do", label: "What You Do", description: "Sebutkan kerja atau studi." },
+  { slug: "asking-about-work-or-study", label: "Work or Study", description: "Tanyakan aktivitas utama." },
+  { slug: "talking-about-likes", label: "Preferences", description: "Bahas hal yang disukai." },
+  { slug: "saying-what-you-can-do", label: "Can Do", description: "Sebutkan kemampuan sederhana." },
+  { slug: "work-study-conversation-mission", label: "Work Mission", description: "Gabungkan kerja, suka, dan bisa." }
 ];
 
 export function ConversationCoachWorkspace() {

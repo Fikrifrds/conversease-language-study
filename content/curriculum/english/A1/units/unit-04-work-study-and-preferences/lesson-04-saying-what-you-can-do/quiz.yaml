@@ -1,0 +1,17 @@
+questions:
+  - key: can_question
+    type: multiple_choice
+    prompt: "Which question asks about ability?"
+    options:
+      - "Can you speak English?"
+      - "Do you like English?"
+      - "When is the class?"
+    correct_answer: "Can you speak English?"
+  - key: can_pattern
+    type: multiple_choice
+    prompt: "Which sentence is correct?"
+    options:
+      - "I can write simple emails."
+      - "I can writes simple emails."
+      - "I can to write simple emails."
+    correct_answer: "I can write simple emails."

@@ -1,0 +1,19 @@
+prompts:
+  - key: say_activity
+    instruction_id: "Sebutkan kerja atau studi."
+    prompt_en: "Do you work or study?"
+    expected_response_examples:
+      - "I study English online."
+      - "I work in a shop."
+  - key: say_like
+    instruction_id: "Sebutkan hal yang kamu suka."
+    prompt_en: "What do you like about English?"
+    expected_response_examples:
+      - "I like speaking practice."
+      - "I like listening practice."
+  - key: say_ability
+    instruction_id: "Sebutkan kemampuan bahasa Inggris."
+    prompt_en: "What can you do in English?"
+    expected_response_examples:
+      - "I can introduce myself."
+      - "I can write simple messages."

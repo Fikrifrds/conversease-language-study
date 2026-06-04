@@ -1,0 +1,19 @@
+prompts:
+  - key: answer_speak
+    instruction_id: "Jawab kemampuan speaking."
+    prompt_en: "Can you speak English?"
+    expected_response_examples:
+      - "I can speak a little."
+      - "Yes, I can speak a little."
+  - key: answer_write
+    instruction_id: "Jawab kemampuan menulis email."
+    prompt_en: "Can you write simple emails?"
+    expected_response_examples:
+      - "Yes, I can."
+      - "Yes, I can write simple emails."
+  - key: answer_not_yet
+    instruction_id: "Jawab kemampuan yang belum bisa."
+    prompt_en: "Can you join a meeting in English?"
+    expected_response_examples:
+      - "Not yet, but I can try."
+      - "Not yet."

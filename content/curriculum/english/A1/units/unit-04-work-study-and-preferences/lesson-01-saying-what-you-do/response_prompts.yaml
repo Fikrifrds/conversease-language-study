@@ -1,0 +1,19 @@
+prompts:
+  - key: say_status
+    instruction_id: "Sebutkan statusmu."
+    prompt_en: "What do you do?"
+    expected_response_examples:
+      - "I'm a student."
+      - "I'm an assistant."
+  - key: say_subject
+    instruction_id: "Sebutkan apa yang kamu pelajari."
+    prompt_en: "What do you study?"
+    expected_response_examples:
+      - "I study design."
+      - "I study English."
+  - key: say_online
+    instruction_id: "Jawab apakah kamu belajar online."
+    prompt_en: "Do you study online?"
+    expected_response_examples:
+      - "Yes, I study online."
+      - "Yes, I do."

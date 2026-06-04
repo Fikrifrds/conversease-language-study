@@ -1,0 +1,19 @@
+prompts:
+  - key: answer_like_english
+    instruction_id: "Jawab apakah kamu suka bahasa Inggris."
+    prompt_en: "Do you like English?"
+    expected_response_examples:
+      - "Yes, I like it."
+      - "Yes, I do."
+  - key: say_preference
+    instruction_id: "Sebutkan bagian yang kamu suka."
+    prompt_en: "What do you like?"
+    expected_response_examples:
+      - "I like speaking practice."
+      - "I like listening practice."
+  - key: ask_preference
+    instruction_id: "Tanyakan preferensi teman."
+    prompt_en: "I like speaking practice."
+    expected_response_examples:
+      - "Do you like grammar?"
+      - "What do you like?"

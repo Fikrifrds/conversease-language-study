@@ -1,0 +1,17 @@
+questions:
+  - key: work_question
+    type: multiple_choice
+    prompt: "Which question asks about work or study status?"
+    options:
+      - "What do you do?"
+      - "What time is it?"
+      - "How do you spell it?"
+    correct_answer: "What do you do?"
+  - key: student_sentence
+    type: multiple_choice
+    prompt: "Which sentence is correct?"
+    options:
+      - "I'm a student."
+      - "I'm student."
+      - "I student."
+    correct_answer: "I'm a student."

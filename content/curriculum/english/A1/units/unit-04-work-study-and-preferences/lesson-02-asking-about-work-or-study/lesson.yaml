@@ -1,0 +1,24 @@
+lesson_key: lesson-02-asking-about-work-or-study
+slug: asking-about-work-or-study
+title: Asking About Work or Study
+status: published
+estimated_minutes: 8
+conversation_situation: asking_a_classmate_about_work_or_study
+conversation_goal: Learners can ask if someone works or studies and ask one simple follow-up question.
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

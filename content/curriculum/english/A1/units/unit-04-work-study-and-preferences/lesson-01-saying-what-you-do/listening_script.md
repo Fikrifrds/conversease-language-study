@@ -1,0 +1,15 @@
+# Dialogue Script
+
+**Sara:** What do you do?
+**Dimas:** I'm a student.
+**Sara:** What do you study?
+**Dimas:** I study design.
+**Sara:** Do you study online?
+**Dimas:** Yes, I study online.
+
+## Audio Direction
+
+- Level: A1
+- Speed: slow and natural
+- Tone: friendly, clear, supportive
+- Voices: one female learner, one male learner

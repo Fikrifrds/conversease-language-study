@@ -85,29 +85,29 @@ units:
 
   - unit_key: unit-04-work-study-and-preferences
     title: Work, Study & Preferences
-    status: planned
+    status: in_production
     main_conversation_outcome: Say what you do and talk about simple likes, dislikes, and abilities.
     lessons:
       - lesson_key: lesson-01-saying-what-you-do
         slug: saying-what-you-do
         title: Saying What You Do
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-about-work-or-study
         slug: asking-about-work-or-study
         title: Asking About Work or Study
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-talking-about-likes
         slug: talking-about-likes
         title: Talking About Likes
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-saying-what-you-can-do
         slug: saying-what-you-can-do
         title: Saying What You Can Do
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-work-study-conversation-mission
         slug: work-study-conversation-mission
         title: Work and Study Conversation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-05-places-directions
     title: Places & Directions

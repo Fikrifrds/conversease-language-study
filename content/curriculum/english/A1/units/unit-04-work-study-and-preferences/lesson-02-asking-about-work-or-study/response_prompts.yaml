@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_work_study
+    instruction_id: "Tanyakan apakah teman bekerja atau belajar."
+    prompt_en: "You meet a new classmate."
+    expected_response_examples:
+      - "Do you work or study?"
+      - "Do you study or work?"
+  - key: ask_role
+    instruction_id: "Tanyakan detail pekerjaannya."
+    prompt_en: "I work in a small office."
+    expected_response_examples:
+      - "What do you do there?"
+      - "What is your job?"
+  - key: ask_back
+    instruction_id: "Tanyakan balik topik yang sama."
+    prompt_en: "I'm an assistant."
+    expected_response_examples:
+      - "How about you?"
+      - "What about you?"

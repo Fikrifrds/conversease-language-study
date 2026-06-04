@@ -367,6 +367,112 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "See you.",
       focus: "Closing"
     }
+  ],
+  "saying-what-you-do": [
+    {
+      coach: "What do you do?",
+      hint: "Jawab dengan status sederhana.",
+      sampleAnswer: "I'm a student.",
+      focus: "Work or study status"
+    },
+    {
+      coach: "What do you study?",
+      hint: "Sebutkan subjek yang kamu pelajari.",
+      sampleAnswer: "I study design.",
+      focus: "Study subject"
+    },
+    {
+      coach: "Do you study online?",
+      hint: "Jawab dengan yes/no lengkap.",
+      sampleAnswer: "Yes, I study online.",
+      focus: "Study format"
+    }
+  ],
+  "asking-about-work-or-study": [
+    {
+      coach: "Do you work or study?",
+      hint: "Jawab apakah kamu bekerja atau belajar.",
+      sampleAnswer: "I study English online.",
+      focus: "Work or study"
+    },
+    {
+      coach: "What do you do there?",
+      hint: "Sebutkan role sederhana.",
+      sampleAnswer: "I'm an assistant.",
+      focus: "Simple role"
+    },
+    {
+      coach: "Ask me the same question.",
+      hint: "Tanyakan balik dengan How about you?",
+      sampleAnswer: "How about you?",
+      focus: "Question back"
+    }
+  ],
+  "talking-about-likes": [
+    {
+      coach: "Do you like English?",
+      hint: "Jawab dengan: Yes, I like it.",
+      sampleAnswer: "Yes, I like it.",
+      focus: "Simple preference"
+    },
+    {
+      coach: "What do you like?",
+      hint: "Sebutkan bagian belajar yang kamu suka.",
+      sampleAnswer: "I like speaking practice.",
+      focus: "Learning preference"
+    },
+    {
+      coach: "Do you like grammar?",
+      hint: "Jawab jujur dengan kalimat pendek.",
+      sampleAnswer: "It's okay, but speaking is my favorite.",
+      focus: "Favorite part"
+    }
+  ],
+  "saying-what-you-can-do": [
+    {
+      coach: "Can you speak English?",
+      hint: "Sebutkan kemampuanmu dengan I can.",
+      sampleAnswer: "I can speak a little.",
+      focus: "Speaking ability"
+    },
+    {
+      coach: "Can you write simple emails?",
+      hint: "Jawab dengan Yes, I can.",
+      sampleAnswer: "Yes, I can.",
+      focus: "Writing ability"
+    },
+    {
+      coach: "Can you join a meeting in English?",
+      hint: "Gunakan Not yet kalau belum bisa.",
+      sampleAnswer: "Not yet, but I can try.",
+      focus: "Honest ability"
+    }
+  ],
+  "work-study-conversation-mission": [
+    {
+      coach: "Do you work or study?",
+      hint: "Sebutkan kerja atau studi.",
+      sampleAnswer: "I study English online.",
+      focus: "Work or study"
+    },
+    {
+      coach: "What do you like about English?",
+      hint: "Sebutkan bagian yang kamu suka.",
+      sampleAnswer: "I like speaking practice.",
+      focus: "Preference"
+    },
+    {
+      coach: "What can you do in English?",
+      hint: "Sebutkan satu kemampuan.",
+      sampleAnswer: "I can introduce myself.",
+      focus: "Ability"
+    },
+    {
+      coach: "Great. Keep practicing.",
+      hint: "Balas dengan singkat dan positif.",
+      sampleAnswer: "Thank you. I will.",
+      focus: "Closing"
+    }
   ]
 };
 

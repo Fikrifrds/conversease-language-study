@@ -1,0 +1,17 @@
+questions:
+  - key: mission_pattern
+    type: multiple_choice
+    prompt: "Which sentence says an ability?"
+    options:
+      - "I can introduce myself."
+      - "I like English."
+      - "I work in a shop."
+    correct_answer: "I can introduce myself."
+  - key: work_study_question
+    type: multiple_choice
+    prompt: "Which question asks about work or study?"
+    options:
+      - "Do you work or study?"
+      - "What time is the class?"
+      - "How do you spell it?"
+    correct_answer: "Do you work or study?"

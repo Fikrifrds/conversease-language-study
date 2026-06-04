@@ -1,0 +1,17 @@
+questions:
+  - key: or_question
+    type: multiple_choice
+    prompt: "Which question gives two choices?"
+    options:
+      - "Do you work or study?"
+      - "What is your phone number?"
+      - "See you later."
+    correct_answer: "Do you work or study?"
+  - key: assistant_article
+    type: multiple_choice
+    prompt: "Which sentence is correct?"
+    options:
+      - "I'm an assistant."
+      - "I'm a assistant."
+      - "I'm assistant."
+    correct_answer: "I'm an assistant."

@@ -1,0 +1,21 @@
+scenario_key: work_study_preferences_unit_mission
+mode: lesson_practice_coach
+level_code: A1
+opening_line: "Do you work or study?"
+learner_goal: "Talk about work or study, preferences, and simple English abilities."
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - "I study"
+  - "I work"
+  - "I like"
+  - "I can"
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

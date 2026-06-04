@@ -1,0 +1,17 @@
+questions:
+  - key: like_question
+    type: multiple_choice
+    prompt: "Which question asks about a preference?"
+    options:
+      - "Do you like English?"
+      - "What time is the class?"
+      - "What is your name?"
+    correct_answer: "Do you like English?"
+  - key: favorite_phrase
+    type: multiple_choice
+    prompt: "What does \"my favorite\" mean?"
+    options:
+      - "favorit saya"
+      - "pekerjaan saya"
+      - "jadwal saya"
+    correct_answer: "favorit saya"

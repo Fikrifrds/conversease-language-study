@@ -683,6 +683,215 @@ export const lessonCatalog = [
       { question: "Which question asks about routine time?", answer: "What time do you wake up?" }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "saying-what-you-do",
+    title: "Saying What You Do",
+    unit: "Work, Study & Preferences",
+    conversationGoal: "Say what you do in a simple work or study conversation.",
+    setup: "Kamu bertemu teman baru di kelas online. Ia bertanya apa kegiatanmu. Jawab dengan status sederhana seperti student, worker, atau pekerjaan yang mudah.",
+    dialogue: [
+      { speaker: "Sara", text: "What do you do?" },
+      { speaker: "Dimas", text: "I'm a student." },
+      { speaker: "Sara", text: "What do you study?" },
+      { speaker: "Dimas", text: "I study design." },
+      { speaker: "Sara", text: "Do you study online?" },
+      { speaker: "Dimas", text: "Yes, I study online." }
+    ],
+    translation: [
+      "Apa pekerjaan atau kegiatanmu?",
+      "Saya seorang pelajar.",
+      "Apa yang kamu pelajari?",
+      "Saya belajar desain.",
+      "Apakah kamu belajar online?",
+      "Ya, saya belajar online."
+    ],
+    phrases: [
+      { phrase: "What do you do?", meaning: "Apa pekerjaan atau kegiatanmu?", usage: "Ask about someone's work or study status." },
+      { phrase: "I'm a student.", meaning: "Saya seorang pelajar.", usage: "Say your simple status." },
+      { phrase: "What do you study?", meaning: "Apa yang kamu pelajari?", usage: "Ask about a study subject." },
+      { phrase: "I study design.", meaning: "Saya belajar desain.", usage: "Say what you study." },
+      { phrase: "I study online.", meaning: "Saya belajar online.", usage: "Say how you study." }
+    ],
+    grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
+    prompts: [
+      "Answer: What do you do?",
+      "Say what you study.",
+      "Say if you study online."
+    ],
+    quiz: [
+      { question: "Which question asks about work or study status?", answer: "What do you do?" },
+      { question: "Which sentence is correct?", answer: "I'm a student." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-about-work-or-study",
+    title: "Asking About Work or Study",
+    unit: "Work, Study & Preferences",
+    conversationGoal: "Ask if someone works or studies and ask one simple follow-up question.",
+    setup: "Kamu ingin mengenal teman kelas. Tanyakan apakah ia bekerja atau belajar, lalu tanyakan satu detail sederhana tentang kegiatannya.",
+    dialogue: [
+      { speaker: "Ben", text: "Do you work or study?" },
+      { speaker: "Mina", text: "I work in a small office." },
+      { speaker: "Ben", text: "What do you do there?" },
+      { speaker: "Mina", text: "I'm an assistant." },
+      { speaker: "Mina", text: "How about you?" },
+      { speaker: "Ben", text: "I study English online." }
+    ],
+    translation: [
+      "Apakah kamu bekerja atau belajar?",
+      "Saya bekerja di kantor kecil.",
+      "Apa yang kamu lakukan di sana?",
+      "Saya seorang asisten.",
+      "Kalau kamu?",
+      "Saya belajar bahasa Inggris online."
+    ],
+    phrases: [
+      { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
+      { phrase: "I work in a small office.", meaning: "Saya bekerja di kantor kecil.", usage: "Say where you work." },
+      { phrase: "What do you do there?", meaning: "Apa yang kamu lakukan di sana?", usage: "Ask about the role or activity." },
+      { phrase: "I'm an assistant.", meaning: "Saya seorang asisten.", usage: "Say a simple job." },
+      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same topic back." }
+    ],
+    grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
+    prompts: [
+      "Ask: Do you work or study?",
+      "Ask: What do you do there?",
+      "Ask back with: How about you?"
+    ],
+    quiz: [
+      { question: "Which question gives two choices?", answer: "Do you work or study?" },
+      { question: "Which sentence is correct?", answer: "I'm an assistant." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "talking-about-likes",
+    title: "Talking About Likes",
+    unit: "Work, Study & Preferences",
+    conversationGoal: "Say what you like and ask someone about simple preferences.",
+    setup: "Kamu berbicara dengan teman belajar tentang bagian bahasa Inggris yang kamu suka. Gunakan kalimat pendek untuk menyebutkan hal yang kamu suka.",
+    dialogue: [
+      { speaker: "Alya", text: "Do you like English?" },
+      { speaker: "Ben", text: "Yes, I like it." },
+      { speaker: "Alya", text: "What do you like?" },
+      { speaker: "Ben", text: "I like speaking practice." },
+      { speaker: "Alya", text: "Do you like grammar?" },
+      { speaker: "Ben", text: "It's okay, but speaking is my favorite." }
+    ],
+    translation: [
+      "Apakah kamu suka bahasa Inggris?",
+      "Ya, saya suka.",
+      "Apa yang kamu suka?",
+      "Saya suka latihan speaking.",
+      "Apakah kamu suka grammar?",
+      "Tidak apa-apa, tapi speaking adalah favorit saya."
+    ],
+    phrases: [
+      { phrase: "Do you like English?", meaning: "Apakah kamu suka bahasa Inggris?", usage: "Ask about a preference." },
+      { phrase: "Yes, I like it.", meaning: "Ya, saya suka.", usage: "Give a simple positive answer." },
+      { phrase: "What do you like?", meaning: "Apa yang kamu suka?", usage: "Ask for a specific preference." },
+      { phrase: "I like speaking practice.", meaning: "Saya suka latihan speaking.", usage: "Say a learning preference." },
+      { phrase: "Speaking is my favorite.", meaning: "Speaking adalah favorit saya.", usage: "Say your favorite part." }
+    ],
+    grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
+    prompts: [
+      "Answer: Do you like English?",
+      "Say what you like.",
+      "Ask someone what they like."
+    ],
+    quiz: [
+      { question: "Which question asks about a preference?", answer: "Do you like English?" },
+      { question: "What does my favorite mean?", answer: "favorit saya" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "saying-what-you-can-do",
+    title: "Saying What You Can Do",
+    unit: "Work, Study & Preferences",
+    conversationGoal: "Say what you can do in English with simple ability sentences.",
+    setup: "Kamu ditanya kemampuan bahasa Inggrismu. Jawab dengan jujur dan sederhana: apa yang sudah bisa kamu lakukan, dan apa yang belum.",
+    dialogue: [
+      { speaker: "Sara", text: "Can you speak English?" },
+      { speaker: "Dimas", text: "I can speak a little." },
+      { speaker: "Sara", text: "Can you write simple emails?" },
+      { speaker: "Dimas", text: "Yes, I can." },
+      { speaker: "Sara", text: "Can you join a meeting in English?" },
+      { speaker: "Dimas", text: "Not yet, but I can try." }
+    ],
+    translation: [
+      "Apakah kamu bisa berbicara bahasa Inggris?",
+      "Saya bisa berbicara sedikit.",
+      "Apakah kamu bisa menulis email sederhana?",
+      "Ya, saya bisa.",
+      "Apakah kamu bisa ikut meeting dalam bahasa Inggris?",
+      "Belum, tapi saya bisa mencoba."
+    ],
+    phrases: [
+      { phrase: "Can you speak English?", meaning: "Apakah kamu bisa berbicara bahasa Inggris?", usage: "Ask about speaking ability." },
+      { phrase: "I can speak a little.", meaning: "Saya bisa berbicara sedikit.", usage: "Say a small ability." },
+      { phrase: "Can you write simple emails?", meaning: "Apakah kamu bisa menulis email sederhana?", usage: "Ask about writing ability." },
+      { phrase: "Yes, I can.", meaning: "Ya, saya bisa.", usage: "Give a short positive answer." },
+      { phrase: "Not yet, but I can try.", meaning: "Belum, tapi saya bisa mencoba.", usage: "Say you cannot do it now but are willing." }
+    ],
+    grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
+    prompts: [
+      "Say what you can do.",
+      "Answer a Can you question.",
+      "Say: Not yet, but I can try."
+    ],
+    quiz: [
+      { question: "Which question asks about ability?", answer: "Can you speak English?" },
+      { question: "Which sentence is correct?", answer: "I can write simple emails." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "work-study-conversation-mission",
+    title: "Work and Study Conversation Mission",
+    unit: "Work, Study & Preferences",
+    conversationGoal: "Combine work, study, preferences, and simple abilities in one conversation.",
+    setup: "Ini misi akhir unit. Kamu memperkenalkan kegiatanmu, menanyakan pekerjaan atau studi, menyebutkan hal yang kamu suka, dan mengatakan kemampuan sederhana.",
+    dialogue: [
+      { speaker: "Mina", text: "Hi, Ben. Do you work or study?" },
+      { speaker: "Ben", text: "I study English online and I work in a shop." },
+      { speaker: "Mina", text: "What do you like about English?" },
+      { speaker: "Ben", text: "I like speaking practice." },
+      { speaker: "Mina", text: "What can you do in English?" },
+      { speaker: "Ben", text: "I can introduce myself and write simple messages." },
+      { speaker: "Mina", text: "Great. Keep practicing." },
+      { speaker: "Ben", text: "Thank you. I will." }
+    ],
+    translation: [
+      "Hai, Ben. Apakah kamu bekerja atau belajar?",
+      "Saya belajar bahasa Inggris online dan bekerja di toko.",
+      "Apa yang kamu suka dari bahasa Inggris?",
+      "Saya suka latihan speaking.",
+      "Apa yang bisa kamu lakukan dalam bahasa Inggris?",
+      "Saya bisa memperkenalkan diri dan menulis pesan sederhana.",
+      "Bagus. Terus berlatih.",
+      "Terima kasih. Saya akan begitu."
+    ],
+    phrases: [
+      { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
+      { phrase: "I study English online and I work in a shop.", meaning: "Saya belajar bahasa Inggris online dan bekerja di toko.", usage: "Combine study and work in one simple sentence." },
+      { phrase: "What do you like about English?", meaning: "Apa yang kamu suka dari bahasa Inggris?", usage: "Ask a preference question." },
+      { phrase: "What can you do in English?", meaning: "Apa yang bisa kamu lakukan dalam bahasa Inggris?", usage: "Ask about ability." },
+      { phrase: "I can introduce myself.", meaning: "Saya bisa memperkenalkan diri.", usage: "Say one English ability." }
+    ],
+    grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
+    prompts: [
+      "Say what you do.",
+      "Say what you like about English.",
+      "Say one thing you can do."
+    ],
+    quiz: [
+      { question: "Which sentence says an ability?", answer: "I can introduce myself." },
+      { question: "Which question asks about work or study?", answer: "Do you work or study?" }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -734,10 +943,17 @@ export const course = {
         }))
     },
     {
-      title: "Family, Friends, and Simple Questions",
-      outcome: "Ask and answer simple personal questions.",
+      title: "Work, Study & Preferences",
+      outcome: "Say what you do and talk about simple likes, dislikes, and abilities.",
       progress: 0,
-      lessons: []
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Work, Study & Preferences")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "work-study-conversation-mission" ? 10 : 8
+        }))
     },
     {
       title: "Daily Places and Situations",

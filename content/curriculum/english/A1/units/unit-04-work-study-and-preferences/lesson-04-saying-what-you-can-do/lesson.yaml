@@ -1,0 +1,24 @@
+lesson_key: lesson-04-saying-what-you-can-do
+slug: saying-what-you-can-do
+title: Saying What You Can Do
+status: published
+estimated_minutes: 8
+conversation_situation: saying_simple_english_abilities
+conversation_goal: Learners can say what they can do in English with simple ability sentences.
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

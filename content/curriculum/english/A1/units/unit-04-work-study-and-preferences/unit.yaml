@@ -1,0 +1,11 @@
+unit_key: unit-04-work-study-and-preferences
+level_code: A1
+title: Work, Study & Preferences
+main_conversation_outcome: User can say what they do and talk about simple likes, dislikes, and abilities.
+status: published
+lessons:
+  - lesson-01-saying-what-you-do
+  - lesson-02-asking-about-work-or-study
+  - lesson-03-talking-about-likes
+  - lesson-04-saying-what-you-can-do
+  - lesson-05-work-study-conversation-mission
