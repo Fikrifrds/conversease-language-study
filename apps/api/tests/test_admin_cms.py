@@ -202,6 +202,72 @@ class AdminCmsTest(unittest.TestCase):
             settings.payment_admin_api_key = original_key
             app.dependency_overrides.clear()
 
+    def test_admin_cms_voice_preview_route(self):
+        original_key = settings.payment_admin_api_key
+        settings.payment_admin_api_key = "test-admin-key-with-32-chars"
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+
+        preview_audio = {
+            "audio_url": "https://cdn.example.com/previews/sample.mp3",
+            "object_key": "conversease/audio/previews/voice/sample.mp3",
+            "duration_seconds": 3.2,
+            "audio_format": "mp3",
+            "audio_size": 3200,
+            "model": "speech-2.8-hd",
+            "voice_id": "English_expressive_narrator",
+            "trace_id": "trace-preview",
+            "usage_characters": 82,
+            "sample_text": "Hello, welcome to Conversease.",
+            "generated_by": "Audio QA",
+            "generated_at": "2026-06-04T00:00:00+00:00",
+        }
+
+        try:
+            client = TestClient(app)
+            with patch(
+                "app.api.routes.admin_cms.generate_voice_preview_audio",
+                new=AsyncMock(return_value=preview_audio),
+            ) as generate_preview:
+                response = client.post(
+                    "/api/admin/cms/audio/voice-preview",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                    json={
+                        "generated_by": "Audio QA",
+                        "model": "speech-2.8-hd",
+                        "voice_id": "English_expressive_narrator",
+                        "speed": 1,
+                    },
+                )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["data"]["audio_url"], preview_audio["audio_url"])
+            generate_preview.assert_awaited_once_with(
+                model="speech-2.8-hd",
+                voice_id="English_expressive_narrator",
+                speed=1,
+                sample_text=None,
+                generated_by="Audio QA",
+            )
+        finally:
+            settings.payment_admin_api_key = original_key
+            app.dependency_overrides.clear()
+
     def test_admin_cms_generate_audio_records_revision(self):
         original_key = settings.payment_admin_api_key
         settings.payment_admin_api_key = "test-admin-key-with-32-chars"

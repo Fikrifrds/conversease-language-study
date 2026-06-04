@@ -25,6 +25,7 @@ from app.services.audio_generation import (
     audio_generation_settings,
     find_lesson_audio_reference,
     generate_lesson_listening_audio,
+    generate_voice_preview_audio,
     read_yaml_mapping,
 )
 
@@ -61,6 +62,14 @@ class AudioGenerationPayload(BaseModel):
     model: Optional[str] = Field(default=None, max_length=40)
     voice_id: Optional[str] = Field(default=None, max_length=160)
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
+
+
+class VoicePreviewPayload(BaseModel):
+    generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    model: Optional[str] = Field(default=None, max_length=40)
+    voice_id: Optional[str] = Field(default=None, max_length=160)
+    speed: float = Field(default=1.0, ge=0.5, le=2.0)
+    sample_text: Optional[str] = Field(default=None, min_length=8, max_length=500)
 
 
 @router.get("/admin/cms/summary")
@@ -133,6 +142,24 @@ async def get_audio_generation_settings(
     _: AdminActor = Depends(require_admin_api_key),
 ) -> dict:
     return {"data": await audio_generation_settings()}
+
+
+@router.post("/admin/cms/audio/voice-preview")
+async def generate_cms_voice_preview_audio(
+    payload: VoicePreviewPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    try:
+        result = await generate_voice_preview_audio(
+            model=payload.model,
+            voice_id=payload.voice_id,
+            speed=payload.speed,
+            sample_text=payload.sample_text,
+            generated_by=admin_display_name(payload.generated_by, admin),
+        )
+        return {"data": result}
+    except AudioGenerationError as exc:
+        raise audio_generation_http_error(exc) from exc
 
 
 @router.post("/admin/cms/curriculum/lessons/{lesson_slug}/audio/listening")

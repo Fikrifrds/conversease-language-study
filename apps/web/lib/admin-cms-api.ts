@@ -49,7 +49,22 @@ export type AdminContentReadinessLesson = {
   publishStatus: string;
   status: string;
   missingItems: string[];
+  audioAsset: AdminAudioAsset | null;
   checks: AdminContentReadinessCheck[];
+};
+
+export type AdminAudioAsset = {
+  key: string;
+  type: string;
+  audioUrl: string;
+  durationSeconds: number;
+  provider: string;
+  model: string;
+  voiceId: string;
+  audioFormat: string;
+  storageKey: string;
+  generatedAt: string;
+  generatedBy: string;
 };
 
 export type AdminContentReadinessUnit = {
@@ -142,6 +157,21 @@ export type AdminGeneratedAudio = {
   usageCharacters: number;
 };
 
+export type AdminVoicePreviewAudio = {
+  audioUrl: string;
+  objectKey: string;
+  durationSeconds: number;
+  audioFormat: string;
+  audioSize: number;
+  model: string;
+  voiceId: string;
+  traceId: string;
+  usageCharacters: number;
+  sampleText: string;
+  generatedBy: string;
+  generatedAt: string;
+};
+
 export type AdminCmsSummary = {
   curriculum: {
     course: {
@@ -220,7 +250,22 @@ type ApiAdminContentReadinessLesson = {
   publish_status: string;
   status: string;
   missing_items: string[];
+  audio_asset: ApiAdminAudioAsset | null;
   checks: ApiAdminContentReadinessCheck[];
+};
+
+type ApiAdminAudioAsset = {
+  key: string;
+  type: string;
+  audio_url: string;
+  duration_seconds: number;
+  provider: string;
+  model: string;
+  voice_id: string;
+  audio_format: string;
+  storage_key: string;
+  generated_at: string;
+  generated_by: string;
 };
 
 type ApiAdminContentReadinessUnit = {
@@ -311,6 +356,21 @@ type ApiAdminGeneratedAudio = {
   voice_id: string;
   trace_id: string;
   usage_characters: number;
+};
+
+type ApiAdminVoicePreviewAudio = {
+  audio_url: string;
+  object_key: string;
+  duration_seconds: number;
+  audio_format: string;
+  audio_size: number;
+  model: string;
+  voice_id: string;
+  trace_id: string;
+  usage_characters: number;
+  sample_text: string;
+  generated_by: string;
+  generated_at: string;
 };
 
 function apiBaseUrl() {
@@ -407,6 +467,7 @@ function mapReadiness(readiness: ApiAdminContentReadiness): AdminContentReadines
         publishStatus: lesson.publish_status,
         status: lesson.status,
         missingItems: lesson.missing_items,
+        audioAsset: lesson.audio_asset ? mapAudioAsset(lesson.audio_asset) : null,
         checks: lesson.checks.map((check) => ({
           key: check.key,
           label: check.label,
@@ -420,6 +481,22 @@ function mapReadiness(readiness: ApiAdminContentReadiness): AdminContentReadines
         }))
       }))
     }))
+  };
+}
+
+function mapAudioAsset(asset: ApiAdminAudioAsset): AdminAudioAsset {
+  return {
+    key: asset.key,
+    type: asset.type,
+    audioUrl: asset.audio_url,
+    durationSeconds: asset.duration_seconds,
+    provider: asset.provider,
+    model: asset.model,
+    voiceId: asset.voice_id,
+    audioFormat: asset.audio_format,
+    storageKey: asset.storage_key,
+    generatedAt: asset.generated_at,
+    generatedBy: asset.generated_by
   };
 }
 
@@ -485,6 +562,23 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
     voiceId: audio.voice_id,
     traceId: audio.trace_id,
     usageCharacters: audio.usage_characters
+  };
+}
+
+function mapVoicePreviewAudio(audio: ApiAdminVoicePreviewAudio): AdminVoicePreviewAudio {
+  return {
+    audioUrl: audio.audio_url,
+    objectKey: audio.object_key,
+    durationSeconds: audio.duration_seconds,
+    audioFormat: audio.audio_format,
+    audioSize: audio.audio_size,
+    model: audio.model,
+    voiceId: audio.voice_id,
+    traceId: audio.trace_id,
+    usageCharacters: audio.usage_characters,
+    sampleText: audio.sample_text,
+    generatedBy: audio.generated_by,
+    generatedAt: audio.generated_at
   };
 }
 
@@ -604,6 +698,26 @@ export async function generateAdminLessonAudio(input: {
     })
   });
   return mapGeneratedAudio(response.data);
+}
+
+export async function previewAdminVoiceAudio(input: {
+  generatedBy: string;
+  model: string;
+  voiceId: string;
+  speed: number;
+  sampleText?: string;
+}): Promise<AdminVoicePreviewAudio> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminVoicePreviewAudio>>("/admin/cms/audio/voice-preview", {
+    method: "POST",
+    body: JSON.stringify({
+      generated_by: input.generatedBy,
+      model: input.model,
+      voice_id: input.voiceId,
+      speed: input.speed,
+      sample_text: input.sampleText
+    })
+  });
+  return mapVoicePreviewAudio(response.data);
 }
 
 export async function updateAdminEmailTemplate(input: {

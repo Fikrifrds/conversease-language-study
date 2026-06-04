@@ -261,6 +261,69 @@ async def generate_lesson_listening_audio(
     }
 
 
+async def generate_voice_preview_audio(
+    *,
+    model: Optional[str] = None,
+    voice_id: Optional[str] = None,
+    speed: float = 1.0,
+    generated_by: str = "admin",
+    sample_text: Optional[str] = None,
+) -> dict[str, Any]:
+    if not settings.minimax_api_key:
+        raise AudioGenerationError("minimax_api_key_missing")
+    if not s3_configured():
+        raise AudioGenerationError("s3_config_missing")
+
+    selected_model = normalized_model(model or settings.minimax_tts_model)
+    selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
+    if not selected_voice_id:
+        raise AudioGenerationError("minimax_voice_id_missing")
+
+    preview_text = (
+        sample_text
+        or "Hello, welcome to Conversease. Listen, repeat, and speak with clear confidence."
+    ).strip()
+    if len(preview_text) < 8:
+        raise AudioGenerationError("voice_preview_text_empty")
+    if len(preview_text) > 500:
+        raise AudioGenerationError("voice_preview_text_too_long")
+
+    generated = await synthesize_minimax_tts(
+        text=preview_text,
+        model=selected_model,
+        voice_id=selected_voice_id,
+        speed=speed,
+        language_boost=settings.minimax_tts_language_boost,
+    )
+
+    generated_at = datetime.now(timezone.utc)
+    object_key = voice_preview_object_key(
+        voice_id=selected_voice_id,
+        generated_at=generated_at,
+        extension=generated.audio_format,
+    )
+    audio_url = upload_audio_to_s3(
+        audio_bytes=generated.audio_bytes,
+        object_key=object_key,
+        content_type=content_type_for_audio_format(generated.audio_format),
+    )
+
+    return {
+        "audio_url": audio_url,
+        "object_key": object_key,
+        "duration_seconds": generated.duration_seconds,
+        "audio_format": generated.audio_format,
+        "audio_size": generated.audio_size,
+        "model": selected_model,
+        "voice_id": selected_voice_id,
+        "trace_id": generated.trace_id,
+        "usage_characters": generated.usage_characters,
+        "sample_text": preview_text,
+        "generated_by": generated_by,
+        "generated_at": generated_at.isoformat(),
+    }
+
+
 async def synthesize_minimax_tts(
     *,
     text: str,
@@ -554,6 +617,13 @@ def audio_object_key(
         f"{lesson.language}/{lesson.level_code}/{lesson.unit_key}/{lesson.lesson_key}/"
         f"listening-{safe_voice_id}-{timestamp}.{extension}"
     )
+
+
+def voice_preview_object_key(*, voice_id: str, generated_at: datetime, extension: str) -> str:
+    safe_voice_id = re.sub(r"[^A-Za-z0-9_.-]+", "-", voice_id).strip("-")
+    timestamp = generated_at.strftime("%Y%m%dT%H%M%SZ")
+    extension = re.sub(r"[^a-z0-9]+", "", extension.lower()) or "mp3"
+    return f"conversease/audio/previews/{safe_voice_id}/sample-{timestamp}.{extension}"
 
 
 def content_type_for_audio_format(audio_format: str) -> str:

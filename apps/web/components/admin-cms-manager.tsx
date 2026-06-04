@@ -6,9 +6,11 @@ import {
   BookOpen,
   CheckCircle2,
   Clock3,
+  ExternalLink,
   FileText,
   Headphones,
   ListChecks,
+  PlayCircle,
   RefreshCcw,
   RotateCcw,
   Save,
@@ -26,6 +28,7 @@ import {
   getAdminCmsLesson,
   getAdminCmsSummary,
   getAdminEmailTemplate,
+  previewAdminVoiceAudio,
   rollbackAdminCmsRevision,
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
@@ -36,7 +39,8 @@ import {
   type AdminAudioSettings,
   type AdminCmsLesson,
   type AdminCmsSummary,
-  type AdminEmailTemplate
+  type AdminEmailTemplate,
+  type AdminVoicePreviewAudio
 } from "@/lib/admin-cms-api";
 
 const adminNameStorageKey = "conversease.admin_name";
@@ -57,11 +61,13 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [audioModel, setAudioModel] = useState("");
   const [audioVoiceId, setAudioVoiceId] = useState("");
   const [audioSpeed, setAudioSpeed] = useState(1);
+  const [voicePreview, setVoicePreview] = useState<AdminVoicePreviewAudio | null>(null);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
+  const [isPreviewingVoice, setIsPreviewingVoice] = useState(false);
 
   useEffect(() => {
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
@@ -91,6 +97,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   useEffect(() => {
     window.localStorage.setItem(audioSpeedStorageKey, String(audioSpeed));
   }, [audioSpeed]);
+
+  useEffect(() => {
+    setVoicePreview(null);
+  }, [audioModel, audioVoiceId, audioSpeed]);
 
   useEffect(() => {
     void loadSummary();
@@ -150,6 +160,32 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       setError(audioGenerationErrorMessage(caughtError));
     } finally {
       setGeneratingLessonSlug("");
+    }
+  }
+
+  async function previewVoiceAudio() {
+    if (!audioModel || !audioVoiceId) {
+      setError("Pilih model dan voice sebelum preview suara.");
+      return;
+    }
+
+    setIsPreviewingVoice(true);
+    setMessage("");
+    setError("");
+
+    try {
+      const preview = await previewAdminVoiceAudio({
+        generatedBy: adminName,
+        model: audioModel,
+        voiceId: audioVoiceId,
+        speed: audioSpeed
+      });
+      setVoicePreview(preview);
+      setMessage(`Preview voice ${preview.voiceId} berhasil dibuat (${formatDuration(preview.durationSeconds)}).`);
+    } catch (caughtError) {
+      setError(audioGenerationErrorMessage(caughtError));
+    } finally {
+      setIsPreviewingVoice(false);
     }
   }
 
@@ -294,11 +330,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             audioModel={audioModel}
             audioVoiceId={audioVoiceId}
             audioSpeed={audioSpeed}
+            voicePreview={voicePreview}
             generatingLessonSlug={generatingLessonSlug}
+            isPreviewingVoice={isPreviewingVoice}
             onAudioModelChange={setAudioModel}
             onAudioVoiceChange={setAudioVoiceId}
             onAudioSpeedChange={setAudioSpeed}
             onGenerateAudio={generateLessonAudio}
+            onPreviewVoice={previewVoiceAudio}
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
@@ -399,11 +438,14 @@ function ReadinessPanel({
   audioModel,
   audioVoiceId,
   audioSpeed,
+  voicePreview,
   generatingLessonSlug,
+  isPreviewingVoice,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
-  onGenerateAudio
+  onGenerateAudio,
+  onPreviewVoice
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
@@ -411,11 +453,14 @@ function ReadinessPanel({
   audioModel: string;
   audioVoiceId: string;
   audioSpeed: number;
+  voicePreview: AdminVoicePreviewAudio | null;
   generatingLessonSlug: string;
+  isPreviewingVoice: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
   onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
+  onPreviewVoice: () => void;
 }) {
   if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
@@ -437,9 +482,12 @@ function ReadinessPanel({
         model={audioModel}
         voiceId={audioVoiceId}
         speed={audioSpeed}
+        preview={voicePreview}
+        isPreviewing={isPreviewingVoice}
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
+        onPreview={onPreviewVoice}
       />
 
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
@@ -471,21 +519,28 @@ function AudioSettingsPanel({
   model,
   voiceId,
   speed,
+  preview,
+  isPreviewing,
   onModelChange,
   onVoiceChange,
-  onSpeedChange
+  onSpeedChange,
+  onPreview
 }: {
   settings: AdminAudioSettings | null;
   model: string;
   voiceId: string;
   speed: number;
+  preview: AdminVoicePreviewAudio | null;
+  isPreviewing: boolean;
   onModelChange: (value: string) => void;
   onVoiceChange: (value: string) => void;
   onSpeedChange: (value: number) => void;
+  onPreview: () => void;
 }) {
   const configured = Boolean(settings?.minimaxConfigured && settings.s3Configured);
   const voiceOptions = settings?.voices ?? [];
   const modelOptions = settings?.models ?? [];
+  const selectedVoice = voiceOptions.find((voice) => voice.voiceId === voiceId);
 
   return (
     <div className="rounded-lg bg-paper p-4">
@@ -563,6 +618,36 @@ function AudioSettingsPanel({
             className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
           />
         </label>
+      </div>
+
+      <div className="mt-3 grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px]">
+        <div className="rounded-lg bg-white p-3 text-sm text-ink/65">
+          <p className="font-semibold text-ink">
+            {selectedVoice ? selectedVoice.voiceName : "Voice preview"}
+          </p>
+          <p className="mt-1 text-xs text-ink/50">
+            {selectedVoice
+              ? `${selectedVoice.voiceId}${selectedVoice.description ? ` / ${selectedVoice.description}` : ""}`
+              : "Pilih voice untuk mendengar contoh suara."}
+          </p>
+          {preview?.audioUrl ? (
+            <div className="mt-3">
+              <audio controls preload="metadata" src={preview.audioUrl} className="h-10 w-full" />
+              <p className="mt-2 text-xs text-ink/45">
+                {preview.model} / {preview.voiceId} / {formatDuration(preview.durationSeconds)}
+              </p>
+            </div>
+          ) : null}
+        </div>
+        <button
+          type="button"
+          onClick={onPreview}
+          disabled={!configured || !model || !voiceId || isPreviewing}
+          className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60 lg:mt-auto"
+        >
+          <PlayCircle className="h-4 w-4" aria-hidden="true" />
+          {isPreviewing ? "Generating" : "Preview Voice"}
+        </button>
       </div>
 
       {!configured ? (
@@ -682,6 +767,37 @@ function LevelReadinessCard({
                               ? "Regenerate Audio"
                               : "Generate Audio"}
                         </button>
+                      </div>
+                    ) : null}
+
+                    {lesson.audioAsset?.audioUrl ? (
+                      <div className="rounded-lg bg-white p-3">
+                        <div className="flex flex-wrap items-start justify-between gap-3">
+                          <div>
+                            <p className="text-sm font-semibold text-ink">Listening audio</p>
+                            <p className="mt-1 text-xs text-ink/50">
+                              {lesson.audioAsset.model || "model unknown"} /{" "}
+                              {lesson.audioAsset.voiceId || "voice unknown"} /{" "}
+                              {formatDuration(lesson.audioAsset.durationSeconds)}
+                            </p>
+                          </div>
+                          <a
+                            href={lesson.audioAsset.audioUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-paper px-2 text-xs font-semibold text-ink hover:bg-mint"
+                          >
+                            <ExternalLink className="h-3.5 w-3.5" aria-hidden="true" />
+                            Open
+                          </a>
+                        </div>
+                        <audio
+                          controls
+                          preload="metadata"
+                          src={lesson.audioAsset.audioUrl}
+                          className="mt-3 h-10 w-full"
+                        />
+                        <p className="mt-2 break-all text-xs text-ink/45">{lesson.audioAsset.storageKey}</p>
                       </div>
                     ) : null}
 
@@ -1146,6 +1262,9 @@ function audioGenerationErrorMessage(error: unknown) {
   }
   if (message.includes("s3_config_missing")) {
     return "Generate audio belum bisa upload karena konfigurasi S3 belum lengkap.";
+  }
+  if (message.includes("boto3_missing")) {
+    return "Generate audio belum bisa upload karena dependency boto3 belum terinstall di venv API.";
   }
   if (message.includes("invalid_minimax_tts_model")) {
     return "Model MiniMax belum valid. Pilih model dari daftar.";

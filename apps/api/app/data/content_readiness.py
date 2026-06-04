@@ -372,6 +372,7 @@ def lesson_readiness(
         "publish_status": publish_status,
         "status": status,
         "missing_items": missing_items,
+        "audio_asset": lesson_audio_asset(lesson_dir),
         "checks": checks,
     }
 
@@ -437,6 +438,54 @@ def audio_manifest_ready(path: Path) -> bool:
             return False
 
     return True
+
+
+def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
+    path = lesson_dir / "audio_manifest.yaml"
+    if not path.exists():
+        return None
+
+    try:
+        data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    except yaml.YAMLError:
+        return None
+
+    if not isinstance(data, dict):
+        return None
+
+    assets = data.get("assets", [])
+    if not isinstance(assets, list):
+        return None
+
+    dialogue_asset = next(
+        (
+            asset
+            for asset in assets
+            if isinstance(asset, dict) and asset.get("key") == "dialogue_main" and asset.get("audio_url")
+        ),
+        None,
+    )
+    if not dialogue_asset:
+        dialogue_asset = next(
+            (asset for asset in assets if isinstance(asset, dict) and asset.get("audio_url")),
+            None,
+        )
+    if not dialogue_asset:
+        return None
+
+    return {
+        "key": str(dialogue_asset.get("key") or ""),
+        "type": str(dialogue_asset.get("type") or ""),
+        "audio_url": str(dialogue_asset.get("audio_url") or ""),
+        "duration_seconds": float(dialogue_asset.get("duration_seconds") or 0),
+        "provider": str(dialogue_asset.get("provider") or data.get("provider") or ""),
+        "model": str(dialogue_asset.get("model") or ""),
+        "voice_id": str(dialogue_asset.get("voice_id") or ""),
+        "audio_format": str(dialogue_asset.get("audio_format") or ""),
+        "storage_key": str(dialogue_asset.get("storage_key") or ""),
+        "generated_at": str(dialogue_asset.get("generated_at") or ""),
+        "generated_by": str(dialogue_asset.get("generated_by") or ""),
+    }
 
 
 def load_tracker_rows() -> dict[tuple[str, str, str], dict[str, str]]:
