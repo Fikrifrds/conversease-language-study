@@ -610,7 +610,7 @@ export function ConversationCoachPractice({
               ) : null}
             </div>
             <div className="min-w-32 rounded-lg bg-mint px-4 py-3 text-sm">
-              <p className="font-semibold">{progressPercent}% complete</p>
+              <p className="font-semibold">{progressPercent}% selesai</p>
               <div className="mt-2 h-2 rounded-lg bg-white">
                 <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
               </div>
@@ -655,15 +655,15 @@ export function ConversationCoachPractice({
         </div>
 
         <form onSubmit={handleSubmit} className="border-t border-ink/10 p-5">
-          <div className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
-            <textarea
-              value={answer}
-              onChange={(event) => setAnswer(event.target.value)}
-              disabled={completed || isSubmitting || isRecording || isProcessingRecording}
-              rows={compact ? 2 : 3}
-              className="focus-ring min-h-24 resize-none rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm leading-6 text-ink placeholder:text-ink/40 disabled:opacity-60"
-              placeholder={completed ? "Roleplay selesai" : "Tulis jawabanmu dalam bahasa Inggris..."}
-            />
+          <textarea
+            value={answer}
+            onChange={(event) => setAnswer(event.target.value)}
+            disabled={completed || isSubmitting || isRecording || isProcessingRecording}
+            rows={compact ? 2 : 3}
+            className="focus-ring min-h-24 w-full resize-none rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm leading-6 text-ink placeholder:text-ink/40 disabled:opacity-60"
+            placeholder={completed ? "Roleplay selesai" : "Tulis jawabanmu dalam bahasa Inggris..."}
+          />
+          <div className="mt-3 flex flex-wrap items-center gap-2">
             <button
               type="button"
               onClick={isRecording ? stopRecording : startRecording}
@@ -678,7 +678,7 @@ export function ConversationCoachPractice({
                 <Mic className="h-4 w-4" aria-hidden="true" />
               )}
               {isProcessingRecording
-                ? "Transcribing"
+                ? "Memproses"
                 : isRecording
                   ? `Stop ${recordingSeconds}s`
                   : "Rekam"}
@@ -695,7 +695,7 @@ export function ConversationCoachPractice({
             <button
               type="submit"
               disabled={!answer.trim() || completed || isSubmitting || isRecording || isProcessingRecording}
-              className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
+              className="focus-ring ml-auto inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
             >
               <Send className="h-4 w-4" aria-hidden="true" />
               {isSubmitting ? "Mengirim" : "Kirim"}
@@ -737,12 +737,12 @@ export function ConversationCoachPractice({
 
           <div className="mt-5 grid grid-cols-3 gap-2 text-center text-sm">
             {[
-              ["Speaking", feedback?.scores.speaking ?? 0],
-              ["Grammar", feedback?.scores.grammar ?? 0],
-              ["Fluency", feedback?.scores.fluency ?? 0]
+              ["Speaking", feedback?.scores.speaking],
+              ["Grammar", feedback?.scores.grammar],
+              ["Fluency", feedback?.scores.fluency]
             ].map(([label, value]) => (
               <div key={label} className="rounded-lg bg-paper p-3">
-                <p className="text-lg font-semibold">{value}</p>
+                <p className="text-lg font-semibold">{value ?? "–"}</p>
                 <p className="text-xs text-ink/60">{label}</p>
               </div>
             ))}

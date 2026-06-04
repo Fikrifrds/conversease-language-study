@@ -233,7 +233,6 @@ function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) 
           <p className="text-ink/70">
             <span className="font-medium text-ink/50">Terdengar:</span> &ldquo;{result.transcript}&rdquo;
           </p>
-          <p className="text-xs text-ink/45">Transkrip oleh {result.provider}.</p>
         </div>
       ) : null}
 
