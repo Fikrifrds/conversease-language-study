@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import io
 import re
 import wave
@@ -45,6 +46,15 @@ CLEAR_MALE_DIALOGUE_VOICES = (
     "English_Deep-VoicedGentleman",
     "English_FriendlyPerson",
 )
+
+DIALOGUE_PERSONA_VOICES = {
+    "alya": "English_radiant_girl",
+    "ben": "English_Gentle-voiced_man",
+    "john": "English_Trustworth_Man",
+    "sara": "English_Graceful_Lady",
+    "mina": "English_compelling_lady1",
+    "david": "English_Diligent_Man",
+}
 
 FALLBACK_MINIMAX_VOICES = (
     {
@@ -681,27 +691,42 @@ def clean_dialogue_text(value: str) -> str:
 
 
 def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str) -> dict[str, str]:
-    speaker_voices: dict[str, str] = {}
-    gender_counts = {"female": 0, "male": 0}
-
+    speaker_by_key: dict[str, str] = {}
     for turn in turns:
-        if turn.speaker in speaker_voices:
+        key = normalized_speaker_key(turn.speaker)
+        if key and key not in speaker_by_key:
+            speaker_by_key[key] = turn.speaker
+
+    speaker_voices: dict[str, str] = {}
+    used_voices: set[str] = set()
+
+    for key in sorted(speaker_by_key):
+        voice_id = DIALOGUE_PERSONA_VOICES.get(key)
+        if not voice_id:
+            continue
+        speaker = speaker_by_key[key]
+        speaker_voices[speaker] = voice_id
+        used_voices.add(voice_id)
+
+    for key in sorted(speaker_by_key):
+        speaker = speaker_by_key[key]
+        if speaker in speaker_voices:
             continue
 
-        gender = infer_speaker_gender(turn.speaker)
+        gender = infer_speaker_gender(speaker)
         if gender == "unknown":
-            gender = "female" if len(speaker_voices) % 2 == 0 else "male"
+            gender = stable_unknown_speaker_gender(key)
 
         voice_pool = CLEAR_FEMALE_DIALOGUE_VOICES if gender == "female" else CLEAR_MALE_DIALOGUE_VOICES
-        index = gender_counts[gender] % len(voice_pool)
-        speaker_voices[turn.speaker] = voice_pool[index] or fallback_voice_id
-        gender_counts[gender] += 1
+        voice_id = stable_voice_from_pool(key=key, voice_pool=voice_pool, used_voices=used_voices)
+        speaker_voices[speaker] = voice_id or fallback_voice_id
+        used_voices.add(speaker_voices[speaker])
 
     return speaker_voices
 
 
 def infer_speaker_gender(speaker: str) -> str:
-    normalized = re.sub(r"[^a-z]", "", speaker.lower())
+    normalized = normalized_speaker_key(speaker)
     female_names = {
         "alya",
         "sara",
@@ -715,11 +740,17 @@ def infer_speaker_gender(speaker: str) -> str:
         "nina",
         "maya",
         "rani",
+        "fatimah",
+        "khadijah",
+        "aisha",
     }
     male_names = {
         "ben",
         "john",
         "david",
+        "daniel",
+        "james",
+        "robert",
         "michael",
         "tom",
         "ali",
@@ -734,6 +765,37 @@ def infer_speaker_gender(speaker: str) -> str:
     if normalized in male_names:
         return "male"
     return "unknown"
+
+
+def normalized_speaker_key(speaker: str) -> str:
+    return re.sub(r"[^a-z]", "", speaker.lower())
+
+
+def stable_unknown_speaker_gender(speaker_key: str) -> str:
+    return "female" if stable_speaker_index(speaker_key, modulo=2) == 0 else "male"
+
+
+def stable_voice_from_pool(
+    *,
+    key: str,
+    voice_pool: tuple[str, ...],
+    used_voices: set[str],
+) -> str:
+    if not voice_pool:
+        return ""
+    start_index = stable_speaker_index(key, modulo=len(voice_pool))
+    for offset in range(len(voice_pool)):
+        voice_id = voice_pool[(start_index + offset) % len(voice_pool)]
+        if voice_id not in used_voices:
+            return voice_id
+    return voice_pool[start_index]
+
+
+def stable_speaker_index(speaker_key: str, *, modulo: int) -> int:
+    if modulo <= 0:
+        return 0
+    digest = hashlib.sha256(speaker_key.encode("utf-8")).hexdigest()
+    return int(digest[:8], 16) % modulo
 
 
 def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -> tuple[bytes, float]:
