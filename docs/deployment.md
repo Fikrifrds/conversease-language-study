@@ -60,7 +60,19 @@ MIDTRANS_IS_PRODUCTION=true
 TOGETHER_API_KEY=
 ASSEMBLYAI_API_KEY=
 MINIMAX_API_KEY=
+MINIMAX_API_BASE_URL=https://api.minimax.io
+MINIMAX_TTS_MODEL=speech-2.8-hd
+MINIMAX_TTS_VOICE_ID=English_expressive_narrator
+MINIMAX_TTS_LANGUAGE_BOOST=English
+MINIMAX_TTS_TIMEOUT_SECONDS=90
+S3_BUCKET=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=ap-southeast-1
+S3_PUBLIC_BASE_URL=
 ```
+
+Admin CMS audio generation uses MiniMax T2A and uploads generated files to S3. If `S3_PUBLIC_BASE_URL` is empty, the API stores the S3 object URL as `https://{bucket}.s3.{region}.amazonaws.com/{key}`.
 
 `NEXT_PUBLIC_API_BASE_URL` is baked into the web build. For production it must be HTTPS, include the `/api` path, and match `API_BASE_URL + /api`. The release preflight fails production deploys when these values drift.
 

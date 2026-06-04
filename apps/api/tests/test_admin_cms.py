@@ -1,5 +1,6 @@
 import unittest
-from unittest.mock import patch
+from types import SimpleNamespace
+from unittest.mock import AsyncMock, patch
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -141,6 +142,148 @@ class AdminCmsTest(unittest.TestCase):
                 self.assertEqual(revision.after_json["title"], "Say Your Name Clearly")
                 self.assertNotIn("content_hash", revision.before_json)
                 self.assertNotIn("content_hash", revision.after_json)
+        finally:
+            settings.payment_admin_api_key = original_key
+            app.dependency_overrides.clear()
+
+    def test_admin_cms_audio_settings_route(self):
+        original_key = settings.payment_admin_api_key
+        settings.payment_admin_api_key = "test-admin-key-with-32-chars"
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+
+        try:
+            client = TestClient(app)
+            with patch(
+                "app.api.routes.admin_cms.audio_generation_settings",
+                new=AsyncMock(
+                    return_value={
+                        "minimax_configured": True,
+                        "s3_configured": True,
+                        "default_model": "speech-2.8-hd",
+                        "default_voice_id": "English_expressive_narrator",
+                        "default_language_boost": "English",
+                        "models": ["speech-2.8-hd"],
+                        "voices": [
+                            {
+                                "voice_id": "English_expressive_narrator",
+                                "voice_name": "Expressive Narrator",
+                                "category": "system",
+                                "description": "Clear narrator voice.",
+                            }
+                        ],
+                    }
+                ),
+            ):
+                response = client.get(
+                    "/api/admin/cms/audio/settings",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertTrue(response.json()["data"]["minimax_configured"])
+            self.assertEqual(response.json()["data"]["voices"][0]["voice_id"], "English_expressive_narrator")
+        finally:
+            settings.payment_admin_api_key = original_key
+            app.dependency_overrides.clear()
+
+    def test_admin_cms_generate_audio_records_revision(self):
+        original_key = settings.payment_admin_api_key
+        settings.payment_admin_api_key = "test-admin-key-with-32-chars"
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        lesson_ref = SimpleNamespace(
+            lesson_key="lesson-01-saying-hello",
+            audio_manifest_path="/tmp/audio_manifest.yaml",
+        )
+        generated_audio = {
+            "lesson_slug": "saying-hello",
+            "lesson_key": "lesson-01-saying-hello",
+            "title": "Saying Hello and Goodbye",
+            "audio_url": "https://cdn.example.com/audio.mp3",
+            "object_key": "conversease/audio/english/A1/audio.mp3",
+            "duration_seconds": 12.4,
+            "audio_format": "mp3",
+            "audio_size": 12000,
+            "model": "speech-2.8-hd",
+            "voice_id": "English_expressive_narrator",
+            "trace_id": "trace-1",
+            "usage_characters": 120,
+            "manifest": {"status": "generated"},
+        }
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+
+        try:
+            client = TestClient(app)
+            with (
+                patch("app.api.routes.admin_cms.find_lesson_audio_reference", return_value=lesson_ref),
+                patch("app.api.routes.admin_cms.read_yaml_mapping", return_value={"status": "not_generated"}),
+                patch(
+                    "app.api.routes.admin_cms.generate_lesson_listening_audio",
+                    new=AsyncMock(return_value=generated_audio),
+                ) as generate_audio,
+                patch(
+                    "app.api.routes.admin_cms.curriculum_summary",
+                    return_value={"readiness_overview": {"audio_ready_count": 1}},
+                ),
+            ):
+                response = client.post(
+                    "/api/admin/cms/curriculum/lessons/saying-hello/audio/listening",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                    json={
+                        "generated_by": "Audio QA",
+                        "model": "speech-2.8-hd",
+                        "voice_id": "English_expressive_narrator",
+                        "speed": 0.95,
+                    },
+                )
+
+            self.assertEqual(response.status_code, 200)
+            self.assertEqual(response.json()["data"]["audio_url"], generated_audio["audio_url"])
+            self.assertEqual(response.json()["revision"]["resource_type"], "curriculum_audio")
+            self.assertEqual(response.json()["revision"]["changed_by"], "Audio QA")
+            generate_audio.assert_awaited_once_with(
+                lesson_slug="saying-hello",
+                model="speech-2.8-hd",
+                voice_id="English_expressive_narrator",
+                speed=0.95,
+                generated_by="Audio QA",
+            )
+
+            with session_local() as db:
+                revision = db.execute(select(ContentRevisionModel)).scalar_one()
+                self.assertEqual(revision.resource_type, "curriculum_audio")
+                self.assertEqual(revision.resource_key, "saying-hello")
+                self.assertEqual(revision.metadata_json["provider"], "minimax")
         finally:
             settings.payment_admin_api_key = original_key
             app.dependency_overrides.clear()

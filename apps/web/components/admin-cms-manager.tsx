@@ -13,12 +13,16 @@ import {
   RotateCcw,
   Save,
   ShieldCheck,
+  Sparkles,
+  Volume2,
   XCircle,
   type LucideIcon
 } from "lucide-react";
 import type { ReactNode } from "react";
 import type { AuthUser } from "@/lib/auth-api";
 import {
+  generateAdminLessonAudio,
+  getAdminAudioSettings,
   getAdminCmsLesson,
   getAdminCmsSummary,
   getAdminEmailTemplate,
@@ -26,14 +30,19 @@ import {
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
   type AdminContentReadiness,
+  type AdminContentReadinessLesson,
   type AdminContentReadinessOverview,
   type AdminContentRevision,
+  type AdminAudioSettings,
   type AdminCmsLesson,
   type AdminCmsSummary,
   type AdminEmailTemplate
 } from "@/lib/admin-cms-api";
 
 const adminNameStorageKey = "conversease.admin_name";
+const audioModelStorageKey = "conversease.admin_audio_model";
+const audioVoiceStorageKey = "conversease.admin_audio_voice";
+const audioSpeedStorageKey = "conversease.admin_audio_speed";
 const statusOptions = ["draft", "review", "published", "archived"];
 
 type Tab = "readiness" | "curriculum" | "email";
@@ -44,10 +53,15 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [tab, setTab] = useState<Tab>("readiness");
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<AdminEmailTemplate | null>(null);
+  const [audioSettings, setAudioSettings] = useState<AdminAudioSettings | null>(null);
+  const [audioModel, setAudioModel] = useState("");
+  const [audioVoiceId, setAudioVoiceId] = useState("");
+  const [audioSpeed, setAudioSpeed] = useState(1);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
+  const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
 
   useEffect(() => {
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
@@ -63,6 +77,22 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   }, [adminName]);
 
   useEffect(() => {
+    if (audioModel) {
+      window.localStorage.setItem(audioModelStorageKey, audioModel);
+    }
+  }, [audioModel]);
+
+  useEffect(() => {
+    if (audioVoiceId) {
+      window.localStorage.setItem(audioVoiceStorageKey, audioVoiceId);
+    }
+  }, [audioVoiceId]);
+
+  useEffect(() => {
+    window.localStorage.setItem(audioSpeedStorageKey, String(audioSpeed));
+  }, [audioSpeed]);
+
+  useEffect(() => {
     void loadSummary();
     // Load once when this admin screen opens.
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -76,8 +106,15 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     setError("");
 
     try {
-      const nextSummary = await getAdminCmsSummary();
+      const [nextSummary, nextAudioSettings] = await Promise.all([
+        getAdminCmsSummary(),
+        getAdminAudioSettings()
+      ]);
       setSummary(nextSummary);
+      setAudioSettings(nextAudioSettings);
+      setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
+      setAudioVoiceId((current) => current || storedAudioVoice(nextAudioSettings.defaultVoiceId));
+      setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
       setSelectedLesson(nextSummary.curriculum.lessons[0] ?? null);
       setSelectedTemplate(nextSummary.emailTemplates[0] ?? null);
       setMessage("CMS content berhasil dimuat.");
@@ -85,6 +122,34 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       setError("CMS belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
+    }
+  }
+
+  async function generateLessonAudio(lesson: AdminContentReadinessLesson) {
+    if (!audioModel || !audioVoiceId) {
+      setError("Pilih model dan voice sebelum generate audio.");
+      return;
+    }
+
+    setGeneratingLessonSlug(lesson.slug);
+    setMessage("");
+    setError("");
+
+    try {
+      const audio = await generateAdminLessonAudio({
+        generatedBy: adminName,
+        lessonSlug: lesson.slug,
+        model: audioModel,
+        voiceId: audioVoiceId,
+        speed: audioSpeed
+      });
+      const nextSummary = await getAdminCmsSummary();
+      setSummary(nextSummary);
+      setMessage(`Audio ${audio.title} berhasil dibuat (${formatDuration(audio.durationSeconds)}).`);
+    } catch (caughtError) {
+      setError(audioGenerationErrorMessage(caughtError));
+    } finally {
+      setGeneratingLessonSlug("");
     }
   }
 
@@ -225,6 +290,15 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
           <ReadinessPanel
             overview={summary?.curriculum.readinessOverview ?? null}
             levels={summary?.curriculum.readinessLevels ?? []}
+            audioSettings={audioSettings}
+            audioModel={audioModel}
+            audioVoiceId={audioVoiceId}
+            audioSpeed={audioSpeed}
+            generatingLessonSlug={generatingLessonSlug}
+            onAudioModelChange={setAudioModel}
+            onAudioVoiceChange={setAudioVoiceId}
+            onAudioSpeedChange={setAudioSpeed}
+            onGenerateAudio={generateLessonAudio}
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
@@ -292,15 +366,21 @@ function ChangeLogPanel({
                     {revision.resourceType} / {revision.action} / {revision.changedBy}
                   </p>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => onRollback(revision)}
-                  disabled={restoringRevisionId === revision.id}
-                  className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-                >
-                  <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
-                  {restoringRevisionId === revision.id ? "Restoring" : "Restore"}
-                </button>
+                {revision.resourceType === "curriculum_lesson" || revision.resourceType === "email_template" ? (
+                  <button
+                    type="button"
+                    onClick={() => onRollback(revision)}
+                    disabled={restoringRevisionId === revision.id}
+                    className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                    {restoringRevisionId === revision.id ? "Restoring" : "Restore"}
+                  </button>
+                ) : (
+                  <span className="inline-flex min-h-8 items-center rounded-lg bg-white px-2 text-xs font-semibold text-ink/55">
+                    Audit
+                  </span>
+                )}
               </div>
             </div>
           ))}
@@ -314,10 +394,28 @@ function ChangeLogPanel({
 
 function ReadinessPanel({
   overview,
-  levels
+  levels,
+  audioSettings,
+  audioModel,
+  audioVoiceId,
+  audioSpeed,
+  generatingLessonSlug,
+  onAudioModelChange,
+  onAudioVoiceChange,
+  onAudioSpeedChange,
+  onGenerateAudio
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
+  audioSettings: AdminAudioSettings | null;
+  audioModel: string;
+  audioVoiceId: string;
+  audioSpeed: number;
+  generatingLessonSlug: string;
+  onAudioModelChange: (value: string) => void;
+  onAudioVoiceChange: (value: string) => void;
+  onAudioSpeedChange: (value: number) => void;
+  onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
 }) {
   if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
@@ -334,6 +432,16 @@ function ReadinessPanel({
 
   return (
     <div className="mt-5 space-y-5">
+      <AudioSettingsPanel
+        settings={audioSettings}
+        model={audioModel}
+        voiceId={audioVoiceId}
+        speed={audioSpeed}
+        onModelChange={onAudioModelChange}
+        onVoiceChange={onAudioVoiceChange}
+        onSpeedChange={onAudioSpeedChange}
+      />
+
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
         {stats.map((stat) => (
           <div key={stat.label} className="rounded-lg bg-paper p-4">
@@ -345,14 +453,140 @@ function ReadinessPanel({
 
       <div className="grid gap-4">
         {levels.map((level) => (
-          <LevelReadinessCard key={`${level.course.language}-${level.course.levelCode}`} readiness={level} />
+          <LevelReadinessCard
+            key={`${level.course.language}-${level.course.levelCode}`}
+            readiness={level}
+            audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+            generatingLessonSlug={generatingLessonSlug}
+            onGenerateAudio={onGenerateAudio}
+          />
         ))}
       </div>
     </div>
   );
 }
 
-function LevelReadinessCard({ readiness }: { readiness: AdminContentReadiness }) {
+function AudioSettingsPanel({
+  settings,
+  model,
+  voiceId,
+  speed,
+  onModelChange,
+  onVoiceChange,
+  onSpeedChange
+}: {
+  settings: AdminAudioSettings | null;
+  model: string;
+  voiceId: string;
+  speed: number;
+  onModelChange: (value: string) => void;
+  onVoiceChange: (value: string) => void;
+  onSpeedChange: (value: number) => void;
+}) {
+  const configured = Boolean(settings?.minimaxConfigured && settings.s3Configured);
+  const voiceOptions = settings?.voices ?? [];
+  const modelOptions = settings?.models ?? [];
+
+  return (
+    <div className="rounded-lg bg-paper p-4">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="flex items-start gap-3">
+          <div className="grid h-10 w-10 place-items-center rounded-lg bg-white">
+            <Volume2 className="h-5 w-5 text-leaf" aria-hidden="true" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase text-leaf">Audio Generator</p>
+            <h2 className="mt-1 font-semibold">MiniMax listening audio</h2>
+            <p className="mt-1 text-sm text-ink/55">
+              Pilih default voice dan model untuk generate audio listening lesson.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-wrap gap-2 text-xs font-semibold">
+          <StatusPill
+            icon={Sparkles}
+            label={settings?.minimaxConfigured ? "MiniMax ready" : "MiniMax missing"}
+            tone={settings?.minimaxConfigured ? "ok" : "danger"}
+          />
+          <StatusPill
+            icon={Headphones}
+            label={settings?.s3Configured ? "S3 ready" : "S3 missing"}
+            tone={settings?.s3Configured ? "ok" : "danger"}
+          />
+        </div>
+      </div>
+
+      <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_1.4fr_140px]">
+        <label className="text-sm font-medium text-ink/70">
+          Model
+          <select
+            value={model}
+            onChange={(event) => onModelChange(event.target.value)}
+            disabled={!settings}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {!modelOptions.length ? <option value="">Loading</option> : null}
+            {modelOptions.map((modelOption) => (
+              <option key={modelOption} value={modelOption}>
+                {modelOption}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="text-sm font-medium text-ink/70">
+          Voice
+          <select
+            value={voiceId}
+            onChange={(event) => onVoiceChange(event.target.value)}
+            disabled={!settings}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {!voiceOptions.length ? <option value="">Loading</option> : null}
+            {voiceOptions.map((voice) => (
+              <option key={voice.voiceId} value={voice.voiceId}>
+                {voice.voiceName} / {voice.voiceId}
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <label className="text-sm font-medium text-ink/70">
+          Speed
+          <input
+            type="number"
+            min={0.5}
+            max={2}
+            step={0.05}
+            value={speed}
+            onChange={(event) => onSpeedChange(clampAudioSpeed(Number(event.target.value)))}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
+          />
+        </label>
+      </div>
+
+      {!configured ? (
+        <p className="mt-3 rounded-lg bg-white px-3 py-2 text-sm text-ink/60">
+          Generate audio aktif setelah <code>MINIMAX_API_KEY</code>, <code>S3_BUCKET</code>,{" "}
+          <code>AWS_ACCESS_KEY_ID</code>, <code>AWS_SECRET_ACCESS_KEY</code>, dan{" "}
+          <code>AWS_REGION</code> tersedia di API.
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+function LevelReadinessCard({
+  readiness,
+  audioReadyToGenerate,
+  generatingLessonSlug,
+  onGenerateAudio
+}: {
+  readiness: AdminContentReadiness;
+  audioReadyToGenerate: boolean;
+  generatingLessonSlug: string;
+  onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
+}) {
   return (
     <div className="rounded-lg border border-ink/10 bg-white p-4">
       <div className="flex flex-wrap items-start justify-between gap-3">
@@ -432,6 +666,24 @@ function LevelReadinessCard({ readiness }: { readiness: AdminContentReadiness })
                         <StatusPill icon={BookOpen} label={`publish: ${lesson.publishStatus}`} tone="neutral" />
                       ) : null}
                     </div>
+
+                    {lesson.implemented && lesson.textReady ? (
+                      <div className="flex flex-wrap items-center gap-2">
+                        <button
+                          type="button"
+                          onClick={() => onGenerateAudio(lesson)}
+                          disabled={!audioReadyToGenerate || generatingLessonSlug === lesson.slug}
+                          className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                        >
+                          <Sparkles className="h-4 w-4" aria-hidden="true" />
+                          {generatingLessonSlug === lesson.slug
+                            ? "Generating audio"
+                            : lesson.audioReady
+                              ? "Regenerate Audio"
+                              : "Generate Audio"}
+                        </button>
+                      </div>
+                    ) : null}
 
                     {lesson.missingItems.length ? (
                       <div className="rounded-lg bg-white p-3 text-sm text-ink/65">
@@ -849,6 +1101,65 @@ function readinessStatusLabel(status: string) {
     planned_missing_content: "planned"
   };
   return labels[status] ?? status;
+}
+
+function formatDuration(durationSeconds: number) {
+  if (!Number.isFinite(durationSeconds) || durationSeconds <= 0) {
+    return "0s";
+  }
+  if (durationSeconds < 60) {
+    return `${Math.round(durationSeconds)}s`;
+  }
+  const minutes = Math.floor(durationSeconds / 60);
+  const seconds = Math.round(durationSeconds % 60);
+  return `${minutes}m ${seconds}s`;
+}
+
+function storedAudioModel(fallback: string) {
+  return window.localStorage.getItem(audioModelStorageKey) || fallback;
+}
+
+function storedAudioVoice(fallback: string) {
+  return window.localStorage.getItem(audioVoiceStorageKey) || fallback;
+}
+
+function storedAudioSpeed() {
+  const rawValue = window.localStorage.getItem(audioSpeedStorageKey);
+  const value = rawValue ? Number(rawValue) : 1;
+  if (!Number.isFinite(value) || value < 0.5 || value > 2) {
+    return 1;
+  }
+  return value;
+}
+
+function clampAudioSpeed(value: number) {
+  if (!Number.isFinite(value)) {
+    return 1;
+  }
+  return Math.min(2, Math.max(0.5, value));
+}
+
+function audioGenerationErrorMessage(error: unknown) {
+  const message = error instanceof Error ? error.message : "";
+  if (message.includes("minimax_api_key_missing")) {
+    return "Generate audio belum bisa berjalan karena MINIMAX_API_KEY belum terbaca di API.";
+  }
+  if (message.includes("s3_config_missing")) {
+    return "Generate audio belum bisa upload karena konfigurasi S3 belum lengkap.";
+  }
+  if (message.includes("invalid_minimax_tts_model")) {
+    return "Model MiniMax belum valid. Pilih model dari daftar.";
+  }
+  if (message.includes("lesson_not_found")) {
+    return "Lesson belum ditemukan di content files.";
+  }
+  if (message.includes("listening_script")) {
+    return "Listening script belum siap untuk generate audio.";
+  }
+  if (message.includes("minimax_request_failed") || message.includes("minimax_error")) {
+    return "MiniMax belum berhasil membuat audio. Cek API key, quota, voice, atau coba ulang.";
+  }
+  return "Audio belum bisa digenerate. Cek konfigurasi MiniMax, S3, dan content lesson.";
 }
 
 function contentSaveErrorMessage(error: unknown, label: string) {

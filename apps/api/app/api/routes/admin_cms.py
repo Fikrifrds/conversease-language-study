@@ -20,6 +20,13 @@ from app.data.admin_cms import (
     update_lesson_metadata,
 )
 from app.repositories.content_revisions import ContentRevisionRepository, revision_payload
+from app.services.audio_generation import (
+    AudioGenerationError,
+    audio_generation_settings,
+    find_lesson_audio_reference,
+    generate_lesson_listening_audio,
+    read_yaml_mapping,
+)
 
 
 router = APIRouter()
@@ -47,6 +54,13 @@ class EmailTemplateUpdatePayload(BaseModel):
 class ContentRevisionRollbackPayload(BaseModel):
     restored_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
     notes: Optional[str] = Field(default=None, max_length=1000)
+
+
+class AudioGenerationPayload(BaseModel):
+    generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    model: Optional[str] = Field(default=None, max_length=40)
+    voice_id: Optional[str] = Field(default=None, max_length=160)
+    speed: float = Field(default=1.0, ge=0.5, le=2.0)
 
 
 @router.get("/admin/cms/summary")
@@ -112,6 +126,58 @@ async def patch_cms_lesson(
         }
     except AdminCmsError as exc:
         raise admin_cms_http_error(exc) from exc
+
+
+@router.get("/admin/cms/audio/settings")
+async def get_audio_generation_settings(
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    return {"data": await audio_generation_settings()}
+
+
+@router.post("/admin/cms/curriculum/lessons/{lesson_slug}/audio/listening")
+async def generate_cms_lesson_listening_audio(
+    lesson_slug: str,
+    payload: AudioGenerationPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        lesson_ref = find_lesson_audio_reference(lesson_slug)
+        before_payload = {
+            "lesson_slug": lesson_slug,
+            "lesson_key": lesson_ref.lesson_key,
+            "audio_manifest": read_yaml_mapping(lesson_ref.audio_manifest_path),
+        }
+        result = await generate_lesson_listening_audio(
+            lesson_slug=lesson_slug,
+            model=payload.model,
+            voice_id=payload.voice_id,
+            speed=payload.speed,
+            generated_by=admin_display_name(payload.generated_by, admin),
+        )
+        revision = ContentRevisionRepository(db).record_revision(
+            resource_type="curriculum_audio",
+            resource_key=lesson_slug,
+            action="generate",
+            changed_by=admin_display_name(payload.generated_by, admin),
+            before_payload=before_payload,
+            after_payload=result,
+            metadata={
+                "source": "admin_cms_audio",
+                "provider": "minimax",
+                "model": result["model"],
+                "voice_id": result["voice_id"],
+                "storage_key": result["object_key"],
+            },
+        )
+        return {
+            "data": result,
+            "revision": revision_payload(revision),
+            "readiness_overview": curriculum_summary()["readiness_overview"],
+        }
+    except AudioGenerationError as exc:
+        raise audio_generation_http_error(exc) from exc
 
 
 @router.get("/admin/cms/email-templates/{template_key}")
@@ -222,6 +288,15 @@ def admin_cms_http_error(exc: AdminCmsError) -> HTTPException:
     detail = str(exc)
     if "not_found" in detail:
         return HTTPException(status_code=404, detail=detail)
+    return HTTPException(status_code=422, detail=detail)
+
+
+def audio_generation_http_error(exc: AudioGenerationError) -> HTTPException:
+    detail = str(exc)
+    if "not_found" in detail:
+        return HTTPException(status_code=404, detail=detail)
+    if "missing" in detail or detail.endswith("_config_missing"):
+        return HTTPException(status_code=503, detail=detail)
     return HTTPException(status_code=422, detail=detail)
 
 

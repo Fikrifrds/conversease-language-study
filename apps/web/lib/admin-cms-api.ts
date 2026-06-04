@@ -110,6 +110,38 @@ export type AdminContentRevision = {
   createdAt: string;
 };
 
+export type AdminAudioVoice = {
+  voiceId: string;
+  voiceName: string;
+  category: string;
+  description: string;
+};
+
+export type AdminAudioSettings = {
+  minimaxConfigured: boolean;
+  s3Configured: boolean;
+  defaultModel: string;
+  defaultVoiceId: string;
+  defaultLanguageBoost: string;
+  models: string[];
+  voices: AdminAudioVoice[];
+};
+
+export type AdminGeneratedAudio = {
+  lessonSlug: string;
+  lessonKey: string;
+  title: string;
+  audioUrl: string;
+  objectKey: string;
+  durationSeconds: number;
+  audioFormat: string;
+  audioSize: number;
+  model: string;
+  voiceId: string;
+  traceId: string;
+  usageCharacters: number;
+};
+
 export type AdminCmsSummary = {
   curriculum: {
     course: {
@@ -249,6 +281,38 @@ type ApiAdminContentRevision = {
   created_at: string;
 };
 
+type ApiAdminAudioVoice = {
+  voice_id: string;
+  voice_name: string;
+  category: string;
+  description: string;
+};
+
+type ApiAdminAudioSettings = {
+  minimax_configured: boolean;
+  s3_configured: boolean;
+  default_model: string;
+  default_voice_id: string;
+  default_language_boost: string;
+  models: string[];
+  voices: ApiAdminAudioVoice[];
+};
+
+type ApiAdminGeneratedAudio = {
+  lesson_slug: string;
+  lesson_key: string;
+  title: string;
+  audio_url: string;
+  object_key: string;
+  duration_seconds: number;
+  audio_format: string;
+  audio_size: number;
+  model: string;
+  voice_id: string;
+  trace_id: string;
+  usage_characters: number;
+};
+
 function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
@@ -386,6 +450,44 @@ function mapRevision(revision: ApiAdminContentRevision): AdminContentRevision {
   };
 }
 
+function mapAudioVoice(voice: ApiAdminAudioVoice): AdminAudioVoice {
+  return {
+    voiceId: voice.voice_id,
+    voiceName: voice.voice_name,
+    category: voice.category,
+    description: voice.description
+  };
+}
+
+function mapAudioSettings(settings: ApiAdminAudioSettings): AdminAudioSettings {
+  return {
+    minimaxConfigured: settings.minimax_configured,
+    s3Configured: settings.s3_configured,
+    defaultModel: settings.default_model,
+    defaultVoiceId: settings.default_voice_id,
+    defaultLanguageBoost: settings.default_language_boost,
+    models: settings.models,
+    voices: settings.voices.map(mapAudioVoice)
+  };
+}
+
+function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
+  return {
+    lessonSlug: audio.lesson_slug,
+    lessonKey: audio.lesson_key,
+    title: audio.title,
+    audioUrl: audio.audio_url,
+    objectKey: audio.object_key,
+    durationSeconds: audio.duration_seconds,
+    audioFormat: audio.audio_format,
+    audioSize: audio.audio_size,
+    model: audio.model,
+    voiceId: audio.voice_id,
+    traceId: audio.trace_id,
+    usageCharacters: audio.usage_characters
+  };
+}
+
 export async function getAdminCmsSummary(): Promise<AdminCmsSummary> {
   const response = await adminRequestJson<
     ApiResponse<{
@@ -474,6 +576,34 @@ export async function getAdminEmailTemplate(templateKey: string): Promise<AdminE
     `/admin/cms/email-templates/${templateKey}`
   );
   return mapEmailTemplate(response.data);
+}
+
+export async function getAdminAudioSettings(): Promise<AdminAudioSettings> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminAudioSettings>>("/admin/cms/audio/settings");
+  return mapAudioSettings(response.data);
+}
+
+export async function generateAdminLessonAudio(input: {
+  generatedBy: string;
+  lessonSlug: string;
+  model: string;
+  voiceId: string;
+  speed: number;
+}): Promise<AdminGeneratedAudio> {
+  const response = await adminRequestJson<
+    ApiResponse<ApiAdminGeneratedAudio> & {
+      revision: ApiAdminContentRevision;
+    }
+  >(`/admin/cms/curriculum/lessons/${input.lessonSlug}/audio/listening`, {
+    method: "POST",
+    body: JSON.stringify({
+      generated_by: input.generatedBy,
+      model: input.model,
+      voice_id: input.voiceId,
+      speed: input.speed
+    })
+  });
+  return mapGeneratedAudio(response.data);
 }
 
 export async function updateAdminEmailTemplate(input: {

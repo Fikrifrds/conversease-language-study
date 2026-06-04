@@ -58,6 +58,16 @@ class Settings(BaseSettings):
     together_api_key: str = ""
     assemblyai_api_key: str = ""
     minimax_api_key: str = ""
+    minimax_api_base_url: str = "https://api.minimax.io"
+    minimax_tts_model: str = "speech-2.8-hd"
+    minimax_tts_voice_id: str = "English_expressive_narrator"
+    minimax_tts_language_boost: str = "English"
+    minimax_tts_timeout_seconds: int = 90
+    s3_bucket: str = ""
+    aws_access_key_id: str = ""
+    aws_secret_access_key: str = ""
+    aws_region: str = "ap-southeast-1"
+    s3_public_base_url: str = ""
     rate_limit_enabled: bool = True
     rate_limit_window_seconds: int = 60
     auth_rate_limit_requests: int = 30

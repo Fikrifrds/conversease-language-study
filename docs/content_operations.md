@@ -265,13 +265,27 @@ Voice direction:
 
 After generation:
 
-1. Upload audio to the selected storage or CDN.
-2. Update `audio_manifest.yaml`.
-3. Set `status: done`.
-4. Fill each `audio_url`.
-5. Fill each `duration_seconds`.
-6. Set `audio_generated` to `done` in `content/production_tracker.csv`.
-7. Run readiness and curriculum validation.
+1. Open Admin CMS, choose the MiniMax model and voice in the Audio Generator panel.
+2. Click `Generate Audio` on a text-ready lesson.
+3. The API calls MiniMax T2A, uploads the mp3 to S3, updates `audio_manifest.yaml`, and sets `audio_generated=done` in `content/production_tracker.csv`.
+4. Run readiness and curriculum validation before release.
+
+The CMS generator currently fills the listening dialogue asset (`dialogue_main`) from `listening_script.md`. Phrase pronunciation assets can be generated as a separate follow-up asset when needed.
+
+Required API env for CMS generation:
+
+```bash
+MINIMAX_API_KEY=
+MINIMAX_API_BASE_URL=https://api.minimax.io
+MINIMAX_TTS_MODEL=speech-2.8-hd
+MINIMAX_TTS_VOICE_ID=English_expressive_narrator
+MINIMAX_TTS_LANGUAGE_BOOST=English
+S3_BUCKET=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=ap-southeast-1
+S3_PUBLIC_BASE_URL=
+```
 
 Example `audio_manifest.yaml` after audio is ready:
 
