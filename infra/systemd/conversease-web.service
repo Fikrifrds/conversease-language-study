@@ -1,0 +1,16 @@
+[Unit]
+Description=Conversease Web
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/conversease/app/apps/web/.next/standalone
+EnvironmentFile=/var/www/conversease/app/.env.production
+Environment=PORT=3010
+Environment=HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/node apps/web/server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

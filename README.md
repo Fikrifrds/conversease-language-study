@@ -61,6 +61,7 @@ Run the API after creating a Python virtual environment and installing dependenc
 cd apps/api
 python3 -m venv .venv
 . .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
 pip install -e ".[dev]"
 uvicorn app.main:app --reload --port 8000
 ```

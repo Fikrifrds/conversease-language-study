@@ -2,6 +2,175 @@
 
 Panduan ini untuk deploy Conversease ke satu remote server Linux dengan Nginx sebagai reverse proxy. Targetnya mudah dijalankan, mudah di-maintain, dan cukup aman untuk controlled paid beta manual transfer.
 
+## Target Server Conversease.com
+
+Bagian ini adalah jalur deploy yang dipakai untuk server sekarang:
+
+```text
+Domain utama   : conversease.com
+Domain API     : api.conversease.com
+Server IP      : 85.190.242.47
+App path       : /var/www/conversease/app
+Backup path    : /var/www/conversease/backups
+Web internal   : 127.0.0.1:3010
+API internal   : 127.0.0.1:8010
+PostgreSQL     : 127.0.0.1:5432
+Redis          : 127.0.0.1:6379
+```
+
+DNS yang dibutuhkan:
+
+```text
+@    A  85.190.242.47
+www  A  85.190.242.47
+api  A  85.190.242.47
+```
+
+Jangan pakai `A www` dan `CNAME www` bersamaan. Untuk setup ini pilih `A www`.
+
+Environment production yang penting:
+
+```bash
+PUBLIC_APP_URL=https://conversease.com
+API_BASE_URL=https://api.conversease.com
+CORS_ORIGINS_RAW=https://conversease.com,https://www.conversease.com
+NEXT_PUBLIC_API_BASE_URL=https://api.conversease.com/api
+GOOGLE_OAUTH_REDIRECT_URI=https://api.conversease.com/api/auth/google/callback
+```
+
+Clone/update repo:
+
+```bash
+cd /var/www
+git clone https://github.com/Fikrifrds/conversease-language-study.git conversease/app
+cd /var/www/conversease/app
+```
+
+Jika repo sudah ada:
+
+```bash
+cd /var/www/conversease/app
+git pull
+```
+
+Siapkan API virtualenv:
+
+```bash
+cd /var/www/conversease/app/apps/api
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+pip install -e ".[dev]"
+```
+
+Jalankan migration:
+
+```bash
+cd /var/www/conversease/app
+set -a
+. ./.env.production
+set +a
+apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
+PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.migration_status
+```
+
+Build web:
+
+```bash
+cd /var/www/conversease/app
+npm install
+npm run build --workspace apps/web
+mkdir -p apps/web/.next/standalone/apps/web/public
+mkdir -p apps/web/.next/standalone/apps/web/.next/static
+cp -R apps/web/public/. apps/web/.next/standalone/apps/web/public/
+cp -R apps/web/.next/static/. apps/web/.next/standalone/apps/web/.next/static/
+```
+
+Systemd API:
+
+```ini
+[Unit]
+Description=Conversease API
+After=network.target postgresql.service redis-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/conversease/app/apps/api
+EnvironmentFile=/var/www/conversease/app/.env.production
+ExecStart=/var/www/conversease/app/apps/api/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8010 --workers 2
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Systemd web:
+
+```ini
+[Unit]
+Description=Conversease Web
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/conversease/app/apps/web/.next/standalone
+EnvironmentFile=/var/www/conversease/app/.env.production
+Environment=PORT=3010
+Environment=HOSTNAME=127.0.0.1
+ExecStart=/usr/bin/node apps/web/server.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Aktifkan service:
+
+```bash
+sudo cp infra/systemd/conversease-api.service /etc/systemd/system/conversease-api.service
+sudo cp infra/systemd/conversease-web.service /etc/systemd/system/conversease-web.service
+sudo systemctl daemon-reload
+sudo systemctl enable conversease-api conversease-web
+sudo systemctl restart conversease-api conversease-web
+sudo systemctl status conversease-api
+sudo systemctl status conversease-web
+```
+
+Cek internal:
+
+```bash
+curl http://127.0.0.1:8010/api/health
+curl http://127.0.0.1:8010/api/ready
+curl -I http://127.0.0.1:3010/
+```
+
+Nginx:
+
+```bash
+sudo cp infra/nginx/conversease.production.conf /etc/nginx/sites-available/conversease
+sudo ln -s /etc/nginx/sites-available/conversease /etc/nginx/sites-enabled/conversease
+sudo nginx -t
+sudo systemctl reload nginx
+sudo certbot --nginx -d conversease.com -d www.conversease.com -d api.conversease.com
+sudo certbot renew --dry-run
+```
+
+Release check:
+
+```bash
+cd /var/www/conversease/app
+set -a
+. ./.env.production
+set +a
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_preflight.py
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_smoke.py \
+  --api-base-url "$API_BASE_URL/api" \
+  --web-base-url "$PUBLIC_APP_URL" \
+  --admin-api-key "$PAYMENT_ADMIN_API_KEY"
+```
+
 ## Ringkasan Keputusan
 
 Docker tidak wajib, tapi untuk proyek ini Docker Compose adalah opsi yang paling direkomendasikan.
@@ -323,11 +492,12 @@ Container web hanya menerima `NEXT_PUBLIC_API_BASE_URL`; secret backend tetap di
 Untuk preflight dari host, install dependency API sekali:
 
 ```bash
-cd /opt/conversease/app/apps/api
+cd /var/www/conversease/app/apps/api
 python3 -m venv .venv
 . .venv/bin/activate
+python -m pip install --upgrade pip setuptools wheel
 pip install -e ".[dev]"
-cd /opt/conversease/app
+cd /var/www/conversease/app
 ```
 
 Export env dari `.env.production` lalu jalankan:

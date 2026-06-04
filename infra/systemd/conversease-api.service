@@ -1,0 +1,14 @@
+[Unit]
+Description=Conversease API
+After=network.target postgresql.service redis-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/conversease/app/apps/api
+EnvironmentFile=/var/www/conversease/app/.env.production
+ExecStart=/var/www/conversease/app/apps/api/.venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8010 --workers 2
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
