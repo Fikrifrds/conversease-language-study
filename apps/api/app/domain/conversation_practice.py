@@ -150,6 +150,38 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
             ),
         ),
     ),
+    "spelling-your-name": (
+        CoachTurn(
+            coach="Hi. What is your name?",
+            hint="Sebutkan namamu dengan pola: My name is ... atau I'm ...",
+            sample_answer="My name is Dimas.",
+            focus="Saying your name clearly",
+            expected_keywords=("my name is", "i'm", "i am", "dimas"),
+            indonesian_explanation=(
+                "Sebutkan nama dengan satu kalimat pendek dan jelas. Pola 'My name is ...' sudah cukup untuk konteks registrasi."
+            ),
+        ),
+        CoachTurn(
+            coach="How do you spell it?",
+            hint="Eja nama huruf demi huruf, lalu boleh ulangi namanya.",
+            sample_answer="It's spelled D-I-M-A-S.",
+            focus="Spelling your name",
+            expected_keywords=("spelled", "d-i-m-a-s", "dimas"),
+            indonesian_explanation=(
+                "Saat diminta mengeja, sebutkan huruf satu per satu dengan jeda pendek. Kamu bisa memakai pola 'It's spelled ...'."
+            ),
+        ),
+        CoachTurn(
+            coach="Thank you. Let me read it back: D-I-M-A-S.",
+            hint="Konfirmasi bahwa ejaannya benar.",
+            sample_answer="That's right.",
+            focus="Confirming spelling",
+            expected_keywords=("that's right", "right", "yes"),
+            indonesian_explanation=(
+                "Untuk mengonfirmasi ejaan, 'That's right' terdengar natural dan sopan."
+            ),
+        ),
+    ),
     "asking-someones-name": (
         CoachTurn(
             coach="Hi. I am new here.",

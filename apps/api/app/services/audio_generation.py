@@ -55,6 +55,7 @@ DIALOGUE_PERSONA_VOICES = {
     "mina": "English_compelling_lady1",
     "david": "English_Diligent_Man",
     "dimas": "English_Diligent_Man",
+    "officer": "English_CalmWoman",
 }
 
 FALLBACK_MINIMAX_VOICES = (

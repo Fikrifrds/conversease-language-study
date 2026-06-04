@@ -14,4 +14,10 @@ Pattern:
 How do you spell + it / that / your name?
 ```
 
+Use **It's spelled + letters** to answer.
+
+Example:
+
+- It's spelled D-I-M-A-S.
+
 When you answer, say each letter clearly and slowly.

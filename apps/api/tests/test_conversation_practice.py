@@ -45,6 +45,25 @@ class ConversationPracticeTest(unittest.TestCase):
         self.assertEqual(turn.coach_reply, "Nice to meet you. What should I call you?")
         self.assertEqual(turn.feedback.better_version, "My name is Fikri. Nice to meet you.")
 
+    def test_spelling_your_name_roleplay_matches_lesson_goal(self):
+        store = ConversationPracticeStore()
+        session = store.create_session(
+            demo_user_id="demo-user",
+            lesson_slug="spelling-your-name",
+        )
+
+        payload = session_payload(session)
+        first_turn = store.add_turn(session.id, "My name is Dimas.")
+        second_turn = store.add_turn(session.id, "It's spelled D-I-M-A-S.")
+        third_turn = store.add_turn(session.id, "That's right.")
+
+        self.assertEqual(payload["first_coach_message"], "Hi. What is your name?")
+        self.assertEqual(first_turn.coach_reply, "How do you spell it?")
+        self.assertEqual(second_turn.coach_reply, "Thank you. Let me read it back: D-I-M-A-S.")
+        self.assertIsNone(third_turn.coach_reply)
+        self.assertTrue(session.completed)
+        self.assertEqual(session.completed_turns, 3)
+
     def test_latest_session_is_scoped_by_demo_user(self):
         store = ConversationPracticeStore()
         user_session = store.create_session(demo_user_id="demo-user")

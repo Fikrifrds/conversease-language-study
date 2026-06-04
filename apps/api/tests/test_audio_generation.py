@@ -99,6 +99,7 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
 
+        self.assertEqual(voices["Officer"], "English_CalmWoman")
         self.assertEqual(voices["Dimas"], "English_Diligent_Man")
         self.assertNotIn(voices["Dimas"], {"English_radiant_girl", "English_Graceful_Lady"})
 

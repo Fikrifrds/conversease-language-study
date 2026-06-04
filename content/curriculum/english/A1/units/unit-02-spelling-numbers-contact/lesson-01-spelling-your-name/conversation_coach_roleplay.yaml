@@ -9,7 +9,8 @@ feedback_level:
   pro: detailed
 target_phrases:
   - My name is
-  - How do you spell it
+  - It's spelled
+  - D-I-M-A-S
   - That's right
 rubric:
   speaking:

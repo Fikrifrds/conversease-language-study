@@ -272,7 +272,7 @@ export const lessonCatalog = [
       { speaker: "Officer", text: "Hi. What is your name?" },
       { speaker: "Dimas", text: "My name is Dimas." },
       { speaker: "Officer", text: "How do you spell it?" },
-      { speaker: "Dimas", text: "D-I-M-A-S. Dimas." },
+      { speaker: "Dimas", text: "It's spelled D-I-M-A-S." },
       { speaker: "Officer", text: "Thank you. Let me read it back. D-I-M-A-S." },
       { speaker: "Dimas", text: "That's right." }
     ],
@@ -280,7 +280,7 @@ export const lessonCatalog = [
       "Hai. Siapa namamu?",
       "Nama saya Dimas.",
       "Bagaimana cara mengejanya?",
-      "D-I-M-A-S. Dimas.",
+      "Ejaannya D-I-M-A-S.",
       "Terima kasih. Saya ulangi ya. D-I-M-A-S.",
       "Betul."
     ],
@@ -291,7 +291,7 @@ export const lessonCatalog = [
       { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask for a repeat when you miss a letter." },
       { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." }
     ],
-    grammar: "Use How do you spell + it/that to ask about spelling: How do you spell it? How do you spell that?",
+    grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
     prompts: [
       "Say: My name is Dimas.",
       "Spell it: D-I-M-A-S.",
