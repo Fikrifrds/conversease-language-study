@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Alya do at seven?
+  choices:
+  - She studies English.
+  - She buys tea.
+  - She turns right.
+  answer: She studies English.
+- type: multiple_choice
+  prompt: When is Alya's class?
+  choices:
+  - On Tuesday at eight.
+  - At the cafe.
+  - From Indonesia.
+  answer: On Tuesday at eight.
+- type: multiple_choice
+  prompt: Which phrase asks for repetition?
+  choices:
+  - Sorry, can you repeat that, please?
+  - Here you go.
+  - How much is it?
+  answer: Sorry, can you repeat that, please?

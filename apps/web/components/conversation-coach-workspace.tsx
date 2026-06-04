@@ -38,7 +38,12 @@ const scenarios = [
   { slug: "asking-for-help", label: "Ask Help", description: "Minta bantuan untuk masalah sederhana." },
   { slug: "making-simple-requests", label: "Simple Request", description: "Buat request sopan dengan please." },
   { slug: "apologizing-and-thanking", label: "Sorry & Thanks", description: "Minta maaf dan ucapkan terima kasih." },
-  { slug: "help-and-problem-mission", label: "Help Mission", description: "Gabungkan masalah, request, dan thanks." }
+  { slug: "help-and-problem-mission", label: "Help Mission", description: "Gabungkan masalah, request, dan thanks." },
+  { slug: "review-introductions", label: "Review Intro", description: "Ulangi greeting, nama, asal, dan closing." },
+  { slug: "review-routines-and-time", label: "Review Routine", description: "Ulangi rutinitas, hari, dan jam kelas." },
+  { slug: "review-places-and-shopping", label: "Review Places", description: "Ulangi lokasi, arahan, order, dan harga." },
+  { slug: "final-test-practice", label: "Final Practice", description: "Latihan pertanyaan final test A1." },
+  { slug: "a1-final-conversation", label: "A1 Final", description: "Gabungkan semua skill inti A1." }
 ];
 
 export function ConversationCoachWorkspace() {

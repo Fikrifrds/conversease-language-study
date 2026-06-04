@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What is Dimas's opening introduction?
+  choices:
+  - My name is Dimas.
+  - I want a coffee.
+  - Turn left.
+  answer: My name is Dimas.
+- type: multiple_choice
+  prompt: Where is Sara from?
+  choices:
+  - Malaysia.
+  - The cafe.
+  - Monday.
+  answer: Malaysia.
+- type: multiple_choice
+  prompt: Which phrase asks the same question back?
+  choices:
+  - How about you?
+  - That's right.
+  - Can you wait?
+  answer: How about you?

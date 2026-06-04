@@ -1,0 +1,21 @@
+phrases:
+- phrase: My name is ...
+  meaning_id: Nama saya ...
+  usage_note: Use this for a clear self-introduction.
+  common_mistake: Do not say My name ... without is.
+- phrase: Nice to meet you too.
+  meaning_id: Senang bertemu denganmu juga.
+  usage_note: Reply after someone says Nice to meet you.
+  common_mistake: Use too at the end.
+- phrase: I'm from Indonesia.
+  meaning_id: Saya dari Indonesia.
+  usage_note: Say your origin.
+  common_mistake: Use from for origin.
+- phrase: I live in Jakarta now.
+  meaning_id: Saya tinggal di Jakarta sekarang.
+  usage_note: Say your current city.
+  common_mistake: Use in for a city.
+- phrase: How about you?
+  meaning_id: Kalau kamu?
+  usage_note: Ask the same question back.
+  common_mistake: Use it after you answer.

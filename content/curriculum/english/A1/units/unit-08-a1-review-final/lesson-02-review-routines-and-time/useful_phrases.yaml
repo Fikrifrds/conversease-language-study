@@ -1,0 +1,21 @@
+phrases:
+- phrase: I wake up at six.
+  meaning_id: Saya bangun jam enam.
+  usage_note: Say a routine and time.
+  common_mistake: Use at for clock time.
+- phrase: I study English at seven.
+  meaning_id: Saya belajar bahasa Inggris jam tujuh.
+  usage_note: Say a study routine.
+  common_mistake: Use study, not learn, for regular practice.
+- phrase: When is our speaking class?
+  meaning_id: Kapan kelas speaking kita?
+  usage_note: Ask about a schedule.
+  common_mistake: Use When is for one event.
+- phrase: It is on Tuesday at eight.
+  meaning_id: Hari Selasa jam delapan.
+  usage_note: Say day and time together.
+  common_mistake: Use on for days, at for times.
+- phrase: See you then.
+  meaning_id: Sampai nanti.
+  usage_note: Close after confirming a time.
+  common_mistake: Use then after a time is clear.

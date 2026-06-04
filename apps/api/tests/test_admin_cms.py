@@ -25,9 +25,9 @@ class AdminCmsTest(unittest.TestCase):
         lesson = get_admin_lesson("saying-your-name")
         template = get_email_template("auth_verify_email")
 
-        self.assertEqual(summary["course"]["lesson_count"], 35)
+        self.assertEqual(summary["course"]["lesson_count"], 40)
         self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 200)
-        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 35)
+        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 40)
         self.assertEqual(
             [level["course"]["level_code"] for level in summary["readiness_levels"]],
             ["A1", "A2", "B1", "B2", "C1"],
@@ -73,7 +73,7 @@ class AdminCmsTest(unittest.TestCase):
 
                 self.assertEqual(unauthorized.status_code, 401)
                 self.assertEqual(authorized.status_code, 200)
-                self.assertEqual(authorized.json()["data"]["curriculum"]["course"]["lesson_count"], 35)
+                self.assertEqual(authorized.json()["data"]["curriculum"]["course"]["lesson_count"], 40)
             self.assertEqual(
                 authorized.json()["data"]["curriculum"]["readiness_overview"]["planned_lesson_count"],
                 200,

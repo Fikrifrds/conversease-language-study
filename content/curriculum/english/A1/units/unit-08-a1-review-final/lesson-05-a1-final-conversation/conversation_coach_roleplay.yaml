@@ -1,0 +1,25 @@
+scenario_key: completing_a_full_a1_final_conversation
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hi, good morning. What is your name?
+learner_goal: Complete a longer A1 conversation with introduction, routine, place,
+  order, repetition, and polite closing.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- My name is ...
+- I'm from Indonesia. How about you?
+- I study English at seven.
+- Where is the cafe?
+- I would like one tea, please.
+- Sorry, can you repeat that, please?
+- Thank you for your help.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

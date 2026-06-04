@@ -1,0 +1,23 @@
+scenario_key: reviewing_places_directions_and_a_simple_order
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Excuse me. Can I help you?
+learner_goal: Ask where the cafe is, confirm the place, order one item, and ask the
+  price.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- Where is the cafe?
+- Is it next to the library?
+- I would like one tea, please.
+- How much is it?
+- Here you go.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

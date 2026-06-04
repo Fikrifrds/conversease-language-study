@@ -189,26 +189,26 @@ units:
 
   - unit_key: unit-08-a1-review-final
     title: A1 Review & Final Conversation
-    status: planned
+    status: in_production
     main_conversation_outcome: Combine A1 skills in a longer but still simple conversation.
     lessons:
       - lesson_key: lesson-01-review-introductions
         slug: review-introductions
         title: Review Introductions
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-review-routines-and-time
         slug: review-routines-and-time
         title: Review Routines and Time
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-review-places-and-shopping
         slug: review-places-and-shopping
         title: Review Places and Shopping
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-final-test-practice
         slug: final-test-practice
         title: Final Test Practice
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-a1-final-conversation
         slug: a1-final-conversation
         title: A1 Final Conversation
-        status: planned
+        status: implemented

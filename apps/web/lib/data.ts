@@ -1530,6 +1530,258 @@ export const lessonCatalog = [
       { question: "What does Dimas ask Alya to send?", answer: "A screenshot." }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "review-introductions",
+    title: "Review Introductions",
+    unit: "A1 Review & Final Conversation",
+    conversationGoal: "Greet someone, introduce yourself, say where you are from, and ask simple follow-up questions.",
+    setup: "Ini review awal sebelum final A1. Kamu bertemu teman kelas baru dan merapikan pola greeting, name, origin, dan closing.",
+    dialogue: [
+      { speaker: "Sara", text: "Hi, good morning." },
+      { speaker: "Dimas", text: "Good morning. My name is Dimas." },
+      { speaker: "Sara", text: "Nice to meet you, Dimas. I'm Sara." },
+      { speaker: "Dimas", text: "Nice to meet you too, Sara." },
+      { speaker: "Sara", text: "Where are you from?" },
+      { speaker: "Dimas", text: "I'm from Indonesia. How about you?" },
+      { speaker: "Sara", text: "I'm from Malaysia, and I live in Jakarta now." },
+      { speaker: "Dimas", text: "Oh, nice. See you in class." }
+    ],
+    translation: [
+      "Hai, selamat pagi.",
+      "Selamat pagi. Nama saya Dimas.",
+      "Senang bertemu denganmu, Dimas. Saya Sara.",
+      "Senang bertemu denganmu juga, Sara.",
+      "Kamu dari mana?",
+      "Saya dari Indonesia. Kalau kamu?",
+      "Saya dari Malaysia, dan sekarang saya tinggal di Jakarta.",
+      "Oh, bagus. Sampai bertemu di kelas."
+    ],
+    phrases: [
+      { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Use this for a clear self-introduction." },
+      { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Reply after someone says Nice to meet you." },
+      { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Say your origin." },
+      { phrase: "I live in Jakarta now.", meaning: "Saya tinggal di Jakarta sekarang.", usage: "Say your current city." },
+      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." }
+    ],
+    grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
+    prompts: [
+      "Introduce yourself with your name.",
+      "Say where you are from.",
+      "Ask the same question back.",
+      "Close the conversation politely."
+    ],
+    quiz: [
+      { question: "What is Dimas's opening introduction?", answer: "My name is Dimas." },
+      { question: "Where is Sara from?", answer: "Malaysia." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "review-routines-and-time",
+    title: "Review Routines and Time",
+    unit: "A1 Review & Final Conversation",
+    conversationGoal: "Talk about a simple daily routine, class day, and class time in one short conversation.",
+    setup: "Kamu ngobrol dengan teman kelas tentang rutinitas pagi dan jadwal kelas. Fokus pada time, days, dan simple present.",
+    dialogue: [
+      { speaker: "Alya", text: "What do you do in the morning?" },
+      { speaker: "Ben", text: "I wake up at six." },
+      { speaker: "Alya", text: "Do you study English every day?" },
+      { speaker: "Ben", text: "Yes, I study English at seven." },
+      { speaker: "Alya", text: "When is our speaking class?" },
+      { speaker: "Ben", text: "It is on Tuesday at eight." },
+      { speaker: "Alya", text: "Great. See you on Tuesday." },
+      { speaker: "Ben", text: "See you then." }
+    ],
+    translation: [
+      "Apa yang kamu lakukan di pagi hari?",
+      "Saya bangun jam enam.",
+      "Apakah kamu belajar bahasa Inggris setiap hari?",
+      "Ya, saya belajar bahasa Inggris jam tujuh.",
+      "Kapan kelas speaking kita?",
+      "Hari Selasa jam delapan.",
+      "Bagus. Sampai bertemu hari Selasa.",
+      "Sampai nanti."
+    ],
+    phrases: [
+      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a routine and time." },
+      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
+      { phrase: "When is our speaking class?", meaning: "Kapan kelas speaking kita?", usage: "Ask about a schedule." },
+      { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Say day and time together." },
+      { phrase: "See you then.", meaning: "Sampai nanti.", usage: "Close after confirming a time." }
+    ],
+    grammar: "Use at for clock time, on for days, and simple present for routines.",
+    prompts: [
+      "Say when you wake up.",
+      "Say your English routine.",
+      "Ask about class time.",
+      "Confirm the day and time."
+    ],
+    quiz: [
+      { question: "What time does Ben wake up?", answer: "At six." },
+      { question: "When is the speaking class?", answer: "On Tuesday at eight." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "review-places-and-shopping",
+    title: "Review Places and Shopping",
+    unit: "A1 Review & Final Conversation",
+    conversationGoal: "Ask where a place is, follow simple directions, order one item, and ask the price.",
+    setup: "Kamu mencari cafe dekat kelas, lalu membeli satu minuman. Ini menggabungkan places, directions, ordering, dan prices.",
+    dialogue: [
+      { speaker: "Mina", text: "Excuse me. Where is the cafe?" },
+      { speaker: "Ben", text: "Go straight and turn right." },
+      { speaker: "Mina", text: "Is it next to the library?" },
+      { speaker: "Ben", text: "Yes, it is." },
+      { speaker: "Mina", text: "Thank you." },
+      { speaker: "Ben", text: "You're welcome." },
+      { speaker: "Mina", text: "Hi. I would like one tea, please." },
+      { speaker: "Ben", text: "Sure. It is two dollars." },
+      { speaker: "Mina", text: "Here you go. Thank you." }
+    ],
+    translation: [
+      "Permisi. Di mana cafenya?",
+      "Jalan lurus dan belok kanan.",
+      "Apakah di sebelah perpustakaan?",
+      "Ya, benar.",
+      "Terima kasih.",
+      "Sama-sama.",
+      "Hai. Saya mau satu teh, tolong.",
+      "Tentu. Harganya dua dolar.",
+      "Ini uangnya. Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
+      { phrase: "Go straight and turn right.", meaning: "Jalan lurus dan belok kanan.", usage: "Give two simple directions." },
+      { phrase: "Is it next to the library?", meaning: "Apakah di sebelah perpustakaan?", usage: "Confirm a place." },
+      { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
+      { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." }
+    ],
+    grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
+    prompts: [
+      "Ask where the cafe is.",
+      "Confirm the place near the library.",
+      "Order one tea politely.",
+      "Ask the price."
+    ],
+    quiz: [
+      { question: "Where is the cafe?", answer: "Next to the library." },
+      { question: "What does Mina order?", answer: "One tea." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "final-test-practice",
+    title: "Final Test Practice",
+    unit: "A1 Review & Final Conversation",
+    conversationGoal: "Answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
+    setup: "Ini latihan sebelum final test. Kamu menjawab beberapa pertanyaan pendek dari examiner dengan kalimat sederhana dan jelas.",
+    dialogue: [
+      { speaker: "Sara", text: "Hello. What is your name?" },
+      { speaker: "Alya", text: "My name is Alya." },
+      { speaker: "Sara", text: "Where are you from?" },
+      { speaker: "Alya", text: "I'm from Indonesia." },
+      { speaker: "Sara", text: "What do you do every morning?" },
+      { speaker: "Alya", text: "I study English at seven." },
+      { speaker: "Sara", text: "Good. When is your class?" },
+      { speaker: "Alya", text: "Sorry, can you repeat that, please?" },
+      { speaker: "Sara", text: "Sure. When is your class?" },
+      { speaker: "Alya", text: "It is on Tuesday at eight." }
+    ],
+    translation: [
+      "Halo. Siapa namamu?",
+      "Nama saya Alya.",
+      "Kamu dari mana?",
+      "Saya dari Indonesia.",
+      "Apa yang kamu lakukan setiap pagi?",
+      "Saya belajar bahasa Inggris jam tujuh.",
+      "Bagus. Kapan kelasmu?",
+      "Maaf, bisa diulang, tolong?",
+      "Tentu. Kapan kelasmu?",
+      "Hari Selasa jam delapan."
+    ],
+    phrases: [
+      { phrase: "My name is Alya.", meaning: "Nama saya Alya.", usage: "Answer identity questions." },
+      { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Answer origin questions." },
+      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Talk about a routine." },
+      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for repetition in a test." },
+      { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Answer day and time." }
+    ],
+    grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
+    prompts: [
+      "Answer the name question.",
+      "Answer where you are from.",
+      "Say your English routine.",
+      "Ask the examiner to repeat."
+    ],
+    quiz: [
+      { question: "What does Alya do at seven?", answer: "She studies English." },
+      { question: "When is Alya's class?", answer: "On Tuesday at eight." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "a1-final-conversation",
+    title: "A1 Final Conversation",
+    unit: "A1 Review & Final Conversation",
+    conversationGoal: "Complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
+    setup: "Ini misi final A1. Kamu melakukan percakapan lebih panjang, tetapi kalimat tetap pendek, jelas, dan sesuai level A1.",
+    dialogue: [
+      { speaker: "Ben", text: "Hi, good morning. What is your name?" },
+      { speaker: "Mina", text: "Good morning. My name is Mina." },
+      { speaker: "Ben", text: "Nice to meet you, Mina. Where are you from?" },
+      { speaker: "Mina", text: "I'm from Indonesia. How about you?" },
+      { speaker: "Ben", text: "I'm from Malaysia. What do you do every morning?" },
+      { speaker: "Mina", text: "I study English at seven." },
+      { speaker: "Ben", text: "Great. The cafe is open now." },
+      { speaker: "Mina", text: "Where is the cafe?" },
+      { speaker: "Ben", text: "Go straight and turn left." },
+      { speaker: "Mina", text: "Thank you. I would like one tea, please." },
+      { speaker: "Ben", text: "Sure. It is two dollars." },
+      { speaker: "Mina", text: "Sorry, can you repeat that, please?" },
+      { speaker: "Ben", text: "Two dollars." },
+      { speaker: "Mina", text: "Here you go. Thank you for your help." }
+    ],
+    translation: [
+      "Hai, selamat pagi. Siapa namamu?",
+      "Selamat pagi. Nama saya Mina.",
+      "Senang bertemu denganmu, Mina. Kamu dari mana?",
+      "Saya dari Indonesia. Kalau kamu?",
+      "Saya dari Malaysia. Apa yang kamu lakukan setiap pagi?",
+      "Saya belajar bahasa Inggris jam tujuh.",
+      "Bagus. Cafe sudah buka sekarang.",
+      "Di mana cafenya?",
+      "Jalan lurus dan belok kiri.",
+      "Terima kasih. Saya mau satu teh, tolong.",
+      "Tentu. Harganya dua dolar.",
+      "Maaf, bisa diulang, tolong?",
+      "Dua dolar.",
+      "Ini uangnya. Terima kasih atas bantuanmu."
+    ],
+    phrases: [
+      { phrase: "My name is Mina.", meaning: "Nama saya Mina.", usage: "Introduce yourself clearly." },
+      { phrase: "I'm from Indonesia. How about you?", meaning: "Saya dari Indonesia. Kalau kamu?", usage: "Answer and ask back." },
+      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a routine and time." },
+      { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
+      { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
+      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for clarification." },
+      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." }
+    ],
+    grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
+    prompts: [
+      "Introduce yourself.",
+      "Say your origin and ask back.",
+      "Ask where the cafe is.",
+      "Order one tea.",
+      "Ask for repetition.",
+      "Close with thanks."
+    ],
+    quiz: [
+      { question: "What is Mina's routine?", answer: "She studies English at seven." },
+      { question: "What does Mina order?", answer: "One tea." }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -1630,6 +1882,19 @@ export const course = {
           title: item.title,
           status: "published",
           minutes: item.slug === "help-and-problem-mission" ? 10 : 8
+        }))
+    },
+    {
+      title: "A1 Review & Final Conversation",
+      outcome: "Review introductions, routines, places, shopping, help language, and complete the A1 final conversation.",
+      progress: 0,
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "A1 Review & Final Conversation")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "a1-final-conversation" ? 12 : item.slug === "final-test-practice" ? 10 : 9
         }))
     }
   ]

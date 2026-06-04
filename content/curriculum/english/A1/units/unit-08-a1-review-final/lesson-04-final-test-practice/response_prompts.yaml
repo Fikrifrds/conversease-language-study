@@ -1,0 +1,18 @@
+prompts:
+- prompt: Answer the name question.
+  target_response: My name is Alya.
+  acceptable_variations:
+  - My name is Alya.
+  - I'm Alya.
+- prompt: Answer where you are from.
+  target_response: I'm from Indonesia.
+  acceptable_variations:
+  - I'm from Indonesia.
+- prompt: Say your English routine.
+  target_response: I study English at seven.
+  acceptable_variations:
+  - I study English at seven.
+- prompt: Ask the examiner to repeat.
+  target_response: Sorry, can you repeat that, please?
+  acceptable_variations:
+  - Sorry, can you repeat that, please?

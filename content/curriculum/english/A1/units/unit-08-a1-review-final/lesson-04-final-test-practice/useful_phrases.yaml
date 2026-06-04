@@ -1,0 +1,21 @@
+phrases:
+- phrase: My name is Alya.
+  meaning_id: Nama saya Alya.
+  usage_note: Answer identity questions.
+  common_mistake: Use is before the name.
+- phrase: I'm from Indonesia.
+  meaning_id: Saya dari Indonesia.
+  usage_note: Answer origin questions.
+  common_mistake: Use from for country.
+- phrase: I study English at seven.
+  meaning_id: Saya belajar bahasa Inggris jam tujuh.
+  usage_note: Talk about a routine.
+  common_mistake: Use at for time.
+- phrase: Sorry, can you repeat that, please?
+  meaning_id: Maaf, bisa diulang, tolong?
+  usage_note: Ask for repetition in a test.
+  common_mistake: Put please at the end.
+- phrase: It is on Tuesday at eight.
+  meaning_id: Hari Selasa jam delapan.
+  usage_note: Answer day and time.
+  common_mistake: Use on and at together.

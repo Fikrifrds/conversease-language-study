@@ -1,0 +1,21 @@
+phrases:
+- phrase: Where is the cafe?
+  meaning_id: Di mana cafenya?
+  usage_note: Ask for a place.
+  common_mistake: Use Where is for one place.
+- phrase: Go straight and turn right.
+  meaning_id: Jalan lurus dan belok kanan.
+  usage_note: Give two simple directions.
+  common_mistake: Keep directions short.
+- phrase: Is it next to the library?
+  meaning_id: Apakah di sebelah perpustakaan?
+  usage_note: Confirm a place.
+  common_mistake: Use next to for beside.
+- phrase: I would like one tea, please.
+  meaning_id: Saya mau satu teh, tolong.
+  usage_note: Order politely.
+  common_mistake: Use would like for polite ordering.
+- phrase: How much is it?
+  meaning_id: Berapa harganya?
+  usage_note: Ask the price.
+  common_mistake: Use it for one item.

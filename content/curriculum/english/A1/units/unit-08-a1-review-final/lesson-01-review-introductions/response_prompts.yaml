@@ -1,0 +1,19 @@
+prompts:
+- prompt: Introduce yourself with your name.
+  target_response: My name is Dimas.
+  acceptable_variations:
+  - My name is Dimas.
+  - I'm Dimas.
+- prompt: Say where you are from.
+  target_response: I'm from Indonesia.
+  acceptable_variations:
+  - I'm from Indonesia.
+- prompt: Ask the same question back.
+  target_response: How about you?
+  acceptable_variations:
+  - How about you?
+- prompt: Close the conversation politely.
+  target_response: See you in class.
+  acceptable_variations:
+  - See you in class.
+  - See you later.

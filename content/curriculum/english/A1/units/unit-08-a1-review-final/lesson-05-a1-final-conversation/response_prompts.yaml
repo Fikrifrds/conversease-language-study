@@ -1,0 +1,26 @@
+prompts:
+- prompt: Introduce yourself.
+  target_response: My name is Mina.
+  acceptable_variations:
+  - My name is Mina.
+  - I'm Mina.
+- prompt: Say your origin and ask back.
+  target_response: I'm from Indonesia. How about you?
+  acceptable_variations:
+  - I'm from Indonesia. How about you?
+- prompt: Ask where the cafe is.
+  target_response: Where is the cafe?
+  acceptable_variations:
+  - Where is the cafe?
+- prompt: Order one tea.
+  target_response: I would like one tea, please.
+  acceptable_variations:
+  - I would like one tea, please.
+- prompt: Ask for repetition.
+  target_response: Sorry, can you repeat that, please?
+  acceptable_variations:
+  - Sorry, can you repeat that, please?
+- prompt: Close with thanks.
+  target_response: Thank you for your help.
+  acceptable_variations:
+  - Thank you for your help.

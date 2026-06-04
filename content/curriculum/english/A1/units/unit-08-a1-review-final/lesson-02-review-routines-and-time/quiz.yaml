@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What time does Ben wake up?
+  choices:
+  - At six.
+  - At ten.
+  - On Friday.
+  answer: At six.
+- type: multiple_choice
+  prompt: When is the speaking class?
+  choices:
+  - On Tuesday at eight.
+  - Every morning.
+  - In Jakarta.
+  answer: On Tuesday at eight.
+- type: multiple_choice
+  prompt: Which word is used for clock time?
+  choices:
+  - at
+  - from
+  - please
+  answer: at

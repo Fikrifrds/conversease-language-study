@@ -1,0 +1,25 @@
+lesson_key: lesson-02-review-routines-and-time
+slug: review-routines-and-time
+title: Review Routines and Time
+status: published
+estimated_minutes: 9
+conversation_situation: reviewing_routine_and_class_time
+conversation_goal: Learners can talk about a simple daily routine, class day, and
+  class time in one short conversation.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

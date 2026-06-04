@@ -1,0 +1,29 @@
+questions:
+- type: multiple_choice
+  prompt: What is Mina's routine?
+  choices:
+  - She studies English at seven.
+  - She wakes up at ten.
+  - She buys a pen.
+  answer: She studies English at seven.
+- type: multiple_choice
+  prompt: Where does Mina want to go?
+  choices:
+  - The cafe.
+  - The library.
+  - The office.
+  answer: The cafe.
+- type: multiple_choice
+  prompt: What does Mina order?
+  choices:
+  - One tea.
+  - One coffee.
+  - One sandwich.
+  answer: One tea.
+- type: multiple_choice
+  prompt: Why does Mina ask Ben to repeat?
+  choices:
+  - She wants to hear the price again.
+  - She wants directions again.
+  - She forgot her name.
+  answer: She wants to hear the price again.

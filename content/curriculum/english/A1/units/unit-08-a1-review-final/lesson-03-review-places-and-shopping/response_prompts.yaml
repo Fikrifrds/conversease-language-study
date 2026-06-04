@@ -1,0 +1,17 @@
+prompts:
+- prompt: Ask where the cafe is.
+  target_response: Where is the cafe?
+  acceptable_variations:
+  - Where is the cafe?
+- prompt: Confirm the place near the library.
+  target_response: Is it next to the library?
+  acceptable_variations:
+  - Is it next to the library?
+- prompt: Order one tea politely.
+  target_response: I would like one tea, please.
+  acceptable_variations:
+  - I would like one tea, please.
+- prompt: Ask the price.
+  target_response: How much is it?
+  acceptable_variations:
+  - How much is it?

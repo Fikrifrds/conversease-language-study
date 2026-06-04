@@ -1,0 +1,29 @@
+phrases:
+- phrase: My name is Mina.
+  meaning_id: Nama saya Mina.
+  usage_note: Introduce yourself clearly.
+  common_mistake: Use My name is for the final.
+- phrase: I'm from Indonesia. How about you?
+  meaning_id: Saya dari Indonesia. Kalau kamu?
+  usage_note: Answer and ask back.
+  common_mistake: Do not stop after one answer.
+- phrase: I study English at seven.
+  meaning_id: Saya belajar bahasa Inggris jam tujuh.
+  usage_note: Say a routine and time.
+  common_mistake: Use at for clock time.
+- phrase: Where is the cafe?
+  meaning_id: Di mana cafenya?
+  usage_note: Ask for a place.
+  common_mistake: Use Where is for one place.
+- phrase: I would like one tea, please.
+  meaning_id: Saya mau satu teh, tolong.
+  usage_note: Order politely.
+  common_mistake: Use please at the end.
+- phrase: Sorry, can you repeat that, please?
+  meaning_id: Maaf, bisa diulang, tolong?
+  usage_note: Ask for clarification.
+  common_mistake: Use sorry first.
+- phrase: Thank you for your help.
+  meaning_id: Terima kasih atas bantuanmu.
+  usage_note: Close politely after help.
+  common_mistake: Use for your help after someone helps.

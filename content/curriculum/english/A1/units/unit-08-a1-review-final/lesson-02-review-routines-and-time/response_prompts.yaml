@@ -1,0 +1,17 @@
+prompts:
+- prompt: Say when you wake up.
+  target_response: I wake up at six.
+  acceptable_variations:
+  - I wake up at six.
+- prompt: Say your English routine.
+  target_response: I study English at seven.
+  acceptable_variations:
+  - I study English at seven.
+- prompt: Ask about class time.
+  target_response: When is our speaking class?
+  acceptable_variations:
+  - When is our speaking class?
+- prompt: Confirm the day and time.
+  target_response: It is on Tuesday at eight.
+  acceptable_variations:
+  - It is on Tuesday at eight.

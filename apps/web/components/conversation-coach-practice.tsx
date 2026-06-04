@@ -857,6 +857,160 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "It works. Thank you for your help.",
       focus: "Closing"
     }
+  ],
+  "review-introductions": [
+    {
+      coach: "Hi, good morning. My name is Sara.",
+      hint: "Sapa balik dan sebutkan namamu.",
+      sampleAnswer: "Good morning. My name is Dimas.",
+      focus: "Name review"
+    },
+    {
+      coach: "Nice to meet you. Where are you from?",
+      hint: "Jawab asalmu dengan I'm from ...",
+      sampleAnswer: "I'm from Indonesia.",
+      focus: "Origin review"
+    },
+    {
+      coach: "I live in Jakarta now.",
+      hint: "Tanyakan balik dengan How about you?",
+      sampleAnswer: "How about you?",
+      focus: "Question back"
+    },
+    {
+      coach: "I'm from Malaysia.",
+      hint: "Tutup percakapan dengan sopan.",
+      sampleAnswer: "Oh, nice. See you in class.",
+      focus: "Closing"
+    }
+  ],
+  "review-routines-and-time": [
+    {
+      coach: "What do you do in the morning?",
+      hint: "Sebutkan satu rutinitas dan jam.",
+      sampleAnswer: "I wake up at six.",
+      focus: "Routine time"
+    },
+    {
+      coach: "Do you study English every day?",
+      hint: "Jawab dengan Yes, lalu sebutkan jam belajar.",
+      sampleAnswer: "Yes, I study English at seven.",
+      focus: "Study routine"
+    },
+    {
+      coach: "When is our speaking class?",
+      hint: "Jawab dengan on untuk hari dan at untuk jam.",
+      sampleAnswer: "It is on Tuesday at eight.",
+      focus: "Schedule"
+    },
+    {
+      coach: "Great. See you on Tuesday.",
+      hint: "Tutup dengan See you then.",
+      sampleAnswer: "See you then.",
+      focus: "Closing"
+    }
+  ],
+  "review-places-and-shopping": [
+    {
+      coach: "Excuse me. Can I help you?",
+      hint: "Tanyakan lokasi cafe.",
+      sampleAnswer: "Where is the cafe?",
+      focus: "Place question"
+    },
+    {
+      coach: "Go straight and turn right.",
+      hint: "Konfirmasi lokasinya dekat library.",
+      sampleAnswer: "Is it next to the library?",
+      focus: "Confirm place"
+    },
+    {
+      coach: "Yes, it is. You are at the cafe now.",
+      hint: "Pesan satu teh dengan sopan.",
+      sampleAnswer: "I would like one tea, please.",
+      focus: "Order"
+    },
+    {
+      coach: "Sure. It is two dollars.",
+      hint: "Bayar dan ucapkan terima kasih.",
+      sampleAnswer: "Here you go. Thank you.",
+      focus: "Payment"
+    }
+  ],
+  "final-test-practice": [
+    {
+      coach: "Hello. What is your name?",
+      hint: "Jawab dengan nama lengkap atau nama panggilan.",
+      sampleAnswer: "My name is Alya.",
+      focus: "Test identity"
+    },
+    {
+      coach: "Where are you from?",
+      hint: "Jawab asal dengan I'm from ...",
+      sampleAnswer: "I'm from Indonesia.",
+      focus: "Test origin"
+    },
+    {
+      coach: "What do you do every morning?",
+      hint: "Sebutkan rutinitas belajar dan jam.",
+      sampleAnswer: "I study English at seven.",
+      focus: "Test routine"
+    },
+    {
+      coach: "When is your class?",
+      hint: "Kalau perlu, minta pengulangan dulu.",
+      sampleAnswer: "Sorry, can you repeat that, please?",
+      focus: "Clarification"
+    },
+    {
+      coach: "Sure. When is your class?",
+      hint: "Jawab hari dan jam.",
+      sampleAnswer: "It is on Tuesday at eight.",
+      focus: "Schedule answer"
+    }
+  ],
+  "a1-final-conversation": [
+    {
+      coach: "Hi, good morning. What is your name?",
+      hint: "Perkenalkan diri dengan kalimat lengkap.",
+      sampleAnswer: "Good morning. My name is Mina.",
+      focus: "Final opening"
+    },
+    {
+      coach: "Nice to meet you. Where are you from?",
+      hint: "Jawab asal dan tanyakan balik.",
+      sampleAnswer: "I'm from Indonesia. How about you?",
+      focus: "Origin and follow-up"
+    },
+    {
+      coach: "I'm from Malaysia. What do you do every morning?",
+      hint: "Sebutkan rutinitas dan waktu.",
+      sampleAnswer: "I study English at seven.",
+      focus: "Routine"
+    },
+    {
+      coach: "Great. The cafe is open now.",
+      hint: "Tanyakan lokasi cafe.",
+      sampleAnswer: "Where is the cafe?",
+      focus: "Place"
+    },
+    {
+      coach: "Go straight and turn left.",
+      hint: "Pesan satu item dengan sopan.",
+      sampleAnswer: "Thank you. I would like one tea, please.",
+      focus: "Order"
+    },
+    {
+      coach: "Sure. It is two dollars.",
+      hint: "Minta ulang harga jika perlu.",
+      sampleAnswer: "Sorry, can you repeat that, please?",
+      focus: "Clarification"
+    },
+    {
+      coach: "Two dollars.",
+      hint: "Bayar dan tutup dengan terima kasih.",
+      sampleAnswer: "Here you go. Thank you for your help.",
+      focus: "Final closing"
+    }
   ]
 };
 

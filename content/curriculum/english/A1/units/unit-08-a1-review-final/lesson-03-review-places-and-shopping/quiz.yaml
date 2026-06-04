@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Where is the cafe?
+  choices:
+  - Next to the library.
+  - At six.
+  - From Indonesia.
+  answer: Next to the library.
+- type: multiple_choice
+  prompt: What does Mina order?
+  choices:
+  - One tea.
+  - One pen.
+  - One ticket.
+  answer: One tea.
+- type: multiple_choice
+  prompt: What phrase asks the price?
+  choices:
+  - How much is it?
+  - Where is it?
+  - Can you repeat that?
+  answer: How much is it?
