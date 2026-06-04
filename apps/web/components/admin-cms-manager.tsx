@@ -777,7 +777,10 @@ function LevelReadinessCard({
                             <p className="text-sm font-semibold text-ink">Listening audio</p>
                             <p className="mt-1 text-xs text-ink/50">
                               {lesson.audioAsset.model || "model unknown"} /{" "}
-                              {lesson.audioAsset.voiceId || "voice unknown"} /{" "}
+                              {lesson.audioAsset.lineCount > 1
+                                ? `${lesson.audioAsset.lineCount} dialogue lines`
+                                : lesson.audioAsset.voiceId || "voice unknown"}{" "}
+                              /{" "}
                               {formatDuration(lesson.audioAsset.durationSeconds)}
                             </p>
                           </div>
@@ -797,6 +800,13 @@ function LevelReadinessCard({
                           src={lesson.audioAsset.playbackUrl || lesson.audioAsset.audioUrl}
                           className="mt-3 h-10 w-full"
                         />
+                        {Object.keys(lesson.audioAsset.speakerVoices).length ? (
+                          <p className="mt-2 text-xs text-ink/50">
+                            {Object.entries(lesson.audioAsset.speakerVoices)
+                              .map(([speaker, voice]) => `${speaker}: ${voice}`)
+                              .join(" / ")}
+                          </p>
+                        ) : null}
                         <p className="mt-2 break-all text-xs text-ink/45">{lesson.audioAsset.storageKey}</p>
                       </div>
                     ) : null}

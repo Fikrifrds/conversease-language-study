@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import csv
+import io
 import re
+import wave
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -91,6 +93,15 @@ class MiniMaxAudioResult:
     audio_size: int
     trace_id: str
     usage_characters: int
+    voice_id: str
+    speaker_voices: dict[str, str]
+    line_count: int
+
+
+@dataclass(frozen=True)
+class DialogueTurn:
+    speaker: str
+    text: str
 
 
 def audio_generation_settings_payload(voices: list[dict[str, Any]]) -> dict[str, Any]:
@@ -203,19 +214,29 @@ async def generate_lesson_listening_audio(
         raise AudioGenerationError("s3_config_missing")
 
     lesson = find_lesson_audio_reference(lesson_slug)
-    tts_text = listening_script_to_tts_text(lesson.listening_script_path)
+    dialogue_turns = listening_script_to_dialogue_turns(lesson.listening_script_path)
     selected_model = normalized_model(model or settings.minimax_tts_model)
     selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
     if not selected_voice_id:
         raise AudioGenerationError("minimax_voice_id_missing")
 
-    generated = await synthesize_minimax_tts(
-        text=tts_text,
-        model=selected_model,
-        voice_id=selected_voice_id,
-        speed=speed,
-        language_boost=settings.minimax_tts_language_boost,
-    )
+    if len(dialogue_turns) >= 2:
+        generated = await synthesize_dialogue_minimax_tts(
+            turns=dialogue_turns,
+            model=selected_model,
+            fallback_voice_id=selected_voice_id,
+            speed=speed,
+            language_boost=settings.minimax_tts_language_boost,
+        )
+    else:
+        tts_text = listening_script_to_tts_text(lesson.listening_script_path)
+        generated = await synthesize_minimax_tts(
+            text=tts_text,
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=speed,
+            language_boost=settings.minimax_tts_language_boost,
+        )
 
     generated_at = datetime.now(timezone.utc)
     object_key = audio_object_key(
@@ -238,7 +259,9 @@ async def generate_lesson_listening_audio(
         duration_seconds=generated.duration_seconds,
         audio_format=generated.audio_format,
         model=selected_model,
-        voice_id=selected_voice_id,
+        voice_id=generated.voice_id,
+        speaker_voices=generated.speaker_voices,
+        line_count=generated.line_count,
         trace_id=generated.trace_id,
         generated_by=generated_by,
         generated_at=generated_at,
@@ -256,7 +279,9 @@ async def generate_lesson_listening_audio(
         "audio_format": generated.audio_format,
         "audio_size": generated.audio_size,
         "model": selected_model,
-        "voice_id": selected_voice_id,
+        "voice_id": generated.voice_id,
+        "speaker_voices": generated.speaker_voices,
+        "line_count": generated.line_count,
         "trace_id": generated.trace_id,
         "usage_characters": generated.usage_characters,
         "manifest": manifest,
@@ -335,6 +360,7 @@ async def synthesize_minimax_tts(
     voice_id: str,
     speed: float,
     language_boost: str,
+    audio_format: str = "mp3",
 ) -> MiniMaxAudioResult:
     payload = {
         "model": model,
@@ -351,7 +377,7 @@ async def synthesize_minimax_tts(
         "audio_setting": {
             "sample_rate": 32000,
             "bitrate": 128000,
-            "format": "mp3",
+            "format": audio_format,
             "channel": 1,
         },
     }
@@ -382,6 +408,50 @@ async def synthesize_minimax_tts(
         audio_size=int(extra_info.get("audio_size") or len(audio_bytes)),
         trace_id=str(body.get("trace_id") or ""),
         usage_characters=int(extra_info.get("usage_characters") or len(text)),
+        voice_id=voice_id,
+        speaker_voices={},
+        line_count=1,
+    )
+
+
+async def synthesize_dialogue_minimax_tts(
+    *,
+    turns: list[DialogueTurn],
+    model: str,
+    fallback_voice_id: str,
+    speed: float,
+    language_boost: str,
+) -> MiniMaxAudioResult:
+    speaker_voices = assign_dialogue_voices(turns, fallback_voice_id=fallback_voice_id)
+    chunks: list[bytes] = []
+    trace_ids: list[str] = []
+    total_usage = 0
+
+    for turn in turns:
+        generated = await synthesize_minimax_tts(
+            text=turn.text,
+            model=model,
+            voice_id=speaker_voices.get(turn.speaker) or fallback_voice_id,
+            speed=speed,
+            language_boost=language_boost,
+            audio_format="wav",
+        )
+        chunks.append(generated.audio_bytes)
+        if generated.trace_id:
+            trace_ids.append(generated.trace_id)
+        total_usage += generated.usage_characters
+
+    audio_bytes, duration_seconds = concatenate_wav_audio(chunks)
+    return MiniMaxAudioResult(
+        audio_bytes=audio_bytes,
+        duration_seconds=duration_seconds,
+        audio_format="wav",
+        audio_size=len(audio_bytes),
+        trace_id=",".join(trace_ids),
+        usage_characters=total_usage,
+        voice_id="multi_speaker",
+        speaker_voices=speaker_voices,
+        line_count=len(turns),
     )
 
 
@@ -471,6 +541,15 @@ def find_lesson_audio_reference(lesson_slug: str) -> LessonAudioReference:
 
 
 def listening_script_to_tts_text(path: Path) -> str:
+    turns = listening_script_to_dialogue_turns(path)
+    if turns:
+        text = "\n".join(turn.text for turn in turns).strip()
+        if len(text) < 8:
+            raise AudioGenerationError("listening_script_empty")
+        if len(text) >= 10000:
+            raise AudioGenerationError("listening_script_too_long_for_sync_tts")
+        return text
+
     raw_text = path.read_text(encoding="utf-8")
     dialogue_text = raw_text.split("## Audio Direction", 1)[0]
     lines = []
@@ -478,7 +557,7 @@ def listening_script_to_tts_text(path: Path) -> str:
         line = raw_line.strip()
         if not line or line.startswith("#"):
             continue
-        line = re.sub(r"^\*{0,2}([^:*]+):\*{0,2}\s*", r"\1: ", line)
+        line = re.sub(r"^\*{0,2}([^:*]+):\*{0,2}\s*", "", line)
         line = line.replace("**", "").replace("*", "").replace("  ", " ").strip()
         if line:
             lines.append(line)
@@ -489,6 +568,147 @@ def listening_script_to_tts_text(path: Path) -> str:
     if len(text) >= 10000:
         raise AudioGenerationError("listening_script_too_long_for_sync_tts")
     return text
+
+
+def listening_script_to_dialogue_turns(path: Path) -> list[DialogueTurn]:
+    raw_text = path.read_text(encoding="utf-8")
+    dialogue_text = raw_text.split("## Audio Direction", 1)[0]
+    turns: list[DialogueTurn] = []
+
+    for raw_line in dialogue_text.splitlines():
+        line = raw_line.strip()
+        if not line or line.startswith("#"):
+            continue
+
+        match = re.match(r"^\*{0,2}([^:*]{1,80}):\*{0,2}\s*(.+)$", line)
+        if not match:
+            continue
+
+        speaker = clean_speaker_name(match.group(1))
+        text = clean_dialogue_text(match.group(2))
+        if speaker and text:
+            turns.append(DialogueTurn(speaker=speaker, text=text))
+
+    total_text = "\n".join(turn.text for turn in turns).strip()
+    if turns and len(total_text) >= 10000:
+        raise AudioGenerationError("listening_script_too_long_for_sync_tts")
+    return turns
+
+
+def clean_speaker_name(value: str) -> str:
+    return value.replace("*", "").strip()
+
+
+def clean_dialogue_text(value: str) -> str:
+    return value.replace("**", "").replace("*", "").replace("  ", " ").strip()
+
+
+def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str) -> dict[str, str]:
+    female_voices = ["English_CalmWoman", "English_Upbeat_Woman", "English_expressive_narrator"]
+    male_voices = ["English_Trustworth_Man", "English_magnetic_voiced_man", "English_FriendlyPerson"]
+    speaker_voices: dict[str, str] = {}
+    gender_counts = {"female": 0, "male": 0}
+
+    for turn in turns:
+        if turn.speaker in speaker_voices:
+            continue
+
+        gender = infer_speaker_gender(turn.speaker)
+        if gender == "unknown":
+            gender = "female" if len(speaker_voices) % 2 == 0 else "male"
+
+        voice_pool = female_voices if gender == "female" else male_voices
+        index = gender_counts[gender] % len(voice_pool)
+        speaker_voices[turn.speaker] = voice_pool[index] or fallback_voice_id
+        gender_counts[gender] += 1
+
+    return speaker_voices
+
+
+def infer_speaker_gender(speaker: str) -> str:
+    normalized = re.sub(r"[^a-z]", "", speaker.lower())
+    female_names = {
+        "alya",
+        "sara",
+        "mina",
+        "anna",
+        "emma",
+        "lisa",
+        "maria",
+        "mary",
+        "siti",
+        "nina",
+        "maya",
+        "rani",
+    }
+    male_names = {
+        "ben",
+        "john",
+        "david",
+        "michael",
+        "tom",
+        "ali",
+        "fikri",
+        "ahmad",
+        "budi",
+        "umar",
+        "yusuf",
+    }
+    if normalized in female_names:
+        return "female"
+    if normalized in male_names:
+        return "male"
+    return "unknown"
+
+
+def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -> tuple[bytes, float]:
+    if not chunks:
+        raise AudioGenerationError("dialogue_audio_empty")
+
+    wav_params = None
+    frames: list[bytes] = []
+    total_frames = 0
+
+    for chunk in chunks:
+        with wave.open(io.BytesIO(chunk), "rb") as reader:
+            current_params = reader.getparams()
+            comparable_params = (
+                current_params.nchannels,
+                current_params.sampwidth,
+                current_params.framerate,
+                current_params.comptype,
+                current_params.compname,
+            )
+            if wav_params is None:
+                wav_params = comparable_params
+            elif comparable_params != wav_params:
+                raise AudioGenerationError("dialogue_audio_wav_params_mismatch")
+
+            frame_bytes = reader.readframes(current_params.nframes)
+            frames.append(frame_bytes)
+            total_frames += current_params.nframes
+
+    if wav_params is None:
+        raise AudioGenerationError("dialogue_audio_empty")
+
+    nchannels, sampwidth, framerate, comptype, compname = wav_params
+    pause_frames = max(0, int(framerate * pause_seconds))
+    pause_bytes = b"\x00" * pause_frames * nchannels * sampwidth
+    output = io.BytesIO()
+
+    with wave.open(output, "wb") as writer:
+        writer.setnchannels(nchannels)
+        writer.setsampwidth(sampwidth)
+        writer.setframerate(framerate)
+        writer.setcomptype(comptype, compname)
+        for index, frame_bytes in enumerate(frames):
+            writer.writeframes(frame_bytes)
+            if index < len(frames) - 1 and pause_bytes:
+                writer.writeframes(pause_bytes)
+                total_frames += pause_frames
+
+    duration_seconds = round(total_frames / framerate, 2)
+    return output.getvalue(), max(duration_seconds, 0.01)
 
 
 def upload_audio_to_s3(*, audio_bytes: bytes, object_key: str, content_type: str) -> str:
@@ -553,6 +773,8 @@ def update_audio_manifest(
     audio_format: str,
     model: str,
     voice_id: str,
+    speaker_voices: dict[str, str],
+    line_count: int,
     trace_id: str,
     generated_by: str,
     generated_at: datetime,
@@ -571,6 +793,8 @@ def update_audio_manifest(
         "provider": "minimax",
         "model": model,
         "voice_id": voice_id,
+        "speaker_voices": speaker_voices,
+        "line_count": line_count,
         "audio_format": audio_format,
         "storage_key": object_key,
         "trace_id": trace_id,

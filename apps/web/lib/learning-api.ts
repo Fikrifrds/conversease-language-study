@@ -44,6 +44,8 @@ export type LearningLessonAudioAsset = {
   provider: string;
   model: string;
   voiceId: string;
+  speakerVoices: Record<string, string>;
+  lineCount: number;
   audioFormat: string;
   storageKey: string;
   generatedAt: string;
@@ -163,6 +165,8 @@ type ApiLearningLessonAudioAsset = {
   provider: string;
   model: string;
   voice_id: string;
+  speaker_voices: Record<string, string>;
+  line_count: number;
   audio_format: string;
   storage_key: string;
   generated_at: string;
@@ -312,6 +316,8 @@ function mapLessonAudioAsset(asset: ApiLearningLessonAudioAsset): LearningLesson
     provider: asset.provider,
     model: asset.model,
     voiceId: asset.voice_id,
+    speakerVoices: asset.speaker_voices ?? {},
+    lineCount: asset.line_count ?? 0,
     audioFormat: asset.audio_format,
     storageKey: asset.storage_key,
     generatedAt: asset.generated_at,

@@ -487,6 +487,8 @@ def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
         "provider": str(dialogue_asset.get("provider") or data.get("provider") or ""),
         "model": str(dialogue_asset.get("model") or ""),
         "voice_id": str(dialogue_asset.get("voice_id") or ""),
+        "speaker_voices": dialogue_asset.get("speaker_voices") or {},
+        "line_count": int(dialogue_asset.get("line_count") or 0),
         "audio_format": str(dialogue_asset.get("audio_format") or ""),
         "storage_key": storage_key,
         "generated_at": str(dialogue_asset.get("generated_at") or ""),

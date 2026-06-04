@@ -62,6 +62,8 @@ export type AdminAudioAsset = {
   provider: string;
   model: string;
   voiceId: string;
+  speakerVoices: Record<string, string>;
+  lineCount: number;
   audioFormat: string;
   storageKey: string;
   generatedAt: string;
@@ -157,6 +159,8 @@ export type AdminGeneratedAudio = {
   voiceId: string;
   traceId: string;
   usageCharacters: number;
+  speakerVoices: Record<string, string>;
+  lineCount: number;
 };
 
 export type AdminVoicePreviewAudio = {
@@ -266,6 +270,8 @@ type ApiAdminAudioAsset = {
   provider: string;
   model: string;
   voice_id: string;
+  speaker_voices: Record<string, string>;
+  line_count: number;
   audio_format: string;
   storage_key: string;
   generated_at: string;
@@ -361,6 +367,8 @@ type ApiAdminGeneratedAudio = {
   voice_id: string;
   trace_id: string;
   usage_characters: number;
+  speaker_voices?: Record<string, string>;
+  line_count?: number;
 };
 
 type ApiAdminVoicePreviewAudio = {
@@ -500,6 +508,8 @@ function mapAudioAsset(asset: ApiAdminAudioAsset): AdminAudioAsset {
     provider: asset.provider,
     model: asset.model,
     voiceId: asset.voice_id,
+    speakerVoices: asset.speaker_voices ?? {},
+    lineCount: asset.line_count ?? 0,
     audioFormat: asset.audio_format,
     storageKey: asset.storage_key,
     generatedAt: asset.generated_at,
@@ -569,7 +579,9 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
     model: audio.model,
     voiceId: audio.voice_id,
     traceId: audio.trace_id,
-    usageCharacters: audio.usage_characters
+    usageCharacters: audio.usage_characters,
+    speakerVoices: audio.speaker_voices ?? {},
+    lineCount: audio.line_count ?? 0
   };
 }
 
