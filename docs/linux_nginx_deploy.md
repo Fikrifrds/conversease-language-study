@@ -79,8 +79,15 @@ Build web:
 ```bash
 cd /var/www/conversease/app
 npm install
+set -a
+. ./.env.production
+set +a
 npm run build --workspace apps/web
 ```
+
+`NEXT_PUBLIC_API_BASE_URL` dibaca saat build Next.js. Pastikan `.env.production`
+di-load sebelum `npm run build`, agar bundle browser memakai
+`https://api.conversease.com/api`.
 
 Systemd API:
 
@@ -164,6 +171,26 @@ PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_smoke.py \
   --api-base-url "$API_BASE_URL/api" \
   --web-base-url "$PUBLIC_APP_URL" \
   --admin-api-key "$PAYMENT_ADMIN_API_KEY"
+```
+
+Update code di server systemd:
+
+```bash
+cd /var/www/conversease/app
+git pull
+
+cd apps/api
+. .venv/bin/activate
+pip install -e ".[dev]"
+
+cd /var/www/conversease/app
+set -a
+. ./.env.production
+set +a
+apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
+npm run build --workspace apps/web
+
+sudo systemctl restart conversease-api conversease-web
 ```
 
 ## Ringkasan Keputusan
