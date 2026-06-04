@@ -4,16 +4,17 @@ import { useEffect, useMemo, useState } from "react";
 import {
   AlertTriangle,
   BookOpen,
+  ChevronDown,
   CheckCircle2,
   Clock3,
   ExternalLink,
   FileText,
   Headphones,
   ListChecks,
-  PlayCircle,
   RefreshCcw,
   RotateCcw,
   Save,
+  Search,
   ShieldCheck,
   Sparkles,
   Volume2,
@@ -29,10 +30,10 @@ import {
   getAdminCmsSummary,
   getAdminEmailTemplate,
   getAdminVoicePreviews,
-  previewAdminVoiceAudio,
   rollbackAdminCmsRevision,
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
+  type AdminAudioVoice,
   type AdminContentReadiness,
   type AdminContentReadinessLesson,
   type AdminContentReadinessOverview,
@@ -62,14 +63,12 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [audioModel, setAudioModel] = useState("");
   const [audioVoiceId, setAudioVoiceId] = useState("");
   const [audioSpeed, setAudioSpeed] = useState(1);
-  const [voicePreview, setVoicePreview] = useState<AdminVoicePreviewAudio | null>(null);
   const [voicePreviewsByVoiceId, setVoicePreviewsByVoiceId] = useState<Record<string, AdminVoicePreviewAudio>>({});
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
-  const [isPreviewingVoice, setIsPreviewingVoice] = useState(false);
   const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
 
   useEffect(() => {
@@ -100,10 +99,6 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   useEffect(() => {
     window.localStorage.setItem(audioSpeedStorageKey, String(audioSpeed));
   }, [audioSpeed]);
-
-  useEffect(() => {
-    setVoicePreview(null);
-  }, [audioModel, audioVoiceId, audioSpeed]);
 
   useEffect(() => {
     if (!audioModel) {
@@ -196,37 +191,6 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       setError(audioGenerationErrorMessage(caughtError));
     } finally {
       setGeneratingLessonSlug("");
-    }
-  }
-
-  async function previewVoiceAudio() {
-    if (!audioModel || !audioVoiceId) {
-      setError("Pilih model dan voice sebelum preview suara.");
-      return;
-    }
-
-    setIsPreviewingVoice(true);
-    setMessage("");
-    setError("");
-
-    try {
-      const preview = await previewAdminVoiceAudio({
-        generatedBy: adminName,
-        model: audioModel,
-        voiceId: audioVoiceId,
-        speed: audioSpeed
-      });
-      setVoicePreview(preview);
-      setVoicePreviewsByVoiceId((current) => ({ ...current, [preview.voiceId]: preview }));
-      setMessage(
-        `Preview voice ${preview.voiceId} ${
-          preview.cached ? "siap dari cache" : "berhasil dibuat"
-        } (${formatDuration(preview.durationSeconds)}).`
-      );
-    } catch (caughtError) {
-      setError(audioGenerationErrorMessage(caughtError));
-    } finally {
-      setIsPreviewingVoice(false);
     }
   }
 
@@ -371,15 +335,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             audioModel={audioModel}
             audioVoiceId={audioVoiceId}
             audioSpeed={audioSpeed}
-            voicePreview={voicePreview ?? voicePreviewsByVoiceId[audioVoiceId] ?? null}
+            voicePreview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
+            voicePreviewsByVoiceId={voicePreviewsByVoiceId}
             generatingLessonSlug={generatingLessonSlug}
-            isPreviewingVoice={isPreviewingVoice}
             isLoadingVoicePreviews={isLoadingVoicePreviews}
             onAudioModelChange={setAudioModel}
             onAudioVoiceChange={setAudioVoiceId}
             onAudioSpeedChange={setAudioSpeed}
             onGenerateAudio={generateLessonAudio}
-            onPreviewVoice={previewVoiceAudio}
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
@@ -481,14 +444,13 @@ function ReadinessPanel({
   audioVoiceId,
   audioSpeed,
   voicePreview,
+  voicePreviewsByVoiceId,
   generatingLessonSlug,
-  isPreviewingVoice,
   isLoadingVoicePreviews,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
-  onGenerateAudio,
-  onPreviewVoice
+  onGenerateAudio
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
@@ -497,14 +459,13 @@ function ReadinessPanel({
   audioVoiceId: string;
   audioSpeed: number;
   voicePreview: AdminVoicePreviewAudio | null;
+  voicePreviewsByVoiceId: Record<string, AdminVoicePreviewAudio>;
   generatingLessonSlug: string;
-  isPreviewingVoice: boolean;
   isLoadingVoicePreviews: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
   onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
-  onPreviewVoice: () => void;
 }) {
   if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
@@ -527,12 +488,11 @@ function ReadinessPanel({
         voiceId={audioVoiceId}
         speed={audioSpeed}
         preview={voicePreview}
-        isPreviewing={isPreviewingVoice}
+        voicePreviewsByVoiceId={voicePreviewsByVoiceId}
         isLoadingPreviewCache={isLoadingVoicePreviews}
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
-        onPreview={onPreviewVoice}
       />
 
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
@@ -565,24 +525,22 @@ function AudioSettingsPanel({
   voiceId,
   speed,
   preview,
-  isPreviewing,
+  voicePreviewsByVoiceId,
   isLoadingPreviewCache,
   onModelChange,
   onVoiceChange,
-  onSpeedChange,
-  onPreview
+  onSpeedChange
 }: {
   settings: AdminAudioSettings | null;
   model: string;
   voiceId: string;
   speed: number;
   preview: AdminVoicePreviewAudio | null;
-  isPreviewing: boolean;
+  voicePreviewsByVoiceId: Record<string, AdminVoicePreviewAudio>;
   isLoadingPreviewCache: boolean;
   onModelChange: (value: string) => void;
   onVoiceChange: (value: string) => void;
   onSpeedChange: (value: number) => void;
-  onPreview: () => void;
 }) {
   const configured = Boolean(settings?.minimaxConfigured && settings.s3Configured);
   const voiceOptions = settings?.voices ?? [];
@@ -618,7 +576,7 @@ function AudioSettingsPanel({
         </div>
       </div>
 
-      <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_1.4fr_140px]">
+      <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_140px]">
         <label className="text-sm font-medium text-ink/70">
           Model
           <select
@@ -631,23 +589,6 @@ function AudioSettingsPanel({
             {modelOptions.map((modelOption) => (
               <option key={modelOption} value={modelOption}>
                 {modelOption}
-              </option>
-            ))}
-          </select>
-        </label>
-
-        <label className="text-sm font-medium text-ink/70">
-          Voice
-          <select
-            value={voiceId}
-            onChange={(event) => onVoiceChange(event.target.value)}
-            disabled={!settings}
-            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            {!voiceOptions.length ? <option value="">Loading</option> : null}
-            {voiceOptions.map((voice) => (
-              <option key={voice.voiceId} value={voice.voiceId}>
-                {voice.voiceName} / {voice.voiceId}
               </option>
             ))}
           </select>
@@ -667,37 +608,45 @@ function AudioSettingsPanel({
         </label>
       </div>
 
-      <div className="mt-3 grid gap-3 lg:grid-cols-[minmax(0,1fr)_180px]">
-        <div className="rounded-lg bg-white p-3 text-sm text-ink/65">
-          <p className="font-semibold text-ink">
-            {selectedVoice ? selectedVoice.voiceName : "Voice preview"}
-          </p>
-          <p className="mt-1 text-xs text-ink/50">
-            {selectedVoice
-              ? `${selectedVoice.voiceId}${selectedVoice.description ? ` / ${selectedVoice.description}` : ""}`
-              : "Pilih voice untuk mendengar contoh suara."}
-          </p>
-          {preview?.audioUrl ? (
-            <div className="mt-3">
-              <audio controls preload="metadata" src={preview.playbackUrl || preview.audioUrl} className="h-10 w-full" />
-              <p className="mt-2 text-xs text-ink/45">
-                {preview.cached ? "Cached preview" : "Fresh preview"} / {preview.model} / {preview.voiceId} /{" "}
-                {formatDuration(preview.durationSeconds)}
-              </p>
-            </div>
-          ) : isLoadingPreviewCache ? (
-            <p className="mt-3 text-xs font-semibold text-ink/45">Loading cached preview...</p>
-          ) : null}
+      <div className="mt-3">
+        <VoicePicker
+          voices={voiceOptions}
+          selectedVoiceId={voiceId}
+          previewByVoiceId={voicePreviewsByVoiceId}
+          disabled={!settings}
+          onChange={onVoiceChange}
+        />
+      </div>
+
+      <div className="mt-3 rounded-lg bg-white p-4 text-sm text-ink/65">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="font-semibold text-ink">
+              {selectedVoice ? selectedVoice.voiceName : "Voice preview"}
+            </p>
+            <p className="mt-1 max-w-3xl text-xs leading-5 text-ink/50">
+              {selectedVoice
+                ? `${selectedVoice.voiceId}${selectedVoice.description ? ` / ${selectedVoice.description}` : ""}`
+                : "Pilih voice untuk mendengar contoh suara."}
+            </p>
+          </div>
+          {selectedVoice ? <VoiceGenderPill gender={selectedVoice.gender} /> : null}
         </div>
-        <button
-          type="button"
-          onClick={onPreview}
-          disabled={!configured || !model || !voiceId || isPreviewing || isLoadingPreviewCache}
-          className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60 lg:mt-auto"
-        >
-          <PlayCircle className="h-4 w-4" aria-hidden="true" />
-          {isPreviewing ? "Preparing" : isLoadingPreviewCache ? "Loading" : "Preview Voice"}
-        </button>
+
+        {preview?.audioUrl ? (
+          <div className="mt-3">
+            <audio controls preload="metadata" src={preview.playbackUrl || preview.audioUrl} className="h-10 w-full" />
+            <p className="mt-2 text-xs text-ink/45">
+              Cached preview / {preview.model} / {preview.voiceId} / {formatDuration(preview.durationSeconds)}
+            </p>
+          </div>
+        ) : isLoadingPreviewCache ? (
+          <p className="mt-3 text-xs font-semibold text-ink/45">Loading cached preview...</p>
+        ) : selectedVoice ? (
+          <p className="mt-3 rounded-lg bg-mint px-3 py-2 text-xs font-semibold text-ink/55">
+            Preview cache belum tersedia untuk voice ini.
+          </p>
+        ) : null}
       </div>
 
       {!configured ? (
@@ -708,6 +657,168 @@ function AudioSettingsPanel({
         </p>
       ) : null}
     </div>
+  );
+}
+
+type VoiceGenderFilter = "all" | "female" | "male";
+
+const voiceGenderFilters: Array<{ key: VoiceGenderFilter; label: string }> = [
+  { key: "all", label: "All" },
+  { key: "female", label: "Female" },
+  { key: "male", label: "Male" }
+];
+
+function VoicePicker({
+  voices,
+  selectedVoiceId,
+  previewByVoiceId,
+  disabled,
+  onChange
+}: {
+  voices: AdminAudioVoice[];
+  selectedVoiceId: string;
+  previewByVoiceId: Record<string, AdminVoicePreviewAudio>;
+  disabled: boolean;
+  onChange: (value: string) => void;
+}) {
+  const [isOpen, setIsOpen] = useState(false);
+  const [genderFilter, setGenderFilter] = useState<VoiceGenderFilter>("all");
+  const [query, setQuery] = useState("");
+  const selectedVoice = voices.find((voice) => voice.voiceId === selectedVoiceId) ?? null;
+  const filteredVoices = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    return voices.filter((voice) => {
+      const matchesGender = genderFilter === "all" || voice.gender === genderFilter;
+      const searchable = `${voice.voiceName} ${voice.voiceId} ${voice.description}`.toLowerCase();
+      return matchesGender && (!normalizedQuery || searchable.includes(normalizedQuery));
+    });
+  }, [genderFilter, query, voices]);
+
+  return (
+    <div className="relative">
+      <p className="mb-2 text-sm font-medium text-ink/70">Voice</p>
+      <button
+        type="button"
+        onClick={() => setIsOpen((current) => !current)}
+        disabled={disabled}
+        aria-haspopup="listbox"
+        aria-expanded={isOpen}
+        className="focus-ring flex min-h-[76px] w-full items-center justify-between gap-4 rounded-lg border border-ink/10 bg-white px-4 py-3 text-left shadow-sm transition hover:border-leaf/40 disabled:cursor-not-allowed disabled:opacity-60"
+      >
+        <span className="min-w-0">
+          <span className="flex flex-wrap items-center gap-2">
+            <span className="truncate text-base font-semibold text-ink">
+              {selectedVoice ? selectedVoice.voiceName : "Pilih voice"}
+            </span>
+            {selectedVoice ? <VoiceGenderPill gender={selectedVoice.gender} /> : null}
+            {selectedVoice && previewByVoiceId[selectedVoice.voiceId] ? (
+              <span className="inline-flex h-7 items-center rounded-lg bg-mint px-2 text-xs font-semibold text-ink/65">
+                Cached
+              </span>
+            ) : null}
+          </span>
+          <span className="mt-1 block truncate text-xs text-ink/50">
+            {selectedVoice ? selectedVoice.voiceId : "Belum ada voice terpilih."}
+          </span>
+        </span>
+        <ChevronDown
+          className={`h-5 w-5 shrink-0 text-ink/45 transition ${isOpen ? "rotate-180" : ""}`}
+          aria-hidden="true"
+        />
+      </button>
+
+      {isOpen ? (
+        <div className="absolute left-0 right-0 z-30 mt-2 rounded-lg border border-ink/10 bg-white p-3 shadow-xl">
+          <div className="grid gap-3 md:grid-cols-[1fr_auto]">
+            <label className="relative block">
+              <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink/35" />
+              <input
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                className="focus-ring h-10 w-full rounded-lg border border-ink/10 bg-paper pl-9 pr-3 text-sm text-ink"
+                placeholder="Search voice"
+              />
+            </label>
+            <div className="flex rounded-lg bg-paper p-1">
+              {voiceGenderFilters.map((filter) => (
+                <button
+                  key={filter.key}
+                  type="button"
+                  onClick={() => setGenderFilter(filter.key)}
+                  className={`focus-ring h-8 rounded-md px-3 text-xs font-semibold ${
+                    genderFilter === filter.key ? "bg-ink text-white" : "text-ink/55 hover:bg-white"
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div role="listbox" className="mt-3 grid max-h-80 gap-2 overflow-y-auto pr-1">
+            {filteredVoices.length ? (
+              filteredVoices.map((voice) => {
+                const isSelected = voice.voiceId === selectedVoiceId;
+                const hasPreview = Boolean(previewByVoiceId[voice.voiceId]);
+                return (
+                  <button
+                    key={voice.voiceId}
+                    type="button"
+                    role="option"
+                    aria-selected={isSelected}
+                    onClick={() => {
+                      onChange(voice.voiceId);
+                      setIsOpen(false);
+                    }}
+                    className={`focus-ring grid gap-2 rounded-lg border px-3 py-3 text-left transition ${
+                      isSelected
+                        ? "border-leaf bg-mint"
+                        : "border-ink/10 bg-white hover:border-leaf/35 hover:bg-paper"
+                    }`}
+                  >
+                    <span className="flex items-start justify-between gap-3">
+                      <span className="min-w-0">
+                        <span className="block truncate text-sm font-semibold text-ink">{voice.voiceName}</span>
+                        <span className="mt-1 block truncate text-xs text-ink/45">{voice.voiceId}</span>
+                      </span>
+                      <span className="flex shrink-0 items-center gap-2">
+                        <VoiceGenderPill gender={voice.gender} />
+                        {hasPreview ? (
+                          <span className="inline-flex h-7 items-center rounded-lg bg-white px-2 text-xs font-semibold text-ink/55">
+                            Audio
+                          </span>
+                        ) : null}
+                        {isSelected ? <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" /> : null}
+                      </span>
+                    </span>
+                    {voice.description ? (
+                      <span className="line-clamp-2 text-xs leading-5 text-ink/50">{voice.description}</span>
+                    ) : null}
+                  </button>
+                );
+              })
+            ) : (
+              <div className="rounded-lg bg-paper px-3 py-4 text-sm text-ink/55">Voice tidak ditemukan.</div>
+            )}
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function VoiceGenderPill({ gender }: { gender: AdminAudioVoice["gender"] }) {
+  const label = gender === "female" ? "Female" : gender === "male" ? "Male" : "Neutral";
+  const tone =
+    gender === "female"
+      ? "bg-[#fde7df] text-[#9a3f1b]"
+      : gender === "male"
+        ? "bg-[#e7f0ed] text-[#315f55]"
+        : "bg-paper text-ink/55";
+  return (
+    <span className={`inline-flex h-7 items-center rounded-lg px-2 text-xs font-semibold ${tone}`}>
+      {label}
+    </span>
   );
 }
 

@@ -33,36 +33,42 @@ FALLBACK_MINIMAX_VOICES = (
         "voice_id": "English_expressive_narrator",
         "voice_name": "Expressive Narrator",
         "category": "system",
+        "gender": "neutral",
         "description": "Clear narrator voice for lesson listening scripts.",
     },
     {
         "voice_id": "English_Trustworth_Man",
         "voice_name": "Trustworthy Man",
         "category": "system",
+        "gender": "male",
         "description": "Steady male voice for instructional dialogue.",
     },
     {
         "voice_id": "English_CalmWoman",
         "voice_name": "Calm Woman",
         "category": "system",
+        "gender": "female",
         "description": "Calm female voice for beginner listening practice.",
     },
     {
         "voice_id": "English_magnetic_voiced_man",
         "voice_name": "Magnetic-voiced Male",
         "category": "system",
+        "gender": "male",
         "description": "Confident male voice with good presence.",
     },
     {
         "voice_id": "English_Upbeat_Woman",
         "voice_name": "Upbeat Woman",
         "category": "system",
+        "gender": "female",
         "description": "Friendly female voice for light conversation.",
     },
     {
         "voice_id": "English_FriendlyPerson",
         "voice_name": "Friendly Guy",
         "category": "system",
+        "gender": "male",
         "description": "Warm, casual voice for social dialogue.",
     },
 )
@@ -164,6 +170,12 @@ def flatten_minimax_voices(payload: dict[str, Any]) -> list[dict[str, Any]]:
                     "voice_id": voice_id,
                     "voice_name": str(voice.get("voice_name") or readable_voice_name(voice_id)),
                     "category": category,
+                    "gender": infer_voice_gender(
+                        voice_id=voice_id,
+                        voice_name=str(voice.get("voice_name") or ""),
+                        description=description_text,
+                        raw_gender=voice.get("gender") or voice.get("voice_gender") or voice.get("sex"),
+                    ),
                     "description": description_text,
                 }
             )
@@ -198,6 +210,53 @@ def readable_voice_name(voice_id: str) -> str:
     if "_" in name:
         name = name.split("_", 1)[1]
     return name.replace("_", " ").replace("-", " ").strip().title() or voice_id
+
+
+def infer_voice_gender(
+    *,
+    voice_id: str,
+    voice_name: str = "",
+    description: str = "",
+    raw_gender: Any = None,
+) -> str:
+    raw_value = str(raw_gender or "").strip().lower()
+    if raw_value in {"male", "man", "masculine"}:
+        return "male"
+    if raw_value in {"female", "woman", "feminine"}:
+        return "female"
+    if raw_value in {"neutral", "nonbinary", "unknown"}:
+        return "neutral" if raw_value == "neutral" else "unknown"
+
+    searchable = f"{voice_id} {voice_name} {description}".lower()
+    tokens = {token for token in re.split(r"[^a-z]+", searchable) if token}
+    female_tokens = {
+        "female",
+        "feminine",
+        "woman",
+        "women",
+        "girl",
+        "lady",
+        "madam",
+        "mother",
+        "wife",
+    }
+    male_tokens = {
+        "male",
+        "masculine",
+        "man",
+        "men",
+        "guy",
+        "boy",
+        "bloke",
+        "gentleman",
+        "father",
+        "husband",
+    }
+    if tokens & female_tokens:
+        return "female"
+    if tokens & male_tokens:
+        return "male"
+    return "unknown"
 
 
 async def generate_lesson_listening_audio(

@@ -132,6 +132,7 @@ export type AdminAudioVoice = {
   voiceId: string;
   voiceName: string;
   category: string;
+  gender: "female" | "male" | "neutral" | "unknown";
   description: string;
 };
 
@@ -347,6 +348,7 @@ type ApiAdminAudioVoice = {
   voice_id: string;
   voice_name: string;
   category: string;
+  gender?: string;
   description: string;
 };
 
@@ -563,8 +565,17 @@ function mapAudioVoice(voice: ApiAdminAudioVoice): AdminAudioVoice {
     voiceId: voice.voice_id,
     voiceName: voice.voice_name,
     category: voice.category,
+    gender: mapVoiceGender(voice.gender),
     description: voice.description
   };
+}
+
+function mapVoiceGender(value?: string): AdminAudioVoice["gender"] {
+  const normalized = (value ?? "").toLowerCase();
+  if (normalized === "female" || normalized === "male" || normalized === "neutral") {
+    return normalized;
+  }
+  return "unknown";
 }
 
 function mapAudioSettings(settings: ApiAdminAudioSettings): AdminAudioSettings {

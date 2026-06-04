@@ -7,6 +7,7 @@ from pathlib import Path
 from app.services.audio_generation import (
     assign_dialogue_voices,
     concatenate_wav_audio,
+    infer_voice_gender,
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
 )
@@ -43,6 +44,31 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Alya"], "English_CalmWoman")
         self.assertEqual(voices["Ben"], "English_Trustworth_Man")
         self.assertEqual(voices["John"], "English_magnetic_voiced_man")
+
+    def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
+        self.assertEqual(
+            infer_voice_gender(
+                voice_id="English_Upbeat_Woman",
+                voice_name="Upbeat Woman",
+                description="Bright female voice.",
+            ),
+            "female",
+        )
+        self.assertEqual(
+            infer_voice_gender(
+                voice_id="English_Deep_VoicedGentleman",
+                voice_name="Deep-voiced Gentleman",
+            ),
+            "male",
+        )
+        self.assertEqual(
+            infer_voice_gender(
+                voice_id="custom_voice",
+                voice_name="Custom Voice",
+                raw_gender="female",
+            ),
+            "female",
+        )
 
     def test_concatenate_wav_audio_combines_chunks_with_pause(self):
         first = wav_chunk(frame_count=320)
