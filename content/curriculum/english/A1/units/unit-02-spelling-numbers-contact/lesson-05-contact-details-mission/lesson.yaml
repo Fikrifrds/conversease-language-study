@@ -1,0 +1,24 @@
+lesson_key: lesson-05-contact-details-mission
+slug: contact-details-mission
+title: Contact Details Mission
+status: published
+estimated_minutes: 8
+conversation_situation: sharing_complete_contact_details
+conversation_goal: Share your name, spelling, phone number, and email address in one simple conversation.
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

@@ -1,0 +1,17 @@
+questions:
+  - key: repeat_request
+    type: multiple_choice
+    prompt: "Which sentence politely asks someone to repeat?"
+    options:
+      - "Can you repeat that, please?"
+      - "Where are you from?"
+      - "That's correct."
+    correct_answer: "Can you repeat that, please?"
+  - key: did_you_say
+    type: multiple_choice
+    prompt: "What is \"Did you say two two five five?\" used for?"
+    options:
+      - "Checking a detail"
+      - "Saying goodbye"
+      - "Giving your name"
+    correct_answer: "Checking a detail"

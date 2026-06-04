@@ -1,0 +1,19 @@
+prompts:
+  - key: ask_repeat
+    instruction_id: "Minta lawan bicara mengulang."
+    prompt_en: "My phone number is zero eight one three, two two five five."
+    expected_response_examples:
+      - "Sorry, can you repeat that, please?"
+      - "Can you repeat that, please?"
+  - key: check_detail
+    instruction_id: "Cek satu bagian informasi."
+    prompt_en: "Sure. Zero eight one three, two two five five."
+    expected_response_examples:
+      - "Did you say two two five five?"
+      - "Did you say zero eight one three?"
+  - key: show_understanding
+    instruction_id: "Tunjukkan bahwa kamu sudah mengerti."
+    prompt_en: "Yes, that's right."
+    expected_response_examples:
+      - "Got it. Thank you."
+      - "Thank you. Got it."

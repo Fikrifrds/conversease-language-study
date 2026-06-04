@@ -1,0 +1,14 @@
+lesson_key: lesson-02-giving-phone-numbers
+status: not_generated
+provider: minimax
+assets:
+  - key: dialogue_main
+    type: dialogue
+    script_file: listening_script.md
+    audio_url:
+    duration_seconds:
+  - key: phrases
+    type: phrase_pronunciation
+    source_file: useful_phrases.yaml
+    audio_url:
+    duration_seconds:

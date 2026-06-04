@@ -1,0 +1,17 @@
+questions:
+  - key: email_question
+    type: multiple_choice
+    prompt: "Which question asks for an email address?"
+    options:
+      - "What is your email address?"
+      - "What is your phone number?"
+      - "Where are you from?"
+    correct_answer: "What is your email address?"
+  - key: email_symbols
+    type: multiple_choice
+    prompt: "How do you say \".\" in an email address?"
+    options:
+      - "dot"
+      - "at"
+      - "dash"
+    correct_answer: "dot"

@@ -9,7 +9,11 @@ const scenarios = [
   { slug: "asking-someones-name", label: "Asking a Name", description: "Tanyakan nama orang dengan sopan." },
   { slug: "saying-where-you-are-from", label: "Where Are You From", description: "Jawab asalmu dan tanyakan balik." },
   { slug: "first-conversation-mission", label: "First Conversation", description: "Gabungkan semuanya dalam satu misi." },
-  { slug: "spelling-your-name", label: "Spelling Your Name", description: "Eja namamu huruf demi huruf." }
+  { slug: "spelling-your-name", label: "Spelling Your Name", description: "Eja namamu huruf demi huruf." },
+  { slug: "giving-phone-numbers", label: "Phone Numbers", description: "Sebutkan nomor dan cek ulang." },
+  { slug: "sharing-email-addresses", label: "Email Address", description: "Sebutkan email dengan at dan dot." },
+  { slug: "asking-for-repetition", label: "Ask to Repeat", description: "Minta pengulangan dengan sopan." },
+  { slug: "contact-details-mission", label: "Contact Mission", description: "Gabungkan nama, nomor, dan email." }
 ];
 
 export function ConversationCoachWorkspace() {

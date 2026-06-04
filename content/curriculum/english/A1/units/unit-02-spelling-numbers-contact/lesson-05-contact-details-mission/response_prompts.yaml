@@ -1,0 +1,25 @@
+prompts:
+  - key: share_name
+    instruction_id: "Sebutkan namamu."
+    prompt_en: "I need your contact details."
+    expected_response_examples:
+      - "Sure. My name is Dimas."
+      - "My name is Dimas."
+  - key: share_phone
+    instruction_id: "Sebutkan nomor telepon."
+    prompt_en: "What is your phone number?"
+    expected_response_examples:
+      - "It's zero eight one two, three four five six."
+      - "Zero eight one two, three four five six."
+  - key: share_email
+    instruction_id: "Sebutkan alamat email."
+    prompt_en: "And your email address?"
+    expected_response_examples:
+      - "It's dimas at example dot com."
+      - "Dimas at example dot com."
+  - key: confirm_all
+    instruction_id: "Konfirmasi semua informasi benar."
+    prompt_en: "Is everything correct?"
+    expected_response_examples:
+      - "Yes, everything is correct."
+      - "Yes, that's correct."

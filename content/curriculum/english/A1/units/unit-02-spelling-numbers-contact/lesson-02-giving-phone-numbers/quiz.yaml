@@ -1,0 +1,17 @@
+questions:
+  - key: ask_phone
+    type: multiple_choice
+    prompt: "Which question asks for a phone number?"
+    options:
+      - "What is your phone number?"
+      - "Where are you from?"
+      - "How do you spell it?"
+    correct_answer: "What is your phone number?"
+  - key: confirm_correct
+    type: multiple_choice
+    prompt: "What does \"Yes, that's correct\" mean?"
+    options:
+      - "Ya, itu benar"
+      - "Sampai nanti"
+      - "Saya tidak tahu"
+    correct_answer: "Ya, itu benar"

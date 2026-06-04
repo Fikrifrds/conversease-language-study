@@ -302,6 +302,178 @@ export const lessonCatalog = [
       { question: "What does That's right mean?", answer: "Betul." }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "giving-phone-numbers",
+    title: "Giving Phone Numbers",
+    unit: "Spelling, Numbers & Contact Details",
+    conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
+    setup: "Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.",
+    dialogue: [
+      { speaker: "Officer", text: "What is your phone number?" },
+      { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
+      { speaker: "Officer", text: "Let me check. Zero eight one two, three four five six, seven eight nine zero?" },
+      { speaker: "Dimas", text: "Yes, that's correct." },
+      { speaker: "Officer", text: "Thank you. We will send you a message." },
+      { speaker: "Dimas", text: "Thank you." }
+    ],
+    translation: [
+      "Berapa nomor teleponmu?",
+      "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
+      "Saya cek ya. Nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol?",
+      "Ya, itu benar.",
+      "Terima kasih. Kami akan mengirim pesan kepadamu.",
+      "Terima kasih."
+    ],
+    phrases: [
+      { phrase: "What is your phone number?", meaning: "Berapa nomor teleponmu?", usage: "Ask for a phone number in a clear, direct way." },
+      { phrase: "It's zero eight one two.", meaning: "Nomornya nol delapan satu dua.", usage: "Start giving a phone number." },
+      { phrase: "Let me check.", meaning: "Saya cek ya.", usage: "Introduce a quick confirmation before repeating information." },
+      { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm that the repeated information is right." },
+      { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask politely when you miss a number." }
+    ],
+    grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
+    prompts: [
+      "Say your phone number in small groups.",
+      "Confirm with: Yes, that's correct.",
+      "Ask for repetition with: Can you repeat that, please?"
+    ],
+    quiz: [
+      { question: "Which question asks for a phone number?", answer: "What is your phone number?" },
+      { question: "What does Yes, that's correct mean?", answer: "Ya, itu benar." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "sharing-email-addresses",
+    title: "Sharing Email Addresses",
+    unit: "Spelling, Numbers & Contact Details",
+    conversationGoal: "Share an email address slowly and spell the important parts.",
+    setup: "Kamu ingin menerima informasi kelas lewat email. Petugas meminta alamat emailmu. Sebutkan alamat email dengan pelan, lalu eja bagian yang penting.",
+    dialogue: [
+      { speaker: "Officer", text: "What is your email address?" },
+      { speaker: "Ben", text: "It's ben dot rama at example dot com." },
+      { speaker: "Officer", text: "Can you spell that, please?" },
+      { speaker: "Ben", text: "B-E-N dot R-A-M-A at example dot com." },
+      { speaker: "Officer", text: "Thank you. Is that correct?" },
+      { speaker: "Ben", text: "Yes, that's correct." }
+    ],
+    translation: [
+      "Apa alamat emailmu?",
+      "Alamatnya ben titik rama at example titik com.",
+      "Bisa dieja, tolong?",
+      "B-E-N titik R-A-M-A at example titik com.",
+      "Terima kasih. Apakah itu benar?",
+      "Ya, itu benar."
+    ],
+    phrases: [
+      { phrase: "What is your email address?", meaning: "Apa alamat emailmu?", usage: "Ask for someone's email address." },
+      { phrase: "It's ben dot rama at example dot com.", meaning: "Alamatnya ben titik rama at example titik com.", usage: "Say an email address slowly." },
+      { phrase: "Can you spell that, please?", meaning: "Bisa dieja, tolong?", usage: "Ask someone to spell the email address." },
+      { phrase: "Is that correct?", meaning: "Apakah itu benar?", usage: "Ask for confirmation after writing information." },
+      { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm the email address is right." }
+    ],
+    grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
+    prompts: [
+      "Say an email address using at and dot.",
+      "Spell the name part of an email.",
+      "Confirm with: Yes, that's correct."
+    ],
+    quiz: [
+      { question: "Which question asks for an email address?", answer: "What is your email address?" },
+      { question: "How do you say . in an email address?", answer: "dot" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-for-repetition",
+    title: "Asking for Repetition",
+    unit: "Spelling, Numbers & Contact Details",
+    conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
+    setup: "Kamu tidak mendengar informasi dengan jelas. Daripada menebak, kamu meminta orang lain mengulang dengan sopan dan mengecek bagian yang kamu dengar.",
+    dialogue: [
+      { speaker: "Alya", text: "My phone number is zero eight one three, two two five five, nine zero one." },
+      { speaker: "Ben", text: "Sorry, can you repeat that, please?" },
+      { speaker: "Alya", text: "Sure. Zero eight one three, two two five five, nine zero one." },
+      { speaker: "Ben", text: "Thank you. Did you say two two five five?" },
+      { speaker: "Alya", text: "Yes, that's right." },
+      { speaker: "Ben", text: "Got it. Thank you." }
+    ],
+    translation: [
+      "Nomor telepon saya nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
+      "Maaf, bisa diulang, tolong?",
+      "Tentu. Nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
+      "Terima kasih. Apakah kamu bilang dua dua lima lima?",
+      "Ya, betul.",
+      "Sudah saya mengerti. Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask politely when you do not hear clearly." },
+      { phrase: "Sure.", meaning: "Tentu.", usage: "Agree to repeat information." },
+      { phrase: "Did you say two two five five?", meaning: "Apakah kamu bilang dua dua lima lima?", usage: "Check a specific part of what you heard." },
+      { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm that the listener heard correctly." },
+      { phrase: "Got it.", meaning: "Sudah saya mengerti.", usage: "Show that you understand now." }
+    ],
+    grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
+    prompts: [
+      "Ask for repetition politely.",
+      "Check one detail with: Did you say ...?",
+      "Show understanding with: Got it. Thank you."
+    ],
+    quiz: [
+      { question: "Which sentence politely asks someone to repeat?", answer: "Can you repeat that, please?" },
+      { question: "What is Did you say ...? used for?", answer: "Checking a detail." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "contact-details-mission",
+    title: "Contact Details Mission",
+    unit: "Spelling, Numbers & Contact Details",
+    conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
+    setup: "Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.",
+    dialogue: [
+      { speaker: "Officer", text: "Hi. I need your contact details." },
+      { speaker: "Dimas", text: "Sure. My name is Dimas." },
+      { speaker: "Officer", text: "How do you spell your name?" },
+      { speaker: "Dimas", text: "D-I-M-A-S." },
+      { speaker: "Officer", text: "What is your phone number?" },
+      { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
+      { speaker: "Officer", text: "And your email address?" },
+      { speaker: "Dimas", text: "It's dimas at example dot com." },
+      { speaker: "Officer", text: "Thank you. Is everything correct?" },
+      { speaker: "Dimas", text: "Yes, everything is correct." }
+    ],
+    translation: [
+      "Hai. Saya perlu detail kontakmu.",
+      "Tentu. Nama saya Dimas.",
+      "Bagaimana kamu mengeja namamu?",
+      "D-I-M-A-S.",
+      "Berapa nomor teleponmu?",
+      "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
+      "Dan alamat emailmu?",
+      "Alamatnya dimas at example titik com.",
+      "Terima kasih. Apakah semuanya benar?",
+      "Ya, semuanya benar."
+    ],
+    phrases: [
+      { phrase: "I need your contact details.", meaning: "Saya perlu detail kontakmu.", usage: "Start a request for name, phone number, and email." },
+      { phrase: "How do you spell your name?", meaning: "Bagaimana kamu mengeja namamu?", usage: "Ask someone to spell their name." },
+      { phrase: "And your email address?", meaning: "Dan alamat emailmu?", usage: "Ask the next contact detail after another question." },
+      { phrase: "Is everything correct?", meaning: "Apakah semuanya benar?", usage: "Check all contact information at the end." },
+      { phrase: "Yes, everything is correct.", meaning: "Ya, semuanya benar.", usage: "Confirm all information is correct." }
+    ],
+    grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
+    prompts: [
+      "Share your name and spell it.",
+      "Give your phone number and email address.",
+      "Confirm with: Yes, everything is correct."
+    ],
+    quiz: [
+      { question: "Which phrase asks for all contact information?", answer: "I need your contact details." },
+      { question: "What does Is everything correct? mean?", answer: "Apakah semuanya benar?" }
+    ],
+    sections: lessonSections
   }
 ];
 

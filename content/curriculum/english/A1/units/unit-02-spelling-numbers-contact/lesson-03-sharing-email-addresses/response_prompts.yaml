@@ -1,0 +1,19 @@
+prompts:
+  - key: give_email
+    instruction_id: "Sebutkan alamat email sederhana."
+    prompt_en: "What is your email address?"
+    expected_response_examples:
+      - "It's ben dot rama at example dot com."
+      - "Ben dot rama at example dot com."
+  - key: spell_email_name
+    instruction_id: "Eja bagian nama email."
+    prompt_en: "Can you spell that, please?"
+    expected_response_examples:
+      - "B-E-N dot R-A-M-A."
+      - "It's B-E-N dot R-A-M-A."
+  - key: confirm_email
+    instruction_id: "Konfirmasi bahwa emailnya benar."
+    prompt_en: "Is that correct?"
+    expected_response_examples:
+      - "Yes, that's correct."
+      - "That's correct."

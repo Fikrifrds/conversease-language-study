@@ -1,0 +1,17 @@
+questions:
+  - key: contact_details
+    type: multiple_choice
+    prompt: "Which phrase asks for all contact information?"
+    options:
+      - "I need your contact details."
+      - "See you later."
+      - "Nice to meet you."
+    correct_answer: "I need your contact details."
+  - key: everything_correct
+    type: multiple_choice
+    prompt: "What does \"Is everything correct?\" mean?"
+    options:
+      - "Apakah semuanya benar?"
+      - "Siapa namamu?"
+      - "Dari mana kamu?"
+    correct_answer: "Apakah semuanya benar?"

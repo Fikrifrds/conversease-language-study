@@ -1,0 +1,19 @@
+prompts:
+  - key: give_phone_number
+    instruction_id: "Sebutkan nomor telepon sederhana."
+    prompt_en: "What is your phone number?"
+    expected_response_examples:
+      - "It's zero eight one two, three four five six."
+      - "Zero eight one two, three four five six."
+  - key: confirm_number
+    instruction_id: "Konfirmasi bahwa nomor yang dibaca sudah benar."
+    prompt_en: "Let me check. Zero eight one two, three four five six?"
+    expected_response_examples:
+      - "Yes, that's correct."
+      - "That's correct."
+  - key: ask_repeat_number
+    instruction_id: "Minta petugas mengulang nomor."
+    prompt_en: "My number is zero eight one two, three four five six."
+    expected_response_examples:
+      - "Can you repeat that, please?"
+      - "Sorry, can you repeat that, please?"

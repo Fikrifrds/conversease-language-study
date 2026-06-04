@@ -5,3 +5,7 @@ main_conversation_outcome: User can spell their name and share simple contact de
 status: published
 lessons:
   - lesson-01-spelling-your-name
+  - lesson-02-giving-phone-numbers
+  - lesson-03-sharing-email-addresses
+  - lesson-04-asking-for-repetition
+  - lesson-05-contact-details-mission

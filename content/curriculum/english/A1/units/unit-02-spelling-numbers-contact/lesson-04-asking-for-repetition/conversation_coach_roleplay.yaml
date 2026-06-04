@@ -1,0 +1,21 @@
+scenario_key: asking_for_repetition_contact_info
+mode: lesson_practice_coach
+level_code: A1
+opening_line: "My phone number is zero eight one three, two two five five, nine zero one."
+learner_goal: "Ask for repetition, check one detail, and respond when you understand."
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - "Can you repeat that, please?"
+  - "Did you say"
+  - "Yes, that's right"
+  - "Got it"
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

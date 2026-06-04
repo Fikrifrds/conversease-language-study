@@ -169,6 +169,98 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "That's right.",
       focus: "Confirming"
     }
+  ],
+  "giving-phone-numbers": [
+    {
+      coach: "What is your phone number?",
+      hint: "Sebutkan nomor telepon dalam kelompok kecil.",
+      sampleAnswer: "It's zero eight one two, three four five six.",
+      focus: "Giving a phone number"
+    },
+    {
+      coach: "Let me check. Zero eight one two, three four five six?",
+      hint: "Konfirmasi dengan: Yes, that's correct.",
+      sampleAnswer: "Yes, that's correct.",
+      focus: "Confirming a number"
+    },
+    {
+      coach: "My number is zero eight one three, two two five five.",
+      hint: "Minta diulang dengan sopan.",
+      sampleAnswer: "Can you repeat that, please?",
+      focus: "Asking for repetition"
+    }
+  ],
+  "sharing-email-addresses": [
+    {
+      coach: "What is your email address?",
+      hint: "Sebutkan email dengan at dan dot.",
+      sampleAnswer: "It's ben dot rama at example dot com.",
+      focus: "Giving an email address"
+    },
+    {
+      coach: "Can you spell that, please?",
+      hint: "Eja bagian nama email pelan-pelan.",
+      sampleAnswer: "B-E-N dot R-A-M-A.",
+      focus: "Spelling an email"
+    },
+    {
+      coach: "Is that correct?",
+      hint: "Konfirmasi dengan: Yes, that's correct.",
+      sampleAnswer: "Yes, that's correct.",
+      focus: "Confirming an email"
+    }
+  ],
+  "asking-for-repetition": [
+    {
+      coach: "My phone number is zero eight one three, two two five five.",
+      hint: "Minta lawan bicara mengulang.",
+      sampleAnswer: "Sorry, can you repeat that, please?",
+      focus: "Polite repetition"
+    },
+    {
+      coach: "Sure. Zero eight one three, two two five five.",
+      hint: "Cek satu detail dengan: Did you say ...?",
+      sampleAnswer: "Did you say two two five five?",
+      focus: "Checking a detail"
+    },
+    {
+      coach: "Yes, that's right.",
+      hint: "Tunjukkan bahwa kamu sudah paham.",
+      sampleAnswer: "Got it. Thank you.",
+      focus: "Showing understanding"
+    }
+  ],
+  "contact-details-mission": [
+    {
+      coach: "Hi. I need your contact details.",
+      hint: "Mulai dengan nama lengkapmu.",
+      sampleAnswer: "Sure. My name is Dimas.",
+      focus: "Sharing a name"
+    },
+    {
+      coach: "How do you spell your name?",
+      hint: "Eja nama huruf demi huruf.",
+      sampleAnswer: "D-I-M-A-S.",
+      focus: "Spelling a name"
+    },
+    {
+      coach: "What is your phone number?",
+      hint: "Sebutkan nomor telepon dalam kelompok kecil.",
+      sampleAnswer: "It's zero eight one two, three four five six.",
+      focus: "Sharing a phone number"
+    },
+    {
+      coach: "And your email address?",
+      hint: "Sebutkan email dengan at dan dot.",
+      sampleAnswer: "It's dimas at example dot com.",
+      focus: "Sharing an email"
+    },
+    {
+      coach: "Is everything correct?",
+      hint: "Konfirmasi semua informasi benar.",
+      sampleAnswer: "Yes, everything is correct.",
+      focus: "Confirming all details"
+    }
   ]
 };
 
@@ -176,6 +268,21 @@ const maxRecordingSeconds = 30;
 
 function clampScore(score: number) {
   return Math.max(55, Math.min(score, 95));
+}
+
+function matchesSamplePattern(answer: string, sampleAnswer: string) {
+  const stopwords = new Set(["the", "that", "this", "with", "your", "please", "thank", "you"]);
+  const answerTokens = new Set(answer.match(/[a-z0-9]+/g) ?? []);
+  const sampleTokens = (sampleAnswer.toLowerCase().match(/[a-z0-9]+/g) ?? []).filter(
+    (token) => token.length > 2 && !stopwords.has(token)
+  );
+
+  if (!sampleTokens.length) {
+    return false;
+  }
+
+  const matched = sampleTokens.filter((token) => answerTokens.has(token)).length;
+  return matched >= Math.min(2, sampleTokens.length);
 }
 
 function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTurn[]): CoachFeedback {
@@ -189,6 +296,7 @@ function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTur
   const enoughWords = text.split(/\s+/).filter(Boolean).length >= 5;
 
   const target = activeTurns[turnIndex] ?? activeTurns[0];
+  const matchedSamplePattern = matchesSamplePattern(normalized, target.sampleAnswer);
   let speaking = 64;
   let grammar = 66;
   let fluency = 64;
@@ -218,7 +326,14 @@ function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTur
     speaking += 5;
   }
 
+  if (matchedSamplePattern) {
+    speaking += 10;
+    grammar += 6;
+    fluency += 4;
+  }
+
   const matchedExpected =
+    matchedSamplePattern ||
     (turnIndex === 0 && (hasGreeting || hasThanks)) ||
     (turnIndex === 1 && hasName) ||
     (turnIndex === 2 && hasOrigin);

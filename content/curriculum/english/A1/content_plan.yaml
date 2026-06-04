@@ -43,19 +43,19 @@ units:
       - lesson_key: lesson-02-giving-phone-numbers
         slug: giving-phone-numbers
         title: Giving Phone Numbers
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-sharing-email-addresses
         slug: sharing-email-addresses
         title: Sharing Email Addresses
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-for-repetition
         slug: asking-for-repetition
         title: Asking for Repetition
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-contact-details-mission
         slug: contact-details-mission
         title: Contact Details Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-03-daily-routine-time
     title: Daily Routine & Time
