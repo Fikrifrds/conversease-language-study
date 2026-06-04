@@ -404,7 +404,7 @@ function TransferInstruction({
 }) {
   const accountNumber = orderMetadata(order, "bank_account_number");
   const bankName = orderMetadata(order, "bank_name", "Bank Jago");
-  const holder = orderMetadata(order, "bank_account_holder", "Fikri Firdaus");
+  const holder = orderMetadata(order, "bank_account_holder", "Conversease");
   const packageName = orderMetadata(order, "package_name", order.packageKey);
   const canConfirm = order.status === "pending";
 

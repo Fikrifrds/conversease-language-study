@@ -66,6 +66,10 @@ export function LessonProgressPanel({
   }
 
   const completed = progress?.status === "completed";
+  const completedSections = new Set(progress?.completedSections ?? []);
+  const totalSections = sections.length;
+  const doneCount = completed ? totalSections : completedSections.size;
+  const completionPercent = totalSections > 0 ? Math.round((doneCount / totalSections) * 100) : 0;
 
   return (
     <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
@@ -77,9 +81,34 @@ export function LessonProgressPanel({
         ) : (
           <CircleDot className="h-5 w-5 text-coral" aria-hidden="true" />
         )}
-        <h2 className="font-semibold">Lesson Progress</h2>
+        <h2 className="font-semibold">Progress Lesson</h2>
       </div>
-      <p className="mt-3 text-sm leading-6 text-ink/60">
+
+      <div className="mt-4 flex items-center justify-between text-sm">
+        <span className="font-medium text-ink/70">{doneCount}/{totalSections} bagian</span>
+        <span className="font-semibold">{completionPercent}%</span>
+      </div>
+      <div className="mt-2 h-2 overflow-hidden rounded-lg bg-ink/10">
+        <div className="h-full rounded-lg bg-leaf" style={{ width: `${completionPercent}%` }} />
+      </div>
+
+      <div className="mt-4 space-y-2">
+        {sections.map((section) => {
+          const sectionDone = completed || completedSections.has(section);
+          return (
+            <div key={section} className="flex items-center gap-2 text-sm">
+              {sectionDone ? (
+                <CheckCircle2 className="h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
+              ) : (
+                <CircleDot className="h-4 w-4 shrink-0 text-ink/30" aria-hidden="true" />
+              )}
+              <span className={sectionDone ? "text-ink" : "text-ink/55"}>{section}</span>
+            </div>
+          );
+        })}
+      </div>
+
+      <p className="mt-4 text-sm leading-6 text-ink/60">
         {completed
           ? "Lesson ini sudah tersimpan sebagai selesai."
           : "Progress lesson tersimpan otomatis saat halaman dibuka."}

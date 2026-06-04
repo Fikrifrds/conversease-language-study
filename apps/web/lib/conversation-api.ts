@@ -215,6 +215,60 @@ function recordedAudioFilename(contentType: string) {
   return "conversation-turn.webm";
 }
 
+export type PronunciationCheckResult = {
+  targetPhrase: string;
+  transcript: string;
+  matchRatio: number;
+  provider: string;
+  model: string;
+  confidence: number | null;
+};
+
+export async function checkPronunciation(
+  targetPhrase: string,
+  audio: Blob
+): Promise<PronunciationCheckResult> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Authentication required");
+  }
+
+  const formData = new FormData();
+  formData.append("audio", audio, recordedAudioFilename(audio.type));
+  formData.append("target_phrase", targetPhrase);
+
+  const response = await fetch(`${apiBaseUrl()}/pronunciation-checks`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`
+    },
+    body: formData
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new ApiRequestError(response.status, detail || `API request failed: ${response.status}`);
+  }
+
+  const payload = (await response.json()) as ApiResponse<{
+    target_phrase: string;
+    transcript: string;
+    match_ratio: number;
+    provider: string;
+    model: string;
+    confidence: number | null;
+  }>;
+
+  return {
+    targetPhrase: payload.data.target_phrase,
+    transcript: payload.data.transcript,
+    matchRatio: payload.data.match_ratio,
+    provider: payload.data.provider,
+    model: payload.data.model,
+    confidence: payload.data.confidence
+  };
+}
+
 export async function getLatestPractice(lessonSlug = defaultLessonSlug): Promise<ApiPracticeSummary | null> {
   const response = await requestJson<
     ApiResponse<null | {

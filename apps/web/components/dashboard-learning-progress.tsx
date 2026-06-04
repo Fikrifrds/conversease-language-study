@@ -53,6 +53,7 @@ export function DashboardLearningProgress() {
   const completedLessons = summary?.course.completedLessons ?? 0;
   const totalLessons = summary?.course.totalLessons ?? 1;
   const dailyTarget = summary?.onboarding?.dailyTargetMinutes;
+  const primaryGoal = summary?.onboarding?.primaryGoal;
 
   return (
     <div className="mt-8 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
@@ -61,6 +62,12 @@ export function DashboardLearningProgress() {
           <div>
             <p className="text-sm font-semibold text-coral">A1 Unit 1</p>
             <h2 className="mt-2 text-2xl font-semibold">{currentMission.title}</h2>
+            {primaryGoal ? (
+              <span className="mt-3 inline-flex items-center gap-1 rounded-lg bg-[#fff2dc] px-3 py-1 text-xs font-semibold text-ink/70">
+                <Target className="h-3 w-3 text-coral" aria-hidden="true" />
+                Tujuanmu: {primaryGoal}
+              </span>
+            ) : null}
             <p className="mt-3 max-w-2xl leading-7 text-ink/70">
               {currentMission.conversationGoal}
             </p>

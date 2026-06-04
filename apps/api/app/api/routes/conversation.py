@@ -1,6 +1,7 @@
+import re
 from typing import Optional
 
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
@@ -150,6 +151,42 @@ async def create_conversation_audio_turn(
     return {"data": turn_payload(session, turn)}
 
 
+@router.post("/pronunciation-checks")
+async def check_pronunciation(
+    audio: UploadFile = File(...),
+    target_phrase: str = Form(...),
+    current_user: User = Depends(get_current_user),
+) -> dict:
+    target = target_phrase.strip()
+    if not target:
+        raise HTTPException(status_code=422, detail="target_phrase_required")
+
+    if not allowed_recorded_audio_content_type(audio.content_type):
+        raise HTTPException(status_code=422, detail="unsupported_audio_content_type")
+
+    audio_bytes = await audio.read()
+    try:
+        transcription = await transcribe_recorded_audio(
+            audio_bytes=audio_bytes,
+            filename=audio.filename or "pronunciation.webm",
+            content_type=audio.content_type,
+        )
+    except SpeechToTextError as exc:
+        raise speech_to_text_http_error(exc) from exc
+
+    match_ratio = phrase_match_ratio(target, transcription.text)
+    return {
+        "data": {
+            "target_phrase": target,
+            "transcript": transcription.text,
+            "match_ratio": match_ratio,
+            "provider": transcription.transcription.provider,
+            "model": transcription.transcription.model,
+            "confidence": transcription.transcription.confidence,
+        }
+    }
+
+
 @router.get("/conversation-practice/latest")
 async def get_latest_conversation_practice(
     lesson_slug: str = "saying-hello-and-goodbye",
@@ -176,6 +213,29 @@ async def reset_latest_conversation_practice(
         lesson_slug=lesson_slug,
     )
     return {"data": {"reset": reset}}
+
+
+def phrase_match_ratio(target_phrase: str, transcript: str) -> float:
+    target_words = _normalize_words(target_phrase)
+    if not target_words:
+        return 0.0
+
+    heard_words = _normalize_words(transcript)
+    heard_counts: dict[str, int] = {}
+    for word in heard_words:
+        heard_counts[word] = heard_counts.get(word, 0) + 1
+
+    matched = 0
+    for word in target_words:
+        if heard_counts.get(word, 0) > 0:
+            matched += 1
+            heard_counts[word] -= 1
+
+    return round(matched / len(target_words), 2)
+
+
+def _normalize_words(value: str) -> list[str]:
+    return re.findall(r"[a-z0-9']+", value.lower())
 
 
 def allowed_recorded_audio_content_type(content_type: Optional[str]) -> bool:

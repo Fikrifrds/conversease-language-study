@@ -198,9 +198,18 @@ function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTur
     speaking += 5;
   }
 
+  const matchedExpected =
+    (turnIndex === 0 && (hasGreeting || hasThanks)) ||
+    (turnIndex === 1 && hasName) ||
+    (turnIndex === 2 && hasOrigin);
+
+  const explanation = matchedExpected
+    ? `Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: ${target.sampleAnswer}`
+    : `Jawabanmu belum memakai pola yang diharapkan untuk "${target.focus}". Coba ikuti contoh ini: ${target.sampleAnswer}`;
+
   return {
     betterVersion: target.sampleAnswer,
-    explanation: `Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: ${target.sampleAnswer}`,
+    explanation,
     nextPractice:
       turnIndex >= activeTurns.length - 1
         ? "Ulangi roleplay dari awal tanpa melihat contoh jawaban."

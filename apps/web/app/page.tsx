@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Mic, Play } from "lucide-react";
+import { ArrowRight, CheckCircle2, Play } from "lucide-react";
 import { ActionButton } from "@/components/action-button";
 import { BrandMark } from "@/components/brand-mark";
 import { LandingAuthAction } from "@/components/landing-auth-action";
+import { LandingCoachCta } from "@/components/landing-coach-cta";
 import { SectionHeading } from "@/components/section-heading";
 import { learningLoop, mission, plans } from "@/lib/data";
 
@@ -49,9 +50,7 @@ export default function HomePage() {
               <ActionButton href="/register" icon={ArrowRight} tone="light">
                 Mulai Belajar Gratis
               </ActionButton>
-              <ActionButton href="/conversation-coach" icon={Mic} tone="glass">
-                Mulai Conversation Coach
-              </ActionButton>
+              <LandingCoachCta />
             </div>
           </div>
           <div className="self-end lg:pl-8">

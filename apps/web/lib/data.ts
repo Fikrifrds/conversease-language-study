@@ -311,10 +311,3 @@ export const course = {
 };
 
 export const lesson = lessonCatalog[0];
-
-export const progressScores = [
-  { label: "Speaking", value: 68 },
-  { label: "Listening", value: 72 },
-  { label: "Pronunciation", value: 64 },
-  { label: "Useful Phrases", value: 56 }
-];

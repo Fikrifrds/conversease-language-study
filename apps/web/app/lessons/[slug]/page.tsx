@@ -2,9 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Headphones, Mic, RotateCcw, Send } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { LessonAudioPlayer } from "@/components/lesson-audio-player";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
+import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { lessonCatalog, lessonsBySlug } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -74,16 +76,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                 <Mic className="h-5 w-5 text-leaf" aria-hidden="true" />
                 <h2 className="text-xl font-semibold">Speak Clearly</h2>
               </div>
-              <div className="mt-4 grid gap-3 md:grid-cols-3">
-                {lesson.prompts.map((prompt) => (
-                  <div key={prompt} className="rounded-lg bg-paper p-4">
-                    <p className="text-sm leading-6 text-ink/70">{prompt}</p>
-                    <button className="focus-ring mt-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-leaf text-white hover:bg-ink" aria-label="Record">
-                      <Mic className="h-4 w-4" aria-hidden="true" />
-                    </button>
-                  </div>
-                ))}
-              </div>
+              <SpeakClearlyPractice prompts={lesson.prompts} />
             </section>
 
             <section className="mt-8" id="conversation-coach">
@@ -92,14 +85,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
 
             <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
               <h2 className="text-xl font-semibold">Conversation Check</h2>
-              <div className="mt-4 space-y-3">
-                {lesson.quiz.map((item) => (
-                  <div key={item.question} className="rounded-lg bg-paper p-4">
-                    <p className="font-medium">{item.question}</p>
-                    <p className="mt-2 text-sm text-leaf">{item.answer}</p>
-                  </div>
-                ))}
-              </div>
+              <ConversationCheck items={lesson.quiz} />
             </section>
 
             <div className="mt-8 flex flex-wrap gap-3">
@@ -125,24 +111,6 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               lessonSlug={lesson.slug}
               sections={lesson.sections.map((section) => section.label)}
             />
-            <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-              <h2 className="font-semibold">Lesson Flow</h2>
-              <div className="mt-4 space-y-3">
-                {lesson.sections.map((section) => (
-                  <div key={section.label} className="flex items-center gap-3 rounded-lg bg-paper p-3">
-                    <section.icon className="h-4 w-4 text-leaf" aria-hidden="true" />
-                    <span className="text-sm font-medium">{section.label}</span>
-                  </div>
-                ))}
-              </div>
-            </section>
-            <section className="rounded-lg bg-ink p-5 text-white">
-              <p className="text-sm text-white/70">Completion</p>
-              <p className="mt-2 text-3xl font-semibold">42%</p>
-              <div className="mt-4 h-2 rounded-lg bg-white/20">
-                <div className="h-2 w-[42%] rounded-lg bg-sun" />
-              </div>
-            </section>
           </aside>
         </div>
       </section>
