@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: How much is the coffee?
+  choices:
+  - Two dollars.
+  - Three dollars.
+  - Ten dollars.
+  answer: Two dollars.
+- type: multiple_choice
+  prompt: How much is the cake?
+  choices:
+  - Three dollars.
+  - One dollar.
+  - Free.
+  answer: Three dollars.
+- type: multiple_choice
+  prompt: Which question asks price?
+  choices:
+  - How much is the coffee?
+  - Where is the coffee?
+  - Can you spell coffee?
+  answer: How much is the coffee?

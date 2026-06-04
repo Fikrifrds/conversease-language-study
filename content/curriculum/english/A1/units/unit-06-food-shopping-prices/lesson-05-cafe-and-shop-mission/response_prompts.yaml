@@ -1,0 +1,17 @@
+prompts:
+- prompt: Order coffee and a sandwich.
+  target_response: Can I have a coffee and a sandwich, please?
+  acceptable_variations:
+  - Can I have a coffee and a sandwich, please?
+- prompt: Choose a small coffee.
+  target_response: Small, please.
+  acceptable_variations:
+  - Small, please.
+- prompt: Ask the total price.
+  target_response: How much is it?
+  acceptable_variations:
+  - How much is it?
+- prompt: Pay politely.
+  target_response: Here you go.
+  acceptable_variations:
+  - Here you go.

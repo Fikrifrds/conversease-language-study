@@ -1,0 +1,21 @@
+phrases:
+- phrase: What would you like?
+  meaning_id: Kamu mau pesan apa?
+  usage_note: Staff uses this to ask for an order.
+  common_mistake: Do not answer with only one unclear word if you can use a full order.
+- phrase: Can I have a tea, please?
+  meaning_id: Boleh saya pesan teh?
+  usage_note: Use this to order politely.
+  common_mistake: Do not say 'I want tea' as your first polite cafe sentence.
+- phrase: Small or large?
+  meaning_id: Kecil atau besar?
+  usage_note: Answer with the size you want.
+  common_mistake: Do not say 'small size one' at A1.
+- phrase: Anything else?
+  meaning_id: Ada lagi?
+  usage_note: Staff asks if you want more.
+  common_mistake: Answer 'No, thank you' if finished.
+- phrase: Here you go.
+  meaning_id: Ini pesanannya.
+  usage_note: Staff says this when giving the item.
+  common_mistake: Do not translate word by word.

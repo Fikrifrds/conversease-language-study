@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Ben order?
+  choices:
+  - A tea.
+  - A sandwich.
+  - A ticket.
+  answer: A tea.
+- type: multiple_choice
+  prompt: What size does Ben choose?
+  choices:
+  - Small.
+  - Large.
+  - No size.
+  answer: Small.
+- type: multiple_choice
+  prompt: Which sentence is polite for ordering?
+  choices:
+  - Can I have a tea, please?
+  - Give tea.
+  - Tea now.
+  answer: Can I have a tea, please?

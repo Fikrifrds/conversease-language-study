@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Ben order?
+  choices:
+  - Coffee and a sandwich.
+  - Tea and a pen.
+  - Cake and a ticket.
+  answer: Coffee and a sandwich.
+- type: multiple_choice
+  prompt: What size coffee does Ben choose?
+  choices:
+  - Small.
+  - Large.
+  - Medium.
+  answer: Small.
+- type: multiple_choice
+  prompt: How much is it?
+  choices:
+  - Five dollars.
+  - Two dollars.
+  - One dollar.
+  answer: Five dollars.

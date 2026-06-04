@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Ben buy?
+  choices:
+  - A pen.
+  - A drink.
+  - A bag.
+  answer: A pen.
+- type: multiple_choice
+  prompt: How much is the pen?
+  choices:
+  - One dollar.
+  - Two dollars.
+  - Five dollars.
+  answer: One dollar.
+- type: multiple_choice
+  prompt: Which phrase gives money or an item?
+  choices:
+  - Here you go.
+  - Where is it?
+  - See you tomorrow.
+  answer: Here you go.

@@ -1,0 +1,17 @@
+phrases:
+- phrase: Can I have this pen?
+  meaning_id: Boleh saya beli pulpen ini?
+  usage_note: Use this when pointing to one item.
+  common_mistake: Do not say 'Can I has this pen?'
+- phrase: How much is it?
+  meaning_id: Berapa harganya?
+  usage_note: Ask the price when the item is already clear.
+  common_mistake: Do not say 'How much it?'
+- phrase: Here you go.
+  meaning_id: Ini uangnya / ini barangnya.
+  usage_note: Use this when giving money or an item.
+  common_mistake: Meaning depends on context.
+- phrase: Here is your pen.
+  meaning_id: Ini pulpenmu.
+  usage_note: Staff uses this when giving the item.
+  common_mistake: Use 'is' for one item.

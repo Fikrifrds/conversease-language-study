@@ -14,10 +14,10 @@ class ContentReadinessTest(unittest.TestCase):
         readiness = content_readiness_summary()
 
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 40)
-        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 25)
-        self.assertEqual(readiness["summary"]["text_ready_count"], 25)
+        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 30)
+        self.assertEqual(readiness["summary"]["text_ready_count"], 30)
         self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
-        self.assertEqual(readiness["summary"]["beta_ready_count"], 25)
+        self.assertEqual(readiness["summary"]["beta_ready_count"], 30)
         self.assertEqual(readiness["summary"]["production_ready_count"], 0)
 
     def test_first_unit_is_text_ready_but_needs_audio(self):
@@ -34,7 +34,7 @@ class ContentReadinessTest(unittest.TestCase):
 
     def test_planned_units_show_missing_content(self):
         readiness = content_readiness_summary()
-        planned_unit = readiness["units"][5]
+        planned_unit = readiness["units"][6]
         first_planned_lesson = planned_unit["lessons"][0]
 
         self.assertEqual(planned_unit["status"], "planned")
@@ -52,10 +52,10 @@ class ContentReadinessTest(unittest.TestCase):
             ["A1", "A2", "B1", "B2", "C1"],
         )
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 200)
-        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 25)
-        self.assertEqual(readiness["summary"]["text_ready_count"], 25)
+        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 30)
+        self.assertEqual(readiness["summary"]["text_ready_count"], 30)
         self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
-        self.assertEqual(readiness["summary"]["missing_content_count"], 175)
+        self.assertEqual(readiness["summary"]["missing_content_count"], 170)
         self.assertEqual(readiness["summary"]["missing_audio_count"], 200)
 
     def test_audio_manifest_ready_requires_dialogue_main_audio(self):

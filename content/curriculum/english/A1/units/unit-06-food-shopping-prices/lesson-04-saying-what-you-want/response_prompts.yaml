@@ -1,0 +1,13 @@
+prompts:
+- prompt: Say you want a sandwich.
+  target_response: I want a sandwich.
+  acceptable_variations:
+  - I want a sandwich.
+- prompt: Choose tea politely.
+  target_response: Tea, please.
+  acceptable_variations:
+  - Tea, please.
+- prompt: Say no sugar politely.
+  target_response: No sugar, please.
+  acceptable_variations:
+  - No sugar, please.

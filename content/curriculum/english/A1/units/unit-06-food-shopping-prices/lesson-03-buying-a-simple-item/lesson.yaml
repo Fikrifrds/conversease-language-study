@@ -1,0 +1,25 @@
+lesson_key: lesson-03-buying-a-simple-item
+slug: buying-a-simple-item
+title: Buying a Simple Item
+status: published
+estimated_minutes: 9
+conversation_situation: buying_one_basic_item_in_a_shop
+conversation_goal: Learners can buy one simple item, ask the price, and complete the
+  payment.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

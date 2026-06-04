@@ -1,0 +1,20 @@
+scenario_key: saying_a_simple_food_or_drink_preference
+mode: lesson_practice_coach
+level_code: A1
+opening_line: What do you want?
+learner_goal: Say what you want and choose between two simple options.
+max_turns: 7
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- I want a sandwich.
+- Tea, please.
+- No sugar, please.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

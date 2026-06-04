@@ -1100,6 +1100,222 @@ export const lessonCatalog = [
       { question: "What are the directions?", answer: "Go straight and turn left." }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "ordering-a-drink",
+    title: "Ordering a Drink",
+    unit: "Food, Shopping & Prices",
+    conversationGoal: "Order one drink politely and answer a simple size question.",
+    setup: "Kamu berada di kafe kecil setelah kelas. Pesan satu minuman dengan sopan dan jawab pertanyaan ukuran.",
+    dialogue: [
+      { speaker: "Mina", text: "Hi. What would you like?" },
+      { speaker: "Ben", text: "Can I have a tea, please?" },
+      { speaker: "Mina", text: "Small or large?" },
+      { speaker: "Ben", text: "Small, please." },
+      { speaker: "Mina", text: "Anything else?" },
+      { speaker: "Ben", text: "No, thank you." },
+      { speaker: "Mina", text: "Here you go." },
+      { speaker: "Ben", text: "Thank you." }
+    ],
+    translation: [
+      "Hai. Kamu mau pesan apa?",
+      "Boleh saya pesan teh?",
+      "Kecil atau besar?",
+      "Kecil, tolong.",
+      "Ada lagi?",
+      "Tidak, terima kasih.",
+      "Ini pesanannya.",
+      "Terima kasih."
+    ],
+    phrases: [
+      { phrase: "What would you like?", meaning: "Kamu mau pesan apa?", usage: "Staff uses this to ask for an order." },
+      { phrase: "Can I have a tea, please?", meaning: "Boleh saya pesan teh?", usage: "Order politely." },
+      { phrase: "Small or large?", meaning: "Kecil atau besar?", usage: "Ask about size." },
+      { phrase: "No, thank you.", meaning: "Tidak, terima kasih.", usage: "Say you do not want anything else." }
+    ],
+    grammar: "Use Can I have + item, please? to order politely.",
+    prompts: [
+      "Order a tea politely.",
+      "Choose a small size.",
+      "Say you do not want anything else."
+    ],
+    quiz: [
+      { question: "What does Ben order?", answer: "A tea." },
+      { question: "What size does Ben choose?", answer: "Small." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-about-prices",
+    title: "Asking About Prices",
+    unit: "Food, Shopping & Prices",
+    conversationGoal: "Ask the price of one item and understand a short price answer.",
+    setup: "Kamu melihat minuman dan makanan ringan. Tanyakan harga satu item sebelum membeli.",
+    dialogue: [
+      { speaker: "Dimas", text: "Excuse me. How much is the coffee?" },
+      { speaker: "Sara", text: "It is two dollars." },
+      { speaker: "Dimas", text: "Two dollars?" },
+      { speaker: "Sara", text: "Yes, two dollars." },
+      { speaker: "Dimas", text: "How much is the cake?" },
+      { speaker: "Sara", text: "It is three dollars." },
+      { speaker: "Dimas", text: "Okay. Thank you." }
+    ],
+    translation: [
+      "Permisi. Berapa harga kopinya?",
+      "Harganya dua dolar.",
+      "Dua dolar?",
+      "Ya, dua dolar.",
+      "Berapa harga kuenya?",
+      "Harganya tiga dolar.",
+      "Oke. Terima kasih."
+    ],
+    phrases: [
+      { phrase: "How much is the coffee?", meaning: "Berapa harga kopinya?", usage: "Ask the price of one item." },
+      { phrase: "It is two dollars.", meaning: "Harganya dua dolar.", usage: "Answer a simple price." },
+      { phrase: "Two dollars?", meaning: "Dua dolar?", usage: "Repeat the price to confirm." },
+      { phrase: "How much is the cake?", meaning: "Berapa harga kuenya?", usage: "Ask another item price." }
+    ],
+    grammar: "Use How much is + item? and answer with It is + price.",
+    prompts: [
+      "Ask the price of coffee.",
+      "Confirm the price.",
+      "Ask the price of cake."
+    ],
+    quiz: [
+      { question: "How much is the coffee?", answer: "Two dollars." },
+      { question: "How much is the cake?", answer: "Three dollars." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "buying-a-simple-item",
+    title: "Buying a Simple Item",
+    unit: "Food, Shopping & Prices",
+    conversationGoal: "Buy one simple item, ask the price, and complete the payment.",
+    setup: "Kamu berada di toko alat tulis. Kamu membeli satu pulpen dan membayar dengan sopan.",
+    dialogue: [
+      { speaker: "Ben", text: "Excuse me. Can I have this pen?" },
+      { speaker: "Alya", text: "Yes, of course." },
+      { speaker: "Ben", text: "How much is it?" },
+      { speaker: "Alya", text: "It is one dollar." },
+      { speaker: "Ben", text: "Okay. Here you go." },
+      { speaker: "Alya", text: "Thank you. Here is your pen." },
+      { speaker: "Ben", text: "Thanks." }
+    ],
+    translation: [
+      "Permisi. Boleh saya beli pulpen ini?",
+      "Ya, tentu.",
+      "Berapa harganya?",
+      "Harganya satu dolar.",
+      "Oke. Ini uangnya.",
+      "Terima kasih. Ini pulpennya.",
+      "Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Can I have this pen?", meaning: "Boleh saya beli pulpen ini?", usage: "Ask to buy one item near you." },
+      { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price when the item is clear." },
+      { phrase: "Here you go.", meaning: "Ini uangnya / ini barangnya.", usage: "Give money or an item." },
+      { phrase: "Here is your pen.", meaning: "Ini pulpenmu.", usage: "Staff gives one item." }
+    ],
+    grammar: "Use this for one item near you and it after the item is already clear.",
+    prompts: [
+      "Ask to buy this pen.",
+      "Ask the price.",
+      "Give the money politely."
+    ],
+    quiz: [
+      { question: "What does Ben buy?", answer: "A pen." },
+      { question: "How much is the pen?", answer: "One dollar." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "saying-what-you-want",
+    title: "Saying What You Want",
+    unit: "Food, Shopping & Prices",
+    conversationGoal: "Say what you want and choose between two simple options.",
+    setup: "Kamu memilih makanan ringan di kafe. Katakan apa yang kamu mau dan jawab pilihan sederhana.",
+    dialogue: [
+      { speaker: "Sara", text: "What do you want?" },
+      { speaker: "Dimas", text: "I want a sandwich." },
+      { speaker: "Sara", text: "Do you want tea or coffee?" },
+      { speaker: "Dimas", text: "Tea, please." },
+      { speaker: "Sara", text: "Do you want sugar?" },
+      { speaker: "Dimas", text: "No sugar, please." },
+      { speaker: "Sara", text: "Okay." }
+    ],
+    translation: [
+      "Kamu mau apa?",
+      "Saya mau sandwich.",
+      "Kamu mau teh atau kopi?",
+      "Teh, tolong.",
+      "Kamu mau gula?",
+      "Tanpa gula, tolong.",
+      "Oke."
+    ],
+    phrases: [
+      { phrase: "What do you want?", meaning: "Kamu mau apa?", usage: "Ask a simple preference question." },
+      { phrase: "I want a sandwich.", meaning: "Saya mau sandwich.", usage: "Say what you want." },
+      { phrase: "Tea, please.", meaning: "Teh, tolong.", usage: "Choose one option politely." },
+      { phrase: "No sugar, please.", meaning: "Tanpa gula, tolong.", usage: "Say you do not want an extra item." }
+    ],
+    grammar: "Use I want + item and No + item, please for simple preferences.",
+    prompts: [
+      "Say you want a sandwich.",
+      "Choose tea politely.",
+      "Say no sugar politely."
+    ],
+    quiz: [
+      { question: "What does Dimas want?", answer: "A sandwich." },
+      { question: "What drink does Dimas choose?", answer: "Tea." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "cafe-and-shop-mission",
+    title: "Cafe and Shop Mission",
+    unit: "Food, Shopping & Prices",
+    conversationGoal: "Order, ask a price, choose an option, and complete a simple purchase.",
+    setup: "Ini misi akhir unit. Kamu memesan minuman dan makanan kecil, bertanya harga, memilih opsi, lalu membayar.",
+    dialogue: [
+      { speaker: "Mina", text: "Hi. What would you like?" },
+      { speaker: "Ben", text: "Can I have a coffee and a sandwich, please?" },
+      { speaker: "Mina", text: "Sure. Small or large coffee?" },
+      { speaker: "Ben", text: "Small, please." },
+      { speaker: "Ben", text: "How much is it?" },
+      { speaker: "Mina", text: "It is five dollars." },
+      { speaker: "Ben", text: "Okay. Here you go." },
+      { speaker: "Mina", text: "Thank you. Here is your order." },
+      { speaker: "Ben", text: "Thanks." }
+    ],
+    translation: [
+      "Hai. Kamu mau pesan apa?",
+      "Boleh saya pesan kopi dan sandwich?",
+      "Tentu. Kopi kecil atau besar?",
+      "Kecil, tolong.",
+      "Berapa semuanya?",
+      "Totalnya lima dolar.",
+      "Oke. Ini uangnya.",
+      "Terima kasih. Ini pesananmu.",
+      "Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Can I have a coffee and a sandwich, please?", meaning: "Boleh saya pesan kopi dan sandwich?", usage: "Order two items politely." },
+      { phrase: "Small or large coffee?", meaning: "Kopi kecil atau besar?", usage: "Ask about size." },
+      { phrase: "How much is it?", meaning: "Berapa semuanya?", usage: "Ask the total price." },
+      { phrase: "Here is your order.", meaning: "Ini pesananmu.", usage: "Staff gives the order." }
+    ],
+    grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
+    prompts: [
+      "Order coffee and a sandwich.",
+      "Choose a small coffee.",
+      "Ask the total price."
+    ],
+    quiz: [
+      { question: "What does Ben order?", answer: "Coffee and a sandwich." },
+      { question: "How much is it?", answer: "Five dollars." }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -1174,6 +1390,19 @@ export const course = {
           title: item.title,
           status: "published",
           minutes: item.slug === "finding-a-place-mission" ? 10 : 8
+        }))
+    },
+    {
+      title: "Food, Shopping & Prices",
+      outcome: "Order simple food or drinks, ask prices, choose options, and complete a basic purchase.",
+      progress: 0,
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Food, Shopping & Prices")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "cafe-and-shop-mission" ? 10 : 8
         }))
     }
   ]

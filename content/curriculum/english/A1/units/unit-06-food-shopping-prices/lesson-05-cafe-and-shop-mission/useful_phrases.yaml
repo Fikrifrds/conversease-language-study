@@ -1,0 +1,21 @@
+phrases:
+- phrase: Can I have a coffee and a sandwich, please?
+  meaning_id: Boleh saya pesan kopi dan sandwich?
+  usage_note: Order two items politely.
+  common_mistake: Keep the item list short at A1.
+- phrase: Small or large coffee?
+  meaning_id: Kopi kecil atau besar?
+  usage_note: Ask about size.
+  common_mistake: Answer with one size plus please.
+- phrase: How much is it?
+  meaning_id: Berapa semuanya?
+  usage_note: Ask the total price.
+  common_mistake: Use this after the order is clear.
+- phrase: It is five dollars.
+  meaning_id: Totalnya lima dolar.
+  usage_note: Say a simple total price.
+  common_mistake: Use one clear currency in the answer.
+- phrase: Here is your order.
+  meaning_id: Ini pesananmu.
+  usage_note: Staff gives the order.
+  common_mistake: Do not confuse order as command here.

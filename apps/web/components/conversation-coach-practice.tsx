@@ -591,6 +591,136 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "Great. Thank you.",
       focus: "Closing"
     }
+  ],
+  "ordering-a-drink": [
+    {
+      coach: "Hi. What would you like?",
+      hint: "Pesan teh dengan sopan.",
+      sampleAnswer: "Can I have a tea, please?",
+      focus: "Polite order"
+    },
+    {
+      coach: "Small or large?",
+      hint: "Pilih ukuran kecil.",
+      sampleAnswer: "Small, please.",
+      focus: "Size choice"
+    },
+    {
+      coach: "Anything else?",
+      hint: "Katakan tidak ada lagi dengan sopan.",
+      sampleAnswer: "No, thank you.",
+      focus: "Finishing order"
+    },
+    {
+      coach: "Here you go.",
+      hint: "Tutup dengan thank you.",
+      sampleAnswer: "Thank you.",
+      focus: "Thanking"
+    }
+  ],
+  "asking-about-prices": [
+    {
+      coach: "Hello. Can I help you?",
+      hint: "Tanyakan harga coffee.",
+      sampleAnswer: "How much is the coffee?",
+      focus: "Price question"
+    },
+    {
+      coach: "It is two dollars.",
+      hint: "Konfirmasi harga.",
+      sampleAnswer: "Two dollars?",
+      focus: "Price confirmation"
+    },
+    {
+      coach: "Yes, two dollars.",
+      hint: "Tanyakan harga cake.",
+      sampleAnswer: "How much is the cake?",
+      focus: "Second price"
+    },
+    {
+      coach: "It is three dollars.",
+      hint: "Tutup dengan thank you.",
+      sampleAnswer: "Okay. Thank you.",
+      focus: "Closing"
+    }
+  ],
+  "buying-a-simple-item": [
+    {
+      coach: "Hello. What do you need?",
+      hint: "Minta beli pen ini.",
+      sampleAnswer: "Can I have this pen?",
+      focus: "Buying item"
+    },
+    {
+      coach: "Yes, of course.",
+      hint: "Tanyakan harganya.",
+      sampleAnswer: "How much is it?",
+      focus: "Price"
+    },
+    {
+      coach: "It is one dollar.",
+      hint: "Bayar dengan Here you go.",
+      sampleAnswer: "Okay. Here you go.",
+      focus: "Payment"
+    },
+    {
+      coach: "Thank you. Here is your pen.",
+      hint: "Tutup singkat.",
+      sampleAnswer: "Thanks.",
+      focus: "Closing"
+    }
+  ],
+  "saying-what-you-want": [
+    {
+      coach: "What do you want?",
+      hint: "Sebutkan kamu mau sandwich.",
+      sampleAnswer: "I want a sandwich.",
+      focus: "Want statement"
+    },
+    {
+      coach: "Do you want tea or coffee?",
+      hint: "Pilih tea dengan sopan.",
+      sampleAnswer: "Tea, please.",
+      focus: "Choosing option"
+    },
+    {
+      coach: "Do you want sugar?",
+      hint: "Katakan tanpa gula.",
+      sampleAnswer: "No sugar, please.",
+      focus: "No extra item"
+    }
+  ],
+  "cafe-and-shop-mission": [
+    {
+      coach: "Hi. What would you like?",
+      hint: "Pesan coffee dan sandwich.",
+      sampleAnswer: "Can I have a coffee and a sandwich, please?",
+      focus: "Mission order"
+    },
+    {
+      coach: "Sure. Small or large coffee?",
+      hint: "Pilih small.",
+      sampleAnswer: "Small, please.",
+      focus: "Size"
+    },
+    {
+      coach: "Anything else?",
+      hint: "Tanyakan total harga.",
+      sampleAnswer: "How much is it?",
+      focus: "Total price"
+    },
+    {
+      coach: "It is five dollars.",
+      hint: "Bayar dengan sopan.",
+      sampleAnswer: "Okay. Here you go.",
+      focus: "Payment"
+    },
+    {
+      coach: "Thank you. Here is your order.",
+      hint: "Tutup singkat.",
+      sampleAnswer: "Thanks.",
+      focus: "Closing"
+    }
   ]
 };
 

@@ -1,0 +1,17 @@
+phrases:
+- phrase: What do you want?
+  meaning_id: Kamu mau apa?
+  usage_note: Ask a direct but simple preference question.
+  common_mistake: In service settings, 'What would you like?' is more polite.
+- phrase: I want a sandwich.
+  meaning_id: Saya mau sandwich.
+  usage_note: Say what you want simply.
+  common_mistake: Add please in service contexts.
+- phrase: Tea, please.
+  meaning_id: Teh, tolong.
+  usage_note: Choose one option politely.
+  common_mistake: Do not answer only 'tea' in careful practice.
+- phrase: No sugar, please.
+  meaning_id: Tanpa gula, tolong.
+  usage_note: Say you do not want an extra item.
+  common_mistake: Keep it short and polite.

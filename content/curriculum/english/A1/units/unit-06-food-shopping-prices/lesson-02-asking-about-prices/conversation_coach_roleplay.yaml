@@ -1,0 +1,21 @@
+scenario_key: asking_for_a_simple_price
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hello. Can I help you?
+learner_goal: Ask prices for simple items and confirm the amount.
+max_turns: 7
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- How much is the coffee?
+- Two dollars?
+- How much is the cake?
+- Thank you.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

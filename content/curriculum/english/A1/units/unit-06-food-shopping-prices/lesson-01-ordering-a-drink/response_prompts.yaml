@@ -1,0 +1,13 @@
+prompts:
+- prompt: Order a tea politely.
+  target_response: Can I have a tea, please?
+  acceptable_variations:
+  - Can I have a tea, please?
+- prompt: Choose a small size.
+  target_response: Small, please.
+  acceptable_variations:
+  - Small, please.
+- prompt: Say you do not want anything else.
+  target_response: No, thank you.
+  acceptable_variations:
+  - No, thank you.

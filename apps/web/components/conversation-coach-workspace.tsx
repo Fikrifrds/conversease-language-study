@@ -28,7 +28,12 @@ const scenarios = [
   { slug: "simple-place-words", label: "Place Words", description: "Sebutkan cafe, library, dan tujuan." },
   { slug: "understanding-simple-directions", label: "Simple Directions", description: "Ikuti go straight dan turn left." },
   { slug: "asking-how-to-get-there", label: "How To Get There", description: "Minta arahan dua langkah." },
-  { slug: "finding-a-place-mission", label: "Place Mission", description: "Gabungkan lokasi dan arahan." }
+  { slug: "finding-a-place-mission", label: "Place Mission", description: "Gabungkan lokasi dan arahan." },
+  { slug: "ordering-a-drink", label: "Order Drink", description: "Pesan minuman dan pilih ukuran." },
+  { slug: "asking-about-prices", label: "Ask Prices", description: "Tanyakan harga item sederhana." },
+  { slug: "buying-a-simple-item", label: "Buy Item", description: "Beli satu barang dan bayar." },
+  { slug: "saying-what-you-want", label: "What You Want", description: "Sebutkan pilihan makanan/minuman." },
+  { slug: "cafe-and-shop-mission", label: "Cafe Mission", description: "Gabungkan order, harga, dan bayar." }
 ];
 
 export function ConversationCoachWorkspace() {

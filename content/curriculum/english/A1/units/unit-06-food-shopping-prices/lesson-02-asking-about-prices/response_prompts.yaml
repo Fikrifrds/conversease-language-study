@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask the price of coffee.
+  target_response: How much is the coffee?
+  acceptable_variations:
+  - How much is the coffee?
+- prompt: Confirm the price.
+  target_response: Two dollars?
+  acceptable_variations:
+  - Two dollars?
+- prompt: Ask the price of cake.
+  target_response: How much is the cake?
+  acceptable_variations:
+  - How much is the cake?

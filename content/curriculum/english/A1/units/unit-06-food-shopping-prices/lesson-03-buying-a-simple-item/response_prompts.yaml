@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask to buy this pen.
+  target_response: Can I have this pen?
+  acceptable_variations:
+  - Can I have this pen?
+- prompt: Ask the price.
+  target_response: How much is it?
+  acceptable_variations:
+  - How much is it?
+- prompt: Give the money politely.
+  target_response: Here you go.
+  acceptable_variations:
+  - Here you go.

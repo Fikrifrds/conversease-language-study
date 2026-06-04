@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Dimas want?
+  choices:
+  - A sandwich.
+  - A pen.
+  - A ticket.
+  answer: A sandwich.
+- type: multiple_choice
+  prompt: What drink does Dimas choose?
+  choices:
+  - Tea.
+  - Coffee.
+  - Water.
+  answer: Tea.
+- type: multiple_choice
+  prompt: Which answer says no extra sugar?
+  choices:
+  - No sugar, please.
+  - I want sugar.
+  - Sugar is here.
+  answer: No sugar, please.

@@ -137,29 +137,29 @@ units:
 
   - unit_key: unit-06-food-shopping-prices
     title: Food, Shopping & Prices
-    status: planned
+    status: in_production
     main_conversation_outcome: Order simple food or drinks, ask prices, and buy basic items.
     lessons:
       - lesson_key: lesson-01-ordering-a-drink
         slug: ordering-a-drink
         title: Ordering a Drink
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-about-prices
         slug: asking-about-prices
         title: Asking About Prices
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-buying-a-simple-item
         slug: buying-a-simple-item
         title: Buying a Simple Item
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-saying-what-you-want
         slug: saying-what-you-want
         title: Saying What You Want
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-cafe-and-shop-mission
         slug: cafe-and-shop-mission
         title: Cafe and Shop Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-07-help-problems-requests
     title: Help, Problems & Requests
