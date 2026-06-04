@@ -1,0 +1,21 @@
+phrases:
+- phrase: Sorry, I don't understand.
+  meaning_id: Maaf, saya tidak mengerti.
+  usage_note: Start honestly when you need clarification.
+  common_mistake: Do not pretend you understand.
+- phrase: I can't open this file.
+  meaning_id: Saya tidak bisa membuka file ini.
+  usage_note: Explain a simple technical problem.
+  common_mistake: Use can't + base verb.
+- phrase: Can you wait a minute?
+  meaning_id: Bisa tunggu sebentar?
+  usage_note: Make a polite time request.
+  common_mistake: Use a minute for short waiting.
+- phrase: No problem.
+  meaning_id: Tidak masalah.
+  usage_note: Accept a small request.
+  common_mistake: Use it to keep the conversation calm.
+- phrase: Thank you for your help.
+  meaning_id: Terima kasih atas bantuanmu.
+  usage_note: Close after help.
+  common_mistake: Be specific when someone helped you.

@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask someone to send the link.
+  target_response: Can you send me the link, please?
+  acceptable_variations:
+  - Can you send me the link, please?
+- prompt: Accept a request to wait.
+  target_response: Sure. No problem.
+  acceptable_variations:
+  - Sure. No problem.
+- prompt: Thank the person.
+  target_response: Great. Thanks.
+  acceptable_variations:
+  - Great. Thanks.

@@ -15,8 +15,8 @@ class CurriculumContentTest(unittest.TestCase):
     def test_a1_course_is_loaded_from_content_files(self):
         self.assertEqual(A1_COURSE["course_slug"], "english-a1-start-simple-conversations")
         self.assertEqual(A1_COURSE["level_code"], "A1")
-        self.assertEqual(len(A1_COURSE["units"]), 6)
-        self.assertEqual(len(published_lessons()), 30)
+        self.assertEqual(len(A1_COURSE["units"]), 7)
+        self.assertEqual(len(published_lessons()), 35)
 
     def test_lesson_detail_includes_roleplay_config_from_yaml(self):
         lesson = get_lesson_or_none("saying-your-name")

@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Why is Ben late?
+  choices:
+  - His internet was slow.
+  - He bought coffee.
+  - He is in a shop.
+  answer: His internet was slow.
+- type: multiple_choice
+  prompt: What does Ben thank Sara for?
+  choices:
+  - Waiting.
+  - Buying a pen.
+  - Giving a price.
+  answer: Waiting.
+- type: multiple_choice
+  prompt: Which sentence says readiness?
+  choices:
+  - I am ready now.
+  - I am late now.
+  - I am coffee now.
+  answer: I am ready now.

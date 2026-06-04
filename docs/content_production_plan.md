@@ -7,16 +7,17 @@ Rencana eksekusi untuk membuat lesson yang belum ada, mengikuti
 
 - Total direncanakan: **200 lesson** (5 level x 8 unit x 5 lesson).
 - Total A1 direncanakan: **40 lesson** (8 unit x 5 lesson).
-- Sudah `implemented` (text-ready): **30 lesson**
+- Sudah `implemented` (text-ready): **35 lesson**
   - Unit 1: 5 lesson (semua).
   - Unit 2: 5 lesson (semua).
   - Unit 3: 5 lesson (semua).
   - Unit 4: 5 lesson (semua).
   - Unit 5: 5 lesson (semua).
   - Unit 6: 5 lesson (semua).
+  - Unit 7: 5 lesson (semua).
 - Audio-ready: **0 lesson** (semua `audio_manifest.yaml` masih `not_generated`).
 
-Sisa A1 yang belum dibuat: **10 lesson** (Unit 7-8).
+Sisa A1 yang belum dibuat: **5 lesson** (Unit 8).
 
 ## Aturan Wajib Yang Memengaruhi Eksekusi
 
@@ -60,7 +61,7 @@ Pass 1 = tulis teks (manifest `not_generated`), Pass 2 = QA, Pass 3 = generate a
 | A1-B3 | Unit 4 Work, Study & Preferences | 5 lesson | Done: Unit 4 text-ready |
 | A1-B4 | Unit 5 Places & Directions | 5 lesson | Done: Unit 5 text-ready |
 | A1-B5 | Unit 6 Food, Shopping & Prices | 5 lesson | Done: Unit 6 text-ready |
-| A1-B6 | Unit 7 Help, Problems & Requests | 5 lesson | Unit 7 text-ready |
+| A1-B6 | Unit 7 Help, Problems & Requests | 5 lesson | Done: Unit 7 text-ready |
 | A1-B7 | Unit 8 A1 Review & Final | 5 lesson | A1 text-complete (40/40) |
 | A1-AUDIO | Generate audio semua A1 text-ready | 40 lesson | A1 production-ready |
 

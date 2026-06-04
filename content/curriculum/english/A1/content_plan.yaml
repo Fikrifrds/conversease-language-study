@@ -163,29 +163,29 @@ units:
 
   - unit_key: unit-07-help-problems-requests
     title: Help, Problems & Requests
-    status: planned
+    status: in_production
     main_conversation_outcome: Ask for help, explain a simple problem, and respond politely.
     lessons:
       - lesson_key: lesson-01-saying-you-do-not-understand
         slug: saying-you-do-not-understand
         title: Saying You Do Not Understand
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-for-help
         slug: asking-for-help
         title: Asking for Help
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-making-simple-requests
         slug: making-simple-requests
         title: Making Simple Requests
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-apologizing-and-thanking
         slug: apologizing-and-thanking
         title: Apologizing and Thanking
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-help-and-problem-mission
         slug: help-and-problem-mission
         title: Help and Problem Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-08-a1-review-final
     title: A1 Review & Final Conversation

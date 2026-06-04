@@ -1,0 +1,22 @@
+scenario_key: apologizing_and_thanking_after_a_small_problem
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hello, Ben. You are late today.
+learner_goal: Apologize, give one short reason, thank the person, and say you are
+  ready.
+max_turns: 7
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- Sorry I'm late.
+- My internet was slow.
+- Thank you for waiting.
+- I am ready now.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

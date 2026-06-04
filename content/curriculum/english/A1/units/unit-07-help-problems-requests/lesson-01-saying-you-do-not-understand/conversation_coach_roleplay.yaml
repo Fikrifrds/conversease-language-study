@@ -1,0 +1,22 @@
+scenario_key: saying_you_do_not_understand
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Please open your book.
+learner_goal: Say you do not understand, ask for repetition, confirm the instruction,
+  and thank the speaker.
+max_turns: 7
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- Sorry, I don't understand.
+- Can you repeat that, please?
+- Open my book?
+- I understand now.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

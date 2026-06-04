@@ -1,0 +1,13 @@
+prompts:
+- prompt: Apologize for being late.
+  target_response: Sorry I'm late.
+  acceptable_variations:
+  - Sorry I'm late.
+- prompt: Give one simple reason.
+  target_response: My internet was slow.
+  acceptable_variations:
+  - My internet was slow.
+- prompt: Thank the teacher for waiting.
+  target_response: Thank you for waiting.
+  acceptable_variations:
+  - Thank you for waiting.

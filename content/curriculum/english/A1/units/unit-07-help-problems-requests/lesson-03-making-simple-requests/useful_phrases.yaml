@@ -1,0 +1,17 @@
+phrases:
+- phrase: Can you send me the link, please?
+  meaning_id: Bisa kirimkan linknya, tolong?
+  usage_note: Make a polite request for a link.
+  common_mistake: Put please at the end for a soft tone.
+- phrase: Yes, of course.
+  meaning_id: Ya, tentu.
+  usage_note: Accept a request warmly.
+  common_mistake: Do not overuse it if you cannot help.
+- phrase: Can you wait a minute?
+  meaning_id: Bisa tunggu sebentar?
+  usage_note: Ask someone to wait briefly.
+  common_mistake: Use a minute for a short wait, not exact timing.
+- phrase: No problem.
+  meaning_id: Tidak masalah.
+  usage_note: Accept a request calmly.
+  common_mistake: Use it for small requests.

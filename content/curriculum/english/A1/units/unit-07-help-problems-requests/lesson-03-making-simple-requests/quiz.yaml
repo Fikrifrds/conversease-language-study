@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What does Mina ask for?
+  choices:
+  - The link.
+  - The price.
+  - The station.
+  answer: The link.
+- type: multiple_choice
+  prompt: What does Ben ask Mina to do?
+  choices:
+  - Wait a minute.
+  - Buy a pen.
+  - Turn left.
+  answer: Wait a minute.
+- type: multiple_choice
+  prompt: Which phrase accepts a request?
+  choices:
+  - Sure. No problem.
+  - I don't understand.
+  - How much is it?
+  answer: Sure. No problem.

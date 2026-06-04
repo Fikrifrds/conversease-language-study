@@ -1316,6 +1316,220 @@ export const lessonCatalog = [
       { question: "How much is it?", answer: "Five dollars." }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "saying-you-do-not-understand",
+    title: "Saying You Do Not Understand",
+    unit: "Help, Problems & Requests",
+    conversationGoal: "Say you do not understand and ask for repetition politely.",
+    setup: "Kamu sedang belajar online dan tidak paham satu instruksi. Katakan dengan sopan bahwa kamu belum mengerti.",
+    dialogue: [
+      { speaker: "Alya", text: "Sorry, I don't understand." },
+      { speaker: "Ben", text: "That's okay. I can say it again." },
+      { speaker: "Alya", text: "Can you repeat that, please?" },
+      { speaker: "Ben", text: "Yes. Open your book." },
+      { speaker: "Alya", text: "Open my book?" },
+      { speaker: "Ben", text: "Yes, that's right." },
+      { speaker: "Alya", text: "Thank you. I understand now." }
+    ],
+    translation: [
+      "Maaf, saya tidak mengerti.",
+      "Tidak apa-apa. Saya bisa mengulanginya.",
+      "Bisa ulangi itu, tolong?",
+      "Ya. Buka bukumu.",
+      "Buka buku saya?",
+      "Ya, benar.",
+      "Terima kasih. Sekarang saya mengerti."
+    ],
+    phrases: [
+      { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Use this when you miss meaning or instructions." },
+      { phrase: "Can you repeat that, please?", meaning: "Bisa ulangi itu, tolong?", usage: "Ask someone to say it again politely." },
+      { phrase: "Open my book?", meaning: "Buka buku saya?", usage: "Repeat key words to confirm." },
+      { phrase: "I understand now.", meaning: "Sekarang saya mengerti.", usage: "Say the explanation is clear." }
+    ],
+    grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
+    prompts: [
+      "Say you do not understand.",
+      "Ask the speaker to repeat.",
+      "Say you understand now."
+    ],
+    quiz: [
+      { question: "What does Alya ask Ben to do?", answer: "Repeat." },
+      { question: "Which sentence is correct?", answer: "I don't understand." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-for-help",
+    title: "Asking for Help",
+    unit: "Help, Problems & Requests",
+    conversationGoal: "Ask for help with one simple task and respond to the helper.",
+    setup: "Kamu kesulitan membuka file kelas. Minta bantuan singkat dan sopan.",
+    dialogue: [
+      { speaker: "Dimas", text: "Excuse me. Can you help me?" },
+      { speaker: "Sara", text: "Sure. What is the problem?" },
+      { speaker: "Dimas", text: "I can't open this file." },
+      { speaker: "Sara", text: "Okay. Click this button." },
+      { speaker: "Dimas", text: "This button?" },
+      { speaker: "Sara", text: "Yes. Try again." },
+      { speaker: "Dimas", text: "It works. Thank you." }
+    ],
+    translation: [
+      "Permisi. Bisa bantu saya?",
+      "Tentu. Apa masalahnya?",
+      "Saya tidak bisa membuka file ini.",
+      "Oke. Klik tombol ini.",
+      "Tombol ini?",
+      "Ya. Coba lagi.",
+      "Berhasil. Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Can you help me?", meaning: "Bisa bantu saya?", usage: "Ask for help politely." },
+      { phrase: "What is the problem?", meaning: "Apa masalahnya?", usage: "Ask what is wrong." },
+      { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain one problem clearly." },
+      { phrase: "It works.", meaning: "Berhasil.", usage: "Say the solution works." }
+    ],
+    grammar: "Use can for help requests and can't + verb for simple problems.",
+    prompts: [
+      "Ask for help.",
+      "Explain the file problem.",
+      "Say the solution works."
+    ],
+    quiz: [
+      { question: "What problem does Dimas have?", answer: "He can't open a file." },
+      { question: "Which sentence asks for help?", answer: "Can you help me?" }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "making-simple-requests",
+    title: "Making Simple Requests",
+    unit: "Help, Problems & Requests",
+    conversationGoal: "Make a simple request with please and respond to yes or no.",
+    setup: "Kamu sedang di kelas online. Kamu perlu meminta link dan meminta teman menunggu sebentar.",
+    dialogue: [
+      { speaker: "Mina", text: "Can you send me the link, please?" },
+      { speaker: "Ben", text: "Yes, of course." },
+      { speaker: "Mina", text: "Thank you." },
+      { speaker: "Ben", text: "Can you wait a minute?" },
+      { speaker: "Mina", text: "Sure. No problem." },
+      { speaker: "Ben", text: "Here is the link." },
+      { speaker: "Mina", text: "Great. Thanks." }
+    ],
+    translation: [
+      "Bisa kirimkan linknya, tolong?",
+      "Ya, tentu.",
+      "Terima kasih.",
+      "Bisa tunggu sebentar?",
+      "Tentu. Tidak masalah.",
+      "Ini linknya.",
+      "Bagus. Terima kasih."
+    ],
+    phrases: [
+      { phrase: "Can you send me the link, please?", meaning: "Bisa kirimkan linknya, tolong?", usage: "Make a polite request for a link." },
+      { phrase: "Yes, of course.", meaning: "Ya, tentu.", usage: "Accept a request warmly." },
+      { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Ask someone to wait briefly." },
+      { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a small request calmly." }
+    ],
+    grammar: "Use Can you + verb + please? for a polite request.",
+    prompts: [
+      "Ask someone to send the link.",
+      "Accept a request to wait.",
+      "Thank the person."
+    ],
+    quiz: [
+      { question: "What does Mina ask for?", answer: "The link." },
+      { question: "Which phrase accepts a request?", answer: "Sure. No problem." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "apologizing-and-thanking",
+    title: "Apologizing and Thanking",
+    unit: "Help, Problems & Requests",
+    conversationGoal: "Apologize for a small problem and thank someone for help.",
+    setup: "Kamu terlambat masuk kelas online karena masalah koneksi. Minta maaf dan ucapkan terima kasih ketika dibantu.",
+    dialogue: [
+      { speaker: "Ben", text: "Sorry I'm late." },
+      { speaker: "Sara", text: "That's okay." },
+      { speaker: "Ben", text: "My internet was slow." },
+      { speaker: "Sara", text: "No problem. Please join the class." },
+      { speaker: "Ben", text: "Thank you for waiting." },
+      { speaker: "Sara", text: "You're welcome." },
+      { speaker: "Ben", text: "I am ready now." }
+    ],
+    translation: [
+      "Maaf saya terlambat.",
+      "Tidak apa-apa.",
+      "Internet saya lambat.",
+      "Tidak masalah. Silakan masuk kelas.",
+      "Terima kasih sudah menunggu.",
+      "Sama-sama.",
+      "Sekarang saya siap."
+    ],
+    phrases: [
+      { phrase: "Sorry I'm late.", meaning: "Maaf saya terlambat.", usage: "Apologize when you arrive late." },
+      { phrase: "That's okay.", meaning: "Tidak apa-apa.", usage: "Accept an apology." },
+      { phrase: "My internet was slow.", meaning: "Internet saya lambat.", usage: "Give one short reason." },
+      { phrase: "Thank you for waiting.", meaning: "Terima kasih sudah menunggu.", usage: "Thank someone for waiting." }
+    ],
+    grammar: "Use Sorry + short sentence and Thank you for + ing.",
+    prompts: [
+      "Apologize for being late.",
+      "Give one simple reason.",
+      "Thank the teacher for waiting."
+    ],
+    quiz: [
+      { question: "Why is Ben late?", answer: "His internet was slow." },
+      { question: "What does Ben thank Sara for?", answer: "Waiting." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "help-and-problem-mission",
+    title: "Help and Problem Mission",
+    unit: "Help, Problems & Requests",
+    conversationGoal: "Explain a simple problem, ask for help, make a request, and close politely.",
+    setup: "Ini misi akhir unit. Kamu tidak paham instruksi, punya masalah file, lalu meminta bantuan dan berterima kasih.",
+    dialogue: [
+      { speaker: "Alya", text: "Sorry, I don't understand." },
+      { speaker: "Dimas", text: "That's okay. What is the problem?" },
+      { speaker: "Alya", text: "I can't open this file." },
+      { speaker: "Dimas", text: "Can you send me a screenshot?" },
+      { speaker: "Alya", text: "Sure. Can you wait a minute?" },
+      { speaker: "Dimas", text: "No problem." },
+      { speaker: "Alya", text: "Here is the screenshot." },
+      { speaker: "Dimas", text: "Good. Click this button." },
+      { speaker: "Alya", text: "It works. Thank you for your help." }
+    ],
+    translation: [
+      "Maaf, saya tidak mengerti.",
+      "Tidak apa-apa. Apa masalahnya?",
+      "Saya tidak bisa membuka file ini.",
+      "Bisa kirimkan screenshot?",
+      "Tentu. Bisa tunggu sebentar?",
+      "Tidak masalah.",
+      "Ini screenshotnya.",
+      "Bagus. Klik tombol ini.",
+      "Berhasil. Terima kasih atas bantuanmu."
+    ],
+    phrases: [
+      { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Start honestly when you need clarification." },
+      { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain a simple technical problem." },
+      { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Make a polite time request." },
+      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close after help." }
+    ],
+    grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
+    prompts: [
+      "Say you do not understand.",
+      "Explain the file problem.",
+      "Ask the helper to wait."
+    ],
+    quiz: [
+      { question: "What problem does Alya have?", answer: "She can't open a file." },
+      { question: "What does Dimas ask Alya to send?", answer: "A screenshot." }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -1403,6 +1617,19 @@ export const course = {
           title: item.title,
           status: "published",
           minutes: item.slug === "cafe-and-shop-mission" ? 10 : 8
+        }))
+    },
+    {
+      title: "Help, Problems & Requests",
+      outcome: "Ask for help, explain simple problems, make polite requests, and respond with thanks or apology.",
+      progress: 0,
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Help, Problems & Requests")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "help-and-problem-mission" ? 10 : 8
         }))
     }
   ]

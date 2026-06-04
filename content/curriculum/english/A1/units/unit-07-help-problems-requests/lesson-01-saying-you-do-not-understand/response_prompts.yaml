@@ -1,0 +1,13 @@
+prompts:
+- prompt: Say you do not understand.
+  target_response: Sorry, I don't understand.
+  acceptable_variations:
+  - Sorry, I don't understand.
+- prompt: Ask the speaker to repeat.
+  target_response: Can you repeat that, please?
+  acceptable_variations:
+  - Can you repeat that, please?
+- prompt: Say you understand now.
+  target_response: Thank you. I understand now.
+  acceptable_variations:
+  - Thank you. I understand now.

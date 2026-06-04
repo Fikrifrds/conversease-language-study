@@ -1,0 +1,23 @@
+scenario_key: handling_a_small_problem_and_requesting_help
+mode: lesson_practice_coach
+level_code: A1
+opening_line: Hi. Is everything okay?
+learner_goal: Explain a small problem, ask for help, make one request, and thank the
+  helper.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+- Sorry, I don't understand.
+- I can't open this file.
+- Can you wait a minute?
+- It works.
+- Thank you for your help.
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

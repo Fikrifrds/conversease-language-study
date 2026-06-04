@@ -1,0 +1,17 @@
+phrases:
+- phrase: Sorry, I don't understand.
+  meaning_id: Maaf, saya tidak mengerti.
+  usage_note: Use this when you miss meaning or instructions.
+  common_mistake: Do not stay silent if you need help.
+- phrase: Can you repeat that, please?
+  meaning_id: Bisa ulangi itu, tolong?
+  usage_note: Ask someone to say it again politely.
+  common_mistake: Do not say only 'repeat' in careful practice.
+- phrase: Open my book?
+  meaning_id: Buka buku saya?
+  usage_note: Repeat key words to confirm.
+  common_mistake: Keep the confirmation short.
+- phrase: I understand now.
+  meaning_id: Sekarang saya mengerti.
+  usage_note: Use this after the explanation is clear.
+  common_mistake: Do not say 'I am understand.'

@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask for help.
+  target_response: Can you help me?
+  acceptable_variations:
+  - Can you help me?
+- prompt: Explain the file problem.
+  target_response: I can't open this file.
+  acceptable_variations:
+  - I can't open this file.
+- prompt: Say the solution works.
+  target_response: It works. Thank you.
+  acceptable_variations:
+  - It works. Thank you.

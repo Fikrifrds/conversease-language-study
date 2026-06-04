@@ -33,7 +33,12 @@ const scenarios = [
   { slug: "asking-about-prices", label: "Ask Prices", description: "Tanyakan harga item sederhana." },
   { slug: "buying-a-simple-item", label: "Buy Item", description: "Beli satu barang dan bayar." },
   { slug: "saying-what-you-want", label: "What You Want", description: "Sebutkan pilihan makanan/minuman." },
-  { slug: "cafe-and-shop-mission", label: "Cafe Mission", description: "Gabungkan order, harga, dan bayar." }
+  { slug: "cafe-and-shop-mission", label: "Cafe Mission", description: "Gabungkan order, harga, dan bayar." },
+  { slug: "saying-you-do-not-understand", label: "Not Understand", description: "Katakan belum paham dan minta ulang." },
+  { slug: "asking-for-help", label: "Ask Help", description: "Minta bantuan untuk masalah sederhana." },
+  { slug: "making-simple-requests", label: "Simple Request", description: "Buat request sopan dengan please." },
+  { slug: "apologizing-and-thanking", label: "Sorry & Thanks", description: "Minta maaf dan ucapkan terima kasih." },
+  { slug: "help-and-problem-mission", label: "Help Mission", description: "Gabungkan masalah, request, dan thanks." }
 ];
 
 export function ConversationCoachWorkspace() {

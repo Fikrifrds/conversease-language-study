@@ -721,6 +721,142 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "Thanks.",
       focus: "Closing"
     }
+  ],
+  "saying-you-do-not-understand": [
+    {
+      coach: "Please open your book.",
+      hint: "Katakan kamu tidak mengerti.",
+      sampleAnswer: "Sorry, I don't understand.",
+      focus: "Saying confusion"
+    },
+    {
+      coach: "That's okay. I can say it again.",
+      hint: "Minta diulangi dengan sopan.",
+      sampleAnswer: "Can you repeat that, please?",
+      focus: "Asking repetition"
+    },
+    {
+      coach: "Yes. Open your book.",
+      hint: "Konfirmasi instruksi.",
+      sampleAnswer: "Open my book?",
+      focus: "Confirmation"
+    },
+    {
+      coach: "Yes, that's right.",
+      hint: "Katakan sudah paham.",
+      sampleAnswer: "Thank you. I understand now.",
+      focus: "Closing"
+    }
+  ],
+  "asking-for-help": [
+    {
+      coach: "Hello. Do you need help?",
+      hint: "Minta bantuan.",
+      sampleAnswer: "Can you help me?",
+      focus: "Help request"
+    },
+    {
+      coach: "Sure. What is the problem?",
+      hint: "Jelaskan masalah file.",
+      sampleAnswer: "I can't open this file.",
+      focus: "Problem statement"
+    },
+    {
+      coach: "Okay. Click this button.",
+      hint: "Konfirmasi tombol.",
+      sampleAnswer: "This button?",
+      focus: "Instruction check"
+    },
+    {
+      coach: "Yes. Try again.",
+      hint: "Katakan berhasil dan terima kasih.",
+      sampleAnswer: "It works. Thank you.",
+      focus: "Result"
+    }
+  ],
+  "making-simple-requests": [
+    {
+      coach: "What do you need?",
+      hint: "Minta link dengan sopan.",
+      sampleAnswer: "Can you send me the link, please?",
+      focus: "Polite request"
+    },
+    {
+      coach: "Yes, of course.",
+      hint: "Ucapkan terima kasih.",
+      sampleAnswer: "Thank you.",
+      focus: "Thanking"
+    },
+    {
+      coach: "Can you wait a minute?",
+      hint: "Terima request untuk menunggu.",
+      sampleAnswer: "Sure. No problem.",
+      focus: "Accepting request"
+    },
+    {
+      coach: "Here is the link.",
+      hint: "Tutup dengan thanks.",
+      sampleAnswer: "Great. Thanks.",
+      focus: "Closing"
+    }
+  ],
+  "apologizing-and-thanking": [
+    {
+      coach: "Hello, Ben. You are late today.",
+      hint: "Minta maaf karena terlambat.",
+      sampleAnswer: "Sorry I'm late.",
+      focus: "Apology"
+    },
+    {
+      coach: "That's okay. What happened?",
+      hint: "Berikan alasan singkat.",
+      sampleAnswer: "My internet was slow.",
+      focus: "Reason"
+    },
+    {
+      coach: "No problem. Please join the class.",
+      hint: "Ucapkan terima kasih sudah menunggu.",
+      sampleAnswer: "Thank you for waiting.",
+      focus: "Thanking"
+    },
+    {
+      coach: "You're welcome.",
+      hint: "Katakan kamu siap sekarang.",
+      sampleAnswer: "I am ready now.",
+      focus: "Ready"
+    }
+  ],
+  "help-and-problem-mission": [
+    {
+      coach: "Hi. Is everything okay?",
+      hint: "Katakan kamu tidak mengerti.",
+      sampleAnswer: "Sorry, I don't understand.",
+      focus: "Mission opening"
+    },
+    {
+      coach: "That's okay. What is the problem?",
+      hint: "Jelaskan masalah file.",
+      sampleAnswer: "I can't open this file.",
+      focus: "Problem"
+    },
+    {
+      coach: "Can you send me a screenshot?",
+      hint: "Terima dan minta tunggu sebentar.",
+      sampleAnswer: "Sure. Can you wait a minute?",
+      focus: "Request"
+    },
+    {
+      coach: "No problem.",
+      hint: "Kirim screenshot.",
+      sampleAnswer: "Here is the screenshot.",
+      focus: "Sending info"
+    },
+    {
+      coach: "Good. Click this button.",
+      hint: "Katakan berhasil dan terima kasih.",
+      sampleAnswer: "It works. Thank you for your help.",
+      focus: "Closing"
+    }
   ]
 };
 

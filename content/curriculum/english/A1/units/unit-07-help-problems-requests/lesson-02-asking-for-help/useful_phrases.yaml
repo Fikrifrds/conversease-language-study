@@ -1,0 +1,17 @@
+phrases:
+- phrase: Can you help me?
+  meaning_id: Bisa bantu saya?
+  usage_note: Ask for help politely.
+  common_mistake: Do not demand help with 'Help me now.'
+- phrase: What is the problem?
+  meaning_id: Apa masalahnya?
+  usage_note: Ask what is wrong.
+  common_mistake: Use 'problem' for one simple issue.
+- phrase: I can't open this file.
+  meaning_id: Saya tidak bisa membuka file ini.
+  usage_note: Explain one problem clearly.
+  common_mistake: Use can't + base verb.
+- phrase: It works.
+  meaning_id: Berhasil.
+  usage_note: Say the solution works.
+  common_mistake: Do not say 'It work' without s.

@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What problem does Dimas have?
+  choices:
+  - He can't open a file.
+  - He can't buy tea.
+  - He can't find room A.
+  answer: He can't open a file.
+- type: multiple_choice
+  prompt: What should Dimas click?
+  choices:
+  - This button.
+  - The door.
+  - The cake.
+  answer: This button.
+- type: multiple_choice
+  prompt: Which sentence asks for help?
+  choices:
+  - Can you help me?
+  - Where is the cafe?
+  - How much is it?
+  answer: Can you help me?

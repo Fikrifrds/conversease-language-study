@@ -1,0 +1,17 @@
+prompts:
+- prompt: Say you do not understand.
+  target_response: Sorry, I don't understand.
+  acceptable_variations:
+  - Sorry, I don't understand.
+- prompt: Explain the file problem.
+  target_response: I can't open this file.
+  acceptable_variations:
+  - I can't open this file.
+- prompt: Ask the helper to wait.
+  target_response: Can you wait a minute?
+  acceptable_variations:
+  - Can you wait a minute?
+- prompt: Thank the helper.
+  target_response: Thank you for your help.
+  acceptable_variations:
+  - Thank you for your help.
