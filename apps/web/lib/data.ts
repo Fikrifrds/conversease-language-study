@@ -123,13 +123,13 @@ export const lessonCatalog = [
     conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
     setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
     dialogue: [
-      { speaker: "Coach", text: "Hi, my name is Sara." },
-      { speaker: "Learner", text: "Hi Sara. My name is Fikri." },
-      { speaker: "Coach", text: "Nice to meet you, Fikri." },
-      { speaker: "Learner", text: "Nice to meet you too." }
+      { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
+      { speaker: "Fikri", text: "Hi Sara. My name is Fikri." },
+      { speaker: "Sara", text: "Nice to meet you, Fikri." },
+      { speaker: "Fikri", text: "Nice to meet you too." }
     ],
     translation: [
-      "Hai, nama saya Sara.",
+      "Hai, nama saya Sara. Siapa namamu?",
       "Hai Sara. Nama saya Fikri.",
       "Senang bertemu denganmu, Fikri.",
       "Senang bertemu denganmu juga."
@@ -159,16 +159,18 @@ export const lessonCatalog = [
     conversationGoal: "Ask someone's name politely and confirm what you heard.",
     setup: "Kamu bertemu peserta baru di kelas. Tanyakan namanya, lalu ulangi nama itu dengan sopan.",
     dialogue: [
-      { speaker: "Learner", text: "Hi. What's your name?" },
-      { speaker: "Mina", text: "My name is Mina." },
-      { speaker: "Learner", text: "Nice to meet you, Mina." },
-      { speaker: "Mina", text: "Nice to meet you too." }
+      { speaker: "Nina", text: "Hello. What's your name?" },
+      { speaker: "Raka", text: "My name is Raka." },
+      { speaker: "Nina", text: "Sorry, can you repeat that?" },
+      { speaker: "Raka", text: "Raka. R-A-K-A." },
+      { speaker: "Nina", text: "Thank you, Raka." }
     ],
     translation: [
-      "Hai. Siapa namamu?",
-      "Nama saya Mina.",
-      "Senang bertemu denganmu, Mina.",
-      "Senang bertemu denganmu juga."
+      "Halo. Siapa namamu?",
+      "Nama saya Raka.",
+      "Maaf, bisa ulangi?",
+      "Raka. R-A-K-A.",
+      "Terima kasih, Raka."
     ],
     phrases: [
       { phrase: "What's your name?", meaning: "Siapa namamu?", usage: "Common simple question." },
@@ -195,16 +197,16 @@ export const lessonCatalog = [
     conversationGoal: "Say where you are from and ask the same question back.",
     setup: "Kamu melanjutkan perkenalan singkat. Jawab asalmu, lalu tanyakan balik agar percakapan berjalan.",
     dialogue: [
-      { speaker: "Coach", text: "Where are you from?" },
-      { speaker: "Learner", text: "I'm from Indonesia." },
-      { speaker: "Coach", text: "Oh, nice." },
-      { speaker: "Learner", text: "How about you?" }
+      { speaker: "Maya", text: "Hi, I'm Maya. I'm from Indonesia." },
+      { speaker: "Omar", text: "Nice to meet you, Maya. I'm Omar." },
+      { speaker: "Maya", text: "Nice to meet you too. Where are you from?" },
+      { speaker: "Omar", text: "I'm from Malaysia." }
     ],
     translation: [
-      "Kamu berasal dari mana?",
-      "Saya dari Indonesia.",
-      "Oh, bagus.",
-      "Kalau kamu?"
+      "Hai, saya Maya. Saya dari Indonesia.",
+      "Senang bertemu denganmu, Maya. Saya Omar.",
+      "Senang bertemu denganmu juga. Kamu dari mana?",
+      "Saya dari Malaysia."
     ],
     phrases: [
       { phrase: "I'm from ...", meaning: "Saya dari ...", usage: "Simple answer for origin." },
@@ -231,18 +233,18 @@ export const lessonCatalog = [
     conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
     setup: "Ini misi gabungan Unit 1. Selesaikan percakapan pendek tanpa melihat contoh terlalu sering.",
     dialogue: [
-      { speaker: "Learner", text: "Hi, good morning. My name is Fikri." },
-      { speaker: "Coach", text: "Good morning, Fikri. Where are you from?" },
-      { speaker: "Learner", text: "I'm from Indonesia. How about you?" },
-      { speaker: "Coach", text: "I'm from Malaysia. Nice to meet you." },
-      { speaker: "Learner", text: "Nice to meet you too. See you later." }
+      { speaker: "Lina", text: "Hi, my name is Lina. What is your name?" },
+      { speaker: "Adi", text: "Hi Lina. I'm Adi. Nice to meet you." },
+      { speaker: "Lina", text: "Nice to meet you too. I'm from Indonesia. Where are you from?" },
+      { speaker: "Adi", text: "I'm from Indonesia too. See you later." },
+      { speaker: "Lina", text: "See you." }
     ],
     translation: [
-      "Hai, selamat pagi. Nama saya Fikri.",
-      "Selamat pagi, Fikri. Kamu dari mana?",
-      "Saya dari Indonesia. Kalau kamu?",
-      "Saya dari Malaysia. Senang bertemu denganmu.",
-      "Senang bertemu denganmu juga. Sampai nanti."
+      "Hai, nama saya Lina. Siapa namamu?",
+      "Hai Lina. Saya Adi. Senang bertemu denganmu.",
+      "Senang bertemu denganmu juga. Saya dari Indonesia. Kamu dari mana?",
+      "Saya juga dari Indonesia. Sampai nanti.",
+      "Sampai jumpa."
     ],
     phrases: [
       { phrase: "Good morning. My name is ...", meaning: "Selamat pagi. Nama saya ...", usage: "Open and introduce yourself." },

@@ -3,13 +3,16 @@ import tempfile
 import unittest
 import wave
 from pathlib import Path
+from unittest.mock import patch
 
 from app.services.audio_generation import (
+    MiniMaxAudioResult,
     assign_dialogue_voices,
     concatenate_wav_audio,
     infer_voice_gender,
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
+    synthesize_dialogue_minimax_tts,
 )
 
 
@@ -139,6 +142,54 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertEqual(reader.getframerate(), 32000)
             self.assertEqual(reader.getnframes(), 3840)
         self.assertAlmostEqual(duration, 0.12, places=2)
+
+
+class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
+    async def test_dialogue_synthesis_sends_exact_turn_text_to_minimax(self):
+        turns = [
+            _turn("Alya", "Hi, good morning."),
+            _turn("Ben", "Good morning. How are you?"),
+            _turn("Alya", "I'm good, thank you."),
+        ]
+        sent_texts: list[str] = []
+
+        async def fake_synthesize_minimax_tts(**kwargs):
+            sent_texts.append(kwargs["text"])
+            audio = wav_chunk(frame_count=320)
+            return MiniMaxAudioResult(
+                audio_bytes=audio,
+                duration_seconds=0.01,
+                audio_format="wav",
+                audio_size=len(audio),
+                trace_id=f"trace-{len(sent_texts)}",
+                usage_characters=len(kwargs["text"]),
+                voice_id=kwargs["voice_id"],
+                speaker_voices={},
+                line_count=1,
+            )
+
+        with patch(
+            "app.services.audio_generation.synthesize_minimax_tts",
+            side_effect=fake_synthesize_minimax_tts,
+        ):
+            result = await synthesize_dialogue_minimax_tts(
+                turns=turns,
+                model="speech-2.8-hd",
+                fallback_voice_id="English_expressive_narrator",
+                speed=1,
+                language_boost="English",
+            )
+
+        self.assertEqual(
+            sent_texts,
+            [
+                "Hi, good morning.",
+                "Good morning. How are you?",
+                "I'm good, thank you.",
+            ],
+        )
+        self.assertEqual(result.line_count, 3)
+        self.assertEqual(result.voice_id, "multi_speaker")
 
 
 def _turn(speaker: str, text: str):
