@@ -1,4 +1,5 @@
 import type { LevelTest, LevelTestAttempt } from "@/lib/learning-api";
+import { getAuthToken } from "@/lib/auth-api";
 
 type ApiResponse<T> = {
   data: T;
@@ -50,12 +51,17 @@ function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
 
-async function adminRequestJson<T>(path: string, apiKey: string, init?: RequestInit): Promise<T> {
+async function adminRequestJson<T>(path: string, init?: RequestInit): Promise<T> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Admin login required");
+  }
+
   const response = await fetch(`${apiBaseUrl()}${path}`, {
     ...init,
     headers: {
       "Content-Type": "application/json",
-      "x-admin-api-key": apiKey,
+      Authorization: `Bearer ${token}`,
       ...init?.headers
     }
   });
@@ -115,7 +121,6 @@ function mapAttempt(attempt: ApiLevelTestAttempt): LevelTestAttempt {
 }
 
 export async function listAdminLevelTestAttempts(input: {
-  apiKey: string;
   levelCode?: string;
   status?: string;
   limit?: number;
@@ -128,25 +133,21 @@ export async function listAdminLevelTestAttempts(input: {
   params.set("limit", String(input.limit ?? 50));
 
   const response = await adminRequestJson<ApiResponse<ApiLevelTestAttempt[]>>(
-    `/admin/level-test-attempts?${params.toString()}`,
-    input.apiKey
+    `/admin/level-test-attempts?${params.toString()}`
   );
   return response.data.map(mapAttempt);
 }
 
 export async function getAdminLevelTestAttempt(input: {
-  apiKey: string;
   attemptId: string;
 }): Promise<LevelTestAttempt> {
   const response = await adminRequestJson<ApiResponse<ApiLevelTestAttempt>>(
-    `/admin/level-test-attempts/${input.attemptId}`,
-    input.apiKey
+    `/admin/level-test-attempts/${input.attemptId}`
   );
   return mapAttempt(response.data);
 }
 
 export async function scoreAdminLevelTestAttempt(input: {
-  apiKey: string;
   attemptId: string;
   reviewedBy: string;
   lessonCompletionPercent?: number | null;
@@ -155,7 +156,6 @@ export async function scoreAdminLevelTestAttempt(input: {
 }): Promise<LevelTestAttempt> {
   const response = await adminRequestJson<ApiResponse<ApiLevelTestAttempt>>(
     `/admin/level-test-attempts/${input.attemptId}/score`,
-    input.apiKey,
     {
       method: "POST",
       body: JSON.stringify({

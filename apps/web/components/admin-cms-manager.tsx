@@ -8,7 +8,6 @@ import {
   Clock3,
   FileText,
   Headphones,
-  KeyRound,
   ListChecks,
   RefreshCcw,
   RotateCcw,
@@ -18,6 +17,7 @@ import {
   type LucideIcon
 } from "lucide-react";
 import type { ReactNode } from "react";
+import type { AuthUser } from "@/lib/auth-api";
 import {
   getAdminCmsLesson,
   getAdminCmsSummary,
@@ -33,15 +33,13 @@ import {
   type AdminEmailTemplate
 } from "@/lib/admin-cms-api";
 
-const adminKeyStorageKey = "conversease.admin_key";
 const adminNameStorageKey = "conversease.admin_name";
 const statusOptions = ["draft", "review", "published", "archived"];
 
 type Tab = "readiness" | "curriculum" | "email";
 
-export function AdminCmsManager() {
-  const [apiKey, setApiKey] = useState("");
-  const [adminName, setAdminName] = useState("admin");
+export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
+  const [adminName, setAdminName] = useState(adminUser.name || adminUser.email);
   const [summary, setSummary] = useState<AdminCmsSummary | null>(null);
   const [tab, setTab] = useState<Tab>("readiness");
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
@@ -52,10 +50,6 @@ export function AdminCmsManager() {
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
 
   useEffect(() => {
-    const storedKey = window.sessionStorage.getItem(adminKeyStorageKey);
-    if (storedKey) {
-      setApiKey(storedKey);
-    }
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
     if (storedName) {
       setAdminName(storedName);
@@ -63,79 +57,62 @@ export function AdminCmsManager() {
   }, []);
 
   useEffect(() => {
-    if (apiKey) {
-      window.sessionStorage.setItem(adminKeyStorageKey, apiKey);
-    }
-  }, [apiKey]);
-
-  useEffect(() => {
     if (adminName.trim()) {
       window.sessionStorage.setItem(adminNameStorageKey, adminName);
     }
   }, [adminName]);
 
+  useEffect(() => {
+    void loadSummary();
+    // Load once when this admin screen opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const validationOk = (summary?.curriculum.validationIssues.length ?? 1) === 0;
 
   async function loadSummary() {
-    if (!apiKey) {
-      setError("Masukkan admin key dulu.");
-      return;
-    }
-
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
-      const nextSummary = await getAdminCmsSummary(apiKey);
+      const nextSummary = await getAdminCmsSummary();
       setSummary(nextSummary);
       setSelectedLesson(nextSummary.curriculum.lessons[0] ?? null);
       setSelectedTemplate(nextSummary.emailTemplates[0] ?? null);
       setMessage("CMS content berhasil dimuat.");
     } catch {
-      setError("CMS belum bisa dimuat. Cek admin key atau koneksi API.");
+      setError("CMS belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
     }
   }
 
   async function selectLesson(slug: string) {
-    if (!apiKey) {
-      return;
-    }
     setError("");
     try {
-      setSelectedLesson(await getAdminCmsLesson(apiKey, slug));
+      setSelectedLesson(await getAdminCmsLesson(slug));
     } catch {
       setError("Lesson belum bisa dimuat.");
     }
   }
 
   async function selectTemplate(templateKey: string) {
-    if (!apiKey) {
-      return;
-    }
     setError("");
     try {
-      setSelectedTemplate(await getAdminEmailTemplate(apiKey, templateKey));
+      setSelectedTemplate(await getAdminEmailTemplate(templateKey));
     } catch {
       setError("Email template belum bisa dimuat.");
     }
   }
 
   async function rollbackRevision(revision: AdminContentRevision) {
-    if (!apiKey) {
-      setError("Masukkan admin key dulu.");
-      return;
-    }
-
     setRestoringRevisionId(revision.id);
     setMessage("");
     setError("");
 
     try {
       const result = await rollbackAdminCmsRevision({
-        apiKey,
         revisionId: revision.id,
         restoredBy: adminName,
         notes: `Restored from ${revision.resourceKey} v${revision.version}`
@@ -152,7 +129,7 @@ export function AdminCmsManager() {
 
       setMessage(`${revision.resourceKey} berhasil direstore ke v${revision.version}.`);
     } catch {
-      setError("Revision belum bisa direstore. Cek admin key, revision, atau validasi content.");
+      setError("Revision belum bisa direstore. Cek role admin, revision, atau validasi content.");
     } finally {
       setRestoringRevisionId("");
     }
@@ -164,7 +141,7 @@ export function AdminCmsManager() {
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-lg bg-mint">
-              <KeyRound className="h-5 w-5 text-leaf" aria-hidden="true" />
+              <ShieldCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin CMS</p>
@@ -175,16 +152,9 @@ export function AdminCmsManager() {
             </div>
           </div>
 
-          <label className="mt-5 block text-sm font-medium text-ink/70">
-            Admin key
-            <input
-              type="password"
-              value={apiKey}
-              onChange={(event) => setApiKey(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              placeholder="Paste admin key"
-            />
-          </label>
+          <div className="mt-5 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+            Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
+          </div>
 
           <label className="mt-4 block text-sm font-medium text-ink/70">
             Operator
@@ -199,7 +169,7 @@ export function AdminCmsManager() {
           <button
             type="button"
             onClick={loadSummary}
-            disabled={!apiKey || isLoading}
+            disabled={isLoading}
             className="focus-ring mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
           >
             <RefreshCcw className="h-4 w-4" aria-hidden="true" />
@@ -250,7 +220,7 @@ export function AdminCmsManager() {
                     <button
                       type="button"
                       onClick={() => rollbackRevision(revision)}
-                      disabled={!apiKey || restoringRevisionId === revision.id}
+                      disabled={restoringRevisionId === revision.id}
                       className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
@@ -286,7 +256,6 @@ export function AdminCmsManager() {
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
-            apiKey={apiKey}
             updatedBy={adminName}
             lessons={summary?.curriculum.lessons ?? []}
             selectedLesson={selectedLesson}
@@ -300,7 +269,6 @@ export function AdminCmsManager() {
           />
         ) : (
           <EmailTemplateEditor
-            apiKey={apiKey}
             updatedBy={adminName}
             templates={summary?.emailTemplates ?? []}
             selectedTemplate={selectedTemplate}
@@ -476,7 +444,6 @@ function LevelReadinessCard({ readiness }: { readiness: AdminContentReadiness })
 }
 
 function CurriculumEditor({
-  apiKey,
   updatedBy,
   lessons,
   selectedLesson,
@@ -484,7 +451,6 @@ function CurriculumEditor({
   onSaved,
   onError
 }: {
-  apiKey: string;
   updatedBy: string;
   lessons: AdminCmsLesson[];
   selectedLesson: AdminCmsLesson | null;
@@ -502,7 +468,7 @@ function CurriculumEditor({
   }, [selectedLesson]);
 
   async function saveLesson() {
-    if (!apiKey || !draft) {
+    if (!draft) {
       return;
     }
 
@@ -511,7 +477,6 @@ function CurriculumEditor({
 
     try {
       const saved = await updateAdminCmsLesson({
-        apiKey,
         updatedBy,
         lessonSlug: draft.slug,
         title: draft.title,
@@ -626,7 +591,7 @@ function CurriculumEditor({
           <button
             type="button"
             onClick={saveLesson}
-            disabled={!apiKey || isSaving}
+            disabled={isSaving}
             className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
           >
             <Save className="h-4 w-4" aria-hidden="true" />
@@ -641,7 +606,6 @@ function CurriculumEditor({
 }
 
 function EmailTemplateEditor({
-  apiKey,
   updatedBy,
   templates,
   selectedTemplate,
@@ -649,7 +613,6 @@ function EmailTemplateEditor({
   onSaved,
   onError
 }: {
-  apiKey: string;
   updatedBy: string;
   templates: AdminEmailTemplate[];
   selectedTemplate: AdminEmailTemplate | null;
@@ -667,7 +630,7 @@ function EmailTemplateEditor({
   const preview = useMemo(() => selectedTemplate, [selectedTemplate]);
 
   async function saveTemplate() {
-    if (!apiKey || !selectedTemplate) {
+    if (!selectedTemplate) {
       return;
     }
 
@@ -676,7 +639,6 @@ function EmailTemplateEditor({
 
     try {
       const saved = await updateAdminEmailTemplate({
-        apiKey,
         updatedBy,
         templateKey: selectedTemplate.templateKey,
         rawBody,
@@ -730,7 +692,7 @@ function EmailTemplateEditor({
           <button
             type="button"
             onClick={saveTemplate}
-            disabled={!apiKey || isSaving}
+            disabled={isSaving}
             className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
           >
             <Save className="h-4 w-4" aria-hidden="true" />

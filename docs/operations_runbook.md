@@ -142,7 +142,7 @@ If a user says payment is not active:
 For controlled beta content edits:
 
 1. Open `/admin/cms`.
-2. Enter `PAYMENT_ADMIN_API_KEY`.
+2. Login with an account whose email is listed in `ADMIN_EMAILS_RAW` or promoted from `/admin/users`.
 3. Edit one lesson or one email template at a time.
 4. Save, then reload the CMS summary and confirm the change appears in Change Log.
 5. If a content edit needs to be reverted, click Restore on the target revision in Change Log and confirm a new `rollback` revision appears.
@@ -158,7 +158,7 @@ Do not give broad editorial access until draft approval is added.
 For beta manual scoring:
 
 1. Open `/admin/level-tests`.
-2. Enter `PAYMENT_ADMIN_API_KEY`.
+2. Login with an admin account.
 3. Load `Submitted` attempts.
 4. Select one attempt and review the user's final-test responses/recording from the support context.
 5. Enter section scores from 0 to 100, lesson completion percentage, reviewer name, and notes.

@@ -1,4 +1,5 @@
 import type { PaymentKind, PaymentMetadataValue, PaymentOrder } from "@/lib/billing-api";
+import { getAuthToken } from "@/lib/auth-api";
 
 type ApiResponse<T> = {
   data: T;
@@ -41,12 +42,17 @@ function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
 
-async function adminRequestJson<T>(path: string, apiKey: string, init?: RequestInit): Promise<T> {
+async function adminRequestJson<T>(path: string, init?: RequestInit): Promise<T> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Admin login required");
+  }
+
   const response = await fetch(`${apiBaseUrl()}${path}`, {
     ...init,
     headers: {
       "Content-Type": "application/json",
-      "x-admin-api-key": apiKey,
+      Authorization: `Bearer ${token}`,
       ...init?.headers
     }
   });
@@ -85,7 +91,6 @@ function mapOrder(order: ApiPaymentOrder): PaymentOrder {
 }
 
 export async function listAdminPaymentOrders(input: {
-  apiKey: string;
   status?: string;
   uniqueCode?: number;
   limit?: number;
@@ -103,32 +108,27 @@ export async function listAdminPaymentOrders(input: {
   params.set("limit", String(input.limit ?? 50));
 
   const response = await adminRequestJson<ApiResponse<ApiPaymentOrder[]>>(
-    `/admin/payment-orders?${params.toString()}`,
-    input.apiKey,
+    `/admin/payment-orders?${params.toString()}`
   );
   return response.data.map(mapOrder);
 }
 
 export async function getAdminPaymentOrder(input: {
-  apiKey: string;
   orderId: string;
 }): Promise<PaymentOrder> {
   const response = await adminRequestJson<ApiResponse<ApiPaymentOrder>>(
-    `/admin/payment-orders/${input.orderId}`,
-    input.apiKey,
+    `/admin/payment-orders/${input.orderId}`
   );
   return mapOrder(response.data);
 }
 
 export async function approveAdminPaymentOrder(input: {
-  apiKey: string;
   orderId: string;
   approvedBy: string;
   notes?: string;
 }): Promise<PaymentOrder> {
   const response = await adminRequestJson<ApiResponse<ApiPaymentOrder>>(
     `/admin/payment-orders/${input.orderId}/approve`,
-    input.apiKey,
     {
       method: "POST",
       body: JSON.stringify({
@@ -141,14 +141,12 @@ export async function approveAdminPaymentOrder(input: {
 }
 
 export async function rejectAdminPaymentOrder(input: {
-  apiKey: string;
   orderId: string;
   approvedBy: string;
   notes?: string;
 }): Promise<PaymentOrder> {
   const response = await adminRequestJson<ApiResponse<ApiPaymentOrder>>(
     `/admin/payment-orders/${input.orderId}/reject`,
-    input.apiKey,
     {
       method: "POST",
       body: JSON.stringify({
@@ -161,13 +159,11 @@ export async function rejectAdminPaymentOrder(input: {
 }
 
 export async function resendAdminPaymentDecisionEmail(input: {
-  apiKey: string;
   orderId: string;
   requestedBy: string;
 }): Promise<{ order: PaymentOrder; email: ApiPaymentNotificationResponse["email"] }> {
   const response = await adminRequestJson<ApiResponse<ApiPaymentNotificationResponse>>(
     `/admin/payment-orders/${input.orderId}/resend-decision-email`,
-    input.apiKey,
     {
       method: "POST",
       body: JSON.stringify({

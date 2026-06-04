@@ -6,7 +6,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from app.api.admin_deps import require_admin_api_key
+from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.db.session import get_db
 from app.data.admin_cms import (
     AdminCmsError,
@@ -51,7 +51,7 @@ class ContentRevisionRollbackPayload(BaseModel):
 
 @router.get("/admin/cms/summary")
 async def get_cms_summary(
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     revisions = ContentRevisionRepository(db).list_revisions(limit=10)
@@ -67,7 +67,7 @@ async def get_cms_summary(
 @router.get("/admin/cms/curriculum/lessons/{lesson_slug}")
 async def get_cms_lesson(
     lesson_slug: str,
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
 ) -> dict:
     try:
         return {"data": get_admin_lesson(lesson_slug)}
@@ -79,7 +79,7 @@ async def get_cms_lesson(
 async def patch_cms_lesson(
     lesson_slug: str,
     payload: AdminLessonUpdatePayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
@@ -100,7 +100,7 @@ async def patch_cms_lesson(
             resource_type="curriculum_lesson",
             resource_key=lesson_slug,
             action="update",
-            changed_by=payload.updated_by or "admin",
+            changed_by=admin_display_name(payload.updated_by, admin),
             before_payload=before,
             after_payload=lesson,
             metadata={"source": "admin_cms"},
@@ -117,7 +117,7 @@ async def patch_cms_lesson(
 @router.get("/admin/cms/email-templates/{template_key}")
 async def get_cms_email_template(
     template_key: str,
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
 ) -> dict:
     try:
         return {"data": get_email_template(template_key)}
@@ -129,7 +129,7 @@ async def get_cms_email_template(
 async def patch_cms_email_template(
     template_key: str,
     payload: EmailTemplateUpdatePayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
@@ -140,7 +140,7 @@ async def patch_cms_email_template(
             resource_type="email_template",
             resource_key=template_key,
             action="update",
-            changed_by=payload.updated_by or "admin",
+            changed_by=admin_display_name(payload.updated_by, admin),
             before_payload=before,
             after_payload=template,
             metadata={"source": "admin_cms"},
@@ -155,7 +155,7 @@ async def list_cms_revisions(
     resource_type: Optional[str] = Query(default=None, max_length=64),
     resource_key: Optional[str] = Query(default=None, max_length=240),
     limit: int = Query(default=50, ge=1, le=100),
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     revisions = ContentRevisionRepository(db).list_revisions(
@@ -170,7 +170,7 @@ async def list_cms_revisions(
 async def rollback_cms_revision(
     revision_id: str,
     payload: ContentRevisionRollbackPayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     repository = ContentRevisionRepository(db)
@@ -199,7 +199,7 @@ async def rollback_cms_revision(
             resource_type=target_revision.resource_type,
             resource_key=target_revision.resource_key,
             action="rollback",
-            changed_by=payload.restored_by or "admin",
+            changed_by=admin_display_name(payload.restored_by, admin),
             before_payload=before,
             after_payload=restored,
             metadata={
@@ -228,3 +228,10 @@ def admin_cms_http_error(exc: AdminCmsError) -> HTTPException:
 def verify_expected_content_hash(expected_content_hash: str, current_payload: dict) -> None:
     if expected_content_hash != current_payload.get("content_hash"):
         raise HTTPException(status_code=409, detail="content_changed_reload_required")
+
+
+def admin_display_name(value: Optional[str], admin: AdminActor) -> str:
+    clean_value = (value or "").strip()
+    if clean_value and clean_value.lower() != "admin":
+        return clean_value
+    return admin.display_name

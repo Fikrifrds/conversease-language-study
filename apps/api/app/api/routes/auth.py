@@ -42,6 +42,7 @@ class AuthUserPayload(BaseModel):
     id: str
     name: str
     email: str
+    role: str
     email_verified_at: Optional[str] = None
 
 
@@ -93,6 +94,7 @@ def user_payload(user: User) -> AuthUserPayload:
         id=user.id,
         name=user.name,
         email=user.email,
+        role=user.role,
         email_verified_at=user.email_verified_at.isoformat() if user.email_verified_at else None,
     )
 

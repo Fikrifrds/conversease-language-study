@@ -5,7 +5,6 @@ import { useSearchParams } from "next/navigation";
 import {
   CheckCircle2,
   ClipboardCheck,
-  KeyRound,
   MailCheck,
   RefreshCcw,
   Search,
@@ -21,8 +20,8 @@ import {
   resendAdminPaymentDecisionEmail
 } from "@/lib/admin-payment-api";
 import type { PaymentMetadataValue, PaymentOrder } from "@/lib/billing-api";
+import type { AuthUser } from "@/lib/auth-api";
 
-const adminKeyStorageKey = "conversease.payment_admin_key";
 const statusOptions = [
   { label: "Confirmed", value: "confirmed" },
   { label: "Pending", value: "pending" },
@@ -130,12 +129,11 @@ function statusTone(status: string) {
   return "bg-paper text-ink/70";
 }
 
-export function AdminPaymentManager() {
+export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
   const searchParams = useSearchParams();
   const deepLinkOrderId = searchParams.get("order_id") ?? "";
   const deepLinkUniqueCode = searchParams.get("unique_code") ?? "";
-  const [apiKey, setApiKey] = useState("");
-  const [adminName, setAdminName] = useState("Admin");
+  const [adminName, setAdminName] = useState(adminUser.name || adminUser.email);
   const [status, setStatus] = useState("confirmed");
   const [query, setQuery] = useState(deepLinkOrderId || deepLinkUniqueCode);
   const [orders, setOrders] = useState<PaymentOrder[]>([]);
@@ -148,26 +146,6 @@ export function AdminPaymentManager() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const storedKey = window.sessionStorage.getItem(adminKeyStorageKey);
-
-    if (storedKey) {
-      setApiKey(storedKey);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!apiKey) {
-      return;
-    }
-
-    window.sessionStorage.setItem(adminKeyStorageKey, apiKey);
-  }, [apiKey]);
-
-  useEffect(() => {
-    if (!apiKey) {
-      return;
-    }
-
     if (deepLinkOrderId) {
       void loadOrder(deepLinkOrderId);
       return;
@@ -175,10 +153,12 @@ export function AdminPaymentManager() {
 
     if (deepLinkUniqueCode) {
       void loadOrders({ uniqueCode: Number(deepLinkUniqueCode), nextStatus: "" });
+      return;
     }
-    // Deep link values should only bootstrap once after key becomes available.
+    void loadOrders();
+    // Deep link values should only bootstrap once when the admin screen opens.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [apiKey, deepLinkOrderId, deepLinkUniqueCode]);
+  }, [deepLinkOrderId, deepLinkUniqueCode]);
 
   const selectedCanApprove = selectedOrder?.status === "confirmed" || selectedOrder?.status === "pending";
 
@@ -197,18 +177,12 @@ export function AdminPaymentManager() {
   }, [orders]);
 
   async function loadOrders(input?: { uniqueCode?: number; nextStatus?: string }) {
-    if (!apiKey) {
-      setError("Masukkan admin key dulu.");
-      return;
-    }
-
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
       const nextOrders = await listAdminPaymentOrders({
-        apiKey,
         status: input?.nextStatus ?? status,
         uniqueCode: input?.uniqueCode,
         limit: 100
@@ -217,29 +191,24 @@ export function AdminPaymentManager() {
       setSelectedOrder(nextOrders[0] ?? null);
       setMessage(nextOrders.length ? `${nextOrders.length} order dimuat.` : "Tidak ada order pada filter ini.");
     } catch {
-      setError("Order belum bisa dimuat. Cek admin key atau koneksi API.");
+      setError("Order belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
     }
   }
 
   async function loadOrder(orderId: string) {
-    if (!apiKey) {
-      setError("Masukkan admin key dulu.");
-      return;
-    }
-
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
-      const order = await getAdminPaymentOrder({ apiKey, orderId });
+      const order = await getAdminPaymentOrder({ orderId });
       setOrders([order]);
       setSelectedOrder(order);
       setMessage("Order dari link email berhasil dimuat.");
     } catch {
-      setError("Order tidak ditemukan atau admin key tidak valid.");
+      setError("Order tidak ditemukan atau akses admin belum valid.");
     } finally {
       setIsLoading(false);
     }
@@ -280,13 +249,11 @@ export function AdminPaymentManager() {
       const nextOrder =
         decision === "approve"
           ? await approveAdminPaymentOrder({
-              apiKey,
               orderId: selectedOrder.id,
               approvedBy: adminName,
               notes
             })
           : await rejectAdminPaymentOrder({
-              apiKey,
               orderId: selectedOrder.id,
               approvedBy: adminName,
               notes
@@ -302,7 +269,7 @@ export function AdminPaymentManager() {
           : `Order ditolak. ${deliveryMessage}`,
       );
     } catch {
-      setError("Action gagal. Cek status order, admin key, atau koneksi API.");
+      setError("Action gagal. Cek status order, role admin, atau koneksi API.");
     } finally {
       setActionOrderId(null);
     }
@@ -319,7 +286,6 @@ export function AdminPaymentManager() {
 
     try {
       const result = await resendAdminPaymentDecisionEmail({
-        apiKey,
         orderId: selectedOrder.id,
         requestedBy: adminName
       });
@@ -331,7 +297,7 @@ export function AdminPaymentManager() {
           : `Order tetap tersimpan, tapi email belum terkirim: ${result.email.error ?? "cek provider email"}.`,
       );
     } catch {
-      setError("Email keputusan belum bisa dikirim. Cek status order, admin key, atau koneksi API.");
+      setError("Email keputusan belum bisa dikirim. Cek status order, role admin, atau koneksi API.");
     } finally {
       setNotificationOrderId(null);
     }
@@ -343,7 +309,7 @@ export function AdminPaymentManager() {
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-lg bg-mint">
-              <KeyRound className="h-5 w-5 text-leaf" aria-hidden="true" />
+              <ShieldCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin Access</p>
@@ -355,16 +321,9 @@ export function AdminPaymentManager() {
           </div>
 
           <div className="mt-5 grid gap-3">
-            <label className="text-sm font-medium text-ink/70">
-              Payment admin key
-              <input
-                type="password"
-                value={apiKey}
-                onChange={(event) => setApiKey(event.target.value)}
-                className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-                placeholder="Paste admin key"
-              />
-            </label>
+            <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+              Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
+            </div>
             <label className="text-sm font-medium text-ink/70">
               Approved by
               <input
@@ -383,7 +342,7 @@ export function AdminPaymentManager() {
             <button
               type="button"
               onClick={() => loadOrders()}
-              disabled={isLoading || !apiKey}
+              disabled={isLoading}
               className="focus-ring inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
             >
               <RefreshCcw className="h-4 w-4" aria-hidden="true" />
@@ -400,7 +359,6 @@ export function AdminPaymentManager() {
                   setStatus(option.value);
                   void loadOrders({ nextStatus: option.value });
                 }}
-                disabled={!apiKey}
                 className={`focus-ring min-h-10 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60 ${
                   status === option.value ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
                 }`}
@@ -421,7 +379,7 @@ export function AdminPaymentManager() {
             <button
               type="button"
               onClick={handleSearch}
-              disabled={isLoading || !apiKey}
+              disabled={isLoading}
               className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-lg bg-mint text-leaf disabled:cursor-not-allowed disabled:opacity-60"
               aria-label="Cari order"
               title="Cari order"
@@ -473,7 +431,7 @@ export function AdminPaymentManager() {
 
             {!orders.length ? (
               <div className="rounded-lg bg-paper p-5 text-sm leading-6 text-ink/60">
-                Masukkan admin key lalu klik refresh, atau buka link dari email konfirmasi transfer.
+                Klik refresh, atau buka link dari email konfirmasi transfer.
               </div>
             ) : null}
           </div>

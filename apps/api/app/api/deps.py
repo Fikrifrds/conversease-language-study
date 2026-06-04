@@ -2,6 +2,7 @@ from fastapi import Depends, HTTPException
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy.orm import Session
 
+from app.core.config import settings
 from app.core.security import decode_access_token
 from app.db.session import get_db
 from app.domain.users import User
@@ -23,7 +24,8 @@ def get_current_user(
     except ValueError as exc:
         raise HTTPException(status_code=401, detail="Invalid token") from exc
 
-    user = UserRepository(db).get_by_id(user_id)
+    repository = UserRepository(db)
+    user = repository.get_by_id(user_id)
     if user is None:
         raise HTTPException(status_code=401, detail="User not found")
-    return user
+    return repository.ensure_configured_admin_role(user, settings.admin_emails)

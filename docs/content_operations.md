@@ -28,12 +28,14 @@ Admin can check content in the web app:
 /admin/cms
 ```
 
-Use the `PAYMENT_ADMIN_API_KEY` value as the admin key. The Admin CMS has:
+Admin access uses the logged-in user role. Bootstrap the first admin by adding
+their email to `ADMIN_EMAILS_RAW`, then have that user login again. The Admin CMS has:
 
 - Readiness: level, unit, lesson, file, tracker, and audio checklist.
 - Curriculum: edit lesson title, status, goal, and roleplay metadata.
 - Email Templates: edit and validate email templates.
 - Change Log: view and rollback CMS edits.
+- Users: promote or demote other admin users without opening the database.
 
 For CLI checks:
 

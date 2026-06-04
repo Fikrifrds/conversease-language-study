@@ -38,6 +38,7 @@ class Settings(BaseSettings):
     google_oauth_client_id: str = ""
     google_oauth_client_secret: str = ""
     google_oauth_redirect_uri: str = ""
+    admin_emails_raw: str = ""
     llm_default_provider: str = "together"
     email_from: str = "Conversease <no-reply@mail.conversease.com>"
     email_reply_to: str = "support@conversease.com"
@@ -67,6 +68,10 @@ class Settings(BaseSettings):
     @property
     def cors_origins(self) -> List[str]:
         return [origin.strip() for origin in self.cors_origins_raw.split(",") if origin.strip()]
+
+    @property
+    def admin_emails(self) -> List[str]:
+        return [email.strip().lower() for email in self.admin_emails_raw.split(",") if email.strip()]
 
     @property
     def is_production(self) -> bool:

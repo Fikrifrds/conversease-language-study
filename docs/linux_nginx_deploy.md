@@ -339,6 +339,7 @@ JWT_SECRET=<random-min-32-char>
 GOOGLE_OAUTH_CLIENT_ID=<google-client-id>
 GOOGLE_OAUTH_CLIENT_SECRET=<google-client-secret>
 GOOGLE_OAUTH_REDIRECT_URI=https://api.example.com/api/auth/google/callback
+ADMIN_EMAILS_RAW=<first-admin-email@example.com>
 
 RESEND_API_KEY=<resend-api-key>
 PAYMENT_ADMIN_API_KEY=<random-min-24-char>
@@ -581,8 +582,8 @@ Setelah smoke otomatis pass:
 9. Transfer tepat sesuai nominal.
 10. User klik konfirmasi pembayaran.
 11. Pastikan email masuk ke `PAYMENT_ADMIN_EMAIL`.
-12. Buka `/admin/payments`.
-13. Masukkan `PAYMENT_ADMIN_API_KEY`.
+12. Login dengan email yang ada di `ADMIN_EMAILS_RAW`.
+13. Buka `/admin/payments`.
 14. Cocokkan exact amount, unique code, tanggal, dan sender dengan mutasi Bank Jago.
 15. Approve.
 16. Pastikan akses user aktif.
@@ -890,9 +891,10 @@ docker compose --env-file .env.production -f docker-compose.prod.yml build web
 docker compose --env-file .env.production -f docker-compose.prod.yml up -d web
 ```
 
-Admin key ditolak:
+Admin access ditolak:
 
-- Pastikan `PAYMENT_ADMIN_API_KEY` di `.env.production` sama dengan yang dimasukkan di `/admin/payments`.
+- Pastikan email admin ada di `ADMIN_EMAILS_RAW`, lalu login ulang.
+- Untuk admin tambahan, buka `/admin/users` dan promote user tersebut.
 - Restart API setelah env diganti.
 
 Email tidak terkirim:
@@ -935,4 +937,4 @@ Sebelum traffic user:
 - Test email admin sent true.
 - Manual transfer UAT pass.
 - Backup pertama berhasil dan checksum verified.
-- Admin menyimpan `PAYMENT_ADMIN_API_KEY` di password manager.
+- Admin pertama masuk lewat `ADMIN_EMAILS_RAW`; admin berikutnya dikelola dari `/admin/users`.

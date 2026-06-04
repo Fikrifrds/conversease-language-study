@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.routes import admin_cms, auth, billing, conversation, email, health, learning
+from app.api.routes import admin_cms, admin_users, auth, billing, conversation, email, health, learning
 from app.core.config import settings
 from app.core.observability import (
     RequestContextMiddleware,
@@ -36,6 +36,7 @@ def create_app() -> FastAPI:
     app.include_router(conversation.router, prefix="/api", tags=["conversation"])
     app.include_router(billing.router, prefix="/api", tags=["billing"])
     app.include_router(admin_cms.router, prefix="/api", tags=["admin-cms"])
+    app.include_router(admin_users.router, prefix="/api", tags=["admin-users"])
     app.include_router(email.router, prefix="/api", tags=["email"])
     return app
 

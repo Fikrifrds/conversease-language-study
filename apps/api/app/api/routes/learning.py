@@ -4,7 +4,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from app.api.admin_deps import require_admin_api_key
+from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.api.deps import get_current_user
 from app.data.curriculum import (
     A1_COURSE,
@@ -255,7 +255,7 @@ async def list_admin_level_test_attempts(
     level_code: Optional[str] = Query(default="A1", max_length=16),
     status: Optional[str] = Query(default=None, max_length=32),
     limit: int = Query(default=50, ge=1, le=100),
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     attempts = LevelTestAttemptRepository(db).list_attempts_for_admin(
@@ -269,7 +269,7 @@ async def list_admin_level_test_attempts(
 @router.get("/admin/level-test-attempts/{attempt_id}")
 async def get_admin_level_test_attempt(
     attempt_id: str,
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
@@ -284,13 +284,13 @@ async def get_admin_level_test_attempt(
 async def score_admin_level_test_attempt(
     attempt_id: str,
     payload: AdminLevelTestScorePayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
         attempt = LevelTestAttemptRepository(db).admin_score_attempt(
             attempt_id=attempt_id,
-            reviewed_by=payload.reviewed_by,
+            reviewed_by=admin_display_name(payload.reviewed_by, admin),
             scores=payload.scores,
             lesson_completion_percent=payload.lesson_completion_percent,
             notes=payload.notes,
@@ -301,6 +301,13 @@ async def score_admin_level_test_attempt(
         raise HTTPException(status_code=409, detail=str(exc)) from exc
 
     return {"data": level_test_attempt_payload(attempt)}
+
+
+def admin_display_name(value: Optional[str], admin: AdminActor) -> str:
+    clean_value = (value or "").strip()
+    if clean_value and clean_value.lower() != "admin":
+        return clean_value
+    return admin.display_name
 
 
 @router.post("/level-tests/{level_code}/attempts")

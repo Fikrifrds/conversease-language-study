@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { LogOut, UserCircle } from "lucide-react";
+import { LogOut, ShieldCheck, UserCircle } from "lucide-react";
 import {
   ApiRequestError,
   clearAuthSession,
@@ -85,6 +85,16 @@ export function UserAccountMenu() {
 
   return (
     <div className="flex items-center gap-2">
+      {session.user.role === "admin" ? (
+        <Link
+          href="/admin/cms"
+          className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-lg border border-ink/15 text-leaf hover:bg-mint"
+          title="Admin"
+          aria-label="Admin"
+        >
+          <ShieldCheck className="h-4 w-4" aria-hidden="true" />
+        </Link>
+      ) : null}
       <Link
         href="/settings"
         className="focus-ring inline-flex h-10 w-10 items-center justify-center gap-2 rounded-lg border border-ink/15 text-sm font-semibold text-ink/80 hover:bg-mint sm:w-auto sm:max-w-[180px] sm:justify-start sm:px-3"

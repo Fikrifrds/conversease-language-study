@@ -1,3 +1,5 @@
+import { getAuthToken } from "@/lib/auth-api";
+
 type ApiResponse<T> = {
   data: T;
 };
@@ -251,12 +253,17 @@ function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
 
-async function adminRequestJson<T>(path: string, apiKey: string, init?: RequestInit): Promise<T> {
+async function adminRequestJson<T>(path: string, init?: RequestInit): Promise<T> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Admin login required");
+  }
+
   const response = await fetch(`${apiBaseUrl()}${path}`, {
     ...init,
     headers: {
       "Content-Type": "application/json",
-      "x-admin-api-key": apiKey,
+      Authorization: `Bearer ${token}`,
       ...init?.headers
     }
   });
@@ -379,7 +386,7 @@ function mapRevision(revision: ApiAdminContentRevision): AdminContentRevision {
   };
 }
 
-export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummary> {
+export async function getAdminCmsSummary(): Promise<AdminCmsSummary> {
   const response = await adminRequestJson<
     ApiResponse<{
       curriculum: {
@@ -399,7 +406,7 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
       email_templates: ApiAdminEmailTemplate[];
       recent_revisions: ApiAdminContentRevision[];
     }>
-  >("/admin/cms/summary", apiKey);
+  >("/admin/cms/summary");
 
   return {
     curriculum: {
@@ -421,16 +428,14 @@ export async function getAdminCmsSummary(apiKey: string): Promise<AdminCmsSummar
   };
 }
 
-export async function getAdminCmsLesson(apiKey: string, lessonSlug: string): Promise<AdminCmsLesson> {
+export async function getAdminCmsLesson(lessonSlug: string): Promise<AdminCmsLesson> {
   const response = await adminRequestJson<ApiResponse<ApiAdminLesson>>(
-    `/admin/cms/curriculum/lessons/${lessonSlug}`,
-    apiKey
+    `/admin/cms/curriculum/lessons/${lessonSlug}`
   );
   return mapLesson(response.data);
 }
 
 export async function updateAdminCmsLesson(input: {
-  apiKey: string;
   updatedBy: string;
   lessonSlug: string;
   title: string;
@@ -445,7 +450,6 @@ export async function updateAdminCmsLesson(input: {
 }): Promise<AdminCmsLesson> {
   const response = await adminRequestJson<ApiResponse<ApiAdminLesson>>(
     `/admin/cms/curriculum/lessons/${input.lessonSlug}`,
-    input.apiKey,
     {
       method: "PATCH",
       body: JSON.stringify({
@@ -465,16 +469,14 @@ export async function updateAdminCmsLesson(input: {
   return mapLesson(response.data);
 }
 
-export async function getAdminEmailTemplate(apiKey: string, templateKey: string): Promise<AdminEmailTemplate> {
+export async function getAdminEmailTemplate(templateKey: string): Promise<AdminEmailTemplate> {
   const response = await adminRequestJson<ApiResponse<ApiAdminEmailTemplate>>(
-    `/admin/cms/email-templates/${templateKey}`,
-    apiKey
+    `/admin/cms/email-templates/${templateKey}`
   );
   return mapEmailTemplate(response.data);
 }
 
 export async function updateAdminEmailTemplate(input: {
-  apiKey: string;
   updatedBy: string;
   templateKey: string;
   rawBody: string;
@@ -482,7 +484,6 @@ export async function updateAdminEmailTemplate(input: {
 }): Promise<AdminEmailTemplate> {
   const response = await adminRequestJson<ApiResponse<ApiAdminEmailTemplate>>(
     `/admin/cms/email-templates/${input.templateKey}`,
-    input.apiKey,
     {
       method: "PATCH",
       body: JSON.stringify({
@@ -496,7 +497,6 @@ export async function updateAdminEmailTemplate(input: {
 }
 
 export async function rollbackAdminCmsRevision(input: {
-  apiKey: string;
   revisionId: string;
   restoredBy: string;
   notes?: string;
@@ -506,7 +506,7 @@ export async function rollbackAdminCmsRevision(input: {
       revision: ApiAdminContentRevision;
       rolled_back_from: ApiAdminContentRevision;
     }
-  >(`/admin/cms/revisions/${input.revisionId}/rollback`, input.apiKey, {
+  >(`/admin/cms/revisions/${input.revisionId}/rollback`, {
     method: "POST",
     body: JSON.stringify({
       restored_by: input.restoredBy,

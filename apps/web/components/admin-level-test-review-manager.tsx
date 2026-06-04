@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { ClipboardCheck, KeyRound, RefreshCcw, Save } from "lucide-react";
+import { ClipboardCheck, RefreshCcw, Save, ShieldCheck } from "lucide-react";
 import {
   listAdminLevelTestAttempts,
   scoreAdminLevelTestAttempt
 } from "@/lib/admin-level-test-api";
 import type { LevelTestAttempt } from "@/lib/learning-api";
+import type { AuthUser } from "@/lib/auth-api";
 
-const adminKeyStorageKey = "conversease.admin_key";
 const reviewerStorageKey = "conversease.level_test_reviewer";
 const statusOptions = [
   { label: "Submitted", value: "submitted" },
@@ -41,9 +41,8 @@ function statusTone(status: string) {
   return "bg-paper text-ink/70";
 }
 
-export function AdminLevelTestReviewManager() {
-  const [apiKey, setApiKey] = useState("");
-  const [reviewerName, setReviewerName] = useState("Admin");
+export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser }) {
+  const [reviewerName, setReviewerName] = useState(adminUser.name || adminUser.email);
   const [status, setStatus] = useState("submitted");
   const [attempts, setAttempts] = useState<LevelTestAttempt[]>([]);
   const [selectedAttempt, setSelectedAttempt] = useState<LevelTestAttempt | null>(null);
@@ -56,27 +55,23 @@ export function AdminLevelTestReviewManager() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    const storedKey = window.sessionStorage.getItem(adminKeyStorageKey);
     const storedReviewer = window.sessionStorage.getItem(reviewerStorageKey);
-    if (storedKey) {
-      setApiKey(storedKey);
-    }
     if (storedReviewer) {
       setReviewerName(storedReviewer);
     }
   }, []);
 
   useEffect(() => {
-    if (apiKey) {
-      window.sessionStorage.setItem(adminKeyStorageKey, apiKey);
-    }
-  }, [apiKey]);
-
-  useEffect(() => {
     if (reviewerName.trim()) {
       window.sessionStorage.setItem(reviewerStorageKey, reviewerName);
     }
   }, [reviewerName]);
+
+  useEffect(() => {
+    void loadAttempts();
+    // Load once when this admin screen opens.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (!selectedAttempt) {
@@ -117,18 +112,12 @@ export function AdminLevelTestReviewManager() {
   }, [attempts]);
 
   async function loadAttempts(input?: { nextStatus?: string }) {
-    if (!apiKey) {
-      setError("Masukkan admin key dulu.");
-      return;
-    }
-
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
       const nextAttempts = await listAdminLevelTestAttempts({
-        apiKey,
         levelCode: "A1",
         status: input?.nextStatus ?? status,
         limit: 100
@@ -141,7 +130,7 @@ export function AdminLevelTestReviewManager() {
           : "Tidak ada attempt pada filter ini."
       );
     } catch {
-      setError("Attempt belum bisa dimuat. Cek admin key atau koneksi API.");
+      setError("Attempt belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
     }
@@ -158,7 +147,6 @@ export function AdminLevelTestReviewManager() {
 
     try {
       const reviewed = await scoreAdminLevelTestAttempt({
-        apiKey,
         attemptId: selectedAttempt.id,
         reviewedBy: reviewerName,
         lessonCompletionPercent,
@@ -183,7 +171,7 @@ export function AdminLevelTestReviewManager() {
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-lg bg-mint">
-              <KeyRound className="h-5 w-5 text-leaf" aria-hidden="true" />
+              <ShieldCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin Review</p>
@@ -195,16 +183,9 @@ export function AdminLevelTestReviewManager() {
           </div>
 
           <div className="mt-5 grid gap-3">
-            <label className="text-sm font-medium text-ink/70">
-              Admin key
-              <input
-                type="password"
-                value={apiKey}
-                onChange={(event) => setApiKey(event.target.value)}
-                className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-                placeholder="Paste admin key"
-              />
-            </label>
+            <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+              Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
+            </div>
             <label className="text-sm font-medium text-ink/70">
               Reviewed by
               <input
@@ -222,7 +203,7 @@ export function AdminLevelTestReviewManager() {
             <button
               type="button"
               onClick={() => loadAttempts()}
-              disabled={isLoading || !apiKey}
+              disabled={isLoading}
               className="focus-ring inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
             >
               <RefreshCcw className="h-4 w-4" aria-hidden="true" />
@@ -239,7 +220,6 @@ export function AdminLevelTestReviewManager() {
                   setStatus(option.value);
                   void loadAttempts({ nextStatus: option.value });
                 }}
-                disabled={!apiKey}
                 className={`focus-ring min-h-10 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60 ${
                   status === option.value ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
                 }`}

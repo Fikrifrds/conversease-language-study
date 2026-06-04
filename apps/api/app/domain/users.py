@@ -11,3 +11,4 @@ class User:
     email_verified_at: Optional[datetime]
     created_at: datetime
     updated_at: datetime
+    role: str = "student"

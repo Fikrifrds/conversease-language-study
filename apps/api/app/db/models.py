@@ -253,6 +253,13 @@ class UserModel(Base):
     id: Mapped[str] = mapped_column(String(64), primary_key=True)
     name: Mapped[str] = mapped_column(String(160), nullable=False)
     email: Mapped[str] = mapped_column(String(320), unique=True, index=True, nullable=False)
+    role: Mapped[str] = mapped_column(
+        String(32),
+        index=True,
+        nullable=False,
+        default="student",
+        server_default="student",
+    )
     password_hash: Mapped[str] = mapped_column(String(255), nullable=False)
     email_verified_at: Mapped[Optional[datetime]] = mapped_column(DateTime, index=True, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)

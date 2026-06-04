@@ -46,7 +46,7 @@
 - Curriculum release validation via `scripts/validate_curriculum.py`, including published lesson support files and `content/production_tracker.csv`.
 - Production release preflight via `scripts/release_preflight.py` for API/web config, DB, migration, curriculum, manual transfer/email, email template rendering, backup tooling, and optional automation readiness.
 - Post-deploy HTTP smoke checks via `scripts/release_smoke.py` for API/web readiness and admin email diagnostics.
-- Admin CMS editing for lesson metadata, roleplay prompts, target phrases, and Markdown email templates, protected by `PAYMENT_ADMIN_API_KEY`, with database-backed content revision audit logs, rollback, and stale edit protection.
+- Admin CMS editing for lesson metadata, roleplay prompts, target phrases, and Markdown email templates, protected by logged-in admin user role, with database-backed content revision audit logs, rollback, and stale edit protection.
 - Conversation Coach API feedback and next prompts are aligned to the active lesson slug; the web app uses synced API feedback when available and keeps local fallback for offline/dev resilience.
 - Pure backend domain rules for:
   - A1 evaluation threshold

@@ -2,6 +2,7 @@ export type AuthUser = {
   id: string;
   name: string;
   email: string;
+  role: "student" | "admin";
   emailVerifiedAt: string | null;
 };
 
@@ -14,6 +15,7 @@ type ApiAuthUser = {
   id: string;
   name: string;
   email: string;
+  role?: "student" | "admin";
   email_verified_at: string | null;
 };
 
@@ -78,12 +80,13 @@ export function getAuthSession(): AuthSession | null {
     if (!value.accessToken || !value.user?.id || !value.user.email) {
       return null;
     }
-    const session = {
+    const session: AuthSession = {
       accessToken: value.accessToken,
       user: {
         id: value.user.id,
         name: value.user.name ?? "",
         email: value.user.email,
+        role: value.user.role === "admin" ? "admin" : "student",
         emailVerifiedAt: value.user.emailVerifiedAt ?? null
       }
     };
@@ -203,6 +206,7 @@ function mapUser(user: ApiAuthUser): AuthUser {
     id: user.id,
     name: user.name,
     email: user.email,
+    role: user.role === "admin" ? "admin" : "student",
     emailVerifiedAt: user.email_verified_at
   };
 }

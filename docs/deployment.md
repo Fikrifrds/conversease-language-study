@@ -32,6 +32,7 @@ GOOGLE_OAUTH_CLIENT_ID=<google-oauth-client-id>
 GOOGLE_OAUTH_CLIENT_SECRET=<google-oauth-client-secret>
 # Optional if different from API_BASE_URL + /api/auth/google/callback
 GOOGLE_OAUTH_REDIRECT_URI=https://api.conversease.com/api/auth/google/callback
+ADMIN_EMAILS_RAW=<first-admin-email@example.com>
 NEXT_PUBLIC_API_BASE_URL=https://api.conversease.com/api
 PAYMENT_ADMIN_EMAIL=denahku.team@gmail.com
 PAYMENT_ADMIN_API_KEY=<at-least-24-random-characters>
@@ -81,7 +82,7 @@ After the user confirms transfer, the API stores transfer date/sender details, c
 https://app.conversease.com/admin/payments?order_id=<order-id>&unique_code=<code>
 ```
 
-The admin opens that page, enters `PAYMENT_ADMIN_API_KEY`, matches the exact amount against the Bank Jago mutation, then approves or rejects the order. Approval activates the subscription/top-up immediately and is idempotent: approving the same successful order again does not grant duplicate subscription or minutes. Approve/reject decisions send a user email (`payment_manual_approved` or `payment_manual_rejected`) so the user gets confirmation without refreshing billing manually. The delivery result is stored in order metadata under `customer_decision_email` and shown in `/admin/payments`. If `RESEND_API_KEY` is missing or Resend is down, the order decision still completes; fix email delivery, then use **Resend** from the order detail.
+The admin logs in with an account whose email is listed in `ADMIN_EMAILS_RAW`, opens that page, matches the exact amount against the Bank Jago mutation, then approves or rejects the order. Approval activates the subscription/top-up immediately and is idempotent: approving the same successful order again does not grant duplicate subscription or minutes. Approve/reject decisions send a user email (`payment_manual_approved` or `payment_manual_rejected`) so the user gets confirmation without refreshing billing manually. The delivery result is stored in order metadata under `customer_decision_email` and shown in `/admin/payments`. If `RESEND_API_KEY` is missing or Resend is down, the order decision still completes; fix email delivery, then use **Resend** from the order detail.
 
 The user can reopen `/billing?order_id=<order-id>` while logged in to the same account to recover the exact transfer instructions and current status after refresh, browser close, or email follow-up. The API returns `404` for orders owned by another user.
 
@@ -136,7 +137,7 @@ The controlled beta CMS is available at:
 https://app.conversease.com/admin/cms
 ```
 
-Use the same `PAYMENT_ADMIN_API_KEY` as `/admin/payments`. The page can edit:
+Use a logged-in admin account. The page can edit:
 
 - Published lesson metadata in `content/curriculum/**/lesson.yaml`
 - Conversation Coach roleplay setup in `conversation_coach_roleplay.yaml`
@@ -165,7 +166,7 @@ The controlled beta admin review page is available at:
 https://app.conversease.com/admin/level-tests
 ```
 
-Use the same `PAYMENT_ADMIN_API_KEY` as `/admin/payments`. The page can:
+Use a logged-in admin account. The page can:
 
 - Load A1 attempts by status: `submitted`, `reviewed`, `in_progress`, or all.
 - Score each weighted final-test section from 0 to 100.
@@ -330,8 +331,8 @@ Then finish the human smoke flow:
 15. Reload `/billing?order_id=<order-id>` and verify the same instructions/status are restored for the same logged-in user.
 16. Confirm transfer and verify the order status changes to `confirmed`.
 17. Approve the order from `/admin/payments`, verify the quota/access updates, verify the user receives the approval email, and use Resend if the order detail shows email delivery failed.
-18. Open `/admin/cms`, load the summary with `PAYMENT_ADMIN_API_KEY`, and verify curriculum plus email templates are readable.
-19. Open `/admin/level-tests`, load submitted A1 attempts with `PAYMENT_ADMIN_API_KEY`, save an official review, and verify the user report status changes to `reviewed`.
+18. Open `/admin/cms` while logged in as an admin, and verify curriculum plus email templates are readable.
+19. Open `/admin/level-tests` while logged in as an admin, save an official review, and verify the user report status changes to `reviewed`.
 20. Run one Conversation Coach turn and confirm progress is saved.
 21. Check `/api/ready` again after smoke testing.
 

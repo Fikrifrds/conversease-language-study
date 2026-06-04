@@ -7,7 +7,7 @@ from fastapi import Query
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from app.api.admin_deps import require_admin_api_key
+from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.data.seed import EMAIL_TEMPLATES, SUBSCRIPTION_PLANS, TOPUP_PACKAGES
 from app.api.deps import get_current_user
 from app.core.config import settings
@@ -100,7 +100,6 @@ def manual_transfer_confirmation_email(current_user: User, order: PaymentOrderMo
         f"{settings.public_app_url.rstrip('/')}/admin/payments"
         f"?order_id={order.id}&unique_code={order.unique_code or ''}"
     )
-    approve_url = f"{settings.api_base_url.rstrip('/')}/api/admin/payment-orders/{order.id}/approve"
     order_url = f"{settings.public_app_url.rstrip('/')}/billing?order_id={order.id}"
     safe_user_name = escape(current_user.name)
     safe_user_email = escape(current_user.email)
@@ -144,8 +143,6 @@ def manual_transfer_confirmation_email(current_user: User, order: PaymentOrderMo
             f"{details_html}</table>"
             f'<p style="margin: 0 0 12px;">Order user: <a href="{order_url}" '
             'style="color: #c2410c;">lihat billing user</a>.</p>'
-            f'<p style="margin: 0 0 18px; font-size: 13px;">Approve API: '
-            f"<code>POST {approve_url}</code> dengan header <code>x-admin-api-key</code>.</p>"
         ),
         cta_label="Review Pembayaran",
         cta_url=admin_url,
@@ -165,7 +162,6 @@ def manual_transfer_confirmation_email(current_user: User, order: PaymentOrderMo
             f"Bank pengirim: {metadata.get('sender_bank', '-')}",
             f"Catatan user: {metadata.get('user_notes', '-')}",
             f"Review admin: {admin_url}",
-            f"Approve API: POST {approve_url} dengan header x-admin-api-key.",
             f"Order user: {order_url}",
         ]
     )
@@ -425,7 +421,7 @@ async def list_admin_payment_orders(
     status: Optional[str] = Query(default=None, max_length=32),
     unique_code: Optional[int] = Query(default=None, ge=1, le=999),
     limit: int = Query(default=50, ge=1, le=100),
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     orders = BillingRepository(db).list_payment_orders(
@@ -439,7 +435,7 @@ async def list_admin_payment_orders(
 @router.get("/admin/payment-orders/{order_id}")
 async def get_admin_payment_order(
     order_id: str,
-    _: bool = Depends(require_admin_api_key),
+    _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
@@ -454,7 +450,7 @@ async def get_admin_payment_order(
 async def approve_admin_payment_order(
     order_id: str,
     payload: AdminPaymentDecisionPayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     repository = BillingRepository(db)
@@ -463,7 +459,7 @@ async def approve_admin_payment_order(
         previous_status = current_order.status
         order = repository.approve_manual_order(
             order_id=order_id,
-            approved_by=payload.approved_by,
+            approved_by=admin_display_name(payload.approved_by, admin),
             notes=payload.notes,
         )
     except KeyError as exc:
@@ -486,7 +482,7 @@ async def approve_admin_payment_order(
 async def reject_admin_payment_order(
     order_id: str,
     payload: AdminPaymentDecisionPayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     repository = BillingRepository(db)
@@ -495,7 +491,7 @@ async def reject_admin_payment_order(
         previous_status = current_order.status
         order = repository.reject_manual_order(
             order_id=order_id,
-            approved_by=payload.approved_by,
+            approved_by=admin_display_name(payload.approved_by, admin),
             notes=payload.notes,
         )
     except KeyError as exc:
@@ -518,7 +514,7 @@ async def reject_admin_payment_order(
 async def resend_admin_payment_decision_email(
     order_id: str,
     payload: AdminPaymentNotificationPayload,
-    _: bool = Depends(require_admin_api_key),
+    admin: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
     try:
@@ -533,7 +529,8 @@ async def resend_admin_payment_decision_email(
             detail="Payment order must be approved or rejected before sending a decision email",
         )
 
-    requester = "-".join(payload.requested_by.strip().lower().split()) or "admin"
+    requester_name = admin_display_name(payload.requested_by, admin)
+    requester = "-".join(requester_name.strip().lower().split()) or "admin"
     result = await send_and_record_manual_transfer_customer_decision_email(
         db,
         order,
@@ -542,3 +539,10 @@ async def resend_admin_payment_decision_email(
     )
 
     return {"data": {"order": order_payload(order), "email": email_payload(result)}}
+
+
+def admin_display_name(value: Optional[str], admin: AdminActor) -> str:
+    clean_value = (value or "").strip()
+    if clean_value and clean_value.lower() != "admin":
+        return clean_value
+    return admin.display_name
