@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import Optional
 
 from app.core.config import settings
+from app.domain.email import branded_email_html
 from app.domain.users import User
 from app.services.email_delivery import EmailDeliveryResult, EmailDeliveryService
 
@@ -23,15 +24,24 @@ class AuthEmailService:
         result = await self.delivery.send_email(
             recipient_email=user.email,
             subject="Verifikasi email Conversease kamu",
-            html_body=(
-                f"<p>Hi {escape_text(user.name)},</p>"
-                "<p>Klik tombol berikut untuk verifikasi email Conversease kamu.</p>"
-                f'<p><a href="{verify_url}">Verifikasi Email</a></p>'
-                "<p>Jika kamu tidak membuat akun Conversease, abaikan email ini.</p>"
+            html_body=branded_email_html(
+                public_app_url=settings.public_app_url,
+                preheader="Satu langkah lagi untuk mulai belajar lewat percakapan.",
+                title="Verifikasi email kamu",
+                body_html=(
+                    f'<p style="margin: 0 0 14px;">Hi {escape_text(user.name)},</p>'
+                    '<p style="margin: 0 0 18px;">Klik tombol di bawah untuk mengaktifkan akun '
+                    "Conversease kamu dan mulai mission pertama.</p>"
+                ),
+                cta_label="Verifikasi Email",
+                cta_url=verify_url,
+                footer_note="Jika kamu tidak membuat akun Conversease, abaikan email ini.",
             ),
             text_body=(
-                f"Hi {user.name}, buka link berikut untuk verifikasi email Conversease kamu: "
-                f"{verify_url}"
+                f"Hi {user.name},\n\n"
+                "Klik link berikut untuk verifikasi email Conversease kamu:\n"
+                f"{verify_url}\n\n"
+                "Jika kamu tidak membuat akun Conversease, abaikan email ini."
             ),
             idempotency_key=f"auth-verify:{user.id}:{token[:12]}",
         )
@@ -42,13 +52,25 @@ class AuthEmailService:
         result = await self.delivery.send_email(
             recipient_email=user.email,
             subject="Reset password Conversease",
-            html_body=(
-                f"<p>Hi {escape_text(user.name)},</p>"
-                "<p>Klik tombol berikut untuk membuat password baru.</p>"
-                f'<p><a href="{reset_url}">Reset Password</a></p>'
-                "<p>Jika kamu tidak meminta reset password, abaikan email ini.</p>"
+            html_body=branded_email_html(
+                public_app_url=settings.public_app_url,
+                preheader="Buat password baru untuk akun Conversease kamu.",
+                title="Reset password Conversease",
+                body_html=(
+                    f'<p style="margin: 0 0 14px;">Hi {escape_text(user.name)},</p>'
+                    '<p style="margin: 0 0 18px;">Klik tombol di bawah untuk membuat password '
+                    "baru. Link ini hanya untuk permintaan reset password terbaru.</p>"
+                ),
+                cta_label="Reset Password",
+                cta_url=reset_url,
+                footer_note="Jika kamu tidak meminta reset password, abaikan email ini.",
             ),
-            text_body=f"Hi {user.name}, buka link berikut untuk reset password Conversease: {reset_url}",
+            text_body=(
+                f"Hi {user.name},\n\n"
+                "Klik link berikut untuk reset password Conversease:\n"
+                f"{reset_url}\n\n"
+                "Jika kamu tidak meminta reset password, abaikan email ini."
+            ),
             idempotency_key=f"auth-reset:{user.id}:{token[:12]}",
         )
         return self._result(result, reset_url)

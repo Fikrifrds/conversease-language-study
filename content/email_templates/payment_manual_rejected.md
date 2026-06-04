@@ -7,11 +7,10 @@ Preheader: Admin belum bisa menyetujui konfirmasi transfer kamu.
 CTA: Buka Billing
 
 ```html
-<p>Hi {{ name }}, konfirmasi transfer untuk {{ package_name }} belum bisa disetujui.</p>
-<p>Nominal order: {{ amount }}.</p>
-<p>Catatan admin: {{ admin_notes }}</p>
-<p>Buka halaman billing untuk membuat order baru atau hubungi support: <a href="{{ billing_url }}">{{ billing_url }}</a></p>
-<p>Order ID: {{ order_id }}</p>
+<p style="margin: 0 0 14px;">Hi {{ name }}, konfirmasi transfer untuk {{ package_name }} belum bisa disetujui.</p>
+<p style="margin: 0 0 14px;">Nominal order: {{ amount }}.</p>
+<p style="margin: 0 0 14px;">Catatan admin: {{ admin_notes }}</p>
+<p style="margin: 0 0 18px; color: #78716c;">Order ID: {{ order_id }}</p>
 ```
 
 ```txt

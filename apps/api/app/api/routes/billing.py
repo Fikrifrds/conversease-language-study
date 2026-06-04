@@ -13,7 +13,7 @@ from app.api.deps import get_current_user
 from app.core.config import settings
 from app.db.models import PaymentOrderModel
 from app.db.session import get_db
-from app.domain.email import build_idempotency_key, render_template
+from app.domain.email import branded_email_html, build_idempotency_key, render_template
 from app.domain.payment import PaymentKind, PaymentStatus
 from app.domain.users import User
 from app.repositories.billing import (
@@ -109,23 +109,48 @@ def manual_transfer_confirmation_email(current_user: User, order: PaymentOrderMo
     safe_sender_name = escape(str(metadata.get("sender_name", "-")))
     safe_sender_bank = escape(str(metadata.get("sender_bank", "-")))
     safe_notes = escape(str(metadata.get("user_notes", "-")))
-    html_body = f"""
-    <p>Konfirmasi pembayaran manual Conversease perlu dicek.</p>
-    <p><strong>Order:</strong> {order.id}<br />
-    <strong>User:</strong> {safe_user_name} ({safe_user_email})<br />
-    <strong>Paket:</strong> {safe_package_name}<br />
-    <strong>Nominal transfer:</strong> {format_idr(order.amount_idr)}<br />
-    <strong>Harga dasar:</strong> {format_idr(order.base_amount_idr or order.amount_idr)}<br />
-    <strong>Kode unik:</strong> {order.unique_code or "-"}<br />
-    <strong>Tanggal transfer:</strong> {safe_transfer_date}<br />
-    <strong>Nama pengirim:</strong> {safe_sender_name}<br />
-    <strong>Bank pengirim:</strong> {safe_sender_bank}</p>
-    <p><strong>Catatan user:</strong> {safe_notes}</p>
-    <p>Review dan approve dari halaman admin: <a href="{admin_url}">{admin_url}</a></p>
-    <p>Approve via API: <code>POST {approve_url}</code> dengan header
-    <code>x-admin-api-key</code>.</p>
-    <p>Order user: <a href="{order_url}">{order_url}</a></p>
-    """
+    detail_rows = [
+        ("Order", order.id),
+        ("User", f"{safe_user_name} ({safe_user_email})"),
+        ("Paket", safe_package_name),
+        ("Nominal transfer", format_idr(order.amount_idr)),
+        ("Harga dasar", format_idr(order.base_amount_idr or order.amount_idr)),
+        ("Kode unik", str(order.unique_code or "-")),
+        ("Tanggal transfer", safe_transfer_date),
+        ("Nama pengirim", safe_sender_name),
+        ("Bank pengirim", safe_sender_bank),
+        ("Catatan user", safe_notes),
+    ]
+    details_html = "".join(
+        (
+            '<tr>'
+            '<td style="padding: 8px 0; color: #78716c; font-size: 13px;">'
+            f"{label}</td>"
+            '<td style="padding: 8px 0; color: #1c1917; font-size: 13px; font-weight: 700; text-align: right;">'
+            f"{value}</td>"
+            "</tr>"
+        )
+        for label, value in detail_rows
+    )
+    html_body = branded_email_html(
+        public_app_url=settings.public_app_url,
+        preheader=f"Transfer {format_idr(order.amount_idr)} dengan kode unik {order.unique_code}.",
+        title="Konfirmasi transfer perlu dicek",
+        body_html=(
+            '<p style="margin: 0 0 16px;">Ada konfirmasi pembayaran manual Conversease yang perlu '
+            "direview admin.</p>"
+            '<table role="presentation" width="100%" cellspacing="0" cellpadding="0" '
+            'style="border-collapse: collapse; margin: 4px 0 18px;">'
+            f"{details_html}</table>"
+            f'<p style="margin: 0 0 12px;">Order user: <a href="{order_url}" '
+            'style="color: #c2410c;">lihat billing user</a>.</p>'
+            f'<p style="margin: 0 0 18px; font-size: 13px;">Approve API: '
+            f"<code>POST {approve_url}</code> dengan header <code>x-admin-api-key</code>.</p>"
+        ),
+        cta_label="Review Pembayaran",
+        cta_url=admin_url,
+        footer_note="Pastikan nominal, kode unik, tanggal, dan nama pengirim cocok dengan mutasi Bank Jago.",
+    )
     text_body = "\n".join(
         [
             "Konfirmasi pembayaran manual Conversease perlu dicek.",
@@ -185,7 +210,14 @@ def manual_transfer_customer_decision_email(
     return {
         "recipient_email": user.email,
         "subject": render_template(template.subject, variables),
-        "html_body": render_template(template.html_body, html_variables),
+        "html_body": branded_email_html(
+            public_app_url=settings.public_app_url,
+            preheader=render_template(template.preheader, variables),
+            title=render_template(template.subject, variables),
+            body_html=render_template(template.html_body, html_variables),
+            cta_label=render_template(template.cta_label, variables),
+            cta_url=render_template(template.cta_url, variables),
+        ),
         "text_body": render_template(template.text_body, variables),
         "reply_to": settings.email_reply_to or settings.payment_admin_email,
         "idempotency_key": build_idempotency_key(user.id, template.template_key, event_id or order.id),

@@ -6,7 +6,12 @@ from pydantic import BaseModel, Field
 from app.api.admin_deps import require_admin_api_key
 from app.data.seed import EMAIL_TEMPLATES
 from app.core.config import settings
-from app.domain.email import build_idempotency_key, render_template, unresolved_template_variables
+from app.domain.email import (
+    branded_email_html,
+    build_idempotency_key,
+    render_template,
+    unresolved_template_variables,
+)
 from app.services.email_delivery import EmailDeliveryService
 
 router = APIRouter()
@@ -52,9 +57,17 @@ def rendered_email_payload(payload: TestEmailPayload) -> dict:
     template = get_email_template_or_404(payload.template_key)
     variables = {**default_test_email_variables(), **payload.variables}
     subject = render_template(template.subject, variables)
-    html_body = render_template(template.html_body, variables)
+    content_html = render_template(template.html_body, variables)
     text_body = render_template(template.text_body, variables)
     cta_url = render_template(template.cta_url, variables)
+    html_body = branded_email_html(
+        public_app_url=settings.public_app_url,
+        preheader=render_template(template.preheader, variables),
+        title=subject,
+        body_html=content_html,
+        cta_label=render_template(template.cta_label, variables),
+        cta_url=cta_url,
+    )
     unresolved = sorted(
         set(
             unresolved_template_variables(subject)

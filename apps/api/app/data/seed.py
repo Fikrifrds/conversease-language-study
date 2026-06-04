@@ -182,9 +182,13 @@ EMAIL_TEMPLATES = [
         category=EmailCategory.AUTH,
         subject="Verifikasi email Conversease kamu",
         preheader="Satu langkah lagi untuk mulai belajar lewat percakapan.",
-        html_body="<p>Hi {{ name }}, klik tombol ini untuk verifikasi email kamu.</p>",
-        text_body="Hi {{ name }}, buka link berikut untuk verifikasi email: {{ cta_url }}",
-        cta_label="Verify Email",
+        html_body=(
+            '<p style="margin: 0 0 14px;">Hi {{ name }},</p>'
+            '<p style="margin: 0 0 18px;">Verifikasi email kamu untuk mengaktifkan akun '
+            "Conversease dan mulai mission pertama.</p>"
+        ),
+        text_body="Hi {{ name }}, buka link berikut untuk verifikasi email: {{ verify_url }}",
+        cta_label="Verifikasi Email",
         cta_url="{{ verify_url }}",
     ),
     EmailTemplate(
@@ -192,9 +196,13 @@ EMAIL_TEMPLATES = [
         category=EmailCategory.PAYMENT,
         subject="Pembayaran Pro Conversease berhasil",
         preheader="Akses Pro kamu sudah aktif.",
-        html_body="<p>Hi {{ name }}, pembayaran kamu berhasil. Saatnya lanjut belajar.</p>",
-        text_body="Hi {{ name }}, pembayaran Pro kamu berhasil. Lanjut belajar: {{ cta_url }}",
-        cta_label="Start Learning",
+        html_body=(
+            '<p style="margin: 0 0 14px;">Hi {{ name }}, pembayaran Pro kamu berhasil.</p>'
+            '<p style="margin: 0 0 18px;">Akses Pro sudah aktif untuk kurikulum lengkap, '
+            "feedback detail, evaluasi level, dan latihan Conversation Coach.</p>"
+        ),
+        text_body="Hi {{ name }}, pembayaran Pro kamu berhasil. Lanjut belajar: {{ dashboard_url }}",
+        cta_label="Lanjut Belajar",
         cta_url="{{ dashboard_url }}",
     ),
     EmailTemplate(
@@ -203,10 +211,11 @@ EMAIL_TEMPLATES = [
         subject="Pembayaran Conversease kamu sudah disetujui",
         preheader="Akses kamu sudah aktif setelah verifikasi transfer manual.",
         html_body=(
-            "<p>Hi {{ name }}, pembayaran {{ package_name }} kamu sudah disetujui.</p>"
-            "<p>Akses sudah aktif. Nominal yang diverifikasi: {{ amount }}.</p>"
-            '<p><a href="{{ dashboard_url }}">Lanjut belajar</a></p>'
-            "<p>Order ID: {{ order_id }}</p>"
+            '<p style="margin: 0 0 14px;">Hi {{ name }}, pembayaran {{ package_name }} kamu '
+            "sudah disetujui.</p>"
+            '<p style="margin: 0 0 14px;">Akses sudah aktif. Nominal yang diverifikasi: '
+            "{{ amount }}.</p>"
+            '<p style="margin: 0 0 18px; color: #78716c;">Order ID: {{ order_id }}</p>'
         ),
         text_body=(
             "Hi {{ name }}, pembayaran {{ package_name }} kamu sudah disetujui. "
@@ -222,12 +231,11 @@ EMAIL_TEMPLATES = [
         subject="Konfirmasi transfer Conversease perlu dicek ulang",
         preheader="Admin belum bisa menyetujui konfirmasi transfer kamu.",
         html_body=(
-            "<p>Hi {{ name }}, konfirmasi transfer untuk {{ package_name }} belum bisa disetujui.</p>"
-            "<p>Nominal order: {{ amount }}.</p>"
-            "<p>Catatan admin: {{ admin_notes }}</p>"
-            '<p>Buka halaman billing untuk membuat order baru atau hubungi support: '
-            '<a href="{{ billing_url }}">{{ billing_url }}</a></p>'
-            "<p>Order ID: {{ order_id }}</p>"
+            '<p style="margin: 0 0 14px;">Hi {{ name }}, konfirmasi transfer untuk '
+            "{{ package_name }} belum bisa disetujui.</p>"
+            '<p style="margin: 0 0 14px;">Nominal order: {{ amount }}.</p>'
+            '<p style="margin: 0 0 14px;">Catatan admin: {{ admin_notes }}</p>'
+            '<p style="margin: 0 0 18px; color: #78716c;">Order ID: {{ order_id }}</p>'
         ),
         text_body=(
             "Hi {{ name }}, konfirmasi transfer untuk {{ package_name }} belum bisa disetujui. "
@@ -242,8 +250,16 @@ EMAIL_TEMPLATES = [
         category=EmailCategory.MINUTES,
         subject="Menit Conversation Coach kamu hampir habis",
         preheader="Top up agar latihan speaking tetap lancar.",
-        html_body="<p>Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit.</p>",
-        text_body="Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit.",
+        html_body=(
+            '<p style="margin: 0 0 14px;">Menit Conversation Coach kamu tersisa '
+            "{{ remaining_minutes }} menit.</p>"
+            '<p style="margin: 0 0 18px;">Top up jika kamu ingin lanjut latihan speaking '
+            "tambahan tanpa menunggu reset kuota berikutnya.</p>"
+        ),
+        text_body=(
+            "Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit. "
+            "Top up: {{ billing_url }}"
+        ),
         cta_label="Top Up Kuota Coach",
         cta_url="{{ billing_url }}",
     ),

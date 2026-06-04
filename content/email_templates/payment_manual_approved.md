@@ -7,10 +7,9 @@ Preheader: Akses kamu sudah aktif setelah verifikasi transfer manual.
 CTA: Lanjut Belajar
 
 ```html
-<p>Hi {{ name }}, pembayaran {{ package_name }} kamu sudah disetujui.</p>
-<p>Akses sudah aktif. Nominal yang diverifikasi: {{ amount }}.</p>
-<p><a href="{{ dashboard_url }}">Lanjut belajar</a></p>
-<p>Order ID: {{ order_id }}</p>
+<p style="margin: 0 0 14px;">Hi {{ name }}, pembayaran {{ package_name }} kamu sudah disetujui.</p>
+<p style="margin: 0 0 14px;">Akses sudah aktif. Nominal yang diverifikasi: {{ amount }}.</p>
+<p style="margin: 0 0 18px; color: #78716c;">Order ID: {{ order_id }}</p>
 ```
 
 ```txt

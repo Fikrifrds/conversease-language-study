@@ -7,10 +7,11 @@ Preheader: Top up agar latihan speaking tetap lancar.
 CTA: Top Up Kuota Coach
 
 ```html
-<p>Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit.</p>
+<p style="margin: 0 0 14px;">Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit.</p>
+<p style="margin: 0 0 18px;">Top up jika kamu ingin lanjut latihan speaking tambahan tanpa menunggu reset kuota berikutnya.</p>
 ```
 
 ```txt
 Menit Conversation Coach kamu tersisa {{ remaining_minutes }} menit.
-Top up: {{ cta_url }}
+Top up: {{ billing_url }}
 ```

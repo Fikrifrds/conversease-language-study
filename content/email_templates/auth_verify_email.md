@@ -4,15 +4,14 @@ Subject: Verifikasi email Conversease kamu
 
 Preheader: Satu langkah lagi untuk mulai belajar lewat percakapan.
 
-CTA: Verify Email
+CTA: Verifikasi Email
 
 ```html
-<p>Hi {{ name }},</p>
-<p>Klik tombol berikut untuk verifikasi email kamu dan mulai mission pertama.</p>
+<p style="margin: 0 0 14px;">Hi {{ name }},</p>
+<p style="margin: 0 0 18px;">Verifikasi email kamu untuk mengaktifkan akun Conversease dan mulai mission pertama.</p>
 ```
 
 ```txt
 Hi {{ name }},
-Buka link berikut untuk verifikasi email kamu: {{ cta_url }}
+Buka link berikut untuk verifikasi email kamu: {{ verify_url }}
 ```
-
