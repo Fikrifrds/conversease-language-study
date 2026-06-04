@@ -1,3 +1,4 @@
+from pathlib import Path
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -6,6 +7,7 @@ from sqlalchemy.orm import Session
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.api.deps import get_current_user
+from app.data.content_readiness import lesson_audio_asset
 from app.data.curriculum import (
     A1_COURSE,
     load_a1_final_evaluation,
@@ -132,6 +134,19 @@ async def get_lesson(slug: str) -> dict:
                     }
                 }
     raise HTTPException(status_code=404, detail="Lesson not found")
+
+
+@router.get("/lessons/{slug}/audio")
+async def get_lesson_audio(
+    slug: str,
+    _: User = Depends(get_current_user),
+) -> dict:
+    lesson = get_lesson_or_none(slug)
+    if lesson is None:
+        raise HTTPException(status_code=404, detail="Lesson not found")
+
+    lesson_dir = Path(lesson["content_files"]["lesson"]).parent
+    return {"data": lesson_audio_asset(lesson_dir)}
 
 
 @router.get("/level-tests/{level_code}")

@@ -1,5 +1,6 @@
 import unittest
 from datetime import datetime
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -15,6 +16,68 @@ from app.main import create_app
 
 
 class LearningRoutesTest(unittest.TestCase):
+    def test_authenticated_user_can_get_lesson_audio_asset(self):
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        token = create_access_token("user-123")
+        headers = {"Authorization": f"Bearer {token}"}
+        audio_asset = {
+            "key": "dialogue_main",
+            "type": "dialogue",
+            "audio_url": "https://conversease-assets.s3.ap-southeast-1.amazonaws.com/audio.mp3",
+            "playback_url": "https://signed.example.com/audio.mp3",
+            "duration_seconds": 10.5,
+            "provider": "minimax",
+            "model": "speech-2.8-hd",
+            "voice_id": "English_expressive_narrator",
+            "audio_format": "mp3",
+            "storage_key": "conversease/audio/english/A1/audio.mp3",
+            "generated_at": "2026-06-04T00:00:00+00:00",
+            "generated_by": "Audio QA",
+        }
+
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="user-123",
+                        name="QA Tester",
+                        email="qa@example.local",
+                        password_hash="hashed",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            with patch("app.api.routes.learning.lesson_audio_asset", return_value=audio_asset):
+                unauthorized = client.get("/api/lessons/saying-hello-and-goodbye/audio")
+                authorized = client.get("/api/lessons/saying-hello-and-goodbye/audio", headers=headers)
+
+            self.assertEqual(unauthorized.status_code, 401)
+            self.assertEqual(authorized.status_code, 200)
+            self.assertEqual(authorized.json()["data"]["playback_url"], audio_asset["playback_url"])
+        finally:
+            app.dependency_overrides.clear()
+
     def test_get_a1_level_test_returns_published_test(self):
         client = TestClient(create_app())
 

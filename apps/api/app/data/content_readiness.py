@@ -7,6 +7,7 @@ from typing import Any, Optional
 import yaml
 
 from app.data.curriculum import curriculum_root, production_tracker_path
+from app.services.audio_generation import audio_playback_url
 
 
 AUDIO_READY_STATUSES = {"done", "generated", "published"}
@@ -473,16 +474,21 @@ def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
     if not dialogue_asset:
         return None
 
+    audio_url = str(dialogue_asset.get("audio_url") or "")
+    storage_key = str(dialogue_asset.get("storage_key") or "")
+    playback_url = audio_playback_url(audio_url=audio_url, storage_key=storage_key)
+
     return {
         "key": str(dialogue_asset.get("key") or ""),
         "type": str(dialogue_asset.get("type") or ""),
-        "audio_url": str(dialogue_asset.get("audio_url") or ""),
+        "audio_url": audio_url,
+        "playback_url": playback_url,
         "duration_seconds": float(dialogue_asset.get("duration_seconds") or 0),
         "provider": str(dialogue_asset.get("provider") or data.get("provider") or ""),
         "model": str(dialogue_asset.get("model") or ""),
         "voice_id": str(dialogue_asset.get("voice_id") or ""),
         "audio_format": str(dialogue_asset.get("audio_format") or ""),
-        "storage_key": str(dialogue_asset.get("storage_key") or ""),
+        "storage_key": storage_key,
         "generated_at": str(dialogue_asset.get("generated_at") or ""),
         "generated_by": str(dialogue_asset.get("generated_by") or ""),
     }

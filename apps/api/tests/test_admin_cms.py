@@ -225,6 +225,7 @@ class AdminCmsTest(unittest.TestCase):
 
         preview_audio = {
             "audio_url": "https://cdn.example.com/previews/sample.mp3",
+            "playback_url": "https://signed.example.com/previews/sample.mp3",
             "object_key": "conversease/audio/previews/voice/sample.mp3",
             "duration_seconds": 3.2,
             "audio_format": "mp3",
@@ -257,6 +258,7 @@ class AdminCmsTest(unittest.TestCase):
 
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json()["data"]["audio_url"], preview_audio["audio_url"])
+            self.assertEqual(response.json()["data"]["playback_url"], preview_audio["playback_url"])
             generate_preview.assert_awaited_once_with(
                 model="speech-2.8-hd",
                 voice_id="English_expressive_narrator",
@@ -295,6 +297,7 @@ class AdminCmsTest(unittest.TestCase):
             "lesson_key": "lesson-01-saying-hello",
             "title": "Saying Hello and Goodbye",
             "audio_url": "https://cdn.example.com/audio.mp3",
+            "playback_url": "https://signed.example.com/audio.mp3",
             "object_key": "conversease/audio/english/A1/audio.mp3",
             "duration_seconds": 12.4,
             "audio_format": "mp3",
@@ -335,6 +338,7 @@ class AdminCmsTest(unittest.TestCase):
 
             self.assertEqual(response.status_code, 200)
             self.assertEqual(response.json()["data"]["audio_url"], generated_audio["audio_url"])
+            self.assertEqual(response.json()["data"]["playback_url"], generated_audio["playback_url"])
             self.assertEqual(response.json()["revision"]["resource_type"], "curriculum_audio")
             self.assertEqual(response.json()["revision"]["changed_by"], "Audio QA")
             generate_audio.assert_awaited_once_with(

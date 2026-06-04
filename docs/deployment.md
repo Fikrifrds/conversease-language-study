@@ -76,9 +76,10 @@ AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 AWS_REGION=ap-southeast-1
 S3_PUBLIC_BASE_URL=
+S3_PRESIGNED_URL_EXPIRES_SECONDS=3600
 ```
 
-Admin CMS audio generation uses MiniMax T2A and uploads generated files to S3. If `S3_PUBLIC_BASE_URL` is empty, the API stores the S3 object URL as `https://{bucket}.s3.{region}.amazonaws.com/{key}`.
+Admin CMS audio generation uses MiniMax T2A and uploads generated files to S3. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs for CMS previews and lesson listening audio. Use `S3_PUBLIC_BASE_URL` only when audio is served through a public bucket or CDN.
 
 `NEXT_PUBLIC_API_BASE_URL` is baked into the web build. For production it must be HTTPS, include the `/api` path, and match `API_BASE_URL + /api`. The release preflight fails production deploys when these values drift.
 

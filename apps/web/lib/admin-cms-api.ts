@@ -57,6 +57,7 @@ export type AdminAudioAsset = {
   key: string;
   type: string;
   audioUrl: string;
+  playbackUrl: string;
   durationSeconds: number;
   provider: string;
   model: string;
@@ -147,6 +148,7 @@ export type AdminGeneratedAudio = {
   lessonKey: string;
   title: string;
   audioUrl: string;
+  playbackUrl: string;
   objectKey: string;
   durationSeconds: number;
   audioFormat: string;
@@ -159,6 +161,7 @@ export type AdminGeneratedAudio = {
 
 export type AdminVoicePreviewAudio = {
   audioUrl: string;
+  playbackUrl: string;
   objectKey: string;
   durationSeconds: number;
   audioFormat: string;
@@ -258,6 +261,7 @@ type ApiAdminAudioAsset = {
   key: string;
   type: string;
   audio_url: string;
+  playback_url: string;
   duration_seconds: number;
   provider: string;
   model: string;
@@ -348,6 +352,7 @@ type ApiAdminGeneratedAudio = {
   lesson_key: string;
   title: string;
   audio_url: string;
+  playback_url: string;
   object_key: string;
   duration_seconds: number;
   audio_format: string;
@@ -360,6 +365,7 @@ type ApiAdminGeneratedAudio = {
 
 type ApiAdminVoicePreviewAudio = {
   audio_url: string;
+  playback_url: string;
   object_key: string;
   duration_seconds: number;
   audio_format: string;
@@ -489,6 +495,7 @@ function mapAudioAsset(asset: ApiAdminAudioAsset): AdminAudioAsset {
     key: asset.key,
     type: asset.type,
     audioUrl: asset.audio_url,
+    playbackUrl: asset.playback_url,
     durationSeconds: asset.duration_seconds,
     provider: asset.provider,
     model: asset.model,
@@ -554,6 +561,7 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
     lessonKey: audio.lesson_key,
     title: audio.title,
     audioUrl: audio.audio_url,
+    playbackUrl: audio.playback_url,
     objectKey: audio.object_key,
     durationSeconds: audio.duration_seconds,
     audioFormat: audio.audio_format,
@@ -568,6 +576,7 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
 function mapVoicePreviewAudio(audio: ApiAdminVoicePreviewAudio): AdminVoicePreviewAudio {
   return {
     audioUrl: audio.audio_url,
+    playbackUrl: audio.playback_url,
     objectKey: audio.object_key,
     durationSeconds: audio.duration_seconds,
     audioFormat: audio.audio_format,

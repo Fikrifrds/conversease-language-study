@@ -632,7 +632,7 @@ function AudioSettingsPanel({
           </p>
           {preview?.audioUrl ? (
             <div className="mt-3">
-              <audio controls preload="metadata" src={preview.audioUrl} className="h-10 w-full" />
+              <audio controls preload="metadata" src={preview.playbackUrl || preview.audioUrl} className="h-10 w-full" />
               <p className="mt-2 text-xs text-ink/45">
                 {preview.model} / {preview.voiceId} / {formatDuration(preview.durationSeconds)}
               </p>
@@ -770,7 +770,7 @@ function LevelReadinessCard({
                       </div>
                     ) : null}
 
-                    {lesson.audioAsset?.audioUrl ? (
+                    {lesson.audioAsset?.playbackUrl || lesson.audioAsset?.audioUrl ? (
                       <div className="rounded-lg bg-white p-3">
                         <div className="flex flex-wrap items-start justify-between gap-3">
                           <div>
@@ -782,7 +782,7 @@ function LevelReadinessCard({
                             </p>
                           </div>
                           <a
-                            href={lesson.audioAsset.audioUrl}
+                            href={lesson.audioAsset.playbackUrl || lesson.audioAsset.audioUrl}
                             target="_blank"
                             rel="noreferrer"
                             className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-paper px-2 text-xs font-semibold text-ink hover:bg-mint"
@@ -794,7 +794,7 @@ function LevelReadinessCard({
                         <audio
                           controls
                           preload="metadata"
-                          src={lesson.audioAsset.audioUrl}
+                          src={lesson.audioAsset.playbackUrl || lesson.audioAsset.audioUrl}
                           className="mt-3 h-10 w-full"
                         />
                         <p className="mt-2 break-all text-xs text-ink/45">{lesson.audioAsset.storageKey}</p>

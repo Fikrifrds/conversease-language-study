@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Headphones, Mic, Play, RotateCcw, Send } from "lucide-react";
+import { Headphones, Mic, RotateCcw, Send } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
+import { LessonAudioPlayer } from "@/components/lesson-audio-player";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
 import { lessonCatalog, lessonsBySlug } from "@/lib/data";
 
@@ -32,15 +33,12 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             </section>
 
             <section className="mt-8">
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
                   <Headphones className="h-5 w-5 text-leaf" aria-hidden="true" />
                   <h2 className="text-xl font-semibold">Listen to a Dialogue</h2>
                 </div>
-                <button className="focus-ring inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-leaf">
-                  <Play className="h-4 w-4" aria-hidden="true" />
-                  Play
-                </button>
+                <LessonAudioPlayer lessonSlug={lesson.slug} />
               </div>
               <div className="mt-4 space-y-3">
                 {lesson.dialogue.map((line, index) => (

@@ -35,6 +35,21 @@ export type LearningLessonSummary = {
   updatedAt: string | null;
 };
 
+export type LearningLessonAudioAsset = {
+  key: string;
+  type: string;
+  audioUrl: string;
+  playbackUrl: string;
+  durationSeconds: number;
+  provider: string;
+  model: string;
+  voiceId: string;
+  audioFormat: string;
+  storageKey: string;
+  generatedAt: string;
+  generatedBy: string;
+};
+
 export type LearningProgressSummary = {
   onboarding: OnboardingProfile | null;
   course: {
@@ -137,6 +152,21 @@ type ApiLearningLessonSummary = {
   completed_sections: string[];
   total_sections: number;
   updated_at: string | null;
+};
+
+type ApiLearningLessonAudioAsset = {
+  key: string;
+  type: string;
+  audio_url: string;
+  playback_url: string;
+  duration_seconds: number;
+  provider: string;
+  model: string;
+  voice_id: string;
+  audio_format: string;
+  storage_key: string;
+  generated_at: string;
+  generated_by: string;
 };
 
 type ApiLearningProgressSummary = {
@@ -272,6 +302,23 @@ function mapLessonProgress(progress: ApiLessonProgress): LessonProgress {
   };
 }
 
+function mapLessonAudioAsset(asset: ApiLearningLessonAudioAsset): LearningLessonAudioAsset {
+  return {
+    key: asset.key,
+    type: asset.type,
+    audioUrl: asset.audio_url,
+    playbackUrl: asset.playback_url,
+    durationSeconds: asset.duration_seconds,
+    provider: asset.provider,
+    model: asset.model,
+    voiceId: asset.voice_id,
+    audioFormat: asset.audio_format,
+    storageKey: asset.storage_key,
+    generatedAt: asset.generated_at,
+    generatedBy: asset.generated_by
+  };
+}
+
 function mapLevelTest(test: ApiLevelTest): LevelTest {
   return {
     levelCode: test.level_code,
@@ -367,6 +414,13 @@ export async function getLessonProgress(lessonSlug: string): Promise<LessonProgr
     `/lessons/${lessonSlug}/progress`
   );
   return response.data ? mapLessonProgress(response.data) : null;
+}
+
+export async function getLessonAudio(lessonSlug: string): Promise<LearningLessonAudioAsset | null> {
+  const response = await requestJson<ApiResponse<ApiLearningLessonAudioAsset | null>>(
+    `/lessons/${lessonSlug}/audio`
+  );
+  return response.data ? mapLessonAudioAsset(response.data) : null;
 }
 
 export async function startLessonProgress(lessonSlug: string): Promise<LessonProgress> {

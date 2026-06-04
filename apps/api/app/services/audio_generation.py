@@ -229,6 +229,7 @@ async def generate_lesson_listening_audio(
         object_key=object_key,
         content_type=content_type_for_audio_format(generated.audio_format),
     )
+    playback_url = audio_playback_url(audio_url=audio_url, storage_key=object_key)
 
     manifest = update_audio_manifest(
         lesson=lesson,
@@ -249,6 +250,7 @@ async def generate_lesson_listening_audio(
         "lesson_key": lesson.lesson_key,
         "title": lesson.title,
         "audio_url": audio_url,
+        "playback_url": playback_url,
         "object_key": object_key,
         "duration_seconds": generated.duration_seconds,
         "audio_format": generated.audio_format,
@@ -307,9 +309,11 @@ async def generate_voice_preview_audio(
         object_key=object_key,
         content_type=content_type_for_audio_format(generated.audio_format),
     )
+    playback_url = audio_playback_url(audio_url=audio_url, storage_key=object_key)
 
     return {
         "audio_url": audio_url,
+        "playback_url": playback_url,
         "object_key": object_key,
         "duration_seconds": generated.duration_seconds,
         "audio_format": generated.audio_format,
@@ -488,17 +492,7 @@ def listening_script_to_tts_text(path: Path) -> str:
 
 
 def upload_audio_to_s3(*, audio_bytes: bytes, object_key: str, content_type: str) -> str:
-    try:
-        import boto3
-    except ImportError as exc:
-        raise AudioGenerationError("boto3_missing") from exc
-
-    client = boto3.client(
-        "s3",
-        region_name=settings.aws_region,
-        aws_access_key_id=settings.aws_access_key_id,
-        aws_secret_access_key=settings.aws_secret_access_key,
-    )
+    client = s3_client()
     client.put_object(
         Bucket=settings.s3_bucket,
         Key=object_key,
@@ -508,12 +502,46 @@ def upload_audio_to_s3(*, audio_bytes: bytes, object_key: str, content_type: str
     return public_s3_url(object_key)
 
 
+def s3_client():
+    try:
+        import boto3
+    except ImportError as exc:
+        raise AudioGenerationError("boto3_missing") from exc
+
+    return boto3.client(
+        "s3",
+        region_name=settings.aws_region,
+        aws_access_key_id=settings.aws_access_key_id,
+        aws_secret_access_key=settings.aws_secret_access_key,
+    )
+
+
 def public_s3_url(object_key: str) -> str:
     if settings.s3_public_base_url:
         return f"{settings.s3_public_base_url.rstrip('/')}/{quote(object_key)}"
     bucket = settings.s3_bucket
     region = settings.aws_region
     return f"https://{bucket}.s3.{region}.amazonaws.com/{quote(object_key)}"
+
+
+def audio_playback_url(*, audio_url: str = "", storage_key: str = "") -> str:
+    if storage_key and settings.s3_public_base_url:
+        return public_s3_url(storage_key)
+    if storage_key and s3_configured():
+        try:
+            return presigned_s3_url(storage_key)
+        except AudioGenerationError:
+            return audio_url or public_s3_url(storage_key)
+    return audio_url
+
+
+def presigned_s3_url(object_key: str) -> str:
+    client = s3_client()
+    return client.generate_presigned_url(
+        "get_object",
+        Params={"Bucket": settings.s3_bucket, "Key": object_key},
+        ExpiresIn=settings.s3_presigned_url_expires_seconds,
+    )
 
 
 def update_audio_manifest(

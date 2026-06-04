@@ -74,6 +74,7 @@ class Settings(BaseSettings):
     aws_secret_access_key: str = ""
     aws_region: str = "ap-southeast-1"
     s3_public_base_url: str = ""
+    s3_presigned_url_expires_seconds: int = 3600
     rate_limit_enabled: bool = True
     rate_limit_window_seconds: int = 60
     auth_rate_limit_requests: int = 30
