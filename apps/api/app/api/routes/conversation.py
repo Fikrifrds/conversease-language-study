@@ -1,4 +1,6 @@
-from fastapi import APIRouter, Depends, HTTPException
+from typing import Optional
+
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
@@ -12,6 +14,7 @@ from app.domain.conversation_practice import (
 )
 from app.repositories.billing import BillingRepository, InsufficientMinutesError
 from app.repositories.conversation_practice import ConversationPracticeRepository
+from app.services.speech_to_text import SpeechToTextError, transcribe_recorded_audio
 
 
 router = APIRouter()
@@ -94,6 +97,59 @@ async def create_conversation_turn(
     return {"data": turn_payload(session, turn)}
 
 
+@router.post("/conversation-sessions/{session_id}/turns/audio")
+async def create_conversation_audio_turn(
+    session_id: str,
+    audio: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+    repository: ConversationPracticeRepository = Depends(get_repository),
+) -> dict:
+    session = repository.get_session(session_id)
+
+    if session is None:
+        raise HTTPException(status_code=404, detail="Conversation session not found")
+
+    if session.user_id != current_user.id:
+        raise HTTPException(status_code=403, detail="Conversation session user mismatch")
+
+    if session.completed:
+        raise HTTPException(status_code=409, detail="conversation_session_completed")
+
+    if not allowed_recorded_audio_content_type(audio.content_type):
+        raise HTTPException(status_code=422, detail="unsupported_audio_content_type")
+
+    audio_bytes = await audio.read()
+    try:
+        transcription = await transcribe_recorded_audio(
+            audio_bytes=audio_bytes,
+            filename=audio.filename or "conversation-turn.webm",
+            content_type=audio.content_type,
+        )
+    except SpeechToTextError as exc:
+        raise speech_to_text_http_error(exc) from exc
+
+    try:
+        BillingRepository(db).consume_minutes(
+            user_id=current_user.id,
+            requested_minutes=1,
+            related_session_id=session_id,
+        )
+    except InsufficientMinutesError as exc:
+        raise HTTPException(status_code=402, detail="Conversation Coach minutes are empty") from exc
+
+    try:
+        session, turn = repository.add_turn(
+            session_id=session_id,
+            transcript=transcription.text,
+            transcription=transcription.transcription,
+        )
+    except ValueError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+
+    return {"data": turn_payload(session, turn)}
+
+
 @router.get("/conversation-practice/latest")
 async def get_latest_conversation_practice(
     lesson_slug: str = "saying-hello-and-goodbye",
@@ -120,3 +176,26 @@ async def reset_latest_conversation_practice(
         lesson_slug=lesson_slug,
     )
     return {"data": {"reset": reset}}
+
+
+def allowed_recorded_audio_content_type(content_type: Optional[str]) -> bool:
+    if not content_type:
+        return True
+    normalized = content_type.split(";", 1)[0].strip().lower()
+    return (
+        normalized.startswith("audio/")
+        or normalized in {"video/webm", "application/octet-stream"}
+    )
+
+
+def speech_to_text_http_error(exc: SpeechToTextError) -> HTTPException:
+    detail = str(exc)
+    if "api_key_missing" in detail:
+        return HTTPException(status_code=503, detail=detail)
+    if detail in {"audio_file_empty", "audio_file_too_large", "unsupported_audio_content_type"}:
+        return HTTPException(status_code=422, detail=detail)
+    if detail in {"transcript_empty"}:
+        return HTTPException(status_code=422, detail=detail)
+    if "timeout" in detail:
+        return HTTPException(status_code=504, detail=detail)
+    return HTTPException(status_code=502, detail=detail)

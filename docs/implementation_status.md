@@ -48,6 +48,7 @@
 - Post-deploy HTTP smoke checks via `scripts/release_smoke.py` for API/web readiness and admin email diagnostics.
 - Admin CMS editing for lesson metadata, roleplay prompts, target phrases, and Markdown email templates, protected by logged-in admin user role, with database-backed content revision audit logs, rollback, and stale edit protection.
 - Conversation Coach API feedback and next prompts are aligned to the active lesson slug; the web app uses synced API feedback when available and keeps local fallback for offline/dev resilience.
+- Conversation Coach recorded-audio turns using AssemblyAI pre-recorded STT (`universal-3-pro` with `universal-2` fallback), with transcript metadata stored on conversation turns.
 - Pure backend domain rules for:
   - A1 evaluation threshold
   - Conversation Coach minute balance and consumption priority
@@ -62,7 +63,7 @@
 
 1. Configure production manual-transfer env: Resend key, payment admin key, admin email, and Bank Jago account details.
 2. Configure Google OAuth client credentials in the production platform.
-3. Replace local/deterministic Conversation Coach and final-test readiness preview with queued AI/STT/TTS jobs for automated official speaking assessment.
+3. Replace deterministic Conversation Coach feedback and final-test readiness preview with production AI grading jobs for automated official speaking assessment.
 4. Extend Admin CMS for media/audio uploads and draft approval before full editorial production use.
 5. Configure external error tracking, uptime checks, and edge/WAF rate limits in the production platform.
 6. Add Midtrans checkout/webhook when payment automation is needed beyond manual-transfer beta.

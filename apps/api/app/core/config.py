@@ -58,6 +58,11 @@ class Settings(BaseSettings):
     together_api_key: str = ""
     together_chat_model: str = "MiniMaxAI/MiniMax-M2.7"
     assemblyai_api_key: str = ""
+    assemblyai_api_base_url: str = "https://api.assemblyai.com"
+    assemblyai_speech_models_raw: str = "universal-3-pro,universal-2"
+    assemblyai_transcript_timeout_seconds: int = 60
+    assemblyai_poll_interval_seconds: float = 1.5
+    assemblyai_max_audio_bytes: int = 15 * 1024 * 1024
     minimax_api_key: str = ""
     minimax_api_base_url: str = "https://api.minimax.io"
     minimax_tts_model: str = "speech-2.8-hd"
@@ -83,6 +88,10 @@ class Settings(BaseSettings):
     @property
     def admin_emails(self) -> List[str]:
         return [email.strip().lower() for email in self.admin_emails_raw.split(",") if email.strip()]
+
+    @property
+    def assemblyai_speech_models(self) -> List[str]:
+        return [model.strip() for model in self.assemblyai_speech_models_raw.split(",") if model.strip()]
 
     @property
     def is_production(self) -> bool:

@@ -146,7 +146,7 @@ def security_headers() -> dict[str, str]:
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "referrer-policy": "strict-origin-when-cross-origin",
-        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "permissions-policy": "camera=(), microphone=(self), geolocation=()",
     }
 
 

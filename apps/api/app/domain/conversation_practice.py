@@ -30,6 +30,17 @@ class CoachFeedback:
 
 
 @dataclass(frozen=True)
+class TurnTranscription:
+    input_source: str
+    provider: str
+    model: str
+    transcript_id: str
+    confidence: Optional[float] = None
+    audio_duration_seconds: Optional[float] = None
+    metadata: Dict[str, object] = field(default_factory=dict)
+
+
+@dataclass(frozen=True)
 class ConversationTurn:
     id: str
     turn_index: int
@@ -38,6 +49,7 @@ class ConversationTurn:
     feedback: CoachFeedback
     minutes_consumed: int
     created_at: datetime
+    transcription: Optional[TurnTranscription] = None
 
 
 @dataclass
@@ -344,7 +356,12 @@ class ConversationPracticeStore:
     def get_session(self, session_id: str) -> Optional[ConversationSession]:
         return self.sessions.get(session_id)
 
-    def add_turn(self, session_id: str, transcript: str) -> ConversationTurn:
+    def add_turn(
+        self,
+        session_id: str,
+        transcript: str,
+        transcription: Optional[TurnTranscription] = None,
+    ) -> ConversationTurn:
         session = self.sessions.get(session_id)
         if session is None:
             raise KeyError(session_id)
@@ -365,6 +382,7 @@ class ConversationPracticeStore:
             feedback=feedback,
             minutes_consumed=1,
             created_at=now,
+            transcription=transcription,
         )
         session.turns.append(turn)
         session.updated_at = now
@@ -447,4 +465,19 @@ def turn_payload(session: ConversationSession, turn: ConversationTurn) -> Dict[s
             "next_practice": [turn.feedback.next_practice],
         },
         "minutes_consumed": turn.minutes_consumed,
+        "transcription": transcription_payload(turn.transcription),
+    }
+
+
+def transcription_payload(transcription: Optional[TurnTranscription]) -> Optional[Dict[str, object]]:
+    if transcription is None:
+        return None
+    return {
+        "input_source": transcription.input_source,
+        "provider": transcription.provider,
+        "model": transcription.model,
+        "transcript_id": transcription.transcript_id,
+        "confidence": transcription.confidence,
+        "audio_duration_seconds": transcription.audio_duration_seconds,
+        "metadata": transcription.metadata,
     }

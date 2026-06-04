@@ -1,12 +1,13 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Lightbulb, MessageCircle, RotateCcw, Send, Sparkles } from "lucide-react";
+import { CheckCircle2, Lightbulb, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
 import {
   ApiRequestError,
   createConversationSession,
   resetLatestPractice,
+  submitConversationAudioTurn,
   submitConversationTurn,
   type ApiPracticeSummary
 } from "@/lib/conversation-api";
@@ -151,6 +152,8 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
   ]
 };
 
+const maxRecordingSeconds = 30;
+
 function clampScore(score: number) {
   return Math.max(55, Math.min(score, 95));
 }
@@ -218,6 +221,35 @@ function averageScore(feedback: CoachFeedback | null) {
   return Math.round((feedback.scores.speaking + feedback.scores.grammar + feedback.scores.fluency) / 3);
 }
 
+function preferredRecordingMimeType() {
+  if (typeof MediaRecorder === "undefined") {
+    return "";
+  }
+
+  const candidates = [
+    "audio/webm;codecs=opus",
+    "audio/webm",
+    "audio/mp4",
+    "audio/ogg;codecs=opus"
+  ];
+  return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) ?? "";
+}
+
+function recordingSubmitErrorMessage(error: unknown) {
+  if (error instanceof ApiRequestError) {
+    if (error.status === 503) {
+      return "STT belum aktif. Pastikan ASSEMBLYAI_API_KEY sudah terbaca di API.";
+    }
+    if (error.status === 504) {
+      return "Transkripsi terlalu lama. Coba rekam jawaban yang lebih pendek.";
+    }
+    if (error.status === 422) {
+      return "Audio belum bisa ditranskrip. Coba rekam ulang dengan suara lebih jelas.";
+    }
+  }
+  return "Transkripsi belum berhasil. Coba rekam ulang.";
+}
+
 export function ConversationCoachPractice({
   compact = false,
   lessonSlug = "saying-hello-and-goodbye",
@@ -234,11 +266,22 @@ export function ConversationCoachPractice({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [syncStatus, setSyncStatus] = useState<"connecting" | "synced" | "local">("connecting");
   const [billingNotice, setBillingNotice] = useState("");
+  const [recordingStatus, setRecordingStatus] = useState<"idle" | "recording" | "processing">("idle");
+  const [recordingSeconds, setRecordingSeconds] = useState(0);
+  const [recordingError, setRecordingError] = useState("");
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const recordingStreamRef = useRef<MediaStream | null>(null);
+  const recordedChunksRef = useRef<BlobPart[]>([]);
+  const discardRecordingRef = useRef(false);
+  const recordingIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const recordingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const completed = completedTurns >= activeTurns.length;
   const activeTurn = activeTurns[Math.min(turnIndex, activeTurns.length - 1)];
   const progressPercent = Math.round((completedTurns / activeTurns.length) * 100);
   const score = averageScore(feedback);
+  const isRecording = recordingStatus === "recording";
+  const isProcessingRecording = recordingStatus === "processing";
 
   const savedPractice: SavedPractice = useMemo(
     () => ({
@@ -260,6 +303,13 @@ export function ConversationCoachPractice({
     saveSavedPractice(savedPractice, effectiveStorageKey);
   }, [completedTurns, effectiveStorageKey, savedPractice]);
 
+  useEffect(() => {
+    return () => {
+      clearRecordingTimers();
+      stopRecordingStream();
+    };
+  }, []);
+
   function applySummary(summary: ApiPracticeSummary) {
     setCompletedTurns(summary.completedTurns);
     setTurnIndex(Math.min(summary.completedTurns, activeTurns.length - 1));
@@ -274,6 +324,165 @@ export function ConversationCoachPractice({
       },
       effectiveStorageKey
     );
+  }
+
+  function applyTurnResult(input: {
+    userText: string;
+    nextCompletedTurns: number;
+    nextTurnIndex: number;
+    nextCoachReply: string | null;
+    nextFeedback: CoachFeedback;
+  }) {
+    setMessages((currentMessages) => {
+      const nextMessages: ChatMessage[] = [
+        ...currentMessages,
+        { role: "user", text: input.userText }
+      ];
+
+      if (input.nextCompletedTurns < activeTurns.length && input.nextCoachReply) {
+        nextMessages.push({ role: "coach", text: input.nextCoachReply });
+      }
+
+      return nextMessages;
+    });
+    setFeedback(input.nextFeedback);
+    setCompletedTurns(input.nextCompletedTurns);
+    setTurnIndex(input.nextTurnIndex);
+  }
+
+  function clearRecordingTimers() {
+    if (recordingIntervalRef.current) {
+      clearInterval(recordingIntervalRef.current);
+      recordingIntervalRef.current = null;
+    }
+    if (recordingTimeoutRef.current) {
+      clearTimeout(recordingTimeoutRef.current);
+      recordingTimeoutRef.current = null;
+    }
+  }
+
+  function stopRecordingStream() {
+    recordingStreamRef.current?.getTracks().forEach((track) => track.stop());
+    recordingStreamRef.current = null;
+  }
+
+  async function startRecording() {
+    if (completed || isSubmitting || isRecording || isProcessingRecording) {
+      return;
+    }
+
+    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+      setRecordingError("Browser belum mendukung rekam audio.");
+      return;
+    }
+
+    setRecordingError("");
+    setBillingNotice("");
+    setRecordingSeconds(0);
+    discardRecordingRef.current = false;
+
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = preferredRecordingMimeType();
+      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
+      recordedChunksRef.current = [];
+      recordingStreamRef.current = stream;
+      mediaRecorderRef.current = recorder;
+
+      recorder.ondataavailable = (event) => {
+        if (event.data.size > 0) {
+          recordedChunksRef.current.push(event.data);
+        }
+      };
+
+      recorder.onstop = () => {
+        clearRecordingTimers();
+        stopRecordingStream();
+        if (discardRecordingRef.current) {
+          recordedChunksRef.current = [];
+          mediaRecorderRef.current = null;
+          discardRecordingRef.current = false;
+          setRecordingStatus("idle");
+          return;
+        }
+        const audioBlob = new Blob(recordedChunksRef.current, {
+          type: recorder.mimeType || mimeType || "audio/webm"
+        });
+        recordedChunksRef.current = [];
+        mediaRecorderRef.current = null;
+        void submitRecordedAudio(audioBlob);
+      };
+
+      recorder.start();
+      setRecordingStatus("recording");
+      recordingIntervalRef.current = setInterval(() => {
+        setRecordingSeconds((current) => Math.min(current + 1, maxRecordingSeconds));
+      }, 1000);
+      recordingTimeoutRef.current = setTimeout(() => {
+        stopRecording();
+      }, maxRecordingSeconds * 1000);
+    } catch {
+      clearRecordingTimers();
+      stopRecordingStream();
+      mediaRecorderRef.current = null;
+      setRecordingStatus("idle");
+      setRecordingError("Mic belum bisa diakses. Cek izin microphone browser.");
+    }
+  }
+
+  function stopRecording() {
+    const recorder = mediaRecorderRef.current;
+    if (!recorder || recorder.state === "inactive") {
+      return;
+    }
+
+    setRecordingStatus("processing");
+    clearRecordingTimers();
+    recorder.stop();
+  }
+
+  async function submitRecordedAudio(audioBlob: Blob) {
+    if (!audioBlob.size) {
+      setRecordingStatus("idle");
+      setRecordingError("Audio belum terekam. Coba ulangi.");
+      return;
+    }
+
+    setIsSubmitting(true);
+    setBillingNotice("");
+    setRecordingError("");
+
+    let activeSessionId = sessionId;
+
+    try {
+      if (!activeSessionId) {
+        const session = await createConversationSession(lessonSlug);
+        activeSessionId = session.sessionId;
+        setSessionId(session.sessionId);
+      }
+
+      const result = await submitConversationAudioTurn(activeSessionId, audioBlob);
+      const nextCompletedTurns = result.summary.completedTurns;
+      const nextTurnIndex = Math.min(result.summary.completedTurns, activeTurns.length - 1);
+      setSyncStatus("synced");
+      applySummary(result.summary);
+      applyTurnResult({
+        userText: result.userTranscript,
+        nextCompletedTurns,
+        nextTurnIndex,
+        nextCoachReply: result.coachReply,
+        nextFeedback: result.feedback
+      });
+    } catch (error) {
+      if (error instanceof ApiRequestError && error.status === 402) {
+        setBillingNotice("Kuota Conversation Coach habis. Top-up atau upgrade untuk melanjutkan latihan tersinkron.");
+      } else {
+        setRecordingError(recordingSubmitErrorMessage(error));
+      }
+    } finally {
+      setRecordingStatus("idle");
+      setIsSubmitting(false);
+    }
   }
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
@@ -292,6 +501,7 @@ export function ConversationCoachPractice({
     let nextCompletedTurns = Math.min(completedTurns + 1, activeTurns.length);
     let nextTurnIndex = Math.min(turnIndex + 1, activeTurns.length - 1);
     let nextCoachReply: string | null = nextCompletedTurns < activeTurns.length ? activeTurns[nextTurnIndex].coach : null;
+    let submittedTranscript = userAnswer;
 
     try {
       if (!activeSessionId) {
@@ -305,6 +515,7 @@ export function ConversationCoachPractice({
       nextTurnIndex = Math.min(result.summary.completedTurns, activeTurns.length - 1);
       nextCoachReply = result.coachReply;
       newFeedback = result.feedback;
+      submittedTranscript = result.userTranscript || userAnswer;
       setSyncStatus("synced");
       applySummary(result.summary);
     } catch (error) {
@@ -316,16 +527,13 @@ export function ConversationCoachPractice({
       setSyncStatus("local");
     }
 
-    const nextMessages: ChatMessage[] = [...messages, { role: "user", text: userAnswer }];
-
-    if (nextCompletedTurns < activeTurns.length && nextCoachReply) {
-      nextMessages.push({ role: "coach", text: nextCoachReply });
-    }
-
-    setMessages(nextMessages);
-    setFeedback(newFeedback);
-    setCompletedTurns(nextCompletedTurns);
-    setTurnIndex(nextTurnIndex);
+    applyTurnResult({
+      userText: submittedTranscript,
+      nextCompletedTurns,
+      nextTurnIndex,
+      nextCoachReply,
+      nextFeedback: newFeedback
+    });
     setAnswer("");
     setIsSubmitting(false);
   }
@@ -337,12 +545,19 @@ export function ConversationCoachPractice({
   }
 
   async function handleReset() {
+    if (isRecording) {
+      discardRecordingRef.current = true;
+      stopRecording();
+    }
     setMessages([{ role: "coach", text: activeTurns[0].coach }]);
     setSessionId(null);
     setTurnIndex(0);
     setAnswer("");
     setFeedback(null);
     setCompletedTurns(0);
+    setRecordingStatus("idle");
+    setRecordingSeconds(0);
+    setRecordingError("");
     removeSavedPractice(effectiveStorageKey);
 
     try {
@@ -431,19 +646,38 @@ export function ConversationCoachPractice({
         </div>
 
         <form onSubmit={handleSubmit} className="border-t border-ink/10 p-5">
-          <div className="grid gap-3 md:grid-cols-[1fr_auto_auto]">
+          <div className="grid gap-3 md:grid-cols-[1fr_auto_auto_auto]">
             <textarea
               value={answer}
               onChange={(event) => setAnswer(event.target.value)}
-              disabled={completed || isSubmitting}
+              disabled={completed || isSubmitting || isRecording || isProcessingRecording}
               rows={compact ? 2 : 3}
               className="focus-ring min-h-24 resize-none rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm leading-6 text-ink placeholder:text-ink/40 disabled:opacity-60"
               placeholder={completed ? "Roleplay selesai" : "Tulis jawabanmu dalam bahasa Inggris..."}
             />
             <button
               type="button"
+              onClick={isRecording ? stopRecording : startRecording}
+              disabled={completed || isSubmitting || isProcessingRecording}
+              className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
+                isRecording ? "bg-coral text-white hover:bg-ink" : "border border-ink/15 hover:bg-mint"
+              }`}
+            >
+              {isRecording ? (
+                <Square className="h-4 w-4" aria-hidden="true" />
+              ) : (
+                <Mic className="h-4 w-4" aria-hidden="true" />
+              )}
+              {isProcessingRecording
+                ? "Transcribing"
+                : isRecording
+                  ? `Stop ${recordingSeconds}s`
+                  : "Rekam"}
+            </button>
+            <button
+              type="button"
               onClick={handleUseSample}
-              disabled={completed || isSubmitting}
+              disabled={completed || isSubmitting || isRecording || isProcessingRecording}
               className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-ink/15 px-4 py-3 text-sm font-semibold hover:bg-mint disabled:cursor-not-allowed disabled:opacity-50"
             >
               <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -451,13 +685,16 @@ export function ConversationCoachPractice({
             </button>
             <button
               type="submit"
-              disabled={!answer.trim() || completed || isSubmitting}
+              disabled={!answer.trim() || completed || isSubmitting || isRecording || isProcessingRecording}
               className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
             >
               <Send className="h-4 w-4" aria-hidden="true" />
               {isSubmitting ? "Mengirim" : "Kirim"}
             </button>
           </div>
+          {recordingError ? (
+            <p className="mt-3 rounded-lg bg-[#fde7df] px-3 py-2 text-sm text-ink/70">{recordingError}</p>
+          ) : null}
         </form>
       </section>
 

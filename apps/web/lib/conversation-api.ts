@@ -22,13 +22,51 @@ export type ApiTurnFeedback = {
 
 export type ApiTurnResult = {
   sessionId: string;
+  userTranscript: string;
   coachReply: string | null;
   feedback: ApiTurnFeedback;
   summary: ApiPracticeSummary;
+  transcription?: {
+    inputSource: string;
+    provider: string;
+    model: string;
+    transcriptId: string;
+    confidence: number | null;
+    audioDurationSeconds: number | null;
+  } | null;
 };
 
 type ApiResponse<T> = {
   data: T;
+};
+
+type ApiTurnResponse = {
+  session_id: string;
+  user_transcript: string;
+  conversation_coach_reply: string | null;
+  completed_turns: number;
+  total_turns: number;
+  completed: boolean;
+  last_score: number;
+  updated_at: string;
+  feedback: {
+    better_version: string;
+    indonesian_explanation: string;
+    scores: {
+      speaking: number;
+      grammar: number;
+      fluency: number;
+    };
+    next_practice: string[];
+  };
+  transcription?: null | {
+    input_source: string;
+    provider: string;
+    model: string;
+    transcript_id: string;
+    confidence: number | null;
+    audio_duration_seconds: number | null;
+  };
 };
 
 const defaultLessonSlug = "saying-hello-and-goodbye";
@@ -96,51 +134,85 @@ export async function createConversationSession(
 }
 
 export async function submitConversationTurn(sessionId: string, transcript: string): Promise<ApiTurnResult> {
-  const response = await requestJson<
-    ApiResponse<{
-      session_id: string;
-      conversation_coach_reply: string | null;
-      completed_turns: number;
-      total_turns: number;
-      completed: boolean;
-      last_score: number;
-      updated_at: string;
-      feedback: {
-        better_version: string;
-        indonesian_explanation: string;
-        scores: {
-          speaking: number;
-          grammar: number;
-          fluency: number;
-        };
-        next_practice: string[];
-      };
-    }>
-  >(`/conversation-sessions/${sessionId}/turns`, {
+  const response = await requestJson<ApiResponse<ApiTurnResponse>>(`/conversation-sessions/${sessionId}/turns`, {
     method: "POST",
     body: JSON.stringify({
       transcript
     })
   });
 
+  return mapTurnResponse(response.data);
+}
+
+export async function submitConversationAudioTurn(sessionId: string, audio: Blob): Promise<ApiTurnResult> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Authentication required");
+  }
+
+  const formData = new FormData();
+  formData.append("audio", audio, recordedAudioFilename(audio.type));
+
+  const response = await fetch(`${apiBaseUrl()}/conversation-sessions/${sessionId}/turns/audio`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`
+    },
+    body: formData
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new ApiRequestError(response.status, detail || `API request failed: ${response.status}`);
+  }
+
+  const payload = (await response.json()) as ApiResponse<ApiTurnResponse>;
+  return mapTurnResponse(payload.data);
+}
+
+function mapTurnResponse(data: ApiTurnResponse): ApiTurnResult {
   return {
-    sessionId: response.data.session_id,
-    coachReply: response.data.conversation_coach_reply,
+    sessionId: data.session_id,
+    userTranscript: data.user_transcript,
+    coachReply: data.conversation_coach_reply,
     feedback: {
-      betterVersion: response.data.feedback.better_version,
-      explanation: response.data.feedback.indonesian_explanation,
-      nextPractice: response.data.feedback.next_practice[0] ?? "Review this roleplay again.",
-      scores: response.data.feedback.scores
+      betterVersion: data.feedback.better_version,
+      explanation: data.feedback.indonesian_explanation,
+      nextPractice: data.feedback.next_practice[0] ?? "Review this roleplay again.",
+      scores: data.feedback.scores
     },
     summary: {
-      sessionId: response.data.session_id,
-      completedTurns: response.data.completed_turns,
-      totalTurns: response.data.total_turns,
-      completed: response.data.completed,
-      lastScore: response.data.last_score,
-      updatedAt: response.data.updated_at
-    }
+      sessionId: data.session_id,
+      completedTurns: data.completed_turns,
+      totalTurns: data.total_turns,
+      completed: data.completed,
+      lastScore: data.last_score,
+      updatedAt: data.updated_at
+    },
+    transcription: data.transcription
+      ? {
+          inputSource: data.transcription.input_source,
+          provider: data.transcription.provider,
+          model: data.transcription.model,
+          transcriptId: data.transcription.transcript_id,
+          confidence: data.transcription.confidence,
+          audioDurationSeconds: data.transcription.audio_duration_seconds
+        }
+      : null
   };
+}
+
+function recordedAudioFilename(contentType: string) {
+  if (contentType.includes("mp4")) {
+    return "conversation-turn.m4a";
+  }
+  if (contentType.includes("ogg")) {
+    return "conversation-turn.ogg";
+  }
+  if (contentType.includes("wav")) {
+    return "conversation-turn.wav";
+  }
+  return "conversation-turn.webm";
 }
 
 export async function getLatestPractice(lessonSlug = defaultLessonSlug): Promise<ApiPracticeSummary | null> {

@@ -63,7 +63,7 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
 - Full public A1 release still needs all 40 planned A1 lessons text-ready and audio-ready. Current content supports Unit 1 beta only; Units 2-8 are planned but not implemented.
 - Full multi-level release needs all launched levels in A1-C1 text-ready and audio-ready. Current A2, B1, B2, and C1 plans are tracked but not implemented.
-- Conversation Coach and final-test readiness preview currently use deterministic/self-check logic. Beta final-test attempts can be manually reviewed by admin, while public automated speaking assessment still needs production AI/STT/TTS credentials and worker orchestration.
+- Conversation Coach now supports turn-based recorded-audio STT with AssemblyAI, but feedback remains deterministic for beta. Beta final-test attempts can be manually reviewed by admin, while public official automated speaking assessment still needs production grading orchestration.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.
 - Configure production env from `.env.production.example` with real non-placeholder values and verify `APP_ENV=production` starts only with PostgreSQL, HTTPS URLs, explicit CORS, a strong JWT secret, Google OAuth credentials, admin payment key, and Resend key.

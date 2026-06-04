@@ -6,6 +6,7 @@ from sqlalchemy import (
     Boolean,
     DateTime,
     ForeignKey,
+    Float,
     Integer,
     String,
     Text,
@@ -60,6 +61,13 @@ class ConversationTurnModel(Base):
     user_transcript: Mapped[str] = mapped_column(Text, nullable=False)
     coach_reply: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     minutes_consumed: Mapped[int] = mapped_column(Integer, nullable=False)
+    input_source: Mapped[str] = mapped_column(String(32), default="typed", nullable=False)
+    stt_provider: Mapped[Optional[str]] = mapped_column(String(32), nullable=True)
+    stt_model: Mapped[Optional[str]] = mapped_column(String(80), nullable=True)
+    stt_transcript_id: Mapped[Optional[str]] = mapped_column(String(128), index=True, nullable=True)
+    stt_confidence: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    stt_audio_duration_seconds: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
+    stt_metadata_json: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
 
     session: Mapped[ConversationSessionModel] = relationship(back_populates="turns")

@@ -40,5 +40,5 @@ docs/
 1. Ship public pages and a read-only learning experience for A1 Unit 1 Lesson 1.
 2. Add auth and onboarding persistence.
 3. Add database models and migrations.
-4. Implement Conversation Coach turn flow using queued STT and feedback jobs.
+4. Implement Conversation Coach turn flow with typed answers and recorded-audio STT.
 5. Implement manual-transfer billing, Resend admin notifications, and later Midtrans payment activation.

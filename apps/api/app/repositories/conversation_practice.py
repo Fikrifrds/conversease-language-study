@@ -16,6 +16,7 @@ from app.domain.conversation_practice import (
     CoachFeedback,
     ConversationSession,
     ConversationTurn,
+    TurnTranscription,
     coach_reply_for_turn,
     evaluate_answer,
     total_turns_for_lesson,
@@ -62,7 +63,12 @@ class ConversationPracticeRepository:
             return None
         return self._model_to_domain(model)
 
-    def add_turn(self, session_id: str, transcript: str) -> tuple[ConversationSession, ConversationTurn]:
+    def add_turn(
+        self,
+        session_id: str,
+        transcript: str,
+        transcription: Optional[TurnTranscription] = None,
+    ) -> tuple[ConversationSession, ConversationTurn]:
         session_model = self._get_session_model(session_id)
         if session_model is None:
             raise KeyError(session_id)
@@ -86,6 +92,15 @@ class ConversationPracticeRepository:
             user_transcript=transcript.strip(),
             coach_reply=coach_reply_for_turn(session_model.lesson_slug, next_turn_index),
             minutes_consumed=1,
+            input_source=transcription.input_source if transcription else "typed",
+            stt_provider=transcription.provider if transcription else None,
+            stt_model=transcription.model if transcription else None,
+            stt_transcript_id=transcription.transcript_id if transcription else None,
+            stt_confidence=transcription.confidence if transcription else None,
+            stt_audio_duration_seconds=(
+                transcription.audio_duration_seconds if transcription else None
+            ),
+            stt_metadata_json=transcription.metadata if transcription else None,
             created_at=now,
         )
         feedback_model = ConversationFeedbackModel(
@@ -254,6 +269,19 @@ class ConversationPracticeRepository:
                     ),
                     minutes_consumed=turn.minutes_consumed,
                     created_at=turn.created_at,
+                    transcription=(
+                        TurnTranscription(
+                            input_source=turn.input_source,
+                            provider=turn.stt_provider or "",
+                            model=turn.stt_model or "",
+                            transcript_id=turn.stt_transcript_id or "",
+                            confidence=turn.stt_confidence,
+                            audio_duration_seconds=turn.stt_audio_duration_seconds,
+                            metadata=turn.stt_metadata_json or {},
+                        )
+                        if turn.input_source == "audio" and turn.stt_provider
+                        else None
+                    ),
                 )
                 for turn in model.turns
             ],

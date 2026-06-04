@@ -198,7 +198,7 @@ def web_security_headers_check(web_base_url: str) -> SmokeResult:
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "referrer-policy": "strict-origin-when-cross-origin",
-        "permissions-policy": "camera=(), microphone=(), geolocation=()",
+        "permissions-policy": "camera=(), microphone=(self), geolocation=()",
     }
     missing_or_wrong = {
         key: {"expected": value, "actual": normalized_headers.get(key)}
