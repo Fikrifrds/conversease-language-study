@@ -50,8 +50,21 @@ const audioModelStorageKey = "conversease.admin_audio_model";
 const audioVoiceStorageKey = "conversease.admin_audio_voice";
 const audioSpeedStorageKey = "conversease.admin_audio_speed";
 const statusOptions = ["draft", "review", "published", "archived"];
+const bulkAudioMaxAttempts = 2;
 
 type Tab = "readiness" | "curriculum" | "email";
+type BulkAudioQueueStatus = "pending" | "running" | "done" | "failed" | "skipped";
+
+type BulkAudioQueueItem = {
+  lessonSlug: string;
+  lessonTitle: string;
+  levelCode: string;
+  unitTitle: string;
+  status: BulkAudioQueueStatus;
+  attempts: number;
+  durationSeconds?: number;
+  error?: string;
+};
 
 export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [adminName, setAdminName] = useState(adminUser.name || adminUser.email);
@@ -70,6 +83,8 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
   const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
+  const [bulkAudioQueue, setBulkAudioQueue] = useState<BulkAudioQueueItem[]>([]);
+  const [isBulkGeneratingAudio, setIsBulkGeneratingAudio] = useState(false);
 
   useEffect(() => {
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
@@ -192,6 +207,83 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     } finally {
       setGeneratingLessonSlug("");
     }
+  }
+
+  async function generateBulkLessonAudio(lessons: BulkAudioQueueItem[]) {
+    if (!audioModel || !audioVoiceId) {
+      setError("Pilih model dan voice sebelum bulk generate audio.");
+      return;
+    }
+    if (!lessons.length) {
+      setMessage("Tidak ada lesson yang perlu digenerate.");
+      return;
+    }
+
+    setBulkAudioQueue(lessons);
+    setIsBulkGeneratingAudio(true);
+    setGeneratingLessonSlug("");
+    setMessage(`Bulk audio dimulai untuk ${lessons.length} lesson.`);
+    setError("");
+
+    let successCount = 0;
+    let failedCount = 0;
+
+    try {
+      for (const lesson of lessons) {
+        updateBulkAudioItem(lesson.lessonSlug, { status: "running", attempts: 1, error: "" });
+
+        let generated = false;
+        let lastError = "";
+        for (let attempt = 1; attempt <= bulkAudioMaxAttempts; attempt += 1) {
+          updateBulkAudioItem(lesson.lessonSlug, { status: "running", attempts: attempt, error: "" });
+          try {
+            const audio = await generateAdminLessonAudio({
+              generatedBy: adminName,
+              lessonSlug: lesson.lessonSlug,
+              model: audioModel,
+              voiceId: audioVoiceId,
+              speed: audioSpeed
+            });
+            updateBulkAudioItem(lesson.lessonSlug, {
+              status: "done",
+              attempts: attempt,
+              durationSeconds: audio.durationSeconds,
+              error: ""
+            });
+            successCount += 1;
+            generated = true;
+            break;
+          } catch (caughtError) {
+            lastError = audioGenerationErrorMessage(caughtError);
+            updateBulkAudioItem(lesson.lessonSlug, {
+              status: attempt < bulkAudioMaxAttempts ? "pending" : "failed",
+              attempts: attempt,
+              error: lastError
+            });
+          }
+        }
+
+        if (!generated) {
+          failedCount += 1;
+        }
+      }
+
+      const nextSummary = await getAdminCmsSummary();
+      setSummary(nextSummary);
+      setMessage(`Bulk audio selesai: ${successCount} berhasil, ${failedCount} gagal.`);
+      if (failedCount) {
+        setError("Sebagian audio gagal dibuat. Cek queue status lalu jalankan ulang untuk item yang gagal.");
+      }
+    } finally {
+      setIsBulkGeneratingAudio(false);
+      setGeneratingLessonSlug("");
+    }
+  }
+
+  function updateBulkAudioItem(lessonSlug: string, patch: Partial<BulkAudioQueueItem>) {
+    setBulkAudioQueue((current) =>
+      current.map((item) => (item.lessonSlug === lessonSlug ? { ...item, ...patch } : item))
+    );
   }
 
   async function selectLesson(slug: string) {
@@ -338,11 +430,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             voicePreview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
             voicePreviewsByVoiceId={voicePreviewsByVoiceId}
             generatingLessonSlug={generatingLessonSlug}
+            bulkAudioQueue={bulkAudioQueue}
+            isBulkGeneratingAudio={isBulkGeneratingAudio}
             isLoadingVoicePreviews={isLoadingVoicePreviews}
             onAudioModelChange={setAudioModel}
             onAudioVoiceChange={setAudioVoiceId}
             onAudioSpeedChange={setAudioSpeed}
             onGenerateAudio={generateLessonAudio}
+            onBulkGenerateAudio={generateBulkLessonAudio}
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
@@ -446,11 +541,14 @@ function ReadinessPanel({
   voicePreview,
   voicePreviewsByVoiceId,
   generatingLessonSlug,
+  bulkAudioQueue,
+  isBulkGeneratingAudio,
   isLoadingVoicePreviews,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
-  onGenerateAudio
+  onGenerateAudio,
+  onBulkGenerateAudio
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
@@ -461,11 +559,14 @@ function ReadinessPanel({
   voicePreview: AdminVoicePreviewAudio | null;
   voicePreviewsByVoiceId: Record<string, AdminVoicePreviewAudio>;
   generatingLessonSlug: string;
+  bulkAudioQueue: BulkAudioQueueItem[];
+  isBulkGeneratingAudio: boolean;
   isLoadingVoicePreviews: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
   onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
+  onBulkGenerateAudio: (lessons: BulkAudioQueueItem[]) => void;
 }) {
   if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
@@ -479,6 +580,8 @@ function ReadinessPanel({
     { label: "Beta ready", value: overview.betaReadyCount },
     { label: "Production ready", value: overview.productionReadyCount }
   ];
+  const missingBulkCandidates = bulkAudioCandidates(levels, { includeAudioReady: false });
+  const allTextReadyBulkCandidates = bulkAudioCandidates(levels, { includeAudioReady: true });
 
   return (
     <div className="mt-5 space-y-5">
@@ -495,6 +598,15 @@ function ReadinessPanel({
         onSpeedChange={onAudioSpeedChange}
       />
 
+      <BulkAudioPanel
+        missingCandidates={missingBulkCandidates}
+        allTextReadyCandidates={allTextReadyBulkCandidates}
+        queue={bulkAudioQueue}
+        isRunning={isBulkGeneratingAudio}
+        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+        onStart={onBulkGenerateAudio}
+      />
+
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
         {stats.map((stat) => (
           <div key={stat.label} className="rounded-lg bg-paper p-4">
@@ -509,7 +621,9 @@ function ReadinessPanel({
           <LevelReadinessCard
             key={`${level.course.language}-${level.course.levelCode}`}
             readiness={level}
-            audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+            audioReadyToGenerate={Boolean(
+              audioSettings?.minimaxConfigured && audioSettings.s3Configured && !isBulkGeneratingAudio
+            )}
             generatingLessonSlug={generatingLessonSlug}
             onGenerateAudio={onGenerateAudio}
           />
@@ -658,6 +772,117 @@ function AudioSettingsPanel({
       ) : null}
     </div>
   );
+}
+
+function BulkAudioPanel({
+  missingCandidates,
+  allTextReadyCandidates,
+  queue,
+  isRunning,
+  audioReadyToGenerate,
+  onStart
+}: {
+  missingCandidates: BulkAudioQueueItem[];
+  allTextReadyCandidates: BulkAudioQueueItem[];
+  queue: BulkAudioQueueItem[];
+  isRunning: boolean;
+  audioReadyToGenerate: boolean;
+  onStart: (lessons: BulkAudioQueueItem[]) => void;
+}) {
+  const summary = bulkQueueSummary(queue);
+  const runningItem = queue.find((item) => item.status === "running") ?? null;
+
+  return (
+    <div className="rounded-lg bg-paper p-4">
+      <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
+        <div className="flex items-start gap-3">
+          <div className="grid h-10 w-10 place-items-center rounded-lg bg-white">
+            <Sparkles className="h-5 w-5 text-leaf" aria-hidden="true" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase text-leaf">Bulk Audio</p>
+            <h2 className="mt-1 font-semibold">Lesson generation queue</h2>
+            <div className="mt-2 flex flex-wrap gap-2 text-xs font-semibold">
+              <StatusPill icon={Headphones} label={`${missingCandidates.length} missing`} tone="warn" />
+              <StatusPill icon={ListChecks} label={`${allTextReadyCandidates.length} text-ready`} tone="neutral" />
+              {queue.length ? (
+                <StatusPill icon={CheckCircle2} label={`${summary.done}/${queue.length} done`} tone="ok" />
+              ) : null}
+            </div>
+          </div>
+        </div>
+
+        <div className="grid gap-2 sm:grid-cols-2 xl:min-w-[420px]">
+          <button
+            type="button"
+            onClick={() => onStart(missingCandidates)}
+            disabled={!audioReadyToGenerate || isRunning || !missingCandidates.length}
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-white px-4 text-sm font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <Headphones className="h-4 w-4" aria-hidden="true" />
+            Generate Missing
+          </button>
+          <button
+            type="button"
+            onClick={() => onStart(allTextReadyCandidates)}
+            disabled={!audioReadyToGenerate || isRunning || !allTextReadyCandidates.length}
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <RefreshCcw className="h-4 w-4" aria-hidden="true" />
+            Regenerate Text-Ready
+          </button>
+        </div>
+      </div>
+
+      {queue.length ? (
+        <div className="mt-4 rounded-lg bg-white p-3">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p className="text-sm font-semibold text-ink">
+              {isRunning && runningItem ? `Running: ${runningItem.lessonTitle}` : "Last bulk run"}
+            </p>
+            <div className="flex flex-wrap gap-2 text-xs font-semibold">
+              <StatusPill icon={Clock3} label={`${summary.pending} queued`} tone="neutral" />
+              <StatusPill icon={CheckCircle2} label={`${summary.done} done`} tone="ok" />
+              <StatusPill icon={XCircle} label={`${summary.failed} failed`} tone={summary.failed ? "danger" : "neutral"} />
+            </div>
+          </div>
+
+          <div className="mt-3 grid max-h-72 gap-2 overflow-y-auto pr-1">
+            {queue.map((item) => (
+              <div key={item.lessonSlug} className="grid gap-2 rounded-lg bg-paper p-3 md:grid-cols-[1fr_auto]">
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold text-ink">{item.lessonTitle}</p>
+                  <p className="mt-1 truncate text-xs text-ink/50">
+                    {item.levelCode} / {item.unitTitle} / attempt {item.attempts || 0}
+                  </p>
+                  {item.error ? <p className="mt-1 text-xs text-coral">{item.error}</p> : null}
+                </div>
+                <div className="flex items-center gap-2 md:justify-end">
+                  <BulkStatusPill status={item.status} />
+                  {item.durationSeconds ? (
+                    <span className="text-xs font-semibold text-ink/45">{formatDuration(item.durationSeconds)}</span>
+                  ) : null}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+function BulkStatusPill({ status }: { status: BulkAudioQueueStatus }) {
+  const label = status === "done" ? "Done" : status === "failed" ? "Failed" : status === "running" ? "Running" : "Queued";
+  const tone =
+    status === "done"
+      ? "bg-mint text-ink/70"
+      : status === "failed"
+        ? "bg-[#fde7df] text-[#9a3f1b]"
+        : status === "running"
+          ? "bg-[#fff0d5] text-[#83540f]"
+          : "bg-white text-ink/55";
+  return <span className={`inline-flex h-7 items-center rounded-lg px-2 text-xs font-semibold ${tone}`}>{label}</span>;
 }
 
 type VoiceGenderFilter = "all" | "female" | "male";
@@ -1388,6 +1613,60 @@ function readinessStatusLabel(status: string) {
     planned_missing_content: "planned"
   };
   return labels[status] ?? status;
+}
+
+function bulkAudioCandidates(
+  levels: AdminContentReadiness[],
+  { includeAudioReady }: { includeAudioReady: boolean }
+): BulkAudioQueueItem[] {
+  const seenSlugs = new Set<string>();
+  const candidates: BulkAudioQueueItem[] = [];
+
+  for (const level of levels) {
+    for (const unit of level.units) {
+      for (const lesson of unit.lessons) {
+        if (!lesson.slug || !lesson.implemented || !lesson.textReady) {
+          continue;
+        }
+        if (!includeAudioReady && lesson.audioReady) {
+          continue;
+        }
+        if (seenSlugs.has(lesson.slug)) {
+          continue;
+        }
+        seenSlugs.add(lesson.slug);
+        candidates.push({
+          lessonSlug: lesson.slug,
+          lessonTitle: lesson.title,
+          levelCode: level.course.levelCode,
+          unitTitle: unit.title,
+          status: "pending",
+          attempts: 0,
+          error: ""
+        });
+      }
+    }
+  }
+
+  return candidates;
+}
+
+function bulkQueueSummary(queue: BulkAudioQueueItem[]) {
+  return queue.reduce(
+    (summary, item) => {
+      if (item.status === "done") {
+        summary.done += 1;
+      } else if (item.status === "failed") {
+        summary.failed += 1;
+      } else if (item.status === "running") {
+        summary.running += 1;
+      } else {
+        summary.pending += 1;
+      }
+      return summary;
+    },
+    { pending: 0, running: 0, done: 0, failed: 0 }
+  );
 }
 
 function formatDuration(durationSeconds: number) {
