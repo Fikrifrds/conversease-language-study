@@ -3,7 +3,7 @@ prompts:
     instruction_id: Perkenalkan diri dalam dua kalimat pendek.
     prompt_en: Hi, good morning. My name is ...
     expected_response_examples:
-      - Hi, good morning. My name is Fikri.
+      - Hi, good morning. My name is Arif.
       - Hello. My name is Rina.
   - key: answer_origin_and_ask_back
     instruction_id: Jawab asalmu dan tanyakan balik.

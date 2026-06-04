@@ -100,7 +100,7 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(
             coach="Nice. What is your name?",
             hint="Sebutkan nama dengan pola: My name is ... atau I'm ...",
-            sample_answer="My name is Fikri. Nice to meet you.",
+            sample_answer="My name is Arif. Nice to meet you.",
             focus="Self introduction",
             expected_keywords=("my name is", "i'm", "i am", "nice to meet"),
             indonesian_explanation=(
@@ -122,7 +122,7 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(
             coach="Hi, my name is Sara. What is your name?",
             hint="Jawab dengan pola: My name is ... atau I'm ...",
-            sample_answer="My name is Fikri. Nice to meet you.",
+            sample_answer="My name is Arif. Nice to meet you.",
             focus="Saying your name",
             expected_keywords=("my name is", "i'm", "i am", "nice to meet"),
             indonesian_explanation=(
@@ -132,7 +132,7 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(
             coach="Nice to meet you. What should I call you?",
             hint="Gunakan pola: Please call me ...",
-            sample_answer="Please call me Fikri.",
+            sample_answer="Please call me Arif.",
             focus="Nickname",
             expected_keywords=("please call me", "call me"),
             indonesian_explanation=(
@@ -140,7 +140,7 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
             ),
         ),
         CoachTurn(
-            coach="Great. Nice to meet you, Fikri.",
+            coach="Great. Nice to meet you, Arif.",
             hint="Balas dengan sopan: Nice to meet you too.",
             sample_answer="Nice to meet you too.",
             focus="Polite response",
@@ -250,7 +250,7 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(
             coach="Hi, good morning. My name is Sara.",
             hint="Sapa balik dan sebutkan namamu.",
-            sample_answer="Good morning. My name is Fikri.",
+            sample_answer="Good morning. My name is Arif.",
             focus="Greeting and name",
             expected_keywords=("good morning", "my name is", "i'm", "i am"),
             indonesian_explanation=(

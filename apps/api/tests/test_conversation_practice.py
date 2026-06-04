@@ -21,7 +21,7 @@ class ConversationPracticeTest(unittest.TestCase):
         session = store.create_session(demo_user_id="demo-user")
 
         store.add_turn(session.id, "Good morning. I'm good, thank you.")
-        store.add_turn(session.id, "My name is Fikri. Nice to meet you.")
+        store.add_turn(session.id, "My name is Arif. Nice to meet you.")
         store.add_turn(session.id, "I'm from Indonesia. How about you?")
 
         summary = session_summary(session)
@@ -39,11 +39,11 @@ class ConversationPracticeTest(unittest.TestCase):
         )
 
         payload = session_payload(session)
-        turn = store.add_turn(session.id, "My name is Fikri. Nice to meet you.")
+        turn = store.add_turn(session.id, "My name is Arif. Nice to meet you.")
 
         self.assertEqual(payload["first_coach_message"], "Hi, my name is Sara. What is your name?")
         self.assertEqual(turn.coach_reply, "Nice to meet you. What should I call you?")
-        self.assertEqual(turn.feedback.better_version, "My name is Fikri. Nice to meet you.")
+        self.assertEqual(turn.feedback.better_version, "My name is Arif. Nice to meet you.")
 
     def test_spelling_your_name_roleplay_matches_lesson_goal(self):
         store = ConversationPracticeStore()

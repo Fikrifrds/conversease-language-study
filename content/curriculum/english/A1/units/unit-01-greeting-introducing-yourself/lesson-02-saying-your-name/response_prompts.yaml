@@ -3,7 +3,7 @@ prompts:
     instruction_id: Sebutkan namamu dengan jelas.
     prompt_en: My name is ...
     expected_response_examples:
-      - My name is Fikri.
+      - My name is Arif.
       - My name is Ahmad.
   - key: reply_nice_to_meet_you
     instruction_id: Balas kalimat "Nice to meet you."
@@ -15,5 +15,5 @@ prompts:
     instruction_id: Sebutkan nama panggilanmu.
     prompt_en: Please call me ...
     expected_response_examples:
-      - Please call me Fikri.
+      - Please call me Arif.
       - Please call me Rina.

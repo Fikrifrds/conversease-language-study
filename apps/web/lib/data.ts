@@ -104,7 +104,7 @@ export const lessonCatalog = [
       { phrase: "Nice to meet you.", meaning: "Senang bertemu denganmu.", usage: "Use when meeting someone for the first time." },
       { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Casual way to close a conversation." }
     ],
-    grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Fikri. I'm from Indonesia.",
+    grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
     prompts: [
       "Say: Good morning. How are you?",
       "Answer: I'm good, thank you.",
@@ -124,14 +124,14 @@ export const lessonCatalog = [
     setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
     dialogue: [
       { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
-      { speaker: "Fikri", text: "Hi Sara. My name is Fikri." },
-      { speaker: "Sara", text: "Nice to meet you, Fikri." },
-      { speaker: "Fikri", text: "Nice to meet you too." }
+      { speaker: "Arif", text: "Hi Sara. My name is Arif." },
+      { speaker: "Sara", text: "Nice to meet you, Arif." },
+      { speaker: "Arif", text: "Nice to meet you too." }
     ],
     translation: [
       "Hai, nama saya Sara. Siapa namamu?",
-      "Hai Sara. Nama saya Fikri.",
-      "Senang bertemu denganmu, Fikri.",
+      "Hai Sara. Nama saya Arif.",
+      "Senang bertemu denganmu, Arif.",
       "Senang bertemu denganmu juga."
     ],
     phrases: [
@@ -147,7 +147,7 @@ export const lessonCatalog = [
       "Say a nickname with: Please call me ..."
     ],
     quiz: [
-      { question: "Which sentence is correct?", answer: "My name is Fikri." },
+      { question: "Which sentence is correct?", answer: "My name is Arif." },
       { question: "What is a natural reply to Nice to meet you?", answer: "Nice to meet you too." }
     ],
     sections: lessonSections

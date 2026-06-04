@@ -13,7 +13,7 @@ Example:
 
 ```txt
 Hi.
-My name is Fikri.
+My name is Arif.
 I'm from Indonesia.
 What is your name?
 Where are you from?

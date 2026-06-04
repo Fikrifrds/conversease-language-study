@@ -9,7 +9,7 @@ Write three short lines:
 Example:
 
 ```txt
-I'm Fikri.
+I'm Arif.
 I'm from Indonesia.
 Where are you from?
 ```

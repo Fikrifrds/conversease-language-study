@@ -2,8 +2,8 @@
 
 ## Repeat
 
-1. My name is Fikri.
-2. I'm Fikri.
+1. My name is Arif.
+2. I'm Arif.
 3. What is your name?
 4. Nice to meet you.
 5. Nice to meet you too.

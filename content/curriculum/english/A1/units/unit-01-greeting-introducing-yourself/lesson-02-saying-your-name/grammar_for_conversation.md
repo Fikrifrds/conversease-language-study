@@ -4,8 +4,8 @@ Use **My name is ...** or **I'm ...** to say your name.
 
 Examples:
 
-- My name is Fikri.
-- I'm Fikri.
+- My name is Arif.
+- I'm Arif.
 - What is your name?
 
 Pattern:

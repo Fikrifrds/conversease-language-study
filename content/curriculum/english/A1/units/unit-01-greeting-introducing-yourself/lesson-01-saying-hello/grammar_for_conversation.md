@@ -5,7 +5,7 @@ Use **I am** or **I'm** for simple personal responses.
 Examples:
 
 - I'm good.
-- I'm Fikri.
+- I'm Arif.
 - I'm from Indonesia.
 
 Pattern:

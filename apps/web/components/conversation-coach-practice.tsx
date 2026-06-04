@@ -57,7 +57,7 @@ const defaultTurns: CoachTurn[] = [
   {
     coach: "Nice. What is your name?",
     hint: "Sebutkan nama dengan pola: My name is ... atau I'm ...",
-    sampleAnswer: "My name is Fikri. Nice to meet you.",
+    sampleAnswer: "My name is Arif. Nice to meet you.",
     focus: "Self introduction"
   },
   {
@@ -74,17 +74,17 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
     {
       coach: "Hi, my name is Sara. What is your name?",
       hint: "Jawab dengan pola: My name is ... atau I'm ...",
-      sampleAnswer: "My name is Fikri. Nice to meet you.",
+      sampleAnswer: "My name is Arif. Nice to meet you.",
       focus: "Saying your name"
     },
     {
       coach: "Nice to meet you. What should I call you?",
       hint: "Gunakan pola: Please call me ...",
-      sampleAnswer: "Please call me Fikri.",
+      sampleAnswer: "Please call me Arif.",
       focus: "Nickname"
     },
     {
-      coach: "Great. Nice to meet you, Fikri.",
+      coach: "Great. Nice to meet you, Arif.",
       hint: "Balas dengan sopan: Nice to meet you too.",
       sampleAnswer: "Nice to meet you too.",
       focus: "Polite response"
@@ -134,7 +134,7 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
     {
       coach: "Hi, good morning. My name is Sara.",
       hint: "Sapa balik dan sebutkan namamu.",
-      sampleAnswer: "Good morning. My name is Fikri.",
+      sampleAnswer: "Good morning. My name is Arif.",
       focus: "Greeting and name"
     },
     {

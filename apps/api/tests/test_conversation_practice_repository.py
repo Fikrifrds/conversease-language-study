@@ -25,7 +25,7 @@ class ConversationPracticeRepositoryTest(unittest.TestCase):
             )
             session, second_turn = repository.add_turn(
                 session_id=session.id,
-                transcript="My name is Fikri. Nice to meet you.",
+                transcript="My name is Arif. Nice to meet you.",
             )
             session, third_turn = repository.add_turn(
                 session_id=session.id,

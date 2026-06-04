@@ -1,9 +1,9 @@
 # Dialogue Script
 
 **Sara:** Hi, my name is Sara. What is your name?  
-**Fikri:** Hi Sara. My name is Fikri.  
-**Sara:** Nice to meet you, Fikri.  
-**Fikri:** Nice to meet you too.
+**Arif:** Hi Sara. My name is Arif.
+**Sara:** Nice to meet you, Arif.
+**Arif:** Nice to meet you too.
 
 ## Audio Direction
 
@@ -11,4 +11,3 @@
 - Speed: slow and natural
 - Tone: friendly and clear
 - Voices: two adults, neutral accent
-

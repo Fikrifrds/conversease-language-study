@@ -11,8 +11,8 @@ Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek ya
 ## Dialogue
 
 - Coach: Hi, my name is Sara.
-- Learner: Hi Sara. My name is Fikri.
-- Coach: Nice to meet you, Fikri.
+- Learner: Hi Sara. My name is Arif.
+- Coach: Nice to meet you, Arif.
 - Learner: Nice to meet you too.
 
 ## Teaching Notes

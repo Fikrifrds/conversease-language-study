@@ -3,15 +3,15 @@ questions:
     type: multiple_choice
     prompt: Which sentence is correct?
     options:
-      - My name is Fikri.
-      - My name Fikri.
-      - I name is Fikri.
-    correct_answer: My name is Fikri.
+      - My name is Arif.
+      - My name Arif.
+      - I name is Arif.
+    correct_answer: My name is Arif.
   - key: reply_nice_to_meet_you
     type: multiple_choice
     prompt: What is a natural reply to "Nice to meet you"?
     options:
       - Nice to meet you too.
-      - I am name Fikri.
+      - I am name Arif.
       - See your name.
     correct_answer: Nice to meet you too.
