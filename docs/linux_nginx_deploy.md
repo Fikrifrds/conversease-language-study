@@ -80,10 +80,6 @@ Build web:
 cd /var/www/conversease/app
 npm install
 npm run build --workspace apps/web
-mkdir -p apps/web/.next/standalone/apps/web/public
-mkdir -p apps/web/.next/standalone/apps/web/.next/static
-cp -R apps/web/public/. apps/web/.next/standalone/apps/web/public/
-cp -R apps/web/.next/static/. apps/web/.next/standalone/apps/web/.next/static/
 ```
 
 Systemd API:
@@ -114,11 +110,10 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/var/www/conversease/app/apps/web/.next/standalone
+WorkingDirectory=/var/www/conversease/app/apps/web
 EnvironmentFile=/var/www/conversease/app/.env.production
-Environment=PORT=3010
-Environment=HOSTNAME=127.0.0.1
-ExecStart=/usr/bin/node apps/web/server.js
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/usr/bin/env npm run start -- --port 3010 --hostname 127.0.0.1
 Restart=always
 RestartSec=5
 
@@ -798,7 +793,7 @@ Non-Docker bisa, tapi lebih banyak yang harus di-maintain sendiri:
 
 - Install Python/Node/PostgreSQL/Redis di host.
 - Jalankan API dengan systemd.
-- Jalankan Next standalone dengan systemd.
+- Jalankan Next production server dengan systemd.
 - Pastikan env production ada di file yang permission-nya aman.
 - Pastikan migration dijalankan manual sebelum restart API.
 

@@ -4,11 +4,10 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/var/www/conversease/app/apps/web/.next/standalone
+WorkingDirectory=/var/www/conversease/app/apps/web
 EnvironmentFile=/var/www/conversease/app/.env.production
-Environment=PORT=3010
-Environment=HOSTNAME=127.0.0.1
-ExecStart=/usr/bin/node apps/web/server.js
+Environment=PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+ExecStart=/usr/bin/env npm run start -- --port 3010 --hostname 127.0.0.1
 Restart=always
 RestartSec=5
 
