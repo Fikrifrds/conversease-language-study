@@ -1,4 +1,5 @@
 from datetime import timedelta
+import logging
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import RedirectResponse
@@ -34,6 +35,7 @@ from app.services.google_oauth import (
 
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 
 class AuthUserPayload(BaseModel):
@@ -160,6 +162,7 @@ async def google_callback(
     db: Session = Depends(get_db),
 ):
     if error:
+        logger.warning("Google OAuth provider returned error: %s", error)
         return redirect_to_app("/login", google_error=error)
 
     if not code or not state:
@@ -179,7 +182,8 @@ async def google_callback(
             token_type=GOOGLE_LOGIN_TOKEN,
             expires_delta=timedelta(minutes=5),
         )
-    except GoogleOAuthError:
+    except GoogleOAuthError as exc:
+        logger.warning("Google OAuth callback failed: %s", exc)
         return redirect_to_app("/login", google_error="google_login_failed")
 
     return redirect_to_app(
