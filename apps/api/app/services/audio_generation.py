@@ -54,6 +54,7 @@ DIALOGUE_PERSONA_VOICES = {
     "sara": "English_Graceful_Lady",
     "mina": "English_compelling_lady1",
     "david": "English_Diligent_Man",
+    "dimas": "English_Diligent_Man",
 }
 
 FALLBACK_MINIMAX_VOICES = (
@@ -748,6 +749,7 @@ def infer_speaker_gender(speaker: str) -> str:
         "ben",
         "john",
         "david",
+        "dimas",
         "daniel",
         "james",
         "robert",
