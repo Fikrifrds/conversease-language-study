@@ -45,7 +45,7 @@ class LearningProgressRepositoryTest(unittest.TestCase):
             self.assertEqual(completed.status, "completed")
             self.assertIsNotNone(completed.completed_at)
             self.assertEqual(summary["course"]["completed_lessons"], 1)
-            self.assertEqual(summary["course"]["completion_percent"], 20)
+            self.assertEqual(summary["course"]["completion_percent"], 17)
             self.assertEqual(summary["lessons"][0]["progress_status"], "completed")
 
     def test_unknown_lesson_raises_key_error(self):

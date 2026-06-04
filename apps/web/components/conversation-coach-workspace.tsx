@@ -8,7 +8,8 @@ const scenarios = [
   { slug: "saying-your-name", label: "Saying Your Name", description: "Perkenalkan namamu secara natural." },
   { slug: "asking-someones-name", label: "Asking a Name", description: "Tanyakan nama orang dengan sopan." },
   { slug: "saying-where-you-are-from", label: "Where Are You From", description: "Jawab asalmu dan tanyakan balik." },
-  { slug: "first-conversation-mission", label: "First Conversation", description: "Gabungkan semuanya dalam satu misi." }
+  { slug: "first-conversation-mission", label: "First Conversation", description: "Gabungkan semuanya dalam satu misi." },
+  { slug: "spelling-your-name", label: "Spelling Your Name", description: "Eja namamu huruf demi huruf." }
 ];
 
 export function ConversationCoachWorkspace() {

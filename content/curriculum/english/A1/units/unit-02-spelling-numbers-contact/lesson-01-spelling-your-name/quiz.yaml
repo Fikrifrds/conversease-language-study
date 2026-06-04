@@ -1,0 +1,17 @@
+questions:
+  - key: ask_spelling
+    type: multiple_choice
+    prompt: Which question asks someone to spell a word?
+    options:
+      - How do you spell it?
+      - How are you?
+      - Where are you from?
+    correct_answer: How do you spell it?
+  - key: meaning_thats_right
+    type: multiple_choice
+    prompt: What does "That's right" mean?
+    options:
+      - Betul
+      - Sampai nanti
+      - Siapa namamu
+    correct_answer: Betul

@@ -1,0 +1,21 @@
+phrases:
+  - phrase: How do you spell it?
+    meaning_id: Bagaimana cara mengejanya?
+    usage_note: Ask someone to spell a word or name.
+    common_mistake: Do not say "How do you spell?" without "it".
+  - phrase: Let me spell it for you.
+    meaning_id: Biar saya ejakan untukmu.
+    usage_note: Offer to spell your name before being asked.
+    common_mistake: Do not say "Let me spell you".
+  - phrase: It's spelled D-I-M-A-S.
+    meaning_id: Ejaannya D-I-M-A-S.
+    usage_note: Say each letter clearly, one by one.
+    common_mistake: Do not run the letters together too fast.
+  - phrase: Can you repeat that, please?
+    meaning_id: Bisa diulang, tolong?
+    usage_note: Ask for a repeat when you miss a letter.
+    common_mistake: Do not just say "What?" in a formal situation.
+  - phrase: That's right.
+    meaning_id: Betul.
+    usage_note: Confirm that the spelling is correct.
+    common_mistake: Do not say "Yes correct" as a full reply; "That's right" sounds natural.

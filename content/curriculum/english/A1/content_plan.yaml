@@ -33,13 +33,13 @@ units:
 
   - unit_key: unit-02-spelling-numbers-contact
     title: Spelling, Numbers & Contact Details
-    status: planned
+    status: in_production
     main_conversation_outcome: Exchange simple contact information and ask for repetition.
     lessons:
       - lesson_key: lesson-01-spelling-your-name
         slug: spelling-your-name
         title: Spelling Your Name
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-giving-phone-numbers
         slug: giving-phone-numbers
         title: Giving Phone Numbers

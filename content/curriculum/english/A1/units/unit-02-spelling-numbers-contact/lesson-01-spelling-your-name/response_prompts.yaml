@@ -1,0 +1,19 @@
+prompts:
+  - key: say_your_name
+    instruction_id: Sebutkan namamu.
+    prompt_en: What is your name?
+    expected_response_examples:
+      - My name is Dimas.
+      - I'm Dimas.
+  - key: spell_your_name
+    instruction_id: Eja namamu huruf demi huruf.
+    prompt_en: How do you spell it?
+    expected_response_examples:
+      - D-I-M-A-S.
+      - It's spelled D-I-M-A-S.
+  - key: confirm_spelling
+    instruction_id: Konfirmasi bahwa ejaannya benar.
+    prompt_en: Let me read it back. D-I-M-A-S.
+    expected_response_examples:
+      - That's right.
+      - Yes, that's right.

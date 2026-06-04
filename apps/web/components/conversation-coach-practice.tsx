@@ -149,6 +149,26 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "Nice to meet you too. See you later.",
       focus: "Closing mission"
     }
+  ],
+  "spelling-your-name": [
+    {
+      coach: "Hi. What is your name?",
+      hint: "Sebutkan namamu dengan pola: My name is ...",
+      sampleAnswer: "My name is Dimas.",
+      focus: "Saying your name"
+    },
+    {
+      coach: "How do you spell it?",
+      hint: "Eja namamu huruf demi huruf, contoh: D-I-M-A-S.",
+      sampleAnswer: "D-I-M-A-S. Dimas.",
+      focus: "Spelling out loud"
+    },
+    {
+      coach: "Thank you. Let me read it back. D-I-M-A-S.",
+      hint: "Konfirmasi dengan: That's right.",
+      sampleAnswer: "That's right.",
+      focus: "Confirming"
+    }
   ]
 };
 

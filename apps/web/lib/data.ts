@@ -261,6 +261,47 @@ export const lessonCatalog = [
       { question: "Which question can you ask back after answering your origin?", answer: "How about you?" }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "spelling-your-name",
+    title: "Spelling Your Name",
+    unit: "Spelling, Numbers & Contact Details",
+    conversationGoal: "Spell your name clearly when someone needs to write it down.",
+    setup: "Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas.",
+    dialogue: [
+      { speaker: "Officer", text: "Hi. What is your name?" },
+      { speaker: "Dimas", text: "My name is Dimas." },
+      { speaker: "Officer", text: "How do you spell it?" },
+      { speaker: "Dimas", text: "D-I-M-A-S. Dimas." },
+      { speaker: "Officer", text: "Thank you. Let me read it back. D-I-M-A-S." },
+      { speaker: "Dimas", text: "That's right." }
+    ],
+    translation: [
+      "Hai. Siapa namamu?",
+      "Nama saya Dimas.",
+      "Bagaimana cara mengejanya?",
+      "D-I-M-A-S. Dimas.",
+      "Terima kasih. Saya ulangi ya. D-I-M-A-S.",
+      "Betul."
+    ],
+    phrases: [
+      { phrase: "How do you spell it?", meaning: "Bagaimana cara mengejanya?", usage: "Ask someone to spell a word or name." },
+      { phrase: "Let me spell it for you.", meaning: "Biar saya ejakan untukmu.", usage: "Offer to spell your name." },
+      { phrase: "It's spelled D-I-M-A-S.", meaning: "Ejaannya D-I-M-A-S.", usage: "Say each letter clearly, one by one." },
+      { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask for a repeat when you miss a letter." },
+      { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." }
+    ],
+    grammar: "Use How do you spell + it/that to ask about spelling: How do you spell it? How do you spell that?",
+    prompts: [
+      "Say: My name is Dimas.",
+      "Spell it: D-I-M-A-S.",
+      "Confirm with: That's right."
+    ],
+    quiz: [
+      { question: "Which question asks someone to spell a word?", answer: "How do you spell it?" },
+      { question: "What does That's right mean?", answer: "Betul." }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -276,12 +317,27 @@ export const course = {
       title: "Greeting & Introducing Yourself",
       outcome: "Greet, introduce yourself, ask someone's name, say where you are from, and complete a first short conversation.",
       progress: 0,
-      lessons: lessonCatalog.map((item) => ({
-        slug: item.slug,
-        title: item.title,
-        status: "published",
-        minutes: item.slug === "first-conversation-mission" ? 10 : 8
-      }))
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Greeting & Introducing Yourself")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "first-conversation-mission" ? 10 : 8
+        }))
+    },
+    {
+      title: "Spelling, Numbers & Contact Details",
+      outcome: "Spell your name, share numbers and contact details, and ask for repetition.",
+      progress: 0,
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Spelling, Numbers & Contact Details")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: 8
+        }))
     },
     {
       title: "Talk About Yourself",
@@ -298,12 +354,6 @@ export const course = {
     {
       title: "Daily Places and Situations",
       outcome: "Handle food, shopping, and direction situations.",
-      progress: 0,
-      lessons: []
-    },
-    {
-      title: "Keep a Simple Conversation",
-      outcome: "Ask follow-up questions and end conversations politely.",
       progress: 0,
       lessons: []
     }

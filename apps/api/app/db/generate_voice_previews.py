@@ -4,7 +4,7 @@ import argparse
 import asyncio
 from typing import Any
 
-from app.db.session import SessionLocal
+from app.db.session import get_sessionmaker
 from app.repositories.audio_voice_previews import DEFAULT_VOICE_PREVIEW_SAMPLE_TEXT
 from app.services.audio_generation import AudioGenerationError, audio_generation_settings
 from app.services.audio_preview_cache import get_or_generate_voice_preview
@@ -43,7 +43,7 @@ async def main() -> int:
     cached_count = 0
     failures: list[tuple[str, str]] = []
 
-    with SessionLocal() as db:
+    with get_sessionmaker()() as db:
         for index, voice in enumerate(voices, start=1):
             voice_id = str(voice.get("voice_id") or "").strip()
             if not voice_id:

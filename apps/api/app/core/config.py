@@ -56,7 +56,9 @@ class Settings(BaseSettings):
     manual_transfer_expire_hours: int = 12
     resend_api_key: str = ""
     together_api_key: str = ""
+    together_api_base_url: str = "https://api.together.xyz"
     together_chat_model: str = "MiniMaxAI/MiniMax-M2.7"
+    together_timeout_seconds: int = 30
     assemblyai_api_key: str = ""
     assemblyai_api_base_url: str = "https://api.assemblyai.com"
     assemblyai_speech_models_raw: str = "universal-3-pro,universal-2"

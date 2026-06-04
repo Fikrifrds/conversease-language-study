@@ -15,6 +15,7 @@ from app.domain.conversation_practice import (
 )
 from app.repositories.billing import BillingRepository, InsufficientMinutesError
 from app.repositories.conversation_practice import ConversationPracticeRepository
+from app.services.conversation_feedback import generate_conversation_feedback
 from app.services.speech_to_text import SpeechToTextError, transcribe_recorded_audio
 
 
@@ -90,8 +91,18 @@ async def create_conversation_turn(
     except InsufficientMinutesError as exc:
         raise HTTPException(status_code=402, detail="Conversation Coach minutes are empty") from exc
 
+    feedback = await generate_conversation_feedback(
+        answer=payload.transcript,
+        turn_index=session.completed_turns,
+        lesson_slug=session.lesson_slug,
+    )
+
     try:
-        session, turn = repository.add_turn(session_id=session_id, transcript=payload.transcript)
+        session, turn = repository.add_turn(
+            session_id=session_id,
+            transcript=payload.transcript,
+            feedback=feedback,
+        )
     except ValueError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
 
@@ -139,11 +150,18 @@ async def create_conversation_audio_turn(
     except InsufficientMinutesError as exc:
         raise HTTPException(status_code=402, detail="Conversation Coach minutes are empty") from exc
 
+    feedback = await generate_conversation_feedback(
+        answer=transcription.text,
+        turn_index=session.completed_turns,
+        lesson_slug=session.lesson_slug,
+    )
+
     try:
         session, turn = repository.add_turn(
             session_id=session_id,
             transcript=transcription.text,
             transcription=transcription.transcription,
+            feedback=feedback,
         )
     except ValueError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc

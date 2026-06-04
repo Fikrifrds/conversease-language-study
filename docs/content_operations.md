@@ -10,13 +10,14 @@ path is not complete for a public release across all supported levels.
 Current English A1-C1 status:
 
 - Planned lessons: 200
-- Implemented lessons: 5
-- Text-ready lessons: 5
+- Implemented lessons: 6
+- Text-ready lessons: 6
 - Audio-ready lessons: 0
-- Beta-ready lessons: 5
+- Beta-ready lessons: 6
 - Production-ready lessons: 0
 
-Controlled beta can use Unit 1 with text-based listening scripts and
+Controlled beta can use Unit 1 plus the first lesson of Unit 2 with text-based
+listening scripts and Conversation Coach. Full public release should complete all planned lessons for
 Conversation Coach. Full public release should complete all planned lessons for
 the intended launch level set and generate listening/phrase audio.
 

@@ -68,6 +68,7 @@ class ConversationPracticeRepository:
         session_id: str,
         transcript: str,
         transcription: Optional[TurnTranscription] = None,
+        feedback: Optional[CoachFeedback] = None,
     ) -> tuple[ConversationSession, ConversationTurn]:
         session_model = self._get_session_model(session_id)
         if session_model is None:
@@ -80,11 +81,12 @@ class ConversationPracticeRepository:
         now = datetime.utcnow()
         turn_index = len(session_model.turns)
         next_turn_index = turn_index + 1
-        feedback = evaluate_answer(
-            transcript,
-            turn_index,
-            lesson_slug=session_model.lesson_slug,
-        )
+        if feedback is None:
+            feedback = evaluate_answer(
+                transcript,
+                turn_index,
+                lesson_slug=session_model.lesson_slug,
+            )
         turn_model = ConversationTurnModel(
             id=f"turn-{uuid4().hex[:10]}",
             session_id=session_model.id,

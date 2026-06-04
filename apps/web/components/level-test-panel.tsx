@@ -220,9 +220,10 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
       <aside className="space-y-4">
         <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <ClipboardCheck className="h-6 w-6 text-leaf" aria-hidden="true" />
-          <h2 className="mt-3 text-xl font-semibold">Readiness Preview</h2>
+          <h2 className="mt-3 text-xl font-semibold">Self-Assessment Readiness</h2>
           <p className="mt-2 text-sm leading-6 text-ink/60">
-            Simulasikan skor latihan sebelum mengambil test final resmi.
+            Nilai sendiri perkiraan kemampuanmu per skill untuk melihat kesiapan. Ini self-assessment,
+            bukan nilai otomatis. Skor final resmi ditentukan admin setelah review.
           </p>
 
           <label className="mt-4 block text-sm font-medium text-ink/70">
@@ -295,17 +296,25 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
           <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
             <p className="text-sm font-semibold uppercase text-leaf">Saved Attempt</p>
             <h2 className="mt-2 text-xl font-semibold">
-              {savedAttempt.status === "submitted" || savedAttempt.status === "reviewed"
-                ? "Official Report Saved"
-                : "Attempt In Progress"}
+              {savedAttempt.status === "reviewed"
+                ? "Reviewed by Admin"
+                : savedAttempt.status === "submitted"
+                  ? "Submitted for Admin Review"
+                  : "Attempt In Progress"}
             </h2>
             <p className="mt-2 text-sm text-ink/60">{savedAttempt.id}</p>
             {savedAttempt.status === "submitted" || savedAttempt.status === "reviewed" ? (
               <div className="mt-4 rounded-lg bg-paper p-4">
-                <p className="text-sm text-ink/60">Score</p>
+                <p className="text-sm text-ink/60">
+                  {savedAttempt.status === "reviewed" ? "Official score" : "Self-assessed score"}
+                </p>
                 <p className="mt-1 text-3xl font-semibold">{savedAttempt.overallScore}</p>
                 <p className="mt-2 text-sm text-ink/70">
-                  {savedAttempt.passed ? "Passed" : "Needs review"}
+                  {savedAttempt.status === "reviewed"
+                    ? savedAttempt.passed
+                      ? "Passed"
+                      : "Not yet passed"
+                    : "Menunggu review admin"}
                 </p>
                 {savedAttempt.status === "reviewed" ? (
                   <p className="mt-2 text-xs text-ink/55">
