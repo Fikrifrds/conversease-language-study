@@ -16,6 +16,7 @@ from app.repositories.users import normalize_email
 GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 GOOGLE_TOKEN_URL = "https://oauth2.googleapis.com/token"
 GOOGLE_JWKS_URL = "https://www.googleapis.com/oauth2/v3/certs"
+GOOGLE_USERINFO_URL = "https://www.googleapis.com/oauth2/v3/userinfo"
 GOOGLE_ISSUERS = {"https://accounts.google.com", "accounts.google.com"}
 GOOGLE_STATE_TYPE = "google_oauth_state"
 
@@ -111,11 +112,20 @@ async def exchange_google_code(code: str) -> GoogleProfile:
         except httpx.HTTPError as exc:
             raise GoogleOAuthError("google_token_exchange_failed") from exc
 
+    access_token = token_payload.get("access_token")
     id_token = token_payload.get("id_token")
-    if not isinstance(id_token, str) or not id_token:
-        raise GoogleOAuthError("missing_google_id_token")
+    if isinstance(id_token, str) and id_token:
+        try:
+            return await verify_google_id_token(id_token)
+        except GoogleOAuthError:
+            if isinstance(access_token, str) and access_token:
+                return await fetch_google_userinfo(access_token)
+            raise
 
-    return await verify_google_id_token(id_token)
+    if isinstance(access_token, str) and access_token:
+        return await fetch_google_userinfo(access_token)
+
+    raise GoogleOAuthError("missing_google_profile_token")
 
 
 async def verify_google_id_token(id_token: str) -> GoogleProfile:
@@ -150,14 +160,36 @@ async def verify_google_id_token(id_token: str) -> GoogleProfile:
     if payload.get("iss") not in GOOGLE_ISSUERS:
         raise GoogleOAuthError("invalid_google_issuer")
 
+    return google_profile_from_claims(payload)
+
+
+async def fetch_google_userinfo(access_token: str) -> GoogleProfile:
+    async with httpx.AsyncClient(timeout=10) as client:
+        try:
+            userinfo_response = await client.get(
+                GOOGLE_USERINFO_URL,
+                headers={"Authorization": f"Bearer {access_token}"},
+            )
+            userinfo_response.raise_for_status()
+            payload = userinfo_response.json()
+        except httpx.HTTPError as exc:
+            raise GoogleOAuthError("google_userinfo_fetch_failed") from exc
+
+    return google_profile_from_claims(payload)
+
+
+def google_profile_from_claims(payload: dict) -> GoogleProfile:
     email = payload.get("email")
     subject = payload.get("sub")
     if not isinstance(email, str) or not isinstance(subject, str):
         raise GoogleOAuthError("missing_google_profile")
 
+    email_verified_claim = payload.get("email_verified")
+    email_verified = email_verified_claim is True or str(email_verified_claim).lower() == "true"
+
     return GoogleProfile(
         email=normalize_email(email),
         name=str(payload.get("name") or email.split("@")[0]),
-        email_verified=payload.get("email_verified") is True,
+        email_verified=email_verified,
         subject=subject,
     )

@@ -7,7 +7,7 @@ from app.core.security import create_access_token, decode_access_token
 from app.db.base import Base
 from app.db import models  # noqa: F401
 from app.repositories.users import UserRepository
-from app.services.google_oauth import create_google_oauth_state, decode_google_oauth_state
+from app.services.google_oauth import create_google_oauth_state, decode_google_oauth_state, google_profile_from_claims
 
 
 class AuthTest(unittest.TestCase):
@@ -65,6 +65,20 @@ class AuthTest(unittest.TestCase):
             self.assertEqual(user.id, same_user.id)
             self.assertEqual(user.email, "google@example.com")
             self.assertIsNotNone(same_user.email_verified_at)
+
+    def test_google_profile_from_claims_normalizes_userinfo_payload(self):
+        profile = google_profile_from_claims(
+            {
+                "sub": "google-subject",
+                "email": "FIKRI@example.com",
+                "name": "Fikri",
+                "email_verified": "true",
+            }
+        )
+
+        self.assertEqual(profile.email, "fikri@example.com")
+        self.assertEqual(profile.name, "Fikri")
+        self.assertTrue(profile.email_verified)
 
 
 if __name__ == "__main__":
