@@ -25,9 +25,9 @@ from app.services.audio_generation import (
     audio_generation_settings,
     find_lesson_audio_reference,
     generate_lesson_listening_audio,
-    generate_voice_preview_audio,
     read_yaml_mapping,
 )
+from app.services.audio_preview_cache import get_or_generate_voice_preview, list_voice_preview_cache
 
 
 router = APIRouter()
@@ -70,6 +70,7 @@ class VoicePreviewPayload(BaseModel):
     voice_id: Optional[str] = Field(default=None, max_length=160)
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
     sample_text: Optional[str] = Field(default=None, min_length=8, max_length=500)
+    force: bool = False
 
 
 @router.get("/admin/cms/summary")
@@ -148,16 +149,40 @@ async def get_audio_generation_settings(
 async def generate_cms_voice_preview_audio(
     payload: VoicePreviewPayload,
     admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     try:
-        result = await generate_voice_preview_audio(
+        result = await get_or_generate_voice_preview(
+            db,
             model=payload.model,
             voice_id=payload.voice_id,
             speed=payload.speed,
             sample_text=payload.sample_text,
             generated_by=admin_display_name(payload.generated_by, admin),
+            force=payload.force,
         )
         return {"data": result}
+    except AudioGenerationError as exc:
+        raise audio_generation_http_error(exc) from exc
+
+
+@router.get("/admin/cms/audio/voice-previews")
+async def list_cms_voice_preview_audio(
+    model: Optional[str] = Query(default=None, max_length=40),
+    speed: Optional[float] = Query(default=None, ge=0.5, le=2.0),
+    sample_text: Optional[str] = Query(default=None, min_length=8, max_length=500),
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        return {
+            "data": list_voice_preview_cache(
+                db,
+                model=model,
+                speed=speed,
+                sample_text=sample_text,
+            )
+        }
     except AudioGenerationError as exc:
         raise audio_generation_http_error(exc) from exc
 

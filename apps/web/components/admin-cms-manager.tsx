@@ -28,6 +28,7 @@ import {
   getAdminCmsLesson,
   getAdminCmsSummary,
   getAdminEmailTemplate,
+  getAdminVoicePreviews,
   previewAdminVoiceAudio,
   rollbackAdminCmsRevision,
   updateAdminCmsLesson,
@@ -62,12 +63,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [audioVoiceId, setAudioVoiceId] = useState("");
   const [audioSpeed, setAudioSpeed] = useState(1);
   const [voicePreview, setVoicePreview] = useState<AdminVoicePreviewAudio | null>(null);
+  const [voicePreviewsByVoiceId, setVoicePreviewsByVoiceId] = useState<Record<string, AdminVoicePreviewAudio>>({});
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
   const [isPreviewingVoice, setIsPreviewingVoice] = useState(false);
+  const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
 
   useEffect(() => {
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
@@ -101,6 +104,39 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   useEffect(() => {
     setVoicePreview(null);
   }, [audioModel, audioVoiceId, audioSpeed]);
+
+  useEffect(() => {
+    if (!audioModel) {
+      setVoicePreviewsByVoiceId({});
+      return;
+    }
+
+    let cancelled = false;
+    setIsLoadingVoicePreviews(true);
+    void getAdminVoicePreviews({ model: audioModel, speed: audioSpeed })
+      .then((previews) => {
+        if (cancelled) {
+          return;
+        }
+        setVoicePreviewsByVoiceId(
+          Object.fromEntries(previews.map((preview) => [preview.voiceId, preview]))
+        );
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setVoicePreviewsByVoiceId({});
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingVoicePreviews(false);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [audioModel, audioSpeed]);
 
   useEffect(() => {
     void loadSummary();
@@ -181,7 +217,12 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
         speed: audioSpeed
       });
       setVoicePreview(preview);
-      setMessage(`Preview voice ${preview.voiceId} berhasil dibuat (${formatDuration(preview.durationSeconds)}).`);
+      setVoicePreviewsByVoiceId((current) => ({ ...current, [preview.voiceId]: preview }));
+      setMessage(
+        `Preview voice ${preview.voiceId} ${
+          preview.cached ? "siap dari cache" : "berhasil dibuat"
+        } (${formatDuration(preview.durationSeconds)}).`
+      );
     } catch (caughtError) {
       setError(audioGenerationErrorMessage(caughtError));
     } finally {
@@ -330,9 +371,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             audioModel={audioModel}
             audioVoiceId={audioVoiceId}
             audioSpeed={audioSpeed}
-            voicePreview={voicePreview}
+            voicePreview={voicePreview ?? voicePreviewsByVoiceId[audioVoiceId] ?? null}
             generatingLessonSlug={generatingLessonSlug}
             isPreviewingVoice={isPreviewingVoice}
+            isLoadingVoicePreviews={isLoadingVoicePreviews}
             onAudioModelChange={setAudioModel}
             onAudioVoiceChange={setAudioVoiceId}
             onAudioSpeedChange={setAudioSpeed}
@@ -441,6 +483,7 @@ function ReadinessPanel({
   voicePreview,
   generatingLessonSlug,
   isPreviewingVoice,
+  isLoadingVoicePreviews,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
@@ -456,6 +499,7 @@ function ReadinessPanel({
   voicePreview: AdminVoicePreviewAudio | null;
   generatingLessonSlug: string;
   isPreviewingVoice: boolean;
+  isLoadingVoicePreviews: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
@@ -484,6 +528,7 @@ function ReadinessPanel({
         speed={audioSpeed}
         preview={voicePreview}
         isPreviewing={isPreviewingVoice}
+        isLoadingPreviewCache={isLoadingVoicePreviews}
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
@@ -521,6 +566,7 @@ function AudioSettingsPanel({
   speed,
   preview,
   isPreviewing,
+  isLoadingPreviewCache,
   onModelChange,
   onVoiceChange,
   onSpeedChange,
@@ -532,6 +578,7 @@ function AudioSettingsPanel({
   speed: number;
   preview: AdminVoicePreviewAudio | null;
   isPreviewing: boolean;
+  isLoadingPreviewCache: boolean;
   onModelChange: (value: string) => void;
   onVoiceChange: (value: string) => void;
   onSpeedChange: (value: number) => void;
@@ -634,19 +681,22 @@ function AudioSettingsPanel({
             <div className="mt-3">
               <audio controls preload="metadata" src={preview.playbackUrl || preview.audioUrl} className="h-10 w-full" />
               <p className="mt-2 text-xs text-ink/45">
-                {preview.model} / {preview.voiceId} / {formatDuration(preview.durationSeconds)}
+                {preview.cached ? "Cached preview" : "Fresh preview"} / {preview.model} / {preview.voiceId} /{" "}
+                {formatDuration(preview.durationSeconds)}
               </p>
             </div>
+          ) : isLoadingPreviewCache ? (
+            <p className="mt-3 text-xs font-semibold text-ink/45">Loading cached preview...</p>
           ) : null}
         </div>
         <button
           type="button"
           onClick={onPreview}
-          disabled={!configured || !model || !voiceId || isPreviewing}
+          disabled={!configured || !model || !voiceId || isPreviewing || isLoadingPreviewCache}
           className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60 lg:mt-auto"
         >
           <PlayCircle className="h-4 w-4" aria-hidden="true" />
-          {isPreviewing ? "Generating" : "Preview Voice"}
+          {isPreviewing ? "Preparing" : isLoadingPreviewCache ? "Loading" : "Preview Voice"}
         </button>
       </div>
 

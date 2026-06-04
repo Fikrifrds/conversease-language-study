@@ -313,3 +313,35 @@ class ContentRevisionModel(Base):
     after_json: Mapped[dict] = mapped_column(JSON, nullable=False)
     metadata_json: Mapped[dict] = mapped_column(JSON, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+
+
+class AudioVoicePreviewModel(Base):
+    __tablename__ = "audio_voice_previews"
+    __table_args__ = (
+        UniqueConstraint(
+            "provider",
+            "model",
+            "voice_id",
+            "speed",
+            "sample_text_hash",
+            name="uq_audio_voice_previews_voice_sample",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    provider: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
+    model: Mapped[str] = mapped_column(String(80), index=True, nullable=False)
+    voice_id: Mapped[str] = mapped_column(String(160), index=True, nullable=False)
+    speed: Mapped[float] = mapped_column(Float, nullable=False)
+    sample_text_hash: Mapped[str] = mapped_column(String(64), index=True, nullable=False)
+    sample_text: Mapped[str] = mapped_column(Text, nullable=False)
+    audio_url: Mapped[str] = mapped_column(Text, nullable=False)
+    object_key: Mapped[str] = mapped_column(Text, nullable=False)
+    duration_seconds: Mapped[float] = mapped_column(Float, nullable=False)
+    audio_format: Mapped[str] = mapped_column(String(16), nullable=False)
+    audio_size: Mapped[int] = mapped_column(Integer, nullable=False)
+    trace_id: Mapped[Optional[str]] = mapped_column(String(160), nullable=True)
+    usage_characters: Mapped[int] = mapped_column(Integer, nullable=False)
+    generated_by: Mapped[str] = mapped_column(String(160), index=True, nullable=False)
+    created_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)

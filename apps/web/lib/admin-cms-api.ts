@@ -164,6 +164,8 @@ export type AdminGeneratedAudio = {
 };
 
 export type AdminVoicePreviewAudio = {
+  id: string;
+  provider: string;
   audioUrl: string;
   playbackUrl: string;
   objectKey: string;
@@ -172,11 +174,16 @@ export type AdminVoicePreviewAudio = {
   audioSize: number;
   model: string;
   voiceId: string;
+  speed: number;
   traceId: string;
   usageCharacters: number;
   sampleText: string;
+  sampleTextHash: string;
   generatedBy: string;
   generatedAt: string;
+  createdAt: string;
+  updatedAt: string;
+  cached: boolean;
 };
 
 export type AdminCmsSummary = {
@@ -372,6 +379,8 @@ type ApiAdminGeneratedAudio = {
 };
 
 type ApiAdminVoicePreviewAudio = {
+  id: string;
+  provider: string;
   audio_url: string;
   playback_url: string;
   object_key: string;
@@ -380,11 +389,16 @@ type ApiAdminVoicePreviewAudio = {
   audio_size: number;
   model: string;
   voice_id: string;
+  speed: number;
   trace_id: string;
   usage_characters: number;
   sample_text: string;
+  sample_text_hash: string;
   generated_by: string;
   generated_at: string;
+  created_at: string;
+  updated_at: string;
+  cached: boolean;
 };
 
 function apiBaseUrl() {
@@ -587,6 +601,8 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
 
 function mapVoicePreviewAudio(audio: ApiAdminVoicePreviewAudio): AdminVoicePreviewAudio {
   return {
+    id: audio.id,
+    provider: audio.provider,
     audioUrl: audio.audio_url,
     playbackUrl: audio.playback_url,
     objectKey: audio.object_key,
@@ -595,11 +611,16 @@ function mapVoicePreviewAudio(audio: ApiAdminVoicePreviewAudio): AdminVoicePrevi
     audioSize: audio.audio_size,
     model: audio.model,
     voiceId: audio.voice_id,
+    speed: audio.speed,
     traceId: audio.trace_id,
     usageCharacters: audio.usage_characters,
     sampleText: audio.sample_text,
+    sampleTextHash: audio.sample_text_hash,
     generatedBy: audio.generated_by,
-    generatedAt: audio.generated_at
+    generatedAt: audio.generated_at,
+    createdAt: audio.created_at,
+    updatedAt: audio.updated_at,
+    cached: audio.cached
   };
 }
 
@@ -698,6 +719,28 @@ export async function getAdminAudioSettings(): Promise<AdminAudioSettings> {
   return mapAudioSettings(response.data);
 }
 
+export async function getAdminVoicePreviews(input: {
+  model?: string;
+  speed?: number;
+  sampleText?: string;
+}): Promise<AdminVoicePreviewAudio[]> {
+  const params = new URLSearchParams();
+  if (input.model) {
+    params.set("model", input.model);
+  }
+  if (typeof input.speed === "number") {
+    params.set("speed", String(input.speed));
+  }
+  if (input.sampleText) {
+    params.set("sample_text", input.sampleText);
+  }
+  const query = params.toString();
+  const response = await adminRequestJson<ApiResponse<ApiAdminVoicePreviewAudio[]>>(
+    `/admin/cms/audio/voice-previews${query ? `?${query}` : ""}`
+  );
+  return response.data.map(mapVoicePreviewAudio);
+}
+
 export async function generateAdminLessonAudio(input: {
   generatedBy: string;
   lessonSlug: string;
@@ -727,6 +770,7 @@ export async function previewAdminVoiceAudio(input: {
   voiceId: string;
   speed: number;
   sampleText?: string;
+  force?: boolean;
 }): Promise<AdminVoicePreviewAudio> {
   const response = await adminRequestJson<ApiResponse<ApiAdminVoicePreviewAudio>>("/admin/cms/audio/voice-preview", {
     method: "POST",
@@ -735,7 +779,8 @@ export async function previewAdminVoiceAudio(input: {
       model: input.model,
       voice_id: input.voiceId,
       speed: input.speed,
-      sample_text: input.sampleText
+      sample_text: input.sampleText,
+      force: input.force ?? false
     })
   });
   return mapVoicePreviewAudio(response.data);

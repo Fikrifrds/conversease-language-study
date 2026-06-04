@@ -12,9 +12,10 @@ from app.core.config import settings
 from app.data.admin_cms import curriculum_summary, get_admin_lesson, get_email_template
 from app.db import models  # noqa: F401
 from app.db.base import Base
-from app.db.models import ContentRevisionModel
+from app.db.models import AudioVoicePreviewModel, ContentRevisionModel
 from app.db.session import get_db
 from app.main import create_app
+from app.repositories.audio_voice_previews import DEFAULT_VOICE_PREVIEW_SAMPLE_TEXT
 from app.repositories.content_revisions import ContentRevisionRepository, content_hash
 
 
@@ -234,7 +235,7 @@ class AdminCmsTest(unittest.TestCase):
             "voice_id": "English_expressive_narrator",
             "trace_id": "trace-preview",
             "usage_characters": 82,
-            "sample_text": "Hello, welcome to Conversease.",
+            "sample_text": DEFAULT_VOICE_PREVIEW_SAMPLE_TEXT,
             "generated_by": "Audio QA",
             "generated_at": "2026-06-04T00:00:00+00:00",
         }
@@ -242,10 +243,10 @@ class AdminCmsTest(unittest.TestCase):
         try:
             client = TestClient(app)
             with patch(
-                "app.api.routes.admin_cms.generate_voice_preview_audio",
+                "app.services.audio_preview_cache.generate_voice_preview_audio",
                 new=AsyncMock(return_value=preview_audio),
             ) as generate_preview:
-                response = client.post(
+                first_response = client.post(
                     "/api/admin/cms/audio/voice-preview",
                     headers={"x-admin-api-key": settings.payment_admin_api_key},
                     json={
@@ -255,17 +256,40 @@ class AdminCmsTest(unittest.TestCase):
                         "speed": 1,
                     },
                 )
+                second_response = client.post(
+                    "/api/admin/cms/audio/voice-preview",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                    json={
+                        "generated_by": "Audio QA",
+                        "model": "speech-2.8-hd",
+                        "voice_id": "English_expressive_narrator",
+                        "speed": 1,
+                    },
+                )
+                list_response = client.get(
+                    "/api/admin/cms/audio/voice-previews?model=speech-2.8-hd&speed=1",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
 
-            self.assertEqual(response.status_code, 200)
-            self.assertEqual(response.json()["data"]["audio_url"], preview_audio["audio_url"])
-            self.assertEqual(response.json()["data"]["playback_url"], preview_audio["playback_url"])
+            self.assertEqual(first_response.status_code, 200)
+            self.assertEqual(second_response.status_code, 200)
+            self.assertEqual(list_response.status_code, 200)
+            self.assertEqual(first_response.json()["data"]["audio_url"], preview_audio["audio_url"])
+            self.assertFalse(first_response.json()["data"]["cached"])
+            self.assertTrue(second_response.json()["data"]["cached"])
+            self.assertEqual(list_response.json()["data"][0]["voice_id"], "English_expressive_narrator")
             generate_preview.assert_awaited_once_with(
                 model="speech-2.8-hd",
                 voice_id="English_expressive_narrator",
-                speed=1,
-                sample_text=None,
+                speed=1.0,
+                sample_text=DEFAULT_VOICE_PREVIEW_SAMPLE_TEXT,
                 generated_by="Audio QA",
             )
+
+            with session_local() as db:
+                preview = db.execute(select(AudioVoicePreviewModel)).scalar_one()
+                self.assertEqual(preview.voice_id, "English_expressive_narrator")
+                self.assertEqual(preview.sample_text, DEFAULT_VOICE_PREVIEW_SAMPLE_TEXT)
         finally:
             settings.payment_admin_api_key = original_key
             app.dependency_overrides.clear()

@@ -270,6 +270,12 @@ After generation:
 3. The API calls MiniMax T2A, uploads the mp3 to S3, updates `audio_manifest.yaml`, and sets `audio_generated=done` in `content/production_tracker.csv`.
 4. Run readiness and curriculum validation before release.
 
+Generate voice preview cache once per model/speed so the voice dropdown can play stored samples:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.generate_voice_previews --model speech-2.8-hd --speed 1
+```
+
 The CMS generator currently fills the listening dialogue asset (`dialogue_main`) from `listening_script.md`. Phrase pronunciation assets can be generated as a separate follow-up asset when needed.
 
 Required API env for CMS generation:

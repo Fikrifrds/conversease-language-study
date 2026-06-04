@@ -74,6 +74,12 @@ apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.migration_status
 ```
 
+Opsional setelah env MiniMax dan S3 lengkap: generate cache preview semua voice, agar CMS tidak generate sample suara berulang.
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.generate_voice_previews --model speech-2.8-hd --speed 1
+```
+
 Build web:
 
 ```bash
