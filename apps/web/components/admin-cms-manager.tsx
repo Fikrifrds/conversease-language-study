@@ -136,9 +136,9 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   }
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[0.32fr_0.68fr]">
-      <section className="space-y-5">
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+    <div className="space-y-5">
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-5 xl:flex-row xl:items-start xl:justify-between">
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-lg bg-mint">
               <ShieldCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
@@ -146,92 +146,64 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin CMS</p>
               <h1 className="mt-1 text-2xl font-semibold">Content Control</h1>
-              <p className="mt-2 text-sm leading-6 text-ink/60">
+              <p className="mt-2 max-w-2xl text-sm leading-6 text-ink/60">
                 Review, edit, dan validasi kurikulum serta email template sebelum rilis.
               </p>
             </div>
           </div>
 
-          <div className="mt-5 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+          <div className="grid gap-3 sm:grid-cols-[minmax(220px,1fr)_180px] xl:w-[560px]">
+            <label className="text-sm font-medium text-ink/70">
+              Operator
+              <input
+                value={adminName}
+                onChange={(event) => setAdminName(event.target.value)}
+                className="focus-ring mt-2 h-11 w-full rounded-lg border border-ink/15 bg-white px-3 text-ink"
+                placeholder="Nama admin"
+              />
+            </label>
+            <button
+              type="button"
+              onClick={loadSummary}
+              disabled={isLoading}
+              className="focus-ring mt-auto inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <RefreshCcw className="h-4 w-4" aria-hidden="true" />
+              {isLoading ? "Loading" : "Refresh"}
+            </button>
+          </div>
+        </div>
+
+        <div className="mt-5 grid gap-3 lg:grid-cols-[1fr_1fr_1fr]">
+          <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
             Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
           </div>
 
-          <label className="mt-4 block text-sm font-medium text-ink/70">
-            Operator
-            <input
-              value={adminName}
-              onChange={(event) => setAdminName(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              placeholder="Nama admin"
-            />
-          </label>
-
-          <button
-            type="button"
-            onClick={loadSummary}
-            disabled={isLoading}
-            className="focus-ring mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            <RefreshCcw className="h-4 w-4" aria-hidden="true" />
-            {isLoading ? "Loading" : "Load CMS"}
-          </button>
-        </div>
-
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <div className="flex items-center gap-2">
-            <ShieldCheck className={`h-5 w-5 ${validationOk ? "text-leaf" : "text-coral"}`} aria-hidden="true" />
-            <h2 className="font-semibold">Validation</h2>
-          </div>
           {summary ? (
             validationOk ? (
-              <p className="mt-3 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">Curriculum validation passed.</p>
+              <div className="flex items-center gap-2 rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
+                <ShieldCheck className="h-4 w-4 text-leaf" aria-hidden="true" />
+                Curriculum validation passed.
+              </div>
             ) : (
-              <div className="mt-3 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">
+              <div className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">
                 {summary.curriculum.validationIssues.map((issue) => (
                   <p key={issue}>{issue}</p>
                 ))}
               </div>
             )
           ) : (
-            <p className="mt-3 text-sm leading-6 text-ink/60">Load CMS untuk melihat status validasi content.</p>
-          )}
-          {message ? <p className="mt-3 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
-          {error ? <p className="mt-3 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
-        </div>
-
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <div className="flex items-center gap-2">
-            <Clock3 className="h-5 w-5 text-leaf" aria-hidden="true" />
-            <h2 className="font-semibold">Change Log</h2>
-          </div>
-          {summary?.recentRevisions.length ? (
-            <div className="mt-3 space-y-2">
-              {summary.recentRevisions.map((revision) => (
-                <div key={revision.id} className="rounded-lg bg-paper p-3 text-sm">
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
-                      <p className="font-semibold">
-                        {revision.resourceKey} v{revision.version}
-                      </p>
-                      <p className="mt-1 text-xs text-ink/55">
-                        {revision.resourceType} / {revision.action} / {revision.changedBy}
-                      </p>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => rollbackRevision(revision)}
-                      disabled={restoringRevisionId === revision.id}
-                      className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-                    >
-                      <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
-                      {restoringRevisionId === revision.id ? "Restoring" : "Restore"}
-                    </button>
-                  </div>
-                </div>
-              ))}
+            <div className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/60">
+              Load CMS untuk melihat status validasi content.
             </div>
+          )}
+
+          {error ? (
+            <div className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</div>
+          ) : message ? (
+            <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</div>
           ) : (
-            <p className="mt-3 text-sm leading-6 text-ink/60">Belum ada revision yang tercatat.</p>
+            <div className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/60">Siap untuk review content.</div>
           )}
         </div>
       </section>
@@ -282,7 +254,61 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
           />
         )}
       </section>
+
+      <ChangeLogPanel
+        revisions={summary?.recentRevisions ?? []}
+        restoringRevisionId={restoringRevisionId}
+        onRollback={rollbackRevision}
+      />
     </div>
+  );
+}
+
+function ChangeLogPanel({
+  revisions,
+  restoringRevisionId,
+  onRollback
+}: {
+  revisions: AdminContentRevision[];
+  restoringRevisionId: string;
+  onRollback: (revision: AdminContentRevision) => void;
+}) {
+  return (
+    <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+      <div className="flex items-center gap-2">
+        <Clock3 className="h-5 w-5 text-leaf" aria-hidden="true" />
+        <h2 className="font-semibold">Change Log</h2>
+      </div>
+      {revisions.length ? (
+        <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
+          {revisions.map((revision) => (
+            <div key={revision.id} className="rounded-lg bg-paper p-3 text-sm">
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-semibold">
+                    {revision.resourceKey} v{revision.version}
+                  </p>
+                  <p className="mt-1 text-xs text-ink/55">
+                    {revision.resourceType} / {revision.action} / {revision.changedBy}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => onRollback(revision)}
+                  disabled={restoringRevisionId === revision.id}
+                  className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
+                >
+                  <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                  {restoringRevisionId === revision.id ? "Restoring" : "Restore"}
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <p className="mt-3 text-sm leading-6 text-ink/60">Belum ada revision yang tercatat.</p>
+      )}
+    </section>
   );
 }
 
