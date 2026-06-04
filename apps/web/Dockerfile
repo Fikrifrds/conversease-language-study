@@ -11,6 +11,8 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 ARG NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
 ENV NEXT_PUBLIC_API_BASE_URL=${NEXT_PUBLIC_API_BASE_URL}
+ARG NEXT_STANDALONE=true
+ENV NEXT_STANDALONE=${NEXT_STANDALONE}
 RUN npm run build --workspace apps/web
 
 FROM node:22-alpine AS runner
