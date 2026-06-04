@@ -28,6 +28,24 @@ MINIMAX_TTS_MODELS = (
     "speech-01-turbo",
 )
 
+CLEAR_FEMALE_DIALOGUE_VOICES = (
+    "English_radiant_girl",
+    "English_Graceful_Lady",
+    "English_compelling_lady1",
+    "English_captivating_female1",
+    "English_Upbeat_Woman",
+    "English_CalmWoman",
+)
+
+CLEAR_MALE_DIALOGUE_VOICES = (
+    "English_Gentle-voiced_man",
+    "English_Trustworth_Man",
+    "English_Diligent_Man",
+    "English_magnetic_voiced_man",
+    "English_Deep-VoicedGentleman",
+    "English_FriendlyPerson",
+)
+
 FALLBACK_MINIMAX_VOICES = (
     {
         "voice_id": "English_expressive_narrator",
@@ -663,8 +681,6 @@ def clean_dialogue_text(value: str) -> str:
 
 
 def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str) -> dict[str, str]:
-    female_voices = ["English_CalmWoman", "English_Upbeat_Woman", "English_expressive_narrator"]
-    male_voices = ["English_Trustworth_Man", "English_magnetic_voiced_man", "English_FriendlyPerson"]
     speaker_voices: dict[str, str] = {}
     gender_counts = {"female": 0, "male": 0}
 
@@ -676,7 +692,7 @@ def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str)
         if gender == "unknown":
             gender = "female" if len(speaker_voices) % 2 == 0 else "male"
 
-        voice_pool = female_voices if gender == "female" else male_voices
+        voice_pool = CLEAR_FEMALE_DIALOGUE_VOICES if gender == "female" else CLEAR_MALE_DIALOGUE_VOICES
         index = gender_counts[gender] % len(voice_pool)
         speaker_voices[turn.speaker] = voice_pool[index] or fallback_voice_id
         gender_counts[gender] += 1

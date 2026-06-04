@@ -41,9 +41,28 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
 
-        self.assertEqual(voices["Alya"], "English_CalmWoman")
-        self.assertEqual(voices["Ben"], "English_Trustworth_Man")
-        self.assertEqual(voices["John"], "English_magnetic_voiced_man")
+        self.assertEqual(voices["Alya"], "English_radiant_girl")
+        self.assertEqual(voices["Ben"], "English_Gentle-voiced_man")
+        self.assertEqual(voices["John"], "English_Trustworth_Man")
+
+    def test_dialogue_voice_assignment_cycles_clear_voice_pool(self):
+        turns = [
+            _turn("Alya", "Hi."),
+            _turn("Sara", "Hello."),
+            _turn("Mina", "Good morning."),
+            _turn("Ben", "Hi."),
+            _turn("John", "Hello."),
+            _turn("David", "Good morning."),
+        ]
+
+        voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
+
+        self.assertEqual(voices["Alya"], "English_radiant_girl")
+        self.assertEqual(voices["Sara"], "English_Graceful_Lady")
+        self.assertEqual(voices["Mina"], "English_compelling_lady1")
+        self.assertEqual(voices["Ben"], "English_Gentle-voiced_man")
+        self.assertEqual(voices["John"], "English_Trustworth_Man")
+        self.assertEqual(voices["David"], "English_Diligent_Man")
 
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
