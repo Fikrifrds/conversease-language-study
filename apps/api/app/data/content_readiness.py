@@ -392,7 +392,7 @@ def item_readiness(
 
     if item["key"] == "audio_generated":
         manifest_ready = audio_manifest_ready(path)
-        ready = manifest_ready or tracker_value == "done"
+        ready = manifest_ready
     else:
         ready = bool(non_empty)
         if tracker_column:
@@ -426,19 +426,35 @@ def audio_manifest_ready(path: Path) -> bool:
     if str(data.get("status", "")).strip() not in AUDIO_READY_STATUSES:
         return False
 
-    assets = data.get("assets", [])
-    if not isinstance(assets, list) or not assets:
+    dialogue_asset = dialogue_audio_manifest_asset(data)
+    if not dialogue_asset:
         return False
 
-    for asset in assets:
-        if not isinstance(asset, dict):
-            return False
-        if not asset.get("audio_url"):
-            return False
-        if not asset.get("duration_seconds"):
-            return False
+    if not dialogue_asset.get("audio_url"):
+        return False
+    if not dialogue_asset.get("duration_seconds"):
+        return False
 
     return True
+
+
+def dialogue_audio_manifest_asset(data: dict[str, Any]) -> Optional[dict[str, Any]]:
+    assets = data.get("assets", [])
+    if not isinstance(assets, list) or not assets:
+        return None
+
+    dialogue_asset = next(
+        (
+            asset
+            for asset in assets
+            if isinstance(asset, dict) and asset.get("key") == "dialogue_main"
+        ),
+        None,
+    )
+    if dialogue_asset:
+        return dialogue_asset
+
+    return next((asset for asset in assets if isinstance(asset, dict) and asset.get("audio_url")), None)
 
 
 def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
@@ -454,27 +470,13 @@ def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
     if not isinstance(data, dict):
         return None
 
-    assets = data.get("assets", [])
-    if not isinstance(assets, list):
-        return None
-
-    dialogue_asset = next(
-        (
-            asset
-            for asset in assets
-            if isinstance(asset, dict) and asset.get("key") == "dialogue_main" and asset.get("audio_url")
-        ),
-        None,
-    )
-    if not dialogue_asset:
-        dialogue_asset = next(
-            (asset for asset in assets if isinstance(asset, dict) and asset.get("audio_url")),
-            None,
-        )
+    dialogue_asset = dialogue_audio_manifest_asset(data)
     if not dialogue_asset:
         return None
 
     audio_url = str(dialogue_asset.get("audio_url") or "")
+    if not audio_url:
+        return None
     storage_key = str(dialogue_asset.get("storage_key") or "")
     playback_url = audio_playback_url(audio_url=audio_url, storage_key=storage_key)
 

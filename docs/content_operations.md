@@ -1,150 +1,279 @@
-# Content Operations
+# Content Operations Guide
 
-This document is the working guide for Conversease curriculum production.
+Panduan ini adalah source of truth untuk produksi kurikulum Conversease, baik
+content dibuat langsung di repo, di remote server, atau di tempat lain dengan
+model seperti Claude Opus 4.8.
 
-## Release State
+## Source Of Truth
 
-The app is technically ready for controlled beta, but the full English learning
-path is not complete for a public release across all supported levels.
+Conversease memakai content file-backed:
 
-Current English A1-C1 status:
+- Lesson text tersimpan di repo: `content/curriculum/...`
+- Audio file tersimpan di S3.
+- Metadata audio wajib tersimpan di repo lewat `audio_manifest.yaml`.
+- Checklist release tersimpan di `content/production_tracker.csv`.
 
-- Planned lessons: 200
-- Implemented lessons: 6
-- Text-ready lessons: 6
-- Audio-ready lessons: 0
-- Beta-ready lessons: 6
-- Production-ready lessons: 0
+S3 object saja tidak cukup untuk menyatakan lesson sudah audio-ready. Audio baru
+dianggap siap kalau metadata di repo juga siap dan ikut commit.
 
-Controlled beta can use Unit 1 plus the first lesson of Unit 2 with text-based
-listening scripts and Conversation Coach. Full public release should complete all planned lessons for
-Conversation Coach. Full public release should complete all planned lessons for
-the intended launch level set and generate listening/phrase audio.
+## Cara Mengetahui Audio Sudah Tergenerate
 
-## Admin Checks
+Untuk satu lesson, cek tiga lapis berikut.
 
-Admin can check content in the web app:
+1. `audio_manifest.yaml`
 
-```text
-/admin/cms
+Lesson dianggap punya listening audio kalau file manifest berisi:
+
+```yaml
+lesson_key: lesson-01-spelling-your-name
+status: generated
+provider: minimax
+assets:
+  - key: dialogue_main
+    type: dialogue
+    script_file: listening_script.md
+    audio_url: https://...
+    duration_seconds: 17
+    provider: minimax
+    model: speech-2.8-hd
+    voice_id: multi_speaker
+    speaker_voices:
+      Officer: English_CalmWoman
+      Dimas: English_Diligent_Man
+    storage_key: conversease/audio/...
+    generated_by: Fikri Firdaus
+    generated_at: "2026-06-04T..."
 ```
 
-Admin access uses the logged-in user role. Bootstrap the first admin by adding
-their email to `ADMIN_EMAILS_RAW`, then have that user login again. The Admin CMS has:
+Status valid: `generated`, `done`, atau `published`. Yang wajib untuk readiness
+adalah asset `dialogue_main` punya `audio_url` dan `duration_seconds`. Asset
+lain seperti `phrases` boleh belum ada.
 
-- Readiness: level, unit, lesson, file, tracker, and audio checklist.
-- Curriculum: edit lesson title, status, goal, and roleplay metadata.
-- Email Templates: edit and validate email templates.
-- Change Log: view and rollback CMS edits.
-- Users: promote or demote other admin users without opening the database.
+2. `content/production_tracker.csv`
 
-For CLI checks:
+Kolom `audio_generated` harus menjadi `done` setelah audio direview manusia.
+Tracker ini adalah checklist editorial, bukan pengganti manifest.
+
+3. Admin CMS atau CLI
+
+CMS:
+
+```text
+/admin/cms -> Readiness
+```
+
+Setiap lesson menampilkan pill `Audio`. Jika audio ada, detail lesson akan
+menampilkan audio player, storage key, model, durasi, dan speaker voices.
+
+CLI:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --level A1
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --level A1 --missing-only --text-ready-only
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --lesson spelling-your-name --format json
+```
+
+Readiness umum:
 
 ```bash
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
 ```
 
-Use JSON output for automation:
+Catatan S3: kalau bucket private, membuka `audio_url` langsung bisa menghasilkan
+`AccessDenied`. Itu normal. Platform memakai `playback_url` presigned dari API
+untuk memutar audio.
+
+## Workflow Generate Audio
+
+1. Pastikan `.env.production` atau env API berisi:
 
 ```bash
-PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format json
+MINIMAX_API_KEY=
+MINIMAX_API_BASE_URL=https://api.minimax.io
+MINIMAX_TTS_MODEL=speech-2.8-hd
+MINIMAX_TTS_LANGUAGE_BOOST=English
+S3_BUCKET=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=ap-southeast-1
 ```
 
-## Level Checklist
+2. Generate preview voice cache agar picker di CMS bisa memutar contoh suara:
 
-Each supported level has a file-based roadmap:
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.generate_voice_previews --model speech-2.8-hd --speed 1
+```
+
+3. Buka Admin CMS:
 
 ```text
-content/curriculum/english/A1/content_plan.yaml
-content/curriculum/english/A2/content_plan.yaml
-content/curriculum/english/B1/content_plan.yaml
-content/curriculum/english/B2/content_plan.yaml
-content/curriculum/english/C1/content_plan.yaml
+/admin/cms -> Readiness
 ```
 
-Current level readiness:
+4. Pilih model, speed, dan default voice di panel `Audio Generator`.
 
-| Level | Planned Lessons | Implemented | Text Ready | Audio Ready | Current Gap |
-|---|---:|---:|---:|---:|---|
-| A1 | 40 | 5 | 5 | 0 | Unit 1 text-ready, audio missing; Units 2-8 missing files |
-| A2 | 40 | 0 | 0 | 0 | All lesson files missing |
-| B1 | 40 | 0 | 0 | 0 | All lesson files missing |
-| B2 | 40 | 0 | 0 | 0 | All lesson files missing |
-| C1 | 40 | 0 | 0 | 0 | All lesson files missing |
+5. Gunakan panel `Batch audio queue`:
 
-A1 planned units:
+- `Generate All Missing Audio`: generate semua lesson text-ready yang belum
+  punya `dialogue_main`.
+- `Regenerate Text-Ready Audio`: regenerate semua lesson text-ready, termasuk
+  yang sudah punya audio. Pakai ini kalau script berubah.
 
-| Unit | Status | Lessons | Current Gap |
-|---|---:|---:|---|
-| Unit 1: Greeting & Introducing Yourself | beta-ready | 5 | Audio not generated |
-| Unit 2: Spelling, Numbers & Contact Details | planned | 5 | All lesson files missing |
-| Unit 3: Daily Routine & Time | planned | 5 | All lesson files missing |
-| Unit 4: Work, Study & Preferences | planned | 5 | All lesson files missing |
-| Unit 5: Places & Directions | planned | 5 | All lesson files missing |
-| Unit 6: Food, Shopping & Prices | planned | 5 | All lesson files missing |
-| Unit 7: Help, Problems & Requests | planned | 5 | All lesson files missing |
-| Unit 8: A1 Review & Final Conversation | planned | 5 | All lesson files missing |
+6. Review audio di CMS. Pastikan:
+
+- Tidak ada nama speaker yang dibacakan.
+- Pergantian suara antar speaker terdengar natural.
+- Male/female sesuai persona.
+- Pace cukup lambat untuk level.
+- Audio sesuai persis dengan `listening_script.md`.
+
+7. Commit perubahan file hasil generate:
+
+```bash
+git status --short
+git add content/curriculum content/production_tracker.csv
+git commit -m "Generate listening audio for <scope>"
+```
+
+Jika generate dilakukan di remote server, jangan lupa push commit manifest dan
+tracker dari server, atau salin perubahan manifest/tracker kembali ke repo kerja.
+Tanpa commit metadata, deploy berikutnya bisa menganggap audio belum ada.
 
 ## Required Files Per Lesson
 
-Every lesson must have these files:
+Setiap lesson wajib punya file berikut:
 
 | File | Purpose |
 |---|---|
-| `lesson.yaml` | lesson metadata, required sections, completion rules |
-| `lesson.md` | main lesson explanation and learner flow |
-| `conversation_goal.md` | concise outcome and success behavior |
-| `listening_script.md` | dialogue text and audio direction |
-| `transcript_translation.md` | Indonesian support translation |
-| `useful_phrases.yaml` | phrases, Indonesian meaning, usage note, common mistake |
-| `grammar_for_conversation.md` | practical grammar for speaking |
-| `pronunciation_drill.md` | pronunciation targets and repeat drills |
-| `response_prompts.yaml` | guided learner response prompts |
-| `conversation_coach_roleplay.yaml` | scenario, opening line, goal, rubric |
-| `quiz.yaml` | comprehension and usage quiz |
-| `reading_support.md` | short reading reinforcement |
-| `writing_support.md` | short writing reinforcement |
-| `audio_manifest.yaml` | generated audio asset metadata |
+| `lesson.yaml` | metadata, slug, status, completion rules |
+| `lesson.md` | lesson flow dan penjelasan utama |
+| `conversation_goal.md` | outcome dan success behavior |
+| `listening_script.md` | dialogue utama dan audio direction |
+| `transcript_translation.md` | terjemahan Indonesia |
+| `useful_phrases.yaml` | phrase, meaning, usage, common mistake |
+| `grammar_for_conversation.md` | grammar praktis untuk bicara |
+| `pronunciation_drill.md` | drill repeat dan focus sound |
+| `response_prompts.yaml` | prompt jawaban learner |
+| `conversation_coach_roleplay.yaml` | scenario coach dan rubric |
+| `quiz.yaml` | comprehension dan phrase checks |
+| `reading_support.md` | reinforcement pendek |
+| `writing_support.md` | latihan tulis pendek |
+| `audio_manifest.yaml` | metadata audio S3 |
 
-The production tracker must also be updated:
+Template tersedia di:
 
 ```text
-content/production_tracker.csv
+content/curriculum/templates/
 ```
 
-Text columns should be `done` when reviewed. Set `audio_generated=done` only
-after audio URLs and duration are filled in `audio_manifest.yaml`.
+## Quality Standard
 
-## Lesson Generation Prompt
+Semua content harus conversation-first.
 
-Use this prompt to generate one complete lesson package.
+Level rules:
+
+- A1: kalimat sangat pendek, concrete, 1 tujuan per lesson, 5-8 dialogue turns.
+- A2: everyday situations, short reasons, simple past/future, masih rendah beban kognitif.
+- B1: connected speech, opinions, experiences, workplace basics.
+- B2: professional conversation, tradeoffs, meetings, negotiation, presentation.
+- C1: nuanced, precise, strategic communication, tetapi tetap bisa dilatih lewat roleplay.
+
+Consistency rules:
+
+- Satu lesson hanya punya satu primary conversation outcome.
+- Dialogue, useful phrases, response prompts, quiz, dan roleplay harus memakai phrase family yang sama.
+- Jangan membuat grammar sebagai pusat lesson. Grammar hanya alat untuk menyelesaikan conversation.
+- Indonesian support harus jelas, ringkas, dan tidak kaku.
+- Hindari slang kecuali sengaja diajarkan dan cocok level.
+- Jangan pakai gambar manusia atau makhluk bernyawa. Jika perlu visual, gunakan object, UI, document, sign, map, atau faceless isometric yang tidak detail.
+- Jangan publish lesson kalau text-ready tetapi roleplay backend/frontend belum bisa menjalankan slug-nya.
+
+## Persona And Voice Rules
+
+Audio generation memakai persona registry di:
 
 ```text
-You are creating Conversease English {level_code} curriculum for Indonesian learners.
+apps/api/app/services/audio_generation.py
+```
 
-Generate production-ready content for:
+Registry utama:
+
+```python
+DIALOGUE_PERSONA_VOICES = {
+    "alya": "English_radiant_girl",
+    "ben": "English_Gentle-voiced_man",
+    "john": "English_Trustworth_Man",
+    "sara": "English_Graceful_Lady",
+    "mina": "English_compelling_lady1",
+    "david": "English_Diligent_Man",
+    "dimas": "English_Diligent_Man",
+    "officer": "English_CalmWoman",
+}
+```
+
+Rules:
+
+- Jika karakter sudah ada, pakai nama/persona yang sama agar suaranya konsisten.
+- Jika karakter baru muncul berulang, tambahkan ke registry.
+- Nama harus mewakili gender yang diinginkan dan cocok dengan konteks.
+- Untuk role umum seperti `Officer`, `Teacher`, `Cashier`, tentukan voice eksplisit kalau dipakai berulang.
+- Jangan biarkan karakter penting jatuh ke fallback hash kalau gender/suara harus spesifik.
+- Audio direction di `listening_script.md` harus cocok dengan persona, misalnya `Voices: one female officer, one male learner`.
+
+Contoh baik:
+
+```markdown
+**Officer:** Hi. What is your name?
+**Dimas:** My name is Dimas.
+**Officer:** How do you spell it?
+**Dimas:** It's spelled D-I-M-A-S.
+
+## Audio Direction
+
+- Level: A1
+- Speed: slow and natural
+- Tone: friendly, clear, supportive
+- Voices: female officer, male learner
+```
+
+## Prompt For External Content Generation
+
+Gunakan prompt ini saat membuat content di luar repo.
+
+```text
+You are producing Conversease curriculum content.
+
+Product:
+- Conversation-first language learning app for Indonesian adult learners.
+- Learners practice listening, understanding, repeating, responding, roleplay, and feedback.
+- Content must feel like one unified curriculum, not isolated worksheets.
+
+Target lesson:
+- Language: English
 - Level: {level_code}
-- Unit: {unit_key} - {unit_title}
-- Lesson: {lesson_key} - {lesson_title}
-- Conversation outcome: {conversation_outcome}
-- Learner source language: Indonesian
-- Target language: English
+- Unit key: {unit_key}
+- Unit title: {unit_title}
+- Unit outcome: {unit_outcome}
+- Lesson key: {lesson_key}
+- Slug: {lesson_slug}
+- Lesson title: {lesson_title}
+- Primary conversation outcome: {conversation_goal}
+- Previous lesson summary: {previous_lesson_summary}
+- Next lesson summary: {next_lesson_summary}
 
-Constraints:
+Use these standards:
+- Match CEFR {level_code} exactly.
 - Conversation-first, not grammar-first.
-- Match the CEFR level exactly:
-  - A1: very short, concrete, beginner-safe phrases.
-  - A2: everyday routines, simple past/future, short reasons.
-  - B1: connected speech, experiences, opinions, workplace basics.
-  - B2: professional discussions, arguments, tradeoffs, presentations.
-  - C1: nuanced, precise, strategic communication.
-- Explain support notes in Indonesian.
-- No slang unless explicitly useful.
-- Avoid cultural assumptions.
-- Keep examples practical for Indonesian adult learners.
-- Do not include images of living beings. If visual ideas are needed, use objects, documents, signs, UI, maps, or faceless/isometric non-detailed figures.
+- Keep phrase family consistent across all files.
+- Indonesian explanations must be clear and short.
+- Do not introduce advanced vocabulary unless needed for the conversation.
+- Do not use images or references to living beings.
+- Dialogue must be realistic and easy to record with TTS.
+- Speaker names must map to persona rules. Reuse existing characters when possible.
+- If adding a new character, state gender, role, and recommended MiniMax voice.
 
-Return these files with exact filenames:
+Return a complete file package with exact filenames:
 1. lesson.yaml
 2. lesson.md
 3. conversation_goal.md
@@ -158,191 +287,133 @@ Return these files with exact filenames:
 11. quiz.yaml
 12. reading_support.md
 13. writing_support.md
-14. audio_manifest.yaml with status: not_generated
+14. audio_manifest.yaml
 
-Quality rules:
-- listening_script.md must have a short two-speaker dialogue, 5-8 lines.
-- useful_phrases.yaml must have 5-8 phrases with meaning_id, usage_note, and common_mistake.
-- quiz.yaml must have at least 3 questions.
-- conversation_coach_roleplay.yaml must include scenario_key, mode, level_code, opening_line, learner_goal, max_turns, target_phrases, and rubric.
-- Every filename must be valid YAML or Markdown.
+Hard requirements:
+- YAML must be valid.
+- Markdown must be plain and concise.
+- listening_script.md must have 5-8 turns for A1/A2, 6-10 for B1/B2, 8-12 for C1.
+- transcript_translation.md must match every dialogue line.
+- useful_phrases.yaml must have meaning_id, usage_note, common_mistake.
+- response_prompts.yaml must train the learner's side of the conversation.
+- conversation_coach_roleplay.yaml target_phrases must be phrases the learner should produce, not only phrases the coach says.
+- audio_manifest.yaml starts with status: not_generated.
+
+Before final answer, self-review:
+- Is this lesson aligned with the unit outcome?
+- Is it different enough from previous lesson but still connected?
+- Are the phrase family, dialogue, quiz, and roleplay consistent?
+- Is the difficulty exactly right for {level_code}?
+- Are speaker persona and voice direction clear?
 ```
 
-## Listening Script Prompt
+## Review Checklist
 
-Use this when only the listening section is missing or weak.
+Reviewer harus cek:
+
+- `lesson.yaml` slug dan title cocok dengan `content_plan.yaml`.
+- `lesson.md` outcome sama dengan `conversation_goal.md`.
+- Dialogue natural, pendek, dan sesuai level.
+- Tidak ada line yang membuat TTS membaca nama speaker sebagai bagian dialog.
+- Translation lengkap dan barisnya sejajar.
+- Useful phrases tidak terlalu banyak dan semuanya dipakai atau relevan.
+- Roleplay target phrases adalah output learner.
+- Quiz jawaban benar exact match untuk multiple choice.
+- Audio direction jelas soal gender/persona.
+- `audio_manifest.yaml` masih `not_generated` sebelum audio dibuat.
+- Setelah generate, `dialogue_main` punya URL, duration, storage key, model, speaker voices.
+
+## Strategy To Finish A1-C1 Quickly
+
+Target scope:
+
+- 5 levels: A1, A2, B1, B2, C1.
+- 8 units per level.
+- 5 lessons per unit.
+- Total 200 lessons.
+
+Recommended production pipeline:
+
+1. Lock style guide and persona registry.
+
+   Do this once before mass generation. Jangan mulai ratusan lesson sebelum
+   prompt, persona, dan review checklist stabil.
+
+2. Produce per unit, not per random lesson.
+
+   Generate 5 lessons in one unit as one package so progression is coherent.
+   Review unit arc first, then review individual files.
+
+3. Use two-pass generation.
+
+   Pass 1: generate all text packages with `audio_manifest.yaml status: not_generated`.
+   Pass 2: human QA and polish.
+   Pass 3: batch audio generation.
+
+4. Parallelize by level with one owner per level.
+
+   Each owner uses the same prompt and checklist. One lead editor checks
+   cross-level consistency.
+
+5. Use gates, not trust.
+
+   Every batch must pass:
+
+   ```bash
+   PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
+   PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --missing-only --text-ready-only
+   PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
+   npm run build
+   ```
+
+6. Release in waves.
+
+   - Wave 1: complete A1 text and audio.
+   - Wave 2: complete A2 text and audio.
+   - Wave 3: complete B1.
+   - Wave 4: complete B2.
+   - Wave 5: complete C1.
+
+   Do not wait for C1 to validate product learning flow. But do not mark full
+   multi-level release until all launched levels pass production readiness.
+
+7. Keep generated metadata in git.
+
+   After audio generation, commit `audio_manifest.yaml` and
+   `content/production_tracker.csv`. This is what lets the team know which audio
+   exists even though the binary audio is in S3.
+
+## Admin CMS Batch Audio
+
+Batch audio is in:
 
 ```text
-Create an English {level_code} listening dialogue for Indonesian learners.
-
-Lesson:
-- Unit: {unit_title}
-- Lesson: {lesson_title}
-- Conversation goal: {conversation_goal}
-
-Requirements:
-- 2 speakers.
-- 5-8 short turns.
-- Slow, clear, natural English.
-- Include 3-5 target phrases from the lesson.
-- Avoid idioms and advanced grammar.
-- Add Indonesian transcript translation below the English dialogue.
-- Add Audio Direction with speed, tone, pause style, and voice notes.
-
-Output:
-1. listening_script.md
-2. transcript_translation.md
+/admin/cms -> Readiness -> Batch audio queue
 ```
 
-## Quiz Prompt
+Buttons:
 
-```text
-Create {level_code} quiz.yaml for this Conversease lesson:
-- Level: {level_code}
-- Lesson title: {lesson_title}
-- Conversation goal: {conversation_goal}
-- Target phrases: {target_phrases}
-- Listening script: {listening_script}
+- `Generate All Missing Audio`: only missing text-ready lessons.
+- `Regenerate Text-Ready Audio`: every text-ready lesson, including existing audio.
 
-Requirements:
-- 3-5 questions.
-- Use multiple_choice or short_answer.
-- Test listening comprehension, phrase meaning, and correct response.
-- Questions must be simple and unambiguous.
-- correct_answer must exactly match one option for multiple_choice.
+If buttons are disabled, check:
 
-Return valid YAML only.
-```
+- Admin account role.
+- `MINIMAX_API_KEY`.
+- `S3_BUCKET`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`.
+- Text readiness. Planned lessons without files cannot generate audio.
+- Voice/model selected in Audio Generator panel.
 
-## Roleplay Prompt
-
-```text
-Create conversation_coach_roleplay.yaml for English {level_code}.
-
-Lesson:
-- lesson_key: {lesson_key}
-- title: {lesson_title}
-- conversation_goal: {conversation_goal}
-
-Requirements:
-- scenario_key must be lowercase snake_case.
-- mode: lesson_practice_coach
-- level_code: {level_code}
-- opening_line: one simple English sentence from the coach.
-- learner_goal: one clear sentence explaining what learner must do.
-- max_turns: 6-8.
-- target_phrases: 4-6 useful phrases.
-- rubric minimum scores for speaking, relevance, grammar.
-
-Return valid YAML only.
-```
-
-## MiniMax Audio Prompt
-
-Use this prompt in MiniMax TTS or the selected TTS provider. If the provider does
-not support multi-speaker generation in one pass, generate each speaker
-separately and combine the files in audio editing software.
-
-```text
-Generate English {level_code} learning audio.
-
-Style:
-- clear classroom audio
-- slow natural speed
-- friendly but professional
-- short pauses between turns
-- no background music
-- no sound effects
-
-Dialogue:
-{listening_script_dialogue}
-
-Voice direction:
-- Speaker A: clear adult voice, warm, medium pitch
-- Speaker B: clear adult voice, calm, medium-low pitch
-- Pronunciation: standard, easy to understand for beginners
-- Export: mp3, 44.1 kHz or provider default high quality
-```
-
-After generation:
-
-1. Open Admin CMS, choose the MiniMax model and voice in the Audio Generator panel.
-2. Click `Generate Audio` on a text-ready lesson.
-3. The API calls MiniMax T2A, uploads the mp3 to S3, updates `audio_manifest.yaml`, and sets `audio_generated=done` in `content/production_tracker.csv`.
-4. Run readiness and curriculum validation before release.
-
-Generate voice preview cache once per model/speed so the voice dropdown can play stored samples:
+After queue finishes, refresh CMS and run:
 
 ```bash
-PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.generate_voice_previews --model speech-2.8-hd --speed 1
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --missing-only --text-ready-only
 ```
-
-The CMS generator currently fills the listening dialogue asset (`dialogue_main`) from `listening_script.md`. Phrase pronunciation assets can be generated as a separate follow-up asset when needed.
-
-Required API env for CMS generation:
-
-```bash
-MINIMAX_API_KEY=
-MINIMAX_API_BASE_URL=https://api.minimax.io
-MINIMAX_TTS_MODEL=speech-2.8-hd
-MINIMAX_TTS_VOICE_ID=English_expressive_narrator
-MINIMAX_TTS_LANGUAGE_BOOST=English
-S3_BUCKET=
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_REGION=ap-southeast-1
-S3_PUBLIC_BASE_URL=
-```
-
-Example `audio_manifest.yaml` after audio is ready:
-
-```yaml
-lesson_key: lesson-01-saying-hello
-status: done
-provider: minimax
-assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url: https://cdn.example.com/audio/english/A1/unit-01/lesson-01/dialogue_main.mp3
-    duration_seconds: 24
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url: https://cdn.example.com/audio/english/A1/unit-01/lesson-01/phrases.mp3
-    duration_seconds: 18
-```
-
-## Review Workflow
-
-For each lesson:
-
-1. Generate the lesson package.
-2. Place files under:
-
-```text
-content/curriculum/english/A1/units/{unit_key}/{lesson_key}/
-```
-
-Replace `A1` with the target level code for A2, B1, B2, or C1.
-
-3. Add the lesson key to the unit's `unit.yaml` when the level has an active
-   course loader. Planned future levels can be tracked from `content_plan.yaml`
-   before their runtime course loader is enabled.
-4. Update `content/production_tracker.csv`.
-5. Run:
-
-```bash
-PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
-PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
-```
-
-6. Open `/admin/cms`, load Admin CMS, and check the Readiness tab.
-7. Mark lesson `published` only after all text fields pass review.
-8. Mark audio ready only after TTS output is reviewed by a human.
 
 ## Release Rule
 
-- Controlled beta: minimum A1 Unit 1 text-ready, app smoke test passes, payments/admin email tested.
-- Full A1 public release: all 40 A1 lessons text-ready, all listening/phrase audio generated, final evaluation reviewed, and release preflight passes.
-- Full multi-level public release: every launched level in A1-C1 is text-ready, audio-ready, reviewed, and visible in Admin CMS Readiness.
+- Beta lesson: text-ready and roleplay usable.
+- Production lesson: text-ready, reviewed, published, listening audio generated,
+  audio reviewed by human, manifest committed, tracker committed.
+- Full A1 release: all 40 A1 lessons production-ready.
+- Full A1-C1 release: all 200 planned lessons production-ready.

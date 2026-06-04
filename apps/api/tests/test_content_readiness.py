@@ -1,6 +1,12 @@
+import tempfile
 import unittest
+from pathlib import Path
 
-from app.data.content_readiness import all_content_readiness_summary, content_readiness_summary
+from app.data.content_readiness import (
+    all_content_readiness_summary,
+    audio_manifest_ready,
+    content_readiness_summary,
+)
 
 
 class ContentReadinessTest(unittest.TestCase):
@@ -51,6 +57,42 @@ class ContentReadinessTest(unittest.TestCase):
         self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
         self.assertEqual(readiness["summary"]["missing_content_count"], 194)
         self.assertEqual(readiness["summary"]["missing_audio_count"], 200)
+
+    def test_audio_manifest_ready_requires_dialogue_main_audio(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = Path(directory) / "audio_manifest.yaml"
+            manifest.write_text(
+                "lesson_key: sample\n"
+                "status: generated\n"
+                "assets:\n"
+                "  - key: dialogue_main\n"
+                "    type: dialogue\n"
+                "    audio_url: https://cdn.example.com/dialogue.wav\n"
+                "    duration_seconds: 12\n"
+                "  - key: phrases\n"
+                "    type: phrase_pronunciation\n"
+                "    audio_url:\n"
+                "    duration_seconds:\n",
+                encoding="utf-8",
+            )
+
+            self.assertTrue(audio_manifest_ready(manifest))
+
+    def test_audio_manifest_not_ready_when_tracker_would_be_done_but_manifest_is_empty(self):
+        with tempfile.TemporaryDirectory() as directory:
+            manifest = Path(directory) / "audio_manifest.yaml"
+            manifest.write_text(
+                "lesson_key: sample\n"
+                "status: generated\n"
+                "assets:\n"
+                "  - key: dialogue_main\n"
+                "    type: dialogue\n"
+                "    audio_url:\n"
+                "    duration_seconds:\n",
+                encoding="utf-8",
+            )
+
+            self.assertFalse(audio_manifest_ready(manifest))
 
 
 if __name__ == "__main__":

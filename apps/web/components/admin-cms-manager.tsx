@@ -585,6 +585,15 @@ function ReadinessPanel({
 
   return (
     <div className="mt-5 space-y-5">
+      <BulkAudioPanel
+        missingCandidates={missingBulkCandidates}
+        allTextReadyCandidates={allTextReadyBulkCandidates}
+        queue={bulkAudioQueue}
+        isRunning={isBulkGeneratingAudio}
+        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+        onStart={onBulkGenerateAudio}
+      />
+
       <AudioSettingsPanel
         settings={audioSettings}
         model={audioModel}
@@ -596,15 +605,6 @@ function ReadinessPanel({
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
-      />
-
-      <BulkAudioPanel
-        missingCandidates={missingBulkCandidates}
-        allTextReadyCandidates={allTextReadyBulkCandidates}
-        queue={bulkAudioQueue}
-        isRunning={isBulkGeneratingAudio}
-        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
-        onStart={onBulkGenerateAudio}
       />
 
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
@@ -793,15 +793,18 @@ function BulkAudioPanel({
   const runningItem = queue.find((item) => item.status === "running") ?? null;
 
   return (
-    <div className="rounded-lg bg-paper p-4">
+    <div className="rounded-lg border border-leaf/25 bg-mint p-4">
       <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
         <div className="flex items-start gap-3">
           <div className="grid h-10 w-10 place-items-center rounded-lg bg-white">
             <Sparkles className="h-5 w-5 text-leaf" aria-hidden="true" />
           </div>
           <div>
-            <p className="text-xs font-semibold uppercase text-leaf">Bulk Audio</p>
-            <h2 className="mt-1 font-semibold">Lesson generation queue</h2>
+            <p className="text-xs font-semibold uppercase text-leaf">Batch Audio Queue</p>
+            <h2 className="mt-1 font-semibold">Generate listening audio sekaligus</h2>
+            <p className="mt-1 max-w-2xl text-sm leading-6 text-ink/60">
+              Queue berjalan berurutan, retry otomatis sampai 2 kali, lalu refresh readiness setelah selesai.
+            </p>
             <div className="mt-2 flex flex-wrap gap-2 text-xs font-semibold">
               <StatusPill icon={Headphones} label={`${missingCandidates.length} missing`} tone="warn" />
               <StatusPill icon={ListChecks} label={`${allTextReadyCandidates.length} text-ready`} tone="neutral" />
@@ -817,10 +820,10 @@ function BulkAudioPanel({
             type="button"
             onClick={() => onStart(missingCandidates)}
             disabled={!audioReadyToGenerate || isRunning || !missingCandidates.length}
-            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-white px-4 text-sm font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-leaf px-4 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
           >
             <Headphones className="h-4 w-4" aria-hidden="true" />
-            Generate Missing
+            Generate All Missing Audio
           </button>
           <button
             type="button"
@@ -829,7 +832,7 @@ function BulkAudioPanel({
             className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
           >
             <RefreshCcw className="h-4 w-4" aria-hidden="true" />
-            Regenerate Text-Ready
+            Regenerate Text-Ready Audio
           </button>
         </div>
       </div>

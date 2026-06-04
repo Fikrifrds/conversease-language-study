@@ -14,7 +14,8 @@ This document tracks the Conversease MVP release candidate.
 - Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
 - Admin email diagnostics can list, render, and send test emails through `/api/admin/email-templates`, `/api/admin/test-email/render`, and `/api/admin/test-email/send`.
 - Admin CMS page for controlled editing of curriculum lesson metadata, lesson roleplay setup, and email templates, with content revision audit logs, revision rollback, and stale edit protection.
-- Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from every `content/curriculum/*/*/content_plan.yaml`, actual content files, and `content/production_tracker.csv`.
+- Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from every `content/curriculum/*/*/content_plan.yaml`, actual content files, `audio_manifest.yaml`, and `content/production_tracker.csv`.
+- Admin CMS has a batch audio queue for generating all missing text-ready listening audio or regenerating every text-ready lesson after script edits.
 - Admin A1 final-test review page for beta manual scoring of submitted attempts and official user report updates.
 - Sandbox package activation remains available for local QA only and is disabled in production.
 - A1 Unit 1 content structure with 5 published lessons:
@@ -24,7 +25,7 @@ This document tracks the Conversease MVP release candidate.
   - Saying Where You Are From
   - First Conversation Mission
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
-- Content readiness report is available at `scripts/content_readiness_report.py`; current English A1-C1 has 200 planned lessons, 5 implemented text-ready lessons, and 0 generated audio-ready lessons.
+- Content readiness report is available at `scripts/content_readiness_report.py`; audio-specific audit is available at `scripts/audio_readiness_report.py`.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
 - Production env validation rejects unsafe production defaults and placeholder secrets from `.env.production.example`.
 - API liveness, readiness, and runtime metrics endpoints are available at `/api/health`, `/api/ready`, and `/api/metrics`; readiness verifies database connectivity and Alembic migration head.
@@ -44,6 +45,7 @@ Run from the repository root:
 apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.migration_status
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --missing-only --text-ready-only
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_preflight.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m ruff check apps/api/app apps/api/tests scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
