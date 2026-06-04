@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { LogOut, UserCircle } from "lucide-react";
 import {
+  ApiRequestError,
   clearAuthSession,
   getAuthSession,
   getCurrentUser,
@@ -41,7 +42,11 @@ export function UserAccountMenu() {
           saveAuthSession(nextSession);
           setSession(nextSession);
         }
-      } catch {
+      } catch (error) {
+        if (!(error instanceof ApiRequestError) || ![401, 403].includes(error.status)) {
+          return;
+        }
+
         clearAuthSession();
 
         if (!ignore) {

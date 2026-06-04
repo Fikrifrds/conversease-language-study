@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Mic, Play } from "lucide-react";
 import { ActionButton } from "@/components/action-button";
 import { BrandMark } from "@/components/brand-mark";
+import { LandingAuthAction } from "@/components/landing-auth-action";
 import { SectionHeading } from "@/components/section-heading";
 import { learningLoop, mission, plans } from "@/lib/data";
 
@@ -32,12 +33,7 @@ export default function HomePage() {
               Pricing
             </Link>
           </nav>
-          <Link
-            href="/login"
-            className="focus-ring rounded-lg bg-white px-4 py-2 text-sm font-semibold text-ink hover:bg-mint"
-          >
-            Login
-          </Link>
+          <LandingAuthAction />
         </header>
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
           <div className="max-w-2xl text-white">

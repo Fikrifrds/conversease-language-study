@@ -4,7 +4,13 @@ import { useEffect, useState, type ReactNode } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { ShieldCheck } from "lucide-react";
 import { BrandMark } from "@/components/brand-mark";
-import { clearAuthSession, getAuthSession, getCurrentUser, saveAuthSession } from "@/lib/auth-api";
+import {
+  ApiRequestError,
+  clearAuthSession,
+  getAuthSession,
+  getCurrentUser,
+  saveAuthSession
+} from "@/lib/auth-api";
 
 type AuthState = "checking" | "authenticated" | "redirecting";
 
@@ -46,7 +52,11 @@ export function AuthGuard({ children }: { children: ReactNode }) {
           saveAuthSession({ accessToken: activeSession.accessToken, user });
           setAuthState("authenticated");
         }
-      } catch {
+      } catch (error) {
+        if (!(error instanceof ApiRequestError) || ![401, 403].includes(error.status)) {
+          return;
+        }
+
         clearAuthSession();
 
         if (!ignore) {
