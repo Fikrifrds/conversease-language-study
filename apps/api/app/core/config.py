@@ -56,6 +56,7 @@ class Settings(BaseSettings):
     manual_transfer_expire_hours: int = 12
     resend_api_key: str = ""
     together_api_key: str = ""
+    together_chat_model: str = "MiniMaxAI/MiniMax-M2.7"
     assemblyai_api_key: str = ""
     minimax_api_key: str = ""
     minimax_api_base_url: str = "https://api.minimax.io"
