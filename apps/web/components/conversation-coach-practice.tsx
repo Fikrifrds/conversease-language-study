@@ -473,6 +473,124 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       sampleAnswer: "Thank you. I will.",
       focus: "Closing"
     }
+  ],
+  "asking-where-a-place-is": [
+    {
+      coach: "Excuse me. What do you need?",
+      hint: "Tanyakan lokasi classroom.",
+      sampleAnswer: "Where is the classroom?",
+      focus: "Place question"
+    },
+    {
+      coach: "It is on the first floor.",
+      hint: "Tanyakan apakah dekat office.",
+      sampleAnswer: "Is it near the office?",
+      focus: "Confirming location"
+    },
+    {
+      coach: "Yes, it is next to the office.",
+      hint: "Tutup dengan thank you.",
+      sampleAnswer: "Thank you.",
+      focus: "Polite closing"
+    }
+  ],
+  "simple-place-words": [
+    {
+      coach: "Where are you going?",
+      hint: "Sebutkan kamu pergi ke cafe.",
+      sampleAnswer: "I'm going to the cafe.",
+      focus: "Destination"
+    },
+    {
+      coach: "Is the cafe near here?",
+      hint: "Jawab dan sebutkan dekat library.",
+      sampleAnswer: "Yes. It is near the library.",
+      focus: "Nearby place"
+    },
+    {
+      coach: "I am going to the library.",
+      hint: "Ajak pergi bersama.",
+      sampleAnswer: "Let's go together.",
+      focus: "Friendly suggestion"
+    }
+  ],
+  "understanding-simple-directions": [
+    {
+      coach: "Where is the meeting room?",
+      hint: "Tanyakan lokasi meeting room.",
+      sampleAnswer: "Where is the meeting room?",
+      focus: "Room question"
+    },
+    {
+      coach: "Go straight.",
+      hint: "Ulangi arahan pertama.",
+      sampleAnswer: "Okay. Go straight.",
+      focus: "Repeating direction"
+    },
+    {
+      coach: "Then turn left.",
+      hint: "Konfirmasi turn left.",
+      sampleAnswer: "Turn left?",
+      focus: "Direction confirmation"
+    },
+    {
+      coach: "Yes. The room is on the right.",
+      hint: "Katakan kamu mengerti.",
+      sampleAnswer: "Thank you. I understand.",
+      focus: "Understanding"
+    }
+  ],
+  "asking-how-to-get-there": [
+    {
+      coach: "Where do you want to go?",
+      hint: "Tanyakan cara ke station.",
+      sampleAnswer: "How do I get to the station?",
+      focus: "Direction question"
+    },
+    {
+      coach: "Go straight for two minutes.",
+      hint: "Ulangi durasi arahnya.",
+      sampleAnswer: "Okay. Go straight for two minutes.",
+      focus: "Time direction"
+    },
+    {
+      coach: "Then turn right at the bank.",
+      hint: "Konfirmasi landmark.",
+      sampleAnswer: "Turn right at the bank?",
+      focus: "Landmark confirmation"
+    },
+    {
+      coach: "Yes. The station is there.",
+      hint: "Tutup dengan sopan.",
+      sampleAnswer: "Thank you for your help.",
+      focus: "Thanking"
+    }
+  ],
+  "finding-a-place-mission": [
+    {
+      coach: "Hello. Can I help you?",
+      hint: "Mulai sopan dan tanya cara ke room A.",
+      sampleAnswer: "Excuse me. How do I get to room A?",
+      focus: "Mission opening"
+    },
+    {
+      coach: "Go straight and turn left.",
+      hint: "Ulangi arahan lengkap.",
+      sampleAnswer: "Go straight and turn left.",
+      focus: "Combined directions"
+    },
+    {
+      coach: "Room A is next to the office.",
+      hint: "Konfirmasi lantai.",
+      sampleAnswer: "Is it on the first floor?",
+      focus: "Floor confirmation"
+    },
+    {
+      coach: "Yes, it is.",
+      hint: "Tutup dengan thank you.",
+      sampleAnswer: "Great. Thank you.",
+      focus: "Closing"
+    }
   ]
 };
 

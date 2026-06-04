@@ -1,0 +1,17 @@
+phrases:
+- phrase: Go straight.
+  meaning_id: Jalan lurus.
+  usage_note: Use this for a simple forward direction.
+  common_mistake: Do not add 'to' after straight.
+- phrase: Turn left.
+  meaning_id: Belok kiri.
+  usage_note: Use this when someone must move left.
+  common_mistake: Do not say 'turn to left.'
+- phrase: on the right
+  meaning_id: di sebelah kanan
+  usage_note: Use this to locate something on the right side.
+  common_mistake: Do not say 'in the right' for direction.
+- phrase: I understand.
+  meaning_id: Saya mengerti.
+  usage_note: Use this after clear instructions.
+  common_mistake: Do not say 'I am understand.'

@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask where the classroom is.
+  target_response: Where is the classroom?
+  acceptable_variations:
+  - Where is the classroom?
+- prompt: Ask if it is near the office.
+  target_response: Is it near the office?
+  acceptable_variations:
+  - Is it near the office?
+- prompt: Say thank you.
+  target_response: Thank you.
+  acceptable_variations:
+  - Thank you.

@@ -1,0 +1,13 @@
+prompts:
+- prompt: Say you are going to the cafe.
+  target_response: I'm going to the cafe.
+  acceptable_variations:
+  - I'm going to the cafe.
+- prompt: Ask if the cafe is near here.
+  target_response: Is the cafe near here?
+  acceptable_variations:
+  - Is the cafe near here?
+- prompt: Suggest going together.
+  target_response: Let's go together.
+  acceptable_variations:
+  - Let's go together.

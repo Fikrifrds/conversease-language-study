@@ -7,14 +7,15 @@ Rencana eksekusi untuk membuat lesson yang belum ada, mengikuti
 
 - Total direncanakan: **200 lesson** (5 level x 8 unit x 5 lesson).
 - Total A1 direncanakan: **40 lesson** (8 unit x 5 lesson).
-- Sudah `implemented` (text-ready): **20 lesson**
+- Sudah `implemented` (text-ready): **25 lesson**
   - Unit 1: 5 lesson (semua).
   - Unit 2: 5 lesson (semua).
   - Unit 3: 5 lesson (semua).
   - Unit 4: 5 lesson (semua).
+  - Unit 5: 5 lesson (semua).
 - Audio-ready: **0 lesson** (semua `audio_manifest.yaml` masih `not_generated`).
 
-Sisa A1 yang belum dibuat: **20 lesson** (Unit 5-8).
+Sisa A1 yang belum dibuat: **15 lesson** (Unit 6-8).
 
 ## Aturan Wajib Yang Memengaruhi Eksekusi
 
@@ -56,7 +57,7 @@ Pass 1 = tulis teks (manifest `not_generated`), Pass 2 = QA, Pass 3 = generate a
 | A1-B1 | Selesaikan Unit 2 | 4 lesson (giving-phone-numbers, sharing-email-addresses, asking-for-repetition, contact-details-mission) | Done: Unit 2 fully text-ready |
 | A1-B2 | Unit 3 Daily Routine & Time | 5 lesson | Done: Unit 3 text-ready |
 | A1-B3 | Unit 4 Work, Study & Preferences | 5 lesson | Done: Unit 4 text-ready |
-| A1-B4 | Unit 5 Places & Directions | 5 lesson | Unit 5 text-ready |
+| A1-B4 | Unit 5 Places & Directions | 5 lesson | Done: Unit 5 text-ready |
 | A1-B5 | Unit 6 Food, Shopping & Prices | 5 lesson | Unit 6 text-ready |
 | A1-B6 | Unit 7 Help, Problems & Requests | 5 lesson | Unit 7 text-ready |
 | A1-B7 | Unit 8 A1 Review & Final | 5 lesson | A1 text-complete (40/40) |

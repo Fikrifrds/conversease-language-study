@@ -1,0 +1,24 @@
+lesson_key: lesson-02-simple-place-words
+slug: simple-place-words
+title: Simple Place Words
+status: published
+estimated_minutes: 8
+conversation_situation: naming_common_places_nearby
+conversation_goal: Learners can name common places and answer where someone is going.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

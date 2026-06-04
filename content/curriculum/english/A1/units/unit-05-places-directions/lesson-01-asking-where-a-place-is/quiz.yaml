@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Where is the classroom?
+  choices:
+  - On the first floor.
+  - At home.
+  - In a phone.
+  answer: On the first floor.
+- type: multiple_choice
+  prompt: What phrase starts the polite question?
+  choices:
+  - Excuse me.
+  - Good night.
+  - See you.
+  answer: Excuse me.
+- type: multiple_choice
+  prompt: What does 'next to' mean?
+  choices:
+  - Di sebelah
+  - Jauh dari
+  - Di atas
+  answer: Di sebelah

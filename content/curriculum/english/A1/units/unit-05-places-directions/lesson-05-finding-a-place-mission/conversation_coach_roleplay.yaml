@@ -1,0 +1,22 @@
+scenario_key: finding_a_place_with_simple_directions
+mode: lesson_practice_coach
+level_code: A1
+opening_line: "Hello. Can I help you?"
+learner_goal: "Ask for directions, repeat the directions, confirm the floor, and close politely."
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - "Excuse me."
+  - "How do I get to room A?"
+  - "Go straight and turn left."
+  - "Is it on the first floor?"
+  - "Thank you."
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

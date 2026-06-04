@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Where does Dimas want to go?
+  choices:
+  - The station.
+  - The classroom.
+  - The cafe.
+  answer: The station.
+- type: multiple_choice
+  prompt: How long should he go straight?
+  choices:
+  - Two minutes.
+  - Ten hours.
+  - One week.
+  answer: Two minutes.
+- type: multiple_choice
+  prompt: Where should he turn right?
+  choices:
+  - At the bank.
+  - At the library.
+  - At the office.
+  answer: At the bank.

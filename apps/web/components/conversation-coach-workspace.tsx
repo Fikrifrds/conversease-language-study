@@ -23,7 +23,12 @@ const scenarios = [
   { slug: "asking-about-work-or-study", label: "Work or Study", description: "Tanyakan aktivitas utama." },
   { slug: "talking-about-likes", label: "Preferences", description: "Bahas hal yang disukai." },
   { slug: "saying-what-you-can-do", label: "Can Do", description: "Sebutkan kemampuan sederhana." },
-  { slug: "work-study-conversation-mission", label: "Work Mission", description: "Gabungkan kerja, suka, dan bisa." }
+  { slug: "work-study-conversation-mission", label: "Work Mission", description: "Gabungkan kerja, suka, dan bisa." },
+  { slug: "asking-where-a-place-is", label: "Where Is It", description: "Tanyakan lokasi tempat." },
+  { slug: "simple-place-words", label: "Place Words", description: "Sebutkan cafe, library, dan tujuan." },
+  { slug: "understanding-simple-directions", label: "Simple Directions", description: "Ikuti go straight dan turn left." },
+  { slug: "asking-how-to-get-there", label: "How To Get There", description: "Minta arahan dua langkah." },
+  { slug: "finding-a-place-mission", label: "Place Mission", description: "Gabungkan lokasi dan arahan." }
 ];
 
 export function ConversationCoachWorkspace() {

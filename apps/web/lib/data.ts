@@ -892,6 +892,214 @@ export const lessonCatalog = [
       { question: "Which question asks about work or study?", answer: "Do you work or study?" }
     ],
     sections: lessonSections
+  },
+  {
+    slug: "asking-where-a-place-is",
+    title: "Asking Where a Place Is",
+    unit: "Places & Directions",
+    conversationGoal: "Ask where a place is and understand a short location answer.",
+    setup: "Kamu berada di gedung kursus baru. Kamu perlu mencari ruang kelas dan bertanya dengan sopan.",
+    dialogue: [
+      { speaker: "Alya", text: "Excuse me. Where is the classroom?" },
+      { speaker: "Ben", text: "It is on the first floor." },
+      { speaker: "Alya", text: "Is it near the office?" },
+      { speaker: "Ben", text: "Yes, it is next to the office." },
+      { speaker: "Alya", text: "Thank you." },
+      { speaker: "Ben", text: "You're welcome." }
+    ],
+    translation: [
+      "Permisi. Di mana ruang kelasnya?",
+      "Ruang kelasnya di lantai satu.",
+      "Apakah dekat kantor?",
+      "Ya, di sebelah kantor.",
+      "Terima kasih.",
+      "Sama-sama."
+    ],
+    phrases: [
+      { phrase: "Excuse me.", meaning: "Permisi.", usage: "Start politely before asking a stranger or staff member." },
+      { phrase: "Where is the classroom?", meaning: "Di mana ruang kelasnya?", usage: "Ask where one place is." },
+      { phrase: "It is on the first floor.", meaning: "Tempatnya di lantai satu.", usage: "Answer with a floor." },
+      { phrase: "It is next to the office.", meaning: "Tempatnya di sebelah kantor.", usage: "Say one place is beside another place." }
+    ],
+    grammar: "Use Where is + place? and answer with It is + location.",
+    prompts: [
+      "Ask where the classroom is.",
+      "Ask if it is near the office.",
+      "Thank the helper."
+    ],
+    quiz: [
+      { question: "Where is the classroom?", answer: "On the first floor." },
+      { question: "What phrase starts the polite question?", answer: "Excuse me." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "simple-place-words",
+    title: "Simple Place Words",
+    unit: "Places & Directions",
+    conversationGoal: "Name common places and answer where someone is going.",
+    setup: "Kamu bicara dengan teman setelah kelas. Kamu menyebut tempat sederhana yang ingin kamu datangi.",
+    dialogue: [
+      { speaker: "Mina", text: "Where are you going?" },
+      { speaker: "Dimas", text: "I'm going to the cafe." },
+      { speaker: "Mina", text: "Is the cafe near here?" },
+      { speaker: "Dimas", text: "Yes. It is near the library." },
+      { speaker: "Mina", text: "Great. I am going to the library." },
+      { speaker: "Dimas", text: "Let's go together." }
+    ],
+    translation: [
+      "Kamu mau pergi ke mana?",
+      "Saya mau pergi ke kafe.",
+      "Apakah kafenya dekat sini?",
+      "Ya. Kafenya dekat perpustakaan.",
+      "Bagus. Saya mau pergi ke perpustakaan.",
+      "Ayo pergi bersama."
+    ],
+    phrases: [
+      { phrase: "Where are you going?", meaning: "Kamu mau pergi ke mana?", usage: "Ask about someone's destination." },
+      { phrase: "I'm going to the cafe.", meaning: "Saya mau pergi ke kafe.", usage: "Say your destination." },
+      { phrase: "near here", meaning: "dekat sini", usage: "Talk about a place close to you." },
+      { phrase: "Let's go together.", meaning: "Ayo pergi bersama.", usage: "Suggest going with someone." }
+    ],
+    grammar: "Use I'm going to + place for a destination.",
+    prompts: [
+      "Say you are going to the cafe.",
+      "Ask if the cafe is near here.",
+      "Suggest going together."
+    ],
+    quiz: [
+      { question: "Where is Dimas going?", answer: "To the cafe." },
+      { question: "Which sentence is correct?", answer: "I'm going to the cafe." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "understanding-simple-directions",
+    title: "Understanding Simple Directions",
+    unit: "Places & Directions",
+    conversationGoal: "Understand very simple directions with go straight, turn left, and turn right.",
+    setup: "Kamu mencari ruang meeting di gedung. Temanmu memberi arahan sederhana.",
+    dialogue: [
+      { speaker: "Sara", text: "Where is the meeting room?" },
+      { speaker: "Ben", text: "Go straight." },
+      { speaker: "Sara", text: "Okay. Go straight." },
+      { speaker: "Ben", text: "Then turn left." },
+      { speaker: "Sara", text: "Turn left?" },
+      { speaker: "Ben", text: "Yes. The room is on the right." },
+      { speaker: "Sara", text: "Thank you. I understand." }
+    ],
+    translation: [
+      "Di mana ruang meetingnya?",
+      "Jalan lurus.",
+      "Oke. Jalan lurus.",
+      "Lalu belok kiri.",
+      "Belok kiri?",
+      "Ya. Ruangannya ada di sebelah kanan.",
+      "Terima kasih. Saya mengerti."
+    ],
+    phrases: [
+      { phrase: "Go straight.", meaning: "Jalan lurus.", usage: "Give a simple forward direction." },
+      { phrase: "Turn left.", meaning: "Belok kiri.", usage: "Tell someone to move left." },
+      { phrase: "on the right", meaning: "di sebelah kanan", usage: "Say where something is on one side." },
+      { phrase: "I understand.", meaning: "Saya mengerti.", usage: "Say the instruction is clear." }
+    ],
+    grammar: "Direction commands can start with the verb: Go straight. Turn left.",
+    prompts: [
+      "Repeat the first direction.",
+      "Confirm the second direction.",
+      "Say you understand."
+    ],
+    quiz: [
+      { question: "What is the first direction?", answer: "Go straight." },
+      { question: "Where is the room?", answer: "On the right." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "asking-how-to-get-there",
+    title: "Asking How to Get There",
+    unit: "Places & Directions",
+    conversationGoal: "Ask how to get to a place and follow two simple steps.",
+    setup: "Kamu ingin ke stasiun dari area kursus. Kamu meminta arahan yang sangat singkat.",
+    dialogue: [
+      { speaker: "Dimas", text: "How do I get to the station?" },
+      { speaker: "Mina", text: "Go straight for two minutes." },
+      { speaker: "Dimas", text: "Okay. Go straight for two minutes." },
+      { speaker: "Mina", text: "Then turn right at the bank." },
+      { speaker: "Dimas", text: "Turn right at the bank?" },
+      { speaker: "Mina", text: "Yes. The station is there." },
+      { speaker: "Dimas", text: "Thank you for your help." }
+    ],
+    translation: [
+      "Bagaimana saya ke stasiun?",
+      "Jalan lurus selama dua menit.",
+      "Oke. Jalan lurus selama dua menit.",
+      "Lalu belok kanan di bank.",
+      "Belok kanan di bank?",
+      "Ya. Stasiunnya di sana.",
+      "Terima kasih atas bantuanmu."
+    ],
+    phrases: [
+      { phrase: "How do I get to the station?", meaning: "Bagaimana saya ke stasiun?", usage: "Ask for directions to a place." },
+      { phrase: "for two minutes", meaning: "selama dua menit", usage: "Say a short walking time." },
+      { phrase: "at the bank", meaning: "di bank", usage: "Use a landmark for directions." },
+      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." }
+    ],
+    grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
+    prompts: [
+      "Ask how to get to the station.",
+      "Repeat the time direction.",
+      "Confirm the landmark."
+    ],
+    quiz: [
+      { question: "Where does Dimas want to go?", answer: "The station." },
+      { question: "Where should he turn right?", answer: "At the bank." }
+    ],
+    sections: lessonSections
+  },
+  {
+    slug: "finding-a-place-mission",
+    title: "Finding a Place Mission",
+    unit: "Places & Directions",
+    conversationGoal: "Complete a short place-finding conversation from question to confirmation.",
+    setup: "Kamu perlu menemukan ruang kelas, lalu memastikan arah dengan orang lain secara sopan.",
+    dialogue: [
+      { speaker: "Ben", text: "Excuse me. How do I get to room A?" },
+      { speaker: "Sara", text: "Go straight and turn left." },
+      { speaker: "Ben", text: "Go straight and turn left." },
+      { speaker: "Sara", text: "Yes. Room A is next to the office." },
+      { speaker: "Ben", text: "Is it on the first floor?" },
+      { speaker: "Sara", text: "Yes, it is." },
+      { speaker: "Ben", text: "Great. Thank you." },
+      { speaker: "Sara", text: "You're welcome." }
+    ],
+    translation: [
+      "Permisi. Bagaimana saya ke ruang A?",
+      "Jalan lurus dan belok kiri.",
+      "Jalan lurus dan belok kiri.",
+      "Ya. Ruang A di sebelah kantor.",
+      "Apakah di lantai satu?",
+      "Ya.",
+      "Bagus. Terima kasih.",
+      "Sama-sama."
+    ],
+    phrases: [
+      { phrase: "How do I get to room A?", meaning: "Bagaimana saya ke ruang A?", usage: "Ask for the way to a room." },
+      { phrase: "Go straight and turn left.", meaning: "Jalan lurus dan belok kiri.", usage: "Join two short direction steps." },
+      { phrase: "next to the office", meaning: "di sebelah kantor", usage: "Use a nearby landmark." },
+      { phrase: "Is it on the first floor?", meaning: "Apakah di lantai satu?", usage: "Confirm the floor." }
+    ],
+    grammar: "Use and to join two simple direction steps: Go straight and turn left.",
+    prompts: [
+      "Ask how to get to room A.",
+      "Repeat the directions.",
+      "Confirm the floor."
+    ],
+    quiz: [
+      { question: "Where does Ben want to go?", answer: "Room A." },
+      { question: "What are the directions?", answer: "Go straight and turn left." }
+    ],
+    sections: lessonSections
   }
 ];
 
@@ -956,10 +1164,17 @@ export const course = {
         }))
     },
     {
-      title: "Daily Places and Situations",
-      outcome: "Handle food, shopping, and direction situations.",
+      title: "Places & Directions",
+      outcome: "Ask where places are, understand simple directions, and find a room or destination.",
       progress: 0,
-      lessons: []
+      lessons: lessonCatalog
+        .filter((item) => item.unit === "Places & Directions")
+        .map((item) => ({
+          slug: item.slug,
+          title: item.title,
+          status: "published",
+          minutes: item.slug === "finding-a-place-mission" ? 10 : 8
+        }))
     }
   ]
 };

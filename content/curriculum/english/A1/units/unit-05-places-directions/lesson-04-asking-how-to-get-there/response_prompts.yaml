@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask how to get to the station.
+  target_response: How do I get to the station?
+  acceptable_variations:
+  - How do I get to the station?
+- prompt: Repeat the time direction.
+  target_response: Go straight for two minutes.
+  acceptable_variations:
+  - Go straight for two minutes.
+- prompt: Confirm the landmark.
+  target_response: Turn right at the bank?
+  acceptable_variations:
+  - Turn right at the bank?

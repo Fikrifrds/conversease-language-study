@@ -1,0 +1,21 @@
+scenario_key: asking_for_a_place_location
+mode: lesson_practice_coach
+level_code: A1
+opening_line: "Excuse me. What do you need?"
+learner_goal: "Ask where a place is, confirm the location, and close politely."
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+target_phrases:
+  - "Excuse me."
+  - "Where is the classroom?"
+  - "Is it near the office?"
+  - "Thank you."
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

@@ -1,0 +1,17 @@
+phrases:
+- phrase: Where are you going?
+  meaning_id: Kamu mau pergi ke mana?
+  usage_note: Ask about someone's destination.
+  common_mistake: Do not say 'Where you going?' in careful practice.
+- phrase: I'm going to the cafe.
+  meaning_id: Saya mau pergi ke kafe.
+  usage_note: Use 'to' before a destination.
+  common_mistake: Do not say 'I going cafe.'
+- phrase: near here
+  meaning_id: dekat sini
+  usage_note: Use this for a place close to your current location.
+  common_mistake: Do not say 'near from here.'
+- phrase: Let's go together.
+  meaning_id: Ayo pergi bersama.
+  usage_note: Use this to suggest going with someone.
+  common_mistake: Do not use it with a stranger unless the context is friendly.

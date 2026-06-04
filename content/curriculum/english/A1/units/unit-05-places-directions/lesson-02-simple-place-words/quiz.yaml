@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Where is Dimas going?
+  choices:
+  - To the cafe.
+  - To the bank.
+  - To the office.
+  answer: To the cafe.
+- type: multiple_choice
+  prompt: What place is near the cafe?
+  choices:
+  - The library.
+  - The airport.
+  - The bedroom.
+  answer: The library.
+- type: multiple_choice
+  prompt: Which sentence is correct?
+  choices:
+  - I'm going to the cafe.
+  - I going cafe.
+  - I go to cafe now?
+  answer: I'm going to the cafe.

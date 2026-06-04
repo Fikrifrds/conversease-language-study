@@ -1,0 +1,24 @@
+lesson_key: lesson-04-asking-how-to-get-there
+slug: asking-how-to-get-there
+title: Asking How to Get There
+status: published
+estimated_minutes: 9
+conversation_situation: asking_for_steps_to_reach_a_place
+conversation_goal: Learners can ask how to get to a place and follow two simple steps.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

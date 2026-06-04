@@ -1,0 +1,17 @@
+phrases:
+- phrase: How do I get to room A?
+  meaning_id: Bagaimana saya ke ruang A?
+  usage_note: Ask for the way to a room.
+  common_mistake: Use 'to' before the room or place.
+- phrase: Go straight and turn left.
+  meaning_id: Jalan lurus dan belok kiri.
+  usage_note: Use 'and' to join two short steps.
+  common_mistake: Do not make the sentence too long at A1.
+- phrase: next to the office
+  meaning_id: di sebelah kantor
+  usage_note: Use this for a landmark beside the place.
+  common_mistake: Do not say 'next the office.'
+- phrase: Is it on the first floor?
+  meaning_id: Apakah di lantai satu?
+  usage_note: Confirm a floor.
+  common_mistake: Use 'on' for floors.

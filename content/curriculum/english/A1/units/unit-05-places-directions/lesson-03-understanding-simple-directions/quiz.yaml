@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: What is the first direction?
+  choices:
+  - Go straight.
+  - Turn right.
+  - Stop here.
+  answer: Go straight.
+- type: multiple_choice
+  prompt: After going straight, what should Sara do?
+  choices:
+  - Turn left.
+  - Go home.
+  - Open email.
+  answer: Turn left.
+- type: multiple_choice
+  prompt: Where is the room?
+  choices:
+  - On the right.
+  - In a cafe.
+  - Under the table.
+  answer: On the right.

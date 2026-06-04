@@ -111,29 +111,29 @@ units:
 
   - unit_key: unit-05-places-directions
     title: Places & Directions
-    status: planned
+    status: in_production
     main_conversation_outcome: Ask where places are and understand simple directions.
     lessons:
       - lesson_key: lesson-01-asking-where-a-place-is
         slug: asking-where-a-place-is
         title: Asking Where a Place Is
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-simple-place-words
         slug: simple-place-words
         title: Simple Place Words
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-understanding-simple-directions
         slug: understanding-simple-directions
         title: Understanding Simple Directions
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-how-to-get-there
         slug: asking-how-to-get-there
         title: Asking How to Get There
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-finding-a-place-mission
         slug: finding-a-place-mission
         title: Finding a Place Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-06-food-shopping-prices
     title: Food, Shopping & Prices

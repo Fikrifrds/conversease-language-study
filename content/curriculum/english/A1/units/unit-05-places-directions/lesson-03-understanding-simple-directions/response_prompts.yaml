@@ -1,0 +1,13 @@
+prompts:
+- prompt: Repeat the first direction.
+  target_response: Go straight.
+  acceptable_variations:
+  - Go straight.
+- prompt: Confirm the second direction.
+  target_response: Turn left?
+  acceptable_variations:
+  - Turn left?
+- prompt: Say you understand.
+  target_response: I understand.
+  acceptable_variations:
+  - I understand.

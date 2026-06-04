@@ -1,0 +1,13 @@
+prompts:
+- prompt: Ask how to get to room A.
+  target_response: How do I get to room A?
+  acceptable_variations:
+  - How do I get to room A?
+- prompt: Repeat the directions.
+  target_response: Go straight and turn left.
+  acceptable_variations:
+  - Go straight and turn left.
+- prompt: Confirm the floor.
+  target_response: Is it on the first floor?
+  acceptable_variations:
+  - Is it on the first floor?

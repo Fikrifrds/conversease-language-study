@@ -1,0 +1,17 @@
+phrases:
+- phrase: How do I get to the station?
+  meaning_id: Bagaimana saya ke stasiun?
+  usage_note: Ask for directions to a place.
+  common_mistake: Do not say 'How I get station?'
+- phrase: for two minutes
+  meaning_id: selama dua menit
+  usage_note: Use this for short walking time.
+  common_mistake: Do not say 'during two minutes' here.
+- phrase: at the bank
+  meaning_id: di bank
+  usage_note: Use 'at' for a direction point.
+  common_mistake: Do not say 'in the bank' if you mean the outside point.
+- phrase: Thank you for your help.
+  meaning_id: Terima kasih atas bantuanmu.
+  usage_note: Use this after someone helps you.
+  common_mistake: Keep it polite and simple.

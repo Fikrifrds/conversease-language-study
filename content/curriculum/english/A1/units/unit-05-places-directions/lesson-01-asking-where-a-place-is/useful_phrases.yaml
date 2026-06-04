@@ -1,0 +1,17 @@
+phrases:
+- phrase: Excuse me.
+  meaning_id: Permisi.
+  usage_note: Use this before asking a stranger or staff member.
+  common_mistake: Do not say only 'Hey' in a polite place.
+- phrase: Where is the classroom?
+  meaning_id: Di mana ruang kelasnya?
+  usage_note: Use 'Where is...' for one place.
+  common_mistake: Do not say 'Where the classroom?'
+- phrase: It is on the first floor.
+  meaning_id: Tempatnya di lantai satu.
+  usage_note: Use 'on' for floors.
+  common_mistake: Do not say 'in the first floor.'
+- phrase: It is next to the office.
+  meaning_id: Tempatnya di sebelah kantor.
+  usage_note: Use 'next to' for a place beside another place.
+  common_mistake: Do not say 'beside of.'

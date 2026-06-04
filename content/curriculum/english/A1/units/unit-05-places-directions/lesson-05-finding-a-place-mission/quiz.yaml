@@ -1,0 +1,22 @@
+questions:
+- type: multiple_choice
+  prompt: Where does Ben want to go?
+  choices:
+  - Room A.
+  - The station.
+  - The cafe.
+  answer: Room A.
+- type: multiple_choice
+  prompt: What are the directions?
+  choices:
+  - Go straight and turn left.
+  - Turn right and run.
+  - Go home.
+  answer: Go straight and turn left.
+- type: multiple_choice
+  prompt: Where is room A?
+  choices:
+  - Next to the office.
+  - In the library.
+  - Under the stairs.
+  answer: Next to the office.

@@ -1,0 +1,12 @@
+status: not_generated
+provider: minimax
+model: speech-2.8-hd
+default_voice_id: multi_speaker
+assets:
+  dialogue_main:
+    audio_url: ''
+    duration_seconds: null
+    voice_id: multi_speaker
+    speaker_voices: {}
+    storage_key: ''
+    generated_at: ''
