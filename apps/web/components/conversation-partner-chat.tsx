@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Mic, Sparkles, Square, Volume2 } from "lucide-react";
+import { CheckCircle2, Mic, MicOff, Sparkles, Square, Volume2 } from "lucide-react";
 import { ApiRequestError } from "@/lib/conversation-api";
 import {
   createPartnerSession,
@@ -19,6 +19,9 @@ type ChatMessage = {
 };
 
 const maxRecordingSeconds = 30;
+const silenceMs = 1500; // hands-free: stop after this much silence following speech
+const speechRmsThreshold = 0.02; // RMS above this counts as speech
+const minSpeechMs = 400; // require some speech before silence can end the turn
 
 function preferredRecordingMimeType() {
   if (typeof MediaRecorder === "undefined") {
@@ -59,6 +62,8 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [recordingSeconds, setRecordingSeconds] = useState(0);
   const [error, setError] = useState("");
   const [offTopicNote, setOffTopicNote] = useState(false);
+  const [handsFree, setHandsFree] = useState(false);
+  const [listening, setListening] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const recordingStreamRef = useRef<MediaStream | null>(null);
@@ -67,6 +72,11 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const handsFreeRef = useRef(false);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const vadRafRef = useRef<number | null>(null);
+  const speechStartedAtRef = useRef<number | null>(null);
+  const lastSpeechAtRef = useRef<number>(0);
 
   const isRecording = recordingStatus === "recording";
   const isProcessing = recordingStatus === "processing";
@@ -74,6 +84,8 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
 
   useEffect(() => {
     return () => {
+      handsFreeRef.current = false;
+      stopVad();
       clearTimers();
       stopStream();
       audioRef.current?.pause();
@@ -81,16 +93,83 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  function playAudio(dataUrl: string | null | undefined) {
+  function playAudio(dataUrl: string | null | undefined, onEnded?: () => void) {
     if (!dataUrl) {
+      onEnded?.();
       return;
     }
     audioRef.current?.pause();
     const audio = new Audio(dataUrl);
     audioRef.current = audio;
+    if (onEnded) {
+      audio.onended = onEnded;
+    }
     void audio.play().catch(() => {
       /* autoplay may be blocked; user can replay */
+      onEnded?.();
     });
+  }
+
+  function stopVad() {
+    if (vadRafRef.current !== null) {
+      cancelAnimationFrame(vadRafRef.current);
+      vadRafRef.current = null;
+    }
+    if (audioContextRef.current) {
+      void audioContextRef.current.close().catch(() => undefined);
+      audioContextRef.current = null;
+    }
+    speechStartedAtRef.current = null;
+  }
+
+  function startVad(stream: MediaStream) {
+    const AudioCtx =
+      window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!AudioCtx) {
+      return; // VAD unavailable; recording still works via manual stop / max timeout
+    }
+    const context = new AudioCtx();
+    audioContextRef.current = context;
+    const source = context.createMediaStreamSource(stream);
+    const analyser = context.createAnalyser();
+    analyser.fftSize = 1024;
+    source.connect(analyser);
+    const data = new Uint8Array(analyser.fftSize);
+    speechStartedAtRef.current = null;
+
+    const tick = () => {
+      if (!handsFreeRef.current || !audioContextRef.current) {
+        return;
+      }
+      analyser.getByteTimeDomainData(data);
+      let sumSquares = 0;
+      for (let i = 0; i < data.length; i += 1) {
+        const value = (data[i] - 128) / 128;
+        sumSquares += value * value;
+      }
+      const rms = Math.sqrt(sumSquares / data.length);
+      const now = performance.now();
+
+      if (rms > speechRmsThreshold) {
+        if (speechStartedAtRef.current === null) {
+          speechStartedAtRef.current = now;
+        }
+        lastSpeechAtRef.current = now;
+      } else if (
+        speechStartedAtRef.current !== null &&
+        now - speechStartedAtRef.current > minSpeechMs &&
+        now - lastSpeechAtRef.current > silenceMs
+      ) {
+        // Speech happened, then enough silence -> end the turn.
+        stopVad();
+        stopRecording();
+        return;
+      }
+
+      vadRafRef.current = requestAnimationFrame(tick);
+    };
+
+    vadRafRef.current = requestAnimationFrame(tick);
   }
 
   function clearTimers() {
@@ -131,6 +210,11 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       recordingStreamRef.current = stream;
       mediaRecorderRef.current = recorder;
 
+      if (handsFreeRef.current) {
+        lastSpeechAtRef.current = performance.now();
+        startVad(stream);
+      }
+
       recorder.ondataavailable = (event) => {
         if (event.data.size > 0) {
           recordedChunksRef.current.push(event.data);
@@ -138,8 +222,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       };
 
       recorder.onstop = () => {
+        stopVad();
         clearTimers();
         stopStream();
+        setListening(false);
         if (discardRef.current) {
           recordedChunksRef.current = [];
           mediaRecorderRef.current = null;
@@ -157,15 +243,20 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
 
       recorder.start();
       setRecordingStatus("recording");
+      setListening(true);
       intervalRef.current = setInterval(() => {
         setRecordingSeconds((current) => Math.min(current + 1, maxRecordingSeconds));
       }, 1000);
       timeoutRef.current = setTimeout(() => stopRecording(), maxRecordingSeconds * 1000);
     } catch {
+      stopVad();
       clearTimers();
       stopStream();
       mediaRecorderRef.current = null;
       setRecordingStatus("idle");
+      setListening(false);
+      handsFreeRef.current = false;
+      setHandsFree(false);
       setError("Mic belum bisa diakses. Cek izin microphone browser.");
     }
   }
@@ -209,17 +300,46 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       ]);
       setCompletedTurns(result.completedTurns);
       setOffTopicNote(!result.onTopic);
-      playAudio(result.partnerAudio);
 
       if (result.shouldEnd) {
+        playAudio(result.partnerAudio);
+        handsFreeRef.current = false;
+        setHandsFree(false);
         setEnded(true);
         void loadSummary(activeSessionId);
+      } else {
+        // In hands-free mode, listen again once the AI finishes speaking.
+        playAudio(result.partnerAudio, () => {
+          if (handsFreeRef.current) {
+            void startRecording();
+          }
+        });
       }
     } catch (caught) {
       setError(turnErrorMessage(caught));
+      handsFreeRef.current = false;
+      setHandsFree(false);
     } finally {
       setRecordingStatus("idle");
       setIsBusy(false);
+    }
+  }
+
+  function startHandsFree() {
+    if (ended || isBusy) {
+      return;
+    }
+    handsFreeRef.current = true;
+    setHandsFree(true);
+    void startRecording();
+  }
+
+  function stopHandsFree() {
+    handsFreeRef.current = false;
+    setHandsFree(false);
+    if (isRecording) {
+      discardRef.current = true;
+      stopRecording();
     }
   }
 
@@ -308,32 +428,71 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         </div>
 
         <div className="border-t border-ink/10 p-5">
-          <div className="flex flex-wrap items-center gap-2">
-            <button
-              type="button"
-              onClick={isRecording ? stopRecording : startRecording}
-              disabled={ended || isBusy || isProcessing}
-              className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
-                isRecording ? "bg-coral text-white hover:bg-ink" : "bg-leaf text-white hover:bg-ink"
-              }`}
-            >
-              {isRecording ? (
-                <Square className="h-4 w-4" aria-hidden="true" />
-              ) : (
+          {handsFree ? (
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={stopHandsFree}
+                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-coral px-5 py-3 text-sm font-semibold text-white hover:bg-ink"
+              >
+                <MicOff className="h-4 w-4" aria-hidden="true" />
+                Stop Hands-free
+              </button>
+              <span className="inline-flex items-center gap-2 text-sm font-medium text-ink/70">
+                {isBusy || isProcessing ? (
+                  <>Memproses…</>
+                ) : listening ? (
+                  <>
+                    <span className="relative flex h-2.5 w-2.5">
+                      <span className="absolute inline-flex h-2.5 w-2.5 animate-ping rounded-full bg-leaf/60" />
+                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-leaf" />
+                    </span>
+                    Mendengarkan… bicara lalu berhenti, AI akan otomatis menjawab.
+                  </>
+                ) : (
+                  <>Menunggu AI…</>
+                )}
+              </span>
+            </div>
+          ) : (
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={startHandsFree}
+                disabled={ended || isBusy || isProcessing}
+                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50"
+              >
                 <Mic className="h-4 w-4" aria-hidden="true" />
-              )}
-              {isProcessing
-                ? "Memproses"
-                : isBusy
-                  ? "Mengirim"
-                  : isRecording
-                    ? `Stop ${recordingSeconds}s`
-                    : ended
-                      ? "Selesai"
-                      : "Rekam & Bicara"}
-            </button>
-            <p className="text-xs text-ink/50">Tekan rekam, bicara dalam bahasa Inggris, lalu stop.</p>
-          </div>
+                {ended ? "Selesai" : "Mulai Ngobrol (Hands-free)"}
+              </button>
+              <button
+                type="button"
+                onClick={isRecording ? stopRecording : startRecording}
+                disabled={ended || isBusy || isProcessing}
+                className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
+                  isRecording ? "border-coral bg-coral text-white hover:bg-ink" : "border-ink/15 hover:bg-mint"
+                }`}
+              >
+                {isRecording ? (
+                  <Square className="h-4 w-4" aria-hidden="true" />
+                ) : (
+                  <Mic className="h-4 w-4" aria-hidden="true" />
+                )}
+                {isProcessing
+                  ? "Memproses"
+                  : isBusy
+                    ? "Mengirim"
+                    : isRecording
+                      ? `Stop ${recordingSeconds}s`
+                      : "Rekam manual"}
+              </button>
+            </div>
+          )}
+          {!handsFree ? (
+            <p className="mt-3 text-xs text-ink/50">
+              Hands-free: tekan sekali, lalu bicara. AI menjawab otomatis saat kamu berhenti.
+            </p>
+          ) : null}
           {error ? (
             <p className="mt-3 rounded-lg bg-[#fde7df] px-3 py-2 text-sm text-ink/70">{error}</p>
           ) : null}
