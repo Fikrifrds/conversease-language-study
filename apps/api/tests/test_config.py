@@ -16,7 +16,7 @@ class ConfigTest(unittest.TestCase):
 
         self.assertEqual(settings.app_env, "development")
         self.assertTrue(settings.database_url.startswith("sqlite"))
-        self.assertEqual(settings.together_chat_model, "MiniMaxAI/MiniMax-M2.7")
+        self.assertEqual(settings.together_chat_model, "meta-llama/Llama-3.3-70B-Instruct-Turbo")
         self.assertEqual(settings.assemblyai_speech_models, ["universal-3-pro", "universal-2"])
 
     def test_development_env_file_can_use_local_postgres(self):

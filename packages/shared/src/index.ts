@@ -15,6 +15,7 @@ export const productRoutes = {
   dashboard: "/dashboard",
   courses: "/courses",
   conversationCoach: "/conversation-coach",
+  conversationPartner: "/conversation-partner",
   pricing: "/pricing",
   billing: "/billing",
   progress: "/progress",

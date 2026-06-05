@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Award, BookOpen, CreditCard, Home, MessageCircle, TrendingUp } from "lucide-react";
+import { Award, BookOpen, CreditCard, Home, MessageCircle, Mic, TrendingUp } from "lucide-react";
 import { productRoutes } from "@conversease/shared";
 import { AuthGuard } from "@/components/auth-guard";
 import { BrandMark } from "@/components/brand-mark";
@@ -11,6 +11,7 @@ const navItems = [
   { href: productRoutes.dashboard, label: "Dashboard", shortLabel: "Dashboard", icon: Home },
   { href: productRoutes.courses, label: "Kelas", shortLabel: "Kelas", icon: BookOpen },
   { href: productRoutes.conversationCoach, label: "Conversation Coach", shortLabel: "Coach", icon: MessageCircle },
+  { href: productRoutes.conversationPartner, label: "Conversation Partner", shortLabel: "Partner", icon: Mic },
   { href: productRoutes.progress, label: "Progress", shortLabel: "Progress", icon: TrendingUp },
   { href: productRoutes.levelTestA1, label: "A1 Test", shortLabel: "A1 Test", icon: Award },
   { href: productRoutes.billing, label: "Billing", shortLabel: "Billing", icon: CreditCard }

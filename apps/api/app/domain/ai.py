@@ -52,6 +52,18 @@ TASK_MODEL_CONFIGS = {
         temperature=0.2,
         max_tokens=1200,
     ),
+    "conversation_partner_reply": ModelConfig(
+        provider="together",
+        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        temperature=0.6,
+        max_tokens=600,
+    ),
+    "conversation_partner_summary": ModelConfig(
+        provider="together",
+        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        temperature=0.2,
+        max_tokens=1000,
+    ),
     "level_evaluation_grading": ModelConfig(
         provider="together",
         model=DEFAULT_TOGETHER_CHAT_MODEL,

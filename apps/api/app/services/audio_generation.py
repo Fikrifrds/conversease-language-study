@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import base64
 import csv
 import hashlib
 import io
+import logging
 import re
 import sys
 import wave
@@ -455,6 +457,43 @@ async def generate_voice_preview_audio(
         "generated_by": generated_by,
         "generated_at": generated_at.isoformat(),
     }
+
+
+async def synthesize_partner_reply_audio(
+    *,
+    text: str,
+    voice_id: Optional[str] = None,
+    speed: float = 1.0,
+) -> Optional[str]:
+    """Synthesize a short spoken reply and return it as a base64 data-URL.
+
+    Returns None (instead of raising) when TTS is not configured or fails, so a
+    conversation turn always succeeds with at least the text reply.
+    """
+    cleaned = (text or "").strip()
+    if not cleaned or not settings.minimax_api_key:
+        return None
+
+    selected_voice = (voice_id or settings.minimax_tts_voice_id).strip()
+    if not selected_voice:
+        return None
+
+    try:
+        generated = await synthesize_minimax_tts(
+            text=cleaned,
+            model=default_minimax_tts_model(),
+            voice_id=selected_voice,
+            speed=speed,
+            language_boost=settings.minimax_tts_language_boost,
+            audio_format="mp3",
+        )
+    except AudioGenerationError as exc:
+        logging.getLogger(__name__).error("partner_tts_failed voice=%s: %s", selected_voice, exc)
+        return None
+
+    encoded = base64.b64encode(generated.audio_bytes).decode("ascii")
+    content_type = content_type_for_audio_format(generated.audio_format)
+    return f"data:{content_type};base64,{encoded}"
 
 
 async def synthesize_minimax_tts(
