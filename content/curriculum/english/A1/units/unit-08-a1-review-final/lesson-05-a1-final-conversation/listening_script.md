@@ -7,17 +7,19 @@
 **Ben:** I'm from Malaysia. What do you do every morning?
 **Mina:** I study English at seven. By the way, where is the cafe?
 **Ben:** It's close. Go straight and turn left.
-**Mina:** Thank you. Let's get a drink there.
-**Ben:** Good idea. What would you like?
-**Mina:** I would like one tea, please.
-**Ben:** Sure. It is two dollars.
+**Mina:** Thank you very much.
+**Ben:** You're welcome. Have a nice day.
+**Staff:** Hello. Welcome to the cafe. What would you like?
+**Mina:** Hello. I would like one tea, please.
+**Staff:** Sure. It is two dollars.
 **Mina:** Sorry, can you repeat that, please?
-**Ben:** It is two dollars.
-**Mina:** Okay. Here you go. Thank you for your help.
+**Staff:** It is two dollars.
+**Mina:** Okay. Here you go. Thank you.
 
 ## Audio Direction
 
 - Level: A1
 - Speed: slow and natural
 - Tone: review, clear, supportive
-- Voices: male partner and female learner, final conversation, slow, natural, supportive
+- Voices: Ben male partner, Mina female learner, Staff female cafe staff; final conversation, slow, natural, supportive
+- Scene change after Ben says goodbye: Mina arrives at the cafe and the staff serves her (Ben is not the cafe staff). Add a short pause before the Staff line.

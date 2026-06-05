@@ -108,6 +108,7 @@ DIALOGUE_PERSONA_VOICES = {
     "rama": "English_Gentle-voiced_man",
     "raka": "English_Gentle-voiced_man",
     "sara": "English_CalmWoman",
+    "staff": "English_CalmWoman",
 }
 
 FALLBACK_MINIMAX_VOICES = tuple(

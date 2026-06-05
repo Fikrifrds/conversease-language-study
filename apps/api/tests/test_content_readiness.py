@@ -13,14 +13,16 @@ class ContentReadinessTest(unittest.TestCase):
     def test_a1_plan_tracks_implemented_and_missing_lessons(self):
         readiness = content_readiness_summary()
 
+        # 36 lessons have generated audio; 4 were reset to not_generated after
+        # their dialogues were rewritten and need regeneration.
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 40)
         self.assertEqual(readiness["summary"]["implemented_lesson_count"], 40)
         self.assertEqual(readiness["summary"]["text_ready_count"], 40)
-        self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
+        self.assertEqual(readiness["summary"]["audio_ready_count"], 36)
         self.assertEqual(readiness["summary"]["beta_ready_count"], 40)
-        self.assertEqual(readiness["summary"]["production_ready_count"], 0)
+        self.assertEqual(readiness["summary"]["production_ready_count"], 36)
 
-    def test_first_unit_is_text_ready_but_needs_audio(self):
+    def test_first_unit_is_text_ready_with_audio(self):
         readiness = content_readiness_summary()
         first_unit = readiness["units"][0]
         first_lesson = first_unit["lessons"][0]
@@ -28,15 +30,15 @@ class ContentReadinessTest(unittest.TestCase):
         self.assertEqual(first_unit["unit_key"], "unit-01-greeting-introducing-yourself")
         self.assertTrue(first_lesson["implemented"])
         self.assertTrue(first_lesson["text_ready"])
-        self.assertFalse(first_lesson["audio_ready"])
-        self.assertEqual(first_lesson["status"], "beta_ready_needs_audio")
-        self.assertIn("Listening audio generated", first_lesson["missing_items"])
+        self.assertTrue(first_lesson["audio_ready"])
+        self.assertEqual(first_lesson["status"], "production_ready")
 
-    def test_a1_is_text_complete_but_needs_audio(self):
+    def test_a1_is_text_complete_and_mostly_audio_ready(self):
         readiness = content_readiness_summary()
 
         self.assertEqual(readiness["summary"]["missing_content_count"], 0)
-        self.assertEqual(readiness["summary"]["missing_audio_count"], 40)
+        # Only the 4 lessons whose dialogues were rewritten still need audio.
+        self.assertEqual(readiness["summary"]["missing_audio_count"], 4)
         self.assertTrue(
             all(
                 lesson["implemented"] and lesson["text_ready"]
@@ -46,7 +48,7 @@ class ContentReadinessTest(unittest.TestCase):
         )
         self.assertTrue(
             all(
-                lesson["status"] == "beta_ready_needs_audio"
+                lesson["status"] in {"production_ready", "beta_ready_needs_audio"}
                 for unit in readiness["units"]
                 for lesson in unit["lessons"]
             )
@@ -63,9 +65,9 @@ class ContentReadinessTest(unittest.TestCase):
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 200)
         self.assertEqual(readiness["summary"]["implemented_lesson_count"], 40)
         self.assertEqual(readiness["summary"]["text_ready_count"], 40)
-        self.assertEqual(readiness["summary"]["audio_ready_count"], 0)
+        self.assertEqual(readiness["summary"]["audio_ready_count"], 36)
         self.assertEqual(readiness["summary"]["missing_content_count"], 160)
-        self.assertEqual(readiness["summary"]["missing_audio_count"], 200)
+        self.assertEqual(readiness["summary"]["missing_audio_count"], 164)
 
     def test_audio_manifest_ready_requires_dialogue_main_audio(self):
         with tempfile.TemporaryDirectory() as directory:
