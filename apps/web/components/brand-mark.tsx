@@ -14,7 +14,7 @@ export function BrandMark({ href = "/", tone = "dark", size = "md" }: BrandMarkP
   const content = (
     <>
       <span className="grid place-items-center rounded-lg drop-shadow-sm">
-        <Image src="/logo.png" alt="" width={iconSize} height={iconSize} priority={size === "md"} />
+        <Image src="/logo.svg" alt="" width={iconSize} height={iconSize} priority={size === "md"} />
       </span>
       <span className={`font-semibold ${textClass}`}>Conversease</span>
     </>
