@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, Lightbulb, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
 import {
@@ -17,6 +17,8 @@ import {
   saveSavedPractice,
   type SavedPractice
 } from "@/lib/practice-storage";
+import { useVoiceRecorder } from "@/lib/use-voice-recorder";
+import { VoiceWaveform } from "@/components/voice-waveform";
 
 type CoachTurn = {
   coach: string;
@@ -1115,24 +1117,11 @@ function averageScore(feedback: CoachFeedback | null) {
   return Math.round((feedback.scores.speaking + feedback.scores.grammar + feedback.scores.fluency) / 3);
 }
 
-function preferredRecordingMimeType() {
-  if (typeof MediaRecorder === "undefined") {
-    return "";
-  }
-
-  const candidates = [
-    "audio/webm;codecs=opus",
-    "audio/webm",
-    "audio/mp4",
-    "audio/ogg;codecs=opus"
-  ];
-  return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) ?? "";
-}
 
 function recordingSubmitErrorMessage(error: unknown) {
   if (error instanceof ApiRequestError) {
     if (error.status === 503) {
-      return "STT belum aktif. Pastikan ASSEMBLYAI_API_KEY sudah terbaca di API.";
+      return "STT belum aktif. Pastikan kunci API STT sudah terbaca di server.";
     }
     if (error.status === 504) {
       return "Transkripsi terlalu lama. Coba rekam jawaban yang lebih pendek.";
@@ -1160,22 +1149,21 @@ export function ConversationCoachPractice({
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [syncStatus, setSyncStatus] = useState<"connecting" | "synced" | "local">("connecting");
   const [billingNotice, setBillingNotice] = useState("");
-  const [recordingStatus, setRecordingStatus] = useState<"idle" | "recording" | "processing">("idle");
-  const [recordingSeconds, setRecordingSeconds] = useState(0);
   const [recordingError, setRecordingError] = useState("");
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const recordingStreamRef = useRef<MediaStream | null>(null);
-  const recordedChunksRef = useRef<BlobPart[]>([]);
-  const discardRecordingRef = useRef(false);
-  const recordingIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const recordingTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const recorder = useVoiceRecorder({
+    onResult: (blob) => submitRecordedAudio(blob),
+    onError: (message) => setRecordingError(message),
+    maxSeconds: maxRecordingSeconds,
+    autoStopOnSilence: true
+  });
 
   const completed = completedTurns >= activeTurns.length;
   const activeTurn = activeTurns[Math.min(turnIndex, activeTurns.length - 1)];
   const progressPercent = Math.round((completedTurns / activeTurns.length) * 100);
   const score = averageScore(feedback);
-  const isRecording = recordingStatus === "recording";
-  const isProcessingRecording = recordingStatus === "processing";
+  const isRecording = recorder.status === "recording";
+  const isProcessingRecording = recorder.status === "processing";
 
   const savedPractice: SavedPractice = useMemo(
     () => ({
@@ -1196,13 +1184,6 @@ export function ConversationCoachPractice({
 
     saveSavedPractice(savedPractice, effectiveStorageKey);
   }, [completedTurns, effectiveStorageKey, savedPractice]);
-
-  useEffect(() => {
-    return () => {
-      clearRecordingTimers();
-      stopRecordingStream();
-    };
-  }, []);
 
   function applySummary(summary: ApiPracticeSummary) {
     setCompletedTurns(summary.completedTurns);
@@ -1244,100 +1225,21 @@ export function ConversationCoachPractice({
     setTurnIndex(input.nextTurnIndex);
   }
 
-  function clearRecordingTimers() {
-    if (recordingIntervalRef.current) {
-      clearInterval(recordingIntervalRef.current);
-      recordingIntervalRef.current = null;
-    }
-    if (recordingTimeoutRef.current) {
-      clearTimeout(recordingTimeoutRef.current);
-      recordingTimeoutRef.current = null;
-    }
-  }
-
-  function stopRecordingStream() {
-    recordingStreamRef.current?.getTracks().forEach((track) => track.stop());
-    recordingStreamRef.current = null;
-  }
-
-  async function startRecording() {
+  function startRecording() {
     if (completed || isSubmitting || isRecording || isProcessingRecording) {
       return;
     }
-
-    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
-      setRecordingError("Browser belum mendukung rekam audio.");
-      return;
-    }
-
     setRecordingError("");
     setBillingNotice("");
-    setRecordingSeconds(0);
-    discardRecordingRef.current = false;
-
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mimeType = preferredRecordingMimeType();
-      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-      recordedChunksRef.current = [];
-      recordingStreamRef.current = stream;
-      mediaRecorderRef.current = recorder;
-
-      recorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          recordedChunksRef.current.push(event.data);
-        }
-      };
-
-      recorder.onstop = () => {
-        clearRecordingTimers();
-        stopRecordingStream();
-        if (discardRecordingRef.current) {
-          recordedChunksRef.current = [];
-          mediaRecorderRef.current = null;
-          discardRecordingRef.current = false;
-          setRecordingStatus("idle");
-          return;
-        }
-        const audioBlob = new Blob(recordedChunksRef.current, {
-          type: recorder.mimeType || mimeType || "audio/webm"
-        });
-        recordedChunksRef.current = [];
-        mediaRecorderRef.current = null;
-        void submitRecordedAudio(audioBlob);
-      };
-
-      recorder.start();
-      setRecordingStatus("recording");
-      recordingIntervalRef.current = setInterval(() => {
-        setRecordingSeconds((current) => Math.min(current + 1, maxRecordingSeconds));
-      }, 1000);
-      recordingTimeoutRef.current = setTimeout(() => {
-        stopRecording();
-      }, maxRecordingSeconds * 1000);
-    } catch {
-      clearRecordingTimers();
-      stopRecordingStream();
-      mediaRecorderRef.current = null;
-      setRecordingStatus("idle");
-      setRecordingError("Mic belum bisa diakses. Cek izin microphone browser.");
-    }
+    void recorder.start();
   }
 
   function stopRecording() {
-    const recorder = mediaRecorderRef.current;
-    if (!recorder || recorder.state === "inactive") {
-      return;
-    }
-
-    setRecordingStatus("processing");
-    clearRecordingTimers();
     recorder.stop();
   }
 
   async function submitRecordedAudio(audioBlob: Blob) {
     if (!audioBlob.size) {
-      setRecordingStatus("idle");
       setRecordingError("Audio belum terekam. Coba ulangi.");
       return;
     }
@@ -1374,7 +1276,6 @@ export function ConversationCoachPractice({
         setRecordingError(recordingSubmitErrorMessage(error));
       }
     } finally {
-      setRecordingStatus("idle");
       setIsSubmitting(false);
     }
   }
@@ -1440,8 +1341,7 @@ export function ConversationCoachPractice({
 
   async function handleReset() {
     if (isRecording) {
-      discardRecordingRef.current = true;
-      stopRecording();
+      recorder.cancel();
     }
     setMessages([{ role: "coach", text: activeTurns[0].coach }]);
     setSessionId(null);
@@ -1449,8 +1349,6 @@ export function ConversationCoachPractice({
     setAnswer("");
     setFeedback(null);
     setCompletedTurns(0);
-    setRecordingStatus("idle");
-    setRecordingSeconds(0);
     setRecordingError("");
     removeSavedPractice(effectiveStorageKey);
 
@@ -1562,12 +1460,9 @@ export function ConversationCoachPractice({
               ) : (
                 <Mic className="h-4 w-4" aria-hidden="true" />
               )}
-              {isProcessingRecording
-                ? "Memproses"
-                : isRecording
-                  ? `Stop ${recordingSeconds}s`
-                  : "Rekam"}
+              {isProcessingRecording ? "Memproses" : isRecording ? "Stop" : "Rekam"}
             </button>
+            {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             <button
               type="button"
               onClick={handleUseSample}

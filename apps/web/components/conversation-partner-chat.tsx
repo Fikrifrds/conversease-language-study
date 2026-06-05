@@ -11,6 +11,8 @@ import {
   type PartnerSummary,
   type PartnerTopic
 } from "@/lib/conversation-partner-api";
+import { useVoiceRecorder } from "@/lib/use-voice-recorder";
+import { VoiceWaveform } from "@/components/voice-waveform";
 
 type ChatMessage = {
   role: "partner" | "user";
@@ -18,35 +20,22 @@ type ChatMessage = {
   audio?: string | null;
 };
 
-const maxRecordingSeconds = 30;
-const silenceMs = 1800; // hands-free: stop after this much silence following speech
-const speechRmsThreshold = 0.015; // RMS above this counts as speech (catches quieter voices)
-const minSpeechMs = 600; // require this much speech before silence can end the turn
-
-function preferredRecordingMimeType() {
-  if (typeof MediaRecorder === "undefined") {
-    return "";
-  }
-  const candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"];
-  return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) ?? "";
-}
-
 function turnErrorMessage(error: unknown) {
   if (error instanceof ApiRequestError) {
     if (error.status === 402) {
       return "Kuota Conversation Partner habis. Top-up atau upgrade untuk lanjut.";
     }
     if (error.status === 503) {
-      return "STT belum aktif. Pastikan ASSEMBLYAI_API_KEY terbaca di API.";
+      return "STT belum aktif. Pastikan kunci API STT terbaca di server.";
     }
     if (error.status === 504) {
-      return "Transkripsi terlalu lama. Coba rekam jawaban lebih pendek.";
+      return "Transkripsi terlalu lama. Coba bicara lebih singkat.";
     }
     if (error.status === 422) {
-      return "Audio belum bisa ditranskrip. Coba rekam ulang dengan suara lebih jelas.";
+      return "Audio belum bisa ditranskrip. Coba bicara lebih jelas.";
     }
   }
-  return "Terjadi kendala. Coba rekam ulang.";
+  return "Terjadi kendala. Coba lagi.";
 }
 
 export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
@@ -57,49 +46,38 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [ended, setEnded] = useState(false);
   const [summary, setSummary] = useState<PartnerSummary | null>(null);
   const [isBusy, setIsBusy] = useState(false);
-  const [recordingStatus, setRecordingStatus] = useState<"idle" | "recording" | "processing">("idle");
-  const [recordingSeconds, setRecordingSeconds] = useState(0);
   const [error, setError] = useState("");
   const [offTopicNote, setOffTopicNote] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
-  const [listening, setListening] = useState(false);
-  const [micLevel, setMicLevel] = useState(0);
 
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const recordingStreamRef = useRef<MediaStream | null>(null);
-  const recordedChunksRef = useRef<BlobPart[]>([]);
-  const discardRef = useRef(false);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const handsFreeRef = useRef(false);
   // Source of truth for the session id across async callbacks (state updates are
-  // async, so reading `sessionId` from a closure can be stale and accidentally
-  // create a new session each turn, losing conversation memory).
+  // async, so reading from a closure can be stale and accidentally create a new
+  // session each turn, losing conversation memory).
   const sessionIdRef = useRef<string | null>(null);
-  const audioContextRef = useRef<AudioContext | null>(null);
-  const vadRafRef = useRef<number | null>(null);
-  const speechStartedAtRef = useRef<number | null>(null);
-  const lastSpeechAtRef = useRef<number>(0);
 
-  const isRecording = recordingStatus === "recording";
-  const isProcessing = recordingStatus === "processing";
+  const recorder = useVoiceRecorder({
+    onResult: (blob) => submitRecording(blob),
+    onError: (message) => {
+      setError(message);
+      handsFreeRef.current = false;
+      setHandsFree(false);
+    },
+    maxSeconds: 30,
+    autoStopOnSilence: true
+  });
+
+  const isRecording = recorder.status === "recording";
+  const isProcessing = recorder.status === "processing";
   const progressPercent = Math.min(100, Math.round((completedTurns / topic.maxTurns) * 100));
 
   useEffect(() => {
     return () => {
       handsFreeRef.current = false;
-      stopVad();
-      clearTimers();
-      stopStream();
       audioRef.current?.pause();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  function setActiveSession(id: string) {
-    sessionIdRef.current = id;
-  }
 
   function playAudio(dataUrl: string | null | undefined, onEnded?: () => void) {
     if (!dataUrl) {
@@ -118,174 +96,8 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     });
   }
 
-  function stopVad() {
-    if (vadRafRef.current !== null) {
-      cancelAnimationFrame(vadRafRef.current);
-      vadRafRef.current = null;
-    }
-    if (audioContextRef.current) {
-      void audioContextRef.current.close().catch(() => undefined);
-      audioContextRef.current = null;
-    }
-    speechStartedAtRef.current = null;
-    setMicLevel(0);
-  }
-
-  function startVad(stream: MediaStream) {
-    const AudioCtx =
-      window.AudioContext ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
-    if (!AudioCtx) {
-      return; // VAD unavailable; recording still works via manual stop / max timeout
-    }
-    const context = new AudioCtx();
-    audioContextRef.current = context;
-    const source = context.createMediaStreamSource(stream);
-    const analyser = context.createAnalyser();
-    analyser.fftSize = 1024;
-    source.connect(analyser);
-    const data = new Uint8Array(analyser.fftSize);
-    speechStartedAtRef.current = null;
-
-    const tick = () => {
-      if (!handsFreeRef.current || !audioContextRef.current) {
-        return;
-      }
-      analyser.getByteTimeDomainData(data);
-      let sumSquares = 0;
-      for (let i = 0; i < data.length; i += 1) {
-        const value = (data[i] - 128) / 128;
-        sumSquares += value * value;
-      }
-      const rms = Math.sqrt(sumSquares / data.length);
-      const now = performance.now();
-
-      // Drive the live waveform (normalize ~0.3 RMS to full height).
-      setMicLevel(Math.min(1, rms / 0.3));
-
-      if (rms > speechRmsThreshold) {
-        if (speechStartedAtRef.current === null) {
-          speechStartedAtRef.current = now;
-        }
-        lastSpeechAtRef.current = now;
-      } else if (
-        speechStartedAtRef.current !== null &&
-        now - speechStartedAtRef.current > minSpeechMs &&
-        now - lastSpeechAtRef.current > silenceMs
-      ) {
-        // Speech happened, then enough silence -> end the turn.
-        stopVad();
-        stopRecording();
-        return;
-      }
-
-      vadRafRef.current = requestAnimationFrame(tick);
-    };
-
-    vadRafRef.current = requestAnimationFrame(tick);
-  }
-
-  function clearTimers() {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-  }
-
-  function stopStream() {
-    recordingStreamRef.current?.getTracks().forEach((track) => track.stop());
-    recordingStreamRef.current = null;
-  }
-
-  async function startRecording() {
-    if (ended || isBusy || isRecording || isProcessing) {
-      return;
-    }
-    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
-      setError("Browser belum mendukung rekam audio.");
-      return;
-    }
-
-    setError("");
-    setOffTopicNote(false);
-    setRecordingSeconds(0);
-    discardRef.current = false;
-
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mimeType = preferredRecordingMimeType();
-      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-      recordedChunksRef.current = [];
-      recordingStreamRef.current = stream;
-      mediaRecorderRef.current = recorder;
-
-      if (handsFreeRef.current) {
-        lastSpeechAtRef.current = performance.now();
-        startVad(stream);
-      }
-
-      recorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          recordedChunksRef.current.push(event.data);
-        }
-      };
-
-      recorder.onstop = () => {
-        stopVad();
-        clearTimers();
-        stopStream();
-        setListening(false);
-        if (discardRef.current) {
-          recordedChunksRef.current = [];
-          mediaRecorderRef.current = null;
-          discardRef.current = false;
-          setRecordingStatus("idle");
-          return;
-        }
-        const blob = new Blob(recordedChunksRef.current, {
-          type: recorder.mimeType || mimeType || "audio/webm"
-        });
-        recordedChunksRef.current = [];
-        mediaRecorderRef.current = null;
-        void submitRecording(blob);
-      };
-
-      recorder.start();
-      setRecordingStatus("recording");
-      setListening(true);
-      intervalRef.current = setInterval(() => {
-        setRecordingSeconds((current) => Math.min(current + 1, maxRecordingSeconds));
-      }, 1000);
-      timeoutRef.current = setTimeout(() => stopRecording(), maxRecordingSeconds * 1000);
-    } catch {
-      stopVad();
-      clearTimers();
-      stopStream();
-      mediaRecorderRef.current = null;
-      setRecordingStatus("idle");
-      setListening(false);
-      handsFreeRef.current = false;
-      setHandsFree(false);
-      setError("Mic belum bisa diakses. Cek izin microphone browser.");
-    }
-  }
-
-  function stopRecording() {
-    const recorder = mediaRecorderRef.current;
-    if (!recorder || recorder.state === "inactive") {
-      return;
-    }
-    setRecordingStatus("processing");
-    clearTimers();
-    recorder.stop();
-  }
-
   async function submitRecording(blob: Blob) {
     if (!blob.size) {
-      setRecordingStatus("idle");
       setError("Audio belum terekam. Coba ulangi.");
       return;
     }
@@ -298,10 +110,9 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       if (!activeSessionId) {
         const session = await createPartnerSession(topic.key);
         activeSessionId = session.sessionId;
-        setActiveSession(session.sessionId);
-        // Note: the opening line is already shown (and was spoken) up front, so we
-        // do NOT replay session.openingAudio here — doing so overlaps the upcoming
-        // partner reply and sounds like the conversation jumps back to the start.
+        sessionIdRef.current = session.sessionId;
+        // The opening line is already shown/spoken up front, so we do NOT replay
+        // session.openingAudio here — it would overlap the upcoming reply.
       }
 
       const result = await submitPartnerAudioTurn(activeSessionId, blob);
@@ -320,28 +131,26 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         setEnded(true);
         void loadSummary(activeSessionId);
       } else {
-        // In hands-free mode, listen again once the AI finishes speaking.
+        // Hands-free: listen again once the AI finishes speaking.
         playAudio(result.partnerAudio, () => {
           if (handsFreeRef.current) {
-            void startRecording();
+            void recorder.start();
           }
         });
       }
     } catch (caught) {
       setError(turnErrorMessage(caught));
-      // A transcription miss (e.g. too quiet / too short) is recoverable: keep
+      // A transcription miss (too quiet / too short) is recoverable: keep
       // hands-free on and listen again instead of ending the conversation.
       const recoverable = caught instanceof ApiRequestError && caught.status === 422;
       if (recoverable && handsFreeRef.current) {
-        setRecordingStatus("idle");
         setIsBusy(false);
-        void startRecording();
+        void recorder.start();
         return;
       }
       handsFreeRef.current = false;
       setHandsFree(false);
     } finally {
-      setRecordingStatus("idle");
       setIsBusy(false);
     }
   }
@@ -357,11 +166,11 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     try {
       if (!sessionIdRef.current) {
         const session = await createPartnerSession(topic.key);
-        setActiveSession(session.sessionId);
+        sessionIdRef.current = session.sessionId;
         if (session.openingAudio) {
           playAudio(session.openingAudio, () => {
             if (handsFreeRef.current) {
-              void startRecording();
+              void recorder.start();
             }
           });
           return;
@@ -373,16 +182,13 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       setHandsFree(false);
       return;
     }
-    void startRecording();
+    void recorder.start();
   }
 
   function stopHandsFree() {
     handsFreeRef.current = false;
     setHandsFree(false);
-    if (isRecording) {
-      discardRef.current = true;
-      stopRecording();
-    }
+    recorder.cancel();
   }
 
   async function loadSummary(activeSessionId: string) {
@@ -483,8 +289,8 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
               <span className="inline-flex items-center gap-3 text-sm font-medium text-ink/70">
                 {isBusy || isProcessing ? (
                   <>Memproses…</>
-                ) : listening ? (
-                  <Waveform level={micLevel} />
+                ) : isRecording ? (
+                  <VoiceWaveform level={recorder.micLevel} />
                 ) : (
                   <>Menunggu AI…</>
                 )}
@@ -503,7 +309,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
               </button>
               <button
                 type="button"
-                onClick={isRecording ? stopRecording : startRecording}
+                onClick={isRecording ? recorder.stop : recorder.start}
                 disabled={ended || isBusy || isProcessing}
                 className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
                   isRecording ? "border-coral bg-coral text-white hover:bg-ink" : "border-ink/15 hover:bg-mint"
@@ -519,9 +325,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                   : isBusy
                     ? "Mengirim"
                     : isRecording
-                      ? `Stop ${recordingSeconds}s`
+                      ? "Stop"
                       : "Rekam manual"}
               </button>
+              {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             </div>
           )}
           {!handsFree ? (
@@ -584,27 +391,5 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         </section>
       </aside>
     </div>
-  );
-}
-
-const waveformBars = [0.35, 0.6, 0.85, 1, 0.85, 0.6, 0.35];
-
-function Waveform({ level }: { level: number }) {
-  return (
-    <span className="inline-flex items-center gap-2 text-leaf">
-      <span className="inline-flex h-6 items-center gap-[3px]" aria-hidden="true">
-        {waveformBars.map((weight, index) => {
-          const height = 4 + Math.round(level * weight * 20);
-          return (
-            <span
-              key={index}
-              className="w-[3px] rounded-full bg-leaf transition-[height] duration-75"
-              style={{ height: `${height}px` }}
-            />
-          );
-        })}
-      </span>
-      <span className="font-medium text-ink/70">Mendengarkan…</span>
-    </span>
   );
 }

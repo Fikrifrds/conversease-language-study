@@ -3,23 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 import { CheckCircle2, Mic, Play, Square } from "lucide-react";
 import { ApiRequestError, checkPronunciation, type PronunciationCheckResult } from "@/lib/conversation-api";
+import { useVoiceRecorder } from "@/lib/use-voice-recorder";
+import { VoiceWaveform } from "@/components/voice-waveform";
 
 type SpeakClearlyPracticeProps = {
   prompts: string[];
 };
 
-type RecorderState = "idle" | "recording" | "processing" | "ready";
-
 const maxRecordingSeconds = 15;
-
-function preferredRecordingMimeType() {
-  if (typeof MediaRecorder === "undefined") {
-    return "";
-  }
-
-  const candidates = ["audio/webm;codecs=opus", "audio/webm", "audio/mp4", "audio/ogg;codecs=opus"];
-  return candidates.find((candidate) => MediaRecorder.isTypeSupported(candidate)) ?? "";
-}
 
 // Lesson prompts are instructions like `Say: Good morning. How are you?`.
 // The phrase the learner should actually speak is the part after the first colon.
@@ -32,7 +23,7 @@ function targetPhraseFromPrompt(prompt: string) {
 function checkErrorMessage(error: unknown) {
   if (error instanceof ApiRequestError) {
     if (error.status === 503) {
-      return "STT belum aktif di server. Hubungi admin untuk mengaktifkan AssemblyAI.";
+      return "STT belum aktif di server. Hubungi admin untuk mengaktifkan transkripsi.";
     }
     if (error.status === 504) {
       return "Transkripsi terlalu lama. Coba rekam ulang yang lebih pendek.";
@@ -55,34 +46,19 @@ export function SpeakClearlyPractice({ prompts }: SpeakClearlyPracticeProps) {
 }
 
 function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) {
-  const [state, setState] = useState<RecorderState>("idle");
-  const [seconds, setSeconds] = useState(0);
+  const [isReady, setIsReady] = useState(false);
   const [error, setError] = useState("");
   const [recordingUrl, setRecordingUrl] = useState<string | null>(null);
   const [result, setResult] = useState<PronunciationCheckResult | null>(null);
 
-  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
-  const streamRef = useRef<MediaStream | null>(null);
-  const chunksRef = useRef<BlobPart[]>([]);
-  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const recordingUrlRef = useRef<string | null>(null);
 
-  function clearTimers() {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-      timeoutRef.current = null;
-    }
-  }
-
-  function stopStream() {
-    streamRef.current?.getTracks().forEach((track) => track.stop());
-    streamRef.current = null;
-  }
+  const recorder = useVoiceRecorder({
+    onResult: (blob) => submitForCheck(blob),
+    onError: (message) => setError(message),
+    maxSeconds: maxRecordingSeconds,
+    autoStopOnSilence: true
+  });
 
   function setRecording(url: string | null) {
     if (recordingUrlRef.current) {
@@ -94,93 +70,41 @@ function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) 
 
   useEffect(() => {
     return () => {
-      clearTimers();
-      stopStream();
       if (recordingUrlRef.current) {
         URL.revokeObjectURL(recordingUrlRef.current);
       }
     };
   }, []);
 
-  async function startRecording() {
-    if (state === "recording" || state === "processing") {
+  function startRecording() {
+    if (recorder.status !== "idle") {
       return;
     }
-
-    if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
-      setError("Browser belum mendukung rekam audio.");
-      return;
-    }
-
     setError("");
     setResult(null);
-    setSeconds(0);
     setRecording(null);
-
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mimeType = preferredRecordingMimeType();
-      const recorder = new MediaRecorder(stream, mimeType ? { mimeType } : undefined);
-      chunksRef.current = [];
-      streamRef.current = stream;
-      mediaRecorderRef.current = recorder;
-
-      recorder.ondataavailable = (event) => {
-        if (event.data.size > 0) {
-          chunksRef.current.push(event.data);
-        }
-      };
-
-      recorder.onstop = () => {
-        clearTimers();
-        stopStream();
-        const blob = new Blob(chunksRef.current, { type: recorder.mimeType || mimeType || "audio/webm" });
-        chunksRef.current = [];
-        mediaRecorderRef.current = null;
-
-        if (blob.size > 0) {
-          setRecording(URL.createObjectURL(blob));
-          void submitForCheck(blob);
-        } else {
-          setState("idle");
-        }
-      };
-
-      recorder.start();
-      setState("recording");
-      intervalRef.current = setInterval(() => {
-        setSeconds((current) => Math.min(current + 1, maxRecordingSeconds));
-      }, 1000);
-      timeoutRef.current = setTimeout(() => stopRecording(), maxRecordingSeconds * 1000);
-    } catch {
-      clearTimers();
-      stopStream();
-      mediaRecorderRef.current = null;
-      setState("idle");
-      setError("Mic belum bisa diakses. Cek izin microphone browser.");
-    }
+    void recorder.start();
   }
 
   function stopRecording() {
-    const recorder = mediaRecorderRef.current;
-    if (!recorder || recorder.state === "inactive") {
-      return;
-    }
-    setState("processing");
     recorder.stop();
   }
 
   async function submitForCheck(blob: Blob) {
-    setState("processing");
+    if (!blob.size) {
+      setError("Audio belum terekam. Coba ulangi.");
+      return;
+    }
+    setRecording(URL.createObjectURL(blob));
     setError("");
 
     try {
       const checkResult = await checkPronunciation(target, blob);
       setResult(checkResult);
-      setState("ready");
+      setIsReady(true);
     } catch (caught) {
       setError(checkErrorMessage(caught));
-      setState("ready");
+      setIsReady(true);
     }
   }
 
@@ -190,8 +114,8 @@ function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) 
     }
   }
 
-  const isRecording = state === "recording";
-  const isProcessing = state === "processing";
+  const isRecording = recorder.status === "recording";
+  const isProcessing = recorder.status === "processing";
   const matchPercent = result ? Math.round(result.matchRatio * 100) : 0;
   const matchTone = matchPercent >= 80 ? "text-leaf" : matchPercent >= 50 ? "text-coral" : "text-ink/60";
 
@@ -209,8 +133,9 @@ function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) 
           aria-label={isRecording ? "Stop recording" : "Record"}
         >
           {isRecording ? <Square className="h-4 w-4" aria-hidden="true" /> : <Mic className="h-4 w-4" aria-hidden="true" />}
-          {isProcessing ? "Mengecek" : isRecording ? `Stop ${seconds}s` : state === "ready" ? "Rekam Ulang" : "Rekam"}
+          {isProcessing ? "Mengecek" : isRecording ? "Stop" : isReady ? "Rekam Ulang" : "Rekam"}
         </button>
+        {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
         {recordingUrl && !isRecording && !isProcessing ? (
           <button
             type="button"
