@@ -1,5 +1,9 @@
 # Content Operations Guide
 
+> **Start at [content_authoring_guide.md](content_authoring_guide.md).** That is
+> the single entry point for content work; this file is the detailed reference it
+> links to.
+
 Panduan ini adalah source of truth untuk produksi kurikulum Conversease, baik
 content dibuat langsung di repo, di remote server, atau di tempat lain dengan
 model seperti Claude Opus 4.8.
@@ -253,23 +257,10 @@ CURATED_MINIMAX_VOICE_IDS = (
 )
 ```
 
-Registry utama:
-
-```python
-DIALOGUE_PERSONA_VOICES = {
-    "alya": "English_radiant_girl",
-    "adi": "English_Diligent_Man",
-    "arif": "English_Trustworth_Man",
-    "ben": "English_Gentle-voiced_man",
-    "dimas": "English_Diligent_Man",
-    "lina": "English_Upbeat_Woman",
-    "mina": "English_Upbeat_Woman",
-    "omar": "English_Trustworth_Man",
-    "raka": "English_Gentle-voiced_man",
-    "sara": "English_CalmWoman",
-    "officer": "English_CalmWoman",
-}
-```
+Registry utama adalah **`DIALOGUE_PERSONA_VOICES`** di
+`apps/api/app/services/audio_generation.py`. **Kode adalah source of truth** —
+jangan menyalin daftarnya ke sini (mudah usang). Buka file itu untuk daftar
+nama → voice terkini (mis. `ben`, `mina`, `sara`, `officer`, `staff`, dst).
 
 Rules:
 
