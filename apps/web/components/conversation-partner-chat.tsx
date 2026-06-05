@@ -19,9 +19,9 @@ type ChatMessage = {
 };
 
 const maxRecordingSeconds = 30;
-const silenceMs = 1500; // hands-free: stop after this much silence following speech
-const speechRmsThreshold = 0.02; // RMS above this counts as speech
-const minSpeechMs = 400; // require some speech before silence can end the turn
+const silenceMs = 1800; // hands-free: stop after this much silence following speech
+const speechRmsThreshold = 0.015; // RMS above this counts as speech (catches quieter voices)
+const minSpeechMs = 600; // require this much speech before silence can end the turn
 
 function preferredRecordingMimeType() {
   if (typeof MediaRecorder === "undefined") {
@@ -292,9 +292,9 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         const session = await createPartnerSession(topic.key);
         activeSessionId = session.sessionId;
         setSessionId(session.sessionId);
-        if (session.openingAudio) {
-          playAudio(session.openingAudio);
-        }
+        // Note: the opening line is already shown (and was spoken) up front, so we
+        // do NOT replay session.openingAudio here — doing so overlaps the upcoming
+        // partner reply and sounds like the conversation jumps back to the start.
       }
 
       const result = await submitPartnerAudioTurn(activeSessionId, blob);
@@ -322,6 +322,15 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       }
     } catch (caught) {
       setError(turnErrorMessage(caught));
+      // A transcription miss (e.g. too quiet / too short) is recoverable: keep
+      // hands-free on and listen again instead of ending the conversation.
+      const recoverable = caught instanceof ApiRequestError && caught.status === 422;
+      if (recoverable && handsFreeRef.current) {
+        setRecordingStatus("idle");
+        setIsBusy(false);
+        void startRecording();
+        return;
+      }
       handsFreeRef.current = false;
       setHandsFree(false);
     } finally {
@@ -330,12 +339,33 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     }
   }
 
-  function startHandsFree() {
+  async function startHandsFree() {
     if (ended || isBusy) {
       return;
     }
     handsFreeRef.current = true;
     setHandsFree(true);
+    // Create the session up front so we can speak the opening line once, then
+    // start listening. This avoids replaying the opening on later turns.
+    try {
+      if (!sessionId) {
+        const session = await createPartnerSession(topic.key);
+        setSessionId(session.sessionId);
+        if (session.openingAudio) {
+          playAudio(session.openingAudio, () => {
+            if (handsFreeRef.current) {
+              void startRecording();
+            }
+          });
+          return;
+        }
+      }
+    } catch (caught) {
+      setError(turnErrorMessage(caught));
+      handsFreeRef.current = false;
+      setHandsFree(false);
+      return;
+    }
     void startRecording();
   }
 
