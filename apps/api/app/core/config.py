@@ -60,6 +60,11 @@ class Settings(BaseSettings):
     together_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_partner_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_timeout_seconds: int = 30
+    stt_provider: str = "whisper_together"
+    whisper_model: str = "openai/whisper-large-v3"
+    whisper_language: str = "en"
+    whisper_timeout_seconds: int = 60
+    whisper_max_audio_bytes: int = 15 * 1024 * 1024
     assemblyai_api_key: str = ""
     assemblyai_api_base_url: str = "https://api.assemblyai.com"
     assemblyai_speech_models_raw: str = "universal-3-pro,universal-2"

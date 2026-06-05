@@ -26,6 +26,85 @@ async def transcribe_recorded_audio(
     filename: str,
     content_type: Optional[str],
 ) -> SpeechToTextResult:
+    """Transcribe recorded audio using the configured STT provider.
+
+    Defaults to Whisper large-v3 via Together (single request, lower latency).
+    Set STT_PROVIDER=assemblyai to use the legacy upload+poll path.
+    """
+    if settings.stt_provider == "assemblyai":
+        return await transcribe_with_assemblyai(
+            audio_bytes=audio_bytes, filename=filename, content_type=content_type
+        )
+    return await transcribe_with_whisper(
+        audio_bytes=audio_bytes, filename=filename, content_type=content_type
+    )
+
+
+async def transcribe_with_whisper(
+    *,
+    audio_bytes: bytes,
+    filename: str,
+    content_type: Optional[str],
+) -> SpeechToTextResult:
+    if not settings.together_api_key:
+        raise SpeechToTextError("together_api_key_missing")
+
+    if not audio_bytes:
+        raise SpeechToTextError("audio_file_empty")
+
+    if len(audio_bytes) > settings.whisper_max_audio_bytes:
+        raise SpeechToTextError("audio_file_too_large")
+
+    base_url = settings.together_api_base_url.rstrip("/")
+    data = {"model": settings.whisper_model}
+    if settings.whisper_language:
+        data["language"] = settings.whisper_language
+
+    try:
+        async with httpx.AsyncClient(timeout=settings.whisper_timeout_seconds) as client:
+            response = await client.post(
+                f"{base_url}/v1/audio/transcriptions",
+                headers={"Authorization": f"Bearer {settings.together_api_key}"},
+                files={"file": (filename, audio_bytes, content_type or "audio/webm")},
+                data=data,
+            )
+            response.raise_for_status()
+            body = response.json()
+    except httpx.TimeoutException as exc:
+        raise SpeechToTextError("whisper_timeout") from exc
+    except httpx.HTTPError as exc:
+        raise SpeechToTextError("whisper_request_failed") from exc
+    except ValueError as exc:
+        raise SpeechToTextError("whisper_response_invalid_json") from exc
+
+    text = str(body.get("text") or "").strip()
+    if not text:
+        raise SpeechToTextError("transcript_empty")
+
+    return SpeechToTextResult(
+        text=text,
+        transcription=TurnTranscription(
+            input_source="audio",
+            provider="whisper_together",
+            model=settings.whisper_model,
+            transcript_id="",
+            confidence=None,
+            audio_duration_seconds=None,
+            metadata={
+                "filename": filename,
+                "content_type": content_type or "",
+                "language": str(body.get("language") or settings.whisper_language or ""),
+            },
+        ),
+    )
+
+
+async def transcribe_with_assemblyai(
+    *,
+    audio_bytes: bytes,
+    filename: str,
+    content_type: Optional[str],
+) -> SpeechToTextResult:
     if not settings.assemblyai_api_key:
         raise SpeechToTextError("assemblyai_api_key_missing")
 
