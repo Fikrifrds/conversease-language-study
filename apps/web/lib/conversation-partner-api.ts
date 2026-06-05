@@ -7,7 +7,6 @@ export type PartnerTopic = {
   title: string;
   description: string;
   partnerRole: string;
-  partnerName: string;
   goals: string[];
   openingLine: string;
   maxTurns: number;
@@ -66,7 +65,6 @@ type ApiTopic = {
   title: string;
   description: string;
   partner_role: string;
-  partner_name: string;
   goals: string[];
   opening_line: string;
   max_turns: number;
@@ -79,7 +77,6 @@ function mapTopic(topic: ApiTopic): PartnerTopic {
     title: topic.title,
     description: topic.description,
     partnerRole: topic.partner_role,
-    partnerName: topic.partner_name,
     goals: topic.goals,
     openingLine: topic.opening_line,
     maxTurns: topic.max_turns

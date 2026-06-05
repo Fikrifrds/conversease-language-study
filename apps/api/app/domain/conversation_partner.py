@@ -11,7 +11,6 @@ class PartnerTopic:
     title: str
     description: str
     partner_role: str
-    partner_name: str
     goals: Tuple[str, ...]
     target_phrases: Tuple[str, ...]
     opening_line: str
@@ -55,7 +54,6 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
         title="Order a Drink",
         description="Pesan minuman di cafe, pilih ukuran, dan bayar.",
         partner_role="a friendly cafe barista",
-        partner_name="Mina",
         goals=(
             "greet the barista",
             "order a drink",
@@ -78,7 +76,6 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
         title="Meet a New Friend",
         description="Berkenalan: sapaan, nama, asal, dan tanya balik.",
         partner_role="a friendly classmate in an English class",
-        partner_name="Sara",
         goals=(
             "greet back",
             "say your name",
@@ -91,7 +88,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "nice to meet you",
             "how about you",
         ),
-        opening_line="Hi! Good morning. My name is Sara. What is your name?",
+        opening_line="Hi! Good morning. I am a new classmate here. What is your name?",
         max_turns=8,
     ),
     PartnerTopic(
@@ -100,7 +97,6 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
         title="Ask for Directions",
         description="Tanya lokasi tempat dan ikuti arahan sederhana.",
         partner_role="a helpful local person on the street",
-        partner_name="Ben",
         goals=(
             "ask where a place is",
             "understand a simple direction",
@@ -124,7 +120,6 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
         title="Talk About Your Day",
         description="Cerita rutinitas harian sederhana dan waktunya.",
         partner_role="a friendly coworker chatting during a break",
-        partner_name="Lina",
         goals=(
             "say one morning activity",
             "say a time",
@@ -167,7 +162,6 @@ def topic_payload(topic: PartnerTopic) -> Dict[str, object]:
         "title": topic.title,
         "description": topic.description,
         "partner_role": topic.partner_role,
-        "partner_name": topic.partner_name,
         "goals": list(topic.goals),
         "opening_line": topic.opening_line,
         "max_turns": topic.max_turns,

@@ -1,5 +1,3 @@
-from typing import Optional
-
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
@@ -19,10 +17,7 @@ from app.domain.conversation_partner import (
 from app.domain.users import User
 from app.repositories.billing import BillingRepository, InsufficientMinutesError
 from app.repositories.conversation_partner import ConversationPartnerRepository
-from app.services.audio_generation import (
-    DIALOGUE_PERSONA_VOICES,
-    synthesize_partner_reply_audio,
-)
+from app.services.audio_generation import synthesize_partner_reply_audio
 from app.services.conversation_partner_chat import (
     generate_partner_reply,
     summarize_session,
@@ -69,10 +64,7 @@ async def create_partner_session(
         language_code=payload.language_code,
     )
 
-    opening_audio = await synthesize_partner_reply_audio(
-        text=topic.opening_line,
-        voice_id=partner_voice_id(topic.partner_name),
-    )
+    opening_audio = await synthesize_partner_reply_audio(text=topic.opening_line)
 
     return {
         "data": {
@@ -139,10 +131,7 @@ async def create_partner_audio_turn(
         completed_turns=completed_turns,
     )
 
-    reply_audio = await synthesize_partner_reply_audio(
-        text=reply.reply,
-        voice_id=partner_voice_id(topic.partner_name),
-    )
+    reply_audio = await synthesize_partner_reply_audio(text=reply.reply)
 
     turn = repository.add_turn(
         session=session,
@@ -204,7 +193,3 @@ async def get_partner_summary(
             "completed_turns": repository.completed_turns(session),
         }
     }
-
-
-def partner_voice_id(partner_name: str) -> Optional[str]:
-    return DIALOGUE_PERSONA_VOICES.get(partner_name.strip().lower())

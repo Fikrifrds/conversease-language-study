@@ -239,7 +239,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">{topic.title}</p>
-              <h2 className="mt-2 text-2xl font-semibold">Ngobrol dengan {topic.partnerName}</h2>
+              <h2 className="mt-2 text-2xl font-semibold">Ngobrol dengan AI</h2>
               <p className="mt-2 text-sm leading-6 text-ink/70">{topic.description}</p>
               {offTopicNote && !ended ? (
                 <p className="mt-3 inline-flex rounded-lg bg-[#fff2dc] px-3 py-2 text-xs font-semibold text-ink/70">
@@ -375,8 +375,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
 
         <section className="rounded-lg bg-ink p-5 text-white">
           <p className="text-sm text-white/70">Partner</p>
-          <p className="mt-2 text-2xl font-semibold">{topic.partnerName}</p>
-          <p className="mt-2 text-sm leading-6 text-white/70">{topic.partnerRole}.</p>
+          <p className="mt-2 text-2xl font-semibold">AI Partner</p>
+          <p className="mt-2 text-sm leading-6 text-white/70">
+            AI yang berperan sebagai {topic.partnerRole}.
+          </p>
           <Link
             href="/progress"
             className="focus-ring mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-ink hover:bg-mint"
