@@ -197,17 +197,38 @@ Audio generation memakai persona registry di:
 apps/api/app/services/audio_generation.py
 ```
 
+Production voice list sengaja dibatasi ke curated set yang solid. Jangan expose semua
+voice MiniMax ke CMS/audio batch karena beberapa voice terlalu pelan, terlalu slow,
+atau gendernya mudah terasa salah.
+
+Curated voice set:
+
+```python
+CURATED_MINIMAX_VOICE_IDS = (
+    "English_expressive_narrator",
+    "English_Gentle-voiced_man",
+    "English_Trustworth_Man",
+    "English_Diligent_Man",
+    "English_radiant_girl",
+    "English_CalmWoman",
+    "English_Upbeat_Woman",
+)
+```
+
 Registry utama:
 
 ```python
 DIALOGUE_PERSONA_VOICES = {
     "alya": "English_radiant_girl",
+    "adi": "English_Diligent_Man",
+    "arif": "English_Trustworth_Man",
     "ben": "English_Gentle-voiced_man",
-    "john": "English_Trustworth_Man",
-    "sara": "English_Graceful_Lady",
-    "mina": "English_compelling_lady1",
-    "david": "English_Diligent_Man",
     "dimas": "English_Diligent_Man",
+    "lina": "English_Upbeat_Woman",
+    "mina": "English_Upbeat_Woman",
+    "omar": "English_Trustworth_Man",
+    "raka": "English_Gentle-voiced_man",
+    "sara": "English_CalmWoman",
     "officer": "English_CalmWoman",
 }
 ```
@@ -217,6 +238,7 @@ Rules:
 - Jika karakter sudah ada, pakai nama/persona yang sama agar suaranya konsisten.
 - Jika karakter baru muncul berulang, tambahkan ke registry.
 - Nama harus mewakili gender yang diinginkan dan cocok dengan konteks.
+- Male/female wajib sesuai nama. Jangan biarkan nama Indonesia jatuh ke hash otomatis.
 - Untuk role umum seperti `Officer`, `Teacher`, `Cashier`, tentukan voice eksplisit kalau dipakai berulang.
 - Jangan biarkan karakter penting jatuh ke fallback hash kalau gender/suara harus spesifik.
 - Audio direction di `listening_script.md` harus cocok dengan persona, misalnya `Voices: one female officer, one male learner`.

@@ -8,9 +8,12 @@ from unittest.mock import patch
 
 from app.data.curriculum import curriculum_root
 from app.services.audio_generation import (
+    CURATED_MINIMAX_VOICE_IDS,
+    FALLBACK_MINIMAX_VOICES,
     MiniMaxAudioResult,
     assign_dialogue_voices,
     concatenate_wav_audio,
+    filter_voice_options,
     infer_speaker_gender,
     infer_voice_gender,
     listening_script_to_dialogue_turns,
@@ -183,6 +186,27 @@ class AudioGenerationTest(unittest.TestCase):
                 raw_gender="female",
             ),
             "female",
+        )
+
+    def test_voice_options_are_limited_to_curated_solid_set(self):
+        noisy_minimax_result = [
+            {"voice_id": "English_SlowQuietVoice", "voice_name": "Slow Quiet Voice", "category": "system"},
+            {"voice_id": "custom_loud_but_unreviewed", "voice_name": "Custom Voice", "category": "voice_cloning"},
+            {"voice_id": "English_Gentle-voiced_man", "voice_name": "Gentle-voiced Man", "category": "system"},
+            {"voice_id": "English_CalmWoman", "voice_name": "Calm Woman", "category": "system"},
+        ]
+
+        voices = filter_voice_options(noisy_minimax_result, language="English")
+
+        self.assertEqual([voice["voice_id"] for voice in voices], list(CURATED_MINIMAX_VOICE_IDS))
+        self.assertTrue(all(voice["category"] == "curated" for voice in voices))
+        self.assertNotIn("English_SlowQuietVoice", {voice["voice_id"] for voice in voices})
+        self.assertNotIn("custom_loud_but_unreviewed", {voice["voice_id"] for voice in voices})
+
+    def test_fallback_voices_match_curated_solid_set(self):
+        self.assertEqual(
+            [voice["voice_id"] for voice in FALLBACK_MINIMAX_VOICES],
+            list(CURATED_MINIMAX_VOICE_IDS),
         )
 
     def test_concatenate_wav_audio_combines_chunks_with_pause(self):

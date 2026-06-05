@@ -44,6 +44,48 @@ CLEAR_MALE_DIALOGUE_VOICES = (
 )
 
 DIALOGUE_TARGET_PEAK_RATIO = 0.82
+CURATED_MINIMAX_VOICE_IDS = (
+    "English_expressive_narrator",
+    *CLEAR_MALE_DIALOGUE_VOICES,
+    *CLEAR_FEMALE_DIALOGUE_VOICES,
+)
+CURATED_MINIMAX_VOICE_METADATA = {
+    "English_expressive_narrator": {
+        "voice_name": "Expressive Narrator",
+        "gender": "neutral",
+        "description": "Clear narrator voice for single-speaker lesson audio.",
+    },
+    "English_Gentle-voiced_man": {
+        "voice_name": "Gentle-voiced Man",
+        "gender": "male",
+        "description": "Solid male voice for calm beginner dialogue.",
+    },
+    "English_Trustworth_Man": {
+        "voice_name": "Trustworthy Man",
+        "gender": "male",
+        "description": "Solid male voice for steady instructional dialogue.",
+    },
+    "English_Diligent_Man": {
+        "voice_name": "Diligent Man",
+        "gender": "male",
+        "description": "Solid male voice for clear learner or staff dialogue.",
+    },
+    "English_radiant_girl": {
+        "voice_name": "Radiant Girl",
+        "gender": "female",
+        "description": "Solid female voice for friendly beginner dialogue.",
+    },
+    "English_CalmWoman": {
+        "voice_name": "Calm Woman",
+        "gender": "female",
+        "description": "Solid female voice for teacher, helper, and examiner dialogue.",
+    },
+    "English_Upbeat_Woman": {
+        "voice_name": "Upbeat Woman",
+        "gender": "female",
+        "description": "Solid female voice for light social dialogue.",
+    },
+}
 
 DIALOGUE_PERSONA_VOICES = {
     "alya": "English_radiant_girl",
@@ -66,49 +108,15 @@ DIALOGUE_PERSONA_VOICES = {
     "sara": "English_CalmWoman",
 }
 
-FALLBACK_MINIMAX_VOICES = (
+FALLBACK_MINIMAX_VOICES = tuple(
     {
-        "voice_id": "English_expressive_narrator",
-        "voice_name": "Expressive Narrator",
-        "category": "system",
-        "gender": "neutral",
-        "description": "Clear narrator voice for lesson listening scripts.",
-    },
-    {
-        "voice_id": "English_Trustworth_Man",
-        "voice_name": "Trustworthy Man",
-        "category": "system",
-        "gender": "male",
-        "description": "Steady male voice for instructional dialogue.",
-    },
-    {
-        "voice_id": "English_CalmWoman",
-        "voice_name": "Calm Woman",
-        "category": "system",
-        "gender": "female",
-        "description": "Calm female voice for beginner listening practice.",
-    },
-    {
-        "voice_id": "English_magnetic_voiced_man",
-        "voice_name": "Magnetic-voiced Male",
-        "category": "system",
-        "gender": "male",
-        "description": "Confident male voice with good presence.",
-    },
-    {
-        "voice_id": "English_Upbeat_Woman",
-        "voice_name": "Upbeat Woman",
-        "category": "system",
-        "gender": "female",
-        "description": "Friendly female voice for light conversation.",
-    },
-    {
-        "voice_id": "English_FriendlyPerson",
-        "voice_name": "Friendly Guy",
-        "category": "system",
-        "gender": "male",
-        "description": "Warm, casual voice for social dialogue.",
-    },
+        "voice_id": voice_id,
+        "voice_name": metadata["voice_name"],
+        "category": "curated",
+        "gender": metadata["gender"],
+        "description": metadata["description"],
+    }
+    for voice_id, metadata in CURATED_MINIMAX_VOICE_METADATA.items()
 )
 
 
@@ -222,25 +230,24 @@ def flatten_minimax_voices(payload: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def filter_voice_options(voices: list[dict[str, Any]], *, language: str) -> list[dict[str, Any]]:
-    language_prefix = f"{language}_"
-    custom_categories = {"voice_cloning", "voice_generation"}
-    preferred = [
-        voice
-        for voice in voices
-        if str(voice.get("voice_id", "")).startswith(language_prefix)
-        or voice.get("category") in custom_categories
+    del language
+    by_id = {str(voice.get("voice_id") or ""): voice for voice in voices}
+    return [
+        curated_voice_option(voice_id, by_id.get(voice_id))
+        for voice_id in CURATED_MINIMAX_VOICE_IDS
     ]
 
-    default_voice_id = settings.minimax_tts_voice_id
-    if default_voice_id and all(voice.get("voice_id") != default_voice_id for voice in preferred):
-        matched_default = next(
-            (voice for voice in voices if voice.get("voice_id") == default_voice_id),
-            None,
-        )
-        if matched_default:
-            preferred.insert(0, matched_default)
 
-    return preferred
+def curated_voice_option(voice_id: str, source: Optional[dict[str, Any]] = None) -> dict[str, Any]:
+    metadata = CURATED_MINIMAX_VOICE_METADATA[voice_id]
+    source = source or {}
+    return {
+        "voice_id": voice_id,
+        "voice_name": str(source.get("voice_name") or metadata["voice_name"]),
+        "category": "curated",
+        "gender": metadata["gender"],
+        "description": str(source.get("description") or metadata["description"]),
+    }
 
 
 def readable_voice_name(voice_id: str) -> str:
