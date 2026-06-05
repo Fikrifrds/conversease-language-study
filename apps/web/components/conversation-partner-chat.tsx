@@ -64,6 +64,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [offTopicNote, setOffTopicNote] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
   const [listening, setListening] = useState(false);
+  const [micLevel, setMicLevel] = useState(0);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const recordingStreamRef = useRef<MediaStream | null>(null);
@@ -120,6 +121,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       audioContextRef.current = null;
     }
     speechStartedAtRef.current = null;
+    setMicLevel(0);
   }
 
   function startVad(stream: MediaStream) {
@@ -149,6 +151,9 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       }
       const rms = Math.sqrt(sumSquares / data.length);
       const now = performance.now();
+
+      // Drive the live waveform (normalize ~0.3 RMS to full height).
+      setMicLevel(Math.min(1, rms / 0.3));
 
       if (rms > speechRmsThreshold) {
         if (speechStartedAtRef.current === null) {
@@ -438,17 +443,11 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                 <MicOff className="h-4 w-4" aria-hidden="true" />
                 Stop Hands-free
               </button>
-              <span className="inline-flex items-center gap-2 text-sm font-medium text-ink/70">
+              <span className="inline-flex items-center gap-3 text-sm font-medium text-ink/70">
                 {isBusy || isProcessing ? (
                   <>Memproses…</>
                 ) : listening ? (
-                  <>
-                    <span className="relative flex h-2.5 w-2.5">
-                      <span className="absolute inline-flex h-2.5 w-2.5 animate-ping rounded-full bg-leaf/60" />
-                      <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-leaf" />
-                    </span>
-                    Mendengarkan… bicara lalu berhenti, AI akan otomatis menjawab.
-                  </>
+                  <Waveform level={micLevel} />
                 ) : (
                   <>Menunggu AI…</>
                 )}
@@ -548,5 +547,27 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         </section>
       </aside>
     </div>
+  );
+}
+
+const waveformBars = [0.35, 0.6, 0.85, 1, 0.85, 0.6, 0.35];
+
+function Waveform({ level }: { level: number }) {
+  return (
+    <span className="inline-flex items-center gap-2 text-leaf">
+      <span className="inline-flex h-6 items-center gap-[3px]" aria-hidden="true">
+        {waveformBars.map((weight, index) => {
+          const height = 4 + Math.round(level * weight * 20);
+          return (
+            <span
+              key={index}
+              className="w-[3px] rounded-full bg-leaf transition-[height] duration-75"
+              style={{ height: `${height}px` }}
+            />
+          );
+        })}
+      </span>
+      <span className="font-medium text-ink/70">Mendengarkan…</span>
+    </span>
   );
 }

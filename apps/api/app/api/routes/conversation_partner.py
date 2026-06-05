@@ -121,7 +121,7 @@ async def create_partner_audio_turn(
     except InsufficientMinutesError as exc:
         raise HTTPException(status_code=402, detail="Conversation Partner minutes are empty") from exc
 
-    history = repository.history(session)
+    history = repository.history(session, opening_line=topic.opening_line)
     completed_turns = repository.completed_turns(session)
     reply = await generate_partner_reply(
         topic=topic,
@@ -177,7 +177,7 @@ async def get_partner_summary(
     if topic is None:
         raise HTTPException(status_code=404, detail="partner_topic_not_found")
 
-    history = repository.history(session)
+    history = repository.history(session, opening_line=topic.opening_line)
     summary = await summarize_session(
         topic=topic,
         level_code=session.level_code,

@@ -37,6 +37,7 @@ class LLMProvider(ABC):
 
 
 DEFAULT_TOGETHER_CHAT_MODEL = settings.together_chat_model
+PARTNER_CHAT_MODEL = settings.together_partner_chat_model
 
 
 TASK_MODEL_CONFIGS = {
@@ -54,9 +55,9 @@ TASK_MODEL_CONFIGS = {
     ),
     "conversation_partner_reply": ModelConfig(
         provider="together",
-        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        model=PARTNER_CHAT_MODEL,
         temperature=0.6,
-        max_tokens=600,
+        max_tokens=1500,
     ),
     "conversation_partner_summary": ModelConfig(
         provider="together",

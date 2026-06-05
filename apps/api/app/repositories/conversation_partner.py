@@ -96,10 +96,17 @@ class ConversationPartnerRepository:
         self.db.commit()
         return turn
 
-    def history(self, session: ConversationSessionModel) -> List[Tuple[str, str]]:
-        """Ordered (role, text) pairs: partner opening is implicit in the prompt,
-        so we reconstruct from stored turns as user -> partner pairs."""
+    def history(
+        self,
+        session: ConversationSessionModel,
+        opening_line: str = "",
+    ) -> List[Tuple[str, str]]:
+        """Ordered (role, text) pairs, starting with the partner's opening line so
+        the conversation the LLM sees always begins with the partner turn, then
+        alternates user -> partner for each completed turn."""
         pairs: List[Tuple[str, str]] = []
+        if opening_line:
+            pairs.append(("partner", opening_line))
         for turn in sorted(session.turns, key=lambda t: t.turn_index):
             pairs.append(("user", turn.user_transcript))
             if turn.coach_reply:
