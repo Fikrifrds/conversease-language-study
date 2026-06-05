@@ -54,6 +54,18 @@ caveat are in the "Format `listening_script.md`" section of
 [content_operations.md](content_operations.md). Keep the first lesson of a level
 (absolute beginners) clean — no interjections.
 
+> **⚠️ The dialogue lives in TWO places — keep them in sync.**
+> The same dialogue is duplicated in:
+> 1. `listening_script.md` — the **audio** source (may contain interjection/pause
+>    tags).
+> 2. `apps/web/lib/data.ts` (`lesson.dialogue` + parallel `lesson.translation`) —
+>    what the **lesson page renders** to the learner.
+>
+> If you change the dialogue text, update BOTH. In `data.ts` use the **clean**
+> text (NO `(chuckle)` / `<#0.9#>` tags — those are audio-only) and keep
+> `dialogue` and `translation` the same length and aligned. Forgetting this makes
+> the page show old text while the audio says something else.
+
 ## 4. Voices / personas (so audio sounds consistent)
 
 The voice registry is **code, and code is the source of truth**:
