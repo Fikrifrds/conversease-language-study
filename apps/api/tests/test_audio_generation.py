@@ -2,13 +2,16 @@ import io
 import tempfile
 import unittest
 import wave
+from array import array
 from pathlib import Path
 from unittest.mock import patch
 
+from app.data.curriculum import curriculum_root
 from app.services.audio_generation import (
     MiniMaxAudioResult,
     assign_dialogue_voices,
     concatenate_wav_audio,
+    infer_speaker_gender,
     infer_voice_gender,
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
@@ -62,7 +65,7 @@ class AudioGenerationTest(unittest.TestCase):
 
         self.assertEqual(voices["Alya"], "English_radiant_girl")
         self.assertEqual(voices["Sara"], "English_CalmWoman")
-        self.assertEqual(voices["Mina"], "English_compelling_lady1")
+        self.assertEqual(voices["Mina"], "English_Upbeat_Woman")
         self.assertEqual(voices["Ben"], "English_Gentle-voiced_man")
         self.assertEqual(voices["John"], "English_Trustworth_Man")
         self.assertEqual(voices["David"], "English_Diligent_Man")
@@ -141,6 +144,22 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Raka"], "English_Gentle-voiced_man")
         self.assertEqual(voices["Sara"], "English_CalmWoman")
 
+    def test_a1_dialogue_speakers_keep_expected_voice_gender(self):
+        for script_path in sorted((curriculum_root() / "english" / "A1" / "units").glob("*/*/listening_script.md")):
+            turns = listening_script_to_dialogue_turns(script_path)
+            voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
+
+            for speaker, voice_id in voices.items():
+                expected_gender = infer_speaker_gender(speaker)
+                if expected_gender == "unknown":
+                    continue
+
+                with self.subTest(script=str(script_path), speaker=speaker):
+                    self.assertEqual(
+                        infer_voice_gender(voice_id=voice_id),
+                        expected_gender,
+                    )
+
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
             infer_voice_gender(
@@ -177,6 +196,24 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertEqual(reader.getframerate(), 32000)
             self.assertEqual(reader.getnframes(), 3840)
         self.assertAlmostEqual(duration, 0.12, places=2)
+
+    def test_concatenate_wav_audio_normalizes_chunk_volume(self):
+        quiet = wav_chunk(frame_count=320, amplitude=1000)
+        loud = wav_chunk(frame_count=320, amplitude=12000)
+
+        audio_bytes, _ = concatenate_wav_audio([quiet, loud], pause_seconds=0)
+
+        with wave.open(io.BytesIO(audio_bytes), "rb") as reader:
+            sample_bytes = reader.readframes(reader.getnframes())
+
+        samples = array("h")
+        samples.frombytes(sample_bytes)
+        first_peak = max(abs(sample) for sample in samples[:320])
+        second_peak = max(abs(sample) for sample in samples[320:640])
+
+        self.assertGreater(first_peak, 25000)
+        self.assertGreater(second_peak, 25000)
+        self.assertLess(abs(first_peak - second_peak), 4)
 
 
 class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
@@ -233,13 +270,13 @@ def _turn(speaker: str, text: str):
     return DialogueTurn(speaker=speaker, text=text)
 
 
-def wav_chunk(*, frame_count: int) -> bytes:
+def wav_chunk(*, frame_count: int, amplitude: int = 0) -> bytes:
     output = io.BytesIO()
     with wave.open(output, "wb") as writer:
         writer.setnchannels(1)
         writer.setsampwidth(2)
         writer.setframerate(32000)
-        writer.writeframes(b"\x00\x00" * frame_count)
+        writer.writeframes(amplitude.to_bytes(2, "little", signed=True) * frame_count)
     return output.getvalue()
 
 

@@ -4,7 +4,9 @@ import csv
 import hashlib
 import io
 import re
+import sys
 import wave
+from array import array
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -31,38 +33,37 @@ MINIMAX_TTS_MODELS = (
 
 CLEAR_FEMALE_DIALOGUE_VOICES = (
     "English_radiant_girl",
-    "English_Graceful_Lady",
-    "English_compelling_lady1",
-    "English_captivating_female1",
-    "English_Upbeat_Woman",
     "English_CalmWoman",
+    "English_Upbeat_Woman",
 )
 
 CLEAR_MALE_DIALOGUE_VOICES = (
     "English_Gentle-voiced_man",
     "English_Trustworth_Man",
     "English_Diligent_Man",
-    "English_magnetic_voiced_man",
-    "English_Deep-VoicedGentleman",
-    "English_FriendlyPerson",
 )
+
+DIALOGUE_TARGET_PEAK_RATIO = 0.82
 
 DIALOGUE_PERSONA_VOICES = {
     "alya": "English_radiant_girl",
-    "ben": "English_Gentle-voiced_man",
-    "john": "English_Trustworth_Man",
     "arif": "English_Trustworth_Man",
+    "andi": "English_Gentle-voiced_man",
     "adi": "English_Diligent_Man",
-    "lina": "English_Upbeat_Woman",
-    "maya": "English_radiant_girl",
-    "nina": "English_Upbeat_Woman",
-    "omar": "English_Trustworth_Man",
-    "raka": "English_Gentle-voiced_man",
-    "sara": "English_CalmWoman",
-    "mina": "English_compelling_lady1",
+    "ben": "English_Gentle-voiced_man",
+    "budi": "English_Diligent_Man",
     "david": "English_Diligent_Man",
     "dimas": "English_Diligent_Man",
+    "john": "English_Trustworth_Man",
+    "lina": "English_Upbeat_Woman",
+    "maya": "English_radiant_girl",
+    "mina": "English_Upbeat_Woman",
+    "nina": "English_Upbeat_Woman",
     "officer": "English_CalmWoman",
+    "omar": "English_Trustworth_Man",
+    "rama": "English_Gentle-voiced_man",
+    "raka": "English_Gentle-voiced_man",
+    "sara": "English_CalmWoman",
 }
 
 FALLBACK_MINIMAX_VOICES = (
@@ -264,7 +265,7 @@ def infer_voice_gender(
     if raw_value in {"neutral", "nonbinary", "unknown"}:
         return "neutral" if raw_value == "neutral" else "unknown"
 
-    searchable = f"{voice_id} {voice_name} {description}".lower()
+    searchable = re.sub(r"([a-z])([A-Z])", r"\1 \2", f"{voice_id} {voice_name} {description}").lower()
     tokens = {token for token in re.split(r"[^a-z]+", searchable) if token}
     female_tokens = {
         "female",
@@ -758,6 +759,7 @@ def infer_speaker_gender(speaker: str) -> str:
         "ben",
         "john",
         "adi",
+        "andi",
         "david",
         "dimas",
         "daniel",
@@ -768,6 +770,7 @@ def infer_speaker_gender(speaker: str) -> str:
         "ali",
         "arif",
         "omar",
+        "rama",
         "raka",
         "ahmad",
         "budi",
@@ -835,7 +838,7 @@ def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -
             elif comparable_params != wav_params:
                 raise AudioGenerationError("dialogue_audio_wav_params_mismatch")
 
-            frame_bytes = reader.readframes(current_params.nframes)
+            frame_bytes = normalize_wav_frame_volume(reader.readframes(current_params.nframes), current_params.sampwidth)
             frames.append(frame_bytes)
             total_frames += current_params.nframes
 
@@ -860,6 +863,34 @@ def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -
 
     duration_seconds = round(total_frames / framerate, 2)
     return output.getvalue(), max(duration_seconds, 0.01)
+
+
+def normalize_wav_frame_volume(frame_bytes: bytes, sampwidth: int) -> bytes:
+    if sampwidth != 2 or not frame_bytes:
+        return frame_bytes
+
+    samples = array("h")
+    samples.frombytes(frame_bytes)
+    if sys.byteorder != "little":
+        samples.byteswap()
+
+    peak = max((abs(sample) for sample in samples), default=0)
+    if peak <= 0:
+        return frame_bytes
+
+    max_peak = (1 << (sampwidth * 8 - 1)) - 1
+    target_peak = max(1, int(max_peak * DIALOGUE_TARGET_PEAK_RATIO))
+    gain = target_peak / peak
+    normalized = array(
+        "h",
+        (
+            max(-max_peak - 1, min(max_peak, int(sample * gain)))
+            for sample in samples
+        ),
+    )
+    if sys.byteorder != "little":
+        normalized.byteswap()
+    return normalized.tobytes()
 
 
 def upload_audio_to_s3(*, audio_bytes: bytes, object_key: str, content_type: str) -> str:
