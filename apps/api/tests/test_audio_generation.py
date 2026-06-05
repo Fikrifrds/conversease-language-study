@@ -61,7 +61,7 @@ class AudioGenerationTest(unittest.TestCase):
         voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
 
         self.assertEqual(voices["Alya"], "English_radiant_girl")
-        self.assertEqual(voices["Sara"], "English_Graceful_Lady")
+        self.assertEqual(voices["Sara"], "English_CalmWoman")
         self.assertEqual(voices["Mina"], "English_compelling_lady1")
         self.assertEqual(voices["Ben"], "English_Gentle-voiced_man")
         self.assertEqual(voices["John"], "English_Trustworth_Man")
@@ -105,6 +105,41 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Officer"], "English_CalmWoman")
         self.assertEqual(voices["Dimas"], "English_Diligent_Man")
         self.assertNotIn(voices["Dimas"], {"English_radiant_girl", "English_Graceful_Lady"})
+
+    def test_dialogue_voice_assignment_keeps_raka_male(self):
+        turns = [
+            _turn("Nina", "Hello. What's your name?"),
+            _turn("Raka", "My name is Raka."),
+            _turn("Nina", "Sorry, can you repeat that?"),
+            _turn("Raka", "Raka. R-A-K-A."),
+        ]
+
+        voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
+
+        self.assertEqual(voices["Nina"], "English_Upbeat_Woman")
+        self.assertEqual(voices["Raka"], "English_Gentle-voiced_man")
+        self.assertNotIn(voices["Raka"], {"English_radiant_girl", "English_Graceful_Lady", "English_CalmWoman"})
+
+    def test_dialogue_voice_assignment_keeps_unit_one_personas_gendered(self):
+        turns = [
+            _turn("Lina", "Hi, my name is Lina."),
+            _turn("Adi", "Hi Lina. I'm Adi."),
+            _turn("Maya", "Hi, I'm Maya."),
+            _turn("Omar", "Nice to meet you, Maya."),
+            _turn("Nina", "Hello. What's your name?"),
+            _turn("Raka", "My name is Raka."),
+            _turn("Sara", "Hi, my name is Sara."),
+        ]
+
+        voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
+
+        self.assertEqual(voices["Lina"], "English_Upbeat_Woman")
+        self.assertEqual(voices["Adi"], "English_Diligent_Man")
+        self.assertEqual(voices["Maya"], "English_radiant_girl")
+        self.assertEqual(voices["Omar"], "English_Trustworth_Man")
+        self.assertEqual(voices["Nina"], "English_Upbeat_Woman")
+        self.assertEqual(voices["Raka"], "English_Gentle-voiced_man")
+        self.assertEqual(voices["Sara"], "English_CalmWoman")
 
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
