@@ -1,14 +1,26 @@
 lesson_key: lesson-05-work-study-conversation-mission
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_Aussie_Bloke-20260605T060348Z.wav
+  duration_seconds: 21.85
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Mina: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_Aussie_Bloke-20260605T060348Z.wav
+  trace_id: 067199b18f00191b0b12023f69a2e14e,067199b47021fb04c0bd0022dbb9095b,067199b68d238b6339d30319c7bbc768,067199b8a4497ea80367f248e4ea6225,067199bbe136d600478722c406aaf236,067199bc8342f9dc22fee40f56b756f0,067199bf0aaf5e9a6216e14764a9467d,067199c2179838a27883b4e18db8c67e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:03:48.364664+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

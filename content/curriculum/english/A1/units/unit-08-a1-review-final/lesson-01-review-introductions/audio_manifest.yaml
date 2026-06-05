@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260605T060909Z.wav
+  duration_seconds: 19.41
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Sara: English_CalmWoman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260605T060909Z.wav
+  trace_id: 06719af30f67f2289c160d69f02d7eb7,06719af5f181eb589d0ac3e332767c03,06719af76347f9f9b259089d34997734,06719afac3daa1833d1b35624e9793e3,06719afc31daf6f9a4696da45e5e72a1,06719afe306f96e4eec33042ec1dfe91,06719b0017d84cd528a1e1db7256717d,06719b02a13b59330afe430155a113e2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:09:09.211193+00:00'
+lesson_key: lesson-01-review-introductions

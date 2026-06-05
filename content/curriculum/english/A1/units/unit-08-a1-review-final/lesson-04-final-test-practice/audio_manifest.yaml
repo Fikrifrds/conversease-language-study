@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260605T061027Z.wav
+  duration_seconds: 19.58
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Sara: English_CalmWoman
+  line_count: 10
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260605T061027Z.wav
+  trace_id: 06719b36cc4d4702a00aa859e9fa79ba,06719b38be650936e0af84709457072a,06719b3aef16719371af6ebb14edc60f,06719b3c35afdde5190e4521c132be8d,06719b3ed13db24883c7574b392d5b7f,06719b429541a2a33dff3a161b241345,06719b483ebd82951b04f1ab7fb98696,06719b4c97cb280df7a8bfd11b153bac,06719b4f74721311c39494893a8f9ed5,06719b515f5565ee24248195408f0386
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:10:27.318207+00:00'
+lesson_key: lesson-04-final-test-practice

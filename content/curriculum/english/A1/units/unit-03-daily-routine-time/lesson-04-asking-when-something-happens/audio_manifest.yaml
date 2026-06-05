@@ -1,14 +1,26 @@
 lesson_key: lesson-04-asking-when-something-happens
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-04-asking-when-something-happens/listening-English_Aussie_Bloke-20260605T060158Z.wav
+  duration_seconds: 11.12
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-04-asking-when-something-happens/listening-English_Aussie_Bloke-20260605T060158Z.wav
+  trace_id: 0671994af0ac27ee8b37b1f8261ba96f,0671994caca51d6da227e34c6b23f654,0671994e8a4059869e3ad599e3c034d9,06719950c27702b419b5d6f305b01661,06719952d4495af31cddd071c8ef6615,06719955be9e024b302fa390ef6e4c6e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:01:58.742058+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

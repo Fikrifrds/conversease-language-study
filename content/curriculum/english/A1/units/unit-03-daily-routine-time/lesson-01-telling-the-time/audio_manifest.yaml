@@ -1,14 +1,26 @@
 lesson_key: lesson-01-telling-the-time
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260605T060107Z.wav
+  duration_seconds: 9.4
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260605T060107Z.wav
+  trace_id: 067199186b871c9c409d648429052095,0671991ab4b8ac375a674d1bcab88b4f,0671991c1ce1907a54f88935cfa3967f,0671991ee01eb6bc54cba9c02ea8c3c8,067199207c76a619fb07082c53469f21,06719922f2c583bf1c315dcfc114c56f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:01:07.842382+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260605T060411Z.wav
+  duration_seconds: 11.83
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260605T060411Z.wav
+  trace_id: 067199c8d007ac503b337baa8a8a6354,067199cba0824647ed349119aabd74c2,067199d2aa80e32e249da6e3739b0ad5,067199d5ed582ed376830bf059e177cf,067199d817d3f4d617c3df05d4a20cbe,067199da54a333130f0e89ec6b467089
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:04:11.854719+00:00'
+lesson_key: lesson-01-asking-where-a-place-is

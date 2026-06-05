@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_Aussie_Bloke-20260605T060428Z.wav
+  duration_seconds: 12.27
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Mina: English_Upbeat_Woman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_Aussie_Bloke-20260605T060428Z.wav
+  trace_id: 067199dff9d84ee27e49cd970017b8d9,067199e1be2eee7ac3ba0c1b738d1690,067199e40103eda953245ed587743832,067199e6ef8d49d9550ef24ca1de1b83,067199e883eedb66affb99ee5e848956,067199ea7f61913e06aee73091823914
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:04:28.672207+00:00'
+lesson_key: lesson-02-simple-place-words

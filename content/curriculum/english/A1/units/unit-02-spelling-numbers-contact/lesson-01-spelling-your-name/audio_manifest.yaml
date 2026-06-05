@@ -1,14 +1,26 @@
 lesson_key: lesson-01-spelling-your-name
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260605T055920Z.wav
+  duration_seconds: 14.22
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Officer: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260605T055920Z.wav
+  trace_id: 067198ab83d0bb2b51332bd534683847,067198ad4d449d29d4a3dbf35ba80e88,067198af48503167e7eff3ba1ae6b649,067198b1130c20b80ab9e2197e9f68f1,067198b3cb591694b4d229bd9eab8ade,067198b6a4480edf9f5839183440a4dd
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T05:59:20.031681+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

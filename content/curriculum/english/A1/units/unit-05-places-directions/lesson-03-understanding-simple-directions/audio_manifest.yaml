@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-English_Aussie_Bloke-20260605T060447Z.wav
+  duration_seconds: 13.78
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Sara: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-English_Aussie_Bloke-20260605T060447Z.wav
+  trace_id: 067199f14e573c486cb9859da8345865,067199f31e3783d71642bdea7b06540f,067199f5a158970e9d57ea158581f831,067199f7de0293d036bed382337bc3dc,067199f9ce0505a5b25b8cd8512b62bd,067199fb497efb610ef95cd7ace1df15,067199fd26cee1cf1627816f104fb8e2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:04:47.559981+00:00'
+lesson_key: lesson-03-understanding-simple-directions

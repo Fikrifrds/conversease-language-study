@@ -1,15 +1,26 @@
 lesson_key: lesson-02-saying-your-name
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
-
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260605T055822Z.wav
+  duration_seconds: 9.69
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Arif: English_Trustworth_Man
+    Sara: English_CalmWoman
+  line_count: 4
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260605T055822Z.wav
+  trace_id: 06719876663797d5bc5805e9b4112ef2,067198788d62271c921ec4cc3dc39493,0671987aa82d94323a1c0bc4f4139cb0,0671987dfbe1a5de0dc2c4576027999a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T05:58:22.935989+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

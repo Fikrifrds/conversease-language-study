@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T061103Z.wav
+  duration_seconds: 37.51
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Mina: English_Upbeat_Woman
+  line_count: 14
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T061103Z.wav
+  trace_id: 06719b57773d3a2e96fd34c3ed090346,06719b5a37a08eefd1c7a2aaab2f1ce6,06719b5c5dc3be42d57a4e5b63bbd179,06719b5e3a0a24371688434ffd908b47,06719b6089bdf5fbb5ea50bc99943f23,06719b6329eb2493729617a9bc724873,06719b65afbb9e47f33a435aed38c361,06719b67e9d2b768aa9cf7305ebb8b02,06719b696c6c6b3f8c2863e135a5d865,06719b6b7dcbd86d6aea4bf8b44ba720,06719b6dc364388ffbf5308f7e395e12,06719b7099c0f5fb1a2c9da514217130,06719b7219adda41724a23657e52f12c,06719b749a5d3033a38b2ed3a9763445
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:11:03.284872+00:00'
+lesson_key: lesson-05-a1-final-conversation

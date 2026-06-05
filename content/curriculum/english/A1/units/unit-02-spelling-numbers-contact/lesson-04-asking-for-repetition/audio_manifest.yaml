@@ -1,14 +1,26 @@
 lesson_key: lesson-04-asking-for-repetition
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260605T060021Z.wav
+  duration_seconds: 27.23
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260605T060021Z.wav
+  trace_id: 067198e080cf9e9341abeb69b9bb9ca1,067198e4903db69bffdb96ddb7cafdac,067198e722f92ce43e5845243e1970cb,067198ea7c9d96fb4854ca950c0d12bf,067198ed7e236ee6af599302fde476d0,067198f0be0ede59971f87949287e67b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:00:21.680850+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_Aussie_Bloke-20260605T060824Z.wav
+  duration_seconds: 13.27
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Sara: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_Aussie_Bloke-20260605T060824Z.wav
+  trace_id: 06719acaeab6e4a43478a39a4fd5502a,06719acc409318d4a32d8fcf10a3f722,06719ace147afbf0d9bf173fb218d52d,06719ad0a62e62dc837d88f1a1a0e419,06719ad23bd0742d885049b513ac67fc,06719ad4f1de068aa3fbe266f694630f,06719ad672e57c477330f7536ef97fab
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:08:24.569959+00:00'
+lesson_key: lesson-04-apologizing-and-thanking

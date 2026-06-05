@@ -1,14 +1,26 @@
 lesson_key: lesson-03-talking-about-likes
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/listening-English_Aussie_Bloke-20260605T060309Z.wav
+  duration_seconds: 11.88
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/listening-English_Aussie_Bloke-20260605T060309Z.wav
+  trace_id: 0671998f334b45f1fc4e3aa1a0bb179d,067199910046fe73a26d332680ab7423,06719994ade43aac39a2682bc92a56c6,06719997d1015abf08be7d38851183d6,0671999976c28619f479ce6756c85945,0671999bf12cbb3814be85d8f2baa1ca
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:03:09.361420+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

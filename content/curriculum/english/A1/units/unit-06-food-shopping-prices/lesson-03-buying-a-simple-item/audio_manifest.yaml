@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-English_Aussie_Bloke-20260605T060627Z.wav
+  duration_seconds: 14.18
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-English_Aussie_Bloke-20260605T060627Z.wav
+  trace_id: 06719a55f256601306e57f286506ce1f,06719a58f81697aae6fdd1b9e4a22d6b,06719a5a30310980e59d90df25f69970,06719a5c272ea8bfb1ee6c692ba719f2,06719a5ef817562f3aa8c8b3a908b13f,06719a60f93aed62886cd8917857d298,06719a622cf61315e13abbf0edd725f8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:06:27.986953+00:00'
+lesson_key: lesson-03-buying-a-simple-item

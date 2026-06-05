@@ -1,15 +1,26 @@
 lesson_key: lesson-03-asking-someones-name
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
-
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260605T055837Z.wav
+  duration_seconds: 10.23
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Nina: English_Upbeat_Woman
+    Raka: English_Gentle-voiced_man
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260605T055837Z.wav
+  trace_id: 067198828cb3df62c18c4a35286170bc,067198845493950ea3db88f88f13450f,06719887cbe69b0d515f4235f132fb3f,06719889100e72b753f08d87803249f6,0671988b7a27c7eb6e44b4734dd0e007
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T05:58:37.647078+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

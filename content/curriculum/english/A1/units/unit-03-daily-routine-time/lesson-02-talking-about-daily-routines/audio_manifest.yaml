@@ -1,14 +1,26 @@
 lesson_key: lesson-02-talking-about-daily-routines
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-02-talking-about-daily-routines/listening-English_Aussie_Bloke-20260605T060124Z.wav
+  duration_seconds: 13.08
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-02-talking-about-daily-routines/listening-English_Aussie_Bloke-20260605T060124Z.wav
+  trace_id: 06719927e8d5ad29e5ceb2bce36b54b3,06719929c13caaff75c94e559db5d341,0671992c70d9fe06034d3f42ca28e47e,0671992e6316e9bc5aa88e193b9cbceb,06719930f117ded433ece6d5d9f38af8,0671993270b4472360c9eb4c3d4f6630
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:01:24.964104+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

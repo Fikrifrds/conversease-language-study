@@ -1,14 +1,26 @@
 lesson_key: lesson-02-giving-phone-numbers
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260605T055937Z.wav
+  duration_seconds: 19.9
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Officer: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260605T055937Z.wav
+  trace_id: 067198bb43fca9d655e199da1b78b569,067198bd92c0dc54b57d84273e31e500,067198c0ba65f4810eb5bb6212793f9e,067198c3d7569b38996a88a48392327b,067198c527a8ac9e705172bf08e6d597,067198c7311cfa39da5000ce68f04653
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T05:59:37.250981+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

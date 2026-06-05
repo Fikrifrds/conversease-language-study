@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-02-asking-about-prices/listening-English_Aussie_Bloke-20260605T060609Z.wav
+  duration_seconds: 12.6
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Sara: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-02-asking-about-prices/listening-English_Aussie_Bloke-20260605T060609Z.wav
+  trace_id: 06719a43b9f406ff7c9e1f65efc4821b,06719a462c90b38058641336b6e870f3,06719a47d8e26d6b38bb5875619f6b84,06719a49c8927c074a4768279f5ad2b9,06719a4b1dd7653601f77ee27468f86b,06719a4dc65916f6492e858bb21f30e8,06719a4f50b14f7aa42c1c5885557efb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:06:09.361123+00:00'
+lesson_key: lesson-02-asking-about-prices

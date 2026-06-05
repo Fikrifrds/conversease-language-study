@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260605T060806Z.wav
+  duration_seconds: 12.0
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Mina: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260605T060806Z.wav
+  trace_id: 06719ab82f988634157b975c81bdb652,06719aba81e57ab1788482af82cf2157,06719abca51b41431501b4bbdc860120,06719abe6e45a8f4addee8f606e18764,06719ac05de6287ba1c9d53ac267d66a,06719ac23a16ec182d64e72e297f109b,06719ac4a96b5920c0b28c79e37da312
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:08:06.198978+00:00'
+lesson_key: lesson-03-making-simple-requests

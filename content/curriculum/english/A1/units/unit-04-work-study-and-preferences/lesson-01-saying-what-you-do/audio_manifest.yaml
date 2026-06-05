@@ -1,14 +1,26 @@
 lesson_key: lesson-01-saying-what-you-do
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260605T060236Z.wav
+  duration_seconds: 9.83
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Sara: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260605T060236Z.wav
+  trace_id: 0671996f50ce45de4aa37a100c49184c,06719971382171ad00db501833b3956a,067199733e57a0921df7f61b3a7c9b3b,06719975f8d67417035e78b45ec1e3ea,06719977288ce8f27a7735efa2ad0987,06719979de16892b56bd1c8fb0e83271
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:02:36.002778+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

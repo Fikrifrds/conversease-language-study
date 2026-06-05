@@ -1,14 +1,26 @@
 lesson_key: lesson-03-days-and-simple-schedules
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_Aussie_Bloke-20260605T060141Z.wav
+  duration_seconds: 11.36
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_Aussie_Bloke-20260605T060141Z.wav
+  trace_id: 06719938e3fba5047c9d9aa8eb1ba3c1,0671993b4544bbc59a92c35686cbb825,0671993d2430b45fe545d8527f2ff7cb,0671993faf539085d9a617398c980b0b,06719941ce4771d339d7bbad577f1229,067199431482bd31c7e6a8f525483bf3
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:01:41.415865+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

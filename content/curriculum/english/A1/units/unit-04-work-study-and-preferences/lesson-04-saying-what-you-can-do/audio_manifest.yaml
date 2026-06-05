@@ -1,14 +1,26 @@
 lesson_key: lesson-04-saying-what-you-can-do
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-04-saying-what-you-can-do/listening-English_Aussie_Bloke-20260605T060325Z.wav
+  duration_seconds: 11.54
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Sara: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-04-saying-what-you-can-do/listening-English_Aussie_Bloke-20260605T060325Z.wav
+  trace_id: 067199a198ec2c6b88066c32af8ad8f2,067199a3305be860d174b8be9ddf6e24,067199a5c034be8ba8f8a8d9312995eb,067199a7d4375cce8c96fffa67a8a7c3,067199a9f34e195c4e945817b3bb7546,067199ab91a6fd05329aff360270a9c4
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:03:25.440793+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

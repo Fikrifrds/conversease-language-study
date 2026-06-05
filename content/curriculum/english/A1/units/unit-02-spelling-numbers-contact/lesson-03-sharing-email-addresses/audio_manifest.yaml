@@ -1,14 +1,26 @@
 lesson_key: lesson-03-sharing-email-addresses
-status: not_generated
+status: generated
 provider: minimax
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260605T055957Z.wav
+  duration_seconds: 16.81
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Officer: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260605T055957Z.wav
+  trace_id: 067198cc621ffc2199b0dbf77c4e30d8,067198d03b6433ad76c6eec65e804b5a,067198d3706416f95a5ca61b1cb4ce45,067198d5507a0db851436ca69daeae4f,067198d84f279a6390e48a18c7e60cf9,067198dacfffcce090e022dd35fe474d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T05:59:57.111926+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

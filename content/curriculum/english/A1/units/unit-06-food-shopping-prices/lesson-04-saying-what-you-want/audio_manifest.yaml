@@ -1,12 +1,23 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  dialogue_main:
-    audio_url: ''
-    duration_seconds: null
-    voice_id: multi_speaker
-    speaker_voices: {}
-    storage_key: ''
-    generated_at: ''
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260605T060645Z.wav
+  duration_seconds: 11.44
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Dimas: English_Diligent_Man
+    Sara: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260605T060645Z.wav
+  trace_id: 06719a68f009d48e62f90cc7e1caac1f,06719a6a29d6a65c3bb16ce0575937e0,06719a6b0bfe8b03463a85609e507502,06719a6ecd5bcf144e88145091f40220,06719a70fd8f688bfc28ad4ebf4828f9,06719a71f13b561e38b75f9907dbd255,06719a748230b093c770fadb868d5e59
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-05T06:06:45.567552+00:00'
+lesson_key: lesson-04-saying-what-you-want
