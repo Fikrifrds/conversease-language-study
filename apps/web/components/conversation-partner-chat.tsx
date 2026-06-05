@@ -53,7 +53,6 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [messages, setMessages] = useState<ChatMessage[]>([
     { role: "partner", text: topic.openingLine }
   ]);
-  const [sessionId, setSessionId] = useState<string | null>(null);
   const [completedTurns, setCompletedTurns] = useState(0);
   const [ended, setEnded] = useState(false);
   const [summary, setSummary] = useState<PartnerSummary | null>(null);
@@ -74,6 +73,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const handsFreeRef = useRef(false);
+  // Source of truth for the session id across async callbacks (state updates are
+  // async, so reading `sessionId` from a closure can be stale and accidentally
+  // create a new session each turn, losing conversation memory).
+  const sessionIdRef = useRef<string | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
   const vadRafRef = useRef<number | null>(null);
   const speechStartedAtRef = useRef<number | null>(null);
@@ -93,6 +96,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function setActiveSession(id: string) {
+    sessionIdRef.current = id;
+  }
 
   function playAudio(dataUrl: string | null | undefined, onEnded?: () => void) {
     if (!dataUrl) {
@@ -287,11 +294,11 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     setError("");
 
     try {
-      let activeSessionId = sessionId;
+      let activeSessionId = sessionIdRef.current;
       if (!activeSessionId) {
         const session = await createPartnerSession(topic.key);
         activeSessionId = session.sessionId;
-        setSessionId(session.sessionId);
+        setActiveSession(session.sessionId);
         // Note: the opening line is already shown (and was spoken) up front, so we
         // do NOT replay session.openingAudio here — doing so overlaps the upcoming
         // partner reply and sounds like the conversation jumps back to the start.
@@ -348,9 +355,9 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     // Create the session up front so we can speak the opening line once, then
     // start listening. This avoids replaying the opening on later turns.
     try {
-      if (!sessionId) {
+      if (!sessionIdRef.current) {
         const session = await createPartnerSession(topic.key);
-        setSessionId(session.sessionId);
+        setActiveSession(session.sessionId);
         if (session.openingAudio) {
           playAudio(session.openingAudio, () => {
             if (handsFreeRef.current) {
