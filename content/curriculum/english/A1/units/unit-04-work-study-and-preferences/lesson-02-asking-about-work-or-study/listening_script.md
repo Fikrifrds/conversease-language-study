@@ -3,8 +3,7 @@
 **Ben:** Do you work or study?
 **Mina:** I work in a small office.
 **Ben:** What do you do there?
-**Mina:** I'm an assistant.
-**Mina:** How about you?
+**Mina:** I'm an assistant. How about you?
 **Ben:** I study English online.
 
 ## Audio Direction

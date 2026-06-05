@@ -3,8 +3,7 @@
 **Mina:** Hi. What would you like?
 **Ben:** Can I have a coffee and a sandwich, please?
 **Mina:** Sure. Small or large coffee?
-**Ben:** Small, please.
-**Ben:** How much is it?
+**Ben:** Small, please. How much is it?
 **Mina:** It is five dollars.
 **Ben:** Okay. Here you go.
 **Mina:** Thank you. Here is your order.
