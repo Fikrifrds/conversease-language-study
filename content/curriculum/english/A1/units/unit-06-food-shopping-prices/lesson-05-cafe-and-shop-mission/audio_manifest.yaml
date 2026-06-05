@@ -1,4 +1,4 @@
-status: generated
+status: stale
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
