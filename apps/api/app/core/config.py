@@ -57,7 +57,7 @@ class Settings(BaseSettings):
     resend_api_key: str = ""
     together_api_key: str = ""
     together_api_base_url: str = "https://api.together.xyz"
-    together_chat_model: str = "MiniMaxAI/MiniMax-M2.7"
+    together_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_timeout_seconds: int = 30
     assemblyai_api_key: str = ""
     assemblyai_api_base_url: str = "https://api.assemblyai.com"

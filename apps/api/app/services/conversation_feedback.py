@@ -78,12 +78,27 @@ async def generate_conversation_feedback(
             model_config=TASK_MODEL_CONFIGS["conversation_feedback"],
             response_schema=FEEDBACK_RESPONSE_SCHEMA,
         )
-        return _parse_feedback(result.content, fallback=keyword_feedback)
+        return _parse_feedback(
+            result.content,
+            fallback=keyword_feedback,
+            lesson_slug=lesson_slug,
+            turn_index=turn_index,
+        )
     except LLMError as exc:
-        logger.warning("conversation_feedback_llm_failed: %s", exc)
+        logger.error(
+            "conversation_feedback_llm_failed lesson=%s turn=%s: %s",
+            lesson_slug,
+            turn_index,
+            exc,
+        )
         return keyword_feedback
     except Exception as exc:  # never let feedback break a paid turn
-        logger.warning("conversation_feedback_unexpected_error: %s", exc)
+        logger.error(
+            "conversation_feedback_unexpected_error lesson=%s turn=%s: %s",
+            lesson_slug,
+            turn_index,
+            exc,
+        )
         return keyword_feedback
 
 
@@ -109,7 +124,13 @@ def _user_prompt(*, coach_line: str, focus: str, sample_answer: str, learner_ans
     )
 
 
-def _parse_feedback(content: str, *, fallback: CoachFeedback) -> CoachFeedback:
+def _parse_feedback(
+    content: str,
+    *,
+    fallback: CoachFeedback,
+    lesson_slug: str,
+    turn_index: int,
+) -> CoachFeedback:
     try:
         data = json.loads(_extract_json(content))
         scores = data["scores"]
@@ -125,7 +146,12 @@ def _parse_feedback(content: str, *, fallback: CoachFeedback) -> CoachFeedback:
             },
         )
     except (ValueError, KeyError, TypeError) as exc:
-        logger.warning("conversation_feedback_parse_failed: %s", exc)
+        logger.error(
+            "conversation_feedback_parse_failed lesson=%s turn=%s: %s",
+            lesson_slug,
+            turn_index,
+            exc,
+        )
         return fallback
 
 
