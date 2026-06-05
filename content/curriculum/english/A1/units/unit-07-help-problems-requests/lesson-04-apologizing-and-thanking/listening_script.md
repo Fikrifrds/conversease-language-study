@@ -1,6 +1,6 @@
 # Dialogue Script
 
-**Ben:** Sorry I'm late.
+**Ben:** (breath) Sorry I'm late.
 **Sara:** That's okay.
 **Ben:** My internet was slow.
 **Sara:** No problem. Please join the class.

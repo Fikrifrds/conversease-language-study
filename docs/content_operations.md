@@ -84,6 +84,44 @@ Catatan S3: kalau bucket private, membuka `audio_url` langsung bisa menghasilkan
 `AccessDenied`. Itu normal. Platform memakai `playback_url` presigned dari API
 untuk memutar audio.
 
+## Format `listening_script.md` (MiniMax T2A v2)
+
+Audio dialog dibuat dari `listening_script.md` lewat MiniMax T2A v2
+(`/v1/t2a_v2`, model `speech-2.8-hd`). Selain teks biasa, dua marker berikut
+boleh dipakai untuk membuat dialog lebih hidup. Pakai secukupnya (1-2 per
+dialog) agar tetap jelas untuk pembelajar A1.
+
+Referensi: https://platform.minimax.io/docs/api-reference/speech-t2a-http
+
+### Interjection tags
+
+Hanya didukung model `speech-2.8-hd` / `speech-2.8-turbo` (kita pakai
+`speech-2.8-hd`). Tulis tag di dalam teks ucapan, mis. `Hello! (laughs)`.
+
+Tag yang tersedia: `(laughs)`, `(chuckle)`, `(coughs)`, `(clear-throat)`,
+`(groans)`, `(breath)`, `(pant)`, `(inhale)`, `(exhale)`, `(gasps)`, `(sniffs)`,
+`(sighs)`, `(snorts)`, `(burps)`, `(lip-smacking)`, `(humming)`, `(hissing)`,
+`(emm)`, `(sneezes)`.
+
+### Pause control
+
+Jeda dalam ucapan ditulis `<#x#>` dengan `x` = durasi detik, rentang
+`[0.01, 99.99]` (maks 2 desimal). Marker harus berada di antara segmen yang
+bisa diucapkan dan tidak boleh berurutan (`<#1#><#1#>` tidak valid). Berguna
+untuk jeda pendek saat ganti scene, mis. setelah Ben pamit dan sebelum staff
+cafe menyapa: `... Have a nice day. <#0.8#>`.
+
+Catatan: pergantian baris (newline) menandai jeda paragraf alami antar turn.
+MiniMax T2A **tidak** punya parameter ambient/background sound (lalu lintas,
+burung, dll) — transisi scene hanya bisa pakai pause.
+
+### Saat script diubah
+
+Setiap kali `listening_script.md` diubah, audio lama jadi usang. Set
+`audio_manifest.yaml` -> `status: not_generated` dan kolom `audio_generated`
+di `content/production_tracker.csv` jadi `not_generated`, lalu generate ulang
+(lihat workflow di bawah).
+
 ## Workflow Generate Audio
 
 1. Pastikan `.env.production` atau env API berisi:

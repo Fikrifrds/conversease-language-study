@@ -8,7 +8,7 @@
 **Dimas:** No problem.
 **Alya:** Here is the screenshot.
 **Dimas:** Good. Click this button.
-**Alya:** It works. Thank you for your help.
+**Alya:** (laughs) It works. Thank you for your help.
 
 ## Audio Direction
 

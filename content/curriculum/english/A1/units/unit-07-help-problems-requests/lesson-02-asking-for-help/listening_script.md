@@ -6,7 +6,7 @@
 **Sara:** Okay. Click this button.
 **Dimas:** This button?
 **Sara:** Yes. Try again.
-**Dimas:** It works. Thank you.
+**Dimas:** (laughs) It works. Thank you.
 
 ## Audio Direction
 

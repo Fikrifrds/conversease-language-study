@@ -8,8 +8,8 @@
 **Mina:** I study English at seven. By the way, where is the cafe?
 **Ben:** It's close. Go straight and turn left.
 **Mina:** Thank you very much.
-**Ben:** You're welcome. Have a nice day.
-**Staff:** Hello. Welcome to the cafe. What would you like?
+**Ben:** You're welcome. Have a nice day. <#0.9#>
+**Staff:** Hello! (chuckle) Welcome to the cafe. What would you like?
 **Mina:** Hello. I would like one tea, please.
 **Staff:** Sure. It is two dollars.
 **Mina:** Sorry, can you repeat that, please?

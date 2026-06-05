@@ -1,6 +1,6 @@
 # Dialogue Script
 
-**Mina:** Hi. What would you like?
+**Mina:** Hi! (chuckle) What would you like?
 **Ben:** Can I have a coffee and a sandwich, please?
 **Mina:** Sure. Small or large coffee?
 **Ben:** Small, please. How much is it?
