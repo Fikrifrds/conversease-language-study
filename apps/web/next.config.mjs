@@ -5,9 +5,7 @@ const nextConfig = {
   ...(useStandaloneOutput ? { output: "standalone" } : {}),
   transpilePackages: ["@conversease/shared"],
   images: {
-    remotePatterns: [],
-    dangerouslyAllowSVG: true,
-    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;"
+    remotePatterns: []
   },
   async headers() {
     return [
