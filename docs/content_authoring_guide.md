@@ -35,8 +35,24 @@ and consistent with the existing files for that lesson.**
 Each lesson is a folder of markdown/yaml files (listening_script, useful_phrases,
 quiz, roleplay, etc.). The required set and per-file purpose is listed under
 "Required Files Per Lesson" in [content_operations.md](content_operations.md).
-Templates live in [`content/curriculum/templates/`](../content/curriculum/templates/).
 Level scope/targets: `content/curriculum/english/<LEVEL>/LEVEL_SPEC.md`.
+
+Copy from the templates in
+[`content/curriculum/templates/`](../content/curriculum/templates/) — they encode
+the exact format the loader/generator expect:
+`lesson.template.yaml` (note the **required `grammar_summary`** field),
+`lesson.template.md`, `listening_script.template.md`,
+`transcript_translation.template.md`, `useful_phrases.template.yaml`,
+`quiz.template.yaml`, `conversation_coach_roleplay.template.yaml`,
+`final_evaluation.template.yaml`.
+
+**Creating or editing a lesson — do these in order:**
+1. Edit/author the curriculum files (use the templates).
+2. Keep `listening_script.md` and `transcript_translation.md` the same number of
+   lines, in the same order.
+3. Regenerate the web data (see §5) — the page renders from generated `data.ts`.
+4. If `listening_script.md` changed, mark audio stale (§5) and regenerate audio.
+5. Run the checks in §6.
 
 ## 3. Writing `listening_script.md` (the dialogue + audio source)
 

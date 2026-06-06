@@ -1,0 +1,27 @@
+lesson_key: lesson-XX-slug-here
+slug: slug-here
+title: Lesson Title
+status: published
+estimated_minutes: 8
+conversation_situation: short_snake_case_situation
+conversation_goal: One sentence describing the conversation the learner can handle.
+# grammar_summary is the 1-line text shown in the "Grammar for Conversation" box
+# on the lesson page. REQUIRED — the web data generator fails without it.
+grammar_summary: "One short grammar tip for this lesson, e.g. Use I'm + name for introductions."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60
