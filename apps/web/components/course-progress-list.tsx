@@ -50,7 +50,11 @@ export function CourseProgressList() {
           : 0;
 
         return (
-          <section key={unit.title} className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+          <section
+            key={unit.title}
+            id={`unit-${unitIndex + 1}`}
+            className="scroll-mt-24 rounded-lg border border-ink/10 bg-white p-5 shadow-sm"
+          >
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
                 <span className="text-xs font-semibold uppercase text-coral">Unit {unitIndex + 1}</span>

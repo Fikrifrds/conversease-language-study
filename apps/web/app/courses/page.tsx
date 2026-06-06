@@ -51,7 +51,7 @@ export default function CoursesPage() {
             {course.units.map((unit, index) => (
               <Link
                 key={unit.title}
-                href={`/courses/${course.slug}`}
+                href={`/courses/${course.slug}#unit-${index + 1}`}
                 className="focus-ring rounded-lg bg-paper p-4 hover:bg-mint"
               >
                 <span className="text-xs font-semibold text-coral">Unit {index + 1}</span>
