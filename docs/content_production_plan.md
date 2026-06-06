@@ -23,14 +23,21 @@ untuk release A1 adalah generate dan review audio 40 lesson.
 
 ## Aturan Wajib Yang Memengaruhi Eksekusi
 
-1. **Dua tempat per lesson.** Frontend lesson page (`/lessons/[slug]`) render dari
-   `apps/web/lib/data.ts` (`lessonCatalog`), bukan dari API. Backend course/progress
-   render dari `content/curriculum`. Jadi setiap lesson baru wajib ada di:
-   - Backend: 14 file di `content/curriculum/.../<lesson>/` + baris di
-     `content/production_tracker.csv` + status di `content_plan.yaml` + `unit.yaml`.
-   - Frontend: entri `lessonCatalog` + roleplay di `conversation-coach-practice.tsx`
-     (`turnsByLessonSlug`) + scenario di `conversation-coach-workspace.tsx` +
-     mapping di `course.units` (`data.ts`).
+1. **Satu source of truth = `content/curriculum`.** Frontend lesson page
+   (`/lessons/[slug]`) render dari `apps/web/lib/data.ts` (`lessonCatalog`), TAPI
+   array lesson di `data.ts` itu **di-generate** dari curriculum — **jangan diedit
+   tangan**. Setiap lesson baru/diubah:
+   - Edit file kurikulum di `content/curriculum/.../<lesson>/` (+ baris di
+     `content/production_tracker.csv` + status di `content_plan.yaml` + `unit.yaml`).
+   - Regenerate data.ts:
+     ```bash
+     PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/generate_web_lesson_data.py
+     ```
+   - Test `apps/api/tests/test_web_lesson_data_in_sync.py` gagal kalau data.ts tidak
+     di-regenerate (anti-drift).
+   - Roleplay coach masih dataset terpisah: `turnsByLessonSlug` di
+     `conversation-coach-practice.tsx` + scenario di `conversation-coach-workspace.tsx`.
+   Detail lengkap: [content_authoring_guide.md](content_authoring_guide.md).
    Ini menegakkan aturan doc: "Jangan publish lesson kalau roleplay slug belum jalan."
 
 2. **Gate per batch** (dari doc, sebelum dianggap selesai):
@@ -80,8 +87,9 @@ Untuk tiap lesson, buat 14 file (template `content/curriculum/templates/`):
 (`status: not_generated`).
 
 Lalu update: `content_plan.yaml` status -> `implemented`, `unit.yaml` (status
-`published` + daftar lesson), `production_tracker.csv` baris baru, dan frontend
-(`data.ts` + coach turns + workspace + `course.units`).
+`published` + daftar lesson), `production_tracker.csv` baris baru. Untuk frontend,
+**regenerate** `data.ts` dengan `scripts/generate_web_lesson_data.py` (jangan edit
+tangan), lalu tambahkan coach turns + workspace scenario (dataset terpisah).
 
 Review checklist (doc): slug/title cocok plan, outcome konsisten lintas file,
 dialogue natural & sesuai level (A1: 5-8 turn, kalimat pendek, 1 outcome),

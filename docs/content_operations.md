@@ -121,10 +121,19 @@ burung, dll) — transisi scene hanya bisa pakai pause.
 
 ### Saat script diubah
 
-Setiap kali `listening_script.md` diubah, audio lama jadi usang. Set
-`audio_manifest.yaml` -> `status: not_generated` dan kolom `audio_generated`
-di `content/production_tracker.csv` jadi `not_generated`, lalu generate ulang
-(lihat workflow di bawah).
+Setiap kali `listening_script.md` diubah, dua hal jadi usang:
+
+1. **Audio** lama. Set `audio_manifest.yaml` -> `status: not_generated` dan kolom
+   `audio_generated` di `content/production_tracker.csv` jadi `not_generated`,
+   lalu generate ulang (lihat workflow di bawah).
+2. **`apps/web/lib/data.ts`** (lesson page render dari sini). Ini di-generate dari
+   kurikulum — **jangan edit tangan**. Regenerate:
+   ```bash
+   PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/generate_web_lesson_data.py
+   ```
+   Kalau dialog diubah, pastikan `transcript_translation.md` jumlah barisnya sama
+   dengan dialog (generator gagal kalau tidak). Test
+   `apps/api/tests/test_web_lesson_data_in_sync.py` menjaga data.ts tetap sinkron.
 
 ## Workflow Generate Audio
 
