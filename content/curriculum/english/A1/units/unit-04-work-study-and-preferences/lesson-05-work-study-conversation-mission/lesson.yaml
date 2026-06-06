@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: work_study_and_preferences_unit_mission
 conversation_goal: Learners can combine work, study, preferences, and simple abilities in one conversation.
+grammar_summary: "Combine simple A1 patterns: I study, I work, I like, and I can."
 required_sections:
   - conversation_goal
   - situation_setup

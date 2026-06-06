@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: asking_for_help_with_a_simple_task
 conversation_goal: Learners can ask for help with one simple task and respond to the
   helper.
+grammar_summary: "Use can for help requests and can't + verb for simple problems."
 required_sections:
 - conversation_goal
 - situation_setup

@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 9
 conversation_situation: asking_for_steps_to_reach_a_place
 conversation_goal: Learners can ask how to get to a place and follow two simple steps.
+grammar_summary: "Ask How do I get to + place? and use at + landmark for a direction point."
 required_sections:
 - conversation_goal
 - situation_setup

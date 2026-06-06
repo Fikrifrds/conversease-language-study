@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: saying_your_work_or_study_status
 conversation_goal: Learners can say what they do in a simple work or study conversation.
+grammar_summary: "Use I'm a + role to say what you do. Use I study + subject to say what you study."
 required_sections:
   - conversation_goal
   - situation_setup

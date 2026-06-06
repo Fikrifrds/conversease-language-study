@@ -54,17 +54,24 @@ caveat are in the "Format `listening_script.md`" section of
 [content_operations.md](content_operations.md). Keep the first lesson of a level
 (absolute beginners) clean — no interjections.
 
-> **⚠️ The dialogue lives in TWO places — keep them in sync.**
-> The same dialogue is duplicated in:
-> 1. `listening_script.md` — the **audio** source (may contain interjection/pause
->    tags).
-> 2. `apps/web/lib/data.ts` (`lesson.dialogue` + parallel `lesson.translation`) —
->    what the **lesson page renders** to the learner.
+> **⚠️ The lesson page renders from generated code — never hand-edit it.**
+> The curriculum files are the single source of truth. `apps/web/lib/data.ts`
+> (the lessons array between the `// <generated:lessons>` markers) is GENERATED
+> from them. After editing any lesson content, regenerate:
+> ```bash
+> PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/generate_web_lesson_data.py
+> ```
+> What feeds the generator:
+> - `dialogue` ← `listening_script.md` (audio tags `(chuckle)`/`<#..#>` are
+>   stripped automatically for display).
+> - `translation` ← `transcript_translation.md` (must be the same number of lines
+>   as the dialogue, in the same order — the generator fails loudly otherwise).
+> - `phrases`/`prompts`/`quiz` ← `useful_phrases.yaml` / `response_prompts.yaml` /
+>   `quiz.yaml`; `grammar` ← `grammar_summary` in `lesson.yaml`;
+>   `setup` ← the "Situation"/"Situation Setup" section of `lesson.md`.
 >
-> If you change the dialogue text, update BOTH. In `data.ts` use the **clean**
-> text (NO `(chuckle)` / `<#0.9#>` tags — those are audio-only) and keep
-> `dialogue` and `translation` the same length and aligned. Forgetting this makes
-> the page show old text while the audio says something else.
+> A CI test (`apps/api/tests/test_web_lesson_data_in_sync.py`) fails if `data.ts`
+> is out of sync, so you cannot forget to regenerate.
 
 ## 4. Voices / personas (so audio sounds consistent)
 

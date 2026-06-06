@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: sharing_an_email_address_for_class_updates
 conversation_goal: Share an email address slowly and spell the important parts.
+grammar_summary: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com."
 required_sections:
   - conversation_goal
   - situation_setup

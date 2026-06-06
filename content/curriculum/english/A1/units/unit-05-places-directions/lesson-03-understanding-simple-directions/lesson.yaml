@@ -6,6 +6,7 @@ estimated_minutes: 9
 conversation_situation: understanding_turn_left_and_right
 conversation_goal: Learners can understand very simple directions with go straight,
   turn left, and turn right.
+grammar_summary: "Direction commands can start with the verb: Go straight. Turn left."
 required_sections:
 - conversation_goal
 - situation_setup

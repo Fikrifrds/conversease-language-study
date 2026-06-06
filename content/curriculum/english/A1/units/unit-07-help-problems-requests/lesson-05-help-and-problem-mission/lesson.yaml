@@ -6,6 +6,7 @@ estimated_minutes: 10
 conversation_situation: handling_a_small_problem_and_requesting_help
 conversation_goal: Learners can explain a simple problem, ask for help, make a request,
   and close politely.
+grammar_summary: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations."
 required_sections:
 - conversation_goal
 - situation_setup

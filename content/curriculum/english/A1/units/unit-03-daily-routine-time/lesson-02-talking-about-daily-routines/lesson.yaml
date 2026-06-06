@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: talking_about_a_morning_routine
 conversation_goal: Learners can say a simple daily routine with time words.
+grammar_summary: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step."
 required_sections:
   - conversation_goal
   - situation_setup

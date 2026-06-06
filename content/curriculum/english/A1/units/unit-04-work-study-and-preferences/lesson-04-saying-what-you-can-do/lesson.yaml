@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: saying_simple_english_abilities
 conversation_goal: Learners can say what they can do in English with simple ability sentences.
+grammar_summary: "Use can + base verb for ability: I can speak. I can write. I can try."
 required_sections:
   - conversation_goal
   - situation_setup

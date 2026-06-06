@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: asking_for_a_simple_price
 conversation_goal: Learners can ask the price of one item and understand a short price
   answer.
+grammar_summary: "Use How much is + item? and answer with It is + price."
 required_sections:
 - conversation_goal
 - situation_setup

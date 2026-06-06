@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: saying_a_simple_food_or_drink_preference
 conversation_goal: Learners can say what they want and choose between two simple options.
+grammar_summary: "Use I want + item and No + item, please for simple preferences."
 required_sections:
 - conversation_goal
 - situation_setup

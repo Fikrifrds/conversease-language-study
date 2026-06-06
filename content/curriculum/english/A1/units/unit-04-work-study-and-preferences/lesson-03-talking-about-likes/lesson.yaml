@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: talking_about_learning_preferences
 conversation_goal: Learners can say what they like and ask someone about simple preferences.
+grammar_summary: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice."
 required_sections:
   - conversation_goal
   - situation_setup

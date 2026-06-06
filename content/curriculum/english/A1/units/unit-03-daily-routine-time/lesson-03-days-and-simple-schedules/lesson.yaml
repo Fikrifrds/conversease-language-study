@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: checking_class_days
 conversation_goal: Learners can talk about simple days and class schedules.
+grammar_summary: "Use on + day for schedules and at + time for clock time: on Monday at seven."
 required_sections:
   - conversation_goal
   - situation_setup

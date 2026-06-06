@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: asking_someone_to_repeat_contact_information
 conversation_goal: Ask someone to repeat a name, number, or email address politely.
+grammar_summary: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part."
 required_sections:
   - conversation_goal
   - situation_setup

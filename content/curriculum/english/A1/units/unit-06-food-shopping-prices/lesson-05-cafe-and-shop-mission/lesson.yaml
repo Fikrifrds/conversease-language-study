@@ -6,6 +6,7 @@ estimated_minutes: 10
 conversation_situation: completing_a_simple_cafe_or_shop_purchase
 conversation_goal: Learners can order, ask a price, choose an option, and complete
   a simple purchase.
+grammar_summary: "Combine order and price language: Can I have..., Small please, How much is it?"
 required_sections:
 - conversation_goal
 - situation_setup

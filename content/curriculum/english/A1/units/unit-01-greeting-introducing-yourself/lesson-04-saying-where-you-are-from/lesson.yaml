@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: saying_origin_in_online_class
 conversation_goal: Say where you are from and ask the same question back.
+grammar_summary: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta."
 required_sections:
   - conversation_goal
   - situation_setup

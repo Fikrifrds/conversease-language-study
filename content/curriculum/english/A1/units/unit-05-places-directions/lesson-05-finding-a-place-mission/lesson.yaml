@@ -6,6 +6,7 @@ estimated_minutes: 10
 conversation_situation: finding_a_place_with_simple_directions
 conversation_goal: Learners can complete a short place-finding conversation from question
   to confirmation.
+grammar_summary: "Use and to join two simple direction steps: Go straight and turn left."
 required_sections:
 - conversation_goal
 - situation_setup

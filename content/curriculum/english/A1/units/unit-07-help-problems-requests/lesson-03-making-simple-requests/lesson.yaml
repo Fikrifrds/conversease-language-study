@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: making_a_simple_polite_request
 conversation_goal: Learners can make a simple request with please and respond to yes
   or no.
+grammar_summary: "Use Can you + verb + please? for a polite request."
 required_sections:
 - conversation_goal
 - situation_setup

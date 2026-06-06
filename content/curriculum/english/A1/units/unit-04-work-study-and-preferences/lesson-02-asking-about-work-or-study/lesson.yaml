@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: asking_a_classmate_about_work_or_study
 conversation_goal: Learners can ask if someone works or studies and ask one simple follow-up question.
+grammar_summary: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job."
 required_sections:
   - conversation_goal
   - situation_setup

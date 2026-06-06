@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: asking_class_time
 conversation_goal: Learners can ask and answer a simple question about time.
+grammar_summary: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock."
 required_sections:
   - conversation_goal
   - situation_setup

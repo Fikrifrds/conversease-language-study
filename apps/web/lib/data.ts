@@ -76,1713 +76,1746 @@ const lessonSections = [
   { label: "Conversation Coach", icon: MessageCircle }
 ];
 
+// GENERATED — do not edit by hand. Edit the curriculum under
+// content/curriculum/english/A1, then run:
+//   PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/generate_web_lesson_data.py
 export const lessonCatalog = [
-  {
-    slug: "saying-hello-and-goodbye",
-    title: "Saying Hello and Goodbye",
-    unit: "Greeting & Introducing Yourself",
-    conversationGoal: "Start and close a very simple English conversation.",
-    setup: "Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, lalu tutup percakapan dengan sopan.",
-    dialogue: [
-      { speaker: "Alya", text: "Hi, good morning." },
-      { speaker: "Ben", text: "Good morning. How are you?" },
-      { speaker: "Alya", text: "I'm good, thank you. Nice to meet you." },
-      { speaker: "Ben", text: "Nice to meet you too. See you later." },
-      { speaker: "Alya", text: "See you." }
-    ],
-    translation: [
-      "Hai, selamat pagi.",
-      "Selamat pagi. Apa kabar?",
-      "Aku baik, terima kasih. Senang bertemu denganmu.",
-      "Senang bertemu denganmu juga. Sampai nanti.",
-      "Sampai jumpa."
-    ],
-    phrases: [
-      { phrase: "Good morning", meaning: "Selamat pagi", usage: "Use before noon." },
-      { phrase: "How are you?", meaning: "Apa kabar?", usage: "A friendly opening question." },
-      { phrase: "I'm good, thank you.", meaning: "Aku baik, terima kasih.", usage: "Simple polite answer." },
-      { phrase: "Nice to meet you.", meaning: "Senang bertemu denganmu.", usage: "Use when meeting someone for the first time." },
-      { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Casual way to close a conversation." }
-    ],
-    grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
-    prompts: [
-      "Say: Good morning. How are you?",
-      "Answer: I'm good, thank you.",
-      "Close the conversation with: See you later."
-    ],
-    quiz: [
-      { question: "Which phrase is best for meeting someone for the first time?", answer: "Nice to meet you." },
-      { question: "What does See you later mean?", answer: "Sampai nanti." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-your-name",
-    title: "Saying Your Name",
-    unit: "Greeting & Introducing Yourself",
-    conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
-    setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
-    dialogue: [
-      { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
-      { speaker: "Arif", text: "Hi Sara. My name is Arif." },
-      { speaker: "Sara", text: "Nice to meet you, Arif." },
-      { speaker: "Arif", text: "Nice to meet you too." }
-    ],
-    translation: [
-      "Hai, nama saya Sara. Siapa namamu?",
-      "Hai Sara. Nama saya Arif.",
-      "Senang bertemu denganmu, Arif.",
-      "Senang bertemu denganmu juga."
-    ],
-    phrases: [
-      { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Clear, neutral way to say your name." },
-      { phrase: "I'm ...", meaning: "Saya ...", usage: "Natural shorter form for introductions." },
-      { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Use after someone says nice to meet you." },
-      { phrase: "Please call me ...", meaning: "Panggil saya ...", usage: "Use when your nickname is easier." }
-    ],
-    grammar: "Use My name is + name for clear introductions. Use I'm + name for a shorter, more natural answer.",
-    prompts: [
-      "Say your name with: My name is ...",
-      "Respond to: Nice to meet you.",
-      "Say a nickname with: Please call me ..."
-    ],
-    quiz: [
-      { question: "Which sentence is correct?", answer: "My name is Arif." },
-      { question: "What is a natural reply to Nice to meet you?", answer: "Nice to meet you too." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-someones-name",
-    title: "Asking Someone's Name",
-    unit: "Greeting & Introducing Yourself",
-    conversationGoal: "Ask someone's name politely and confirm what you heard.",
-    setup: "Kamu bertemu peserta baru di kelas. Tanyakan namanya, lalu ulangi nama itu dengan sopan.",
-    dialogue: [
-      { speaker: "Nina", text: "Hello. What's your name?" },
-      { speaker: "Raka", text: "My name is Raka." },
-      { speaker: "Nina", text: "Sorry, can you repeat that?" },
-      { speaker: "Raka", text: "Raka. R-A-K-A." },
-      { speaker: "Nina", text: "Thank you, Raka." }
-    ],
-    translation: [
-      "Halo. Siapa namamu?",
-      "Nama saya Raka.",
-      "Maaf, bisa ulangi?",
-      "Raka. R-A-K-A.",
-      "Terima kasih, Raka."
-    ],
-    phrases: [
-      { phrase: "What's your name?", meaning: "Siapa namamu?", usage: "Common simple question." },
-      { phrase: "May I know your name?", meaning: "Boleh tahu nama Anda?", usage: "More polite version." },
-      { phrase: "Is it Mina?", meaning: "Apakah Mina?", usage: "Use to confirm a name." },
-      { phrase: "Nice to meet you, ...", meaning: "Senang bertemu denganmu, ...", usage: "Add the person's name to sound attentive." }
-    ],
-    grammar: "Use What's your + noun for simple questions: What's your name? What's your job?",
-    prompts: [
-      "Ask: What's your name?",
-      "Confirm the name with: Is it ...?",
-      "Reply with: Nice to meet you, ..."
-    ],
-    quiz: [
-      { question: "Which question asks for a name?", answer: "What's your name?" },
-      { question: "Which phrase sounds more polite?", answer: "May I know your name?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-where-you-are-from",
-    title: "Saying Where You Are From",
-    unit: "Greeting & Introducing Yourself",
-    conversationGoal: "Say where you are from and ask the same question back.",
-    setup: "Kamu melanjutkan perkenalan singkat. Jawab asalmu, lalu tanyakan balik agar percakapan berjalan.",
-    dialogue: [
-      { speaker: "Maya", text: "Hi, I'm Maya. I'm from Indonesia." },
-      { speaker: "Omar", text: "Nice to meet you, Maya. I'm Omar." },
-      { speaker: "Maya", text: "Nice to meet you too. Where are you from?" },
-      { speaker: "Omar", text: "I'm from Malaysia." }
-    ],
-    translation: [
-      "Hai, saya Maya. Saya dari Indonesia.",
-      "Senang bertemu denganmu, Maya. Saya Omar.",
-      "Senang bertemu denganmu juga. Kamu dari mana?",
-      "Saya dari Malaysia."
-    ],
-    phrases: [
-      { phrase: "I'm from ...", meaning: "Saya dari ...", usage: "Simple answer for origin." },
-      { phrase: "I live in ...", meaning: "Saya tinggal di ...", usage: "Use for current city." },
-      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
-      { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "A complete model answer." }
-    ],
-    grammar: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta.",
-    prompts: [
-      "Answer: Where are you from?",
-      "Say where you live with: I live in ...",
-      "Ask back: How about you?"
-    ],
-    quiz: [
-      { question: "Which sentence talks about origin?", answer: "I'm from Indonesia." },
-      { question: "Which phrase keeps the conversation going?", answer: "How about you?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "first-conversation-mission",
-    title: "First Conversation Mission",
-    unit: "Greeting & Introducing Yourself",
-    conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
-    setup: "Ini misi gabungan Unit 1. Selesaikan percakapan pendek tanpa melihat contoh terlalu sering.",
-    dialogue: [
-      { speaker: "Lina", text: "Hi, my name is Lina. What is your name?" },
-      { speaker: "Adi", text: "Hi Lina. I'm Adi. Nice to meet you." },
-      { speaker: "Lina", text: "Nice to meet you too. I'm from Indonesia. Where are you from?" },
-      { speaker: "Adi", text: "I'm from Indonesia too. See you later." },
-      { speaker: "Lina", text: "See you." }
-    ],
-    translation: [
-      "Hai, nama saya Lina. Siapa namamu?",
-      "Hai Lina. Saya Adi. Senang bertemu denganmu.",
-      "Senang bertemu denganmu juga. Saya dari Indonesia. Kamu dari mana?",
-      "Saya juga dari Indonesia. Sampai nanti.",
-      "Sampai jumpa."
-    ],
-    phrases: [
-      { phrase: "Good morning. My name is ...", meaning: "Selamat pagi. Nama saya ...", usage: "Open and introduce yourself." },
-      { phrase: "Where are you from?", meaning: "Kamu dari mana?", usage: "Ask about origin." },
-      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Return the question." },
-      { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Close the conversation." }
-    ],
-    grammar: "Keep A1 conversations short: greeting + name + origin + question back + closing.",
-    prompts: [
-      "Introduce yourself in two short sentences.",
-      "Answer where you are from and ask back.",
-      "Close with Nice to meet you too and See you later."
-    ],
-    quiz: [
-      { question: "What should you say after someone says Nice to meet you?", answer: "Nice to meet you too." },
-      { question: "Which question can you ask back after answering your origin?", answer: "How about you?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "spelling-your-name",
-    title: "Spelling Your Name",
-    unit: "Spelling, Numbers & Contact Details",
-    conversationGoal: "Spell your name clearly when someone needs to write it down.",
-    setup: "Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas.",
-    dialogue: [
-      { speaker: "Officer", text: "Hi. What is your name?" },
-      { speaker: "Dimas", text: "My name is Dimas." },
-      { speaker: "Officer", text: "How do you spell it?" },
-      { speaker: "Dimas", text: "It's spelled D-I-M-A-S." },
-      { speaker: "Officer", text: "Thank you. Let me read it back. D-I-M-A-S." },
-      { speaker: "Dimas", text: "That's right." }
-    ],
-    translation: [
-      "Hai. Siapa namamu?",
-      "Nama saya Dimas.",
-      "Bagaimana cara mengejanya?",
-      "Ejaannya D-I-M-A-S.",
-      "Terima kasih. Saya ulangi ya. D-I-M-A-S.",
-      "Betul."
-    ],
-    phrases: [
-      { phrase: "How do you spell it?", meaning: "Bagaimana cara mengejanya?", usage: "Ask someone to spell a word or name." },
-      { phrase: "Let me spell it for you.", meaning: "Biar saya ejakan untukmu.", usage: "Offer to spell your name." },
-      { phrase: "It's spelled D-I-M-A-S.", meaning: "Ejaannya D-I-M-A-S.", usage: "Say each letter clearly, one by one." },
-      { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask for a repeat when you miss a letter." },
-      { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." }
-    ],
-    grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
-    prompts: [
-      "Say: My name is Dimas.",
-      "Spell it: D-I-M-A-S.",
-      "Confirm with: That's right."
-    ],
-    quiz: [
-      { question: "Which question asks someone to spell a word?", answer: "How do you spell it?" },
-      { question: "What does That's right mean?", answer: "Betul." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "giving-phone-numbers",
-    title: "Giving Phone Numbers",
-    unit: "Spelling, Numbers & Contact Details",
-    conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
-    setup: "Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.",
-    dialogue: [
-      { speaker: "Officer", text: "What is your phone number?" },
-      { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
-      { speaker: "Officer", text: "Let me check. Zero eight one two, three four five six, seven eight nine zero?" },
-      { speaker: "Dimas", text: "Yes, that's correct." },
-      { speaker: "Officer", text: "Thank you. We will send you a message." },
-      { speaker: "Dimas", text: "Thank you." }
-    ],
-    translation: [
-      "Berapa nomor teleponmu?",
-      "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
-      "Saya cek ya. Nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol?",
-      "Ya, itu benar.",
-      "Terima kasih. Kami akan mengirim pesan kepadamu.",
-      "Terima kasih."
-    ],
-    phrases: [
-      { phrase: "What is your phone number?", meaning: "Berapa nomor teleponmu?", usage: "Ask for a phone number in a clear, direct way." },
-      { phrase: "It's zero eight one two.", meaning: "Nomornya nol delapan satu dua.", usage: "Start giving a phone number." },
-      { phrase: "Let me check.", meaning: "Saya cek ya.", usage: "Introduce a quick confirmation before repeating information." },
-      { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm that the repeated information is right." },
-      { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask politely when you miss a number." }
-    ],
-    grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
-    prompts: [
-      "Say your phone number in small groups.",
-      "Confirm with: Yes, that's correct.",
-      "Ask for repetition with: Can you repeat that, please?"
-    ],
-    quiz: [
-      { question: "Which question asks for a phone number?", answer: "What is your phone number?" },
-      { question: "What does Yes, that's correct mean?", answer: "Ya, itu benar." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "sharing-email-addresses",
-    title: "Sharing Email Addresses",
-    unit: "Spelling, Numbers & Contact Details",
-    conversationGoal: "Share an email address slowly and spell the important parts.",
-    setup: "Kamu ingin menerima informasi kelas lewat email. Petugas meminta alamat emailmu. Sebutkan alamat email dengan pelan, lalu eja bagian yang penting.",
-    dialogue: [
-      { speaker: "Officer", text: "What is your email address?" },
-      { speaker: "Ben", text: "It's ben dot rama at example dot com." },
-      { speaker: "Officer", text: "Can you spell that, please?" },
-      { speaker: "Ben", text: "B-E-N dot R-A-M-A at example dot com." },
-      { speaker: "Officer", text: "Thank you. Is that correct?" },
-      { speaker: "Ben", text: "Yes, that's correct." }
-    ],
-    translation: [
-      "Apa alamat emailmu?",
-      "Alamatnya ben titik rama at example titik com.",
-      "Bisa dieja, tolong?",
-      "B-E-N titik R-A-M-A at example titik com.",
-      "Terima kasih. Apakah itu benar?",
-      "Ya, itu benar."
-    ],
-    phrases: [
-      { phrase: "What is your email address?", meaning: "Apa alamat emailmu?", usage: "Ask for someone's email address." },
-      { phrase: "It's ben dot rama at example dot com.", meaning: "Alamatnya ben titik rama at example titik com.", usage: "Say an email address slowly." },
-      { phrase: "Can you spell that, please?", meaning: "Bisa dieja, tolong?", usage: "Ask someone to spell the email address." },
-      { phrase: "Is that correct?", meaning: "Apakah itu benar?", usage: "Ask for confirmation after writing information." },
-      { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm the email address is right." }
-    ],
-    grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
-    prompts: [
-      "Say an email address using at and dot.",
-      "Spell the name part of an email.",
-      "Confirm with: Yes, that's correct."
-    ],
-    quiz: [
-      { question: "Which question asks for an email address?", answer: "What is your email address?" },
-      { question: "How do you say . in an email address?", answer: "dot" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-for-repetition",
-    title: "Asking for Repetition",
-    unit: "Spelling, Numbers & Contact Details",
-    conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
-    setup: "Kamu tidak mendengar informasi dengan jelas. Daripada menebak, kamu meminta orang lain mengulang dengan sopan dan mengecek bagian yang kamu dengar.",
-    dialogue: [
-      { speaker: "Alya", text: "My phone number is zero eight one three, two two five five, nine zero one." },
-      { speaker: "Ben", text: "Sorry, can you repeat that, please?" },
-      { speaker: "Alya", text: "Sure. Zero eight one three, two two five five, nine zero one." },
-      { speaker: "Ben", text: "Thank you. Did you say two two five five?" },
-      { speaker: "Alya", text: "Yes, that's right." },
-      { speaker: "Ben", text: "Got it. Thank you." }
-    ],
-    translation: [
-      "Nomor telepon saya nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
-      "Maaf, bisa diulang, tolong?",
-      "Tentu. Nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
-      "Terima kasih. Apakah kamu bilang dua dua lima lima?",
-      "Ya, betul.",
-      "Sudah saya mengerti. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask politely when you do not hear clearly." },
-      { phrase: "Sure.", meaning: "Tentu.", usage: "Agree to repeat information." },
-      { phrase: "Did you say two two five five?", meaning: "Apakah kamu bilang dua dua lima lima?", usage: "Check a specific part of what you heard." },
-      { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm that the listener heard correctly." },
-      { phrase: "Got it.", meaning: "Sudah saya mengerti.", usage: "Show that you understand now." }
-    ],
-    grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
-    prompts: [
-      "Ask for repetition politely.",
-      "Check one detail with: Did you say ...?",
-      "Show understanding with: Got it. Thank you."
-    ],
-    quiz: [
-      { question: "Which sentence politely asks someone to repeat?", answer: "Can you repeat that, please?" },
-      { question: "What is Did you say ...? used for?", answer: "Checking a detail." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "contact-details-mission",
-    title: "Contact Details Mission",
-    unit: "Spelling, Numbers & Contact Details",
-    conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
-    setup: "Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.",
-    dialogue: [
-      { speaker: "Officer", text: "Hi. I need your contact details." },
-      { speaker: "Dimas", text: "Sure. My name is Dimas." },
-      { speaker: "Officer", text: "How do you spell your name?" },
-      { speaker: "Dimas", text: "D-I-M-A-S." },
-      { speaker: "Officer", text: "What is your phone number?" },
-      { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
-      { speaker: "Officer", text: "And your email address?" },
-      { speaker: "Dimas", text: "It's dimas at example dot com." },
-      { speaker: "Officer", text: "Thank you. Is everything correct?" },
-      { speaker: "Dimas", text: "Yes, everything is correct." }
-    ],
-    translation: [
-      "Hai. Saya perlu detail kontakmu.",
-      "Tentu. Nama saya Dimas.",
-      "Bagaimana kamu mengeja namamu?",
-      "D-I-M-A-S.",
-      "Berapa nomor teleponmu?",
-      "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
-      "Dan alamat emailmu?",
-      "Alamatnya dimas at example titik com.",
-      "Terima kasih. Apakah semuanya benar?",
-      "Ya, semuanya benar."
-    ],
-    phrases: [
-      { phrase: "I need your contact details.", meaning: "Saya perlu detail kontakmu.", usage: "Start a request for name, phone number, and email." },
-      { phrase: "How do you spell your name?", meaning: "Bagaimana kamu mengeja namamu?", usage: "Ask someone to spell their name." },
-      { phrase: "And your email address?", meaning: "Dan alamat emailmu?", usage: "Ask the next contact detail after another question." },
-      { phrase: "Is everything correct?", meaning: "Apakah semuanya benar?", usage: "Check all contact information at the end." },
-      { phrase: "Yes, everything is correct.", meaning: "Ya, semuanya benar.", usage: "Confirm all information is correct." }
-    ],
-    grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
-    prompts: [
-      "Share your name and spell it.",
-      "Give your phone number and email address.",
-      "Confirm with: Yes, everything is correct."
-    ],
-    quiz: [
-      { question: "Which phrase asks for all contact information?", answer: "I need your contact details." },
-      { question: "What does Is everything correct? mean?", answer: "Apakah semuanya benar?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "telling-the-time",
-    title: "Telling the Time",
-    unit: "Daily Routine & Time",
-    conversationGoal: "Ask and answer a simple question about time.",
-    setup: "Kamu ingin tahu jam mulai kelas online. Tanyakan waktunya, lalu cek apakah itu pagi, siang, atau malam.",
-    dialogue: [
-      { speaker: "Alya", text: "What time is the class?" },
-      { speaker: "Ben", text: "It's at nine o'clock." },
-      { speaker: "Alya", text: "In the morning?" },
-      { speaker: "Ben", text: "Yes, in the morning." },
-      { speaker: "Alya", text: "Thank you." },
-      { speaker: "Ben", text: "You're welcome." }
-    ],
-    translation: [
-      "Jam berapa kelasnya?",
-      "Kelasnya jam sembilan.",
-      "Pagi?",
-      "Ya, pagi.",
-      "Terima kasih.",
-      "Sama-sama."
-    ],
-    phrases: [
-      { phrase: "What time is the class?", meaning: "Jam berapa kelasnya?", usage: "Ask about the time of an event." },
-      { phrase: "It's at nine o'clock.", meaning: "Jam sembilan.", usage: "Answer with a clear time." },
-      { phrase: "In the morning?", meaning: "Pagi?", usage: "Check the part of the day." },
-      { phrase: "Yes, in the morning.", meaning: "Ya, pagi.", usage: "Confirm the time of day." },
-      { phrase: "You're welcome.", meaning: "Sama-sama.", usage: "Reply after someone says thank you." }
-    ],
-    grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
-    prompts: [
-      "Ask: What time is the class?",
-      "Answer with: It's at nine o'clock.",
-      "Check with: In the morning?"
-    ],
-    quiz: [
-      { question: "Which question asks about time?", answer: "What time is the class?" },
-      { question: "Which word comes before a time?", answer: "at" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "talking-about-daily-routines",
-    title: "Talking About Daily Routines",
-    unit: "Daily Routine & Time",
-    conversationGoal: "Say a simple daily routine with time words.",
-    setup: "Kamu mengobrol dengan teman kelas tentang kebiasaan pagi. Sebutkan kegiatan sederhana dan kapan kamu melakukannya.",
-    dialogue: [
-      { speaker: "Alya", text: "What do you do in the morning?" },
-      { speaker: "Ben", text: "I wake up at six." },
-      { speaker: "Alya", text: "What do you do after that?" },
-      { speaker: "Ben", text: "I study English at seven." },
-      { speaker: "Alya", text: "Nice. Do you work in the afternoon?" },
-      { speaker: "Ben", text: "Yes, I work at one." }
-    ],
-    translation: [
-      "Apa yang kamu lakukan di pagi hari?",
-      "Saya bangun jam enam.",
-      "Apa yang kamu lakukan setelah itu?",
-      "Saya belajar bahasa Inggris jam tujuh.",
-      "Bagus. Apakah kamu bekerja siang hari?",
-      "Ya, saya bekerja jam satu."
-    ],
-    phrases: [
-      { phrase: "What do you do in the morning?", meaning: "Apa yang kamu lakukan di pagi hari?", usage: "Ask about a morning routine." },
-      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say when you wake up." },
-      { phrase: "What do you do after that?", meaning: "Apa yang kamu lakukan setelah itu?", usage: "Ask for the next routine step." },
-      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
-      { phrase: "I work at one.", meaning: "Saya bekerja jam satu.", usage: "Say a work routine." }
-    ],
-    grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
-    prompts: [
-      "Say when you wake up.",
-      "Say what you do after that.",
-      "Say when you work or study."
-    ],
-    quiz: [
-      { question: "Which sentence talks about a routine?", answer: "I wake up at six." },
-      { question: "What does after that mean?", answer: "setelah itu" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "days-and-simple-schedules",
-    title: "Days and Simple Schedules",
-    unit: "Daily Routine & Time",
-    conversationGoal: "Talk about simple days and class schedules.",
-    setup: "Kamu ingin tahu hari apa kelas berlangsung. Tanyakan jadwal sederhana, lalu ulangi hari dan jamnya.",
-    dialogue: [
-      { speaker: "Alya", text: "When is the English class?" },
-      { speaker: "Ben", text: "It's on Monday and Wednesday." },
-      { speaker: "Alya", text: "What time?" },
-      { speaker: "Ben", text: "At seven in the evening." },
-      { speaker: "Alya", text: "Great. See you on Monday." },
-      { speaker: "Ben", text: "See you." }
-    ],
-    translation: [
-      "Kapan kelas bahasa Inggrisnya?",
-      "Kelasnya hari Senin dan Rabu.",
-      "Jam berapa?",
-      "Jam tujuh malam.",
-      "Bagus. Sampai jumpa hari Senin.",
-      "Sampai jumpa."
-    ],
-    phrases: [
-      { phrase: "When is the English class?", meaning: "Kapan kelas bahasa Inggrisnya?", usage: "Ask about the day or schedule." },
-      { phrase: "It's on Monday and Wednesday.", meaning: "Kelasnya hari Senin dan Rabu.", usage: "Answer with class days." },
-      { phrase: "What time?", meaning: "Jam berapa?", usage: "Ask a short follow-up about time." },
-      { phrase: "At seven in the evening.", meaning: "Jam tujuh malam.", usage: "Answer with time of day." },
-      { phrase: "See you on Monday.", meaning: "Sampai jumpa hari Senin.", usage: "Close with the day you will meet." }
-    ],
-    grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
-    prompts: [
-      "Ask when the English class is.",
-      "Answer with days: on Monday and Wednesday.",
-      "Answer the time: at seven in the evening."
-    ],
-    quiz: [
-      { question: "Which word comes before Monday?", answer: "on" },
-      { question: "Which short question asks about time?", answer: "What time?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-when-something-happens",
-    title: "Asking When Something Happens",
-    unit: "Daily Routine & Time",
-    conversationGoal: "Ask when a simple event happens and confirm the details.",
-    setup: "Kamu perlu ikut meeting singkat. Tanyakan kapan meeting berlangsung, apakah online, dan konfirmasi waktunya.",
-    dialogue: [
-      { speaker: "Dimas", text: "When is the meeting?" },
-      { speaker: "Alya", text: "It's tomorrow at ten." },
-      { speaker: "Dimas", text: "Is it online?" },
-      { speaker: "Alya", text: "Yes, it is online." },
-      { speaker: "Dimas", text: "Tomorrow at ten. Is that right?" },
-      { speaker: "Alya", text: "Yes, that's right." }
-    ],
-    translation: [
-      "Kapan meetingnya?",
-      "Besok jam sepuluh.",
-      "Apakah online?",
-      "Ya, online.",
-      "Besok jam sepuluh. Benar begitu?",
-      "Ya, betul."
-    ],
-    phrases: [
-      { phrase: "When is the meeting?", meaning: "Kapan meetingnya?", usage: "Ask when an event happens." },
-      { phrase: "It's tomorrow at ten.", meaning: "Besok jam sepuluh.", usage: "Answer with day and time." },
-      { phrase: "Is it online?", meaning: "Apakah online?", usage: "Ask about the meeting format." },
-      { phrase: "Is that right?", meaning: "Benar begitu?", usage: "Check that your understanding is correct." },
-      { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm the detail." }
-    ],
-    grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
-    prompts: [
-      "Ask when the meeting is.",
-      "Ask if it is online.",
-      "Confirm with: Is that right?"
-    ],
-    quiz: [
-      { question: "Which question asks when an event happens?", answer: "When is the meeting?" },
-      { question: "Which sentence asks if something is online?", answer: "Is it online?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "routine-conversation-mission",
-    title: "Routine Conversation Mission",
-    unit: "Daily Routine & Time",
-    conversationGoal: "Combine time, routine, days, and schedule questions in one simple conversation.",
-    setup: "Ini misi akhir unit. Kamu berbicara tentang rutinitas pagi, jadwal belajar, hari kelas, dan waktu meeting sederhana.",
-    dialogue: [
-      { speaker: "Alya", text: "Hi, Ben. What time do you wake up?" },
-      { speaker: "Ben", text: "I wake up at six." },
-      { speaker: "Alya", text: "When do you study English?" },
-      { speaker: "Ben", text: "I study on Monday and Wednesday at seven." },
-      { speaker: "Alya", text: "Is the class online?" },
-      { speaker: "Ben", text: "Yes, it is online." },
-      { speaker: "Alya", text: "Great. See you on Monday." },
-      { speaker: "Ben", text: "See you." }
-    ],
-    translation: [
-      "Hai, Ben. Jam berapa kamu bangun?",
-      "Saya bangun jam enam.",
-      "Kapan kamu belajar bahasa Inggris?",
-      "Saya belajar hari Senin dan Rabu jam tujuh.",
-      "Apakah kelasnya online?",
-      "Ya, online.",
-      "Bagus. Sampai jumpa hari Senin.",
-      "Sampai jumpa."
-    ],
-    phrases: [
-      { phrase: "What time do you wake up?", meaning: "Jam berapa kamu bangun?", usage: "Ask about a routine time." },
-      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a morning routine." },
-      { phrase: "When do you study English?", meaning: "Kapan kamu belajar bahasa Inggris?", usage: "Ask about a study schedule." },
-      { phrase: "I study on Monday and Wednesday at seven.", meaning: "Saya belajar hari Senin dan Rabu jam tujuh.", usage: "Give days and time together." },
-      { phrase: "Is the class online?", meaning: "Apakah kelasnya online?", usage: "Ask about class format." }
-    ],
-    grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
-    prompts: [
-      "Say your wake-up time.",
-      "Say your study schedule.",
-      "Ask if the class is online."
-    ],
-    quiz: [
-      { question: "Which sentence uses day and time correctly?", answer: "I study on Monday at seven." },
-      { question: "Which question asks about routine time?", answer: "What time do you wake up?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-what-you-do",
-    title: "Saying What You Do",
-    unit: "Work, Study & Preferences",
-    conversationGoal: "Say what you do in a simple work or study conversation.",
-    setup: "Kamu bertemu teman baru di kelas online. Ia bertanya apa kegiatanmu. Jawab dengan status sederhana seperti student, worker, atau pekerjaan yang mudah.",
-    dialogue: [
-      { speaker: "Sara", text: "What do you do?" },
-      { speaker: "Dimas", text: "I'm a student." },
-      { speaker: "Sara", text: "What do you study?" },
-      { speaker: "Dimas", text: "I study design." },
-      { speaker: "Sara", text: "Do you study online?" },
-      { speaker: "Dimas", text: "Yes, I study online." }
-    ],
-    translation: [
-      "Apa pekerjaan atau kegiatanmu?",
-      "Saya seorang pelajar.",
-      "Apa yang kamu pelajari?",
-      "Saya belajar desain.",
-      "Apakah kamu belajar online?",
-      "Ya, saya belajar online."
-    ],
-    phrases: [
-      { phrase: "What do you do?", meaning: "Apa pekerjaan atau kegiatanmu?", usage: "Ask about someone's work or study status." },
-      { phrase: "I'm a student.", meaning: "Saya seorang pelajar.", usage: "Say your simple status." },
-      { phrase: "What do you study?", meaning: "Apa yang kamu pelajari?", usage: "Ask about a study subject." },
-      { phrase: "I study design.", meaning: "Saya belajar desain.", usage: "Say what you study." },
-      { phrase: "I study online.", meaning: "Saya belajar online.", usage: "Say how you study." }
-    ],
-    grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
-    prompts: [
-      "Answer: What do you do?",
-      "Say what you study.",
-      "Say if you study online."
-    ],
-    quiz: [
-      { question: "Which question asks about work or study status?", answer: "What do you do?" },
-      { question: "Which sentence is correct?", answer: "I'm a student." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-about-work-or-study",
-    title: "Asking About Work or Study",
-    unit: "Work, Study & Preferences",
-    conversationGoal: "Ask if someone works or studies and ask one simple follow-up question.",
-    setup: "Kamu ingin mengenal teman kelas. Tanyakan apakah ia bekerja atau belajar, lalu tanyakan satu detail sederhana tentang kegiatannya.",
-    dialogue: [
-      { speaker: "Ben", text: "Do you work or study?" },
-      { speaker: "Mina", text: "I work in a small office." },
-      { speaker: "Ben", text: "What do you do there?" },
-      { speaker: "Mina", text: "I'm an assistant. How about you?" },
-      { speaker: "Ben", text: "I study English online." }
-    ],
-    translation: [
-      "Apakah kamu bekerja atau belajar?",
-      "Saya bekerja di kantor kecil.",
-      "Apa yang kamu lakukan di sana?",
-      "Saya seorang asisten. Kalau kamu?",
-      "Saya belajar bahasa Inggris online."
-    ],
-    phrases: [
-      { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
-      { phrase: "I work in a small office.", meaning: "Saya bekerja di kantor kecil.", usage: "Say where you work." },
-      { phrase: "What do you do there?", meaning: "Apa yang kamu lakukan di sana?", usage: "Ask about the role or activity." },
-      { phrase: "I'm an assistant.", meaning: "Saya seorang asisten.", usage: "Say a simple job." },
-      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same topic back." }
-    ],
-    grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
-    prompts: [
-      "Ask: Do you work or study?",
-      "Ask: What do you do there?",
-      "Ask back with: How about you?"
-    ],
-    quiz: [
-      { question: "Which question gives two choices?", answer: "Do you work or study?" },
-      { question: "Which sentence is correct?", answer: "I'm an assistant." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "talking-about-likes",
-    title: "Talking About Likes",
-    unit: "Work, Study & Preferences",
-    conversationGoal: "Say what you like and ask someone about simple preferences.",
-    setup: "Kamu berbicara dengan teman belajar tentang bagian bahasa Inggris yang kamu suka. Gunakan kalimat pendek untuk menyebutkan hal yang kamu suka.",
-    dialogue: [
-      { speaker: "Alya", text: "Do you like English?" },
-      { speaker: "Ben", text: "Yes, I like it." },
-      { speaker: "Alya", text: "What do you like?" },
-      { speaker: "Ben", text: "I like speaking practice." },
-      { speaker: "Alya", text: "Do you like grammar?" },
-      { speaker: "Ben", text: "It's okay, but speaking is my favorite." }
-    ],
-    translation: [
-      "Apakah kamu suka bahasa Inggris?",
-      "Ya, saya suka.",
-      "Apa yang kamu suka?",
-      "Saya suka latihan speaking.",
-      "Apakah kamu suka grammar?",
-      "Tidak apa-apa, tapi speaking adalah favorit saya."
-    ],
-    phrases: [
-      { phrase: "Do you like English?", meaning: "Apakah kamu suka bahasa Inggris?", usage: "Ask about a preference." },
-      { phrase: "Yes, I like it.", meaning: "Ya, saya suka.", usage: "Give a simple positive answer." },
-      { phrase: "What do you like?", meaning: "Apa yang kamu suka?", usage: "Ask for a specific preference." },
-      { phrase: "I like speaking practice.", meaning: "Saya suka latihan speaking.", usage: "Say a learning preference." },
-      { phrase: "Speaking is my favorite.", meaning: "Speaking adalah favorit saya.", usage: "Say your favorite part." }
-    ],
-    grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
-    prompts: [
-      "Answer: Do you like English?",
-      "Say what you like.",
-      "Ask someone what they like."
-    ],
-    quiz: [
-      { question: "Which question asks about a preference?", answer: "Do you like English?" },
-      { question: "What does my favorite mean?", answer: "favorit saya" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-what-you-can-do",
-    title: "Saying What You Can Do",
-    unit: "Work, Study & Preferences",
-    conversationGoal: "Say what you can do in English with simple ability sentences.",
-    setup: "Kamu ditanya kemampuan bahasa Inggrismu. Jawab dengan jujur dan sederhana: apa yang sudah bisa kamu lakukan, dan apa yang belum.",
-    dialogue: [
-      { speaker: "Sara", text: "Can you speak English?" },
-      { speaker: "Dimas", text: "I can speak a little." },
-      { speaker: "Sara", text: "Can you write simple emails?" },
-      { speaker: "Dimas", text: "Yes, I can." },
-      { speaker: "Sara", text: "Can you join a meeting in English?" },
-      { speaker: "Dimas", text: "Not yet, but I can try." }
-    ],
-    translation: [
-      "Apakah kamu bisa berbicara bahasa Inggris?",
-      "Saya bisa berbicara sedikit.",
-      "Apakah kamu bisa menulis email sederhana?",
-      "Ya, saya bisa.",
-      "Apakah kamu bisa ikut meeting dalam bahasa Inggris?",
-      "Belum, tapi saya bisa mencoba."
-    ],
-    phrases: [
-      { phrase: "Can you speak English?", meaning: "Apakah kamu bisa berbicara bahasa Inggris?", usage: "Ask about speaking ability." },
-      { phrase: "I can speak a little.", meaning: "Saya bisa berbicara sedikit.", usage: "Say a small ability." },
-      { phrase: "Can you write simple emails?", meaning: "Apakah kamu bisa menulis email sederhana?", usage: "Ask about writing ability." },
-      { phrase: "Yes, I can.", meaning: "Ya, saya bisa.", usage: "Give a short positive answer." },
-      { phrase: "Not yet, but I can try.", meaning: "Belum, tapi saya bisa mencoba.", usage: "Say you cannot do it now but are willing." }
-    ],
-    grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
-    prompts: [
-      "Say what you can do.",
-      "Answer a Can you question.",
-      "Say: Not yet, but I can try."
-    ],
-    quiz: [
-      { question: "Which question asks about ability?", answer: "Can you speak English?" },
-      { question: "Which sentence is correct?", answer: "I can write simple emails." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "work-study-conversation-mission",
-    title: "Work and Study Conversation Mission",
-    unit: "Work, Study & Preferences",
-    conversationGoal: "Combine work, study, preferences, and simple abilities in one conversation.",
-    setup: "Ini misi akhir unit. Kamu memperkenalkan kegiatanmu, menanyakan pekerjaan atau studi, menyebutkan hal yang kamu suka, dan mengatakan kemampuan sederhana.",
-    dialogue: [
-      { speaker: "Mina", text: "Hi, Ben. Do you work or study?" },
-      { speaker: "Ben", text: "I study English online and I work in a shop." },
-      { speaker: "Mina", text: "What do you like about English?" },
-      { speaker: "Ben", text: "I like speaking practice." },
-      { speaker: "Mina", text: "What can you do in English?" },
-      { speaker: "Ben", text: "I can introduce myself and write simple messages." },
-      { speaker: "Mina", text: "Great. Keep practicing." },
-      { speaker: "Ben", text: "Thank you. I will." }
-    ],
-    translation: [
-      "Hai, Ben. Apakah kamu bekerja atau belajar?",
-      "Saya belajar bahasa Inggris online dan bekerja di toko.",
-      "Apa yang kamu suka dari bahasa Inggris?",
-      "Saya suka latihan speaking.",
-      "Apa yang bisa kamu lakukan dalam bahasa Inggris?",
-      "Saya bisa memperkenalkan diri dan menulis pesan sederhana.",
-      "Bagus. Terus berlatih.",
-      "Terima kasih. Saya akan begitu."
-    ],
-    phrases: [
-      { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
-      { phrase: "I study English online and I work in a shop.", meaning: "Saya belajar bahasa Inggris online dan bekerja di toko.", usage: "Combine study and work in one simple sentence." },
-      { phrase: "What do you like about English?", meaning: "Apa yang kamu suka dari bahasa Inggris?", usage: "Ask a preference question." },
-      { phrase: "What can you do in English?", meaning: "Apa yang bisa kamu lakukan dalam bahasa Inggris?", usage: "Ask about ability." },
-      { phrase: "I can introduce myself.", meaning: "Saya bisa memperkenalkan diri.", usage: "Say one English ability." }
-    ],
-    grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
-    prompts: [
-      "Say what you do.",
-      "Say what you like about English.",
-      "Say one thing you can do."
-    ],
-    quiz: [
-      { question: "Which sentence says an ability?", answer: "I can introduce myself." },
-      { question: "Which question asks about work or study?", answer: "Do you work or study?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-where-a-place-is",
-    title: "Asking Where a Place Is",
-    unit: "Places & Directions",
-    conversationGoal: "Ask where a place is and understand a short location answer.",
-    setup: "Kamu berada di gedung kursus baru. Kamu perlu mencari ruang kelas dan bertanya dengan sopan.",
-    dialogue: [
-      { speaker: "Alya", text: "Excuse me. Where is the classroom?" },
-      { speaker: "Ben", text: "It is on the first floor." },
-      { speaker: "Alya", text: "Is it near the office?" },
-      { speaker: "Ben", text: "Yes, it is next to the office." },
-      { speaker: "Alya", text: "Thank you." },
-      { speaker: "Ben", text: "You're welcome." }
-    ],
-    translation: [
-      "Permisi. Di mana ruang kelasnya?",
-      "Ruang kelasnya di lantai satu.",
-      "Apakah dekat kantor?",
-      "Ya, di sebelah kantor.",
-      "Terima kasih.",
-      "Sama-sama."
-    ],
-    phrases: [
-      { phrase: "Excuse me.", meaning: "Permisi.", usage: "Start politely before asking a stranger or staff member." },
-      { phrase: "Where is the classroom?", meaning: "Di mana ruang kelasnya?", usage: "Ask where one place is." },
-      { phrase: "It is on the first floor.", meaning: "Tempatnya di lantai satu.", usage: "Answer with a floor." },
-      { phrase: "It is next to the office.", meaning: "Tempatnya di sebelah kantor.", usage: "Say one place is beside another place." }
-    ],
-    grammar: "Use Where is + place? and answer with It is + location.",
-    prompts: [
-      "Ask where the classroom is.",
-      "Ask if it is near the office.",
-      "Thank the helper."
-    ],
-    quiz: [
-      { question: "Where is the classroom?", answer: "On the first floor." },
-      { question: "What phrase starts the polite question?", answer: "Excuse me." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "simple-place-words",
-    title: "Simple Place Words",
-    unit: "Places & Directions",
-    conversationGoal: "Name common places and answer where someone is going.",
-    setup: "Kamu bicara dengan teman setelah kelas. Kamu menyebut tempat sederhana yang ingin kamu datangi.",
-    dialogue: [
-      { speaker: "Mina", text: "Where are you going?" },
-      { speaker: "Dimas", text: "I'm going to the cafe." },
-      { speaker: "Mina", text: "Is the cafe near here?" },
-      { speaker: "Dimas", text: "Yes. It is near the library." },
-      { speaker: "Mina", text: "Great. I am going to the library." },
-      { speaker: "Dimas", text: "Let's go together." }
-    ],
-    translation: [
-      "Kamu mau pergi ke mana?",
-      "Saya mau pergi ke kafe.",
-      "Apakah kafenya dekat sini?",
-      "Ya. Kafenya dekat perpustakaan.",
-      "Bagus. Saya mau pergi ke perpustakaan.",
-      "Ayo pergi bersama."
-    ],
-    phrases: [
-      { phrase: "Where are you going?", meaning: "Kamu mau pergi ke mana?", usage: "Ask about someone's destination." },
-      { phrase: "I'm going to the cafe.", meaning: "Saya mau pergi ke kafe.", usage: "Say your destination." },
-      { phrase: "near here", meaning: "dekat sini", usage: "Talk about a place close to you." },
-      { phrase: "Let's go together.", meaning: "Ayo pergi bersama.", usage: "Suggest going with someone." }
-    ],
-    grammar: "Use I'm going to + place for a destination.",
-    prompts: [
-      "Say you are going to the cafe.",
-      "Ask if the cafe is near here.",
-      "Suggest going together."
-    ],
-    quiz: [
-      { question: "Where is Dimas going?", answer: "To the cafe." },
-      { question: "Which sentence is correct?", answer: "I'm going to the cafe." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "understanding-simple-directions",
-    title: "Understanding Simple Directions",
-    unit: "Places & Directions",
-    conversationGoal: "Understand very simple directions with go straight, turn left, and turn right.",
-    setup: "Kamu mencari ruang meeting di gedung. Temanmu memberi arahan sederhana.",
-    dialogue: [
-      { speaker: "Sara", text: "Where is the meeting room?" },
-      { speaker: "Ben", text: "Go straight." },
-      { speaker: "Sara", text: "Okay. Go straight." },
-      { speaker: "Ben", text: "Then turn left." },
-      { speaker: "Sara", text: "Turn left?" },
-      { speaker: "Ben", text: "Yes. The room is on the right." },
-      { speaker: "Sara", text: "Thank you. I understand." }
-    ],
-    translation: [
-      "Di mana ruang meetingnya?",
-      "Jalan lurus.",
-      "Oke. Jalan lurus.",
-      "Lalu belok kiri.",
-      "Belok kiri?",
-      "Ya. Ruangannya ada di sebelah kanan.",
-      "Terima kasih. Saya mengerti."
-    ],
-    phrases: [
-      { phrase: "Go straight.", meaning: "Jalan lurus.", usage: "Give a simple forward direction." },
-      { phrase: "Turn left.", meaning: "Belok kiri.", usage: "Tell someone to move left." },
-      { phrase: "on the right", meaning: "di sebelah kanan", usage: "Say where something is on one side." },
-      { phrase: "I understand.", meaning: "Saya mengerti.", usage: "Say the instruction is clear." }
-    ],
-    grammar: "Direction commands can start with the verb: Go straight. Turn left.",
-    prompts: [
-      "Repeat the first direction.",
-      "Confirm the second direction.",
-      "Say you understand."
-    ],
-    quiz: [
-      { question: "What is the first direction?", answer: "Go straight." },
-      { question: "Where is the room?", answer: "On the right." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-how-to-get-there",
-    title: "Asking How to Get There",
-    unit: "Places & Directions",
-    conversationGoal: "Ask how to get to a place and follow two simple steps.",
-    setup: "Kamu ingin ke stasiun dari area kursus. Kamu meminta arahan yang sangat singkat.",
-    dialogue: [
-      { speaker: "Dimas", text: "How do I get to the station?" },
-      { speaker: "Mina", text: "Go straight for two minutes." },
-      { speaker: "Dimas", text: "Okay. Go straight for two minutes." },
-      { speaker: "Mina", text: "Then turn right at the bank." },
-      { speaker: "Dimas", text: "Turn right at the bank?" },
-      { speaker: "Mina", text: "Yes. The station is there." },
-      { speaker: "Dimas", text: "Thank you for your help." }
-    ],
-    translation: [
-      "Bagaimana saya ke stasiun?",
-      "Jalan lurus selama dua menit.",
-      "Oke. Jalan lurus selama dua menit.",
-      "Lalu belok kanan di bank.",
-      "Belok kanan di bank?",
-      "Ya. Stasiunnya di sana.",
-      "Terima kasih atas bantuanmu."
-    ],
-    phrases: [
-      { phrase: "How do I get to the station?", meaning: "Bagaimana saya ke stasiun?", usage: "Ask for directions to a place." },
-      { phrase: "for two minutes", meaning: "selama dua menit", usage: "Say a short walking time." },
-      { phrase: "at the bank", meaning: "di bank", usage: "Use a landmark for directions." },
-      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." }
-    ],
-    grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
-    prompts: [
-      "Ask how to get to the station.",
-      "Repeat the time direction.",
-      "Confirm the landmark."
-    ],
-    quiz: [
-      { question: "Where does Dimas want to go?", answer: "The station." },
-      { question: "Where should he turn right?", answer: "At the bank." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "finding-a-place-mission",
-    title: "Finding a Place Mission",
-    unit: "Places & Directions",
-    conversationGoal: "Complete a short place-finding conversation from question to confirmation.",
-    setup: "Kamu perlu menemukan ruang kelas, lalu memastikan arah dengan orang lain secara sopan.",
-    dialogue: [
-      { speaker: "Ben", text: "Excuse me. How do I get to room A?" },
-      { speaker: "Sara", text: "Go straight and turn left." },
-      { speaker: "Ben", text: "Go straight and turn left." },
-      { speaker: "Sara", text: "Yes. Room A is next to the office." },
-      { speaker: "Ben", text: "Is it on the first floor?" },
-      { speaker: "Sara", text: "Yes, it is." },
-      { speaker: "Ben", text: "Great. Thank you." },
-      { speaker: "Sara", text: "You're welcome." }
-    ],
-    translation: [
-      "Permisi. Bagaimana saya ke ruang A?",
-      "Jalan lurus dan belok kiri.",
-      "Jalan lurus dan belok kiri.",
-      "Ya. Ruang A di sebelah kantor.",
-      "Apakah di lantai satu?",
-      "Ya.",
-      "Bagus. Terima kasih.",
-      "Sama-sama."
-    ],
-    phrases: [
-      { phrase: "How do I get to room A?", meaning: "Bagaimana saya ke ruang A?", usage: "Ask for the way to a room." },
-      { phrase: "Go straight and turn left.", meaning: "Jalan lurus dan belok kiri.", usage: "Join two short direction steps." },
-      { phrase: "next to the office", meaning: "di sebelah kantor", usage: "Use a nearby landmark." },
-      { phrase: "Is it on the first floor?", meaning: "Apakah di lantai satu?", usage: "Confirm the floor." }
-    ],
-    grammar: "Use and to join two simple direction steps: Go straight and turn left.",
-    prompts: [
-      "Ask how to get to room A.",
-      "Repeat the directions.",
-      "Confirm the floor."
-    ],
-    quiz: [
-      { question: "Where does Ben want to go?", answer: "Room A." },
-      { question: "What are the directions?", answer: "Go straight and turn left." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "ordering-a-drink",
-    title: "Ordering a Drink",
-    unit: "Food, Shopping & Prices",
-    conversationGoal: "Order one drink politely and answer a simple size question.",
-    setup: "Kamu berada di kafe kecil setelah kelas. Pesan satu minuman dengan sopan dan jawab pertanyaan ukuran.",
-    dialogue: [
-      { speaker: "Mina", text: "Hi. What would you like?" },
-      { speaker: "Ben", text: "Can I have a tea, please?" },
-      { speaker: "Mina", text: "Small or large?" },
-      { speaker: "Ben", text: "Small, please." },
-      { speaker: "Mina", text: "Anything else?" },
-      { speaker: "Ben", text: "No, thank you." },
-      { speaker: "Mina", text: "Here you go." },
-      { speaker: "Ben", text: "Thank you." }
-    ],
-    translation: [
-      "Hai. Kamu mau pesan apa?",
-      "Boleh saya pesan teh?",
-      "Kecil atau besar?",
-      "Kecil, tolong.",
-      "Ada lagi?",
-      "Tidak, terima kasih.",
-      "Ini pesanannya.",
-      "Terima kasih."
-    ],
-    phrases: [
-      { phrase: "What would you like?", meaning: "Kamu mau pesan apa?", usage: "Staff uses this to ask for an order." },
-      { phrase: "Can I have a tea, please?", meaning: "Boleh saya pesan teh?", usage: "Order politely." },
-      { phrase: "Small or large?", meaning: "Kecil atau besar?", usage: "Ask about size." },
-      { phrase: "No, thank you.", meaning: "Tidak, terima kasih.", usage: "Say you do not want anything else." }
-    ],
-    grammar: "Use Can I have + item, please? to order politely.",
-    prompts: [
-      "Order a tea politely.",
-      "Choose a small size.",
-      "Say you do not want anything else."
-    ],
-    quiz: [
-      { question: "What does Ben order?", answer: "A tea." },
-      { question: "What size does Ben choose?", answer: "Small." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-about-prices",
-    title: "Asking About Prices",
-    unit: "Food, Shopping & Prices",
-    conversationGoal: "Ask the price of one item and understand a short price answer.",
-    setup: "Kamu melihat minuman dan makanan ringan. Tanyakan harga satu item sebelum membeli.",
-    dialogue: [
-      { speaker: "Dimas", text: "Excuse me. How much is the coffee?" },
-      { speaker: "Sara", text: "It is two dollars." },
-      { speaker: "Dimas", text: "Two dollars?" },
-      { speaker: "Sara", text: "Yes, two dollars." },
-      { speaker: "Dimas", text: "How much is the cake?" },
-      { speaker: "Sara", text: "It is three dollars." },
-      { speaker: "Dimas", text: "Okay. Thank you." }
-    ],
-    translation: [
-      "Permisi. Berapa harga kopinya?",
-      "Harganya dua dolar.",
-      "Dua dolar?",
-      "Ya, dua dolar.",
-      "Berapa harga kuenya?",
-      "Harganya tiga dolar.",
-      "Oke. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "How much is the coffee?", meaning: "Berapa harga kopinya?", usage: "Ask the price of one item." },
-      { phrase: "It is two dollars.", meaning: "Harganya dua dolar.", usage: "Answer a simple price." },
-      { phrase: "Two dollars?", meaning: "Dua dolar?", usage: "Repeat the price to confirm." },
-      { phrase: "How much is the cake?", meaning: "Berapa harga kuenya?", usage: "Ask another item price." }
-    ],
-    grammar: "Use How much is + item? and answer with It is + price.",
-    prompts: [
-      "Ask the price of coffee.",
-      "Confirm the price.",
-      "Ask the price of cake."
-    ],
-    quiz: [
-      { question: "How much is the coffee?", answer: "Two dollars." },
-      { question: "How much is the cake?", answer: "Three dollars." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "buying-a-simple-item",
-    title: "Buying a Simple Item",
-    unit: "Food, Shopping & Prices",
-    conversationGoal: "Buy one simple item, ask the price, and complete the payment.",
-    setup: "Kamu berada di toko alat tulis. Kamu membeli satu pulpen dan membayar dengan sopan.",
-    dialogue: [
-      { speaker: "Ben", text: "Excuse me. Can I have this pen?" },
-      { speaker: "Alya", text: "Yes, of course." },
-      { speaker: "Ben", text: "How much is it?" },
-      { speaker: "Alya", text: "It is one dollar." },
-      { speaker: "Ben", text: "Okay. Here you go." },
-      { speaker: "Alya", text: "Thank you. Here is your pen." },
-      { speaker: "Ben", text: "Thanks." }
-    ],
-    translation: [
-      "Permisi. Boleh saya beli pulpen ini?",
-      "Ya, tentu.",
-      "Berapa harganya?",
-      "Harganya satu dolar.",
-      "Oke. Ini uangnya.",
-      "Terima kasih. Ini pulpennya.",
-      "Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Can I have this pen?", meaning: "Boleh saya beli pulpen ini?", usage: "Ask to buy one item near you." },
-      { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price when the item is clear." },
-      { phrase: "Here you go.", meaning: "Ini uangnya / ini barangnya.", usage: "Give money or an item." },
-      { phrase: "Here is your pen.", meaning: "Ini pulpenmu.", usage: "Staff gives one item." }
-    ],
-    grammar: "Use this for one item near you and it after the item is already clear.",
-    prompts: [
-      "Ask to buy this pen.",
-      "Ask the price.",
-      "Give the money politely."
-    ],
-    quiz: [
-      { question: "What does Ben buy?", answer: "A pen." },
-      { question: "How much is the pen?", answer: "One dollar." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-what-you-want",
-    title: "Saying What You Want",
-    unit: "Food, Shopping & Prices",
-    conversationGoal: "Say what you want and choose between two simple options.",
-    setup: "Kamu memilih makanan ringan di kafe. Katakan apa yang kamu mau dan jawab pilihan sederhana.",
-    dialogue: [
-      { speaker: "Sara", text: "What do you want?" },
-      { speaker: "Dimas", text: "I want a sandwich." },
-      { speaker: "Sara", text: "Do you want tea or coffee?" },
-      { speaker: "Dimas", text: "Tea, please." },
-      { speaker: "Sara", text: "Do you want sugar?" },
-      { speaker: "Dimas", text: "No sugar, please." },
-      { speaker: "Sara", text: "Okay." }
-    ],
-    translation: [
-      "Kamu mau apa?",
-      "Saya mau sandwich.",
-      "Kamu mau teh atau kopi?",
-      "Teh, tolong.",
-      "Kamu mau gula?",
-      "Tanpa gula, tolong.",
-      "Oke."
-    ],
-    phrases: [
-      { phrase: "What do you want?", meaning: "Kamu mau apa?", usage: "Ask a simple preference question." },
-      { phrase: "I want a sandwich.", meaning: "Saya mau sandwich.", usage: "Say what you want." },
-      { phrase: "Tea, please.", meaning: "Teh, tolong.", usage: "Choose one option politely." },
-      { phrase: "No sugar, please.", meaning: "Tanpa gula, tolong.", usage: "Say you do not want an extra item." }
-    ],
-    grammar: "Use I want + item and No + item, please for simple preferences.",
-    prompts: [
-      "Say you want a sandwich.",
-      "Choose tea politely.",
-      "Say no sugar politely."
-    ],
-    quiz: [
-      { question: "What does Dimas want?", answer: "A sandwich." },
-      { question: "What drink does Dimas choose?", answer: "Tea." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "cafe-and-shop-mission",
-    title: "Cafe and Shop Mission",
-    unit: "Food, Shopping & Prices",
-    conversationGoal: "Order, ask a price, choose an option, and complete a simple purchase.",
-    setup: "Ini misi akhir unit. Kamu memesan minuman dan makanan kecil, bertanya harga, memilih opsi, lalu membayar.",
-    dialogue: [
-      { speaker: "Mina", text: "Hi. What would you like?" },
-      { speaker: "Ben", text: "Can I have a coffee and a sandwich, please?" },
-      { speaker: "Mina", text: "Sure. Small or large coffee?" },
-      { speaker: "Ben", text: "Small, please. How much is it?" },
-      { speaker: "Mina", text: "It is five dollars." },
-      { speaker: "Ben", text: "Okay. Here you go." },
-      { speaker: "Mina", text: "Thank you. Here is your order." },
-      { speaker: "Ben", text: "Thanks." }
-    ],
-    translation: [
-      "Hai. Kamu mau pesan apa?",
-      "Boleh saya pesan kopi dan sandwich?",
-      "Tentu. Kopi kecil atau besar?",
-      "Kecil, tolong. Berapa semuanya?",
-      "Totalnya lima dolar.",
-      "Oke. Ini uangnya.",
-      "Terima kasih. Ini pesananmu.",
-      "Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Can I have a coffee and a sandwich, please?", meaning: "Boleh saya pesan kopi dan sandwich?", usage: "Order two items politely." },
-      { phrase: "Small or large coffee?", meaning: "Kopi kecil atau besar?", usage: "Ask about size." },
-      { phrase: "How much is it?", meaning: "Berapa semuanya?", usage: "Ask the total price." },
-      { phrase: "Here is your order.", meaning: "Ini pesananmu.", usage: "Staff gives the order." }
-    ],
-    grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
-    prompts: [
-      "Order coffee and a sandwich.",
-      "Choose a small coffee.",
-      "Ask the total price."
-    ],
-    quiz: [
-      { question: "What does Ben order?", answer: "Coffee and a sandwich." },
-      { question: "How much is it?", answer: "Five dollars." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "saying-you-do-not-understand",
-    title: "Saying You Do Not Understand",
-    unit: "Help, Problems & Requests",
-    conversationGoal: "Say you do not understand and ask for repetition politely.",
-    setup: "Kamu sedang belajar online dan tidak paham satu instruksi. Katakan dengan sopan bahwa kamu belum mengerti.",
-    dialogue: [
-      { speaker: "Alya", text: "Sorry, I don't understand." },
-      { speaker: "Ben", text: "That's okay. I can say it again." },
-      { speaker: "Alya", text: "Can you repeat that, please?" },
-      { speaker: "Ben", text: "Yes. Open your book." },
-      { speaker: "Alya", text: "Open my book?" },
-      { speaker: "Ben", text: "Yes, that's right." },
-      { speaker: "Alya", text: "Thank you. I understand now." }
-    ],
-    translation: [
-      "Maaf, saya tidak mengerti.",
-      "Tidak apa-apa. Saya bisa mengulanginya.",
-      "Bisa ulangi itu, tolong?",
-      "Ya. Buka bukumu.",
-      "Buka buku saya?",
-      "Ya, benar.",
-      "Terima kasih. Sekarang saya mengerti."
-    ],
-    phrases: [
-      { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Use this when you miss meaning or instructions." },
-      { phrase: "Can you repeat that, please?", meaning: "Bisa ulangi itu, tolong?", usage: "Ask someone to say it again politely." },
-      { phrase: "Open my book?", meaning: "Buka buku saya?", usage: "Repeat key words to confirm." },
-      { phrase: "I understand now.", meaning: "Sekarang saya mengerti.", usage: "Say the explanation is clear." }
-    ],
-    grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
-    prompts: [
-      "Say you do not understand.",
-      "Ask the speaker to repeat.",
-      "Say you understand now."
-    ],
-    quiz: [
-      { question: "What does Alya ask Ben to do?", answer: "Repeat." },
-      { question: "Which sentence is correct?", answer: "I don't understand." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "asking-for-help",
-    title: "Asking for Help",
-    unit: "Help, Problems & Requests",
-    conversationGoal: "Ask for help with one simple task and respond to the helper.",
-    setup: "Kamu kesulitan membuka file kelas. Minta bantuan singkat dan sopan.",
-    dialogue: [
-      { speaker: "Dimas", text: "Excuse me. Can you help me?" },
-      { speaker: "Sara", text: "Sure. What is the problem?" },
-      { speaker: "Dimas", text: "I can't open this file." },
-      { speaker: "Sara", text: "Okay. Click this button." },
-      { speaker: "Dimas", text: "This button?" },
-      { speaker: "Sara", text: "Yes. Try again." },
-      { speaker: "Dimas", text: "It works. Thank you." }
-    ],
-    translation: [
-      "Permisi. Bisa bantu saya?",
-      "Tentu. Apa masalahnya?",
-      "Saya tidak bisa membuka file ini.",
-      "Oke. Klik tombol ini.",
-      "Tombol ini?",
-      "Ya. Coba lagi.",
-      "Berhasil. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Can you help me?", meaning: "Bisa bantu saya?", usage: "Ask for help politely." },
-      { phrase: "What is the problem?", meaning: "Apa masalahnya?", usage: "Ask what is wrong." },
-      { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain one problem clearly." },
-      { phrase: "It works.", meaning: "Berhasil.", usage: "Say the solution works." }
-    ],
-    grammar: "Use can for help requests and can't + verb for simple problems.",
-    prompts: [
-      "Ask for help.",
-      "Explain the file problem.",
-      "Say the solution works."
-    ],
-    quiz: [
-      { question: "What problem does Dimas have?", answer: "He can't open a file." },
-      { question: "Which sentence asks for help?", answer: "Can you help me?" }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "making-simple-requests",
-    title: "Making Simple Requests",
-    unit: "Help, Problems & Requests",
-    conversationGoal: "Make a simple request with please and respond to yes or no.",
-    setup: "Kamu sedang di kelas online. Kamu perlu meminta link dan meminta teman menunggu sebentar.",
-    dialogue: [
-      { speaker: "Mina", text: "Can you send me the link, please?" },
-      { speaker: "Ben", text: "Yes, of course." },
-      { speaker: "Mina", text: "Thank you." },
-      { speaker: "Ben", text: "Can you wait a minute?" },
-      { speaker: "Mina", text: "Sure. No problem." },
-      { speaker: "Ben", text: "Here is the link." },
-      { speaker: "Mina", text: "Great. Thanks." }
-    ],
-    translation: [
-      "Bisa kirimkan linknya, tolong?",
-      "Ya, tentu.",
-      "Terima kasih.",
-      "Bisa tunggu sebentar?",
-      "Tentu. Tidak masalah.",
-      "Ini linknya.",
-      "Bagus. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Can you send me the link, please?", meaning: "Bisa kirimkan linknya, tolong?", usage: "Make a polite request for a link." },
-      { phrase: "Yes, of course.", meaning: "Ya, tentu.", usage: "Accept a request warmly." },
-      { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Ask someone to wait briefly." },
-      { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a small request calmly." }
-    ],
-    grammar: "Use Can you + verb + please? for a polite request.",
-    prompts: [
-      "Ask someone to send the link.",
-      "Accept a request to wait.",
-      "Thank the person."
-    ],
-    quiz: [
-      { question: "What does Mina ask for?", answer: "The link." },
-      { question: "Which phrase accepts a request?", answer: "Sure. No problem." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "apologizing-and-thanking",
-    title: "Apologizing and Thanking",
-    unit: "Help, Problems & Requests",
-    conversationGoal: "Apologize for a small problem and thank someone for help.",
-    setup: "Kamu terlambat masuk kelas online karena masalah koneksi. Minta maaf dan ucapkan terima kasih ketika dibantu.",
-    dialogue: [
-      { speaker: "Ben", text: "Sorry I'm late." },
-      { speaker: "Sara", text: "That's okay." },
-      { speaker: "Ben", text: "My internet was slow." },
-      { speaker: "Sara", text: "No problem. Please join the class." },
-      { speaker: "Ben", text: "Thank you for waiting." },
-      { speaker: "Sara", text: "You're welcome." },
-      { speaker: "Ben", text: "I am ready now." }
-    ],
-    translation: [
-      "Maaf saya terlambat.",
-      "Tidak apa-apa.",
-      "Internet saya lambat.",
-      "Tidak masalah. Silakan masuk kelas.",
-      "Terima kasih sudah menunggu.",
-      "Sama-sama.",
-      "Sekarang saya siap."
-    ],
-    phrases: [
-      { phrase: "Sorry I'm late.", meaning: "Maaf saya terlambat.", usage: "Apologize when you arrive late." },
-      { phrase: "That's okay.", meaning: "Tidak apa-apa.", usage: "Accept an apology." },
-      { phrase: "My internet was slow.", meaning: "Internet saya lambat.", usage: "Give one short reason." },
-      { phrase: "Thank you for waiting.", meaning: "Terima kasih sudah menunggu.", usage: "Thank someone for waiting." }
-    ],
-    grammar: "Use Sorry + short sentence and Thank you for + ing.",
-    prompts: [
-      "Apologize for being late.",
-      "Give one simple reason.",
-      "Thank the teacher for waiting."
-    ],
-    quiz: [
-      { question: "Why is Ben late?", answer: "His internet was slow." },
-      { question: "What does Ben thank Sara for?", answer: "Waiting." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "help-and-problem-mission",
-    title: "Help and Problem Mission",
-    unit: "Help, Problems & Requests",
-    conversationGoal: "Explain a simple problem, ask for help, make a request, and close politely.",
-    setup: "Ini misi akhir unit. Kamu tidak paham instruksi, punya masalah file, lalu meminta bantuan dan berterima kasih.",
-    dialogue: [
-      { speaker: "Alya", text: "Sorry, I don't understand." },
-      { speaker: "Dimas", text: "That's okay. What is the problem?" },
-      { speaker: "Alya", text: "I can't open this file." },
-      { speaker: "Dimas", text: "Can you send me a screenshot?" },
-      { speaker: "Alya", text: "Sure. Can you wait a minute?" },
-      { speaker: "Dimas", text: "No problem." },
-      { speaker: "Alya", text: "Here is the screenshot." },
-      { speaker: "Dimas", text: "Good. Click this button." },
-      { speaker: "Alya", text: "It works. Thank you for your help." }
-    ],
-    translation: [
-      "Maaf, saya tidak mengerti.",
-      "Tidak apa-apa. Apa masalahnya?",
-      "Saya tidak bisa membuka file ini.",
-      "Bisa kirimkan screenshot?",
-      "Tentu. Bisa tunggu sebentar?",
-      "Tidak masalah.",
-      "Ini screenshotnya.",
-      "Bagus. Klik tombol ini.",
-      "Berhasil. Terima kasih atas bantuanmu."
-    ],
-    phrases: [
-      { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Start honestly when you need clarification." },
-      { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain a simple technical problem." },
-      { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Make a polite time request." },
-      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close after help." }
-    ],
-    grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
-    prompts: [
-      "Say you do not understand.",
-      "Explain the file problem.",
-      "Ask the helper to wait."
-    ],
-    quiz: [
-      { question: "What problem does Alya have?", answer: "She can't open a file." },
-      { question: "What does Dimas ask Alya to send?", answer: "A screenshot." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "review-introductions",
-    title: "Review Introductions",
-    unit: "A1 Review & Final Conversation",
-    conversationGoal: "Greet someone, introduce yourself, say where you are from, and ask simple follow-up questions.",
-    setup: "Ini review awal sebelum final A1. Kamu bertemu teman kelas baru dan merapikan pola greeting, name, origin, dan closing.",
-    dialogue: [
-      { speaker: "Sara", text: "Hi, good morning." },
-      { speaker: "Dimas", text: "Good morning. My name is Dimas." },
-      { speaker: "Sara", text: "Nice to meet you, Dimas. I'm Sara." },
-      { speaker: "Dimas", text: "Nice to meet you too, Sara." },
-      { speaker: "Sara", text: "Where are you from?" },
-      { speaker: "Dimas", text: "I'm from Indonesia. How about you?" },
-      { speaker: "Sara", text: "I'm from Malaysia, and I live in Jakarta now." },
-      { speaker: "Dimas", text: "Oh, nice. See you in class." }
-    ],
-    translation: [
-      "Hai, selamat pagi.",
-      "Selamat pagi. Nama saya Dimas.",
-      "Senang bertemu denganmu, Dimas. Saya Sara.",
-      "Senang bertemu denganmu juga, Sara.",
-      "Kamu dari mana?",
-      "Saya dari Indonesia. Kalau kamu?",
-      "Saya dari Malaysia, dan sekarang saya tinggal di Jakarta.",
-      "Oh, bagus. Sampai bertemu di kelas."
-    ],
-    phrases: [
-      { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Use this for a clear self-introduction." },
-      { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Reply after someone says Nice to meet you." },
-      { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Say your origin." },
-      { phrase: "I live in Jakarta now.", meaning: "Saya tinggal di Jakarta sekarang.", usage: "Say your current city." },
-      { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." }
-    ],
-    grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
-    prompts: [
-      "Introduce yourself with your name.",
-      "Say where you are from.",
-      "Ask the same question back.",
-      "Close the conversation politely."
-    ],
-    quiz: [
-      { question: "What is Dimas's opening introduction?", answer: "My name is Dimas." },
-      { question: "Where is Sara from?", answer: "Malaysia." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "review-routines-and-time",
-    title: "Review Routines and Time",
-    unit: "A1 Review & Final Conversation",
-    conversationGoal: "Talk about a simple daily routine, class day, and class time in one short conversation.",
-    setup: "Kamu ngobrol dengan teman kelas tentang rutinitas pagi dan jadwal kelas. Fokus pada time, days, dan simple present.",
-    dialogue: [
-      { speaker: "Alya", text: "What do you do in the morning?" },
-      { speaker: "Ben", text: "I wake up at six." },
-      { speaker: "Alya", text: "Do you study English every day?" },
-      { speaker: "Ben", text: "Yes, I study English at seven." },
-      { speaker: "Alya", text: "When is our speaking class?" },
-      { speaker: "Ben", text: "It is on Tuesday at eight." },
-      { speaker: "Alya", text: "Great. See you on Tuesday." },
-      { speaker: "Ben", text: "See you then." }
-    ],
-    translation: [
-      "Apa yang kamu lakukan di pagi hari?",
-      "Saya bangun jam enam.",
-      "Apakah kamu belajar bahasa Inggris setiap hari?",
-      "Ya, saya belajar bahasa Inggris jam tujuh.",
-      "Kapan kelas speaking kita?",
-      "Hari Selasa jam delapan.",
-      "Bagus. Sampai bertemu hari Selasa.",
-      "Sampai nanti."
-    ],
-    phrases: [
-      { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a routine and time." },
-      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
-      { phrase: "When is our speaking class?", meaning: "Kapan kelas speaking kita?", usage: "Ask about a schedule." },
-      { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Say day and time together." },
-      { phrase: "See you then.", meaning: "Sampai nanti.", usage: "Close after confirming a time." }
-    ],
-    grammar: "Use at for clock time, on for days, and simple present for routines.",
-    prompts: [
-      "Say when you wake up.",
-      "Say your English routine.",
-      "Ask about class time.",
-      "Confirm the day and time."
-    ],
-    quiz: [
-      { question: "What time does Ben wake up?", answer: "At six." },
-      { question: "When is the speaking class?", answer: "On Tuesday at eight." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "review-places-and-shopping",
-    title: "Review Places and Shopping",
-    unit: "A1 Review & Final Conversation",
-    conversationGoal: "Ask where a place is, follow simple directions, order one item, and ask the price.",
-    setup: "Kamu mencari cafe dekat kelas, lalu membeli satu minuman. Ini menggabungkan places, directions, ordering, dan prices.",
-    dialogue: [
-      { speaker: "Mina", text: "Excuse me. Where is the cafe?" },
-      { speaker: "Ben", text: "Go straight and turn right." },
-      { speaker: "Mina", text: "Is it next to the library?" },
-      { speaker: "Ben", text: "Yes, it is. I work there. Come with me." },
-      { speaker: "Mina", text: "Thank you." },
-      { speaker: "Ben", text: "Here we are. Welcome to the cafe. What would you like?" },
-      { speaker: "Mina", text: "Hi. I would like one tea, please." },
-      { speaker: "Ben", text: "Sure. It is two dollars." },
-      { speaker: "Mina", text: "Here you go. Thank you." }
-    ],
-    translation: [
-      "Permisi. Di mana cafenya?",
-      "Jalan lurus dan belok kanan.",
-      "Apakah di sebelah perpustakaan?",
-      "Ya, benar. Saya bekerja di sana. Ikut saya.",
-      "Terima kasih.",
-      "Kita sampai. Selamat datang di cafe. Mau pesan apa?",
-      "Hai. Saya mau satu teh, tolong.",
-      "Tentu. Harganya dua dolar.",
-      "Ini uangnya. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
-      { phrase: "Go straight and turn right.", meaning: "Jalan lurus dan belok kanan.", usage: "Give two simple directions." },
-      { phrase: "Is it next to the library?", meaning: "Apakah di sebelah perpustakaan?", usage: "Confirm a place." },
-      { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
-      { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." }
-    ],
-    grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
-    prompts: [
-      "Ask where the cafe is.",
-      "Confirm the place near the library.",
-      "Order one tea politely.",
-      "Ask the price."
-    ],
-    quiz: [
-      { question: "Where is the cafe?", answer: "Next to the library." },
-      { question: "What does Mina order?", answer: "One tea." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "final-test-practice",
-    title: "Final Test Practice",
-    unit: "A1 Review & Final Conversation",
-    conversationGoal: "Answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
-    setup: "Ini latihan sebelum final test. Kamu menjawab beberapa pertanyaan pendek dari examiner dengan kalimat sederhana dan jelas.",
-    dialogue: [
-      { speaker: "Sara", text: "Hello. What is your name?" },
-      { speaker: "Alya", text: "My name is Alya." },
-      { speaker: "Sara", text: "Where are you from?" },
-      { speaker: "Alya", text: "I'm from Indonesia." },
-      { speaker: "Sara", text: "What do you do every morning?" },
-      { speaker: "Alya", text: "I study English at seven." },
-      { speaker: "Sara", text: "Good. When is your class?" },
-      { speaker: "Alya", text: "Sorry, can you repeat that, please?" },
-      { speaker: "Sara", text: "Sure. When is your class?" },
-      { speaker: "Alya", text: "It is on Tuesday at eight." }
-    ],
-    translation: [
-      "Halo. Siapa namamu?",
-      "Nama saya Alya.",
-      "Kamu dari mana?",
-      "Saya dari Indonesia.",
-      "Apa yang kamu lakukan setiap pagi?",
-      "Saya belajar bahasa Inggris jam tujuh.",
-      "Bagus. Kapan kelasmu?",
-      "Maaf, bisa diulang, tolong?",
-      "Tentu. Kapan kelasmu?",
-      "Hari Selasa jam delapan."
-    ],
-    phrases: [
-      { phrase: "My name is Alya.", meaning: "Nama saya Alya.", usage: "Answer identity questions." },
-      { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Answer origin questions." },
-      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Talk about a routine." },
-      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for repetition in a test." },
-      { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Answer day and time." }
-    ],
-    grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
-    prompts: [
-      "Answer the name question.",
-      "Answer where you are from.",
-      "Say your English routine.",
-      "Ask the examiner to repeat."
-    ],
-    quiz: [
-      { question: "What does Alya do at seven?", answer: "She studies English." },
-      { question: "When is Alya's class?", answer: "On Tuesday at eight." }
-    ],
-    sections: lessonSections
-  },
-  {
-    slug: "a1-final-conversation",
-    title: "A1 Final Conversation",
-    unit: "A1 Review & Final Conversation",
-    conversationGoal: "Complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
-    setup: "Ini misi final A1. Kamu melakukan percakapan lebih panjang, tetapi kalimat tetap pendek, jelas, dan sesuai level A1.",
-    dialogue: [
-      { speaker: "Ben", text: "Hi, good morning. What is your name?" },
-      { speaker: "Mina", text: "Good morning. My name is Mina." },
-      { speaker: "Ben", text: "Nice to meet you, Mina. Where are you from?" },
-      { speaker: "Mina", text: "I'm from Indonesia. How about you?" },
-      { speaker: "Ben", text: "I'm from Malaysia. What do you do every morning?" },
-      { speaker: "Mina", text: "I study English at seven. By the way, where is the cafe?" },
-      { speaker: "Ben", text: "It's close. Go straight and turn left." },
-      { speaker: "Mina", text: "Thank you very much." },
-      { speaker: "Ben", text: "You're welcome. Have a nice day." },
-      { speaker: "Staff", text: "Hello! Welcome to the cafe. What would you like?" },
-      { speaker: "Mina", text: "Hello. I would like one tea, please." },
-      { speaker: "Staff", text: "Sure. It is two dollars." },
-      { speaker: "Mina", text: "Sorry, can you repeat that, please?" },
-      { speaker: "Staff", text: "It is two dollars." },
-      { speaker: "Mina", text: "Okay. Here you go. Thank you." }
-    ],
-    translation: [
-      "Hai, selamat pagi. Siapa namamu?",
-      "Selamat pagi. Nama saya Mina.",
-      "Senang bertemu denganmu, Mina. Kamu dari mana?",
-      "Saya dari Indonesia. Kalau kamu?",
-      "Saya dari Malaysia. Apa yang kamu lakukan setiap pagi?",
-      "Saya belajar bahasa Inggris jam tujuh. Ngomong-ngomong, di mana cafenya?",
-      "Dekat. Jalan lurus dan belok kiri.",
-      "Terima kasih banyak.",
-      "Sama-sama. Semoga harimu menyenangkan.",
-      "Halo! Selamat datang di cafe. Mau pesan apa?",
-      "Halo. Saya mau satu teh, tolong.",
-      "Tentu. Harganya dua dolar.",
-      "Maaf, bisa diulang, tolong?",
-      "Harganya dua dolar.",
-      "Oke. Ini uangnya. Terima kasih."
-    ],
-    phrases: [
-      { phrase: "My name is Mina.", meaning: "Nama saya Mina.", usage: "Introduce yourself clearly." },
-      { phrase: "I'm from Indonesia. How about you?", meaning: "Saya dari Indonesia. Kalau kamu?", usage: "Answer and ask back." },
-      { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a routine and time." },
-      { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
-      { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
-      { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for clarification." },
-      { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." }
-    ],
-    grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
-    prompts: [
-      "Introduce yourself.",
-      "Say your origin and ask back.",
-      "Ask where the cafe is.",
-      "Order one tea.",
-      "Ask for repetition.",
-      "Close with thanks."
-    ],
-    quiz: [
-      { question: "What is Mina's routine?", answer: "She studies English at seven." },
-      { question: "What does Mina order?", answer: "One tea." }
-    ],
-    sections: lessonSections
-  }
+  // <generated:lessons>
+    {
+      slug: "saying-hello-and-goodbye",
+      title: "Saying Hello and Goodbye",
+      unit: "Greeting & Introducing Yourself",
+      conversationGoal: "Start and close a very simple English conversation.",
+      setup: "Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.",
+      dialogue: [
+        { speaker: "Alya", text: "Hi, good morning." },
+        { speaker: "Ben", text: "Good morning. How are you?" },
+        { speaker: "Alya", text: "I'm good, thank you. Nice to meet you." },
+        { speaker: "Ben", text: "Nice to meet you too. See you later." },
+        { speaker: "Alya", text: "See you." },
+      ],
+      translation: [
+        "Hai, selamat pagi.",
+        "Selamat pagi. Apa kabar?",
+        "Aku baik, terima kasih. Senang bertemu denganmu.",
+        "Senang bertemu denganmu juga. Sampai nanti.",
+        "Sampai jumpa.",
+      ],
+      phrases: [
+        { phrase: "Good morning", meaning: "Selamat pagi", usage: "Use before noon." },
+        { phrase: "How are you?", meaning: "Apa kabar?", usage: "Friendly opening question." },
+        { phrase: "I'm good, thank you.", meaning: "Aku baik, terima kasih.", usage: "Simple polite answer." },
+        { phrase: "Nice to meet you.", meaning: "Senang bertemu denganmu.", usage: "Use when meeting someone for the first time." },
+        { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Casual conversation closing." },
+      ],
+      grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
+      prompts: [
+        "Good morning.",
+        "How are you?",
+        "See you later.",
+      ],
+      quiz: [
+        { question: "Which phrase is best for meeting someone for the first time?", answer: "Nice to meet you" },
+        { question: "What does \"See you later\" mean?", answer: "Sampai nanti" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-your-name",
+      title: "Saying Your Name",
+      unit: "Greeting & Introducing Yourself",
+      conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
+      setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
+      dialogue: [
+        { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
+        { speaker: "Arif", text: "Hi Sara. My name is Arif." },
+        { speaker: "Sara", text: "Nice to meet you, Arif." },
+        { speaker: "Arif", text: "Nice to meet you too." },
+      ],
+      translation: [
+        "Hai, nama saya Sara. Siapa namamu?",
+        "Hai Sara. Nama saya Arif.",
+        "Senang bertemu denganmu, Arif.",
+        "Senang bertemu denganmu juga.",
+      ],
+      phrases: [
+        { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Clear, neutral way to say your name." },
+        { phrase: "I'm ...", meaning: "Saya ...", usage: "Natural shorter form for introductions." },
+        { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Use after someone says nice to meet you." },
+        { phrase: "Please call me ...", meaning: "Panggil saya ...", usage: "Use when your nickname is easier." },
+      ],
+      grammar: "Use My name is + name for clear introductions. Use I'm + name for a shorter, more natural answer.",
+      prompts: [
+        "My name is ...",
+        "Nice to meet you.",
+        "Please call me ...",
+      ],
+      quiz: [
+        { question: "Which sentence is correct?", answer: "My name is Arif." },
+        { question: "What is a natural reply to \"Nice to meet you\"?", answer: "Nice to meet you too." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-someones-name",
+      title: "Asking Someone's Name",
+      unit: "Greeting & Introducing Yourself",
+      conversationGoal: "Ask someone's name politely and confirm what you heard.",
+      setup: "Kamu bertemu peserta baru di kelas. Tanyakan namanya, lalu ulangi nama itu dengan sopan.",
+      dialogue: [
+        { speaker: "Nina", text: "Hello. What's your name?" },
+        { speaker: "Raka", text: "My name is Raka." },
+        { speaker: "Nina", text: "Sorry, can you repeat that?" },
+        { speaker: "Raka", text: "Raka. R-A-K-A." },
+        { speaker: "Nina", text: "Thank you, Raka." },
+      ],
+      translation: [
+        "Halo. Siapa namamu?",
+        "Nama saya Raka.",
+        "Maaf, bisa ulangi?",
+        "Raka. R-A-K-A.",
+        "Terima kasih, Raka.",
+      ],
+      phrases: [
+        { phrase: "What's your name?", meaning: "Siapa namamu?", usage: "Common simple question." },
+        { phrase: "May I know your name?", meaning: "Boleh tahu nama Anda?", usage: "More polite version." },
+        { phrase: "Is it Mina?", meaning: "Apakah Mina?", usage: "Use to confirm a name." },
+        { phrase: "Nice to meet you, ...", meaning: "Senang bertemu denganmu, ...", usage: "Add the person's name to sound attentive." },
+      ],
+      grammar: "Use What's your + noun for simple questions: What's your name? What's your job?",
+      prompts: [
+        "What's your name?",
+        "Is it ...?",
+        "Nice to meet you, ...",
+      ],
+      quiz: [
+        { question: "Which question asks for a name?", answer: "What's your name?" },
+        { question: "Which phrase sounds more polite?", answer: "May I know your name?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-where-you-are-from",
+      title: "Saying Where You Are From",
+      unit: "Greeting & Introducing Yourself",
+      conversationGoal: "Say where you are from and ask the same question back.",
+      setup: "Kamu melanjutkan perkenalan singkat. Jawab asalmu, lalu tanyakan balik agar percakapan berjalan.",
+      dialogue: [
+        { speaker: "Maya", text: "Hi, I'm Maya. I'm from Indonesia." },
+        { speaker: "Omar", text: "Nice to meet you, Maya. I'm Omar." },
+        { speaker: "Maya", text: "Nice to meet you too. Where are you from?" },
+        { speaker: "Omar", text: "I'm from Malaysia." },
+      ],
+      translation: [
+        "Hai, saya Maya. Saya dari Indonesia.",
+        "Senang bertemu denganmu, Maya. Saya Omar.",
+        "Senang bertemu denganmu juga. Kamu dari mana?",
+        "Saya dari Malaysia.",
+      ],
+      phrases: [
+        { phrase: "I'm from ...", meaning: "Saya dari ...", usage: "Simple answer for origin." },
+        { phrase: "I live in ...", meaning: "Saya tinggal di ...", usage: "Use for current city." },
+        { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
+        { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "A complete model answer." },
+      ],
+      grammar: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta.",
+      prompts: [
+        "Where are you from?",
+        "I live in ...",
+        "How about you?",
+      ],
+      quiz: [
+        { question: "Which sentence talks about origin?", answer: "I'm from Indonesia." },
+        { question: "Which phrase keeps the conversation going?", answer: "How about you?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "first-conversation-mission",
+      title: "First Conversation Mission",
+      unit: "Greeting & Introducing Yourself",
+      conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
+      setup: "Ini misi gabungan Unit 1. Selesaikan percakapan pendek tanpa melihat contoh terlalu sering.",
+      dialogue: [
+        { speaker: "Lina", text: "Hi, my name is Lina. What is your name?" },
+        { speaker: "Adi", text: "Hi Lina. I'm Adi. Nice to meet you." },
+        { speaker: "Lina", text: "Nice to meet you too. I'm from Indonesia. Where are you from?" },
+        { speaker: "Adi", text: "I'm from Indonesia too. See you later." },
+        { speaker: "Lina", text: "See you." },
+      ],
+      translation: [
+        "Hai, nama saya Lina. Siapa namamu?",
+        "Hai Lina. Saya Adi. Senang bertemu denganmu.",
+        "Senang bertemu denganmu juga. Saya dari Indonesia. Kamu dari mana?",
+        "Saya juga dari Indonesia. Sampai nanti.",
+        "Sampai jumpa.",
+      ],
+      phrases: [
+        { phrase: "Good morning. My name is ...", meaning: "Selamat pagi. Nama saya ...", usage: "Open and introduce yourself." },
+        { phrase: "Where are you from?", meaning: "Kamu dari mana?", usage: "Ask about origin." },
+        { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Return the question." },
+        { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Close the conversation." },
+      ],
+      grammar: "Keep A1 conversations short: greeting + name + origin + question back + closing.",
+      prompts: [
+        "Hi, good morning. My name is ...",
+        "Where are you from?",
+        "Nice to meet you.",
+      ],
+      quiz: [
+        { question: "What should you say after someone says \"Nice to meet you\"?", answer: "Nice to meet you too." },
+        { question: "Which question can you ask back after answering your origin?", answer: "How about you?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "spelling-your-name",
+      title: "Spelling Your Name",
+      unit: "Spelling, Numbers & Contact Details",
+      conversationGoal: "Spell your name clearly when someone needs to write it down.",
+      setup: "Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas saat diminta.",
+      dialogue: [
+        { speaker: "Officer", text: "Hi. What is your name?" },
+        { speaker: "Dimas", text: "My name is Dimas." },
+        { speaker: "Officer", text: "How do you spell it?" },
+        { speaker: "Dimas", text: "It's spelled D-I-M-A-S." },
+        { speaker: "Officer", text: "Thank you. Let me read it back. D-I-M-A-S." },
+        { speaker: "Dimas", text: "That's right." },
+      ],
+      translation: [
+        "Hai. Siapa namamu?",
+        "Nama saya Dimas.",
+        "Bagaimana cara mengejanya?",
+        "Ejaannya D-I-M-A-S.",
+        "Terima kasih. Saya ulangi ya. D-I-M-A-S.",
+        "Betul.",
+      ],
+      phrases: [
+        { phrase: "How do you spell it?", meaning: "Bagaimana cara mengejanya?", usage: "Ask someone to spell a word or name." },
+        { phrase: "Let me spell it for you.", meaning: "Biar saya ejakan untukmu.", usage: "Offer to spell your name before being asked." },
+        { phrase: "It's spelled D-I-M-A-S.", meaning: "Ejaannya D-I-M-A-S.", usage: "Say each letter clearly, one by one." },
+        { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask for a repeat when you miss a letter." },
+        { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." },
+      ],
+      grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
+      prompts: [
+        "What is your name?",
+        "How do you spell it?",
+        "Let me read it back. D-I-M-A-S.",
+      ],
+      quiz: [
+        { question: "Which question asks someone to spell a word?", answer: "How do you spell it?" },
+        { question: "What does \"That's right\" mean?", answer: "Betul" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "giving-phone-numbers",
+      title: "Giving Phone Numbers",
+      unit: "Spelling, Numbers & Contact Details",
+      conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
+      setup: "Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.",
+      dialogue: [
+        { speaker: "Officer", text: "What is your phone number?" },
+        { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
+        { speaker: "Officer", text: "Let me check. Zero eight one two, three four five six, seven eight nine zero?" },
+        { speaker: "Dimas", text: "Yes, that's correct." },
+        { speaker: "Officer", text: "Thank you. We will send you a message." },
+        { speaker: "Dimas", text: "Thank you." },
+      ],
+      translation: [
+        "Berapa nomor teleponmu?",
+        "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
+        "Saya cek ya. Nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol?",
+        "Ya, itu benar.",
+        "Terima kasih. Kami akan mengirim pesan kepadamu.",
+        "Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "What is your phone number?", meaning: "Berapa nomor teleponmu?", usage: "Ask for a phone number in a clear, direct way." },
+        { phrase: "It's zero eight one two.", meaning: "Nomornya nol delapan satu dua.", usage: "Start giving a phone number." },
+        { phrase: "Let me check.", meaning: "Saya cek ya.", usage: "Introduce a quick confirmation before repeating information." },
+        { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm that the repeated information is right." },
+        { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask politely when you miss a number." },
+      ],
+      grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
+      prompts: [
+        "What is your phone number?",
+        "Let me check. Zero eight one two, three four five six?",
+        "My number is zero eight one two, three four five six.",
+      ],
+      quiz: [
+        { question: "Which question asks for a phone number?", answer: "What is your phone number?" },
+        { question: "What does \"Yes, that's correct\" mean?", answer: "Ya, itu benar" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "sharing-email-addresses",
+      title: "Sharing Email Addresses",
+      unit: "Spelling, Numbers & Contact Details",
+      conversationGoal: "Share an email address slowly and spell the important parts.",
+      setup: "Kamu ingin menerima informasi kelas lewat email. Petugas meminta alamat emailmu. Sebutkan alamat email dengan pelan, lalu eja bagian yang penting.",
+      dialogue: [
+        { speaker: "Officer", text: "What is your email address?" },
+        { speaker: "Ben", text: "It's ben dot rama at example dot com." },
+        { speaker: "Officer", text: "Can you spell that, please?" },
+        { speaker: "Ben", text: "B-E-N dot R-A-M-A at example dot com." },
+        { speaker: "Officer", text: "Thank you. Is that correct?" },
+        { speaker: "Ben", text: "Yes, that's correct." },
+      ],
+      translation: [
+        "Apa alamat emailmu?",
+        "Alamatnya ben titik rama at example titik com.",
+        "Bisa dieja, tolong?",
+        "B-E-N titik R-A-M-A at example titik com.",
+        "Terima kasih. Apakah itu benar?",
+        "Ya, itu benar.",
+      ],
+      phrases: [
+        { phrase: "What is your email address?", meaning: "Apa alamat emailmu?", usage: "Ask for someone's email address." },
+        { phrase: "It's ben dot rama at example dot com.", meaning: "Alamatnya ben titik rama at example titik com.", usage: "Say an email address slowly." },
+        { phrase: "Can you spell that, please?", meaning: "Bisa dieja, tolong?", usage: "Ask someone to spell the email address." },
+        { phrase: "Is that correct?", meaning: "Apakah itu benar?", usage: "Ask for confirmation after writing information." },
+        { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm the email address is right." },
+      ],
+      grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
+      prompts: [
+        "What is your email address?",
+        "Can you spell that, please?",
+        "Is that correct?",
+      ],
+      quiz: [
+        { question: "Which question asks for an email address?", answer: "What is your email address?" },
+        { question: "How do you say \".\" in an email address?", answer: "dot" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-for-repetition",
+      title: "Asking for Repetition",
+      unit: "Spelling, Numbers & Contact Details",
+      conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
+      setup: "Kamu tidak mendengar informasi dengan jelas. Daripada menebak, kamu meminta orang lain mengulang dengan sopan dan mengecek bagian yang kamu dengar.",
+      dialogue: [
+        { speaker: "Alya", text: "My phone number is zero eight one three, two two five five, nine zero one." },
+        { speaker: "Ben", text: "Sorry, can you repeat that, please?" },
+        { speaker: "Alya", text: "Sure. Zero eight one three, two two five five, nine zero one." },
+        { speaker: "Ben", text: "Thank you. Did you say two two five five?" },
+        { speaker: "Alya", text: "Yes, that's right." },
+        { speaker: "Ben", text: "Got it. Thank you." },
+      ],
+      translation: [
+        "Nomor telepon saya nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
+        "Maaf, bisa diulang, tolong?",
+        "Tentu. Nol delapan satu tiga, dua dua lima lima, sembilan nol satu.",
+        "Terima kasih. Apakah kamu bilang dua dua lima lima?",
+        "Ya, betul.",
+        "Sudah saya mengerti. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask politely when you do not hear clearly." },
+        { phrase: "Sure.", meaning: "Tentu.", usage: "Agree to repeat information." },
+        { phrase: "Did you say two two five five?", meaning: "Apakah kamu bilang dua dua lima lima?", usage: "Check a specific part of what you heard." },
+        { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm that the listener heard correctly." },
+        { phrase: "Got it.", meaning: "Sudah saya mengerti.", usage: "Show that you understand now." },
+      ],
+      grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
+      prompts: [
+        "My phone number is zero eight one three, two two five five.",
+        "Sure. Zero eight one three, two two five five.",
+        "Yes, that's right.",
+      ],
+      quiz: [
+        { question: "Which sentence politely asks someone to repeat?", answer: "Can you repeat that, please?" },
+        { question: "What is \"Did you say two two five five?\" used for?", answer: "Checking a detail" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "contact-details-mission",
+      title: "Contact Details Mission",
+      unit: "Spelling, Numbers & Contact Details",
+      conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
+      setup: "Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.",
+      dialogue: [
+        { speaker: "Officer", text: "Hi. I need your contact details." },
+        { speaker: "Dimas", text: "Sure. My name is Dimas." },
+        { speaker: "Officer", text: "How do you spell your name?" },
+        { speaker: "Dimas", text: "D-I-M-A-S." },
+        { speaker: "Officer", text: "What is your phone number?" },
+        { speaker: "Dimas", text: "It's zero eight one two, three four five six, seven eight nine zero." },
+        { speaker: "Officer", text: "And your email address?" },
+        { speaker: "Dimas", text: "It's dimas at example dot com." },
+        { speaker: "Officer", text: "Thank you. Is everything correct?" },
+        { speaker: "Dimas", text: "Yes, everything is correct." },
+      ],
+      translation: [
+        "Hai. Saya perlu detail kontakmu.",
+        "Tentu. Nama saya Dimas.",
+        "Bagaimana kamu mengeja namamu?",
+        "D-I-M-A-S.",
+        "Berapa nomor teleponmu?",
+        "Nomornya nol delapan satu dua, tiga empat lima enam, tujuh delapan sembilan nol.",
+        "Dan alamat emailmu?",
+        "Alamatnya dimas at example titik com.",
+        "Terima kasih. Apakah semuanya benar?",
+        "Ya, semuanya benar.",
+      ],
+      phrases: [
+        { phrase: "I need your contact details.", meaning: "Saya perlu detail kontakmu.", usage: "Start a request for name, phone number, and email." },
+        { phrase: "How do you spell your name?", meaning: "Bagaimana kamu mengeja namamu?", usage: "Ask someone to spell their name." },
+        { phrase: "And your email address?", meaning: "Dan alamat emailmu?", usage: "Ask the next contact detail after another question." },
+        { phrase: "Is everything correct?", meaning: "Apakah semuanya benar?", usage: "Check all contact information at the end." },
+        { phrase: "Yes, everything is correct.", meaning: "Ya, semuanya benar.", usage: "Confirm all information is correct." },
+      ],
+      grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
+      prompts: [
+        "I need your contact details.",
+        "What is your phone number?",
+        "And your email address?",
+        "Is everything correct?",
+      ],
+      quiz: [
+        { question: "Which phrase asks for all contact information?", answer: "I need your contact details." },
+        { question: "What does \"Is everything correct?\" mean?", answer: "Apakah semuanya benar?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "telling-the-time",
+      title: "Telling the Time",
+      unit: "Daily Routine & Time",
+      conversationGoal: "Learners can ask and answer a simple question about time.",
+      setup: "Kamu ingin tahu jam mulai kelas online. Tanyakan waktunya, lalu cek apakah itu pagi, siang, atau malam.",
+      dialogue: [
+        { speaker: "Alya", text: "What time is the class?" },
+        { speaker: "Ben", text: "It's at nine o'clock." },
+        { speaker: "Alya", text: "In the morning?" },
+        { speaker: "Ben", text: "Yes, in the morning." },
+        { speaker: "Alya", text: "Thank you." },
+        { speaker: "Ben", text: "You're welcome." },
+      ],
+      translation: [
+        "Jam berapa kelasnya?",
+        "Kelasnya jam sembilan.",
+        "Pagi?",
+        "Ya, pagi.",
+        "Terima kasih.",
+        "Sama-sama.",
+      ],
+      phrases: [
+        { phrase: "What time is the class?", meaning: "Jam berapa kelasnya?", usage: "Ask about the time of an event." },
+        { phrase: "It's at nine o'clock.", meaning: "Jam sembilan.", usage: "Answer with a clear time." },
+        { phrase: "In the morning?", meaning: "Pagi?", usage: "Check the part of the day." },
+        { phrase: "Yes, in the morning.", meaning: "Ya, pagi.", usage: "Confirm the time of day." },
+        { phrase: "You're welcome.", meaning: "Sama-sama.", usage: "Reply after someone says thank you." },
+      ],
+      grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
+      prompts: [
+        "The class starts soon.",
+        "What time is the class?",
+        "It's at nine o'clock.",
+      ],
+      quiz: [
+        { question: "Which question asks about time?", answer: "What time is the class?" },
+        { question: "Which word comes before a time?", answer: "at" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "talking-about-daily-routines",
+      title: "Talking About Daily Routines",
+      unit: "Daily Routine & Time",
+      conversationGoal: "Learners can say a simple daily routine with time words.",
+      setup: "Kamu mengobrol dengan teman kelas tentang kebiasaan pagi. Sebutkan kegiatan sederhana dan kapan kamu melakukannya.",
+      dialogue: [
+        { speaker: "Alya", text: "What do you do in the morning?" },
+        { speaker: "Ben", text: "I wake up at six." },
+        { speaker: "Alya", text: "What do you do after that?" },
+        { speaker: "Ben", text: "I study English at seven." },
+        { speaker: "Alya", text: "Nice. Do you work in the afternoon?" },
+        { speaker: "Ben", text: "Yes, I work at one." },
+      ],
+      translation: [
+        "Apa yang kamu lakukan di pagi hari?",
+        "Saya bangun jam enam.",
+        "Apa yang kamu lakukan setelah itu?",
+        "Saya belajar bahasa Inggris jam tujuh.",
+        "Bagus. Apakah kamu bekerja siang hari?",
+        "Ya, saya bekerja jam satu.",
+      ],
+      phrases: [
+        { phrase: "What do you do in the morning?", meaning: "Apa yang kamu lakukan di pagi hari?", usage: "Ask about a morning routine." },
+        { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say when you wake up." },
+        { phrase: "What do you do after that?", meaning: "Apa yang kamu lakukan setelah itu?", usage: "Ask for the next routine step." },
+        { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
+        { phrase: "I work at one.", meaning: "Saya bekerja jam satu.", usage: "Say a work routine." },
+      ],
+      grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
+      prompts: [
+        "What do you do in the morning?",
+        "What do you do after that?",
+        "Do you work in the afternoon?",
+      ],
+      quiz: [
+        { question: "Which sentence talks about a routine?", answer: "I wake up at six." },
+        { question: "What does \"after that\" mean?", answer: "setelah itu" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "days-and-simple-schedules",
+      title: "Days and Simple Schedules",
+      unit: "Daily Routine & Time",
+      conversationGoal: "Learners can talk about simple days and class schedules.",
+      setup: "Kamu ingin tahu hari apa kelas berlangsung. Tanyakan jadwal sederhana, lalu ulangi hari dan jamnya.",
+      dialogue: [
+        { speaker: "Alya", text: "When is the English class?" },
+        { speaker: "Ben", text: "It's on Monday and Wednesday." },
+        { speaker: "Alya", text: "What time?" },
+        { speaker: "Ben", text: "At seven in the evening." },
+        { speaker: "Alya", text: "Great. See you on Monday." },
+        { speaker: "Ben", text: "See you." },
+      ],
+      translation: [
+        "Kapan kelas bahasa Inggrisnya?",
+        "Kelasnya hari Senin dan Rabu.",
+        "Jam berapa?",
+        "Jam tujuh malam.",
+        "Bagus. Sampai jumpa hari Senin.",
+        "Sampai jumpa.",
+      ],
+      phrases: [
+        { phrase: "When is the English class?", meaning: "Kapan kelas bahasa Inggrisnya?", usage: "Ask about the day or schedule." },
+        { phrase: "It's on Monday and Wednesday.", meaning: "Kelasnya hari Senin dan Rabu.", usage: "Answer with class days." },
+        { phrase: "What time?", meaning: "Jam berapa?", usage: "Ask a short follow-up about time." },
+        { phrase: "At seven in the evening.", meaning: "Jam tujuh malam.", usage: "Answer with time of day." },
+        { phrase: "See you on Monday.", meaning: "Sampai jumpa hari Senin.", usage: "Close with the day you will meet." },
+      ],
+      grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
+      prompts: [
+        "You want to know the schedule.",
+        "When is the English class?",
+        "What time?",
+      ],
+      quiz: [
+        { question: "Which word comes before Monday?", answer: "on" },
+        { question: "Which short question asks about time?", answer: "What time?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-when-something-happens",
+      title: "Asking When Something Happens",
+      unit: "Daily Routine & Time",
+      conversationGoal: "Learners can ask when a simple event happens and confirm the details.",
+      setup: "Kamu perlu ikut meeting singkat. Tanyakan kapan meeting berlangsung, apakah online, dan konfirmasi waktunya.",
+      dialogue: [
+        { speaker: "Dimas", text: "When is the meeting?" },
+        { speaker: "Alya", text: "It's tomorrow at ten." },
+        { speaker: "Dimas", text: "Is it online?" },
+        { speaker: "Alya", text: "Yes, it is online." },
+        { speaker: "Dimas", text: "Tomorrow at ten. Is that right?" },
+        { speaker: "Alya", text: "Yes, that's right." },
+      ],
+      translation: [
+        "Kapan meetingnya?",
+        "Besok jam sepuluh.",
+        "Apakah online?",
+        "Ya, online.",
+        "Besok jam sepuluh. Benar begitu?",
+        "Ya, betul.",
+      ],
+      phrases: [
+        { phrase: "When is the meeting?", meaning: "Kapan meetingnya?", usage: "Ask when an event happens." },
+        { phrase: "It's tomorrow at ten.", meaning: "Besok jam sepuluh.", usage: "Answer with day and time." },
+        { phrase: "Is it online?", meaning: "Apakah online?", usage: "Ask about the meeting format." },
+        { phrase: "Is that right?", meaning: "Benar begitu?", usage: "Check that your understanding is correct." },
+        { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm the detail." },
+      ],
+      grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
+      prompts: [
+        "There is a meeting.",
+        "It's tomorrow at ten.",
+        "It's tomorrow at ten.",
+      ],
+      quiz: [
+        { question: "Which question asks when an event happens?", answer: "When is the meeting?" },
+        { question: "Which sentence asks if something is online?", answer: "Is it online?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "routine-conversation-mission",
+      title: "Routine Conversation Mission",
+      unit: "Daily Routine & Time",
+      conversationGoal: "Learners can combine time, routine, days, and schedule questions in one simple conversation.",
+      setup: "Ini misi akhir unit. Kamu berbicara tentang rutinitas pagi, jadwal belajar, hari kelas, dan waktu meeting sederhana.",
+      dialogue: [
+        { speaker: "Alya", text: "Hi, Ben. What time do you wake up?" },
+        { speaker: "Ben", text: "I wake up at six." },
+        { speaker: "Alya", text: "When do you study English?" },
+        { speaker: "Ben", text: "I study on Monday and Wednesday at seven." },
+        { speaker: "Alya", text: "Is the class online?" },
+        { speaker: "Ben", text: "Yes, it is online." },
+        { speaker: "Alya", text: "Great. See you on Monday." },
+        { speaker: "Ben", text: "See you." },
+      ],
+      translation: [
+        "Hai, Ben. Jam berapa kamu bangun?",
+        "Saya bangun jam enam.",
+        "Kapan kamu belajar bahasa Inggris?",
+        "Saya belajar hari Senin dan Rabu jam tujuh.",
+        "Apakah kelasnya online?",
+        "Ya, online.",
+        "Bagus. Sampai jumpa hari Senin.",
+        "Sampai jumpa.",
+      ],
+      phrases: [
+        { phrase: "What time do you wake up?", meaning: "Jam berapa kamu bangun?", usage: "Ask about a routine time." },
+        { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a morning routine." },
+        { phrase: "When do you study English?", meaning: "Kapan kamu belajar bahasa Inggris?", usage: "Ask about a study schedule." },
+        { phrase: "I study on Monday and Wednesday at seven.", meaning: "Saya belajar hari Senin dan Rabu jam tujuh.", usage: "Give days and time together." },
+        { phrase: "Is the class online?", meaning: "Apakah kelasnya online?", usage: "Ask about class format." },
+      ],
+      grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
+      prompts: [
+        "What time do you wake up?",
+        "When do you study English?",
+        "The class is on Monday.",
+      ],
+      quiz: [
+        { question: "Which sentence uses day and time correctly?", answer: "I study on Monday at seven." },
+        { question: "Which question asks about routine time?", answer: "What time do you wake up?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-what-you-do",
+      title: "Saying What You Do",
+      unit: "Work, Study & Preferences",
+      conversationGoal: "Learners can say what they do in a simple work or study conversation.",
+      setup: "Kamu bertemu teman baru di kelas online. Ia bertanya apa kegiatanmu. Jawab dengan status sederhana seperti student, worker, atau pekerjaan yang mudah.",
+      dialogue: [
+        { speaker: "Sara", text: "What do you do?" },
+        { speaker: "Dimas", text: "I'm a student." },
+        { speaker: "Sara", text: "What do you study?" },
+        { speaker: "Dimas", text: "I study design." },
+        { speaker: "Sara", text: "Do you study online?" },
+        { speaker: "Dimas", text: "Yes, I study online." },
+      ],
+      translation: [
+        "Apa pekerjaan atau kegiatanmu?",
+        "Saya seorang pelajar.",
+        "Apa yang kamu pelajari?",
+        "Saya belajar desain.",
+        "Apakah kamu belajar online?",
+        "Ya, saya belajar online.",
+      ],
+      phrases: [
+        { phrase: "What do you do?", meaning: "Apa pekerjaan atau kegiatanmu?", usage: "Ask about someone's work or study status." },
+        { phrase: "I'm a student.", meaning: "Saya seorang pelajar.", usage: "Say your simple status." },
+        { phrase: "What do you study?", meaning: "Apa yang kamu pelajari?", usage: "Ask about a study subject." },
+        { phrase: "I study design.", meaning: "Saya belajar desain.", usage: "Say what you study." },
+        { phrase: "I study online.", meaning: "Saya belajar online.", usage: "Say how you study." },
+      ],
+      grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
+      prompts: [
+        "What do you do?",
+        "What do you study?",
+        "Do you study online?",
+      ],
+      quiz: [
+        { question: "Which question asks about work or study status?", answer: "What do you do?" },
+        { question: "Which sentence is correct?", answer: "I'm a student." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-about-work-or-study",
+      title: "Asking About Work or Study",
+      unit: "Work, Study & Preferences",
+      conversationGoal: "Learners can ask if someone works or studies and ask one simple follow-up question.",
+      setup: "Kamu ingin mengenal teman kelas. Tanyakan apakah ia bekerja atau belajar, lalu tanyakan satu detail sederhana tentang kegiatannya.",
+      dialogue: [
+        { speaker: "Ben", text: "Do you work or study?" },
+        { speaker: "Mina", text: "I work in a small office." },
+        { speaker: "Ben", text: "What do you do there?" },
+        { speaker: "Mina", text: "I'm an assistant. How about you?" },
+        { speaker: "Ben", text: "I study English online." },
+      ],
+      translation: [
+        "Apakah kamu bekerja atau belajar?",
+        "Saya bekerja di kantor kecil.",
+        "Apa yang kamu lakukan di sana?",
+        "Saya seorang asisten. Kalau kamu?",
+        "Saya belajar bahasa Inggris online.",
+      ],
+      phrases: [
+        { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
+        { phrase: "I work in a small office.", meaning: "Saya bekerja di kantor kecil.", usage: "Say where you work." },
+        { phrase: "What do you do there?", meaning: "Apa yang kamu lakukan di sana?", usage: "Ask about the role or activity." },
+        { phrase: "I'm an assistant.", meaning: "Saya seorang asisten.", usage: "Say a simple job." },
+        { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same topic back." },
+      ],
+      grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
+      prompts: [
+        "You meet a new classmate.",
+        "I work in a small office.",
+        "I'm an assistant.",
+      ],
+      quiz: [
+        { question: "Which question gives two choices?", answer: "Do you work or study?" },
+        { question: "Which sentence is correct?", answer: "I'm an assistant." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "talking-about-likes",
+      title: "Talking About Likes",
+      unit: "Work, Study & Preferences",
+      conversationGoal: "Learners can say what they like and ask someone about simple preferences.",
+      setup: "Kamu berbicara dengan teman belajar tentang bagian bahasa Inggris yang kamu suka. Gunakan kalimat pendek untuk menyebutkan hal yang kamu suka.",
+      dialogue: [
+        { speaker: "Alya", text: "Do you like English?" },
+        { speaker: "Ben", text: "Yes, I like it." },
+        { speaker: "Alya", text: "What do you like?" },
+        { speaker: "Ben", text: "I like speaking practice." },
+        { speaker: "Alya", text: "Do you like grammar?" },
+        { speaker: "Ben", text: "It's okay, but speaking is my favorite." },
+      ],
+      translation: [
+        "Apakah kamu suka bahasa Inggris?",
+        "Ya, saya suka.",
+        "Apa yang kamu suka?",
+        "Saya suka latihan speaking.",
+        "Apakah kamu suka grammar?",
+        "Tidak apa-apa, tapi speaking adalah favorit saya.",
+      ],
+      phrases: [
+        { phrase: "Do you like English?", meaning: "Apakah kamu suka bahasa Inggris?", usage: "Ask about a preference." },
+        { phrase: "Yes, I like it.", meaning: "Ya, saya suka.", usage: "Give a simple positive answer." },
+        { phrase: "What do you like?", meaning: "Apa yang kamu suka?", usage: "Ask for a specific preference." },
+        { phrase: "I like speaking practice.", meaning: "Saya suka latihan speaking.", usage: "Say a learning preference." },
+        { phrase: "Speaking is my favorite.", meaning: "Speaking adalah favorit saya.", usage: "Say your favorite part." },
+      ],
+      grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
+      prompts: [
+        "Do you like English?",
+        "What do you like?",
+        "I like speaking practice.",
+      ],
+      quiz: [
+        { question: "Which question asks about a preference?", answer: "Do you like English?" },
+        { question: "What does \"my favorite\" mean?", answer: "favorit saya" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-what-you-can-do",
+      title: "Saying What You Can Do",
+      unit: "Work, Study & Preferences",
+      conversationGoal: "Learners can say what they can do in English with simple ability sentences.",
+      setup: "Kamu ditanya kemampuan bahasa Inggrismu. Jawab dengan jujur dan sederhana: apa yang sudah bisa kamu lakukan, dan apa yang belum.",
+      dialogue: [
+        { speaker: "Sara", text: "Can you speak English?" },
+        { speaker: "Dimas", text: "I can speak a little." },
+        { speaker: "Sara", text: "Can you write simple emails?" },
+        { speaker: "Dimas", text: "Yes, I can." },
+        { speaker: "Sara", text: "Can you join a meeting in English?" },
+        { speaker: "Dimas", text: "Not yet, but I can try." },
+      ],
+      translation: [
+        "Apakah kamu bisa berbicara bahasa Inggris?",
+        "Saya bisa berbicara sedikit.",
+        "Apakah kamu bisa menulis email sederhana?",
+        "Ya, saya bisa.",
+        "Apakah kamu bisa ikut meeting dalam bahasa Inggris?",
+        "Belum, tapi saya bisa mencoba.",
+      ],
+      phrases: [
+        { phrase: "Can you speak English?", meaning: "Apakah kamu bisa berbicara bahasa Inggris?", usage: "Ask about speaking ability." },
+        { phrase: "I can speak a little.", meaning: "Saya bisa berbicara sedikit.", usage: "Say a small ability." },
+        { phrase: "Can you write simple emails?", meaning: "Apakah kamu bisa menulis email sederhana?", usage: "Ask about writing ability." },
+        { phrase: "Yes, I can.", meaning: "Ya, saya bisa.", usage: "Give a short positive answer." },
+        { phrase: "Not yet, but I can try.", meaning: "Belum, tapi saya bisa mencoba.", usage: "Say you cannot do it now but are willing." },
+      ],
+      grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
+      prompts: [
+        "Can you speak English?",
+        "Can you write simple emails?",
+        "Can you join a meeting in English?",
+      ],
+      quiz: [
+        { question: "Which question asks about ability?", answer: "Can you speak English?" },
+        { question: "Which sentence is correct?", answer: "I can write simple emails." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "work-study-conversation-mission",
+      title: "Work and Study Conversation Mission",
+      unit: "Work, Study & Preferences",
+      conversationGoal: "Learners can combine work, study, preferences, and simple abilities in one conversation.",
+      setup: "Ini misi akhir unit. Kamu memperkenalkan kegiatanmu, menanyakan pekerjaan atau studi, menyebutkan hal yang kamu suka, dan mengatakan kemampuan sederhana.",
+      dialogue: [
+        { speaker: "Mina", text: "Hi, Ben. Do you work or study?" },
+        { speaker: "Ben", text: "I study English online and I work in a shop." },
+        { speaker: "Mina", text: "What do you like about English?" },
+        { speaker: "Ben", text: "I like speaking practice." },
+        { speaker: "Mina", text: "What can you do in English?" },
+        { speaker: "Ben", text: "I can introduce myself and write simple messages." },
+        { speaker: "Mina", text: "Great. Keep practicing." },
+        { speaker: "Ben", text: "Thank you. I will." },
+      ],
+      translation: [
+        "Hai, Ben. Apakah kamu bekerja atau belajar?",
+        "Saya belajar bahasa Inggris online dan bekerja di toko.",
+        "Apa yang kamu suka dari bahasa Inggris?",
+        "Saya suka latihan speaking.",
+        "Apa yang bisa kamu lakukan dalam bahasa Inggris?",
+        "Saya bisa memperkenalkan diri dan menulis pesan sederhana.",
+        "Bagus. Terus berlatih.",
+        "Terima kasih. Saya akan begitu.",
+      ],
+      phrases: [
+        { phrase: "Do you work or study?", meaning: "Apakah kamu bekerja atau belajar?", usage: "Ask about someone's main activity." },
+        { phrase: "I study English online and I work in a shop.", meaning: "Saya belajar bahasa Inggris online dan bekerja di toko.", usage: "Combine study and work in one simple sentence." },
+        { phrase: "What do you like about English?", meaning: "Apa yang kamu suka dari bahasa Inggris?", usage: "Ask a preference question." },
+        { phrase: "What can you do in English?", meaning: "Apa yang bisa kamu lakukan dalam bahasa Inggris?", usage: "Ask about ability." },
+        { phrase: "I can introduce myself.", meaning: "Saya bisa memperkenalkan diri.", usage: "Say one English ability." },
+      ],
+      grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
+      prompts: [
+        "Do you work or study?",
+        "What do you like about English?",
+        "What can you do in English?",
+      ],
+      quiz: [
+        { question: "Which sentence says an ability?", answer: "I can introduce myself." },
+        { question: "Which question asks about work or study?", answer: "Do you work or study?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-where-a-place-is",
+      title: "Asking Where a Place Is",
+      unit: "Places & Directions",
+      conversationGoal: "Learners can ask where a place is and understand a short location answer.",
+      setup: "Kamu berada di gedung kursus baru. Kamu perlu mencari ruang kelas dan bertanya dengan sopan.",
+      dialogue: [
+        { speaker: "Alya", text: "Excuse me. Where is the classroom?" },
+        { speaker: "Ben", text: "It is on the first floor." },
+        { speaker: "Alya", text: "Is it near the office?" },
+        { speaker: "Ben", text: "Yes, it is next to the office." },
+        { speaker: "Alya", text: "Thank you." },
+        { speaker: "Ben", text: "You're welcome." },
+      ],
+      translation: [
+        "Permisi. Di mana ruang kelasnya?",
+        "Ruang kelasnya di lantai satu.",
+        "Apakah dekat kantor?",
+        "Ya, di sebelah kantor.",
+        "Terima kasih.",
+        "Sama-sama.",
+      ],
+      phrases: [
+        { phrase: "Excuse me.", meaning: "Permisi.", usage: "Use this before asking a stranger or staff member." },
+        { phrase: "Where is the classroom?", meaning: "Di mana ruang kelasnya?", usage: "Use 'Where is...' for one place." },
+        { phrase: "It is on the first floor.", meaning: "Tempatnya di lantai satu.", usage: "Use 'on' for floors." },
+        { phrase: "It is next to the office.", meaning: "Tempatnya di sebelah kantor.", usage: "Use 'next to' for a place beside another place." },
+      ],
+      grammar: "Use Where is + place? and answer with It is + location.",
+      prompts: [
+        "Ask where the classroom is.",
+        "Ask if it is near the office.",
+        "Say thank you.",
+      ],
+      quiz: [
+        { question: "Where is the classroom?", answer: "On the first floor." },
+        { question: "What phrase starts the polite question?", answer: "Excuse me." },
+        { question: "What does 'next to' mean?", answer: "Di sebelah" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "simple-place-words",
+      title: "Simple Place Words",
+      unit: "Places & Directions",
+      conversationGoal: "Learners can name common places and answer where someone is going.",
+      setup: "Kamu bicara dengan teman setelah kelas. Kamu menyebut tempat sederhana yang ingin kamu datangi.",
+      dialogue: [
+        { speaker: "Mina", text: "Where are you going?" },
+        { speaker: "Dimas", text: "I'm going to the cafe." },
+        { speaker: "Mina", text: "Is the cafe near here?" },
+        { speaker: "Dimas", text: "Yes. It is near the library." },
+        { speaker: "Mina", text: "Great. I am going to the library." },
+        { speaker: "Dimas", text: "Let's go together." },
+      ],
+      translation: [
+        "Kamu mau pergi ke mana?",
+        "Saya mau pergi ke kafe.",
+        "Apakah kafenya dekat sini?",
+        "Ya. Kafenya dekat perpustakaan.",
+        "Bagus. Saya mau pergi ke perpustakaan.",
+        "Ayo pergi bersama.",
+      ],
+      phrases: [
+        { phrase: "Where are you going?", meaning: "Kamu mau pergi ke mana?", usage: "Ask about someone's destination." },
+        { phrase: "I'm going to the cafe.", meaning: "Saya mau pergi ke kafe.", usage: "Use 'to' before a destination." },
+        { phrase: "near here", meaning: "dekat sini", usage: "Use this for a place close to your current location." },
+        { phrase: "Let's go together.", meaning: "Ayo pergi bersama.", usage: "Use this to suggest going with someone." },
+      ],
+      grammar: "Use I'm going to + place for a destination.",
+      prompts: [
+        "Say you are going to the cafe.",
+        "Ask if the cafe is near here.",
+        "Suggest going together.",
+      ],
+      quiz: [
+        { question: "Where is Dimas going?", answer: "To the cafe." },
+        { question: "What place is near the cafe?", answer: "The library." },
+        { question: "Which sentence is correct?", answer: "I'm going to the cafe." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "understanding-simple-directions",
+      title: "Understanding Simple Directions",
+      unit: "Places & Directions",
+      conversationGoal: "Learners can understand very simple directions with go straight, turn left, and turn right.",
+      setup: "Kamu mencari ruang meeting di gedung. Temanmu memberi arahan sederhana.",
+      dialogue: [
+        { speaker: "Sara", text: "Where is the meeting room?" },
+        { speaker: "Ben", text: "Go straight." },
+        { speaker: "Sara", text: "Okay. Go straight." },
+        { speaker: "Ben", text: "Then turn left." },
+        { speaker: "Sara", text: "Turn left?" },
+        { speaker: "Ben", text: "Yes. The room is on the right." },
+        { speaker: "Sara", text: "Thank you. I understand." },
+      ],
+      translation: [
+        "Di mana ruang meetingnya?",
+        "Jalan lurus.",
+        "Oke. Jalan lurus.",
+        "Lalu belok kiri.",
+        "Belok kiri?",
+        "Ya. Ruangannya ada di sebelah kanan.",
+        "Terima kasih. Saya mengerti.",
+      ],
+      phrases: [
+        { phrase: "Go straight.", meaning: "Jalan lurus.", usage: "Use this for a simple forward direction." },
+        { phrase: "Turn left.", meaning: "Belok kiri.", usage: "Use this when someone must move left." },
+        { phrase: "on the right", meaning: "di sebelah kanan", usage: "Use this to locate something on the right side." },
+        { phrase: "I understand.", meaning: "Saya mengerti.", usage: "Use this after clear instructions." },
+      ],
+      grammar: "Direction commands can start with the verb: Go straight. Turn left.",
+      prompts: [
+        "Repeat the first direction.",
+        "Confirm the second direction.",
+        "Say you understand.",
+      ],
+      quiz: [
+        { question: "What is the first direction?", answer: "Go straight." },
+        { question: "After going straight, what should Sara do?", answer: "Turn left." },
+        { question: "Where is the room?", answer: "On the right." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-how-to-get-there",
+      title: "Asking How to Get There",
+      unit: "Places & Directions",
+      conversationGoal: "Learners can ask how to get to a place and follow two simple steps.",
+      setup: "Kamu ingin ke stasiun dari area kursus. Kamu meminta arahan yang sangat singkat.",
+      dialogue: [
+        { speaker: "Dimas", text: "How do I get to the station?" },
+        { speaker: "Mina", text: "Go straight for two minutes." },
+        { speaker: "Dimas", text: "Okay. Go straight for two minutes." },
+        { speaker: "Mina", text: "Then turn right at the bank." },
+        { speaker: "Dimas", text: "Turn right at the bank?" },
+        { speaker: "Mina", text: "Yes. The station is there." },
+        { speaker: "Dimas", text: "Thank you for your help." },
+      ],
+      translation: [
+        "Bagaimana saya ke stasiun?",
+        "Jalan lurus selama dua menit.",
+        "Oke. Jalan lurus selama dua menit.",
+        "Lalu belok kanan di bank.",
+        "Belok kanan di bank?",
+        "Ya. Stasiunnya di sana.",
+        "Terima kasih atas bantuanmu.",
+      ],
+      phrases: [
+        { phrase: "How do I get to the station?", meaning: "Bagaimana saya ke stasiun?", usage: "Ask for directions to a place." },
+        { phrase: "for two minutes", meaning: "selama dua menit", usage: "Use this for short walking time." },
+        { phrase: "at the bank", meaning: "di bank", usage: "Use 'at' for a direction point." },
+        { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Use this after someone helps you." },
+      ],
+      grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
+      prompts: [
+        "Ask how to get to the station.",
+        "Repeat the time direction.",
+        "Confirm the landmark.",
+      ],
+      quiz: [
+        { question: "Where does Dimas want to go?", answer: "The station." },
+        { question: "How long should he go straight?", answer: "Two minutes." },
+        { question: "Where should he turn right?", answer: "At the bank." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "finding-a-place-mission",
+      title: "Finding a Place Mission",
+      unit: "Places & Directions",
+      conversationGoal: "Learners can complete a short place-finding conversation from question to confirmation.",
+      setup: "Kamu perlu menemukan ruang kelas, lalu memastikan arah dengan orang lain secara sopan.",
+      dialogue: [
+        { speaker: "Ben", text: "Excuse me. How do I get to room A?" },
+        { speaker: "Sara", text: "Go straight and turn left." },
+        { speaker: "Ben", text: "Go straight and turn left." },
+        { speaker: "Sara", text: "Yes. Room A is next to the office." },
+        { speaker: "Ben", text: "Is it on the first floor?" },
+        { speaker: "Sara", text: "Yes, it is." },
+        { speaker: "Ben", text: "Great. Thank you." },
+        { speaker: "Sara", text: "You're welcome." },
+      ],
+      translation: [
+        "Permisi. Bagaimana saya ke ruang A?",
+        "Jalan lurus dan belok kiri.",
+        "Jalan lurus dan belok kiri.",
+        "Ya. Ruang A di sebelah kantor.",
+        "Apakah di lantai satu?",
+        "Ya.",
+        "Bagus. Terima kasih.",
+        "Sama-sama.",
+      ],
+      phrases: [
+        { phrase: "How do I get to room A?", meaning: "Bagaimana saya ke ruang A?", usage: "Ask for the way to a room." },
+        { phrase: "Go straight and turn left.", meaning: "Jalan lurus dan belok kiri.", usage: "Use 'and' to join two short steps." },
+        { phrase: "next to the office", meaning: "di sebelah kantor", usage: "Use this for a landmark beside the place." },
+        { phrase: "Is it on the first floor?", meaning: "Apakah di lantai satu?", usage: "Confirm a floor." },
+      ],
+      grammar: "Use and to join two simple direction steps: Go straight and turn left.",
+      prompts: [
+        "Ask how to get to room A.",
+        "Repeat the directions.",
+        "Confirm the floor.",
+      ],
+      quiz: [
+        { question: "Where does Ben want to go?", answer: "Room A." },
+        { question: "What are the directions?", answer: "Go straight and turn left." },
+        { question: "Where is room A?", answer: "Next to the office." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "ordering-a-drink",
+      title: "Ordering a Drink",
+      unit: "Food, Shopping & Prices",
+      conversationGoal: "Learners can order one drink politely and answer a simple size question.",
+      setup: "Kamu berada di kafe kecil setelah kelas. Pesan satu minuman dengan sopan dan jawab pertanyaan ukuran.",
+      dialogue: [
+        { speaker: "Mina", text: "Hi! What would you like?" },
+        { speaker: "Ben", text: "Can I have a tea, please?" },
+        { speaker: "Mina", text: "Small or large?" },
+        { speaker: "Ben", text: "Small, please." },
+        { speaker: "Mina", text: "Anything else?" },
+        { speaker: "Ben", text: "No, thank you." },
+        { speaker: "Mina", text: "Here you go." },
+        { speaker: "Ben", text: "Thank you." },
+      ],
+      translation: [
+        "Hai. Kamu mau pesan apa?",
+        "Boleh saya pesan teh?",
+        "Kecil atau besar?",
+        "Kecil, tolong.",
+        "Ada lagi?",
+        "Tidak, terima kasih.",
+        "Ini pesanannya.",
+        "Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "What would you like?", meaning: "Kamu mau pesan apa?", usage: "Staff uses this to ask for an order." },
+        { phrase: "Can I have a tea, please?", meaning: "Boleh saya pesan teh?", usage: "Use this to order politely." },
+        { phrase: "Small or large?", meaning: "Kecil atau besar?", usage: "Answer with the size you want." },
+        { phrase: "Anything else?", meaning: "Ada lagi?", usage: "Staff asks if you want more." },
+        { phrase: "Here you go.", meaning: "Ini pesanannya.", usage: "Staff says this when giving the item." },
+      ],
+      grammar: "Use Can I have + item, please? to order politely.",
+      prompts: [
+        "Order a tea politely.",
+        "Choose a small size.",
+        "Say you do not want anything else.",
+      ],
+      quiz: [
+        { question: "What does Ben order?", answer: "A tea." },
+        { question: "What size does Ben choose?", answer: "Small." },
+        { question: "Which sentence is polite for ordering?", answer: "Can I have a tea, please?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-about-prices",
+      title: "Asking About Prices",
+      unit: "Food, Shopping & Prices",
+      conversationGoal: "Learners can ask the price of one item and understand a short price answer.",
+      setup: "Kamu melihat minuman dan makanan ringan. Tanyakan harga satu item sebelum membeli.",
+      dialogue: [
+        { speaker: "Dimas", text: "Excuse me. How much is the coffee?" },
+        { speaker: "Sara", text: "It is two dollars." },
+        { speaker: "Dimas", text: "Two dollars?" },
+        { speaker: "Sara", text: "Yes, two dollars." },
+        { speaker: "Dimas", text: "How much is the cake?" },
+        { speaker: "Sara", text: "It is three dollars." },
+        { speaker: "Dimas", text: "Okay. Thank you." },
+      ],
+      translation: [
+        "Permisi. Berapa harga kopinya?",
+        "Harganya dua dolar.",
+        "Dua dolar?",
+        "Ya, dua dolar.",
+        "Berapa harga kuenya?",
+        "Harganya tiga dolar.",
+        "Oke. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "How much is the coffee?", meaning: "Berapa harga kopinya?", usage: "Ask the price of one item." },
+        { phrase: "It is two dollars.", meaning: "Harganya dua dolar.", usage: "Answer a simple price." },
+        { phrase: "Two dollars?", meaning: "Dua dolar?", usage: "Repeat the price to confirm." },
+        { phrase: "How much is the cake?", meaning: "Berapa harga kuenya?", usage: "Ask another item price." },
+      ],
+      grammar: "Use How much is + item? and answer with It is + price.",
+      prompts: [
+        "Ask the price of coffee.",
+        "Confirm the price.",
+        "Ask the price of cake.",
+      ],
+      quiz: [
+        { question: "How much is the coffee?", answer: "Two dollars." },
+        { question: "How much is the cake?", answer: "Three dollars." },
+        { question: "Which question asks price?", answer: "How much is the coffee?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "buying-a-simple-item",
+      title: "Buying a Simple Item",
+      unit: "Food, Shopping & Prices",
+      conversationGoal: "Learners can buy one simple item, ask the price, and complete the payment.",
+      setup: "Kamu berada di toko alat tulis. Kamu membeli satu pulpen dan membayar dengan sopan.",
+      dialogue: [
+        { speaker: "Ben", text: "Excuse me. Can I have this pen?" },
+        { speaker: "Alya", text: "Yes, of course." },
+        { speaker: "Ben", text: "How much is it?" },
+        { speaker: "Alya", text: "It is one dollar." },
+        { speaker: "Ben", text: "Okay. Here you go." },
+        { speaker: "Alya", text: "Thank you. Here is your pen." },
+        { speaker: "Ben", text: "Thanks." },
+      ],
+      translation: [
+        "Permisi. Boleh saya beli pulpen ini?",
+        "Ya, tentu.",
+        "Berapa harganya?",
+        "Harganya satu dolar.",
+        "Oke. Ini uangnya.",
+        "Terima kasih. Ini pulpennya.",
+        "Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Can I have this pen?", meaning: "Boleh saya beli pulpen ini?", usage: "Use this when pointing to one item." },
+        { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price when the item is already clear." },
+        { phrase: "Here you go.", meaning: "Ini uangnya / ini barangnya.", usage: "Use this when giving money or an item." },
+        { phrase: "Here is your pen.", meaning: "Ini pulpenmu.", usage: "Staff uses this when giving the item." },
+      ],
+      grammar: "Use this for one item near you and it after the item is already clear.",
+      prompts: [
+        "Ask to buy this pen.",
+        "Ask the price.",
+        "Give the money politely.",
+      ],
+      quiz: [
+        { question: "What does Ben buy?", answer: "A pen." },
+        { question: "How much is the pen?", answer: "One dollar." },
+        { question: "Which phrase gives money or an item?", answer: "Here you go." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-what-you-want",
+      title: "Saying What You Want",
+      unit: "Food, Shopping & Prices",
+      conversationGoal: "Learners can say what they want and choose between two simple options.",
+      setup: "Kamu memilih makanan ringan di kafe. Katakan apa yang kamu mau dan jawab pilihan sederhana.",
+      dialogue: [
+        { speaker: "Sara", text: "What do you want?" },
+        { speaker: "Dimas", text: "I want a sandwich." },
+        { speaker: "Sara", text: "Do you want tea or coffee?" },
+        { speaker: "Dimas", text: "Tea, please." },
+        { speaker: "Sara", text: "Do you want sugar?" },
+        { speaker: "Dimas", text: "No sugar, please." },
+        { speaker: "Sara", text: "Okay." },
+      ],
+      translation: [
+        "Kamu mau apa?",
+        "Saya mau sandwich.",
+        "Kamu mau teh atau kopi?",
+        "Teh, tolong.",
+        "Kamu mau gula?",
+        "Tanpa gula, tolong.",
+        "Oke.",
+      ],
+      phrases: [
+        { phrase: "What do you want?", meaning: "Kamu mau apa?", usage: "Ask a direct but simple preference question." },
+        { phrase: "I want a sandwich.", meaning: "Saya mau sandwich.", usage: "Say what you want simply." },
+        { phrase: "Tea, please.", meaning: "Teh, tolong.", usage: "Choose one option politely." },
+        { phrase: "No sugar, please.", meaning: "Tanpa gula, tolong.", usage: "Say you do not want an extra item." },
+      ],
+      grammar: "Use I want + item and No + item, please for simple preferences.",
+      prompts: [
+        "Say you want a sandwich.",
+        "Choose tea politely.",
+        "Say no sugar politely.",
+      ],
+      quiz: [
+        { question: "What does Dimas want?", answer: "A sandwich." },
+        { question: "What drink does Dimas choose?", answer: "Tea." },
+        { question: "Which answer says no extra sugar?", answer: "No sugar, please." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "cafe-and-shop-mission",
+      title: "Cafe and Shop Mission",
+      unit: "Food, Shopping & Prices",
+      conversationGoal: "Learners can order, ask a price, choose an option, and complete a simple purchase.",
+      setup: "Ini misi akhir unit. Kamu memesan minuman dan makanan kecil, bertanya harga, memilih opsi, lalu membayar.",
+      dialogue: [
+        { speaker: "Mina", text: "Hi! What would you like?" },
+        { speaker: "Ben", text: "Can I have a coffee and a sandwich, please?" },
+        { speaker: "Mina", text: "Sure. Small or large coffee?" },
+        { speaker: "Ben", text: "Small, please. How much is it?" },
+        { speaker: "Mina", text: "It is five dollars." },
+        { speaker: "Ben", text: "Okay. Here you go." },
+        { speaker: "Mina", text: "Thank you. Here is your order." },
+        { speaker: "Ben", text: "Thanks." },
+      ],
+      translation: [
+        "Hai. Kamu mau pesan apa?",
+        "Boleh saya pesan kopi dan sandwich?",
+        "Tentu. Kopi kecil atau besar?",
+        "Kecil, tolong. Berapa semuanya?",
+        "Totalnya lima dolar.",
+        "Oke. Ini uangnya.",
+        "Terima kasih. Ini pesananmu.",
+        "Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Can I have a coffee and a sandwich, please?", meaning: "Boleh saya pesan kopi dan sandwich?", usage: "Order two items politely." },
+        { phrase: "Small or large coffee?", meaning: "Kopi kecil atau besar?", usage: "Ask about size." },
+        { phrase: "How much is it?", meaning: "Berapa semuanya?", usage: "Ask the total price." },
+        { phrase: "It is five dollars.", meaning: "Totalnya lima dolar.", usage: "Say a simple total price." },
+        { phrase: "Here is your order.", meaning: "Ini pesananmu.", usage: "Staff gives the order." },
+      ],
+      grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
+      prompts: [
+        "Order coffee and a sandwich.",
+        "Choose a small coffee.",
+        "Ask the total price.",
+        "Pay politely.",
+      ],
+      quiz: [
+        { question: "What does Ben order?", answer: "Coffee and a sandwich." },
+        { question: "What size coffee does Ben choose?", answer: "Small." },
+        { question: "How much is it?", answer: "Five dollars." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "saying-you-do-not-understand",
+      title: "Saying You Do Not Understand",
+      unit: "Help, Problems & Requests",
+      conversationGoal: "Learners can say they do not understand and ask for repetition politely.",
+      setup: "Kamu sedang belajar online dan tidak paham satu instruksi. Katakan dengan sopan bahwa kamu belum mengerti.",
+      dialogue: [
+        { speaker: "Alya", text: "Sorry, I don't understand." },
+        { speaker: "Ben", text: "That's okay. I can say it again." },
+        { speaker: "Alya", text: "Can you repeat that, please?" },
+        { speaker: "Ben", text: "Yes. Open your book." },
+        { speaker: "Alya", text: "Open my book?" },
+        { speaker: "Ben", text: "Yes, that's right." },
+        { speaker: "Alya", text: "Thank you. I understand now." },
+      ],
+      translation: [
+        "Maaf, saya tidak mengerti.",
+        "Tidak apa-apa. Saya bisa mengulanginya.",
+        "Bisa ulangi itu, tolong?",
+        "Ya. Buka bukumu.",
+        "Buka buku saya?",
+        "Ya, benar.",
+        "Terima kasih. Sekarang saya mengerti.",
+      ],
+      phrases: [
+        { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Use this when you miss meaning or instructions." },
+        { phrase: "Can you repeat that, please?", meaning: "Bisa ulangi itu, tolong?", usage: "Ask someone to say it again politely." },
+        { phrase: "Open my book?", meaning: "Buka buku saya?", usage: "Repeat key words to confirm." },
+        { phrase: "I understand now.", meaning: "Sekarang saya mengerti.", usage: "Use this after the explanation is clear." },
+      ],
+      grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
+      prompts: [
+        "Say you do not understand.",
+        "Ask the speaker to repeat.",
+        "Say you understand now.",
+      ],
+      quiz: [
+        { question: "What does Alya not understand?", answer: "An instruction." },
+        { question: "What does Alya ask Ben to do?", answer: "Repeat." },
+        { question: "Which sentence is correct?", answer: "I don't understand." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "asking-for-help",
+      title: "Asking for Help",
+      unit: "Help, Problems & Requests",
+      conversationGoal: "Learners can ask for help with one simple task and respond to the helper.",
+      setup: "Kamu kesulitan membuka file kelas. Minta bantuan singkat dan sopan.",
+      dialogue: [
+        { speaker: "Dimas", text: "Excuse me. Can you help me?" },
+        { speaker: "Sara", text: "Sure. What is the problem?" },
+        { speaker: "Dimas", text: "I can't open this file." },
+        { speaker: "Sara", text: "Okay. Click this button." },
+        { speaker: "Dimas", text: "This button?" },
+        { speaker: "Sara", text: "Yes. Try again." },
+        { speaker: "Dimas", text: "It works. Thank you." },
+      ],
+      translation: [
+        "Permisi. Bisa bantu saya?",
+        "Tentu. Apa masalahnya?",
+        "Saya tidak bisa membuka file ini.",
+        "Oke. Klik tombol ini.",
+        "Tombol ini?",
+        "Ya. Coba lagi.",
+        "Berhasil. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Can you help me?", meaning: "Bisa bantu saya?", usage: "Ask for help politely." },
+        { phrase: "What is the problem?", meaning: "Apa masalahnya?", usage: "Ask what is wrong." },
+        { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain one problem clearly." },
+        { phrase: "It works.", meaning: "Berhasil.", usage: "Say the solution works." },
+      ],
+      grammar: "Use can for help requests and can't + verb for simple problems.",
+      prompts: [
+        "Ask for help.",
+        "Explain the file problem.",
+        "Say the solution works.",
+      ],
+      quiz: [
+        { question: "What problem does Dimas have?", answer: "He can't open a file." },
+        { question: "What should Dimas click?", answer: "This button." },
+        { question: "Which sentence asks for help?", answer: "Can you help me?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "making-simple-requests",
+      title: "Making Simple Requests",
+      unit: "Help, Problems & Requests",
+      conversationGoal: "Learners can make a simple request with please and respond to yes or no.",
+      setup: "Kamu sedang di kelas online. Kamu perlu meminta link dan meminta teman menunggu sebentar.",
+      dialogue: [
+        { speaker: "Mina", text: "Can you send me the link, please?" },
+        { speaker: "Ben", text: "Yes, of course." },
+        { speaker: "Mina", text: "Thank you." },
+        { speaker: "Ben", text: "Can you wait a minute?" },
+        { speaker: "Mina", text: "Sure. No problem." },
+        { speaker: "Ben", text: "Here is the link." },
+        { speaker: "Mina", text: "Great. Thanks." },
+      ],
+      translation: [
+        "Bisa kirimkan linknya, tolong?",
+        "Ya, tentu.",
+        "Terima kasih.",
+        "Bisa tunggu sebentar?",
+        "Tentu. Tidak masalah.",
+        "Ini linknya.",
+        "Bagus. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Can you send me the link, please?", meaning: "Bisa kirimkan linknya, tolong?", usage: "Make a polite request for a link." },
+        { phrase: "Yes, of course.", meaning: "Ya, tentu.", usage: "Accept a request warmly." },
+        { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Ask someone to wait briefly." },
+        { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a request calmly." },
+      ],
+      grammar: "Use Can you + verb + please? for a polite request.",
+      prompts: [
+        "Ask someone to send the link.",
+        "Accept a request to wait.",
+        "Thank the person.",
+      ],
+      quiz: [
+        { question: "What does Mina ask for?", answer: "The link." },
+        { question: "What does Ben ask Mina to do?", answer: "Wait a minute." },
+        { question: "Which phrase accepts a request?", answer: "Sure. No problem." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "apologizing-and-thanking",
+      title: "Apologizing and Thanking",
+      unit: "Help, Problems & Requests",
+      conversationGoal: "Learners can apologize for a small problem and thank someone for help.",
+      setup: "Kamu terlambat masuk kelas online karena masalah koneksi. Minta maaf dan ucapkan terima kasih ketika dibantu.",
+      dialogue: [
+        { speaker: "Ben", text: "Sorry I'm late." },
+        { speaker: "Sara", text: "That's okay." },
+        { speaker: "Ben", text: "My internet was slow." },
+        { speaker: "Sara", text: "No problem. Please join the class." },
+        { speaker: "Ben", text: "Thank you for waiting." },
+        { speaker: "Sara", text: "You're welcome." },
+        { speaker: "Ben", text: "I am ready now." },
+      ],
+      translation: [
+        "Maaf saya terlambat.",
+        "Tidak apa-apa.",
+        "Internet saya lambat.",
+        "Tidak masalah. Silakan masuk kelas.",
+        "Terima kasih sudah menunggu.",
+        "Sama-sama.",
+        "Sekarang saya siap.",
+      ],
+      phrases: [
+        { phrase: "Sorry I'm late.", meaning: "Maaf saya terlambat.", usage: "Apologize when you arrive late." },
+        { phrase: "That's okay.", meaning: "Tidak apa-apa.", usage: "Accept an apology." },
+        { phrase: "My internet was slow.", meaning: "Internet saya lambat.", usage: "Give one short reason." },
+        { phrase: "Thank you for waiting.", meaning: "Terima kasih sudah menunggu.", usage: "Thank someone for waiting." },
+        { phrase: "I am ready now.", meaning: "Sekarang saya siap.", usage: "Say you are ready to continue." },
+      ],
+      grammar: "Use Sorry + short sentence and Thank you for + ing.",
+      prompts: [
+        "Apologize for being late.",
+        "Give one simple reason.",
+        "Thank the teacher for waiting.",
+      ],
+      quiz: [
+        { question: "Why is Ben late?", answer: "His internet was slow." },
+        { question: "What does Ben thank Sara for?", answer: "Waiting." },
+        { question: "Which sentence says readiness?", answer: "I am ready now." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "help-and-problem-mission",
+      title: "Help and Problem Mission",
+      unit: "Help, Problems & Requests",
+      conversationGoal: "Learners can explain a simple problem, ask for help, make a request, and close politely.",
+      setup: "Ini misi akhir unit. Kamu tidak paham instruksi, punya masalah file, lalu meminta bantuan dan berterima kasih.",
+      dialogue: [
+        { speaker: "Alya", text: "Sorry, I don't understand." },
+        { speaker: "Dimas", text: "That's okay. What is the problem?" },
+        { speaker: "Alya", text: "I can't open this file." },
+        { speaker: "Dimas", text: "Can you send me a screenshot?" },
+        { speaker: "Alya", text: "Sure. Can you wait a minute?" },
+        { speaker: "Dimas", text: "No problem." },
+        { speaker: "Alya", text: "Here is the screenshot." },
+        { speaker: "Dimas", text: "Good. Click this button." },
+        { speaker: "Alya", text: "It works. Thank you for your help." },
+      ],
+      translation: [
+        "Maaf, saya tidak mengerti.",
+        "Tidak apa-apa. Apa masalahnya?",
+        "Saya tidak bisa membuka file ini.",
+        "Bisa kirimkan screenshot?",
+        "Tentu. Bisa tunggu sebentar?",
+        "Tidak masalah.",
+        "Ini screenshotnya.",
+        "Bagus. Klik tombol ini.",
+        "Berhasil. Terima kasih atas bantuanmu.",
+      ],
+      phrases: [
+        { phrase: "Sorry, I don't understand.", meaning: "Maaf, saya tidak mengerti.", usage: "Start honestly when you need clarification." },
+        { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain a simple technical problem." },
+        { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Make a polite time request." },
+        { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a small request." },
+        { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close after help." },
+      ],
+      grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
+      prompts: [
+        "Say you do not understand.",
+        "Explain the file problem.",
+        "Ask the helper to wait.",
+        "Thank the helper.",
+      ],
+      quiz: [
+        { question: "What problem does Alya have?", answer: "She can't open a file." },
+        { question: "What does Dimas ask Alya to send?", answer: "A screenshot." },
+        { question: "What does Alya say when the problem is fixed?", answer: "It works." },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "review-introductions",
+      title: "Review Introductions",
+      unit: "A1 Review & Final Conversation",
+      conversationGoal: "Learners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.",
+      setup: "Ini review awal sebelum final A1. Kamu bertemu teman kelas baru dan merapikan pola greeting, name, origin, dan closing.",
+      dialogue: [
+        { speaker: "Sara", text: "Hi, good morning." },
+        { speaker: "Dimas", text: "Good morning. My name is Dimas." },
+        { speaker: "Sara", text: "Nice to meet you, Dimas. I'm Sara." },
+        { speaker: "Dimas", text: "Nice to meet you too, Sara." },
+        { speaker: "Sara", text: "Where are you from?" },
+        { speaker: "Dimas", text: "I'm from Indonesia. How about you?" },
+        { speaker: "Sara", text: "I'm from Malaysia, and I live in Jakarta now." },
+        { speaker: "Dimas", text: "Oh, nice. See you in class." },
+      ],
+      translation: [
+        "Hai, selamat pagi.",
+        "Selamat pagi. Nama saya Dimas.",
+        "Senang bertemu denganmu, Dimas. Saya Sara.",
+        "Senang bertemu denganmu juga, Sara.",
+        "Kamu dari mana?",
+        "Saya dari Indonesia. Kalau kamu?",
+        "Saya dari Malaysia, dan sekarang saya tinggal di Jakarta.",
+        "Oh, bagus. Sampai bertemu di kelas.",
+      ],
+      phrases: [
+        { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Use this for a clear self-introduction." },
+        { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Reply after someone says Nice to meet you." },
+        { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Say your origin." },
+        { phrase: "I live in Jakarta now.", meaning: "Saya tinggal di Jakarta sekarang.", usage: "Say your current city." },
+        { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
+      ],
+      grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
+      prompts: [
+        "Introduce yourself with your name.",
+        "Say where you are from.",
+        "Ask the same question back.",
+        "Close the conversation politely.",
+      ],
+      quiz: [
+        { question: "What is Dimas's opening introduction?", answer: "My name is Dimas." },
+        { question: "Where is Sara from?", answer: "Malaysia." },
+        { question: "Which phrase asks the same question back?", answer: "How about you?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "review-routines-and-time",
+      title: "Review Routines and Time",
+      unit: "A1 Review & Final Conversation",
+      conversationGoal: "Learners can talk about a simple daily routine, class day, and class time in one short conversation.",
+      setup: "Kamu ngobrol dengan teman kelas tentang rutinitas pagi dan jadwal kelas. Fokus pada time, days, dan simple present.",
+      dialogue: [
+        { speaker: "Alya", text: "What do you do in the morning?" },
+        { speaker: "Ben", text: "I wake up at six." },
+        { speaker: "Alya", text: "Do you study English every day?" },
+        { speaker: "Ben", text: "Yes, I study English at seven." },
+        { speaker: "Alya", text: "When is our speaking class?" },
+        { speaker: "Ben", text: "It is on Tuesday at eight." },
+        { speaker: "Alya", text: "Great. See you on Tuesday." },
+        { speaker: "Ben", text: "See you then." },
+      ],
+      translation: [
+        "Apa yang kamu lakukan di pagi hari?",
+        "Saya bangun jam enam.",
+        "Apakah kamu belajar bahasa Inggris setiap hari?",
+        "Ya, saya belajar bahasa Inggris jam tujuh.",
+        "Kapan kelas speaking kita?",
+        "Hari Selasa jam delapan.",
+        "Bagus. Sampai bertemu hari Selasa.",
+        "Sampai nanti.",
+      ],
+      phrases: [
+        { phrase: "I wake up at six.", meaning: "Saya bangun jam enam.", usage: "Say a routine and time." },
+        { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
+        { phrase: "When is our speaking class?", meaning: "Kapan kelas speaking kita?", usage: "Ask about a schedule." },
+        { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Say day and time together." },
+        { phrase: "See you then.", meaning: "Sampai nanti.", usage: "Close after confirming a time." },
+      ],
+      grammar: "Use at for clock time, on for days, and simple present for routines.",
+      prompts: [
+        "Say when you wake up.",
+        "Say your English routine.",
+        "Ask about class time.",
+        "Confirm the day and time.",
+      ],
+      quiz: [
+        { question: "What time does Ben wake up?", answer: "At six." },
+        { question: "When is the speaking class?", answer: "On Tuesday at eight." },
+        { question: "Which word is used for clock time?", answer: "at" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "review-places-and-shopping",
+      title: "Review Places and Shopping",
+      unit: "A1 Review & Final Conversation",
+      conversationGoal: "Learners can ask where a place is, follow simple directions, order one item, and ask the price.",
+      setup: "Kamu mencari cafe dekat kelas, lalu membeli satu minuman. Ini menggabungkan places, directions, ordering, dan prices.",
+      dialogue: [
+        { speaker: "Mina", text: "Excuse me. Where is the cafe?" },
+        { speaker: "Ben", text: "Go straight and turn right." },
+        { speaker: "Mina", text: "Is it next to the library?" },
+        { speaker: "Ben", text: "Yes, it is. I work there. Come with me." },
+        { speaker: "Mina", text: "Thank you." },
+        { speaker: "Ben", text: "Here we are. Welcome to the cafe. What would you like?" },
+        { speaker: "Mina", text: "Hi. I would like one tea, please." },
+        { speaker: "Ben", text: "Sure. It is two dollars." },
+        { speaker: "Mina", text: "Here you go. Thank you." },
+      ],
+      translation: [
+        "Permisi. Di mana cafenya?",
+        "Jalan lurus dan belok kanan.",
+        "Apakah di sebelah perpustakaan?",
+        "Ya, benar. Saya bekerja di sana. Ikut saya.",
+        "Terima kasih.",
+        "Kita sampai. Selamat datang di cafe. Mau pesan apa?",
+        "Hai. Saya mau satu teh, tolong.",
+        "Tentu. Harganya dua dolar.",
+        "Ini uangnya. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
+        { phrase: "Go straight and turn right.", meaning: "Jalan lurus dan belok kanan.", usage: "Give two simple directions." },
+        { phrase: "Is it next to the library?", meaning: "Apakah di sebelah perpustakaan?", usage: "Confirm a place." },
+        { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
+        { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." },
+      ],
+      grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
+      prompts: [
+        "Ask where the cafe is.",
+        "Confirm the place near the library.",
+        "Order one tea politely.",
+        "Ask the price.",
+      ],
+      quiz: [
+        { question: "Where is the cafe?", answer: "Next to the library." },
+        { question: "What does Mina order?", answer: "One tea." },
+        { question: "What phrase asks the price?", answer: "How much is it?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "final-test-practice",
+      title: "Final Test Practice",
+      unit: "A1 Review & Final Conversation",
+      conversationGoal: "Learners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
+      setup: "Ini latihan sebelum final test. Kamu menjawab beberapa pertanyaan pendek dari examiner dengan kalimat sederhana dan jelas.",
+      dialogue: [
+        { speaker: "Sara", text: "Hello. What is your name?" },
+        { speaker: "Alya", text: "My name is Alya." },
+        { speaker: "Sara", text: "Where are you from?" },
+        { speaker: "Alya", text: "I'm from Indonesia." },
+        { speaker: "Sara", text: "What do you do every morning?" },
+        { speaker: "Alya", text: "I study English at seven." },
+        { speaker: "Sara", text: "Good. When is your class?" },
+        { speaker: "Alya", text: "Sorry, can you repeat that, please?" },
+        { speaker: "Sara", text: "Sure. When is your class?" },
+        { speaker: "Alya", text: "It is on Tuesday at eight." },
+      ],
+      translation: [
+        "Halo. Siapa namamu?",
+        "Nama saya Alya.",
+        "Kamu dari mana?",
+        "Saya dari Indonesia.",
+        "Apa yang kamu lakukan setiap pagi?",
+        "Saya belajar bahasa Inggris jam tujuh.",
+        "Bagus. Kapan kelasmu?",
+        "Maaf, bisa diulang, tolong?",
+        "Tentu. Kapan kelasmu?",
+        "Hari Selasa jam delapan.",
+      ],
+      phrases: [
+        { phrase: "My name is Alya.", meaning: "Nama saya Alya.", usage: "Answer identity questions." },
+        { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "Answer origin questions." },
+        { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Talk about a routine." },
+        { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for repetition in a test." },
+        { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Answer day and time." },
+      ],
+      grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
+      prompts: [
+        "Answer the name question.",
+        "Answer where you are from.",
+        "Say your English routine.",
+        "Ask the examiner to repeat.",
+      ],
+      quiz: [
+        { question: "What does Alya do at seven?", answer: "She studies English." },
+        { question: "When is Alya's class?", answer: "On Tuesday at eight." },
+        { question: "Which phrase asks for repetition?", answer: "Sorry, can you repeat that, please?" },
+      ],
+      sections: lessonSections
+    },
+    {
+      slug: "a1-final-conversation",
+      title: "A1 Final Conversation",
+      unit: "A1 Review & Final Conversation",
+      conversationGoal: "Learners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
+      setup: "Ini misi final A1. Kamu melakukan percakapan lebih panjang, tetapi kalimat tetap pendek, jelas, dan sesuai level A1.",
+      dialogue: [
+        { speaker: "Ben", text: "Hi, good morning. What is your name?" },
+        { speaker: "Mina", text: "Good morning. My name is Mina." },
+        { speaker: "Ben", text: "Nice to meet you, Mina. Where are you from?" },
+        { speaker: "Mina", text: "I'm from Indonesia. How about you?" },
+        { speaker: "Ben", text: "I'm from Malaysia. What do you do every morning?" },
+        { speaker: "Mina", text: "I study English at seven. By the way, where is the cafe?" },
+        { speaker: "Ben", text: "It's close. Go straight and turn left." },
+        { speaker: "Mina", text: "Thank you very much." },
+        { speaker: "Ben", text: "You're welcome. Have a nice day." },
+        { speaker: "Staff", text: "Hello! Welcome to the cafe. What would you like?" },
+        { speaker: "Mina", text: "Hello. I would like one tea, please." },
+        { speaker: "Staff", text: "Sure. It is two dollars." },
+        { speaker: "Mina", text: "Sorry, can you repeat that, please?" },
+        { speaker: "Staff", text: "It is two dollars." },
+        { speaker: "Mina", text: "Okay. Here you go. Thank you." },
+      ],
+      translation: [
+        "Hai, selamat pagi. Siapa namamu?",
+        "Selamat pagi. Nama saya Mina.",
+        "Senang bertemu denganmu, Mina. Kamu dari mana?",
+        "Saya dari Indonesia. Kalau kamu?",
+        "Saya dari Malaysia. Apa yang kamu lakukan setiap pagi?",
+        "Saya belajar bahasa Inggris jam tujuh. Ngomong-ngomong, di mana cafenya?",
+        "Dekat. Jalan lurus dan belok kiri.",
+        "Terima kasih banyak.",
+        "Sama-sama. Semoga harimu menyenangkan.",
+        "Halo! Selamat datang di cafe. Mau pesan apa?",
+        "Halo. Saya mau satu teh, tolong.",
+        "Tentu. Harganya dua dolar.",
+        "Maaf, bisa diulang, tolong?",
+        "Harganya dua dolar.",
+        "Oke. Ini uangnya. Terima kasih.",
+      ],
+      phrases: [
+        { phrase: "My name is Mina.", meaning: "Nama saya Mina.", usage: "Introduce yourself clearly." },
+        { phrase: "I'm from Indonesia. How about you?", meaning: "Saya dari Indonesia. Kalau kamu?", usage: "Answer and ask back." },
+        { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a routine and time." },
+        { phrase: "Where is the cafe?", meaning: "Di mana cafenya?", usage: "Ask for a place." },
+        { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
+        { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for clarification." },
+        { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." },
+      ],
+      grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
+      prompts: [
+        "Introduce yourself.",
+        "Say your origin and ask back.",
+        "Ask where the cafe is.",
+        "Order one tea.",
+        "Ask for repetition.",
+        "Close with thanks.",
+      ],
+      quiz: [
+        { question: "What is Mina's routine?", answer: "She studies English at seven." },
+        { question: "Where does Mina want to go?", answer: "The cafe." },
+        { question: "What does Mina order?", answer: "One tea." },
+        { question: "Why does Mina ask Ben to repeat?", answer: "She wants to hear the price again." },
+      ],
+      sections: lessonSections
+    }
+  // </generated:lessons>
 ];
 
 export const lessonsBySlug = Object.fromEntries(lessonCatalog.map((item) => [item.slug, item]));

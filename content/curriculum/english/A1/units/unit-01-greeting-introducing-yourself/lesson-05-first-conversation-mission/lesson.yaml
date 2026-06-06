@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 10
 conversation_situation: first_unit_conversation_mission
 conversation_goal: Combine greeting, name, origin, and a polite closing in one short conversation.
+grammar_summary: "Keep A1 conversations short: greeting + name + origin + question back + closing."
 required_sections:
   - conversation_goal
   - situation_setup

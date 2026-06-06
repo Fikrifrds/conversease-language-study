@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: spelling_your_name_for_a_form
 conversation_goal: Spell your name clearly when someone needs to write it down.
+grammar_summary: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S."
 required_sections:
   - conversation_goal
   - situation_setup

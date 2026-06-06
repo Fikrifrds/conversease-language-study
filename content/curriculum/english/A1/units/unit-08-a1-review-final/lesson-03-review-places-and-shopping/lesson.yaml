@@ -6,6 +6,7 @@ estimated_minutes: 9
 conversation_situation: reviewing_places_directions_and_a_simple_order
 conversation_goal: Learners can ask where a place is, follow simple directions, order
   one item, and ask the price.
+grammar_summary: "Review Where is for places, short imperatives for directions, and I would like for polite orders."
 required_sections:
 - conversation_goal
 - situation_setup

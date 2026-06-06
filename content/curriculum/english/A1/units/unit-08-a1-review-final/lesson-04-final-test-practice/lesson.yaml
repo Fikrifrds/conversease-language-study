@@ -6,6 +6,7 @@ estimated_minutes: 10
 conversation_situation: practicing_the_a1_final_conversation_test
 conversation_goal: Learners can answer common A1 test questions about identity, routine,
   schedule, places, requests, and simple needs.
+grammar_summary: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification."
 required_sections:
 - conversation_goal
 - situation_setup

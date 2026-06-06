@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: asking_about_a_meeting_time
 conversation_goal: Learners can ask when a simple event happens and confirm the details.
+grammar_summary: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions."
 required_sections:
   - conversation_goal
   - situation_setup

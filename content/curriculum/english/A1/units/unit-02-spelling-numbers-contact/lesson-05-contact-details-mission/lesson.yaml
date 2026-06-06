@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: sharing_complete_contact_details
 conversation_goal: Share your name, spelling, phone number, and email address in one simple conversation.
+grammar_summary: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?"
 required_sections:
   - conversation_goal
   - situation_setup

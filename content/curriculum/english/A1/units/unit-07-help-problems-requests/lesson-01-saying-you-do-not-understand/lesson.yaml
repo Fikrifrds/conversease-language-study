@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: saying_you_do_not_understand
 conversation_goal: Learners can say they do not understand and ask for repetition
   politely.
+grammar_summary: "Use I don't + verb for a negative statement and Can you + verb? for a request."
 required_sections:
 - conversation_goal
 - situation_setup

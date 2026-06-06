@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: routine_and_schedule_unit_mission
 conversation_goal: Learners can combine time, routine, days, and schedule questions in one simple conversation.
+grammar_summary: "Combine on + day and at + time in one sentence: I study on Monday at seven."
 required_sections:
   - conversation_goal
   - situation_setup

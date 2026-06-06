@@ -6,6 +6,7 @@ estimated_minutes: 9
 conversation_situation: buying_one_basic_item_in_a_shop
 conversation_goal: Learners can buy one simple item, ask the price, and complete the
   payment.
+grammar_summary: "Use this for one item near you and it after the item is already clear."
 required_sections:
 - conversation_goal
 - situation_setup

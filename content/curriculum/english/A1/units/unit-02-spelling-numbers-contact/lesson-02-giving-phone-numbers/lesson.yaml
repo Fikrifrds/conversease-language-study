@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: giving_a_phone_number_for_registration
 conversation_goal: Give a phone number clearly and confirm it when someone reads it back.
+grammar_summary: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two."
 required_sections:
   - conversation_goal
   - situation_setup

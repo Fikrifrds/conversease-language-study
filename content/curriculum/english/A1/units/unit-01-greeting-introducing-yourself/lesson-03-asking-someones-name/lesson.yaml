@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: asking_name_in_online_class
 conversation_goal: Ask someone's name politely and confirm what you heard.
+grammar_summary: "Use What's your + noun for simple questions: What's your name? What's your job?"
 required_sections:
   - conversation_goal
   - situation_setup

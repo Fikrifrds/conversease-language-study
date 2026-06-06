@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: asking_for_a_place_location
 conversation_goal: Learners can ask where a place is and understand a short location
   answer.
+grammar_summary: "Use Where is + place? and answer with It is + location."
 required_sections:
 - conversation_goal
 - situation_setup

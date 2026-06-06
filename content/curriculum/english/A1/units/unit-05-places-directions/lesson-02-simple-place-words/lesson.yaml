@@ -5,6 +5,7 @@ status: published
 estimated_minutes: 8
 conversation_situation: naming_common_places_nearby
 conversation_goal: Learners can name common places and answer where someone is going.
+grammar_summary: "Use I'm going to + place for a destination."
 required_sections:
 - conversation_goal
 - situation_setup

@@ -6,6 +6,7 @@ estimated_minutes: 9
 conversation_situation: reviewing_introductions_before_class
 conversation_goal: Learners can greet someone, introduce themselves, say where they
   are from, and ask simple follow-up questions.
+grammar_summary: "Review I am or I'm for names, from for origin, and live in for current city."
 required_sections:
 - conversation_goal
 - situation_setup

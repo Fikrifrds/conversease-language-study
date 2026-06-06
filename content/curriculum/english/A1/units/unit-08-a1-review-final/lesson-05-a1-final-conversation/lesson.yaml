@@ -6,6 +6,7 @@ estimated_minutes: 12
 conversation_situation: completing_a_full_a1_final_conversation
 conversation_goal: Learners can complete a full A1 conversation with greetings, identity,
   routine, places, ordering, help language, and polite closing.
+grammar_summary: "Combine short complete sentences, question back, and polite request forms in one A1 conversation."
 required_sections:
 - conversation_goal
 - situation_setup

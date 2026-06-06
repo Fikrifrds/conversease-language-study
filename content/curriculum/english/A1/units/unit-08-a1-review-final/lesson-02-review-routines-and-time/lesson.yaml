@@ -6,6 +6,7 @@ estimated_minutes: 9
 conversation_situation: reviewing_routine_and_class_time
 conversation_goal: Learners can talk about a simple daily routine, class day, and
   class time in one short conversation.
+grammar_summary: "Use at for clock time, on for days, and simple present for routines."
 required_sections:
 - conversation_goal
 - situation_setup

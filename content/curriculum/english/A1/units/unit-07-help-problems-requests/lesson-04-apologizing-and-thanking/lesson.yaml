@@ -6,6 +6,7 @@ estimated_minutes: 8
 conversation_situation: apologizing_and_thanking_after_a_small_problem
 conversation_goal: Learners can apologize for a small problem and thank someone for
   help.
+grammar_summary: "Use Sorry + short sentence and Thank you for + ing."
 required_sections:
 - conversation_goal
 - situation_setup
