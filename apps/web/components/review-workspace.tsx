@@ -5,6 +5,8 @@ import Link from "next/link";
 import { BookOpen, Sparkles } from "lucide-react";
 import { getLearningProgress, type LearningLessonSummary } from "@/lib/learning-api";
 import { buildReviewItems, collectPatternBank, selectReviewLessonSlugs } from "@/lib/review-utils";
+import { PatternDrill } from "@/components/pattern-drill";
+import { ReviewMiniCheck } from "@/components/review-mini-check";
 
 function dateKeyForToday() {
   return new Date().toISOString().slice(0, 10);
@@ -96,6 +98,8 @@ export function ReviewWorkspace() {
 
   return (
     <div className="mt-8 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="space-y-5">
+        <ReviewMiniCheck items={items} seedKey={todayKey} />
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex items-center gap-2">
           <Sparkles className="h-5 w-5 text-leaf" aria-hidden="true" />
@@ -127,9 +131,12 @@ export function ReviewWorkspace() {
                     <span className="font-semibold text-ink">Say:</span> {item.phrase}
                   </p>
                   {item.pattern ? (
-                    <p>
-                      <span className="font-semibold text-ink">Pattern:</span> {item.pattern}
-                    </p>
+                    <>
+                      <p>
+                        <span className="font-semibold text-ink">Pattern:</span> {item.pattern}
+                      </p>
+                      <PatternDrill pattern={item.pattern} seedKey={`${todayKey}:${item.lessonSlug}`} />
+                    </>
                   ) : null}
                   <p className="text-ink/60">
                     Tantangan: buat 2 contoh kalimat baru (konteks lain) dengan pattern ini.
@@ -142,11 +149,12 @@ export function ReviewWorkspace() {
           <p className="mt-4 text-sm leading-6 text-ink/60">Belum ada lesson untuk direview. Mulai 1 lesson dulu.</p>
         )}
       </section>
+      </div>
+
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex items-center gap-2">
           <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="text-lg font-semibold">Pattern Bank</h2>
         </div>
         <p className="mt-2 text-sm leading-6 text-ink/60">
           Kumpulan pola dari lesson yang sudah kamu selesaikan. Ini yang bikin kamu bisa pindah konteks dengan cepat.
@@ -171,4 +179,3 @@ export function ReviewWorkspace() {
     </div>
   );
 }
-

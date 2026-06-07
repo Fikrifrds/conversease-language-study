@@ -20,38 +20,63 @@ function stableIndex(seed: string, size: number) {
   return hash % size;
 }
 
+function stableScore(seed: string) {
+  let hash = 0;
+  for (let i = 0; i < seed.length; i += 1) {
+    hash = (hash * 31 + seed.charCodeAt(i)) >>> 0;
+  }
+  return hash;
+}
+
 export function selectReviewLessonSlugs(lessons: LearningLessonSummary[], dateKey: string, count: number) {
-  const completed = lessons
-    .filter((lesson) => lesson.progressStatus === "completed")
+  const completed = lessons.filter((lesson) => lesson.progressStatus === "completed");
+  const inProgress = lessons.filter((lesson) => lesson.progressStatus !== "completed");
+
+  const completedSorted = completed
     .slice()
     .sort((a, b) => {
       const aTime = a.updatedAt ? new Date(a.updatedAt).getTime() : 0;
       const bTime = b.updatedAt ? new Date(b.updatedAt).getTime() : 0;
-      return bTime - aTime;
+      return aTime - bTime;
     });
 
-  const pool = completed.length
-    ? completed.map((lesson) => lesson.slug)
-    : lessons.filter((lesson) => lesson.progressStatus !== "completed").map((lesson) => lesson.slug);
+  const oldest = completedSorted.slice(0, Math.min(2, completedSorted.length));
+  const newest = completedSorted.slice(-Math.min(1, completedSorted.length));
 
-  const unique: string[] = [];
-  for (const slug of pool) {
-    if (unique.length >= count) {
+  const selected: string[] = [];
+  for (const lesson of [...oldest, ...newest]) {
+    if (!selected.includes(lesson.slug)) {
+      selected.push(lesson.slug);
+    }
+  }
+
+  const remainingCompleted = completedSorted
+    .filter((lesson) => !selected.includes(lesson.slug))
+    .slice()
+    .sort((a, b) => stableScore(`${dateKey}:${a.slug}`) - stableScore(`${dateKey}:${b.slug}`));
+
+  for (const lesson of remainingCompleted) {
+    if (selected.length >= count) {
       break;
     }
-    if (!unique.includes(slug)) {
-      unique.push(slug);
+    selected.push(lesson.slug);
+  }
+
+  if (selected.length < count) {
+    const fallback = inProgress
+      .slice()
+      .sort((a, b) => stableScore(`${dateKey}:${a.slug}`) - stableScore(`${dateKey}:${b.slug}`));
+    for (const lesson of fallback) {
+      if (selected.length >= count) {
+        break;
+      }
+      if (!selected.includes(lesson.slug)) {
+        selected.push(lesson.slug);
+      }
     }
   }
 
-  if (unique.length < count) {
-    const remaining = pool.filter((slug) => !unique.includes(slug));
-    while (unique.length < count && remaining.length) {
-      unique.push(remaining.shift() as string);
-    }
-  }
-
-  return unique.slice(0, count).filter(Boolean);
+  return selected.slice(0, count).filter(Boolean);
 }
 
 export function buildReviewItems(slugs: string[], dateKey: string): ReviewItem[] {
@@ -101,4 +126,3 @@ export function collectPatternBank(lessonSlugs: string[], limit: number) {
   }
   return unique;
 }
-
