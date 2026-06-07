@@ -1,0 +1,21 @@
+phrases:
+- phrase: When you say 'more cautious', do you mean smaller scope or slower timing?
+  meaning_id: Kalau bilang 'lebih hati-hati', maksudnya scope kecil atau timing lambat?
+  usage_note: Clarify ambiguous language.
+  common_mistake: Do not accept vague words; clarify meaning.
+- phrase: What's your assumption about the main risk?
+  meaning_id: Asumsi kamu tentang risiko utama apa?
+  usage_note: Surface assumptions in a neutral way.
+  common_mistake: Do not argue first; ask assumption.
+- phrase: What would change your mind about the timeline?
+  meaning_id: Apa yang bisa mengubah pikiran kamu soal timeline?
+  usage_note: Find decision criteria and conditions.
+  common_mistake: Do not debate endlessly; ask what would change mind.
+- phrase: What's the next step we should take today?
+  meaning_id: Next step apa yang harus kita ambil hari ini?
+  usage_note: Move to action.
+  common_mistake: Do not leave it abstract; ask next step.
+- phrase: Do you mean X or Y?
+  meaning_id: Maksudnya X atau Y?
+  usage_note: A useful clarification pattern.
+  common_mistake: Do not offer too many options; keep to two.

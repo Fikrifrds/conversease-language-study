@@ -1,0 +1,46 @@
+scenario_key: c1_review_nuance_strategy
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Do you support the plan or not?
+learner_goal: Give a nuanced position, manage expectations, and align on next steps.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Give a nuanced position with a condition.
+  hint: On balance... but I'd...
+  sample_answer: On balance, I support it, but I'd adjust the scope to reduce risk.
+  focus: Nuance
+  expected_keywords:
+  - on balance
+  - scope
+  - risk
+- coach: Be precise about what changes.
+  hint: To be precise...
+  sample_answer: To be precise, I'd keep the core workflow and postpone optional add-ons.
+  focus: Precision
+  expected_keywords:
+  - to be precise
+  - core
+  - postpone
+- coach: Manage expectations and close with next steps.
+  hint: What I can commit to is... Next steps are...
+  sample_answer: 'What I can commit to is a pilot next week. Next steps are: I''ll share a one-page summary today, and we''ll align tomorrow.'
+  focus: Commitment + next steps
+  expected_keywords:
+  - commit
+  - next steps
+  - today
+target_phrases:
+- On balance, ...
+- To be precise, ...
+- What I can commit to is ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

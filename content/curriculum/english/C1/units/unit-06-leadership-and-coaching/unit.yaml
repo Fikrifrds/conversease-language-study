@@ -1,0 +1,11 @@
+unit_key: unit-06-leadership-and-coaching
+level_code: C1
+title: Leadership & Coaching
+main_conversation_outcome: Lead conversations, coach others, and guide decisions.
+status: in_production
+lessons:
+  - lesson-01-setting-direction
+  - lesson-02-coaching-with-questions
+  - lesson-03-giving-actionable-feedback
+  - lesson-04-guiding-a-decision
+  - lesson-05-leadership-coaching-mission

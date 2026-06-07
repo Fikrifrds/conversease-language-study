@@ -1,0 +1,16 @@
+prompts:
+- prompt: Open a short presentation.
+  target_response: Today I'd like to share an idea to improve our onboarding.
+  acceptable_variations:
+  - Today I'd like to share an idea to improve our onboarding.
+  - Today I'd like to share an idea to improve our meetings.
+- prompt: State the problem.
+  target_response: The problem is new hires often feel lost in the first week.
+  acceptable_variations:
+  - The problem is new hires often feel lost in the first week.
+  - The problem is we spend too much time in meetings.
+- prompt: Close with next steps.
+  target_response: 'Next steps are: draft the checklist today, then pilot it with the next hire.'
+  acceptable_variations:
+  - 'Next steps are: draft the checklist today, then pilot it with the next hire.'
+  - 'Next steps are: write a draft today, then review it tomorrow.'

@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Ask: What do you think about going to Bali?'
+  target_response: What do you think about going to Bali?
+  acceptable_variations:
+  - What do you think about going to Bali?
+  - What do you think about Bali?
+- prompt: Answer with opinion + reason.
+  target_response: I think it's a great idea because the beaches are beautiful.
+  acceptable_variations:
+  - I think it's a great idea because the beaches are beautiful.
+  - I think it's a great idea. The beaches are beautiful.
+- prompt: Say it might be crowded.
+  target_response: It might be crowded.
+  acceptable_variations:
+  - It might be crowded.
+  - It may be crowded.

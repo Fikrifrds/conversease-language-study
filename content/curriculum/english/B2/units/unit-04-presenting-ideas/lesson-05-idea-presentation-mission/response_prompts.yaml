@@ -1,0 +1,16 @@
+prompts:
+- prompt: Present your idea opening.
+  target_response: Today I'd like to propose a shared onboarding checklist.
+  acceptable_variations:
+  - Today I'd like to propose a shared onboarding checklist.
+  - Today I'd like to propose a change to our meeting format.
+- prompt: Explain benefits and risk.
+  target_response: The main benefit is faster onboarding. A key risk is it becomes outdated. To reduce the risk, we'll review it monthly.
+  acceptable_variations:
+  - The main benefit is faster onboarding. A key risk is it becomes outdated. To reduce the risk, we'll review it monthly.
+  - The main benefit is better clarity. A key risk is extra work. To reduce the risk, we'll start small.
+- prompt: Answer a question with follow-up.
+  target_response: That's a good question. I'm not sure yet, but I can follow up by tomorrow.
+  acceptable_variations:
+  - That's a good question. I'm not sure yet, but I can follow up by tomorrow.
+  - That's a good question. I'm not sure yet, but I can check and get back to you.

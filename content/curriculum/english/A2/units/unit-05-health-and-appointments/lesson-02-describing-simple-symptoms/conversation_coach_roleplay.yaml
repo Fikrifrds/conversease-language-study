@@ -1,0 +1,43 @@
+scenario_key: a2_health_describing_symptoms
+mode: lesson_practice_coach
+level_code: A2
+opening_line: What seems to be the problem?
+learner_goal: Describe your symptoms and say how long you have had them.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What seems to be the problem?
+  hint: Sebutkan gejala + durasi.
+  sample_answer: I've had a sore throat since yesterday.
+  focus: Describe symptom with duration
+  expected_keywords:
+  - have had
+  - since
+  - throat
+- coach: Do you have a fever?
+  hint: Jawab singkat, lalu tambah gejala.
+  sample_answer: A little. And I have a cough.
+  focus: Add another symptom
+  expected_keywords:
+  - a little
+  - cough
+- coach: How long have you been coughing?
+  hint: Jawab durasinya.
+  sample_answer: For two days.
+  focus: State duration
+  expected_keywords:
+  - for
+  - days
+target_phrases:
+- I've had a sore throat since yesterday.
+- And I have a cough.
+- For two days.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask the driver to take you to the station.
+    target_response: Can you take me to the station, please?
+    acceptable_variations:
+      - Can you take me to the station, please?
+      - To the station, please.
+  - prompt: Ask how long it will take.
+    target_response: How long will it take?
+    acceptable_variations:
+      - How long will it take?
+      - How long will it take to get there?
+  - prompt: Ask for the fastest route.
+    target_response: Please take the fastest route.
+    acceptable_variations:
+      - Please take the fastest route.
+      - Please take a fast route.

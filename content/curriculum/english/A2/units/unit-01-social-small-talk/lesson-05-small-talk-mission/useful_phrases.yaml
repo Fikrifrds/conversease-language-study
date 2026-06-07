@@ -1,0 +1,25 @@
+phrases:
+  - phrase: How's it going?
+    meaning_id: Gimana kabarmu?
+    usage_note: A casual way to ask how someone is.
+    common_mistake: Do not answer with only yes or no.
+  - phrase: Did you sleep well?
+    meaning_id: Kamu tidur nyenyak?
+    usage_note: Ask this if someone says they are tired.
+    common_mistake: Do not say "Did you slept well?"
+  - phrase: I stayed up late.
+    meaning_id: Saya begadang.
+    usage_note: A simple reason for being tired.
+    common_mistake: Do not say "I stay up late" for the past.
+  - phrase: Any plans for the weekend?
+    meaning_id: Ada rencana untuk akhir pekan?
+    usage_note: A casual question to start a weekend plan conversation.
+    common_mistake: Do not say "Any plan for weekend?" without the -s.
+  - phrase: Do you want to join?
+    meaning_id: Kamu mau ikut?
+    usage_note: Invite someone to join an activity.
+    common_mistake: Do not say "Do you want join?"
+  - phrase: What time?
+    meaning_id: Jam berapa?
+    usage_note: Ask for the time of a plan.
+    common_mistake: In a full sentence, say "What time is it?" or "What time are we meeting?"

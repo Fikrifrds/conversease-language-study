@@ -1,0 +1,43 @@
+scenario_key: c1_leadership_coaching_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: I'm stuck and we need to decide fast.
+learner_goal: Lead a coaching conversation from direction to decision with clear next steps.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Set direction and ask for options.
+  hint: The direction I'd like to set is... What options do you see?
+  sample_answer: The direction I'd like to set is stabilizing billing first. What options do you see right now?
+  focus: Direction + options
+  expected_keywords:
+  - direction
+  - options
+- coach: Coach them toward a small next step and success criteria.
+  hint: What would success look like? smallest next step?
+  sample_answer: What would success look like for the pilot, and what's the smallest next step you can take today?
+  focus: Coach
+  expected_keywords:
+  - success
+  - smallest next step
+- coach: Recommend an option and confirm agreement.
+  hint: Given our constraints... Can we agree on...?
+  sample_answer: Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly?
+  focus: Decision
+  expected_keywords:
+  - constraints
+  - recommend
+  - agree
+target_phrases:
+- The direction I'd like to set is ...
+- What options do you see ...?
+- Can we agree on ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

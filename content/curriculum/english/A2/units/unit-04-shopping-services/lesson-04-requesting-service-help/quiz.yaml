@@ -1,0 +1,25 @@
+questions:
+  - key: polite_help
+    type: multiple_choice
+    prompt: Which phrase is a polite way to ask for help?
+    options:
+      - Could you help me?
+      - How much is it?
+      - Which platform?
+    correct_answer: Could you help me?
+  - key: ask_location
+    type: multiple_choice
+    prompt: Which sentence asks for a location?
+    options:
+      - Can you show me where the batteries are?
+      - I'll take the blue one.
+      - I'm busy tonight.
+    correct_answer: Can you show me where the batteries are?
+  - key: thank_for_help
+    type: multiple_choice
+    prompt: Which sentence thanks someone for help?
+    options:
+      - Thank you for your help.
+      - Sorry, I can't.
+      - Maybe next time.
+    correct_answer: Thank you for your help.

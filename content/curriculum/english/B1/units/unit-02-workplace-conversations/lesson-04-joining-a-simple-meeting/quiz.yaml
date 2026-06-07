@@ -1,0 +1,25 @@
+questions:
+- key: meeting_phrase
+  type: multiple_choice
+  prompt: Which phrase is polite in a meeting?
+  options:
+  - I'd like to add one point.
+  - Listen to me!
+  - Stop talking.
+  correct_answer: I'd like to add one point.
+- key: meaning_go_ahead
+  type: multiple_choice
+  prompt: What does "Go ahead" mean?
+  options:
+  - silakan lanjut
+  - berhenti
+  - pulang
+  correct_answer: silakan lanjut
+- key: next_steps
+  type: multiple_choice
+  prompt: Which question asks for action items?
+  options:
+  - What are the next steps?
+  - How are you?
+  - Where is the office?
+  correct_answer: What are the next steps?

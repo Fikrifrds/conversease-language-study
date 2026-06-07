@@ -1,0 +1,25 @@
+questions:
+- key: one_thing
+  type: multiple_choice
+  prompt: Which phrase gives feedback gently?
+  options:
+  - One thing I'd suggest is ...
+  - This is terrible.
+  - No feedback.
+  correct_answer: One thing I'd suggest is ...
+- key: concrete_improvement
+  type: multiple_choice
+  prompt: Which phrase proposes an actionable fix?
+  options:
+  - A concrete improvement would be ...
+  - Just be better.
+  - No idea.
+  correct_answer: A concrete improvement would be ...
+- key: open_to
+  type: multiple_choice
+  prompt: Which phrase invites revision politely?
+  options:
+  - Would you be open to ...?
+  - Do it now.
+  - Stop.
+  correct_answer: Would you be open to ...?

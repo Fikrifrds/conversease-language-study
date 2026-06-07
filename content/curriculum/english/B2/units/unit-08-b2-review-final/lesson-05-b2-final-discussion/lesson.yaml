@@ -1,0 +1,25 @@
+lesson_key: lesson-05-b2-final-discussion
+slug: b2-final-discussion
+title: B2 Final Discussion
+status: published
+estimated_minutes: 12
+conversation_situation: final_discussion_scenario
+conversation_goal: 'Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.'
+grammar_summary: Use Let's define the scope... / Based on the data... / The trade-off is... / Given these constraints... / Next steps are...
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

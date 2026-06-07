@@ -1,0 +1,25 @@
+lesson_key: lesson-04-asking-about-past-activities
+slug: asking-about-past-activities
+title: Asking About Past Activities
+status: published
+estimated_minutes: 10
+conversation_situation: asking_someone_about_past_activities
+conversation_goal: Ask what someone did and ask follow-up questions about their past activities.
+grammar_summary: Use What did you do? / Did you + verb? to ask about the past and use short past answers.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

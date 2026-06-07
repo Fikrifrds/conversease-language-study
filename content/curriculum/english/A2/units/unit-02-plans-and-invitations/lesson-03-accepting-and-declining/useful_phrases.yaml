@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Thanks, but I can't.
+    meaning_id: Terima kasih, tapi saya tidak bisa.
+    usage_note: A polite way to decline.
+    common_mistake: Do not say "I no can".
+  - phrase: I'm busy tonight.
+    meaning_id: Saya sibuk malam ini.
+    usage_note: A simple reason.
+    common_mistake: Do not say "I busy".
+  - phrase: because I have a meeting
+    meaning_id: karena saya ada meeting
+    usage_note: Add a short reason with because.
+    common_mistake: Keep it short. Do not add too many details.
+  - phrase: No problem.
+    meaning_id: Tidak apa-apa.
+    usage_note: A polite response when someone declines.
+    common_mistake: Do not say it angrily; keep a friendly tone.
+  - phrase: Maybe another time.
+    meaning_id: Mungkin lain kali.
+    usage_note: A soft closing after declining.
+    common_mistake: You can add a new suggestion if you want.

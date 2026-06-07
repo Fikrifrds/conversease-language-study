@@ -1,0 +1,25 @@
+lesson_key: lesson-05-preference-discussion-mission
+slug: preference-discussion-mission
+title: Preference Discussion Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_compare_prefer_pros_cons_agree
+conversation_goal: 'Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.'
+grammar_summary: 'Combine: ... but ... / I prefer... because... / The advantage is... / One downside is... / So we agree on...?'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

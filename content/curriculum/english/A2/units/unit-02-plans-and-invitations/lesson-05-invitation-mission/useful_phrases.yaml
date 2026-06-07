@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Do you want to grab coffee?
+    meaning_id: Kamu mau ngopi?
+    usage_note: A casual invitation.
+    common_mistake: Do not say "Do you want grab" without to.
+  - phrase: Sorry, I can't.
+    meaning_id: Maaf, saya tidak bisa.
+    usage_note: A polite decline.
+    common_mistake: Add a short reason to sound kinder.
+  - phrase: Something came up.
+    meaning_id: Ada urusan mendadak.
+    usage_note: A short reason.
+    common_mistake: Keep it short and natural.
+  - phrase: How about Saturday?
+    meaning_id: Gimana kalau Sabtu?
+    usage_note: Suggest a new day.
+    common_mistake: Do not say "How about on Saturday" unless you add more detail.
+  - phrase: Does 3 pm work for you?
+    meaning_id: Jam 3 sore cocok buat kamu?
+    usage_note: Confirm the new time.
+    common_mistake: Do not say "Do 3 pm work".

@@ -1,0 +1,42 @@
+scenario_key: a2_review_travel_shopping
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Can I help you?
+learner_goal: Ask a travel question, then ask for an item and specify the type.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. Can I help you?
+  hint: Tanya lokasi atau jadwal.
+  sample_answer: Yes, please. What time is the next train?
+  focus: Ask travel question
+  expected_keywords:
+  - what time
+  - train
+- coach: It's at 4:15. Anything else?
+  hint: Tanya barang (availability).
+  sample_answer: Yes. Do you have a phone charger?
+  focus: Ask availability
+  expected_keywords:
+  - do you have
+  - charger
+- coach: Sure. What kind do you need?
+  hint: Sebutkan jenisnya.
+  sample_answer: A USB-C charger, please.
+  focus: Specify type
+  expected_keywords:
+  - usb
+  - please
+target_phrases:
+- Where is...?
+- What time is the next train?
+- Do you have...?
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

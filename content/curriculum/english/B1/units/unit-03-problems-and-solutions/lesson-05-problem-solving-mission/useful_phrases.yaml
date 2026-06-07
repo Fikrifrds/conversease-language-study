@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Quick check: what''s the issue?'
+  meaning_id: 'Cek cepat: masalahnya apa?'
+  usage_note: A common workplace opener.
+  common_mistake: Do not say "What is issue?" without the.
+- phrase: There's a problem with the login page.
+  meaning_id: Ada masalah di halaman login.
+  usage_note: Clear problem statement.
+  common_mistake: Start with the problem before details.
+- phrase: We could roll back now because it's quick.
+  meaning_id: Kita bisa rollback sekarang karena cepat.
+  usage_note: Solution + reason.
+  common_mistake: Avoid too many reasons; one is enough.
+- phrase: But will it affect other features?
+  meaning_id: Tapi bakal ngaruh ke fitur lain nggak?
+  usage_note: A realistic concern question.
+  common_mistake: Do not drop will in this future question.
+- phrase: It might, so let's roll back and then test the key flows.
+  meaning_id: Mungkin, jadi kita rollback lalu tes alur penting.
+  usage_note: Respond to concern and propose next steps.
+  common_mistake: Keep next steps short and clear.

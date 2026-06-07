@@ -1,0 +1,25 @@
+questions:
+- key: pros_cons_question
+  type: multiple_choice
+  prompt: Which sentence asks about trade-offs?
+  options:
+  - What are the pros and cons?
+  - What time is it?
+  - Where is it?
+  correct_answer: What are the pros and cons?
+- key: advantage_meaning
+  type: multiple_choice
+  prompt: What does "advantage" mean?
+  options:
+  - kelebihan
+  - kekurangan
+  - jadwal
+  correct_answer: kelebihan
+- key: downside_meaning
+  type: multiple_choice
+  prompt: What does "downside" mean?
+  options:
+  - kekurangan
+  - kelebihan
+  - harga
+  correct_answer: kekurangan

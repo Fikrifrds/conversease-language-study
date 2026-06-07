@@ -1,0 +1,41 @@
+scenario_key: b1_work_explain_task
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. What are you working on today?
+learner_goal: Explain what you're working on, share the next step, and mention a blocker or say none.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. What are you working on today?
+  hint: 'Jelaskan task kamu: I''m working on ...'
+  sample_answer: I'm working on the onboarding email flow.
+  focus: State current task
+  expected_keywords:
+  - working on
+- coach: Great. What's the next step?
+  hint: Gunakan Next, I'll ...
+  sample_answer: Next, I'll review the copy and update the templates.
+  focus: State next step
+  expected_keywords:
+  - next
+  - review
+- coach: Any blockers?
+  hint: Jawab singkat (none / one blocker).
+  sample_answer: Not right now, but I may need feedback later.
+  focus: Mention blockers
+  expected_keywords:
+  - not
+  - feedback
+target_phrases:
+- I'm working on ...
+- What's the next step?
+- Any blockers?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

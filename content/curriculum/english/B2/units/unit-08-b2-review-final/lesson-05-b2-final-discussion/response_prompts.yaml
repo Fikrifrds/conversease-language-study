@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start by framing the discussion.
+  target_response: Let's define the scope and what success looks like.
+  acceptable_variations:
+  - Let's define the scope and what success looks like.
+  - Let's define the scope and success criteria.
+- prompt: Recommend an approach based on constraints.
+  target_response: Given these constraints, I'd recommend a time-boxed pilot.
+  acceptable_variations:
+  - Given these constraints, I'd recommend a time-boxed pilot.
+  - Given these constraints, I'd recommend starting with a pilot.
+- prompt: Close with next steps and timeline.
+  target_response: 'Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  acceptable_variations:
+  - 'Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  - 'Next steps are: I''ll send a draft today, and you''ll review it tomorrow.'

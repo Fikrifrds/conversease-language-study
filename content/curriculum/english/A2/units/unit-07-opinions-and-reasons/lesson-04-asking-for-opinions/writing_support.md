@@ -1,0 +1,6 @@
+# Writing Support
+
+Write 3 lines:
+1. Ask: What do you think about ...?
+2. Answer: I think ... because ...
+3. Add one concern: It might be ...

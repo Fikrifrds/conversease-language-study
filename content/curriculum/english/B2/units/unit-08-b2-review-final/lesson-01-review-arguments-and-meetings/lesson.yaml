@@ -1,0 +1,25 @@
+lesson_key: lesson-01-review-arguments-and-meetings
+slug: review-arguments-and-meetings
+title: Review Arguments and Meetings
+status: published
+estimated_minutes: 12
+conversation_situation: review_argument_meeting
+conversation_goal: Summarize your position clearly, support it with reasons, and close with clear next steps.
+grammar_summary: Use My position is... / The main reason is... / To summarize... / Next steps are... to sound clear in meetings.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

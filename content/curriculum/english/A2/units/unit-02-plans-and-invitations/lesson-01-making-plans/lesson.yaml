@@ -1,0 +1,25 @@
+lesson_key: lesson-01-making-plans
+slug: making-plans
+title: Making Plans
+status: published
+estimated_minutes: 10
+conversation_situation: making_simple_plans_after_work
+conversation_goal: Make a simple plan with a time and a place.
+grammar_summary: "Use Let's + verb to suggest a plan, and use How about + time? to propose a time."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

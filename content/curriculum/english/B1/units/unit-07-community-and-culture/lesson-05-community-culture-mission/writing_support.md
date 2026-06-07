@@ -1,0 +1,9 @@
+# Writing Support
+
+Write your mission (6 lines):
+1. I live in a ... neighborhood.
+2. It's known for ...
+3. People usually ...
+4. Especially on weekends.
+5. Oh, that's interesting. I'm not used to ...
+6. But it sounds nice.

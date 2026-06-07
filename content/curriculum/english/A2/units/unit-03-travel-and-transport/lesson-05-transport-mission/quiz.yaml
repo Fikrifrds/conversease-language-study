@@ -1,0 +1,25 @@
+questions:
+  - key: mission_ticket_phrase
+    type: multiple_choice
+    prompt: Which phrase requests a ticket?
+    options:
+      - I'd like one ticket to Bandung, please.
+      - Which platform?
+      - Let's go.
+    correct_answer: I'd like one ticket to Bandung, please.
+  - key: mission_driver_phrase
+    type: multiple_choice
+    prompt: Which phrase asks a driver to take you somewhere?
+    options:
+      - Can you take me to my hotel, please?
+      - How much is it?
+      - Are you free tomorrow?
+    correct_answer: Can you take me to my hotel, please?
+  - key: schedule_detail
+    type: multiple_choice
+    prompt: Which detail is about a schedule?
+    options:
+      - It leaves at 6:30 pm.
+      - One-way, please.
+      - Thank you.
+    correct_answer: It leaves at 6:30 pm.

@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Set the scene: last weekend + Bandung.'
+  target_response: Last weekend, I was in Bandung.
+  acceptable_variations:
+  - Last weekend, I was in Bandung.
+  - I was in Bandung last weekend.
+- prompt: Add who you were with.
+  target_response: I was there with my cousin.
+  acceptable_variations:
+  - I was there with my cousin.
+  - I went with my cousin.
+- prompt: Describe the place with a comparison.
+  target_response: It was cooler than Jakarta.
+  acceptable_variations:
+  - It was cooler than Jakarta.
+  - It was quieter than Jakarta.

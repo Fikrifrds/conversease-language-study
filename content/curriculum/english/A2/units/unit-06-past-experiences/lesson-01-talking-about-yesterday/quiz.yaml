@@ -1,0 +1,25 @@
+questions:
+- key: past_go
+  type: multiple_choice
+  prompt: What is the past of "go"?
+  options:
+  - goed
+  - went
+  - goes
+  correct_answer: went
+- key: past_question
+  type: multiple_choice
+  prompt: Which question is in the past?
+  options:
+  - What do you do?
+  - What did you do?
+  - What you did?
+  correct_answer: What did you do?
+- key: meaning_last_night
+  type: multiple_choice
+  prompt: What does "last night" mean?
+  options:
+  - tadi malam
+  - malam ini
+  - besok malam
+  correct_answer: tadi malam

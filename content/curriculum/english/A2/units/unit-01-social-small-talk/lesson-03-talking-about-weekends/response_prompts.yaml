@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Ask about weekend plans.
+    target_response: Any plans for the weekend?
+    acceptable_variations:
+      - Any plans for the weekend?
+      - Do you have any plans for the weekend?
+  - prompt: Say you are going to visit your parents.
+    target_response: I'm going to visit my parents.
+    acceptable_variations:
+      - I'm going to visit my parents.
+  - prompt: Ask about transport.
+    target_response: How are you getting there?
+    acceptable_variations:
+      - How are you getting there?
+      - How will you get there?

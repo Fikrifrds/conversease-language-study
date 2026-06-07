@@ -1,0 +1,25 @@
+lesson_key: lesson-02-discussing-reliable-sources
+slug: discussing-reliable-sources
+title: Discussing Reliable Sources
+status: published
+estimated_minutes: 12
+conversation_situation: discussing_reliable_sources
+conversation_goal: Discuss whether a source is reliable, explain why, and suggest a better source.
+grammar_summary: Use I trust this source because... / I'm not sure it's reliable / I'd check... to evaluate sources.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

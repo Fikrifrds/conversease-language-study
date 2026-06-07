@@ -1,0 +1,42 @@
+scenario_key: b2_meeting_open_topic
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Let's start. What would you like to bring up?
+learner_goal: Open a topic, explain the main point, and invite input.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What would you like to bring up?
+  hint: Mulai dengan I'd like to bring up...
+  sample_answer: I'd like to bring up the timeline for the next release.
+  focus: Open a topic
+  expected_keywords:
+  - bring up
+  - timeline
+- coach: What's the main point?
+  hint: Gunakan The main point is...
+  sample_answer: The main point is we need to confirm the scope today.
+  focus: State main point
+  expected_keywords:
+  - main point
+  - scope
+- coach: Invite input from the team.
+  hint: Gunakan I'd like to hear your thoughts.
+  sample_answer: I'd like to hear your thoughts first, then we can decide.
+  focus: Invite input
+  expected_keywords:
+  - hear
+  - thoughts
+target_phrases:
+- I'd like to bring up ...
+- The main point is ...
+- I'd like to hear your thoughts.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

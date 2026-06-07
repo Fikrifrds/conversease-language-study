@@ -1,0 +1,16 @@
+prompts:
+- prompt: Give one specific suggestion.
+  target_response: One thing I'd suggest is leading with the decision.
+  acceptable_variations:
+  - One thing I'd suggest is leading with the decision.
+  - One thing I'd suggest is adding a one-line summary first.
+- prompt: Explain impact.
+  target_response: The impact is that stakeholders scan quickly and might miss the point.
+  acceptable_variations:
+  - The impact is that stakeholders scan quickly and might miss the point.
+  - The impact is that people might miss the key message.
+- prompt: Propose a concrete improvement.
+  target_response: A concrete improvement would be a one-line summary at the top.
+  acceptable_variations:
+  - A concrete improvement would be a one-line summary at the top.
+  - A concrete improvement would be a clear decision line first.

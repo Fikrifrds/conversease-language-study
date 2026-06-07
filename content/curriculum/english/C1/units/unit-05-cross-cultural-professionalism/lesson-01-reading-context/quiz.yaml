@@ -1,0 +1,25 @@
+questions:
+- key: my_sense
+  type: multiple_choice
+  prompt: Which phrase is useful for interpreting implied meaning cautiously?
+  options:
+  - My sense is that ...
+  - They are angry.
+  - No context needed.
+  correct_answer: My sense is that ...
+- key: clarify_priority
+  type: multiple_choice
+  prompt: Which phrase clarifies priorities before responding?
+  options:
+  - Before we decide, can we clarify ...?
+  - Reply now.
+  - Ignore them.
+  correct_answer: Before we decide, can we clarify ...?
+- key: phased_meaning
+  type: multiple_choice
+  prompt: What does "phased plan" mean?
+  options:
+  - rencana bertahap
+  - rencana dadakan
+  - rencana rahasia
+  correct_answer: rencana bertahap

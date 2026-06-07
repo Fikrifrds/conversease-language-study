@@ -1,0 +1,21 @@
+phrases:
+- phrase: I don't feel well.
+  meaning_id: Aku nggak enak badan.
+  usage_note: A common way to say you are sick.
+  common_mistake: Do not say "I am not feel well".
+- phrase: What's wrong?
+  meaning_id: Kenapa?
+  usage_note: Ask what the problem is.
+  common_mistake: Do not say "What's happen".
+- phrase: I have a headache.
+  meaning_id: Aku sakit kepala.
+  usage_note: Use have + noun for symptoms.
+  common_mistake: Do not say "My head is pain".
+- phrase: I'm really tired.
+  meaning_id: Aku capek banget.
+  usage_note: Use tired for low energy.
+  common_mistake: Do not say "I'm very tiring".
+- phrase: I think I have a fever.
+  meaning_id: Kayaknya aku demam.
+  usage_note: I think makes it softer and natural.
+  common_mistake: 'Do not drop have: say "I have a fever".'

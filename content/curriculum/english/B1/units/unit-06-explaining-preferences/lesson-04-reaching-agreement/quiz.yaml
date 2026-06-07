@@ -1,0 +1,25 @@
+questions:
+- key: how_about_usage
+  type: multiple_choice
+  prompt: Which sentence is a polite suggestion?
+  options:
+  - How about we go early?
+  - Go early now!
+  - Early go.
+  correct_answer: How about we go early?
+- key: works_for_me
+  type: multiple_choice
+  prompt: What does "That works for me" mean?
+  options:
+  - oke buat aku
+  - aku tidak setuju
+  - aku tidak tahu
+  correct_answer: oke buat aku
+- key: agree_meaning
+  type: multiple_choice
+  prompt: What does "agree" mean?
+  options:
+  - sepakat
+  - berangkat
+  - membandingkan
+  correct_answer: sepakat

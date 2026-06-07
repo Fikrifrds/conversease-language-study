@@ -1,0 +1,21 @@
+phrases:
+- phrase: Overall it was clear.
+  meaning_id: Secara umum jelas.
+  usage_note: Start feedback with something positive.
+  common_mistake: Do not start harshly; soften with overall.
+- phrase: I noticed the introduction was a bit long.
+  meaning_id: Aku perhatiin pembukaannya agak panjang.
+  usage_note: A polite observation.
+  common_mistake: Do not say "You did wrong"; use I noticed.
+- phrase: Some people lost focus, so the key message came late.
+  meaning_id: Ada yang kehilangan fokus, jadi pesan utamanya telat muncul.
+  usage_note: Explain impact with so.
+  common_mistake: Do not use because if it is a result; use so.
+- phrase: One suggestion is to start with the main takeaway.
+  meaning_id: 'Satu saran: mulai dari pesan utama.'
+  usage_note: A clear suggestion structure.
+  common_mistake: Do not say "one suggestion to start"; include is.
+- phrase: It might help if you keep the intro under one minute.
+  meaning_id: Mungkin membantu kalau pembukaannya di bawah satu menit.
+  usage_note: A soft, constructive suggestion.
+  common_mistake: Do not sound like an order; use might help if.

@@ -1,0 +1,44 @@
+scenario_key: c1_implied_meaning
+mode: lesson_practice_coach
+level_code: C1
+opening_line: The proposal is interesting, but I'm not sure it's the right time.
+learner_goal: Catch implied meaning and confirm it politely, then propose a clear next step.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Interpret the concern neutrally.
+  hint: Use It sounds like...
+  sample_answer: It sounds like timing is the main concern.
+  focus: Interpretation
+  expected_keywords:
+  - sounds like
+  - concern
+- coach: Confirm implied meaning politely.
+  hint: Just to check... are you implying...?
+  sample_answer: Just to check, are you implying that we should delay the rollout?
+  focus: Check
+  expected_keywords:
+  - just to check
+  - implying
+  - delay
+- coach: Summarize and propose a next step.
+  hint: What I'm hearing is... I'll...
+  sample_answer: What I'm hearing is we need a phased plan to reduce risk. I'll draft a phased option and share it today.
+  focus: Next step
+  expected_keywords:
+  - hearing
+  - phased
+  - share
+target_phrases:
+- It sounds like ...
+- Just to check, are you implying ...?
+- What I'm hearing is ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,41 @@
+scenario_key: b1_story_ask_followups
+mode: lesson_practice_coach
+level_code: B1
+opening_line: So you got lost. What happened next?
+learner_goal: 'Ask 3 follow-up questions to keep a story going: next event, reason, and feeling.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: So you got lost. What happened next?
+  hint: Jawab dengan 1 aksi di masa lalu.
+  sample_answer: We asked a local person for help.
+  focus: Continue the story
+  expected_keywords:
+  - asked
+  - help
+- coach: Why did you do that?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because we did not want to waste time.
+  focus: Give a reason
+  expected_keywords:
+  - because
+- coach: How did you feel at that moment?
+  hint: Sebutkan perasaan (felt...).
+  sample_answer: I felt worried, but then I felt relieved.
+  focus: Describe feelings
+  expected_keywords:
+  - felt
+  - but
+target_phrases:
+- What happened next?
+- Why did you...?
+- How did you feel?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

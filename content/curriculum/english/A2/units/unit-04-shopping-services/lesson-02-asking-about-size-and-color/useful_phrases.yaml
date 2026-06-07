@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Do you have this in black?
+    meaning_id: Ada ini warna hitam?
+    usage_note: Ask if a color is available.
+    common_mistake: Do not say "Do you have black?" if the item is not clear.
+  - phrase: We have blue and white.
+    meaning_id: Ada biru dan putih.
+    usage_note: Offer available colors.
+    common_mistake: Use and between colors.
+  - phrase: Do you have it in size M?
+    meaning_id: Ada ukuran M?
+    usage_note: Ask about size.
+    common_mistake: Do not say "in the size".
+  - phrase: Size M is available.
+    meaning_id: Ukuran M tersedia.
+    usage_note: Confirm a size.
+    common_mistake: Do not say "available is".
+  - phrase: I'll take the blue one.
+    meaning_id: Saya ambil yang biru.
+    usage_note: Choose an option.
+    common_mistake: Do not say "I take" for a decision now.

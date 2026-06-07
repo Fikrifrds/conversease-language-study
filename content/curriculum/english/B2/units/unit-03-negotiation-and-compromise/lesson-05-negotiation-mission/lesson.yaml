@@ -1,0 +1,25 @@
+lesson_key: lesson-05-negotiation-mission
+slug: negotiation-mission
+title: Negotiation Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_negotiation_compromise
+conversation_goal: 'Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.'
+grammar_summary: 'Combine: My top priority is... / I propose we... / I understand the concern... / Would it help if... / A compromise could be...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

@@ -1,0 +1,44 @@
+scenario_key: a2_shop_request_help
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Excuse me. Could you help me?
+learner_goal: Ask where an item is, understand a short location answer, and thank the staff.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Sure. What do you need?
+    hint: Tanyakan lokasi barang.
+    sample_answer: Can you show me where the batteries are?
+    focus: Ask for a location
+    expected_keywords:
+      - where
+      - batteries
+      - "?"
+  - coach: They're over there, next to the cash register.
+    hint: Konfirmasi dan ucapkan terima kasih.
+    sample_answer: Great. Thank you for your help.
+    focus: Thank politely
+    expected_keywords:
+      - thank
+      - help
+  - coach: You're welcome.
+    hint: Tutup dengan sopan.
+    sample_answer: Have a good day.
+    focus: Close politely
+    expected_keywords:
+      - good day
+
+target_phrases:
+  - Could you help me?
+  - Can you show me where the batteries are?
+  - Thank you for your help.
+  - You're welcome.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

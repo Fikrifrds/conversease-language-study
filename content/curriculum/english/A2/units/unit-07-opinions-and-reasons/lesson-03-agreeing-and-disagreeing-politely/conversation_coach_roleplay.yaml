@@ -1,0 +1,42 @@
+scenario_key: a2_opinion_agree_disagree
+mode: lesson_practice_coach
+level_code: A2
+opening_line: I think this restaurant is the best.
+learner_goal: Disagree politely, then agree on one point and add a short contrast.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I think this restaurant is the best.
+  hint: Tolak halus + alasan singkat.
+  sample_answer: I'm not sure. It's a bit expensive.
+  focus: Soft disagreement with reason
+  expected_keywords:
+  - not sure
+  - expensive
+- coach: Really? What do you like about it?
+  hint: Setuju 1 hal, tapi tambah tapi (but).
+  sample_answer: I agree the food is good, but the service is slow.
+  focus: Agree and contrast
+  expected_keywords:
+  - agree
+  - but
+- coach: Okay. Should we try another place next time?
+  hint: Jawab setuju + That's fair.
+  sample_answer: Yes, that's fair. Let's try another place.
+  focus: Accept and plan
+  expected_keywords:
+  - fair
+  - try
+target_phrases:
+- I'm not sure.
+- I don't think so.
+- That's fair.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

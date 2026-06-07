@@ -1,0 +1,16 @@
+prompts:
+- prompt: Set direction and ask for options.
+  target_response: The direction I'd like to set is stabilizing billing first. What options do you see right now?
+  acceptable_variations:
+  - The direction I'd like to set is stabilizing billing first. What options do you see right now?
+  - The direction I'd like to set is reducing incidents first. What options do you see?
+- prompt: Give feedback with impact and improvement.
+  target_response: One thing I'd suggest is leading with the decision. The impact is that people might miss the point. A concrete improvement would be a one-line summary at the top.
+  acceptable_variations:
+  - One thing I'd suggest is leading with the decision. The impact is that people might miss the point. A concrete improvement would be a one-line summary at the top.
+  - One thing I'd suggest is adding a summary first. The impact is clarity. A concrete improvement would be a decision line at the top.
+- prompt: Recommend and confirm agreement.
+  target_response: Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly?
+  acceptable_variations:
+  - Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly?
+  - Given our constraints, I'd recommend a pilot. Can we agree on scope and check in weekly?

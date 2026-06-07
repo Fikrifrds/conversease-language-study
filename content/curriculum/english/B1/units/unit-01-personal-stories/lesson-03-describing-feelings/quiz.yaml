@@ -1,0 +1,25 @@
+questions:
+- key: felt_past
+  type: multiple_choice
+  prompt: Choose the best past sentence.
+  options:
+  - I feel nervous yesterday.
+  - I felt nervous yesterday.
+  - I am feel nervous yesterday.
+  correct_answer: I felt nervous yesterday.
+- key: meaning_relieved
+  type: multiple_choice
+  prompt: What does "relieved" mean?
+  options:
+  - lega
+  - marah
+  - bosan
+  correct_answer: lega
+- key: ask_feeling
+  type: multiple_choice
+  prompt: Which question asks about feelings in the past?
+  options:
+  - How do you feel?
+  - How did you feel?
+  - How you feel?
+  correct_answer: How did you feel?

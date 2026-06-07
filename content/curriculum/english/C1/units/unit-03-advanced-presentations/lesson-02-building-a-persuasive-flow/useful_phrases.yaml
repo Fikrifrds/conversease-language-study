@@ -1,0 +1,21 @@
+phrases:
+- phrase: The core claim is that modularization will improve delivery speed.
+  meaning_id: 'Claim utamanya: modularisasi akan mempercepat delivery.'
+  usage_note: State your main claim clearly.
+  common_mistake: Do not bury the claim; say it upfront.
+- phrase: The evidence suggests teams ship faster when ownership is clear.
+  meaning_id: Evidence menunjukkan tim ship lebih cepat saat ownership jelas.
+  usage_note: Evidence language without overclaiming.
+  common_mistake: Do not say evidence prove; use suggests.
+- phrase: A common concern is fragmentation.
+  meaning_id: Concern umum adalah fragmentasi.
+  usage_note: Introduce counterargument respectfully.
+  common_mistake: Do not dismiss concerns; name them.
+- phrase: That said, shared standards can mitigate it.
+  meaning_id: Tapi, standard bersama bisa mitigasi itu.
+  usage_note: Respond to concern with mitigation.
+  common_mistake: Do not hand-wave; mention a concrete mitigation.
+- phrase: In short, the benefits outweigh the risks.
+  meaning_id: Singkatnya, benefit lebih besar dari risiko.
+  usage_note: Concise conclusion.
+  common_mistake: Do not conclude without connecting to evidence.

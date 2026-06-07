@@ -1,0 +1,16 @@
+prompts:
+- prompt: Compare two options with but.
+  target_response: Option A is nicer, but it's more expensive.
+  acceptable_variations:
+  - Option A is nicer, but it's more expensive.
+  - Option A is closer, but it's noisier.
+- prompt: Ask for preference.
+  target_response: Which do you prefer?
+  acceptable_variations:
+  - Which do you prefer?
+  - Which one do you prefer?
+- prompt: Say your preference.
+  target_response: I think I prefer the cheaper one.
+  acceptable_variations:
+  - I think I prefer the cheaper one.
+  - I think I prefer option B.

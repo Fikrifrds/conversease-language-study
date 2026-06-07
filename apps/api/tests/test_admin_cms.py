@@ -27,7 +27,7 @@ class AdminCmsTest(unittest.TestCase):
 
         self.assertEqual(summary["course"]["lesson_count"], 40)
         self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 200)
-        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 40)
+        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 200)
         self.assertEqual(
             [level["course"]["level_code"] for level in summary["readiness_levels"]],
             ["A1", "A2", "B1", "B2", "C1"],

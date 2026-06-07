@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
+import { coachScenarios } from "@/lib/data";
 
-const scenarios = [
+const legacyScenarios = [
   { slug: "saying-hello-and-goodbye", label: "Greeting & Goodbye", description: "Buka dan tutup percakapan singkat." },
   { slug: "saying-your-name", label: "Saying Your Name", description: "Perkenalkan namamu secara natural." },
   { slug: "asking-someones-name", label: "Asking a Name", description: "Tanyakan nama orang dengan sopan." },
@@ -44,6 +45,11 @@ const scenarios = [
   { slug: "review-places-and-shopping", label: "Review Places", description: "Ulangi lokasi, arahan, order, dan harga." },
   { slug: "final-test-practice", label: "Final Practice", description: "Latihan pertanyaan final test A1." },
   { slug: "a1-final-conversation", label: "A1 Final", description: "Gabungkan semua skill inti A1." }
+];
+
+const scenarios = [
+  ...legacyScenarios,
+  ...coachScenarios.filter((scenario) => !legacyScenarios.some((legacy) => legacy.slug === scenario.slug))
 ];
 
 export function ConversationCoachWorkspace() {

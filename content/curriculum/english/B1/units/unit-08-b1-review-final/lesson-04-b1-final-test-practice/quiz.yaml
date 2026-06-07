@@ -1,0 +1,25 @@
+questions:
+- key: so_connector
+  type: multiple_choice
+  prompt: Which word shows a result or decision?
+  options:
+  - so
+  - because
+  - then
+  correct_answer: so
+- key: might_usage
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - It might be crowded.
+  - It might crowded.
+  - It might to be crowded.
+  correct_answer: It might be crowded.
+- key: because_usage
+  type: multiple_choice
+  prompt: Which sentence uses because correctly?
+  options:
+  - I prefer option B because it's cheaper.
+  - I prefer because it's cheaper.
+  - I because prefer option B.
+  correct_answer: I prefer option B because it's cheaper.

@@ -64,10 +64,10 @@ class ContentReadinessTest(unittest.TestCase):
             ["A1", "A2", "B1", "B2", "C1"],
         )
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 200)
-        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 40)
-        self.assertEqual(readiness["summary"]["text_ready_count"], 40)
+        self.assertEqual(readiness["summary"]["implemented_lesson_count"], 200)
+        self.assertEqual(readiness["summary"]["text_ready_count"], 200)
         self.assertEqual(readiness["summary"]["audio_ready_count"], 31)
-        self.assertEqual(readiness["summary"]["missing_content_count"], 160)
+        self.assertEqual(readiness["summary"]["missing_content_count"], 0)
         self.assertEqual(readiness["summary"]["missing_audio_count"], 169)
 
     def test_audio_manifest_ready_requires_dialogue_main_audio(self):

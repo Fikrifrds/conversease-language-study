@@ -1,0 +1,25 @@
+questions:
+- key: argument_structure
+  type: multiple_choice
+  prompt: Which order is a clear argument?
+  options:
+  - Position -> reasons -> example -> counterpoint response -> next steps
+  - Greeting -> goodbye
+  - Food -> color -> price
+  correct_answer: Position -> reasons -> example -> counterpoint response -> next steps
+- key: for_example_role
+  type: multiple_choice
+  prompt: What does "for example" do?
+  options:
+  - memberi contoh
+  - menolak ide
+  - mengganti topik
+  correct_answer: memberi contoh
+- key: however_role
+  type: multiple_choice
+  prompt: What does "however" signal?
+  options:
+  - kontras
+  - urutan waktu
+  - alasan
+  correct_answer: kontras

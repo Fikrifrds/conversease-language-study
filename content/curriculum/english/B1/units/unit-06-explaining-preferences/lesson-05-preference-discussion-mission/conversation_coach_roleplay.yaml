@@ -1,0 +1,43 @@
+scenario_key: b1_preference_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: We have two options. What do you think?
+learner_goal: Compare options, explain preference, discuss pros and cons, and confirm agreement.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have two options. Compare them.
+  hint: Bandingin pakai but.
+  sample_answer: Option A is easier, but it's more expensive.
+  focus: Compare options
+  expected_keywords:
+  - but
+  - more
+- coach: Okay. Which do you prefer and why?
+  hint: Jawab dengan I prefer ... because ...
+  sample_answer: I prefer option B because it's cheaper.
+  focus: Preference with reason
+  expected_keywords:
+  - prefer
+  - because
+- coach: Give one advantage and one downside, then confirm agreement.
+  hint: The advantage is... One downside is... So we agree on...?
+  sample_answer: The advantage is it's healthier. One downside is it takes time. So we agree on option B?
+  focus: Pros/cons + agreement
+  expected_keywords:
+  - advantage
+  - downside
+  - agree
+target_phrases:
+- Which do you prefer?
+- I prefer ... because ...
+- So we agree on ...?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

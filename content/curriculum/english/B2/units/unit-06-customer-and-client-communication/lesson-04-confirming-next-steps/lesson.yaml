@@ -1,0 +1,25 @@
+lesson_key: lesson-04-confirming-next-steps
+slug: confirming-next-steps
+title: Confirming Next Steps
+status: published
+estimated_minutes: 12
+conversation_situation: confirming_next_steps_with_client
+conversation_goal: Confirm next steps, assign owners, and set a timeline clearly.
+grammar_summary: Use To confirm... / Next steps are... / I'll ... by ... / Does that work? to align on follow-up.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

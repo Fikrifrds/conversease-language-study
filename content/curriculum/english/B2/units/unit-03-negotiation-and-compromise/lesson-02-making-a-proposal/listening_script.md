@@ -1,0 +1,17 @@
+# Dialogue Script
+
+**Alex:** How should we handle the launch plan?  
+**Mina:** I propose we do a small pilot first.  
+**Alex:** What timeline are you thinking?  
+**Mina:** How about we run it for two weeks and review the results?  
+**Alex:** Would that delay the full launch?  
+**Mina:** Not necessarily. We can prepare in parallel.  
+**Alex:** Okay. Would that work for you?  
+**Mina:** Yes, that works for me.  
+
+## Audio Direction
+
+- Level: B2
+- Speed: slow and natural
+- Tone: professional, calm, collaborative
+- Voices: Mina and Alex

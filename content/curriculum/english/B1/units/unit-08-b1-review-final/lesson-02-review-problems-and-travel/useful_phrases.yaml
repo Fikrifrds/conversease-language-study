@@ -1,0 +1,21 @@
+phrases:
+- phrase: There's a problem with the meeting link.
+  meaning_id: Ada masalah dengan link meeting.
+  usage_note: A clear problem statement.
+  common_mistake: Do not say "Have problem"; use There's a problem with...
+- phrase: People can't join, so we need a new link.
+  meaning_id: Orang nggak bisa join, jadi kita butuh link baru.
+  usage_note: So shows impact/result.
+  common_mistake: Do not use because if it is a result; use so.
+- phrase: I'm running a bit late.
+  meaning_id: Aku agak telat.
+  usage_note: A natural delay phrase.
+  common_mistake: Do not say "I am late running"; use running late.
+- phrase: My train is delayed.
+  meaning_id: Kereta aku delay.
+  usage_note: A clear reason for delay.
+  common_mistake: Do not say "My train delay"; include is.
+- phrase: I'll be there in about 15 minutes.
+  meaning_id: Aku sampai kira-kira 15 menit lagi.
+  usage_note: In about + time gives an estimate.
+  common_mistake: Do not say "in 15 minutes more"; just in 15 minutes.

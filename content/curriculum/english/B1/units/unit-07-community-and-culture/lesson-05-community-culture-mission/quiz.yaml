@@ -1,0 +1,25 @@
+questions:
+- key: mission_culture_flow
+  type: multiple_choice
+  prompt: Which skills are combined in this mission?
+  options:
+  - Community description + local habit + culture question + polite differences
+  - Numbers only
+  - Ordering food only
+  correct_answer: Community description + local habit + culture question + polite differences
+- key: used_to_meaning
+  type: multiple_choice
+  prompt: What does "I'm not used to that" mean?
+  options:
+  - aku nggak terbiasa
+  - aku setuju
+  - aku lupa
+  correct_answer: aku nggak terbiasa
+- key: respectful_reaction
+  type: multiple_choice
+  prompt: Which reaction is respectful?
+  options:
+  - That sounds nice.
+  - That's wrong.
+  - That's stupid.
+  correct_answer: That sounds nice.

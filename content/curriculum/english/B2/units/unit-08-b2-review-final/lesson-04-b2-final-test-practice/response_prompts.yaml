@@ -1,0 +1,16 @@
+prompts:
+- prompt: State a position.
+  target_response: My position is that we should run a two-week pilot before a full rollout.
+  acceptable_variations:
+  - My position is that we should run a two-week pilot before a full rollout.
+  - My position is that we should start with a small pilot first.
+- prompt: State evidence.
+  target_response: Based on the data, drop-offs increased after the redesign.
+  acceptable_variations:
+  - Based on the data, drop-offs increased after the redesign.
+  - Based on the data, complaints increased after the change.
+- prompt: Close with recommendation and next steps.
+  target_response: 'I''d recommend the pilot. Next steps are: I''ll draft the plan today, and you''ll review it by Friday.'
+  acceptable_variations:
+  - 'I''d recommend the pilot. Next steps are: I''ll draft the plan today, and you''ll review it by Friday.'
+  - 'I''d recommend a pilot first. Next steps are: I''ll send a draft today, and you''ll review it tomorrow.'

@@ -1,0 +1,21 @@
+phrases:
+- phrase: That's a fair question.
+  meaning_id: Pertanyaan yang fair.
+  usage_note: A calm acknowledgement before answering.
+  common_mistake: Do not get defensive; acknowledge first.
+- phrase: Let me clarify what risk we're accepting.
+  meaning_id: Biar aku jelasin risiko apa yang kita terima.
+  usage_note: Clarify the scope of the question.
+  common_mistake: Do not answer vaguely; clarify the risk.
+- phrase: 'The short answer is: it''s manageable if we pilot first and monitor closely.'
+  meaning_id: 'Jawaban singkatnya: bisa di-manage kalau pilot dulu dan monitor ketat.'
+  usage_note: Concise answer with condition.
+  common_mistake: Do not give a long answer; start with short answer.
+- phrase: What I'd emphasize is that standards need ownership and enforcement.
+  meaning_id: 'Yang aku tekankan: standar butuh ownership dan enforcement.'
+  usage_note: Reframe to the key point.
+  common_mistake: Do not dodge; answer then emphasize the key point.
+- phrase: If adoption stalls, we pause expansion and revisit the design.
+  meaning_id: Kalau adoption mandek, kita stop ekspansi dan evaluasi desainnya.
+  usage_note: A clear fallback plan.
+  common_mistake: Do not avoid risk; show fallback.

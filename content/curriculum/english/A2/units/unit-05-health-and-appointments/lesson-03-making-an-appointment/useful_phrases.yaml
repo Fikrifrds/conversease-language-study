@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'd like to make an appointment.
+  meaning_id: Saya mau buat janji.
+  usage_note: A polite request on the phone.
+  common_mistake: Do not say "I want make appointment".
+- phrase: What day works for you?
+  meaning_id: Hari apa yang cocok?
+  usage_note: Ask about preferred day.
+  common_mistake: Do not translate word-by-word.
+- phrase: Is tomorrow afternoon okay?
+  meaning_id: Besok sore bisa?
+  usage_note: Suggest a time.
+  common_mistake: Do not forget is at the start.
+- phrase: We have 3:30 p.m. available.
+  meaning_id: Kami ada jam 3:30 sore.
+  usage_note: Available means open slot.
+  common_mistake: Do not say "free time" in formal calls.
+- phrase: I'll take it.
+  meaning_id: Saya ambil.
+  usage_note: Accept the offered time.
+  common_mistake: Do not say "I take" without it.

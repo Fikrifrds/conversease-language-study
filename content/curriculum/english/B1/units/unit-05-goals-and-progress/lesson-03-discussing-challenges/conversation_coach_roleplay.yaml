@@ -1,0 +1,41 @@
+scenario_key: b1_goals_discuss_challenges
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's the biggest challenge?
+learner_goal: Describe your challenge, give a reason, and ask for a tip.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's the biggest challenge?
+  hint: Jawab dengan The biggest challenge is ...
+  sample_answer: The biggest challenge is staying consistent after work.
+  focus: Name the challenge
+  expected_keywords:
+  - challenge
+  - consistent
+- coach: Why is it hard?
+  hint: Sebutkan satu alasan (distracted/tired).
+  sample_answer: I get distracted by my phone, and I feel tired.
+  focus: Explain the reason
+  expected_keywords:
+  - distracted
+  - tired
+- coach: Okay. What do you want to ask me?
+  hint: Minta saran singkat.
+  sample_answer: Do you have any tips?
+  focus: Ask for a suggestion
+  expected_keywords:
+  - tips
+target_phrases:
+- The biggest challenge is ...
+- It's hard to ...
+- Do you have any tips?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

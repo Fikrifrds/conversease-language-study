@@ -1,0 +1,42 @@
+scenario_key: b1_review_goals_preferences
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Tell me your goal, progress, and preference.
+learner_goal: State a goal, share progress, and explain a preference with a reason.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your goal right now?
+  hint: Goal + by ...
+  sample_answer: My goal is to speak more confidently by the end of this month.
+  focus: Goal with deadline
+  expected_keywords:
+  - goal
+  - by
+- coach: How's it going?
+  hint: I've been practicing ...
+  sample_answer: I'm making progress. I've been practicing every morning.
+  focus: Progress update
+  expected_keywords:
+  - progress
+  - been
+- coach: Which practice method do you prefer, and why?
+  hint: I prefer ... because ...
+  sample_answer: I prefer Conversation Coach because it gives me feedback.
+  focus: Preference with reason
+  expected_keywords:
+  - prefer
+  - because
+target_phrases:
+- My goal is to ... by ...
+- I've been practicing ...
+- I prefer ... because ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

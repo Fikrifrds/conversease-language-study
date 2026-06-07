@@ -7,208 +7,208 @@ target_lesson_count: 40
 units:
   - unit_key: unit-01-personal-stories
     title: Personal Stories
-    status: planned
+    status: in_production
     main_conversation_outcome: Tell simple connected stories about personal experiences.
     lessons:
       - lesson_key: lesson-01-setting-the-scene
         slug: setting-the-scene
         title: Setting the Scene
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-telling-events-in-order
         slug: telling-events-in-order
         title: Telling Events in Order
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-describing-feelings
         slug: describing-feelings
         title: Describing Feelings
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-about-someones-story
         slug: asking-about-someones-story
         title: Asking About Someone's Story
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-personal-story-mission
         slug: personal-story-mission
         title: Personal Story Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-02-workplace-conversations
     title: Workplace Conversations
-    status: planned
+    status: in_production
     main_conversation_outcome: Handle common workplace conversations with clear, polite language.
     lessons:
       - lesson_key: lesson-01-explaining-your-task
         slug: explaining-your-task
         title: Explaining Your Task
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-for-clarification
         slug: asking-for-clarification
         title: Asking for Clarification
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-giving-a-short-update
         slug: giving-a-short-update
         title: Giving a Short Update
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-joining-a-simple-meeting
         slug: joining-a-simple-meeting
         title: Joining a Simple Meeting
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-workplace-mission
         slug: workplace-mission
         title: Workplace Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-03-problems-and-solutions
     title: Problems & Solutions
-    status: planned
+    status: in_production
     main_conversation_outcome: Explain a problem, suggest a solution, and respond to advice.
     lessons:
       - lesson_key: lesson-01-describing-a-problem
         slug: describing-a-problem
         title: Describing a Problem
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-suggesting-a-solution
         slug: suggesting-a-solution
         title: Suggesting a Solution
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-responding-to-advice
         slug: responding-to-advice
         title: Responding to Advice
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-making-a-simple-decision
         slug: making-a-simple-decision
         title: Making a Simple Decision
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-problem-solving-mission
         slug: problem-solving-mission
         title: Problem Solving Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-04-travel-situations
     title: Travel Situations
-    status: planned
+    status: in_production
     main_conversation_outcome: Handle travel issues, requests, and explanations.
     lessons:
       - lesson_key: lesson-01-checking-in
         slug: checking-in
         title: Checking In
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-explaining-a-delay
         slug: explaining-a-delay
         title: Explaining a Delay
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-asking-for-recommendations
         slug: asking-for-recommendations
         title: Asking for Recommendations
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-handling-a-simple-complaint
         slug: handling-a-simple-complaint
         title: Handling a Simple Complaint
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-travel-situation-mission
         slug: travel-situation-mission
         title: Travel Situation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-05-goals-and-progress
     title: Goals & Progress
-    status: planned
+    status: in_production
     main_conversation_outcome: Talk about goals, plans, progress, and challenges.
     lessons:
       - lesson_key: lesson-01-talking-about-goals
         slug: talking-about-goals
         title: Talking About Goals
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-explaining-progress
         slug: explaining-progress
         title: Explaining Progress
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-discussing-challenges
         slug: discussing-challenges
         title: Discussing Challenges
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-making-next-step-plans
         slug: making-next-step-plans
         title: Making Next-step Plans
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-goals-progress-mission
         slug: goals-progress-mission
         title: Goals Progress Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-06-explaining-preferences
     title: Explaining Preferences
-    status: planned
+    status: in_production
     main_conversation_outcome: Compare options and explain preferences with reasons.
     lessons:
       - lesson_key: lesson-01-comparing-two-options
         slug: comparing-two-options
         title: Comparing Two Options
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-explaining-why-you-prefer-something
         slug: explaining-why-you-prefer-something
         title: Explaining Why You Prefer Something
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-asking-about-pros-and-cons
         slug: asking-about-pros-and-cons
         title: Asking About Pros and Cons
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-reaching-agreement
         slug: reaching-agreement
         title: Reaching Agreement
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-preference-discussion-mission
         slug: preference-discussion-mission
         title: Preference Discussion Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-07-community-and-culture
     title: Community & Culture
-    status: planned
+    status: in_production
     main_conversation_outcome: Discuss community, habits, and cultural differences politely.
     lessons:
       - lesson_key: lesson-01-describing-your-community
         slug: describing-your-community
         title: Describing Your Community
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-talking-about-local-habits
         slug: talking-about-local-habits
         title: Talking About Local Habits
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-asking-about-culture
         slug: asking-about-culture
         title: Asking About Culture
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-being-polite-with-differences
         slug: being-polite-with-differences
         title: Being Polite With Differences
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-community-culture-mission
         slug: community-culture-mission
         title: Community Culture Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-08-b1-review-final
     title: B1 Review & Final Conversation
-    status: planned
+    status: in_production
     main_conversation_outcome: Use B1 speaking skills in a connected conversation.
     lessons:
       - lesson_key: lesson-01-review-stories-and-work
         slug: review-stories-and-work
         title: Review Stories and Work
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-review-problems-and-travel
         slug: review-problems-and-travel
         title: Review Problems and Travel
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-review-goals-and-preferences
         slug: review-goals-and-preferences
         title: Review Goals and Preferences
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-b1-final-test-practice
         slug: b1-final-test-practice
         title: B1 Final Test Practice
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-b1-final-conversation
         slug: b1-final-conversation
         title: B1 Final Conversation
-        status: planned
+        status: implemented

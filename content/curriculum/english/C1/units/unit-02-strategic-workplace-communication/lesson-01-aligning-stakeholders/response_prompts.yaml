@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask for top priority to align.
+  target_response: To make sure we're aligned, can you share your top priority?
+  acceptable_variations:
+  - To make sure we're aligned, can you share your top priority?
+  - To make sure we're aligned, what's your top priority?
+- prompt: Ask for key constraint.
+  target_response: From your perspective, what's the biggest constraint?
+  acceptable_variations:
+  - From your perspective, what's the biggest constraint?
+  - From your perspective, what's the main constraint we should consider?
+- prompt: Confirm agreement on a decision.
+  target_response: Can we agree that we ship a smaller scope first?
+  acceptable_variations:
+  - Can we agree that we ship a smaller scope first?
+  - Can we agree that we start with a smaller scope first?

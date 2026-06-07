@@ -1,0 +1,41 @@
+scenario_key: b1_preference_compare_options
+mode: lesson_practice_coach
+level_code: B1
+opening_line: We have two options. What's the difference?
+learner_goal: Compare two options and ask what the other person prefers.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have two options. What's the difference?
+  hint: Bandingin pakai but.
+  sample_answer: Option A is nicer, but it's more expensive.
+  focus: Compare options
+  expected_keywords:
+  - but
+  - more
+- coach: Okay. And option B?
+  hint: 'Sebutkan 1-2 poin: cheaper/faster/crowded.'
+  sample_answer: It's cheaper and faster, but it's usually crowded.
+  focus: Describe option B
+  expected_keywords:
+  - cheaper
+  - faster
+- coach: Got it. Ask me what I prefer.
+  hint: 'Tanya: Which do you prefer?'
+  sample_answer: Which do you prefer?
+  focus: Ask preference
+  expected_keywords:
+  - prefer
+target_phrases:
+- We have two options.
+- '..., but ...'
+- Which do you prefer?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

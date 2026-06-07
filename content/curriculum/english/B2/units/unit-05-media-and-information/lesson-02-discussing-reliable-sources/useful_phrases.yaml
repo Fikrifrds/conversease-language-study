@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm not sure that source is reliable.
+  meaning_id: Aku nggak yakin sumber itu reliable.
+  usage_note: A polite skepticism phrase.
+  common_mistake: Do not say "I not sure"; use I'm not sure.
+- phrase: Because it doesn't cite data or mention the author.
+  meaning_id: Karena nggak nyantumin data atau penulisnya.
+  usage_note: Give a concrete reason.
+  common_mistake: Do not say "doesn't cites"; keep doesn't + base verb.
+- phrase: I'd check official reports.
+  meaning_id: Aku bakal cek laporan resmi.
+  usage_note: Suggest a better verification step.
+  common_mistake: Do not say "I will check" every time; I'd check is natural.
+- phrase: I trust sources that show evidence.
+  meaning_id: Aku percaya sumber yang nunjukin bukti.
+  usage_note: Explain your criteria.
+  common_mistake: Do not say "trust to"; use trust + object.
+- phrase: Let's verify it before sharing.
+  meaning_id: Yuk verifikasi dulu sebelum share.
+  usage_note: A practical closing suggestion.
+  common_mistake: Do not blame; suggest a shared action.

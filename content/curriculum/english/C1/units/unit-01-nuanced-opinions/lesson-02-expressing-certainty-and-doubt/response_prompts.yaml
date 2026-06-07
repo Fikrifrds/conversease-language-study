@@ -1,0 +1,16 @@
+prompts:
+- prompt: Express high confidence with evidence.
+  target_response: I'm fairly confident it will, given the support trends.
+  acceptable_variations:
+  - I'm fairly confident it will, given the support trends.
+  - I'm fairly confident it will, based on the data we have.
+- prompt: Express polite doubt.
+  target_response: I'm not entirely convinced.
+  acceptable_variations:
+  - I'm not entirely convinced.
+  - I'm not fully convinced yet.
+- prompt: Express low probability with mitigation.
+  target_response: It's unlikely that we'll break core flows, but we should monitor closely.
+  acceptable_variations:
+  - It's unlikely that we'll break core flows, but we should monitor closely.
+  - It's unlikely that it will fail, but we should monitor it closely.

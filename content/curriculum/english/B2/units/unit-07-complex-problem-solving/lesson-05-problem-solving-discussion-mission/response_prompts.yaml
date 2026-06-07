@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start by framing the problem.
+  target_response: Let's define the problem statement first. Can we agree on the scope?
+  acceptable_variations:
+  - Let's define the problem statement first. Can we agree on the scope?
+  - Let's frame the problem first. Can we align on scope?
+- prompt: Explain a cause using evidence language.
+  target_response: Based on the data, one possible cause is confusion in checkout.
+  acceptable_variations:
+  - Based on the data, one possible cause is confusion in checkout.
+  - Based on the data, it might be due to slower load times.
+- prompt: Recommend next steps with mitigation.
+  target_response: Given these constraints, I'd recommend a two-week pilot. We can mitigate risk by setting clear metrics and a strict timeline.
+  acceptable_variations:
+  - Given these constraints, I'd recommend a two-week pilot. We can mitigate risk by setting clear metrics and a strict timeline.
+  - Given these constraints, I'd recommend a small rollout first. We can mitigate risk with clear metrics.

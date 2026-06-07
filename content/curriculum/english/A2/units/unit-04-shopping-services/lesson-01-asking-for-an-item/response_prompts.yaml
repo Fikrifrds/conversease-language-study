@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Say you are looking for a phone charger.
+    target_response: I'm looking for a phone charger.
+    acceptable_variations:
+      - I'm looking for a phone charger.
+      - I'm looking for a charger.
+  - prompt: Ask if the store has it.
+    target_response: Do you have it?
+    acceptable_variations:
+      - Do you have it?
+      - Do you have a USB-C charger?
+  - prompt: Ask if they need a cable too.
+    target_response: Do you need a cable too?
+    acceptable_variations:
+      - Do you need a cable too?
+      - Do you need a cable?

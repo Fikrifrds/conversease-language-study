@@ -1,0 +1,25 @@
+questions:
+- key: one_reason_structure
+  type: multiple_choice
+  prompt: Which sentence has a correct reason structure?
+  options:
+  - One reason is it reduces bugs.
+  - One reason reduce bugs.
+  - One reason are reduce bugs.
+  correct_answer: One reason is it reduces bugs.
+- key: another_reason_structure
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - Another reason is it saves time.
+  - Another reason are it saves time.
+  - Another reason saving time.
+  correct_answer: Another reason is it saves time.
+- key: thats_true_usage
+  type: multiple_choice
+  prompt: Which phrase acknowledges a concern politely?
+  options:
+  - That's true, but...
+  - No, you're wrong.
+  - Stop.
+  correct_answer: That's true, but...

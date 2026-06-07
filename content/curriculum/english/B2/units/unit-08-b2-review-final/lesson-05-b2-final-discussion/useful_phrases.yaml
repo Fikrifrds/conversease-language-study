@@ -1,0 +1,21 @@
+phrases:
+- phrase: Let's define the scope and what success looks like.
+  meaning_id: Kita definisikan scope dan seperti apa suksesnya.
+  usage_note: Frame a discussion at the start.
+  common_mistake: Do not start with details; frame first.
+- phrase: Based on the data, we should address billing first.
+  meaning_id: Berdasarkan data, kita harus beresin billing dulu.
+  usage_note: Evidence-driven recommendation.
+  common_mistake: Do not present opinions as facts; cite data.
+- phrase: I understand the concern.
+  meaning_id: Aku paham kekhawatirannya.
+  usage_note: Acknowledge concerns before trade-offs.
+  common_mistake: Do not dismiss; acknowledge first.
+- phrase: Given these constraints, I'd recommend a time-boxed pilot.
+  meaning_id: Dengan constraint ini, aku rekomend pilot yang time-boxed.
+  usage_note: Recommendation with constraints.
+  common_mistake: Do not say "recommend to do"; use recommend a pilot.
+- phrase: 'Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  meaning_id: 'Next steps-nya: aku share plan hari ini, dan kamu review sebelum Jumat.'
+  usage_note: Close with owners and deadlines.
+  common_mistake: Do not skip the deadline; use by Friday.

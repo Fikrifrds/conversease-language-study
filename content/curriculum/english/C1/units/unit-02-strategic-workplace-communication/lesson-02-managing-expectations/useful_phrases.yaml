@@ -1,0 +1,21 @@
+phrases:
+- phrase: What we can commit to is a smaller release by next week.
+  meaning_id: Yang bisa kita commit adalah rilis kecil minggu depan.
+  usage_note: Set a realistic commitment.
+  common_mistake: Do not commit to full scope when it's unrealistic.
+- phrase: To avoid surprises, I'd rather under-promise and deliver reliably.
+  meaning_id: Biar nggak ada kejutan, aku lebih pilih under-promise dan deliver dengan reliable.
+  usage_note: Explain boundary with a principle.
+  common_mistake: Do not blame; focus on reliability.
+- phrase: The earliest we can deliver the full scope is two weeks later.
+  meaning_id: Paling cepat scope penuh dua minggu setelahnya.
+  usage_note: State earliest timeline.
+  common_mistake: Do not say maybe; give a clear earliest date.
+- phrase: Assuming no new blockers.
+  meaning_id: Asumsi nggak ada blocker baru.
+  usage_note: Add a condition politely.
+  common_mistake: Do not hide assumptions; state them.
+- phrase: Success means fewer incidents and a stable rollout.
+  meaning_id: Sukses artinya incident berkurang dan rollout stabil.
+  usage_note: Define success criteria.
+  common_mistake: Do not keep success vague; name metrics.

@@ -1,0 +1,16 @@
+# Grammar for Conversation
+
+Use **Benefits and risks**.
+
+Examples:
+
+- The main benefit is ...
+- Another benefit is ...
+- A key risk is ...
+
+Use **Mitigation**.
+
+Examples:
+
+- To reduce the risk, we can ...
+- To mitigate this, we can ...

@@ -1,0 +1,6 @@
+# Writing Support
+
+Write your mission (3 lines):
+1. Ask for an opinion: What do you think about ...?
+2. Respond politely: I'm not sure. It might be ...
+3. Suggest another idea + because ...

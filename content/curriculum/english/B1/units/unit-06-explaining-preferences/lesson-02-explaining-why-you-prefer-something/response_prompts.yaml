@@ -1,0 +1,16 @@
+prompts:
+- prompt: State a preference (earlier flight).
+  target_response: I prefer the earlier flight.
+  acceptable_variations:
+  - I prefer the earlier flight.
+  - I prefer option A.
+- prompt: Give a reason with because.
+  target_response: Because it gives us more time in the afternoon.
+  acceptable_variations:
+  - Because it gives us more time.
+  - Because it's more convenient.
+- prompt: Say the main reason.
+  target_response: The main reason is I don't want to arrive too late.
+  acceptable_variations:
+  - The main reason is I don't want to arrive too late.
+  - The main reason is I want more time.

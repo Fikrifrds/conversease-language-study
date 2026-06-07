@@ -1,0 +1,21 @@
+phrases:
+- phrase: People usually eat outside in the evening.
+  meaning_id: Orang biasanya makan di luar sore/malam.
+  usage_note: Usually shows a common habit.
+  common_mistake: Do not say "People usual eat"; use usually.
+- phrase: In my area, people often grab street food.
+  meaning_id: Di daerahku, orang sering beli street food.
+  usage_note: In my area is a natural starter.
+  common_mistake: Do not say "In my area people often" without comma if you want a pause; keep it clear.
+- phrase: Especially on weekends.
+  meaning_id: Apalagi pas weekend.
+  usage_note: Add detail about frequency.
+  common_mistake: Do not say "special" for this meaning; use especially.
+- phrase: It's a social thing.
+  meaning_id: Itu kegiatan sosial.
+  usage_note: A natural explanation phrase.
+  common_mistake: Do not say "It social"; use it's.
+- phrase: People often do it after work.
+  meaning_id: Orang sering ngelakuin itu setelah kerja.
+  usage_note: Often is a simple frequency word.
+  common_mistake: Do not say "People often does"; use do.

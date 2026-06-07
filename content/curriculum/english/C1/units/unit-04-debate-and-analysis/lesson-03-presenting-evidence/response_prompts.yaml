@@ -1,0 +1,16 @@
+prompts:
+- prompt: Cite a source with according to.
+  target_response: According to the support dashboard, drop-offs increased after the redesign.
+  acceptable_variations:
+  - According to the support dashboard, drop-offs increased after the redesign.
+  - According to the logs, errors increased after the release.
+- prompt: Clarify correlation vs causation.
+  target_response: To be precise, the data indicates correlation, not necessarily causation.
+  acceptable_variations:
+  - To be precise, the data indicates correlation, not necessarily causation.
+  - To be precise, the trend suggests correlation, not causation.
+- prompt: State an implication carefully.
+  target_response: This suggests we should investigate the checkout experience before changing other variables.
+  acceptable_variations:
+  - This suggests we should investigate the checkout experience before changing other variables.
+  - This suggests we should validate the hypothesis before making changes.

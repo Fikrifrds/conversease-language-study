@@ -1,0 +1,21 @@
+phrases:
+- phrase: How did you feel?
+  meaning_id: Gimana perasaanmu?
+  usage_note: Ask about feelings in the past.
+  common_mistake: Do not say "How you feel" for past.
+- phrase: I felt nervous.
+  meaning_id: Aku gugup.
+  usage_note: Use felt for past feelings.
+  common_mistake: Do not say "I feel nervous" for yesterday.
+- phrase: I felt relieved.
+  meaning_id: Aku lega.
+  usage_note: Relieved is common after a problem ends.
+  common_mistake: Do not say "I am relieved" if you want past story.
+- phrase: I was excited when...
+  meaning_id: Aku excited waktu...
+  usage_note: Use was excited + when for story moments.
+  common_mistake: Do not say "I excited" without was.
+- phrase: We got lost.
+  meaning_id: Kami tersesat.
+  usage_note: A common travel problem phrase.
+  common_mistake: Do not say "We lost" for getting lost.

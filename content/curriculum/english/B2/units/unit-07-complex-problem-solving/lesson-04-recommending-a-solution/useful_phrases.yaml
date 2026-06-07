@@ -1,0 +1,21 @@
+phrases:
+- phrase: Given these constraints, I'd recommend starting with a two-week pilot.
+  meaning_id: Dengan constraint ini, aku rekomend mulai dengan pilot dua minggu.
+  usage_note: Recommendation tied to constraints.
+  common_mistake: Do not say "I recommend start"; use I'd recommend starting.
+- phrase: It reduces risk and gives us data before a full rollout.
+  meaning_id: Itu ngurangin risiko dan ngasih data sebelum rollout penuh.
+  usage_note: Justify recommendation in one sentence.
+  common_mistake: Do not over-explain; keep the justification clear.
+- phrase: The main risk is slower progress if we over-scope the pilot.
+  meaning_id: Risiko utamanya progress jadi lambat kalau pilot-nya kebesaran scope.
+  usage_note: Name a risk with if-structure.
+  common_mistake: Do not list many risks; start with the main one.
+- phrase: We can mitigate it by setting clear success metrics.
+  meaning_id: Kita mitigasi dengan set metrik sukses yang jelas.
+  usage_note: Mitigation language.
+  common_mistake: Do not say mitigate it with setting; use by + -ing.
+- phrase: Does that approach work for you?
+  meaning_id: Pendekatan itu works buat kamu?
+  usage_note: Check alignment after recommending.
+  common_mistake: Do not assume agreement; ask.

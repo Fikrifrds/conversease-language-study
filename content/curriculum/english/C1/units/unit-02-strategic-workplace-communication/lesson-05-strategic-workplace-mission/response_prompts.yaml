@@ -1,0 +1,16 @@
+prompts:
+- prompt: Align priorities and constraints.
+  target_response: To make sure we're aligned, what's your top priority and biggest constraint?
+  acceptable_variations:
+  - To make sure we're aligned, what's your top priority and biggest constraint?
+  - To make sure we're aligned, can you share your top priority and constraint?
+- prompt: Set expectations with assumptions.
+  target_response: What we can commit to is a smaller release by next week, assuming no new blockers.
+  acceptable_variations:
+  - What we can commit to is a smaller release by next week, assuming no new blockers.
+  - What we can commit to is a pilot by next week, assuming no surprises.
+- prompt: State main risk and mitigation.
+  target_response: The main risk is incidents during rollout. We can mitigate it by time-boxing, adding monitoring, and having a rollback plan.
+  acceptable_variations:
+  - The main risk is incidents during rollout. We can mitigate it by time-boxing, adding monitoring, and having a rollback plan.
+  - The main risk is instability. We can mitigate it by rolling out gradually and monitoring closely.

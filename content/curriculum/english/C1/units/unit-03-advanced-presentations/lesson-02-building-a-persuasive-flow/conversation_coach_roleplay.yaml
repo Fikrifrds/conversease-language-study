@@ -1,0 +1,41 @@
+scenario_key: c1_persuasive_flow
+mode: lesson_practice_coach
+level_code: C1
+opening_line: What's the main argument for this proposal?
+learner_goal: 'Deliver a persuasive flow: claim, evidence, concern, mitigation, conclusion.'
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's the main argument for this proposal?
+  hint: Start with The core claim is...
+  sample_answer: The core claim is that modularization will improve delivery speed.
+  focus: Claim
+  expected_keywords:
+  - core claim
+- coach: What's the evidence?
+  hint: Use The evidence suggests...
+  sample_answer: The evidence suggests teams ship faster when ownership is clear.
+  focus: Evidence
+  expected_keywords:
+  - evidence suggests
+- coach: Address a concern and conclude.
+  hint: A common concern is... That said... In short...
+  sample_answer: A common concern is fragmentation. That said, shared standards can mitigate it. In short, the benefits outweigh the risks if we set guardrails early.
+  focus: Concern + conclusion
+  expected_keywords:
+  - concern
+  - that said
+  - in short
+target_phrases:
+- The core claim is that ...
+- The evidence suggests ...
+- A common concern is ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

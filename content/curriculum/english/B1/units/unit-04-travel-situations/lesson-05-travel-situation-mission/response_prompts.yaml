@@ -1,0 +1,16 @@
+prompts:
+- prompt: Explain delay + estimate.
+  target_response: I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.
+  acceptable_variations:
+  - I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.
+  - I'm running a bit late. My flight is delayed. I'll be there in about 30 minutes.
+- prompt: Confirm reservation name.
+  target_response: I have a reservation under Mina Kim.
+  acceptable_variations:
+  - I have a reservation under Mina Kim.
+  - I have a reservation under Alex Chen.
+- prompt: Ask for recommendation + request help politely.
+  target_response: Do you have any recommendations for dinner? If there's a problem with my room, could you help me?
+  acceptable_variations:
+  - Do you have any recommendations for dinner? If there's a problem with my room, could you help me?
+  - Do you have any recommendations for lunch? If there's a problem with my room, could you help me?

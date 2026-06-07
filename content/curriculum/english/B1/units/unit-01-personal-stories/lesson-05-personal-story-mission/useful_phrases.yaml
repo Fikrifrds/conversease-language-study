@@ -1,0 +1,21 @@
+phrases:
+- phrase: Tell me about something interesting that happened recently.
+  meaning_id: Ceritain sesuatu yang menarik yang baru terjadi.
+  usage_note: A natural mission starter request.
+  common_mistake: Keep it short and clear.
+- phrase: First, we explored the city.
+  meaning_id: Pertama, kami jalan-jalan di kota.
+  usage_note: A clear first event.
+  common_mistake: Do not forget the subject (we/I).
+- phrase: Then we got lost for a while.
+  meaning_id: Lalu kami sempat tersesat.
+  usage_note: A simple problem event.
+  common_mistake: Do not say "Then we lost".
+- phrase: I felt nervous, but then I felt relieved.
+  meaning_id: Aku gugup, tapi lalu lega.
+  usage_note: Contrast feelings with but.
+  common_mistake: Do not mix present and past in one story.
+- phrase: What happened next?
+  meaning_id: Terus apa yang terjadi?
+  usage_note: A follow-up question.
+  common_mistake: Do not say "What happen next".

@@ -1,0 +1,11 @@
+unit_key: unit-01-social-small-talk
+level_code: A2
+title: Social Small Talk
+main_conversation_outcome: Keep short everyday conversations going with follow-up questions.
+status: in_production
+lessons:
+  - lesson-01-starting-small-talk
+  - lesson-02-asking-follow-up-questions
+  - lesson-03-talking-about-weekends
+  - lesson-04-reacting-politely
+  - lesson-05-small-talk-mission

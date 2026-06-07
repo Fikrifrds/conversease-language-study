@@ -1,0 +1,43 @@
+scenario_key: c1_advanced_listening_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: 'Mission: listen carefully and respond accurately.'
+learner_goal: Handle implied meaning, long turns, accurate summaries, and high-quality follow-ups in one conversation.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Interpret implied meaning and check it politely.
+  hint: It sounds like... Just to check, are you implying...?
+  sample_answer: It sounds like timing and risk are the main concerns. Just to check, are you implying we should slow down?
+  focus: Implied meaning
+  expected_keywords:
+  - sounds like
+  - just to check
+  - implying
+- coach: Summarize and label the decision.
+  hint: Let me make sure I got this... The decision is...
+  sample_answer: 'Let me make sure I got this: dependencies, time pressure, and visibility. The decision is to propose a phased rollout with clear metrics.'
+  focus: Summary + decision
+  expected_keywords:
+  - make sure
+  - decision
+- coach: Ask a high-quality follow-up and close with next steps.
+  hint: When you say... do you mean... or...? Next steps are...
+  sample_answer: 'When you say ''more cautious'', do you mean smaller scope or slower timing? Next steps are: I''ll send the summary and draft phased options.'
+  focus: Follow-up + next steps
+  expected_keywords:
+  - do you mean
+  - next steps
+target_phrases:
+- Just to check, are you implying ...?
+- 'Let me make sure I got this: ...'
+- When you say X, do you mean Y or Z?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

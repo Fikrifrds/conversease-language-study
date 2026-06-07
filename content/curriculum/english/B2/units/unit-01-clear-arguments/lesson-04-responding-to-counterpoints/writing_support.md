@@ -1,0 +1,9 @@
+# Writing Support
+
+Write 6 lines:
+1. That's a fair point.
+2. However, ...
+3. I understand the concern, but ...
+4. We can phase it in.
+5. We'll measure results after ...
+6. Let's define success metrics first.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm making good progress.
+  meaning_id: Progresnya bagus.
+  usage_note: A natural update phrase.
+  common_mistake: Do not say "I'm progress".
+- phrase: I'm almost done with the summary.
+  meaning_id: Hampir selesai bagian ringkasannya.
+  usage_note: Almost done indicates near completion.
+  common_mistake: Do not say "I'm finish".
+- phrase: What's left?
+  meaning_id: Sisa apa?
+  usage_note: A short follow-up question.
+  common_mistake: Do not say "What remaining?".
+- phrase: I still need to double-check the numbers.
+  meaning_id: Aku masih perlu cek lagi angkanya.
+  usage_note: Double-check is common at work.
+  common_mistake: Do not say "double check again again".
+- phrase: Thanks for the heads-up.
+  meaning_id: Makasih sudah ngasih tahu.
+  usage_note: A polite reaction to a warning.
+  common_mistake: Do not say "Thanks for head up".

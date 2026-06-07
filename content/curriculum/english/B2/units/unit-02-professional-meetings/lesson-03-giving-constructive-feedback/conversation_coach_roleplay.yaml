@@ -1,0 +1,42 @@
+scenario_key: b2_meeting_feedback
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Any feedback on my demo?
+learner_goal: 'Give constructive feedback: positive opener, observation, impact, and one suggestion.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Any feedback on my demo?
+  hint: Mulai positif + I noticed...
+  sample_answer: Overall it was clear. I noticed the introduction was a bit long.
+  focus: Positive + observation
+  expected_keywords:
+  - overall
+  - noticed
+- coach: What was the impact?
+  hint: Jelaskan impact dengan so.
+  sample_answer: Some people lost focus, so the key message came late.
+  focus: Explain impact
+  expected_keywords:
+  - so
+  - message
+- coach: What would you suggest?
+  hint: Gunakan One suggestion is... / It might help if...
+  sample_answer: One suggestion is to start with the main takeaway. It might help if you keep the intro under one minute.
+  focus: Give a suggestion
+  expected_keywords:
+  - suggestion
+  - might help
+target_phrases:
+- I noticed ...
+- It might help if ...
+- One suggestion is ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

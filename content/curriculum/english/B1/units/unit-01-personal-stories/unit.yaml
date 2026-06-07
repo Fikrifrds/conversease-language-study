@@ -1,0 +1,11 @@
+unit_key: unit-01-personal-stories
+level_code: B1
+title: Personal Stories
+main_conversation_outcome: Tell simple connected stories about personal experiences.
+status: in_production
+lessons:
+  - lesson-01-setting-the-scene
+  - lesson-02-telling-events-in-order
+  - lesson-03-describing-feelings
+  - lesson-04-asking-about-someones-story
+  - lesson-05-personal-story-mission

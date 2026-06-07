@@ -1,0 +1,25 @@
+lesson_key: lesson-05-health-appointment-mission
+slug: health-appointment-mission
+title: Health Appointment Mission
+status: published
+estimated_minutes: 10
+conversation_situation: clinic_check_in_and_symptom_summary
+conversation_goal: Check in for an appointment, confirm details, and describe a symptom briefly.
+grammar_summary: "Combine polite check-in (I have an appointment) with symptom + duration (I've had... since/for...)."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

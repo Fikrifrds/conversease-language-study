@@ -1,0 +1,25 @@
+questions:
+- key: verify_phrase
+  type: multiple_choice
+  prompt: Which phrase suggests verification?
+  options:
+  - We should verify it with our data.
+  - It's always true.
+  - No need to check.
+  correct_answer: We should verify it with our data.
+- key: timeline_clarify
+  type: multiple_choice
+  prompt: Which phrase clarifies a timeline politely?
+  options:
+  - Just to clarify, what timeline did we promise?
+  - You promised wrong.
+  - Why did you lie?
+  correct_answer: Just to clarify, what timeline did we promise?
+- key: reliable_meaning
+  type: multiple_choice
+  prompt: What does "reliable" mean?
+  options:
+  - bisa dipercaya
+  - terlambat
+  - murah
+  correct_answer: bisa dipercaya

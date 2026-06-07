@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Ask: What did you do yesterday evening?'
+  target_response: What did you do yesterday evening?
+  acceptable_variations:
+  - What did you do yesterday evening?
+  - What did you do last night?
+- prompt: 'Ask: Did you cook at home?'
+  target_response: Did you cook at home?
+  acceptable_variations:
+  - Did you cook at home?
+  - Did you cook dinner at home?
+- prompt: 'Answer: Yes, I did.'
+  target_response: Yes, I did.
+  acceptable_variations:
+  - Yes, I did.
+  - Yes.

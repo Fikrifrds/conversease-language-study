@@ -1,0 +1,25 @@
+questions:
+- key: context_first
+  type: multiple_choice
+  prompt: Which phrase helps you interpret indirect feedback?
+  options:
+  - My sense is that ...
+  - They hate us.
+  - No context.
+  correct_answer: My sense is that ...
+- key: tactful_question
+  type: multiple_choice
+  prompt: Which phrase is tactful for sensitive preferences?
+  options:
+  - Would you mind if I ask ...?
+  - Answer now.
+  - Stop.
+  correct_answer: Would you mind if I ask ...?
+- key: repair_phrase
+  type: multiple_choice
+  prompt: Which phrase repairs misunderstanding responsibly?
+  options:
+  - I may have misunderstood ...
+  - You misunderstood.
+  - Not my issue.
+  correct_answer: I may have misunderstood ...

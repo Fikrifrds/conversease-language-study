@@ -281,6 +281,13 @@ ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
 }
 
 
+try:
+    from app.domain.generated_roleplay_scripts import GENERATED_ROLEPLAY_SCRIPTS
+except Exception:
+    GENERATED_ROLEPLAY_SCRIPTS = {}
+
+ROLEPLAY_SCRIPTS = {**ROLEPLAY_SCRIPTS, **GENERATED_ROLEPLAY_SCRIPTS}
+
 COACH_TURNS = ROLEPLAY_SCRIPTS[DEFAULT_LESSON_SLUG]
 
 

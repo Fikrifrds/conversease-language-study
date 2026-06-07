@@ -1,0 +1,25 @@
+questions:
+  - key: polite_accept
+    type: multiple_choice
+    prompt: Which phrase is a polite way to accept an invitation?
+    options:
+      - I'd love to.
+      - Where is it?
+      - I'm sorry to hear that.
+    correct_answer: I'd love to.
+  - key: invite_phrase
+    type: multiple_choice
+    prompt: Which sentence is an invitation?
+    options:
+      - Do you want to watch a movie tonight?
+      - I went to a movie yesterday.
+      - The movie is long.
+    correct_answer: Do you want to watch a movie tonight?
+  - key: soft_decline
+    type: multiple_choice
+    prompt: Which phrase is a soft way to decline?
+    options:
+      - Maybe next time.
+      - Yes, please.
+      - Of course.
+    correct_answer: Maybe next time.

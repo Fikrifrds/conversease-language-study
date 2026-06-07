@@ -1,0 +1,46 @@
+scenario_key: c1_final_conversation
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We need a final decision for next quarter.
+learner_goal: Lead a complex conversation from framing to decision and next steps.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Frame the conversation goal.
+  hint: Let me frame this...
+  sample_answer: 'Let me frame this: we need reliable outcomes and stakeholder confidence before scaling.'
+  focus: Frame
+  expected_keywords:
+  - frame
+  - confidence
+- coach: Respond with nuance and catch implied concerns.
+  hint: On balance... What I'm hearing is... do you mean X or Y?
+  sample_answer: On balance, we can move fast, but only if we limit scope and validate metrics. What I'm hearing is some fear of visibility. Do you mean scope concerns or accountability concerns?
+  focus: Nuance + listening
+  expected_keywords:
+  - on balance
+  - only if
+  - hearing
+- coach: Close with a decision and next steps.
+  hint: The decision is... Next steps are... today... tomorrow...
+  sample_answer: 'The decision is to run a two-week pilot with clear success criteria. Next steps are: I''ll send a one-page plan today, and we''ll align stakeholders tomorrow.'
+  focus: Decision + next steps
+  expected_keywords:
+  - decision
+  - next steps
+  - today
+target_phrases:
+- 'Let me frame this: ...'
+- On balance, ...
+- What I'm hearing is ...
+- The decision is ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

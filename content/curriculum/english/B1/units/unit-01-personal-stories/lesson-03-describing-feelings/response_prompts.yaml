@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask about feelings in the past.
+  target_response: How did you feel?
+  acceptable_variations:
+  - How did you feel?
+  - How did you feel during the trip?
+- prompt: Say you felt nervous because you got lost.
+  target_response: I felt nervous because we got lost.
+  acceptable_variations:
+  - I felt nervous because we got lost.
+  - I felt nervous because I got lost.
+- prompt: Say you felt relieved after asking for directions.
+  target_response: I felt relieved after we asked for directions.
+  acceptable_variations:
+  - I felt relieved after we asked for directions.
+  - I felt relieved after that.

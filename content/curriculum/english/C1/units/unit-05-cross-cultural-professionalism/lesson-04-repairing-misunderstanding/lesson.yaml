@@ -1,0 +1,25 @@
+lesson_key: lesson-04-repairing-misunderstanding
+slug: repairing-misunderstanding
+title: Repairing Misunderstanding
+status: published
+estimated_minutes: 12
+conversation_situation: repairing_misunderstanding
+conversation_goal: Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.
+grammar_summary: Use I may have misunderstood... / I didn't mean to... / Just to clarify... / How about we... to repair misunderstandings.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

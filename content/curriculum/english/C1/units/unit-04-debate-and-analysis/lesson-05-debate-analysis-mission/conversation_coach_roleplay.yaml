@@ -1,0 +1,44 @@
+scenario_key: c1_debate_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We should cut onboarding steps to increase conversion.
+learner_goal: Lead a debate-style discussion with assumptions, evidence, and calm responses under pressure.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Challenge the claim by surfacing an assumption and asking for evidence.
+  hint: It seems you're assuming... What's the evidence for...?
+  sample_answer: It seems you're assuming fewer steps automatically mean better conversion. What's the evidence for that claim?
+  focus: Assumption + evidence
+  expected_keywords:
+  - assuming
+  - evidence
+- coach: Present evidence carefully and be precise about what it shows.
+  hint: According to... To be precise...
+  sample_answer: According to the support dashboard, drop-offs increased after the redesign. To be precise, the data indicates correlation, not necessarily causation.
+  focus: Evidence + precision
+  expected_keywords:
+  - according to
+  - precise
+  - correlation
+- coach: Respond under pressure and propose a controlled next step.
+  hint: Let me be clear... key point... pilot...
+  sample_answer: 'Let me be clear: we have indicators, not proof yet. However, the key point is waiting increases risk. We run a pilot this week and review results before scaling.'
+  focus: Pressure response
+  expected_keywords:
+  - be clear
+  - key point
+  - pilot
+target_phrases:
+- It seems you're assuming ...
+- According to ...
+- 'Let me be clear: ...'
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

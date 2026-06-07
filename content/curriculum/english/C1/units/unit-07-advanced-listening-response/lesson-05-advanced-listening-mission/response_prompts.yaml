@@ -1,0 +1,16 @@
+prompts:
+- prompt: Check implied meaning, then summarize.
+  target_response: 'It sounds like timing and risk are the main concerns. Just to check, are you implying we should slow down? Let me make sure I got this: dependencies, time pressure, and visibility.'
+  acceptable_variations:
+  - 'It sounds like timing and risk are the main concerns. Just to check, are you implying we should slow down? Let me make sure I got this: dependencies, time pressure, and visibility.'
+  - 'It sounds like risk is the main concern. Just to check, are you suggesting we delay? Let me make sure I got this: tight timeline and stakeholder pressure.'
+- prompt: Ask a high-quality follow-up and propose next steps.
+  target_response: 'When you say ''more cautious'', do you mean smaller scope or slower timing? What would change your mind about the timeline? Next steps are: I''ll send the summary and draft phased options.'
+  acceptable_variations:
+  - 'When you say ''more cautious'', do you mean smaller scope or slower timing? What would change your mind about the timeline? Next steps are: I''ll send the summary and draft phased options.'
+  - 'When you say ''more cautious'', do you mean smaller scope? What would change your mind? Next steps are: I''ll draft a pilot plan.'
+- prompt: State decision and open questions clearly.
+  target_response: The decision is to propose a phased rollout with clear metrics. The open questions are around resourcing and alignment.
+  acceptable_variations:
+  - The decision is to propose a phased rollout with clear metrics. The open questions are around resourcing and alignment.
+  - The decision is to do a pilot first. The open questions are staffing and timeline.

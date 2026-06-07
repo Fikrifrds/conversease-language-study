@@ -1,0 +1,41 @@
+scenario_key: b2_review_negotiation
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We need this delivered next week.
+learner_goal: Propose a compromise, explain trade-offs, and recommend an option.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We need this delivered next week.
+  hint: Mulai dengan Here's my proposal...
+  sample_answer: 'Here''s my proposal: we deliver a smaller scope next week, then the full version two weeks later.'
+  focus: Proposal
+  expected_keywords:
+  - proposal
+  - scope
+- coach: What's the trade-off?
+  hint: The trade-off is...
+  sample_answer: The trade-off is speed versus completeness.
+  focus: Trade-off
+  expected_keywords:
+  - trade-off
+- coach: Close with a recommendation and summary.
+  hint: I'd recommend... To summarize...
+  sample_answer: 'I''d recommend that compromise. To summarize: top two features next week, the rest in two weeks.'
+  focus: Close
+  expected_keywords:
+  - recommend
+  - to summarize
+target_phrases:
+- 'Here''s my proposal: ...'
+- The trade-off is ...
+- I'd recommend ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

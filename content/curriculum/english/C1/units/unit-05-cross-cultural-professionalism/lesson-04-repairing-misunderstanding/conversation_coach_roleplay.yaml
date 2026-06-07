@@ -1,0 +1,46 @@
+scenario_key: c1_repairing_misunderstanding
+mode: lesson_practice_coach
+level_code: C1
+opening_line: The client seemed upset after your message.
+learner_goal: Repair a misunderstanding with acknowledgement, clarification, and next steps.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Acknowledge the misunderstanding and clarify intent.
+  hint: I may have misunderstood... I didn't mean to...
+  sample_answer: I may have misunderstood their tone. I didn't mean to come across as dismissive.
+  focus: Acknowledge
+  expected_keywords:
+  - misunderstood
+  - didn't mean
+  - dismissive
+- coach: Clarify what you meant.
+  hint: Just to clarify, my intent was ...
+  sample_answer: Just to clarify, my intent was to confirm the constraints, not reject the request.
+  focus: Clarify intent
+  expected_keywords:
+  - just to clarify
+  - intent
+  - not reject
+- coach: Propose a repair plan and timeline.
+  hint: How about we... I'll draft it...
+  sample_answer: How about we send a short note acknowledging the misunderstanding and offer a quick call? I'll draft it and share it in ten minutes.
+  focus: Repair plan
+  expected_keywords:
+  - how about
+  - acknowledging
+  - call
+  - draft
+target_phrases:
+- I may have misunderstood ...
+- Just to clarify, ...
+- How about we ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

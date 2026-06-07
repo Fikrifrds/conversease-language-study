@@ -1,0 +1,43 @@
+scenario_key: c1_tactful_questions
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We need to ask about a sensitive preference.
+learner_goal: Ask tactful questions and confirm preferences without causing discomfort.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Ask how they prefer to receive feedback.
+  hint: Would you mind if I ask...?
+  sample_answer: Would you mind if I ask how you prefer to receive feedback?
+  focus: Preference
+  expected_keywords:
+  - would you mind
+  - prefer
+- coach: Clarify the format politely.
+  hint: If it's okay, could you clarify whether...?
+  sample_answer: If it's okay, could you clarify whether you'd prefer feedback in writing or in a call?
+  focus: Clarify
+  expected_keywords:
+  - if it's okay
+  - clarify
+  - whether
+- coach: Check understanding about privacy.
+  hint: Just to make sure I understand...
+  sample_answer: Just to make sure I understand, should we share concerns privately first?
+  focus: Confirm
+  expected_keywords:
+  - make sure
+  - privately
+target_phrases:
+- Would you mind if I ask ...?
+- If it's okay, could you clarify ...?
+- Just to make sure I understand, ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

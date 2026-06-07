@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Any plans for the weekend?
+    meaning_id: Ada rencana untuk akhir pekan?
+    usage_note: A casual way to ask about weekend plans.
+    common_mistake: Do not say "Any plan for weekend?" without the -s.
+  - phrase: I'm going to visit my parents.
+    meaning_id: Saya mau mengunjungi orang tua saya.
+    usage_note: Use going to to talk about a plan.
+    common_mistake: Do not say "I going to".
+  - phrase: Where do they live?
+    meaning_id: Mereka tinggal di mana?
+    usage_note: Ask where someone's parents or friends live.
+    common_mistake: Do not say "Where they live?" without do.
+  - phrase: How are you getting there?
+    meaning_id: Kamu ke sana naik apa?
+    usage_note: Ask about transport to a place.
+    common_mistake: Do not say "How you get there?"
+  - phrase: Have a great weekend.
+    meaning_id: Semoga akhir pekanmu menyenangkan.
+    usage_note: A friendly closing on Friday or before the weekend.
+    common_mistake: Do not say "Have great weekend" without a.

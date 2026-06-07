@@ -1,0 +1,25 @@
+questions:
+  - key: follow_up_location
+    type: multiple_choice
+    prompt: Which question asks about the location?
+    options:
+      - Where is it?
+      - Was it good?
+      - What did you order?
+    correct_answer: Where is it?
+  - key: past_follow_up
+    type: multiple_choice
+    prompt: Which is the correct follow-up question about the past?
+    options:
+      - What did you order?
+      - What you ordered?
+      - What do you ordered?
+    correct_answer: What did you order?
+  - key: reaction_fun
+    type: multiple_choice
+    prompt: What is a natural reaction to an invitation?
+    options:
+      - That sounds fun.
+      - Where is it?
+      - I'm sorry to hear that.
+    correct_answer: That sounds fun.

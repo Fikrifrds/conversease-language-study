@@ -1,0 +1,21 @@
+phrases:
+- phrase: It sounds like timing is the main concern.
+  meaning_id: Kedengarannya concern utamanya timing.
+  usage_note: A neutral interpretation.
+  common_mistake: Do not assume intent; phrase it as sounds like.
+- phrase: Just to check, are you implying that we should delay the rollout?
+  meaning_id: Biar aku cek, kamu menyiratkan kita sebaiknya delay rollout?
+  usage_note: Confirm implied meaning explicitly and politely.
+  common_mistake: Do not accuse; use just to check.
+- phrase: What I'm hearing is we need a phased plan to reduce risk.
+  meaning_id: 'Yang aku tangkap: kita butuh rencana bertahap untuk ngurangin risiko.'
+  usage_note: Summarize implied meaning as a next step.
+  common_mistake: Do not summarize too broadly; keep it concrete.
+- phrase: Are you implying that ...?
+  meaning_id: Kamu menyiratkan bahwa ...?
+  usage_note: A direct but polite check.
+  common_mistake: Do not sound confrontational; pair with just to check.
+- phrase: What I'm hearing is ...
+  meaning_id: Yang aku tangkap adalah ...
+  usage_note: A useful listening mirror.
+  common_mistake: Do not paraphrase incorrectly; keep it accurate.

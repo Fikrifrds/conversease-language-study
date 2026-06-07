@@ -1,0 +1,16 @@
+# Grammar for Conversation
+
+Use **Norms**.
+
+Examples:
+
+- In our context, ...
+- People tend to ...
+- It's generally expected that ...
+
+Use **Suggestions**.
+
+Examples:
+
+- It might help to ...
+- You might find it useful to ...

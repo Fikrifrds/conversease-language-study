@@ -1,0 +1,25 @@
+questions:
+- key: frame_phrase
+  type: multiple_choice
+  prompt: Which phrase frames a presentation clearly?
+  options:
+  - 'Let me frame this: ...'
+  - No frame.
+  - Stop.
+  correct_answer: 'Let me frame this: ...'
+- key: conditional_logic
+  type: multiple_choice
+  prompt: Which phrase shows conditional reasoning?
+  options:
+  - If we accept X, then we should Y.
+  - X is bad.
+  - Whatever.
+  correct_answer: If we accept X, then we should Y.
+- key: in_short
+  type: multiple_choice
+  prompt: What does "in short" mean?
+  options:
+  - singkatnya
+  - berlawanan
+  - berat
+  correct_answer: singkatnya

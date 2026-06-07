@@ -1,0 +1,39 @@
+scenario_key: a2_past_simple_experience
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Oh nice. How was it?
+learner_goal: Describe a simple experience and say how it felt.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Oh nice. How was it?
+  hint: Jawab dengan It was + adjective.
+  sample_answer: It was delicious.
+  focus: Describe with adjective
+  expected_keywords:
+  - it was
+- coach: What did you eat?
+  hint: Sebutkan makanan (past).
+  sample_answer: I ate grilled chicken and salad.
+  focus: Say what you ate
+  expected_keywords:
+  - ate
+- coach: Would you go again?
+  hint: Jawab dan bilang kamu suka / tidak suka.
+  sample_answer: Yes. I really liked it.
+  focus: Give opinion
+  expected_keywords:
+  - liked
+target_phrases:
+- It was delicious.
+- I really liked it.
+- The service was great.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

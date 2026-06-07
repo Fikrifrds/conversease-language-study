@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Excuse me.
+    meaning_id: Permisi.
+    usage_note: Use this to get attention politely.
+    common_mistake: Do not sound angry; keep it calm.
+  - phrase: What time does the train leave?
+    meaning_id: Keretanya berangkat jam berapa?
+    usage_note: Ask for the departure time.
+    common_mistake: Do not say "What time the train leave" without does.
+  - phrase: It leaves at 6:30.
+    meaning_id: Berangkat jam 6.30.
+    usage_note: A simple answer.
+    common_mistake: Use at for time.
+  - phrase: Which platform?
+    meaning_id: Platform berapa?
+    usage_note: Ask where to go.
+    common_mistake: Do not say "What platform" in this short form.
+  - phrase: How long is the trip?
+    meaning_id: Perjalanannya berapa lama?
+    usage_note: Ask for the duration.
+    common_mistake: Do not say "How long the trip" without is.

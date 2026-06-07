@@ -1,0 +1,16 @@
+prompts:
+- prompt: State position (In my view...).
+  target_response: In my view, we should move routine updates to a written summary.
+  acceptable_variations:
+  - In my view, we should move routine updates to a written summary.
+  - In my view, we should change the meeting format.
+- prompt: Give two reasons.
+  target_response: One reason is it saves time. Another reason is it improves focus.
+  acceptable_variations:
+  - One reason is it saves time. Another reason is it improves focus.
+  - One reason is it reduces meetings. Another reason is it improves clarity.
+- prompt: Respond to counterpoint politely.
+  target_response: That's a fair point. However, we can keep one monthly live session.
+  acceptable_variations:
+  - That's a fair point. However, we can keep one monthly live session.
+  - That's a fair point. However, we can schedule a weekly Q&A.

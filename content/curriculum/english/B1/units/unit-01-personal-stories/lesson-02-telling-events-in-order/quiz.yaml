@@ -1,0 +1,25 @@
+questions:
+- key: sequence_word
+  type: multiple_choice
+  prompt: Which word usually ends a sequence?
+  options:
+  - first
+  - finally
+  - then
+  correct_answer: finally
+- key: past_met
+  type: multiple_choice
+  prompt: What is the past of "meet"?
+  options:
+  - meeted
+  - met
+  - meet
+  correct_answer: met
+- key: meaning_after_that
+  type: multiple_choice
+  prompt: What does "after that" mean?
+  options:
+  - setelah itu
+  - sebelum itu
+  - hari ini
+  correct_answer: setelah itu

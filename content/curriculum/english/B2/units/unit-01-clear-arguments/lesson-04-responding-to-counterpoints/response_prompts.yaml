@@ -1,0 +1,16 @@
+prompts:
+- prompt: Acknowledge a counterpoint politely.
+  target_response: That's a fair point.
+  acceptable_variations:
+  - That's a fair point.
+  - That's a good point.
+- prompt: Respond with however + benefit.
+  target_response: However, the long-term savings could be significant.
+  acceptable_variations:
+  - However, the long-term savings could be significant.
+  - However, the long-term benefit is clear.
+- prompt: Offer a mitigation plan (phase it in).
+  target_response: I understand the concern, but we can phase it in.
+  acceptable_variations:
+  - I understand the concern, but we can phase it in.
+  - I understand the concern, but we can start with a pilot.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: The trade-off is speed versus long-term reliability.
+  meaning_id: Trade-off-nya adalah kecepatan versus reliability jangka panjang.
+  usage_note: A clear trade-off statement.
+  common_mistake: Do not list too many trade-offs at once; start with one.
+- phrase: If we optimize for speed, we might introduce more bugs.
+  meaning_id: Kalau kita fokus ke cepat, kita bisa nambah bug.
+  usage_note: Explain downside with might.
+  common_mistake: Do not sound absolute; use might or could.
+- phrase: On the other hand, the slower option reduces risk.
+  meaning_id: Di sisi lain, opsi yang lebih lambat mengurangi risiko.
+  usage_note: Contrast a second option.
+  common_mistake: Do not say on other hand without contrast; always compare.
+- phrase: Let's choose based on our biggest constraint.
+  meaning_id: Kita pilih berdasarkan constraint terbesar.
+  usage_note: Decision principle tied to constraints.
+  common_mistake: Do not ignore constraints; use them to decide.
+- phrase: What do you suggest?
+  meaning_id: Kamu saranin apa?
+  usage_note: Invite recommendation.
+  common_mistake: Do not demand; keep tone neutral.

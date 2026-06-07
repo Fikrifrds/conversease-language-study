@@ -1,0 +1,16 @@
+prompts:
+- prompt: Agree partially and set scope.
+  target_response: To some extent, yes—especially for new projects.
+  acceptable_variations:
+  - To some extent, yes—especially for new projects.
+  - To some extent, yes—if we start with a pilot.
+- prompt: Add a limitation with that said.
+  target_response: That said, we need a clear exception for legacy systems.
+  acceptable_variations:
+  - That said, we need a clear exception for legacy systems.
+  - That said, we should define guardrails first.
+- prompt: Suggest a phased approach.
+  target_response: I'd phase it in over two quarters and review adoption data along the way.
+  acceptable_variations:
+  - I'd phase it in over two quarters and review adoption data along the way.
+  - I'd phase it in gradually and review results monthly.

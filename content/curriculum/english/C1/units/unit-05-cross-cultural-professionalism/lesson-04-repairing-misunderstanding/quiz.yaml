@@ -1,0 +1,25 @@
+questions:
+- key: may_have_misunderstood
+  type: multiple_choice
+  prompt: Which phrase acknowledges misunderstanding responsibly?
+  options:
+  - I may have misunderstood ...
+  - You misunderstood.
+  - Not my problem.
+  correct_answer: I may have misunderstood ...
+- key: didnt_mean
+  type: multiple_choice
+  prompt: Which phrase clarifies intent politely?
+  options:
+  - I didn't mean to ...
+  - You are too sensitive.
+  - Stop.
+  correct_answer: I didn't mean to ...
+- key: how_about
+  type: multiple_choice
+  prompt: Which phrase proposes a constructive next step?
+  options:
+  - How about we ...?
+  - Whatever.
+  - No.
+  correct_answer: How about we ...?

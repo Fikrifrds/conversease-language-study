@@ -1,0 +1,25 @@
+questions:
+  - key: ask_color
+    type: multiple_choice
+    prompt: Which question asks about color?
+    options:
+      - Do you have this in black?
+      - Do you have it in size M?
+      - How much is it?
+    correct_answer: Do you have this in black?
+  - key: ask_size
+    type: multiple_choice
+    prompt: Which question asks about size?
+    options:
+      - Do you have it in size M?
+      - Where is platform 2?
+      - What time does it leave?
+    correct_answer: Do you have it in size M?
+  - key: choose_option
+    type: multiple_choice
+    prompt: Which sentence chooses an option?
+    options:
+      - I'll take the blue one.
+      - Sorry, I can't.
+      - Something came up.
+    correct_answer: I'll take the blue one.

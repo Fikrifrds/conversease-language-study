@@ -1,0 +1,21 @@
+phrases:
+- phrase: Just to clarify, who is the main user group?
+  meaning_id: Biar jelas, siapa user utama-nya?
+  usage_note: A professional clarification question.
+  common_mistake: Do not ask vaguely; ask about the user group.
+- phrase: Could you share more about the biggest pain point?
+  meaning_id: Bisa share lebih detail pain point terbesarnya?
+  usage_note: A polite question to get specifics.
+  common_mistake: Do not say "Can you share me"; use share more about.
+- phrase: So what you need is a clear starting point, right?
+  meaning_id: Jadi yang kamu butuh adalah starting point yang jelas, bener?
+  usage_note: A confirmation summary.
+  common_mistake: Do not confirm vaguely; repeat the key need.
+- phrase: I'll summarize the requirements and share a proposal.
+  meaning_id: Aku rangkum requirement-nya dan share proposal.
+  usage_note: A clear next step.
+  common_mistake: Do not say "I will summarizing"; use I'll summarize.
+- phrase: Got it. Understood.
+  meaning_id: Oke. Paham.
+  usage_note: Professional listening signals.
+  common_mistake: Do not overuse; use once per section.

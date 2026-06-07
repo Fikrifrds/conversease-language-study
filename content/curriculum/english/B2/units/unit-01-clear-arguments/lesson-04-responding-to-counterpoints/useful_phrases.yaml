@@ -1,0 +1,21 @@
+phrases:
+- phrase: That's a fair point.
+  meaning_id: Itu poin yang adil/masuk akal.
+  usage_note: A respectful way to acknowledge a counterpoint.
+  common_mistake: Do not sound defensive; start with fair point.
+- phrase: However, the long-term savings could be significant.
+  meaning_id: Tapi, penghematan jangka panjang bisa besar.
+  usage_note: However is a professional contrast word.
+  common_mistake: Do not use however without a full sentence; keep it clear.
+- phrase: I understand the concern, but...
+  meaning_id: Aku paham kekhawatirannya, tapi...
+  usage_note: Show empathy before responding.
+  common_mistake: Do not say "I understand you" for this; say the concern.
+- phrase: We can phase it in.
+  meaning_id: Kita bisa jalanin bertahap.
+  usage_note: A practical way to reduce risk.
+  common_mistake: Do not say "phase in it"; keep word order we can phase it in.
+- phrase: Let's define success metrics first.
+  meaning_id: Yuk tentukan metrik sukses dulu.
+  usage_note: A strong next step after discussion.
+  common_mistake: Do not say "define metrics firstly"; use first.

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Make a proposal with I propose we...
+  target_response: I propose we do a small pilot first.
+  acceptable_variations:
+  - I propose we do a small pilot first.
+  - I propose we start next week.
+- prompt: Suggest a timeline.
+  target_response: How about we run it for two weeks and review the results?
+  acceptable_variations:
+  - How about we run it for two weeks and review the results?
+  - How about we try it for one week?
+- prompt: Check agreement.
+  target_response: Would that work for you?
+  acceptable_variations:
+  - Would that work for you?
+  - Would that work for the team?

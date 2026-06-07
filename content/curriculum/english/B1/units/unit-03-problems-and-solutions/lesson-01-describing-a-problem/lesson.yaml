@@ -1,0 +1,25 @@
+lesson_key: lesson-01-describing-a-problem
+slug: describing-a-problem
+title: Describing a Problem
+status: published
+estimated_minutes: 12
+conversation_situation: describing_a_problem_at_work
+conversation_goal: Describe a problem clearly and explain what happened and why it matters.
+grammar_summary: Use There's a problem with... / It happened when... / Because... to explain a problem clearly.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

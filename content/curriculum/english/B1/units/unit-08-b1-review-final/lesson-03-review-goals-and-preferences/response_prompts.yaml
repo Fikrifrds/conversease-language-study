@@ -1,0 +1,16 @@
+prompts:
+- prompt: State goal + deadline.
+  target_response: My goal is to speak more confidently by the end of this month.
+  acceptable_variations:
+  - My goal is to speak more confidently by the end of this month.
+  - My goal is to speak more confidently by next month.
+- prompt: Share progress with I've been practicing.
+  target_response: I've been practicing every morning.
+  acceptable_variations:
+  - I've been practicing every morning.
+  - I've been practicing every day.
+- prompt: State preference with because.
+  target_response: I prefer Conversation Coach because it gives me feedback.
+  acceptable_variations:
+  - I prefer Conversation Coach because it gives me feedback.
+  - I prefer shadowing because it's simple.

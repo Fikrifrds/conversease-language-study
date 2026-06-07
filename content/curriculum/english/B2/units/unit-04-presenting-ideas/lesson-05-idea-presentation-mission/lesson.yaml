@@ -1,0 +1,25 @@
+lesson_key: lesson-05-idea-presentation-mission
+slug: idea-presentation-mission
+title: Idea Presentation Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_present_idea_and_qa
+conversation_goal: 'Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.'
+grammar_summary: 'Combine: Today I''d like to... / First... Next... Finally... / The main benefit is... / A key risk is... / That''s a good question...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Frame the issue in one line.
+  target_response: 'Let me frame this: we need reliability and stakeholder confidence before scaling.'
+  acceptable_variations:
+  - 'Let me frame this: we need reliability and stakeholder confidence before scaling.'
+  - 'Let me frame this: we need stable metrics and confidence before scaling.'
+- prompt: Give a nuanced position with a clear condition.
+  target_response: On balance, I support the rollout, but only after we validate pilot metrics.
+  acceptable_variations:
+  - On balance, I support the rollout, but only after we validate pilot metrics.
+  - On balance, I support it, but only after we validate the data.
+- prompt: Label decisions and open questions, then close with next steps.
+  target_response: 'The decision is to run a two-week pilot. The open questions are resourcing and change management. Next steps are: I''ll send a summary today, and we''ll align tomorrow.'
+  acceptable_variations:
+  - 'The decision is to run a two-week pilot. The open questions are resourcing and change management. Next steps are: I''ll send a summary today, and we''ll align tomorrow.'
+  - 'The decision is to start with a pilot. The open questions are staffing and scope. Next steps are: I''ll send a summary today, and we''ll align tomorrow.'

@@ -1,0 +1,25 @@
+questions:
+- key: tradeoff_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces a trade-off?
+  options:
+  - The trade-off is ...
+  - Trade off is have.
+  - No trade.
+  correct_answer: The trade-off is ...
+- key: contrast_phrase
+  type: multiple_choice
+  prompt: Which phrase shows contrast between options?
+  options:
+  - On the other hand, ...
+  - Because, ...
+  - Maybe.
+  correct_answer: On the other hand, ...
+- key: optimize_meaning
+  type: multiple_choice
+  prompt: What does "optimize for speed" mean?
+  options:
+  - memprioritaskan kecepatan
+  - memperlambat
+  - menghapus fitur
+  correct_answer: memprioritaskan kecepatan

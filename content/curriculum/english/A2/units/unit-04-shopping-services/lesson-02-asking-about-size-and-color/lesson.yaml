@@ -1,0 +1,25 @@
+lesson_key: lesson-02-asking-about-size-and-color
+slug: asking-about-size-and-color
+title: Asking About Size and Color
+status: published
+estimated_minutes: 10
+conversation_situation: asking_size_and_color_in_a_store
+conversation_goal: Ask about size and color and choose one option.
+grammar_summary: "Use Do you have this in + color? to ask about color, and use Do you have it in size + letter/number? to ask about size."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

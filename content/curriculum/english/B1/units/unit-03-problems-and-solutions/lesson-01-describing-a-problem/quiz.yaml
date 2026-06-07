@@ -1,0 +1,25 @@
+questions:
+- key: problem_starter
+  type: multiple_choice
+  prompt: Which sentence starts a problem description?
+  options:
+  - There's a problem with the login page.
+  - I like the login page.
+  - Let's go home.
+  correct_answer: There's a problem with the login page.
+- key: so_result
+  type: multiple_choice
+  prompt: Which word shows a result (impact)?
+  options:
+  - so
+  - because
+  - but
+  correct_answer: so
+- key: past_started
+  type: multiple_choice
+  prompt: Choose the correct past sentence.
+  options:
+  - It start this morning.
+  - It started this morning.
+  - It starting this morning.
+  correct_answer: It started this morning.

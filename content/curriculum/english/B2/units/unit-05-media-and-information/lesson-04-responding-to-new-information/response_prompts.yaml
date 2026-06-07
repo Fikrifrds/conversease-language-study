@@ -1,0 +1,16 @@
+prompts:
+- prompt: Acknowledge new info.
+  target_response: I wasn't aware of that.
+  acceptable_variations:
+  - I wasn't aware of that.
+  - I didn't know that.
+- prompt: Say it changes your view.
+  target_response: That changes things.
+  acceptable_variations:
+  - That changes things.
+  - That changes my view.
+- prompt: Ask to understand more.
+  target_response: I'd like to understand the methodology.
+  acceptable_variations:
+  - I'd like to understand the methodology.
+  - I'd like to understand where the data came from.

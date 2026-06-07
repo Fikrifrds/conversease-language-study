@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm running a bit late.
+  meaning_id: Aku agak telat.
+  usage_note: A natural way to say you're late.
+  common_mistake: Do not say "I am late running"; use I'm running late.
+- phrase: My train is delayed.
+  meaning_id: Kereta aku delay.
+  usage_note: A clear reason for delay.
+  common_mistake: Do not say "My train delay" without is.
+- phrase: I'll be there in about 20 minutes.
+  meaning_id: Aku sampai kira-kira 20 menit lagi.
+  usage_note: In about + time gives an estimate.
+  common_mistake: Do not say "in 20 minutes more"; just in 20 minutes.
+- phrase: Can we start a little later?
+  meaning_id: Bisa mulai agak telat sedikit?
+  usage_note: A polite request to adjust timing.
+  common_mistake: Do not say "Can start later?" without we.
+- phrase: Thank you for waiting.
+  meaning_id: Makasih sudah nungguin ya.
+  usage_note: A polite closing after being late.
+  common_mistake: Do not say "Thanks for wait".

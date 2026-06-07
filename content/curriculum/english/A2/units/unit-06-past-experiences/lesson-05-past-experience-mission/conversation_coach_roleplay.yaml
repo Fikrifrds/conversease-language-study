@@ -1,0 +1,42 @@
+scenario_key: a2_past_mission_yesterday
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hey! What did you do yesterday?
+learner_goal: 'Tell a short past story: where you went, what you did, and how it was.'
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hey! What did you do yesterday?
+  hint: Jawab dengan tempat + aktivitas (past).
+  sample_answer: I went to the museum and took photos.
+  focus: Tell where and what you did
+  expected_keywords:
+  - went
+  - took
+- coach: Nice. How was it?
+  hint: Jawab dengan It was + adjective, lalu opini singkat.
+  sample_answer: It was really interesting. I liked it.
+  focus: Describe and give opinion
+  expected_keywords:
+  - it was
+  - liked
+- coach: Did you go with anyone?
+  hint: Jawab dan sebutkan dengan siapa.
+  sample_answer: Yes, I went with my friend.
+  focus: Say who you went with
+  expected_keywords:
+  - with
+  - friend
+target_phrases:
+- What did you do yesterday?
+- I went to the museum.
+- It was really interesting.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

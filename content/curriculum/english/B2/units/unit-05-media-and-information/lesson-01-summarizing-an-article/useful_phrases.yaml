@@ -1,0 +1,21 @@
+phrases:
+- phrase: The article is about how remote work affects productivity.
+  meaning_id: Artikelnya tentang dampak kerja remote ke produktivitas.
+  usage_note: A clear topic sentence.
+  common_mistake: Do not say "The article about"; include is.
+- phrase: The main point is productivity improves with clear rules.
+  meaning_id: Poin utamanya produktivitas naik kalau ada aturan yang jelas.
+  usage_note: A clear main point sentence.
+  common_mistake: Do not say "main point are"; use is.
+- phrase: It mentions isolation as a downside.
+  meaning_id: Disebutkan rasa terisolasi sebagai kekurangan.
+  usage_note: Mention a downside briefly.
+  common_mistake: Do not say "It mention"; add -s.
+- phrase: It concludes that hybrid setups work best.
+  meaning_id: Kesimpulannya model hybrid paling cocok.
+  usage_note: A clear conclusion sentence.
+  common_mistake: Do not say "It conclude"; add -s.
+- phrase: In short, the key takeaway is clear rules help.
+  meaning_id: 'Singkatnya, inti pesannya: aturan yang jelas itu membantu.'
+  usage_note: A concise summary closing.
+  common_mistake: Do not add too many details after in short.

@@ -1,0 +1,25 @@
+questions:
+- key: fair_point_meaning
+  type: multiple_choice
+  prompt: What does "That's a fair point" mean?
+  options:
+  - itu poin yang masuk akal
+  - itu poin yang salah
+  - itu poin yang lucu
+  correct_answer: itu poin yang masuk akal
+- key: however_function
+  type: multiple_choice
+  prompt: What does "however" usually signal?
+  options:
+  - kontras
+  - urutan
+  - pertanyaan
+  correct_answer: kontras
+- key: phase_it_in_meaning
+  type: multiple_choice
+  prompt: What does "phase it in" mean?
+  options:
+  - jalankan bertahap
+  - batalkan total
+  - ulang dari awal
+  correct_answer: jalankan bertahap

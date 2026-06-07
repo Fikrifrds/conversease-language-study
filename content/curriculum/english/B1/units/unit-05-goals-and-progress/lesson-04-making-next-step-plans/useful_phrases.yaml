@@ -1,0 +1,21 @@
+phrases:
+- phrase: My next step is to practice with Conversation Coach.
+  meaning_id: Next step aku adalah latihan pakai Conversation Coach.
+  usage_note: A clear next-step sentence.
+  common_mistake: Do not say "My next step to practice"; use is to.
+- phrase: I'll do it three times this week.
+  meaning_id: Aku lakukan tiga kali minggu ini.
+  usage_note: A simple schedule commitment.
+  common_mistake: Do not say "three time"; add -s.
+- phrase: I'm going to keep it simple.
+  meaning_id: Aku mau bikin simpel.
+  usage_note: A realistic planning phrase.
+  common_mistake: Do not say "I go to keep"; use I'm going to.
+- phrase: Let's set a simple plan.
+  meaning_id: Yuk bikin rencana sederhana.
+  usage_note: A friendly suggestion to plan together.
+  common_mistake: Do not say "Let's to set".
+- phrase: That sounds realistic.
+  meaning_id: Kedengarannya realistis.
+  usage_note: Agree to a plan politely.
+  common_mistake: Do not say "That sound realistic"; add -s.

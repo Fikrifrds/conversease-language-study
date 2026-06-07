@@ -1,0 +1,39 @@
+scenario_key: b2_info_summarize_article
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Can you summarize the article you read?
+learner_goal: Summarize an article with topic, main point, and conclusion.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's the article about?
+  hint: The article is about ...
+  sample_answer: The article is about how remote work affects productivity.
+  focus: Topic
+  expected_keywords:
+  - article is about
+- coach: What's the main point?
+  hint: The main point is ...
+  sample_answer: The main point is productivity improves with clear communication rules.
+  focus: Main point
+  expected_keywords:
+  - main point
+- coach: How does it conclude?
+  hint: It concludes that ...
+  sample_answer: It concludes that hybrid setups work best for many teams.
+  focus: Conclusion
+  expected_keywords:
+  - concludes
+target_phrases:
+- The article is about ...
+- The main point is ...
+- It concludes that ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

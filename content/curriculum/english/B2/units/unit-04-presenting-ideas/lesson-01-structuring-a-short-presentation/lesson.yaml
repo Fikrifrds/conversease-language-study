@@ -1,0 +1,25 @@
+lesson_key: lesson-01-structuring-a-short-presentation
+slug: structuring-a-short-presentation
+title: Structuring a Short Presentation
+status: published
+estimated_minutes: 12
+conversation_situation: structuring_short_presentation
+conversation_goal: 'Present an idea with a clear structure: context, proposal, and next steps.'
+grammar_summary: Use Today I'd like to... / The problem is... / My proposal is... / Next steps are... to keep a short presentation clear.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

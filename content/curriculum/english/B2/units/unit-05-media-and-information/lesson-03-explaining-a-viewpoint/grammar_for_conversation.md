@@ -1,0 +1,9 @@
+# Grammar for Conversation
+
+Use **Viewpoint language**.
+
+Examples:
+
+- From my perspective, ...
+- The reason is ...
+- I see the other side, but ...

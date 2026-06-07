@@ -1,0 +1,25 @@
+questions:
+- key: complaint_starter
+  type: multiple_choice
+  prompt: Which sentence starts a polite complaint?
+  options:
+  - There's a problem with my room.
+  - My room bad!
+  - Problem room!
+  correct_answer: There's a problem with my room.
+- key: isnt_working
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - It isn't working.
+  - It isn't work.
+  - It not working.
+  correct_answer: It isn't working.
+- key: could_request
+  type: multiple_choice
+  prompt: Which sentence is a polite request?
+  options:
+  - Could you send someone to take a look?
+  - Send someone now.
+  - Look it.
+  correct_answer: Could you send someone to take a look?

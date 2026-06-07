@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Invite your friend to watch a movie tonight.
+    target_response: Do you want to watch a movie tonight?
+    acceptable_variations:
+      - Do you want to watch a movie tonight?
+      - Do you want to watch a movie?
+  - prompt: Accept the invitation politely.
+    target_response: I'd love to.
+    acceptable_variations:
+      - I'd love to.
+      - I'd like to.
+  - prompt: React positively to an idea.
+    target_response: That sounds fun.
+    acceptable_variations:
+      - That sounds fun.
+      - Sounds great.

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Describe a local habit with usually.
+  target_response: People usually eat outside in the evening.
+  acceptable_variations:
+  - People usually eat outside in the evening.
+  - People usually go out at night.
+- prompt: Describe another habit with in my area + often.
+  target_response: In my area, people often grab street food after work.
+  acceptable_variations:
+  - In my area, people often grab street food after work.
+  - In my area, people often meet friends on weekends.
+- prompt: Add a frequency detail (especially on weekends).
+  target_response: Especially on weekends.
+  acceptable_variations:
+  - Especially on weekends.
+  - Especially on Friday nights.

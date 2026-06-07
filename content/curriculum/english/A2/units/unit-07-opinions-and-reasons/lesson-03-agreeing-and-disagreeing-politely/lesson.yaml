@@ -1,0 +1,25 @@
+lesson_key: lesson-03-agreeing-and-disagreeing-politely
+slug: agreeing-and-disagreeing-politely
+title: Agreeing and Disagreeing Politely
+status: published
+estimated_minutes: 10
+conversation_situation: agreeing_and_disagreeing_politely
+conversation_goal: Agree or disagree politely and give a short reason.
+grammar_summary: Use I agree / I'm not sure / I don't think so to respond politely to opinions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Can we reschedule?
+    meaning_id: Kita bisa reschedule?
+    usage_note: Ask to change the plan.
+    common_mistake: Do not say "Can we schedule again?" in this meaning.
+  - phrase: Something came up.
+    meaning_id: Ada urusan mendadak.
+    usage_note: A simple reason.
+    common_mistake: Do not explain too much if it is private.
+  - phrase: When are you free?
+    meaning_id: Kamu kosong kapan?
+    usage_note: Ask for availability.
+    common_mistake: Do not say "When you free?" without are.
+  - phrase: Does 7 pm work for you?
+    meaning_id: Jam 7 malam cocok buat kamu?
+    usage_note: Confirm the new time.
+    common_mistake: Do not say "Do 7 pm work".
+  - phrase: Same cafe?
+    meaning_id: Kafe yang sama?
+    usage_note: Confirm the place.
+    common_mistake: In a full sentence, you can say "Is it the same cafe?"

@@ -1,0 +1,25 @@
+questions:
+- key: debate_flow
+  type: multiple_choice
+  prompt: Which flow fits debate analysis?
+  options:
+  - Assumptions -> evidence -> alternatives -> response under pressure
+  - Greeting -> goodbye
+  - Colors -> numbers
+  correct_answer: Assumptions -> evidence -> alternatives -> response under pressure
+- key: correlation
+  type: multiple_choice
+  prompt: Which phrase shows precision about data?
+  options:
+  - The data indicates correlation, not necessarily causation.
+  - The data proves everything.
+  - No data needed.
+  correct_answer: The data indicates correlation, not necessarily causation.
+- key: under_pressure
+  type: multiple_choice
+  prompt: Which phrase stays calm under pressure?
+  options:
+  - 'Let me be clear: ...'
+  - You're attacking me.
+  - Stop.
+  correct_answer: 'Let me be clear: ...'

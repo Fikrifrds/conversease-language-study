@@ -1,0 +1,44 @@
+scenario_key: c1_sensitive_feedback
+mode: lesson_practice_coach
+level_code: C1
+opening_line: How did the last review go?
+learner_goal: Give sensitive feedback tactfully and propose a small, concrete improvement.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: How did the last review go?
+  hint: Mulai dengan I wanted to flag...
+  sample_answer: It went well overall. I wanted to flag one point about the messaging.
+  focus: Opener
+  expected_keywords:
+  - flag
+  - messaging
+- coach: What was the issue?
+  hint: Fokus ke impact.
+  sample_answer: The impact is that some teams interpreted it as a hard deadline.
+  focus: Impact
+  expected_keywords:
+  - impact
+  - interpreted
+  - deadline
+- coach: Suggest a fix politely.
+  hint: Would you be open to...?
+  sample_answer: Would you be open to adding an explicit 'earliest possible' line to clarify the timeline?
+  focus: Suggestion
+  expected_keywords:
+  - open to
+  - explicit
+  - clarify
+target_phrases:
+- I wanted to flag ...
+- The impact is that ...
+- Would you be open to ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

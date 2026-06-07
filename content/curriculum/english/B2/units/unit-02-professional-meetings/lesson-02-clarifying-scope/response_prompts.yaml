@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask to clarify scope.
+  target_response: Just to clarify, what exactly is in scope?
+  acceptable_variations:
+  - Just to clarify, what exactly is in scope?
+  - Just to clarify, what's in scope for this sprint?
+- prompt: Ask if something is included.
+  target_response: Does this include the admin dashboard changes?
+  acceptable_variations:
+  - Does this include the admin dashboard changes?
+  - Does this include the reporting page?
+- prompt: Confirm out of scope.
+  target_response: So that's out of scope for now, right?
+  acceptable_variations:
+  - So that's out of scope for now, right?
+  - Okay, so it's out of scope.

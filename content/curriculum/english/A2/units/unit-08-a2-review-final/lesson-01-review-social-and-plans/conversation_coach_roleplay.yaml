@@ -1,0 +1,42 @@
+scenario_key: a2_review_social_plans
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hey! Long time no see. How have you been?
+learner_goal: Do small talk, ask a follow-up question, then make a simple plan.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hey! Long time no see. How have you been?
+  hint: Jawab singkat, lalu balas tanya.
+  sample_answer: Pretty good. How about you?
+  focus: Small talk response
+  expected_keywords:
+  - pretty
+  - how about
+- coach: Busy with work. What have you been working on?
+  hint: Jawab singkat dengan 1 topik.
+  sample_answer: I've been working on a new project.
+  focus: Answer follow-up
+  expected_keywords:
+  - working on
+  - project
+- coach: Do you want to grab coffee this weekend?
+  hint: Terima, lalu usulkan waktu.
+  sample_answer: Sure. Are you free on Saturday afternoon?
+  focus: Accept and propose time
+  expected_keywords:
+  - free
+  - saturday
+target_phrases:
+- How have you been?
+- Do you want to grab coffee this weekend?
+- Are you free on Saturday?
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

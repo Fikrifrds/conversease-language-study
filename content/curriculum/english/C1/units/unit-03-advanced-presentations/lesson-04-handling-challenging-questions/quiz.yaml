@@ -1,0 +1,25 @@
+questions:
+- key: fair_question
+  type: multiple_choice
+  prompt: Which phrase acknowledges a tough question calmly?
+  options:
+  - That's a fair question.
+  - That's stupid.
+  - No.
+  correct_answer: That's a fair question.
+- key: short_answer
+  type: multiple_choice
+  prompt: Which phrase introduces a concise answer?
+  options:
+  - 'The short answer is: ...'
+  - 'Long answer is: ...'
+  - Whatever.
+  correct_answer: 'The short answer is: ...'
+- key: clarify_phrase
+  type: multiple_choice
+  prompt: Which phrase clarifies before answering?
+  options:
+  - Let me clarify ...
+  - Stop.
+  - No idea.
+  correct_answer: Let me clarify ...

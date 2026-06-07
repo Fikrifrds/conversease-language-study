@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you don't feel well today.
+  target_response: I don't feel well today.
+  acceptable_variations:
+  - I don't feel well today.
+  - I don't feel well.
+- prompt: 'Ask: What did you do yesterday?'
+  target_response: What did you do yesterday?
+  acceptable_variations:
+  - What did you do yesterday?
+  - What did you do last night?
+- prompt: Say you went to the clinic and stayed home.
+  target_response: I went to the clinic and then I stayed home.
+  acceptable_variations:
+  - I went to the clinic and then I stayed home.
+  - I went to the clinic, then I stayed home.

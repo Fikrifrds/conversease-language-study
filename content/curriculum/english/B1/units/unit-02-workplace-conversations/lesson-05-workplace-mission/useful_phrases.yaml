@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm making good progress.
+  meaning_id: Progresnya bagus.
+  usage_note: Start the mission with a clear update.
+  common_mistake: Do not jump to details without stating progress.
+- phrase: Could you clarify which risks you want me to focus on?
+  meaning_id: Boleh jelasin risiko mana yang harus aku fokuskan?
+  usage_note: Clarify scope politely.
+  common_mistake: Do not say "Explain me"; use Could you clarify.
+- phrase: Just to confirm, you need it by Friday morning, right?
+  meaning_id: Sekadar memastikan, kamu butuhnya paling lambat Jumat pagi, ya?
+  usage_note: Confirm deadline details.
+  common_mistake: Keep confirmation short and specific.
+- phrase: Please send it by Thursday afternoon if possible.
+  meaning_id: Kalau bisa, kirim paling lambat Kamis sore.
+  usage_note: By indicates a deadline; if possible softens the request.
+  common_mistake: Do not say "until Thursday"; use by.
+- phrase: Got it.
+  meaning_id: Oke, paham.
+  usage_note: A natural short acknowledgement.
+  common_mistake: Do not overuse; one time is enough.

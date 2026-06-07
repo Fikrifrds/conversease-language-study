@@ -1,0 +1,25 @@
+lesson_key: lesson-03-balancing-two-viewpoints
+slug: balancing-two-viewpoints
+title: Balancing Two Viewpoints
+status: published
+estimated_minutes: 12
+conversation_situation: balancing_viewpoints
+conversation_goal: Balance two viewpoints fairly and reach a nuanced conclusion.
+grammar_summary: Use On the one hand... / On the other hand... / While it's true that... / On balance... to weigh perspectives.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

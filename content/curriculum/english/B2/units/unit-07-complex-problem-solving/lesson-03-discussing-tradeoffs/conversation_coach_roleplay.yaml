@@ -1,0 +1,41 @@
+scenario_key: b2_tradeoffs
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We have two options. Compare them.
+learner_goal: Explain trade-offs and impact, then suggest a decision principle.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have two options. Compare them.
+  hint: Mulai dengan trade-off.
+  sample_answer: The trade-off is speed versus long-term reliability.
+  focus: Trade-off
+  expected_keywords:
+  - trade-off
+- coach: Explain the downside of the fast option.
+  hint: If we optimize for speed, we might...
+  sample_answer: If we optimize for speed, we might introduce more bugs.
+  focus: Impact
+  expected_keywords:
+  - optimize
+  - might
+- coach: Now contrast with the safer option.
+  hint: On the other hand...
+  sample_answer: On the other hand, the slower option reduces risk but takes more effort.
+  focus: Contrast
+  expected_keywords:
+  - on the other hand
+  - risk
+target_phrases:
+- The trade-off is ...
+- If we optimize for ..., we might ...
+- On the other hand, ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

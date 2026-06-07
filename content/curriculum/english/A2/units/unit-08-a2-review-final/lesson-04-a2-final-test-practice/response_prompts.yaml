@@ -1,0 +1,16 @@
+prompts:
+- prompt: Invite a friend for coffee this weekend.
+  target_response: Do you want to grab coffee this weekend?
+  acceptable_variations:
+  - Do you want to grab coffee this weekend?
+  - Do you want to get coffee this weekend?
+- prompt: Ask for a USB-C charger.
+  target_response: Do you have a USB-C charger?
+  acceptable_variations:
+  - Do you have a USB-C charger?
+  - Do you have a phone charger?
+- prompt: Say a symptom and duration (2 days).
+  target_response: I've had a cough for two days.
+  acceptable_variations:
+  - I've had a cough for two days.
+  - I've had a cough since Monday.

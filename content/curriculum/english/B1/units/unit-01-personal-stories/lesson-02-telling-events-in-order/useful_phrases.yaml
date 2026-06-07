@@ -1,0 +1,21 @@
+phrases:
+- phrase: First, we checked in at the hotel.
+  meaning_id: Pertama, kami check-in di hotel.
+  usage_note: Start a sequence clearly.
+  common_mistake: Do not skip the subject; say who did it.
+- phrase: Then we walked around.
+  meaning_id: Lalu kami jalan-jalan.
+  usage_note: Then continues the sequence.
+  common_mistake: Do not overuse then; mix with after that.
+- phrase: What happened after that?
+  meaning_id: Setelah itu apa yang terjadi?
+  usage_note: Ask for the next event.
+  common_mistake: Do not say "What happen"; use happened.
+- phrase: After that, we met my aunt for dinner.
+  meaning_id: Setelah itu, kami ketemu tanteku buat makan malam.
+  usage_note: After that is natural for stories.
+  common_mistake: Do not say "After that we meet"; use met.
+- phrase: Finally, we went back early.
+  meaning_id: Terakhir, kami pulang lebih cepat.
+  usage_note: Finally ends the story sequence.
+  common_mistake: Do not use finally for the middle of the story.

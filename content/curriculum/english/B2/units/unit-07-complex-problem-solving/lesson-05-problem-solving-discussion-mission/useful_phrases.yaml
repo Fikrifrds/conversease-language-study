@@ -1,0 +1,21 @@
+phrases:
+- phrase: Let's define the problem statement first.
+  meaning_id: Kita definisikan problem statement dulu.
+  usage_note: Start structured problem solving.
+  common_mistake: Don't jump to solutions.
+- phrase: Based on the data, one possible cause is ...
+  meaning_id: Berdasarkan data, salah satu kemungkinan penyebabnya adalah ...
+  usage_note: Cause explanation with evidence language.
+  common_mistake: Don't make it sound certain; keep it as possible cause.
+- phrase: The trade-off is speed versus reliability.
+  meaning_id: Trade-off-nya kecepatan versus reliability.
+  usage_note: Compare options quickly.
+  common_mistake: Don't talk in circles; state the trade-off clearly.
+- phrase: Given these constraints, I'd recommend a two-week pilot.
+  meaning_id: Dengan constraint ini, aku rekomend pilot dua minggu.
+  usage_note: Recommendation.
+  common_mistake: Don't say "I recommend to pilot"; use I'd recommend a pilot.
+- phrase: We can mitigate it by setting clear metrics and a strict timeline.
+  meaning_id: Kita mitigasi dengan metrik yang jelas dan timeline yang ketat.
+  usage_note: Mitigation + next step.
+  common_mistake: Don't stop at risk; propose mitigation.

@@ -1,0 +1,42 @@
+scenario_key: b2_negotiation_priorities
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We have limited time. What's your top priority?
+learner_goal: State your priorities clearly and ask about the other person's priorities.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your top priority?
+  hint: Mulai dengan My top priority is...
+  sample_answer: My top priority is shipping the core feature safely.
+  focus: State top priority
+  expected_keywords:
+  - top priority
+  - is
+- coach: Why is that important?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because it's the main value for users and the deadline is close.
+  focus: Give reason
+  expected_keywords:
+  - because
+  - deadline
+- coach: Ask about my priorities.
+  hint: Gunakan What about you? What's your top priority?
+  sample_answer: What about you? What's your top priority?
+  focus: Ask other priorities
+  expected_keywords:
+  - what about you
+  - top priority
+target_phrases:
+- My top priority is ...
+- What matters most is ...
+- What's your top priority?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

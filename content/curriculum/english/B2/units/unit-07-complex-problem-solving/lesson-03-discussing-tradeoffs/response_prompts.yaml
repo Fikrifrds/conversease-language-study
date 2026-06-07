@@ -1,0 +1,16 @@
+prompts:
+- prompt: State a trade-off.
+  target_response: The trade-off is speed versus long-term reliability.
+  acceptable_variations:
+  - The trade-off is speed versus long-term reliability.
+  - The trade-off is cost versus quality.
+- prompt: Explain impact with might.
+  target_response: If we optimize for speed, we might introduce more bugs.
+  acceptable_variations:
+  - If we optimize for speed, we might introduce more bugs.
+  - If we optimize for cost, we might lose quality.
+- prompt: Use a contrast phrase.
+  target_response: On the other hand, the slower option reduces risk but takes more effort.
+  acceptable_variations:
+  - On the other hand, the slower option reduces risk but takes more effort.
+  - On the other hand, it is more reliable but slower.

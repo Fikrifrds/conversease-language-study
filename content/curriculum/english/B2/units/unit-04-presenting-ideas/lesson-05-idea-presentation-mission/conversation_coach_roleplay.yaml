@@ -1,0 +1,46 @@
+scenario_key: b2_present_mission
+mode: lesson_practice_coach
+level_code: B2
+opening_line: You have two minutes. Present your idea, then answer my questions.
+learner_goal: Present an idea clearly and handle Q&A professionally.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Present your idea in 2-3 sentences with signposting.
+  hint: Today I'd like to... First... Next... Finally...
+  sample_answer: Today I'd like to propose a shared onboarding checklist. First, the problem is inconsistency. Next, the proposal is a checklist plus a buddy. Finally, we'll pilot it next week.
+  focus: Presentation with signposting
+  expected_keywords:
+  - today
+  - first
+  - next
+  - finally
+- coach: Explain benefits and one risk with mitigation.
+  hint: The main benefit is... Another benefit is... A key risk is... To reduce the risk...
+  sample_answer: The main benefit is faster onboarding. Another benefit is fewer repeated questions. A key risk is it becomes outdated. To reduce the risk, we'll review it monthly and assign an owner.
+  focus: Benefits + risk + mitigation
+  expected_keywords:
+  - benefit
+  - risk
+  - reduce
+- coach: Answer a question and offer follow-up if needed.
+  hint: That's a good question... I'm not sure yet, but I can follow up by...
+  sample_answer: That's a good question. As far as I know, it takes about one day. I'm not sure about maintenance yet, but I can follow up by tomorrow.
+  focus: Q&A
+  expected_keywords:
+  - good question
+  - as far as I know
+  - follow up
+target_phrases:
+- First, ... Next, ... Finally, ...
+- The main benefit is ...
+- I'm not sure yet, but I can follow up ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

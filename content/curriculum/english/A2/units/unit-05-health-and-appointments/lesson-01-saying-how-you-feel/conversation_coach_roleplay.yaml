@@ -1,0 +1,42 @@
+scenario_key: a2_health_saying_how_you_feel
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hey, are you okay?
+learner_goal: Say you do not feel well and mention one or two symptoms.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hey, are you okay?
+  hint: Jawab singkat, lalu bilang kamu nggak enak badan.
+  sample_answer: Not really. I don't feel well.
+  focus: Say you feel unwell
+  expected_keywords:
+  - don't feel well
+  - not really
+- coach: What's wrong?
+  hint: Sebutkan satu gejala.
+  sample_answer: I have a headache.
+  focus: Name a symptom
+  expected_keywords:
+  - have
+  - headache
+- coach: Do you want to go home?
+  hint: Jawab, lalu tambahkan satu gejala lagi.
+  sample_answer: Yes. I think I have a fever.
+  focus: Add another symptom
+  expected_keywords:
+  - think
+  - fever
+target_phrases:
+- I don't feel well.
+- I have a headache.
+- I think I have a fever.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_hows_your_day
+    type: multiple_choice
+    prompt: What does "How's your day?" mean?
+    options:
+      - Gimana harimu?
+      - Jam berapa sekarang?
+      - Kamu dari mana?
+    correct_answer: Gimana harimu?
+  - key: follow_up_weekend
+    type: multiple_choice
+    prompt: Which is the best follow-up question about the weekend?
+    options:
+      - How was your weekend?
+      - How are you weekend?
+      - How do you weekend?
+    correct_answer: How was your weekend?
+  - key: reaction_sounds_great
+    type: multiple_choice
+    prompt: What is a natural reaction to "I went to the park"?
+    options:
+      - Sounds great.
+      - Good night.
+      - I'm sorry.
+    correct_answer: Sounds great.

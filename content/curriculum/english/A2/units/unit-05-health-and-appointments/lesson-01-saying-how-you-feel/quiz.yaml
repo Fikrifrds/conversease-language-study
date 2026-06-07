@@ -1,0 +1,25 @@
+questions:
+- key: meaning_feel_well
+  type: multiple_choice
+  prompt: What does "I don't feel well" mean?
+  options:
+  - Saya lapar
+  - Saya tidak enak badan
+  - Saya senang
+  correct_answer: Saya tidak enak badan
+- key: use_have
+  type: multiple_choice
+  prompt: Which sentence is correct?
+  options:
+  - I have a headache.
+  - I am a headache.
+  - I headache.
+  correct_answer: I have a headache.
+- key: meaning_take_care
+  type: multiple_choice
+  prompt: What does "Take care" mean here?
+  options:
+  - Hati-hati / jaga diri
+  - Ambil kursi
+  - Lihat jam
+  correct_answer: Hati-hati / jaga diri

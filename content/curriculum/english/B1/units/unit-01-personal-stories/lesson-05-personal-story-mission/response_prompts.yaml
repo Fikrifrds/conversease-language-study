@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start a connected story with time and place.
+  target_response: Last weekend, I was in Bandung with my cousin.
+  acceptable_variations:
+  - Last weekend, I was in Bandung with my cousin.
+  - Last weekend, I was in Bandung.
+- prompt: Tell two events with first/then.
+  target_response: First, we explored the city. Then we got lost for a while.
+  acceptable_variations:
+  - First, we explored the city. Then we got lost for a while.
+  - First, we explored the city. Then we went to a cafe.
+- prompt: Describe feelings with contrast.
+  target_response: I felt nervous, but after that I felt relieved.
+  acceptable_variations:
+  - I felt nervous, but after that I felt relieved.
+  - I felt worried, but then I felt relieved.

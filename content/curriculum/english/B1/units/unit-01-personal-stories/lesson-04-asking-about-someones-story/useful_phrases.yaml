@@ -1,0 +1,21 @@
+phrases:
+- phrase: What happened next?
+  meaning_id: Terus apa yang terjadi?
+  usage_note: A strong follow-up question.
+  common_mistake: Use next/after that for clarity.
+- phrase: Why did you choose that route?
+  meaning_id: Kenapa kamu pilih jalan itu?
+  usage_note: Ask for the reason in the past.
+  common_mistake: Do not say "Why you chose" in a simple question; use did.
+- phrase: How did you feel at that moment?
+  meaning_id: Gimana perasaanmu saat itu?
+  usage_note: Ask about feelings in the story.
+  common_mistake: Do not say "How you felt"; use did you feel.
+- phrase: We asked a local person for help.
+  meaning_id: Kami tanya orang lokal buat bantuan.
+  usage_note: A simple action in the past.
+  common_mistake: Do not say "We ask" in a past story.
+- phrase: I'm glad it worked out.
+  meaning_id: Syukurlah akhirnya beres.
+  usage_note: A natural supportive reaction.
+  common_mistake: Do not say "I am happy it finish".

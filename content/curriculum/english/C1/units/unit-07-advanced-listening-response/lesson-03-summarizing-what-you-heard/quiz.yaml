@@ -1,0 +1,25 @@
+questions:
+- key: decision_label
+  type: multiple_choice
+  prompt: Which phrase labels a decision clearly?
+  options:
+  - The decision is ...
+  - I think ...
+  - Maybe ...
+  correct_answer: The decision is ...
+- key: open_questions
+  type: multiple_choice
+  prompt: Which phrase introduces open questions?
+  options:
+  - The open questions are ...
+  - No questions.
+  - Stop.
+  correct_answer: The open questions are ...
+- key: to_summarize
+  type: multiple_choice
+  prompt: What does "to summarize" mean?
+  options:
+  - untuk merangkum
+  - untuk menolak
+  - untuk membeli
+  correct_answer: untuk merangkum

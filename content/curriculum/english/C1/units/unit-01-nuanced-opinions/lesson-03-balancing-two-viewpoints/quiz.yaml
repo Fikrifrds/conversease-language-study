@@ -1,0 +1,25 @@
+questions:
+- key: on_balance
+  type: multiple_choice
+  prompt: What does "on balance" mean?
+  options:
+  - secara keseluruhan setelah menimbang
+  - tanpa alasan
+  - secara acak
+  correct_answer: secara keseluruhan setelah menimbang
+- key: both_sides
+  type: multiple_choice
+  prompt: Which pair correctly balances viewpoints?
+  options:
+  - On the one hand... On the other hand...
+  - Because... because...
+  - No.
+  correct_answer: On the one hand... On the other hand...
+- key: while_true
+  type: multiple_choice
+  prompt: Which phrase acknowledges a point then pivots?
+  options:
+  - While it's true that ..., ...
+  - You are wrong.
+  - Stop.
+  correct_answer: While it's true that ..., ...

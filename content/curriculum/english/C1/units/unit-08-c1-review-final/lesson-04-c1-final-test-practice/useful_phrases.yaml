@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Let me frame this: we need reliability and stakeholder confidence before scaling.'
+  meaning_id: 'Biar aku frame: kita butuh reliability dan kepercayaan stakeholder sebelum scale.'
+  usage_note: A strong C1 framing sentence.
+  common_mistake: Do not over-explain; keep the frame to one line.
+- phrase: On balance, I support the rollout, but only after we validate pilot metrics.
+  meaning_id: Secara keseluruhan aku dukung rollout, tapi hanya setelah metrik pilot tervalidasi.
+  usage_note: A nuanced position with a clear condition.
+  common_mistake: Do not remove the condition; it's the nuance.
+- phrase: The decision is to run a two-week pilot.
+  meaning_id: 'Keputusannya: jalankan pilot dua minggu.'
+  usage_note: Decision labeling for clarity.
+  common_mistake: Do not mix decisions and open questions.
+- phrase: The open questions are resourcing and change management.
+  meaning_id: 'Pertanyaan terbukanya: resourcing dan change management.'
+  usage_note: Label open questions explicitly.
+  common_mistake: Do not hide uncertainty; name it.
+- phrase: 'Next steps are: I''ll send a one-page summary today, and we''ll align tomorrow.'
+  meaning_id: 'Next steps: aku kirim ringkasan satu halaman hari ini, lalu kita align besok.'
+  usage_note: Time-boxed next steps.
+  common_mistake: Do not omit timing; add today/tomorrow/by Friday.

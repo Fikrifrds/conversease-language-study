@@ -1,0 +1,42 @@
+scenario_key: b1_travel_delay
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. Are you on your way?
+learner_goal: Explain you're late, give a reason, and share an estimated arrival time.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. Are you on your way?
+  hint: Jawab + bilang kamu telat.
+  sample_answer: Yes, but I'm running a bit late.
+  focus: State you are late
+  expected_keywords:
+  - running
+  - late
+- coach: What happened?
+  hint: Sebutkan transport kamu delayed.
+  sample_answer: My train is delayed because of a signal problem.
+  focus: Give a reason
+  expected_keywords:
+  - delayed
+  - because
+- coach: When will you arrive?
+  hint: Kasih estimasi in about + time.
+  sample_answer: I'll be there in about 20 minutes.
+  focus: Give an estimate
+  expected_keywords:
+  - in about
+  - minutes
+target_phrases:
+- I'm running a bit late.
+- My ... is delayed.
+- I'll be there in about ... minutes.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

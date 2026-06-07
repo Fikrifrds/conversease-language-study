@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate the lesson array in apps/web/lib/data.ts from the curriculum files.
 
-The curriculum under content/curriculum/english/A1 is the SINGLE SOURCE OF TRUTH
+The curriculum under content/curriculum/english/<LEVEL> is the SINGLE SOURCE OF TRUTH
 for lesson content. The web app renders a static lessons array from
 apps/web/lib/data.ts; this script regenerates that array (and only that array,
 between the // <generated:lessons> markers) so the two never drift.
@@ -26,13 +26,22 @@ DATA_TS = REPO_ROOT / "apps" / "web" / "lib" / "data.ts"
 
 # Reuse the curriculum loader and dialogue parser from the API package.
 sys.path.insert(0, str(API_ROOT))
-from app.data.curriculum import load_a1_course, read_yaml  # noqa: E402
+from app.data.curriculum import load_course, read_yaml  # noqa: E402
 from app.services.audio_generation import (  # noqa: E402
     listening_script_to_dialogue_turns,
 )
 
 BEGIN_MARKER = "  // <generated:lessons>"
 END_MARKER = "  // </generated:lessons>"
+
+COURSES_BEGIN_MARKER = "  // <generated:courses>"
+COURSES_END_MARKER = "  // </generated:courses>"
+
+COACH_TURNS_BEGIN_MARKER = "  // <generated:coach_turns>"
+COACH_TURNS_END_MARKER = "  // </generated:coach_turns>"
+
+COACH_SCENARIOS_BEGIN_MARKER = "  // <generated:coach_scenarios>"
+COACH_SCENARIOS_END_MARKER = "  // </generated:coach_scenarios>"
 
 # Audio-only markers that must be stripped from displayed dialogue text.
 AUDIO_TAG_RE = re.compile(r"\((?:[a-z][a-z-]*)\)|<#\d+(?:\.\d+)?#>")
@@ -84,6 +93,19 @@ def extract_situation(lesson_md: Path) -> str:
     if not match:
         raise GeneratorError(f"No Situation section in {lesson_md}")
     rest = text[match.end():]
+    body = rest.split("\n##", 1)[0]
+    paragraph = next((p.strip() for p in body.split("\n\n") if p.strip()), "")
+    return paragraph.replace("\n", " ").strip()
+
+
+def extract_level_outcome(level_spec: Path) -> str:
+    if not level_spec.exists():
+        return ""
+    text = level_spec.read_text(encoding="utf-8")
+    match = re.search(r"^##\s+Level Outcome\s*$", text, re.MULTILINE)
+    if not match:
+        return ""
+    rest = text[match.end() :]
     body = rest.split("\n##", 1)[0]
     paragraph = next((p.strip() for p in body.split("\n\n") if p.strip()), "")
     return paragraph.replace("\n", " ").strip()
@@ -156,12 +178,81 @@ def build_lesson(unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
 
 
 def collect_lessons() -> list[dict[str, Any]]:
-    course = load_a1_course()
     lessons: list[dict[str, Any]] = []
-    for unit in course["units"]:
-        for lesson in unit["lessons"]:
-            lessons.append(build_lesson(unit["title"], lesson))
+    for level_code in ("A1", "A2", "B1", "B2", "C1"):
+        course = load_course(level_code=level_code)
+        for unit in course["units"]:
+            for lesson in unit["lessons"]:
+                lessons.append(build_lesson(unit["title"], lesson))
     return lessons
+
+
+def collect_courses() -> list[dict[str, Any]]:
+    courses: list[dict[str, Any]] = []
+    for level_code in ("A1", "A2", "B1", "B2", "C1"):
+        course = load_course(level_code=level_code)
+        if not course.get("units"):
+            continue
+        outcome = extract_level_outcome(
+            REPO_ROOT / "content" / "curriculum" / "english" / level_code / "LEVEL_SPEC.md"
+        )
+        courses.append(
+            {
+                "slug": course.get("course_slug") or "",
+                "level": level_code,
+                "title": course.get("course_title") or "",
+                "outcome": outcome,
+                "units": [
+                    {
+                        "title": unit["title"],
+                        "outcome": unit.get("outcome") or "",
+                        "progress": 0,
+                        "lessons": [
+                            {
+                                "slug": lesson["slug"],
+                                "title": lesson["title"],
+                                "status": lesson.get("status") or "",
+                                "minutes": int(lesson.get("estimated_minutes") or 0),
+                            }
+                            for lesson in unit.get("lessons", [])
+                        ],
+                    }
+                    for unit in course.get("units", [])
+                ],
+            }
+        )
+    return courses
+
+
+def collect_coach_turns() -> tuple[dict[str, list[dict[str, Any]]], dict[str, dict[str, Any]]]:
+    turns_by_slug: dict[str, list[dict[str, Any]]] = {}
+    scenario_by_slug: dict[str, dict[str, Any]] = {}
+    for level_code in ("A1", "A2", "B1", "B2", "C1"):
+        course = load_course(level_code=level_code)
+        for unit in course.get("units", []):
+            for lesson in unit.get("lessons", []):
+                roleplay = lesson.get("roleplay") or {}
+                turns = roleplay.get("turns")
+                if not isinstance(turns, list) or not turns:
+                    continue
+                scenario_by_slug[str(lesson["slug"])] = {
+                    "slug": str(lesson["slug"]),
+                    "label": str(lesson["title"]),
+                    "description": str(unit["title"]),
+                    "levelCode": str(roleplay.get("level_code") or level_code),
+                    "scenarioKey": str(roleplay.get("scenario_key") or ""),
+                    "mode": str(roleplay.get("mode") or "lesson_practice_coach"),
+                }
+                turns_by_slug[str(lesson["slug"])] = [
+                    {
+                        "coach": str(t.get("coach") or ""),
+                        "hint": str(t.get("hint") or ""),
+                        "sampleAnswer": str(t.get("sample_answer") or ""),
+                        "focus": str(t.get("focus") or ""),
+                    }
+                    for t in turns
+                ]
+    return turns_by_slug, scenario_by_slug
 
 
 def js_string(value: str) -> str:
@@ -212,26 +303,119 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
     return ",\n".join(blocks)
 
 
+def render_courses(courses: list[dict[str, Any]]) -> str:
+    blocks: list[str] = []
+    for course in courses:
+        lines = ["    {"]
+        lines.append(f"      slug: {js_string(course['slug'])},")
+        lines.append(f"      level: {js_string(course['level'])},")
+        lines.append(f"      title: {js_string(course['title'])},")
+        lines.append(f"      outcome: {js_string(course['outcome'])},")
+        lines.append("      units: [")
+        for unit in course["units"]:
+            lines.append("        {")
+            lines.append(f"          title: {js_string(unit['title'])},")
+            lines.append(f"          outcome: {js_string(unit['outcome'])},")
+            lines.append("          progress: 0,")
+            lines.append("          lessons: [")
+            for lesson in unit["lessons"]:
+                lines.append("            {")
+                lines.append(f"              slug: {js_string(lesson['slug'])},")
+                lines.append(f"              title: {js_string(lesson['title'])},")
+                lines.append(f"              status: {js_string(lesson['status'])},")
+                lines.append(f"              minutes: {int(lesson['minutes'])}")
+                lines.append("            },")
+            lines.append("          ]")
+            lines.append("        },")
+        lines.append("      ]")
+        lines.append("    }")
+        blocks.append("\n".join(lines))
+    return ",\n".join(blocks)
+
+
+def render_coach_turns(turns_by_slug: dict[str, list[dict[str, Any]]]) -> str:
+    blocks: list[str] = []
+    for slug in sorted(turns_by_slug):
+        lines = [f"  {js_string(slug)}: ["]
+        for turn in turns_by_slug[slug]:
+            lines.append(
+                f"    {{ coach: {js_string(turn['coach'])}, hint: {js_string(turn['hint'])}, "
+                f"sampleAnswer: {js_string(turn['sampleAnswer'])}, focus: {js_string(turn['focus'])} }},"
+            )
+        lines.append("  ],")
+        blocks.append("\n".join(lines))
+    return "\n".join(blocks)
+
+
+def render_coach_scenarios(scenario_by_slug: dict[str, dict[str, Any]]) -> str:
+    blocks: list[str] = []
+    for slug in sorted(scenario_by_slug):
+        scenario = scenario_by_slug[slug]
+        blocks.append(
+            "  { "
+            f"slug: {js_string(scenario['slug'])}, "
+            f"label: {js_string(scenario['label'])}, "
+            f"description: {js_string(scenario['description'])}, "
+            f"levelCode: {js_string(scenario['levelCode'])}, "
+            f"scenarioKey: {js_string(scenario['scenarioKey'])}, "
+            f"mode: {js_string(scenario['mode'])} "
+            "}"
+        )
+    return ",\n".join(blocks)
+
+
 def render_block(lessons: list[dict[str, Any]]) -> str:
     return f"{BEGIN_MARKER}\n{render_lessons(lessons)}\n{END_MARKER}"
 
 
-def splice_into_data_ts(existing: str, block: str) -> str:
-    if BEGIN_MARKER not in existing or END_MARKER not in existing:
+def splice_block(existing: str, begin_marker: str, end_marker: str, block: str) -> str:
+    if begin_marker not in existing or end_marker not in existing:
         raise GeneratorError(
-            "data.ts is missing the // <generated:lessons> ... // </generated:lessons> "
-            "markers. Add them around the lesson array before running the generator."
+            f"data.ts is missing the {begin_marker} ... {end_marker} markers."
         )
-    start = existing.index(BEGIN_MARKER)
-    end = existing.index(END_MARKER) + len(END_MARKER)
+    start = existing.index(begin_marker)
+    end = existing.index(end_marker) + len(end_marker)
     return existing[:start] + block + existing[end:]
+
+
+def render_courses_block(courses: list[dict[str, Any]]) -> str:
+    return f"{COURSES_BEGIN_MARKER}\n{render_courses(courses)}\n{COURSES_END_MARKER}"
+
+
+def render_coach_turns_block(turns_by_slug: dict[str, list[dict[str, Any]]]) -> str:
+    return f"{COACH_TURNS_BEGIN_MARKER}\n{render_coach_turns(turns_by_slug)}\n{COACH_TURNS_END_MARKER}"
+
+
+def render_coach_scenarios_block(scenario_by_slug: dict[str, dict[str, Any]]) -> str:
+    return f"{COACH_SCENARIOS_BEGIN_MARKER}\n{render_coach_scenarios(scenario_by_slug)}\n{COACH_SCENARIOS_END_MARKER}"
 
 
 def generate() -> str:
     """Return the full intended contents of data.ts (does not write)."""
     lessons = collect_lessons()
-    block = render_block(lessons)
-    return splice_into_data_ts(DATA_TS.read_text(encoding="utf-8"), block)
+    courses = collect_courses()
+    turns_by_slug, scenario_by_slug = collect_coach_turns()
+    existing = DATA_TS.read_text(encoding="utf-8")
+    existing = splice_block(existing, BEGIN_MARKER, END_MARKER, render_block(lessons))
+    existing = splice_block(
+        existing,
+        COURSES_BEGIN_MARKER,
+        COURSES_END_MARKER,
+        render_courses_block(courses),
+    )
+    existing = splice_block(
+        existing,
+        COACH_TURNS_BEGIN_MARKER,
+        COACH_TURNS_END_MARKER,
+        render_coach_turns_block(turns_by_slug),
+    )
+    existing = splice_block(
+        existing,
+        COACH_SCENARIOS_BEGIN_MARKER,
+        COACH_SCENARIOS_END_MARKER,
+        render_coach_scenarios_block(scenario_by_slug),
+    )
+    return existing
 
 
 def main() -> int:

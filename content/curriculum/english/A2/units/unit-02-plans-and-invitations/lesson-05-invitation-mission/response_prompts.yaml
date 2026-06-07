@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Invite your friend to grab coffee tomorrow.
+    target_response: Do you want to grab coffee tomorrow?
+    acceptable_variations:
+      - Do you want to grab coffee tomorrow?
+      - Do you want to grab coffee?
+  - prompt: Decline politely.
+    target_response: Sorry, I can't.
+    acceptable_variations:
+      - Sorry, I can't.
+      - Thanks, but I can't.
+  - prompt: Suggest a new day.
+    target_response: How about Saturday?
+    acceptable_variations:
+      - How about Saturday?
+      - How about Friday?

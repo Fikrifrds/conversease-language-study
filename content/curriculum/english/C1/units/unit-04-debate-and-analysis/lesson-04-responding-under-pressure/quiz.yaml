@@ -1,0 +1,25 @@
+questions:
+- key: let_me_be_clear
+  type: multiple_choice
+  prompt: Which phrase clarifies calmly under pressure?
+  options:
+  - 'Let me be clear: ...'
+  - You're wrong.
+  - No.
+  correct_answer: 'Let me be clear: ...'
+- key: key_point
+  type: multiple_choice
+  prompt: Which phrase refocuses on the main point?
+  options:
+  - The key point is ...
+  - Key points are many.
+  - Stop.
+  correct_answer: The key point is ...
+- key: doubled_meaning
+  type: multiple_choice
+  prompt: What does "doubled" mean?
+  options:
+  - naik dua kali lipat
+  - turun setengah
+  - tetap sama
+  correct_answer: naik dua kali lipat

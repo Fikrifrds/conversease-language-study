@@ -1,0 +1,40 @@
+scenario_key: a2_past_ask_activities
+mode: lesson_practice_coach
+level_code: A2
+opening_line: What did you do yesterday evening?
+learner_goal: Ask about past activities and answer with short past sentences.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What did you do yesterday evening?
+  hint: Jawab dengan 1-2 aktivitas (past).
+  sample_answer: I cooked dinner and listened to music.
+  focus: Answer with past activities
+  expected_keywords:
+  - cooked
+  - listened
+- coach: Nice. Did you cook at home?
+  hint: Jawab singkat.
+  sample_answer: Yes, I did.
+  focus: Short past answer
+  expected_keywords:
+  - did
+- coach: What did you cook?
+  hint: Sebutkan satu makanan.
+  sample_answer: I made fried rice.
+  focus: Answer follow-up
+  expected_keywords:
+  - made
+target_phrases:
+- What did you do yesterday evening?
+- Did you cook at home?
+- Yes, I did.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

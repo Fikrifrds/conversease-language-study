@@ -1,0 +1,21 @@
+phrases:
+- phrase: It sounds like timing and risk are the main concerns.
+  meaning_id: Kedengarannya concern utama timing dan risiko.
+  usage_note: Interpretation + focus.
+  common_mistake: Don't jump to solutions; interpret first.
+- phrase: 'Let me make sure I got this: ...'
+  meaning_id: 'Biar aku pastikan: ...'
+  usage_note: Summarize long turns.
+  common_mistake: Don't paraphrase incorrectly; keep it accurate.
+- phrase: The decision is to propose a phased rollout with clear metrics.
+  meaning_id: 'Keputusannya: usulkan rollout bertahap dengan metrik jelas.'
+  usage_note: Decision statement.
+  common_mistake: Don't mix decision and open questions.
+- phrase: When you say X, do you mean Y or Z?
+  meaning_id: Kalau bilang X, maksudnya Y atau Z?
+  usage_note: High-quality follow-up pattern.
+  common_mistake: Don't ask vague follow-ups; give two options.
+- phrase: 'Next steps are: ...'
+  meaning_id: 'Next steps adalah: ...'
+  usage_note: Close with concrete actions.
+  common_mistake: Don't end without next steps.

@@ -1,0 +1,25 @@
+questions:
+- key: mission_order
+  type: multiple_choice
+  prompt: Which order is correct for problem solving?
+  options:
+  - Problem -> impact -> solution -> next steps
+  - Greeting -> goodbye
+  - Price -> size -> color
+  correct_answer: Problem -> impact -> solution -> next steps
+- key: might_meaning
+  type: multiple_choice
+  prompt: What does "might" express?
+  options:
+  - kemungkinan
+  - kepastian
+  - masa lalu
+  correct_answer: kemungkinan
+- key: affect_meaning
+  type: multiple_choice
+  prompt: What does "affect" mean?
+  options:
+  - mempengaruhi
+  - membatalkan
+  - mengulang
+  correct_answer: mempengaruhi

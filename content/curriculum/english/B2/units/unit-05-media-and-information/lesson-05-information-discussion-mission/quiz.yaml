@@ -1,0 +1,25 @@
+questions:
+- key: mission_info_flow
+  type: multiple_choice
+  prompt: Which flow fits an information discussion?
+  options:
+  - Summary -> reliability -> viewpoint -> new information response
+  - Greeting -> goodbye
+  - Numbers -> colors
+  correct_answer: Summary -> reliability -> viewpoint -> new information response
+- key: not_sure_reliable
+  type: multiple_choice
+  prompt: Which sentence expresses doubt about a source?
+  options:
+  - I'm not sure it's reliable.
+  - It's always true.
+  - Share it now.
+  correct_answer: I'm not sure it's reliable.
+- key: changes_things_mission
+  type: multiple_choice
+  prompt: Which phrase reacts to new information?
+  options:
+  - That changes things.
+  - That's irrelevant.
+  - Stop.
+  correct_answer: That changes things.

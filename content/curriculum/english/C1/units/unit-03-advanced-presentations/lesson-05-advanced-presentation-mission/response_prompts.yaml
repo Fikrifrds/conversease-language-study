@@ -1,0 +1,16 @@
+prompts:
+- prompt: Frame the presentation and define the term.
+  target_response: Today I'd like to walk you through the proposal and why it matters. By 'modular architecture', I mean independent components.
+  acceptable_variations:
+  - Today I'd like to walk you through the proposal and why it matters. By 'modular architecture', I mean independent components.
+  - Today I'd like to outline the proposal and why it matters. By 'modular design', I mean independent components.
+- prompt: Answer a challenging question calmly.
+  target_response: 'That''s a fair question. The short answer is: it''s manageable if we pilot first and monitor closely.'
+  acceptable_variations:
+  - 'That''s a fair question. The short answer is: it''s manageable if we pilot first and monitor closely.'
+  - 'That''s a fair question. The short answer is: yes, with a pilot and monitoring.'
+- prompt: Close with summary and next steps.
+  target_response: 'In short, the benefits outweigh the risks if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review it by Friday.'
+  acceptable_variations:
+  - 'In short, the benefits outweigh the risks if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review it by Friday.'
+  - 'In short, the benefits outweigh the risks if we do a pilot. Next steps are: I''ll send the plan today, and you''ll review it tomorrow.'

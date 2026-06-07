@@ -1,0 +1,21 @@
+phrases:
+- phrase: To summarize, we agreed to keep scope limited to the core feature.
+  meaning_id: Kesimpulannya, kita sepakat scope dibatasi ke fitur utama.
+  usage_note: A clear meeting close sentence.
+  common_mistake: Do not summarize vaguely; mention the key decision.
+- phrase: 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
+  meaning_id: 'Action items-nya: aku update ticket, dan kamu konfirmasi handoff design.'
+  usage_note: Clear action items + owners.
+  common_mistake: Do not list actions without owners; assign who does what.
+- phrase: Jordan will review QA coverage.
+  meaning_id: Jordan akan review QA coverage.
+  usage_note: Assign another owner.
+  common_mistake: Do not say "Jordan reviewing"; use will review.
+- phrase: We'll check progress on Thursday.
+  meaning_id: Kita cek progress hari Kamis.
+  usage_note: Set the next checkpoint.
+  common_mistake: Do not forget the next checkpoint; set a day/time.
+- phrase: Thanks for summarizing.
+  meaning_id: Makasih sudah rangkum.
+  usage_note: A polite closing line.
+  common_mistake: No common mistake; keep it simple.

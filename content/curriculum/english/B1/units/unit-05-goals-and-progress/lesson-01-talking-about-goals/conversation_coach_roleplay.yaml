@@ -1,0 +1,42 @@
+scenario_key: b1_goals_talk_about_goal
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's your goal this month?
+learner_goal: State a goal, give a deadline, and explain why it matters.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your goal this month?
+  hint: 'Jawab dengan: My goal is to ...'
+  sample_answer: My goal is to speak more confidently.
+  focus: State the goal
+  expected_keywords:
+  - goal
+  - to
+- coach: By when?
+  hint: Gunakan by + waktu.
+  sample_answer: By the end of this month.
+  focus: State the deadline
+  expected_keywords:
+  - by
+  - end
+- coach: Why does it matter to you?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because I want to join meetings without feeling nervous.
+  focus: Give a reason
+  expected_keywords:
+  - because
+  - meetings
+target_phrases:
+- My goal is to ...
+- By the end of ...
+- Because I want to ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

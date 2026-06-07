@@ -1,0 +1,42 @@
+scenario_key: a2_past_where_you_went
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi! Did you go anywhere interesting yesterday?
+learner_goal: Say where you went and ask where the other person went.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi! Did you go anywhere interesting yesterday?
+  hint: Jawab, lalu bilang kamu pergi ke mana.
+  sample_answer: Yes, I went to the museum.
+  focus: Say where you went
+  expected_keywords:
+  - went
+  - to
+- coach: Oh nice. Where did you go after that?
+  hint: Sebutkan tempat kedua.
+  sample_answer: I went to a cafe near the river.
+  focus: Add another place
+  expected_keywords:
+  - went
+  - cafe
+- coach: Sounds relaxing. Where did you go?
+  hint: Balik tanya.
+  sample_answer: Where did you go?
+  focus: Ask back
+  expected_keywords:
+  - where
+  - did
+target_phrases:
+- Where did you go?
+- I went to the museum.
+- I stayed home.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

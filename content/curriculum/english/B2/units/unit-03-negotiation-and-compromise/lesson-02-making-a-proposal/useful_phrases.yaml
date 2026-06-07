@@ -1,0 +1,21 @@
+phrases:
+- phrase: I propose we do a small pilot first.
+  meaning_id: Aku usul kita coba pilot kecil dulu.
+  usage_note: A clear, formal proposal phrase.
+  common_mistake: Do not say "I propose to do"; use I propose we do.
+- phrase: How about we run it for two weeks?
+  meaning_id: Gimana kalau kita jalanin dua minggu?
+  usage_note: A friendly proposal.
+  common_mistake: Do not say "How about we runs"; use run.
+- phrase: Would that work for you?
+  meaning_id: Itu works buat kamu?
+  usage_note: Check agreement.
+  common_mistake: Do not say "Will that work" if you want a softer tone; would is softer.
+- phrase: Not necessarily.
+  meaning_id: Belum tentu.
+  usage_note: A professional way to disagree softly.
+  common_mistake: Do not say "No" too fast; use not necessarily if uncertain.
+- phrase: We can prepare in parallel.
+  meaning_id: Kita bisa siapin paralel.
+  usage_note: Offer a solution to reduce risk.
+  common_mistake: Do not say "prepare parallel"; use in parallel.

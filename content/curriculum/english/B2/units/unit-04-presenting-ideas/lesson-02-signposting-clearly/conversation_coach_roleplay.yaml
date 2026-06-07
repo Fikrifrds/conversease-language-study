@@ -1,0 +1,41 @@
+scenario_key: b2_present_signposting
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Can you guide us through your presentation?
+learner_goal: Use signposting to structure your presentation clearly.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start with a signposting opener.
+  hint: Let me walk you through...
+  sample_answer: Let me quickly walk you through the plan.
+  focus: Opener
+  expected_keywords:
+  - walk you through
+- coach: Use first, next, finally to outline your structure.
+  hint: First... Next... Finally...
+  sample_answer: First, I'll explain the problem. Next, I'll share the proposal. Finally, I'll outline next steps.
+  focus: Structure
+  expected_keywords:
+  - first
+  - next
+  - finally
+- coach: Wrap up with a short summary phrase.
+  hint: Let me summarize...
+  sample_answer: Let me summarize the key points in one sentence.
+  focus: Summary
+  expected_keywords:
+  - summarize
+target_phrases:
+- Let me walk you through ...
+- First, ... Next, ... Finally, ...
+- Let me summarize ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

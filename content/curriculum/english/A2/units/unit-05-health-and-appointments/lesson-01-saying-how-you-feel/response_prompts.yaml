@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you don't feel well.
+  target_response: I don't feel well.
+  acceptable_variations:
+  - I don't feel well.
+  - I don't feel good.
+- prompt: Say you have a headache.
+  target_response: I have a headache.
+  acceptable_variations:
+  - I have a headache.
+  - I have a bad headache.
+- prompt: Say you think you have a fever.
+  target_response: I think I have a fever.
+  acceptable_variations:
+  - I think I have a fever.
+  - I think I have a fever today.

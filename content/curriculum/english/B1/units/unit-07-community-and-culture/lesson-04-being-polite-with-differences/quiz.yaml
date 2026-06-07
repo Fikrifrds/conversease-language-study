@@ -1,0 +1,25 @@
+questions:
+- key: not_used_to
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - I'm not used to eating that early.
+  - I not used to eating that early.
+  - I'm not use to eating early.
+  correct_answer: I'm not used to eating that early.
+- key: judgment_tone
+  type: multiple_choice
+  prompt: Which reaction is polite?
+  options:
+  - That's interesting.
+  - That's weird.
+  - That's wrong.
+  correct_answer: That's interesting.
+- key: thanks_sharing
+  type: multiple_choice
+  prompt: Which sentence closes politely?
+  options:
+  - Thanks for sharing.
+  - Whatever.
+  - Stop.
+  correct_answer: Thanks for sharing.

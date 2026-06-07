@@ -1,0 +1,25 @@
+lesson_key: lesson-03-discussing-tradeoffs
+slug: discussing-tradeoffs
+title: Discussing Tradeoffs
+status: published
+estimated_minutes: 12
+conversation_situation: tradeoff_discussion
+conversation_goal: Discuss trade-offs between options, highlighting impact on cost, time, and risk.
+grammar_summary: Use The trade-off is... / If we optimize for..., we might... / On the other hand... to compare options clearly.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

@@ -1,0 +1,25 @@
+questions:
+- key: follows_phrase
+  type: multiple_choice
+  prompt: Which phrase challenges logic politely?
+  options:
+  - I'm not sure that follows.
+  - You're stupid.
+  - No.
+  correct_answer: I'm not sure that follows.
+- key: ask_evidence
+  type: multiple_choice
+  prompt: Which phrase asks for evidence?
+  options:
+  - What's the evidence for that claim?
+  - Prove it now.
+  - Stop.
+  correct_answer: What's the evidence for that claim?
+- key: another_explanation
+  type: multiple_choice
+  prompt: Which phrase suggests alternative explanations?
+  options:
+  - Could there be another explanation?
+  - No alternatives.
+  - Anyway.
+  correct_answer: Could there be another explanation?

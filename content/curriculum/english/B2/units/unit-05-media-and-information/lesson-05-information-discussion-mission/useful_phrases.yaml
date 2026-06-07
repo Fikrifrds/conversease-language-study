@@ -1,0 +1,21 @@
+phrases:
+- phrase: The article is about ... The main point is ...
+  meaning_id: Artikelnya tentang ... Poin utamanya ...
+  usage_note: A compact summary structure.
+  common_mistake: Do not over-explain; keep it to 2 sentences.
+- phrase: I'm not sure it's reliable because it doesn't cite data.
+  meaning_id: Aku nggak yakin reliable karena nggak nyantumin data.
+  usage_note: Reliability + reason.
+  common_mistake: Avoid personal attacks; focus on evidence.
+- phrase: From my perspective, ... The reason is ...
+  meaning_id: Dari perspektifku, ... Alasannya ...
+  usage_note: Viewpoint + reason.
+  common_mistake: Acknowledge another view if needed.
+- phrase: I wasn't aware of that. That changes things.
+  meaning_id: Aku belum tahu itu. Itu mengubah situasinya.
+  usage_note: Open reaction to new info.
+  common_mistake: Don't dismiss new info; accept it calmly.
+- phrase: Can you share the link so we can revise our conclusion?
+  meaning_id: Bisa share link-nya supaya kita bisa revisi kesimpulan?
+  usage_note: A clear next step request.
+  common_mistake: Ask for a concrete next step.

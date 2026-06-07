@@ -1,0 +1,25 @@
+questions:
+- key: which_prefer
+  type: multiple_choice
+  prompt: Which sentence asks about preference?
+  options:
+  - Which do you prefer?
+  - Where do you go?
+  - What did you do?
+  correct_answer: Which do you prefer?
+- key: cheaper_word
+  type: multiple_choice
+  prompt: Choose the correct comparative form.
+  options:
+  - cheaper
+  - more cheap
+  - cheapest
+  correct_answer: cheaper
+- key: but_usage
+  type: multiple_choice
+  prompt: Which word shows contrast?
+  options:
+  - but
+  - because
+  - so
+  correct_answer: but

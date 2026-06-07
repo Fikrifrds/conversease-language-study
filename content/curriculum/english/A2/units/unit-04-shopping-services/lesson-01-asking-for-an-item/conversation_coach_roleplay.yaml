@@ -1,0 +1,44 @@
+scenario_key: a2_shop_ask_for_item
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Can I help you?
+learner_goal: Ask for an item, specify the type, and confirm if it is available.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi. Can I help you?
+    hint: Jelaskan barang yang kamu cari.
+    sample_answer: Yes, please. I'm looking for a phone charger.
+    focus: Ask for an item
+    expected_keywords:
+      - i'm looking for
+      - charger
+  - coach: Sure. What kind?
+    hint: Sebutkan jenisnya dengan singkat.
+    sample_answer: A USB-C charger, please.
+    focus: Specify the type
+    expected_keywords:
+      - usb
+      - charger
+  - coach: Okay. Do you need a cable too?
+    hint: Jawab singkat, lalu konfirmasi ketersediaannya.
+    sample_answer: No, just the charger. Do you have it?
+    focus: Confirm availability
+    expected_keywords:
+      - do you have
+      - "?"
+
+target_phrases:
+  - I'm looking for a phone charger.
+  - Do you have it?
+  - What kind?
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,41 @@
+scenario_key: b2_negotiation_middle_ground
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We disagree. Can we find a compromise?
+learner_goal: Propose a compromise and confirm agreement.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We disagree. How can we move forward?
+  hint: Mulai dengan Maybe we can find a compromise.
+  sample_answer: Maybe we can find a compromise.
+  focus: Suggest compromise
+  expected_keywords:
+  - compromise
+- coach: Propose a middle-ground option.
+  hint: A compromise could be...
+  sample_answer: A compromise could be launching to 10% of users first.
+  focus: Propose middle ground
+  expected_keywords:
+  - could be
+  - users
+- coach: Ask for agreement with a condition.
+  hint: If we do X, can we agree on Y?
+  sample_answer: If we do a small rollout, can we agree on one extra day for testing?
+  focus: Confirm agreement
+  expected_keywords:
+  - if
+  - agree
+target_phrases:
+- Maybe we can...
+- A compromise could be...
+- Can we agree on ...?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

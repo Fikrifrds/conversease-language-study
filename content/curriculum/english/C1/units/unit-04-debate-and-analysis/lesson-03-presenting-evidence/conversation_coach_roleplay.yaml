@@ -1,0 +1,44 @@
+scenario_key: c1_presenting_evidence
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Do we have data to support this?
+learner_goal: Present evidence with sources and precision, then state implications carefully.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Do we have data to support this?
+  hint: Use According to...
+  sample_answer: According to the support dashboard, drop-offs increased after the redesign.
+  focus: Source
+  expected_keywords:
+  - according to
+  - dashboard
+- coach: So the redesign caused it?
+  hint: Clarify correlation vs causation.
+  sample_answer: To be precise, the data indicates correlation, not necessarily causation.
+  focus: Precision
+  expected_keywords:
+  - precise
+  - correlation
+  - causation
+- coach: Close with a careful implication and another source.
+  hint: This suggests... Another source shows...
+  sample_answer: This suggests we should investigate the checkout experience. Session recordings also show confusion on the verification step.
+  focus: Implication + triangulation
+  expected_keywords:
+  - suggests
+  - recordings
+  - confusion
+target_phrases:
+- According to ...
+- To be precise, ...
+- The data indicates ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

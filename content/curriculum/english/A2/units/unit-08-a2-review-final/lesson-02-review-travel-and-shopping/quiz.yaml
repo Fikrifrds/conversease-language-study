@@ -1,0 +1,25 @@
+questions:
+- key: location_question
+  type: multiple_choice
+  prompt: Which question asks for a location?
+  options:
+  - Where is platform 2?
+  - What time is it?
+  - How much is it?
+  correct_answer: Where is platform 2?
+- key: availability_question
+  type: multiple_choice
+  prompt: Which question asks about availability?
+  options:
+  - Do you have a phone charger?
+  - Where did you go?
+  - Why?
+  correct_answer: Do you have a phone charger?
+- key: meaning_platform
+  type: multiple_choice
+  prompt: What is "platform" in a train station?
+  options:
+  - peron
+  - tiket
+  - koper
+  correct_answer: peron

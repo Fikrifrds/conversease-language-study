@@ -1,0 +1,25 @@
+questions:
+- key: goal_deadline_review
+  type: multiple_choice
+  prompt: Which sentence includes a goal and a deadline?
+  options:
+  - My goal is to speak more confidently by the end of this month.
+  - My goal to speak more confidently.
+  - I spoke yesterday.
+  correct_answer: My goal is to speak more confidently by the end of this month.
+- key: been_practicing_review
+  type: multiple_choice
+  prompt: Which sentence shows an ongoing habit up to now?
+  options:
+  - I've been practicing every morning.
+  - I practice tomorrow.
+  - I practiced tomorrow.
+  correct_answer: I've been practicing every morning.
+- key: prefer_because_review
+  type: multiple_choice
+  prompt: Which sentence explains a preference with a reason?
+  options:
+  - I prefer Conversation Coach because it gives me feedback.
+  - I prefer because feedback.
+  - Prefer Conversation Coach.
+  correct_answer: I prefer Conversation Coach because it gives me feedback.

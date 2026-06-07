@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Answer: What did you think?'
+  target_response: I think it's really good.
+  acceptable_variations:
+  - I think it's really good.
+  - I think it's good.
+- prompt: Say the story is simple, but fun.
+  target_response: The story is simple, but fun.
+  acceptable_variations:
+  - The story is simple, but fun.
+  - It is simple, but fun.
+- prompt: Say you want to watch it too.
+  target_response: I want to watch it too.
+  acceptable_variations:
+  - I want to watch it too.
+  - I want to watch it.

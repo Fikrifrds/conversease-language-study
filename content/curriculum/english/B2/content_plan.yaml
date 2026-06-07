@@ -7,208 +7,208 @@ target_lesson_count: 40
 units:
   - unit_key: unit-01-clear-arguments
     title: Clear Arguments
-    status: planned
+    status: in_production
     main_conversation_outcome: Present and support an argument clearly in conversation.
     lessons:
       - lesson_key: lesson-01-stating-your-position
         slug: stating-your-position
         title: Stating Your Position
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-supporting-with-reasons
         slug: supporting-with-reasons
         title: Supporting With Reasons
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-using-examples
         slug: using-examples
         title: Using Examples
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-responding-to-counterpoints
         slug: responding-to-counterpoints
         title: Responding to Counterpoints
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-clear-argument-mission
         slug: clear-argument-mission
         title: Clear Argument Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-02-professional-meetings
     title: Professional Meetings
-    status: planned
+    status: in_production
     main_conversation_outcome: Participate actively and professionally in meetings.
     lessons:
       - lesson_key: lesson-01-opening-a-meeting-point
         slug: opening-a-meeting-point
         title: Opening a Meeting Point
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-clarifying-scope
         slug: clarifying-scope
         title: Clarifying Scope
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-giving-constructive-feedback
         slug: giving-constructive-feedback
         title: Giving Constructive Feedback
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-summarizing-decisions
         slug: summarizing-decisions
         title: Summarizing Decisions
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-meeting-participation-mission
         slug: meeting-participation-mission
         title: Meeting Participation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-03-negotiation-and-compromise
     title: Negotiation & Compromise
-    status: planned
+    status: in_production
     main_conversation_outcome: Negotiate simple professional outcomes and find compromise.
     lessons:
       - lesson_key: lesson-01-expressing-priorities
         slug: expressing-priorities
         title: Expressing Priorities
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-making-a-proposal
         slug: making-a-proposal
         title: Making a Proposal
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-handling-objections
         slug: handling-objections
         title: Handling Objections
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-finding-middle-ground
         slug: finding-middle-ground
         title: Finding Middle Ground
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-negotiation-mission
         slug: negotiation-mission
         title: Negotiation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-04-presenting-ideas
     title: Presenting Ideas
-    status: planned
+    status: in_production
     main_conversation_outcome: Present an idea and answer questions naturally.
     lessons:
       - lesson_key: lesson-01-structuring-a-short-presentation
         slug: structuring-a-short-presentation
         title: Structuring a Short Presentation
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-signposting-clearly
         slug: signposting-clearly
         title: Signposting Clearly
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-explaining-benefits-and-risks
         slug: explaining-benefits-and-risks
         title: Explaining Benefits and Risks
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-answering-questions
         slug: answering-questions
         title: Answering Questions
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-idea-presentation-mission
         slug: idea-presentation-mission
         title: Idea Presentation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-05-media-and-information
     title: Media & Information
-    status: planned
+    status: in_production
     main_conversation_outcome: Discuss information, sources, and viewpoints critically.
     lessons:
       - lesson_key: lesson-01-summarizing-an-article
         slug: summarizing-an-article
         title: Summarizing an Article
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-discussing-reliable-sources
         slug: discussing-reliable-sources
         title: Discussing Reliable Sources
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-explaining-a-viewpoint
         slug: explaining-a-viewpoint
         title: Explaining a Viewpoint
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-responding-to-new-information
         slug: responding-to-new-information
         title: Responding to New Information
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-information-discussion-mission
         slug: information-discussion-mission
         title: Information Discussion Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-06-customer-and-client-communication
     title: Customer & Client Communication
-    status: planned
+    status: in_production
     main_conversation_outcome: Handle client conversations with clarity, empathy, and professionalism.
     lessons:
       - lesson_key: lesson-01-understanding-client-needs
         slug: understanding-client-needs
         title: Understanding Client Needs
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-explaining-options
         slug: explaining-options
         title: Explaining Options
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-handling-concerns
         slug: handling-concerns
         title: Handling Concerns
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-confirming-next-steps
         slug: confirming-next-steps
         title: Confirming Next Steps
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-client-conversation-mission
         slug: client-conversation-mission
         title: Client Conversation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-07-complex-problem-solving
     title: Complex Problem Solving
-    status: planned
+    status: in_production
     main_conversation_outcome: Analyze a complex problem and discuss tradeoffs.
     lessons:
       - lesson_key: lesson-01-framing-the-problem
         slug: framing-the-problem
         title: Framing the Problem
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-explaining-causes
         slug: explaining-causes
         title: Explaining Causes
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-discussing-tradeoffs
         slug: discussing-tradeoffs
         title: Discussing Tradeoffs
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-recommending-a-solution
         slug: recommending-a-solution
         title: Recommending a Solution
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-problem-solving-discussion-mission
         slug: problem-solving-discussion-mission
         title: Problem Solving Discussion Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-08-b2-review-final
     title: B2 Review & Final Discussion
-    status: planned
+    status: in_production
     main_conversation_outcome: Use B2 discussion skills in professional and social contexts.
     lessons:
       - lesson_key: lesson-01-review-arguments-and-meetings
         slug: review-arguments-and-meetings
         title: Review Arguments and Meetings
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-review-negotiation-and-presenting
         slug: review-negotiation-and-presenting
         title: Review Negotiation and Presenting
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-review-information-and-clients
         slug: review-information-and-clients
         title: Review Information and Clients
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-b2-final-test-practice
         slug: b2-final-test-practice
         title: B2 Final Test Practice
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-b2-final-discussion
         slug: b2-final-discussion
         title: B2 Final Discussion
-        status: planned
+        status: implemented

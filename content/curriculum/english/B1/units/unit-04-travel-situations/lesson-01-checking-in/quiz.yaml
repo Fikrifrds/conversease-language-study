@@ -1,0 +1,25 @@
+questions:
+- key: check_in_phrase
+  type: multiple_choice
+  prompt: Which sentence is a polite check-in starter?
+  options:
+  - I'd like to check in.
+  - I check in now.
+  - Check in me.
+  correct_answer: I'd like to check in.
+- key: under_name
+  type: multiple_choice
+  prompt: What does "under Mina Kim" mean?
+  options:
+  - atas nama Mina Kim
+  - di bawah meja
+  - di dalam tas
+  correct_answer: atas nama Mina Kim
+- key: included_meaning
+  type: multiple_choice
+  prompt: What does "included" mean?
+  options:
+  - sudah termasuk
+  - ditunda
+  - dilarang
+  correct_answer: sudah termasuk

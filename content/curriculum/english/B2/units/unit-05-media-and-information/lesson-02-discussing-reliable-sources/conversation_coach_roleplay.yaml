@@ -1,0 +1,42 @@
+scenario_key: b2_info_reliable_sources
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I saw a claim online. Is it reliable?
+learner_goal: 'Discuss reliability: express doubt, give reasons, and suggest verification.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Is this source reliable?
+  hint: I'm not sure it's reliable.
+  sample_answer: I'm not sure that source is reliable.
+  focus: Express doubt
+  expected_keywords:
+  - not sure
+  - reliable
+- coach: Why not?
+  hint: Because it doesn't cite... / mention...
+  sample_answer: Because it doesn't cite data or mention the author.
+  focus: Give criteria
+  expected_keywords:
+  - doesn't
+  - cite
+- coach: What would you do next?
+  hint: I'd check ...
+  sample_answer: I'd check official reports or reputable news outlets before sharing.
+  focus: Suggest verification
+  expected_keywords:
+  - I'd check
+  - official
+target_phrases:
+- I'm not sure it's reliable.
+- Because it doesn't ...
+- I'd check ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,42 @@
+scenario_key: b2_problem_framing
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We have a complex issue to solve.
+learner_goal: Define the problem by aligning scope, success criteria, and constraints.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have a complex issue to solve.
+  hint: Mulai dengan ajak tim framing dulu.
+  sample_answer: Got it. Let's define the problem statement first.
+  focus: Frame first
+  expected_keywords:
+  - define
+  - problem
+- coach: Okay. What should we clarify first?
+  hint: Tanya scope.
+  sample_answer: Can we agree on the scope? Which area is affected?
+  focus: Scope
+  expected_keywords:
+  - scope
+  - affected
+- coach: How do we know we succeeded?
+  hint: Tanya success criteria.
+  sample_answer: What does success look like for the next four weeks?
+  focus: Success criteria
+  expected_keywords:
+  - success
+  - look like
+target_phrases:
+- Let's define the problem statement first.
+- Can we agree on the scope?
+- What does success look like?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

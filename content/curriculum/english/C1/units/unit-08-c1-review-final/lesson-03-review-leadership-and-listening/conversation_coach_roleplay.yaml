@@ -1,0 +1,43 @@
+scenario_key: c1_review_leadership_listening
+mode: lesson_practice_coach
+level_code: C1
+opening_line: The team seems hesitant, but they won't say it directly.
+learner_goal: Lead with listening and coaching questions, then align on next steps.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Mirror the concern.
+  hint: What I'm hearing is...
+  sample_answer: What I'm hearing is there's some concern under the surface.
+  focus: Mirror
+  expected_keywords:
+  - hearing
+  - concern
+- coach: Clarify what the concern means with two options.
+  hint: When you say X, do you mean Y or Z?
+  sample_answer: When you say 'worried about blame', do you mean fear of mistakes or fear of visibility?
+  focus: Clarify
+  expected_keywords:
+  - do you mean
+  - fear
+- coach: Ask for success criteria and close with next steps.
+  hint: What would success look like...? Next steps are...
+  sample_answer: 'What would success look like in the next two weeks? Next steps are: you''ll propose the pilot plan, and I''ll help align stakeholders tomorrow.'
+  focus: Criteria + next steps
+  expected_keywords:
+  - success
+  - next steps
+  - tomorrow
+target_phrases:
+- What I'm hearing is ...
+- When you say X, do you mean Y or Z?
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

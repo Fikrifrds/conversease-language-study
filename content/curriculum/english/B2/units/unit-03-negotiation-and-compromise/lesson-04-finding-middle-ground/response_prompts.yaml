@@ -1,0 +1,16 @@
+prompts:
+- prompt: Suggest finding a compromise.
+  target_response: Maybe we can find a compromise.
+  acceptable_variations:
+  - Maybe we can find a compromise.
+  - Maybe we can meet in the middle.
+- prompt: Propose a compromise.
+  target_response: A compromise could be a small rollout first.
+  acceptable_variations:
+  - A compromise could be a small rollout first.
+  - A compromise could be a two-week pilot.
+- prompt: Confirm agreement with a condition.
+  target_response: If we do a small rollout, can we agree on one extra day for testing?
+  acceptable_variations:
+  - If we do a small rollout, can we agree on one extra day for testing?
+  - If we reduce scope, can we agree to launch next week?

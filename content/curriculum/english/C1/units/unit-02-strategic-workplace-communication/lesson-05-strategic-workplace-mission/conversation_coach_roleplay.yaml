@@ -1,0 +1,44 @@
+scenario_key: c1_strategic_workplace_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We need to align priorities and deliver soon.
+learner_goal: Lead a strategic workplace conversation end-to-end with alignment, expectations, feedback, and risk management.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start by aligning priorities and constraints.
+  hint: To make sure we're aligned... top priority... biggest constraint...
+  sample_answer: To make sure we're aligned, what's your top priority and biggest constraint?
+  focus: Align
+  expected_keywords:
+  - aligned
+  - priority
+  - constraint
+- coach: Set realistic expectations and timeline with assumptions.
+  hint: What we can commit to is... assuming...
+  sample_answer: What we can commit to is a smaller release by next week, assuming no new blockers.
+  focus: Expectations
+  expected_keywords:
+  - commit
+  - assuming
+- coach: Communicate the main risk and mitigation steps.
+  hint: The main risk is... We can mitigate it by...
+  sample_answer: The main risk is incidents during rollout. We can mitigate it by time-boxing the rollout, adding monitoring, and having a rollback plan.
+  focus: Risk
+  expected_keywords:
+  - main risk
+  - mitigate
+  - rollback
+target_phrases:
+- To make sure we're aligned, ...
+- What we can commit to is ...
+- The main risk is ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

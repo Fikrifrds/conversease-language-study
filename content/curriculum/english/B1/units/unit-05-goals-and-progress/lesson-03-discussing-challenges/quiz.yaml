@@ -1,0 +1,25 @@
+questions:
+- key: biggest_challenge
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - The biggest challenge is staying consistent.
+  - The biggest challenge staying consistent.
+  - Biggest challenge is consistent.
+  correct_answer: The biggest challenge is staying consistent.
+- key: hard_to
+  type: multiple_choice
+  prompt: What does "It's hard to..." mean?
+  options:
+  - susah untuk...
+  - mudah untuk...
+  - wajib untuk...
+  correct_answer: susah untuk...
+- key: distracted_meaning
+  type: multiple_choice
+  prompt: What does "distracted" mean?
+  options:
+  - teralihkan
+  - termasuk
+  - terkunci
+  correct_answer: teralihkan

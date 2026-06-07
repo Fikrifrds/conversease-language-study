@@ -1,0 +1,16 @@
+prompts:
+- prompt: Describe your neighborhood.
+  target_response: I live in a quiet neighborhood.
+  acceptable_variations:
+  - I live in a quiet neighborhood.
+  - I live in a busy neighborhood.
+- prompt: Say what it's known for.
+  target_response: It's known for its food stalls.
+  acceptable_variations:
+  - It's known for its food stalls.
+  - It's known for its parks.
+- prompt: Say what you like and why.
+  target_response: I like it because it's convenient but still peaceful.
+  acceptable_variations:
+  - I like it because it's convenient but still peaceful.
+  - I like it because it's quiet and friendly.

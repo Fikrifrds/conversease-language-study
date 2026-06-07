@@ -1,0 +1,16 @@
+prompts:
+- prompt: Give a first reason.
+  target_response: One reason is it reduces bugs in production.
+  acceptable_variations:
+  - One reason is it reduces bugs in production.
+  - One reason is it saves time later.
+- prompt: Give a second reason.
+  target_response: Another reason is it speeds up releases.
+  acceptable_variations:
+  - Another reason is it speeds up releases.
+  - Another reason is it improves quality.
+- prompt: Acknowledge a concern and respond.
+  target_response: That's true, but it saves time later.
+  acceptable_variations:
+  - That's true, but it saves time later.
+  - That's true, but we can start small.

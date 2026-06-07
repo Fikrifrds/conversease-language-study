@@ -1,0 +1,87 @@
+level_code: A2
+title: A2 Level Conversation Test
+status: planned
+description: Final readiness test for everyday small talk, making simple plans, and talking about recent past activities.
+overall_threshold: 72
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 65
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a short everyday conversation and identify the key detail, the follow-up question, and the polite closing.
+      success_criteria:
+        - Understands the main topic of the conversation.
+        - Identifies one key detail (time, place, or plan).
+        - Recognizes a follow-up question and a natural closing.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 65
+    task:
+      type: roleplay_response
+      prompt: Keep a short small-talk conversation going by asking one follow-up question and responding with a polite reaction.
+      success_criteria:
+        - Starts naturally and stays on topic.
+        - Asks at least one follow-up question.
+        - Responds with a polite reaction and a short reason when needed.
+        - Closes politely.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 60
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read five A2 phrases aloud with clear stress and smooth linking.
+      success_criteria:
+        - Pronounces key words clearly enough to understand.
+        - Uses steady pacing without long pauses.
+        - Keeps intonation natural for simple questions and reactions.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 65
+    task:
+      type: phrase_selection
+      prompt: Select useful phrases for follow-up questions, reactions, and making simple plans.
+      success_criteria:
+        - Chooses context-appropriate A2 phrases.
+        - Avoids phrases that do not fit the situation.
+        - Can explain the Indonesian meaning clearly.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 65
+    task:
+      type: sentence_completion
+      prompt: Complete short sentences using common A2 patterns (simple past, be + adjective, and going to for plans).
+      success_criteria:
+        - Uses simple past for finished actions.
+        - Uses going to to talk about plans.
+        - Keeps sentences short and natural for conversation.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 58
+    task:
+      type: short_message_reading
+      prompt: Read a short message about weekend plans and answer simple comprehension questions.
+      success_criteria:
+        - Finds time and activity details in a short text.
+        - Understands the main intention (plan, invitation, or update).
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 58
+    task:
+      type: short_reply_writing
+      prompt: Write a short reply with a plan, a simple reason, and a polite closing.
+      success_criteria:
+        - Writes 3 to 5 clear A2 sentences.
+        - Includes time or plan details.
+        - Uses one simple reason and a polite closing.

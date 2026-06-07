@@ -1,0 +1,42 @@
+scenario_key: c1_balancing_viewpoints
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We need to choose between growth and stability.
+learner_goal: Balance two viewpoints and give a nuanced conclusion.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We need to choose between growth and stability.
+  hint: Mulai dengan on the one hand... on the other hand...
+  sample_answer: On the one hand, growth could unlock new revenue. On the other hand, stability reduces long-term risk.
+  focus: Balance
+  expected_keywords:
+  - on the one hand
+  - on the other hand
+- coach: Give a nuanced conclusion.
+  hint: While it's true... On balance...
+  sample_answer: While it's true that growth matters, the incident rate is concerning. On balance, I'd prioritize stability.
+  focus: Conclusion
+  expected_keywords:
+  - while it's true
+  - on balance
+- coach: Offer a compromise plan.
+  hint: Ring-fence a small budget...
+  sample_answer: I'd ring-fence a small budget for growth experiments while we focus on stability.
+  focus: Compromise
+  expected_keywords:
+  - ring-fence
+  - budget
+target_phrases:
+- On the one hand, ...
+- While it's true that ..., ...
+- On balance, ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

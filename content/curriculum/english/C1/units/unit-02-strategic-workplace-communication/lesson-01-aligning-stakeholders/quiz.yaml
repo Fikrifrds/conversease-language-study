@@ -1,0 +1,25 @@
+questions:
+- key: aligned_phrase
+  type: multiple_choice
+  prompt: Which phrase checks alignment?
+  options:
+  - To make sure we're aligned, ...
+  - Stop talking.
+  - Whatever.
+  correct_answer: To make sure we're aligned, ...
+- key: constraint_meaning
+  type: multiple_choice
+  prompt: What does "constraint" mean?
+  options:
+  - batasan/keterbatasan
+  - hadiah
+  - pilihan bebas
+  correct_answer: batasan/keterbatasan
+- key: agree_phrase
+  type: multiple_choice
+  prompt: Which phrase confirms agreement?
+  options:
+  - Can we agree that ...?
+  - You must agree.
+  - No.
+  correct_answer: Can we agree that ...?

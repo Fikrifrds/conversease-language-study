@@ -1,0 +1,25 @@
+questions:
+- key: frame_goal
+  type: multiple_choice
+  prompt: Which phrase frames the goal of a complex conversation?
+  options:
+  - 'Let me frame this: ...'
+  - No goal.
+  - Stop.
+  correct_answer: 'Let me frame this: ...'
+- key: hearing_phrase
+  type: multiple_choice
+  prompt: Which phrase catches implied meaning carefully?
+  options:
+  - What I'm hearing is ...
+  - You're afraid.
+  - No feelings.
+  correct_answer: What I'm hearing is ...
+- key: decision_phrase
+  type: multiple_choice
+  prompt: Which phrase states the decision explicitly?
+  options:
+  - The decision is ...
+  - Maybe we ...
+  - Not sure.
+  correct_answer: The decision is ...

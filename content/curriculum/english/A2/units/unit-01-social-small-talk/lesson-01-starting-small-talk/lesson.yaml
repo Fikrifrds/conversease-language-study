@@ -1,0 +1,25 @@
+lesson_key: lesson-01-starting-small-talk
+slug: starting-small-talk
+title: Starting Small Talk
+status: draft
+estimated_minutes: 10
+conversation_situation: starting_small_talk_at_work
+conversation_goal: Start a short small-talk conversation and keep it going with one follow-up question.
+grammar_summary: "Use How's + noun? to ask about someone, and use It was + adjective to talk about the weekend."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

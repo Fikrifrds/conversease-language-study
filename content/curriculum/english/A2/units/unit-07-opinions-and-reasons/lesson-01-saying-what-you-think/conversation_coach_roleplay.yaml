@@ -1,0 +1,41 @@
+scenario_key: a2_opinion_say_what_you_think
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Oh yeah? What did you think?
+learner_goal: Give a simple opinion and one short comment about a movie.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Oh yeah? What did you think?
+  hint: 'Kasih opini singkat: I think it''s + adjective.'
+  sample_answer: I think it's really good.
+  focus: Give an opinion
+  expected_keywords:
+  - i think
+  - it's
+- coach: What did you like about it?
+  hint: 'Sebutkan satu hal: story/actor/music.'
+  sample_answer: I liked the story. It was fun.
+  focus: Add a comment
+  expected_keywords:
+  - liked
+- coach: Would you recommend it?
+  hint: Jawab yes/no + alasan singkat.
+  sample_answer: Yes, I would. It is simple, but fun.
+  focus: Recommend with reason
+  expected_keywords:
+  - 'yes'
+  - but
+target_phrases:
+- I think it's really good.
+- The story is simple, but fun.
+- I want to watch it too.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

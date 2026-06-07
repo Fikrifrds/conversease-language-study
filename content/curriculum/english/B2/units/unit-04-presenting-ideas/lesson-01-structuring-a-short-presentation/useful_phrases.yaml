@@ -1,0 +1,21 @@
+phrases:
+- phrase: Today I'd like to share an idea to improve our onboarding.
+  meaning_id: Hari ini aku mau share ide untuk improve onboarding kita.
+  usage_note: A clear presentation opening.
+  common_mistake: Do not start with too much detail; open with today I'd like to.
+- phrase: The problem is new hires often feel lost.
+  meaning_id: Masalahnya orang baru sering bingung.
+  usage_note: A clear problem statement.
+  common_mistake: Do not say "The problem are"; use is.
+- phrase: My proposal is a simple checklist and a buddy system.
+  meaning_id: 'Proposal aku: checklist sederhana dan buddy system.'
+  usage_note: A concise proposal sentence.
+  common_mistake: Do not say "My proposal are"; use is.
+- phrase: 'Next steps are: draft it today, then pilot it.'
+  meaning_id: 'Next steps-nya: bikin draft hari ini, lalu pilot.'
+  usage_note: A strong, actionable close.
+  common_mistake: Do not end without next steps; include 1-2 actions.
+- phrase: What's the context?
+  meaning_id: Konteksnya apa?
+  usage_note: A common audience question.
+  common_mistake: Do not answer without context; give one sentence.

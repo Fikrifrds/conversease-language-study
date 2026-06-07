@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask a tactful preference question.
+  target_response: Would you mind if I ask how you prefer to receive feedback?
+  acceptable_variations:
+  - Would you mind if I ask how you prefer to receive feedback?
+  - Would you mind if I ask how you prefer to communicate updates?
+- prompt: Clarify with if it's okay.
+  target_response: If it's okay, could you clarify whether you want feedback in writing or in a call?
+  acceptable_variations:
+  - If it's okay, could you clarify whether you want feedback in writing or in a call?
+  - If it's okay, could you clarify whether you prefer email or a quick call?
+- prompt: Check understanding politely.
+  target_response: Just to make sure I understand, should we share concerns privately first?
+  acceptable_variations:
+  - Just to make sure I understand, should we share concerns privately first?
+  - Just to make sure I understand, should we align one-on-one first?

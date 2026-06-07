@@ -1,0 +1,25 @@
+questions:
+- key: mission_flow_present
+  type: multiple_choice
+  prompt: Which flow fits an idea presentation?
+  options:
+  - Structure -> signposting -> benefits/risks -> Q&A
+  - Greeting -> goodbye
+  - Numbers -> spelling
+  correct_answer: Structure -> signposting -> benefits/risks -> Q&A
+- key: signpost_count
+  type: multiple_choice
+  prompt: Which set is a clear 3-part signpost?
+  options:
+  - First / Next / Finally
+  - First / Because / However
+  - Maybe / Anyway / Never mind
+  correct_answer: First / Next / Finally
+- key: follow_up_best
+  type: multiple_choice
+  prompt: Which is the best professional response when unsure?
+  options:
+  - I'm not sure yet, but I can follow up by tomorrow.
+  - I don't know.
+  - No idea.
+  correct_answer: I'm not sure yet, but I can follow up by tomorrow.

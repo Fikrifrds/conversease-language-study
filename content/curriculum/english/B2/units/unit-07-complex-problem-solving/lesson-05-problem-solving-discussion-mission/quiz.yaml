@@ -1,0 +1,25 @@
+questions:
+- key: flow_order
+  type: multiple_choice
+  prompt: Which order fits a problem-solving discussion?
+  options:
+  - Frame problem -> causes -> trade-offs -> recommendation
+  - Recommendation -> frame problem -> greeting
+  - Colors -> numbers -> days
+  correct_answer: Frame problem -> causes -> trade-offs -> recommendation
+- key: possible_cause
+  type: multiple_choice
+  prompt: Which phrase suggests a cause carefully?
+  options:
+  - One possible cause is ...
+  - This is 100% the cause.
+  - No cause.
+  correct_answer: One possible cause is ...
+- key: mitigation_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces mitigation?
+  options:
+  - We can mitigate it by ...
+  - Mitigate with do.
+  - No risk.
+  correct_answer: We can mitigate it by ...

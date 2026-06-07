@@ -1,0 +1,25 @@
+lesson_key: lesson-05-travel-situation-mission
+slug: travel-situation-mission
+title: Travel Situation Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_travel_delay_check_in_and_help
+conversation_goal: 'Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.'
+grammar_summary: 'Combine travel patterns: I''m running late..., I''d like to check in..., Do you have any recommendations...?, Could you...?'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

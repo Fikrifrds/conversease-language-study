@@ -1,0 +1,25 @@
+lesson_key: lesson-01-opening-a-meeting-point
+slug: opening-a-meeting-point
+title: Opening a Meeting Point
+status: published
+estimated_minutes: 12
+conversation_situation: opening_meeting_point
+conversation_goal: Open a discussion point clearly, explain why it matters, and invite input.
+grammar_summary: Use I'd like to bring up... / The main point is... / I'd like to hear your thoughts to open a meeting point professionally.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

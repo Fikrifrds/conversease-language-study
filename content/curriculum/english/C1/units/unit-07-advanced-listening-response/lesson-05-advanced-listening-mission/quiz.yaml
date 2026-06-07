@@ -1,0 +1,25 @@
+questions:
+- key: implied_check
+  type: multiple_choice
+  prompt: Which phrase checks implied meaning politely?
+  options:
+  - Just to check, are you implying ...?
+  - You're implying ...
+  - No need.
+  correct_answer: Just to check, are you implying ...?
+- key: two_options
+  type: multiple_choice
+  prompt: Which follow-up clarifies meaning with two options?
+  options:
+  - When you say X, do you mean Y or Z?
+  - What do you mean?
+  - Stop.
+  correct_answer: When you say X, do you mean Y or Z?
+- key: close_next_steps
+  type: multiple_choice
+  prompt: Which phrase closes with action?
+  options:
+  - 'Next steps are: ...'
+  - No steps.
+  - Maybe later.
+  correct_answer: 'Next steps are: ...'

@@ -1,0 +1,25 @@
+questions:
+- key: for_example_use
+  type: multiple_choice
+  prompt: Which phrase introduces an example?
+  options:
+  - For example, ...
+  - However, ...
+  - Therefore, ...
+  correct_answer: For example, ...
+- key: such_as_use
+  type: multiple_choice
+  prompt: Which phrase introduces specific items?
+  options:
+  - such as
+  - because of
+  - even though
+  correct_answer: such as
+- key: didnt_know
+  type: multiple_choice
+  prompt: Choose the correct past sentence.
+  options:
+  - They didn't know.
+  - They didn't knew.
+  - They don't knew.
+  correct_answer: They didn't know.

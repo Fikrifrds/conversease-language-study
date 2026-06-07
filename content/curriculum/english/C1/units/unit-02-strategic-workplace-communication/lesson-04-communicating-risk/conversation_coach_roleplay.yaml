@@ -1,0 +1,43 @@
+scenario_key: c1_communicating_risk
+mode: lesson_practice_coach
+level_code: C1
+opening_line: What risks should we highlight to leadership?
+learner_goal: Communicate risk with likelihood, impact, and mitigation.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What risks should we highlight to leadership?
+  hint: Start with The main risk is...
+  sample_answer: The main risk is a spike in incidents during rollout.
+  focus: Risk
+  expected_keywords:
+  - main risk
+  - incidents
+- coach: How likely is that?
+  hint: There's a reasonable chance... given...
+  sample_answer: There's a reasonable chance, given recent instability.
+  focus: Likelihood
+  expected_keywords:
+  - reasonable chance
+  - given
+- coach: Close with mitigation steps.
+  hint: We can mitigate it by... monitoring... rollback...
+  sample_answer: We can mitigate it by time-boxing the rollout, adding monitoring, and having a rollback plan.
+  focus: Mitigation
+  expected_keywords:
+  - mitigate
+  - monitoring
+  - rollback
+target_phrases:
+- The main risk is ...
+- There's a reasonable chance ...
+- We can mitigate it by ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

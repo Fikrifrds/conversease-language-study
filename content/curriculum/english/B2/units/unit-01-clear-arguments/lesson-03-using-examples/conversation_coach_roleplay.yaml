@@ -1,0 +1,42 @@
+scenario_key: b2_argument_examples
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Convince me with an example.
+learner_goal: Use an example to support your point and connect it to a clear suggestion.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Why should onboarding be more structured?
+  hint: Because... + For example...
+  sample_answer: Because new hires need clarity. For example, last quarter three new joiners felt lost in week one.
+  focus: Use an example
+  expected_keywords:
+  - because
+  - for example
+- coach: What's the impact?
+  hint: Gunakan so untuk dampak.
+  sample_answer: So they kept asking in multiple channels and it slowed the team down.
+  focus: Explain impact
+  expected_keywords:
+  - so
+  - kept
+- coach: Give a specific suggestion.
+  hint: Gunakan such as...
+  sample_answer: Such as pairing each new hire with one mentor for two weeks.
+  focus: Give specific suggestion
+  expected_keywords:
+  - such as
+  - mentor
+target_phrases:
+- For example, ...
+- '..., so ...'
+- Such as ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

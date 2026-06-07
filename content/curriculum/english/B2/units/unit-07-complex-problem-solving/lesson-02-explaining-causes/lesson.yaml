@@ -1,0 +1,25 @@
+lesson_key: lesson-02-explaining-causes
+slug: explaining-causes
+title: Explaining Causes
+status: published
+estimated_minutes: 12
+conversation_situation: root_cause_discussion
+conversation_goal: Explain possible causes using evidence language and clarify what data supports each cause.
+grammar_summary: Use One possible cause is... / Based on the data... / It might be due to... to discuss root causes calmly.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

@@ -1,0 +1,43 @@
+scenario_key: b1_preference_reach_agreement
+mode: lesson_practice_coach
+level_code: B1
+opening_line: We need to decide. What do you suggest?
+learner_goal: Suggest a plan, respond to a concern, and confirm the agreement.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We need to decide. What do you suggest?
+  hint: Usul dengan How about we...
+  sample_answer: How about we go with the cheaper one tonight?
+  focus: Make a suggestion
+  expected_keywords:
+  - how about
+  - cheaper
+- coach: I'm okay with that, but I'm worried it's crowded.
+  hint: Tanggapi concern pakai might + so let's...
+  sample_answer: It might be, so let's go early.
+  focus: Respond to concern
+  expected_keywords:
+  - might
+  - so
+  - let's
+- coach: Great. Confirm the agreement.
+  hint: 'Konfirmasi: So we agree on ...?'
+  sample_answer: Great. So we agree on Noodle House at 6:30?
+  focus: Confirm agreement
+  expected_keywords:
+  - agree
+  - at
+target_phrases:
+- How about we ...?
+- That works for me.
+- So we agree on ...?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

@@ -1,0 +1,25 @@
+lesson_key: lesson-04-responding-to-new-information
+slug: responding-to-new-information
+title: Responding to New Information
+status: published
+estimated_minutes: 12
+conversation_situation: responding_to_new_information
+conversation_goal: Respond to new information, update your opinion, and ask a follow-up question.
+grammar_summary: Use I wasn't aware of that / That changes things / I'd like to understand... to respond thoughtfully.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

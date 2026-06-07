@@ -1,0 +1,41 @@
+scenario_key: b1_problem_suggest_solution
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Any ideas to fix it?
+learner_goal: Suggest a solution with could/should and give a reason.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Any ideas to fix it?
+  hint: Kasih saran dengan could.
+  sample_answer: We could roll back the update.
+  focus: Suggest a solution
+  expected_keywords:
+  - could
+  - roll
+- coach: Why?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because rollback is quick and low risk.
+  focus: Give a reason
+  expected_keywords:
+  - because
+- coach: How can we prevent it next time?
+  hint: Gunakan should + so.
+  sample_answer: We should add a quick test so it doesn't happen again.
+  focus: Preventive step
+  expected_keywords:
+  - should
+  - so
+target_phrases:
+- We could ...
+- Because ...
+- We should ... so ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

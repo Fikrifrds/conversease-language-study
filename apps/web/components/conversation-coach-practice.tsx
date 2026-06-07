@@ -19,6 +19,7 @@ import {
 } from "@/lib/practice-storage";
 import { useVoiceRecorder } from "@/lib/use-voice-recorder";
 import { VoiceWaveform } from "@/components/voice-waveform";
+import { coachScenarioBySlug, coachTurnsByLessonSlug as generatedCoachTurnsByLessonSlug } from "@/lib/data";
 
 type CoachTurn = {
   coach: string;
@@ -1016,6 +1017,11 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
   ]
 };
 
+const mergedTurnsByLessonSlug: Record<string, CoachTurn[]> = {
+  ...turnsByLessonSlug,
+  ...generatedCoachTurnsByLessonSlug
+};
+
 const maxRecordingSeconds = 30;
 
 function clampScore(score: number) {
@@ -1138,7 +1144,7 @@ export function ConversationCoachPractice({
   lessonSlug = "saying-hello-and-goodbye",
   storageKey
 }: ConversationCoachPracticeProps) {
-  const activeTurns = turnsByLessonSlug[lessonSlug] ?? defaultTurns;
+  const activeTurns = mergedTurnsByLessonSlug[lessonSlug] ?? defaultTurns;
   const effectiveStorageKey = storageKey ?? `${defaultPracticeStorageKey}.${lessonSlug}`;
   const [messages, setMessages] = useState<ChatMessage[]>([{ role: "coach", text: activeTurns[0].coach }]);
   const [sessionId, setSessionId] = useState<string | null>(null);
@@ -1252,7 +1258,7 @@ export function ConversationCoachPractice({
 
     try {
       if (!activeSessionId) {
-        const session = await createConversationSession(lessonSlug);
+        const session = await createConversationSession(lessonSlug, coachScenarioBySlug[lessonSlug]);
         activeSessionId = session.sessionId;
         setSessionId(session.sessionId);
       }
@@ -1300,7 +1306,7 @@ export function ConversationCoachPractice({
 
     try {
       if (!activeSessionId) {
-        const session = await createConversationSession(lessonSlug);
+        const session = await createConversationSession(lessonSlug, coachScenarioBySlug[lessonSlug]);
         activeSessionId = session.sessionId;
         setSessionId(session.sessionId);
       }
@@ -1354,7 +1360,7 @@ export function ConversationCoachPractice({
 
     try {
       await resetLatestPractice(lessonSlug);
-      const session = await createConversationSession(lessonSlug);
+      const session = await createConversationSession(lessonSlug, coachScenarioBySlug[lessonSlug]);
       setSessionId(session.sessionId);
       setMessages([{ role: "coach", text: session.firstCoachMessage }]);
       setSyncStatus("synced");

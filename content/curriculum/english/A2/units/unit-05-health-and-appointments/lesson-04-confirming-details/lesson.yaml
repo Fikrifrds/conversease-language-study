@@ -1,0 +1,25 @@
+lesson_key: lesson-04-confirming-details
+slug: confirming-details
+title: Confirming Details
+status: published
+estimated_minutes: 10
+conversation_situation: confirming_an_appointment_details
+conversation_goal: Confirm the appointment date, time, and name details.
+grammar_summary: "Use Let me confirm... / So it's on... at... to repeat details and avoid mistakes."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

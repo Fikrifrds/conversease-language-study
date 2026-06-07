@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your core claim.
+  target_response: The core claim is that modularization will improve delivery speed.
+  acceptable_variations:
+  - The core claim is that modularization will improve delivery speed.
+  - The core claim is that this approach will reduce cycle time.
+- prompt: Use evidence language with suggests.
+  target_response: The evidence suggests teams ship faster when ownership is clear.
+  acceptable_variations:
+  - The evidence suggests teams ship faster when ownership is clear.
+  - The evidence suggests this reduces coordination overhead.
+- prompt: Address a concern with mitigation.
+  target_response: A common concern is fragmentation. That said, shared standards can mitigate it.
+  acceptable_variations:
+  - A common concern is fragmentation. That said, shared standards can mitigate it.
+  - A common concern is complexity. That said, clear documentation can mitigate it.

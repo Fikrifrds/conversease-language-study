@@ -1,0 +1,25 @@
+questions:
+- key: signposting_order
+  type: multiple_choice
+  prompt: Which order is best for a structured answer?
+  options:
+  - Position -> evidence -> trade-off -> recommendation -> next steps
+  - Jokes -> evidence -> goodbye
+  - Trade-off -> colors -> position
+  correct_answer: Position -> evidence -> trade-off -> recommendation -> next steps
+- key: rollout_meaning
+  type: multiple_choice
+  prompt: What does "rollout" mean?
+  options:
+  - peluncuran/penerapan
+  - istirahat
+  - harga
+  correct_answer: peluncuran/penerapan
+- key: pilot_meaning
+  type: multiple_choice
+  prompt: What does "pilot" mean in projects?
+  options:
+  - uji coba kecil
+  - pilot pesawat
+  - warna
+  correct_answer: uji coba kecil

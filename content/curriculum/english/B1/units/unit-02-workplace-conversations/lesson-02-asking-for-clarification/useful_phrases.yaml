@@ -1,0 +1,21 @@
+phrases:
+- phrase: Could you clarify which sections you need?
+  meaning_id: Boleh jelasin bagian mana yang kamu butuh?
+  usage_note: A polite clarification question.
+  common_mistake: Do not say "Can you explain me".
+- phrase: Just to confirm, you want the latest numbers too, right?
+  meaning_id: Sekadar memastikan, kamu juga mau angka terbaru, ya?
+  usage_note: Confirm details to avoid mistakes.
+  common_mistake: Do not add too many confirmations; keep it short.
+- phrase: Do you mean the summary or the full report?
+  meaning_id: Maksudnya ringkasan atau report lengkap?
+  usage_note: Do you mean helps clarify meaning.
+  common_mistake: Do not say "You mean?" without context.
+- phrase: Got it.
+  meaning_id: Oke, paham.
+  usage_note: A natural confirmation of understanding.
+  common_mistake: Do not overuse it for every sentence.
+- phrase: I'll send it by Thursday afternoon.
+  meaning_id: Aku kirim paling lambat Kamis sore.
+  usage_note: By + time means deadline.
+  common_mistake: Do not say "until Thursday"; use by for deadlines.

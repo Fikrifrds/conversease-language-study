@@ -1,0 +1,25 @@
+questions:
+- key: make_sure_got_this
+  type: multiple_choice
+  prompt: Which phrase summarizes a long turn before responding?
+  options:
+  - 'Let me make sure I got this: ...'
+  - No summary.
+  - Stop.
+  correct_answer: 'Let me make sure I got this: ...'
+- key: key_points
+  type: multiple_choice
+  prompt: Which phrase introduces key points?
+  options:
+  - 'The key points are: ...'
+  - Key point is none.
+  - Whatever.
+  correct_answer: 'The key points are: ...'
+- key: respond_structure
+  type: multiple_choice
+  prompt: Which phrase signals a structured response?
+  options:
+  - 'Here''s how I''d respond: ...'
+  - I respond now.
+  - No response.
+  correct_answer: 'Here''s how I''d respond: ...'

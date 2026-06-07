@@ -1,0 +1,25 @@
+lesson_key: lesson-05-personal-story-mission
+slug: personal-story-mission
+title: Personal Story Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_tell_a_connected_personal_story
+conversation_goal: Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.
+grammar_summary: Combine scene setting + sequence words + feelings to tell a connected story (4 to 6 sentences).
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

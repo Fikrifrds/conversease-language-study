@@ -109,8 +109,12 @@ async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
 }
 
 export async function createConversationSession(
-  lessonSlug = defaultLessonSlug
+  lessonSlug = defaultLessonSlug,
+  config?: { levelCode?: string; scenarioKey?: string; mode?: string }
 ): Promise<{ sessionId: string; firstCoachMessage: string }> {
+  const levelCode = config?.levelCode ?? "A1";
+  const scenarioKey = config?.scenarioKey ?? "greeting_intro";
+  const mode = config?.mode ?? "lesson_practice_coach";
   const response = await requestJson<
     ApiResponse<{
       id: string;
@@ -120,9 +124,9 @@ export async function createConversationSession(
     method: "POST",
     body: JSON.stringify({
       language_code: "en",
-      level_code: "A1",
-      mode: "lesson_practice_coach",
-      scenario_key: "greeting_intro",
+      level_code: levelCode,
+      mode,
+      scenario_key: scenarioKey,
       lesson_slug: lessonSlug
     })
   });

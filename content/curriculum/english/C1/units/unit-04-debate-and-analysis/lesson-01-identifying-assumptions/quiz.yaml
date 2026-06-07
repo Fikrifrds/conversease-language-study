@@ -1,0 +1,25 @@
+questions:
+- key: assuming_phrase
+  type: multiple_choice
+  prompt: Which phrase surfaces an assumption politely?
+  options:
+  - It seems you're assuming ...
+  - You're wrong.
+  - No.
+  correct_answer: It seems you're assuming ...
+- key: premise_meaning
+  type: multiple_choice
+  prompt: What does "premise" mean?
+  options:
+  - dasar argumen/asumsi awal
+  - kesimpulan
+  - judul
+  correct_answer: dasar argumen/asumsi awal
+- key: if_true
+  type: multiple_choice
+  prompt: Which phrase draws an implication?
+  options:
+  - If that's true, then ...
+  - Whatever.
+  - Stop.
+  correct_answer: If that's true, then ...

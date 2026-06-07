@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Say you are a bit tired.
+    target_response: I'm a bit tired today.
+    acceptable_variations:
+      - I'm a bit tired today.
+      - I'm a little tired today.
+  - prompt: Check if someone is okay.
+    target_response: Are you okay?
+    acceptable_variations:
+      - Are you okay?
+      - Are you alright?
+  - prompt: React politely to bad news.
+    target_response: I'm sorry to hear that.
+    acceptable_variations:
+      - I'm sorry to hear that.

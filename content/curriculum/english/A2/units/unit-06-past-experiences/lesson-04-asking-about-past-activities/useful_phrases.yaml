@@ -1,0 +1,21 @@
+phrases:
+- phrase: What did you do yesterday evening?
+  meaning_id: Kamu ngapain tadi malam?
+  usage_note: A clear past question.
+  common_mistake: Do not say "What you did".
+- phrase: Did you cook at home?
+  meaning_id: Kamu masak di rumah?
+  usage_note: Did + base verb for past yes/no questions.
+  common_mistake: Do not say "Did you cooked".
+- phrase: Yes, I did.
+  meaning_id: Iya.
+  usage_note: A short past answer.
+  common_mistake: Do not answer "Yes, I do" for yesterday.
+- phrase: What did you cook?
+  meaning_id: Kamu masak apa?
+  usage_note: A follow-up question.
+  common_mistake: Do not say "What you cooked?".
+- phrase: I made fried rice.
+  meaning_id: Aku bikin nasi goreng.
+  usage_note: Made is past of make.
+  common_mistake: Do not say "I make" for yesterday.

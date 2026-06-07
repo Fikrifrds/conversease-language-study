@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'd like to bring up the timeline for the next release.
+  meaning_id: Aku mau bahas timeline untuk release berikutnya.
+  usage_note: Open a topic professionally.
+  common_mistake: Don't ramble; state the topic clearly.
+- phrase: Just to clarify, does this include the admin dashboard changes?
+  meaning_id: Biar jelas, termasuk perubahan admin dashboard juga?
+  usage_note: Clarify inclusion.
+  common_mistake: Do not forget does in a question.
+- phrase: Overall it was clear. I noticed the introduction was a bit long.
+  meaning_id: Secara umum jelas. Aku perhatiin pembukaannya agak panjang.
+  usage_note: Constructive feedback structure.
+  common_mistake: Don't sound personal; focus on the content.
+- phrase: So the key message came late.
+  meaning_id: Jadi pesan utamanya telat muncul.
+  usage_note: Explain impact with so.
+  common_mistake: Don't blame; just describe the impact.
+- phrase: 'To summarize, action items are: I''ll..., you''ll...'
+  meaning_id: 'Kesimpulannya, action items-nya: aku..., kamu...'
+  usage_note: Close the meeting clearly.
+  common_mistake: Always assign owners for action items.

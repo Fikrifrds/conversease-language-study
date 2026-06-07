@@ -1,0 +1,41 @@
+scenario_key: b1_culture_asking_about_culture
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Ask me about a tradition in my country.
+learner_goal: Ask politely about culture and respond with a short explanation.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Ask me about a tradition in my country.
+  hint: Gunakan What is it like...?
+  sample_answer: What is it like in your country during big holidays?
+  focus: Ask culture question
+  expected_keywords:
+  - what is it like
+  - country
+- coach: Answer about your country in 1-2 sentences.
+  hint: 'Jawab: It''s ... but ... Mostly ...'
+  sample_answer: It's busy, but it's also meaningful. Mostly we share food and spend time together.
+  focus: Explain briefly
+  expected_keywords:
+  - busy
+  - mostly
+- coach: Ask back politely.
+  hint: Gunakan How about in your country?
+  sample_answer: How about in your country?
+  focus: Ask back
+  expected_keywords:
+  - how about
+target_phrases:
+- What is it like in your country?
+- It's ..., but ...
+- How about in your country?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

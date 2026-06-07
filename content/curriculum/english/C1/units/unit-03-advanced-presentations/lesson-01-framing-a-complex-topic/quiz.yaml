@@ -1,0 +1,25 @@
+questions:
+- key: walk_through
+  type: multiple_choice
+  prompt: Which phrase is a good presentation opener?
+  options:
+  - Today I'd like to walk you through ...
+  - Stop.
+  - No idea.
+  correct_answer: Today I'd like to walk you through ...
+- key: define_term
+  type: multiple_choice
+  prompt: Which phrase defines a term precisely?
+  options:
+  - By X, I mean ...
+  - X is cool.
+  - Whatever.
+  correct_answer: By X, I mean ...
+- key: purpose_phrase
+  type: multiple_choice
+  prompt: Which phrase states purpose clearly?
+  options:
+  - The purpose of this is to ...
+  - Purpose is ...ing.
+  - No purpose.
+  correct_answer: The purpose of this is to ...

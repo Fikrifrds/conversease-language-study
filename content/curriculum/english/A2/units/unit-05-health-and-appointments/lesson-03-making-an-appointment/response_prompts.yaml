@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you'd like to make an appointment.
+  target_response: I'd like to make an appointment.
+  acceptable_variations:
+  - I'd like to make an appointment.
+  - I'd like to book an appointment.
+- prompt: Ask if tomorrow afternoon is okay.
+  target_response: Is tomorrow afternoon okay?
+  acceptable_variations:
+  - Is tomorrow afternoon okay?
+  - Is tomorrow afternoon alright?
+- prompt: Accept the time 3:30 p.m.
+  target_response: Great. I'll take it.
+  acceptable_variations:
+  - Great. I'll take it.
+  - Okay, that works for me.

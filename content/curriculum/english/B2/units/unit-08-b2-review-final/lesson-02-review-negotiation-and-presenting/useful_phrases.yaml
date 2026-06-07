@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Here''s my proposal: we deliver a smaller scope next week.'
+  meaning_id: 'Ini proposal aku: kita deliver scope yang lebih kecil minggu depan.'
+  usage_note: A clear negotiation proposal.
+  common_mistake: Do not propose without scope; specify what is included.
+- phrase: The trade-off is speed versus completeness.
+  meaning_id: Trade-off-nya kecepatan versus kelengkapan.
+  usage_note: Explain trade-offs quickly.
+  common_mistake: Do not over-explain; one trade-off first.
+- phrase: Can we meet in the middle?
+  meaning_id: Bisa ketemu di tengah nggak?
+  usage_note: Invite compromise politely.
+  common_mistake: Do not sound aggressive; keep it neutral.
+- phrase: I'd recommend that compromise.
+  meaning_id: Aku rekomend kompromi itu.
+  usage_note: Recommendation language.
+  common_mistake: Do not say "I recommend you"; recommend the plan.
+- phrase: 'To summarize: top two features next week, the rest in two weeks.'
+  meaning_id: 'Singkatnya: dua fitur teratas minggu depan, sisanya dua minggu lagi.'
+  usage_note: Signposted close.
+  common_mistake: Do not add new scope in the summary.

@@ -1,0 +1,43 @@
+scenario_key: a2_shop_size_and_color
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Do you have this in black?
+learner_goal: Ask about color and size, then choose one option.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Sorry, we don't have black. We have blue and white.
+    hint: Tanya ukuran yang kamu butuhkan.
+    sample_answer: Okay. Do you have it in size M?
+    focus: Ask about size
+    expected_keywords:
+      - size
+      - "?"
+  - coach: Yes, size M is available.
+    hint: Pilih salah satu warna.
+    sample_answer: Great. I'll take the blue one.
+    focus: Choose an option
+    expected_keywords:
+      - i'll take
+      - blue
+  - coach: Sure.
+    hint: Tutup dengan sopan.
+    sample_answer: Thank you.
+    focus: Close politely
+    expected_keywords:
+      - thank
+
+target_phrases:
+  - Do you have this in black?
+  - Do you have it in size M?
+  - I'll take it.
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

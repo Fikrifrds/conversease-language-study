@@ -1,0 +1,25 @@
+questions:
+- key: pattern_invite
+  type: multiple_choice
+  prompt: Which sentence is an invitation?
+  options:
+  - Do you want to grab coffee this weekend?
+  - What did you do yesterday?
+  - I've had a cough for two days.
+  correct_answer: Do you want to grab coffee this weekend?
+- key: pattern_duration
+  type: multiple_choice
+  prompt: Which sentence shows duration?
+  options:
+  - I've had a cough for two days.
+  - I have a cough.
+  - I cough yesterday.
+  correct_answer: I've had a cough for two days.
+- key: pattern_opinion
+  type: multiple_choice
+  prompt: Which sentence is opinion + reason?
+  options:
+  - I think it's good because it's cheap.
+  - It is cheap.
+  - Because cheap.
+  correct_answer: I think it's good because it's cheap.

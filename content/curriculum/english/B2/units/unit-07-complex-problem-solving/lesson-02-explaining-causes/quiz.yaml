@@ -1,0 +1,25 @@
+questions:
+- key: possible_cause_phrase
+  type: multiple_choice
+  prompt: Which phrase sounds careful and professional when suggesting a cause?
+  options:
+  - One possible cause is ...
+  - This is the only cause.
+  - You are wrong.
+  correct_answer: One possible cause is ...
+- key: data_usage
+  type: multiple_choice
+  prompt: Which sentence uses data correctly?
+  options:
+  - Based on the data, ...
+  - Based on the datas, ...
+  - Based on data are ...
+  correct_answer: Based on the data, ...
+- key: due_to_meaning
+  type: multiple_choice
+  prompt: What does "due to" mean?
+  options:
+  - karena/disebabkan oleh
+  - sebaliknya
+  - akhirnya
+  correct_answer: karena/disebabkan oleh

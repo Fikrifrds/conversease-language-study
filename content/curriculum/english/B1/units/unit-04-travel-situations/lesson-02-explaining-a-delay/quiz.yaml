@@ -1,0 +1,25 @@
+questions:
+- key: running_late_meaning
+  type: multiple_choice
+  prompt: What does "running late" mean?
+  options:
+  - telat
+  - lebih cepat
+  - sedang liburan
+  correct_answer: telat
+- key: delayed_meaning
+  type: multiple_choice
+  prompt: What does "delayed" mean?
+  options:
+  - tertunda
+  - termasuk
+  - terkunci
+  correct_answer: tertunda
+- key: in_about_usage
+  type: multiple_choice
+  prompt: Which sentence gives an estimate?
+  options:
+  - I'll be there in about 20 minutes.
+  - I'm there now.
+  - I was there yesterday.
+  correct_answer: I'll be there in about 20 minutes.

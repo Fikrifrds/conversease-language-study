@@ -1,0 +1,25 @@
+phrases:
+  - phrase: I'm a bit tired today.
+    meaning_id: Saya agak capek hari ini.
+    usage_note: Use a bit to sound softer and more natural.
+    common_mistake: Do not say "I bit tired".
+  - phrase: Are you okay?
+    meaning_id: Kamu tidak apa-apa?
+    usage_note: Use this to check if someone is fine.
+    common_mistake: Do not say "Are you ok?" too aggressively; keep a friendly tone.
+  - phrase: I didn't sleep well.
+    meaning_id: Saya kurang tidur.
+    usage_note: A simple way to explain why you are tired.
+    common_mistake: Do not say "I no sleep well".
+  - phrase: I'm sorry to hear that.
+    meaning_id: Saya ikut sedih dengarnya.
+    usage_note: A polite reaction to bad news or a small problem.
+    common_mistake: Do not say this for good news.
+  - phrase: That's great!
+    meaning_id: Keren!
+    usage_note: A positive reaction to good news.
+    common_mistake: Keep the intonation positive.
+  - phrase: Nice work.
+    meaning_id: Kerja bagus.
+    usage_note: Use this to compliment someone.
+    common_mistake: Do not say "Nice working" here.

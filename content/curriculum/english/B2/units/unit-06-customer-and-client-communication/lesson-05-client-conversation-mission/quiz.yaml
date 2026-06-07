@@ -1,0 +1,25 @@
+questions:
+- key: client_flow
+  type: multiple_choice
+  prompt: Which flow fits a client call?
+  options:
+  - Discovery -> options -> concerns -> next steps
+  - Greeting -> goodbye
+  - Numbers -> colors
+  correct_answer: Discovery -> options -> concerns -> next steps
+- key: mitigation_phrase_client
+  type: multiple_choice
+  prompt: Which phrase introduces mitigation?
+  options:
+  - To reduce the risk, we can ...
+  - To reduce, stop.
+  - No risk.
+  correct_answer: To reduce the risk, we can ...
+- key: next_steps_phrase_client
+  type: multiple_choice
+  prompt: Which phrase introduces follow-up actions?
+  options:
+  - Next steps are ...
+  - Whatever.
+  - No need.
+  correct_answer: Next steps are ...

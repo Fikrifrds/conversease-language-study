@@ -1,0 +1,25 @@
+lesson_key: lesson-03-handling-sensitive-feedback
+slug: handling-sensitive-feedback
+title: Handling Sensitive Feedback
+status: published
+estimated_minutes: 12
+conversation_situation: sensitive_feedback
+conversation_goal: Give sensitive feedback tactfully, focusing on impact and concrete next steps.
+grammar_summary: Use I wanted to flag... / The impact is... / I appreciate..., and... / Would you be open to... to give sensitive feedback.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

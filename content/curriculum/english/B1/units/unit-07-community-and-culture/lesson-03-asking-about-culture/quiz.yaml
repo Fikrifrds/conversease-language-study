@@ -1,0 +1,25 @@
+questions:
+- key: culture_question
+  type: multiple_choice
+  prompt: Which sentence is a respectful culture question?
+  options:
+  - What is it like in your country?
+  - Your country weird?
+  - Tell me now.
+  correct_answer: What is it like in your country?
+- key: mostly_meaning
+  type: multiple_choice
+  prompt: What does "mostly" mean?
+  options:
+  - kebanyakan
+  - selalu
+  - tidak pernah
+  correct_answer: kebanyakan
+- key: meaningful_meaning
+  type: multiple_choice
+  prompt: What does "meaningful" mean?
+  options:
+  - bermakna
+  - berbahaya
+  - membosankan
+  correct_answer: bermakna

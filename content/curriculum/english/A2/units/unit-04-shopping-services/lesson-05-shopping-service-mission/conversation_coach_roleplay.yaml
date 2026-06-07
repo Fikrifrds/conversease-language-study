@@ -1,0 +1,51 @@
+scenario_key: a2_shopping_mission_full
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Can I help you?
+learner_goal: Ask for an item, compare options, choose one, then ask for help finding another item.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi. Can I help you?
+    hint: Jelaskan barang yang kamu cari.
+    sample_answer: Yes, please. I'm looking for a USB-C charger.
+    focus: Ask for an item
+    expected_keywords:
+      - i'm looking for
+      - charger
+  - coach: Sure. We have this one and that one.
+    hint: Bandingkan dua opsi dengan pertanyaan.
+    sample_answer: Which one is cheaper?
+    focus: Compare options
+    expected_keywords:
+      - cheaper
+      - "?"
+  - coach: This one is cheaper.
+    hint: Pilih satu opsi dengan singkat.
+    sample_answer: Okay. I'll take this one.
+    focus: Choose an option
+    expected_keywords:
+      - i'll take
+  - coach: Anything else?
+    hint: Minta bantuan cari barang lain.
+    sample_answer: Yes. Could you help me? Where are the batteries?
+    focus: Request help
+    expected_keywords:
+      - could you help me
+      - where
+      - "?"
+
+target_phrases:
+  - I'm looking for a charger.
+  - Which one is cheaper?
+  - I'll take this one.
+  - Could you help me?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

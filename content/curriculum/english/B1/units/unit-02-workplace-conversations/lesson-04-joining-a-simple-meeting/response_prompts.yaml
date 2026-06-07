@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you would like to add one point.
+  target_response: I'd like to add one point about the schedule.
+  acceptable_variations:
+  - I'd like to add one point.
+  - I'd like to add one point about the schedule.
+- prompt: Make a suggestion (move deadline).
+  target_response: I suggest we move the deadline to Thursday.
+  acceptable_variations:
+  - I suggest we move the deadline to Thursday.
+  - I suggest we move the deadline earlier.
+- prompt: Ask for next steps.
+  target_response: What are the next steps?
+  acceptable_variations:
+  - What are the next steps?
+  - What should we do next?

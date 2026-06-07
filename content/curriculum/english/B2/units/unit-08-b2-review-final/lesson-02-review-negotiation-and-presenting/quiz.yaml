@@ -1,0 +1,25 @@
+questions:
+- key: proposal_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces a proposal?
+  options:
+  - 'Here''s my proposal: ...'
+  - Proposal is ...
+  - No plan.
+  correct_answer: 'Here''s my proposal: ...'
+- key: meet_middle
+  type: multiple_choice
+  prompt: Which phrase invites compromise?
+  options:
+  - Can we meet in the middle?
+  - Meet middle now.
+  - Stop.
+  correct_answer: Can we meet in the middle?
+- key: recommend_phrase
+  type: multiple_choice
+  prompt: Which phrase gives a recommendation politely?
+  options:
+  - I'd recommend ...
+  - You must ...
+  - Do it now.
+  correct_answer: I'd recommend ...

@@ -1,0 +1,21 @@
+phrases:
+- phrase: Let me quickly walk you through the plan.
+  meaning_id: Biar aku jelasin rencana ini secara singkat ya.
+  usage_note: A natural signposting opener.
+  common_mistake: Do not say "Let me explain quickly you"; use walk you through.
+- phrase: First, I'll explain the problem.
+  meaning_id: Pertama, aku jelasin masalahnya.
+  usage_note: Clear structure signpost.
+  common_mistake: Do not say "First I explaining"; use I'll explain.
+- phrase: Next, I'll share the proposal.
+  meaning_id: Berikutnya, aku share proposalnya.
+  usage_note: Moves to the next section.
+  common_mistake: Do not forget the comma pause; keep it clear.
+- phrase: Finally, I'll outline next steps.
+  meaning_id: Terakhir, aku jelasin next steps.
+  usage_note: Signals the closing part.
+  common_mistake: Do not say "Finally I will outlining"; use I'll outline.
+- phrase: Let me summarize.
+  meaning_id: Biar aku rangkum.
+  usage_note: A quick wrap-up phrase.
+  common_mistake: Do not say "Let me summary"; summarize is the verb.

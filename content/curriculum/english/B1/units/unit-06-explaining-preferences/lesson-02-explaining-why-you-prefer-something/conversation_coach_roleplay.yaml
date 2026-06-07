@@ -1,0 +1,41 @@
+scenario_key: b1_preference_explain_reason
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Which one do you prefer?
+learner_goal: State your preference and explain the main reason.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Which one do you prefer?
+  hint: Jawab dengan I prefer ...
+  sample_answer: I prefer the earlier flight.
+  focus: State preference
+  expected_keywords:
+  - prefer
+- coach: Why?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because it gives us more time in the afternoon.
+  focus: Explain reason
+  expected_keywords:
+  - because
+  - time
+- coach: What is the main reason?
+  hint: Gunakan The main reason is ...
+  sample_answer: The main reason is I don't want to arrive too late.
+  focus: State main reason
+  expected_keywords:
+  - main reason
+  - don't want
+target_phrases:
+- I prefer ...
+- Because ...
+- The main reason is ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

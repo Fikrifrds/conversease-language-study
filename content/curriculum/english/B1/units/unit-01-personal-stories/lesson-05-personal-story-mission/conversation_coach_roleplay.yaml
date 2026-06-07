@@ -1,0 +1,44 @@
+scenario_key: b1_story_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Tell me about something interesting that happened recently.
+learner_goal: Tell a connected story (4 to 6 sentences) and answer one follow-up question.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Tell me about something interesting that happened recently.
+  hint: 'Mulai dengan scene: time + place + who.'
+  sample_answer: Last weekend, I was in Bandung with my cousin.
+  focus: Start with scene
+  expected_keywords:
+  - last
+  - was
+  - with
+- coach: What happened?
+  hint: Ceritakan 2 event pakai first/then.
+  sample_answer: First, we explored the city. Then we got lost for a while.
+  focus: Tell events in order
+  expected_keywords:
+  - first
+  - then
+- coach: How did you feel?
+  hint: Sebutkan feeling + contrast (but).
+  sample_answer: I felt nervous, but after we asked for directions, I felt relieved.
+  focus: Describe feelings
+  expected_keywords:
+  - felt
+  - but
+  - relieved
+target_phrases:
+- Last weekend, I was...
+- First..., then...
+- I felt... but...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

@@ -1,0 +1,25 @@
+questions:
+- key: mission_skills
+  type: multiple_choice
+  prompt: Which skills are combined in this mission?
+  options:
+  - Delay explanation + check-in + recommendation + help request
+  - Weather report + math
+  - Job interview only
+  correct_answer: Delay explanation + check-in + recommendation + help request
+- key: no_worries_meaning
+  type: multiple_choice
+  prompt: What does "No worries" mean?
+  options:
+  - nggak apa-apa
+  - hati-hati
+  - jangan lupa
+  correct_answer: nggak apa-apa
+- key: conditional_if
+  type: multiple_choice
+  prompt: What does "If there's a problem" express?
+  options:
+  - kondisi/kalau
+  - masa lalu
+  - perintah
+  correct_answer: kondisi/kalau

@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'So, to summarize: ...'
+  meaning_id: 'Singkatnya: ...'
+  usage_note: Start a structured summary.
+  common_mistake: Do not ramble; start with summarize.
+- phrase: The decision is to propose a phased rollout with clear metrics.
+  meaning_id: 'Keputusannya: usulkan rollout bertahap dengan metrik jelas.'
+  usage_note: State the decision explicitly.
+  common_mistake: Do not mix decisions with opinions; label it as decision.
+- phrase: The open questions are around resourcing and internal alignment.
+  meaning_id: 'Pertanyaan terbuka: resourcing dan alignment internal.'
+  usage_note: Separate open questions from decisions.
+  common_mistake: Do not hide uncertainty; name open questions.
+- phrase: Just to confirm, I'll send the summary and ask if anything is missing.
+  meaning_id: Biar pasti, aku kirim rangkuman dan tanya apakah ada yang kurang.
+  usage_note: Confirm understanding with the group.
+  common_mistake: Do not assume completeness; ask.
+- phrase: Does that capture it accurately?
+  meaning_id: Itu sudah menangkapnya dengan akurat?
+  usage_note: A helpful confirmation question.
+  common_mistake: Do not avoid confirmation; ask directly.

@@ -1,0 +1,25 @@
+questions:
+- key: maybe_we_can
+  type: multiple_choice
+  prompt: Which phrase sounds neutral and collaborative?
+  options:
+  - Maybe we can find a compromise.
+  - You must accept.
+  - No discussion.
+  correct_answer: Maybe we can find a compromise.
+- key: compromise_could_be
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - A compromise could be a small rollout.
+  - A compromise could to be a rollout.
+  - A compromise be rollout.
+  correct_answer: A compromise could be a small rollout.
+- key: fair_meaning
+  type: multiple_choice
+  prompt: What does "That feels fair" mean?
+  options:
+  - itu terasa adil
+  - itu terasa mahal
+  - itu terasa sulit
+  correct_answer: itu terasa adil

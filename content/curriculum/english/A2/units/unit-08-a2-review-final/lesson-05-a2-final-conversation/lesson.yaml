@@ -1,0 +1,25 @@
+lesson_key: lesson-05-a2-final-conversation
+slug: a2-final-conversation
+title: A2 Final Conversation
+status: published
+estimated_minutes: 10
+conversation_situation: a2_final_conversation_mixed_real_life
+conversation_goal: Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).
+grammar_summary: 'Combine A2 skills naturally: small talk, past questions, invitations, opinions with because, and simple requests.'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

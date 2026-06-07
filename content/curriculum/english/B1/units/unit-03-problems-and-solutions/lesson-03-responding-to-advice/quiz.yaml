@@ -1,0 +1,25 @@
+questions:
+- key: sounds_good
+  type: multiple_choice
+  prompt: Which response accepts advice politely?
+  options:
+  - That sounds good.
+  - No.
+  - Whatever.
+  correct_answer: That sounds good.
+- key: youre_right
+  type: multiple_choice
+  prompt: Which sentence is correct?
+  options:
+  - You right.
+  - You're right.
+  - Your right.
+  correct_answer: You're right.
+- key: should_meaning
+  type: multiple_choice
+  prompt: What does "should" usually express?
+  options:
+  - saran
+  - masa lalu
+  - jumlah
+  correct_answer: saran

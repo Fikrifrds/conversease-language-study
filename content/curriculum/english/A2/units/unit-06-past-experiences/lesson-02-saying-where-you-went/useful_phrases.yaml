@@ -1,0 +1,21 @@
+phrases:
+- phrase: Where did you go?
+  meaning_id: Kamu ke mana?
+  usage_note: Ask where someone went in the past.
+  common_mistake: Do not say "Where you went?".
+- phrase: I went to the museum.
+  meaning_id: Aku pergi ke museum.
+  usage_note: A clear past sentence about a place.
+  common_mistake: Do not forget to in English.
+- phrase: Did you go anywhere interesting?
+  meaning_id: Kamu pergi ke tempat yang menarik?
+  usage_note: Anywhere + adjective is common in English.
+  common_mistake: Do not say "Did you went".
+- phrase: I stayed home.
+  meaning_id: Aku di rumah aja.
+  usage_note: Stayed is past of stay.
+  common_mistake: Do not say "I stay home yesterday".
+- phrase: Where did you go after that?
+  meaning_id: Setelah itu kamu ke mana?
+  usage_note: After that helps sequence events.
+  common_mistake: Do not say "Where did you went".

@@ -1,0 +1,21 @@
+phrases:
+- phrase: What seems to be the problem?
+  meaning_id: Keluhannya apa?
+  usage_note: A common clinic question.
+  common_mistake: Do not say "What is your sick".
+- phrase: I've had a sore throat since yesterday.
+  meaning_id: Saya sakit tenggorokan sejak kemarin.
+  usage_note: Use since for a starting time.
+  common_mistake: Do not use "from yesterday" here.
+- phrase: Do you have a fever?
+  meaning_id: Kamu demam?
+  usage_note: A yes/no question from staff.
+  common_mistake: Do not say "Have you fever?".
+- phrase: How long have you been coughing?
+  meaning_id: Sudah berapa lama kamu batuk?
+  usage_note: Ask about duration.
+  common_mistake: Do not say "How long you cough?".
+- phrase: Please wait here.
+  meaning_id: Tolong tunggu di sini.
+  usage_note: A polite instruction.
+  common_mistake: Do not forget please in formal contexts.

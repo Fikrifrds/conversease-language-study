@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your position clearly.
+  target_response: My position is that we should prioritize fixing the billing flow.
+  acceptable_variations:
+  - My position is that we should prioritize fixing the billing flow.
+  - My position is that we should fix billing before new features.
+- prompt: Give one main reason.
+  target_response: The main reason is it affects revenue and support workload.
+  acceptable_variations:
+  - The main reason is it affects revenue and support workload.
+  - The main reason is it reduces risk and saves time.
+- prompt: Close with summary and next steps.
+  target_response: 'To summarize, we focus on billing first. Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  acceptable_variations:
+  - 'To summarize, we focus on billing first. Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  - 'To summarize, we agree on option B. Next steps are: I''ll draft the doc today, and you''ll review it tomorrow.'

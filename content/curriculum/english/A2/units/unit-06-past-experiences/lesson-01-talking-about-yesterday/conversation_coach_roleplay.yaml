@@ -1,0 +1,42 @@
+scenario_key: a2_past_yesterday_chat
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hey, how was your day yesterday?
+learner_goal: Say where you went and what you did yesterday.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hey, how was your day yesterday?
+  hint: Jawab singkat (good/okay), lalu bilang kamu pergi ke mana.
+  sample_answer: It was good. I went to the mall.
+  focus: Answer and say where you went
+  expected_keywords:
+  - was
+  - went
+- coach: Nice. What did you do there?
+  hint: Sebutkan 1-2 aktivitas (past verb).
+  sample_answer: I bought a jacket and ate ramen.
+  focus: Describe past activities
+  expected_keywords:
+  - bought
+  - ate
+- coach: Did you go alone?
+  hint: Jawab dan sebutkan dengan siapa.
+  sample_answer: No, I went with my brother.
+  focus: Say who you went with
+  expected_keywords:
+  - with
+  - brother
+target_phrases:
+- I went to the mall.
+- What did you do there?
+- I watched a movie last night.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

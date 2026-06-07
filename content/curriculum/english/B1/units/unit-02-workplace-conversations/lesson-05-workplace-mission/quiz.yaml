@@ -1,0 +1,25 @@
+questions:
+- key: mission_pattern
+  type: multiple_choice
+  prompt: Which sequence fits a workplace mission?
+  options:
+  - Update progress -> clarify scope -> confirm deadline
+  - Order food -> pay -> leave
+  - Say hi -> leave
+  correct_answer: Update progress -> clarify scope -> confirm deadline
+- key: meaning_focus_on
+  type: multiple_choice
+  prompt: What does "focus on" mean?
+  options:
+  - fokus pada
+  - lupakan
+  - tutup
+  correct_answer: fokus pada
+- key: meaning_by
+  type: multiple_choice
+  prompt: What does "by Thursday afternoon" mean?
+  options:
+  - paling lambat Kamis sore
+  - mulai Kamis sore
+  - setiap Kamis sore
+  correct_answer: paling lambat Kamis sore

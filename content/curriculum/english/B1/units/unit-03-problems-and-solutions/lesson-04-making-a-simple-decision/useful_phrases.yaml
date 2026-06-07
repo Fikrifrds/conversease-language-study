@@ -1,0 +1,21 @@
+phrases:
+- phrase: We have two options.
+  meaning_id: Kita punya dua opsi.
+  usage_note: Start a decision discussion.
+  common_mistake: Do not say "We have two option" without -s.
+- phrase: I'd rather fix it now.
+  meaning_id: Aku lebih pilih beresin sekarang.
+  usage_note: A clear preference statement.
+  common_mistake: Do not say "I rather". Use I'd rather.
+- phrase: We could do a quick rollback.
+  meaning_id: Kita bisa rollback cepat.
+  usage_note: A practical compromise option.
+  common_mistake: Keep it simple; avoid long technical details.
+- phrase: That sounds reasonable.
+  meaning_id: Kedengarannya masuk akal.
+  usage_note: Agree to a plan politely.
+  common_mistake: Do not say "That sound reasonable"; add -s.
+- phrase: Let's do a full review tomorrow.
+  meaning_id: Besok kita review penuh.
+  usage_note: Make a clear next step plan.
+  common_mistake: Do not say "Let's to do".

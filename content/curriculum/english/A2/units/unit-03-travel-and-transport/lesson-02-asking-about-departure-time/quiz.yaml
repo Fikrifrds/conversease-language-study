@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_platform
+    type: multiple_choice
+    prompt: What does "platform" mean at a station?
+    options:
+      - Peron
+      - Tiket
+      - Koper
+    correct_answer: Peron
+  - key: departure_question
+    type: multiple_choice
+    prompt: Which question asks for a departure time?
+    options:
+      - What time does the train leave?
+      - Where are you from?
+      - Which movie?
+    correct_answer: What time does the train leave?
+  - key: duration_question
+    type: multiple_choice
+    prompt: Which question asks about duration?
+    options:
+      - How long is the trip?
+      - How much is it?
+      - Which platform?
+    correct_answer: How long is the trip?

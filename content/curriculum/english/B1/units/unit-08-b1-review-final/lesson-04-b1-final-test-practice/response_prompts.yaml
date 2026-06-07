@@ -1,0 +1,16 @@
+prompts:
+- prompt: Goal + deadline.
+  target_response: My goal is to speak more confidently by the end of this month.
+  acceptable_variations:
+  - My goal is to speak more confidently by the end of this month.
+  - My goal is to improve my speaking by next month.
+- prompt: Challenge + so (solution).
+  target_response: The biggest challenge is staying consistent, so I'm keeping sessions short.
+  acceptable_variations:
+  - The biggest challenge is staying consistent, so I'm keeping sessions short.
+  - The biggest challenge is finding time, so I practice in the morning.
+- prompt: Preference + because + but (concern).
+  target_response: I prefer option B because it's cheaper, but it might be crowded.
+  acceptable_variations:
+  - I prefer option B because it's cheaper, but it might be crowded.
+  - I prefer option A because it's nicer, but it's more expensive.

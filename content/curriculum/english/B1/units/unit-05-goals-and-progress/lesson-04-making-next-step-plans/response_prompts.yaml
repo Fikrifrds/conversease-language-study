@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your next step.
+  target_response: My next step is to practice with Conversation Coach.
+  acceptable_variations:
+  - My next step is to practice with Conversation Coach.
+  - My next step is to practice speaking.
+- prompt: Set a schedule (three times this week).
+  target_response: I'll do it three times this week.
+  acceptable_variations:
+  - I'll do it three times this week.
+  - I'll do it twice this week.
+- prompt: Confirm plan tone (keep it simple).
+  target_response: I'm going to keep it simple.
+  acceptable_variations:
+  - I'm going to keep it simple.
+  - I'll keep it simple.

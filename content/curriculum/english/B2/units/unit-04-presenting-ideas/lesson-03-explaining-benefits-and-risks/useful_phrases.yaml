@@ -1,0 +1,21 @@
+phrases:
+- phrase: The main benefit is faster onboarding for new hires.
+  meaning_id: Manfaat utamanya onboarding lebih cepat untuk orang baru.
+  usage_note: A clear benefit sentence.
+  common_mistake: Do not say "main benefit are"; use is.
+- phrase: Another benefit is fewer repeated questions.
+  meaning_id: Manfaat lainnya pertanyaan berulang jadi lebih sedikit.
+  usage_note: Add a second benefit clearly.
+  common_mistake: Do not say "another benefit are"; use is.
+- phrase: A key risk is that the checklist becomes outdated.
+  meaning_id: Risiko utamanya checklist jadi nggak update.
+  usage_note: A clear risk statement.
+  common_mistake: Do not say "risk is the checklist outdated" without that-clause; keep it clear.
+- phrase: To reduce the risk, we can review it monthly.
+  meaning_id: Untuk ngurangin risiko, kita bisa review tiap bulan.
+  usage_note: A mitigation plan sentence.
+  common_mistake: Do not say "reduce risk we can" without to; keep the structure.
+- phrase: We should assign an owner.
+  meaning_id: Kita perlu tentuin owner.
+  usage_note: A practical governance step.
+  common_mistake: Do not say "assign owner" without an/the in a full sentence.

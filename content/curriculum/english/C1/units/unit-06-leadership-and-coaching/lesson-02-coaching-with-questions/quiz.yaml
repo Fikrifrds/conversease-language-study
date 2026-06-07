@@ -1,0 +1,25 @@
+questions:
+- key: options_question
+  type: multiple_choice
+  prompt: Which question opens up options?
+  options:
+  - What options do you see?
+  - Do this now.
+  - No options.
+  correct_answer: What options do you see?
+- key: smallest_step
+  type: multiple_choice
+  prompt: Which question helps unblock someone with a concrete step?
+  options:
+  - What's the smallest next step?
+  - Think harder.
+  - Stop.
+  correct_answer: What's the smallest next step?
+- key: support_question
+  type: multiple_choice
+  prompt: Which question offers support while keeping ownership?
+  options:
+  - What support do you need from me?
+  - I'll do it.
+  - No support.
+  correct_answer: What support do you need from me?

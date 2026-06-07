@@ -1,0 +1,9 @@
+# Writing Support
+
+Write 6 lines:
+1. I propose we ...
+2. How about we ... for ... weeks?
+3. Then we can review ...
+4. Would that work for you?
+5. Not necessarily, because ...
+6. We can ... in parallel.

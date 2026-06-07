@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask a clarification question.
+  target_response: Just to clarify, who is the main user group?
+  acceptable_variations:
+  - Just to clarify, who is the main user group?
+  - Just to clarify, what is in scope?
+- prompt: Ask for more detail.
+  target_response: Could you share more about the biggest pain point?
+  acceptable_variations:
+  - Could you share more about the biggest pain point?
+  - Could you share more about your timeline?
+- prompt: Summarize the need and confirm.
+  target_response: So what you need is a clear starting point and a checklist, right?
+  acceptable_variations:
+  - So what you need is a clear starting point and a checklist, right?
+  - So what you need is faster onboarding, right?

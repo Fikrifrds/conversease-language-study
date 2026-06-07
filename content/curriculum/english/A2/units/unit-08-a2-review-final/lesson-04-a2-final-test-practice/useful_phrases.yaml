@@ -1,0 +1,21 @@
+phrases:
+- phrase: Do you want to grab coffee this weekend?
+  meaning_id: Kamu mau ngopi weekend ini?
+  usage_note: Invitation practice.
+  common_mistake: Do not say "Do you want grab" without to.
+- phrase: Do you have a USB-C charger?
+  meaning_id: Ada charger USB-C?
+  usage_note: Availability question.
+  common_mistake: Do not say "You have" without do.
+- phrase: I've had a cough for two days.
+  meaning_id: Saya batuk dua hari.
+  usage_note: Symptom + duration.
+  common_mistake: Do not say "I have a cough for two days" if you mean duration.
+- phrase: What did you do yesterday?
+  meaning_id: Kamu ngapain kemarin?
+  usage_note: Past question practice.
+  common_mistake: Do not say "What you did".
+- phrase: I think it's good because it's cheap.
+  meaning_id: Menurutku bagus karena murah.
+  usage_note: Opinion + reason practice.
+  common_mistake: Do not forget because + subject.

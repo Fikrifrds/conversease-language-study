@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask for help politely.
+    target_response: Could you help me?
+    acceptable_variations:
+      - Could you help me?
+      - Can you help me?
+  - prompt: Ask where the batteries are.
+    target_response: Can you show me where the batteries are?
+    acceptable_variations:
+      - Can you show me where the batteries are?
+      - Can you show me where the battery section is?
+  - prompt: Say thank you for the help.
+    target_response: Thank you for your help.
+    acceptable_variations:
+      - Thank you for your help.
+      - Thanks for your help.

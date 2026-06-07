@@ -1,0 +1,25 @@
+questions:
+- key: three_options
+  type: multiple_choice
+  prompt: Which phrase structures options clearly?
+  options:
+  - 'We have three options: ...'
+  - Options are many.
+  - No options.
+  correct_answer: 'We have three options: ...'
+- key: tradeoff
+  type: multiple_choice
+  prompt: Which phrase introduces trade-offs?
+  options:
+  - The trade-off is ...
+  - Trade is off.
+  - No trade-offs.
+  correct_answer: The trade-off is ...
+- key: agree_scope
+  type: multiple_choice
+  prompt: Which phrase confirms agreement on next steps?
+  options:
+  - Can we agree on ...?
+  - You must agree.
+  - Stop.
+  correct_answer: Can we agree on ...?

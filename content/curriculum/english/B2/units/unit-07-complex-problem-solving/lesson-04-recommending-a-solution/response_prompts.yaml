@@ -1,0 +1,16 @@
+prompts:
+- prompt: Recommend a solution linked to constraints.
+  target_response: Given these constraints, I'd recommend starting with a two-week pilot.
+  acceptable_variations:
+  - Given these constraints, I'd recommend starting with a two-week pilot.
+  - Given these constraints, I'd recommend a small rollout first.
+- prompt: Name a main risk.
+  target_response: The main risk is slower progress if we over-scope the pilot.
+  acceptable_variations:
+  - The main risk is slower progress if we over-scope the pilot.
+  - The main risk is delays if the scope expands.
+- prompt: Propose mitigation.
+  target_response: We can mitigate it by setting clear success metrics and a strict timeline.
+  acceptable_variations:
+  - We can mitigate it by setting clear success metrics and a strict timeline.
+  - We can mitigate it by keeping the scope small and time-boxed.

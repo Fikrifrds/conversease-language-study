@@ -1,0 +1,25 @@
+lesson_key: lesson-01-framing-a-complex-topic
+slug: framing-a-complex-topic
+title: Framing a Complex Topic
+status: published
+estimated_minutes: 12
+conversation_situation: framing_complex_topic
+conversation_goal: Frame a complex topic by setting context, defining terms, and stating the purpose clearly.
+grammar_summary: Use Today I'd like to... / By X, I mean... / The purpose of this is... to frame complex topics.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

@@ -1,0 +1,21 @@
+phrases:
+- phrase: How was your day yesterday?
+  meaning_id: Gimana harimu kemarin?
+  usage_note: Ask about someone's day.
+  common_mistake: Do not say "How your day was?".
+- phrase: I went to the mall.
+  meaning_id: Aku pergi ke mal.
+  usage_note: Use went for past of go.
+  common_mistake: Do not use "I go" for yesterday.
+- phrase: What did you do there?
+  meaning_id: Kamu ngapain di sana?
+  usage_note: Use did for past questions.
+  common_mistake: Do not say "What you did?".
+- phrase: I watched a movie last night.
+  meaning_id: Aku nonton film tadi malam.
+  usage_note: Last night is a common past time phrase.
+  common_mistake: Do not say "yesterday night" here.
+- phrase: Did you go alone?
+  meaning_id: Kamu pergi sendirian?
+  usage_note: A simple yes/no question in the past.
+  common_mistake: Do not answer with present tense in a past question.

@@ -1,0 +1,25 @@
+questions:
+- key: main_risk
+  type: multiple_choice
+  prompt: Which phrase introduces a main risk?
+  options:
+  - The main risk is ...
+  - Main risky is ...
+  - No risk.
+  correct_answer: The main risk is ...
+- key: reasonable_chance
+  type: multiple_choice
+  prompt: What does "a reasonable chance" mean?
+  options:
+  - kemungkinan yang cukup besar
+  - tidak mungkin
+  - pasti terjadi
+  correct_answer: kemungkinan yang cukup besar
+- key: mitigate_by
+  type: multiple_choice
+  prompt: Which sentence uses mitigate by correctly?
+  options:
+  - We can mitigate it by adding monitoring.
+  - We mitigate with add monitoring.
+  - Mitigate is monitoring.
+  correct_answer: We can mitigate it by adding monitoring.

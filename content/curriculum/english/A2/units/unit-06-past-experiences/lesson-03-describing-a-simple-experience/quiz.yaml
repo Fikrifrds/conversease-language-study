@@ -1,0 +1,25 @@
+questions:
+- key: past_try
+  type: multiple_choice
+  prompt: What is the past of "try"?
+  options:
+  - tryed
+  - tried
+  - tries
+  correct_answer: tried
+- key: it_was
+  type: multiple_choice
+  prompt: Which sentence is correct?
+  options:
+  - It was delicious.
+  - It delicious was.
+  - It delicious.
+  correct_answer: It was delicious.
+- key: liked_past
+  type: multiple_choice
+  prompt: Which sentence is in the past?
+  options:
+  - I like it.
+  - I liked it.
+  - I liking it.
+  correct_answer: I liked it.

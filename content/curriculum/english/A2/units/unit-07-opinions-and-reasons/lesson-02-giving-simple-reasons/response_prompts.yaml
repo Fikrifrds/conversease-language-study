@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Answer: Why do you like it?'
+  target_response: Because the coffee is good.
+  acceptable_variations:
+  - Because the coffee is good.
+  - Because it is relaxing.
+- prompt: Say you agree.
+  target_response: I agree.
+  acceptable_variations:
+  - I agree.
+  - Yeah, I agree.
+- prompt: Say you come here often because it is relaxing.
+  target_response: I come here often because it is relaxing.
+  acceptable_variations:
+  - I come here often because it is relaxing.
+  - I often come here because it is relaxing.

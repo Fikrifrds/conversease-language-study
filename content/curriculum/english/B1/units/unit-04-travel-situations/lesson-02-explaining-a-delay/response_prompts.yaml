@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you're running a bit late.
+  target_response: I'm running a bit late.
+  acceptable_variations:
+  - I'm running a bit late.
+  - Sorry, I'm running late.
+- prompt: Give the reason (train delayed).
+  target_response: My train is delayed.
+  acceptable_variations:
+  - My train is delayed.
+  - My flight is delayed.
+- prompt: Give an estimate (about 20 minutes).
+  target_response: I'll be there in about 20 minutes.
+  acceptable_variations:
+  - I'll be there in about 20 minutes.
+  - I'll be there in about 10 minutes.

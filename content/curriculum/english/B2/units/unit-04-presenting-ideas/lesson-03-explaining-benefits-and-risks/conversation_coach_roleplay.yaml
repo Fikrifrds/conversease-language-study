@@ -1,0 +1,40 @@
+scenario_key: b2_present_benefits_risks
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Explain benefits and risks of your idea.
+learner_goal: Explain benefits, a risk, and mitigation clearly.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What is the main benefit?
+  hint: The main benefit is ...
+  sample_answer: The main benefit is faster onboarding for new hires.
+  focus: Benefit 1
+  expected_keywords:
+  - main benefit
+- coach: Give another benefit.
+  hint: Another benefit is ...
+  sample_answer: Another benefit is fewer repeated questions for the team.
+  focus: Benefit 2
+  expected_keywords:
+  - another benefit
+- coach: Now mention a key risk and mitigation.
+  hint: A key risk is... To reduce the risk, we can...
+  sample_answer: A key risk is that it becomes outdated. To reduce the risk, we can review it monthly and assign an owner.
+  focus: Risk + mitigation
+  expected_keywords:
+  - risk
+  - reduce
+target_phrases:
+- The main benefit is ...
+- A key risk is ...
+- To reduce the risk, we can ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Let me frame this: we need reliable outcomes and stakeholder confidence before scaling.'
+  meaning_id: 'Biar aku frame: kita butuh outcome yang reliable dan kepercayaan stakeholder sebelum scale.'
+  usage_note: Frame complex conversations with the true goal.
+  common_mistake: Do not jump to tactics before framing goals.
+- phrase: On balance, we can move fast, but only if we limit scope and validate metrics.
+  meaning_id: Secara keseluruhan kita bisa cepat, tapi hanya kalau scope dibatasi dan metrik tervalidasi.
+  usage_note: Nuanced compromise with conditions.
+  common_mistake: Do not agree without conditions; state them clearly.
+- phrase: What I'm hearing is some fear of visibility.
+  meaning_id: 'Yang aku tangkap: ada rasa takut terlihat/ter-spotlight.'
+  usage_note: Catch implied meaning and name it carefully.
+  common_mistake: Do not accuse; keep it as what I'm hearing.
+- phrase: The decision is to run a two-week pilot with clear success criteria.
+  meaning_id: 'Keputusannya: jalankan pilot dua minggu dengan kriteria sukses yang jelas.'
+  usage_note: Decision language with criteria.
+  common_mistake: Do not end without a decision statement.
+- phrase: 'Next steps are: I''ll send a one-page plan today, and we''ll align stakeholders tomorrow.'
+  meaning_id: 'Next steps: aku kirim plan satu halaman hari ini, lalu kita align stakeholder besok.'
+  usage_note: Close with owners and timing.
+  common_mistake: Do not omit timing; add today/tomorrow/by Friday.

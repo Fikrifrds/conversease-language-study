@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask where they went yesterday.
+  target_response: Where did you go yesterday?
+  acceptable_variations:
+  - Where did you go yesterday?
+  - Where did you go?
+- prompt: Say you went to the museum.
+  target_response: I went to the museum.
+  acceptable_variations:
+  - I went to the museum.
+  - Yesterday, I went to the museum.
+- prompt: Say you stayed home.
+  target_response: I stayed home.
+  acceptable_variations:
+  - I stayed home.
+  - I stayed at home.

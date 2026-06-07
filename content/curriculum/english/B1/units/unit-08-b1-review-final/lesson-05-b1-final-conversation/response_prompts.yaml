@@ -1,0 +1,16 @@
+prompts:
+- prompt: Tell a progress story (at first... but then...).
+  target_response: At first it was hard, but then it got easier.
+  acceptable_variations:
+  - At first it was hard, but then it got easier.
+  - At first I was nervous, but then I felt better.
+- prompt: Share a problem + solution with so.
+  target_response: Sometimes I get distracted, so I leave my phone in another room.
+  acceptable_variations:
+  - Sometimes I get distracted, so I leave my phone in another room.
+  - Sometimes I'm tired, so I practice in the morning.
+- prompt: Preference + reason + next step.
+  target_response: I prefer Conversation Coach because it gives feedback. So my next step is to practice three times this week.
+  acceptable_variations:
+  - I prefer Conversation Coach because it gives feedback. So my next step is to practice three times this week.
+  - I prefer shadowing because it's simple. So my next step is to practice twice this week.

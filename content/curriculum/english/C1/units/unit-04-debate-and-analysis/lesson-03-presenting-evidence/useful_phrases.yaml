@@ -1,0 +1,21 @@
+phrases:
+- phrase: According to the support dashboard, drop-offs increased after the redesign.
+  meaning_id: Menurut dashboard support, drop-off naik setelah redesign.
+  usage_note: Reference a source explicitly.
+  common_mistake: Do not state numbers without citing where they come from.
+- phrase: To be precise, the data indicates correlation, not necessarily causation.
+  meaning_id: Biar presisi, data menunjukkan korelasi, belum tentu kausalitas.
+  usage_note: Distinguish correlation vs causation.
+  common_mistake: Do not claim causation from correlation.
+- phrase: This suggests we should investigate the checkout experience.
+  meaning_id: Ini menyarankan kita investigasi pengalaman checkout.
+  usage_note: Move from evidence to implication.
+  common_mistake: Do not jump to a solution; suggest investigation first.
+- phrase: Session recordings show confusion on the verification step.
+  meaning_id: Rekaman sesi menunjukkan kebingungan di step verifikasi.
+  usage_note: Use multiple sources to strengthen argument.
+  common_mistake: Do not rely on one source only; triangulate.
+- phrase: The data indicates ...
+  meaning_id: Data menunjukkan ...
+  usage_note: Neutral evidence phrasing.
+  common_mistake: Do not say data proves for complex issues; use indicates.

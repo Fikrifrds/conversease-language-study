@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'That brings me to the key trade-off: speed versus reliability.'
+  meaning_id: 'Itu membawa kita ke trade-off utama: speed versus reliability.'
+  usage_note: Transition to a new section.
+  common_mistake: Do not jump abruptly; use a transition phrase.
+- phrase: What's crucial here is that we set clear standards early.
+  meaning_id: Yang krusial adalah kita set standar yang jelas dari awal.
+  usage_note: Highlight the key point.
+  common_mistake: Do not bury the key point; signal it as crucial.
+- phrase: To put it differently, ...
+  meaning_id: Dengan kata lain, ...
+  usage_note: Restate a point for clarity.
+  common_mistake: Do not repeat the same words; rephrase.
+- phrase: With that in mind, I'd propose ...
+  meaning_id: Dengan itu, aku usul ...
+  usage_note: Link reasoning to a proposal.
+  common_mistake: Do not propose without linking; use with that in mind.
+- phrase: Let me connect this to ...
+  meaning_id: Biar aku hubungkan ini ke ...
+  usage_note: Another transition option.
+  common_mistake: Do not overuse; pick one transition per move.

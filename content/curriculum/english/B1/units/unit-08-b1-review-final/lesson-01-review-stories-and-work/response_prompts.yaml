@@ -1,0 +1,16 @@
+prompts:
+- prompt: Continue a story with then.
+  target_response: Then we grabbed street food.
+  acceptable_variations:
+  - Then we grabbed street food.
+  - Then we went home.
+- prompt: Give a work update (working on...).
+  target_response: I'm working on the release checklist.
+  acceptable_variations:
+  - I'm working on the release checklist.
+  - I'm working on a report.
+- prompt: Say the next step (Next, I'll...).
+  target_response: Next, I'll review the risks.
+  acceptable_variations:
+  - Next, I'll review the risks.
+  - Next, I'll share an update.

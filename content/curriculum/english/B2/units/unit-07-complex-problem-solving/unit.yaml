@@ -1,0 +1,11 @@
+unit_key: unit-07-complex-problem-solving
+level_code: B2
+title: Complex Problem Solving
+main_conversation_outcome: Analyze a complex problem and discuss tradeoffs.
+status: in_production
+lessons:
+  - lesson-01-framing-the-problem
+  - lesson-02-explaining-causes
+  - lesson-03-discussing-tradeoffs
+  - lesson-04-recommending-a-solution
+  - lesson-05-problem-solving-discussion-mission

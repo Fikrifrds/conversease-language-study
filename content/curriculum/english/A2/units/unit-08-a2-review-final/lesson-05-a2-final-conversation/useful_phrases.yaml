@@ -1,0 +1,21 @@
+phrases:
+- phrase: Would you recommend it?
+  meaning_id: Kamu rekomendasiin nggak?
+  usage_note: Ask for a recommendation.
+  common_mistake: Do not say "You recommend it?" in a polite context.
+- phrase: Yes, because the coffee is good and it is quiet.
+  meaning_id: Iya, karena kopinya enak dan tempatnya tenang.
+  usage_note: Recommendation + reason with because.
+  common_mistake: Do not say "Because coffee good".
+- phrase: Do you want to go there this weekend?
+  meaning_id: Kamu mau ke sana weekend ini?
+  usage_note: Invite with do you want to.
+  common_mistake: Do not drop to after want.
+- phrase: Are you free on Saturday afternoon?
+  meaning_id: Kamu free Sabtu sore?
+  usage_note: Check availability.
+  common_mistake: Do not say "Are you free in Saturday".
+- phrase: A bit tired, though.
+  meaning_id: Agak capek.
+  usage_note: Though softens the tone.
+  common_mistake: Do not overuse though in every sentence.

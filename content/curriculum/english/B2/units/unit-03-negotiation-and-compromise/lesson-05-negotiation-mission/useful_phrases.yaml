@@ -1,0 +1,21 @@
+phrases:
+- phrase: My top priority is quality. What matters most to you?
+  meaning_id: Prioritas utamaku kualitas. Yang paling penting buat kamu apa?
+  usage_note: Align priorities first.
+  common_mistake: Don't assume priorities; ask directly.
+- phrase: I propose we run a small pilot for two weeks.
+  meaning_id: Aku usul kita jalanin pilot kecil dua minggu.
+  usage_note: Proposal + timeline.
+  common_mistake: Do not say "I propose to run"; use I propose we run.
+- phrase: I understand the concern. Would it help if we prepare in parallel?
+  meaning_id: Aku paham kekhawatirannya. Gimana kalau kita siapin paralel?
+  usage_note: Handle objection with empathy + mitigation.
+  common_mistake: Don't dismiss concerns; acknowledge first.
+- phrase: A compromise could be launching to 10% first.
+  meaning_id: Komprominya bisa launch dulu ke 10%.
+  usage_note: Middle-ground option.
+  common_mistake: Offer a concrete compromise, not a vague promise.
+- phrase: Then expanding if results look good.
+  meaning_id: Lalu diperluas kalau hasilnya bagus.
+  usage_note: Conditional next step.
+  common_mistake: Do not say "if results looks"; use look.

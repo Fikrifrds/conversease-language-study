@@ -1,0 +1,45 @@
+scenario_key: c1_presentation_framing
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Can you present the proposal?
+learner_goal: Frame a complex topic with context, definition, and purpose.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Can you present the proposal?
+  hint: Start with Today I'd like to...
+  sample_answer: Sure. Today I'd like to walk you through the proposal and why it matters.
+  focus: Opener
+  expected_keywords:
+  - today
+  - walk you through
+  - matters
+- coach: Define the key term clearly.
+  hint: By X, I mean...
+  sample_answer: By 'modular architecture', I mean we separate features into independent components.
+  focus: Definition
+  expected_keywords:
+  - by
+  - i mean
+  - independent
+- coach: State the purpose and preview the structure.
+  hint: The purpose of this is... First, I'll...
+  sample_answer: The purpose of this is to reduce coupling and speed up delivery. First, I'll outline the problem, then the proposed approach.
+  focus: Purpose + structure
+  expected_keywords:
+  - purpose
+  - first
+  - then
+target_phrases:
+- Today I'd like to ...
+- By X, I mean ...
+- The purpose of this is to ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,23 @@
+lesson_key: lesson-05-transport-mission
+status: not_generated
+provider: minimax
+model: speech-2.8-hd
+default_voice_id: multi_speaker
+assets:
+  - key: dialogue_main
+    type: dialogue
+    script_file: listening_script.md
+    audio_url:
+    duration_seconds:
+    provider: minimax
+    model: speech-2.8-hd
+    voice_id: multi_speaker
+    speaker_voices:
+      Staff: English_Upbeat_Woman
+      Driver: English_Diligent_Man
+      Alya: English_radiant_girl
+  - key: phrases
+    type: phrase_pronunciation
+    source_file: useful_phrases.yaml
+    audio_url:
+    duration_seconds:

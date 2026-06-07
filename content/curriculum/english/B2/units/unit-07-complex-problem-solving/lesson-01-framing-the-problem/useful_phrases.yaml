@@ -1,0 +1,21 @@
+phrases:
+- phrase: Let's define the problem statement first.
+  meaning_id: Kita definisikan problem statement dulu.
+  usage_note: A structured opener before proposing solutions.
+  common_mistake: Do not jump to solutions immediately.
+- phrase: Can we agree on the scope?
+  meaning_id: Kita sepakat scope-nya dulu ya?
+  usage_note: Align what is in scope and out of scope.
+  common_mistake: Do not keep scope vague; name the area affected.
+- phrase: What does success look like?
+  meaning_id: Suksesnya itu seperti apa?
+  usage_note: Ask for measurable success criteria.
+  common_mistake: Do not accept a vague answer; ask for metrics.
+- phrase: Any constraints we should keep in mind?
+  meaning_id: Ada constraint yang harus kita ingat?
+  usage_note: Surface limitations early.
+  common_mistake: Do not ignore constraints like timeline or pricing rules.
+- phrase: Got it. Understood.
+  meaning_id: Oke. Paham.
+  usage_note: Professional listening signals.
+  common_mistake: Do not overuse; use once per section.

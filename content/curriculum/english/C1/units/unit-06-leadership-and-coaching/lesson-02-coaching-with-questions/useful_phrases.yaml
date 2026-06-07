@@ -1,0 +1,21 @@
+phrases:
+- phrase: What options do you see right now?
+  meaning_id: Opsi apa yang kamu lihat sekarang?
+  usage_note: Open up solution space without prescribing.
+  common_mistake: Do not give the answer first; ask options.
+- phrase: What would success look like for the pilot?
+  meaning_id: Suksesnya pilot seperti apa?
+  usage_note: Define success criteria collaboratively.
+  common_mistake: Do not assume success criteria; ask.
+- phrase: What's the smallest next step you can take today?
+  meaning_id: Langkah kecil paling next yang bisa kamu lakukan hari ini apa?
+  usage_note: Unblock with a concrete step.
+  common_mistake: Do not ask for a huge plan; ask smallest next step.
+- phrase: What support do you need from me?
+  meaning_id: Support apa yang kamu butuh dari aku?
+  usage_note: Offer support while keeping ownership with them.
+  common_mistake: Do not take over; offer support.
+- phrase: Walk me through your thinking.
+  meaning_id: Coba jelasin cara pikir kamu.
+  usage_note: Invite reasoning.
+  common_mistake: Do not interrogate; keep tone curious.

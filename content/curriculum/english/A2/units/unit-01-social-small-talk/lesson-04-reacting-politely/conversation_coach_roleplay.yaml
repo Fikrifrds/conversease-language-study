@@ -1,0 +1,43 @@
+scenario_key: a2_polite_reactions_chat
+mode: lesson_practice_coach
+level_code: A2
+opening_line: I'm a bit tired today.
+learner_goal: React politely, ask one short follow-up question, and respond to one piece of good news.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: I'm a bit tired today.
+    hint: Tunjukkan empati dan tanya balik dengan lembut.
+    sample_answer: Oh no. Are you okay?
+    focus: React to a problem
+    expected_keywords:
+      - are you okay
+      - "?"
+  - coach: Yeah, I'm fine. I didn't sleep well.
+    hint: Beri respons sopan, lalu tanya singkat tentang kondisi mereka.
+    sample_answer: I'm sorry to hear that. Do you need a break?
+    focus: Polite follow-up
+    expected_keywords:
+      - i'm sorry to hear that
+      - "?"
+  - coach: Thanks. But I finished my project today.
+    hint: Reaksi positif dan beri pujian singkat.
+    sample_answer: That's great! Nice work.
+    focus: React to good news
+    expected_keywords:
+      - that's great
+      - nice work
+target_phrases:
+  - Are you okay?
+  - I'm sorry to hear that.
+  - That's great!
+  - Nice work.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

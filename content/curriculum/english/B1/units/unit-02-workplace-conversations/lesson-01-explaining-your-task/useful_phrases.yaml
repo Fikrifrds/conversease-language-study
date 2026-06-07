@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm working on the onboarding email flow.
+  meaning_id: Aku lagi ngerjain alur email onboarding.
+  usage_note: A clear status sentence for work.
+  common_mistake: Do not say "I working on"; use I'm working on.
+- phrase: What's the next step?
+  meaning_id: Langkah berikutnya apa?
+  usage_note: A common manager question.
+  common_mistake: Do not say "What is next step?" without the.
+- phrase: Next, I'll review the copy.
+  meaning_id: Berikutnya, aku review teksnya.
+  usage_note: Use Next to structure your update.
+  common_mistake: Do not say "Next, I will reviewing".
+- phrase: Any blockers?
+  meaning_id: Ada hambatan?
+  usage_note: A short workplace check question.
+  common_mistake: Do not answer with a long story; just name one blocker or say none.
+- phrase: Keep me posted.
+  meaning_id: Kabari aku ya.
+  usage_note: A polite closing at work.
+  common_mistake: Do not say "Keep me post".

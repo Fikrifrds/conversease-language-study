@@ -1,0 +1,41 @@
+scenario_key: b1_problem_make_decision
+mode: lesson_practice_coach
+level_code: B1
+opening_line: We have two options. What do you prefer?
+learner_goal: State a preference, suggest a compromise, and make a simple decision.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have two options. What do you prefer?
+  hint: Gunakan I'd rather + because.
+  sample_answer: I'd rather fix it now because users are blocked.
+  focus: State preference with reason
+  expected_keywords:
+  - rather
+  - because
+- coach: But it's late. Any compromise?
+  hint: Gunakan We could ...
+  sample_answer: We could do a quick rollback and review tomorrow.
+  focus: Suggest compromise
+  expected_keywords:
+  - could
+  - rollback
+- coach: Okay. What's the decision?
+  hint: Gunakan Let's ...
+  sample_answer: Okay, let's roll back now.
+  focus: Make decision
+  expected_keywords:
+  - let's
+target_phrases:
+- I'd rather ...
+- We could ...
+- Let's ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

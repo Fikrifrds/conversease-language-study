@@ -1,0 +1,25 @@
+questions:
+- key: soft_disagree
+  type: multiple_choice
+  prompt: Which is a soft disagreement?
+  options:
+  - I'm not sure.
+  - You are wrong.
+  - No way.
+  correct_answer: I'm not sure.
+- key: dont_think
+  type: multiple_choice
+  prompt: Which sentence is correct?
+  options:
+  - I'm not think so.
+  - I don't think so.
+  - I no think.
+  correct_answer: I don't think so.
+- key: meaning_fair
+  type: multiple_choice
+  prompt: What does "That's fair" mean?
+  options:
+  - masuk akal
+  - tidak mungkin
+  - terlambat
+  correct_answer: masuk akal

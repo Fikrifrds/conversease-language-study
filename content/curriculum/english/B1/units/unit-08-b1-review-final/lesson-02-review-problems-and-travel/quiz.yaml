@@ -1,0 +1,25 @@
+questions:
+- key: problem_starter_review
+  type: multiple_choice
+  prompt: Which sentence starts a problem description?
+  options:
+  - There's a problem with the meeting link.
+  - I like meetings.
+  - Let's go home.
+  correct_answer: There's a problem with the meeting link.
+- key: so_result_review
+  type: multiple_choice
+  prompt: Which word shows a result?
+  options:
+  - so
+  - because
+  - and
+  correct_answer: so
+- key: running_late_review
+  type: multiple_choice
+  prompt: What does "running late" mean?
+  options:
+  - telat
+  - lebih cepat
+  - tidur
+  correct_answer: telat

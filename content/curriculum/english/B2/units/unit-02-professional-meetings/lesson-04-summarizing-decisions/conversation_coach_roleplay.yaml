@@ -1,0 +1,42 @@
+scenario_key: b2_meeting_summarize
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We're out of time. Can you summarize?
+learner_goal: Summarize decisions and action items with owners and a next checkpoint.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Summarize the key decision.
+  hint: Gunakan To summarize...
+  sample_answer: To summarize, we agreed to keep scope limited to the core feature.
+  focus: Summarize decision
+  expected_keywords:
+  - to summarize
+  - agreed
+- coach: List action items with owners.
+  hint: 'Action items are: I''ll..., you''ll...'
+  sample_answer: 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
+  focus: Action items
+  expected_keywords:
+  - action items
+  - I'll
+  - you'll
+- coach: Set a next checkpoint.
+  hint: We'll check progress on ...
+  sample_answer: We'll check progress on Thursday.
+  focus: Next checkpoint
+  expected_keywords:
+  - check progress
+target_phrases:
+- To summarize, ...
+- Action items are ...
+- We'll check progress on ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,25 @@
+questions:
+- key: clarify_two_options
+  type: multiple_choice
+  prompt: Which phrase clarifies ambiguous language?
+  options:
+  - When you say X, do you mean Y or Z?
+  - You are unclear.
+  - Stop.
+  correct_answer: When you say X, do you mean Y or Z?
+- key: change_mind
+  type: multiple_choice
+  prompt: Which question finds decision criteria?
+  options:
+  - What would change your mind?
+  - Why are you wrong?
+  - No criteria.
+  correct_answer: What would change your mind?
+- key: next_step
+  type: multiple_choice
+  prompt: Which question moves toward action?
+  options:
+  - What's the next step?
+  - Maybe later.
+  - No action.
+  correct_answer: What's the next step?

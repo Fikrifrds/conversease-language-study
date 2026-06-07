@@ -1,0 +1,21 @@
+phrases:
+- phrase: Because the coffee is good.
+  meaning_id: Karena kopinya enak.
+  usage_note: A simple because reason.
+  common_mistake: Do not say "Because is good" without a subject.
+- phrase: Why?
+  meaning_id: Kenapa?
+  usage_note: A short question for a reason.
+  common_mistake: Do not say "What for?" in this context.
+- phrase: I agree.
+  meaning_id: Setuju.
+  usage_note: Agree shows the same opinion.
+  common_mistake: Do not say "I'm agree".
+- phrase: It is quiet.
+  meaning_id: Tempatnya tenang.
+  usage_note: Quiet is an adjective.
+  common_mistake: Do not say "It is quietly".
+- phrase: I come here often.
+  meaning_id: Aku sering ke sini.
+  usage_note: Often is an adverb of frequency.
+  common_mistake: Do not say "I'm come".

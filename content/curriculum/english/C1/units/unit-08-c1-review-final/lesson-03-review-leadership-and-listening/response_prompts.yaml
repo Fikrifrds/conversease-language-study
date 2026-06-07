@@ -1,0 +1,16 @@
+prompts:
+- prompt: Mirror a concern without assuming details.
+  target_response: What I'm hearing is there's some concern under the surface.
+  acceptable_variations:
+  - What I'm hearing is there's some concern under the surface.
+  - What I'm hearing is there may be hesitation under the surface.
+- prompt: Clarify an ambiguous concern with two options.
+  target_response: When you say 'worried about blame', do you mean fear of mistakes or fear of visibility?
+  acceptable_variations:
+  - When you say 'worried about blame', do you mean fear of mistakes or fear of visibility?
+  - When you say 'concerned', do you mean scope or timing?
+- prompt: Close with next steps and ownership.
+  target_response: 'Next steps are: you''ll propose the pilot plan, and I''ll help you align stakeholders tomorrow.'
+  acceptable_variations:
+  - 'Next steps are: you''ll propose the pilot plan, and I''ll help you align stakeholders tomorrow.'
+  - 'Next steps are: you''ll draft the plan today, and I''ll help you align stakeholders tomorrow.'

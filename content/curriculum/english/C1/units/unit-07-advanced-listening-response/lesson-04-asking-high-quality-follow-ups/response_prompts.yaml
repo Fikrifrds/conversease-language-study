@@ -1,0 +1,16 @@
+prompts:
+- prompt: Clarify a vague word with two options.
+  target_response: When you say 'more cautious', do you mean smaller scope or slower timing?
+  acceptable_variations:
+  - When you say 'more cautious', do you mean smaller scope or slower timing?
+  - When you say 'faster', do you mean fewer steps or shorter timeline?
+- prompt: Ask for assumption about risk.
+  target_response: What's your assumption about the main risk?
+  acceptable_variations:
+  - What's your assumption about the main risk?
+  - What's your assumption about what could go wrong?
+- prompt: Ask what would change their mind and move to action.
+  target_response: What would change your mind about the timeline? Got it. What's the next step we should take today?
+  acceptable_variations:
+  - What would change your mind about the timeline? Got it. What's the next step we should take today?
+  - What would change your mind? Great. What's the next step?

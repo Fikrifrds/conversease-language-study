@@ -1,0 +1,21 @@
+phrases:
+- phrase: To confirm, we'll start with a two-week pilot.
+  meaning_id: Buat konfirmasi, kita mulai dengan pilot dua minggu.
+  usage_note: Confirm the plan clearly.
+  common_mistake: Do not confirm vaguely; restate the decision.
+- phrase: 'Next steps are: I''ll send the draft plan today.'
+  meaning_id: 'Next steps-nya: aku kirim draft plan hari ini.'
+  usage_note: Clear action items.
+  common_mistake: Do not list actions without a time; add today/by Friday.
+- phrase: You'll review it by Friday.
+  meaning_id: Kamu review sebelum Jumat.
+  usage_note: Assign an owner and deadline.
+  common_mistake: Do not say "review it until Friday" for deadline; use by.
+- phrase: We'll meet next Monday to finalize.
+  meaning_id: Kita meeting Senin depan untuk finalize.
+  usage_note: Set the next checkpoint.
+  common_mistake: Do not skip the next checkpoint; set one clearly.
+- phrase: Does that timeline work for you?
+  meaning_id: Timeline itu works buat kamu?
+  usage_note: Confirm agreement.
+  common_mistake: Do not assume; ask if it works.

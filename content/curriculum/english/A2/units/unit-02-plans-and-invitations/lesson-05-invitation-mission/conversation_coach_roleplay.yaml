@@ -1,0 +1,52 @@
+scenario_key: a2_invitation_mission_reschedule
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Do you want to grab coffee tomorrow?
+learner_goal: Invite someone, handle a decline, reschedule, and confirm a new plan.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Do you want to grab coffee tomorrow?
+    hint: Tolak dengan sopan dan beri alasan singkat.
+    sample_answer: Thanks, but I can't tomorrow. Something came up.
+    focus: Decline with a reason
+    expected_keywords:
+      - can't
+      - something came up
+  - coach: No problem. How about Saturday?
+    hint: Setuju, lalu tanya jamnya.
+    sample_answer: Saturday is good. What time?
+    focus: Ask for the time
+    expected_keywords:
+      - what time
+      - "?"
+  - coach: Does 3 pm work for you?
+    hint: Setuju dan konfirmasi tempat.
+    sample_answer: Yes, 3 pm works. Where should we meet?
+    focus: Confirm time and ask place
+    expected_keywords:
+      - works
+      - where should we meet
+      - "?"
+  - coach: Let's meet at the cafe near the station.
+    hint: Tutup percakapan dengan sopan.
+    sample_answer: Great. See you then.
+    focus: Close the plan
+    expected_keywords:
+      - see you then
+
+target_phrases:
+  - Do you want to grab coffee?
+  - Sorry, I can't.
+  - How about Saturday?
+  - Does 3 pm work for you?
+  - See you then.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

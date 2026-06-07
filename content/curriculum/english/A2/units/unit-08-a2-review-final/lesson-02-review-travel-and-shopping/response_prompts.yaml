@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Ask: What time is the next train?'
+  target_response: What time is the next train?
+  acceptable_variations:
+  - What time is the next train?
+  - When is the next train?
+- prompt: 'Ask: Do you have a phone charger?'
+  target_response: Do you have a phone charger?
+  acceptable_variations:
+  - Do you have a phone charger?
+  - Do you have a charger?
+- prompt: 'Request: A USB-C charger, please.'
+  target_response: A USB-C charger, please.
+  acceptable_variations:
+  - A USB-C charger, please.
+  - A USB-C charger, please. Do you have it?

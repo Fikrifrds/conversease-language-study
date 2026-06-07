@@ -1,0 +1,25 @@
+questions:
+  - key: ask_weekend_plans
+    type: multiple_choice
+    prompt: Which question asks about weekend plans?
+    options:
+      - Any plans for the weekend?
+      - Where do you live?
+      - What time is it?
+    correct_answer: Any plans for the weekend?
+  - key: going_to_plan
+    type: multiple_choice
+    prompt: Which sentence uses going to to talk about a plan?
+    options:
+      - I'm going to visit my parents.
+      - I visited my parents.
+      - I'm visit my parents.
+    correct_answer: I'm going to visit my parents.
+  - key: transport_question
+    type: multiple_choice
+    prompt: Which question asks about transport?
+    options:
+      - How are you getting there?
+      - Where are you?
+      - Are you busy?
+    correct_answer: How are you getting there?

@@ -1,0 +1,25 @@
+lesson_key: lesson-03-giving-actionable-feedback
+slug: giving-actionable-feedback
+title: Giving Actionable Feedback
+status: published
+estimated_minutes: 12
+conversation_situation: actionable_feedback
+conversation_goal: Give actionable feedback by describing impact, being specific, and proposing a clear improvement.
+grammar_summary: Use One thing I'd suggest is... / The impact is... / A concrete improvement would be... / Would you be open to... to give feedback.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

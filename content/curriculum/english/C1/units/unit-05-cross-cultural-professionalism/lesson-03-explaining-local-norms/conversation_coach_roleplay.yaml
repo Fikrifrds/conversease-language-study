@@ -1,0 +1,44 @@
+scenario_key: c1_explaining_norms
+mode: lesson_practice_coach
+level_code: C1
+opening_line: I'm not sure how direct I should be with the team.
+learner_goal: Explain local norms tactfully and offer practical adaptation tips.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Explain a local norm about disagreement.
+  hint: In our context... people tend to...
+  sample_answer: In our context, people tend to be indirect when disagreeing in group settings.
+  focus: Norm
+  expected_keywords:
+  - context
+  - tend to
+  - indirect
+- coach: Explain what's generally expected.
+  hint: It's generally expected that...
+  sample_answer: It's generally expected that you raise concerns one-on-one first.
+  focus: Expectation
+  expected_keywords:
+  - generally expected
+  - one-on-one
+- coach: Offer a practical tip.
+  hint: It might help to...
+  sample_answer: It might help to start with appreciation, then ask a question instead of stating a critique.
+  focus: Tip
+  expected_keywords:
+  - might help
+  - appreciation
+  - question
+target_phrases:
+- In our context, ...
+- It's generally expected that ...
+- It might help to ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

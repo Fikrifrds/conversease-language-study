@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask where platform 2 is.
+    target_response: Where is platform 2?
+    acceptable_variations:
+      - Where is platform 2?
+      - Excuse me. Where is platform 2?
+  - prompt: Ask to confirm the direction.
+    target_response: Is this the right way?
+    acceptable_variations:
+      - Is this the right way?
+      - Am I going the right way?
+  - prompt: Give a direction.
+    target_response: Go straight and turn left at the stairs.
+    acceptable_variations:
+      - Go straight and turn left at the stairs.
+      - Go straight and turn right at the stairs.

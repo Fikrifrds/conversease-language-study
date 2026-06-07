@@ -1,0 +1,9 @@
+# Writing Support
+
+Write 6 lines:
+1. I wasn't aware of that.
+2. That changes things.
+3. I'd like to understand ...
+4. We should check ...
+5. Can you share ...?
+6. Then we can revise ...

@@ -1,0 +1,44 @@
+scenario_key: c1_challenging_questions
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Isn't this approach too risky?
+learner_goal: Handle challenging questions with acknowledgement, concise answers, and reframing.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Isn't this approach too risky?
+  hint: That's a fair question... Let me clarify...
+  sample_answer: That's a fair question. Let me clarify what risk we're accepting.
+  focus: Acknowledge
+  expected_keywords:
+  - fair question
+  - clarify
+- coach: Give the short answer and condition.
+  hint: The short answer is...
+  sample_answer: 'The short answer is: it''s manageable if we pilot first and monitor closely.'
+  focus: Short answer
+  expected_keywords:
+  - short answer
+  - manageable
+  - pilot
+- coach: Close with emphasis and a fallback plan.
+  hint: What I'd emphasize... If adoption stalls...
+  sample_answer: What I'd emphasize is that standards need ownership and enforcement. If adoption stalls, we pause expansion and revisit the design.
+  focus: Emphasis + fallback
+  expected_keywords:
+  - emphasize
+  - ownership
+  - pause
+target_phrases:
+- That's a fair question.
+- 'The short answer is: ...'
+- What I'd emphasize is ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Introduce two options.
+  target_response: We have two options.
+  acceptable_variations:
+  - We have two options.
+  - We have two main options.
+- prompt: Explain the trade-off.
+  target_response: The trade-off is speed versus long-term stability.
+  acceptable_variations:
+  - The trade-off is speed versus long-term stability.
+  - The trade-off is cost versus quality.
+- prompt: Make a recommendation politely.
+  target_response: I'd recommend option B if the timeline allows.
+  acceptable_variations:
+  - I'd recommend option B if the timeline allows.
+  - I'd recommend option A if you need it this week.

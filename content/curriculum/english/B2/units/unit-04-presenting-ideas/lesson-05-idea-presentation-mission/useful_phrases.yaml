@@ -1,0 +1,21 @@
+phrases:
+- phrase: Today I'd like to propose a shared onboarding checklist.
+  meaning_id: Hari ini aku mau usul checklist onboarding bersama.
+  usage_note: A concise mission opening.
+  common_mistake: Keep it short; don't add extra details in the first sentence.
+- phrase: First... Next... Finally...
+  meaning_id: Pertama... Berikutnya... Terakhir...
+  usage_note: Signposting for structure.
+  common_mistake: Don't overuse signposts; 3 is enough.
+- phrase: The main benefit is ... Another benefit is ...
+  meaning_id: Manfaat utama ... Manfaat lain ...
+  usage_note: Clear benefits structure.
+  common_mistake: Don't list too many benefits; two is enough.
+- phrase: A key risk is ... To reduce the risk, we can ...
+  meaning_id: Risiko utama ... Untuk ngurangin risiko, kita bisa ...
+  usage_note: Risk + mitigation.
+  common_mistake: Always add mitigation after a risk.
+- phrase: I'm not sure yet, but I can follow up by tomorrow.
+  meaning_id: Aku belum yakin, tapi aku bisa follow up besok.
+  usage_note: Professional uncertainty.
+  common_mistake: Always include a follow-up time.

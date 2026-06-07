@@ -1,0 +1,25 @@
+questions:
+- key: position_phrase
+  type: multiple_choice
+  prompt: Which phrase politely states your position?
+  options:
+  - In my view, ...
+  - You are wrong.
+  - No, stop.
+  correct_answer: In my view, ...
+- key: acknowledge_phrase
+  type: multiple_choice
+  prompt: Which phrase acknowledges another view politely?
+  options:
+  - I see your point, but...
+  - That's stupid.
+  - Whatever.
+  correct_answer: I see your point, but...
+- key: compromise_meaning
+  type: multiple_choice
+  prompt: What does "compromise" mean?
+  options:
+  - kompromi
+  - penolakan
+  - janji
+  correct_answer: kompromi

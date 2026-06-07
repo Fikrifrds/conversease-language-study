@@ -1,0 +1,16 @@
+prompts:
+- prompt: Qualify your stance with a limitation.
+  target_response: To some extent, yes—especially for new projects. That said, we need exceptions for legacy systems.
+  acceptable_variations:
+  - To some extent, yes—especially for new projects. That said, we need exceptions for legacy systems.
+  - To some extent, yes. That said, we should define guardrails first.
+- prompt: Balance two viewpoints and conclude.
+  target_response: On the one hand, speed matters. On the other hand, stability reduces risk. On balance, I'd prioritize stability with a limited rollout.
+  acceptable_variations:
+  - On the one hand, speed matters. On the other hand, stability reduces risk. On balance, I'd prioritize stability with a limited rollout.
+  - On the one hand, cost matters. On the other hand, quality matters. On balance, I'd prioritize quality.
+- prompt: Disagree softly and propose an alternative.
+  target_response: 'I see your point, but I''m not sure I''d go that far. I might frame it differently: limited launch next week, full rollout after we review the data.'
+  acceptable_variations:
+  - 'I see your point, but I''m not sure I''d go that far. I might frame it differently: limited launch next week, full rollout after we review the data.'
+  - 'I see your point, but I''m not sure I''d go that far. I might frame it differently: pilot first, then expand.'

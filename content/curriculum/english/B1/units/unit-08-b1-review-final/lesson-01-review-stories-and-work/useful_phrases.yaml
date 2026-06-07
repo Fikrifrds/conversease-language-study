@@ -1,0 +1,21 @@
+phrases:
+- phrase: Then we grabbed street food.
+  meaning_id: Terus kita beli street food.
+  usage_note: Then helps sequence a story.
+  common_mistake: Do not say "After that then" together; use one connector.
+- phrase: What happened after that?
+  meaning_id: Habis itu apa yang terjadi?
+  usage_note: A natural follow-up question for stories.
+  common_mistake: Do not say "What happen after that" without -ed for past.
+- phrase: I'm working on the release checklist.
+  meaning_id: Aku lagi ngerjain release checklist.
+  usage_note: A clear work status sentence.
+  common_mistake: Do not say "I working on"; use I'm working on.
+- phrase: I'm making good progress.
+  meaning_id: Progressnya bagus.
+  usage_note: A short progress update.
+  common_mistake: Do not say "I'm progress".
+- phrase: Next, I'll review the risks.
+  meaning_id: Berikutnya, aku review risiko.
+  usage_note: Next sets the next step clearly.
+  common_mistake: Do not say "Next, I will reviewing".

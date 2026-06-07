@@ -1,0 +1,25 @@
+lesson_key: lesson-05-goals-progress-mission
+slug: goals-progress-mission
+title: Goals Progress Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_goal_progress_challenge_next_step
+conversation_goal: 'Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.'
+grammar_summary: 'Combine: My goal is to... / I''ve been... / The biggest challenge is... / My next step is to... to complete a goal update.'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

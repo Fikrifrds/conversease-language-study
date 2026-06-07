@@ -1,0 +1,16 @@
+prompts:
+- prompt: Open feedback gently.
+  target_response: I wanted to flag one point about the messaging.
+  acceptable_variations:
+  - I wanted to flag one point about the messaging.
+  - I wanted to raise one point about the wording.
+- prompt: Describe impact objectively.
+  target_response: The impact is that some teams interpreted it as a hard deadline.
+  acceptable_variations:
+  - The impact is that some teams interpreted it as a hard deadline.
+  - The impact is that it sounded like a hard deadline to some teams.
+- prompt: Invite a change collaboratively.
+  target_response: Would you be open to adding an explicit 'earliest possible' line?
+  acceptable_variations:
+  - Would you be open to adding an explicit 'earliest possible' line?
+  - Would you be open to adding a clarifying line about the timeline?

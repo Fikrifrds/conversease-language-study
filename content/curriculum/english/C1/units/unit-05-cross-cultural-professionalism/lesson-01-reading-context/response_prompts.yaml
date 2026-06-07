@@ -1,0 +1,16 @@
+prompts:
+- prompt: Interpret indirect feedback cautiously.
+  target_response: My sense is that they're signaling concern without saying no directly.
+  acceptable_variations:
+  - My sense is that they're signaling concern without saying no directly.
+  - My sense is that they want us to slow down without rejecting it.
+- prompt: Ask to clarify priority before responding.
+  target_response: Before we decide, can we clarify what their priority is—speed or risk reduction?
+  acceptable_variations:
+  - Before we decide, can we clarify what their priority is—speed or risk reduction?
+  - Before we decide, can we clarify what matters most to them?
+- prompt: Suggest a phased plan tactfully.
+  target_response: It may be worth considering a phased plan to show flexibility.
+  acceptable_variations:
+  - It may be worth considering a phased plan to show flexibility.
+  - It may be worth considering a phased approach to reduce risk.

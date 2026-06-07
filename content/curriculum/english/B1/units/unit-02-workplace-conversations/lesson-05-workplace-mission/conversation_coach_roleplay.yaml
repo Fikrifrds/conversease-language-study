@@ -1,0 +1,42 @@
+scenario_key: b1_work_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. Quick update on the report?
+learner_goal: Give an update, ask for clarification, and confirm a deadline politely.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. Quick update on the report?
+  hint: Mulai dengan progress singkat.
+  sample_answer: I'm making good progress. I'm almost done with the summary.
+  focus: Give update
+  expected_keywords:
+  - progress
+  - almost
+- coach: Great. Please update the risk section too.
+  hint: Terima, lalu minta klarifikasi scope.
+  sample_answer: Sure. Could you clarify which risks you want me to focus on?
+  focus: Ask clarification
+  expected_keywords:
+  - clarify
+  - focus
+- coach: Focus on timeline and budget risks.
+  hint: Konfirmasi deadline singkat.
+  sample_answer: Got it. Just to confirm, you need it by Friday morning, right?
+  focus: Confirm deadline
+  expected_keywords:
+  - confirm
+  - by
+target_phrases:
+- I'm making good progress.
+- Could you clarify...?
+- Just to confirm...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

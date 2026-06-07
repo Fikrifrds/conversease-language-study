@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start a summary clearly.
+  target_response: 'So, to summarize: the timeline is tight and clients are sensitive to change.'
+  acceptable_variations:
+  - 'So, to summarize: the timeline is tight and clients are sensitive to change.'
+  - 'So, to summarize: we need a phased rollout and clear communication.'
+- prompt: State the decision explicitly.
+  target_response: The decision is to propose a phased rollout with clear metrics.
+  acceptable_variations:
+  - The decision is to propose a phased rollout with clear metrics.
+  - The decision is to start with a pilot and track metrics.
+- prompt: Name open questions and confirm.
+  target_response: The open questions are around resourcing and internal alignment. Just to confirm, I'll send the summary and ask if anything is missing.
+  acceptable_variations:
+  - The open questions are around resourcing and internal alignment. Just to confirm, I'll send the summary and ask if anything is missing.
+  - The open questions are staffing and timeline. Just to confirm, I'll send the notes for review.

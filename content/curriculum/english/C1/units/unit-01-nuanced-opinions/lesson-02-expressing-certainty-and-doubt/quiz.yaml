@@ -1,0 +1,25 @@
+questions:
+- key: fairly_confident
+  type: multiple_choice
+  prompt: Which phrase shows high confidence but not absolute certainty?
+  options:
+  - I'm fairly confident ...
+  - I'm 100% sure.
+  - No idea.
+  correct_answer: I'm fairly confident ...
+- key: not_entirely_convinced
+  type: multiple_choice
+  prompt: Which phrase expresses polite doubt?
+  options:
+  - I'm not entirely convinced.
+  - You are wrong.
+  - It's impossible.
+  correct_answer: I'm not entirely convinced.
+- key: unlikely_usage
+  type: multiple_choice
+  prompt: Which sentence uses unlikely correctly?
+  options:
+  - It's unlikely that we'll break core flows.
+  - It's unlikely we breaked core flows.
+  - Unlikely is break.
+  correct_answer: It's unlikely that we'll break core flows.

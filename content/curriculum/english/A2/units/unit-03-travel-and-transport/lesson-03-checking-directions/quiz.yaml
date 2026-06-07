@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_right_way
+    type: multiple_choice
+    prompt: What does "the right way" mean?
+    options:
+      - Jalan yang benar
+      - Tiket yang benar
+      - Jam yang benar
+    correct_answer: Jalan yang benar
+  - key: direction_question
+    type: multiple_choice
+    prompt: Which question checks directions?
+    options:
+      - Is this the right way?
+      - How much is it?
+      - Are you free tomorrow?
+    correct_answer: Is this the right way?
+  - key: direction_phrase
+    type: multiple_choice
+    prompt: Which phrase gives a direction?
+    options:
+      - Go straight.
+      - I'd love to.
+      - Maybe next time.
+    correct_answer: Go straight.

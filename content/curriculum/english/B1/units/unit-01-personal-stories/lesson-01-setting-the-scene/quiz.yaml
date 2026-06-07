@@ -1,0 +1,25 @@
+questions:
+- key: past_be
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - We was in Bandung.
+  - We were in Bandung.
+  - We are in Bandung yesterday.
+  correct_answer: We were in Bandung.
+- key: meaning_scene
+  type: multiple_choice
+  prompt: What does "set the scene" mean in a story?
+  options:
+  - jelaskan kapan/di mana
+  - beri hadiah
+  - tanya harga
+  correct_answer: jelaskan kapan/di mana
+- key: comparative
+  type: multiple_choice
+  prompt: Which is a comparative sentence?
+  options:
+  - It was cooler than Jakarta.
+  - It is cool.
+  - It was the coolest.
+  correct_answer: It was cooler than Jakarta.

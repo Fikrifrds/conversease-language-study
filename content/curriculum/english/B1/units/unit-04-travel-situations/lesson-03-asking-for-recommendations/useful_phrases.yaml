@@ -1,0 +1,21 @@
+phrases:
+- phrase: Do you have any recommendations for dinner?
+  meaning_id: Ada rekomendasi buat makan malam?
+  usage_note: A polite way to ask for ideas.
+  common_mistake: Do not say "Give me recommendation"; ask Do you have any recommendations...?
+- phrase: I'm looking for something local.
+  meaning_id: Aku lagi cari yang lokal.
+  usage_note: Looking for explains what you want.
+  common_mistake: Do not say "I search" for this meaning; use I'm looking for.
+- phrase: Something local would be great.
+  meaning_id: Yang lokal bakal bagus.
+  usage_note: Would be great sounds friendly and polite.
+  common_mistake: Do not say "will be great" if you want softer tone; use would.
+- phrase: Is it far from here?
+  meaning_id: Jauh nggak dari sini?
+  usage_note: A simple follow-up question about distance.
+  common_mistake: Do not say "Is far?" without it.
+- phrase: How do I get there?
+  meaning_id: Cara ke sana gimana?
+  usage_note: Ask for directions after a recommendation.
+  common_mistake: Do not say "How to go there?" in a full question; use How do I get there?

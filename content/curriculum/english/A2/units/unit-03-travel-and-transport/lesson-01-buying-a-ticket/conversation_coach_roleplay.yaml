@@ -1,0 +1,43 @@
+scenario_key: a2_buy_ticket_at_station
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Where are you going?
+learner_goal: Buy a ticket by stating the destination, choosing one-way or round-trip, and confirming the price.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi. Where are you going?
+    hint: Sebutkan tujuan dan minta tiket dengan sopan.
+    sample_answer: I'd like one ticket to Bandung, please.
+    focus: Request a ticket
+    expected_keywords:
+      - i'd like
+      - ticket
+  - coach: One-way or round-trip?
+    hint: Pilih jenis tiket.
+    sample_answer: One-way, please.
+    focus: Choose the ticket type
+    expected_keywords:
+      - one-way
+  - coach: Okay. That's 120,000 rupiah.
+    hint: Konfirmasi harga dengan pertanyaan singkat.
+    sample_answer: Okay. How much is it again?
+    focus: Confirm the price
+    expected_keywords:
+      - how much
+      - "?"
+
+target_phrases:
+  - I'd like one ticket to Bandung, please.
+  - One-way, please.
+  - How much is it?
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

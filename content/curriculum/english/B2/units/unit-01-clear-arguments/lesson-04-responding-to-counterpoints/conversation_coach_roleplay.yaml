@@ -1,0 +1,42 @@
+scenario_key: b2_argument_counterpoints
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I have a concern about your idea.
+learner_goal: Acknowledge a counterpoint, respond professionally, and propose a mitigation plan.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I like your idea, but I'm worried it will increase costs.
+  hint: Mulai dengan That's a fair point / I understand the concern.
+  sample_answer: That's a fair point. However, the long-term savings could be significant.
+  focus: Acknowledge + respond
+  expected_keywords:
+  - fair point
+  - however
+- coach: The upfront investment is still high.
+  hint: 'Tawarkan mitigasi: phase it in / pilot.'
+  sample_answer: I understand the concern, but we can phase it in and measure results.
+  focus: Mitigation plan
+  expected_keywords:
+  - phase
+  - measure
+- coach: Great. What's the next step?
+  hint: Usul langkah berikutnya.
+  sample_answer: Let's define success metrics first and run a small pilot.
+  focus: Next steps
+  expected_keywords:
+  - metrics
+  - pilot
+target_phrases:
+- That's a fair point.
+- However, ...
+- I understand the concern, but ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

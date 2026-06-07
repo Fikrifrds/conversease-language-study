@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm fairly confident it will, given the support trends.
+  meaning_id: Aku cukup yakin iya, melihat tren di support.
+  usage_note: High confidence with evidence framing.
+  common_mistake: Do not claim certainty without evidence; add given the data/trends.
+- phrase: I'm not entirely convinced.
+  meaning_id: Aku belum sepenuhnya yakin.
+  usage_note: Polite doubt without sounding dismissive.
+  common_mistake: Do not say "I am not convinced at all" unless you mean it.
+- phrase: There's a strong chance we'll see edge cases.
+  meaning_id: Ada kemungkinan besar kita ketemu edge case.
+  usage_note: Strong probability language.
+  common_mistake: Do not say maybe many; be specific (strong chance).
+- phrase: It's unlikely that we'll break core flows, but we should monitor closely.
+  meaning_id: Kemungkinan kecil kita merusak alur inti, tapi kita harus monitor ketat.
+  usage_note: Low probability + mitigation.
+  common_mistake: Do not stop at unlikely; add monitoring.
+- phrase: Let's start with a limited rollout.
+  meaning_id: Kita mulai rollout terbatas.
+  usage_note: A safe next step when uncertain.
+  common_mistake: Do not jump to full rollout when doubt exists.

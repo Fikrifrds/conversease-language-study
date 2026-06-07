@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start check-in politely.
+  target_response: I'd like to check in.
+  acceptable_variations:
+  - I'd like to check in.
+  - Hi, I'd like to check in.
+- prompt: Say you have a reservation under your name.
+  target_response: I have a reservation under Mina Kim.
+  acceptable_variations:
+  - I have a reservation under Mina Kim.
+  - I have a reservation under Alex Chen.
+- prompt: Ask one practical question (check-out time).
+  target_response: What time is check-out?
+  acceptable_variations:
+  - What time is check-out?
+  - Is breakfast included?

@@ -1,0 +1,40 @@
+scenario_key: b2_info_viewpoint
+mode: lesson_practice_coach
+level_code: B2
+opening_line: What's your viewpoint on this topic?
+learner_goal: Explain a viewpoint with a reason and acknowledge another perspective.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your take on this?
+  hint: From my perspective, ...
+  sample_answer: From my perspective, some regulation is necessary.
+  focus: Viewpoint
+  expected_keywords:
+  - from my perspective
+- coach: Why?
+  hint: The reason is ...
+  sample_answer: The reason is it protects users from misuse and misinformation.
+  focus: Reason
+  expected_keywords:
+  - the reason is
+- coach: I disagree. It could slow innovation.
+  hint: 'Acknowledge: I see the other side, but...'
+  sample_answer: I see the other side, but basic safety rules can still support innovation.
+  focus: Acknowledge + respond
+  expected_keywords:
+  - other side
+  - but
+target_phrases:
+- From my perspective, ...
+- The reason is ...
+- I see the other side, but ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Clarify calmly under pressure.
+  target_response: 'Let me be clear: we have indicators, not proof yet.'
+  acceptable_variations:
+  - 'Let me be clear: we have indicators, not proof yet.'
+  - 'Let me be clear: we have signals, not proof yet.'
+- prompt: Acknowledge concern and pivot.
+  target_response: I understand the concern. However, the key point is that waiting increases risk.
+  acceptable_variations:
+  - I understand the concern. However, the key point is that waiting increases risk.
+  - I understand the concern. However, the key point is that delays increase risk.
+- prompt: Cite a time window with a metric.
+  target_response: If you look at the last four weeks, incident volume has doubled.
+  acceptable_variations:
+  - If you look at the last four weeks, incident volume has doubled.
+  - If you look at the last month, incidents have doubled.

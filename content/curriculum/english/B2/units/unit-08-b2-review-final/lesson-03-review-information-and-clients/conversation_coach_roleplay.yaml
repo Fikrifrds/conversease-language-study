@@ -1,0 +1,44 @@
+scenario_key: b2_review_clients
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Is this report reliable? Clients are worried.
+learner_goal: Discuss reliability, acknowledge concerns, clarify commitments, and close with next steps.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Is this report reliable?
+  hint: Based on the source... verify...
+  sample_answer: Based on the source, it's a partial snapshot. We should verify it with our support data.
+  focus: Reliability
+  expected_keywords:
+  - source
+  - verify
+- coach: Clients are worried about delays. What do you say?
+  hint: I understand the concern... Just to clarify...
+  sample_answer: I understand the concern. Just to clarify, what timeline did we promise?
+  focus: Concern + clarify
+  expected_keywords:
+  - understand
+  - clarify
+  - timeline
+- coach: Close with next steps and a deadline.
+  hint: Next steps are... today... by Friday.
+  sample_answer: 'Next steps are: I''ll share an update today, and we''ll confirm a revised timeline by Friday.'
+  focus: Next steps
+  expected_keywords:
+  - next steps
+  - today
+  - by
+target_phrases:
+- We should verify it with ...
+- I understand the concern.
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

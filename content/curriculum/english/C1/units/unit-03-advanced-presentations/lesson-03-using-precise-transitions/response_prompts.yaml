@@ -1,0 +1,16 @@
+prompts:
+- prompt: Transition to a trade-off.
+  target_response: 'That brings me to the key trade-off: speed versus reliability.'
+  acceptable_variations:
+  - 'That brings me to the key trade-off: speed versus reliability.'
+  - 'That brings me to the next point: the trade-off between speed and reliability.'
+- prompt: Highlight a key point as crucial.
+  target_response: What's crucial here is that we set clear standards early.
+  acceptable_variations:
+  - What's crucial here is that we set clear standards early.
+  - What's crucial here is that we define guardrails up front.
+- prompt: Restate with to put it differently.
+  target_response: To put it differently, standards let teams move fast without breaking consistency.
+  acceptable_variations:
+  - To put it differently, standards let teams move fast without breaking consistency.
+  - To put it differently, guardrails prevent chaos while we move fast.

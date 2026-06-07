@@ -1,0 +1,22 @@
+lesson_key: lesson-04-b2-final-test-practice
+status: not_generated
+provider: minimax
+model: speech-2.8-hd
+default_voice_id: multi_speaker
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: null
+  duration_seconds: null
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Mina: English_Upbeat_Woman
+    Alex: English_Upbeat_Woman
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

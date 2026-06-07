@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Request one ticket to Bandung.
+    target_response: I'd like one ticket to Bandung, please.
+    acceptable_variations:
+      - I'd like one ticket to Bandung, please.
+      - I'd like one ticket to Jakarta, please.
+  - prompt: Choose one-way.
+    target_response: One-way, please.
+    acceptable_variations:
+      - One-way, please.
+  - prompt: Ask the price.
+    target_response: How much is it?
+    acceptable_variations:
+      - How much is it?
+      - How much is it again?

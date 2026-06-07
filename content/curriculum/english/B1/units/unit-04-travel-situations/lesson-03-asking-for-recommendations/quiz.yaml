@@ -1,0 +1,25 @@
+questions:
+- key: recommendations_usage
+  type: multiple_choice
+  prompt: Which sentence asks for recommendations politely?
+  options:
+  - Do you have any recommendations for dinner?
+  - Recommendation dinner now.
+  - Give me restaurant.
+  correct_answer: Do you have any recommendations for dinner?
+- key: looking_for_meaning
+  type: multiple_choice
+  prompt: What does "I'm looking for" mean?
+  options:
+  - aku lagi cari
+  - aku sudah punya
+  - aku tidak suka
+  correct_answer: aku lagi cari
+- key: far_meaning
+  type: multiple_choice
+  prompt: What does "far" mean?
+  options:
+  - jauh
+  - dekat
+  - mahal
+  correct_answer: jauh

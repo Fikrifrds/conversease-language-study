@@ -1,0 +1,43 @@
+scenario_key: a2_shop_compare_options
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Which one is cheaper?
+learner_goal: Compare two options and choose one politely.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: This one is cheaper. It's 80,000 rupiah.
+    hint: Tanyakan opsi satunya.
+    sample_answer: And the other one?
+    focus: Ask about the other option
+    expected_keywords:
+      - other one
+      - "?"
+  - coach: The other one is 120,000 rupiah, but it's better quality.
+    hint: Pilih salah satu dengan singkat.
+    sample_answer: Okay. I'll take the cheaper one.
+    focus: Choose an option
+    expected_keywords:
+      - i'll take
+      - cheaper
+  - coach: Sure.
+    hint: Tutup dengan sopan.
+    sample_answer: Thank you.
+    focus: Close politely
+    expected_keywords:
+      - thank
+
+target_phrases:
+  - Which one is cheaper?
+  - The other one
+  - I'll take the cheaper one.
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

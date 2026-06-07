@@ -1,0 +1,25 @@
+questions:
+- key: next_step_sentence
+  type: multiple_choice
+  prompt: Which sentence states a next step?
+  options:
+  - My next step is to practice speaking.
+  - My next step practice speaking.
+  - Next step I practicing.
+  correct_answer: My next step is to practice speaking.
+- key: times_this_week
+  type: multiple_choice
+  prompt: What does "three times this week" mean?
+  options:
+  - tiga kali minggu ini
+  - tiga minggu
+  - tiga kali tiap bulan
+  correct_answer: tiga kali minggu ini
+- key: going_to_usage
+  type: multiple_choice
+  prompt: Which sentence uses going to correctly?
+  options:
+  - I'm going to keep it simple.
+  - I going to keep it simple.
+  - I'm go to keep it simple.
+  correct_answer: I'm going to keep it simple.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: Last weekend, I was in Bandung.
+  meaning_id: Weekend kemarin aku ada di Bandung.
+  usage_note: A clear way to set time and place.
+  common_mistake: Do not say "In last weekend".
+- phrase: I was there with my cousin.
+  meaning_id: Aku di sana sama sepupuku.
+  usage_note: Add who you were with.
+  common_mistake: Keep it simple and clear.
+- phrase: We were visiting my aunt.
+  meaning_id: Kami nengok tanteku.
+  usage_note: Past continuous for background activities.
+  common_mistake: Do not say "We was visiting"; use were.
+- phrase: How was the place?
+  meaning_id: Gimana tempatnya?
+  usage_note: A natural follow-up question.
+  common_mistake: Do not say "How the place was?".
+- phrase: It was cooler than Jakarta.
+  meaning_id: Lebih sejuk dari Jakarta.
+  usage_note: Use comparative adjective + than.
+  common_mistake: Do not say "more cool" here.

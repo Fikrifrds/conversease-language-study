@@ -1,0 +1,25 @@
+questions:
+- key: transition_phrase
+  type: multiple_choice
+  prompt: Which phrase transitions to a new point?
+  options:
+  - That brings me to ...
+  - Because.
+  - No.
+  correct_answer: That brings me to ...
+- key: restate_phrase
+  type: multiple_choice
+  prompt: Which phrase restates an idea?
+  options:
+  - To put it differently, ...
+  - Anyway.
+  - Stop.
+  correct_answer: To put it differently, ...
+- key: crucial_meaning
+  type: multiple_choice
+  prompt: What does "crucial" mean?
+  options:
+  - sangat penting
+  - opsional
+  - tidak relevan
+  correct_answer: sangat penting

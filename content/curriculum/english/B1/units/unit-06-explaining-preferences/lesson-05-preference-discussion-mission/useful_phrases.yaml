@@ -1,0 +1,21 @@
+phrases:
+- phrase: Eating out is easier, but it's more expensive.
+  meaning_id: Makan di luar lebih gampang, tapi lebih mahal.
+  usage_note: A clear compare sentence.
+  common_mistake: Do not list too many points; one contrast is enough.
+- phrase: I prefer cooking at home because it's cheaper.
+  meaning_id: Aku prefer masak di rumah karena lebih murah.
+  usage_note: Preference + reason in one sentence.
+  common_mistake: Do not say "I prefer because"; include what you prefer.
+- phrase: What are the pros and cons?
+  meaning_id: Apa pro dan kontranya?
+  usage_note: Ask about trade-offs.
+  common_mistake: Do not use is; use are.
+- phrase: The advantage is it's healthier. One downside is it takes time.
+  meaning_id: Kelebihannya lebih sehat. Kekurangannya makan waktu.
+  usage_note: Advantage + downside short answers.
+  common_mistake: Don't mix advantage and downside in one long sentence; keep two short sentences.
+- phrase: So we agree on cooking at home?
+  meaning_id: Jadi kita sepakat masak di rumah?
+  usage_note: Confirm agreement clearly.
+  common_mistake: Do not skip confirmation; say the final choice clearly.

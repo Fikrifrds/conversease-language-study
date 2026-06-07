@@ -1,0 +1,25 @@
+questions:
+- key: perspective_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces a viewpoint respectfully?
+  options:
+  - From my perspective, ...
+  - You're wrong.
+  - Obviously ...
+  correct_answer: From my perspective, ...
+- key: acknowledge_other_side
+  type: multiple_choice
+  prompt: Which phrase acknowledges another perspective?
+  options:
+  - I see the other side, but...
+  - No.
+  - Stop.
+  correct_answer: I see the other side, but...
+- key: balance_meaning
+  type: multiple_choice
+  prompt: What does "balance" mean?
+  options:
+  - keseimbangan
+  - kebisingan
+  - kekacauan
+  correct_answer: keseimbangan

@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your top priority.
+  target_response: My top priority is shipping the core feature safely.
+  acceptable_variations:
+  - My top priority is shipping the core feature safely.
+  - My top priority is meeting the deadline.
+- prompt: Explain what matters most.
+  target_response: What matters most is quality.
+  acceptable_variations:
+  - What matters most is quality.
+  - What matters most is speed.
+- prompt: Ask about the other person's priorities.
+  target_response: What about you? What's your top priority?
+  acceptable_variations:
+  - What about you? What's your top priority?
+  - What's your priority for this sprint?

@@ -1,0 +1,42 @@
+scenario_key: b2_solution_recommendation
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We need a recommendation. What should we do?
+learner_goal: Recommend a solution with reasoning, risk, and mitigation.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We need a recommendation. What should we do?
+  hint: Given these constraints, I'd recommend...
+  sample_answer: Given these constraints, I'd recommend starting with a two-week pilot.
+  focus: Recommend
+  expected_keywords:
+  - recommend
+  - pilot
+- coach: What's the main risk?
+  hint: The main risk is... if...
+  sample_answer: The main risk is slower progress if we over-scope the pilot.
+  focus: Risk
+  expected_keywords:
+  - main risk
+  - if
+- coach: How do we mitigate it?
+  hint: We can mitigate it by...
+  sample_answer: We can mitigate it by setting clear success metrics and a strict timeline.
+  focus: Mitigation
+  expected_keywords:
+  - mitigate
+  - metrics
+target_phrases:
+- Given these constraints, I'd recommend ...
+- The main risk is ...
+- We can mitigate it by ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

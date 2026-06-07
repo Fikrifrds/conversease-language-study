@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'We have three options: pilot, phased rollout, or full rollout.'
+  meaning_id: 'Kita punya tiga opsi: pilot, rollout bertahap, atau rollout penuh.'
+  usage_note: Structure options clearly.
+  common_mistake: Do not list too many options; keep it to 2-3.
+- phrase: The trade-off is speed versus risk and operational load.
+  meaning_id: Trade-off-nya speed versus risiko dan beban operasional.
+  usage_note: State trade-offs concisely.
+  common_mistake: Do not be vague; name risk and load.
+- phrase: Given our constraints, I'd recommend a phased rollout with clear monitoring.
+  meaning_id: Dengan constraint kita, aku rekomend rollout bertahap dengan monitoring yang jelas.
+  usage_note: Recommendation tied to constraints.
+  common_mistake: Do not recommend without referencing constraints.
+- phrase: Can we agree on the scope today and review metrics weekly?
+  meaning_id: Kita sepakat scope hari ini dan review metrik tiap minggu?
+  usage_note: Confirm alignment and cadence.
+  common_mistake: Do not end without agreement; confirm next steps.
+- phrase: Let's align on the decision criteria.
+  meaning_id: Kita align kriteria keputusan.
+  usage_note: A useful meta move to unblock decisions.
+  common_mistake: Do not argue details before aligning criteria.

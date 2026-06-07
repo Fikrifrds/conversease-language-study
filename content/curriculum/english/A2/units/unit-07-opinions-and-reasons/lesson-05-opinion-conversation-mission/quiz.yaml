@@ -1,0 +1,25 @@
+questions:
+- key: mission_ask
+  type: multiple_choice
+  prompt: Which question starts the mission?
+  options:
+  - What do you think about this restaurant?
+  - I think it's good.
+  - Because it's cheap.
+  correct_answer: What do you think about this restaurant?
+- key: polite_hesitation
+  type: multiple_choice
+  prompt: Which phrase is polite hesitation?
+  options:
+  - I'm not sure.
+  - No way.
+  - You are wrong.
+  correct_answer: I'm not sure.
+- key: meaning_idea
+  type: multiple_choice
+  prompt: What does "another idea" mean?
+  options:
+  - ide lain
+  - ide pertama
+  - ide terbaik
+  correct_answer: ide lain

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Set a realistic commitment.
+  target_response: What we can commit to is a smaller release by next week.
+  acceptable_variations:
+  - What we can commit to is a smaller release by next week.
+  - What we can commit to is a pilot by next week.
+- prompt: State earliest timeline with condition.
+  target_response: The earliest we can deliver the full scope is two weeks later, assuming no new blockers.
+  acceptable_variations:
+  - The earliest we can deliver the full scope is two weeks later, assuming no new blockers.
+  - The earliest we can deliver the full scope is in two weeks, assuming no surprises.
+- prompt: Define success criteria.
+  target_response: Success means fewer incidents and a stable rollout with clear monitoring.
+  acceptable_variations:
+  - Success means fewer incidents and a stable rollout with clear monitoring.
+  - Success means fewer tickets and a stable release.

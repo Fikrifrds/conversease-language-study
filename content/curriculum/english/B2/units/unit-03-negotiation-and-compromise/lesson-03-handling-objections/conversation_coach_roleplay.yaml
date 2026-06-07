@@ -1,0 +1,41 @@
+scenario_key: b2_negotiation_objections
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I have a concern about your proposal.
+learner_goal: 'Handle an objection: acknowledge, clarify, and revise the proposal.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I'm concerned this plan will slow us down.
+  hint: Mulai dengan I understand the concern.
+  sample_answer: I understand the concern.
+  focus: Acknowledge
+  expected_keywords:
+  - understand
+  - concern
+- coach: Ask me what part feels risky.
+  hint: Gunakan What part feels risky to you?
+  sample_answer: What part feels risky to you?
+  focus: Clarify
+  expected_keywords:
+  - risky
+- coach: Offer a revised proposal.
+  hint: Would it help if... / What if we...
+  sample_answer: Would it help if we limit reviews to high-risk changes only? What if we define simple criteria together?
+  focus: Revise proposal
+  expected_keywords:
+  - would it help
+  - what if
+target_phrases:
+- I understand the concern.
+- What part feels risky to you?
+- Would it help if ...?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

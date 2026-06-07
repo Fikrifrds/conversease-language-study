@@ -1,0 +1,21 @@
+phrases:
+- phrase: Just to clarify, who is the main user group?
+  meaning_id: Biar jelas, siapa user utama-nya?
+  usage_note: Discovery question.
+  common_mistake: Don't assume; ask.
+- phrase: 'We have two options: a quick fix or a robust solution.'
+  meaning_id: 'Kita punya dua opsi: quick fix atau solusi yang lebih robust.'
+  usage_note: Options structure.
+  common_mistake: Keep each option to one sentence.
+- phrase: I understand the concern. To reduce the risk, we can run a pilot.
+  meaning_id: Aku paham kekhawatirannya. Untuk ngurangin risiko, kita bisa pilot.
+  usage_note: Concern + mitigation.
+  common_mistake: Acknowledge first, then mitigate.
+- phrase: 'Next steps are: I''ll send a draft plan today, and you''ll review it by Friday.'
+  meaning_id: 'Next steps-nya: aku kirim draft plan hari ini, dan kamu review sebelum Jumat.'
+  usage_note: Clear follow-up.
+  common_mistake: Always assign owners and deadlines.
+- phrase: Does that timeline work for you?
+  meaning_id: Timeline itu works buat kamu?
+  usage_note: Confirm agreement.
+  common_mistake: Do not assume the timeline works.

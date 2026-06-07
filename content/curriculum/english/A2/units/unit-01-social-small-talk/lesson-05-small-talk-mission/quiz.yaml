@@ -1,0 +1,25 @@
+questions:
+  - key: past_question
+    type: multiple_choice
+    prompt: Which question is about the past?
+    options:
+      - Did you sleep well?
+      - Do you sleep well?
+      - Are you sleep well?
+    correct_answer: Did you sleep well?
+  - key: invite_join
+    type: multiple_choice
+    prompt: Which phrase invites someone to join?
+    options:
+      - Do you want to join?
+      - Where is it?
+      - I'm sorry to hear that.
+    correct_answer: Do you want to join?
+  - key: weekend_plan
+    type: multiple_choice
+    prompt: Which sentence talks about a plan?
+    options:
+      - I'm going to a new cafe.
+      - I go to a new cafe yesterday.
+      - I stayed up late tomorrow.
+    correct_answer: I'm going to a new cafe.

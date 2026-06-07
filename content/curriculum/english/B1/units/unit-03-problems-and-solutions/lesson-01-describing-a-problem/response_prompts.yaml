@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Start with: There''s a problem with ...'
+  target_response: There's a problem with the login page.
+  acceptable_variations:
+  - There's a problem with the login page.
+  - There's a problem with the app.
+- prompt: Say when it started.
+  target_response: It started this morning.
+  acceptable_variations:
+  - It started this morning.
+  - It started yesterday afternoon.
+- prompt: Say the impact with so.
+  target_response: Users can't sign in, so they can't access their lessons.
+  acceptable_variations:
+  - Users can't sign in, so they can't access their lessons.
+  - Users can't sign in, so they can't use the app.

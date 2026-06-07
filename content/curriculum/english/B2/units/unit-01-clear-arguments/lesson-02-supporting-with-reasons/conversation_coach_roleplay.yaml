@@ -1,0 +1,42 @@
+scenario_key: b2_argument_reasons
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Convince me with reasons.
+learner_goal: Support your argument with two reasons and respond to a concern.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Why should we invest in automated tests?
+  hint: Mulai dengan One reason is...
+  sample_answer: One reason is it reduces bugs in production.
+  focus: Reason 1
+  expected_keywords:
+  - one reason
+  - reduces
+- coach: What's another reason?
+  hint: Gunakan Another reason is...
+  sample_answer: Another reason is it speeds up releases because we can deploy with more confidence.
+  focus: Reason 2
+  expected_keywords:
+  - another reason
+  - because
+- coach: But writing tests takes time.
+  hint: Acknowledge + but + solusi singkat.
+  sample_answer: That's true, but we can start small and it saves time later.
+  focus: Address concern
+  expected_keywords:
+  - that's true
+  - but
+target_phrases:
+- One reason is ...
+- Another reason is ...
+- That's true, but ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

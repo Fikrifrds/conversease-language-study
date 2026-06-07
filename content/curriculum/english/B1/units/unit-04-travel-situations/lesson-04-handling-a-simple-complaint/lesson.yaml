@@ -1,0 +1,25 @@
+lesson_key: lesson-04-handling-a-simple-complaint
+slug: handling-a-simple-complaint
+title: Handling a Simple Complaint
+status: published
+estimated_minutes: 12
+conversation_situation: handling_hotel_complaint
+conversation_goal: Explain a simple problem politely and ask for help or an alternative.
+grammar_summary: Use There's a problem with... and Could you... / Could I... to complain politely and request help.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,25 @@
+lesson_key: lesson-05-meeting-participation-mission
+slug: meeting-participation-mission
+title: Meeting Participation Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_professional_meeting
+conversation_goal: 'Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.'
+grammar_summary: 'Combine: I''d like to bring up... / Just to clarify... / I noticed... / It might help if... / To summarize...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

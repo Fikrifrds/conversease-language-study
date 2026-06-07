@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Say you are looking for a charger.
+    target_response: I'm looking for a charger.
+    acceptable_variations:
+      - I'm looking for a charger.
+      - I'm looking for a phone charger.
+  - prompt: Ask which one is cheaper.
+    target_response: Which one is cheaper?
+    acceptable_variations:
+      - Which one is cheaper?
+  - prompt: Ask for help politely.
+    target_response: Could you help me?
+    acceptable_variations:
+      - Could you help me?
+      - Can you help me?

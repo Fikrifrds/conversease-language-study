@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask a culture question.
+  target_response: What is it like in your country?
+  acceptable_variations:
+  - What is it like in your country?
+  - Do people usually travel during holidays?
+- prompt: Describe it (busy but meaningful).
+  target_response: It's busy, but it's also meaningful.
+  acceptable_variations:
+  - It's busy, but it's also meaningful.
+  - It's busy, but it's also fun.
+- prompt: Ask back politely.
+  target_response: How about in your country?
+  acceptable_variations:
+  - How about in your country?
+  - How about you?

@@ -1,0 +1,9 @@
+# Grammar for Conversation
+
+Use **Summary structure**.
+
+Examples:
+
+- The article is about ...
+- The main point is ...
+- It concludes that ...

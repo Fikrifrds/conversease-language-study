@@ -1,0 +1,16 @@
+prompts:
+- prompt: Comment on reliability carefully.
+  target_response: Based on the source, it's a partial snapshot. We should verify it with our support data.
+  acceptable_variations:
+  - Based on the source, it's a partial snapshot. We should verify it with our support data.
+  - Based on the source, it may be incomplete. We should verify it with our logs.
+- prompt: Acknowledge concern and clarify timeline.
+  target_response: I understand the concern. Just to clarify, what timeline did we promise?
+  acceptable_variations:
+  - I understand the concern. Just to clarify, what timeline did we promise?
+  - I understand the concern. Just to clarify, what deadline did we commit to?
+- prompt: Close with next steps.
+  target_response: 'Next steps are: I''ll share an update today, and we''ll confirm a revised timeline by Friday.'
+  acceptable_variations:
+  - 'Next steps are: I''ll share an update today, and we''ll confirm a revised timeline by Friday.'
+  - 'Next steps are: I''ll send a summary today, and we''ll confirm the plan tomorrow.'

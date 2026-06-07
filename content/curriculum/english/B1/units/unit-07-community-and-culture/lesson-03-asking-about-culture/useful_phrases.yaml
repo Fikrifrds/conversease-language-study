@@ -1,0 +1,21 @@
+phrases:
+- phrase: What is it like in your country?
+  meaning_id: Gimana di negara kamu?
+  usage_note: A respectful culture question.
+  common_mistake: Do not say "What like your country?" Use What is it like...?
+- phrase: Do people usually travel to visit family?
+  meaning_id: Orang biasanya mudik/berkunjung ke keluarga?
+  usage_note: A polite habit question.
+  common_mistake: Do not say "People usually travel?" without do in a question.
+- phrase: It's busy, but it's also meaningful.
+  meaning_id: Ramai, tapi juga bermakna.
+  usage_note: A balanced description.
+  common_mistake: Do not drop the second it's; keep the structure clear.
+- phrase: Mostly we share food and spend time together.
+  meaning_id: Kebanyakan kita berbagi makanan dan kumpul.
+  usage_note: Mostly is a natural frequency word.
+  common_mistake: Do not say "Mostly we sharing"; use share.
+- phrase: How about in your country?
+  meaning_id: Kalau di negara kamu gimana?
+  usage_note: A polite way to ask back.
+  common_mistake: Do not say "How about your country?" without in if you mean the place.

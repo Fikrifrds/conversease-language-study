@@ -1,0 +1,25 @@
+questions:
+- key: mirror_phrase
+  type: multiple_choice
+  prompt: Which phrase mirrors what someone said without assuming?
+  options:
+  - What I'm hearing is ...
+  - You're wrong.
+  - No concerns.
+  correct_answer: What I'm hearing is ...
+- key: coaching_question
+  type: multiple_choice
+  prompt: Which question defines outcomes clearly?
+  options:
+  - What would success look like in the next two weeks?
+  - Why are you like that?
+  - No question.
+  correct_answer: What would success look like in the next two weeks?
+- key: ownership
+  type: multiple_choice
+  prompt: Which phrase clearly assigns ownership?
+  options:
+  - 'Next steps are: you''ll ..., and I''ll ...'
+  - Someone will do it.
+  - Maybe later.
+  correct_answer: 'Next steps are: you''ll ..., and I''ll ...'

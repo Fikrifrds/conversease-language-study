@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask discovery questions.
+  target_response: Just to clarify, who is the main user group and what's the biggest pain point?
+  acceptable_variations:
+  - Just to clarify, who is the main user group and what's the biggest pain point?
+  - Just to clarify, what is your timeline and success criteria?
+- prompt: Explain options and trade-off.
+  target_response: 'We have two options: a quick fix this week, or a more robust solution in two weeks.'
+  acceptable_variations:
+  - 'We have two options: a quick fix this week, or a more robust solution in two weeks.'
+  - 'We have two options: a pilot first, or a full rollout later.'
+- prompt: Confirm next steps and timeline.
+  target_response: 'Next steps are: I''ll send a draft plan today, and you''ll review it by Friday. Does that timeline work for you?'
+  acceptable_variations:
+  - 'Next steps are: I''ll send a draft plan today, and you''ll review it by Friday. Does that timeline work for you?'
+  - 'Next steps are: I''ll send the draft tomorrow, and you''ll review it by next week. Would that work?'

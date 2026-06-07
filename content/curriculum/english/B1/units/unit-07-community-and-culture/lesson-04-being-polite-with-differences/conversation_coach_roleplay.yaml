@@ -1,0 +1,40 @@
+scenario_key: b1_culture_polite_differences
+mode: lesson_practice_coach
+level_code: B1
+opening_line: In my country, people usually do it differently.
+learner_goal: React politely, explain your habit, and show respect.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: In my country, people usually eat dinner early, around 6 p.m.
+  hint: Reaksi sopan + jelaskan kebiasaanmu.
+  sample_answer: Oh, that's interesting. In my country, we often eat later.
+  focus: Polite reaction + difference
+  expected_keywords:
+  - interesting
+  - in my country
+- coach: Really? Are you used to eating early?
+  hint: Jawab dengan I'm not used to...
+  sample_answer: I'm not used to eating that early.
+  focus: Say unfamiliar politely
+  expected_keywords:
+  - not used to
+- coach: Say something respectful about my habit.
+  hint: Gunakan That sounds nice.
+  sample_answer: That sounds nice, especially if you sleep early.
+  focus: Show respect
+  expected_keywords:
+  - sounds nice
+target_phrases:
+- That's interesting.
+- I'm not used to ...
+- That sounds nice.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

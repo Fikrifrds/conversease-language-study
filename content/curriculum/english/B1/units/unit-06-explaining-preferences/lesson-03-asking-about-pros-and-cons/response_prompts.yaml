@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask about pros and cons.
+  target_response: What are the pros and cons?
+  acceptable_variations:
+  - What are the pros and cons?
+  - What are the pros and cons of this option?
+- prompt: Give one advantage (save time).
+  target_response: The advantage is you save time.
+  acceptable_variations:
+  - The advantage is you save time.
+  - The advantage is it's more convenient.
+- prompt: Give one downside (more expensive).
+  target_response: One downside is it's more expensive.
+  acceptable_variations:
+  - One downside is it's more expensive.
+  - One downside is it's crowded.

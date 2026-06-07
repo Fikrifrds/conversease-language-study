@@ -1,0 +1,45 @@
+scenario_key: a2_reschedule_coffee_plan
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Can we reschedule our coffee?
+learner_goal: Ask to reschedule, give a short reason, and agree on a new time.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Can we reschedule our coffee?
+    hint: Setuju, lalu tanya sebabnya.
+    sample_answer: Sure. What happened?
+    focus: Ask for the reason
+    expected_keywords:
+      - what happened
+      - "?"
+  - coach: Something came up at work.
+    hint: Tawarkan waktu baru dengan how about.
+    sample_answer: No problem. How about Friday evening?
+    focus: Propose a new time
+    expected_keywords:
+      - how about
+      - friday
+  - coach: Friday is good. Does 7 pm work for you?
+    hint: Setuju dan konfirmasi tempat.
+    sample_answer: Yes, 7 pm works. Same cafe?
+    focus: Confirm time and place
+    expected_keywords:
+      - works
+      - same cafe
+      - "?"
+
+target_phrases:
+  - Can we reschedule?
+  - Something came up.
+  - Does 7 pm work for you?
+  - No problem.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,25 @@
+questions:
+  - key: reaction_bad_news
+    type: multiple_choice
+    prompt: Which phrase is a polite reaction to bad news?
+    options:
+      - I'm sorry to hear that.
+      - That's great!
+      - See you later.
+    correct_answer: I'm sorry to hear that.
+  - key: reaction_good_news
+    type: multiple_choice
+    prompt: Which phrase is a natural reaction to "I finished my project"?
+    options:
+      - That's great!
+      - I'm sorry to hear that.
+      - Where is it?
+    correct_answer: That's great!
+  - key: past_negative
+    type: multiple_choice
+    prompt: Choose the correct sentence.
+    options:
+      - I didn't sleep well.
+      - I didn't slept well.
+      - I don't slept well.
+    correct_answer: I didn't sleep well.

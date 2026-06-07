@@ -1,0 +1,16 @@
+prompts:
+- prompt: Acknowledge a challenging question.
+  target_response: That's a fair question. Let me clarify what risk we're accepting.
+  acceptable_variations:
+  - That's a fair question. Let me clarify what risk we're accepting.
+  - That's a fair question. Let me clarify what we mean by risk here.
+- prompt: Give a short answer with a condition.
+  target_response: 'The short answer is: it''s manageable if we pilot first and monitor closely.'
+  acceptable_variations:
+  - 'The short answer is: it''s manageable if we pilot first and monitor closely.'
+  - 'The short answer is: yes, if we start with a pilot.'
+- prompt: Reframe to the key point.
+  target_response: What I'd emphasize is that standards need ownership and enforcement.
+  acceptable_variations:
+  - What I'd emphasize is that standards need ownership and enforcement.
+  - What I'd emphasize is that we need clear accountability.

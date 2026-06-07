@@ -1,0 +1,21 @@
+phrases:
+  - phrase: I'm looking for a charger.
+    meaning_id: Saya cari charger.
+    usage_note: Explain what you want.
+    common_mistake: Do not say "I am search".
+  - phrase: Do you have it?
+    meaning_id: Ada?
+    usage_note: Ask if it is available.
+    common_mistake: Make sure the item is clear.
+  - phrase: Which one is cheaper?
+    meaning_id: Yang mana lebih murah?
+    usage_note: Compare two options.
+    common_mistake: Do not say "Which one cheap?"
+  - phrase: I'll take this one.
+    meaning_id: Saya ambil yang ini.
+    usage_note: Choose an option.
+    common_mistake: Do not say "I take".
+  - phrase: Could you help me?
+    meaning_id: Bisa bantu saya?
+    usage_note: Ask for help politely.
+    common_mistake: Do not forget you.

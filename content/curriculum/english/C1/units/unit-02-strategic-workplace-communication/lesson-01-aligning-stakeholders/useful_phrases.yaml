@@ -1,0 +1,21 @@
+phrases:
+- phrase: To make sure we're aligned, can you share your top priority?
+  meaning_id: Biar kita aligned, bisa share prioritas utama kamu?
+  usage_note: A strategic opener to align goals.
+  common_mistake: Do not assume priorities; ask explicitly.
+- phrase: From your perspective, what's the biggest constraint?
+  meaning_id: Dari perspektif kamu, constraint terbesarnya apa?
+  usage_note: Invite constraints without blame.
+  common_mistake: Do not sound accusatory; keep it neutral.
+- phrase: The key constraint is capacity.
+  meaning_id: Constraint utamanya kapasitas.
+  usage_note: Name a constraint clearly.
+  common_mistake: Do not list many constraints; name the key one first.
+- phrase: Can we agree that we ship a smaller scope first?
+  meaning_id: Kita sepakat nggak kalau kita ship scope kecil dulu?
+  usage_note: Move toward a decision.
+  common_mistake: Do not end with open discussion; confirm agreement.
+- phrase: I'll capture the decision and circulate it today.
+  meaning_id: Aku rangkum keputusannya dan share hari ini.
+  usage_note: Close with clear next step.
+  common_mistake: Do not say "I will capturing"; use I'll capture.

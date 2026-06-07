@@ -1,0 +1,42 @@
+scenario_key: a2_opinion_mission_restaurant
+mode: lesson_practice_coach
+level_code: A2
+opening_line: What do you think about this restaurant?
+learner_goal: Ask for an opinion, respond politely, and suggest an alternative with a reason.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What do you think about this restaurant?
+  hint: Jawab dengan opini + because.
+  sample_answer: I think it's good because it's cheap.
+  focus: Opinion with reason
+  expected_keywords:
+  - i think
+  - because
+- coach: Any concern?
+  hint: 'Tolak halus: I''m not sure + might be ...'
+  sample_answer: I'm not sure. The service might be slow.
+  focus: Polite concern
+  expected_keywords:
+  - not sure
+  - might
+- coach: That's fair. Do you have another idea?
+  hint: Kasih alternatif + because.
+  sample_answer: Yes. I think the cafe next door is better because it is quieter.
+  focus: Suggest alternative with reason
+  expected_keywords:
+  - better
+  - because
+target_phrases:
+- I'm not sure.
+- That's fair.
+- Because it's quieter.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

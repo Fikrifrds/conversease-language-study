@@ -1,0 +1,25 @@
+questions:
+  - key: driver_question
+    type: multiple_choice
+    prompt: What does "Where to?" mean?
+    options:
+      - Mau ke mana?
+      - Berapa harganya?
+      - Kamu sibuk?
+    correct_answer: Mau ke mana?
+  - key: ask_travel_time
+    type: multiple_choice
+    prompt: Which question asks about travel time?
+    options:
+      - How long will it take?
+      - How much is it?
+      - Which platform?
+    correct_answer: How long will it take?
+  - key: polite_request
+    type: multiple_choice
+    prompt: Which sentence is a polite request to the driver?
+    options:
+      - Please take the fastest route.
+      - I like the fastest route.
+      - Where are you from?
+    correct_answer: Please take the fastest route.

@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your goal (speaking confidently).
+  target_response: My goal is to speak more confidently.
+  acceptable_variations:
+  - My goal is to speak more confidently.
+  - My goal is to speak English more confidently.
+- prompt: Give a deadline (end of this month).
+  target_response: By the end of this month.
+  acceptable_variations:
+  - By the end of this month.
+  - By next month.
+- prompt: Give one reason (meetings).
+  target_response: Because I want to join meetings without feeling nervous.
+  acceptable_variations:
+  - Because I want to join meetings without feeling nervous.
+  - Because I want to speak more comfortably at work.

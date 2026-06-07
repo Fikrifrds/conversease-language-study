@@ -1,0 +1,16 @@
+prompts:
+- prompt: Summarize the decision.
+  target_response: To summarize, we agreed to keep scope limited to the core feature.
+  acceptable_variations:
+  - To summarize, we agreed to keep scope limited to the core feature.
+  - To summarize, we agreed to move updates to a written summary.
+- prompt: State action items with owners.
+  target_response: 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
+  acceptable_variations:
+  - 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
+  - 'Action items are: I''ll draft the doc, and you''ll review it.'
+- prompt: Set the next checkpoint.
+  target_response: We'll check progress on Thursday.
+  acceptable_variations:
+  - We'll check progress on Thursday.
+  - We'll check progress next week.

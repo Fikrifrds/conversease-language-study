@@ -1,0 +1,42 @@
+scenario_key: b2_info_new_information
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I found new information about this topic.
+learner_goal: Respond to new information, update your view, and ask a follow-up question.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I found a report that contradicts what we read.
+  hint: I wasn't aware of that.
+  sample_answer: Oh, I wasn't aware of that.
+  focus: Acknowledge
+  expected_keywords:
+  - aware
+- coach: It says the sample size was very small.
+  hint: That changes things + request understanding.
+  sample_answer: That changes things. I'd like to understand the methodology.
+  focus: Update view + ask
+  expected_keywords:
+  - changes
+  - understand
+- coach: Agree on next steps.
+  hint: We should check... Can you share... Then we can revise...
+  sample_answer: We should check the full report. Can you share the link? Then we can revise our conclusion.
+  focus: Next steps
+  expected_keywords:
+  - check
+  - share
+  - revise
+target_phrases:
+- I wasn't aware of that.
+- That changes things.
+- I'd like to understand ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

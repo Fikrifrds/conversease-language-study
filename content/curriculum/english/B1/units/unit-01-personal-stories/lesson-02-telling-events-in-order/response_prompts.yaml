@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start with first (check in).
+  target_response: First, we checked in at the hotel.
+  acceptable_variations:
+  - First, we checked in at the hotel.
+  - First, we checked in.
+- prompt: 'Ask: What happened after that?'
+  target_response: What happened after that?
+  acceptable_variations:
+  - What happened after that?
+  - What happened next?
+- prompt: End with finally (went back).
+  target_response: Finally, we went back early.
+  acceptable_variations:
+  - Finally, we went back early.
+  - Finally, we went home early.

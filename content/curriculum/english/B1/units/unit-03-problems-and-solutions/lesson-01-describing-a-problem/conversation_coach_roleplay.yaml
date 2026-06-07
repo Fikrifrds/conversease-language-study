@@ -1,0 +1,42 @@
+scenario_key: b1_problem_describe
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's going on?
+learner_goal: Describe the problem, say when it started, and explain the impact.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's going on?
+  hint: 'Mulai dengan: There''s a problem with ...'
+  sample_answer: There's a problem with the login page.
+  focus: State the problem
+  expected_keywords:
+  - problem
+  - with
+- coach: When did it start?
+  hint: Jawab kapan mulai.
+  sample_answer: It started this morning when we deployed the update.
+  focus: State timing and trigger
+  expected_keywords:
+  - started
+  - when
+- coach: What is the impact?
+  hint: Jelaskan dampak pakai so.
+  sample_answer: Users can't sign in, so they can't access their lessons.
+  focus: Explain impact
+  expected_keywords:
+  - can't
+  - so
+target_phrases:
+- There's a problem with ...
+- It started when ...
+- '..., so ...'
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

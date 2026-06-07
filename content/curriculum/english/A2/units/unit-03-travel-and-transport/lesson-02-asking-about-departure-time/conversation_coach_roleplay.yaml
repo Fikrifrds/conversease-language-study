@@ -1,0 +1,44 @@
+scenario_key: a2_ask_departure_time_station
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Excuse me. What time does the train leave?
+learner_goal: Ask about the departure time, confirm the platform, and ask about the trip duration.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Which train?
+    hint: Sebutkan tujuan keretanya.
+    sample_answer: The train to Bandung.
+    focus: Specify the train
+    expected_keywords:
+      - train
+      - bandung
+  - coach: It leaves at 6:30 pm.
+    hint: Konfirmasi platformnya.
+    sample_answer: Okay. Which platform?
+    focus: Ask the platform
+    expected_keywords:
+      - which platform
+      - "?"
+  - coach: Platform 2.
+    hint: Tanya durasi perjalanan.
+    sample_answer: Great. How long is the trip?
+    focus: Ask the duration
+    expected_keywords:
+      - how long
+      - "?"
+
+target_phrases:
+  - What time does the train leave?
+  - Which platform?
+  - How long is the trip?
+  - Excuse me.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

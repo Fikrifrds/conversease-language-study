@@ -1,0 +1,42 @@
+scenario_key: a2_opinion_because_reasons
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Do you like this cafe?
+learner_goal: Say your opinion and give a simple reason using because.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Do you like this cafe?
+  hint: Jawab yes/no + opini singkat.
+  sample_answer: Yes, I like it.
+  focus: Give an opinion
+  expected_keywords:
+  - 'yes'
+  - like
+- coach: Why?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because the coffee is good.
+  focus: Give a reason
+  expected_keywords:
+  - because
+  - good
+- coach: What else do you like about it?
+  hint: Tambahkan satu alasan lain.
+  sample_answer: Because it is quiet and relaxing.
+  focus: Add another reason
+  expected_keywords:
+  - because
+  - quiet
+target_phrases:
+- Because the coffee is good.
+- I agree.
+- Because it is relaxing.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,45 @@
+scenario_key: b2_client_mission
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We need help with onboarding. Can you walk us through options?
+learner_goal: 'Handle a client conversation end-to-end: needs, options, concerns, and next steps.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start by understanding our needs.
+  hint: Just to clarify... biggest pain point...
+  sample_answer: Just to clarify, who is the main user group and what's the biggest pain point today?
+  focus: Discovery
+  expected_keywords:
+  - clarify
+  - pain point
+- coach: Now explain two options and a trade-off, then recommend one.
+  hint: We have two options... The trade-off is... I'd recommend...
+  sample_answer: 'We have two options: a quick fix this week, or a more robust solution in two weeks. The trade-off is speed versus stability. I''d recommend the robust option if the timeline allows.'
+  focus: Options + recommendation
+  expected_keywords:
+  - two options
+  - trade-off
+  - recommend
+- coach: We are concerned about disruption. Handle it and confirm next steps.
+  hint: I understand the concern... To reduce the risk... Next steps are... Does that timeline work...?
+  sample_answer: 'I understand the concern. To reduce the risk, we can run a two-week pilot and send weekly summaries. Next steps are: I''ll send a draft plan today, and you''ll review it by Friday. Does that timeline work for you?'
+  focus: Concerns + next steps
+  expected_keywords:
+  - understand
+  - reduce
+  - next steps
+  - timeline
+target_phrases:
+- Just to clarify, ...
+- We have two options ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

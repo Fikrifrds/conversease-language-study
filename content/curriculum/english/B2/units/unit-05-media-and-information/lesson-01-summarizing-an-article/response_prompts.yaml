@@ -1,0 +1,16 @@
+prompts:
+- prompt: State the topic.
+  target_response: The article is about how remote work affects productivity.
+  acceptable_variations:
+  - The article is about how remote work affects productivity.
+  - The article is about media bias.
+- prompt: State the main point.
+  target_response: The main point is productivity improves with clear communication rules.
+  acceptable_variations:
+  - The main point is productivity improves with clear communication rules.
+  - The main point is reliable sources matter.
+- prompt: State the conclusion.
+  target_response: It concludes that hybrid setups work best for many teams.
+  acceptable_variations:
+  - It concludes that hybrid setups work best for many teams.
+  - It concludes that we need clearer guidelines.

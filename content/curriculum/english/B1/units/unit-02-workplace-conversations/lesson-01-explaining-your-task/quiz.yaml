@@ -1,0 +1,25 @@
+questions:
+- key: work_phrase
+  type: multiple_choice
+  prompt: Which sentence is a work status update?
+  options:
+  - I'm working on the onboarding email flow.
+  - I like emails.
+  - I'm sleep now.
+  correct_answer: I'm working on the onboarding email flow.
+- key: meaning_blocker
+  type: multiple_choice
+  prompt: What does "blocker" mean at work?
+  options:
+  - hambatan
+  - liburan
+  - rapat
+  correct_answer: hambatan
+- key: next_step
+  type: multiple_choice
+  prompt: Which phrase asks about the next action?
+  options:
+  - What's the next step?
+  - How was it?
+  - Where is it?
+  correct_answer: What's the next step?

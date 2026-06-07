@@ -1,0 +1,41 @@
+scenario_key: b2_negotiation_proposal
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We need a plan. What do you propose?
+learner_goal: Make a proposal, suggest a timeline, and check agreement.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What do you propose?
+  hint: Gunakan I propose we...
+  sample_answer: I propose we do a small pilot first.
+  focus: Make proposal
+  expected_keywords:
+  - propose
+- coach: What's the timeline?
+  hint: How about we run it for ... weeks?
+  sample_answer: How about we run it for two weeks and review the results?
+  focus: Suggest timeline
+  expected_keywords:
+  - how about
+  - weeks
+- coach: Check if it works for me.
+  hint: Would that work for you?
+  sample_answer: Would that work for you?
+  focus: Check agreement
+  expected_keywords:
+  - would
+  - work
+target_phrases:
+- I propose we ...
+- How about we ...?
+- Would that work for you?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

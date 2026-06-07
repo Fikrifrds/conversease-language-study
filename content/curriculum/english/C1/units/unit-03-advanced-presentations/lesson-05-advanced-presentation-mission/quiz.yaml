@@ -1,0 +1,25 @@
+questions:
+- key: fair_question_mission
+  type: multiple_choice
+  prompt: Which phrase acknowledges a tough question calmly?
+  options:
+  - That's a fair question.
+  - That's wrong.
+  - Stop.
+  correct_answer: That's a fair question.
+- key: signpost_transition
+  type: multiple_choice
+  prompt: Which phrase is a transition signpost?
+  options:
+  - That brings me to ...
+  - Anyway.
+  - No.
+  correct_answer: That brings me to ...
+- key: next_steps_close
+  type: multiple_choice
+  prompt: Which phrase introduces next steps?
+  options:
+  - Next steps are ...
+  - Maybe later.
+  - No need.
+  correct_answer: Next steps are ...

@@ -1,0 +1,21 @@
+phrases:
+- phrase: The direction I'd like to set is stabilizing the billing flow first.
+  meaning_id: 'Arah yang mau aku set: stabilisasi billing dulu.'
+  usage_note: A direct leadership framing.
+  common_mistake: Do not give many directions at once; pick one priority.
+- phrase: Success looks like fewer incidents and faster completion rates.
+  meaning_id: Sukses artinya incident berkurang dan completion rate lebih cepat.
+  usage_note: Define success criteria.
+  common_mistake: Do not keep success vague; name measurable outcomes.
+- phrase: I'd like you to own the rollout plan.
+  meaning_id: Aku minta kamu own rollout plan.
+  usage_note: Assign ownership clearly.
+  common_mistake: Do not assign ownership without clarity; say who owns what.
+- phrase: Let's align on scope and keep it time-boxed to two weeks.
+  meaning_id: Kita align scope dan time-box dua minggu.
+  usage_note: Set boundaries and timeline.
+  common_mistake: Do not let scope creep; time-box it.
+- phrase: Does that direction make sense to you?
+  meaning_id: Arah itu masuk akal buat kamu?
+  usage_note: Check alignment after setting direction.
+  common_mistake: Do not assume agreement; check it.

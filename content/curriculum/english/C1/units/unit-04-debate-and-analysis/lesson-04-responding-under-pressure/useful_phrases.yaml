@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Let me be clear: we have indicators, not proof yet.'
+  meaning_id: 'Biar jelas: kita punya indikator, belum bukti.'
+  usage_note: Calmly clarify what you know.
+  common_mistake: Do not overclaim; be explicit about limits.
+- phrase: I understand the concern. However, the key point is that waiting increases risk.
+  meaning_id: 'Aku paham concern-nya. Tapi poin kuncinya: menunggu meningkatkan risiko.'
+  usage_note: Acknowledge then pivot to key point.
+  common_mistake: Do not ignore concern; acknowledge first.
+- phrase: If you look at the last four weeks, incident volume has doubled.
+  meaning_id: Kalau lihat 4 minggu terakhir, volume incident naik dua kali lipat.
+  usage_note: Use a precise reference window for evidence.
+  common_mistake: Do not say it's worse; quantify it.
+- phrase: The key point is ...
+  meaning_id: Poin kuncinya adalah ...
+  usage_note: Refocus under pressure.
+  common_mistake: Do not add many points; focus on one.
+- phrase: We run a pilot this week and review results before scaling.
+  meaning_id: Kita pilot minggu ini dan review hasil sebelum scaling.
+  usage_note: Offer a controlled next step.
+  common_mistake: Do not propose a huge rollout immediately.

@@ -1,0 +1,25 @@
+questions:
+- key: ask_opinion
+  type: multiple_choice
+  prompt: Which sentence asks for an opinion?
+  options:
+  - What do you think about it?
+  - I think it is good.
+  - Because it is nice.
+  correct_answer: What do you think about it?
+- key: meaning_might
+  type: multiple_choice
+  prompt: What does "might" mean?
+  options:
+  - mungkin
+  - pasti
+  - tidak pernah
+  correct_answer: mungkin
+- key: because_sentence
+  type: multiple_choice
+  prompt: Choose the best because sentence.
+  options:
+  - Because the beaches are beautiful.
+  - Because beautiful beaches.
+  - Because are beautiful.
+  correct_answer: Because the beaches are beautiful.

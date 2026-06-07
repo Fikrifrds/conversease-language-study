@@ -1,0 +1,25 @@
+questions:
+- key: almost_done
+  type: multiple_choice
+  prompt: What does "almost done" mean?
+  options:
+  - hampir selesai
+  - baru mulai
+  - sudah lupa
+  correct_answer: hampir selesai
+- key: double_check
+  type: multiple_choice
+  prompt: What does "double-check" mean?
+  options:
+  - cek lagi
+  - hapus
+  - tanya ulang
+  correct_answer: cek lagi
+- key: might_need
+  type: multiple_choice
+  prompt: What does "I might need" express?
+  options:
+  - kemungkinan
+  - kepastian
+  - penolakan
+  correct_answer: kemungkinan

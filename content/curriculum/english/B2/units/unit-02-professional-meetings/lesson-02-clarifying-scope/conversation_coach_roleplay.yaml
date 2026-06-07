@@ -1,0 +1,42 @@
+scenario_key: b2_meeting_clarify_scope
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Let's clarify scope for this sprint.
+learner_goal: Ask what is in scope, check if a specific item is included, and confirm what is out of scope.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Ask what is in scope for this sprint.
+  hint: Gunakan Just to clarify...
+  sample_answer: Just to clarify, what exactly is in scope for this sprint?
+  focus: Ask scope
+  expected_keywords:
+  - clarify
+  - in scope
+- coach: Ask if the admin dashboard is included.
+  hint: Gunakan Does this include...?
+  sample_answer: Does this include the admin dashboard changes?
+  focus: Ask inclusion
+  expected_keywords:
+  - include
+  - admin
+- coach: Confirm what is out of scope and next step.
+  hint: Use out of scope + I'll update...
+  sample_answer: Got it. So that's out of scope for now. I'll update the ticket list.
+  focus: Confirm + next step
+  expected_keywords:
+  - out of scope
+  - update
+target_phrases:
+- Just to clarify, ...
+- Does this include ...?
+- That's out of scope.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,25 @@
+questions:
+- key: signposting_words
+  type: multiple_choice
+  prompt: Which set are signposting words?
+  options:
+  - First / Next / Finally
+  - Blue / Green / Red
+  - Yesterday / Tomorrow / Never
+  correct_answer: First / Next / Finally
+- key: walk_you_through
+  type: multiple_choice
+  prompt: What does "walk you through" mean?
+  options:
+  - menjelaskan langkah demi langkah
+  - jalan-jalan
+  - menolak ide
+  correct_answer: menjelaskan langkah demi langkah
+- key: summarize_verb
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - Let me summarize.
+  - Let me summary.
+  - Let me summarizing.
+  correct_answer: Let me summarize.

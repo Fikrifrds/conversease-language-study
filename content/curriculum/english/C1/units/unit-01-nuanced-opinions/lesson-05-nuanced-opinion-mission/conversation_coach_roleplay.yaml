@@ -1,0 +1,44 @@
+scenario_key: c1_nuance_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We need a nuanced view before we decide.
+learner_goal: Show nuance, balance, calibrated certainty, and soft disagreement in one discussion.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start with a nuanced stance and a limitation.
+  hint: To some extent... That said...
+  sample_answer: To some extent, yes—especially for new projects. That said, we need exceptions for legacy systems.
+  focus: Nuanced stance
+  expected_keywords:
+  - to some extent
+  - that said
+- coach: Balance two viewpoints and conclude.
+  hint: On the one hand... On the other hand... On balance...
+  sample_answer: On the one hand, speed matters. On the other hand, stability reduces risk. On balance, I'd prioritize stability with a limited rollout.
+  focus: Balance
+  expected_keywords:
+  - on the one hand
+  - on the other hand
+  - on balance
+- coach: Disagree softly and propose an alternative plan.
+  hint: I see your point, but... I might frame it differently...
+  sample_answer: 'I see your point, but I''m not sure I''d go that far. I might frame it differently: limited launch first, then full rollout after we review the data.'
+  focus: Soft disagreement
+  expected_keywords:
+  - see your point
+  - frame
+  - limited
+target_phrases:
+- To some extent, ...
+- On balance, ...
+- I see your point, but ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

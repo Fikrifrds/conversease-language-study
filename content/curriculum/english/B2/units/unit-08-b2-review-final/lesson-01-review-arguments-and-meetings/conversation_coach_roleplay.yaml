@@ -1,0 +1,43 @@
+scenario_key: b2_review_meeting
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Can you summarize your position?
+learner_goal: State a position, support it, then close with summary and next steps.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Can you summarize your position?
+  hint: My position is that...
+  sample_answer: My position is that we should prioritize fixing the billing flow.
+  focus: Position
+  expected_keywords:
+  - position
+  - prioritize
+- coach: What's your main reason?
+  hint: The main reason is...
+  sample_answer: The main reason is it affects revenue and support workload.
+  focus: Reason
+  expected_keywords:
+  - main reason
+  - affects
+- coach: Close with a summary and next steps.
+  hint: To summarize... Next steps are...
+  sample_answer: 'To summarize, we focus on billing first. Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  focus: Close
+  expected_keywords:
+  - to summarize
+  - next steps
+  - by
+target_phrases:
+- My position is that ...
+- The main reason is ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

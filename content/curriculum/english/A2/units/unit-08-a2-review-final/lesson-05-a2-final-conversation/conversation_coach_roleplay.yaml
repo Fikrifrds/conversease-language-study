@@ -1,0 +1,42 @@
+scenario_key: a2_final_conversation
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hey! How have you been?
+learner_goal: 'Finish a longer conversation: small talk, past, opinion with because, and make a plan.'
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hey! How have you been?
+  hint: Jawab singkat, lalu bilang kabar kamu.
+  sample_answer: Good. A bit tired, though.
+  focus: Small talk
+  expected_keywords:
+  - good
+  - tired
+- coach: Would you recommend the cafe?
+  hint: Jawab dengan yes + because + reason.
+  sample_answer: Yes, because the coffee is good and it is quiet.
+  focus: Recommend with reason
+  expected_keywords:
+  - because
+  - coffee
+- coach: Nice. Are you free on Saturday afternoon?
+  hint: Jawab ya/tidak + usulkan waktu.
+  sample_answer: Yes, I am. Let's meet at 3 p.m.
+  focus: Confirm plan
+  expected_keywords:
+  - 'yes'
+  - meet
+target_phrases:
+- How have you been?
+- Yes, because...
+- Are you free on Saturday?
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

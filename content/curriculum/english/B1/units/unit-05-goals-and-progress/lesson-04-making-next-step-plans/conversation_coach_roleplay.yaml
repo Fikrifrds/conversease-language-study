@@ -1,0 +1,42 @@
+scenario_key: b1_goals_next_step_plan
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's your next step?
+learner_goal: State a next step and set a simple schedule.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your next step?
+  hint: Jawab dengan My next step is to ...
+  sample_answer: My next step is to practice with Conversation Coach.
+  focus: State next step
+  expected_keywords:
+  - next step
+  - to
+- coach: How often will you do it this week?
+  hint: Jawab dengan ... times this week.
+  sample_answer: I'll do it three times this week.
+  focus: Set schedule
+  expected_keywords:
+  - times
+  - week
+- coach: Great. How will you keep it realistic?
+  hint: Gunakan keep it simple.
+  sample_answer: I'm going to keep it simple and do short sessions.
+  focus: Keep the plan realistic
+  expected_keywords:
+  - keep
+  - simple
+target_phrases:
+- My next step is to ...
+- I'll do it ... times this week.
+- I'll keep it simple.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

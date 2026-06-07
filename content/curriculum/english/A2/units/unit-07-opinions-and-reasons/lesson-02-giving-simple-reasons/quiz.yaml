@@ -1,0 +1,25 @@
+questions:
+- key: because_usage
+  type: multiple_choice
+  prompt: Choose the best reason sentence.
+  options:
+  - Because the coffee is good.
+  - Because good coffee.
+  - Because is good.
+  correct_answer: Because the coffee is good.
+- key: agree_phrase
+  type: multiple_choice
+  prompt: Which phrase means setuju?
+  options:
+  - I agree.
+  - I afraid.
+  - I again.
+  correct_answer: I agree.
+- key: quiet_meaning
+  type: multiple_choice
+  prompt: What does "quiet" mean?
+  options:
+  - tenang
+  - ramai
+  - kotor
+  correct_answer: tenang

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Introduce an example.
+  target_response: For example, last quarter we had three new joiners who felt lost.
+  acceptable_variations:
+  - For example, last quarter we had three new joiners who felt lost.
+  - For example, we saw the same issue last month.
+- prompt: Describe the impact with so.
+  target_response: So they kept asking in multiple channels.
+  acceptable_variations:
+  - So they kept asking in multiple channels.
+  - So it slowed the team down.
+- prompt: Give a specific suggestion with such as.
+  target_response: Such as pairing each new hire with one mentor.
+  acceptable_variations:
+  - Such as pairing each new hire with one mentor.
+  - Such as creating a simple checklist.

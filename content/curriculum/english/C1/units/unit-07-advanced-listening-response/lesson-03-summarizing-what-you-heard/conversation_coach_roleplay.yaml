@@ -1,0 +1,42 @@
+scenario_key: c1_summarizing
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Can you summarize what we discussed?
+learner_goal: Give a structured summary with decisions and open questions, then confirm.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start with a summary of the facts and concerns.
+  hint: So, to summarize...
+  sample_answer: 'So, to summarize: the timeline is tight and clients are sensitive to change.'
+  focus: Summary
+  expected_keywords:
+  - to summarize
+  - timeline
+- coach: State the decision and open questions.
+  hint: The decision is... The open questions are...
+  sample_answer: The decision is to propose a phased rollout with clear metrics. The open questions are around resourcing and internal alignment.
+  focus: Decision + open questions
+  expected_keywords:
+  - decision
+  - open questions
+- coach: Confirm your summary with the group.
+  hint: Just to confirm... Does that capture it...?
+  sample_answer: Just to confirm, I'll send the summary and ask if anything is missing. Does that capture it accurately?
+  focus: Confirm
+  expected_keywords:
+  - confirm
+  - capture
+target_phrases:
+- 'So, to summarize: ...'
+- The decision is ...
+- The open questions are ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

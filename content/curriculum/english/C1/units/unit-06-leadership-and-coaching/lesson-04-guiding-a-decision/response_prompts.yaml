@@ -1,0 +1,16 @@
+prompts:
+- prompt: List options clearly.
+  target_response: 'We have three options: pilot, phased rollout, or full rollout.'
+  acceptable_variations:
+  - 'We have three options: pilot, phased rollout, or full rollout.'
+  - 'We have two options: a pilot or a phased rollout.'
+- prompt: Recommend based on constraints.
+  target_response: Given our constraints, I'd recommend a phased rollout with clear monitoring.
+  acceptable_variations:
+  - Given our constraints, I'd recommend a phased rollout with clear monitoring.
+  - Given our constraints, I'd recommend starting with a pilot.
+- prompt: Confirm agreement on next steps.
+  target_response: Can we agree on the scope today and review metrics weekly?
+  acceptable_variations:
+  - Can we agree on the scope today and review metrics weekly?
+  - Can we agree on scope today and check in weekly?

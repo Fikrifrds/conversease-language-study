@@ -1,0 +1,25 @@
+lesson_key: lesson-02-suggesting-a-solution
+slug: suggesting-a-solution
+title: Suggesting a Solution
+status: published
+estimated_minutes: 12
+conversation_situation: suggesting_a_solution
+conversation_goal: Suggest a solution politely and explain why it could help.
+grammar_summary: Use We could... / We should... / I suggest... because... to propose solutions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,25 @@
+questions:
+- key: to_some_extent
+  type: multiple_choice
+  prompt: Which phrase signals partial agreement?
+  options:
+  - To some extent, ...
+  - Absolutely not.
+  - No comment.
+  correct_answer: To some extent, ...
+- key: that_said_usage
+  type: multiple_choice
+  prompt: Which phrase introduces a limitation politely?
+  options:
+  - That said, ...
+  - You're wrong.
+  - Whatever.
+  correct_answer: That said, ...
+- key: in_principle_meaning
+  type: multiple_choice
+  prompt: What does "in principle" mean?
+  options:
+  - secara prinsip (ide dasarnya)
+  - secara rahasia
+  - secara kebetulan
+  correct_answer: secara prinsip (ide dasarnya)

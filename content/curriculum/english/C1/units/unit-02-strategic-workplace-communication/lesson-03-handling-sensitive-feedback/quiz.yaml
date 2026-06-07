@@ -1,0 +1,25 @@
+questions:
+- key: flag_phrase
+  type: multiple_choice
+  prompt: Which phrase opens sensitive feedback gently?
+  options:
+  - I wanted to flag ...
+  - You did it wrong.
+  - No.
+  correct_answer: I wanted to flag ...
+- key: impact_focus
+  type: multiple_choice
+  prompt: Which sentence focuses on impact?
+  options:
+  - The impact is that ...
+  - You always ...
+  - You should know.
+  correct_answer: The impact is that ...
+- key: open_to
+  type: multiple_choice
+  prompt: Which phrase invites change politely?
+  options:
+  - Would you be open to ...?
+  - Do it now.
+  - Stop.
+  correct_answer: Would you be open to ...?

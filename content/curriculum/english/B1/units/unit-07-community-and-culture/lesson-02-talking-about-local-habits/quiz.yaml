@@ -1,0 +1,25 @@
+questions:
+- key: usually_meaning
+  type: multiple_choice
+  prompt: What does "usually" mean?
+  options:
+  - biasanya
+  - jarang
+  - tiba-tiba
+  correct_answer: biasanya
+- key: often_meaning
+  type: multiple_choice
+  prompt: What does "often" mean?
+  options:
+  - sering
+  - tidak pernah
+  - sekali
+  correct_answer: sering
+- key: especially_meaning
+  type: multiple_choice
+  prompt: What does "especially" mean?
+  options:
+  - terutama
+  - mungkin
+  - hampir
+  correct_answer: terutama

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Surface an assumption politely.
+  target_response: It seems you're assuming fewer steps automatically mean better conversion.
+  acceptable_variations:
+  - It seems you're assuming fewer steps automatically mean better conversion.
+  - It seems you're assuming speed is the main driver of conversion.
+- prompt: Ask about the underlying premise.
+  target_response: What are we assuming about user trust and clarity?
+  acceptable_variations:
+  - What are we assuming about user trust and clarity?
+  - What are we assuming about user intent here?
+- prompt: State a testable implication.
+  target_response: If that's true, then we should see drop-offs mainly on longer forms.
+  acceptable_variations:
+  - If that's true, then we should see drop-offs mainly on longer forms.
+  - If that's true, then the data should show drop-offs on step three and four.

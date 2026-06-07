@@ -1,0 +1,21 @@
+phrases:
+- phrase: Let me confirm the time.
+  meaning_id: Aku konfirmasi jamnya ya.
+  usage_note: Use this to double-check details.
+  common_mistake: Do not say "Let me sure".
+- phrase: '... right?'
+  meaning_id: '... benar?'
+  usage_note: Add right to confirm.
+  common_mistake: Do not overuse it in every sentence.
+- phrase: My name is ...
+  meaning_id: Nama saya ...
+  usage_note: Say your name clearly.
+  common_mistake: Do not say "I'm name".
+- phrase: P-A-R-K.
+  meaning_id: P-A-R-K.
+  usage_note: Spell it with letters.
+  common_mistake: Say letters clearly one by one.
+- phrase: See you tomorrow.
+  meaning_id: Sampai besok.
+  usage_note: A friendly closing.
+  common_mistake: Do not say "See you again tomorrow".

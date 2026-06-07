@@ -1,0 +1,25 @@
+questions:
+- key: on_balance_meaning
+  type: multiple_choice
+  prompt: What does "on balance" mean?
+  options:
+  - secara keseluruhan
+  - tanpa bukti
+  - terlalu cepat
+  correct_answer: secara keseluruhan
+- key: commit_phrase
+  type: multiple_choice
+  prompt: Which phrase manages expectations without overpromising?
+  options:
+  - What I can commit to is ...
+  - I guarantee ...
+  - No risk.
+  correct_answer: What I can commit to is ...
+- key: precision_phrase
+  type: multiple_choice
+  prompt: Which phrase signals precision?
+  options:
+  - To be precise, ...
+  - Maybe ...
+  - Whatever.
+  correct_answer: To be precise, ...

@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Could you help me?
+    meaning_id: Bisa bantu saya?
+    usage_note: A polite way to ask for help.
+    common_mistake: Do not forget you.
+  - phrase: What do you need?
+    meaning_id: Kamu perlu apa?
+    usage_note: A common staff question.
+    common_mistake: Keep it friendly.
+  - phrase: Can you show me where the batteries are?
+    meaning_id: Bisa tunjukkan baterai ada di mana?
+    usage_note: Ask someone to show the location.
+    common_mistake: Do not say "show where is".
+  - phrase: next to the cash register
+    meaning_id: di sebelah kasir
+    usage_note: Use this to describe a location.
+    common_mistake: Do not say "near with".
+  - phrase: Thank you for your help.
+    meaning_id: Terima kasih atas bantuannya.
+    usage_note: A polite closing.
+    common_mistake: Do not forget for.

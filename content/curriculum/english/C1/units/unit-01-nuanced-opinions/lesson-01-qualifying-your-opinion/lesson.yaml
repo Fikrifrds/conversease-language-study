@@ -1,0 +1,25 @@
+lesson_key: lesson-01-qualifying-your-opinion
+slug: qualifying-your-opinion
+title: Qualifying Your Opinion
+status: published
+estimated_minutes: 12
+conversation_situation: qualifying_opinions_in_discussion
+conversation_goal: Qualify your opinion with nuance by signaling scope, conditions, and limits.
+grammar_summary: Use To some extent... / Broadly speaking... / In principle..., but... / That said... to qualify opinions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

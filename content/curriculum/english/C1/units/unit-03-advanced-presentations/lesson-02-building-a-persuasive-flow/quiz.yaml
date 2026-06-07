@@ -1,0 +1,25 @@
+questions:
+- key: core_claim
+  type: multiple_choice
+  prompt: Which phrase states a main claim?
+  options:
+  - The core claim is that ...
+  - Core claim I ...
+  - No claim.
+  correct_answer: The core claim is that ...
+- key: evidence_suggests
+  type: multiple_choice
+  prompt: Which phrase expresses evidence carefully?
+  options:
+  - The evidence suggests ...
+  - The evidence proves ... always.
+  - No evidence.
+  correct_answer: The evidence suggests ...
+- key: outweigh_meaning
+  type: multiple_choice
+  prompt: What does "outweigh" mean?
+  options:
+  - lebih besar/lebih kuat daripada
+  - lebih kecil
+  - tidak relevan
+  correct_answer: lebih besar/lebih kuat daripada

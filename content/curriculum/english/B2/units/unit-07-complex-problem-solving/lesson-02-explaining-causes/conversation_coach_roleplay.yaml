@@ -1,0 +1,41 @@
+scenario_key: b2_root_causes
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Why do you think this problem is happening?
+learner_goal: Explain possible causes with evidence language and propose how to confirm.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Why do you think this problem is happening?
+  hint: Jawab dengan one possible cause is...
+  sample_answer: One possible cause is the new checkout design.
+  focus: Possible cause
+  expected_keywords:
+  - possible cause
+- coach: What evidence do we have?
+  hint: Pakai based on the data.
+  sample_answer: Based on the data, drop-offs increased right after the redesign.
+  focus: Evidence
+  expected_keywords:
+  - based on
+  - data
+- coach: How can we confirm this?
+  hint: Usulkan test/compare.
+  sample_answer: Let's compare load times and run a small A/B test.
+  focus: Confirm
+  expected_keywords:
+  - compare
+  - test
+target_phrases:
+- One possible cause is ...
+- Based on the data, ...
+- Let's run a small A/B test.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

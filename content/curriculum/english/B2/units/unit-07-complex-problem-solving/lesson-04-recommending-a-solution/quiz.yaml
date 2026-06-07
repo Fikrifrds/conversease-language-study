@@ -1,0 +1,25 @@
+questions:
+- key: recommend_structure
+  type: multiple_choice
+  prompt: Which sentence is a clear recommendation?
+  options:
+  - Given these constraints, I'd recommend starting with a pilot.
+  - Given constraints I recommending.
+  - Recommend now.
+  correct_answer: Given these constraints, I'd recommend starting with a pilot.
+- key: mitigate_structure
+  type: multiple_choice
+  prompt: Which sentence uses mitigation language correctly?
+  options:
+  - We can mitigate it by setting clear metrics.
+  - We can mitigate with set metrics.
+  - Mitigate is metrics.
+  correct_answer: We can mitigate it by setting clear metrics.
+- key: risk_meaning
+  type: multiple_choice
+  prompt: What does "risk" mean?
+  options:
+  - potensi masalah/kemungkinan buruk
+  - hadiah
+  - jawaban benar
+  correct_answer: potensi masalah/kemungkinan buruk

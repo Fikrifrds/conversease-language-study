@@ -1,0 +1,21 @@
+phrases:
+- phrase: How have you been?
+  meaning_id: Gimana kabarmu?
+  usage_note: A friendly small talk starter.
+  common_mistake: Do not say "How are you been".
+- phrase: What have you been working on?
+  meaning_id: Kamu lagi ngerjain apa?
+  usage_note: A follow-up question for ongoing work.
+  common_mistake: Do not say "What you working on?".
+- phrase: Do you want to grab coffee this weekend?
+  meaning_id: Kamu mau ngopi weekend ini?
+  usage_note: A natural invitation.
+  common_mistake: Do not forget to after want.
+- phrase: Are you free on Saturday afternoon?
+  meaning_id: Kamu free Sabtu sore?
+  usage_note: Ask availability for a plan.
+  common_mistake: Do not say "Are you freedom".
+- phrase: Let's meet at 3 p.m.
+  meaning_id: Ketemu jam 3 sore ya.
+  usage_note: Confirm a time.
+  common_mistake: Do not say "Let's meeting".

@@ -1,0 +1,21 @@
+phrases:
+- phrase: Maybe you should set a small daily goal.
+  meaning_id: Mungkin kamu harus bikin target kecil harian.
+  usage_note: A gentle advice sentence.
+  common_mistake: Do not say "You must"; should is softer.
+- phrase: That sounds good.
+  meaning_id: Kedengarannya bagus.
+  usage_note: A polite way to accept advice.
+  common_mistake: Do not say "That sound good"; add -s.
+- phrase: You're right.
+  meaning_id: Kamu bener.
+  usage_note: Agree and accept the point.
+  common_mistake: Do not say "You right".
+- phrase: I'll try that starting tomorrow.
+  meaning_id: Aku akan coba mulai besok.
+  usage_note: Commit to an action plan.
+  common_mistake: Don't overpromise; try is realistic.
+- phrase: Good idea. Thanks.
+  meaning_id: Ide bagus. Makasih.
+  usage_note: Close politely after advice.
+  common_mistake: Avoid just saying thanks; add good idea to show you listened.

@@ -1,0 +1,44 @@
+scenario_key: c1_review_presenting_debate
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Give me the short version of your argument.
+learner_goal: Present a structured argument and respond to challenges calmly.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Frame your argument in one sentence.
+  hint: Let me frame this...
+  sample_answer: 'Let me frame this: the goal is reliability, not just speed.'
+  focus: Frame
+  expected_keywords:
+  - frame
+  - goal
+- coach: Name your core assumption.
+  hint: The core assumption is that...
+  sample_answer: The core assumption is that incidents cost more than delay.
+  focus: Assumption
+  expected_keywords:
+  - assumption
+  - incidents
+- coach: Respond under pressure with if/then logic and summarize.
+  hint: If we accept..., then... In short...
+  sample_answer: 'If we accept speed as the priority, then we should time-box a pilot and limit scope. In short: validate with metrics, then expand safely.'
+  focus: Pressure response
+  expected_keywords:
+  - if
+  - then
+  - in short
+target_phrases:
+- 'Let me frame this: ...'
+- The core assumption is ...
+- If we accept X, then ...
+- 'In short: ...'
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

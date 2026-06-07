@@ -1,0 +1,44 @@
+scenario_key: a2_accept_or_decline_invitation
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Do you want to join our dinner tonight?
+learner_goal: Decline politely, give a short reason, and suggest another time.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Do you want to join our dinner tonight?
+    hint: Tolak dengan sopan.
+    sample_answer: Thanks, but I can't.
+    focus: Decline politely
+    expected_keywords:
+      - can't
+      - thanks
+  - coach: Oh, okay. Are you busy?
+    hint: Beri alasan singkat dengan because.
+    sample_answer: Yes. I'm busy tonight because I have a meeting.
+    focus: Give a reason
+    expected_keywords:
+      - i'm busy
+      - because
+  - coach: No problem. Maybe another time.
+    hint: Usulkan waktu lain dengan singkat.
+    sample_answer: Yes, maybe tomorrow.
+    focus: Suggest another time
+    expected_keywords:
+      - maybe
+      - tomorrow
+
+target_phrases:
+  - Thanks, but I can't.
+  - I'm busy tonight.
+  - Maybe another time.
+  - No problem.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

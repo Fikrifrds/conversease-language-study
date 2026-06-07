@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Ask where the cafe is.
+    target_response: Where is it?
+    acceptable_variations:
+      - Where is it?
+      - Where is the cafe?
+  - prompt: Ask what they ordered.
+    target_response: What did you order?
+    acceptable_variations:
+      - What did you order?
+  - prompt: Invite someone casually.
+    target_response: Do you want to go sometime?
+    acceptable_variations:
+      - Do you want to go sometime?
+      - Do you want to go together sometime?

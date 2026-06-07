@@ -1,0 +1,16 @@
+prompts:
+- prompt: Challenge logic politely.
+  target_response: I'm not sure that follows.
+  acceptable_variations:
+  - I'm not sure that follows.
+  - I'm not sure the conclusion follows from that.
+- prompt: Ask for evidence.
+  target_response: What's the evidence for that claim?
+  acceptable_variations:
+  - What's the evidence for that claim?
+  - What evidence do we have for that?
+- prompt: Offer an alternative explanation.
+  target_response: Could there be another explanation, like unclear copy or missing reassurance?
+  acceptable_variations:
+  - Could there be another explanation, like unclear copy or missing reassurance?
+  - Could there be another explanation, like trust issues?

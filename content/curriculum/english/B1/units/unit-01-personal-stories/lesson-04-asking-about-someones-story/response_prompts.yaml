@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Ask: What happened next?'
+  target_response: What happened next?
+  acceptable_variations:
+  - What happened next?
+  - What happened after that?
+- prompt: 'Ask: Why did you choose that route?'
+  target_response: Why did you choose that route?
+  acceptable_variations:
+  - Why did you choose that route?
+  - Why did you choose that one?
+- prompt: 'Ask about feelings: How did you feel?'
+  target_response: How did you feel?
+  acceptable_variations:
+  - How did you feel?
+  - How did you feel at that moment?

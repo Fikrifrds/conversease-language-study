@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you're making good progress.
+  target_response: I'm making good progress.
+  acceptable_variations:
+  - I'm making good progress.
+  - I'm making progress.
+- prompt: Say what's left (risk + numbers).
+  target_response: I still need to update the risk section and double-check the numbers.
+  acceptable_variations:
+  - I still need to update the risk section and double-check the numbers.
+  - I still need to double-check the numbers.
+- prompt: Mention one concern (time).
+  target_response: One concern is time. I might need an extra hour.
+  acceptable_variations:
+  - One concern is time. I might need an extra hour.
+  - I might need a bit more time.

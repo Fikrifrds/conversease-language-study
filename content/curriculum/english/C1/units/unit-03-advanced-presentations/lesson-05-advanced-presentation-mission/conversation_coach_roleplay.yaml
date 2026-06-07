@@ -1,0 +1,46 @@
+scenario_key: c1_advanced_presentation_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: 'Mission: present the proposal and handle questions.'
+learner_goal: Deliver an advanced presentation with signposting and handle challenging questions.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Open and frame the topic, then define a key term.
+  hint: Today I'd like to... By X, I mean...
+  sample_answer: Today I'd like to walk you through the proposal and why it matters. By 'modular architecture', I mean independent components.
+  focus: Framing
+  expected_keywords:
+  - today
+  - by
+  - i mean
+- coach: State your claim and evidence, then transition to a key trade-off.
+  hint: The core claim is... The evidence suggests... That brings me to...
+  sample_answer: 'The core claim is that this will improve delivery speed. The evidence suggests teams move faster with clear ownership. That brings me to the key trade-off: speed versus reliability.'
+  focus: Persuasion + transition
+  expected_keywords:
+  - core claim
+  - evidence suggests
+  - trade-off
+- coach: Handle a tough question and close with summary + next steps.
+  hint: That's a fair question... The short answer is... In short... Next steps are...
+  sample_answer: 'That''s a fair question. The short answer is: it''s manageable if we pilot first and monitor closely. In short, the benefits outweigh the risks if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review it by Friday.'
+  focus: Q&A + close
+  expected_keywords:
+  - fair question
+  - short answer
+  - next steps
+  - by
+target_phrases:
+- Today I'd like to ...
+- The core claim is that ...
+- That's a fair question.
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

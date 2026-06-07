@@ -1,0 +1,25 @@
+questions:
+- key: goal_sentence
+  type: multiple_choice
+  prompt: Which sentence states a goal?
+  options:
+  - My goal is to speak more confidently.
+  - I spoke yesterday.
+  - I am a goal.
+  correct_answer: My goal is to speak more confidently.
+- key: by_deadline
+  type: multiple_choice
+  prompt: What does "by the end of this month" mean?
+  options:
+  - paling lambat akhir bulan ini
+  - mulai akhir bulan ini
+  - setiap akhir bulan
+  correct_answer: paling lambat akhir bulan ini
+- key: because_reason
+  type: multiple_choice
+  prompt: Which word introduces a reason?
+  options:
+  - because
+  - so
+  - but
+  correct_answer: because

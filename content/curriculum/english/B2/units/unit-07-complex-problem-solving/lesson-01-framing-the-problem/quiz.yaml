@@ -1,0 +1,25 @@
+questions:
+- key: define_problem
+  type: multiple_choice
+  prompt: Which phrase helps frame a problem before proposing solutions?
+  options:
+  - Let's define the problem statement first.
+  - Do it now.
+  - No need to discuss.
+  correct_answer: Let's define the problem statement first.
+- key: scope_meaning
+  type: multiple_choice
+  prompt: What does "scope" mean in a project discussion?
+  options:
+  - batas/topik yang dibahas
+  - alat musik
+  - waktu makan
+  correct_answer: batas/topik yang dibahas
+- key: success_question
+  type: multiple_choice
+  prompt: Which question asks for success criteria?
+  options:
+  - What does success look like?
+  - Why are you late?
+  - Stop talking.
+  correct_answer: What does success look like?

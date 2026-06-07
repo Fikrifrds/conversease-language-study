@@ -1,0 +1,42 @@
+scenario_key: a2_review_health_past
+mode: lesson_practice_coach
+level_code: A2
+opening_line: You don't look well. What's wrong?
+learner_goal: Say a symptom, then answer one past question about yesterday.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: You don't look well. What's wrong?
+  hint: Bilang kamu nggak enak badan + 1 gejala.
+  sample_answer: I don't feel well. I have a headache.
+  focus: Describe symptom
+  expected_keywords:
+  - feel well
+  - headache
+- coach: Did you sleep late last night?
+  hint: Jawab yes/no, lalu tambah detail singkat.
+  sample_answer: Yes. I went to bed late.
+  focus: Answer past question
+  expected_keywords:
+  - 'yes'
+  - late
+- coach: What did you do yesterday?
+  hint: Jawab dengan 1-2 aktivitas (past).
+  sample_answer: I went to the clinic and stayed home.
+  focus: Describe yesterday
+  expected_keywords:
+  - went
+  - stayed
+target_phrases:
+- I don't feel well.
+- What did you do yesterday?
+- Did you sleep late?
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

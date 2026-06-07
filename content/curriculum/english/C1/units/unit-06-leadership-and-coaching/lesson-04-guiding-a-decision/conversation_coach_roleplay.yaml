@@ -1,0 +1,43 @@
+scenario_key: c1_guiding_decision
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We can't decide which approach to take.
+learner_goal: Guide a decision with options, trade-offs, recommendation, and agreement.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Structure the options.
+  hint: We have three options...
+  sample_answer: 'We have three options: pilot, phased rollout, or full rollout.'
+  focus: Options
+  expected_keywords:
+  - options
+- coach: Explain the trade-off and recommend an option.
+  hint: The trade-off is... Given our constraints, I'd recommend...
+  sample_answer: The trade-off is speed versus risk and operational load. Given our constraints, I'd recommend a phased rollout with clear monitoring.
+  focus: Trade-off + recommend
+  expected_keywords:
+  - trade-off
+  - constraints
+  - recommend
+- coach: Confirm agreement on next steps.
+  hint: Can we agree on... review weekly...
+  sample_answer: Can we agree on the scope today and review metrics weekly?
+  focus: Agreement
+  expected_keywords:
+  - agree
+  - scope
+  - weekly
+target_phrases:
+- 'We have three options: ...'
+- Given our constraints, I'd recommend ...
+- Can we agree on ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

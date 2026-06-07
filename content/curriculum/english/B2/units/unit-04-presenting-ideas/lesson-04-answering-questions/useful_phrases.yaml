@@ -1,0 +1,21 @@
+phrases:
+- phrase: That's a good question.
+  meaning_id: Pertanyaan bagus.
+  usage_note: A polite opener when answering.
+  common_mistake: Do not respond defensively; start with a good question.
+- phrase: As far as I know, it takes about one day.
+  meaning_id: Sejauh yang aku tahu, butuh sekitar satu hari.
+  usage_note: Answer with confidence level.
+  common_mistake: Do not say "As far I know"; include as far as.
+- phrase: I'm not sure yet, but I can follow up by tomorrow.
+  meaning_id: Aku belum yakin, tapi aku bisa follow up besok.
+  usage_note: Admit uncertainty professionally.
+  common_mistake: Do not say "I don't know" without follow-up; offer a follow-up.
+- phrase: I suggest we assign an owner.
+  meaning_id: Aku saranin kita assign owner.
+  usage_note: A practical answer to governance questions.
+  common_mistake: Do not say "I suggest assign"; include we.
+- phrase: Any other questions?
+  meaning_id: Ada pertanyaan lain?
+  usage_note: A polite closing invitation.
+  common_mistake: Do not rush; pause before asking this.

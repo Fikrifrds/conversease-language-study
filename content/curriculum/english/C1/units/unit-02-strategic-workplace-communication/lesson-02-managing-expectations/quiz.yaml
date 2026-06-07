@@ -1,0 +1,25 @@
+questions:
+- key: commit_phrase
+  type: multiple_choice
+  prompt: Which phrase sets a realistic commitment?
+  options:
+  - What we can commit to is ...
+  - We promise everything.
+  - No plan.
+  correct_answer: What we can commit to is ...
+- key: under_promise
+  type: multiple_choice
+  prompt: What does "under-promise" mean?
+  options:
+  - janji lebih kecil agar pasti deliver
+  - berbohong
+  - menolak semua
+  correct_answer: janji lebih kecil agar pasti deliver
+- key: earliest
+  type: multiple_choice
+  prompt: Which phrase states the earliest timeline?
+  options:
+  - The earliest we can deliver is ...
+  - Maybe soon.
+  - Whenever.
+  correct_answer: The earliest we can deliver is ...

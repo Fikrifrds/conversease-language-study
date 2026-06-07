@@ -1,0 +1,25 @@
+questions:
+- key: timeboxed_meaning
+  type: multiple_choice
+  prompt: What does "time-boxed" mean?
+  options:
+  - dibatasi waktu
+  - tanpa batas
+  - lebih mahal
+  correct_answer: dibatasi waktu
+- key: frame_phrase
+  type: multiple_choice
+  prompt: Which phrase frames a discussion at the start?
+  options:
+  - Let's define the scope.
+  - Whatever.
+  - Stop.
+  correct_answer: Let's define the scope.
+- key: constraints_phrase
+  type: multiple_choice
+  prompt: Which phrase links a recommendation to constraints?
+  options:
+  - Given these constraints, I'd recommend ...
+  - I recommend because yes.
+  - No constraints.
+  correct_answer: Given these constraints, I'd recommend ...

@@ -1,0 +1,25 @@
+questions:
+- key: aware_phrase
+  type: multiple_choice
+  prompt: Which phrase acknowledges new information politely?
+  options:
+  - I wasn't aware of that.
+  - No way.
+  - You're lying.
+  correct_answer: I wasn't aware of that.
+- key: changes_things
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - That changes things.
+  - That change things.
+  - That changing things.
+  correct_answer: That changes things.
+- key: follow_up
+  type: multiple_choice
+  prompt: Which sentence asks for deeper understanding?
+  options:
+  - I'd like to understand the methodology.
+  - Stop.
+  - Whatever.
+  correct_answer: I'd like to understand the methodology.

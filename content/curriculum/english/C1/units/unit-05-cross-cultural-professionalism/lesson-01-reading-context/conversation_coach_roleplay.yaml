@@ -1,0 +1,45 @@
+scenario_key: c1_reading_context
+mode: lesson_practice_coach
+level_code: C1
+opening_line: The client says the timeline is 'ambitious'.
+learner_goal: Interpret implied meaning, manage tone, and clarify priorities before replying.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: The client says the timeline is 'ambitious'. What does that mean?
+  hint: 'Interpret cautiously: My sense is that...'
+  sample_answer: My sense is that they're signaling concern without saying no directly.
+  focus: Interpretation
+  expected_keywords:
+  - my sense
+  - signaling
+  - concern
+- coach: What should we do before replying?
+  hint: Ask to clarify priority.
+  sample_answer: Before we decide, can we clarify what their priority is—speed or risk reduction?
+  focus: Clarify
+  expected_keywords:
+  - before we decide
+  - clarify
+  - priority
+- coach: Offer a tactful option and set the right tone.
+  hint: May be worth considering... stay respectful...
+  sample_answer: It may be worth considering a phased plan to show flexibility. We should stay respectful and avoid sounding defensive.
+  focus: Option + tone
+  expected_keywords:
+  - worth considering
+  - phased
+  - respectful
+target_phrases:
+- My sense is that ...
+- Before we decide, can we clarify ...?
+- It may be worth considering ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

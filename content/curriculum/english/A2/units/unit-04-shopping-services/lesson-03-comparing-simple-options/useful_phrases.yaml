@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Which one is cheaper?
+    meaning_id: Yang mana lebih murah?
+    usage_note: Ask to compare prices.
+    common_mistake: Do not say "Which is cheap?" for comparison.
+  - phrase: This one is cheaper.
+    meaning_id: Yang ini lebih murah.
+    usage_note: A simple answer.
+    common_mistake: Point clearly or name the item.
+  - phrase: The other one
+    meaning_id: Yang satunya
+    usage_note: Refer to the second option.
+    common_mistake: Do not say "other one" without the.
+  - phrase: better quality
+    meaning_id: kualitas lebih bagus
+    usage_note: A simple comparison.
+    common_mistake: Do not say "more better".
+  - phrase: I'll take the cheaper one.
+    meaning_id: Saya ambil yang lebih murah.
+    usage_note: Choose an option.
+    common_mistake: Do not say "I take" for a decision now.

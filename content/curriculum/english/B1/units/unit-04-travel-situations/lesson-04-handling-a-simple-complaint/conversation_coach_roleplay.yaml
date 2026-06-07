@@ -1,0 +1,42 @@
+scenario_key: b1_travel_complaint
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. How can I help you?
+learner_goal: Describe the problem in your room and ask for help or a room change politely.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. How can I help you?
+  hint: 'Mulai dengan: There''s a problem with ...'
+  sample_answer: Hi. There's a problem with my room.
+  focus: Start complaint politely
+  expected_keywords:
+  - problem
+  - room
+- coach: I'm sorry to hear that. What's wrong?
+  hint: Jelaskan masalahnya (isn't working).
+  sample_answer: The air conditioning isn't working.
+  focus: Explain the issue
+  expected_keywords:
+  - isn't working
+- coach: Okay. What would you like us to do?
+  hint: Minta bantuan (Could you...) atau opsi (Could I...).
+  sample_answer: Could you send someone to take a look? Could I change rooms if it can't be fixed?
+  focus: Request help or alternative
+  expected_keywords:
+  - could
+  - send
+  - change
+target_phrases:
+- There's a problem with ...
+- The ... isn't working.
+- Could you... / Could I...?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

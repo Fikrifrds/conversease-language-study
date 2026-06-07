@@ -1,0 +1,43 @@
+scenario_key: b1_final_test_practice
+mode: lesson_practice_coach
+level_code: B1
+opening_line: 'Quick test: answer my prompts.'
+learner_goal: Answer short prompts across B1 topics with clear sentences.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your goal this month?
+  hint: Goal + by ...
+  sample_answer: My goal is to speak more confidently by the end of this month.
+  focus: Goal with deadline
+  expected_keywords:
+  - goal
+  - by
+- coach: What's your biggest challenge, and what will you do?
+  hint: Challenge + so ...
+  sample_answer: The biggest challenge is staying consistent, so I'm keeping sessions short.
+  focus: Challenge + solution
+  expected_keywords:
+  - challenge
+  - so
+- coach: 'Compare and choose: option A or B?'
+  hint: I prefer ... because ... but ...
+  sample_answer: I prefer option B because it's cheaper, but it might be crowded.
+  focus: Preference with reason + concern
+  expected_keywords:
+  - prefer
+  - because
+  - might
+target_phrases:
+- My goal is to ... by ...
+- '..., so ...'
+- I prefer ... because ..., but ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

@@ -1,0 +1,25 @@
+questions:
+- key: would_you_mind
+  type: multiple_choice
+  prompt: Which phrase is tactful for a sensitive question?
+  options:
+  - Would you mind if I ask ...?
+  - Tell me now.
+  - Why are you sensitive?
+  correct_answer: Would you mind if I ask ...?
+- key: if_its_okay
+  type: multiple_choice
+  prompt: Which phrase softens a clarification request?
+  options:
+  - If it's okay, could you clarify ...?
+  - Clarify now.
+  - No need.
+  correct_answer: If it's okay, could you clarify ...?
+- key: make_sure_understand
+  type: multiple_choice
+  prompt: Which phrase checks understanding politely?
+  options:
+  - Just to make sure I understand, ...
+  - You don't understand.
+  - Stop.
+  correct_answer: Just to make sure I understand, ...

@@ -1,0 +1,42 @@
+scenario_key: a2_opinion_ask_for_opinion
+mode: lesson_practice_coach
+level_code: A2
+opening_line: What do you think about going to Bali?
+learner_goal: Ask for an opinion and respond with an opinion and a short reason.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What do you think about going to Bali?
+  hint: 'Jawab dengan opini: I think it''s + adjective.'
+  sample_answer: I think it's a great idea.
+  focus: Give opinion
+  expected_keywords:
+  - i think
+  - idea
+- coach: Why?
+  hint: Jawab dengan because + reason.
+  sample_answer: Because the beaches are beautiful.
+  focus: Give reason
+  expected_keywords:
+  - because
+  - beaches
+- coach: Any concern?
+  hint: 'Sebutkan kekhawatiran: It might be ...'
+  sample_answer: It might be crowded.
+  focus: Add concern politely
+  expected_keywords:
+  - might
+  - crowded
+target_phrases:
+- What do you think about...?
+- I think it's a great idea.
+- It might be crowded.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,21 @@
+phrases:
+- phrase: My sense is that they're signaling concern indirectly.
+  meaning_id: Feeling aku, mereka ngasih sinyal concern secara indirect.
+  usage_note: Context reading.
+  common_mistake: Don't assume they're angry; read context first.
+- phrase: Would you mind if I ask how you prefer to receive feedback?
+  meaning_id: Boleh aku tanya kamu lebih nyaman menerima feedback seperti apa?
+  usage_note: Tactful question.
+  common_mistake: Don't ask bluntly; soften it.
+- phrase: In our context, it's generally expected that we raise concerns one-on-one first.
+  meaning_id: Dalam konteks kita, umumnya concern diangkat one-on-one dulu.
+  usage_note: Explain norms neutrally.
+  common_mistake: Don't present it as a strict rule.
+- phrase: I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request.
+  meaning_id: Mungkin aku salah baca tone-nya. Biar jelas, niatku konfirmasi constraint, bukan menolak request.
+  usage_note: Repair misunderstanding.
+  common_mistake: Don't get defensive; clarify calmly.
+- phrase: How about we send a short note and offer a quick call?
+  meaning_id: Gimana kalau kita kirim note singkat dan tawarkan call cepat?
+  usage_note: Constructive next step.
+  common_mistake: Don't over-apologize; propose action.

@@ -1,0 +1,25 @@
+questions:
+- key: past_take
+  type: multiple_choice
+  prompt: What is the past of "take"?
+  options:
+  - taked
+  - took
+  - taken
+  correct_answer: took
+- key: it_was_adj
+  type: multiple_choice
+  prompt: Which sentence describes an experience?
+  options:
+  - It was interesting.
+  - It interesting.
+  - It is interesting yesterday.
+  correct_answer: It was interesting.
+- key: meaning_anyone
+  type: multiple_choice
+  prompt: What does "anyone" mean?
+  options:
+  - siapa saja
+  - tidak ada
+  - semua orang
+  correct_answer: siapa saja

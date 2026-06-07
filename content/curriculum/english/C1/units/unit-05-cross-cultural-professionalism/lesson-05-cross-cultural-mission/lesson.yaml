@@ -1,0 +1,25 @@
+lesson_key: lesson-05-cross-cultural-mission
+slug: cross-cultural-mission
+title: Cross-cultural Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_cross_cultural
+conversation_goal: 'Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.'
+grammar_summary: Combine context reading, tactful questions, norms explanation, and repair language into one end-to-end conversation.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

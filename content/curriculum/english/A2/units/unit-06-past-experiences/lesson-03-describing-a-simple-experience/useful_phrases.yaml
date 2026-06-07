@@ -1,0 +1,21 @@
+phrases:
+- phrase: I tried a new restaurant yesterday.
+  meaning_id: Aku coba restoran baru kemarin.
+  usage_note: Tried is past of try.
+  common_mistake: Do not say "I try" for yesterday.
+- phrase: How was it?
+  meaning_id: Gimana?
+  usage_note: A short question about an experience.
+  common_mistake: Do not say "How it was?".
+- phrase: It was delicious.
+  meaning_id: Enak banget.
+  usage_note: Use It was + adjective.
+  common_mistake: Do not say "It delicious".
+- phrase: I really liked it.
+  meaning_id: Aku suka banget.
+  usage_note: Liked is past of like.
+  common_mistake: Do not say "I like it yesterday".
+- phrase: The service was great.
+  meaning_id: Pelayanannya bagus.
+  usage_note: Service is singular here.
+  common_mistake: Do not say "services was".

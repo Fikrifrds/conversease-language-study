@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you tried a new restaurant yesterday.
+  target_response: I tried a new restaurant yesterday.
+  acceptable_variations:
+  - I tried a new restaurant yesterday.
+  - Yesterday, I tried a new restaurant.
+- prompt: 'Answer: How was it?'
+  target_response: It was delicious.
+  acceptable_variations:
+  - It was delicious.
+  - It was really good.
+- prompt: Say you really liked it.
+  target_response: I really liked it.
+  acceptable_variations:
+  - I really liked it.
+  - I liked it a lot.

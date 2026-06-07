@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask what time the train leaves.
+    target_response: What time does the train leave?
+    acceptable_variations:
+      - What time does the train leave?
+      - What time does it leave?
+  - prompt: Ask which platform.
+    target_response: Which platform?
+    acceptable_variations:
+      - Which platform?
+      - Which platform is it?
+  - prompt: Ask how long the trip is.
+    target_response: How long is the trip?
+    acceptable_variations:
+      - How long is the trip?
+      - How long does it take?

@@ -1,0 +1,41 @@
+scenario_key: b1_travel_check_in
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Welcome. How can I help you?
+learner_goal: Check in, give the reservation name, and ask one practical question.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Welcome. How can I help you?
+  hint: 'Mulai dengan: I''d like to check in.'
+  sample_answer: Hi. I'd like to check in.
+  focus: Start check-in
+  expected_keywords:
+  - check in
+- coach: Sure. Do you have a reservation?
+  hint: Jawab dengan under + name.
+  sample_answer: Yes. I have a reservation under Mina Kim.
+  focus: Confirm reservation name
+  expected_keywords:
+  - reservation
+  - under
+- coach: Great. Any questions about your stay?
+  hint: Tanya 1 hal (check-out / breakfast).
+  sample_answer: Yes. What time is check-out?
+  focus: Ask a practical question
+  expected_keywords:
+  - what time
+  - check-out
+target_phrases:
+- I'd like to check in.
+- I have a reservation under ...
+- What time is check-out?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

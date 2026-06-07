@@ -1,0 +1,16 @@
+prompts:
+- prompt: Open your presentation clearly.
+  target_response: Today I'd like to walk you through the proposal and why it matters.
+  acceptable_variations:
+  - Today I'd like to walk you through the proposal and why it matters.
+  - Today I'd like to outline the proposal and why it matters.
+- prompt: Define a key term precisely.
+  target_response: By 'modular architecture', I mean we separate features into independent components.
+  acceptable_variations:
+  - By 'modular architecture', I mean we separate features into independent components.
+  - By 'modular design', I mean we break the system into independent parts.
+- prompt: Preview the structure with signposting.
+  target_response: First, I'll outline the problem we're solving, then the proposed approach.
+  acceptable_variations:
+  - First, I'll outline the problem we're solving, then the proposed approach.
+  - First, I'll give context, then I'll explain the approach.

@@ -1,0 +1,42 @@
+scenario_key: c1_certainty_doubt
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Will this change work as expected?
+learner_goal: Express calibrated certainty and propose a safe next step.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Will this change work as expected?
+  hint: Jawab dengan I'm fairly confident... given...
+  sample_answer: I'm fairly confident it will, given the support trends.
+  focus: Confidence
+  expected_keywords:
+  - fairly confident
+  - given
+- coach: So we can roll it out broadly?
+  hint: I'm not entirely convinced... strong chance...
+  sample_answer: I'm not entirely convinced. There's a strong chance we'll see edge cases.
+  focus: Doubt
+  expected_keywords:
+  - not entirely convinced
+  - strong chance
+- coach: Close with a safe plan.
+  hint: Limited rollout + metrics.
+  sample_answer: Let's start with a limited rollout and define clear success metrics.
+  focus: Plan
+  expected_keywords:
+  - limited rollout
+  - metrics
+target_phrases:
+- I'm fairly confident ...
+- I'm not entirely convinced ...
+- It's unlikely that ..., but ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

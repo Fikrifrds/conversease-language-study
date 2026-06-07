@@ -1,0 +1,86 @@
+level_code: B1
+title: B1 Level Conversation Test
+status: planned
+description: 'Final readiness test for connected speaking: personal stories, workplace conversations, problems and solutions, and opinions with reasons.'
+overall_threshold: 75
+lesson_completion_required_percent: 80
+critical_skills:
+- speaking_conversation
+- listening
+sections:
+- key: listening
+  title: Listening
+  weight: 25
+  minimum_score: 68
+  task:
+    type: dialogue_understanding
+    prompt: Listen to a longer everyday conversation and identify the main problem, the key reason, and the decision.
+    success_criteria:
+    - Understands the main topic and situation.
+    - Identifies one key reason or constraint (time, cost, preference).
+    - Recognizes the final decision or next step.
+- key: speaking_conversation
+  title: Speaking / Connected Response
+  weight: 35
+  minimum_score: 70
+  task:
+    type: roleplay_response
+    prompt: Tell a short connected story and respond to one follow-up question with a clear reason.
+    success_criteria:
+    - Gives 4 to 6 connected sentences.
+    - Uses basic linking words (first, then, because, so).
+    - Answers a follow-up question clearly and stays on topic.
+- key: pronunciation_fluency
+  title: Pronunciation and Fluency
+  weight: 15
+  minimum_score: 62
+  task:
+    type: repeat_and_read_aloud
+    prompt: Read five B1 phrases aloud with clear stress, smooth linking, and natural intonation for opinions and questions.
+    success_criteria:
+    - Pronounces key content words clearly.
+    - Uses steady pacing without long pauses.
+    - Uses natural intonation for questions and contrast.
+- key: useful_phrases
+  title: Useful Phrases
+  weight: 10
+  minimum_score: 68
+  task:
+    type: phrase_selection
+    prompt: Select useful phrases for giving reasons, suggesting solutions, and disagreeing politely.
+    success_criteria:
+    - Chooses context-appropriate B1 phrases.
+    - Avoids phrases that do not fit the situation.
+    - Can explain the Indonesian meaning clearly.
+- key: grammar
+  title: Grammar for Conversation
+  weight: 10
+  minimum_score: 68
+  task:
+    type: sentence_completion
+    prompt: Complete short sentences using B1 patterns (linking words, past narrative, and polite suggestions).
+    success_criteria:
+    - Uses basic linking words naturally.
+    - Uses past forms to tell a story.
+    - Uses polite suggestions (could, should) appropriately.
+- key: reading
+  title: Reading
+  weight: 3
+  minimum_score: 60
+  task:
+    type: short_message_reading
+    prompt: Read a short message about a plan change and answer comprehension questions.
+    success_criteria:
+    - Finds key details (time change, reason, next step).
+    - Understands the main intention (update, request, decision).
+- key: writing
+  title: Writing
+  weight: 2
+  minimum_score: 60
+  task:
+    type: short_reply_writing
+    prompt: Write a short reply giving your opinion and one reason, plus a polite closing.
+    success_criteria:
+    - Writes 4 to 6 clear sentences.
+    - Includes one reason with because/so.
+    - Uses a polite closing.

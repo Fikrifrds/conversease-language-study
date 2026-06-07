@@ -1,0 +1,21 @@
+phrases:
+- phrase: Today I'd like to walk you through the proposal and why it matters.
+  meaning_id: Hari ini aku mau jelasin proposalnya dan kenapa ini penting.
+  usage_note: A clear opener that sets purpose.
+  common_mistake: Do not start without context; state what you will cover.
+- phrase: By 'modular architecture', I mean we separate features into independent components.
+  meaning_id: Dengan 'arsitektur modular', maksudku kita pisahin fitur jadi komponen independen.
+  usage_note: Define terms precisely.
+  common_mistake: Do not assume everyone knows the term; define it.
+- phrase: The purpose of this is to reduce coupling and speed up delivery.
+  meaning_id: Tujuannya untuk ngurangin coupling dan mempercepat delivery.
+  usage_note: State purpose in one sentence.
+  common_mistake: Do not list too many purposes; keep it focused.
+- phrase: First, I'll outline the problem we're solving, then the proposed approach.
+  meaning_id: Pertama aku jelasin problemnya, lalu approach yang diusulkan.
+  usage_note: Preview structure with signposting.
+  common_mistake: Do not jump around; preview the structure.
+- phrase: Let me define what I mean by ...
+  meaning_id: Biar jelas, aku definisikan dulu maksudku dengan ...
+  usage_note: A softer definition starter.
+  common_mistake: Do not over-apologize; just define.

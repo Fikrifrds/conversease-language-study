@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask for options instead of giving answers.
+  target_response: What options do you see right now?
+  acceptable_variations:
+  - What options do you see right now?
+  - What options do we have?
+- prompt: Ask for the smallest next step.
+  target_response: What's the smallest next step you can take today?
+  acceptable_variations:
+  - What's the smallest next step you can take today?
+  - What's one small step you can do today?
+- prompt: Offer support without taking over.
+  target_response: What support do you need from me?
+  acceptable_variations:
+  - What support do you need from me?
+  - How can I support you?

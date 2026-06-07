@@ -1,0 +1,11 @@
+unit_key: unit-02-plans-and-invitations
+level_code: A2
+title: Plans & Invitations
+main_conversation_outcome: Make simple plans, invite someone, accept, decline, and reschedule.
+status: in_production
+lessons:
+  - lesson-01-making-plans
+  - lesson-02-inviting-someone
+  - lesson-03-accepting-and-declining
+  - lesson-04-rescheduling
+  - lesson-05-invitation-mission

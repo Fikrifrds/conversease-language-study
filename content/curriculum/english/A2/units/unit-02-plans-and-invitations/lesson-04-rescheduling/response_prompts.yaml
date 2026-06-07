@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask to reschedule.
+    target_response: Can we reschedule?
+    acceptable_variations:
+      - Can we reschedule?
+      - Can we reschedule our coffee?
+  - prompt: Give a short reason.
+    target_response: Something came up.
+    acceptable_variations:
+      - Something came up.
+      - Something came up at work.
+  - prompt: Confirm the new time.
+    target_response: Does 7 pm work for you?
+    acceptable_variations:
+      - Does 7 pm work for you?
+      - Does 6 pm work for you?

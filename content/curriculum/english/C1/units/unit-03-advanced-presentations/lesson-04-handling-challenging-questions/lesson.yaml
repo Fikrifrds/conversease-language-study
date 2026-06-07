@@ -1,0 +1,25 @@
+lesson_key: lesson-04-handling-challenging-questions
+slug: handling-challenging-questions
+title: Handling Challenging Questions
+status: published
+estimated_minutes: 12
+conversation_situation: challenging_questions
+conversation_goal: Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.
+grammar_summary: Use That's a fair question... / Let me clarify... / The short answer is... / What I'd emphasize is... to handle questions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

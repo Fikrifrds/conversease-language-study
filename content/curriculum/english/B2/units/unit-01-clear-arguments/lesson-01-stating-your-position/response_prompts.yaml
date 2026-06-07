@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your position (In my view...).
+  target_response: In my view, a written update would be better.
+  acceptable_variations:
+  - In my view, a written update would be better.
+  - In my view, option B would be better.
+- prompt: Give one reason (Because...).
+  target_response: Because it saves time.
+  acceptable_variations:
+  - Because it saves time.
+  - Because it's more efficient.
+- prompt: Acknowledge and disagree politely.
+  target_response: I see your point, but I prefer a different approach.
+  acceptable_variations:
+  - I see your point, but I prefer a different approach.
+  - I see your point, but we should consider the risks.

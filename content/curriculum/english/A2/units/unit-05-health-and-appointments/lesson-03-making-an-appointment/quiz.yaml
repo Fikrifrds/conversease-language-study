@@ -1,0 +1,25 @@
+questions:
+- key: polite_request
+  type: multiple_choice
+  prompt: Which is the most polite?
+  options:
+  - I want an appointment.
+  - I'd like to make an appointment.
+  - Make appointment now.
+  correct_answer: I'd like to make an appointment.
+- key: meaning_available
+  type: multiple_choice
+  prompt: What does "available" mean?
+  options:
+  - Tersedia
+  - Sakit
+  - Mahal
+  correct_answer: Tersedia
+- key: time_question
+  type: multiple_choice
+  prompt: Which question suggests a time?
+  options:
+  - What day works for you?
+  - Is tomorrow afternoon okay?
+  - What's wrong?
+  correct_answer: Is tomorrow afternoon okay?

@@ -1,0 +1,41 @@
+scenario_key: b1_travel_recommendations
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. How can I help you today?
+learner_goal: Ask for a recommendation, say what you want, and ask one follow-up question.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. How can I help you today?
+  hint: Tanya rekomendasi buat dinner.
+  sample_answer: Do you have any recommendations for dinner?
+  focus: Ask for recommendations
+  expected_keywords:
+  - recommendations
+- coach: Sure. What kind of place are you looking for?
+  hint: Jelaskan yang kamu cari (local / quiet / cheap).
+  sample_answer: I'm looking for something local. Something local would be great.
+  focus: Describe what you want
+  expected_keywords:
+  - looking for
+  - local
+- coach: I recommend a place nearby. Any questions?
+  hint: Tanya jarak atau cara pergi.
+  sample_answer: Great. Is it far from here?
+  focus: Ask a follow-up question
+  expected_keywords:
+  - far
+  - here
+target_phrases:
+- Do you have any recommendations for ...?
+- I'm looking for ...
+- Is it far from here?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

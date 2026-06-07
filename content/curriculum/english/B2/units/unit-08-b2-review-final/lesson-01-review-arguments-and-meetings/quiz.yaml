@@ -1,0 +1,25 @@
+questions:
+- key: position_phrase
+  type: multiple_choice
+  prompt: Which phrase states your position in a meeting?
+  options:
+  - My position is that ...
+  - Position I ...
+  - No position.
+  correct_answer: My position is that ...
+- key: next_steps_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces next steps clearly?
+  options:
+  - Next steps are ...
+  - Next is whatever.
+  - No need.
+  correct_answer: Next steps are ...
+- key: summarize_meaning
+  type: multiple_choice
+  prompt: What does "to summarize" mean?
+  options:
+  - untuk merangkum
+  - untuk menolak
+  - untuk membeli
+  correct_answer: untuk merangkum

@@ -1,0 +1,43 @@
+scenario_key: c1_soft_disagreement
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We should launch next week, no matter what.
+learner_goal: Disagree tactfully and offer a constructive alternative.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We should launch next week, no matter what.
+  hint: Acknowledge + soften.
+  sample_answer: I see your point, but I'm not sure I'd go that far.
+  focus: Soften
+  expected_keywords:
+  - see your point
+  - not sure
+- coach: Explain your concern respectfully.
+  hint: With respect... suggests...
+  sample_answer: With respect, the current error rate suggests we're not ready.
+  focus: Evidence
+  expected_keywords:
+  - with respect
+  - suggests
+- coach: Offer an alternative plan.
+  hint: I might frame it differently...
+  sample_answer: 'I might frame it differently: we launch a limited version next week and keep the rest behind a feature flag.'
+  focus: Alternative
+  expected_keywords:
+  - frame
+  - limited
+  - feature flag
+target_phrases:
+- I see your point, but ...
+- With respect, ...
+- 'I might frame it differently: ...'
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,21 @@
+phrases:
+- phrase: It seems you're assuming fewer steps automatically mean better conversion.
+  meaning_id: Sepertinya kamu berasumsi step lebih sedikit otomatis bikin conversion lebih bagus.
+  usage_note: Surface an assumption without sounding accusatory.
+  common_mistake: Do not say you're wrong; say it seems you're assuming.
+- phrase: What are we assuming about user trust and clarity?
+  meaning_id: Kita berasumsi apa tentang trust dan kejelasan bagi user?
+  usage_note: Ask about the underlying premise.
+  common_mistake: Do not stay abstract; name a specific dimension (trust, clarity).
+- phrase: If that's true, then we should see drop-offs mainly on longer forms.
+  meaning_id: Kalau itu benar, drop-off harusnya terutama di form panjang.
+  usage_note: Draw a testable implication from an assumption.
+  common_mistake: Do not argue in circles; make it testable.
+- phrase: Let's separate essential steps from redundant ones and measure impact.
+  meaning_id: Kita pisahkan step essential dari yang redundant lalu ukur dampaknya.
+  usage_note: Turn debate into an experiment plan.
+  common_mistake: Do not stop at criticism; propose a test.
+- phrase: Not necessarily.
+  meaning_id: Belum tentu.
+  usage_note: A concise disagreement marker.
+  common_mistake: Do not sound dismissive; follow up with a question.

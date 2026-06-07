@@ -1,0 +1,43 @@
+scenario_key: c1_precise_transitions
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Your explanation is clear so far. What's next?
+learner_goal: Use transitions to guide listeners through complex ideas smoothly.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Your explanation is clear so far. What's next?
+  hint: Use That brings me to...
+  sample_answer: 'That brings me to the key trade-off: speed versus reliability.'
+  focus: Transition
+  expected_keywords:
+  - brings me to
+  - trade-off
+- coach: Highlight the key point.
+  hint: What's crucial here is...
+  sample_answer: What's crucial here is that we set clear standards early.
+  focus: Key point
+  expected_keywords:
+  - crucial
+  - standards
+- coach: Restate it and propose a next step.
+  hint: To put it differently... With that in mind...
+  sample_answer: To put it differently, standards let teams move fast without breaking consistency. With that in mind, I'd propose a pilot with strict guardrails.
+  focus: Restate + propose
+  expected_keywords:
+  - differently
+  - with that in mind
+  - pilot
+target_phrases:
+- That brings me to ...
+- What's crucial here is ...
+- To put it differently, ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

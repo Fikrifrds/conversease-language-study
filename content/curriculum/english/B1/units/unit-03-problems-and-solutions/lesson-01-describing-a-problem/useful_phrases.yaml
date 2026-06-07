@@ -1,0 +1,21 @@
+phrases:
+- phrase: There's a problem with the login page.
+  meaning_id: Ada masalah di halaman login.
+  usage_note: A clear way to start describing a problem.
+  common_mistake: Do not say "Have problem"; use There's a problem with...
+- phrase: It started this morning.
+  meaning_id: Mulainya pagi ini.
+  usage_note: Say when the problem started.
+  common_mistake: Do not say "It start" in past; use started.
+- phrase: It happened when we deployed the update.
+  meaning_id: Terjadi waktu kita deploy update.
+  usage_note: Explain the trigger clearly.
+  common_mistake: Do not say "happened in deployed"; use when we deployed.
+- phrase: Users can't sign in.
+  meaning_id: User nggak bisa login.
+  usage_note: State the impact in a simple sentence.
+  common_mistake: Do not say "Users can't to sign in".
+- phrase: So they can't access their lessons.
+  meaning_id: Jadi mereka nggak bisa akses lesson.
+  usage_note: Use so to show impact/result.
+  common_mistake: Do not use because if you mean result; use so.

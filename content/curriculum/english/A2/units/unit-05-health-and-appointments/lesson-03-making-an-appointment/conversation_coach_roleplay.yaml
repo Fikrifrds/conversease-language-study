@@ -1,0 +1,42 @@
+scenario_key: a2_health_make_appointment
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Good morning. Green Clinic. How can I help you?
+learner_goal: Ask for an appointment and choose a day and time politely.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Good morning. Green Clinic. How can I help you?
+  hint: Minta buat janji (polite).
+  sample_answer: Hi. I'd like to make an appointment.
+  focus: Make a polite request
+  expected_keywords:
+  - i'd like
+  - appointment
+- coach: Sure. What day works for you?
+  hint: Usulkan waktu.
+  sample_answer: Is tomorrow afternoon okay?
+  focus: Suggest a day/time
+  expected_keywords:
+  - tomorrow
+  - afternoon
+- coach: We have 3:30 p.m. available.
+  hint: Terima dan konfirmasi.
+  sample_answer: Great. I'll take it.
+  focus: Accept the time
+  expected_keywords:
+  - i'll take
+  - '3:30'
+target_phrases:
+- I'd like to make an appointment.
+- Is tomorrow afternoon okay?
+- I'll take it.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

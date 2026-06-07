@@ -1,0 +1,21 @@
+phrases:
+- phrase: Today I'd like to walk you through the proposal and why it matters.
+  meaning_id: Hari ini aku mau jelasin proposalnya dan kenapa ini penting.
+  usage_note: Clear framing opener.
+  common_mistake: Do not start without telling what you'll cover.
+- phrase: The core claim is that this will improve delivery speed.
+  meaning_id: 'Claim utamanya: ini akan mempercepat delivery.'
+  usage_note: Main claim.
+  common_mistake: Do not hide the claim; state it clearly.
+- phrase: 'That brings me to the key trade-off: speed versus reliability.'
+  meaning_id: 'Itu membawa kita ke trade-off utama: speed versus reliability.'
+  usage_note: Transition in a mission.
+  common_mistake: Do not jump; use signposting.
+- phrase: 'That''s a fair question. The short answer is: it''s manageable if we pilot first.'
+  meaning_id: 'Pertanyaan yang fair. Jawaban singkatnya: manageable kalau pilot dulu.'
+  usage_note: Q&A handling.
+  common_mistake: Do not get defensive; keep it calm and structured.
+- phrase: In short, the benefits outweigh the risks. Next steps are ...
+  meaning_id: Singkatnya, benefit lebih besar dari risiko. Next steps adalah ...
+  usage_note: 'Strong close: summary + next steps.'
+  common_mistake: Do not end without next steps.

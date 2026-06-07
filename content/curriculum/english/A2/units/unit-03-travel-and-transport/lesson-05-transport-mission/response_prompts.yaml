@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Request a ticket to Bandung.
+    target_response: I'd like one ticket to Bandung, please.
+    acceptable_variations:
+      - I'd like one ticket to Bandung, please.
+  - prompt: Ask about the departure time.
+    target_response: What time does it leave?
+    acceptable_variations:
+      - What time does it leave?
+      - What time does the train leave?
+  - prompt: Ask the driver to take you to your hotel.
+    target_response: Can you take me to my hotel, please?
+    acceptable_variations:
+      - Can you take me to my hotel, please?
+      - Can you take me to the hotel, please?

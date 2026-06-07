@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm not sure.
+  meaning_id: Aku kurang yakin.
+  usage_note: A soft way to disagree or hesitate.
+  common_mistake: Do not say "I'm not sure about it" every time; keep it short.
+- phrase: I don't think so.
+  meaning_id: Aku rasa nggak.
+  usage_note: A polite disagreement.
+  common_mistake: Do not say "I'm not think so".
+- phrase: I agree.
+  meaning_id: Setuju.
+  usage_note: A simple agreement.
+  common_mistake: Do not say "I'm agree".
+- phrase: That's fair.
+  meaning_id: Masuk akal.
+  usage_note: Shows you accept their point.
+  common_mistake: Do not use it for very serious topics.
+- phrase: It's a bit expensive.
+  meaning_id: Agak mahal.
+  usage_note: A soft negative opinion.
+  common_mistake: Do not say "It expensive".

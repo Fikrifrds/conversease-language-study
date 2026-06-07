@@ -1,0 +1,43 @@
+scenario_key: c1_setting_direction
+mode: lesson_practice_coach
+level_code: C1
+opening_line: What should the team focus on this sprint?
+learner_goal: Set direction with priorities, success criteria, and ownership.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What should the team focus on this sprint?
+  hint: Set direction clearly.
+  sample_answer: The direction I'd like to set is stabilizing the billing flow first.
+  focus: Direction
+  expected_keywords:
+  - direction
+  - first
+- coach: How do we define success?
+  hint: Success looks like...
+  sample_answer: Success looks like fewer incidents and faster completion rates.
+  focus: Success
+  expected_keywords:
+  - success
+  - incidents
+- coach: Assign ownership and boundaries.
+  hint: I'd like you to own... Let's align on scope...
+  sample_answer: I'd like you to own the rollout plan, and I'll own stakeholder updates. Let's align on scope and keep it time-boxed to two weeks.
+  focus: Ownership + scope
+  expected_keywords:
+  - own
+  - scope
+  - time-boxed
+target_phrases:
+- The direction I'd like to set is ...
+- Success looks like ...
+- I'd like you to own ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

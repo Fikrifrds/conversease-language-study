@@ -1,0 +1,43 @@
+scenario_key: a2_follow_up_questions_cafe
+mode: lesson_practice_coach
+level_code: A2
+opening_line: I went to a new cafe yesterday.
+learner_goal: Ask two short follow-up questions and respond with a natural reaction.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: I went to a new cafe yesterday.
+    hint: Tanya lokasi atau detailnya dengan pertanyaan singkat.
+    sample_answer: Oh nice! Where is it?
+    focus: Ask a follow-up question
+    expected_keywords:
+      - where is it
+      - "?"
+  - coach: It's near the station.
+    hint: Tanya apa yang dia pesan atau lakukan di sana.
+    sample_answer: What did you order?
+    focus: Ask for details
+    expected_keywords:
+      - what did you order
+      - "?"
+  - coach: I ordered iced coffee. It was great.
+    hint: Reaksi positif dan ajak dengan kalimat pendek.
+    sample_answer: That sounds fun. Do you want to go sometime?
+    focus: React and invite
+    expected_keywords:
+      - that sounds fun
+      - do you want to go
+target_phrases:
+  - Where is it?
+  - What did you order?
+  - Was it good?
+  - That sounds fun.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

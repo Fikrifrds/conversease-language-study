@@ -1,0 +1,25 @@
+phrases:
+  - phrase: How's your day?
+    meaning_id: Gimana harimu?
+    usage_note: Use this to start small talk with someone you know.
+    common_mistake: Do not say "How is your day?" in casual conversation unless you want to sound more formal.
+  - phrase: Pretty good.
+    meaning_id: Lumayan baik.
+    usage_note: A casual, positive answer to a "How are you?" question.
+    common_mistake: Do not confuse "pretty" here with physical appearance.
+  - phrase: It's busy today.
+    meaning_id: Hari ini sibuk.
+    usage_note: Use this to explain your day in a simple way.
+    common_mistake: Do not say "busy is today".
+  - phrase: By the way,
+    meaning_id: Oh ya,
+    usage_note: Use this before changing the topic slightly.
+    common_mistake: Do not overuse it in every sentence.
+  - phrase: How was your weekend?
+    meaning_id: Gimana akhir pekanmu?
+    usage_note: Ask this on Monday or after the weekend.
+    common_mistake: Do not say "How is your weekend?" when the weekend is already finished.
+  - phrase: Sounds great.
+    meaning_id: Kedengarannya seru.
+    usage_note: A friendly reaction to good news or a nice plan.
+    common_mistake: 'Do not drop the -s: "Sound great" is incorrect here.'

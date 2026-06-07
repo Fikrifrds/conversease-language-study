@@ -1,0 +1,25 @@
+questions:
+- key: good_question
+  type: multiple_choice
+  prompt: Which phrase is a polite opener?
+  options:
+  - That's a good question.
+  - That's a bad question.
+  - Stop asking.
+  correct_answer: That's a good question.
+- key: follow_up_meaning
+  type: multiple_choice
+  prompt: What does "follow up" mean?
+  options:
+  - menindaklanjuti
+  - menolak
+  - melupakan
+  correct_answer: menindaklanjuti
+- key: not_sure_structure
+  type: multiple_choice
+  prompt: Choose the best professional response.
+  options:
+  - I'm not sure yet, but I can follow up by tomorrow.
+  - I don't know.
+  - No idea.
+  correct_answer: I'm not sure yet, but I can follow up by tomorrow.

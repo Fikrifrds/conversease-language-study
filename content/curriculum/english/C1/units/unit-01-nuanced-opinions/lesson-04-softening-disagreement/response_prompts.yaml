@@ -1,0 +1,16 @@
+prompts:
+- prompt: Disagree tactfully.
+  target_response: I see your point, but I'm not sure I'd go that far.
+  acceptable_variations:
+  - I see your point, but I'm not sure I'd go that far.
+  - I see your point, but I'm not sure we should do it that way.
+- prompt: Use respectful evidence language.
+  target_response: With respect, the current error rate suggests we're not ready.
+  acceptable_variations:
+  - With respect, the current error rate suggests we're not ready.
+  - With respect, the current data suggests we should wait.
+- prompt: Offer an alternative.
+  target_response: 'I might frame it differently: we launch a limited version next week and keep the rest behind a feature flag.'
+  acceptable_variations:
+  - 'I might frame it differently: we launch a limited version next week and keep the rest behind a feature flag.'
+  - 'I might frame it differently: we do a limited rollout first, then expand.'

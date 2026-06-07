@@ -1,0 +1,25 @@
+lesson_key: lesson-05-advanced-listening-mission
+slug: advanced-listening-mission
+title: Advanced Listening Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_advanced_listening
+conversation_goal: 'Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.'
+grammar_summary: Combine implied meaning checks, structured summaries, and follow-up questions into one mission conversation.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

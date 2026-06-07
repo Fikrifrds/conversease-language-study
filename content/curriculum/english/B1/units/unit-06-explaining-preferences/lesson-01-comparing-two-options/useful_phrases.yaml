@@ -1,0 +1,21 @@
+phrases:
+- phrase: We have two options.
+  meaning_id: Kita punya dua opsi.
+  usage_note: Start a comparison clearly.
+  common_mistake: Do not say "two option"; add -s.
+- phrase: Option A is nicer, but it's more expensive.
+  meaning_id: Opsi A lebih nyaman, tapi lebih mahal.
+  usage_note: Use but to show contrast.
+  common_mistake: Do not say "more expensive but nicer" without clear structure; keep it simple.
+- phrase: It's cheaper and faster.
+  meaning_id: Lebih murah dan lebih cepat.
+  usage_note: Simple comparison with two adjectives.
+  common_mistake: Do not say "more cheap"; use cheaper.
+- phrase: Which do you prefer?
+  meaning_id: Kamu lebih pilih yang mana?
+  usage_note: A natural preference question.
+  common_mistake: Do not say "Which you prefer?" without do.
+- phrase: I think I prefer Noodle House.
+  meaning_id: Kayaknya aku lebih pilih Noodle House.
+  usage_note: I think softens your preference.
+  common_mistake: Do not say "I prefer it" without saying what it is.

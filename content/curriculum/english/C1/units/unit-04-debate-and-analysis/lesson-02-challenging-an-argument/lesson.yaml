@@ -1,0 +1,25 @@
+lesson_key: lesson-02-challenging-an-argument
+slug: challenging-an-argument
+title: Challenging an Argument
+status: published
+estimated_minutes: 12
+conversation_situation: challenge_argument
+conversation_goal: Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.
+grammar_summary: Use I'm not sure that follows... / What's the evidence for... / Could there be another explanation? / For example... to challenge arguments.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

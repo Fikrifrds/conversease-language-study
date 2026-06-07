@@ -1,0 +1,25 @@
+questions:
+- key: past_stay
+  type: multiple_choice
+  prompt: What is the past of "stay"?
+  options:
+  - stayed
+  - stay
+  - stays
+  correct_answer: stayed
+- key: place_question
+  type: multiple_choice
+  prompt: Which question asks about a place in the past?
+  options:
+  - Where did you go?
+  - Where do you go?
+  - Where you go?
+  correct_answer: Where did you go?
+- key: meaning_anywhere
+  type: multiple_choice
+  prompt: What does "anywhere" mean?
+  options:
+  - di mana saja
+  - di sini
+  - di luar
+  correct_answer: di mana saja

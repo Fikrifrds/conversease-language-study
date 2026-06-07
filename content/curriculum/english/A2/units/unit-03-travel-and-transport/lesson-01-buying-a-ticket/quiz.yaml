@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_one_way
+    type: multiple_choice
+    prompt: What does "One-way" mean?
+    options:
+      - Sekali jalan
+      - Pulang-pergi
+      - Besok pagi
+    correct_answer: Sekali jalan
+  - key: request_ticket
+    type: multiple_choice
+    prompt: Which sentence requests a ticket politely?
+    options:
+      - I'd like one ticket to Bandung, please.
+      - I like ticket Bandung.
+      - Where are you from?
+    correct_answer: I'd like one ticket to Bandung, please.
+  - key: ask_price
+    type: multiple_choice
+    prompt: Which question asks for the price?
+    options:
+      - How much is it?
+      - Where is it?
+      - What time is it?
+    correct_answer: How much is it?

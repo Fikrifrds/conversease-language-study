@@ -1,0 +1,21 @@
+phrases:
+- phrase: To some extent, yes—especially for new projects.
+  meaning_id: Sampai batas tertentu, iya—terutama untuk project baru.
+  usage_note: Agree partially and specify scope.
+  common_mistake: Do not say yes/no only; add scope or condition.
+- phrase: Broadly speaking, I support it.
+  meaning_id: Secara umum, aku dukung.
+  usage_note: Give a general stance without overcommitting.
+  common_mistake: Do not say "in general speaking"; use broadly speaking.
+- phrase: That said, we need a clear exception for legacy systems.
+  meaning_id: Tapi, kita butuh pengecualian yang jelas untuk sistem lama.
+  usage_note: Add an important limitation after agreement.
+  common_mistake: Do not contradict without linking; use that said.
+- phrase: In principle it's a good move, but the timeline is too aggressive.
+  meaning_id: Secara prinsip itu langkah bagus, tapi timeline-nya terlalu agresif.
+  usage_note: Support the idea but challenge execution.
+  common_mistake: Do not criticize harshly; focus on timeline/constraints.
+- phrase: I'd phase it in over two quarters.
+  meaning_id: Aku akan implement bertahap selama dua kuartal.
+  usage_note: Suggest a measured approach.
+  common_mistake: Do not say "phase in it"; use phase it in.

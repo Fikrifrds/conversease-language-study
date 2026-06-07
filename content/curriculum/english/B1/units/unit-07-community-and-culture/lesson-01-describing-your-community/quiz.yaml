@@ -1,0 +1,25 @@
+questions:
+- key: known_for
+  type: multiple_choice
+  prompt: Which phrase means "terkenal dengan"?
+  options:
+  - known for
+  - known from
+  - known about
+  correct_answer: known for
+- key: neighborhood_meaning
+  type: multiple_choice
+  prompt: What does "neighborhood" mean?
+  options:
+  - lingkungan
+  - tiket
+  - kantor
+  correct_answer: lingkungan
+- key: because_usage
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - I like it because it's convenient.
+  - I like it because convenient.
+  - I like because it's convenient.
+  correct_answer: I like it because it's convenient.

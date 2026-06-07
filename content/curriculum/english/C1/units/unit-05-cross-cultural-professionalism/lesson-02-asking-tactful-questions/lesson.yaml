@@ -1,0 +1,25 @@
+lesson_key: lesson-02-asking-tactful-questions
+slug: asking-tactful-questions
+title: Asking Tactful Questions
+status: published
+estimated_minutes: 12
+conversation_situation: tactful_questions
+conversation_goal: Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.
+grammar_summary: Use Would you mind if I ask... / If it's okay, could you clarify... / Just to make sure I understand... to ask tactfully.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

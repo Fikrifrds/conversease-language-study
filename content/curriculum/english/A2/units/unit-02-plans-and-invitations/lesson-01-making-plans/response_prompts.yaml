@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask if someone is free tomorrow.
+    target_response: Are you free tomorrow?
+    acceptable_variations:
+      - Are you free tomorrow?
+      - Are you free tomorrow evening?
+  - prompt: Suggest getting coffee.
+    target_response: Let's get coffee.
+    acceptable_variations:
+      - Let's get coffee.
+      - Let's have coffee.
+  - prompt: Propose a time.
+    target_response: How about 6 pm?
+    acceptable_variations:
+      - How about 6 pm?
+      - How about 7 pm?

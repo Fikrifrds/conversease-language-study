@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Where is it?
+    meaning_id: Di mana itu?
+    usage_note: Ask about the location of a place someone mentions.
+    common_mistake: Do not say "Where it is?" in a normal question.
+  - phrase: What did you order?
+    meaning_id: Kamu pesan apa?
+    usage_note: Ask what someone bought or asked for at a cafe or restaurant.
+    common_mistake: Do not say "What you ordered?" without did.
+  - phrase: Was it good?
+    meaning_id: Enak tidak?
+    usage_note: Ask if the experience or food was good.
+    common_mistake: Use was for the past. Do not say "Is it good?" if it already happened.
+  - phrase: Do you want to go sometime?
+    meaning_id: Kamu mau pergi bareng kapan-kapan?
+    usage_note: A casual invitation without a fixed time.
+    common_mistake: Do not say "Do you want go" without to.
+  - phrase: That sounds fun.
+    meaning_id: Kedengarannya seru.
+    usage_note: A positive reaction to a plan or idea.
+    common_mistake: Do not say "sound fun" without -s.

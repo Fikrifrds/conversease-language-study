@@ -1,0 +1,16 @@
+prompts:
+- prompt: Make a proposal.
+  target_response: 'Here''s my proposal: we deliver a smaller scope next week, then the full version two weeks later.'
+  acceptable_variations:
+  - 'Here''s my proposal: we deliver a smaller scope next week, then the full version two weeks later.'
+  - 'Here''s my proposal: we deliver a pilot next week, then expand later.'
+- prompt: Explain a trade-off.
+  target_response: The trade-off is speed versus completeness.
+  acceptable_variations:
+  - The trade-off is speed versus completeness.
+  - The trade-off is speed versus reliability.
+- prompt: Close with a recommendation and summary.
+  target_response: 'I''d recommend that compromise. To summarize: top two features next week, the rest in two weeks.'
+  acceptable_variations:
+  - 'I''d recommend that compromise. To summarize: top two features next week, the rest in two weeks.'
+  - 'I''d recommend the middle-ground option. To summarize: small scope first, then full scope.'

@@ -1,0 +1,41 @@
+scenario_key: b1_preference_pros_cons
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Ask me about pros and cons.
+learner_goal: Ask about pros and cons and respond with one advantage and one downside.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Ask me about pros and cons of this option.
+  hint: 'Tanya: What are the pros and cons ...?'
+  sample_answer: What are the pros and cons of working remotely?
+  focus: Ask about trade-offs
+  expected_keywords:
+  - pros
+  - cons
+- coach: Give one advantage.
+  hint: Mulai dengan The advantage is ...
+  sample_answer: The advantage is you save time.
+  focus: State an advantage
+  expected_keywords:
+  - advantage
+- coach: Now give one downside.
+  hint: Mulai dengan One downside is ...
+  sample_answer: One downside is you might feel isolated.
+  focus: State a downside
+  expected_keywords:
+  - downside
+  - might
+target_phrases:
+- What are the pros and cons...?
+- The advantage is ...
+- One downside is ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

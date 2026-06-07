@@ -1,0 +1,21 @@
+phrases:
+- phrase: I have an appointment at 3:30.
+  meaning_id: Saya ada janji jam 3:30.
+  usage_note: Say this when you arrive.
+  common_mistake: Do not say "I have appointment" without an.
+- phrase: What seems to be the problem?
+  meaning_id: Keluhannya apa?
+  usage_note: A clinic question.
+  common_mistake: Answer with symptoms, not stories.
+- phrase: I've had a cough for two days.
+  meaning_id: Saya batuk dua hari.
+  usage_note: Use for + duration.
+  common_mistake: Do not say "since two days".
+- phrase: Please take a seat.
+  meaning_id: Silakan duduk.
+  usage_note: A polite instruction.
+  common_mistake: Do not say only "Sit".
+- phrase: The doctor will see you soon.
+  meaning_id: Dokternya akan menemui kamu sebentar lagi.
+  usage_note: Soon means in a short time.
+  common_mistake: Do not say "doctor see you".

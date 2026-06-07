@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Where to?
+    meaning_id: Mau ke mana?
+    usage_note: A common short question from a driver.
+    common_mistake: In a full sentence, you can say "Where are you going?"
+  - phrase: Can you take me to the station?
+    meaning_id: Bisa antar saya ke stasiun?
+    usage_note: A polite request.
+    common_mistake: Do not say "Can you take me the station" without to.
+  - phrase: How long will it take?
+    meaning_id: Kira-kira berapa lama?
+    usage_note: Ask for travel time.
+    common_mistake: Do not say "How long it will take" in a direct question.
+  - phrase: Please take the fastest route.
+    meaning_id: Tolong lewat rute tercepat.
+    usage_note: A simple request.
+    common_mistake: Keep it polite. Use please.
+  - phrase: About 20 minutes.
+    meaning_id: Sekitar 20 menit.
+    usage_note: A simple estimate.
+    common_mistake: Use about for an estimate.

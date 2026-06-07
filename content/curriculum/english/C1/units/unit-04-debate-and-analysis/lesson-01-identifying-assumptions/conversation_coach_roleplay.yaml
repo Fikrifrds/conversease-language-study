@@ -1,0 +1,44 @@
+scenario_key: c1_identifying_assumptions
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We should cut steps to increase conversion.
+learner_goal: Identify assumptions and turn them into testable implications.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We should cut steps to increase conversion.
+  hint: Surface an assumption politely.
+  sample_answer: It seems you're assuming fewer steps automatically mean better conversion.
+  focus: Assumption
+  expected_keywords:
+  - assuming
+  - steps
+  - conversion
+- coach: Ask a clarifying question about the premise.
+  hint: What are we assuming about...?
+  sample_answer: What are we assuming about user trust and clarity?
+  focus: Premise
+  expected_keywords:
+  - assuming
+  - trust
+  - clarity
+- coach: Make it testable and propose a next step.
+  hint: If that's true, then... Let's...
+  sample_answer: If that's true, then we should see drop-offs mainly on longer forms. Let's separate essential steps from redundant ones and measure impact.
+  focus: Test
+  expected_keywords:
+  - if that's true
+  - measure
+target_phrases:
+- It seems you're assuming ...
+- What are we assuming about ...?
+- If that's true, then ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

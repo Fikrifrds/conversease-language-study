@@ -1,0 +1,25 @@
+questions:
+- key: soft_disagree
+  type: multiple_choice
+  prompt: Which phrase softens disagreement?
+  options:
+  - I see your point, but ...
+  - You're wrong.
+  - No.
+  correct_answer: I see your point, but ...
+- key: go_that_far
+  type: multiple_choice
+  prompt: What does "I wouldn't go that far" mean?
+  options:
+  - aku tidak setuju sepenuhnya
+  - aku setuju total
+  - aku tidak mengerti
+  correct_answer: aku tidak setuju sepenuhnya
+- key: frame_it
+  type: multiple_choice
+  prompt: Which phrase introduces an alternative framing?
+  options:
+  - 'I might frame it differently: ...'
+  - Stop.
+  - Whatever.
+  correct_answer: 'I might frame it differently: ...'

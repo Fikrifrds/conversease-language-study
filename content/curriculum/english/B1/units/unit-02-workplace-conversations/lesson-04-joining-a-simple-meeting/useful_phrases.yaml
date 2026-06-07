@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'd like to add one point.
+  meaning_id: Aku mau nambah satu poin.
+  usage_note: A polite way to speak up in a meeting.
+  common_mistake: Do not say "I want add"; use I'd like to add.
+- phrase: Go ahead.
+  meaning_id: Silakan.
+  usage_note: A common meeting response.
+  common_mistake: Do not overuse it; one time is enough.
+- phrase: I suggest we move the deadline to Thursday.
+  meaning_id: Aku saranin deadline-nya dimajuin ke Kamis.
+  usage_note: A clear suggestion in a meeting.
+  common_mistake: Do not say "I suggestion".
+- phrase: That makes sense.
+  meaning_id: Masuk akal.
+  usage_note: Agree politely with a point.
+  common_mistake: Do not say "That makes sens".
+- phrase: What are the next steps?
+  meaning_id: Next step-nya apa?
+  usage_note: Ask for action items after discussion.
+  common_mistake: Do not say "What is next steps?"

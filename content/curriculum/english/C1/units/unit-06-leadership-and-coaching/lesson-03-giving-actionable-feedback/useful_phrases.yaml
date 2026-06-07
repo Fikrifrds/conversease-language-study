@@ -1,0 +1,21 @@
+phrases:
+- phrase: One thing I'd suggest is leading with the decision.
+  meaning_id: 'Satu yang aku sarankan: mulai dengan keputusan.'
+  usage_note: A clear, non-judgmental suggestion.
+  common_mistake: Do not list many critiques; start with one thing.
+- phrase: The impact is that stakeholders scan quickly and might miss the point.
+  meaning_id: 'Impact-nya: stakeholder baca cepat dan bisa miss poin utamanya.'
+  usage_note: Explain impact, not personal fault.
+  common_mistake: Do not say you wrote badly; explain impact.
+- phrase: A concrete improvement would be a one-line summary at the top.
+  meaning_id: 'Improvement konkretnya: ringkasan satu baris di atas.'
+  usage_note: Specific, actionable change.
+  common_mistake: Do not stay vague; propose a concrete improvement.
+- phrase: Would you be open to revising it and sending a second draft?
+  meaning_id: Kamu open nggak untuk revisi dan kirim draft kedua?
+  usage_note: Invite revision collaboratively.
+  common_mistake: Do not command; ask if they're open.
+- phrase: Overall it's solid.
+  meaning_id: Secara overall bagus.
+  usage_note: Positive framing before feedback.
+  common_mistake: Do not skip positives; start with overall.

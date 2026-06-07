@@ -1,0 +1,16 @@
+prompts:
+- prompt: Set one clear direction.
+  target_response: The direction I'd like to set is stabilizing the billing flow first.
+  acceptable_variations:
+  - The direction I'd like to set is stabilizing the billing flow first.
+  - The direction I'd like to set is reducing incidents first.
+- prompt: Define success criteria.
+  target_response: Success looks like fewer incidents and faster completion rates.
+  acceptable_variations:
+  - Success looks like fewer incidents and faster completion rates.
+  - Success looks like fewer tickets and a stable rollout.
+- prompt: Assign ownership clearly.
+  target_response: I'd like you to own the rollout plan, and I'll own stakeholder updates.
+  acceptable_variations:
+  - I'd like you to own the rollout plan, and I'll own stakeholder updates.
+  - I'd like you to own the plan, and I'll own the communication.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: I see your point, but I'm not sure I'd go that far.
+  meaning_id: Aku paham poin kamu, tapi aku nggak yakin aku akan sejauh itu.
+  usage_note: Acknowledge then disagree softly.
+  common_mistake: Do not say you're wrong; acknowledge first.
+- phrase: With respect, the current error rate suggests we're not ready.
+  meaning_id: Dengan hormat, error rate sekarang menunjukkan kita belum siap.
+  usage_note: Polite disagreement with evidence.
+  common_mistake: Do not sound emotional; use evidence language.
+- phrase: 'I might frame it differently: ...'
+  meaning_id: 'Aku akan framing beda: ...'
+  usage_note: Offer an alternative without confrontation.
+  common_mistake: Do not reject without proposing an alternative.
+- phrase: That could work.
+  meaning_id: Bisa juga.
+  usage_note: A flexible response to align.
+  common_mistake: Do not be rigid; show openness.
+- phrase: This way we protect reliability without losing momentum.
+  meaning_id: Dengan begitu kita jaga reliability tanpa kehilangan momentum.
+  usage_note: Summarize benefits of the compromise.
+  common_mistake: Do not oversell; keep it practical.

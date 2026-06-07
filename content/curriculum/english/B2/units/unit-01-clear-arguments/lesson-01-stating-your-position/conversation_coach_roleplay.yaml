@@ -1,0 +1,42 @@
+scenario_key: b2_argument_position
+mode: lesson_practice_coach
+level_code: B2
+opening_line: What's your position on this?
+learner_goal: State your position, give one reason, and respond politely to a counterpoint.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your position on switching to written updates?
+  hint: Mulai dengan In my view / I believe.
+  sample_answer: In my view, a written update would be better for routine topics.
+  focus: State position
+  expected_keywords:
+  - in my view
+  - better
+- coach: Why?
+  hint: Jawab dengan because + satu alasan.
+  sample_answer: Because it saves time and helps people focus.
+  focus: Give reason
+  expected_keywords:
+  - because
+  - time
+- coach: But some people want real-time discussion.
+  hint: Acknowledge + but + solusi singkat.
+  sample_answer: I see your point, but we can keep one live meeting per month.
+  focus: Respond to counterpoint
+  expected_keywords:
+  - see your point
+  - but
+target_phrases:
+- In my view, ...
+- Because ...
+- I see your point, but ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

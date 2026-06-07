@@ -1,0 +1,25 @@
+questions:
+- key: rather_meaning
+  type: multiple_choice
+  prompt: What does "I'd rather" mean?
+  options:
+  - saya lebih memilih
+  - saya tidak tahu
+  - saya sudah selesai
+  correct_answer: saya lebih memilih
+- key: two_options
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - We have two options.
+  - We have two option.
+  - We has two options.
+  correct_answer: We have two options.
+- key: reasonable_meaning
+  type: multiple_choice
+  prompt: What does "reasonable" mean?
+  options:
+  - masuk akal
+  - berbahaya
+  - lambat
+  correct_answer: masuk akal

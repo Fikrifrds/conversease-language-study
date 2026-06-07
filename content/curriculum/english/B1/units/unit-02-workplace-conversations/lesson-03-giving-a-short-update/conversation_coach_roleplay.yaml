@@ -1,0 +1,42 @@
+scenario_key: b1_work_short_update
+mode: lesson_practice_coach
+level_code: B1
+opening_line: 'Quick update: how is it going?'
+learner_goal: 'Give a short update: progress, what''s left, and one concern.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: 'Quick update: how is it going?'
+  hint: Jawab dengan progress.
+  sample_answer: I'm making good progress. I'm almost done with the summary.
+  focus: Share progress
+  expected_keywords:
+  - progress
+  - almost
+- coach: Great. What's left?
+  hint: Sebutkan 1-2 item yang tersisa.
+  sample_answer: I still need to update the risk section and double-check the numbers.
+  focus: Say what's left
+  expected_keywords:
+  - still need
+  - double-check
+- coach: Any concerns?
+  hint: Sebutkan 1 concern dengan might need.
+  sample_answer: One concern is time. I might need an extra hour to review everything.
+  focus: Mention a concern
+  expected_keywords:
+  - concern
+  - might
+target_phrases:
+- I'm making progress.
+- What's left?
+- One concern is ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

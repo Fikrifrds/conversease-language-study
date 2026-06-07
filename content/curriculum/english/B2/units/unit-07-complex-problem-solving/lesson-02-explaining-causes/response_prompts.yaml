@@ -1,0 +1,16 @@
+prompts:
+- prompt: State a possible cause.
+  target_response: One possible cause is the new checkout design.
+  acceptable_variations:
+  - One possible cause is the new checkout design.
+  - One possible cause is a confusing step in checkout.
+- prompt: Use evidence language.
+  target_response: Based on the data, drop-offs increased right after the redesign.
+  acceptable_variations:
+  - Based on the data, drop-offs increased right after the redesign.
+  - Based on the data, complaints increased after the change.
+- prompt: Suggest a way to confirm.
+  target_response: Let's compare load times and run a small A/B test.
+  acceptable_variations:
+  - Let's compare load times and run a small A/B test.
+  - Let's run a small experiment to confirm.

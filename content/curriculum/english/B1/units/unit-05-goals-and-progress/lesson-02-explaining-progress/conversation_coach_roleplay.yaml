@@ -1,0 +1,41 @@
+scenario_key: b1_goals_explain_progress
+mode: lesson_practice_coach
+level_code: B1
+opening_line: How's your goal going?
+learner_goal: Explain your progress, say what you've been doing, and mention what you still need to work on.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: How's your goal going?
+  hint: 'Mulai dengan: I''m making good progress.'
+  sample_answer: I'm making good progress.
+  focus: Share progress
+  expected_keywords:
+  - progress
+- coach: What have you been doing?
+  hint: Jawab dengan I've been practicing ...
+  sample_answer: I've been practicing every morning for five minutes.
+  focus: Explain practice habit
+  expected_keywords:
+  - been
+  - practicing
+- coach: What still needs work?
+  hint: Jawab dengan I still need to ...
+  sample_answer: I still need to improve my pronunciation.
+  focus: State what's next to improve
+  expected_keywords:
+  - still
+  - improve
+target_phrases:
+- I'm making progress.
+- I've been practicing ...
+- I still need to ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

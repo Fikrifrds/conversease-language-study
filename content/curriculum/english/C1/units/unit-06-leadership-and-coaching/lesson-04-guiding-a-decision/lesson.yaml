@@ -1,0 +1,25 @@
+lesson_key: lesson-04-guiding-a-decision
+slug: guiding-a-decision
+title: Guiding a Decision
+status: published
+estimated_minutes: 12
+conversation_situation: guiding_decision
+conversation_goal: Guide a decision by structuring options, trade-offs, and a clear recommendation.
+grammar_summary: Use We have three options... / The trade-off is... / Given our constraints... / I'd recommend... / Can we agree on... to guide decisions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

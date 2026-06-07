@@ -1,0 +1,25 @@
+questions:
+- key: coaching_flow
+  type: multiple_choice
+  prompt: Which flow fits leadership coaching?
+  options:
+  - Direction -> questions -> feedback -> decision
+  - Greeting -> goodbye
+  - Colors -> numbers
+  correct_answer: Direction -> questions -> feedback -> decision
+- key: ownership_question
+  type: multiple_choice
+  prompt: Which question builds ownership?
+  options:
+  - What options do you see?
+  - I'll decide.
+  - No options.
+  correct_answer: What options do you see?
+- key: decision_phrase
+  type: multiple_choice
+  prompt: Which phrase confirms agreement?
+  options:
+  - Can we agree on ...?
+  - You must agree.
+  - Stop.
+  correct_answer: Can we agree on ...?

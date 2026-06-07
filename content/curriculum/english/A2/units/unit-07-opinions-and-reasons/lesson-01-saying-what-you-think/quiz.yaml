@@ -1,0 +1,25 @@
+questions:
+- key: opinion_phrase
+  type: multiple_choice
+  prompt: Which sentence gives an opinion?
+  options:
+  - I think it's really good.
+  - I go to the cinema.
+  - I watched last night.
+  correct_answer: I think it's really good.
+- key: contrast_but
+  type: multiple_choice
+  prompt: Which word shows contrast?
+  options:
+  - but
+  - and
+  - so
+  correct_answer: but
+- key: meaning_think
+  type: multiple_choice
+  prompt: What does "I think" mean?
+  options:
+  - saya pikir/menurut saya
+  - saya pergi
+  - saya makan
+  correct_answer: saya pikir/menurut saya

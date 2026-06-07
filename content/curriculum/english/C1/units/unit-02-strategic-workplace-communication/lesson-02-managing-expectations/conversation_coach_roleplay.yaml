@@ -1,0 +1,43 @@
+scenario_key: c1_managing_expectations
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Can we deliver the full scope by next week?
+learner_goal: Set realistic expectations with commitments, conditions, and success criteria.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Can we deliver the full scope by next week?
+  hint: Start with what you can commit to.
+  sample_answer: What we can commit to is a smaller release by next week.
+  focus: Commitment
+  expected_keywords:
+  - commit
+  - smaller
+- coach: When can we deliver everything?
+  hint: The earliest we can deliver... assuming...
+  sample_answer: The earliest we can deliver the full scope is two weeks later, assuming no new blockers.
+  focus: Timeline + condition
+  expected_keywords:
+  - earliest
+  - assuming
+  - blockers
+- coach: Define success criteria.
+  hint: Success means...
+  sample_answer: Success means fewer incidents and a stable rollout with clear monitoring.
+  focus: Success
+  expected_keywords:
+  - success means
+  - stable
+target_phrases:
+- What we can commit to is ...
+- The earliest we can deliver is ...
+- To avoid surprises, ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

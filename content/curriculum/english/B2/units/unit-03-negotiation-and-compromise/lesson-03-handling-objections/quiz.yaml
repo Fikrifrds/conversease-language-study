@@ -1,0 +1,25 @@
+questions:
+- key: empathy_phrase
+  type: multiple_choice
+  prompt: Which phrase shows empathy in a negotiation?
+  options:
+  - I understand the concern.
+  - You're wrong.
+  - No.
+  correct_answer: I understand the concern.
+- key: what_if_we
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - What if we define simple criteria?
+  - What if define criteria?
+  - What if we defined criteria? (not a suggestion)
+  correct_answer: What if we define simple criteria?
+- key: would_it_help_if
+  type: multiple_choice
+  prompt: Which phrase offers a soft revision?
+  options:
+  - Would it help if we ...?
+  - Do it now.
+  - Stop complaining.
+  correct_answer: Would it help if we ...?

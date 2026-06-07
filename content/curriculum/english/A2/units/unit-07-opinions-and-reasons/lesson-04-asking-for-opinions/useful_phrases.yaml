@@ -1,0 +1,21 @@
+phrases:
+- phrase: What do you think about going to Bali?
+  meaning_id: Menurut kamu gimana kalau kita ke Bali?
+  usage_note: Ask an opinion about a plan.
+  common_mistake: Do not say "What you think about" without do.
+- phrase: I think it's a great idea.
+  meaning_id: Menurutku itu ide bagus.
+  usage_note: A positive opinion.
+  common_mistake: Do not say "I think it great".
+- phrase: Because the beaches are beautiful.
+  meaning_id: Karena pantainya indah.
+  usage_note: A simple reason.
+  common_mistake: Do not say "Because beaches beautiful".
+- phrase: It might be crowded.
+  meaning_id: Mungkin ramai.
+  usage_note: Might shows possibility.
+  common_mistake: Do not say "It maybe crowded".
+- phrase: Maybe we go on a weekday.
+  meaning_id: Mungkin kita pergi hari kerja.
+  usage_note: A simple suggestion.
+  common_mistake: Do not say "Maybe we going".

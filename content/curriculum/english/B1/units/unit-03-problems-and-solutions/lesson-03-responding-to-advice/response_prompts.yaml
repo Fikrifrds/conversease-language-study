@@ -1,0 +1,16 @@
+prompts:
+- prompt: Accept advice politely.
+  target_response: That sounds good.
+  acceptable_variations:
+  - That sounds good.
+  - That sounds helpful.
+- prompt: 'Agree: You''re right.'
+  target_response: You're right.
+  acceptable_variations:
+  - You're right.
+  - Yeah, you're right.
+- prompt: Commit to a small action.
+  target_response: I'll try that starting tomorrow.
+  acceptable_variations:
+  - I'll try that starting tomorrow.
+  - I'll try that this week.

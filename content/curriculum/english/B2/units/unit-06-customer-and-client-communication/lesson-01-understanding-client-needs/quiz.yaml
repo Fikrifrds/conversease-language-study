@@ -1,0 +1,25 @@
+questions:
+- key: clarify_client
+  type: multiple_choice
+  prompt: Which phrase asks to clarify professionally?
+  options:
+  - Just to clarify, ...
+  - You are unclear.
+  - Explain now.
+  correct_answer: Just to clarify, ...
+- key: share_more
+  type: multiple_choice
+  prompt: Which sentence asks for more detail politely?
+  options:
+  - Could you share more about the biggest pain point?
+  - Tell me everything.
+  - Why are you complaining?
+  correct_answer: Could you share more about the biggest pain point?
+- key: requirements_meaning
+  type: multiple_choice
+  prompt: What does "requirements" mean?
+  options:
+  - kebutuhan/requirement
+  - hadiah
+  - liburan
+  correct_answer: kebutuhan/requirement

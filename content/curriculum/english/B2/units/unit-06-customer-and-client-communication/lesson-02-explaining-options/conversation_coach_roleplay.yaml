@@ -1,0 +1,42 @@
+scenario_key: b2_client_options
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Can you explain our options?
+learner_goal: Explain options, trade-offs, and a recommendation.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Can you explain our options?
+  hint: Mulai dengan We have two options.
+  sample_answer: We have two options. Option A is a quick fix we can deliver this week.
+  focus: Option A
+  expected_keywords:
+  - two options
+  - option a
+- coach: And option B?
+  hint: Option B is..., but it takes...
+  sample_answer: Option B is a more robust solution, but it takes two more weeks.
+  focus: Option B
+  expected_keywords:
+  - option b
+  - but
+- coach: Explain the trade-off and recommend one.
+  hint: The trade-off is... I'd recommend...
+  sample_answer: The trade-off is speed versus long-term stability. I'd recommend option B if the timeline allows.
+  focus: Trade-off + recommendation
+  expected_keywords:
+  - trade-off
+  - recommend
+target_phrases:
+- We have two options.
+- The trade-off is ...
+- I'd recommend ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

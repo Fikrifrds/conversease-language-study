@@ -1,0 +1,21 @@
+phrases:
+- phrase: In my view, we should move routine updates to a written summary.
+  meaning_id: Menurutku, update rutin sebaiknya dipindah ke ringkasan tertulis.
+  usage_note: Clear position + suggestion.
+  common_mistake: Do not say "In my view we must"; should is softer.
+- phrase: One reason is it saves time.
+  meaning_id: Salah satu alasannya hemat waktu.
+  usage_note: Reason structure.
+  common_mistake: Do not drop is.
+- phrase: For example, last month we spent 30 minutes repeating updates.
+  meaning_id: Contohnya, bulan lalu kita habis 30 menit ngulang update.
+  usage_note: Example with simple data.
+  common_mistake: Avoid too many numbers; one is enough.
+- phrase: That's a fair point. However, ...
+  meaning_id: Itu poin yang adil. Tapi, ...
+  usage_note: Polite response to a counterpoint.
+  common_mistake: Do not respond emotionally; keep it calm and professional.
+- phrase: Let's run a one-month trial and review the results.
+  meaning_id: Yuk coba satu bulan lalu review hasilnya.
+  usage_note: A concrete next step.
+  common_mistake: Do not say "trialing"; use run a trial.

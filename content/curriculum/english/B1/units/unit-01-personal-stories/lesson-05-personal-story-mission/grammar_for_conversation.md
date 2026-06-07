@@ -1,0 +1,9 @@
+# Grammar for Conversation
+
+Use **Connected story pattern**.
+
+Examples:
+
+- Last weekend, I was in ...
+- First, ... Then ... After that ... Finally, ...
+- I felt ... because ...

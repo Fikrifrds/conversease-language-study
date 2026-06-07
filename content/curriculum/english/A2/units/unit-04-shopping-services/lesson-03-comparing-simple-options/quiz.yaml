@@ -1,0 +1,25 @@
+questions:
+  - key: comparative_question
+    type: multiple_choice
+    prompt: Which question compares two options?
+    options:
+      - Which one is cheaper?
+      - Do you have it?
+      - What time does it leave?
+    correct_answer: Which one is cheaper?
+  - key: choose_phrase
+    type: multiple_choice
+    prompt: Which sentence chooses an option?
+    options:
+      - I'll take the cheaper one.
+      - I'm looking for a charger.
+      - Sorry, we're out of stock.
+    correct_answer: I'll take the cheaper one.
+  - key: avoid_more_better
+    type: multiple_choice
+    prompt: Which is correct?
+    options:
+      - It's better quality.
+      - It's more better quality.
+      - It's betterer.
+    correct_answer: It's better quality.

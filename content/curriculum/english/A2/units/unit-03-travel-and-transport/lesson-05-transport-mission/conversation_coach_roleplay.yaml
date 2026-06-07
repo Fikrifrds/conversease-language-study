@@ -1,0 +1,50 @@
+scenario_key: a2_transport_mission_ticket_and_driver
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Where are you going?
+learner_goal: Buy a ticket, ask about time and platform, then request a ride to the hotel.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi. Where are you going?
+    hint: Minta tiket dan sebutkan tujuan.
+    sample_answer: I'd like one ticket to Bandung, please.
+    focus: Ticket request
+    expected_keywords:
+      - i'd like
+      - ticket
+  - coach: One-way or round-trip?
+    hint: Pilih satu-way.
+    sample_answer: One-way, please.
+    focus: Ticket type
+    expected_keywords:
+      - one-way
+  - coach: Okay. It leaves at 6:30 pm from platform 2.
+    hint: Tanya balik platform atau durasi dengan singkat.
+    sample_answer: Great. Which platform again?
+    focus: Confirm details
+    expected_keywords:
+      - platform
+      - "?"
+  - coach: Hi. Where to?
+    hint: Minta driver antar ke hotel.
+    sample_answer: Can you take me to my hotel, please?
+    focus: Driver request
+    expected_keywords:
+      - take me to
+      - hotel
+
+target_phrases:
+  - I'd like one ticket to Bandung, please.
+  - One-way, please.
+  - Which platform?
+  - Can you take me to my hotel?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

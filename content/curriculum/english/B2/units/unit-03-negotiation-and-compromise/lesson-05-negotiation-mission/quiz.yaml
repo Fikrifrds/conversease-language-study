@@ -1,0 +1,25 @@
+questions:
+- key: negotiation_flow
+  type: multiple_choice
+  prompt: Which flow fits a negotiation?
+  options:
+  - Priorities -> proposal -> objection -> compromise
+  - Greeting -> goodbye
+  - Weather -> food
+  correct_answer: Priorities -> proposal -> objection -> compromise
+- key: prepare_in_parallel
+  type: multiple_choice
+  prompt: What does "in parallel" mean?
+  options:
+  - secara paralel/bersamaan
+  - sendirian
+  - setelah selesai
+  correct_answer: secara paralel/bersamaan
+- key: results_look_good
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - If results look good, we can expand.
+  - If results looks good, we can expand.
+  - If results looking good, expand.
+  correct_answer: If results look good, we can expand.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: What did you do yesterday?
+  meaning_id: Kamu ngapain kemarin?
+  usage_note: A mission starter question.
+  common_mistake: Do not say "What you did".
+- phrase: I went to the museum and took photos.
+  meaning_id: Aku pergi ke museum dan foto-foto.
+  usage_note: A short past story sentence.
+  common_mistake: Do not say "I take photos yesterday".
+- phrase: How was it?
+  meaning_id: Gimana?
+  usage_note: Ask about the experience.
+  common_mistake: Do not say "How it was?".
+- phrase: It was really interesting.
+  meaning_id: Seru banget.
+  usage_note: Use It was + adjective.
+  common_mistake: Do not say "It really interesting".
+- phrase: Did you go with anyone?
+  meaning_id: Kamu pergi sama siapa?
+  usage_note: Ask who they went with.
+  common_mistake: Do not say "Did you went".

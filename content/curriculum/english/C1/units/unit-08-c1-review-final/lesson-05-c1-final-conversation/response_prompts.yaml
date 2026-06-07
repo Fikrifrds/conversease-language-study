@@ -1,0 +1,16 @@
+prompts:
+- prompt: Frame the conversation goal.
+  target_response: 'Let me frame this: we need reliable outcomes and stakeholder confidence before scaling.'
+  acceptable_variations:
+  - 'Let me frame this: we need reliable outcomes and stakeholder confidence before scaling.'
+  - 'Let me frame this: we need stable metrics and confidence before scaling.'
+- prompt: Offer a nuanced compromise with conditions.
+  target_response: On balance, we can move fast, but only if we limit scope and validate metrics.
+  acceptable_variations:
+  - On balance, we can move fast, but only if we limit scope and validate metrics.
+  - On balance, we can move quickly, but only if we keep scope tight and validate the data.
+- prompt: Close with a decision and next steps.
+  target_response: 'The decision is to run a two-week pilot with clear success criteria. Next steps are: I''ll send a one-page plan today, and we''ll align stakeholders tomorrow.'
+  acceptable_variations:
+  - 'The decision is to run a two-week pilot with clear success criteria. Next steps are: I''ll send a one-page plan today, and we''ll align stakeholders tomorrow.'
+  - 'The decision is to run a pilot first. Next steps are: I''ll send a plan today, and we''ll align tomorrow.'

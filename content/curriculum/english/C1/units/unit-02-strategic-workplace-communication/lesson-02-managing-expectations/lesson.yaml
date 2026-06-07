@@ -1,0 +1,25 @@
+lesson_key: lesson-02-managing-expectations
+slug: managing-expectations
+title: Managing Expectations
+status: published
+estimated_minutes: 12
+conversation_situation: managing_expectations
+conversation_goal: Manage expectations by setting clear boundaries, timelines, and what success looks like.
+grammar_summary: Use What we can commit to is... / The earliest we can deliver is... / To avoid surprises... / I'd rather under-promise... to manage expectations.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

@@ -1,0 +1,21 @@
+phrases:
+- phrase: In my view, a written update would be better.
+  meaning_id: Menurutku, update tertulis lebih bagus.
+  usage_note: A clear and polite way to state your position.
+  common_mistake: Do not say "In my opinion is"; use In my view, ...
+- phrase: Because it saves time.
+  meaning_id: Karena itu hemat waktu.
+  usage_note: Give one short reason.
+  common_mistake: Do not say "Because saves time"; include it.
+- phrase: I see your point, but...
+  meaning_id: Aku paham poin kamu, tapi...
+  usage_note: Acknowledge and disagree politely.
+  common_mistake: Do not jump to disagreement without acknowledging; use I see your point.
+- phrase: That sounds like a good compromise.
+  meaning_id: Kedengarannya kompromi yang bagus.
+  usage_note: A positive reaction to a balanced solution.
+  common_mistake: Do not say "That sound"; add -s.
+- phrase: I'm happy to draft a proposal.
+  meaning_id: Aku siap bikin draft proposal.
+  usage_note: Offer a clear next step.
+  common_mistake: Do not say "I am happy draft"; use happy to + verb.

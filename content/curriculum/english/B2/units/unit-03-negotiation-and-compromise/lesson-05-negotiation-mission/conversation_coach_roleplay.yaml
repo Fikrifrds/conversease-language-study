@@ -1,0 +1,43 @@
+scenario_key: b2_negotiation_mission
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We need to decide a launch plan. Let's negotiate.
+learner_goal: 'Negotiate: align priorities, propose a plan, handle an objection, and suggest a compromise.'
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your top priority?
+  hint: My top priority is ... + ask mine.
+  sample_answer: My top priority is quality. What matters most to you?
+  focus: Priorities
+  expected_keywords:
+  - top priority
+  - matters most
+- coach: Make a proposal with a timeline.
+  hint: I propose we ... for ... weeks.
+  sample_answer: I propose we run a small pilot for two weeks.
+  focus: Proposal
+  expected_keywords:
+  - propose
+  - weeks
+- coach: I’m concerned it will delay the launch. Respond and offer a compromise.
+  hint: I understand the concern. Would it help if... A compromise could be...
+  sample_answer: I understand the concern. Would it help if we prepare in parallel? A compromise could be launching to 10% first, then expanding if results look good.
+  focus: Objection + compromise
+  expected_keywords:
+  - understand
+  - help
+  - compromise
+target_phrases:
+- My top priority is ...
+- I propose we ...
+- A compromise could be ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

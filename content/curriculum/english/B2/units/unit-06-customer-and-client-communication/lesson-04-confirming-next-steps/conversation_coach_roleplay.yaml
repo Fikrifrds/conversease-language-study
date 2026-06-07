@@ -1,0 +1,42 @@
+scenario_key: b2_client_next_steps
+mode: lesson_practice_coach
+level_code: B2
+opening_line: This sounds good. What happens next?
+learner_goal: Confirm next steps with owners and timeline.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Confirm the decision.
+  hint: To confirm, ...
+  sample_answer: To confirm, we'll start with a two-week pilot.
+  focus: Confirm decision
+  expected_keywords:
+  - to confirm
+  - pilot
+- coach: List next steps with owners and deadlines.
+  hint: 'Next steps are: I''ll... today, and you''ll... by Friday.'
+  sample_answer: 'Next steps are: I''ll send the draft plan today, and you''ll review it by Friday.'
+  focus: Next steps
+  expected_keywords:
+  - next steps
+  - by
+- coach: Check if the timeline works.
+  hint: Does that timeline work for you?
+  sample_answer: Great. Does that timeline work for you?
+  focus: Confirm timeline
+  expected_keywords:
+  - timeline
+  - work
+target_phrases:
+- To confirm, ...
+- Next steps are ...
+- Does that timeline work for you?
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

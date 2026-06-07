@@ -1,0 +1,25 @@
+questions:
+- key: to_confirm
+  type: multiple_choice
+  prompt: Which phrase confirms a decision?
+  options:
+  - To confirm, ...
+  - By the way, ...
+  - Anyway, ...
+  correct_answer: To confirm, ...
+- key: by_deadline_client
+  type: multiple_choice
+  prompt: Which sentence uses by for a deadline correctly?
+  options:
+  - You'll review it by Friday.
+  - You'll review it until Friday.
+  - You'll by Friday review.
+  correct_answer: You'll review it by Friday.
+- key: timeline_question
+  type: multiple_choice
+  prompt: Which question checks agreement on timing?
+  options:
+  - Does that timeline work for you?
+  - Why are you late?
+  - Stop.
+  correct_answer: Does that timeline work for you?

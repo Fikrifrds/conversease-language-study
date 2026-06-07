@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_are_you_free
+    type: multiple_choice
+    prompt: What does "Are you free tomorrow?" mean?
+    options:
+      - Kamu kosong besok?
+      - Kamu suka kopi?
+      - Kamu kerja di mana?
+    correct_answer: Kamu kosong besok?
+  - key: propose_time
+    type: multiple_choice
+    prompt: Which phrase proposes a time?
+    options:
+      - How about 6 pm?
+      - Where should we meet?
+      - See you then.
+    correct_answer: How about 6 pm?
+  - key: plan_closing
+    type: multiple_choice
+    prompt: Which closing fits when you already agreed on a time?
+    options:
+      - See you then.
+      - I'm sorry to hear that.
+      - Where is it?
+    correct_answer: See you then.

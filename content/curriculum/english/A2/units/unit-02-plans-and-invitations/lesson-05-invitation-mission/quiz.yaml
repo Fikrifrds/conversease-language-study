@@ -1,0 +1,25 @@
+questions:
+  - key: reschedule_day
+    type: multiple_choice
+    prompt: Which phrase suggests a new day?
+    options:
+      - How about Saturday?
+      - See you then.
+      - Are you free tomorrow?
+    correct_answer: How about Saturday?
+  - key: confirm_time
+    type: multiple_choice
+    prompt: Which question confirms a time?
+    options:
+      - Does 3 pm work for you?
+      - Where should we meet?
+      - Which movie?
+    correct_answer: Does 3 pm work for you?
+  - key: polite_decline
+    type: multiple_choice
+    prompt: Which phrase is a polite decline?
+    options:
+      - Sorry, I can't.
+      - I'm going to.
+      - Sounds great.
+    correct_answer: Sorry, I can't.

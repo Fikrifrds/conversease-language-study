@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Let me frame this: the goal is reliability, not just speed.'
+  meaning_id: 'Biar aku frame: targetnya reliability, bukan cuma cepat.'
+  usage_note: A strong, structured opening for presentations.
+  common_mistake: Do not start with details; frame the goal first.
+- phrase: The core assumption is that incidents cost more than delay.
+  meaning_id: 'Asumsi intinya: incident biayanya lebih mahal daripada delay.'
+  usage_note: Surface assumptions explicitly to debate honestly.
+  common_mistake: Do not hide assumptions; name them clearly.
+- phrase: If we accept speed as the priority, then we should time-box a pilot and limit scope.
+  meaning_id: Kalau prioritasnya speed, maka kita time-box pilot dan batasi scope.
+  usage_note: Conditional reasoning under pressure.
+  common_mistake: Do not argue emotionally; use if/then logic.
+- phrase: On the other hand, we can keep one feature in scope if the metrics stay stable.
+  meaning_id: Di sisi lain, kita bisa tetap masukin satu fitur kalau metriknya stabil.
+  usage_note: Balanced counterpoint language.
+  common_mistake: Do not dismiss the other view; acknowledge it.
+- phrase: 'In short: protect reliability, validate with metrics, then expand safely.'
+  meaning_id: 'Singkatnya: lindungi reliability, validasi pakai metrik, lalu ekspansi dengan aman.'
+  usage_note: A crisp closing summary.
+  common_mistake: Do not introduce new points in the summary.

@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Answer: Would you recommend it?'
+  target_response: Yes, because the coffee is good and it is quiet.
+  acceptable_variations:
+  - Yes, because the coffee is good and it is quiet.
+  - Yes, because it is quiet and relaxing.
+- prompt: 'Invite: Do you want to go there this weekend?'
+  target_response: Do you want to go there this weekend?
+  acceptable_variations:
+  - Do you want to go there this weekend?
+  - Do you want to go there on the weekend?
+- prompt: 'Ask availability: Are you free on Saturday afternoon?'
+  target_response: Are you free on Saturday afternoon?
+  acceptable_variations:
+  - Are you free on Saturday afternoon?
+  - Are you free on Saturday?

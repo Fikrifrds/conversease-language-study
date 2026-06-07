@@ -1,0 +1,21 @@
+phrases:
+- phrase: My top priority is shipping the core feature safely.
+  meaning_id: Prioritas utamaku adalah rilis fitur utama dengan aman.
+  usage_note: A clear priority statement.
+  common_mistake: Do not say "My top priority shipping"; include is.
+- phrase: What matters most is shipping safely.
+  meaning_id: Yang paling penting adalah rilis dengan aman.
+  usage_note: A natural way to emphasize importance.
+  common_mistake: Do not say "What matter most"; add -s.
+- phrase: Because the deadline is close.
+  meaning_id: Karena deadline-nya dekat.
+  usage_note: A short reason sentence.
+  common_mistake: Do not say "Because deadline close" without the.
+- phrase: The second priority is improving monitoring.
+  meaning_id: Prioritas kedua adalah ningkatin monitoring.
+  usage_note: Add a second priority clearly.
+  common_mistake: Do not say "second priority are"; use is.
+- phrase: What about you? What's your top priority?
+  meaning_id: Kalau kamu gimana? Prioritas utamamu apa?
+  usage_note: Ask for the other person's priorities.
+  common_mistake: Do not ask vaguely; use top priority for clarity.

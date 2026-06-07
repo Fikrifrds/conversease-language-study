@@ -1,0 +1,16 @@
+prompts:
+- prompt: Align priorities.
+  target_response: My top priority is quality. What matters most to you?
+  acceptable_variations:
+  - My top priority is quality. What matters most to you?
+  - My top priority is speed. What matters most to you?
+- prompt: Make a proposal with timeline.
+  target_response: I propose we run a small pilot for two weeks.
+  acceptable_variations:
+  - I propose we run a small pilot for two weeks.
+  - I propose we start with a small rollout.
+- prompt: Offer compromise.
+  target_response: A compromise could be launching to 10% first, then expanding if results look good.
+  acceptable_variations:
+  - A compromise could be launching to 10% first, then expanding if results look good.
+  - A compromise could be a one-week pilot, then a full launch.

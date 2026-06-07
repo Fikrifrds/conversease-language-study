@@ -1,0 +1,25 @@
+lesson_key: lesson-01-review-social-and-plans
+slug: review-social-and-plans
+title: Review Social and Plans
+status: published
+estimated_minutes: 10
+conversation_situation: review_social_small_talk_and_plans
+conversation_goal: Review social small talk and making simple plans with follow-up questions.
+grammar_summary: Review follow-up questions, invitations, and simple future plans (Do you want to...?, Are you free...?).
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

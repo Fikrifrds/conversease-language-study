@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Ask about someone's day.
+    target_response: How's your day?
+    acceptable_variations:
+      - How's your day?
+      - How's your day going?
+  - prompt: Say that today is busy.
+    target_response: It's busy today.
+    acceptable_variations:
+      - It's busy today.
+      - It's really busy today.
+  - prompt: Ask about the weekend.
+    target_response: How was your weekend?
+    acceptable_variations:
+      - How was your weekend?

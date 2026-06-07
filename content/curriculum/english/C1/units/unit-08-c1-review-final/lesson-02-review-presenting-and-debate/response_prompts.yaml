@@ -1,0 +1,16 @@
+prompts:
+- prompt: Frame your argument in one sentence.
+  target_response: 'Let me frame this: the goal is reliability, not just speed.'
+  acceptable_variations:
+  - 'Let me frame this: the goal is reliability, not just speed.'
+  - 'Let me frame this: the goal is long-term stability, not just quick wins.'
+- prompt: Respond with conditional reasoning.
+  target_response: If we accept speed as the priority, then we should time-box a pilot and limit scope.
+  acceptable_variations:
+  - If we accept speed as the priority, then we should time-box a pilot and limit scope.
+  - If speed is the priority, then we should reduce scope and validate quickly.
+- prompt: Close with a short summary.
+  target_response: 'In short: protect reliability, validate with metrics, then expand safely.'
+  acceptable_variations:
+  - 'In short: protect reliability, validate with metrics, then expand safely.'
+  - 'In short: validate first, then scale.'

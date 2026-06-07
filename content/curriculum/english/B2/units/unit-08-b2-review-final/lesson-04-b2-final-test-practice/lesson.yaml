@@ -1,0 +1,25 @@
+lesson_key: lesson-04-b2-final-test-practice
+slug: b2-final-test-practice
+title: B2 Final Test Practice
+status: published
+estimated_minutes: 12
+conversation_situation: final_test_practice
+conversation_goal: 'Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.'
+grammar_summary: 'Use signposting: My position is... / Based on the data... / The trade-off is... / I''d recommend... / Next steps are...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

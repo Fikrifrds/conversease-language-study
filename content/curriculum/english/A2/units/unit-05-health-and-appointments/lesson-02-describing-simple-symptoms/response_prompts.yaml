@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you've had a cough for two days.
+  target_response: I've had a cough for two days.
+  acceptable_variations:
+  - I've had a cough for two days.
+  - I've had a cough for 2 days.
+- prompt: Say you've had a sore throat since yesterday.
+  target_response: I've had a sore throat since yesterday.
+  acceptable_variations:
+  - I've had a sore throat since yesterday.
+  - I've had a sore throat since last night.
+- prompt: 'Answer: Do you have a fever?'
+  target_response: A little.
+  acceptable_variations:
+  - A little.
+  - Yes, a little.

@@ -1,0 +1,11 @@
+unit_key: unit-05-health-and-appointments
+level_code: A2
+title: Health & Appointments
+main_conversation_outcome: Describe simple symptoms and arrange appointments.
+status: in_production
+lessons:
+  - lesson-01-saying-how-you-feel
+  - lesson-02-describing-simple-symptoms
+  - lesson-03-making-an-appointment
+  - lesson-04-confirming-details
+  - lesson-05-health-appointment-mission

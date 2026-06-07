@@ -1,0 +1,16 @@
+prompts:
+- prompt: Summarize a long explanation.
+  target_response: 'Let me make sure I got this: we need to manage dependencies, time pressure, and stakeholder visibility.'
+  acceptable_variations:
+  - 'Let me make sure I got this: we need to manage dependencies, time pressure, and stakeholder visibility.'
+  - 'Let me make sure I got this: timeline is tight, and stakeholders need visibility.'
+- prompt: Extract key points.
+  target_response: 'The key points are: keep changes small, communicate clearly, and monitor risk.'
+  acceptable_variations:
+  - 'The key points are: keep changes small, communicate clearly, and monitor risk.'
+  - 'The key points are: reduce scope, communicate, and monitor.'
+- prompt: Propose a structured response.
+  target_response: 'Here''s how I''d respond: propose phases, share metrics, and set weekly check-ins.'
+  acceptable_variations:
+  - 'Here''s how I''d respond: propose phases, share metrics, and set weekly check-ins.'
+  - 'Here''s how I''d respond: suggest a pilot, share metrics, and set a weekly cadence.'

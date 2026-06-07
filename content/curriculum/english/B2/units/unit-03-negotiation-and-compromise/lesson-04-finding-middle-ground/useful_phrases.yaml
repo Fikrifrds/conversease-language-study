@@ -1,0 +1,21 @@
+phrases:
+- phrase: Maybe we can find a compromise.
+  meaning_id: Mungkin kita bisa cari kompromi.
+  usage_note: A neutral way to move toward agreement.
+  common_mistake: Do not sound like an ultimatum; use maybe we can.
+- phrase: A compromise could be launching to 10% of users first.
+  meaning_id: Komprominya bisa launch dulu ke 10% user.
+  usage_note: A clear middle-ground proposal.
+  common_mistake: Do not say "compromise can be"; use could be.
+- phrase: If we do a small rollout, can we agree on one extra day?
+  meaning_id: Kalau kita rollout kecil, bisa sepakat tambah satu hari?
+  usage_note: A conditional agreement question.
+  common_mistake: Do not say "can we agree one extra day" without on.
+- phrase: That feels fair.
+  meaning_id: Itu terasa adil.
+  usage_note: A professional acceptance.
+  common_mistake: Do not say "That feel fair"; add -s.
+- phrase: I'll update the rollout plan.
+  meaning_id: Aku update rollout plan.
+  usage_note: A clear next step.
+  common_mistake: Do not say "I will updating"; use I'll update.

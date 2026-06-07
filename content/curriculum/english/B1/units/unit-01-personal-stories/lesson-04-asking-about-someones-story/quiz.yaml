@@ -1,0 +1,25 @@
+questions:
+- key: follow_up_next
+  type: multiple_choice
+  prompt: Which question asks about the next event?
+  options:
+  - What happened next?
+  - How was it?
+  - Do you like it?
+  correct_answer: What happened next?
+- key: why_did
+  type: multiple_choice
+  prompt: Which question is correct?
+  options:
+  - Why you did that?
+  - Why did you do that?
+  - Why did you did that?
+  correct_answer: Why did you do that?
+- key: meaning_worked_out
+  type: multiple_choice
+  prompt: What does "It worked out" mean?
+  options:
+  - akhirnya beres
+  - mulai lagi
+  - hilang
+  correct_answer: akhirnya beres

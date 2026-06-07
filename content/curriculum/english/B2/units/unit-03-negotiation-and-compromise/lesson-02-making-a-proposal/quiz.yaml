@@ -1,0 +1,25 @@
+questions:
+- key: propose_structure
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - I propose we do a small pilot.
+  - I propose to do a small pilot.
+  - I propose doing a small pilot we.
+  correct_answer: I propose we do a small pilot.
+- key: would_that_work
+  type: multiple_choice
+  prompt: Which question checks agreement politely?
+  options:
+  - Would that work for you?
+  - You do it now?
+  - Why you not?
+  correct_answer: Would that work for you?
+- key: not_necessarily
+  type: multiple_choice
+  prompt: What does "Not necessarily" mean?
+  options:
+  - belum tentu
+  - pasti
+  - tidak pernah
+  correct_answer: belum tentu

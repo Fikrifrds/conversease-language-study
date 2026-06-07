@@ -1,0 +1,43 @@
+scenario_key: b1_problem_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: 'Quick check: what''s the issue?'
+learner_goal: Describe the issue, propose a solution with a reason, respond to a concern, and decide next steps.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: 'Quick check: what''s the issue?'
+  hint: Jelaskan problem + impact singkat.
+  sample_answer: There's a problem with the login page. Users can't sign in.
+  focus: Describe problem and impact
+  expected_keywords:
+  - problem
+  - can't
+- coach: What should we do?
+  hint: Kasih solusi dengan could/should + because.
+  sample_answer: We could roll back now because it's quick.
+  focus: Suggest solution with reason
+  expected_keywords:
+  - could
+  - because
+- coach: But will it affect other features?
+  hint: Jawab dengan might + next steps (so let's...).
+  sample_answer: It might, so let's roll back and then test the key flows.
+  focus: Respond to concern and decide next steps
+  expected_keywords:
+  - might
+  - so
+  - let's
+target_phrases:
+- There's a problem with ...
+- We could ... because ...
+- It might, so let's ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

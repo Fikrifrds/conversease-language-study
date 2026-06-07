@@ -1,0 +1,21 @@
+phrases:
+- phrase: It seems you're assuming ... What's the evidence for that claim?
+  meaning_id: Sepertinya kamu berasumsi ... Evidence-nya apa untuk claim itu?
+  usage_note: Assumption + evidence challenge.
+  common_mistake: Don't attack the person; focus on claim and evidence.
+- phrase: I'm not sure that follows. Could there be another explanation?
+  meaning_id: Aku nggak yakin itu nyambung. Bisa nggak ada penjelasan lain?
+  usage_note: Challenge logic + propose alternative.
+  common_mistake: Don't be dismissive; explore alternatives.
+- phrase: To be precise, the data indicates correlation, not necessarily causation.
+  meaning_id: Biar presisi, data menunjukkan korelasi, belum tentu kausalitas.
+  usage_note: Precision in evidence.
+  common_mistake: Don't claim causation from correlation.
+- phrase: 'Let me be clear: we have indicators, not proof yet.'
+  meaning_id: 'Biar jelas: kita punya indikator, belum bukti.'
+  usage_note: Stay calm under pressure.
+  common_mistake: Don't overclaim; clarify limits.
+- phrase: However, the key point is ...
+  meaning_id: Tapi poin kuncinya adalah ...
+  usage_note: Refocus to the core point.
+  common_mistake: Don't add multiple points; keep one core point.

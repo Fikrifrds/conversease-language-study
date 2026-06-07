@@ -1,0 +1,44 @@
+scenario_key: a2_make_plans_after_class
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Are you free tomorrow?
+learner_goal: Make a simple plan by suggesting an activity, agreeing on a time, and choosing a place.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Are you free tomorrow?
+    hint: Jawab singkat, lalu tanya rencananya.
+    sample_answer: Yes, I think so. Why?
+    focus: Check availability
+    expected_keywords:
+      - yes
+      - why
+  - coach: Let's get coffee after work.
+    hint: Tanyakan jamnya dengan pertanyaan pendek.
+    sample_answer: Sure. What time?
+    focus: Ask the time
+    expected_keywords:
+      - what time
+      - "?"
+  - coach: How about 6 pm?
+    hint: Setuju, lalu tanya tempat ketemunya.
+    sample_answer: 6 pm works for me. Where should we meet?
+    focus: Confirm and ask place
+    expected_keywords:
+      - works for me
+      - where should we meet
+      - "?"
+target_phrases:
+  - Let's get coffee.
+  - How about 6 pm?
+  - Where should we meet?
+  - See you then.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

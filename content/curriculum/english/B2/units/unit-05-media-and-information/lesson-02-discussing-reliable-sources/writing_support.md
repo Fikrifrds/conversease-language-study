@@ -1,0 +1,9 @@
+# Writing Support
+
+Write 6 lines:
+1. I'm not sure this source is reliable.
+2. Because ...
+3. I'd check ...
+4. I trust sources that ...
+5. Let's verify it before sharing.
+6. Then we can decide.

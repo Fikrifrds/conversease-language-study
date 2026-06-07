@@ -1,0 +1,21 @@
+phrases:
+- phrase: To make sure we're aligned, what's your top priority and biggest constraint?
+  meaning_id: Biar aligned, apa prioritas utama kamu dan constraint terbesarnya?
+  usage_note: Alignment question.
+  common_mistake: Don't assume priorities or constraints.
+- phrase: What we can commit to is a smaller release by next week, assuming no new blockers.
+  meaning_id: Yang bisa kita commit adalah rilis kecil minggu depan, asumsi nggak ada blocker baru.
+  usage_note: Expectation management.
+  common_mistake: Don't commit without stating assumptions.
+- phrase: 'I wanted to flag the impact: it was interpreted as a hard deadline.'
+  meaning_id: 'Aku mau highlight impact-nya: itu ditangkap sebagai deadline fix.'
+  usage_note: Sensitive feedback focused on impact.
+  common_mistake: Don't blame; describe impact.
+- phrase: The main risk is incidents during rollout. We can mitigate it by time-boxing and monitoring.
+  meaning_id: Risiko utamanya incident saat rollout. Kita mitigasi dengan time-box dan monitoring.
+  usage_note: Risk framing + mitigation.
+  common_mistake: Don't discuss risk without mitigation.
+- phrase: I'll capture the decision and circulate it today.
+  meaning_id: Aku rangkum keputusannya dan share hari ini.
+  usage_note: Close with a clear follow-up action.
+  common_mistake: Don't leave decisions undocumented.

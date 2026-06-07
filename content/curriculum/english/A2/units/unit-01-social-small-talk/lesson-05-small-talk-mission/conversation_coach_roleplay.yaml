@@ -1,0 +1,55 @@
+scenario_key: a2_small_talk_mission_make_a_plan
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi! How's it going?
+learner_goal: Start small talk, ask at least two follow-up questions, and make a simple weekend plan with a time.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi! How's it going?
+    hint: Jawab singkat, lalu tanya balik.
+    sample_answer: Hi! I'm good, thanks. How about you?
+    focus: Start the chat
+    expected_keywords:
+      - i'm good
+      - thanks
+      - how about you
+      - "?"
+  - coach: I'm a bit tired today.
+    hint: Tunjukkan empati dan tanya sebabnya dengan simple past.
+    sample_answer: I'm sorry to hear that. Did you sleep well?
+    focus: Ask about the reason
+    expected_keywords:
+      - i'm sorry to hear that
+      - did you
+      - "?"
+  - coach: Not really. I stayed up late.
+    hint: Pindah topik dengan halus, lalu ajak buat rencana weekend.
+    sample_answer: Oh okay. By the way, any plans for the weekend?
+    focus: Change topic and plan
+    expected_keywords:
+      - by the way
+      - any plans for the weekend
+      - "?"
+  - coach: I'm going to a new cafe on Saturday at 3 pm. Do you want to join?
+    hint: Terima ajakan dan konfirmasi waktu dengan singkat.
+    sample_answer: That sounds fun. Great, see you then!
+    focus: Accept and close
+    expected_keywords:
+      - that sounds fun
+      - see you
+target_phrases:
+  - How's it going?
+  - Did you sleep well?
+  - I'm sorry to hear that.
+  - Any plans for the weekend?
+  - Do you want to join?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

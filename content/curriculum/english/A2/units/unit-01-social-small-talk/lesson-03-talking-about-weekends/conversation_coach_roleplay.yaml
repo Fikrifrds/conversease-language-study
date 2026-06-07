@@ -1,0 +1,44 @@
+scenario_key: a2_weekend_plans_chat
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Any plans for the weekend?
+learner_goal: Say your plan with one detail, answer one follow-up question, and close politely.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Any plans for the weekend?
+    hint: Jawab dengan going to + satu aktivitas.
+    sample_answer: Yes. I'm going to visit my parents.
+    focus: Share a plan
+    expected_keywords:
+      - i'm going to
+      - visit
+  - coach: Nice. Where do they live?
+    hint: Jawab tempatnya dengan singkat.
+    sample_answer: They live in Bandung.
+    focus: Give a detail
+    expected_keywords:
+      - they live in
+      - bandung
+  - coach: Sounds good. How are you getting there?
+    hint: Jawab transportnya, lalu tutup dengan sopan.
+    sample_answer: I'm taking the train. Have a great weekend.
+    focus: Transport and closing
+    expected_keywords:
+      - i'm taking
+      - train
+      - have a great weekend
+target_phrases:
+  - Any plans for the weekend?
+  - I'm going to visit my parents.
+  - How are you getting there?
+  - Have a great weekend.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

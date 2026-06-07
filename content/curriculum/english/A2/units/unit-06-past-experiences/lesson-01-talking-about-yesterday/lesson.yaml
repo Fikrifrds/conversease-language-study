@@ -1,0 +1,25 @@
+lesson_key: lesson-01-talking-about-yesterday
+slug: talking-about-yesterday
+title: Talking About Yesterday
+status: published
+estimated_minutes: 10
+conversation_situation: talking_about_yesterday_with_a_friend
+conversation_goal: Talk about what you did yesterday using simple past tense verbs.
+grammar_summary: Use simple past verbs (went, ate, watched) and time words (yesterday, last night) to describe what you did.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

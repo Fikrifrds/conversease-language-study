@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_reschedule
+    type: multiple_choice
+    prompt: What does "Can we reschedule?" mean?
+    options:
+      - Kita bisa reschedule?
+      - Kita bisa makan sekarang?
+      - Kamu tinggal di mana?
+    correct_answer: Kita bisa reschedule?
+  - key: short_reason
+    type: multiple_choice
+    prompt: Which phrase is a short reason?
+    options:
+      - Something came up.
+      - See you then.
+      - Which movie?
+    correct_answer: Something came up.
+  - key: confirm_time
+    type: multiple_choice
+    prompt: Which question confirms a new time?
+    options:
+      - Does 7 pm work for you?
+      - Where are you from?
+      - Are you busy?
+    correct_answer: Does 7 pm work for you?

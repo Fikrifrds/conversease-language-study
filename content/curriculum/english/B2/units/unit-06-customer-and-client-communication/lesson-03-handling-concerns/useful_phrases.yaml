@@ -1,0 +1,21 @@
+phrases:
+- phrase: I understand the concern.
+  meaning_id: Aku paham kekhawatirannya.
+  usage_note: A respectful opener.
+  common_mistake: Do not dismiss the concern; acknowledge first.
+- phrase: Could you clarify what disruption you expect?
+  meaning_id: Bisa jelasin gangguan seperti apa yang kamu bayangin?
+  usage_note: A calm clarifying question.
+  common_mistake: Do not ask aggressively; keep tone neutral.
+- phrase: To reduce the risk, we can send a weekly summary.
+  meaning_id: Untuk ngurangin risiko, kita bisa kirim ringkasan mingguan.
+  usage_note: Mitigation language.
+  common_mistake: Do not say "reduce risk we can"; keep the structure.
+- phrase: We can run a two-week trial and gather feedback.
+  meaning_id: Kita bisa coba dua minggu dan kumpulin feedback.
+  usage_note: A practical risk-reduction step.
+  common_mistake: Do not propose a huge rollout immediately; suggest a trial.
+- phrase: I'll share a draft plan today.
+  meaning_id: Aku share draft plan hari ini.
+  usage_note: Clear next step.
+  common_mistake: Do not say "I will sharing"; use I'll share.

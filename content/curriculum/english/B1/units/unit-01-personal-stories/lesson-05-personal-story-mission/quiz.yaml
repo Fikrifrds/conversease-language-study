@@ -1,0 +1,25 @@
+questions:
+- key: connected_story
+  type: multiple_choice
+  prompt: Which option is a connected story?
+  options:
+  - Last weekend, I was in Bandung. First, we explored the city. Then we got lost.
+  - Bandung. Explore. Lost.
+  - I am in Bandung now.
+  correct_answer: Last weekend, I was in Bandung. First, we explored the city. Then we got lost.
+- key: follow_up_q
+  type: multiple_choice
+  prompt: Which is a follow-up question?
+  options:
+  - What happened next?
+  - I felt nervous.
+  - It was great.
+  correct_answer: What happened next?
+- key: felt_vs_feel
+  type: multiple_choice
+  prompt: Choose the correct past sentence.
+  options:
+  - I feel relieved after that.
+  - I felt relieved after that.
+  - I am felt relieved.
+  correct_answer: I felt relieved after that.

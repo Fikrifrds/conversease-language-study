@@ -1,0 +1,25 @@
+lesson_key: lesson-01-saying-how-you-feel
+slug: saying-how-you-feel
+title: Saying How You Feel
+status: published
+estimated_minutes: 10
+conversation_situation: saying_how_you_feel_to_a_friend
+conversation_goal: Say how you feel and mention one or two simple symptoms.
+grammar_summary: "Use I feel + adjective and I have + noun to describe how you feel (I feel tired, I have a headache)."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

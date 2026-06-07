@@ -1,0 +1,25 @@
+questions:
+- key: could_usage
+  type: multiple_choice
+  prompt: Which is a polite suggestion?
+  options:
+  - We could roll back the update.
+  - Roll back now!
+  - You do it.
+  correct_answer: We could roll back the update.
+- key: should_usage
+  type: multiple_choice
+  prompt: Which sentence suggests the best next step?
+  options:
+  - We should add a test.
+  - We like tests.
+  - We tested yesterday.
+  correct_answer: We should add a test.
+- key: reason_word
+  type: multiple_choice
+  prompt: Which word introduces a reason?
+  options:
+  - because
+  - so
+  - then
+  correct_answer: because

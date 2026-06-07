@@ -1,0 +1,16 @@
+prompts:
+- prompt: Suggest a plan with How about we...
+  target_response: How about we go with the cheaper one?
+  acceptable_variations:
+  - How about we go with the cheaper one?
+  - How about we go early?
+- prompt: Accept politely.
+  target_response: I'm okay with that.
+  acceptable_variations:
+  - I'm okay with that.
+  - That works for me.
+- prompt: Confirm agreement.
+  target_response: So we agree on Noodle House at 6:30?
+  acceptable_variations:
+  - So we agree on Noodle House at 6:30?
+  - So we agree on option B?

@@ -1,0 +1,21 @@
+phrases:
+- phrase: I live in a quiet neighborhood.
+  meaning_id: Aku tinggal di lingkungan yang tenang.
+  usage_note: A simple neighborhood description.
+  common_mistake: Do not say "I live at neighborhood"; use in a neighborhood.
+- phrase: It's known for its food stalls.
+  meaning_id: Terkenal dengan warung makan.
+  usage_note: Known for describes what a place is famous for.
+  common_mistake: Do not say "known about" for this meaning; use known for.
+- phrase: I like it because it's convenient.
+  meaning_id: Aku suka karena praktis.
+  usage_note: A clear reason sentence.
+  common_mistake: Do not say "because convenient" without it's.
+- phrase: It's convenient but still peaceful.
+  meaning_id: Praktis tapi tetap tenang.
+  usage_note: A nice contrast sentence.
+  common_mistake: Do not drop still if you want the contrast; keep it.
+- phrase: We help each other sometimes.
+  meaning_id: Kita kadang saling bantu.
+  usage_note: A simple community habit sentence.
+  common_mistake: Do not say "we helping"; use help.

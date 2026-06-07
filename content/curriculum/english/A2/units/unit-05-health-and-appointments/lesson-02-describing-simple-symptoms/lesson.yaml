@@ -1,0 +1,25 @@
+lesson_key: lesson-02-describing-simple-symptoms
+slug: describing-simple-symptoms
+title: Describing Simple Symptoms
+status: published
+estimated_minutes: 10
+conversation_situation: describing_symptoms_at_a_clinic
+conversation_goal: Describe simple symptoms and say how long you have had them.
+grammar_summary: "Use I've had + symptom + for/since to say duration (I've had a cough for two days / since yesterday)."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

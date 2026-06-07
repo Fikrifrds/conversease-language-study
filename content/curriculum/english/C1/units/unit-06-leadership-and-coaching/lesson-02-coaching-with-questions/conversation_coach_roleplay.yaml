@@ -1,0 +1,41 @@
+scenario_key: c1_coaching_questions
+mode: lesson_practice_coach
+level_code: C1
+opening_line: I'm stuck on how to handle this.
+learner_goal: Coach with questions that build ownership and unblock progress.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I'm stuck on how to handle this.
+  hint: Start with options.
+  sample_answer: Got it. What options do you see right now?
+  focus: Options
+  expected_keywords:
+  - options
+- coach: Now help define success.
+  hint: What would success look like...?
+  sample_answer: What would success look like for the pilot?
+  focus: Success
+  expected_keywords:
+  - success look like
+- coach: Unblock with a small next step and offer support.
+  hint: Smallest next step... support...
+  sample_answer: What's the smallest next step you can take today? And what support do you need from me?
+  focus: Next step + support
+  expected_keywords:
+  - smallest
+  - next step
+  - support
+target_phrases:
+- What options do you see ...?
+- What's the smallest next step ...?
+- What support do you need ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

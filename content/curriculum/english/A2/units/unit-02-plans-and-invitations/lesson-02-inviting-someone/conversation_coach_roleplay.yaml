@@ -1,0 +1,46 @@
+scenario_key: a2_invite_to_movie
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Do you want to watch a movie tonight?
+learner_goal: Respond to an invitation, ask for the time, and accept politely.
+max_turns: 9
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Do you want to watch a movie tonight?
+    hint: Reaksi positif, lalu tanya detailnya.
+    sample_answer: That sounds fun. What time?
+    focus: React and ask details
+    expected_keywords:
+      - that sounds fun
+      - what time
+      - "?"
+  - coach: How about 8 pm?
+    hint: Setuju, lalu tanya filmnya.
+    sample_answer: 8 pm works. Which movie?
+    focus: Confirm time
+    expected_keywords:
+      - works
+      - which movie
+      - "?"
+  - coach: The new action movie.
+    hint: Terima ajakan dengan sopan.
+    sample_answer: Nice. I'd love to go.
+    focus: Accept politely
+    expected_keywords:
+      - i'd love to
+      - go
+
+target_phrases:
+  - Do you want to watch a movie?
+  - That sounds fun.
+  - I'd love to.
+  - Maybe next time.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

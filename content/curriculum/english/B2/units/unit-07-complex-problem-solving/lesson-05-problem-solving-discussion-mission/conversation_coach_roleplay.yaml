@@ -1,0 +1,44 @@
+scenario_key: b2_problem_mission
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We have a complex issue. Lead the discussion.
+learner_goal: Lead a structured problem-solving discussion from framing to recommendation.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Start by framing the problem and scope.
+  hint: Let's define... Can we agree on the scope?
+  sample_answer: Let's define the problem statement first. Can we agree on the scope?
+  focus: Framing
+  expected_keywords:
+  - define
+  - scope
+- coach: Now explain one possible cause with evidence language.
+  hint: Based on the data... one possible cause is...
+  sample_answer: Based on the data, one possible cause is confusion in checkout after the redesign.
+  focus: Causes
+  expected_keywords:
+  - based on
+  - data
+  - possible
+- coach: Discuss trade-offs and recommend a next step with mitigation.
+  hint: The trade-off is... Given these constraints... We can mitigate it by...
+  sample_answer: The trade-off is speed versus reliability. Given these constraints, I'd recommend a two-week pilot. We can mitigate risk by setting clear metrics and a strict timeline.
+  focus: Trade-offs + recommendation
+  expected_keywords:
+  - trade-off
+  - recommend
+  - mitigate
+target_phrases:
+- Let's define the problem statement first.
+- One possible cause is ...
+- Given these constraints, I'd recommend ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

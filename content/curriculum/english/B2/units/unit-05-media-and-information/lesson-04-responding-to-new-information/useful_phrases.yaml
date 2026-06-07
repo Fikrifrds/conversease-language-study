@@ -1,0 +1,21 @@
+phrases:
+- phrase: I wasn't aware of that.
+  meaning_id: Aku belum tahu itu.
+  usage_note: A polite way to acknowledge new information.
+  common_mistake: Do not say "I wasn't know"; use wasn't aware.
+- phrase: That changes things.
+  meaning_id: Itu mengubah situasinya.
+  usage_note: A natural reaction phrase.
+  common_mistake: Do not say "That change things"; add -s.
+- phrase: I'd like to understand the methodology.
+  meaning_id: Aku pengen paham metodologinya.
+  usage_note: A thoughtful follow-up request.
+  common_mistake: Do not say "I want understand"; use I'd like to.
+- phrase: We should check the full report.
+  meaning_id: Kita harus cek laporan lengkapnya.
+  usage_note: A practical action step.
+  common_mistake: Do not say "should to check"; should + base verb.
+- phrase: Then we can revise our conclusion.
+  meaning_id: Lalu kita bisa revisi kesimpulannya.
+  usage_note: A collaborative closing.
+  common_mistake: Do not say "revise to our conclusion"; revise our conclusion.

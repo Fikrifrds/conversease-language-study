@@ -1,0 +1,25 @@
+questions:
+  - key: polite_decline
+    type: multiple_choice
+    prompt: Which phrase is a polite way to decline?
+    options:
+      - Thanks, but I can't.
+      - I'm from Indonesia.
+      - Where is it?
+    correct_answer: Thanks, but I can't.
+  - key: add_reason
+    type: multiple_choice
+    prompt: Which sentence gives a reason?
+    options:
+      - I'm busy tonight because I have a meeting.
+      - I like coffee.
+      - See you later.
+    correct_answer: I'm busy tonight because I have a meeting.
+  - key: soft_closing
+    type: multiple_choice
+    prompt: Which phrase is a soft closing after declining?
+    options:
+      - Maybe another time.
+      - Good night.
+      - How about you?
+    correct_answer: Maybe another time.

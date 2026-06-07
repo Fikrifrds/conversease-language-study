@@ -1,0 +1,25 @@
+questions:
+- key: story_connector
+  type: multiple_choice
+  prompt: Which word helps sequence a story?
+  options:
+  - then
+  - because
+  - maybe
+  correct_answer: then
+- key: work_update
+  type: multiple_choice
+  prompt: Which sentence is a work status update?
+  options:
+  - I'm working on the release checklist.
+  - I was hungry.
+  - It was sunny.
+  correct_answer: I'm working on the release checklist.
+- key: next_step_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces the next action?
+  options:
+  - Next, I'll ...
+  - Yesterday, I ...
+  - Never mind.
+  correct_answer: Next, I'll ...

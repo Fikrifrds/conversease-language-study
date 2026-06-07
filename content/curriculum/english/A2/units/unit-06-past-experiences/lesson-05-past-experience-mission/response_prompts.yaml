@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say what you did yesterday (museum + photos).
+  target_response: I went to the museum and took photos.
+  acceptable_variations:
+  - I went to the museum and took photos.
+  - Yesterday, I went to the museum and took photos.
+- prompt: 'Answer: How was it?'
+  target_response: It was really interesting.
+  acceptable_variations:
+  - It was really interesting.
+  - It was interesting.
+- prompt: 'Answer: Did you go with anyone?'
+  target_response: Yes, I went with my friend.
+  acceptable_variations:
+  - Yes, I went with my friend.
+  - Yes, I went with a friend.

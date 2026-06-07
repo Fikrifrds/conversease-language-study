@@ -1,0 +1,25 @@
+questions:
+- key: mission_flow
+  type: multiple_choice
+  prompt: Which flow fits a preference discussion?
+  options:
+  - Compare -> preference + reason -> pros/cons -> agreement
+  - Greeting -> goodbye
+  - Numbers -> spelling
+  correct_answer: Compare -> preference + reason -> pros/cons -> agreement
+- key: downside_usage
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - One downside is it takes time.
+  - One downside are it takes time.
+  - Downside is it takes time.
+  correct_answer: One downside is it takes time.
+- key: agree_question
+  type: multiple_choice
+  prompt: Which sentence confirms agreement?
+  options:
+  - So we agree on cooking at home?
+  - What time is it?
+  - Where are you from?
+  correct_answer: So we agree on cooking at home?

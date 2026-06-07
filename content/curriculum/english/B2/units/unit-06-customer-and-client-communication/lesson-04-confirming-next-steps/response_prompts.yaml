@@ -1,0 +1,16 @@
+prompts:
+- prompt: Confirm the plan.
+  target_response: To confirm, we'll start with a two-week pilot.
+  acceptable_variations:
+  - To confirm, we'll start with a two-week pilot.
+  - To confirm, we'll go with option B.
+- prompt: State next steps with owners.
+  target_response: 'Next steps are: I''ll send the draft plan today, and you''ll review it by Friday.'
+  acceptable_variations:
+  - 'Next steps are: I''ll send the draft plan today, and you''ll review it by Friday.'
+  - 'Next steps are: I''ll draft the doc, and you''ll review it tomorrow.'
+- prompt: Check if timeline works.
+  target_response: Does that timeline work for you?
+  acceptable_variations:
+  - Does that timeline work for you?
+  - Would that timeline work for you?

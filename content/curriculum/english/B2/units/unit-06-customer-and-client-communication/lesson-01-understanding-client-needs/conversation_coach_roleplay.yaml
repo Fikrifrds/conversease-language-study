@@ -1,0 +1,42 @@
+scenario_key: b2_client_needs
+mode: lesson_practice_coach
+level_code: B2
+opening_line: We want to improve our product experience.
+learner_goal: Ask clarifying questions and summarize the client needs.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We want to improve our product experience.
+  hint: Mulai dengan pertanyaan klarifikasi (Just to clarify...).
+  sample_answer: Got it. Just to clarify, who is the main user group?
+  focus: Clarify user group
+  expected_keywords:
+  - clarify
+  - user
+- coach: The main users are new hires. What's next?
+  hint: Minta detail pain point.
+  sample_answer: Thanks. Could you share more about the biggest pain point today?
+  focus: Ask for pain point
+  expected_keywords:
+  - share more
+  - pain point
+- coach: They can't find key docs. Summarize and confirm.
+  hint: So what you need is ... right?
+  sample_answer: Understood. So what you need is a clear starting point and a simple checklist, right?
+  focus: Summarize need
+  expected_keywords:
+  - need
+  - right
+target_phrases:
+- Just to clarify, ...
+- Could you share more about ...?
+- So what you need is ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,25 @@
+questions:
+- key: meaning_confirm
+  type: multiple_choice
+  prompt: What does "Let me confirm" do?
+  options:
+  - Menyapa
+  - Mengecek ulang
+  - Membatalkan
+  correct_answer: Mengecek ulang
+- key: question_right
+  type: multiple_choice
+  prompt: Which sentence checks details?
+  options:
+  - I am 3:30.
+  - 3:30 p.m., right?
+  - I like 3:30.
+  correct_answer: 3:30 p.m., right?
+- key: spelling
+  type: multiple_choice
+  prompt: What is spelling?
+  options:
+  - Menyebut huruf satu-satu
+  - Menyanyi
+  - Menyebut angka
+  correct_answer: Menyebut huruf satu-satu

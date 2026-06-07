@@ -1,0 +1,44 @@
+scenario_key: a2_health_appointment_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hello. How can I help you today?
+learner_goal: Check in, confirm your details, and describe your symptoms briefly.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hello. How can I help you today?
+  hint: Bilang kamu ada janji + jamnya.
+  sample_answer: Hi. I have an appointment at 3:30.
+  focus: Check in for appointment
+  expected_keywords:
+  - appointment
+  - '3:30'
+- coach: Sure. What's your name?
+  hint: Sebutkan nama dan eja.
+  sample_answer: Mina Park. P-A-R-K.
+  focus: Provide name and spelling
+  expected_keywords:
+  - p-a-r-k
+  - mina
+- coach: Thank you. What seems to be the problem?
+  hint: Sebutkan gejala + durasi.
+  sample_answer: I've had a cough for two days, and I feel tired.
+  focus: Describe symptoms with duration
+  expected_keywords:
+  - have had
+  - for
+  - days
+  - tired
+target_phrases:
+- I have an appointment at 3:30.
+- Mina Park. P-A-R-K.
+- I've had a cough for two days.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

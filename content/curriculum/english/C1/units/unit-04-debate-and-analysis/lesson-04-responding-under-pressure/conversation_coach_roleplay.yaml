@@ -1,0 +1,45 @@
+scenario_key: c1_under_pressure
+mode: lesson_practice_coach
+level_code: C1
+opening_line: This is just speculation. Do you have anything solid?
+learner_goal: Stay calm under pressure, clarify limits, cite evidence, and propose a controlled next step.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: This is just speculation. Do you have anything solid?
+  hint: 'Clarify calmly: indicators, not proof.'
+  sample_answer: 'Let me be clear: we have indicators, not proof yet.'
+  focus: Clarity
+  expected_keywords:
+  - be clear
+  - indicators
+  - not proof
+- coach: So why should we act now?
+  hint: Acknowledge + key point.
+  sample_answer: I understand the concern. However, the key point is that waiting increases risk.
+  focus: Key point
+  expected_keywords:
+  - understand
+  - however
+  - key point
+- coach: Show me the numbers and propose next step.
+  hint: If you look at... doubled... pilot...
+  sample_answer: If you look at the last four weeks, incident volume has doubled. We run a pilot this week and review results before scaling.
+  focus: Evidence + proposal
+  expected_keywords:
+  - last four weeks
+  - doubled
+  - pilot
+target_phrases:
+- 'Let me be clear: ...'
+- I understand the concern. However, ...
+- If you look at ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,25 @@
+questions:
+- key: been_practicing
+  type: multiple_choice
+  prompt: Which sentence shows a habit up to now?
+  options:
+  - I've been practicing every morning.
+  - I practiced tomorrow.
+  - I am practice yesterday.
+  correct_answer: I've been practicing every morning.
+- key: halfway_meaning
+  type: multiple_choice
+  prompt: What does "halfway" mean?
+  options:
+  - setengah jalan
+  - langsung selesai
+  - tidak mulai
+  correct_answer: setengah jalan
+- key: still_need
+  type: multiple_choice
+  prompt: What does "still need to" express?
+  options:
+  - masih perlu
+  - sudah selesai
+  - tidak boleh
+  correct_answer: masih perlu

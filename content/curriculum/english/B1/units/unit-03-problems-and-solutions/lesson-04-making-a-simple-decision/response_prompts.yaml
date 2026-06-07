@@ -1,0 +1,16 @@
+prompts:
+- prompt: State a preference with I'd rather.
+  target_response: I'd rather fix it now because users are blocked.
+  acceptable_variations:
+  - I'd rather fix it now because users are blocked.
+  - I'd rather fix it now because it's urgent.
+- prompt: Suggest a compromise with could.
+  target_response: We could do a quick rollback and review tomorrow.
+  acceptable_variations:
+  - We could do a quick rollback and review tomorrow.
+  - We could do a quick fix and check tomorrow.
+- prompt: Make a decision with let's.
+  target_response: Okay, let's roll back now.
+  acceptable_variations:
+  - Okay, let's roll back now.
+  - Let's do it now.

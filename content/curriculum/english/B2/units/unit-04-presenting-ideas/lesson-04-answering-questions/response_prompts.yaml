@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start an answer politely.
+  target_response: That's a good question.
+  acceptable_variations:
+  - That's a good question.
+  - Good question.
+- prompt: Answer with confidence level.
+  target_response: As far as I know, it takes about one day.
+  acceptable_variations:
+  - As far as I know, it takes about one day.
+  - As far as I know, it takes about a week.
+- prompt: Admit uncertainty and offer follow-up.
+  target_response: I'm not sure yet, but I can follow up by tomorrow.
+  acceptable_variations:
+  - I'm not sure yet, but I can follow up by tomorrow.
+  - I'm not sure yet, but I can check and get back to you.

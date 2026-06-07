@@ -1,0 +1,43 @@
+scenario_key: c1_qualifying_opinion
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Should we adopt the new policy immediately?
+learner_goal: State a nuanced opinion with scope, limitation, and a measured suggestion.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Should we adopt the new policy immediately?
+  hint: Jawab dengan partial agreement + scope.
+  sample_answer: To some extent, yes—especially for new projects.
+  focus: Scope
+  expected_keywords:
+  - to some extent
+  - especially
+- coach: So you're fully in favor?
+  hint: Broadly speaking... That said...
+  sample_answer: Broadly speaking, I support it. That said, we need a clear exception for legacy systems.
+  focus: Limitation
+  expected_keywords:
+  - broadly
+  - that said
+  - exception
+- coach: What would you suggest instead?
+  hint: Propose a phased approach.
+  sample_answer: I'd phase it in over two quarters and review adoption data along the way.
+  focus: Suggestion
+  expected_keywords:
+  - phase
+  - review
+target_phrases:
+- To some extent, ...
+- That said, ...
+- In principle ..., but ...
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

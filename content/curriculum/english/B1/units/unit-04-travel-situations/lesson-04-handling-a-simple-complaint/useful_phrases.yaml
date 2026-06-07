@@ -1,0 +1,21 @@
+phrases:
+- phrase: There's a problem with my room.
+  meaning_id: Ada masalah dengan kamar saya.
+  usage_note: A polite way to start a complaint.
+  common_mistake: Do not say "I have problem"; use There's a problem with...
+- phrase: The air conditioning isn't working.
+  meaning_id: AC-nya nggak berfungsi.
+  usage_note: Explain the problem clearly.
+  common_mistake: Do not say "isn't work"; use isn't working.
+- phrase: Could you send someone to take a look?
+  meaning_id: Bisa kirim orang untuk cek?
+  usage_note: A polite request for help.
+  common_mistake: Do not say "Send person" without someone.
+- phrase: Could I change rooms?
+  meaning_id: Bisa ganti kamar?
+  usage_note: Ask for an alternative option.
+  common_mistake: Do not say "Can change room?" without I/we.
+- phrase: Thank you for your help.
+  meaning_id: Terima kasih bantuannya.
+  usage_note: Close politely after the request.
+  common_mistake: Do not say "Thanks for help you".

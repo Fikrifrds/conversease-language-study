@@ -1,0 +1,25 @@
+questions:
+- key: follow_up
+  type: multiple_choice
+  prompt: Which is a follow-up question?
+  options:
+  - What have you been working on?
+  - Nice to meet you.
+  - Thank you.
+  correct_answer: What have you been working on?
+- key: availability
+  type: multiple_choice
+  prompt: Which question asks about availability?
+  options:
+  - Are you free on Saturday?
+  - Do you like coffee?
+  - Where did you go?
+  correct_answer: Are you free on Saturday?
+- key: meaning_grab_coffee
+  type: multiple_choice
+  prompt: What does "grab coffee" mean?
+  options:
+  - ngopi sebentar
+  - ambil kopi secara literal
+  - buat kopi
+  correct_answer: ngopi sebentar

@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask which one is cheaper.
+    target_response: Which one is cheaper?
+    acceptable_variations:
+      - Which one is cheaper?
+      - Which one is cheaper, this one or that one?
+  - prompt: Choose the cheaper one.
+    target_response: I'll take the cheaper one.
+    acceptable_variations:
+      - I'll take the cheaper one.
+      - I'll take this one.
+  - prompt: Ask about the other option.
+    target_response: And the other one?
+    acceptable_variations:
+      - And the other one?
+      - What about the other one?

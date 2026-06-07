@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Are you free tomorrow?
+    meaning_id: Kamu kosong besok?
+    usage_note: Ask if someone is available.
+    common_mistake: Do not say "Are you free at tomorrow?"
+  - phrase: Let's get coffee.
+    meaning_id: Yuk ngopi.
+    usage_note: A friendly suggestion.
+    common_mistake: Do not say "Lets" without an apostrophe.
+  - phrase: How about 6 pm?
+    meaning_id: Gimana kalau jam 6 sore?
+    usage_note: Propose a time.
+    common_mistake: Do not say "How about at 6 pm?" unless you add a place.
+  - phrase: Where should we meet?
+    meaning_id: Kita ketemu di mana?
+    usage_note: Ask for the meeting place.
+    common_mistake: Do not say "Where we meet?" without should.
+  - phrase: See you then.
+    meaning_id: Sampai ketemu nanti.
+    usage_note: A simple closing when you have a plan.
+    common_mistake: Do not forget "then" if you mean the agreed time.

@@ -1,0 +1,25 @@
+questions:
+- key: mission_order_goals
+  type: multiple_choice
+  prompt: Which order fits a goal update?
+  options:
+  - Goal -> progress -> challenge -> next step
+  - Greeting -> goodbye
+  - Food -> price -> color
+  correct_answer: Goal -> progress -> challenge -> next step
+- key: consistent_meaning
+  type: multiple_choice
+  prompt: What does "consistent" mean?
+  options:
+  - konsisten
+  - terlambat
+  - acak
+  correct_answer: konsisten
+- key: next_step_meaning
+  type: multiple_choice
+  prompt: What does "next step" mean?
+  options:
+  - langkah berikutnya
+  - langkah pertama
+  - langkah terakhir
+  correct_answer: langkah berikutnya

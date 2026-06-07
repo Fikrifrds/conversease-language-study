@@ -1,0 +1,21 @@
+phrases:
+- phrase: My position is that we should run a two-week pilot before a full rollout.
+  meaning_id: 'Posisi aku: kita harus jalankan pilot dua minggu sebelum rollout penuh.'
+  usage_note: Position statement for a test response.
+  common_mistake: Do not start with unrelated context; state position first.
+- phrase: Based on the data, drop-offs increased after the redesign.
+  meaning_id: Berdasarkan data, drop-off naik setelah redesign.
+  usage_note: Evidence language.
+  common_mistake: Do not say datas; data is uncountable.
+- phrase: The trade-off is speed versus long-term reliability.
+  meaning_id: Trade-off-nya kecepatan versus reliability jangka panjang.
+  usage_note: Trade-off explanation.
+  common_mistake: Do not list too many trade-offs at once.
+- phrase: I'd recommend the pilot.
+  meaning_id: Aku rekomend pilot.
+  usage_note: Recommendation phrase.
+  common_mistake: Do not say "I recommend you"; recommend the plan.
+- phrase: 'Next steps are: I''ll draft the plan today, and you''ll review it by Friday.'
+  meaning_id: 'Next steps-nya: aku draft plan hari ini, dan kamu review sebelum Jumat.'
+  usage_note: Next steps with owners and deadlines.
+  common_mistake: Do not forget the deadline (by Friday).

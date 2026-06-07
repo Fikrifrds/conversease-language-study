@@ -1,0 +1,25 @@
+lesson_key: lesson-05-clear-argument-mission
+slug: clear-argument-mission
+title: Clear Argument Mission
+status: published
+estimated_minutes: 12
+conversation_situation: mission_clear_argument
+conversation_goal: 'Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.'
+grammar_summary: 'Combine: In my view... / One reason is... / For example... / That''s a fair point. However... / Let''s...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

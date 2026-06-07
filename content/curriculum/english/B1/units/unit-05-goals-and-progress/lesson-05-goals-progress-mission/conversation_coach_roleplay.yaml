@@ -1,0 +1,43 @@
+scenario_key: b1_goals_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's your goal right now?
+learner_goal: State your goal, share progress, describe a challenge, and set a next step.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your goal right now?
+  hint: Goal + deadline (by ...).
+  sample_answer: My goal is to speak more confidently by the end of this month.
+  focus: Goal with deadline
+  expected_keywords:
+  - goal
+  - by
+- coach: How's it going?
+  hint: Progress + I've been practicing ...
+  sample_answer: I'm making progress. I've been practicing every morning.
+  focus: Progress update
+  expected_keywords:
+  - progress
+  - been
+- coach: Any challenges and next steps?
+  hint: Challenge + next step plan.
+  sample_answer: The biggest challenge is staying consistent after work. My next step is to practice three times this week.
+  focus: Challenge and next step
+  expected_keywords:
+  - challenge
+  - next step
+  - times
+target_phrases:
+- My goal is to ...
+- I've been practicing ...
+- My next step is to ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

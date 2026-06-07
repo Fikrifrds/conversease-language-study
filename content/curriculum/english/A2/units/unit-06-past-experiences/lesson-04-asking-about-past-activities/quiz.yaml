@@ -1,0 +1,25 @@
+questions:
+- key: did_base_verb
+  type: multiple_choice
+  prompt: Which is correct?
+  options:
+  - Did you cooked?
+  - Did you cook?
+  - Did you cooking?
+  correct_answer: Did you cook?
+- key: short_answer
+  type: multiple_choice
+  prompt: Which is a short past answer?
+  options:
+  - Yes, I do.
+  - Yes, I did.
+  - Yes, I am.
+  correct_answer: Yes, I did.
+- key: meaning_follow_up
+  type: multiple_choice
+  prompt: What does "follow-up question" mean?
+  options:
+  - pertanyaan tambahan
+  - jawaban salah
+  - pertanyaan terakhir
+  correct_answer: pertanyaan tambahan

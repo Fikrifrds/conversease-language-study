@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm not sure that follows.
+  meaning_id: Aku nggak yakin itu nyambung.
+  usage_note: Challenge logic without being rude.
+  common_mistake: Do not say that's nonsense; keep it neutral.
+- phrase: What's the evidence for that claim?
+  meaning_id: Evidence-nya apa untuk claim itu?
+  usage_note: Ask for evidence directly.
+  common_mistake: Do not say prove it; ask for evidence.
+- phrase: Could there be another explanation?
+  meaning_id: Bisa nggak ada penjelasan lain?
+  usage_note: Introduce alternative hypotheses.
+  common_mistake: Do not dismiss; explore alternatives.
+- phrase: For example, we reduced steps last quarter, but conversion didn't change.
+  meaning_id: Contohnya, kita kurangi step kuartal lalu, tapi conversion nggak berubah.
+  usage_note: Use counterexample to challenge.
+  common_mistake: Do not generalize from one example; use it as evidence to test.
+- phrase: Let's test messaging changes alongside step reduction.
+  meaning_id: Kita test perubahan messaging bareng pengurangan step.
+  usage_note: Turn challenge into actionable test.
+  common_mistake: Do not only criticize; propose a next step.

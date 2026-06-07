@@ -1,0 +1,11 @@
+unit_key: unit-03-problems-and-solutions
+level_code: B1
+title: Problems & Solutions
+main_conversation_outcome: Explain a problem, suggest a solution, and respond to advice.
+status: in_production
+lessons:
+  - lesson-01-describing-a-problem
+  - lesson-02-suggesting-a-solution
+  - lesson-03-responding-to-advice
+  - lesson-04-making-a-simple-decision
+  - lesson-05-problem-solving-mission

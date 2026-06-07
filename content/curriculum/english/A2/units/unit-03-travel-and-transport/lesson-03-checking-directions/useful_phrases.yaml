@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Where is platform 2?
+    meaning_id: Platform 2 di mana?
+    usage_note: Ask for the location.
+    common_mistake: Do not say "Where platform 2" without is.
+  - phrase: Go straight.
+    meaning_id: Jalan lurus.
+    usage_note: A common direction.
+    common_mistake: Do not say "Go straightly".
+  - phrase: Turn left at the stairs.
+    meaning_id: Belok kiri di tangga.
+    usage_note: Use at for a landmark.
+    common_mistake: Do not say "turn left in the stairs".
+  - phrase: Is this the right way?
+    meaning_id: Ini jalan yang benar?
+    usage_note: Ask to confirm.
+    common_mistake: Do not say "This is right way?" without is.
+  - phrase: You're going the right way.
+    meaning_id: Kamu sudah jalan yang benar.
+    usage_note: A helpful confirmation.
+    common_mistake: Do not forget you're.

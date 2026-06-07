@@ -1,0 +1,42 @@
+scenario_key: b1_work_clarification
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Can you update the report for Friday?
+learner_goal: Ask for clarification and confirm key details politely.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Can you update the report for Friday?
+  hint: Terima dulu, lalu minta klarifikasi.
+  sample_answer: Sure. Could you clarify which sections you need?
+  focus: Ask for clarification
+  expected_keywords:
+  - clarify
+  - sections
+- coach: Focus on the summary and the risks.
+  hint: Konfirmasi satu detail penting.
+  sample_answer: Got it. Just to confirm, you want the latest numbers too, right?
+  focus: Confirm details
+  expected_keywords:
+  - confirm
+  - latest
+- coach: Yes, please include the latest numbers.
+  hint: Janji deadline singkat.
+  sample_answer: Okay. I'll send it by Thursday afternoon.
+  focus: Confirm deadline
+  expected_keywords:
+  - send
+  - by
+target_phrases:
+- Could you clarify...?
+- Just to confirm, ...
+- I'll send it by ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

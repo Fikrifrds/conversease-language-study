@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start with signposting opener.
+  target_response: Let me quickly walk you through the plan.
+  acceptable_variations:
+  - Let me quickly walk you through the plan.
+  - Let me walk you through the plan.
+- prompt: Use first/next/finally.
+  target_response: First, I'll explain the problem. Next, I'll share the proposal. Finally, I'll outline next steps.
+  acceptable_variations:
+  - First, I'll explain the problem. Next, I'll share the proposal. Finally, I'll outline next steps.
+  - First, I'll share context. Next, I'll explain benefits. Finally, I'll summarize.
+- prompt: Use let me summarize.
+  target_response: Let me summarize the key points.
+  acceptable_variations:
+  - Let me summarize the key points.
+  - Let me summarize our decision.

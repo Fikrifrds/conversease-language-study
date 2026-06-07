@@ -1,0 +1,25 @@
+questions:
+- key: according_to
+  type: multiple_choice
+  prompt: Which phrase cites a source?
+  options:
+  - According to ...
+  - Because I said so.
+  - No source.
+  correct_answer: According to ...
+- key: correlation_causation
+  type: multiple_choice
+  prompt: Which sentence distinguishes correlation from causation?
+  options:
+  - The data indicates correlation, not necessarily causation.
+  - Correlation is causation.
+  - No difference.
+  correct_answer: The data indicates correlation, not necessarily causation.
+- key: to_be_precise
+  type: multiple_choice
+  prompt: What does "to be precise" mean?
+  options:
+  - agar lebih tepat/presisi
+  - agar cepat
+  - agar lucu
+  correct_answer: agar lebih tepat/presisi

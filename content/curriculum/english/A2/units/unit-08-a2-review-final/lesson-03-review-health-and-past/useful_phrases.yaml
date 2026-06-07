@@ -1,0 +1,21 @@
+phrases:
+- phrase: I don't feel well.
+  meaning_id: Aku nggak enak badan.
+  usage_note: A simple health phrase.
+  common_mistake: Do not say "I'm not feel well".
+- phrase: What's wrong?
+  meaning_id: Kenapa?
+  usage_note: Ask about the problem.
+  common_mistake: Do not say "What's happen".
+- phrase: Did you sleep late last night?
+  meaning_id: Kamu tidur larut tadi malam?
+  usage_note: Past question with did.
+  common_mistake: Do not say "Did you slept".
+- phrase: What did you do yesterday?
+  meaning_id: Kamu ngapain kemarin?
+  usage_note: A common past question.
+  common_mistake: Do not say "What you did".
+- phrase: I stayed home.
+  meaning_id: Aku di rumah aja.
+  usage_note: Past of stay.
+  common_mistake: Do not say "I stay home yesterday".

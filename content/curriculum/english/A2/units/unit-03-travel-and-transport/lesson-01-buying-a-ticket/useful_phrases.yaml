@@ -1,0 +1,21 @@
+phrases:
+  - phrase: I'd like one ticket to Bandung, please.
+    meaning_id: Saya mau satu tiket ke Bandung, ya.
+    usage_note: A polite way to request a ticket.
+    common_mistake: Do not say "I like" when you mean "I'd like".
+  - phrase: One-way or round-trip?
+    meaning_id: Sekali jalan atau pulang-pergi?
+    usage_note: A common question at a ticket counter.
+    common_mistake: Do not confuse round-trip with one-way.
+  - phrase: One-way, please.
+    meaning_id: Sekali jalan, ya.
+    usage_note: Choose the ticket type.
+    common_mistake: Do not say only "one way" without a pause; say it clearly.
+  - phrase: How much is it?
+    meaning_id: Berapa harganya?
+    usage_note: Ask the price.
+    common_mistake: Do not say "How many is it?" for price.
+  - phrase: How much is it again?
+    meaning_id: Berapa tadi harganya?
+    usage_note: Ask to confirm the price.
+    common_mistake: Keep your tone polite.

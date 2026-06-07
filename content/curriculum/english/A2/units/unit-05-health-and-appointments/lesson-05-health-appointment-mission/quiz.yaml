@@ -1,0 +1,25 @@
+questions:
+- key: check_in_sentence
+  type: multiple_choice
+  prompt: Which sentence checks in for an appointment?
+  options:
+  - I like appointments.
+  - I have an appointment at 3:30.
+  - I am appointment.
+  correct_answer: I have an appointment at 3:30.
+- key: meaning_take_seat
+  type: multiple_choice
+  prompt: What does "Please take a seat" mean?
+  options:
+  - Silakan duduk
+  - Silakan makan
+  - Silakan telepon
+  correct_answer: Silakan duduk
+- key: duration_sentence
+  type: multiple_choice
+  prompt: Which sentence talks about duration?
+  options:
+  - I've had a cough for two days.
+  - I have a cough yesterday.
+  - I cough two days.
+  correct_answer: I've had a cough for two days.

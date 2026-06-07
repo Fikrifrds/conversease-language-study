@@ -1,0 +1,25 @@
+lesson_key: lesson-04-making-a-simple-decision
+slug: making-a-simple-decision
+title: Making a Simple Decision
+status: published
+estimated_minutes: 12
+conversation_situation: making_a_simple_decision
+conversation_goal: Compare two options and make a simple decision with a clear reason.
+grammar_summary: Use We could... but... / I'd rather... / Let's... because... to make decisions politely.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

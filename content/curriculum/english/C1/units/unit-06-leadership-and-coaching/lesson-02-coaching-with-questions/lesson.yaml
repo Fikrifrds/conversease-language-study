@@ -1,0 +1,25 @@
+lesson_key: lesson-02-coaching-with-questions
+slug: coaching-with-questions
+title: Coaching with Questions
+status: published
+estimated_minutes: 12
+conversation_situation: coaching_with_questions
+conversation_goal: Coach others using questions that build ownership, clarify thinking, and unblock decisions.
+grammar_summary: Use What options do you see? / What would success look like? / What's the smallest next step? / What support do you need? to coach.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 78

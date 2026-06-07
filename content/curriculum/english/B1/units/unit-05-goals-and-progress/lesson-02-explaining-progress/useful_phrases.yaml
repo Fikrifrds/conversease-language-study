@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm making good progress.
+  meaning_id: Progressnya bagus.
+  usage_note: A natural progress update phrase.
+  common_mistake: Do not say "I'm progress".
+- phrase: I've been practicing every morning.
+  meaning_id: Aku latihan tiap pagi.
+  usage_note: Present perfect shows a habit up to now.
+  common_mistake: Do not say "I am practicing since"; use I've been practicing.
+- phrase: I'm about halfway.
+  meaning_id: Kira-kira setengah jalan.
+  usage_note: A simple way to describe progress level.
+  common_mistake: Do not say "I am half way" without about if it is approximate.
+- phrase: I can speak for two minutes without stopping.
+  meaning_id: Aku bisa ngomong dua menit tanpa berhenti.
+  usage_note: A clear progress metric.
+  common_mistake: Do not say "without stop"; use without stopping.
+- phrase: I still need to improve my pronunciation.
+  meaning_id: Aku masih perlu improve pronunciation.
+  usage_note: Still need shows what remains.
+  common_mistake: Do not say "I still must"; still need is more natural.

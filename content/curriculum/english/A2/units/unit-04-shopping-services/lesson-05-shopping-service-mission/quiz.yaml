@@ -1,0 +1,25 @@
+questions:
+  - key: mission_compare
+    type: multiple_choice
+    prompt: Which question compares two options?
+    options:
+      - Which one is cheaper?
+      - Do you have it in size M?
+      - What time does it leave?
+    correct_answer: Which one is cheaper?
+  - key: mission_choose
+    type: multiple_choice
+    prompt: Which sentence chooses an option?
+    options:
+      - I'll take this one.
+      - I'm looking for a charger.
+      - Sorry, we're out of stock.
+    correct_answer: I'll take this one.
+  - key: mission_help
+    type: multiple_choice
+    prompt: Which phrase asks for help politely?
+    options:
+      - Could you help me?
+      - Where to?
+      - See you then.
+    correct_answer: Could you help me?

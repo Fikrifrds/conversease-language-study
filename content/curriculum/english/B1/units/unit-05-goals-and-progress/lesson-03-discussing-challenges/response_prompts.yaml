@@ -1,0 +1,16 @@
+prompts:
+- prompt: Name your biggest challenge.
+  target_response: The biggest challenge is staying consistent.
+  acceptable_variations:
+  - The biggest challenge is staying consistent.
+  - The biggest challenge is finding time.
+- prompt: Give one reason (distracted by phone).
+  target_response: I get distracted by my phone.
+  acceptable_variations:
+  - I get distracted by my phone.
+  - I feel tired after work.
+- prompt: Ask for a tip.
+  target_response: Do you have any tips?
+  acceptable_variations:
+  - Do you have any tips?
+  - Any tips?

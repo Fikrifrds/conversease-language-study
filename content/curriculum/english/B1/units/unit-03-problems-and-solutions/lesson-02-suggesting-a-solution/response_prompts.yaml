@@ -1,0 +1,16 @@
+prompts:
+- prompt: Suggest a solution with could.
+  target_response: We could roll back the update.
+  acceptable_variations:
+  - We could roll back the update.
+  - We could restart the service.
+- prompt: Give one reason with because.
+  target_response: Because rollback is quick.
+  acceptable_variations:
+  - Because rollback is quick.
+  - Because it's low risk.
+- prompt: Add a preventive step with should + so.
+  target_response: We should add a quick test so it doesn't happen again.
+  acceptable_variations:
+  - We should add a quick test so it doesn't happen again.
+  - We should add monitoring so we catch it early.

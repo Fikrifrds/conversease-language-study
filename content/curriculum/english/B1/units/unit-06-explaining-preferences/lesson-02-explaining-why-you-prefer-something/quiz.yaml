@@ -1,0 +1,25 @@
+questions:
+- key: earlier_word
+  type: multiple_choice
+  prompt: Choose the correct comparative form.
+  options:
+  - earlier
+  - more early
+  - earlyer
+  correct_answer: earlier
+- key: prefer_reason
+  type: multiple_choice
+  prompt: Which sentence explains a preference with a reason?
+  options:
+  - I prefer option A because it's simpler.
+  - I prefer because option A.
+  - I option A prefer.
+  correct_answer: I prefer option A because it's simpler.
+- key: main_reason
+  type: multiple_choice
+  prompt: What does "The main reason is..." do?
+  options:
+  - menjelaskan alasan utama
+  - mengucapkan salam
+  - mengubah topik
+  correct_answer: menjelaskan alasan utama

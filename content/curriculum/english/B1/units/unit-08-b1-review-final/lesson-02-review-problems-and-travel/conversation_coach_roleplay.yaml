@@ -1,0 +1,42 @@
+scenario_key: b1_review_problem_travel
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's the issue, and are you on your way?
+learner_goal: Describe a problem with impact, then give a delay update with an estimate.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's the issue?
+  hint: Mulai dengan There's a problem with...
+  sample_answer: There's a problem with the meeting link.
+  focus: State problem
+  expected_keywords:
+  - problem
+  - with
+- coach: What's the impact?
+  hint: Gunakan so untuk dampak.
+  sample_answer: People can't join, so we need a new link.
+  focus: Explain impact
+  expected_keywords:
+  - can't
+  - so
+- coach: Now say you're late and give an estimate.
+  hint: I'm running late... I'll be there in about...
+  sample_answer: I'm running a bit late. I'll be there in about 15 minutes.
+  focus: Delay + estimate
+  expected_keywords:
+  - running
+  - in about
+target_phrases:
+- There's a problem with ...
+- '..., so ...'
+- I'll be there in about ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

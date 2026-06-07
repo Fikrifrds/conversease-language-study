@@ -1,0 +1,16 @@
+prompts:
+- prompt: Name a main risk.
+  target_response: The main risk is a spike in incidents during rollout.
+  acceptable_variations:
+  - The main risk is a spike in incidents during rollout.
+  - The main risk is instability during release.
+- prompt: Describe likelihood with rationale.
+  target_response: There's a reasonable chance, given recent instability.
+  acceptable_variations:
+  - There's a reasonable chance, given recent instability.
+  - There's a reasonable chance, based on the data.
+- prompt: Propose mitigation.
+  target_response: We can mitigate it by time-boxing the rollout, adding monitoring, and having a rollback plan.
+  acceptable_variations:
+  - We can mitigate it by time-boxing the rollout, adding monitoring, and having a rollback plan.
+  - We can mitigate it by rolling out gradually and preparing a rollback plan.

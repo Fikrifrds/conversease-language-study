@@ -1,0 +1,43 @@
+scenario_key: b2_present_structure
+mode: lesson_practice_coach
+level_code: B2
+opening_line: Please present your idea briefly.
+learner_goal: Present an idea with context, proposal, and next steps.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Open your presentation.
+  hint: Today I'd like to...
+  sample_answer: Today I'd like to share an idea to improve our onboarding.
+  focus: Opening
+  expected_keywords:
+  - today
+  - idea
+- coach: State the problem and proposal.
+  hint: The problem is... My proposal is...
+  sample_answer: The problem is new hires feel lost. My proposal is a simple checklist and a buddy system.
+  focus: Problem + proposal
+  expected_keywords:
+  - problem
+  - proposal
+- coach: Close with next steps.
+  hint: Next steps are...
+  sample_answer: 'Next steps are: draft the checklist today, then pilot it with the next hire.'
+  focus: Next steps
+  expected_keywords:
+  - next steps
+  - draft
+  - pilot
+target_phrases:
+- Today I'd like to ...
+- The problem is ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

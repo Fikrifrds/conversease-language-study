@@ -1,0 +1,25 @@
+lesson_key: lesson-01-saying-what-you-think
+slug: saying-what-you-think
+title: Saying What You Think
+status: published
+estimated_minutes: 10
+conversation_situation: sharing_a_simple_opinion
+conversation_goal: Say what you think about a simple topic and give a short opinion.
+grammar_summary: Use I think + sentence and I think it's + adjective to share a simple opinion.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

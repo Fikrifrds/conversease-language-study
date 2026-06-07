@@ -1,0 +1,42 @@
+scenario_key: c1_followups
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We should be more cautious with the rollout.
+learner_goal: Ask high-quality follow-up questions and move the conversation toward action.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Clarify what 'more cautious' means.
+  hint: When you say..., do you mean X or Y?
+  sample_answer: When you say 'more cautious', do you mean smaller scope or slower timing?
+  focus: Clarify
+  expected_keywords:
+  - when you say
+  - do you mean
+- coach: Ask about assumptions and decision criteria.
+  hint: What's your assumption... What would change your mind...?
+  sample_answer: What's your assumption about the main risk? And what would change your mind about the timeline?
+  focus: Assumptions + criteria
+  expected_keywords:
+  - assumption
+  - change your mind
+- coach: Move to action.
+  hint: What's the next step today?
+  sample_answer: Got it. What's the next step we should take today?
+  focus: Action
+  expected_keywords:
+  - next step
+  - today
+target_phrases:
+- When you say X, do you mean ...?
+- What's your assumption about ...?
+- What's the next step ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

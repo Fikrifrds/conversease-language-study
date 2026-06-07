@@ -1,0 +1,20 @@
+prompts:
+  - prompt: Ask how someone is doing.
+    target_response: How's it going?
+    acceptable_variations:
+      - How's it going?
+      - How are you doing?
+  - prompt: Ask if they slept well.
+    target_response: Did you sleep well?
+    acceptable_variations:
+      - Did you sleep well?
+  - prompt: Invite someone to join.
+    target_response: Do you want to join?
+    acceptable_variations:
+      - Do you want to join?
+      - Do you want to come with me?
+  - prompt: Ask for the time.
+    target_response: What time?
+    acceptable_variations:
+      - What time?
+      - What time is it?

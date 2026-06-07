@@ -1,0 +1,16 @@
+prompts:
+- prompt: Interpret a concern neutrally.
+  target_response: It sounds like timing is the main concern.
+  acceptable_variations:
+  - It sounds like timing is the main concern.
+  - It sounds like alignment is the main concern.
+- prompt: Check implied meaning politely.
+  target_response: Just to check, are you implying that we should delay the rollout?
+  acceptable_variations:
+  - Just to check, are you implying that we should delay the rollout?
+  - Just to check, are you suggesting we delay this?
+- prompt: Summarize what you heard as a next step.
+  target_response: What I'm hearing is we need a phased plan to reduce risk.
+  acceptable_variations:
+  - What I'm hearing is we need a phased plan to reduce risk.
+  - What I'm hearing is we should propose a phased rollout.

@@ -1,0 +1,21 @@
+phrases:
+- phrase: One reason is it reduces bugs in production.
+  meaning_id: Salah satu alasannya itu mengurangi bug di production.
+  usage_note: A clear structured reason sentence.
+  common_mistake: Do not say "One reason reduce"; use is + it reduces.
+- phrase: Another reason is it speeds up releases.
+  meaning_id: Alasan lain, itu mempercepat release.
+  usage_note: Add a second reason clearly.
+  common_mistake: Do not say "Another reason are"; use is.
+- phrase: That's true, but...
+  meaning_id: Bener, tapi...
+  usage_note: A polite way to acknowledge a concern.
+  common_mistake: Do not ignore the concern; acknowledge it first.
+- phrase: It saves time later.
+  meaning_id: Itu hemat waktu nanti.
+  usage_note: A simple long-term benefit.
+  common_mistake: Do not say "save times"; time is uncountable.
+- phrase: We can start small and focus on critical flows.
+  meaning_id: Kita bisa mulai kecil dan fokus ke alur paling penting.
+  usage_note: A practical next step.
+  common_mistake: Do not propose a huge plan at once; start small is realistic.

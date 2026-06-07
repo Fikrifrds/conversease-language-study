@@ -1,0 +1,21 @@
+phrases:
+- phrase: What do you think about this restaurant?
+  meaning_id: Menurut kamu gimana restoran ini?
+  usage_note: Start the mission by asking an opinion.
+  common_mistake: Do not drop do in the question.
+- phrase: I think it's good because it's cheap.
+  meaning_id: Menurutku oke karena murah.
+  usage_note: Opinion + because reason.
+  common_mistake: Do not say "Because it cheap".
+- phrase: I'm not sure.
+  meaning_id: Aku kurang yakin.
+  usage_note: A polite hesitation.
+  common_mistake: Do not say "I'm not sure it".
+- phrase: That's fair.
+  meaning_id: Masuk akal.
+  usage_note: Accept their point politely.
+  common_mistake: Do not use it to end the conversation; add a next step.
+- phrase: Do you have another idea?
+  meaning_id: Kamu ada ide lain?
+  usage_note: Ask for an alternative.
+  common_mistake: Do not say "You have another idea?".

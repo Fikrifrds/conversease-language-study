@@ -1,0 +1,43 @@
+scenario_key: a2_check_directions_station
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Excuse me. Where is platform 2?
+learner_goal: Ask for directions, confirm you are going the right way, and close politely.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Go straight and turn left at the stairs.
+    hint: Ulangi arahan untuk memastikan.
+    sample_answer: Turn left at the stairs. Okay.
+    focus: Confirm directions
+    expected_keywords:
+      - turn left
+      - stairs
+  - coach: Yes. Platform 2 is on the left.
+    hint: Tanyakan konfirmasi singkat.
+    sample_answer: Great. Is this the right way?
+    focus: Check the way
+    expected_keywords:
+      - right way
+      - "?"
+  - coach: Yes, you're going the right way.
+    hint: Tutup dengan sopan.
+    sample_answer: Thank you.
+    focus: Close politely
+    expected_keywords:
+      - thank
+
+target_phrases:
+  - Where is platform 2?
+  - Go straight.
+  - Is this the right way?
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

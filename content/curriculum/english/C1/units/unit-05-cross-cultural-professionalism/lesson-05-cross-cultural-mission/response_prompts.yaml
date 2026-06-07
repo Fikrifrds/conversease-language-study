@@ -1,0 +1,16 @@
+prompts:
+- prompt: Read context and clarify priorities.
+  target_response: My sense is that they're signaling concern indirectly. Before we decide, can we clarify whether they prioritize speed or risk reduction?
+  acceptable_variations:
+  - My sense is that they're signaling concern indirectly. Before we decide, can we clarify whether they prioritize speed or risk reduction?
+  - My sense is that they're hesitant. Before we decide, can we clarify what matters most to them?
+- prompt: Ask a tactful question about preferences.
+  target_response: Would you mind if I ask how you prefer to receive feedback—writing or a call?
+  acceptable_variations:
+  - Would you mind if I ask how you prefer to receive feedback—writing or a call?
+  - Would you mind if I ask what format you prefer for feedback?
+- prompt: Repair misunderstanding and propose next step.
+  target_response: I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?
+  acceptable_variations:
+  - I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?
+  - I may have misunderstood the context. Just to clarify, I was trying to confirm details. How about we offer a quick call?

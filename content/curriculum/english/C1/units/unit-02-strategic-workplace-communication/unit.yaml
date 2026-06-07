@@ -1,0 +1,11 @@
+unit_key: unit-02-strategic-workplace-communication
+level_code: C1
+title: Strategic Workplace Communication
+main_conversation_outcome: Communicate strategically in complex professional situations.
+status: in_production
+lessons:
+  - lesson-01-aligning-stakeholders
+  - lesson-02-managing-expectations
+  - lesson-03-handling-sensitive-feedback
+  - lesson-04-communicating-risk
+  - lesson-05-strategic-workplace-mission

@@ -1,0 +1,25 @@
+lesson_key: lesson-05-small-talk-mission
+slug: small-talk-mission
+title: Small Talk Mission
+status: draft
+estimated_minutes: 12
+conversation_situation: small_talk_mission_make_a_plan
+conversation_goal: Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.
+grammar_summary: "Combine small-talk questions with simple past and going to for a short plan."
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

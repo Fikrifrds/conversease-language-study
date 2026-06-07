@@ -1,0 +1,16 @@
+prompts:
+- prompt: State the main benefit.
+  target_response: The main benefit is faster onboarding for new hires.
+  acceptable_variations:
+  - The main benefit is faster onboarding for new hires.
+  - The main benefit is better clarity.
+- prompt: State a key risk.
+  target_response: A key risk is that the checklist becomes outdated.
+  acceptable_variations:
+  - A key risk is that the checklist becomes outdated.
+  - A key risk is that it adds extra work.
+- prompt: Propose mitigation.
+  target_response: To reduce the risk, we can review it monthly and assign an owner.
+  acceptable_variations:
+  - To reduce the risk, we can review it monthly and assign an owner.
+  - To reduce the risk, we can start with a small pilot.

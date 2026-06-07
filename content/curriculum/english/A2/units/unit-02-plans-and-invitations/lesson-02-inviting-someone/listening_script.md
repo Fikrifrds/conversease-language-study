@@ -1,0 +1,17 @@
+# Dialogue Script
+
+**Lina:** Hi Adi. Do you want to watch a movie tonight?  
+**Adi:** A movie tonight? That sounds fun.  
+**Lina:** Great. We can go after dinner.  
+**Adi:** Sure. What time?  
+**Lina:** How about 8 pm?  
+**Adi:** 8 pm works. Which movie?  
+**Lina:** The new action movie.  
+**Adi:** Nice. I'd love to go.
+
+## Audio Direction
+
+- Level: A2
+- Speed: slow and natural
+- Tone: friendly, clear, supportive
+- Voices: one female friend, one male friend

@@ -1,0 +1,25 @@
+questions:
+- key: reliable_meaning
+  type: multiple_choice
+  prompt: What does "reliable" mean?
+  options:
+  - dapat dipercaya
+  - terlambat
+  - ramai
+  correct_answer: dapat dipercaya
+- key: cite_data
+  type: multiple_choice
+  prompt: What does "cite data" mean?
+  options:
+  - menyantumkan data
+  - membuat data
+  - menghapus data
+  correct_answer: menyantumkan data
+- key: verification
+  type: multiple_choice
+  prompt: Which sentence suggests verification?
+  options:
+  - I'd check official reports.
+  - I believe anything.
+  - Share it now.
+  correct_answer: I'd check official reports.

@@ -1,0 +1,25 @@
+lesson_key: lesson-01-understanding-client-needs
+slug: understanding-client-needs
+title: Understanding Client Needs
+status: published
+estimated_minutes: 12
+conversation_situation: client_needs_discovery
+conversation_goal: Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.
+grammar_summary: Use Just to clarify... / Could you share more about... / So what you need is... to understand clients clearly.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

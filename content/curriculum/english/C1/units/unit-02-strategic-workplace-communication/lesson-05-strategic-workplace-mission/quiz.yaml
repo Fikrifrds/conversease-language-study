@@ -1,0 +1,25 @@
+questions:
+- key: strategic_flow
+  type: multiple_choice
+  prompt: Which flow fits a strategic workplace conversation?
+  options:
+  - Align -> commit -> feedback -> risk
+  - Greeting -> goodbye
+  - Colors -> numbers
+  correct_answer: Align -> commit -> feedback -> risk
+- key: open_to_phrase
+  type: multiple_choice
+  prompt: Which phrase invites a change politely?
+  options:
+  - Would you be open to ...?
+  - Do it.
+  - Stop.
+  correct_answer: Would you be open to ...?
+- key: mitigate_phrase
+  type: multiple_choice
+  prompt: Which phrase introduces mitigation?
+  options:
+  - We can mitigate it by ...
+  - Mitigate with do.
+  - No risk.
+  correct_answer: We can mitigate it by ...

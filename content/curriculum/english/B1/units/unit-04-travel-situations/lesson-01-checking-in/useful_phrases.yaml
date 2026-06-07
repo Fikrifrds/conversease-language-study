@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'd like to check in.
+  meaning_id: Saya mau check-in.
+  usage_note: A polite way to start at a hotel front desk.
+  common_mistake: Do not say "I want check in" in a formal situation; use I'd like to.
+- phrase: Do you have a reservation?
+  meaning_id: Ada reservasi?
+  usage_note: A standard check-in question.
+  common_mistake: Do not say "You have reservation?" without do.
+- phrase: I have a reservation under Mina Kim.
+  meaning_id: Saya ada reservasi atas nama Mina Kim.
+  usage_note: Under + name means the booking name.
+  common_mistake: Do not say "in the name"; use under + name.
+- phrase: Could I see your ID, please?
+  meaning_id: Boleh saya lihat ID-nya?
+  usage_note: A polite request from staff.
+  common_mistake: Do not drop please in formal service situations.
+- phrase: Breakfast is included.
+  meaning_id: Sarapan sudah termasuk.
+  usage_note: Included means it is part of the price.
+  common_mistake: Do not say "Breakfast include"; add -d.

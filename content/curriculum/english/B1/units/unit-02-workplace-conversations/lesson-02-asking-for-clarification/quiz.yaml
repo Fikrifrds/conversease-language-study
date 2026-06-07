@@ -1,0 +1,25 @@
+questions:
+- key: clarify_meaning
+  type: multiple_choice
+  prompt: What does "clarify" mean?
+  options:
+  - memperjelas
+  - membatalkan
+  - menunda
+  correct_answer: memperjelas
+- key: confirm_phrase
+  type: multiple_choice
+  prompt: Which phrase is for confirmation?
+  options:
+  - Just to confirm, ...
+  - Nice to meet you.
+  - See you.
+  correct_answer: Just to confirm, ...
+- key: deadline_by
+  type: multiple_choice
+  prompt: What does "by Thursday" mean?
+  options:
+  - paling lambat Kamis
+  - mulai Kamis
+  - setiap Kamis
+  correct_answer: paling lambat Kamis

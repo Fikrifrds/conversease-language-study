@@ -1,0 +1,16 @@
+prompts:
+- prompt: Give a nuanced position with a condition.
+  target_response: On balance, I support it, but I'd adjust the scope to reduce risk.
+  acceptable_variations:
+  - On balance, I support it, but I'd adjust the scope to reduce risk.
+  - On balance, I agree, but I'd keep the scope smaller to reduce risk.
+- prompt: Manage expectations with a clear commitment.
+  target_response: What I can commit to is a pilot next week, and a full rollout after we validate the metrics.
+  acceptable_variations:
+  - What I can commit to is a pilot next week, and a full rollout after we validate the metrics.
+  - What I can commit to is a pilot next week, then we decide after reviewing the data.
+- prompt: Close with next steps and timing.
+  target_response: 'Next steps are: I''ll share a one-page summary today, and we''ll align in a 30-minute call tomorrow.'
+  acceptable_variations:
+  - 'Next steps are: I''ll share a one-page summary today, and we''ll align in a 30-minute call tomorrow.'
+  - 'Next steps are: I''ll send a summary today, and we''ll align tomorrow morning.'

@@ -1,0 +1,16 @@
+prompts:
+- prompt: Explain a norm neutrally.
+  target_response: In our context, people tend to be indirect when disagreeing in group settings.
+  acceptable_variations:
+  - In our context, people tend to be indirect when disagreeing in group settings.
+  - In our context, people tend to soften disagreement in groups.
+- prompt: Explain a general expectation.
+  target_response: It's generally expected that you raise concerns one-on-one first.
+  acceptable_variations:
+  - It's generally expected that you raise concerns one-on-one first.
+  - It's generally expected that sensitive feedback happens privately first.
+- prompt: Offer an adaptation tip tactfully.
+  target_response: It might help to start with appreciation, then ask a question instead of stating a critique.
+  acceptable_variations:
+  - It might help to start with appreciation, then ask a question instead of stating a critique.
+  - It might help to ask a clarifying question first, then share your view.

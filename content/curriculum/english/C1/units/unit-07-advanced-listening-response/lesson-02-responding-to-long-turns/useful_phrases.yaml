@@ -1,0 +1,21 @@
+phrases:
+- phrase: 'Let me make sure I got this: ...'
+  meaning_id: 'Biar aku pastikan: ...'
+  usage_note: Summarize a long turn before responding.
+  common_mistake: Do not respond immediately; summarize first.
+- phrase: 'The key points are: ...'
+  meaning_id: 'Poin kuncinya: ...'
+  usage_note: Extract key points clearly.
+  common_mistake: Do not list too many points; pick 2-3.
+- phrase: If I understand correctly, ...
+  meaning_id: Kalau aku paham dengan benar, ...
+  usage_note: Confirm understanding before proposing.
+  common_mistake: Do not assume; confirm.
+- phrase: 'Here''s how I''d respond: ...'
+  meaning_id: 'Aku akan jawab begini: ...'
+  usage_note: Structure your response explicitly.
+  common_mistake: Do not ramble; use a clear structure.
+- phrase: Thanks, that's helpful context.
+  meaning_id: Makasih, itu konteks yang membantu.
+  usage_note: Acknowledge a long explanation politely.
+  common_mistake: Do not ignore the effort; acknowledge it.

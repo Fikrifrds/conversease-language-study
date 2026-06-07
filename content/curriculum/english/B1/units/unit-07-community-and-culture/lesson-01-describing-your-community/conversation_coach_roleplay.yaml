@@ -1,0 +1,40 @@
+scenario_key: b1_culture_describe_community
+mode: lesson_practice_coach
+level_code: B1
+opening_line: What's your neighborhood like?
+learner_goal: Describe your neighborhood and say what you like about it with a reason.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your neighborhood like?
+  hint: Mulai dengan I live in ... neighborhood.
+  sample_answer: I live in a quiet neighborhood near the city center.
+  focus: Describe neighborhood
+  expected_keywords:
+  - neighborhood
+- coach: What is it known for?
+  hint: Jawab dengan It's known for ...
+  sample_answer: It's known for its food stalls and small parks.
+  focus: Say what it's known for
+  expected_keywords:
+  - known for
+- coach: What do you like about it?
+  hint: Jawab dengan because + reason.
+  sample_answer: I like it because it's convenient but still peaceful.
+  focus: Give a reason
+  expected_keywords:
+  - because
+  - convenient
+target_phrases:
+- I live in ...
+- It's known for ...
+- I like it because ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

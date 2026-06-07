@@ -1,0 +1,42 @@
+scenario_key: c1_challenging_argument
+mode: lesson_practice_coach
+level_code: C1
+opening_line: Fewer steps always increases conversion.
+learner_goal: Challenge an argument constructively using evidence questions and alternatives.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Fewer steps always increases conversion.
+  hint: Challenge logic politely.
+  sample_answer: I'm not sure that follows. What's the evidence for that claim?
+  focus: Logic + evidence
+  expected_keywords:
+  - not sure
+  - evidence
+- coach: I think it's common sense. What's your response?
+  hint: Introduce another explanation + example.
+  sample_answer: Could there be another explanation, like unclear copy or missing reassurance? For example, we reduced steps last quarter, but conversion didn't change.
+  focus: Alternatives
+  expected_keywords:
+  - another explanation
+  - for example
+- coach: Close with a constructive next step.
+  hint: Let's test...
+  sample_answer: Let's test messaging changes alongside step reduction and compare results.
+  focus: Next step
+  expected_keywords:
+  - test
+  - compare
+target_phrases:
+- I'm not sure that follows.
+- What's the evidence for ...?
+- Could there be another explanation?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

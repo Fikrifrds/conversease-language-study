@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask to define the problem first.
+  target_response: Let's define the problem statement first.
+  acceptable_variations:
+  - Let's define the problem statement first.
+  - Let's frame the problem first.
+- prompt: Ask to agree on scope.
+  target_response: Can we agree on the scope?
+  acceptable_variations:
+  - Can we agree on the scope?
+  - Can we align on the scope?
+- prompt: Ask for success criteria.
+  target_response: What does success look like for the next four weeks?
+  acceptable_variations:
+  - What does success look like for the next four weeks?
+  - How will we measure success in four weeks?

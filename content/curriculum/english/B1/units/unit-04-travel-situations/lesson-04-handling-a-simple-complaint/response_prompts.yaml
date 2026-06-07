@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start a polite complaint.
+  target_response: There's a problem with my room.
+  acceptable_variations:
+  - There's a problem with my room.
+  - There's a problem with the key card.
+- prompt: Explain what's wrong (AC isn't working).
+  target_response: The air conditioning isn't working.
+  acceptable_variations:
+  - The air conditioning isn't working.
+  - The hot water isn't working.
+- prompt: Ask for help politely (send someone).
+  target_response: Could you send someone to take a look?
+  acceptable_variations:
+  - Could you send someone to take a look?
+  - Could you help me with it?

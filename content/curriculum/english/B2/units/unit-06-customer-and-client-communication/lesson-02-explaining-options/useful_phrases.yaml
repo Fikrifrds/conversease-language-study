@@ -1,0 +1,21 @@
+phrases:
+- phrase: We have two options.
+  meaning_id: Kita punya dua opsi.
+  usage_note: A clear option opener.
+  common_mistake: Do not say "two option"; add -s.
+- phrase: Option A is a quick fix we can deliver this week.
+  meaning_id: Opsi A quick fix yang bisa kita deliver minggu ini.
+  usage_note: A concise option description.
+  common_mistake: Do not over-explain; one sentence per option.
+- phrase: Option B is more robust, but it takes two more weeks.
+  meaning_id: Opsi B lebih robust, tapi butuh dua minggu lagi.
+  usage_note: Option + contrast with but.
+  common_mistake: Do not say "more robust but takes"; include it.
+- phrase: The trade-off is speed versus long-term stability.
+  meaning_id: Trade-off-nya kecepatan versus stabilitas jangka panjang.
+  usage_note: Explain trade-offs clearly.
+  common_mistake: Do not say "trade off"; keep it as trade-off as a concept.
+- phrase: I'd recommend option B if the timeline allows.
+  meaning_id: Aku rekomendasi opsi B kalau timeline memungkinkan.
+  usage_note: A professional recommendation.
+  common_mistake: Do not force; use if the timeline allows.

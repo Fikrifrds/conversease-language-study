@@ -1,0 +1,40 @@
+scenario_key: b1_story_events_in_order
+mode: lesson_practice_coach
+level_code: B1
+opening_line: So what did you do on your trip?
+learner_goal: Tell 3 events in order using first/then/after that/finally.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: So what did you do on your trip?
+  hint: Mulai dengan first.
+  sample_answer: First, we checked in at the hotel.
+  focus: Start the sequence
+  expected_keywords:
+  - first
+- coach: Nice. What did you do next?
+  hint: Gunakan then atau after that.
+  sample_answer: Then we walked around and tried street food.
+  focus: Continue the sequence
+  expected_keywords:
+  - then
+- coach: And finally?
+  hint: Tutup dengan finally + reason singkat.
+  sample_answer: Finally, we went back early because we were tired.
+  focus: End the sequence
+  expected_keywords:
+  - finally
+  - because
+target_phrases:
+- First, ...
+- After that, ...
+- Finally, ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

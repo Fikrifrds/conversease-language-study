@@ -1,0 +1,16 @@
+prompts:
+- prompt: State your viewpoint.
+  target_response: From my perspective, some regulation is necessary.
+  acceptable_variations:
+  - From my perspective, some regulation is necessary.
+  - From my perspective, transparency is important.
+- prompt: Support with a reason.
+  target_response: The reason is it protects users from misinformation.
+  acceptable_variations:
+  - The reason is it protects users from misinformation.
+  - The reason is it reduces harm.
+- prompt: Acknowledge the other side politely.
+  target_response: I see the other side, but we still need basic rules.
+  acceptable_variations:
+  - I see the other side, but we still need basic rules.
+  - I see your point, but I think balance is possible.

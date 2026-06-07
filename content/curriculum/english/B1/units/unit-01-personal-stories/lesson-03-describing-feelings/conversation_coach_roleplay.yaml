@@ -1,0 +1,40 @@
+scenario_key: b1_story_feelings
+mode: lesson_practice_coach
+level_code: B1
+opening_line: How did you feel when that happened?
+learner_goal: Describe a negative feeling, then a positive feeling after solving the problem.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: How did you feel when that happened?
+  hint: Sebutkan perasaan + sebab singkat.
+  sample_answer: I felt nervous because we got lost.
+  focus: Describe feeling with reason
+  expected_keywords:
+  - felt
+  - because
+- coach: What did you do next?
+  hint: Sebutkan solusi singkat.
+  sample_answer: We asked for directions.
+  focus: Describe an action
+  expected_keywords:
+  - asked
+- coach: And how did you feel after that?
+  hint: Sebutkan perasaan setelahnya.
+  sample_answer: I felt relieved after that.
+  focus: Describe feeling after
+  expected_keywords:
+  - relieved
+target_phrases:
+- I felt nervous because...
+- We asked for directions.
+- I felt relieved.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

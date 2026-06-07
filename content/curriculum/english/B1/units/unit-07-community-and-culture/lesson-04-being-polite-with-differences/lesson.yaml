@@ -1,0 +1,25 @@
+lesson_key: lesson-04-being-polite-with-differences
+slug: being-polite-with-differences
+title: Being Polite With Differences
+status: published
+estimated_minutes: 12
+conversation_situation: being_polite_about_differences
+conversation_goal: Talk about cultural differences politely and show respect even if you do things differently.
+grammar_summary: Use In my country,... / That's interesting / I'm not used to... / That sounds nice to be polite about differences.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

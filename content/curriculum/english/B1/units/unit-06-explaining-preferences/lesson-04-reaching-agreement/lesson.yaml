@@ -1,0 +1,25 @@
+lesson_key: lesson-04-reaching-agreement
+slug: reaching-agreement
+title: Reaching Agreement
+status: published
+estimated_minutes: 12
+conversation_situation: reaching_agreement_on_plan
+conversation_goal: Suggest a plan, respond politely, and confirm an agreement.
+grammar_summary: Use How about we... / I'm okay with... / Let's go with... to reach agreement politely.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,44 @@
+scenario_key: b2_final_practice
+mode: lesson_practice_coach
+level_code: B2
+opening_line: 'Final practice: answer my prompts.'
+learner_goal: Answer B2 prompts with clear signposting.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: What's your position?
+  hint: My position is that...
+  sample_answer: My position is that we should run a two-week pilot before a full rollout.
+  focus: Position
+  expected_keywords:
+  - position
+  - pilot
+- coach: What's your evidence and trade-off?
+  hint: Based on the data... The trade-off is...
+  sample_answer: Based on the data, drop-offs increased after the redesign. The trade-off is speed versus long-term reliability.
+  focus: Evidence + trade-off
+  expected_keywords:
+  - based on
+  - data
+  - trade-off
+- coach: Recommend a next step and timeline.
+  hint: I'd recommend... Next steps are... by Friday.
+  sample_answer: 'I''d recommend the pilot. Next steps are: I''ll draft the plan today, and you''ll review it by Friday.'
+  focus: Recommendation + next steps
+  expected_keywords:
+  - recommend
+  - next steps
+  - by
+target_phrases:
+- My position is that ...
+- Based on the data, ...
+- Next steps are ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

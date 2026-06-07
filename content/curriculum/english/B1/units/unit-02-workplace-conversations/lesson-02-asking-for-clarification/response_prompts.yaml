@@ -1,0 +1,16 @@
+prompts:
+- prompt: Ask for clarification about sections.
+  target_response: Could you clarify which sections you need?
+  acceptable_variations:
+  - Could you clarify which sections you need?
+  - Could you clarify which part you need?
+- prompt: Confirm the latest numbers.
+  target_response: Just to confirm, you want the latest numbers too, right?
+  acceptable_variations:
+  - Just to confirm, you want the latest numbers too, right?
+  - Just to confirm, you need the latest numbers, right?
+- prompt: Say the deadline (Thursday afternoon).
+  target_response: I'll send it by Thursday afternoon.
+  acceptable_variations:
+  - I'll send it by Thursday afternoon.
+  - I'll send it by Thursday.

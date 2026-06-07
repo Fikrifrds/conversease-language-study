@@ -1,0 +1,21 @@
+phrases:
+- phrase: What are the pros and cons?
+  meaning_id: Apa pro dan kontranya?
+  usage_note: A clear way to ask about trade-offs.
+  common_mistake: Do not say "What is the pros and cons?" Use are.
+- phrase: The advantage is you save time.
+  meaning_id: Kelebihannya kamu hemat waktu.
+  usage_note: A simple advantage sentence.
+  common_mistake: Do not say "advantage are"; use is.
+- phrase: One downside is you might feel isolated.
+  meaning_id: Salah satu kekurangannya kamu mungkin merasa kesepian.
+  usage_note: A clear downside sentence.
+  common_mistake: Do not say "One downside are"; use is.
+- phrase: Overall, it depends.
+  meaning_id: Secara keseluruhan, tergantung.
+  usage_note: A natural summary phrase.
+  common_mistake: Do not say "Overall depends" without it.
+- phrase: Any downsides?
+  meaning_id: Ada kekurangan?
+  usage_note: A short follow-up question.
+  common_mistake: Do not say "Any downside" without -s.

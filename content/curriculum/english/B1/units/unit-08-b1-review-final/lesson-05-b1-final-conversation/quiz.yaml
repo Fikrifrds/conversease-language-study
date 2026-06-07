@@ -1,0 +1,25 @@
+questions:
+- key: at_first_meaning
+  type: multiple_choice
+  prompt: What does "at first" mean?
+  options:
+  - awalnya
+  - akhirnya
+  - sekarang
+  correct_answer: awalnya
+- key: connected_connector
+  type: multiple_choice
+  prompt: Which set connects ideas in B1 conversations?
+  options:
+  - then / because / so / but
+  - red / blue / green
+  - one / two / three
+  correct_answer: then / because / so / but
+- key: next_step_structure
+  type: multiple_choice
+  prompt: Choose the correct next step sentence.
+  options:
+  - So my next step is to practice three times this week.
+  - So my next step practice three times.
+  - So next step is practice three time.
+  correct_answer: So my next step is to practice three times this week.

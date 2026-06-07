@@ -1,0 +1,25 @@
+questions:
+- key: bring_up_meaning
+  type: multiple_choice
+  prompt: What does "bring up" mean in a meeting?
+  options:
+  - membahas/menyampaikan topik
+  - membawa barang
+  - menutup meeting
+  correct_answer: membahas/menyampaikan topik
+- key: depends_on
+  type: multiple_choice
+  prompt: Choose the correct phrase.
+  options:
+  - depends on
+  - depends to
+  - depends at
+  correct_answer: depends on
+- key: invite_input
+  type: multiple_choice
+  prompt: Which sentence invites input politely?
+  options:
+  - I'd like to hear your thoughts.
+  - Be quiet.
+  - Stop talking.
+  correct_answer: I'd like to hear your thoughts.

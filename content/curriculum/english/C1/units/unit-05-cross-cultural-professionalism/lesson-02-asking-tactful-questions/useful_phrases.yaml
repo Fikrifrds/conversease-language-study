@@ -1,0 +1,21 @@
+phrases:
+- phrase: Would you mind if I ask how you prefer to receive feedback?
+  meaning_id: Boleh aku tanya kamu lebih nyaman menerima feedback seperti apa?
+  usage_note: A tactful opener for sensitive questions.
+  common_mistake: Do not ask bluntly; soften with would you mind.
+- phrase: If it's okay, could you clarify whether you want feedback in writing or in a call?
+  meaning_id: Kalau boleh, bisa klarifikasi maunya feedback tertulis atau via call?
+  usage_note: A polite clarification question.
+  common_mistake: Do not assume; offer options.
+- phrase: Just to make sure I understand, should we share concerns privately first?
+  meaning_id: Biar aku paham, sebaiknya kita share concern dulu secara private?
+  usage_note: A respectful check for expectations.
+  common_mistake: Do not imply blame; keep it as understanding check.
+- phrase: We'll adjust our approach accordingly.
+  meaning_id: Kita sesuaikan approach-nya.
+  usage_note: Signal respect for preferences.
+  common_mistake: Do not argue with preferences; adapt.
+- phrase: How do you prefer to ...?
+  meaning_id: Kamu lebih nyaman ... seperti apa?
+  usage_note: A general preference question pattern.
+  common_mistake: Do not ask why they are uncomfortable; ask preferences.

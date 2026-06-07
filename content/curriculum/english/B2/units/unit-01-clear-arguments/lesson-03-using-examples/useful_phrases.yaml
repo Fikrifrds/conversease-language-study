@@ -1,0 +1,21 @@
+phrases:
+- phrase: For example, last quarter we had three new joiners who felt lost.
+  meaning_id: Contohnya, kuartal lalu ada tiga orang baru yang merasa bingung.
+  usage_note: For example introduces a concrete case.
+  common_mistake: Do not say "for example is"; use for example, + sentence.
+- phrase: They didn't know which tools to use.
+  meaning_id: Mereka nggak tahu tool mana yang dipakai.
+  usage_note: A clear description of the example.
+  common_mistake: Do not say "didn't knew"; use didn't know.
+- phrase: So they kept asking in multiple channels.
+  meaning_id: Jadi mereka terus tanya di banyak channel.
+  usage_note: Connect the example to the impact.
+  common_mistake: Do not say "keep asking" for past; use kept.
+- phrase: For instance, a simple checklist would help.
+  meaning_id: Misalnya, checklist sederhana akan membantu.
+  usage_note: For instance is similar to for example.
+  common_mistake: Do not mix for instance and for example in every sentence; use one at a time.
+- phrase: Such as pairing each new hire with one mentor.
+  meaning_id: Misalnya memasangkan setiap orang baru dengan satu mentor.
+  usage_note: Such as introduces specific items.
+  common_mistake: Do not say "such like"; use such as.

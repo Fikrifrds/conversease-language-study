@@ -1,0 +1,16 @@
+prompts:
+- prompt: Confirm the time 3:30 p.m.
+  target_response: 'Let me confirm the time: 3:30 p.m., right?'
+  acceptable_variations:
+  - 'Let me confirm the time: 3:30 p.m., right?'
+  - So it's 3:30 p.m., right?
+- prompt: Say your name is Mina Park.
+  target_response: My name is Mina Park.
+  acceptable_variations:
+  - My name is Mina Park.
+  - It's Mina Park.
+- prompt: Spell Park.
+  target_response: P-A-R-K.
+  acceptable_variations:
+  - P-A-R-K.
+  - P. A. R. K.

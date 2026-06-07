@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'm running a bit late. My train is delayed.
+  meaning_id: Aku agak telat. Kereta aku delay.
+  usage_note: A short delay explanation.
+  common_mistake: Do not over-explain; keep it short and clear.
+- phrase: I'll be there in about 20 minutes.
+  meaning_id: Aku sampai kira-kira 20 menit lagi.
+  usage_note: A simple estimate.
+  common_mistake: Do not say "I will there"; use I'll be there.
+- phrase: I have a reservation under Mina Kim.
+  meaning_id: Aku ada reservasi atas nama Mina Kim.
+  usage_note: Confirm your booking name.
+  common_mistake: Do not say "reservation name Mina"; use under + name.
+- phrase: Do you have any recommendations for dinner?
+  meaning_id: Ada rekomendasi buat makan malam?
+  usage_note: Ask for ideas politely.
+  common_mistake: Do not demand; ask politely with do you have any.
+- phrase: If there's a problem with my room, could you help me?
+  meaning_id: Kalau ada masalah di kamar, bisa dibantu?
+  usage_note: A polite conditional request.
+  common_mistake: Do not say "If have problem"; use If there's a problem...

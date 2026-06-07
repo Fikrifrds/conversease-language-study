@@ -1,0 +1,46 @@
+scenario_key: a2_small_talk_at_work
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi! How's your day?
+learner_goal: Start small talk, answer naturally, and ask one follow-up question before closing politely.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi! How's your day?
+    hint: Jawab singkat, lalu tanya balik dengan sopan.
+    sample_answer: Hi! It's pretty good, thanks. How about you?
+    focus: Start small talk
+    expected_keywords:
+      - pretty good
+      - thanks
+      - how about you
+      - "?"
+  - coach: Pretty good. It's busy today. How about you?
+    hint: Katakan kondisi harimu (mis. busy/okay) dengan satu kalimat pendek.
+    sample_answer: I'm good. It's a bit busy too.
+    focus: Describe your day
+    expected_keywords:
+      - i'm good
+      - busy
+  - coach: Nice. By the way, how was your weekend?
+    hint: Jawab tentang weekend dengan 1 kegiatan sederhana.
+    sample_answer: It was nice. I went to the park.
+    focus: Weekend follow-up
+    expected_keywords:
+      - it was
+      - nice
+      - went to
+target_phrases:
+  - How's your day?
+  - It's busy today.
+  - How was your weekend?
+  - Sounds great.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

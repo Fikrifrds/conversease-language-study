@@ -1,0 +1,25 @@
+questions:
+- key: meaning_since
+  type: multiple_choice
+  prompt: Which sentence uses "since" correctly?
+  options:
+  - I've had a cough since two days.
+  - I've had a cough since yesterday.
+  - I've had a cough since three hours.
+  correct_answer: I've had a cough since yesterday.
+- key: meaning_for
+  type: multiple_choice
+  prompt: Which sentence uses "for" correctly?
+  options:
+  - I've had a sore throat for yesterday.
+  - I've had a sore throat for two days.
+  - I've had a sore throat for Monday.
+  correct_answer: I've had a sore throat for two days.
+- key: clinic_question
+  type: multiple_choice
+  prompt: What is the nurse asking with "How long have you been coughing?"
+  options:
+  - Seberapa sering kamu batuk?
+  - Sudah berapa lama kamu batuk?
+  - Batukmu sembuh?
+  correct_answer: Sudah berapa lama kamu batuk?

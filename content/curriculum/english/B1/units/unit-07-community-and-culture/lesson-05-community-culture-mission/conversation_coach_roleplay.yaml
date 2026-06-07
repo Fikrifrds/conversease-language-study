@@ -1,0 +1,43 @@
+scenario_key: b1_culture_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Tell me about your community and culture.
+learner_goal: Describe your community, share a habit, ask about culture, and respond politely to differences.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Tell me about your neighborhood.
+  hint: I live in... It's known for...
+  sample_answer: I live in a quiet neighborhood. It's known for food stalls and small parks.
+  focus: Describe community
+  expected_keywords:
+  - neighborhood
+  - known for
+- coach: Share one local habit.
+  hint: People usually... especially on weekends.
+  sample_answer: People usually eat outside in the evening, especially on weekends.
+  focus: Share local habit
+  expected_keywords:
+  - usually
+  - especially
+- coach: Now respond politely to a cultural difference.
+  hint: That's interesting. I'm not used to..., but it sounds nice.
+  sample_answer: Oh, that's interesting. I'm not used to that, but it sounds nice.
+  focus: Polite differences
+  expected_keywords:
+  - interesting
+  - not used to
+  - sounds nice
+target_phrases:
+- It's known for ...
+- People usually ...
+- I'm not used to ..., but it sounds nice.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

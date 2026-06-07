@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you went to the mall yesterday.
+  target_response: I went to the mall yesterday.
+  acceptable_variations:
+  - I went to the mall yesterday.
+  - Yesterday, I went to the mall.
+- prompt: 'Ask: What did you do there?'
+  target_response: What did you do there?
+  acceptable_variations:
+  - What did you do there?
+  - What did you do?
+- prompt: Say you watched a movie last night.
+  target_response: I watched a movie last night.
+  acceptable_variations:
+  - I watched a movie last night.
+  - Last night, I watched a movie.

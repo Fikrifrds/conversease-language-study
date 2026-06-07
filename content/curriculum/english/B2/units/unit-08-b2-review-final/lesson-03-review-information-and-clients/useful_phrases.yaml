@@ -1,0 +1,21 @@
+phrases:
+- phrase: Based on the source, it's a partial snapshot.
+  meaning_id: Berdasarkan sumbernya, itu cuma snapshot sebagian.
+  usage_note: Discuss source limitations carefully.
+  common_mistake: Do not treat one report as the full truth; mention limits.
+- phrase: We should verify it with our support data.
+  meaning_id: Kita harus verifikasi pakai data support kita.
+  usage_note: Verification language.
+  common_mistake: Do not say "verify with data are"; use verify it with.
+- phrase: I understand the concern.
+  meaning_id: Aku paham kekhawatirannya.
+  usage_note: Empathetic opener for clients.
+  common_mistake: Do not dismiss concerns; acknowledge first.
+- phrase: Just to clarify, what timeline did we promise?
+  meaning_id: Biar jelas, timeline apa yang kita janjikan?
+  usage_note: Clarify commitments.
+  common_mistake: Do not blame; just clarify.
+- phrase: 'Next steps are: I''ll share an update today, and we''ll confirm a revised timeline by Friday.'
+  meaning_id: 'Next steps-nya: aku share update hari ini, dan kita konfirmasi timeline revisi sebelum Jumat.'
+  usage_note: Close with next steps.
+  common_mistake: Do not give next steps without deadlines.

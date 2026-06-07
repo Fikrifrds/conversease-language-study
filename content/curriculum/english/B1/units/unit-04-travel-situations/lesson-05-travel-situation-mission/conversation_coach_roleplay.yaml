@@ -1,0 +1,44 @@
+scenario_key: b1_travel_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Hi. Are you on your way to the hotel?
+learner_goal: Explain the delay, confirm reservation, ask for a recommendation, and request help politely.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Hi. Are you on your way to the hotel?
+  hint: Jelaskan kamu telat + alasan + estimasi.
+  sample_answer: Yes, but I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.
+  focus: Delay explanation with estimate
+  expected_keywords:
+  - running
+  - delayed
+  - in about
+- coach: Okay. Do you have a reservation?
+  hint: Jawab dengan under + name.
+  sample_answer: Yes. I have a reservation under Mina Kim.
+  focus: Confirm reservation
+  expected_keywords:
+  - reservation
+  - under
+- coach: Great. Anything else you need?
+  hint: Tanya rekomendasi + minta bantuan dengan could you.
+  sample_answer: Do you have any recommendations for dinner? If there's a problem with my room, could you help me?
+  focus: Ask recommendations and request help
+  expected_keywords:
+  - recommendations
+  - could you
+  - problem
+target_phrases:
+- I'm running a bit late.
+- I have a reservation under ...
+- Do you have any recommendations for ...?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

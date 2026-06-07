@@ -1,0 +1,21 @@
+phrases:
+- phrase: I wanted to flag one point about the messaging.
+  meaning_id: Aku mau highlight satu poin soal messaging-nya.
+  usage_note: A gentle opener for feedback.
+  common_mistake: Do not start with blame; start with flagging a point.
+- phrase: The impact is that some teams interpreted it as a hard deadline.
+  meaning_id: 'Impact-nya: beberapa tim nangkepnya sebagai deadline fix.'
+  usage_note: Focus on impact, not intent.
+  common_mistake: Do not accuse; describe impact objectively.
+- phrase: I appreciate the intent, and I think we can make it clearer.
+  meaning_id: Aku apresiasi niatnya, dan menurutku kita bisa bikin lebih jelas.
+  usage_note: Acknowledge positives before a suggestion.
+  common_mistake: Do not sound sarcastic; keep it sincere.
+- phrase: Would you be open to adding an explicit line?
+  meaning_id: Kamu open nggak kalau kita tambahin kalimat yang eksplisit?
+  usage_note: Invite change collaboratively.
+  common_mistake: Do not command; ask if they are open to it.
+- phrase: We can make it clearer with one sentence.
+  meaning_id: Kita bisa bikin lebih jelas dengan satu kalimat.
+  usage_note: Make the fix feel small and doable.
+  common_mistake: Do not propose a huge rewrite; keep it scoped.

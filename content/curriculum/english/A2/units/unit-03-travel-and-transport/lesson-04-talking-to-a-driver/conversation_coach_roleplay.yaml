@@ -1,0 +1,44 @@
+scenario_key: a2_taxi_to_station
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Hi. Where to?
+learner_goal: Tell the driver your destination, ask how long it will take, and make one polite request.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: Hi. Where to?
+    hint: Sebutkan tujuan dengan sopan.
+    sample_answer: Can you take me to the station, please?
+    focus: Say the destination
+    expected_keywords:
+      - take me to
+      - station
+  - coach: Sure. To the station.
+    hint: Tanya durasi perjalanannya.
+    sample_answer: Thanks. How long will it take?
+    focus: Ask travel time
+    expected_keywords:
+      - how long
+      - "?"
+  - coach: About 20 minutes.
+    hint: Buat satu request sopan.
+    sample_answer: Okay. Please take the fastest route.
+    focus: Make a request
+    expected_keywords:
+      - please
+      - fastest
+
+target_phrases:
+  - Can you take me to the station?
+  - How long will it take?
+  - Please take the fastest route.
+  - Thank you.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

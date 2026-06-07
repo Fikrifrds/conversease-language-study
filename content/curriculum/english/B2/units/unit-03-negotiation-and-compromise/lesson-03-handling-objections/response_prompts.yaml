@@ -1,0 +1,16 @@
+prompts:
+- prompt: Acknowledge the objection.
+  target_response: I understand the concern.
+  acceptable_variations:
+  - I understand the concern.
+  - I understand your concern.
+- prompt: Ask a clarifying question.
+  target_response: What part feels risky to you?
+  acceptable_variations:
+  - What part feels risky to you?
+  - Which part worries you the most?
+- prompt: Offer a revised proposal.
+  target_response: Would it help if we limit reviews to high-risk changes only?
+  acceptable_variations:
+  - Would it help if we limit reviews to high-risk changes only?
+  - What if we start with a small pilot?

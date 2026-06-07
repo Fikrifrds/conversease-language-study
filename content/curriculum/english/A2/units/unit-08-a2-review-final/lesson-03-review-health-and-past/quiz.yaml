@@ -1,0 +1,25 @@
+questions:
+- key: past_sleep
+  type: multiple_choice
+  prompt: Which sentence is correct?
+  options:
+  - Did you slept late?
+  - Did you sleep late?
+  - Do you slept late?
+  correct_answer: Did you sleep late?
+- key: meaning_feel_well
+  type: multiple_choice
+  prompt: What does "I don't feel well" mean?
+  options:
+  - Saya lapar
+  - Saya tidak enak badan
+  - Saya senang
+  correct_answer: Saya tidak enak badan
+- key: past_stay
+  type: multiple_choice
+  prompt: What is the past of "stay"?
+  options:
+  - stayed
+  - stay
+  - stays
+  correct_answer: stayed

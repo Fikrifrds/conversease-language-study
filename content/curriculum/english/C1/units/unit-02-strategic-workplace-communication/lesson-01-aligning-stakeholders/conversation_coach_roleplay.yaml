@@ -1,0 +1,43 @@
+scenario_key: c1_aligning_stakeholders
+mode: lesson_practice_coach
+level_code: C1
+opening_line: We have conflicting priorities across teams.
+learner_goal: Align stakeholders by clarifying priorities, constraints, and confirming a shared decision.
+max_turns: 14
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: We have conflicting priorities across teams.
+  hint: Mulai dengan alignment question.
+  sample_answer: To make sure we're aligned, can you share your top priority?
+  focus: Priorities
+  expected_keywords:
+  - aligned
+  - priority
+- coach: Our top priority is speed. What do you ask next?
+  hint: Tanya constraint.
+  sample_answer: Got it. From your perspective, what's the biggest constraint?
+  focus: Constraints
+  expected_keywords:
+  - perspective
+  - constraint
+- coach: We can't add headcount. Close with a decision.
+  hint: Can we agree that ...
+  sample_answer: Understood. The key constraint is capacity. Can we agree that we ship a smaller scope first?
+  focus: Decision
+  expected_keywords:
+  - key constraint
+  - agree
+  - scope
+target_phrases:
+- To make sure we're aligned, ...
+- From your perspective, ...
+- Can we agree that ...?
+rubric:
+  speaking:
+    minimum_score: 78
+  relevance:
+    minimum_score: 76
+  grammar:
+    minimum_score: 74

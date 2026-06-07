@@ -1,0 +1,21 @@
+phrases:
+- phrase: What did you think?
+  meaning_id: Menurut kamu gimana?
+  usage_note: Ask for an opinion about something in the past.
+  common_mistake: Do not say "What do you think last night?".
+- phrase: I think it's really good.
+  meaning_id: Menurutku bagus banget.
+  usage_note: A simple opinion with it's + adjective.
+  common_mistake: 'Do not drop it''s: say "I think it''s good".'
+- phrase: The story is simple, but fun.
+  meaning_id: Ceritanya sederhana, tapi seru.
+  usage_note: Use but to show contrast.
+  common_mistake: Do not use "and" if you mean contrast.
+- phrase: He was great.
+  meaning_id: Dia keren.
+  usage_note: Great is a common positive adjective.
+  common_mistake: Do not say "He is great" about a past performance if you want past.
+- phrase: I want to watch it too.
+  meaning_id: Aku juga mau nonton.
+  usage_note: A natural follow-up after hearing an opinion.
+  common_mistake: Do not say "I want watch" without to.

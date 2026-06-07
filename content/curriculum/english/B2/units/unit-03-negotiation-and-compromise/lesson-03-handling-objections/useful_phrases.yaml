@@ -1,0 +1,21 @@
+phrases:
+- phrase: I understand the concern.
+  meaning_id: Aku paham kekhawatirannya.
+  usage_note: Start calmly and show empathy.
+  common_mistake: Do not argue immediately; acknowledge first.
+- phrase: What part feels risky to you?
+  meaning_id: Bagian mana yang terasa berisiko buat kamu?
+  usage_note: Ask a clarifying question.
+  common_mistake: Do not ask "Why are you worried?" too directly; ask what part feels risky.
+- phrase: Would it help if we limit reviews to high-risk changes only?
+  meaning_id: Gimana kalau review dibatasi cuma untuk perubahan high-risk?
+  usage_note: Offer a revised proposal.
+  common_mistake: Do not say "Would it help if limit"; include we.
+- phrase: What if we define simple criteria?
+  meaning_id: Gimana kalau kita bikin kriteria sederhana?
+  usage_note: A friendly revision option.
+  common_mistake: Do not say "What if define"; include we.
+- phrase: That sounds reasonable.
+  meaning_id: Kedengarannya masuk akal.
+  usage_note: A polite acceptance.
+  common_mistake: Do not say "That sound"; add -s.

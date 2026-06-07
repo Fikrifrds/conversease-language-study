@@ -1,0 +1,21 @@
+phrases:
+- phrase: The main risk is a spike in incidents during rollout.
+  meaning_id: Risiko utamanya lonjakan incident saat rollout.
+  usage_note: Name a main risk clearly.
+  common_mistake: Do not list many risks immediately; start with the main one.
+- phrase: There's a reasonable chance, given recent instability.
+  meaning_id: Ada kemungkinan yang cukup besar, melihat instabilitas belakangan.
+  usage_note: Likelihood with rationale.
+  common_mistake: Do not say maybe; calibrate (reasonable chance).
+- phrase: The impact would be delayed revenue and higher support load.
+  meaning_id: Dampaknya revenue terlambat dan beban support naik.
+  usage_note: Describe impact in concrete terms.
+  common_mistake: Do not keep impact vague; name business impact.
+- phrase: We can mitigate it by time-boxing the rollout.
+  meaning_id: Kita mitigasi dengan time-box rollout.
+  usage_note: Introduce mitigation with by + -ing.
+  common_mistake: Do not say mitigate with do; use mitigate by doing.
+- phrase: Let's include a rollback plan.
+  meaning_id: Kita masukin rollback plan.
+  usage_note: Operational mitigation.
+  common_mistake: Do not discuss risk without a rollback option.

@@ -1,0 +1,41 @@
+scenario_key: b1_work_meeting
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Any updates before we close?
+learner_goal: Add one point in a meeting, make a suggestion, and ask for the next steps.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Any updates before we close?
+  hint: Minta kesempatan bicara dengan sopan.
+  sample_answer: I'd like to add one point about the schedule.
+  focus: Speak up politely
+  expected_keywords:
+  - like to
+  - point
+- coach: Sure, go ahead.
+  hint: Sampaikan saran singkat.
+  sample_answer: I suggest we move the deadline to Thursday to reduce risk.
+  focus: Give a suggestion
+  expected_keywords:
+  - suggest
+  - deadline
+- coach: That makes sense. Anything else?
+  hint: Tutup dan tanya next step.
+  sample_answer: No. What are the next steps?
+  focus: Ask for next steps
+  expected_keywords:
+  - next steps
+target_phrases:
+- I'd like to add...
+- I suggest...
+- What are the next steps?
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

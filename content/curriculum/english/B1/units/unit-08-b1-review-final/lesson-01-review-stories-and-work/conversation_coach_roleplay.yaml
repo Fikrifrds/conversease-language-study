@@ -1,0 +1,41 @@
+scenario_key: b1_review_stories_work
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Tell me what you did, then give me a work update.
+learner_goal: Tell a short story, then give a work update with a next step.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Tell me about your weekend.
+  hint: Ceritain 2 kalimat (visited/went...).
+  sample_answer: It was great. I visited my cousin and we went to a small concert.
+  focus: Tell a short story
+  expected_keywords:
+  - visited
+  - went
+- coach: What happened after that?
+  hint: Jawab pakai then.
+  sample_answer: Then we grabbed street food and talked until late.
+  focus: Continue the story
+  expected_keywords:
+  - then
+- coach: Now give a work update and next step.
+  hint: I'm working on... Next, I'll...
+  sample_answer: I'm working on the release checklist. Next, I'll review the risks.
+  focus: Work update + next step
+  expected_keywords:
+  - working on
+  - next
+target_phrases:
+- Then ...
+- I'm working on ...
+- Next, I'll ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

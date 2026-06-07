@@ -1,0 +1,21 @@
+phrases:
+- phrase: My position is that we should prioritize fixing the billing flow.
+  meaning_id: 'Posisi aku: kita harus prioritasin beresin alur billing.'
+  usage_note: A clear meeting position statement.
+  common_mistake: Do not say "my position is prioritize"; use my position is that we should.
+- phrase: The main reason is it affects revenue and support workload.
+  meaning_id: 'Alasan utamanya: itu berdampak ke revenue dan beban tim support.'
+  usage_note: A concise reason statement.
+  common_mistake: Do not list too many reasons; start with the main one.
+- phrase: To summarize, we focus on billing first.
+  meaning_id: Singkatnya, kita fokus billing dulu.
+  usage_note: Closing summary language.
+  common_mistake: Do not introduce new points in the summary.
+- phrase: 'Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
+  meaning_id: 'Next steps-nya: aku share plan hari ini, dan kamu review sebelum Jumat.'
+  usage_note: Clear owners and deadlines.
+  common_mistake: Do not forget owners; say who does what by when.
+- phrase: Some teams prefer new features, but the risk is higher if billing stays broken.
+  meaning_id: Ada tim yang pengen fitur baru, tapi risikonya lebih tinggi kalau billing tetap bermasalah.
+  usage_note: A calm counterpoint response.
+  common_mistake: Do not dismiss the counterpoint; acknowledge then explain risk.

@@ -1,0 +1,41 @@
+scenario_key: b1_culture_local_habits
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Tell me a local habit in your area.
+learner_goal: Describe a local habit using usually/often and add one example.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Tell me a local habit in your area.
+  hint: Mulai dengan People usually...
+  sample_answer: People usually eat outside in the evening.
+  focus: Describe habit
+  expected_keywords:
+  - usually
+- coach: Can you give an example?
+  hint: Gunakan In my area, people often...
+  sample_answer: In my area, people often grab noodles or satay after work.
+  focus: Give example
+  expected_keywords:
+  - often
+  - in my area
+- coach: How often does it happen?
+  hint: 'Tambahkan detail: especially on weekends.'
+  sample_answer: Especially on weekends.
+  focus: Add frequency detail
+  expected_keywords:
+  - especially
+  - weekends
+target_phrases:
+- People usually ...
+- In my area, people often ...
+- Especially on weekends.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

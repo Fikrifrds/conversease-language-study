@@ -1,0 +1,42 @@
+scenario_key: b2_client_concerns
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I'm concerned about this change.
+learner_goal: Acknowledge concerns, clarify, and propose mitigation.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: I'm concerned this change will disrupt our team.
+  hint: Mulai dengan I understand the concern.
+  sample_answer: I understand the concern.
+  focus: Acknowledge
+  expected_keywords:
+  - understand
+  - concern
+- coach: Ask me what I mean.
+  hint: Could you clarify...?
+  sample_answer: Could you clarify what disruption you expect?
+  focus: Clarify
+  expected_keywords:
+  - clarify
+- coach: Offer a mitigation plan.
+  hint: To reduce the risk, we can...
+  sample_answer: To reduce the risk, we can run a two-week trial, send weekly summaries, and gather feedback.
+  focus: Mitigation
+  expected_keywords:
+  - reduce
+  - trial
+  - feedback
+target_phrases:
+- I understand the concern.
+- Could you clarify ...?
+- To reduce the risk, we can ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

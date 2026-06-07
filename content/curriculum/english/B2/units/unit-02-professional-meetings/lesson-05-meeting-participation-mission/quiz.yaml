@@ -1,0 +1,25 @@
+questions:
+- key: meeting_flow
+  type: multiple_choice
+  prompt: Which flow fits active meeting participation?
+  options:
+  - Open topic -> clarify scope -> feedback -> summarize
+  - Greeting -> goodbye
+  - Food -> weather
+  correct_answer: Open topic -> clarify scope -> feedback -> summarize
+- key: action_items_owner
+  type: multiple_choice
+  prompt: Why mention owners for action items?
+  options:
+  - So it's clear who does what
+  - To make it longer
+  - To avoid decisions
+  correct_answer: So it's clear who does what
+- key: clarify_goal
+  type: multiple_choice
+  prompt: Why say "Just to clarify"?
+  options:
+  - to avoid confusion
+  - to argue
+  - to end the meeting
+  correct_answer: to avoid confusion

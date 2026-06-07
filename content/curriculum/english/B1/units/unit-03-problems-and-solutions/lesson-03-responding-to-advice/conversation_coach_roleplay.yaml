@@ -1,0 +1,41 @@
+scenario_key: b1_problem_respond_advice
+mode: lesson_practice_coach
+level_code: B1
+opening_line: Maybe you should try a small daily goal.
+learner_goal: Accept advice politely and say what you will do next.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Maybe you should try a small daily goal.
+  hint: Terima saran dengan sopan.
+  sample_answer: That sounds good.
+  focus: Accept advice
+  expected_keywords:
+  - sounds
+- coach: When will you start?
+  hint: Jawab dengan rencana singkat.
+  sample_answer: I'll try that starting tomorrow.
+  focus: Commit to action
+  expected_keywords:
+  - try
+  - tomorrow
+- coach: How will you keep it consistent?
+  hint: Sebutkan satu cara (checklist/alarm).
+  sample_answer: I'll set a reminder and track it in a checklist.
+  focus: Plan for consistency
+  expected_keywords:
+  - reminder
+  - checklist
+target_phrases:
+- That sounds good.
+- You're right.
+- I'll try that starting ...
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

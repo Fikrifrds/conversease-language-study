@@ -1,0 +1,21 @@
+phrases:
+  - phrase: Do you want to watch a movie?
+    meaning_id: Kamu mau nonton film?
+    usage_note: A simple, friendly invitation.
+    common_mistake: Do not say "Do you want watch" without to.
+  - phrase: Would you like to join?
+    meaning_id: Kamu mau ikut?
+    usage_note: A slightly more polite invitation.
+    common_mistake: Do not say "Would you like join" without to.
+  - phrase: That sounds fun.
+    meaning_id: Kedengarannya seru.
+    usage_note: A positive reaction to an idea.
+    common_mistake: Do not say "That sound fun" without -s.
+  - phrase: I'd love to.
+    meaning_id: Saya mau banget.
+    usage_note: A polite, enthusiastic acceptance.
+    common_mistake: Do not forget the apostrophe in I'd.
+  - phrase: Maybe next time.
+    meaning_id: Mungkin lain kali.
+    usage_note: A soft, polite way to decline.
+    common_mistake: Add a reason to sound kinder.

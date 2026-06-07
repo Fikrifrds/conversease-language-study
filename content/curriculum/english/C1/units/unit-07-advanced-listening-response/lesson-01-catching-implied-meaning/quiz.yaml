@@ -1,0 +1,25 @@
+questions:
+- key: sounds_like
+  type: multiple_choice
+  prompt: Which phrase gives a neutral interpretation?
+  options:
+  - It sounds like ...
+  - You mean ...
+  - You're wrong.
+  correct_answer: It sounds like ...
+- key: implying
+  type: multiple_choice
+  prompt: Which phrase checks implied meaning?
+  options:
+  - Are you implying that ...?
+  - I'm sure that ...
+  - No need.
+  correct_answer: Are you implying that ...?
+- key: mirror_phrase
+  type: multiple_choice
+  prompt: Which phrase mirrors what you heard?
+  options:
+  - What I'm hearing is ...
+  - Stop.
+  - Whatever.
+  correct_answer: What I'm hearing is ...

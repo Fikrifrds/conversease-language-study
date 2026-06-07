@@ -1,0 +1,16 @@
+prompts:
+- prompt: Say you have an appointment at 3:30.
+  target_response: I have an appointment at 3:30.
+  acceptable_variations:
+  - I have an appointment at 3:30.
+  - I have an appointment at three thirty.
+- prompt: Say you've had a cough for two days.
+  target_response: I've had a cough for two days.
+  acceptable_variations:
+  - I've had a cough for two days.
+  - I've had a cough for two days now.
+- prompt: Say you feel tired.
+  target_response: I feel tired.
+  acceptable_variations:
+  - I feel tired.
+  - I'm tired.

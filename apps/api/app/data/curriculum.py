@@ -102,21 +102,42 @@ def production_tracker_path() -> Path:
     return repo_root() / "content" / "production_tracker.csv"
 
 
+def level_root(*, language: str = "english", level_code: str) -> Path:
+    return curriculum_root() / language / level_code
+
+
 def a1_root() -> Path:
-    return curriculum_root() / "english" / LEVEL_CODE
+    return level_root(language="english", level_code=LEVEL_CODE)
 
 
 @lru_cache(maxsize=1)
 def load_a1_course() -> dict[str, Any]:
-    units_root = a1_root() / "units"
-    units = [load_unit(unit_dir) for unit_dir in sorted(units_root.iterdir()) if unit_dir.is_dir()]
+    return load_course(level_code=LEVEL_CODE)
+
+
+@lru_cache(maxsize=8)
+def load_course(*, language: str = "english", level_code: str) -> dict[str, Any]:
+    root = level_root(language=language, level_code=level_code)
+    units_root = root / "units"
+    units = (
+        [load_unit(unit_dir) for unit_dir in sorted(units_root.iterdir()) if unit_dir.is_dir()]
+        if units_root.exists()
+        else []
+    )
+
+    plan_path = root / "content_plan.yaml"
+    plan = read_yaml(plan_path) if plan_path.exists() else {}
+    course_slug = plan.get("course_slug") or (COURSE_SLUG if level_code == "A1" else "")
+    course_title = plan.get("course_title") or (COURSE_TITLE if level_code == "A1" else "")
+    language_code = plan.get("language_code") or (LANGUAGE_CODE if level_code == "A1" else "")
+    level_name = LEVEL_NAME if level_code == "A1" else level_code
 
     return {
-        "language_code": LANGUAGE_CODE,
-        "level_code": LEVEL_CODE,
-        "level_name": LEVEL_NAME,
-        "course_slug": COURSE_SLUG,
-        "course_title": COURSE_TITLE,
+        "language_code": language_code,
+        "level_code": level_code,
+        "level_name": level_name,
+        "course_slug": course_slug,
+        "course_title": course_title,
         "units": units,
     }
 
@@ -157,11 +178,13 @@ def load_lesson(lesson_dir: Path) -> dict[str, Any]:
         "roleplay": {
             "scenario_key": roleplay["scenario_key"],
             "mode": roleplay["mode"],
+            "level_code": roleplay.get("level_code", ""),
             "opening_line": roleplay["opening_line"],
             "learner_goal": roleplay["learner_goal"],
             "max_turns": roleplay["max_turns"],
             "target_phrases": roleplay.get("target_phrases", []),
             "rubric": roleplay.get("rubric", {}),
+            "turns": roleplay.get("turns", []),
         },
         "content_files": {
             "lesson": str(lesson_dir / "lesson.md"),
@@ -333,7 +356,7 @@ def validate_production_tracker(course: Optional[dict[str, Any]] = None) -> list
                     f"Production tracker {lesson['lesson_key']} publish_status must be published"
                 )
 
-    extra_keys = set(tracker_by_key) - expected_keys
+    extra_keys = {key for key in tracker_by_key if key[0] == source["level_code"]} - expected_keys
     for level, unit, lesson in sorted(extra_keys):
         issues.append(f"Production tracker has extra lesson row: {level}/{unit}/{lesson}")
 
@@ -416,6 +439,7 @@ A1_COURSE = load_a1_course()
 
 def refresh_a1_course() -> dict[str, Any]:
     load_a1_course.cache_clear()
+    load_course.cache_clear()
     load_a1_final_evaluation.cache_clear()
     fresh_course = load_a1_course()
     A1_COURSE.clear()

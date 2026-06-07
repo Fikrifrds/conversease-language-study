@@ -1,0 +1,43 @@
+scenario_key: b1_story_setting_scene
+mode: lesson_practice_coach
+level_code: B1
+opening_line: You look happy today. What happened?
+learner_goal: Set the scene with time, place, and who you were with, then add one background activity.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: You look happy today. What happened?
+  hint: Mulai dengan kapan + di mana.
+  sample_answer: Last weekend, I was in Bandung.
+  focus: Set time and place
+  expected_keywords:
+  - last
+  - was
+  - in
+- coach: Oh nice. Who were you with?
+  hint: Jawab dengan with + person.
+  sample_answer: I was there with my cousin.
+  focus: Say who you were with
+  expected_keywords:
+  - with
+  - cousin
+- coach: What were you doing there?
+  hint: Tambah 1 aktivitas background.
+  sample_answer: We were visiting my aunt and exploring the city.
+  focus: Add background activity
+  expected_keywords:
+  - were
+  - visiting
+target_phrases:
+- Last weekend, I was...
+- I was there with...
+- We were ...ing
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 65

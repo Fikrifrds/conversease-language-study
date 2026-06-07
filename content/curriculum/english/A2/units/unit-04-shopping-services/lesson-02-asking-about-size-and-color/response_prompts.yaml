@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Ask if they have it in black.
+    target_response: Do you have this in black?
+    acceptable_variations:
+      - Do you have this in black?
+      - Do you have it in black?
+  - prompt: Ask about size M.
+    target_response: Do you have it in size M?
+    acceptable_variations:
+      - Do you have it in size M?
+      - Do you have this in size M?
+  - prompt: Choose the blue one.
+    target_response: I'll take the blue one.
+    acceptable_variations:
+      - I'll take the blue one.
+      - I'll take it.

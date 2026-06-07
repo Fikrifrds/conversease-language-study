@@ -1,0 +1,16 @@
+prompts:
+- prompt: Start feedback positively.
+  target_response: Overall it was clear.
+  acceptable_variations:
+  - Overall it was clear.
+  - Overall, it went well.
+- prompt: Make an observation with I noticed.
+  target_response: I noticed the introduction was a bit long.
+  acceptable_variations:
+  - I noticed the introduction was a bit long.
+  - I noticed the pace was fast.
+- prompt: Give one suggestion softly.
+  target_response: It might help if you start with the main takeaway.
+  acceptable_variations:
+  - It might help if you start with the main takeaway.
+  - It might help if you keep the intro shorter.

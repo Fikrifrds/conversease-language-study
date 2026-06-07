@@ -1,0 +1,21 @@
+phrases:
+  - phrase: I'm looking for a phone charger.
+    meaning_id: Saya cari charger HP.
+    usage_note: A natural way to say what you want.
+    common_mistake: Do not say "I am search".
+  - phrase: What kind?
+    meaning_id: Jenis yang mana?
+    usage_note: A short question from staff.
+    common_mistake: In a full sentence, say "What kind do you need?"
+  - phrase: Do you need a cable too?
+    meaning_id: Kamu perlu kabel juga?
+    usage_note: Ask if the customer wants an extra item.
+    common_mistake: Do not say "Need you".
+  - phrase: Do you have it?
+    meaning_id: Ada?
+    usage_note: Ask if the item is available.
+    common_mistake: Do not use "it" if the item is unclear.
+  - phrase: Sorry, we're out of stock.
+    meaning_id: Maaf, stoknya habis.
+    usage_note: A polite way to say the item is not available.
+    common_mistake: Do not say only "No"; add sorry.

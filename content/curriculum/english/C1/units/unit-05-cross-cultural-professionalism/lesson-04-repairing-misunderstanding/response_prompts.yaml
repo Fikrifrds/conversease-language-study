@@ -1,0 +1,16 @@
+prompts:
+- prompt: Acknowledge misunderstanding.
+  target_response: I may have misunderstood their tone. I didn't mean to come across as dismissive.
+  acceptable_variations:
+  - I may have misunderstood their tone. I didn't mean to come across as dismissive.
+  - I may have misunderstood the context. I didn't mean to sound dismissive.
+- prompt: Clarify intent calmly.
+  target_response: Just to clarify, my intent was to confirm the constraints, not reject the request.
+  acceptable_variations:
+  - Just to clarify, my intent was to confirm the constraints, not reject the request.
+  - Just to clarify, I was trying to confirm details, not say no.
+- prompt: Propose a repair step.
+  target_response: How about we send a short note acknowledging the misunderstanding and offer a quick call?
+  acceptable_variations:
+  - How about we send a short note acknowledging the misunderstanding and offer a quick call?
+  - How about we apologize briefly and offer a short call to align?

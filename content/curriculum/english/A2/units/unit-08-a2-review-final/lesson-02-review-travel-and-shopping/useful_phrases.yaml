@@ -1,0 +1,21 @@
+phrases:
+- phrase: Where is platform 2?
+  meaning_id: Peron 2 di mana?
+  usage_note: Ask for a location.
+  common_mistake: Do not say "Where platform 2?".
+- phrase: What time is the next train?
+  meaning_id: Kereta berikutnya jam berapa?
+  usage_note: Ask about schedule.
+  common_mistake: Do not say "What time next train?".
+- phrase: Do you have a phone charger?
+  meaning_id: Ada charger HP?
+  usage_note: Ask about availability.
+  common_mistake: Do not say "You have phone charger?".
+- phrase: What kind do you need?
+  meaning_id: Jenis yang mana?
+  usage_note: A common staff question.
+  common_mistake: Do not answer with a full story; just specify the type.
+- phrase: A USB-C charger, please.
+  meaning_id: Charger USB-C, ya.
+  usage_note: A short polite request.
+  common_mistake: Do not forget please in a request.

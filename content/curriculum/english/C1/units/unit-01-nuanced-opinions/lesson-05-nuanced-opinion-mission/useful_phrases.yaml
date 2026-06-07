@@ -1,0 +1,21 @@
+phrases:
+- phrase: To some extent, yes—especially for new projects.
+  meaning_id: Sampai batas tertentu, iya—terutama untuk project baru.
+  usage_note: Partial agreement + scope.
+  common_mistake: Don't answer with only yes/no.
+- phrase: I'm fairly confident it will, but I'm not entirely convinced.
+  meaning_id: Aku cukup yakin, tapi belum sepenuhnya yakin.
+  usage_note: Calibrate certainty.
+  common_mistake: Don't sound absolute when evidence is limited.
+- phrase: On balance, I'd prioritize stability with a limited rollout.
+  meaning_id: Secara keseluruhan, aku prioritasin stability dengan rollout terbatas.
+  usage_note: Balanced conclusion.
+  common_mistake: Don't conclude without weighing both sides.
+- phrase: I see your point, but I'm not sure I'd go that far.
+  meaning_id: Aku paham poin kamu, tapi aku nggak yakin aku akan sejauh itu.
+  usage_note: Soft disagreement.
+  common_mistake: Don't be confrontational; acknowledge first.
+- phrase: 'I might frame it differently: limited launch first, then review the data.'
+  meaning_id: 'Aku akan framing beda: launch terbatas dulu, lalu review data.'
+  usage_note: Alternative proposal.
+  common_mistake: Don't reject without suggesting an alternative.

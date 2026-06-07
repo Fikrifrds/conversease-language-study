@@ -1,0 +1,21 @@
+phrases:
+  - phrase: I'd like one ticket to Bandung, please.
+    meaning_id: Saya mau satu tiket ke Bandung, ya.
+    usage_note: A polite request at the ticket counter.
+    common_mistake: Do not say "I like" when you mean "I'd like".
+  - phrase: It leaves at 6:30 pm.
+    meaning_id: Berangkat jam 6.30 sore.
+    usage_note: A schedule detail.
+    common_mistake: Use at for time.
+  - phrase: from platform 2
+    meaning_id: dari platform 2
+    usage_note: A platform detail.
+    common_mistake: Do not say "in platform" for departure.
+  - phrase: Can you take me to my hotel?
+    meaning_id: Bisa antar saya ke hotel saya?
+    usage_note: A polite request to a driver.
+    common_mistake: Do not forget to.
+  - phrase: Let's go.
+    meaning_id: Ayo berangkat.
+    usage_note: A simple start phrase.
+    common_mistake: Do not say "Let's going".

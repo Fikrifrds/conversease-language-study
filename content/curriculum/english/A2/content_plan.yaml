@@ -7,208 +7,208 @@ target_lesson_count: 40
 units:
   - unit_key: unit-01-social-small-talk
     title: Social Small Talk
-    status: planned
+    status: in_production
     main_conversation_outcome: Keep short everyday conversations going with follow-up questions.
     lessons:
       - lesson_key: lesson-01-starting-small-talk
         slug: starting-small-talk
         title: Starting Small Talk
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-follow-up-questions
         slug: asking-follow-up-questions
         title: Asking Follow-up Questions
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-talking-about-weekends
         slug: talking-about-weekends
         title: Talking About Weekends
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-reacting-politely
         slug: reacting-politely
         title: Reacting Politely
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-small-talk-mission
         slug: small-talk-mission
         title: Small Talk Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-02-plans-and-invitations
     title: Plans & Invitations
-    status: planned
+    status: in_production
     main_conversation_outcome: Make simple plans, invite someone, accept, decline, and reschedule.
     lessons:
       - lesson_key: lesson-01-making-plans
         slug: making-plans
         title: Making Plans
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-inviting-someone
         slug: inviting-someone
         title: Inviting Someone
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-accepting-and-declining
         slug: accepting-and-declining
         title: Accepting and Declining
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-rescheduling
         slug: rescheduling
         title: Rescheduling
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-invitation-mission
         slug: invitation-mission
         title: Invitation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-03-travel-and-transport
     title: Travel & Transport
-    status: planned
+    status: in_production
     main_conversation_outcome: Ask transport questions and handle simple travel situations.
     lessons:
       - lesson_key: lesson-01-buying-a-ticket
         slug: buying-a-ticket
         title: Buying a Ticket
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-about-departure-time
         slug: asking-about-departure-time
         title: Asking About Departure Time
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-checking-directions
         slug: checking-directions
         title: Checking Directions
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-talking-to-a-driver
         slug: talking-to-a-driver
         title: Talking to a Driver
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-transport-mission
         slug: transport-mission
         title: Transport Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-04-shopping-services
     title: Shopping & Services
-    status: planned
+    status: in_production
     main_conversation_outcome: Ask for items, sizes, availability, and simple service help.
     lessons:
       - lesson_key: lesson-01-asking-for-an-item
         slug: asking-for-an-item
         title: Asking for an Item
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-asking-about-size-and-color
         slug: asking-about-size-and-color
         title: Asking About Size and Color
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-comparing-simple-options
         slug: comparing-simple-options
         title: Comparing Simple Options
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-requesting-service-help
         slug: requesting-service-help
         title: Requesting Service Help
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-shopping-service-mission
         slug: shopping-service-mission
         title: Shopping Service Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-05-health-and-appointments
     title: Health & Appointments
-    status: planned
+    status: in_production
     main_conversation_outcome: Describe simple symptoms and arrange appointments.
     lessons:
       - lesson_key: lesson-01-saying-how-you-feel
         slug: saying-how-you-feel
         title: Saying How You Feel
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-describing-simple-symptoms
         slug: describing-simple-symptoms
         title: Describing Simple Symptoms
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-making-an-appointment
         slug: making-an-appointment
         title: Making an Appointment
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-confirming-details
         slug: confirming-details
         title: Confirming Details
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-health-appointment-mission
         slug: health-appointment-mission
         title: Health Appointment Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-06-past-experiences
     title: Past Experiences
-    status: planned
+    status: in_production
     main_conversation_outcome: Talk about simple past activities and experiences.
     lessons:
       - lesson_key: lesson-01-talking-about-yesterday
         slug: talking-about-yesterday
         title: Talking About Yesterday
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-saying-where-you-went
         slug: saying-where-you-went
         title: Saying Where You Went
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-describing-a-simple-experience
         slug: describing-a-simple-experience
         title: Describing a Simple Experience
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-about-past-activities
         slug: asking-about-past-activities
         title: Asking About Past Activities
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-past-experience-mission
         slug: past-experience-mission
         title: Past Experience Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-07-opinions-and-reasons
     title: Opinions & Reasons
-    status: planned
+    status: in_production
     main_conversation_outcome: Give simple opinions and short reasons.
     lessons:
       - lesson_key: lesson-01-saying-what-you-think
         slug: saying-what-you-think
         title: Saying What You Think
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-giving-simple-reasons
         slug: giving-simple-reasons
         title: Giving Simple Reasons
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-agreeing-and-disagreeing-politely
         slug: agreeing-and-disagreeing-politely
         title: Agreeing and Disagreeing Politely
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-asking-for-opinions
         slug: asking-for-opinions
         title: Asking for Opinions
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-opinion-conversation-mission
         slug: opinion-conversation-mission
         title: Opinion Conversation Mission
-        status: planned
+        status: implemented
 
   - unit_key: unit-08-a2-review-final
     title: A2 Review & Final Conversation
-    status: planned
+    status: in_production
     main_conversation_outcome: Combine A2 everyday skills in a practical conversation.
     lessons:
       - lesson_key: lesson-01-review-social-and-plans
         slug: review-social-and-plans
         title: Review Social and Plans
-        status: planned
+        status: implemented
       - lesson_key: lesson-02-review-travel-and-shopping
         slug: review-travel-and-shopping
         title: Review Travel and Shopping
-        status: planned
+        status: implemented
       - lesson_key: lesson-03-review-health-and-past
         slug: review-health-and-past
         title: Review Health and Past
-        status: planned
+        status: implemented
       - lesson_key: lesson-04-a2-final-test-practice
         slug: a2-final-test-practice
         title: A2 Final Test Practice
-        status: planned
+        status: implemented
       - lesson_key: lesson-05-a2-final-conversation
         slug: a2-final-conversation
         title: A2 Final Conversation
-        status: planned
+        status: implemented

@@ -1,0 +1,25 @@
+questions:
+- key: out_of_scope
+  type: multiple_choice
+  prompt: Choose the correct phrase.
+  options:
+  - out of scope
+  - out from scope
+  - out scope
+  correct_answer: out of scope
+- key: clarify_phrase
+  type: multiple_choice
+  prompt: Which phrase asks for clarity politely?
+  options:
+  - Just to clarify, ...
+  - You didn't explain.
+  - Whatever.
+  correct_answer: Just to clarify, ...
+- key: include_question
+  type: multiple_choice
+  prompt: Which sentence is a correct include question?
+  options:
+  - Does this include the admin changes?
+  - This include the admin changes?
+  - Is include admin changes?
+  correct_answer: Does this include the admin changes?

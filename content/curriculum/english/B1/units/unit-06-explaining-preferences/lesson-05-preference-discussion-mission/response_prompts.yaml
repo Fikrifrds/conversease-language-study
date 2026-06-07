@@ -1,0 +1,16 @@
+prompts:
+- prompt: Compare options with but.
+  target_response: Eating out is easier, but it's more expensive.
+  acceptable_variations:
+  - Eating out is easier, but it's more expensive.
+  - Option A is faster, but it's more expensive.
+- prompt: State preference with because.
+  target_response: I prefer cooking at home because it's cheaper.
+  acceptable_variations:
+  - I prefer cooking at home because it's cheaper.
+  - I prefer option B because it's simpler.
+- prompt: Give one advantage and one downside.
+  target_response: The advantage is it's healthier. One downside is it takes time.
+  acceptable_variations:
+  - The advantage is it's healthier. One downside is it takes time.
+  - The advantage is it's cheaper. One downside is it takes time.

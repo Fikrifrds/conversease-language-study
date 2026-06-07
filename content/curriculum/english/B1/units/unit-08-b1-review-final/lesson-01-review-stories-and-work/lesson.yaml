@@ -1,0 +1,25 @@
+lesson_key: lesson-01-review-stories-and-work
+slug: review-stories-and-work
+title: Review Stories and Work
+status: published
+estimated_minutes: 12
+conversation_situation: review_story_and_work_update
+conversation_goal: Tell a short story and give a clear work update with one next step.
+grammar_summary: Combine story sequencing (then/after that) with work update phrases (I'm working on..., next...).
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

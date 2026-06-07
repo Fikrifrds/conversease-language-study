@@ -1,0 +1,21 @@
+phrases:
+- phrase: The direction I'd like to set is ...
+  meaning_id: Arah yang mau aku set adalah ...
+  usage_note: Set direction.
+  common_mistake: Don't set multiple priorities at once.
+- phrase: What options do you see right now?
+  meaning_id: Opsi apa yang kamu lihat sekarang?
+  usage_note: Coach with questions.
+  common_mistake: Don't take over; ask options.
+- phrase: One thing I'd suggest is leading with the decision.
+  meaning_id: 'Satu yang aku sarankan: mulai dengan keputusan.'
+  usage_note: Actionable feedback.
+  common_mistake: Don't list many items; start with one.
+- phrase: Given our constraints, I'd recommend a phased rollout.
+  meaning_id: Dengan constraint kita, aku rekomend rollout bertahap.
+  usage_note: Recommendation tied to constraints.
+  common_mistake: Don't recommend without constraints.
+- phrase: Can we agree on scope today and review metrics weekly?
+  meaning_id: Kita sepakat scope hari ini dan review metrik tiap minggu?
+  usage_note: Confirm agreement + cadence.
+  common_mistake: Don't end without agreement.

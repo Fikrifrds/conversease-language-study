@@ -1,0 +1,25 @@
+lesson_key: lesson-02-explaining-a-delay
+slug: explaining-a-delay
+title: Explaining a Delay
+status: published
+estimated_minutes: 12
+conversation_situation: explaining_travel_delay
+conversation_goal: Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.
+grammar_summary: Use I'm running a bit late / ... is delayed / I'll be there in ... to explain delays clearly.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

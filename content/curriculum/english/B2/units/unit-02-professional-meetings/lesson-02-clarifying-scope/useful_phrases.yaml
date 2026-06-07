@@ -1,0 +1,21 @@
+phrases:
+- phrase: Just to clarify, what exactly is in scope?
+  meaning_id: Biar jelas, yang termasuk scope itu apa?
+  usage_note: A polite way to ask for clarity.
+  common_mistake: Do not sound accusatory; use just to clarify to keep it neutral.
+- phrase: Does this include the admin dashboard changes?
+  meaning_id: Termasuk perubahan admin dashboard juga?
+  usage_note: A direct scope-inclusion question.
+  common_mistake: Do not drop does in a question.
+- phrase: That's out of scope for now.
+  meaning_id: Itu di luar scope dulu.
+  usage_note: A clear out-of-scope statement.
+  common_mistake: Do not say "out from scope"; use out of scope.
+- phrase: Got it. So we focus on the core feature only?
+  meaning_id: Oke. Jadi kita fokus fitur utama saja?
+  usage_note: A confirmation question.
+  common_mistake: Do not confirm vaguely; repeat the key scope clearly.
+- phrase: I'll update the ticket list.
+  meaning_id: Aku akan update daftar ticket.
+  usage_note: A practical next step.
+  common_mistake: Do not say "I will updating"; use I'll update.

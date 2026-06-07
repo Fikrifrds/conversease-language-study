@@ -1,0 +1,25 @@
+questions:
+  - key: meaning_out_of_stock
+    type: multiple_choice
+    prompt: What does "out of stock" mean?
+    options:
+      - Stoknya habis
+      - Harganya murah
+      - Warnanya hitam
+    correct_answer: Stoknya habis
+  - key: availability_question
+    type: multiple_choice
+    prompt: Which question asks about availability?
+    options:
+      - Do you have it?
+      - How long will it take?
+      - Which platform?
+    correct_answer: Do you have it?
+  - key: looking_for
+    type: multiple_choice
+    prompt: Which sentence explains what you want?
+    options:
+      - I'm looking for a phone charger.
+      - I like phone charger.
+      - I'm phone charger.
+    correct_answer: I'm looking for a phone charger.

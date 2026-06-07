@@ -1,0 +1,21 @@
+phrases:
+- phrase: I live in a quiet neighborhood. It's known for food stalls.
+  meaning_id: Aku tinggal di lingkungan yang tenang. Terkenal dengan warung makan.
+  usage_note: Short community description.
+  common_mistake: Avoid long details; keep it to 1-2 sentences.
+- phrase: People usually eat outside in the evening, especially on weekends.
+  meaning_id: Orang biasanya makan di luar sore/malam, apalagi weekend.
+  usage_note: Habit + frequency detail.
+  common_mistake: Don't list too many habits; one is enough.
+- phrase: What is it like in your country during big holidays?
+  meaning_id: Suasananya gimana di negara kamu waktu libur besar?
+  usage_note: A respectful culture question.
+  common_mistake: Do not shorten it to "What like"; keep the full question.
+- phrase: It's busy, but it's also meaningful.
+  meaning_id: Ramai, tapi juga bermakna.
+  usage_note: Balanced description.
+  common_mistake: Keep a positive tone.
+- phrase: I'm not used to that, but it sounds nice.
+  meaning_id: Aku nggak terbiasa, tapi kedengarannya bagus.
+  usage_note: Polite difference response.
+  common_mistake: Do not say "That's wrong"; be polite.

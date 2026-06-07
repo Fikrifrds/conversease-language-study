@@ -1,0 +1,21 @@
+phrases:
+- phrase: We could roll back the update.
+  meaning_id: Kita bisa rollback update-nya.
+  usage_note: Could is a polite suggestion.
+  common_mistake: Do not say "We can rollback" if you want a softer suggestion; use could.
+- phrase: I suggest we roll it back.
+  meaning_id: Aku saranin kita rollback.
+  usage_note: I suggest is common in meetings.
+  common_mistake: Do not say "I suggestion".
+- phrase: Because rollback is quick.
+  meaning_id: Karena rollback itu cepat.
+  usage_note: Give one clear reason.
+  common_mistake: Avoid too many reasons in one sentence; keep it simple.
+- phrase: We should add a quick test.
+  meaning_id: Kita harus tambah quick test.
+  usage_note: Should suggests the best next action.
+  common_mistake: Do not say "We must" if you want polite suggestions; should is softer.
+- phrase: So it doesn't happen again.
+  meaning_id: Supaya nggak kejadian lagi.
+  usage_note: So shows purpose/result.
+  common_mistake: Do not say "so not happen"; include it.

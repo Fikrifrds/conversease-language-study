@@ -1,0 +1,25 @@
+questions:
+- key: meaning_recommend
+  type: multiple_choice
+  prompt: What does "recommend" mean?
+  options:
+  - merekomendasikan
+  - menolak
+  - menyapa
+  correct_answer: merekomendasikan
+- key: because_reason
+  type: multiple_choice
+  prompt: Choose the best reason sentence.
+  options:
+  - Because the coffee is good.
+  - Because good coffee.
+  - Because is good.
+  correct_answer: Because the coffee is good.
+- key: availability_sentence
+  type: multiple_choice
+  prompt: Which sentence checks availability?
+  options:
+  - Are you free on Saturday?
+  - Do you like Saturday?
+  - Where is Saturday?
+  correct_answer: Are you free on Saturday?

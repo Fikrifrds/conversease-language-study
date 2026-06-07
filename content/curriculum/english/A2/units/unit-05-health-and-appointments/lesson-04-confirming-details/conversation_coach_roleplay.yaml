@@ -1,0 +1,43 @@
+scenario_key: a2_health_confirm_details
+mode: lesson_practice_coach
+level_code: A2
+opening_line: Okay, you're booked for tomorrow at 3:30 p.m.
+learner_goal: Confirm the appointment details and provide your name clearly.
+max_turns: 10
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: Okay, you're booked for tomorrow at 3:30 p.m.
+  hint: Konfirmasi jamnya.
+  sample_answer: 'Let me confirm the time: 3:30 p.m., right?'
+  focus: Confirm the time
+  expected_keywords:
+  - confirm
+  - '3:30'
+  - right
+- coach: Yes, that's right.
+  hint: Sebutkan nama dan eja.
+  sample_answer: My name is Mina Park. P-A-R-K.
+  focus: Give name and spelling
+  expected_keywords:
+  - my name is
+  - p-a-r-k
+- coach: Thank you. Do you have a phone number?
+  hint: Berikan nomor telepon.
+  sample_answer: Yes. It's 0812-345-678.
+  focus: Provide phone number
+  expected_keywords:
+  - it's
+  - 0812
+target_phrases:
+- Let me confirm the time.
+- My name is Mina Park.
+- P-A-R-K.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

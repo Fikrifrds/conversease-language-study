@@ -1,0 +1,21 @@
+phrases:
+- phrase: I'd like to bring up the timeline for the next release.
+  meaning_id: Aku mau bahas timeline untuk release berikutnya.
+  usage_note: A professional way to open a topic.
+  common_mistake: Do not say "I want bring up" in a meeting; use I'd like to.
+- phrase: The main point is we need to confirm the scope today.
+  meaning_id: Poin utamanya kita perlu konfirmasi scope hari ini.
+  usage_note: A clear main point sentence.
+  common_mistake: Do not say "The main point we need"; include is.
+- phrase: Because the design handoff depends on it.
+  meaning_id: Karena handoff design tergantung itu.
+  usage_note: A clear reason sentence.
+  common_mistake: Do not say "depends to"; use depends on.
+- phrase: I'd like to hear your thoughts.
+  meaning_id: Aku pengen denger pendapat kamu/kalian.
+  usage_note: Invite input politely.
+  common_mistake: Do not say "I want your thought"; use thoughts (plural).
+- phrase: Let's hear from everyone.
+  meaning_id: Yuk denger dari semua dulu.
+  usage_note: A neutral facilitator phrase.
+  common_mistake: Do not say "Let's to hear"; use let's hear.

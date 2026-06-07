@@ -1,0 +1,21 @@
+phrases:
+- phrase: On balance, I support it, but I'd adjust the scope to reduce risk.
+  meaning_id: Secara keseluruhan aku dukung, tapi scope-nya perlu disesuaikan biar risikonya turun.
+  usage_note: A nuanced position statement that includes a condition.
+  common_mistake: Do not sound absolute; keep it balanced and specific.
+- phrase: To be precise, I'd keep the core workflow and postpone optional add-ons.
+  meaning_id: Biar spesifik, aku pertahankan workflow inti dan tunda add-on opsional.
+  usage_note: Precision language for scope decisions.
+  common_mistake: Do not stay vague; specify what stays and what moves.
+- phrase: What I can commit to is a pilot next week.
+  meaning_id: 'Yang bisa aku commit: pilot minggu depan.'
+  usage_note: Expectation management without overpromising.
+  common_mistake: Do not promise a full delivery if it is uncertain.
+- phrase: 'Next steps are: I''ll share a one-page summary today, and we''ll align tomorrow.'
+  meaning_id: 'Next steps-nya: aku share ringkasan satu halaman hari ini, lalu kita align besok.'
+  usage_note: Clear next steps with time anchors.
+  common_mistake: Do not skip ownership; say who does what by when.
+- phrase: The key trade-off is speed versus confidence in the metrics.
+  meaning_id: 'Trade-off utamanya: cepat versus yakin dengan metrik.'
+  usage_note: Name trade-offs explicitly and calmly.
+  common_mistake: Do not list too many trade-offs; start with the key one.

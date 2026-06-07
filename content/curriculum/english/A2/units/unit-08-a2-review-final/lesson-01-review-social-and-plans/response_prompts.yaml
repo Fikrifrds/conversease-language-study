@@ -1,0 +1,16 @@
+prompts:
+- prompt: 'Ask: How have you been?'
+  target_response: How have you been?
+  acceptable_variations:
+  - How have you been?
+  - How have you been lately?
+- prompt: 'Invite: Do you want to grab coffee this weekend?'
+  target_response: Do you want to grab coffee this weekend?
+  acceptable_variations:
+  - Do you want to grab coffee this weekend?
+  - Do you want to get coffee this weekend?
+- prompt: 'Ask availability: Are you free on Saturday afternoon?'
+  target_response: Are you free on Saturday afternoon?
+  acceptable_variations:
+  - Are you free on Saturday afternoon?
+  - Are you free on Saturday?

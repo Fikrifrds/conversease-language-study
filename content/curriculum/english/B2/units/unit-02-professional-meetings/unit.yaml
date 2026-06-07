@@ -1,0 +1,11 @@
+unit_key: unit-02-professional-meetings
+level_code: B2
+title: Professional Meetings
+main_conversation_outcome: Participate actively and professionally in meetings.
+status: in_production
+lessons:
+  - lesson-01-opening-a-meeting-point
+  - lesson-02-clarifying-scope
+  - lesson-03-giving-constructive-feedback
+  - lesson-04-summarizing-decisions
+  - lesson-05-meeting-participation-mission

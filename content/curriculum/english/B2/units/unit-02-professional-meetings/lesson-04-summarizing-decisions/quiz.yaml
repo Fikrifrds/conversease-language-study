@@ -1,0 +1,25 @@
+questions:
+- key: to_summarize_use
+  type: multiple_choice
+  prompt: Which phrase starts a meeting summary?
+  options:
+  - To summarize, ...
+  - By the way, ...
+  - Anyway, ...
+  correct_answer: To summarize, ...
+- key: action_items_meaning
+  type: multiple_choice
+  prompt: What are "action items"?
+  options:
+  - tugas/aksi yang harus dilakukan
+  - topik lucu
+  - alat tulis
+  correct_answer: tugas/aksi yang harus dilakukan
+- key: owner_importance
+  type: multiple_choice
+  prompt: Why assign owners for action items?
+  options:
+  - So it's clear who does what
+  - To make it longer
+  - To confuse people
+  correct_answer: So it's clear who does what

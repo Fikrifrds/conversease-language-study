@@ -1,0 +1,43 @@
+scenario_key: b2_present_answer_questions
+mode: lesson_practice_coach
+level_code: B2
+opening_line: I have some questions about your idea.
+learner_goal: Answer questions clearly and professionally, including uncertainty and follow-up.
+max_turns: 12
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: How much effort will this take?
+  hint: That's a good question. As far as I know...
+  sample_answer: That's a good question. As far as I know, the first version takes about one day.
+  focus: Answer with confidence level
+  expected_keywords:
+  - good question
+  - as far as I know
+- coach: What about maintenance?
+  hint: I'm not sure yet, but I can follow up...
+  sample_answer: I'm not sure yet, but I can follow up with an estimate by tomorrow.
+  focus: Uncertainty + follow up
+  expected_keywords:
+  - not sure
+  - follow up
+- coach: Who will own it?
+  hint: I suggest we assign...
+  sample_answer: I suggest we assign one owner per quarter to keep it updated.
+  focus: Ownership answer
+  expected_keywords:
+  - suggest
+  - assign
+  - owner
+target_phrases:
+- That's a good question.
+- I'm not sure yet, but ...
+- I suggest we ...
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  grammar:
+    minimum_score: 68

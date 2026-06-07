@@ -1,0 +1,25 @@
+questions:
+- key: concern_phrase
+  type: multiple_choice
+  prompt: Which phrase acknowledges a concern politely?
+  options:
+  - I understand the concern.
+  - That's wrong.
+  - No.
+  correct_answer: I understand the concern.
+- key: clarify_phrase_client
+  type: multiple_choice
+  prompt: Which phrase asks for clarification politely?
+  options:
+  - Could you clarify ...?
+  - Explain now!
+  - Why are you scared?
+  correct_answer: Could you clarify ...?
+- key: reduce_risk
+  type: multiple_choice
+  prompt: Which phrase introduces mitigation?
+  options:
+  - To reduce the risk, we can ...
+  - To reduce, we angry ...
+  - To random, we ...
+  correct_answer: To reduce the risk, we can ...

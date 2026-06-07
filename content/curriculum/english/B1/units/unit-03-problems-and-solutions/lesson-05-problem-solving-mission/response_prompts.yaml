@@ -1,0 +1,16 @@
+prompts:
+- prompt: Describe the problem.
+  target_response: There's a problem with the login page. Users can't sign in.
+  acceptable_variations:
+  - There's a problem with the login page. Users can't sign in.
+  - There's a problem with the app. Users can't sign in.
+- prompt: Suggest a solution with because.
+  target_response: We could roll back now because it's quick.
+  acceptable_variations:
+  - We could roll back now because it's quick.
+  - We could roll back now because it's low risk.
+- prompt: Respond to a concern and decide next steps.
+  target_response: It might, so let's roll back and then test the key flows.
+  acceptable_variations:
+  - It might, so let's roll back and then test the key flows.
+  - It might, so let's roll back and test quickly.

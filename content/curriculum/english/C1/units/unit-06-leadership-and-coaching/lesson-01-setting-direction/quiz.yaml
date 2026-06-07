@@ -1,0 +1,25 @@
+questions:
+- key: direction_phrase
+  type: multiple_choice
+  prompt: Which phrase sets direction clearly?
+  options:
+  - The direction I'd like to set is ...
+  - Direction is good.
+  - No direction.
+  correct_answer: The direction I'd like to set is ...
+- key: own_phrase
+  type: multiple_choice
+  prompt: Which phrase assigns ownership?
+  options:
+  - I'd like you to own ...
+  - You do it.
+  - Whatever.
+  correct_answer: I'd like you to own ...
+- key: timeboxed_meaning
+  type: multiple_choice
+  prompt: What does "time-boxed" mean?
+  options:
+  - dibatasi waktu
+  - tanpa batas
+  - lebih mahal
+  correct_answer: dibatasi waktu

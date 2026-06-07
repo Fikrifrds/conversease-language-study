@@ -1,0 +1,16 @@
+prompts:
+- prompt: Open a topic politely.
+  target_response: I'd like to bring up the timeline for the next release.
+  acceptable_variations:
+  - I'd like to bring up the timeline for the next release.
+  - I'd like to bring up one concern about the schedule.
+- prompt: State the main point.
+  target_response: The main point is we need to confirm the scope today.
+  acceptable_variations:
+  - The main point is we need to confirm the scope today.
+  - The main point is we need to decide today.
+- prompt: Invite input.
+  target_response: I'd like to hear your thoughts.
+  acceptable_variations:
+  - I'd like to hear your thoughts.
+  - What are your thoughts on this?

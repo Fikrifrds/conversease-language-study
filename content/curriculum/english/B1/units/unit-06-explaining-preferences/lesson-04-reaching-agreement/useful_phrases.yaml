@@ -1,0 +1,21 @@
+phrases:
+- phrase: How about we go with the cheaper one?
+  meaning_id: Gimana kalau kita pilih yang lebih murah?
+  usage_note: A polite suggestion structure.
+  common_mistake: Do not say "How about we goes"; use go.
+- phrase: I'm okay with that.
+  meaning_id: Aku oke dengan itu.
+  usage_note: A polite acceptance phrase.
+  common_mistake: Do not say "I okay"; include am.
+- phrase: That works for me.
+  meaning_id: Oke buat aku.
+  usage_note: A natural agreement phrase.
+  common_mistake: Do not say "That work for me"; add -s.
+- phrase: So we agree on Noodle House at 6:30?
+  meaning_id: Jadi kita sepakat Noodle House jam 6:30?
+  usage_note: Confirm agreement clearly.
+  common_mistake: Do not forget the time if it matters; confirm it clearly.
+- phrase: Let's go early.
+  meaning_id: Yuk berangkat lebih awal.
+  usage_note: A simple solution to a concern.
+  common_mistake: Do not say "Let's to go".

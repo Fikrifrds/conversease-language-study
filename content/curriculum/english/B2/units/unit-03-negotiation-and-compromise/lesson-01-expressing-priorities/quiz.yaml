@@ -1,0 +1,25 @@
+questions:
+- key: priority_phrase
+  type: multiple_choice
+  prompt: Which sentence states a top priority?
+  options:
+  - My top priority is ...
+  - My top priority ...
+  - Top priority I ...
+  correct_answer: My top priority is ...
+- key: matters_most
+  type: multiple_choice
+  prompt: Choose the correct sentence.
+  options:
+  - What matters most is quality.
+  - What matter most is quality.
+  - What matters most quality.
+  correct_answer: What matters most is quality.
+- key: deadline_meaning
+  type: multiple_choice
+  prompt: What does "deadline" mean?
+  options:
+  - batas waktu
+  - libur
+  - alasan
+  correct_answer: batas waktu

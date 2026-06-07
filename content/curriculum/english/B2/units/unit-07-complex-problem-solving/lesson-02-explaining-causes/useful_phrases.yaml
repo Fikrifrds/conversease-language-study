@@ -1,0 +1,21 @@
+phrases:
+- phrase: One possible cause is the new checkout design.
+  meaning_id: Salah satu kemungkinan penyebabnya adalah desain checkout yang baru.
+  usage_note: Use possible cause to sound careful, not absolute.
+  common_mistake: Do not say "the cause is"; use one possible cause is.
+- phrase: Based on the data, drop-offs increased after the redesign.
+  meaning_id: Berdasarkan data, drop-off naik setelah redesign.
+  usage_note: Evidence language for reasoning.
+  common_mistake: Do not say based on datas; data is uncountable.
+- phrase: It might be due to slower load times.
+  meaning_id: Bisa juga karena load time yang lebih lambat.
+  usage_note: A second hypothesis with might be due to.
+  common_mistake: Do not say "due slow"; use due to.
+- phrase: How can we confirm?
+  meaning_id: Gimana cara kita konfirmasi?
+  usage_note: Move from hypothesis to validation.
+  common_mistake: Do not stop at opinions; propose a way to confirm.
+- phrase: Let's run a small A/B test.
+  meaning_id: Kita jalankan A/B test kecil.
+  usage_note: A practical validation step.
+  common_mistake: Do not propose a huge change without validation.
