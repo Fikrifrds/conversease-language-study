@@ -262,6 +262,55 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_admin_bypasses_pro_and_prerequisite_gates(self):
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        headers = {"Authorization": f"Bearer {create_access_token('admin-1')}"}
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="admin-1",
+                        name="Admin",
+                        email="admin@example.local",
+                        password_hash="hashed",
+                        role="admin",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            # Admin (not Pro, no completed lessons) can still start a C1 lesson.
+            started = client.post(
+                "/api/lessons/aligning-stakeholders/progress/start", headers=headers, json={}
+            )
+            self.assertEqual(started.status_code, 200)
+
+            # Every course reports unlocked + accessible for an admin.
+            courses = client.get("/api/courses", headers=headers).json()["data"]
+            self.assertTrue(all(c["unlocked"] and c["accessible"] for c in courses))
+        finally:
+            app.dependency_overrides.clear()
+
     def test_get_a1_level_test_returns_published_test(self):
         client = TestClient(create_app())
 

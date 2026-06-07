@@ -12,3 +12,7 @@ class User:
     created_at: datetime
     updated_at: datetime
     role: str = "student"
+
+    @property
+    def is_admin(self) -> bool:
+        return self.role == "admin"

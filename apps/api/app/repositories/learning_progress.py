@@ -193,9 +193,12 @@ class LearningProgressRepository:
         completed = self.completed_lesson_slugs(user_id)
         return all(s in completed for s in slugs)
 
-    def level_unlock_map(self, user_id: str) -> dict[str, bool]:
+    def level_unlock_map(self, user_id: str, *, is_admin: bool = False) -> dict[str, bool]:
         """Per-level unlock state. A level is unlocked if it is the first level,
-        or every published lesson in the previous level is completed."""
+        or every published lesson in the previous level is completed. Admins get
+        every level unlocked so they can QA the whole curriculum."""
+        if is_admin:
+            return {course["level_code"]: True for course in all_courses()}
         completed = self.completed_lesson_slugs(user_id)
         unlocked: dict[str, bool] = {}
         prev_complete = True  # first level is always unlocked
