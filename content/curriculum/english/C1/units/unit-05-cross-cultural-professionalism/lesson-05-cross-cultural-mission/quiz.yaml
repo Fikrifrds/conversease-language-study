@@ -4,7 +4,7 @@ questions:
   prompt: Which phrase helps you interpret indirect feedback?
   options:
   - My sense is that ...
-  - They hate us.
+  - They are always direct.
   - No context.
   correct_answer: My sense is that ...
 - key: tactful_question
