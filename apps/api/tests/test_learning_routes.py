@@ -190,6 +190,78 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_pro_gating_blocks_free_user_on_a2_lesson(self):
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        headers = {"Authorization": f"Bearer {create_access_token('user-123')}"}
+        a2_slug = "starting-small-talk"
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="user-123",
+                        name="QA",
+                        email="qa-pro@example.local",
+                        password_hash="hashed",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            # Free user: A1 lesson allowed, A2 lesson blocked with 403.
+            a1 = client.post(
+                "/api/lessons/saying-hello-and-goodbye/progress/start", headers=headers, json={}
+            )
+            self.assertEqual(a1.status_code, 200)
+            blocked = client.post(f"/api/lessons/{a2_slug}/progress/start", headers=headers, json={})
+            self.assertEqual(blocked.status_code, 403)
+
+            # /courses marks A2 as requiring Pro and not accessible for a free user.
+            courses = client.get("/api/courses", headers=headers).json()["data"]
+            a2_course = next(c for c in courses if c["level_code"] == "A2")
+            self.assertTrue(a2_course["requires_pro"])
+            self.assertFalse(a2_course["accessible"])
+
+            # Upgrade the user to Pro -> A2 lesson now allowed.
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserSubscriptionModel(
+                        id="sub-1",
+                        user_id="user-123",
+                        plan_key="pro_1_month",
+                        status="active",
+                        starts_at=now,
+                        expires_at=None,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+            allowed = client.post(f"/api/lessons/{a2_slug}/progress/start", headers=headers, json={})
+            self.assertEqual(allowed.status_code, 200)
+        finally:
+            app.dependency_overrides.clear()
+
     def test_get_a1_level_test_returns_published_test(self):
         client = TestClient(create_app())
 

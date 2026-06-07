@@ -421,6 +421,8 @@ export type CourseSummary = {
   title: string;
   unitCount: number;
   unlocked: boolean;
+  requiresPro: boolean;
+  accessible: boolean;
 };
 
 export async function listCourses(): Promise<CourseSummary[]> {
@@ -432,6 +434,8 @@ export async function listCourses(): Promise<CourseSummary[]> {
         course_title: string;
         units: unknown[];
         unlocked: boolean;
+        requires_pro: boolean;
+        accessible: boolean;
       }>
     >
   >("/courses");
@@ -441,7 +445,9 @@ export async function listCourses(): Promise<CourseSummary[]> {
     levelCode: course.level_code,
     title: course.course_title,
     unitCount: course.units.length,
-    unlocked: course.unlocked
+    unlocked: course.unlocked,
+    requiresPro: course.requires_pro,
+    accessible: course.accessible
   }));
 }
 

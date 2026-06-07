@@ -129,6 +129,10 @@ class BillingRepository:
             .limit(1)
         ).scalar_one_or_none()
 
+    def is_pro(self, user_id: str, now: Optional[datetime] = None) -> bool:
+        subscription = self.current_subscription(user_id, now=now)
+        return bool(subscription) and subscription.plan_key != "free"
+
     def access_summary(self, user_id: str) -> dict:
         self.ensure_free_access(user_id)
         now = datetime.utcnow()

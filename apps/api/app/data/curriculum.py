@@ -14,6 +14,12 @@ LEVEL_CODE = "A1"
 LEVEL_NAME = "A1 - Start Simple Conversations"
 LANGUAGE_CODE = "en"
 SUPPORTED_LEVEL_CODES = ("A1", "A2", "B1", "B2", "C1")
+# Levels free to all users; everything else requires a Pro subscription.
+FREE_LEVEL_CODES = ("A1",)
+
+
+def requires_pro(level_code: str) -> bool:
+    return level_code.upper() not in FREE_LEVEL_CODES
 
 SECTION_LABELS = {
     "conversation_goal": "Conversation Goal",

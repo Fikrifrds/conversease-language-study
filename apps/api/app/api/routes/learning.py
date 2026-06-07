@@ -15,7 +15,9 @@ from app.data.curriculum import (
     public_course_payload,
     public_final_evaluation_payload,
     public_lesson_payload,
+    requires_pro,
 )
+from app.repositories.billing import BillingRepository
 from app.db.models import LessonProgressModel, UserOnboardingProfileModel
 from app.db.session import get_db
 from app.domain.users import User
@@ -111,15 +113,31 @@ async def list_levels() -> dict:
     }
 
 
+def course_access_payload(course: dict, *, unlocked: bool, is_pro: bool) -> dict:
+    needs_pro = requires_pro(course["level_code"])
+    return {
+        **public_course_payload(course),
+        "unlocked": unlocked,
+        "requires_pro": needs_pro,
+        # Fully usable only when the prerequisite level is done AND the user has
+        # the right tier (A1 is free, A2+ require Pro).
+        "accessible": unlocked and (not needs_pro or is_pro),
+    }
+
+
 @router.get("/courses")
 async def list_courses(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
+    billing = BillingRepository(db)
+    is_pro = billing.is_pro(current_user.id)
     unlock = LearningProgressRepository(db).level_unlock_map(current_user.id)
     return {
         "data": [
-            {**public_course_payload(course), "unlocked": unlock.get(course["level_code"], False)}
+            course_access_payload(
+                course, unlocked=unlock.get(course["level_code"], False), is_pro=is_pro
+            )
             for course in all_courses()
         ]
     }
@@ -134,12 +152,12 @@ async def get_course(
     course = get_course_by_slug(slug)
     if course is None:
         raise HTTPException(status_code=404, detail="Course not found")
+    is_pro = BillingRepository(db).is_pro(current_user.id)
     unlock = LearningProgressRepository(db).level_unlock_map(current_user.id)
     return {
-        "data": {
-            **public_course_payload(course),
-            "unlocked": unlock.get(course["level_code"], False),
-        }
+        "data": course_access_payload(
+            course, unlocked=unlock.get(course["level_code"], False), is_pro=is_pro
+        )
     }
 
 
@@ -161,11 +179,13 @@ async def get_lesson(slug: str) -> dict:
 @router.get("/lessons/{slug}/audio")
 async def get_lesson_audio(
     slug: str,
-    _: User = Depends(get_current_user),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
 ) -> dict:
     lesson = get_lesson_or_none(slug)
     if lesson is None:
         raise HTTPException(status_code=404, detail="Lesson not found")
+    ensure_lesson_access(db, current_user.id, lesson)
 
     lesson_dir = Path(lesson["content_files"]["lesson"]).parent
     return {"data": lesson_audio_asset(lesson_dir)}
@@ -237,12 +257,23 @@ async def get_my_lesson_progress(
     return {"data": lesson_progress_payload(progress, lesson) if progress else None}
 
 
+def ensure_lesson_access(db: Session, user_id: str, lesson: Optional[dict]) -> None:
+    """Block Pro-tier lessons for non-Pro users (A1 is free)."""
+    level_code = (lesson or {}).get("level_code", "")
+    if level_code and requires_pro(level_code) and not BillingRepository(db).is_pro(user_id):
+        raise HTTPException(
+            status_code=403,
+            detail="Pro subscription required for this level",
+        )
+
+
 @router.post("/lessons/{slug}/progress/start")
 async def start_my_lesson_progress(
     slug: str,
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
+    ensure_lesson_access(db, current_user.id, get_lesson_or_none(slug))
     try:
         progress = LearningProgressRepository(db).start_lesson(
             user_id=current_user.id,
@@ -262,6 +293,7 @@ async def complete_my_lesson_progress(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
+    ensure_lesson_access(db, current_user.id, get_lesson_or_none(slug))
     repository = LearningProgressRepository(db)
     try:
         progress = repository.complete_lesson(
