@@ -27,6 +27,7 @@ from app.repositories.level_test_attempts import (
     score_attempt,
 )
 from app.repositories.learning_progress import LearningProgressRepository, get_lesson_or_none
+from app.services.learning_email import LearningEmailService
 
 router = APIRouter()
 
@@ -261,8 +262,9 @@ async def complete_my_lesson_progress(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
+    repository = LearningProgressRepository(db)
     try:
-        progress = LearningProgressRepository(db).complete_lesson(
+        progress = repository.complete_lesson(
             user_id=current_user.id,
             lesson_slug=slug,
             completed_sections=payload.completed_sections,
@@ -271,7 +273,44 @@ async def complete_my_lesson_progress(
         raise HTTPException(status_code=404, detail="Lesson not found") from exc
 
     lesson = get_lesson_or_none(slug)
+    await maybe_send_level_completed_email(
+        repository, current_user, level_code=(lesson or {}).get("level_code")
+    )
     return {"data": lesson_progress_payload(progress, lesson)}
+
+
+async def maybe_send_level_completed_email(
+    repository: LearningProgressRepository,
+    user: User,
+    *,
+    level_code: Optional[str],
+) -> None:
+    """Send a level-completed email when the level just became 100% complete.
+
+    The email service dedupes per user+level (idempotency_key), so re-completing
+    a lesson in an already-finished level will not re-send. Email failures must
+    never break lesson completion.
+    """
+    if not level_code or not repository.is_level_complete(user.id, level_code):
+        return
+    courses = all_courses()
+    levels = [course["level_code"] for course in courses]
+    try:
+        index = levels.index(level_code)
+    except ValueError:
+        return
+    completed_course = courses[index]
+    next_course = courses[index + 1] if index + 1 < len(courses) else None
+    try:
+        await LearningEmailService().send_level_completed_email(
+            user,
+            completed_level=level_code,
+            completed_level_title=completed_course["course_title"],
+            next_level=next_course["level_code"] if next_course else None,
+            next_level_title=next_course["course_title"] if next_course else None,
+        )
+    except Exception:  # never break lesson completion on email failure
+        pass
 
 
 @router.get("/me/level-test-attempts")

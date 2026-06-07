@@ -402,6 +402,10 @@ def default_email_template_variables(settings: Any) -> dict[str, str]:
         "amount": "Rp49.492",
         "order_id": "order-test123",
         "admin_notes": "Nominal transfer sudah cocok.",
+        "completed_level": "A1",
+        "completed_level_title": "Start Simple Conversations",
+        "next_level_message": "Level A2 sekarang terbuka.",
+        "courses_url": f"{public_app_url}/courses",
     }
 
 

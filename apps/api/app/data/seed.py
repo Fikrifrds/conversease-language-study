@@ -146,4 +146,22 @@ EMAIL_TEMPLATES = [
         cta_label="Top Up Kuota Coach",
         cta_url="{{ billing_url }}",
     ),
+    EmailTemplate(
+        template_key="level_completed",
+        category=EmailCategory.LEARNING,
+        subject="Selamat! Kamu menyelesaikan level {{ completed_level }} 🎉",
+        preheader="Level berikutnya sekarang terbuka.",
+        html_body=(
+            '<p style="margin: 0 0 14px;">Hi {{ name }},</p>'
+            '<p style="margin: 0 0 14px;">Selamat! Kamu sudah menyelesaikan semua lesson di '
+            "level {{ completed_level }} - {{ completed_level_title }}.</p>"
+            '<p style="margin: 0 0 18px;">{{ next_level_message }}</p>'
+        ),
+        text_body=(
+            "Hi {{ name }}, selamat! Kamu menyelesaikan level {{ completed_level }}. "
+            "{{ next_level_message }} Lanjutkan: {{ courses_url }}"
+        ),
+        cta_label="Lanjut Belajar",
+        cta_url="{{ courses_url }}",
+    ),
 ]

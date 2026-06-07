@@ -129,6 +129,67 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_completing_last_level_lesson_sends_level_up_email(self):
+        from unittest.mock import AsyncMock
+
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        headers = {"Authorization": f"Bearer {create_access_token('user-123')}"}
+
+        from app.data.curriculum import published_lessons
+
+        a1_slugs = [lesson["slug"] for lesson in published_lessons("A1")]
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="user-123",
+                        name="QA",
+                        email="qa-levelup@example.local",
+                        password_hash="hashed",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            send_mock = AsyncMock()
+            with patch(
+                "app.api.routes.learning.LearningEmailService.send_level_completed_email",
+                new=send_mock,
+            ):
+                # Complete all but the last A1 lesson: no email yet.
+                for slug in a1_slugs[:-1]:
+                    client.post(f"/api/lessons/{slug}/progress/complete", headers=headers, json={})
+                self.assertEqual(send_mock.await_count, 0)
+                # Completing the last one triggers exactly one level-up email.
+                client.post(
+                    f"/api/lessons/{a1_slugs[-1]}/progress/complete", headers=headers, json={}
+                )
+                self.assertEqual(send_mock.await_count, 1)
+                self.assertEqual(send_mock.await_args.kwargs["completed_level"], "A1")
+                self.assertEqual(send_mock.await_args.kwargs["next_level"], "A2")
+        finally:
+            app.dependency_overrides.clear()
+
     def test_get_a1_level_test_returns_published_test(self):
         client = TestClient(create_app())
 

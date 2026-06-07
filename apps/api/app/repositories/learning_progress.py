@@ -185,6 +185,14 @@ class LearningProgressRepository:
             .all()
         }
 
+    def is_level_complete(self, user_id: str, level_code: str) -> bool:
+        """True if every published lesson in the level is completed by the user."""
+        slugs = [lesson["slug"] for lesson in published_lessons(level_code)]
+        if not slugs:
+            return False
+        completed = self.completed_lesson_slugs(user_id)
+        return all(s in completed for s in slugs)
+
     def level_unlock_map(self, user_id: str) -> dict[str, bool]:
         """Per-level unlock state. A level is unlocked if it is the first level,
         or every published lesson in the previous level is completed."""
