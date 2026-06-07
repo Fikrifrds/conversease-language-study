@@ -115,8 +115,11 @@ function parseMarkdown(markdown: string): Block[] {
   return blocks;
 }
 
-export function SimpleMarkdown({ markdown }: { markdown: string }) {
+export function SimpleMarkdown({ markdown, dropLeadingHeading = false }: { markdown: string; dropLeadingHeading?: boolean }) {
   const blocks = parseMarkdown(markdown);
+  if (dropLeadingHeading && blocks[0]?.type === "heading") {
+    blocks.shift();
+  }
   return (
     <div className="space-y-3 text-ink/75">
       {blocks.map((block, index) => {

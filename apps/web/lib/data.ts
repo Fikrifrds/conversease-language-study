@@ -111,6 +111,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I am** or **I'm** for simple personal responses.\n\nExamples:\n\n- I'm good.\n- I'm Arif.\n- I'm from Indonesia.\n\nPattern:\n\n```txt\nI'm + adjective\nI'm + name\nI'm from + place\n```\n\nKeep the answer short and clear for A1 conversation.",
+      patterns: [
+        "I'm + adjective",
+        "I'm + name",
+        "I'm from + place",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. Good morning.\n2. How are you?\n3. I'm good, thank you.\n4. Nice to meet you.\n5. See you later.\n\n## Focus\n\n- Speak slowly.\n- Finish the final sound in \"meet\".\n- Keep the intonation friendly for \"How are you?\"",
       prompts: [
         "Good morning.",
@@ -152,6 +157,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use My name is + name for clear introductions. Use I'm + name for a shorter, more natural answer.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My name is ...** or **I'm ...** to say your name.\n\nExamples:\n\n- My name is Arif.\n- I'm Arif.\n- What is your name?\n\nPattern:\n\n```txt\nMy name is + name\nI'm + name\nWhat is your name?\n```\n\nFor A1 speaking, choose one clear answer and say it slowly.",
+      patterns: [
+        "My name is + name",
+        "I'm + name",
+        "What is your name?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. My name is Arif.\n2. I'm Arif.\n3. What is your name?\n4. Nice to meet you.\n5. Nice to meet you too.\n\n## Focus\n\n- Link \"name is\" smoothly.\n- Keep \"What is your name?\" as one clear question.\n- Do not rush the final word \"too\".",
       prompts: [
         "My name is ...",
@@ -195,6 +205,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use What's your + noun for simple questions: What's your name? What's your job?",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is ...?** or **What's ...?** to ask a simple question.\n\nExamples:\n\n- What is your name?\n- What's your name?\n- Can you repeat that?\n\nPattern:\n\n```txt\nWhat is + noun?\nCan you + verb?\n```\n\nUse \"Can you repeat that?\" when you need to hear the name again.",
+      patterns: [
+        "What is + noun?",
+        "Can you + verb?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. What's your name?\n2. Can you repeat that?\n3. My name is Raka.\n4. Is it Raka?\n5. Yes, that's right.\n\n## Focus\n\n- Say \"What's your\" smoothly.\n- Pause before spelling a name.\n- Keep \"Can you repeat that?\" polite and calm.",
       prompts: [
         "What's your name?",
@@ -236,6 +250,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm from ...** to say your country or city.\n\nExamples:\n\n- I'm from Indonesia.\n- I'm from Jakarta.\n- Where are you from?\n\nPattern:\n\n```txt\nI'm from + place\nWhere are you from?\n```\n\nUse a place name after \"from\". Keep your answer short.",
+      patterns: [
+        "I'm from + place",
+        "Where are you from?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. I'm from Indonesia.\n2. I'm from Jakarta.\n3. Where are you from?\n4. Nice to meet you.\n5. Nice to meet you too.\n\n## Focus\n\n- Link \"I'm from\" smoothly.\n- Stress the place name.\n- Raise your intonation slightly for \"Where are you from?\"",
       prompts: [
         "Where are you from?",
@@ -279,6 +297,13 @@ export const lessonCatalog = [
       ],
       grammar: "Keep A1 conversations short: greeting + name + origin + question back + closing.",
       grammarNotes: "# Grammar for Conversation\n\nUse short A1 patterns together to make one conversation.\n\nExamples:\n\n- My name is Lina.\n- I'm Adi.\n- I'm from Indonesia.\n- What is your name?\n- Where are you from?\n\nPatterns:\n\n```txt\nMy name is + name\nI'm + name\nI'm from + place\nWhat is your name?\nWhere are you from?\n```\n\nUse one idea per sentence. This keeps the conversation clear.",
+      patterns: [
+        "My name is + name",
+        "I'm + name",
+        "I'm from + place",
+        "What is your name?",
+        "Where are you from?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. Hi, my name is Lina.\n2. What is your name?\n3. I'm from Indonesia.\n4. Where are you from?\n5. Nice to meet you.\n6. See you later.\n\n## Focus\n\n- Pause after your greeting.\n- Say names clearly.\n- Keep questions friendly and not too fast.\n- Finish the closing phrase clearly.",
       prompts: [
         "Hi, good morning. My name is ...",
@@ -325,6 +350,9 @@ export const lessonCatalog = [
       ],
       grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How do you spell + it/that** to ask about spelling.\n\nExamples:\n\n- How do you spell it?\n- How do you spell that?\n- How do you spell your name?\n\nPattern:\n\n```txt\nHow do you spell + it / that / your name?\n```\n\nUse **It's spelled + letters** to answer.\n\nExample:\n\n- It's spelled D-I-M-A-S.\n\nWhen you answer, say each letter clearly and slowly.",
+      patterns: [
+        "How do you spell + it / that / your name?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. My name is Dimas.\n2. How do you spell it?\n3. It's spelled D-I-M-A-S.\n4. Can you repeat that, please?\n5. That's right.\n\n## Focus\n\n- Say each letter slowly when you spell.\n- Pause a little between letters.\n- Keep a friendly, clear tone.",
       prompts: [
         "What is your name?",
@@ -371,6 +399,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is your + noun?** to ask for contact information.\n\nExamples:\n\n- What is your phone number?\n- What is your email address?\n\nUse **It's + number** to answer.\n\nPattern:\n\n```txt\nWhat is your + phone number?\nIt's + phone number.\n```\n\nFor phone numbers, say each number clearly. Pause after small groups of numbers.",
+      patterns: [
+        "What is your + phone number?",
+        "It's + phone number.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What is your phone number?\n2. It's zero eight one two.\n3. Three four five six.\n4. Seven eight nine zero.\n5. Yes, that's correct.\n\n            ## Focus\n\n            - Say phone numbers in small groups.\n- Pause after four numbers.\n- Keep zero clear: zero, not slow or unclear.",
       prompts: [
         "What is your phone number?",
@@ -417,6 +449,9 @@ export const lessonCatalog = [
       ],
       grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is your email address?** to ask for an email.\n\nWhen saying an email address, use:\n\n- **at** for @\n- **dot** for .\n\nPattern:\n\n```txt\nIt's + name + at + domain + dot + com.\n```\n\nExample: It's ben dot rama at example dot com.",
+      patterns: [
+        "It's + name + at + domain + dot + com.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What is your email address?\n2. It's ben dot rama.\n3. At example dot com.\n4. Can you spell that, please?\n5. Yes, that's correct.\n\n            ## Focus\n\n            - Say \"at\" clearly before the domain.\n- Say \"dot\" before com.\n- Pause between the name and the domain.",
       prompts: [
         "What is your email address?",
@@ -463,6 +498,9 @@ export const lessonCatalog = [
       ],
       grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can you repeat that, please?** when you need to hear something again.\n\nUse **Did you say + information?** to check one detail.\n\nExamples:\n\n- Did you say two two five five?\n- Did you say Ben?\n- Did you say dot com?\n\nPattern:\n\n```txt\nDid you say + the detail?\n```",
+      patterns: [
+        "Did you say + the detail?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Sorry, can you repeat that, please?\n2. Did you say two two five five?\n3. Yes, that's right.\n4. Got it.\n5. Thank you.\n\n            ## Focus\n\n            - Use a polite rising tone for questions.\n- Say repeat clearly: re-PEAT.\n- Do not rush repeated numbers.",
       prompts: [
         "My phone number is zero eight one three, two two five five.",
@@ -517,6 +555,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
       grammarNotes: "# Grammar for Conversation\n\nUse short follow-up questions when the topic is clear.\n\nExamples:\n\n- And your phone number?\n- And your email address?\n\nUse **everything** to talk about all the information together.\n\nPattern:\n\n```txt\nIs everything correct?\nYes, everything is correct.\n```",
+      patterns: [
+        "Is everything correct?",
+        "Yes, everything is correct.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. I need your contact details.\n2. How do you spell your name?\n3. And your email address?\n4. Is everything correct?\n5. Yes, everything is correct.\n\n            ## Focus\n\n            - Stress the important words: name, phone, email.\n- Pause before spelling letters.\n- Say contact details as two clear words.",
       prompts: [
         "I need your contact details.",
@@ -564,6 +606,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What time is + event?** to ask about time.\n\nUse **at + time** to answer.\n\nExamples:\n\n- What time is the class?\n- It's at nine o'clock.\n- It's at seven in the evening.\n\nPattern:\n\n```txt\nWhat time is + the event?\nIt's at + time.\n```",
+      patterns: [
+        "What time is + the event?",
+        "It's at + time.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What time is the class?\n2. It's at nine o'clock.\n3. In the morning?\n4. Yes, in the morning.\n5. You're welcome.\n\n            ## Focus\n\n            - Say o'clock as one smooth word.\n- Pause before the time: at nine o'clock.\n- Use a rising tone for short questions.",
       prompts: [
         "The class starts soon.",
@@ -610,6 +656,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I + verb + at + time** for a simple routine.\n\nExamples:\n\n- I wake up at six.\n- I study English at seven.\n- I work at one.\n\nUse **after that** to continue the routine.\n\nPattern:\n\n```txt\nI + routine verb + at + time.\nAfter that, I + verb.\n```",
+      patterns: [
+        "I + routine verb + at + time.",
+        "After that, I + verb.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What do you do in the morning?\n2. I wake up at six.\n3. What do you do after that?\n4. I study English at seven.\n5. I work at one.\n\n            ## Focus\n\n            - Link wake up smoothly.\n- Keep at short and light.\n- Stress the action word: wake, study, work.",
       prompts: [
         "What do you do in the morning?",
@@ -656,6 +706,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
       grammarNotes: "# Grammar for Conversation\n\nUse **on + day** for schedules.\n\nExamples:\n\n- on Monday\n- on Wednesday\n- See you on Monday.\n\nUse **at + time** for the clock time.\n\nPattern:\n\n```txt\nIt's on + day.\nIt's at + time.\n```",
+      patterns: [
+        "It's on + day.",
+        "It's at + time.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. When is the English class?\n2. It's on Monday and Wednesday.\n3. What time?\n4. At seven in the evening.\n5. See you on Monday.\n\n            ## Focus\n\n            - Say Monday and Wednesday clearly.\n- Keep on short before a day.\n- Pause between day and time.",
       prompts: [
         "You want to know the schedule.",
@@ -702,6 +756,10 @@ export const lessonCatalog = [
       ],
       grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **When is + event?** to ask about timing.\n\nUse **Is it + adjective/place?** for yes/no questions.\n\nExamples:\n\n- When is the meeting?\n- Is it online?\n- Is that right?\n\nPattern:\n\n```txt\nWhen is + event?\nIs it + online / today / tomorrow?\n```",
+      patterns: [
+        "When is + event?",
+        "Is it + online / today / tomorrow?",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. When is the meeting?\n2. It's tomorrow at ten.\n3. Is it online?\n4. Is that right?\n5. Yes, that's right.\n\n            ## Focus\n\n            - Link Is it softly.\n- Stress tomorrow and ten.\n- Use a rising tone for yes/no questions.",
       prompts: [
         "There is a meeting.",
@@ -752,6 +810,10 @@ export const lessonCatalog = [
       ],
       grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
       grammarNotes: "# Grammar for Conversation\n\nCombine **on + day** and **at + time** in one sentence.\n\nExamples:\n\n- I study on Monday at seven.\n- The class is on Wednesday at seven.\n\nUse **What time do you + verb?** for routine time.\n\nPattern:\n\n```txt\nWhat time do you + verb?\nI + verb + on + day + at + time.\n```",
+      patterns: [
+        "What time do you + verb?",
+        "I + verb + on + day + at + time.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What time do you wake up?\n2. I wake up at six.\n3. When do you study English?\n4. I study on Monday and Wednesday at seven.\n5. Is the class online?\n\n            ## Focus\n\n            - Keep routine sentences short and clear.\n- Pause between days and time.\n- Stress the day and the time.",
       prompts: [
         "What time do you wake up?",
@@ -798,6 +860,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm a + role** to say what you do.\n\nExamples:\n\n- I'm a student.\n- I'm a teacher.\n- I'm an assistant.\n\nUse **I study + subject** to say what you study.\n\nPattern:\n\n```txt\nWhat do you do?\nI'm a + role.\nI study + subject.\n```",
+      patterns: [
+        "What do you do?",
+        "I'm a + role.",
+        "I study + subject.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What do you do?\n2. I'm a student.\n3. What do you study?\n4. I study design.\n5. I study online.\n\n            ## Focus\n\n            - Keep What do you do smooth and short.\n- Say student with two clear parts: stu-dent.\n- Stress the subject: design.",
       prompts: [
         "What do you do?",
@@ -842,6 +909,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you + verb?** for yes/no questions.\n\nExamples:\n\n- Do you work?\n- Do you study?\n- Do you work or study?\n\nUse **in + place** for a workplace.\n\nPattern:\n\n```txt\nDo you work or study?\nI work in + place.\nI'm a/an + job.\n```",
+      patterns: [
+        "Do you work or study?",
+        "I work in + place.",
+        "I'm a/an + job.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you work or study?\n2. I work in a small office.\n3. What do you do there?\n4. I'm an assistant.\n5. How about you?\n\n            ## Focus\n\n            - Link work or smoothly.\n- Say assistant with clear stress: as-SIS-tant.\n- Use a friendly rising tone for How about you?",
       prompts: [
         "You meet a new classmate.",
@@ -888,6 +960,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
       grammarNotes: "# Grammar for Conversation\n\nUse **like + noun/activity** to talk about preferences.\n\nExamples:\n\n- I like English.\n- I like speaking practice.\n- I like grammar.\n\nUse **Do you like + noun?** to ask.\n\nPattern:\n\n```txt\nDo you like + noun?\nYes, I like it.\nI like + activity.\n```",
+      patterns: [
+        "Do you like + noun?",
+        "Yes, I like it.",
+        "I like + activity.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you like English?\n2. Yes, I like it.\n3. What do you like?\n4. I like speaking practice.\n5. Speaking is my favorite.\n\n            ## Focus\n\n            - Keep like clear and short.\n- Stress the favorite activity.\n- Use a friendly tone for preference questions.",
       prompts: [
         "Do you like English?",
@@ -934,6 +1011,11 @@ export const lessonCatalog = [
       ],
       grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
       grammarNotes: "# Grammar for Conversation\n\nUse **can + base verb** for ability.\n\nExamples:\n\n- I can speak English.\n- I can write simple emails.\n- I can try.\n\nFor questions, use **Can you + base verb?**\n\nPattern:\n\n```txt\nCan you + verb?\nYes, I can.\nI can + verb.\n```",
+      patterns: [
+        "Can you + verb?",
+        "Yes, I can.",
+        "I can + verb.",
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Can you speak English?\n2. I can speak a little.\n3. Can you write simple emails?\n4. Yes, I can.\n5. Not yet, but I can try.\n\n            ## Focus\n\n            - Say can clearly in short answers.\n- Stress the action verb: speak, write, try.\n- Keep Not yet short and clear.",
       prompts: [
         "Can you speak English?",
@@ -984,6 +1066,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
       grammarNotes: "# Grammar for Conversation\n\nCombine simple A1 patterns in one conversation.\n\nUseful patterns:\n\n- I study + subject.\n- I work in + place.\n- I like + activity.\n- I can + verb.\n\nKeep each sentence short. Use **and** to connect two simple ideas only when both are clear.",
+      patterns: [
+      ],
       pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you work or study?\n2. I study English online.\n3. I work in a shop.\n4. I like speaking practice.\n5. I can introduce myself.\n\n            ## Focus\n\n            - Pause between work and study ideas.\n- Stress like and can to make meaning clear.\n- Keep introduce myself slow and clear.",
       prompts: [
         "Do you work or study?",
@@ -1029,6 +1113,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Where is + place? and answer with It is + location.",
       grammarNotes: "# Grammar for Conversation: Where is...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'Where is + place?'\n\n- Example: Where is the classroom?\n\n## Answer with 'It is...'\n\n- Example: It is on the first floor.\n\n## Use 'near' and 'next to' for simple location.\n\n- Example: It is next to the office.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Where is** - Link the words softly: where-is.\n- **first floor** - Say both words clearly.\n- **next to** - Keep 'to' short and light.",
       prompts: [
         "Ask where the classroom is.",
@@ -1075,6 +1161,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm going to + place for a destination.",
       grammarNotes: "# Grammar for Conversation: going to + place\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'I am going to + place.'\n\n- Example: I'm going to the cafe.\n\n## Use 'the' for a known place.\n\n- Example: the cafe, the library\n\n## Ask 'Is it near here?'\n\n- Example: Is the cafe near here?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **going to** - In slow practice, say both words clearly.\n- **library** - Say LI-brer-y or LI-bra-ry clearly.\n- **together** - Stress the middle sound: to-GE-ther.",
       prompts: [
         "Say you are going to the cafe.",
@@ -1123,6 +1211,8 @@ export const lessonCatalog = [
       ],
       grammar: "Direction commands can start with the verb: Go straight. Turn left.",
       grammarNotes: "# Grammar for Conversation: imperatives for directions\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Direction commands can start with the verb.\n\n- Example: Go straight. Turn left.\n\n## Use 'then' for the next step.\n\n- Example: Then turn left.\n\n## Use 'on the left/right' for side location.\n\n- Example: The room is on the right.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **straight** - Start with STR, not 'es-tr'.\n- **turn** - Keep the r sound clear enough.\n- **right** - Do not pronounce the gh.",
       prompts: [
         "Repeat the first direction.",
@@ -1171,6 +1261,8 @@ export const lessonCatalog = [
       ],
       grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
       grammarNotes: "# Grammar for Conversation: How do I get to...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Ask 'How do I get to + place?'\n\n- Example: How do I get to the station?\n\n## Use 'for + time' for duration.\n\n- Example: Go straight for two minutes.\n\n## Use 'at + place' for a landmark.\n\n- Example: Turn right at the bank.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How do I** - Link slowly: how-do-I.\n- **station** - Stress the first part: STA-tion.\n- **minutes** - Say MI-nits, not 'my-newts' in casual English.",
       prompts: [
         "Ask how to get to the station.",
@@ -1221,6 +1313,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use and to join two simple direction steps: Go straight and turn left.",
       grammarNotes: "# Grammar for Conversation: combining direction steps\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'and' for two simple actions.\n\n- Example: Go straight and turn left.\n\n## Use 'Is it...?' to confirm.\n\n- Example: Is it on the first floor?\n\n## Use 'next to' for a nearby landmark.\n\n- Example: Room A is next to the office.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **room A** - Pause lightly before A.\n- **straight and** - Link the words but keep them clear.\n- **first floor** - Keep both f sounds light.",
       prompts: [
         "Ask how to get to room A.",
@@ -1272,6 +1366,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Can I have + item, please? to order politely.",
       grammarNotes: "# Grammar for Conversation: Can I have...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'Can I have + item, please?'\n\n- Example: Can I have a tea, please?\n\n## Use short size answers.\n\n- Example: Small, please.\n\n## Use 'No, thank you' to finish politely.\n\n- Example: No, thank you.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **Can I have** - Link slowly: can-I-have.\n- **tea** - Keep the long ee sound.\n- **please** - Finish with a clear z sound.",
       prompts: [
         "Order a tea politely.",
@@ -1320,6 +1416,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use How much is + item? and answer with It is + price.",
       grammarNotes: "# Grammar for Conversation: How much is...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'How much is + item?'\n\n- Example: How much is the coffee?\n\n## Answer with 'It is + price.'\n\n- Example: It is two dollars.\n\n## Repeat a price to confirm.\n\n- Example: Two dollars?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **how much** - Keep 'much' short and clear.\n- **coffee** - Stress the first syllable: COF-fee.\n- **dollars** - Say DAH-lers clearly.",
       prompts: [
         "Ask the price of coffee.",
@@ -1368,6 +1466,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use this for one item near you and it after the item is already clear.",
       grammarNotes: "# Grammar for Conversation: this + item\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'this' for one item near you.\n\n- Example: Can I have this pen?\n\n## Use 'it' when the item is already known.\n\n- Example: How much is it?\n\n## Use 'Here is + item' for one item.\n\n- Example: Here is your pen.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **this pen** - Keep the th sound soft.\n- **how much is it** - Say it in small chunks: how much / is it.\n- **of course** - Stress course lightly.",
       prompts: [
         "Ask to buy this pen.",
@@ -1416,6 +1516,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I want + item and No + item, please for simple preferences.",
       grammarNotes: "# Grammar for Conversation: I want...\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'I want + item.'\n\n- Example: I want a sandwich.\n\n## Use 'or' for two options.\n\n- Example: Tea or coffee?\n\n## Use 'No + item, please.'\n\n- Example: No sugar, please.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **want** - Do not add an extra vowel after t.\n- **sandwich** - Say SAND-wich.\n- **sugar** - Say SHU-gar.",
       prompts: [
         "Say you want a sandwich.",
@@ -1467,6 +1569,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
       grammarNotes: "# Grammar for Conversation: combining order and price language\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'and' to order two items.\n\n- Example: a coffee and a sandwich\n\n## Use 'How much is it?' for the total.\n\n- Example: How much is it?\n\n## Use 'Here is...' for one order.\n\n- Example: Here is your order.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **coffee and a sandwich** - Pause lightly after coffee.\n- **large** - Keep the r sound soft.\n- **five dollars** - Say both words clearly.",
       prompts: [
         "Order coffee and a sandwich.",
@@ -1516,6 +1620,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
       grammarNotes: "# Grammar for Conversation: I don't understand\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't + verb' for a negative statement.\n\n- Example: I don't understand.\n\n## Use 'Can you + verb?' for a polite request.\n\n- Example: Can you repeat that, please?\n\n## Use a short question to confirm.\n\n- Example: Open my book?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **don't understand** - Pause lightly after don't.\n- **repeat that** - Keep repeat clear: re-PEAT.\n- **understand now** - Stress understand, then say now softly.",
       prompts: [
         "Say you do not understand.",
@@ -1564,6 +1670,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use can for help requests and can't + verb for simple problems.",
       grammarNotes: "# Grammar for Conversation: can / can't\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you help me?' to ask for help.\n\n- Example: Can you help me?\n\n## Use 'I can't + verb' for a simple problem.\n\n- Example: I can't open this file.\n\n## Use 'It works' when the problem is fixed.\n\n- Example: It works.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **can you help me** - Say can-you smoothly.\n- **can't open** - Make can't clear before open.\n- **button** - Say BUH-tn, not bu-ton.",
       prompts: [
         "Ask for help.",
@@ -1612,6 +1720,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Can you + verb + please? for a polite request.",
       grammarNotes: "# Grammar for Conversation: Can you... please?\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you + verb + please?' for a request.\n\n- Example: Can you send me the link, please?\n\n## Use 'Can you wait...?' to ask for time.\n\n- Example: Can you wait a minute?\n\n## Use short positive replies.\n\n- Example: Sure. No problem.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **send me** - Link the words smoothly.\n- **wait a minute** - Say wait-a as one small chunk.\n- **of course** - Say course clearly.",
       prompts: [
         "Ask someone to send the link.",
@@ -1661,6 +1771,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Sorry + short sentence and Thank you for + ing.",
       grammarNotes: "# Grammar for Conversation: sorry + reason\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Sorry + sentence' for a small apology.\n\n- Example: Sorry I'm late.\n\n## Use one short reason.\n\n- Example: My internet was slow.\n\n## Use 'Thank you for + ing'.\n\n- Example: Thank you for waiting.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **sorry** - Say SO-ree clearly.\n- **internet** - Say IN-ter-net.\n- **waiting** - Keep the t soft: WAY-ting.",
       prompts: [
         "Apologize for being late.",
@@ -1714,6 +1826,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
       grammarNotes: "# Grammar for Conversation: combining help language\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't understand' for meaning problems.\n\n- Example: Sorry, I don't understand.\n\n## Use 'I can't + verb' for action problems.\n\n- Example: I can't open this file.\n\n## Use 'Can you + verb?' for requests.\n\n- Example: Can you wait a minute?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **screenshot** - Say SCREEN-shot.\n- **click this button** - Pause after click.\n- **thank you for your help** - Say thank-you as one smooth phrase.",
       prompts: [
         "Say you do not understand.",
@@ -1766,6 +1880,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
       grammarNotes: "# Grammar for Conversation: reviewing be verbs for introductions\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use I am or I'm for names.\n\n- Example: I'm Sara. My name is Dimas.\n\n## Use from for origin.\n\n- Example: I'm from Indonesia.\n\n## Use live in for current city.\n\n- Example: I live in Jakarta now.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **good morning** - Link good-morning smoothly.\n- **nice to meet you** - Keep nice and meet clear.\n- **how about you** - Stress about and you lightly.",
       prompts: [
         "Introduce yourself with your name.",
@@ -1818,6 +1934,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use at for clock time, on for days, and simple present for routines.",
       grammarNotes: "# Grammar for Conversation: reviewing on and at for schedules\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use at for clock time.\n\n- Example: I wake up at six.\n\n## Use on for days.\n\n- Example: The class is on Tuesday.\n\n## Use simple present for routines.\n\n- Example: I study English every day.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **wake up at six** - Link up-at softly.\n- **on Tuesday at eight** - Pause after Tuesday.\n- **see you then** - Say then clearly at the end.",
       prompts: [
         "Say when you wake up.",
@@ -1872,6 +1990,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
       grammarNotes: "# Grammar for Conversation: reviewing where, there is, and would like\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use Where is for one place.\n\n- Example: Where is the cafe?\n\n## Use imperatives for directions.\n\n- Example: Go straight. Turn right.\n\n## Use I would like for polite orders.\n\n- Example: I would like one tea, please.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **excuse me** - Say ex-KYOOZ mee.\n- **turn right** - Keep the r sound clear in right.\n- **would like** - Link would-like smoothly.",
       prompts: [
         "Ask where the cafe is.",
@@ -1928,6 +2048,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
       grammarNotes: "# Grammar for Conversation: reviewing complete short answers\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use complete A1 answers in a test.\n\n- Example: My name is Alya. I'm from Indonesia.\n\n## Use every morning for routine frequency.\n\n- Example: I study English every morning.\n\n## Use can you repeat for clarification.\n\n- Example: Sorry, can you repeat that, please?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **my name is** - Link name-is gently.\n- **every morning** - Stress EV-ery MOR-ning.\n- **can you repeat that please** - Pause after Sorry.",
       prompts: [
         "Answer the name question.",
@@ -1996,6 +2118,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
       grammarNotes: "# Grammar for Conversation: combining A1 patterns in one conversation\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use short complete sentences.\n\n- Example: My name is Mina. I'm from Indonesia.\n\n## Use question back to keep talking.\n\n- Example: How about you?\n\n## Use polite request forms.\n\n- Example: I would like one tea, please. Can you repeat that, please?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **good morning** - Start calmly and clearly.\n- **where is the cafe** - Keep where and cafe clear.\n- **two dollars** - Say the number slowly.\n- **thank you for your help** - Close with a warm tone.",
       prompts: [
         "Introduce yourself.",
@@ -2052,6 +2176,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use How's + noun? to ask about someone, and use It was + adjective to talk about the weekend.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How's + noun?** for casual small talk.\n\nExamples:\n\n- How's your day?\n- How's work?\n\nUse **It was + adjective** to talk about a finished time in the past.\n\nExamples:\n\n- How was your weekend? It was nice.\n- How was the trip? It was great.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How's your day?** - Link it: howz-yer-day.\n- **pretty** - Say PRI-tee, not PREH-tee.\n- **weekend** - Stress WEE: WEE-kend.",
       prompts: [
         "Ask about someone's day.",
@@ -2103,6 +2229,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Where is it? and What did you + verb? for follow-up questions about place and past actions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Where is it?** to ask about the location.\n\nExamples:\n\n- I found a new cafe. Where is it?\n- There's a good shop. Where is it?\n\nUse **What did you + verb?** for follow-up questions about the past.\n\nExamples:\n\n- What did you order?\n- What did you eat?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday** - Stress YES: YES-ter-day.\n- **ordered** - Say OR-derd, not OR-der-ed.\n- **sometime** - Link it smoothly: SUM-time.",
       prompts: [
         "Ask where the cafe is.",
@@ -2154,6 +2282,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Any plans for the weekend? to ask, and use I'm going to + verb to talk about your plan.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Any plans for ...?** to ask casually.\n\nExamples:\n\n- Any plans for the weekend?\n- Any plans for tonight?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to visit my parents.\n- I'm going to take the train.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **going to** - Say GON-na in fast speech: I'm gonna visit my parents.\n- **weekend** - Stress WEE: WEE-kend.\n- **parents** - Stress PAR: PAR-ents.",
       prompts: [
         "Ask about weekend plans.",
@@ -2206,6 +2336,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm sorry to hear that for a small problem, and use That's great! for good news.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm a bit + adjective** to sound natural.\n\nExamples:\n\n- I'm a bit tired today.\n- I'm a bit busy right now.\n\nUse **didn't + base verb** for a negative in the simple past.\n\nExamples:\n\n- I didn't sleep well.\n- I didn't go out yesterday.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tired** - Say TAI-erd, not TI-red.\n- **didn't** - Keep it short: DID-nt.\n- **sorry** - Stress SOR: SOR-ree.",
       prompts: [
         "Say you are a bit tired.",
@@ -2266,6 +2398,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine small-talk questions with simple past and going to for a short plan.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Did you + base verb?** to ask about the past.\n\nExamples:\n\n- Did you sleep well?\n- Did you go out yesterday?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to a new cafe.\n- I'm going to meet a friend.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How's it going?** - Link it: howz-it-GO-ing.\n- **stayed up** - Stress STAYED: stayed-UP.\n- **Saturday** - Stress SA: SA-ter-day.",
       prompts: [
         "Ask how someone is doing.",
@@ -2318,6 +2452,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let's + verb to suggest a plan, and use How about + time? to propose a time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Let's + verb** to suggest a plan.\n\nExamples:\n\n- Let's get coffee.\n- Let's meet after class.\n\nUse **How about + time/place?** to propose an option.\n\nExamples:\n\n- How about 6 pm?\n- How about the cafe near the station?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Are you free tomorrow?** - Link it: ar-ya-free.\n- **How about** - Say how-uh-bout.\n- **works for me** - Link it: works-fer-me.",
       prompts: [
         "Ask if someone is free tomorrow.",
@@ -2369,6 +2505,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Do you want to + verb? to invite someone, and use I'd love to / I'd like to to accept politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you want to + verb?** to invite someone.\n\nExamples:\n\n- Do you want to watch a movie?\n- Do you want to join?\n\nUse **I'd love to / I'd like to** to accept politely.\n\nExamples:\n\n- I'd love to.\n- I'd like to go.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Do you want to** - Link it: dya-WAN-na.\n- **I'd love to** - Stress LOVE.\n- **tonight** - Stress NIGHT: to-NIGHT.",
       prompts: [
         "Invite your friend to watch a movie tonight.",
@@ -2416,6 +2554,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I can / I can't to accept or decline, and add a short reason with because.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I can / I can't** to accept or decline.\n\nExamples:\n\n- Sure, I can.\n- Sorry, I can't.\n\nAdd a short reason with **because**.\n\nExamples:\n\n- I'm busy tonight because I have a meeting.\n- I can't go because I have work.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **can't** - Say it clearly: kant.\n- **because** - Stress CAUSE: be-CAUSE.\n- **meeting** - Stress MEET: MEET-ing.",
       prompts: [
         "Decline politely.",
@@ -2467,6 +2607,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Can we reschedule? and use Does + time work for you? to confirm a new time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can we + verb?** to ask to change a plan.\n\nExamples:\n\n- Can we reschedule?\n- Can we meet later?\n\nUse **Does + time work for you?** to confirm a new time.\n\nExamples:\n\n- Does 7 pm work for you?\n- Does Monday work for you?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reschedule** - Stress SCHED: re-SCHED-ule.\n- **came up** - Link it: came-up.\n- **work for you** - Link it: work-fer-you.",
       prompts: [
         "Ask to reschedule.",
@@ -2522,6 +2664,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine invitations with I can't + reason and rescheduling with Does + time work for you?",
       grammarNotes: "# Grammar for Conversation\n\nUse **I can't + time** to decline.\n\nExamples:\n\n- I can't tomorrow.\n- I can't tonight.\n\nUse **Does + time work for you?** to confirm.\n\nExamples:\n\n- Does 3 pm work for you?\n- Does Saturday work for you?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **grab coffee** - Say it smoothly: grab-COF-fee.\n- **Saturday** - Stress SA: SA-ter-day.\n- **work for you** - Link it: work-fer-you.",
       prompts: [
         "Invite your friend to grab coffee tomorrow.",
@@ -2573,6 +2717,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'd like + noun to request a ticket, and use One-way or Round-trip to choose the ticket type.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something politely.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a bottle of water, please.\n\nUse **One-way / Round-trip** to choose the ticket type.\n\nExamples:\n\n- One-way, please.\n- Round-trip, please.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like** - Link it: I'd-like.\n- **ticket** - Stress TIC: TIC-ket.\n- **round-trip** - Stress ROUND.",
       prompts: [
         "Request one ticket to Bandung.",
@@ -2624,6 +2770,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What time does it leave? to ask about departure, and use Which platform? to confirm where to go.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What time does + noun + verb?** to ask about a schedule.\n\nExamples:\n\n- What time does the train leave?\n- What time does the bus arrive?\n\nUse **Which + noun?** to ask for a choice.\n\nExamples:\n\n- Which platform?\n- Which gate?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Excuse me** - Link it: ex-CUSE-me.\n- **leaves at** - Link it: leaves-at.\n- **platform** - Stress PLA: PLAT-form.",
       prompts: [
         "Ask what time the train leaves.",
@@ -2673,6 +2821,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Is this the right way? to check, and use Turn left/right to follow directions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Is this the right way?** to confirm directions.\n\nExamples:\n\n- Is this the right way to platform 2?\n- Is this the right way?\n\nUse **Turn left/right + at + landmark** for directions.\n\nExamples:\n\n- Turn left at the stairs.\n- Turn right at the bank.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **platform** - Stress PLA: PLAT-form.\n- **stairs** - One syllable: stairs.\n- **right way** - Link it: right-way.",
       prompts: [
         "Ask where platform 2 is.",
@@ -2722,6 +2872,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Can you take me to + place? to request a ride, and use How long will it take? to ask about time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can you take me to + place?** to request a ride.\n\nExamples:\n\n- Can you take me to the station?\n- Can you take me to the hotel?\n\nUse **How long will it take?** to ask about time.\n\nExamples:\n\n- How long will it take?\n- How long will it take to get there?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **take me to** - Link it: take-me-to.\n- **fastest** - Stress FAST: FAST-est.\n- **route** - One syllable: root.",
       prompts: [
         "Ask the driver to take you to the station.",
@@ -2779,6 +2931,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine I'd like + ticket, What time does it leave?, and Can you take me to + place? in one connected mission.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a taxi, please.\n\nUse **What time does it leave?** to ask about a schedule.\n\nExamples:\n\n- What time does it leave?\n- What time does the train leave?\n\nUse **Can you take me to + place?** for a driver request.\n\nExamples:\n\n- Can you take me to my hotel?\n- Can you take me to the station?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **leaves at** - Link it: leaves-at.\n- **platform two** - Say it clearly: PLAT-form two.\n- **take me to** - Link it: take-me-to.",
       prompts: [
         "Request a ticket to Bandung.",
@@ -2828,6 +2982,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Do you have + item? to ask for availability, and use I'm looking for + item to explain what you want.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a phone charger.\n- I'm looking for a black T-shirt.\n\nUse **Do you have + item?** to ask about availability.\n\nExamples:\n\n- Do you have a USB-C charger?\n- Do you have this in black?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **looking for** - Link it: LOOK-ing-fer.\n- **charger** - Stress CHAR: CHAR-jer.\n- **USB-C** - Say the letters clearly: U-S-B-C.",
       prompts: [
         "Say you are looking for a phone charger.",
@@ -2875,6 +3031,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Do you have this in + color? to ask about color, and use Do you have it in size + letter/number? to ask about size.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you have this in + color?** to ask about color.\n\nExamples:\n\n- Do you have this in black?\n- Do you have this in red?\n\nUse **Do you have it in size + letter/number?** to ask about size.\n\nExamples:\n\n- Do you have it in size M?\n- Do you have it in size 40?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **T-shirt** - Say T-shirt clearly.\n- **available** - Stress VAIL: a-VAIL-a-ble.\n- **I'll take it** - Link it: I'll-take-it.",
       prompts: [
         "Ask if they have it in black.",
@@ -2922,6 +3080,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Which one is cheaper? to compare, and use I'll take the cheaper one to choose.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **I'll take the + comparative one** to choose.\n\nExamples:\n\n- I'll take the cheaper one.\n- I'll take the bigger one.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cheaper** - Stress CHEAP: CHEAP-er.\n- **quality** - Stress QUAL: QUAL-i-ty.\n- **I'll take** - Link it: I'll-take.",
       prompts: [
         "Ask which one is cheaper.",
@@ -2969,6 +3129,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Could you help me? to ask politely, and use Can you show me where + item is? to ask for help finding something.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?\n\nUse **Can you show me where + noun + are/is?** to ask for a location.\n\nExamples:\n\n- Can you show me where the batteries are?\n- Can you show me where the station is?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Could you** - Link it: could-ja.\n- **batteries** - Stress BAT: BAT-er-ies.\n- **cash register** - Stress CASH.",
       prompts: [
         "Ask for help politely.",
@@ -3026,6 +3188,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine Do you have + item?, Do you have it in size?, and Which one is cheaper? in one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a charger.\n- I'm looking for a T-shirt.\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Which one** - Link it: which-one.\n- **cheaper** - Stress CHEAP.\n- **Could you** - Link it: could-ja.",
       prompts: [
         "Say you are looking for a charger.",
@@ -3075,6 +3239,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I feel + adjective and I have + noun to describe how you feel (I feel tired, I have a headache).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I feel + adjective**.\n\nExamples:\n\n- I feel tired.\n- I feel sick today.\n\nUse **I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **feel well** - Link it: FEEL-well.\n- **headache** - Stress HEAD: HEAD-ake.\n- **fever** - Stress FEE: FEE-ver.",
       prompts: [
         "Say you don't feel well.",
@@ -3124,6 +3290,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I've had + symptom + for/since to say duration (I've had a cough for two days / since yesterday).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a headache for a week.\n\nUse **I've had + symptom + since**.\n\nExamples:\n\n- I've had a sore throat since yesterday.\n- I've had a fever since Monday.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **sore throat** - Link it: SORE-throat.\n- **since yesterday** - Stress YES: since YES-ter-day.\n- **coughing** - Drop the g: COFF-ing.",
       prompts: [
         "Say you've had a cough for two days.",
@@ -3175,6 +3343,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'd like to + verb to make polite requests (I'd like to make an appointment).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to make an appointment.\n- I'd like to see a doctor.\n\nUse **Is + time/day + okay?**.\n\nExamples:\n\n- Is tomorrow afternoon okay?\n- Is Monday morning okay?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like to** - Say I'd as one sound: I'd.\n- **appointment** - Stress POINT: a-POINT-ment.\n- **available** - Stress VAIL: a-VAIL-a-ble.",
       prompts: [
         "Say you'd like to make an appointment.",
@@ -3224,6 +3394,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me confirm... / So it's on... at... to repeat details and avoid mistakes.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Let me confirm + detail**.\n\nExamples:\n\n- Let me confirm the time.\n- Let me confirm your name.\n\nUse **So it's on... at...**.\n\nExamples:\n\n- So it's on Monday at 3:30 p.m.\n- So it's tomorrow at 10 a.m.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confirm** - Stress FIRM: con-FIRM.\n- **three thirty** - Say it clearly: three THIR-ty.\n- **letters** - Say each letter: P - A - R - K.",
       prompts: [
         "Confirm the time 3:30 p.m.",
@@ -3273,6 +3445,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine polite check-in (I have an appointment) with symptom + duration (I've had... since/for...).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I have an appointment at + time**.\n\nExamples:\n\n- I have an appointment at 3:30.\n- I have an appointment at 10 a.m.\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a fever for a day.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **appointment** - a-POINT-ment.\n- **take a seat** - Link it: TAKE-a-SEAT.\n- **see you soon** - Link it: SEE-ya-SOON.",
       prompts: [
         "Say you have an appointment at 3:30.",
@@ -3322,6 +3496,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use simple past verbs (went, ate, watched) and time words (yesterday, last night) to describe what you did.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Simple past verbs**.\n\nExamples:\n\n- I went to the mall.\n- I ate ramen.\n- I watched a movie.\n\nUse **Past question with did**.\n\nExamples:\n\n- What did you do?\n- Did you go alone?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday** - Stress YES: YES-ter-day.\n- **went to** - Link it: WEN(t)-to.\n- **did you** - Link it: DI-dju.",
       prompts: [
         "Say you went to the mall yesterday.",
@@ -3371,6 +3547,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I went to + place and Where did you go? for simple past questions about places.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I went to + place**.\n\nExamples:\n\n- I went to the museum.\n- I went to a cafe.\n\nUse **Where did you go?**.\n\nExamples:\n\n- Where did you go yesterday?\n- Where did you go after that?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **museum** - Say myoo-ZEE-um.\n- **anywhere** - Stress ANY: ANY-where.\n- **stayed** - Clear -ed: stayed.",
       prompts: [
         "Ask where they went yesterday.",
@@ -3420,6 +3598,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use It was + adjective and I really liked it / I did not like it to describe experiences.",
       grammarNotes: "# Grammar for Conversation\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was delicious.\n- It was fun.\n\nUse **I liked it / I did not like it**.\n\nExamples:\n\n- I really liked it.\n- I did not like it.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **delicious** - de-LI-shus.\n- **really** - REE-lee (not ree-AL-lee).\n- **service** - SER-vis.",
       prompts: [
         "Say you tried a new restaurant yesterday.",
@@ -3469,6 +3649,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What did you do? / Did you + verb? to ask about the past and use short past answers.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What did you do?**.\n\nExamples:\n\n- What did you do yesterday?\n- What did you do last night?\n\nUse **Did you + verb?**.\n\nExamples:\n\n- Did you cook at home?\n- Did you watch a movie?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday evening** - Stress YES: YES-ter-day EVE-ning.\n- **did you** - DI-dju.\n- **fried rice** - Link it: fried rice.",
       prompts: [
         "Ask: What did you do yesterday evening?",
@@ -3518,6 +3700,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine simple past (went/did/ate) with It was + adjective to complete a short past story.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Simple past story**.\n\nExamples:\n\n- I went to the museum.\n- I took photos.\n- I liked it.\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was really interesting.\n- It was fun.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-tres-ting (often 3 syllables).\n- **took** - Short vowel: took.\n- **with anyone** - Link it: with EN-uh-one.",
       prompts: [
         "Say what you did yesterday (museum + photos).",
@@ -3567,6 +3751,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I think + sentence and I think it's + adjective to share a simple opinion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I think + sentence**.\n\nExamples:\n\n- I think it's really good.\n- I think the story is fun.\n\nUse **I think it's + adjective**.\n\nExamples:\n\n- I think it's interesting.\n- I think it's boring.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I think it's** - Link it: I-THINK-its.\n- **really** - REE-lee (not ree-AL-lee).\n- **story** - STOR-ee.",
       prompts: [
         "Answer: What did you think?",
@@ -3616,6 +3802,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use because + reason to explain your opinion (I like it because it is easy).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because the coffee is good.\n- I come here because it is quiet.\n\nUse **Why? / Because...**.\n\nExamples:\n\n- Why?\n- Because it is relaxing.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **because** - bi-KOZ / bi-KUZ.\n- **quiet** - KWAI-et.\n- **agree** - uh-GREE.",
       prompts: [
         "Answer: Why do you like it?",
@@ -3665,6 +3853,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I agree / I'm not sure / I don't think so to respond politely to opinions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I'm not sure.\n- I don't think so.\n\nUse **Agree + contrast with but**.\n\nExamples:\n\n- I agree, but...\n- I agree the food is good, but the service is slow.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'm not sure** - not SURE.\n- **don't think** - DON't THINK.\n- **fair** - FAIR.",
       prompts: [
         "Respond politely: I think it's the best.",
@@ -3714,6 +3904,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What do you think about + noun? and respond with I think... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **What do you think about + noun/verb-ing?**.\n\nExamples:\n\n- What do you think about this plan?\n- What do you think about going to Bali?\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's a great idea because the beaches are beautiful.\n- I think it's good because it's relaxing.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **what do you** - WHA-dju.\n- **think about** - THINK a-BOUT.\n- **crowded** - CROW-did.",
       prompts: [
         "Ask: What do you think about going to Bali?",
@@ -3763,6 +3955,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine opinion + because + polite agreement/disagreement (I agree / I'm not sure).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's good because it's cheap.\n- I think it's better because it's quiet.\n\nUse **Polite response**.\n\nExamples:\n\n- I'm not sure.\n- That's fair.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **another idea** - a-NO-ther i-DE-a.\n- **cheaper/cheap** - CHEEP.\n- **quieter** - KWAI-et-er.",
       prompts: [
         "Ask for an opinion about the restaurant.",
@@ -3812,6 +4006,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review follow-up questions, invitations, and simple future plans (Do you want to...?, Are you free...?).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Inviting with Do you want to...?**.\n\nExamples:\n\n- Do you want to grab coffee?\n- Do you want to hang out this weekend?\n\nUse **Checking availability**.\n\nExamples:\n\n- Are you free on Saturday?\n- Are you free this weekend?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **long time no see** - Link it smoothly: long-time-no-see.\n- **grab coffee** - GRAB KAW-fee.\n- **are you free** - are-you-FREE.",
       prompts: [
         "Ask: How have you been?",
@@ -3861,6 +4057,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review polite questions (Do you have...?, How much is...?, Where is...?) and simple requests.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Where is...?**.\n\nExamples:\n\n- Where is platform 2?\n- Where is the ticket counter?\n\nUse **Do you have...?**.\n\nExamples:\n\n- Do you have a phone charger?\n- Do you have this in black?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **platform** - PLAT-form.\n- **next train** - NEXT train.\n- **USB-C** - Say letters clearly: U-S-B-C.",
       prompts: [
         "Ask: What time is the next train?",
@@ -3910,6 +4108,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review I don't feel well / I have... and simple past questions with did.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Health: I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.\n\nUse **Past question with did**.\n\nExamples:\n\n- Did you sleep late?\n- What did you do yesterday?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **headache** - HEAD-ake.\n- **did you** - DI-dju.\n- **stayed** - Clear -ed: stayed.",
       prompts: [
         "Say you don't feel well today.",
@@ -3961,6 +4161,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review core A2 patterns: Do you want to..., Do you have..., I've had..., What did you do..., I think... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Mixed review patterns**.\n\nExamples:\n\n- Do you want to...?\n- Do you have...?\n- I've had... for/since...\n- What did you do yesterday?\n- I think... because...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **USB-C** - U-S-B-C.\n- **have had** - Link it: have-had.\n- **because** - bi-KOZ.",
       prompts: [
         "Invite a friend for coffee this weekend.",
@@ -4016,6 +4218,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine A2 skills naturally: small talk, past questions, invitations, opinions with because, and simple requests.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Recommend with because**.\n\nExamples:\n\n- Yes, because the coffee is good.\n- Yes, because it is quiet.\n\nUse **Plan with weekend + availability**.\n\nExamples:\n\n- Do you want to go there this weekend?\n- Are you free on Saturday afternoon?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommend** - re-ko-MEND.\n- **though** - THOH.\n- **weekend** - WEEK-end.",
       prompts: [
         "Answer: Would you recommend it?",
@@ -4065,6 +4269,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use time and place phrases (last weekend, at the beach) and past \"be\" (I was, we were) to set the scene.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Setting time and place**.\n\nExamples:\n\n- Last weekend, I was in Bandung.\n- Yesterday afternoon, we were at the station.\n\nUse **Past be (was / were)**.\n\nExamples:\n\n- I was with my cousin.\n- We were visiting my aunt.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **last weekend** - Link it: last-WEEK-end.\n- **were visiting** - wer-VI-zi-ting.\n- **cooler than** - KOO-ler than.",
       prompts: [
         "Set the scene: last weekend + Bandung.",
@@ -4116,6 +4322,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use linking words (first, then, after that, finally) to connect past events clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Linking words for sequence**.\n\nExamples:\n\n- First, ...\n- Then, ...\n- After that, ...\n- Finally, ...\n\nUse **Past verbs in stories**.\n\nExamples:\n\n- We checked in.\n- We walked around.\n- We met my aunt.\n- We went back.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **after that** - AF-ter that.\n- **finally** - FINE-uh-lee.\n- **checked in** - CHECKT in.",
       prompts: [
         "Start with first (check in).",
@@ -4165,6 +4373,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I felt + adjective and I was + adjective to describe feelings in past situations.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I felt + adjective**.\n\nExamples:\n\n- I felt nervous.\n- I felt relieved.\n\nUse **I was + adjective**.\n\nExamples:\n\n- I was excited.\n- I was worried.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **nervous** - NER-vus.\n- **relieved** - ri-LEEVd.\n- **excited** - ik-SAI-ted.",
       prompts: [
         "Ask about feelings in the past.",
@@ -4214,6 +4424,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use follow-up questions in the past: What happened next? Why did you...? How did you feel?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Follow-up questions**.\n\nExamples:\n\n- What happened next?\n- Why did you do that?\n- How did you feel?\n\nUse **Past question with did**.\n\nExamples:\n\n- Why did you choose that route?\n- Why did you go there?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **happened** - HAP-end.\n- **route** - ROOT.\n- **worked out** - WORKT out.",
       prompts: [
         "Ask: What happened next?",
@@ -4265,6 +4477,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine scene setting + sequence words + feelings to tell a connected story (4 to 6 sentences).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Connected story pattern**.\n\nExamples:\n\n- Last weekend, I was in ...\n- First, ... Then ... After that ... Finally, ...\n- I felt ... because ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-tres-ting.\n- **explored** - ik-SPLORD.\n- **ended** - EN-did.",
       prompts: [
         "Start a connected story with time and place.",
@@ -4314,6 +4528,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I am working on... / I am planning to... to explain your task and next step politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I am working on + noun**.\n\nExamples:\n\n- I'm working on the onboarding email flow.\n- I'm working on the bug fix.\n\nUse **Next, I will / I'll + verb**.\n\nExamples:\n\n- Next, I'll review the copy.\n- Next, I'll update the template.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **working on** - WORK-ing on (link it).\n- **next step** - NEXT step.\n- **keep me posted** - KEEP me POS-ted.",
       prompts: [
         "Say what you are working on.",
@@ -4363,6 +4579,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Could you clarify...?, Do you mean...?, and Just to confirm... to avoid mistakes.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Could you clarify...?**.\n\nExamples:\n\n- Could you clarify which sections you need?\n- Could you clarify the deadline?\n\nUse **Just to confirm...**.\n\nExamples:\n\n- Just to confirm, you want the latest numbers, right?\n- Just to confirm, this is for Friday, right?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **clarify** - KLA-ri-fai.\n- **just to confirm** - jus-ta con-FIRM (link it).\n- **by Thursday** - by THURS-day.",
       prompts: [
         "Ask for clarification about sections.",
@@ -4412,6 +4630,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm making progress... / I'm almost done... and I might need... to give a clear update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Progress + almost done**.\n\nExamples:\n\n- I'm making good progress.\n- I'm almost done with the summary.\n\nUse **I might need...**.\n\nExamples:\n\n- I might need an extra hour.\n- I might need feedback from you.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **progress** - PRAH-gres.\n- **almost done** - AL-most done.\n- **heads-up** - HEDZ-up.",
       prompts: [
         "Say you're making good progress.",
@@ -4461,6 +4681,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'd like to add... / I suggest... / What are the next steps? for short meeting contributions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to add one point.\n- I'd like to ask a question.\n\nUse **I suggest + sentence**.\n\nExamples:\n\n- I suggest we move the deadline.\n- I suggest we review the risks.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like to** - I'd (one sound) LIKE-to.\n- **suggest** - sug-JEST.\n- **next steps** - NEXT steps.",
       prompts: [
         "Say you would like to add one point.",
@@ -4510,6 +4732,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine workplace patterns: I'm working on..., Could you clarify...?, Just to confirm..., I'll send it by...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Update + clarification + confirmation**.\n\nExamples:\n\n- I'm making good progress.\n- Could you clarify...?\n- Just to confirm..., right?\n- I'll send it by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **focus on** - FO-kus on.\n- **by Friday** - by FRI-day.\n- **if possible** - if POS-uh-bul.",
       prompts: [
         "Give a short update (progress + almost done).",
@@ -4559,6 +4783,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use There's a problem with... / It happened when... / Because... to explain a problem clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with the login page.\n- There's a problem with the payment flow.\n\nUse **Cause and result (because / so)**.\n\nExamples:\n\n- It happened because of the update.\n- Users can't sign in, so they can't access lessons.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **problem** - PROB-lem.\n- **deployed** - di-PLOYD.\n- **sign in** - SIGN in.",
       prompts: [
         "Start with: There's a problem with ...",
@@ -4608,6 +4834,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use We could... / We should... / I suggest... because... to propose solutions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **We could... / We should...**.\n\nExamples:\n\n- We could roll back the update.\n- We should add a quick test.\n\nUse **Suggestion + reason**.\n\nExamples:\n\n- I suggest we roll it back because it's quick.\n- We could do it now because it's low risk.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **could** - KUD (soft).\n- **should** - SHUD.\n- **roll back** - ROLL back.",
       prompts: [
         "Suggest a solution with could.",
@@ -4657,6 +4885,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use That sounds good / You're right / I'll try... to respond to advice and commit to an action.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advice with should**.\n\nExamples:\n\n- Maybe you should set a daily goal.\n- You should try a shorter session.\n\nUse **Responding to advice**.\n\nExamples:\n\n- That sounds good.\n- You're right.\n- I'll try that starting tomorrow.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **should** - SHUD.\n- **sounds good** - SOWNDZ good.\n- **starting tomorrow** - STAR-ting to-MOR-row.",
       prompts: [
         "Accept advice politely.",
@@ -4706,6 +4936,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use We could... but... / I'd rather... / Let's... because... to make decisions politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Preference with I'd rather**.\n\nExamples:\n\n- I'd rather fix it now.\n- I'd rather wait until tomorrow.\n\nUse **Decision with let's + because**.\n\nExamples:\n\n- Let's roll back now because users are blocked.\n- Let's decide after we check the logs.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd rather** - I'd RATH-er.\n- **reasonable** - REE-zuh-nuh-bul.\n- **deal** - DEEL.",
       prompts: [
         "State a preference with I'd rather.",
@@ -4757,6 +4989,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: There's a problem with..., We could/should..., Because/so..., Let's... to complete a short problem-solving flow.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem -> solution -> decision**.\n\nExamples:\n\n- There's a problem with ...\n- We could ... because ...\n- But will it ...?\n- It might, so let's ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **issue** - ISH-yoo.\n- **urgent** - UR-jent.\n- **affect** - uh-FEKT.",
       prompts: [
         "Describe the problem.",
@@ -4808,6 +5042,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'd like to... and I have a reservation under... to check in politely and confirm details.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to check in.\n- I'd like to ask a question.\n\nUse **Reservation under + name**.\n\nExamples:\n\n- I have a reservation under Mina Kim.\n- It's under Faris Chen.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reservation** - rez-er-VAY-shun.\n- **check in** - CHECK in.\n- **included** - in-KLOO-did.",
       prompts: [
         "Start check-in politely.",
@@ -4859,6 +5095,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm running a bit late / ... is delayed / I'll be there in ... to explain delays clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Running late**.\n\nExamples:\n\n- I'm running a bit late.\n- Sorry, I'm running late.\n\nUse **In about + time**.\n\nExamples:\n\n- I'll be there in about 20 minutes.\n- I'll arrive in about an hour.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **delayed** - di-LAYD.\n- **running late** - RUN-ning late.\n- **about** - uh-BOUT.",
       prompts: [
         "Say you're running a bit late.",
@@ -4910,6 +5148,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Do you have any recommendations for...? and I'm looking for... to ask politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you have any recommendations for...?**.\n\nExamples:\n\n- Do you have any recommendations for dinner?\n- Do you have any recommendations for a museum?\n\nUse **I'm looking for...**.\n\nExamples:\n\n- I'm looking for something local.\n- I'm looking for a quiet cafe.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommendations** - rek-uh-men-DAY-shunz.\n- **local** - LOH-kul.\n- **nearby** - NEER-bye.",
       prompts: [
         "Ask for recommendations (dinner).",
@@ -4961,6 +5201,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use There's a problem with... and Could you... / Could I... to complain politely and request help.",
       grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with my room.\n- There's a problem with the key card.\n\nUse **Could you... / Could I...?**.\n\nExamples:\n\n- Could you send someone to take a look?\n- Could I change rooms?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **air conditioning** - AIR kun-DISH-uh-ning.\n- **isn't working** - IZ-nt WUR-king.\n- **change rooms** - CHAYNJ rooms.",
       prompts: [
         "Start a polite complaint.",
@@ -5014,6 +5256,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine travel patterns: I'm running late..., I'd like to check in..., Do you have any recommendations...?, Could you...?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Combine delay + check-in + request**.\n\nExamples:\n\n- I'm running a bit late. My train is delayed.\n- I have a reservation under ...\n- Do you have any recommendations for ...?\n- Could you help me?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **no worries** - no WUR-reez.\n- **recommendations** - rek-uh-men-DAY-shunz.\n- **could you** - KUD-yuh (link it).",
       prompts: [
         "Explain delay + estimate.",
@@ -5065,6 +5309,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use My goal is to... / I'd like to... and by + time to describe goals clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My goal is to + verb**.\n\nExamples:\n\n- My goal is to speak more confidently.\n- My goal is to learn 50 new words.\n\nUse **By + time (deadline)**.\n\nExamples:\n\n- By the end of this month.\n- By Friday morning.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidently** - KON-fi-dent-lee.\n- **goal** - GOHL.\n- **by the end** - by-the-END (link it).",
       prompts: [
         "State your goal (speaking confidently).",
@@ -5116,6 +5362,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm making progress... / I've been practicing... / I still need to... to give a clear progress update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I've been + verb-ing (habit up to now)**.\n\nExamples:\n\n- I've been practicing every morning.\n- I've been studying for 10 minutes a day.\n\nUse **Still need to + verb**.\n\nExamples:\n\n- I still need to improve my pronunciation.\n- I still need to review the grammar.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **progress** - PRAH-gres.\n- **halfway** - HAF-way.\n- **pronunciation** - pro-nun-see-AY-shun.",
       prompts: [
         "Say you're making good progress.",
@@ -5169,6 +5417,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The biggest challenge is... / I'm struggling with... / It's hard to... to talk about challenges clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **The biggest challenge is + noun/verb-ing**.\n\nExamples:\n\n- The biggest challenge is staying consistent.\n- The biggest challenge is finding time.\n\nUse **It's hard to + verb**.\n\nExamples:\n\n- It's hard to stay consistent after work.\n- It's hard to focus when I'm tired.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **challenge** - CHAL-inj.\n- **consistent** - kun-SIS-tent.\n- **distracted** - di-STRAK-tid.",
       prompts: [
         "Name your biggest challenge.",
@@ -5220,6 +5470,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use My next step is to... / I'm going to... / I'll do it ... times this week to plan next steps.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My next step is to + verb**.\n\nExamples:\n\n- My next step is to practice with Conversation Coach.\n- My next step is to review vocabulary.\n\nUse **Times per week**.\n\nExamples:\n\n- I'll do it three times this week.\n- I'll practice twice a week.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **next step** - NEKST step.\n- **three times** - three TIMEZ.\n- **realistic** - ree-uh-LIS-tik.",
       prompts: [
         "State your next step.",
@@ -5271,6 +5523,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: My goal is to... / I've been... / The biggest challenge is... / My next step is to... to complete a goal update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Goal -> progress -> challenge -> next step**.\n\nExamples:\n\n- My goal is to ... by the end of ...\n- I've been practicing ...\n- The biggest challenge is ...\n- My next step is to ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **by the end of** - by-the-END-of (link it).\n- **challenge** - CHAL-inj.\n- **next step** - NEKST step.",
       prompts: [
         "State goal + deadline.",
@@ -5322,6 +5576,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Option A is... but Option B is... and Which do you prefer? to compare options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Compare with but**.\n\nExamples:\n\n- Sushi Place is nicer, but it's more expensive.\n- It's closer, but it's noisier.\n\nUse **Preference question**.\n\nExamples:\n\n- Which do you prefer?\n- Which one do you prefer?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **options** - OP-shunz.\n- **prefer** - pri-FER.\n- **expensive** - ik-SPEN-siv.",
       prompts: [
         "Compare two options with but.",
@@ -5373,6 +5629,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I prefer... because... / The main reason is... to explain preferences politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I prefer... because...**.\n\nExamples:\n\n- I prefer the earlier flight because it gives us more time.\n- I prefer this option because it's simpler.\n\nUse **The main reason is...**.\n\nExamples:\n\n- The main reason is I don't want to arrive too late.\n- The main reason is it's more reliable.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **earlier** - ER-lee-er.\n- **convenient** - kun-VEE-nee-ent.\n- **reason** - REE-zun.",
       prompts: [
         "State a preference (earlier flight).",
@@ -5426,6 +5684,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What are the pros and cons? / The advantage is... / One downside is... to discuss trade-offs clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Pros and cons question**.\n\nExamples:\n\n- What are the pros and cons?\n- What are the pros and cons of this plan?\n\nUse **Advantage / downside**.\n\nExamples:\n\n- The advantage is you save time.\n- One downside is it's more expensive.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **pros and cons** - PROHZ and KONZ.\n- **advantage** - ad-VAN-tij.\n- **downside** - DOWN-side.",
       prompts: [
         "Ask about pros and cons.",
@@ -5477,6 +5737,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use How about we... / I'm okay with... / Let's go with... to reach agreement politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How about we...?**.\n\nExamples:\n\n- How about we go early?\n- How about we choose the cheaper one?\n\nUse **Confirm agreement**.\n\nExamples:\n\n- So we agree on Noodle House at 6:30?\n- So we agree to book the earlier flight?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **how about** - how-a-BOUT (link it).\n- **agree** - uh-GREE.\n- **works for me** - WURKS for me.",
       prompts: [
         "Suggest a plan with How about we...",
@@ -5530,6 +5792,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: ... but ... / I prefer... because... / The advantage is... / One downside is... / So we agree on...?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Comparison -> preference -> pros/cons -> agreement**.\n\nExamples:\n\n- Option A is easier, but it's more expensive.\n- I prefer option B because it's cheaper.\n- The advantage is ... One downside is ...\n- So we agree on ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **eating out** - EE-ting out.\n- **healthier** - HEL-thee-er.\n- **takes time** - TAYKS time.",
       prompts: [
         "Compare options with but.",
@@ -5581,6 +5845,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use It's a... neighborhood / It's known for... / I like it because... to describe your community clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Known for**.\n\nExamples:\n\n- It's known for its food stalls.\n- It's known for its beaches.\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because it's convenient.\n- I like it because it's quiet.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **neighborhood** - NAY-bur-hood.\n- **convenient** - kun-VEE-nee-ent.\n- **peaceful** - PEES-ful.",
       prompts: [
         "Describe your neighborhood.",
@@ -5632,6 +5898,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use People usually... / In my area, people often... to describe local habits naturally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **People usually...**.\n\nExamples:\n\n- People usually eat outside in the evening.\n- People usually go home before 10.\n\nUse **People often...**.\n\nExamples:\n\n- People often grab street food after work.\n- People often meet friends on weekends.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **usually** - YOO-zhoo-uh-lee.\n- **especially** - es-PESH-uh-lee.\n- **street food** - STREET food.",
       prompts: [
         "Describe a local habit with usually.",
@@ -5685,6 +5953,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What is it like in your country? / Do people usually...? to ask about culture respectfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Culture questions**.\n\nExamples:\n\n- What is it like in your country?\n- Do people usually travel during holidays?\n\nUse **Mostly / sometimes**.\n\nExamples:\n\n- Mostly we share food.\n- Sometimes people give gifts.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **meaningful** - MEE-ning-ful.\n- **mostly** - MOHST-lee.\n- **holiday** - HOL-uh-day.",
       prompts: [
         "Ask a culture question.",
@@ -5736,6 +6006,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use In my country,... / That's interesting / I'm not used to... / That sounds nice to be polite about differences.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm not used to + noun/verb-ing**.\n\nExamples:\n\n- I'm not used to eating that early.\n- I'm not used to spicy food.\n\nUse **Polite reactions**.\n\nExamples:\n\n- That's interesting.\n- That sounds nice.\n- That makes sense.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-ter-es-ting.\n- **used to** - YOOS-to (link it).\n- **early** - ER-lee.",
       prompts: [
         "React politely.",
@@ -5787,6 +6059,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: It's known for... / People usually... / What is it like in your country? / I'm not used to... / That sounds nice.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Community + habit + culture + difference**.\n\nExamples:\n\n- It's known for ...\n- People usually ...\n- What is it like in your country ...?\n- I'm not used to ..., but it sounds nice.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **known for** - KNOWN-for (link it).\n- **meaningful** - MEE-ning-ful.\n- **not used to** - not-YOOS-to (link it).",
       prompts: [
         "Describe your community (known for).",
@@ -5838,6 +6112,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine story sequencing (then/after that) with work update phrases (I'm working on..., next...).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Story sequencing**.\n\nExamples:\n\n- Then we grabbed street food.\n- After that, we went home.\n\nUse **Work update**.\n\nExamples:\n\n- I'm working on the release checklist.\n- Next, I'll review the risks.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **after that** - AF-ter that.\n- **checklist** - CHECK-list.\n- **progress** - PRAH-gres.",
       prompts: [
         "Continue a story with then.",
@@ -5889,6 +6165,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: There's a problem with... / so ... and I'm running late... / I'll be there in about ...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem + impact**.\n\nExamples:\n\n- There's a problem with the meeting link.\n- People can't join, so we need a new link.\n\nUse **Delay + estimate**.\n\nExamples:\n\n- I'm running a bit late.\n- I'll be there in about 15 minutes.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **issue** - ISH-yoo.\n- **delayed** - di-LAYD.\n- **minutes** - MIN-its.",
       prompts: [
         "State the problem.",
@@ -5940,6 +6218,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: My goal is to... / I've been... / I prefer... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Goal + deadline**.\n\nExamples:\n\n- My goal is to ... by the end of this month.\n- My goal is to ... by Friday.\n\nUse **Preference + reason**.\n\nExamples:\n\n- I prefer Conversation Coach because it gives me feedback.\n- I prefer option B because it's simpler.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidently** - KON-fi-dent-lee.\n- **feedback** - FEED-bak.\n- **consistent** - kun-SIS-tent.",
       prompts: [
         "State goal + deadline.",
@@ -5991,6 +6271,8 @@ export const lessonCatalog = [
       ],
       grammar: "Review connectors (because/so/but/then) and key patterns (goal, progress, preference, problems).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Key connectors**.\n\nExamples:\n\n- because (reason)\n- so (result/decision)\n- but (contrast)\n- then (sequence)\n\nUse **Mixed sentence patterns**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- ..., so ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **consistent** - kun-SIS-tent.\n- **sessions** - SESH-unz.\n- **crowded** - KROW-did.",
       prompts: [
         "Goal + deadline.",
@@ -6046,6 +6328,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use connectors naturally (then/because/so/but) to keep the conversation connected and clear.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Connected conversation connectors**.\n\nExamples:\n\n- at first / then\n- because (reason)\n- so (result/decision)\n- but (contrast)\n\nUse **Goal + preference + next step**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- So my next step is to ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **at first** - at FIRST.\n- **distracted** - di-STRAK-tid.\n- **another** - uh-NUH-ther.",
       prompts: [
         "Tell a progress story (at first... but then...).",
@@ -6097,6 +6381,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use In my view... / I believe... and I see your point, but... to state a position clearly and politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **In my view / I believe**.\n\nExamples:\n\n- In my view, a written update would be better.\n- I believe this approach is more efficient.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- I see your point, but we need to consider the timeline.\n- I see your point, but I have a different view.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **compromise** - KOM-pruh-mize.\n- **proposal** - pruh-POH-zul.\n- **efficient** - ih-FISH-unt.",
       prompts: [
         "State your position (In my view...).",
@@ -6148,6 +6434,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use One reason is... / Another reason is... / Also... to support an argument clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Structured reasons**.\n\nExamples:\n\n- One reason is it reduces bugs.\n- Another reason is it saves time.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- That's true, but it helps in the long run.\n- That's true, but we can start small.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **production** - pruh-DUK-shun.\n- **confidence** - KON-fi-dens.\n- **critical** - KRIT-i-kul.",
       prompts: [
         "Give a first reason.",
@@ -6199,6 +6487,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use for example / for instance / such as to support an argument with evidence.",
       grammarNotes: "# Grammar for Conversation\n\nUse **For example / for instance**.\n\nExamples:\n\n- For example, we had three new joiners last quarter.\n- For instance, a checklist would reduce questions.\n\nUse **Such as + noun/verb-ing**.\n\nExamples:\n\n- Such as pairing each new hire with a mentor.\n- Such as adding a short training session.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **example** - ig-ZAM-pul.\n- **instance** - IN-stens.\n- **mentor** - MEN-tor.",
       prompts: [
         "Introduce an example.",
@@ -6250,6 +6540,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use That's a fair point / I understand the concern / However... to respond professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledge + however**.\n\nExamples:\n\n- That's a fair point. However, we can reduce risk.\n- That's a fair point. However, the benefit is long-term.\n\nUse **I understand the concern, but...**.\n\nExamples:\n\n- I understand the concern, but we can phase it in.\n- I understand the concern, but we can start with a pilot.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **however** - how-EV-er.\n- **significant** - sig-NIF-i-kunt.\n- **metrics** - MET-riks.",
       prompts: [
         "Acknowledge a counterpoint politely.",
@@ -6301,6 +6593,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: In my view... / One reason is... / For example... / That's a fair point. However... / Let's...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clear argument structure**.\n\nExamples:\n\n- In my view, ...\n- One reason is ... Another reason is ...\n- For example, ...\n- That's a fair point. However, ...\n- Let's ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **routine** - roo-TEEN.\n- **summary** - SUM-uh-ree.\n- **trial** - TRY-ul.",
       prompts: [
         "State position (In my view...).",
@@ -6352,6 +6646,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'd like to bring up... / The main point is... / I'd like to hear your thoughts to open a meeting point professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Open a topic**.\n\nExamples:\n\n- I'd like to bring up the timeline.\n- I'd like to bring up one concern.\n\nUse **Invite input**.\n\nExamples:\n\n- I'd like to hear your thoughts.\n- What are your thoughts on this?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **timeline** - TIME-line.\n- **scope** - SKOH-p.\n- **handoff** - HAND-off.",
       prompts: [
         "Open a topic politely.",
@@ -6403,6 +6699,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Just to clarify... / Does this include...? / Is ... out of scope? to avoid confusion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Just to clarify**.\n\nExamples:\n\n- Just to clarify, what is in scope?\n- Just to clarify, do we need QA sign-off?\n\nUse **Include / out of scope**.\n\nExamples:\n\n- Does this include the dashboard changes?\n- Is the admin flow out of scope?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **clarify** - KLAIR-uh-fy.\n- **exactly** - ig-ZAKT-lee.\n- **scope** - SKOH-p.",
       prompts: [
         "Ask to clarify scope.",
@@ -6454,6 +6752,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use One suggestion is... / It might help if... / I noticed that... to give feedback professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I noticed that...**.\n\nExamples:\n\n- I noticed the introduction was a bit long.\n- I noticed the slides were hard to read.\n\nUse **It might help if...**.\n\nExamples:\n\n- It might help if you start with the takeaway.\n- It might help if you keep it shorter.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **overall** - OH-ver-awl.\n- **takeaway** - TAYK-uh-way.\n- **suggestion** - suh-JES-chun.",
       prompts: [
         "Start feedback positively.",
@@ -6505,6 +6805,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use To summarize... / We agreed to... / Action items are... / I'll take... to close meetings professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **To summarize**.\n\nExamples:\n\n- To summarize, we agreed to ...\n- To summarize, the decision is ...\n\nUse **Action items**.\n\nExamples:\n\n- Action items are: I'll ..., and you'll ...\n- I'll take the first item.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **summarize** - SUM-uh-rise.\n- **action items** - AK-shun EYE-tumz.\n- **coverage** - KUV-er-ij.",
       prompts: [
         "Summarize the decision.",
@@ -6560,6 +6862,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: I'd like to bring up... / Just to clarify... / I noticed... / It might help if... / To summarize...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Meeting participation flow**.\n\nExamples:\n\n- I'd like to bring up ...\n- Just to clarify, does this include ...?\n- Overall ... I noticed ...\n- To summarize, we agreed ... Action items are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **agenda** - uh-JEN-duh.\n- **clarify** - KLAIR-uh-fy.\n- **summarize** - SUM-uh-rise.",
       prompts: [
         "Open a topic.",
@@ -6613,6 +6917,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use My top priority is... / What matters most is... / What's your priority? to align on priorities.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Priority statements**.\n\nExamples:\n\n- My top priority is shipping safely.\n- The second priority is improving monitoring.\n\nUse **What matters most**.\n\nExamples:\n\n- What matters most is meeting the deadline.\n- What matters most is quality.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **priority** - pry-OR-i-tee.\n- **deadline** - DED-line.\n- **monitoring** - MON-i-ter-ing.",
       prompts: [
         "State your top priority.",
@@ -6664,6 +6970,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I propose we... / How about we... / Would that work? to make proposals politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I propose we...**.\n\nExamples:\n\n- I propose we do a small pilot first.\n- I propose we meet with the client tomorrow.\n\nUse **Would that work?**.\n\nExamples:\n\n- Would that work for you?\n- Would that work for the team?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **propose** - pruh-POHZ.\n- **pilot** - PY-lut.\n- **parallel** - PAIR-uh-lel.",
       prompts: [
         "Make a proposal with I propose we...",
@@ -6715,6 +7023,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I understand the concern / What if we... / Would it help if... to handle objections calmly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I understand the concern**.\n\nExamples:\n\n- I understand the concern.\n- I understand the concern about the timeline.\n\nUse **Would it help if... / What if we...**.\n\nExamples:\n\n- Would it help if we limit reviews?\n- What if we define simple criteria?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **concern** - kun-SURN.\n- **criteria** - kry-TEER-ee-uh.\n- **reasonable** - REE-zuh-nuh-bul.",
       prompts: [
         "Acknowledge the objection.",
@@ -6766,6 +7076,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Maybe we can... / A compromise could be... / If we do X, can we agree on Y? to find middle ground.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Maybe we can...**.\n\nExamples:\n\n- Maybe we can find a compromise.\n- Maybe we can try a smaller scope.\n\nUse **A compromise could be...**.\n\nExamples:\n\n- A compromise could be a pilot.\n- A compromise could be a phased rollout.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **compromise** - KOM-pruh-mize.\n- **rollout** - ROHL-out.\n- **percentage** - per-SEN-tij.",
       prompts: [
         "Suggest finding a compromise.",
@@ -6817,6 +7129,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: My top priority is... / I propose we... / I understand the concern... / Would it help if... / A compromise could be...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation structure**.\n\nExamples:\n\n- My top priority is ...\n- I propose we ...\n- I understand the concern. Would it help if ...?\n- A compromise could be ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **trade-off** - TRAYD-off.\n- **expand** - ik-SPAND.\n- **results** - ri-ZULTS.",
       prompts: [
         "Align priorities.",
@@ -6868,6 +7182,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Today I'd like to... / The problem is... / My proposal is... / Next steps are... to keep a short presentation clear.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation structure**.\n\nExamples:\n\n- Today I'd like to ...\n- The problem is ...\n- My proposal is ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **proposal** - pruh-POH-zul.\n- **onboarding** - ON-bor-ding.\n- **checklist** - CHECK-list.",
       prompts: [
         "Open a short presentation.",
@@ -6921,6 +7237,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use First... / Next... / Finally... / Let me summarize... to make your presentation easy to follow.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Signposting**.\n\nExamples:\n\n- First, ...\n- Next, ...\n- Finally, ...\n- Let me summarize ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **walk you through** - WAWK-yuh through.\n- **outline** - OUT-line.\n- **finally** - FYE-nuh-lee.",
       prompts: [
         "Start with signposting opener.",
@@ -6972,6 +7290,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The main benefit is... / Another benefit is... / A key risk is... / To reduce the risk, we can... to present trade-offs clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Benefits and risks**.\n\nExamples:\n\n- The main benefit is ...\n- Another benefit is ...\n- A key risk is ...\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- To mitigate this, we can ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **benefit** - BEN-uh-fit.\n- **risk** - RISK.\n- **outdated** - out-DAY-tid.",
       prompts: [
         "State the main benefit.",
@@ -7025,6 +7345,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use That's a good question / As far as I know... / I'm not sure, but I can follow up to answer questions professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Answering questions**.\n\nExamples:\n\n- That's a good question.\n- As far as I know, ...\n- I'm not sure yet, but I can follow up ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **effort** - EF-ert.\n- **estimate** - ES-ti-mit (noun) / ES-ti-mayt (verb).\n- **follow up** - FAH-loh up.",
       prompts: [
         "Start an answer politely.",
@@ -7076,6 +7398,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: Today I'd like to... / First... Next... Finally... / The main benefit is... / A key risk is... / That's a good question...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation + Q&A flow**.\n\nExamples:\n\n- Today I'd like to ...\n- First ... Next ... Finally ...\n- The main benefit is ... Another benefit is ...\n- A key risk is ... To reduce the risk, ...\n- That's a good question. As far as I know, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **inconsistent** - in-kun-SIS-tent.\n- **benefit** - BEN-uh-fit.\n- **maintenance** - MAYN-tuh-nens.",
       prompts: [
         "Present your idea opening.",
@@ -7127,6 +7451,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The article is about... / The main point is... / It concludes that... to summarize clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Summary structure**.\n\nExamples:\n\n- The article is about ...\n- The main point is ...\n- It concludes that ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **productivity** - pro-duk-TIV-i-tee.\n- **concludes** - kun-KLOODZ.\n- **hybrid** - HY-brid.",
       prompts: [
         "State the topic.",
@@ -7178,6 +7504,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I trust this source because... / I'm not sure it's reliable / I'd check... to evaluate sources.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Reliability language**.\n\nExamples:\n\n- I'm not sure it's reliable.\n- I trust this source because it cites evidence.\n\nUse **Verification**.\n\nExamples:\n\n- I'd check official reports.\n- I'd cross-check with two sources.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-bul.\n- **evidence** - EV-i-dens.\n- **official** - uh-FISH-ul.",
       prompts: [
         "Express polite doubt.",
@@ -7229,6 +7557,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use From my perspective... / The reason is... / I see the other side, but... to discuss viewpoints respectfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Viewpoint language**.\n\nExamples:\n\n- From my perspective, ...\n- The reason is ...\n- I see the other side, but ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **perspective** - per-SPEK-tiv.\n- **misinformation** - mis-in-fer-MAY-shun.\n- **necessary** - NES-uh-ser-ee.",
       prompts: [
         "State your viewpoint.",
@@ -7280,6 +7610,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I wasn't aware of that / That changes things / I'd like to understand... to respond thoughtfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **New information phrases**.\n\nExamples:\n\n- I wasn't aware of that.\n- That changes things.\n- I'd like to understand ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **aware** - uh-WAIR.\n- **methodology** - meth-uh-DOL-uh-jee.\n- **contradicts** - kon-truh-DIKTS.",
       prompts: [
         "Acknowledge new info.",
@@ -7333,6 +7665,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: The article is about... / I'm not sure it's reliable / From my perspective... / That changes things / I'd like to understand...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Information discussion flow**.\n\nExamples:\n\n- The article is about ... The main point is ...\n- I'm not sure it's reliable because ... I'd check ...\n- From my perspective, ... The reason is ...\n- That changes things. I'd like to understand ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-bul.\n- **methodology** - meth-uh-DOL-uh-jee.\n- **conclusion** - kun-KLOO-zhun.",
       prompts: [
         "Summarize the article in two sentences.",
@@ -7384,6 +7718,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Just to clarify... / Could you share more about... / So what you need is... to understand clients clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying questions**.\n\nExamples:\n\n- Just to clarify, ...\n- Could you share more about ...?\n\nUse **Summary confirmation**.\n\nExamples:\n\n- So what you need is ..., right?\n- So the key requirement is ..., correct?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **requirements** - ri-KWYER-munts.\n- **clarify** - KLAIR-uh-fy.\n- **pain point** - PAYN point.",
       prompts: [
         "Ask a clarification question.",
@@ -7435,6 +7771,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use We have two options... / Option A would... / The trade-off is... / I'd recommend... to explain options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Option structure**.\n\nExamples:\n\n- We have two options: A or B.\n- Option A is ..., but ...\n\nUse **Recommendation**.\n\nExamples:\n\n- I'd recommend option B if the timeline allows.\n- I'd recommend starting with a pilot.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **trade-off** - TRAYD-off.\n- **robust** - roh-BUST.\n- **stability** - stuh-BIL-i-tee.",
       prompts: [
         "Introduce two options.",
@@ -7486,6 +7824,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I understand the concern / Could you clarify... / To reduce the risk, we can... to respond professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Concern handling**.\n\nExamples:\n\n- I understand the concern.\n- Could you clarify ...?\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- We can run a short trial and gather feedback.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **disrupt** - dis-RUPT.\n- **mitigate** - MIT-i-gayt.\n- **weekly** - WEEK-lee.",
       prompts: [
         "Acknowledge the concern.",
@@ -7539,6 +7879,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use To confirm... / Next steps are... / I'll ... by ... / Does that work? to align on follow-up.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Confirm + next steps**.\n\nExamples:\n\n- To confirm, ...\n- Next steps are: I'll ..., and you'll ...\n\nUse **Deadlines**.\n\nExamples:\n\n- I'll send it today.\n- You'll review it by Friday.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **timeline** - TIME-line.\n- **finalize** - FYE-nuh-lize.\n- **pilot** - PY-lut.",
       prompts: [
         "Confirm the plan.",
@@ -7592,6 +7934,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: Just to clarify... / We have two options... / I understand the concern... / To reduce the risk... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Client conversation flow**.\n\nExamples:\n\n- Just to clarify, ...\n- We have two options ...\n- I understand the concern. To reduce the risk, ...\n- Next steps are ... Does that timeline work for you?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **client** - KLY-ent.\n- **disrupt** - dis-RUPT.\n- **deadline** - DED-line.",
       prompts: [
         "Ask discovery questions.",
@@ -7645,6 +7989,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let's define... / What does success look like? / Can we agree on the scope? to frame a problem clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Framing language**.\n\nExamples:\n\n- Let's define the problem statement first.\n- Can we agree on the scope?\n\nUse **Success criteria**.\n\nExamples:\n\n- What does success look like in the next four weeks?\n- How will we measure success?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **scope** - SKOHP.\n- **constraints** - kuhn-STRAYNTS.\n- **criteria** - kry-TEER-ee-uh.",
       prompts: [
         "Ask to define the problem first.",
@@ -7696,6 +8042,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use One possible cause is... / Based on the data... / It might be due to... to discuss root causes calmly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Hypotheses**.\n\nExamples:\n\n- One possible cause is ...\n- It might be due to ...\n\nUse **Evidence**.\n\nExamples:\n\n- Based on the data, ...\n- We saw an increase right after ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **hypothesis** - hy-POTH-uh-sis.\n- **redesign** - REE-dee-zine.\n- **data** - DAY-tuh.",
       prompts: [
         "State a possible cause.",
@@ -7747,6 +8095,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The trade-off is... / If we optimize for..., we might... / On the other hand... to compare options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Trade-offs**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- The trade-off is speed versus reliability.\n\nUse **Contrast + impact**.\n\nExamples:\n\n- If we optimize for X, we might Y.\n- On the other hand, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliability** - ri-LYE-uh-BIL-ih-tee.\n- **optimize** - OP-tuh-mize.\n- **effort** - EF-urt.",
       prompts: [
         "State a trade-off.",
@@ -7798,6 +8148,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Given these constraints... / I'd recommend... / The main risk is... / We can mitigate it by... to recommend a solution.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Recommendation**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- My recommendation is to start with ...\n\nUse **Risk + mitigation**.\n\nExamples:\n\n- The main risk is ... if ...\n- We can mitigate it by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommend** - rek-uh-MEND.\n- **mitigate** - MIT-i-gayt.\n- **metrics** - MET-riks.",
       prompts: [
         "Recommend a solution linked to constraints.",
@@ -7849,6 +8201,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine framing + causes + trade-offs + recommendation into one structured discussion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem-solving flow**.\n\nExamples:\n\n- Let's define the problem statement first.\n- One possible cause is ... Based on the data, ...\n- The trade-off is X versus Y.\n- Given these constraints, I'd recommend ...\n- We can mitigate it by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **root cause** - ROOT kawz.\n- **trade-off** - TRAYD-off.\n- **recommendation** - rek-uh-men-DAY-shun.",
       prompts: [
         "Start by framing the problem.",
@@ -7900,6 +8254,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use My position is... / The main reason is... / To summarize... / Next steps are... to sound clear in meetings.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Position + reason**.\n\nExamples:\n\n- My position is that we should ...\n- The main reason is ...\n\nUse **Closing**.\n\nExamples:\n\n- To summarize, ...\n- Next steps are: I'll ..., and you'll ... by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **prioritize** - pry-OR-uh-tize.\n- **revenue** - REV-uh-noo.\n- **workload** - WERK-lohd.",
       prompts: [
         "State your position clearly.",
@@ -7951,6 +8307,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Here's my proposal... / The trade-off is... / On the other hand... / I'd recommend... to review negotiation language.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation proposals**.\n\nExamples:\n\n- Here's my proposal: ...\n- Can we meet in the middle?\n\nUse **Trade-offs + summary**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- To summarize: ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **proposal** - pruh-POH-zuhl.\n- **compromise** - KOM-pruh-mize.\n- **completeness** - kuhm-PLEET-nis.",
       prompts: [
         "Make a proposal.",
@@ -8002,6 +8360,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Based on the source... / We should verify... / I understand the concern... / Next steps are... to review information and client communication.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Source reliability**.\n\nExamples:\n\n- Based on the source, ...\n- We should verify it with ...\n\nUse **Client clarity**.\n\nExamples:\n\n- I understand the concern.\n- Just to clarify, ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-buhl.\n- **verify** - VER-uh-fy.\n- **snapshot** - SNAP-shot.",
       prompts: [
         "Comment on reliability carefully.",
@@ -8053,6 +8413,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use signposting: My position is... / Based on the data... / The trade-off is... / I'd recommend... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Signposting (test answers)**.\n\nExamples:\n\n- My position is that ...\n- Based on the data, ...\n- The trade-off is X versus Y.\n- I'd recommend ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **pilot** - PY-lut.\n- **rollout** - ROHL-out.\n- **signposting** - SYNE-post-ing.",
       prompts: [
         "State a position.",
@@ -8104,6 +8466,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let's define the scope... / Based on the data... / The trade-off is... / Given these constraints... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Discussion framing**.\n\nExamples:\n\n- Let's define the scope.\n- What does success look like?\n\nUse **Decision language**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **quarter** - KWOR-ter.\n- **time-boxed** - TIME-bokst.\n- **finalize** - FYE-nuh-lize.",
       prompts: [
         "Start by framing the discussion.",
@@ -8155,6 +8519,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use To some extent... / Broadly speaking... / In principle..., but... / That said... to qualify opinions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Partial agreement**.\n\nExamples:\n\n- To some extent, ...\n- Broadly speaking, ...\n\nUse **Limitations**.\n\nExamples:\n\n- That said, ...\n- In principle ..., but ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **extent** - ik-STENT.\n- **broadly** - BROAD-lee.\n- **legacy** - LEG-uh-see.",
       prompts: [
         "Agree partially and set scope.",
@@ -8206,6 +8572,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm fairly confident... / I'm not entirely convinced... / There's a strong chance... / It's unlikely that... to calibrate certainty.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Degrees of certainty**.\n\nExamples:\n\n- I'm fairly confident ...\n- I'm not entirely convinced ...\n\nUse **Probability + mitigation**.\n\nExamples:\n\n- There's a strong chance ...\n- It's unlikely that ..., but ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confident** - KON-fi-dent.\n- **entirely** - en-TY-er-lee.\n- **unlikely** - un-LYKE-lee.",
       prompts: [
         "Express high confidence with evidence.",
@@ -8257,6 +8625,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use On the one hand... / On the other hand... / While it's true that... / On balance... to weigh perspectives.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Balancing viewpoints**.\n\nExamples:\n\n- On the one hand, ...\n- On the other hand, ...\n\nUse **Nuanced conclusion**.\n\nExamples:\n\n- While it's true that ..., ...\n- On balance, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **initiative** - ih-NISH-uh-tiv.\n- **concerning** - kun-SER-ning.\n- **ring-fence** - RING-fens.",
       prompts: [
         "Present both viewpoints.",
@@ -8308,6 +8678,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I see your point, but... / I'm not sure I'd go that far... / With respect, ... / I might frame it differently... to disagree softly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I see your point, but ...\n- I'm not sure I'd go that far.\n\nUse **Alternatives**.\n\nExamples:\n\n- I might frame it differently: ...\n- What if we ... instead?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **respect** - ri-SPEKT.\n- **suggests** - suh-JESTS.\n- **momentum** - moh-MEN-tum.",
       prompts: [
         "Disagree tactfully.",
@@ -8359,6 +8731,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine: to some extent / that said / fairly confident / not entirely convinced / on balance / I see your point, but ...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Nuanced discussion toolkit**.\n\nExamples:\n\n- To some extent, ... That said, ...\n- I'm fairly confident ..., but I'm not entirely convinced ...\n- On the one hand ... On the other hand ... On balance ...\n- I see your point, but ... I might frame it differently: ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **nuanced** - NOO-ahnst.\n- **calibrate** - KAL-uh-brayt.\n- **decisive** - di-SY-siv.",
       prompts: [
         "Qualify your stance with a limitation.",
@@ -8410,6 +8784,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use To make sure we're aligned... / From your perspective... / The key constraint is... / Can we agree that... to align stakeholders.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Alignment questions**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- From your perspective, ...\n\nUse **Decision confirmation**.\n\nExamples:\n\n- Can we agree that ...?\n- The key constraint is ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **stakeholders** - STAYK-hohl-derz.\n- **aligned** - uh-LYND.\n- **constraint** - kun-STRAYNT.",
       prompts: [
         "Ask for top priority to align.",
@@ -8461,6 +8837,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What we can commit to is... / The earliest we can deliver is... / To avoid surprises... / I'd rather under-promise... to manage expectations.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Commitments**.\n\nExamples:\n\n- What we can commit to is ...\n- The earliest we can deliver is ...\n\nUse **Principles + conditions**.\n\nExamples:\n\n- To avoid surprises, ...\n- Assuming no new blockers, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **commit** - kuh-MIT.\n- **reliably** - ri-LYE-uh-blee.\n- **blocker** - BLOK-er.",
       prompts: [
         "Set a realistic commitment.",
@@ -8514,6 +8892,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I wanted to flag... / The impact is... / I appreciate..., and... / Would you be open to... to give sensitive feedback.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Feedback openers**.\n\nExamples:\n\n- I wanted to flag ...\n- I wanted to raise one point ...\n\nUse **Impact + suggestion**.\n\nExamples:\n\n- The impact is ...\n- Would you be open to ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **messaging** - MES-ij-ing.\n- **interpreted** - in-TER-prih-tid.\n- **explicit** - ik-SPLIS-it.",
       prompts: [
         "Open feedback gently.",
@@ -8565,6 +8945,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The main risk is... / There's a reasonable chance... / The impact would be... / We can mitigate it by... to communicate risk.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Risk framing**.\n\nExamples:\n\n- The main risk is ...\n- There's a reasonable chance ...\n\nUse **Impact + mitigation**.\n\nExamples:\n\n- The impact would be ...\n- We can mitigate it by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **likelihood** - LYKE-lee-hood.\n- **mitigate** - MIT-i-gayt.\n- **rollback** - ROHL-bak.",
       prompts: [
         "Name a main risk.",
@@ -8616,6 +8998,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine alignment questions, realistic commitments, impact-based feedback, and risk framing into one coherent discussion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Strategic workplace flow**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- What we can commit to is ... assuming ...\n- The impact is that ... Would you be open to ...?\n- The main risk is ... We can mitigate it by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **alignment** - uh-LYNT-ment.\n- **expectations** - eks-pek-TAY-shunz.\n- **mitigation** - mit-ih-GAY-shun.",
       prompts: [
         "Align priorities and constraints.",
@@ -8667,6 +9051,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Today I'd like to... / By X, I mean... / The purpose of this is... to frame complex topics.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation framing**.\n\nExamples:\n\n- Today I'd like to ...\n- The purpose of this is to ...\n\nUse **Definitions**.\n\nExamples:\n\n- By X, I mean ...\n- Let me define what I mean by ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **architecture** - ARK-ih-tek-cher.\n- **modular** - MOD-yuh-ler.\n- **coupling** - KUP-ling.",
       prompts: [
         "Open your presentation clearly.",
@@ -8718,6 +9104,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The core claim is... / The evidence suggests... / A common concern is... / That said... to build persuasion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Claims + evidence**.\n\nExamples:\n\n- The core claim is that ...\n- The evidence suggests ...\n\nUse **Counterarguments**.\n\nExamples:\n\n- A common concern is ...\n- That said, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **persuasive** - per-SWAY-siv.\n- **evidence** - EV-uh-dens.\n- **fragmentation** - frag-men-TAY-shun.",
       prompts: [
         "State your core claim.",
@@ -8769,6 +9157,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use That brings me to... / What's crucial here is... / To put it differently... / With that in mind... to transition clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Transitions**.\n\nExamples:\n\n- That brings me to ...\n- With that in mind, ...\n\nUse **Clarification**.\n\nExamples:\n\n- What's crucial here is ...\n- To put it differently, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **crucial** - KROO-shuhl.\n- **consistency** - kun-SIS-ten-see.\n- **guardrails** - GARD-raylz.",
       prompts: [
         "Transition to a trade-off.",
@@ -8820,6 +9210,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use That's a fair question... / Let me clarify... / The short answer is... / What I'd emphasize is... to handle questions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledgement + clarity**.\n\nExamples:\n\n- That's a fair question.\n- Let me clarify ...\n\nUse **Concise answers**.\n\nExamples:\n\n- The short answer is: ...\n- What I'd emphasize is ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **manageable** - MAN-ih-juh-buhl.\n- **enforcement** - en-FORS-ment.\n- **fallback** - FAWL-bak.",
       prompts: [
         "Acknowledge a challenging question.",
@@ -8875,6 +9267,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine framing, persuasive flow, transitions, and Q&A language into one smooth mission.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advanced presentation toolkit**.\n\nExamples:\n\n- Today I'd like to ...\n- By X, I mean ...\n- The core claim is that ... The evidence suggests ...\n- That brings me to ... What's crucial here is ...\n- That's a fair question. The short answer is: ...\n- In short, ... Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **signposting** - SYNE-post-ing.\n- **guardrails** - GARD-raylz.\n- **outweigh** - out-WAY.",
       prompts: [
         "Frame the presentation and define the term.",
@@ -8926,6 +9320,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use It seems you're assuming... / What are we assuming about... / If that's true, then... to identify assumptions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Assumption language**.\n\nExamples:\n\n- It seems you're assuming ...\n- What are we assuming about ...?\n\nUse **Implications**.\n\nExamples:\n\n- If that's true, then ...\n- If we accept that premise, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **assumption** - uh-SUMP-shun.\n- **premise** - PREM-iss.\n- **redundant** - ri-DUN-dent.",
       prompts: [
         "Surface an assumption politely.",
@@ -8977,6 +9373,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I'm not sure that follows... / What's the evidence for... / Could there be another explanation? / For example... to challenge arguments.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Challenging logic**.\n\nExamples:\n\n- I'm not sure that follows.\n- What's the evidence for ...?\n\nUse **Alternatives + examples**.\n\nExamples:\n\n- Could there be another explanation?\n- For example, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **evidence** - EV-uh-dens.\n- **counterexample** - KOWN-ter-ig-ZAM-puhl.\n- **reassurance** - ree-uh-SHUR-ens.",
       prompts: [
         "Challenge logic politely.",
@@ -9028,6 +9426,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use According to... / The data indicates... / This suggests... / To be precise... to present evidence.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Sources**.\n\nExamples:\n\n- According to ...\n- Based on ...\n\nUse **Precision**.\n\nExamples:\n\n- To be precise, ...\n- The data indicates ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **correlation** - kor-uh-LAY-shun.\n- **causation** - kaw-ZAY-shun.\n- **triangulate** - try-ANG-gyuh-layt.",
       prompts: [
         "Cite a source with according to.",
@@ -9079,6 +9479,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me be clear... / I understand the concern, however... / The key point is... / If you look at... to respond under pressure.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarity under pressure**.\n\nExamples:\n\n- Let me be clear: ...\n- The key point is ...\n\nUse **Acknowledge + pivot**.\n\nExamples:\n\n- I understand the concern. However, ...\n- If you look at ..., ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **speculation** - spek-yuh-LAY-shun.\n- **indicators** - IN-di-kay-terz.\n- **doubled** - DUB-uhld.",
       prompts: [
         "Clarify calmly under pressure.",
@@ -9130,6 +9532,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine assumption language, evidence framing, and pressure responses into one coherent mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Debate analysis toolkit**.\n\nExamples:\n\n- It seems you're assuming ...\n- I'm not sure that follows. What's the evidence for ...?\n- Could there be another explanation?\n- According to ... To be precise, ...\n- Let me be clear: ... However, the key point is ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **analysis** - uh-NAL-uh-sis.\n- **inference** - IN-fer-ens.\n- **bias** - BY-us.",
       prompts: [
         "Challenge assumption and ask for evidence.",
@@ -9181,6 +9585,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use It may be worth considering... / My sense is that... / Before we decide, can we clarify... to read context.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Context reading**.\n\nExamples:\n\n- My sense is that ...\n- It may be worth considering ...\n\nUse **Clarifying**.\n\nExamples:\n\n- Before we decide, can we clarify ...?\n- What is their priority: X or Y?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ambitious** - am-BISH-us.\n- **hierarchy** - HY-uh-rar-kee.\n- **defensive** - di-FEN-siv.",
       prompts: [
         "Interpret indirect feedback cautiously.",
@@ -9232,6 +9638,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Would you mind if I ask... / If it's okay, could you clarify... / Just to make sure I understand... to ask tactfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Tactful openers**.\n\nExamples:\n\n- Would you mind if I ask ...?\n- If it's okay, could you clarify ...?\n\nUse **Understanding checks**.\n\nExamples:\n\n- Just to make sure I understand, ...\n- Just to confirm, ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tactful** - TAKT-ful.\n- **privately** - PRY-vit-lee.\n- **accordingly** - uh-KOR-ding-lee.",
       prompts: [
         "Ask a tactful preference question.",
@@ -9283,6 +9691,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use In our context... / It's generally expected that... / People tend to... / It might help to... to explain norms.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Norms**.\n\nExamples:\n\n- In our context, ...\n- People tend to ...\n- It's generally expected that ...\n\nUse **Suggestions**.\n\nExamples:\n\n- It might help to ...\n- You might find it useful to ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **context** - KON-tekst.\n- **expected** - ik-SPEK-tid.\n- **appreciation** - uh-pree-shee-AY-shun.",
       prompts: [
         "Explain a norm neutrally.",
@@ -9334,6 +9744,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use I may have misunderstood... / I didn't mean to... / Just to clarify... / How about we... to repair misunderstandings.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledging misunderstanding**.\n\nExamples:\n\n- I may have misunderstood ...\n- I didn't mean to ...\n\nUse **Repair plan**.\n\nExamples:\n\n- Just to clarify, ...\n- How about we ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **misunderstood** - mis-un-DER-stood.\n- **dismissive** - dis-MIS-iv.\n- **acknowledging** - ak-NOL-ij-ing.",
       prompts: [
         "Acknowledge misunderstanding.",
@@ -9387,6 +9799,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine context reading, tactful questions, norms explanation, and repair language into one end-to-end conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Cross-cultural toolkit**.\n\nExamples:\n\n- My sense is that ... Before we decide, can we clarify ...?\n- Would you mind if I ask ...?\n- In our context, people tend to ... It's generally expected that ...\n- I may have misunderstood ... Just to clarify, ... How about we ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tact** - TAKT.\n- **misunderstanding** - mis-un-der-STAN-ding.\n- **cultural** - KUL-cher-uhl.",
       prompts: [
         "Read context and clarify priorities.",
@@ -9438,6 +9852,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use The direction I'd like to set is... / Success looks like... / I'd like you to own... / Let's align on... to set direction.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Direction + ownership**.\n\nExamples:\n\n- The direction I'd like to set is ...\n- I'd like you to own ...\n\nUse **Success criteria**.\n\nExamples:\n\n- Success looks like ...\n- Let's align on scope ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ownership** - OH-ner-ship.\n- **criteria** - kry-TEER-ee-uh.\n- **time-boxed** - TIME-bokst.",
       prompts: [
         "Set one clear direction.",
@@ -9493,6 +9909,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What options do you see? / What would success look like? / What's the smallest next step? / What support do you need? to coach.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Coaching questions**.\n\nExamples:\n\n- What options do you see?\n- What's the smallest next step?\n\nUse **Support + ownership**.\n\nExamples:\n\n- What support do you need?\n- Walk me through your thinking.",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ownership** - OH-ner-ship.\n- **unblock** - un-BLOK.\n- **checklist** - CHEK-list.",
       prompts: [
         "Ask for options instead of giving answers.",
@@ -9546,6 +9964,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use One thing I'd suggest is... / The impact is... / A concrete improvement would be... / Would you be open to... to give feedback.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Feedback framing**.\n\nExamples:\n\n- Overall it's ...\n- One thing I'd suggest is ...\n\nUse **Impact + improvement**.\n\nExamples:\n\n- The impact is that ...\n- A concrete improvement would be ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **actionable** - AK-shuh-nuh-buhl.\n- **stakeholders** - STAYK-hohl-derz.\n- **revise** - ri-VIZE.",
       prompts: [
         "Give one specific suggestion.",
@@ -9599,6 +10019,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use We have three options... / The trade-off is... / Given our constraints... / I'd recommend... / Can we agree on... to guide decisions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Decision structure**.\n\nExamples:\n\n- We have three options: ...\n- The trade-off is ...\n\nUse **Recommendation + agreement**.\n\nExamples:\n\n- Given our constraints, I'd recommend ...\n- Can we agree on ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cadence** - KAY-dens.\n- **operational** - op-uh-RAY-shuh-nl.\n- **metrics** - MET-riks.",
       prompts: [
         "List options clearly.",
@@ -9652,6 +10074,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine direction setting, coaching questions, feedback framing, and decision structure into one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Leadership & coaching toolkit**.\n\nExamples:\n\n- The direction I'd like to set is ... Success looks like ...\n- What options do you see? What's the smallest next step?\n- One thing I'd suggest is ... The impact is ... A concrete improvement would be ...\n- We have three options ... The trade-off is ... Given our constraints, I'd recommend ...\n- Can we agree on ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **accountability** - uh-kown-tuh-BIL-ih-tee.\n- **constraints** - kun-STRAYNTS.\n- **recommend** - rek-uh-MEND.",
       prompts: [
         "Set direction and ask for options.",
@@ -9703,6 +10127,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What I'm hearing is... / Are you implying that...? / It sounds like... / Just to check... to catch implied meaning.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Implied meaning checks**.\n\nExamples:\n\n- It sounds like ...\n- Are you implying that ...?\n- Just to check, ...\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- So you're saying ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **implying** - im-PLY-ing.\n- **phased** - FAYZD.\n- **moving parts** - MOO-ving parts.",
       prompts: [
         "Interpret a concern neutrally.",
@@ -9754,6 +10180,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me make sure I got this... / The key points are... / If I understand correctly... / Here's how I'd respond... to respond to long turns.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Summarizing long turns**.\n\nExamples:\n\n- Let me make sure I got this: ...\n- The key points are: ...\n\nUse **Structured response**.\n\nExamples:\n\n- If I understand correctly, ...\n- Here's how I'd respond: ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **dependencies** - di-PEN-den-seez.\n- **visibility** - viz-uh-BIL-ih-tee.\n- **check-ins** - CHEK-inz.",
       prompts: [
         "Summarize a long explanation.",
@@ -9805,6 +10233,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use So, to summarize... / Just to confirm... / The decision is... / The open questions are... to summarize.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Structured summary**.\n\nExamples:\n\n- So, to summarize: ...\n- The decision is ...\n- The open questions are ...\n\nUse **Confirmation**.\n\nExamples:\n\n- Just to confirm, ...\n- Does that capture it accurately?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **resourcing** - ree-SOR-sing.\n- **alignment** - uh-LYNT-ment.\n- **capture** - KAP-cher.",
       prompts: [
         "Start a summary clearly.",
@@ -9858,6 +10288,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use When you say X, do you mean...? / What's your assumption about...? / What would change your mind? / What's the next step? to follow up.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying meaning**.\n\nExamples:\n\n- When you say X, do you mean ...?\n- Do you mean X or Y?\n\nUse **Assumptions + criteria**.\n\nExamples:\n\n- What's your assumption about ...?\n- What would change your mind about ...?",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cautious** - KAW-shus.\n- **ambiguous** - am-BIG-yoo-us.\n- **criteria** - kry-TEER-ee-uh.",
       prompts: [
         "Clarify a vague word with two options.",
@@ -9909,6 +10341,8 @@ export const lessonCatalog = [
       ],
       grammar: "Combine implied meaning checks, structured summaries, and follow-up questions into one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advanced listening toolkit**.\n\nExamples:\n\n- It sounds like ... Just to check, are you implying ...?\n- Let me make sure I got this: ... The key points are ...\n- So, to summarize: ... The decision is ... The open questions are ...\n- When you say X, do you mean Y or Z? What would change your mind ...?\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **implied** - im-PLYD.\n- **summarize** - SUM-uh-rise.\n- **follow-up** - FAH-loh-up.",
       prompts: [
         "Check implied meaning, then summarize.",
@@ -9960,6 +10394,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use On balance... / To be precise... / What I can commit to is... / The key trade-off is... / Next steps are... to sound strategic.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Nuance + precision**.\n\nExamples:\n\n- On balance, I support it, but ...\n- To be precise, ...\n\nUse **Strategic commitments**.\n\nExamples:\n\n- What I can commit to is ...\n- Next steps are: I'll ..., and we'll ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **on balance** - on BAL-uhns.\n- **precise** - pri-SICE.\n- **commit** - kuh-MIT.",
       prompts: [
         "Give a nuanced position with a condition.",
@@ -10015,6 +10451,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me frame this... / The core assumption is... / If we accept that, then... / On the other hand... / In short... to debate clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Framing + assumptions**.\n\nExamples:\n\n- Let me frame this: ...\n- The core assumption is that ...\n\nUse **Conditional reasoning**.\n\nExamples:\n\n- If we accept X, then we should Y.\n- On the other hand, ...\n- In short: ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **assumption** - uh-SUMP-shun.\n- **time-box** - TIME-boks.\n- **validate** - VAL-ih-date.",
       prompts: [
         "Frame your argument in one sentence.",
@@ -10066,6 +10504,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use What I'm hearing is... / When you say X, do you mean Y or Z? / What would success look like? / What I can commit to is... to lead with listening.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- It sounds like ...\n\nUse **Coaching questions**.\n\nExamples:\n\n- What would success look like ...?\n- When you say X, do you mean Y or Z?\n\nUse **Leadership close**.\n\nExamples:\n\n- Next steps are: you'll ..., and I'll ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **hesitant** - HEZ-ih-tunt.\n- **visibility** - viz-uh-BIL-ih-tee.\n- **stakeholders** - STAKE-hohl-derz.",
       prompts: [
         "Mirror a concern without assuming details.",
@@ -10117,6 +10557,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me frame this... / On balance... / To be precise... / The decision is... / The open questions are... / Next steps are... to stay structured.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Test-style structure**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but ...\n- To be precise, ...\n- The decision is ...\n- The open questions are ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidence** - KON-fih-dens.\n- **scaling** - SKAY-ling.\n- **resourcing** - ree-SOR-sing.",
       prompts: [
         "Frame the issue in one line.",
@@ -10168,6 +10610,8 @@ export const lessonCatalog = [
       ],
       grammar: "Use Let me frame this... / On balance... / What I'm hearing is... / The decision is... / The open questions are... / Next steps are... to lead end-to-end.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Final conversation toolkit**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but only if ...\n- What I'm hearing is ...\n- When you say X, do you mean Y or Z?\n- The decision is ...\n- Next steps are ...",
+      patterns: [
+      ],
       pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **accountability** - uh-kown-tuh-BIL-ih-tee.\n- **criteria** - kry-TEER-ee-uh.\n- **stakeholder** - STAKE-hohl-der.",
       prompts: [
         "Frame the conversation goal.",

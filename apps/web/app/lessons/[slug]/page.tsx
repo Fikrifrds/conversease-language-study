@@ -75,7 +75,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               <h2 className="text-xl font-semibold">Grammar for Conversation</h2>
               <p className="mt-2 leading-7 text-ink/75">{lesson.grammar}</p>
               <div className="mt-4 rounded-lg bg-white/60 p-4">
-                <SimpleMarkdown markdown={lesson.grammarNotes} />
+                <SimpleMarkdown markdown={lesson.grammarNotes} dropLeadingHeading />
               </div>
             </section>
 
@@ -85,7 +85,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                 <h2 className="text-xl font-semibold">Speak Clearly</h2>
               </div>
               <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
-                <SimpleMarkdown markdown={lesson.pronunciationDrill} />
+                <SimpleMarkdown markdown={lesson.pronunciationDrill} dropLeadingHeading />
               </div>
               <PronunciationRepeatPractice drillMarkdown={lesson.pronunciationDrill} />
               <SpeakClearlyPractice prompts={lesson.prompts} />
@@ -103,14 +103,14 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
               <h2 className="text-xl font-semibold">Reading Support</h2>
               <div className="mt-4">
-                <SimpleMarkdown markdown={lesson.readingSupport} />
+                <SimpleMarkdown markdown={lesson.readingSupport} dropLeadingHeading />
               </div>
             </section>
 
             <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
               <h2 className="text-xl font-semibold">Writing Support</h2>
               <div className="mt-4">
-                <SimpleMarkdown markdown={lesson.writingSupport} />
+                <SimpleMarkdown markdown={lesson.writingSupport} dropLeadingHeading />
               </div>
             </section>
 

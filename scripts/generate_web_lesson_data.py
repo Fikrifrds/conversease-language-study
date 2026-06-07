@@ -67,6 +67,24 @@ def read_markdown(path: Path) -> str:
     return path.read_text(encoding="utf-8").strip()
 
 
+def extract_patterns(grammar_notes_markdown: str) -> list[str]:
+    match = re.search(r"```(?:txt)?\n([\s\S]*?)\n```", grammar_notes_markdown)
+    if match:
+        return [line.strip() for line in match.group(1).splitlines() if line.strip()][:12]
+
+    fallback = re.search(r"^Pattern(?:s)?:\s*$([\s\S]*?)(?:\n\s*\n|^##\s+)", grammar_notes_markdown, re.MULTILINE)
+    if fallback:
+        raw = fallback.group(1)
+        lines = []
+        for line in raw.splitlines():
+            cleaned = line.strip().lstrip("-").strip()
+            if cleaned:
+                lines.append(cleaned)
+        return lines[:12]
+
+    return []
+
+
 def parse_translations(path: Path) -> list[str]:
     """Return the Indonesian side of transcript_translation.md, in order.
 
@@ -126,6 +144,7 @@ def build_lesson(unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
     pronunciation_drill = read_markdown(lesson_dir / "pronunciation_drill.md")
     reading_support = read_markdown(lesson_dir / "reading_support.md")
     writing_support = read_markdown(lesson_dir / "writing_support.md")
+    patterns = extract_patterns(grammar_notes)
 
     turns = listening_script_to_dialogue_turns(lesson_dir / "listening_script.md")
     dialogue = [
@@ -186,6 +205,7 @@ def build_lesson(unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
         "phrases": phrases,
         "grammar": grammar,
         "grammarNotes": grammar_notes,
+        "patterns": patterns,
         "pronunciationDrill": pronunciation_drill,
         "prompts": prompts,
         "quiz": quiz,
@@ -306,6 +326,10 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
         lines.append("      ],")
         lines.append(f"      grammar: {js_string(lesson['grammar'])},")
         lines.append(f"      grammarNotes: {js_string(lesson['grammarNotes'])},")
+        lines.append("      patterns: [")
+        for pattern in lesson["patterns"]:
+            lines.append(f"        {js_string(pattern)},")
+        lines.append("      ],")
         lines.append(f"      pronunciationDrill: {js_string(lesson['pronunciationDrill'])},")
         lines.append("      prompts: [")
         for prompt in lesson["prompts"]:

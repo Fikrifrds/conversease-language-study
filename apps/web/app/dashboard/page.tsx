@@ -2,6 +2,7 @@ import { MessageCircle } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { ActionButton } from "@/components/action-button";
 import { DashboardLearningProgress } from "@/components/dashboard-learning-progress";
+import { DashboardReviewToday } from "@/components/dashboard-review-today";
 import { DashboardRecommendedLessons } from "@/components/dashboard-recommended-lessons";
 import { PracticeProgressSummary } from "@/components/practice-progress-summary";
 
@@ -21,8 +22,9 @@ export default function DashboardPage() {
 
         <DashboardLearningProgress />
 
-        <div className="mt-5 grid gap-5 lg:grid-cols-2">
+        <div className="mt-5 grid gap-5 lg:grid-cols-3">
           <PracticeProgressSummary />
+          <DashboardReviewToday />
           <DashboardRecommendedLessons />
         </div>
       </section>
