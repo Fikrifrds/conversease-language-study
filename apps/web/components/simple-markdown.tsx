@@ -124,7 +124,7 @@ export function SimpleMarkdown({ markdown, dropLeadingHeading = false }: { markd
     <div className="space-y-3 text-ink/75">
       {blocks.map((block, index) => {
         if (block.type === "heading") {
-          const classes = block.level === 1 ? "text-lg font-semibold text-ink" : block.level === 2 ? "font-semibold text-ink" : "text-sm font-semibold text-ink";
+          const classes = block.level === 1 ? "mt-2 text-lg font-semibold text-ink" : block.level === 2 ? "mt-2 text-base font-semibold text-ink" : "text-sm font-semibold uppercase tracking-wide text-ink/70";
           const Tag = block.level === 1 ? "h3" : block.level === 2 ? "h4" : "h5";
           return (
             <Tag key={index} className={classes}>

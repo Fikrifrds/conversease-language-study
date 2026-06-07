@@ -132,7 +132,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             </div>
           </article>
 
-          <aside className="space-y-4">
+          <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
             <LessonProgressPanel
               lessonSlug={lesson.slug}
               sections={lesson.sections.map((section) => section.label)}

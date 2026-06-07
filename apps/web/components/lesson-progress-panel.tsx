@@ -120,15 +120,19 @@ export function LessonProgressPanel({
         disabled={completed || isCompleting || isLoading}
         className="focus-ring mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
       >
-        <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-        {completed ? "Completed" : isCompleting ? "Saving" : "Mark Lesson Complete"}
+        {isCompleting ? (
+          <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+        ) : (
+          <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+        )}
+        {completed ? "Selesai" : isCompleting ? "Menyimpan…" : "Tandai Lesson Selesai"}
       </button>
       {completed ? (
         <Link
           href="/progress"
           className="focus-ring mt-3 inline-flex w-full items-center justify-center rounded-lg bg-mint px-4 py-3 text-sm font-semibold hover:bg-[#fff2dc]"
         >
-          View Progress
+          Lihat Progress
         </Link>
       ) : null}
     </section>
