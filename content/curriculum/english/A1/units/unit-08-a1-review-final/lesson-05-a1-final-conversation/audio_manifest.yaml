@@ -1,4 +1,4 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T061103Z.wav
-  duration_seconds: 37.51
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T231127Z.wav
+  duration_seconds: 47.67
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-  line_count: 14
+    Staff: English_CalmWoman
+  line_count: 15
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T061103Z.wav
-  trace_id: 06719b57773d3a2e96fd34c3ed090346,06719b5a37a08eefd1c7a2aaab2f1ce6,06719b5c5dc3be42d57a4e5b63bbd179,06719b5e3a0a24371688434ffd908b47,06719b6089bdf5fbb5ea50bc99943f23,06719b6329eb2493729617a9bc724873,06719b65afbb9e47f33a435aed38c361,06719b67e9d2b768aa9cf7305ebb8b02,06719b696c6c6b3f8c2863e135a5d865,06719b6b7dcbd86d6aea4bf8b44ba720,06719b6dc364388ffbf5308f7e395e12,06719b7099c0f5fb1a2c9da514217130,06719b7219adda41724a23657e52f12c,06719b749a5d3033a38b2ed3a9763445
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260605T231127Z.wav
+  trace_id: 06728a7ef46bb9bafc504b20d13d5593,06728a814d24ea7f335a363078f3db85,06728a83dabe0656189482e741094404,06728a8518cf6368296c0a5a70e6aac4,06728a87b4d466448a1c3b25c702b878,06728a8a99ac3272ede48d18b1c79b77,06728a8c21386cad884ef4bff284df2d,06728a8e6cf6828b1d129aed8dd33d31,06728a9061b1388c0060052793a37bc2,06728a925d1e557c1381997fb020724f,06728a952df6f65b3fa3167c96bb1ba7,06728a9773b95a206f0cef08a40be221,06728a992db21bb53bf9729188185cdc,06728a9b9c545b42a28dcfb66c8082ca,06728a9d830964f4bf041763633b04c1
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:11:03.284872+00:00'
+  generated_at: '2026-06-05T23:11:27.929033+00:00'
 lesson_key: lesson-05-a1-final-conversation
