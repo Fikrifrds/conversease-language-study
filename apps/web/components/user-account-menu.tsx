@@ -1,9 +1,20 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { LogOut, ShieldCheck, UserCircle } from "lucide-react";
+import {
+  Award,
+  ChevronDown,
+  CreditCard,
+  LogOut,
+  Settings,
+  ShieldCheck,
+  Sparkles,
+  Timer,
+  UserCircle
+} from "lucide-react";
+import { productRoutes } from "@conversease/shared";
 import {
   ApiRequestError,
   clearAuthSession,
@@ -12,11 +23,15 @@ import {
   saveAuthSession,
   type AuthSession
 } from "@/lib/auth-api";
+import { getBillingAccess, type BillingAccess } from "@/lib/billing-api";
 
 export function UserAccountMenu() {
   const router = useRouter();
   const [mounted, setMounted] = useState(false);
   const [session, setSession] = useState<AuthSession | null>(null);
+  const [access, setAccess] = useState<BillingAccess | null>(null);
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     let ignore = false;
@@ -36,7 +51,6 @@ export function UserAccountMenu() {
     async function refreshUser() {
       try {
         const user = await getCurrentUser();
-
         if (!ignore) {
           const nextSession = { accessToken: activeSession.accessToken, user };
           saveAuthSession(nextSession);
@@ -46,30 +60,53 @@ export function UserAccountMenu() {
         if (!(error instanceof ApiRequestError) || ![401, 403].includes(error.status)) {
           return;
         }
-
         clearAuthSession();
-
         if (!ignore) {
           setSession(null);
         }
       }
     }
 
+    async function loadAccess() {
+      try {
+        const nextAccess = await getBillingAccess();
+        if (!ignore) {
+          setAccess(nextAccess);
+        }
+      } catch {
+        /* billing info is best-effort */
+      }
+    }
+
     refreshUser();
+    loadAccess();
 
     return () => {
       ignore = true;
     };
   }, []);
 
+  useEffect(() => {
+    function onClickOutside(event: MouseEvent) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setOpen(false);
+      }
+    }
+    if (open) {
+      document.addEventListener("mousedown", onClickOutside);
+    }
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, [open]);
+
   function handleLogout() {
     clearAuthSession();
     setSession(null);
+    setOpen(false);
     router.replace("/login");
   }
 
   if (!mounted) {
-    return <div className="h-10 w-20 rounded-lg bg-ink/5" aria-hidden="true" />;
+    return <div className="h-10 w-28 rounded-lg bg-ink/5" aria-hidden="true" />;
   }
 
   if (!session) {
@@ -83,35 +120,122 @@ export function UserAccountMenu() {
     );
   }
 
+  const isAdmin = session.user.role === "admin";
+  const isPro = access?.isPro ?? false;
+  const minutes = access?.minutes.totalMinutes;
+
   return (
     <div className="flex items-center gap-2">
-      {session.user.role === "admin" ? (
-        <Link
-          href="/admin/cms"
-          className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-lg border border-ink/15 text-leaf hover:bg-mint"
-          title="Admin"
-          aria-label="Admin"
-        >
-          <ShieldCheck className="h-4 w-4" aria-hidden="true" />
-        </Link>
+      {/* Minutes chip — always visible so users see their Coach quota. */}
+      <span
+        className="hidden h-10 items-center gap-1.5 rounded-lg border border-ink/10 bg-white px-3 text-sm font-semibold text-ink/80 sm:inline-flex"
+        title="Sisa menit Conversation Coach"
+      >
+        <Timer className="h-4 w-4 text-leaf" aria-hidden="true" />
+        {minutes ?? "—"}
+        <span className="text-xs font-medium text-ink/50">menit</span>
+      </span>
+
+      {/* Plan badge: Pro highlighted, free shows an upgrade affordance. */}
+      {isPro ? (
+        <span className="hidden h-10 items-center gap-1 rounded-lg bg-leaf px-3 text-sm font-bold text-white sm:inline-flex">
+          <Sparkles className="h-4 w-4" aria-hidden="true" />
+          Pro
+        </span>
       ) : null}
-      <Link
-        href="/settings"
-        className="focus-ring inline-flex h-10 w-10 items-center justify-center gap-2 rounded-lg border border-ink/15 text-sm font-semibold text-ink/80 hover:bg-mint sm:w-auto sm:max-w-[180px] sm:justify-start sm:px-3"
-        title={session.user.name}
-      >
-        <UserCircle className="h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-        <span className="hidden truncate sm:block">{session.user.name}</span>
-      </Link>
-      <button
-        type="button"
-        onClick={handleLogout}
-        className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-lg border border-ink/15 text-ink/70 hover:bg-[#fde7df] hover:text-ink"
-        title="Logout"
-        aria-label="Logout"
-      >
-        <LogOut className="h-4 w-4" aria-hidden="true" />
-      </button>
+
+      <div className="relative" ref={menuRef}>
+        <button
+          type="button"
+          onClick={() => setOpen((value) => !value)}
+          aria-haspopup="menu"
+          aria-expanded={open}
+          className="focus-ring inline-flex h-10 items-center gap-2 rounded-lg border border-ink/15 px-2.5 text-sm font-semibold text-ink/80 hover:bg-mint sm:px-3"
+        >
+          <UserCircle className="h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+          <span className="hidden max-w-[120px] truncate sm:block">{session.user.name}</span>
+          <ChevronDown className="h-4 w-4 shrink-0 text-ink/50" aria-hidden="true" />
+        </button>
+
+        {open ? (
+          <div
+            role="menu"
+            className="absolute right-0 z-50 mt-2 w-60 overflow-hidden rounded-lg border border-ink/10 bg-white shadow-lg"
+          >
+            <div className="border-b border-ink/10 px-4 py-3">
+              <p className="truncate text-sm font-semibold text-ink">{session.user.name}</p>
+              <p className="truncate text-xs text-ink/55">{session.user.email}</p>
+              <div className="mt-2 flex items-center gap-2">
+                <span
+                  className={`inline-flex items-center gap-1 rounded-lg px-2 py-0.5 text-xs font-bold ${
+                    isPro ? "bg-mint text-leaf" : "bg-paper text-ink/60"
+                  }`}
+                >
+                  {isPro ? <Sparkles className="h-3 w-3" aria-hidden="true" /> : null}
+                  {isPro ? "Pro" : "Free"}
+                </span>
+                <span className="inline-flex items-center gap-1 text-xs text-ink/60">
+                  <Timer className="h-3 w-3 text-leaf" aria-hidden="true" />
+                  {minutes ?? "—"} menit
+                </span>
+              </div>
+            </div>
+
+            <nav className="py-1" aria-label="Account">
+              <MenuLink href={productRoutes.billing} icon={CreditCard} onClick={() => setOpen(false)}>
+                Billing & Paket
+              </MenuLink>
+              <MenuLink href={productRoutes.levelTestA1} icon={Award} onClick={() => setOpen(false)}>
+                A1 Test
+              </MenuLink>
+              <MenuLink href="/settings" icon={Settings} onClick={() => setOpen(false)}>
+                Pengaturan
+              </MenuLink>
+              {isAdmin ? (
+                <MenuLink href="/admin/cms" icon={ShieldCheck} onClick={() => setOpen(false)}>
+                  Admin
+                </MenuLink>
+              ) : null}
+            </nav>
+
+            <div className="border-t border-ink/10 py-1">
+              <button
+                type="button"
+                onClick={handleLogout}
+                role="menuitem"
+                className="focus-ring flex w-full items-center gap-2 px-4 py-2.5 text-left text-sm font-medium text-ink/80 hover:bg-[#fde7df] hover:text-ink"
+              >
+                <LogOut className="h-4 w-4" aria-hidden="true" />
+                Keluar
+              </button>
+            </div>
+          </div>
+        ) : null}
+      </div>
     </div>
+  );
+}
+
+function MenuLink({
+  href,
+  icon: Icon,
+  onClick,
+  children
+}: {
+  href: string;
+  icon: typeof CreditCard;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      role="menuitem"
+      onClick={onClick}
+      className="focus-ring flex items-center gap-2 px-4 py-2.5 text-sm font-medium text-ink/80 hover:bg-mint hover:text-ink"
+    >
+      <Icon className="h-4 w-4 text-ink/55" aria-hidden="true" />
+      {children}
+    </Link>
   );
 }

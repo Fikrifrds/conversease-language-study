@@ -1,20 +1,20 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
-import { Award, BookOpen, CreditCard, Home, MessageCircle, Mic, TrendingUp } from "lucide-react";
+import { BookOpen, Home, MessageCircle, Mic, TrendingUp } from "lucide-react";
 import { productRoutes } from "@conversease/shared";
 import { AuthGuard } from "@/components/auth-guard";
 import { BrandMark } from "@/components/brand-mark";
 import { EmailVerificationNotice } from "@/components/email-verification-notice";
 import { UserAccountMenu } from "@/components/user-account-menu";
 
+// Primary learning destinations. Secondary items (A1 Test, Billing) live in the
+// account dropdown to keep the bar uncluttered.
 const navItems = [
   { href: productRoutes.dashboard, label: "Dashboard", shortLabel: "Dashboard", icon: Home },
   { href: productRoutes.courses, label: "Kelas", shortLabel: "Kelas", icon: BookOpen },
   { href: productRoutes.conversationCoach, label: "Conversation Coach", shortLabel: "Coach", icon: MessageCircle },
   { href: productRoutes.conversationPartner, label: "Conversation Partner", shortLabel: "Partner", icon: Mic },
-  { href: productRoutes.progress, label: "Progress", shortLabel: "Progress", icon: TrendingUp },
-  { href: productRoutes.levelTestA1, label: "A1 Test", shortLabel: "A1 Test", icon: Award },
-  { href: productRoutes.billing, label: "Billing", shortLabel: "Billing", icon: CreditCard }
+  { href: productRoutes.progress, label: "Progress", shortLabel: "Progress", icon: TrendingUp }
 ];
 
 type AppShellProps = {
@@ -55,18 +55,16 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
       <main>{children}</main>
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper md:hidden" aria-label="Mobile">
         <div className="grid grid-cols-5">
-          {navItems
-            .filter((item) => item.href !== productRoutes.levelTestA1)
-            .map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className="focus-ring flex min-h-14 flex-col items-center justify-center gap-1 text-[11px] font-medium text-ink/70"
-              >
-                <item.icon className="h-4 w-4" aria-hidden="true" />
-                <span className="max-w-full truncate px-1">{item.shortLabel}</span>
-              </Link>
-            ))}
+          {navItems.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="focus-ring flex min-h-14 flex-col items-center justify-center gap-1 text-[11px] font-medium text-ink/70"
+            >
+              <item.icon className="h-4 w-4" aria-hidden="true" />
+              <span className="max-w-full truncate px-1">{item.shortLabel}</span>
+            </Link>
+          ))}
         </div>
       </nav>
     </div>
