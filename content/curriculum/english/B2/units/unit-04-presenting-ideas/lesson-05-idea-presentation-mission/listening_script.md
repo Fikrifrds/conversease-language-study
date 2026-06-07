@@ -1,8 +1,7 @@
 # Dialogue Script
 
 **Alex:** You have two minutes. Present your idea.  
-**Mina:** Today I'd like to propose a shared onboarding checklist.  
-**Mina:** First, the problem is onboarding is inconsistent. Next, the proposal is a checklist plus a buddy. Finally, we'll pilot it next week.  
+**Mina:** Today I'd like to propose a shared onboarding checklist. First, the problem is onboarding is inconsistent. Next, the proposal is a checklist plus a buddy. Finally, we'll pilot it next week.  
 **Alex:** What are the benefits?  
 **Mina:** The main benefit is faster onboarding. Another benefit is fewer repeated questions.  
 **Alex:** Any risks?  

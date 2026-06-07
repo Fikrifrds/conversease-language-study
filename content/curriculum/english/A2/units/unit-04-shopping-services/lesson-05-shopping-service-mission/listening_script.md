@@ -7,6 +7,7 @@
 **Ben:** Which one is cheaper?  
 **Staff:** This one is cheaper.  
 **Ben:** Okay. I'll take this one.  
+**Staff:** Great choice. Anything else?  
 **Ben:** Also, could you help me? Where are the batteries?  
 **Staff:** They're over there, next to the cash register.  
 **Ben:** Great. Thank you.
