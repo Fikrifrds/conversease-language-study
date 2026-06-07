@@ -5,5 +5,5 @@
 - **Mina:** I have a headache and I'm really tired. -> Aku sakit kepala dan capek banget.
 - **Hilmi:** Did you sleep late last night? -> Kamu tidur larut tadi malam?
 - **Mina:** Yes. I studied and went to bed late. -> Iya. Aku belajar dan tidur larut.
-- **Hilmi:** What did you do yesterday? -> Kamu ngapain kemarin?
+- **Hilmi:** And what did you do yesterday? -> Terus, kamu ngapain kemarin?
 - **Mina:** I went to the clinic and then I stayed home. -> Aku pergi ke klinik lalu di rumah aja.

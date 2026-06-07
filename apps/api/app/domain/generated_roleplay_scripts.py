@@ -618,7 +618,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     "review-health-and-past": (
         CoachTurn(coach="You don't look well. What's wrong?", hint="Bilang kamu nggak enak badan + 1 gejala.", sample_answer="I don't feel well. I have a headache.", focus="Describe symptom", expected_keywords=("feel well", "headache")),
         CoachTurn(coach="Did you sleep late last night?", hint="Jawab yes/no, lalu tambah detail singkat.", sample_answer="Yes. I went to bed late.", focus="Answer past question", expected_keywords=("yes", "late")),
-        CoachTurn(coach="What did you do yesterday?", hint="Jawab dengan 1-2 aktivitas (past).", sample_answer="I went to the clinic and stayed home.", focus="Describe yesterday", expected_keywords=("went", "stayed")),
+        CoachTurn(coach="And what did you do yesterday?", hint="Jawab dengan 1-2 aktivitas (past).", sample_answer="I went to the clinic and stayed home.", focus="Describe yesterday", expected_keywords=("went", "stayed")),
     ),
     "review-information-and-clients": (
         CoachTurn(coach="Is this report reliable?", hint="Based on the source... verify...", sample_answer="Based on the source, it's a partial snapshot. We should verify it with our support data.", focus="Reliability", expected_keywords=("source", "verify")),

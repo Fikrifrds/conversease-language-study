@@ -22,7 +22,7 @@ turns:
   expected_keywords:
   - 'yes'
   - late
-- coach: What did you do yesterday?
+- coach: And what did you do yesterday?
   hint: Jawab dengan 1-2 aktivitas (past).
   sample_answer: I went to the clinic and stayed home.
   focus: Describe yesterday
@@ -31,7 +31,7 @@ turns:
   - stayed
 target_phrases:
 - I don't feel well.
-- What did you do yesterday?
+- And what did you do yesterday?
 - Did you sleep late?
 rubric:
   speaking:

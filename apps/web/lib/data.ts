@@ -3501,7 +3501,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "I have a headache and I'm really tired." },
         { speaker: "Hilmi", text: "Did you sleep late last night?" },
         { speaker: "Mina", text: "Yes. I studied and went to bed late." },
-        { speaker: "Hilmi", text: "What did you do yesterday?" },
+        { speaker: "Hilmi", text: "And what did you do yesterday?" },
         { speaker: "Mina", text: "I went to the clinic and then I stayed home." },
       ],
       translation: [
@@ -3510,7 +3510,7 @@ export const lessonCatalog = [
         "Aku sakit kepala dan capek banget.",
         "Kamu tidur larut tadi malam?",
         "Iya. Aku belajar dan tidur larut.",
-        "Kamu ngapain kemarin?",
+        "Terus, kamu ngapain kemarin?",
         "Aku pergi ke klinik lalu di rumah aja.",
       ],
       phrases: [
@@ -9754,7 +9754,7 @@ export const coachTurnsByLessonSlug = {
   "review-health-and-past": [
     { coach: "You don't look well. What's wrong?", hint: "Bilang kamu nggak enak badan + 1 gejala.", sampleAnswer: "I don't feel well. I have a headache.", focus: "Describe symptom" },
     { coach: "Did you sleep late last night?", hint: "Jawab yes/no, lalu tambah detail singkat.", sampleAnswer: "Yes. I went to bed late.", focus: "Answer past question" },
-    { coach: "What did you do yesterday?", hint: "Jawab dengan 1-2 aktivitas (past).", sampleAnswer: "I went to the clinic and stayed home.", focus: "Describe yesterday" },
+    { coach: "And what did you do yesterday?", hint: "Jawab dengan 1-2 aktivitas (past).", sampleAnswer: "I went to the clinic and stayed home.", focus: "Describe yesterday" },
   ],
   "review-information-and-clients": [
     { coach: "Is this report reliable?", hint: "Based on the source... verify...", sampleAnswer: "Based on the source, it's a partial snapshot. We should verify it with our support data.", focus: "Reliability" },

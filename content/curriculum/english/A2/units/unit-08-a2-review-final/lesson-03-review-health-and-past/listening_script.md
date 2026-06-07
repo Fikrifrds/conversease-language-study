@@ -5,7 +5,7 @@
 **Mina:** I have a headache and I'm really tired.  
 **Hilmi:** Did you sleep late last night?  
 **Mina:** Yes. I studied and went to bed late.  
-**Hilmi:** What did you do yesterday?  
+**Hilmi:** And what did you do yesterday?  
 **Mina:** I went to the clinic and then I stayed home.  
 
 ## Audio Direction
