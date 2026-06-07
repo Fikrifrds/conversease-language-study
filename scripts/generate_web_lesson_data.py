@@ -61,6 +61,12 @@ def lesson_dir_for(lesson: dict[str, Any]) -> Path:
     return Path(lesson["content_files"]["lesson"]).parent
 
 
+def read_markdown(path: Path) -> str:
+    if not path.exists():
+        raise GeneratorError(f"Missing markdown file: {path}")
+    return path.read_text(encoding="utf-8").strip()
+
+
 def parse_translations(path: Path) -> list[str]:
     """Return the Indonesian side of transcript_translation.md, in order.
 
@@ -115,6 +121,12 @@ def build_lesson(unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
     lesson_dir = lesson_dir_for(lesson)
     slug = lesson["slug"]
 
+    conversation_goal_details = read_markdown(lesson_dir / "conversation_goal.md")
+    grammar_notes = read_markdown(lesson_dir / "grammar_for_conversation.md")
+    pronunciation_drill = read_markdown(lesson_dir / "pronunciation_drill.md")
+    reading_support = read_markdown(lesson_dir / "reading_support.md")
+    writing_support = read_markdown(lesson_dir / "writing_support.md")
+
     turns = listening_script_to_dialogue_turns(lesson_dir / "listening_script.md")
     dialogue = [
         {"speaker": t.speaker, "text": strip_audio_tags(t.text)} for t in turns
@@ -167,13 +179,18 @@ def build_lesson(unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
         "title": lesson["title"],
         "unit": unit_title,
         "conversationGoal": lesson["conversation_goal"],
+        "conversationGoalDetails": conversation_goal_details,
         "setup": extract_situation(lesson_dir / "lesson.md"),
         "dialogue": dialogue,
         "translation": translation,
         "phrases": phrases,
         "grammar": grammar,
+        "grammarNotes": grammar_notes,
+        "pronunciationDrill": pronunciation_drill,
         "prompts": prompts,
         "quiz": quiz,
+        "readingSupport": reading_support,
+        "writingSupport": writing_support,
     }
 
 
@@ -268,6 +285,7 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
         lines.append(f"      title: {js_string(lesson['title'])},")
         lines.append(f"      unit: {js_string(lesson['unit'])},")
         lines.append(f"      conversationGoal: {js_string(lesson['conversationGoal'])},")
+        lines.append(f"      conversationGoalDetails: {js_string(lesson['conversationGoalDetails'])},")
         lines.append(f"      setup: {js_string(lesson['setup'])},")
         lines.append("      dialogue: [")
         for d in lesson["dialogue"]:
@@ -287,6 +305,8 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
             )
         lines.append("      ],")
         lines.append(f"      grammar: {js_string(lesson['grammar'])},")
+        lines.append(f"      grammarNotes: {js_string(lesson['grammarNotes'])},")
+        lines.append(f"      pronunciationDrill: {js_string(lesson['pronunciationDrill'])},")
         lines.append("      prompts: [")
         for prompt in lesson["prompts"]:
             lines.append(f"        {js_string(prompt)},")
@@ -297,6 +317,8 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
                 f"        {{ question: {js_string(q['question'])}, answer: {js_string(q['answer'])} }},"
             )
         lines.append("      ],")
+        lines.append(f"      readingSupport: {js_string(lesson['readingSupport'])},")
+        lines.append(f"      writingSupport: {js_string(lesson['writingSupport'])},")
         lines.append("      sections: lessonSections")
         lines.append("    }")
         blocks.append("\n".join(lines))

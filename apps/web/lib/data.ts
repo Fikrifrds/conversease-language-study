@@ -86,6 +86,7 @@ export const lessonCatalog = [
       title: "Saying Hello and Goodbye",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Start and close a very simple English conversation.",
+      conversationGoalDetails: "Start and close a very simple English conversation.\n\nLearners should be able to say:\n\n- Good morning.\n- How are you?\n- I'm good, thank you.\n- Nice to meet you.\n- See you later.",
       setup: "Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.",
       dialogue: [
         { speaker: "Alya", text: "Hi, good morning." },
@@ -109,6 +110,8 @@ export const lessonCatalog = [
         { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Casual conversation closing." },
       ],
       grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I am** or **I'm** for simple personal responses.\n\nExamples:\n\n- I'm good.\n- I'm Arif.\n- I'm from Indonesia.\n\nPattern:\n\n```txt\nI'm + adjective\nI'm + name\nI'm from + place\n```\n\nKeep the answer short and clear for A1 conversation.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. Good morning.\n2. How are you?\n3. I'm good, thank you.\n4. Nice to meet you.\n5. See you later.\n\n## Focus\n\n- Speak slowly.\n- Finish the final sound in \"meet\".\n- Keep the intonation friendly for \"How are you?\"",
       prompts: [
         "Good morning.",
         "How are you?",
@@ -118,6 +121,8 @@ export const lessonCatalog = [
         { question: "Which phrase is best for meeting someone for the first time?", answer: "Nice to meet you" },
         { question: "What does \"See you later\" mean?", answer: "Sampai nanti" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, good morning.\nMy name is Alya.\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which sentence closes the conversation?\n\nAnswer: See you later.",
+      writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A goodbye.\n\nExample:\n\n```txt\nGood morning.\nMy name is Arif.\nSee you later.\n```",
       sections: lessonSections
     },
     {
@@ -125,6 +130,7 @@ export const lessonCatalog = [
       title: "Saying Your Name",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
+      conversationGoalDetails: "Say your name naturally and ask for someone's name.\n\nLearners should be able to say:\n\n- My name is ...\n- I'm ...\n- What is your name?\n- Nice to meet you.",
       setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
       dialogue: [
         { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
@@ -145,6 +151,8 @@ export const lessonCatalog = [
         { phrase: "Please call me ...", meaning: "Panggil saya ...", usage: "Use when your nickname is easier." },
       ],
       grammar: "Use My name is + name for clear introductions. Use I'm + name for a shorter, more natural answer.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **My name is ...** or **I'm ...** to say your name.\n\nExamples:\n\n- My name is Arif.\n- I'm Arif.\n- What is your name?\n\nPattern:\n\n```txt\nMy name is + name\nI'm + name\nWhat is your name?\n```\n\nFor A1 speaking, choose one clear answer and say it slowly.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. My name is Arif.\n2. I'm Arif.\n3. What is your name?\n4. Nice to meet you.\n5. Nice to meet you too.\n\n## Focus\n\n- Link \"name is\" smoothly.\n- Keep \"What is your name?\" as one clear question.\n- Do not rush the final word \"too\".",
       prompts: [
         "My name is ...",
         "Nice to meet you.",
@@ -154,6 +162,8 @@ export const lessonCatalog = [
         { question: "Which sentence is correct?", answer: "My name is Arif." },
         { question: "What is a natural reply to \"Nice to meet you\"?", answer: "Nice to meet you too." },
       ],
+      readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, my name is Arif.\nWhat is your name?\nNice to meet you.\n```\n\nQuestion: Which sentence asks for the other person's name?\n\nAnswer: What is your name?",
+      writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A question asking for a name.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nWhat is your name?\n```",
       sections: lessonSections
     },
     {
@@ -161,6 +171,7 @@ export const lessonCatalog = [
       title: "Asking Someone's Name",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Ask someone's name politely and confirm what you heard.",
+      conversationGoalDetails: "Ask someone's name politely and confirm what you heard.\n\nLearners should be able to say:\n\n- What's your name?\n- Can you repeat that?\n- Is it ...?\n- Yes, that's right.",
       setup: "Kamu bertemu peserta baru di kelas. Tanyakan namanya, lalu ulangi nama itu dengan sopan.",
       dialogue: [
         { speaker: "Nina", text: "Hello. What's your name?" },
@@ -183,6 +194,8 @@ export const lessonCatalog = [
         { phrase: "Nice to meet you, ...", meaning: "Senang bertemu denganmu, ...", usage: "Add the person's name to sound attentive." },
       ],
       grammar: "Use What's your + noun for simple questions: What's your name? What's your job?",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What is ...?** or **What's ...?** to ask a simple question.\n\nExamples:\n\n- What is your name?\n- What's your name?\n- Can you repeat that?\n\nPattern:\n\n```txt\nWhat is + noun?\nCan you + verb?\n```\n\nUse \"Can you repeat that?\" when you need to hear the name again.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. What's your name?\n2. Can you repeat that?\n3. My name is Raka.\n4. Is it Raka?\n5. Yes, that's right.\n\n## Focus\n\n- Say \"What's your\" smoothly.\n- Pause before spelling a name.\n- Keep \"Can you repeat that?\" polite and calm.",
       prompts: [
         "What's your name?",
         "Is it ...?",
@@ -192,6 +205,8 @@ export const lessonCatalog = [
         { question: "Which question asks for a name?", answer: "What's your name?" },
         { question: "Which phrase sounds more polite?", answer: "May I know your name?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```\n\nQuestion: Which sentence asks someone to say it again?\n\nAnswer: Can you repeat that?",
+      writingSupport: "# Writing Support\n\nWrite four short lines:\n\n1. A greeting.\n2. A name question.\n3. A repeat request.\n4. A thank you.\n\nExample:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```",
       sections: lessonSections
     },
     {
@@ -199,6 +214,7 @@ export const lessonCatalog = [
       title: "Saying Where You Are From",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say where you are from and ask the same question back.",
+      conversationGoalDetails: "Say where you are from and ask the same question back.\n\nLearners should be able to say:\n\n- I'm from ...\n- Where are you from?\n- I'm from Indonesia.\n- Nice to meet you.",
       setup: "Kamu melanjutkan perkenalan singkat. Jawab asalmu, lalu tanyakan balik agar percakapan berjalan.",
       dialogue: [
         { speaker: "Maya", text: "Hi, I'm Maya. I'm from Indonesia." },
@@ -219,6 +235,8 @@ export const lessonCatalog = [
         { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "A complete model answer." },
       ],
       grammar: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm from ...** to say your country or city.\n\nExamples:\n\n- I'm from Indonesia.\n- I'm from Jakarta.\n- Where are you from?\n\nPattern:\n\n```txt\nI'm from + place\nWhere are you from?\n```\n\nUse a place name after \"from\". Keep your answer short.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. I'm from Indonesia.\n2. I'm from Jakarta.\n3. Where are you from?\n4. Nice to meet you.\n5. Nice to meet you too.\n\n## Focus\n\n- Link \"I'm from\" smoothly.\n- Stress the place name.\n- Raise your intonation slightly for \"Where are you from?\"",
       prompts: [
         "Where are you from?",
         "I live in ...",
@@ -228,6 +246,8 @@ export const lessonCatalog = [
         { question: "Which sentence talks about origin?", answer: "I'm from Indonesia." },
         { question: "Which phrase keeps the conversation going?", answer: "How about you?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, I'm Maya.\nI'm from Indonesia.\nWhere are you from?\n```\n\nQuestion: Which sentence says the country?\n\nAnswer: I'm from Indonesia.",
+      writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. Your name.\n2. Your country or city.\n3. A question asking where someone is from.\n\nExample:\n\n```txt\nI'm Arif.\nI'm from Indonesia.\nWhere are you from?\n```",
       sections: lessonSections
     },
     {
@@ -235,6 +255,7 @@ export const lessonCatalog = [
       title: "First Conversation Mission",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
+      conversationGoalDetails: "Combine greeting, name, origin, and a polite closing in one short conversation.\n\nLearners should be able to say:\n\n- Hi, my name is ...\n- I'm from ...\n- What is your name?\n- Where are you from?\n- Nice to meet you.\n- See you later.",
       setup: "Ini misi gabungan Unit 1. Selesaikan percakapan pendek tanpa melihat contoh terlalu sering.",
       dialogue: [
         { speaker: "Lina", text: "Hi, my name is Lina. What is your name?" },
@@ -257,6 +278,8 @@ export const lessonCatalog = [
         { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Close the conversation." },
       ],
       grammar: "Keep A1 conversations short: greeting + name + origin + question back + closing.",
+      grammarNotes: "# Grammar for Conversation\n\nUse short A1 patterns together to make one conversation.\n\nExamples:\n\n- My name is Lina.\n- I'm Adi.\n- I'm from Indonesia.\n- What is your name?\n- Where are you from?\n\nPatterns:\n\n```txt\nMy name is + name\nI'm + name\nI'm from + place\nWhat is your name?\nWhere are you from?\n```\n\nUse one idea per sentence. This keeps the conversation clear.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. Hi, my name is Lina.\n2. What is your name?\n3. I'm from Indonesia.\n4. Where are you from?\n5. Nice to meet you.\n6. See you later.\n\n## Focus\n\n- Pause after your greeting.\n- Say names clearly.\n- Keep questions friendly and not too fast.\n- Finish the closing phrase clearly.",
       prompts: [
         "Hi, good morning. My name is ...",
         "Where are you from?",
@@ -266,6 +289,8 @@ export const lessonCatalog = [
         { question: "What should you say after someone says \"Nice to meet you\"?", answer: "Nice to meet you too." },
         { question: "Which question can you ask back after answering your origin?", answer: "How about you?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nHi, my name is Lina.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which two sentences ask questions?\n\nAnswer: What is your name? Where are you from?",
+      writingSupport: "# Writing Support\n\nWrite a six-line first conversation:\n\n1. A greeting.\n2. Your name.\n3. Your country or city.\n4. Ask the other person's name.\n5. Ask where the person is from.\n6. Close the conversation.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nSee you later.\n```",
       sections: lessonSections
     },
     {
@@ -273,6 +298,7 @@ export const lessonCatalog = [
       title: "Spelling Your Name",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Spell your name clearly when someone needs to write it down.",
+      conversationGoalDetails: "Spell your name clearly when someone needs to write it down.\n\nLearners should be able to answer and confirm:\n\n- My name is Dimas.\n- It's spelled D-I-M-A-S.\n- That's right.\n\nLearners should also understand:\n\n- How do you spell it?",
       setup: "Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas saat diminta.",
       dialogue: [
         { speaker: "Officer", text: "Hi. What is your name?" },
@@ -298,6 +324,8 @@ export const lessonCatalog = [
         { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." },
       ],
       grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **How do you spell + it/that** to ask about spelling.\n\nExamples:\n\n- How do you spell it?\n- How do you spell that?\n- How do you spell your name?\n\nPattern:\n\n```txt\nHow do you spell + it / that / your name?\n```\n\nUse **It's spelled + letters** to answer.\n\nExample:\n\n- It's spelled D-I-M-A-S.\n\nWhen you answer, say each letter clearly and slowly.",
+      pronunciationDrill: "# Speak Clearly\n\n## Repeat\n\n1. My name is Dimas.\n2. How do you spell it?\n3. It's spelled D-I-M-A-S.\n4. Can you repeat that, please?\n5. That's right.\n\n## Focus\n\n- Say each letter slowly when you spell.\n- Pause a little between letters.\n- Keep a friendly, clear tone.",
       prompts: [
         "What is your name?",
         "How do you spell it?",
@@ -307,6 +335,8 @@ export const lessonCatalog = [
         { question: "Which question asks someone to spell a word?", answer: "How do you spell it?" },
         { question: "What does \"That's right\" mean?", answer: "Betul" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your name?\nDimas: My name is Dimas.\nOfficer: How do you spell it?\nDimas: It's spelled D-I-M-A-S.\n```\n\nQuestion: What does the officer ask after the name?\n\nAnswer: How do you spell it?",
+      writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. Say your name.\n2. Spell your name letter by letter.\n3. Confirm the spelling.\n\nExample:\n\n```txt\nMy name is Dimas.\nD-I-M-A-S.\nThat's right.\n```",
       sections: lessonSections
     },
     {
@@ -314,6 +344,7 @@ export const lessonCatalog = [
       title: "Giving Phone Numbers",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
+      conversationGoalDetails: "Give a phone number clearly and confirm it when someone reads it back.\n\nLearners should be able to answer and confirm:\n\n- It's zero eight one two, three four five six, seven eight nine zero.\n- Thank you.\n\nLearners should also understand:\n\n- What is your phone number?",
       setup: "Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.",
       dialogue: [
         { speaker: "Officer", text: "What is your phone number?" },
@@ -339,6 +370,8 @@ export const lessonCatalog = [
         { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask politely when you miss a number." },
       ],
       grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What is your + noun?** to ask for contact information.\n\nExamples:\n\n- What is your phone number?\n- What is your email address?\n\nUse **It's + number** to answer.\n\nPattern:\n\n```txt\nWhat is your + phone number?\nIt's + phone number.\n```\n\nFor phone numbers, say each number clearly. Pause after small groups of numbers.",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What is your phone number?\n2. It's zero eight one two.\n3. Three four five six.\n4. Seven eight nine zero.\n5. Yes, that's correct.\n\n            ## Focus\n\n            - Say phone numbers in small groups.\n- Pause after four numbers.\n- Keep zero clear: zero, not slow or unclear.",
       prompts: [
         "What is your phone number?",
         "Let me check. Zero eight one two, three four five six?",
@@ -348,6 +381,8 @@ export const lessonCatalog = [
         { question: "Which question asks for a phone number?", answer: "What is your phone number?" },
         { question: "What does \"Yes, that's correct\" mean?", answer: "Ya, itu benar" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your phone number?\nDimas: It's zero eight one two, three four five six, seven eight nine zero.\nOfficer: Let me check. Zero eight one two, three four five six, seven eight nine zero?\nDimas: Yes, that's correct.\n```\n\nQuestion: What does Dimas give to the officer?\n\nAnswer: His phone number.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write a phone number in words.\n2. Ask someone to repeat it.\n3. Confirm that the number is correct.\n\nExample:\n\n```txt\nIt's zero eight one two, three four five six.\nCan you repeat that, please?\nYes, that's correct.\n```",
       sections: lessonSections
     },
     {
@@ -355,6 +390,7 @@ export const lessonCatalog = [
       title: "Sharing Email Addresses",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share an email address slowly and spell the important parts.",
+      conversationGoalDetails: "Share an email address slowly and spell the important parts.\n\nLearners should be able to answer and confirm:\n\n- It's ben dot rama at example dot com.\n- Yes, that's correct.\n\nLearners should also understand:\n\n- What is your email address?",
       setup: "Kamu ingin menerima informasi kelas lewat email. Petugas meminta alamat emailmu. Sebutkan alamat email dengan pelan, lalu eja bagian yang penting.",
       dialogue: [
         { speaker: "Officer", text: "What is your email address?" },
@@ -380,6 +416,8 @@ export const lessonCatalog = [
         { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm the email address is right." },
       ],
       grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What is your email address?** to ask for an email.\n\nWhen saying an email address, use:\n\n- **at** for @\n- **dot** for .\n\nPattern:\n\n```txt\nIt's + name + at + domain + dot + com.\n```\n\nExample: It's ben dot rama at example dot com.",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What is your email address?\n2. It's ben dot rama.\n3. At example dot com.\n4. Can you spell that, please?\n5. Yes, that's correct.\n\n            ## Focus\n\n            - Say \"at\" clearly before the domain.\n- Say \"dot\" before com.\n- Pause between the name and the domain.",
       prompts: [
         "What is your email address?",
         "Can you spell that, please?",
@@ -389,6 +427,8 @@ export const lessonCatalog = [
         { question: "Which question asks for an email address?", answer: "What is your email address?" },
         { question: "How do you say \".\" in an email address?", answer: "dot" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your email address?\nBen: It's ben dot rama at example dot com.\nOfficer: Can you spell that, please?\nBen: B-E-N dot R-A-M-A at example dot com.\n```\n\nQuestion: What email address does Ben give?\n\nAnswer: Ben dot rama at example dot com.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write a simple email address in spoken form.\n2. Spell the name part.\n3. Confirm that the email is correct.\n\nExample:\n\n```txt\nIt's ben dot rama at example dot com.\nB-E-N dot R-A-M-A.\nYes, that's correct.\n```",
       sections: lessonSections
     },
     {
@@ -396,6 +436,7 @@ export const lessonCatalog = [
       title: "Asking for Repetition",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
+      conversationGoalDetails: "Ask someone to repeat a name, number, or email address politely.\n\nLearners should be able to answer and confirm:\n\n- Sorry, can you repeat that, please?\n- Got it. Thank you.\n\nLearners should also understand:\n\n- My phone number is zero eight one three, two two five five, nine zero one.",
       setup: "Kamu tidak mendengar informasi dengan jelas. Daripada menebak, kamu meminta orang lain mengulang dengan sopan dan mengecek bagian yang kamu dengar.",
       dialogue: [
         { speaker: "Alya", text: "My phone number is zero eight one three, two two five five, nine zero one." },
@@ -421,6 +462,8 @@ export const lessonCatalog = [
         { phrase: "Got it.", meaning: "Sudah saya mengerti.", usage: "Show that you understand now." },
       ],
       grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Can you repeat that, please?** when you need to hear something again.\n\nUse **Did you say + information?** to check one detail.\n\nExamples:\n\n- Did you say two two five five?\n- Did you say Ben?\n- Did you say dot com?\n\nPattern:\n\n```txt\nDid you say + the detail?\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Sorry, can you repeat that, please?\n2. Did you say two two five five?\n3. Yes, that's right.\n4. Got it.\n5. Thank you.\n\n            ## Focus\n\n            - Use a polite rising tone for questions.\n- Say repeat clearly: re-PEAT.\n- Do not rush repeated numbers.",
       prompts: [
         "My phone number is zero eight one three, two two five five.",
         "Sure. Zero eight one three, two two five five.",
@@ -430,6 +473,8 @@ export const lessonCatalog = [
         { question: "Which sentence politely asks someone to repeat?", answer: "Can you repeat that, please?" },
         { question: "What is \"Did you say two two five five?\" used for?", answer: "Checking a detail" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: My phone number is zero eight one three, two two five five, nine zero one.\nBen: Sorry, can you repeat that, please?\nAlya: Sure. Zero eight one three, two two five five, nine zero one.\nBen: Thank you. Did you say two two five five?\n```\n\nQuestion: Why does Ben ask Alya to repeat?\n\nAnswer: He does not hear the phone number clearly.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Ask someone to repeat information.\n2. Check one detail with Did you say.\n3. Say that you understand now.\n\nExample:\n\n```txt\nCan you repeat that, please?\nDid you say two two five five?\nGot it. Thank you.\n```",
       sections: lessonSections
     },
     {
@@ -437,6 +482,7 @@ export const lessonCatalog = [
       title: "Contact Details Mission",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
+      conversationGoalDetails: "Share your name, spelling, phone number, and email address in one simple conversation.\n\nLearners should be able to answer and confirm:\n\n- Sure. My name is Dimas.\n- Yes, everything is correct.\n\nLearners should also understand:\n\n- Hi. I need your contact details.",
       setup: "Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.",
       dialogue: [
         { speaker: "Officer", text: "Hi. I need your contact details." },
@@ -470,6 +516,8 @@ export const lessonCatalog = [
         { phrase: "Yes, everything is correct.", meaning: "Ya, semuanya benar.", usage: "Confirm all information is correct." },
       ],
       grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
+      grammarNotes: "# Grammar for Conversation\n\nUse short follow-up questions when the topic is clear.\n\nExamples:\n\n- And your phone number?\n- And your email address?\n\nUse **everything** to talk about all the information together.\n\nPattern:\n\n```txt\nIs everything correct?\nYes, everything is correct.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. I need your contact details.\n2. How do you spell your name?\n3. And your email address?\n4. Is everything correct?\n5. Yes, everything is correct.\n\n            ## Focus\n\n            - Stress the important words: name, phone, email.\n- Pause before spelling letters.\n- Say contact details as two clear words.",
       prompts: [
         "I need your contact details.",
         "What is your phone number?",
@@ -480,6 +528,8 @@ export const lessonCatalog = [
         { question: "Which phrase asks for all contact information?", answer: "I need your contact details." },
         { question: "What does \"Is everything correct?\" mean?", answer: "Apakah semuanya benar?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: Hi. I need your contact details.\nDimas: Sure. My name is Dimas.\nOfficer: How do you spell your name?\nDimas: D-I-M-A-S.\n```\n\nQuestion: What contact details does Dimas give?\n\nAnswer: His name, spelling, phone number, and email address.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write your name.\n2. Spell your name.\n3. Write a phone number and email address in spoken form.\n4. Confirm that everything is correct.\n\nExample:\n\n```txt\nMy name is Dimas.\nD-I-M-A-S.\nZero eight one two, three four five six.\nDimas at example dot com.\nEverything is correct.\n```",
       sections: lessonSections
     },
     {
@@ -487,6 +537,7 @@ export const lessonCatalog = [
       title: "Telling the Time",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask and answer a simple question about time.",
+      conversationGoalDetails: "Learners can ask and answer a simple question about time.\n\nLearners should be able to say:\n\n- It's at nine o'clock.\n- You're welcome.\n\nLearners should also understand:\n\n- What time is the class?",
       setup: "Kamu ingin tahu jam mulai kelas online. Tanyakan waktunya, lalu cek apakah itu pagi, siang, atau malam.",
       dialogue: [
         { speaker: "Alya", text: "What time is the class?" },
@@ -512,6 +563,8 @@ export const lessonCatalog = [
         { phrase: "You're welcome.", meaning: "Sama-sama.", usage: "Reply after someone says thank you." },
       ],
       grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What time is + event?** to ask about time.\n\nUse **at + time** to answer.\n\nExamples:\n\n- What time is the class?\n- It's at nine o'clock.\n- It's at seven in the evening.\n\nPattern:\n\n```txt\nWhat time is + the event?\nIt's at + time.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What time is the class?\n2. It's at nine o'clock.\n3. In the morning?\n4. Yes, in the morning.\n5. You're welcome.\n\n            ## Focus\n\n            - Say o'clock as one smooth word.\n- Pause before the time: at nine o'clock.\n- Use a rising tone for short questions.",
       prompts: [
         "The class starts soon.",
         "What time is the class?",
@@ -521,6 +574,8 @@ export const lessonCatalog = [
         { question: "Which question asks about time?", answer: "What time is the class?" },
         { question: "Which word comes before a time?", answer: "at" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: What time is the class?\nBen: It's at nine o'clock.\nAlya: In the morning?\nBen: Yes, in the morning.\n```\n\nQuestion: What time is the class?\n\nAnswer: It is at nine o'clock in the morning.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Ask what time the class is.\n2. Answer with a time.\n3. Check the part of the day.\n\nExample:\n\n```txt\nWhat time is the class?\nIt's at nine o'clock.\nIn the morning?\n```",
       sections: lessonSections
     },
     {
@@ -528,6 +583,7 @@ export const lessonCatalog = [
       title: "Talking About Daily Routines",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can say a simple daily routine with time words.",
+      conversationGoalDetails: "Learners can say a simple daily routine with time words.\n\nLearners should be able to say:\n\n- I wake up at six.\n- Yes, I work at one.\n\nLearners should also understand:\n\n- What do you do in the morning?",
       setup: "Kamu mengobrol dengan teman kelas tentang kebiasaan pagi. Sebutkan kegiatan sederhana dan kapan kamu melakukannya.",
       dialogue: [
         { speaker: "Alya", text: "What do you do in the morning?" },
@@ -553,6 +609,8 @@ export const lessonCatalog = [
         { phrase: "I work at one.", meaning: "Saya bekerja jam satu.", usage: "Say a work routine." },
       ],
       grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I + verb + at + time** for a simple routine.\n\nExamples:\n\n- I wake up at six.\n- I study English at seven.\n- I work at one.\n\nUse **after that** to continue the routine.\n\nPattern:\n\n```txt\nI + routine verb + at + time.\nAfter that, I + verb.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What do you do in the morning?\n2. I wake up at six.\n3. What do you do after that?\n4. I study English at seven.\n5. I work at one.\n\n            ## Focus\n\n            - Link wake up smoothly.\n- Keep at short and light.\n- Stress the action word: wake, study, work.",
       prompts: [
         "What do you do in the morning?",
         "What do you do after that?",
@@ -562,6 +620,8 @@ export const lessonCatalog = [
         { question: "Which sentence talks about a routine?", answer: "I wake up at six." },
         { question: "What does \"after that\" mean?", answer: "setelah itu" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: What do you do in the morning?\nBen: I wake up at six.\nAlya: What do you do after that?\nBen: I study English at seven.\n```\n\nQuestion: What does Ben do at seven?\n\nAnswer: He studies English at seven.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write one morning activity.\n2. Write the time.\n3. Add one activity after that.\n\nExample:\n\n```txt\nI wake up at six.\nAfter that, I study English at seven.\n```",
       sections: lessonSections
     },
     {
@@ -569,6 +629,7 @@ export const lessonCatalog = [
       title: "Days and Simple Schedules",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can talk about simple days and class schedules.",
+      conversationGoalDetails: "Learners can talk about simple days and class schedules.\n\nLearners should be able to say:\n\n- It's on Monday and Wednesday.\n- See you.\n\nLearners should also understand:\n\n- When is the English class?",
       setup: "Kamu ingin tahu hari apa kelas berlangsung. Tanyakan jadwal sederhana, lalu ulangi hari dan jamnya.",
       dialogue: [
         { speaker: "Alya", text: "When is the English class?" },
@@ -594,6 +655,8 @@ export const lessonCatalog = [
         { phrase: "See you on Monday.", meaning: "Sampai jumpa hari Senin.", usage: "Close with the day you will meet." },
       ],
       grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **on + day** for schedules.\n\nExamples:\n\n- on Monday\n- on Wednesday\n- See you on Monday.\n\nUse **at + time** for the clock time.\n\nPattern:\n\n```txt\nIt's on + day.\nIt's at + time.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. When is the English class?\n2. It's on Monday and Wednesday.\n3. What time?\n4. At seven in the evening.\n5. See you on Monday.\n\n            ## Focus\n\n            - Say Monday and Wednesday clearly.\n- Keep on short before a day.\n- Pause between day and time.",
       prompts: [
         "You want to know the schedule.",
         "When is the English class?",
@@ -603,6 +666,8 @@ export const lessonCatalog = [
         { question: "Which word comes before Monday?", answer: "on" },
         { question: "Which short question asks about time?", answer: "What time?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: When is the English class?\nBen: It's on Monday and Wednesday.\nAlya: What time?\nBen: At seven in the evening.\n```\n\nQuestion: What days are the English class?\n\nAnswer: Monday and Wednesday.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write the class days.\n2. Write the class time.\n3. Close with See you on Monday.\n\nExample:\n\n```txt\nIt's on Monday and Wednesday.\nAt seven in the evening.\nSee you on Monday.\n```",
       sections: lessonSections
     },
     {
@@ -610,6 +675,7 @@ export const lessonCatalog = [
       title: "Asking When Something Happens",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask when a simple event happens and confirm the details.",
+      conversationGoalDetails: "Learners can ask when a simple event happens and confirm the details.\n\nLearners should be able to say:\n\n- It's tomorrow at ten.\n- Yes, that's right.\n\nLearners should also understand:\n\n- When is the meeting?",
       setup: "Kamu perlu ikut meeting singkat. Tanyakan kapan meeting berlangsung, apakah online, dan konfirmasi waktunya.",
       dialogue: [
         { speaker: "Dimas", text: "When is the meeting?" },
@@ -635,6 +701,8 @@ export const lessonCatalog = [
         { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm the detail." },
       ],
       grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **When is + event?** to ask about timing.\n\nUse **Is it + adjective/place?** for yes/no questions.\n\nExamples:\n\n- When is the meeting?\n- Is it online?\n- Is that right?\n\nPattern:\n\n```txt\nWhen is + event?\nIs it + online / today / tomorrow?\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. When is the meeting?\n2. It's tomorrow at ten.\n3. Is it online?\n4. Is that right?\n5. Yes, that's right.\n\n            ## Focus\n\n            - Link Is it softly.\n- Stress tomorrow and ten.\n- Use a rising tone for yes/no questions.",
       prompts: [
         "There is a meeting.",
         "It's tomorrow at ten.",
@@ -644,6 +712,8 @@ export const lessonCatalog = [
         { question: "Which question asks when an event happens?", answer: "When is the meeting?" },
         { question: "Which sentence asks if something is online?", answer: "Is it online?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nDimas: When is the meeting?\nAlya: It's tomorrow at ten.\nDimas: Is it online?\nAlya: Yes, it is online.\n```\n\nQuestion: When is the meeting?\n\nAnswer: Tomorrow at ten.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Ask when a meeting is.\n2. Ask if it is online.\n3. Confirm the day and time.\n\nExample:\n\n```txt\nWhen is the meeting?\nIs it online?\nTomorrow at ten. Is that right?\n```",
       sections: lessonSections
     },
     {
@@ -651,6 +721,7 @@ export const lessonCatalog = [
       title: "Routine Conversation Mission",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can combine time, routine, days, and schedule questions in one simple conversation.",
+      conversationGoalDetails: "Learners can combine time, routine, days, and schedule questions in one simple conversation.\n\nLearners should be able to say:\n\n- I wake up at six.\n- See you.\n\nLearners should also understand:\n\n- Hi, Ben. What time do you wake up?",
       setup: "Ini misi akhir unit. Kamu berbicara tentang rutinitas pagi, jadwal belajar, hari kelas, dan waktu meeting sederhana.",
       dialogue: [
         { speaker: "Alya", text: "Hi, Ben. What time do you wake up?" },
@@ -680,6 +751,8 @@ export const lessonCatalog = [
         { phrase: "Is the class online?", meaning: "Apakah kelasnya online?", usage: "Ask about class format." },
       ],
       grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
+      grammarNotes: "# Grammar for Conversation\n\nCombine **on + day** and **at + time** in one sentence.\n\nExamples:\n\n- I study on Monday at seven.\n- The class is on Wednesday at seven.\n\nUse **What time do you + verb?** for routine time.\n\nPattern:\n\n```txt\nWhat time do you + verb?\nI + verb + on + day + at + time.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What time do you wake up?\n2. I wake up at six.\n3. When do you study English?\n4. I study on Monday and Wednesday at seven.\n5. Is the class online?\n\n            ## Focus\n\n            - Keep routine sentences short and clear.\n- Pause between days and time.\n- Stress the day and the time.",
       prompts: [
         "What time do you wake up?",
         "When do you study English?",
@@ -689,6 +762,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses day and time correctly?", answer: "I study on Monday at seven." },
         { question: "Which question asks about routine time?", answer: "What time do you wake up?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: Hi, Ben. What time do you wake up?\nBen: I wake up at six.\nAlya: When do you study English?\nBen: I study on Monday and Wednesday at seven.\n```\n\nQuestion: When does Ben study English?\n\nAnswer: On Monday and Wednesday at seven.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write your wake-up time.\n2. Write your English study days.\n3. Ask if the class is online.\n\nExample:\n\n```txt\nI wake up at six.\nI study on Monday and Wednesday at seven.\nIs the class online?\n```",
       sections: lessonSections
     },
     {
@@ -696,6 +771,7 @@ export const lessonCatalog = [
       title: "Saying What You Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they do in a simple work or study conversation.",
+      conversationGoalDetails: "Learners can say what they do in a simple work or study conversation.\n\nLearners should be able to say:\n\n- I'm a student.\n- Yes, I study online.\n\nLearners should also understand:\n\n- What do you do?",
       setup: "Kamu bertemu teman baru di kelas online. Ia bertanya apa kegiatanmu. Jawab dengan status sederhana seperti student, worker, atau pekerjaan yang mudah.",
       dialogue: [
         { speaker: "Sara", text: "What do you do?" },
@@ -721,6 +797,8 @@ export const lessonCatalog = [
         { phrase: "I study online.", meaning: "Saya belajar online.", usage: "Say how you study." },
       ],
       grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm a + role** to say what you do.\n\nExamples:\n\n- I'm a student.\n- I'm a teacher.\n- I'm an assistant.\n\nUse **I study + subject** to say what you study.\n\nPattern:\n\n```txt\nWhat do you do?\nI'm a + role.\nI study + subject.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. What do you do?\n2. I'm a student.\n3. What do you study?\n4. I study design.\n5. I study online.\n\n            ## Focus\n\n            - Keep What do you do smooth and short.\n- Say student with two clear parts: stu-dent.\n- Stress the subject: design.",
       prompts: [
         "What do you do?",
         "What do you study?",
@@ -730,6 +808,8 @@ export const lessonCatalog = [
         { question: "Which question asks about work or study status?", answer: "What do you do?" },
         { question: "Which sentence is correct?", answer: "I'm a student." },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nSara: What do you do?\nDimas: I'm a student.\nSara: What do you study?\nDimas: I study design.\n```\n\nQuestion: What does Dimas do?\n\nAnswer: He is a student and he studies design online.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Say what you do.\n2. Say what you study.\n3. Say if you study online.\n\nExample:\n\n```txt\nI'm a student.\nI study design.\nI study online.\n```",
       sections: lessonSections
     },
     {
@@ -737,6 +817,7 @@ export const lessonCatalog = [
       title: "Asking About Work or Study",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can ask if someone works or studies and ask one simple follow-up question.",
+      conversationGoalDetails: "Learners can ask if someone works or studies and ask one simple follow-up question.\n\nLearners should be able to say:\n\n- I work in a small office.\n- I study English online.\n\nLearners should also understand:\n\n- Do you work or study?",
       setup: "Kamu ingin mengenal teman kelas. Tanyakan apakah ia bekerja atau belajar, lalu tanyakan satu detail sederhana tentang kegiatannya.",
       dialogue: [
         { speaker: "Ben", text: "Do you work or study?" },
@@ -760,6 +841,8 @@ export const lessonCatalog = [
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same topic back." },
       ],
       grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Do you + verb?** for yes/no questions.\n\nExamples:\n\n- Do you work?\n- Do you study?\n- Do you work or study?\n\nUse **in + place** for a workplace.\n\nPattern:\n\n```txt\nDo you work or study?\nI work in + place.\nI'm a/an + job.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you work or study?\n2. I work in a small office.\n3. What do you do there?\n4. I'm an assistant.\n5. How about you?\n\n            ## Focus\n\n            - Link work or smoothly.\n- Say assistant with clear stress: as-SIS-tant.\n- Use a friendly rising tone for How about you?",
       prompts: [
         "You meet a new classmate.",
         "I work in a small office.",
@@ -769,6 +852,8 @@ export const lessonCatalog = [
         { question: "Which question gives two choices?", answer: "Do you work or study?" },
         { question: "Which sentence is correct?", answer: "I'm an assistant." },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nBen: Do you work or study?\nMina: I work in a small office.\nBen: What do you do there?\nMina: I'm an assistant.\n```\n\nQuestion: Where does Mina work?\n\nAnswer: She works in a small office.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Ask if someone works or studies.\n2. Ask what they do there.\n3. Ask the same topic back.\n\nExample:\n\n```txt\nDo you work or study?\nWhat do you do there?\nHow about you?\n```",
       sections: lessonSections
     },
     {
@@ -776,6 +861,7 @@ export const lessonCatalog = [
       title: "Talking About Likes",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they like and ask someone about simple preferences.",
+      conversationGoalDetails: "Learners can say what they like and ask someone about simple preferences.\n\nLearners should be able to say:\n\n- Yes, I like it.\n- It's okay, but speaking is my favorite.\n\nLearners should also understand:\n\n- Do you like English?",
       setup: "Kamu berbicara dengan teman belajar tentang bagian bahasa Inggris yang kamu suka. Gunakan kalimat pendek untuk menyebutkan hal yang kamu suka.",
       dialogue: [
         { speaker: "Alya", text: "Do you like English?" },
@@ -801,6 +887,8 @@ export const lessonCatalog = [
         { phrase: "Speaking is my favorite.", meaning: "Speaking adalah favorit saya.", usage: "Say your favorite part." },
       ],
       grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **like + noun/activity** to talk about preferences.\n\nExamples:\n\n- I like English.\n- I like speaking practice.\n- I like grammar.\n\nUse **Do you like + noun?** to ask.\n\nPattern:\n\n```txt\nDo you like + noun?\nYes, I like it.\nI like + activity.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you like English?\n2. Yes, I like it.\n3. What do you like?\n4. I like speaking practice.\n5. Speaking is my favorite.\n\n            ## Focus\n\n            - Keep like clear and short.\n- Stress the favorite activity.\n- Use a friendly tone for preference questions.",
       prompts: [
         "Do you like English?",
         "What do you like?",
@@ -810,6 +898,8 @@ export const lessonCatalog = [
         { question: "Which question asks about a preference?", answer: "Do you like English?" },
         { question: "What does \"my favorite\" mean?", answer: "favorit saya" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: Do you like English?\nBen: Yes, I like it.\nAlya: What do you like?\nBen: I like speaking practice.\n```\n\nQuestion: What does Ben like?\n\nAnswer: He likes speaking practice.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Say one thing you like.\n2. Ask a friend what they like.\n3. Say your favorite part.\n\nExample:\n\n```txt\nI like speaking practice.\nWhat do you like?\nSpeaking is my favorite.\n```",
       sections: lessonSections
     },
     {
@@ -817,6 +907,7 @@ export const lessonCatalog = [
       title: "Saying What You Can Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they can do in English with simple ability sentences.",
+      conversationGoalDetails: "Learners can say what they can do in English with simple ability sentences.\n\nLearners should be able to say:\n\n- I can speak a little.\n- Not yet, but I can try.\n\nLearners should also understand:\n\n- Can you speak English?",
       setup: "Kamu ditanya kemampuan bahasa Inggrismu. Jawab dengan jujur dan sederhana: apa yang sudah bisa kamu lakukan, dan apa yang belum.",
       dialogue: [
         { speaker: "Sara", text: "Can you speak English?" },
@@ -842,6 +933,8 @@ export const lessonCatalog = [
         { phrase: "Not yet, but I can try.", meaning: "Belum, tapi saya bisa mencoba.", usage: "Say you cannot do it now but are willing." },
       ],
       grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **can + base verb** for ability.\n\nExamples:\n\n- I can speak English.\n- I can write simple emails.\n- I can try.\n\nFor questions, use **Can you + base verb?**\n\nPattern:\n\n```txt\nCan you + verb?\nYes, I can.\nI can + verb.\n```",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Can you speak English?\n2. I can speak a little.\n3. Can you write simple emails?\n4. Yes, I can.\n5. Not yet, but I can try.\n\n            ## Focus\n\n            - Say can clearly in short answers.\n- Stress the action verb: speak, write, try.\n- Keep Not yet short and clear.",
       prompts: [
         "Can you speak English?",
         "Can you write simple emails?",
@@ -851,6 +944,8 @@ export const lessonCatalog = [
         { question: "Which question asks about ability?", answer: "Can you speak English?" },
         { question: "Which sentence is correct?", answer: "I can write simple emails." },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nSara: Can you speak English?\nDimas: I can speak a little.\nSara: Can you write simple emails?\nDimas: Yes, I can.\n```\n\nQuestion: What can Dimas do?\n\nAnswer: He can speak a little and write simple emails.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Say one thing you can do.\n2. Ask a can question.\n3. Say one thing you cannot do yet.\n\nExample:\n\n```txt\nI can speak a little.\nCan you write simple emails?\nNot yet, but I can try.\n```",
       sections: lessonSections
     },
     {
@@ -858,6 +953,7 @@ export const lessonCatalog = [
       title: "Work and Study Conversation Mission",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can combine work, study, preferences, and simple abilities in one conversation.",
+      conversationGoalDetails: "Learners can combine work, study, preferences, and simple abilities in one conversation.\n\nLearners should be able to say:\n\n- I study English online and I work in a shop.\n- Thank you. I will.\n\nLearners should also understand:\n\n- Hi, Ben. Do you work or study?",
       setup: "Ini misi akhir unit. Kamu memperkenalkan kegiatanmu, menanyakan pekerjaan atau studi, menyebutkan hal yang kamu suka, dan mengatakan kemampuan sederhana.",
       dialogue: [
         { speaker: "Mina", text: "Hi, Ben. Do you work or study?" },
@@ -887,6 +983,8 @@ export const lessonCatalog = [
         { phrase: "I can introduce myself.", meaning: "Saya bisa memperkenalkan diri.", usage: "Say one English ability." },
       ],
       grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
+      grammarNotes: "# Grammar for Conversation\n\nCombine simple A1 patterns in one conversation.\n\nUseful patterns:\n\n- I study + subject.\n- I work in + place.\n- I like + activity.\n- I can + verb.\n\nKeep each sentence short. Use **and** to connect two simple ideas only when both are clear.",
+      pronunciationDrill: "# Speak Clearly\n\n            ## Repeat\n\n            1. Do you work or study?\n2. I study English online.\n3. I work in a shop.\n4. I like speaking practice.\n5. I can introduce myself.\n\n            ## Focus\n\n            - Pause between work and study ideas.\n- Stress like and can to make meaning clear.\n- Keep introduce myself slow and clear.",
       prompts: [
         "Do you work or study?",
         "What do you like about English?",
@@ -896,6 +994,8 @@ export const lessonCatalog = [
         { question: "Which sentence says an ability?", answer: "I can introduce myself." },
         { question: "Which question asks about work or study?", answer: "Do you work or study?" },
       ],
+      readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nMina: Hi, Ben. Do you work or study?\nBen: I study English online and I work in a shop.\nMina: What do you like about English?\nBen: I like speaking practice.\n```\n\nQuestion: What does Ben like about English?\n\nAnswer: He likes speaking practice.",
+      writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write what you do.\n2. Write what you like about English.\n3. Write one thing you can do.\n\nExample:\n\n```txt\nI study English online.\nI like speaking practice.\nI can introduce myself.\n```",
       sections: lessonSections
     },
     {
@@ -903,6 +1003,7 @@ export const lessonCatalog = [
       title: "Asking Where a Place Is",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask where a place is and understand a short location answer.",
+      conversationGoalDetails: "# Conversation Goal: Asking Where a Place Is\n\nLearners can ask where a place is and understand a short location answer.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
       setup: "Kamu berada di gedung kursus baru. Kamu perlu mencari ruang kelas dan bertanya dengan sopan.",
       dialogue: [
         { speaker: "Alya", text: "Excuse me. Where is the classroom?" },
@@ -927,6 +1028,8 @@ export const lessonCatalog = [
         { phrase: "It is next to the office.", meaning: "Tempatnya di sebelah kantor.", usage: "Use 'next to' for a place beside another place." },
       ],
       grammar: "Use Where is + place? and answer with It is + location.",
+      grammarNotes: "# Grammar for Conversation: Where is...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'Where is + place?'\n\n- Example: Where is the classroom?\n\n## Answer with 'It is...'\n\n- Example: It is on the first floor.\n\n## Use 'near' and 'next to' for simple location.\n\n- Example: It is next to the office.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Where is** - Link the words softly: where-is.\n- **first floor** - Say both words clearly.\n- **next to** - Keep 'to' short and light.",
       prompts: [
         "Ask where the classroom is.",
         "Ask if it is near the office.",
@@ -937,6 +1040,8 @@ export const lessonCatalog = [
         { question: "What phrase starts the polite question?", answer: "Excuse me." },
         { question: "What does 'next to' mean?", answer: "Di sebelah" },
       ],
+      readingSupport: "# Reading Support\n\nThe classroom is on the first floor. It is next to the office. Ask the staff member if you are not sure.\n\n## Check\n\nRead it again and underline the place or direction words.",
+      writingSupport: "# Writing Support\n\nWrite two sentences: ask where one place is, then say where it is.\n\nKeep your sentences short and clear.",
       sections: lessonSections
     },
     {
@@ -944,6 +1049,7 @@ export const lessonCatalog = [
       title: "Simple Place Words",
       unit: "Places & Directions",
       conversationGoal: "Learners can name common places and answer where someone is going.",
+      conversationGoalDetails: "# Conversation Goal: Simple Place Words\n\nLearners can name common places and answer where someone is going.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
       setup: "Kamu bicara dengan teman setelah kelas. Kamu menyebut tempat sederhana yang ingin kamu datangi.",
       dialogue: [
         { speaker: "Mina", text: "Where are you going?" },
@@ -968,6 +1074,8 @@ export const lessonCatalog = [
         { phrase: "Let's go together.", meaning: "Ayo pergi bersama.", usage: "Use this to suggest going with someone." },
       ],
       grammar: "Use I'm going to + place for a destination.",
+      grammarNotes: "# Grammar for Conversation: going to + place\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'I am going to + place.'\n\n- Example: I'm going to the cafe.\n\n## Use 'the' for a known place.\n\n- Example: the cafe, the library\n\n## Ask 'Is it near here?'\n\n- Example: Is the cafe near here?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **going to** - In slow practice, say both words clearly.\n- **library** - Say LI-brer-y or LI-bra-ry clearly.\n- **together** - Stress the middle sound: to-GE-ther.",
       prompts: [
         "Say you are going to the cafe.",
         "Ask if the cafe is near here.",
@@ -978,6 +1086,8 @@ export const lessonCatalog = [
         { question: "What place is near the cafe?", answer: "The library." },
         { question: "Which sentence is correct?", answer: "I'm going to the cafe." },
       ],
+      readingSupport: "# Reading Support\n\nDimas is going to the cafe. The cafe is near the library. Mina is going to the library.\n\n## Check\n\nRead it again and underline the place or direction words.",
+      writingSupport: "# Writing Support\n\nWrite three places near you. Then write: I'm going to the ____.\n\nKeep your sentences short and clear.",
       sections: lessonSections
     },
     {
@@ -985,6 +1095,7 @@ export const lessonCatalog = [
       title: "Understanding Simple Directions",
       unit: "Places & Directions",
       conversationGoal: "Learners can understand very simple directions with go straight, turn left, and turn right.",
+      conversationGoalDetails: "# Conversation Goal: Understanding Simple Directions\n\nLearners can understand very simple directions with go straight, turn left, and turn right.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
       setup: "Kamu mencari ruang meeting di gedung. Temanmu memberi arahan sederhana.",
       dialogue: [
         { speaker: "Sara", text: "Where is the meeting room?" },
@@ -1011,6 +1122,8 @@ export const lessonCatalog = [
         { phrase: "I understand.", meaning: "Saya mengerti.", usage: "Use this after clear instructions." },
       ],
       grammar: "Direction commands can start with the verb: Go straight. Turn left.",
+      grammarNotes: "# Grammar for Conversation: imperatives for directions\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Direction commands can start with the verb.\n\n- Example: Go straight. Turn left.\n\n## Use 'then' for the next step.\n\n- Example: Then turn left.\n\n## Use 'on the left/right' for side location.\n\n- Example: The room is on the right.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **straight** - Start with STR, not 'es-tr'.\n- **turn** - Keep the r sound clear enough.\n- **right** - Do not pronounce the gh.",
       prompts: [
         "Repeat the first direction.",
         "Confirm the second direction.",
@@ -1021,6 +1134,8 @@ export const lessonCatalog = [
         { question: "After going straight, what should Sara do?", answer: "Turn left." },
         { question: "Where is the room?", answer: "On the right." },
       ],
+      readingSupport: "# Reading Support\n\nThe meeting room is not far. Go straight. Then turn left. The room is on the right.\n\n## Check\n\nRead it again and underline the place or direction words.",
+      writingSupport: "# Writing Support\n\nWrite three short directions using: go straight, turn left, turn right.\n\nKeep your sentences short and clear.",
       sections: lessonSections
     },
     {
@@ -1028,6 +1143,7 @@ export const lessonCatalog = [
       title: "Asking How to Get There",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask how to get to a place and follow two simple steps.",
+      conversationGoalDetails: "# Conversation Goal: Asking How to Get There\n\nLearners can ask how to get to a place and follow two simple steps.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
       setup: "Kamu ingin ke stasiun dari area kursus. Kamu meminta arahan yang sangat singkat.",
       dialogue: [
         { speaker: "Dimas", text: "How do I get to the station?" },
@@ -1054,6 +1170,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Use this after someone helps you." },
       ],
       grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
+      grammarNotes: "# Grammar for Conversation: How do I get to...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Ask 'How do I get to + place?'\n\n- Example: How do I get to the station?\n\n## Use 'for + time' for duration.\n\n- Example: Go straight for two minutes.\n\n## Use 'at + place' for a landmark.\n\n- Example: Turn right at the bank.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How do I** - Link slowly: how-do-I.\n- **station** - Stress the first part: STA-tion.\n- **minutes** - Say MI-nits, not 'my-newts' in casual English.",
       prompts: [
         "Ask how to get to the station.",
         "Repeat the time direction.",
@@ -1064,6 +1182,8 @@ export const lessonCatalog = [
         { question: "How long should he go straight?", answer: "Two minutes." },
         { question: "Where should he turn right?", answer: "At the bank." },
       ],
+      readingSupport: "# Reading Support\n\nTo get to the station, go straight for two minutes. Then turn right at the bank. The station is there.\n\n## Check\n\nRead it again and underline the place or direction words.",
+      writingSupport: "# Writing Support\n\nWrite a simple question: How do I get to the ____? Then write two steps.\n\nKeep your sentences short and clear.",
       sections: lessonSections
     },
     {
@@ -1071,6 +1191,7 @@ export const lessonCatalog = [
       title: "Finding a Place Mission",
       unit: "Places & Directions",
       conversationGoal: "Learners can complete a short place-finding conversation from question to confirmation.",
+      conversationGoalDetails: "# Conversation Goal: Finding a Place Mission\n\nLearners can complete a short place-finding conversation from question to confirmation.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
       setup: "Kamu perlu menemukan ruang kelas, lalu memastikan arah dengan orang lain secara sopan.",
       dialogue: [
         { speaker: "Ben", text: "Excuse me. How do I get to room A?" },
@@ -1099,6 +1220,8 @@ export const lessonCatalog = [
         { phrase: "Is it on the first floor?", meaning: "Apakah di lantai satu?", usage: "Confirm a floor." },
       ],
       grammar: "Use and to join two simple direction steps: Go straight and turn left.",
+      grammarNotes: "# Grammar for Conversation: combining direction steps\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'and' for two simple actions.\n\n- Example: Go straight and turn left.\n\n## Use 'Is it...?' to confirm.\n\n- Example: Is it on the first floor?\n\n## Use 'next to' for a nearby landmark.\n\n- Example: Room A is next to the office.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **room A** - Pause lightly before A.\n- **straight and** - Link the words but keep them clear.\n- **first floor** - Keep both f sounds light.",
       prompts: [
         "Ask how to get to room A.",
         "Repeat the directions.",
@@ -1109,6 +1232,8 @@ export const lessonCatalog = [
         { question: "What are the directions?", answer: "Go straight and turn left." },
         { question: "Where is room A?", answer: "Next to the office." },
       ],
+      readingSupport: "# Reading Support\n\nRoom A is on the first floor. Go straight and turn left. Room A is next to the office.\n\n## Check\n\nRead it again and underline the place or direction words.",
+      writingSupport: "# Writing Support\n\nWrite a short place-finding dialogue with four lines.\n\nKeep your sentences short and clear.",
       sections: lessonSections
     },
     {
@@ -1116,6 +1241,7 @@ export const lessonCatalog = [
       title: "Ordering a Drink",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order one drink politely and answer a simple size question.",
+      conversationGoalDetails: "# Conversation Goal: Ordering a Drink\n\nLearners can order one drink politely and answer a simple size question.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
       setup: "Kamu berada di kafe kecil setelah kelas. Pesan satu minuman dengan sopan dan jawab pertanyaan ukuran.",
       dialogue: [
         { speaker: "Mina", text: "Hi! What would you like?" },
@@ -1145,6 +1271,8 @@ export const lessonCatalog = [
         { phrase: "Here you go.", meaning: "Ini pesanannya.", usage: "Staff says this when giving the item." },
       ],
       grammar: "Use Can I have + item, please? to order politely.",
+      grammarNotes: "# Grammar for Conversation: Can I have...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'Can I have + item, please?'\n\n- Example: Can I have a tea, please?\n\n## Use short size answers.\n\n- Example: Small, please.\n\n## Use 'No, thank you' to finish politely.\n\n- Example: No, thank you.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **Can I have** - Link slowly: can-I-have.\n- **tea** - Keep the long ee sound.\n- **please** - Finish with a clear z sound.",
       prompts: [
         "Order a tea politely.",
         "Choose a small size.",
@@ -1155,6 +1283,8 @@ export const lessonCatalog = [
         { question: "What size does Ben choose?", answer: "Small." },
         { question: "Which sentence is polite for ordering?", answer: "Can I have a tea, please?" },
       ],
+      readingSupport: "# Reading Support\n\nBen orders a small tea at a cafe. He says please and thank you. He does not order anything else.\n\n## Check\n\nRead it again and underline the order, price, or option words.",
+      writingSupport: "# Writing Support\n\nWrite one polite drink order and one size answer.\n\nKeep the order short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1162,6 +1292,7 @@ export const lessonCatalog = [
       title: "Asking About Prices",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can ask the price of one item and understand a short price answer.",
+      conversationGoalDetails: "# Conversation Goal: Asking About Prices\n\nLearners can ask the price of one item and understand a short price answer.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
       setup: "Kamu melihat minuman dan makanan ringan. Tanyakan harga satu item sebelum membeli.",
       dialogue: [
         { speaker: "Dimas", text: "Excuse me. How much is the coffee?" },
@@ -1188,6 +1319,8 @@ export const lessonCatalog = [
         { phrase: "How much is the cake?", meaning: "Berapa harga kuenya?", usage: "Ask another item price." },
       ],
       grammar: "Use How much is + item? and answer with It is + price.",
+      grammarNotes: "# Grammar for Conversation: How much is...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'How much is + item?'\n\n- Example: How much is the coffee?\n\n## Answer with 'It is + price.'\n\n- Example: It is two dollars.\n\n## Repeat a price to confirm.\n\n- Example: Two dollars?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **how much** - Keep 'much' short and clear.\n- **coffee** - Stress the first syllable: COF-fee.\n- **dollars** - Say DAH-lers clearly.",
       prompts: [
         "Ask the price of coffee.",
         "Confirm the price.",
@@ -1198,6 +1331,8 @@ export const lessonCatalog = [
         { question: "How much is the cake?", answer: "Three dollars." },
         { question: "Which question asks price?", answer: "How much is the coffee?" },
       ],
+      readingSupport: "# Reading Support\n\nThe coffee is two dollars. The cake is three dollars. Dimas asks the prices before he buys.\n\n## Check\n\nRead it again and underline the order, price, or option words.",
+      writingSupport: "# Writing Support\n\nWrite two price questions with: How much is the ____?\n\nKeep the order short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1205,6 +1340,7 @@ export const lessonCatalog = [
       title: "Buying a Simple Item",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can buy one simple item, ask the price, and complete the payment.",
+      conversationGoalDetails: "# Conversation Goal: Buying a Simple Item\n\nLearners can buy one simple item, ask the price, and complete the payment.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
       setup: "Kamu berada di toko alat tulis. Kamu membeli satu pulpen dan membayar dengan sopan.",
       dialogue: [
         { speaker: "Ben", text: "Excuse me. Can I have this pen?" },
@@ -1231,6 +1367,8 @@ export const lessonCatalog = [
         { phrase: "Here is your pen.", meaning: "Ini pulpenmu.", usage: "Staff uses this when giving the item." },
       ],
       grammar: "Use this for one item near you and it after the item is already clear.",
+      grammarNotes: "# Grammar for Conversation: this + item\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'this' for one item near you.\n\n- Example: Can I have this pen?\n\n## Use 'it' when the item is already known.\n\n- Example: How much is it?\n\n## Use 'Here is + item' for one item.\n\n- Example: Here is your pen.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **this pen** - Keep the th sound soft.\n- **how much is it** - Say it in small chunks: how much / is it.\n- **of course** - Stress course lightly.",
       prompts: [
         "Ask to buy this pen.",
         "Ask the price.",
@@ -1241,6 +1379,8 @@ export const lessonCatalog = [
         { question: "How much is the pen?", answer: "One dollar." },
         { question: "Which phrase gives money or an item?", answer: "Here you go." },
       ],
+      readingSupport: "# Reading Support\n\nBen buys one pen. The pen is one dollar. He asks the price and pays politely.\n\n## Check\n\nRead it again and underline the order, price, or option words.",
+      writingSupport: "# Writing Support\n\nWrite a short buying dialogue with one item and one price.\n\nKeep the order short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1248,6 +1388,7 @@ export const lessonCatalog = [
       title: "Saying What You Want",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can say what they want and choose between two simple options.",
+      conversationGoalDetails: "# Conversation Goal: Saying What You Want\n\nLearners can say what they want and choose between two simple options.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
       setup: "Kamu memilih makanan ringan di kafe. Katakan apa yang kamu mau dan jawab pilihan sederhana.",
       dialogue: [
         { speaker: "Sara", text: "What do you want?" },
@@ -1274,6 +1415,8 @@ export const lessonCatalog = [
         { phrase: "No sugar, please.", meaning: "Tanpa gula, tolong.", usage: "Say you do not want an extra item." },
       ],
       grammar: "Use I want + item and No + item, please for simple preferences.",
+      grammarNotes: "# Grammar for Conversation: I want...\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'I want + item.'\n\n- Example: I want a sandwich.\n\n## Use 'or' for two options.\n\n- Example: Tea or coffee?\n\n## Use 'No + item, please.'\n\n- Example: No sugar, please.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **want** - Do not add an extra vowel after t.\n- **sandwich** - Say SAND-wich.\n- **sugar** - Say SHU-gar.",
       prompts: [
         "Say you want a sandwich.",
         "Choose tea politely.",
@@ -1284,6 +1427,8 @@ export const lessonCatalog = [
         { question: "What drink does Dimas choose?", answer: "Tea." },
         { question: "Which answer says no extra sugar?", answer: "No sugar, please." },
       ],
+      readingSupport: "# Reading Support\n\nDimas wants a sandwich and tea. He does not want sugar. He answers with short polite phrases.\n\n## Check\n\nRead it again and underline the order, price, or option words.",
+      writingSupport: "# Writing Support\n\nWrite three sentences: I want a ____. ____, please. No ____, please.\n\nKeep the order short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1291,6 +1436,7 @@ export const lessonCatalog = [
       title: "Cafe and Shop Mission",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order, ask a price, choose an option, and complete a simple purchase.",
+      conversationGoalDetails: "# Conversation Goal: Cafe and Shop Mission\n\nLearners can order, ask a price, choose an option, and complete a simple purchase.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
       setup: "Ini misi akhir unit. Kamu memesan minuman dan makanan kecil, bertanya harga, memilih opsi, lalu membayar.",
       dialogue: [
         { speaker: "Mina", text: "Hi! What would you like?" },
@@ -1320,6 +1466,8 @@ export const lessonCatalog = [
         { phrase: "Here is your order.", meaning: "Ini pesananmu.", usage: "Staff gives the order." },
       ],
       grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
+      grammarNotes: "# Grammar for Conversation: combining order and price language\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'and' to order two items.\n\n- Example: a coffee and a sandwich\n\n## Use 'How much is it?' for the total.\n\n- Example: How much is it?\n\n## Use 'Here is...' for one order.\n\n- Example: Here is your order.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a short order.\n\n- **coffee and a sandwich** - Pause lightly after coffee.\n- **large** - Keep the r sound soft.\n- **five dollars** - Say both words clearly.",
       prompts: [
         "Order coffee and a sandwich.",
         "Choose a small coffee.",
@@ -1331,6 +1479,8 @@ export const lessonCatalog = [
         { question: "What size coffee does Ben choose?", answer: "Small." },
         { question: "How much is it?", answer: "Five dollars." },
       ],
+      readingSupport: "# Reading Support\n\nBen orders a coffee and a sandwich. He chooses a small coffee. The total price is five dollars.\n\n## Check\n\nRead it again and underline the order, price, or option words.",
+      writingSupport: "# Writing Support\n\nWrite a cafe order with two items, one size, and one total price.\n\nKeep the order short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1338,6 +1488,7 @@ export const lessonCatalog = [
       title: "Saying You Do Not Understand",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can say they do not understand and ask for repetition politely.",
+      conversationGoalDetails: "# Conversation Goal: Saying You Do Not Understand\n\nLearners can say they do not understand and ask for repetition politely.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
       setup: "Kamu sedang belajar online dan tidak paham satu instruksi. Katakan dengan sopan bahwa kamu belum mengerti.",
       dialogue: [
         { speaker: "Alya", text: "Sorry, I don't understand." },
@@ -1364,6 +1515,8 @@ export const lessonCatalog = [
         { phrase: "I understand now.", meaning: "Sekarang saya mengerti.", usage: "Use this after the explanation is clear." },
       ],
       grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
+      grammarNotes: "# Grammar for Conversation: I don't understand\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't + verb' for a negative statement.\n\n- Example: I don't understand.\n\n## Use 'Can you + verb?' for a polite request.\n\n- Example: Can you repeat that, please?\n\n## Use a short question to confirm.\n\n- Example: Open my book?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **don't understand** - Pause lightly after don't.\n- **repeat that** - Keep repeat clear: re-PEAT.\n- **understand now** - Stress understand, then say now softly.",
       prompts: [
         "Say you do not understand.",
         "Ask the speaker to repeat.",
@@ -1374,6 +1527,8 @@ export const lessonCatalog = [
         { question: "What does Alya ask Ben to do?", answer: "Repeat." },
         { question: "Which sentence is correct?", answer: "I don't understand." },
       ],
+      readingSupport: "# Reading Support\n\nAlya does not understand the instruction. She asks Ben to repeat. Then she understands and says thank you.\n\n## Check\n\nRead it again and underline the problem phrase and the help phrase.",
+      writingSupport: "# Writing Support\n\nWrite two polite sentences: say you do not understand, then ask someone to repeat.\n\nKeep it polite, short, and clear.",
       sections: lessonSections
     },
     {
@@ -1381,6 +1536,7 @@ export const lessonCatalog = [
       title: "Asking for Help",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can ask for help with one simple task and respond to the helper.",
+      conversationGoalDetails: "# Conversation Goal: Asking for Help\n\nLearners can ask for help with one simple task and respond to the helper.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
       setup: "Kamu kesulitan membuka file kelas. Minta bantuan singkat dan sopan.",
       dialogue: [
         { speaker: "Dimas", text: "Excuse me. Can you help me?" },
@@ -1407,6 +1563,8 @@ export const lessonCatalog = [
         { phrase: "It works.", meaning: "Berhasil.", usage: "Say the solution works." },
       ],
       grammar: "Use can for help requests and can't + verb for simple problems.",
+      grammarNotes: "# Grammar for Conversation: can / can't\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you help me?' to ask for help.\n\n- Example: Can you help me?\n\n## Use 'I can't + verb' for a simple problem.\n\n- Example: I can't open this file.\n\n## Use 'It works' when the problem is fixed.\n\n- Example: It works.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **can you help me** - Say can-you smoothly.\n- **can't open** - Make can't clear before open.\n- **button** - Say BUH-tn, not bu-ton.",
       prompts: [
         "Ask for help.",
         "Explain the file problem.",
@@ -1417,6 +1575,8 @@ export const lessonCatalog = [
         { question: "What should Dimas click?", answer: "This button." },
         { question: "Which sentence asks for help?", answer: "Can you help me?" },
       ],
+      readingSupport: "# Reading Support\n\nDimas cannot open a file. Sara helps him. He clicks the button and the file works.\n\n## Check\n\nRead it again and underline the problem phrase and the help phrase.",
+      writingSupport: "# Writing Support\n\nWrite one help request and one simple problem using: I can't ____.\n\nKeep it polite, short, and clear.",
       sections: lessonSections
     },
     {
@@ -1424,6 +1584,7 @@ export const lessonCatalog = [
       title: "Making Simple Requests",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can make a simple request with please and respond to yes or no.",
+      conversationGoalDetails: "# Conversation Goal: Making Simple Requests\n\nLearners can make a simple request with please and respond to yes or no.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
       setup: "Kamu sedang di kelas online. Kamu perlu meminta link dan meminta teman menunggu sebentar.",
       dialogue: [
         { speaker: "Mina", text: "Can you send me the link, please?" },
@@ -1450,6 +1611,8 @@ export const lessonCatalog = [
         { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a request calmly." },
       ],
       grammar: "Use Can you + verb + please? for a polite request.",
+      grammarNotes: "# Grammar for Conversation: Can you... please?\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you + verb + please?' for a request.\n\n- Example: Can you send me the link, please?\n\n## Use 'Can you wait...?' to ask for time.\n\n- Example: Can you wait a minute?\n\n## Use short positive replies.\n\n- Example: Sure. No problem.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **send me** - Link the words smoothly.\n- **wait a minute** - Say wait-a as one small chunk.\n- **of course** - Say course clearly.",
       prompts: [
         "Ask someone to send the link.",
         "Accept a request to wait.",
@@ -1460,6 +1623,8 @@ export const lessonCatalog = [
         { question: "What does Ben ask Mina to do?", answer: "Wait a minute." },
         { question: "Which phrase accepts a request?", answer: "Sure. No problem." },
       ],
+      readingSupport: "# Reading Support\n\nMina asks Ben to send the link. Ben asks Mina to wait a minute. Mina says sure and thanks him.\n\n## Check\n\nRead it again and underline the problem phrase and the help phrase.",
+      writingSupport: "# Writing Support\n\nWrite two polite requests using: Can you ____ , please?\n\nKeep it polite, short, and clear.",
       sections: lessonSections
     },
     {
@@ -1467,6 +1632,7 @@ export const lessonCatalog = [
       title: "Apologizing and Thanking",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can apologize for a small problem and thank someone for help.",
+      conversationGoalDetails: "# Conversation Goal: Apologizing and Thanking\n\nLearners can apologize for a small problem and thank someone for help.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
       setup: "Kamu terlambat masuk kelas online karena masalah koneksi. Minta maaf dan ucapkan terima kasih ketika dibantu.",
       dialogue: [
         { speaker: "Ben", text: "Sorry I'm late." },
@@ -1494,6 +1660,8 @@ export const lessonCatalog = [
         { phrase: "I am ready now.", meaning: "Sekarang saya siap.", usage: "Say you are ready to continue." },
       ],
       grammar: "Use Sorry + short sentence and Thank you for + ing.",
+      grammarNotes: "# Grammar for Conversation: sorry + reason\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Sorry + sentence' for a small apology.\n\n- Example: Sorry I'm late.\n\n## Use one short reason.\n\n- Example: My internet was slow.\n\n## Use 'Thank you for + ing'.\n\n- Example: Thank you for waiting.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **sorry** - Say SO-ree clearly.\n- **internet** - Say IN-ter-net.\n- **waiting** - Keep the t soft: WAY-ting.",
       prompts: [
         "Apologize for being late.",
         "Give one simple reason.",
@@ -1504,6 +1672,8 @@ export const lessonCatalog = [
         { question: "What does Ben thank Sara for?", answer: "Waiting." },
         { question: "Which sentence says readiness?", answer: "I am ready now." },
       ],
+      readingSupport: "# Reading Support\n\nBen is late because his internet was slow. He says sorry. Sara waits, and Ben says thank you.\n\n## Check\n\nRead it again and underline the problem phrase and the help phrase.",
+      writingSupport: "# Writing Support\n\nWrite a short apology, one reason, and one thank-you sentence.\n\nKeep it polite, short, and clear.",
       sections: lessonSections
     },
     {
@@ -1511,6 +1681,7 @@ export const lessonCatalog = [
       title: "Help and Problem Mission",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can explain a simple problem, ask for help, make a request, and close politely.",
+      conversationGoalDetails: "# Conversation Goal: Help and Problem Mission\n\nLearners can explain a simple problem, ask for help, make a request, and close politely.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
       setup: "Ini misi akhir unit. Kamu tidak paham instruksi, punya masalah file, lalu meminta bantuan dan berterima kasih.",
       dialogue: [
         { speaker: "Alya", text: "Sorry, I don't understand." },
@@ -1542,6 +1713,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close after help." },
       ],
       grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
+      grammarNotes: "# Grammar for Conversation: combining help language\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't understand' for meaning problems.\n\n- Example: Sorry, I don't understand.\n\n## Use 'I can't + verb' for action problems.\n\n- Example: I can't open this file.\n\n## Use 'Can you + verb?' for requests.\n\n- Example: Can you wait a minute?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in a help request.\n\n- **screenshot** - Say SCREEN-shot.\n- **click this button** - Pause after click.\n- **thank you for your help** - Say thank-you as one smooth phrase.",
       prompts: [
         "Say you do not understand.",
         "Explain the file problem.",
@@ -1553,6 +1726,8 @@ export const lessonCatalog = [
         { question: "What does Dimas ask Alya to send?", answer: "A screenshot." },
         { question: "What does Alya say when the problem is fixed?", answer: "It works." },
       ],
+      readingSupport: "# Reading Support\n\nAlya does not understand and cannot open a file. Dimas helps her. Alya sends a screenshot, clicks a button, and the file works.\n\n## Check\n\nRead it again and underline the problem phrase and the help phrase.",
+      writingSupport: "# Writing Support\n\nWrite a short problem-help dialogue with four lines.\n\nKeep it polite, short, and clear.",
       sections: lessonSections
     },
     {
@@ -1560,6 +1735,7 @@ export const lessonCatalog = [
       title: "Review Introductions",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.",
+      conversationGoalDetails: "# Conversation Goal\n\nLearners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
       setup: "Ini review awal sebelum final A1. Kamu bertemu teman kelas baru dan merapikan pola greeting, name, origin, dan closing.",
       dialogue: [
         { speaker: "Sara", text: "Hi, good morning." },
@@ -1589,6 +1765,8 @@ export const lessonCatalog = [
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
       ],
       grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
+      grammarNotes: "# Grammar for Conversation: reviewing be verbs for introductions\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use I am or I'm for names.\n\n- Example: I'm Sara. My name is Dimas.\n\n## Use from for origin.\n\n- Example: I'm from Indonesia.\n\n## Use live in for current city.\n\n- Example: I live in Jakarta now.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **good morning** - Link good-morning smoothly.\n- **nice to meet you** - Keep nice and meet clear.\n- **how about you** - Stress about and you lightly.",
       prompts: [
         "Introduce yourself with your name.",
         "Say where you are from.",
@@ -1600,6 +1778,8 @@ export const lessonCatalog = [
         { question: "Where is Sara from?", answer: "Malaysia." },
         { question: "Which phrase asks the same question back?", answer: "How about you?" },
       ],
+      readingSupport: "# Reading Support\n\nDimas meets Sara before class. They say their names, talk about where they are from, and close the conversation politely.\n\n## Check\n\nRead it again and underline the phrase that answers the main question.",
+      writingSupport: "# Writing Support\n\nWrite a short introduction dialogue with name, origin, and one question back.\n\nKeep the sentences short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1607,6 +1787,7 @@ export const lessonCatalog = [
       title: "Review Routines and Time",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can talk about a simple daily routine, class day, and class time in one short conversation.",
+      conversationGoalDetails: "# Conversation Goal\n\nLearners can talk about a simple daily routine, class day, and class time in one short conversation.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
       setup: "Kamu ngobrol dengan teman kelas tentang rutinitas pagi dan jadwal kelas. Fokus pada time, days, dan simple present.",
       dialogue: [
         { speaker: "Alya", text: "What do you do in the morning?" },
@@ -1636,6 +1817,8 @@ export const lessonCatalog = [
         { phrase: "See you then.", meaning: "Sampai nanti.", usage: "Close after confirming a time." },
       ],
       grammar: "Use at for clock time, on for days, and simple present for routines.",
+      grammarNotes: "# Grammar for Conversation: reviewing on and at for schedules\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use at for clock time.\n\n- Example: I wake up at six.\n\n## Use on for days.\n\n- Example: The class is on Tuesday.\n\n## Use simple present for routines.\n\n- Example: I study English every day.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **wake up at six** - Link up-at softly.\n- **on Tuesday at eight** - Pause after Tuesday.\n- **see you then** - Say then clearly at the end.",
       prompts: [
         "Say when you wake up.",
         "Say your English routine.",
@@ -1647,6 +1830,8 @@ export const lessonCatalog = [
         { question: "When is the speaking class?", answer: "On Tuesday at eight." },
         { question: "Which word is used for clock time?", answer: "at" },
       ],
+      readingSupport: "# Reading Support\n\nBen wakes up at six and studies English at seven. His speaking class is on Tuesday at eight.\n\n## Check\n\nRead it again and underline the phrase that answers the main question.",
+      writingSupport: "# Writing Support\n\nWrite three sentences about your morning routine and one class schedule.\n\nKeep the sentences short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1654,6 +1839,7 @@ export const lessonCatalog = [
       title: "Review Places and Shopping",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can ask where a place is, follow simple directions, order one item, and ask the price.",
+      conversationGoalDetails: "# Conversation Goal\n\nLearners can ask where a place is, follow simple directions, order one item, and ask the price.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
       setup: "Kamu mencari cafe dekat kelas, lalu membeli satu minuman. Ini menggabungkan places, directions, ordering, dan prices.",
       dialogue: [
         { speaker: "Mina", text: "Excuse me. Where is the cafe?" },
@@ -1685,6 +1871,8 @@ export const lessonCatalog = [
         { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." },
       ],
       grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
+      grammarNotes: "# Grammar for Conversation: reviewing where, there is, and would like\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use Where is for one place.\n\n- Example: Where is the cafe?\n\n## Use imperatives for directions.\n\n- Example: Go straight. Turn right.\n\n## Use I would like for polite orders.\n\n- Example: I would like one tea, please.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **excuse me** - Say ex-KYOOZ mee.\n- **turn right** - Keep the r sound clear in right.\n- **would like** - Link would-like smoothly.",
       prompts: [
         "Ask where the cafe is.",
         "Confirm the place near the library.",
@@ -1696,6 +1884,8 @@ export const lessonCatalog = [
         { question: "What does Mina order?", answer: "One tea." },
         { question: "What phrase asks the price?", answer: "How much is it?" },
       ],
+      readingSupport: "# Reading Support\n\nMina asks for the cafe. Ben gives simple directions. Mina finds the cafe and buys one tea for two dollars.\n\n## Check\n\nRead it again and underline the phrase that answers the main question.",
+      writingSupport: "# Writing Support\n\nWrite a short dialogue where you ask for a place and buy one item.\n\nKeep the sentences short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1703,6 +1893,7 @@ export const lessonCatalog = [
       title: "Final Test Practice",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
+      conversationGoalDetails: "# Conversation Goal\n\nLearners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
       setup: "Ini latihan sebelum final test. Kamu menjawab beberapa pertanyaan pendek dari examiner dengan kalimat sederhana dan jelas.",
       dialogue: [
         { speaker: "Sara", text: "Hello. What is your name?" },
@@ -1736,6 +1927,8 @@ export const lessonCatalog = [
         { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Answer day and time." },
       ],
       grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
+      grammarNotes: "# Grammar for Conversation: reviewing complete short answers\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use complete A1 answers in a test.\n\n- Example: My name is Alya. I'm from Indonesia.\n\n## Use every morning for routine frequency.\n\n- Example: I study English every morning.\n\n## Use can you repeat for clarification.\n\n- Example: Sorry, can you repeat that, please?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **my name is** - Link name-is gently.\n- **every morning** - Stress EV-ery MOR-ning.\n- **can you repeat that please** - Pause after Sorry.",
       prompts: [
         "Answer the name question.",
         "Answer where you are from.",
@@ -1747,6 +1940,8 @@ export const lessonCatalog = [
         { question: "When is Alya's class?", answer: "On Tuesday at eight." },
         { question: "Which phrase asks for repetition?", answer: "Sorry, can you repeat that, please?" },
       ],
+      readingSupport: "# Reading Support\n\nAlya practices for the A1 final test. She answers name, origin, routine, and schedule questions. She asks for repetition politely.\n\n## Check\n\nRead it again and underline the phrase that answers the main question.",
+      writingSupport: "# Writing Support\n\nWrite five short answers you can use in the A1 final conversation test.\n\nKeep the sentences short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1754,6 +1949,7 @@ export const lessonCatalog = [
       title: "A1 Final Conversation",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
+      conversationGoalDetails: "# Conversation Goal\n\nLearners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
       setup: "Ini misi final A1. Kamu melakukan percakapan lebih panjang, tetapi kalimat tetap pendek, jelas, dan sesuai level A1.",
       dialogue: [
         { speaker: "Ben", text: "Hi, good morning. What is your name?" },
@@ -1799,6 +1995,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." },
       ],
       grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
+      grammarNotes: "# Grammar for Conversation: combining A1 patterns in one conversation\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use short complete sentences.\n\n- Example: My name is Mina. I'm from Indonesia.\n\n## Use question back to keep talking.\n\n- Example: How about you?\n\n## Use polite request forms.\n\n- Example: I would like one tea, please. Can you repeat that, please?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then use the phrase in the review conversation.\n\n- **good morning** - Start calmly and clearly.\n- **where is the cafe** - Keep where and cafe clear.\n- **two dollars** - Say the number slowly.\n- **thank you for your help** - Close with a warm tone.",
       prompts: [
         "Introduce yourself.",
         "Say your origin and ask back.",
@@ -1813,6 +2011,8 @@ export const lessonCatalog = [
         { question: "What does Mina order?", answer: "One tea." },
         { question: "Why does Mina ask Ben to repeat?", answer: "She wants to hear the price again." },
       ],
+      readingSupport: "# Reading Support\n\nMina completes a full A1 conversation. She introduces herself, talks about her routine, asks for the cafe, orders tea, asks for repetition, and thanks Ben.\n\n## Check\n\nRead it again and underline the phrase that answers the main question.",
+      writingSupport: "# Writing Support\n\nWrite your own final A1 conversation with at least eight short lines.\n\nKeep the sentences short, polite, and clear.",
       sections: lessonSections
     },
     {
@@ -1820,6 +2020,7 @@ export const lessonCatalog = [
       title: "Starting Small Talk",
       unit: "Social Small Talk",
       conversationGoal: "Start a short small-talk conversation and keep it going with one follow-up question.",
+      conversationGoalDetails: "Start a short small-talk conversation and keep it going with one follow-up question.\n\nLearners should be able to say:\n\n- How's your day?\n- It's busy today.\n- How was your weekend?\n- Sounds great.\n- Have a good day!",
       setup: "Kamu bertemu rekan kerja di kantor. Kamu ingin memulai obrolan ringan, tanya kabar, dan tanya satu pertanyaan lanjutan dengan sopan.",
       dialogue: [
         { speaker: "Ben", text: "Hi Mina. How's your day?" },
@@ -1850,6 +2051,8 @@ export const lessonCatalog = [
         { phrase: "Sounds great.", meaning: "Kedengarannya seru.", usage: "A friendly reaction to good news or a nice plan." },
       ],
       grammar: "Use How's + noun? to ask about someone, and use It was + adjective to talk about the weekend.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **How's + noun?** for casual small talk.\n\nExamples:\n\n- How's your day?\n- How's work?\n\nUse **It was + adjective** to talk about a finished time in the past.\n\nExamples:\n\n- How was your weekend? It was nice.\n- How was the trip? It was great.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How's your day?** - Link it: howz-yer-day.\n- **pretty** - Say PRI-tee, not PREH-tee.\n- **weekend** - Stress WEE: WEE-kend.",
       prompts: [
         "Ask about someone's day.",
         "Say that today is busy.",
@@ -1860,6 +2063,8 @@ export const lessonCatalog = [
         { question: "Which is the best follow-up question about the weekend?", answer: "How was your weekend?" },
         { question: "What is a natural reaction to \"I went to the park\"?", answer: "Sounds great." },
       ],
+      readingSupport: "# Reading Support\n\nBen meets Mina at the office. He asks about her day and her weekend. Mina says her weekend was nice and she went to the park.\n\n## Check\n\nRead it again and underline the small-talk question.",
+      writingSupport: "# Writing Support\n\nWrite 3 short sentences:\n\n1. Say hello.\n2. Ask about the day or the weekend.\n3. Close politely.",
       sections: lessonSections
     },
     {
@@ -1867,6 +2072,7 @@ export const lessonCatalog = [
       title: "Asking Follow-up Questions",
       unit: "Social Small Talk",
       conversationGoal: "Ask simple follow-up questions to keep a conversation going.",
+      conversationGoalDetails: "Ask simple follow-up questions to keep a conversation going.\n\nLearners should be able to say:\n\n- Where is it?\n- What did you order?\n- Was it good?\n- Do you want to go sometime?\n- That sounds fun.",
       setup: "Temanmu cerita tentang sesuatu yang dia lakukan kemarin. Kamu ingin bertanya lebih lanjut: di mana, apa yang dia lakukan, dan bagaimana hasilnya.",
       dialogue: [
         { speaker: "Adi", text: "Hi Lina. I went to a new cafe yesterday." },
@@ -1896,6 +2102,8 @@ export const lessonCatalog = [
         { phrase: "That sounds fun.", meaning: "Kedengarannya seru.", usage: "A positive reaction to a plan or idea." },
       ],
       grammar: "Use Where is it? and What did you + verb? for follow-up questions about place and past actions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Where is it?** to ask about the location.\n\nExamples:\n\n- I found a new cafe. Where is it?\n- There's a good shop. Where is it?\n\nUse **What did you + verb?** for follow-up questions about the past.\n\nExamples:\n\n- What did you order?\n- What did you eat?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday** - Stress YES: YES-ter-day.\n- **ordered** - Say OR-derd, not OR-der-ed.\n- **sometime** - Link it smoothly: SUM-time.",
       prompts: [
         "Ask where the cafe is.",
         "Ask what they ordered.",
@@ -1906,6 +2114,8 @@ export const lessonCatalog = [
         { question: "Which is the correct follow-up question about the past?", answer: "What did you order?" },
         { question: "What is a natural reaction to an invitation?", answer: "That sounds fun." },
       ],
+      readingSupport: "# Reading Support\n\nAdi went to a new cafe yesterday. Lina asks where it is and what Adi ordered. Adi says the cafe is near the station and the iced coffee was great.\n\n## Check\n\nRead it again and find two follow-up questions.",
+      writingSupport: "# Writing Support\n\nWrite 3 short follow-up questions you can ask a friend:\n\n- About the place\n- About what they did\n- About how it was",
       sections: lessonSections
     },
     {
@@ -1913,6 +2123,7 @@ export const lessonCatalog = [
       title: "Talking About Weekends",
       unit: "Social Small Talk",
       conversationGoal: "Ask about weekend plans and answer with simple details.",
+      conversationGoalDetails: "Ask about weekend plans and answer with simple details.\n\nLearners should be able to say:\n\n- Any plans for the weekend?\n- I'm going to visit my parents.\n- Where do they live?\n- How are you getting there?\n- I'm taking the train.",
       setup: "Kamu ngobrol sebentar dengan teman. Kamu ingin tanya rencana akhir pekan, dan kamu juga bisa menjawab dengan rencana sederhana.",
       dialogue: [
         { speaker: "Dimas", text: "Hi Alya. Any plans for the weekend?" },
@@ -1942,6 +2153,8 @@ export const lessonCatalog = [
         { phrase: "Have a great weekend.", meaning: "Semoga akhir pekanmu menyenangkan.", usage: "A friendly closing on Friday or before the weekend." },
       ],
       grammar: "Use Any plans for the weekend? to ask, and use I'm going to + verb to talk about your plan.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Any plans for ...?** to ask casually.\n\nExamples:\n\n- Any plans for the weekend?\n- Any plans for tonight?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to visit my parents.\n- I'm going to take the train.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **going to** - Say GON-na in fast speech: I'm gonna visit my parents.\n- **weekend** - Stress WEE: WEE-kend.\n- **parents** - Stress PAR: PAR-ents.",
       prompts: [
         "Ask about weekend plans.",
         "Say you are going to visit your parents.",
@@ -1952,6 +2165,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses going to to talk about a plan?", answer: "I'm going to visit my parents." },
         { question: "Which question asks about transport?", answer: "How are you getting there?" },
       ],
+      readingSupport: "# Reading Support\n\nAlya is going to visit her parents this weekend. They live in Bandung. She is taking the train on Saturday morning.\n\n## Check\n\nRead it again and circle the plan and the time.",
+      writingSupport: "# Writing Support\n\nWrite 3 short sentences about your weekend plan:\n\n1. Say your plan using going to.\n2. Add one place.\n3. Add one time.",
       sections: lessonSections
     },
     {
@@ -1959,6 +2174,7 @@ export const lessonCatalog = [
       title: "Reacting Politely",
       unit: "Social Small Talk",
       conversationGoal: "React politely to good news and to a small problem.",
+      conversationGoalDetails: "React politely to good news and to a small problem.\n\nLearners should be able to say:\n\n- I'm a bit tired today.\n- Are you okay?\n- I'm sorry to hear that.\n- That's great!\n- Nice work.",
       setup: "Kamu ngobrol singkat dengan teman. Temanmu bilang dia capek. Kamu merespons dengan sopan, lalu temanmu juga cerita kabar baik.",
       dialogue: [
         { speaker: "Mina", text: "Hi Ben. I'm a bit tired today." },
@@ -1989,6 +2205,8 @@ export const lessonCatalog = [
         { phrase: "Nice work.", meaning: "Kerja bagus.", usage: "Use this to compliment someone." },
       ],
       grammar: "Use I'm sorry to hear that for a small problem, and use That's great! for good news.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm a bit + adjective** to sound natural.\n\nExamples:\n\n- I'm a bit tired today.\n- I'm a bit busy right now.\n\nUse **didn't + base verb** for a negative in the simple past.\n\nExamples:\n\n- I didn't sleep well.\n- I didn't go out yesterday.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tired** - Say TAI-erd, not TI-red.\n- **didn't** - Keep it short: DID-nt.\n- **sorry** - Stress SOR: SOR-ree.",
       prompts: [
         "Say you are a bit tired.",
         "Check if someone is okay.",
@@ -1999,6 +2217,8 @@ export const lessonCatalog = [
         { question: "Which phrase is a natural reaction to \"I finished my project\"?", answer: "That's great!" },
         { question: "Choose the correct sentence.", answer: "I didn't sleep well." },
       ],
+      readingSupport: "# Reading Support\n\nMina is tired today because she didn't sleep well. Ben reacts politely. Then Ben shares good news: he finished his project, and Mina reacts positively.\n\n## Check\n\nRead it again and find one reaction to bad news and one reaction to good news.",
+      writingSupport: "# Writing Support\n\nWrite 4 short sentences:\n\n1. Say you are tired or busy.\n2. Explain why (one simple reason).\n3. Share one piece of good news.\n4. React politely.",
       sections: lessonSections
     },
     {
@@ -2006,6 +2226,7 @@ export const lessonCatalog = [
       title: "Small Talk Mission",
       unit: "Social Small Talk",
       conversationGoal: "Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.",
+      conversationGoalDetails: "Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.\n\nLearners should be able to say:\n\n- How's it going?\n- Did you sleep well?\n- I'm sorry to hear that.\n- Any plans for the weekend?\n- Do you want to join?",
       setup: "Ini misi gabungan Unit 1. Kamu ngobrol singkat dengan teman, tanya kabar, tanya lebih lanjut, lalu buat rencana sederhana untuk akhir pekan.",
       dialogue: [
         { speaker: "Ben", text: "Hi Lina. How's it going?" },
@@ -2044,6 +2265,8 @@ export const lessonCatalog = [
         { phrase: "What time?", meaning: "Jam berapa?", usage: "Ask for the time of a plan." },
       ],
       grammar: "Combine small-talk questions with simple past and going to for a short plan.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Did you + base verb?** to ask about the past.\n\nExamples:\n\n- Did you sleep well?\n- Did you go out yesterday?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to a new cafe.\n- I'm going to meet a friend.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **How's it going?** - Link it: howz-it-GO-ing.\n- **stayed up** - Stress STAYED: stayed-UP.\n- **Saturday** - Stress SA: SA-ter-day.",
       prompts: [
         "Ask how someone is doing.",
         "Ask if they slept well.",
@@ -2055,6 +2278,8 @@ export const lessonCatalog = [
         { question: "Which phrase invites someone to join?", answer: "Do you want to join?" },
         { question: "Which sentence talks about a plan?", answer: "I'm going to a new cafe." },
       ],
+      readingSupport: "# Reading Support\n\nBen is tired today because he stayed up late. Lina reacts politely. Then Lina suggests a weekend plan: a new cafe on Saturday at 3 pm.\n\n## Check\n\nRead it again and find the reason and the plan time.",
+      writingSupport: "# Writing Support\n\nWrite 4 to 5 short sentences for a mission conversation:\n\n1. Say hello and ask how someone is.\n2. Say you are tired and give one reason.\n3. Ask about weekend plans.\n4. Suggest a plan with a time.\n5. Close politely.",
       sections: lessonSections
     },
     {
@@ -2062,6 +2287,7 @@ export const lessonCatalog = [
       title: "Making Plans",
       unit: "Plans & Invitations",
       conversationGoal: "Make a simple plan with a time and a place.",
+      conversationGoalDetails: "Make a simple plan with a time and a place.\n\nLearners should be able to say:\n\n- Let's get coffee.\n- Are you free tomorrow?\n- How about 6 pm?\n- Let's meet at the cafe.\n- See you then.",
       setup: "Kamu ngobrol dengan teman setelah kelas. Kamu mau ngajak ketemu sebentar, pilih waktu, dan pilih tempat.",
       dialogue: [
         { speaker: "Ben", text: "Hey Mina. Are you free tomorrow?" },
@@ -2091,6 +2317,8 @@ export const lessonCatalog = [
         { phrase: "See you then.", meaning: "Sampai ketemu nanti.", usage: "A simple closing when you have a plan." },
       ],
       grammar: "Use Let's + verb to suggest a plan, and use How about + time? to propose a time.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Let's + verb** to suggest a plan.\n\nExamples:\n\n- Let's get coffee.\n- Let's meet after class.\n\nUse **How about + time/place?** to propose an option.\n\nExamples:\n\n- How about 6 pm?\n- How about the cafe near the station?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Are you free tomorrow?** - Link it: ar-ya-free.\n- **How about** - Say how-uh-bout.\n- **works for me** - Link it: works-fer-me.",
       prompts: [
         "Ask if someone is free tomorrow.",
         "Suggest getting coffee.",
@@ -2101,6 +2329,8 @@ export const lessonCatalog = [
         { question: "Which phrase proposes a time?", answer: "How about 6 pm?" },
         { question: "Which closing fits when you already agreed on a time?", answer: "See you then." },
       ],
+      readingSupport: "# Reading Support\n\nBen asks Mina if she is free tomorrow. They plan to get coffee after work at 6 pm. They will meet at the cafe near the station.\n\n## Check\n\nRead it again and underline the time and the place.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Ask if your friend is free.\n2. Suggest an activity.\n3. Propose a time.",
       sections: lessonSections
     },
     {
@@ -2108,6 +2338,7 @@ export const lessonCatalog = [
       title: "Inviting Someone",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone to an activity and respond politely.",
+      conversationGoalDetails: "Invite someone to an activity and respond politely.\n\nLearners should be able to say:\n\n- Do you want to watch a movie?\n- Would you like to join?\n- I'd love to.\n- That sounds fun.\n- Maybe next time.",
       setup: "Kamu mau ngajak teman ikut acara sederhana (misalnya nonton film atau makan). Kamu juga bisa menerima atau menolak dengan sopan.",
       dialogue: [
         { speaker: "Lina", text: "Hi Adi. Do you want to watch a movie tonight?" },
@@ -2137,6 +2368,8 @@ export const lessonCatalog = [
         { phrase: "Maybe next time.", meaning: "Mungkin lain kali.", usage: "A soft, polite way to decline." },
       ],
       grammar: "Use Do you want to + verb? to invite someone, and use I'd love to / I'd like to to accept politely.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Do you want to + verb?** to invite someone.\n\nExamples:\n\n- Do you want to watch a movie?\n- Do you want to join?\n\nUse **I'd love to / I'd like to** to accept politely.\n\nExamples:\n\n- I'd love to.\n- I'd like to go.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Do you want to** - Link it: dya-WAN-na.\n- **I'd love to** - Stress LOVE.\n- **tonight** - Stress NIGHT: to-NIGHT.",
       prompts: [
         "Invite your friend to watch a movie tonight.",
         "Accept the invitation politely.",
@@ -2147,6 +2380,8 @@ export const lessonCatalog = [
         { question: "Which sentence is an invitation?", answer: "Do you want to watch a movie tonight?" },
         { question: "Which phrase is a soft way to decline?", answer: "Maybe next time." },
       ],
+      readingSupport: "# Reading Support\n\nLina invites Adi to watch a movie tonight. They plan to go after dinner at 8 pm. Adi accepts and asks which movie.\n\n## Check\n\nRead it again and underline the invitation.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Invite your friend.\n2. Suggest a time.\n3. Accept politely.",
       sections: lessonSections
     },
     {
@@ -2154,6 +2389,7 @@ export const lessonCatalog = [
       title: "Accepting and Declining",
       unit: "Plans & Invitations",
       conversationGoal: "Accept or decline an invitation politely with a short reason.",
+      conversationGoalDetails: "Accept or decline an invitation politely with a short reason.\n\nLearners should be able to say:\n\n- Sure, I can.\n- Sorry, I can't.\n- I'm busy tonight.\n- Because I have a meeting.\n- Maybe another time.",
       setup: "Temanmu ngajak kamu ikut acara. Kamu bisa bilang iya, atau menolak dengan sopan dan alasan singkat.",
       dialogue: [
         { speaker: "Alya", text: "Hey Dimas. Do you want to join our dinner tonight?" },
@@ -2179,6 +2415,8 @@ export const lessonCatalog = [
         { phrase: "Maybe another time.", meaning: "Mungkin lain kali.", usage: "A soft closing after declining." },
       ],
       grammar: "Use I can / I can't to accept or decline, and add a short reason with because.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I can / I can't** to accept or decline.\n\nExamples:\n\n- Sure, I can.\n- Sorry, I can't.\n\nAdd a short reason with **because**.\n\nExamples:\n\n- I'm busy tonight because I have a meeting.\n- I can't go because I have work.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **can't** - Say it clearly: kant.\n- **because** - Stress CAUSE: be-CAUSE.\n- **meeting** - Stress MEET: MEET-ing.",
       prompts: [
         "Decline politely.",
         "Give a short reason.",
@@ -2189,6 +2427,8 @@ export const lessonCatalog = [
         { question: "Which sentence gives a reason?", answer: "I'm busy tonight because I have a meeting." },
         { question: "Which phrase is a soft closing after declining?", answer: "Maybe another time." },
       ],
+      readingSupport: "# Reading Support\n\nAlya invites Dimas to dinner tonight. Dimas declines politely because he has a meeting. Alya responds kindly and they suggest another time.\n\n## Check\n\nRead it again and find the reason.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines to decline politely:\n\n1. Say thank you.\n2. Say you can't.\n3. Give one short reason.",
       sections: lessonSections
     },
     {
@@ -2196,6 +2436,7 @@ export const lessonCatalog = [
       title: "Rescheduling",
       unit: "Plans & Invitations",
       conversationGoal: "Reschedule a plan and agree on a new time.",
+      conversationGoalDetails: "Reschedule a plan and agree on a new time.\n\nLearners should be able to say:\n\n- Can we reschedule?\n- Something came up.\n- How about Friday?\n- Does 7 pm work for you?\n- No problem.",
       setup: "Kamu sudah punya rencana, tapi tiba-tiba tidak bisa. Kamu minta reschedule dan menawarkan waktu baru.",
       dialogue: [
         { speaker: "Mina", text: "Hi Ben. Can we reschedule our coffee?" },
@@ -2225,6 +2466,8 @@ export const lessonCatalog = [
         { phrase: "Same cafe?", meaning: "Kafe yang sama?", usage: "Confirm the place." },
       ],
       grammar: "Use Can we reschedule? and use Does + time work for you? to confirm a new time.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Can we + verb?** to ask to change a plan.\n\nExamples:\n\n- Can we reschedule?\n- Can we meet later?\n\nUse **Does + time work for you?** to confirm a new time.\n\nExamples:\n\n- Does 7 pm work for you?\n- Does Monday work for you?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reschedule** - Stress SCHED: re-SCHED-ule.\n- **came up** - Link it: came-up.\n- **work for you** - Link it: work-fer-you.",
       prompts: [
         "Ask to reschedule.",
         "Give a short reason.",
@@ -2235,6 +2478,8 @@ export const lessonCatalog = [
         { question: "Which phrase is a short reason?", answer: "Something came up." },
         { question: "Which question confirms a new time?", answer: "Does 7 pm work for you?" },
       ],
+      readingSupport: "# Reading Support\n\nMina wants to reschedule coffee because something came up at work. They agree to meet on Friday at 7 pm at the same cafe.\n\n## Check\n\nRead it again and circle the new time.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines to reschedule:\n\n1. Ask to reschedule.\n2. Give a short reason.\n3. Suggest a new day.",
       sections: lessonSections
     },
     {
@@ -2242,6 +2487,7 @@ export const lessonCatalog = [
       title: "Invitation Mission",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone, decline politely with a reason, reschedule, and confirm the new plan.",
+      conversationGoalDetails: "Invite someone, decline politely with a reason, reschedule, and confirm the new plan.\n\nLearners should be able to say:\n\n- Do you want to grab coffee?\n- Sorry, I can't.\n- Something came up.\n- How about Saturday?\n- Does 3 pm work for you?",
       setup: "Ini misi gabungan Unit 2. Kamu ngajak teman ketemu, temanmu tidak bisa, lalu kalian atur ulang waktu dan tempat.",
       dialogue: [
         { speaker: "Ben", text: "Hi Mina. Do you want to grab coffee tomorrow?" },
@@ -2275,6 +2521,8 @@ export const lessonCatalog = [
         { phrase: "Does 3 pm work for you?", meaning: "Jam 3 sore cocok buat kamu?", usage: "Confirm the new time." },
       ],
       grammar: "Combine invitations with I can't + reason and rescheduling with Does + time work for you?",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I can't + time** to decline.\n\nExamples:\n\n- I can't tomorrow.\n- I can't tonight.\n\nUse **Does + time work for you?** to confirm.\n\nExamples:\n\n- Does 3 pm work for you?\n- Does Saturday work for you?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **grab coffee** - Say it smoothly: grab-COF-fee.\n- **Saturday** - Stress SA: SA-ter-day.\n- **work for you** - Link it: work-fer-you.",
       prompts: [
         "Invite your friend to grab coffee tomorrow.",
         "Decline politely.",
@@ -2285,6 +2533,8 @@ export const lessonCatalog = [
         { question: "Which question confirms a time?", answer: "Does 3 pm work for you?" },
         { question: "Which phrase is a polite decline?", answer: "Sorry, I can't." },
       ],
+      readingSupport: "# Reading Support\n\nBen invites Mina to grab coffee tomorrow. Mina can't because something came up at work. They reschedule for Saturday at 3 pm at the cafe near the station.\n\n## Check\n\nRead it again and underline the new day and time.",
+      writingSupport: "# Writing Support\n\nWrite 4 short lines:\n\n1. Invite your friend.\n2. Decline politely with a reason.\n3. Suggest a new day.\n4. Confirm a new time.",
       sections: lessonSections
     },
     {
@@ -2292,6 +2542,7 @@ export const lessonCatalog = [
       title: "Buying a Ticket",
       unit: "Travel & Transport",
       conversationGoal: "Buy a simple ticket and confirm the destination.",
+      conversationGoalDetails: "Buy a simple ticket and confirm the destination.\n\nLearners should be able to say:\n\n- I'd like one ticket to Bandung.\n- One-way, please.\n- How much is it?\n- What time is the next train?\n- Thank you.",
       setup: "Kamu ada di loket stasiun. Kamu ingin beli tiket ke satu kota, lalu memastikan jenis tiket dan tujuan.",
       dialogue: [
         { speaker: "Staff", text: "Hi. Where are you going?" },
@@ -2321,6 +2572,8 @@ export const lessonCatalog = [
         { phrase: "How much is it again?", meaning: "Berapa tadi harganya?", usage: "Ask to confirm the price." },
       ],
       grammar: "Use I'd like + noun to request a ticket, and use One-way or Round-trip to choose the ticket type.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something politely.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a bottle of water, please.\n\nUse **One-way / Round-trip** to choose the ticket type.\n\nExamples:\n\n- One-way, please.\n- Round-trip, please.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like** - Link it: I'd-like.\n- **ticket** - Stress TIC: TIC-ket.\n- **round-trip** - Stress ROUND.",
       prompts: [
         "Request one ticket to Bandung.",
         "Choose one-way.",
@@ -2331,6 +2584,8 @@ export const lessonCatalog = [
         { question: "Which sentence requests a ticket politely?", answer: "I'd like one ticket to Bandung, please." },
         { question: "Which question asks for the price?", answer: "How much is it?" },
       ],
+      readingSupport: "# Reading Support\n\nDimas buys a one-way ticket to Bandung at the station. The staff asks one-way or round-trip, and the price is 120,000 rupiah.\n\n## Check\n\nRead it again and circle the ticket type.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Request a ticket.\n2. Choose one-way or round-trip.\n3. Ask the price.",
       sections: lessonSections
     },
     {
@@ -2338,6 +2593,7 @@ export const lessonCatalog = [
       title: "Asking About Departure Time",
       unit: "Travel & Transport",
       conversationGoal: "Ask about a departure time and confirm the platform.",
+      conversationGoalDetails: "Ask about a departure time and confirm the platform.\n\nLearners should be able to say:\n\n- What time does the train leave?\n- It leaves at 6:30.\n- Which platform?\n- How long is the trip?\n- Thank you.",
       setup: "Kamu sudah punya tiket. Kamu ingin tahu kereta berangkat jam berapa, dari platform mana, dan berapa lama perjalanan.",
       dialogue: [
         { speaker: "Alya", text: "Excuse me. What time does the train leave?" },
@@ -2367,6 +2623,8 @@ export const lessonCatalog = [
         { phrase: "How long is the trip?", meaning: "Perjalanannya berapa lama?", usage: "Ask for the duration." },
       ],
       grammar: "Use What time does it leave? to ask about departure, and use Which platform? to confirm where to go.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What time does + noun + verb?** to ask about a schedule.\n\nExamples:\n\n- What time does the train leave?\n- What time does the bus arrive?\n\nUse **Which + noun?** to ask for a choice.\n\nExamples:\n\n- Which platform?\n- Which gate?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Excuse me** - Link it: ex-CUSE-me.\n- **leaves at** - Link it: leaves-at.\n- **platform** - Stress PLA: PLAT-form.",
       prompts: [
         "Ask what time the train leaves.",
         "Ask which platform.",
@@ -2377,6 +2635,8 @@ export const lessonCatalog = [
         { question: "Which question asks for a departure time?", answer: "What time does the train leave?" },
         { question: "Which question asks about duration?", answer: "How long is the trip?" },
       ],
+      readingSupport: "# Reading Support\n\nAlya asks about the train to Bandung. It leaves at 6:30 pm from platform 2, and the trip is about three hours.\n\n## Check\n\nRead it again and underline the time.",
+      writingSupport: "# Writing Support\n\nWrite 3 short questions you can ask at a station:\n\n1. About the time\n2. About the platform\n3. About the duration",
       sections: lessonSections
     },
     {
@@ -2384,6 +2644,7 @@ export const lessonCatalog = [
       title: "Checking Directions",
       unit: "Travel & Transport",
       conversationGoal: "Check directions and confirm you are going the right way.",
+      conversationGoalDetails: "Check directions and confirm you are going the right way.\n\nLearners should be able to say:\n\n- Excuse me. Where is platform 2?\n- Go straight.\n- Turn left at the stairs.\n- Is this the right way?\n- Thank you.",
       setup: "Kamu sedang di stasiun atau terminal. Kamu mau ke gate/platform tertentu, tapi kamu ragu. Kamu minta arahan dan konfirmasi.",
       dialogue: [
         { speaker: "Ben", text: "Excuse me. Where is platform 2?" },
@@ -2411,6 +2672,8 @@ export const lessonCatalog = [
         { phrase: "You're going the right way.", meaning: "Kamu sudah jalan yang benar.", usage: "A helpful confirmation." },
       ],
       grammar: "Use Is this the right way? to check, and use Turn left/right to follow directions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Is this the right way?** to confirm directions.\n\nExamples:\n\n- Is this the right way to platform 2?\n- Is this the right way?\n\nUse **Turn left/right + at + landmark** for directions.\n\nExamples:\n\n- Turn left at the stairs.\n- Turn right at the bank.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **platform** - Stress PLA: PLAT-form.\n- **stairs** - One syllable: stairs.\n- **right way** - Link it: right-way.",
       prompts: [
         "Ask where platform 2 is.",
         "Ask to confirm the direction.",
@@ -2421,6 +2684,8 @@ export const lessonCatalog = [
         { question: "Which question checks directions?", answer: "Is this the right way?" },
         { question: "Which phrase gives a direction?", answer: "Go straight." },
       ],
+      readingSupport: "# Reading Support\n\nBen asks where platform 2 is. The staff says to go straight and turn left at the stairs. Ben checks if it is the right way.\n\n## Check\n\nRead it again and circle the direction words.",
+      writingSupport: "# Writing Support\n\nWrite 3 short direction sentences:\n\n- Go straight.\n- Turn left at the ____.\n- Turn right at the ____.",
       sections: lessonSections
     },
     {
@@ -2428,6 +2693,7 @@ export const lessonCatalog = [
       title: "Talking to a Driver",
       unit: "Travel & Transport",
       conversationGoal: "Tell a driver where you want to go and ask about the travel time.",
+      conversationGoalDetails: "Tell a driver where you want to go and ask about the travel time.\n\nLearners should be able to say:\n\n- Hi. Can you take me to the station?\n- To the station, please.\n- How long will it take?\n- About 20 minutes.\n- Thank you.",
       setup: "Kamu naik taksi/ojek online. Kamu mau ke hotel atau stasiun. Kamu menyebutkan tujuan dan tanya berapa lama.",
       dialogue: [
         { speaker: "Driver", text: "Hi. Where to?" },
@@ -2455,6 +2721,8 @@ export const lessonCatalog = [
         { phrase: "About 20 minutes.", meaning: "Sekitar 20 menit.", usage: "A simple estimate." },
       ],
       grammar: "Use Can you take me to + place? to request a ride, and use How long will it take? to ask about time.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Can you take me to + place?** to request a ride.\n\nExamples:\n\n- Can you take me to the station?\n- Can you take me to the hotel?\n\nUse **How long will it take?** to ask about time.\n\nExamples:\n\n- How long will it take?\n- How long will it take to get there?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **take me to** - Link it: take-me-to.\n- **fastest** - Stress FAST: FAST-est.\n- **route** - One syllable: root.",
       prompts: [
         "Ask the driver to take you to the station.",
         "Ask how long it will take.",
@@ -2465,6 +2733,8 @@ export const lessonCatalog = [
         { question: "Which question asks about travel time?", answer: "How long will it take?" },
         { question: "Which sentence is a polite request to the driver?", answer: "Please take the fastest route." },
       ],
+      readingSupport: "# Reading Support\n\nLina asks the driver to take her to the station. The driver says it will take about 20 minutes. Lina asks for the fastest route.\n\n## Check\n\nRead it again and circle the destination.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines you can say to a driver:\n\n1. Your destination\n2. A time question\n3. A polite request",
       sections: lessonSections
     },
     {
@@ -2472,6 +2742,7 @@ export const lessonCatalog = [
       title: "Transport Mission",
       unit: "Travel & Transport",
       conversationGoal: "Buy a ticket, confirm time and platform, then tell a driver your destination.",
+      conversationGoalDetails: "Buy a ticket, confirm time and platform, then tell a driver your destination.\n\nLearners should be able to say:\n\n- I'd like one ticket to Bandung.\n- What time does it leave?\n- Which platform?\n- Can you take me to the hotel?\n- How long will it take?",
       setup: "Ini misi gabungan Unit 3. Kamu beli tiket, tanya jadwal dan platform, lalu lanjut naik taksi/ojek ke hotel.",
       dialogue: [
         { speaker: "Staff", text: "Hi. Where are you going?" },
@@ -2507,6 +2778,8 @@ export const lessonCatalog = [
         { phrase: "Let's go.", meaning: "Ayo berangkat.", usage: "A simple start phrase." },
       ],
       grammar: "Combine I'd like + ticket, What time does it leave?, and Can you take me to + place? in one connected mission.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a taxi, please.\n\nUse **What time does it leave?** to ask about a schedule.\n\nExamples:\n\n- What time does it leave?\n- What time does the train leave?\n\nUse **Can you take me to + place?** for a driver request.\n\nExamples:\n\n- Can you take me to my hotel?\n- Can you take me to the station?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **leaves at** - Link it: leaves-at.\n- **platform two** - Say it clearly: PLAT-form two.\n- **take me to** - Link it: take-me-to.",
       prompts: [
         "Request a ticket to Bandung.",
         "Ask about the departure time.",
@@ -2517,6 +2790,8 @@ export const lessonCatalog = [
         { question: "Which phrase asks a driver to take you somewhere?", answer: "Can you take me to my hotel, please?" },
         { question: "Which detail is about a schedule?", answer: "It leaves at 6:30 pm." },
       ],
+      readingSupport: "# Reading Support\n\nAlya buys a one-way ticket to Bandung. The train leaves at 6:30 pm from platform 2. Then she asks a driver to take her to her hotel.\n\n## Check\n\nRead it again and underline the time and platform.",
+      writingSupport: "# Writing Support\n\nWrite 4 short lines for a transport mission:\n\n1. Request a ticket.\n2. Ask about the time.\n3. Ask about the platform.\n4. Ask a driver to take you to a place.",
       sections: lessonSections
     },
     {
@@ -2524,6 +2799,7 @@ export const lessonCatalog = [
       title: "Asking for an Item",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item in a shop and check if it is available.",
+      conversationGoalDetails: "Ask for an item in a shop and check if it is available.\n\nLearners should be able to say:\n\n- Excuse me. Do you have this in black?\n- I'm looking for a charger.\n- Do you have it?\n- Yes, we do.\n- Sorry, we're out of stock.",
       setup: "Kamu ada di toko. Kamu mencari satu barang, lalu tanya apakah barang itu tersedia.",
       dialogue: [
         { speaker: "Mina", text: "Excuse me. I'm looking for a phone charger." },
@@ -2551,6 +2827,8 @@ export const lessonCatalog = [
         { phrase: "Sorry, we're out of stock.", meaning: "Maaf, stoknya habis.", usage: "A polite way to say the item is not available." },
       ],
       grammar: "Use Do you have + item? to ask for availability, and use I'm looking for + item to explain what you want.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a phone charger.\n- I'm looking for a black T-shirt.\n\nUse **Do you have + item?** to ask about availability.\n\nExamples:\n\n- Do you have a USB-C charger?\n- Do you have this in black?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **looking for** - Link it: LOOK-ing-fer.\n- **charger** - Stress CHAR: CHAR-jer.\n- **USB-C** - Say the letters clearly: U-S-B-C.",
       prompts: [
         "Say you are looking for a phone charger.",
         "Ask if the store has it.",
@@ -2561,6 +2839,8 @@ export const lessonCatalog = [
         { question: "Which question asks about availability?", answer: "Do you have it?" },
         { question: "Which sentence explains what you want?", answer: "I'm looking for a phone charger." },
       ],
+      readingSupport: "# Reading Support\n\nMina is looking for a phone charger in a store. The staff asks what kind she needs. Mina asks if they have it.\n\n## Check\n\nRead it again and underline the item.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Say what you are looking for.\n2. Ask if they have it.\n3. Say thank you.",
       sections: lessonSections
     },
     {
@@ -2568,6 +2848,7 @@ export const lessonCatalog = [
       title: "Asking About Size and Color",
       unit: "Shopping & Services",
       conversationGoal: "Ask about size and color and choose one option.",
+      conversationGoalDetails: "Ask about size and color and choose one option.\n\nLearners should be able to say:\n\n- Do you have this in black?\n- Do you have it in size M?\n- We have it in blue.\n- Size M is available.\n- I'll take it.",
       setup: "Kamu beli baju di toko. Kamu tanya warna dan ukuran yang tersedia, lalu pilih salah satu.",
       dialogue: [
         { speaker: "Alya", text: "Excuse me. Do you have this T-shirt in black?" },
@@ -2593,6 +2874,8 @@ export const lessonCatalog = [
         { phrase: "I'll take the blue one.", meaning: "Saya ambil yang biru.", usage: "Choose an option." },
       ],
       grammar: "Use Do you have this in + color? to ask about color, and use Do you have it in size + letter/number? to ask about size.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Do you have this in + color?** to ask about color.\n\nExamples:\n\n- Do you have this in black?\n- Do you have this in red?\n\nUse **Do you have it in size + letter/number?** to ask about size.\n\nExamples:\n\n- Do you have it in size M?\n- Do you have it in size 40?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **T-shirt** - Say T-shirt clearly.\n- **available** - Stress VAIL: a-VAIL-a-ble.\n- **I'll take it** - Link it: I'll-take-it.",
       prompts: [
         "Ask if they have it in black.",
         "Ask about size M.",
@@ -2603,6 +2886,8 @@ export const lessonCatalog = [
         { question: "Which question asks about size?", answer: "Do you have it in size M?" },
         { question: "Which sentence chooses an option?", answer: "I'll take the blue one." },
       ],
+      readingSupport: "# Reading Support\n\nAlya wants a black T-shirt, but the store only has blue and white. She asks for size M and chooses the blue one.\n\n## Check\n\nRead it again and find the color choices.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Ask about a color.\n2. Ask about a size.\n3. Choose one option.",
       sections: lessonSections
     },
     {
@@ -2610,6 +2895,7 @@ export const lessonCatalog = [
       title: "Comparing Simple Options",
       unit: "Shopping & Services",
       conversationGoal: "Compare two simple options and choose one.",
+      conversationGoalDetails: "Compare two simple options and choose one.\n\nLearners should be able to say:\n\n- Which one is cheaper?\n- This one is cheaper.\n- Which one is better?\n- I'll take the cheaper one.\n- How much is it?",
       setup: "Kamu lihat dua produk di toko. Kamu ingin membandingkan harga atau kualitas sederhana, lalu pilih salah satu.",
       dialogue: [
         { speaker: "Ben", text: "Excuse me. Which one is cheaper?" },
@@ -2635,6 +2921,8 @@ export const lessonCatalog = [
         { phrase: "I'll take the cheaper one.", meaning: "Saya ambil yang lebih murah.", usage: "Choose an option." },
       ],
       grammar: "Use Which one is cheaper? to compare, and use I'll take the cheaper one to choose.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **I'll take the + comparative one** to choose.\n\nExamples:\n\n- I'll take the cheaper one.\n- I'll take the bigger one.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cheaper** - Stress CHEAP: CHEAP-er.\n- **quality** - Stress QUAL: QUAL-i-ty.\n- **I'll take** - Link it: I'll-take.",
       prompts: [
         "Ask which one is cheaper.",
         "Choose the cheaper one.",
@@ -2645,6 +2933,8 @@ export const lessonCatalog = [
         { question: "Which sentence chooses an option?", answer: "I'll take the cheaper one." },
         { question: "Which is correct?", answer: "It's better quality." },
       ],
+      readingSupport: "# Reading Support\n\nBen asks which option is cheaper. One costs 80,000 rupiah and the other costs 120,000 rupiah but has better quality. Ben chooses the cheaper one.\n\n## Check\n\nRead it again and circle the prices.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Ask which one is cheaper.\n2. Ask about the other one.\n3. Choose one option.",
       sections: lessonSections
     },
     {
@@ -2652,6 +2942,7 @@ export const lessonCatalog = [
       title: "Requesting Service Help",
       unit: "Shopping & Services",
       conversationGoal: "Ask for simple service help and respond politely.",
+      conversationGoalDetails: "Ask for simple service help and respond politely.\n\nLearners should be able to say:\n\n- Could you help me?\n- Can you show me where the batteries are?\n- It's over there.\n- Thank you for your help.\n- You're welcome.",
       setup: "Kamu butuh bantuan di toko. Kamu minta staff menunjukkan lokasi barang, atau membantu cari ukuran.",
       dialogue: [
         { speaker: "Lina", text: "Excuse me. Could you help me?" },
@@ -2677,6 +2968,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuannya.", usage: "A polite closing." },
       ],
       grammar: "Use Could you help me? to ask politely, and use Can you show me where + item is? to ask for help finding something.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?\n\nUse **Can you show me where + noun + are/is?** to ask for a location.\n\nExamples:\n\n- Can you show me where the batteries are?\n- Can you show me where the station is?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Could you** - Link it: could-ja.\n- **batteries** - Stress BAT: BAT-er-ies.\n- **cash register** - Stress CASH.",
       prompts: [
         "Ask for help politely.",
         "Ask where the batteries are.",
@@ -2687,6 +2980,8 @@ export const lessonCatalog = [
         { question: "Which sentence asks for a location?", answer: "Can you show me where the batteries are?" },
         { question: "Which sentence thanks someone for help?", answer: "Thank you for your help." },
       ],
+      readingSupport: "# Reading Support\n\nLina asks a staff member for help finding batteries. The staff says the batteries are next to the cash register. Lina thanks the staff.\n\n## Check\n\nRead it again and underline the location phrase.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n\n1. Ask for help.\n2. Ask where an item is.\n3. Say thank you.",
       sections: lessonSections
     },
     {
@@ -2694,6 +2989,7 @@ export const lessonCatalog = [
       title: "Shopping Service Mission",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item, ask about size and color, compare options, and request help politely.",
+      conversationGoalDetails: "Ask for an item, ask about size and color, compare options, and request help politely.\n\nLearners should be able to say:\n\n- I'm looking for a charger.\n- Do you have it in black?\n- Do you have it in size M?\n- Which one is cheaper?\n- Could you help me?",
       setup: "Ini misi gabungan Unit 4. Kamu cari barang, tanya warna/ukuran, bandingkan dua opsi, lalu minta staff menunjukkan lokasinya.",
       dialogue: [
         { speaker: "Ben", text: "Excuse me. I'm looking for a charger." },
@@ -2729,6 +3025,8 @@ export const lessonCatalog = [
         { phrase: "Could you help me?", meaning: "Bisa bantu saya?", usage: "Ask for help politely." },
       ],
       grammar: "Combine Do you have + item?, Do you have it in size?, and Which one is cheaper? in one mission conversation.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a charger.\n- I'm looking for a T-shirt.\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **Which one** - Link it: which-one.\n- **cheaper** - Stress CHEAP.\n- **Could you** - Link it: could-ja.",
       prompts: [
         "Say you are looking for a charger.",
         "Ask which one is cheaper.",
@@ -2739,6 +3037,8 @@ export const lessonCatalog = [
         { question: "Which sentence chooses an option?", answer: "I'll take this one." },
         { question: "Which phrase asks for help politely?", answer: "Could you help me?" },
       ],
+      readingSupport: "# Reading Support\n\nBen looks for a charger, compares two options, and chooses one. Then he asks for help finding batteries near the cash register.\n\n## Check\n\nRead it again and find the comparison question.",
+      writingSupport: "# Writing Support\n\nWrite 4 short lines for a shopping mission:\n\n1. Say what you are looking for.\n2. Compare two options.\n3. Choose one.\n4. Ask for help finding another item.",
       sections: lessonSections
     },
     {
@@ -2746,6 +3046,7 @@ export const lessonCatalog = [
       title: "Saying How You Feel",
       unit: "Health & Appointments",
       conversationGoal: "Say how you feel and mention one or two simple symptoms.",
+      conversationGoalDetails: "Say how you feel and mention one or two simple symptoms.\n\nLearners should be able to say:\n\n- I don't feel well.\n- I have a headache.\n- I'm really tired.\n- I think I have a fever.",
       setup: "Kamu ngobrol sama teman. Kamu merasa nggak enak badan dan jelaskan satu-dua gejala.",
       dialogue: [
         { speaker: "Mina", text: "Hey, are you okay?" },
@@ -2773,6 +3074,8 @@ export const lessonCatalog = [
         { phrase: "I think I have a fever.", meaning: "Kayaknya aku demam.", usage: "I think makes it softer and natural." },
       ],
       grammar: "Use I feel + adjective and I have + noun to describe how you feel (I feel tired, I have a headache).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I feel + adjective**.\n\nExamples:\n\n- I feel tired.\n- I feel sick today.\n\nUse **I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **feel well** - Link it: FEEL-well.\n- **headache** - Stress HEAD: HEAD-ake.\n- **fever** - Stress FEE: FEE-ver.",
       prompts: [
         "Say you don't feel well.",
         "Say you have a headache.",
@@ -2783,6 +3086,8 @@ export const lessonCatalog = [
         { question: "Which sentence is correct?", answer: "I have a headache." },
         { question: "What does \"Take care\" mean here?", answer: "Hati-hati / jaga diri" },
       ],
+      readingSupport: "# Reading Support\n\nHilmi does not feel well. He has a headache and feels tired. Mina suggests going home.\n\n## Check\n\nRead it again and underline the key symptom words.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n1. Say you do not feel well.\n2. Say one symptom.\n3. Say what you will do.",
       sections: lessonSections
     },
     {
@@ -2790,6 +3095,7 @@ export const lessonCatalog = [
       title: "Describing Simple Symptoms",
       unit: "Health & Appointments",
       conversationGoal: "Describe simple symptoms and say how long you have had them.",
+      conversationGoalDetails: "Describe simple symptoms and say how long you have had them.\n\nLearners should be able to say:\n\n- I've had a sore throat since yesterday.\n- I've had a cough for two days.\n- Do you have a fever?\n- A little.",
       setup: "Kamu di klinik. Kamu jelaskan gejala dan bilang sudah berapa lama.",
       dialogue: [
         { speaker: "Nurse", text: "What seems to be the problem?" },
@@ -2817,6 +3123,8 @@ export const lessonCatalog = [
         { phrase: "Please wait here.", meaning: "Tolong tunggu di sini.", usage: "A polite instruction." },
       ],
       grammar: "Use I've had + symptom + for/since to say duration (I've had a cough for two days / since yesterday).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a headache for a week.\n\nUse **I've had + symptom + since**.\n\nExamples:\n\n- I've had a sore throat since yesterday.\n- I've had a fever since Monday.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **sore throat** - Link it: SORE-throat.\n- **since yesterday** - Stress YES: since YES-ter-day.\n- **coughing** - Drop the g: COFF-ing.",
       prompts: [
         "Say you've had a cough for two days.",
         "Say you've had a sore throat since yesterday.",
@@ -2827,6 +3135,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses \"for\" correctly?", answer: "I've had a sore throat for two days." },
         { question: "What is the nurse asking with \"How long have you been coughing?\"", answer: "Sudah berapa lama kamu batuk?" },
       ],
+      readingSupport: "# Reading Support\n\nMina is at a clinic. She has had a sore throat since yesterday and a cough for two days.\n\n## Check\n\nRead it again and underline the key symptom words.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines:\n1. Say one symptom.\n2. Say how long you've had it (for/since).\n3. Say one more symptom.",
       sections: lessonSections
     },
     {
@@ -2834,6 +3144,7 @@ export const lessonCatalog = [
       title: "Making an Appointment",
       unit: "Health & Appointments",
       conversationGoal: "Ask for an appointment and choose a day and time.",
+      conversationGoalDetails: "Ask for an appointment and choose a day and time.\n\nLearners should be able to say:\n\n- I'd like to make an appointment.\n- Is tomorrow afternoon okay?\n- We have 3:30 p.m. available.\n- I'll take it.",
       setup: "Kamu telepon klinik untuk buat janji. Kamu pilih hari dan jam.",
       dialogue: [
         { speaker: "Receptionist", text: "Good morning. Green Clinic. How can I help you?" },
@@ -2863,6 +3174,8 @@ export const lessonCatalog = [
         { phrase: "I'll take it.", meaning: "Saya ambil.", usage: "Accept the offered time." },
       ],
       grammar: "Use I'd like to + verb to make polite requests (I'd like to make an appointment).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to make an appointment.\n- I'd like to see a doctor.\n\nUse **Is + time/day + okay?**.\n\nExamples:\n\n- Is tomorrow afternoon okay?\n- Is Monday morning okay?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like to** - Say I'd as one sound: I'd.\n- **appointment** - Stress POINT: a-POINT-ment.\n- **available** - Stress VAIL: a-VAIL-a-ble.",
       prompts: [
         "Say you'd like to make an appointment.",
         "Ask if tomorrow afternoon is okay.",
@@ -2873,6 +3186,8 @@ export const lessonCatalog = [
         { question: "What does \"available\" mean?", answer: "Tersedia" },
         { question: "Which question suggests a time?", answer: "Is tomorrow afternoon okay?" },
       ],
+      readingSupport: "# Reading Support\n\nMina calls a clinic to make an appointment. The receptionist offers a time at 3:30 p.m.\n\n## Check\n\nRead it again and underline the key symptom words.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines for a phone call:\n1. Say you'd like to make an appointment.\n2. Ask for tomorrow afternoon.\n3. Accept a time.",
       sections: lessonSections
     },
     {
@@ -2880,6 +3195,7 @@ export const lessonCatalog = [
       title: "Confirming Details",
       unit: "Health & Appointments",
       conversationGoal: "Confirm the appointment date, time, and name details.",
+      conversationGoalDetails: "Confirm the appointment date, time, and name details.\n\nLearners should be able to say:\n\n- Let me confirm the time: 3:30 p.m., right?\n- My name is Mina Park.\n- P-A-R-K.\n- See you tomorrow.",
       setup: "Kamu konfirmasi detail janji: jam, nama, dan nomor telepon.",
       dialogue: [
         { speaker: "Receptionist", text: "Okay, you're booked for tomorrow at 3:30 p.m." },
@@ -2907,6 +3223,8 @@ export const lessonCatalog = [
         { phrase: "See you tomorrow.", meaning: "Sampai besok.", usage: "A friendly closing." },
       ],
       grammar: "Use Let me confirm... / So it's on... at... to repeat details and avoid mistakes.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Let me confirm + detail**.\n\nExamples:\n\n- Let me confirm the time.\n- Let me confirm your name.\n\nUse **So it's on... at...**.\n\nExamples:\n\n- So it's on Monday at 3:30 p.m.\n- So it's tomorrow at 10 a.m.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confirm** - Stress FIRM: con-FIRM.\n- **three thirty** - Say it clearly: three THIR-ty.\n- **letters** - Say each letter: P - A - R - K.",
       prompts: [
         "Confirm the time 3:30 p.m.",
         "Say your name is Mina Park.",
@@ -2917,6 +3235,8 @@ export const lessonCatalog = [
         { question: "Which sentence checks details?", answer: "3:30 p.m., right?" },
         { question: "What is spelling?", answer: "Menyebut huruf satu-satu" },
       ],
+      readingSupport: "# Reading Support\n\nMina confirms her appointment time and gives her name and phone number to the clinic.\n\n## Check\n\nRead it again and underline the key symptom words.",
+      writingSupport: "# Writing Support\n\nWrite a short confirmation:\n1. Confirm the date/time.\n2. Write your name.\n3. Write your phone number.",
       sections: lessonSections
     },
     {
@@ -2924,6 +3244,7 @@ export const lessonCatalog = [
       title: "Health Appointment Mission",
       unit: "Health & Appointments",
       conversationGoal: "Check in for an appointment, confirm details, and describe a symptom briefly.",
+      conversationGoalDetails: "Check in for an appointment, confirm details, and describe a symptom briefly.\n\nLearners should be able to say:\n\n- I have an appointment at 3:30.\n- Mina Park. P-A-R-K.\n- I've had a cough for two days.\n- Please take a seat.",
       setup: "Kamu datang ke klinik untuk janji, konfirmasi nama, lalu jelaskan gejala singkat.",
       dialogue: [
         { speaker: "Receptionist", text: "Hello. How can I help you today?" },
@@ -2951,6 +3272,8 @@ export const lessonCatalog = [
         { phrase: "The doctor will see you soon.", meaning: "Dokternya akan menemui kamu sebentar lagi.", usage: "Soon means in a short time." },
       ],
       grammar: "Combine polite check-in (I have an appointment) with symptom + duration (I've had... since/for...).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I have an appointment at + time**.\n\nExamples:\n\n- I have an appointment at 3:30.\n- I have an appointment at 10 a.m.\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a fever for a day.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **appointment** - a-POINT-ment.\n- **take a seat** - Link it: TAKE-a-SEAT.\n- **see you soon** - Link it: SEE-ya-SOON.",
       prompts: [
         "Say you have an appointment at 3:30.",
         "Say you've had a cough for two days.",
@@ -2961,6 +3284,8 @@ export const lessonCatalog = [
         { question: "What does \"Please take a seat\" mean?", answer: "Silakan duduk" },
         { question: "Which sentence talks about duration?", answer: "I've had a cough for two days." },
       ],
+      readingSupport: "# Reading Support\n\nMina checks in at the clinic, confirms her name, and describes her symptoms briefly.\n\n## Check\n\nRead it again and underline the key symptom words.",
+      writingSupport: "# Writing Support\n\nWrite a mini mission script:\n1. Check in with your appointment time.\n2. Write your name.\n3. Write one symptom + duration.",
       sections: lessonSections
     },
     {
@@ -2968,6 +3293,7 @@ export const lessonCatalog = [
       title: "Talking About Yesterday",
       unit: "Past Experiences",
       conversationGoal: "Talk about what you did yesterday using simple past tense verbs.",
+      conversationGoalDetails: "Talk about what you did yesterday using simple past tense verbs.\n\nLearners should be able to say:\n\n- I went to the mall yesterday.\n- What did you do there?\n- I watched a movie last night.",
       setup: "Kamu ngobrol sama teman. Kamu cerita singkat tentang kemarin: kamu pergi ke mana dan ngapain.",
       dialogue: [
         { speaker: "Mina", text: "Hey, how was your day yesterday?" },
@@ -2995,6 +3321,8 @@ export const lessonCatalog = [
         { phrase: "Did you go alone?", meaning: "Kamu pergi sendirian?", usage: "A simple yes/no question in the past." },
       ],
       grammar: "Use simple past verbs (went, ate, watched) and time words (yesterday, last night) to describe what you did.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Simple past verbs**.\n\nExamples:\n\n- I went to the mall.\n- I ate ramen.\n- I watched a movie.\n\nUse **Past question with did**.\n\nExamples:\n\n- What did you do?\n- Did you go alone?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday** - Stress YES: YES-ter-day.\n- **went to** - Link it: WEN(t)-to.\n- **did you** - Link it: DI-dju.",
       prompts: [
         "Say you went to the mall yesterday.",
         "Ask: What did you do there?",
@@ -3005,6 +3333,8 @@ export const lessonCatalog = [
         { question: "Which question is in the past?", answer: "What did you do?" },
         { question: "What does \"last night\" mean?", answer: "tadi malam" },
       ],
+      readingSupport: "# Reading Support\n\nHilmi talks about yesterday. He went to the mall, bought a jacket, and ate ramen.\n\n## Check\n\nRead it again and underline the past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n1. Say where you went yesterday.\n2. Say what you did there.\n3. Say what you did last night.",
       sections: lessonSections
     },
     {
@@ -3012,6 +3342,7 @@ export const lessonCatalog = [
       title: "Saying Where You Went",
       unit: "Past Experiences",
       conversationGoal: "Say where you went and ask where someone went.",
+      conversationGoalDetails: "Say where you went and ask where someone went.\n\nLearners should be able to say:\n\n- Where did you go yesterday?\n- I went to the museum.\n- I stayed home.",
       setup: "Kamu ngobrol singkat setelah acara. Kamu bilang kamu pergi ke suatu tempat, lalu tanya lawan bicara.",
       dialogue: [
         { speaker: "Staff", text: "Hi! Did you go anywhere interesting yesterday?" },
@@ -3039,6 +3370,8 @@ export const lessonCatalog = [
         { phrase: "Where did you go after that?", meaning: "Setelah itu kamu ke mana?", usage: "After that helps sequence events." },
       ],
       grammar: "Use I went to + place and Where did you go? for simple past questions about places.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I went to + place**.\n\nExamples:\n\n- I went to the museum.\n- I went to a cafe.\n\nUse **Where did you go?**.\n\nExamples:\n\n- Where did you go yesterday?\n- Where did you go after that?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **museum** - Say myoo-ZEE-um.\n- **anywhere** - Stress ANY: ANY-where.\n- **stayed** - Clear -ed: stayed.",
       prompts: [
         "Ask where they went yesterday.",
         "Say you went to the museum.",
@@ -3049,6 +3382,8 @@ export const lessonCatalog = [
         { question: "Which question asks about a place in the past?", answer: "Where did you go?" },
         { question: "What does \"anywhere\" mean?", answer: "di mana saja" },
       ],
+      readingSupport: "# Reading Support\n\nMina talks about yesterday. She went to the museum and then to a cafe near the river.\n\n## Check\n\nRead it again and underline the past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines:\n1. Say where you went yesterday.\n2. Say where you went after that.\n3. Ask: Where did you go?",
       sections: lessonSections
     },
     {
@@ -3056,6 +3391,7 @@ export const lessonCatalog = [
       title: "Describing a Simple Experience",
       unit: "Past Experiences",
       conversationGoal: "Describe a simple experience and how it felt.",
+      conversationGoalDetails: "Describe a simple experience and how it felt.\n\nLearners should be able to say:\n\n- I tried a new restaurant yesterday.\n- It was delicious.\n- I really liked it.",
       setup: "Kamu cerita pengalaman singkat (makan di tempat baru). Kamu jelaskan rasanya dengan kata sifat sederhana.",
       dialogue: [
         { speaker: "Mina", text: "I tried a new restaurant yesterday." },
@@ -3083,6 +3419,8 @@ export const lessonCatalog = [
         { phrase: "The service was great.", meaning: "Pelayanannya bagus.", usage: "Service is singular here." },
       ],
       grammar: "Use It was + adjective and I really liked it / I did not like it to describe experiences.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was delicious.\n- It was fun.\n\nUse **I liked it / I did not like it**.\n\nExamples:\n\n- I really liked it.\n- I did not like it.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **delicious** - de-LI-shus.\n- **really** - REE-lee (not ree-AL-lee).\n- **service** - SER-vis.",
       prompts: [
         "Say you tried a new restaurant yesterday.",
         "Answer: How was it?",
@@ -3093,6 +3431,8 @@ export const lessonCatalog = [
         { question: "Which sentence is correct?", answer: "It was delicious." },
         { question: "Which sentence is in the past?", answer: "I liked it." },
       ],
+      readingSupport: "# Reading Support\n\nMina tried a new restaurant yesterday. She says the food was delicious and the service was great.\n\n## Check\n\nRead it again and underline the past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines:\n1. Say what you tried yesterday.\n2. Say: It was + adjective.\n3. Say: I really liked it.",
       sections: lessonSections
     },
     {
@@ -3100,6 +3440,7 @@ export const lessonCatalog = [
       title: "Asking About Past Activities",
       unit: "Past Experiences",
       conversationGoal: "Ask what someone did and ask follow-up questions about their past activities.",
+      conversationGoalDetails: "Ask what someone did and ask follow-up questions about their past activities.\n\nLearners should be able to say:\n\n- What did you do yesterday evening?\n- Did you cook at home?\n- Yes, I did.",
       setup: "Kamu ngobrol santai. Kamu tanya apa yang dia lakukan kemarin, lalu tanya detail singkat.",
       dialogue: [
         { speaker: "Mina", text: "What did you do yesterday evening?" },
@@ -3127,6 +3468,8 @@ export const lessonCatalog = [
         { phrase: "I made fried rice.", meaning: "Aku bikin nasi goreng.", usage: "Made is past of make." },
       ],
       grammar: "Use What did you do? / Did you + verb? to ask about the past and use short past answers.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What did you do?**.\n\nExamples:\n\n- What did you do yesterday?\n- What did you do last night?\n\nUse **Did you + verb?**.\n\nExamples:\n\n- Did you cook at home?\n- Did you watch a movie?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **yesterday evening** - Stress YES: YES-ter-day EVE-ning.\n- **did you** - DI-dju.\n- **fried rice** - Link it: fried rice.",
       prompts: [
         "Ask: What did you do yesterday evening?",
         "Ask: Did you cook at home?",
@@ -3137,6 +3480,8 @@ export const lessonCatalog = [
         { question: "Which is a short past answer?", answer: "Yes, I did." },
         { question: "What does \"follow-up question\" mean?", answer: "pertanyaan tambahan" },
       ],
+      readingSupport: "# Reading Support\n\nMina asks Hilmi about yesterday evening. He cooked dinner, listened to music, and made fried rice.\n\n## Check\n\nRead it again and underline the past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 3 questions:\n1. Ask: What did you do yesterday?\n2. Ask: Did you + verb?\n3. Ask one follow-up: What did you + verb?",
       sections: lessonSections
     },
     {
@@ -3144,6 +3489,7 @@ export const lessonCatalog = [
       title: "Past Experience Mission",
       unit: "Past Experiences",
       conversationGoal: "Tell someone about yesterday: where you went, what you did, and how it was.",
+      conversationGoalDetails: "Tell someone about yesterday: where you went, what you did, and how it was.\n\nLearners should be able to say:\n\n- I went to the museum and took photos.\n- It was really interesting.\n- Did you go with anyone?",
       setup: "Misi: kamu cerita kemarin ke teman. Kamu sebutkan tempat, aktivitas, dan pendapat singkat.",
       dialogue: [
         { speaker: "Friend", text: "Hey! What did you do yesterday?" },
@@ -3171,6 +3517,8 @@ export const lessonCatalog = [
         { phrase: "Did you go with anyone?", meaning: "Kamu pergi sama siapa?", usage: "Ask who they went with." },
       ],
       grammar: "Combine simple past (went/did/ate) with It was + adjective to complete a short past story.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Simple past story**.\n\nExamples:\n\n- I went to the museum.\n- I took photos.\n- I liked it.\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was really interesting.\n- It was fun.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-tres-ting (often 3 syllables).\n- **took** - Short vowel: took.\n- **with anyone** - Link it: with EN-uh-one.",
       prompts: [
         "Say what you did yesterday (museum + photos).",
         "Answer: How was it?",
@@ -3181,6 +3529,8 @@ export const lessonCatalog = [
         { question: "Which sentence describes an experience?", answer: "It was interesting." },
         { question: "What does \"anyone\" mean?", answer: "siapa saja" },
       ],
+      readingSupport: "# Reading Support\n\nMina tells a friend about yesterday. She went to the museum, took photos, and says it was interesting.\n\n## Check\n\nRead it again and underline the past verbs.",
+      writingSupport: "# Writing Support\n\nWrite your mission (3 lines):\n1. Where did you go yesterday?\n2. What did you do?\n3. How was it? (It was + adjective)",
       sections: lessonSections
     },
     {
@@ -3188,6 +3538,7 @@ export const lessonCatalog = [
       title: "Saying What You Think",
       unit: "Opinions & Reasons",
       conversationGoal: "Say what you think about a simple topic and give a short opinion.",
+      conversationGoalDetails: "Say what you think about a simple topic and give a short opinion.\n\nLearners should be able to say:\n\n- I think it's really good.\n- The story is simple, but fun.\n- What did you think?",
       setup: "Kamu ngobrol santai. Kamu kasih opini sederhana tentang film yang baru kamu tonton.",
       dialogue: [
         { speaker: "Mina", text: "I watched the new movie last night." },
@@ -3215,6 +3566,8 @@ export const lessonCatalog = [
         { phrase: "I want to watch it too.", meaning: "Aku juga mau nonton.", usage: "A natural follow-up after hearing an opinion." },
       ],
       grammar: "Use I think + sentence and I think it's + adjective to share a simple opinion.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I think + sentence**.\n\nExamples:\n\n- I think it's really good.\n- I think the story is fun.\n\nUse **I think it's + adjective**.\n\nExamples:\n\n- I think it's interesting.\n- I think it's boring.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I think it's** - Link it: I-THINK-its.\n- **really** - REE-lee (not ree-AL-lee).\n- **story** - STOR-ee.",
       prompts: [
         "Answer: What did you think?",
         "Say the story is simple, but fun.",
@@ -3225,6 +3578,8 @@ export const lessonCatalog = [
         { question: "Which word shows contrast?", answer: "but" },
         { question: "What does \"I think\" mean?", answer: "saya pikir/menurut saya" },
       ],
+      readingSupport: "# Reading Support\n\nMina shares her opinion about a new movie. She says it is really good and the story is simple but fun.\n\n## Check\n\nRead it again and underline the opinion phrases (I think, because, but).",
+      writingSupport: "# Writing Support\n\nWrite 3 lines:\n1. Say: I think it's + adjective.\n2. Add one detail (story/actor/music).\n3. Say if you recommend it (Yes/No) + short reason.",
       sections: lessonSections
     },
     {
@@ -3232,6 +3587,7 @@ export const lessonCatalog = [
       title: "Giving Simple Reasons",
       unit: "Opinions & Reasons",
       conversationGoal: "Give a simple opinion and a short reason using because.",
+      conversationGoalDetails: "Give a simple opinion and a short reason using because.\n\nLearners should be able to say:\n\n- Why?\n- Because the coffee is good.\n- I agree.",
       setup: "Kamu kasih opini tentang tempat makan, lalu jelaskan alasannya dengan because.",
       dialogue: [
         { speaker: "Hilmi", text: "Do you like this cafe?" },
@@ -3259,6 +3615,8 @@ export const lessonCatalog = [
         { phrase: "I come here often.", meaning: "Aku sering ke sini.", usage: "Often is an adverb of frequency." },
       ],
       grammar: "Use because + reason to explain your opinion (I like it because it is easy).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because the coffee is good.\n- I come here because it is quiet.\n\nUse **Why? / Because...**.\n\nExamples:\n\n- Why?\n- Because it is relaxing.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **because** - bi-KOZ / bi-KUZ.\n- **quiet** - KWAI-et.\n- **agree** - uh-GREE.",
       prompts: [
         "Answer: Why do you like it?",
         "Say you agree.",
@@ -3269,6 +3627,8 @@ export const lessonCatalog = [
         { question: "Which phrase means setuju?", answer: "I agree." },
         { question: "What does \"quiet\" mean?", answer: "tenang" },
       ],
+      readingSupport: "# Reading Support\n\nMina says she likes the cafe. She gives reasons: the coffee is good and the place is quiet and relaxing.\n\n## Check\n\nRead it again and underline the opinion phrases (I think, because, but).",
+      writingSupport: "# Writing Support\n\nWrite 3 lines with reasons:\n1. I like it because ...\n2. I come here because ...\n3. I recommend it because ...",
       sections: lessonSections
     },
     {
@@ -3276,6 +3636,7 @@ export const lessonCatalog = [
       title: "Agreeing and Disagreeing Politely",
       unit: "Opinions & Reasons",
       conversationGoal: "Agree or disagree politely and give a short reason.",
+      conversationGoalDetails: "Agree or disagree politely and give a short reason.\n\nLearners should be able to say:\n\n- I'm not sure.\n- I don't think so.\n- That's fair.",
       setup: "Kamu diskusi santai soal makanan. Kamu setuju dan tidak setuju dengan cara sopan.",
       dialogue: [
         { speaker: "Hilmi", text: "I think this restaurant is the best." },
@@ -3303,6 +3664,8 @@ export const lessonCatalog = [
         { phrase: "It's a bit expensive.", meaning: "Agak mahal.", usage: "A soft negative opinion." },
       ],
       grammar: "Use I agree / I'm not sure / I don't think so to respond politely to opinions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I'm not sure.\n- I don't think so.\n\nUse **Agree + contrast with but**.\n\nExamples:\n\n- I agree, but...\n- I agree the food is good, but the service is slow.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'm not sure** - not SURE.\n- **don't think** - DON't THINK.\n- **fair** - FAIR.",
       prompts: [
         "Respond politely: I think it's the best.",
         "Say you agree, but the service is slow.",
@@ -3313,6 +3676,8 @@ export const lessonCatalog = [
         { question: "Which sentence is correct?", answer: "I don't think so." },
         { question: "What does \"That's fair\" mean?", answer: "masuk akal" },
       ],
+      readingSupport: "# Reading Support\n\nHilmi says the restaurant is the best. Mina disagrees politely, agrees the food is good, but says the service is slow.\n\n## Check\n\nRead it again and underline the opinion phrases (I think, because, but).",
+      writingSupport: "# Writing Support\n\nWrite 3 polite responses:\n1. I'm not sure. ...\n2. I agree, but ...\n3. That's fair. ...",
       sections: lessonSections
     },
     {
@@ -3320,6 +3685,7 @@ export const lessonCatalog = [
       title: "Asking for Opinions",
       unit: "Opinions & Reasons",
       conversationGoal: "Ask for someone's opinion and respond with a simple opinion and reason.",
+      conversationGoalDetails: "Ask for someone's opinion and respond with a simple opinion and reason.\n\nLearners should be able to say:\n\n- What do you think about going to Bali?\n- I think it's a great idea.\n- It might be crowded.",
       setup: "Kamu lagi memilih tempat liburan. Kamu tanya pendapat teman dan kasih pendapatmu juga.",
       dialogue: [
         { speaker: "Mina", text: "What do you think about going to Bali?" },
@@ -3347,6 +3713,8 @@ export const lessonCatalog = [
         { phrase: "Maybe we go on a weekday.", meaning: "Mungkin kita pergi hari kerja.", usage: "A simple suggestion." },
       ],
       grammar: "Use What do you think about + noun? and respond with I think... because...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **What do you think about + noun/verb-ing?**.\n\nExamples:\n\n- What do you think about this plan?\n- What do you think about going to Bali?\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's a great idea because the beaches are beautiful.\n- I think it's good because it's relaxing.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **what do you** - WHA-dju.\n- **think about** - THINK a-BOUT.\n- **crowded** - CROW-did.",
       prompts: [
         "Ask: What do you think about going to Bali?",
         "Answer with opinion + reason.",
@@ -3357,6 +3725,8 @@ export const lessonCatalog = [
         { question: "What does \"might\" mean?", answer: "mungkin" },
         { question: "Choose the best because sentence.", answer: "Because the beaches are beautiful." },
       ],
+      readingSupport: "# Reading Support\n\nMina asks Hilmi's opinion about going to Bali. Hilmi says it's a great idea because the beaches are beautiful.\n\n## Check\n\nRead it again and underline the opinion phrases (I think, because, but).",
+      writingSupport: "# Writing Support\n\nWrite 3 lines:\n1. Ask: What do you think about ...?\n2. Answer: I think ... because ...\n3. Add one concern: It might be ...",
       sections: lessonSections
     },
     {
@@ -3364,6 +3734,7 @@ export const lessonCatalog = [
       title: "Opinion Conversation Mission",
       unit: "Opinions & Reasons",
       conversationGoal: "Have a short opinion conversation: ask for an opinion, give a reason, and respond politely.",
+      conversationGoalDetails: "Have a short opinion conversation: ask for an opinion, give a reason, and respond politely.\n\nLearners should be able to say:\n\n- What do you think about this restaurant?\n- I'm not sure. The service might be slow.\n- Because it's quieter and the coffee is good.",
       setup: "Misi: kamu dan teman memilih tempat makan. Kamu tanya pendapat, kasih alasan, dan tanggapi dengan sopan.",
       dialogue: [
         { speaker: "Mina", text: "What do you think about this restaurant?" },
@@ -3391,6 +3762,8 @@ export const lessonCatalog = [
         { phrase: "Do you have another idea?", meaning: "Kamu ada ide lain?", usage: "Ask for an alternative." },
       ],
       grammar: "Combine opinion + because + polite agreement/disagreement (I agree / I'm not sure).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's good because it's cheap.\n- I think it's better because it's quiet.\n\nUse **Polite response**.\n\nExamples:\n\n- I'm not sure.\n- That's fair.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **another idea** - a-NO-ther i-DE-a.\n- **cheaper/cheap** - CHEEP.\n- **quieter** - KWAI-et-er.",
       prompts: [
         "Ask for an opinion about the restaurant.",
         "Say you are not sure and the service might be slow.",
@@ -3401,6 +3774,8 @@ export const lessonCatalog = [
         { question: "Which phrase is polite hesitation?", answer: "I'm not sure." },
         { question: "What does \"another idea\" mean?", answer: "ide lain" },
       ],
+      readingSupport: "# Reading Support\n\nMina and a friend discuss where to eat. They share opinions, give reasons with because, and respond politely.\n\n## Check\n\nRead it again and underline the opinion phrases (I think, because, but).",
+      writingSupport: "# Writing Support\n\nWrite your mission (3 lines):\n1. Ask for an opinion: What do you think about ...?\n2. Respond politely: I'm not sure. It might be ...\n3. Suggest another idea + because ...",
       sections: lessonSections
     },
     {
@@ -3408,6 +3783,7 @@ export const lessonCatalog = [
       title: "Review Social and Plans",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review social small talk and making simple plans with follow-up questions.",
+      conversationGoalDetails: "Review social small talk and making simple plans with follow-up questions.\n\nLearners should be able to say:\n\n- How have you been?\n- What have you been working on?\n- Are you free on Saturday?",
       setup: "Review: kamu ketemu teman. Kamu mulai small talk, tanya follow-up, lalu ajak bikin rencana sederhana.",
       dialogue: [
         { speaker: "Mina", text: "Hey! Long time no see. How have you been?" },
@@ -3435,6 +3811,8 @@ export const lessonCatalog = [
         { phrase: "Let's meet at 3 p.m.", meaning: "Ketemu jam 3 sore ya.", usage: "Confirm a time." },
       ],
       grammar: "Review follow-up questions, invitations, and simple future plans (Do you want to...?, Are you free...?).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Inviting with Do you want to...?**.\n\nExamples:\n\n- Do you want to grab coffee?\n- Do you want to hang out this weekend?\n\nUse **Checking availability**.\n\nExamples:\n\n- Are you free on Saturday?\n- Are you free this weekend?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **long time no see** - Link it smoothly: long-time-no-see.\n- **grab coffee** - GRAB KAW-fee.\n- **are you free** - are-you-FREE.",
       prompts: [
         "Ask: How have you been?",
         "Invite: Do you want to grab coffee this weekend?",
@@ -3445,6 +3823,8 @@ export const lessonCatalog = [
         { question: "Which question asks about availability?", answer: "Are you free on Saturday?" },
         { question: "What does \"grab coffee\" mean?", answer: "ngopi sebentar" },
       ],
+      readingSupport: "# Reading Support\n\nMina and Hilmi do small talk, ask a follow-up question about work, and make a plan to get coffee on Saturday.\n\n## Check\n\nRead it again and underline the key patterns you know.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines for review:\n1. Small talk: How have you been?\n2. Follow-up: What have you been working on?\n3. Plan: Are you free on Saturday?",
       sections: lessonSections
     },
     {
@@ -3452,6 +3832,7 @@ export const lessonCatalog = [
       title: "Review Travel and Shopping",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review asking travel questions and shopping requests (tickets, directions, items, sizes).",
+      conversationGoalDetails: "Review asking travel questions and shopping requests (tickets, directions, items, sizes).\n\nLearners should be able to say:\n\n- Where is platform 2?\n- What time is the next train?\n- Do you have a phone charger?",
       setup: "Review: kamu di stasiun lalu mampir toko. Kamu tanya arah/jadwal, lalu tanya barang dan ukuran.",
       dialogue: [
         { speaker: "Mina", text: "Excuse me. Where is platform 2?" },
@@ -3479,6 +3860,8 @@ export const lessonCatalog = [
         { phrase: "A USB-C charger, please.", meaning: "Charger USB-C, ya.", usage: "A short polite request." },
       ],
       grammar: "Review polite questions (Do you have...?, How much is...?, Where is...?) and simple requests.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Where is...?**.\n\nExamples:\n\n- Where is platform 2?\n- Where is the ticket counter?\n\nUse **Do you have...?**.\n\nExamples:\n\n- Do you have a phone charger?\n- Do you have this in black?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **platform** - PLAT-form.\n- **next train** - NEXT train.\n- **USB-C** - Say letters clearly: U-S-B-C.",
       prompts: [
         "Ask: What time is the next train?",
         "Ask: Do you have a phone charger?",
@@ -3489,6 +3872,8 @@ export const lessonCatalog = [
         { question: "Which question asks about availability?", answer: "Do you have a phone charger?" },
         { question: "What is \"platform\" in a train station?", answer: "peron" },
       ],
+      readingSupport: "# Reading Support\n\nMina asks for a platform and the next train time, then asks for a phone charger and specifies USB-C.\n\n## Check\n\nRead it again and underline the key patterns you know.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n1. Ask: Where is ...?\n2. Ask: What time is ...?\n3. Ask: Do you have ...?",
       sections: lessonSections
     },
     {
@@ -3496,6 +3881,7 @@ export const lessonCatalog = [
       title: "Review Health and Past",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review describing symptoms and talking about the past (yesterday, last night).",
+      conversationGoalDetails: "Review describing symptoms and talking about the past (yesterday, last night).\n\nLearners should be able to say:\n\n- I don't feel well.\n- What did you do yesterday?\n- Did you sleep late last night?",
       setup: "Review: kamu ngobrol sama teman. Kamu bilang kamu nggak enak badan, lalu cerita singkat tentang kemarin.",
       dialogue: [
         { speaker: "Mina", text: "I don't feel well today." },
@@ -3523,6 +3909,8 @@ export const lessonCatalog = [
         { phrase: "I stayed home.", meaning: "Aku di rumah aja.", usage: "Past of stay." },
       ],
       grammar: "Review I don't feel well / I have... and simple past questions with did.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Health: I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.\n\nUse **Past question with did**.\n\nExamples:\n\n- Did you sleep late?\n- What did you do yesterday?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **headache** - HEAD-ake.\n- **did you** - DI-dju.\n- **stayed** - Clear -ed: stayed.",
       prompts: [
         "Say you don't feel well today.",
         "Ask: What did you do yesterday?",
@@ -3533,6 +3921,8 @@ export const lessonCatalog = [
         { question: "What does \"I don't feel well\" mean?", answer: "Saya tidak enak badan" },
         { question: "What is the past of \"stay\"?", answer: "stayed" },
       ],
+      readingSupport: "# Reading Support\n\nMina says she does not feel well and has a headache. She answers questions about last night and yesterday.\n\n## Check\n\nRead it again and underline the key patterns you know.",
+      writingSupport: "# Writing Support\n\nWrite 3 short lines:\n1. I don't feel well. I have ...\n2. Yes/No. I slept late last night.\n3. Yesterday, I went to ... and stayed home.",
       sections: lessonSections
     },
     {
@@ -3540,6 +3930,7 @@ export const lessonCatalog = [
       title: "A2 Final Test Practice",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Practice mixed A2 skills with short prompts (plans, shopping, symptoms, past, opinions).",
+      conversationGoalDetails: "Practice mixed A2 skills with short prompts (plans, shopping, symptoms, past, opinions).\n\nLearners should be able to say:\n\n- Do you want to grab coffee this weekend?\n- Do you have a USB-C charger?\n- I've had a cough for two days.",
       setup: "Latihan final: kamu jawab prompt campuran dengan kalimat pendek yang benar dan jelas.",
       dialogue: [
         { speaker: "Coach", text: "Let's practice. Ready?" },
@@ -3569,6 +3960,8 @@ export const lessonCatalog = [
         { phrase: "I think it's good because it's cheap.", meaning: "Menurutku bagus karena murah.", usage: "Opinion + reason practice." },
       ],
       grammar: "Review core A2 patterns: Do you want to..., Do you have..., I've had..., What did you do..., I think... because...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Mixed review patterns**.\n\nExamples:\n\n- Do you want to...?\n- Do you have...?\n- I've had... for/since...\n- What did you do yesterday?\n- I think... because...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **USB-C** - U-S-B-C.\n- **have had** - Link it: have-had.\n- **because** - bi-KOZ.",
       prompts: [
         "Invite a friend for coffee this weekend.",
         "Ask for a USB-C charger.",
@@ -3579,6 +3972,8 @@ export const lessonCatalog = [
         { question: "Which sentence shows duration?", answer: "I've had a cough for two days." },
         { question: "Which sentence is opinion + reason?", answer: "I think it's good because it's cheap." },
       ],
+      readingSupport: "# Reading Support\n\nThis practice mixes A2 patterns: invitations, availability questions, symptoms with duration, past questions, and opinions with reasons.\n\n## Check\n\nRead it again and underline the key patterns you know.",
+      writingSupport: "# Writing Support\n\nWrite 3 answers:\n1. Invitation: Do you want to ...?\n2. Shopping: Do you have ...?\n3. Health: I've had ... for ...",
       sections: lessonSections
     },
     {
@@ -3586,6 +3981,7 @@ export const lessonCatalog = [
       title: "A2 Final Conversation",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).",
+      conversationGoalDetails: "Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).\n\nLearners should be able to say:\n\n- Would you recommend it?\n- Yes, because the coffee is good.\n- Are you free on Saturday afternoon?",
       setup: "Final: kamu ketemu teman. Kamu small talk, cerita kemarin, kasih opini, lalu bikin rencana dan minta bantuan kecil.",
       dialogue: [
         { speaker: "Mina", text: "Hey Hilmi! How have you been?" },
@@ -3619,6 +4015,8 @@ export const lessonCatalog = [
         { phrase: "A bit tired, though.", meaning: "Agak capek.", usage: "Though softens the tone." },
       ],
       grammar: "Combine A2 skills naturally: small talk, past questions, invitations, opinions with because, and simple requests.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Recommend with because**.\n\nExamples:\n\n- Yes, because the coffee is good.\n- Yes, because it is quiet.\n\nUse **Plan with weekend + availability**.\n\nExamples:\n\n- Do you want to go there this weekend?\n- Are you free on Saturday afternoon?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommend** - re-ko-MEND.\n- **though** - THOH.\n- **weekend** - WEEK-end.",
       prompts: [
         "Answer: Would you recommend it?",
         "Invite: Do you want to go there this weekend?",
@@ -3629,6 +4027,8 @@ export const lessonCatalog = [
         { question: "Choose the best reason sentence.", answer: "Because the coffee is good." },
         { question: "Which sentence checks availability?", answer: "Are you free on Saturday?" },
       ],
+      readingSupport: "# Reading Support\n\nMina and Hilmi combine A2 skills: small talk, past questions, giving an opinion with because, and making a plan for the weekend.\n\n## Check\n\nRead it again and underline the key patterns you know.",
+      writingSupport: "# Writing Support\n\nWrite 3 lines for the final conversation:\n1. Small talk: How have you been?\n2. Opinion + reason: Yes, because ...\n3. Plan: Are you free on Saturday?",
       sections: lessonSections
     },
     {
@@ -3636,6 +4036,7 @@ export const lessonCatalog = [
       title: "Setting the Scene",
       unit: "Personal Stories",
       conversationGoal: "Set the scene for a short story (when, where, who) before telling what happened.",
+      conversationGoalDetails: "Set the scene for a short story (when, where, who) before telling what happened.\n\nLearners should be able to say:\n\n- Last weekend, I was in Bandung with my cousin.\n- We were visiting my aunt.\n- It was cooler than Jakarta.",
       setup: "Kamu cerita pengalaman singkat. Kamu jelaskan kapan, di mana, dan sama siapa dulu sebelum cerita inti.",
       dialogue: [
         { speaker: "Mina", text: "You look happy today. What happened?" },
@@ -3663,6 +4064,8 @@ export const lessonCatalog = [
         { phrase: "It was cooler than Jakarta.", meaning: "Lebih sejuk dari Jakarta.", usage: "Use comparative adjective + than." },
       ],
       grammar: "Use time and place phrases (last weekend, at the beach) and past \"be\" (I was, we were) to set the scene.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Setting time and place**.\n\nExamples:\n\n- Last weekend, I was in Bandung.\n- Yesterday afternoon, we were at the station.\n\nUse **Past be (was / were)**.\n\nExamples:\n\n- I was with my cousin.\n- We were visiting my aunt.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **last weekend** - Link it: last-WEEK-end.\n- **were visiting** - wer-VI-zi-ting.\n- **cooler than** - KOO-ler than.",
       prompts: [
         "Set the scene: last weekend + Bandung.",
         "Add who you were with.",
@@ -3673,6 +4076,8 @@ export const lessonCatalog = [
         { question: "What does \"set the scene\" mean in a story?", answer: "jelaskan kapan/di mana" },
         { question: "Which is a comparative sentence?", answer: "It was cooler than Jakarta." },
       ],
+      readingSupport: "# Reading Support\n\nHilmi sets the scene for his story: last weekend in Bandung with his cousin. He describes the place and what they were doing.\n\n## Check\n\nRead it again and underline the linking words and past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 4 connected sentences:\n1. Time: Last weekend, ...\n2. Place: I was in ...\n3. Who: I was with ...\n4. Background: We were ...ing",
       sections: lessonSections
     },
     {
@@ -3680,6 +4085,7 @@ export const lessonCatalog = [
       title: "Telling Events in Order",
       unit: "Personal Stories",
       conversationGoal: "Tell story events in order using simple linking words (first, then, after that, finally).",
+      conversationGoalDetails: "Tell story events in order using simple linking words (first, then, after that, finally).\n\nLearners should be able to say:\n\n- First, we checked in at the hotel.\n- What happened after that?\n- Finally, we went back early.",
       setup: "Kamu cerita kejadian berurutan. Kamu pakai first/then/after that/finally supaya jelas.",
       dialogue: [
         { speaker: "Mina", text: "So what did you do on your trip?" },
@@ -3709,6 +4115,8 @@ export const lessonCatalog = [
         { phrase: "Finally, we went back early.", meaning: "Terakhir, kami pulang lebih cepat.", usage: "Finally ends the story sequence." },
       ],
       grammar: "Use linking words (first, then, after that, finally) to connect past events clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Linking words for sequence**.\n\nExamples:\n\n- First, ...\n- Then, ...\n- After that, ...\n- Finally, ...\n\nUse **Past verbs in stories**.\n\nExamples:\n\n- We checked in.\n- We walked around.\n- We met my aunt.\n- We went back.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **after that** - AF-ter that.\n- **finally** - FINE-uh-lee.\n- **checked in** - CHECKT in.",
       prompts: [
         "Start with first (check in).",
         "Ask: What happened after that?",
@@ -3719,6 +4127,8 @@ export const lessonCatalog = [
         { question: "What is the past of \"meet\"?", answer: "met" },
         { question: "What does \"after that\" mean?", answer: "setelah itu" },
       ],
+      readingSupport: "# Reading Support\n\nHilmi tells his trip in order using linking words: first, then, after that, and finally.\n\n## Check\n\nRead it again and underline the linking words and past verbs.",
+      writingSupport: "# Writing Support\n\nWrite a short sequence (4 sentences):\n1. First, ...\n2. Then, ...\n3. After that, ...\n4. Finally, ...",
       sections: lessonSections
     },
     {
@@ -3726,6 +4136,7 @@ export const lessonCatalog = [
       title: "Describing Feelings",
       unit: "Personal Stories",
       conversationGoal: "Describe how you felt during a story using feeling adjectives.",
+      conversationGoalDetails: "Describe how you felt during a story using feeling adjectives.\n\nLearners should be able to say:\n\n- How did you feel?\n- I felt nervous because we got lost.\n- I felt relieved after that.",
       setup: "Kamu cerita pengalaman dan jelaskan perasaan kamu (nervous, excited, relieved).",
       dialogue: [
         { speaker: "Mina", text: "How did you feel during the trip?" },
@@ -3753,6 +4164,8 @@ export const lessonCatalog = [
         { phrase: "We got lost.", meaning: "Kami tersesat.", usage: "A common travel problem phrase." },
       ],
       grammar: "Use I felt + adjective and I was + adjective to describe feelings in past situations.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I felt + adjective**.\n\nExamples:\n\n- I felt nervous.\n- I felt relieved.\n\nUse **I was + adjective**.\n\nExamples:\n\n- I was excited.\n- I was worried.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **nervous** - NER-vus.\n- **relieved** - ri-LEEVd.\n- **excited** - ik-SAI-ted.",
       prompts: [
         "Ask about feelings in the past.",
         "Say you felt nervous because you got lost.",
@@ -3763,6 +4176,8 @@ export const lessonCatalog = [
         { question: "What does \"relieved\" mean?", answer: "lega" },
         { question: "Which question asks about feelings in the past?", answer: "How did you feel?" },
       ],
+      readingSupport: "# Reading Support\n\nHilmi describes his feelings in the story. He felt nervous when they got lost, and relieved after they asked for directions.\n\n## Check\n\nRead it again and underline the linking words and past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 4 connected sentences:\n1. At first, I felt ... because ...\n2. Then we ...\n3. After that, I felt ...\n4. Finally, I was ...",
       sections: lessonSections
     },
     {
@@ -3770,6 +4185,7 @@ export const lessonCatalog = [
       title: "Asking About Someone's Story",
       unit: "Personal Stories",
       conversationGoal: "Ask follow-up questions to keep someone's story going (next event, reason, feelings).",
+      conversationGoalDetails: "Ask follow-up questions to keep someone's story going (next event, reason, feelings).\n\nLearners should be able to say:\n\n- What happened next?\n- Why did you choose that route?\n- How did you feel at that moment?",
       setup: "Kamu dengar cerita teman. Kamu tanya follow-up: next, alasan, dan perasaan.",
       dialogue: [
         { speaker: "Mina", text: "So you got lost. What happened next?" },
@@ -3797,6 +4213,8 @@ export const lessonCatalog = [
         { phrase: "I'm glad it worked out.", meaning: "Syukurlah akhirnya beres.", usage: "A natural supportive reaction." },
       ],
       grammar: "Use follow-up questions in the past: What happened next? Why did you...? How did you feel?",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Follow-up questions**.\n\nExamples:\n\n- What happened next?\n- Why did you do that?\n- How did you feel?\n\nUse **Past question with did**.\n\nExamples:\n\n- Why did you choose that route?\n- Why did you go there?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **happened** - HAP-end.\n- **route** - ROOT.\n- **worked out** - WORKT out.",
       prompts: [
         "Ask: What happened next?",
         "Ask: Why did you choose that route?",
@@ -3807,6 +4225,8 @@ export const lessonCatalog = [
         { question: "Which question is correct?", answer: "Why did you do that?" },
         { question: "What does \"It worked out\" mean?", answer: "akhirnya beres" },
       ],
+      readingSupport: "# Reading Support\n\nMina keeps Hilmi's story going with follow-up questions: what happened next, why he chose something, and how he felt.\n\n## Check\n\nRead it again and underline the linking words and past verbs.",
+      writingSupport: "# Writing Support\n\nWrite 4 follow-up questions:\n1. What happened next?\n2. Why did you ...?\n3. How did you feel?\n4. What did you do after that?",
       sections: lessonSections
     },
     {
@@ -3814,6 +4234,7 @@ export const lessonCatalog = [
       title: "Personal Story Mission",
       unit: "Personal Stories",
       conversationGoal: "Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.",
+      conversationGoalDetails: "Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.\n\nLearners should be able to say:\n\n- Last weekend, I was in ...\n- First..., then...\n- I felt ... but ...",
       setup: "Misi: kamu cerita pengalaman kemarin. Kamu set the scene, urutkan kejadian, jelaskan perasaan, lalu jawab follow-up.",
       dialogue: [
         { speaker: "Mina", text: "Tell me about something interesting that happened recently." },
@@ -3843,6 +4264,8 @@ export const lessonCatalog = [
         { phrase: "What happened next?", meaning: "Terus apa yang terjadi?", usage: "A follow-up question." },
       ],
       grammar: "Combine scene setting + sequence words + feelings to tell a connected story (4 to 6 sentences).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Connected story pattern**.\n\nExamples:\n\n- Last weekend, I was in ...\n- First, ... Then ... After that ... Finally, ...\n- I felt ... because ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-tres-ting.\n- **explored** - ik-SPLORD.\n- **ended** - EN-did.",
       prompts: [
         "Start a connected story with time and place.",
         "Tell two events with first/then.",
@@ -3853,6 +4276,8 @@ export const lessonCatalog = [
         { question: "Which is a follow-up question?", answer: "What happened next?" },
         { question: "Choose the correct past sentence.", answer: "I felt relieved after that." },
       ],
+      readingSupport: "# Reading Support\n\nA connected personal story has a clear scene, ordered events, and feelings. It also includes one follow-up question and answer.\n\n## Check\n\nRead it again and underline the linking words and past verbs.",
+      writingSupport: "# Writing Support\n\nWrite your mission (5 sentences):\n1. Time + place\n2. Who you were with\n3. First, ...\n4. Then, ...\n5. I felt ... but ...",
       sections: lessonSections
     },
     {
@@ -3860,6 +4285,7 @@ export const lessonCatalog = [
       title: "Explaining Your Task",
       unit: "Workplace Conversations",
       conversationGoal: "Explain what you are working on and what the next step is in a short, clear way.",
+      conversationGoalDetails: "Explain what you are working on and what the next step is in a short, clear way.\n\nLearners should be able to say:\n\n- I'm working on ...\n- Next, I'll ...\n- Any blockers?",
       setup: "Kamu ngobrol sama manager. Kamu jelaskan kamu lagi ngerjain apa dan langkah berikutnya.",
       dialogue: [
         { speaker: "Faris", text: "Hi Mina. What are you working on today?" },
@@ -3887,6 +4313,8 @@ export const lessonCatalog = [
         { phrase: "Keep me posted.", meaning: "Kabari aku ya.", usage: "A polite closing at work." },
       ],
       grammar: "Use I am working on... / I am planning to... to explain your task and next step politely.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I am working on + noun**.\n\nExamples:\n\n- I'm working on the onboarding email flow.\n- I'm working on the bug fix.\n\nUse **Next, I will / I'll + verb**.\n\nExamples:\n\n- Next, I'll review the copy.\n- Next, I'll update the template.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **working on** - WORK-ing on (link it).\n- **next step** - NEXT step.\n- **keep me posted** - KEEP me POS-ted.",
       prompts: [
         "Say what you are working on.",
         "Say the next step (review copy).",
@@ -3897,6 +4325,8 @@ export const lessonCatalog = [
         { question: "What does \"blocker\" mean at work?", answer: "hambatan" },
         { question: "Which phrase asks about the next action?", answer: "What's the next step?" },
       ],
+      readingSupport: "# Reading Support\n\nIn workplace updates, it helps to say what you are working on, what the next step is, and whether you have any blockers.\n\n## Check\n\nRead it again and underline the polite workplace phrases.",
+      writingSupport: "# Writing Support\n\nWrite 4 connected sentences:\n1. I'm working on ...\n2. Next, I'll ...\n3. I don't have blockers right now.\n4. I'll keep you posted.",
       sections: lessonSections
     },
     {
@@ -3904,6 +4334,7 @@ export const lessonCatalog = [
       title: "Asking for Clarification",
       unit: "Workplace Conversations",
       conversationGoal: "Ask for clarification politely when you are not sure about a task.",
+      conversationGoalDetails: "Ask for clarification politely when you are not sure about a task.\n\nLearners should be able to say:\n\n- Could you clarify...?\n- Just to confirm, ...\n- I'll send it by ...",
       setup: "Kamu dapat instruksi kerja. Kamu belum yakin, jadi kamu minta klarifikasi dengan sopan.",
       dialogue: [
         { speaker: "Faris", text: "Can you update the report for Friday?" },
@@ -3931,6 +4362,8 @@ export const lessonCatalog = [
         { phrase: "I'll send it by Thursday afternoon.", meaning: "Aku kirim paling lambat Kamis sore.", usage: "By + time means deadline." },
       ],
       grammar: "Use Could you clarify...?, Do you mean...?, and Just to confirm... to avoid mistakes.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Could you clarify...?**.\n\nExamples:\n\n- Could you clarify which sections you need?\n- Could you clarify the deadline?\n\nUse **Just to confirm...**.\n\nExamples:\n\n- Just to confirm, you want the latest numbers, right?\n- Just to confirm, this is for Friday, right?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **clarify** - KLA-ri-fai.\n- **just to confirm** - jus-ta con-FIRM (link it).\n- **by Thursday** - by THURS-day.",
       prompts: [
         "Ask for clarification about sections.",
         "Confirm the latest numbers.",
@@ -3941,6 +4374,8 @@ export const lessonCatalog = [
         { question: "Which phrase is for confirmation?", answer: "Just to confirm, ..." },
         { question: "What does \"by Thursday\" mean?", answer: "paling lambat Kamis" },
       ],
+      readingSupport: "# Reading Support\n\nWhen you're not sure at work, ask for clarification and confirm details. This helps you avoid mistakes and set a clear deadline.\n\n## Check\n\nRead it again and underline the polite workplace phrases.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. Sure. Could you clarify ...?\n2. Got it.\n3. Just to confirm, ... right?\n4. I'll send it by ...",
       sections: lessonSections
     },
     {
@@ -3948,6 +4383,7 @@ export const lessonCatalog = [
       title: "Giving a Short Update",
       unit: "Workplace Conversations",
       conversationGoal: "Give a short work update with progress, a plan, and one risk or blocker.",
+      conversationGoalDetails: "Give a short work update with progress, a plan, and one risk or blocker.\n\nLearners should be able to say:\n\n- I'm making good progress.\n- What's left?\n- One concern is ...",
       setup: "Kamu kasih update singkat ke manager: progress, rencana berikutnya, dan risiko kecil.",
       dialogue: [
         { speaker: "Faris", text: "Quick update: how is the report going?" },
@@ -3975,6 +4411,8 @@ export const lessonCatalog = [
         { phrase: "Thanks for the heads-up.", meaning: "Makasih sudah ngasih tahu.", usage: "A polite reaction to a warning." },
       ],
       grammar: "Use I'm making progress... / I'm almost done... and I might need... to give a clear update.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Progress + almost done**.\n\nExamples:\n\n- I'm making good progress.\n- I'm almost done with the summary.\n\nUse **I might need...**.\n\nExamples:\n\n- I might need an extra hour.\n- I might need feedback from you.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **progress** - PRAH-gres.\n- **almost done** - AL-most done.\n- **heads-up** - HEDZ-up.",
       prompts: [
         "Say you're making good progress.",
         "Say what's left (risk + numbers).",
@@ -3985,6 +4423,8 @@ export const lessonCatalog = [
         { question: "What does \"double-check\" mean?", answer: "cek lagi" },
         { question: "What does \"I might need\" express?", answer: "kemungkinan" },
       ],
+      readingSupport: "# Reading Support\n\nA good short update includes progress, what is left, and one risk or concern. This makes your communication clear and helpful.\n\n## Check\n\nRead it again and underline the polite workplace phrases.",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. I'm making good progress.\n2. I'm almost done with ...\n3. I still need to ...\n4. One concern is ... (I might need ...)",
       sections: lessonSections
     },
     {
@@ -3992,6 +4432,7 @@ export const lessonCatalog = [
       title: "Joining a Simple Meeting",
       unit: "Workplace Conversations",
       conversationGoal: "Join a simple meeting, state your point briefly, and ask for the next step.",
+      conversationGoalDetails: "Join a simple meeting, state your point briefly, and ask for the next step.\n\nLearners should be able to say:\n\n- I'd like to add...\n- I suggest we ...\n- What are the next steps?",
       setup: "Kamu ikut meeting singkat. Kamu tambahkan satu poin, lalu tanya next step.",
       dialogue: [
         { speaker: "Faris", text: "Any updates before we close?" },
@@ -4019,6 +4460,8 @@ export const lessonCatalog = [
         { phrase: "What are the next steps?", meaning: "Next step-nya apa?", usage: "Ask for action items after discussion." },
       ],
       grammar: "Use I'd like to add... / I suggest... / What are the next steps? for short meeting contributions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to add one point.\n- I'd like to ask a question.\n\nUse **I suggest + sentence**.\n\nExamples:\n\n- I suggest we move the deadline.\n- I suggest we review the risks.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd like to** - I'd (one sound) LIKE-to.\n- **suggest** - sug-JEST.\n- **next steps** - NEXT steps.",
       prompts: [
         "Say you would like to add one point.",
         "Make a suggestion (move deadline).",
@@ -4029,6 +4472,8 @@ export const lessonCatalog = [
         { question: "What does \"Go ahead\" mean?", answer: "silakan lanjut" },
         { question: "Which question asks for action items?", answer: "What are the next steps?" },
       ],
+      readingSupport: "# Reading Support\n\nIn a simple meeting, you can add a point politely, make a short suggestion, and ask about next steps to stay aligned.\n\n## Check\n\nRead it again and underline the polite workplace phrases.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. I'd like to add one point.\n2. I suggest we ...\n3. That makes sense.\n4. What are the next steps?",
       sections: lessonSections
     },
     {
@@ -4036,6 +4481,7 @@ export const lessonCatalog = [
       title: "Workplace Mission",
       unit: "Workplace Conversations",
       conversationGoal: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.",
+      conversationGoalDetails: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.\n\nLearners should be able to say:\n\n- I'm making good progress.\n- Could you clarify...?\n- Just to confirm, ... right?",
       setup: "Misi: kamu kasih update kerja, minta klarifikasi, lalu konfirmasi deadline dengan jelas.",
       dialogue: [
         { speaker: "Faris", text: "Hi Mina. Quick update on the report?" },
@@ -4063,6 +4509,8 @@ export const lessonCatalog = [
         { phrase: "Got it.", meaning: "Oke, paham.", usage: "A natural short acknowledgement." },
       ],
       grammar: "Combine workplace patterns: I'm working on..., Could you clarify...?, Just to confirm..., I'll send it by...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Update + clarification + confirmation**.\n\nExamples:\n\n- I'm making good progress.\n- Could you clarify...?\n- Just to confirm..., right?\n- I'll send it by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **focus on** - FO-kus on.\n- **by Friday** - by FRI-day.\n- **if possible** - if POS-uh-bul.",
       prompts: [
         "Give a short update (progress + almost done).",
         "Ask for clarification about risks.",
@@ -4073,6 +4521,8 @@ export const lessonCatalog = [
         { question: "What does \"focus on\" mean?", answer: "fokus pada" },
         { question: "What does \"by Thursday afternoon\" mean?", answer: "paling lambat Kamis sore" },
       ],
+      readingSupport: "# Reading Support\n\nThis mission combines workplace skills: a short update, a clarification question, and a clear deadline confirmation.\n\n## Check\n\nRead it again and underline the polite workplace phrases.",
+      writingSupport: "# Writing Support\n\nWrite your mission (5 lines):\n1. I'm making good progress.\n2. I'm almost done with ...\n3. Could you clarify ...?\n4. Got it.\n5. Just to confirm, ... right?",
       sections: lessonSections
     },
     {
@@ -4080,6 +4530,7 @@ export const lessonCatalog = [
       title: "Describing a Problem",
       unit: "Problems & Solutions",
       conversationGoal: "Describe a problem clearly and explain what happened and why it matters.",
+      conversationGoalDetails: "Describe a problem clearly and explain what happened and why it matters.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- It started ...\n- Users can't ..., so ...",
       setup: "Kamu ngobrol sama manager. Kamu jelaskan masalah yang terjadi dan dampaknya.",
       dialogue: [
         { speaker: "Faris", text: "Hey Mina. You look concerned. What's going on?" },
@@ -4107,6 +4558,8 @@ export const lessonCatalog = [
         { phrase: "So they can't access their lessons.", meaning: "Jadi mereka nggak bisa akses lesson.", usage: "Use so to show impact/result." },
       ],
       grammar: "Use There's a problem with... / It happened when... / Because... to explain a problem clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with the login page.\n- There's a problem with the payment flow.\n\nUse **Cause and result (because / so)**.\n\nExamples:\n\n- It happened because of the update.\n- Users can't sign in, so they can't access lessons.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **problem** - PROB-lem.\n- **deployed** - di-PLOYD.\n- **sign in** - SIGN in.",
       prompts: [
         "Start with: There's a problem with ...",
         "Say when it started.",
@@ -4117,6 +4570,8 @@ export const lessonCatalog = [
         { question: "Which word shows a result (impact)?", answer: "so" },
         { question: "Choose the correct past sentence.", answer: "It started this morning." },
       ],
+      readingSupport: "# Reading Support\n\nA good problem description includes: what the problem is, when it started, what triggered it, and the impact on users.\n\n## Check\n\nRead it again and underline the problem, solution, and decision words.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. There's a problem with ...\n2. It started ...\n3. It happened when ...\n4. Users can't ..., so ...",
       sections: lessonSections
     },
     {
@@ -4124,6 +4579,7 @@ export const lessonCatalog = [
       title: "Suggesting a Solution",
       unit: "Problems & Solutions",
       conversationGoal: "Suggest a solution politely and explain why it could help.",
+      conversationGoalDetails: "Suggest a solution politely and explain why it could help.\n\nLearners should be able to say:\n\n- We could ...\n- Because ...\n- We should ... so ...",
       setup: "Kamu diskusi solusi. Kamu kasih saran, jelaskan alasan, dan pilih langkah aman.",
       dialogue: [
         { speaker: "Faris", text: "Any ideas to fix it?" },
@@ -4151,6 +4607,8 @@ export const lessonCatalog = [
         { phrase: "So it doesn't happen again.", meaning: "Supaya nggak kejadian lagi.", usage: "So shows purpose/result." },
       ],
       grammar: "Use We could... / We should... / I suggest... because... to propose solutions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **We could... / We should...**.\n\nExamples:\n\n- We could roll back the update.\n- We should add a quick test.\n\nUse **Suggestion + reason**.\n\nExamples:\n\n- I suggest we roll it back because it's quick.\n- We could do it now because it's low risk.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **could** - KUD (soft).\n- **should** - SHUD.\n- **roll back** - ROLL back.",
       prompts: [
         "Suggest a solution with could.",
         "Give one reason with because.",
@@ -4161,6 +4619,8 @@ export const lessonCatalog = [
         { question: "Which sentence suggests the best next step?", answer: "We should add a test." },
         { question: "Which word introduces a reason?", answer: "because" },
       ],
+      readingSupport: "# Reading Support\n\nA good solution suggestion includes: the action, one reason why it helps, and one step to prevent the same problem later.\n\n## Check\n\nRead it again and underline the problem, solution, and decision words.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. We could ...\n2. Because ...\n3. We should ...\n4. ... so it doesn't happen again.",
       sections: lessonSections
     },
     {
@@ -4168,6 +4628,7 @@ export const lessonCatalog = [
       title: "Responding to Advice",
       unit: "Problems & Solutions",
       conversationGoal: "Respond to advice politely and decide what you will do next.",
+      conversationGoalDetails: "Respond to advice politely and decide what you will do next.\n\nLearners should be able to say:\n\n- That sounds good.\n- You're right.\n- I'll try that starting ...",
       setup: "Kamu cerita masalah kecil, teman kasih saran. Kamu respon dengan sopan dan bilang langkahmu.",
       dialogue: [
         { speaker: "Mina", text: "I'm stressed because I keep missing my speaking practice." },
@@ -4195,6 +4656,8 @@ export const lessonCatalog = [
         { phrase: "Good idea. Thanks.", meaning: "Ide bagus. Makasih.", usage: "Close politely after advice." },
       ],
       grammar: "Use That sounds good / You're right / I'll try... to respond to advice and commit to an action.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Advice with should**.\n\nExamples:\n\n- Maybe you should set a daily goal.\n- You should try a shorter session.\n\nUse **Responding to advice**.\n\nExamples:\n\n- That sounds good.\n- You're right.\n- I'll try that starting tomorrow.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **should** - SHUD.\n- **sounds good** - SOWNDZ good.\n- **starting tomorrow** - STAR-ting to-MOR-row.",
       prompts: [
         "Accept advice politely.",
         "Agree: You're right.",
@@ -4205,6 +4668,8 @@ export const lessonCatalog = [
         { question: "Which sentence is correct?", answer: "You're right." },
         { question: "What does \"should\" usually express?", answer: "saran" },
       ],
+      readingSupport: "# Reading Support\n\nWhen someone gives advice, a good response is: accept politely, agree if appropriate, and say a clear next step you will try.\n\n## Check\n\nRead it again and underline the problem, solution, and decision words.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. That sounds good.\n2. You're right.\n3. I'll try ... starting ...\n4. I'll also ... (reminder/checklist)",
       sections: lessonSections
     },
     {
@@ -4212,6 +4677,7 @@ export const lessonCatalog = [
       title: "Making a Simple Decision",
       unit: "Problems & Solutions",
       conversationGoal: "Compare two options and make a simple decision with a clear reason.",
+      conversationGoalDetails: "Compare two options and make a simple decision with a clear reason.\n\nLearners should be able to say:\n\n- I'd rather ... because ...\n- We could ...\n- Let's ...",
       setup: "Kamu pilih antara dua opsi. Kamu jelaskan alasan singkat dan putuskan bareng.",
       dialogue: [
         { speaker: "Hilmi", text: "We have two options: fix it now or wait until tomorrow." },
@@ -4239,6 +4705,8 @@ export const lessonCatalog = [
         { phrase: "Let's do a full review tomorrow.", meaning: "Besok kita review penuh.", usage: "Make a clear next step plan." },
       ],
       grammar: "Use We could... but... / I'd rather... / Let's... because... to make decisions politely.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Preference with I'd rather**.\n\nExamples:\n\n- I'd rather fix it now.\n- I'd rather wait until tomorrow.\n\nUse **Decision with let's + because**.\n\nExamples:\n\n- Let's roll back now because users are blocked.\n- Let's decide after we check the logs.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **I'd rather** - I'd RATH-er.\n- **reasonable** - REE-zuh-nuh-bul.\n- **deal** - DEEL.",
       prompts: [
         "State a preference with I'd rather.",
         "Suggest a compromise with could.",
@@ -4249,6 +4717,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "We have two options." },
         { question: "What does \"reasonable\" mean?", answer: "masuk akal" },
       ],
+      readingSupport: "# Reading Support\n\nA simple decision includes: options, preference, a reason, and a clear next step (decision).\n\n## Check\n\nRead it again and underline the problem, solution, and decision words.",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. We have two options: ... or ...\n2. I'd rather ... because ...\n3. We could ...\n4. Let's ...",
       sections: lessonSections
     },
     {
@@ -4256,6 +4726,7 @@ export const lessonCatalog = [
       title: "Problem Solving Mission",
       unit: "Problems & Solutions",
       conversationGoal: "Complete a mini problem-solving conversation: describe a problem, suggest a solution, respond to a concern, and decide next steps.",
+      conversationGoalDetails: "Complete a mini problem-solving conversation: describe a problem, suggest a solution, respond to a concern, and decide next steps.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- We could ... because ...\n- It might, so let's ...",
       setup: "Misi: kamu jelaskan problem, kasih solusi, tanggapi concern, lalu putuskan next step.",
       dialogue: [
         { speaker: "Faris", text: "Quick check: what's the issue?" },
@@ -4285,6 +4756,8 @@ export const lessonCatalog = [
         { phrase: "It might, so let's roll back and then test the key flows.", meaning: "Mungkin, jadi kita rollback lalu tes alur penting.", usage: "Respond to concern and propose next steps." },
       ],
       grammar: "Combine: There's a problem with..., We could/should..., Because/so..., Let's... to complete a short problem-solving flow.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Problem -> solution -> decision**.\n\nExamples:\n\n- There's a problem with ...\n- We could ... because ...\n- But will it ...?\n- It might, so let's ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **issue** - ISH-yoo.\n- **urgent** - UR-jent.\n- **affect** - uh-FEKT.",
       prompts: [
         "Describe the problem.",
         "Suggest a solution with because.",
@@ -4295,6 +4768,8 @@ export const lessonCatalog = [
         { question: "What does \"might\" express?", answer: "kemungkinan" },
         { question: "What does \"affect\" mean?", answer: "mempengaruhi" },
       ],
+      readingSupport: "# Reading Support\n\nA problem-solving mission includes: issue, impact, timeline, solution, a concern, and a clear decision for next steps.\n\n## Check\n\nRead it again and underline the problem, solution, and decision words.",
+      writingSupport: "# Writing Support\n\nWrite your mission (5 lines):\n1. There's a problem with ...\n2. It started ... so ...\n3. We could ... because ...\n4. It might ...\n5. So let's ...",
       sections: lessonSections
     },
     {
@@ -4302,6 +4777,7 @@ export const lessonCatalog = [
       title: "Checking In",
       unit: "Travel Situations",
       conversationGoal: "Check in at a hotel, confirm your reservation, and ask one practical question.",
+      conversationGoalDetails: "Check in at a hotel, confirm your reservation, and ask one practical question.\n\nLearners should be able to say:\n\n- I'd like to check in.\n- I have a reservation under ...\n- What time is check-out?",
       setup: "Kamu baru sampai hotel. Kamu check-in, konfirmasi reservasi, lalu tanya info penting (sarapan / check-out).",
       dialogue: [
         { speaker: "Ilham", text: "Welcome. How can I help you?" },
@@ -4331,6 +4807,8 @@ export const lessonCatalog = [
         { phrase: "Breakfast is included.", meaning: "Sarapan sudah termasuk.", usage: "Included means it is part of the price." },
       ],
       grammar: "Use I'd like to... and I have a reservation under... to check in politely and confirm details.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to check in.\n- I'd like to ask a question.\n\nUse **Reservation under + name**.\n\nExamples:\n\n- I have a reservation under Mina Kim.\n- It's under Faris Chen.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reservation** - rez-er-VAY-shun.\n- **check in** - CHECK in.\n- **included** - in-KLOO-did.",
       prompts: [
         "Start check-in politely.",
         "Say you have a reservation under your name.",
@@ -4341,6 +4819,8 @@ export const lessonCatalog = [
         { question: "What does \"under Mina Kim\" mean?", answer: "atas nama Mina Kim" },
         { question: "What does \"included\" mean?", answer: "sudah termasuk" },
       ],
+      readingSupport: "# Reading Support\n\nIn hotel check-in conversations, keep it simple: greet, say you'd like to check in, give the reservation name, and ask one practical question.\n\n## Check\n\nRead it again and underline the travel request words (check in, delayed, recommend, problem).",
+      writingSupport: "# Writing Support\n\nWrite 4 sentences:\n1. Hi. I'd like to check in.\n2. I have a reservation under ...\n3. Could I ask a question?\n4. What time is check-out?",
       sections: lessonSections
     },
     {
@@ -4348,6 +4828,7 @@ export const lessonCatalog = [
       title: "Explaining a Delay",
       unit: "Travel Situations",
       conversationGoal: "Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.",
+      conversationGoalDetails: "Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.\n\nLearners should be able to say:\n\n- I'm running a bit late.\n- My train is delayed.\n- I'll be there in about ... minutes.",
       setup: "Kamu telat karena transport delay. Kamu kasih kabar, sebut estimasi, dan minta mulai sedikit lebih lambat.",
       dialogue: [
         { speaker: "Ilham", text: "Hi Mina. Are you on your way?" },
@@ -4377,6 +4858,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for waiting.", meaning: "Makasih sudah nungguin ya.", usage: "A polite closing after being late." },
       ],
       grammar: "Use I'm running a bit late / ... is delayed / I'll be there in ... to explain delays clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Running late**.\n\nExamples:\n\n- I'm running a bit late.\n- Sorry, I'm running late.\n\nUse **In about + time**.\n\nExamples:\n\n- I'll be there in about 20 minutes.\n- I'll arrive in about an hour.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **delayed** - di-LAYD.\n- **running late** - RUN-ning late.\n- **about** - uh-BOUT.",
       prompts: [
         "Say you're running a bit late.",
         "Give the reason (train delayed).",
@@ -4387,6 +4870,8 @@ export const lessonCatalog = [
         { question: "What does \"delayed\" mean?", answer: "tertunda" },
         { question: "Which sentence gives an estimate?", answer: "I'll be there in about 20 minutes." },
       ],
+      readingSupport: "# Reading Support\n\nWhen you are delayed while traveling, keep the message short: say you're running late, give one reason, and share an estimated arrival time.\n\n## Check\n\nRead it again and underline the travel request words (check in, delayed, recommend, problem).",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. Hi, I'm running a bit late.\n2. My train/flight is delayed.\n3. I'll be there in about ... minutes.\n4. Thank you for waiting.",
       sections: lessonSections
     },
     {
@@ -4394,6 +4879,7 @@ export const lessonCatalog = [
       title: "Asking for Recommendations",
       unit: "Travel Situations",
       conversationGoal: "Ask for recommendations, describe what you want, and ask one follow-up question.",
+      conversationGoalDetails: "Ask for recommendations, describe what you want, and ask one follow-up question.\n\nLearners should be able to say:\n\n- Do you have any recommendations for ...?\n- I'm looking for ...\n- How do I get there?",
       setup: "Kamu tanya rekomendasi tempat makan. Kamu jelaskan yang kamu cari, lalu tanya jarak atau cara pergi.",
       dialogue: [
         { speaker: "Mina", text: "Hi. Do you have any recommendations for dinner?" },
@@ -4423,6 +4909,8 @@ export const lessonCatalog = [
         { phrase: "How do I get there?", meaning: "Cara ke sana gimana?", usage: "Ask for directions after a recommendation." },
       ],
       grammar: "Use Do you have any recommendations for...? and I'm looking for... to ask politely and clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Do you have any recommendations for...?**.\n\nExamples:\n\n- Do you have any recommendations for dinner?\n- Do you have any recommendations for a museum?\n\nUse **I'm looking for...**.\n\nExamples:\n\n- I'm looking for something local.\n- I'm looking for a quiet cafe.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommendations** - rek-uh-men-DAY-shunz.\n- **local** - LOH-kul.\n- **nearby** - NEER-bye.",
       prompts: [
         "Ask for recommendations (dinner).",
         "Say you're looking for something local.",
@@ -4433,6 +4921,8 @@ export const lessonCatalog = [
         { question: "What does \"I'm looking for\" mean?", answer: "aku lagi cari" },
         { question: "What does \"far\" mean?", answer: "jauh" },
       ],
+      readingSupport: "# Reading Support\n\nWhen asking for recommendations, start with a polite question, describe what you want, and then ask a short follow-up (distance or directions).\n\n## Check\n\nRead it again and underline the travel request words (check in, delayed, recommend, problem).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. Hi. Do you have any recommendations for ...?\n2. I'm looking for ...\n3. Something ... would be great.\n4. Is it far from here?\n5. Thanks!",
       sections: lessonSections
     },
     {
@@ -4440,6 +4930,7 @@ export const lessonCatalog = [
       title: "Handling a Simple Complaint",
       unit: "Travel Situations",
       conversationGoal: "Explain a simple problem politely and ask for help or an alternative.",
+      conversationGoalDetails: "Explain a simple problem politely and ask for help or an alternative.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- The ... isn't working.\n- Could you send someone to take a look?",
       setup: "Kamu punya masalah kecil di hotel. Kamu jelaskan masalahnya, lalu minta bantuan atau ganti kamar.",
       dialogue: [
         { speaker: "Mina", text: "Hi. There's a problem with my room." },
@@ -4469,6 +4960,8 @@ export const lessonCatalog = [
         { phrase: "Thank you for your help.", meaning: "Terima kasih bantuannya.", usage: "Close politely after the request." },
       ],
       grammar: "Use There's a problem with... and Could you... / Could I... to complain politely and request help.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with my room.\n- There's a problem with the key card.\n\nUse **Could you... / Could I...?**.\n\nExamples:\n\n- Could you send someone to take a look?\n- Could I change rooms?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **air conditioning** - AIR kun-DISH-uh-ning.\n- **isn't working** - IZ-nt WUR-king.\n- **change rooms** - CHAYNJ rooms.",
       prompts: [
         "Start a polite complaint.",
         "Explain what's wrong (AC isn't working).",
@@ -4479,6 +4972,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "It isn't working." },
         { question: "Which sentence is a polite request?", answer: "Could you send someone to take a look?" },
       ],
+      readingSupport: "# Reading Support\n\nWhen complaining while traveling, be polite and clear. Say the problem, ask for help, and ask about alternatives if needed.\n\n## Check\n\nRead it again and underline the travel request words (check in, delayed, recommend, problem).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. Hi. There's a problem with my room.\n2. The ... isn't working.\n3. Could you send someone to take a look?\n4. Could I change rooms if needed?\n5. Thank you for your help.",
       sections: lessonSections
     },
     {
@@ -4486,6 +4981,7 @@ export const lessonCatalog = [
       title: "Travel Situation Mission",
       unit: "Travel Situations",
       conversationGoal: "Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.",
+      conversationGoalDetails: "Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.\n\nLearners should be able to say:\n\n- I'm running a bit late.\n- I have a reservation under ...\n- Could you help me?",
       setup: "Misi: kamu telat sampai hotel, check-in, minta rekomendasi makan, lalu minta bantuan untuk masalah kecil di kamar.",
       dialogue: [
         { speaker: "Ilham", text: "Hi Mina. Are you on your way to the hotel?" },
@@ -4517,6 +5013,8 @@ export const lessonCatalog = [
         { phrase: "If there's a problem with my room, could you help me?", meaning: "Kalau ada masalah di kamar, bisa dibantu?", usage: "A polite conditional request." },
       ],
       grammar: "Combine travel patterns: I'm running late..., I'd like to check in..., Do you have any recommendations...?, Could you...?",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Combine delay + check-in + request**.\n\nExamples:\n\n- I'm running a bit late. My train is delayed.\n- I have a reservation under ...\n- Do you have any recommendations for ...?\n- Could you help me?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **no worries** - no WUR-reez.\n- **recommendations** - rek-uh-men-DAY-shunz.\n- **could you** - KUD-yuh (link it).",
       prompts: [
         "Explain delay + estimate.",
         "Confirm reservation name.",
@@ -4527,6 +5025,8 @@ export const lessonCatalog = [
         { question: "What does \"No worries\" mean?", answer: "nggak apa-apa" },
         { question: "What does \"If there's a problem\" express?", answer: "kondisi/kalau" },
       ],
+      readingSupport: "# Reading Support\n\nThis mission practices real travel communication: delay messages, hotel check-in phrases, asking for recommendations, and polite requests for help.\n\n## Check\n\nRead it again and underline the travel request words (check in, delayed, recommend, problem).",
+      writingSupport: "# Writing Support\n\nWrite your mission (6 lines):\n1. I'm running a bit late. My ... is delayed.\n2. I'll be there in about ... minutes.\n3. I'd like to check in.\n4. I have a reservation under ...\n5. Do you have any recommendations for ...?\n6. If there's a problem with my room, could you help me?",
       sections: lessonSections
     },
     {
@@ -4534,6 +5034,7 @@ export const lessonCatalog = [
       title: "Talking About Goals",
       unit: "Goals & Progress",
       conversationGoal: "Talk about a personal goal, give a time frame, and explain why it matters.",
+      conversationGoalDetails: "Talk about a personal goal, give a time frame, and explain why it matters.\n\nLearners should be able to say:\n\n- My goal is to ...\n- By the end of ...\n- Because I want to ...",
       setup: "Kamu ngobrol sama teman. Kamu cerita goal kamu, kapan targetnya, dan kenapa penting buat kamu.",
       dialogue: [
         { speaker: "Hilmi", text: "So, what's your goal this month?" },
@@ -4563,6 +5064,8 @@ export const lessonCatalog = [
         { phrase: "I'll practice five minutes every day.", meaning: "Aku latihan lima menit tiap hari.", usage: "A simple plan connected to a goal." },
       ],
       grammar: "Use My goal is to... / I'd like to... and by + time to describe goals clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **My goal is to + verb**.\n\nExamples:\n\n- My goal is to speak more confidently.\n- My goal is to learn 50 new words.\n\nUse **By + time (deadline)**.\n\nExamples:\n\n- By the end of this month.\n- By Friday morning.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidently** - KON-fi-dent-lee.\n- **goal** - GOHL.\n- **by the end** - by-the-END (link it).",
       prompts: [
         "State your goal (speaking confidently).",
         "Give a deadline (end of this month).",
@@ -4573,6 +5076,8 @@ export const lessonCatalog = [
         { question: "What does \"by the end of this month\" mean?", answer: "paling lambat akhir bulan ini" },
         { question: "Which word introduces a reason?", answer: "because" },
       ],
+      readingSupport: "# Reading Support\n\nA clear goal conversation includes: the goal, the time frame, and one reason why the goal matters.\n\n## Check\n\nRead it again and underline the goal, progress, challenge, and next step words.",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. My goal is to ...\n2. By the end of ...\n3. Because I want to ...\n4. I'll practice ... every day.",
       sections: lessonSections
     },
     {
@@ -4580,6 +5085,7 @@ export const lessonCatalog = [
       title: "Explaining Progress",
       unit: "Goals & Progress",
       conversationGoal: "Explain your progress clearly, mention what improved, and say what you still need to work on.",
+      conversationGoalDetails: "Explain your progress clearly, mention what improved, and say what you still need to work on.\n\nLearners should be able to say:\n\n- I'm making progress.\n- I've been practicing ...\n- I still need to ...",
       setup: "Kamu kasih update progress ke teman. Kamu bilang progressnya gimana, apa yang membaik, dan apa yang masih perlu dilatih.",
       dialogue: [
         { speaker: "Hilmi", text: "How's your speaking goal going?" },
@@ -4609,6 +5115,8 @@ export const lessonCatalog = [
         { phrase: "I still need to improve my pronunciation.", meaning: "Aku masih perlu improve pronunciation.", usage: "Still need shows what remains." },
       ],
       grammar: "Use I'm making progress... / I've been practicing... / I still need to... to give a clear progress update.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I've been + verb-ing (habit up to now)**.\n\nExamples:\n\n- I've been practicing every morning.\n- I've been studying for 10 minutes a day.\n\nUse **Still need to + verb**.\n\nExamples:\n\n- I still need to improve my pronunciation.\n- I still need to review the grammar.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **progress** - PRAH-gres.\n- **halfway** - HAF-way.\n- **pronunciation** - pro-nun-see-AY-shun.",
       prompts: [
         "Say you're making good progress.",
         "Say what you've been doing (practice every morning).",
@@ -4619,6 +5127,8 @@ export const lessonCatalog = [
         { question: "What does \"halfway\" mean?", answer: "setengah jalan" },
         { question: "What does \"still need to\" express?", answer: "masih perlu" },
       ],
+      readingSupport: "# Reading Support\n\nA clear progress update includes: your current progress, what actions you have been doing, and what you still need to work on.\n\n## Check\n\nRead it again and underline the goal, progress, challenge, and next step words.",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. I'm making good progress.\n2. I've been practicing ...\n3. I'm about ... (halfway / almost done).\n4. I still need to improve ...",
       sections: lessonSections
     },
     {
@@ -4626,6 +5136,7 @@ export const lessonCatalog = [
       title: "Discussing Challenges",
       unit: "Goals & Progress",
       conversationGoal: "Describe a challenge, explain why it is difficult, and ask for a simple suggestion.",
+      conversationGoalDetails: "Describe a challenge, explain why it is difficult, and ask for a simple suggestion.\n\nLearners should be able to say:\n\n- The biggest challenge is ...\n- It's hard to ...\n- Do you have any tips?",
       setup: "Kamu cerita tantangan belajar. Kamu jelaskan kendalanya, kenapa susah, lalu minta saran sederhana.",
       dialogue: [
         { speaker: "Hilmi", text: "How is your practice going this week?" },
@@ -4657,6 +5168,8 @@ export const lessonCatalog = [
         { phrase: "Do you have any tips?", meaning: "Ada tips nggak?", usage: "A simple way to ask for advice." },
       ],
       grammar: "Use The biggest challenge is... / I'm struggling with... / It's hard to... to talk about challenges clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **The biggest challenge is + noun/verb-ing**.\n\nExamples:\n\n- The biggest challenge is staying consistent.\n- The biggest challenge is finding time.\n\nUse **It's hard to + verb**.\n\nExamples:\n\n- It's hard to stay consistent after work.\n- It's hard to focus when I'm tired.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **challenge** - CHAL-inj.\n- **consistent** - kun-SIS-tent.\n- **distracted** - di-STRAK-tid.",
       prompts: [
         "Name your biggest challenge.",
         "Give one reason (distracted by phone).",
@@ -4667,6 +5180,8 @@ export const lessonCatalog = [
         { question: "What does \"It's hard to...\" mean?", answer: "susah untuk..." },
         { question: "What does \"distracted\" mean?", answer: "teralihkan" },
       ],
+      readingSupport: "# Reading Support\n\nWhen discussing challenges, be clear: name the biggest challenge, give one reason, and ask for a simple suggestion.\n\n## Check\n\nRead it again and underline the goal, progress, challenge, and next step words.",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. Honestly, it's been challenging.\n2. The biggest challenge is ...\n3. It's hard to ... because ...\n4. Do you have any tips?",
       sections: lessonSections
     },
     {
@@ -4674,6 +5189,7 @@ export const lessonCatalog = [
       title: "Making Next-step Plans",
       unit: "Goals & Progress",
       conversationGoal: "State your next step, set a simple schedule, and confirm the plan clearly.",
+      conversationGoalDetails: "State your next step, set a simple schedule, and confirm the plan clearly.\n\nLearners should be able to say:\n\n- My next step is to ...\n- I'll do it ... times this week.\n- I'll keep it simple.",
       setup: "Kamu bikin rencana langkah berikutnya. Kamu sebut next step, jadwal sederhana, dan konfirmasi plan-nya.",
       dialogue: [
         { speaker: "Hilmi", text: "So what's your next step?" },
@@ -4703,6 +5219,8 @@ export const lessonCatalog = [
         { phrase: "That sounds realistic.", meaning: "Kedengarannya realistis.", usage: "Agree to a plan politely." },
       ],
       grammar: "Use My next step is to... / I'm going to... / I'll do it ... times this week to plan next steps.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **My next step is to + verb**.\n\nExamples:\n\n- My next step is to practice with Conversation Coach.\n- My next step is to review vocabulary.\n\nUse **Times per week**.\n\nExamples:\n\n- I'll do it three times this week.\n- I'll practice twice a week.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **next step** - NEKST step.\n- **three times** - three TIMEZ.\n- **realistic** - ree-uh-LIS-tik.",
       prompts: [
         "State your next step.",
         "Set a schedule (three times this week).",
@@ -4713,6 +5231,8 @@ export const lessonCatalog = [
         { question: "What does \"three times this week\" mean?", answer: "tiga kali minggu ini" },
         { question: "Which sentence uses going to correctly?", answer: "I'm going to keep it simple." },
       ],
+      readingSupport: "# Reading Support\n\nA good next-step plan is simple: state your next step, choose how often you will do it, and keep it realistic.\n\n## Check\n\nRead it again and underline the goal, progress, challenge, and next step words.",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. My next step is to ...\n2. I'll do it ... times this week.\n3. Monday / Wednesday / Friday.\n4. I'll keep it simple.",
       sections: lessonSections
     },
     {
@@ -4720,6 +5240,7 @@ export const lessonCatalog = [
       title: "Goals Progress Mission",
       unit: "Goals & Progress",
       conversationGoal: "Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.",
+      conversationGoalDetails: "Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.\n\nLearners should be able to say:\n\n- My goal is to ...\n- I'm making progress.\n- My next step is to ...",
       setup: "Misi: kamu cerita goal kamu, update progress, sebut tantangan, lalu bikin next step plan yang realistis.",
       dialogue: [
         { speaker: "Hilmi", text: "What's your goal right now?" },
@@ -4749,6 +5270,8 @@ export const lessonCatalog = [
         { phrase: "My next step is to practice three times this week.", meaning: "Next step aku adalah latihan tiga kali minggu ini.", usage: "Next step + schedule." },
       ],
       grammar: "Combine: My goal is to... / I've been... / The biggest challenge is... / My next step is to... to complete a goal update.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Goal -> progress -> challenge -> next step**.\n\nExamples:\n\n- My goal is to ... by the end of ...\n- I've been practicing ...\n- The biggest challenge is ...\n- My next step is to ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **by the end of** - by-the-END-of (link it).\n- **challenge** - CHAL-inj.\n- **next step** - NEKST step.",
       prompts: [
         "State goal + deadline.",
         "Share progress with I've been practicing.",
@@ -4759,6 +5282,8 @@ export const lessonCatalog = [
         { question: "What does \"consistent\" mean?", answer: "konsisten" },
         { question: "What does \"next step\" mean?", answer: "langkah berikutnya" },
       ],
+      readingSupport: "# Reading Support\n\nThis mission combines goal language, progress updates, challenges, and next-step planning in one short conversation.\n\n## Check\n\nRead it again and underline the goal, progress, challenge, and next step words.",
+      writingSupport: "# Writing Support\n\nWrite your mission (6 lines):\n1. My goal is to ... by the end of ...\n2. I'm making progress.\n3. I've been practicing ...\n4. The biggest challenge is ...\n5. I get distracted by ...\n6. My next step is to ... times this week.",
       sections: lessonSections
     },
     {
@@ -4766,6 +5291,7 @@ export const lessonCatalog = [
       title: "Comparing Two Options",
       unit: "Explaining Preferences",
       conversationGoal: "Compare two options and ask what the other person prefers.",
+      conversationGoalDetails: "Compare two options and ask what the other person prefers.\n\nLearners should be able to say:\n\n- Option A is ..., but ...\n- Which do you prefer?\n- I think I prefer ...",
       setup: "Kamu pilih antara dua opsi (misalnya dua restoran). Kamu bandingin singkat, lalu tanya preferensi teman kamu.",
       dialogue: [
         { speaker: "Mina", text: "We have two options for dinner: Sushi Place or Noodle House." },
@@ -4795,6 +5321,8 @@ export const lessonCatalog = [
         { phrase: "I think I prefer Noodle House.", meaning: "Kayaknya aku lebih pilih Noodle House.", usage: "I think softens your preference." },
       ],
       grammar: "Use Option A is... but Option B is... and Which do you prefer? to compare options clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Compare with but**.\n\nExamples:\n\n- Sushi Place is nicer, but it's more expensive.\n- It's closer, but it's noisier.\n\nUse **Preference question**.\n\nExamples:\n\n- Which do you prefer?\n- Which one do you prefer?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **options** - OP-shunz.\n- **prefer** - pri-FER.\n- **expensive** - ik-SPEN-siv.",
       prompts: [
         "Compare two options with but.",
         "Ask for preference.",
@@ -4805,6 +5333,8 @@ export const lessonCatalog = [
         { question: "Choose the correct comparative form.", answer: "cheaper" },
         { question: "Which word shows contrast?", answer: "but" },
       ],
+      readingSupport: "# Reading Support\n\nWhen comparing two options, mention one benefit and one drawback. Then ask the other person what they prefer.\n\n## Check\n\nRead it again and underline the preference and reason words (prefer, rather, because, advantage, downside).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. We have two options: A or B.\n2. Option A is ..., but ...\n3. Option B is ..., but ...\n4. Which do you prefer?\n5. I think I prefer ...",
       sections: lessonSections
     },
     {
@@ -4812,6 +5342,7 @@ export const lessonCatalog = [
       title: "Explaining Why You Prefer Something",
       unit: "Explaining Preferences",
       conversationGoal: "State a preference and explain the main reason clearly.",
+      conversationGoalDetails: "State a preference and explain the main reason clearly.\n\nLearners should be able to say:\n\n- I prefer ... because ...\n- The main reason is ...\n- It feels more convenient.",
       setup: "Kamu jelasin kenapa kamu prefer satu opsi. Kamu sebut preferensinya dan alasan utamanya.",
       dialogue: [
         { speaker: "Faris", text: "So which one do you prefer?" },
@@ -4841,6 +5372,8 @@ export const lessonCatalog = [
         { phrase: "That makes sense.", meaning: "Masuk akal.", usage: "A polite reaction to a reason." },
       ],
       grammar: "Use I prefer... because... / The main reason is... to explain preferences politely and clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I prefer... because...**.\n\nExamples:\n\n- I prefer the earlier flight because it gives us more time.\n- I prefer this option because it's simpler.\n\nUse **The main reason is...**.\n\nExamples:\n\n- The main reason is I don't want to arrive too late.\n- The main reason is it's more reliable.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **earlier** - ER-lee-er.\n- **convenient** - kun-VEE-nee-ent.\n- **reason** - REE-zun.",
       prompts: [
         "State a preference (earlier flight).",
         "Give a reason with because.",
@@ -4851,6 +5384,8 @@ export const lessonCatalog = [
         { question: "Which sentence explains a preference with a reason?", answer: "I prefer option A because it's simpler." },
         { question: "What does \"The main reason is...\" do?", answer: "menjelaskan alasan utama" },
       ],
+      readingSupport: "# Reading Support\n\nTo explain a preference, state what you prefer and give one clear reason. If needed, add the main reason to make it stronger.\n\n## Check\n\nRead it again and underline the preference and reason words (prefer, rather, because, advantage, downside).",
+      writingSupport: "# Writing Support\n\nWrite 4 lines:\n1. I prefer ...\n2. Because ...\n3. The main reason is ...\n4. That makes sense.",
       sections: lessonSections
     },
     {
@@ -4858,6 +5393,7 @@ export const lessonCatalog = [
       title: "Asking About Pros and Cons",
       unit: "Explaining Preferences",
       conversationGoal: "Ask about pros and cons and respond with one advantage and one downside.",
+      conversationGoalDetails: "Ask about pros and cons and respond with one advantage and one downside.\n\nLearners should be able to say:\n\n- What are the pros and cons of ...?\n- The advantage is ...\n- One downside is ...",
       setup: "Kamu lagi diskusi pilihan (misalnya remote vs office). Kamu tanya pros and cons, lalu respon dengan satu kelebihan dan satu kekurangan.",
       dialogue: [
         { speaker: "Mina", text: "What are the pros and cons of working remotely?" },
@@ -4889,6 +5425,8 @@ export const lessonCatalog = [
         { phrase: "Any downsides?", meaning: "Ada kekurangan?", usage: "A short follow-up question." },
       ],
       grammar: "Use What are the pros and cons? / The advantage is... / One downside is... to discuss trade-offs clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Pros and cons question**.\n\nExamples:\n\n- What are the pros and cons?\n- What are the pros and cons of this plan?\n\nUse **Advantage / downside**.\n\nExamples:\n\n- The advantage is you save time.\n- One downside is it's more expensive.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **pros and cons** - PROHZ and KONZ.\n- **advantage** - ad-VAN-tij.\n- **downside** - DOWN-side.",
       prompts: [
         "Ask about pros and cons.",
         "Give one advantage (save time).",
@@ -4899,6 +5437,8 @@ export const lessonCatalog = [
         { question: "What does \"advantage\" mean?", answer: "kelebihan" },
         { question: "What does \"downside\" mean?", answer: "kekurangan" },
       ],
+      readingSupport: "# Reading Support\n\nPros and cons help you compare options. Ask about trade-offs, then share one advantage and one downside.\n\n## Check\n\nRead it again and underline the preference and reason words (prefer, rather, because, advantage, downside).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. What are the pros and cons of ...?\n2. The advantage is ...\n3. One downside is ...\n4. Overall, it depends.\n5. I think I prefer ...",
       sections: lessonSections
     },
     {
@@ -4906,6 +5446,7 @@ export const lessonCatalog = [
       title: "Reaching Agreement",
       unit: "Explaining Preferences",
       conversationGoal: "Suggest a plan, respond politely, and confirm an agreement.",
+      conversationGoalDetails: "Suggest a plan, respond politely, and confirm an agreement.\n\nLearners should be able to say:\n\n- How about we ...?\n- That works for me.\n- So we agree on ...?",
       setup: "Kamu mau mencapai kesepakatan. Kamu usul rencana, dengar respons, lalu konfirmasi keputusan bareng.",
       dialogue: [
         { speaker: "Faris", text: "So which restaurant should we choose?" },
@@ -4935,6 +5476,8 @@ export const lessonCatalog = [
         { phrase: "Let's go early.", meaning: "Yuk berangkat lebih awal.", usage: "A simple solution to a concern." },
       ],
       grammar: "Use How about we... / I'm okay with... / Let's go with... to reach agreement politely.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **How about we...?**.\n\nExamples:\n\n- How about we go early?\n- How about we choose the cheaper one?\n\nUse **Confirm agreement**.\n\nExamples:\n\n- So we agree on Noodle House at 6:30?\n- So we agree to book the earlier flight?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **how about** - how-a-BOUT (link it).\n- **agree** - uh-GREE.\n- **works for me** - WURKS for me.",
       prompts: [
         "Suggest a plan with How about we...",
         "Accept politely.",
@@ -4945,6 +5488,8 @@ export const lessonCatalog = [
         { question: "What does \"That works for me\" mean?", answer: "oke buat aku" },
         { question: "What does \"agree\" mean?", answer: "sepakat" },
       ],
+      readingSupport: "# Reading Support\n\nTo reach agreement, suggest a plan politely, respond to concerns, and confirm the final decision clearly.\n\n## Check\n\nRead it again and underline the preference and reason words (prefer, rather, because, advantage, downside).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. How about we ...?\n2. I'm okay with that, but ...\n3. It might be, so let's ...\n4. That works for me.\n5. So we agree on ...?",
       sections: lessonSections
     },
     {
@@ -4952,6 +5497,7 @@ export const lessonCatalog = [
       title: "Preference Discussion Mission",
       unit: "Explaining Preferences",
       conversationGoal: "Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.",
+      conversationGoalDetails: "Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.\n\nLearners should be able to say:\n\n- I prefer ... because ...\n- The advantage is ...\n- So we agree on ...?",
       setup: "Misi: kamu diskusi pilihan bareng teman. Kamu bandingin opsi, jelasin preferensi dan alasan, bahas pro/kontra, lalu sepakat.",
       dialogue: [
         { speaker: "Hilmi", text: "We have two options: eat out or cook at home." },
@@ -4983,6 +5529,8 @@ export const lessonCatalog = [
         { phrase: "So we agree on cooking at home?", meaning: "Jadi kita sepakat masak di rumah?", usage: "Confirm agreement clearly." },
       ],
       grammar: "Combine: ... but ... / I prefer... because... / The advantage is... / One downside is... / So we agree on...?",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Comparison -> preference -> pros/cons -> agreement**.\n\nExamples:\n\n- Option A is easier, but it's more expensive.\n- I prefer option B because it's cheaper.\n- The advantage is ... One downside is ...\n- So we agree on ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **eating out** - EE-ting out.\n- **healthier** - HEL-thee-er.\n- **takes time** - TAYKS time.",
       prompts: [
         "Compare options with but.",
         "State preference with because.",
@@ -4993,6 +5541,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "One downside is it takes time." },
         { question: "Which sentence confirms agreement?", answer: "So we agree on cooking at home?" },
       ],
+      readingSupport: "# Reading Support\n\nA good preference discussion is structured: compare options, state your preference with a reason, discuss pros and cons, and confirm the agreement.\n\n## Check\n\nRead it again and underline the preference and reason words (prefer, rather, because, advantage, downside).",
+      writingSupport: "# Writing Support\n\nWrite your mission (6 lines):\n1. We have two options: A or B.\n2. Option A is ..., but ...\n3. I prefer ... because ...\n4. The advantage is ...\n5. One downside is ...\n6. So we agree on ...?",
       sections: lessonSections
     },
     {
@@ -5000,6 +5550,7 @@ export const lessonCatalog = [
       title: "Describing Your Community",
       unit: "Community & Culture",
       conversationGoal: "Describe your neighborhood, mention what you like, and invite a follow-up question.",
+      conversationGoalDetails: "Describe your neighborhood, mention what you like, and invite a follow-up question.\n\nLearners should be able to say:\n\n- I live in a ... neighborhood.\n- It's known for ...\n- I like it because ...",
       setup: "Kamu ngobrol sama teman baru. Kamu jelasin lingkungan tempat kamu tinggal, apa yang kamu suka, dan tanya balik.",
       dialogue: [
         { speaker: "Hilmi", text: "So, where do you live?" },
@@ -5029,6 +5580,8 @@ export const lessonCatalog = [
         { phrase: "We help each other sometimes.", meaning: "Kita kadang saling bantu.", usage: "A simple community habit sentence." },
       ],
       grammar: "Use It's a... neighborhood / It's known for... / I like it because... to describe your community clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Known for**.\n\nExamples:\n\n- It's known for its food stalls.\n- It's known for its beaches.\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because it's convenient.\n- I like it because it's quiet.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **neighborhood** - NAY-bur-hood.\n- **convenient** - kun-VEE-nee-ent.\n- **peaceful** - PEES-ful.",
       prompts: [
         "Describe your neighborhood.",
         "Say what it's known for.",
@@ -5039,6 +5592,8 @@ export const lessonCatalog = [
         { question: "What does \"neighborhood\" mean?", answer: "lingkungan" },
         { question: "Choose the correct sentence.", answer: "I like it because it's convenient." },
       ],
+      readingSupport: "# Reading Support\n\nTo describe your community, talk about the neighborhood, what it's known for, and one thing you like with a reason.\n\n## Check\n\nRead it again and underline the community/culture words (neighborhood, tradition, usually, in my country).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. I live in a ... neighborhood.\n2. It's known for ...\n3. I like it because ...\n4. It's ... but still ...\n5. People here ...",
       sections: lessonSections
     },
     {
@@ -5046,6 +5601,7 @@ export const lessonCatalog = [
       title: "Talking About Local Habits",
       unit: "Community & Culture",
       conversationGoal: "Describe a local habit, say how often it happens, and give a simple example.",
+      conversationGoalDetails: "Describe a local habit, say how often it happens, and give a simple example.\n\nLearners should be able to say:\n\n- People usually ...\n- In my area, people often ...\n- Especially on weekends.",
       setup: "Kamu cerita kebiasaan di daerah kamu. Kamu jelaskan biasanya orang ngapain dan kasih contoh singkat.",
       dialogue: [
         { speaker: "Hilmi", text: "Are there any local habits in your area?" },
@@ -5075,6 +5631,8 @@ export const lessonCatalog = [
         { phrase: "People often do it after work.", meaning: "Orang sering ngelakuin itu setelah kerja.", usage: "Often is a simple frequency word." },
       ],
       grammar: "Use People usually... / In my area, people often... to describe local habits naturally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **People usually...**.\n\nExamples:\n\n- People usually eat outside in the evening.\n- People usually go home before 10.\n\nUse **People often...**.\n\nExamples:\n\n- People often grab street food after work.\n- People often meet friends on weekends.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **usually** - YOO-zhoo-uh-lee.\n- **especially** - es-PESH-uh-lee.\n- **street food** - STREET food.",
       prompts: [
         "Describe a local habit with usually.",
         "Describe another habit with in my area + often.",
@@ -5085,6 +5643,8 @@ export const lessonCatalog = [
         { question: "What does \"often\" mean?", answer: "sering" },
         { question: "What does \"especially\" mean?", answer: "terutama" },
       ],
+      readingSupport: "# Reading Support\n\nLocal habits are easy to describe with frequency words like usually and often. Add one simple example and one frequency detail.\n\n## Check\n\nRead it again and underline the community/culture words (neighborhood, tradition, usually, in my country).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. In my area, people usually ...\n2. People often ... after work.\n3. Especially on weekends.\n4. It's a social thing.\n5. I like it because ...",
       sections: lessonSections
     },
     {
@@ -5092,6 +5652,7 @@ export const lessonCatalog = [
       title: "Asking About Culture",
       unit: "Community & Culture",
       conversationGoal: "Ask about cultural traditions politely and respond with a short explanation.",
+      conversationGoalDetails: "Ask about cultural traditions politely and respond with a short explanation.\n\nLearners should be able to say:\n\n- What is it like in your country?\n- Do people usually...?\n- How about in your country?",
       setup: "Kamu ngobrol sama orang baru. Kamu tanya tradisi atau kebiasaan di negaranya dengan sopan, lalu jawab singkat tentang negaramu juga.",
       dialogue: [
         { speaker: "Ilham", text: "Do you have any big holidays in your country?" },
@@ -5123,6 +5684,8 @@ export const lessonCatalog = [
         { phrase: "How about in your country?", meaning: "Kalau di negara kamu gimana?", usage: "A polite way to ask back." },
       ],
       grammar: "Use What is it like in your country? / Do people usually...? to ask about culture respectfully.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Culture questions**.\n\nExamples:\n\n- What is it like in your country?\n- Do people usually travel during holidays?\n\nUse **Mostly / sometimes**.\n\nExamples:\n\n- Mostly we share food.\n- Sometimes people give gifts.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **meaningful** - MEE-ning-ful.\n- **mostly** - MOHST-lee.\n- **holiday** - HOL-uh-day.",
       prompts: [
         "Ask a culture question.",
         "Describe it (busy but meaningful).",
@@ -5133,6 +5696,8 @@ export const lessonCatalog = [
         { question: "What does \"mostly\" mean?", answer: "kebanyakan" },
         { question: "What does \"meaningful\" mean?", answer: "bermakna" },
       ],
+      readingSupport: "# Reading Support\n\nWhen asking about culture, be respectful: ask general questions, listen, and ask back. Keep your explanation short and positive.\n\n## Check\n\nRead it again and underline the community/culture words (neighborhood, tradition, usually, in my country).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. What is it like in your country during ...?\n2. In my country, we usually ...\n3. It's ..., but it's also ...\n4. Mostly we ...\n5. How about in your country?",
       sections: lessonSections
     },
     {
@@ -5140,6 +5705,7 @@ export const lessonCatalog = [
       title: "Being Polite With Differences",
       unit: "Community & Culture",
       conversationGoal: "Talk about cultural differences politely and show respect even if you do things differently.",
+      conversationGoalDetails: "Talk about cultural differences politely and show respect even if you do things differently.\n\nLearners should be able to say:\n\n- Oh, that's interesting.\n- I'm not used to ...\n- That sounds nice.",
       setup: "Kamu diskusi perbedaan kebiasaan. Kamu jelasin kebiasaanmu, respon dengan sopan, dan tunjukkan respek.",
       dialogue: [
         { speaker: "Ilham", text: "In my country, people usually eat dinner early, around 6 p.m." },
@@ -5169,6 +5735,8 @@ export const lessonCatalog = [
         { phrase: "Thanks for sharing.", meaning: "Makasih sudah cerita.", usage: "A polite closing for culture talk." },
       ],
       grammar: "Use In my country,... / That's interesting / I'm not used to... / That sounds nice to be polite about differences.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I'm not used to + noun/verb-ing**.\n\nExamples:\n\n- I'm not used to eating that early.\n- I'm not used to spicy food.\n\nUse **Polite reactions**.\n\nExamples:\n\n- That's interesting.\n- That sounds nice.\n- That makes sense.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **interesting** - IN-ter-es-ting.\n- **used to** - YOOS-to (link it).\n- **early** - ER-lee.",
       prompts: [
         "React politely.",
         "Explain your habit (eat later).",
@@ -5179,6 +5747,8 @@ export const lessonCatalog = [
         { question: "Which reaction is polite?", answer: "That's interesting." },
         { question: "Which sentence closes politely?", answer: "Thanks for sharing." },
       ],
+      readingSupport: "# Reading Support\n\nCultural differences are normal. Use polite reactions, explain your habit, and show respect even if it's different from yours.\n\n## Check\n\nRead it again and underline the community/culture words (neighborhood, tradition, usually, in my country).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. Oh, that's interesting.\n2. In my country, we usually ...\n3. I'm not used to ...\n4. But that sounds nice.\n5. Thanks for sharing.",
       sections: lessonSections
     },
     {
@@ -5186,6 +5756,7 @@ export const lessonCatalog = [
       title: "Community Culture Mission",
       unit: "Community & Culture",
       conversationGoal: "Complete a mini conversation: describe your community, share a local habit, ask about culture, and respond politely to differences.",
+      conversationGoalDetails: "Complete a mini conversation: describe your community, share a local habit, ask about culture, and respond politely to differences.\n\nLearners should be able to say:\n\n- It's known for ...\n- People usually ...\n- Oh, that's interesting.",
       setup: "Misi: kamu kenalan sama orang baru. Kamu ceritain komunitas kamu, kebiasaan lokal, tanya budaya negaranya, lalu respon sopan soal perbedaan.",
       dialogue: [
         { speaker: "Ilham", text: "So, what's your neighborhood like?" },
@@ -5215,6 +5786,8 @@ export const lessonCatalog = [
         { phrase: "I'm not used to that, but it sounds nice.", meaning: "Aku nggak terbiasa, tapi kedengarannya bagus.", usage: "Polite difference response." },
       ],
       grammar: "Combine: It's known for... / People usually... / What is it like in your country? / I'm not used to... / That sounds nice.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Community + habit + culture + difference**.\n\nExamples:\n\n- It's known for ...\n- People usually ...\n- What is it like in your country ...?\n- I'm not used to ..., but it sounds nice.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **known for** - KNOWN-for (link it).\n- **meaningful** - MEE-ning-ful.\n- **not used to** - not-YOOS-to (link it).",
       prompts: [
         "Describe your community (known for).",
         "Share a local habit (usually + especially).",
@@ -5225,6 +5798,8 @@ export const lessonCatalog = [
         { question: "What does \"I'm not used to that\" mean?", answer: "aku nggak terbiasa" },
         { question: "Which reaction is respectful?", answer: "That sounds nice." },
       ],
+      readingSupport: "# Reading Support\n\nThis mission combines community and culture skills: describing your neighborhood, sharing a local habit, asking polite culture questions, and responding respectfully to differences.\n\n## Check\n\nRead it again and underline the community/culture words (neighborhood, tradition, usually, in my country).",
+      writingSupport: "# Writing Support\n\nWrite your mission (6 lines):\n1. I live in a ... neighborhood.\n2. It's known for ...\n3. People usually ...\n4. Especially on weekends.\n5. Oh, that's interesting. I'm not used to ...\n6. But it sounds nice.",
       sections: lessonSections
     },
     {
@@ -5232,6 +5807,7 @@ export const lessonCatalog = [
       title: "Review Stories and Work",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Tell a short story and give a clear work update with one next step.",
+      conversationGoalDetails: "Tell a short story and give a clear work update with one next step.\n\nLearners should be able to say:\n\n- Then ...\n- I'm working on ...\n- Next, I'll ...",
       setup: "Review: kamu cerita kejadian singkat (personal story), lalu kasih update kerja singkat (progress + next step).",
       dialogue: [
         { speaker: "Faris", text: "How was your weekend?" },
@@ -5261,6 +5837,8 @@ export const lessonCatalog = [
         { phrase: "Next, I'll review the risks.", meaning: "Berikutnya, aku review risiko.", usage: "Next sets the next step clearly." },
       ],
       grammar: "Combine story sequencing (then/after that) with work update phrases (I'm working on..., next...).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Story sequencing**.\n\nExamples:\n\n- Then we grabbed street food.\n- After that, we went home.\n\nUse **Work update**.\n\nExamples:\n\n- I'm working on the release checklist.\n- Next, I'll review the risks.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **after that** - AF-ter that.\n- **checklist** - CHECK-list.\n- **progress** - PRAH-gres.",
       prompts: [
         "Continue a story with then.",
         "Give a work update (working on...).",
@@ -5271,6 +5849,8 @@ export const lessonCatalog = [
         { question: "Which sentence is a work status update?", answer: "I'm working on the release checklist." },
         { question: "Which phrase introduces the next action?", answer: "Next, I'll ..." },
       ],
+      readingSupport: "# Reading Support\n\nThis review lesson mixes two B1 skills: telling a short story with sequence words, and giving a clear work update with a next step.\n\n## Check\n\nRead it again and underline the review words (story, progress, problem, option, agree, next step).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. My weekend was ...\n2. I visited ...\n3. Then we ...\n4. I'm working on ...\n5. I'm making progress.\n6. Next, I'll ...",
       sections: lessonSections
     },
     {
@@ -5278,6 +5858,7 @@ export const lessonCatalog = [
       title: "Review Problems and Travel",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Explain a problem, describe the impact, and give a travel-style delay update with an estimate.",
+      conversationGoalDetails: "Explain a problem, describe the impact, and give a travel-style delay update with an estimate.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- ..., so ...\n- I'll be there in about ...",
       setup: "Review: kamu jelasin masalah (impact), lalu kasih update telat (delay + estimasi).",
       dialogue: [
         { speaker: "Ilham", text: "Quick check: what's the issue?" },
@@ -5307,6 +5888,8 @@ export const lessonCatalog = [
         { phrase: "I'll be there in about 15 minutes.", meaning: "Aku sampai kira-kira 15 menit lagi.", usage: "In about + time gives an estimate." },
       ],
       grammar: "Combine: There's a problem with... / so ... and I'm running late... / I'll be there in about ...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Problem + impact**.\n\nExamples:\n\n- There's a problem with the meeting link.\n- People can't join, so we need a new link.\n\nUse **Delay + estimate**.\n\nExamples:\n\n- I'm running a bit late.\n- I'll be there in about 15 minutes.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **issue** - ISH-yoo.\n- **delayed** - di-LAYD.\n- **minutes** - MIN-its.",
       prompts: [
         "State the problem.",
         "State the impact with so.",
@@ -5317,6 +5900,8 @@ export const lessonCatalog = [
         { question: "Which word shows a result?", answer: "so" },
         { question: "What does \"running late\" mean?", answer: "telat" },
       ],
+      readingSupport: "# Reading Support\n\nThis review lesson connects two real-life skills: explaining problems clearly (with impact) and giving a travel-style delay update with an estimate.\n\n## Check\n\nRead it again and underline the review words (story, progress, problem, option, agree, next step).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. There's a problem with ...\n2. People can't ..., so ...\n3. I'm running a bit late.\n4. My train/flight is delayed.\n5. I'll be there in about ... minutes.\n6. Thank you for waiting.",
       sections: lessonSections
     },
     {
@@ -5324,6 +5909,7 @@ export const lessonCatalog = [
       title: "Review Goals and Preferences",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "State a goal, share progress, and explain a preference with a clear reason.",
+      conversationGoalDetails: "State a goal, share progress, and explain a preference with a clear reason.\n\nLearners should be able to say:\n\n- My goal is to ...\n- I've been practicing ...\n- I prefer ... because ...",
       setup: "Review: kamu cerita goal + progress, lalu jelasin preferensi kamu dengan alasan.",
       dialogue: [
         { speaker: "Hilmi", text: "What's your goal right now?" },
@@ -5353,6 +5939,8 @@ export const lessonCatalog = [
         { phrase: "It helps me stay consistent.", meaning: "Itu bantu aku tetap konsisten.", usage: "A simple benefit sentence." },
       ],
       grammar: "Combine: My goal is to... / I've been... / I prefer... because...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Goal + deadline**.\n\nExamples:\n\n- My goal is to ... by the end of this month.\n- My goal is to ... by Friday.\n\nUse **Preference + reason**.\n\nExamples:\n\n- I prefer Conversation Coach because it gives me feedback.\n- I prefer option B because it's simpler.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidently** - KON-fi-dent-lee.\n- **feedback** - FEED-bak.\n- **consistent** - kun-SIS-tent.",
       prompts: [
         "State goal + deadline.",
         "Share progress with I've been practicing.",
@@ -5363,6 +5951,8 @@ export const lessonCatalog = [
         { question: "Which sentence shows an ongoing habit up to now?", answer: "I've been practicing every morning." },
         { question: "Which sentence explains a preference with a reason?", answer: "I prefer Conversation Coach because it gives me feedback." },
       ],
+      readingSupport: "# Reading Support\n\nThis review lesson combines goal language and preference language. Keep your sentences clear: goal + deadline, progress habit, and preference + reason.\n\n## Check\n\nRead it again and underline the review words (story, progress, problem, option, agree, next step).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. My goal is to ... by ...\n2. I'm making progress.\n3. I've been practicing ...\n4. I prefer ... because ...\n5. The main reason is ...\n6. It helps me ...",
       sections: lessonSections
     },
     {
@@ -5370,6 +5960,7 @@ export const lessonCatalog = [
       title: "B1 Final Test Practice",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Practice a short mixed conversation with clear, accurate sentences across B1 topics.",
+      conversationGoalDetails: "Practice a short mixed conversation with clear, accurate sentences across B1 topics.\n\nLearners should be able to say:\n\n- My goal is to ...\n- The biggest challenge is ...\n- I prefer ... because ...",
       setup: "Latihan test: kamu jawab beberapa prompt cepat (goal, progress, problem, preference) dengan kalimat jelas.",
       dialogue: [
         { speaker: "Faris", text: "Let's do a quick B1 practice round." },
@@ -5399,6 +5990,8 @@ export const lessonCatalog = [
         { phrase: "But it might be crowded.", meaning: "Tapi mungkin rame.", usage: "But + might expresses a concern." },
       ],
       grammar: "Review connectors (because/so/but/then) and key patterns (goal, progress, preference, problems).",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Key connectors**.\n\nExamples:\n\n- because (reason)\n- so (result/decision)\n- but (contrast)\n- then (sequence)\n\nUse **Mixed sentence patterns**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- ..., so ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **consistent** - kun-SIS-tent.\n- **sessions** - SESH-unz.\n- **crowded** - KROW-did.",
       prompts: [
         "Goal + deadline.",
         "Challenge + so (solution).",
@@ -5409,6 +6002,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "It might be crowded." },
         { question: "Which sentence uses because correctly?", answer: "I prefer option B because it's cheaper." },
       ],
+      readingSupport: "# Reading Support\n\nFinal test practice is about clarity and accuracy. Keep answers short: one sentence per idea, using the right connector.\n\n## Check\n\nRead it again and underline the review words (story, progress, problem, option, agree, next step).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. My goal is to ... by ...\n2. I've been practicing ...\n3. The biggest challenge is ...\n4. ..., so I ...\n5. I prefer ... because ...\n6. ..., but it might ...",
       sections: lessonSections
     },
     {
@@ -5416,6 +6011,7 @@ export const lessonCatalog = [
       title: "B1 Final Conversation",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.",
+      conversationGoalDetails: "Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.\n\nLearners should be able to say:\n\n- At first..., but then...\n- I prefer ... because ...\n- So my next step is to ...",
       setup: "Final conversation: kamu ngobrol panjang (tetap sederhana) mencakup cerita, goal, problem, preferensi, dan kesepakatan next step.",
       dialogue: [
         { speaker: "Ilham", text: "How have you been lately?" },
@@ -5449,6 +6045,8 @@ export const lessonCatalog = [
         { phrase: "So my next step is to practice three times this week.", meaning: "Jadi next step aku latihan tiga kali minggu ini.", usage: "A clear next step plan." },
       ],
       grammar: "Use connectors naturally (then/because/so/but) to keep the conversation connected and clear.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Connected conversation connectors**.\n\nExamples:\n\n- at first / then\n- because (reason)\n- so (result/decision)\n- but (contrast)\n\nUse **Goal + preference + next step**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- So my next step is to ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **at first** - at FIRST.\n- **distracted** - di-STRAK-tid.\n- **another** - uh-NUH-ther.",
       prompts: [
         "Tell a progress story (at first... but then...).",
         "Share a problem + solution with so.",
@@ -5459,6 +6057,8 @@ export const lessonCatalog = [
         { question: "Which set connects ideas in B1 conversations?", answer: "then / because / so / but" },
         { question: "Choose the correct next step sentence.", answer: "So my next step is to practice three times this week." },
       ],
+      readingSupport: "# Reading Support\n\nA final B1 conversation should feel connected. Use simple connectors to link your story, goal, problem, preference, and next step.\n\n## Check\n\nRead it again and underline the review words (story, progress, problem, option, agree, next step).",
+      writingSupport: "# Writing Support\n\nWrite your final conversation (8 lines):\n1. Last week I ...\n2. At first it was ..., but then ...\n3. Because ...\n4. My goal is to ... by ...\n5. Sometimes I ..., so I ...\n6. I prefer ... because ...\n7. So my next step is to ...\n8. Thanks for the chat.",
       sections: lessonSections
     },
     {
@@ -5466,6 +6066,7 @@ export const lessonCatalog = [
       title: "Stating Your Position",
       unit: "Clear Arguments",
       conversationGoal: "State your position clearly, acknowledge another view, and give one short reason.",
+      conversationGoalDetails: "State your position clearly, acknowledge another view, and give one short reason.\n\nLearners should be able to say:\n\n- In my view, ...\n- I see your point, but ...\n- Because ...",
       setup: "Kamu lagi diskusi di meeting. Kamu jelasin posisi kamu, akui pendapat orang lain, lalu kasih satu alasan utama.",
       dialogue: [
         { speaker: "Faris", text: "Should we switch our weekly meeting to a written update?" },
@@ -5495,6 +6096,8 @@ export const lessonCatalog = [
         { phrase: "I'm happy to draft a proposal.", meaning: "Aku siap bikin draft proposal.", usage: "Offer a clear next step." },
       ],
       grammar: "Use In my view... / I believe... and I see your point, but... to state a position clearly and politely.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **In my view / I believe**.\n\nExamples:\n\n- In my view, a written update would be better.\n- I believe this approach is more efficient.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- I see your point, but we need to consider the timeline.\n- I see your point, but I have a different view.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **compromise** - KOM-pruh-mize.\n- **proposal** - pruh-POH-zul.\n- **efficient** - ih-FISH-unt.",
       prompts: [
         "State your position (In my view...).",
         "Give one reason (Because...).",
@@ -5505,6 +6108,8 @@ export const lessonCatalog = [
         { question: "Which phrase acknowledges another view politely?", answer: "I see your point, but..." },
         { question: "What does \"compromise\" mean?", answer: "kompromi" },
       ],
+      readingSupport: "# Reading Support\n\nA clear position includes: your stance, one key reason, and a polite response to another view.\n\n## Check\n\nRead it again and underline the argument words (in my view, I believe, one reason, for example, however).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. In my view, ...\n2. Because ...\n3. I see your point, but ...\n4. A possible compromise is ...\n5. I'm happy to ...",
       sections: lessonSections
     },
     {
@@ -5512,6 +6117,7 @@ export const lessonCatalog = [
       title: "Supporting With Reasons",
       unit: "Clear Arguments",
       conversationGoal: "Support your argument with two structured reasons and keep it concise.",
+      conversationGoalDetails: "Support your argument with two structured reasons and keep it concise.\n\nLearners should be able to say:\n\n- One reason is ...\n- Another reason is ...\n- That's true, but ...",
       setup: "Kamu lagi meyakinkan tim. Kamu kasih dua alasan yang terstruktur dan tetap ringkas.",
       dialogue: [
         { speaker: "Faris", text: "Do we really need to invest time in automated tests?" },
@@ -5541,6 +6147,8 @@ export const lessonCatalog = [
         { phrase: "We can start small and focus on critical flows.", meaning: "Kita bisa mulai kecil dan fokus ke alur paling penting.", usage: "A practical next step." },
       ],
       grammar: "Use One reason is... / Another reason is... / Also... to support an argument clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Structured reasons**.\n\nExamples:\n\n- One reason is it reduces bugs.\n- Another reason is it saves time.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- That's true, but it helps in the long run.\n- That's true, but we can start small.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **production** - pruh-DUK-shun.\n- **confidence** - KON-fi-dens.\n- **critical** - KRIT-i-kul.",
       prompts: [
         "Give a first reason.",
         "Give a second reason.",
@@ -5551,6 +6159,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "Another reason is it saves time." },
         { question: "Which phrase acknowledges a concern politely?", answer: "That's true, but..." },
       ],
+      readingSupport: "# Reading Support\n\nTo support an argument, give structured reasons. Keep them short and clear: one reason, another reason, and a practical response to concerns.\n\n## Check\n\nRead it again and underline the argument words (in my view, I believe, one reason, for example, however).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I think we should ...\n2. One reason is ...\n3. Another reason is ...\n4. That's true, but ...\n5. In the long run, ...\n6. We can start small by ...",
       sections: lessonSections
     },
     {
@@ -5558,6 +6168,7 @@ export const lessonCatalog = [
       title: "Using Examples",
       unit: "Clear Arguments",
       conversationGoal: "Support your point with a clear example and connect it back to your argument.",
+      conversationGoalDetails: "Support your point with a clear example and connect it back to your argument.\n\nLearners should be able to say:\n\n- For example, ...\n- For instance, ...\n- Such as ...",
       setup: "Kamu lagi diskusi ide. Kamu kasih contoh yang jelas supaya argumen kamu lebih kuat.",
       dialogue: [
         { speaker: "Ilham", text: "Why do you think onboarding should be more structured?" },
@@ -5587,6 +6198,8 @@ export const lessonCatalog = [
         { phrase: "Such as pairing each new hire with one mentor.", meaning: "Misalnya memasangkan setiap orang baru dengan satu mentor.", usage: "Such as introduces specific items." },
       ],
       grammar: "Use for example / for instance / such as to support an argument with evidence.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **For example / for instance**.\n\nExamples:\n\n- For example, we had three new joiners last quarter.\n- For instance, a checklist would reduce questions.\n\nUse **Such as + noun/verb-ing**.\n\nExamples:\n\n- Such as pairing each new hire with a mentor.\n- Such as adding a short training session.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **example** - ig-ZAM-pul.\n- **instance** - IN-stens.\n- **mentor** - MEN-tor.",
       prompts: [
         "Introduce an example.",
         "Describe the impact with so.",
@@ -5597,6 +6210,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces specific items?", answer: "such as" },
         { question: "Choose the correct past sentence.", answer: "They didn't know." },
       ],
+      readingSupport: "# Reading Support\n\nExamples make arguments stronger. Give one concrete case, explain the impact, then connect it to a specific suggestion.\n\n## Check\n\nRead it again and underline the argument words (in my view, I believe, one reason, for example, however).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I think we should ...\n2. Because ...\n3. For example, ...\n4. So ...\n5. For instance, ...\n6. Such as ...",
       sections: lessonSections
     },
     {
@@ -5604,6 +6219,7 @@ export const lessonCatalog = [
       title: "Responding to Counterpoints",
       unit: "Clear Arguments",
       conversationGoal: "Respond to a counterpoint politely, show you understand it, and reinforce your position.",
+      conversationGoalDetails: "Respond to a counterpoint politely, show you understand it, and reinforce your position.\n\nLearners should be able to say:\n\n- That's a fair point.\n- I understand the concern, but ...\n- However, ...",
       setup: "Kamu debat sehat. Lawan bicara kasih counterpoint, kamu respon sopan dan tetap mempertahankan argumenmu.",
       dialogue: [
         { speaker: "Faris", text: "I like your idea, but I'm worried it will increase costs." },
@@ -5633,6 +6249,8 @@ export const lessonCatalog = [
         { phrase: "Let's define success metrics first.", meaning: "Yuk tentukan metrik sukses dulu.", usage: "A strong next step after discussion." },
       ],
       grammar: "Use That's a fair point / I understand the concern / However... to respond professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledge + however**.\n\nExamples:\n\n- That's a fair point. However, we can reduce risk.\n- That's a fair point. However, the benefit is long-term.\n\nUse **I understand the concern, but...**.\n\nExamples:\n\n- I understand the concern, but we can phase it in.\n- I understand the concern, but we can start with a pilot.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **however** - how-EV-er.\n- **significant** - sig-NIF-i-kunt.\n- **metrics** - MET-riks.",
       prompts: [
         "Acknowledge a counterpoint politely.",
         "Respond with however + benefit.",
@@ -5643,6 +6261,8 @@ export const lessonCatalog = [
         { question: "What does \"however\" usually signal?", answer: "kontras" },
         { question: "What does \"phase it in\" mean?", answer: "jalankan bertahap" },
       ],
+      readingSupport: "# Reading Support\n\nCounterpoints are normal in professional discussions. A good response acknowledges the concern, explains your reasoning, and offers a practical way to reduce risk.\n\n## Check\n\nRead it again and underline the argument words (in my view, I believe, one reason, for example, however).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. That's a fair point.\n2. However, ...\n3. I understand the concern, but ...\n4. We can phase it in.\n5. We'll measure results after ...\n6. Let's define success metrics first.",
       sections: lessonSections
     },
     {
@@ -5650,6 +6270,7 @@ export const lessonCatalog = [
       title: "Clear Argument Mission",
       unit: "Clear Arguments",
       conversationGoal: "Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.",
+      conversationGoalDetails: "Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.\n\nLearners should be able to say:\n\n- In my view, ...\n- One reason is ...\n- For example, ...",
       setup: "Misi: kamu usul perubahan proses kerja. Kamu jelasin posisi, dua alasan, satu contoh, respon counterpoint, lalu sepakat next step.",
       dialogue: [
         { speaker: "Faris", text: "Should we change our weekly meeting format?" },
@@ -5679,6 +6300,8 @@ export const lessonCatalog = [
         { phrase: "Let's run a one-month trial and review the results.", meaning: "Yuk coba satu bulan lalu review hasilnya.", usage: "A concrete next step." },
       ],
       grammar: "Combine: In my view... / One reason is... / For example... / That's a fair point. However... / Let's...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Clear argument structure**.\n\nExamples:\n\n- In my view, ...\n- One reason is ... Another reason is ...\n- For example, ...\n- That's a fair point. However, ...\n- Let's ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **routine** - roo-TEEN.\n- **summary** - SUM-uh-ree.\n- **trial** - TRY-ul.",
       prompts: [
         "State position (In my view...).",
         "Give two reasons.",
@@ -5689,6 +6312,8 @@ export const lessonCatalog = [
         { question: "What does \"for example\" do?", answer: "memberi contoh" },
         { question: "What does \"however\" signal?", answer: "kontras" },
       ],
+      readingSupport: "# Reading Support\n\nA strong argument is structured. Start with your position, add reasons, support with an example, respond to counterpoints politely, and end with clear next steps.\n\n## Check\n\nRead it again and underline the argument words (in my view, I believe, one reason, for example, however).",
+      writingSupport: "# Writing Support\n\nWrite your mission (8 lines):\n1. In my view, ...\n2. One reason is ...\n3. Another reason is ...\n4. For example, ...\n5. That's a fair point.\n6. However, ...\n7. Let's run a ... trial.\n8. We'll review the results after ...",
       sections: lessonSections
     },
     {
@@ -5696,6 +6321,7 @@ export const lessonCatalog = [
       title: "Opening a Meeting Point",
       unit: "Professional Meetings",
       conversationGoal: "Open a discussion point clearly, explain why it matters, and invite input.",
+      conversationGoalDetails: "Open a discussion point clearly, explain why it matters, and invite input.\n\nLearners should be able to say:\n\n- I'd like to bring up ...\n- The main point is ...\n- I'd like to hear your thoughts.",
       setup: "Kamu lagi meeting. Kamu buka satu poin diskusi, jelasin kenapa penting, lalu minta pendapat tim.",
       dialogue: [
         { speaker: "Mina", text: "I'd like to bring up the timeline for the next release." },
@@ -5725,6 +6351,8 @@ export const lessonCatalog = [
         { phrase: "Let's hear from everyone.", meaning: "Yuk denger dari semua dulu.", usage: "A neutral facilitator phrase." },
       ],
       grammar: "Use I'd like to bring up... / The main point is... / I'd like to hear your thoughts to open a meeting point professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Open a topic**.\n\nExamples:\n\n- I'd like to bring up the timeline.\n- I'd like to bring up one concern.\n\nUse **Invite input**.\n\nExamples:\n\n- I'd like to hear your thoughts.\n- What are your thoughts on this?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **timeline** - TIME-line.\n- **scope** - SKOH-p.\n- **handoff** - HAND-off.",
       prompts: [
         "Open a topic politely.",
         "State the main point.",
@@ -5735,6 +6363,8 @@ export const lessonCatalog = [
         { question: "Choose the correct phrase.", answer: "depends on" },
         { question: "Which sentence invites input politely?", answer: "I'd like to hear your thoughts." },
       ],
+      readingSupport: "# Reading Support\n\nTo open a meeting point, introduce the topic, state the main point, explain why it matters, and invite input.\n\n## Check\n\nRead it again and underline the meeting words (agenda, scope, clarify, feedback, summarize, action items).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I'd like to bring up ...\n2. The main point is ...\n3. Because ...\n4. I'd like to hear your thoughts.\n5. Then we can decide.\n6. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -5742,6 +6372,7 @@ export const lessonCatalog = [
       title: "Clarifying Scope",
       unit: "Professional Meetings",
       conversationGoal: "Clarify scope, ask what is included, and confirm what is out of scope.",
+      conversationGoalDetails: "Clarify scope, ask what is included, and confirm what is out of scope.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- Does this include ...?\n- That's out of scope.",
       setup: "Kamu ingin scope jelas. Kamu tanya apa yang termasuk, apa yang tidak, dan konfirmasi biar nggak salah paham.",
       dialogue: [
         { speaker: "Mina", text: "Just to clarify, what exactly is in scope for this sprint?" },
@@ -5771,6 +6402,8 @@ export const lessonCatalog = [
         { phrase: "I'll update the ticket list.", meaning: "Aku akan update daftar ticket.", usage: "A practical next step." },
       ],
       grammar: "Use Just to clarify... / Does this include...? / Is ... out of scope? to avoid confusion.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Just to clarify**.\n\nExamples:\n\n- Just to clarify, what is in scope?\n- Just to clarify, do we need QA sign-off?\n\nUse **Include / out of scope**.\n\nExamples:\n\n- Does this include the dashboard changes?\n- Is the admin flow out of scope?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **clarify** - KLAIR-uh-fy.\n- **exactly** - ig-ZAKT-lee.\n- **scope** - SKOH-p.",
       prompts: [
         "Ask to clarify scope.",
         "Ask if something is included.",
@@ -5781,6 +6414,8 @@ export const lessonCatalog = [
         { question: "Which phrase asks for clarity politely?", answer: "Just to clarify, ..." },
         { question: "Which sentence is a correct include question?", answer: "Does this include the admin changes?" },
       ],
+      readingSupport: "# Reading Support\n\nClarifying scope prevents rework. Ask what is in scope, confirm what is out of scope, and summarize your understanding.\n\n## Check\n\nRead it again and underline the meeting words (agenda, scope, clarify, feedback, summarize, action items).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. Just to clarify, what's in scope?\n2. Does this include ...?\n3. Is ... out of scope?\n4. Got it. So we focus on ...\n5. I'll update ...\n6. Thanks.",
       sections: lessonSections
     },
     {
@@ -5788,6 +6423,7 @@ export const lessonCatalog = [
       title: "Giving Constructive Feedback",
       unit: "Professional Meetings",
       conversationGoal: "Give constructive feedback politely, focus on impact, and suggest one improvement.",
+      conversationGoalDetails: "Give constructive feedback politely, focus on impact, and suggest one improvement.\n\nLearners should be able to say:\n\n- I noticed ...\n- One suggestion is ...\n- It might help if ...",
       setup: "Kamu kasih feedback ke rekan kerja. Kamu tetap sopan, jelasin dampaknya, lalu kasih satu saran perbaikan.",
       dialogue: [
         { speaker: "Ilham", text: "How did the demo go? Any feedback?" },
@@ -5817,6 +6453,8 @@ export const lessonCatalog = [
         { phrase: "It might help if you keep the intro under one minute.", meaning: "Mungkin membantu kalau pembukaannya di bawah satu menit.", usage: "A soft, constructive suggestion." },
       ],
       grammar: "Use One suggestion is... / It might help if... / I noticed that... to give feedback professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I noticed that...**.\n\nExamples:\n\n- I noticed the introduction was a bit long.\n- I noticed the slides were hard to read.\n\nUse **It might help if...**.\n\nExamples:\n\n- It might help if you start with the takeaway.\n- It might help if you keep it shorter.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **overall** - OH-ver-awl.\n- **takeaway** - TAYK-uh-way.\n- **suggestion** - suh-JES-chun.",
       prompts: [
         "Start feedback positively.",
         "Make an observation with I noticed.",
@@ -5827,6 +6465,8 @@ export const lessonCatalog = [
         { question: "Which phrase gives a soft suggestion?", answer: "It might help if..." },
         { question: "What does \"takeaway\" mean here?", answer: "pesan utama" },
       ],
+      readingSupport: "# Reading Support\n\nConstructive feedback is clear and respectful: start positive, describe what you noticed, explain the impact, and suggest one improvement.\n\n## Check\n\nRead it again and underline the meeting words (agenda, scope, clarify, feedback, summarize, action items).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. Overall, ...\n2. I noticed ...\n3. The impact was ...\n4. One suggestion is to ...\n5. It might help if ...\n6. Thanks for sharing.",
       sections: lessonSections
     },
     {
@@ -5834,6 +6474,7 @@ export const lessonCatalog = [
       title: "Summarizing Decisions",
       unit: "Professional Meetings",
       conversationGoal: "Summarize decisions clearly, confirm action items, and assign owners.",
+      conversationGoalDetails: "Summarize decisions clearly, confirm action items, and assign owners.\n\nLearners should be able to say:\n\n- To summarize, ...\n- Action items are ...\n- We'll check progress on ...",
       setup: "Di akhir meeting kamu rangkum keputusan, sebut action items, dan jelas siapa yang ngerjain.",
       dialogue: [
         { speaker: "Faris", text: "We're almost out of time." },
@@ -5863,6 +6504,8 @@ export const lessonCatalog = [
         { phrase: "Thanks for summarizing.", meaning: "Makasih sudah rangkum.", usage: "A polite closing line." },
       ],
       grammar: "Use To summarize... / We agreed to... / Action items are... / I'll take... to close meetings professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **To summarize**.\n\nExamples:\n\n- To summarize, we agreed to ...\n- To summarize, the decision is ...\n\nUse **Action items**.\n\nExamples:\n\n- Action items are: I'll ..., and you'll ...\n- I'll take the first item.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **summarize** - SUM-uh-rise.\n- **action items** - AK-shun EYE-tumz.\n- **coverage** - KUV-er-ij.",
       prompts: [
         "Summarize the decision.",
         "State action items with owners.",
@@ -5873,6 +6516,8 @@ export const lessonCatalog = [
         { question: "What are \"action items\"?", answer: "tugas/aksi yang harus dilakukan" },
         { question: "Why assign owners for action items?", answer: "So it's clear who does what" },
       ],
+      readingSupport: "# Reading Support\n\nA good meeting close includes: a short summary of the decision, clear action items with owners, and the next checkpoint.\n\n## Check\n\nRead it again and underline the meeting words (agenda, scope, clarify, feedback, summarize, action items).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. To summarize, ...\n2. We agreed to ...\n3. Action items are: I'll ..., you'll ...\n4. Ilham will ...\n5. We'll check progress on ...\n6. Thanks everyone.",
       sections: lessonSections
     },
     {
@@ -5880,6 +6525,7 @@ export const lessonCatalog = [
       title: "Meeting Participation Mission",
       unit: "Professional Meetings",
       conversationGoal: "Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.",
+      conversationGoalDetails: "Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.\n\nLearners should be able to say:\n\n- I'd like to bring up ...\n- Just to clarify, ...\n- To summarize, ...",
       setup: "Misi: kamu aktif di meeting secara profesional dari awal sampai rangkuman akhir.",
       dialogue: [
         { speaker: "Faris", text: "Any topics to discuss today?" },
@@ -5913,6 +6559,8 @@ export const lessonCatalog = [
         { phrase: "To summarize, action items are: I'll..., you'll...", meaning: "Kesimpulannya, action items-nya: aku..., kamu...", usage: "Close the meeting clearly." },
       ],
       grammar: "Combine: I'd like to bring up... / Just to clarify... / I noticed... / It might help if... / To summarize...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Meeting participation flow**.\n\nExamples:\n\n- I'd like to bring up ...\n- Just to clarify, does this include ...?\n- Overall ... I noticed ...\n- To summarize, we agreed ... Action items are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **agenda** - uh-JEN-duh.\n- **clarify** - KLAIR-uh-fy.\n- **summarize** - SUM-uh-rise.",
       prompts: [
         "Open a topic.",
         "Clarify scope inclusion.",
@@ -5923,6 +6571,8 @@ export const lessonCatalog = [
         { question: "Why mention owners for action items?", answer: "So it's clear who does what" },
         { question: "Why say \"Just to clarify\"?", answer: "to avoid confusion" },
       ],
+      readingSupport: "# Reading Support\n\nActive meeting participation includes: introducing topics, clarifying scope, giving constructive feedback, and closing with clear decisions and action items.\n\n## Check\n\nRead it again and underline the meeting words (agenda, scope, clarify, feedback, summarize, action items).",
+      writingSupport: "# Writing Support\n\nWrite your mission (8 lines):\n1. I'd like to bring up ...\n2. The main point is ...\n3. Just to clarify, does this include ...?\n4. That's out of scope for now.\n5. Overall ... I noticed ...\n6. The impact is ..., so ...\n7. To summarize, we agreed ...\n8. Action items are: I'll ..., you'll ...",
       sections: lessonSections
     },
     {
@@ -5930,6 +6580,7 @@ export const lessonCatalog = [
       title: "Expressing Priorities",
       unit: "Negotiation & Compromise",
       conversationGoal: "State your priorities clearly, explain what matters most, and ask about the other person's priorities.",
+      conversationGoalDetails: "State your priorities clearly, explain what matters most, and ask about the other person's priorities.\n\nLearners should be able to say:\n\n- My top priority is ...\n- What matters most is ...\n- What's your top priority?",
       setup: "Kamu lagi diskusi rencana kerja. Kamu jelasin prioritas utama kamu, jelasin alasannya singkat, lalu tanya prioritas lawan bicara.",
       dialogue: [
         { speaker: "Faris", text: "We have limited time. What should we focus on first?" },
@@ -5961,6 +6612,8 @@ export const lessonCatalog = [
         { phrase: "What about you? What's your top priority?", meaning: "Kalau kamu gimana? Prioritas utamamu apa?", usage: "Ask for the other person's priorities." },
       ],
       grammar: "Use My top priority is... / What matters most is... / What's your priority? to align on priorities.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Priority statements**.\n\nExamples:\n\n- My top priority is shipping safely.\n- The second priority is improving monitoring.\n\nUse **What matters most**.\n\nExamples:\n\n- What matters most is meeting the deadline.\n- What matters most is quality.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **priority** - pry-OR-i-tee.\n- **deadline** - DED-line.\n- **monitoring** - MON-i-ter-ing.",
       prompts: [
         "State your top priority.",
         "Explain what matters most.",
@@ -5971,6 +6624,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "What matters most is quality." },
         { question: "What does \"deadline\" mean?", answer: "batas waktu" },
       ],
+      readingSupport: "# Reading Support\n\nIn negotiations, align on priorities first. State your top priority, explain why it matters, and ask the other person what matters most for them.\n\n## Check\n\nRead it again and underline the negotiation words (priority, trade-off, proposal, concern, compromise).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. My top priority is ...\n2. Because ...\n3. The second priority is ...\n4. What matters most is ...\n5. What about you?\n6. What's your top priority?",
       sections: lessonSections
     },
     {
@@ -5978,6 +6633,7 @@ export const lessonCatalog = [
       title: "Making a Proposal",
       unit: "Negotiation & Compromise",
       conversationGoal: "Make a clear proposal, suggest a timeline, and ask if it works.",
+      conversationGoalDetails: "Make a clear proposal, suggest a timeline, and ask if it works.\n\nLearners should be able to say:\n\n- I propose we ...\n- How about we ...?\n- Would that work for you?",
       setup: "Kamu negosiasi rencana. Kamu ajukan proposal, sebut timeline, lalu tanya apakah itu works buat tim.",
       dialogue: [
         { speaker: "Faris", text: "How should we handle the launch plan?" },
@@ -6007,6 +6663,8 @@ export const lessonCatalog = [
         { phrase: "We can prepare in parallel.", meaning: "Kita bisa siapin paralel.", usage: "Offer a solution to reduce risk." },
       ],
       grammar: "Use I propose we... / How about we... / Would that work? to make proposals politely and clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I propose we...**.\n\nExamples:\n\n- I propose we do a small pilot first.\n- I propose we meet with the client tomorrow.\n\nUse **Would that work?**.\n\nExamples:\n\n- Would that work for you?\n- Would that work for the team?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **propose** - pruh-POHZ.\n- **pilot** - PY-lut.\n- **parallel** - PAIR-uh-lel.",
       prompts: [
         "Make a proposal with I propose we...",
         "Suggest a timeline.",
@@ -6017,6 +6675,8 @@ export const lessonCatalog = [
         { question: "Which question checks agreement politely?", answer: "Would that work for you?" },
         { question: "What does \"Not necessarily\" mean?", answer: "belum tentu" },
       ],
+      readingSupport: "# Reading Support\n\nA good proposal is specific: what to do, timeline, and a question to confirm agreement.\n\n## Check\n\nRead it again and underline the negotiation words (priority, trade-off, proposal, concern, compromise).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I propose we ...\n2. How about we ... for ... weeks?\n3. Then we can review ...\n4. Would that work for you?\n5. Not necessarily, because ...\n6. We can ... in parallel.",
       sections: lessonSections
     },
     {
@@ -6024,6 +6684,7 @@ export const lessonCatalog = [
       title: "Handling Objections",
       unit: "Negotiation & Compromise",
       conversationGoal: "Respond to an objection politely, ask a clarifying question, and offer a revised proposal.",
+      conversationGoalDetails: "Respond to an objection politely, ask a clarifying question, and offer a revised proposal.\n\nLearners should be able to say:\n\n- I understand the concern.\n- Would it help if we ...?\n- What if we ...?",
       setup: "Lawan bicara keberatan. Kamu respon sopan, tanya klarifikasi, lalu revisi proposal biar lebih bisa diterima.",
       dialogue: [
         { speaker: "Ilham", text: "I'm concerned this plan will slow us down." },
@@ -6053,6 +6714,8 @@ export const lessonCatalog = [
         { phrase: "That sounds reasonable.", meaning: "Kedengarannya masuk akal.", usage: "A polite acceptance." },
       ],
       grammar: "Use I understand the concern / What if we... / Would it help if... to handle objections calmly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **I understand the concern**.\n\nExamples:\n\n- I understand the concern.\n- I understand the concern about the timeline.\n\nUse **Would it help if... / What if we...**.\n\nExamples:\n\n- Would it help if we limit reviews?\n- What if we define simple criteria?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **concern** - kun-SURN.\n- **criteria** - kry-TEER-ee-uh.\n- **reasonable** - REE-zuh-nuh-bul.",
       prompts: [
         "Acknowledge the objection.",
         "Ask a clarifying question.",
@@ -6063,6 +6726,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "What if we define simple criteria?" },
         { question: "Which phrase offers a soft revision?", answer: "Would it help if we ...?" },
       ],
+      readingSupport: "# Reading Support\n\nHandling objections well means: acknowledge the concern, ask a clarifying question, and adjust the proposal to reduce risk.\n\n## Check\n\nRead it again and underline the negotiation words (priority, trade-off, proposal, concern, compromise).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I understand the concern.\n2. What part feels risky to you?\n3. Would it help if we ...?\n4. What if we ...?\n5. That sounds reasonable.\n6. Let's ... today.",
       sections: lessonSections
     },
     {
@@ -6070,6 +6735,7 @@ export const lessonCatalog = [
       title: "Finding Middle Ground",
       unit: "Negotiation & Compromise",
       conversationGoal: "Find a compromise, propose a middle-ground option, and confirm agreement.",
+      conversationGoalDetails: "Find a compromise, propose a middle-ground option, and confirm agreement.\n\nLearners should be able to say:\n\n- Maybe we can ...\n- A compromise could be ...\n- Can we agree on ...?",
       setup: "Kalian beda pendapat. Kamu usul opsi tengah, jelasin trade-off singkat, lalu konfirmasi kesepakatan.",
       dialogue: [
         { speaker: "Faris", text: "I want to launch next week, but you want more testing." },
@@ -6099,6 +6765,8 @@ export const lessonCatalog = [
         { phrase: "I'll update the rollout plan.", meaning: "Aku update rollout plan.", usage: "A clear next step." },
       ],
       grammar: "Use Maybe we can... / A compromise could be... / If we do X, can we agree on Y? to find middle ground.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Maybe we can...**.\n\nExamples:\n\n- Maybe we can find a compromise.\n- Maybe we can try a smaller scope.\n\nUse **A compromise could be...**.\n\nExamples:\n\n- A compromise could be a pilot.\n- A compromise could be a phased rollout.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **compromise** - KOM-pruh-mize.\n- **rollout** - ROHL-out.\n- **percentage** - per-SEN-tij.",
       prompts: [
         "Suggest finding a compromise.",
         "Propose a compromise.",
@@ -6109,6 +6777,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "A compromise could be a small rollout." },
         { question: "What does \"That feels fair\" mean?", answer: "itu terasa adil" },
       ],
+      readingSupport: "# Reading Support\n\nFinding middle ground means offering a compromise that respects both priorities. Propose a practical option and confirm agreement clearly.\n\n## Check\n\nRead it again and underline the negotiation words (priority, trade-off, proposal, concern, compromise).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. Maybe we can find a compromise.\n2. A compromise could be ...\n3. The trade-off is ...\n4. If we do X, can we agree on Y?\n5. That feels fair.\n6. I'll update the plan.",
       sections: lessonSections
     },
     {
@@ -6116,6 +6786,7 @@ export const lessonCatalog = [
       title: "Negotiation Mission",
       unit: "Negotiation & Compromise",
       conversationGoal: "Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.",
+      conversationGoalDetails: "Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.\n\nLearners should be able to say:\n\n- My top priority is ...\n- I propose we ...\n- A compromise could be ...",
       setup: "Misi: kamu negosiasi rencana launch. Kamu align prioritas, usul proposal, handle keberatan, cari kompromi, lalu sepakat next step.",
       dialogue: [
         { speaker: "Faris", text: "We need to decide our launch plan." },
@@ -6145,6 +6816,8 @@ export const lessonCatalog = [
         { phrase: "Then expanding if results look good.", meaning: "Lalu diperluas kalau hasilnya bagus.", usage: "Conditional next step." },
       ],
       grammar: "Combine: My top priority is... / I propose we... / I understand the concern... / Would it help if... / A compromise could be...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation structure**.\n\nExamples:\n\n- My top priority is ...\n- I propose we ...\n- I understand the concern. Would it help if ...?\n- A compromise could be ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **trade-off** - TRAYD-off.\n- **expand** - ik-SPAND.\n- **results** - ri-ZULTS.",
       prompts: [
         "Align priorities.",
         "Make a proposal with timeline.",
@@ -6155,6 +6828,8 @@ export const lessonCatalog = [
         { question: "What does \"in parallel\" mean?", answer: "secara paralel/bersamaan" },
         { question: "Choose the correct sentence.", answer: "If results look good, we can expand." },
       ],
+      readingSupport: "# Reading Support\n\nNegotiation is collaborative. Start with priorities, propose a plan, address concerns, and suggest a concrete compromise with next steps.\n\n## Check\n\nRead it again and underline the negotiation words (priority, trade-off, proposal, concern, compromise).",
+      writingSupport: "# Writing Support\n\nWrite your mission (8 lines):\n1. My top priority is ...\n2. What matters most to you?\n3. I propose we ...\n4. How about we ...?\n5. I understand the concern.\n6. Would it help if ...?\n7. A compromise could be ...\n8. If results look good, we can ...",
       sections: lessonSections
     },
     {
@@ -6162,6 +6837,7 @@ export const lessonCatalog = [
       title: "Structuring a Short Presentation",
       unit: "Presenting Ideas",
       conversationGoal: "Present an idea with a clear structure: context, proposal, and next steps.",
+      conversationGoalDetails: "Present an idea with a clear structure: context, proposal, and next steps.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- My proposal is ...\n- Next steps are ...",
       setup: "Kamu presentasi ide di meeting singkat. Kamu kasih konteks, jelasin proposal, dan tutup dengan next steps.",
       dialogue: [
         { speaker: "Mina", text: "Today I'd like to share an idea to improve our onboarding." },
@@ -6191,6 +6867,8 @@ export const lessonCatalog = [
         { phrase: "What's the context?", meaning: "Konteksnya apa?", usage: "A common audience question." },
       ],
       grammar: "Use Today I'd like to... / The problem is... / My proposal is... / Next steps are... to keep a short presentation clear.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Presentation structure**.\n\nExamples:\n\n- Today I'd like to ...\n- The problem is ...\n- My proposal is ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **proposal** - pruh-POH-zul.\n- **onboarding** - ON-bor-ding.\n- **checklist** - CHECK-list.",
       prompts: [
         "Open a short presentation.",
         "State the problem.",
@@ -6201,6 +6879,8 @@ export const lessonCatalog = [
         { question: "Which sentence introduces a proposal?", answer: "My proposal is ..." },
         { question: "Which phrase closes with action items?", answer: "Next steps are ..." },
       ],
+      readingSupport: "# Reading Support\n\nA strong short presentation is structured: open with the topic, explain the problem, propose a solution, then end with next steps.\n\n## Check\n\nRead it again and underline the presenting words (today I'll, first, next, benefit, risk, question).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. Today I'd like to ...\n2. The context is ...\n3. The problem is ...\n4. My proposal is ...\n5. The benefit is ...\n6. The risk is ...\n7. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -6208,6 +6888,7 @@ export const lessonCatalog = [
       title: "Signposting Clearly",
       unit: "Presenting Ideas",
       conversationGoal: "Use clear signposting to guide listeners through your presentation.",
+      conversationGoalDetails: "Use clear signposting to guide listeners through your presentation.\n\nLearners should be able to say:\n\n- First, ...\n- Next, ...\n- Finally, ...",
       setup: "Kamu presentasi ide. Kamu pakai signposting supaya alurnya mudah diikutin.",
       dialogue: [
         { speaker: "Mina", text: "Let me quickly walk you through the plan." },
@@ -6239,6 +6920,8 @@ export const lessonCatalog = [
         { phrase: "Let me summarize.", meaning: "Biar aku rangkum.", usage: "A quick wrap-up phrase." },
       ],
       grammar: "Use First... / Next... / Finally... / Let me summarize... to make your presentation easy to follow.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Signposting**.\n\nExamples:\n\n- First, ...\n- Next, ...\n- Finally, ...\n- Let me summarize ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **walk you through** - WAWK-yuh through.\n- **outline** - OUT-line.\n- **finally** - FYE-nuh-lee.",
       prompts: [
         "Start with signposting opener.",
         "Use first/next/finally.",
@@ -6249,6 +6932,8 @@ export const lessonCatalog = [
         { question: "What does \"walk you through\" mean?", answer: "menjelaskan langkah demi langkah" },
         { question: "Choose the correct sentence.", answer: "Let me summarize." },
       ],
+      readingSupport: "# Reading Support\n\nSignposting makes presentations easy to follow. Use first/next/finally and a short summary to guide your listeners.\n\n## Check\n\nRead it again and underline the presenting words (today I'll, first, next, benefit, risk, question).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. Let me walk you through ...\n2. First, ...\n3. Next, ...\n4. Finally, ...\n5. Let me summarize ...\n6. Any questions?",
       sections: lessonSections
     },
     {
@@ -6256,6 +6941,7 @@ export const lessonCatalog = [
       title: "Explaining Benefits and Risks",
       unit: "Presenting Ideas",
       conversationGoal: "Explain two benefits, mention one risk, and propose a mitigation plan.",
+      conversationGoalDetails: "Explain two benefits, mention one risk, and propose a mitigation plan.\n\nLearners should be able to say:\n\n- The main benefit is ...\n- A key risk is ...\n- To reduce the risk, we can ...",
       setup: "Kamu jelasin ide dan trade-off-nya. Kamu sebut manfaat, risikonya, lalu mitigasinya.",
       dialogue: [
         { speaker: "Faris", text: "What are the benefits of your idea?" },
@@ -6285,6 +6971,8 @@ export const lessonCatalog = [
         { phrase: "We should assign an owner.", meaning: "Kita perlu tentuin owner.", usage: "A practical governance step." },
       ],
       grammar: "Use The main benefit is... / Another benefit is... / A key risk is... / To reduce the risk, we can... to present trade-offs clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Benefits and risks**.\n\nExamples:\n\n- The main benefit is ...\n- Another benefit is ...\n- A key risk is ...\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- To mitigate this, we can ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **benefit** - BEN-uh-fit.\n- **risk** - RISK.\n- **outdated** - out-DAY-tid.",
       prompts: [
         "State the main benefit.",
         "State a key risk.",
@@ -6295,6 +6983,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces a risk?", answer: "A key risk is ..." },
         { question: "Which phrase introduces mitigation?", answer: "To reduce the risk, we can ..." },
       ],
+      readingSupport: "# Reading Support\n\nPresenting ideas professionally means discussing trade-offs: benefits, risks, and how you will reduce the risks.\n\n## Check\n\nRead it again and underline the presenting words (today I'll, first, next, benefit, risk, question).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. The main benefit is ...\n2. Another benefit is ...\n3. A key risk is ...\n4. To reduce the risk, we can ...\n5. We'll measure ...\n6. We'll review ...\n7. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -6302,6 +6992,7 @@ export const lessonCatalog = [
       title: "Answering Questions",
       unit: "Presenting Ideas",
       conversationGoal: "Answer a question clearly, admit uncertainty when needed, and offer to follow up.",
+      conversationGoalDetails: "Answer a question clearly, admit uncertainty when needed, and offer to follow up.\n\nLearners should be able to say:\n\n- That's a good question.\n- As far as I know, ...\n- I'm not sure yet, but ...",
       setup: "Setelah presentasi, kamu jawab pertanyaan dengan jelas. Kalau belum yakin, kamu bilang jujur dan janji follow up.",
       dialogue: [
         { speaker: "Ilham", text: "How much effort will this take?" },
@@ -6333,6 +7024,8 @@ export const lessonCatalog = [
         { phrase: "Any other questions?", meaning: "Ada pertanyaan lain?", usage: "A polite closing invitation." },
       ],
       grammar: "Use That's a good question / As far as I know... / I'm not sure, but I can follow up to answer questions professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Answering questions**.\n\nExamples:\n\n- That's a good question.\n- As far as I know, ...\n- I'm not sure yet, but I can follow up ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **effort** - EF-ert.\n- **estimate** - ES-ti-mit (noun) / ES-ti-mayt (verb).\n- **follow up** - FAH-loh up.",
       prompts: [
         "Start an answer politely.",
         "Answer with confidence level.",
@@ -6343,6 +7036,8 @@ export const lessonCatalog = [
         { question: "What does \"follow up\" mean?", answer: "menindaklanjuti" },
         { question: "Choose the best professional response.", answer: "I'm not sure yet, but I can follow up by tomorrow." },
       ],
+      readingSupport: "# Reading Support\n\nGood Q&A feels professional: acknowledge the question, answer clearly, and if you're unsure, offer a specific follow-up time.\n\n## Check\n\nRead it again and underline the presenting words (today I'll, first, next, benefit, risk, question).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. That's a good question.\n2. As far as I know, ...\n3. I'm not sure yet, but ...\n4. I can follow up by ...\n5. I suggest we ...\n6. Any other questions?",
       sections: lessonSections
     },
     {
@@ -6350,6 +7045,7 @@ export const lessonCatalog = [
       title: "Idea Presentation Mission",
       unit: "Presenting Ideas",
       conversationGoal: "Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.",
+      conversationGoalDetails: "Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- The main benefit is ...\n- That's a good question.",
       setup: "Misi: kamu presentasi ide singkat lalu Q&A. Kamu pakai struktur, signposting, trade-offs, dan jawaban profesional.",
       dialogue: [
         { speaker: "Faris", text: "You have two minutes. Present your idea." },
@@ -6379,6 +7075,8 @@ export const lessonCatalog = [
         { phrase: "I'm not sure yet, but I can follow up by tomorrow.", meaning: "Aku belum yakin, tapi aku bisa follow up besok.", usage: "Professional uncertainty." },
       ],
       grammar: "Combine: Today I'd like to... / First... Next... Finally... / The main benefit is... / A key risk is... / That's a good question...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Presentation + Q&A flow**.\n\nExamples:\n\n- Today I'd like to ...\n- First ... Next ... Finally ...\n- The main benefit is ... Another benefit is ...\n- A key risk is ... To reduce the risk, ...\n- That's a good question. As far as I know, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **inconsistent** - in-kun-SIS-tent.\n- **benefit** - BEN-uh-fit.\n- **maintenance** - MAYN-tuh-nens.",
       prompts: [
         "Present your idea opening.",
         "Explain benefits and risk.",
@@ -6389,6 +7087,8 @@ export const lessonCatalog = [
         { question: "Which set is a clear 3-part signpost?", answer: "First / Next / Finally" },
         { question: "Which is the best professional response when unsure?", answer: "I'm not sure yet, but I can follow up by tomorrow." },
       ],
+      readingSupport: "# Reading Support\n\nThis mission combines full presentation skills: structure, signposting, trade-offs, and professional Q&A.\n\n## Check\n\nRead it again and underline the presenting words (today I'll, first, next, benefit, risk, question).",
+      writingSupport: "# Writing Support\n\nWrite your mission (10 lines):\n1. Today I'd like to ...\n2. First, ...\n3. Next, ...\n4. Finally, ...\n5. The main benefit is ...\n6. Another benefit is ...\n7. A key risk is ...\n8. To reduce the risk, ...\n9. That's a good question. As far as I know, ...\n10. I'm not sure yet, but I can follow up by ...",
       sections: lessonSections
     },
     {
@@ -6396,6 +7096,7 @@ export const lessonCatalog = [
       title: "Summarizing an Article",
       unit: "Media & Information",
       conversationGoal: "Summarize an article in 2–3 sentences: main topic, key point, and conclusion.",
+      conversationGoalDetails: "Summarize an article in 2–3 sentences: main topic, key point, and conclusion.\n\nLearners should be able to say:\n\n- The article is about ...\n- The main point is ...\n- It concludes that ...",
       setup: "Kamu habis baca artikel. Kamu jelasin topiknya, poin utama, dan kesimpulan singkat ke teman kerja.",
       dialogue: [
         { speaker: "Faris", text: "Did you read that article about remote work?" },
@@ -6425,6 +7126,8 @@ export const lessonCatalog = [
         { phrase: "In short, the key takeaway is clear rules help.", meaning: "Singkatnya, inti pesannya: aturan yang jelas itu membantu.", usage: "A concise summary closing." },
       ],
       grammar: "Use The article is about... / The main point is... / It concludes that... to summarize clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Summary structure**.\n\nExamples:\n\n- The article is about ...\n- The main point is ...\n- It concludes that ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **productivity** - pro-duk-TIV-i-tee.\n- **concludes** - kun-KLOODZ.\n- **hybrid** - HY-brid.",
       prompts: [
         "State the topic.",
         "State the main point.",
@@ -6435,6 +7138,8 @@ export const lessonCatalog = [
         { question: "Which sentence states the main point?", answer: "The main point is ..." },
         { question: "Which phrase introduces a conclusion?", answer: "It concludes that ..." },
       ],
+      readingSupport: "# Reading Support\n\nA strong summary is short and structured: topic, main point, and conclusion. Avoid extra details unless asked.\n\n## Check\n\nRead it again and underline the information words (source, claim, evidence, reliable, viewpoint).",
+      writingSupport: "# Writing Support\n\nWrite 5 lines:\n1. The article is about ...\n2. The main point is ...\n3. It mentions ... as a downside.\n4. It concludes that ...\n5. In short, the key takeaway is ...",
       sections: lessonSections
     },
     {
@@ -6442,6 +7147,7 @@ export const lessonCatalog = [
       title: "Discussing Reliable Sources",
       unit: "Media & Information",
       conversationGoal: "Discuss whether a source is reliable, explain why, and suggest a better source.",
+      conversationGoalDetails: "Discuss whether a source is reliable, explain why, and suggest a better source.\n\nLearners should be able to say:\n\n- I'm not sure it's reliable.\n- I'd check ...\n- I trust sources that ...",
       setup: "Kamu bahas berita. Kamu nilai sumbernya reliable atau tidak, jelasin alasannya, lalu saranin sumber yang lebih baik.",
       dialogue: [
         { speaker: "Ilham", text: "I saw a claim on social media. Is it true?" },
@@ -6471,6 +7177,8 @@ export const lessonCatalog = [
         { phrase: "Let's verify it before sharing.", meaning: "Yuk verifikasi dulu sebelum share.", usage: "A practical closing suggestion." },
       ],
       grammar: "Use I trust this source because... / I'm not sure it's reliable / I'd check... to evaluate sources.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Reliability language**.\n\nExamples:\n\n- I'm not sure it's reliable.\n- I trust this source because it cites evidence.\n\nUse **Verification**.\n\nExamples:\n\n- I'd check official reports.\n- I'd cross-check with two sources.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-bul.\n- **evidence** - EV-i-dens.\n- **official** - uh-FISH-ul.",
       prompts: [
         "Express polite doubt.",
         "Give a reason.",
@@ -6481,6 +7189,8 @@ export const lessonCatalog = [
         { question: "What does \"cite data\" mean?", answer: "menyantumkan data" },
         { question: "Which sentence suggests verification?", answer: "I'd check official reports." },
       ],
+      readingSupport: "# Reading Support\n\nReliable sources usually show evidence, cite data, and are transparent about authorship. If you're unsure, verify before sharing.\n\n## Check\n\nRead it again and underline the information words (source, claim, evidence, reliable, viewpoint).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I'm not sure this source is reliable.\n2. Because ...\n3. I'd check ...\n4. I trust sources that ...\n5. Let's verify it before sharing.\n6. Then we can decide.",
       sections: lessonSections
     },
     {
@@ -6488,6 +7198,7 @@ export const lessonCatalog = [
       title: "Explaining a Viewpoint",
       unit: "Media & Information",
       conversationGoal: "Explain a viewpoint clearly, support it with one reason, and acknowledge another perspective.",
+      conversationGoalDetails: "Explain a viewpoint clearly, support it with one reason, and acknowledge another perspective.\n\nLearners should be able to say:\n\n- From my perspective, ...\n- The reason is ...\n- I see the other side, but ...",
       setup: "Kamu diskusi isu publik. Kamu jelasin viewpoint kamu, kasih alasan, dan akui perspektif lain dengan sopan.",
       dialogue: [
         { speaker: "Faris", text: "What's your take on regulating AI tools?" },
@@ -6517,6 +7228,8 @@ export const lessonCatalog = [
         { phrase: "That's fair.", meaning: "Itu masuk akal.", usage: "A polite response." },
       ],
       grammar: "Use From my perspective... / The reason is... / I see the other side, but... to discuss viewpoints respectfully.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Viewpoint language**.\n\nExamples:\n\n- From my perspective, ...\n- The reason is ...\n- I see the other side, but ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **perspective** - per-SPEK-tiv.\n- **misinformation** - mis-in-fer-MAY-shun.\n- **necessary** - NES-uh-ser-ee.",
       prompts: [
         "State your viewpoint.",
         "Support with a reason.",
@@ -6527,6 +7240,8 @@ export const lessonCatalog = [
         { question: "Which phrase acknowledges another perspective?", answer: "I see the other side, but..." },
         { question: "What does \"balance\" mean?", answer: "keseimbangan" },
       ],
+      readingSupport: "# Reading Support\n\nWhen discussing viewpoints, be respectful: state your perspective, support it with a reason, and acknowledge the other side before responding.\n\n## Check\n\nRead it again and underline the information words (source, claim, evidence, reliable, viewpoint).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. From my perspective, ...\n2. The reason is ...\n3. I see the other side, but ...\n4. We need balance.\n5. In my view, ...\n6. That's fair.",
       sections: lessonSections
     },
     {
@@ -6534,6 +7249,7 @@ export const lessonCatalog = [
       title: "Responding to New Information",
       unit: "Media & Information",
       conversationGoal: "Respond to new information, update your opinion, and ask a follow-up question.",
+      conversationGoalDetails: "Respond to new information, update your opinion, and ask a follow-up question.\n\nLearners should be able to say:\n\n- I wasn't aware of that.\n- That changes things.\n- I'd like to understand ...",
       setup: "Kamu dapat info baru. Kamu respon dengan terbuka, update pendapat kamu, dan tanya pertanyaan follow-up.",
       dialogue: [
         { speaker: "Ilham", text: "I found a report that contradicts the article we read." },
@@ -6563,6 +7279,8 @@ export const lessonCatalog = [
         { phrase: "Then we can revise our conclusion.", meaning: "Lalu kita bisa revisi kesimpulannya.", usage: "A collaborative closing." },
       ],
       grammar: "Use I wasn't aware of that / That changes things / I'd like to understand... to respond thoughtfully.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **New information phrases**.\n\nExamples:\n\n- I wasn't aware of that.\n- That changes things.\n- I'd like to understand ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **aware** - uh-WAIR.\n- **methodology** - meth-uh-DOL-uh-jee.\n- **contradicts** - kon-truh-DIKTS.",
       prompts: [
         "Acknowledge new info.",
         "Say it changes your view.",
@@ -6573,6 +7291,8 @@ export const lessonCatalog = [
         { question: "Choose the correct sentence.", answer: "That changes things." },
         { question: "Which sentence asks for deeper understanding?", answer: "I'd like to understand the methodology." },
       ],
+      readingSupport: "# Reading Support\n\nWhen you get new information, respond openly. Acknowledge it, adjust your view, and ask a follow-up question to understand the details.\n\n## Check\n\nRead it again and underline the information words (source, claim, evidence, reliable, viewpoint).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. I wasn't aware of that.\n2. That changes things.\n3. I'd like to understand ...\n4. We should check ...\n5. Can you share ...?\n6. Then we can revise ...",
       sections: lessonSections
     },
     {
@@ -6580,6 +7300,7 @@ export const lessonCatalog = [
       title: "Information Discussion Mission",
       unit: "Media & Information",
       conversationGoal: "Complete a discussion: summarize an article, evaluate source reliability, explain a viewpoint, and respond to new information with next steps.",
+      conversationGoalDetails: "Complete a discussion: summarize an article, evaluate source reliability, explain a viewpoint, and respond to new information with next steps.\n\nLearners should be able to say:\n\n- The article is about ...\n- I'm not sure it's reliable ...\n- From my perspective, ...",
       setup: "Misi: kamu diskusi informasi. Kamu ringkas artikel, nilai sumber, jelasin viewpoint, lalu respon info baru dan tentuin langkah lanjut.",
       dialogue: [
         { speaker: "Faris", text: "Can you summarize the article you read?" },
@@ -6611,6 +7332,8 @@ export const lessonCatalog = [
         { phrase: "Can you share the link so we can revise our conclusion?", meaning: "Bisa share link-nya supaya kita bisa revisi kesimpulan?", usage: "A clear next step request." },
       ],
       grammar: "Combine: The article is about... / I'm not sure it's reliable / From my perspective... / That changes things / I'd like to understand...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Information discussion flow**.\n\nExamples:\n\n- The article is about ... The main point is ...\n- I'm not sure it's reliable because ... I'd check ...\n- From my perspective, ... The reason is ...\n- That changes things. I'd like to understand ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-bul.\n- **methodology** - meth-uh-DOL-uh-jee.\n- **conclusion** - kun-KLOO-zhun.",
       prompts: [
         "Summarize the article in two sentences.",
         "Evaluate reliability and suggest verification.",
@@ -6621,6 +7344,8 @@ export const lessonCatalog = [
         { question: "Which sentence expresses doubt about a source?", answer: "I'm not sure it's reliable." },
         { question: "Which phrase reacts to new information?", answer: "That changes things." },
       ],
+      readingSupport: "# Reading Support\n\nIn information discussions, focus on structure and evidence. Summarize clearly, evaluate source reliability, explain viewpoints respectfully, and update your view when new information appears.\n\n## Check\n\nRead it again and underline the information words (source, claim, evidence, reliable, viewpoint).",
+      writingSupport: "# Writing Support\n\nWrite your mission (10 lines):\n1. The article is about ...\n2. The main point is ...\n3. I'm not sure it's reliable because ...\n4. I'd check ...\n5. From my perspective, ...\n6. The reason is ...\n7. I wasn't aware of that.\n8. That changes things.\n9. I'd like to understand ...\n10. Can you share the link so we can revise ...?",
       sections: lessonSections
     },
     {
@@ -6628,6 +7353,7 @@ export const lessonCatalog = [
       title: "Understanding Client Needs",
       unit: "Customer & Client Communication",
       conversationGoal: "Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.",
+      conversationGoalDetails: "Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- Could you share more about ...?\n- So what you need is ...",
       setup: "Kamu ngobrol sama klien. Kamu gali kebutuhan, tanya detail, lalu rangkum supaya nggak salah paham.",
       dialogue: [
         { speaker: "Ilham", text: "We want to improve our onboarding experience." },
@@ -6657,6 +7383,8 @@ export const lessonCatalog = [
         { phrase: "Got it. Understood.", meaning: "Oke. Paham.", usage: "Professional listening signals." },
       ],
       grammar: "Use Just to clarify... / Could you share more about... / So what you need is... to understand clients clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying questions**.\n\nExamples:\n\n- Just to clarify, ...\n- Could you share more about ...?\n\nUse **Summary confirmation**.\n\nExamples:\n\n- So what you need is ..., right?\n- So the key requirement is ..., correct?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **requirements** - ri-KWYER-munts.\n- **clarify** - KLAIR-uh-fy.\n- **pain point** - PAYN point.",
       prompts: [
         "Ask a clarification question.",
         "Ask for more detail.",
@@ -6667,6 +7395,8 @@ export const lessonCatalog = [
         { question: "Which sentence asks for more detail politely?", answer: "Could you share more about the biggest pain point?" },
         { question: "What does \"requirements\" mean?", answer: "kebutuhan/requirement" },
       ],
+      readingSupport: "# Reading Support\n\nClient discovery focuses on clarity. Ask who the users are, what the pain point is, then summarize the requirement in one sentence and confirm it.\n\n## Check\n\nRead it again and underline the client words (needs, requirements, options, concern, timeline, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 6 lines:\n1. Just to clarify, ...\n2. Who is the main user group?\n3. Could you share more about ...?\n4. So what you need is ...\n5. Right?\n6. I'll summarize the requirements and share a proposal.",
       sections: lessonSections
     },
     {
@@ -6674,6 +7404,7 @@ export const lessonCatalog = [
       title: "Explaining Options",
       unit: "Customer & Client Communication",
       conversationGoal: "Explain two options clearly, compare trade-offs, and recommend one option.",
+      conversationGoalDetails: "Explain two options clearly, compare trade-offs, and recommend one option.\n\nLearners should be able to say:\n\n- We have two options.\n- The trade-off is ...\n- I'd recommend ...",
       setup: "Kamu jelasin dua opsi solusi ke klien. Kamu bandingin trade-off-nya dan kasih rekomendasi.",
       dialogue: [
         { speaker: "Ilham", text: "What are our options?" },
@@ -6703,6 +7434,8 @@ export const lessonCatalog = [
         { phrase: "I'd recommend option B if the timeline allows.", meaning: "Aku rekomendasi opsi B kalau timeline memungkinkan.", usage: "A professional recommendation." },
       ],
       grammar: "Use We have two options... / Option A would... / The trade-off is... / I'd recommend... to explain options clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Option structure**.\n\nExamples:\n\n- We have two options: A or B.\n- Option A is ..., but ...\n\nUse **Recommendation**.\n\nExamples:\n\n- I'd recommend option B if the timeline allows.\n- I'd recommend starting with a pilot.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **trade-off** - TRAYD-off.\n- **robust** - roh-BUST.\n- **stability** - stuh-BIL-i-tee.",
       prompts: [
         "Introduce two options.",
         "Explain the trade-off.",
@@ -6713,6 +7446,8 @@ export const lessonCatalog = [
         { question: "What does \"trade-off\" mean?", answer: "kompromi antara dua hal" },
         { question: "Which phrase gives a recommendation politely?", answer: "I'd recommend ..." },
       ],
+      readingSupport: "# Reading Support\n\nWhen explaining options to a client, keep it structured: option A, option B, trade-off, and a recommendation based on priorities.\n\n## Check\n\nRead it again and underline the client words (needs, requirements, options, concern, timeline, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. We have two options.\n2. Option A is ...\n3. Option B is ..., but ...\n4. The trade-off is ...\n5. If your priority is speed, ...\n6. I'd recommend ...\n7. Would that work for you?",
       sections: lessonSections
     },
     {
@@ -6720,6 +7455,7 @@ export const lessonCatalog = [
       title: "Handling Concerns",
       unit: "Customer & Client Communication",
       conversationGoal: "Acknowledge a client concern, ask a clarifying question, and propose a mitigation plan.",
+      conversationGoalDetails: "Acknowledge a client concern, ask a clarifying question, and propose a mitigation plan.\n\nLearners should be able to say:\n\n- I understand the concern.\n- Could you clarify ...?\n- To reduce the risk, we can ...",
       setup: "Klien punya kekhawatiran. Kamu respon dengan empati, tanya detail, lalu kasih mitigasi.",
       dialogue: [
         { speaker: "Ilham", text: "I'm concerned this change will disrupt our team." },
@@ -6749,6 +7485,8 @@ export const lessonCatalog = [
         { phrase: "I'll share a draft plan today.", meaning: "Aku share draft plan hari ini.", usage: "Clear next step." },
       ],
       grammar: "Use I understand the concern / Could you clarify... / To reduce the risk, we can... to respond professionally.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Concern handling**.\n\nExamples:\n\n- I understand the concern.\n- Could you clarify ...?\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- We can run a short trial and gather feedback.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **disrupt** - dis-RUPT.\n- **mitigate** - MIT-i-gayt.\n- **weekly** - WEEK-lee.",
       prompts: [
         "Acknowledge the concern.",
         "Ask a clarifying question.",
@@ -6759,6 +7497,8 @@ export const lessonCatalog = [
         { question: "Which phrase asks for clarification politely?", answer: "Could you clarify ...?" },
         { question: "Which phrase introduces mitigation?", answer: "To reduce the risk, we can ..." },
       ],
+      readingSupport: "# Reading Support\n\nHandling client concerns requires empathy and structure: acknowledge the concern, clarify the risk, then offer mitigation steps like a trial and clear updates.\n\n## Check\n\nRead it again and underline the client words (needs, requirements, options, concern, timeline, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. I understand the concern.\n2. Could you clarify ...?\n3. That makes sense.\n4. To reduce the risk, we can ...\n5. We can run a short trial.\n6. We'll gather feedback.\n7. I'll share a draft plan today.",
       sections: lessonSections
     },
     {
@@ -6766,6 +7506,7 @@ export const lessonCatalog = [
       title: "Confirming Next Steps",
       unit: "Customer & Client Communication",
       conversationGoal: "Confirm next steps, assign owners, and set a timeline clearly.",
+      conversationGoalDetails: "Confirm next steps, assign owners, and set a timeline clearly.\n\nLearners should be able to say:\n\n- To confirm, ...\n- Next steps are ...\n- Does that timeline work for you?",
       setup: "Kamu menutup call dengan klien. Kamu rangkum keputusan, sebut next steps, dan set timeline.",
       dialogue: [
         { speaker: "Ilham", text: "This sounds good. What happens next?" },
@@ -6797,6 +7538,8 @@ export const lessonCatalog = [
         { phrase: "Does that timeline work for you?", meaning: "Timeline itu works buat kamu?", usage: "Confirm agreement." },
       ],
       grammar: "Use To confirm... / Next steps are... / I'll ... by ... / Does that work? to align on follow-up.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Confirm + next steps**.\n\nExamples:\n\n- To confirm, ...\n- Next steps are: I'll ..., and you'll ...\n\nUse **Deadlines**.\n\nExamples:\n\n- I'll send it today.\n- You'll review it by Friday.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **timeline** - TIME-line.\n- **finalize** - FYE-nuh-lize.\n- **pilot** - PY-lut.",
       prompts: [
         "Confirm the plan.",
         "State next steps with owners.",
@@ -6807,6 +7550,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses by for a deadline correctly?", answer: "You'll review it by Friday." },
         { question: "Which question checks agreement on timing?", answer: "Does that timeline work for you?" },
       ],
+      readingSupport: "# Reading Support\n\nEnding a client call professionally means confirming decisions, assigning next steps with owners and deadlines, and checking that the timeline works.\n\n## Check\n\nRead it again and underline the client words (needs, requirements, options, concern, timeline, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. To confirm, ...\n2. Next steps are: I'll ...\n3. You'll ... by ...\n4. We'll meet on ...\n5. Does that timeline work for you?\n6. Great, thanks.\n7. I'll follow up by ...",
       sections: lessonSections
     },
     {
@@ -6814,6 +7559,7 @@ export const lessonCatalog = [
       title: "Client Conversation Mission",
       unit: "Customer & Client Communication",
       conversationGoal: "Complete a client conversation: understand needs, explain options, handle concerns, and confirm next steps.",
+      conversationGoalDetails: "Complete a client conversation: understand needs, explain options, handle concerns, and confirm next steps.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- We have two options ...\n- Next steps are ...",
       setup: "Misi: kamu handle call klien dari discovery sampai follow-up yang jelas.",
       dialogue: [
         { speaker: "Ilham", text: "We want to improve onboarding. What can you do?" },
@@ -6845,6 +7591,8 @@ export const lessonCatalog = [
         { phrase: "Does that timeline work for you?", meaning: "Timeline itu works buat kamu?", usage: "Confirm agreement." },
       ],
       grammar: "Combine: Just to clarify... / We have two options... / I understand the concern... / To reduce the risk... / Next steps are...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Client conversation flow**.\n\nExamples:\n\n- Just to clarify, ...\n- We have two options ...\n- I understand the concern. To reduce the risk, ...\n- Next steps are ... Does that timeline work for you?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **client** - KLY-ent.\n- **disrupt** - dis-RUPT.\n- **deadline** - DED-line.",
       prompts: [
         "Ask discovery questions.",
         "Explain options and trade-off.",
@@ -6855,6 +7603,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces mitigation?", answer: "To reduce the risk, we can ..." },
         { question: "Which phrase introduces follow-up actions?", answer: "Next steps are ..." },
       ],
+      readingSupport: "# Reading Support\n\nStrong client communication is structured and empathetic: understand needs, present options with trade-offs, handle concerns with mitigation, and confirm next steps with deadlines.\n\n## Check\n\nRead it again and underline the client words (needs, requirements, options, concern, timeline, next steps).",
+      writingSupport: "# Writing Support\n\nWrite your mission (10 lines):\n1. Just to clarify, ...\n2. Could you share more about ...?\n3. So what you need is ... right?\n4. We have two options: A or B.\n5. The trade-off is ...\n6. I understand the concern.\n7. To reduce the risk, we can ...\n8. To confirm, ...\n9. Next steps are: I'll ..., you'll ... by ...\n10. Does that timeline work for you?",
       sections: lessonSections
     },
     {
@@ -6862,6 +7612,7 @@ export const lessonCatalog = [
       title: "Framing the Problem",
       unit: "Complex Problem Solving",
       conversationGoal: "Frame a complex problem clearly by defining scope, success criteria, and constraints.",
+      conversationGoalDetails: "Frame a complex problem clearly by defining scope, success criteria, and constraints.\n\nLearners should be able to say:\n\n- Let's define the problem statement first.\n- Can we agree on the scope?\n- What does success look like?",
       setup: "Kamu lagi meeting internal. Kamu bantu tim ngerumuskan problem statement yang jelas sebelum loncat ke solusi.",
       dialogue: [
         { speaker: "Faris", text: "Our customer complaints have increased this month." },
@@ -6893,6 +7644,8 @@ export const lessonCatalog = [
         { phrase: "Got it. Understood.", meaning: "Oke. Paham.", usage: "Professional listening signals." },
       ],
       grammar: "Use Let's define... / What does success look like? / Can we agree on the scope? to frame a problem clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Framing language**.\n\nExamples:\n\n- Let's define the problem statement first.\n- Can we agree on the scope?\n\nUse **Success criteria**.\n\nExamples:\n\n- What does success look like in the next four weeks?\n- How will we measure success?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **scope** - SKOHP.\n- **constraints** - kuhn-STRAYNTS.\n- **criteria** - kry-TEER-ee-uh.",
       prompts: [
         "Ask to define the problem first.",
         "Ask to agree on scope.",
@@ -6903,6 +7656,8 @@ export const lessonCatalog = [
         { question: "What does \"scope\" mean in a project discussion?", answer: "batas/topik yang dibahas" },
         { question: "Which question asks for success criteria?", answer: "What does success look like?" },
       ],
+      readingSupport: "# Reading Support\n\nWhen framing a complex problem, be explicit about scope (where the problem happens), success criteria (how you measure improvement), and constraints (what you cannot change).\n\n## Check\n\nRead it again and underline the problem-solving words (scope, constraint, root cause, trade-off, recommendation, risk).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. Let's define the problem statement first.\n2. Can we agree on the scope?\n3. Which area is affected?\n4. What does success look like?\n5. How will we measure it?\n6. Any constraints we should keep in mind?\n7. Great, let's summarize the problem in one sentence.",
       sections: lessonSections
     },
     {
@@ -6910,6 +7665,7 @@ export const lessonCatalog = [
       title: "Explaining Causes",
       unit: "Complex Problem Solving",
       conversationGoal: "Explain possible causes using evidence language and clarify what data supports each cause.",
+      conversationGoalDetails: "Explain possible causes using evidence language and clarify what data supports each cause.\n\nLearners should be able to say:\n\n- One possible cause is ...\n- Based on the data, ...\n- It might be due to ...",
       setup: "Kamu bahas akar masalah. Kamu jelasin kemungkinan penyebab dengan bahasa yang hati-hati dan berbasis data.",
       dialogue: [
         { speaker: "Faris", text: "Why do you think billing complaints are up?" },
@@ -6939,6 +7695,8 @@ export const lessonCatalog = [
         { phrase: "Let's run a small A/B test.", meaning: "Kita jalankan A/B test kecil.", usage: "A practical validation step." },
       ],
       grammar: "Use One possible cause is... / Based on the data... / It might be due to... to discuss root causes calmly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Hypotheses**.\n\nExamples:\n\n- One possible cause is ...\n- It might be due to ...\n\nUse **Evidence**.\n\nExamples:\n\n- Based on the data, ...\n- We saw an increase right after ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **hypothesis** - hy-POTH-uh-sis.\n- **redesign** - REE-dee-zine.\n- **data** - DAY-tuh.",
       prompts: [
         "State a possible cause.",
         "Use evidence language.",
@@ -6949,6 +7707,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses data correctly?", answer: "Based on the data, ..." },
         { question: "What does \"due to\" mean?", answer: "karena/disebabkan oleh" },
       ],
+      readingSupport: "# Reading Support\n\nWhen explaining causes, separate hypotheses from evidence. Use careful language (might, possible), cite what data shows, and propose how to confirm with an experiment.\n\n## Check\n\nRead it again and underline the problem-solving words (scope, constraint, root cause, trade-off, recommendation, risk).",
+      writingSupport: "# Writing Support\n\nWrite 7 lines:\n1. One possible cause is ...\n2. Based on the data, ...\n3. It might be due to ...\n4. Another hypothesis is ...\n5. How can we confirm?\n6. Let's run a small test.\n7. Then we can decide the next step.",
       sections: lessonSections
     },
     {
@@ -6956,6 +7716,7 @@ export const lessonCatalog = [
       title: "Discussing Tradeoffs",
       unit: "Complex Problem Solving",
       conversationGoal: "Discuss trade-offs between options, highlighting impact on cost, time, and risk.",
+      conversationGoalDetails: "Discuss trade-offs between options, highlighting impact on cost, time, and risk.\n\nLearners should be able to say:\n\n- The trade-off is ...\n- If we optimize for ..., we might ...\n- On the other hand, ...",
       setup: "Kamu bandingin beberapa opsi. Kamu jelasin trade-off-nya dengan jelas: cepat vs kualitas, biaya vs risiko, dll.",
       dialogue: [
         { speaker: "Faris", text: "We have two solutions. Which one should we pick?" },
@@ -6985,6 +7746,8 @@ export const lessonCatalog = [
         { phrase: "What do you suggest?", meaning: "Kamu saranin apa?", usage: "Invite recommendation." },
       ],
       grammar: "Use The trade-off is... / If we optimize for..., we might... / On the other hand... to compare options clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Trade-offs**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- The trade-off is speed versus reliability.\n\nUse **Contrast + impact**.\n\nExamples:\n\n- If we optimize for X, we might Y.\n- On the other hand, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliability** - ri-LYE-uh-BIL-ih-tee.\n- **optimize** - OP-tuh-mize.\n- **effort** - EF-urt.",
       prompts: [
         "State a trade-off.",
         "Explain impact with might.",
@@ -6995,6 +7758,8 @@ export const lessonCatalog = [
         { question: "Which phrase shows contrast between options?", answer: "On the other hand, ..." },
         { question: "What does \"optimize for speed\" mean?", answer: "memprioritaskan kecepatan" },
       ],
+      readingSupport: "# Reading Support\n\nTrade-offs are about priorities. Compare options using a consistent structure: trade-off, downside of option A, benefit of option B, and how constraints affect the decision.\n\n## Check\n\nRead it again and underline the problem-solving words (scope, constraint, root cause, trade-off, recommendation, risk).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. The trade-off is ... versus ...\n2. Option A is faster, but ...\n3. If we optimize for speed, we might ...\n4. Option B is slower, but ...\n5. On the other hand, ...\n6. The risk is ...\n7. Our biggest constraint is ...\n8. So I suggest we ...",
       sections: lessonSections
     },
     {
@@ -7002,6 +7767,7 @@ export const lessonCatalog = [
       title: "Recommending a Solution",
       unit: "Complex Problem Solving",
       conversationGoal: "Recommend a solution clearly by summarizing reasoning, risks, and next steps.",
+      conversationGoalDetails: "Recommend a solution clearly by summarizing reasoning, risks, and next steps.\n\nLearners should be able to say:\n\n- Given these constraints, I'd recommend ...\n- The main risk is ...\n- We can mitigate it by ...",
       setup: "Kamu harus kasih rekomendasi. Kamu rangkum reasoning-nya, sebut risiko utama, dan next steps yang realistis.",
       dialogue: [
         { speaker: "Faris", text: "So what should we do next?" },
@@ -7031,6 +7797,8 @@ export const lessonCatalog = [
         { phrase: "Does that approach work for you?", meaning: "Pendekatan itu works buat kamu?", usage: "Check alignment after recommending." },
       ],
       grammar: "Use Given these constraints... / I'd recommend... / The main risk is... / We can mitigate it by... to recommend a solution.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Recommendation**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- My recommendation is to start with ...\n\nUse **Risk + mitigation**.\n\nExamples:\n\n- The main risk is ... if ...\n- We can mitigate it by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **recommend** - rek-uh-MEND.\n- **mitigate** - MIT-i-gayt.\n- **metrics** - MET-riks.",
       prompts: [
         "Recommend a solution linked to constraints.",
         "Name a main risk.",
@@ -7041,6 +7809,8 @@ export const lessonCatalog = [
         { question: "Which sentence uses mitigation language correctly?", answer: "We can mitigate it by setting clear metrics." },
         { question: "What does \"risk\" mean?", answer: "potensi masalah/kemungkinan buruk" },
       ],
+      readingSupport: "# Reading Support\n\nA strong recommendation connects constraints to a clear action, then names the main risk and a mitigation plan. Keep it short: recommendation, why, risk, mitigation, next step.\n\n## Check\n\nRead it again and underline the problem-solving words (scope, constraint, root cause, trade-off, recommendation, risk).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. Given these constraints, I'd recommend ...\n2. Because ...\n3. The main risk is ...\n4. If ...\n5. We can mitigate it by ...\n6. Next steps are ...\n7. I'll share a draft plan by ...\n8. Does that approach work for you?",
       sections: lessonSections
     },
     {
@@ -7048,6 +7818,7 @@ export const lessonCatalog = [
       title: "Problem Solving Discussion Mission",
       unit: "Complex Problem Solving",
       conversationGoal: "Lead a problem-solving discussion: frame the problem, explain causes, discuss trade-offs, and recommend next steps.",
+      conversationGoalDetails: "Lead a problem-solving discussion: frame the problem, explain causes, discuss trade-offs, and recommend next steps.\n\nLearners should be able to say:\n\n- Let's define the problem statement first.\n- One possible cause is ...\n- Given these constraints, I'd recommend ...",
       setup: "Misi: kamu pimpin diskusi problem solving dari framing sampai rekomendasi, lalu set next steps yang jelas.",
       dialogue: [
         { speaker: "Faris", text: "We need to fix billing complaints. What should we do?" },
@@ -7077,6 +7848,8 @@ export const lessonCatalog = [
         { phrase: "We can mitigate it by setting clear metrics and a strict timeline.", meaning: "Kita mitigasi dengan metrik yang jelas dan timeline yang ketat.", usage: "Mitigation + next step." },
       ],
       grammar: "Combine framing + causes + trade-offs + recommendation into one structured discussion.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Problem-solving flow**.\n\nExamples:\n\n- Let's define the problem statement first.\n- One possible cause is ... Based on the data, ...\n- The trade-off is X versus Y.\n- Given these constraints, I'd recommend ...\n- We can mitigate it by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **root cause** - ROOT kawz.\n- **trade-off** - TRAYD-off.\n- **recommendation** - rek-uh-men-DAY-shun.",
       prompts: [
         "Start by framing the problem.",
         "Explain a cause using evidence language.",
@@ -7087,6 +7860,8 @@ export const lessonCatalog = [
         { question: "Which phrase suggests a cause carefully?", answer: "One possible cause is ..." },
         { question: "Which phrase introduces mitigation?", answer: "We can mitigate it by ..." },
       ],
+      readingSupport: "# Reading Support\n\nIn a mission-style discussion, keep a clear structure: frame the problem, propose causes with evidence language, compare options with trade-offs, then recommend a time-boxed next step with mitigation.\n\n## Check\n\nRead it again and underline the problem-solving words (scope, constraint, root cause, trade-off, recommendation, risk).",
+      writingSupport: "# Writing Support\n\nWrite your mission (10 lines):\n1. Let's define the problem statement first.\n2. Can we agree on the scope?\n3. What does success look like?\n4. Based on the data, ...\n5. One possible cause is ...\n6. The trade-off is ... versus ...\n7. Given these constraints, I'd recommend ...\n8. The main risk is ...\n9. We can mitigate it by ...\n10. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -7094,6 +7869,7 @@ export const lessonCatalog = [
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Summarize your position clearly, support it with reasons, and close with clear next steps.",
+      conversationGoalDetails: "Summarize your position clearly, support it with reasons, and close with clear next steps.\n\nLearners should be able to say:\n\n- My position is that ...\n- The main reason is ...\n- Next steps are ...",
       setup: "Review: kamu rangkum posisi kamu di meeting, kasih alasan, lalu tutup dengan next steps yang jelas.",
       dialogue: [
         { speaker: "Faris", text: "Can you summarize your position for the meeting?" },
@@ -7123,6 +7899,8 @@ export const lessonCatalog = [
         { phrase: "Some teams prefer new features, but the risk is higher if billing stays broken.", meaning: "Ada tim yang pengen fitur baru, tapi risikonya lebih tinggi kalau billing tetap bermasalah.", usage: "A calm counterpoint response." },
       ],
       grammar: "Use My position is... / The main reason is... / To summarize... / Next steps are... to sound clear in meetings.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Position + reason**.\n\nExamples:\n\n- My position is that we should ...\n- The main reason is ...\n\nUse **Closing**.\n\nExamples:\n\n- To summarize, ...\n- Next steps are: I'll ..., and you'll ... by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **prioritize** - pry-OR-uh-tize.\n- **revenue** - REV-uh-noo.\n- **workload** - WERK-lohd.",
       prompts: [
         "State your position clearly.",
         "Give one main reason.",
@@ -7133,6 +7911,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces next steps clearly?", answer: "Next steps are ..." },
         { question: "What does \"to summarize\" mean?", answer: "untuk merangkum" },
       ],
+      readingSupport: "# Reading Support\n\nA good meeting summary has three parts: your position, one strong reason, and a close with next steps (owner + deadline).\n\n## Check\n\nRead it again and underline the review connectors (to summarize, in short, on the other hand, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. My position is that ...\n2. The main reason is ...\n3. One example is ...\n4. A counterpoint is ...\n5. But the risk is ...\n6. To summarize, ...\n7. Next steps are: I'll ..., you'll ... by ...\n8. Does that work for everyone?",
       sections: lessonSections
     },
     {
@@ -7140,6 +7920,7 @@ export const lessonCatalog = [
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Propose a compromise, explain trade-offs, and present a recommendation with clear signposting.",
+      conversationGoalDetails: "Propose a compromise, explain trade-offs, and present a recommendation with clear signposting.\n\nLearners should be able to say:\n\n- Here's my proposal: ...\n- The trade-off is ...\n- I'd recommend ...",
       setup: "Review: kamu negosiasi timeline dan scope, jelasin trade-off, dan present rekomendasi singkat dengan signposting.",
       dialogue: [
         { speaker: "Ilham", text: "We need this delivered next week." },
@@ -7169,6 +7950,8 @@ export const lessonCatalog = [
         { phrase: "To summarize: top two features next week, the rest in two weeks.", meaning: "Singkatnya: dua fitur teratas minggu depan, sisanya dua minggu lagi.", usage: "Signposted close." },
       ],
       grammar: "Use Here's my proposal... / The trade-off is... / On the other hand... / I'd recommend... to review negotiation language.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation proposals**.\n\nExamples:\n\n- Here's my proposal: ...\n- Can we meet in the middle?\n\nUse **Trade-offs + summary**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- To summarize: ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **proposal** - pruh-POH-zuhl.\n- **compromise** - KOM-pruh-mize.\n- **completeness** - kuhm-PLEET-nis.",
       prompts: [
         "Make a proposal.",
         "Explain a trade-off.",
@@ -7179,6 +7962,8 @@ export const lessonCatalog = [
         { question: "Which phrase invites compromise?", answer: "Can we meet in the middle?" },
         { question: "Which phrase gives a recommendation politely?", answer: "I'd recommend ..." },
       ],
+      readingSupport: "# Reading Support\n\nIn negotiation, keep it structured: proposal, trade-off, compromise, recommendation, and a short summary with dates.\n\n## Check\n\nRead it again and underline the review connectors (to summarize, in short, on the other hand, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. Here's my proposal: ...\n2. The trade-off is ...\n3. Can we meet in the middle?\n4. On the other hand, ...\n5. I'd recommend ...\n6. To summarize: ...\n7. Next week we deliver ...\n8. Two weeks later we deliver ...",
       sections: lessonSections
     },
     {
@@ -7186,6 +7971,7 @@ export const lessonCatalog = [
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Discuss information sources carefully and handle a client call with clarity, empathy, and next steps.",
+      conversationGoalDetails: "Discuss information sources carefully and handle a client call with clarity, empathy, and next steps.\n\nLearners should be able to say:\n\n- We should verify it with ...\n- I understand the concern.\n- Next steps are ...",
       setup: "Review: kamu bahas sumber informasi (reliability) dan jalankan mini client call: clarify, handle concerns, confirm next steps.",
       dialogue: [
         { speaker: "Ilham", text: "We saw a report saying complaints are up. Is it reliable?" },
@@ -7215,6 +8001,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: I'll share an update today, and we'll confirm a revised timeline by Friday.", meaning: "Next steps-nya: aku share update hari ini, dan kita konfirmasi timeline revisi sebelum Jumat.", usage: "Close with next steps." },
       ],
       grammar: "Use Based on the source... / We should verify... / I understand the concern... / Next steps are... to review information and client communication.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Source reliability**.\n\nExamples:\n\n- Based on the source, ...\n- We should verify it with ...\n\nUse **Client clarity**.\n\nExamples:\n\n- I understand the concern.\n- Just to clarify, ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **reliable** - ri-LYE-uh-buhl.\n- **verify** - VER-uh-fy.\n- **snapshot** - SNAP-shot.",
       prompts: [
         "Comment on reliability carefully.",
         "Acknowledge concern and clarify timeline.",
@@ -7225,6 +8013,8 @@ export const lessonCatalog = [
         { question: "Which phrase clarifies a timeline politely?", answer: "Just to clarify, what timeline did we promise?" },
         { question: "What does \"reliable\" mean?", answer: "bisa dipercaya" },
       ],
+      readingSupport: "# Reading Support\n\nWhen discussing information, separate what you know from what you suspect. For client communication, acknowledge concerns, clarify commitments, and confirm next steps with deadlines.\n\n## Check\n\nRead it again and underline the review connectors (to summarize, in short, on the other hand, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. Based on the source, ...\n2. We should verify it with ...\n3. I understand the concern.\n4. Just to clarify, ...\n5. What timeline did we promise?\n6. Next steps are: ...\n7. I'll share an update today.\n8. We'll confirm a revised timeline by Friday.\n9. We'll keep you posted weekly.",
       sections: lessonSections
     },
     {
@@ -7232,6 +8022,7 @@ export const lessonCatalog = [
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.",
+      conversationGoalDetails: "Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.\n\nLearners should be able to say:\n\n- My position is that ...\n- Based on the data, ...\n- Next steps are ...",
       setup: "Latihan final: kamu jawab prompt satu per satu dengan struktur B2 yang rapi dan natural.",
       dialogue: [
         { speaker: "Faris", text: "Final practice: what's your position?" },
@@ -7261,6 +8052,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: I'll draft the plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku draft plan hari ini, dan kamu review sebelum Jumat.", usage: "Next steps with owners and deadlines." },
       ],
       grammar: "Use signposting: My position is... / Based on the data... / The trade-off is... / I'd recommend... / Next steps are...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Signposting (test answers)**.\n\nExamples:\n\n- My position is that ...\n- Based on the data, ...\n- The trade-off is X versus Y.\n- I'd recommend ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **pilot** - PY-lut.\n- **rollout** - ROHL-out.\n- **signposting** - SYNE-post-ing.",
       prompts: [
         "State a position.",
         "State evidence.",
@@ -7271,6 +8064,8 @@ export const lessonCatalog = [
         { question: "What does \"rollout\" mean?", answer: "peluncuran/penerapan" },
         { question: "What does \"pilot\" mean in projects?", answer: "uji coba kecil" },
       ],
+      readingSupport: "# Reading Support\n\nFor test-style prompts, keep answers short and signposted. One sentence per prompt is enough: position, evidence, trade-off, recommendation, next steps.\n\n## Check\n\nRead it again and underline the review connectors (to summarize, in short, on the other hand, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines (one per prompt):\n1. My position is that ...\n2. The main reason is ...\n3. Based on the data, ...\n4. One possible cause is ...\n5. The trade-off is ...\n6. On the other hand, ...\n7. I'd recommend ...\n8. The main risk is ...\n9. We can mitigate it by ...\n10. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -7278,6 +8073,7 @@ export const lessonCatalog = [
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.",
+      conversationGoalDetails: "Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.\n\nLearners should be able to say:\n\n- Let's define the scope.\n- The trade-off is ...\n- Next steps are ...",
       setup: "Final: kamu pimpin diskusi profesional yang utuh dan natural (problem framing, trade-off, rekomendasi, next steps).",
       dialogue: [
         { speaker: "Ilham", text: "We need to decide our approach for the next quarter." },
@@ -7307,6 +8103,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: I'll share a plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku share plan hari ini, dan kamu review sebelum Jumat.", usage: "Close with owners and deadlines." },
       ],
       grammar: "Use Let's define the scope... / Based on the data... / The trade-off is... / Given these constraints... / Next steps are...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Discussion framing**.\n\nExamples:\n\n- Let's define the scope.\n- What does success look like?\n\nUse **Decision language**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **quarter** - KWOR-ter.\n- **time-boxed** - TIME-bokst.\n- **finalize** - FYE-nuh-lize.",
       prompts: [
         "Start by framing the discussion.",
         "Recommend an approach based on constraints.",
@@ -7317,6 +8115,8 @@ export const lessonCatalog = [
         { question: "Which phrase frames a discussion at the start?", answer: "Let's define the scope." },
         { question: "Which phrase links a recommendation to constraints?", answer: "Given these constraints, I'd recommend ..." },
       ],
+      readingSupport: "# Reading Support\n\nA strong final discussion is structured: frame the scope and success criteria, present evidence, acknowledge concerns, explain trade-offs, recommend a plan, then confirm next steps with deadlines.\n\n## Check\n\nRead it again and underline the review connectors (to summarize, in short, on the other hand, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite your final discussion (10 lines):\n1. Let's define the scope ...\n2. What does success look like?\n3. Based on the data, ...\n4. I understand the concern ...\n5. The trade-off is ...\n6. Given these constraints, I'd recommend ...\n7. The main risk is ...\n8. We can mitigate it by ...\n9. Next steps are: I'll ..., you'll ... by ...\n10. Great, let's finalize on ...",
       sections: lessonSections
     },
     {
@@ -7324,6 +8124,7 @@ export const lessonCatalog = [
       title: "Qualifying Your Opinion",
       unit: "Nuanced Opinions",
       conversationGoal: "Qualify your opinion with nuance by signaling scope, conditions, and limits.",
+      conversationGoalDetails: "Qualify your opinion with nuance by signaling scope, conditions, and limits.\n\nLearners should be able to say:\n\n- To some extent, ...\n- That said, ...\n- In principle ..., but ...",
       setup: "Kamu lagi diskusi kerja. Kamu setuju sebagian, tapi kamu kasih batasan dan kondisi biar opini kamu lebih presisi.",
       dialogue: [
         { speaker: "Ilham", text: "Do you think we should adopt the new policy immediately?" },
@@ -7353,6 +8154,8 @@ export const lessonCatalog = [
         { phrase: "I'd phase it in over two quarters.", meaning: "Aku akan implement bertahap selama dua kuartal.", usage: "Suggest a measured approach." },
       ],
       grammar: "Use To some extent... / Broadly speaking... / In principle..., but... / That said... to qualify opinions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Partial agreement**.\n\nExamples:\n\n- To some extent, ...\n- Broadly speaking, ...\n\nUse **Limitations**.\n\nExamples:\n\n- That said, ...\n- In principle ..., but ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **extent** - ik-STENT.\n- **broadly** - BROAD-lee.\n- **legacy** - LEG-uh-see.",
       prompts: [
         "Agree partially and set scope.",
         "Add a limitation with that said.",
@@ -7363,6 +8166,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces a limitation politely?", answer: "That said, ..." },
         { question: "What does \"in principle\" mean?", answer: "secara prinsip (ide dasarnya)" },
       ],
+      readingSupport: "# Reading Support\n\nNuance comes from signaling scope and limits. Use partial agreement, then add a constraint (that said) and a measured alternative rather than a blunt yes/no.\n\n## Check\n\nRead it again and underline the nuance markers (to some extent, broadly speaking, that said, on balance, in principle).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. To some extent, ...\n2. Broadly speaking, ...\n3. That said, ...\n4. In principle ..., but ...\n5. The main concern is ...\n6. I'd phase it in over ...\n7. We'll review ... along the way.\n8. On balance, I think ...",
       sections: lessonSections
     },
     {
@@ -7370,6 +8175,7 @@ export const lessonCatalog = [
       title: "Expressing Certainty and Doubt",
       unit: "Nuanced Opinions",
       conversationGoal: "Express degrees of certainty and doubt using precise language and evidence framing.",
+      conversationGoalDetails: "Express degrees of certainty and doubt using precise language and evidence framing.\n\nLearners should be able to say:\n\n- I'm fairly confident ...\n- I'm not entirely convinced ...\n- It's unlikely that ..., but ...",
       setup: "Kamu diskusi strategi. Kamu harus bilang mana yang kamu yakin, mana yang kamu ragu, tanpa terdengar ragu-ragu atau terlalu absolut.",
       dialogue: [
         { speaker: "Ilham", text: "Will this change reduce complaints?" },
@@ -7399,6 +8205,8 @@ export const lessonCatalog = [
         { phrase: "Let's start with a limited rollout.", meaning: "Kita mulai rollout terbatas.", usage: "A safe next step when uncertain." },
       ],
       grammar: "Use I'm fairly confident... / I'm not entirely convinced... / There's a strong chance... / It's unlikely that... to calibrate certainty.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Degrees of certainty**.\n\nExamples:\n\n- I'm fairly confident ...\n- I'm not entirely convinced ...\n\nUse **Probability + mitigation**.\n\nExamples:\n\n- There's a strong chance ...\n- It's unlikely that ..., but ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confident** - KON-fi-dent.\n- **entirely** - en-TY-er-lee.\n- **unlikely** - un-LYKE-lee.",
       prompts: [
         "Express high confidence with evidence.",
         "Express polite doubt.",
@@ -7409,6 +8217,8 @@ export const lessonCatalog = [
         { question: "Which phrase expresses polite doubt?", answer: "I'm not entirely convinced." },
         { question: "Which sentence uses unlikely correctly?", answer: "It's unlikely that we'll break core flows." },
       ],
+      readingSupport: "# Reading Support\n\nAt C1 level, sounding confident means calibrating certainty. Use fairly confident for strong belief, not entirely convinced for polite doubt, and unlikely for low probability—then add a mitigation plan.\n\n## Check\n\nRead it again and underline the nuance markers (to some extent, broadly speaking, that said, on balance, in principle).",
+      writingSupport: "# Writing Support\n\nWrite 8 lines:\n1. I'm fairly confident ...\n2. Given the data, ...\n3. I'm not entirely convinced ...\n4. There's a strong chance ...\n5. It's unlikely that ...\n6. But we should monitor ...\n7. Let's start with a limited rollout ...\n8. And define clear success metrics.",
       sections: lessonSections
     },
     {
@@ -7416,6 +8226,7 @@ export const lessonCatalog = [
       title: "Balancing Two Viewpoints",
       unit: "Nuanced Opinions",
       conversationGoal: "Balance two viewpoints fairly and reach a nuanced conclusion.",
+      conversationGoalDetails: "Balance two viewpoints fairly and reach a nuanced conclusion.\n\nLearners should be able to say:\n\n- On the one hand, ...\n- While it's true that ..., ...\n- On balance, ...",
       setup: "Kamu diminta menilai dua sisi. Kamu harus adil, jelasin pro-kontra, lalu kasih kesimpulan yang seimbang.",
       dialogue: [
         { speaker: "Ilham", text: "Should we invest in growth or stability this quarter?" },
@@ -7445,6 +8256,8 @@ export const lessonCatalog = [
         { phrase: "I'd ring-fence a small budget for experiments.", meaning: "Aku sisihkan budget kecil untuk eksperimen.", usage: "Practical compromise language." },
       ],
       grammar: "Use On the one hand... / On the other hand... / While it's true that... / On balance... to weigh perspectives.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Balancing viewpoints**.\n\nExamples:\n\n- On the one hand, ...\n- On the other hand, ...\n\nUse **Nuanced conclusion**.\n\nExamples:\n\n- While it's true that ..., ...\n- On balance, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **initiative** - ih-NISH-uh-tiv.\n- **concerning** - kun-SER-ning.\n- **ring-fence** - RING-fens.",
       prompts: [
         "Present both viewpoints.",
         "Acknowledge then pivot.",
@@ -7455,6 +8268,8 @@ export const lessonCatalog = [
         { question: "Which pair correctly balances viewpoints?", answer: "On the one hand... On the other hand..." },
         { question: "Which phrase acknowledges a point then pivots?", answer: "While it's true that ..., ..." },
       ],
+      readingSupport: "# Reading Support\n\nA balanced viewpoint sounds fair and strategic. Present both sides, acknowledge the strongest point from each, then conclude with a compromise plan when possible.\n\n## Check\n\nRead it again and underline the nuance markers (to some extent, broadly speaking, that said, on balance, in principle).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. On the one hand, ...\n2. This could ...\n3. On the other hand, ...\n4. This reduces ...\n5. While it's true that ..., ...\n6. That said, ...\n7. On balance, I would ...\n8. I'd ring-fence ...\n9. Does that sound reasonable?",
       sections: lessonSections
     },
     {
@@ -7462,6 +8277,7 @@ export const lessonCatalog = [
       title: "Softening Disagreement",
       unit: "Nuanced Opinions",
       conversationGoal: "Disagree tactfully while staying precise and constructive.",
+      conversationGoalDetails: "Disagree tactfully while staying precise and constructive.\n\nLearners should be able to say:\n\n- I see your point, but ...\n- With respect, ...\n- I might frame it differently: ...",
       setup: "Kamu nggak setuju di meeting, tapi kamu harus tetap sopan, jelas, dan konstruktif.",
       dialogue: [
         { speaker: "Ilham", text: "I think we should launch next week, no matter what." },
@@ -7491,6 +8307,8 @@ export const lessonCatalog = [
         { phrase: "This way we protect reliability without losing momentum.", meaning: "Dengan begitu kita jaga reliability tanpa kehilangan momentum.", usage: "Summarize benefits of the compromise." },
       ],
       grammar: "Use I see your point, but... / I'm not sure I'd go that far... / With respect, ... / I might frame it differently... to disagree softly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I see your point, but ...\n- I'm not sure I'd go that far.\n\nUse **Alternatives**.\n\nExamples:\n\n- I might frame it differently: ...\n- What if we ... instead?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **respect** - ri-SPEKT.\n- **suggests** - suh-JESTS.\n- **momentum** - moh-MEN-tum.",
       prompts: [
         "Disagree tactfully.",
         "Use respectful evidence language.",
@@ -7501,6 +8319,8 @@ export const lessonCatalog = [
         { question: "What does \"I wouldn't go that far\" mean?", answer: "aku tidak setuju sepenuhnya" },
         { question: "Which phrase introduces an alternative framing?", answer: "I might frame it differently: ..." },
       ],
+      readingSupport: "# Reading Support\n\nSoftening disagreement is about tone and structure: acknowledge the point, state your concern with evidence, then propose an alternative that preserves the shared goal.\n\n## Check\n\nRead it again and underline the nuance markers (to some extent, broadly speaking, that said, on balance, in principle).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. I see your point, but ...\n2. I'm not sure I'd go that far ...\n3. With respect, ... suggests ...\n4. The main risk is ...\n5. That said, ...\n6. I might frame it differently: ...\n7. This way, we ...\n8. Without losing ...\n9. Does that work for you?",
       sections: lessonSections
     },
     {
@@ -7508,6 +8328,7 @@ export const lessonCatalog = [
       title: "Nuanced Opinion Mission",
       unit: "Nuanced Opinions",
       conversationGoal: "Hold a nuanced discussion: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully.",
+      conversationGoalDetails: "Hold a nuanced discussion: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully.\n\nLearners should be able to say:\n\n- To some extent, ...\n- I'm fairly confident ...\n- On balance, ...",
       setup: "Misi: kamu ikut diskusi yang menuntut opini yang nuanced. Kamu harus presisi, sopan, dan tetap decisive.",
       dialogue: [
         { speaker: "Ilham", text: "Should we adopt the new policy right away?" },
@@ -7537,6 +8358,8 @@ export const lessonCatalog = [
         { phrase: "I might frame it differently: limited launch first, then review the data.", meaning: "Aku akan framing beda: launch terbatas dulu, lalu review data.", usage: "Alternative proposal." },
       ],
       grammar: "Combine: to some extent / that said / fairly confident / not entirely convinced / on balance / I see your point, but ...",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Nuanced discussion toolkit**.\n\nExamples:\n\n- To some extent, ... That said, ...\n- I'm fairly confident ..., but I'm not entirely convinced ...\n- On the one hand ... On the other hand ... On balance ...\n- I see your point, but ... I might frame it differently: ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **nuanced** - NOO-ahnst.\n- **calibrate** - KAL-uh-brayt.\n- **decisive** - di-SY-siv.",
       prompts: [
         "Qualify your stance with a limitation.",
         "Balance two viewpoints and conclude.",
@@ -7547,6 +8370,8 @@ export const lessonCatalog = [
         { question: "Which phrase softens disagreement?", answer: "I see your point, but ..." },
         { question: "Which phrase introduces a balanced conclusion?", answer: "On balance, ..." },
       ],
+      readingSupport: "# Reading Support\n\nIn a mission-level discussion, you sound C1 when you are precise and flexible: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully while offering alternatives.\n\n## Check\n\nRead it again and underline the nuance markers (to some extent, broadly speaking, that said, on balance, in principle).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. To some extent, ...\n2. Broadly speaking, ...\n3. That said, ...\n4. I'm fairly confident ..., but ...\n5. I'm not entirely convinced ...\n6. On the one hand, ...\n7. On the other hand, ...\n8. On balance, ...\n9. I see your point, but ...\n10. With respect, ... suggests ...\n11. I might frame it differently: ...\n12. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -7554,6 +8379,7 @@ export const lessonCatalog = [
       title: "Aligning Stakeholders",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.",
+      conversationGoalDetails: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.\n\nLearners should be able to say:\n\n- To make sure we're aligned, ...\n- From your perspective, ...\n- Can we agree that ...?",
       setup: "Kamu fasilitasi alignment meeting lintas tim. Kamu klarifikasi prioritas tiap pihak, highlight constraint, lalu sepakati keputusan.",
       dialogue: [
         { speaker: "Ilham", text: "We have conflicting priorities across teams." },
@@ -7583,6 +8409,8 @@ export const lessonCatalog = [
         { phrase: "I'll capture the decision and circulate it today.", meaning: "Aku rangkum keputusannya dan share hari ini.", usage: "Close with clear next step." },
       ],
       grammar: "Use To make sure we're aligned... / From your perspective... / The key constraint is... / Can we agree that... to align stakeholders.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Alignment questions**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- From your perspective, ...\n\nUse **Decision confirmation**.\n\nExamples:\n\n- Can we agree that ...?\n- The key constraint is ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **stakeholders** - STAYK-hohl-derz.\n- **aligned** - uh-LYND.\n- **constraint** - kun-STRAYNT.",
       prompts: [
         "Ask for top priority to align.",
         "Ask for key constraint.",
@@ -7593,6 +8421,8 @@ export const lessonCatalog = [
         { question: "What does \"constraint\" mean?", answer: "batasan/keterbatasan" },
         { question: "Which phrase confirms agreement?", answer: "Can we agree that ...?" },
       ],
+      readingSupport: "# Reading Support\n\nStakeholder alignment means turning opinions into decisions. Ask for priorities, surface constraints, propose a trade-off, and confirm agreement with a clear next step.\n\n## Check\n\nRead it again and underline the strategy words (stakeholder, alignment, expectation, constraint, risk, timeline).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. To make sure we're aligned, ...\n2. What's your top priority?\n3. From your perspective, ...\n4. What's the biggest constraint?\n5. The key constraint is ...\n6. Can we agree that ...?\n7. Next steps are ...\n8. I'll capture the decision ...\n9. And circulate it by ...",
       sections: lessonSections
     },
     {
@@ -7600,6 +8430,7 @@ export const lessonCatalog = [
       title: "Managing Expectations",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Manage expectations by setting clear boundaries, timelines, and what success looks like.",
+      conversationGoalDetails: "Manage expectations by setting clear boundaries, timelines, and what success looks like.\n\nLearners should be able to say:\n\n- What we can commit to is ...\n- The earliest we can deliver is ...\n- Success means ...",
       setup: "Ada permintaan besar. Kamu harus set ekspektasi yang realistis, jelas, dan tetap menjaga hubungan baik.",
       dialogue: [
         { speaker: "Ilham", text: "Can we deliver the full scope by next week?" },
@@ -7629,6 +8460,8 @@ export const lessonCatalog = [
         { phrase: "Success means fewer incidents and a stable rollout.", meaning: "Sukses artinya incident berkurang dan rollout stabil.", usage: "Define success criteria." },
       ],
       grammar: "Use What we can commit to is... / The earliest we can deliver is... / To avoid surprises... / I'd rather under-promise... to manage expectations.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Commitments**.\n\nExamples:\n\n- What we can commit to is ...\n- The earliest we can deliver is ...\n\nUse **Principles + conditions**.\n\nExamples:\n\n- To avoid surprises, ...\n- Assuming no new blockers, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **commit** - kuh-MIT.\n- **reliably** - ri-LYE-uh-blee.\n- **blocker** - BLOK-er.",
       prompts: [
         "Set a realistic commitment.",
         "State earliest timeline with condition.",
@@ -7639,6 +8472,8 @@ export const lessonCatalog = [
         { question: "What does \"under-promise\" mean?", answer: "janji lebih kecil agar pasti deliver" },
         { question: "Which phrase states the earliest timeline?", answer: "The earliest we can deliver is ..." },
       ],
+      readingSupport: "# Reading Support\n\nManaging expectations is about clarity: what you can commit to, what you cannot, the earliest realistic timeline, the assumptions, and what success means in measurable terms.\n\n## Check\n\nRead it again and underline the strategy words (stakeholder, alignment, expectation, constraint, risk, timeline).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. What we can commit to is ...\n2. What we can't commit to is ...\n3. To avoid surprises, ...\n4. The earliest we can deliver is ...\n5. Assuming no new blockers, ...\n6. Success means ...\n7. We'll monitor ...\n8. Next steps are ...\n9. Does that work for you?",
       sections: lessonSections
     },
     {
@@ -7646,6 +8481,7 @@ export const lessonCatalog = [
       title: "Handling Sensitive Feedback",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.",
+      conversationGoalDetails: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.\n\nLearners should be able to say:\n\n- I wanted to flag ...\n- The impact is that ...\n- Would you be open to ...?",
       setup: "Kamu perlu kasih feedback sensitif ke stakeholder. Kamu tetap sopan, fokus ke impact, dan tawarkan next step yang konkret.",
       dialogue: [
         { speaker: "Ilham", text: "How did the last review go?" },
@@ -7677,6 +8513,8 @@ export const lessonCatalog = [
         { phrase: "We can make it clearer with one sentence.", meaning: "Kita bisa bikin lebih jelas dengan satu kalimat.", usage: "Make the fix feel small and doable." },
       ],
       grammar: "Use I wanted to flag... / The impact is... / I appreciate..., and... / Would you be open to... to give sensitive feedback.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Feedback openers**.\n\nExamples:\n\n- I wanted to flag ...\n- I wanted to raise one point ...\n\nUse **Impact + suggestion**.\n\nExamples:\n\n- The impact is ...\n- Would you be open to ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **messaging** - MES-ij-ing.\n- **interpreted** - in-TER-prih-tid.\n- **explicit** - ik-SPLIS-it.",
       prompts: [
         "Open feedback gently.",
         "Describe impact objectively.",
@@ -7687,6 +8525,8 @@ export const lessonCatalog = [
         { question: "Which sentence focuses on impact?", answer: "The impact is that ..." },
         { question: "Which phrase invites change politely?", answer: "Would you be open to ...?" },
       ],
+      readingSupport: "# Reading Support\n\nSensitive feedback lands better when you focus on impact rather than blame. Start gently, name the impact, acknowledge intent, and propose a small, concrete improvement.\n\n## Check\n\nRead it again and underline the strategy words (stakeholder, alignment, expectation, constraint, risk, timeline).",
+      writingSupport: "# Writing Support\n\nWrite 9 lines:\n1. I wanted to flag ...\n2. Overall, ...\n3. The impact is that ...\n4. Some teams ...\n5. I appreciate ...\n6. That said, ...\n7. Would you be open to ...?\n8. This would make ... clearer.\n9. Thanks for considering it.",
       sections: lessonSections
     },
     {
@@ -7694,6 +8534,7 @@ export const lessonCatalog = [
       title: "Communicating Risk",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Communicate risk clearly by describing likelihood, impact, and mitigation options.",
+      conversationGoalDetails: "Communicate risk clearly by describing likelihood, impact, and mitigation options.\n\nLearners should be able to say:\n\n- The main risk is ...\n- There's a reasonable chance ...\n- We can mitigate it by ...",
       setup: "Kamu harus komunikasi risiko ke stakeholder. Kamu jelasin probabilitas, dampak, dan mitigasi dengan bahasa yang jelas.",
       dialogue: [
         { speaker: "Ilham", text: "What risks should we highlight to leadership?" },
@@ -7723,6 +8564,8 @@ export const lessonCatalog = [
         { phrase: "Let's include a rollback plan.", meaning: "Kita masukin rollback plan.", usage: "Operational mitigation." },
       ],
       grammar: "Use The main risk is... / There's a reasonable chance... / The impact would be... / We can mitigate it by... to communicate risk.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Risk framing**.\n\nExamples:\n\n- The main risk is ...\n- There's a reasonable chance ...\n\nUse **Impact + mitigation**.\n\nExamples:\n\n- The impact would be ...\n- We can mitigate it by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **likelihood** - LYKE-lee-hood.\n- **mitigate** - MIT-i-gayt.\n- **rollback** - ROHL-bak.",
       prompts: [
         "Name a main risk.",
         "Describe likelihood with rationale.",
@@ -7733,6 +8576,8 @@ export const lessonCatalog = [
         { question: "What does \"a reasonable chance\" mean?", answer: "kemungkinan yang cukup besar" },
         { question: "Which sentence uses mitigate by correctly?", answer: "We can mitigate it by adding monitoring." },
       ],
+      readingSupport: "# Reading Support\n\nRisk communication is clearer when it's structured: risk, likelihood, impact, and mitigation. Avoid vague language and propose concrete controls like monitoring and rollback plans.\n\n## Check\n\nRead it again and underline the strategy words (stakeholder, alignment, expectation, constraint, risk, timeline).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. The main risk is ...\n2. There's a reasonable chance ...\n3. Given ...\n4. The impact would be ...\n5. If that happens, ...\n6. We can mitigate it by ...\n7. We'll add monitoring ...\n8. We'll time-box ...\n9. We'll prepare a rollback plan ...\n10. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -7740,6 +8585,7 @@ export const lessonCatalog = [
       title: "Strategic Workplace Mission",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.",
+      conversationGoalDetails: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.\n\nLearners should be able to say:\n\n- To make sure we're aligned, ...\n- What we can commit to is ...\n- The main risk is ...",
       setup: "Misi: kamu memimpin diskusi lintas tim. Kamu selaraskan stakeholder, set ekspektasi, kasih feedback sensitif, dan jelasin risk + mitigasi.",
       dialogue: [
         { speaker: "Ilham", text: "We need to align on priorities and deliver next week." },
@@ -7769,6 +8615,8 @@ export const lessonCatalog = [
         { phrase: "I'll capture the decision and circulate it today.", meaning: "Aku rangkum keputusannya dan share hari ini.", usage: "Close with a clear follow-up action." },
       ],
       grammar: "Combine alignment questions, realistic commitments, impact-based feedback, and risk framing into one coherent discussion.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Strategic workplace flow**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- What we can commit to is ... assuming ...\n- The impact is that ... Would you be open to ...?\n- The main risk is ... We can mitigate it by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **alignment** - uh-LYNT-ment.\n- **expectations** - eks-pek-TAY-shunz.\n- **mitigation** - mit-ih-GAY-shun.",
       prompts: [
         "Align priorities and constraints.",
         "Set expectations with assumptions.",
@@ -7779,6 +8627,8 @@ export const lessonCatalog = [
         { question: "Which phrase invites a change politely?", answer: "Would you be open to ...?" },
         { question: "Which phrase introduces mitigation?", answer: "We can mitigate it by ..." },
       ],
+      readingSupport: "# Reading Support\n\nStrategic communication means you manage the conversation: align stakeholders, set realistic commitments, give feedback focused on impact, and communicate risks with mitigation. Close by documenting decisions.\n\n## Check\n\nRead it again and underline the strategy words (stakeholder, alignment, expectation, constraint, risk, timeline).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. To make sure we're aligned, ...\n2. What's your top priority?\n3. What's the biggest constraint?\n4. What we can commit to is ...\n5. The earliest we can deliver is ...\n6. Assuming no new blockers, ...\n7. I wanted to flag ...\n8. The impact is that ...\n9. Would you be open to ...?\n10. The main risk is ...\n11. We can mitigate it by ...\n12. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -7786,6 +8636,7 @@ export const lessonCatalog = [
       title: "Framing a Complex Topic",
       unit: "Advanced Presentations",
       conversationGoal: "Frame a complex topic by setting context, defining terms, and stating the purpose clearly.",
+      conversationGoalDetails: "Frame a complex topic by setting context, defining terms, and stating the purpose clearly.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- By X, I mean ...\n- The purpose of this is to ...",
       setup: "Kamu presentasi topik kompleks. Kamu mulai dengan konteks, definisi istilah, dan tujuan supaya audiens nggak kehilangan arah.",
       dialogue: [
         { speaker: "Faris", text: "Can you present the new architecture proposal?" },
@@ -7815,6 +8666,8 @@ export const lessonCatalog = [
         { phrase: "Let me define what I mean by ...", meaning: "Biar jelas, aku definisikan dulu maksudku dengan ...", usage: "A softer definition starter." },
       ],
       grammar: "Use Today I'd like to... / By X, I mean... / The purpose of this is... to frame complex topics.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Presentation framing**.\n\nExamples:\n\n- Today I'd like to ...\n- The purpose of this is to ...\n\nUse **Definitions**.\n\nExamples:\n\n- By X, I mean ...\n- Let me define what I mean by ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **architecture** - ARK-ih-tek-cher.\n- **modular** - MOD-yuh-ler.\n- **coupling** - KUP-ling.",
       prompts: [
         "Open your presentation clearly.",
         "Define a key term precisely.",
@@ -7825,6 +8678,8 @@ export const lessonCatalog = [
         { question: "Which phrase defines a term precisely?", answer: "By X, I mean ..." },
         { question: "Which phrase states purpose clearly?", answer: "The purpose of this is to ..." },
       ],
+      readingSupport: "# Reading Support\n\nWhen presenting a complex topic, start by framing: state what you will cover, define key terms, and explain why it matters. A clear structure reduces confusion and increases trust.\n\n## Check\n\nRead it again and underline the presentation signposts (today I'd like to..., first..., next..., that brings me to..., in short..., I'd like to end by...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Today I'd like to ...\n2. The purpose of this is to ...\n3. By X, I mean ...\n4. In short, ...\n5. First, ...\n6. Next, ...\n7. That brings me to ...\n8. Finally, ...\n9. I'd like to end by ...\n10. Any questions?",
       sections: lessonSections
     },
     {
@@ -7832,6 +8687,7 @@ export const lessonCatalog = [
       title: "Building a Persuasive Flow",
       unit: "Advanced Presentations",
       conversationGoal: "Build a persuasive flow by stating a claim, supporting it with evidence, and addressing counterarguments.",
+      conversationGoalDetails: "Build a persuasive flow by stating a claim, supporting it with evidence, and addressing counterarguments.\n\nLearners should be able to say:\n\n- The core claim is that ...\n- The evidence suggests ...\n- A common concern is ...",
       setup: "Kamu presentasi dengan tujuan meyakinkan. Kamu harus runtut: claim, evidence, counterpoint, lalu conclusion.",
       dialogue: [
         { speaker: "Faris", text: "What's the main argument for the proposal?" },
@@ -7861,6 +8717,8 @@ export const lessonCatalog = [
         { phrase: "In short, the benefits outweigh the risks.", meaning: "Singkatnya, benefit lebih besar dari risiko.", usage: "Concise conclusion." },
       ],
       grammar: "Use The core claim is... / The evidence suggests... / A common concern is... / That said... to build persuasion.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Claims + evidence**.\n\nExamples:\n\n- The core claim is that ...\n- The evidence suggests ...\n\nUse **Counterarguments**.\n\nExamples:\n\n- A common concern is ...\n- That said, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **persuasive** - per-SWAY-siv.\n- **evidence** - EV-uh-dens.\n- **fragmentation** - frag-men-TAY-shun.",
       prompts: [
         "State your core claim.",
         "Use evidence language with suggests.",
@@ -7871,6 +8729,8 @@ export const lessonCatalog = [
         { question: "Which phrase expresses evidence carefully?", answer: "The evidence suggests ..." },
         { question: "What does \"outweigh\" mean?", answer: "lebih besar/lebih kuat daripada" },
       ],
+      readingSupport: "# Reading Support\n\nA persuasive flow is structured: state your claim, give evidence, acknowledge a concern, explain mitigation, then conclude. This helps you sound confident without sounding biased.\n\n## Check\n\nRead it again and underline the presentation signposts (today I'd like to..., first..., next..., that brings me to..., in short..., I'd like to end by...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. The core claim is that ...\n2. The evidence suggests ...\n3. For example, ...\n4. A common concern is ...\n5. That said, ...\n6. We can mitigate it by ...\n7. In short, ...\n8. The benefits outweigh the risks ...\n9. If we ...\n10. Any questions?",
       sections: lessonSections
     },
     {
@@ -7878,6 +8738,7 @@ export const lessonCatalog = [
       title: "Using Precise Transitions",
       unit: "Advanced Presentations",
       conversationGoal: "Use precise transitions to guide listeners through complex ideas smoothly.",
+      conversationGoalDetails: "Use precise transitions to guide listeners through complex ideas smoothly.\n\nLearners should be able to say:\n\n- That brings me to ...\n- What's crucial here is ...\n- With that in mind, ...",
       setup: "Kamu menjelaskan ide yang panjang. Kamu perlu transisi yang rapi supaya audiens bisa ngikutin alurnya.",
       dialogue: [
         { speaker: "Faris", text: "Your explanation is clear so far. What's next?" },
@@ -7907,6 +8768,8 @@ export const lessonCatalog = [
         { phrase: "Let me connect this to ...", meaning: "Biar aku hubungkan ini ke ...", usage: "Another transition option." },
       ],
       grammar: "Use That brings me to... / What's crucial here is... / To put it differently... / With that in mind... to transition clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Transitions**.\n\nExamples:\n\n- That brings me to ...\n- With that in mind, ...\n\nUse **Clarification**.\n\nExamples:\n\n- What's crucial here is ...\n- To put it differently, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **crucial** - KROO-shuhl.\n- **consistency** - kun-SIS-ten-see.\n- **guardrails** - GARD-raylz.",
       prompts: [
         "Transition to a trade-off.",
         "Highlight a key point as crucial.",
@@ -7917,6 +8780,8 @@ export const lessonCatalog = [
         { question: "Which phrase restates an idea?", answer: "To put it differently, ..." },
         { question: "What does \"crucial\" mean?", answer: "sangat penting" },
       ],
+      readingSupport: "# Reading Support\n\nTransitions are a C1-level tool for clarity. Use them to connect points, highlight what's crucial, and restate ideas in simpler terms before moving to a proposal.\n\n## Check\n\nRead it again and underline the presentation signposts (today I'd like to..., first..., next..., that brings me to..., in short..., I'd like to end by...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. That brings me to ...\n2. What's crucial here is ...\n3. To put it differently, ...\n4. In other words, ...\n5. With that in mind, ...\n6. Let me connect this to ...\n7. That leads to ...\n8. As a result, ...\n9. Finally, ...\n10. Any questions?",
       sections: lessonSections
     },
     {
@@ -7924,6 +8789,7 @@ export const lessonCatalog = [
       title: "Handling Challenging Questions",
       unit: "Advanced Presentations",
       conversationGoal: "Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.",
+      conversationGoalDetails: "Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.\n\nLearners should be able to say:\n\n- That's a fair question.\n- The short answer is: ...\n- What I'd emphasize is ...",
       setup: "Saat Q&A, kamu dapat pertanyaan menantang. Kamu harus tetap tenang, jawab presisi, dan bisa reframe kalau perlu.",
       dialogue: [
         { speaker: "Faris", text: "Isn't this approach too risky?" },
@@ -7953,6 +8819,8 @@ export const lessonCatalog = [
         { phrase: "If adoption stalls, we pause expansion and revisit the design.", meaning: "Kalau adoption mandek, kita stop ekspansi dan evaluasi desainnya.", usage: "A clear fallback plan." },
       ],
       grammar: "Use That's a fair question... / Let me clarify... / The short answer is... / What I'd emphasize is... to handle questions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledgement + clarity**.\n\nExamples:\n\n- That's a fair question.\n- Let me clarify ...\n\nUse **Concise answers**.\n\nExamples:\n\n- The short answer is: ...\n- What I'd emphasize is ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **manageable** - MAN-ih-juh-buhl.\n- **enforcement** - en-FORS-ment.\n- **fallback** - FAWL-bak.",
       prompts: [
         "Acknowledge a challenging question.",
         "Give a short answer with a condition.",
@@ -7963,6 +8831,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces a concise answer?", answer: "The short answer is: ..." },
         { question: "Which phrase clarifies before answering?", answer: "Let me clarify ..." },
       ],
+      readingSupport: "# Reading Support\n\nChallenging questions test your calm and clarity. Acknowledge the question, clarify what is being asked, give a short answer, then add conditions, emphasis, and a fallback plan.\n\n## Check\n\nRead it again and underline the presentation signposts (today I'd like to..., first..., next..., that brings me to..., in short..., I'd like to end by...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. That's a fair question.\n2. Let me clarify ...\n3. The short answer is: ...\n4. If we ..., then ...\n5. What I'd emphasize is ...\n6. The main risk is ...\n7. We can mitigate it by ...\n8. If adoption stalls, ...\n9. We'll revisit ...\n10. Does that address your concern?",
       sections: lessonSections
     },
     {
@@ -7970,6 +8840,7 @@ export const lessonCatalog = [
       title: "Advanced Presentation Mission",
       unit: "Advanced Presentations",
       conversationGoal: "Deliver an advanced presentation and handle challenging questions with clear signposting and strategic answers.",
+      conversationGoalDetails: "Deliver an advanced presentation and handle challenging questions with clear signposting and strategic answers.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- The evidence suggests ...\n- The short answer is: ...",
       setup: "Misi: kamu presentasi topik kompleks dengan alur yang meyakinkan, transisi rapi, dan Q&A yang tenang.",
       dialogue: [
         { speaker: "Faris", text: "Mission: present the proposal and handle questions." },
@@ -8003,6 +8874,8 @@ export const lessonCatalog = [
         { phrase: "In short, the benefits outweigh the risks. Next steps are ...", meaning: "Singkatnya, benefit lebih besar dari risiko. Next steps adalah ...", usage: "Strong close: summary + next steps." },
       ],
       grammar: "Combine framing, persuasive flow, transitions, and Q&A language into one smooth mission.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Advanced presentation toolkit**.\n\nExamples:\n\n- Today I'd like to ...\n- By X, I mean ...\n- The core claim is that ... The evidence suggests ...\n- That brings me to ... What's crucial here is ...\n- That's a fair question. The short answer is: ...\n- In short, ... Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **signposting** - SYNE-post-ing.\n- **guardrails** - GARD-raylz.\n- **outweigh** - out-WAY.",
       prompts: [
         "Frame the presentation and define the term.",
         "Answer a challenging question calmly.",
@@ -8013,6 +8886,8 @@ export const lessonCatalog = [
         { question: "Which phrase is a transition signpost?", answer: "That brings me to ..." },
         { question: "Which phrase introduces next steps?", answer: "Next steps are ..." },
       ],
+      readingSupport: "# Reading Support\n\nAdvanced presentations sound C1 when they are structured and calm: frame the topic, define terms, persuade with claim + evidence, guide with transitions, handle tough questions, then close with a concise summary and next steps.\n\n## Check\n\nRead it again and underline the presentation signposts (today I'd like to..., first..., next..., that brings me to..., in short..., I'd like to end by...).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. Today I'd like to ...\n2. The purpose of this is to ...\n3. By X, I mean ...\n4. The core claim is that ...\n5. The evidence suggests ...\n6. A common concern is ...\n7. That said, ...\n8. That brings me to ...\n9. That's a fair question. The short answer is: ...\n10. What I'd emphasize is ...\n11. In short, ...\n12. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -8020,6 +8895,7 @@ export const lessonCatalog = [
       title: "Identifying Assumptions",
       unit: "Debate & Analysis",
       conversationGoal: "Identify assumptions behind an argument and ask clarifying questions about the premise.",
+      conversationGoalDetails: "Identify assumptions behind an argument and ask clarifying questions about the premise.\n\nLearners should be able to say:\n\n- It seems you're assuming ...\n- What are we assuming about ...?\n- If that's true, then ...",
       setup: "Kamu lagi debat ringan di kerja. Kamu ingin menguji argumen dengan cara mengangkat asumsi yang tersembunyi, tanpa menyerang orangnya.",
       dialogue: [
         { speaker: "Faris", text: "We should cut the onboarding steps to increase conversion." },
@@ -8049,6 +8925,8 @@ export const lessonCatalog = [
         { phrase: "Not necessarily.", meaning: "Belum tentu.", usage: "A concise disagreement marker." },
       ],
       grammar: "Use It seems you're assuming... / What are we assuming about... / If that's true, then... to identify assumptions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Assumption language**.\n\nExamples:\n\n- It seems you're assuming ...\n- What are we assuming about ...?\n\nUse **Implications**.\n\nExamples:\n\n- If that's true, then ...\n- If we accept that premise, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **assumption** - uh-SUMP-shun.\n- **premise** - PREM-iss.\n- **redundant** - ri-DUN-dent.",
       prompts: [
         "Surface an assumption politely.",
         "Ask about the underlying premise.",
@@ -8059,6 +8937,8 @@ export const lessonCatalog = [
         { question: "What does \"premise\" mean?", answer: "dasar argumen/asumsi awal" },
         { question: "Which phrase draws an implication?", answer: "If that's true, then ..." },
       ],
+      readingSupport: "# Reading Support\n\nIn debate and analysis, identifying assumptions is powerful. Surface the hidden premise, ask clarifying questions, then make the argument testable by stating what the data should show.\n\n## Check\n\nRead it again and underline the debate tools (assumption, premise, evidence, counterexample, inference, bias).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. It seems you're assuming ...\n2. What are we assuming about ...?\n3. Not necessarily.\n4. If that's true, then ...\n5. The data should show ...\n6. One alternative explanation is ...\n7. How would we test that?\n8. Let's separate ... from ...\n9. And measure ...\n10. Then we can decide.",
       sections: lessonSections
     },
     {
@@ -8066,6 +8946,7 @@ export const lessonCatalog = [
       title: "Challenging an Argument",
       unit: "Debate & Analysis",
       conversationGoal: "Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.",
+      conversationGoalDetails: "Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.\n\nLearners should be able to say:\n\n- I'm not sure that follows.\n- What's the evidence for ...?\n- Could there be another explanation?",
       setup: "Kamu menantang argumen orang lain secara konstruktif. Kamu fokus ke logika dan evidence, bukan menyerang personal.",
       dialogue: [
         { speaker: "Faris", text: "Fewer steps always increases conversion." },
@@ -8095,6 +8976,8 @@ export const lessonCatalog = [
         { phrase: "Let's test messaging changes alongside step reduction.", meaning: "Kita test perubahan messaging bareng pengurangan step.", usage: "Turn challenge into actionable test." },
       ],
       grammar: "Use I'm not sure that follows... / What's the evidence for... / Could there be another explanation? / For example... to challenge arguments.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Challenging logic**.\n\nExamples:\n\n- I'm not sure that follows.\n- What's the evidence for ...?\n\nUse **Alternatives + examples**.\n\nExamples:\n\n- Could there be another explanation?\n- For example, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **evidence** - EV-uh-dens.\n- **counterexample** - KOWN-ter-ig-ZAM-puhl.\n- **reassurance** - ree-uh-SHUR-ens.",
       prompts: [
         "Challenge logic politely.",
         "Ask for evidence.",
@@ -8105,6 +8988,8 @@ export const lessonCatalog = [
         { question: "Which phrase asks for evidence?", answer: "What's the evidence for that claim?" },
         { question: "Which phrase suggests alternative explanations?", answer: "Could there be another explanation?" },
       ],
+      readingSupport: "# Reading Support\n\nChallenging an argument is about logic and evidence. Question whether the conclusion follows, ask for evidence, propose alternative explanations, and end with a testable next step.\n\n## Check\n\nRead it again and underline the debate tools (assumption, premise, evidence, counterexample, inference, bias).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. I'm not sure that follows.\n2. What's the evidence for ...?\n3. Could there be another explanation?\n4. For example, ...\n5. That suggests ...\n6. Another possibility is ...\n7. How would we test that?\n8. Let's test ...\n9. And compare ...\n10. Then decide based on results.",
       sections: lessonSections
     },
     {
@@ -8112,6 +8997,7 @@ export const lessonCatalog = [
       title: "Presenting Evidence",
       unit: "Debate & Analysis",
       conversationGoal: "Present evidence clearly, distinguish facts from interpretations, and reference sources confidently.",
+      conversationGoalDetails: "Present evidence clearly, distinguish facts from interpretations, and reference sources confidently.\n\nLearners should be able to say:\n\n- According to ...\n- To be precise, ...\n- This suggests ...",
       setup: "Kamu mendukung argumen dengan evidence. Kamu bisa membedakan fakta, interpretasi, dan menyebut sumbernya.",
       dialogue: [
         { speaker: "Faris", text: "Do we have any data to support this?" },
@@ -8141,6 +9027,8 @@ export const lessonCatalog = [
         { phrase: "The data indicates ...", meaning: "Data menunjukkan ...", usage: "Neutral evidence phrasing." },
       ],
       grammar: "Use According to... / The data indicates... / This suggests... / To be precise... to present evidence.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Sources**.\n\nExamples:\n\n- According to ...\n- Based on ...\n\nUse **Precision**.\n\nExamples:\n\n- To be precise, ...\n- The data indicates ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **correlation** - kor-uh-LAY-shun.\n- **causation** - kaw-ZAY-shun.\n- **triangulate** - try-ANG-gyuh-layt.",
       prompts: [
         "Cite a source with according to.",
         "Clarify correlation vs causation.",
@@ -8151,6 +9039,8 @@ export const lessonCatalog = [
         { question: "Which sentence distinguishes correlation from causation?", answer: "The data indicates correlation, not necessarily causation." },
         { question: "What does \"to be precise\" mean?", answer: "agar lebih tepat/presisi" },
       ],
+      readingSupport: "# Reading Support\n\nPresenting evidence in debate means citing sources and being precise about what the data shows. Avoid overclaiming causation, and strengthen your case with multiple sources.\n\n## Check\n\nRead it again and underline the debate tools (assumption, premise, evidence, counterexample, inference, bias).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. According to ...\n2. The data indicates ...\n3. To be precise, ...\n4. This suggests ...\n5. Another source shows ...\n6. For example, ...\n7. That supports ...\n8. However, ...\n9. So the next step is ...\n10. Any questions?",
       sections: lessonSections
     },
     {
@@ -8158,6 +9048,7 @@ export const lessonCatalog = [
       title: "Responding Under Pressure",
       unit: "Debate & Analysis",
       conversationGoal: "Respond under pressure by staying calm, addressing the core point, and tightening your argument.",
+      conversationGoalDetails: "Respond under pressure by staying calm, addressing the core point, and tightening your argument.\n\nLearners should be able to say:\n\n- Let me be clear: ...\n- The key point is ...\n- If you look at ...",
       setup: "Debat mulai panas. Kamu perlu tetap calm, jawab poin inti, dan perjelas argumen kamu tanpa defensif.",
       dialogue: [
         { speaker: "Faris", text: "This is just speculation. Do you have anything solid?" },
@@ -8187,6 +9078,8 @@ export const lessonCatalog = [
         { phrase: "We run a pilot this week and review results before scaling.", meaning: "Kita pilot minggu ini dan review hasil sebelum scaling.", usage: "Offer a controlled next step." },
       ],
       grammar: "Use Let me be clear... / I understand the concern, however... / The key point is... / If you look at... to respond under pressure.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Clarity under pressure**.\n\nExamples:\n\n- Let me be clear: ...\n- The key point is ...\n\nUse **Acknowledge + pivot**.\n\nExamples:\n\n- I understand the concern. However, ...\n- If you look at ..., ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **speculation** - spek-yuh-LAY-shun.\n- **indicators** - IN-di-kay-terz.\n- **doubled** - DUB-uhld.",
       prompts: [
         "Clarify calmly under pressure.",
         "Acknowledge concern and pivot.",
@@ -8197,6 +9090,8 @@ export const lessonCatalog = [
         { question: "Which phrase refocuses on the main point?", answer: "The key point is ..." },
         { question: "What does \"doubled\" mean?", answer: "naik dua kali lipat" },
       ],
+      readingSupport: "# Reading Support\n\nUnder pressure, clarity and tone matter. Be explicit about what you know and what you don't, cite a concrete time window for evidence, then propose a controlled next step like a pilot.\n\n## Check\n\nRead it again and underline the debate tools (assumption, premise, evidence, counterexample, inference, bias).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Let me be clear: ...\n2. We have indicators, not proof yet.\n3. I understand the concern.\n4. However, the key point is ...\n5. If you look at ...\n6. Over the last ... weeks, ...\n7. That suggests ...\n8. So I propose ...\n9. We'll run a pilot ...\n10. Then review results before scaling.",
       sections: lessonSections
     },
     {
@@ -8204,6 +9099,7 @@ export const lessonCatalog = [
       title: "Debate Analysis Mission",
       unit: "Debate & Analysis",
       conversationGoal: "Lead a debate-style discussion: identify assumptions, challenge claims, present evidence, and respond under pressure.",
+      conversationGoalDetails: "Lead a debate-style discussion: identify assumptions, challenge claims, present evidence, and respond under pressure.\n\nLearners should be able to say:\n\n- It seems you're assuming ...\n- According to ...\n- Let me be clear: ...",
       setup: "Misi: kamu memimpin diskusi debat yang realistis. Kamu angkat asumsi, uji logika, bawa evidence, dan tetap calm saat ditekan.",
       dialogue: [
         { speaker: "Faris", text: "We should cut onboarding steps. Fewer steps always increase conversion." },
@@ -8233,6 +9129,8 @@ export const lessonCatalog = [
         { phrase: "However, the key point is ...", meaning: "Tapi poin kuncinya adalah ...", usage: "Refocus to the core point." },
       ],
       grammar: "Combine assumption language, evidence framing, and pressure responses into one coherent mission conversation.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Debate analysis toolkit**.\n\nExamples:\n\n- It seems you're assuming ...\n- I'm not sure that follows. What's the evidence for ...?\n- Could there be another explanation?\n- According to ... To be precise, ...\n- Let me be clear: ... However, the key point is ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **analysis** - uh-NAL-uh-sis.\n- **inference** - IN-fer-ens.\n- **bias** - BY-us.",
       prompts: [
         "Challenge assumption and ask for evidence.",
         "Present evidence with precision.",
@@ -8243,6 +9141,8 @@ export const lessonCatalog = [
         { question: "Which phrase shows precision about data?", answer: "The data indicates correlation, not necessarily causation." },
         { question: "Which phrase stays calm under pressure?", answer: "Let me be clear: ..." },
       ],
+      readingSupport: "# Reading Support\n\nDebate analysis at C1 means you can challenge ideas without conflict: surface assumptions, ask for evidence, propose alternatives, present data precisely, and stay calm under pressure with a controlled plan.\n\n## Check\n\nRead it again and underline the debate tools (assumption, premise, evidence, counterexample, inference, bias).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. It seems you're assuming ...\n2. What's the evidence for ...?\n3. I'm not sure that follows.\n4. Could there be another explanation?\n5. According to ...\n6. To be precise, ...\n7. The data indicates ...\n8. Let me be clear: ...\n9. However, the key point is ...\n10. If you look at ...\n11. So I propose ...\n12. We'll run a pilot and review results.",
       sections: lessonSections
     },
     {
@@ -8250,6 +9150,7 @@ export const lessonCatalog = [
       title: "Reading Context",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Read context carefully by noticing tone, hierarchy, and implied expectations before responding.",
+      conversationGoalDetails: "Read context carefully by noticing tone, hierarchy, and implied expectations before responding.\n\nLearners should be able to say:\n\n- My sense is that ...\n- Before we decide, can we clarify ...?\n- It may be worth considering ...",
       setup: "Kamu dapat pesan yang agak indirect dari stakeholder lintas budaya. Kamu perlu baca konteksnya dulu sebelum jawab.",
       dialogue: [
         { speaker: "Ilham", text: "The client said the timeline is 'ambitious'. What do you think that means?" },
@@ -8279,6 +9180,8 @@ export const lessonCatalog = [
         { phrase: "What do you think that means in context?", meaning: "Menurut kamu maksudnya apa dalam konteksnya?", usage: "Invite interpretation explicitly." },
       ],
       grammar: "Use It may be worth considering... / My sense is that... / Before we decide, can we clarify... to read context.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Context reading**.\n\nExamples:\n\n- My sense is that ...\n- It may be worth considering ...\n\nUse **Clarifying**.\n\nExamples:\n\n- Before we decide, can we clarify ...?\n- What is their priority: X or Y?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ambitious** - am-BISH-us.\n- **hierarchy** - HY-uh-rar-kee.\n- **defensive** - di-FEN-siv.",
       prompts: [
         "Interpret indirect feedback cautiously.",
         "Ask to clarify priority before responding.",
@@ -8289,6 +9192,8 @@ export const lessonCatalog = [
         { question: "Which phrase clarifies priorities before responding?", answer: "Before we decide, can we clarify ...?" },
         { question: "What does \"phased plan\" mean?", answer: "rencana bertahap" },
       ],
+      readingSupport: "# Reading Support\n\nCross-cultural context often shows up as indirect language. Read tone, implied meaning, and priorities before replying. Clarify what matters most, then respond with flexible options and a respectful tone.\n\n## Check\n\nRead it again and underline the tact phrases (would you mind, if it's okay, I don't mean to..., just to make sure...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. My sense is that ...\n2. They may be signaling ...\n3. Before we decide, can we clarify ...?\n4. What is the priority: ... or ...?\n5. It may be worth considering ...\n6. A phased plan could ...\n7. We should stay respectful ...\n8. And avoid sounding ...\n9. Next steps are ...\n10. Does that sound reasonable?",
       sections: lessonSections
     },
     {
@@ -8296,6 +9201,7 @@ export const lessonCatalog = [
       title: "Asking Tactful Questions",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.",
+      conversationGoalDetails: "Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.\n\nLearners should be able to say:\n\n- Would you mind if I ask ...?\n- If it's okay, could you clarify ...?\n- Just to make sure I understand, ...",
       setup: "Kamu perlu tanya hal sensitif ke klien/stakeholder. Kamu harus menjaga sopan santun dan tetap jelas.",
       dialogue: [
         { speaker: "Ilham", text: "The client seems uncomfortable with direct feedback." },
@@ -8325,6 +9231,8 @@ export const lessonCatalog = [
         { phrase: "How do you prefer to ...?", meaning: "Kamu lebih nyaman ... seperti apa?", usage: "A general preference question pattern." },
       ],
       grammar: "Use Would you mind if I ask... / If it's okay, could you clarify... / Just to make sure I understand... to ask tactfully.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Tactful openers**.\n\nExamples:\n\n- Would you mind if I ask ...?\n- If it's okay, could you clarify ...?\n\nUse **Understanding checks**.\n\nExamples:\n\n- Just to make sure I understand, ...\n- Just to confirm, ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tactful** - TAKT-ful.\n- **privately** - PRY-vit-lee.\n- **accordingly** - uh-KOR-ding-lee.",
       prompts: [
         "Ask a tactful preference question.",
         "Clarify with if it's okay.",
@@ -8335,6 +9243,8 @@ export const lessonCatalog = [
         { question: "Which phrase softens a clarification request?", answer: "If it's okay, could you clarify ...?" },
         { question: "Which phrase checks understanding politely?", answer: "Just to make sure I understand, ..." },
       ],
+      readingSupport: "# Reading Support\n\nTactful questions reduce friction across cultures. Use softeners (would you mind, if it's okay) and understanding checks to clarify preferences, boundaries, and sensitive topics respectfully.\n\n## Check\n\nRead it again and underline the tact phrases (would you mind, if it's okay, I don't mean to..., just to make sure...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Would you mind if I ask ...?\n2. How do you prefer to ...?\n3. If it's okay, could you clarify ...?\n4. Would you prefer ... or ...?\n5. Just to make sure I understand, ...\n6. Should we ... privately first?\n7. Thanks for clarifying.\n8. We'll adjust accordingly.\n9. Next steps are ...\n10. Does that work for you?",
       sections: lessonSections
     },
     {
@@ -8342,6 +9252,7 @@ export const lessonCatalog = [
       title: "Explaining Local Norms",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Explain local work norms tactfully and help others adapt without sounding judgmental.",
+      conversationGoalDetails: "Explain local work norms tactfully and help others adapt without sounding judgmental.\n\nLearners should be able to say:\n\n- In our context, ...\n- It's generally expected that ...\n- It might help to ...",
       setup: "Ada rekan baru dari budaya berbeda. Kamu jelasin kebiasaan kerja lokal dengan cara yang sopan dan membantu.",
       dialogue: [
         { speaker: "Ilham", text: "I'm not sure how direct I should be with the team." },
@@ -8371,6 +9282,8 @@ export const lessonCatalog = [
         { phrase: "People tend to ...", meaning: "Orang cenderung ...", usage: "A neutral phrasing for cultural tendencies." },
       ],
       grammar: "Use In our context... / It's generally expected that... / People tend to... / It might help to... to explain norms.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Norms**.\n\nExamples:\n\n- In our context, ...\n- People tend to ...\n- It's generally expected that ...\n\nUse **Suggestions**.\n\nExamples:\n\n- It might help to ...\n- You might find it useful to ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **context** - KON-tekst.\n- **expected** - ik-SPEK-tid.\n- **appreciation** - uh-pree-shee-AY-shun.",
       prompts: [
         "Explain a norm neutrally.",
         "Explain a general expectation.",
@@ -8381,6 +9294,8 @@ export const lessonCatalog = [
         { question: "Which phrase explains an expectation without sounding strict?", answer: "It's generally expected that ..." },
         { question: "Which phrase offers a suggestion tactfully?", answer: "It might help to ..." },
       ],
+      readingSupport: "# Reading Support\n\nExplaining norms works best when it's neutral and helpful: describe tendencies, explain what's generally expected, and offer practical tips. Avoid judging and focus on what helps relationships.\n\n## Check\n\nRead it again and underline the tact phrases (would you mind, if it's okay, I don't mean to..., just to make sure...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. In our context, ...\n2. People tend to ...\n3. It's generally expected that ...\n4. In group settings, ...\n5. One-on-one, ...\n6. It might help to ...\n7. Start with appreciation ...\n8. Then ask a question ...\n9. That usually lands better ...\n10. Let me know if you'd like examples.",
       sections: lessonSections
     },
     {
@@ -8388,6 +9303,7 @@ export const lessonCatalog = [
       title: "Repairing Misunderstanding",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.",
+      conversationGoalDetails: "Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.\n\nLearners should be able to say:\n\n- I may have misunderstood ...\n- Just to clarify, ...\n- How about we ...?",
       setup: "Terjadi miskomunikasi lintas budaya. Kamu perlu memperbaiki situasi dengan cepat, sopan, dan jelas.",
       dialogue: [
         { speaker: "Ilham", text: "The client seemed upset after your message." },
@@ -8417,6 +9333,8 @@ export const lessonCatalog = [
         { phrase: "I'll draft it and share it in ten minutes.", meaning: "Aku draft dan share dalam 10 menit.", usage: "Immediate action to repair quickly." },
       ],
       grammar: "Use I may have misunderstood... / I didn't mean to... / Just to clarify... / How about we... to repair misunderstandings.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledging misunderstanding**.\n\nExamples:\n\n- I may have misunderstood ...\n- I didn't mean to ...\n\nUse **Repair plan**.\n\nExamples:\n\n- Just to clarify, ...\n- How about we ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **misunderstood** - mis-un-DER-stood.\n- **dismissive** - dis-MIS-iv.\n- **acknowledging** - ak-NOL-ij-ing.",
       prompts: [
         "Acknowledge misunderstanding.",
         "Clarify intent calmly.",
@@ -8427,6 +9345,8 @@ export const lessonCatalog = [
         { question: "Which phrase clarifies intent politely?", answer: "I didn't mean to ..." },
         { question: "Which phrase proposes a constructive next step?", answer: "How about we ...?" },
       ],
+      readingSupport: "# Reading Support\n\nRepairing misunderstandings across cultures works best when you acknowledge the issue, clarify your intent calmly, and propose a concrete next step (short note + call). Move quickly and keep the tone respectful.\n\n## Check\n\nRead it again and underline the tact phrases (would you mind, if it's okay, I don't mean to..., just to make sure...).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. I may have misunderstood ...\n2. I didn't mean to ...\n3. Just to clarify, ...\n4. My intent was to ...\n5. Not to ...\n6. How about we ...?\n7. We'll send a short note ...\n8. And offer a quick call ...\n9. I'll draft it by ...\n10. Thanks for raising this.",
       sections: lessonSections
     },
     {
@@ -8434,6 +9354,7 @@ export const lessonCatalog = [
       title: "Cross-cultural Mission",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.",
+      conversationGoalDetails: "Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.\n\nLearners should be able to say:\n\n- My sense is that ...\n- Would you mind if I ask ...?\n- I may have misunderstood ...",
       setup: "Misi: kamu handle situasi lintas budaya dari interpretasi pesan sampai repair miskomunikasi, dengan tone yang profesional.",
       dialogue: [
         { speaker: "Ilham", text: "The client says the timeline is 'ambitious'." },
@@ -8465,6 +9386,8 @@ export const lessonCatalog = [
         { phrase: "How about we send a short note and offer a quick call?", meaning: "Gimana kalau kita kirim note singkat dan tawarkan call cepat?", usage: "Constructive next step." },
       ],
       grammar: "Combine context reading, tactful questions, norms explanation, and repair language into one end-to-end conversation.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Cross-cultural toolkit**.\n\nExamples:\n\n- My sense is that ... Before we decide, can we clarify ...?\n- Would you mind if I ask ...?\n- In our context, people tend to ... It's generally expected that ...\n- I may have misunderstood ... Just to clarify, ... How about we ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **tact** - TAKT.\n- **misunderstanding** - mis-un-der-STAN-ding.\n- **cultural** - KUL-cher-uhl.",
       prompts: [
         "Read context and clarify priorities.",
         "Ask a tactful question about preferences.",
@@ -8475,6 +9398,8 @@ export const lessonCatalog = [
         { question: "Which phrase is tactful for sensitive preferences?", answer: "Would you mind if I ask ...?" },
         { question: "Which phrase repairs misunderstanding responsibly?", answer: "I may have misunderstood ..." },
       ],
+      readingSupport: "# Reading Support\n\nCross-cultural professionalism means you read context, ask tactful questions, explain norms neutrally, and repair misunderstandings quickly. Focus on respect, clarity, and concrete next steps.\n\n## Check\n\nRead it again and underline the tact phrases (would you mind, if it's okay, I don't mean to..., just to make sure...).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. My sense is that ...\n2. They may be signaling ...\n3. Before we decide, can we clarify ...?\n4. Would you mind if I ask ...?\n5. If it's okay, could you clarify ...?\n6. In our context, people tend to ...\n7. It's generally expected that ...\n8. It might help to ...\n9. I may have misunderstood ...\n10. Just to clarify, my intent was ...\n11. How about we ...?\n12. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -8482,6 +9407,7 @@ export const lessonCatalog = [
       title: "Setting Direction",
       unit: "Leadership & Coaching",
       conversationGoal: "Set direction by clarifying priorities, success criteria, and ownership.",
+      conversationGoalDetails: "Set direction by clarifying priorities, success criteria, and ownership.\n\nLearners should be able to say:\n\n- The direction I'd like to set is ...\n- Success looks like ...\n- I'd like you to own ...",
       setup: "Kamu jadi lead. Kamu perlu set arah kerja: prioritas, definisi sukses, dan siapa yang owning apa.",
       dialogue: [
         { speaker: "Ilham", text: "What should the team focus on this sprint?" },
@@ -8511,6 +9437,8 @@ export const lessonCatalog = [
         { phrase: "Does that direction make sense to you?", meaning: "Arah itu masuk akal buat kamu?", usage: "Check alignment after setting direction." },
       ],
       grammar: "Use The direction I'd like to set is... / Success looks like... / I'd like you to own... / Let's align on... to set direction.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Direction + ownership**.\n\nExamples:\n\n- The direction I'd like to set is ...\n- I'd like you to own ...\n\nUse **Success criteria**.\n\nExamples:\n\n- Success looks like ...\n- Let's align on scope ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ownership** - OH-ner-ship.\n- **criteria** - kry-TEER-ee-uh.\n- **time-boxed** - TIME-bokst.",
       prompts: [
         "Set one clear direction.",
         "Define success criteria.",
@@ -8521,6 +9449,8 @@ export const lessonCatalog = [
         { question: "Which phrase assigns ownership?", answer: "I'd like you to own ..." },
         { question: "What does \"time-boxed\" mean?", answer: "dibatasi waktu" },
       ],
+      readingSupport: "# Reading Support\n\nSetting direction means you reduce ambiguity: state one priority, define success, assign ownership, and set scope boundaries. This helps teams move faster with confidence.\n\n## Check\n\nRead it again and underline the coaching words (direction, ownership, trade-off, options, next step, accountability).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. The direction I'd like to set is ...\n2. The priority is ...\n3. Success looks like ...\n4. I'd like you to own ...\n5. I'll own ...\n6. Let's align on scope ...\n7. We'll keep it time-boxed to ...\n8. The main risk is ...\n9. Next steps are ...\n10. Does that make sense?",
       sections: lessonSections
     },
     {
@@ -8528,6 +9458,7 @@ export const lessonCatalog = [
       title: "Coaching with Questions",
       unit: "Leadership & Coaching",
       conversationGoal: "Coach others using questions that build ownership, clarify thinking, and unblock decisions.",
+      conversationGoalDetails: "Coach others using questions that build ownership, clarify thinking, and unblock decisions.\n\nLearners should be able to say:\n\n- What options do you see?\n- What's the smallest next step?\n- What support do you need?",
       setup: "Kamu coaching teammate. Alih-alih kasih jawaban, kamu pakai pertanyaan yang membantu mereka berpikir dan ambil ownership.",
       dialogue: [
         { speaker: "Ilham", text: "I'm stuck on how to handle the rollout." },
@@ -8561,6 +9492,8 @@ export const lessonCatalog = [
         { phrase: "Walk me through your thinking.", meaning: "Coba jelasin cara pikir kamu.", usage: "Invite reasoning." },
       ],
       grammar: "Use What options do you see? / What would success look like? / What's the smallest next step? / What support do you need? to coach.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Coaching questions**.\n\nExamples:\n\n- What options do you see?\n- What's the smallest next step?\n\nUse **Support + ownership**.\n\nExamples:\n\n- What support do you need?\n- Walk me through your thinking.",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **ownership** - OH-ner-ship.\n- **unblock** - un-BLOK.\n- **checklist** - CHEK-list.",
       prompts: [
         "Ask for options instead of giving answers.",
         "Ask for the smallest next step.",
@@ -8571,6 +9504,8 @@ export const lessonCatalog = [
         { question: "Which question helps unblock someone with a concrete step?", answer: "What's the smallest next step?" },
         { question: "Which question offers support while keeping ownership?", answer: "What support do you need from me?" },
       ],
+      readingSupport: "# Reading Support\n\nCoaching is often about asking better questions. Start with options, define success, identify the smallest next step, and ask what support is needed—so the other person keeps ownership.\n\n## Check\n\nRead it again and underline the coaching words (direction, ownership, trade-off, options, next step, accountability).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. What options do you see?\n2. Walk me through your thinking.\n3. What would success look like?\n4. What's the smallest next step?\n5. What could you do today?\n6. What might you be missing?\n7. What's the trade-off?\n8. What support do you need?\n9. When can you share a draft?\n10. Great—let's check in tomorrow.",
       sections: lessonSections
     },
     {
@@ -8578,6 +9513,7 @@ export const lessonCatalog = [
       title: "Giving Actionable Feedback",
       unit: "Leadership & Coaching",
       conversationGoal: "Give actionable feedback by describing impact, being specific, and proposing a clear improvement.",
+      conversationGoalDetails: "Give actionable feedback by describing impact, being specific, and proposing a clear improvement.\n\nLearners should be able to say:\n\n- One thing I'd suggest is ...\n- The impact is that ...\n- A concrete improvement would be ...",
       setup: "Kamu kasih feedback yang actionable: spesifik, fokus ke impact, dan ada improvement yang jelas.",
       dialogue: [
         { speaker: "Ilham", text: "How was my update message?" },
@@ -8609,6 +9545,8 @@ export const lessonCatalog = [
         { phrase: "Overall it's solid.", meaning: "Secara overall bagus.", usage: "Positive framing before feedback." },
       ],
       grammar: "Use One thing I'd suggest is... / The impact is... / A concrete improvement would be... / Would you be open to... to give feedback.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Feedback framing**.\n\nExamples:\n\n- Overall it's ...\n- One thing I'd suggest is ...\n\nUse **Impact + improvement**.\n\nExamples:\n\n- The impact is that ...\n- A concrete improvement would be ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **actionable** - AK-shuh-nuh-buhl.\n- **stakeholders** - STAYK-hohl-derz.\n- **revise** - ri-VIZE.",
       prompts: [
         "Give one specific suggestion.",
         "Explain impact.",
@@ -8619,6 +9557,8 @@ export const lessonCatalog = [
         { question: "Which phrase proposes an actionable fix?", answer: "A concrete improvement would be ..." },
         { question: "Which phrase invites revision politely?", answer: "Would you be open to ...?" },
       ],
+      readingSupport: "# Reading Support\n\nActionable feedback is specific and useful. Start with an overall positive frame, give one suggestion, describe the impact, propose a concrete improvement, and invite a revision collaboratively.\n\n## Check\n\nRead it again and underline the coaching words (direction, ownership, trade-off, options, next step, accountability).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Overall it's ...\n2. One thing I'd suggest is ...\n3. The impact is that ...\n4. People might ...\n5. A concrete improvement would be ...\n6. For example, ...\n7. Would you be open to ...?\n8. If you revise it, ...\n9. Then we can ...\n10. Thanks for the effort.",
       sections: lessonSections
     },
     {
@@ -8626,6 +9566,7 @@ export const lessonCatalog = [
       title: "Guiding a Decision",
       unit: "Leadership & Coaching",
       conversationGoal: "Guide a decision by structuring options, trade-offs, and a clear recommendation.",
+      conversationGoalDetails: "Guide a decision by structuring options, trade-offs, and a clear recommendation.\n\nLearners should be able to say:\n\n- We have three options: ...\n- The trade-off is ...\n- Given our constraints, I'd recommend ...",
       setup: "Tim buntu. Kamu bantu bikin keputusan dengan struktur: opsi, trade-off, constraint, rekomendasi, lalu alignment.",
       dialogue: [
         { speaker: "Ilham", text: "We can't decide which approach to take." },
@@ -8657,6 +9598,8 @@ export const lessonCatalog = [
         { phrase: "Let's align on the decision criteria.", meaning: "Kita align kriteria keputusan.", usage: "A useful meta move to unblock decisions." },
       ],
       grammar: "Use We have three options... / The trade-off is... / Given our constraints... / I'd recommend... / Can we agree on... to guide decisions.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Decision structure**.\n\nExamples:\n\n- We have three options: ...\n- The trade-off is ...\n\nUse **Recommendation + agreement**.\n\nExamples:\n\n- Given our constraints, I'd recommend ...\n- Can we agree on ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cadence** - KAY-dens.\n- **operational** - op-uh-RAY-shuh-nl.\n- **metrics** - MET-riks.",
       prompts: [
         "List options clearly.",
         "Recommend based on constraints.",
@@ -8667,6 +9610,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces trade-offs?", answer: "The trade-off is ..." },
         { question: "Which phrase confirms agreement on next steps?", answer: "Can we agree on ...?" },
       ],
+      readingSupport: "# Reading Support\n\nGuiding decisions is about structure. List a small set of options, name the main trade-off, recommend one option based on constraints, then confirm agreement on scope and cadence.\n\n## Check\n\nRead it again and underline the coaching words (direction, ownership, trade-off, options, next step, accountability).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. We have three options: ...\n2. Option A ...\n3. Option B ...\n4. Option C ...\n5. The trade-off is ...\n6. Given our constraints, I'd recommend ...\n7. The main risk is ...\n8. We can mitigate it by ...\n9. Can we agree on ...?\n10. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -8674,6 +9619,7 @@ export const lessonCatalog = [
       title: "Leadership Coaching Mission",
       unit: "Leadership & Coaching",
       conversationGoal: "Lead a coaching conversation: set direction, ask coaching questions, give actionable feedback, and guide a decision.",
+      conversationGoalDetails: "Lead a coaching conversation: set direction, ask coaching questions, give actionable feedback, and guide a decision.\n\nLearners should be able to say:\n\n- The direction I'd like to set is ...\n- What options do you see?\n- Given our constraints, I'd recommend ...",
       setup: "Misi: kamu memimpin percakapan coaching yang utuh, dari set direction sampai membuat keputusan dan next steps.",
       dialogue: [
         { speaker: "Ilham", text: "I'm stuck and we need to decide fast." },
@@ -8705,6 +9651,8 @@ export const lessonCatalog = [
         { phrase: "Can we agree on scope today and review metrics weekly?", meaning: "Kita sepakat scope hari ini dan review metrik tiap minggu?", usage: "Confirm agreement + cadence." },
       ],
       grammar: "Combine direction setting, coaching questions, feedback framing, and decision structure into one mission conversation.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Leadership & coaching toolkit**.\n\nExamples:\n\n- The direction I'd like to set is ... Success looks like ...\n- What options do you see? What's the smallest next step?\n- One thing I'd suggest is ... The impact is ... A concrete improvement would be ...\n- We have three options ... The trade-off is ... Given our constraints, I'd recommend ...\n- Can we agree on ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **accountability** - uh-kown-tuh-BIL-ih-tee.\n- **constraints** - kun-STRAYNTS.\n- **recommend** - rek-uh-MEND.",
       prompts: [
         "Set direction and ask for options.",
         "Give feedback with impact and improvement.",
@@ -8715,6 +9663,8 @@ export const lessonCatalog = [
         { question: "Which question builds ownership?", answer: "What options do you see?" },
         { question: "Which phrase confirms agreement?", answer: "Can we agree on ...?" },
       ],
+      readingSupport: "# Reading Support\n\nLeadership coaching combines clarity and empathy. Set a direction, coach with questions that build ownership, give actionable feedback, then guide the decision with options and trade-offs.\n\n## Check\n\nRead it again and underline the coaching words (direction, ownership, trade-off, options, next step, accountability).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. The direction I'd like to set is ...\n2. Success looks like ...\n3. What options do you see?\n4. What would success look like?\n5. What's the smallest next step?\n6. What support do you need?\n7. One thing I'd suggest is ...\n8. The impact is ...\n9. A concrete improvement would be ...\n10. Given our constraints, I'd recommend ...\n11. Can we agree on ...?\n12. Next steps are ...",
       sections: lessonSections
     },
     {
@@ -8722,6 +9672,7 @@ export const lessonCatalog = [
       title: "Catching Implied Meaning",
       unit: "Advanced Listening & Response",
       conversationGoal: "Catch implied meaning by listening for hints, hedges, and what is not said explicitly.",
+      conversationGoalDetails: "Catch implied meaning by listening for hints, hedges, and what is not said explicitly.\n\nLearners should be able to say:\n\n- It sounds like ...\n- Just to check, are you implying ...?\n- What I'm hearing is ...",
       setup: "Kamu ngobrol dengan stakeholder yang ngomongnya halus/indirect. Kamu perlu nangkep maksud tersirat dan cek pemahaman.",
       dialogue: [
         { speaker: "Ilham", text: "The proposal is interesting. It's just... not sure it's the right time." },
@@ -8751,6 +9702,8 @@ export const lessonCatalog = [
         { phrase: "What I'm hearing is ...", meaning: "Yang aku tangkap adalah ...", usage: "A useful listening mirror." },
       ],
       grammar: "Use What I'm hearing is... / Are you implying that...? / It sounds like... / Just to check... to catch implied meaning.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Implied meaning checks**.\n\nExamples:\n\n- It sounds like ...\n- Are you implying that ...?\n- Just to check, ...\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- So you're saying ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **implying** - im-PLY-ing.\n- **phased** - FAYZD.\n- **moving parts** - MOO-ving parts.",
       prompts: [
         "Interpret a concern neutrally.",
         "Check implied meaning politely.",
@@ -8761,6 +9714,8 @@ export const lessonCatalog = [
         { question: "Which phrase checks implied meaning?", answer: "Are you implying that ...?" },
         { question: "Which phrase mirrors what you heard?", answer: "What I'm hearing is ..." },
       ],
+      readingSupport: "# Reading Support\n\nImplied meaning often appears as hedges and vague language. Listen for what is not said directly, then check your understanding politely and summarize the implication into a concrete next step.\n\n## Check\n\nRead it again and underline the listening tools (implied, hinting, to be honest, what I'm getting at, in other words).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. It sounds like ...\n2. My sense is that ...\n3. Just to check, ...\n4. Are you implying that ...?\n5. What I'm hearing is ...\n6. In other words, ...\n7. If that's the case, ...\n8. Then the next step is ...\n9. I'll draft ...\n10. And share it by ...",
       sections: lessonSections
     },
     {
@@ -8768,6 +9723,7 @@ export const lessonCatalog = [
       title: "Responding to Long Turns",
       unit: "Advanced Listening & Response",
       conversationGoal: "Respond to long turns by extracting key points, acknowledging emotions, and replying in a structured way.",
+      conversationGoalDetails: "Respond to long turns by extracting key points, acknowledging emotions, and replying in a structured way.\n\nLearners should be able to say:\n\n- Let me make sure I got this: ...\n- The key points are: ...\n- Here's how I'd respond: ...",
       setup: "Kamu dengar penjelasan panjang. Kamu harus merespons dengan rapi: rangkum poin, konfirmasi, lalu jawab.",
       dialogue: [
         { speaker: "Ilham", text: "So the issue is: multiple teams depend on this, the timeline is tight, and leadership wants visibility. Also, clients are sensitive to changes." },
@@ -8797,6 +9753,8 @@ export const lessonCatalog = [
         { phrase: "Thanks, that's helpful context.", meaning: "Makasih, itu konteks yang membantu.", usage: "Acknowledge a long explanation politely." },
       ],
       grammar: "Use Let me make sure I got this... / The key points are... / If I understand correctly... / Here's how I'd respond... to respond to long turns.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Summarizing long turns**.\n\nExamples:\n\n- Let me make sure I got this: ...\n- The key points are: ...\n\nUse **Structured response**.\n\nExamples:\n\n- If I understand correctly, ...\n- Here's how I'd respond: ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **dependencies** - di-PEN-den-seez.\n- **visibility** - viz-uh-BIL-ih-tee.\n- **check-ins** - CHEK-inz.",
       prompts: [
         "Summarize a long explanation.",
         "Extract key points.",
@@ -8807,6 +9765,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces key points?", answer: "The key points are: ..." },
         { question: "Which phrase signals a structured response?", answer: "Here's how I'd respond: ..." },
       ],
+      readingSupport: "# Reading Support\n\nWhen someone speaks for a long time, strong listeners summarize before responding. Extract the core points, confirm understanding, then reply with a clear structure to avoid misunderstandings.\n\n## Check\n\nRead it again and underline the listening tools (implied, hinting, to be honest, what I'm getting at, in other words).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Thanks, that's helpful context.\n2. Let me make sure I got this: ...\n3. The key points are: ...\n4. If I understand correctly, ...\n5. Here's how I'd respond: ...\n6. First, ...\n7. Next, ...\n8. Finally, ...\n9. Does that capture it?\n10. Any missing details?",
       sections: lessonSections
     },
     {
@@ -8814,6 +9774,7 @@ export const lessonCatalog = [
       title: "Summarizing What You Heard",
       unit: "Advanced Listening & Response",
       conversationGoal: "Summarize accurately by separating facts, concerns, and decisions, then confirm with the speaker.",
+      conversationGoalDetails: "Summarize accurately by separating facts, concerns, and decisions, then confirm with the speaker.\n\nLearners should be able to say:\n\n- So, to summarize: ...\n- The decision is ...\n- The open questions are ...",
       setup: "Kamu habis meeting. Kamu rangkum dengan rapi (fakta, concern, keputusan) dan cek konfirmasi.",
       dialogue: [
         { speaker: "Ilham", text: "Can you summarize the meeting?" },
@@ -8843,6 +9804,8 @@ export const lessonCatalog = [
         { phrase: "Does that capture it accurately?", meaning: "Itu sudah menangkapnya dengan akurat?", usage: "A helpful confirmation question." },
       ],
       grammar: "Use So, to summarize... / Just to confirm... / The decision is... / The open questions are... to summarize.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Structured summary**.\n\nExamples:\n\n- So, to summarize: ...\n- The decision is ...\n- The open questions are ...\n\nUse **Confirmation**.\n\nExamples:\n\n- Just to confirm, ...\n- Does that capture it accurately?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **resourcing** - ree-SOR-sing.\n- **alignment** - uh-LYNT-ment.\n- **capture** - KAP-cher.",
       prompts: [
         "Start a summary clearly.",
         "State the decision explicitly.",
@@ -8853,6 +9816,8 @@ export const lessonCatalog = [
         { question: "Which phrase introduces open questions?", answer: "The open questions are ..." },
         { question: "What does \"to summarize\" mean?", answer: "untuk merangkum" },
       ],
+      readingSupport: "# Reading Support\n\nStrong summaries separate facts, concerns, decisions, and open questions. Label each part explicitly, then confirm with the team to avoid misunderstandings and ensure alignment.\n\n## Check\n\nRead it again and underline the listening tools (implied, hinting, to be honest, what I'm getting at, in other words).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. So, to summarize: ...\n2. The key facts are ...\n3. The main concern is ...\n4. The decision is ...\n5. The open questions are ...\n6. Next steps are ...\n7. I'll send the summary ...\n8. Just to confirm, ...\n9. Does that capture it accurately?\n10. Anything missing?",
       sections: lessonSections
     },
     {
@@ -8860,6 +9825,7 @@ export const lessonCatalog = [
       title: "Asking High-quality Follow-ups",
       unit: "Advanced Listening & Response",
       conversationGoal: "Ask high-quality follow-up questions that clarify scope, assumptions, and next steps.",
+      conversationGoalDetails: "Ask high-quality follow-up questions that clarify scope, assumptions, and next steps.\n\nLearners should be able to say:\n\n- When you say X, do you mean ...?\n- What would change your mind?\n- What's the next step?",
       setup: "Kamu ingin memastikan pemahaman dan menggali detail dengan follow-up yang tajam tapi sopan.",
       dialogue: [
         { speaker: "Ilham", text: "We should be more cautious with the rollout." },
@@ -8891,6 +9857,8 @@ export const lessonCatalog = [
         { phrase: "Do you mean X or Y?", meaning: "Maksudnya X atau Y?", usage: "A useful clarification pattern." },
       ],
       grammar: "Use When you say X, do you mean...? / What's your assumption about...? / What would change your mind? / What's the next step? to follow up.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying meaning**.\n\nExamples:\n\n- When you say X, do you mean ...?\n- Do you mean X or Y?\n\nUse **Assumptions + criteria**.\n\nExamples:\n\n- What's your assumption about ...?\n- What would change your mind about ...?",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **cautious** - KAW-shus.\n- **ambiguous** - am-BIG-yoo-us.\n- **criteria** - kry-TEER-ee-uh.",
       prompts: [
         "Clarify a vague word with two options.",
         "Ask for assumption about risk.",
@@ -8901,6 +9869,8 @@ export const lessonCatalog = [
         { question: "Which question finds decision criteria?", answer: "What would change your mind?" },
         { question: "Which question moves toward action?", answer: "What's the next step?" },
       ],
+      readingSupport: "# Reading Support\n\nHigh-quality follow-ups turn vague language into clarity. Ask what someone means, surface assumptions, find the criteria that would change their mind, and end by agreeing on a concrete next step.\n\n## Check\n\nRead it again and underline the listening tools (implied, hinting, to be honest, what I'm getting at, in other words).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. When you say X, do you mean Y or Z?\n2. Just to clarify, ...\n3. What's your assumption about ...?\n4. What's the main risk?\n5. What would change your mind?\n6. What data would you need?\n7. What does success look like?\n8. What's the next step today?\n9. Who owns it?\n10. When do we check in?",
       sections: lessonSections
     },
     {
@@ -8908,6 +9878,7 @@ export const lessonCatalog = [
       title: "Advanced Listening Mission",
       unit: "Advanced Listening & Response",
       conversationGoal: "Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.",
+      conversationGoalDetails: "Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.\n\nLearners should be able to say:\n\n- It sounds like ...\n- Let me make sure I got this: ...\n- When you say X, do you mean Y or Z?",
       setup: "Misi: kamu harus menangkap maksud tersirat, merespons penjelasan panjang, merangkum akurat, dan tanya follow-up berkualitas.",
       dialogue: [
         { speaker: "Ilham", text: "The client says the plan is 'ambitious', and leadership wants visibility. Also, a few teams are nervous about changes." },
@@ -8937,6 +9908,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: ...", meaning: "Next steps adalah: ...", usage: "Close with concrete actions." },
       ],
       grammar: "Combine implied meaning checks, structured summaries, and follow-up questions into one mission conversation.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Advanced listening toolkit**.\n\nExamples:\n\n- It sounds like ... Just to check, are you implying ...?\n- Let me make sure I got this: ... The key points are ...\n- So, to summarize: ... The decision is ... The open questions are ...\n- When you say X, do you mean Y or Z? What would change your mind ...?\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **implied** - im-PLYD.\n- **summarize** - SUM-uh-rise.\n- **follow-up** - FAH-loh-up.",
       prompts: [
         "Check implied meaning, then summarize.",
         "Ask a high-quality follow-up and propose next steps.",
@@ -8947,6 +9920,8 @@ export const lessonCatalog = [
         { question: "Which follow-up clarifies meaning with two options?", answer: "When you say X, do you mean Y or Z?" },
         { question: "Which phrase closes with action?", answer: "Next steps are: ..." },
       ],
+      readingSupport: "# Reading Support\n\nAdvanced listening is about accuracy and control: check implied meaning, summarize long turns, label decisions and open questions, then ask follow-ups that clarify ambiguity and move to concrete next steps.\n\n## Check\n\nRead it again and underline the listening tools (implied, hinting, to be honest, what I'm getting at, in other words).",
+      writingSupport: "# Writing Support\n\nWrite your mission (12 lines):\n1. It sounds like ...\n2. Just to check, are you implying ...?\n3. Let me make sure I got this: ...\n4. The key points are: ...\n5. So, to summarize: ...\n6. The decision is ...\n7. The open questions are ...\n8. When you say X, do you mean Y or Z?\n9. What would change your mind?\n10. What's the next step today?\n11. Next steps are: ...\n12. Does that capture it accurately?",
       sections: lessonSections
     },
     {
@@ -8954,6 +9929,7 @@ export const lessonCatalog = [
       title: "Review Nuance and Strategy",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Express a nuanced position, manage expectations, and align stakeholders on a careful plan.",
+      conversationGoalDetails: "Express a nuanced position, manage expectations, and align stakeholders on a careful plan.\n\nLearners should be able to say:\n\n- On balance, ...\n- To be precise, ...\n- What I can commit to is ...",
       setup: "Review: kamu perlu menyampaikan opini yang bernuansa, ngatur ekspektasi, dan align stakeholder tanpa overpromise.",
       dialogue: [
         { speaker: "Ilham", text: "So do you support the plan or not?" },
@@ -8983,6 +9959,8 @@ export const lessonCatalog = [
         { phrase: "The key trade-off is speed versus confidence in the metrics.", meaning: "Trade-off utamanya: cepat versus yakin dengan metrik.", usage: "Name trade-offs explicitly and calmly." },
       ],
       grammar: "Use On balance... / To be precise... / What I can commit to is... / The key trade-off is... / Next steps are... to sound strategic.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Nuance + precision**.\n\nExamples:\n\n- On balance, I support it, but ...\n- To be precise, ...\n\nUse **Strategic commitments**.\n\nExamples:\n\n- What I can commit to is ...\n- Next steps are: I'll ..., and we'll ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **on balance** - on BAL-uhns.\n- **precise** - pri-SICE.\n- **commit** - kuh-MIT.",
       prompts: [
         "Give a nuanced position with a condition.",
         "Manage expectations with a clear commitment.",
@@ -8993,6 +9971,8 @@ export const lessonCatalog = [
         { question: "Which phrase manages expectations without overpromising?", answer: "What I can commit to is ..." },
         { question: "Which phrase signals precision?", answer: "To be precise, ..." },
       ],
+      readingSupport: "# Reading Support\n\nC1 conversations often require nuance. State your position, qualify it with conditions, be precise about scope, and manage expectations by committing to what is realistic and verifiable.\n\n## Check\n\nRead it again and underline the review signposting (to be precise, on balance, in other words, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. On balance, I ...\n2. However, ...\n3. To be precise, ...\n4. The key trade-off is ...\n5. What I can commit to is ...\n6. What I can't commit to is ...\n7. Given that, ...\n8. Next steps are: ...\n9. I'll ... today.\n10. We'll align ... tomorrow.",
       sections: lessonSections
     },
     {
@@ -9000,6 +9980,7 @@ export const lessonCatalog = [
       title: "Review Presenting and Debate",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Present a structured argument, challenge assumptions respectfully, and respond under pressure with clarity.",
+      conversationGoalDetails: "Present a structured argument, challenge assumptions respectfully, and respond under pressure with clarity.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- The core assumption is ...\n- In short: ...",
       setup: "Review: kamu present argumen singkat, lalu kamu ditantang. Kamu harus jawab dengan struktur dan tetap sopan.",
       dialogue: [
         { speaker: "Faris", text: "Give me the short version of your argument." },
@@ -9033,6 +10014,8 @@ export const lessonCatalog = [
         { phrase: "In short: protect reliability, validate with metrics, then expand safely.", meaning: "Singkatnya: lindungi reliability, validasi pakai metrik, lalu ekspansi dengan aman.", usage: "A crisp closing summary." },
       ],
       grammar: "Use Let me frame this... / The core assumption is... / If we accept that, then... / On the other hand... / In short... to debate clearly.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Framing + assumptions**.\n\nExamples:\n\n- Let me frame this: ...\n- The core assumption is that ...\n\nUse **Conditional reasoning**.\n\nExamples:\n\n- If we accept X, then we should Y.\n- On the other hand, ...\n- In short: ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **assumption** - uh-SUMP-shun.\n- **time-box** - TIME-boks.\n- **validate** - VAL-ih-date.",
       prompts: [
         "Frame your argument in one sentence.",
         "Respond with conditional reasoning.",
@@ -9043,6 +10026,8 @@ export const lessonCatalog = [
         { question: "Which phrase shows conditional reasoning?", answer: "If we accept X, then we should Y." },
         { question: "What does \"in short\" mean?", answer: "singkatnya" },
       ],
+      readingSupport: "# Reading Support\n\nIn debate-style conversations, clarity beats volume. Frame the goal, surface assumptions, use conditional reasoning, acknowledge counterpoints, and close with a short summary.\n\n## Check\n\nRead it again and underline the review signposting (to be precise, on balance, in other words, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. Let me frame this: ...\n2. The goal is ...\n3. The core assumption is ...\n4. If we accept X, then ...\n5. On the other hand, ...\n6. The key risk is ...\n7. We can mitigate it by ...\n8. Therefore, ...\n9. In short: ...\n10. Does that sound reasonable?",
       sections: lessonSections
     },
     {
@@ -9050,6 +10035,7 @@ export const lessonCatalog = [
       title: "Review Leadership and Listening",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Coach someone with questions, catch implied meaning, and align on a decision with clear next steps.",
+      conversationGoalDetails: "Coach someone with questions, catch implied meaning, and align on a decision with clear next steps.\n\nLearners should be able to say:\n\n- What I'm hearing is ...\n- What would success look like ...?\n- Next steps are ...",
       setup: "Review: kamu memimpin percakapan coaching. Kamu nangkep maksud tersirat, tanya pertanyaan bagus, dan tutup dengan keputusan + next steps.",
       dialogue: [
         { speaker: "Ilham", text: "I feel like the team is hesitant, but they won't say it directly." },
@@ -9079,6 +10065,8 @@ export const lessonCatalog = [
         { phrase: "What would change your mind?", meaning: "Apa yang bisa mengubah pikiran kamu?", usage: "Find decision criteria and reduce conflict." },
       ],
       grammar: "Use What I'm hearing is... / When you say X, do you mean Y or Z? / What would success look like? / What I can commit to is... to lead with listening.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- It sounds like ...\n\nUse **Coaching questions**.\n\nExamples:\n\n- What would success look like ...?\n- When you say X, do you mean Y or Z?\n\nUse **Leadership close**.\n\nExamples:\n\n- Next steps are: you'll ..., and I'll ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **hesitant** - HEZ-ih-tunt.\n- **visibility** - viz-uh-BIL-ih-tee.\n- **stakeholders** - STAKE-hohl-derz.",
       prompts: [
         "Mirror a concern without assuming details.",
         "Clarify an ambiguous concern with two options.",
@@ -9089,6 +10077,8 @@ export const lessonCatalog = [
         { question: "Which question defines outcomes clearly?", answer: "What would success look like in the next two weeks?" },
         { question: "Which phrase clearly assigns ownership?", answer: "Next steps are: you'll ..., and I'll ..." },
       ],
+      readingSupport: "# Reading Support\n\nLeadership conversations are often listening conversations. Mirror what you hear, clarify ambiguous language, define success criteria, and close with owners and next steps to create alignment.\n\n## Check\n\nRead it again and underline the review signposting (to be precise, on balance, in other words, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines:\n1. What I'm hearing is ...\n2. Just to check, ...\n3. When you say X, do you mean Y or Z?\n4. What's your assumption about ...?\n5. What would success look like in the next two weeks?\n6. What would change your mind?\n7. Given that, ...\n8. Next steps are: you'll ..., and I'll ...\n9. Let's check in on ...\n10. Does that work for you?",
       sections: lessonSections
     },
     {
@@ -9096,6 +10086,7 @@ export const lessonCatalog = [
       title: "C1 Final Test Practice",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Answer C1-style prompts with nuance, structure, and precise language under time pressure.",
+      conversationGoalDetails: "Answer C1-style prompts with nuance, structure, and precise language under time pressure.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- On balance, ...\n- The decision is ...",
       setup: "Latihan final: kamu jawab prompt C1 dengan cepat tapi tetap bernuansa (frame, asumsi, trade-off, keputusan, next steps).",
       dialogue: [
         { speaker: "Faris", text: "Final practice. Frame the issue in one line." },
@@ -9125,6 +10116,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: I'll send a one-page summary today, and we'll align tomorrow.", meaning: "Next steps: aku kirim ringkasan satu halaman hari ini, lalu kita align besok.", usage: "Time-boxed next steps." },
       ],
       grammar: "Use Let me frame this... / On balance... / To be precise... / The decision is... / The open questions are... / Next steps are... to stay structured.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Test-style structure**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but ...\n- To be precise, ...\n- The decision is ...\n- The open questions are ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **confidence** - KON-fih-dens.\n- **scaling** - SKAY-ling.\n- **resourcing** - ree-SOR-sing.",
       prompts: [
         "Frame the issue in one line.",
         "Give a nuanced position with a clear condition.",
@@ -9135,6 +10128,8 @@ export const lessonCatalog = [
         { question: "Which phrase labels uncertainty as open questions?", answer: "The open questions are ..." },
         { question: "Which phrase marks a nuanced position?", answer: "On balance, ... but ..." },
       ],
+      readingSupport: "# Reading Support\n\nIn C1 test-style prompts, structure is your advantage. Keep answers short but precise: frame the issue, state a nuanced position, label decisions and open questions, then close with next steps.\n\n## Check\n\nRead it again and underline the review signposting (to be precise, on balance, in other words, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite 10 lines (one per prompt):\n1. Let me frame this: ...\n2. On balance, I ... but ...\n3. To be precise, ...\n4. The core assumption is ...\n5. If we accept X, then ...\n6. The key trade-off is ...\n7. The decision is ...\n8. The open questions are ...\n9. Next steps are: ...\n10. I'll share ... by ...",
       sections: lessonSections
     },
     {
@@ -9142,6 +10137,7 @@ export const lessonCatalog = [
       title: "C1 Final Conversation",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Lead a complex conversation from framing to decision: nuance, debate, leadership listening, and clear next steps.",
+      conversationGoalDetails: "Lead a complex conversation from framing to decision: nuance, debate, leadership listening, and clear next steps.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- On balance, ...\n- The decision is ...",
       setup: "Final: kamu memimpin percakapan kompleks yang realistis. Kamu harus frame, jawab tantangan, nangkep maksud, dan tutup dengan keputusan + next steps.",
       dialogue: [
         { speaker: "Ilham", text: "We need a final decision for next quarter." },
@@ -9171,6 +10167,8 @@ export const lessonCatalog = [
         { phrase: "Next steps are: I'll send a one-page plan today, and we'll align stakeholders tomorrow.", meaning: "Next steps: aku kirim plan satu halaman hari ini, lalu kita align stakeholder besok.", usage: "Close with owners and timing." },
       ],
       grammar: "Use Let me frame this... / On balance... / What I'm hearing is... / The decision is... / The open questions are... / Next steps are... to lead end-to-end.",
+      grammarNotes: "# Grammar for Conversation\n\nUse **Final conversation toolkit**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but only if ...\n- What I'm hearing is ...\n- When you say X, do you mean Y or Z?\n- The decision is ...\n- Next steps are ...",
+      pronunciationDrill: "# Pronunciation Drill\n\nRepeat slowly, then say it in a short answer.\n\n- **accountability** - uh-kown-tuh-BIL-ih-tee.\n- **criteria** - kry-TEER-ee-uh.\n- **stakeholder** - STAKE-hohl-der.",
       prompts: [
         "Frame the conversation goal.",
         "Offer a nuanced compromise with conditions.",
@@ -9181,6 +10179,8 @@ export const lessonCatalog = [
         { question: "Which phrase catches implied meaning carefully?", answer: "What I'm hearing is ..." },
         { question: "Which phrase states the decision explicitly?", answer: "The decision is ..." },
       ],
+      readingSupport: "# Reading Support\n\nA C1 final conversation is end-to-end leadership: frame the goal, handle pushback with nuance, listen for implied meaning, clarify ambiguity, then state the decision and next steps with ownership and timing.\n\n## Check\n\nRead it again and underline the review signposting (to be precise, on balance, in other words, given that, next steps).",
+      writingSupport: "# Writing Support\n\nWrite your final conversation (12 lines):\n1. Let me frame this: ...\n2. On balance, I ... but ...\n3. To be precise, ...\n4. What I'm hearing is ...\n5. When you say X, do you mean Y or Z?\n6. The core assumption is ...\n7. If we accept X, then ...\n8. The key trade-off is ...\n9. The decision is ...\n10. The open questions are ...\n11. Next steps are: I'll ..., and we'll ...\n12. Does that capture it accurately?",
       sections: lessonSections
     }
   // </generated:lessons>

@@ -6,6 +6,7 @@ import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { LessonAudioPlayer } from "@/components/lesson-audio-player";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
+import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { lessonCatalog, lessonsBySlug } from "@/lib/data";
 
@@ -28,6 +29,9 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             <p className="text-sm font-semibold uppercase text-leaf">{lesson.unit}</p>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">{lesson.title}</h1>
             <p className="mt-4 rounded-lg bg-mint p-4 leading-7 text-ink/80">{lesson.conversationGoal}</p>
+            <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
+              <SimpleMarkdown markdown={lesson.conversationGoalDetails} />
+            </div>
 
             <section className="mt-6">
               <h2 className="text-xl font-semibold">Situation Setup</h2>
@@ -69,12 +73,18 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             <section className="mt-8 rounded-lg bg-[#fff2dc] p-5">
               <h2 className="text-xl font-semibold">Grammar for Conversation</h2>
               <p className="mt-2 leading-7 text-ink/75">{lesson.grammar}</p>
+              <div className="mt-4 rounded-lg bg-white/60 p-4">
+                <SimpleMarkdown markdown={lesson.grammarNotes} />
+              </div>
             </section>
 
             <section className="mt-8">
               <div className="flex items-center gap-2">
                 <Mic className="h-5 w-5 text-leaf" aria-hidden="true" />
                 <h2 className="text-xl font-semibold">Speak Clearly</h2>
+              </div>
+              <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
+                <SimpleMarkdown markdown={lesson.pronunciationDrill} />
               </div>
               <SpeakClearlyPractice prompts={lesson.prompts} />
             </section>
@@ -86,6 +96,20 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
               <h2 className="text-xl font-semibold">Conversation Check</h2>
               <ConversationCheck items={lesson.quiz} />
+            </section>
+
+            <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
+              <h2 className="text-xl font-semibold">Reading Support</h2>
+              <div className="mt-4">
+                <SimpleMarkdown markdown={lesson.readingSupport} />
+              </div>
+            </section>
+
+            <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5">
+              <h2 className="text-xl font-semibold">Writing Support</h2>
+              <div className="mt-4">
+                <SimpleMarkdown markdown={lesson.writingSupport} />
+              </div>
             </section>
 
             <div className="mt-8 flex flex-wrap gap-3">
