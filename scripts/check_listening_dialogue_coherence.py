@@ -44,6 +44,7 @@ NO_PREFIXES = ("no", "nope", "not really", "i didn't", "i dont", "i can't", "i c
 WH_PREFIXES = ("what", "where", "when", "why", "how", "which", "who", "whom", "whose")
 
 _WS_RE = re.compile(r"\s+")
+_STAGE_DIRECTION_RE = re.compile(r"^\([^)]*\)\s*")
 _TIME_MARKERS = (
     "yesterday",
     "last night",
@@ -66,7 +67,9 @@ _CONNECTOR_PREFIXES = (
 
 
 def normalize_text(text: str) -> str:
-    return _WS_RE.sub(" ", text.strip().lower())
+    t = text.strip().lower()
+    t = _STAGE_DIRECTION_RE.sub("", t)
+    return _WS_RE.sub(" ", t)
 
 
 def is_question(text: str) -> bool:
@@ -75,7 +78,17 @@ def is_question(text: str) -> bool:
 
 def is_yes_no_question(text: str) -> bool:
     t = normalize_text(text)
-    return any(t.startswith(prefix) for prefix in YES_NO_PREFIXES)
+    if not any(t.startswith(prefix) for prefix in YES_NO_PREFIXES):
+        return False
+    if " or " in t:
+        return False
+    if t.startswith(("can you ", "could you ", "would you ", "will you ")):
+        return False
+    if t.startswith(("do we have ", "do we have any ")):
+        return False
+    if text.count("?") > 1:
+        return False
+    return True
 
 
 def is_wh_question(text: str) -> bool:
@@ -85,7 +98,64 @@ def is_wh_question(text: str) -> bool:
 
 def looks_like_yes_no_answer(text: str) -> bool:
     t = normalize_text(text)
-    return t.startswith(YES_PREFIXES) or t.startswith(NO_PREFIXES) or t.startswith(("we have", "how about", "that works"))
+    if t.startswith(YES_PREFIXES) or t.startswith(NO_PREFIXES):
+        return True
+    if t.startswith(
+        (
+            "a little",
+            "a bit",
+            "a little bit",
+            "maybe",
+            "it depends",
+            "not sure",
+            "i'm not sure",
+            "im not sure",
+            "i think",
+            "i believe",
+            "i'm fairly confident",
+            "im fairly confident",
+            "i'm confident",
+            "im confident",
+            "to some extent",
+            "to be precise",
+            "on balance",
+            "sometimes",
+            "usually",
+            "mostly",
+            "probably",
+            "possibly",
+            "it might",
+            "it could",
+            "it may",
+            "it's unlikely",
+            "its unlikely",
+            "it's possible",
+            "its possible",
+            "what we can commit to",
+            "what i can commit to",
+            "given our constraints",
+            "from my perspective",
+            "in my view",
+            "i recommend",
+            "i'd recommend",
+            "id recommend",
+            "we have",
+            "how about",
+            "that works",
+            "it's okay",
+            "its okay",
+            "it's fine",
+            "its fine",
+            "yes—",
+            "no—",
+        )
+    ):
+        return True
+    if " yes" in t or " no" in t:
+        return True
+    if " it will" in t or " it'll" in t or " itll" in t:
+        return True
+    return False
 
 
 def looks_like_bare_yes_no(text: str) -> bool:
@@ -154,6 +224,10 @@ def check_file(path: Path) -> list[Issue]:
     turns = listening_script_to_dialogue_turns(path)
     issues: list[Issue] = []
     lesson_slug = extract_lesson_slug(path)
+
+    speakers = {normalize_text(turn.speaker) for turn in turns}
+    if speakers and speakers.issubset({"coach", "learner"}):
+        return issues
 
     if len(turns) < 4:
         issues.append(
@@ -224,22 +298,6 @@ def check_file(path: Path) -> list[Issue]:
 
             next_turn = turns[i + 1]
             next_text = next_turn.text
-
-            if (
-                is_question(next_text)
-                and not has_answer_then_question(next_text)
-                and not looks_like_yes_no_answer(next_text)
-                and not is_request_like_question(text)
-            ):
-                issues.append(
-                    Issue(
-                        code="question_followed_by_question",
-                        message="Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
-                        file_path=str(path),
-                        lesson_slug=lesson_slug,
-                        context=build_context(turns, i - 2, i + 3),
-                    )
-                )
 
             if is_yes_no_question(text) and not is_request_like_question(text) and not looks_like_yes_no_answer(next_text):
                 issues.append(

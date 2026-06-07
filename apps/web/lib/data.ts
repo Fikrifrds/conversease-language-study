@@ -8300,7 +8300,7 @@ export const lessonCatalog = [
       dialogue: [
         { speaker: "Ilham", text: "The client seems uncomfortable with direct feedback." },
         { speaker: "Mina", text: "Would you mind if I ask how they prefer to receive feedback?" },
-        { speaker: "Ilham", text: "That's a good question." },
+        { speaker: "Ilham", text: "Of course. Go ahead." },
         { speaker: "Mina", text: "If it's okay, could you clarify whether they want feedback in writing or in a call?" },
         { speaker: "Ilham", text: "Probably in a call." },
         { speaker: "Mina", text: "Just to make sure I understand, should we share concerns privately first?" },
@@ -8310,7 +8310,7 @@ export const lessonCatalog = [
       translation: [
         "Klien kelihatan nggak nyaman dengan feedback yang langsung.",
         "Boleh aku tanya mereka lebih nyaman menerima feedback seperti apa?",
-        "Pertanyaan bagus.",
+        "Tentu. Silakan.",
         "Kalau boleh, bisa klarifikasi mereka maunya feedback tertulis atau via call?",
         "Mungkin via call.",
         "Biar aku paham, sebaiknya kita share concern dulu secara private?",

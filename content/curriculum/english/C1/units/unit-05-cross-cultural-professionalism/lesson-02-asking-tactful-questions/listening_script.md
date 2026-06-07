@@ -2,7 +2,7 @@
 
 **Ilham:** The client seems uncomfortable with direct feedback.  
 **Mina:** Would you mind if I ask how they prefer to receive feedback?  
-**Ilham:** That's a good question.  
+**Ilham:** Of course. Go ahead.  
 **Mina:** If it's okay, could you clarify whether they want feedback in writing or in a call?  
 **Ilham:** Probably in a call.  
 **Mina:** Just to make sure I understand, should we share concerns privately first?  
