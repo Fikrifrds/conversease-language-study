@@ -1,6 +1,6 @@
 # Reading Support
 
-Leo tells his trip in order using linking words: first, then, after that, and finally.
+Hilmi tells his trip in order using linking words: first, then, after that, and finally.
 
 ## Check
 

@@ -8,7 +8,7 @@ prompts:
   target_response: I have a reservation under Mina Kim.
   acceptable_variations:
   - I have a reservation under Mina Kim.
-  - I have a reservation under Alex Chen.
+  - I have a reservation under Faris Chen.
 - prompt: Ask for recommendation + request help politely.
   target_response: Do you have any recommendations for dinner? If there's a problem with my room, could you help me?
   acceptable_variations:

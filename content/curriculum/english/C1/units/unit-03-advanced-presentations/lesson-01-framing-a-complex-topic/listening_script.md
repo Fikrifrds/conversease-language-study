@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Alex:** Can you present the new architecture proposal?  
+**Faris:** Can you present the new architecture proposal?  
 **Mina:** Sure. Today I'd like to walk you through the proposal and why it matters.  
-**Alex:** What's the key concept?  
+**Faris:** What's the key concept?  
 **Mina:** By 'modular architecture', I mean we separate features into independent components.  
-**Alex:** And the purpose?  
+**Faris:** And the purpose?  
 **Mina:** The purpose of this is to reduce coupling and speed up delivery.  
-**Alex:** What should we focus on first?  
+**Faris:** What should we focus on first?  
 **Mina:** First, I'll outline the problem we're solving, then the proposed approach.  
 
 ## Audio Direction
@@ -14,4 +14,4 @@
 - Level: C1
 - Speed: slow and natural
 - Tone: confident, precise, professional
-- Voices: Mina and Alex
+- Voices: Mina and Faris

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Jordan:** The client seemed upset after your message. -> Klien kelihatan upset setelah pesan kamu.
+- **Ilham:** The client seemed upset after your message. -> Klien kelihatan upset setelah pesan kamu.
 - **Mina:** I may have misunderstood their tone. I didn't mean to come across as dismissive. -> Mungkin aku salah baca tone-nya. Aku nggak bermaksud terdengar dismissive.
-- **Jordan:** What should we do now? -> Sekarang kita harus gimana?
+- **Ilham:** What should we do now? -> Sekarang kita harus gimana?
 - **Mina:** Just to clarify, my intent was to confirm the constraints, not reject the request. -> Biar jelas, niatku untuk konfirmasi constraint, bukan menolak request.
-- **Jordan:** Should we apologize? -> Perlu minta maaf?
+- **Ilham:** Should we apologize? -> Perlu minta maaf?
 - **Mina:** Yes. How about we send a short note acknowledging the misunderstanding and offer a quick call? -> Iya. Gimana kalau kita kirim note singkat mengakui miskomunikasinya dan tawarkan call cepat?
-- **Jordan:** That sounds good. -> Oke.
+- **Ilham:** That sounds good. -> Oke.
 - **Mina:** Great. I'll draft it and share it in ten minutes. -> Oke. Aku draft dan share dalam 10 menit.

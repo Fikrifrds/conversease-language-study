@@ -1,6 +1,6 @@
 # Reading Support
 
-Leo describes his feelings in the story. He felt nervous when they got lost, and relieved after they asked for directions.
+Hilmi describes his feelings in the story. He felt nervous when they got lost, and relieved after they asked for directions.
 
 ## Check
 

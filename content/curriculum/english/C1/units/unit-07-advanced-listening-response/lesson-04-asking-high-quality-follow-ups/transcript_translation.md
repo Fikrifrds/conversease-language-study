@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Jordan:** We should be more cautious with the rollout. -> Kita harus lebih hati-hati dengan rollout.
+- **Ilham:** We should be more cautious with the rollout. -> Kita harus lebih hati-hati dengan rollout.
 - **Mina:** When you say 'more cautious', do you mean smaller scope or slower timing? -> Waktu kamu bilang 'lebih hati-hati', maksudnya scope lebih kecil atau timing lebih lambat?
-- **Jordan:** Mostly smaller scope. -> Lebih ke scope kecil.
+- **Ilham:** Mostly smaller scope. -> Lebih ke scope kecil.
 - **Mina:** What's your assumption about the main risk? -> Asumsi kamu tentang risiko utama apa?
-- **Jordan:** That incidents will spike. -> Bahwa incident bakal naik.
+- **Ilham:** That incidents will spike. -> Bahwa incident bakal naik.
 - **Mina:** What would change your mind about the timeline? -> Apa yang bisa mengubah pikiran kamu soal timeline?
-- **Jordan:** If we see stable metrics in a pilot. -> Kalau kita lihat metrik stabil di pilot.
+- **Ilham:** If we see stable metrics in a pilot. -> Kalau kita lihat metrik stabil di pilot.
 - **Mina:** Got it. What's the next step we should take today? -> Oke. Next step apa yang harus kita ambil hari ini?

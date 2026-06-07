@@ -7,10 +7,10 @@ phrases:
   meaning_id: 'Action items-nya: aku update ticket, dan kamu konfirmasi handoff design.'
   usage_note: Clear action items + owners.
   common_mistake: Do not list actions without owners; assign who does what.
-- phrase: Jordan will review QA coverage.
-  meaning_id: Jordan akan review QA coverage.
+- phrase: Ilham will review QA coverage.
+  meaning_id: Ilham akan review QA coverage.
   usage_note: Assign another owner.
-  common_mistake: Do not say "Jordan reviewing"; use will review.
+  common_mistake: Do not say "Ilham reviewing"; use will review.
 - phrase: We'll check progress on Thursday.
   meaning_id: Kita cek progress hari Kamis.
   usage_note: Set the next checkpoint.

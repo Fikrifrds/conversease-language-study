@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina keeps Leo's story going with follow-up questions: what happened next, why he chose something, and how he felt.
+Mina keeps Hilmi's story going with follow-up questions: what happened next, why he chose something, and how he felt.
 
 ## Check
 

@@ -8,7 +8,7 @@ prompts:
   target_response: I have a reservation under Mina Kim.
   acceptable_variations:
   - I have a reservation under Mina Kim.
-  - I have a reservation under Alex Chen.
+  - I have a reservation under Faris Chen.
 - prompt: Ask one practical question (check-out time).
   target_response: What time is check-out?
   acceptable_variations:

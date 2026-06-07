@@ -1,6 +1,6 @@
 # Reading Support
 
-Leo talks about yesterday. He went to the mall, bought a jacket, and ate ramen.
+Hilmi talks about yesterday. He went to the mall, bought a jacket, and ate ramen.
 
 ## Check
 

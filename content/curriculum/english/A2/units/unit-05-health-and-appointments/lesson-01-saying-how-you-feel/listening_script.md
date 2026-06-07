@@ -1,11 +1,11 @@
 # Dialogue Script
 
 **Mina:** Hey, are you okay?  
-**Leo:** Not really. I don't feel well.  
+**Hilmi:** Not really. I don't feel well.  
 **Mina:** What's wrong?  
-**Leo:** I have a headache, and I'm really tired.  
+**Hilmi:** I have a headache, and I'm really tired.  
 **Mina:** Do you want to go home?  
-**Leo:** Yes. I think I have a fever.  
+**Hilmi:** Yes. I think I have a fever.  
 **Mina:** Okay. Take care.  
 
 ## Audio Direction
@@ -13,4 +13,4 @@
 - Level: A2
 - Speed: slow and natural
 - Tone: friendly, clear, helpful
-- Voices: Leo, Mina
+- Voices: Hilmi, Mina

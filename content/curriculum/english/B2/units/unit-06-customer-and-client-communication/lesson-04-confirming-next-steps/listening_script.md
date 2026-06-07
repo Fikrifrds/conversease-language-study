@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Jordan:** This sounds good. What happens next?  
+**Ilham:** This sounds good. What happens next?  
 **Mina:** To confirm, we'll start with a two-week pilot.  
-**Jordan:** Okay.  
+**Ilham:** Okay.  
 **Mina:** Next steps are: I'll send the draft plan today, and you'll review it by Friday.  
-**Jordan:** That works.  
+**Ilham:** That works.  
 **Mina:** We'll meet next Monday to finalize the rollout.  
-**Jordan:** Sounds good.  
+**Ilham:** Sounds good.  
 **Mina:** Great. Does that timeline work for you?  
 
 ## Audio Direction
@@ -14,4 +14,4 @@
 - Level: B2
 - Speed: slow and natural
 - Tone: professional, empathetic, clear
-- Voices: Mina and Jordan
+- Voices: Mina and Ilham

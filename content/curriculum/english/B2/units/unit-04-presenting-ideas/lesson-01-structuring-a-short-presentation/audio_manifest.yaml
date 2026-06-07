@@ -14,7 +14,7 @@ assets:
   voice_id: multi_speaker
   speaker_voices:
     Mina: English_Upbeat_Woman
-    Alex: English_Upbeat_Woman
+    Faris: English_Upbeat_Woman
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

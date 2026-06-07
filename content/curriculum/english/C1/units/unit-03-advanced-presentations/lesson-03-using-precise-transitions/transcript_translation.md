@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Alex:** Your explanation is clear so far. What's next? -> Penjelasan kamu sejauh ini jelas. Next apa?
+- **Faris:** Your explanation is clear so far. What's next? -> Penjelasan kamu sejauh ini jelas. Next apa?
 - **Mina:** That brings me to the key trade-off: speed versus reliability. -> Itu membawa kita ke trade-off utama: speed versus reliability.
-- **Alex:** What's crucial here? -> Yang krusial di sini apa?
+- **Faris:** What's crucial here? -> Yang krusial di sini apa?
 - **Mina:** What's crucial here is that we set clear standards early. -> Yang krusial adalah kita set standar yang jelas dari awal.
-- **Alex:** Can you restate it? -> Bisa ulang dengan cara lain?
+- **Faris:** Can you restate it? -> Bisa ulang dengan cara lain?
 - **Mina:** To put it differently, standards let teams move fast without breaking consistency. -> Dengan kata lain, standar bikin tim bisa cepat tanpa merusak konsistensi.
-- **Alex:** So what should we do? -> Jadi kita harus ngapain?
+- **Faris:** So what should we do? -> Jadi kita harus ngapain?
 - **Mina:** With that in mind, I'd propose a pilot with strict guardrails. -> Dengan itu, aku usul pilot dengan guardrails yang ketat.

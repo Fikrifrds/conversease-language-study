@@ -1,6 +1,6 @@
 # Reading Support
 
-Leo does not feel well. He has a headache and feels tired. Mina suggests going home.
+Hilmi does not feel well. He has a headache and feels tired. Mina suggests going home.
 
 ## Check
 

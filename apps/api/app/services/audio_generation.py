@@ -105,10 +105,20 @@ DIALOGUE_PERSONA_VOICES = {
     "nina": "English_Upbeat_Woman",
     "officer": "English_CalmWoman",
     "omar": "English_Trustworth_Man",
-    "rama": "English_Gentle-voiced_man",
     "raka": "English_Gentle-voiced_man",
     "sara": "English_CalmWoman",
     "staff": "English_CalmWoman",
+    # A2-C1 lead characters (paired with Mina, so male for contrast).
+    "faris": "English_Trustworth_Man",
+    "ilham": "English_Gentle-voiced_man",
+    "hilmi": "English_Diligent_Man",
+    # Generic roles used across A2-C1 dialogues.
+    "coach": "English_Trustworth_Man",
+    "driver": "English_Diligent_Man",
+    "friend": "English_Gentle-voiced_man",
+    "learner": "English_radiant_girl",
+    "nurse": "English_CalmWoman",
+    "receptionist": "English_radiant_girl",
 }
 
 FALLBACK_MINIMAX_VOICES = tuple(

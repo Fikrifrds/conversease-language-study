@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Alex:** What are the benefits of your idea? -> Apa manfaat dari ide kamu?
+- **Faris:** What are the benefits of your idea? -> Apa manfaat dari ide kamu?
 - **Mina:** The main benefit is faster onboarding for new hires. -> Manfaat utamanya onboarding lebih cepat untuk orang baru.
-- **Alex:** Anything else? -> Ada lagi?
+- **Faris:** Anything else? -> Ada lagi?
 - **Mina:** Another benefit is fewer repeated questions for the team. -> Manfaat lainnya pertanyaan berulang jadi lebih sedikit untuk tim.
-- **Alex:** Okay. Any risks? -> Oke. Ada risiko?
+- **Faris:** Okay. Any risks? -> Oke. Ada risiko?
 - **Mina:** A key risk is that the checklist becomes outdated. -> Risiko utamanya checklist jadi nggak update.
-- **Alex:** How can we reduce that risk? -> Gimana cara ngurangin risikonya?
+- **Faris:** How can we reduce that risk? -> Gimana cara ngurangin risikonya?
 - **Mina:** To reduce the risk, we can review it monthly and assign an owner. -> Untuk ngurangin risiko, kita bisa review tiap bulan dan tentuin owner.

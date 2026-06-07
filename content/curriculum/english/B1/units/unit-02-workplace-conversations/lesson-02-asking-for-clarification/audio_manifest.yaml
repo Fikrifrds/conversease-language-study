@@ -13,7 +13,7 @@ assets:
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alex: English_Upbeat_Woman
+    Faris: English_Upbeat_Woman
     Mina: English_Upbeat_Woman
 - key: phrases
   type: phrase_pronunciation

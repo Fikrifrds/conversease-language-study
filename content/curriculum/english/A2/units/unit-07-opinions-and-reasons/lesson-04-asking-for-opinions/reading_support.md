@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina asks Leo's opinion about going to Bali. Leo says it's a great idea because the beaches are beautiful.
+Mina asks Hilmi's opinion about going to Bali. Hilmi says it's a great idea because the beaches are beautiful.
 
 ## Check
 

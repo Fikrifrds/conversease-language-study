@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Jordan:** I'm concerned this plan will slow us down. -> Aku khawatir plan ini bakal bikin kita lambat.
+- **Ilham:** I'm concerned this plan will slow us down. -> Aku khawatir plan ini bakal bikin kita lambat.
 - **Mina:** I understand the concern. What part feels risky to you? -> Aku paham kekhawatirannya. Bagian mana yang terasa berisiko buat kamu?
-- **Jordan:** The extra review steps. -> Step review tambahannya.
+- **Ilham:** The extra review steps. -> Step review tambahannya.
 - **Mina:** Would it help if we limit reviews to high-risk changes only? -> Gimana kalau review-nya dibatasi cuma untuk perubahan berisiko tinggi?
-- **Jordan:** Maybe, but who decides what's high-risk? -> Mungkin, tapi siapa yang nentuin mana yang high-risk?
+- **Ilham:** Maybe, but who decides what's high-risk? -> Mungkin, tapi siapa yang nentuin mana yang high-risk?
 - **Mina:** Good question. What if we define simple criteria and review them together? -> Pertanyaan bagus. Gimana kalau kita bikin kriteria sederhana dan review bareng?
-- **Jordan:** That sounds reasonable. -> Kedengarannya masuk akal.
+- **Ilham:** That sounds reasonable. -> Kedengarannya masuk akal.
 - **Mina:** Great. Let's draft criteria today. -> Oke. Yuk bikin draft kriterianya hari ini.

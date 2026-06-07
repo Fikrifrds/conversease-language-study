@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Jordan:** Do you have any big holidays in your country? -> Ada hari libur besar di negara kamu?
+- **Ilham:** Do you have any big holidays in your country? -> Ada hari libur besar di negara kamu?
 - **Mina:** Yes. We celebrate Eid, and many people travel to visit family. -> Iya. Kita merayakan Idul Fitri, dan banyak orang mudik.
-- **Jordan:** What is it like during that time? -> Suasananya gimana waktu itu?
+- **Ilham:** What is it like during that time? -> Suasananya gimana waktu itu?
 - **Mina:** It's busy, but it's also warm and meaningful. -> Ramai, tapi juga hangat dan bermakna.
-- **Jordan:** Do people usually give gifts? -> Orang biasanya kasih hadiah?
+- **Ilham:** Do people usually give gifts? -> Orang biasanya kasih hadiah?
 - **Mina:** Sometimes. Mostly we share food and spend time together. -> Kadang. Kebanyakan kita berbagi makanan dan kumpul.
-- **Jordan:** That sounds lovely. -> Kedengarannya bagus.
+- **Ilham:** That sounds lovely. -> Kedengarannya bagus.
 - **Mina:** How about in your country? -> Kalau di negara kamu gimana?
