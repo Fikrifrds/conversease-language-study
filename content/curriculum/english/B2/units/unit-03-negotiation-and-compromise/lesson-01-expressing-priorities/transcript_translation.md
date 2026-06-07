@@ -8,3 +8,4 @@
 - **Mina:** The second priority is improving monitoring, so we can catch issues early. -> Prioritas kedua adalah ningkatin monitoring, jadi kita bisa nangkep masalah lebih cepat.
 - **Faris:** Makes sense. What's your priority? -> Masuk akal. Prioritasmu apa?
 - **Mina:** What about you? What's your top priority? -> Kalau kamu gimana? Prioritas utamamu apa?
+- **Faris:** My top priority is keeping scope small so we can hit the deadline. -> Prioritas utamaku adalah jaga scope tetap kecil supaya kita bisa kejar deadline.

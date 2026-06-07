@@ -2843,6 +2843,7 @@ export const lessonCatalog = [
         { speaker: "Receptionist", text: "We have 3:30 p.m. available." },
         { speaker: "Mina", text: "Great. I'll take it." },
         { speaker: "Receptionist", text: "Can I have your name, please?" },
+        { speaker: "Mina", text: "Yes, it's Mina." },
       ],
       translation: [
         "Selamat pagi. Green Clinic. Ada yang bisa saya bantu?",
@@ -2852,6 +2853,7 @@ export const lessonCatalog = [
         "Kami ada jam 3:30 sore.",
         "Oke. Saya ambil.",
         "Boleh minta namanya?",
+        "Iya, nama saya Mina.",
       ],
       phrases: [
         { phrase: "I'd like to make an appointment.", meaning: "Saya mau buat janji.", usage: "A polite request on the phone." },
@@ -3595,6 +3597,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "Yes, because the coffee is good and it is quiet." },
         { speaker: "Hilmi", text: "Nice. Do you want to go there this weekend?" },
         { speaker: "Mina", text: "Sure. Are you free on Saturday afternoon?" },
+        { speaker: "Hilmi", text: "Yes, I'm free on Saturday afternoon." },
       ],
       translation: [
         "Hai Hilmi! Gimana kabarmu?",
@@ -3606,6 +3609,7 @@ export const lessonCatalog = [
         "Iya, karena kopinya enak dan tempatnya tenang.",
         "Asik. Kamu mau ke sana weekend ini?",
         "Boleh. Kamu free Sabtu sore?",
+        "Iya, aku bisa Sabtu sore.",
       ],
       phrases: [
         { phrase: "Would you recommend it?", meaning: "Kamu rekomendasiin nggak?", usage: "Ask for a recommendation." },
@@ -4492,6 +4496,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "Thanks. I have a reservation under Mina Kim." },
         { speaker: "Ilham", text: "Great. Also, do you need anything else?" },
         { speaker: "Mina", text: "Yes. Do you have any recommendations for dinner? And if there's a problem with my room, could you help me?" },
+        { speaker: "Ilham", text: "Sure. I recommend the restaurant next to the hotel. And yes, we can help you anytime." },
       ],
       translation: [
         "Hai Mina. Kamu lagi di jalan ke hotel?",
@@ -4502,6 +4507,7 @@ export const lessonCatalog = [
         "Makasih. Aku ada reservasi atas nama Mina Kim.",
         "Oke. Ada yang kamu butuh lagi?",
         "Iya. Ada rekomendasi makan malam? Dan kalau ada masalah di kamar, bisa dibantu?",
+        "Boleh. Aku rekomendasikan restoran di sebelah hotel. Dan iya, kita bisa bantu kapan aja.",
       ],
       phrases: [
         { phrase: "I'm running a bit late. My train is delayed.", meaning: "Aku agak telat. Kereta aku delay.", usage: "A short delay explanation." },
@@ -4630,6 +4636,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "I get distracted by my phone, and I feel tired." },
         { speaker: "Hilmi", text: "I see. Do you want a quick tip?" },
         { speaker: "Mina", text: "Yes, please. Do you have any tips?" },
+        { speaker: "Hilmi", text: "Sure. Try a 10-minute timer and put your phone away." },
       ],
       translation: [
         "Gimana latihan kamu minggu ini?",
@@ -4640,6 +4647,7 @@ export const lessonCatalog = [
         "Aku gampang terdistraksi sama HP, dan aku capek.",
         "Oke. Mau tips singkat?",
         "Iya. Ada tips nggak?",
+        "Boleh. Coba pasang timer 10 menit dan taruh HP kamu jauh dulu.",
       ],
       phrases: [
         { phrase: "The biggest challenge is staying consistent.", meaning: "Tantangan terbesarnya tetap konsisten.", usage: "A clear way to name the main challenge." },
@@ -4860,6 +4868,7 @@ export const lessonCatalog = [
         { speaker: "Hilmi", text: "Overall, it depends on your work style." },
         { speaker: "Mina", text: "Makes sense." },
         { speaker: "Hilmi", text: "What's your preference?" },
+        { speaker: "Mina", text: "I prefer a mix. I work remotely most days." },
       ],
       translation: [
         "Apa pro dan kontra kerja remote?",
@@ -4870,6 +4879,7 @@ export const lessonCatalog = [
         "Secara keseluruhan, tergantung gaya kerja kamu.",
         "Masuk akal.",
         "Kalau kamu prefer yang mana?",
+        "Aku prefer campuran. Aku kerja remote hampir setiap hari.",
       ],
       phrases: [
         { phrase: "What are the pros and cons?", meaning: "Apa pro dan kontranya?", usage: "A clear way to ask about trade-offs." },
@@ -4952,6 +4962,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "The advantage is it's healthier. One downside is it takes time." },
         { speaker: "Hilmi", text: "Okay. How about we cook something simple?" },
         { speaker: "Mina", text: "That works for me. So we agree on cooking at home?" },
+        { speaker: "Hilmi", text: "Yes, let's cook at home." },
       ],
       translation: [
         "Kita punya dua opsi: makan di luar atau masak di rumah.",
@@ -4962,6 +4973,7 @@ export const lessonCatalog = [
         "Kelebihannya lebih sehat. Kekurangannya makan waktu.",
         "Oke. Gimana kalau kita masak yang simpel?",
         "Oke buat aku. Jadi kita sepakat masak di rumah?",
+        "Iya, kita masak di rumah aja.",
       ],
       phrases: [
         { phrase: "Eating out is easier, but it's more expensive.", meaning: "Makan di luar lebih gampang, tapi lebih mahal.", usage: "A clear compare sentence." },
@@ -5090,6 +5102,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "Sometimes. Mostly we share food and spend time together." },
         { speaker: "Ilham", text: "That sounds lovely." },
         { speaker: "Mina", text: "How about in your country?" },
+        { speaker: "Ilham", text: "We have a big holiday too. People visit family and share food." },
       ],
       translation: [
         "Ada hari libur besar di negara kamu?",
@@ -5100,6 +5113,7 @@ export const lessonCatalog = [
         "Kadang. Kebanyakan kita berbagi makanan dan kumpul.",
         "Kedengarannya bagus.",
         "Kalau di negara kamu gimana?",
+        "Kita juga punya hari libur besar. Orang-orang mengunjungi keluarga dan berbagi makanan.",
       ],
       phrases: [
         { phrase: "What is it like in your country?", meaning: "Gimana di negara kamu?", usage: "A respectful culture question." },
@@ -5926,6 +5940,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "The second priority is improving monitoring, so we can catch issues early." },
         { speaker: "Faris", text: "Makes sense. What's your priority?" },
         { speaker: "Mina", text: "What about you? What's your top priority?" },
+        { speaker: "Faris", text: "My top priority is keeping scope small so we can hit the deadline." },
       ],
       translation: [
         "Waktu kita terbatas. Kita fokus apa dulu?",
@@ -5936,6 +5951,7 @@ export const lessonCatalog = [
         "Prioritas kedua adalah ningkatin monitoring, jadi kita bisa nangkep masalah lebih cepat.",
         "Masuk akal. Prioritasmu apa?",
         "Kalau kamu gimana? Prioritas utamamu apa?",
+        "Prioritas utamaku adalah jaga scope tetap kecil supaya kita bisa kejar deadline.",
       ],
       phrases: [
         { phrase: "My top priority is shipping the core feature safely.", meaning: "Prioritas utamaku adalah rilis fitur utama dengan aman.", usage: "A clear priority statement." },
@@ -6296,6 +6312,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "I suggest we assign one owner per quarter to keep it updated." },
         { speaker: "Ilham", text: "Makes sense." },
         { speaker: "Mina", text: "Any other questions?" },
+        { speaker: "Ilham", text: "No, that's all. Thanks." },
       ],
       translation: [
         "Ini butuh effort berapa besar?",
@@ -6306,6 +6323,7 @@ export const lessonCatalog = [
         "Aku saranin kita assign satu owner per kuartal supaya tetap update.",
         "Masuk akal.",
         "Ada pertanyaan lain?",
+        "Nggak, itu aja. Makasih.",
       ],
       phrases: [
         { phrase: "That's a good question.", meaning: "Pertanyaan bagus.", usage: "A polite opener when answering." },
@@ -6572,6 +6590,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "From my perspective, hybrid work is a good balance. The reason is it supports focus and connection." },
         { speaker: "Faris", text: "I found a report that contradicts it. The sample size was small." },
         { speaker: "Mina", text: "I wasn't aware of that. That changes things. I'd like to understand the methodology. Can you share the link so we can revise our conclusion?" },
+        { speaker: "Faris", text: "Sure. I'll send the link now." },
       ],
       translation: [
         "Bisa ringkas artikel yang kamu baca?",
@@ -6582,6 +6601,7 @@ export const lessonCatalog = [
         "Dari perspektifku, kerja hybrid itu balance yang bagus. Alasannya itu mendukung fokus dan koneksi.",
         "Aku nemu laporan yang bertentangan. Sampel datanya kecil.",
         "Aku belum tahu itu. Itu mengubah situasinya. Aku pengen paham metodologinya. Bisa share link-nya supaya kita bisa revisi kesimpulannya?",
+        "Oke. Aku kirim link-nya sekarang.",
       ],
       phrases: [
         { phrase: "The article is about ... The main point is ...", meaning: "Artikelnya tentang ... Poin utamanya ...", usage: "A compact summary structure." },
@@ -6756,6 +6776,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "We'll meet next Monday to finalize the rollout." },
         { speaker: "Ilham", text: "Sounds good." },
         { speaker: "Mina", text: "Great. Does that timeline work for you?" },
+        { speaker: "Ilham", text: "Yes, that timeline works for me." },
       ],
       translation: [
         "Kedengarannya bagus. Next-nya apa?",
@@ -6766,6 +6787,7 @@ export const lessonCatalog = [
         "Kita meeting Senin depan untuk finalize rollout.",
         "Oke.",
         "Oke. Timeline itu works buat kamu?",
+        "Iya, timeline itu cocok buat aku.",
       ],
       phrases: [
         { phrase: "To confirm, we'll start with a two-week pilot.", meaning: "Buat konfirmasi, kita mulai dengan pilot dua minggu.", usage: "Confirm the plan clearly." },
@@ -6802,6 +6824,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "I understand the concern. To reduce the risk, we can run a two-week pilot and send weekly summaries." },
         { speaker: "Ilham", text: "Okay. What happens next?" },
         { speaker: "Mina", text: "To confirm, next steps are: I'll send a draft plan today, and you'll review it by Friday. Does that timeline work for you?" },
+        { speaker: "Ilham", text: "Yes, that works for me." },
       ],
       translation: [
         "Kami mau improve onboarding. Kamu bisa bantu apa?",
@@ -6812,6 +6835,7 @@ export const lessonCatalog = [
         "Aku paham kekhawatirannya. Untuk ngurangin risiko, kita bisa pilot dua minggu dan kirim ringkasan mingguan.",
         "Oke. Next-nya apa?",
         "Buat konfirmasi, next steps-nya: aku kirim draft plan hari ini, dan kamu review sebelum Jumat. Timeline itu works buat kamu?",
+        "Iya, itu works buat aku.",
       ],
       phrases: [
         { phrase: "Just to clarify, who is the main user group?", meaning: "Biar jelas, siapa user utama-nya?", usage: "Discovery question." },
@@ -7632,6 +7656,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "I appreciate the intent, and I think we can make it clearer with one sentence." },
         { speaker: "Ilham", text: "What would you suggest?" },
         { speaker: "Mina", text: "Would you be open to adding an explicit 'earliest possible' line?" },
+        { speaker: "Ilham", text: "Yes, that makes sense. Let's add it." },
       ],
       translation: [
         "Gimana hasil review terakhir?",
@@ -7642,6 +7667,7 @@ export const lessonCatalog = [
         "Aku apresiasi niatnya, dan menurutku kita bisa bikin lebih jelas dengan satu kalimat.",
         "Kamu saranin apa?",
         "Kamu open nggak kalau kita tambahin kalimat 'earliest possible' yang eksplisit?",
+        "Iya, masuk akal. Yuk kita tambahin.",
       ],
       phrases: [
         { phrase: "I wanted to flag one point about the messaging.", meaning: "Aku mau highlight satu poin soal messaging-nya.", usage: "A gentle opener for feedback." },
@@ -8418,6 +8444,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "In our context, it's generally expected that we raise concerns one-on-one first. It might help to start with appreciation." },
         { speaker: "Ilham", text: "They seemed upset after the last message." },
         { speaker: "Mina", text: "I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?" },
+        { speaker: "Ilham", text: "Yes, let's do that. I'll set up a call." },
       ],
       translation: [
         "Klien bilang timeline-nya 'ambitious'.",
@@ -8428,6 +8455,7 @@ export const lessonCatalog = [
         "Dalam konteks kita, umumnya diharapkan concern diangkat one-on-one dulu. Mungkin membantu mulai dengan apresiasi.",
         "Mereka kelihatan upset setelah pesan terakhir.",
         "Mungkin aku salah baca tone-nya. Biar jelas, niatku konfirmasi constraint, bukan menolak request. Gimana kalau kita kirim note singkat dan tawarkan call cepat?",
+        "Oke, kita lakukan itu. Aku akan jadwalkan call.",
       ],
       phrases: [
         { phrase: "My sense is that they're signaling concern indirectly.", meaning: "Feeling aku, mereka ngasih sinyal concern secara indirect.", usage: "Context reading." },
@@ -8510,6 +8538,8 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "What's the smallest next step you can take today?" },
         { speaker: "Ilham", text: "Draft the rollout checklist." },
         { speaker: "Mina", text: "Great. What support do you need from me?" },
+        { speaker: "Ilham", text: "Can you review it and help me align with stakeholders?" },
+        { speaker: "Mina", text: "Yes. Send it to me today, and I'll help you align tomorrow." },
       ],
       translation: [
         "Aku stuck gimana handle rollout.",
@@ -8520,6 +8550,8 @@ export const lessonCatalog = [
         "Langkah kecil paling next yang bisa kamu lakukan hari ini apa?",
         "Draft checklist rollout.",
         "Oke. Support apa yang kamu butuh dari aku?",
+        "Bisa review itu dan bantu aku align dengan stakeholder?",
+        "Iya. Kirim ke aku hari ini, dan aku bantu kamu align besok.",
       ],
       phrases: [
         { phrase: "What options do you see right now?", meaning: "Opsi apa yang kamu lihat sekarang?", usage: "Open up solution space without prescribing." },
@@ -8556,6 +8588,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "A concrete improvement would be a one-line summary at the top." },
         { speaker: "Ilham", text: "Okay." },
         { speaker: "Mina", text: "Would you be open to revising it and sending a second draft?" },
+        { speaker: "Ilham", text: "Yes, I'll revise it and send it today." },
       ],
       translation: [
         "Gimana pesan update aku?",
@@ -8566,6 +8599,7 @@ export const lessonCatalog = [
         "Improvement konkretnya: tambahin ringkasan satu baris di atas.",
         "Oke.",
         "Kamu open nggak untuk revisi dan kirim draft kedua?",
+        "Iya, aku revisi dan kirim hari ini.",
       ],
       phrases: [
         { phrase: "One thing I'd suggest is leading with the decision.", meaning: "Satu yang aku sarankan: mulai dengan keputusan.", usage: "A clear, non-judgmental suggestion." },
@@ -8602,6 +8636,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "Given our constraints, I'd recommend a phased rollout with clear monitoring." },
         { speaker: "Ilham", text: "Okay. Can we align on next steps?" },
         { speaker: "Mina", text: "Yes—can we agree on the scope today and review metrics weekly?" },
+        { speaker: "Ilham", text: "Yes, let's do that. We'll align on scope today and review metrics weekly." },
       ],
       translation: [
         "Kita nggak bisa putuskan approach mana.",
@@ -8612,6 +8647,7 @@ export const lessonCatalog = [
         "Dengan constraint kita, aku rekomend rollout bertahap dengan monitoring yang jelas.",
         "Oke. Bisa align next steps?",
         "Bisa—kita sepakat scope hari ini dan review metrik tiap minggu?",
+        "Iya, kita lakukan itu. Kita align scope hari ini dan review metrik tiap minggu.",
       ],
       phrases: [
         { phrase: "We have three options: pilot, phased rollout, or full rollout.", meaning: "Kita punya tiga opsi: pilot, rollout bertahap, atau rollout penuh.", usage: "Structure options clearly." },
@@ -8648,6 +8684,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "Overall your update is solid. One thing I'd suggest is leading with the decision—the impact is people might miss it." },
         { speaker: "Ilham", text: "Got it. What do you recommend?" },
         { speaker: "Mina", text: "Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly?" },
+        { speaker: "Ilham", text: "Yes, let's align on scope today and review metrics weekly." },
       ],
       translation: [
         "Aku stuck dan kita harus putuskan cepat.",
@@ -8658,6 +8695,7 @@ export const lessonCatalog = [
         "Update kamu overall bagus. Satu yang aku sarankan: mulai dengan keputusan—impact-nya orang bisa miss.",
         "Oke. Kamu rekomend apa?",
         "Dengan constraint kita, aku rekomend rollout bertahap. Kita sepakat scope hari ini dan review metrik tiap minggu?",
+        "Iya, kita align scope hari ini dan review metrik tiap minggu.",
       ],
       phrases: [
         { phrase: "The direction I'd like to set is ...", meaning: "Arah yang mau aku set adalah ...", usage: "Set direction." },
@@ -8832,6 +8870,7 @@ export const lessonCatalog = [
         { speaker: "Mina", text: "What would change your mind about the timeline?" },
         { speaker: "Ilham", text: "If we see stable metrics in a pilot." },
         { speaker: "Mina", text: "Got it. What's the next step we should take today?" },
+        { speaker: "Ilham", text: "Let's draft a smaller-scope plan and share it today." },
       ],
       translation: [
         "Kita harus lebih hati-hati dengan rollout.",
@@ -8842,6 +8881,7 @@ export const lessonCatalog = [
         "Apa yang bisa mengubah pikiran kamu soal timeline?",
         "Kalau kita lihat metrik stabil di pilot.",
         "Oke. Next step apa yang harus kita ambil hari ini?",
+        "Yuk draft plan dengan scope lebih kecil dan share hari ini.",
       ],
       phrases: [
         { phrase: "When you say 'more cautious', do you mean smaller scope or slower timing?", meaning: "Kalau bilang 'lebih hati-hati', maksudnya scope kecil atau timing lambat?", usage: "Clarify ambiguous language." },

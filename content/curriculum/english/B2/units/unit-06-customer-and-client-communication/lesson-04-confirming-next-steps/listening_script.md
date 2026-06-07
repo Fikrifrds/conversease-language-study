@@ -8,6 +8,7 @@
 **Mina:** We'll meet next Monday to finalize the rollout.  
 **Ilham:** Sounds good.  
 **Mina:** Great. Does that timeline work for you?  
+**Ilham:** Yes, that timeline works for me.  
 
 ## Audio Direction
 

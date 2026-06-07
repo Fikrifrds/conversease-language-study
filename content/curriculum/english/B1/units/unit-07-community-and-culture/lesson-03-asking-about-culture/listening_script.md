@@ -8,6 +8,7 @@
 **Mina:** Sometimes. Mostly we share food and spend time together.  
 **Ilham:** That sounds lovely.  
 **Mina:** How about in your country?  
+**Ilham:** We have a big holiday too. People visit family and share food.  
 
 ## Audio Direction
 

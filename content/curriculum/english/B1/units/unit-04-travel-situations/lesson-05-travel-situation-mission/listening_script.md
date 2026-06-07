@@ -8,6 +8,7 @@
 **Mina:** Thanks. I have a reservation under Mina Kim.  
 **Ilham:** Great. Also, do you need anything else?  
 **Mina:** Yes. Do you have any recommendations for dinner? And if there's a problem with my room, could you help me?  
+**Ilham:** Sure. I recommend the restaurant next to the hotel. And yes, we can help you anytime.  
 
 ## Audio Direction
 

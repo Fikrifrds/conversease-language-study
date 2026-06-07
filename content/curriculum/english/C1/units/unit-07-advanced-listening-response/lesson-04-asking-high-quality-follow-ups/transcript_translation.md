@@ -8,3 +8,4 @@
 - **Mina:** What would change your mind about the timeline? -> Apa yang bisa mengubah pikiran kamu soal timeline?
 - **Ilham:** If we see stable metrics in a pilot. -> Kalau kita lihat metrik stabil di pilot.
 - **Mina:** Got it. What's the next step we should take today? -> Oke. Next step apa yang harus kita ambil hari ini?
+- **Ilham:** Let's draft a smaller-scope plan and share it today. -> Yuk draft plan dengan scope lebih kecil dan share hari ini.

@@ -8,3 +8,4 @@
 - **Mina:** I appreciate the intent, and I think we can make it clearer with one sentence. -> Aku apresiasi niatnya, dan menurutku kita bisa bikin lebih jelas dengan satu kalimat.
 - **Ilham:** What would you suggest? -> Kamu saranin apa?
 - **Mina:** Would you be open to adding an explicit 'earliest possible' line? -> Kamu open nggak kalau kita tambahin kalimat 'earliest possible' yang eksplisit?
+- **Ilham:** Yes, that makes sense. Let's add it. -> Iya, masuk akal. Yuk kita tambahin.

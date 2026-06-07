@@ -8,3 +8,4 @@
 - **Hilmi:** Overall, it depends on your work style. -> Secara keseluruhan, tergantung gaya kerja kamu.
 - **Mina:** Makes sense. -> Masuk akal.
 - **Hilmi:** What's your preference? -> Kalau kamu prefer yang mana?
+- **Mina:** I prefer a mix. I work remotely most days. -> Aku prefer campuran. Aku kerja remote hampir setiap hari.

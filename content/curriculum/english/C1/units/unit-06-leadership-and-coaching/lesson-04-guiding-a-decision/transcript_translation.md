@@ -8,3 +8,4 @@
 - **Mina:** Given our constraints, I'd recommend a phased rollout with clear monitoring. -> Dengan constraint kita, aku rekomend rollout bertahap dengan monitoring yang jelas.
 - **Ilham:** Okay. Can we align on next steps? -> Oke. Bisa align next steps?
 - **Mina:** Yes—can we agree on the scope today and review metrics weekly? -> Bisa—kita sepakat scope hari ini dan review metrik tiap minggu?
+- **Ilham:** Yes, let's do that. We'll align on scope today and review metrics weekly. -> Iya, kita lakukan itu. Kita align scope hari ini dan review metrik tiap minggu.

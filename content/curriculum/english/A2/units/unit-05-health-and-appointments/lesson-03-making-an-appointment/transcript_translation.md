@@ -7,3 +7,4 @@
 - **Receptionist:** We have 3:30 p.m. available. -> Kami ada jam 3:30 sore.
 - **Mina:** Great. I'll take it. -> Oke. Saya ambil.
 - **Receptionist:** Can I have your name, please? -> Boleh minta namanya?
+- **Mina:** Yes, it's Mina. -> Iya, nama saya Mina.

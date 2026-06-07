@@ -8,3 +8,4 @@
 - **Mina:** Sometimes. Mostly we share food and spend time together. -> Kadang. Kebanyakan kita berbagi makanan dan kumpul.
 - **Ilham:** That sounds lovely. -> Kedengarannya bagus.
 - **Mina:** How about in your country? -> Kalau di negara kamu gimana?
+- **Ilham:** We have a big holiday too. People visit family and share food. -> Kita juga punya hari libur besar. Orang-orang mengunjungi keluarga dan berbagi makanan.

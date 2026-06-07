@@ -8,6 +8,7 @@
 **Mina:** I appreciate the intent, and I think we can make it clearer with one sentence.  
 **Ilham:** What would you suggest?  
 **Mina:** Would you be open to adding an explicit 'earliest possible' line?  
+**Ilham:** Yes, that makes sense. Let's add it.  
 
 ## Audio Direction
 

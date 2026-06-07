@@ -8,3 +8,4 @@
 - **Mina:** Overall your update is solid. One thing I'd suggest is leading with the decision—the impact is people might miss it. -> Update kamu overall bagus. Satu yang aku sarankan: mulai dengan keputusan—impact-nya orang bisa miss.
 - **Ilham:** Got it. What do you recommend? -> Oke. Kamu rekomend apa?
 - **Mina:** Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly? -> Dengan constraint kita, aku rekomend rollout bertahap. Kita sepakat scope hari ini dan review metrik tiap minggu?
+- **Ilham:** Yes, let's align on scope today and review metrics weekly. -> Iya, kita align scope hari ini dan review metrik tiap minggu.

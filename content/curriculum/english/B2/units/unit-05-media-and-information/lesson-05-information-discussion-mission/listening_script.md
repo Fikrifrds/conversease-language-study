@@ -8,6 +8,7 @@
 **Mina:** From my perspective, hybrid work is a good balance. The reason is it supports focus and connection.  
 **Faris:** I found a report that contradicts it. The sample size was small.  
 **Mina:** I wasn't aware of that. That changes things. I'd like to understand the methodology. Can you share the link so we can revise our conclusion?  
+**Faris:** Sure. I'll send the link now.  
 
 ## Audio Direction
 

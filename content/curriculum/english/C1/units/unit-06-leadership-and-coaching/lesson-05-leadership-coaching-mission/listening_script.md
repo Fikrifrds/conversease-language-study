@@ -8,6 +8,7 @@
 **Mina:** Overall your update is solid. One thing I'd suggest is leading with the decision—the impact is people might miss it.  
 **Ilham:** Got it. What do you recommend?  
 **Mina:** Given our constraints, I'd recommend a phased rollout. Can we agree on scope today and review metrics weekly?  
+**Ilham:** Yes, let's align on scope today and review metrics weekly.  
 
 ## Audio Direction
 

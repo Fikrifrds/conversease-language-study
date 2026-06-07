@@ -8,6 +8,7 @@
 **Mina:** The advantage is it's healthier. One downside is it takes time.  
 **Hilmi:** Okay. How about we cook something simple?  
 **Mina:** That works for me. So we agree on cooking at home?  
+**Hilmi:** Yes, let's cook at home.  
 
 ## Audio Direction
 

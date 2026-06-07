@@ -8,3 +8,4 @@
 - **Mina:** A concrete improvement would be a one-line summary at the top. -> Improvement konkretnya: tambahin ringkasan satu baris di atas.
 - **Ilham:** Okay. -> Oke.
 - **Mina:** Would you be open to revising it and sending a second draft? -> Kamu open nggak untuk revisi dan kirim draft kedua?
+- **Ilham:** Yes, I'll revise it and send it today. -> Iya, aku revisi dan kirim hari ini.

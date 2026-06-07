@@ -8,6 +8,7 @@
 **Mina:** A concrete improvement would be a one-line summary at the top.  
 **Ilham:** Okay.  
 **Mina:** Would you be open to revising it and sending a second draft?  
+**Ilham:** Yes, I'll revise it and send it today.  
 
 ## Audio Direction
 

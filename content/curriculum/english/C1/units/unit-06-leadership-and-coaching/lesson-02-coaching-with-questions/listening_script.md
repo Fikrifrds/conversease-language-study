@@ -8,6 +8,8 @@
 **Mina:** What's the smallest next step you can take today?  
 **Ilham:** Draft the rollout checklist.  
 **Mina:** Great. What support do you need from me?  
+**Ilham:** Can you review it and help me align with stakeholders?  
+**Mina:** Yes. Send it to me today, and I'll help you align tomorrow.  
 
 ## Audio Direction
 

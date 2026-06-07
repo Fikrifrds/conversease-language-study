@@ -8,3 +8,4 @@
 - **Mina:** Thanks. I have a reservation under Mina Kim. -> Makasih. Aku ada reservasi atas nama Mina Kim.
 - **Ilham:** Great. Also, do you need anything else? -> Oke. Ada yang kamu butuh lagi?
 - **Mina:** Yes. Do you have any recommendations for dinner? And if there's a problem with my room, could you help me? -> Iya. Ada rekomendasi makan malam? Dan kalau ada masalah di kamar, bisa dibantu?
+- **Ilham:** Sure. I recommend the restaurant next to the hotel. And yes, we can help you anytime. -> Boleh. Aku rekomendasikan restoran di sebelah hotel. Dan iya, kita bisa bantu kapan aja.

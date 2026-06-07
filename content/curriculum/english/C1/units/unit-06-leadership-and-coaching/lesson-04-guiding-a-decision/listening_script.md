@@ -8,6 +8,7 @@
 **Mina:** Given our constraints, I'd recommend a phased rollout with clear monitoring.  
 **Ilham:** Okay. Can we align on next steps?  
 **Mina:** Yes—can we agree on the scope today and review metrics weekly?  
+**Ilham:** Yes, let's do that. We'll align on scope today and review metrics weekly.  
 
 ## Audio Direction
 

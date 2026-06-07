@@ -8,3 +8,4 @@
 - **Mina:** We'll meet next Monday to finalize the rollout. -> Kita meeting Senin depan untuk finalize rollout.
 - **Ilham:** Sounds good. -> Oke.
 - **Mina:** Great. Does that timeline work for you? -> Oke. Timeline itu works buat kamu?
+- **Ilham:** Yes, that timeline works for me. -> Iya, timeline itu cocok buat aku.

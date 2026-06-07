@@ -8,3 +8,4 @@
 - **Mina:** The advantage is it's healthier. One downside is it takes time. -> Kelebihannya lebih sehat. Kekurangannya makan waktu.
 - **Hilmi:** Okay. How about we cook something simple? -> Oke. Gimana kalau kita masak yang simpel?
 - **Mina:** That works for me. So we agree on cooking at home? -> Oke buat aku. Jadi kita sepakat masak di rumah?
+- **Hilmi:** Yes, let's cook at home. -> Iya, kita masak di rumah aja.

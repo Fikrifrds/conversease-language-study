@@ -1,0 +1,640 @@
+{
+  "file_count": 200,
+  "issue_count": 53,
+  "issues": [
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening_script.md",
+      "lesson_slug": "03-sharing-email-addresses",
+      "context": [
+        "Ben: It's ben dot rama at example dot com.",
+        "Officer: Can you spell that, please?",
+        "Ben: B-E-N dot R-A-M-A at example dot com.",
+        "Officer: Thank you. Is that correct?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening_script.md",
+      "lesson_slug": "02-asking-about-work-or-study",
+      "context": [
+        "Ben: Do you work or study?",
+        "Mina: I work in a small office.",
+        "Ben: What do you do there?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/listening_script.md",
+      "lesson_slug": "03-talking-about-likes",
+      "context": [
+        "Ben: I like speaking practice.",
+        "Alya: Do you like grammar?",
+        "Ben: (chuckle) It's okay, but speaking is my favorite."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening_script.md",
+      "lesson_slug": "01-ordering-a-drink",
+      "context": [
+        "Mina: Hi! (chuckle) What would you like?",
+        "Ben: Can I have a tea, please?",
+        "Mina: Small or large?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening_script.md",
+      "lesson_slug": "04-saying-what-you-want",
+      "context": [
+        "Dimas: I want a sandwich.",
+        "Sara: Do you want tea or coffee?",
+        "Dimas: Tea, please.",
+        "Sara: Do you want sugar?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening_script.md",
+      "lesson_slug": "05-cafe-and-shop-mission",
+      "context": [
+        "Mina: Hi! (chuckle) What would you like?",
+        "Ben: Can I have a coffee and a sandwich, please?",
+        "Mina: Sure. Small or large coffee?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A1/units/unit-08-a1-review-final/lesson-04-final-test-practice/listening_script.md",
+      "lesson_slug": "04-final-test-practice",
+      "context": [
+        "Sara: What do you do every morning?",
+        "Alya: I study English at seven.",
+        "Sara: Good. When is your class?",
+        "Alya: Sorry, can you repeat that, please?",
+        "Sara: Sure. When is your class?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-02-plans-and-invitations/lesson-05-invitation-mission/listening_script.md",
+      "lesson_slug": "05-invitation-mission",
+      "context": [
+        "Mina: Yes. Something came up at work.",
+        "Ben: No problem. How about Saturday?",
+        "Mina: Saturday is good. What time?",
+        "Ben: Does 3 pm work for you?",
+        "Mina: Yes, 3 pm works. Where should we meet?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-03-travel-and-transport/lesson-02-asking-about-departure-time/listening_script.md",
+      "lesson_slug": "02-asking-about-departure-time",
+      "context": [
+        "Alya: Excuse me. What time does the train leave?",
+        "Staff: Which train?",
+        "Alya: The train to Bandung."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-04-shopping-services/lesson-04-requesting-service-help/listening_script.md",
+      "lesson_slug": "04-requesting-service-help",
+      "context": [
+        "Lina: Excuse me. Could you help me?",
+        "Staff: Sure. What do you need?",
+        "Lina: Can you show me where the batteries are?",
+        "Staff: Yes. They're over there, next to the cash register."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-04-shopping-services/lesson-05-shopping-service-mission/listening_script.md",
+      "lesson_slug": "05-shopping-service-mission",
+      "context": [
+        "Staff: This one is cheaper.",
+        "Ben: Okay. I'll take this one.",
+        "Staff: Great choice. Anything else?",
+        "Ben: Also, could you help me? Where are the batteries?",
+        "Staff: They're over there, next to the cash register."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/listening_script.md",
+      "lesson_slug": "02-describing-simple-symptoms",
+      "context": [
+        "Mina: I've had a sore throat since yesterday.",
+        "Nurse: Do you have a fever?",
+        "Mina: A little. And I have a cough.",
+        "Nurse: How long have you been coughing?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-05-health-and-appointments/lesson-03-making-an-appointment/listening_script.md",
+      "lesson_slug": "03-making-an-appointment",
+      "context": [
+        "Receptionist: Good morning. Green Clinic. How can I help you?",
+        "Mina: Hi. I'd like to make an appointment.",
+        "Receptionist: Sure. What day works for you?",
+        "Mina: Is tomorrow afternoon okay?",
+        "Receptionist: We have 3:30 p.m. available."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening_script.md",
+      "lesson_slug": "04-a2-final-test-practice",
+      "context": [
+        "Coach: Invite a friend for coffee this weekend.",
+        "Learner: Do you want to grab coffee this weekend?",
+        "Coach: Ask for a USB-C charger.",
+        "Learner: Do you have a USB-C charger?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/A2/units/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening_script.md",
+      "lesson_slug": "04-a2-final-test-practice",
+      "context": [
+        "Coach: Ask for a USB-C charger.",
+        "Learner: Do you have a USB-C charger?",
+        "Coach: Say a symptom and duration.",
+        "Learner: I've had a cough for two days."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B1/units/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening_script.md",
+      "lesson_slug": "04-reaching-agreement",
+      "context": [
+        "Faris: So which restaurant should we choose?",
+        "Mina: How about we go with the cheaper one tonight?",
+        "Faris: I'm okay with that, but is it too crowded?",
+        "Mina: It might be, so let's go early."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B1/units/unit-07-community-and-culture/lesson-03-asking-about-culture/listening_script.md",
+      "lesson_slug": "03-asking-about-culture",
+      "context": [
+        "Mina: It's busy, but it's also warm and meaningful.",
+        "Ilham: Do people usually give gifts?",
+        "Mina: Sometimes. Mostly we share food and spend time together.",
+        "Ilham: That sounds lovely."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-01-clear-arguments/lesson-01-stating-your-position/listening_script.md",
+      "lesson_slug": "01-stating-your-position",
+      "context": [
+        "Faris: Should we switch our weekly meeting to a written update?",
+        "Mina: In my view, a written update would be better for routine topics.",
+        "Faris: Why do you think that?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening_script.md",
+      "lesson_slug": "02-supporting-with-reasons",
+      "context": [
+        "Faris: Do we really need to invest time in automated tests?",
+        "Mina: I think we should. One reason is it reduces bugs in production.",
+        "Faris: Okay. What's another reason?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening_script.md",
+      "lesson_slug": "04-responding-to-counterpoints",
+      "context": [
+        "Mina: That's a fair point. However, the long-term savings could be significant.",
+        "Faris: Can you explain why?",
+        "Mina: If we reduce rework, we save engineering time and customer support time.",
+        "Faris: But the upfront investment is still high."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-01-clear-arguments/lesson-05-clear-argument-mission/listening_script.md",
+      "lesson_slug": "05-clear-argument-mission",
+      "context": [
+        "Faris: Should we change our weekly meeting format?",
+        "Mina: In my view, we should move routine updates to a written summary.",
+        "Faris: Why?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-01-clear-arguments/lesson-05-clear-argument-mission/listening_script.md",
+      "lesson_slug": "05-clear-argument-mission",
+      "context": [
+        "Mina: One reason is it saves time. Another reason is it improves focus.",
+        "Faris: Can you give an example?",
+        "Mina: For example, last month we spent 30 minutes repeating status updates.",
+        "Faris: But we might lose real-time discussion."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening_script.md",
+      "lesson_slug": "05-meeting-participation-mission",
+      "context": [
+        "Faris: Any topics to discuss today?",
+        "Mina: I'd like to bring up the timeline for the next release.",
+        "Faris: Okay. Any scope questions?",
+        "Mina: Just to clarify, does this include the admin dashboard changes?",
+        "Faris: No, that's out of scope for now."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening_script.md",
+      "lesson_slug": "01-expressing-priorities",
+      "context": [
+        "Faris: Okay. Anything else?",
+        "Mina: The second priority is improving monitoring, so we can catch issues early.",
+        "Faris: Makes sense. What's your priority?",
+        "Mina: What about you? What's your top priority?",
+        "Faris: My top priority is keeping scope small so we can hit the deadline."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening_script.md",
+      "lesson_slug": "02-making-a-proposal",
+      "context": [
+        "Mina: I propose we do a small pilot first.",
+        "Faris: What timeline are you thinking?",
+        "Mina: How about we run it for two weeks and review the results?",
+        "Faris: Would that delay the full launch?",
+        "Mina: Not necessarily. We can prepare in parallel."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening_script.md",
+      "lesson_slug": "03-handling-objections",
+      "context": [
+        "Mina: I understand the concern. What part feels risky to you?",
+        "Ilham: The extra review steps.",
+        "Mina: Would it help if we limit reviews to high-risk changes only?",
+        "Ilham: Maybe, but who decides what's high-risk?",
+        "Mina: Good question. What if we define simple criteria and review them together?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening_script.md",
+      "lesson_slug": "03-handling-objections",
+      "context": [
+        "Ilham: The extra review steps.",
+        "Mina: Would it help if we limit reviews to high-risk changes only?",
+        "Ilham: Maybe, but who decides what's high-risk?",
+        "Mina: Good question. What if we define simple criteria and review them together?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/listening_script.md",
+      "lesson_slug": "04-finding-middle-ground",
+      "context": [
+        "Faris: Like what?",
+        "Mina: A compromise could be launching to 10% of users first.",
+        "Faris: That could work. What about testing?",
+        "Mina: If we do a small rollout, can we agree on one extra day for testing?",
+        "Faris: Yes, that feels fair."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-05-media-and-information/lesson-05-information-discussion-mission/listening_script.md",
+      "lesson_slug": "05-information-discussion-mission",
+      "context": [
+        "Mina: Sure. The article is about remote work and productivity. The main point is clear rules improve focus.",
+        "Faris: Is the source reliable?",
+        "Mina: I'm not sure it's reliable because it doesn't cite data. I'd check official reports.",
+        "Faris: What's your viewpoint overall?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/listening_script.md",
+      "lesson_slug": "05-client-conversation-mission",
+      "context": [
+        "Ilham: We want to improve onboarding. What can you do?",
+        "Mina: Just to clarify, who is the main user group and what's the biggest pain point?",
+        "Ilham: New hires can't find key docs."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening_script.md",
+      "lesson_slug": "01-framing-the-problem",
+      "context": [
+        "Faris: Our customer complaints have increased this month.",
+        "Mina: Okay. Let's define the problem statement first.",
+        "Faris: Sure. Where should we start?",
+        "Mina: Can we agree on the scope? Which product area is affected?",
+        "Faris: Mostly the billing flow."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening_script.md",
+      "lesson_slug": "01-framing-the-problem",
+      "context": [
+        "Faris: Sure. Where should we start?",
+        "Mina: Can we agree on the scope? Which product area is affected?",
+        "Faris: Mostly the billing flow.",
+        "Mina: Great. What does success look like for the next four weeks?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening_script.md",
+      "lesson_slug": "02-explaining-causes",
+      "context": [
+        "Mina: Based on the data, drop-offs increased right after the redesign.",
+        "Faris: Could it be something else?",
+        "Mina: It might be due to slower load times as well.",
+        "Faris: How can we confirm?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/B2/units/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/listening_script.md",
+      "lesson_slug": "03-discussing-tradeoffs",
+      "context": [
+        "Mina: The trade-off is speed versus long-term reliability.",
+        "Faris: Can you explain that?",
+        "Mina: If we optimize for speed, we might introduce more bugs.",
+        "Faris: And the slower option?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/listening_script.md",
+      "lesson_slug": "01-qualifying-your-opinion",
+      "context": [
+        "Ilham: Do you think we should adopt the new policy immediately?",
+        "Mina: To some extent, yes—especially for new projects.",
+        "Ilham: So you're fully in favor?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening_script.md",
+      "lesson_slug": "02-expressing-certainty-and-doubt",
+      "context": [
+        "Ilham: Will this change reduce complaints?",
+        "Mina: I'm fairly confident it will, given the support trends.",
+        "Ilham: So we're safe to roll it out broadly?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening_script.md",
+      "lesson_slug": "02-expressing-certainty-and-doubt",
+      "context": [
+        "Mina: I'm not entirely convinced. There's a strong chance we'll see edge cases.",
+        "Ilham: Is it risky, then?",
+        "Mina: It's unlikely that we'll break core flows, but we should monitor closely.",
+        "Ilham: What do you propose?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/listening_script.md",
+      "lesson_slug": "03-balancing-two-viewpoints",
+      "context": [
+        "Ilham: Should we invest in growth or stability this quarter?",
+        "Mina: On the one hand, growth initiatives could unlock new revenue.",
+        "Ilham: And on the other hand?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening_script.md",
+      "lesson_slug": "05-nuanced-opinion-mission",
+      "context": [
+        "Ilham: Should we adopt the new policy right away?",
+        "Mina: To some extent, yes—especially for new projects. That said, we need exceptions for legacy systems.",
+        "Ilham: Are you confident it will help?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening_script.md",
+      "lesson_slug": "05-nuanced-opinion-mission",
+      "context": [
+        "Mina: To some extent, yes—especially for new projects. That said, we need exceptions for legacy systems.",
+        "Ilham: Are you confident it will help?",
+        "Mina: I'm fairly confident it will, but I'm not entirely convinced we won't see edge cases.",
+        "Ilham: So do we prioritize speed or stability?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening_script.md",
+      "lesson_slug": "02-managing-expectations",
+      "context": [
+        "Ilham: Can we deliver the full scope by next week?",
+        "Mina: What we can commit to is a smaller release by next week.",
+        "Ilham: Why not the full scope?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-02-strategic-workplace-communication/lesson-03-handling-sensitive-feedback/listening_script.md",
+      "lesson_slug": "03-handling-sensitive-feedback",
+      "context": [
+        "Ilham: That's not what I meant.",
+        "Mina: I appreciate the intent, and I think we can make it clearer with one sentence.",
+        "Ilham: What would you suggest?",
+        "Mina: Would you be open to adding an explicit 'earliest possible' line?",
+        "Ilham: Yes, that makes sense. Let's add it."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-03-advanced-presentations/lesson-03-using-precise-transitions/listening_script.md",
+      "lesson_slug": "03-using-precise-transitions",
+      "context": [
+        "Mina: What's crucial here is that we set clear standards early.",
+        "Faris: Can you restate it?",
+        "Mina: To put it differently, standards let teams move fast without breaking consistency.",
+        "Faris: So what should we do?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening_script.md",
+      "lesson_slug": "02-challenging-an-argument",
+      "context": [
+        "Faris: It's common sense.",
+        "Mina: Could there be another explanation, like unclear copy or missing reassurance?",
+        "Faris: Maybe.",
+        "Mina: For example, we reduced steps last quarter, but conversion didn't change."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening_script.md",
+      "lesson_slug": "03-presenting-evidence",
+      "context": [
+        "Faris: Do we have any data to support this?",
+        "Mina: According to the support dashboard, drop-offs increased after the redesign.",
+        "Faris: So the redesign caused it?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening_script.md",
+      "lesson_slug": "05-debate-analysis-mission",
+      "context": [
+        "Mina: It seems you're assuming fewer steps automatically mean better conversion. What's the evidence for that claim?",
+        "Faris: It's common sense.",
+        "Mina: I'm not sure that follows. Could there be another explanation, like unclear copy or missing reassurance?",
+        "Faris: Do we have data?",
+        "Mina: According to the support dashboard, drop-offs increased after the redesign. To be precise, the data indicates correlation, not necessarily causation."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening_script.md",
+      "lesson_slug": "05-debate-analysis-mission",
+      "context": [
+        "Mina: I'm not sure that follows. Could there be another explanation, like unclear copy or missing reassurance?",
+        "Faris: Do we have data?",
+        "Mina: According to the support dashboard, drop-offs increased after the redesign. To be precise, the data indicates correlation, not necessarily causation.",
+        "Faris: This is speculation. Why act now?"
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-05-cross-cultural-professionalism/lesson-01-reading-context/listening_script.md",
+      "lesson_slug": "01-reading-context",
+      "context": [
+        "Ilham: The client said the timeline is 'ambitious'. What do you think that means?",
+        "Mina: My sense is that they're signaling concern without saying no directly.",
+        "Ilham: So how should we respond?",
+        "Mina: Before we decide, can we clarify what their priority is—speed or risk reduction?",
+        "Ilham: Good point."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/listening_script.md",
+      "lesson_slug": "02-asking-tactful-questions",
+      "context": [
+        "Ilham: The client seems uncomfortable with direct feedback.",
+        "Mina: Would you mind if I ask how they prefer to receive feedback?",
+        "Ilham: That's a good question.",
+        "Mina: If it's okay, could you clarify whether they want feedback in writing or in a call?"
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/listening_script.md",
+      "lesson_slug": "05-cross-cultural-mission",
+      "context": [
+        "Ilham: They also dislike direct criticism.",
+        "Mina: Would you mind if I ask how they prefer to receive feedback—writing or a call?",
+        "Ilham: In our culture, they prefer private feedback first.",
+        "Mina: In our context, it's generally expected that we raise concerns one-on-one first. It might help to start with appreciation."
+      ]
+    },
+    {
+      "code": "question_followed_by_question",
+      "message": "Pertanyaan diikuti pertanyaan lagi (tanpa jawaban) — sering terasa tidak nyambung.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/listening_script.md",
+      "lesson_slug": "02-coaching-with-questions",
+      "context": [
+        "Mina: What's the smallest next step you can take today?",
+        "Ilham: Draft the rollout checklist.",
+        "Mina: Great. What support do you need from me?",
+        "Ilham: Can you review it and help me align with stakeholders?",
+        "Mina: Yes. Send it to me today, and I'll help you align tomorrow."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/listening_script.md",
+      "lesson_slug": "03-summarizing-what-you-heard",
+      "context": [
+        "Mina: The open questions are around resourcing and internal alignment.",
+        "Ilham: Can you confirm with the team?",
+        "Mina: Just to confirm, I'll send the summary and ask if anything is missing."
+      ]
+    },
+    {
+      "code": "yesno_question_non_yesno_answer",
+      "message": "Yes/No question tapi jawaban berikutnya tidak terlihat seperti ya/tidak.",
+      "file_path": "/Users/fikrifirdaus/Documents/products/conversease_language_study/content/curriculum/english/C1/units/unit-08-c1-review-final/lesson-01-review-nuance-and-strategy/listening_script.md",
+      "lesson_slug": "01-review-nuance-and-strategy",
+      "context": [
+        "Mina: To be precise, I'd keep the core workflow and postpone optional add-ons.",
+        "Ilham: Can you commit to next week?",
+        "Mina: What I can commit to is a pilot next week, and a full rollout after we validate the metrics.",
+        "Ilham: How do we align everyone?"
+      ]
+    }
+  ]
+}

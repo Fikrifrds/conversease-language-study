@@ -8,6 +8,7 @@
 **Mina:** I understand the concern. To reduce the risk, we can run a two-week pilot and send weekly summaries.  
 **Ilham:** Okay. What happens next?  
 **Mina:** To confirm, next steps are: I'll send a draft plan today, and you'll review it by Friday. Does that timeline work for you?  
+**Ilham:** Yes, that works for me.  
 
 ## Audio Direction
 

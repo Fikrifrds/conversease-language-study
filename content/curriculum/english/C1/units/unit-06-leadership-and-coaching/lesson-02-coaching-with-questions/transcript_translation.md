@@ -8,3 +8,5 @@
 - **Mina:** What's the smallest next step you can take today? -> Langkah kecil paling next yang bisa kamu lakukan hari ini apa?
 - **Ilham:** Draft the rollout checklist. -> Draft checklist rollout.
 - **Mina:** Great. What support do you need from me? -> Oke. Support apa yang kamu butuh dari aku?
+- **Ilham:** Can you review it and help me align with stakeholders? -> Bisa review itu dan bantu aku align dengan stakeholder?
+- **Mina:** Yes. Send it to me today, and I'll help you align tomorrow. -> Iya. Kirim ke aku hari ini, dan aku bantu kamu align besok.

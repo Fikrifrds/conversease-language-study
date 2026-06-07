@@ -9,6 +9,7 @@
 **Mina:** Yes, because the coffee is good and it is quiet.  
 **Hilmi:** Nice. Do you want to go there this weekend?  
 **Mina:** Sure. Are you free on Saturday afternoon?  
+**Hilmi:** Yes, I'm free on Saturday afternoon.  
 
 ## Audio Direction
 

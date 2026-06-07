@@ -7,6 +7,7 @@
 **Receptionist:** We have 3:30 p.m. available.  
 **Mina:** Great. I'll take it.  
 **Receptionist:** Can I have your name, please?  
+**Mina:** Yes, it's Mina.  
 
 ## Audio Direction
 

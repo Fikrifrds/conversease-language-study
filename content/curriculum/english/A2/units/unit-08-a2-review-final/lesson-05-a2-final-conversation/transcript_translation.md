@@ -9,3 +9,4 @@
 - **Mina:** Yes, because the coffee is good and it is quiet. -> Iya, karena kopinya enak dan tempatnya tenang.
 - **Hilmi:** Nice. Do you want to go there this weekend? -> Asik. Kamu mau ke sana weekend ini?
 - **Mina:** Sure. Are you free on Saturday afternoon? -> Boleh. Kamu free Sabtu sore?
+- **Hilmi:** Yes, I'm free on Saturday afternoon. -> Iya, aku bisa Sabtu sore.

@@ -8,6 +8,7 @@
 **Mina:** I get distracted by my phone, and I feel tired.  
 **Hilmi:** I see. Do you want a quick tip?  
 **Mina:** Yes, please. Do you have any tips?  
+**Hilmi:** Sure. Try a 10-minute timer and put your phone away.  
 
 ## Audio Direction
 

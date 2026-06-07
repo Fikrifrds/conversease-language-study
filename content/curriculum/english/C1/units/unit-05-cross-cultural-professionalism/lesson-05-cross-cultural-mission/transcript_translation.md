@@ -8,3 +8,4 @@
 - **Mina:** In our context, it's generally expected that we raise concerns one-on-one first. It might help to start with appreciation. -> Dalam konteks kita, umumnya diharapkan concern diangkat one-on-one dulu. Mungkin membantu mulai dengan apresiasi.
 - **Ilham:** They seemed upset after the last message. -> Mereka kelihatan upset setelah pesan terakhir.
 - **Mina:** I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call? -> Mungkin aku salah baca tone-nya. Biar jelas, niatku konfirmasi constraint, bukan menolak request. Gimana kalau kita kirim note singkat dan tawarkan call cepat?
+- **Ilham:** Yes, let's do that. I'll set up a call. -> Oke, kita lakukan itu. Aku akan jadwalkan call.

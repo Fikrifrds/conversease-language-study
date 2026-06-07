@@ -8,6 +8,7 @@
 **Mina:** In our context, it's generally expected that we raise concerns one-on-one first. It might help to start with appreciation.  
 **Ilham:** They seemed upset after the last message.  
 **Mina:** I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?  
+**Ilham:** Yes, let's do that. I'll set up a call.  
 
 ## Audio Direction
 

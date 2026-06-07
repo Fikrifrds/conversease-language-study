@@ -8,6 +8,7 @@
 **Mina:** The second priority is improving monitoring, so we can catch issues early.  
 **Faris:** Makes sense. What's your priority?  
 **Mina:** What about you? What's your top priority?  
+**Faris:** My top priority is keeping scope small so we can hit the deadline.  
 
 ## Audio Direction
 

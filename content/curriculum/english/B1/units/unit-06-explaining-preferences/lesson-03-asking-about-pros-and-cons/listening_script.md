@@ -8,6 +8,7 @@
 **Hilmi:** Overall, it depends on your work style.  
 **Mina:** Makes sense.  
 **Hilmi:** What's your preference?  
+**Mina:** I prefer a mix. I work remotely most days.  
 
 ## Audio Direction
 

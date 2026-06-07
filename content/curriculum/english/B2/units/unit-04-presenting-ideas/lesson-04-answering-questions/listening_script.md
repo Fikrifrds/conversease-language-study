@@ -8,6 +8,7 @@
 **Mina:** I suggest we assign one owner per quarter to keep it updated.  
 **Ilham:** Makes sense.  
 **Mina:** Any other questions?  
+**Ilham:** No, that's all. Thanks.  
 
 ## Audio Direction
 

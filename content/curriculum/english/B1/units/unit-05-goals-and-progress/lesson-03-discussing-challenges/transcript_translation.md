@@ -8,3 +8,4 @@
 - **Mina:** I get distracted by my phone, and I feel tired. -> Aku gampang terdistraksi sama HP, dan aku capek.
 - **Hilmi:** I see. Do you want a quick tip? -> Oke. Mau tips singkat?
 - **Mina:** Yes, please. Do you have any tips? -> Iya. Ada tips nggak?
+- **Hilmi:** Sure. Try a 10-minute timer and put your phone away. -> Boleh. Coba pasang timer 10 menit dan taruh HP kamu jauh dulu.

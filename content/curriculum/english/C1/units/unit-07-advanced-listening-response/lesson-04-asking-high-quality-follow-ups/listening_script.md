@@ -8,6 +8,7 @@
 **Mina:** What would change your mind about the timeline?  
 **Ilham:** If we see stable metrics in a pilot.  
 **Mina:** Got it. What's the next step we should take today?  
+**Ilham:** Let's draft a smaller-scope plan and share it today.  
 
 ## Audio Direction
 

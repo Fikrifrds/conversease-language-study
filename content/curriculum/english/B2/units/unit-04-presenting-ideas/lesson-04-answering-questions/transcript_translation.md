@@ -8,3 +8,4 @@
 - **Mina:** I suggest we assign one owner per quarter to keep it updated. -> Aku saranin kita assign satu owner per kuartal supaya tetap update.
 - **Ilham:** Makes sense. -> Masuk akal.
 - **Mina:** Any other questions? -> Ada pertanyaan lain?
+- **Ilham:** No, that's all. Thanks. -> Nggak, itu aja. Makasih.
