@@ -4,9 +4,11 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, CircleDot } from "lucide-react";
 import { getLearningProgress, type LearningProgressSummary } from "@/lib/learning-api";
-import { course } from "@/lib/data";
+import { course as defaultCourse, type courses } from "@/lib/data";
 
-export function CourseProgressList() {
+type Course = (typeof courses)[number];
+
+export function CourseProgressList({ course = defaultCourse }: { course?: Course }) {
   const [summary, setSummary] = useState<LearningProgressSummary | null>(null);
 
   useEffect(() => {

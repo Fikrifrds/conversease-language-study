@@ -8,8 +8,8 @@ import yaml
 
 from app.data.content_readiness import all_content_readiness_summary, content_readiness_summary
 from app.data.curriculum import (
-    A1_COURSE,
     get_lesson_or_none,
+    load_a1_course,
     public_lesson_payload,
     refresh_a1_course,
     repo_root,
@@ -27,8 +27,9 @@ class AdminCmsError(Exception):
 
 
 def curriculum_summary() -> dict[str, Any]:
+    a1_course = load_a1_course()
     lessons = []
-    for unit in A1_COURSE["units"]:
+    for unit in a1_course["units"]:
         for lesson in unit["lessons"]:
             lessons.append(
                 admin_lesson_payload(
@@ -41,10 +42,10 @@ def curriculum_summary() -> dict[str, Any]:
     all_readiness = all_content_readiness_summary()
     return {
         "course": {
-            "slug": A1_COURSE["course_slug"],
-            "title": A1_COURSE["course_title"],
-            "level_code": A1_COURSE["level_code"],
-            "unit_count": len(A1_COURSE["units"]),
+            "slug": a1_course["course_slug"],
+            "title": a1_course["course_title"],
+            "level_code": a1_course["level_code"],
+            "unit_count": len(a1_course["units"]),
             "lesson_count": len(lessons),
         },
         "lessons": lessons,

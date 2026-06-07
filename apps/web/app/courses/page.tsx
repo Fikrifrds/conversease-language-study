@@ -1,9 +1,41 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, Lock, Unlock } from "lucide-react";
+import { ArrowRight, Lock } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
-import { course } from "@/lib/data";
+import { courses } from "@/lib/data";
+import { listCourses, type CourseSummary } from "@/lib/learning-api";
 
 export default function CoursesPage() {
+  const [unlockBySlug, setUnlockBySlug] = useState<Record<string, boolean>>({});
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    let cancelled = false;
+    listCourses()
+      .then((summaries: CourseSummary[]) => {
+        if (cancelled) {
+          return;
+        }
+        setUnlockBySlug(Object.fromEntries(summaries.map((c) => [c.slug, c.unlocked])));
+      })
+      .catch(() => {
+        // If the call fails, default to only the first level unlocked.
+        if (!cancelled) {
+          setUnlockBySlug(courses.length ? { [courses[0].slug]: true } : {});
+        }
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setLoaded(true);
+        }
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   return (
     <AppShell requireAuth>
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
@@ -11,56 +43,63 @@ export default function CoursesPage() {
           <p className="text-sm font-semibold uppercase text-leaf">Curriculum</p>
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">English conversation path</h1>
           <p className="mt-3 leading-7 text-ink/70">
-            A1 is active for MVP. The system is ready for A2 and future languages without exposing
-            them before content is prepared.
+            Lima level dari A1 sampai C1. Selesaikan semua lesson di satu level untuk membuka level
+            berikutnya.
           </p>
         </div>
 
-        <div className="mt-8 grid gap-5 lg:grid-cols-[0.85fr_1.15fr]">
-          <Link
-            href={`/courses/${course.slug}`}
-            className="focus-ring rounded-lg border border-ink/10 bg-white p-5 shadow-sm hover:border-leaf/40"
-          >
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <span className="rounded-lg bg-mint px-3 py-1 text-xs font-bold text-leaf">{course.level}</span>
-                <h2 className="mt-4 text-2xl font-semibold">{course.title}</h2>
-                <p className="mt-3 leading-7 text-ink/70">{course.outcome}</p>
-              </div>
-              <ArrowRight className="h-5 w-5 text-leaf" aria-hidden="true" />
-            </div>
-          </Link>
+        <div className="mt-8 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          {courses.map((course, index) => {
+            const unlocked = unlockBySlug[course.slug] ?? index === 0;
+            const prevLevel = index > 0 ? courses[index - 1].level : null;
 
-          <div className="grid gap-4 md:grid-cols-2">
-            {["A2 Everyday Conversations", "B1 Confident Common Situations", "B2 Professional Conversations", "C1 Fluent Communication"].map((title) => (
-              <div key={title} className="rounded-lg border border-ink/10 bg-white p-5 text-ink/70">
-                <Lock className="h-5 w-5 text-coral" aria-hidden="true" />
-                <h3 className="mt-4 font-semibold text-ink">{title}</h3>
-                <p className="mt-2 text-sm">Coming soon</p>
-              </div>
-            ))}
-          </div>
-        </div>
+            if (!unlocked) {
+              return (
+                <div
+                  key={course.slug}
+                  className="rounded-lg border border-ink/10 bg-white p-5 text-ink/60 shadow-sm"
+                  aria-disabled="true"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/50">
+                        {course.level}
+                      </span>
+                      <h2 className="mt-4 text-2xl font-semibold text-ink/70">{course.title}</h2>
+                      <p className="mt-3 text-sm leading-6">{course.outcome}</p>
+                    </div>
+                    <Lock className="h-5 w-5 shrink-0 text-coral" aria-hidden="true" />
+                  </div>
+                  <p className="mt-4 text-xs font-semibold uppercase text-coral">
+                    {loaded ? `Selesaikan ${prevLevel} dulu` : "Memeriksa akses…"}
+                  </p>
+                </div>
+              );
+            }
 
-        <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <div className="flex items-center gap-2">
-            <Unlock className="h-5 w-5 text-leaf" aria-hidden="true" />
-            <h2 className="text-lg font-semibold">A1 Unit Structure</h2>
-          </div>
-          <div className="mt-5 grid gap-3 md:grid-cols-5">
-            {course.units.map((unit, index) => (
+            return (
               <Link
-                key={unit.title}
-                href={`/courses/${course.slug}#unit-${index + 1}`}
-                className="focus-ring rounded-lg bg-paper p-4 hover:bg-mint"
+                key={course.slug}
+                href={`/courses/${course.slug}`}
+                className="focus-ring rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition-colors hover:border-leaf/40"
               >
-                <span className="text-xs font-semibold text-coral">Unit {index + 1}</span>
-                <h3 className="mt-2 font-semibold">{unit.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-ink/60">{unit.outcome}</p>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <span className="rounded-lg bg-mint px-3 py-1 text-xs font-bold text-leaf">
+                      {course.level}
+                    </span>
+                    <h2 className="mt-4 text-2xl font-semibold">{course.title}</h2>
+                    <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
+                  </div>
+                  <ArrowRight className="h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+                </div>
+                <p className="mt-4 text-xs font-semibold uppercase text-leaf">
+                  {course.units.length} unit
+                </p>
               </Link>
-            ))}
-          </div>
-        </section>
+            );
+          })}
+        </div>
       </section>
     </AppShell>
   );

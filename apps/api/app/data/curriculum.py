@@ -13,6 +13,7 @@ COURSE_TITLE = "Start Simple Conversations"
 LEVEL_CODE = "A1"
 LEVEL_NAME = "A1 - Start Simple Conversations"
 LANGUAGE_CODE = "en"
+SUPPORTED_LEVEL_CODES = ("A1", "A2", "B1", "B2", "C1")
 
 SECTION_LABELS = {
     "conversation_goal": "Conversation Goal",
@@ -142,6 +143,24 @@ def load_course(*, language: str = "english", level_code: str) -> dict[str, Any]
     }
 
 
+@lru_cache(maxsize=1)
+def all_courses() -> tuple[dict[str, Any], ...]:
+    """Every level that has authored content, in level order (A1 -> C1)."""
+    courses = []
+    for level_code in SUPPORTED_LEVEL_CODES:
+        course = load_course(level_code=level_code)
+        if course["units"]:
+            courses.append(course)
+    return tuple(courses)
+
+
+def get_course_by_slug(slug: str) -> Optional[dict[str, Any]]:
+    for course in all_courses():
+        if course["course_slug"] == slug:
+            return course
+    return None
+
+
 def load_unit(unit_dir: Path) -> dict[str, Any]:
     unit_data = read_yaml(unit_dir / "unit.yaml")
     lesson_dirs = [unit_dir / lesson_key for lesson_key in unit_data.get("lessons", [])]
@@ -204,9 +223,12 @@ def read_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-@lru_cache(maxsize=1)
-def load_a1_final_evaluation() -> dict[str, Any]:
-    data = read_yaml(a1_root() / "final_evaluation.yaml")
+@lru_cache(maxsize=8)
+def load_final_evaluation(level_code: str = LEVEL_CODE) -> Optional[dict[str, Any]]:
+    path = level_root(language="english", level_code=level_code) / "final_evaluation.yaml"
+    if not path.exists():
+        return None
+    data = read_yaml(path)
     return {
         **data,
         "sections": data.get("sections", []),
@@ -214,11 +236,22 @@ def load_a1_final_evaluation() -> dict[str, Any]:
     }
 
 
+def load_a1_final_evaluation() -> dict[str, Any]:
+    return load_final_evaluation(LEVEL_CODE)
+
+
 def get_lesson_or_none(lesson_slug: str) -> Optional[dict[str, Any]]:
-    for unit in A1_COURSE["units"]:
-        for lesson in unit["lessons"]:
-            if lesson["slug"] == lesson_slug:
-                return {**lesson, "unit_slug": unit["slug"], "unit_title": unit["title"]}
+    for course in all_courses():
+        for unit in course["units"]:
+            for lesson in unit["lessons"]:
+                if lesson["slug"] == lesson_slug:
+                    return {
+                        **lesson,
+                        "unit_slug": unit["slug"],
+                        "unit_title": unit["title"],
+                        "level_code": course["level_code"],
+                        "course_slug": course["course_slug"],
+                    }
     return None
 
 
@@ -254,52 +287,69 @@ def public_final_evaluation_payload(evaluation: Optional[dict[str, Any]] = None)
     }
 
 
-def published_lessons() -> list[dict[str, Any]]:
+def published_lessons(level_code: Optional[str] = None) -> list[dict[str, Any]]:
+    """Published lessons across all levels, or one level when level_code is given."""
     lessons = []
-    for unit in A1_COURSE["units"]:
-        for lesson in unit["lessons"]:
-            if lesson.get("status") == "published":
-                lessons.append({**lesson, "unit_slug": unit["slug"], "unit_title": unit["title"]})
+    for course in all_courses():
+        if level_code and course["level_code"] != level_code:
+            continue
+        for unit in course["units"]:
+            for lesson in unit["lessons"]:
+                if lesson.get("status") == "published":
+                    lessons.append(
+                        {
+                            **lesson,
+                            "unit_slug": unit["slug"],
+                            "unit_title": unit["title"],
+                            "level_code": course["level_code"],
+                            "course_slug": course["course_slug"],
+                        }
+                    )
     return lessons
 
 
 def validate_curriculum_content() -> list[str]:
     issues: list[str] = []
-    course = load_a1_course()
     seen_slugs: set[str] = set()
-    final_evaluation = a1_root() / "final_evaluation.yaml"
 
-    if not final_evaluation.exists():
-        issues.append(f"Missing final evaluation file: {final_evaluation}")
-    else:
-        issues.extend(validate_final_evaluation(load_a1_final_evaluation()))
+    # Content structure is validated for every level that has content; production
+    # gates (published status, tracker review/publish) are enforced for A1 only,
+    # since higher levels are authored but not yet production-reviewed.
+    for course in all_courses():
+        level_code = course["level_code"]
+        is_production_level = level_code == LEVEL_CODE
+        evaluation = load_final_evaluation(level_code)
+        if evaluation is None:
+            issues.append(f"Missing final evaluation file for level: {level_code}")
+        else:
+            issues.extend(validate_final_evaluation(evaluation, level_code))
 
-    for unit in course["units"]:
-        if unit.get("status") != "published":
-            issues.append(f"Unit is not published: {unit['slug']}")
+        for unit in course["units"]:
+            if is_production_level and unit.get("status") != "published":
+                issues.append(f"Unit is not published: {unit['slug']}")
 
-        for lesson in unit["lessons"]:
-            slug = lesson["slug"]
-            if slug in seen_slugs:
-                issues.append(f"Duplicate lesson slug: {slug}")
-            seen_slugs.add(slug)
+            for lesson in unit["lessons"]:
+                slug = lesson["slug"]
+                if slug in seen_slugs:
+                    issues.append(f"Duplicate lesson slug: {slug}")
+                seen_slugs.add(slug)
 
-            if lesson.get("status") != "published":
-                issues.append(f"Lesson is not published: {slug}")
+                if is_production_level and lesson.get("status") != "published":
+                    issues.append(f"Lesson is not published: {slug}")
 
-            if not lesson.get("sections"):
-                issues.append(f"Lesson has no required sections: {slug}")
+                if not lesson.get("sections"):
+                    issues.append(f"Lesson has no required sections: {slug}")
 
-            if not lesson.get("roleplay", {}).get("opening_line"):
-                issues.append(f"Lesson has no roleplay opening line: {slug}")
+                if not lesson.get("roleplay", {}).get("opening_line"):
+                    issues.append(f"Lesson has no roleplay opening line: {slug}")
 
-            lesson_dir = Path(lesson["content_files"]["lesson"]).parent
-            for filename in REQUIRED_LESSON_FILES:
-                file_path = lesson_dir / filename
-                if not file_path.exists():
-                    issues.append(f"Missing lesson content file for {slug}: {file_path}")
+                lesson_dir = Path(lesson["content_files"]["lesson"]).parent
+                for filename in REQUIRED_LESSON_FILES:
+                    file_path = lesson_dir / filename
+                    if not file_path.exists():
+                        issues.append(f"Missing lesson content file for {slug}: {file_path}")
 
-    issues.extend(validate_production_tracker(course))
+    issues.extend(validate_production_tracker(load_a1_course()))
     return issues
 
 
@@ -366,7 +416,9 @@ def validate_production_tracker(course: Optional[dict[str, Any]] = None) -> list
     return issues
 
 
-def validate_final_evaluation(evaluation: dict[str, Any]) -> list[str]:
+def validate_final_evaluation(
+    evaluation: dict[str, Any], expected_level_code: str = LEVEL_CODE
+) -> list[str]:
     issues: list[str] = []
 
     for field in FINAL_EVALUATION_REQUIRED_FIELDS:
@@ -376,10 +428,12 @@ def validate_final_evaluation(evaluation: dict[str, Any]) -> list[str]:
     if issues:
         return issues
 
-    if evaluation.get("level_code") != LEVEL_CODE:
-        issues.append("Final evaluation level_code must be A1")
+    if evaluation.get("level_code") != expected_level_code:
+        issues.append(f"Final evaluation level_code must be {expected_level_code}")
 
-    if evaluation.get("status") != "published":
+    # Only the production level (A1) must be published; higher levels may be
+    # authored but still "planned".
+    if expected_level_code == LEVEL_CODE and evaluation.get("status") != "published":
         issues.append("Final evaluation must be published")
 
     overall_threshold = int(evaluation.get("overall_threshold", 0))
@@ -440,7 +494,8 @@ A1_COURSE = load_a1_course()
 def refresh_a1_course() -> dict[str, Any]:
     load_a1_course.cache_clear()
     load_course.cache_clear()
-    load_a1_final_evaluation.cache_clear()
+    load_final_evaluation.cache_clear()
+    all_courses.cache_clear()
     fresh_course = load_a1_course()
     A1_COURSE.clear()
     A1_COURSE.update(fresh_course)

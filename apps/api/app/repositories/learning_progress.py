@@ -4,7 +4,12 @@ from typing import Optional
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.data.curriculum import A1_COURSE, get_lesson_or_none, published_lessons
+from app.data.curriculum import (
+    A1_COURSE,
+    all_courses,
+    get_lesson_or_none,
+    published_lessons,
+)
 from app.db.models import LessonProgressModel, UserOnboardingProfileModel
 
 
@@ -65,7 +70,7 @@ class LearningProgressRepository:
         if progress is None:
             progress = LessonProgressModel(
                 user_id=user_id,
-                course_slug=DEFAULT_COURSE_SLUG,
+                course_slug=lesson.get("course_slug", DEFAULT_COURSE_SLUG),
                 lesson_slug=lesson_slug,
                 status="in_progress",
                 completed_sections=[],
@@ -98,7 +103,7 @@ class LearningProgressRepository:
         if progress is None:
             progress = LessonProgressModel(
                 user_id=user_id,
-                course_slug=DEFAULT_COURSE_SLUG,
+                course_slug=lesson.get("course_slug", DEFAULT_COURSE_SLUG),
                 lesson_slug=lesson_slug,
                 status="completed",
                 completed_sections=sections,
@@ -136,7 +141,7 @@ class LearningProgressRepository:
             .scalars()
             .all()
         }
-        lessons = published_lessons()
+        lessons = published_lessons(DEFAULT_LEVEL_CODE)
         total_lessons = len(lessons)
         completed_lessons = sum(
             1
@@ -166,6 +171,36 @@ class LearningProgressRepository:
             else None,
             "lessons": [lesson_summary(lesson, progress_by_lesson) for lesson in lessons],
         }
+
+    def completed_lesson_slugs(self, user_id: str) -> set[str]:
+        return {
+            progress.lesson_slug
+            for progress in self.db.execute(
+                select(LessonProgressModel).where(
+                    LessonProgressModel.user_id == user_id,
+                    LessonProgressModel.status == "completed",
+                )
+            )
+            .scalars()
+            .all()
+        }
+
+    def level_unlock_map(self, user_id: str) -> dict[str, bool]:
+        """Per-level unlock state. A level is unlocked if it is the first level,
+        or every published lesson in the previous level is completed."""
+        completed = self.completed_lesson_slugs(user_id)
+        unlocked: dict[str, bool] = {}
+        prev_complete = True  # first level is always unlocked
+        for course in all_courses():
+            unlocked[course["level_code"]] = prev_complete
+            slugs = [
+                lesson["slug"]
+                for unit in course["units"]
+                for lesson in unit["lessons"]
+                if lesson.get("status") == "published"
+            ]
+            prev_complete = bool(slugs) and all(s in completed for s in slugs)
+        return unlocked
 
     def _get_lesson_progress_model(
         self,

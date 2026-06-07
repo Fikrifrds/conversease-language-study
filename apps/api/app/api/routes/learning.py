@@ -9,8 +9,9 @@ from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.api.deps import get_current_user
 from app.data.content_readiness import lesson_audio_asset
 from app.data.curriculum import (
-    A1_COURSE,
-    load_a1_final_evaluation,
+    all_courses,
+    get_course_by_slug,
+    load_final_evaluation,
     public_course_payload,
     public_final_evaluation_payload,
     public_lesson_payload,
@@ -110,30 +111,50 @@ async def list_levels() -> dict:
 
 
 @router.get("/courses")
-async def list_courses() -> dict:
-    return {"data": [public_course_payload(A1_COURSE)]}
+async def list_courses(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    unlock = LearningProgressRepository(db).level_unlock_map(current_user.id)
+    return {
+        "data": [
+            {**public_course_payload(course), "unlocked": unlock.get(course["level_code"], False)}
+            for course in all_courses()
+        ]
+    }
 
 
 @router.get("/courses/{slug}")
-async def get_course(slug: str) -> dict:
-    if slug != A1_COURSE["course_slug"]:
+async def get_course(
+    slug: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    course = get_course_by_slug(slug)
+    if course is None:
         raise HTTPException(status_code=404, detail="Course not found")
-    return {"data": public_course_payload(A1_COURSE)}
+    unlock = LearningProgressRepository(db).level_unlock_map(current_user.id)
+    return {
+        "data": {
+            **public_course_payload(course),
+            "unlocked": unlock.get(course["level_code"], False),
+        }
+    }
 
 
 @router.get("/lessons/{slug}")
 async def get_lesson(slug: str) -> dict:
-    for unit in A1_COURSE["units"]:
-        for lesson in unit["lessons"]:
-            if lesson["slug"] == slug:
-                return {
-                    "data": {
-                        **public_lesson_payload(lesson),
-                        "unit": unit["title"],
-                        "course": A1_COURSE["course_title"],
-                    }
-                }
-    raise HTTPException(status_code=404, detail="Lesson not found")
+    lesson = get_lesson_or_none(slug)
+    if lesson is None:
+        raise HTTPException(status_code=404, detail="Lesson not found")
+    return {
+        "data": {
+            **public_lesson_payload(lesson),
+            "unit": lesson["unit_title"],
+            "course": lesson.get("course_slug", ""),
+            "level_code": lesson.get("level_code", ""),
+        }
+    }
 
 
 @router.get("/lessons/{slug}/audio")
@@ -151,9 +172,10 @@ async def get_lesson_audio(
 
 @router.get("/level-tests/{level_code}")
 async def get_level_test(level_code: str) -> dict:
-    if level_code.upper() != "A1":
+    evaluation = load_final_evaluation(level_code.upper())
+    if evaluation is None:
         raise HTTPException(status_code=404, detail="Level test not found")
-    return {"data": public_final_evaluation_payload(load_a1_final_evaluation())}
+    return {"data": public_final_evaluation_payload(evaluation)}
 
 
 @router.get("/me/onboarding")
@@ -386,7 +408,7 @@ async def get_level_test_attempt_report(
 
 @router.post("/level-tests/A1/attempts/preview")
 async def preview_a1_level_attempt(payload: dict) -> dict:
-    evaluation = load_a1_final_evaluation()
+    evaluation = load_final_evaluation("A1")
     scores = sanitize_scores(payload.get("scores", {}), evaluation)
     lesson_completion_percent = int(payload.get("lesson_completion_percent", 0))
     result = score_attempt(

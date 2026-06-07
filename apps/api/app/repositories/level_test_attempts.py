@@ -7,7 +7,7 @@ from uuid import uuid4
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.data.curriculum import load_a1_final_evaluation, public_final_evaluation_payload
+from app.data.curriculum import load_final_evaluation, public_final_evaluation_payload
 from app.db.models import LevelTestAttemptModel
 from app.domain.evaluation import evaluate_level_attempt
 
@@ -174,9 +174,9 @@ class LevelTestAttemptRepository:
 
 
 def evaluation_for_level(level_code: str) -> dict[str, Any]:
-    if level_code.upper() != "A1":
+    evaluation = load_final_evaluation(level_code.upper())
+    if evaluation is None:
         raise KeyError(level_code)
-    evaluation = load_a1_final_evaluation()
     if evaluation.get("status") != "published":
         raise InvalidLevelTestAttemptStateError("Level test is not published")
     return evaluation

@@ -415,6 +415,36 @@ export async function getLearningProgress(): Promise<LearningProgressSummary> {
   };
 }
 
+export type CourseSummary = {
+  slug: string;
+  levelCode: string;
+  title: string;
+  unitCount: number;
+  unlocked: boolean;
+};
+
+export async function listCourses(): Promise<CourseSummary[]> {
+  const response = await requestJson<
+    ApiResponse<
+      Array<{
+        course_slug: string;
+        level_code: string;
+        course_title: string;
+        units: unknown[];
+        unlocked: boolean;
+      }>
+    >
+  >("/courses");
+
+  return response.data.map((course) => ({
+    slug: course.course_slug,
+    levelCode: course.level_code,
+    title: course.course_title,
+    unitCount: course.units.length,
+    unlocked: course.unlocked
+  }));
+}
+
 export async function getLessonProgress(lessonSlug: string): Promise<LessonProgress | null> {
   const response = await requestJson<ApiResponse<ApiLessonProgress | null>>(
     `/lessons/${lessonSlug}/progress`

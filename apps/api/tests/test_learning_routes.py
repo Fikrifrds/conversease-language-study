@@ -78,6 +78,57 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_courses_lists_all_levels_with_unlock_flags(self):
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        headers = {"Authorization": f"Bearer {create_access_token('user-123')}"}
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="user-123",
+                        name="QA",
+                        email="qa-courses@example.local",
+                        password_hash="hashed",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            response = client.get("/api/courses", headers=headers)
+            self.assertEqual(response.status_code, 200)
+            courses = response.json()["data"]
+            self.assertEqual([c["level_code"] for c in courses], ["A1", "A2", "B1", "B2", "C1"])
+            # Fresh user: A1 unlocked, higher levels locked.
+            self.assertTrue(courses[0]["unlocked"])
+            self.assertFalse(courses[1]["unlocked"])
+
+            # A non-A1 lesson resolves through the generalized lookup.
+            b2 = client.get("/api/lessons/clear-argument-mission")
+            self.assertEqual(b2.status_code, 200)
+            self.assertEqual(b2.json()["data"]["level_code"], "B2")
+        finally:
+            app.dependency_overrides.clear()
+
     def test_get_a1_level_test_returns_published_test(self):
         client = TestClient(create_app())
 

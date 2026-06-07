@@ -10444,31 +10444,31 @@ export const courses = [
             {
               slug: "starting-small-talk",
               title: "Starting Small Talk",
-              status: "draft",
+              status: "published",
               minutes: 10
             },
             {
               slug: "asking-follow-up-questions",
               title: "Asking Follow-up Questions",
-              status: "draft",
+              status: "published",
               minutes: 10
             },
             {
               slug: "talking-about-weekends",
               title: "Talking About Weekends",
-              status: "draft",
+              status: "published",
               minutes: 10
             },
             {
               slug: "reacting-politely",
               title: "Reacting Politely",
-              status: "draft",
+              status: "published",
               minutes: 10
             },
             {
               slug: "small-talk-mission",
               title: "Small Talk Mission",
-              status: "draft",
+              status: "published",
               minutes: 12
             },
           ]

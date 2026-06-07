@@ -1,0 +1,87 @@
+level_code: B2
+title: B2 Level Conversation Test
+status: planned
+description: 'Final readiness test for professional conversation: clear arguments, meetings, negotiation, presenting ideas, and handling client communication.'
+overall_threshold: 78
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 70
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a professional discussion and identify the main argument, the counter-point, and the agreed action items.
+      success_criteria:
+        - Follows a multi-turn professional conversation.
+        - Identifies the speaker's argument and the counter-argument.
+        - Captures the decision or action items.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 70
+    task:
+      type: roleplay_response
+      prompt: Take part in a meeting-style conversation - state a clear position, support it with reasons and an example, and respond to a counter-point.
+      success_criteria:
+        - States a clear position and supports it with reasons.
+        - Gives a relevant example.
+        - Acknowledges a counter-point and responds constructively.
+        - Proposes or confirms a next step.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 65
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read a short professional passage aloud with clear stress, linking, and natural pacing.
+      success_criteria:
+        - Pronounces professional vocabulary clearly.
+        - Maintains smooth, confident pacing.
+        - Uses intonation that signals emphasis and contrast.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 70
+    task:
+      type: phrase_selection
+      prompt: Select phrases for stating opinions, disagreeing politely, and summarizing decisions.
+      success_criteria:
+        - Chooses context-appropriate B2 professional phrases.
+        - Uses hedging and politeness for disagreement.
+        - Explains the meaning and tone clearly.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 70
+    task:
+      type: sentence_completion
+      prompt: Complete sentences using B2 patterns (conditionals, contrast linkers, and reported speech).
+      success_criteria:
+        - Uses contrast linkers (however, although) correctly.
+        - Forms conditionals for hypothetical proposals.
+        - Reports what others said accurately.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 65
+    task:
+      type: short_message_reading
+      prompt: Read a short professional email or article excerpt and answer inference questions.
+      success_criteria:
+        - Identifies the writer's main point and intent.
+        - Distinguishes fact from opinion.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 65
+    task:
+      type: short_reply_writing
+      prompt: Write a short professional reply that states a position, gives one reason, and proposes a next step.
+      success_criteria:
+        - Writes clear, well-organized B2 sentences.
+        - States a position with a supporting reason.
+        - Closes with a professional next step.

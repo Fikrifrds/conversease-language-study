@@ -1,9 +1,20 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { AppShell } from "@/components/app-shell";
 import { CourseProgressList } from "@/components/course-progress-list";
-import { course } from "@/lib/data";
+import { courses } from "@/lib/data";
 
-export default function CourseDetailPage() {
+export function generateStaticParams() {
+  return courses.map((course) => ({ slug: course.slug }));
+}
+
+export default function CourseDetailPage({ params }: { params: { slug: string } }) {
+  const course = courses.find((item) => item.slug === params.slug);
+
+  if (!course) {
+    notFound();
+  }
+
   return (
     <AppShell requireAuth>
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
@@ -21,7 +32,7 @@ export default function CourseDetailPage() {
           </Link>
         </div>
 
-        <CourseProgressList />
+        <CourseProgressList course={course} />
       </section>
     </AppShell>
   );

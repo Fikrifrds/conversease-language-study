@@ -1,0 +1,87 @@
+level_code: C1
+title: C1 Level Conversation Test
+status: planned
+description: 'Final readiness test for fluent, nuanced communication: nuanced opinions, strategic workplace talk, advanced presentations, debate, and cross-cultural professionalism.'
+overall_threshold: 82
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 75
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a nuanced discussion and identify the underlying position, implied attitude, and any strategic framing.
+      success_criteria:
+        - Follows abstract, fast-paced discussion.
+        - Detects implied meaning, tone, and attitude.
+        - Identifies strategic framing and subtle disagreement.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 75
+    task:
+      type: roleplay_response
+      prompt: Lead a nuanced discussion - frame a complex topic, present a balanced view, handle challenging questions, and steer toward a conclusion.
+      success_criteria:
+        - Frames a complex topic clearly and concisely.
+        - Presents a balanced, well-reasoned view with nuance.
+        - Handles challenging or sensitive questions diplomatically.
+        - Steers the conversation toward a clear conclusion.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 70
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read an advanced passage aloud at a natural native-like pace with precise stress and expressive intonation.
+      success_criteria:
+        - Maintains near-native pacing and rhythm.
+        - Uses stress and intonation to convey nuance and emphasis.
+        - Pronounces advanced and idiomatic vocabulary accurately.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 75
+    task:
+      type: phrase_selection
+      prompt: Select precise phrases for diplomatic disagreement, strategic framing, and nuanced opinion.
+      success_criteria:
+        - Chooses precise, register-appropriate C1 phrases.
+        - Uses idiomatic and diplomatic language naturally.
+        - Explains subtle differences in tone and meaning.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 75
+    task:
+      type: sentence_completion
+      prompt: Complete sentences using advanced patterns (cleft sentences, inversion, and nuanced modality).
+      success_criteria:
+        - Uses cleft and emphatic structures for nuance.
+        - Applies advanced modality to hedge or assert.
+        - Keeps complex sentences clear and controlled.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 70
+    task:
+      type: short_message_reading
+      prompt: Read an opinion or analytical text and answer inference and tone questions.
+      success_criteria:
+        - Identifies argument structure and implied stance.
+        - Interprets tone, irony, and nuance.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 70
+    task:
+      type: short_reply_writing
+      prompt: Write a concise, persuasive reply that frames a position, acknowledges nuance, and proposes a strategic next step.
+      success_criteria:
+        - Writes polished, well-structured C1 prose.
+        - Frames a nuanced, persuasive position.
+        - Closes with a clear strategic recommendation.
