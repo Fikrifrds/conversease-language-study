@@ -6,6 +6,7 @@ import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { LessonAudioPlayer } from "@/components/lesson-audio-player";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
+import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-practice";
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { lessonCatalog, lessonsBySlug } from "@/lib/data";
@@ -86,6 +87,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
                 <SimpleMarkdown markdown={lesson.pronunciationDrill} />
               </div>
+              <PronunciationRepeatPractice drillMarkdown={lesson.pronunciationDrill} />
               <SpeakClearlyPractice prompts={lesson.prompts} />
             </section>
 
