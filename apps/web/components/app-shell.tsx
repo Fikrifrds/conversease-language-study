@@ -41,12 +41,6 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
             ))}
           </nav>
           <div className="flex items-center gap-2">
-            <Link
-              href="/pricing"
-              className="focus-ring hidden h-10 items-center justify-center rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf sm:inline-flex"
-            >
-              Upgrade
-            </Link>
             <UserAccountMenu />
           </div>
         </div>

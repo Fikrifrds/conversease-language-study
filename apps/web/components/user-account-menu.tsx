@@ -125,23 +125,25 @@ export function UserAccountMenu() {
   const minutes = access?.minutes.totalMinutes;
 
   return (
-    <div className="flex items-center gap-2">
-      {/* Minutes chip — always visible so users see their Coach quota. */}
+    <div className="flex items-center gap-1.5">
+      {/* Compact minutes chip — Conversation Coach quota. */}
       <span
-        className="hidden h-10 items-center gap-1.5 rounded-lg border border-ink/10 bg-white px-3 text-sm font-semibold text-ink/80 sm:inline-flex"
+        className="hidden h-9 items-center gap-1 rounded-lg border border-ink/10 bg-white px-2.5 text-sm font-semibold text-ink/80 sm:inline-flex"
         title="Sisa menit Conversation Coach"
       >
         <Timer className="h-4 w-4 text-leaf" aria-hidden="true" />
         {minutes ?? "—"}
-        <span className="text-xs font-medium text-ink/50">menit</span>
       </span>
 
-      {/* Plan badge: Pro highlighted, free shows an upgrade affordance. */}
-      {isPro ? (
-        <span className="hidden h-10 items-center gap-1 rounded-lg bg-leaf px-3 text-sm font-bold text-white sm:inline-flex">
+      {/* Free users get a compact Upgrade button; Pro users don't see it. */}
+      {!isPro ? (
+        <Link
+          href="/pricing"
+          className="focus-ring inline-flex h-9 items-center gap-1 rounded-lg bg-ink px-3 text-sm font-semibold text-white hover:bg-leaf"
+        >
           <Sparkles className="h-4 w-4" aria-hidden="true" />
-          Pro
-        </span>
+          <span className="hidden sm:inline">Upgrade</span>
+        </Link>
       ) : null}
 
       <div className="relative" ref={menuRef}>
@@ -150,10 +152,15 @@ export function UserAccountMenu() {
           onClick={() => setOpen((value) => !value)}
           aria-haspopup="menu"
           aria-expanded={open}
-          className="focus-ring inline-flex h-10 items-center gap-2 rounded-lg border border-ink/15 px-2.5 text-sm font-semibold text-ink/80 hover:bg-mint sm:px-3"
+          className="focus-ring inline-flex h-9 items-center gap-1.5 rounded-lg border border-ink/15 px-2 text-sm font-semibold text-ink/80 hover:bg-mint sm:px-2.5"
         >
           <UserCircle className="h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
-          <span className="hidden max-w-[120px] truncate sm:block">{session.user.name}</span>
+          <span className="hidden max-w-[110px] truncate sm:block">{session.user.name}</span>
+          {isPro ? (
+            <span className="rounded bg-leaf px-1.5 py-0.5 text-[10px] font-bold uppercase leading-none text-white">
+              Pro
+            </span>
+          ) : null}
           <ChevronDown className="h-4 w-4 shrink-0 text-ink/50" aria-hidden="true" />
         </button>
 
