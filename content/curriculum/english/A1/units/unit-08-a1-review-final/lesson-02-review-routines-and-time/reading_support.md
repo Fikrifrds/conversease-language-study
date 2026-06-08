@@ -1,6 +1,6 @@
 # Reading Support
 
-Ben wakes up at six and studies English at seven. His speaking class is on Tuesday at eight.
+Ben wakes up at six and studies English at seven. Alya says they have speaking class this week. Ben asks when the class is, and Alya says it is on Tuesday at eight.
 
 ## Check
 

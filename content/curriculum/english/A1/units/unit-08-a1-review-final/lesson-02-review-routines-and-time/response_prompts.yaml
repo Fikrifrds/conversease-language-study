@@ -7,11 +7,15 @@ prompts:
   target_response: I study English at seven.
   acceptable_variations:
   - I study English at seven.
-- prompt: Ask about class time.
+- prompt: Ask when the class is.
   target_response: When is our speaking class?
   acceptable_variations:
   - When is our speaking class?
-- prompt: Confirm the day and time.
+- prompt: Say the class day and time.
   target_response: It is on Tuesday at eight.
   acceptable_variations:
   - It is on Tuesday at eight.
+- prompt: Close after hearing the schedule.
+  target_response: See you then.
+  acceptable_variations:
+  - See you then.

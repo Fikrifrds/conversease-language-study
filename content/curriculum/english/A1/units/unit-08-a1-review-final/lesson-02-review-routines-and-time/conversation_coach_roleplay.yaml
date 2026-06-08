@@ -2,7 +2,7 @@ scenario_key: reviewing_routine_and_class_time
 mode: lesson_practice_coach
 level_code: A1
 opening_line: What do you do in the morning?
-learner_goal: Say one routine, one time, ask about class time, and confirm the schedule.
+learner_goal: Say one routine, one time, ask about class time, and close after hearing the schedule.
 max_turns: 8
 feedback_level:
   free: basic
@@ -11,8 +11,24 @@ target_phrases:
 - I wake up at six.
 - I study English at seven.
 - When is our speaking class?
-- It is on Tuesday at eight.
 - See you then.
+turns:
+- coach: What do you do in the morning?
+  hint: Sebutkan satu rutinitas dan jam.
+  sample_answer: I wake up at six.
+  focus: Routine time
+- coach: Nice. Do you study English after that?
+  hint: Jawab dengan Yes, lalu sebutkan jam belajar.
+  sample_answer: Yes, I study English at seven.
+  focus: Study routine
+- coach: Good. We have speaking class this week.
+  hint: Tanyakan kapan kelas speaking.
+  sample_answer: When is our speaking class?
+  focus: Class schedule question
+- coach: It is on Tuesday at eight.
+  hint: Tutup dengan See you then.
+  sample_answer: Great. See you then.
+  focus: Closing
 rubric:
   speaking:
     minimum_score: 60

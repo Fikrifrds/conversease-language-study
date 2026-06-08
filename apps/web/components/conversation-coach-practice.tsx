@@ -896,21 +896,21 @@ const turnsByLessonSlug: Record<string, CoachTurn[]> = {
       focus: "Routine time"
     },
     {
-      coach: "Do you study English every day?",
+      coach: "Nice. Do you study English after that?",
       hint: "Jawab dengan Yes, lalu sebutkan jam belajar.",
       sampleAnswer: "Yes, I study English at seven.",
       focus: "Study routine"
     },
     {
-      coach: "When is our speaking class?",
-      hint: "Jawab dengan on untuk hari dan at untuk jam.",
-      sampleAnswer: "It is on Tuesday at eight.",
-      focus: "Schedule"
+      coach: "Good. We have speaking class this week.",
+      hint: "Tanyakan kapan kelas speaking.",
+      sampleAnswer: "When is our speaking class?",
+      focus: "Class schedule question"
     },
     {
-      coach: "Great. See you on Tuesday.",
+      coach: "It is on Tuesday at eight.",
       hint: "Tutup dengan See you then.",
-      sampleAnswer: "See you then.",
+      sampleAnswer: "Great. See you then.",
       focus: "Closing"
     }
   ],
