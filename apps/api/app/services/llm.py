@@ -142,16 +142,25 @@ class OpenAIProvider(LLMProvider):
         model_config: ModelConfig,
         response_schema: Optional[Dict[str, Any]] = None,
     ) -> LLMResult:
+        schema_payload: Optional[Dict[str, Any]] = None
+        if response_schema is not None:
+            schema_payload = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "response",
+                    "schema": response_schema,
+                    "strict": True,
+                },
+            }
+
         payload: Dict[str, Any] = {
             "model": model_config.model,
             "messages": [{"role": message.role, "content": message.content} for message in messages],
             "temperature": model_config.temperature,
             "max_tokens": model_config.max_tokens,
         }
-        if response_schema is not None:
-            payload["response_format"] = {
-                "type": "json_object",
-            }
+        if schema_payload is not None:
+            payload["response_format"] = schema_payload
 
         headers = {
             "Authorization": f"Bearer {self._api_key}",
@@ -198,6 +207,19 @@ class OpenAIProvider(LLMProvider):
                     detail,
                 )
                 last_error = exc
+                schema_rejected = status == 400 and schema_payload is not None and attempt == 0 and any(
+                    needle in detail.lower()
+                    for needle in (
+                        "response_format",
+                        "json_schema",
+                        "schema",
+                        "invalid",
+                    )
+                )
+                if schema_rejected:
+                    payload["response_format"] = {"type": "json_object"}
+                    await asyncio.sleep(0.1)
+                    continue
                 retryable = status in {408, 429, 500, 502, 503, 504}
                 if retryable and attempt == 0:
                     await asyncio.sleep(0.35 + random.random() * 0.35)

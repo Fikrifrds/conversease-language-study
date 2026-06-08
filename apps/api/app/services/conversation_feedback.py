@@ -133,23 +133,58 @@ def _parse_feedback(
 ) -> CoachFeedback:
     try:
         data = json.loads(_extract_json(content))
-        scores = data["scores"]
+        raw_scores = (
+            data.get("scores")
+            or data.get("score")
+            or data.get("scoring")
+            or (
+                {"speaking": data.get("speaking"), "grammar": data.get("grammar"), "fluency": data.get("fluency")}
+                if any(key in data for key in ("speaking", "grammar", "fluency"))
+                else None
+            )
+        )
+        if not isinstance(raw_scores, dict):
+            raw_scores = {}
+        scores = raw_scores
+
+        better_version = (
+            data.get("better_version")
+            or data.get("betterVersion")
+            or data.get("better")
+            or data.get("suggested_answer")
+            or data.get("suggestedAnswer")
+            or fallback.better_version
+        )
+        indonesian_explanation = (
+            data.get("indonesian_explanation")
+            or data.get("indonesianExplanation")
+            or data.get("explanation_id")
+            or data.get("explanationId")
+            or fallback.indonesian_explanation
+        )
+        next_practice = (
+            data.get("next_practice")
+            or data.get("nextPractice")
+            or data.get("tip")
+            or fallback.next_practice
+        )
         return CoachFeedback(
-            better_version=str(data["better_version"]).strip() or fallback.better_version,
-            indonesian_explanation=str(data["indonesian_explanation"]).strip()
+            better_version=str(better_version).strip() or fallback.better_version,
+            indonesian_explanation=str(indonesian_explanation).strip()
             or fallback.indonesian_explanation,
-            next_practice=str(data["next_practice"]).strip() or fallback.next_practice,
+            next_practice=str(next_practice).strip() or fallback.next_practice,
             scores={
-                "speaking": clamp_score(int(scores["speaking"])),
-                "grammar": clamp_score(int(scores["grammar"])),
-                "fluency": clamp_score(int(scores["fluency"])),
+                "speaking": clamp_score(int(scores.get("speaking", fallback.scores["speaking"]))),
+                "grammar": clamp_score(int(scores.get("grammar", fallback.scores["grammar"]))),
+                "fluency": clamp_score(int(scores.get("fluency", fallback.scores["fluency"]))),
             },
         )
     except (ValueError, KeyError, TypeError) as exc:
         logger.error(
-            "conversation_feedback_parse_failed lesson=%s turn=%s: %s",
+            "conversation_feedback_parse_failed lesson=%s turn=%s keys=%s: %s",
             lesson_slug,
             turn_index,
+            sorted(list(data.keys())) if "data" in locals() and isinstance(data, dict) else "n/a",
             exc,
         )
         return fallback

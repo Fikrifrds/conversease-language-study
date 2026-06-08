@@ -227,36 +227,73 @@ def _fallback_reply(*, topic: PartnerTopic, turns_left: int) -> PartnerReply:
 def _parse_reply(content: str, *, fallback: PartnerReply, turns_left: int) -> PartnerReply:
     try:
         data = json.loads(_extract_json(content))
-        reply = str(data["reply"]).strip()
+        raw_reply = (
+            data.get("reply")
+            or data.get("partner_reply")
+            or data.get("partnerReply")
+            or data.get("answer")
+            or data.get("text")
+            or data.get("message")
+        )
+        reply = str(raw_reply or "").strip()
         if not reply:
             return fallback
-        should_end = bool(data.get("should_end", False)) or turns_left <= 0
+        should_end = bool(data.get("should_end") if "should_end" in data else data.get("shouldEnd", False)) or turns_left <= 0
         return PartnerReply(
             reply=reply,
-            on_topic=bool(data.get("on_topic", True)),
+            on_topic=bool(data.get("on_topic") if "on_topic" in data else data.get("onTopic", True)),
             should_end=should_end,
         )
     except (ValueError, KeyError, TypeError) as exc:
-        logger.error("partner_reply_parse_failed: %s", exc)
+        logger.error(
+            "partner_reply_parse_failed keys=%s: %s",
+            sorted(list(data.keys())) if "data" in locals() and isinstance(data, dict) else "n/a",
+            exc,
+        )
         return fallback
 
 
 def _parse_summary(content: str, *, fallback: PartnerSummary) -> PartnerSummary:
     try:
         data = json.loads(_extract_json(content))
-        scores = data["scores"]
+        raw_scores = (
+            data.get("scores")
+            or data.get("score")
+            or data.get("scoring")
+            or (
+                {"speaking": data.get("speaking"), "grammar": data.get("grammar"), "fluency": data.get("fluency")}
+                if any(key in data for key in ("speaking", "grammar", "fluency"))
+                else None
+            )
+        )
+        if not isinstance(raw_scores, dict):
+            raw_scores = {}
+        scores = raw_scores
+
+        summary = data.get("summary") or data.get("note") or fallback.summary
+        indonesian_explanation = (
+            data.get("indonesian_explanation")
+            or data.get("indonesianExplanation")
+            or data.get("explanation_id")
+            or data.get("explanationId")
+            or fallback.indonesian_explanation
+        )
         return PartnerSummary(
-            summary=str(data["summary"]).strip() or fallback.summary,
-            indonesian_explanation=str(data["indonesian_explanation"]).strip()
+            summary=str(summary).strip() or fallback.summary,
+            indonesian_explanation=str(indonesian_explanation).strip()
             or fallback.indonesian_explanation,
             scores={
-                "speaking": clamp_score(int(scores["speaking"])),
-                "grammar": clamp_score(int(scores["grammar"])),
-                "fluency": clamp_score(int(scores["fluency"])),
+                "speaking": clamp_score(int(scores.get("speaking", fallback.scores["speaking"]))),
+                "grammar": clamp_score(int(scores.get("grammar", fallback.scores["grammar"]))),
+                "fluency": clamp_score(int(scores.get("fluency", fallback.scores["fluency"]))),
             },
         )
     except (ValueError, KeyError, TypeError) as exc:
-        logger.error("partner_summary_parse_failed: %s", exc)
+        logger.error(
+            "partner_summary_parse_failed keys=%s: %s",
+            sorted(list(data.keys())) if "data" in locals() and isinstance(data, dict) else "n/a",
+            exc,
+        )
         return fallback
 
 
