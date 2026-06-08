@@ -1,13 +1,51 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Search, X } from "lucide-react";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
-import { coachScenarios } from "@/lib/data";
+import { coachScenarios, courses } from "@/lib/data";
 import { readLatestPracticeSlug, saveLatestPracticeSlug } from "@/lib/practice-storage";
 
-const legacyScenarios = [
+type Scenario = {
+  slug: string;
+  label: string;
+  description: string;
+  levelCode?: string;
+  scenarioKey?: string;
+  mode?: string;
+};
+
+type LessonMeta = {
+  levelCode: string;
+  courseTitle: string;
+  unitTitle: string;
+  unitIndex: number;
+  lessonIndex: number;
+  lessonTitle: string;
+};
+
+type ScenarioWithMeta = Scenario &
+  LessonMeta & {
+    searchableText: string;
+  };
+
+type UnitGroup = {
+  key: string;
+  unitTitle: string;
+  unitIndex: number;
+  scenarios: ScenarioWithMeta[];
+};
+
+type LevelGroup = {
+  key: string;
+  levelCode: string;
+  courseTitle: string;
+  units: UnitGroup[];
+  count: number;
+};
+
+const legacyScenarios: Scenario[] = [
   { slug: "saying-hello-and-goodbye", label: "Greeting & Goodbye", description: "Buka dan tutup percakapan singkat." },
   { slug: "saying-your-name", label: "Saying Your Name", description: "Perkenalkan namamu secara natural." },
   { slug: "asking-someones-name", label: "Asking a Name", description: "Tanyakan nama orang dengan sopan." },
@@ -50,13 +88,141 @@ const legacyScenarios = [
   { slug: "a1-final-conversation", label: "A1 Final", description: "Gabungkan semua skill inti A1." }
 ];
 
-const scenarios = [
+const rawScenarios: Scenario[] = [
   ...legacyScenarios,
   ...coachScenarios.filter((scenario) => !legacyScenarios.some((legacy) => legacy.slug === scenario.slug))
 ];
 
+const lessonMetaBySlug = new Map<string, LessonMeta>();
+
+courses.forEach((course) => {
+  course.units.forEach((unit, unitIndex) => {
+    unit.lessons.forEach((lesson, lessonIndex) => {
+      lessonMetaBySlug.set(lesson.slug, {
+        levelCode: course.level,
+        courseTitle: course.title,
+        unitTitle: unit.title,
+        unitIndex,
+        lessonIndex,
+        lessonTitle: lesson.title
+      });
+    });
+  });
+});
+
+const scenarioBySlug = new Map(rawScenarios.map((scenario) => [scenario.slug, scenario]));
+const orderedScenarios: ScenarioWithMeta[] = [];
+const orderedSlugs = new Set<string>();
+
+courses.forEach((course) => {
+  course.units.forEach((unit) => {
+    unit.lessons.forEach((lesson) => {
+      const scenario = scenarioBySlug.get(lesson.slug);
+      const meta = lessonMetaBySlug.get(lesson.slug);
+
+      if (!scenario || !meta) {
+        return;
+      }
+
+      orderedSlugs.add(scenario.slug);
+      orderedScenarios.push({
+        ...scenario,
+        ...meta,
+        searchableText: ""
+      });
+    });
+  });
+});
+
+rawScenarios.forEach((scenario) => {
+  if (orderedSlugs.has(scenario.slug)) {
+    return;
+  }
+
+  const levelCode = scenario.levelCode ?? "A1";
+  orderedScenarios.push({
+    ...scenario,
+    levelCode,
+    courseTitle: `${levelCode} Conversation Coach`,
+    unitTitle: scenario.description || "Skenario tambahan",
+    unitIndex: 999,
+    lessonIndex: 0,
+    lessonTitle: scenario.label,
+    searchableText: ""
+  });
+});
+
+const scenarios = orderedScenarios.map((scenario) => ({
+  ...scenario,
+  searchableText: normalize(
+    [
+      scenario.levelCode,
+      scenario.courseTitle,
+      `unit ${scenario.unitIndex + 1}`,
+      scenario.unitTitle,
+      `lesson ${scenario.lessonIndex + 1}`,
+      scenario.lessonTitle,
+      scenario.label,
+      scenario.description
+    ].join(" ")
+  )
+}));
+
 function normalize(value: string) {
   return value.trim().toLowerCase();
+}
+
+function lessonLabel(scenario: ScenarioWithMeta) {
+  return `Lesson ${String(scenario.lessonIndex + 1).padStart(2, "0")}`;
+}
+
+function unitLabel(scenario: ScenarioWithMeta) {
+  if (scenario.unitIndex >= 999) {
+    return "Unit lainnya";
+  }
+
+  return `Unit ${String(scenario.unitIndex + 1).padStart(2, "0")}`;
+}
+
+function groupScenarios(items: ScenarioWithMeta[]) {
+  const levelGroups: LevelGroup[] = [];
+  const levelByKey = new Map<string, LevelGroup>();
+  const unitByKey = new Map<string, UnitGroup>();
+
+  items.forEach((scenario) => {
+    let levelGroup = levelByKey.get(scenario.levelCode);
+
+    if (!levelGroup) {
+      levelGroup = {
+        key: scenario.levelCode,
+        levelCode: scenario.levelCode,
+        courseTitle: scenario.courseTitle,
+        units: [],
+        count: 0
+      };
+      levelByKey.set(scenario.levelCode, levelGroup);
+      levelGroups.push(levelGroup);
+    }
+
+    const unitKey = `${scenario.levelCode}-${scenario.unitIndex}-${scenario.unitTitle}`;
+    let unitGroup = unitByKey.get(unitKey);
+
+    if (!unitGroup) {
+      unitGroup = {
+        key: unitKey,
+        unitTitle: scenario.unitTitle,
+        unitIndex: scenario.unitIndex,
+        scenarios: []
+      };
+      unitByKey.set(unitKey, unitGroup);
+      levelGroup.units.push(unitGroup);
+    }
+
+    unitGroup.scenarios.push(scenario);
+    levelGroup.count += 1;
+  });
+
+  return levelGroups;
 }
 
 export function ConversationCoachWorkspace() {
@@ -80,12 +246,11 @@ export function ConversationCoachWorkspace() {
   }, [searchParams]);
 
   const activeScenario = scenarios.find((scenario) => scenario.slug === activeSlug) ?? scenarios[0];
-  const activeLevel = (activeScenario as { levelCode?: string }).levelCode ?? "A1";
+  const activeLevel = activeScenario.levelCode;
   const levels = ["all", "A1", "A2", "B1", "B2", "C1"];
 
-  const filteredScenarios = scenarios.filter((scenario) => {
-    const scenarioLevel = (scenario as { levelCode?: string }).levelCode ?? "A1";
-    if (levelFilter !== "all" && scenarioLevel !== levelFilter) {
+  const filteredScenarios = useMemo(() => scenarios.filter((scenario) => {
+    if (levelFilter !== "all" && scenario.levelCode !== levelFilter) {
       return false;
     }
 
@@ -94,9 +259,11 @@ export function ConversationCoachWorkspace() {
       return true;
     }
 
-    const haystack = normalize(`${scenario.label} ${scenario.description}`);
-    return haystack.includes(q);
-  });
+    return scenario.searchableText.includes(q);
+  }), [levelFilter, query]);
+
+  const groupedScenarios = useMemo(() => groupScenarios(filteredScenarios), [filteredScenarios]);
+  const visibleUnitCount = groupedScenarios.reduce((total, level) => total + level.units.length, 0);
 
   return (
     <div className="space-y-5">
@@ -120,11 +287,13 @@ export function ConversationCoachWorkspace() {
 
         <div className="mt-4 rounded-lg bg-paper p-4">
           <p className="text-xs font-semibold uppercase text-ink/50">Skenario aktif</p>
-          <p className="mt-2 font-semibold">{activeScenario.label}</p>
+          <p className="mt-2 font-semibold">{activeScenario.lessonTitle}</p>
           <p className="mt-1 text-sm leading-6 text-ink/60">{activeScenario.description}</p>
           <div className="mt-3 flex flex-wrap items-center gap-2 text-xs font-semibold text-ink/60">
             <span className="rounded-lg bg-white px-2 py-1">Level {activeLevel}</span>
-            <span className="rounded-lg bg-white px-2 py-1">{activeScenario.slug}</span>
+            <span className="rounded-lg bg-white px-2 py-1">{unitLabel(activeScenario)}</span>
+            <span className="rounded-lg bg-white px-2 py-1">{lessonLabel(activeScenario)}</span>
+            <span className="rounded-lg bg-white px-2 py-1">{activeScenario.unitTitle}</span>
           </div>
         </div>
 
@@ -173,33 +342,83 @@ export function ConversationCoachWorkspace() {
             </div>
 
             <p className="text-sm text-ink/60">
-              Menampilkan {filteredScenarios.length} skenario.
+              Menampilkan {filteredScenarios.length} skenario dalam {visibleUnitCount} unit.
             </p>
 
-            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-              {filteredScenarios.map((scenario) => {
-                const selected = scenario.slug === activeSlug;
+            {groupedScenarios.length ? (
+              <div className="space-y-5">
+                {groupedScenarios.map((level) => (
+                  <section key={level.key} className="overflow-hidden rounded-lg border border-ink/10 bg-white">
+                    <div className="flex flex-col gap-2 border-b border-ink/10 bg-paper px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+                      <div>
+                        <p className="text-xs font-semibold uppercase text-leaf">Level {level.levelCode}</p>
+                        <h3 className="mt-1 font-semibold">{level.courseTitle}</h3>
+                      </div>
+                      <span className="w-fit rounded-lg bg-white px-3 py-1 text-xs font-semibold text-ink/60">
+                        {level.count} skenario
+                      </span>
+                    </div>
 
-                return (
-                  <button
-                    key={scenario.slug}
-                    type="button"
-                    onClick={() => {
-                      setActiveSlug(scenario.slug);
-                      saveLatestPracticeSlug(scenario.slug);
-                      setIsPickerOpen(false);
-                    }}
-                    aria-pressed={selected}
-                    className={`focus-ring rounded-lg border p-4 text-left transition-colors ${
-                      selected ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
-                    }`}
-                  >
-                    <p className="text-sm font-semibold">{scenario.label}</p>
-                    <p className="mt-1 text-xs leading-5 text-ink/60">{scenario.description}</p>
-                  </button>
-                );
-              })}
-            </div>
+                    <div className="divide-y divide-ink/10">
+                      {level.units.map((unit) => (
+                        <div key={unit.key} className="p-4">
+                          <div className="mb-3 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                            <div>
+                              <p className="text-xs font-semibold uppercase text-ink/45">
+                                {unit.unitIndex >= 999 ? "Unit lainnya" : `Unit ${unit.unitIndex + 1}`}
+                              </p>
+                              <h4 className="mt-1 text-sm font-semibold">{unit.unitTitle}</h4>
+                            </div>
+                            <span className="text-xs font-semibold text-ink/45">
+                              {unit.scenarios.length} lesson
+                            </span>
+                          </div>
+
+                          <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+                            {unit.scenarios.map((scenario) => {
+                              const selected = scenario.slug === activeSlug;
+
+                              return (
+                                <button
+                                  key={scenario.slug}
+                                  type="button"
+                                  onClick={() => {
+                                    setActiveSlug(scenario.slug);
+                                    saveLatestPracticeSlug(scenario.slug);
+                                    setIsPickerOpen(false);
+                                  }}
+                                  aria-pressed={selected}
+                                  className={`focus-ring rounded-lg border p-4 text-left transition-colors ${
+                                    selected ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
+                                  }`}
+                                >
+                                  <div className="flex flex-wrap items-center gap-2">
+                                    <span className={`rounded-md px-2 py-1 text-[11px] font-semibold ${
+                                      selected ? "bg-white text-leaf" : "bg-white text-ink/55"
+                                    }`}>
+                                      {lessonLabel(scenario)}
+                                    </span>
+                                    <span className="text-[11px] font-semibold uppercase text-ink/45">
+                                      {scenario.levelCode}
+                                    </span>
+                                  </div>
+                                  <p className="mt-3 text-sm font-semibold leading-5">{scenario.lessonTitle}</p>
+                                  <p className="mt-1 text-xs leading-5 text-ink/60">{scenario.description}</p>
+                                </button>
+                              );
+                            })}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <div className="rounded-lg border border-ink/10 bg-paper p-4 text-sm leading-6 text-ink/60">
+                Tidak ada skenario yang cocok dengan filter ini.
+              </div>
+            )}
           </div>
         ) : null}
       </section>
