@@ -41,6 +41,15 @@ export function useVoiceRecorder({
   const [seconds, setSeconds] = useState(0);
   const [micLevel, setMicLevel] = useState(0);
 
+  // Live mirror of `status` so guards in async callbacks (e.g. restarting the
+  // recorder from an audio `onended`) read the current value instead of a stale
+  // closure, which would otherwise silently no-op and freeze hands-free.
+  const statusRef = useRef<RecorderStatus>("idle");
+  function applyStatus(next: RecorderStatus) {
+    statusRef.current = next;
+    setStatus(next);
+  }
+
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const chunksRef = useRef<BlobPart[]>([]);
@@ -145,7 +154,7 @@ export function useVoiceRecorder({
   }
 
   async function start() {
-    if (status !== "idle") {
+    if (statusRef.current !== "idle") {
       return;
     }
     if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
@@ -183,14 +192,14 @@ export function useVoiceRecorder({
         chunksRef.current = [];
         mediaRecorderRef.current = null;
         discardRef.current = false;
-        setStatus("idle");
+        applyStatus("idle");
         if (!wasDiscarded) {
           void onResultRef.current(blob);
         }
       };
 
       recorder.start();
-      setStatus("recording");
+      applyStatus("recording");
       intervalRef.current = setInterval(() => {
         setSeconds((current) => Math.min(current + 1, maxSeconds));
       }, 1000);
@@ -200,7 +209,7 @@ export function useVoiceRecorder({
       clearTimers();
       stopStream();
       mediaRecorderRef.current = null;
-      setStatus("idle");
+      applyStatus("idle");
       onError?.("Mic belum bisa diakses. Cek izin microphone browser.");
     }
   }
@@ -210,7 +219,7 @@ export function useVoiceRecorder({
     if (!recorder || recorder.state === "inactive") {
       return;
     }
-    setStatus("processing");
+    applyStatus("processing");
     clearTimers();
     recorder.stop();
   }

@@ -49,6 +49,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [error, setError] = useState("");
   const [offTopicNote, setOffTopicNote] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const handsFreeRef = useRef(false);
@@ -87,12 +88,26 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     audioRef.current?.pause();
     const audio = new Audio(dataUrl);
     audioRef.current = audio;
-    if (onEnded) {
-      audio.onended = onEnded;
-    }
-    void audio.play().catch(() => {
-      /* autoplay may be blocked; user can replay */
+
+    // Guarantee the continuation runs exactly once, whatever happens: normal
+    // end, playback error, or autoplay block. Without this, a missed `onended`
+    // would strand hands-free on "Menunggu AI…" with no recording in progress.
+    let settled = false;
+    const finish = () => {
+      if (settled) {
+        return;
+      }
+      settled = true;
+      setIsSpeaking(false);
       onEnded?.();
+    };
+
+    audio.onended = finish;
+    audio.onerror = finish;
+    setIsSpeaking(true);
+    void audio.play().catch(() => {
+      /* autoplay may be blocked; user can replay manually */
+      finish();
     });
   }
 
@@ -188,6 +203,8 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   function stopHandsFree() {
     handsFreeRef.current = false;
     setHandsFree(false);
+    audioRef.current?.pause();
+    setIsSpeaking(false);
     recorder.cancel();
   }
 
@@ -289,10 +306,18 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
               <span className="inline-flex items-center gap-3 text-sm font-medium text-ink/70">
                 {isBusy || isProcessing ? (
                   <>Memproses…</>
+                ) : isSpeaking ? (
+                  <span className="inline-flex items-center gap-2">
+                    <Volume2 className="h-4 w-4 text-leaf" aria-hidden="true" />
+                    AI sedang berbicara…
+                  </span>
                 ) : isRecording ? (
-                  <VoiceWaveform level={recorder.micLevel} />
+                  <span className="inline-flex items-center gap-2">
+                    <VoiceWaveform level={recorder.micLevel} />
+                    Silakan bicara…
+                  </span>
                 ) : (
-                  <>Menunggu AI…</>
+                  <>Mendengarkan…</>
                 )}
               </span>
             </div>
