@@ -66,6 +66,17 @@ class ConversationPartnerRoutesTest(unittest.TestCase):
         self.assertTrue(data)
         self.assertTrue(all(topic["level_code"] == "A1" for topic in data))
 
+    def test_topics_endpoint_has_topics_for_each_level(self):
+        for level in ["A1", "A2", "B1", "B2", "C1"]:
+            response = self.client.get(
+                f"/api/conversation-partner/topics?level_code={level}",
+                headers=self.headers,
+            )
+            self.assertEqual(response.status_code, 200)
+            data = response.json()["data"]
+            self.assertTrue(data, f"expected topics for level {level}")
+            self.assertTrue(all(topic["level_code"] == level for topic in data))
+
     def test_full_flow_session_turn_and_summary(self):
         with patch(
             "app.api.routes.conversation_partner.synthesize_partner_reply_audio",
