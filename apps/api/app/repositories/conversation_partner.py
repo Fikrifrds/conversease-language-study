@@ -115,3 +115,42 @@ class ConversationPartnerRepository:
 
     def completed_turns(self, session: ConversationSessionModel) -> int:
         return len(session.turns)
+
+    def save_summary(
+        self,
+        session: ConversationSessionModel,
+        *,
+        summary: str,
+        indonesian_explanation: str,
+        scores: dict,
+    ) -> None:
+        """Persist the end-of-session summary so it survives reloads and powers
+        the history list (scores + done status)."""
+        overall = round(
+            (scores.get("speaking", 0) + scores.get("grammar", 0) + scores.get("fluency", 0)) / 3
+        )
+        session.summary_json = {
+            "summary": summary,
+            "indonesian_explanation": indonesian_explanation,
+            "scores": scores,
+            "overall": overall,
+        }
+        session.updated_at = datetime.utcnow()
+        self.db.commit()
+
+    def list_sessions(self, user_id: str, *, limit: int = 30) -> List[ConversationSessionModel]:
+        """Most recent Conversation Partner sessions for a user, with turns loaded."""
+        return list(
+            self.db.execute(
+                select(ConversationSessionModel)
+                .where(
+                    ConversationSessionModel.user_id == user_id,
+                    ConversationSessionModel.mode == self.MODE,
+                )
+                .options(selectinload(ConversationSessionModel.turns))
+                .order_by(ConversationSessionModel.updated_at.desc())
+                .limit(limit)
+            )
+            .scalars()
+            .all()
+        )

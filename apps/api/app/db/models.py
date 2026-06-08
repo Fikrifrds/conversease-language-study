@@ -34,6 +34,7 @@ class ConversationSessionModel(Base):
     scenario_key: Mapped[str] = mapped_column(String(128), nullable=False)
     lesson_slug: Mapped[str] = mapped_column(String(160), index=True, nullable=False)
     status: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
+    summary_json: Mapped[Optional[dict]] = mapped_column(JSON, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
 

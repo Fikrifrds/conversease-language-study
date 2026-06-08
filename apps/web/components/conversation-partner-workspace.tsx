@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ConversationPartnerChat } from "@/components/conversation-partner-chat";
+import { ConversationPartnerHistory } from "@/components/conversation-partner-history";
 import { listPartnerTopics, type PartnerTopic } from "@/lib/conversation-partner-api";
 
 const levels = ["A1", "A2", "B1", "B2", "C1"];
@@ -12,6 +13,8 @@ export function ConversationPartnerWorkspace() {
   const [activeTopic, setActiveTopic] = useState<PartnerTopic | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  // Bumped when a conversation ends so the history list refreshes immediately.
+  const [historyKey, setHistoryKey] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -109,12 +112,18 @@ export function ConversationPartnerWorkspace() {
       </section>
 
       {activeTopic ? (
-        <ConversationPartnerChat key={activeTopic.key} topic={activeTopic} />
+        <ConversationPartnerChat
+          key={activeTopic.key}
+          topic={activeTopic}
+          onSessionEnd={() => setHistoryKey((value) => value + 1)}
+        />
       ) : (
         <section className="rounded-lg border border-dashed border-ink/15 bg-paper p-8 text-center text-sm text-ink/50">
           Pilih topik di atas untuk mulai ngobrol.
         </section>
       )}
+
+      <ConversationPartnerHistory refreshKey={historyKey} />
     </div>
   );
 }

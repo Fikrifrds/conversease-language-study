@@ -71,7 +71,14 @@ async def generate_partner_reply(
     Falls back to a safe, on-topic nudge when the LLM is unavailable so a paid
     turn is never blocked.
     """
-    turns_left = max(0, topic.max_turns - (completed_turns + 1))
+    # The turn we are about to produce is number (completed_turns + 1).
+    current_turn = completed_turns + 1
+    turns_left = max(0, topic.max_turns - current_turn)
+    # Don't let the partner wrap up too early: require at least this many learner
+    # turns before an LLM-signalled `should_end` is honored. Without this the
+    # model often ends a topic in 2-3 turns once it thinks the goals are touched,
+    # which feels abrupt (e.g. ending an 8-turn cafe order at turn 3).
+    min_turns = _min_turns_before_end(topic)
     fallback = _fallback_reply(topic=topic, turns_left=turns_left)
 
     active_provider = provider or get_llm_provider()
@@ -79,7 +86,10 @@ async def generate_partner_reply(
         return fallback
 
     messages = [
-        ChatMessage(role="system", content=_reply_system_prompt(topic, level_code, turns_left)),
+        ChatMessage(
+            role="system",
+            content=_reply_system_prompt(topic, level_code, turns_left, min_turns, current_turn),
+        ),
         *_history_messages(history),
         ChatMessage(role="user", content=user_message.strip()),
     ]
@@ -90,7 +100,12 @@ async def generate_partner_reply(
             model_config=TASK_MODEL_CONFIGS["conversation_partner_reply"],
             response_schema=REPLY_RESPONSE_SCHEMA,
         )
-        return _parse_reply(result.content, fallback=fallback, turns_left=turns_left)
+        return _parse_reply(
+            result.content,
+            fallback=fallback,
+            turns_left=turns_left,
+            can_end=current_turn >= min_turns,
+        )
     except LLMError as exc:
         logger.warning(
             "partner_reply_llm_failed topic=%s level=%s: %s",
@@ -155,7 +170,19 @@ async def summarize_session(
         return fallback
 
 
-def _reply_system_prompt(topic: PartnerTopic, level_code: str, turns_left: int) -> str:
+def _min_turns_before_end(topic: PartnerTopic) -> int:
+    """Minimum learner turns before the partner may end. Roughly one turn per
+    goal, capped so very long topics still feel finishable."""
+    return max(len(topic.goals), min(topic.max_turns - 2, 4))
+
+
+def _reply_system_prompt(
+    topic: PartnerTopic,
+    level_code: str,
+    turns_left: int,
+    min_turns: int,
+    current_turn: int,
+) -> str:
     goals = "; ".join(topic.goals)
     phrases = ", ".join(topic.target_phrases)
     return (
@@ -164,12 +191,14 @@ def _reply_system_prompt(topic: PartnerTopic, level_code: str, turns_left: int) 
         "learner to help them practice.\n"
         f"LEARNER LEVEL: {level_code}. {difficulty_profile(level_code)}\n"
         f"CONVERSATION TOPIC: {topic.title} - {topic.description}\n"
-        f"GOALS the learner should reach: {goals}.\n"
+        f"GOALS the learner should reach, IN ORDER: {goals}.\n"
         f"Helpful target phrases the learner may use: {phrases}.\n\n"
         "RULES:\n"
         "- React to what the learner just said, then ask ONE simple follow-up question to keep "
         "them talking. You are guiding the learner to speak, not narrating your own life. Do not "
         "list your own activities unless the learner asks you a direct question.\n"
+        "- Work through the goals ONE AT A TIME. Cover only the next unmet goal in each reply; do "
+        "not rush to finish all goals in one or two turns.\n"
         "- Stay strictly on this topic. If the learner drifts off-topic, gently and briefly "
         "steer back to the topic in role. Never start a new unrelated topic.\n"
         "- Keep your reply natural for the role but matched to the learner's level. One short turn "
@@ -177,8 +206,10 @@ def _reply_system_prompt(topic: PartnerTopic, level_code: str, turns_left: int) 
         "- Do not repeat your previous lines and do not just echo the learner's words back.\n"
         "- Do not invent a human name for yourself and do not give meta feedback, grammar "
         "corrections, or notes. Just play the role.\n"
-        f"- About {turns_left} exchanges remain. When the goals are reached or no turns remain, "
-        "wrap up the conversation politely and set should_end to true.\n"
+        f"- This is exchange {current_turn}. Keep the conversation going. Do NOT end before "
+        f"exchange {min_turns}. Only set should_end to true once ALL goals are genuinely covered "
+        f"AND at least {min_turns} exchanges have happened, or when no turns remain "
+        f"(about {turns_left} left). Until then, always set should_end to false and ask a question.\n"
         "- Set on_topic to false if the learner's last message was off-topic.\n"
         "Respond with JSON only, matching the requested schema."
     )
@@ -224,7 +255,9 @@ def _fallback_reply(*, topic: PartnerTopic, turns_left: int) -> PartnerReply:
     )
 
 
-def _parse_reply(content: str, *, fallback: PartnerReply, turns_left: int) -> PartnerReply:
+def _parse_reply(
+    content: str, *, fallback: PartnerReply, turns_left: int, can_end: bool = True
+) -> PartnerReply:
     try:
         data = json.loads(_extract_json(content))
         raw_reply = (
@@ -243,7 +276,12 @@ def _parse_reply(content: str, *, fallback: PartnerReply, turns_left: int) -> Pa
                 sorted(list(data.keys())) if isinstance(data, dict) else "n/a",
             )
             return fallback
-        should_end = bool(data.get("should_end") if "should_end" in data else data.get("shouldEnd", False)) or turns_left <= 0
+        llm_should_end = bool(
+            data.get("should_end") if "should_end" in data else data.get("shouldEnd", False)
+        )
+        # Honor an early end only once the minimum turns are reached; always end
+        # when no turns remain.
+        should_end = turns_left <= 0 or (llm_should_end and can_end)
         return PartnerReply(
             reply=reply,
             on_topic=bool(data.get("on_topic") if "on_topic" in data else data.get("onTopic", True)),

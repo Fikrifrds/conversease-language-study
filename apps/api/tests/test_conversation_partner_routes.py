@@ -151,6 +151,115 @@ class ConversationPartnerRoutesTest(unittest.TestCase):
         self.assertEqual(summary.json()["data"]["scores"]["speaking"], 80)
         self.assertEqual(summary.json()["data"]["completed_turns"], 1)
 
+    def _create_session_with_turn(self) -> str:
+        with patch(
+            "app.api.routes.conversation_partner.synthesize_partner_reply_audio",
+            new=AsyncMock(return_value="data:audio/mpeg;base64,AAAA"),
+        ):
+            create = self.client.post(
+                "/api/conversation-partner/sessions",
+                headers=self.headers,
+                json={"topic_key": "order-a-drink"},
+            )
+        session_id = create.json()["data"]["session_id"]
+        transcription = SpeechToTextResult(
+            text="I want a coffee",
+            transcription=TurnTranscription(
+                input_source="audio",
+                provider="assemblyai",
+                model="universal-3-pro",
+                transcript_id="tx-1",
+                confidence=0.95,
+                audio_duration_seconds=2.1,
+                metadata={"language_code": "en"},
+            ),
+        )
+        with patch(
+            "app.api.routes.conversation_partner.transcribe_recorded_audio",
+            new=AsyncMock(return_value=transcription),
+        ), patch(
+            "app.api.routes.conversation_partner.generate_partner_reply",
+            new=AsyncMock(
+                return_value=PartnerReply(
+                    reply="Sure! Small or large?", on_topic=True, should_end=False
+                )
+            ),
+        ), patch(
+            "app.api.routes.conversation_partner.synthesize_partner_reply_audio",
+            new=AsyncMock(return_value="data:audio/mpeg;base64,BBBB"),
+        ):
+            self.client.post(
+                f"/api/conversation-partner/sessions/{session_id}/turns/audio",
+                headers=self.headers,
+                files={"audio": ("turn.webm", b"fake-bytes", "audio/webm")},
+            )
+        return session_id
+
+    def test_summary_is_persisted_and_reused(self):
+        session_id = self._create_session_with_turn()
+        summarize_mock = AsyncMock(
+            return_value=PartnerSummary(
+                summary="Nice work",
+                indonesian_explanation="Bagus, lanjutkan.",
+                scores={"speaking": 80, "grammar": 76, "fluency": 84},
+            )
+        )
+        with patch(
+            "app.api.routes.conversation_partner.summarize_session", new=summarize_mock
+        ):
+            first = self.client.post(
+                f"/api/conversation-partner/sessions/{session_id}/summary",
+                headers=self.headers,
+            )
+            second = self.client.post(
+                f"/api/conversation-partner/sessions/{session_id}/summary",
+                headers=self.headers,
+            )
+
+        self.assertEqual(first.status_code, 200)
+        self.assertEqual(second.json()["data"]["scores"]["speaking"], 80)
+        # The summary is computed once and then served from storage.
+        self.assertEqual(summarize_mock.await_count, 1)
+
+    def test_list_sessions_returns_history_with_score(self):
+        session_id = self._create_session_with_turn()
+        with patch(
+            "app.api.routes.conversation_partner.summarize_session",
+            new=AsyncMock(
+                return_value=PartnerSummary(
+                    summary="Nice work",
+                    indonesian_explanation="Bagus.",
+                    scores={"speaking": 80, "grammar": 70, "fluency": 78},
+                )
+            ),
+        ):
+            self.client.post(
+                f"/api/conversation-partner/sessions/{session_id}/summary",
+                headers=self.headers,
+            )
+
+        listing = self.client.get(
+            "/api/conversation-partner/sessions", headers=self.headers
+        )
+        self.assertEqual(listing.status_code, 200, listing.text)
+        rows = listing.json()["data"]
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["session_id"], session_id)
+        self.assertEqual(rows[0]["topic_title"], "Order a Drink")
+        self.assertEqual(rows[0]["completed_turns"], 1)
+        self.assertEqual(rows[0]["overall_score"], 76)
+
+    def test_session_detail_returns_messages(self):
+        session_id = self._create_session_with_turn()
+        detail = self.client.get(
+            f"/api/conversation-partner/sessions/{session_id}", headers=self.headers
+        )
+        self.assertEqual(detail.status_code, 200, detail.text)
+        data = detail.json()["data"]
+        roles = [m["role"] for m in data["messages"]]
+        self.assertEqual(roles, ["partner", "user", "partner"])
+        self.assertEqual(data["messages"][1]["text"], "I want a coffee")
+
     def test_unknown_topic_returns_404(self):
         response = self.client.post(
             "/api/conversation-partner/sessions",

@@ -101,6 +101,40 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         )
         self.assertTrue(reply.should_end)
 
+    def test_does_not_end_early_before_min_turns(self):
+        # Even if the LLM signals should_end on turn 1, the partner keeps going
+        # until enough exchanges have happened so the conversation isn't abrupt.
+        provider = FakeProvider(
+            '{"reply": "Great, anything else?", "on_topic": true, "should_end": true}'
+        )
+        reply = asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[("user", "coffee please")],
+                user_message="coffee please",
+                completed_turns=0,  # current_turn = 1, below the minimum
+                provider=provider,
+            )
+        )
+        self.assertFalse(reply.should_end)
+
+    def test_honors_end_after_min_turns(self):
+        provider = FakeProvider(
+            '{"reply": "Thanks, see you!", "on_topic": true, "should_end": true}'
+        )
+        reply = asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[],
+                user_message="thank you",
+                completed_turns=TOPIC.max_turns - 2,  # well past the minimum
+                provider=provider,
+            )
+        )
+        self.assertTrue(reply.should_end)
+
     def test_falls_back_when_no_provider(self):
         reply = asyncio.run(
             generate_partner_reply(

@@ -40,6 +40,29 @@ export type PartnerSummary = {
   completedTurns: number;
 };
 
+export type PartnerSessionSummaryRow = {
+  sessionId: string;
+  topicKey: string;
+  topicTitle: string;
+  levelCode: string;
+  status: string;
+  completedTurns: number;
+  maxTurns: number | null;
+  overallScore: number | null;
+  scores: { speaking: number; grammar: number; fluency: number } | null;
+  updatedAt: string;
+};
+
+export type PartnerSessionDetail = PartnerSessionSummaryRow & {
+  messages: { role: "partner" | "user"; text: string }[];
+  summary: {
+    summary: string;
+    indonesian_explanation: string;
+    scores: { speaking: number; grammar: number; fluency: number };
+    overall: number;
+  } | null;
+};
+
 type ApiResponse<T> = { data: T };
 
 function apiBaseUrl() {
@@ -179,6 +202,66 @@ export async function fetchPartnerSummary(sessionId: string): Promise<PartnerSum
     indonesianExplanation: payload.data.indonesian_explanation,
     scores: payload.data.scores,
     completedTurns: payload.data.completed_turns
+  };
+}
+
+type ApiSessionRow = {
+  session_id: string;
+  topic_key: string;
+  topic_title: string;
+  level_code: string;
+  status: string;
+  completed_turns: number;
+  max_turns: number | null;
+  overall_score: number | null;
+  scores: { speaking: number; grammar: number; fluency: number } | null;
+  updated_at: string;
+};
+
+function mapSessionRow(row: ApiSessionRow): PartnerSessionSummaryRow {
+  return {
+    sessionId: row.session_id,
+    topicKey: row.topic_key,
+    topicTitle: row.topic_title,
+    levelCode: row.level_code,
+    status: row.status,
+    completedTurns: row.completed_turns,
+    maxTurns: row.max_turns,
+    overallScore: row.overall_score,
+    scores: row.scores,
+    updatedAt: row.updated_at
+  };
+}
+
+export async function listPartnerSessions(): Promise<PartnerSessionSummaryRow[]> {
+  const response = await fetch(`${apiBaseUrl()}/conversation-partner/sessions`, {
+    headers: authHeaders()
+  });
+  if (!response.ok) {
+    return readError(response);
+  }
+  const payload = (await response.json()) as ApiResponse<ApiSessionRow[]>;
+  return payload.data.map(mapSessionRow);
+}
+
+export async function fetchPartnerSessionDetail(sessionId: string): Promise<PartnerSessionDetail> {
+  const response = await fetch(
+    `${apiBaseUrl()}/conversation-partner/sessions/${sessionId}`,
+    { headers: authHeaders() }
+  );
+  if (!response.ok) {
+    return readError(response);
+  }
+  const payload = (await response.json()) as ApiResponse<
+    ApiSessionRow & {
+      messages: { role: "partner" | "user"; text: string }[];
+      summary: PartnerSessionDetail["summary"];
+    }
+  >;
+  return {
+    ...mapSessionRow(payload.data),
+    messages: payload.data.messages,
+    summary: payload.data.summary
   };
 }
 

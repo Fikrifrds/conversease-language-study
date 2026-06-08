@@ -38,7 +38,13 @@ function turnErrorMessage(error: unknown) {
   return "Terjadi kendala. Coba lagi.";
 }
 
-export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
+export function ConversationPartnerChat({
+  topic,
+  onSessionEnd
+}: {
+  topic: PartnerTopic;
+  onSessionEnd?: () => void;
+}) {
   const [messages, setMessages] = useState<ChatMessage[]>([
     { role: "partner", text: topic.openingLine }
   ]);
@@ -50,6 +56,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
   const [offTopicNote, setOffTopicNote] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  // The session begins only when the learner presses Start. Until then nothing
+  // is spoken and the mic stays closed, so the AI never "talks first" before the
+  // learner is ready. Start -> AI speaks the opening -> mic opens -> alternate.
+  const [started, setStarted] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const handsFreeRef = useRef(false);
@@ -170,33 +180,47 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
     }
   }
 
-  async function startHandsFree() {
-    if (ended || isBusy) {
+  // Start the session: create it, let the AI speak the opening line, then open
+  // the mic so the learner answers. After that the turn loop alternates
+  // automatically (each AI reply's audio `onended` re-opens the mic).
+  async function startSession() {
+    if (ended || isBusy || started) {
       return;
     }
+    setStarted(true);
     handsFreeRef.current = true;
     setHandsFree(true);
-    // Create the session up front so we can speak the opening line once, then
-    // start listening. This avoids replaying the opening on later turns.
+    setError("");
     try {
       if (!sessionIdRef.current) {
         const session = await createPartnerSession(topic.key);
         sessionIdRef.current = session.sessionId;
-        if (session.openingAudio) {
-          playAudio(session.openingAudio, () => {
-            if (handsFreeRef.current) {
-              void recorder.start();
-            }
-          });
-          return;
-        }
+        // AI greets first, then the learner's mic opens when the greeting ends.
+        playAudio(session.openingAudio, () => {
+          if (handsFreeRef.current) {
+            void recorder.start();
+          }
+        });
+        return;
       }
     } catch (caught) {
       setError(turnErrorMessage(caught));
+      setStarted(false);
       handsFreeRef.current = false;
       setHandsFree(false);
       return;
     }
+    void recorder.start();
+  }
+
+  // Resume the automatic turn loop after a manual pause, without replaying the
+  // opening (the session already exists).
+  function resumeHandsFree() {
+    if (ended || isBusy || isSpeaking) {
+      return;
+    }
+    handsFreeRef.current = true;
+    setHandsFree(true);
     void recorder.start();
   }
 
@@ -214,6 +238,10 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
       setSummary(result);
     } catch {
       /* summary is best-effort */
+    } finally {
+      // Tell the workspace to refresh the history list now that this session is
+      // finished and its score persisted.
+      onSessionEnd?.();
     }
   }
 
@@ -286,6 +314,12 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                 <div>
                   <p className="font-semibold">Tujuan latihan</p>
                   <p className="text-ink/70">{topic.goals.join(" → ")}</p>
+                  {!started ? (
+                    <p className="mt-2 text-xs text-ink/60">
+                      Tekan <span className="font-semibold">Mulai Sesi</span> di bawah. AI akan menyapa
+                      lebih dulu, lalu giliranmu bicara.
+                    </p>
+                  ) : null}
                 </div>
               </div>
             </div>
@@ -293,7 +327,22 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
         </div>
 
         <div className="border-t border-ink/10 p-5">
-          {handsFree ? (
+          {!started ? (
+            <div className="flex flex-wrap items-center gap-3">
+              <button
+                type="button"
+                onClick={startSession}
+                disabled={ended || isBusy}
+                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-6 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                <Mic className="h-4 w-4" aria-hidden="true" />
+                {ended ? "Selesai" : isBusy ? "Memulai…" : "Mulai Sesi"}
+              </button>
+              <span className="text-xs text-ink/50">
+                Tekan Mulai — AI menyapa lebih dulu, lalu giliranmu bicara otomatis.
+              </span>
+            </div>
+          ) : handsFree ? (
             <div className="flex flex-wrap items-center gap-3">
               <button
                 type="button"
@@ -301,7 +350,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                 className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-coral px-5 py-3 text-sm font-semibold text-white hover:bg-ink"
               >
                 <MicOff className="h-4 w-4" aria-hidden="true" />
-                Stop Hands-free
+                Jeda
               </button>
               <span className="inline-flex items-center gap-3 text-sm font-medium text-ink/70">
                 {isBusy || isProcessing ? (
@@ -314,7 +363,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                 ) : isRecording ? (
                   <span className="inline-flex items-center gap-2">
                     <VoiceWaveform level={recorder.micLevel} />
-                    Silakan bicara…
+                    Giliranmu — silakan bicara…
                   </span>
                 ) : (
                   <>Mendengarkan…</>
@@ -325,17 +374,17 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
             <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={startHandsFree}
-                disabled={ended || isBusy || isProcessing}
+                onClick={resumeHandsFree}
+                disabled={ended || isBusy || isProcessing || isSpeaking}
                 className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50"
               >
                 <Mic className="h-4 w-4" aria-hidden="true" />
-                {ended ? "Selesai" : "Mulai Ngobrol (Hands-free)"}
+                Lanjut Bicara
               </button>
               <button
                 type="button"
                 onClick={isRecording ? recorder.stop : recorder.start}
-                disabled={ended || isBusy || isProcessing}
+                disabled={ended || isBusy || isProcessing || isSpeaking}
                 className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
                   isRecording ? "border-coral bg-coral text-white hover:bg-ink" : "border-ink/15 hover:bg-mint"
                 }`}
@@ -356,11 +405,6 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
               {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             </div>
           )}
-          {!handsFree ? (
-            <p className="mt-3 text-xs text-ink/50">
-              Hands-free: tekan sekali, lalu bicara. AI menjawab otomatis saat kamu berhenti.
-            </p>
-          ) : null}
           {error ? (
             <p className="mt-3 rounded-lg bg-[#fde7df] px-3 py-2 text-sm text-ink/70">{error}</p>
           ) : null}
