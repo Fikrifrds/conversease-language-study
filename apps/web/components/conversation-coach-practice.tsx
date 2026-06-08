@@ -2,7 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Lightbulb, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
+import { CheckCircle2, ChevronDown, ChevronUp, Lightbulb, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
 import {
   ApiRequestError,
   createConversationSession,
@@ -1123,6 +1123,71 @@ function averageScore(feedback: CoachFeedback | null) {
   return Math.round((feedback.scores.speaking + feedback.scores.grammar + feedback.scores.fluency) / 3);
 }
 
+function strengthMessage(feedback: CoachFeedback) {
+  const { speaking, grammar, fluency } = feedback.scores;
+  if (speaking >= grammar && speaking >= fluency) {
+    return "Pelafalanmu sudah cukup jelas. Pertahankan ritmenya.";
+  }
+  if (grammar >= speaking && grammar >= fluency) {
+    return "Struktur kalimatmu sudah rapi. Ini bikin jawabanmu mudah dipahami.";
+  }
+  return "Jawabanmu terasa mengalir. Bagus, itu membantu percakapan tetap natural.";
+}
+
+function improvementTitle(feedback: CoachFeedback) {
+  const { speaking, grammar, fluency } = feedback.scores;
+  if (speaking <= grammar && speaking <= fluency) {
+    return "Fokus: pelafalan";
+  }
+  if (grammar <= speaking && grammar <= fluency) {
+    return "Fokus: struktur kalimat";
+  }
+  return "Fokus: kelancaran";
+}
+
+function improvementMessage(feedback: CoachFeedback, turn: CoachTurn) {
+  const { speaking, grammar, fluency } = feedback.scores;
+  if (speaking <= grammar && speaking <= fluency) {
+    return `Ulangi contoh ini pelan-pelan, lalu perjelas kata kunci: ${turn.sampleAnswer}`;
+  }
+  if (grammar <= speaking && grammar <= fluency) {
+    return `Ikuti susunan kata pada contoh ini, lalu ulangi 1x: ${turn.sampleAnswer}`;
+  }
+  return `Coba ucapkan sekali tanpa berhenti panjang, lalu lanjut: ${turn.sampleAnswer}`;
+}
+
+function formatNextPractice(nextPractice: string) {
+  const trimmed = nextPractice.trim();
+  if (!trimmed) {
+    return "";
+  }
+  if (trimmed.toLowerCase().startsWith("next:")) {
+    return `Lanjut: ${trimmed.slice(5).trim()}`;
+  }
+  return trimmed;
+}
+
+function uniqueExamples(...examples: string[]) {
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const raw of examples) {
+    const value = raw.trim();
+    if (!value) {
+      continue;
+    }
+    const key = value.toLowerCase();
+    if (seen.has(key)) {
+      continue;
+    }
+    seen.add(key);
+    out.push(value);
+    if (out.length >= 2) {
+      break;
+    }
+  }
+  return out;
+}
+
 
 function recordingSubmitErrorMessage(error: unknown) {
   if (error instanceof ApiRequestError) {
@@ -1156,6 +1221,8 @@ export function ConversationCoachPractice({
   const [syncStatus, setSyncStatus] = useState<"connecting" | "synced" | "local">("connecting");
   const [billingNotice, setBillingNotice] = useState("");
   const [recordingError, setRecordingError] = useState("");
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const [isScoreOpen, setIsScoreOpen] = useState(false);
 
   const recorder = useVoiceRecorder({
     onResult: (blob) => submitRecordedAudio(blob),
@@ -1227,6 +1294,8 @@ export function ConversationCoachPractice({
       return nextMessages;
     });
     setFeedback(input.nextFeedback);
+    setIsFeedbackOpen(true);
+    setIsScoreOpen(false);
     setCompletedTurns(input.nextCompletedTurns);
     setTurnIndex(input.nextTurnIndex);
   }
@@ -1501,38 +1570,74 @@ export function ConversationCoachPractice({
           </div>
 
           {feedback ? (
-            <div className="mt-4 space-y-4 text-sm leading-6">
-              <div>
-                <p className="font-semibold">Versi lebih natural</p>
-                <p className="mt-1 text-ink/70">{feedback.betterVersion}</p>
-              </div>
-              <div>
-                <p className="font-semibold">Penjelasan</p>
-                <p className="mt-1 text-ink/70">{feedback.explanation}</p>
-              </div>
-              <div>
-                <p className="font-semibold">Latihan berikutnya</p>
-                <p className="mt-1 text-ink/70">{feedback.nextPractice}</p>
-              </div>
-            </div>
+            <>
+              <button
+                type="button"
+                onClick={() => setIsFeedbackOpen((current) => !current)}
+                className="focus-ring mt-4 flex w-full items-center justify-between gap-3 rounded-lg bg-paper px-4 py-3 text-left"
+              >
+                <span className="text-sm font-semibold">{isFeedbackOpen ? "Sembunyikan feedback singkat" : "Lihat feedback singkat"}</span>
+                {isFeedbackOpen ? (
+                  <ChevronUp className="h-4 w-4 text-ink/60" aria-hidden="true" />
+                ) : (
+                  <ChevronDown className="h-4 w-4 text-ink/60" aria-hidden="true" />
+                )}
+              </button>
+
+              {isFeedbackOpen ? (
+                <div className="mt-4 space-y-4 text-sm leading-6">
+                  <div>
+                    <p className="font-semibold">Yang sudah bagus</p>
+                    <p className="mt-1 text-ink/70">{strengthMessage(feedback)}</p>
+                  </div>
+                  <div>
+                    <p className="font-semibold">{improvementTitle(feedback)}</p>
+                    <p className="mt-1 text-ink/70">{improvementMessage(feedback, activeTurn)}</p>
+                    {formatNextPractice(feedback.nextPractice) ? (
+                      <p className="mt-2 text-ink/60">{formatNextPractice(feedback.nextPractice)}</p>
+                    ) : null}
+                  </div>
+                  <div>
+                    <p className="font-semibold">Contoh jawaban natural (1–2)</p>
+                    <div className="mt-2 space-y-2">
+                      {uniqueExamples(activeTurn.sampleAnswer, feedback.betterVersion).map((example) => (
+                        <p key={example} className="rounded-lg bg-mint px-3 py-2 text-ink/75">
+                          {example}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ) : null}
+
+              <button
+                type="button"
+                onClick={() => setIsScoreOpen((current) => !current)}
+                className="focus-ring mt-4 inline-flex items-center gap-2 rounded-lg border border-ink/15 px-3 py-2 text-sm font-semibold hover:bg-mint"
+              >
+                {isScoreOpen ? "Sembunyikan skor" : "Lihat skor"}
+              </button>
+
+              {isScoreOpen ? (
+                <div className="mt-4 grid grid-cols-3 gap-2 text-center text-sm">
+                  {[
+                    ["Speaking", feedback?.scores.speaking],
+                    ["Grammar", feedback?.scores.grammar],
+                    ["Fluency", feedback?.scores.fluency]
+                  ].map(([label, value]) => (
+                    <div key={label} className="rounded-lg bg-paper p-3">
+                      <p className="text-lg font-semibold">{value ?? "–"}</p>
+                      <p className="text-xs text-ink/60">{label}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : null}
+            </>
           ) : (
             <p className="mt-4 text-sm leading-6 text-ink/60">
               Submit jawaban pertama untuk melihat versi yang lebih natural, penjelasan, dan skor.
             </p>
           )}
-
-          <div className="mt-5 grid grid-cols-3 gap-2 text-center text-sm">
-            {[
-              ["Speaking", feedback?.scores.speaking],
-              ["Grammar", feedback?.scores.grammar],
-              ["Fluency", feedback?.scores.fluency]
-            ].map(([label, value]) => (
-              <div key={label} className="rounded-lg bg-paper p-3">
-                <p className="text-lg font-semibold">{value ?? "–"}</p>
-                <p className="text-xs text-ink/60">{label}</p>
-              </div>
-            ))}
-          </div>
         </section>
 
         <section className="rounded-lg bg-ink p-5 text-white">
