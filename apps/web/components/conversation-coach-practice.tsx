@@ -1029,6 +1029,24 @@ function clampScore(score: number) {
   return Math.max(55, Math.min(score, 95));
 }
 
+function looksLikeRefusal(normalized: string) {
+  const cleaned = normalized.replace(/[^a-z\s]/g, " ").trim();
+  if (!cleaned) {
+    return true;
+  }
+  const tokens = cleaned.split(/\s+/).filter(Boolean);
+  if (!tokens.length) {
+    return true;
+  }
+  if (tokens.length <= 2 && tokens.every((token) => ["no", "nope", "nah"].includes(token))) {
+    return true;
+  }
+  if (tokens.length <= 2 && tokens[0] === "sorry") {
+    return true;
+  }
+  return false;
+}
+
 function matchesSamplePattern(answer: string, sampleAnswer: string) {
   const stopwords = new Set(["the", "that", "this", "with", "your", "please", "thank", "you"]);
   const answerTokens = new Set(answer.match(/[a-z0-9]+/g) ?? []);
@@ -1049,16 +1067,24 @@ function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTur
   const normalized = text.toLowerCase();
   const hasGreeting = /\b(hi|hello|morning|good morning)\b/.test(normalized);
   const hasThanks = /\b(thank|thanks)\b/.test(normalized);
-  const hasName = /\b(my name is|i'm|i am)\b/.test(normalized);
+  const nameMatch = normalized.match(/\b(my name is|i am|i'm)\s+([a-z]+)/);
+  const hasName = Boolean(nameMatch && !["good", "fine", "ok", "okay", "happy", "sad"].includes(nameMatch[2]));
   const hasOrigin = /\b(from|indonesia|jakarta|bandung|surabaya|malaysia|singapore)\b/.test(normalized);
   const hasQuestion = normalized.includes("?");
   const enoughWords = text.split(/\s+/).filter(Boolean).length >= 5;
 
   const target = activeTurns[turnIndex] ?? activeTurns[0];
   const matchedSamplePattern = matchesSamplePattern(normalized, target.sampleAnswer);
-  let speaking = 64;
-  let grammar = 66;
-  let fluency = 64;
+  const offTrack =
+    looksLikeRefusal(normalized) ||
+    (!matchedSamplePattern &&
+      !(turnIndex === 0 && (hasGreeting || hasThanks)) &&
+      !(turnIndex === 1 && hasName) &&
+      !(turnIndex === 2 && hasOrigin));
+
+  let speaking = offTrack ? 58 : 64;
+  let grammar = offTrack ? 56 : 66;
+  let fluency = offTrack ? 55 : 64;
 
   if (enoughWords) {
     speaking += 8;
@@ -1097,9 +1123,11 @@ function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTur
     (turnIndex === 1 && hasName) ||
     (turnIndex === 2 && hasOrigin);
 
-  const explanation = matchedExpected
-    ? `Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: ${target.sampleAnswer}`
-    : `Jawabanmu belum memakai pola yang diharapkan untuk "${target.focus}". Coba ikuti contoh ini: ${target.sampleAnswer}`;
+  const explanation = offTrack
+    ? `Jawabanmu belum menjawab pertanyaan ini. Coba jawab seperti: ${target.sampleAnswer}`
+    : matchedExpected
+      ? `Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: ${target.sampleAnswer}`
+      : `Jawabanmu belum memakai pola yang diharapkan untuk "${target.focus}". Coba ikuti contoh ini: ${target.sampleAnswer}`;
 
   return {
     betterVersion: target.sampleAnswer,
@@ -1189,6 +1217,11 @@ function uniqueExamples(...examples: string[]) {
   return out;
 }
 
+function isOffTrackExplanation(explanation: string) {
+  const normalized = explanation.toLowerCase();
+  return normalized.includes("belum menjawab") || normalized.includes("belum memakai pola") || normalized.includes("belum sesuai");
+}
+
 
 function recordingSubmitErrorMessage(error: unknown) {
   if (error instanceof ApiRequestError) {
@@ -1216,6 +1249,7 @@ export function ConversationCoachPractice({
   const [messages, setMessages] = useState<ChatMessage[]>([{ role: "coach", text: activeTurns[0].coach }]);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [turnIndex, setTurnIndex] = useState(0);
+  const [feedbackTurnIndex, setFeedbackTurnIndex] = useState(0);
   const [answer, setAnswer] = useState("");
   const [feedback, setFeedback] = useState<CoachFeedback | null>(null);
   const [completedTurns, setCompletedTurns] = useState(0);
@@ -1235,6 +1269,7 @@ export function ConversationCoachPractice({
 
   const completed = completedTurns >= activeTurns.length;
   const activeTurn = activeTurns[Math.min(turnIndex, activeTurns.length - 1)];
+  const feedbackTurn = activeTurns[Math.min(feedbackTurnIndex, activeTurns.length - 1)];
   const progressPercent = Math.round((completedTurns / activeTurns.length) * 100);
   const score = averageScore(feedback);
   const isRecording = recorder.status === "recording";
@@ -1302,6 +1337,7 @@ export function ConversationCoachPractice({
     setIsScoreOpen(false);
     setCompletedTurns(input.nextCompletedTurns);
     setTurnIndex(input.nextTurnIndex);
+    setFeedbackTurnIndex(Math.min(Math.max(input.nextCompletedTurns - 1, 0), activeTurns.length - 1));
   }
 
   function startRecording() {
@@ -1591,12 +1627,18 @@ export function ConversationCoachPractice({
               {isFeedbackOpen ? (
                 <div className="mt-4 space-y-4 text-sm leading-6">
                   <div>
-                    <p className="font-semibold">Yang sudah bagus</p>
-                    <p className="mt-1 text-ink/70">{strengthMessage(feedback)}</p>
+                    <p className="font-semibold">Ringkasan</p>
+                    <p className="mt-1 text-ink/70">{feedback.explanation}</p>
                   </div>
                   <div>
-                    <p className="font-semibold">{improvementTitle(feedback)}</p>
-                    <p className="mt-1 text-ink/70">{improvementMessage(feedback, activeTurn)}</p>
+                    <p className="font-semibold">
+                      {isOffTrackExplanation(feedback.explanation) ? "Fokus: jawab sesuai pertanyaan" : improvementTitle(feedback)}
+                    </p>
+                    <p className="mt-1 text-ink/70">
+                      {isOffTrackExplanation(feedback.explanation)
+                        ? `Coba jawab seperti ini: ${feedbackTurn.sampleAnswer}`
+                        : improvementMessage(feedback, feedbackTurn)}
+                    </p>
                     {formatNextPractice(feedback.nextPractice) ? (
                       <p className="mt-2 text-ink/60">{formatNextPractice(feedback.nextPractice)}</p>
                     ) : null}
@@ -1604,7 +1646,7 @@ export function ConversationCoachPractice({
                   <div>
                     <p className="font-semibold">Contoh jawaban natural (1–2)</p>
                     <div className="mt-2 space-y-2">
-                      {uniqueExamples(activeTurn.sampleAnswer, feedback.betterVersion).map((example) => (
+                      {uniqueExamples(feedbackTurn.sampleAnswer, feedback.betterVersion).map((example) => (
                         <p key={example} className="rounded-lg bg-mint px-3 py-2 text-ink/75">
                           {example}
                         </p>

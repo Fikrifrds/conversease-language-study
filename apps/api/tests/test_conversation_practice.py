@@ -16,6 +16,12 @@ class ConversationPracticeTest(unittest.TestCase):
         self.assertGreaterEqual(feedback.scores["speaking"], 80)
         self.assertIn("pertanyaan balik", feedback.indonesian_explanation)
 
+    def test_feedback_marks_off_topic_answer(self):
+        feedback = evaluate_answer("No.", turn_index=2)
+
+        self.assertIn("belum menjawab", feedback.indonesian_explanation.lower())
+        self.assertLessEqual(feedback.scores["speaking"], 60)
+
     def test_session_completes_after_three_turns(self):
         store = ConversationPracticeStore()
         session = store.create_session(demo_user_id="demo-user")

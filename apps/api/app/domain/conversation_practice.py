@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Dict, List, Optional
@@ -312,6 +313,20 @@ def clamp_score(score: int) -> int:
     return max(55, min(score, 95))
 
 
+def _looks_like_refusal(normalized: str) -> bool:
+    cleaned = re.sub(r"[^a-z\s]", " ", normalized).strip()
+    if not cleaned:
+        return True
+    tokens = [token for token in cleaned.split() if token]
+    if not tokens:
+        return True
+    if len(tokens) <= 2 and all(token in {"no", "nope", "nah"} for token in tokens):
+        return True
+    if len(tokens) <= 2 and tokens[0] == "sorry":
+        return True
+    return False
+
+
 def evaluate_answer(
     answer: str,
     turn_index: int,
@@ -322,13 +337,17 @@ def evaluate_answer(
     active_turns = roleplay_turns_for_lesson(lesson_slug)
     safe_turn_index = min(turn_index, len(active_turns) - 1)
     active_turn = active_turns[safe_turn_index]
-    keyword_hits = sum(1 for keyword in active_turn.expected_keywords if keyword in normalized)
+    expects_question = "?" in active_turn.expected_keywords
+    keyword_hits = sum(1 for keyword in active_turn.expected_keywords if keyword != "?" and keyword in normalized)
     has_question = "?" in normalized
     enough_words = len([word for word in text.split() if word]) >= 5
+    match_hits = keyword_hits + (1 if expects_question and has_question else 0)
+    expected_total = sum(1 for keyword in active_turn.expected_keywords if keyword and keyword != "?") + (1 if expects_question else 0)
+    off_track = expected_total > 0 and (match_hits == 0 or _looks_like_refusal(normalized))
 
-    speaking = 64
-    grammar = 66
-    fluency = 64
+    speaking = 58 if off_track else 64
+    grammar = 56 if off_track else 66
+    fluency = 55 if off_track else 64
 
     if enough_words:
         speaking += 8
@@ -351,9 +370,19 @@ def evaluate_answer(
 
     return CoachFeedback(
         better_version=active_turn.sample_answer,
-        indonesian_explanation=active_turn.indonesian_explanation
-        or f"Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: {active_turn.sample_answer}",
-        next_practice=next_practice,
+        indonesian_explanation=(
+            f"Jawabanmu belum menjawab pertanyaan ini. Coba jawab seperti: {active_turn.sample_answer}"
+            if off_track
+            else (
+                active_turn.indonesian_explanation
+                or f"Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: {active_turn.sample_answer}"
+            )
+        ),
+        next_practice=(
+            f"Ulangi turn ini dan jawab sesuai fokus: {active_turn.focus}."
+            if off_track
+            else next_practice
+        ),
         scores={
             "speaking": clamp_score(speaking),
             "grammar": clamp_score(grammar),

@@ -106,6 +106,7 @@ def _system_prompt() -> str:
     return (
         "You are an English conversation coach for Indonesian A1 beginners. "
         "Give short, encouraging, accurate feedback. "
+        "If the learner's answer does not answer the coach question (e.g. they say 'No.'), say so clearly and provide a correct short answer. "
         "Write better_version in natural English. "
         "Write indonesian_explanation in Bahasa Indonesia, max 2 sentences. "
         "Write next_practice as one short actionable tip. "
