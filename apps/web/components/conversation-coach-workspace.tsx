@@ -1,8 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { coachScenarios } from "@/lib/data";
+import { readLatestPracticeSlug, saveLatestPracticeSlug } from "@/lib/practice-storage";
 
 const legacyScenarios = [
   { slug: "saying-hello-and-goodbye", label: "Greeting & Goodbye", description: "Buka dan tutup percakapan singkat." },
@@ -54,6 +56,20 @@ const scenarios = [
 
 export function ConversationCoachWorkspace() {
   const [activeSlug, setActiveSlug] = useState(scenarios[0].slug);
+  const searchParams = useSearchParams();
+
+  useEffect(() => {
+    const fromQuery = searchParams.get("scenario");
+    const preferred = fromQuery || readLatestPracticeSlug();
+
+    if (!preferred) {
+      return;
+    }
+
+    if (scenarios.some((scenario) => scenario.slug === preferred)) {
+      setActiveSlug(preferred);
+    }
+  }, [searchParams]);
 
   return (
     <div className="space-y-5">
@@ -71,7 +87,10 @@ export function ConversationCoachWorkspace() {
               <button
                 key={scenario.slug}
                 type="button"
-                onClick={() => setActiveSlug(scenario.slug)}
+                onClick={() => {
+                  setActiveSlug(scenario.slug);
+                  saveLatestPracticeSlug(scenario.slug);
+                }}
                 aria-pressed={selected}
                 className={`focus-ring rounded-lg border p-4 text-left transition-colors ${
                   selected ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"

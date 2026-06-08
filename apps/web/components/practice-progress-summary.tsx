@@ -4,7 +4,14 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CheckCircle2, MessageCircle, Play, TrendingUp } from "lucide-react";
 import { getLatestPractice } from "@/lib/conversation-api";
-import { readSavedPractice, saveSavedPractice, type SavedPractice } from "@/lib/practice-storage";
+import { coachScenarios } from "@/lib/data";
+import {
+  practiceStorageKeyForLesson,
+  readLatestSavedPractice,
+  saveLatestPracticeSlug,
+  saveSavedPractice,
+  type SavedPractice
+} from "@/lib/practice-storage";
 
 type PracticeProgressSummaryProps = {
   compact?: boolean;
@@ -37,18 +44,24 @@ export function PracticeProgressSummary({
   incompleteLabel = "Lanjutkan Roleplay"
 }: PracticeProgressSummaryProps) {
   const [practice, setPractice] = useState<SavedPractice | null>(null);
+  const [lessonSlug, setLessonSlug] = useState<string | null>(null);
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     let ignore = false;
 
     async function loadPractice() {
-      const localPractice = readSavedPractice();
-      setPractice(localPractice);
+      const local = readLatestSavedPractice();
+      setPractice(local?.practice ?? null);
+      setLessonSlug(local?.lessonSlug ?? null);
       setMounted(true);
 
       try {
-        const apiPractice = await getLatestPractice();
+        if (!local?.lessonSlug) {
+          return;
+        }
+
+        const apiPractice = await getLatestPractice(local.lessonSlug);
 
         if (ignore || !apiPractice) {
           return;
@@ -62,10 +75,11 @@ export function PracticeProgressSummary({
           lastScore: apiPractice.lastScore,
           updatedAt: apiPractice.updatedAt
         };
-        saveSavedPractice(nextPractice);
+        saveSavedPractice(nextPractice, practiceStorageKeyForLesson(local.lessonSlug));
+        saveLatestPracticeSlug(local.lessonSlug);
         setPractice(nextPractice);
       } catch {
-        setPractice(localPractice);
+        setPractice(local?.practice ?? null);
       }
     }
 
@@ -85,16 +99,21 @@ export function PracticeProgressSummary({
     : "Mulai Latihan";
   const statusLabel = compact && practice?.completed ? "Selesai" : status;
   const readinessLabel = compact && readiness === "Sesuai Target" ? "Siap" : readiness;
-  const nextHref = practice?.completed ? completedHref : incompleteHref;
+  const nextHref = practice?.completed
+    ? completedHref
+    : lessonSlug
+      ? `${incompleteHref}?scenario=${encodeURIComponent(lessonSlug)}`
+      : incompleteHref;
   const nextLabel = practice?.completed ? completedLabel : incompleteLabel;
   const Icon = practice?.completed ? CheckCircle2 : Play;
+  const scenarioTitle = lessonSlug ? coachScenarios.find((scenario) => scenario.slug === lessonSlug)?.label : null;
 
   return (
     <section className={`rounded-lg border border-ink/10 bg-white p-5 shadow-sm ${compact ? "" : "h-full"}`}>
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-sm font-semibold uppercase text-leaf">Latihan Terakhir</p>
-          <h2 className="mt-2 text-xl font-semibold">Roleplay greeting</h2>
+          <h2 className="mt-2 text-xl font-semibold">{scenarioTitle ? `Roleplay: ${scenarioTitle}` : "Mulai roleplay pertama"}</h2>
         </div>
         <MessageCircle className="h-5 w-5 text-coral" aria-hidden="true" />
       </div>

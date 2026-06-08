@@ -12,9 +12,10 @@ import {
   type ApiPracticeSummary
 } from "@/lib/conversation-api";
 import {
-  defaultPracticeStorageKey,
+  practiceStorageKeyForLesson,
   removeSavedPractice,
   saveSavedPractice,
+  saveLatestPracticeSlug,
   type SavedPractice
 } from "@/lib/practice-storage";
 import { useVoiceRecorder } from "@/lib/use-voice-recorder";
@@ -1210,7 +1211,8 @@ export function ConversationCoachPractice({
   storageKey
 }: ConversationCoachPracticeProps) {
   const activeTurns = mergedTurnsByLessonSlug[lessonSlug] ?? defaultTurns;
-  const effectiveStorageKey = storageKey ?? `${defaultPracticeStorageKey}.${lessonSlug}`;
+  const activeScenario = coachScenarioBySlug[lessonSlug];
+  const effectiveStorageKey = storageKey ?? practiceStorageKeyForLesson(lessonSlug);
   const [messages, setMessages] = useState<ChatMessage[]>([{ role: "coach", text: activeTurns[0].coach }]);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [turnIndex, setTurnIndex] = useState(0);
@@ -1256,6 +1258,7 @@ export function ConversationCoachPractice({
     }
 
     saveSavedPractice(savedPractice, effectiveStorageKey);
+    saveLatestPracticeSlug(lessonSlug);
   }, [completedTurns, effectiveStorageKey, savedPractice]);
 
   function applySummary(summary: ApiPracticeSummary) {
@@ -1272,6 +1275,7 @@ export function ConversationCoachPractice({
       },
       effectiveStorageKey
     );
+    saveLatestPracticeSlug(lessonSlug);
   }
 
   function applyTurnResult(input: {
@@ -1449,7 +1453,7 @@ export function ConversationCoachPractice({
                 Roleplay Terarah
               </h2>
               <p className="mt-3 leading-7 text-ink/70">
-                Scenario: meet a new friend in an online English class.
+                {activeScenario ? `Skenario: ${activeScenario.label}. ${activeScenario.description}` : "Skenario: latihan roleplay singkat."}
               </p>
               <p className="mt-2 text-xs font-semibold uppercase text-ink/45">
                 {syncStatus === "synced"

@@ -98,6 +98,14 @@ export function DashboardLearningProgress() {
           <Play className="h-4 w-4" aria-hidden="true" />
           {currentMission.progressStatus === "completed" ? "Tinjau Lesson" : "Lanjutkan Lesson"}
         </Link>
+
+        <Link
+          href={`/conversation-coach?scenario=${encodeURIComponent(currentMission.slug)}`}
+          className="focus-ring mt-3 inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-ink"
+        >
+          <MessageCircle className="h-4 w-4" aria-hidden="true" />
+          Latihan Coach untuk misi ini
+        </Link>
       </section>
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
