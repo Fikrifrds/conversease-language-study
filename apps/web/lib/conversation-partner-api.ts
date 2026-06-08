@@ -40,28 +40,14 @@ export type PartnerSummary = {
   completedTurns: number;
 };
 
-export type PartnerSessionSummaryRow = {
-  sessionId: string;
-  topicKey: string;
-  topicTitle: string;
-  levelCode: string;
-  status: string;
-  completedTurns: number;
-  maxTurns: number | null;
-  overallScore: number | null;
-  scores: { speaking: number; grammar: number; fluency: number } | null;
-  updatedAt: string;
+export type TopicProgress = {
+  completed: boolean;
+  bestScore: number | null;
+  hasOpenSession: boolean;
 };
 
-export type PartnerSessionDetail = PartnerSessionSummaryRow & {
-  messages: { role: "partner" | "user"; text: string }[];
-  summary: {
-    summary: string;
-    indonesian_explanation: string;
-    scores: { speaking: number; grammar: number; fluency: number };
-    overall: number;
-  } | null;
-};
+// Keyed by topic key.
+export type TopicProgressMap = Record<string, TopicProgress>;
 
 type ApiResponse<T> = { data: T };
 
@@ -205,64 +191,39 @@ export async function fetchPartnerSummary(sessionId: string): Promise<PartnerSum
   };
 }
 
-type ApiSessionRow = {
-  session_id: string;
-  topic_key: string;
-  topic_title: string;
-  level_code: string;
-  status: string;
-  completed_turns: number;
-  max_turns: number | null;
-  overall_score: number | null;
-  scores: { speaking: number; grammar: number; fluency: number } | null;
-  updated_at: string;
+type ApiTopicProgress = {
+  completed: boolean;
+  best_score: number | null;
+  has_open_session: boolean;
 };
 
-function mapSessionRow(row: ApiSessionRow): PartnerSessionSummaryRow {
-  return {
-    sessionId: row.session_id,
-    topicKey: row.topic_key,
-    topicTitle: row.topic_title,
-    levelCode: row.level_code,
-    status: row.status,
-    completedTurns: row.completed_turns,
-    maxTurns: row.max_turns,
-    overallScore: row.overall_score,
-    scores: row.scores,
-    updatedAt: row.updated_at
-  };
-}
-
-export async function listPartnerSessions(): Promise<PartnerSessionSummaryRow[]> {
-  const response = await fetch(`${apiBaseUrl()}/conversation-partner/sessions`, {
+export async function fetchTopicProgress(): Promise<TopicProgressMap> {
+  const response = await fetch(`${apiBaseUrl()}/conversation-partner/topic-progress`, {
     headers: authHeaders()
   });
   if (!response.ok) {
     return readError(response);
   }
-  const payload = (await response.json()) as ApiResponse<ApiSessionRow[]>;
-  return payload.data.map(mapSessionRow);
+  const payload = (await response.json()) as ApiResponse<Record<string, ApiTopicProgress>>;
+  const out: TopicProgressMap = {};
+  for (const [key, value] of Object.entries(payload.data)) {
+    out[key] = {
+      completed: value.completed,
+      bestScore: value.best_score,
+      hasOpenSession: value.has_open_session
+    };
+  }
+  return out;
 }
 
-export async function fetchPartnerSessionDetail(sessionId: string): Promise<PartnerSessionDetail> {
+export async function resetTopicProgress(topicKey: string): Promise<void> {
   const response = await fetch(
-    `${apiBaseUrl()}/conversation-partner/sessions/${sessionId}`,
-    { headers: authHeaders() }
+    `${apiBaseUrl()}/conversation-partner/topics/${encodeURIComponent(topicKey)}/progress`,
+    { method: "DELETE", headers: authHeaders() }
   );
   if (!response.ok) {
-    return readError(response);
+    await readError(response);
   }
-  const payload = (await response.json()) as ApiResponse<
-    ApiSessionRow & {
-      messages: { role: "partner" | "user"; text: string }[];
-      summary: PartnerSessionDetail["summary"];
-    }
-  >;
-  return {
-    ...mapSessionRow(payload.data),
-    messages: payload.data.messages,
-    summary: payload.data.summary
-  };
 }
 
 function recordedAudioFilename(contentType: string) {

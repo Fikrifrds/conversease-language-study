@@ -260,6 +260,69 @@ class ConversationPartnerRoutesTest(unittest.TestCase):
         self.assertEqual(roles, ["partner", "user", "partner"])
         self.assertEqual(data["messages"][1]["text"], "I want a coffee")
 
+    def test_start_reuses_open_session(self):
+        # Starting the same topic twice without finishing reuses the same session
+        # instead of creating a new (abandoned) one.
+        session_id = self._create_session_with_turn()
+        with patch(
+            "app.api.routes.conversation_partner.synthesize_partner_reply_audio",
+            new=AsyncMock(return_value="data:audio/mpeg;base64,AAAA"),
+        ):
+            again = self.client.post(
+                "/api/conversation-partner/sessions",
+                headers=self.headers,
+                json={"topic_key": "order-a-drink"},
+            )
+        self.assertEqual(again.status_code, 200, again.text)
+        self.assertEqual(again.json()["data"]["session_id"], session_id)
+        self.assertEqual(again.json()["data"]["completed_turns"], 1)
+
+    def test_topic_progress_reports_score_and_open_session(self):
+        # A completed session with a score.
+        done_id = self._create_session_with_turn()
+        with patch(
+            "app.api.routes.conversation_partner.summarize_session",
+            new=AsyncMock(
+                return_value=PartnerSummary(
+                    summary="Nice",
+                    indonesian_explanation="Bagus.",
+                    scores={"speaking": 80, "grammar": 70, "fluency": 78},
+                )
+            ),
+        ):
+            self.client.post(
+                f"/api/conversation-partner/sessions/{done_id}/summary",
+                headers=self.headers,
+            )
+        # Mark it completed via a final turn flagged should_end.
+        with self.SessionLocal() as db:
+            session = db.get(models.ConversationSessionModel, done_id)
+            session.status = "completed"
+            db.commit()
+
+        progress = self.client.get(
+            "/api/conversation-partner/topic-progress", headers=self.headers
+        )
+        self.assertEqual(progress.status_code, 200, progress.text)
+        data = progress.json()["data"]
+        self.assertIn("order-a-drink", data)
+        self.assertTrue(data["order-a-drink"]["completed"])
+        self.assertEqual(data["order-a-drink"]["best_score"], 76)
+
+    def test_reset_topic_clears_progress(self):
+        self._create_session_with_turn()
+        reset = self.client.delete(
+            "/api/conversation-partner/topics/order-a-drink/progress",
+            headers=self.headers,
+        )
+        self.assertEqual(reset.status_code, 200, reset.text)
+        self.assertGreaterEqual(reset.json()["data"]["removed_sessions"], 1)
+
+        progress = self.client.get(
+            "/api/conversation-partner/topic-progress", headers=self.headers
+        )
+        self.assertNotIn("order-a-drink", progress.json()["data"])
+
     def test_unknown_topic_returns_404(self):
         response = self.client.post(
             "/api/conversation-partner/sessions",

@@ -58,11 +58,17 @@ async def create_partner_session(
         raise HTTPException(status_code=404, detail="partner_topic_not_found")
 
     BillingRepository(db).ensure_free_access(current_user.id)
-    session = repository.create_session(
-        user_id=current_user.id,
-        topic=topic,
-        language_code=payload.language_code,
-    )
+
+    # Resume an unfinished session for this topic instead of creating a new one,
+    # so abandoned attempts don't pile up. A fresh session is created only when
+    # none is open (e.g. after finishing or resetting the topic).
+    session = repository.find_open_session(user_id=current_user.id, topic_key=topic.key)
+    if session is None:
+        session = repository.create_session(
+            user_id=current_user.id,
+            topic=topic,
+            language_code=payload.language_code,
+        )
 
     opening_audio = await synthesize_partner_reply_audio(text=topic.opening_line)
 
@@ -72,7 +78,7 @@ async def create_partner_session(
             "topic": topic_payload(topic),
             "opening_line": topic.opening_line,
             "opening_audio": opening_audio,
-            "completed_turns": 0,
+            "completed_turns": len(session.turns),
             "max_turns": topic.max_turns,
         }
     }
@@ -231,6 +237,27 @@ def _session_summary_payload(session) -> dict:
         "scores": summary.get("scores") if summary else None,
         "updated_at": session.updated_at.isoformat(),
     }
+
+
+@router.get("/conversation-partner/topic-progress")
+async def get_partner_topic_progress(
+    current_user: User = Depends(get_current_user),
+    repository: ConversationPartnerRepository = Depends(get_repository),
+) -> dict:
+    """Per-topic progress (best score, done, open session) keyed by topic key, so
+    each topic card can show its own status inline."""
+    return {"data": repository.topic_progress(current_user.id)}
+
+
+@router.delete("/conversation-partner/topics/{topic_key}/progress")
+async def reset_partner_topic(
+    topic_key: str,
+    current_user: User = Depends(get_current_user),
+    repository: ConversationPartnerRepository = Depends(get_repository),
+) -> dict:
+    """Clear a topic's progress so it returns to a fresh 'not started' state."""
+    removed = repository.reset_topic(user_id=current_user.id, topic_key=topic_key)
+    return {"data": {"topic_key": topic_key, "removed_sessions": removed}}
 
 
 @router.get("/conversation-partner/sessions")

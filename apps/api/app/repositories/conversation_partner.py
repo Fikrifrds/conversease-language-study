@@ -47,6 +47,25 @@ class ConversationPartnerRepository:
         self.db.commit()
         return session
 
+    def find_open_session(
+        self, *, user_id: str, topic_key: str
+    ) -> Optional[ConversationSessionModel]:
+        """The user's most recent not-yet-completed session for a topic, if any.
+        Lets Start resume an unfinished conversation instead of spawning a new
+        row each time, which otherwise floods history with abandoned sessions."""
+        return self.db.execute(
+            select(ConversationSessionModel)
+            .where(
+                ConversationSessionModel.user_id == user_id,
+                ConversationSessionModel.mode == self.MODE,
+                ConversationSessionModel.scenario_key == topic_key,
+                ConversationSessionModel.status != "completed",
+            )
+            .options(selectinload(ConversationSessionModel.turns))
+            .order_by(ConversationSessionModel.updated_at.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+
     def get_session(self, session_id: str) -> Optional[ConversationSessionModel]:
         return self.db.execute(
             select(ConversationSessionModel)
@@ -137,6 +156,57 @@ class ConversationPartnerRepository:
         }
         session.updated_at = datetime.utcnow()
         self.db.commit()
+
+    def topic_progress(self, user_id: str) -> dict:
+        """Per-topic progress for a user: best completed score, done flag, and
+        whether an unfinished session is open. Keyed by topic (scenario_key)."""
+        sessions = list(
+            self.db.execute(
+                select(ConversationSessionModel)
+                .where(
+                    ConversationSessionModel.user_id == user_id,
+                    ConversationSessionModel.mode == self.MODE,
+                )
+                .options(selectinload(ConversationSessionModel.turns))
+            )
+            .scalars()
+            .all()
+        )
+        progress: dict = {}
+        for session in sessions:
+            key = session.scenario_key
+            entry = progress.setdefault(
+                key,
+                {"completed": False, "best_score": None, "has_open_session": False},
+            )
+            summary = session.summary_json if isinstance(session.summary_json, dict) else None
+            if session.status == "completed":
+                entry["completed"] = True
+                score = summary.get("overall") if summary else None
+                if score is not None and (entry["best_score"] is None or score > entry["best_score"]):
+                    entry["best_score"] = score
+            else:
+                entry["has_open_session"] = True
+        return progress
+
+    def reset_topic(self, *, user_id: str, topic_key: str) -> int:
+        """Delete all of a user's sessions for a topic so it returns to a fresh
+        'not started' state. Returns the number of sessions removed."""
+        sessions = list(
+            self.db.execute(
+                select(ConversationSessionModel).where(
+                    ConversationSessionModel.user_id == user_id,
+                    ConversationSessionModel.mode == self.MODE,
+                    ConversationSessionModel.scenario_key == topic_key,
+                )
+            )
+            .scalars()
+            .all()
+        )
+        for session in sessions:
+            self.db.delete(session)
+        self.db.commit()
+        return len(sessions)
 
     def list_sessions(self, user_id: str, *, limit: int = 30) -> List[ConversationSessionModel]:
         """Most recent Conversation Partner sessions for a user, with turns loaded."""
