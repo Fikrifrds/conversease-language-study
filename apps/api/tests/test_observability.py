@@ -1,4 +1,5 @@
 import unittest
+from datetime import datetime
 from unittest.mock import patch
 
 from fastapi.testclient import TestClient
@@ -6,8 +7,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
+from app.api.deps import get_current_user
 from app.core.observability import runtime_metrics
 from app.db.session import get_db
+from app.domain.ai import LLMResult
+from app.domain.users import User
 from app.main import create_app
 
 
@@ -102,6 +106,29 @@ class ObservabilityTest(unittest.TestCase):
         self.assertEqual(payload["requests"]["status_buckets"], {"2xx": 1})
         self.assertEqual(payload["requests"]["methods"], {"GET": 1})
         self.assertEqual(payload["requests"]["paths"], {"/api/health": 1})
+
+    def test_llm_health_returns_ok_when_provider_is_configured(self):
+        app = create_app()
+
+        app.dependency_overrides[get_current_user] = lambda: User(
+            id="user-1",
+            name="Test User",
+            email="test@example.local",
+            email_verified_at=datetime.utcnow(),
+            created_at=datetime.utcnow(),
+            updated_at=datetime.utcnow(),
+        )
+
+        class FakeProvider:
+            async def generate_chat_completion(self, messages, model_config, response_schema=None):
+                return LLMResult(content='{"ok": true}')
+
+        with patch("app.api.routes.health.get_llm_provider", return_value=FakeProvider()):
+            client = TestClient(app)
+            response = client.get("/api/health/llm")
+
+        self.assertEqual(response.status_code, 200, response.text)
+        self.assertEqual(response.json()["status"], "ok")
 
 
 if __name__ == "__main__":

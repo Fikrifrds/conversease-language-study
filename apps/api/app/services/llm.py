@@ -150,12 +150,7 @@ class OpenAIProvider(LLMProvider):
         }
         if response_schema is not None:
             payload["response_format"] = {
-                "type": "json_schema",
-                "json_schema": {
-                    "name": "response",
-                    "schema": response_schema,
-                    "strict": True,
-                },
+                "type": "json_object",
             }
 
         headers = {
@@ -189,12 +184,18 @@ class OpenAIProvider(LLMProvider):
             except httpx.HTTPStatusError as exc:
                 elapsed_ms = int((asyncio.get_running_loop().time() - started) * 1000)
                 status = exc.response.status_code
+                detail = ""
+                try:
+                    detail = exc.response.text[:300]
+                except Exception:
+                    detail = ""
                 logger.warning(
-                    "llm_openai_status_error model=%s status=%s attempt=%s duration_ms=%s",
+                    "llm_openai_status_error model=%s status=%s attempt=%s duration_ms=%s detail=%s",
                     model_config.model,
                     status,
                     attempt + 1,
                     elapsed_ms,
+                    detail,
                 )
                 last_error = exc
                 retryable = status in {408, 429, 500, 502, 503, 504}
