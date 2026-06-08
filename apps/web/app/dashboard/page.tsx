@@ -22,7 +22,7 @@ export default function DashboardPage() {
 
         <DashboardLearningProgress />
 
-        <div className="mt-5 grid gap-5 lg:grid-cols-3">
+        <div className="mt-5 grid items-start gap-5 lg:grid-cols-3">
           <PracticeProgressSummary />
           <DashboardReviewToday />
           <DashboardRecommendedLessons />

@@ -57,8 +57,8 @@ export function DashboardLearningProgress() {
   const primaryGoal = summary?.onboarding?.primaryGoal;
 
   return (
-    <div className="mt-8 grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
-      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+    <div className="mt-8 grid items-start gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm sm:p-6">
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-semibold text-coral">A1 Unit 1</p>
@@ -73,7 +73,7 @@ export function DashboardLearningProgress() {
               {currentMission.conversationGoal}
             </p>
           </div>
-          <div className="grid h-24 w-24 place-items-center rounded-lg bg-mint text-center">
+          <div className="grid h-24 w-24 shrink-0 place-items-center rounded-lg bg-mint text-center md:self-start">
             <span className="text-3xl font-semibold">{currentMission.estimatedMinutes}</span>
             <span className="-mt-5 text-xs font-semibold text-ink/60">menit</span>
           </div>
@@ -91,24 +91,26 @@ export function DashboardLearningProgress() {
             </div>
           ))}
         </div>
-        <Link
-          href={`/lessons/${currentMission.slug}`}
-          className="focus-ring mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf"
-        >
-          <Play className="h-4 w-4" aria-hidden="true" />
-          {currentMission.progressStatus === "completed" ? "Tinjau Lesson" : "Lanjutkan Lesson"}
-        </Link>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <Link
+            href={`/lessons/${currentMission.slug}`}
+            className="focus-ring inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf"
+          >
+            <Play className="h-4 w-4" aria-hidden="true" />
+            {currentMission.progressStatus === "completed" ? "Tinjau Lesson" : "Lanjutkan Lesson"}
+          </Link>
 
-        <Link
-          href={`/conversation-coach?scenario=${encodeURIComponent(currentMission.slug)}`}
-          className="focus-ring mt-3 inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-ink"
-        >
-          <MessageCircle className="h-4 w-4" aria-hidden="true" />
-          Latihan Coach untuk misi ini
-        </Link>
+          <Link
+            href={`/conversation-coach?scenario=${encodeURIComponent(currentMission.slug)}`}
+            className="focus-ring inline-flex items-center gap-2 text-sm font-semibold text-leaf hover:text-ink"
+          >
+            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            Latihan Coach untuk misi ini
+          </Link>
+        </div>
       </section>
 
-      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm sm:p-6">
         <div className="flex items-center justify-between gap-4">
           <div>
             <p className="text-sm font-semibold text-leaf">Progress jalur belajar</p>

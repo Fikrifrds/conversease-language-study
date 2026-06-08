@@ -64,19 +64,22 @@ export function DashboardRecommendedLessons() {
           </Link>
         </div>
       ) : (
-        <div className="mt-4 grid gap-3 md:grid-cols-3">
+        <div className="mt-4 grid gap-3">
           {recommended.map((lesson) => (
             <Link
               key={lesson.slug}
               href={`/lessons/${lesson.slug}`}
-              className="focus-ring rounded-lg bg-paper p-4 hover:bg-mint"
+              className="focus-ring group flex items-start justify-between gap-3 rounded-lg bg-paper p-4 transition hover:bg-mint"
             >
-              <span className="inline-flex items-center gap-1 text-xs font-semibold text-coral">
-                <CircleDot className="h-3 w-3" aria-hidden="true" />
-                {statusLabel(lesson.progressStatus)}
-              </span>
-              <h3 className="mt-2 font-semibold">{lesson.title}</h3>
-              <p className="mt-2 text-sm leading-6 text-ink/60">{lesson.conversationGoal}</p>
+              <div className="min-w-0">
+                <span className="inline-flex items-center gap-1 text-xs font-semibold text-coral">
+                  <CircleDot className="h-3 w-3 shrink-0" aria-hidden="true" />
+                  {statusLabel(lesson.progressStatus)}
+                </span>
+                <h3 className="mt-2 font-semibold leading-6">{lesson.title}</h3>
+                <p className="mt-1 line-clamp-2 text-sm leading-6 text-ink/60">{lesson.conversationGoal}</p>
+              </div>
+              <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-ink/35 transition group-hover:translate-x-0.5 group-hover:text-leaf" aria-hidden="true" />
             </Link>
           ))}
         </div>
