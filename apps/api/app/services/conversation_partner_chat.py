@@ -237,6 +237,10 @@ def _parse_reply(content: str, *, fallback: PartnerReply, turns_left: int) -> Pa
         )
         reply = str(raw_reply or "").strip()
         if not reply:
+            logger.warning(
+                "partner_reply_missing_reply keys=%s",
+                sorted(list(data.keys())) if isinstance(data, dict) else "n/a",
+            )
             return fallback
         should_end = bool(data.get("should_end") if "should_end" in data else data.get("shouldEnd", False)) or turns_left <= 0
         return PartnerReply(
@@ -278,6 +282,11 @@ def _parse_summary(content: str, *, fallback: PartnerSummary) -> PartnerSummary:
             or data.get("explanationId")
             or fallback.indonesian_explanation
         )
+        if not scores:
+            logger.warning(
+                "partner_summary_missing_scores keys=%s",
+                sorted(list(data.keys())) if isinstance(data, dict) else "n/a",
+            )
         return PartnerSummary(
             summary=str(summary).strip() or fallback.summary,
             indonesian_explanation=str(indonesian_explanation).strip()

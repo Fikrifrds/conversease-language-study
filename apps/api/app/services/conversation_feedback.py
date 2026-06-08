@@ -146,6 +146,13 @@ def _parse_feedback(
         if not isinstance(raw_scores, dict):
             raw_scores = {}
         scores = raw_scores
+        if not scores:
+            logger.warning(
+                "conversation_feedback_missing_scores lesson=%s turn=%s keys=%s",
+                lesson_slug,
+                turn_index,
+                sorted(list(data.keys())) if isinstance(data, dict) else "n/a",
+            )
 
         better_version = (
             data.get("better_version")
