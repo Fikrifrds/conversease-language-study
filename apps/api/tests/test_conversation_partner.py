@@ -68,6 +68,23 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         self.assertEqual(reply.reply, "Sure! Small or large?")
         self.assertFalse(reply.should_end)
 
+    def test_uses_llm_reply_under_response_key(self):
+        provider = FakeProvider(
+            '{"response": "Sure! Small or large?", "on_topic": true, "should_end": false}'
+        )
+        reply = asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[("user", "I want coffee")],
+                user_message="I want coffee",
+                completed_turns=1,
+                provider=provider,
+            )
+        )
+        self.assertEqual(reply.reply, "Sure! Small or large?")
+        self.assertFalse(reply.should_end)
+
     def test_forces_end_when_no_turns_left(self):
         provider = FakeProvider(
             '{"reply": "Anything else?", "on_topic": true, "should_end": false}'

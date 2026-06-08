@@ -229,6 +229,7 @@ def _parse_reply(content: str, *, fallback: PartnerReply, turns_left: int) -> Pa
         data = json.loads(_extract_json(content))
         raw_reply = (
             data.get("reply")
+            or data.get("response")
             or data.get("partner_reply")
             or data.get("partnerReply")
             or data.get("answer")
