@@ -162,6 +162,10 @@ class OpenAIProvider(LLMProvider):
         if schema_payload is not None:
             payload["response_format"] = schema_payload
 
+        prefer_json_object = model_config.model.startswith("gpt-4.1-")
+        if prefer_json_object and response_schema is not None:
+            payload["response_format"] = {"type": "json_object"}
+
         headers = {
             "Authorization": f"Bearer {self._api_key}",
             "Content-Type": "application/json",
@@ -195,7 +199,7 @@ class OpenAIProvider(LLMProvider):
                 status = exc.response.status_code
                 detail = ""
                 try:
-                    detail = exc.response.text[:300]
+                    detail = " ".join(exc.response.text[:300].split())
                 except Exception:
                     detail = ""
                 logger.warning(
@@ -207,16 +211,21 @@ class OpenAIProvider(LLMProvider):
                     detail,
                 )
                 last_error = exc
-                schema_rejected = status == 400 and schema_payload is not None and attempt == 0 and any(
-                    needle in detail.lower()
-                    for needle in (
-                        "response_format",
-                        "json_schema",
-                        "schema",
-                        "invalid",
+                schema_rejected = (
+                    status == 400
+                    and schema_payload is not None
+                    and attempt == 0
+                    and any(
+                        needle in detail.lower()
+                        for needle in (
+                            "response_format",
+                            "json_schema",
+                            "schema",
+                            "invalid",
+                        )
                     )
                 )
-                if schema_rejected:
+                if schema_rejected and not prefer_json_object:
                     payload["response_format"] = {"type": "json_object"}
                     await asyncio.sleep(0.1)
                     continue
