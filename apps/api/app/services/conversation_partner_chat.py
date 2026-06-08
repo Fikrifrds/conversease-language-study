@@ -84,36 +84,26 @@ async def generate_partner_reply(
         ChatMessage(role="user", content=user_message.strip()),
     ]
 
-    # One quick retry: the chat endpoint occasionally times out / drops a request,
-    # and a generic fallback feels like the conversation reset. A retry recovers
-    # most of these transient failures.
-    last_error: Optional[Exception] = None
-    for attempt in range(2):
-        try:
-            result = await active_provider.generate_chat_completion(
-                messages=messages,
-                model_config=TASK_MODEL_CONFIGS["conversation_partner_reply"],
-                response_schema=REPLY_RESPONSE_SCHEMA,
-            )
-            return _parse_reply(result.content, fallback=fallback, turns_left=turns_left)
-        except LLMError as exc:
-            last_error = exc
-            logger.warning(
-                "partner_reply_llm_failed attempt=%s topic=%s level=%s: %s",
-                attempt + 1,
-                topic.key,
-                level_code,
-                exc,
-            )
-            continue
-        except Exception as exc:  # never break a paid turn
-            logger.error(
-                "partner_reply_unexpected_error topic=%s level=%s: %s", topic.key, level_code, exc
-            )
-            return fallback
-
-    logger.error("partner_reply_failed_after_retry topic=%s: %s", topic.key, last_error)
-    return fallback
+    try:
+        result = await active_provider.generate_chat_completion(
+            messages=messages,
+            model_config=TASK_MODEL_CONFIGS["conversation_partner_reply"],
+            response_schema=REPLY_RESPONSE_SCHEMA,
+        )
+        return _parse_reply(result.content, fallback=fallback, turns_left=turns_left)
+    except LLMError as exc:
+        logger.warning(
+            "partner_reply_llm_failed topic=%s level=%s: %s",
+            topic.key,
+            level_code,
+            exc,
+        )
+        return fallback
+    except Exception as exc:  # never break a paid turn
+        logger.error(
+            "partner_reply_unexpected_error topic=%s level=%s: %s", topic.key, level_code, exc
+        )
+        return fallback
 
 
 async def summarize_session(
