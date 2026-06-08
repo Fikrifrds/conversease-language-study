@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { Search, X } from "lucide-react";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { coachScenarios } from "@/lib/data";
 import { readLatestPracticeSlug, saveLatestPracticeSlug } from "@/lib/practice-storage";
@@ -54,8 +55,15 @@ const scenarios = [
   ...coachScenarios.filter((scenario) => !legacyScenarios.some((legacy) => legacy.slug === scenario.slug))
 ];
 
+function normalize(value: string) {
+  return value.trim().toLowerCase();
+}
+
 export function ConversationCoachWorkspace() {
   const [activeSlug, setActiveSlug] = useState(scenarios[0].slug);
+  const [isPickerOpen, setIsPickerOpen] = useState(false);
+  const [query, setQuery] = useState("");
+  const [levelFilter, setLevelFilter] = useState<string>("all");
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -71,37 +79,129 @@ export function ConversationCoachWorkspace() {
     }
   }, [searchParams]);
 
+  const activeScenario = scenarios.find((scenario) => scenario.slug === activeSlug) ?? scenarios[0];
+  const activeLevel = (activeScenario as { levelCode?: string }).levelCode ?? "A1";
+  const levels = ["all", "A1", "A2", "B1", "B2", "C1"];
+
+  const filteredScenarios = scenarios.filter((scenario) => {
+    const scenarioLevel = (scenario as { levelCode?: string }).levelCode ?? "A1";
+    if (levelFilter !== "all" && scenarioLevel !== levelFilter) {
+      return false;
+    }
+
+    const q = normalize(query);
+    if (!q) {
+      return true;
+    }
+
+    const haystack = normalize(`${scenario.label} ${scenario.description}`);
+    return haystack.includes(q);
+  });
+
   return (
     <div className="space-y-5">
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-        <p className="text-sm font-semibold uppercase text-leaf">Pilih Skenario</p>
-        <h1 className="mt-2 text-2xl font-semibold">Conversation Coach</h1>
-        <p className="mt-2 text-sm leading-6 text-ink/60">
-          Pilih roleplay yang ingin kamu latih. Setiap skenario punya turn dan feedback sendiri.
-        </p>
-        <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
-          {scenarios.map((scenario) => {
-            const selected = scenario.slug === activeSlug;
-
-            return (
-              <button
-                key={scenario.slug}
-                type="button"
-                onClick={() => {
-                  setActiveSlug(scenario.slug);
-                  saveLatestPracticeSlug(scenario.slug);
-                }}
-                aria-pressed={selected}
-                className={`focus-ring rounded-lg border p-4 text-left transition-colors ${
-                  selected ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
-                }`}
-              >
-                <p className="text-sm font-semibold">{scenario.label}</p>
-                <p className="mt-1 text-xs leading-5 text-ink/60">{scenario.description}</p>
-              </button>
-            );
-          })}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase text-leaf">Conversation Coach</p>
+            <h1 className="mt-2 text-2xl font-semibold">Roleplay Terarah</h1>
+            <p className="mt-2 text-sm leading-6 text-ink/60">
+              Pilih skenario singkat, jawab, lalu dapat feedback yang jelas.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsPickerOpen((current) => !current)}
+            className="focus-ring inline-flex items-center justify-center rounded-lg border border-ink/20 bg-white px-4 py-3 text-sm font-semibold hover:bg-mint"
+          >
+            {isPickerOpen ? "Tutup daftar skenario" : "Ganti skenario"}
+          </button>
         </div>
+
+        <div className="mt-4 rounded-lg bg-paper p-4">
+          <p className="text-xs font-semibold uppercase text-ink/50">Skenario aktif</p>
+          <p className="mt-2 font-semibold">{activeScenario.label}</p>
+          <p className="mt-1 text-sm leading-6 text-ink/60">{activeScenario.description}</p>
+          <div className="mt-3 flex flex-wrap items-center gap-2 text-xs font-semibold text-ink/60">
+            <span className="rounded-lg bg-white px-2 py-1">Level {activeLevel}</span>
+            <span className="rounded-lg bg-white px-2 py-1">{activeScenario.slug}</span>
+          </div>
+        </div>
+
+        {isPickerOpen ? (
+          <div className="mt-5 space-y-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <div className="relative w-full sm:max-w-md">
+                <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-ink/40" aria-hidden="true" />
+                <input
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Cari skenario…"
+                  className="focus-ring w-full rounded-lg border border-ink/10 bg-white py-3 pl-9 pr-10 text-sm"
+                />
+                {query.trim() ? (
+                  <button
+                    type="button"
+                    onClick={() => setQuery("")}
+                    className="focus-ring absolute right-2 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-lg hover:bg-mint"
+                    aria-label="Hapus pencarian"
+                  >
+                    <X className="h-4 w-4 text-ink/60" aria-hidden="true" />
+                  </button>
+                ) : null}
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                {levels.map((level) => {
+                  const selected = levelFilter === level;
+                  const label = level === "all" ? "Semua" : level;
+                  return (
+                    <button
+                      key={level}
+                      type="button"
+                      onClick={() => setLevelFilter(level)}
+                      className={`focus-ring rounded-lg border px-3 py-2 text-xs font-semibold ${
+                        selected ? "border-leaf bg-mint text-ink" : "border-ink/10 bg-white text-ink/70 hover:bg-mint"
+                      }`}
+                      aria-pressed={selected}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <p className="text-sm text-ink/60">
+              Menampilkan {filteredScenarios.length} skenario.
+            </p>
+
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {filteredScenarios.map((scenario) => {
+                const selected = scenario.slug === activeSlug;
+
+                return (
+                  <button
+                    key={scenario.slug}
+                    type="button"
+                    onClick={() => {
+                      setActiveSlug(scenario.slug);
+                      saveLatestPracticeSlug(scenario.slug);
+                      setIsPickerOpen(false);
+                    }}
+                    aria-pressed={selected}
+                    className={`focus-ring rounded-lg border p-4 text-left transition-colors ${
+                      selected ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
+                    }`}
+                  >
+                    <p className="text-sm font-semibold">{scenario.label}</p>
+                    <p className="mt-1 text-xs leading-5 text-ink/60">{scenario.description}</p>
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+        ) : null}
       </section>
 
       <ConversationCoachPractice key={activeSlug} lessonSlug={activeSlug} />
