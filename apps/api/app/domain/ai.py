@@ -36,38 +36,42 @@ class LLMProvider(ABC):
         raise NotImplementedError
 
 
-DEFAULT_TOGETHER_CHAT_MODEL = settings.together_chat_model
-PARTNER_CHAT_MODEL = settings.together_partner_chat_model
+if settings.llm_default_provider == "openai":
+    DEFAULT_CHAT_MODEL = settings.openai_chat_model
+    PARTNER_CHAT_MODEL = settings.openai_partner_chat_model
+else:
+    DEFAULT_CHAT_MODEL = settings.together_chat_model
+    PARTNER_CHAT_MODEL = settings.together_partner_chat_model
 
 
 TASK_MODEL_CONFIGS = {
     "conversation_coach_reply": ModelConfig(
-        provider="together",
-        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        provider=settings.llm_default_provider,
+        model=DEFAULT_CHAT_MODEL,
         temperature=0.7,
         max_tokens=500,
     ),
     "conversation_feedback": ModelConfig(
-        provider="together",
-        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        provider=settings.llm_default_provider,
+        model=DEFAULT_CHAT_MODEL,
         temperature=0.2,
         max_tokens=700,
     ),
     "conversation_partner_reply": ModelConfig(
-        provider="together",
+        provider=settings.llm_default_provider,
         model=PARTNER_CHAT_MODEL,
         temperature=0.6,
         max_tokens=350,
     ),
     "conversation_partner_summary": ModelConfig(
-        provider="together",
-        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        provider=settings.llm_default_provider,
+        model=DEFAULT_CHAT_MODEL,
         temperature=0.2,
         max_tokens=750,
     ),
     "level_evaluation_grading": ModelConfig(
-        provider="together",
-        model=DEFAULT_TOGETHER_CHAT_MODEL,
+        provider=settings.llm_default_provider,
+        model=DEFAULT_CHAT_MODEL,
         temperature=0.1,
         max_tokens=2000,
     ),

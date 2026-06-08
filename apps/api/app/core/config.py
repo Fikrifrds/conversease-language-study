@@ -60,6 +60,11 @@ class Settings(BaseSettings):
     together_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_partner_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_timeout_seconds: int = 30
+    openai_api_key: str = ""
+    openai_api_base_url: str = "https://api.openai.com"
+    openai_chat_model: str = "gpt-4.1-mini"
+    openai_partner_chat_model: str = "gpt-4.1-nano"
+    openai_timeout_seconds: int = 30
     stt_provider: str = "whisper_together"
     whisper_model: str = "openai/whisper-large-v3"
     whisper_language: str = "en"
