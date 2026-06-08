@@ -1,17 +1,41 @@
 scenario_key: giving_phone_number_for_registration
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What is your phone number?"
-learner_goal: "Give your phone number, listen to it repeated, and confirm it is correct."
+opening_line: What is your phone number?
+learner_goal: Give your phone number, listen to it repeated, and confirm it is correct.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What is your phone number?
+    hint: Sebutkan nomor telepon dalam kelompok kecil.
+    sample_answer: It's zero eight one two, three four five six.
+    focus: Giving a phone number
+    expected_keywords:
+      - it's
+      - zero
+      - eight
+      - one
+  - coach: Let me check. Zero eight one two, three four five six?
+    hint: "Konfirmasi dengan: Yes, that's correct."
+    sample_answer: Yes, that's correct.
+    focus: Confirming a number
+    expected_keywords:
+      - that's
+      - correct
+  - coach: My number is zero eight one three, two two five five.
+    hint: Minta diulang dengan sopan.
+    sample_answer: Can you repeat that, please?
+    focus: Asking for repetition
+    expected_keywords:
+      - repeat
+      - "?"
 target_phrases:
-  - "What is your phone number?"
-  - "It's zero eight one two"
-  - "Let me check"
-  - "Yes, that's correct"
+  - What is your phone number?
+  - It's zero eight one two
+  - Let me check
+  - Yes, that's correct
 rubric:
   speaking:
     minimum_score: 60

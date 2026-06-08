@@ -2,17 +2,45 @@ scenario_key: apologizing_and_thanking_after_a_small_problem
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hello, Ben. You are late today.
-learner_goal: Apologize, give one short reason, thank the person, and say you are
-  ready.
+learner_goal: Apologize, give one short reason, thank the person, and say you are ready.
 max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello, Ben. You are late today.
+    hint: Minta maaf karena terlambat.
+    sample_answer: Sorry I'm late.
+    focus: Apology
+    expected_keywords:
+      - sorry
+      - i'm
+      - late
+  - coach: That's okay. What happened?
+    hint: Berikan alasan singkat.
+    sample_answer: My internet was slow.
+    focus: Reason
+    expected_keywords:
+      - internet
+      - was
+      - slow
+  - coach: No problem. Please join the class.
+    hint: Ucapkan terima kasih sudah menunggu.
+    sample_answer: Thank you for waiting.
+    focus: Thanking
+    expected_keywords:
+      - waiting
+  - coach: You're welcome.
+    hint: Katakan kamu siap sekarang.
+    sample_answer: I am ready now.
+    focus: Ready
+    expected_keywords:
+      - ready
 target_phrases:
-- Sorry I'm late.
-- My internet was slow.
-- Thank you for waiting.
-- I am ready now.
+  - Sorry I'm late.
+  - My internet was slow.
+  - Thank you for waiting.
+  - I am ready now.
 rubric:
   speaking:
     minimum_score: 60

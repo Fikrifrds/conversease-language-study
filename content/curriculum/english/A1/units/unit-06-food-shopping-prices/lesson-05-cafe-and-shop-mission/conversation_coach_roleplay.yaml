@@ -2,18 +2,51 @@ scenario_key: completing_a_simple_cafe_or_shop_purchase
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hi. What would you like?
-learner_goal: Order two items, choose a size, ask the total price, pay, and close
-  politely.
+learner_goal: Order two items, choose a size, ask the total price, pay, and close politely.
 max_turns: 9
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hi. What would you like?
+    hint: Pesan coffee dan sandwich.
+    sample_answer: Can I have a coffee and a sandwich, please?
+    focus: Mission order
+    expected_keywords:
+      - have
+      - coffee
+      - sandwich
+      - "?"
+  - coach: Sure. Small or large coffee?
+    hint: Pilih small.
+    sample_answer: Small, please.
+    focus: Size
+    expected_keywords:
+      - small
+  - coach: Anything else?
+    hint: Tanyakan total harga.
+    sample_answer: How much is it?
+    focus: Total price
+    expected_keywords:
+      - how
+      - much
+      - "?"
+  - coach: It is five dollars.
+    hint: Bayar dengan sopan.
+    sample_answer: Okay. Here you go.
+    focus: Payment
+    expected_keywords: []
+  - coach: Thank you. Here is your order.
+    hint: Tutup singkat.
+    sample_answer: Thanks.
+    focus: Closing
+    expected_keywords: []
 target_phrases:
-- Can I have a coffee and a sandwich, please?
-- Small, please.
-- How much is it?
-- Here you go.
-- Thanks.
+  - Can I have a coffee and a sandwich, please?
+  - Small, please.
+  - How much is it?
+  - Here you go.
+  - Thanks.
 rubric:
   speaking:
     minimum_score: 60

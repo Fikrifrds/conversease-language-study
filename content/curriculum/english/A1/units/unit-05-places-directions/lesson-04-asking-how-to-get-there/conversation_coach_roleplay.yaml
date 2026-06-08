@@ -1,17 +1,50 @@
 scenario_key: asking_for_steps_to_reach_a_place
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Where do you want to go?"
-learner_goal: "Ask how to get somewhere, repeat the steps, and thank the helper."
+opening_line: Where do you want to go?
+learner_goal: Ask how to get somewhere, repeat the steps, and thank the helper.
 max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Where do you want to go?
+    hint: Tanyakan cara ke station.
+    sample_answer: How do I get to the station?
+    focus: Direction question
+    expected_keywords:
+      - how
+      - get
+      - station
+      - "?"
+  - coach: Go straight for two minutes.
+    hint: Ulangi durasi arahnya.
+    sample_answer: Okay. Go straight for two minutes.
+    focus: Time direction
+    expected_keywords:
+      - straight
+      - two
+      - minutes
+  - coach: Then turn right at the bank.
+    hint: Konfirmasi landmark.
+    sample_answer: Turn right at the bank?
+    focus: Landmark confirmation
+    expected_keywords:
+      - turn
+      - right
+      - bank
+      - "?"
+  - coach: Yes. The station is there.
+    hint: Tutup dengan sopan.
+    sample_answer: Thank you for your help.
+    focus: Thanking
+    expected_keywords:
+      - help
 target_phrases:
-  - "How do I get to the station?"
-  - "Go straight for two minutes."
-  - "Turn right at the bank?"
-  - "Thank you for your help."
+  - How do I get to the station?
+  - Go straight for two minutes.
+  - Turn right at the bank?
+  - Thank you for your help.
 rubric:
   speaking:
     minimum_score: 60

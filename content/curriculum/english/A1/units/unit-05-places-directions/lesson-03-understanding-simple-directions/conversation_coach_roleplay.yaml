@@ -1,17 +1,47 @@
 scenario_key: understanding_turn_left_and_right
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Where is the meeting room?"
-learner_goal: "Ask for a room, repeat key directions, and confirm understanding."
+opening_line: Where is the meeting room?
+learner_goal: Ask for a room, repeat key directions, and confirm understanding.
 max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Where is the meeting room?
+    hint: Tanyakan lokasi meeting room.
+    sample_answer: Where is the meeting room?
+    focus: Room question
+    expected_keywords:
+      - where
+      - meeting
+      - room
+      - "?"
+  - coach: Go straight.
+    hint: Ulangi arahan pertama.
+    sample_answer: Okay. Go straight.
+    focus: Repeating direction
+    expected_keywords:
+      - straight
+  - coach: Then turn left.
+    hint: Konfirmasi turn left.
+    sample_answer: Turn left?
+    focus: Direction confirmation
+    expected_keywords:
+      - turn
+      - left
+      - "?"
+  - coach: Yes. The room is on the right.
+    hint: Katakan kamu mengerti.
+    sample_answer: Thank you. I understand.
+    focus: Understanding
+    expected_keywords:
+      - understand
 target_phrases:
-  - "Where is the meeting room?"
-  - "Go straight."
-  - "Turn left?"
-  - "I understand."
+  - Where is the meeting room?
+  - Go straight.
+  - Turn left?
+  - I understand.
 rubric:
   speaking:
     minimum_score: 60

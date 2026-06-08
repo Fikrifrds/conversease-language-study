@@ -1,17 +1,39 @@
 scenario_key: asking_about_meeting_time
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "When is the meeting?"
-learner_goal: "Ask when the meeting happens, ask if it is online, and confirm the details."
+opening_line: When is the meeting?
+learner_goal: Ask when the meeting happens, ask if it is online, and confirm the details.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: When is the meeting?
+    hint: Jawab dengan hari dan jam.
+    sample_answer: It's tomorrow at ten.
+    focus: Event time
+    expected_keywords:
+      - it's
+      - tomorrow
+      - ten
+  - coach: Is it online?
+    hint: Jawab yes/no dengan kalimat lengkap.
+    sample_answer: Yes, it is online.
+    focus: Meeting format
+    expected_keywords:
+      - online
+  - coach: Tomorrow at ten. Is that right?
+    hint: "Konfirmasi dengan: Yes, that's right."
+    sample_answer: Yes, that's right.
+    focus: Confirming details
+    expected_keywords:
+      - that's
+      - right
 target_phrases:
-  - "When is"
-  - "tomorrow at ten"
-  - "Is it online?"
-  - "Is that right?"
+  - When is
+  - tomorrow at ten
+  - Is it online?
+  - Is that right?
 rubric:
   speaking:
     minimum_score: 60

@@ -1,17 +1,39 @@
 scenario_key: saying_simple_english_abilities
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Can you speak English?"
-learner_goal: "Say what you can do and what you cannot do yet."
+opening_line: Can you speak English?
+learner_goal: Say what you can do and what you cannot do yet.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Can you speak English?
+    hint: Sebutkan kemampuanmu dengan I can.
+    sample_answer: I can speak a little.
+    focus: Speaking ability
+    expected_keywords:
+      - speak
+      - little
+  - coach: Can you write simple emails?
+    hint: Jawab dengan Yes, I can.
+    sample_answer: Yes, I can.
+    focus: Writing ability
+    expected_keywords: []
+  - coach: Can you join a meeting in English?
+    hint: Gunakan Not yet kalau belum bisa.
+    sample_answer: Not yet, but I can try.
+    focus: Honest ability
+    expected_keywords:
+      - not
+      - yet
+      - but
+      - try
 target_phrases:
-  - "Can you"
-  - "I can"
-  - "a little"
-  - "Not yet"
+  - Can you
+  - I can
+  - a little
+  - Not yet
 rubric:
   speaking:
     minimum_score: 60

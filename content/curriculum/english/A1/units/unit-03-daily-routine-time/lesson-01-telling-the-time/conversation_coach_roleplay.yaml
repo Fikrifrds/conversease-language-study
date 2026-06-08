@@ -1,17 +1,39 @@
 scenario_key: asking_class_time
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What time is the class?"
-learner_goal: "Ask and answer a simple class-time question."
+opening_line: What time is the class?
+learner_goal: Ask and answer a simple class-time question.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What time is the class?
+    hint: "Jawab dengan pola: It's at ..."
+    sample_answer: It's at nine o'clock.
+    focus: Class time
+    expected_keywords:
+      - it's
+      - nine
+      - o'clock
+  - coach: In the morning?
+    hint: Konfirmasi bagian hari.
+    sample_answer: Yes, in the morning.
+    focus: Time of day
+    expected_keywords:
+      - morning
+  - coach: Thank you.
+    hint: Balas dengan sopan.
+    sample_answer: You're welcome.
+    focus: Polite reply
+    expected_keywords:
+      - you're
+      - welcome
 target_phrases:
-  - "What time is the class?"
-  - "It's at"
-  - "o'clock"
-  - "in the morning"
+  - What time is the class?
+  - It's at
+  - o'clock
+  - in the morning
 rubric:
   speaking:
     minimum_score: 60

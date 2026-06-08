@@ -2,18 +2,50 @@ scenario_key: reviewing_introductions_before_class
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hi, good morning. My name is Sara.
-learner_goal: Greet Sara, introduce yourself, say where you are from, ask one question
-  back, and close politely.
+learner_goal: Greet Sara, introduce yourself, say where you are from, ask one question back, and close politely.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hi, good morning. My name is Sara.
+    hint: Sapa balik dan sebutkan namamu.
+    sample_answer: Good morning. My name is Dimas.
+    focus: Name review
+    expected_keywords:
+      - morning
+      - name
+      - dimas
+  - coach: Nice to meet you. Where are you from?
+    hint: Jawab asalmu dengan I'm from ...
+    sample_answer: I'm from Indonesia.
+    focus: Origin review
+    expected_keywords:
+      - i'm
+      - from
+      - indonesia
+  - coach: I live in Jakarta now.
+    hint: Tanyakan balik dengan How about you?
+    sample_answer: How about you?
+    focus: Question back
+    expected_keywords:
+      - how
+      - about
+      - "?"
+  - coach: I'm from Malaysia.
+    hint: Tutup percakapan dengan sopan.
+    sample_answer: Oh, nice. See you in class.
+    focus: Closing
+    expected_keywords:
+      - nice
+      - see
+      - class
 target_phrases:
-- My name is ...
-- Nice to meet you too.
-- I'm from Indonesia.
-- How about you?
-- See you in class.
+  - My name is ...
+  - Nice to meet you too.
+  - I'm from Indonesia.
+  - How about you?
+  - See you in class.
 rubric:
   speaking:
     minimum_score: 60

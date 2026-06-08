@@ -2,18 +2,56 @@ scenario_key: practicing_the_a1_final_conversation_test
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hello. What is your name?
-learner_goal: Answer test questions with complete short A1 sentences and ask for repetition
-  once if needed.
+learner_goal: Answer test questions with complete short A1 sentences and ask for repetition once if needed.
 max_turns: 10
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello. What is your name?
+    hint: Jawab dengan nama lengkap atau nama panggilan.
+    sample_answer: My name is Alya.
+    focus: Test identity
+    expected_keywords:
+      - name
+      - alya
+  - coach: Where are you from?
+    hint: Jawab asal dengan I'm from ...
+    sample_answer: I'm from Indonesia.
+    focus: Test origin
+    expected_keywords:
+      - i'm
+      - from
+      - indonesia
+  - coach: What do you do every morning?
+    hint: Sebutkan rutinitas belajar dan jam.
+    sample_answer: I study English at seven.
+    focus: Test routine
+    expected_keywords:
+      - study
+      - english
+      - seven
+  - coach: When is your class?
+    hint: Kalau perlu, minta pengulangan dulu.
+    sample_answer: Sorry, can you repeat that, please?
+    focus: Clarification
+    expected_keywords:
+      - sorry
+      - repeat
+      - "?"
+  - coach: Sure. When is your class?
+    hint: Jawab hari dan jam.
+    sample_answer: It is on Tuesday at eight.
+    focus: Schedule answer
+    expected_keywords:
+      - tuesday
+      - eight
 target_phrases:
-- My name is ...
-- I'm from Indonesia.
-- I study English at seven.
-- Sorry, can you repeat that, please?
-- It is on Tuesday at eight.
+  - My name is ...
+  - I'm from Indonesia.
+  - I study English at seven.
+  - Sorry, can you repeat that, please?
+  - It is on Tuesday at eight.
 rubric:
   speaking:
     minimum_score: 60

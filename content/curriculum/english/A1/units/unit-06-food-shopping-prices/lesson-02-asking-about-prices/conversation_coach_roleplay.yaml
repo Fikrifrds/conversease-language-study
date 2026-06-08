@@ -7,11 +7,43 @@ max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello. Can I help you?
+    hint: Tanyakan harga coffee.
+    sample_answer: How much is the coffee?
+    focus: Price question
+    expected_keywords:
+      - how
+      - much
+      - coffee
+      - "?"
+  - coach: It is two dollars.
+    hint: Konfirmasi harga.
+    sample_answer: Two dollars?
+    focus: Price confirmation
+    expected_keywords:
+      - two
+      - dollars
+      - "?"
+  - coach: Yes, two dollars.
+    hint: Tanyakan harga cake.
+    sample_answer: How much is the cake?
+    focus: Second price
+    expected_keywords:
+      - how
+      - much
+      - cake
+      - "?"
+  - coach: It is three dollars.
+    hint: Tutup dengan thank you.
+    sample_answer: Okay. Thank you.
+    focus: Closing
+    expected_keywords: []
 target_phrases:
-- How much is the coffee?
-- Two dollars?
-- How much is the cake?
-- Thank you.
+  - How much is the coffee?
+  - Two dollars?
+  - How much is the cake?
+  - Thank you.
 rubric:
   speaking:
     minimum_score: 60

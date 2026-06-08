@@ -2,18 +2,56 @@ scenario_key: handling_a_small_problem_and_requesting_help
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hi. Is everything okay?
-learner_goal: Explain a small problem, ask for help, make one request, and thank the
-  helper.
+learner_goal: Explain a small problem, ask for help, make one request, and thank the helper.
 max_turns: 9
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hi. Is everything okay?
+    hint: Katakan kamu tidak mengerti.
+    sample_answer: Sorry, I don't understand.
+    focus: Mission opening
+    expected_keywords:
+      - sorry
+      - don't
+      - understand
+  - coach: That's okay. What is the problem?
+    hint: Jelaskan masalah file.
+    sample_answer: I can't open this file.
+    focus: Problem
+    expected_keywords:
+      - can't
+      - open
+      - file
+  - coach: Can you send me a screenshot?
+    hint: Terima dan minta tunggu sebentar.
+    sample_answer: Sure. Can you wait a minute?
+    focus: Request
+    expected_keywords:
+      - sure
+      - wait
+      - minute
+      - "?"
+  - coach: No problem.
+    hint: Kirim screenshot.
+    sample_answer: Here is the screenshot.
+    focus: Sending info
+    expected_keywords:
+      - screenshot
+  - coach: Good. Click this button.
+    hint: Katakan berhasil dan terima kasih.
+    sample_answer: It works. Thank you for your help.
+    focus: Closing
+    expected_keywords:
+      - works
+      - help
 target_phrases:
-- Sorry, I don't understand.
-- I can't open this file.
-- Can you wait a minute?
-- It works.
-- Thank you for your help.
+  - Sorry, I don't understand.
+  - I can't open this file.
+  - Can you wait a minute?
+  - It works.
+  - Thank you for your help.
 rubric:
   speaking:
     minimum_score: 60

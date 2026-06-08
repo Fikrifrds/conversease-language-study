@@ -2,17 +2,45 @@ scenario_key: asking_for_help_with_a_simple_task
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Hello. Do you need help?
-learner_goal: Ask for help, explain the problem, confirm the instruction, and thank
-  the helper.
+learner_goal: Ask for help, explain the problem, confirm the instruction, and thank the helper.
 max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello. Do you need help?
+    hint: Minta bantuan.
+    sample_answer: Can you help me?
+    focus: Help request
+    expected_keywords:
+      - help
+      - "?"
+  - coach: Sure. What is the problem?
+    hint: Jelaskan masalah file.
+    sample_answer: I can't open this file.
+    focus: Problem statement
+    expected_keywords:
+      - can't
+      - open
+      - file
+  - coach: Okay. Click this button.
+    hint: Konfirmasi tombol.
+    sample_answer: This button?
+    focus: Instruction check
+    expected_keywords:
+      - button
+      - "?"
+  - coach: Yes. Try again.
+    hint: Katakan berhasil dan terima kasih.
+    sample_answer: It works. Thank you.
+    focus: Result
+    expected_keywords:
+      - works
 target_phrases:
-- Can you help me?
-- I can't open this file.
-- This button?
-- It works. Thank you.
+  - Can you help me?
+  - I can't open this file.
+  - This button?
+  - It works. Thank you.
 rubric:
   speaking:
     minimum_score: 60

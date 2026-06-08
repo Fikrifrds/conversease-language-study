@@ -1,17 +1,40 @@
 scenario_key: sharing_email_for_class_updates
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What is your email address?"
-learner_goal: "Share your email address, spell the name part, and confirm it is correct."
+opening_line: What is your email address?
+learner_goal: Share your email address, spell the name part, and confirm it is correct.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What is your email address?
+    hint: Sebutkan email dengan at dan dot.
+    sample_answer: It's ben dot rama at example dot com.
+    focus: Giving an email address
+    expected_keywords:
+      - it's
+      - ben
+      - dot
+      - rama
+  - coach: Can you spell that, please?
+    hint: Eja bagian nama email pelan-pelan.
+    sample_answer: B-E-N dot R-A-M-A.
+    focus: Spelling an email
+    expected_keywords:
+      - dot
+  - coach: Is that correct?
+    hint: "Konfirmasi dengan: Yes, that's correct."
+    sample_answer: Yes, that's correct.
+    focus: Confirming an email
+    expected_keywords:
+      - that's
+      - correct
 target_phrases:
-  - "What is your email address?"
-  - "at example dot com"
-  - "Can you spell that, please?"
-  - "Yes, that's correct"
+  - What is your email address?
+  - at example dot com
+  - Can you spell that, please?
+  - Yes, that's correct
 rubric:
   speaking:
     minimum_score: 60

@@ -1,17 +1,41 @@
 scenario_key: asking_about_work_or_study
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Do you work or study?"
-learner_goal: "Ask about work or study and ask one follow-up."
+opening_line: Do you work or study?
+learner_goal: Ask about work or study and ask one follow-up.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Do you work or study?
+    hint: Jawab apakah kamu bekerja atau belajar.
+    sample_answer: I study English online.
+    focus: Work or study
+    expected_keywords:
+      - study
+      - english
+      - online
+  - coach: What do you do there?
+    hint: Sebutkan role sederhana.
+    sample_answer: I'm an assistant.
+    focus: Simple role
+    expected_keywords:
+      - i'm
+      - assistant
+  - coach: Ask me the same question.
+    hint: Tanyakan balik dengan How about you?
+    sample_answer: How about you?
+    focus: Question back
+    expected_keywords:
+      - how
+      - about
+      - "?"
 target_phrases:
-  - "Do you work or study?"
-  - "What do you do there?"
-  - "How about you?"
-  - "I study English online"
+  - Do you work or study?
+  - What do you do there?
+  - How about you?
+  - I study English online
 rubric:
   speaking:
     minimum_score: 60

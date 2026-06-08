@@ -1,17 +1,46 @@
 scenario_key: work_study_preferences_unit_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Do you work or study?"
-learner_goal: "Talk about work or study, preferences, and simple English abilities."
+opening_line: Do you work or study?
+learner_goal: Talk about work or study, preferences, and simple English abilities.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Do you work or study?
+    hint: Sebutkan kerja atau studi.
+    sample_answer: I study English online.
+    focus: Work or study
+    expected_keywords:
+      - study
+      - english
+      - online
+  - coach: What do you like about English?
+    hint: Sebutkan bagian yang kamu suka.
+    sample_answer: I like speaking practice.
+    focus: Preference
+    expected_keywords:
+      - speaking
+      - practice
+  - coach: What can you do in English?
+    hint: Sebutkan satu kemampuan.
+    sample_answer: I can introduce myself.
+    focus: Ability
+    expected_keywords:
+      - introduce
+      - myself
+  - coach: Great. Keep practicing.
+    hint: Balas dengan singkat dan positif.
+    sample_answer: Thank you. I will.
+    focus: Closing
+    expected_keywords:
+      - will
 target_phrases:
-  - "I study"
-  - "I work"
-  - "I like"
-  - "I can"
+  - I study
+  - I work
+  - I like
+  - I can
 rubric:
   speaking:
     minimum_score: 60

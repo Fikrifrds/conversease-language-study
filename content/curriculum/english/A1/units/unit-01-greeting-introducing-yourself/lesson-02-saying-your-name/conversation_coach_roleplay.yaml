@@ -7,6 +7,34 @@ max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+- coach: Hi, my name is Sara. What is your name?
+  hint: 'Jawab dengan pola: My name is ... atau I''m ...'
+  sample_answer: My name is Arif. Nice to meet you.
+  focus: Saying your name
+  expected_keywords:
+  - my name is
+  - i'm
+  - i am
+  - nice to meet
+  indonesian_explanation: Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti
+    'Nice to meet you'.
+- coach: Nice to meet you. What should I call you?
+  hint: 'Gunakan pola: Please call me ...'
+  sample_answer: Please call me Arif.
+  focus: Nickname
+  expected_keywords:
+  - please call me
+  - call me
+  indonesian_explanation: Kalau ingin menyebut nama panggilan, gunakan pola pendek 'Please call me ...'.
+- coach: Great. Nice to meet you, Arif.
+  hint: 'Balas dengan sopan: Nice to meet you too.'
+  sample_answer: Nice to meet you too.
+  focus: Polite response
+  expected_keywords:
+  - nice to meet you too
+  - you too
+  indonesian_explanation: Untuk membalas sapaan perkenalan, 'Nice to meet you too' sudah natural dan sopan.
 target_phrases:
 - My name is
 - I'm

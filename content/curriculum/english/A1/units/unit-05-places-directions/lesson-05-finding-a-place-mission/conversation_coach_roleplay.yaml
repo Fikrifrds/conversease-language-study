@@ -1,18 +1,51 @@
 scenario_key: finding_a_place_with_simple_directions
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Hello. Can I help you?"
-learner_goal: "Ask for directions, repeat the directions, confirm the floor, and close politely."
+opening_line: Hello. Can I help you?
+learner_goal: Ask for directions, repeat the directions, confirm the floor, and close politely.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello. Can I help you?
+    hint: Mulai sopan dan tanya cara ke room A.
+    sample_answer: Excuse me. How do I get to room A?
+    focus: Mission opening
+    expected_keywords:
+      - excuse
+      - how
+      - get
+      - room
+      - "?"
+  - coach: Go straight and turn left.
+    hint: Ulangi arahan lengkap.
+    sample_answer: Go straight and turn left.
+    focus: Combined directions
+    expected_keywords:
+      - straight
+      - turn
+      - left
+  - coach: Room A is next to the office.
+    hint: Konfirmasi lantai.
+    sample_answer: Is it on the first floor?
+    focus: Floor confirmation
+    expected_keywords:
+      - first
+      - floor
+      - "?"
+  - coach: Yes, it is.
+    hint: Tutup dengan thank you.
+    sample_answer: Great. Thank you.
+    focus: Closing
+    expected_keywords:
+      - great
 target_phrases:
-  - "Excuse me."
-  - "How do I get to room A?"
-  - "Go straight and turn left."
-  - "Is it on the first floor?"
-  - "Thank you."
+  - Excuse me.
+  - How do I get to room A?
+  - Go straight and turn left.
+  - Is it on the first floor?
+  - Thank you.
 rubric:
   speaking:
     minimum_score: 60

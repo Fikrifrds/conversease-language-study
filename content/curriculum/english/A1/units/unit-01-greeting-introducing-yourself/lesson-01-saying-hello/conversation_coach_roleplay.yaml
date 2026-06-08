@@ -7,11 +7,48 @@ max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+- coach: Hi. Good morning. How are you today?
+  hint: Jawab sapaan, lalu beri respons singkat.
+  sample_answer: Good morning. I'm good, thank you. How are you?
+  focus: Greeting response
+  expected_keywords:
+  - good morning
+  - morning
+  - hi
+  - hello
+  - thank
+  - thanks
+  indonesian_explanation: Jawabanmu sudah masuk konteks. Akan lebih natural kalau menambahkan pertanyaan
+    balik singkat.
+- coach: Nice. What is your name?
+  hint: 'Sebutkan nama dengan pola: My name is ... atau I''m ...'
+  sample_answer: My name is Arif. Nice to meet you.
+  focus: Self introduction
+  expected_keywords:
+  - my name is
+  - i'm
+  - i am
+  - nice to meet
+  indonesian_explanation: Untuk perkenalan, pola 'My name is ...' atau 'I'm ...' sudah cukup. Tambahkan
+    'Nice to meet you' agar lebih ramah.
+- coach: Nice to meet you. Where are you from?
+  hint: Jawab asalmu, lalu tambahkan pertanyaan balik sederhana.
+  sample_answer: I'm from Indonesia. How about you?
+  focus: Follow-up question
+  expected_keywords:
+  - from
+  - indonesia
+  - jakarta
+  - how about you
+  - '?'
+  indonesian_explanation: Saat menjawab asal, tambahkan pertanyaan balik seperti 'How about you?' supaya
+    percakapan terus berjalan.
 target_phrases:
-  - Good morning
-  - I'm good, thank you
-  - Nice to meet you
-  - See you later
+- Good morning
+- I'm good, thank you
+- Nice to meet you
+- See you later
 rubric:
   speaking:
     minimum_score: 60
@@ -19,4 +56,3 @@ rubric:
     minimum_score: 60
   grammar:
     minimum_score: 55
-

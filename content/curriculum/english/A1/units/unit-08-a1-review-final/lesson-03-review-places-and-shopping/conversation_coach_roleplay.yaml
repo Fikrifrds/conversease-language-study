@@ -2,18 +2,46 @@ scenario_key: reviewing_places_directions_and_a_simple_order
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Excuse me. Can I help you?
-learner_goal: Ask where the cafe is, confirm the place, order one item, and ask the
-  price.
+learner_goal: Ask where the cafe is, confirm the place, order one item, and ask the price.
 max_turns: 9
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Excuse me. Can I help you?
+    hint: Tanyakan lokasi cafe.
+    sample_answer: Where is the cafe?
+    focus: Place question
+    expected_keywords:
+      - where
+      - cafe
+      - "?"
+  - coach: Go straight and turn right.
+    hint: Konfirmasi lokasinya dekat library.
+    sample_answer: Is it next to the library?
+    focus: Confirm place
+    expected_keywords:
+      - next
+      - library
+      - "?"
+  - coach: Yes, it is. You are at the cafe now.
+    hint: Pesan satu teh dengan sopan.
+    sample_answer: I would like one tea, please.
+    focus: Order
+    expected_keywords:
+      - one
+      - tea
+  - coach: Sure. It is two dollars.
+    hint: Bayar dan ucapkan terima kasih.
+    sample_answer: Here you go. Thank you.
+    focus: Payment
+    expected_keywords: []
 target_phrases:
-- Where is the cafe?
-- Is it next to the library?
-- I would like one tea, please.
-- How much is it?
-- Here you go.
+  - Where is the cafe?
+  - Is it next to the library?
+  - I would like one tea, please.
+  - How much is it?
+  - Here you go.
 rubric:
   speaking:
     minimum_score: 60

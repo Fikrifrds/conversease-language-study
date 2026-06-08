@@ -7,11 +7,38 @@ max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hello. What do you need?
+    hint: Minta beli pen ini.
+    sample_answer: Can I have this pen?
+    focus: Buying item
+    expected_keywords:
+      - have
+      - pen
+      - "?"
+  - coach: Yes, of course.
+    hint: Tanyakan harganya.
+    sample_answer: How much is it?
+    focus: Price
+    expected_keywords:
+      - how
+      - much
+      - "?"
+  - coach: It is one dollar.
+    hint: Bayar dengan Here you go.
+    sample_answer: Okay. Here you go.
+    focus: Payment
+    expected_keywords: []
+  - coach: Thank you. Here is your pen.
+    hint: Tutup singkat.
+    sample_answer: Thanks.
+    focus: Closing
+    expected_keywords: []
 target_phrases:
-- Can I have this pen?
-- How much is it?
-- Here you go.
-- Thanks.
+  - Can I have this pen?
+  - How much is it?
+  - Here you go.
+  - Thanks.
 rubric:
   speaking:
     minimum_score: 60

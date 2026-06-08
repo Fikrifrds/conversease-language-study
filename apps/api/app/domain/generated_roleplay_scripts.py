@@ -14,6 +14,15 @@ class CoachTurn:
 
 
 GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
+    "a1-final-conversation": (
+        CoachTurn(coach="Hi, good morning. What is your name?", hint="Perkenalkan diri dengan kalimat lengkap.", sample_answer="Good morning. My name is Mina.", focus="Final opening", expected_keywords=("morning", "name", "mina")),
+        CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asal dan tanyakan balik.", sample_answer="I'm from Indonesia. How about you?", focus="Origin and follow-up", expected_keywords=("i'm", "from", "indonesia", "how", "?")),
+        CoachTurn(coach="I'm from Malaysia. What do you do every morning?", hint="Sebutkan rutinitas dan waktu.", sample_answer="I study English at seven.", focus="Routine", expected_keywords=("study", "english", "seven")),
+        CoachTurn(coach="Great. The cafe is open now.", hint="Tanyakan lokasi cafe.", sample_answer="Where is the cafe?", focus="Place", expected_keywords=("where", "cafe", "?")),
+        CoachTurn(coach="Go straight and turn left.", hint="Pesan satu item dengan sopan.", sample_answer="Thank you. I would like one tea, please.", focus="Order", expected_keywords=("one", "tea")),
+        CoachTurn(coach="Sure. It is two dollars.", hint="Minta ulang harga jika perlu.", sample_answer="Sorry, can you repeat that, please?", focus="Clarification", expected_keywords=("sorry", "repeat", "?")),
+        CoachTurn(coach="Two dollars.", hint="Bayar dan tutup dengan terima kasih.", sample_answer="Here you go. Thank you for your help.", focus="Final closing", expected_keywords=("help",)),
+    ),
     "a2-final-conversation": (
         CoachTurn(coach="Hey! How have you been?", hint="Jawab singkat, lalu bilang kabar kamu.", sample_answer="Good. A bit tired, though.", focus="Small talk", expected_keywords=("good", "tired")),
         CoachTurn(coach="Would you recommend the cafe?", hint="Jawab dengan yes + because + reason.", sample_answer="Yes, because the coffee is good and it is quiet.", focus="Recommend with reason", expected_keywords=("because", "coffee")),
@@ -54,6 +63,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What about maintenance?", hint="I'm not sure yet, but I can follow up...", sample_answer="I'm not sure yet, but I can follow up with an estimate by tomorrow.", focus="Uncertainty + follow up", expected_keywords=("not sure", "follow up")),
         CoachTurn(coach="Who will own it?", hint="I suggest we assign...", sample_answer="I suggest we assign one owner per quarter to keep it updated.", focus="Ownership answer", expected_keywords=("suggest", "assign", "owner")),
     ),
+    "apologizing-and-thanking": (
+        CoachTurn(coach="Hello, Ben. You are late today.", hint="Minta maaf karena terlambat.", sample_answer="Sorry I'm late.", focus="Apology", expected_keywords=("sorry", "i'm", "late")),
+        CoachTurn(coach="That's okay. What happened?", hint="Berikan alasan singkat.", sample_answer="My internet was slow.", focus="Reason", expected_keywords=("internet", "was", "slow")),
+        CoachTurn(coach="No problem. Please join the class.", hint="Ucapkan terima kasih sudah menunggu.", sample_answer="Thank you for waiting.", focus="Thanking", expected_keywords=("waiting",)),
+        CoachTurn(coach="You're welcome.", hint="Katakan kamu siap sekarang.", sample_answer="I am ready now.", focus="Ready", expected_keywords=("ready",)),
+    ),
     "asking-about-culture": (
         CoachTurn(coach="Ask me about a tradition in my country.", hint="Gunakan What is it like...?", sample_answer="What is it like in your country during big holidays?", focus="Ask culture question", expected_keywords=("what is it like", "country")),
         CoachTurn(coach="Answer about your country in 1-2 sentences.", hint="Jawab: It's ... but ... Mostly ...", sample_answer="It's busy, but it's also meaningful. Mostly we share food and spend time together.", focus="Explain briefly", expected_keywords=("busy", "mostly")),
@@ -68,6 +83,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What did you do yesterday evening?", hint="Jawab dengan 1-2 aktivitas (past).", sample_answer="I cooked dinner and listened to music.", focus="Answer with past activities", expected_keywords=("cooked", "listened")),
         CoachTurn(coach="Nice. Did you cook at home?", hint="Jawab singkat.", sample_answer="Yes, I did.", focus="Short past answer", expected_keywords=("did",)),
         CoachTurn(coach="What did you cook?", hint="Sebutkan satu makanan.", sample_answer="I made fried rice.", focus="Answer follow-up", expected_keywords=("made",)),
+    ),
+    "asking-about-prices": (
+        CoachTurn(coach="Hello. Can I help you?", hint="Tanyakan harga coffee.", sample_answer="How much is the coffee?", focus="Price question", expected_keywords=("how", "much", "coffee", "?")),
+        CoachTurn(coach="It is two dollars.", hint="Konfirmasi harga.", sample_answer="Two dollars?", focus="Price confirmation", expected_keywords=("two", "dollars", "?")),
+        CoachTurn(coach="Yes, two dollars.", hint="Tanyakan harga cake.", sample_answer="How much is the cake?", focus="Second price", expected_keywords=("how", "much", "cake", "?")),
+        CoachTurn(coach="It is three dollars.", hint="Tutup dengan thank you.", sample_answer="Okay. Thank you.", focus="Closing", expected_keywords=()),
     ),
     "asking-about-pros-and-cons": (
         CoachTurn(coach="Ask me about pros and cons of this option.", hint="Tanya: What are the pros and cons ...?", sample_answer="What are the pros and cons of working remotely?", focus="Ask about trade-offs", expected_keywords=("pros", "cons")),
@@ -84,6 +105,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Why did you do that?", hint="Jawab dengan because + reason.", sample_answer="Because we did not want to waste time.", focus="Give a reason", expected_keywords=("because",)),
         CoachTurn(coach="How did you feel at that moment?", hint="Sebutkan perasaan (felt...).", sample_answer="I felt worried, but then I felt relieved.", focus="Describe feelings", expected_keywords=("felt", "but")),
     ),
+    "asking-about-work-or-study": (
+        CoachTurn(coach="Do you work or study?", hint="Jawab apakah kamu bekerja atau belajar.", sample_answer="I study English online.", focus="Work or study", expected_keywords=("study", "english", "online")),
+        CoachTurn(coach="What do you do there?", hint="Sebutkan role sederhana.", sample_answer="I'm an assistant.", focus="Simple role", expected_keywords=("i'm", "assistant")),
+        CoachTurn(coach="Ask me the same question.", hint="Tanyakan balik dengan How about you?", sample_answer="How about you?", focus="Question back", expected_keywords=("how", "about", "?")),
+    ),
     "asking-follow-up-questions": (
         CoachTurn(coach="I went to a new cafe yesterday.", hint="Tanya lokasi atau detailnya dengan pertanyaan singkat.", sample_answer="Oh nice! Where is it?", focus="Ask a follow-up question", expected_keywords=("where is it", "?")),
         CoachTurn(coach="It's near the station.", hint="Tanya apa yang dia pesan atau lakukan di sana.", sample_answer="What did you order?", focus="Ask for details", expected_keywords=("what did you order", "?")),
@@ -99,6 +125,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Focus on the summary and the risks.", hint="Konfirmasi satu detail penting.", sample_answer="Got it. Just to confirm, you want the latest numbers too, right?", focus="Confirm details", expected_keywords=("confirm", "latest")),
         CoachTurn(coach="Yes, please include the latest numbers.", hint="Janji deadline singkat.", sample_answer="Okay. I'll send it by Thursday afternoon.", focus="Confirm deadline", expected_keywords=("send", "by")),
     ),
+    "asking-for-help": (
+        CoachTurn(coach="Hello. Do you need help?", hint="Minta bantuan.", sample_answer="Can you help me?", focus="Help request", expected_keywords=("help", "?")),
+        CoachTurn(coach="Sure. What is the problem?", hint="Jelaskan masalah file.", sample_answer="I can't open this file.", focus="Problem statement", expected_keywords=("can't", "open", "file")),
+        CoachTurn(coach="Okay. Click this button.", hint="Konfirmasi tombol.", sample_answer="This button?", focus="Instruction check", expected_keywords=("button", "?")),
+        CoachTurn(coach="Yes. Try again.", hint="Katakan berhasil dan terima kasih.", sample_answer="It works. Thank you.", focus="Result", expected_keywords=("works",)),
+    ),
     "asking-for-opinions": (
         CoachTurn(coach="What do you think about going to Bali?", hint="Jawab dengan opini: I think it's + adjective.", sample_answer="I think it's a great idea.", focus="Give opinion", expected_keywords=("i think", "idea")),
         CoachTurn(coach="Why?", hint="Jawab dengan because + reason.", sample_answer="Because the beaches are beautiful.", focus="Give reason", expected_keywords=("because", "beaches")),
@@ -109,15 +141,41 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Sure. What kind of place are you looking for?", hint="Jelaskan yang kamu cari (local / quiet / cheap).", sample_answer="I'm looking for something local. Something local would be great.", focus="Describe what you want", expected_keywords=("looking for", "local")),
         CoachTurn(coach="I recommend a place nearby. Any questions?", hint="Tanya jarak atau cara pergi.", sample_answer="Great. Is it far from here?", focus="Ask a follow-up question", expected_keywords=("far", "here")),
     ),
+    "asking-for-repetition": (
+        CoachTurn(coach="My phone number is zero eight one three, two two five five.", hint="Minta lawan bicara mengulang.", sample_answer="Sorry, can you repeat that, please?", focus="Polite repetition", expected_keywords=("sorry", "repeat", "?")),
+        CoachTurn(coach="Sure. Zero eight one three, two two five five.", hint="Cek satu detail dengan: Did you say ...?", sample_answer="Did you say two two five five?", focus="Checking a detail", expected_keywords=("did", "say", "two", "five", "?")),
+        CoachTurn(coach="Yes, that's right.", hint="Tunjukkan bahwa kamu sudah paham.", sample_answer="Got it. Thank you.", focus="Showing understanding", expected_keywords=("got",)),
+    ),
     "asking-high-quality-follow-ups": (
         CoachTurn(coach="Clarify what 'more cautious' means.", hint="When you say..., do you mean X or Y?", sample_answer="When you say 'more cautious', do you mean smaller scope or slower timing?", focus="Clarify", expected_keywords=("when you say", "do you mean")),
         CoachTurn(coach="Ask about assumptions and decision criteria.", hint="What's your assumption... What would change your mind...?", sample_answer="What's your assumption about the main risk? And what would change your mind about the timeline?", focus="Assumptions + criteria", expected_keywords=("assumption", "change your mind")),
         CoachTurn(coach="Move to action.", hint="What's the next step today?", sample_answer="Got it. What's the next step we should take today?", focus="Action", expected_keywords=("next step", "today")),
     ),
+    "asking-how-to-get-there": (
+        CoachTurn(coach="Where do you want to go?", hint="Tanyakan cara ke station.", sample_answer="How do I get to the station?", focus="Direction question", expected_keywords=("how", "get", "station", "?")),
+        CoachTurn(coach="Go straight for two minutes.", hint="Ulangi durasi arahnya.", sample_answer="Okay. Go straight for two minutes.", focus="Time direction", expected_keywords=("straight", "two", "minutes")),
+        CoachTurn(coach="Then turn right at the bank.", hint="Konfirmasi landmark.", sample_answer="Turn right at the bank?", focus="Landmark confirmation", expected_keywords=("turn", "right", "bank", "?")),
+        CoachTurn(coach="Yes. The station is there.", hint="Tutup dengan sopan.", sample_answer="Thank you for your help.", focus="Thanking", expected_keywords=("help",)),
+    ),
+    "asking-someones-name": (
+        CoachTurn(coach="Hi. I am new here.", hint="Tanyakan nama dengan: What's your name?", sample_answer="Hi. What's your name?", focus="Asking a name", expected_keywords=("what's your name", "what is your name", "may i know your name", "?"), indonesian_explanation="Tanyakan nama dengan pertanyaan sederhana. 'What's your name?' cukup untuk konteks santai."),
+        CoachTurn(coach="My name is Mina.", hint="Ulangi nama orang itu dalam responsmu.", sample_answer="Nice to meet you, Mina.", focus="Using the name", expected_keywords=("nice to meet you", "mina"), indonesian_explanation="Mengulang nama lawan bicara membuat responsmu terdengar lebih perhatian."),
+        CoachTurn(coach="Nice to meet you too.", hint="Tutup dengan respons singkat yang natural.", sample_answer="See you later.", focus="Closing", expected_keywords=("see you", "later", "bye"), indonesian_explanation="Gunakan closing sederhana seperti 'See you later' agar percakapan selesai dengan sopan."),
+    ),
     "asking-tactful-questions": (
         CoachTurn(coach="Ask how they prefer to receive feedback.", hint="Would you mind if I ask...?", sample_answer="Would you mind if I ask how you prefer to receive feedback?", focus="Preference", expected_keywords=("would you mind", "prefer")),
         CoachTurn(coach="Clarify the format politely.", hint="If it's okay, could you clarify whether...?", sample_answer="If it's okay, could you clarify whether you'd prefer feedback in writing or in a call?", focus="Clarify", expected_keywords=("if it's okay", "clarify", "whether")),
         CoachTurn(coach="Check understanding about privacy.", hint="Just to make sure I understand...", sample_answer="Just to make sure I understand, should we share concerns privately first?", focus="Confirm", expected_keywords=("make sure", "privately")),
+    ),
+    "asking-when-something-happens": (
+        CoachTurn(coach="When is the meeting?", hint="Jawab dengan hari dan jam.", sample_answer="It's tomorrow at ten.", focus="Event time", expected_keywords=("it's", "tomorrow", "ten")),
+        CoachTurn(coach="Is it online?", hint="Jawab yes/no dengan kalimat lengkap.", sample_answer="Yes, it is online.", focus="Meeting format", expected_keywords=("online",)),
+        CoachTurn(coach="Tomorrow at ten. Is that right?", hint="Konfirmasi dengan: Yes, that's right.", sample_answer="Yes, that's right.", focus="Confirming details", expected_keywords=("that's", "right")),
+    ),
+    "asking-where-a-place-is": (
+        CoachTurn(coach="Excuse me. What do you need?", hint="Tanyakan lokasi classroom.", sample_answer="Where is the classroom?", focus="Place question", expected_keywords=("where", "classroom", "?")),
+        CoachTurn(coach="It is on the first floor.", hint="Tanyakan apakah dekat office.", sample_answer="Is it near the office?", focus="Confirming location", expected_keywords=("near", "office", "?")),
+        CoachTurn(coach="Yes, it is next to the office.", hint="Tutup dengan thank you.", sample_answer="Thank you.", focus="Polite closing", expected_keywords=()),
     ),
     "b1-final-conversation": (
         CoachTurn(coach="Start with a short story about your practice last week.", hint="At first..., but then... because...", sample_answer="At first it was hard, but then it got easier because I kept sessions short.", focus="Story + reason", expected_keywords=("at first", "but", "because")),
@@ -154,6 +212,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What's the evidence?", hint="Use The evidence suggests...", sample_answer="The evidence suggests teams ship faster when ownership is clear.", focus="Evidence", expected_keywords=("evidence suggests",)),
         CoachTurn(coach="Address a concern and conclude.", hint="A common concern is... That said... In short...", sample_answer="A common concern is fragmentation. That said, shared standards can mitigate it. In short, the benefits outweigh the risks if we set guardrails early.", focus="Concern + conclusion", expected_keywords=("concern", "that said", "in short")),
     ),
+    "buying-a-simple-item": (
+        CoachTurn(coach="Hello. What do you need?", hint="Minta beli pen ini.", sample_answer="Can I have this pen?", focus="Buying item", expected_keywords=("have", "pen", "?")),
+        CoachTurn(coach="Yes, of course.", hint="Tanyakan harganya.", sample_answer="How much is it?", focus="Price", expected_keywords=("how", "much", "?")),
+        CoachTurn(coach="It is one dollar.", hint="Bayar dengan Here you go.", sample_answer="Okay. Here you go.", focus="Payment", expected_keywords=()),
+        CoachTurn(coach="Thank you. Here is your pen.", hint="Tutup singkat.", sample_answer="Thanks.", focus="Closing", expected_keywords=()),
+    ),
     "buying-a-ticket": (
         CoachTurn(coach="Hi. Where are you going?", hint="Sebutkan tujuan dan minta tiket dengan sopan.", sample_answer="I'd like one ticket to Bandung, please.", focus="Request a ticket", expected_keywords=("i'd like", "ticket")),
         CoachTurn(coach="One-way or round-trip?", hint="Pilih jenis tiket.", sample_answer="One-way, please.", focus="Choose the ticket type", expected_keywords=("one-way",)),
@@ -168,6 +232,13 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Frame the issue in one line.", hint="Let me frame this...", sample_answer="Let me frame this: we need reliability and stakeholder confidence before scaling.", focus="Frame", expected_keywords=("frame", "reliability")),
         CoachTurn(coach="Give a nuanced position with a condition.", hint="On balance... but only after...", sample_answer="On balance, I support the rollout, but only after we validate pilot metrics.", focus="Nuance", expected_keywords=("on balance", "only after", "validate")),
         CoachTurn(coach="Label decisions and open questions, then close with next steps.", hint="The decision is... The open questions are... Next steps are...", sample_answer="The decision is to run a two-week pilot. The open questions are resourcing and change management. Next steps are: I'll send a summary today, and we'll align tomorrow.", focus="Structure", expected_keywords=("decision", "open questions", "next steps")),
+    ),
+    "cafe-and-shop-mission": (
+        CoachTurn(coach="Hi. What would you like?", hint="Pesan coffee dan sandwich.", sample_answer="Can I have a coffee and a sandwich, please?", focus="Mission order", expected_keywords=("have", "coffee", "sandwich", "?")),
+        CoachTurn(coach="Sure. Small or large coffee?", hint="Pilih small.", sample_answer="Small, please.", focus="Size", expected_keywords=("small",)),
+        CoachTurn(coach="Anything else?", hint="Tanyakan total harga.", sample_answer="How much is it?", focus="Total price", expected_keywords=("how", "much", "?")),
+        CoachTurn(coach="It is five dollars.", hint="Bayar dengan sopan.", sample_answer="Okay. Here you go.", focus="Payment", expected_keywords=()),
+        CoachTurn(coach="Thank you. Here is your order.", hint="Tutup singkat.", sample_answer="Thanks.", focus="Closing", expected_keywords=()),
     ),
     "catching-implied-meaning": (
         CoachTurn(coach="Interpret the concern neutrally.", hint="Use It sounds like...", sample_answer="It sounds like timing is the main concern.", focus="Interpretation", expected_keywords=("sounds like", "concern")),
@@ -239,10 +310,22 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="List next steps with owners and deadlines.", hint="Next steps are: I'll... today, and you'll... by Friday.", sample_answer="Next steps are: I'll send the draft plan today, and you'll review it by Friday.", focus="Next steps", expected_keywords=("next steps", "by")),
         CoachTurn(coach="Check if the timeline works.", hint="Does that timeline work for you?", sample_answer="Great. Does that timeline work for you?", focus="Confirm timeline", expected_keywords=("timeline", "work")),
     ),
+    "contact-details-mission": (
+        CoachTurn(coach="Hi. I need your contact details.", hint="Mulai dengan nama lengkapmu.", sample_answer="Sure. My name is Dimas.", focus="Sharing a name", expected_keywords=("sure", "name", "dimas")),
+        CoachTurn(coach="How do you spell your name?", hint="Eja nama huruf demi huruf.", sample_answer="D-I-M-A-S.", focus="Spelling a name", expected_keywords=()),
+        CoachTurn(coach="What is your phone number?", hint="Sebutkan nomor telepon dalam kelompok kecil.", sample_answer="It's zero eight one two, three four five six.", focus="Sharing a phone number", expected_keywords=("it's", "zero", "eight", "one")),
+        CoachTurn(coach="And your email address?", hint="Sebutkan email dengan at dan dot.", sample_answer="It's dimas at example dot com.", focus="Sharing an email", expected_keywords=("it's", "dimas", "example", "dot")),
+        CoachTurn(coach="Is everything correct?", hint="Konfirmasi semua informasi benar.", sample_answer="Yes, everything is correct.", focus="Confirming all details", expected_keywords=("everything", "correct")),
+    ),
     "cross-cultural-mission": (
         CoachTurn(coach="Interpret the client's indirect message and clarify priorities.", hint="My sense is that... Before we decide, can we clarify...?", sample_answer="My sense is that they're signaling concern indirectly. Before we decide, can we clarify whether they prioritize speed or risk reduction?", focus="Context", expected_keywords=("my sense", "clarify", "priority")),
         CoachTurn(coach="Ask a tactful question about feedback preferences.", hint="Would you mind if I ask...?", sample_answer="Would you mind if I ask how you prefer to receive feedback—writing or a call?", focus="Tactful question", expected_keywords=("would you mind", "prefer")),
         CoachTurn(coach="Repair a misunderstanding and propose a next step.", hint="I may have misunderstood... Just to clarify... How about we...?", sample_answer="I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?", focus="Repair", expected_keywords=("misunderstood", "intent", "how about")),
+    ),
+    "days-and-simple-schedules": (
+        CoachTurn(coach="When is the English class?", hint="Jawab dengan hari: on Monday and Wednesday.", sample_answer="It's on Monday and Wednesday.", focus="Class days", expected_keywords=("it's", "monday", "wednesday")),
+        CoachTurn(coach="What time?", hint="Jawab dengan at + time.", sample_answer="At seven in the evening.", focus="Class time", expected_keywords=("seven", "evening")),
+        CoachTurn(coach="Great. See you on Monday.", hint="Tutup dengan singkat.", sample_answer="See you.", focus="Schedule closing", expected_keywords=("see",)),
     ),
     "debate-analysis-mission": (
         CoachTurn(coach="Challenge the claim by surfacing an assumption and asking for evidence.", hint="It seems you're assuming... What's the evidence for...?", sample_answer="It seems you're assuming fewer steps automatically mean better conversion. What's the evidence for that claim?", focus="Assumption + evidence", expected_keywords=("assuming", "evidence")),
@@ -344,10 +427,28 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Why is that important?", hint="Jawab dengan because + reason.", sample_answer="Because it's the main value for users and the deadline is close.", focus="Give reason", expected_keywords=("because", "deadline")),
         CoachTurn(coach="Ask about my priorities.", hint="Gunakan What about you? What's your top priority?", sample_answer="What about you? What's your top priority?", focus="Ask other priorities", expected_keywords=("what about you", "top priority")),
     ),
+    "final-test-practice": (
+        CoachTurn(coach="Hello. What is your name?", hint="Jawab dengan nama lengkap atau nama panggilan.", sample_answer="My name is Alya.", focus="Test identity", expected_keywords=("name", "alya")),
+        CoachTurn(coach="Where are you from?", hint="Jawab asal dengan I'm from ...", sample_answer="I'm from Indonesia.", focus="Test origin", expected_keywords=("i'm", "from", "indonesia")),
+        CoachTurn(coach="What do you do every morning?", hint="Sebutkan rutinitas belajar dan jam.", sample_answer="I study English at seven.", focus="Test routine", expected_keywords=("study", "english", "seven")),
+        CoachTurn(coach="When is your class?", hint="Kalau perlu, minta pengulangan dulu.", sample_answer="Sorry, can you repeat that, please?", focus="Clarification", expected_keywords=("sorry", "repeat", "?")),
+        CoachTurn(coach="Sure. When is your class?", hint="Jawab hari dan jam.", sample_answer="It is on Tuesday at eight.", focus="Schedule answer", expected_keywords=("tuesday", "eight")),
+    ),
+    "finding-a-place-mission": (
+        CoachTurn(coach="Hello. Can I help you?", hint="Mulai sopan dan tanya cara ke room A.", sample_answer="Excuse me. How do I get to room A?", focus="Mission opening", expected_keywords=("excuse", "how", "get", "room", "?")),
+        CoachTurn(coach="Go straight and turn left.", hint="Ulangi arahan lengkap.", sample_answer="Go straight and turn left.", focus="Combined directions", expected_keywords=("straight", "turn", "left")),
+        CoachTurn(coach="Room A is next to the office.", hint="Konfirmasi lantai.", sample_answer="Is it on the first floor?", focus="Floor confirmation", expected_keywords=("first", "floor", "?")),
+        CoachTurn(coach="Yes, it is.", hint="Tutup dengan thank you.", sample_answer="Great. Thank you.", focus="Closing", expected_keywords=("great",)),
+    ),
     "finding-middle-ground": (
         CoachTurn(coach="We disagree. How can we move forward?", hint="Mulai dengan Maybe we can find a compromise.", sample_answer="Maybe we can find a compromise.", focus="Suggest compromise", expected_keywords=("compromise",)),
         CoachTurn(coach="Propose a middle-ground option.", hint="A compromise could be...", sample_answer="A compromise could be launching to 10% of users first.", focus="Propose middle ground", expected_keywords=("could be", "users")),
         CoachTurn(coach="Ask for agreement with a condition.", hint="If we do X, can we agree on Y?", sample_answer="If we do a small rollout, can we agree on one extra day for testing?", focus="Confirm agreement", expected_keywords=("if", "agree")),
+    ),
+    "first-conversation-mission": (
+        CoachTurn(coach="Hi, good morning. My name is Sara.", hint="Sapa balik dan sebutkan namamu.", sample_answer="Good morning. My name is Arif.", focus="Greeting and name", expected_keywords=("good morning", "my name is", "i'm", "i am"), indonesian_explanation="Gabungkan greeting dan nama dalam dua kalimat pendek agar pembuka percakapan terasa jelas."),
+        CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asalmu lalu tanyakan balik.", sample_answer="I'm from Indonesia. How about you?", focus="Origin and follow-up", expected_keywords=("from", "indonesia", "how about you", "?"), indonesian_explanation="Setelah menjawab asal, tanyakan balik supaya percakapan tidak berhenti."),
+        CoachTurn(coach="I'm from Malaysia. Nice to meet you.", hint="Balas dan tutup percakapan.", sample_answer="Nice to meet you too. See you later.", focus="Closing mission", expected_keywords=("nice to meet you too", "see you", "later"), indonesian_explanation="Tutup misi dengan respons sopan dan closing singkat seperti 'See you later'."),
     ),
     "framing-a-complex-topic": (
         CoachTurn(coach="Can you present the proposal?", hint="Start with Today I'd like to...", sample_answer="Sure. Today I'd like to walk you through the proposal and why it matters.", focus="Opener", expected_keywords=("today", "walk you through", "matters")),
@@ -373,6 +474,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Any feedback on my demo?", hint="Mulai positif + I noticed...", sample_answer="Overall it was clear. I noticed the introduction was a bit long.", focus="Positive + observation", expected_keywords=("overall", "noticed")),
         CoachTurn(coach="What was the impact?", hint="Jelaskan impact dengan so.", sample_answer="Some people lost focus, so the key message came late.", focus="Explain impact", expected_keywords=("so", "message")),
         CoachTurn(coach="What would you suggest?", hint="Gunakan One suggestion is... / It might help if...", sample_answer="One suggestion is to start with the main takeaway. It might help if you keep the intro under one minute.", focus="Give a suggestion", expected_keywords=("suggestion", "might help")),
+    ),
+    "giving-phone-numbers": (
+        CoachTurn(coach="What is your phone number?", hint="Sebutkan nomor telepon dalam kelompok kecil.", sample_answer="It's zero eight one two, three four five six.", focus="Giving a phone number", expected_keywords=("it's", "zero", "eight", "one")),
+        CoachTurn(coach="Let me check. Zero eight one two, three four five six?", hint="Konfirmasi dengan: Yes, that's correct.", sample_answer="Yes, that's correct.", focus="Confirming a number", expected_keywords=("that's", "correct")),
+        CoachTurn(coach="My number is zero eight one three, two two five five.", hint="Minta diulang dengan sopan.", sample_answer="Can you repeat that, please?", focus="Asking for repetition", expected_keywords=("repeat", "?")),
     ),
     "giving-simple-reasons": (
         CoachTurn(coach="Do you like this cafe?", hint="Jawab yes/no + opini singkat.", sample_answer="Yes, I like it.", focus="Give an opinion", expected_keywords=("yes", "like")),
@@ -418,6 +524,13 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Hello. How can I help you today?", hint="Bilang kamu ada janji + jamnya.", sample_answer="Hi. I have an appointment at 3:30.", focus="Check in for appointment", expected_keywords=("appointment", "3:30")),
         CoachTurn(coach="Sure. What's your name?", hint="Sebutkan nama dan eja.", sample_answer="Mina Park. P-A-R-K.", focus="Provide name and spelling", expected_keywords=("p-a-r-k", "mina")),
         CoachTurn(coach="Thank you. What seems to be the problem?", hint="Sebutkan gejala + durasi.", sample_answer="I've had a cough for two days, and I feel tired.", focus="Describe symptoms with duration", expected_keywords=("have had", "for", "days", "tired")),
+    ),
+    "help-and-problem-mission": (
+        CoachTurn(coach="Hi. Is everything okay?", hint="Katakan kamu tidak mengerti.", sample_answer="Sorry, I don't understand.", focus="Mission opening", expected_keywords=("sorry", "don't", "understand")),
+        CoachTurn(coach="That's okay. What is the problem?", hint="Jelaskan masalah file.", sample_answer="I can't open this file.", focus="Problem", expected_keywords=("can't", "open", "file")),
+        CoachTurn(coach="Can you send me a screenshot?", hint="Terima dan minta tunggu sebentar.", sample_answer="Sure. Can you wait a minute?", focus="Request", expected_keywords=("sure", "wait", "minute", "?")),
+        CoachTurn(coach="No problem.", hint="Kirim screenshot.", sample_answer="Here is the screenshot.", focus="Sending info", expected_keywords=("screenshot",)),
+        CoachTurn(coach="Good. Click this button.", hint="Katakan berhasil dan terima kasih.", sample_answer="It works. Thank you for your help.", focus="Closing", expected_keywords=("works", "help")),
     ),
     "idea-presentation-mission": (
         CoachTurn(coach="Present your idea in 2-3 sentences with signposting.", hint="Today I'd like to... First... Next... Finally...", sample_answer="Today I'd like to propose a shared onboarding checklist. First, the problem is inconsistency. Next, the proposal is a checklist plus a buddy. Finally, we'll pilot it next week.", focus="Presentation with signposting", expected_keywords=("today", "first", "next", "finally")),
@@ -480,6 +593,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Let's get coffee after work.", hint="Tanyakan jamnya dengan pertanyaan pendek.", sample_answer="Sure. What time?", focus="Ask the time", expected_keywords=("what time", "?")),
         CoachTurn(coach="How about 6 pm?", hint="Setuju, lalu tanya tempat ketemunya.", sample_answer="6 pm works for me. Where should we meet?", focus="Confirm and ask place", expected_keywords=("works for me", "where should we meet", "?")),
     ),
+    "making-simple-requests": (
+        CoachTurn(coach="What do you need?", hint="Minta link dengan sopan.", sample_answer="Can you send me the link, please?", focus="Polite request", expected_keywords=("send", "link", "?")),
+        CoachTurn(coach="Yes, of course.", hint="Ucapkan terima kasih.", sample_answer="Thank you.", focus="Thanking", expected_keywords=()),
+        CoachTurn(coach="Can you wait a minute?", hint="Terima request untuk menunggu.", sample_answer="Sure. No problem.", focus="Accepting request", expected_keywords=("sure", "problem")),
+        CoachTurn(coach="Here is the link.", hint="Tutup dengan thanks.", sample_answer="Great. Thanks.", focus="Closing", expected_keywords=("great",)),
+    ),
     "managing-expectations": (
         CoachTurn(coach="Can we deliver the full scope by next week?", hint="Start with what you can commit to.", sample_answer="What we can commit to is a smaller release by next week.", focus="Commitment", expected_keywords=("commit", "smaller")),
         CoachTurn(coach="When can we deliver everything?", hint="The earliest we can deliver... assuming...", sample_answer="The earliest we can deliver the full scope is two weeks later, assuming no new blockers.", focus="Timeline + condition", expected_keywords=("earliest", "assuming", "blockers")),
@@ -509,6 +628,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What do you think about this restaurant?", hint="Jawab dengan opini + because.", sample_answer="I think it's good because it's cheap.", focus="Opinion with reason", expected_keywords=("i think", "because")),
         CoachTurn(coach="Any concern?", hint="Tolak halus: I'm not sure + might be ...", sample_answer="I'm not sure. The service might be slow.", focus="Polite concern", expected_keywords=("not sure", "might")),
         CoachTurn(coach="That's fair. Do you have another idea?", hint="Kasih alternatif + because.", sample_answer="Yes. I think the cafe next door is better because it is quieter.", focus="Suggest alternative with reason", expected_keywords=("better", "because")),
+    ),
+    "ordering-a-drink": (
+        CoachTurn(coach="Hi. What would you like?", hint="Pesan teh dengan sopan.", sample_answer="Can I have a tea, please?", focus="Polite order", expected_keywords=("have", "tea", "?")),
+        CoachTurn(coach="Small or large?", hint="Pilih ukuran kecil.", sample_answer="Small, please.", focus="Size choice", expected_keywords=("small",)),
+        CoachTurn(coach="Anything else?", hint="Katakan tidak ada lagi dengan sopan.", sample_answer="No, thank you.", focus="Finishing order", expected_keywords=()),
+        CoachTurn(coach="Here you go.", hint="Tutup dengan thank you.", sample_answer="Thank you.", focus="Thanking", expected_keywords=()),
     ),
     "past-experience-mission": (
         CoachTurn(coach="Hey! What did you do yesterday?", hint="Jawab dengan tempat + aktivitas (past).", sample_answer="I went to the museum and took photos.", focus="Tell where and what you did", expected_keywords=("went", "took")),
@@ -625,6 +750,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Clients are worried about delays. What do you say?", hint="I understand the concern... Just to clarify...", sample_answer="I understand the concern. Just to clarify, what timeline did we promise?", focus="Concern + clarify", expected_keywords=("understand", "clarify", "timeline")),
         CoachTurn(coach="Close with next steps and a deadline.", hint="Next steps are... today... by Friday.", sample_answer="Next steps are: I'll share an update today, and we'll confirm a revised timeline by Friday.", focus="Next steps", expected_keywords=("next steps", "today", "by")),
     ),
+    "review-introductions": (
+        CoachTurn(coach="Hi, good morning. My name is Sara.", hint="Sapa balik dan sebutkan namamu.", sample_answer="Good morning. My name is Dimas.", focus="Name review", expected_keywords=("morning", "name", "dimas")),
+        CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asalmu dengan I'm from ...", sample_answer="I'm from Indonesia.", focus="Origin review", expected_keywords=("i'm", "from", "indonesia")),
+        CoachTurn(coach="I live in Jakarta now.", hint="Tanyakan balik dengan How about you?", sample_answer="How about you?", focus="Question back", expected_keywords=("how", "about", "?")),
+        CoachTurn(coach="I'm from Malaysia.", hint="Tutup percakapan dengan sopan.", sample_answer="Oh, nice. See you in class.", focus="Closing", expected_keywords=("nice", "see", "class")),
+    ),
     "review-leadership-and-listening": (
         CoachTurn(coach="Mirror the concern.", hint="What I'm hearing is...", sample_answer="What I'm hearing is there's some concern under the surface.", focus="Mirror", expected_keywords=("hearing", "concern")),
         CoachTurn(coach="Clarify what the concern means with two options.", hint="When you say X, do you mean Y or Z?", sample_answer="When you say 'worried about blame', do you mean fear of mistakes or fear of visibility?", focus="Clarify", expected_keywords=("do you mean", "fear")),
@@ -640,6 +771,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Be precise about what changes.", hint="To be precise...", sample_answer="To be precise, I'd keep the core workflow and postpone optional add-ons.", focus="Precision", expected_keywords=("to be precise", "core", "postpone")),
         CoachTurn(coach="Manage expectations and close with next steps.", hint="What I can commit to is... Next steps are...", sample_answer="What I can commit to is a pilot next week. Next steps are: I'll share a one-page summary today, and we'll align tomorrow.", focus="Commitment + next steps", expected_keywords=("commit", "next steps", "today")),
     ),
+    "review-places-and-shopping": (
+        CoachTurn(coach="Excuse me. Can I help you?", hint="Tanyakan lokasi cafe.", sample_answer="Where is the cafe?", focus="Place question", expected_keywords=("where", "cafe", "?")),
+        CoachTurn(coach="Go straight and turn right.", hint="Konfirmasi lokasinya dekat library.", sample_answer="Is it next to the library?", focus="Confirm place", expected_keywords=("next", "library", "?")),
+        CoachTurn(coach="Yes, it is. You are at the cafe now.", hint="Pesan satu teh dengan sopan.", sample_answer="I would like one tea, please.", focus="Order", expected_keywords=("one", "tea")),
+        CoachTurn(coach="Sure. It is two dollars.", hint="Bayar dan ucapkan terima kasih.", sample_answer="Here you go. Thank you.", focus="Payment", expected_keywords=()),
+    ),
     "review-presenting-and-debate": (
         CoachTurn(coach="Frame your argument in one sentence.", hint="Let me frame this...", sample_answer="Let me frame this: the goal is reliability, not just speed.", focus="Frame", expected_keywords=("frame", "goal")),
         CoachTurn(coach="Name your core assumption.", hint="The core assumption is that...", sample_answer="The core assumption is that incidents cost more than delay.", focus="Assumption", expected_keywords=("assumption", "incidents")),
@@ -649,6 +786,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What's the issue?", hint="Mulai dengan There's a problem with...", sample_answer="There's a problem with the meeting link.", focus="State problem", expected_keywords=("problem", "with")),
         CoachTurn(coach="What's the impact?", hint="Gunakan so untuk dampak.", sample_answer="People can't join, so we need a new link.", focus="Explain impact", expected_keywords=("can't", "so")),
         CoachTurn(coach="Now say you're late and give an estimate.", hint="I'm running late... I'll be there in about...", sample_answer="I'm running a bit late. I'll be there in about 15 minutes.", focus="Delay + estimate", expected_keywords=("running", "in about")),
+    ),
+    "review-routines-and-time": (
+        CoachTurn(coach="What do you do in the morning?", hint="Sebutkan satu rutinitas dan jam.", sample_answer="I wake up at six.", focus="Routine time", expected_keywords=()),
+        CoachTurn(coach="Nice. Do you study English after that?", hint="Jawab dengan Yes, lalu sebutkan jam belajar.", sample_answer="Yes, I study English at seven.", focus="Study routine", expected_keywords=()),
+        CoachTurn(coach="Good. We have speaking class this week.", hint="Tanyakan kapan kelas speaking.", sample_answer="When is our speaking class?", focus="Class schedule question", expected_keywords=()),
+        CoachTurn(coach="It is on Tuesday at eight.", hint="Tutup dengan See you then.", sample_answer="Great. See you then.", focus="Closing", expected_keywords=()),
     ),
     "review-social-and-plans": (
         CoachTurn(coach="Hey! Long time no see. How have you been?", hint="Jawab singkat, lalu balas tanya.", sample_answer="Pretty good. How about you?", focus="Small talk response", expected_keywords=("pretty", "how about")),
@@ -665,20 +808,62 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="It's at 4:15. Anything else?", hint="Tanya barang (availability).", sample_answer="Yes. Do you have a phone charger?", focus="Ask availability", expected_keywords=("do you have", "charger")),
         CoachTurn(coach="Sure. What kind do you need?", hint="Sebutkan jenisnya.", sample_answer="A USB-C charger, please.", focus="Specify type", expected_keywords=("usb", "please")),
     ),
+    "routine-conversation-mission": (
+        CoachTurn(coach="What time do you wake up?", hint="Sebutkan jam bangun.", sample_answer="I wake up at six.", focus="Wake-up time", expected_keywords=("wake", "six")),
+        CoachTurn(coach="When do you study English?", hint="Sebutkan hari dan jam.", sample_answer="I study on Monday and Wednesday at seven.", focus="Study schedule", expected_keywords=("study", "monday", "wednesday", "seven")),
+        CoachTurn(coach="Is the class online?", hint="Jawab dengan yes/no lengkap.", sample_answer="Yes, it is online.", focus="Class format", expected_keywords=("online",)),
+        CoachTurn(coach="Great. See you on Monday.", hint="Tutup percakapan.", sample_answer="See you.", focus="Closing", expected_keywords=("see",)),
+    ),
+    "saying-hello-and-goodbye": (
+        CoachTurn(coach="Hi. Good morning. How are you today?", hint="Jawab sapaan, lalu beri respons singkat.", sample_answer="Good morning. I'm good, thank you. How are you?", focus="Greeting response", expected_keywords=("good morning", "morning", "hi", "hello", "thank", "thanks"), indonesian_explanation="Jawabanmu sudah masuk konteks. Akan lebih natural kalau menambahkan pertanyaan balik singkat."),
+        CoachTurn(coach="Nice. What is your name?", hint="Sebutkan nama dengan pola: My name is ... atau I'm ...", sample_answer="My name is Arif. Nice to meet you.", focus="Self introduction", expected_keywords=("my name is", "i'm", "i am", "nice to meet"), indonesian_explanation="Untuk perkenalan, pola 'My name is ...' atau 'I'm ...' sudah cukup. Tambahkan 'Nice to meet you' agar lebih ramah."),
+        CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asalmu, lalu tambahkan pertanyaan balik sederhana.", sample_answer="I'm from Indonesia. How about you?", focus="Follow-up question", expected_keywords=("from", "indonesia", "jakarta", "how about you", "?"), indonesian_explanation="Saat menjawab asal, tambahkan pertanyaan balik seperti 'How about you?' supaya percakapan terus berjalan."),
+    ),
     "saying-how-you-feel": (
         CoachTurn(coach="Hey, are you okay?", hint="Jawab singkat, lalu bilang kamu nggak enak badan.", sample_answer="Not really. I don't feel well.", focus="Say you feel unwell", expected_keywords=("don't feel well", "not really")),
         CoachTurn(coach="What's wrong?", hint="Sebutkan satu gejala.", sample_answer="I have a headache.", focus="Name a symptom", expected_keywords=("have", "headache")),
         CoachTurn(coach="Do you want to go home?", hint="Jawab, lalu tambahkan satu gejala lagi.", sample_answer="Yes. I think I have a fever.", focus="Add another symptom", expected_keywords=("think", "fever")),
+    ),
+    "saying-what-you-can-do": (
+        CoachTurn(coach="Can you speak English?", hint="Sebutkan kemampuanmu dengan I can.", sample_answer="I can speak a little.", focus="Speaking ability", expected_keywords=("speak", "little")),
+        CoachTurn(coach="Can you write simple emails?", hint="Jawab dengan Yes, I can.", sample_answer="Yes, I can.", focus="Writing ability", expected_keywords=()),
+        CoachTurn(coach="Can you join a meeting in English?", hint="Gunakan Not yet kalau belum bisa.", sample_answer="Not yet, but I can try.", focus="Honest ability", expected_keywords=("not", "yet", "but", "try")),
+    ),
+    "saying-what-you-do": (
+        CoachTurn(coach="What do you do?", hint="Jawab dengan status sederhana.", sample_answer="I'm a student.", focus="Work or study status", expected_keywords=("i'm", "student")),
+        CoachTurn(coach="What do you study?", hint="Sebutkan subjek yang kamu pelajari.", sample_answer="I study design.", focus="Study subject", expected_keywords=("study", "design")),
+        CoachTurn(coach="Do you study online?", hint="Jawab dengan yes/no lengkap.", sample_answer="Yes, I study online.", focus="Study format", expected_keywords=("study", "online")),
     ),
     "saying-what-you-think": (
         CoachTurn(coach="Oh yeah? What did you think?", hint="Kasih opini singkat: I think it's + adjective.", sample_answer="I think it's really good.", focus="Give an opinion", expected_keywords=("i think", "it's")),
         CoachTurn(coach="What did you like about it?", hint="Sebutkan satu hal: story/actor/music.", sample_answer="I liked the story. It was fun.", focus="Add a comment", expected_keywords=("liked",)),
         CoachTurn(coach="Would you recommend it?", hint="Jawab yes/no + alasan singkat.", sample_answer="Yes, I would. It is simple, but fun.", focus="Recommend with reason", expected_keywords=("yes", "but")),
     ),
+    "saying-what-you-want": (
+        CoachTurn(coach="What do you want?", hint="Sebutkan kamu mau sandwich.", sample_answer="I want a sandwich.", focus="Want statement", expected_keywords=("want", "sandwich")),
+        CoachTurn(coach="Do you want tea or coffee?", hint="Pilih tea dengan sopan.", sample_answer="Tea, please.", focus="Choosing option", expected_keywords=("tea",)),
+        CoachTurn(coach="Do you want sugar?", hint="Katakan tanpa gula.", sample_answer="No sugar, please.", focus="No extra item", expected_keywords=("sugar",)),
+    ),
+    "saying-where-you-are-from": (
+        CoachTurn(coach="Where are you from?", hint="Jawab dengan pola: I'm from ...", sample_answer="I'm from Indonesia.", focus="Origin", expected_keywords=("from", "indonesia", "jakarta", "bandung", "surabaya"), indonesian_explanation="Untuk asal negara atau kota, gunakan pola 'I'm from ...' dengan singkat dan jelas."),
+        CoachTurn(coach="Where do you live now?", hint="Gunakan pola: I live in ...", sample_answer="I live in Jakarta.", focus="Current city", expected_keywords=("live in", "jakarta", "bandung", "surabaya"), indonesian_explanation="Bedakan origin dan tempat tinggal sekarang: 'I'm from ...' dan 'I live in ...'."),
+        CoachTurn(coach="Nice. Ask me the same question.", hint="Tanyakan balik dengan: How about you?", sample_answer="How about you?", focus="Question back", expected_keywords=("how about you", "where are you from", "?"), indonesian_explanation="Pertanyaan balik seperti 'How about you?' menjaga percakapan tetap berjalan."),
+    ),
     "saying-where-you-went": (
         CoachTurn(coach="Hi! Did you go anywhere interesting yesterday?", hint="Jawab, lalu bilang kamu pergi ke mana.", sample_answer="Yes, I went to the museum.", focus="Say where you went", expected_keywords=("went", "to")),
         CoachTurn(coach="Oh nice. Where did you go after that?", hint="Sebutkan tempat kedua.", sample_answer="I went to a cafe near the river.", focus="Add another place", expected_keywords=("went", "cafe")),
         CoachTurn(coach="Sounds relaxing. Where did you go?", hint="Balik tanya.", sample_answer="Where did you go?", focus="Ask back", expected_keywords=("where", "did")),
+    ),
+    "saying-you-do-not-understand": (
+        CoachTurn(coach="Please open your book.", hint="Katakan kamu tidak mengerti.", sample_answer="Sorry, I don't understand.", focus="Saying confusion", expected_keywords=("sorry", "don't", "understand")),
+        CoachTurn(coach="That's okay. I can say it again.", hint="Minta diulangi dengan sopan.", sample_answer="Can you repeat that, please?", focus="Asking repetition", expected_keywords=("repeat", "?")),
+        CoachTurn(coach="Yes. Open your book.", hint="Konfirmasi instruksi.", sample_answer="Open my book?", focus="Confirmation", expected_keywords=("open", "book", "?")),
+        CoachTurn(coach="Yes, that's right.", hint="Katakan sudah paham.", sample_answer="Thank you. I understand now.", focus="Closing", expected_keywords=("understand",)),
+    ),
+    "saying-your-name": (
+        CoachTurn(coach="Hi, my name is Sara. What is your name?", hint="Jawab dengan pola: My name is ... atau I'm ...", sample_answer="My name is Arif. Nice to meet you.", focus="Saying your name", expected_keywords=("my name is", "i'm", "i am", "nice to meet"), indonesian_explanation="Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'."),
+        CoachTurn(coach="Nice to meet you. What should I call you?", hint="Gunakan pola: Please call me ...", sample_answer="Please call me Arif.", focus="Nickname", expected_keywords=("please call me", "call me"), indonesian_explanation="Kalau ingin menyebut nama panggilan, gunakan pola pendek 'Please call me ...'."),
+        CoachTurn(coach="Great. Nice to meet you, Arif.", hint="Balas dengan sopan: Nice to meet you too.", sample_answer="Nice to meet you too.", focus="Polite response", expected_keywords=("nice to meet you too", "you too"), indonesian_explanation="Untuk membalas sapaan perkenalan, 'Nice to meet you too' sudah natural dan sopan."),
     ),
     "setting-direction": (
         CoachTurn(coach="What should the team focus on this sprint?", hint="Set direction clearly.", sample_answer="The direction I'd like to set is stabilizing the billing flow first.", focus="Direction", expected_keywords=("direction", "first")),
@@ -689,6 +874,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="You look happy today. What happened?", hint="Mulai dengan kapan + di mana.", sample_answer="Last weekend, I was in Bandung.", focus="Set time and place", expected_keywords=("last", "was", "in")),
         CoachTurn(coach="Oh nice. Who were you with?", hint="Jawab dengan with + person.", sample_answer="I was there with my cousin.", focus="Say who you were with", expected_keywords=("with", "cousin")),
         CoachTurn(coach="What were you doing there?", hint="Tambah 1 aktivitas background.", sample_answer="We were visiting my aunt and exploring the city.", focus="Add background activity", expected_keywords=("were", "visiting")),
+    ),
+    "sharing-email-addresses": (
+        CoachTurn(coach="What is your email address?", hint="Sebutkan email dengan at dan dot.", sample_answer="It's ben dot rama at example dot com.", focus="Giving an email address", expected_keywords=("it's", "ben", "dot", "rama")),
+        CoachTurn(coach="Can you spell that, please?", hint="Eja bagian nama email pelan-pelan.", sample_answer="B-E-N dot R-A-M-A.", focus="Spelling an email", expected_keywords=("dot",)),
+        CoachTurn(coach="Is that correct?", hint="Konfirmasi dengan: Yes, that's correct.", sample_answer="Yes, that's correct.", focus="Confirming an email", expected_keywords=("that's", "correct")),
     ),
     "shopping-service-mission": (
         CoachTurn(coach="Hi. Can I help you?", hint="Jelaskan barang yang kamu cari.", sample_answer="Yes, please. I'm looking for a USB-C charger.", focus="Ask for an item", expected_keywords=("i'm looking for", "charger")),
@@ -701,6 +891,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Use first, next, finally to outline your structure.", hint="First... Next... Finally...", sample_answer="First, I'll explain the problem. Next, I'll share the proposal. Finally, I'll outline next steps.", focus="Structure", expected_keywords=("first", "next", "finally")),
         CoachTurn(coach="Wrap up with a short summary phrase.", hint="Let me summarize...", sample_answer="Let me summarize the key points in one sentence.", focus="Summary", expected_keywords=("summarize",)),
     ),
+    "simple-place-words": (
+        CoachTurn(coach="Where are you going?", hint="Sebutkan kamu pergi ke cafe.", sample_answer="I'm going to the cafe.", focus="Destination", expected_keywords=("i'm", "going", "cafe")),
+        CoachTurn(coach="Is the cafe near here?", hint="Jawab dan sebutkan dekat library.", sample_answer="Yes. It is near the library.", focus="Nearby place", expected_keywords=("near", "library")),
+        CoachTurn(coach="I am going to the library.", hint="Ajak pergi bersama.", sample_answer="Let's go together.", focus="Friendly suggestion", expected_keywords=("let's", "together")),
+    ),
     "small-talk-mission": (
         CoachTurn(coach="Hi! How's it going?", hint="Jawab singkat, lalu tanya balik.", sample_answer="Hi! I'm good, thanks. How about you?", focus="Start the chat", expected_keywords=("i'm good", "thanks", "how about you", "?")),
         CoachTurn(coach="I'm a bit tired today.", hint="Tunjukkan empati dan tanya sebabnya dengan simple past.", sample_answer="I'm sorry to hear that. Did you sleep well?", focus="Ask about the reason", expected_keywords=("i'm sorry to hear that", "did you", "?")),
@@ -711,6 +906,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="We should launch next week, no matter what.", hint="Acknowledge + soften.", sample_answer="I see your point, but I'm not sure I'd go that far.", focus="Soften", expected_keywords=("see your point", "not sure")),
         CoachTurn(coach="Explain your concern respectfully.", hint="With respect... suggests...", sample_answer="With respect, the current error rate suggests we're not ready.", focus="Evidence", expected_keywords=("with respect", "suggests")),
         CoachTurn(coach="Offer an alternative plan.", hint="I might frame it differently...", sample_answer="I might frame it differently: we launch a limited version next week and keep the rest behind a feature flag.", focus="Alternative", expected_keywords=("frame", "limited", "feature flag")),
+    ),
+    "spelling-your-name": (
+        CoachTurn(coach="Hi. What is your name?", hint="Sebutkan namamu dengan pola: My name is ... atau I'm ...", sample_answer="My name is Dimas.", focus="Saying your name clearly", expected_keywords=("my name is", "i'm", "i am", "dimas"), indonesian_explanation="Sebutkan nama dengan satu kalimat pendek dan jelas. Pola 'My name is ...' sudah cukup untuk konteks registrasi."),
+        CoachTurn(coach="How do you spell it?", hint="Eja nama huruf demi huruf, lalu boleh ulangi namanya.", sample_answer="It's spelled D-I-M-A-S.", focus="Spelling your name", expected_keywords=("spelled", "d-i-m-a-s", "dimas"), indonesian_explanation="Saat diminta mengeja, sebutkan huruf satu per satu dengan jeda pendek. Kamu bisa memakai pola 'It's spelled ...'."),
+        CoachTurn(coach="Thank you. Let me read it back: D-I-M-A-S.", hint="Konfirmasi bahwa ejaannya benar.", sample_answer="That's right.", focus="Confirming spelling", expected_keywords=("that's right", "right", "yes"), indonesian_explanation="Untuk mengonfirmasi ejaan, 'That's right' terdengar natural dan sopan."),
     ),
     "starting-small-talk": (
         CoachTurn(coach="Hi! How's your day?", hint="Jawab singkat, lalu tanya balik dengan sopan.", sample_answer="Hi! It's pretty good, thanks. How about you?", focus="Start small talk", expected_keywords=("pretty good", "thanks", "how about you", "?")),
@@ -757,10 +957,20 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="What's another reason?", hint="Gunakan Another reason is...", sample_answer="Another reason is it speeds up releases because we can deploy with more confidence.", focus="Reason 2", expected_keywords=("another reason", "because")),
         CoachTurn(coach="But writing tests takes time.", hint="Acknowledge + but + solusi singkat.", sample_answer="That's true, but we can start small and it saves time later.", focus="Address concern", expected_keywords=("that's true", "but")),
     ),
+    "talking-about-daily-routines": (
+        CoachTurn(coach="What do you do in the morning?", hint="Sebutkan kegiatan dan waktunya.", sample_answer="I wake up at six.", focus="Morning routine", expected_keywords=("wake", "six")),
+        CoachTurn(coach="What do you do after that?", hint="Gunakan after that untuk kegiatan berikutnya.", sample_answer="I study English at seven.", focus="Next routine step", expected_keywords=("study", "english", "seven")),
+        CoachTurn(coach="Do you work in the afternoon?", hint="Jawab ya/tidak lalu beri waktu.", sample_answer="Yes, I work at one.", focus="Afternoon routine", expected_keywords=("work", "one")),
+    ),
     "talking-about-goals": (
         CoachTurn(coach="What's your goal this month?", hint="Jawab dengan: My goal is to ...", sample_answer="My goal is to speak more confidently.", focus="State the goal", expected_keywords=("goal", "to")),
         CoachTurn(coach="By when?", hint="Gunakan by + waktu.", sample_answer="By the end of this month.", focus="State the deadline", expected_keywords=("by", "end")),
         CoachTurn(coach="Why does it matter to you?", hint="Jawab dengan because + reason.", sample_answer="Because I want to join meetings without feeling nervous.", focus="Give a reason", expected_keywords=("because", "meetings")),
+    ),
+    "talking-about-likes": (
+        CoachTurn(coach="Do you like English?", hint="Jawab dengan: Yes, I like it.", sample_answer="Yes, I like it.", focus="Simple preference", expected_keywords=()),
+        CoachTurn(coach="What do you like?", hint="Sebutkan bagian belajar yang kamu suka.", sample_answer="I like speaking practice.", focus="Learning preference", expected_keywords=("speaking", "practice")),
+        CoachTurn(coach="Do you like grammar?", hint="Jawab jujur dengan kalimat pendek.", sample_answer="It's okay, but speaking is my favorite.", focus="Favorite part", expected_keywords=("it's", "but", "speaking", "favorite")),
     ),
     "talking-about-local-habits": (
         CoachTurn(coach="Tell me a local habit in your area.", hint="Mulai dengan People usually...", sample_answer="People usually eat outside in the evening.", focus="Describe habit", expected_keywords=("usually",)),
@@ -787,6 +997,11 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Nice. What did you do next?", hint="Gunakan then atau after that.", sample_answer="Then we walked around and tried street food.", focus="Continue the sequence", expected_keywords=("then",)),
         CoachTurn(coach="And finally?", hint="Tutup dengan finally + reason singkat.", sample_answer="Finally, we went back early because we were tired.", focus="End the sequence", expected_keywords=("finally", "because")),
     ),
+    "telling-the-time": (
+        CoachTurn(coach="What time is the class?", hint="Jawab dengan pola: It's at ...", sample_answer="It's at nine o'clock.", focus="Class time", expected_keywords=("it's", "nine", "o'clock")),
+        CoachTurn(coach="In the morning?", hint="Konfirmasi bagian hari.", sample_answer="Yes, in the morning.", focus="Time of day", expected_keywords=("morning",)),
+        CoachTurn(coach="Thank you.", hint="Balas dengan sopan.", sample_answer="You're welcome.", focus="Polite reply", expected_keywords=("you're", "welcome")),
+    ),
     "transport-mission": (
         CoachTurn(coach="Hi. Where are you going?", hint="Minta tiket dan sebutkan tujuan.", sample_answer="I'd like one ticket to Bandung, please.", focus="Ticket request", expected_keywords=("i'd like", "ticket")),
         CoachTurn(coach="One-way or round-trip?", hint="Pilih satu-way.", sample_answer="One-way, please.", focus="Ticket type", expected_keywords=("one-way",)),
@@ -803,6 +1018,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="The main users are new hires. What's next?", hint="Minta detail pain point.", sample_answer="Thanks. Could you share more about the biggest pain point today?", focus="Ask for pain point", expected_keywords=("share more", "pain point")),
         CoachTurn(coach="They can't find key docs. Summarize and confirm.", hint="So what you need is ... right?", sample_answer="Understood. So what you need is a clear starting point and a simple checklist, right?", focus="Summarize need", expected_keywords=("need", "right")),
     ),
+    "understanding-simple-directions": (
+        CoachTurn(coach="Where is the meeting room?", hint="Tanyakan lokasi meeting room.", sample_answer="Where is the meeting room?", focus="Room question", expected_keywords=("where", "meeting", "room", "?")),
+        CoachTurn(coach="Go straight.", hint="Ulangi arahan pertama.", sample_answer="Okay. Go straight.", focus="Repeating direction", expected_keywords=("straight",)),
+        CoachTurn(coach="Then turn left.", hint="Konfirmasi turn left.", sample_answer="Turn left?", focus="Direction confirmation", expected_keywords=("turn", "left", "?")),
+        CoachTurn(coach="Yes. The room is on the right.", hint="Katakan kamu mengerti.", sample_answer="Thank you. I understand.", focus="Understanding", expected_keywords=("understand",)),
+    ),
     "using-examples": (
         CoachTurn(coach="Why should onboarding be more structured?", hint="Because... + For example...", sample_answer="Because new hires need clarity. For example, last quarter three new joiners felt lost in week one.", focus="Use an example", expected_keywords=("because", "for example")),
         CoachTurn(coach="What's the impact?", hint="Gunakan so untuk dampak.", sample_answer="So they kept asking in multiple channels and it slowed the team down.", focus="Explain impact", expected_keywords=("so", "kept")),
@@ -812,6 +1033,12 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Your explanation is clear so far. What's next?", hint="Use That brings me to...", sample_answer="That brings me to the key trade-off: speed versus reliability.", focus="Transition", expected_keywords=("brings me to", "trade-off")),
         CoachTurn(coach="Highlight the key point.", hint="What's crucial here is...", sample_answer="What's crucial here is that we set clear standards early.", focus="Key point", expected_keywords=("crucial", "standards")),
         CoachTurn(coach="Restate it and propose a next step.", hint="To put it differently... With that in mind...", sample_answer="To put it differently, standards let teams move fast without breaking consistency. With that in mind, I'd propose a pilot with strict guardrails.", focus="Restate + propose", expected_keywords=("differently", "with that in mind", "pilot")),
+    ),
+    "work-study-conversation-mission": (
+        CoachTurn(coach="Do you work or study?", hint="Sebutkan kerja atau studi.", sample_answer="I study English online.", focus="Work or study", expected_keywords=("study", "english", "online")),
+        CoachTurn(coach="What do you like about English?", hint="Sebutkan bagian yang kamu suka.", sample_answer="I like speaking practice.", focus="Preference", expected_keywords=("speaking", "practice")),
+        CoachTurn(coach="What can you do in English?", hint="Sebutkan satu kemampuan.", sample_answer="I can introduce myself.", focus="Ability", expected_keywords=("introduce", "myself")),
+        CoachTurn(coach="Great. Keep practicing.", hint="Balas dengan singkat dan positif.", sample_answer="Thank you. I will.", focus="Closing", expected_keywords=("will",)),
     ),
     "workplace-mission": (
         CoachTurn(coach="Hi. Quick update on the report?", hint="Mulai dengan progress singkat.", sample_answer="I'm making good progress. I'm almost done with the summary.", focus="Give update", expected_keywords=("progress", "almost")),

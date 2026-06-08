@@ -1,17 +1,42 @@
 scenario_key: asking_for_repetition_contact_info
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "My phone number is zero eight one three, two two five five, nine zero one."
-learner_goal: "Ask for repetition, check one detail, and respond when you understand."
+opening_line: My phone number is zero eight one three, two two five five, nine zero one.
+learner_goal: Ask for repetition, check one detail, and respond when you understand.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: My phone number is zero eight one three, two two five five.
+    hint: Minta lawan bicara mengulang.
+    sample_answer: Sorry, can you repeat that, please?
+    focus: Polite repetition
+    expected_keywords:
+      - sorry
+      - repeat
+      - "?"
+  - coach: Sure. Zero eight one three, two two five five.
+    hint: "Cek satu detail dengan: Did you say ...?"
+    sample_answer: Did you say two two five five?
+    focus: Checking a detail
+    expected_keywords:
+      - did
+      - say
+      - two
+      - five
+      - "?"
+  - coach: Yes, that's right.
+    hint: Tunjukkan bahwa kamu sudah paham.
+    sample_answer: Got it. Thank you.
+    focus: Showing understanding
+    expected_keywords:
+      - got
 target_phrases:
-  - "Can you repeat that, please?"
-  - "Did you say"
-  - "Yes, that's right"
-  - "Got it"
+  - Can you repeat that, please?
+  - Did you say
+  - Yes, that's right
+  - Got it
 rubric:
   speaking:
     minimum_score: 60

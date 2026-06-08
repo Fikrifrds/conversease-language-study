@@ -1,17 +1,40 @@
 scenario_key: naming_common_places_nearby
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Where are you going?"
-learner_goal: "Say a destination, ask if a place is near, and suggest going together."
+opening_line: Where are you going?
+learner_goal: Say a destination, ask if a place is near, and suggest going together.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Where are you going?
+    hint: Sebutkan kamu pergi ke cafe.
+    sample_answer: I'm going to the cafe.
+    focus: Destination
+    expected_keywords:
+      - i'm
+      - going
+      - cafe
+  - coach: Is the cafe near here?
+    hint: Jawab dan sebutkan dekat library.
+    sample_answer: Yes. It is near the library.
+    focus: Nearby place
+    expected_keywords:
+      - near
+      - library
+  - coach: I am going to the library.
+    hint: Ajak pergi bersama.
+    sample_answer: Let's go together.
+    focus: Friendly suggestion
+    expected_keywords:
+      - let's
+      - together
 target_phrases:
-  - "I'm going to the cafe."
-  - "Is the cafe near here?"
-  - "near the library"
-  - "Let's go together."
+  - I'm going to the cafe.
+  - Is the cafe near here?
+  - near the library
+  - Let's go together.
 rubric:
   speaking:
     minimum_score: 60

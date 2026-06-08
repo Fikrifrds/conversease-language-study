@@ -7,11 +7,36 @@ max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hi. What would you like?
+    hint: Pesan teh dengan sopan.
+    sample_answer: Can I have a tea, please?
+    focus: Polite order
+    expected_keywords:
+      - have
+      - tea
+      - "?"
+  - coach: Small or large?
+    hint: Pilih ukuran kecil.
+    sample_answer: Small, please.
+    focus: Size choice
+    expected_keywords:
+      - small
+  - coach: Anything else?
+    hint: Katakan tidak ada lagi dengan sopan.
+    sample_answer: No, thank you.
+    focus: Finishing order
+    expected_keywords: []
+  - coach: Here you go.
+    hint: Tutup dengan thank you.
+    sample_answer: Thank you.
+    focus: Thanking
+    expected_keywords: []
 target_phrases:
-- Can I have a tea, please?
-- Small, please.
-- No, thank you.
-- Thank you.
+  - Can I have a tea, please?
+  - Small, please.
+  - No, thank you.
+  - Thank you.
 rubric:
   speaking:
     minimum_score: 60

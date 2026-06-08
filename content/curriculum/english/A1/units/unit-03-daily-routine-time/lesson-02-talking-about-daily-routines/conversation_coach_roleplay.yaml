@@ -1,17 +1,40 @@
 scenario_key: talking_about_morning_routine
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What do you do in the morning?"
-learner_goal: "Say two simple routine steps with times."
+opening_line: What do you do in the morning?
+learner_goal: Say two simple routine steps with times.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What do you do in the morning?
+    hint: Sebutkan kegiatan dan waktunya.
+    sample_answer: I wake up at six.
+    focus: Morning routine
+    expected_keywords:
+      - wake
+      - six
+  - coach: What do you do after that?
+    hint: Gunakan after that untuk kegiatan berikutnya.
+    sample_answer: I study English at seven.
+    focus: Next routine step
+    expected_keywords:
+      - study
+      - english
+      - seven
+  - coach: Do you work in the afternoon?
+    hint: Jawab ya/tidak lalu beri waktu.
+    sample_answer: Yes, I work at one.
+    focus: Afternoon routine
+    expected_keywords:
+      - work
+      - one
 target_phrases:
-  - "I wake up at"
-  - "I study English at"
-  - "after that"
-  - "in the morning"
+  - I wake up at
+  - I study English at
+  - after that
+  - in the morning
 rubric:
   speaking:
     minimum_score: 60

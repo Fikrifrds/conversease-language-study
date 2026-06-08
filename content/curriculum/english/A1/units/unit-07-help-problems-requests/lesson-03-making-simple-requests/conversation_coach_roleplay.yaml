@@ -7,11 +7,38 @@ max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What do you need?
+    hint: Minta link dengan sopan.
+    sample_answer: Can you send me the link, please?
+    focus: Polite request
+    expected_keywords:
+      - send
+      - link
+      - "?"
+  - coach: Yes, of course.
+    hint: Ucapkan terima kasih.
+    sample_answer: Thank you.
+    focus: Thanking
+    expected_keywords: []
+  - coach: Can you wait a minute?
+    hint: Terima request untuk menunggu.
+    sample_answer: Sure. No problem.
+    focus: Accepting request
+    expected_keywords:
+      - sure
+      - problem
+  - coach: Here is the link.
+    hint: Tutup dengan thanks.
+    sample_answer: Great. Thanks.
+    focus: Closing
+    expected_keywords:
+      - great
 target_phrases:
-- Can you send me the link, please?
-- Thank you.
-- Sure. No problem.
-- Great. Thanks.
+  - Can you send me the link, please?
+  - Thank you.
+  - Sure. No problem.
+  - Great. Thanks.
 rubric:
   speaking:
     minimum_score: 60

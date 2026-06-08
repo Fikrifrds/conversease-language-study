@@ -1,17 +1,39 @@
 scenario_key: saying_work_or_study_status
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What do you do?"
-learner_goal: "Say your work or study status and one simple detail."
+opening_line: What do you do?
+learner_goal: Say your work or study status and one simple detail.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What do you do?
+    hint: Jawab dengan status sederhana.
+    sample_answer: I'm a student.
+    focus: Work or study status
+    expected_keywords:
+      - i'm
+      - student
+  - coach: What do you study?
+    hint: Sebutkan subjek yang kamu pelajari.
+    sample_answer: I study design.
+    focus: Study subject
+    expected_keywords:
+      - study
+      - design
+  - coach: Do you study online?
+    hint: Jawab dengan yes/no lengkap.
+    sample_answer: Yes, I study online.
+    focus: Study format
+    expected_keywords:
+      - study
+      - online
 target_phrases:
-  - "What do you do?"
-  - "I'm a student"
-  - "I study"
-  - "online"
+  - What do you do?
+  - I'm a student
+  - I study
+  - online
 rubric:
   speaking:
     minimum_score: 60

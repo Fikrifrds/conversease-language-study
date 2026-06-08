@@ -1,18 +1,47 @@
 scenario_key: routine_and_schedule_unit_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "What time do you wake up?"
-learner_goal: "Talk about your routine and study schedule in one short conversation."
+opening_line: What time do you wake up?
+learner_goal: Talk about your routine and study schedule in one short conversation.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What time do you wake up?
+    hint: Sebutkan jam bangun.
+    sample_answer: I wake up at six.
+    focus: Wake-up time
+    expected_keywords:
+      - wake
+      - six
+  - coach: When do you study English?
+    hint: Sebutkan hari dan jam.
+    sample_answer: I study on Monday and Wednesday at seven.
+    focus: Study schedule
+    expected_keywords:
+      - study
+      - monday
+      - wednesday
+      - seven
+  - coach: Is the class online?
+    hint: Jawab dengan yes/no lengkap.
+    sample_answer: Yes, it is online.
+    focus: Class format
+    expected_keywords:
+      - online
+  - coach: Great. See you on Monday.
+    hint: Tutup percakapan.
+    sample_answer: See you.
+    focus: Closing
+    expected_keywords:
+      - see
 target_phrases:
-  - "I wake up at"
-  - "When do you study English?"
-  - "on Monday"
-  - "at seven"
-  - "online"
+  - I wake up at
+  - When do you study English?
+  - on Monday
+  - at seven
+  - online
 rubric:
   speaking:
     minimum_score: 60

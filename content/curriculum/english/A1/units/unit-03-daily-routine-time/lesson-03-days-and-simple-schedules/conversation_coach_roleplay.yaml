@@ -1,17 +1,39 @@
 scenario_key: checking_class_days
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "When is the English class?"
-learner_goal: "Ask about class days and answer with days and time."
+opening_line: When is the English class?
+learner_goal: Ask about class days and answer with days and time.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: When is the English class?
+    hint: "Jawab dengan hari: on Monday and Wednesday."
+    sample_answer: It's on Monday and Wednesday.
+    focus: Class days
+    expected_keywords:
+      - it's
+      - monday
+      - wednesday
+  - coach: What time?
+    hint: Jawab dengan at + time.
+    sample_answer: At seven in the evening.
+    focus: Class time
+    expected_keywords:
+      - seven
+      - evening
+  - coach: Great. See you on Monday.
+    hint: Tutup dengan singkat.
+    sample_answer: See you.
+    focus: Schedule closing
+    expected_keywords:
+      - see
 target_phrases:
-  - "When is"
-  - "on Monday"
-  - "on Wednesday"
-  - "at seven"
+  - When is
+  - on Monday
+  - on Wednesday
+  - at seven
 rubric:
   speaking:
     minimum_score: 60

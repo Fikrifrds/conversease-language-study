@@ -2,17 +2,46 @@ scenario_key: saying_you_do_not_understand
 mode: lesson_practice_coach
 level_code: A1
 opening_line: Please open your book.
-learner_goal: Say you do not understand, ask for repetition, confirm the instruction,
-  and thank the speaker.
+learner_goal: Say you do not understand, ask for repetition, confirm the instruction, and thank the speaker.
 max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Please open your book.
+    hint: Katakan kamu tidak mengerti.
+    sample_answer: Sorry, I don't understand.
+    focus: Saying confusion
+    expected_keywords:
+      - sorry
+      - don't
+      - understand
+  - coach: That's okay. I can say it again.
+    hint: Minta diulangi dengan sopan.
+    sample_answer: Can you repeat that, please?
+    focus: Asking repetition
+    expected_keywords:
+      - repeat
+      - "?"
+  - coach: Yes. Open your book.
+    hint: Konfirmasi instruksi.
+    sample_answer: Open my book?
+    focus: Confirmation
+    expected_keywords:
+      - open
+      - book
+      - "?"
+  - coach: Yes, that's right.
+    hint: Katakan sudah paham.
+    sample_answer: Thank you. I understand now.
+    focus: Closing
+    expected_keywords:
+      - understand
 target_phrases:
-- Sorry, I don't understand.
-- Can you repeat that, please?
-- Open my book?
-- I understand now.
+  - Sorry, I don't understand.
+  - Can you repeat that, please?
+  - Open my book?
+  - I understand now.
 rubric:
   speaking:
     minimum_score: 60

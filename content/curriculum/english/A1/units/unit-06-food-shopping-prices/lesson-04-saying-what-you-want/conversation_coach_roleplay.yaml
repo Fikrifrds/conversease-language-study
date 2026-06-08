@@ -7,10 +7,30 @@ max_turns: 7
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: What do you want?
+    hint: Sebutkan kamu mau sandwich.
+    sample_answer: I want a sandwich.
+    focus: Want statement
+    expected_keywords:
+      - want
+      - sandwich
+  - coach: Do you want tea or coffee?
+    hint: Pilih tea dengan sopan.
+    sample_answer: Tea, please.
+    focus: Choosing option
+    expected_keywords:
+      - tea
+  - coach: Do you want sugar?
+    hint: Katakan tanpa gula.
+    sample_answer: No sugar, please.
+    focus: No extra item
+    expected_keywords:
+      - sugar
 target_phrases:
-- I want a sandwich.
-- Tea, please.
-- No sugar, please.
+  - I want a sandwich.
+  - Tea, please.
+  - No sugar, please.
 rubric:
   speaking:
     minimum_score: 60

@@ -1,17 +1,39 @@
 scenario_key: talking_about_learning_preferences
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Do you like English?"
-learner_goal: "Say what you like and ask one preference question."
+opening_line: Do you like English?
+learner_goal: Say what you like and ask one preference question.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Do you like English?
+    hint: "Jawab dengan: Yes, I like it."
+    sample_answer: Yes, I like it.
+    focus: Simple preference
+    expected_keywords: []
+  - coach: What do you like?
+    hint: Sebutkan bagian belajar yang kamu suka.
+    sample_answer: I like speaking practice.
+    focus: Learning preference
+    expected_keywords:
+      - speaking
+      - practice
+  - coach: Do you like grammar?
+    hint: Jawab jujur dengan kalimat pendek.
+    sample_answer: It's okay, but speaking is my favorite.
+    focus: Favorite part
+    expected_keywords:
+      - it's
+      - but
+      - speaking
+      - favorite
 target_phrases:
-  - "Do you like"
-  - "I like it"
-  - "I like speaking practice"
-  - "my favorite"
+  - Do you like
+  - I like it
+  - I like speaking practice
+  - my favorite
 rubric:
   speaking:
     minimum_score: 60

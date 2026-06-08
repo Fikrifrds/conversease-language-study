@@ -7,10 +7,43 @@ max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+- coach: Where are you from?
+  hint: 'Jawab dengan pola: I''m from ...'
+  sample_answer: I'm from Indonesia.
+  focus: Origin
+  expected_keywords:
+  - from
+  - indonesia
+  - jakarta
+  - bandung
+  - surabaya
+  indonesian_explanation: Untuk asal negara atau kota, gunakan pola 'I'm from ...' dengan singkat dan
+    jelas.
+- coach: Where do you live now?
+  hint: 'Gunakan pola: I live in ...'
+  sample_answer: I live in Jakarta.
+  focus: Current city
+  expected_keywords:
+  - live in
+  - jakarta
+  - bandung
+  - surabaya
+  indonesian_explanation: 'Bedakan origin dan tempat tinggal sekarang: ''I''m from ...'' dan ''I live
+    in ...''.'
+- coach: Nice. Ask me the same question.
+  hint: 'Tanyakan balik dengan: How about you?'
+  sample_answer: How about you?
+  focus: Question back
+  expected_keywords:
+  - how about you
+  - where are you from
+  - '?'
+  indonesian_explanation: Pertanyaan balik seperti 'How about you?' menjaga percakapan tetap berjalan.
 target_phrases:
-  - I'm from
-  - I live in
-  - How about you?
+- I'm from
+- I live in
+- How about you?
 rubric:
   speaking:
     minimum_score: 60

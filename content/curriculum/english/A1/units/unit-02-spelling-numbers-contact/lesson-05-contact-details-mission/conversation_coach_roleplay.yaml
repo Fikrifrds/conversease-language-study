@@ -1,18 +1,57 @@
 scenario_key: contact_details_unit_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: "Hi. I need your contact details."
-learner_goal: "Share your name, spelling, phone number, and email address, then confirm everything."
+opening_line: Hi. I need your contact details.
+learner_goal: Share your name, spelling, phone number, and email address, then confirm everything.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+  - coach: Hi. I need your contact details.
+    hint: Mulai dengan nama lengkapmu.
+    sample_answer: Sure. My name is Dimas.
+    focus: Sharing a name
+    expected_keywords:
+      - sure
+      - name
+      - dimas
+  - coach: How do you spell your name?
+    hint: Eja nama huruf demi huruf.
+    sample_answer: D-I-M-A-S.
+    focus: Spelling a name
+    expected_keywords: []
+  - coach: What is your phone number?
+    hint: Sebutkan nomor telepon dalam kelompok kecil.
+    sample_answer: It's zero eight one two, three four five six.
+    focus: Sharing a phone number
+    expected_keywords:
+      - it's
+      - zero
+      - eight
+      - one
+  - coach: And your email address?
+    hint: Sebutkan email dengan at dan dot.
+    sample_answer: It's dimas at example dot com.
+    focus: Sharing an email
+    expected_keywords:
+      - it's
+      - dimas
+      - example
+      - dot
+  - coach: Is everything correct?
+    hint: Konfirmasi semua informasi benar.
+    sample_answer: Yes, everything is correct.
+    focus: Confirming all details
+    expected_keywords:
+      - everything
+      - correct
 target_phrases:
-  - "My name is"
-  - "It's spelled"
-  - "My phone number is"
-  - "My email address is"
-  - "Everything is correct"
+  - My name is
+  - It's spelled
+  - My phone number is
+  - My email address is
+  - Everything is correct
 rubric:
   speaking:
     minimum_score: 60

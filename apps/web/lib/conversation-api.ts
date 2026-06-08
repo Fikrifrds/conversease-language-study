@@ -113,8 +113,19 @@ export async function createConversationSession(
   config?: { levelCode?: string; scenarioKey?: string; mode?: string }
 ): Promise<{ sessionId: string; firstCoachMessage: string }> {
   const levelCode = config?.levelCode ?? "A1";
-  const scenarioKey = config?.scenarioKey ?? "greeting_intro";
   const mode = config?.mode ?? "lesson_practice_coach";
+  // The lesson_slug (always sent below) is what the backend uses to pick the
+  // roleplay turns and feedback context, so it must stay accurate. If a lesson
+  // has no scenario mapping we surface it loudly instead of silently sending an
+  // unrelated default ("greeting_intro"), which previously produced feedback for
+  // the wrong scenario. We still send a placeholder so the request is valid.
+  if (!config?.scenarioKey) {
+    console.warn(
+      `createConversationSession: no scenarioKey for lesson "${lessonSlug}"; ` +
+        "falling back to greeting_intro. Add a coach scenario for this lesson."
+    );
+  }
+  const scenarioKey = config?.scenarioKey ?? "greeting_intro";
   const response = await requestJson<
     ApiResponse<{
       id: string;

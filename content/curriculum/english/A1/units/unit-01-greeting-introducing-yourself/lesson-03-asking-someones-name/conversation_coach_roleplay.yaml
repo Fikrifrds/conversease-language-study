@@ -7,11 +7,41 @@ max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
+turns:
+- coach: Hi. I am new here.
+  hint: 'Tanyakan nama dengan: What''s your name?'
+  sample_answer: Hi. What's your name?
+  focus: Asking a name
+  expected_keywords:
+  - what's your name
+  - what is your name
+  - may i know your name
+  - '?'
+  indonesian_explanation: Tanyakan nama dengan pertanyaan sederhana. 'What's your name?' cukup untuk konteks
+    santai.
+- coach: My name is Mina.
+  hint: Ulangi nama orang itu dalam responsmu.
+  sample_answer: Nice to meet you, Mina.
+  focus: Using the name
+  expected_keywords:
+  - nice to meet you
+  - mina
+  indonesian_explanation: Mengulang nama lawan bicara membuat responsmu terdengar lebih perhatian.
+- coach: Nice to meet you too.
+  hint: Tutup dengan respons singkat yang natural.
+  sample_answer: See you later.
+  focus: Closing
+  expected_keywords:
+  - see you
+  - later
+  - bye
+  indonesian_explanation: Gunakan closing sederhana seperti 'See you later' agar percakapan selesai dengan
+    sopan.
 target_phrases:
-  - What's your name?
-  - May I know your name?
-  - Is it
-  - Nice to meet you
+- What's your name?
+- May I know your name?
+- Is it
+- Nice to meet you
 rubric:
   speaking:
     minimum_score: 60

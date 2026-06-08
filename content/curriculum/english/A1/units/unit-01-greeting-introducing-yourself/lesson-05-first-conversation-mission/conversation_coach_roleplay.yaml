@@ -7,12 +7,43 @@ max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
+turns:
+- coach: Hi, good morning. My name is Sara.
+  hint: Sapa balik dan sebutkan namamu.
+  sample_answer: Good morning. My name is Arif.
+  focus: Greeting and name
+  expected_keywords:
+  - good morning
+  - my name is
+  - i'm
+  - i am
+  indonesian_explanation: Gabungkan greeting dan nama dalam dua kalimat pendek agar pembuka percakapan
+    terasa jelas.
+- coach: Nice to meet you. Where are you from?
+  hint: Jawab asalmu lalu tanyakan balik.
+  sample_answer: I'm from Indonesia. How about you?
+  focus: Origin and follow-up
+  expected_keywords:
+  - from
+  - indonesia
+  - how about you
+  - '?'
+  indonesian_explanation: Setelah menjawab asal, tanyakan balik supaya percakapan tidak berhenti.
+- coach: I'm from Malaysia. Nice to meet you.
+  hint: Balas dan tutup percakapan.
+  sample_answer: Nice to meet you too. See you later.
+  focus: Closing mission
+  expected_keywords:
+  - nice to meet you too
+  - see you
+  - later
+  indonesian_explanation: Tutup misi dengan respons sopan dan closing singkat seperti 'See you later'.
 target_phrases:
-  - Good morning
-  - My name is
-  - I'm from
-  - How about you?
-  - See you later
+- Good morning
+- My name is
+- I'm from
+- How about you?
+- See you later
 rubric:
   speaking:
     minimum_score: 65
