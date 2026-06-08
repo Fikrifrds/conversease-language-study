@@ -115,7 +115,7 @@ export function UserAccountMenu() {
         href="/login"
         className="focus-ring inline-flex h-10 items-center justify-center rounded-lg border border-ink/15 px-3 text-sm font-semibold hover:bg-mint"
       >
-        Login
+        Masuk
       </Link>
     );
   }
@@ -188,9 +188,9 @@ export function UserAccountMenu() {
               </div>
             </div>
 
-            <nav className="py-1" aria-label="Account">
+            <nav className="py-1" aria-label="Akun">
               <MenuLink href={productRoutes.billing} icon={CreditCard} onClick={() => setOpen(false)}>
-                Billing & Paket
+                Tagihan & Paket
               </MenuLink>
               <MenuLink href={productRoutes.levelTestA1} icon={Award} onClick={() => setOpen(false)}>
                 A1 Test

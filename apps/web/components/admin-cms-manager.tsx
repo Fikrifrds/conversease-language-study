@@ -343,7 +343,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin CMS</p>
-              <h1 className="mt-1 text-2xl font-semibold">Content Control</h1>
+              <h1 className="mt-1 text-2xl font-semibold">Kontrol Konten</h1>
               <p className="mt-2 max-w-2xl text-sm leading-6 text-ink/60">
                 Review, edit, dan validasi kurikulum serta email template sebelum rilis.
               </p>
@@ -367,7 +367,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
               className="focus-ring mt-auto inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
             >
               <RefreshCcw className="h-4 w-4" aria-hidden="true" />
-              {isLoading ? "Loading" : "Refresh"}
+              {isLoading ? "Memuat" : "Muat Ulang"}
             </button>
           </div>
         </div>
@@ -381,7 +381,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             validationOk ? (
               <div className="flex items-center gap-2 rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
                 <ShieldCheck className="h-4 w-4 text-leaf" aria-hidden="true" />
-                Curriculum validation passed.
+                Validasi kurikulum lolos.
               </div>
             ) : (
               <div className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">

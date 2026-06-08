@@ -89,8 +89,8 @@ export function DashboardReviewToday() {
     <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold uppercase text-leaf">Review Today</p>
-          <h2 className="mt-2 text-lg font-semibold">Ulangi pattern dan phrase penting</h2>
+          <p className="text-sm font-semibold uppercase text-leaf">Review Hari Ini</p>
+          <h2 className="mt-2 text-lg font-semibold">Ulangi pola dan frasa penting</h2>
         </div>
         <Sparkles className="h-5 w-5 text-coral" aria-hidden="true" />
       </div>
@@ -98,7 +98,7 @@ export function DashboardReviewToday() {
       {lessons === null ? (
         <p className="mt-4 text-sm leading-6 text-ink/60">Review harian sedang disiapkan.</p>
       ) : empty ? (
-        <p className="mt-4 text-sm leading-6 text-ink/60">Belum ada lesson untuk direview. Mulai 1 lesson dulu.</p>
+        <p className="mt-4 text-sm leading-6 text-ink/60">Belum ada lesson untuk ditinjau. Mulai 1 lesson dulu.</p>
       ) : (
         <div className="mt-4 space-y-3">
           {items.map((item) => (
@@ -106,11 +106,11 @@ export function DashboardReviewToday() {
               <p className="text-xs font-semibold uppercase text-ink/50">{item.unitTitle}</p>
               <p className="mt-1 font-semibold">{item.lessonTitle}</p>
               <p className="mt-3 text-sm text-ink/70">
-                <span className="font-semibold text-ink">Phrase:</span> {item.phrase}
+                <span className="font-semibold text-ink">Frasa:</span> {item.phrase}
               </p>
               {item.pattern ? (
                 <p className="mt-2 text-sm text-ink/70">
-                  <span className="font-semibold text-ink">Pattern:</span> {item.pattern}
+                  <span className="font-semibold text-ink">Pola:</span> {item.pattern}
                 </p>
               ) : null}
             </div>

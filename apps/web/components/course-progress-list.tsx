@@ -89,7 +89,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="text-xs font-semibold uppercase text-leaf">
-                          {completed ? "completed" : inProgress ? "in progress" : lesson.status}
+                          {completed ? "selesai" : inProgress ? "sedang berjalan" : lesson.status}
                         </span>
                         {completed ? (
                           <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
@@ -100,7 +100,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                         )}
                       </div>
                       <h3 className="mt-3 font-semibold">{lesson.title}</h3>
-                      <p className="mt-2 text-sm text-ink/60">{lesson.minutes} minutes</p>
+                      <p className="mt-2 text-sm text-ink/60">{lesson.minutes} menit</p>
                     </Link>
                   );
                 })}

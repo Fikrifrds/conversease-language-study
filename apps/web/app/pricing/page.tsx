@@ -8,7 +8,7 @@ export default function PricingPage() {
     <AppShell>
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase text-leaf">Pricing</p>
+          <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih akses belajar Conversease</h1>
           <p className="mt-3 leading-7 text-ink/70">
             Nilai utama Pro adalah akses kurikulum aktif, feedback detail, evaluasi level, dan
@@ -48,7 +48,7 @@ export default function PricingPage() {
                 className="focus-ring mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf"
               >
                 <CreditCard className="h-4 w-4" aria-hidden="true" />
-                Choose Plan
+                Pilih Paket
               </Link>
             </section>
           ))}

@@ -19,7 +19,7 @@ export function ForgotPasswordForm() {
 
     try {
       await forgotPassword(email);
-      setMessage("Jika email terdaftar, link reset password akan dikirim.");
+      setMessage("Jika email terdaftar, tautan reset password akan dikirim.");
     } catch {
       setError("Permintaan reset belum bisa diproses. Coba lagi sebentar.");
     } finally {
@@ -48,12 +48,12 @@ export function ForgotPasswordForm() {
         className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
       >
         <Mail className="h-4 w-4" aria-hidden="true" />
-        {isSubmitting ? "Mengirim" : "Kirim Link Reset"}
+        {isSubmitting ? "Mengirim…" : "Kirim Tautan Reset"}
       </button>
       <p className="pt-2 text-sm text-ink/60">
         Sudah ingat password?{" "}
         <Link className="font-semibold text-leaf" href="/login">
-          Login
+          Masuk
         </Link>
       </p>
     </form>

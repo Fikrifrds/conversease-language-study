@@ -103,10 +103,10 @@ export function ReviewWorkspace() {
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex items-center gap-2">
           <Sparkles className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="text-lg font-semibold">Review Tasks</h2>
+          <h2 className="text-lg font-semibold">Tugas Review</h2>
         </div>
         <p className="mt-2 text-sm leading-6 text-ink/60">
-          Ucapkan phrase-nya, lalu buat 1–2 kalimat baru memakai pattern yang sama.
+          Ucapkan frasanya, lalu buat 1–2 kalimat baru memakai pola yang sama.
         </p>
 
         {items.length ? (
@@ -128,12 +128,12 @@ export function ReviewWorkspace() {
 
                 <div className="mt-4 space-y-2 text-sm leading-6 text-ink/70">
                   <p>
-                    <span className="font-semibold text-ink">Say:</span> {item.phrase}
+                    <span className="font-semibold text-ink">Ucapkan:</span> {item.phrase}
                   </p>
                   {item.pattern ? (
                     <>
                       <p>
-                        <span className="font-semibold text-ink">Pattern:</span> {item.pattern}
+                        <span className="font-semibold text-ink">Pola:</span> {item.pattern}
                       </p>
                       <PatternDrill pattern={item.pattern} seedKey={`${todayKey}:${item.lessonSlug}`} />
                     </>
@@ -146,7 +146,7 @@ export function ReviewWorkspace() {
             ))}
           </div>
         ) : (
-          <p className="mt-4 text-sm leading-6 text-ink/60">Belum ada lesson untuk direview. Mulai 1 lesson dulu.</p>
+          <p className="mt-4 text-sm leading-6 text-ink/60">Belum ada lesson untuk ditinjau. Mulai 1 lesson dulu.</p>
         )}
       </section>
       </div>

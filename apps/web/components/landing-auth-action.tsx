@@ -21,7 +21,7 @@ export function LandingAuthAction() {
 
   return (
     <Link href={session ? "/dashboard" : "/login"} className={buttonClassName}>
-      {session ? "Dashboard" : "Login"}
+      {session ? "Dashboard" : "Masuk"}
     </Link>
   );
 }

@@ -38,7 +38,7 @@ export function LearningProgressReport() {
     <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
       <div className="flex items-center gap-2">
         <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
-        <h2 className="text-xl font-semibold">Learning Progress</h2>
+        <h2 className="text-xl font-semibold">Progress Belajar</h2>
       </div>
       <div className="mt-6">
         <div className="mb-2 flex items-center justify-between text-sm">
@@ -63,7 +63,7 @@ export function LearningProgressReport() {
                 <p className="text-xs font-semibold uppercase text-coral">{lesson.unitTitle}</p>
                 <h3 className="mt-1 font-semibold">{lesson.title}</h3>
                 <p className="mt-1 text-sm text-ink/60">
-                  {completed ? "Completed" : lesson.progressStatus === "in_progress" ? "In progress" : "Not started"}
+                  {completed ? "Selesai" : lesson.progressStatus === "in_progress" ? "Sedang berjalan" : "Belum mulai"}
                 </p>
               </div>
               {completed ? (

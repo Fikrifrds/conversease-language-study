@@ -28,7 +28,7 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
       <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <BrandMark href={productRoutes.home} size="sm" />
-          <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-1 md:flex" aria-label="Navigasi utama">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -47,7 +47,7 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
       </header>
       {requireAuth ? <EmailVerificationNotice /> : null}
       <main>{children}</main>
-      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper md:hidden" aria-label="Mobile">
+      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper md:hidden" aria-label="Navigasi mobile">
         <div className="grid grid-cols-5">
           {navItems.map((item) => (
             <Link

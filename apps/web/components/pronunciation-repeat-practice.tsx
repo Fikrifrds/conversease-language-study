@@ -148,7 +148,7 @@ function RepeatItem({ phrase, enableExample }: { phrase: string; enableExample: 
           }`}
         >
           {isRecording ? <Square className="h-4 w-4" aria-hidden="true" /> : <Mic className="h-4 w-4" aria-hidden="true" />}
-          {isProcessing ? "Menyimpan" : isRecording ? "Stop" : "Rekam"}
+          {isProcessing ? "Menyimpan" : isRecording ? "Berhenti" : "Rekam"}
         </button>
 
         {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}

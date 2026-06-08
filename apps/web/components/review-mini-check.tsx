@@ -105,7 +105,7 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
         className="focus-ring flex w-full items-center justify-between gap-3 text-left"
       >
         <div>
-          <p className="text-sm font-semibold uppercase text-leaf">Mini Check</p>
+          <p className="text-sm font-semibold uppercase text-leaf">Cek Singkat</p>
           <h2 className="mt-2 text-lg font-semibold">3 tugas ringan untuk {unitTitle}</h2>
           <p className="mt-2 text-sm leading-6 text-ink/60">Santai saja. Tidak ada nilai, tujuannya biar skill-nya “nempel”.</p>
         </div>
@@ -117,7 +117,7 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
           <div className="rounded-lg bg-paper p-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-coral" aria-hidden="true" />
-              <p className="font-semibold">1) Understand</p>
+              <p className="font-semibold">1) Pahami</p>
             </div>
             {meaningCard ? (
               <>
@@ -136,18 +136,18 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
                 )}
               </>
             ) : (
-              <p className="mt-3 text-sm text-ink/60">Mulai satu lesson dulu untuk mengaktifkan mini check.</p>
+              <p className="mt-3 text-sm text-ink/60">Mulai satu lesson dulu untuk mengaktifkan cek singkat.</p>
             )}
           </div>
 
           <div className="rounded-lg bg-paper p-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-coral" aria-hidden="true" />
-              <p className="font-semibold">2) Speak</p>
+              <p className="font-semibold">2) Bicara</p>
             </div>
             <p className="mt-3 text-sm leading-6 text-ink/70">
               Rekam 1 jawaban singkat. Ucapkan pelan dan jelas.
-              {focusItem?.pattern ? ` Gunakan pattern: ${focusItem.pattern}` : ""}
+              {focusItem?.pattern ? ` Gunakan pola: ${focusItem.pattern}` : ""}
             </p>
 
             <div className="mt-4 flex flex-wrap items-center gap-2">
@@ -160,7 +160,7 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
                 }`}
               >
                 {isRecording ? <Square className="h-4 w-4" aria-hidden="true" /> : <Mic className="h-4 w-4" aria-hidden="true" />}
-                {isProcessing ? "Menyimpan" : isRecording ? "Stop" : "Rekam"}
+                {isProcessing ? "Menyimpan…" : isRecording ? "Berhenti" : "Rekam"}
               </button>
 
               {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
@@ -183,11 +183,11 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
           <div className="rounded-lg bg-paper p-4">
             <div className="flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-coral" aria-hidden="true" />
-              <p className="font-semibold">3) Write</p>
+              <p className="font-semibold">3) Tulis</p>
             </div>
             <p className="mt-3 text-sm leading-6 text-ink/70">
               Tulis 2 kalimat singkat. Tidak perlu sempurna.
-              {focusItem?.pattern ? ` Pakai pattern: ${focusItem.pattern}` : ""}
+              {focusItem?.pattern ? ` Pakai pola: ${focusItem.pattern}` : ""}
             </p>
             <textarea
               value={writing}

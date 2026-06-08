@@ -7,11 +7,11 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { getOnboardingProfile, saveOnboardingProfile } from "@/lib/learning-api";
 
 const goalOptions = [
-  "Daily conversation",
-  "Job interview",
-  "Work or meeting",
+  "Percakapan sehari-hari",
+  "Wawancara kerja",
+  "Kerja atau rapat",
   "Pronunciation",
-  "Start from zero"
+  "Mulai dari nol"
 ];
 
 const confidenceOptions = [
@@ -21,9 +21,9 @@ const confidenceOptions = [
 ];
 
 const targetOptions = [
-  { label: "10 minutes/day", minutes: 10 },
-  { label: "15 minutes/day", minutes: 15 },
-  { label: "30 minutes/day", minutes: 30 }
+  { label: "10 menit/hari", minutes: 10 },
+  { label: "15 menit/hari", minutes: 15 },
+  { label: "30 menit/hari", minutes: 30 }
 ];
 
 export function OnboardingForm() {
@@ -85,19 +85,19 @@ export function OnboardingForm() {
   return (
     <div className="mt-8 space-y-5">
       <OptionGroup
-        title="Primary goal"
+        title="Tujuan utama"
         options={goalOptions.map((label) => ({ label, value: label }))}
         value={primaryGoal}
         onChange={setPrimaryGoal}
       />
       <OptionGroup
-        title="Current confidence"
+        title="Tingkat percaya diri saat ini"
         options={confidenceOptions.map((label) => ({ label, value: label }))}
         value={confidenceLevel}
         onChange={setConfidenceLevel}
       />
       <OptionGroup
-        title="Daily practice target"
+        title="Target latihan harian"
         options={targetOptions.map((option) => ({
           label: option.label,
           value: String(option.minutes)
@@ -109,10 +109,10 @@ export function OnboardingForm() {
       {error ? <p className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
 
       <section className="rounded-lg bg-ink p-5 text-white">
-        <p className="text-sm text-white/70">Recommended Path</p>
+        <p className="text-sm text-white/70">Jalur Rekomendasi</p>
         <h2 className="mt-2 text-2xl font-semibold">A1 - Start Simple Conversations</h2>
         <p className="mt-2 text-white/75">
-          Today&apos;s Mission: Greeting & Introducing Yourself
+          Misi Hari Ini: Greeting &amp; Introducing Yourself
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <button
@@ -121,14 +121,14 @@ export function OnboardingForm() {
             disabled={isLoading || isSaving}
             className="focus-ring inline-flex items-center gap-2 rounded-lg bg-white px-4 py-3 text-sm font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {isSaving ? "Saving" : "Continue"}
+            {isSaving ? "Menyimpan…" : "Lanjut"}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </button>
           <Link
             href="/dashboard"
             className="focus-ring inline-flex items-center gap-2 rounded-lg border border-white/20 px-4 py-3 text-sm font-semibold text-white hover:bg-white/10"
           >
-            Skip for now
+            Lewati dulu
           </Link>
         </div>
       </section>

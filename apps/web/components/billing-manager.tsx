@@ -82,13 +82,13 @@ function statusLabel(status: string) {
     return "Menunggu approval admin";
   }
   if (status === "success") {
-    return "Approved";
+    return "Disetujui";
   }
   if (status === "failed") {
     return "Ditolak";
   }
   if (status === "expired") {
-    return "Expired";
+    return "Kedaluwarsa";
   }
   return status;
 }
@@ -246,8 +246,8 @@ export function BillingManager() {
         <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
             <div>
-              <p className="text-sm font-semibold uppercase text-leaf">Current Access</p>
-              <h1 className="mt-2 text-3xl font-semibold">{access?.planName ?? "Loading"}</h1>
+              <p className="text-sm font-semibold uppercase text-leaf">Akses Saat Ini</p>
+              <h1 className="mt-2 text-3xl font-semibold">{access?.planName ?? "Memuat"}</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
                 {access?.isPro
                   ? `Akses Pro aktif sampai ${formatDate(access.expiresAt)}.`
@@ -255,13 +255,13 @@ export function BillingManager() {
               </p>
             </div>
             <div className="rounded-lg bg-mint p-4 text-sm">
-              <p className="font-semibold">Conversation Coach quota</p>
+              <p className="font-semibold">Kuota Conversation Coach</p>
               <p className="mt-2 text-3xl font-semibold">{access?.minutes.totalMinutes ?? "-"}</p>
               <p className="mt-1 text-ink/60">menit tersedia</p>
             </div>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
-            <Metric label="Subscription" value={access?.minutes.subscriptionMinutes ?? 0} />
+            <Metric label="Langganan" value={access?.minutes.subscriptionMinutes ?? 0} />
             <Metric label="Top-up" value={access?.minutes.topupMinutes ?? 0} />
             <Metric label="Status" value={access?.status ?? "-"} />
           </div>
@@ -287,7 +287,7 @@ export function BillingManager() {
         ) : null}
 
         <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <p className="text-sm font-semibold uppercase text-leaf">Subscription</p>
+          <p className="text-sm font-semibold uppercase text-leaf">Langganan</p>
           <h2 className="mt-2 text-2xl font-semibold">Pilih akses belajar</h2>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
             {plans.filter((plan) => plan.key !== "free").map((plan) => (
@@ -310,9 +310,9 @@ export function BillingManager() {
                 <p className="mt-4 text-2xl font-semibold">{plan.price}</p>
                 <p className="mt-3 text-xs font-semibold uppercase text-coral">
                   {access?.planKey === plan.key
-                    ? "Active"
+                    ? "Aktif"
                     : activePackage === plan.key
-                      ? "Menyiapkan"
+                      ? "Menyiapkan…"
                       : "Buat Instruksi Transfer"}
                 </p>
               </button>
@@ -338,7 +338,7 @@ export function BillingManager() {
                 <p className="mt-2 text-sm text-ink/60">{topup.minutes} menit latihan tambahan</p>
                 <p className="mt-4 text-2xl font-semibold text-coral">{topup.price}</p>
                 <p className="mt-3 text-xs font-semibold uppercase text-leaf">
-                  {activePackage === topup.key ? "Menyiapkan" : "Buat Instruksi Transfer"}
+                  {activePackage === topup.key ? "Menyiapkan…" : "Buat Instruksi Transfer"}
                 </p>
               </button>
             ))}
@@ -349,7 +349,7 @@ export function BillingManager() {
       <aside className="space-y-4">
         <section className="rounded-lg bg-ink p-5 text-white">
           <WalletCards className="h-6 w-6 text-sun" aria-hidden="true" />
-          <h2 className="mt-4 text-xl font-semibold">Manual transfer</h2>
+          <h2 className="mt-4 text-xl font-semibold">Transfer manual</h2>
           <div className="mt-4 space-y-3 text-sm text-white/75">
             <p>Bank Jago</p>
             <p>Nominal unik 3 digit</p>
@@ -358,14 +358,14 @@ export function BillingManager() {
         </section>
         <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <RefreshCcw className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="mt-4 font-semibold">Ledger-based access</h2>
+          <h2 className="mt-4 font-semibold">Akses berbasis ledger</h2>
           <p className="mt-2 text-sm leading-6 text-ink/60">
             Subscription, top-up, dan pemakaian Conversation Coach dicatat sebagai ledger agar mudah diaudit.
           </p>
         </section>
         <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <MailCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="mt-4 font-semibold">Admin notification</h2>
+          <h2 className="mt-4 font-semibold">Notifikasi admin</h2>
           <p className="mt-2 text-sm leading-6 text-ink/60">
             Konfirmasi transfer mengirim email ke admin supaya approval bisa diproses dari order yang tepat.
           </p>
@@ -512,7 +512,7 @@ function TransferInstruction({
             className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60 md:col-span-2"
           >
             <ReceiptText className="h-4 w-4" aria-hidden="true" />
-            {isSubmitting ? "Mengirim konfirmasi" : "Saya Sudah Transfer"}
+            {isSubmitting ? "Mengirim konfirmasi…" : "Saya Sudah Transfer"}
           </button>
         </div>
       ) : (

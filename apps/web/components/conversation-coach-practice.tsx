@@ -1466,7 +1466,7 @@ export function ConversationCoachPractice({
               ) : (
                 <Mic className="h-4 w-4" aria-hidden="true" />
               )}
-              {isProcessingRecording ? "Memproses" : isRecording ? "Stop" : "Rekam"}
+              {isProcessingRecording ? "Memproses" : isRecording ? "Berhenti" : "Rekam"}
             </button>
             {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             <button

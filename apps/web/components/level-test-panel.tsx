@@ -185,9 +185,9 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
           </div>
 
           <div className="mt-5 grid gap-3 sm:grid-cols-3">
-            <Metric label="Overall threshold" value={`${test.overallThreshold}`} />
-            <Metric label="Lesson completion" value={`${test.lessonCompletionRequiredPercent}%`} />
-            <Metric label="Section weight" value={`${totalWeight}%`} />
+            <Metric label="Ambang keseluruhan" value={`${test.overallThreshold}`} />
+            <Metric label="Penyelesaian lesson" value={`${test.lessonCompletionRequiredPercent}%`} />
+            <Metric label="Bobot bagian" value={`${totalWeight}%`} />
           </div>
         </div>
 
@@ -263,7 +263,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
             className="focus-ring mt-5 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
           >
             <Award className="h-4 w-4" aria-hidden="true" />
-            {isPreviewing ? "Calculating" : "Check Readiness"}
+            {isPreviewing ? "Menghitung" : "Cek Kesiapan"}
           </button>
 
           <div className="mt-3 grid gap-2 sm:grid-cols-2">
@@ -273,7 +273,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
               disabled={isStarting || savedAttempt?.status === "in_progress"}
               className="focus-ring inline-flex min-h-11 items-center justify-center rounded-lg border border-ink/20 px-4 text-sm font-semibold hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
             >
-              {isStarting ? "Starting" : savedAttempt?.status === "in_progress" ? "Attempt Started" : "Start Attempt"}
+              {isStarting ? "Memulai" : savedAttempt?.status === "in_progress" ? "Percobaan Dimulai" : "Mulai Percobaan"}
             </button>
             <button
               type="button"
@@ -282,10 +282,10 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
               className="focus-ring inline-flex min-h-11 items-center justify-center rounded-lg bg-leaf px-4 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
             >
               {isSubmitting
-                ? "Submitting"
+                ? "Mengirim"
                 : savedAttempt?.status === "submitted" || savedAttempt?.status === "reviewed"
-                  ? "Submitted"
-                  : "Submit Attempt"}
+                  ? "Terkirim"
+                  : "Kirim Percobaan"}
             </button>
           </div>
 
@@ -294,31 +294,31 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
 
         {savedAttempt ? (
           <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-            <p className="text-sm font-semibold uppercase text-leaf">Saved Attempt</p>
+            <p className="text-sm font-semibold uppercase text-leaf">Percobaan Tersimpan</p>
             <h2 className="mt-2 text-xl font-semibold">
               {savedAttempt.status === "reviewed"
-                ? "Reviewed by Admin"
+                ? "Sudah Ditinjau Admin"
                 : savedAttempt.status === "submitted"
-                  ? "Submitted for Admin Review"
-                  : "Attempt In Progress"}
+                  ? "Menunggu Tinjauan Admin"
+                  : "Percobaan Sedang Berjalan"}
             </h2>
             <p className="mt-2 text-sm text-ink/60">{savedAttempt.id}</p>
             {savedAttempt.status === "submitted" || savedAttempt.status === "reviewed" ? (
               <div className="mt-4 rounded-lg bg-paper p-4">
                 <p className="text-sm text-ink/60">
-                  {savedAttempt.status === "reviewed" ? "Official score" : "Self-assessed score"}
+                  {savedAttempt.status === "reviewed" ? "Skor resmi" : "Skor penilaian sendiri"}
                 </p>
                 <p className="mt-1 text-3xl font-semibold">{savedAttempt.overallScore}</p>
                 <p className="mt-2 text-sm text-ink/70">
                   {savedAttempt.status === "reviewed"
                     ? savedAttempt.passed
-                      ? "Passed"
-                      : "Not yet passed"
+                      ? "Lulus"
+                      : "Belum lulus"
                     : "Menunggu review admin"}
                 </p>
                 {savedAttempt.status === "reviewed" ? (
                   <p className="mt-2 text-xs text-ink/55">
-                    Reviewed by {savedAttempt.reviewedBy ?? "admin"}
+                    Ditinjau oleh {savedAttempt.reviewedBy ?? "admin"}
                   </p>
                 ) : null}
               </div>
@@ -333,9 +333,9 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
             ) : (
               <XCircle className="h-6 w-6 text-coral" aria-hidden="true" />
             )}
-            <p className="mt-3 text-sm font-semibold uppercase text-ink/60">Projected result</p>
+            <p className="mt-3 text-sm font-semibold uppercase text-ink/60">Perkiraan hasil</p>
             <h2 className="mt-1 text-3xl font-semibold">{preview.overallScore}</h2>
-            <p className="mt-2 text-sm text-ink/70">{preview.passed ? "Ready for A1 test." : "Needs review before A1 test."}</p>
+            <p className="mt-2 text-sm text-ink/70">{preview.passed ? "Siap untuk tes A1." : "Perlu review sebelum tes A1."}</p>
             {preview.missingRequirements.length ? (
               <div className="mt-4 space-y-2 text-sm text-ink/70">
                 {preview.missingRequirements.map((requirement) => (

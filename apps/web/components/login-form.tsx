@@ -90,12 +90,12 @@ export function LoginForm() {
         className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
       >
         <Mail className="h-4 w-4" aria-hidden="true" />
-        {isSubmitting ? "Logging in" : "Login"}
+        {isSubmitting ? "Memproses…" : "Masuk"}
       </button>
       <p className="pt-2 text-sm text-ink/60">
-        New here?{" "}
+        Belum punya akun?{" "}
         <Link className="font-semibold text-leaf" href="/register">
-          Create an account
+          Buat akun
         </Link>
       </p>
       </form>

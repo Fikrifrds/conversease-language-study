@@ -42,7 +42,7 @@ export function VerifyEmailPanel() {
       } catch {
         if (!ignore) {
           setStatus("error");
-          setMessage("Link verifikasi tidak valid atau sudah kedaluwarsa.");
+          setMessage("Tautan verifikasi tidak valid atau sudah kedaluwarsa.");
         }
       }
     }
@@ -61,10 +61,10 @@ export function VerifyEmailPanel() {
     try {
       const result = await requestEmailVerification();
       setStatus(result.alreadyVerified ? "success" : "idle");
-      setMessage(result.alreadyVerified ? "Email kamu sudah verified." : "Email verifikasi sudah diminta.");
+      setMessage(result.alreadyVerified ? "Email kamu sudah terverifikasi." : "Email verifikasi sudah diminta.");
     } catch {
       setStatus("error");
-      setMessage("Silakan login dulu untuk meminta email verifikasi baru.");
+      setMessage("Silakan masuk dulu untuk meminta email verifikasi baru.");
     } finally {
       setIsSending(false);
     }
@@ -91,7 +91,7 @@ export function VerifyEmailPanel() {
           disabled={isSending}
           className="focus-ring inline-flex w-full items-center justify-center rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
         >
-          {isSending ? "Mengirim" : "Kirim Email Verifikasi"}
+          {isSending ? "Mengirim…" : "Kirim Email Verifikasi"}
         </button>
       ) : null}
       {status === "success" ? (

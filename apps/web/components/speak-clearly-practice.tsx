@@ -130,10 +130,10 @@ function PhraseRecorder({ prompt, target }: { prompt: string; target: string }) 
           className={`focus-ring inline-flex h-10 items-center justify-center gap-2 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
             isRecording ? "bg-coral text-white hover:bg-ink" : "bg-leaf text-white hover:bg-ink"
           }`}
-          aria-label={isRecording ? "Stop recording" : "Record"}
+          aria-label={isRecording ? "Berhenti merekam" : "Rekam"}
         >
           {isRecording ? <Square className="h-4 w-4" aria-hidden="true" /> : <Mic className="h-4 w-4" aria-hidden="true" />}
-          {isProcessing ? "Mengecek" : isRecording ? "Stop" : isReady ? "Rekam Ulang" : "Rekam"}
+          {isProcessing ? "Mengecek" : isRecording ? "Berhenti" : isReady ? "Rekam Ulang" : "Rekam"}
         </button>
         {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
         {recordingUrl && !isRecording && !isProcessing ? (

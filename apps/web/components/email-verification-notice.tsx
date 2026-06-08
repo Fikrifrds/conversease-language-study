@@ -79,7 +79,7 @@ export function EmailVerificationNotice() {
             disabled={isSending}
             className="focus-ring rounded-md bg-ink px-3 py-2 text-xs font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
           >
-            {isSending ? "Mengirim" : "Kirim Ulang"}
+            {isSending ? "Mengirim…" : "Kirim Ulang"}
           </button>
           <Link href="/verify-email" className="font-semibold text-coral">
             Verifikasi

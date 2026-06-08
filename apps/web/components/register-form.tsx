@@ -38,7 +38,7 @@ export function RegisterForm() {
       </div>
       <form onSubmit={handleSubmit} className="space-y-3">
       <label className="block">
-        <span className="text-sm font-medium">Name</span>
+        <span className="text-sm font-medium">Nama</span>
         <input
           className="focus-ring mt-2 w-full rounded-lg border border-ink/20 bg-paper px-4 py-3"
           value={name}
@@ -77,7 +77,7 @@ export function RegisterForm() {
         disabled={isSubmitting}
         className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
       >
-        {isSubmitting ? "Creating account" : "Continue"}
+        {isSubmitting ? "Membuat akun…" : "Lanjut"}
         <ArrowRight className="h-4 w-4" aria-hidden="true" />
       </button>
       </form>

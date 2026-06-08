@@ -52,8 +52,8 @@ export default function CoursesPage() {
     <AppShell requireAuth>
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase text-leaf">Curriculum</p>
-          <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">English conversation path</h1>
+          <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
+          <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan bahasa Inggris</h1>
           <p className="mt-3 leading-7 text-ink/70">
             A1 gratis untuk semua. Level A2 sampai C1 tersedia dengan Pro. Selesaikan semua lesson di
             satu level untuk membuka level berikutnya.

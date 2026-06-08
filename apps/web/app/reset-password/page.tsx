@@ -8,7 +8,7 @@ export default function ResetPasswordPage() {
       <section className="m-auto w-full max-w-md rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
         <BrandMark />
         <h1 className="mt-8 text-3xl font-semibold">Password baru</h1>
-        <Suspense fallback={<div className="mt-6 rounded-lg bg-paper p-4 text-sm">Loading...</div>}>
+        <Suspense fallback={<div className="mt-6 rounded-lg bg-paper p-4 text-sm">Memuat...</div>}>
           <ResetPasswordForm />
         </Suspense>
       </section>

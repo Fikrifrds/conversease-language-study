@@ -14,7 +14,7 @@ export default function HomePage() {
       <section className="relative min-h-[82svh] overflow-hidden">
         <Image
           src="/images/hero-realistic.png"
-          alt="Realistic conversation learning desk setup"
+          alt="Suasana meja belajar percakapan yang nyata"
           fill
           priority
           className="object-cover"
@@ -25,20 +25,20 @@ export default function HomePage() {
           <BrandMark tone="light" />
           <nav className="hidden items-center gap-2 text-sm font-medium text-white/90 md:flex">
             <Link className="rounded-lg px-3 py-2 hover:bg-white/10" href="/courses">
-              Curriculum
+              Kurikulum
             </Link>
             <Link className="rounded-lg px-3 py-2 hover:bg-white/10" href="/conversation-coach">
               Conversation Coach
             </Link>
             <Link className="rounded-lg px-3 py-2 hover:bg-white/10" href="/pricing">
-              Pricing
+              Harga
             </Link>
           </nav>
           <LandingAuthAction />
         </header>
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
           <div className="max-w-2xl text-white">
-            <p className="text-sm font-semibold uppercase text-sun">Converse with ease</p>
+            <p className="text-sm font-semibold uppercase text-sun">Ngobrol jadi mudah</p>
             <h1 className="mt-4 text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Conversease
             </h1>
@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="max-w-md rounded-lg border border-white/20 bg-white/90 p-4 shadow-soft backdrop-blur">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase text-leaf">Today&apos;s Mission</p>
+                  <p className="text-xs font-semibold uppercase text-leaf">Misi Hari Ini</p>
                   <h2 className="mt-1 text-xl font-semibold">{mission.title}</h2>
                 </div>
                 <span className="rounded-lg bg-sun px-3 py-1 text-xs font-bold text-ink">
@@ -67,15 +67,15 @@ export default function HomePage() {
               <p className="mt-3 text-sm leading-6 text-ink/70">{mission.prompt}</p>
               <div className="mt-4 grid grid-cols-3 gap-2 text-sm">
                 <div className="rounded-lg bg-mint p-3">
-                  <p className="font-semibold">Listen</p>
-                  <p className="text-ink/60">Dialogue</p>
+                  <p className="font-semibold">Dengar</p>
+                  <p className="text-ink/60">Dialog</p>
                 </div>
                 <div className="rounded-lg bg-[#fff2dc] p-3">
-                  <p className="font-semibold">Repeat</p>
-                  <p className="text-ink/60">Phrases</p>
+                  <p className="font-semibold">Ulangi</p>
+                  <p className="text-ink/60">Frasa</p>
                 </div>
                 <div className="rounded-lg bg-[#fde7df] p-3">
-                  <p className="font-semibold">Speak</p>
+                  <p className="font-semibold">Bicara</p>
                   <p className="text-ink/60">Coach</p>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function HomePage() {
                 className="focus-ring mt-4 inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink"
               >
                 <Play className="h-4 w-4" aria-hidden="true" />
-                Start Mission
+                Mulai Misi
               </Link>
             </div>
           </div>
@@ -109,9 +109,9 @@ export default function HomePage() {
         </SectionHeading>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
-            ["Conversation Listening", "Pre-generated dialogue audio with transcript and Indonesian translation."],
-            ["Speak Clearly", "Repeat useful phrases and build pronunciation confidence step by step."],
-            ["Conversation Feedback", "Better version, Indonesian explanation, scores, and next practice."]
+            ["Menyimak Percakapan", "Audio dialog siap pakai lengkap dengan transkrip dan terjemahan Indonesia."],
+            ["Bicara dengan Jelas", "Ulangi frasa berguna dan bangun rasa percaya diri pelafalan langkah demi langkah."],
+            ["Feedback Percakapan", "Versi lebih baik, penjelasan Indonesia, skor, dan latihan berikutnya."]
           ].map(([title, text]) => (
             <article key={title} className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
               <CheckCircle2 className="h-5 w-5 text-leaf" aria-hidden="true" />
@@ -124,10 +124,10 @@ export default function HomePage() {
 
       <section className="bg-ink text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
-          <SectionHeading eyebrow="Pricing" title="Free + Pro" tone="light">
-            Pro unlocks the complete learning path: active lessons, detailed feedback, level
-            evaluation, and progress reports. Conversation Coach quota is included only as a
-            practice limit for extra speaking sessions.
+          <SectionHeading eyebrow="Harga" title="Free + Pro" tone="light">
+            Pro membuka seluruh jalur belajar: lesson aktif, feedback detail, evaluasi level, dan
+            laporan progress. Kuota Conversation Coach hanya disertakan sebagai batas latihan untuk
+            sesi bicara tambahan.
           </SectionHeading>
           <div className="grid gap-3 md:grid-cols-2">
             {plans.slice(0, 4).map((plan) => (
@@ -153,8 +153,8 @@ export default function HomePage() {
         <p>Conversease. Dari paham menjadi berani bicara.</p>
         <div className="flex gap-4">
           <Link href="/dashboard">Dashboard</Link>
-          <Link href="/courses">Courses</Link>
-          <Link href="/pricing">Pricing</Link>
+          <Link href="/courses">Kursus</Link>
+          <Link href="/pricing">Harga</Link>
         </div>
       </footer>
     </main>

@@ -6,7 +6,7 @@ export default function OnboardingPage() {
     <AppShell requireAuth>
       <section className="mx-auto max-w-5xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase text-leaf">Onboarding</p>
-        <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Set your conversation path</h1>
+        <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Atur jalur percakapanmu</h1>
         <OnboardingForm />
       </section>
     </AppShell>

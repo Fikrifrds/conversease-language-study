@@ -8,7 +8,7 @@ export default function ForgotPasswordPage() {
         <BrandMark />
         <h1 className="mt-8 text-3xl font-semibold">Reset password</h1>
         <p className="mt-3 text-sm leading-6 text-ink/60">
-          Masukkan email akun untuk menerima link reset password.
+          Masukkan email akun untuk menerima tautan reset password.
         </p>
         <ForgotPasswordForm />
       </section>

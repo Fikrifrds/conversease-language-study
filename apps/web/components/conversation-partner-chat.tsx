@@ -325,7 +325,7 @@ export function ConversationPartnerChat({ topic }: { topic: PartnerTopic }) {
                   : isBusy
                     ? "Mengirim"
                     : isRecording
-                      ? "Stop"
+                      ? "Berhenti"
                       : "Rekam manual"}
               </button>
               {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}

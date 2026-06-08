@@ -22,10 +22,10 @@ export function ResetPasswordForm() {
 
     try {
       await resetPassword({ token, password });
-      setMessage("Password berhasil diperbarui. Silakan login.");
+      setMessage("Password berhasil diperbarui. Silakan masuk.");
       setPassword("");
     } catch {
-      setError("Link reset tidak valid atau sudah kedaluwarsa.");
+      setError("Tautan reset tidak valid atau sudah kedaluwarsa.");
     } finally {
       setIsSubmitting(false);
     }
@@ -34,7 +34,7 @@ export function ResetPasswordForm() {
   if (!token) {
     return (
       <div className="mt-6 rounded-lg bg-[#fde7df] px-4 py-3 text-sm leading-6 text-ink/70">
-        Link reset password tidak lengkap. Minta link baru dari halaman forgot password.
+        Tautan reset password tidak lengkap. Minta tautan baru dari halaman lupa password.
       </div>
     );
   }
@@ -61,11 +61,11 @@ export function ResetPasswordForm() {
         className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
       >
         <KeyRound className="h-4 w-4" aria-hidden="true" />
-        {isSubmitting ? "Menyimpan" : "Update Password"}
+        {isSubmitting ? "Menyimpan…" : "Perbarui Password"}
       </button>
       {message ? (
         <Link className="block pt-2 text-sm font-semibold text-leaf" href="/login">
-          Login
+          Masuk
         </Link>
       ) : null}
     </form>
