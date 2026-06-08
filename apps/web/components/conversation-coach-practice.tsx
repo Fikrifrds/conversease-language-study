@@ -2,7 +2,7 @@
 
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, ChevronDown, ChevronUp, Lightbulb, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
+import { CheckCircle2, ChevronDown, ChevronUp, Lightbulb, Loader2, MessageCircle, Mic, RotateCcw, Send, Sparkles, Square } from "lucide-react";
 import {
   ApiRequestError,
   createConversationSession,
@@ -1591,11 +1591,17 @@ export function ConversationCoachPractice({
               type="submit"
               disabled={!answer.trim() || completed || isSubmitting || isRecording || isProcessingRecording}
               className="focus-ring ml-auto inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
+              aria-busy={isSubmitting}
             >
-              <Send className="h-4 w-4" aria-hidden="true" />
-              {isSubmitting ? "Mengirim" : "Kirim"}
+              {isSubmitting ? (
+                <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+              ) : (
+                <Send className="h-4 w-4" aria-hidden="true" />
+              )}
+              {isSubmitting ? "Mengirim..." : "Kirim"}
             </button>
           </div>
+          {isSubmitting ? <p className="mt-2 text-xs text-ink/60">Sedang memproses jawaban...</p> : null}
           {recordingError ? (
             <p className="mt-3 rounded-lg bg-[#fde7df] px-3 py-2 text-sm text-ink/70">{recordingError}</p>
           ) : null}
