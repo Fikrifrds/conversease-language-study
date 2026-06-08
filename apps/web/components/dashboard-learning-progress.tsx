@@ -6,6 +6,7 @@ import { CalendarDays, Headphones, MessageCircle, Mic, Play, Target } from "luci
 import { getBillingAccess, type BillingAccess } from "@/lib/billing-api";
 import { getLearningProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { mission } from "@/lib/data";
+import { WeeklyStreakIndicator } from "@/components/weekly-streak-indicator";
 
 const fallbackMission = {
   slug: mission.lessonSlug,
@@ -74,14 +75,14 @@ export function DashboardLearningProgress() {
           </div>
           <div className="grid h-24 w-24 place-items-center rounded-lg bg-mint text-center">
             <span className="text-3xl font-semibold">{currentMission.estimatedMinutes}</span>
-            <span className="-mt-5 text-xs font-semibold text-ink/60">minutes</span>
+            <span className="-mt-5 text-xs font-semibold text-ink/60">menit</span>
           </div>
         </div>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
           {[
-            { label: "Listen", detail: "Dialogue audio", icon: Headphones },
-            { label: "Repeat", detail: "Useful phrases", icon: Mic },
-            { label: "Respond", detail: "Short prompt", icon: MessageCircle }
+            { label: "Dengar", detail: "Audio dialog", icon: Headphones },
+            { label: "Ulangi", detail: "Frasa berguna", icon: Mic },
+            { label: "Respons", detail: "Prompt singkat", icon: MessageCircle }
           ].map((item) => (
             <div key={item.label} className="rounded-lg bg-paper p-4">
               <item.icon className="h-5 w-5 text-leaf" aria-hidden="true" />
@@ -95,14 +96,14 @@ export function DashboardLearningProgress() {
           className="focus-ring mt-6 inline-flex items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf"
         >
           <Play className="h-4 w-4" aria-hidden="true" />
-          {currentMission.progressStatus === "completed" ? "Review Lesson" : "Continue Lesson"}
+          {currentMission.progressStatus === "completed" ? "Tinjau Lesson" : "Lanjutkan Lesson"}
         </Link>
       </section>
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-leaf">Learning path progress</p>
+            <p className="text-sm font-semibold text-leaf">Progress jalur belajar</p>
             <h2 className="mt-1 text-3xl font-semibold">{completionPercent}%</h2>
           </div>
           <Target className="h-8 w-8 text-coral" aria-hidden="true" />
@@ -111,21 +112,23 @@ export function DashboardLearningProgress() {
           <div className="h-full rounded-lg bg-leaf" style={{ width: `${completionPercent}%` }} />
         </div>
         <p className="mt-3 text-sm text-ink/60">
-          {completedLessons}/{totalLessons} published lesson selesai.
+          {completedLessons}/{totalLessons} lesson selesai.
         </p>
         <div className="mt-6 grid grid-cols-2 gap-3">
           <Link href="/progress" className="focus-ring rounded-lg bg-mint px-4 py-3 text-center text-sm font-semibold">
-            View Progress
+            Lihat Progress
           </Link>
           <Link href="/onboarding" className="focus-ring rounded-lg bg-[#fff2dc] px-4 py-3 text-center text-sm font-semibold">
-            {dailyTarget ? `${dailyTarget} min/day` : "Set Target"}
+            {dailyTarget ? `${dailyTarget} mnt/hari` : "Atur Target"}
           </Link>
         </div>
+
+        <WeeklyStreakIndicator />
 
         <div className="mt-5 rounded-lg bg-paper p-4">
           <div className="flex items-center gap-2">
             <CalendarDays className="h-4 w-4 text-leaf" aria-hidden="true" />
-            <p className="text-sm font-semibold">Conversation Coach quota</p>
+            <p className="text-sm font-semibold">Kuota Conversation Coach</p>
           </div>
           <p className="mt-2 text-2xl font-semibold">{access?.minutes.totalMinutes ?? "-"}</p>
           <p className="mt-1 text-sm text-ink/60">

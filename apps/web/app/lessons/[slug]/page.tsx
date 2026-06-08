@@ -9,6 +9,7 @@ import { LessonProgressPanel } from "@/components/lesson-progress-panel";
 import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-practice";
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
+import { StudyDayMarker } from "@/components/study-day-marker";
 import { lessonCatalog, lessonsBySlug } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -24,6 +25,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
 
   return (
     <AppShell requireAuth>
+      <StudyDayMarker />
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.72fr_0.28fr]">
           <article className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
