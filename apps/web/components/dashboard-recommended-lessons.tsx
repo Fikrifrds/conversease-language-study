@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CircleDot } from "lucide-react";
 import { getLearningProgress, type LearningLessonSummary } from "@/lib/learning-api";
+import { lessonPlacementLabel } from "@/lib/data";
 
 function statusLabel(status: LearningLessonSummary["progressStatus"]) {
   if (status === "completed") {
@@ -76,6 +77,11 @@ export function DashboardRecommendedLessons() {
                   <CircleDot className="h-3 w-3 shrink-0" aria-hidden="true" />
                   {statusLabel(lesson.progressStatus)}
                 </span>
+                {lessonPlacementLabel(lesson.slug) ? (
+                  <p className="mt-1 text-xs font-semibold uppercase tracking-wide text-ink/45">
+                    {lessonPlacementLabel(lesson.slug)}
+                  </p>
+                ) : null}
                 <h3 className="mt-2 font-semibold leading-6">{lesson.title}</h3>
                 <p className="mt-1 line-clamp-2 text-sm leading-6 text-ink/60">{lesson.conversationGoal}</p>
               </div>

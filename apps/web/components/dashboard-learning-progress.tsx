@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CalendarDays, Headphones, MessageCircle, Mic, Play, Target } from "lucide-react";
 import { getBillingAccess, type BillingAccess } from "@/lib/billing-api";
 import { getLearningProgress, type LearningProgressSummary } from "@/lib/learning-api";
-import { mission } from "@/lib/data";
+import { mission, lessonPlacementLabel } from "@/lib/data";
 import { WeeklyStreakIndicator } from "@/components/weekly-streak-indicator";
 
 const fallbackMission = {
@@ -61,7 +61,9 @@ export function DashboardLearningProgress() {
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm sm:p-6">
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="text-sm font-semibold text-coral">A1 Unit 1</p>
+            <p className="text-sm font-semibold text-coral">
+              {lessonPlacementLabel(currentMission.slug) ?? "A1 Unit 1"}
+            </p>
             <h2 className="mt-2 text-2xl font-semibold">{currentMission.title}</h2>
             {primaryGoal ? (
               <span className="mt-3 inline-flex items-center gap-1 rounded-lg bg-[#fff2dc] px-3 py-1 text-xs font-semibold text-ink/70">

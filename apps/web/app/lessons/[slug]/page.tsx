@@ -10,7 +10,7 @@ import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-p
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { StudyDayMarker } from "@/components/study-day-marker";
-import { lessonCatalog, lessonsBySlug } from "@/lib/data";
+import { lessonCatalog, lessonsBySlug, lessonPlacementLabel } from "@/lib/data";
 
 export function generateStaticParams() {
   return lessonCatalog.map((lesson) => ({ slug: lesson.slug }));
@@ -29,7 +29,12 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[0.72fr_0.28fr]">
           <article className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-            <p className="text-sm font-semibold uppercase text-leaf">{lesson.unit}</p>
+            {lessonPlacementLabel(lesson.slug) ? (
+              <p className="text-xs font-semibold uppercase tracking-wide text-coral">
+                {lessonPlacementLabel(lesson.slug)}
+              </p>
+            ) : null}
+            <p className="mt-1 text-sm font-semibold uppercase text-leaf">{lesson.unit}</p>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">{lesson.title}</h1>
             <p className="mt-4 rounded-lg bg-mint p-4 leading-7 text-ink/80">{lesson.conversationGoal}</p>
             <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">

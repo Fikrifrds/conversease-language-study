@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { BookOpen, CheckCircle2, CircleDot } from "lucide-react";
 import { getLearningProgress, type LearningProgressSummary } from "@/lib/learning-api";
+import { lessonPlacementLabel } from "@/lib/data";
 
 export function LearningProgressReport() {
   const [summary, setSummary] = useState<LearningProgressSummary | null>(null);
@@ -60,7 +61,9 @@ export function LearningProgressReport() {
               className="focus-ring flex items-start justify-between gap-4 rounded-lg bg-paper p-4 hover:bg-mint"
             >
               <div>
-                <p className="text-xs font-semibold uppercase text-coral">{lesson.unitTitle}</p>
+                <p className="text-xs font-semibold uppercase text-coral">
+                  {lessonPlacementLabel(lesson.slug) ?? lesson.unitTitle}
+                </p>
                 <h3 className="mt-1 font-semibold">{lesson.title}</h3>
                 <p className="mt-1 text-sm text-ink/60">
                   {completed ? "Selesai" : lesson.progressStatus === "in_progress" ? "Sedang berjalan" : "Belum mulai"}

@@ -76,7 +76,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
 
             {unit.lessons.length ? (
               <div className="mt-5 grid gap-3 md:grid-cols-3">
-                {unit.lessons.map((lesson) => {
+                {unit.lessons.map((lesson, lessonIndex) => {
                   const lessonProgress = progressBySlug.get(lesson.slug);
                   const completed = lessonProgress?.progressStatus === "completed";
                   const inProgress = lessonProgress?.progressStatus === "in_progress";
@@ -89,15 +89,20 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="text-xs font-semibold uppercase text-leaf">
-                          {completed ? "selesai" : inProgress ? "sedang berjalan" : lesson.status}
+                          {course.level} · U{unitIndex + 1} · L{lessonIndex + 1}
                         </span>
-                        {completed ? (
-                          <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
-                        ) : inProgress ? (
-                          <CircleDot className="h-4 w-4 text-coral" aria-hidden="true" />
-                        ) : (
-                          <ArrowRight className="h-4 w-4 text-ink/40" aria-hidden="true" />
-                        )}
+                        <span className="flex items-center gap-2">
+                          <span className="text-xs font-semibold uppercase text-coral">
+                            {completed ? "selesai" : inProgress ? "sedang berjalan" : lesson.status}
+                          </span>
+                          {completed ? (
+                            <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
+                          ) : inProgress ? (
+                            <CircleDot className="h-4 w-4 text-coral" aria-hidden="true" />
+                          ) : (
+                            <ArrowRight className="h-4 w-4 text-ink/40" aria-hidden="true" />
+                          )}
+                        </span>
                       </div>
                       <h3 className="mt-3 font-semibold">{lesson.title}</h3>
                       <p className="mt-2 text-sm text-ink/60">{lesson.minutes} menit</p>

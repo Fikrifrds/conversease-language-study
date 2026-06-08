@@ -13143,6 +13143,41 @@ export const courses = [
 
 export const coursesBySlug = Object.fromEntries(courses.map((item) => [item.slug, item]));
 
+export type LessonPlacement = {
+  level: string;
+  unitNumber: number;
+  unitTitle: string;
+  lessonNumber: number;
+};
+
+// Derived from the courses structure: for each lesson slug, its level, unit
+// number, unit title, and lesson number within the unit.
+export const lessonPlacementBySlug: Record<string, LessonPlacement> = (() => {
+  const placements: Record<string, LessonPlacement> = {};
+  for (const course of courses) {
+    course.units.forEach((unit, unitIndex) => {
+      unit.lessons.forEach((lessonItem, lessonIndex) => {
+        placements[lessonItem.slug] = {
+          level: course.level,
+          unitNumber: unitIndex + 1,
+          unitTitle: unit.title,
+          lessonNumber: lessonIndex + 1
+        };
+      });
+    });
+  }
+  return placements;
+})();
+
+// Short label like "A1 · Unit 1 · Lesson 3" for a lesson slug.
+export function lessonPlacementLabel(slug: string): string | null {
+  const placement = lessonPlacementBySlug[slug];
+  if (!placement) {
+    return null;
+  }
+  return `${placement.level} · Unit ${placement.unitNumber} · Lesson ${placement.lessonNumber}`;
+}
+
 export const course = courses[0];
 
 export const lesson = lessonCatalog[0];
