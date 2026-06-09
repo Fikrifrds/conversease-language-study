@@ -9,6 +9,8 @@ from app.api.routes import (
     conversation,
     conversation_partner,
     email,
+    exam_runner,
+    exams,
     health,
     learning,
 )
@@ -49,6 +51,8 @@ def create_app() -> FastAPI:
     app.include_router(admin_cms.router, prefix="/api", tags=["admin-cms"])
     app.include_router(admin_users.router, prefix="/api", tags=["admin-users"])
     app.include_router(email.router, prefix="/api", tags=["email"])
+    app.include_router(exams.router, prefix="/api", tags=["exams"])
+    app.include_router(exam_runner.router, prefix="/api", tags=["exam-runner"])
     return app
 
 

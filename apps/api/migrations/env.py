@@ -11,6 +11,7 @@ sys.path.insert(0, str(API_ROOT))
 
 from app.core.config import settings  # noqa: E402
 from app.db.base import Base  # noqa: E402
+from app.db import exam_models  # noqa: F401,E402
 from app.db import models  # noqa: F401,E402
 
 

@@ -117,6 +117,92 @@ export type LevelTestAttempt = {
   updatedAt: string;
 };
 
+export type ExamTemplateSummary = {
+  id: string;
+  code: string;
+  levelCode: string;
+  title: string;
+  description: string | null;
+  durationMinutes: number;
+  passingScorePercent: number;
+  status: string;
+  version: number;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type ExamRunnerSession = {
+  sessionId: string;
+  examTemplateId: string;
+  status: string;
+  startedAt: string;
+  expiresAt: string;
+  timeRemainingSeconds: number;
+  currentSectionId: string | null;
+  currentItemId: string | null;
+};
+
+export type ExamManifestSection = {
+  id: string;
+  code: string;
+  title: string;
+  description: string | null;
+  sequenceOrder: number;
+  durationMinutes: number;
+};
+
+export type ExamManifest = {
+  sessionId: string;
+  examTemplateId: string;
+  status: string;
+  currentSectionId: string | null;
+  currentItemId: string | null;
+  sections: ExamManifestSection[];
+};
+
+export type ExamRunnerItemOption = {
+  id: string;
+  text: string;
+};
+
+export type ExamRunnerItem = {
+  id: string;
+  itemType: string;
+  sequenceOrder: number;
+  promptText: string;
+  stimulusText: string | null;
+  stimulusAudioUrl: string | null;
+  stimulusImageUrl: string | null;
+  options: ExamRunnerItemOption[] | null;
+  optionsData: Record<string, unknown> | unknown[] | null;
+  scorePoints: number;
+};
+
+export type ExamRunnerSectionContent = {
+  sessionId: string;
+  section: ExamManifestSection;
+  items: ExamRunnerItem[];
+  totalSections: number;
+  currentSectionNumber: number;
+};
+
+export type ExamRunnerStatus = {
+  sessionId: string;
+  status: string;
+  startedAt: string | null;
+  expiresAt: string | null;
+  submittedAt: string | null;
+  timeRemainingSeconds: number | null;
+  progress: Record<
+    string,
+    {
+      totalItems: number;
+      completedItems: number;
+      sectionCode: string;
+    }
+  >;
+};
+
 type ApiResponse<T> = {
   data: T;
 };
@@ -236,6 +322,92 @@ type ApiLevelTestAttempt = {
   reviewed_by: string | null;
   admin_notes: string | null;
   updated_at: string;
+};
+
+type ApiExamTemplateSummary = {
+  id: string;
+  code: string;
+  level_code: string;
+  title: string;
+  description: string | null;
+  duration_minutes: number;
+  passing_score_percent: number;
+  status: string;
+  version: number;
+  created_at: string;
+  updated_at: string;
+};
+
+type ApiExamRunnerSession = {
+  session_id: string;
+  exam_template_id: string;
+  status: string;
+  started_at: string;
+  expires_at: string;
+  time_remaining_seconds: number;
+  current_section_id: string | null;
+  current_item_id: string | null;
+};
+
+type ApiExamManifestSection = {
+  id: string;
+  code: string;
+  title: string;
+  description: string | null;
+  sequence_order: number;
+  duration_minutes: number;
+};
+
+type ApiExamManifest = {
+  session_id: string;
+  exam_template_id: string;
+  status: string;
+  current_section_id: string | null;
+  current_item_id: string | null;
+  sections: ApiExamManifestSection[];
+};
+
+type ApiExamRunnerItemOption = {
+  id: string;
+  text: string;
+};
+
+type ApiExamRunnerItem = {
+  id: string;
+  item_type: string;
+  sequence_order: number;
+  prompt_text: string;
+  stimulus_text: string | null;
+  stimulus_audio_url: string | null;
+  stimulus_image_url: string | null;
+  options: ApiExamRunnerItemOption[] | null;
+  options_data: Record<string, unknown> | unknown[] | null;
+  score_points: number;
+};
+
+type ApiExamRunnerSectionContent = {
+  session_id: string;
+  section: ApiExamManifestSection;
+  items: ApiExamRunnerItem[];
+  total_sections: number;
+  current_section_number: number;
+};
+
+type ApiExamRunnerStatus = {
+  session_id: string;
+  status: string;
+  started_at: string | null;
+  expires_at: string | null;
+  submitted_at: string | null;
+  time_remaining_seconds: number | null;
+  progress: Record<
+    string,
+    {
+      total_items: number;
+      completed_items: number;
+      section_code: string;
+    }
+  >;
 };
 
 function apiBaseUrl() {
@@ -368,6 +540,99 @@ function mapLevelTestAttempt(attempt: ApiLevelTestAttempt): LevelTestAttempt {
     reviewedBy: attempt.reviewed_by,
     adminNotes: attempt.admin_notes,
     updatedAt: attempt.updated_at
+  };
+}
+
+function mapExamTemplateSummary(template: ApiExamTemplateSummary): ExamTemplateSummary {
+  return {
+    id: template.id,
+    code: template.code,
+    levelCode: template.level_code,
+    title: template.title,
+    description: template.description,
+    durationMinutes: template.duration_minutes,
+    passingScorePercent: template.passing_score_percent,
+    status: template.status,
+    version: template.version,
+    createdAt: template.created_at,
+    updatedAt: template.updated_at
+  };
+}
+
+function mapExamManifestSection(section: ApiExamManifestSection): ExamManifestSection {
+  return {
+    id: section.id,
+    code: section.code,
+    title: section.title,
+    description: section.description,
+    sequenceOrder: section.sequence_order,
+    durationMinutes: section.duration_minutes
+  };
+}
+
+function mapExamRunnerSession(session: ApiExamRunnerSession): ExamRunnerSession {
+  return {
+    sessionId: session.session_id,
+    examTemplateId: session.exam_template_id,
+    status: session.status,
+    startedAt: session.started_at,
+    expiresAt: session.expires_at,
+    timeRemainingSeconds: session.time_remaining_seconds,
+    currentSectionId: session.current_section_id,
+    currentItemId: session.current_item_id
+  };
+}
+
+function mapExamManifest(manifest: ApiExamManifest): ExamManifest {
+  return {
+    sessionId: manifest.session_id,
+    examTemplateId: manifest.exam_template_id,
+    status: manifest.status,
+    currentSectionId: manifest.current_section_id,
+    currentItemId: manifest.current_item_id,
+    sections: manifest.sections.map(mapExamManifestSection)
+  };
+}
+
+function mapExamSectionContent(content: ApiExamRunnerSectionContent): ExamRunnerSectionContent {
+  return {
+    sessionId: content.session_id,
+    section: mapExamManifestSection(content.section),
+    items: content.items.map((item) => ({
+      id: item.id,
+      itemType: item.item_type,
+      sequenceOrder: item.sequence_order,
+      promptText: item.prompt_text,
+      stimulusText: item.stimulus_text,
+      stimulusAudioUrl: item.stimulus_audio_url,
+      stimulusImageUrl: item.stimulus_image_url,
+      options: item.options,
+      optionsData: item.options_data,
+      scorePoints: item.score_points
+    })),
+    totalSections: content.total_sections,
+    currentSectionNumber: content.current_section_number
+  };
+}
+
+function mapExamRunnerStatus(status: ApiExamRunnerStatus): ExamRunnerStatus {
+  return {
+    sessionId: status.session_id,
+    status: status.status,
+    startedAt: status.started_at,
+    expiresAt: status.expires_at,
+    submittedAt: status.submitted_at,
+    timeRemainingSeconds: status.time_remaining_seconds,
+    progress: Object.fromEntries(
+      Object.entries(status.progress).map(([sectionId, value]) => [
+        sectionId,
+        {
+          totalItems: value.total_items,
+          completedItems: value.completed_items,
+          sectionCode: value.section_code
+        }
+      ])
+    )
   };
 }
 
@@ -580,4 +845,102 @@ export async function getLevelTestAttemptReport(attemptId: string): Promise<Leve
     `/level-test-attempts/${attemptId}/report`
   );
   return mapLevelTestAttempt(response.data);
+}
+
+export async function listExamTemplatesByLevel(levelCode: string): Promise<ExamTemplateSummary[]> {
+  const response = await requestJson<ApiExamTemplateSummary[]>(
+    `/exams/templates/level/${encodeURIComponent(levelCode)}`
+  );
+  return response.map(mapExamTemplateSummary);
+}
+
+export async function startRealExam(examTemplateId: string): Promise<ExamRunnerSession> {
+  const response = await requestJson<ApiExamRunnerSession>("/exam-runner/start", {
+    method: "POST",
+    body: JSON.stringify({
+      exam_template_id: examTemplateId
+    })
+  });
+  return mapExamRunnerSession(response);
+}
+
+export async function getExamManifest(sessionId: string): Promise<ExamManifest> {
+  const response = await requestJson<ApiExamManifest>(`/exam-runner/manifest/${sessionId}`);
+  return mapExamManifest(response);
+}
+
+export async function getExamSectionContent(
+  sessionId: string,
+  sectionId: string
+): Promise<ExamRunnerSectionContent> {
+  const response = await requestJson<ApiExamRunnerSectionContent>(
+    `/exam-runner/content/${sessionId}/${sectionId}`
+  );
+  return mapExamSectionContent(response);
+}
+
+export async function saveExamItemResponse(input: {
+  sessionId: string;
+  itemId: string;
+  sectionId: string;
+  responseType: string;
+  textResponse?: string | null;
+  selectedOptionIds?: string[] | null;
+  matchedPairs?: Record<string, string> | null;
+  fileUrl?: string | null;
+  audioDurationSeconds?: number | null;
+  timeSpentSeconds?: number | null;
+}) {
+  return requestJson<{ response_id: string; item_id: string; status: string; message: string }>(
+    `/exam-runner/respond/${input.sessionId}`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        item_id: input.itemId,
+        section_id: input.sectionId,
+        response_type: input.responseType,
+        text_response: input.textResponse ?? null,
+        selected_option_ids: input.selectedOptionIds ?? null,
+        matched_pairs: input.matchedPairs ?? null,
+        file_url: input.fileUrl ?? null,
+        audio_duration_seconds: input.audioDurationSeconds ?? null,
+        time_spent_seconds: input.timeSpentSeconds ?? null
+      })
+    }
+  );
+}
+
+export async function navigateExamSession(input: {
+  sessionId: string;
+  targetSectionId?: string | null;
+  targetItemId?: string | null;
+}) {
+  return requestJson<{
+    session_id: string;
+    current_section_id: string | null;
+    current_item_id: string | null;
+    message: string;
+  }>(`/exam-runner/navigate/${input.sessionId}`, {
+    method: "POST",
+    body: JSON.stringify({
+      target_section_id: input.targetSectionId ?? null,
+      target_item_id: input.targetItemId ?? null
+    })
+  });
+}
+
+export async function getExamRunnerStatus(sessionId: string): Promise<ExamRunnerStatus> {
+  const response = await requestJson<ApiExamRunnerStatus>(`/exam-runner/status/${sessionId}`);
+  return mapExamRunnerStatus(response);
+}
+
+export async function submitRealExam(sessionId: string) {
+  return requestJson<{
+    session_id: string;
+    status: string;
+    submitted_at: string;
+    message: string;
+  }>(`/exam-runner/submit/${sessionId}`, {
+    method: "POST"
+  });
 }
