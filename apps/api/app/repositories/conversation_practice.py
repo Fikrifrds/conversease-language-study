@@ -37,6 +37,7 @@ class ConversationPracticeRepository:
         scenario_key: str = "greeting_intro",
         lesson_slug: str = DEFAULT_LESSON_SLUG,
     ) -> ConversationSession:
+        total_turns_for_lesson(lesson_slug)
         now = datetime.utcnow()
         session_model = ConversationSessionModel(
             id=f"session-{uuid4().hex[:10]}",

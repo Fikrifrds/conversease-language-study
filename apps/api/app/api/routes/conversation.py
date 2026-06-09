@@ -9,6 +9,7 @@ from app.api.deps import get_current_user
 from app.db.session import get_db
 from app.domain.users import User
 from app.domain.conversation_practice import (
+    UnknownLessonSlugError,
     session_payload,
     session_summary,
     turn_payload,
@@ -46,15 +47,18 @@ async def create_conversation_session(
     repository: ConversationPracticeRepository = Depends(get_repository),
 ) -> dict:
     BillingRepository(db).ensure_free_access(current_user.id)
-    session = repository.create_session(
-        demo_user_id=current_user.id,
-        user_id=current_user.id,
-        language_code=payload.language_code,
-        level_code=payload.level_code,
-        mode=payload.mode,
-        scenario_key=payload.scenario_key,
-        lesson_slug=payload.lesson_slug,
-    )
+    try:
+        session = repository.create_session(
+            demo_user_id=current_user.id,
+            user_id=current_user.id,
+            language_code=payload.language_code,
+            level_code=payload.level_code,
+            mode=payload.mode,
+            scenario_key=payload.scenario_key,
+            lesson_slug=payload.lesson_slug,
+        )
+    except UnknownLessonSlugError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
     return {
         "data": session_payload(session)
     }
@@ -91,11 +95,14 @@ async def create_conversation_turn(
     except InsufficientMinutesError as exc:
         raise HTTPException(status_code=402, detail="Conversation Coach minutes are empty") from exc
 
-    feedback = await generate_conversation_feedback(
-        answer=payload.transcript,
-        turn_index=session.completed_turns,
-        lesson_slug=session.lesson_slug,
-    )
+    try:
+        feedback = await generate_conversation_feedback(
+            answer=payload.transcript,
+            turn_index=session.completed_turns,
+            lesson_slug=session.lesson_slug,
+        )
+    except UnknownLessonSlugError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     try:
         session, turn = repository.add_turn(
@@ -103,6 +110,8 @@ async def create_conversation_turn(
             transcript=payload.transcript,
             feedback=feedback,
         )
+    except UnknownLessonSlugError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
 
@@ -150,11 +159,14 @@ async def create_conversation_audio_turn(
     except InsufficientMinutesError as exc:
         raise HTTPException(status_code=402, detail="Conversation Coach minutes are empty") from exc
 
-    feedback = await generate_conversation_feedback(
-        answer=transcription.text,
-        turn_index=session.completed_turns,
-        lesson_slug=session.lesson_slug,
-    )
+    try:
+        feedback = await generate_conversation_feedback(
+            answer=transcription.text,
+            turn_index=session.completed_turns,
+            lesson_slug=session.lesson_slug,
+        )
+    except UnknownLessonSlugError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
 
     try:
         session, turn = repository.add_turn(
@@ -163,6 +175,8 @@ async def create_conversation_audio_turn(
             transcription=transcription.transcription,
             feedback=feedback,
         )
+    except UnknownLessonSlugError as exc:
+        raise HTTPException(status_code=422, detail=str(exc)) from exc
     except ValueError as exc:
         raise HTTPException(status_code=409, detail=str(exc)) from exc
 

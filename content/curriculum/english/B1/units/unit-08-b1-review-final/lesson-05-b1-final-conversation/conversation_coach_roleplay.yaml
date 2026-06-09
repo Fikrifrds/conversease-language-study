@@ -1,14 +1,14 @@
 scenario_key: b1_final_conversation
 mode: lesson_practice_coach
 level_code: B1
-opening_line: Let's have a final conversation. Start with a short story and your goal.
+opening_line: Let's have one last conversation about your progress.
 learner_goal: 'Hold a connected conversation: story, goal, problem, preference, and next step.'
 max_turns: 12
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Start with a short story about your practice last week.
+- coach: How was your practice last week?
   hint: At first..., but then... because...
   sample_answer: At first it was hard, but then it got easier because I kept sessions short.
   focus: Story + reason
@@ -16,15 +16,15 @@ turns:
   - at first
   - but
   - because
-- coach: Now state your goal with a deadline.
+- coach: Nice. What's your goal now?
   hint: My goal is to... by ...
   sample_answer: My goal is to speak more confidently by next month.
   focus: Goal with deadline
   expected_keywords:
   - goal
   - by
-- coach: Share one problem and your solution, then preference + next step.
-  hint: Sometimes..., so... I prefer... because... So my next step is...
+- coach: What usually gets in your way, what helps you most, and what's your next step?
+  hint: Sometimes..., so... What helps me most is... My next step is...
   sample_answer: Sometimes I get distracted, so I leave my phone in another room. I prefer Conversation Coach because it gives feedback. So my next step is to practice three times this week.
   focus: Problem + preference + next step
   expected_keywords:

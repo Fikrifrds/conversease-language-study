@@ -86,214 +86,39 @@ class ConversationSession:
 DEFAULT_LESSON_SLUG = "saying-hello-and-goodbye"
 
 
-ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
-    "saying-hello-and-goodbye": (
-        CoachTurn(
-            coach="Hi. Good morning. How are you today?",
-            hint="Jawab sapaan, lalu beri respons singkat.",
-            sample_answer="Good morning. I'm good, thank you. How are you?",
-            focus="Greeting response",
-            expected_keywords=("good morning", "morning", "hi", "hello", "thank", "thanks"),
-            indonesian_explanation=(
-                "Jawabanmu sudah masuk konteks. Akan lebih natural kalau menambahkan pertanyaan balik singkat."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice. What is your name?",
-            hint="Sebutkan nama dengan pola: My name is ... atau I'm ...",
-            sample_answer="My name is Arif. Nice to meet you.",
-            focus="Self introduction",
-            expected_keywords=("my name is", "i'm", "i am", "nice to meet"),
-            indonesian_explanation=(
-                "Untuk perkenalan, pola 'My name is ...' atau 'I'm ...' sudah cukup. Tambahkan 'Nice to meet you' agar lebih ramah."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice to meet you. Where are you from?",
-            hint="Jawab asalmu, lalu tambahkan pertanyaan balik sederhana.",
-            sample_answer="I'm from Indonesia. How about you?",
-            focus="Follow-up question",
-            expected_keywords=("from", "indonesia", "jakarta", "how about you", "?"),
-            indonesian_explanation=(
-                "Saat menjawab asal, tambahkan pertanyaan balik seperti 'How about you?' supaya percakapan terus berjalan."
-            ),
-        ),
-    ),
-    "saying-your-name": (
-        CoachTurn(
-            coach="Hi, my name is Sara. What is your name?",
-            hint="Jawab dengan pola: My name is ... atau I'm ...",
-            sample_answer="My name is Arif. Nice to meet you.",
-            focus="Saying your name",
-            expected_keywords=("my name is", "i'm", "i am", "nice to meet"),
-            indonesian_explanation=(
-                "Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice to meet you. What should I call you?",
-            hint="Gunakan pola: Please call me ...",
-            sample_answer="Please call me Arif.",
-            focus="Nickname",
-            expected_keywords=("please call me", "call me"),
-            indonesian_explanation=(
-                "Kalau ingin menyebut nama panggilan, gunakan pola pendek 'Please call me ...'."
-            ),
-        ),
-        CoachTurn(
-            coach="Great. Nice to meet you, Arif.",
-            hint="Balas dengan sopan: Nice to meet you too.",
-            sample_answer="Nice to meet you too.",
-            focus="Polite response",
-            expected_keywords=("nice to meet you too", "you too"),
-            indonesian_explanation=(
-                "Untuk membalas sapaan perkenalan, 'Nice to meet you too' sudah natural dan sopan."
-            ),
-        ),
-    ),
-    "spelling-your-name": (
-        CoachTurn(
-            coach="Hi. What is your name?",
-            hint="Sebutkan namamu dengan pola: My name is ... atau I'm ...",
-            sample_answer="My name is Dimas.",
-            focus="Saying your name clearly",
-            expected_keywords=("my name is", "i'm", "i am", "dimas"),
-            indonesian_explanation=(
-                "Sebutkan nama dengan satu kalimat pendek dan jelas. Pola 'My name is ...' sudah cukup untuk konteks registrasi."
-            ),
-        ),
-        CoachTurn(
-            coach="How do you spell it?",
-            hint="Eja nama huruf demi huruf, lalu boleh ulangi namanya.",
-            sample_answer="It's spelled D-I-M-A-S.",
-            focus="Spelling your name",
-            expected_keywords=("spelled", "d-i-m-a-s", "dimas"),
-            indonesian_explanation=(
-                "Saat diminta mengeja, sebutkan huruf satu per satu dengan jeda pendek. Kamu bisa memakai pola 'It's spelled ...'."
-            ),
-        ),
-        CoachTurn(
-            coach="Thank you. Let me read it back: D-I-M-A-S.",
-            hint="Konfirmasi bahwa ejaannya benar.",
-            sample_answer="That's right.",
-            focus="Confirming spelling",
-            expected_keywords=("that's right", "right", "yes"),
-            indonesian_explanation=(
-                "Untuk mengonfirmasi ejaan, 'That's right' terdengar natural dan sopan."
-            ),
-        ),
-    ),
-    "asking-someones-name": (
-        CoachTurn(
-            coach="Hi. I am new here.",
-            hint="Tanyakan nama dengan: What's your name?",
-            sample_answer="Hi. What's your name?",
-            focus="Asking a name",
-            expected_keywords=("what's your name", "what is your name", "may i know your name", "?"),
-            indonesian_explanation=(
-                "Tanyakan nama dengan pertanyaan sederhana. 'What's your name?' cukup untuk konteks santai."
-            ),
-        ),
-        CoachTurn(
-            coach="My name is Mina.",
-            hint="Ulangi nama orang itu dalam responsmu.",
-            sample_answer="Nice to meet you, Mina.",
-            focus="Using the name",
-            expected_keywords=("nice to meet you", "mina"),
-            indonesian_explanation=(
-                "Mengulang nama lawan bicara membuat responsmu terdengar lebih perhatian."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice to meet you too.",
-            hint="Tutup dengan respons singkat yang natural.",
-            sample_answer="See you later.",
-            focus="Closing",
-            expected_keywords=("see you", "later", "bye"),
-            indonesian_explanation=(
-                "Gunakan closing sederhana seperti 'See you later' agar percakapan selesai dengan sopan."
-            ),
-        ),
-    ),
-    "saying-where-you-are-from": (
-        CoachTurn(
-            coach="Where are you from?",
-            hint="Jawab dengan pola: I'm from ...",
-            sample_answer="I'm from Indonesia.",
-            focus="Origin",
-            expected_keywords=("from", "indonesia", "jakarta", "bandung", "surabaya"),
-            indonesian_explanation=(
-                "Untuk asal negara atau kota, gunakan pola 'I'm from ...' dengan singkat dan jelas."
-            ),
-        ),
-        CoachTurn(
-            coach="Where do you live now?",
-            hint="Gunakan pola: I live in ...",
-            sample_answer="I live in Jakarta.",
-            focus="Current city",
-            expected_keywords=("live in", "jakarta", "bandung", "surabaya"),
-            indonesian_explanation=(
-                "Bedakan origin dan tempat tinggal sekarang: 'I'm from ...' dan 'I live in ...'."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice. Ask me the same question.",
-            hint="Tanyakan balik dengan: How about you?",
-            sample_answer="How about you?",
-            focus="Question back",
-            expected_keywords=("how about you", "where are you from", "?"),
-            indonesian_explanation=(
-                "Pertanyaan balik seperti 'How about you?' menjaga percakapan tetap berjalan."
-            ),
-        ),
-    ),
-    "first-conversation-mission": (
-        CoachTurn(
-            coach="Hi, good morning. My name is Sara.",
-            hint="Sapa balik dan sebutkan namamu.",
-            sample_answer="Good morning. My name is Arif.",
-            focus="Greeting and name",
-            expected_keywords=("good morning", "my name is", "i'm", "i am"),
-            indonesian_explanation=(
-                "Gabungkan greeting dan nama dalam dua kalimat pendek agar pembuka percakapan terasa jelas."
-            ),
-        ),
-        CoachTurn(
-            coach="Nice to meet you. Where are you from?",
-            hint="Jawab asalmu lalu tanyakan balik.",
-            sample_answer="I'm from Indonesia. How about you?",
-            focus="Origin and follow-up",
-            expected_keywords=("from", "indonesia", "how about you", "?"),
-            indonesian_explanation=(
-                "Setelah menjawab asal, tanyakan balik supaya percakapan tidak berhenti."
-            ),
-        ),
-        CoachTurn(
-            coach="I'm from Malaysia. Nice to meet you.",
-            hint="Balas dan tutup percakapan.",
-            sample_answer="Nice to meet you too. See you later.",
-            focus="Closing mission",
-            expected_keywords=("nice to meet you too", "see you", "later"),
-            indonesian_explanation=(
-                "Tutup misi dengan respons sopan dan closing singkat seperti 'See you later'."
-            ),
-        ),
-    ),
-}
-
-
 try:
     from app.domain.generated_roleplay_scripts import GENERATED_ROLEPLAY_SCRIPTS
 except Exception:
     GENERATED_ROLEPLAY_SCRIPTS = {}
 
-ROLEPLAY_SCRIPTS = {**ROLEPLAY_SCRIPTS, **GENERATED_ROLEPLAY_SCRIPTS}
+ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
+    lesson_slug: tuple(
+        CoachTurn(
+            coach=turn.coach,
+            hint=turn.hint,
+            sample_answer=turn.sample_answer,
+            focus=turn.focus,
+            expected_keywords=tuple(turn.expected_keywords),
+            indonesian_explanation=turn.indonesian_explanation,
+        )
+        for turn in turns
+    )
+    for lesson_slug, turns in GENERATED_ROLEPLAY_SCRIPTS.items()
+}
 
-COACH_TURNS = ROLEPLAY_SCRIPTS[DEFAULT_LESSON_SLUG]
+if DEFAULT_LESSON_SLUG not in ROLEPLAY_SCRIPTS:
+    raise RuntimeError(f"Default conversation roleplay slug is missing: {DEFAULT_LESSON_SLUG}")
+
+
+class UnknownLessonSlugError(ValueError):
+    pass
 
 
 def roleplay_turns_for_lesson(lesson_slug: str) -> tuple[CoachTurn, ...]:
-    return ROLEPLAY_SCRIPTS.get(lesson_slug, COACH_TURNS)
+    turns = ROLEPLAY_SCRIPTS.get(lesson_slug)
+    if turns is None:
+        raise UnknownLessonSlugError(f"unknown_lesson_slug:{lesson_slug}")
+    return turns
 
 
 def total_turns_for_lesson(lesson_slug: str) -> int:
@@ -404,6 +229,7 @@ class ConversationPracticeStore:
         scenario_key: str = "greeting_intro",
         lesson_slug: str = DEFAULT_LESSON_SLUG,
     ) -> ConversationSession:
+        roleplay_turns_for_lesson(lesson_slug)
         now = datetime.utcnow()
         session = ConversationSession(
             id=f"session-{uuid4().hex[:10]}",

@@ -8,21 +8,21 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: State your position.
+- coach: Do you think we should change our meeting format?
   hint: Mulai dengan In my view...
   sample_answer: In my view, we should move routine updates to a written summary.
   focus: Position
   expected_keywords:
   - in my view
   - should
-- coach: Support it with two reasons.
+- coach: Why do you think that?
   hint: One reason is... Another reason is...
   sample_answer: One reason is it saves time. Another reason is it improves focus.
   focus: Reasons
   expected_keywords:
   - one reason
   - another reason
-- coach: Give an example, then respond to my concern and propose next steps.
+- coach: I worry we'll lose useful discussion. How would you answer that, and what should we try next?
   hint: For example... That's a fair point. However... Let's...
   sample_answer: For example, last month we spent 30 minutes repeating updates. That's a fair point. However, we can keep one monthly live session. Let's run a one-month trial and review the results.
   focus: Example + counterpoint + next steps

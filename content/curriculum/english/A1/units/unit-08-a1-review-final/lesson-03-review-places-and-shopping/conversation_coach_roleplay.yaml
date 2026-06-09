@@ -24,7 +24,7 @@ turns:
       - next
       - library
       - "?"
-  - coach: Yes, it is. You are at the cafe now.
+  - coach: Yes, it is. Great, you walk there. Now you're at the cafe. What would you like?
     hint: Pesan satu teh dengan sopan.
     sample_answer: I would like one tea, please.
     focus: Order

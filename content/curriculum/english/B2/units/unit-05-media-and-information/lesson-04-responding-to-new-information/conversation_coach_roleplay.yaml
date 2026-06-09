@@ -21,7 +21,7 @@ turns:
   expected_keywords:
   - changes
   - understand
-- coach: Agree on next steps.
+- coach: That makes sense. What should we do next?
   hint: We should check... Can you share... Then we can revise...
   sample_answer: We should check the full report. Can you share the link? Then we can revise our conclusion.
   focus: Next steps

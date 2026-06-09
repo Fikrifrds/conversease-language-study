@@ -8,14 +8,14 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Summarize the key decision.
+- coach: Before we finish, what did we decide?
   hint: Gunakan To summarize...
   sample_answer: To summarize, we agreed to keep scope limited to the core feature.
   focus: Summarize decision
   expected_keywords:
   - to summarize
   - agreed
-- coach: List action items with owners.
+- coach: Good. Who owns the action items?
   hint: 'Action items are: I''ll..., you''ll...'
   sample_answer: 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
   focus: Action items
@@ -23,7 +23,7 @@ turns:
   - action items
   - I'll
   - you'll
-- coach: Set a next checkpoint.
+- coach: Great. When should we check progress again?
   hint: We'll check progress on ...
   sample_answer: We'll check progress on Thursday.
   focus: Next checkpoint

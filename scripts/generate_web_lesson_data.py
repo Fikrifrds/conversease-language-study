@@ -286,6 +286,8 @@ def collect_coach_turns() -> tuple[dict[str, list[dict[str, Any]]], dict[str, di
                         "hint": str(t.get("hint") or ""),
                         "sampleAnswer": str(t.get("sample_answer") or ""),
                         "focus": str(t.get("focus") or ""),
+                        "expectedKeywords": [str(keyword) for keyword in (t.get("expected_keywords") or [])],
+                        "indonesianExplanation": str(t.get("indonesian_explanation") or ""),
                     }
                     for t in turns
                 ]
@@ -386,7 +388,9 @@ def render_coach_turns(turns_by_slug: dict[str, list[dict[str, Any]]]) -> str:
         for turn in turns_by_slug[slug]:
             lines.append(
                 f"    {{ coach: {js_string(turn['coach'])}, hint: {js_string(turn['hint'])}, "
-                f"sampleAnswer: {js_string(turn['sampleAnswer'])}, focus: {js_string(turn['focus'])} }},"
+                f"sampleAnswer: {js_string(turn['sampleAnswer'])}, focus: {js_string(turn['focus'])}, "
+                f"expectedKeywords: {json.dumps(turn['expectedKeywords'], ensure_ascii=False)}, "
+                f"indonesianExplanation: {js_string(turn['indonesianExplanation'])} }},"
             )
         lines.append("  ],")
         blocks.append("\n".join(lines))

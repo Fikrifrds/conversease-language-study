@@ -1,21 +1,21 @@
 scenario_key: b2_info_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: Let's discuss an article and evaluate the information.
+opening_line: I just read an article about remote work, and I want your take on it.
 learner_goal: 'Discuss information critically: summary, reliability, viewpoint, and response to new info.'
 max_turns: 12
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Summarize the article briefly.
+- coach: I just read an article about remote work and productivity. What was the main point?
   hint: The article is about... The main point is...
   sample_answer: The article is about remote work and productivity. The main point is clear rules improve focus.
   focus: Summary
   expected_keywords:
   - article is about
   - main point
-- coach: Is the source reliable? Explain why and what you'd check.
+- coach: Do you think the source is reliable? Why or why not?
   hint: I'm not sure it's reliable because... I'd check...
   sample_answer: I'm not sure it's reliable because it doesn't cite data. I'd check official reports or reputable outlets.
   focus: Reliability
@@ -23,7 +23,7 @@ turns:
   - reliable
   - because
   - I'd check
-- coach: Now respond to new contradictory information and propose next steps.
+- coach: I found another source that says the opposite. How does that change your view, and what should we do next?
   hint: I wasn't aware... That changes things... I'd like to understand... Can you share...?
   sample_answer: I wasn't aware of that. That changes things. I'd like to understand the methodology. Can you share the link so we can revise our conclusion?
   focus: New info + next steps

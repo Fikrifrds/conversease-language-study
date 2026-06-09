@@ -8,20 +8,20 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Summarize what you heard.
+- coach: "We're dealing with several issues at once: dependencies across teams, time pressure from leadership, and visibility if anything slips."
   hint: Let me make sure I got this...
   sample_answer: 'Let me make sure I got this: we need to manage dependencies, time pressure, and stakeholder visibility.'
   focus: Summary
   expected_keywords:
   - make sure
   - got this
-- coach: Extract the key points.
+- coach: Exactly. We need to keep changes small, communicate clearly, and monitor risk as we go.
   hint: The key points are...
   sample_answer: 'The key points are: keep changes small, communicate clearly, and monitor risk.'
   focus: Key points
   expected_keywords:
   - key points
-- coach: Give a structured response.
+- coach: Given all that, what would your response be?
   hint: Here's how I'd respond...
   sample_answer: 'Here''s how I''d respond: propose phases, share metrics, and set weekly check-ins.'
   focus: Response

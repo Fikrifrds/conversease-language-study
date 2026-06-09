@@ -8,14 +8,14 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Open a topic for today's meeting.
+- coach: What's the first point you want to bring up today?
   hint: I'd like to bring up...
   sample_answer: I'd like to bring up the timeline for the next release.
   focus: Open topic
   expected_keywords:
   - bring up
   - timeline
-- coach: Clarify scope and confirm what is out of scope.
+- coach: Okay. Does this include the admin dashboard work, or is that separate?
   hint: Just to clarify... Does this include...? out of scope...
   sample_answer: Just to clarify, does this include the admin dashboard changes? If not, that's out of scope for now.
   focus: Clarify scope
@@ -23,7 +23,7 @@ turns:
   - clarify
   - include
   - out of scope
-- coach: Give one feedback point and then summarize action items.
+- coach: Thanks. Before we wrap up, do you have any feedback, and what are the action items?
   hint: Overall... I noticed... To summarize... Action items are...
   sample_answer: 'Overall it was clear, but I noticed the intro was long. To summarize, action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
   focus: Feedback + summary

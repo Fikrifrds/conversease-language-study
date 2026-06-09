@@ -23,7 +23,7 @@ turns:
     expected_keywords:
       - i'm
       - assistant
-  - coach: Ask me the same question.
+  - coach: Nice. How about you?
     hint: Tanyakan balik dengan How about you?
     sample_answer: How about you?
     focus: Question back

@@ -2,6 +2,7 @@ import unittest
 
 from app.domain.conversation_practice import (
     ConversationPracticeStore,
+    UnknownLessonSlugError,
     evaluate_answer,
     session_payload,
     session_summary,
@@ -82,6 +83,15 @@ class ConversationPracticeTest(unittest.TestCase):
 
         self.assertIsNotNone(latest)
         self.assertEqual(latest.id, user_session.id)
+
+    def test_create_session_rejects_unknown_lesson_slug(self):
+        store = ConversationPracticeStore()
+
+        with self.assertRaises(UnknownLessonSlugError):
+            store.create_session(
+                demo_user_id="demo-user",
+                lesson_slug="lesson-slug-yang-tidak-ada",
+            )
 
 
 if __name__ == "__main__":

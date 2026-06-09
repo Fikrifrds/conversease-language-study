@@ -31,7 +31,7 @@ turns:
   - surabaya
   indonesian_explanation: 'Bedakan origin dan tempat tinggal sekarang: ''I''m from ...'' dan ''I live
     in ...''.'
-- coach: Nice. Ask me the same question.
+- coach: Nice. How about you?
   hint: 'Tanyakan balik dengan: How about you?'
   sample_answer: How about you?
   focus: Question back

@@ -1,21 +1,21 @@
 scenario_key: c1_final_test_practice
 mode: lesson_practice_coach
 level_code: C1
-opening_line: 'Final test practice: answer my prompts.'
+opening_line: We're almost ready to scale, but I still have concerns.
 learner_goal: Answer C1 prompts with nuance, structure, and precision under pressure.
 max_turns: 14
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Frame the issue in one line.
+- coach: Before we go further, what's the issue in one line?
   hint: Let me frame this...
   sample_answer: 'Let me frame this: we need reliability and stakeholder confidence before scaling.'
   focus: Frame
   expected_keywords:
   - frame
   - reliability
-- coach: Give a nuanced position with a condition.
+- coach: Would you support the rollout now, or only under certain conditions?
   hint: On balance... but only after...
   sample_answer: On balance, I support the rollout, but only after we validate pilot metrics.
   focus: Nuance
@@ -23,7 +23,7 @@ turns:
   - on balance
   - only after
   - validate
-- coach: Label decisions and open questions, then close with next steps.
+- coach: Okay. So what's the decision, what are the open questions, and what should we do next?
   hint: The decision is... The open questions are... Next steps are...
   sample_answer: 'The decision is to run a two-week pilot. The open questions are resourcing and change management. Next steps are: I''ll send a summary today, and we''ll align tomorrow.'
   focus: Structure

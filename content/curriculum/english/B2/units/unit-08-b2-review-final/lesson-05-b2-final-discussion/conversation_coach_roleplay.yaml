@@ -1,28 +1,28 @@
 scenario_key: b2_final_discussion
 mode: lesson_practice_coach
 level_code: B2
-opening_line: We need to decide our approach for next quarter.
+opening_line: We need to decide our approach for next quarter, and leadership wants more features.
 learner_goal: Lead a final discussion from framing to decision and next steps.
 max_turns: 12
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Start by framing the scope and success criteria.
+- coach: Before we decide, can you define the scope and what success looks like?
   hint: Let's define the scope... what does success look like?
-  sample_answer: Great. Let's define the scope and what success looks like.
+  sample_answer: We should keep the scope to the core workflow, and success means fewer incidents without delaying the release.
   focus: Frame
   expected_keywords:
   - scope
   - success
-- coach: Leadership wants new features too. Handle concerns and trade-offs.
+- coach: Leadership still wants new features, and I'm worried we'll overload the team.
   hint: I understand the concern... The trade-off is...
   sample_answer: I understand the concern. The trade-off is speed versus reliability, so we should keep scope tight.
   focus: Concerns + trade-offs
   expected_keywords:
   - understand
   - trade-off
-- coach: Make a recommendation and confirm next steps with timeline.
+- coach: Given all that, what do you recommend, and what are the next steps?
   hint: Given these constraints... Next steps are... today... by Friday.
   sample_answer: 'Given these constraints, I''d recommend a time-boxed pilot. Next steps are: I''ll share a plan today, and you''ll review it by Friday.'
   focus: Decision + next steps

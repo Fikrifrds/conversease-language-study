@@ -22,7 +22,7 @@ turns:
   expected_keywords:
   - main point
   - scope
-- coach: Invite input from the team.
+- coach: Thanks. I'd like to hear your thoughts too.
   hint: Gunakan I'd like to hear your thoughts.
   sample_answer: I'd like to hear your thoughts first, then we can decide.
   focus: Invite input

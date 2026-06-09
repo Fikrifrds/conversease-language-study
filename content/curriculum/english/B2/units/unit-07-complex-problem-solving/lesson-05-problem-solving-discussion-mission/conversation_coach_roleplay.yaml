@@ -1,21 +1,21 @@
 scenario_key: b2_problem_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: We have a complex issue. Lead the discussion.
+opening_line: Conversion dropped after the redesign, and we need to decide what to do.
 learner_goal: Lead a structured problem-solving discussion from framing to recommendation.
 max_turns: 12
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Start by framing the problem and scope.
+- coach: Before we jump to solutions, how would you define the problem and scope?
   hint: Let's define... Can we agree on the scope?
   sample_answer: Let's define the problem statement first. Can we agree on the scope?
   focus: Framing
   expected_keywords:
   - define
   - scope
-- coach: Now explain one possible cause with evidence language.
+- coach: The data shows drop-off after the checkout changes. What could be causing it?
   hint: Based on the data... one possible cause is...
   sample_answer: Based on the data, one possible cause is confusion in checkout after the redesign.
   focus: Causes
@@ -23,7 +23,7 @@ turns:
   - based on
   - data
   - possible
-- coach: Discuss trade-offs and recommend a next step with mitigation.
+- coach: Okay. What trade-off do you see, and what would you recommend next?
   hint: The trade-off is... Given these constraints... We can mitigate it by...
   sample_answer: The trade-off is speed versus reliability. Given these constraints, I'd recommend a two-week pilot. We can mitigate risk by setting clear metrics and a strict timeline.
   focus: Trade-offs + recommendation

@@ -8,7 +8,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Give a nuanced position with a condition.
+- coach: Do you support the plan as it is?
   hint: On balance... but I'd...
   sample_answer: On balance, I support it, but I'd adjust the scope to reduce risk.
   focus: Nuance
@@ -16,7 +16,7 @@ turns:
   - on balance
   - scope
   - risk
-- coach: Be precise about what changes.
+- coach: Okay. To be precise, what would you change?
   hint: To be precise...
   sample_answer: To be precise, I'd keep the core workflow and postpone optional add-ons.
   focus: Precision
@@ -24,7 +24,7 @@ turns:
   - to be precise
   - core
   - postpone
-- coach: Manage expectations and close with next steps.
+- coach: That sounds reasonable. What can you commit to, and what's the next step?
   hint: What I can commit to is... Next steps are...
   sample_answer: 'What I can commit to is a pilot next week. Next steps are: I''ll share a one-page summary today, and we''ll align tomorrow.'
   focus: Commitment + next steps

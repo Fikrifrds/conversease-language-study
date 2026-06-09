@@ -8,21 +8,21 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Frame your argument in one sentence.
+- coach: Give me the short version of your argument.
   hint: Let me frame this...
   sample_answer: 'Let me frame this: the goal is reliability, not just speed.'
   focus: Frame
   expected_keywords:
   - frame
   - goal
-- coach: Name your core assumption.
+- coach: What assumption is that based on?
   hint: The core assumption is that...
   sample_answer: The core assumption is that incidents cost more than delay.
   focus: Assumption
   expected_keywords:
   - assumption
   - incidents
-- coach: Respond under pressure with if/then logic and summarize.
+- coach: If speed matters most, how would you defend that position in short?
   hint: If we accept..., then... In short...
   sample_answer: 'If we accept speed as the priority, then we should time-box a pilot and limit scope. In short: validate with metrics, then expand safely.'
   focus: Pressure response

@@ -1,21 +1,21 @@
 scenario_key: c1_final_conversation
 mode: lesson_practice_coach
 level_code: C1
-opening_line: We need a final decision for next quarter.
+opening_line: We need a decision for next quarter, but people want different things.
 learner_goal: Lead a complex conversation from framing to decision and next steps.
 max_turns: 14
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Frame the conversation goal.
+- coach: Before we decide, what are we optimizing for here?
   hint: Let me frame this...
   sample_answer: 'Let me frame this: we need reliable outcomes and stakeholder confidence before scaling.'
   focus: Frame
   expected_keywords:
   - frame
   - confidence
-- coach: Respond with nuance and catch implied concerns.
+- coach: I agree, but some people still want to move faster, and no one wants to own a visible failure.
   hint: On balance... What I'm hearing is... do you mean X or Y?
   sample_answer: On balance, we can move fast, but only if we limit scope and validate metrics. What I'm hearing is some fear of visibility. Do you mean scope concerns or accountability concerns?
   focus: Nuance + listening
@@ -23,7 +23,7 @@ turns:
   - on balance
   - only if
   - hearing
-- coach: Close with a decision and next steps.
+- coach: Given that, what's your decision, and what should we do next?
   hint: The decision is... Next steps are... today... tomorrow...
   sample_answer: 'The decision is to run a two-week pilot with clear success criteria. Next steps are: I''ll send a one-page plan today, and we''ll align stakeholders tomorrow.'
   focus: Decision + next steps

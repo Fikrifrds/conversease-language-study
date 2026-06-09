@@ -1,27 +1,27 @@
 scenario_key: a2_final_test_practice
 mode: lesson_practice_coach
 level_code: A2
-opening_line: Let's do a quick final practice. Ready?
+opening_line: Let's do one last practice conversation before we finish.
 learner_goal: Respond to 3 mixed prompts using correct A2 patterns.
 max_turns: 10
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Let's do a quick final practice. Ready?
+- coach: Hi. Ready?
   hint: Jawab siap.
   sample_answer: Yes, ready.
   focus: Start practice
   expected_keywords:
   - 'yes'
-- coach: Invite a friend for coffee this weekend.
+- coach: We haven't had coffee in a while.
   hint: Gunakan Do you want to...?
   sample_answer: Do you want to grab coffee this weekend?
   focus: Invitation
   expected_keywords:
   - want to
   - weekend
-- coach: Say a symptom and duration.
+- coach: Maybe, but you don't look well today.
   hint: Gunakan I've had ... for ...
   sample_answer: I've had a cough for two days.
   focus: Symptom + duration
@@ -29,8 +29,8 @@ turns:
   - have had
   - for
 target_phrases:
+- Yes, ready.
 - Do you want to...?
-- Do you have...?
 - I've had... for...
 rubric:
   speaking:

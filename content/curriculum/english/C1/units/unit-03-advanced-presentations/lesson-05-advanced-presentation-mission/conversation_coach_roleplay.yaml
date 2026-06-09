@@ -1,14 +1,14 @@
 scenario_key: c1_advanced_presentation_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: 'Mission: present the proposal and handle questions.'
+opening_line: We're reviewing your proposal this afternoon, so give me the overview first.
 learner_goal: Deliver an advanced presentation with signposting and handle challenging questions.
 max_turns: 14
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Open and frame the topic, then define a key term.
+- coach: Before we get into details, can you frame the proposal and define what you mean by modular architecture?
   hint: Today I'd like to... By X, I mean...
   sample_answer: Today I'd like to walk you through the proposal and why it matters. By 'modular architecture', I mean independent components.
   focus: Framing
@@ -16,7 +16,7 @@ turns:
   - today
   - by
   - i mean
-- coach: State your claim and evidence, then transition to a key trade-off.
+- coach: Okay. What's your main claim, what evidence supports it, and what's the main trade-off?
   hint: The core claim is... The evidence suggests... That brings me to...
   sample_answer: 'The core claim is that this will improve delivery speed. The evidence suggests teams move faster with clear ownership. That brings me to the key trade-off: speed versus reliability.'
   focus: Persuasion + transition
@@ -24,7 +24,7 @@ turns:
   - core claim
   - evidence suggests
   - trade-off
-- coach: Handle a tough question and close with summary + next steps.
+- coach: "Fair question: isn't this going to create extra complexity? How would you answer that, and what are the next steps if we move ahead?"
   hint: That's a fair question... The short answer is... In short... Next steps are...
   sample_answer: 'That''s a fair question. The short answer is: it''s manageable if we pilot first and monitor closely. In short, the benefits outweigh the risks if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review it by Friday.'
   focus: Q&A + close

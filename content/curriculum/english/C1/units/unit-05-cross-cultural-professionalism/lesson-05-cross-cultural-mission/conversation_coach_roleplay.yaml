@@ -1,14 +1,14 @@
 scenario_key: c1_cross_cultural_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: The client seems indirect and uncomfortable with direct feedback.
+opening_line: I want to be respectful, but I'm not sure how direct to be.
 learner_goal: Handle cross-cultural communication end-to-end with tact, clarity, and repair.
 max_turns: 14
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Interpret the client's indirect message and clarify priorities.
+- coach: They sounded polite, but I think they were uncomfortable. How do you read that?
   hint: My sense is that... Before we decide, can we clarify...?
   sample_answer: My sense is that they're signaling concern indirectly. Before we decide, can we clarify whether they prioritize speed or risk reduction?
   focus: Context
@@ -16,14 +16,14 @@ turns:
   - my sense
   - clarify
   - priority
-- coach: Ask a tactful question about feedback preferences.
+- coach: That makes sense. How would you ask about feedback preferences tactfully?
   hint: Would you mind if I ask...?
   sample_answer: Would you mind if I ask how you prefer to receive feedback—writing or a call?
   focus: Tactful question
   expected_keywords:
   - would you mind
   - prefer
-- coach: Repair a misunderstanding and propose a next step.
+- coach: I may have come across too directly. How would you repair that and suggest a next step?
   hint: I may have misunderstood... Just to clarify... How about we...?
   sample_answer: I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request. How about we send a short note and offer a quick call?
   focus: Repair
