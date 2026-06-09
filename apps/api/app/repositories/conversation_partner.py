@@ -177,14 +177,25 @@ class ConversationPartnerRepository:
             key = session.scenario_key
             entry = progress.setdefault(
                 key,
-                {"completed": False, "best_score": None, "has_open_session": False},
+                {
+                    "completed": False,
+                    "best_score": None,
+                    "has_open_session": False,
+                    "session_id": None,
+                },
             )
             summary = session.summary_json if isinstance(session.summary_json, dict) else None
             if session.status == "completed":
                 entry["completed"] = True
+                # Point at the completed session whose transcript we show as
+                # history: prefer the best-scoring one, falling back to any
+                # completed session so a scoreless finish still has a transcript.
                 score = summary.get("overall") if summary else None
                 if score is not None and (entry["best_score"] is None or score > entry["best_score"]):
                     entry["best_score"] = score
+                    entry["session_id"] = session.id
+                elif entry["session_id"] is None:
+                    entry["session_id"] = session.id
             else:
                 entry["has_open_session"] = True
         return progress

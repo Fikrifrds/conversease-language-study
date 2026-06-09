@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { CheckCircle2, RotateCcw } from "lucide-react";
 import { ConversationPartnerChat } from "@/components/conversation-partner-chat";
+import { ConversationPartnerHistory } from "@/components/conversation-partner-history";
 import {
   fetchTopicProgress,
   listPartnerTopics,
@@ -21,6 +22,10 @@ export function ConversationPartnerWorkspace() {
   const [error, setError] = useState("");
   const [progress, setProgress] = useState<TopicProgressMap>({});
   const [resettingKey, setResettingKey] = useState<string | null>(null);
+  // Topic the learner chose to redo this session. While set, we show the fresh
+  // chat instead of the completed-history view even though progress still marks
+  // the topic done (progress refreshes asynchronously after the reset).
+  const [replayKey, setReplayKey] = useState<string | null>(null);
 
   const reloadProgress = useCallback(() => {
     fetchTopicProgress()
@@ -62,6 +67,13 @@ export function ConversationPartnerWorkspace() {
     reloadProgress();
   }, [reloadProgress]);
 
+  function selectTopic(topic: PartnerTopic) {
+    if (topic.key !== activeTopic?.key) {
+      setReplayKey(null);
+    }
+    setActiveTopic(topic);
+  }
+
   async function handleReset(topicKey: string) {
     setResettingKey(topicKey);
     try {
@@ -69,6 +81,22 @@ export function ConversationPartnerWorkspace() {
       if (activeTopic?.key === topicKey) {
         setActiveTopic(null);
       }
+      setReplayKey((current) => (current === topicKey ? null : current));
+      reloadProgress();
+    } catch {
+      /* ignore; keep current state */
+    } finally {
+      setResettingKey(null);
+    }
+  }
+
+  // Redo a completed topic: clear its saved progress, then keep the topic active
+  // and flag it for replay so the fresh chat renders right away.
+  async function handleReplay(topicKey: string) {
+    setResettingKey(topicKey);
+    try {
+      await resetTopicProgress(topicKey);
+      setReplayKey(topicKey);
       reloadProgress();
     } catch {
       /* ignore; keep current state */
@@ -136,7 +164,7 @@ export function ConversationPartnerWorkspace() {
                   >
                     <button
                       type="button"
-                      onClick={() => setActiveTopic(topic)}
+                      onClick={() => selectTopic(topic)}
                       aria-pressed={selected}
                       className="focus-ring block w-full text-left"
                     >
@@ -178,11 +206,31 @@ export function ConversationPartnerWorkspace() {
       </section>
 
       {activeTopic ? (
-        <ConversationPartnerChat
-          key={activeTopic.key}
-          topic={activeTopic}
-          onSessionEnd={reloadProgress}
-        />
+        (() => {
+          const activeProgress = progress[activeTopic.key];
+          const showHistory =
+            activeProgress?.completed &&
+            activeProgress.sessionId &&
+            replayKey !== activeTopic.key;
+          if (showHistory) {
+            return (
+              <ConversationPartnerHistory
+                key={`history-${activeTopic.key}-${activeProgress.sessionId}`}
+                topic={activeTopic}
+                sessionId={activeProgress.sessionId!}
+                onReplay={() => handleReplay(activeTopic.key)}
+                replaying={resettingKey === activeTopic.key}
+              />
+            );
+          }
+          return (
+            <ConversationPartnerChat
+              key={`chat-${activeTopic.key}`}
+              topic={activeTopic}
+              onSessionEnd={reloadProgress}
+            />
+          );
+        })()
       ) : (
         <section className="rounded-lg border border-dashed border-ink/15 bg-paper p-8 text-center text-sm text-ink/50">
           Pilih topik di atas untuk mulai ngobrol.

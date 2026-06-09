@@ -44,6 +44,20 @@ export type TopicProgress = {
   completed: boolean;
   bestScore: number | null;
   hasOpenSession: boolean;
+  // Completed session whose transcript powers the history view, if any.
+  sessionId: string | null;
+};
+
+export type PartnerSessionMessage = { role: "partner" | "user"; text: string };
+
+export type PartnerSessionDetail = {
+  sessionId: string;
+  messages: PartnerSessionMessage[];
+  summary: {
+    summary: string;
+    indonesianExplanation: string;
+    scores: { speaking: number; grammar: number; fluency: number };
+  } | null;
 };
 
 // Keyed by topic key.
@@ -195,6 +209,7 @@ type ApiTopicProgress = {
   completed: boolean;
   best_score: number | null;
   has_open_session: boolean;
+  session_id: string | null;
 };
 
 export async function fetchTopicProgress(): Promise<TopicProgressMap> {
@@ -210,10 +225,43 @@ export async function fetchTopicProgress(): Promise<TopicProgressMap> {
     out[key] = {
       completed: value.completed,
       bestScore: value.best_score,
-      hasOpenSession: value.has_open_session
+      hasOpenSession: value.has_open_session,
+      sessionId: value.session_id ?? null
     };
   }
   return out;
+}
+
+export async function fetchPartnerSession(sessionId: string): Promise<PartnerSessionDetail> {
+  const response = await fetch(
+    `${apiBaseUrl()}/conversation-partner/sessions/${encodeURIComponent(sessionId)}`,
+    { headers: authHeaders() }
+  );
+  if (!response.ok) {
+    return readError(response);
+  }
+  const payload = (await response.json()) as ApiResponse<{
+    session_id: string;
+    messages: { role: "partner" | "user"; text: string }[];
+    summary: {
+      summary?: string;
+      indonesian_explanation?: string;
+      scores?: { speaking: number; grammar: number; fluency: number };
+    } | null;
+  }>;
+  const summary = payload.data.summary;
+  return {
+    sessionId: payload.data.session_id,
+    messages: payload.data.messages,
+    summary:
+      summary && summary.scores
+        ? {
+            summary: summary.summary ?? "",
+            indonesianExplanation: summary.indonesian_explanation ?? "",
+            scores: summary.scores
+          }
+        : null
+  };
 }
 
 export async function resetTopicProgress(topicKey: string): Promise<void> {

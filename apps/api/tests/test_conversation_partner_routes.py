@@ -308,6 +308,8 @@ class ConversationPartnerRoutesTest(unittest.TestCase):
         self.assertIn("order-a-drink", data)
         self.assertTrue(data["order-a-drink"]["completed"])
         self.assertEqual(data["order-a-drink"]["best_score"], 76)
+        # The completed session id is exposed so the UI can load its transcript.
+        self.assertEqual(data["order-a-drink"]["session_id"], done_id)
 
     def test_reset_topic_clears_progress(self):
         self._create_session_with_turn()
