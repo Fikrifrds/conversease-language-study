@@ -55,12 +55,18 @@ function speakExample(text: string) {
 
 export function PronunciationRepeatPractice({ drillMarkdown }: { drillMarkdown: string }) {
   const phrases = useMemo(() => extractRepeatPhrases(drillMarkdown), [drillMarkdown]);
-  const items = phrases.length ? phrases : ["Practice the key phrases from this lesson."];
+  if (!phrases.length) {
+    return (
+      <div className="mt-4 rounded-lg border border-dashed border-ink/15 bg-paper p-4 text-sm leading-6 text-ink/60">
+        Bagian repeat belum tersedia untuk lesson ini.
+      </div>
+    );
+  }
 
   return (
     <div className="mt-4 grid gap-3 md:grid-cols-2">
-      {items.map((phrase, index) => (
-        <RepeatItem key={`${phrase}-${index}`} phrase={phrase} enableExample={phrases.length > 0} />
+      {phrases.map((phrase, index) => (
+        <RepeatItem key={`${phrase}-${index}`} phrase={phrase} enableExample />
       ))}
     </div>
   );
@@ -169,4 +175,3 @@ function RepeatItem({ phrase, enableExample }: { phrase: string; enableExample: 
     </div>
   );
 }
-

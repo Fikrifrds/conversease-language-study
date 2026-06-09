@@ -33,16 +33,28 @@ function sampleDialogueCard(item: ReviewItem, seedKey: string) {
 }
 
 function sampleWritingExample(item: ReviewItem, seedKey: string) {
-  if (!item.pattern) {
+  const lesson = lessonsBySlug[item.lessonSlug];
+  if (!lesson) {
     return null;
   }
-  const base = item.pattern.replace(/\+\s*[a-zA-Z_-]+/g, "...");
-  const suggestions = [
-    `${base}`.replace("...", "Jakarta"),
-    `${base}`.replace("...", "tomorrow")
-  ];
-  const picked = suggestions[stableIndex(`${seedKey}:write`, suggestions.length)];
-  return picked;
+
+  const writingExampleMatch = lesson.writingSupport.match(/```(?:txt)?\n([\s\S]*?)```/);
+  if (writingExampleMatch?.[1]) {
+    return writingExampleMatch[1].trim();
+  }
+
+  if (lesson.prompts.length) {
+    const start = stableIndex(`${seedKey}:write-prompt`, lesson.prompts.length);
+    const promptSlice = Array.from({ length: Math.min(3, lesson.prompts.length) }, (_, index) => {
+      return lesson.prompts[(start + index) % lesson.prompts.length];
+    }).filter(Boolean);
+
+    if (promptSlice.length) {
+      return promptSlice.join("\n");
+    }
+  }
+
+  return item.pattern;
 }
 
 export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedKey: string }) {
@@ -214,4 +226,3 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
     </section>
   );
 }
-

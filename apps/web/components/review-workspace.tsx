@@ -135,7 +135,7 @@ export function ReviewWorkspace() {
                       <p>
                         <span className="font-semibold text-ink">Pola:</span> {item.pattern}
                       </p>
-                      <PatternDrill pattern={item.pattern} seedKey={`${todayKey}:${item.lessonSlug}`} />
+                      <PatternDrill pattern={item.pattern} example={item.phrase} seedKey={`${todayKey}:${item.lessonSlug}`} />
                     </>
                   ) : null}
                   <p className="text-ink/60">
