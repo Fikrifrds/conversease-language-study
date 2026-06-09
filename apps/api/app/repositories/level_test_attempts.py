@@ -21,7 +21,19 @@ class LevelTestAttemptRepository:
         self.db = db
 
     def create_attempt(self, user_id: str, level_code: str) -> LevelTestAttemptModel:
-        evaluation = evaluation_for_level(level_code)
+        normalized_level_code = level_code.upper()
+        existing_attempt = self.db.execute(
+            select(LevelTestAttemptModel)
+            .where(LevelTestAttemptModel.user_id == user_id)
+            .where(LevelTestAttemptModel.level_code == normalized_level_code)
+            .where(LevelTestAttemptModel.status == "in_progress")
+            .order_by(LevelTestAttemptModel.updated_at.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        if existing_attempt is not None:
+            return existing_attempt
+
+        evaluation = evaluation_for_level(level_code, require_published=False)
         now = datetime.utcnow()
         attempt = LevelTestAttemptModel(
             id=f"lta-{uuid4().hex[:16]}",
@@ -47,6 +59,42 @@ class LevelTestAttemptRepository:
         self.db.commit()
         return attempt
 
+    def save_draft_attempt(
+        self,
+        *,
+        user_id: str,
+        attempt_id: str,
+        lesson_completion_percent: Optional[int] = None,
+        scores: Optional[dict[str, int]] = None,
+        responses: Optional[dict[str, Any]] = None,
+    ) -> LevelTestAttemptModel:
+        attempt = self.get_attempt(user_id=user_id, attempt_id=attempt_id)
+        if attempt.status != "in_progress":
+            raise InvalidLevelTestAttemptStateError("Only in-progress attempts can be updated")
+
+        if lesson_completion_percent is not None:
+            attempt.lesson_completion_percent = lesson_completion_percent
+        if scores is not None:
+            attempt.scores_json = sanitize_scores(scores, attempt.evaluation_snapshot_json)
+        if responses is not None:
+            attempt.responses_json = responses
+
+        # Keep a live preview on the draft so the user can resume with context.
+        if attempt.lesson_completion_percent is not None and attempt.scores_json:
+            result = score_attempt(
+                evaluation=attempt.evaluation_snapshot_json,
+                scores=attempt.scores_json,
+                lesson_completion_percent=attempt.lesson_completion_percent,
+            )
+            attempt.overall_score = result.overall_score
+            attempt.passed = result.passed
+            attempt.missing_requirements_json = result.missing_requirements
+            attempt.weak_skills_json = result.weak_skills
+
+        attempt.updated_at = datetime.utcnow()
+        self.db.commit()
+        return attempt
+
     def submit_attempt(
         self,
         *,
@@ -57,7 +105,7 @@ class LevelTestAttemptRepository:
         responses: Optional[dict[str, Any]] = None,
     ) -> LevelTestAttemptModel:
         attempt = self.get_attempt(user_id=user_id, attempt_id=attempt_id)
-        if attempt.status == "submitted":
+        if attempt.status != "in_progress":
             raise InvalidLevelTestAttemptStateError("Level test attempt has already been submitted")
 
         sanitized_scores = sanitize_scores(scores, attempt.evaluation_snapshot_json)
@@ -173,11 +221,11 @@ class LevelTestAttemptRepository:
         )
 
 
-def evaluation_for_level(level_code: str) -> dict[str, Any]:
+def evaluation_for_level(level_code: str, *, require_published: bool = True) -> dict[str, Any]:
     evaluation = load_final_evaluation(level_code.upper())
     if evaluation is None:
         raise KeyError(level_code)
-    if evaluation.get("status") != "published":
+    if require_published and evaluation.get("status") != "published":
         raise InvalidLevelTestAttemptStateError("Level test is not published")
     return evaluation
 

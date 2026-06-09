@@ -49,6 +49,45 @@ class LevelTestAttemptRepositoryTest(unittest.TestCase):
             self.assertEqual(stored.evaluation_snapshot_json["level_code"], "A1")
             self.assertEqual(stored.responses_json["note"], "beta self-check")
 
+    def test_create_attempt_reuses_existing_in_progress_attempt(self):
+        with self.SessionLocal() as db:
+            repository = LevelTestAttemptRepository(db)
+
+            first_attempt = repository.create_attempt(user_id="user-123", level_code="A1")
+            second_attempt = repository.create_attempt(user_id="user-123", level_code="A1")
+
+            self.assertEqual(first_attempt.id, second_attempt.id)
+
+    def test_can_save_draft_for_planned_level_attempt(self):
+        with self.SessionLocal() as db:
+            repository = LevelTestAttemptRepository(db)
+
+            attempt = repository.create_attempt(user_id="user-123", level_code="A2")
+            updated = repository.save_draft_attempt(
+                user_id="user-123",
+                attempt_id=attempt.id,
+                lesson_completion_percent=82,
+                scores={
+                    "listening": 70,
+                    "speaking_conversation": 72,
+                    "pronunciation_fluency": 68,
+                    "useful_phrases": 71,
+                    "grammar": 69,
+                    "reading": 70,
+                    "writing": 67,
+                },
+                responses={
+                    "listening": {"answer": "The speakers are planning to meet on Saturday."},
+                    "writing": {"answer": "Hi, I can join on Saturday because I am free then."},
+                },
+            )
+
+            self.assertEqual(updated.level_code, "A2")
+            self.assertEqual(updated.status, "in_progress")
+            self.assertEqual(updated.lesson_completion_percent, 82)
+            self.assertEqual(updated.responses_json["writing"]["answer"], "Hi, I can join on Saturday because I am free then.")
+            self.assertIsNotNone(updated.overall_score)
+
     def test_submitted_attempt_cannot_be_submitted_twice(self):
         with self.SessionLocal() as db:
             repository = LevelTestAttemptRepository(db)

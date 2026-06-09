@@ -192,8 +192,8 @@ export function UserAccountMenu() {
               <MenuLink href={productRoutes.billing} icon={CreditCard} onClick={() => setOpen(false)}>
                 Tagihan & Paket
               </MenuLink>
-              <MenuLink href={productRoutes.levelTestA1} icon={Award} onClick={() => setOpen(false)}>
-                A1 Test
+              <MenuLink href={productRoutes.levelTests} icon={Award} onClick={() => setOpen(false)}>
+                Level Tests
               </MenuLink>
               <MenuLink href="/settings" icon={Settings} onClick={() => setOpen(false)}>
                 Pengaturan

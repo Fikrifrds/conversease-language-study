@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { ClipboardCheck, RefreshCcw, Save, ShieldCheck } from "lucide-react";
+import { CEFR_LEVELS } from "@conversease/shared";
 import {
   listAdminLevelTestAttempts,
   scoreAdminLevelTestAttempt
@@ -43,6 +44,7 @@ function statusTone(status: string) {
 
 export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser }) {
   const [reviewerName, setReviewerName] = useState(adminUser.name || adminUser.email);
+  const [levelCode, setLevelCode] = useState("A1");
   const [status, setStatus] = useState("submitted");
   const [attempts, setAttempts] = useState<LevelTestAttempt[]>([]);
   const [selectedAttempt, setSelectedAttempt] = useState<LevelTestAttempt | null>(null);
@@ -69,9 +71,9 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
 
   useEffect(() => {
     void loadAttempts();
-    // Load once when this admin screen opens.
+    // Refresh when filters change.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [levelCode, status]);
 
   useEffect(() => {
     if (!selectedAttempt) {
@@ -111,14 +113,14 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
     );
   }, [attempts]);
 
-  async function loadAttempts(input?: { nextStatus?: string }) {
+  async function loadAttempts(input?: { nextStatus?: string; nextLevelCode?: string }) {
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
       const nextAttempts = await listAdminLevelTestAttempts({
-        levelCode: "A1",
+        levelCode: input?.nextLevelCode ?? levelCode,
         status: input?.nextStatus ?? status,
         limit: 100
       });
@@ -175,9 +177,9 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin Review</p>
-              <h1 className="mt-1 text-2xl font-semibold">A1 Test Attempts</h1>
+              <h1 className="mt-1 text-2xl font-semibold">{levelCode} Test Attempts</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
-                Review submitted attempts dan simpan skor official untuk beta.
+                Review attempt per level dan simpan skor official user.
               </p>
             </div>
           </div>
@@ -186,6 +188,20 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
             <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
               Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
             </div>
+            <label className="text-sm font-medium text-ink/70">
+              Level
+              <select
+                value={levelCode}
+                onChange={(event) => setLevelCode(event.target.value)}
+                className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
+              >
+                {CEFR_LEVELS.map((level) => (
+                  <option key={level} value={level}>
+                    {level}
+                  </option>
+                ))}
+              </select>
+            </label>
             <label className="text-sm font-medium text-ink/70">
               Reviewed by
               <input
@@ -218,7 +234,7 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
                 type="button"
                 onClick={() => {
                   setStatus(option.value);
-                  void loadAttempts({ nextStatus: option.value });
+                  void loadAttempts({ nextStatus: option.value, nextLevelCode: levelCode });
                 }}
                 className={`focus-ring min-h-10 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60 ${
                   status === option.value ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"

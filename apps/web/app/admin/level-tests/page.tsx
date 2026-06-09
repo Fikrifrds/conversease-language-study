@@ -33,10 +33,10 @@ export default function AdminLevelTestsPage() {
                   Users
                 </Link>
                 <Link
-                  href="/level-test/A1"
+                  href="/level-tests"
                   className="focus-ring inline-flex h-10 items-center justify-center rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf"
                 >
-                  A1 Test
+                  Level Tests
                 </Link>
               </nav>
             </div>

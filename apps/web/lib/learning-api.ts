@@ -535,6 +535,26 @@ export async function startLevelTestAttempt(levelCode: string): Promise<LevelTes
   return mapLevelTestAttempt(response.data);
 }
 
+export async function saveLevelTestDraft(input: {
+  attemptId: string;
+  lessonCompletionPercent?: number;
+  scores?: Record<string, number>;
+  responses?: Record<string, unknown>;
+}): Promise<LevelTestAttempt> {
+  const response = await requestJson<ApiResponse<ApiLevelTestAttempt>>(
+    `/level-test-attempts/${input.attemptId}/draft`,
+    {
+      method: "PATCH",
+      body: JSON.stringify({
+        lesson_completion_percent: input.lessonCompletionPercent,
+        scores: input.scores,
+        responses: input.responses
+      })
+    }
+  );
+  return mapLevelTestAttempt(response.data);
+}
+
 export async function submitLevelTestAttempt(input: {
   attemptId: string;
   lessonCompletionPercent: number;

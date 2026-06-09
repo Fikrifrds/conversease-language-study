@@ -60,6 +60,12 @@ class LevelTestSubmitPayload(BaseModel):
     responses: Optional[dict] = None
 
 
+class LevelTestDraftPayload(BaseModel):
+    lesson_completion_percent: Optional[int] = Field(default=None, ge=0, le=100)
+    scores: Optional[dict[str, int]] = None
+    responses: Optional[dict] = None
+
+
 class AdminLevelTestScorePayload(BaseModel):
     reviewed_by: str = Field(default="admin", min_length=2, max_length=160)
     lesson_completion_percent: Optional[int] = Field(default=None, ge=0, le=100)
@@ -95,21 +101,21 @@ def lesson_progress_payload(model: LessonProgressModel, lesson: dict) -> dict:
 
 @router.get("/levels")
 async def list_levels() -> dict:
+    entries = []
+    for course in all_courses():
+        evaluation = load_final_evaluation(course["level_code"])
+        evaluation_status = (evaluation or {}).get("status", "planned")
+        entries.append(
+            {
+                "code": course["level_code"],
+                "name": course["course_title"],
+                "status": "active" if evaluation_status == "published" else "beta",
+                "language_code": course["language_code"],
+            }
+        )
+
     return {
-        "data": [
-            {
-                "code": "A1",
-                "name": "Start Simple Conversations",
-                "status": "active",
-                "language_code": "en",
-            },
-            {
-                "code": "A2",
-                "name": "Everyday Conversations",
-                "status": "coming_soon",
-                "language_code": "en",
-            },
-        ]
+        "data": entries
     }
 
 
@@ -470,6 +476,29 @@ async def submit_level_test_attempt(
     return {"data": level_test_attempt_payload(attempt)}
 
 
+@router.patch("/level-test-attempts/{attempt_id}/draft")
+async def save_level_test_attempt_draft(
+    attempt_id: str,
+    payload: LevelTestDraftPayload,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        attempt = LevelTestAttemptRepository(db).save_draft_attempt(
+            user_id=current_user.id,
+            attempt_id=attempt_id,
+            lesson_completion_percent=payload.lesson_completion_percent,
+            scores=payload.scores,
+            responses=payload.responses,
+        )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Level test attempt not found") from exc
+    except InvalidLevelTestAttemptStateError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+
+    return {"data": level_test_attempt_payload(attempt)}
+
+
 @router.get("/level-test-attempts/{attempt_id}/report")
 async def get_level_test_attempt_report(
     attempt_id: str,
@@ -487,9 +516,11 @@ async def get_level_test_attempt_report(
     return {"data": level_test_attempt_payload(attempt)}
 
 
-@router.post("/level-tests/A1/attempts/preview")
-async def preview_a1_level_attempt(payload: dict) -> dict:
-    evaluation = load_final_evaluation("A1")
+@router.post("/level-tests/{level_code}/attempts/preview")
+async def preview_level_attempt(level_code: str, payload: dict) -> dict:
+    evaluation = load_final_evaluation(level_code.upper())
+    if evaluation is None:
+        raise HTTPException(status_code=404, detail="Level test not found")
     scores = sanitize_scores(payload.get("scores", {}), evaluation)
     lesson_completion_percent = int(payload.get("lesson_completion_percent", 0))
     result = score_attempt(

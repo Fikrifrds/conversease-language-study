@@ -19,8 +19,13 @@ export const productRoutes = {
   pricing: "/pricing",
   billing: "/billing",
   progress: "/progress",
+  levelTests: "/level-tests",
   levelTestA1: "/level-test/A1"
 } as const;
+
+export function levelTestRoute(levelCode: string) {
+  return `/level-test/${levelCode.toUpperCase()}`;
+}
 
 export const a1Thresholds = {
   overall: 70,

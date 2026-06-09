@@ -129,6 +129,17 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_levels_endpoint_lists_all_authored_levels(self):
+        client = TestClient(create_app())
+
+        response = client.get("/api/levels")
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()["data"]
+        self.assertEqual([entry["code"] for entry in data], ["A1", "A2", "B1", "B2", "C1"])
+        self.assertEqual(data[0]["status"], "active")
+        self.assertTrue(all(entry["status"] in {"active", "beta"} for entry in data))
+
     def test_completing_last_level_lesson_sends_level_up_email(self):
         from unittest.mock import AsyncMock
 
@@ -346,6 +357,28 @@ class LearningRoutesTest(unittest.TestCase):
         self.assertTrue(data["passed"])
         self.assertEqual(data["overall_score"], 70)
 
+    def test_planned_level_preview_is_available_for_take_test_flow(self):
+        client = TestClient(create_app())
+
+        response = client.post(
+            "/api/level-tests/A2/attempts/preview",
+            json={
+                "lesson_completion_percent": 85,
+                "scores": {
+                    "listening": 70,
+                    "speaking_conversation": 70,
+                    "pronunciation_fluency": 70,
+                    "useful_phrases": 70,
+                    "grammar": 70,
+                    "reading": 70,
+                    "writing": 70,
+                },
+            },
+        )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["overall_score"], 70)
+
     def test_authenticated_user_can_start_submit_and_read_level_test_report(self):
         engine = create_engine(
             "sqlite:///:memory:",
@@ -387,9 +420,30 @@ class LearningRoutesTest(unittest.TestCase):
                 )
                 db.commit()
 
-            started = client.post("/api/level-tests/A1/attempts", headers=headers)
+            started = client.post("/api/level-tests/A2/attempts", headers=headers)
             self.assertEqual(started.status_code, 200)
             attempt_id = started.json()["data"]["id"]
+
+            saved_draft = client.patch(
+                f"/api/level-test-attempts/{attempt_id}/draft",
+                headers=headers,
+                json={
+                    "lesson_completion_percent": 82,
+                    "scores": {
+                        "listening": 68,
+                        "speaking_conversation": 70,
+                        "pronunciation_fluency": 67,
+                        "useful_phrases": 70,
+                        "grammar": 69,
+                        "reading": 71,
+                        "writing": 70,
+                    },
+                    "responses": {
+                        "listening": {"answer": "They are planning an activity for the weekend."},
+                        "writing": {"answer": "Hi, I can join on Saturday because I am free."},
+                    },
+                },
+            )
 
             submitted = client.post(
                 f"/api/level-test-attempts/{attempt_id}/submit",
@@ -397,21 +451,21 @@ class LearningRoutesTest(unittest.TestCase):
                 json={
                     "lesson_completion_percent": 85,
                     "scores": {
-                        "listening": 70,
-                        "speaking_conversation": 70,
-                        "pronunciation_fluency": 70,
-                        "useful_phrases": 70,
-                        "grammar": 70,
-                        "reading": 70,
-                        "writing": 70,
+                        "listening": 75,
+                        "speaking_conversation": 75,
+                        "pronunciation_fluency": 74,
+                        "useful_phrases": 75,
+                        "grammar": 74,
+                        "reading": 75,
+                        "writing": 74,
                     },
                     "responses": {"source": "test"},
                 },
             )
             report = client.get(f"/api/level-test-attempts/{attempt_id}/report", headers=headers)
-            attempts = client.get("/api/me/level-test-attempts?level_code=A1", headers=headers)
+            attempts = client.get("/api/me/level-test-attempts?level_code=A2", headers=headers)
             admin_attempts = client.get(
-                "/api/admin/level-test-attempts?level_code=A1&status=submitted",
+                "/api/admin/level-test-attempts?level_code=A2&status=submitted",
                 headers=admin_headers,
             )
             admin_scored = client.post(
@@ -433,6 +487,9 @@ class LearningRoutesTest(unittest.TestCase):
                 },
             )
 
+            self.assertEqual(saved_draft.status_code, 200)
+            self.assertEqual(saved_draft.json()["data"]["status"], "in_progress")
+            self.assertEqual(saved_draft.json()["data"]["responses"]["writing"]["answer"], "Hi, I can join on Saturday because I am free.")
             self.assertEqual(submitted.status_code, 200)
             self.assertEqual(submitted.json()["data"]["status"], "submitted")
             self.assertTrue(submitted.json()["data"]["passed"])
