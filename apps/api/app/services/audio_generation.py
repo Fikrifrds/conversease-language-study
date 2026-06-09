@@ -20,6 +20,7 @@ import yaml
 
 from app.core.config import settings
 from app.data.curriculum import curriculum_root, production_tracker_path
+from app.db.exam_models import ExamItemModel, ExamSectionModel, ExamTemplateModel
 
 
 MINIMAX_TTS_MODELS = (
@@ -470,6 +471,92 @@ async def generate_voice_preview_audio(
     }
 
 
+async def generate_exam_item_listening_audio(
+    *,
+    item: ExamItemModel,
+    exam_template: ExamTemplateModel,
+    section: ExamSectionModel,
+    model: Optional[str] = None,
+    voice_id: Optional[str] = None,
+    speed: float = 1.0,
+    generated_by: str = "admin",
+) -> dict[str, Any]:
+    if not settings.minimax_api_key:
+        raise AudioGenerationError("minimax_api_key_missing")
+    if not s3_configured():
+        raise AudioGenerationError("s3_config_missing")
+    if section.code.upper() != "LISTENING":
+        raise AudioGenerationError("exam_item_not_listening")
+
+    source_text = (item.stimulus_text or item.prompt_text or "").strip()
+    if len(source_text) < 8:
+        raise AudioGenerationError("exam_item_audio_source_empty")
+    if len(source_text) >= 10000:
+        raise AudioGenerationError("exam_item_audio_source_too_long")
+
+    selected_model = normalized_model(model or settings.minimax_tts_model)
+    selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
+    if not selected_voice_id:
+        raise AudioGenerationError("minimax_voice_id_missing")
+
+    dialogue_turns = dialogue_turns_from_text(source_text)
+    if len(dialogue_turns) >= 2:
+        generated = await synthesize_dialogue_minimax_tts(
+            turns=dialogue_turns,
+            model=selected_model,
+            fallback_voice_id=selected_voice_id,
+            speed=speed,
+            language_boost=settings.minimax_tts_language_boost,
+        )
+    else:
+        generated = await synthesize_minimax_tts(
+            text=text_to_tts_text(source_text),
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=speed,
+            language_boost=settings.minimax_tts_language_boost,
+        )
+
+    generated_at = datetime.now(timezone.utc)
+    object_key = exam_audio_object_key(
+        exam_template=exam_template,
+        section=section,
+        item=item,
+        voice_id=selected_voice_id,
+        generated_at=generated_at,
+        extension=generated.audio_format,
+    )
+    audio_url = upload_audio_to_s3(
+        audio_bytes=generated.audio_bytes,
+        object_key=object_key,
+        content_type=content_type_for_audio_format(generated.audio_format),
+    )
+    playback_url = audio_playback_url(audio_url=audio_url, storage_key=object_key)
+
+    return {
+        "item_id": item.id,
+        "template_id": exam_template.id,
+        "template_code": exam_template.code,
+        "section_id": section.id,
+        "section_code": section.code,
+        "prompt_text": item.prompt_text,
+        "audio_url": audio_url,
+        "playback_url": playback_url,
+        "object_key": object_key,
+        "duration_seconds": generated.duration_seconds,
+        "audio_format": generated.audio_format,
+        "audio_size": generated.audio_size,
+        "model": selected_model,
+        "voice_id": generated.voice_id,
+        "speaker_voices": generated.speaker_voices,
+        "line_count": generated.line_count,
+        "trace_id": generated.trace_id,
+        "usage_characters": generated.usage_characters,
+        "generated_by": generated_by,
+        "generated_at": generated_at.isoformat(),
+    }
+
+
 async def synthesize_partner_reply_audio(
     *,
     text: str,
@@ -747,6 +834,36 @@ def listening_script_to_dialogue_turns(path: Path) -> list[DialogueTurn]:
     if turns and len(total_text) >= 10000:
         raise AudioGenerationError("listening_script_too_long_for_sync_tts")
     return turns
+
+
+def dialogue_turns_from_text(value: str) -> list[DialogueTurn]:
+    raw_text = value.strip()
+    turns: list[DialogueTurn] = []
+    for raw_line in raw_text.splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+        match = re.match(r"^\*{0,2}([^:*]{1,80}):\*{0,2}\s*(.+)$", line)
+        if not match:
+            continue
+        speaker = clean_speaker_name(match.group(1))
+        text = clean_dialogue_text(match.group(2))
+        if speaker and text:
+            turns.append(DialogueTurn(speaker=speaker, text=text))
+
+    total_text = "\n".join(turn.text for turn in turns).strip()
+    if turns and len(total_text) >= 10000:
+        raise AudioGenerationError("exam_item_audio_source_too_long")
+    return turns
+
+
+def text_to_tts_text(value: str) -> str:
+    text = value.strip()
+    if len(text) < 8:
+        raise AudioGenerationError("exam_item_audio_source_empty")
+    if len(text) >= 10000:
+        raise AudioGenerationError("exam_item_audio_source_too_long")
+    return text
 
 
 def clean_speaker_name(value: str) -> str:
@@ -1107,6 +1224,27 @@ def audio_object_key(
         "conversease/audio/"
         f"{lesson.language}/{lesson.level_code}/{lesson.unit_key}/{lesson.lesson_key}/"
         f"listening-{safe_voice_id}-{timestamp}.{extension}"
+    )
+
+
+def exam_audio_object_key(
+    *,
+    exam_template: ExamTemplateModel,
+    section: ExamSectionModel,
+    item: ExamItemModel,
+    voice_id: str,
+    generated_at: datetime,
+    extension: str,
+) -> str:
+    safe_voice_id = re.sub(r"[^A-Za-z0-9_.-]+", "-", voice_id).strip("-")
+    safe_template_code = re.sub(r"[^A-Za-z0-9_.-]+", "-", exam_template.code).strip("-")
+    safe_section_code = re.sub(r"[^A-Za-z0-9_.-]+", "-", section.code).strip("-")
+    timestamp = generated_at.strftime("%Y%m%dT%H%M%SZ")
+    extension = re.sub(r"[^a-z0-9]+", "", extension.lower()) or "mp3"
+    return (
+        "conversease/exams/audio/"
+        f"{exam_template.level_code}/{safe_template_code}/{safe_section_code}/"
+        f"item-{item.sequence_order:03d}-{safe_voice_id}-{timestamp}.{extension}"
     )
 
 

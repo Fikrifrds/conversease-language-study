@@ -47,6 +47,11 @@ class ExamAlreadySubmittedError(ExamServiceError):
     pass
 
 
+class ExamItemNotFoundError(ExamServiceError):
+    """Exam item not found."""
+    pass
+
+
 class ExamExpiredError(ExamServiceError):
     """Exam session expired."""
     pass
@@ -219,6 +224,32 @@ class ExamService:
             .order_by(ExamItemModel.sequence_order)
         )
         return list(result.scalars().all())
+
+    def get_exam_item(self, item_id: str) -> ExamItemModel:
+        """Get a single exam item by ID."""
+        result = self.db.execute(select(ExamItemModel).where(ExamItemModel.id == item_id))
+        item = result.scalar_one_or_none()
+        if not item:
+            raise ExamItemNotFoundError(f"Exam item {item_id} not found")
+        return item
+
+    def update_exam_item_audio(
+        self,
+        *,
+        item_id: str,
+        stimulus_audio_url: str,
+        audio_metadata: dict,
+    ) -> ExamItemModel:
+        """Persist generated audio data on an exam item."""
+        item = self.get_exam_item(item_id)
+        item.stimulus_audio_url = stimulus_audio_url
+        item.config_json = {
+            **(item.config_json or {}),
+            "audio_generation": audio_metadata,
+        }
+        item.updated_at = datetime.utcnow()
+        self.db.commit()
+        return item
 
     # =========================================================================
     # Exam Session Lifecycle

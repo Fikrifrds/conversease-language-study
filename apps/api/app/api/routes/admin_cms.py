@@ -1,12 +1,15 @@
 from __future__ import annotations
 
+from datetime import datetime
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
 from pydantic import BaseModel, Field
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
+from app.db.exam_models import ExamItemModel, ExamSectionModel, ExamTemplateModel, MediaArtifactModel
 from app.db.session import get_db
 from app.data.admin_cms import (
     AdminCmsError,
@@ -24,10 +27,12 @@ from app.services.audio_generation import (
     AudioGenerationError,
     audio_generation_settings,
     find_lesson_audio_reference,
+    generate_exam_item_listening_audio,
     generate_lesson_listening_audio,
     read_yaml_mapping,
 )
 from app.services.audio_preview_cache import get_or_generate_voice_preview, list_voice_preview_cache
+from app.services.exam_service import ExamItemNotFoundError, ExamService
 
 
 router = APIRouter()
@@ -71,6 +76,14 @@ class VoicePreviewPayload(BaseModel):
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
     sample_text: Optional[str] = Field(default=None, min_length=8, max_length=500)
     force: bool = False
+
+
+class ExamAudioBulkGenerationPayload(BaseModel):
+    generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    model: Optional[str] = Field(default=None, max_length=40)
+    voice_id: Optional[str] = Field(default=None, max_length=160)
+    speed: float = Field(default=1.0, ge=0.5, le=2.0)
+    only_missing: bool = True
 
 
 @router.get("/admin/cms/summary")
@@ -232,6 +245,180 @@ async def generate_cms_lesson_listening_audio(
         raise audio_generation_http_error(exc) from exc
 
 
+@router.get("/admin/cms/exams/templates")
+async def list_exam_audio_templates(
+    status: Optional[str] = Query(default=None, max_length=32),
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    query = select(ExamTemplateModel).order_by(ExamTemplateModel.created_at.desc())
+    if status:
+        query = query.where(ExamTemplateModel.status == status)
+
+    templates = db.execute(query).scalars().all()
+    return {"data": [serialize_exam_template_audio(template, db) for template in templates]}
+
+
+@router.post("/admin/cms/exams/items/{item_id}/audio/listening")
+async def generate_exam_item_audio(
+    item_id: str,
+    payload: AudioGenerationPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    service = ExamService(db)
+    try:
+        item = service.get_exam_item(item_id)
+    except ExamItemNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+
+    section = db.get(ExamSectionModel, item.section_id)
+    template = db.get(ExamTemplateModel, item.exam_template_id)
+    if section is None or template is None:
+        raise HTTPException(status_code=404, detail="exam_item_dependencies_not_found")
+
+    before_payload = serialize_exam_item_audio(item)
+    try:
+        result = await generate_exam_item_listening_audio(
+            item=item,
+            exam_template=template,
+            section=section,
+            model=payload.model,
+            voice_id=payload.voice_id,
+            speed=payload.speed,
+            generated_by=admin_display_name(payload.generated_by, admin),
+        )
+    except AudioGenerationError as exc:
+        raise audio_generation_http_error(exc) from exc
+
+    service.update_exam_item_audio(
+        item_id=item.id,
+        stimulus_audio_url=result["audio_url"],
+        audio_metadata={
+            "playback_url": result["playback_url"],
+            "object_key": result["object_key"],
+            "duration_seconds": result["duration_seconds"],
+            "audio_format": result["audio_format"],
+            "audio_size": result["audio_size"],
+            "provider": "minimax",
+            "model": result["model"],
+            "voice_id": result["voice_id"],
+            "speaker_voices": result["speaker_voices"],
+            "line_count": result["line_count"],
+            "trace_id": result["trace_id"],
+            "usage_characters": result["usage_characters"],
+            "generated_by": result["generated_by"],
+            "generated_at": result["generated_at"],
+        },
+    )
+
+    now = datetime.utcnow()
+    artifact = MediaArtifactModel(
+        id=service._generate_id(),
+        owner_type="exam_item",
+        owner_id=item.id,
+        artifact_type="listening_prompt_audio",
+        file_url=result["audio_url"],
+        object_key=result["object_key"],
+        mime_type="audio/wav" if result["audio_format"] == "wav" else "audio/mpeg",
+        file_size_bytes=result["audio_size"],
+        duration_seconds=result["duration_seconds"],
+        metadata_json={
+            "template_id": template.id,
+            "template_code": template.code,
+            "section_id": section.id,
+            "section_code": section.code,
+            "provider": "minimax",
+            "model": result["model"],
+            "voice_id": result["voice_id"],
+            "speaker_voices": result["speaker_voices"],
+            "trace_id": result["trace_id"],
+        },
+        created_at=now,
+        updated_at=now,
+    )
+    db.add(artifact)
+    db.commit()
+
+    updated_item = service.get_exam_item(item.id)
+    revision = ContentRevisionRepository(db).record_revision(
+        resource_type="exam_audio",
+        resource_key=item.id,
+        action="generate",
+        changed_by=admin_display_name(payload.generated_by, admin),
+        before_payload=before_payload,
+        after_payload=serialize_exam_item_audio(updated_item),
+        metadata={
+            "source": "admin_exam_audio",
+            "provider": "minimax",
+            "model": result["model"],
+            "voice_id": result["voice_id"],
+            "storage_key": result["object_key"],
+            "template_id": template.id,
+            "template_code": template.code,
+        },
+    )
+    return {"data": serialize_exam_item_audio(updated_item), "revision": revision_payload(revision)}
+
+
+@router.post("/admin/cms/exams/templates/{template_id}/audio/listening")
+async def generate_exam_template_audio(
+    template_id: str,
+    payload: ExamAudioBulkGenerationPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    template = db.get(ExamTemplateModel, template_id)
+    if template is None:
+        raise HTTPException(status_code=404, detail="exam_template_not_found")
+
+    section_ids = [
+        section.id
+        for section in db.execute(
+            select(ExamSectionModel)
+            .where(ExamSectionModel.exam_template_id == template_id)
+            .where(ExamSectionModel.code == "LISTENING")
+        )
+        .scalars()
+        .all()
+    ]
+    if not section_ids:
+        raise HTTPException(status_code=422, detail="listening_section_not_found")
+
+    query = (
+        select(ExamItemModel)
+        .where(ExamItemModel.section_id.in_(section_ids))
+        .order_by(ExamItemModel.sequence_order.asc())
+    )
+    if payload.only_missing:
+        query = query.where(ExamItemModel.stimulus_audio_url.is_(None))
+
+    items = db.execute(query).scalars().all()
+    results = []
+    for item in items:
+        result = await generate_exam_item_audio(
+            item.id,
+            AudioGenerationPayload(
+                generated_by=payload.generated_by,
+                model=payload.model,
+                voice_id=payload.voice_id,
+                speed=payload.speed,
+            ),
+            admin,
+            db,
+        )
+        results.append(result["data"])
+
+    return {
+        "data": {
+            "template_id": template.id,
+            "template_code": template.code,
+            "generated_count": len(results),
+            "items": results,
+        }
+    }
+
+
 @router.get("/admin/cms/email-templates/{template_key}")
 async def get_cms_email_template(
     template_key: str,
@@ -362,3 +549,51 @@ def admin_display_name(value: Optional[str], admin: AdminActor) -> str:
     if clean_value and clean_value.lower() != "admin":
         return clean_value
     return admin.display_name
+
+
+def serialize_exam_template_audio(template: ExamTemplateModel, db: Session) -> dict:
+    sections = (
+        db.execute(
+            select(ExamSectionModel)
+            .where(ExamSectionModel.exam_template_id == template.id)
+            .order_by(ExamSectionModel.sequence_order.asc())
+        )
+        .scalars()
+        .all()
+    )
+    listening_sections = [section for section in sections if section.code.upper() == "LISTENING"]
+    listening_items = (
+        db.execute(
+            select(ExamItemModel)
+            .where(ExamItemModel.section_id.in_([section.id for section in listening_sections] or [""]))
+            .order_by(ExamItemModel.sequence_order.asc())
+        )
+        .scalars()
+        .all()
+    )
+    return {
+        "id": template.id,
+        "code": template.code,
+        "level_code": template.level_code,
+        "title": template.title,
+        "status": template.status,
+        "duration_minutes": template.duration_minutes,
+        "listening_item_count": len(listening_items),
+        "listening_audio_ready_count": len([item for item in listening_items if item.stimulus_audio_url]),
+        "listening_items": [serialize_exam_item_audio(item) for item in listening_items],
+    }
+
+
+def serialize_exam_item_audio(item: ExamItemModel) -> dict:
+    audio_generation = (item.config_json or {}).get("audio_generation", {})
+    return {
+        "id": item.id,
+        "section_id": item.section_id,
+        "sequence_order": item.sequence_order,
+        "item_type": item.item_type,
+        "prompt_text": item.prompt_text,
+        "stimulus_text": item.stimulus_text,
+        "stimulus_audio_url": item.stimulus_audio_url,
+        "audio_ready": bool(item.stimulus_audio_url),
+        "audio_metadata": audio_generation if isinstance(audio_generation, dict) else {},
+    }

@@ -164,6 +164,30 @@ export type AdminGeneratedAudio = {
   lineCount: number;
 };
 
+export type AdminExamListeningItem = {
+  id: string;
+  sectionId: string;
+  sequenceOrder: number;
+  itemType: string;
+  promptText: string;
+  stimulusText: string | null;
+  stimulusAudioUrl: string | null;
+  audioReady: boolean;
+  audioMetadata: Record<string, unknown>;
+};
+
+export type AdminExamAudioTemplate = {
+  id: string;
+  code: string;
+  levelCode: string;
+  title: string;
+  status: string;
+  durationMinutes: number;
+  listeningItemCount: number;
+  listeningAudioReadyCount: number;
+  listeningItems: AdminExamListeningItem[];
+};
+
 export type AdminVoicePreviewAudio = {
   id: string;
   provider: string;
@@ -403,6 +427,30 @@ type ApiAdminVoicePreviewAudio = {
   cached: boolean;
 };
 
+type ApiAdminExamListeningItem = {
+  id: string;
+  section_id: string;
+  sequence_order: number;
+  item_type: string;
+  prompt_text: string;
+  stimulus_text: string | null;
+  stimulus_audio_url: string | null;
+  audio_ready: boolean;
+  audio_metadata: Record<string, unknown>;
+};
+
+type ApiAdminExamAudioTemplate = {
+  id: string;
+  code: string;
+  level_code: string;
+  title: string;
+  status: string;
+  duration_minutes: number;
+  listening_item_count: number;
+  listening_audio_ready_count: number;
+  listening_items: ApiAdminExamListeningItem[];
+};
+
 function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
@@ -635,6 +683,34 @@ function mapVoicePreviewAudio(audio: ApiAdminVoicePreviewAudio): AdminVoicePrevi
   };
 }
 
+function mapExamListeningItem(item: ApiAdminExamListeningItem): AdminExamListeningItem {
+  return {
+    id: item.id,
+    sectionId: item.section_id,
+    sequenceOrder: item.sequence_order,
+    itemType: item.item_type,
+    promptText: item.prompt_text,
+    stimulusText: item.stimulus_text,
+    stimulusAudioUrl: item.stimulus_audio_url,
+    audioReady: item.audio_ready,
+    audioMetadata: item.audio_metadata ?? {}
+  };
+}
+
+function mapExamAudioTemplate(template: ApiAdminExamAudioTemplate): AdminExamAudioTemplate {
+  return {
+    id: template.id,
+    code: template.code,
+    levelCode: template.level_code,
+    title: template.title,
+    status: template.status,
+    durationMinutes: template.duration_minutes,
+    listeningItemCount: template.listening_item_count,
+    listeningAudioReadyCount: template.listening_audio_ready_count,
+    listeningItems: template.listening_items.map(mapExamListeningItem)
+  };
+}
+
 export async function getAdminCmsSummary(): Promise<AdminCmsSummary> {
   const response = await adminRequestJson<
     ApiResponse<{
@@ -795,6 +871,80 @@ export async function previewAdminVoiceAudio(input: {
     })
   });
   return mapVoicePreviewAudio(response.data);
+}
+
+export async function listAdminExamAudioTemplates(input?: {
+  status?: string;
+}): Promise<AdminExamAudioTemplate[]> {
+  const params = new URLSearchParams();
+  if (input?.status) {
+    params.set("status", input.status);
+  }
+  const query = params.toString();
+  const response = await adminRequestJson<ApiResponse<ApiAdminExamAudioTemplate[]>>(
+    `/admin/cms/exams/templates${query ? `?${query}` : ""}`
+  );
+  return response.data.map(mapExamAudioTemplate);
+}
+
+export async function generateAdminExamItemAudio(input: {
+  generatedBy: string;
+  itemId: string;
+  model: string;
+  voiceId: string;
+  speed: number;
+}): Promise<AdminExamListeningItem> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminExamListeningItem>>(
+    `/admin/cms/exams/items/${input.itemId}/audio/listening`,
+    {
+      method: "POST",
+      body: JSON.stringify({
+        generated_by: input.generatedBy,
+        model: input.model,
+        voice_id: input.voiceId,
+        speed: input.speed
+      })
+    }
+  );
+  return mapExamListeningItem(response.data);
+}
+
+export async function generateAdminExamTemplateAudio(input: {
+  generatedBy: string;
+  templateId: string;
+  model: string;
+  voiceId: string;
+  speed: number;
+  onlyMissing?: boolean;
+}): Promise<{
+  templateId: string;
+  templateCode: string;
+  generatedCount: number;
+  items: AdminExamListeningItem[];
+}> {
+  const response = await adminRequestJson<
+    ApiResponse<{
+      template_id: string;
+      template_code: string;
+      generated_count: number;
+      items: ApiAdminExamListeningItem[];
+    }>
+  >(`/admin/cms/exams/templates/${input.templateId}/audio/listening`, {
+    method: "POST",
+    body: JSON.stringify({
+      generated_by: input.generatedBy,
+      model: input.model,
+      voice_id: input.voiceId,
+      speed: input.speed,
+      only_missing: input.onlyMissing ?? true
+    })
+  });
+  return {
+    templateId: response.data.template_id,
+    templateCode: response.data.template_code,
+    generatedCount: response.data.generated_count,
+    items: response.data.items.map(mapExamListeningItem)
+  };
 }
 
 export async function updateAdminEmailTemplate(input: {

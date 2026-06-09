@@ -25,15 +25,20 @@ import type { ReactNode } from "react";
 import type { AuthUser } from "@/lib/auth-api";
 import {
   generateAdminLessonAudio,
+  generateAdminExamItemAudio,
+  generateAdminExamTemplateAudio,
   getAdminAudioSettings,
   getAdminCmsLesson,
   getAdminCmsSummary,
   getAdminEmailTemplate,
+  listAdminExamAudioTemplates,
   getAdminVoicePreviews,
   rollbackAdminCmsRevision,
   updateAdminCmsLesson,
   updateAdminEmailTemplate,
   type AdminAudioVoice,
+  type AdminExamAudioTemplate,
+  type AdminExamListeningItem,
   type AdminContentReadiness,
   type AdminContentReadinessLesson,
   type AdminContentReadinessOverview,
@@ -77,12 +82,16 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [audioVoiceId, setAudioVoiceId] = useState("");
   const [audioSpeed, setAudioSpeed] = useState(1);
   const [voicePreviewsByVoiceId, setVoicePreviewsByVoiceId] = useState<Record<string, AdminVoicePreviewAudio>>({});
+  const [examAudioTemplates, setExamAudioTemplates] = useState<AdminExamAudioTemplate[]>([]);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
+  const [generatingExamTemplateId, setGeneratingExamTemplateId] = useState("");
+  const [generatingExamItemId, setGeneratingExamItemId] = useState("");
   const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
+  const [isLoadingExamTemplates, setIsLoadingExamTemplates] = useState(false);
   const [bulkAudioQueue, setBulkAudioQueue] = useState<BulkAudioQueueItem[]>([]);
   const [isBulkGeneratingAudio, setIsBulkGeneratingAudio] = useState(false);
 
@@ -162,12 +171,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     setError("");
 
     try {
-      const [nextSummary, nextAudioSettings] = await Promise.all([
+      const [nextSummary, nextAudioSettings, nextExamTemplates] = await Promise.all([
         getAdminCmsSummary(),
-        getAdminAudioSettings()
+        getAdminAudioSettings(),
+        listAdminExamAudioTemplates()
       ]);
       setSummary(nextSummary);
       setAudioSettings(nextAudioSettings);
+      setExamAudioTemplates(nextExamTemplates);
       setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
       setAudioVoiceId((current) => current || storedAudioVoice(nextAudioSettings.defaultVoiceId));
       setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
@@ -178,6 +189,15 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       setError("CMS belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
+    }
+  }
+
+  async function reloadExamAudioTemplates() {
+    setIsLoadingExamTemplates(true);
+    try {
+      setExamAudioTemplates(await listAdminExamAudioTemplates());
+    } finally {
+      setIsLoadingExamTemplates(false);
     }
   }
 
@@ -292,6 +312,76 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       setSelectedLesson(await getAdminCmsLesson(slug));
     } catch {
       setError("Lesson belum bisa dimuat.");
+    }
+  }
+
+  async function generateExamTemplateAudio(template: AdminExamAudioTemplate, onlyMissing: boolean) {
+    if (!audioModel || !audioVoiceId) {
+      setError("Pilih model dan voice sebelum generate audio exam.");
+      return;
+    }
+    setGeneratingExamTemplateId(template.id);
+    setMessage("");
+    setError("");
+    try {
+      const result = await generateAdminExamTemplateAudio({
+        generatedBy: adminName,
+        templateId: template.id,
+        model: audioModel,
+        voiceId: audioVoiceId,
+        speed: audioSpeed,
+        onlyMissing
+      });
+      await reloadExamAudioTemplates();
+      setMessage(
+        `${result.generatedCount} audio listening exam untuk ${template.title} berhasil ${onlyMissing ? "dibuat" : "diregenerate"}.`
+      );
+    } catch (caughtError) {
+      setError(audioGenerationErrorMessage(caughtError));
+    } finally {
+      setGeneratingExamTemplateId("");
+    }
+  }
+
+  async function generateExamItemAudio(templateId: string, item: AdminExamListeningItem) {
+    if (!audioModel || !audioVoiceId) {
+      setError("Pilih model dan voice sebelum generate audio exam.");
+      return;
+    }
+    setGeneratingExamItemId(item.id);
+    setMessage("");
+    setError("");
+    try {
+      const generated = await generateAdminExamItemAudio({
+        generatedBy: adminName,
+        itemId: item.id,
+        model: audioModel,
+        voiceId: audioVoiceId,
+        speed: audioSpeed
+      });
+      setExamAudioTemplates((current) =>
+        current.map((template) =>
+          template.id !== templateId
+            ? template
+            : {
+                ...template,
+                listeningAudioReadyCount: template.listeningItems.some((entry) => entry.id === generated.id)
+                  ? template.listeningItems.reduce(
+                      (count, entry) =>
+                        count + (entry.id === generated.id ? 1 : entry.audioReady ? 1 : 0),
+                      0
+                    )
+                  : template.listeningAudioReadyCount,
+                listeningItems: template.listeningItems.map((entry) => (entry.id === generated.id ? generated : entry))
+              }
+        )
+      );
+      await reloadExamAudioTemplates();
+      setMessage(`Audio untuk item exam #${item.sequenceOrder} berhasil dibuat.`);
+    } catch (caughtError) {
+      setError(audioGenerationErrorMessage(caughtError));
+    } finally {
+      setGeneratingExamItemId("");
     }
   }
 
@@ -423,6 +513,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
           <ReadinessPanel
             overview={summary?.curriculum.readinessOverview ?? null}
             levels={summary?.curriculum.readinessLevels ?? []}
+            examAudioTemplates={examAudioTemplates}
             audioSettings={audioSettings}
             audioModel={audioModel}
             audioVoiceId={audioVoiceId}
@@ -433,11 +524,16 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             bulkAudioQueue={bulkAudioQueue}
             isBulkGeneratingAudio={isBulkGeneratingAudio}
             isLoadingVoicePreviews={isLoadingVoicePreviews}
+            isLoadingExamTemplates={isLoadingExamTemplates}
             onAudioModelChange={setAudioModel}
             onAudioVoiceChange={setAudioVoiceId}
             onAudioSpeedChange={setAudioSpeed}
             onGenerateAudio={generateLessonAudio}
             onBulkGenerateAudio={generateBulkLessonAudio}
+            onGenerateExamTemplateAudio={generateExamTemplateAudio}
+            onGenerateExamItemAudio={generateExamItemAudio}
+            generatingExamTemplateId={generatingExamTemplateId}
+            generatingExamItemId={generatingExamItemId}
           />
         ) : tab === "curriculum" ? (
           <CurriculumEditor
@@ -534,6 +630,7 @@ function ChangeLogPanel({
 function ReadinessPanel({
   overview,
   levels,
+  examAudioTemplates,
   audioSettings,
   audioModel,
   audioVoiceId,
@@ -544,14 +641,20 @@ function ReadinessPanel({
   bulkAudioQueue,
   isBulkGeneratingAudio,
   isLoadingVoicePreviews,
+  isLoadingExamTemplates,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
   onGenerateAudio,
-  onBulkGenerateAudio
+  onBulkGenerateAudio,
+  onGenerateExamTemplateAudio,
+  onGenerateExamItemAudio,
+  generatingExamTemplateId,
+  generatingExamItemId
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
+  examAudioTemplates: AdminExamAudioTemplate[];
   audioSettings: AdminAudioSettings | null;
   audioModel: string;
   audioVoiceId: string;
@@ -562,11 +665,16 @@ function ReadinessPanel({
   bulkAudioQueue: BulkAudioQueueItem[];
   isBulkGeneratingAudio: boolean;
   isLoadingVoicePreviews: boolean;
+  isLoadingExamTemplates: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
   onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
   onBulkGenerateAudio: (lessons: BulkAudioQueueItem[]) => void;
+  onGenerateExamTemplateAudio: (template: AdminExamAudioTemplate, onlyMissing: boolean) => void;
+  onGenerateExamItemAudio: (templateId: string, item: AdminExamListeningItem) => void;
+  generatingExamTemplateId: string;
+  generatingExamItemId: string;
 }) {
   if (!overview) {
     return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
@@ -605,6 +713,16 @@ function ReadinessPanel({
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
+      />
+
+      <ExamAudioPanel
+        templates={examAudioTemplates}
+        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+        isLoading={isLoadingExamTemplates}
+        generatingTemplateId={generatingExamTemplateId}
+        generatingItemId={generatingExamItemId}
+        onGenerateTemplate={onGenerateExamTemplateAudio}
+        onGenerateItem={onGenerateExamItemAudio}
       />
 
       <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
@@ -871,6 +989,134 @@ function BulkAudioPanel({
           </div>
         </div>
       ) : null}
+    </div>
+  );
+}
+
+function ExamAudioPanel({
+  templates,
+  audioReadyToGenerate,
+  isLoading,
+  generatingTemplateId,
+  generatingItemId,
+  onGenerateTemplate,
+  onGenerateItem
+}: {
+  templates: AdminExamAudioTemplate[];
+  audioReadyToGenerate: boolean;
+  isLoading: boolean;
+  generatingTemplateId: string;
+  generatingItemId: string;
+  onGenerateTemplate: (template: AdminExamAudioTemplate, onlyMissing: boolean) => void;
+  onGenerateItem: (templateId: string, item: AdminExamListeningItem) => void;
+}) {
+  return (
+    <div className="rounded-lg border border-ink/10 bg-white p-4">
+      <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="flex items-start gap-3">
+          <div className="grid h-10 w-10 place-items-center rounded-lg bg-paper">
+            <Headphones className="h-5 w-5 text-leaf" aria-hidden="true" />
+          </div>
+          <div>
+            <p className="text-xs font-semibold uppercase text-leaf">Exam Audio</p>
+            <h2 className="mt-1 font-semibold">Generate listening audio untuk exam</h2>
+            <p className="mt-1 max-w-3xl text-sm leading-6 text-ink/60">
+              Pilih template exam lalu generate audio per item atau sekaligus untuk semua item listening yang belum punya audio.
+            </p>
+          </div>
+        </div>
+        {isLoading ? (
+          <span className="rounded-lg bg-paper px-3 py-2 text-xs font-semibold text-ink/55">Loading exams...</span>
+        ) : null}
+      </div>
+
+      <div className="mt-4 grid gap-4">
+        {templates.length ? (
+          templates.map((template) => {
+            const missingCount = template.listeningItemCount - template.listeningAudioReadyCount;
+            return (
+              <div key={template.id} className="rounded-lg border border-ink/10 bg-paper p-4">
+                <div className="flex flex-wrap items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase text-leaf">
+                      {template.levelCode} / {template.code}
+                    </p>
+                    <h3 className="mt-1 text-lg font-semibold">{template.title}</h3>
+                    <p className="mt-1 text-sm text-ink/55">
+                      Listening audio ready {template.listeningAudioReadyCount}/{template.listeningItemCount}
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onClick={() => onGenerateTemplate(template, true)}
+                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !missingCount}
+                      className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-leaf px-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <Sparkles className="h-4 w-4" aria-hidden="true" />
+                      {generatingTemplateId === template.id ? "Generating" : "Generate Missing"}
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => onGenerateTemplate(template, false)}
+                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !template.listeningItemCount}
+                      className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <RefreshCcw className="h-4 w-4" aria-hidden="true" />
+                      Regenerate All
+                    </button>
+                  </div>
+                </div>
+
+                <div className="mt-4 grid gap-3">
+                  {template.listeningItems.map((item) => (
+                    <div key={item.id} className="rounded-lg bg-white p-3">
+                      <div className="flex flex-wrap items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <p className="text-sm font-semibold text-ink">Item {item.sequenceOrder}</p>
+                          <p className="mt-1 text-sm text-ink/65">{item.promptText}</p>
+                          {item.stimulusText ? (
+                            <p className="mt-2 whitespace-pre-wrap text-xs leading-5 text-ink/50">{item.stimulusText}</p>
+                          ) : null}
+                        </div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <ReadinessPill ready={item.audioReady} label="Audio" />
+                          <button
+                            type="button"
+                            onClick={() => onGenerateItem(template.id, item)}
+                            disabled={!audioReadyToGenerate || generatingItemId === item.id}
+                            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-xs font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                          >
+                            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                            {generatingItemId === item.id ? "Generating" : item.audioReady ? "Regenerate" : "Generate"}
+                          </button>
+                        </div>
+                      </div>
+
+                      {item.audioMetadata && (item.audioMetadata.playback_url || item.stimulusAudioUrl) ? (
+                        <div className="mt-3 rounded-lg bg-paper p-3">
+                          <audio
+                            controls
+                            preload="metadata"
+                            src={String(item.audioMetadata.playback_url || item.stimulusAudioUrl)}
+                            className="h-10 w-full"
+                          />
+                          <p className="mt-2 text-xs text-ink/45">
+                            {String(item.audioMetadata.model || "model unknown")} /{" "}
+                            {String(item.audioMetadata.voice_id || "voice unknown")}
+                          </p>
+                        </div>
+                      ) : null}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            );
+          })
+        ) : (
+          <div className="rounded-lg bg-paper p-4 text-sm text-ink/60">Belum ada template exam yang tersedia.</div>
+        )}
+      </div>
     </div>
   );
 }
