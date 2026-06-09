@@ -101,6 +101,8 @@ DIALOGUE_PERSONA_VOICES = {
     "dimas": "English_Diligent_Man",
     "john": "English_Trustworth_Man",
     "lina": "English_Upbeat_Woman",
+    "male": "English_Trustworth_Man",
+    "man": "English_Trustworth_Man",
     "maya": "English_radiant_girl",
     "mina": "English_Upbeat_Woman",
     "nina": "English_Upbeat_Woman",
@@ -109,6 +111,8 @@ DIALOGUE_PERSONA_VOICES = {
     "raka": "English_Gentle-voiced_man",
     "sara": "English_CalmWoman",
     "staff": "English_CalmWoman",
+    "female": "English_CalmWoman",
+    "woman": "English_CalmWoman",
     # A2-C1 lead characters (paired with Mina, so male for contrast).
     "faris": "English_Trustworth_Man",
     "ilham": "English_Gentle-voiced_man",
@@ -488,7 +492,7 @@ async def generate_exam_item_listening_audio(
     if section.code.upper() != "LISTENING":
         raise AudioGenerationError("exam_item_not_listening")
 
-    source_text = (item.stimulus_text or item.prompt_text or "").strip()
+    source_text = exam_item_audio_source_text(item)
     if len(source_text) < 8:
         raise AudioGenerationError("exam_item_audio_source_empty")
     if len(source_text) >= 10000:
@@ -855,6 +859,28 @@ def dialogue_turns_from_text(value: str) -> list[DialogueTurn]:
     if turns and len(total_text) >= 10000:
         raise AudioGenerationError("exam_item_audio_source_too_long")
     return turns
+
+
+def exam_item_audio_source_text(item: ExamItemModel) -> str:
+    source_text = (item.stimulus_text or item.prompt_text or "").strip()
+    if not source_text:
+        return ""
+
+    if item.item_type == "fill_blank" and "[BLANK]" in source_text:
+        answers = []
+        if isinstance(item.correct_answer, dict):
+            raw_blanks = item.correct_answer.get("blanks")
+            if isinstance(raw_blanks, list):
+                answers = [str(value).strip() for value in raw_blanks]
+
+        if answers:
+            next_text = source_text
+            for answer in answers:
+                replacement = answer or "..."
+                next_text = next_text.replace("[BLANK]", replacement, 1)
+            return next_text
+
+    return source_text
 
 
 def text_to_tts_text(value: str) -> str:
