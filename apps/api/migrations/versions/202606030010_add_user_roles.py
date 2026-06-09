@@ -21,7 +21,9 @@ def upgrade() -> None:
         sa.Column("role", sa.String(length=32), server_default="student", nullable=False),
     )
     op.create_index("ix_users_role", "users", ["role"])
-    op.alter_column("users", "role", server_default=None)
+    bind = op.get_bind()
+    if bind.dialect.name != "sqlite":
+        op.alter_column("users", "role", server_default=None)
 
 
 def downgrade() -> None:
