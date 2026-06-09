@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { CheckCircle2, RotateCcw } from "lucide-react";
 import { ConversationPartnerChat } from "@/components/conversation-partner-chat";
 import { ConversationPartnerHistory } from "@/components/conversation-partner-history";
@@ -26,6 +26,7 @@ export function ConversationPartnerWorkspace() {
   // chat instead of the completed-history view even though progress still marks
   // the topic done (progress refreshes asynchronously after the reset).
   const [replayKey, setReplayKey] = useState<string | null>(null);
+  const activeSectionRef = useRef<HTMLElement | null>(null);
 
   const reloadProgress = useCallback(() => {
     fetchTopicProgress()
@@ -66,6 +67,21 @@ export function ConversationPartnerWorkspace() {
   useEffect(() => {
     reloadProgress();
   }, [reloadProgress]);
+
+  useEffect(() => {
+    if (!activeTopic || !activeSectionRef.current) {
+      return;
+    }
+
+    const frame = window.requestAnimationFrame(() => {
+      activeSectionRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [activeTopic]);
 
   function selectTopic(topic: PartnerTopic) {
     if (topic.key !== activeTopic?.key) {
@@ -214,21 +230,25 @@ export function ConversationPartnerWorkspace() {
             replayKey !== activeTopic.key;
           if (showHistory) {
             return (
-              <ConversationPartnerHistory
-                key={`history-${activeTopic.key}-${activeProgress.sessionId}`}
-                topic={activeTopic}
-                sessionId={activeProgress.sessionId!}
-                onReplay={() => handleReplay(activeTopic.key)}
-                replaying={resettingKey === activeTopic.key}
-              />
+              <section ref={activeSectionRef} id="partner-session">
+                <ConversationPartnerHistory
+                  key={`history-${activeTopic.key}-${activeProgress.sessionId}`}
+                  topic={activeTopic}
+                  sessionId={activeProgress.sessionId!}
+                  onReplay={() => handleReplay(activeTopic.key)}
+                  replaying={resettingKey === activeTopic.key}
+                />
+              </section>
             );
           }
           return (
-            <ConversationPartnerChat
-              key={`chat-${activeTopic.key}`}
-              topic={activeTopic}
-              onSessionEnd={reloadProgress}
-            />
+            <section ref={activeSectionRef} id="partner-session">
+              <ConversationPartnerChat
+                key={`chat-${activeTopic.key}`}
+                topic={activeTopic}
+                onSessionEnd={reloadProgress}
+              />
+            </section>
           );
         })()
       ) : (
