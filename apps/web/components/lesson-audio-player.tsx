@@ -60,7 +60,7 @@ export function LessonAudioPlayer({ lessonSlug }: { lessonSlug: string }) {
   }
 
   return (
-    <div className="w-full min-w-[260px] max-w-sm rounded-lg bg-paper p-2">
+    <div className="w-full min-w-0 max-w-sm rounded-lg bg-paper p-2 sm:min-w-[260px]">
       <audio controls preload="metadata" src={audio.playbackUrl} className="h-10 w-full" />
       <p className="mt-1 truncate px-1 text-xs text-ink/45">
         {audio.model || "audio"} / {audio.lineCount > 1 ? `${audio.lineCount} dialogue lines` : audio.voiceId || "voice"}

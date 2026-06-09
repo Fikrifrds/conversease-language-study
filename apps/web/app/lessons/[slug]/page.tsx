@@ -56,7 +56,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               </div>
               <div className="mt-4 space-y-3">
                 {lesson.dialogue.map((line, index) => (
-                  <div key={`${line.speaker}-${index}`} className="grid gap-2 rounded-lg bg-paper p-4 md:grid-cols-[140px_1fr_1fr]">
+                  <div key={`${line.speaker}-${index}`} className="grid gap-2 rounded-lg bg-paper p-4 lg:grid-cols-[120px_1fr_1fr]">
                     <span className="font-semibold text-leaf">{line.speaker}</span>
                     <p>{line.text}</p>
                     <p className="text-ink/60">{lesson.translation[index]}</p>
@@ -121,17 +121,17 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               </div>
             </section>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <Link
                 href="#conversation-coach"
-                className="focus-ring inline-flex items-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink"
+                className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white hover:bg-ink sm:w-auto"
               >
                 <Send className="h-4 w-4" aria-hidden="true" />
                 Practice Roleplay
               </Link>
               <Link
                 href="/dashboard"
-                className="focus-ring inline-flex items-center gap-2 rounded-lg border border-ink/20 px-4 py-3 text-sm font-semibold hover:bg-mint"
+                className="focus-ring inline-flex w-full items-center justify-center gap-2 rounded-lg border border-ink/20 px-4 py-3 text-sm font-semibold hover:bg-mint sm:w-auto"
               >
                 <RotateCcw className="h-4 w-4" aria-hidden="true" />
                 Back to Dashboard
@@ -139,7 +139,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             </div>
           </article>
 
-          <aside className="space-y-4 lg:sticky lg:top-24 lg:self-start">
+          <aside className="space-y-4 xl:sticky xl:top-24 xl:self-start">
             <LessonProgressPanel
               lessonSlug={lesson.slug}
               sections={lesson.sections.map((section) => section.label)}

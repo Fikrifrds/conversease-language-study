@@ -350,7 +350,7 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
             </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-2 gap-2">
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
             {statusOptions.map((option) => (
               <button
                 key={option.label}
@@ -368,7 +368,7 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
             ))}
           </div>
 
-          <div className="mt-4 flex gap-2">
+          <div className="mt-4 flex flex-col gap-2 sm:flex-row">
             <input
               type="text"
               value={query}
@@ -388,7 +388,7 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
             </button>
           </div>
 
-          <div className="mt-4 grid grid-cols-3 gap-2 text-sm">
+          <div className="mt-4 grid gap-2 text-sm sm:grid-cols-3">
             <Metric label="Orders" value={totals.count} />
             <Metric label="Confirmed" value={totals.confirmed} />
             <Metric label="Amount" value={formatRupiah(totals.amount)} />
@@ -421,7 +421,7 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
                     {order.status}
                   </span>
                 </div>
-                <div className="mt-3 flex items-end justify-between gap-3">
+                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
                   <p className="text-2xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
                   <p className="rounded-md bg-white px-2 py-1 font-mono text-sm">#{order.uniqueCode ?? "-"}</p>
                 </div>

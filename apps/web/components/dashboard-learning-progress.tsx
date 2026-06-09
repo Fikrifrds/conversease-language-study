@@ -75,9 +75,9 @@ export function DashboardLearningProgress() {
               {currentMission.conversationGoal}
             </p>
           </div>
-          <div className="grid h-24 w-24 shrink-0 place-items-center rounded-lg bg-mint text-center md:self-start">
-            <span className="text-3xl font-semibold">{currentMission.estimatedMinutes}</span>
-            <span className="-mt-5 text-xs font-semibold text-ink/60">menit</span>
+          <div className="flex w-full items-center justify-between rounded-lg bg-mint px-4 py-3 text-center sm:grid sm:h-24 sm:w-24 sm:shrink-0 sm:place-items-center md:self-start">
+            <span className="text-3xl font-semibold leading-none">{currentMission.estimatedMinutes}</span>
+            <span className="text-xs font-semibold text-ink/60 sm:-mt-5">menit</span>
           </div>
         </div>
         <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -126,7 +126,7 @@ export function DashboardLearningProgress() {
         <p className="mt-3 text-sm text-ink/60">
           {completedLessons}/{totalLessons} lesson selesai.
         </p>
-        <div className="mt-6 grid grid-cols-2 gap-3">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <Link href="/progress" className="focus-ring rounded-lg bg-mint px-4 py-3 text-center text-sm font-semibold">
             Lihat Progress
           </Link>

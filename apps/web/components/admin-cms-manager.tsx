@@ -815,7 +815,7 @@ function BulkAudioPanel({
           </div>
         </div>
 
-        <div className="grid gap-2 sm:grid-cols-2 xl:min-w-[420px]">
+        <div className="grid gap-2 sm:grid-cols-2">
           <button
             type="button"
             onClick={() => onStart(missingCandidates)}
@@ -860,7 +860,7 @@ function BulkAudioPanel({
                   </p>
                   {item.error ? <p className="mt-1 text-xs text-coral">{item.error}</p> : null}
                 </div>
-                <div className="flex items-center gap-2 md:justify-end">
+                <div className="flex flex-wrap items-center gap-2 md:justify-end">
                   <BulkStatusPill status={item.status} />
                   {item.durationSeconds ? (
                     <span className="text-xs font-semibold text-ink/45">{formatDuration(item.durationSeconds)}</span>

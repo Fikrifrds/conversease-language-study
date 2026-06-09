@@ -46,14 +46,17 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
         </div>
       </header>
       {requireAuth ? <EmailVerificationNotice /> : null}
-      <main>{children}</main>
-      <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper md:hidden" aria-label="Navigasi mobile">
+      <main className="pb-[calc(4.5rem+env(safe-area-inset-bottom))] md:pb-0">{children}</main>
+      <nav
+        className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper/95 pb-[env(safe-area-inset-bottom)] backdrop-blur md:hidden"
+        aria-label="Navigasi mobile"
+      >
         <div className="grid grid-cols-5">
           {navItems.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring flex min-h-14 flex-col items-center justify-center gap-1 text-[11px] font-medium text-ink/70"
+              className="focus-ring flex min-h-16 flex-col items-center justify-center gap-1 px-1 text-[10px] font-medium text-ink/70"
             >
               <item.icon className="h-4 w-4" aria-hidden="true" />
               <span className="max-w-full truncate px-1">{item.shortLabel}</span>

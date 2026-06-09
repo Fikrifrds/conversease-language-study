@@ -260,7 +260,7 @@ export function ConversationPartnerChat({
                 </p>
               ) : null}
             </div>
-            <div className="min-w-32 rounded-lg bg-mint px-4 py-3 text-sm">
+            <div className="w-full min-w-0 rounded-lg bg-mint px-4 py-3 text-sm sm:w-auto sm:min-w-32">
               <p className="font-semibold">
                 {completedTurns}/{topic.maxTurns} turn
               </p>
@@ -278,7 +278,7 @@ export function ConversationPartnerChat({
               className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
             >
               <div
-                className={`max-w-[86%] rounded-lg p-4 text-sm leading-6 ${
+                className={`max-w-[92%] rounded-lg p-4 text-sm leading-6 sm:max-w-[86%] ${
                   message.role === "user" ? "bg-leaf text-white" : "bg-paper text-ink"
                 }`}
               >
@@ -328,12 +328,12 @@ export function ConversationPartnerChat({
 
         <div className="border-t border-ink/10 p-5">
           {!started ? (
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <button
                 type="button"
                 onClick={startSession}
                 disabled={ended || isBusy}
-                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-6 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50"
+                className="focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-leaf px-6 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
               >
                 <Mic className="h-4 w-4" aria-hidden="true" />
                 {ended ? "Selesai" : isBusy ? "Memulai…" : "Mulai Sesi"}
@@ -343,11 +343,11 @@ export function ConversationPartnerChat({
               </span>
             </div>
           ) : handsFree ? (
-            <div className="flex flex-wrap items-center gap-3">
+            <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <button
                 type="button"
                 onClick={stopHandsFree}
-                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-coral px-5 py-3 text-sm font-semibold text-white hover:bg-ink"
+                className="focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-coral px-5 py-3 text-sm font-semibold text-white hover:bg-ink sm:w-auto"
               >
                 <MicOff className="h-4 w-4" aria-hidden="true" />
                 Jeda
@@ -371,12 +371,12 @@ export function ConversationPartnerChat({
               </span>
             </div>
           ) : (
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
               <button
                 type="button"
                 onClick={resumeHandsFree}
                 disabled={ended || isBusy || isProcessing || isSpeaking}
-                className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50"
+                className="focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
               >
                 <Mic className="h-4 w-4" aria-hidden="true" />
                 Lanjut Bicara
@@ -385,7 +385,7 @@ export function ConversationPartnerChat({
                 type="button"
                 onClick={isRecording ? recorder.stop : recorder.start}
                 disabled={ended || isBusy || isProcessing || isSpeaking}
-                className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
+                className={`focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto ${
                   isRecording ? "border-coral bg-coral text-white hover:bg-ink" : "border-ink/15 hover:bg-mint"
                 }`}
               >

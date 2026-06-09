@@ -11,7 +11,7 @@ import { learningLoop, mission, plans } from "@/lib/data";
 export default function HomePage() {
   return (
     <main className="bg-paper text-ink">
-      <section className="relative min-h-[82svh] overflow-hidden">
+      <section className="relative min-h-[70svh] overflow-hidden sm:min-h-[82svh]">
         <Image
           src="/images/hero-realistic.png"
           alt="Suasana meja belajar percakapan yang nyata"
@@ -36,17 +36,17 @@ export default function HomePage() {
           </nav>
           <LandingAuthAction />
         </header>
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-16 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
+        <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
           <div className="max-w-2xl text-white">
             <p className="text-sm font-semibold uppercase text-sun">Ngobrol jadi mudah</p>
-            <h1 className="mt-4 text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
+            <h1 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Conversease
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
               Belajar Inggris lewat percakapan nyata. Dengar, pahami, tirukan, respons, praktik,
               lalu dapat feedback yang jelas.
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ActionButton href="/register" icon={ArrowRight} tone="light">
                 Mulai Belajar Gratis
               </ActionButton>
@@ -65,7 +65,7 @@ export default function HomePage() {
                 </span>
               </div>
               <p className="mt-3 text-sm leading-6 text-ink/70">{mission.prompt}</p>
-              <div className="mt-4 grid grid-cols-3 gap-2 text-sm">
+              <div className="mt-4 grid gap-2 text-sm sm:grid-cols-3">
                 <div className="rounded-lg bg-mint p-3">
                   <p className="font-semibold">Dengar</p>
                   <p className="text-ink/60">Dialog</p>
@@ -151,7 +151,7 @@ export default function HomePage() {
 
       <footer className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-sm text-ink/60 sm:px-6 md:flex-row md:items-center md:justify-between lg:px-8">
         <p>Conversease. Dari paham menjadi berani bicara.</p>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           <Link href="/dashboard">Dashboard</Link>
           <Link href="/courses">Kursus</Link>
           <Link href="/pricing">Harga</Link>

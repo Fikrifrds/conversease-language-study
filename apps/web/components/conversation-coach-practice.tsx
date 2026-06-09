@@ -553,7 +553,7 @@ export function ConversationCoachPractice({
                 </Link>
               ) : null}
             </div>
-            <div className="min-w-32 rounded-lg bg-mint px-4 py-3 text-sm">
+            <div className="w-full min-w-0 rounded-lg bg-mint px-4 py-3 text-sm sm:w-auto sm:min-w-32">
               <p className="font-semibold">{progressPercent}% selesai</p>
               <div className="mt-2 h-2 rounded-lg bg-white">
                 <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
@@ -566,7 +566,7 @@ export function ConversationCoachPractice({
           {messages.map((message, index) => (
             <div key={`${message.role}-${index}`} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
               <div
-                className={`max-w-[86%] rounded-lg p-4 text-sm leading-6 ${
+                className={`max-w-[92%] rounded-lg p-4 text-sm leading-6 sm:max-w-[86%] ${
                   message.role === "user" ? "bg-leaf text-white" : "bg-paper text-ink"
                 }`}
               >
@@ -607,12 +607,12 @@ export function ConversationCoachPractice({
             className="focus-ring min-h-24 w-full resize-none rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm leading-6 text-ink placeholder:text-ink/40 disabled:opacity-60"
             placeholder={completed ? "Roleplay selesai" : "Tulis jawabanmu dalam bahasa Inggris..."}
           />
-          <div className="mt-3 flex flex-wrap items-center gap-2">
+          <div className="mt-3 grid gap-2 sm:flex sm:flex-wrap sm:items-center">
             <button
               type="button"
               onClick={isRecording ? stopRecording : startRecording}
               disabled={completed || isSubmitting || isProcessingRecording}
-              className={`focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 ${
+              className={`focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg px-4 py-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto ${
                 isRecording ? "bg-coral text-white hover:bg-ink" : "border border-ink/15 hover:bg-mint"
               }`}
             >
@@ -628,7 +628,7 @@ export function ConversationCoachPractice({
               type="button"
               onClick={handleUseSample}
               disabled={completed || isSubmitting || isRecording || isProcessingRecording}
-              className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-ink/15 px-4 py-3 text-sm font-semibold hover:bg-mint disabled:cursor-not-allowed disabled:opacity-50"
+              className="focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg border border-ink/15 px-4 py-3 text-sm font-semibold hover:bg-mint disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
             >
               <Sparkles className="h-4 w-4" aria-hidden="true" />
               Pakai Contoh
@@ -636,7 +636,7 @@ export function ConversationCoachPractice({
             <button
               type="submit"
               disabled={!answer.trim() || completed || isSubmitting || isRecording || isProcessingRecording}
-              className="focus-ring ml-auto inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30"
+              className="focus-ring inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:bg-ink/30 sm:ml-auto sm:w-auto"
               aria-busy={isSubmitting}
             >
               {isSubmitting ? (
