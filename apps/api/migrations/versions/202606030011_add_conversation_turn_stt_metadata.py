@@ -37,9 +37,7 @@ def upgrade() -> None:
         "conversation_turns",
         ["stt_transcript_id"],
     )
-    bind = op.get_bind()
-    if bind.dialect.name != "sqlite":
-        op.alter_column("conversation_turns", "input_source", server_default=None)
+    op.alter_column("conversation_turns", "input_source", server_default=None)
 
 
 def downgrade() -> None:
