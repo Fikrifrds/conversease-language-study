@@ -19,7 +19,9 @@ from app.db.exam_models import (
     ExamSessionModel,
     ExamTemplateModel,
     ItemResponseModel,
+    MediaArtifactModel,
 )
+from app.services.audio_generation import audio_playback_url
 from app.db.session import get_db
 from app.domain.users import User
 from app.services.exam_service import (
@@ -224,6 +226,7 @@ class ReviewQueueEntryResponse(BaseModel):
     rubric_criteria: Optional[dict]
     text_response: Optional[str]
     file_url: Optional[str]
+    playback_url: Optional[str]
     audio_duration_seconds: Optional[float]
     created_at: datetime
 
@@ -658,11 +661,24 @@ async def admin_list_review_queue(
                 rubric_criteria=item.rubric_criteria,
                 text_response=response.text_response,
                 file_url=response.file_url,
+                playback_url=_response_audio_playback_url(db, response.file_url),
                 audio_duration_seconds=response.audio_duration_seconds,
                 created_at=entry.created_at,
             )
         )
     return payload
+
+
+def _response_audio_playback_url(db: Session, file_url: Optional[str]) -> Optional[str]:
+    """Resolve a playable (possibly signed) URL for an uploaded speaking answer."""
+    if not file_url or not file_url.startswith(("http://", "https://")):
+        return None
+    artifact = db.execute(
+        select(MediaArtifactModel).where(MediaArtifactModel.file_url == file_url)
+    ).scalars().first()
+    if artifact is None:
+        return file_url
+    return audio_playback_url(audio_url=file_url, storage_key=artifact.object_key)
 
 
 @router.post("/admin/review-queue/{queue_id}/score", response_model=ExamResultResponse)

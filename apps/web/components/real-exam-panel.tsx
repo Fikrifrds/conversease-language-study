@@ -22,6 +22,7 @@ import {
   saveExamItemResponse,
   startRealExam,
   submitRealExam,
+  uploadExamSpeakingAudio,
   type ExamManifest,
   type ExamRunnerItem,
   type ExamRunnerSectionContent,
@@ -34,6 +35,7 @@ type ItemDraft = {
   selectedOptionIds?: string[];
   matchedPairs?: Record<string, string>;
   fileUrl?: string | null;
+  localPlaybackUrl?: string | null;
   audioDurationSeconds?: number | null;
 };
 
@@ -85,22 +87,48 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       if (!activeSpeakingItemId) {
         return;
       }
-      const previousUrl = audioUrlRef.current[activeSpeakingItemId];
+      const itemId = activeSpeakingItemId;
+      const previousUrl = audioUrlRef.current[itemId];
       if (previousUrl) {
         URL.revokeObjectURL(previousUrl);
       }
       const objectUrl = URL.createObjectURL(blob);
-      audioUrlRef.current[activeSpeakingItemId] = objectUrl;
+      audioUrlRef.current[itemId] = objectUrl;
       setDrafts((current) => ({
         ...current,
-        [activeSpeakingItemId]: {
-          ...current[activeSpeakingItemId],
-          fileUrl: objectUrl,
+        [itemId]: {
+          ...current[itemId],
+          fileUrl: null,
+          localPlaybackUrl: objectUrl,
           audioDurationSeconds: recorder.seconds || null
         }
       }));
-      setNotice("Speaking response recorded locally. Add a short transcript note if needed, then save the section.");
       setActiveSpeakingItemId(null);
+
+      if (!manifest) {
+        return;
+      }
+      setNotice("Uploading speaking answer...");
+      try {
+        const uploaded = await uploadExamSpeakingAudio({
+          sessionId: manifest.sessionId,
+          itemId,
+          audio: blob
+        });
+        setDrafts((current) => ({
+          ...current,
+          [itemId]: {
+            ...current[itemId],
+            fileUrl: uploaded.fileUrl
+          }
+        }));
+        setNotice("Speaking answer uploaded. Save the section to keep it.");
+      } catch {
+        setNotice("");
+        setError(
+          "The recording could not be uploaded. You can record again, or continue — your typed answer will still be submitted."
+        );
+      }
     },
     onError: (message) => {
       setError(message);
@@ -442,7 +470,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     }
 
     if (item.itemType === "audio_response") {
-      const localAudioUrl = draft.fileUrl;
+      const localAudioUrl = draft.localPlaybackUrl ?? draft.fileUrl;
       return (
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-3">

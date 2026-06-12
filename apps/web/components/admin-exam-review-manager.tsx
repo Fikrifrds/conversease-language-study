@@ -195,10 +195,15 @@ export function AdminExamReviewManager({ adminUser }: { adminUser: AuthUser }) {
 
               <div>
                 <h3 className="text-sm font-bold uppercase tracking-wide text-ink/60">Learner response</h3>
-                {isPlayableAudioUrl(selectedEntry.fileUrl) ? (
-                  <audio controls src={selectedEntry.fileUrl} className="mt-2 w-full" />
+                {isPlayableAudioUrl(selectedEntry.playbackUrl ?? selectedEntry.fileUrl) ? (
+                  <audio
+                    controls
+                    src={(selectedEntry.playbackUrl ?? selectedEntry.fileUrl) as string}
+                    className="mt-2 w-full"
+                  />
                 ) : null}
-                {selectedEntry.itemType === "audio_response" && !isPlayableAudioUrl(selectedEntry.fileUrl) ? (
+                {selectedEntry.itemType === "audio_response" &&
+                !isPlayableAudioUrl(selectedEntry.playbackUrl ?? selectedEntry.fileUrl) ? (
                   <p className="mt-2 rounded-lg bg-[#fff7e0] px-3 py-2 text-xs text-[#8a6d1a]">
                     Audio recording is not available on the server for this answer
                     {selectedEntry.audioDurationSeconds

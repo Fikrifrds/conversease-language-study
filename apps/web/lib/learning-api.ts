@@ -934,6 +934,38 @@ export async function getExamRunnerStatus(sessionId: string): Promise<ExamRunner
   return mapExamRunnerStatus(response);
 }
 
+export async function uploadExamSpeakingAudio(input: {
+  sessionId: string;
+  itemId: string;
+  audio: Blob;
+}): Promise<{ fileUrl: string; playbackUrl: string }> {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Authentication required");
+  }
+
+  const formData = new FormData();
+  const extension = input.audio.type.includes("mp4") ? "m4a" : "webm";
+  formData.append("item_id", input.itemId);
+  formData.append("audio", input.audio, `speaking-answer.${extension}`);
+
+  const response = await fetch(`${apiBaseUrl()}/exam-runner/upload-audio/${input.sessionId}`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`
+    },
+    body: formData
+  });
+
+  if (!response.ok) {
+    const detail = await response.text();
+    throw new Error(detail || `API request failed: ${response.status}`);
+  }
+
+  const payload = (await response.json()) as { file_url: string; playback_url: string };
+  return { fileUrl: payload.file_url, playbackUrl: payload.playback_url };
+}
+
 export async function submitRealExam(sessionId: string) {
   return requestJson<{
     session_id: string;

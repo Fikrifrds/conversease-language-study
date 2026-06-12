@@ -3,22 +3,32 @@
 API endpoints for candidates to take exams.
 Provides exam content, navigation, and response submission.
 """
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional, Union
 
-from fastapi import APIRouter, Depends, HTTPException, Request
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Request, UploadFile
 from pydantic import BaseModel
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
+from app.api.routes.conversation import allowed_recorded_audio_content_type
 from app.db.exam_models import (
     ExamSectionModel,
     ExamItemModel,
+    MediaArtifactModel,
 )
 from app.db.session import get_db
 from app.domain.users import User
+from app.services.audio_generation import (
+    AudioGenerationError,
+    audio_playback_url,
+    s3_configured,
+    upload_audio_to_s3,
+)
 from app.services.exam_service import ExamService
+
+MAX_SPEAKING_AUDIO_BYTES = 10 * 1024 * 1024
 
 router = APIRouter(prefix="/exam-runner", tags=["exam-runner"])
 
@@ -353,6 +363,111 @@ async def submit_response(
         item_id=response.item_id,
         status="saved",
         message="Response saved successfully",
+    )
+
+
+class SpeakingAudioUploadResponse(BaseModel):
+    """Result of uploading a recorded speaking answer."""
+    item_id: str
+    file_url: str
+    playback_url: str
+    audio_size: int
+
+
+def _speaking_audio_extension(content_type: Optional[str]) -> str:
+    normalized = (content_type or "").split(";", 1)[0].strip().lower()
+    return {
+        "audio/webm": "webm",
+        "video/webm": "webm",
+        "audio/mp4": "m4a",
+        "audio/mpeg": "mp3",
+        "audio/wav": "wav",
+        "audio/x-wav": "wav",
+        "audio/ogg": "ogg",
+    }.get(normalized, "webm")
+
+
+@router.post("/upload-audio/{session_id}", response_model=SpeakingAudioUploadResponse)
+async def upload_speaking_audio(
+    session_id: str,
+    item_id: str = Form(...),
+    audio: UploadFile = File(...),
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Upload a recorded speaking answer so reviewers can play it back."""
+    service = ExamService(db)
+
+    session = service.get_exam_session(session_id)
+    if session.user_id != current_user.id:
+        raise HTTPException(status_code=403, detail="Access denied")
+    if session.status != "in_progress":
+        raise HTTPException(
+            status_code=400,
+            detail=f"Exam session is {session.status}, cannot upload audio"
+        )
+    if session.expires_at and datetime.utcnow() > session.expires_at:
+        raise HTTPException(status_code=400, detail="Exam session has expired")
+
+    item = service.get_exam_item(item_id)
+    if item.exam_template_id != session.exam_template_id:
+        raise HTTPException(status_code=404, detail="Item does not belong to this exam")
+    if item.item_type != "audio_response":
+        raise HTTPException(status_code=422, detail="Item does not accept audio answers")
+
+    if not allowed_recorded_audio_content_type(audio.content_type):
+        raise HTTPException(status_code=422, detail="unsupported_audio_content_type")
+
+    audio_bytes = await audio.read()
+    if not audio_bytes:
+        raise HTTPException(status_code=422, detail="audio_file_empty")
+    if len(audio_bytes) > MAX_SPEAKING_AUDIO_BYTES:
+        raise HTTPException(status_code=422, detail="audio_file_too_large")
+
+    if not s3_configured():
+        raise HTTPException(status_code=503, detail="audio_storage_not_configured")
+
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    extension = _speaking_audio_extension(audio.content_type)
+    object_key = (
+        f"conversease/exams/responses/{session.exam_template_id}/"
+        f"{session_id}/{item_id}-{timestamp}.{extension}"
+    )
+    try:
+        file_url = upload_audio_to_s3(
+            audio_bytes=audio_bytes,
+            object_key=object_key,
+            content_type=audio.content_type or "audio/webm",
+        )
+    except AudioGenerationError as exc:
+        raise HTTPException(status_code=502, detail=str(exc)) from exc
+
+    now = datetime.utcnow()
+    artifact = MediaArtifactModel(
+        id=service._generate_id(),
+        owner_type="exam_response",
+        owner_id=session_id,
+        artifact_type="speaking_response_audio",
+        file_url=file_url,
+        object_key=object_key,
+        mime_type=(audio.content_type or "audio/webm").split(";", 1)[0].strip(),
+        file_size_bytes=len(audio_bytes),
+        metadata_json={
+            "item_id": item_id,
+            "exam_template_id": session.exam_template_id,
+            "uploaded_by": current_user.id,
+        },
+        created_at=now,
+        updated_at=now,
+    )
+    db.add(artifact)
+    db.commit()
+
+    return SpeakingAudioUploadResponse(
+        item_id=item_id,
+        file_url=file_url,
+        playback_url=audio_playback_url(audio_url=file_url, storage_key=object_key),
+        audio_size=len(audio_bytes),
     )
 
 

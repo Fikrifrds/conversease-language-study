@@ -12,6 +12,7 @@ export type ExamReviewQueueEntry = {
   rubricCriteria: Record<string, { weight: number; criteria: string }> | null;
   textResponse: string | null;
   fileUrl: string | null;
+  playbackUrl: string | null;
   audioDurationSeconds: number | null;
   createdAt: string;
 };
@@ -38,6 +39,7 @@ type ApiExamReviewQueueEntry = {
   rubric_criteria: Record<string, { weight: number; criteria: string }> | null;
   text_response: string | null;
   file_url: string | null;
+  playback_url: string | null;
   audio_duration_seconds: number | null;
   created_at: string;
 };
@@ -92,6 +94,7 @@ function mapEntry(entry: ApiExamReviewQueueEntry): ExamReviewQueueEntry {
     rubricCriteria: entry.rubric_criteria,
     textResponse: entry.text_response,
     fileUrl: entry.file_url,
+    playbackUrl: entry.playback_url,
     audioDurationSeconds: entry.audio_duration_seconds,
     createdAt: entry.created_at
   };

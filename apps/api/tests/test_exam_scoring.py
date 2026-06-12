@@ -1,5 +1,6 @@
 import unittest
 from datetime import datetime
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -347,6 +348,77 @@ class ExamRoutesScoringTest(unittest.TestCase):
         self.assertEqual(result.status_code, 200)
         self.assertEqual(result.json()["status"], "published")
         self.assertTrue(result.json()["passed"])
+
+    def test_speaking_audio_upload_stores_artifact(self):
+        from app.db.exam_models import MediaArtifactModel
+        from sqlalchemy import select
+
+        session = self.service.create_exam_session(
+            exam_template_id=self.exam["template"].id,
+            user_id="user-1",
+        )
+        self.service.start_exam(session.id)
+
+        with (
+            patch("app.api.routes.exam_runner.s3_configured", return_value=True),
+            patch(
+                "app.api.routes.exam_runner.upload_audio_to_s3",
+                return_value="https://cdn.example.com/exams/answer.webm",
+            ),
+            patch(
+                "app.api.routes.exam_runner.audio_playback_url",
+                return_value="https://signed.example.com/exams/answer.webm",
+            ),
+        ):
+            uploaded = self.client.post(
+                f"/api/exam-runner/upload-audio/{session.id}",
+                headers=self.auth("user-1"),
+                data={"item_id": self.exam["audio"].id},
+                files={"audio": ("answer.webm", b"fake-webm-bytes", "audio/webm")},
+            )
+            rejected_item = self.client.post(
+                f"/api/exam-runner/upload-audio/{session.id}",
+                headers=self.auth("user-1"),
+                data={"item_id": self.exam["mcq"].id},
+                files={"audio": ("answer.webm", b"fake-webm-bytes", "audio/webm")},
+            )
+
+        self.assertEqual(uploaded.status_code, 200)
+        body = uploaded.json()
+        self.assertEqual(body["file_url"], "https://cdn.example.com/exams/answer.webm")
+        self.assertEqual(body["playback_url"], "https://signed.example.com/exams/answer.webm")
+        self.assertEqual(rejected_item.status_code, 422)
+
+        with self.session_local() as db:
+            artifact = db.execute(select(MediaArtifactModel)).scalars().one()
+            self.assertEqual(artifact.owner_type, "exam_response")
+            self.assertEqual(artifact.owner_id, session.id)
+            self.assertEqual(artifact.metadata_json["item_id"], self.exam["audio"].id)
+
+        # Uploaded URL flows into the response and the admin review queue playback.
+        self.service.save_item_response(
+            session_id=session.id,
+            item_id=self.exam["audio"].id,
+            section_id=self.exam["speaking"].id,
+            response_type="audio_response",
+            file_url="https://cdn.example.com/exams/answer.webm",
+            audio_duration_seconds=18.0,
+        )
+        self.service.submit_exam(session.id)
+        self.service.finalize_submission(session.id)
+
+        with patch(
+            "app.api.routes.exams.audio_playback_url",
+            return_value="https://signed.example.com/exams/answer.webm",
+        ):
+            queue = self.client.get(
+                "/api/exams/admin/review-queue",
+                headers=self.auth("admin-1"),
+            )
+        self.assertEqual(queue.status_code, 200)
+        entry = queue.json()[0]
+        self.assertEqual(entry["file_url"], "https://cdn.example.com/exams/answer.webm")
+        self.assertEqual(entry["playback_url"], "https://signed.example.com/exams/answer.webm")
 
 
 def run_exam_to_submission_via_responses(service: ExamService, exam: dict, user_id: str):
