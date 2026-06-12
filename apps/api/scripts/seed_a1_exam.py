@@ -159,6 +159,83 @@ def create_listening_items(db: Session, template_id: str, section_id: str):
             "correct_answer": {"blanks": ["Monday", "Monday"]},
             "score_points": 2,
         },
+        {
+            "item_type": "mcq",
+            "sequence_order": 4,
+            "prompt_text": "Listen to the conversation. What is Ben's phone number?",
+            "stimulus_text": "Mina: Can I have your phone number, Ben?\nBen: Sure. It's oh eight one two, three four five six.\nMina: Oh eight one two, three four five six. Thank you.\nBen: You're welcome.",
+            "options_json": [
+                {"id": "A", "text": "0812 3456"},
+                {"id": "B", "text": "0821 3456"},
+                {"id": "C", "text": "0812 6543"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 5,
+            "prompt_text": "Listen to the dialogue. Where is Arif from?",
+            "stimulus_text": "Alya: Nice to meet you. Where are you from?\nArif: I'm from Indonesia. And you?\nAlya: I'm from Malaysia.\nArif: Nice. Welcome to the class.",
+            "options_json": [
+                {"id": "A", "text": "Malaysia"},
+                {"id": "B", "text": "Indonesia"},
+                {"id": "C", "text": "Singapore"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 6,
+            "prompt_text": "Listen to the conversation. Where is the bank?",
+            "stimulus_text": "Man: Excuse me, where is the bank?\nWoman: Go straight, then turn left. It's next to the post office.\nMan: Next to the post office. Thank you.\nWoman: You're welcome.",
+            "options_json": [
+                {"id": "A", "text": "Next to the post office"},
+                {"id": "B", "text": "Across from the school"},
+                {"id": "C", "text": "Behind the station"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 7,
+            "prompt_text": "Listen to the conversation. What does the customer order?",
+            "stimulus_text": "Staff: Good morning. What would you like?\nLina: One hot tea, please.\nStaff: Anything else?\nLina: No, thank you. That's all.",
+            "options_json": [
+                {"id": "A", "text": "A hot tea"},
+                {"id": "B", "text": "An iced coffee"},
+                {"id": "C", "text": "An orange juice"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "fill_blank",
+            "sequence_order": 8,
+            "prompt_text": "Listen and fill in the blank. What time does John get up?",
+            "stimulus_text": "Lina: What time do you get up?\nJohn: I get up at [BLANK] o'clock every morning.",
+            "options_json": None,
+            "correct_answer": {
+                "blanks": ["seven"],
+                "acceptable_variants": {"0": ["7", "seven o'clock"]},
+            },
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 9,
+            "prompt_text": "Listen to the end of the conversation. What does Sara say to close it?",
+            "stimulus_text": "Sara: I have to go now. It was nice talking to you.\nBen: Nice talking to you too.\nSara: See you later. Bye!\nBen: Bye, Sara.",
+            "options_json": [
+                {"id": "A", "text": "Good morning"},
+                {"id": "B", "text": "See you later"},
+                {"id": "C", "text": "How are you?"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
     ]
     
     for data in items_data:
@@ -201,10 +278,68 @@ def create_reading_items(db: Session, template_id: str, section_id: str):
             "item_type": "fill_blank",
             "sequence_order": 2,
             "prompt_text": "Read Anna's message. Fill in the blanks.",
-            "stimulus_text": "Hi! My name is Anna. I am from [BLANK]. I live in London now. I am a [BLANK]. I work in a hospital. I like my job!",
+            "stimulus_text": "Hi! My name is Anna. I am from [BLANK]. I live in London now. I am a [BLANK]. I work in a hospital. I like my job!\n\nWord bank: Italy, nurse, teacher, Japan",
             "options_json": None,
             "correct_answer": {"blanks": ["Italy", "nurse"], "acceptable_variants": {"0": ["italy", "ITALY"], "1": ["Nurse", "NURSE"]}},
             "score_points": 2,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 3,
+            "prompt_text": "Read the message. Where do they meet?",
+            "stimulus_text": "Hi Ben! Are you free this Saturday? Let's meet at the station at four o'clock. We can walk to the park together. See you! - Mina",
+            "options_json": [
+                {"id": "A", "text": "At the park"},
+                {"id": "B", "text": "At the station"},
+                {"id": "C", "text": "At Mina's house"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 4,
+            "prompt_text": "Read the menu. How much is one tea and one cake together?",
+            "stimulus_text": "**Corner Café Menu**\n\nTea ......... $2\nCoffee ....... $3\nCake ......... $4\nSandwich ..... $5",
+            "options_json": [
+                {"id": "A", "text": "$5"},
+                {"id": "B", "text": "$6"},
+                {"id": "C", "text": "$7"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 5,
+            "prompt_text": "Read Tomo's profile. What is his job?",
+            "stimulus_text": "**Class Profile**\n\nName: Tomo\nCountry: Japan\nCity: Osaka\nJob: Taxi driver\nHobby: Cooking",
+            "options_json": [
+                {"id": "A", "text": "Cook"},
+                {"id": "B", "text": "Teacher"},
+                {"id": "C", "text": "Taxi driver"},
+            ],
+            "correct_answer": {"option_id": "C"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "matching",
+            "sequence_order": 6,
+            "prompt_text": "Match each sign with its meaning.",
+            "options_json": {
+                "left_items": [
+                    {"id": "1", "text": "OPEN"},
+                    {"id": "2", "text": "EXIT"},
+                    {"id": "3", "text": "PUSH"},
+                ],
+                "right_items": [
+                    {"id": "A", "text": "The way out"},
+                    {"id": "B", "text": "The shop is ready for you"},
+                    {"id": "C", "text": "Move the door away from you"},
+                ],
+            },
+            "correct_answer": {"pairs": {"1": "B", "2": "A", "3": "C"}},
+            "score_points": 3,
         },
     ]
     
@@ -274,6 +409,106 @@ def create_grammar_items(db: Session, template_id: str, section_id: str):
             "correct_answer": {"pairs": {"1": "B", "2": "C", "3": "A"}},
             "score_points": 3,
         },
+        {
+            "item_type": "mcq",
+            "sequence_order": 4,
+            "prompt_text": "Choose the correct answer: They _____ from Japan.",
+            "options_json": [
+                {"id": "A", "text": "is"},
+                {"id": "B", "text": "are"},
+                {"id": "C", "text": "am"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 5,
+            "prompt_text": "Choose the correct question word: _____ are you from?",
+            "options_json": [
+                {"id": "A", "text": "Where"},
+                {"id": "B", "text": "When"},
+                {"id": "C", "text": "Who"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 6,
+            "prompt_text": "Choose the correct answer: She is _____ engineer.",
+            "options_json": [
+                {"id": "A", "text": "a"},
+                {"id": "B", "text": "an"},
+                {"id": "C", "text": "the"},
+            ],
+            "correct_answer": {"option_id": "B"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 7,
+            "prompt_text": "Choose the correct answer: This is _____ book. It is not your book.",
+            "options_json": [
+                {"id": "A", "text": "my"},
+                {"id": "B", "text": "me"},
+                {"id": "C", "text": "I"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "fill_blank",
+            "sequence_order": 8,
+            "prompt_text": "Complete the sentence with one word.",
+            "stimulus_text": "I [BLANK] a student at this school.",
+            "options_json": None,
+            "correct_answer": {"blanks": ["am"], "acceptable_variants": {"0": ["'m"]}},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 9,
+            "prompt_text": "Choose the opposite of \"cheap\".",
+            "options_json": [
+                {"id": "A", "text": "Expensive"},
+                {"id": "B", "text": "Small"},
+                {"id": "C", "text": "Easy"},
+            ],
+            "correct_answer": {"option_id": "A"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "mcq",
+            "sequence_order": 10,
+            "prompt_text": "Choose the correct answer: The class is _____ Monday.",
+            "options_json": [
+                {"id": "A", "text": "in"},
+                {"id": "B", "text": "at"},
+                {"id": "C", "text": "on"},
+            ],
+            "correct_answer": {"option_id": "C"},
+            "score_points": 1,
+        },
+        {
+            "item_type": "matching",
+            "sequence_order": 11,
+            "prompt_text": "Match each question with the best answer.",
+            "options_json": {
+                "left_items": [
+                    {"id": "1", "text": "How are you?"},
+                    {"id": "2", "text": "What's your name?"},
+                    {"id": "3", "text": "Where are you from?"},
+                ],
+                "right_items": [
+                    {"id": "A", "text": "I'm from Brazil."},
+                    {"id": "B", "text": "I'm fine, thank you."},
+                    {"id": "C", "text": "My name is Tom."},
+                ],
+            },
+            "correct_answer": {"pairs": {"1": "B", "2": "C", "3": "A"}},
+            "score_points": 3,
+        },
     ]
     
     for data in items_data:
@@ -313,6 +548,28 @@ def create_speaking_items(db: Session, template_id: str, section_id: str):
         {
             "item_type": "audio_response",
             "sequence_order": 2,
+            "prompt_text": "Introduce yourself. Say your name, your country, and your job or study. (Speak for 20-40 seconds)",
+            "rubric_criteria": {
+                "content": {"weight": 0.4, "criteria": "Says name, origin, and job or study"},
+                "pronunciation": {"weight": 0.3, "criteria": "Clear enough to understand"},
+                "fluency": {"weight": 0.3, "criteria": "Steady pacing without long pauses"},
+            },
+            "score_points": 10,
+        },
+        {
+            "item_type": "audio_response",
+            "sequence_order": 3,
+            "prompt_text": "Answer the question: What food do you like? Say one or two sentences.",
+            "rubric_criteria": {
+                "content": {"weight": 0.4, "criteria": "Answers the question with a relevant food"},
+                "vocabulary": {"weight": 0.3, "criteria": "Uses simple food and like/don't like words"},
+                "grammar": {"weight": 0.3, "criteria": "Uses I like / I don't like correctly"},
+            },
+            "score_points": 10,
+        },
+        {
+            "item_type": "audio_response",
+            "sequence_order": 4,
             "prompt_text": "Talk about your daily routine. What do you do every day? (Speak for 30-60 seconds)",
             "rubric_criteria": {
                 "content": {"weight": 0.4, "criteria": "Relevance and completeness of response"},
@@ -357,6 +614,17 @@ def create_writing_items(db: Session, template_id: str, section_id: str):
             },
             "score_points": 10,
         },
+        {
+            "item_type": "text_response",
+            "sequence_order": 2,
+            "prompt_text": "You have a new online classmate. Write a short reply (20-40 words). Include:\n- Your name\n- Your country or city\n- One polite closing phrase",
+            "rubric_criteria": {
+                "task_achievement": {"weight": 0.4, "criteria": "Includes name, origin, and a closing phrase"},
+                "vocabulary": {"weight": 0.3, "criteria": "Uses simple introduction phrases"},
+                "grammar": {"weight": 0.3, "criteria": "Uses I am / I'm from correctly"},
+            },
+            "score_points": 10,
+        },
     ]
     
     for data in items_data:
@@ -385,6 +653,15 @@ def seed_a1_exam():
     
     db = get_sessionmaker()()
     try:
+        from sqlalchemy import select
+
+        existing = db.execute(
+            select(ExamTemplateModel).where(ExamTemplateModel.code == "CEFR-A1-EXAM-v1")
+        ).scalar_one_or_none()
+        if existing:
+            print("⚠️  Exam template CEFR-A1-EXAM-v1 already exists. Delete it first to reseed.")
+            return
+
         template = create_a1_exam(db)
         db.commit()
         print("\n" + "=" * 60)

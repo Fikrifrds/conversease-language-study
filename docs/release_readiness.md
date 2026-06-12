@@ -18,12 +18,9 @@ This document tracks the Conversease MVP release candidate.
 - Admin CMS has a batch audio queue for generating all missing text-ready listening audio or regenerating every text-ready lesson after script edits.
 - Admin A1 final-test review page for beta manual scoring of submitted attempts and official user report updates.
 - Sandbox package activation remains available for local QA only and is disabled in production.
-- A1 Unit 1 content structure with 5 published lessons:
-  - Saying Hello and Goodbye
-  - Saying Your Name
-  - Asking Someone's Name
-  - Saying Where You Are From
-  - First Conversation Mission
+- Full A1 curriculum with all 40 lessons published across 8 units (greetings, spelling/numbers/contact, daily routine, work/study, places/directions, food/shopping, help/requests, review/final). 32 of 40 lessons are audio-ready; 8 still need audio generation.
+- A2, B1, B2, and C1 curriculum text is complete (40 lessons per level) but not yet published: audio is not generated and publish status is unset in `content/production_tracker.csv`.
+- Real Exam system (A1): database-backed templates/sections/items, exam runner UI, automatic scoring for objective items (MCQ, fill-blank, matching), weighted section results, and an admin review queue for speaking/writing responses. The A1 exam is seeded via `apps/api/scripts/seed_a1_exam.py` (32 items per the Real Exam PRD) and listening items need audio generation before public use.
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
 - Content readiness report is available at `scripts/content_readiness_report.py`; audio-specific audit is available at `scripts/audio_readiness_report.py`.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
@@ -63,8 +60,9 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Manual transfer can support controlled paid beta after `RESEND_API_KEY`, `PAYMENT_ADMIN_API_KEY`, admin email, and Bank Jago account details are configured. Admin approval/rejection sends a user email, records delivery status, and supports resend from the payment detail.
 - Manual transfer checkout links can be reopened by the owning user through `/billing?order_id=<order-id>` to recover instructions and current order status.
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
-- Full public A1 release still needs all 40 planned A1 lessons text-ready and audio-ready. Current content supports Unit 1 beta only; Units 2-8 are planned but not implemented.
-- Full multi-level release needs all launched levels in A1-C1 text-ready and audio-ready. Current A2, B1, B2, and C1 plans are tracked but not implemented.
+- Full public A1 release still needs the remaining 8 A1 lessons audio-ready (text is complete for all 40).
+- Full multi-level release needs A2-C1 audio generated and lessons published; all four levels are text-ready but unpublished.
+- A1 Real Exam needs listening audio generated for its items and at least one full QA pass (start → answer all sections → submit → admin review → published result) before exposing it to users.
 - Conversation Coach now supports turn-based recorded-audio STT with AssemblyAI, but feedback remains deterministic for beta. Beta final-test attempts can be manually reviewed by admin, while public official automated speaking assessment still needs production grading orchestration.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.

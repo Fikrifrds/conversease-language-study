@@ -321,9 +321,20 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     setError("");
     setNotice("");
     try {
-      await submitRealExam(manifest.sessionId);
+      const submitResult = await submitRealExam(manifest.sessionId);
       window.localStorage.removeItem(sessionStorageKey(levelCode));
-      setNotice("Exam submitted successfully. The attempt is now ready for review.");
+      const scorePercent = Math.round(submitResult.score_percent);
+      if (submitResult.pending_review_count > 0) {
+        setNotice(
+          `Exam submitted. Provisional score: ${scorePercent}%. ` +
+            `${submitResult.pending_review_count} speaking/writing answer(s) are waiting for reviewer scoring, ` +
+            "so your final result may change."
+        );
+      } else {
+        setNotice(
+          `Exam submitted. Final score: ${scorePercent}% — ${submitResult.passed ? "Passed" : "Not passed"}.`
+        );
+      }
       setManifest((current) => (current ? { ...current, status: "submitted" } : current));
     } catch {
       setError("The exam could not be submitted.");

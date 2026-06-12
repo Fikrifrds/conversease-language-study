@@ -40,7 +40,8 @@
   - Manual-transfer payment order records with unique code confirmation and admin approval UI
   - Conversation Coach minute ledger
   - A1 final test attempts, submitted reports, and admin-reviewed official reports
-- Unit 1 A1 curriculum with 5 published lessons loaded from `content/curriculum` YAML files.
+- Full A1 curriculum (40 published lessons across 8 units) loaded from `content/curriculum` YAML files; A2-C1 curriculum text complete but unpublished (no audio yet).
+- Real Exam system: exam templates/sections/items/sessions/responses/results/review-queue tables, exam runner endpoints, automatic objective scoring (MCQ, fill-blank, matching) with weighted section results on submit, admin review queue endpoints for speaking/writing scoring, and A1 seed script with 32 PRD-aligned items (`apps/api/scripts/seed_a1_exam.py`).
 - Published A1 lessons include listening scripts, transcript translations, conversation goals, grammar notes, pronunciation drills, reading support, writing support, quizzes, roleplay configs, and production tracker rows for release auditing.
 - Published A1 final conversation test with weighted skill sections, task prompts, readiness preview scoring, persisted submitted reports, and admin manual review for beta official scores.
 - Curriculum release validation via `scripts/validate_curriculum.py`, including published lesson support files and `content/production_tracker.csv`.

@@ -939,6 +939,10 @@ export async function submitRealExam(sessionId: string) {
     session_id: string;
     status: string;
     submitted_at: string;
+    result_status: string;
+    score_percent: number;
+    passed: boolean;
+    pending_review_count: number;
     message: string;
   }>(`/exam-runner/submit/${sessionId}`, {
     method: "POST"

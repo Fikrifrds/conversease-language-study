@@ -1,13 +1,13 @@
 # Dialogue Script
 
-**Faris:** Isn't this approach too risky?  
+**Faris:** Isn't this approach too risky? You're proposing to change the platform while three teams are in the middle of delivery.  
 **Mina:** That's a fair question. Let me clarify what risk we're accepting.  
-**Faris:** Okay.  
-**Mina:** The short answer is: it's manageable if we pilot first and monitor closely.  
-**Faris:** What if teams ignore standards?  
-**Mina:** What I'd emphasize is that standards need ownership and enforcement.  
-**Faris:** So what's the fallback?  
-**Mina:** If adoption stalls, we pause expansion and revisit the design.  
+**Faris:** Go ahead. I'd like to hear how you're framing it before we debate the details.  
+**Mina:** The short answer is: it's manageable if we pilot first and monitor closely. The scenario that worries people is a silent failure, and the monitoring is designed to catch exactly that.  
+**Faris:** What if teams ignore the standards once the pilot pressure is off? That's what happened with the last initiative.  
+**Mina:** What I'd emphasize is that standards need ownership and enforcement. Every guideline will have a named owner and a review cadence, not just a document.  
+**Faris:** Understood. And if it still goes wrong, what's the fallback?  
+**Mina:** If adoption stalls, we pause expansion and revisit the design. The pilot is deliberately cheap to stop, so there's no sunk-cost pressure.  
 
 ## Audio Direction
 

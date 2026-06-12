@@ -4,7 +4,7 @@ API endpoints for candidates to take exams.
 Provides exam content, navigation, and response submission.
 """
 from datetime import datetime
-from typing import Optional
+from typing import Optional, Union
 
 from fastapi import APIRouter, Depends, HTTPException, Request
 from pydantic import BaseModel
@@ -70,7 +70,7 @@ class ItemResponse(BaseModel):
     stimulus_audio_url: Optional[str] = None
     stimulus_image_url: Optional[str] = None
     options: Optional[list[ItemOption]] = None
-    options_data: Optional[dict | list] = None
+    options_data: Optional[Union[dict, list]] = None
     score_points: int
 
 
@@ -455,12 +455,17 @@ async def submit_exam(
     if session.user_id != current_user.id:
         raise HTTPException(status_code=403, detail="Access denied")
     
-    # Submit exam
+    # Submit exam, grade objective items, and queue subjective ones for review
     session = service.submit_exam(session_id)
-    
+    result = service.finalize_submission(session_id)
+
     return {
         "session_id": session_id,
         "status": session.status,
         "submitted_at": session.submitted_at,
+        "result_status": result.status,
+        "score_percent": result.score_percent,
+        "passed": result.passed,
+        "pending_review_count": (result.metadata_json or {}).get("pending_review_count", 0),
         "message": "Exam submitted successfully",
     }

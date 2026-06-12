@@ -5,7 +5,7 @@ from app.core.config import settings
 from app.domain.email import branded_email_html
 from app.domain.users import User
 from app.services.auth_email import escape_text
-from app.services.email_delivery import EmailDeliveryResult, EmailDeliveryService
+from app.services.email_delivery import EmailDeliveryService
 
 
 @dataclass(frozen=True)

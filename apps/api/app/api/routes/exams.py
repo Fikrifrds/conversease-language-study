@@ -187,6 +187,8 @@ class SubmitExamResponse(BaseModel):
     session_id: str
     status: str
     submitted_at: datetime
+    result_status: Optional[str] = None
+    pending_review_count: int = 0
     message: str = "Exam submitted successfully"
 
 
@@ -194,6 +196,7 @@ class ExamResultResponse(BaseModel):
     """Schema for exam result response."""
     id: str
     session_id: str
+    status: str
     total_score: int
     max_possible_score: int
     score_percent: float
@@ -206,6 +209,29 @@ class ExamResultResponse(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class ReviewQueueEntryResponse(BaseModel):
+    """Schema for an admin review queue entry."""
+    id: str
+    response_id: str
+    session_id: str
+    exam_template_id: str
+    item_type: str
+    status: str
+    prompt_text: str
+    score_points_max: int
+    rubric_criteria: Optional[dict]
+    text_response: Optional[str]
+    file_url: Optional[str]
+    audio_duration_seconds: Optional[float]
+    created_at: datetime
+
+
+class ReviewScoreRequest(BaseModel):
+    """Schema for submitting a human review score."""
+    score_points: int = Field(..., ge=0)
+    notes: Optional[str] = None
 
 
 # ============================================================================
@@ -374,10 +400,15 @@ async def submit_exam_session(
             )
         
         session = service.submit_exam(session_id)
+        result_record = service.finalize_submission(session_id)
         return {
             "session_id": session.id,
             "status": session.status,
             "submitted_at": session.submitted_at,
+            "result_status": result_record.status,
+            "pending_review_count": (result_record.metadata_json or {}).get(
+                "pending_review_count", 0
+            ),
             "message": "Exam submitted successfully",
         }
     except ExamSessionNotFoundError as e:
@@ -584,3 +615,77 @@ async def admin_get_full_exam_template(
         }
     except ExamNotFoundError as e:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=str(e))
+
+
+@router.get("/admin/review-queue", response_model=list[ReviewQueueEntryResponse])
+async def admin_list_review_queue(
+    queue_status: str = "pending",
+    exam_template_id: Optional[str] = None,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> list[ReviewQueueEntryResponse]:
+    """Admin: List speaking/writing responses waiting for human review."""
+    if not current_user.is_admin:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Only admins can view the review queue"
+        )
+
+    service = ExamService(db)
+    entries = service.list_review_queue(
+        status=queue_status,
+        exam_template_id=exam_template_id,
+    )
+
+    payload = []
+    for entry in entries:
+        response = db.execute(
+            select(ItemResponseModel).where(ItemResponseModel.id == entry.response_id)
+        ).scalar_one_or_none()
+        if not response:
+            continue
+        item = service.get_exam_item(response.item_id)
+        payload.append(
+            ReviewQueueEntryResponse(
+                id=entry.id,
+                response_id=entry.response_id,
+                session_id=entry.session_id,
+                exam_template_id=entry.exam_template_id,
+                item_type=entry.item_type,
+                status=entry.status,
+                prompt_text=item.prompt_text,
+                score_points_max=item.score_points,
+                rubric_criteria=item.rubric_criteria,
+                text_response=response.text_response,
+                file_url=response.file_url,
+                audio_duration_seconds=response.audio_duration_seconds,
+                created_at=entry.created_at,
+            )
+        )
+    return payload
+
+
+@router.post("/admin/review-queue/{queue_id}/score", response_model=ExamResultResponse)
+async def admin_score_review_entry(
+    queue_id: str,
+    data: ReviewScoreRequest,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> ExamResultModel:
+    """Admin: Apply a human score to a queued response and recalculate the result."""
+    if not current_user.is_admin:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Only admins can score review entries"
+        )
+
+    service = ExamService(db)
+    try:
+        return service.apply_review_score(
+            queue_id=queue_id,
+            score_points=data.score_points,
+            reviewed_by=current_user.email,
+            notes=data.notes,
+        )
+    except ExamServiceError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
