@@ -173,6 +173,7 @@ export type AdminExamListeningItem = {
   stimulusText: string | null;
   stimulusAudioUrl: string | null;
   audioReady: boolean;
+  audioStale: boolean;
   audioMetadata: Record<string, unknown>;
 };
 
@@ -185,7 +186,12 @@ export type AdminExamAudioTemplate = {
   durationMinutes: number;
   listeningItemCount: number;
   listeningAudioReadyCount: number;
+  listeningAudioStaleCount: number;
   listeningItems: AdminExamListeningItem[];
+  speakingItemCount: number;
+  speakingAudioReadyCount: number;
+  speakingAudioStaleCount: number;
+  speakingItems: AdminExamListeningItem[];
 };
 
 export type AdminVoicePreviewAudio = {
@@ -436,6 +442,7 @@ type ApiAdminExamListeningItem = {
   stimulus_text: string | null;
   stimulus_audio_url: string | null;
   audio_ready: boolean;
+  audio_stale: boolean;
   audio_metadata: Record<string, unknown>;
 };
 
@@ -448,7 +455,12 @@ type ApiAdminExamAudioTemplate = {
   duration_minutes: number;
   listening_item_count: number;
   listening_audio_ready_count: number;
+  listening_audio_stale_count: number;
   listening_items: ApiAdminExamListeningItem[];
+  speaking_item_count: number;
+  speaking_audio_ready_count: number;
+  speaking_audio_stale_count: number;
+  speaking_items: ApiAdminExamListeningItem[];
 };
 
 function apiBaseUrl() {
@@ -693,6 +705,7 @@ function mapExamListeningItem(item: ApiAdminExamListeningItem): AdminExamListeni
     stimulusText: item.stimulus_text,
     stimulusAudioUrl: item.stimulus_audio_url,
     audioReady: item.audio_ready,
+    audioStale: item.audio_stale,
     audioMetadata: item.audio_metadata ?? {}
   };
 }
@@ -707,7 +720,12 @@ function mapExamAudioTemplate(template: ApiAdminExamAudioTemplate): AdminExamAud
     durationMinutes: template.duration_minutes,
     listeningItemCount: template.listening_item_count,
     listeningAudioReadyCount: template.listening_audio_ready_count,
-    listeningItems: template.listening_items.map(mapExamListeningItem)
+    listeningAudioStaleCount: template.listening_audio_stale_count,
+    listeningItems: template.listening_items.map(mapExamListeningItem),
+    speakingItemCount: template.speaking_item_count,
+    speakingAudioReadyCount: template.speaking_audio_ready_count,
+    speakingAudioStaleCount: template.speaking_audio_stale_count,
+    speakingItems: template.speaking_items.map(mapExamListeningItem)
   };
 }
 

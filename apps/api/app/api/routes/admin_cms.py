@@ -24,8 +24,10 @@ from app.data.admin_cms import (
 )
 from app.repositories.content_revisions import ContentRevisionRepository, revision_payload
 from app.services.audio_generation import (
+    EXAM_AUDIO_SECTION_CODES,
     AudioGenerationError,
     audio_generation_settings,
+    exam_item_source_text_hash,
     find_lesson_audio_reference,
     generate_exam_item_listening_audio,
     generate_lesson_listening_audio,
@@ -309,6 +311,7 @@ async def generate_exam_item_audio(
             "usage_characters": result["usage_characters"],
             "generated_by": result["generated_by"],
             "generated_at": result["generated_at"],
+            "source_text_hash": exam_item_source_text_hash(item),
         },
     )
 
@@ -377,23 +380,30 @@ async def generate_exam_template_audio(
         for section in db.execute(
             select(ExamSectionModel)
             .where(ExamSectionModel.exam_template_id == template_id)
-            .where(ExamSectionModel.code == "LISTENING")
+            .where(ExamSectionModel.code.in_(list(EXAM_AUDIO_SECTION_CODES)))
         )
         .scalars()
         .all()
     ]
     if not section_ids:
-        raise HTTPException(status_code=422, detail="listening_section_not_found")
+        raise HTTPException(status_code=422, detail="audio_section_not_found")
 
-    query = (
-        select(ExamItemModel)
-        .where(ExamItemModel.section_id.in_(section_ids))
-        .order_by(ExamItemModel.sequence_order.asc())
+    items = (
+        db.execute(
+            select(ExamItemModel)
+            .where(ExamItemModel.section_id.in_(section_ids))
+            .order_by(ExamItemModel.sequence_order.asc())
+        )
+        .scalars()
+        .all()
     )
     if payload.only_missing:
-        query = query.where(ExamItemModel.stimulus_audio_url.is_(None))
-
-    items = db.execute(query).scalars().all()
+        # "Missing" includes audio whose source text changed since generation.
+        items = [
+            item
+            for item in items
+            if not item.stimulus_audio_url or serialize_exam_item_audio(item)["audio_stale"]
+        ]
     results = []
     for item in items:
         result = await generate_exam_item_audio(
@@ -561,16 +571,23 @@ def serialize_exam_template_audio(template: ExamTemplateModel, db: Session) -> d
         .scalars()
         .all()
     )
-    listening_sections = [section for section in sections if section.code.upper() == "LISTENING"]
-    listening_items = (
-        db.execute(
-            select(ExamItemModel)
-            .where(ExamItemModel.section_id.in_([section.id for section in listening_sections] or [""]))
-            .order_by(ExamItemModel.sequence_order.asc())
+
+    def section_items(code: str) -> list[ExamItemModel]:
+        section_ids = [section.id for section in sections if section.code.upper() == code]
+        return list(
+            db.execute(
+                select(ExamItemModel)
+                .where(ExamItemModel.section_id.in_(section_ids or [""]))
+                .order_by(ExamItemModel.sequence_order.asc())
+            )
+            .scalars()
+            .all()
         )
-        .scalars()
-        .all()
-    )
+
+    listening_items = section_items("LISTENING")
+    speaking_items = section_items("SPEAKING")
+    serialized_listening = [serialize_exam_item_audio(item) for item in listening_items]
+    serialized_speaking = [serialize_exam_item_audio(item) for item in speaking_items]
     return {
         "id": template.id,
         "code": template.code,
@@ -580,12 +597,23 @@ def serialize_exam_template_audio(template: ExamTemplateModel, db: Session) -> d
         "duration_minutes": template.duration_minutes,
         "listening_item_count": len(listening_items),
         "listening_audio_ready_count": len([item for item in listening_items if item.stimulus_audio_url]),
-        "listening_items": [serialize_exam_item_audio(item) for item in listening_items],
+        "listening_audio_stale_count": len([item for item in serialized_listening if item["audio_stale"]]),
+        "listening_items": serialized_listening,
+        "speaking_item_count": len(speaking_items),
+        "speaking_audio_ready_count": len([item for item in speaking_items if item.stimulus_audio_url]),
+        "speaking_audio_stale_count": len([item for item in serialized_speaking if item["audio_stale"]]),
+        "speaking_items": serialized_speaking,
     }
 
 
 def serialize_exam_item_audio(item: ExamItemModel) -> dict:
     audio_generation = (item.config_json or {}).get("audio_generation", {})
+    if not isinstance(audio_generation, dict):
+        audio_generation = {}
+    # Audio generated before hash tracking (or before a text edit) counts as stale.
+    audio_stale = bool(item.stimulus_audio_url) and (
+        audio_generation.get("source_text_hash") != exam_item_source_text_hash(item)
+    )
     return {
         "id": item.id,
         "section_id": item.section_id,
@@ -595,5 +623,6 @@ def serialize_exam_item_audio(item: ExamItemModel) -> dict:
         "stimulus_text": item.stimulus_text,
         "stimulus_audio_url": item.stimulus_audio_url,
         "audio_ready": bool(item.stimulus_audio_url),
-        "audio_metadata": audio_generation if isinstance(audio_generation, dict) else {},
+        "audio_stale": audio_stale,
+        "audio_metadata": audio_generation,
     }

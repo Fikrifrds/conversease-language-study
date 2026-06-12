@@ -489,8 +489,8 @@ async def generate_exam_item_listening_audio(
         raise AudioGenerationError("minimax_api_key_missing")
     if not s3_configured():
         raise AudioGenerationError("s3_config_missing")
-    if section.code.upper() != "LISTENING":
-        raise AudioGenerationError("exam_item_not_listening")
+    if section.code.upper() not in EXAM_AUDIO_SECTION_CODES:
+        raise AudioGenerationError("exam_item_section_not_supported")
 
     source_text = exam_item_audio_source_text(item)
     if len(source_text) < 8:
@@ -859,6 +859,14 @@ def dialogue_turns_from_text(value: str) -> list[DialogueTurn]:
     if turns and len(total_text) >= 10000:
         raise AudioGenerationError("exam_item_audio_source_too_long")
     return turns
+
+
+EXAM_AUDIO_SECTION_CODES = {"LISTENING", "SPEAKING"}
+
+
+def exam_item_source_text_hash(item: ExamItemModel) -> str:
+    """Hash of the TTS source text, used to detect outdated generated audio."""
+    return hashlib.sha256(exam_item_audio_source_text(item).encode("utf-8")).hexdigest()
 
 
 def exam_item_audio_source_text(item: ExamItemModel) -> str:

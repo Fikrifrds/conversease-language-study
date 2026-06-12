@@ -334,7 +334,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       });
       await reloadExamAudioTemplates();
       setMessage(
-        `${result.generatedCount} audio listening exam untuk ${template.title} berhasil ${onlyMissing ? "dibuat" : "diregenerate"}.`
+        `${result.generatedCount} audio exam (listening & speaking) untuk ${template.title} berhasil ${onlyMissing ? "di-update" : "diregenerate"}.`
       );
     } catch (caughtError) {
       setError(audioGenerationErrorMessage(caughtError));
@@ -1019,9 +1019,10 @@ function ExamAudioPanel({
           </div>
           <div>
             <p className="text-xs font-semibold uppercase text-leaf">Exam Audio</p>
-            <h2 className="mt-1 font-semibold">Generate listening audio untuk exam</h2>
+            <h2 className="mt-1 font-semibold">Generate audio untuk exam (listening & speaking)</h2>
             <p className="mt-1 max-w-3xl text-sm leading-6 text-ink/60">
-              Pilih template exam lalu generate audio per item atau sekaligus untuk semua item listening yang belum punya audio.
+              Pilih template exam lalu generate audio per item atau sekaligus. Tombol Generate Missing juga
+              meng-update item yang audionya outdated karena teks soal sudah berubah sejak audio dibuat.
             </p>
           </div>
         </div>
@@ -1033,7 +1034,18 @@ function ExamAudioPanel({
       <div className="mt-4 grid gap-4">
         {templates.length ? (
           templates.map((template) => {
-            const missingCount = template.listeningItemCount - template.listeningAudioReadyCount;
+            const itemGroups = [
+              { label: "Listening", items: template.listeningItems },
+              { label: "Speaking", items: template.speakingItems }
+            ].filter((group) => group.items.length > 0);
+            const totalItemCount = template.listeningItemCount + template.speakingItemCount;
+            const pendingCount =
+              totalItemCount -
+              template.listeningAudioReadyCount -
+              template.speakingAudioReadyCount +
+              template.listeningAudioStaleCount +
+              template.speakingAudioStaleCount;
+            const staleCount = template.listeningAudioStaleCount + template.speakingAudioStaleCount;
             return (
               <div key={template.id} className="rounded-lg border border-ink/10 bg-paper p-4">
                 <div className="flex flex-wrap items-start justify-between gap-3">
@@ -1043,14 +1055,16 @@ function ExamAudioPanel({
                     </p>
                     <h3 className="mt-1 text-lg font-semibold">{template.title}</h3>
                     <p className="mt-1 text-sm text-ink/55">
-                      Listening audio ready {template.listeningAudioReadyCount}/{template.listeningItemCount}
+                      Listening {template.listeningAudioReadyCount}/{template.listeningItemCount} · Speaking{" "}
+                      {template.speakingAudioReadyCount}/{template.speakingItemCount}
+                      {staleCount ? ` · ${staleCount} outdated` : ""}
                     </p>
                   </div>
                   <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
                       onClick={() => onGenerateTemplate(template, true)}
-                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !missingCount}
+                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !pendingCount}
                       className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-leaf px-3 text-sm font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       <Sparkles className="h-4 w-4" aria-hidden="true" />
@@ -1059,7 +1073,7 @@ function ExamAudioPanel({
                     <button
                       type="button"
                       onClick={() => onGenerateTemplate(template, false)}
-                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !template.listeningItemCount}
+                      disabled={!audioReadyToGenerate || generatingTemplateId === template.id || !totalItemCount}
                       className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
                     >
                       <RefreshCcw className="h-4 w-4" aria-hidden="true" />
@@ -1068,48 +1082,60 @@ function ExamAudioPanel({
                   </div>
                 </div>
 
-                <div className="mt-4 grid gap-3">
-                  {template.listeningItems.map((item) => (
-                    <div key={item.id} className="rounded-lg bg-white p-3">
-                      <div className="flex flex-wrap items-start justify-between gap-3">
-                        <div className="min-w-0">
-                          <p className="text-sm font-semibold text-ink">Item {item.sequenceOrder}</p>
-                          <p className="mt-1 text-sm text-ink/65">{item.promptText}</p>
-                          {item.stimulusText ? (
-                            <p className="mt-2 whitespace-pre-wrap text-xs leading-5 text-ink/50">{item.stimulusText}</p>
+                {itemGroups.map((group) => (
+                  <div key={group.label} className="mt-4">
+                    <p className="text-xs font-semibold uppercase text-ink/45">{group.label}</p>
+                    <div className="mt-2 grid gap-3">
+                      {group.items.map((item) => (
+                        <div key={item.id} className="rounded-lg bg-white p-3">
+                          <div className="flex flex-wrap items-start justify-between gap-3">
+                            <div className="min-w-0">
+                              <p className="text-sm font-semibold text-ink">Item {item.sequenceOrder}</p>
+                              <p className="mt-1 text-sm text-ink/65">{item.promptText}</p>
+                              {item.stimulusText ? (
+                                <p className="mt-2 whitespace-pre-wrap text-xs leading-5 text-ink/50">{item.stimulusText}</p>
+                              ) : null}
+                            </div>
+                            <div className="flex flex-wrap items-center gap-2">
+                              {item.audioStale ? (
+                                <span className="inline-flex min-h-8 items-center gap-1.5 rounded-lg bg-[#fff3d6] px-2.5 text-xs font-semibold text-[#9a6b00]">
+                                  <RefreshCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                                  Outdated
+                                </span>
+                              ) : (
+                                <ReadinessPill ready={item.audioReady} label="Audio" />
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => onGenerateItem(template.id, item)}
+                                disabled={!audioReadyToGenerate || generatingItemId === item.id}
+                                className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-xs font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                              >
+                                <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
+                                {generatingItemId === item.id ? "Generating" : item.audioReady ? "Regenerate" : "Generate"}
+                              </button>
+                            </div>
+                          </div>
+
+                          {item.audioMetadata && (item.audioMetadata.playback_url || item.stimulusAudioUrl) ? (
+                            <div className="mt-3 rounded-lg bg-paper p-3">
+                              <audio
+                                controls
+                                preload="metadata"
+                                src={String(item.audioMetadata.playback_url || item.stimulusAudioUrl)}
+                                className="h-10 w-full"
+                              />
+                              <p className="mt-2 text-xs text-ink/45">
+                                {String(item.audioMetadata.model || "model unknown")} /{" "}
+                                {String(item.audioMetadata.voice_id || "voice unknown")}
+                              </p>
+                            </div>
                           ) : null}
                         </div>
-                        <div className="flex flex-wrap items-center gap-2">
-                          <ReadinessPill ready={item.audioReady} label="Audio" />
-                          <button
-                            type="button"
-                            onClick={() => onGenerateItem(template.id, item)}
-                            disabled={!audioReadyToGenerate || generatingItemId === item.id}
-                            className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-xs font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-                          >
-                            <Sparkles className="h-3.5 w-3.5" aria-hidden="true" />
-                            {generatingItemId === item.id ? "Generating" : item.audioReady ? "Regenerate" : "Generate"}
-                          </button>
-                        </div>
-                      </div>
-
-                      {item.audioMetadata && (item.audioMetadata.playback_url || item.stimulusAudioUrl) ? (
-                        <div className="mt-3 rounded-lg bg-paper p-3">
-                          <audio
-                            controls
-                            preload="metadata"
-                            src={String(item.audioMetadata.playback_url || item.stimulusAudioUrl)}
-                            className="h-10 w-full"
-                          />
-                          <p className="mt-2 text-xs text-ink/45">
-                            {String(item.audioMetadata.model || "model unknown")} /{" "}
-                            {String(item.audioMetadata.voice_id || "voice unknown")}
-                          </p>
-                        </div>
-                      ) : null}
+                      ))}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
             );
           })

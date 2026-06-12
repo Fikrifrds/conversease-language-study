@@ -526,5 +526,188 @@ class AdminCmsTest(unittest.TestCase):
             app.dependency_overrides.clear()
 
 
+class AdminCmsExamAudioTest(unittest.TestCase):
+    def setUp(self):
+        self.original_key = settings.payment_admin_api_key
+        settings.payment_admin_api_key = "test-admin-key-with-32-chars"
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        self.session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = self.session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        self.app = create_app()
+        self.app.dependency_overrides[get_db] = override_db
+        self.client = TestClient(self.app)
+        self.headers = {"x-admin-api-key": settings.payment_admin_api_key}
+        self._seed_exam()
+
+    def tearDown(self):
+        settings.payment_admin_api_key = self.original_key
+        self.app.dependency_overrides.clear()
+
+    def _seed_exam(self):
+        from datetime import datetime
+
+        from app.db.exam_models import ExamItemModel, ExamSectionModel, ExamTemplateModel
+        from app.services.audio_generation import exam_item_source_text_hash
+
+        now = datetime.utcnow()
+        with self.session_local() as db:
+            template = ExamTemplateModel(
+                id="tpl-1",
+                code="CEFR-A1-EXAM-v1",
+                level_code="A1",
+                title="A1 Exam",
+                duration_minutes=45,
+                passing_score_percent=60,
+                status="active",
+                created_by="tests",
+                created_at=now,
+                updated_at=now,
+            )
+            listening = ExamSectionModel(
+                id="sec-listening",
+                exam_template_id="tpl-1",
+                code="LISTENING",
+                title="Listening",
+                sequence_order=1,
+                duration_minutes=10,
+                score_weight_percent=25,
+                item_types_allowed=["mcq"],
+                created_at=now,
+                updated_at=now,
+            )
+            speaking = ExamSectionModel(
+                id="sec-speaking",
+                exam_template_id="tpl-1",
+                code="SPEAKING",
+                title="Speaking",
+                sequence_order=2,
+                duration_minutes=5,
+                score_weight_percent=25,
+                item_types_allowed=["audio_response"],
+                created_at=now,
+                updated_at=now,
+            )
+            fresh = ExamItemModel(
+                id="item-fresh",
+                exam_template_id="tpl-1",
+                section_id="sec-listening",
+                item_type="mcq",
+                sequence_order=1,
+                prompt_text="Where are they?",
+                stimulus_text="Mina: Hello there.\nBen: Good morning.",
+                stimulus_audio_url="https://cdn.example.com/fresh.wav",
+                score_points=1,
+                created_at=now,
+                updated_at=now,
+            )
+            fresh.config_json = {
+                "audio_generation": {"source_text_hash": exam_item_source_text_hash(fresh)}
+            }
+            stale = ExamItemModel(
+                id="item-stale",
+                exam_template_id="tpl-1",
+                section_id="sec-listening",
+                item_type="mcq",
+                sequence_order=2,
+                prompt_text="What time is it?",
+                stimulus_text="Mina: It is three o'clock now.",
+                stimulus_audio_url="https://cdn.example.com/old.wav",
+                config_json={"audio_generation": {"source_text_hash": "outdated-hash"}},
+                score_points=1,
+                created_at=now,
+                updated_at=now,
+            )
+            speaking_item = ExamItemModel(
+                id="item-speaking",
+                exam_template_id="tpl-1",
+                section_id="sec-speaking",
+                item_type="audio_response",
+                sequence_order=1,
+                prompt_text="Read this sentence aloud.",
+                stimulus_text="Hello, my name is Anna.",
+                score_points=10,
+                created_at=now,
+                updated_at=now,
+            )
+            db.add_all([template, listening, speaking, fresh, stale, speaking_item])
+            db.commit()
+
+    def test_templates_report_speaking_items_and_stale_audio(self):
+        response = self.client.get("/api/admin/cms/exams/templates", headers=self.headers)
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()["data"][0]
+        self.assertEqual(data["listening_item_count"], 2)
+        self.assertEqual(data["listening_audio_stale_count"], 1)
+        self.assertEqual(data["speaking_item_count"], 1)
+        self.assertEqual(data["speaking_audio_ready_count"], 0)
+        by_id = {item["id"]: item for item in data["listening_items"] + data["speaking_items"]}
+        self.assertFalse(by_id["item-fresh"]["audio_stale"])
+        self.assertTrue(by_id["item-stale"]["audio_stale"])
+        self.assertFalse(by_id["item-speaking"]["audio_ready"])
+
+    def test_bulk_generation_only_missing_covers_stale_and_speaking(self):
+        generated_audio = {
+            "audio_url": "https://cdn.example.com/new.wav",
+            "playback_url": "https://signed.example.com/new.wav",
+            "object_key": "conversease/audio/exams/new.wav",
+            "duration_seconds": 9.5,
+            "audio_format": "wav",
+            "audio_size": 9000,
+            "model": "speech-2.8-hd",
+            "voice_id": "English_expressive_narrator",
+            "speaker_voices": {},
+            "line_count": 2,
+            "trace_id": "trace-1",
+            "usage_characters": 80,
+            "generated_by": "Audio QA",
+            "generated_at": "2026-06-12T00:00:00+00:00",
+        }
+
+        with patch(
+            "app.api.routes.admin_cms.generate_exam_item_listening_audio",
+            new=AsyncMock(return_value=generated_audio),
+        ) as generate_audio:
+            response = self.client.post(
+                "/api/admin/cms/exams/templates/tpl-1/audio/listening",
+                headers=self.headers,
+                json={
+                    "generated_by": "Audio QA",
+                    "model": "speech-2.8-hd",
+                    "voice_id": "English_expressive_narrator",
+                    "speed": 1.0,
+                    "only_missing": True,
+                },
+            )
+
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()["data"]
+        # Stale listening item and speaking item regenerate; fresh item is skipped.
+        self.assertEqual(payload["generated_count"], 2)
+        generated_item_ids = {
+            call.kwargs["item"].id for call in generate_audio.await_args_list
+        }
+        self.assertEqual(generated_item_ids, {"item-stale", "item-speaking"})
+
+        # Regenerated items now carry the current source hash and are no longer stale.
+        listing = self.client.get("/api/admin/cms/exams/templates", headers=self.headers)
+        data = listing.json()["data"][0]
+        by_id = {item["id"]: item for item in data["listening_items"] + data["speaking_items"]}
+        self.assertFalse(by_id["item-stale"]["audio_stale"])
+        self.assertTrue(by_id["item-speaking"]["audio_ready"])
+
+
 if __name__ == "__main__":
     unittest.main()
