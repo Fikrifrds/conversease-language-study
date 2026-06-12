@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import { AdminGuard } from "@/components/admin-guard";
-import { AdminLevelTestReviewManager } from "@/components/admin-level-test-review-manager";
+import { AdminExamReviewManager } from "@/components/admin-exam-review-manager";
 import { BrandMark } from "@/components/brand-mark";
 
-export default function AdminLevelTestsPage() {
+export default function AdminExamsPage() {
   return (
     <AdminGuard>
       {(adminUser) => (
@@ -33,14 +33,8 @@ export default function AdminLevelTestsPage() {
                   Users
                 </Link>
                 <Link
-                  href="/admin/exams"
+                  href="/admin/level-tests"
                   className="focus-ring inline-flex h-10 items-center justify-center rounded-lg bg-white px-4 text-sm font-semibold hover:bg-mint"
-                >
-                  Exam Reviews
-                </Link>
-                <Link
-                  href="/level-tests"
-                  className="focus-ring inline-flex h-10 items-center justify-center rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf"
                 >
                   Level Tests
                 </Link>
@@ -48,7 +42,7 @@ export default function AdminLevelTestsPage() {
             </div>
           </header>
           <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
-            <AdminLevelTestReviewManager adminUser={adminUser} />
+            <AdminExamReviewManager adminUser={adminUser} />
           </section>
         </main>
       )}
