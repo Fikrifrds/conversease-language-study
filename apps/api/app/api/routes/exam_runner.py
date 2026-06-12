@@ -239,7 +239,7 @@ async def get_section_content(
     
     # Get items
     items = service.get_exam_items(section_id)
-    
+
     # Get total sections count
     sections_result = db.execute(
         select(ExamSectionModel)
@@ -268,7 +268,7 @@ async def get_section_content(
                 sequence_order=item.sequence_order,
                 prompt_text=item.prompt_text,
                 stimulus_text=item.stimulus_text,
-                stimulus_audio_url=item.stimulus_audio_url,
+                stimulus_audio_url=_stimulus_playback_url(item),
                 stimulus_image_url=item.stimulus_image_url,
                 options=[
                     ItemOption(id=opt["id"], text=opt["text"])
@@ -372,6 +372,15 @@ class SpeakingAudioUploadResponse(BaseModel):
     file_url: str
     playback_url: str
     audio_size: int
+
+
+def _stimulus_playback_url(item: ExamItemModel) -> Optional[str]:
+    """Resolve a playable (signed if needed) URL for generated stimulus audio."""
+    if not item.stimulus_audio_url:
+        return None
+    metadata = (item.config_json or {}).get("audio_generation", {})
+    object_key = metadata.get("object_key", "") if isinstance(metadata, dict) else ""
+    return audio_playback_url(audio_url=item.stimulus_audio_url, storage_key=object_key)
 
 
 def _speaking_audio_extension(content_type: Optional[str]) -> str:

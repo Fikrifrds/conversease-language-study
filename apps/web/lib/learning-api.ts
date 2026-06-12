@@ -934,6 +934,43 @@ export async function getExamRunnerStatus(sessionId: string): Promise<ExamRunner
   return mapExamRunnerStatus(response);
 }
 
+export type RealExamResult = {
+  sessionId: string;
+  status: string;
+  totalScore: number;
+  maxPossibleScore: number;
+  scorePercent: number;
+  passed: boolean;
+  sectionScores: Record<
+    string,
+    { score: number; max: number; percentage: number; weight_percent?: number }
+  >;
+  publishedAt: string | null;
+};
+
+export async function getRealExamResult(sessionId: string): Promise<RealExamResult> {
+  const response = await requestJson<{
+    session_id: string;
+    status: string;
+    total_score: number;
+    max_possible_score: number;
+    score_percent: number;
+    passed: boolean;
+    section_scores_json: RealExamResult["sectionScores"];
+    published_at: string | null;
+  }>(`/exams/sessions/${encodeURIComponent(sessionId)}/result`);
+  return {
+    sessionId: response.session_id,
+    status: response.status,
+    totalScore: response.total_score,
+    maxPossibleScore: response.max_possible_score,
+    scorePercent: response.score_percent,
+    passed: response.passed,
+    sectionScores: response.section_scores_json ?? {},
+    publishedAt: response.published_at
+  };
+}
+
 export async function uploadExamSpeakingAudio(input: {
   sessionId: string;
   itemId: string;

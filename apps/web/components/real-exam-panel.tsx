@@ -17,6 +17,7 @@ import {
   getExamManifest,
   getExamRunnerStatus,
   getExamSectionContent,
+  getRealExamResult,
   listExamTemplatesByLevel,
   navigateExamSession,
   saveExamItemResponse,
@@ -26,7 +27,8 @@ import {
   type ExamManifest,
   type ExamRunnerItem,
   type ExamRunnerSectionContent,
-  type ExamTemplateSummary
+  type ExamTemplateSummary,
+  type RealExamResult
 } from "@/lib/learning-api";
 import { useVoiceRecorder } from "@/lib/use-voice-recorder";
 
@@ -43,6 +45,10 @@ type DraftMap = Record<string, ItemDraft>;
 
 function sessionStorageKey(levelCode: string) {
   return `conversease.real-exam.${levelCode.toUpperCase()}.session`;
+}
+
+function lastResultStorageKey(levelCode: string) {
+  return `conversease.real-exam.${levelCode.toUpperCase()}.last-result`;
 }
 
 function formatSeconds(totalSeconds: number | null) {
@@ -80,7 +86,21 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
   const [activeSpeakingItemId, setActiveSpeakingItemId] = useState<string | null>(null);
+  const [lastResult, setLastResult] = useState<RealExamResult | null>(null);
   const audioUrlRef = useRef<Record<string, string>>({});
+
+  async function refreshLastResult() {
+    const lastSessionId =
+      typeof window !== "undefined" ? window.localStorage.getItem(lastResultStorageKey(levelCode)) : null;
+    if (!lastSessionId) {
+      return;
+    }
+    try {
+      setLastResult(await getRealExamResult(lastSessionId));
+    } catch {
+      // Result may not exist yet (or session was cleaned up) — keep the card hidden.
+    }
+  }
 
   const recorder = useVoiceRecorder({
     onResult: async (blob) => {
@@ -159,6 +179,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         }
         setTemplates(nextTemplates);
         setActiveTemplate(nextTemplates[0] ?? null);
+        void refreshLastResult();
 
         const savedSessionId =
           typeof window !== "undefined" ? window.localStorage.getItem(sessionStorageKey(levelCode)) : null;
@@ -351,6 +372,8 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     try {
       const submitResult = await submitRealExam(manifest.sessionId);
       window.localStorage.removeItem(sessionStorageKey(levelCode));
+      window.localStorage.setItem(lastResultStorageKey(levelCode), manifest.sessionId);
+      void refreshLastResult();
       const scorePercent = Math.round(submitResult.score_percent);
       if (submitResult.pending_review_count > 0) {
         setNotice(
@@ -599,6 +622,56 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">{notice}</div>
         ) : null}
 
+        {!manifest && lastResult ? (
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Your latest exam result</p>
+                {lastResult.status === "published" ? (
+                  <p className="mt-2 text-2xl font-semibold text-slate-900">
+                    {Math.round(lastResult.scorePercent)}%{" "}
+                    <span className={lastResult.passed ? "text-emerald-600" : "text-rose-600"}>
+                      {lastResult.passed ? "Passed" : "Not passed"}
+                    </span>
+                  </p>
+                ) : (
+                  <p className="mt-2 text-lg font-semibold text-slate-900">
+                    Provisional score {Math.round(lastResult.scorePercent)}% — speaking/writing answers are still
+                    being reviewed.
+                  </p>
+                )}
+              </div>
+              <span
+                className={`rounded-full px-3 py-1 text-xs font-semibold ${
+                  lastResult.status === "published" ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"
+                }`}
+              >
+                {lastResult.status === "published" ? "Final" : "Pending review"}
+              </span>
+            </div>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2">
+              {Object.entries(lastResult.sectionScores).map(([code, section]) => (
+                <div key={code} className="rounded-xl bg-slate-50 px-4 py-3">
+                  <div className="flex items-center justify-between text-sm">
+                    <span className="font-medium capitalize text-slate-700">
+                      {code.replace(/_/g, " ").toLowerCase()}
+                    </span>
+                    <span className="text-slate-600">
+                      {section.score}/{section.max} ({Math.round(section.percentage)}%)
+                    </span>
+                  </div>
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200">
+                    <div
+                      className="h-full rounded-full bg-emerald-500"
+                      style={{ width: `${Math.min(100, Math.max(0, section.percentage))}%` }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : null}
+
         {manifest && content ? (
           <div className="space-y-4">
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
@@ -632,7 +705,17 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
 
                 {item.stimulusText ? (
                   <div className="mt-4 rounded-2xl bg-slate-50 p-4">
-                    <p className="whitespace-pre-wrap text-sm leading-7 text-slate-700">{item.stimulusText}</p>
+                    {/* Hide the listening transcript when real audio exists — reading it would
+                        defeat the listening test. Gapped (fill-blank) text stays visible. */}
+                    {content.section.code === "LISTENING" &&
+                    item.stimulusAudioUrl &&
+                    !item.stimulusText.includes("[BLANK]") ? (
+                      <p className="text-sm font-medium text-slate-600">
+                        Listen to the audio, then answer. You can replay it.
+                      </p>
+                    ) : (
+                      <p className="whitespace-pre-wrap text-sm leading-7 text-slate-700">{item.stimulusText}</p>
+                    )}
                     <div className="mt-3 flex flex-wrap gap-3">
                       {item.stimulusAudioUrl ? (
                         <audio controls src={item.stimulusAudioUrl} className="max-w-full" />
