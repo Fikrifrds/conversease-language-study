@@ -187,19 +187,25 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           return;
         }
 
-        const nextManifest = await getExamManifest(savedSessionId);
-        if (cancelled) {
-          return;
-        }
-        setManifest(nextManifest);
-        setActiveTemplate(
-          nextTemplates.find((entry) => entry.id === nextManifest.examTemplateId) ?? nextTemplates[0] ?? null
-        );
-        if (nextManifest.currentSectionId) {
-          const nextContent = await getExamSectionContent(savedSessionId, nextManifest.currentSectionId);
-          if (!cancelled) {
-            setContent(nextContent);
+        try {
+          const nextManifest = await getExamManifest(savedSessionId);
+          if (cancelled) {
+            return;
           }
+          setManifest(nextManifest);
+          setActiveTemplate(
+            nextTemplates.find((entry) => entry.id === nextManifest.examTemplateId) ?? nextTemplates[0] ?? null
+          );
+          if (nextManifest.currentSectionId) {
+            const nextContent = await getExamSectionContent(savedSessionId, nextManifest.currentSectionId);
+            if (!cancelled) {
+              setContent(nextContent);
+            }
+          }
+        } catch {
+          // The saved session no longer exists (e.g. the exam was reseeded).
+          // Drop it and show the start screen instead of a page-level error.
+          window.localStorage.removeItem(sessionStorageKey(levelCode));
         }
       } catch {
         if (!cancelled) {
