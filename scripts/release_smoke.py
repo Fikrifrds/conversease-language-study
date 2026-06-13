@@ -253,13 +253,39 @@ def validate_metrics(payload: dict[str, Any]) -> Optional[str]:
     return None
 
 
-def validate_courses(payload: dict[str, Any]) -> Optional[str]:
-    courses = payload.get("data", [])
-    if not courses:
-        return "Courses response has no data."
-    if courses[0].get("course_slug") != "english-a1-start-simple-conversations":
-        return "A1 course slug is missing from courses response."
-    return None
+def courses_requires_auth_check(api_base_url: str) -> SmokeResult:
+    """GET /courses is per-user (unlock/access data) and must reject anonymous calls."""
+    name = "api_courses_requires_auth"
+    url = join_url(api_base_url, "/courses")
+    try:
+        status, _, elapsed_ms = request_json("GET", url)
+    except HTTPError as exc:
+        if exc.code == 401:
+            return SmokeResult(
+                name=name,
+                status="pass",
+                message="GET /courses correctly requires authentication.",
+                details={"url": url, "status_code": exc.code},
+            )
+        return SmokeResult(
+            name=name,
+            status="fail",
+            message=f"GET /courses returned unexpected status {exc.code}.",
+            details={"url": url, "status_code": exc.code},
+        )
+    except (URLError, TimeoutError, json.JSONDecodeError) as exc:
+        return SmokeResult(
+            name=name,
+            status="fail",
+            message="GET /courses failed.",
+            details={"url": url, "error": safe_error(exc)},
+        )
+    return SmokeResult(
+        name=name,
+        status="fail",
+        message=f"GET /courses must require authentication but returned {status}.",
+        details={"url": url, "status_code": status, "duration_ms": elapsed_ms},
+    )
 
 
 def validate_lesson(payload: dict[str, Any]) -> Optional[str]:
@@ -320,14 +346,14 @@ def run_smoke(api_base_url: str, web_base_url: str, admin_api_key: str = "") -> 
         api_check("api_health", api_base_url, "/health", validate_health),
         api_check("api_ready", api_base_url, "/ready", validate_ready),
         api_check("api_metrics", api_base_url, "/metrics", validate_metrics),
-        api_check("api_courses", api_base_url, "/courses", validate_courses),
+        courses_requires_auth_check(api_base_url),
         api_check("api_starter_lesson", api_base_url, "/lessons/saying-hello-and-goodbye", validate_lesson),
         api_check("api_a1_level_test", api_base_url, "/level-tests/A1", validate_level_test),
         api_check("api_plans", api_base_url, "/plans", validate_plans),
         web_check("web_home", web_base_url, "/", "Conversease"),
         web_security_headers_check(web_base_url),
         web_check("web_login", web_base_url, "/login", "Login"),
-        web_check("web_pricing", web_base_url, "/pricing", "Pricing"),
+        web_check("web_pricing", web_base_url, "/pricing", "Pilih akses belajar"),
     ]
 
     if admin_api_key:
