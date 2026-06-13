@@ -134,6 +134,71 @@ def coach_reply_for_turn(lesson_slug: str, turn_index: int) -> Optional[str]:
     return turns[turn_index].coach if turn_index < len(turns) else None
 
 
+# Roleplay scripts address the learner with this example name. When the learner
+# tells the coach their real name, replies are personalized to use it instead.
+PLACEHOLDER_LEARNER_NAME = "Arif"
+
+_NAME_PATTERN = re.compile(
+    r"\b(?:my name is|please call me|you can call me|call me|i am|i'm)\s+([a-zA-Z][a-zA-Z'-]{1,29})",
+    re.IGNORECASE,
+)
+
+# Common A1 words that follow "I am ..." but are not names.
+_NON_NAME_WORDS = {
+    "a", "an", "the", "not", "very", "so", "also", "still", "just",
+    "fine", "good", "great", "okay", "ok", "well", "happy", "sad",
+    "sorry", "tired", "busy", "hungry", "thirsty", "sick", "ready",
+    "here", "there", "from", "in", "at", "on", "new", "late", "early",
+    "twenty", "thirty", "forty", "fifty", "going", "doing", "working",
+    "studying", "learning", "looking",
+}
+
+
+def extract_learner_name(transcript: str) -> Optional[str]:
+    """Pull the learner's name from an answer like 'My name is Fikri.'"""
+    name = None
+    for match in _NAME_PATTERN.finditer(transcript or ""):
+        candidate = match.group(1)
+        if candidate.lower() in _NON_NAME_WORDS:
+            continue
+        name = candidate
+    if not name:
+        return None
+    return name[0].upper() + name[1:]
+
+
+def learner_name_from_transcripts(transcripts: List[str]) -> Optional[str]:
+    """Latest name the learner mentioned across the session, if any."""
+    name = None
+    for transcript in transcripts:
+        extracted = extract_learner_name(transcript)
+        if extracted:
+            name = extracted
+    return name
+
+
+def personalize_learner_name(text: Optional[str], learner_name: Optional[str]) -> Optional[str]:
+    """Replace the scripted placeholder learner name with the real one."""
+    if not text or not learner_name or learner_name == PLACEHOLDER_LEARNER_NAME:
+        return text
+    return re.sub(rf"\b{PLACEHOLDER_LEARNER_NAME}\b", learner_name, text)
+
+
+def personalize_feedback(feedback: CoachFeedback, learner_name: Optional[str]) -> CoachFeedback:
+    """Apply learner-name personalization to scripted feedback texts."""
+    if not learner_name:
+        return feedback
+    return CoachFeedback(
+        better_version=personalize_learner_name(feedback.better_version, learner_name) or "",
+        indonesian_explanation=personalize_learner_name(
+            feedback.indonesian_explanation, learner_name
+        )
+        or "",
+        next_practice=personalize_learner_name(feedback.next_practice, learner_name) or "",
+        scores=feedback.scores,
+    )
+
+
 def clamp_score(score: int) -> int:
     return max(55, min(score, 95))
 

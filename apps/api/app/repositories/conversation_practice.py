@@ -19,6 +19,9 @@ from app.domain.conversation_practice import (
     TurnTranscription,
     coach_reply_for_turn,
     evaluate_answer,
+    learner_name_from_transcripts,
+    personalize_feedback,
+    personalize_learner_name,
     total_turns_for_lesson,
 )
 
@@ -88,12 +91,19 @@ class ConversationPracticeRepository:
                 turn_index,
                 lesson_slug=session_model.lesson_slug,
             )
+        learner_name = learner_name_from_transcripts(
+            [turn.user_transcript for turn in session_model.turns] + [transcript]
+        )
+        feedback = personalize_feedback(feedback, learner_name)
         turn_model = ConversationTurnModel(
             id=f"turn-{uuid4().hex[:10]}",
             session_id=session_model.id,
             turn_index=turn_index,
             user_transcript=transcript.strip(),
-            coach_reply=coach_reply_for_turn(session_model.lesson_slug, next_turn_index),
+            coach_reply=personalize_learner_name(
+                coach_reply_for_turn(session_model.lesson_slug, next_turn_index),
+                learner_name,
+            ),
             minutes_consumed=1,
             input_source=transcription.input_source if transcription else "typed",
             stt_provider=transcription.provider if transcription else None,

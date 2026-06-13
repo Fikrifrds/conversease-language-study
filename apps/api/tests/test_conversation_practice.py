@@ -4,6 +4,9 @@ from app.domain.conversation_practice import (
     ConversationPracticeStore,
     UnknownLessonSlugError,
     evaluate_answer,
+    extract_learner_name,
+    learner_name_from_transcripts,
+    personalize_learner_name,
     session_payload,
     session_summary,
 )
@@ -92,6 +95,38 @@ class ConversationPracticeTest(unittest.TestCase):
                 demo_user_id="demo-user",
                 lesson_slug="lesson-slug-yang-tidak-ada",
             )
+
+
+class LearnerNamePersonalizationTest(unittest.TestCase):
+    def test_extracts_name_from_common_patterns(self):
+        self.assertEqual(extract_learner_name("My name is Fikri. Nice to meet you."), "Fikri")
+        self.assertEqual(extract_learner_name("Please call me fikri"), "Fikri")
+        self.assertEqual(extract_learner_name("I'm Dewi, from Bandung."), "Dewi")
+
+    def test_ignores_non_name_words(self):
+        self.assertIsNone(extract_learner_name("I am fine, thank you."))
+        self.assertIsNone(extract_learner_name("I'm from Indonesia."))
+        self.assertIsNone(extract_learner_name("Nice to meet you too."))
+
+    def test_latest_mention_wins_across_transcripts(self):
+        name = learner_name_from_transcripts(
+            ["My name is Budi.", "Please call me Fikri."]
+        )
+        self.assertEqual(name, "Fikri")
+
+    def test_personalize_replaces_placeholder_only(self):
+        self.assertEqual(
+            personalize_learner_name("Great. Nice to meet you, Arif.", "Fikri"),
+            "Great. Nice to meet you, Fikri.",
+        )
+        self.assertEqual(
+            personalize_learner_name("Nice to meet you too.", "Fikri"),
+            "Nice to meet you too.",
+        )
+        self.assertEqual(
+            personalize_learner_name("Great. Nice to meet you, Arif.", None),
+            "Great. Nice to meet you, Arif.",
+        )
 
 
 if __name__ == "__main__":

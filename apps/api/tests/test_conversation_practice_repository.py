@@ -43,6 +43,25 @@ class ConversationPracticeRepositoryTest(unittest.TestCase):
             self.assertIsNone(third_turn.coach_reply)
             self.assertGreaterEqual(latest.last_score, 70)
 
+    def test_coach_reply_uses_learner_name_instead_of_placeholder(self):
+        with self.SessionLocal() as db:
+            repository = ConversationPracticeRepository(db)
+            session = repository.create_session(
+                demo_user_id="demo-user",
+                lesson_slug="saying-your-name",
+            )
+
+            repository.add_turn(
+                session_id=session.id,
+                transcript="My name is Fikri. Nice to meet you.",
+            )
+            _, second_turn = repository.add_turn(
+                session_id=session.id,
+                transcript="Please call me Fikri",
+            )
+
+            self.assertEqual(second_turn.coach_reply, "Great. Nice to meet you, Fikri.")
+
     def test_reset_latest_deletes_progress_and_session(self):
         with self.SessionLocal() as db:
             repository = ConversationPracticeRepository(db)
