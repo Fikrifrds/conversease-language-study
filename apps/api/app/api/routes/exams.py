@@ -227,6 +227,7 @@ class ReviewQueueEntryResponse(BaseModel):
     text_response: Optional[str]
     file_url: Optional[str]
     playback_url: Optional[str]
+    transcript: Optional[str]
     audio_duration_seconds: Optional[float]
     created_at: datetime
 
@@ -648,6 +649,7 @@ async def admin_list_review_queue(
         if not response:
             continue
         item = service.get_exam_item(response.item_id)
+        playback_url, transcript = _response_audio_details(db, response.file_url)
         payload.append(
             ReviewQueueEntryResponse(
                 id=entry.id,
@@ -661,7 +663,8 @@ async def admin_list_review_queue(
                 rubric_criteria=item.rubric_criteria,
                 text_response=response.text_response,
                 file_url=response.file_url,
-                playback_url=_response_audio_playback_url(db, response.file_url),
+                playback_url=playback_url,
+                transcript=transcript,
                 audio_duration_seconds=response.audio_duration_seconds,
                 created_at=entry.created_at,
             )
@@ -669,16 +672,21 @@ async def admin_list_review_queue(
     return payload
 
 
-def _response_audio_playback_url(db: Session, file_url: Optional[str]) -> Optional[str]:
-    """Resolve a playable (possibly signed) URL for an uploaded speaking answer."""
+def _response_audio_details(
+    db: Session, file_url: Optional[str]
+) -> tuple[Optional[str], Optional[str]]:
+    """Resolve a playable (possibly signed) URL and STT transcript for an uploaded answer."""
     if not file_url or not file_url.startswith(("http://", "https://")):
-        return None
+        return None, None
     artifact = db.execute(
         select(MediaArtifactModel).where(MediaArtifactModel.file_url == file_url)
     ).scalars().first()
     if artifact is None:
-        return file_url
-    return audio_playback_url(audio_url=file_url, storage_key=artifact.object_key)
+        return file_url, None
+    return (
+        audio_playback_url(audio_url=file_url, storage_key=artifact.object_key),
+        artifact.transcript,
+    )
 
 
 @router.post("/admin/review-queue/{queue_id}/score", response_model=ExamResultResponse)

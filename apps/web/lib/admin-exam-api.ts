@@ -13,6 +13,7 @@ export type ExamReviewQueueEntry = {
   textResponse: string | null;
   fileUrl: string | null;
   playbackUrl: string | null;
+  transcript: string | null;
   audioDurationSeconds: number | null;
   createdAt: string;
 };
@@ -40,6 +41,7 @@ type ApiExamReviewQueueEntry = {
   text_response: string | null;
   file_url: string | null;
   playback_url: string | null;
+  transcript: string | null;
   audio_duration_seconds: number | null;
   created_at: string;
 };
@@ -95,6 +97,7 @@ function mapEntry(entry: ApiExamReviewQueueEntry): ExamReviewQueueEntry {
     textResponse: entry.text_response,
     fileUrl: entry.file_url,
     playbackUrl: entry.playback_url,
+    transcript: entry.transcript,
     audioDurationSeconds: entry.audio_duration_seconds,
     createdAt: entry.created_at
   };

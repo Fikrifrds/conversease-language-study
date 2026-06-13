@@ -350,14 +350,30 @@ class ExamRoutesScoringTest(unittest.TestCase):
         self.assertTrue(result.json()["passed"])
 
     def test_speaking_audio_upload_stores_artifact(self):
-        from app.db.exam_models import MediaArtifactModel
+        from unittest.mock import AsyncMock
+
         from sqlalchemy import select
+
+        from app.db.exam_models import MediaArtifactModel
+        from app.domain.conversation_practice import TurnTranscription
+        from app.services.speech_to_text import SpeechToTextResult
 
         session = self.service.create_exam_session(
             exam_template_id=self.exam["template"].id,
             user_id="user-1",
         )
         self.service.start_exam(session.id)
+
+        stt_result = SpeechToTextResult(
+            text="Hello, my name is Anna.",
+            transcription=TurnTranscription(
+                input_source="recorded_audio",
+                provider="assemblyai",
+                model="universal-3-pro",
+                transcript_id="stt-1",
+                confidence=0.93,
+            ),
+        )
 
         with (
             patch("app.api.routes.exam_runner.s3_configured", return_value=True),
@@ -368,6 +384,10 @@ class ExamRoutesScoringTest(unittest.TestCase):
             patch(
                 "app.api.routes.exam_runner.audio_playback_url",
                 return_value="https://signed.example.com/exams/answer.webm",
+            ),
+            patch(
+                "app.api.routes.exam_runner.transcribe_recorded_audio",
+                new=AsyncMock(return_value=stt_result),
             ),
         ):
             uploaded = self.client.post(
@@ -387,6 +407,7 @@ class ExamRoutesScoringTest(unittest.TestCase):
         body = uploaded.json()
         self.assertEqual(body["file_url"], "https://cdn.example.com/exams/answer.webm")
         self.assertEqual(body["playback_url"], "https://signed.example.com/exams/answer.webm")
+        self.assertEqual(body["transcript"], "Hello, my name is Anna.")
         self.assertEqual(rejected_item.status_code, 422)
 
         with self.session_local() as db:
@@ -394,6 +415,9 @@ class ExamRoutesScoringTest(unittest.TestCase):
             self.assertEqual(artifact.owner_type, "exam_response")
             self.assertEqual(artifact.owner_id, session.id)
             self.assertEqual(artifact.metadata_json["item_id"], self.exam["audio"].id)
+            self.assertEqual(artifact.transcript, "Hello, my name is Anna.")
+            self.assertEqual(artifact.stt_provider, "assemblyai")
+            self.assertAlmostEqual(artifact.stt_confidence, 0.93)
 
         # Uploaded URL flows into the response and the admin review queue playback.
         self.service.save_item_response(
@@ -419,6 +443,7 @@ class ExamRoutesScoringTest(unittest.TestCase):
         entry = queue.json()[0]
         self.assertEqual(entry["file_url"], "https://cdn.example.com/exams/answer.webm")
         self.assertEqual(entry["playback_url"], "https://signed.example.com/exams/answer.webm")
+        self.assertEqual(entry["transcript"], "Hello, my name is Anna.")
 
 
 def run_exam_to_submission_via_responses(service: ExamService, exam: dict, user_id: str):

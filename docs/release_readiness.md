@@ -8,7 +8,7 @@ This document tracks the Conversease MVP release candidate.
 - Authenticated app guard with Google login, email/password login, login return path, logout, email verification, and password reset.
 - Local PostgreSQL database `conversease_db` with file-based Alembic migrations; SQLite remains available only as a no-`DATABASE_URL` development fallback.
 - Auth-backed Conversation Coach persistence.
-- Conversation Coach roleplay prompts, replies, and deterministic feedback are lesson-specific for all 5 published Unit 1 lessons.
+- Conversation Coach roleplay prompts and replies are lesson-specific; feedback is LLM-backed (Together/OpenAI via `LLM_DEFAULT_PROVIDER` + API key) with a deterministic keyword fallback when the LLM is not configured or fails.
 - Onboarding and lesson progress persistence.
 - Billing access model with subscription, payment order, top-up, and minute ledger tables.
 - Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
@@ -63,7 +63,7 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Full public A1 release still needs the remaining 8 A1 lessons audio-ready (text is complete for all 40).
 - Full multi-level release needs A2-C1 audio generated and lessons published; all four levels are text-ready but unpublished.
 - A1 Real Exam needs listening audio generated for its items and at least one full QA pass (start → answer all sections → submit → admin review → published result) before exposing it to users.
-- Conversation Coach now supports turn-based recorded-audio STT with AssemblyAI, but feedback remains deterministic for beta. Beta final-test attempts can be manually reviewed by admin, while public official automated speaking assessment still needs production grading orchestration.
+- Conversation Coach supports turn-based recorded-audio STT (Whisper via Together by default, AssemblyAI optional) and LLM feedback with deterministic fallback. Verify production AI configuration through `GET /api/admin/ai/status` and `POST /api/admin/ai/test-llm`. Exam speaking uploads are auto-transcribed (best-effort) so admin review shows a transcript next to the audio; official fully-automated speaking assessment remains future work.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.
 - Production database should use PostgreSQL via `DATABASE_URL`, not local SQLite.
 - Configure production env from `.env.production.example` with real non-placeholder values and verify `APP_ENV=production` starts only with PostgreSQL, HTTPS URLs, explicit CORS, a strong JWT secret, Google OAuth credentials, admin payment key, and Resend key.

@@ -64,7 +64,7 @@
 
 1. Configure production manual-transfer env: Resend key, payment admin key, admin email, and Bank Jago account details.
 2. Configure Google OAuth client credentials in the production platform.
-3. Replace deterministic Conversation Coach feedback and final-test readiness preview with production AI grading jobs for automated official speaking assessment.
+3. Conversation Coach feedback is LLM-backed with deterministic fallback (configure `TOGETHER_API_KEY` or `OPENAI_API_KEY`; verify via `/api/admin/ai/status`). Remaining: production AI grading jobs for fully automated official speaking assessment.
 4. Extend Admin CMS for media/audio uploads and draft approval before full editorial production use.
 5. Configure external error tracking, uptime checks, and edge/WAF rate limits in the production platform.
 6. Add Midtrans checkout/webhook when payment automation is needed beyond manual-transfer beta.

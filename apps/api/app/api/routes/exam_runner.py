@@ -27,6 +27,7 @@ from app.services.audio_generation import (
     upload_audio_to_s3,
 )
 from app.services.exam_service import ExamService
+from app.services.speech_to_text import SpeechToTextError, transcribe_recorded_audio
 
 MAX_SPEAKING_AUDIO_BYTES = 10 * 1024 * 1024
 
@@ -372,6 +373,7 @@ class SpeakingAudioUploadResponse(BaseModel):
     file_url: str
     playback_url: str
     audio_size: int
+    transcript: Optional[str] = None
 
 
 def _stimulus_playback_url(item: ExamItemModel) -> Optional[str]:
@@ -451,6 +453,25 @@ async def upload_speaking_audio(
     except AudioGenerationError as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
 
+    # Best-effort transcript so reviewers can skim the answer without replaying it.
+    # STT failures never block the upload.
+    transcript = None
+    stt_provider = None
+    stt_model = None
+    stt_confidence = None
+    try:
+        stt_result = await transcribe_recorded_audio(
+            audio_bytes=audio_bytes,
+            filename=audio.filename or f"speaking-{item_id}.{extension}",
+            content_type=audio.content_type,
+        )
+        transcript = stt_result.text
+        stt_provider = stt_result.transcription.provider
+        stt_model = stt_result.transcription.model
+        stt_confidence = stt_result.transcription.confidence
+    except SpeechToTextError:
+        pass
+
     now = datetime.utcnow()
     artifact = MediaArtifactModel(
         id=service._generate_id(),
@@ -461,6 +482,10 @@ async def upload_speaking_audio(
         object_key=object_key,
         mime_type=(audio.content_type or "audio/webm").split(";", 1)[0].strip(),
         file_size_bytes=len(audio_bytes),
+        transcript=transcript,
+        stt_provider=stt_provider,
+        stt_model=stt_model,
+        stt_confidence=stt_confidence,
         metadata_json={
             "item_id": item_id,
             "exam_template_id": session.exam_template_id,
@@ -477,6 +502,7 @@ async def upload_speaking_audio(
         file_url=file_url,
         playback_url=audio_playback_url(audio_url=file_url, storage_key=object_key),
         audio_size=len(audio_bytes),
+        transcript=transcript,
     )
 
 

@@ -212,6 +212,12 @@ export function AdminExamReviewManager({ adminUser }: { adminUser: AuthUser }) {
                     . Review the typed answer below.
                   </p>
                 ) : null}
+                {selectedEntry.transcript ? (
+                  <div className="mt-2 rounded-xl bg-paper px-4 py-3">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">Auto transcript</p>
+                    <p className="mt-1 whitespace-pre-wrap text-sm">{selectedEntry.transcript}</p>
+                  </div>
+                ) : null}
                 <p className="mt-2 min-h-[3rem] whitespace-pre-wrap rounded-xl border border-ink/10 px-4 py-3 text-sm">
                   {selectedEntry.textResponse?.trim() || "(no text answer)"}
                 </p>
