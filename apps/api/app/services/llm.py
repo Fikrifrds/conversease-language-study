@@ -183,8 +183,11 @@ class OpenAIProvider(LLMProvider):
         request_url = f"{self._base_url}/v1/chat/completions"
         client = self._get_client()
 
+        # Three tries: absorb a transient 429 (rate limit) / 5xx / timeout — the
+        # common cause of the conversation partner falling back — plus a retry
+        # after relaxing a rejected strict schema to JSON mode.
         last_error: Optional[Exception] = None
-        for attempt in range(2):
+        for attempt in range(3):
             started = asyncio.get_running_loop().time()
             try:
                 response = await client.post(
@@ -222,8 +225,9 @@ class OpenAIProvider(LLMProvider):
                 last_error = exc
                 schema_rejected = (
                     status == 400
-                    and schema_payload is not None
-                    and attempt == 0
+                    and isinstance(payload.get("response_format"), dict)
+                    and payload["response_format"].get("type") == "json_schema"
+                    and attempt < 2
                     and any(
                         needle in detail.lower()
                         for needle in (
@@ -234,13 +238,13 @@ class OpenAIProvider(LLMProvider):
                         )
                     )
                 )
-                if schema_rejected and not prefer_json_object:
+                if schema_rejected:
                     payload["response_format"] = {"type": "json_object"}
                     await asyncio.sleep(0.1)
                     continue
                 retryable = status in {408, 429, 500, 502, 503, 504}
-                if retryable and attempt == 0:
-                    await asyncio.sleep(0.35 + random.random() * 0.35)
+                if retryable and attempt < 2:
+                    await asyncio.sleep(0.35 + random.random() * 0.5)
                     continue
                 raise LLMError(f"openai_status_{status}") from exc
             except httpx.HTTPError as exc:
@@ -252,8 +256,8 @@ class OpenAIProvider(LLMProvider):
                     elapsed_ms,
                 )
                 last_error = exc
-                if attempt == 0:
-                    await asyncio.sleep(0.35 + random.random() * 0.35)
+                if attempt < 2:
+                    await asyncio.sleep(0.35 + random.random() * 0.5)
                     continue
                 raise LLMError("openai_request_failed") from exc
             except ValueError as exc:
