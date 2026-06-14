@@ -56,6 +56,27 @@ class ExamItemNotFoundError(ExamServiceError):
     pass
 
 
+class ExamAttemptLimitError(ExamServiceError):
+    """User has used all allowed attempts for this exam."""
+    pass
+
+
+class ExamCooldownError(ExamServiceError):
+    """User must wait out the cooldown before retaking this exam."""
+
+    def __init__(self, message: str, next_available_at: "datetime") -> None:
+        super().__init__(message)
+        self.next_available_at = next_available_at
+
+
+DEFAULT_MAX_ATTEMPTS = 3
+DEFAULT_COOLDOWN_DAYS = 30
+# Sessions that have consumed an attempt (reached a terminal state).
+USED_ATTEMPT_STATUSES = ("submitted", "expired")
+# Sessions that can still be resumed instead of starting a new attempt.
+OPEN_SESSION_STATUSES = ("created", "in_progress")
+
+
 class ExamExpiredError(ExamServiceError):
     """Exam session expired."""
     pass
@@ -259,6 +280,71 @@ class ExamService:
     # Exam Session Lifecycle
     # =========================================================================
 
+    @staticmethod
+    def _attempt_policy(template: ExamTemplateModel) -> tuple[int, int]:
+        """(max_attempts, cooldown_days) from template metadata, PRD defaults.
+        A value <= 0 disables that limit."""
+        meta = template.metadata_json if isinstance(template.metadata_json, dict) else {}
+        max_attempts = meta.get("max_attempts", DEFAULT_MAX_ATTEMPTS)
+        cooldown_days = meta.get("cooldown_days", DEFAULT_COOLDOWN_DAYS)
+        return int(max_attempts), int(cooldown_days)
+
+    def _used_attempt_sessions(self, exam_template_id: str, user_id: str) -> list[ExamSessionModel]:
+        result = self.db.execute(
+            select(ExamSessionModel)
+            .where(
+                and_(
+                    ExamSessionModel.exam_template_id == exam_template_id,
+                    ExamSessionModel.user_id == user_id,
+                    ExamSessionModel.status.in_(USED_ATTEMPT_STATUSES),
+                )
+            )
+            .order_by(ExamSessionModel.created_at.desc())
+        )
+        return list(result.scalars().all())
+
+    def _open_session(self, exam_template_id: str, user_id: str) -> Optional[ExamSessionModel]:
+        result = self.db.execute(
+            select(ExamSessionModel)
+            .where(
+                and_(
+                    ExamSessionModel.exam_template_id == exam_template_id,
+                    ExamSessionModel.user_id == user_id,
+                    ExamSessionModel.status.in_(OPEN_SESSION_STATUSES),
+                )
+            )
+            .order_by(ExamSessionModel.created_at.desc())
+        )
+        return result.scalars().first()
+
+    def attempt_status(self, exam_template_id: str, user_id: str) -> dict:
+        """Attempt/cooldown standing for a user on an exam, for gating + UI."""
+        template = self.get_exam_template(exam_template_id)
+        max_attempts, cooldown_days = self._attempt_policy(template)
+        used = self._used_attempt_sessions(exam_template_id, user_id)
+        attempts_used = len(used)
+
+        next_available_at = None
+        if cooldown_days > 0 and used:
+            last = used[0]
+            last_at = last.submitted_at or last.updated_at
+            if last_at is not None:
+                candidate = last_at + timedelta(days=cooldown_days)
+                if candidate > datetime.utcnow():
+                    next_available_at = candidate
+
+        attempts_remaining = (
+            max(0, max_attempts - attempts_used) if max_attempts > 0 else None
+        )
+        return {
+            "max_attempts": max_attempts if max_attempts > 0 else None,
+            "attempts_used": attempts_used,
+            "attempts_remaining": attempts_remaining,
+            "in_cooldown": next_available_at is not None,
+            "next_available_at": next_available_at,
+            "has_open_session": self._open_session(exam_template_id, user_id) is not None,
+        }
+
     def create_exam_session(
         self,
         exam_template_id: str,
@@ -267,11 +353,40 @@ class ExamService:
         ip_address: Optional[str] = None,
         user_agent: Optional[str] = None,
     ) -> ExamSessionModel:
-        """Create a new exam session for a user."""
+        """Create a new exam session, or resume an open one.
+
+        Enforces per-template attempt limit and cooldown (from template metadata,
+        PRD defaults: 3 attempts, 30-day cooldown). An unfinished session is
+        resumed instead of consuming a new attempt.
+        """
         # Verify template exists and is active
         template = self.get_exam_template(exam_template_id)
         if template.status != "active":
             raise ExamServiceError(f"Exam template {exam_template_id} is not active")
+
+        # Resume an unfinished attempt rather than starting (and charging) a new one.
+        open_session = self._open_session(exam_template_id, user_id)
+        if open_session is not None:
+            return open_session
+
+        max_attempts, cooldown_days = self._attempt_policy(template)
+        used = self._used_attempt_sessions(exam_template_id, user_id)
+
+        if max_attempts > 0 and len(used) >= max_attempts:
+            raise ExamAttemptLimitError(
+                f"You have used all {max_attempts} attempts for this exam."
+            )
+
+        if cooldown_days > 0 and used:
+            last = used[0]
+            last_at = last.submitted_at or last.updated_at
+            if last_at is not None:
+                next_available = last_at + timedelta(days=cooldown_days)
+                if next_available > datetime.utcnow():
+                    raise ExamCooldownError(
+                        f"You can retake this exam after {next_available.isoformat()}.",
+                        next_available_at=next_available,
+                    )
 
         now = datetime.utcnow()
         session = ExamSessionModel(

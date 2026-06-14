@@ -26,7 +26,11 @@ from app.services.audio_generation import (
     s3_configured,
     upload_audio_to_s3,
 )
-from app.services.exam_service import ExamService
+from app.services.exam_service import (
+    ExamAttemptLimitError,
+    ExamCooldownError,
+    ExamService,
+)
 from app.services.speech_to_text import SpeechToTextError, transcribe_recorded_audio
 
 MAX_SPEAKING_AUDIO_BYTES = 10 * 1024 * 1024
@@ -162,6 +166,39 @@ class NavigationResponse(BaseModel):
 # Exam Runner Endpoints
 # ============================================================================
 
+class AttemptStatusResponse(BaseModel):
+    """A user's attempt/cooldown standing for an exam template."""
+    exam_template_id: str
+    max_attempts: Optional[int] = None
+    attempts_used: int
+    attempts_remaining: Optional[int] = None
+    in_cooldown: bool
+    next_available_at: Optional[datetime] = None
+    has_open_session: bool
+    can_start: bool
+
+
+@router.get("/attempt-status/{exam_template_id}", response_model=AttemptStatusResponse)
+async def get_attempt_status(
+    exam_template_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+):
+    """Report how many attempts remain and whether a cooldown is active."""
+    service = ExamService(db)
+    status = service.attempt_status(exam_template_id, current_user.id)
+    remaining = status["attempts_remaining"]
+    can_start = (
+        status["has_open_session"]
+        or (not status["in_cooldown"] and (remaining is None or remaining > 0))
+    )
+    return AttemptStatusResponse(
+        exam_template_id=exam_template_id,
+        can_start=can_start,
+        **status,
+    )
+
+
 @router.post("/start", response_model=ExamSessionStartResponse)
 async def start_exam(
     data: StartExamRequest,
@@ -176,30 +213,46 @@ async def start_exam(
     ip_address = request.client.host if request.client else None
     user_agent = request.headers.get("user-agent")
     
-    # Create session
-    session = service.create_exam_session(
-        exam_template_id=data.exam_template_id,
-        user_id=current_user.id,
-        ip_address=ip_address,
-        user_agent=user_agent,
-    )
-    
+    # Create session (resumes an open attempt; enforces attempt limit + cooldown)
+    try:
+        session = service.create_exam_session(
+            exam_template_id=data.exam_template_id,
+            user_id=current_user.id,
+            ip_address=ip_address,
+            user_agent=user_agent,
+        )
+    except ExamCooldownError as exc:
+        raise HTTPException(
+            status_code=409,
+            detail={
+                "code": "exam_cooldown",
+                "message": str(exc),
+                "next_available_at": exc.next_available_at.isoformat(),
+            },
+        ) from exc
+    except ExamAttemptLimitError as exc:
+        raise HTTPException(
+            status_code=409,
+            detail={"code": "exam_attempt_limit", "message": str(exc)},
+        ) from exc
+
     # Get first section and item
     sections = service.get_exam_sections(data.exam_template_id)
     first_section_id = sections[0].id if sections else None
-    
+
     first_item_id = None
     if first_section_id:
         items = service.get_exam_items(first_section_id)
         first_item_id = items[0].id if items else None
-    
-    # Start the exam
-    session = service.start_exam(
-        session_id=session.id,
-        current_section_id=first_section_id,
-        current_item_id=first_item_id,
-    )
-    
+
+    # Resume an already-started attempt as-is; only start a freshly created one.
+    if session.status != "in_progress":
+        session = service.start_exam(
+            session_id=session.id,
+            current_section_id=first_section_id,
+            current_item_id=first_item_id,
+        )
+
     # Calculate time remaining
     time_remaining = int((session.expires_at - datetime.utcnow()).total_seconds())
     

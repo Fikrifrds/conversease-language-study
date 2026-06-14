@@ -854,14 +854,91 @@ export async function listExamTemplatesByLevel(levelCode: string): Promise<ExamT
   return response.map(mapExamTemplateSummary);
 }
 
+export type ExamAttemptStatus = {
+  examTemplateId: string;
+  maxAttempts: number | null;
+  attemptsUsed: number;
+  attemptsRemaining: number | null;
+  inCooldown: boolean;
+  nextAvailableAt: string | null;
+  hasOpenSession: boolean;
+  canStart: boolean;
+};
+
+export async function getExamAttemptStatus(examTemplateId: string): Promise<ExamAttemptStatus> {
+  const response = await requestJson<{
+    exam_template_id: string;
+    max_attempts: number | null;
+    attempts_used: number;
+    attempts_remaining: number | null;
+    in_cooldown: boolean;
+    next_available_at: string | null;
+    has_open_session: boolean;
+    can_start: boolean;
+  }>(`/exam-runner/attempt-status/${encodeURIComponent(examTemplateId)}`);
+  return {
+    examTemplateId: response.exam_template_id,
+    maxAttempts: response.max_attempts,
+    attemptsUsed: response.attempts_used,
+    attemptsRemaining: response.attempts_remaining,
+    inCooldown: response.in_cooldown,
+    nextAvailableAt: response.next_available_at,
+    hasOpenSession: response.has_open_session,
+    canStart: response.can_start
+  };
+}
+
+export class ExamStartBlockedError extends Error {
+  code: "exam_attempt_limit" | "exam_cooldown";
+  nextAvailableAt: string | null;
+
+  constructor(
+    code: "exam_attempt_limit" | "exam_cooldown",
+    message: string,
+    nextAvailableAt: string | null = null
+  ) {
+    super(message);
+    this.name = "ExamStartBlockedError";
+    this.code = code;
+    this.nextAvailableAt = nextAvailableAt;
+  }
+}
+
 export async function startRealExam(examTemplateId: string): Promise<ExamRunnerSession> {
-  const response = await requestJson<ApiExamRunnerSession>("/exam-runner/start", {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Authentication required");
+  }
+  const response = await fetch(`${apiBaseUrl()}/exam-runner/start`, {
     method: "POST",
-    body: JSON.stringify({
-      exam_template_id: examTemplateId
-    })
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`
+    },
+    body: JSON.stringify({ exam_template_id: examTemplateId })
   });
-  return mapExamRunnerSession(response);
+
+  if (response.status === 409) {
+    // Structured attempt-limit / cooldown rejection from the API.
+    const body = (await response.json().catch(() => null)) as
+      | { detail?: { code?: string; message?: string; next_available_at?: string } }
+      | null;
+    const detail = body?.detail;
+    if (detail?.code === "exam_cooldown" || detail?.code === "exam_attempt_limit") {
+      throw new ExamStartBlockedError(
+        detail.code,
+        detail.message ?? "Exam cannot be started right now.",
+        detail.next_available_at ?? null
+      );
+    }
+  }
+
+  if (!response.ok) {
+    throw new Error(`API request failed: ${response.status}`);
+  }
+
+  const data = (await response.json()) as ApiExamRunnerSession;
+  return mapExamRunnerSession(data);
 }
 
 export async function getExamManifest(sessionId: string): Promise<ExamManifest> {

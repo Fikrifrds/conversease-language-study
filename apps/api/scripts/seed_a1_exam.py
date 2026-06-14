@@ -36,6 +36,8 @@ def create_a1_exam(db: Session) -> ExamTemplateModel:
         passing_score_percent=60,
         status="active",
         version=1,
+        # PRD attempt policy: 3 attempts, then a 30-day cooldown before retake.
+        metadata_json={"max_attempts": 3, "cooldown_days": 30},
         created_by="system",
         created_at=datetime.utcnow(),
         updated_at=datetime.utcnow(),

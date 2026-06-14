@@ -32,6 +32,8 @@ This document tracks the Conversease MVP release candidate.
 - Release preflight script is available at `scripts/release_preflight.py` for API/web env, database, migration, curriculum, email-template rendering, payment/email, backup-tooling, and optional integration checks.
 - Post-deploy HTTP smoke script is available at `scripts/release_smoke.py` for API health/readiness/metrics, public curriculum, A1 test, plans, web pages, and admin email diagnostics.
 - GitHub Actions release gates are configured for API migrations, curriculum validation, release preflight, API lint/tests, and web lint/typecheck/build.
+- Playwright E2E smoke (`npm run test:e2e`) covers the critical no-auth path: public pages render and protected routes redirect to login. Run `npm run test:e2e:install` once to fetch the browser; set `E2E_BASE_URL` to run against a deployed environment.
+- Real Exam enforces a per-template attempt policy (PRD default: 3 attempts, then a 30-day cooldown) stored in the template's `metadata_json`; an unfinished attempt is resumed instead of consuming a new one. Attempt standing is exposed at `/api/exam-runner/attempt-status/{template_id}`.
 - Deployment notes are documented in `docs/deployment.md`.
 
 ## Verification Commands

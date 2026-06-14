@@ -13,7 +13,12 @@ from app.db import exam_models  # noqa: F401
 from app.db.base import Base
 from app.db.session import get_db
 from app.main import create_app
-from app.services.exam_service import ExamService, ExamServiceError
+from app.services.exam_service import (
+    ExamAttemptLimitError,
+    ExamCooldownError,
+    ExamService,
+    ExamServiceError,
+)
 
 
 def build_session_local():
@@ -170,6 +175,83 @@ def run_exam_to_submission(service: ExamService, exam: dict, user_id: str):
     )
     service.submit_exam(session.id)
     return session
+
+
+class ExamAttemptPolicyTest(unittest.TestCase):
+    def setUp(self):
+        self.session_local = build_session_local()
+        self.db = self.session_local()
+        add_user(self.db, "user-1")
+        self.service = ExamService(self.db)
+        self.exam = seed_exam(self.service)
+
+    def tearDown(self):
+        self.db.close()
+
+    def _set_policy(self, *, max_attempts, cooldown_days):
+        self.exam["template"].metadata_json = {
+            "max_attempts": max_attempts,
+            "cooldown_days": cooldown_days,
+        }
+        self.db.commit()
+
+    def _submit_attempt(self):
+        session = self.service.create_exam_session(
+            exam_template_id=self.exam["template"].id, user_id="user-1"
+        )
+        self.service.start_exam(session.id)
+        self.service.submit_exam(session.id)
+        return session
+
+    def test_open_session_is_resumed_not_recreated(self):
+        first = self.service.create_exam_session(
+            exam_template_id=self.exam["template"].id, user_id="user-1"
+        )
+        again = self.service.create_exam_session(
+            exam_template_id=self.exam["template"].id, user_id="user-1"
+        )
+        self.assertEqual(first.id, again.id)
+
+    def test_attempt_limit_blocks_after_max(self):
+        self._set_policy(max_attempts=2, cooldown_days=0)
+        self._submit_attempt()
+        self._submit_attempt()
+
+        with self.assertRaises(ExamAttemptLimitError):
+            self.service.create_exam_session(
+                exam_template_id=self.exam["template"].id, user_id="user-1"
+            )
+
+        status = self.service.attempt_status(self.exam["template"].id, "user-1")
+        self.assertEqual(status["attempts_used"], 2)
+        self.assertEqual(status["attempts_remaining"], 0)
+
+    def test_cooldown_blocks_retake_then_status_reports_next_available(self):
+        self._set_policy(max_attempts=3, cooldown_days=30)
+        self._submit_attempt()
+
+        with self.assertRaises(ExamCooldownError) as ctx:
+            self.service.create_exam_session(
+                exam_template_id=self.exam["template"].id, user_id="user-1"
+            )
+        self.assertIsNotNone(ctx.exception.next_available_at)
+
+        status = self.service.attempt_status(self.exam["template"].id, "user-1")
+        self.assertTrue(status["in_cooldown"])
+        self.assertIsNotNone(status["next_available_at"])
+
+    def test_no_limits_when_policy_disabled(self):
+        self._set_policy(max_attempts=0, cooldown_days=0)
+        self._submit_attempt()
+        self._submit_attempt()
+        # A third attempt is allowed when both limits are disabled.
+        session = self.service.create_exam_session(
+            exam_template_id=self.exam["template"].id, user_id="user-1"
+        )
+        self.assertIsNotNone(session.id)
+        status = self.service.attempt_status(self.exam["template"].id, "user-1")
+        self.assertIsNone(status["max_attempts"])
+        self.assertIsNone(status["attempts_remaining"])
 
 
 class ExamObjectiveGradingTest(unittest.TestCase):

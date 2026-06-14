@@ -23,3 +23,8 @@ apps/api/*.db
 
 # Logs
 *.log
+
+# Playwright
+test-results/
+playwright-report/
+.playwright/

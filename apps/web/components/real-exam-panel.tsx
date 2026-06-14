@@ -14,6 +14,8 @@ import {
 } from "lucide-react";
 
 import {
+  ExamStartBlockedError,
+  getExamAttemptStatus,
   getExamManifest,
   getExamRunnerStatus,
   getExamSectionContent,
@@ -24,6 +26,7 @@ import {
   startRealExam,
   submitRealExam,
   uploadExamSpeakingAudio,
+  type ExamAttemptStatus,
   type ExamManifest,
   type ExamRunnerItem,
   type ExamRunnerSectionContent,
@@ -87,6 +90,15 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
   const [notice, setNotice] = useState("");
   const [activeSpeakingItemId, setActiveSpeakingItemId] = useState<string | null>(null);
   const [lastResult, setLastResult] = useState<RealExamResult | null>(null);
+  const [attemptStatus, setAttemptStatus] = useState<ExamAttemptStatus | null>(null);
+
+  async function refreshAttemptStatus(templateId: string) {
+    try {
+      setAttemptStatus(await getExamAttemptStatus(templateId));
+    } catch {
+      // Non-fatal: the start call still enforces the policy server-side.
+    }
+  }
   const audioUrlRef = useRef<Record<string, string>>({});
 
   async function refreshLastResult() {
@@ -180,6 +192,9 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         setTemplates(nextTemplates);
         setActiveTemplate(nextTemplates[0] ?? null);
         void refreshLastResult();
+        if (nextTemplates[0]) {
+          void refreshAttemptStatus(nextTemplates[0].id);
+        }
 
         const savedSessionId =
           typeof window !== "undefined" ? window.localStorage.getItem(sessionStorageKey(levelCode)) : null;
@@ -282,8 +297,22 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       setDrafts({});
       window.localStorage.setItem(sessionStorageKey(levelCode), session.sessionId);
       setNotice("Exam started. Complete each section and save before moving on.");
-    } catch {
-      setError("The exam could not be started.");
+    } catch (startError) {
+      if (startError instanceof ExamStartBlockedError) {
+        if (startError.code === "exam_cooldown" && startError.nextAvailableAt) {
+          const when = new Date(startError.nextAvailableAt).toLocaleDateString("id-ID", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+          });
+          setError(`Kamu sudah memakai kesempatan ujian ini. Bisa mengulang lagi pada ${when}.`);
+        } else {
+          setError("Kamu sudah memakai semua kesempatan untuk ujian ini.");
+        }
+        void refreshAttemptStatus(activeTemplate.id);
+      } else {
+        setError("The exam could not be started.");
+      }
     } finally {
       setIsStarting(false);
     }
@@ -393,6 +422,9 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         );
       }
       setManifest((current) => (current ? { ...current, status: "submitted" } : current));
+      if (activeTemplate) {
+        void refreshAttemptStatus(activeTemplate.id);
+      }
     } catch {
       setError("The exam could not be submitted.");
     } finally {
@@ -603,15 +635,22 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
               Pass mark {activeTemplate.passingScorePercent}%
             </span>
+            {attemptStatus && attemptStatus.maxAttempts !== null ? (
+              <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
+                {attemptStatus.hasOpenSession
+                  ? "Lanjutkan percobaan"
+                  : `${attemptStatus.attemptsRemaining ?? 0} dari ${attemptStatus.maxAttempts} kesempatan tersisa`}
+              </span>
+            ) : null}
             {!manifest ? (
               <button
                 type="button"
                 onClick={() => void startExam()}
-                disabled={isStarting}
+                disabled={isStarting || (attemptStatus ? !attemptStatus.canStart : false)}
                 className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isStarting ? <Loader2 className="h-4 w-4 animate-spin" /> : <PlayCircle className="h-4 w-4" />}
-                Start exam
+                {attemptStatus?.hasOpenSession ? "Lanjutkan exam" : "Start exam"}
               </button>
             ) : (
               <span className="rounded-full bg-blue-50 px-3 py-1 font-medium text-blue-700">
