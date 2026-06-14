@@ -135,6 +135,45 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         )
         self.assertTrue(reply.should_end)
 
+    def test_final_turn_prompt_instructs_a_graceful_close(self):
+        # On the last allowed exchange the partner must close gracefully instead
+        # of asking a dangling question (the "tiba-tiba berhenti" report).
+        provider = FakeProvider(
+            '{"reply": "It was great meeting you. Goodbye!", "on_topic": true, "should_end": true}'
+        )
+        reply = asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[],
+                user_message="see you",
+                completed_turns=TOPIC.max_turns - 1,  # this reply is the final turn
+                provider=provider,
+            )
+        )
+        self.assertTrue(reply.should_end)
+        system_prompt = provider.last_messages[0].content
+        self.assertIn("FINAL EXCHANGE", system_prompt)
+        self.assertIn("Do NOT ask a new question", system_prompt)
+
+    def test_non_final_turn_prompt_asks_a_question(self):
+        provider = FakeProvider(
+            '{"reply": "Nice! What size?", "on_topic": true, "should_end": false}'
+        )
+        asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[],
+                user_message="a coffee",
+                completed_turns=1,  # early, mid-conversation
+                provider=provider,
+            )
+        )
+        system_prompt = provider.last_messages[0].content
+        self.assertNotIn("FINAL EXCHANGE", system_prompt)
+        self.assertIn("ask a question", system_prompt)
+
     def test_falls_back_when_no_provider(self):
         reply = asyncio.run(
             generate_partner_reply(

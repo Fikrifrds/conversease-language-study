@@ -185,6 +185,28 @@ def _reply_system_prompt(
 ) -> str:
     goals = "; ".join(topic.goals)
     phrases = ", ".join(topic.target_phrases)
+
+    # The conversation is capped at topic.max_turns. The last exchange must read
+    # as a graceful goodbye, not a dangling question, or it feels cut off.
+    if turns_left <= 0:
+        closing_directive = (
+            "- THIS IS THE FINAL EXCHANGE. React warmly to what the learner just said, then bring "
+            "the conversation to a natural, friendly close in role (e.g. thank them and say "
+            "goodbye). Do NOT ask a new question. Set should_end to true.\n"
+        )
+    elif turns_left == 1:
+        closing_directive = (
+            "- This is the SECOND-TO-LAST exchange. Begin wrapping up: respond, and either ask one "
+            "final light question or start saying goodbye. Keep should_end false for now.\n"
+        )
+    else:
+        closing_directive = (
+            f"- This is exchange {current_turn}. Keep the conversation going. Do NOT end before "
+            f"exchange {min_turns}. Only set should_end to true once ALL goals are genuinely "
+            f"covered AND at least {min_turns} exchanges have happened. Until then, always set "
+            "should_end to false and ask a question.\n"
+        )
+
     return (
         f"You are an AI conversation partner playing the role of {topic.partner_role}. "
         "You are having a short spoken role-play conversation with an Indonesian English "
@@ -195,21 +217,19 @@ def _reply_system_prompt(
         f"Helpful target phrases the learner may use: {phrases}.\n\n"
         "RULES:\n"
         "- React to what the learner just said, then ask ONE simple follow-up question to keep "
-        "them talking. You are guiding the learner to speak, not narrating your own life. Do not "
-        "list your own activities unless the learner asks you a direct question.\n"
+        "them talking (unless you are closing the conversation). You are guiding the learner to "
+        "speak, not narrating your own life. Do not list your own activities unless the learner "
+        "asks you a direct question.\n"
         "- Work through the goals ONE AT A TIME. Cover only the next unmet goal in each reply; do "
         "not rush to finish all goals in one or two turns.\n"
         "- Stay strictly on this topic. If the learner drifts off-topic, gently and briefly "
         "steer back to the topic in role. Never start a new unrelated topic.\n"
         "- Keep your reply natural for the role but matched to the learner's level. One short turn "
-        "(1-2 sentences), ending with a question most of the time.\n"
+        "(1-2 sentences).\n"
         "- Do not repeat your previous lines and do not just echo the learner's words back.\n"
         "- Do not invent a human name for yourself and do not give meta feedback, grammar "
         "corrections, or notes. Just play the role.\n"
-        f"- This is exchange {current_turn}. Keep the conversation going. Do NOT end before "
-        f"exchange {min_turns}. Only set should_end to true once ALL goals are genuinely covered "
-        f"AND at least {min_turns} exchanges have happened, or when no turns remain "
-        f"(about {turns_left} left). Until then, always set should_end to false and ask a question.\n"
+        f"{closing_directive}"
         "- Set on_topic to false if the learner's last message was off-topic.\n"
         "Respond with JSON only, matching the requested schema."
     )
