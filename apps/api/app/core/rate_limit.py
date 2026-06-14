@@ -99,7 +99,18 @@ def rate_limit_rule(request: Request) -> Optional[tuple[str, int]]:
     if path.startswith("/api/admin/"):
         return ("admin", settings.admin_rate_limit_requests)
 
+    # Conversation turns each trigger a paid LLM/STT call. Limit POSTs to the
+    # turn endpoints so abuse cannot burn provider cost unbounded.
+    if request.method == "POST" and _is_conversation_turn_path(path):
+        return ("conversation", settings.conversation_rate_limit_requests)
+
     return None
+
+
+def _is_conversation_turn_path(path: str) -> bool:
+    return path.startswith("/api/conversation-sessions/") and (
+        path.endswith("/turns") or path.endswith("/turns/audio")
+    )
 
 
 def rate_limit_key(request: Request, rule_name: str) -> str:
@@ -109,5 +120,10 @@ def rate_limit_key(request: Request, rule_name: str) -> str:
         client_ip = request.client.host
     if not client_ip:
         client_ip = "unknown"
+
+    # Conversation turns share one bucket per client (the path carries a dynamic
+    # session id), so the limit applies across all of a user's sessions.
+    if rule_name == "conversation":
+        return f"{rule_name}:{client_ip}"
 
     return f"{rule_name}:{client_ip}:{request.url.path}"

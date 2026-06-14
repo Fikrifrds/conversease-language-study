@@ -310,6 +310,78 @@ export async function getLatestPractice(lessonSlug = defaultLessonSlug): Promise
   };
 }
 
+export type ResumableTurn = {
+  turnIndex: number;
+  userTranscript: string;
+  coachReply: string | null;
+};
+
+export type ResumablePractice = {
+  sessionId: string;
+  lessonSlug: string;
+  completedTurns: number;
+  totalTurns: number;
+  completed: boolean;
+  lastScore: number;
+  updatedAt: string;
+  firstCoachMessage: string;
+  turns: ResumableTurn[];
+  lastFeedback: ApiTurnFeedback | null;
+};
+
+export async function getResumablePractice(
+  lessonSlug = defaultLessonSlug
+): Promise<ResumablePractice | null> {
+  const response = await requestJson<
+    ApiResponse<null | {
+      session_id: string;
+      lesson_slug: string;
+      completed_turns: number;
+      total_turns: number;
+      completed: boolean;
+      last_score: number;
+      updated_at: string;
+      first_coach_message: string;
+      turns: Array<{ turn_index: number; user_transcript: string; coach_reply: string | null }>;
+      last_feedback: null | {
+        better_version: string;
+        indonesian_explanation: string;
+        next_practice: string;
+        scores: { speaking: number; grammar: number; fluency: number };
+      };
+    }>
+  >(`/conversation-practice/latest?lesson_slug=${encodeURIComponent(lessonSlug)}`);
+
+  if (!response.data) {
+    return null;
+  }
+
+  const data = response.data;
+  return {
+    sessionId: data.session_id,
+    lessonSlug: data.lesson_slug,
+    completedTurns: data.completed_turns,
+    totalTurns: data.total_turns,
+    completed: data.completed,
+    lastScore: data.last_score,
+    updatedAt: data.updated_at,
+    firstCoachMessage: data.first_coach_message,
+    turns: data.turns.map((turn) => ({
+      turnIndex: turn.turn_index,
+      userTranscript: turn.user_transcript,
+      coachReply: turn.coach_reply
+    })),
+    lastFeedback: data.last_feedback
+      ? {
+          betterVersion: data.last_feedback.better_version,
+          explanation: data.last_feedback.indonesian_explanation,
+          nextPractice: data.last_feedback.next_practice,
+          scores: data.last_feedback.scores
+        }
+      : null
+  };
+}
+
 export async function resetLatestPractice(lessonSlug = defaultLessonSlug): Promise<void> {
   await requestJson<ApiResponse<{ reset: boolean }>>(
     `/conversation-practice/latest?lesson_slug=${encodeURIComponent(lessonSlug)}`,

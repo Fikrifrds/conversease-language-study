@@ -118,6 +118,77 @@ class ConversationRoutesTest(unittest.TestCase):
         self.assertEqual(response.status_code, 422)
         self.assertEqual(response.json()["detail"], "unsupported_audio_content_type")
 
+    def test_create_session_a1_is_free(self):
+        response = self.client.post(
+            "/api/conversation-sessions",
+            headers=self.headers,
+            json={"lesson_slug": "saying-hello-and-goodbye", "level_code": "A1"},
+        )
+        self.assertEqual(response.status_code, 200)
+
+    def test_create_session_a2_requires_pro(self):
+        # A free user cannot start an A2+ coach scenario; the level is derived
+        # server-side from the lesson, so a spoofed level_code does not matter.
+        response = self.client.post(
+            "/api/conversation-sessions",
+            headers=self.headers,
+            json={"lesson_slug": "starting-small-talk", "level_code": "A1"},
+        )
+        self.assertEqual(response.status_code, 403)
+        self.assertEqual(response.json()["detail"], "conversation_coach_requires_pro")
+
+    def test_create_session_a2_allowed_for_pro_user(self):
+        now = datetime.utcnow()
+        with self.SessionLocal() as db:
+            db.add(
+                models.UserSubscriptionModel(
+                    id="sub-pro-1",
+                    user_id="user-123",
+                    plan_key="pro_monthly",
+                    status="active",
+                    starts_at=now,
+                    expires_at=None,
+                    created_at=now,
+                    updated_at=now,
+                )
+            )
+            db.commit()
+
+        response = self.client.post(
+            "/api/conversation-sessions",
+            headers=self.headers,
+            json={"lesson_slug": "starting-small-talk", "level_code": "A2"},
+        )
+        self.assertEqual(response.status_code, 200)
+
+    def test_latest_practice_returns_resumable_turns(self):
+        session_response = self.client.post(
+            "/api/conversation-sessions",
+            headers=self.headers,
+            json={"lesson_slug": "saying-hello-and-goodbye"},
+        )
+        session_id = session_response.json()["data"]["id"]
+
+        self.client.post(
+            f"/api/conversation-sessions/{session_id}/turns",
+            headers=self.headers,
+            json={"transcript": "Good morning. I'm good, thank you."},
+        )
+
+        latest = self.client.get(
+            "/api/conversation-practice/latest?lesson_slug=saying-hello-and-goodbye",
+            headers=self.headers,
+        )
+        self.assertEqual(latest.status_code, 200)
+        data = latest.json()["data"]
+        self.assertEqual(data["session_id"], session_id)
+        self.assertEqual(data["completed_turns"], 1)
+        self.assertEqual(len(data["turns"]), 1)
+        self.assertEqual(data["turns"][0]["user_transcript"], "Good morning. I'm good, thank you.")
+        self.assertIsNotNone(data["last_feedback"])
+        self.assertIn("scores", data["last_feedback"])
+        self.assertTrue(data["first_coach_message"])
+
 
 if __name__ == "__main__":
     unittest.main()

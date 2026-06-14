@@ -6,6 +6,7 @@ import { CheckCircle2, ChevronDown, ChevronUp, Lightbulb, Loader2, MessageCircle
 import {
   ApiRequestError,
   createConversationSession,
+  getResumablePractice,
   resetLatestPractice,
   submitConversationAudioTurn,
   submitConversationTurn,
@@ -56,107 +57,6 @@ type ConversationCoachPracticeProps = {
 const coachTurnsByLessonSlug: Record<string, CoachTurn[]> = generatedCoachTurnsByLessonSlug;
 
 const maxRecordingSeconds = 30;
-
-function clampScore(score: number) {
-  return Math.max(55, Math.min(score, 95));
-}
-
-function looksLikeRefusal(normalized: string) {
-  const cleaned = normalized.replace(/[^a-z\s]/g, " ").trim();
-  if (!cleaned) {
-    return true;
-  }
-  const tokens = cleaned.split(/\s+/).filter(Boolean);
-  if (!tokens.length) {
-    return true;
-  }
-  if (tokens.length <= 2 && tokens.every((token) => ["no", "nope", "nah"].includes(token))) {
-    return true;
-  }
-  if (tokens.length <= 2 && tokens[0] === "sorry") {
-    return true;
-  }
-  return false;
-}
-
-function matchesSamplePattern(answer: string, sampleAnswer: string) {
-  const stopwords = new Set(["the", "that", "this", "with", "your", "please", "thank", "you"]);
-  const answerTokens = new Set(answer.match(/[a-z0-9]+/g) ?? []);
-  const sampleTokens = (sampleAnswer.toLowerCase().match(/[a-z0-9]+/g) ?? []).filter(
-    (token) => token.length > 2 && !stopwords.has(token)
-  );
-
-  if (!sampleTokens.length) {
-    return false;
-  }
-
-  const matched = sampleTokens.filter((token) => answerTokens.has(token)).length;
-  return matched >= Math.min(2, sampleTokens.length);
-}
-
-function evaluateAnswer(answer: string, turnIndex: number, activeTurns: CoachTurn[]): CoachFeedback {
-  const text = answer.trim();
-  const normalized = text.toLowerCase();
-  const enoughWords = text.split(/\s+/).filter(Boolean).length >= 5;
-
-  const target = activeTurns[turnIndex] ?? activeTurns[0];
-  const expectedKeywords = target.expectedKeywords ?? [];
-  const expectsQuestion = expectedKeywords.includes("?");
-  const keywordHits = expectedKeywords.filter((keyword) => keyword && keyword !== "?" && normalized.includes(keyword.toLowerCase())).length;
-  const hasQuestion = normalized.includes("?");
-  const matchedSamplePattern = matchesSamplePattern(normalized, target.sampleAnswer);
-  const matchHits = keywordHits + (expectsQuestion && hasQuestion ? 1 : 0);
-  const expectedTotal = expectedKeywords.filter((keyword) => keyword && keyword !== "?").length + (expectsQuestion ? 1 : 0);
-  const matchedExpected = expectedTotal > 0 ? matchHits > 0 : matchedSamplePattern;
-  const offTrack =
-    looksLikeRefusal(normalized) || (!matchedSamplePattern && expectedTotal > 0 && matchHits === 0);
-
-  let speaking = offTrack ? 58 : 64;
-  let grammar = offTrack ? 56 : 66;
-  let fluency = offTrack ? 55 : 64;
-
-  if (enoughWords) {
-    speaking += 8;
-    fluency += 8;
-  }
-
-  if (keywordHits) {
-    speaking += 12 + Math.max(0, keywordHits - 1) * 3;
-    grammar += 7;
-    fluency += Math.min(keywordHits, 2) * 3;
-  }
-
-  if (hasQuestion) {
-    fluency += 8;
-    speaking += 5;
-  }
-
-  if (matchedSamplePattern) {
-    speaking += 10;
-    grammar += 6;
-    fluency += 4;
-  }
-
-  const explanation = offTrack
-    ? `Jawabanmu belum menjawab pertanyaan ini. Coba jawab seperti: ${target.sampleAnswer}`
-    : matchedExpected
-      ? (target.indonesianExplanation || `Jawabanmu sudah masuk konteks. Latih pola ini agar lebih natural: ${target.sampleAnswer}`)
-      : `Jawabanmu belum memakai pola yang diharapkan untuk "${target.focus}". Coba ikuti contoh ini: ${target.sampleAnswer}`;
-
-  return {
-    betterVersion: target.sampleAnswer,
-    explanation,
-    nextPractice:
-      turnIndex >= activeTurns.length - 1
-        ? "Ulangi roleplay dari awal tanpa melihat contoh jawaban."
-        : `Next: ${activeTurns[turnIndex + 1].focus}`,
-    scores: {
-      speaking: clampScore(speaking),
-      grammar: clampScore(grammar),
-      fluency: clampScore(fluency)
-    }
-  };
-}
 
 function averageScore(feedback: CoachFeedback | null) {
   if (!feedback) {
@@ -272,7 +172,7 @@ export function ConversationCoachPractice({
   const [feedback, setFeedback] = useState<CoachFeedback | null>(null);
   const [completedTurns, setCompletedTurns] = useState(0);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [syncStatus, setSyncStatus] = useState<"connecting" | "synced" | "local">("connecting");
+  const [syncStatus, setSyncStatus] = useState<"connecting" | "synced">("connecting");
   const [billingNotice, setBillingNotice] = useState("");
   const [recordingError, setRecordingError] = useState("");
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
@@ -310,6 +210,61 @@ export function ConversationCoachPractice({
     saveSavedPractice(savedPractice, effectiveStorageKey);
     saveLatestPracticeSlug(lessonSlug);
   }, [completedTurns, effectiveStorageKey, hasRoleplayData, lessonSlug, savedPractice]);
+
+  // Resume an in-progress server session on mount so a page refresh does not
+  // lose the conversation (the component remounts per scenario via `key`).
+  useEffect(() => {
+    if (!hasRoleplayData) {
+      return;
+    }
+    let cancelled = false;
+
+    async function resume() {
+      try {
+        const saved = await getResumablePractice(lessonSlug);
+        if (cancelled || !saved || saved.completedTurns === 0) {
+          if (!cancelled) {
+            setSyncStatus("connecting");
+          }
+          return;
+        }
+
+        const turnsForLesson = coachTurnsByLessonSlug[lessonSlug] ?? [];
+        const rebuilt: ChatMessage[] = saved.firstCoachMessage
+          ? [{ role: "coach", text: saved.firstCoachMessage }]
+          : [];
+        for (const turn of saved.turns) {
+          rebuilt.push({ role: "user", text: turn.userTranscript });
+          if (turn.coachReply) {
+            rebuilt.push({ role: "coach", text: turn.coachReply });
+          }
+        }
+
+        setMessages(rebuilt);
+        setSessionId(saved.sessionId);
+        setCompletedTurns(saved.completedTurns);
+        setTurnIndex(Math.min(saved.completedTurns, turnsForLesson.length - 1));
+        setFeedbackTurnIndex(
+          Math.min(Math.max(saved.completedTurns - 1, 0), turnsForLesson.length - 1)
+        );
+        if (saved.lastFeedback) {
+          setFeedback(saved.lastFeedback);
+        }
+        setSyncStatus("synced");
+      } catch {
+        if (!cancelled) {
+          setSyncStatus("connecting");
+        }
+      }
+    }
+
+    void resume();
+    return () => {
+      cancelled = true;
+    };
+    // Mount-only: the component remounts per scenario (key={activeSlug}).
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   if (!activeScenario || !activeTurns?.length) {
     return (
@@ -431,8 +386,11 @@ export function ConversationCoachPractice({
         nextFeedback: result.feedback
       });
     } catch (error) {
-      if (error instanceof ApiRequestError && error.status === 402) {
-        setBillingNotice("Kuota Conversation Coach habis. Top-up atau upgrade untuk melanjutkan latihan tersinkron.");
+      if (
+        error instanceof ApiRequestError &&
+        (error.status === 402 || error.status === 403 || error.status === 429)
+      ) {
+        handleTurnError(error);
       } else {
         setRecordingError(recordingSubmitErrorMessage(error));
       }
@@ -451,13 +409,12 @@ export function ConversationCoachPractice({
 
     setIsSubmitting(true);
     setBillingNotice("");
+    setRecordingError("");
 
+    // Server-authoritative: feedback, scoring, and progress always come from the
+    // API so the learner never sees fabricated scores or divergent state. On any
+    // failure we keep the answer in the box and ask the learner to retry.
     let activeSessionId = sessionId;
-    let newFeedback = evaluateAnswer(userAnswer, turnIndex, activeTurns);
-    let nextCompletedTurns = Math.min(completedTurns + 1, activeTurns.length);
-    let nextTurnIndex = Math.min(turnIndex + 1, activeTurns.length - 1);
-    let nextCoachReply: string | null = nextCompletedTurns < activeTurns.length ? activeTurns[nextTurnIndex].coach : null;
-    let submittedTranscript = userAnswer;
 
     try {
       if (!activeSessionId) {
@@ -467,31 +424,39 @@ export function ConversationCoachPractice({
       }
 
       const result = await submitConversationTurn(activeSessionId, userAnswer);
-      nextCompletedTurns = result.summary.completedTurns;
-      nextTurnIndex = Math.min(result.summary.completedTurns, activeTurns.length - 1);
-      nextCoachReply = result.coachReply;
-      newFeedback = result.feedback;
-      submittedTranscript = result.userTranscript || userAnswer;
       setSyncStatus("synced");
       applySummary(result.summary);
+      applyTurnResult({
+        userText: result.userTranscript || userAnswer,
+        nextCompletedTurns: result.summary.completedTurns,
+        nextTurnIndex: Math.min(result.summary.completedTurns, activeTurns.length - 1),
+        nextCoachReply: result.coachReply,
+        nextFeedback: result.feedback
+      });
+      setAnswer("");
     } catch (error) {
-      if (error instanceof ApiRequestError && error.status === 402) {
+      handleTurnError(error);
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  function handleTurnError(error: unknown) {
+    if (error instanceof ApiRequestError) {
+      if (error.status === 402) {
         setBillingNotice("Kuota Conversation Coach habis. Top-up atau upgrade untuk melanjutkan latihan tersinkron.");
-        setIsSubmitting(false);
         return;
       }
-      setSyncStatus("local");
+      if (error.status === 403) {
+        setBillingNotice("Skenario level ini butuh paket Pro. Upgrade untuk berlatih Conversation Coach di A2 ke atas.");
+        return;
+      }
+      if (error.status === 429) {
+        setRecordingError("Terlalu banyak percakapan dalam waktu singkat. Tunggu sebentar lalu coba lagi.");
+        return;
+      }
     }
-
-    applyTurnResult({
-      userText: submittedTranscript,
-      nextCompletedTurns,
-      nextTurnIndex,
-      nextCoachReply,
-      nextFeedback: newFeedback
-    });
-    setAnswer("");
-    setIsSubmitting(false);
+    setRecordingError("Jawaban belum terkirim ke server. Cek koneksi lalu kirim ulang.");
   }
 
   function handleUseSample() {
@@ -501,6 +466,11 @@ export function ConversationCoachPractice({
   }
 
   async function handleReset() {
+    // Don't reset mid-request: a server turn could land after we clear state and
+    // resurrect a stale session.
+    if (isSubmitting || isProcessingRecording) {
+      return;
+    }
     if (isRecording) {
       recorder.cancel();
     }
@@ -511,6 +481,7 @@ export function ConversationCoachPractice({
     setFeedback(null);
     setCompletedTurns(0);
     setRecordingError("");
+    setBillingNotice("");
     removeSavedPractice(effectiveStorageKey);
 
     try {
@@ -520,7 +491,7 @@ export function ConversationCoachPractice({
       setMessages([{ role: "coach", text: session.firstCoachMessage }]);
       setSyncStatus("synced");
     } catch {
-      setSyncStatus("local");
+      setSyncStatus("connecting");
     }
   }
 
@@ -538,11 +509,7 @@ export function ConversationCoachPractice({
                 {activeScenario ? `Skenario: ${activeScenario.label}. ${activeScenario.description}` : "Skenario: latihan roleplay singkat."}
               </p>
               <p className="mt-2 text-xs font-semibold uppercase text-ink/45">
-                {syncStatus === "synced"
-                  ? "Sesi tersinkron"
-                  : syncStatus === "local"
-                    ? "Mode lokal"
-                    : "Siap mulai"}
+                {syncStatus === "synced" ? "Sesi tersinkron" : "Siap mulai"}
               </p>
               {billingNotice ? (
                 <Link

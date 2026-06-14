@@ -92,6 +92,7 @@ class Settings(BaseSettings):
     rate_limit_window_seconds: int = 60
     auth_rate_limit_requests: int = 30
     admin_rate_limit_requests: int = 120
+    conversation_rate_limit_requests: int = 40
 
     model_config = SettingsConfigDict(env_file=(".env", ".env.local"), extra="ignore")
 
@@ -188,6 +189,9 @@ class Settings(BaseSettings):
 
         if self.rate_limit_enabled and self.admin_rate_limit_requests < 1:
             errors.append("ADMIN_RATE_LIMIT_REQUESTS must be positive")
+
+        if self.rate_limit_enabled and self.conversation_rate_limit_requests < 1:
+            errors.append("CONVERSATION_RATE_LIMIT_REQUESTS must be positive")
 
         if errors:
             raise ValueError("; ".join(errors))

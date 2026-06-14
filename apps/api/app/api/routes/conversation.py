@@ -6,12 +6,13 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
+from app.data.curriculum import get_lesson_or_none, requires_pro
 from app.db.session import get_db
 from app.domain.users import User
 from app.domain.conversation_practice import (
     UnknownLessonSlugError,
     session_payload,
-    session_summary,
+    session_resume_payload,
     turn_payload,
 )
 from app.repositories.billing import BillingRepository, InsufficientMinutesError
@@ -46,7 +47,20 @@ async def create_conversation_session(
     db: Session = Depends(get_db),
     repository: ConversationPracticeRepository = Depends(get_repository),
 ) -> dict:
-    BillingRepository(db).ensure_free_access(current_user.id)
+    billing = BillingRepository(db)
+    billing.ensure_free_access(current_user.id)
+
+    # Derive the level from the lesson server-side (never trust the client's
+    # level_code) and gate Pro-only scenarios so coach access matches course
+    # access: A1 is free, A2+ requires an active Pro subscription.
+    lesson = get_lesson_or_none(payload.lesson_slug)
+    if lesson is not None and requires_pro(lesson["level_code"]):
+        if not current_user.is_admin and not billing.is_pro(current_user.id):
+            raise HTTPException(
+                status_code=403,
+                detail="conversation_coach_requires_pro",
+            )
+
     try:
         session = repository.create_session(
             demo_user_id=current_user.id,
@@ -230,7 +244,7 @@ async def get_latest_conversation_practice(
         user_id=current_user.id,
         lesson_slug=lesson_slug,
     )
-    return {"data": session_summary(session) if session else None}
+    return {"data": session_resume_payload(session) if session else None}
 
 
 @router.delete("/conversation-practice/latest")

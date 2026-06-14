@@ -19,6 +19,7 @@ class RateLimitTest(unittest.TestCase):
         self.original_window = settings.rate_limit_window_seconds
         self.original_auth_limit = settings.auth_rate_limit_requests
         self.original_admin_limit = settings.admin_rate_limit_requests
+        self.original_conversation_limit = settings.conversation_rate_limit_requests
         rate_limiter.reset()
 
     def tearDown(self):
@@ -26,6 +27,7 @@ class RateLimitTest(unittest.TestCase):
         settings.rate_limit_window_seconds = self.original_window
         settings.auth_rate_limit_requests = self.original_auth_limit
         settings.admin_rate_limit_requests = self.original_admin_limit
+        settings.conversation_rate_limit_requests = self.original_conversation_limit
         rate_limiter.reset()
 
     def client_with_database(self) -> TestClient:
@@ -80,6 +82,21 @@ class RateLimitTest(unittest.TestCase):
         second = client.get("/api/admin/cms/summary")
 
         self.assertIn(first.status_code, {401, 503})
+        self.assertEqual(second.status_code, 429)
+        self.assertEqual(second.json()["detail"], "Rate limit exceeded")
+
+    def test_conversation_turn_is_rate_limited_per_client(self):
+        settings.rate_limit_enabled = True
+        settings.rate_limit_window_seconds = 60
+        settings.conversation_rate_limit_requests = 1
+        client = TestClient(create_app())
+
+        # Unauthenticated, but the rate limiter runs before auth. Different
+        # session ids share one bucket per client, so the second turn is blocked.
+        first = client.post("/api/conversation-sessions/session-a/turns", json={"transcript": "hi"})
+        second = client.post("/api/conversation-sessions/session-b/turns", json={"transcript": "hi"})
+
+        self.assertNotEqual(first.status_code, 429)
         self.assertEqual(second.status_code, 429)
         self.assertEqual(second.json()["detail"], "Rate limit exceeded")
 

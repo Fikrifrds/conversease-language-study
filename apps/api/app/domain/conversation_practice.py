@@ -386,6 +386,33 @@ def session_summary(session: ConversationSession) -> Dict[str, object]:
     }
 
 
+def session_resume_payload(session: ConversationSession) -> Dict[str, object]:
+    """Full state needed to rebuild an in-progress coach session in the UI:
+    the chat transcript so far plus the last turn's feedback."""
+    last_turn = session.turns[-1] if session.turns else None
+    return {
+        **session_summary(session),
+        "scenario_key": session.scenario_key,
+        "first_coach_message": first_coach_message(session.lesson_slug),
+        "turns": [
+            {
+                "turn_index": turn.turn_index,
+                "user_transcript": turn.user_transcript,
+                "coach_reply": turn.coach_reply,
+            }
+            for turn in session.turns
+        ],
+        "last_feedback": {
+            "better_version": last_turn.feedback.better_version,
+            "indonesian_explanation": last_turn.feedback.indonesian_explanation,
+            "next_practice": last_turn.feedback.next_practice,
+            "scores": last_turn.feedback.scores,
+        }
+        if last_turn is not None
+        else None,
+    }
+
+
 def session_payload(session: ConversationSession) -> Dict[str, object]:
     return {
         "id": session.id,
