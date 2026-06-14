@@ -79,7 +79,7 @@ async def generate_partner_reply(
     # model often ends a topic in 2-3 turns once it thinks the goals are touched,
     # which feels abrupt (e.g. ending an 8-turn cafe order at turn 3).
     min_turns = _min_turns_before_end(topic)
-    fallback = _fallback_reply(topic=topic, turns_left=turns_left)
+    fallback = _fallback_reply(topic=topic, turns_left=turns_left, turn_number=current_turn)
 
     active_provider = provider or get_llm_provider()
     if active_provider is None:
@@ -241,18 +241,26 @@ def _render_transcript(history: Sequence[Tuple[str, str]]) -> str:
     return "\n".join(lines)
 
 
-def _fallback_reply(*, topic: PartnerTopic, turns_left: int) -> PartnerReply:
+# Used when the LLM is unavailable. Kept varied and encouraging so two failures
+# in a row don't repeat the same line, and never implies the learner was unclear.
+_FALLBACK_CONTINUATIONS = (
+    "Thanks for sharing! Can you tell me a little more?",
+    "That's interesting. What else can you say about that?",
+    "Nice! And what do you think about it?",
+    "Good. Let's keep going — tell me one more thing.",
+    "I see. Can you give me an example?",
+)
+
+
+def _fallback_reply(*, topic: PartnerTopic, turns_left: int, turn_number: int = 1) -> PartnerReply:
     if turns_left <= 0:
         return PartnerReply(
             reply="Thank you for chatting with me. Great practice today!",
             on_topic=True,
             should_end=True,
         )
-    return PartnerReply(
-        reply=f"Sorry, could you say that again about {topic.title.lower()}?",
-        on_topic=True,
-        should_end=False,
-    )
+    reply = _FALLBACK_CONTINUATIONS[turn_number % len(_FALLBACK_CONTINUATIONS)]
+    return PartnerReply(reply=reply, on_topic=True, should_end=False)
 
 
 def _parse_reply(

@@ -2,10 +2,11 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { CheckCircle2, Mic, MicOff, Sparkles, Square, Volume2 } from "lucide-react";
+import { CheckCircle2, Mic, MicOff, Sparkles, Square, StopCircle, Volume2 } from "lucide-react";
 import { ApiRequestError } from "@/lib/conversation-api";
 import {
   createPartnerSession,
+  endPartnerSession,
   fetchPartnerSession,
   fetchPartnerSummary,
   submitPartnerAudioTurn,
@@ -286,6 +287,37 @@ export function ConversationPartnerChat({
     }
   }
 
+  // Stop the session early (learner pressed "Akhiri Sesi"): close mic/audio,
+  // mark it ended on the server, and show the summary for what they did so far.
+  async function handleEndSession() {
+    const activeSessionId = sessionIdRef.current;
+    if (ended || isBusy) {
+      return;
+    }
+    handsFreeRef.current = false;
+    setHandsFree(false);
+    audioRef.current?.pause();
+    setIsSpeaking(false);
+    recorder.cancel();
+    setEnded(true);
+
+    if (!activeSessionId) {
+      // Nothing was sent yet; just refresh the workspace state.
+      onSessionEnd?.();
+      return;
+    }
+    setIsBusy(true);
+    try {
+      const result = await endPartnerSession(activeSessionId);
+      setSummary(result);
+    } catch {
+      setError("Sesi belum bisa diakhiri. Coba lagi.");
+    } finally {
+      setIsBusy(false);
+      onSessionEnd?.();
+    }
+  }
+
   return (
     <div className="grid gap-5 lg:grid-cols-[0.72fr_0.28fr]">
       <section className="rounded-lg border border-ink/10 bg-white shadow-sm">
@@ -448,6 +480,17 @@ export function ConversationPartnerChat({
               {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             </div>
           )}
+          {started && !ended && !resuming ? (
+            <button
+              type="button"
+              onClick={() => void handleEndSession()}
+              disabled={isBusy}
+              className="focus-ring mt-3 inline-flex items-center gap-2 rounded-lg border border-ink/15 px-4 py-2 text-sm font-semibold text-ink/70 hover:bg-mint disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              <StopCircle className="h-4 w-4" aria-hidden="true" />
+              Akhiri Sesi
+            </button>
+          ) : null}
           {error ? (
             <p className="mt-3 rounded-lg bg-[#fde7df] px-3 py-2 text-sm text-ink/70">{error}</p>
           ) : null}

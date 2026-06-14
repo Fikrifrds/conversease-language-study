@@ -135,6 +135,13 @@ class ConversationPartnerRepository:
     def completed_turns(self, session: ConversationSessionModel) -> int:
         return len(session.turns)
 
+    def end_session(self, session: ConversationSessionModel) -> None:
+        """Mark a session finished early (learner pressed stop)."""
+        if session.status != "completed":
+            session.status = "completed"
+            session.updated_at = datetime.utcnow()
+            self.db.commit()
+
     def save_summary(
         self,
         session: ConversationSessionModel,

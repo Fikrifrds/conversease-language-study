@@ -206,6 +206,34 @@ class ConversationPartnerRoutesTest(unittest.TestCase):
             )
         return session_id
 
+    def test_end_session_marks_completed_and_returns_summary(self):
+        session_id = self._create_session_with_turn()  # in-progress, 1 turn
+        summarize_mock = AsyncMock(
+            return_value=PartnerSummary(
+                summary="Good effort",
+                indonesian_explanation="Lanjutkan latihannya.",
+                scores={"speaking": 72, "grammar": 70, "fluency": 74},
+            )
+        )
+        with patch(
+            "app.api.routes.conversation_partner.summarize_session", new=summarize_mock
+        ):
+            ended = self.client.post(
+                f"/api/conversation-partner/sessions/{session_id}/end",
+                headers=self.headers,
+            )
+
+        self.assertEqual(ended.status_code, 200, ended.text)
+        body = ended.json()["data"]
+        self.assertEqual(body["status"], "completed")
+        self.assertEqual(body["scores"]["speaking"], 72)
+
+        # The stopped session now shows as completed in topic progress.
+        progress = self.client.get(
+            "/api/conversation-partner/topic-progress", headers=self.headers
+        )
+        self.assertTrue(progress.json()["data"]["order-a-drink"]["completed"])
+
     def test_summary_is_persisted_and_reused(self):
         session_id = self._create_session_with_turn()
         summarize_mock = AsyncMock(

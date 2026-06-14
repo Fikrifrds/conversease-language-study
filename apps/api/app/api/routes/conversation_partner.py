@@ -203,6 +203,54 @@ async def create_partner_audio_turn(
     }
 
 
+@router.post("/conversation-partner/sessions/{session_id}/end")
+async def end_partner_session(
+    session_id: str,
+    current_user: User = Depends(get_current_user),
+    repository: ConversationPartnerRepository = Depends(get_repository),
+) -> dict:
+    """End an in-progress session early and return its summary + score."""
+    session = repository.get_session(session_id)
+    if session is None:
+        raise HTTPException(status_code=404, detail="partner_session_not_found")
+    if session.user_id != current_user.id:
+        raise HTTPException(status_code=403, detail="partner_session_user_mismatch")
+
+    topic = get_topic(session.scenario_key)
+    if topic is None:
+        raise HTTPException(status_code=404, detail="partner_topic_not_found")
+
+    repository.end_session(session)
+
+    # Reuse a stored summary if present; otherwise compute one from the history.
+    stored = session.summary_json
+    if not (isinstance(stored, dict) and stored.get("scores")):
+        history = repository.history(session, opening_line=topic.opening_line)
+        summary = await summarize_session(
+            topic=topic,
+            level_code=session.level_code,
+            history=history,
+        )
+        repository.save_summary(
+            session,
+            summary=summary.summary,
+            indonesian_explanation=summary.indonesian_explanation,
+            scores=summary.scores,
+        )
+        stored = session.summary_json
+
+    return {
+        "data": {
+            "session_id": session.id,
+            "status": session.status,
+            "summary": stored.get("summary", ""),
+            "indonesian_explanation": stored.get("indonesian_explanation", ""),
+            "scores": stored.get("scores", {}),
+            "completed_turns": repository.completed_turns(session),
+        }
+    }
+
+
 @router.post("/conversation-partner/sessions/{session_id}/summary")
 async def get_partner_summary(
     session_id: str,

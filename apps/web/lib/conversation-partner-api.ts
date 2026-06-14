@@ -209,6 +209,30 @@ export async function fetchPartnerSummary(sessionId: string): Promise<PartnerSum
   };
 }
 
+export async function endPartnerSession(sessionId: string): Promise<PartnerSummary> {
+  const response = await fetch(
+    `${apiBaseUrl()}/conversation-partner/sessions/${sessionId}/end`,
+    { method: "POST", headers: authHeaders() }
+  );
+  if (!response.ok) {
+    return readError(response);
+  }
+  const payload = (await response.json()) as ApiResponse<{
+    session_id: string;
+    summary: string;
+    indonesian_explanation: string;
+    scores: { speaking: number; grammar: number; fluency: number };
+    completed_turns: number;
+  }>;
+  return {
+    sessionId: payload.data.session_id,
+    summary: payload.data.summary,
+    indonesianExplanation: payload.data.indonesian_explanation,
+    scores: payload.data.scores,
+    completedTurns: payload.data.completed_turns
+  };
+}
+
 type ApiTopicProgress = {
   completed: boolean;
   best_score: number | null;

@@ -46,10 +46,10 @@ class TogetherProvider(LLMProvider):
             "max_tokens": model_config.max_tokens,
         }
         if response_schema is not None:
-            payload["response_format"] = {
-                "type": "json_schema",
-                "schema": response_schema,
-            }
+            # Together's broadly supported JSON mode. The callers' parsers are
+            # lenient, so we ask for a JSON object rather than a strict schema
+            # (which some Together models reject with a 400).
+            payload["response_format"] = {"type": "json_object"}
 
         headers = {
             "Authorization": f"Bearer {self._api_key}",
@@ -59,8 +59,11 @@ class TogetherProvider(LLMProvider):
         request_url = f"{self._base_url}/v1/chat/completions"
         client = self._get_client()
 
+        # Three tries: enough to absorb a transient 429/5xx/timeout (common cause
+        # of the conversation partner falling back) plus one retry after dropping
+        # response_format if the model rejects JSON mode.
         last_error: Optional[Exception] = None
-        for attempt in range(2):
+        for attempt in range(3):
             started = asyncio.get_running_loop().time()
             try:
                 response = await client.post(
@@ -90,9 +93,13 @@ class TogetherProvider(LLMProvider):
                     elapsed_ms,
                 )
                 last_error = exc
+                # A 400 may mean the model rejected JSON mode: drop it and retry.
+                if status == 400 and "response_format" in payload and attempt < 2:
+                    payload.pop("response_format", None)
+                    continue
                 retryable = status in {408, 429, 500, 502, 503, 504}
-                if retryable and attempt == 0:
-                    await asyncio.sleep(0.35 + random.random() * 0.35)
+                if retryable and attempt < 2:
+                    await asyncio.sleep(0.35 + random.random() * 0.5)
                     continue
                 raise LLMError(f"together_status_{status}") from exc
             except httpx.HTTPError as exc:
@@ -104,8 +111,8 @@ class TogetherProvider(LLMProvider):
                     elapsed_ms,
                 )
                 last_error = exc
-                if attempt == 0:
-                    await asyncio.sleep(0.35 + random.random() * 0.35)
+                if attempt < 2:
+                    await asyncio.sleep(0.35 + random.random() * 0.5)
                     continue
                 raise LLMError("together_request_failed") from exc
             except ValueError as exc:
