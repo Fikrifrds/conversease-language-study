@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { GoogleAuthButton } from "@/components/google-auth-button";
 import { registerUser, saveAuthSession } from "@/lib/auth-api";
+import { trackEvent } from "@/lib/analytics";
 
 
 export function RegisterForm() {
@@ -21,6 +22,7 @@ export function RegisterForm() {
     try {
       const session = await registerUser({ name, email, password });
       saveAuthSession(session);
+      trackEvent("sign_up", { method: "email" });
       window.location.href = "/onboarding";
     } catch {
       setError("Akun belum bisa dibuat. Cek email dan password, lalu coba lagi.");

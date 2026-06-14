@@ -13,6 +13,8 @@ This document tracks the Conversease MVP release candidate.
 - Billing access model with subscription, payment order, top-up, and minute ledger tables.
 - Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
 - Admin email diagnostics can list, render, and send test emails through `/api/admin/email-templates`, `/api/admin/test-email/render`, and `/api/admin/test-email/send`.
+- Admin AI diagnostics report provider configuration and live LLM health at `/api/admin/ai/status` and `/api/admin/ai/test-llm`, and aggregated LLM token usage with estimated cost at `/api/admin/ai/usage` (in-memory, per-process; resets on restart).
+- Web analytics: Google Analytics 4 loads when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set (no-op otherwise), tracks SPA pageviews, and emits funnel events `sign_up`, `exam_start`, `exam_submit`, `begin_checkout`, and `purchase_pending`.
 - Admin CMS page for controlled editing of curriculum lesson metadata, lesson roleplay setup, and email templates, with content revision audit logs, revision rollback, and stale edit protection.
 - Admin CMS Readiness tab shows per-level, per-unit, per-lesson content and audio checklist from every `content/curriculum/*/*/content_plan.yaml`, actual content files, `audio_manifest.yaml`, and `content/production_tracker.csv`.
 - Admin CMS has a batch audio queue for generating all missing text-ready listening audio or regenerating every text-ready lesson after script edits.

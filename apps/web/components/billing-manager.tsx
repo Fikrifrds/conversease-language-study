@@ -23,6 +23,7 @@ import {
   type PaymentOrder
 } from "@/lib/billing-api";
 import { plans, topups } from "@/lib/data";
+import { trackEvent } from "@/lib/analytics";
 
 function formatDate(value: string | null) {
   if (!value) {
@@ -192,6 +193,7 @@ export function BillingManager() {
     setMessage("");
 
     try {
+      trackEvent("begin_checkout", { package_key: packageKey, payment_kind: paymentKind });
       const order = await createCheckout({ packageKey, paymentKind });
       setCheckoutOrder(order);
       setMessage("Instruksi transfer sudah dibuat. Gunakan nominal tepat agar mudah diverifikasi.");
@@ -220,6 +222,8 @@ export function BillingManager() {
         notes
       });
       setCheckoutOrder(result.order);
+      // Manual-transfer confirmation: payment claimed, pending admin approval.
+      trackEvent("purchase_pending", { package_key: checkoutOrder.packageKey });
       setMessage("Konfirmasi terkirim. Admin akan mengecek pembayaran dan approve akses.");
       await refreshAccess();
     } catch {

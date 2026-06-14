@@ -8,6 +8,7 @@ from fastapi import APIRouter, Depends, HTTPException
 
 from app.api.admin_deps import require_admin_api_key
 from app.core.config import settings
+from app.core.llm_usage import llm_usage_registry
 from app.domain.ai import TASK_MODEL_CONFIGS, ChatMessage
 from app.services.llm import LLMError, get_llm_provider
 
@@ -68,3 +69,12 @@ async def test_llm_completion(_: bool = Depends(require_admin_api_key)) -> dict:
             "output": result.content.strip()[:200],
         }
     }
+
+
+@router.get("/admin/ai/usage")
+async def get_ai_usage(_: bool = Depends(require_admin_api_key)) -> dict:
+    """Aggregated LLM token usage and estimated cost since the process started.
+
+    In-memory and per-process (resets on restart); for live cost visibility.
+    """
+    return {"data": llm_usage_registry.snapshot()}

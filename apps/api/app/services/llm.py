@@ -8,6 +8,7 @@ from typing import Any, Dict, List, Optional
 import httpx
 
 from app.core.config import settings
+from app.core.llm_usage import record_llm_usage_from_raw
 from app.domain.ai import ChatMessage, LLMProvider, LLMResult, ModelConfig
 
 
@@ -121,6 +122,7 @@ class TogetherProvider(LLMProvider):
         if not isinstance(content, str) or not content.strip():
             raise LLMError("together_content_empty")
 
+        record_llm_usage_from_raw(provider="together", model=model_config.model, raw=body)
         return LLMResult(content=content, raw=body)
 
 
@@ -261,6 +263,7 @@ class OpenAIProvider(LLMProvider):
         if not isinstance(content, str) or not content.strip():
             raise LLMError("openai_content_empty")
 
+        record_llm_usage_from_raw(provider="openai", model=model_config.model, raw=body)
         return LLMResult(content=content, raw=body)
 
 

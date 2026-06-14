@@ -34,6 +34,7 @@ import {
   type RealExamResult
 } from "@/lib/learning-api";
 import { useVoiceRecorder } from "@/lib/use-voice-recorder";
+import { trackEvent } from "@/lib/analytics";
 
 type ItemDraft = {
   textResponse?: string;
@@ -296,6 +297,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       setTimeRemaining(session.timeRemainingSeconds);
       setDrafts({});
       window.localStorage.setItem(sessionStorageKey(levelCode), session.sessionId);
+      trackEvent("exam_start", { level: levelCode.toUpperCase() });
       setNotice("Exam started. Complete each section and save before moving on.");
     } catch (startError) {
       if (startError instanceof ExamStartBlockedError) {
@@ -410,6 +412,11 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       window.localStorage.setItem(lastResultStorageKey(levelCode), manifest.sessionId);
       void refreshLastResult();
       const scorePercent = Math.round(submitResult.score_percent);
+      trackEvent("exam_submit", {
+        level: levelCode.toUpperCase(),
+        score_percent: scorePercent,
+        result_status: submitResult.result_status
+      });
       if (submitResult.pending_review_count > 0) {
         setNotice(
           `Exam submitted. Provisional score: ${scorePercent}%. ` +
