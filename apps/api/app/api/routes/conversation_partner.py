@@ -1,3 +1,5 @@
+from typing import Optional
+
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
@@ -7,6 +9,7 @@ from app.api.routes.conversation import (
     allowed_recorded_audio_content_type,
     speech_to_text_http_error,
 )
+from app.data.curriculum import requires_pro
 from app.db.session import get_db
 from app.domain.conversation_partner import (
     DEFAULT_LEVEL,
@@ -26,6 +29,21 @@ from app.services.speech_to_text import SpeechToTextError, transcribe_recorded_a
 
 
 router = APIRouter()
+
+# Opening lines are static per topic, so their TTS is identical every time a
+# session is opened or resumed. Cache the synthesized data-URL per opening text
+# to avoid paying for the same TTS on every create/resume.
+_opening_audio_cache: dict[str, Optional[str]] = {}
+
+
+async def _opening_audio_for(topic) -> Optional[str]:
+    if topic.opening_line in _opening_audio_cache:
+        return _opening_audio_cache[topic.opening_line]
+    audio = await synthesize_partner_reply_audio(text=topic.opening_line)
+    # Only cache successful synthesis so a transient TTS failure can retry later.
+    if audio is not None:
+        _opening_audio_cache[topic.opening_line] = audio
+    return audio
 
 
 class CreatePartnerSessionPayload(BaseModel):
@@ -57,7 +75,17 @@ async def create_partner_session(
     if topic is None:
         raise HTTPException(status_code=404, detail="partner_topic_not_found")
 
-    BillingRepository(db).ensure_free_access(current_user.id)
+    billing = BillingRepository(db)
+    billing.ensure_free_access(current_user.id)
+
+    # Gate A2+ topics behind Pro, consistent with course and Conversation Coach
+    # access (A1 is free, A2-C1 require an active Pro subscription).
+    if requires_pro(topic.level_code):
+        if not current_user.is_admin and not billing.is_pro(current_user.id):
+            raise HTTPException(
+                status_code=403,
+                detail="conversation_partner_requires_pro",
+            )
 
     # Resume an unfinished session for this topic instead of creating a new one,
     # so abandoned attempts don't pile up. A fresh session is created only when
@@ -70,7 +98,7 @@ async def create_partner_session(
             language_code=payload.language_code,
         )
 
-    opening_audio = await synthesize_partner_reply_audio(text=topic.opening_line)
+    opening_audio = await _opening_audio_for(topic)
 
     return {
         "data": {
@@ -108,6 +136,14 @@ async def create_partner_audio_turn(
     if not allowed_recorded_audio_content_type(audio.content_type):
         raise HTTPException(status_code=422, detail="unsupported_audio_content_type")
 
+    # Reject out-of-minute users before spending on STT/LLM/TTS. The actual debit
+    # happens only after the turn is generated below, so a failed turn is never
+    # charged.
+    billing = BillingRepository(db)
+    billing.ensure_free_access(current_user.id)
+    if billing.minute_balance(current_user.id).total_minutes < 1:
+        raise HTTPException(status_code=402, detail="Conversation Partner minutes are empty")
+
     audio_bytes = await audio.read()
     try:
         transcription = await transcribe_recorded_audio(
@@ -117,15 +153,6 @@ async def create_partner_audio_turn(
         )
     except SpeechToTextError as exc:
         raise speech_to_text_http_error(exc) from exc
-
-    try:
-        BillingRepository(db).consume_minutes(
-            user_id=current_user.id,
-            requested_minutes=1,
-            related_session_id=session_id,
-        )
-    except InsufficientMinutesError as exc:
-        raise HTTPException(status_code=402, detail="Conversation Partner minutes are empty") from exc
 
     history = repository.history(session, opening_line=topic.opening_line)
     completed_turns = repository.completed_turns(session)
@@ -138,6 +165,15 @@ async def create_partner_audio_turn(
     )
 
     reply_audio = await synthesize_partner_reply_audio(text=reply.reply)
+
+    try:
+        billing.consume_minutes(
+            user_id=current_user.id,
+            requested_minutes=1,
+            related_session_id=session_id,
+        )
+    except InsufficientMinutesError as exc:
+        raise HTTPException(status_code=402, detail="Conversation Partner minutes are empty") from exc
 
     turn = repository.add_turn(
         session=session,

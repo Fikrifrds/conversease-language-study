@@ -6,6 +6,7 @@ import { CheckCircle2, Mic, MicOff, Sparkles, Square, Volume2 } from "lucide-rea
 import { ApiRequestError } from "@/lib/conversation-api";
 import {
   createPartnerSession,
+  fetchPartnerSession,
   fetchPartnerSummary,
   submitPartnerAudioTurn,
   type PartnerSummary,
@@ -40,9 +41,11 @@ function turnErrorMessage(error: unknown) {
 
 export function ConversationPartnerChat({
   topic,
+  resumeSessionId = null,
   onSessionEnd
 }: {
   topic: PartnerTopic;
+  resumeSessionId?: string | null;
   onSessionEnd?: () => void;
 }) {
   const [messages, setMessages] = useState<ChatMessage[]>([
@@ -56,6 +59,7 @@ export function ConversationPartnerChat({
   const [offTopicNote, setOffTopicNote] = useState(false);
   const [handsFree, setHandsFree] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [resuming, setResuming] = useState(Boolean(resumeSessionId));
   // The session begins only when the learner presses Start. Until then nothing
   // is spoken and the mic stays closed, so the AI never "talks first" before the
   // learner is ready. Start -> AI speaks the opening -> mic opens -> alternate.
@@ -88,6 +92,43 @@ export function ConversationPartnerChat({
       handsFreeRef.current = false;
       audioRef.current?.pause();
     };
+  }, []);
+
+  // Resume an unfinished session (e.g. after a page refresh mid-conversation):
+  // load the prior transcript and turn count so the chat continues seamlessly
+  // instead of restarting at 0 and losing the visible history. The learner
+  // presses "Lanjut Bicara" to continue speaking; we never auto-record on load.
+  useEffect(() => {
+    if (!resumeSessionId) {
+      return;
+    }
+    let cancelled = false;
+
+    async function hydrate(sessionId: string) {
+      try {
+        const detail = await fetchPartnerSession(sessionId);
+        if (cancelled || detail.messages.length === 0) {
+          return;
+        }
+        sessionIdRef.current = detail.sessionId;
+        setMessages(detail.messages.map((message) => ({ role: message.role, text: message.text })));
+        setCompletedTurns(detail.completedTurns);
+        setStarted(true);
+      } catch {
+        /* fall back to a fresh start if the open session can't be loaded */
+      } finally {
+        if (!cancelled) {
+          setResuming(false);
+        }
+      }
+    }
+
+    void hydrate(resumeSessionId);
+    return () => {
+      cancelled = true;
+    };
+    // Mount-only: the component remounts per topic via key={chat-<topic>}.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   function playAudio(dataUrl: string | null | undefined, onEnded?: () => void) {
@@ -327,7 +368,9 @@ export function ConversationPartnerChat({
         </div>
 
         <div className="border-t border-ink/10 p-5">
-          {!started ? (
+          {resuming ? (
+            <p className="text-sm font-medium text-ink/60">Memuat percakapan sebelumnya…</p>
+          ) : !started ? (
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <button
                 type="button"

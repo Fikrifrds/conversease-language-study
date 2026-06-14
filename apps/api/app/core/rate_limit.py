@@ -108,9 +108,15 @@ def rate_limit_rule(request: Request) -> Optional[tuple[str, int]]:
 
 
 def _is_conversation_turn_path(path: str) -> bool:
-    return path.startswith("/api/conversation-sessions/") and (
+    # Conversation Coach turns.
+    if path.startswith("/api/conversation-sessions/") and (
         path.endswith("/turns") or path.endswith("/turns/audio")
-    )
+    ):
+        return True
+    # Conversation Partner turns (each one costs STT + LLM + TTS).
+    if path.startswith("/api/conversation-partner/sessions/") and path.endswith("/turns/audio"):
+        return True
+    return False
 
 
 def rate_limit_key(request: Request, rule_name: str) -> str:

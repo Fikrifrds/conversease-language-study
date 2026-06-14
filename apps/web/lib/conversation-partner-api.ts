@@ -46,6 +46,8 @@ export type TopicProgress = {
   hasOpenSession: boolean;
   // Completed session whose transcript powers the history view, if any.
   sessionId: string | null;
+  // Unfinished session to resume in the chat, if any.
+  openSessionId: string | null;
 };
 
 export type PartnerSessionMessage = { role: "partner" | "user"; text: string };
@@ -53,6 +55,8 @@ export type PartnerSessionMessage = { role: "partner" | "user"; text: string };
 export type PartnerSessionDetail = {
   sessionId: string;
   messages: PartnerSessionMessage[];
+  completedTurns: number;
+  maxTurns: number | null;
   summary: {
     summary: string;
     indonesianExplanation: string;
@@ -210,6 +214,7 @@ type ApiTopicProgress = {
   best_score: number | null;
   has_open_session: boolean;
   session_id: string | null;
+  open_session_id: string | null;
 };
 
 export async function fetchTopicProgress(): Promise<TopicProgressMap> {
@@ -226,7 +231,8 @@ export async function fetchTopicProgress(): Promise<TopicProgressMap> {
       completed: value.completed,
       bestScore: value.best_score,
       hasOpenSession: value.has_open_session,
-      sessionId: value.session_id ?? null
+      sessionId: value.session_id ?? null,
+      openSessionId: value.open_session_id ?? null
     };
   }
   return out;
@@ -243,6 +249,8 @@ export async function fetchPartnerSession(sessionId: string): Promise<PartnerSes
   const payload = (await response.json()) as ApiResponse<{
     session_id: string;
     messages: { role: "partner" | "user"; text: string }[];
+    completed_turns: number;
+    max_turns: number | null;
     summary: {
       summary?: string;
       indonesian_explanation?: string;
@@ -253,6 +261,8 @@ export async function fetchPartnerSession(sessionId: string): Promise<PartnerSes
   return {
     sessionId: payload.data.session_id,
     messages: payload.data.messages,
+    completedTurns: payload.data.completed_turns,
+    maxTurns: payload.data.max_turns ?? null,
     summary:
       summary && summary.scores
         ? {

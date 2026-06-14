@@ -246,6 +246,9 @@ export function ConversationPartnerWorkspace() {
               <ConversationPartnerChat
                 key={`chat-${activeTopic.key}`}
                 topic={activeTopic}
+                resumeSessionId={
+                  replayKey === activeTopic.key ? null : activeProgress?.openSessionId ?? null
+                }
                 onSessionEnd={reloadProgress}
               />
             </section>

@@ -182,6 +182,7 @@ class ConversationPartnerRepository:
                     "best_score": None,
                     "has_open_session": False,
                     "session_id": None,
+                    "open_session_id": None,
                 },
             )
             summary = session.summary_json if isinstance(session.summary_json, dict) else None
@@ -198,6 +199,9 @@ class ConversationPartnerRepository:
                     entry["session_id"] = session.id
             else:
                 entry["has_open_session"] = True
+                # Expose the open session so the chat can resume its transcript.
+                if entry["open_session_id"] is None or session.turns:
+                    entry["open_session_id"] = session.id
         return progress
 
     def reset_topic(self, *, user_id: str, topic_key: str) -> int:
