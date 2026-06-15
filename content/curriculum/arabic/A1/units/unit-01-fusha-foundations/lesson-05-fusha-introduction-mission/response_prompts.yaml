@@ -1,9 +1,9 @@
 prompts:
   - prompt: Greet and say your name.
-    target_response: وعليكم السلام. اسمي أحمد.
+    target_response: مرحبًا. اسمي أحمد.
     acceptable_responses:
-      - وعليكم السلام. اسمي أحمد.
-      - السلام عليكم. اسمي أحمد.
+      - مرحبًا. اسمي أحمد.
+      - أهلًا. اسمي أحمد.
   - prompt: Say your country.
     target_response: أنا من إندونيسيا.
     acceptable_responses:
@@ -13,4 +13,3 @@ prompts:
     acceptable_responses:
       - لا أفهم. أعد من فضلك.
       - عفوا، لا أفهم. أعد من فضلك.
-

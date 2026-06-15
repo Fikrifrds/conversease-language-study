@@ -3,10 +3,10 @@
 Write a four-line self-introduction:
 
 ```txt
-السلام عليكم.
+مرحبًا.
 اسمي أحمد.
 أنا من إندونيسيا.
-الحمد لله.
+أنا أتعلم العربية.
 ```
 
 Then add one help phrase:
@@ -14,4 +14,3 @@ Then add one help phrase:
 ```txt
 أعد من فضلك.
 ```
-

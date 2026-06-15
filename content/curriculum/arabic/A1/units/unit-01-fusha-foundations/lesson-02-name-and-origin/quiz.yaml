@@ -4,7 +4,7 @@ questions:
     options:
       - اسمي ...
       - من أين أنت؟
-      - الحمد لله
+      - مرحبًا
     correct_answer: اسمي ...
   - key: from_indonesia
     prompt: What does أنا من إندونيسيا mean?
@@ -13,4 +13,3 @@ questions:
       - Nama saya Indonesia.
       - Saya belajar bahasa Arab.
     correct_answer: Saya dari Indonesia.
-

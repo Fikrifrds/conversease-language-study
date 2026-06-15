@@ -12,6 +12,5 @@ Copy the four instruction words:
 Then write one response:
 
 ```txt
-نعم يا أستاذ.
+نعم يا معلم.
 ```
-

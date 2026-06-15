@@ -5,7 +5,7 @@ status: beta
 estimated_minutes: 12
 conversation_situation: completing_a_short_formal_arabic_introduction
 conversation_goal: Complete a short formal Arabic introduction using greetings, name, origin, and clarification phrases.
-grammar_summary: Combine السلام عليكم, اسمي ..., أنا من ..., لا أفهم, and أعد من فضلك in one simple mission conversation.
+grammar_summary: Combine مرحبًا, اسمي ..., أنا من ..., لا أفهم, and أعد من فضلك in one simple mission conversation.
 required_sections:
   - conversation_goal
   - situation_setup
@@ -23,4 +23,3 @@ completion_rules:
   quiz_required: true
   speaking_attempt_required: true
   minimum_score: 60
-

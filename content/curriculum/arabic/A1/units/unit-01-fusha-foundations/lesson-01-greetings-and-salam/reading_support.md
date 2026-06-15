@@ -3,12 +3,11 @@
 Read this short exchange:
 
 ```txt
-السلام عليكم.
-وعليكم السلام.
-أنا بخير، الحمد لله.
+مرحبًا.
+أهلًا وسهلًا.
+أنا بخير، شكرًا.
 ```
 
-Question: Which line answers the greeting?
+Question: Which line can answer the greeting?
 
-Answer: وعليكم السلام.
-
+Answer: أهلًا وسهلًا.

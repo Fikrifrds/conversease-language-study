@@ -10,6 +10,5 @@ Write two helpful classroom requests:
 Then write one meaning question:
 
 ```txt
-ما معنى الحديث؟
+ما معنى الكلمة؟
 ```
-

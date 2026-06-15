@@ -2,7 +2,7 @@
 
 ## Repeat
 
-1. وعليكم السلام.
+1. مرحبًا.
 2. اسمي أحمد.
 3. أنا من إندونيسيا.
 4. لا أفهم.
@@ -13,4 +13,3 @@
 - Keep the long vowel in **إندونيسيا** smooth.
 - Pronounce **أحمد** with a clear hamzah and **ح**.
 - Pause after **عفوا** before saying **لا أفهم**.
-

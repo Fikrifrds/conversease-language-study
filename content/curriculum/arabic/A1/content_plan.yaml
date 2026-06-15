@@ -12,8 +12,8 @@ units:
     main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.
     lessons:
       - lesson_key: lesson-01-greetings-and-salam
-        slug: arabic-greetings-and-salam
-        title: Greetings and Salam
+        slug: arabic-formal-greetings
+        title: Formal Greetings
         status: beta
       - lesson_key: lesson-02-name-and-origin
         slug: arabic-name-and-origin

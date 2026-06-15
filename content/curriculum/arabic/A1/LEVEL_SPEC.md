@@ -9,5 +9,4 @@ Learners can recognize and produce very simple Arabic Fusha phrases for greeting
 - Fusha / Modern Standard Arabic, not amiyah.
 - Indonesian explanations for adult learners.
 - Arabic script first, with transliteration support where useful.
-- Practical conversation plus early exposure to formal Islamic-study register.
-
+- Practical conversation plus early exposure to formal classroom and reading language.

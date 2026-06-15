@@ -2,8 +2,7 @@ Greet someone formally in Arabic Fusha and answer a simple "how are you" questio
 
 Learners should be able to say:
 
-- السلام عليكم
-- وعليكم السلام
+- مرحبًا
+- أهلًا وسهلًا
 - كيف حالك؟
-- أنا بخير، الحمد لله.
-
+- أنا بخير، شكرًا.

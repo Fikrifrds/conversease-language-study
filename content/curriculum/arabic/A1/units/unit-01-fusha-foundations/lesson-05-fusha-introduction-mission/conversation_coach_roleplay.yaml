@@ -1,22 +1,21 @@
 scenario_key: arabic_fusha_introduction_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: السلام عليكم. ما اسمك؟
+opening_line: مرحبًا. ما اسمك؟
 learner_goal: Complete a short formal Arabic introduction and ask for repetition when needed.
 max_turns: 5
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: السلام عليكم. ما اسمك؟
-    hint: Balas salam dan sebutkan nama.
-    sample_answer: وعليكم السلام. اسمي أحمد.
+  - coach: مرحبًا. ما اسمك؟
+    hint: Balas sapaan dan sebutkan nama.
+    sample_answer: مرحبًا. اسمي أحمد.
     focus: Greeting and name
     expected_keywords:
-      - وعليكم
-      - السلام
+      - مرحبًا
       - اسمي
-    indonesian_explanation: Gabungkan balasan salam dengan اسمي untuk menyebut nama.
+    indonesian_explanation: Gabungkan sapaan umum dengan اسمي untuk menyebut nama.
   - coach: من أين أنت؟
     hint: Sebutkan asal negara.
     sample_answer: أنا من إندونيسيا.
@@ -37,8 +36,7 @@ turns:
       - فضلك
     indonesian_explanation: Ini frasa aman saat kamu belum mengerti instruksi.
 target_phrases:
-  - السلام عليكم
-  - وعليكم السلام
+  - مرحبًا
   - اسمي ...
   - أنا من إندونيسيا
   - لا أفهم
@@ -50,4 +48,3 @@ rubric:
     minimum_score: 60
   grammar:
     minimum_score: 55
-

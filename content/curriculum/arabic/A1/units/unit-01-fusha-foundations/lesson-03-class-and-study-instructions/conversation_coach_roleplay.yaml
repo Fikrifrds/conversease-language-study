@@ -9,13 +9,13 @@ feedback_level:
   pro: detailed
 turns:
   - coach: اقرأ الجملة.
-    hint: "Jawab bahwa kamu siap: نعم يا أستاذ."
-    sample_answer: نعم يا أستاذ.
+    hint: "Jawab bahwa kamu siap: نعم يا معلم."
+    sample_answer: نعم يا معلم.
     focus: Polite classroom response
     expected_keywords:
       - نعم
-      - أستاذ
-    indonesian_explanation: نعم يا أستاذ adalah respons sopan kepada guru laki-laki.
+      - معلم
+    indonesian_explanation: نعم يا معلم adalah respons sopan kepada guru laki-laki.
   - coach: استمع ثم أعد.
     hint: Ulangi instruksi pendek ini.
     sample_answer: استمع ثم أعد.
@@ -38,7 +38,7 @@ target_phrases:
   - استمع
   - أعد
   - اكتب
-  - نعم يا أستاذ
+  - نعم يا معلم
 rubric:
   speaking:
     minimum_score: 60

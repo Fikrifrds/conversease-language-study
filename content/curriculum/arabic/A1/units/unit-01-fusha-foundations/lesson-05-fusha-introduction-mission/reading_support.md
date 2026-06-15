@@ -3,7 +3,7 @@
 Read the mission script:
 
 ```txt
-وعليكم السلام.
+مرحبًا.
 اسمي أحمد.
 أنا من إندونيسيا.
 لا أفهم.
@@ -13,4 +13,3 @@ Read the mission script:
 Question: Which line asks for repetition?
 
 Answer: أعد من فضلك.
-

@@ -1,11 +1,11 @@
 questions:
   - key: reply_to_salam
-    prompt: Which phrase replies to السلام عليكم?
+    prompt: Which phrase can reply to مرحبًا?
     options:
-      - وعليكم السلام
+      - أهلًا وسهلًا
       - أنا بخير
       - كيف حالك؟
-    correct_answer: وعليكم السلام
+    correct_answer: أهلًا وسهلًا
   - key: how_are_you
     prompt: What does كيف حالك؟ mean?
     options:
@@ -13,4 +13,3 @@ questions:
       - Siapa namamu?
       - Dari mana kamu?
     correct_answer: Bagaimana kabarmu?
-

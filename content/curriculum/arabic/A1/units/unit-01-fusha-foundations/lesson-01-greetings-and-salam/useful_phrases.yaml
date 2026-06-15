@@ -1,17 +1,16 @@
 phrases:
-  - phrase: السلام عليكم
-    meaning_id: Semoga keselamatan atas kalian.
-    usage_note: Use this to greet someone politely in a Muslim setting.
-  - phrase: وعليكم السلام
-    meaning_id: Dan semoga keselamatan atas kalian juga.
-    usage_note: Use this to reply to salam.
+  - phrase: مرحبًا
+    meaning_id: Halo.
+    usage_note: Use this as a neutral greeting.
+  - phrase: أهلًا وسهلًا
+    meaning_id: Selamat datang / halo juga.
+    usage_note: Use this as a warm formal reply.
   - phrase: كيف حالك؟
     meaning_id: Bagaimana kabarmu?
     usage_note: Ask one person how they are.
-  - phrase: أنا بخير، الحمد لله
-    meaning_id: Saya baik, alhamdulillah.
+  - phrase: أنا بخير، شكرًا
+    meaning_id: Saya baik, terima kasih.
     usage_note: A simple polite answer.
   - phrase: أحسنت
     meaning_id: Bagus sekali.
     usage_note: Teacher feedback for a good answer.
-

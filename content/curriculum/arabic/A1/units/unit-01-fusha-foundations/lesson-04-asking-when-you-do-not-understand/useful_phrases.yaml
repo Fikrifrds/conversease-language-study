@@ -11,7 +11,6 @@ phrases:
   - phrase: ما معنى ...؟
     meaning_id: Apa makna ...?
     usage_note: Ask for the meaning of a word or phrase.
-  - phrase: الحديث
-    meaning_id: Hadits.
-    usage_note: A key Islamic-study word.
-
+  - phrase: الكلمة
+    meaning_id: Kata itu.
+    usage_note: A simple classroom word for asking meaning.

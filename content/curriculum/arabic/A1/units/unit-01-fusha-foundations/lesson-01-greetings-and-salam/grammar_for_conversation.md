@@ -15,5 +15,4 @@ Pattern:
 كيف حالك؟
 ```
 
-For now, memorize the full phrase **أنا بخير، الحمد لله** as one polite answer.
-
+For now, memorize the full phrase **أنا بخير، شكرًا** as one polite answer.

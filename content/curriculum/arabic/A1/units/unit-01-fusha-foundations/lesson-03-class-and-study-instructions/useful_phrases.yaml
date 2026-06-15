@@ -11,7 +11,6 @@ phrases:
   - phrase: اكتب
     meaning_id: Tulislah.
     usage_note: Teacher instruction for writing.
-  - phrase: نعم يا أستاذ
-    meaning_id: Baik, Ustadz.
+  - phrase: نعم يا معلم
+    meaning_id: Baik, Pak Guru.
     usage_note: Polite classroom response to a male teacher.
-

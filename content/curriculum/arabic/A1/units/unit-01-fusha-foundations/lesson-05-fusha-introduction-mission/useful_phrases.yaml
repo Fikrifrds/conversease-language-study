@@ -1,7 +1,7 @@
 phrases:
-  - phrase: السلام عليكم
-    meaning_id: Semoga keselamatan atas kalian.
-    usage_note: Start the conversation politely.
+  - phrase: مرحبًا
+    meaning_id: Halo.
+    usage_note: Start the conversation politely with a general greeting.
   - phrase: اسمي ...
     meaning_id: Nama saya ...
     usage_note: Introduce your name.
@@ -14,4 +14,3 @@ phrases:
   - phrase: أعد من فضلك
     meaning_id: Ulangi, tolong.
     usage_note: Ask for repetition politely.
-

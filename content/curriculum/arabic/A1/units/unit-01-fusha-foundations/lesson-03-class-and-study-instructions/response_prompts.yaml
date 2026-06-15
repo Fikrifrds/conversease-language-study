@@ -8,7 +8,6 @@ prompts:
     acceptable_responses:
       - استمع ثم أعد
   - prompt: Respond politely to a teacher.
-    target_response: نعم يا أستاذ
+    target_response: نعم يا معلم
     acceptable_responses:
-      - نعم يا أستاذ
-
+      - نعم يا معلم

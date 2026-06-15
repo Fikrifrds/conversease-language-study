@@ -1,11 +1,11 @@
 lesson_key: lesson-01-greetings-and-salam
-slug: arabic-greetings-and-salam
-title: Greetings and Salam
+slug: arabic-formal-greetings
+title: Formal Greetings
 status: beta
 estimated_minutes: 10
-conversation_situation: greeting_a_teacher_in_a_study_circle
+conversation_situation: greeting_a_teacher_in_arabic_class
 conversation_goal: Greet someone formally in Arabic Fusha and answer a simple "how are you" question.
-grammar_summary: Use السلام عليكم for greeting, وعليكم السلام for reply, and أنا بخير، الحمد لله to answer politely.
+grammar_summary: Use مرحبًا or صباح الخير for greeting, and أنا بخير، شكرًا to answer politely.
 required_sections:
   - conversation_goal
   - situation_setup
@@ -23,4 +23,3 @@ completion_rules:
   quiz_required: true
   speaking_attempt_required: true
   minimum_score: 60
-

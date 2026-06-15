@@ -2,9 +2,8 @@ Complete a short formal Arabic introduction using greetings, name, origin, and c
 
 Learners should be able to say:
 
-- السلام عليكم
+- مرحبًا
 - اسمي ...
 - أنا من إندونيسيا
 - لا أفهم
 - أعد من فضلك
-

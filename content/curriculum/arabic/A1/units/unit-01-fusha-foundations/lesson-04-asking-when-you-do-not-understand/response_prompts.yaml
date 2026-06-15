@@ -7,8 +7,7 @@ prompts:
     target_response: أعد من فضلك
     acceptable_responses:
       - أعد من فضلك
-  - prompt: Ask the meaning of الحديث.
-    target_response: ما معنى الحديث؟
+  - prompt: Ask the meaning of الكلمة.
+    target_response: ما معنى الكلمة؟
     acceptable_responses:
-      - ما معنى الحديث؟
-
+      - ما معنى الكلمة؟

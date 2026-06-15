@@ -1,8 +1,7 @@
 # Transcript Translation
 
-- **Ustadh:** السلام عليكم. -> Semoga keselamatan atas kalian.
-- **Fatimah:** وعليكم السلام. -> Dan semoga keselamatan atas kalian juga.
-- **Ustadh:** كيف حالك اليوم؟ -> Bagaimana kabarmu hari ini?
-- **Fatimah:** أنا بخير، الحمد لله. -> Saya baik, alhamdulillah.
-- **Ustadh:** أحسنتِ. -> Bagus sekali.
-
+- **Muallim:** مرحبًا. -> Halo.
+- **Fatimah:** أهلًا وسهلًا. -> Selamat datang / halo juga.
+- **Muallim:** كيف حالك اليوم؟ -> Bagaimana kabarmu hari ini?
+- **Fatimah:** أنا بخير، شكرًا. -> Saya baik, terima kasih.
+- **Muallim:** أحسنتِ. -> Bagus sekali.

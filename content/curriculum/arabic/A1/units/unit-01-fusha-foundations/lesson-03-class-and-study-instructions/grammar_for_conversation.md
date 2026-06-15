@@ -13,8 +13,7 @@ Pattern:
 
 ```txt
 command word
-نعم يا أستاذ
+نعم يا معلم
 ```
 
 At A1, focus on recognizing the command and responding politely.
-

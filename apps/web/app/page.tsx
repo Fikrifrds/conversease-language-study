@@ -44,7 +44,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
               Belajar bahasa lewat percakapan terarah. Mulai dari English speaking, lalu masuk ke
-              Arabic Fusha beta untuk memahami dialog formal, kajian, dan teks dasar.
+              Arabic Fusha beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ActionButton href="/register" icon={ArrowRight} tone="light">
@@ -110,7 +110,7 @@ export default function HomePage() {
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
             ["English Conversation", "Mulai dari greeting, self-introduction, daily routine, simple questions, sampai evaluasi A1."],
-            ["Arabic Fusha Beta", "Fondasi Fusha untuk salam, perkenalan, instruksi kajian, dan frasa ketika belum paham."],
+            ["Arabic Fusha Beta", "Fondasi Fusha untuk sapaan umum, perkenalan, instruksi kelas, dan frasa ketika belum paham."],
             ["Bicara dengan Jelas", "Ulangi frasa berguna dan bangun rasa percaya diri pelafalan langkah demi langkah."],
             ["Feedback Percakapan", "Versi lebih baik, penjelasan Indonesia, skor, dan latihan berikutnya."]
           ].map(([title, text]) => (

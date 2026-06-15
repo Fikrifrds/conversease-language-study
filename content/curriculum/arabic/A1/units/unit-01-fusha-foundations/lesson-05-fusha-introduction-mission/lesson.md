@@ -4,9 +4,8 @@ After this lesson, learners can complete a short formal Arabic introduction and 
 
 ## Situation
 
-Kamu mengikuti kelas/kajian berbahasa Arab sederhana. Mulai dengan salam, perkenalkan diri, sebutkan asal, lalu minta pengulangan ketika belum paham.
+Kamu mengikuti kelas bahasa Arab sederhana. Mulai dengan sapaan umum, perkenalkan diri, sebutkan asal, lalu minta pengulangan ketika belum paham.
 
 ## Learning Notes
 
 Misi ini menggabungkan semua frasa utama dari unit pertama. Fokusnya bukan bicara panjang, tetapi tidak freezing saat diminta merespons dalam Fusha.
-

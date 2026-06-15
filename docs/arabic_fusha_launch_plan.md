@@ -7,9 +7,9 @@ language-learning brand with distinct tracks:
 
 - Conversease English: practical speaking for work, study, travel, and everyday
   confidence.
-- Conversease Arabic Fusha: formal Arabic for Indonesian Muslim learners who
-  want to understand structured conversation, study circles, Saudi scholars,
-  hadith language, and foundational Islamic texts.
+- Conversease Arabic Fusha: formal Arabic for Indonesian learners who want to
+  understand structured conversation, classroom instructions, short readings,
+  and formal spoken Arabic.
 
 Arabic Fusha is not positioned as street dialect Arabic. It should clearly say:
 
@@ -22,7 +22,7 @@ Arabic Fusha is not positioned as street dialect Arabic. It should clearly say:
 Working promise:
 
 > Belajar Bahasa Arab Fusha secara bertahap: dari bunyi, kosakata, dan dialog
-> formal, sampai mulai memahami kajian, ungkapan ulama, dan teks hadits dasar.
+> formal, sampai mulai memahami instruksi kelas dan bacaan pendek.
 
 ## Curriculum Direction
 
@@ -36,11 +36,11 @@ Arabic needs an extra foundation layer that English does not need:
    - Greetings, introductions, origin, family, study, class, mosque, book,
      teacher/student interactions, asking for repetition.
 3. Formal listening
-   - Common study-circle phrases: `قال الشيخ`, `معنى الحديث`, `الدليل على ذلك`,
-     `هذه مسألة مهمة`, `انتبه`, `نعم`, `أحسنت`.
-4. Hadith and Islamic register
-   - Language analysis of short, safe texts.
-   - Avoid making legal/theological claims without human review.
+   - Common class and study phrases: `اقرأ النص`, `استمع جيدًا`, `أعد الجملة`,
+     `ما معنى الكلمة`, `انتبه`, `نعم`, `أحسنت`.
+4. Religious register, deferred
+   - Do not ship hadith, dhikr, or religious phrases with system TTS voices yet.
+   - Add this later only with approved custom/human audio and religious review.
 
 The first implementation should be a small pilot:
 
@@ -57,7 +57,7 @@ Suggested first unit:
 
 1. Sapaan Fusha dan adab memulai percakapan
 2. Menyebut nama dan asal
-3. Instruksi kelas dan kajian
+3. Instruksi kelas dan belajar
 4. Bertanya saat belum paham
 5. Mini mission: perkenalan Fusha singkat
 
@@ -151,7 +151,8 @@ Long term:
 
 - Curate Arabic TTS voices separately from English voices.
 - Add human QA checklist for Arabic audio.
-- Add religious-content review for hadith/kajian lessons.
+- Add religious-content review and custom/human audio before any hadith, dhikr,
+  or religious-register lessons.
 
 ## First Concrete Build Task
 
@@ -163,4 +164,3 @@ Start with a narrow implementation PR:
    and eventually in web course data.
 4. Do not change paid access behavior yet; Arabic beta uses existing Pro until
    product-scoped entitlements are implemented.
-

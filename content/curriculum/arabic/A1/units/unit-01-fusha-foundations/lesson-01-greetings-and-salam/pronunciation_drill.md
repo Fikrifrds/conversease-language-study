@@ -2,15 +2,14 @@
 
 ## Repeat
 
-1. السلام عليكم.
-2. وعليكم السلام.
+1. مرحبًا.
+2. أهلًا وسهلًا.
 3. كيف حالك؟
-4. أنا بخير، الحمد لله.
+4. أنا بخير، شكرًا.
 5. أحسنت.
 
 ## Focus
 
-- Stretch the long vowel in **السلام**.
-- Keep **ح** in **الحمد** from the throat, not like Indonesian "h" only.
-- Do not rush **عليكم**.
-
+- Keep the final sound in **مرحبًا** light.
+- Say **أهلًا وسهلًا** slowly as two words.
+- Do not rush **شكرًا**.

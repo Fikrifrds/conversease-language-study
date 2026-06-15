@@ -1,4 +1,4 @@
-Understand and respond to basic Arabic Fusha instructions used in class or a study circle.
+Understand and respond to basic Arabic Fusha instructions used in class or a guided lesson.
 
 Learners should be able to recognize:
 
@@ -7,4 +7,3 @@ Learners should be able to recognize:
 - أعد
 - اكتب
 - افهم
-
