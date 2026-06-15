@@ -192,11 +192,16 @@ export function ConversationPartnerChat({
       setOffTopicNote(!result.onTopic);
 
       if (result.shouldEnd) {
-        playAudio(result.partnerAudio);
         handsFreeRef.current = false;
         setHandsFree(false);
         setEnded(true);
-        void loadSummary(activeSessionId);
+        // Let the closing line play to the very end BEFORE loading the summary —
+        // loadSummary notifies the workspace, which swaps this chat for the
+        // read-only history and unmounts us. Deferring it until the audio
+        // finishes (or fails) keeps the goodbye from being cut off mid-sentence.
+        playAudio(result.partnerAudio, () => {
+          void loadSummary(activeSessionId);
+        });
       } else {
         // Hands-free: listen again once the AI finishes speaking.
         playAudio(result.partnerAudio, () => {

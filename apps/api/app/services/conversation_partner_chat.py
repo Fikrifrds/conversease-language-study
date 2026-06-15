@@ -171,10 +171,11 @@ async def summarize_session(
 
 
 def _min_turns_before_end(topic: PartnerTopic) -> int:
-    """Minimum learner turns before the partner may end. Kept close to the cap so
-    the conversation stays substantial — the partner can't wrap up at turn 3-4 the
-    moment the goals are first touched (which felt abruptly short)."""
-    return max(len(topic.goals), topic.max_turns - 2)
+    """Minimum learner turns before the partner may end. One turn per goal plus a
+    short buffer: long enough that the chat doesn't stop the instant goals are
+    touched, but not so long that it pads the topic with extra questions. Once the
+    minimum is reached and the goals are covered, the partner closes gracefully."""
+    return min(len(topic.goals) + 1, topic.max_turns - 1)
 
 
 def _reply_system_prompt(
@@ -199,10 +200,10 @@ def _reply_system_prompt(
         )
     elif can_end_now:
         closing_directive = (
-            "- The conversation may now end if it feels complete. IF you choose to end, close "
-            "gracefully in role (warm reaction + thank them + say goodbye), do NOT end on a "
-            "question, and set should_end to true. OTHERWISE keep it going with one more "
-            "follow-up question and set should_end to false.\n"
+            "- The goals are essentially covered. PREFER to close now rather than inventing extra "
+            "questions: react warmly, then close gracefully in role (thank them + say goodbye), do "
+            "NOT end on a question, and set should_end to true. Only continue (with ONE more "
+            "on-topic question, should_end false) if a goal is clearly still unmet.\n"
         )
     else:
         closing_directive = (
@@ -233,6 +234,9 @@ def _reply_system_prompt(
         "briefly share about yourself, immediately ask about a DIFFERENT new detail.\n"
         "- Work through the goals ONE AT A TIME. Cover only the next unmet goal in each reply; do "
         "not rush to finish all goals in one or two turns.\n"
+        "- Keep every question tied to THIS topic and its goals. Do not interrogate the learner "
+        "with a long string of unrelated questions or wander into tangents. Once the goals are "
+        "covered, wrap up rather than inventing new questions.\n"
         "- Stay strictly on this topic. If the learner drifts off-topic, gently and briefly "
         "steer back to the topic in role. Never start a new unrelated topic.\n"
         "- Keep your reply natural for the role but matched to the learner's level. One short turn "

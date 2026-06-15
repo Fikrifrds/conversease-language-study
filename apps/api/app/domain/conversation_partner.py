@@ -68,7 +68,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "thank you",
         ),
         opening_line="Hi! Welcome to the cafe. What can I get you today?",
-        max_turns=10,
+        max_turns=8,
     ),
     PartnerTopic(
         key="meet-a-new-friend",
@@ -89,7 +89,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "how about you",
         ),
         opening_line="Hi! Good morning. I am a new classmate here. What is your name?",
-        max_turns=10,
+        max_turns=8,
     ),
     PartnerTopic(
         key="ask-for-directions",
@@ -112,7 +112,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "thank you",
         ),
         opening_line="Hello! You look a bit lost. Do you need any help?",
-        max_turns=10,
+        max_turns=8,
     ),
     PartnerTopic(
         key="talk-about-your-day",
@@ -134,7 +134,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "o'clock",
         ),
         opening_line="Hey! How is your day going so far?",
-        max_turns=10,
+        max_turns=8,
     ),
     PartnerTopic(
         key="make-weekend-plans",
@@ -156,7 +156,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "let's",
         ),
         opening_line="Hi! Do you want to do something this weekend?",
-        max_turns=11,
+        max_turns=9,
     ),
     PartnerTopic(
         key="talk-about-yesterday",
@@ -178,7 +178,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "what about you",
         ),
         opening_line="Hey! How was your day yesterday?",
-        max_turns=11,
+        max_turns=9,
     ),
     PartnerTopic(
         key="buy-a-ticket",
@@ -200,7 +200,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "thank you",
         ),
         opening_line="Hello! Where would you like to go today?",
-        max_turns=11,
+        max_turns=9,
     ),
     PartnerTopic(
         key="work-clarification",
@@ -222,7 +222,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "I'll",
         ),
         opening_line="Hi. Can you help me with a quick task today?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="give-your-opinion",
@@ -244,7 +244,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "I agree",
         ),
         opening_line="Hey, I have an idea for our class project. What do you think?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="make-a-polite-request",
@@ -266,7 +266,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "thank you",
         ),
         opening_line="Hi! Do you need any help with something today?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="run-a-short-meeting",
@@ -288,7 +288,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "next steps",
         ),
         opening_line="Hi everyone. We have 10 minutes. What would you like to cover today?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="disagree-politely",
@@ -310,7 +310,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "that could work",
         ),
         opening_line="I think we should change the plan. Do you agree?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="present-an-idea",
@@ -332,7 +332,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "would you be open to",
         ),
         opening_line="Hi. You mentioned you have a proposal. Can you walk me through it?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="ask-tactful-questions",
@@ -354,7 +354,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "thank you for clarifying",
         ),
         opening_line="Thanks for joining. We have a few details to align. What would you like to clarify first?",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="handle-strong-feedback",
@@ -376,7 +376,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "does that meet your expectations",
         ),
         opening_line="I want to be honest: the last update was not clear enough.",
-        max_turns=12,
+        max_turns=10,
     ),
     PartnerTopic(
         key="negotiate-scope",
@@ -398,7 +398,7 @@ PARTNER_TOPICS: Tuple[PartnerTopic, ...] = (
             "let's agree on",
         ),
         opening_line="Can you also add a few more features before the deadline?",
-        max_turns=12,
+        max_turns=10,
     ),
 )
 

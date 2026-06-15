@@ -175,7 +175,7 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         self.assertTrue(reply.should_end)
         system_prompt = provider.last_messages[0].content
         self.assertNotIn("FINAL EXCHANGE", system_prompt)
-        self.assertIn("may now end", system_prompt)
+        self.assertIn("PREFER to close", system_prompt)
         self.assertIn("do NOT end on a question", system_prompt)
 
     def test_prompt_forbids_repeating_answered_questions(self):
@@ -218,7 +218,7 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         self.assertFalse(reply.should_end)
         system_prompt = provider.last_messages[0].content
         self.assertNotIn("FINAL EXCHANGE", system_prompt)
-        self.assertNotIn("may now end", system_prompt)
+        self.assertNotIn("PREFER to close", system_prompt)
         self.assertIn("follow-up question", system_prompt)
 
     def test_falls_back_when_no_provider(self):
