@@ -6,11 +6,14 @@ import {
   BookOpen,
   ChevronDown,
   CheckCircle2,
+  ClipboardList,
   Clock3,
   ExternalLink,
   FileText,
   Headphones,
+  History,
   ListChecks,
+  Mail,
   RefreshCcw,
   RotateCcw,
   Save,
@@ -21,7 +24,6 @@ import {
   XCircle,
   type LucideIcon
 } from "lucide-react";
-import type { ReactNode } from "react";
 import type { AuthUser } from "@/lib/auth-api";
 import {
   generateAdminLessonAudio,
@@ -57,7 +59,8 @@ const audioSpeedStorageKey = "conversease.admin_audio_speed";
 const statusOptions = ["draft", "review", "published", "archived"];
 const bulkAudioMaxAttempts = 2;
 
-type Tab = "readiness" | "curriculum" | "email";
+type Tab = "readiness" | "curriculum" | "lessonAudio" | "examAudio" | "email" | "changelog";
+type LanguageFilter = "all" | string;
 type BulkAudioQueueStatus = "pending" | "running" | "done" | "failed" | "skipped";
 
 type BulkAudioQueueItem = {
@@ -75,6 +78,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [adminName, setAdminName] = useState(adminUser.name || adminUser.email);
   const [summary, setSummary] = useState<AdminCmsSummary | null>(null);
   const [tab, setTab] = useState<Tab>("readiness");
+  const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<AdminEmailTemplate | null>(null);
   const [audioSettings, setAudioSettings] = useState<AdminAudioSettings | null>(null);
@@ -90,8 +94,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
   const [generatingExamTemplateId, setGeneratingExamTemplateId] = useState("");
   const [generatingExamItemId, setGeneratingExamItemId] = useState("");
+  const [isLoadingAudioSettings, setIsLoadingAudioSettings] = useState(false);
   const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
   const [isLoadingExamTemplates, setIsLoadingExamTemplates] = useState(false);
+  const [hasLoadedExamTemplates, setHasLoadedExamTemplates] = useState(false);
   const [bulkAudioQueue, setBulkAudioQueue] = useState<BulkAudioQueueItem[]>([]);
   const [isBulkGeneratingAudio, setIsBulkGeneratingAudio] = useState(false);
 
@@ -163,7 +169,19 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  useEffect(() => {
+    if (tab === "lessonAudio" || tab === "examAudio") {
+      void loadAudioSettings();
+    }
+    if (tab === "examAudio") {
+      void loadExamAudioTemplates();
+    }
+    // Section data is loaded lazily to keep the first CMS screen lighter.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tab]);
+
   const validationOk = (summary?.curriculum.validationIssues.length ?? 1) === 0;
+  const readinessLevels = summary?.curriculum.readinessLevels ?? [];
 
   async function loadSummary() {
     setIsLoading(true);
@@ -171,19 +189,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     setError("");
 
     try {
-      const [nextSummary, nextAudioSettings, nextExamTemplates] = await Promise.all([
-        getAdminCmsSummary(),
-        getAdminAudioSettings(),
-        listAdminExamAudioTemplates()
-      ]);
+      const nextSummary = await getAdminCmsSummary();
       setSummary(nextSummary);
-      setAudioSettings(nextAudioSettings);
-      setExamAudioTemplates(nextExamTemplates);
-      setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
-      setAudioVoiceId((current) => current || storedAudioVoice(nextAudioSettings.defaultVoiceId));
-      setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
-      setSelectedLesson(nextSummary.curriculum.lessons[0] ?? null);
-      setSelectedTemplate(nextSummary.emailTemplates[0] ?? null);
+      setSelectedLesson((current) => current ?? nextSummary.curriculum.lessons[0] ?? null);
+      setSelectedTemplate((current) => current ?? nextSummary.emailTemplates[0] ?? null);
       setMessage("CMS content berhasil dimuat.");
     } catch {
       setError("CMS belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
@@ -192,10 +201,37 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     }
   }
 
+  async function loadAudioSettings() {
+    if (audioSettings || isLoadingAudioSettings) {
+      return;
+    }
+
+    setIsLoadingAudioSettings(true);
+    try {
+      const nextAudioSettings = await getAdminAudioSettings();
+      setAudioSettings(nextAudioSettings);
+      setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
+      setAudioVoiceId((current) => current || storedAudioVoice(nextAudioSettings.defaultVoiceId));
+      setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
+    } catch {
+      setError("Audio settings belum bisa dimuat.");
+    } finally {
+      setIsLoadingAudioSettings(false);
+    }
+  }
+
+  async function loadExamAudioTemplates() {
+    if (hasLoadedExamTemplates || isLoadingExamTemplates) {
+      return;
+    }
+    await reloadExamAudioTemplates();
+  }
+
   async function reloadExamAudioTemplates() {
     setIsLoadingExamTemplates(true);
     try {
       setExamAudioTemplates(await listAdminExamAudioTemplates());
+      setHasLoadedExamTemplates(true);
     } finally {
       setIsLoadingExamTemplates(false);
     }
@@ -497,78 +533,145 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       </section>
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-        <div className="flex flex-wrap gap-2">
-          <TabButton active={tab === "readiness"} icon={ListChecks} onClick={() => setTab("readiness")}>
-            Readiness
-          </TabButton>
-          <TabButton active={tab === "curriculum"} icon={BookOpen} onClick={() => setTab("curriculum")}>
-            Curriculum
-          </TabButton>
-          <TabButton active={tab === "email"} icon={FileText} onClick={() => setTab("email")}>
-            Email Templates
-          </TabButton>
+        <div className="grid gap-5 lg:grid-cols-[240px_minmax(0,1fr)]">
+          <nav className="flex gap-2 overflow-x-auto pb-1 lg:block lg:space-y-2 lg:overflow-visible lg:pb-0">
+            <SectionNavButton
+              active={tab === "readiness"}
+              icon={ListChecks}
+              label="Readiness"
+              description="Status konten per bahasa"
+              onClick={() => setTab("readiness")}
+            />
+            <SectionNavButton
+              active={tab === "curriculum"}
+              icon={BookOpen}
+              label="Curriculum"
+              description="Edit metadata lesson"
+              onClick={() => setTab("curriculum")}
+            />
+            <SectionNavButton
+              active={tab === "lessonAudio"}
+              icon={Headphones}
+              label="Lesson Audio"
+              description="Generate audio lesson"
+              onClick={() => setTab("lessonAudio")}
+            />
+            <SectionNavButton
+              active={tab === "examAudio"}
+              icon={ClipboardList}
+              label="Exam Audio"
+              description="Audio untuk exam"
+              onClick={() => setTab("examAudio")}
+            />
+            <SectionNavButton
+              active={tab === "email"}
+              icon={Mail}
+              label="Email"
+              description="Template email"
+              onClick={() => setTab("email")}
+            />
+            <SectionNavButton
+              active={tab === "changelog"}
+              icon={History}
+              label="Change Log"
+              description="Revision dan rollback"
+              onClick={() => setTab("changelog")}
+            />
+          </nav>
+
+          <div className="min-w-0">
+            {tab === "readiness" ? (
+              <ReadinessPanel
+                overview={summary?.curriculum.readinessOverview ?? null}
+                levels={readinessLevels}
+                languageFilter={languageFilter}
+                onLanguageFilterChange={setLanguageFilter}
+              />
+            ) : tab === "curriculum" ? (
+              <CurriculumEditor
+                updatedBy={adminName}
+                lessons={summary?.curriculum.lessons ?? []}
+                selectedLesson={selectedLesson}
+                onSelectLesson={selectLesson}
+                onSaved={(lesson) => {
+                  setSelectedLesson(lesson);
+                  setMessage("Lesson tersimpan dan curriculum cache sudah diperbarui.");
+                  void loadSummary();
+                }}
+                onError={setError}
+              />
+            ) : tab === "lessonAudio" ? (
+              <LessonAudioPanel
+                levels={readinessLevels}
+                languageFilter={languageFilter}
+                onLanguageFilterChange={setLanguageFilter}
+                audioSettings={audioSettings}
+                audioModel={audioModel}
+                audioVoiceId={audioVoiceId}
+                audioSpeed={audioSpeed}
+                voicePreview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
+                voicePreviewsByVoiceId={voicePreviewsByVoiceId}
+                generatingLessonSlug={generatingLessonSlug}
+                bulkAudioQueue={bulkAudioQueue}
+                isBulkGeneratingAudio={isBulkGeneratingAudio}
+                isLoadingAudioSettings={isLoadingAudioSettings}
+                isLoadingVoicePreviews={isLoadingVoicePreviews}
+                onAudioModelChange={setAudioModel}
+                onAudioVoiceChange={setAudioVoiceId}
+                onAudioSpeedChange={setAudioSpeed}
+                onGenerateAudio={generateLessonAudio}
+                onBulkGenerateAudio={generateBulkLessonAudio}
+              />
+            ) : tab === "examAudio" ? (
+              <div className="grid gap-5">
+                <AudioSettingsPanel
+                  settings={audioSettings}
+                  isLoading={isLoadingAudioSettings}
+                  model={audioModel}
+                  voiceId={audioVoiceId}
+                  speed={audioSpeed}
+                  preview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
+                  voicePreviewsByVoiceId={voicePreviewsByVoiceId}
+                  isLoadingPreviewCache={isLoadingVoicePreviews}
+                  onModelChange={setAudioModel}
+                  onVoiceChange={setAudioVoiceId}
+                  onSpeedChange={setAudioSpeed}
+                />
+                <ExamAudioPanel
+                  templates={examAudioTemplates}
+                  audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+                  isLoading={isLoadingExamTemplates}
+                  hasLoaded={hasLoadedExamTemplates}
+                  generatingTemplateId={generatingExamTemplateId}
+                  generatingItemId={generatingExamItemId}
+                  onReload={reloadExamAudioTemplates}
+                  onGenerateTemplate={generateExamTemplateAudio}
+                  onGenerateItem={generateExamItemAudio}
+                />
+              </div>
+            ) : tab === "email" ? (
+              <EmailTemplateEditor
+                updatedBy={adminName}
+                templates={summary?.emailTemplates ?? []}
+                selectedTemplate={selectedTemplate}
+                onSelectTemplate={selectTemplate}
+                onSaved={(template) => {
+                  setSelectedTemplate(template);
+                  setMessage("Email template tersimpan.");
+                  void loadSummary();
+                }}
+                onError={setError}
+              />
+            ) : (
+              <ChangeLogPanel
+                revisions={summary?.recentRevisions ?? []}
+                restoringRevisionId={restoringRevisionId}
+                onRollback={rollbackRevision}
+              />
+            )}
+          </div>
         </div>
-
-        {tab === "readiness" ? (
-          <ReadinessPanel
-            overview={summary?.curriculum.readinessOverview ?? null}
-            levels={summary?.curriculum.readinessLevels ?? []}
-            examAudioTemplates={examAudioTemplates}
-            audioSettings={audioSettings}
-            audioModel={audioModel}
-            audioVoiceId={audioVoiceId}
-            audioSpeed={audioSpeed}
-            voicePreview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
-            voicePreviewsByVoiceId={voicePreviewsByVoiceId}
-            generatingLessonSlug={generatingLessonSlug}
-            bulkAudioQueue={bulkAudioQueue}
-            isBulkGeneratingAudio={isBulkGeneratingAudio}
-            isLoadingVoicePreviews={isLoadingVoicePreviews}
-            isLoadingExamTemplates={isLoadingExamTemplates}
-            onAudioModelChange={setAudioModel}
-            onAudioVoiceChange={setAudioVoiceId}
-            onAudioSpeedChange={setAudioSpeed}
-            onGenerateAudio={generateLessonAudio}
-            onBulkGenerateAudio={generateBulkLessonAudio}
-            onGenerateExamTemplateAudio={generateExamTemplateAudio}
-            onGenerateExamItemAudio={generateExamItemAudio}
-            generatingExamTemplateId={generatingExamTemplateId}
-            generatingExamItemId={generatingExamItemId}
-          />
-        ) : tab === "curriculum" ? (
-          <CurriculumEditor
-            updatedBy={adminName}
-            lessons={summary?.curriculum.lessons ?? []}
-            selectedLesson={selectedLesson}
-            onSelectLesson={selectLesson}
-            onSaved={(lesson) => {
-              setSelectedLesson(lesson);
-              setMessage("Lesson tersimpan dan curriculum cache sudah diperbarui.");
-              void loadSummary();
-            }}
-            onError={setError}
-          />
-        ) : (
-          <EmailTemplateEditor
-            updatedBy={adminName}
-            templates={summary?.emailTemplates ?? []}
-            selectedTemplate={selectedTemplate}
-            onSelectTemplate={selectTemplate}
-            onSaved={(template) => {
-              setSelectedTemplate(template);
-              setMessage("Email template tersimpan.");
-              void loadSummary();
-            }}
-            onError={setError}
-          />
-        )}
       </section>
-
-      <ChangeLogPanel
-        revisions={summary?.recentRevisions ?? []}
-        restoringRevisionId={restoringRevisionId}
-        onRollback={rollbackRevision}
-      />
     </div>
   );
 }
@@ -630,7 +733,66 @@ function ChangeLogPanel({
 function ReadinessPanel({
   overview,
   levels,
-  examAudioTemplates,
+  languageFilter,
+  onLanguageFilterChange
+}: {
+  overview: AdminContentReadinessOverview | null;
+  levels: AdminContentReadiness[];
+  languageFilter: LanguageFilter;
+  onLanguageFilterChange: (value: LanguageFilter) => void;
+}) {
+  if (!overview) {
+    return <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
+  }
+
+  const filteredLevels = filterReadinessLevels(levels, languageFilter);
+  const stats = [
+    { label: "Planned", value: overview.plannedLessonCount },
+    { label: "Implemented", value: overview.implementedLessonCount },
+    { label: "Text ready", value: overview.textReadyCount },
+    { label: "Audio ready", value: overview.audioReadyCount },
+    { label: "Beta ready", value: overview.betaReadyCount },
+    { label: "Production ready", value: overview.productionReadyCount }
+  ];
+
+  return (
+    <div className="space-y-5">
+      <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
+        {stats.map((stat) => (
+          <div key={stat.label} className="rounded-lg bg-paper p-4">
+            <p className="text-xs font-semibold uppercase text-ink/45">{stat.label}</p>
+            <p className="mt-2 text-2xl font-semibold">{stat.value}</p>
+          </div>
+        ))}
+      </div>
+
+      <LanguageFilterControl
+        levels={levels}
+        value={languageFilter}
+        onChange={onLanguageFilterChange}
+      />
+
+      <div className="grid gap-4">
+        {filteredLevels.map((level) => (
+          <LevelReadinessCard
+            key={`${level.course.language}-${level.course.levelCode}`}
+            readiness={level}
+            audioReadyToGenerate={false}
+            generatingLessonSlug=""
+          />
+        ))}
+        {!filteredLevels.length ? (
+          <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Belum ada readiness untuk filter ini.</p>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+function LessonAudioPanel({
+  levels,
+  languageFilter,
+  onLanguageFilterChange,
   audioSettings,
   audioModel,
   audioVoiceId,
@@ -640,21 +802,17 @@ function ReadinessPanel({
   generatingLessonSlug,
   bulkAudioQueue,
   isBulkGeneratingAudio,
+  isLoadingAudioSettings,
   isLoadingVoicePreviews,
-  isLoadingExamTemplates,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
   onGenerateAudio,
-  onBulkGenerateAudio,
-  onGenerateExamTemplateAudio,
-  onGenerateExamItemAudio,
-  generatingExamTemplateId,
-  generatingExamItemId
+  onBulkGenerateAudio
 }: {
-  overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
-  examAudioTemplates: AdminExamAudioTemplate[];
+  languageFilter: LanguageFilter;
+  onLanguageFilterChange: (value: LanguageFilter) => void;
   audioSettings: AdminAudioSettings | null;
   audioModel: string;
   audioVoiceId: string;
@@ -664,46 +822,24 @@ function ReadinessPanel({
   generatingLessonSlug: string;
   bulkAudioQueue: BulkAudioQueueItem[];
   isBulkGeneratingAudio: boolean;
+  isLoadingAudioSettings: boolean;
   isLoadingVoicePreviews: boolean;
-  isLoadingExamTemplates: boolean;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
   onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
   onBulkGenerateAudio: (lessons: BulkAudioQueueItem[]) => void;
-  onGenerateExamTemplateAudio: (template: AdminExamAudioTemplate, onlyMissing: boolean) => void;
-  onGenerateExamItemAudio: (templateId: string, item: AdminExamListeningItem) => void;
-  generatingExamTemplateId: string;
-  generatingExamItemId: string;
 }) {
-  if (!overview) {
-    return <p className="mt-5 rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
-  }
-
-  const stats = [
-    { label: "Planned", value: overview.plannedLessonCount },
-    { label: "Implemented", value: overview.implementedLessonCount },
-    { label: "Text ready", value: overview.textReadyCount },
-    { label: "Audio ready", value: overview.audioReadyCount },
-    { label: "Beta ready", value: overview.betaReadyCount },
-    { label: "Production ready", value: overview.productionReadyCount }
-  ];
-  const missingBulkCandidates = bulkAudioCandidates(levels, { includeAudioReady: false });
-  const allTextReadyBulkCandidates = bulkAudioCandidates(levels, { includeAudioReady: true });
+  const filteredLevels = filterReadinessLevels(levels, languageFilter);
+  const missingBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: false });
+  const allTextReadyBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: true });
+  const audioReadyToGenerate = Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured);
 
   return (
-    <div className="mt-5 space-y-5">
-      <BulkAudioPanel
-        missingCandidates={missingBulkCandidates}
-        allTextReadyCandidates={allTextReadyBulkCandidates}
-        queue={bulkAudioQueue}
-        isRunning={isBulkGeneratingAudio}
-        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
-        onStart={onBulkGenerateAudio}
-      />
-
+    <div className="space-y-5">
       <AudioSettingsPanel
         settings={audioSettings}
+        isLoading={isLoadingAudioSettings}
         model={audioModel}
         voiceId={audioVoiceId}
         speed={audioSpeed}
@@ -715,37 +851,34 @@ function ReadinessPanel({
         onSpeedChange={onAudioSpeedChange}
       />
 
-      <ExamAudioPanel
-        templates={examAudioTemplates}
-        audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
-        isLoading={isLoadingExamTemplates}
-        generatingTemplateId={generatingExamTemplateId}
-        generatingItemId={generatingExamItemId}
-        onGenerateTemplate={onGenerateExamTemplateAudio}
-        onGenerateItem={onGenerateExamItemAudio}
+      <LanguageFilterControl
+        levels={levels}
+        value={languageFilter}
+        onChange={onLanguageFilterChange}
       />
 
-      <div className="grid gap-3 md:grid-cols-3 xl:grid-cols-6">
-        {stats.map((stat) => (
-          <div key={stat.label} className="rounded-lg bg-paper p-4">
-            <p className="text-xs font-semibold uppercase text-ink/45">{stat.label}</p>
-            <p className="mt-2 text-2xl font-semibold">{stat.value}</p>
-          </div>
-        ))}
-      </div>
+      <BulkAudioPanel
+        missingCandidates={missingBulkCandidates}
+        allTextReadyCandidates={allTextReadyBulkCandidates}
+        queue={bulkAudioQueue}
+        isRunning={isBulkGeneratingAudio}
+        audioReadyToGenerate={audioReadyToGenerate}
+        onStart={onBulkGenerateAudio}
+      />
 
       <div className="grid gap-4">
-        {levels.map((level) => (
+        {filteredLevels.map((level) => (
           <LevelReadinessCard
             key={`${level.course.language}-${level.course.levelCode}`}
             readiness={level}
-            audioReadyToGenerate={Boolean(
-              audioSettings?.minimaxConfigured && audioSettings.s3Configured && !isBulkGeneratingAudio
-            )}
+            audioReadyToGenerate={audioReadyToGenerate && !isBulkGeneratingAudio}
             generatingLessonSlug={generatingLessonSlug}
             onGenerateAudio={onGenerateAudio}
           />
         ))}
+        {!filteredLevels.length ? (
+          <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Belum ada lesson audio untuk filter ini.</p>
+        ) : null}
       </div>
     </div>
   );
@@ -753,6 +886,7 @@ function ReadinessPanel({
 
 function AudioSettingsPanel({
   settings,
+  isLoading,
   model,
   voiceId,
   speed,
@@ -764,6 +898,7 @@ function AudioSettingsPanel({
   onSpeedChange
 }: {
   settings: AdminAudioSettings | null;
+  isLoading: boolean;
   model: string;
   voiceId: string;
   speed: number;
@@ -795,6 +930,7 @@ function AudioSettingsPanel({
           </div>
         </div>
         <div className="flex flex-wrap gap-2 text-xs font-semibold">
+          {isLoading ? <StatusPill icon={RefreshCcw} label="Loading settings" tone="neutral" /> : null}
           <StatusPill
             icon={Sparkles}
             label={settings?.minimaxConfigured ? "MiniMax ready" : "MiniMax missing"}
@@ -997,16 +1133,20 @@ function ExamAudioPanel({
   templates,
   audioReadyToGenerate,
   isLoading,
+  hasLoaded,
   generatingTemplateId,
   generatingItemId,
+  onReload,
   onGenerateTemplate,
   onGenerateItem
 }: {
   templates: AdminExamAudioTemplate[];
   audioReadyToGenerate: boolean;
   isLoading: boolean;
+  hasLoaded: boolean;
   generatingTemplateId: string;
   generatingItemId: string;
+  onReload: () => void;
   onGenerateTemplate: (template: AdminExamAudioTemplate, onlyMissing: boolean) => void;
   onGenerateItem: (templateId: string, item: AdminExamListeningItem) => void;
 }) {
@@ -1028,7 +1168,16 @@ function ExamAudioPanel({
         </div>
         {isLoading ? (
           <span className="rounded-lg bg-paper px-3 py-2 text-xs font-semibold text-ink/55">Loading exams...</span>
-        ) : null}
+        ) : (
+          <button
+            type="button"
+            onClick={onReload}
+            className="focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg bg-paper px-3 text-sm font-semibold text-ink hover:bg-mint"
+          >
+            <RefreshCcw className="h-4 w-4" aria-hidden="true" />
+            Reload Exam Audio
+          </button>
+        )}
       </div>
 
       <div className="mt-4 grid gap-4">
@@ -1140,7 +1289,9 @@ function ExamAudioPanel({
             );
           })
         ) : (
-          <div className="rounded-lg bg-paper p-4 text-sm text-ink/60">Belum ada template exam yang tersedia.</div>
+          <div className="rounded-lg bg-paper p-4 text-sm text-ink/60">
+            {hasLoaded ? "Belum ada template exam yang tersedia." : "Buka tab ini untuk memuat template exam."}
+          </div>
         )}
       </div>
     </div>
@@ -1331,7 +1482,7 @@ function LevelReadinessCard({
   readiness: AdminContentReadiness;
   audioReadyToGenerate: boolean;
   generatingLessonSlug: string;
-  onGenerateAudio: (lesson: AdminContentReadinessLesson) => void;
+  onGenerateAudio?: (lesson: AdminContentReadinessLesson) => void;
 }) {
   return (
     <div className="rounded-lg border border-ink/10 bg-white p-4">
@@ -1413,7 +1564,7 @@ function LevelReadinessCard({
                       ) : null}
                     </div>
 
-                    {lesson.implemented && lesson.textReady ? (
+                    {onGenerateAudio && lesson.implemented && lesson.textReady ? (
                       <div className="flex flex-wrap items-center gap-2">
                         <button
                           type="button"
@@ -1771,27 +1922,85 @@ function EmailTemplateEditor({
   );
 }
 
-function TabButton({
+function LanguageFilterControl({
+  levels,
+  value,
+  onChange
+}: {
+  levels: AdminContentReadiness[];
+  value: LanguageFilter;
+  onChange: (value: LanguageFilter) => void;
+}) {
+  const languages = readinessLanguages(levels);
+  if (!languages.length) {
+    return null;
+  }
+
+  return (
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="mr-1 text-xs font-semibold uppercase text-ink/45">Language</span>
+      <FilterButton active={value === "all"} onClick={() => onChange("all")}>
+        All
+      </FilterButton>
+      {languages.map((language) => (
+        <FilterButton key={language} active={value === language} onClick={() => onChange(language)}>
+          {languageLabel(language)}
+        </FilterButton>
+      ))}
+    </div>
+  );
+}
+
+function FilterButton({
   active,
-  icon: Icon,
   onClick,
   children
 }: {
   active: boolean;
-  icon: LucideIcon;
   onClick: () => void;
-  children: ReactNode;
+  children: string;
 }) {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`focus-ring inline-flex min-h-10 items-center justify-center gap-2 rounded-lg px-4 text-sm font-semibold ${
+      className={`focus-ring inline-flex min-h-9 items-center rounded-lg px-3 text-sm font-semibold ${
+        active ? "bg-ink text-white" : "bg-paper text-ink/65 hover:bg-mint"
+      }`}
+    >
+      {children}
+    </button>
+  );
+}
+
+function SectionNavButton({
+  active,
+  icon: Icon,
+  label,
+  description,
+  onClick,
+}: {
+  active: boolean;
+  icon: LucideIcon;
+  label: string;
+  description: string;
+  onClick: () => void;
+}) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      className={`focus-ring flex min-w-52 shrink-0 items-start gap-3 rounded-lg px-3 py-3 text-left transition lg:w-full lg:min-w-0 ${
         active ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
       }`}
     >
-      <Icon className="h-4 w-4" aria-hidden="true" />
-      {children}
+      <Icon className={`mt-0.5 h-4 w-4 shrink-0 ${active ? "text-white" : "text-leaf"}`} aria-hidden="true" />
+      <span className="min-w-0">
+        <span className="block text-sm font-semibold">{label}</span>
+        <span className={`mt-1 block text-xs leading-4 ${active ? "text-white/70" : "text-ink/45"}`}>
+          {description}
+        </span>
+      </span>
     </button>
   );
 }
@@ -1888,6 +2097,30 @@ function readinessStatusLabel(status: string) {
     planned_missing_content: "planned"
   };
   return labels[status] ?? status;
+}
+
+function readinessLanguages(levels: AdminContentReadiness[]): string[] {
+  return Array.from(new Set(levels.map((level) => level.course.language).filter(Boolean))).sort((left, right) =>
+    languageLabel(left).localeCompare(languageLabel(right))
+  );
+}
+
+function filterReadinessLevels(
+  levels: AdminContentReadiness[],
+  languageFilter: LanguageFilter
+): AdminContentReadiness[] {
+  if (languageFilter === "all") {
+    return levels;
+  }
+  return levels.filter((level) => level.course.language === languageFilter);
+}
+
+function languageLabel(language: string) {
+  const labels: Record<string, string> = {
+    arabic: "Arabic",
+    english: "English"
+  };
+  return labels[language] ?? language.charAt(0).toUpperCase() + language.slice(1);
 }
 
 function bulkAudioCandidates(

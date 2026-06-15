@@ -13,12 +13,18 @@ export default function AdminCmsPage() {
           <header className="border-b border-ink/10 bg-paper/90 backdrop-blur">
             <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
               <BrandMark href="/" size="sm" />
-              <nav className="flex items-center gap-2">
+              <nav className="flex flex-wrap items-center justify-end gap-2">
                 <Link
                   href="/admin/level-tests"
                   className="focus-ring inline-flex h-10 items-center justify-center rounded-lg bg-white px-4 text-sm font-semibold hover:bg-mint"
                 >
                   Level Tests
+                </Link>
+                <Link
+                  href="/admin/exams"
+                  className="focus-ring inline-flex h-10 items-center justify-center rounded-lg bg-white px-4 text-sm font-semibold hover:bg-mint"
+                >
+                  Exam Reviews
                 </Link>
                 <Link
                   href="/admin/payments"
