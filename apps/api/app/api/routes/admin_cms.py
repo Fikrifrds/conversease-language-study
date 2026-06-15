@@ -69,6 +69,7 @@ class ContentRevisionRollbackPayload(BaseModel):
 
 class AudioGenerationPayload(BaseModel):
     generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    provider: Optional[str] = Field(default=None, max_length=32)
     model: Optional[str] = Field(default=None, max_length=40)
     voice_id: Optional[str] = Field(default=None, max_length=160)
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
@@ -76,6 +77,7 @@ class AudioGenerationPayload(BaseModel):
 
 class VoicePreviewPayload(BaseModel):
     generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    provider: Optional[str] = Field(default=None, max_length=32)
     model: Optional[str] = Field(default=None, max_length=40)
     voice_id: Optional[str] = Field(default=None, max_length=160)
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
@@ -85,6 +87,7 @@ class VoicePreviewPayload(BaseModel):
 
 class ExamAudioBulkGenerationPayload(BaseModel):
     generated_by: Optional[str] = Field(default="admin", min_length=2, max_length=160)
+    provider: Optional[str] = Field(default=None, max_length=32)
     model: Optional[str] = Field(default=None, max_length=40)
     voice_id: Optional[str] = Field(default=None, max_length=160)
     speed: float = Field(default=1.0, ge=0.5, le=2.0)
@@ -196,6 +199,7 @@ async def generate_cms_voice_preview_audio(
     try:
         result = await get_or_generate_voice_preview(
             db,
+            provider=payload.provider,
             model=payload.model,
             voice_id=payload.voice_id,
             speed=payload.speed,
@@ -212,6 +216,7 @@ async def generate_cms_voice_preview_audio(
 async def list_cms_voice_preview_audio(
     model: Optional[str] = Query(default=None, max_length=40),
     speed: Optional[float] = Query(default=None, ge=0.5, le=2.0),
+    provider: Optional[str] = Query(default=None, max_length=32),
     sample_text: Optional[str] = Query(default=None, min_length=8, max_length=500),
     _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
@@ -220,6 +225,7 @@ async def list_cms_voice_preview_audio(
         return {
             "data": list_voice_preview_cache(
                 db,
+                provider=provider,
                 model=model,
                 speed=speed,
                 sample_text=sample_text,
@@ -245,6 +251,7 @@ async def generate_cms_lesson_listening_audio(
         }
         result = await generate_lesson_listening_audio(
             lesson_slug=lesson_slug,
+            provider=payload.provider,
             model=payload.model,
             voice_id=payload.voice_id,
             speed=payload.speed,
@@ -259,7 +266,7 @@ async def generate_cms_lesson_listening_audio(
             after_payload=result,
             metadata={
                 "source": "admin_cms_audio",
-                "provider": "minimax",
+                "provider": result["provider"],
                 "model": result["model"],
                 "voice_id": result["voice_id"],
                 "storage_key": result["object_key"],
@@ -312,6 +319,7 @@ async def generate_exam_item_audio(
             item=item,
             exam_template=template,
             section=section,
+            provider=payload.provider,
             model=payload.model,
             voice_id=payload.voice_id,
             speed=payload.speed,
@@ -329,7 +337,7 @@ async def generate_exam_item_audio(
             "duration_seconds": result["duration_seconds"],
             "audio_format": result["audio_format"],
             "audio_size": result["audio_size"],
-            "provider": "minimax",
+            "provider": result["provider"],
             "model": result["model"],
             "voice_id": result["voice_id"],
             "speaker_voices": result["speaker_voices"],
@@ -358,7 +366,7 @@ async def generate_exam_item_audio(
             "template_code": template.code,
             "section_id": section.id,
             "section_code": section.code,
-            "provider": "minimax",
+            "provider": result["provider"],
             "model": result["model"],
             "voice_id": result["voice_id"],
             "speaker_voices": result["speaker_voices"],
@@ -380,7 +388,7 @@ async def generate_exam_item_audio(
         after_payload=serialize_exam_item_audio(updated_item),
         metadata={
             "source": "admin_exam_audio",
-            "provider": "minimax",
+            "provider": result["provider"],
             "model": result["model"],
             "voice_id": result["voice_id"],
             "storage_key": result["object_key"],
@@ -437,6 +445,7 @@ async def generate_exam_template_audio(
             item.id,
             AudioGenerationPayload(
                 generated_by=payload.generated_by,
+                provider=payload.provider,
                 model=payload.model,
                 voice_id=payload.voice_id,
                 speed=payload.speed,

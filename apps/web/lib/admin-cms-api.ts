@@ -167,16 +167,29 @@ export type AdminAudioVoice = {
   category: string;
   gender: "female" | "male" | "neutral" | "unknown";
   language: string;
+  provider: string;
   description: string;
 };
 
+export type AdminAudioProvider = {
+  key: string;
+  label: string;
+  configured: boolean;
+  defaultModel: string;
+  defaultVoiceId: string;
+  models: string[];
+};
+
 export type AdminAudioSettings = {
+  defaultProvider: string;
   minimaxConfigured: boolean;
+  elevenlabsConfigured: boolean;
   s3Configured: boolean;
   defaultModel: string;
   defaultVoiceId: string;
   defaultLanguageBoost: string;
   models: string[];
+  providers: AdminAudioProvider[];
   voices: AdminAudioVoice[];
 };
 
@@ -190,6 +203,7 @@ export type AdminGeneratedAudio = {
   durationSeconds: number;
   audioFormat: string;
   audioSize: number;
+  provider: string;
   model: string;
   voiceId: string;
   traceId: string;
@@ -447,16 +461,29 @@ type ApiAdminAudioVoice = {
   category: string;
   gender?: string;
   language?: string;
+  provider?: string;
   description: string;
 };
 
+type ApiAdminAudioProvider = {
+  key: string;
+  label: string;
+  configured: boolean;
+  default_model: string;
+  default_voice_id: string;
+  models: string[];
+};
+
 type ApiAdminAudioSettings = {
+  default_provider?: string;
   minimax_configured: boolean;
+  elevenlabs_configured?: boolean;
   s3_configured: boolean;
   default_model: string;
   default_voice_id: string;
   default_language_boost: string;
   models: string[];
+  providers?: ApiAdminAudioProvider[];
   voices: ApiAdminAudioVoice[];
 };
 
@@ -470,6 +497,7 @@ type ApiAdminGeneratedAudio = {
   duration_seconds: number;
   audio_format: string;
   audio_size: number;
+  provider?: string;
   model: string;
   voice_id: string;
   trace_id: string;
@@ -736,6 +764,7 @@ function mapAudioVoice(voice: ApiAdminAudioVoice): AdminAudioVoice {
     category: voice.category,
     gender: mapVoiceGender(voice.gender),
     language: voice.language ?? "",
+    provider: voice.provider ?? (voice.voice_id.startsWith("Arabic_") || voice.voice_id.startsWith("English_") ? "minimax" : "elevenlabs"),
     description: voice.description
   };
 }
@@ -749,13 +778,35 @@ function mapVoiceGender(value?: string): AdminAudioVoice["gender"] {
 }
 
 function mapAudioSettings(settings: ApiAdminAudioSettings): AdminAudioSettings {
+  const fallbackProviders: AdminAudioProvider[] = [
+    {
+      key: "minimax",
+      label: "MiniMax",
+      configured: settings.minimax_configured,
+      defaultModel: settings.default_model,
+      defaultVoiceId: settings.default_voice_id,
+      models: settings.models
+    }
+  ];
   return {
+    defaultProvider: settings.default_provider ?? "minimax",
     minimaxConfigured: settings.minimax_configured,
+    elevenlabsConfigured: settings.elevenlabs_configured ?? false,
     s3Configured: settings.s3_configured,
     defaultModel: settings.default_model,
     defaultVoiceId: settings.default_voice_id,
     defaultLanguageBoost: settings.default_language_boost,
     models: settings.models,
+    providers: settings.providers
+      ? settings.providers.map((provider) => ({
+          key: provider.key,
+          label: provider.label,
+          configured: provider.configured,
+          defaultModel: provider.default_model,
+          defaultVoiceId: provider.default_voice_id,
+          models: provider.models
+        }))
+      : fallbackProviders,
     voices: settings.voices.map(mapAudioVoice)
   };
 }
@@ -771,6 +822,7 @@ function mapGeneratedAudio(audio: ApiAdminGeneratedAudio): AdminGeneratedAudio {
     durationSeconds: audio.duration_seconds,
     audioFormat: audio.audio_format,
     audioSize: audio.audio_size,
+    provider: audio.provider ?? "minimax",
     model: audio.model,
     voiceId: audio.voice_id,
     traceId: audio.trace_id,
@@ -976,11 +1028,15 @@ export async function getAdminAudioSettings(): Promise<AdminAudioSettings> {
 }
 
 export async function getAdminVoicePreviews(input: {
+  provider?: string;
   model?: string;
   speed?: number;
   sampleText?: string;
 }): Promise<AdminVoicePreviewAudio[]> {
   const params = new URLSearchParams();
+  if (input.provider) {
+    params.set("provider", input.provider);
+  }
   if (input.model) {
     params.set("model", input.model);
   }
@@ -1000,6 +1056,7 @@ export async function getAdminVoicePreviews(input: {
 export async function generateAdminLessonAudio(input: {
   generatedBy: string;
   lessonSlug: string;
+  provider: string;
   model: string;
   voiceId: string;
   speed: number;
@@ -1012,6 +1069,7 @@ export async function generateAdminLessonAudio(input: {
     method: "POST",
     body: JSON.stringify({
       generated_by: input.generatedBy,
+      provider: input.provider,
       model: input.model,
       voice_id: input.voiceId,
       speed: input.speed
@@ -1022,6 +1080,7 @@ export async function generateAdminLessonAudio(input: {
 
 export async function previewAdminVoiceAudio(input: {
   generatedBy: string;
+  provider: string;
   model: string;
   voiceId: string;
   speed: number;
@@ -1032,6 +1091,7 @@ export async function previewAdminVoiceAudio(input: {
     method: "POST",
     body: JSON.stringify({
       generated_by: input.generatedBy,
+      provider: input.provider,
       model: input.model,
       voice_id: input.voiceId,
       speed: input.speed,
@@ -1059,6 +1119,7 @@ export async function listAdminExamAudioTemplates(input?: {
 export async function generateAdminExamItemAudio(input: {
   generatedBy: string;
   itemId: string;
+  provider: string;
   model: string;
   voiceId: string;
   speed: number;
@@ -1069,6 +1130,7 @@ export async function generateAdminExamItemAudio(input: {
       method: "POST",
       body: JSON.stringify({
         generated_by: input.generatedBy,
+        provider: input.provider,
         model: input.model,
         voice_id: input.voiceId,
         speed: input.speed
@@ -1081,6 +1143,7 @@ export async function generateAdminExamItemAudio(input: {
 export async function generateAdminExamTemplateAudio(input: {
   generatedBy: string;
   templateId: string;
+  provider: string;
   model: string;
   voiceId: string;
   speed: number;
@@ -1102,6 +1165,7 @@ export async function generateAdminExamTemplateAudio(input: {
     method: "POST",
     body: JSON.stringify({
       generated_by: input.generatedBy,
+      provider: input.provider,
       model: input.model,
       voice_id: input.voiceId,
       speed: input.speed,

@@ -34,6 +34,17 @@ MINIMAX_TTS_MODELS = (
     "speech-01-turbo",
 )
 
+ELEVENLABS_TTS_MODELS = (
+    "eleven_multilingual_v2",
+    "eleven_v3",
+    "eleven_turbo_v2_5",
+    "eleven_flash_v2_5",
+)
+
+TTS_PROVIDER_MINIMAX = "minimax"
+TTS_PROVIDER_ELEVENLABS = "elevenlabs"
+TTS_PROVIDERS = (TTS_PROVIDER_MINIMAX, TTS_PROVIDER_ELEVENLABS)
+
 CLEAR_FEMALE_DIALOGUE_VOICES = (
     "English_radiant_girl",
     "English_CalmWoman",
@@ -52,6 +63,97 @@ CLEAR_ARABIC_FEMALE_DIALOGUE_VOICES = (
 
 CLEAR_ARABIC_MALE_DIALOGUE_VOICES = (
     "Arabic_FriendlyGuy",
+)
+
+ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID = "OFHP1Qg30FPoNfkUFFlA"
+ELEVENLABS_ARABIC_DEFAULT_FEMALE_VOICE_ID = "gMB389pj77Qe5nErWNjd"
+ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES = (
+    "OFHP1Qg30FPoNfkUFFlA",  # Adam
+    "yXEnnEln9armDCyhkXcA",  # Jeddawi
+    "rPNcQ53R703tTmtue1AT",  # Mazen Lawand
+    "zthCTrnZpSGUnbO0tTzN",  # Mustafa Ajmi
+    "wxweiHvoC2r2jFM7mS8b",  # Haytham
+    "amSNjVC0vWYiE8iGimVb",  # Maged Magdy
+    "68MRVrnQAt8vLbu0FCzw",  # Mamdoh
+    "4mZ0H4Jh5iqmgAWK97eF",  # Omarii
+    "HJ8unGw6UFYkApOU0Oea",  # Omars
+)
+ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES = (
+    "gMB389pj77Qe5nErWNjd",  # Sara
+    "4wf10lgibMnboGJGCLrP",  # Farah
+    "B5xxC4eQoOFJnY4R5XkI",  # Salma
+    "ulJ49j1YlxrYnPoj5o12",  # Lama
+)
+ELEVENLABS_ARABIC_VOICE_METADATA = {
+    "OFHP1Qg30FPoNfkUFFlA": {
+        "voice_name": "Adam",
+        "gender": "male",
+        "description": "Deep, rich, and expressive Arabic male voice for narration and teacher lines.",
+    },
+    "4wf10lgibMnboGJGCLrP": {
+        "voice_name": "Farah",
+        "gender": "female",
+        "description": "Smooth, calm, and warm Arabic female voice.",
+    },
+    "yXEnnEln9armDCyhkXcA": {
+        "voice_name": "Jeddawi",
+        "gender": "male",
+        "description": "Calm, confident, and deep Saudi Arabic male voice.",
+    },
+    "wxweiHvoC2r2jFM7mS8b": {
+        "voice_name": "Haytham",
+        "gender": "male",
+        "description": "Dramatic and narrative Arabic male storyteller voice.",
+    },
+    "gMB389pj77Qe5nErWNjd": {
+        "voice_name": "Sara",
+        "gender": "female",
+        "description": "Friendly, professional, and clear Arabic coach voice.",
+    },
+    "amSNjVC0vWYiE8iGimVb": {
+        "voice_name": "Maged Magdy",
+        "gender": "male",
+        "description": "Calm, natural, and balanced Arabic male voice.",
+    },
+    "ulJ49j1YlxrYnPoj5o12": {
+        "voice_name": "Lama",
+        "gender": "female",
+        "description": "Soft emotional Arabic female voice.",
+    },
+    "68MRVrnQAt8vLbu0FCzw": {
+        "voice_name": "Mamdoh",
+        "gender": "male",
+        "description": "Deep Egyptian Arabic male voice.",
+    },
+    "rPNcQ53R703tTmtue1AT": {
+        "voice_name": "Mazen Lawand",
+        "gender": "male",
+        "description": "Warm, dynamic, and professional Arabic male voice.",
+    },
+    "4mZ0H4Jh5iqmgAWK97eF": {
+        "voice_name": "Omarii",
+        "gender": "male",
+        "description": "Confident and clear Arabic male customer-care voice.",
+    },
+    "B5xxC4eQoOFJnY4R5XkI": {
+        "voice_name": "Salma",
+        "gender": "female",
+        "description": "Friendly, clear, and reassuring Arabic female voice.",
+    },
+    "HJ8unGw6UFYkApOU0Oea": {
+        "voice_name": "Omars",
+        "gender": "male",
+        "description": "Clean Arabic male voice for storytelling and podcasts.",
+    },
+    "zthCTrnZpSGUnbO0tTzN": {
+        "voice_name": "Mustafa Ajmi",
+        "gender": "male",
+        "description": "Deep, modern Omani Arabic male voice.",
+    },
+}
+ELEVENLABS_ARABIC_CURATED_VOICE_IDS = (
+    *ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES,
+    *ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES,
 )
 
 ARABIC_LANGUAGE_KEYS = {"arabic", "ar", "ar-sa", "ar-ae", "ar-eg"}
@@ -205,12 +307,48 @@ DIALOGUE_PERSONA_VOICES = {
     "layla": "Arabic_CalmWoman",
 }
 
+ELEVENLABS_ARABIC_PERSONA_VOICES = {
+    "ahmad": "OFHP1Qg30FPoNfkUFFlA",
+    "ahmed": "OFHP1Qg30FPoNfkUFFlA",
+    "ali": "yXEnnEln9armDCyhkXcA",
+    "arabicstudent": "gMB389pj77Qe5nErWNjd",
+    "arabicteacher": "OFHP1Qg30FPoNfkUFFlA",
+    "aisha": "B5xxC4eQoOFJnY4R5XkI",
+    "fatima": "gMB389pj77Qe5nErWNjd",
+    "fatimah": "gMB389pj77Qe5nErWNjd",
+    "khalid": "rPNcQ53R703tTmtue1AT",
+    "khadijah": "4wf10lgibMnboGJGCLrP",
+    "layla": "ulJ49j1YlxrYnPoj5o12",
+    "maryam": "B5xxC4eQoOFJnY4R5XkI",
+    "muallim": "OFHP1Qg30FPoNfkUFFlA",
+    "muallimah": "gMB389pj77Qe5nErWNjd",
+    "narrator": "OFHP1Qg30FPoNfkUFFlA",
+    "noura": "4wf10lgibMnboGJGCLrP",
+    "nura": "4wf10lgibMnboGJGCLrP",
+    "studentarabicfemale": "B5xxC4eQoOFJnY4R5XkI",
+    "studentarabicmale": "rPNcQ53R703tTmtue1AT",
+    "studentfemale": "B5xxC4eQoOFJnY4R5XkI",
+    "studentmale": "rPNcQ53R703tTmtue1AT",
+    "talib": "rPNcQ53R703tTmtue1AT",
+    "talibah": "B5xxC4eQoOFJnY4R5XkI",
+    "teacherarabic": "OFHP1Qg30FPoNfkUFFlA",
+    "teacherarabicfemale": "gMB389pj77Qe5nErWNjd",
+    "teacherarabicmale": "OFHP1Qg30FPoNfkUFFlA",
+    "ustadh": "OFHP1Qg30FPoNfkUFFlA",
+    "ustadz": "OFHP1Qg30FPoNfkUFFlA",
+    "ustaz": "OFHP1Qg30FPoNfkUFFlA",
+    "zayd": "yXEnnEln9armDCyhkXcA",
+    "ziyad": "zthCTrnZpSGUnbO0tTzN",
+}
+
 FALLBACK_MINIMAX_VOICES = tuple(
     {
         "voice_id": voice_id,
         "voice_name": metadata["voice_name"],
         "category": "curated",
         "gender": metadata["gender"],
+        "language": metadata["language"],
+        "provider": TTS_PROVIDER_MINIMAX,
         "description": metadata["description"],
     }
     for voice_id, metadata in CURATED_MINIMAX_VOICE_METADATA.items()
@@ -254,19 +392,42 @@ class DialogueTurn:
 
 
 def audio_generation_settings_payload(voices: list[dict[str, Any]]) -> dict[str, Any]:
+    default_provider = TTS_PROVIDER_MINIMAX
     return {
+        "default_provider": default_provider,
         "minimax_configured": bool(settings.minimax_api_key),
+        "elevenlabs_configured": bool(settings.elevenlabs_api_key),
         "s3_configured": s3_configured(),
         "default_model": default_minimax_tts_model(),
         "default_voice_id": settings.minimax_tts_voice_id,
         "default_language_boost": settings.minimax_tts_language_boost,
         "models": list(MINIMAX_TTS_MODELS),
+        "providers": [
+            {
+                "key": TTS_PROVIDER_MINIMAX,
+                "label": "MiniMax",
+                "configured": bool(settings.minimax_api_key),
+                "default_model": default_minimax_tts_model(),
+                "default_voice_id": settings.minimax_tts_voice_id,
+                "models": list(MINIMAX_TTS_MODELS),
+            },
+            {
+                "key": TTS_PROVIDER_ELEVENLABS,
+                "label": "ElevenLabs",
+                "configured": bool(settings.elevenlabs_api_key),
+                "default_model": default_elevenlabs_tts_model(),
+                "default_voice_id": default_elevenlabs_voice_id_for_language("arabic"),
+                "models": list(ELEVENLABS_TTS_MODELS),
+            },
+        ],
         "voices": voices,
     }
 
 
 async def audio_generation_settings() -> dict[str, Any]:
-    voices = await list_minimax_voices(language="all")
+    minimax_voices = await list_minimax_voices(language="all")
+    elevenlabs_voices = await list_elevenlabs_voices()
+    voices = [*minimax_voices, *elevenlabs_voices]
     return audio_generation_settings_payload(voices)
 
 
@@ -319,6 +480,8 @@ def flatten_minimax_voices(payload: dict[str, Any]) -> list[dict[str, Any]]:
                         description=description_text,
                         raw_gender=voice.get("gender") or voice.get("voice_gender") or voice.get("sex"),
                     ),
+                    "language": inferred_voice_language(voice_id),
+                    "provider": TTS_PROVIDER_MINIMAX,
                     "description": description_text,
                 }
             )
@@ -353,8 +516,88 @@ def curated_voice_option(voice_id: str, source: Optional[dict[str, Any]] = None)
         "category": "curated",
         "gender": metadata["gender"],
         "language": metadata["language"],
+        "provider": TTS_PROVIDER_MINIMAX,
         "description": str(source.get("description") or metadata["description"]),
     }
+
+
+async def list_elevenlabs_voices(limit: int = 100) -> list[dict[str, Any]]:
+    if not settings.elevenlabs_api_key:
+        return fallback_elevenlabs_voices()
+
+    try:
+        response = await elevenlabs_client_get(
+            "/v1/voices",
+            timeout=min(settings.elevenlabs_tts_timeout_seconds, 30),
+        )
+    except AudioGenerationError:
+        return fallback_elevenlabs_voices()
+
+    voices = flatten_elevenlabs_voices(response)
+    filtered = filter_elevenlabs_voice_options(voices)
+    return filtered[:limit] or fallback_elevenlabs_voices()
+
+
+def fallback_elevenlabs_voices() -> list[dict[str, Any]]:
+    return [elevenlabs_curated_voice_option(voice_id) for voice_id in ELEVENLABS_ARABIC_CURATED_VOICE_IDS]
+
+
+def flatten_elevenlabs_voices(payload: dict[str, Any]) -> list[dict[str, Any]]:
+    voices: list[dict[str, Any]] = []
+    for voice in payload.get("voices", []) or []:
+        if not isinstance(voice, dict) or not voice.get("voice_id"):
+            continue
+        labels = voice.get("labels") if isinstance(voice.get("labels"), dict) else {}
+        label_text = " ".join(str(value) for value in labels.values() if value)
+        description = str(voice.get("description") or label_text or "")
+        voice_id = str(voice["voice_id"])
+        voices.append(
+            {
+                "voice_id": voice_id,
+                "voice_name": str(voice.get("name") or readable_voice_name(voice_id)),
+                "category": str(voice.get("category") or "elevenlabs"),
+                "gender": infer_voice_gender(
+                    voice_id=voice_id,
+                    voice_name=str(voice.get("name") or ""),
+                    description=f"{description} {label_text}",
+                    raw_gender=labels.get("gender") or labels.get("sex"),
+                ),
+                "language": "Arabic",
+                "provider": TTS_PROVIDER_ELEVENLABS,
+                "description": description or "ElevenLabs multilingual voice.",
+            }
+        )
+    return voices
+
+
+def filter_elevenlabs_voice_options(voices: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    by_id = {str(voice.get("voice_id") or ""): voice for voice in voices}
+    return [
+        elevenlabs_curated_voice_option(voice_id, by_id.get(voice_id))
+        for voice_id in ELEVENLABS_ARABIC_CURATED_VOICE_IDS
+    ]
+
+
+def elevenlabs_curated_voice_option(voice_id: str, source: Optional[dict[str, Any]] = None) -> dict[str, Any]:
+    metadata = ELEVENLABS_ARABIC_VOICE_METADATA[voice_id]
+    source = source or {}
+    return {
+        "voice_id": voice_id,
+        "voice_name": str(source.get("voice_name") or metadata["voice_name"]),
+        "category": "curated",
+        "gender": str(source.get("gender") or metadata["gender"]),
+        "language": "Arabic",
+        "provider": TTS_PROVIDER_ELEVENLABS,
+        "description": str(source.get("description") or metadata["description"]),
+    }
+
+
+def inferred_voice_language(voice_id: str) -> str:
+    if is_arabic_voice_id(voice_id):
+        return "Arabic"
+    if is_english_voice_id(voice_id):
+        return "English"
+    return ""
 
 
 def readable_voice_name(voice_id: str) -> str:
@@ -384,6 +627,51 @@ def is_english_voice_id(voice_id: str) -> bool:
     return (voice_id or "").strip().lower().startswith("english_")
 
 
+def normalized_tts_provider(value: Optional[str], *, language: str = "") -> str:
+    provider = (value or "").strip().lower()
+    if provider in TTS_PROVIDERS:
+        return provider
+    return default_tts_provider_for_language(language)
+
+
+def ensure_tts_provider_configured(provider: str) -> None:
+    if provider == TTS_PROVIDER_ELEVENLABS:
+        if not settings.elevenlabs_api_key:
+            raise AudioGenerationError("elevenlabs_api_key_missing")
+        return
+    if not settings.minimax_api_key:
+        raise AudioGenerationError("minimax_api_key_missing")
+
+
+def default_tts_provider_for_language(language: str) -> str:
+    if is_arabic_language(language):
+        return TTS_PROVIDER_ELEVENLABS
+    return TTS_PROVIDER_MINIMAX
+
+
+def models_for_provider(provider: str) -> tuple[str, ...]:
+    if provider == TTS_PROVIDER_ELEVENLABS:
+        return ELEVENLABS_TTS_MODELS
+    return MINIMAX_TTS_MODELS
+
+
+def tts_provider_for_model(model: str) -> str:
+    value = (model or "").strip()
+    if value in ELEVENLABS_TTS_MODELS:
+        return TTS_PROVIDER_ELEVENLABS
+    return TTS_PROVIDER_MINIMAX
+
+
+def normalized_model_for_provider(provider: str, value: Optional[str]) -> str:
+    model = (value or "").strip()
+    models = models_for_provider(provider)
+    if model and model in models:
+        return model
+    if provider == TTS_PROVIDER_ELEVENLABS:
+        return default_elevenlabs_tts_model()
+    return default_minimax_tts_model()
+
+
 def default_voice_id_for_language(language: str) -> str:
     if is_arabic_language(language):
         return ARABIC_DEFAULT_VOICE_ID
@@ -397,6 +685,27 @@ def voice_id_for_language(language: str, requested_voice_id: Optional[str]) -> s
     if is_english_language(language) and is_arabic_voice_id(selected_voice):
         return ENGLISH_DEFAULT_VOICE_ID
     return selected_voice or default_voice_id_for_language(language)
+
+
+def default_elevenlabs_voice_id_for_language(language: str) -> str:
+    if is_arabic_language(language):
+        return (
+            settings.elevenlabs_arabic_male_voice_id.strip()
+            or settings.elevenlabs_tts_voice_id.strip()
+            or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID
+        )
+    return settings.elevenlabs_tts_voice_id.strip() or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID
+
+
+def elevenlabs_voice_id_for_language(language: str, requested_voice_id: Optional[str]) -> str:
+    selected_voice = (requested_voice_id or "").strip()
+    return selected_voice or default_elevenlabs_voice_id_for_language(language)
+
+
+def voice_id_for_provider(provider: str, language: str, requested_voice_id: Optional[str]) -> str:
+    if provider == TTS_PROVIDER_ELEVENLABS:
+        return elevenlabs_voice_id_for_language(language, requested_voice_id)
+    return voice_id_for_language(language, requested_voice_id)
 
 
 def language_boost_for_language(language: str) -> str:
@@ -416,7 +725,7 @@ def language_boost_for_voice(voice_id: str) -> str:
 
 
 def default_voice_preview_text(voice_id: str) -> str:
-    if is_arabic_voice_id(voice_id):
+    if is_arabic_voice_id(voice_id) or voice_id in ELEVENLABS_ARABIC_VOICE_METADATA:
         return ARABIC_VOICE_PREVIEW_SAMPLE_TEXT
     return "Hello, welcome to Conversease. Listen, repeat, and speak with clear confidence."
 
@@ -477,26 +786,43 @@ def infer_voice_gender(
 async def generate_lesson_listening_audio(
     *,
     lesson_slug: str,
+    provider: Optional[str] = None,
     model: Optional[str] = None,
     voice_id: Optional[str] = None,
     speed: float = 1.0,
     generated_by: str = "admin",
 ) -> dict[str, Any]:
-    if not settings.minimax_api_key:
-        raise AudioGenerationError("minimax_api_key_missing")
     if not s3_configured():
         raise AudioGenerationError("s3_config_missing")
 
     lesson = find_lesson_audio_reference(lesson_slug)
+    selected_provider = normalized_tts_provider(provider, language=lesson.language)
+    ensure_tts_provider_configured(selected_provider)
     dialogue_turns = listening_script_to_dialogue_turns(lesson.listening_script_path)
-    selected_model = normalized_model(model or settings.minimax_tts_model)
-    selected_voice_id = voice_id_for_language(lesson.language, voice_id)
+    selected_model = normalized_model_for_provider(selected_provider, model)
+    selected_voice_id = voice_id_for_provider(selected_provider, lesson.language, voice_id)
     if not selected_voice_id:
-        raise AudioGenerationError("minimax_voice_id_missing")
+        raise AudioGenerationError(f"{selected_provider}_voice_id_missing")
     selected_speed = speed_for_language(lesson.language, speed)
-    selected_language_boost = language_boost_for_language(lesson.language)
 
-    if len(dialogue_turns) >= 2:
+    if selected_provider == TTS_PROVIDER_ELEVENLABS and len(dialogue_turns) >= 2:
+        generated = await synthesize_dialogue_elevenlabs_tts(
+            turns=dialogue_turns,
+            model=selected_model,
+            fallback_voice_id=selected_voice_id,
+            speed=selected_speed,
+            language=lesson.language,
+        )
+    elif selected_provider == TTS_PROVIDER_ELEVENLABS:
+        tts_text = listening_script_to_tts_text(lesson.listening_script_path)
+        generated = await synthesize_elevenlabs_tts(
+            text=tts_text,
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=selected_speed,
+        )
+    elif len(dialogue_turns) >= 2:
+        selected_language_boost = language_boost_for_language(lesson.language)
         generated = await synthesize_dialogue_minimax_tts(
             turns=dialogue_turns,
             model=selected_model,
@@ -506,6 +832,7 @@ async def generate_lesson_listening_audio(
             language=lesson.language,
         )
     else:
+        selected_language_boost = language_boost_for_language(lesson.language)
         tts_text = listening_script_to_tts_text(lesson.listening_script_path)
         generated = await synthesize_minimax_tts(
             text=tts_text,
@@ -540,6 +867,7 @@ async def generate_lesson_listening_audio(
         speaker_voices=generated.speaker_voices,
         line_count=generated.line_count,
         trace_id=generated.trace_id,
+        provider=selected_provider,
         generated_by=generated_by,
         generated_at=generated_at,
     )
@@ -555,6 +883,7 @@ async def generate_lesson_listening_audio(
         "duration_seconds": generated.duration_seconds,
         "audio_format": generated.audio_format,
         "audio_size": generated.audio_size,
+        "provider": selected_provider,
         "model": selected_model,
         "voice_id": generated.voice_id,
         "speaker_voices": generated.speaker_voices,
@@ -567,21 +896,22 @@ async def generate_lesson_listening_audio(
 
 async def generate_voice_preview_audio(
     *,
+    provider: Optional[str] = None,
     model: Optional[str] = None,
     voice_id: Optional[str] = None,
     speed: float = 1.0,
     generated_by: str = "admin",
     sample_text: Optional[str] = None,
 ) -> dict[str, Any]:
-    if not settings.minimax_api_key:
-        raise AudioGenerationError("minimax_api_key_missing")
     if not s3_configured():
         raise AudioGenerationError("s3_config_missing")
 
-    selected_model = normalized_model(model or settings.minimax_tts_model)
-    selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
+    selected_provider = normalized_tts_provider(provider)
+    ensure_tts_provider_configured(selected_provider)
+    selected_model = normalized_model_for_provider(selected_provider, model)
+    selected_voice_id = voice_id_for_provider(selected_provider, "", voice_id)
     if not selected_voice_id:
-        raise AudioGenerationError("minimax_voice_id_missing")
+        raise AudioGenerationError(f"{selected_provider}_voice_id_missing")
 
     preview_text = (
         sample_text
@@ -592,13 +922,21 @@ async def generate_voice_preview_audio(
     if len(preview_text) > 500:
         raise AudioGenerationError("voice_preview_text_too_long")
 
-    generated = await synthesize_minimax_tts(
-        text=preview_text,
-        model=selected_model,
-        voice_id=selected_voice_id,
-        speed=speed,
-        language_boost=language_boost_for_voice(selected_voice_id),
-    )
+    if selected_provider == TTS_PROVIDER_ELEVENLABS:
+        generated = await synthesize_elevenlabs_tts(
+            text=preview_text,
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=speed,
+        )
+    else:
+        generated = await synthesize_minimax_tts(
+            text=preview_text,
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=speed,
+            language_boost=language_boost_for_voice(selected_voice_id),
+        )
 
     generated_at = datetime.now(timezone.utc)
     object_key = voice_preview_object_key(
@@ -620,6 +958,7 @@ async def generate_voice_preview_audio(
         "duration_seconds": generated.duration_seconds,
         "audio_format": generated.audio_format,
         "audio_size": generated.audio_size,
+        "provider": selected_provider,
         "model": selected_model,
         "voice_id": selected_voice_id,
         "trace_id": generated.trace_id,
@@ -635,13 +974,12 @@ async def generate_exam_item_listening_audio(
     item: ExamItemModel,
     exam_template: ExamTemplateModel,
     section: ExamSectionModel,
+    provider: Optional[str] = None,
     model: Optional[str] = None,
     voice_id: Optional[str] = None,
     speed: float = 1.0,
     generated_by: str = "admin",
 ) -> dict[str, Any]:
-    if not settings.minimax_api_key:
-        raise AudioGenerationError("minimax_api_key_missing")
     if not s3_configured():
         raise AudioGenerationError("s3_config_missing")
     if section.code.upper() not in EXAM_AUDIO_SECTION_CODES:
@@ -653,13 +991,29 @@ async def generate_exam_item_listening_audio(
     if len(source_text) >= 10000:
         raise AudioGenerationError("exam_item_audio_source_too_long")
 
-    selected_model = normalized_model(model or settings.minimax_tts_model)
-    selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
+    selected_provider = normalized_tts_provider(provider)
+    ensure_tts_provider_configured(selected_provider)
+    selected_model = normalized_model_for_provider(selected_provider, model)
+    selected_voice_id = voice_id_for_provider(selected_provider, "", voice_id)
     if not selected_voice_id:
-        raise AudioGenerationError("minimax_voice_id_missing")
+        raise AudioGenerationError(f"{selected_provider}_voice_id_missing")
 
     dialogue_turns = dialogue_turns_from_text(source_text)
-    if len(dialogue_turns) >= 2:
+    if selected_provider == TTS_PROVIDER_ELEVENLABS and len(dialogue_turns) >= 2:
+        generated = await synthesize_dialogue_elevenlabs_tts(
+            turns=dialogue_turns,
+            model=selected_model,
+            fallback_voice_id=selected_voice_id,
+            speed=speed,
+        )
+    elif selected_provider == TTS_PROVIDER_ELEVENLABS:
+        generated = await synthesize_elevenlabs_tts(
+            text=text_to_tts_text(source_text),
+            model=selected_model,
+            voice_id=selected_voice_id,
+            speed=speed,
+        )
+    elif len(dialogue_turns) >= 2:
         generated = await synthesize_dialogue_minimax_tts(
             turns=dialogue_turns,
             model=selected_model,
@@ -705,6 +1059,7 @@ async def generate_exam_item_listening_audio(
         "duration_seconds": generated.duration_seconds,
         "audio_format": generated.audio_format,
         "audio_size": generated.audio_size,
+        "provider": selected_provider,
         "model": selected_model,
         "voice_id": generated.voice_id,
         "speaker_voices": generated.speaker_voices,
@@ -856,6 +1211,94 @@ async def synthesize_dialogue_minimax_tts(
     )
 
 
+async def synthesize_elevenlabs_tts(
+    *,
+    text: str,
+    model: str,
+    voice_id: str,
+    speed: float,
+    audio_format: str = "mp3",
+) -> MiniMaxAudioResult:
+    payload = {
+        "text": text,
+        "model_id": model,
+        "voice_settings": {
+            "stability": 0.55,
+            "similarity_boost": 0.78,
+            "style": 0,
+            "use_speaker_boost": True,
+            "speed": speed,
+        },
+    }
+    output_format = elevenlabs_output_format(audio_format)
+    audio_bytes, response_trace_id, response_content_type = await elevenlabs_client_post_audio(
+        f"/v1/text-to-speech/{voice_id}",
+        payload,
+        timeout=settings.elevenlabs_tts_timeout_seconds,
+        output_format=output_format,
+    )
+    resolved_format = elevenlabs_audio_format(output_format, response_content_type, audio_format)
+    return MiniMaxAudioResult(
+        audio_bytes=audio_bytes,
+        duration_seconds=estimate_tts_duration_seconds(text),
+        audio_format=resolved_format,
+        audio_size=len(audio_bytes),
+        trace_id=response_trace_id,
+        usage_characters=len(text),
+        voice_id=voice_id,
+        speaker_voices={},
+        line_count=1,
+    )
+
+
+async def synthesize_dialogue_elevenlabs_tts(
+    *,
+    turns: list[DialogueTurn],
+    model: str,
+    fallback_voice_id: str,
+    speed: float,
+    language: str = "",
+) -> MiniMaxAudioResult:
+    speaker_voices = assign_elevenlabs_dialogue_voices(
+        turns,
+        fallback_voice_id=fallback_voice_id,
+        language=language,
+    )
+    chunks: list[bytes] = []
+    trace_ids: list[str] = []
+    total_usage = 0
+    total_duration = 0.0
+
+    for turn in turns:
+        generated = await synthesize_elevenlabs_tts(
+            text=turn.text,
+            model=model,
+            voice_id=speaker_voices.get(turn.speaker) or fallback_voice_id,
+            speed=speed,
+            audio_format="mp3",
+        )
+        chunks.append(generated.audio_bytes)
+        if generated.trace_id:
+            trace_ids.append(generated.trace_id)
+        total_usage += generated.usage_characters
+        total_duration += generated.duration_seconds
+
+    if not chunks:
+        raise AudioGenerationError("dialogue_audio_empty")
+
+    return MiniMaxAudioResult(
+        audio_bytes=b"".join(chunks),
+        duration_seconds=round(max(total_duration, 0.01), 2),
+        audio_format="mp3",
+        audio_size=sum(len(chunk) for chunk in chunks),
+        trace_id=",".join(trace_ids),
+        usage_characters=total_usage,
+        voice_id="multi_speaker",
+        speaker_voices=speaker_voices,
+        line_count=len(turns),
+    )
+
+
 async def minimax_client_post(path: str, payload: dict[str, Any], *, timeout: int) -> dict[str, Any]:
     base_url = settings.minimax_api_base_url.rstrip("/")
     headers = {
@@ -879,6 +1322,99 @@ async def minimax_client_post(path: str, payload: dict[str, Any], *, timeout: in
         raise AudioGenerationError(f"minimax_error:{message}")
 
     return body
+
+
+async def elevenlabs_client_get(path: str, *, timeout: int) -> dict[str, Any]:
+    base_url = settings.elevenlabs_api_base_url.rstrip("/")
+    headers = {"xi-api-key": settings.elevenlabs_api_key}
+    try:
+        async with httpx.AsyncClient(timeout=timeout) as client:
+            response = await client.get(f"{base_url}{path}", headers=headers)
+            response.raise_for_status()
+            body = response.json()
+    except httpx.HTTPStatusError as exc:
+        raise AudioGenerationError(elevenlabs_http_error_detail(exc.response)) from exc
+    except httpx.HTTPError as exc:
+        raise AudioGenerationError("elevenlabs_request_failed") from exc
+    except ValueError as exc:
+        raise AudioGenerationError("elevenlabs_response_invalid_json") from exc
+    return body
+
+
+async def elevenlabs_client_post_audio(
+    path: str,
+    payload: dict[str, Any],
+    *,
+    timeout: int,
+    output_format: str,
+) -> tuple[bytes, str, str]:
+    base_url = settings.elevenlabs_api_base_url.rstrip("/")
+    headers = {
+        "xi-api-key": settings.elevenlabs_api_key,
+        "Content-Type": "application/json",
+    }
+    params = {"output_format": output_format}
+    try:
+        async with httpx.AsyncClient(timeout=timeout) as client:
+            response = await client.post(f"{base_url}{path}", headers=headers, params=params, json=payload)
+            response.raise_for_status()
+    except httpx.HTTPStatusError as exc:
+        raise AudioGenerationError(elevenlabs_http_error_detail(exc.response)) from exc
+    except httpx.HTTPError as exc:
+        raise AudioGenerationError("elevenlabs_request_failed") from exc
+
+    if not response.content:
+        raise AudioGenerationError("elevenlabs_audio_empty")
+
+    trace_id = (
+        response.headers.get("request-id")
+        or response.headers.get("x-request-id")
+        or response.headers.get("history-item-id")
+        or ""
+    )
+    content_type = response.headers.get("content-type") or ""
+    return response.content, trace_id, content_type
+
+
+def elevenlabs_http_error_detail(response: httpx.Response) -> str:
+    try:
+        body = response.json()
+    except ValueError:
+        body = {}
+    detail = ""
+    if isinstance(body, dict):
+        raw_detail = body.get("detail")
+        if isinstance(raw_detail, dict):
+            detail = str(raw_detail.get("message") or raw_detail.get("status") or "")
+        elif raw_detail:
+            detail = str(raw_detail)
+    suffix = f":{detail}" if detail else ""
+    return f"elevenlabs_error_{response.status_code}{suffix}"
+
+
+def elevenlabs_audio_format(output_format: str, content_type: str, fallback: str) -> str:
+    normalized_output = output_format.strip().lower()
+    if normalized_output.startswith("mp3"):
+        return "mp3"
+    if normalized_output.startswith("wav") or "audio/wav" in content_type.lower():
+        return "wav"
+    if normalized_output.startswith("pcm"):
+        return "pcm"
+    return fallback or "mp3"
+
+
+def elevenlabs_output_format(audio_format: str) -> str:
+    configured = settings.elevenlabs_tts_output_format.strip() or "mp3_44100_128"
+    if audio_format.lower() == "mp3" and not configured.lower().startswith("mp3"):
+        return "mp3_44100_128"
+    return configured
+
+
+def estimate_tts_duration_seconds(text: str) -> float:
+    words = [word for word in re.split(r"\s+", text.strip()) if word]
+    word_estimate = len(words) / 2.35 if words else 0
+    char_estimate = len(text.strip()) / 13.0 if text.strip() else 0
+    return round(max(word_estimate, char_estimate, 0.5), 2)
 
 
 def duration_from_extra_info(extra_info: dict[str, Any]) -> float:
@@ -906,6 +1442,13 @@ def default_minimax_tts_model() -> str:
     if model in MINIMAX_TTS_MODELS:
         return model
     return MINIMAX_TTS_MODELS[0]
+
+
+def default_elevenlabs_tts_model() -> str:
+    model = settings.elevenlabs_tts_model.strip()
+    if model in ELEVENLABS_TTS_MODELS:
+        return model
+    return ELEVENLABS_TTS_MODELS[0]
 
 
 def find_lesson_audio_reference(lesson_slug: str) -> LessonAudioReference:
@@ -1109,6 +1652,71 @@ def assign_dialogue_voices(
         used_voices.add(speaker_voices[speaker])
 
     return speaker_voices
+
+
+def assign_elevenlabs_dialogue_voices(
+    turns: list[DialogueTurn],
+    *,
+    fallback_voice_id: str,
+    language: str = "",
+) -> dict[str, str]:
+    speaker_by_key: dict[str, str] = {}
+    for turn in turns:
+        key = normalized_speaker_key(turn.speaker)
+        if key and key not in speaker_by_key:
+            speaker_by_key[key] = turn.speaker
+
+    speaker_voices: dict[str, str] = {}
+    used_voices: set[str] = set()
+
+    if is_arabic_language(language):
+        for key in sorted(speaker_by_key):
+            voice_id = ELEVENLABS_ARABIC_PERSONA_VOICES.get(key)
+            if not voice_id:
+                continue
+            speaker = speaker_by_key[key]
+            speaker_voices[speaker] = voice_id
+            used_voices.add(voice_id)
+
+    for key in sorted(speaker_by_key):
+        speaker = speaker_by_key[key]
+        if speaker in speaker_voices:
+            continue
+
+        gender = infer_speaker_gender(speaker)
+        if gender == "unknown":
+            gender = stable_unknown_speaker_gender(key)
+        voice_pool = elevenlabs_voice_pool_for_gender(gender, fallback_voice_id=fallback_voice_id, language=language)
+        voice_id = stable_voice_from_pool(key=key, voice_pool=voice_pool, used_voices=used_voices)
+        speaker_voices[speaker] = voice_id or fallback_voice_id
+        used_voices.add(speaker_voices[speaker])
+
+    return speaker_voices
+
+
+def elevenlabs_voice_pool_for_gender(
+    gender: str,
+    *,
+    fallback_voice_id: str,
+    language: str = "",
+) -> tuple[str, ...]:
+    if is_arabic_language(language):
+        env_voice = (
+            settings.elevenlabs_arabic_female_voice_id.strip()
+            if gender == "female"
+            else settings.elevenlabs_arabic_male_voice_id.strip()
+        )
+        curated_pool = (
+            ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES
+            if gender == "female"
+            else ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES
+        )
+        fallback = fallback_voice_id.strip()
+        return tuple(dict.fromkeys(voice for voice in [env_voice, *curated_pool, fallback] if voice).keys())
+
+    default_voice = settings.elevenlabs_tts_voice_id.strip() or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID
+    fallback = fallback_voice_id.strip()
+    return tuple(dict.fromkeys(voice for voice in [fallback, default_voice] if voice).keys())
 
 
 def infer_speaker_gender(speaker: str) -> str:
@@ -1332,6 +1940,7 @@ def update_audio_manifest(
     object_key: str,
     duration_seconds: float,
     audio_format: str,
+    provider: str,
     model: str,
     voice_id: str,
     speaker_voices: dict[str, str],
@@ -1351,7 +1960,7 @@ def update_audio_manifest(
         "script_file": "listening_script.md",
         "audio_url": audio_url,
         "duration_seconds": duration_seconds,
-        "provider": "minimax",
+        "provider": provider,
         "model": model,
         "voice_id": voice_id,
         "speaker_voices": speaker_voices,
@@ -1376,7 +1985,7 @@ def update_audio_manifest(
 
     data["lesson_key"] = lesson.lesson_key
     data["status"] = "generated"
-    data["provider"] = "minimax"
+    data["provider"] = provider
     data["assets"] = next_assets
     write_yaml_mapping(lesson.audio_manifest_path, data)
     return data

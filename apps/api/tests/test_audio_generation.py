@@ -10,9 +10,13 @@ from app.data.curriculum import curriculum_root
 from app.services.audio_generation import (
     CURATED_MINIMAX_VOICE_IDS,
     FALLBACK_MINIMAX_VOICES,
+    TTS_PROVIDER_ELEVENLABS,
+    TTS_PROVIDER_MINIMAX,
     MiniMaxAudioResult,
+    assign_elevenlabs_dialogue_voices,
     assign_dialogue_voices,
     concatenate_wav_audio,
+    default_tts_provider_for_language,
     filter_voice_options,
     infer_speaker_gender,
     infer_voice_gender,
@@ -179,6 +183,61 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Ustadh"], "Arabic_FriendlyGuy")
         self.assertEqual(voices["Khalid"], "Arabic_FriendlyGuy")
         self.assertEqual(voices["Noura"], "Arabic_CalmWoman")
+
+    def test_arabic_defaults_to_elevenlabs_provider(self):
+        self.assertEqual(default_tts_provider_for_language("arabic"), TTS_PROVIDER_ELEVENLABS)
+        self.assertEqual(default_tts_provider_for_language("english"), TTS_PROVIDER_MINIMAX)
+
+    def test_elevenlabs_arabic_dialogue_voice_assignment_uses_configured_gender_voices(self):
+        turns = [
+            _turn("Khalid", "مرحبا."),
+            _turn("Noura", "أهلا."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="fallback-voice",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Khalid"], "rPNcQ53R703tTmtue1AT")
+        self.assertEqual(voices["Noura"], "4wf10lgibMnboGJGCLrP")
+
+    def test_elevenlabs_arabic_unknown_speakers_keep_gendered_voice_pool(self):
+        turns = [
+            _turn("Female", "أهلا."),
+            _turn("Male", "مرحبا."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            language="arabic",
+        )
+
+        self.assertIn(
+            voices["Female"],
+            {
+                "gMB389pj77Qe5nErWNjd",
+                "4wf10lgibMnboGJGCLrP",
+                "B5xxC4eQoOFJnY4R5XkI",
+                "ulJ49j1YlxrYnPoj5o12",
+            },
+        )
+        self.assertIn(
+            voices["Male"],
+            {
+                "OFHP1Qg30FPoNfkUFFlA",
+                "yXEnnEln9armDCyhkXcA",
+                "rPNcQ53R703tTmtue1AT",
+                "zthCTrnZpSGUnbO0tTzN",
+                "wxweiHvoC2r2jFM7mS8b",
+                "amSNjVC0vWYiE8iGimVb",
+                "68MRVrnQAt8vLbu0FCzw",
+                "4mZ0H4Jh5iqmgAWK97eF",
+                "HJ8unGw6UFYkApOU0Oea",
+            },
+        )
 
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(

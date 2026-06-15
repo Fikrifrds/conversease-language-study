@@ -309,6 +309,7 @@ class AdminCmsTest(unittest.TestCase):
             self.assertTrue(second_response.json()["data"]["cached"])
             self.assertEqual(list_response.json()["data"][0]["voice_id"], "English_expressive_narrator")
             generate_preview.assert_awaited_once_with(
+                provider="minimax",
                 model="speech-2.8-hd",
                 voice_id="English_expressive_narrator",
                 speed=1.0,
@@ -356,6 +357,7 @@ class AdminCmsTest(unittest.TestCase):
             "duration_seconds": 12.4,
             "audio_format": "mp3",
             "audio_size": 12000,
+            "provider": "minimax",
             "model": "speech-2.8-hd",
             "voice_id": "English_expressive_narrator",
             "trace_id": "trace-1",
@@ -397,6 +399,7 @@ class AdminCmsTest(unittest.TestCase):
             self.assertEqual(response.json()["revision"]["changed_by"], "Audio QA")
             generate_audio.assert_awaited_once_with(
                 lesson_slug="saying-hello",
+                provider=None,
                 model="speech-2.8-hd",
                 voice_id="English_expressive_narrator",
                 speed=0.95,

@@ -62,6 +62,7 @@ import {
 } from "./admin-cms/utils";
 
 const adminNameStorageKey = "conversease.admin_name";
+const audioProviderStorageKey = "conversease.admin_audio_provider";
 const audioModelStorageKey = "conversease.admin_audio_model";
 const audioVoiceStorageKey = "conversease.admin_audio_voice";
 const audioSpeedStorageKey = "conversease.admin_audio_speed";
@@ -80,6 +81,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<AdminEmailTemplate | null>(null);
   const [audioSettings, setAudioSettings] = useState<AdminAudioSettings | null>(null);
+  const [audioProvider, setAudioProvider] = useState("minimax");
   const [audioModel, setAudioModel] = useState("");
   const [audioVoiceId, setAudioVoiceId] = useState("");
   const [audioSpeed, setAudioSpeed] = useState(1);
@@ -104,6 +106,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [hasLoadedRevisions, setHasLoadedRevisions] = useState(false);
   const [bulkAudioQueue, setBulkAudioQueue] = useState<BulkAudioQueueItem[]>([]);
   const [isBulkGeneratingAudio, setIsBulkGeneratingAudio] = useState(false);
+  const audioLanguageContext: LanguageFilter | "all" = tab === "examAudio" ? "all" : languageFilter;
 
   useEffect(() => {
     const storedName = window.sessionStorage.getItem(adminNameStorageKey);
@@ -117,6 +120,12 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       window.sessionStorage.setItem(adminNameStorageKey, adminName);
     }
   }, [adminName]);
+
+  useEffect(() => {
+    if (audioProvider) {
+      window.localStorage.setItem(audioProviderStorageKey, audioProvider);
+    }
+  }, [audioProvider]);
 
   useEffect(() => {
     if (audioModel) {
@@ -135,7 +144,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   }, [audioSpeed]);
 
   useEffect(() => {
-    if (!audioModel) {
+    if (!audioProvider || !audioModel) {
       setVoicePreviewsByVoiceId({});
       return;
     }
@@ -143,9 +152,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     let cancelled = false;
     setIsLoadingVoicePreviews(true);
     void getAdminVoicePreviews({
+      provider: audioProvider,
       model: audioModel,
       speed: audioSpeed,
-      sampleText: audioPreviewSampleText(languageFilter)
+      sampleText: audioPreviewSampleText(audioLanguageContext)
     })
       .then((previews) => {
         if (cancelled) {
@@ -169,20 +179,29 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     return () => {
       cancelled = true;
     };
-  }, [audioModel, audioSpeed, languageFilter]);
+  }, [audioProvider, audioModel, audioSpeed, audioLanguageContext]);
 
   useEffect(() => {
     if (!audioSettings) {
       return;
     }
 
-    setAudioVoiceId((current) =>
-      audioVoiceMatchesLanguage(current, languageFilter, audioSettings.voices)
+    const nextProvider = defaultAudioProviderForLanguage(audioSettings, audioLanguageContext, audioProvider);
+    if (nextProvider !== audioProvider) {
+      setAudioProvider(nextProvider);
+    }
+    setAudioModel((current) =>
+      audioModelMatchesProvider(current, nextProvider, audioSettings)
         ? current
-        : defaultAudioVoiceIdForLanguage(audioSettings, languageFilter)
+        : defaultAudioModelForProvider(audioSettings, nextProvider)
     );
-    setAudioSpeed((current) => defaultAudioSpeedForLanguage(languageFilter, current));
-  }, [audioSettings, languageFilter]);
+    setAudioVoiceId((current) =>
+      audioVoiceMatchesLanguage(current, audioLanguageContext, audioSettings.voices, nextProvider)
+        ? current
+        : defaultAudioVoiceIdForLanguage(audioSettings, audioLanguageContext, nextProvider)
+    );
+    setAudioSpeed((current) => defaultAudioSpeedForLanguage(audioLanguageContext, current));
+  }, [audioSettings, audioLanguageContext, audioProvider]);
 
   useEffect(() => {
     void loadOverview();
@@ -330,13 +349,23 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     setIsLoadingAudioSettings(true);
     try {
       const nextAudioSettings = await getAdminAudioSettings();
+      const nextProvider = defaultAudioProviderForLanguage(
+        nextAudioSettings,
+        audioLanguageContext,
+        storedAudioProvider(nextAudioSettings.defaultProvider)
+      );
       setAudioSettings(nextAudioSettings);
-      setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
+      setAudioProvider(nextProvider);
+      setAudioModel((current) =>
+        audioModelMatchesProvider(current, nextProvider, nextAudioSettings)
+          ? current
+          : storedAudioModel(defaultAudioModelForProvider(nextAudioSettings, nextProvider), nextProvider)
+      );
       setAudioVoiceId((current) => {
-        const storedVoice = current || storedAudioVoice(nextAudioSettings.defaultVoiceId);
-        return audioVoiceMatchesLanguage(storedVoice, languageFilter, nextAudioSettings.voices)
+        const storedVoice = current || storedAudioVoice(defaultAudioVoiceIdForLanguage(nextAudioSettings, audioLanguageContext, nextProvider));
+        return audioVoiceMatchesLanguage(storedVoice, audioLanguageContext, nextAudioSettings.voices, nextProvider)
           ? storedVoice
-          : defaultAudioVoiceIdForLanguage(nextAudioSettings, languageFilter);
+          : defaultAudioVoiceIdForLanguage(nextAudioSettings, audioLanguageContext, nextProvider);
       });
       setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
     } catch {
@@ -377,6 +406,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       const audio = await generateAdminLessonAudio({
         generatedBy: adminName,
         lessonSlug: lesson.slug,
+        provider: audioProvider,
         model: audioModel,
         voiceId: audioVoiceId,
         speed: audioSpeed
@@ -421,6 +451,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             const audio = await generateAdminLessonAudio({
               generatedBy: adminName,
               lessonSlug: lesson.lessonSlug,
+              provider: audioProvider,
               model: audioModel,
               voiceId: audioVoiceId,
               speed: audioSpeed
@@ -487,6 +518,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       const result = await generateAdminExamTemplateAudio({
         generatedBy: adminName,
         templateId: template.id,
+        provider: audioProvider,
         model: audioModel,
         voiceId: audioVoiceId,
         speed: audioSpeed,
@@ -515,6 +547,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       const generated = await generateAdminExamItemAudio({
         generatedBy: adminName,
         itemId: item.id,
+        provider: audioProvider,
         model: audioModel,
         voiceId: audioVoiceId,
         speed: audioSpeed
@@ -738,6 +771,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
                 isLoading={isLoadingReadiness}
                 onLanguageFilterChange={setLanguageFilter}
                 audioSettings={audioSettings}
+                audioProvider={audioProvider}
                 audioModel={audioModel}
                 audioVoiceId={audioVoiceId}
                 audioSpeed={audioSpeed}
@@ -748,6 +782,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
                 isBulkGeneratingAudio={isBulkGeneratingAudio}
                 isLoadingAudioSettings={isLoadingAudioSettings}
                 isLoadingVoicePreviews={isLoadingVoicePreviews}
+                onAudioProviderChange={setAudioProvider}
                 onAudioModelChange={setAudioModel}
                 onAudioVoiceChange={setAudioVoiceId}
                 onAudioSpeedChange={setAudioSpeed}
@@ -760,19 +795,21 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
                   settings={audioSettings}
                   language="all"
                   isLoading={isLoadingAudioSettings}
+                  provider={audioProvider}
                   model={audioModel}
                   voiceId={audioVoiceId}
                   speed={audioSpeed}
                   preview={voicePreviewsByVoiceId[audioVoiceId] ?? null}
                   voicePreviewsByVoiceId={voicePreviewsByVoiceId}
                   isLoadingPreviewCache={isLoadingVoicePreviews}
+                  onProviderChange={setAudioProvider}
                   onModelChange={setAudioModel}
                   onVoiceChange={setAudioVoiceId}
                   onSpeedChange={setAudioSpeed}
                 />
                 <ExamAudioPanel
                   templates={examAudioTemplates}
-                  audioReadyToGenerate={Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured)}
+                  audioReadyToGenerate={Boolean(audioSettings && audioProviderConfigured(audioSettings, audioProvider) && audioSettings.s3Configured)}
                   isLoading={isLoadingExamTemplates}
                   hasLoaded={hasLoadedExamTemplates}
                   generatingTemplateId={generatingExamTemplateId}
@@ -886,6 +923,7 @@ function LessonAudioPanel({
   isLoading,
   onLanguageFilterChange,
   audioSettings,
+  audioProvider,
   audioModel,
   audioVoiceId,
   audioSpeed,
@@ -896,6 +934,7 @@ function LessonAudioPanel({
   isBulkGeneratingAudio,
   isLoadingAudioSettings,
   isLoadingVoicePreviews,
+  onAudioProviderChange,
   onAudioModelChange,
   onAudioVoiceChange,
   onAudioSpeedChange,
@@ -908,6 +947,7 @@ function LessonAudioPanel({
   isLoading: boolean;
   onLanguageFilterChange: (value: LanguageFilter) => void;
   audioSettings: AdminAudioSettings | null;
+  audioProvider: string;
   audioModel: string;
   audioVoiceId: string;
   audioSpeed: number;
@@ -918,6 +958,7 @@ function LessonAudioPanel({
   isBulkGeneratingAudio: boolean;
   isLoadingAudioSettings: boolean;
   isLoadingVoicePreviews: boolean;
+  onAudioProviderChange: (value: string) => void;
   onAudioModelChange: (value: string) => void;
   onAudioVoiceChange: (value: string) => void;
   onAudioSpeedChange: (value: number) => void;
@@ -927,7 +968,7 @@ function LessonAudioPanel({
   const filteredLevels = filterReadinessLevels(levels, languageFilter);
   const missingBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: false });
   const allTextReadyBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: true });
-  const audioReadyToGenerate = Boolean(audioSettings?.minimaxConfigured && audioSettings.s3Configured);
+  const audioReadyToGenerate = Boolean(audioSettings && audioProviderConfigured(audioSettings, audioProvider) && audioSettings.s3Configured);
 
   return (
     <div className="space-y-5">
@@ -935,12 +976,14 @@ function LessonAudioPanel({
         settings={audioSettings}
         language={languageFilter}
         isLoading={isLoadingAudioSettings}
+        provider={audioProvider}
         model={audioModel}
         voiceId={audioVoiceId}
         speed={audioSpeed}
         preview={voicePreview}
         voicePreviewsByVoiceId={voicePreviewsByVoiceId}
         isLoadingPreviewCache={isLoadingVoicePreviews}
+        onProviderChange={onAudioProviderChange}
         onModelChange={onAudioModelChange}
         onVoiceChange={onAudioVoiceChange}
         onSpeedChange={onAudioSpeedChange}
@@ -986,12 +1029,14 @@ function AudioSettingsPanel({
   settings,
   language,
   isLoading,
+  provider,
   model,
   voiceId,
   speed,
   preview,
   voicePreviewsByVoiceId,
   isLoadingPreviewCache,
+  onProviderChange,
   onModelChange,
   onVoiceChange,
   onSpeedChange
@@ -999,20 +1044,23 @@ function AudioSettingsPanel({
   settings: AdminAudioSettings | null;
   language: LanguageFilter | "all";
   isLoading: boolean;
+  provider: string;
   model: string;
   voiceId: string;
   speed: number;
   preview: AdminVoicePreviewAudio | null;
   voicePreviewsByVoiceId: Record<string, AdminVoicePreviewAudio>;
   isLoadingPreviewCache: boolean;
+  onProviderChange: (value: string) => void;
   onModelChange: (value: string) => void;
   onVoiceChange: (value: string) => void;
   onSpeedChange: (value: number) => void;
 }) {
-  const configured = Boolean(settings?.minimaxConfigured && settings.s3Configured);
-  const voiceOptions = filterVoicesForLanguage(settings?.voices ?? [], language);
-  const modelOptions = settings?.models ?? [];
+  const configured = Boolean(settings && audioProviderConfigured(settings, provider) && settings.s3Configured);
+  const voiceOptions = filterVoicesForLanguage(settings?.voices ?? [], language, provider);
+  const modelOptions = audioModelsForProvider(settings, provider);
   const selectedVoice = voiceOptions.find((voice) => voice.voiceId === voiceId);
+  const providerOptions = settings?.providers ?? [];
 
   return (
     <div className="rounded-lg bg-paper p-4">
@@ -1023,7 +1071,7 @@ function AudioSettingsPanel({
           </div>
           <div>
             <p className="text-xs font-semibold uppercase text-leaf">Audio Generator</p>
-            <h2 className="mt-1 font-semibold">MiniMax listening audio</h2>
+            <h2 className="mt-1 font-semibold">Listening audio</h2>
             <p className="mt-1 text-sm text-ink/55">
               Pilih default voice dan model untuk generate audio listening lesson.
             </p>
@@ -1037,6 +1085,11 @@ function AudioSettingsPanel({
             tone={settings?.minimaxConfigured ? "ok" : "danger"}
           />
           <StatusPill
+            icon={Sparkles}
+            label={settings?.elevenlabsConfigured ? "ElevenLabs ready" : "ElevenLabs missing"}
+            tone={settings?.elevenlabsConfigured ? "ok" : "danger"}
+          />
+          <StatusPill
             icon={Headphones}
             label={settings?.s3Configured ? "S3 ready" : "S3 missing"}
             tone={settings?.s3Configured ? "ok" : "danger"}
@@ -1044,7 +1097,31 @@ function AudioSettingsPanel({
         </div>
       </div>
 
-      <div className="mt-4 grid gap-3 lg:grid-cols-[1fr_140px]">
+      <div className="mt-4 grid gap-3 lg:grid-cols-[180px_1fr_140px]">
+        <label className="text-sm font-medium text-ink/70">
+          Provider
+          <select
+            value={provider}
+            onChange={(event) => {
+              const nextProvider = event.target.value;
+              onProviderChange(nextProvider);
+              if (settings) {
+                onModelChange(defaultAudioModelForProvider(settings, nextProvider));
+                onVoiceChange(defaultAudioVoiceIdForLanguage(settings, language, nextProvider));
+              }
+            }}
+            disabled={!settings}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            {!providerOptions.length ? <option value="">Loading</option> : null}
+            {providerOptions.map((providerOption) => (
+              <option key={providerOption.key} value={providerOption.key}>
+                {providerOption.label}
+              </option>
+            ))}
+          </select>
+        </label>
+
         <label className="text-sm font-medium text-ink/70">
           Model
           <select
@@ -1119,7 +1196,7 @@ function AudioSettingsPanel({
 
       {!configured ? (
         <p className="mt-3 rounded-lg bg-white px-3 py-2 text-sm text-ink/60">
-          Generate audio aktif setelah <code>MINIMAX_API_KEY</code>, <code>S3_BUCKET</code>,{" "}
+          Generate audio aktif setelah provider API key, <code>S3_BUCKET</code>,{" "}
           <code>AWS_ACCESS_KEY_ID</code>, <code>AWS_SECRET_ACCESS_KEY</code>, dan{" "}
           <code>AWS_REGION</code> tersedia di API.
         </p>
@@ -1375,6 +1452,7 @@ function ExamAudioPanel({
                                 className="h-10 w-full"
                               />
                               <p className="mt-2 text-xs text-ink/45">
+                                {String(item.audioMetadata.provider || "provider unknown")} /{" "}
                                 {String(item.audioMetadata.model || "model unknown")} /{" "}
                                 {String(item.audioMetadata.voice_id || "voice unknown")}
                               </p>
@@ -1717,6 +1795,7 @@ function LevelReadinessCard({
                           <div>
                             <p className="text-sm font-semibold text-ink">Listening audio</p>
                             <p className="mt-1 text-xs text-ink/50">
+                              {lesson.audioAsset.provider || "provider unknown"} /{" "}
                               {lesson.audioAsset.model || "model unknown"} /{" "}
                               {lesson.audioAsset.lineCount > 1
                                 ? `${lesson.audioAsset.lineCount} dialogue lines`
@@ -1918,45 +1997,107 @@ function bulkQueueSummary(queue: BulkAudioQueueItem[]) {
   );
 }
 
-function filterVoicesForLanguage(voices: AdminAudioVoice[], language: LanguageFilter | "all") {
-  if (language === "all") {
-    return voices;
-  }
-  return voices.filter((voice) => audioVoiceMatchesLanguage(voice.voiceId, language, voices));
+function filterVoicesForLanguage(voices: AdminAudioVoice[], language: LanguageFilter | "all", provider: string) {
+  return voices.filter((voice) => audioVoiceMatchesLanguage(voice.voiceId, language, voices, provider));
 }
 
-function audioVoiceMatchesLanguage(voiceId: string, language: LanguageFilter | "all", voices: AdminAudioVoice[]) {
+function audioVoiceMatchesLanguage(
+  voiceId: string,
+  language: LanguageFilter | "all",
+  voices: AdminAudioVoice[],
+  provider: string
+) {
   if (!voiceId || language === "all") {
-    return Boolean(voiceId);
+    const voice = voices.find((item) => item.voiceId === voiceId);
+    return Boolean(voiceId && (!provider || voice?.provider === provider));
   }
   const voice = voices.find((item) => item.voiceId === voiceId);
+  if (provider && voice?.provider !== provider) {
+    return false;
+  }
   const normalizedLanguage = language.toLowerCase();
   if (normalizedLanguage === "arabic") {
-    return voiceId.toLowerCase().startsWith("arabic_") || voice?.language?.toLowerCase() === "arabic";
+    return provider === "elevenlabs" || voice?.language?.toLowerCase() === "arabic";
   }
   if (normalizedLanguage === "english") {
-    return voiceId.toLowerCase().startsWith("english_") || voice?.language?.toLowerCase() === "english";
+    return provider === "minimax" && (voiceId.toLowerCase().startsWith("english_") || voice?.language?.toLowerCase() === "english");
   }
   return true;
 }
 
-function defaultAudioVoiceIdForLanguage(settings: AdminAudioSettings, language: LanguageFilter | "all") {
-  const voices = settings.voices;
+function defaultAudioProviderForLanguage(
+  settings: AdminAudioSettings,
+  language: LanguageFilter | "all",
+  currentProvider: string
+) {
+  const availableProviders = new Set(settings.providers.map((provider) => provider.key));
+  if (language.toLowerCase() === "arabic" && availableProviders.has("elevenlabs")) {
+    return "elevenlabs";
+  }
+  if (language.toLowerCase() === "english" && availableProviders.has("minimax")) {
+    return "minimax";
+  }
+  if (currentProvider && availableProviders.has(currentProvider)) {
+    return currentProvider;
+  }
+  return settings.defaultProvider || settings.providers[0]?.key || "minimax";
+}
+
+function defaultAudioVoiceIdForLanguage(
+  settings: AdminAudioSettings,
+  language: LanguageFilter | "all",
+  provider: string
+) {
+  const voices = settings.voices.filter((voice) => voice.provider === provider);
+  if (provider === "elevenlabs") {
+    return (
+      voices.find((voice) => voice.voiceId === audioProviderConfig(settings, provider)?.defaultVoiceId)?.voiceId ??
+      voices.find((voice) => voice.gender === "male")?.voiceId ??
+      voices[0]?.voiceId ??
+      audioProviderConfig(settings, provider)?.defaultVoiceId ??
+      settings.defaultVoiceId
+    );
+  }
   if (language.toLowerCase() === "arabic") {
     return (
       voices.find((voice) => voice.voiceId === "Arabic_FriendlyGuy")?.voiceId ??
       voices.find((voice) => voice.voiceId.toLowerCase().startsWith("arabic_"))?.voiceId ??
+      audioProviderConfig(settings, provider)?.defaultVoiceId ??
       settings.defaultVoiceId
     );
   }
-  if (language.toLowerCase() === "english") {
+  if (language.toLowerCase() === "english" || provider === "minimax") {
     return (
       voices.find((voice) => voice.voiceId === settings.defaultVoiceId)?.voiceId ??
       voices.find((voice) => voice.voiceId.toLowerCase().startsWith("english_"))?.voiceId ??
+      audioProviderConfig(settings, provider)?.defaultVoiceId ??
       settings.defaultVoiceId
     );
   }
-  return settings.defaultVoiceId;
+  return voices[0]?.voiceId ?? audioProviderConfig(settings, provider)?.defaultVoiceId ?? settings.defaultVoiceId;
+}
+
+function audioProviderConfig(settings: AdminAudioSettings, provider: string) {
+  return settings.providers.find((item) => item.key === provider) ?? null;
+}
+
+function audioProviderConfigured(settings: AdminAudioSettings, provider: string) {
+  return Boolean(audioProviderConfig(settings, provider)?.configured);
+}
+
+function audioModelsForProvider(settings: AdminAudioSettings | null, provider: string) {
+  if (!settings) {
+    return [];
+  }
+  return audioProviderConfig(settings, provider)?.models ?? settings.models;
+}
+
+function defaultAudioModelForProvider(settings: AdminAudioSettings, provider: string) {
+  return audioProviderConfig(settings, provider)?.defaultModel ?? settings.defaultModel;
+}
+
+function audioModelMatchesProvider(model: string, provider: string, settings: AdminAudioSettings) {
+  return Boolean(model && audioModelsForProvider(settings, provider).includes(model));
 }
 
 function defaultAudioSpeedForLanguage(language: LanguageFilter | "all", current: number) {
@@ -1976,8 +2117,22 @@ function audioPreviewSampleText(language: LanguageFilter | "all") {
   return undefined;
 }
 
-function storedAudioModel(fallback: string) {
-  return window.localStorage.getItem(audioModelStorageKey) || fallback;
+function storedAudioProvider(fallback: string) {
+  return window.localStorage.getItem(audioProviderStorageKey) || fallback;
+}
+
+function storedAudioModel(fallback: string, provider: string) {
+  const storedModel = window.localStorage.getItem(audioModelStorageKey);
+  if (!storedModel) {
+    return fallback;
+  }
+  if (provider === "elevenlabs" && storedModel.startsWith("eleven_")) {
+    return storedModel;
+  }
+  if (provider === "minimax" && storedModel.startsWith("speech-")) {
+    return storedModel;
+  }
+  return fallback;
 }
 
 function storedAudioVoice(fallback: string) {
