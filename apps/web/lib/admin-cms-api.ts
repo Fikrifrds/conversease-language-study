@@ -166,6 +166,7 @@ export type AdminAudioVoice = {
   voiceName: string;
   category: string;
   gender: "female" | "male" | "neutral" | "unknown";
+  language: string;
   description: string;
 };
 
@@ -445,6 +446,7 @@ type ApiAdminAudioVoice = {
   voice_name: string;
   category: string;
   gender?: string;
+  language?: string;
   description: string;
 };
 
@@ -733,6 +735,7 @@ function mapAudioVoice(voice: ApiAdminAudioVoice): AdminAudioVoice {
     voiceName: voice.voice_name,
     category: voice.category,
     gender: mapVoiceGender(voice.gender),
+    language: voice.language ?? "",
     description: voice.description
   };
 }

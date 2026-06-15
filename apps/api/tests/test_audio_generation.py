@@ -163,6 +163,23 @@ class AudioGenerationTest(unittest.TestCase):
                         expected_gender,
                     )
 
+    def test_arabic_dialogue_voice_assignment_uses_arabic_pool_for_unknown_speakers(self):
+        turns = [
+            _turn("Ustadh", "مرحبا."),
+            _turn("Khalid", "أنا خالد."),
+            _turn("Noura", "أنا من إندونيسيا."),
+        ]
+
+        voices = assign_dialogue_voices(
+            turns,
+            fallback_voice_id="Arabic_FriendlyGuy",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Ustadh"], "Arabic_FriendlyGuy")
+        self.assertEqual(voices["Khalid"], "Arabic_FriendlyGuy")
+        self.assertEqual(voices["Noura"], "Arabic_CalmWoman")
+
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
             infer_voice_gender(

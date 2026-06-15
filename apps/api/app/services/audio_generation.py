@@ -54,6 +54,15 @@ CLEAR_ARABIC_MALE_DIALOGUE_VOICES = (
     "Arabic_FriendlyGuy",
 )
 
+ARABIC_LANGUAGE_KEYS = {"arabic", "ar", "ar-sa", "ar-ae", "ar-eg"}
+ENGLISH_LANGUAGE_KEYS = {"english", "en", "en-us", "en-gb"}
+ARABIC_DEFAULT_VOICE_ID = "Arabic_FriendlyGuy"
+ENGLISH_DEFAULT_VOICE_ID = "English_expressive_narrator"
+ARABIC_TTS_LANGUAGE_BOOST = "Arabic"
+ENGLISH_TTS_LANGUAGE_BOOST = "English"
+ARABIC_DEFAULT_SPEED = 0.9
+ARABIC_VOICE_PREVIEW_SAMPLE_TEXT = "مرحبًا. اسمي أحمد. أنا أتعلم العربية الفصحى بوضوح وهدوء."
+
 DIALOGUE_TARGET_PEAK_RATIO = 0.82
 ENGLISH_CURATED_MINIMAX_VOICE_IDS = (
     "English_expressive_narrator",
@@ -178,6 +187,22 @@ DIALOGUE_PERSONA_VOICES = {
     "teacherarabicfemale": "Arabic_CalmWoman",
     "arabicteacher": "Arabic_FriendlyGuy",
     "arabicstudent": "Arabic_CalmWoman",
+    "ustadh": "Arabic_FriendlyGuy",
+    "ustadz": "Arabic_FriendlyGuy",
+    "ustaz": "Arabic_FriendlyGuy",
+    "teacherarabic": "Arabic_FriendlyGuy",
+    "studentarabicmale": "Arabic_FriendlyGuy",
+    "studentarabicfemale": "Arabic_CalmWoman",
+    "talib": "Arabic_FriendlyGuy",
+    "talibah": "Arabic_CalmWoman",
+    "khalid": "Arabic_FriendlyGuy",
+    "zayd": "Arabic_FriendlyGuy",
+    "ziyad": "Arabic_FriendlyGuy",
+    "aisha": "Arabic_CalmWoman",
+    "khadijah": "Arabic_CalmWoman",
+    "noura": "Arabic_CalmWoman",
+    "nura": "Arabic_CalmWoman",
+    "layla": "Arabic_CalmWoman",
 }
 
 FALLBACK_MINIMAX_VOICES = tuple(
@@ -311,10 +336,10 @@ def filter_voice_options(voices: list[dict[str, Any]], *, language: str) -> list
 
 
 def curated_voice_ids_for_language(language: str) -> tuple[str, ...]:
-    normalized = (language or "").strip().lower().replace("_", "-")
+    normalized = normalized_language_key(language)
     if normalized in {"all", "any", "*"}:
         return CURATED_MINIMAX_VOICE_IDS
-    if normalized in {"arabic", "ar", "ar-sa", "ar-ae", "ar-eg"}:
+    if normalized in ARABIC_LANGUAGE_KEYS:
         return ARABIC_CURATED_MINIMAX_VOICE_IDS
     return ENGLISH_CURATED_MINIMAX_VOICE_IDS
 
@@ -337,6 +362,69 @@ def readable_voice_name(voice_id: str) -> str:
     if "_" in name:
         name = name.split("_", 1)[1]
     return name.replace("_", " ").replace("-", " ").strip().title() or voice_id
+
+
+def normalized_language_key(language: str) -> str:
+    return (language or "").strip().lower().replace("_", "-")
+
+
+def is_arabic_language(language: str) -> bool:
+    return normalized_language_key(language) in ARABIC_LANGUAGE_KEYS
+
+
+def is_english_language(language: str) -> bool:
+    return normalized_language_key(language) in ENGLISH_LANGUAGE_KEYS
+
+
+def is_arabic_voice_id(voice_id: str) -> bool:
+    return (voice_id or "").strip().lower().startswith("arabic_")
+
+
+def is_english_voice_id(voice_id: str) -> bool:
+    return (voice_id or "").strip().lower().startswith("english_")
+
+
+def default_voice_id_for_language(language: str) -> str:
+    if is_arabic_language(language):
+        return ARABIC_DEFAULT_VOICE_ID
+    return settings.minimax_tts_voice_id.strip() or ENGLISH_DEFAULT_VOICE_ID
+
+
+def voice_id_for_language(language: str, requested_voice_id: Optional[str]) -> str:
+    selected_voice = (requested_voice_id or settings.minimax_tts_voice_id).strip()
+    if is_arabic_language(language):
+        return selected_voice if is_arabic_voice_id(selected_voice) else ARABIC_DEFAULT_VOICE_ID
+    if is_english_language(language) and is_arabic_voice_id(selected_voice):
+        return ENGLISH_DEFAULT_VOICE_ID
+    return selected_voice or default_voice_id_for_language(language)
+
+
+def language_boost_for_language(language: str) -> str:
+    if is_arabic_language(language):
+        return ARABIC_TTS_LANGUAGE_BOOST
+    if is_english_language(language):
+        return ENGLISH_TTS_LANGUAGE_BOOST
+    return settings.minimax_tts_language_boost or "auto"
+
+
+def language_boost_for_voice(voice_id: str) -> str:
+    if is_arabic_voice_id(voice_id):
+        return ARABIC_TTS_LANGUAGE_BOOST
+    if is_english_voice_id(voice_id):
+        return ENGLISH_TTS_LANGUAGE_BOOST
+    return settings.minimax_tts_language_boost or "auto"
+
+
+def default_voice_preview_text(voice_id: str) -> str:
+    if is_arabic_voice_id(voice_id):
+        return ARABIC_VOICE_PREVIEW_SAMPLE_TEXT
+    return "Hello, welcome to Conversease. Listen, repeat, and speak with clear confidence."
+
+
+def speed_for_language(language: str, speed: float) -> float:
+    if is_arabic_language(language) and abs(float(speed) - 1.0) < 0.001:
+        return ARABIC_DEFAULT_SPEED
+    return speed
 
 
 def infer_voice_gender(
@@ -402,17 +490,20 @@ async def generate_lesson_listening_audio(
     lesson = find_lesson_audio_reference(lesson_slug)
     dialogue_turns = listening_script_to_dialogue_turns(lesson.listening_script_path)
     selected_model = normalized_model(model or settings.minimax_tts_model)
-    selected_voice_id = (voice_id or settings.minimax_tts_voice_id).strip()
+    selected_voice_id = voice_id_for_language(lesson.language, voice_id)
     if not selected_voice_id:
         raise AudioGenerationError("minimax_voice_id_missing")
+    selected_speed = speed_for_language(lesson.language, speed)
+    selected_language_boost = language_boost_for_language(lesson.language)
 
     if len(dialogue_turns) >= 2:
         generated = await synthesize_dialogue_minimax_tts(
             turns=dialogue_turns,
             model=selected_model,
             fallback_voice_id=selected_voice_id,
-            speed=speed,
-            language_boost=settings.minimax_tts_language_boost,
+            speed=selected_speed,
+            language_boost=selected_language_boost,
+            language=lesson.language,
         )
     else:
         tts_text = listening_script_to_tts_text(lesson.listening_script_path)
@@ -420,8 +511,8 @@ async def generate_lesson_listening_audio(
             text=tts_text,
             model=selected_model,
             voice_id=selected_voice_id,
-            speed=speed,
-            language_boost=settings.minimax_tts_language_boost,
+            speed=selected_speed,
+            language_boost=selected_language_boost,
         )
 
     generated_at = datetime.now(timezone.utc)
@@ -494,7 +585,7 @@ async def generate_voice_preview_audio(
 
     preview_text = (
         sample_text
-        or "Hello, welcome to Conversease. Listen, repeat, and speak with clear confidence."
+        or default_voice_preview_text(selected_voice_id)
     ).strip()
     if len(preview_text) < 8:
         raise AudioGenerationError("voice_preview_text_empty")
@@ -506,7 +597,7 @@ async def generate_voice_preview_audio(
         model=selected_model,
         voice_id=selected_voice_id,
         speed=speed,
-        language_boost=settings.minimax_tts_language_boost,
+        language_boost=language_boost_for_voice(selected_voice_id),
     )
 
     generated_at = datetime.now(timezone.utc)
@@ -730,8 +821,9 @@ async def synthesize_dialogue_minimax_tts(
     fallback_voice_id: str,
     speed: float,
     language_boost: str,
+    language: str = "",
 ) -> MiniMaxAudioResult:
-    speaker_voices = assign_dialogue_voices(turns, fallback_voice_id=fallback_voice_id)
+    speaker_voices = assign_dialogue_voices(turns, fallback_voice_id=fallback_voice_id, language=language)
     chunks: list[bytes] = []
     trace_ids: list[str] = []
     total_usage = 0
@@ -972,7 +1064,12 @@ def clean_dialogue_text(value: str) -> str:
     return value.replace("**", "").replace("*", "").replace("  ", " ").strip()
 
 
-def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str) -> dict[str, str]:
+def assign_dialogue_voices(
+    turns: list[DialogueTurn],
+    *,
+    fallback_voice_id: str,
+    language: str = "",
+) -> dict[str, str]:
     speaker_by_key: dict[str, str] = {}
     for turn in turns:
         key = normalized_speaker_key(turn.speaker)
@@ -999,7 +1096,14 @@ def assign_dialogue_voices(turns: list[DialogueTurn], *, fallback_voice_id: str)
         if gender == "unknown":
             gender = stable_unknown_speaker_gender(key)
 
-        voice_pool = CLEAR_FEMALE_DIALOGUE_VOICES if gender == "female" else CLEAR_MALE_DIALOGUE_VOICES
+        if is_arabic_language(language) or is_arabic_voice_id(fallback_voice_id):
+            voice_pool = (
+                CLEAR_ARABIC_FEMALE_DIALOGUE_VOICES
+                if gender == "female"
+                else CLEAR_ARABIC_MALE_DIALOGUE_VOICES
+            )
+        else:
+            voice_pool = CLEAR_FEMALE_DIALOGUE_VOICES if gender == "female" else CLEAR_MALE_DIALOGUE_VOICES
         voice_id = stable_voice_from_pool(key=key, voice_pool=voice_pool, used_voices=used_voices)
         speaker_voices[speaker] = voice_id or fallback_voice_id
         used_voices.add(speaker_voices[speaker])
@@ -1026,6 +1130,9 @@ def infer_speaker_gender(speaker: str) -> str:
         "fatimah",
         "khadijah",
         "aisha",
+        "noura",
+        "nura",
+        "layla",
     }
     male_names = {
         "ben",

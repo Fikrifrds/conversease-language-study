@@ -142,7 +142,11 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
 
     let cancelled = false;
     setIsLoadingVoicePreviews(true);
-    void getAdminVoicePreviews({ model: audioModel, speed: audioSpeed })
+    void getAdminVoicePreviews({
+      model: audioModel,
+      speed: audioSpeed,
+      sampleText: audioPreviewSampleText(languageFilter)
+    })
       .then((previews) => {
         if (cancelled) {
           return;
@@ -165,7 +169,20 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     return () => {
       cancelled = true;
     };
-  }, [audioModel, audioSpeed]);
+  }, [audioModel, audioSpeed, languageFilter]);
+
+  useEffect(() => {
+    if (!audioSettings) {
+      return;
+    }
+
+    setAudioVoiceId((current) =>
+      audioVoiceMatchesLanguage(current, languageFilter, audioSettings.voices)
+        ? current
+        : defaultAudioVoiceIdForLanguage(audioSettings, languageFilter)
+    );
+    setAudioSpeed((current) => defaultAudioSpeedForLanguage(languageFilter, current));
+  }, [audioSettings, languageFilter]);
 
   useEffect(() => {
     void loadOverview();
@@ -315,7 +332,12 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
       const nextAudioSettings = await getAdminAudioSettings();
       setAudioSettings(nextAudioSettings);
       setAudioModel((current) => current || storedAudioModel(nextAudioSettings.defaultModel));
-      setAudioVoiceId((current) => current || storedAudioVoice(nextAudioSettings.defaultVoiceId));
+      setAudioVoiceId((current) => {
+        const storedVoice = current || storedAudioVoice(nextAudioSettings.defaultVoiceId);
+        return audioVoiceMatchesLanguage(storedVoice, languageFilter, nextAudioSettings.voices)
+          ? storedVoice
+          : defaultAudioVoiceIdForLanguage(nextAudioSettings, languageFilter);
+      });
       setAudioSpeed((current) => (current === 1 ? storedAudioSpeed() : current));
     } catch {
       setError("Audio settings belum bisa dimuat.");
@@ -736,6 +758,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
               <div className="grid gap-5">
                 <AudioSettingsPanel
                   settings={audioSettings}
+                  language="all"
                   isLoading={isLoadingAudioSettings}
                   model={audioModel}
                   voiceId={audioVoiceId}
@@ -910,6 +933,7 @@ function LessonAudioPanel({
     <div className="space-y-5">
       <AudioSettingsPanel
         settings={audioSettings}
+        language={languageFilter}
         isLoading={isLoadingAudioSettings}
         model={audioModel}
         voiceId={audioVoiceId}
@@ -960,6 +984,7 @@ function LessonAudioPanel({
 
 function AudioSettingsPanel({
   settings,
+  language,
   isLoading,
   model,
   voiceId,
@@ -972,6 +997,7 @@ function AudioSettingsPanel({
   onSpeedChange
 }: {
   settings: AdminAudioSettings | null;
+  language: LanguageFilter | "all";
   isLoading: boolean;
   model: string;
   voiceId: string;
@@ -984,7 +1010,7 @@ function AudioSettingsPanel({
   onSpeedChange: (value: number) => void;
 }) {
   const configured = Boolean(settings?.minimaxConfigured && settings.s3Configured);
-  const voiceOptions = settings?.voices ?? [];
+  const voiceOptions = filterVoicesForLanguage(settings?.voices ?? [], language);
   const modelOptions = settings?.models ?? [];
   const selectedVoice = voiceOptions.find((voice) => voice.voiceId === voiceId);
 
@@ -1890,6 +1916,64 @@ function bulkQueueSummary(queue: BulkAudioQueueItem[]) {
     },
     { pending: 0, running: 0, done: 0, failed: 0 }
   );
+}
+
+function filterVoicesForLanguage(voices: AdminAudioVoice[], language: LanguageFilter | "all") {
+  if (language === "all") {
+    return voices;
+  }
+  return voices.filter((voice) => audioVoiceMatchesLanguage(voice.voiceId, language, voices));
+}
+
+function audioVoiceMatchesLanguage(voiceId: string, language: LanguageFilter | "all", voices: AdminAudioVoice[]) {
+  if (!voiceId || language === "all") {
+    return Boolean(voiceId);
+  }
+  const voice = voices.find((item) => item.voiceId === voiceId);
+  const normalizedLanguage = language.toLowerCase();
+  if (normalizedLanguage === "arabic") {
+    return voiceId.toLowerCase().startsWith("arabic_") || voice?.language?.toLowerCase() === "arabic";
+  }
+  if (normalizedLanguage === "english") {
+    return voiceId.toLowerCase().startsWith("english_") || voice?.language?.toLowerCase() === "english";
+  }
+  return true;
+}
+
+function defaultAudioVoiceIdForLanguage(settings: AdminAudioSettings, language: LanguageFilter | "all") {
+  const voices = settings.voices;
+  if (language.toLowerCase() === "arabic") {
+    return (
+      voices.find((voice) => voice.voiceId === "Arabic_FriendlyGuy")?.voiceId ??
+      voices.find((voice) => voice.voiceId.toLowerCase().startsWith("arabic_"))?.voiceId ??
+      settings.defaultVoiceId
+    );
+  }
+  if (language.toLowerCase() === "english") {
+    return (
+      voices.find((voice) => voice.voiceId === settings.defaultVoiceId)?.voiceId ??
+      voices.find((voice) => voice.voiceId.toLowerCase().startsWith("english_"))?.voiceId ??
+      settings.defaultVoiceId
+    );
+  }
+  return settings.defaultVoiceId;
+}
+
+function defaultAudioSpeedForLanguage(language: LanguageFilter | "all", current: number) {
+  if (language.toLowerCase() === "arabic" && current >= 1) {
+    return 0.9;
+  }
+  if (language.toLowerCase() === "english" && Math.abs(current - 0.9) < 0.001) {
+    return 1;
+  }
+  return current;
+}
+
+function audioPreviewSampleText(language: LanguageFilter | "all") {
+  if (language.toLowerCase() === "arabic") {
+    return "مرحبًا. اسمي أحمد. أنا أتعلم العربية الفصحى بوضوح وهدوء.";
+  }
+  return undefined;
 }
 
 function storedAudioModel(fallback: string) {

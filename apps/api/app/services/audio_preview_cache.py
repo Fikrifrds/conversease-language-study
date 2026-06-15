@@ -14,6 +14,7 @@ from app.repositories.audio_voice_previews import (
 )
 from app.services.audio_generation import (
     AudioGenerationError,
+    default_voice_preview_text,
     generate_voice_preview_audio,
     normalized_model,
 )
@@ -38,7 +39,7 @@ async def get_or_generate_voice_preview(
         raise AudioGenerationError("minimax_voice_id_missing")
 
     normalized_speed = normalize_preview_speed(speed)
-    preview_text = normalized_preview_text(sample_text)
+    preview_text = normalized_preview_text(sample_text, voice_id=selected_voice_id)
     sample_text_hash = voice_preview_sample_hash(preview_text)
     repository = AudioVoicePreviewRepository(db)
 
@@ -89,8 +90,10 @@ def list_voice_preview_cache(
     return [voice_preview_payload(preview, cached=True) for preview in previews]
 
 
-def normalized_preview_text(sample_text: Optional[str]) -> str:
-    preview_text = normalize_voice_preview_sample_text(sample_text)
+def normalized_preview_text(sample_text: Optional[str], *, voice_id: Optional[str] = None) -> str:
+    preview_text = normalize_voice_preview_sample_text(
+        sample_text or (default_voice_preview_text(voice_id) if voice_id else None)
+    )
     if len(preview_text) < 8:
         raise AudioGenerationError("voice_preview_text_empty")
     if len(preview_text) > 500:
