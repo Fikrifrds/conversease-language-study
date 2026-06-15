@@ -171,9 +171,10 @@ async def summarize_session(
 
 
 def _min_turns_before_end(topic: PartnerTopic) -> int:
-    """Minimum learner turns before the partner may end. Roughly one turn per
-    goal, capped so very long topics still feel finishable."""
-    return max(len(topic.goals), min(topic.max_turns - 2, 4))
+    """Minimum learner turns before the partner may end. Kept close to the cap so
+    the conversation stays substantial — the partner can't wrap up at turn 3-4 the
+    moment the goals are first touched (which felt abruptly short)."""
+    return max(len(topic.goals), topic.max_turns - 2)
 
 
 def _reply_system_prompt(
@@ -186,25 +187,28 @@ def _reply_system_prompt(
     goals = "; ".join(topic.goals)
     phrases = ", ".join(topic.target_phrases)
 
-    # The conversation is capped at topic.max_turns. The last exchange must read
-    # as a graceful goodbye, not a dangling question, or it feels cut off.
+    # The conversation is capped at topic.max_turns. Any exchange where ending is
+    # allowed must close gracefully (thank + goodbye), never end on a dangling
+    # question, or it feels cut off.
+    can_end_now = current_turn >= min_turns
     if turns_left <= 0:
         closing_directive = (
             "- THIS IS THE FINAL EXCHANGE. React warmly to what the learner just said, then bring "
             "the conversation to a natural, friendly close in role (e.g. thank them and say "
             "goodbye). Do NOT ask a new question. Set should_end to true.\n"
         )
-    elif turns_left == 1:
+    elif can_end_now:
         closing_directive = (
-            "- This is the SECOND-TO-LAST exchange. Begin wrapping up: respond, and either ask one "
-            "final light question or start saying goodbye. Keep should_end false for now.\n"
+            "- The conversation may now end if it feels complete. IF you choose to end, close "
+            "gracefully in role (warm reaction + thank them + say goodbye), do NOT end on a "
+            "question, and set should_end to true. OTHERWISE keep it going with one more "
+            "follow-up question and set should_end to false.\n"
         )
     else:
         closing_directive = (
             f"- This is exchange {current_turn}. Keep the conversation going. Do NOT end before "
-            f"exchange {min_turns}. Only set should_end to true once ALL goals are genuinely "
-            f"covered AND at least {min_turns} exchanges have happened. Until then, always set "
-            "should_end to false and ask a question.\n"
+            f"exchange {min_turns}. The conversation must stay substantial, so set should_end to "
+            "false and ask one more simple follow-up question (explore a new on-topic detail).\n"
         )
 
     return (

@@ -156,23 +156,49 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         self.assertIn("FINAL EXCHANGE", system_prompt)
         self.assertIn("Do NOT ask a new question", system_prompt)
 
-    def test_non_final_turn_prompt_asks_a_question(self):
+    def test_early_end_window_still_closes_gracefully(self):
+        # When ending is allowed but it's not the hard cap, the prompt must still
+        # forbid a dangling question so a voluntary early close stays smooth.
         provider = FakeProvider(
-            '{"reply": "Nice! What size?", "on_topic": true, "should_end": false}'
+            '{"reply": "Lovely chatting. See you around!", "on_topic": true, "should_end": true}'
         )
-        asyncio.run(
+        reply = asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[],
+                user_message="thanks",
+                completed_turns=TOPIC.max_turns - 2,  # ending allowed, not the cap
+                provider=provider,
+            )
+        )
+        self.assertTrue(reply.should_end)
+        system_prompt = provider.last_messages[0].content
+        self.assertNotIn("FINAL EXCHANGE", system_prompt)
+        self.assertIn("may now end", system_prompt)
+        self.assertIn("do NOT end on a question", system_prompt)
+
+    def test_cannot_end_too_early(self):
+        # Early in the conversation, ending is not allowed even if the LLM signals
+        # it, and the prompt must not contain the closing directives.
+        provider = FakeProvider(
+            '{"reply": "Nice! What size?", "on_topic": true, "should_end": true}'
+        )
+        reply = asyncio.run(
             generate_partner_reply(
                 topic=TOPIC,
                 level_code="A1",
                 history=[],
                 user_message="a coffee",
-                completed_turns=1,  # early, mid-conversation
+                completed_turns=1,  # current_turn = 2, far below min_turns
                 provider=provider,
             )
         )
+        self.assertFalse(reply.should_end)
         system_prompt = provider.last_messages[0].content
         self.assertNotIn("FINAL EXCHANGE", system_prompt)
-        self.assertIn("ask a question", system_prompt)
+        self.assertNotIn("may now end", system_prompt)
+        self.assertIn("follow-up question", system_prompt)
 
     def test_falls_back_when_no_provider(self):
         reply = asyncio.run(
