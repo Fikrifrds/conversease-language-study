@@ -1,5 +1,5 @@
 lesson_key: lesson-05-information-discussion-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-English_Aussie_Bloke-20260612T133459Z.wav
+  duration_seconds: 40.28
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-English_Aussie_Bloke-20260612T133459Z.wav
+  trace_id: 067b3deb09d4e2e37eea03599f1b560a,067b3ded5daba7f346d7e0bf41b4684c,067b3df0e17bec98715484111c88b3ea,067b3df3eb579f239baf4e1cf4b514e3,067b3df6ed0439e7392acef9d6d42f08,067b3df8b240f2c83bb1ca606d19accb,067b3dfa209d79d4df4cbd6589d522bf,067b3dfdb39e5d3b602621678aed8131,067b3e01cbc8f7ef81260a886d630a72
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:34:59.849814+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

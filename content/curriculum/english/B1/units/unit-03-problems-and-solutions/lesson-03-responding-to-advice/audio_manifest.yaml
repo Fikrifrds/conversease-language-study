@@ -1,5 +1,5 @@
 lesson_key: lesson-03-responding-to-advice
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-English_Aussie_Bloke-20260612T130908Z.wav
+  duration_seconds: 18.69
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Upbeat_Woman
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-English_Aussie_Bloke-20260612T130908Z.wav
+  trace_id: 067b37e23fc2f63377cda12c11f41268,067b37e504e9b0c94ca663c0c4dee64d,067b37e7dff352f9724c92036e7b0c10,067b37e9365dfd987f3d920342226163,067b37ec3f4fd007fcea7729d7bd2e34,067b37ef1155cf5a5d798de9aa0ee5af,067b37f2fd7986127fe02e280d1080dc
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:09:08.687787+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

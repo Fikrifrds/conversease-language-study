@@ -1,5 +1,5 @@
 lesson_key: lesson-01-catching-implied-meaning
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-English_Aussie_Bloke-20260612T140004Z.wav
+  duration_seconds: 29.49
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-English_Aussie_Bloke-20260612T140004Z.wav
+  trace_id: 067b43d0fb0a5f1fabc4fb1d6c65bec5,067b43d22b8f83cce44db91b66169e06,067b43d579e9179e61daf620e513fef2,067b43d892b521139f750e39efb4fa83,067b43da29392ced1f9867350935b481,067b43dc1e111da7cac1382d8f0babe6,067b43dfb5ccb9c51b4f1927986286a8,067b43e150e187ebf15076727098bd4d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T14:00:04.703611+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

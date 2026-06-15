@@ -1,5 +1,5 @@
 lesson_key: lesson-04-guiding-a-decision
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-English_Aussie_Bloke-20260612T135901Z.wav
+  duration_seconds: 36.2
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-English_Aussie_Bloke-20260612T135901Z.wav
+  trace_id: 067b438e3d7deffe2733267ab28887c4,067b43906e124cf36d0144f3c4815f5d,067b43939540981dc35173f591accee5,067b4395a8ad6b88822e5b23087c1e5c,067b439704aa6a42a82a25b55b86da60,067b4399f97c0ee165be3d9b3cc0ee16,067b439cfdd124dec45c073a9254120d,067b439f844a8fe418e5df48b17f650b,067b43a264cd80084ced580ce9e030d4
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:59:01.994656+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

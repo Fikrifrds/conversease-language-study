@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-for-opinions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-04-asking-for-opinions/listening-English_Aussie_Bloke-20260612T130104Z.wav
+  duration_seconds: 14.53
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-04-asking-for-opinions/listening-English_Aussie_Bloke-20260612T130104Z.wav
+  trace_id: 067b3600e07603f01a11c6d74d7b4bb1,067b3602e16339a96361df9bebdf807f,067b3605e6bea072dbcd9ed58c25ae40,067b36075b6294262d16dd7523cf2747,067b3609863b0d23cb0002738910b0a5,067b360c6280ee753758a158796284d7,067b360e55af31be508eb7553a9f33e3
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:01:04.403705+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

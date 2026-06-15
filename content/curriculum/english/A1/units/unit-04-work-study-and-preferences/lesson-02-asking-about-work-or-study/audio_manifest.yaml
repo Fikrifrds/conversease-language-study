@@ -1,24 +1,24 @@
 lesson_key: lesson-02-asking-about-work-or-study
-status: not_generated
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_Aussie_Bloke-20260605T060251Z.wav
-  duration_seconds: 10.69
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_Aussie_Bloke-20260612T123629Z.wav
+  duration_seconds: 10.07
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-  line_count: 6
+  line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_Aussie_Bloke-20260605T060251Z.wav
-  trace_id: 0671997fbd2a3ce99663171b66674aad,067199811e5f2dd7589e2ad875ea9a1d,06719983f3677acefaa4ffc29f17e4f3,06719985019d9a8938e907e795abc8d9,06719987a5429707f3e16163b7c22036,06719989d65837a549a604a42792a734
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_Aussie_Bloke-20260612T123629Z.wav
+  trace_id: 067b304183cc17739e2ebc783b992e64,067b304329fffc375a245ec12728ae19,067b3046a497c7793c81005c1ac7d590,067b3048905648b8eb25adedfb651eaa,067b304b92e7e2837dd9e8f1552d77da
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:02:51.416546+00:00'
+  generated_at: '2026-06-12T12:36:29.551209+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

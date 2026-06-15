@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-about-someones-story
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-04-asking-about-someones-story/listening-English_Aussie_Bloke-20260612T130516Z.wav
+  duration_seconds: 16.77
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-04-asking-about-someones-story/listening-English_Aussie_Bloke-20260612T130516Z.wav
+  trace_id: 067b36fafa707ce91f0d3d232a1057b9,067b36fcb1ef69f2f530ba9144b17c52,067b36fe6c49d84101428f8a9d442cd0,067b3701283ea9935cd46bdca5aa50c8,067b37038a381cc68964996fb6b00712,067b370748309b2bfbec492e83ca3511,067b37091ea2a7dcc24013c3433b95a7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:05:16.889443+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

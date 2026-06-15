@@ -1,5 +1,5 @@
 lesson_key: lesson-05-workplace-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-English_Aussie_Bloke-20260612T130752Z.wav
+  duration_seconds: 24.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-English_Aussie_Bloke-20260612T130752Z.wav
+  trace_id: 067b3794a211a902e339f74b693b8521,067b37978119f13ce3e899b14dd3e700,067b379a2272d9910d756551219fb0c4,067b379d4edb3e6ee44d2dbd9bd2983e,067b37a08c4aadff0327b63b8d1503b9,067b37a25ae2425b49562e9468a7faa4,067b37a52c8cd520106c2057e616b887
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:07:52.203417+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

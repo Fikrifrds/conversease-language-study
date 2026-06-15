@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260605T060219Z.wav
-  duration_seconds: 17.19
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260612T123554Z.wav
+  duration_seconds: 17.49
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260605T060219Z.wav
-  trace_id: 0671995a45e3a4bc20086caa780a38a8,0671995c068d03d9c99e0e7ce490e3aa,0671995ff5344c063b946d5acccc2a05,06719961b09a376808abac139d3f4d7e,06719963a5b3c2c97c3b6d42ff7a002b,06719965b87ccb24ad55780b26cfcce5,06719968c8e14d5d7f0f20af3888ba61,0671996a8096208d44612ac2c0f11d26
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260612T123554Z.wav
+  trace_id: 067b3017f276b5ba81466ad2291d2c83,067b301a901511cf63b8758b723d0ea1,067b301c65e68d15fa4e97365f5b9ed9,067b301eec0ff1e954ba84e9a42348d7,067b30217e76d70d1ec8927461ad241d,067b30234984dfc7163c37462a8a36ac,067b3026d2b25cedfd133ae2851033f4,067b3028afd20afbef958ff80a5b1ba2
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:02:19.971975+00:00'
+  generated_at: '2026-06-12T12:35:54.106843+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

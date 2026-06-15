@@ -1,4 +1,4 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260605T060847Z.wav
-  duration_seconds: 18.46
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260612T124330Z.wav
+  duration_seconds: 19.4
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Dimas: English_Diligent_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260605T060847Z.wav
-  trace_id: 06719adce1fe043bbae93d8bfa695778,06719adf64bb106694eaf21c1c1574a2,06719ae190c47489c76cd6a37e44c4b5,06719ae3e177f9b2e128b824e012da28,06719ae57371966a05d2fc75785d0366,06719ae70a80cb6be4371a33be0de3fa,06719ae9b532ac3b4f9585afa2f95a52,06719aebf165fc7e309789d75cc65995,06719aed112c29985040b3846d72cb4b
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260612T124330Z.wav
+  trace_id: 067b31dcfe944681c7bcbdb21daac3d6,067b31dfd9a497fdd842a09f962586a8,067b31e2654ffe27ae7d6fab84a03232,067b31e45485d493212732f05bd0dbc7,067b31e6e8c972752621f4fbd52d9183,067b31e8be517f789a77976e86e1aaaa,067b31ea1058f874b2cbc10710d1c6d5,067b31ec9bf929f2a89d41b7d5be1202,067b31efb4689bf926f77a4d906d7fa4
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:08:47.309959+00:00'
+  generated_at: '2026-06-12T12:43:30.277900+00:00'
 lesson_key: lesson-05-help-and-problem-mission

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-problem-solving-discussion-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-05-problem-solving-discussion-mission/listening-English_Aussie_Bloke-20260612T134003Z.wav
+  duration_seconds: 34.3
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-05-problem-solving-discussion-mission/listening-English_Aussie_Bloke-20260612T134003Z.wav
+  trace_id: 067b3f1b11cfcf6f04f16848dee053f4,067b3f1e260c5f6dcc412cc329eab6a2,067b3f2149f29cad80683997bd30376c,067b3f24b1ed7c23e50eec9916b6f43e,067b3f27dfd95fd65b0b63dc63708798,067b3f29cd569bdaf750ca7162c27b76,067b3f2cfa943b971c19edd62895109e,067b3f2f024d01562347d209193fc699
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:40:03.104573+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

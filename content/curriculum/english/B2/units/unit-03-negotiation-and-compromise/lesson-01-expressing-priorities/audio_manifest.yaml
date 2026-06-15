@@ -1,5 +1,5 @@
 lesson_key: lesson-01-expressing-priorities
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-English_Aussie_Bloke-20260612T132754Z.wav
+  duration_seconds: 29.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-English_Aussie_Bloke-20260612T132754Z.wav
+  trace_id: 067b3c4348014136cf7d10946e16bb2b,067b3c45ab03d593c06ecd30d666f7be,067b3c48be565b3fdfde71102f4c756f,067b3c4a194fcdf2dad8f0fd3ababfe7,067b3c4c7b78140a5f2deaf861b74c60,067b3c4f967b82f74be39dcc0bc30d7b,067b3c527d3e40be1741bcee086131a7,067b3c540c669b1e0460c941dd766533,067b3c574cef0a57e4d1f44baa68b1b2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:27:54.455032+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

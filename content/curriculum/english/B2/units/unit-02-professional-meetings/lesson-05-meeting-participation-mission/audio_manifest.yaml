@@ -1,5 +1,5 @@
 lesson_key: lesson-05-meeting-participation-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-English_Aussie_Bloke-20260612T132721Z.wav
+  duration_seconds: 35.2
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 10
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-English_Aussie_Bloke-20260612T132721Z.wav
+  trace_id: 067b3c1fa27a4e4e9ce1f4c32a3bbb26,067b3c214deefab9c7a3a3be8957eed4,067b3c2406868296ef0187b8cb7299b7,067b3c27107abba9679ea4d8d1ac684e,067b3c2a6dd132cd1046c735989fbdad,067b3c2c3dccc24f0dce8f745bb2f8a1,067b3c2f3d472f7e17085a7d28d946a4,067b3c31cfaddfeec9d9783330c85c4f,067b3c3471ac370e76ad9e420d5a8939,067b3c364790fab9c60f38e072883758
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:27:21.837189+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

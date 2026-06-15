@@ -1,5 +1,5 @@
 lesson_key: lesson-03-presenting-evidence
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-English_Aussie_Bloke-20260612T135252Z.wav
+  duration_seconds: 52.44
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-English_Aussie_Bloke-20260612T135252Z.wav
+  trace_id: 067b421bca6febd86d5631ef91bd556c,067b421da47b5d699bf222720c9180d0,067b4221af5a8642f618697b2c885b2f,067b4223405f40a3ae8d7a2589c8c827,067b4226b60e90581b3bd76797869f42,067b4229086ae05f93eff85d4c9660dc,067b422cea8bc104c6ad1b1c0a92d325,067b422f14e9d3f163400de0d6160c71
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:52:52.286546+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

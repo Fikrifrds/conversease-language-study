@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260605T060236Z.wav
-  duration_seconds: 9.83
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260612T123612Z.wav
+  duration_seconds: 9.69
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Sara: English_CalmWoman
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260605T060236Z.wav
-  trace_id: 0671996f50ce45de4aa37a100c49184c,06719971382171ad00db501833b3956a,067199733e57a0921df7f61b3a7c9b3b,06719975f8d67417035e78b45ec1e3ea,06719977288ce8f27a7735efa2ad0987,06719979de16892b56bd1c8fb0e83271
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260612T123612Z.wav
+  trace_id: 067b302fc21401779c149eb752eba473,067b30316b6d8f65f2c71fb217e54672,067b3033833a92187fde1f7052cd9f5c,067b303506919fbe0d388036b6a94201,067b30379cdf69437a254adb87c45c1a,067b30390121e622579eefe8b93b2e11
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:02:36.002778+00:00'
+  generated_at: '2026-06-12T12:36:12.040679+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

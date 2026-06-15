@@ -1,5 +1,5 @@
 lesson_key: lesson-01-saying-how-you-feel
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-01-saying-how-you-feel/listening-English_Aussie_Bloke-20260612T125552Z.wav
+  duration_seconds: 15.88
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-01-saying-how-you-feel/listening-English_Aussie_Bloke-20260612T125552Z.wav
+  trace_id: 067b34ca3ff888310452c71c0732ec5d,067b34cc5ca49f9257ee563644c143b2,067b34ce60681755c9a68cfb33820c14,067b34d0b5b7c688834b2c92e9cb1db1,067b34d229037cd517ce1be63cf5b9bc,067b34d431b5b93cb421bb48adac293a,067b34d63d815314fabd93596d55e219
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:55:52.862581+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260605T060411Z.wav
-  duration_seconds: 11.83
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260612T123757Z.wav
+  duration_seconds: 12.26
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260605T060411Z.wav
-  trace_id: 067199c8d007ac503b337baa8a8a6354,067199cba0824647ed349119aabd74c2,067199d2aa80e32e249da6e3739b0ad5,067199d5ed582ed376830bf059e177cf,067199d817d3f4d617c3df05d4a20cbe,067199da54a333130f0e89ec6b467089
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260612T123757Z.wav
+  trace_id: 067b3097f6d00349457652016b6e2436,067b3099b67d6ce348fb6b15f9f9516b,067b309c2dbfa7a8b25d17f7d3accc5b,067b309ee852b9dc997c956c63f92750,067b30a1b37ca5aa317ec8ac43a16b3a,067b30a3402d99c428cee3b3c93aee74
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:04:11.854719+00:00'
+  generated_at: '2026-06-12T12:37:57.621544+00:00'
 lesson_key: lesson-01-asking-where-a-place-is

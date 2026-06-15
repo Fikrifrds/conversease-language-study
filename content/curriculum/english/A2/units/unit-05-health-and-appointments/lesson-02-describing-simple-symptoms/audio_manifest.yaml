@@ -1,5 +1,5 @@
 lesson_key: lesson-02-describing-simple-symptoms
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/listening-English_Aussie_Bloke-20260612T125616Z.wav
+  duration_seconds: 13.3
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Nurse: English_Upbeat_Woman
     Mina: English_Upbeat_Woman
+    Nurse: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/listening-English_Aussie_Bloke-20260612T125616Z.wav
+  trace_id: 067b34e0b77d9d08b994dc0ce62dc24f,067b34e3340b1ed8e39787400d67c5ad,067b34e6a72e8851d71f1b3a50511019,067b34e7d6dd80a8528eaee04b1a219e,067b34ead31a7727a5bb9783ce1ceabc,067b34ecc91791d4068c59b1cf212ca9,067b34ede88bdb3998eb21d51059a1d4
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:56:16.256042+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

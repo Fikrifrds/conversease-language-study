@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-why-you-prefer-something
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-English_Aussie_Bloke-20260612T131543Z.wav
+  duration_seconds: 16.95
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-English_Aussie_Bloke-20260612T131543Z.wav
+  trace_id: 067b396cba0d89253c7c1081a2b881b9,067b396e623135f6b2a6c5c5a767bc86,067b39714b08b8138da374fff1753437,067b3972f133ded612474b87dad53f93,067b39751177e9bcfdae08282a0980f8,067b39783fe15d194510b1864b1e7a3c,067b397b7ed7971a5495a62ca74b98bc,067b397dc64d5879fedf8fb56beffae7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:15:43.213608+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

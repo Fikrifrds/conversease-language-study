@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260605T055837Z.wav
-  duration_seconds: 10.23
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260612T123123Z.wav
+  duration_seconds: 10.49
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Raka: English_Gentle-voiced_man
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260605T055837Z.wav
-  trace_id: 067198828cb3df62c18c4a35286170bc,067198845493950ea3db88f88f13450f,06719887cbe69b0d515f4235f132fb3f,06719889100e72b753f08d87803249f6,0671988b7a27c7eb6e44b4734dd0e007
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260612T123123Z.wav
+  trace_id: 067b2f0ff5a19443bc72b01ba046052f,067b2f12987fa14980b303d043fc2e68,067b2f141416a2a6baa16284dda34e06,067b2f168132ab72b0b828a8d21c7602,067b2f190b05e940a801119698397853
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:58:37.647078+00:00'
+  generated_at: '2026-06-12T12:31:23.012310+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

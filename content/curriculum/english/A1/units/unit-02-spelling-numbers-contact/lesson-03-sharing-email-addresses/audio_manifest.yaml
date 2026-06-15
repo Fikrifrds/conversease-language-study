@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260605T055957Z.wav
-  duration_seconds: 16.81
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260612T123301Z.wav
+  duration_seconds: 17.86
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Officer: English_CalmWoman
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260605T055957Z.wav
-  trace_id: 067198cc621ffc2199b0dbf77c4e30d8,067198d03b6433ad76c6eec65e804b5a,067198d3706416f95a5ca61b1cb4ce45,067198d5507a0db851436ca69daeae4f,067198d84f279a6390e48a18c7e60cf9,067198dacfffcce090e022dd35fe474d
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_Aussie_Bloke-20260612T123301Z.wav
+  trace_id: 067b2f6e400f6c9ab7616ebbf67d0ce5,067b2f700f16719242e0a6ed080d3a96,067b2f73f50b483dc5b7f988e5181140,067b2f761fd7f6d83bfa181b29c6a454,067b2f78455a529aa4c200879c67026a,067b2f7aa5748cfd403ca39eb3244394
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:59:57.111926+00:00'
+  generated_at: '2026-06-12T12:33:01.447529+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

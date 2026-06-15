@@ -1,5 +1,5 @@
 lesson_key: lesson-05-advanced-listening-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-05-advanced-listening-mission/listening-English_Aussie_Bloke-20260612T140216Z.wav
+  duration_seconds: 47.67
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-05-advanced-listening-mission/listening-English_Aussie_Bloke-20260612T140216Z.wav
+  trace_id: 067b4451de18fc8112a1c1295062ccee,067b4455edd928f65909809f3169d3b8,067b4458a1bd06a8ddb68434b803bd08,067b445ab6a8511c1e724e68d0dd4bfb,067b445d077edf08b7120fde255d2afd,067b445f89cdc5a019ef2cde5802c037,067b4462db1460985cde47e2334078f6,067b4465609b7b16955c37aac38b4d12
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T14:02:16.967123+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

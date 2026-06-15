@@ -1,5 +1,5 @@
 lesson_key: lesson-01-aligning-stakeholders
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-English_Aussie_Bloke-20260612T134550Z.wav
+  duration_seconds: 28.59
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-English_Aussie_Bloke-20260612T134550Z.wav
+  trace_id: 067b40767f080bb236557413623472f9,067b4079d9cb1142f3a1a60df1a60f6d,067b407b6de1b27d8dc3cd102647f69a,067b407e4a1673389471bb57c6c7f4fa,067b4081f202f337c2a29c1922f59d04,067b4083b38f33dd7b9bdb97b42a1926,067b4087ebe117d50a107cd3863d7ef2,067b408980218d6e3227b43679392704
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:45:50.177702+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

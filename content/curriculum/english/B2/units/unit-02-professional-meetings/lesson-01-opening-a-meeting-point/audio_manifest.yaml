@@ -1,5 +1,5 @@
 lesson_key: lesson-01-opening-a-meeting-point
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-English_Aussie_Bloke-20260612T132512Z.wav
+  duration_seconds: 24.19
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-English_Aussie_Bloke-20260612T132512Z.wav
+  trace_id: 067b3ba163fb9d04507ed2caed907f45,067b3ba4c1a16e721c05e6d2a2963661,067b3ba6d13a6e3d5d2452dda4cdc7b4,067b3ba9fa9793322ef41ecb9b168972,067b3bab0d27da116bf0ab099f18badf,067b3bafdbba549a3d99859daf90e131,067b3bb31d95ea5eb7d7fe3930127877,067b3bb6f3631dfdfa008476c411f3cd
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:25:12.658290+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

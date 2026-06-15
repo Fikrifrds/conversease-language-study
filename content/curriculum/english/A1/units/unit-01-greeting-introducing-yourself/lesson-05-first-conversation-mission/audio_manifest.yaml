@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260605T055904Z.wav
-  duration_seconds: 13.98
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260612T123159Z.wav
+  duration_seconds: 14.19
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Lina: English_Upbeat_Woman
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260605T055904Z.wav
-  trace_id: 0671989c2c3c29e814f29ffbea739c53,0671989f28f3d81f93a8986c5d1ace19,067198a15b9d224d259c913a72c2f8d8,067198a46aa9c03b001c30b1ef87c8ea,067198a65fc9d26b3b76b4c59a921473
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260612T123159Z.wav
+  trace_id: 067b2f338adcf820b8b67f5a9cc99409,067b2f35f7ffcdb1c94dc5d2f076a4db,067b2f3800e1b878b44540327913d55e,067b2f3b1d532c882d44c232d4fe1f58,067b2f3d3975553f9f4f0baeef6c9276
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:59:04.074525+00:00'
+  generated_at: '2026-06-12T12:31:59.292292+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

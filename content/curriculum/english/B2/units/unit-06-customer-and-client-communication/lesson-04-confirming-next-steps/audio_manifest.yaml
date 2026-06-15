@@ -1,5 +1,5 @@
 lesson_key: lesson-04-confirming-next-steps
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-04-confirming-next-steps/listening-English_Aussie_Bloke-20260612T133659Z.wav
+  duration_seconds: 44.69
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-04-confirming-next-steps/listening-English_Aussie_Bloke-20260612T133659Z.wav
+  trace_id: 067b3e60b42187b436db19a96c43286c,067b3e6369b79102326dc14a80438fb3,067b3e6689b0803abdeabdf802bbed4d,067b3e69979f28dbbde5038ca5ba30ea,067b3e6c40691cef56bcc6e83d238cbf,067b3e6f8ca79505653158519481913a,067b3e719db6977b992128a08629e72c,067b3e755fe63ae4dd891b76fd5aac50,067b3e770f546707859a6acac01a4c6e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:36:59.764600+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

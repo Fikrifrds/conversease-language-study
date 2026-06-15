@@ -1,5 +1,5 @@
 lesson_key: lesson-01-structuring-a-short-presentation
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-English_Aussie_Bloke-20260612T133028Z.wav
+  duration_seconds: 27.78
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-English_Aussie_Bloke-20260612T133028Z.wav
+  trace_id: 067b3ce0a11aaad3b7b4c36792ccb8a3,067b3ce3082094cd5ebef4b84be21f56,067b3ce5ca6032c2b0335f06c8d104ef,067b3ce8d2be66611e6a3fb49016eb81,067b3cea0db1d6c6a1c9861ce9bf8c84,067b3cec5dbae8257f0f197b5eb1172f,067b3cef190ab4f78bb68bb5155aa14f,067b3cf229681901117f700a7d8f7c49
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:30:28.722434+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

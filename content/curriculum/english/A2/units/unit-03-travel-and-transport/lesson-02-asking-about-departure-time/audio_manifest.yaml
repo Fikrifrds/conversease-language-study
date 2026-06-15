@@ -1,22 +1,28 @@
 lesson_key: lesson-02-asking-about-departure-time
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-    provider: minimax
-    model: speech-2.8-hd
-    voice_id: multi_speaker
-    speaker_voices:
-      Alya: English_radiant_girl
-      Staff: English_Upbeat_Woman
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-02-asking-about-departure-time/listening-English_Aussie_Bloke-20260612T125212Z.wav
+  duration_seconds: 16.8
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Alya: English_radiant_girl
+    Staff: English_CalmWoman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-02-asking-about-departure-time/listening-English_Aussie_Bloke-20260612T125212Z.wav
+  trace_id: 067b33ecb3c0c1f02c8ca52b7aa3c421,067b33ee138b8e1f5cb001f726b6631e,067b33f005591d2a18e63e60181af7ba,067b33f2f8da73fb7c79383a8bb825b7,067b33f47fb79d12d3e77f993a78bbce,067b33f62dd2b17ca959478716963f0c,067b33f89d9538c766ece83fa8630e78,067b33fafb52a94c0cce2f7fdcb18e9e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:52:12.785861+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

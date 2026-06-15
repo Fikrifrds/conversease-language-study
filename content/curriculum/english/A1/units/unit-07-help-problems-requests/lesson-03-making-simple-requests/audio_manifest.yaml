@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260605T060806Z.wav
-  duration_seconds: 12.0
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260612T124240Z.wav
+  duration_seconds: 12.55
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Mina: English_Upbeat_Woman
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260605T060806Z.wav
-  trace_id: 06719ab82f988634157b975c81bdb652,06719aba81e57ab1788482af82cf2157,06719abca51b41431501b4bbdc860120,06719abe6e45a8f4addee8f606e18764,06719ac05de6287ba1c9d53ac267d66a,06719ac23a16ec182d64e72e297f109b,06719ac4a96b5920c0b28c79e37da312
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_Aussie_Bloke-20260612T124240Z.wav
+  trace_id: 067b31b0756e5d5599a9f474dae45a9f,067b31b3ab0f64ad5e23847c5725be86,067b31b6f8adf804ebd064795067d817,067b31b8db053e87b81fd872705ffa05,067b31bac84e970c82124e1314fa65d3,067b31bcf51b0e1bdf411e8927dc86a0,067b31befa097a6a573a9f7d033c69ba
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:08:06.198978+00:00'
+  generated_at: '2026-06-12T12:42:40.957086+00:00'
 lesson_key: lesson-03-making-simple-requests

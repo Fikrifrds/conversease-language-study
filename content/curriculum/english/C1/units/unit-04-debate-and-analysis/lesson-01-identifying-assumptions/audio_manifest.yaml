@@ -1,5 +1,5 @@
 lesson_key: lesson-01-identifying-assumptions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-01-identifying-assumptions/listening-English_Aussie_Bloke-20260612T135119Z.wav
+  duration_seconds: 27.57
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-01-identifying-assumptions/listening-English_Aussie_Bloke-20260612T135119Z.wav
+  trace_id: 067b41c39c28c33eba3c080b2bc26edb,067b41c60ca20ae1f8bcd556d710a184,067b41c8e619e5b531fd344fbc4728d3,067b41cb28f0b41915a738280eb74ced,067b41ce08dd674ac2f723e87ac09252,067b41d047f67c4c748276de4f8972f1,067b41d265a230c0fe6430f2ef938771,067b41d4d745b6c8a7b443fe3f48c6f3
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:51:19.912153+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

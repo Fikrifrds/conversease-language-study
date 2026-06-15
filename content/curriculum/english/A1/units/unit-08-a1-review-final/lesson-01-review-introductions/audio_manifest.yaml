@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260605T060909Z.wav
-  duration_seconds: 19.41
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260612T124357Z.wav
+  duration_seconds: 19.5
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Sara: English_CalmWoman
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260605T060909Z.wav
-  trace_id: 06719af30f67f2289c160d69f02d7eb7,06719af5f181eb589d0ac3e332767c03,06719af76347f9f9b259089d34997734,06719afac3daa1833d1b35624e9793e3,06719afc31daf6f9a4696da45e5e72a1,06719afe306f96e4eec33042ec1dfe91,06719b0017d84cd528a1e1db7256717d,06719b02a13b59330afe430155a113e2
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260612T124357Z.wav
+  trace_id: 067b31f99d840af64eaf75996c74d9a5,067b31fbd0f7b9682ac7db2bf99ceec0,067b31fe3568ed0daa4496c5f13950b8,067b3200761b2c90361c7f5097eb5297,067b320378b6ef833cfdc0114bece431,067b3205b49737a0b5d77a63e82743a9,067b3207eb3a4c621ddf50ef8a7c630c,067b320ace8985342f405474f0470696
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:09:09.211193+00:00'
+  generated_at: '2026-06-12T12:43:57.313253+00:00'
 lesson_key: lesson-01-review-introductions

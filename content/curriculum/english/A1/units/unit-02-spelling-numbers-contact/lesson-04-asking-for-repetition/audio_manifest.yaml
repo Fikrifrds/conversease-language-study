@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260605T060021Z.wav
-  duration_seconds: 27.23
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260612T123324Z.wav
+  duration_seconds: 24.34
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260605T060021Z.wav
-  trace_id: 067198e080cf9e9341abeb69b9bb9ca1,067198e4903db69bffdb96ddb7cafdac,067198e722f92ce43e5845243e1970cb,067198ea7c9d96fb4854ca950c0d12bf,067198ed7e236ee6af599302fde476d0,067198f0be0ede59971f87949287e67b
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260612T123324Z.wav
+  trace_id: 067b2f85b981604305825494246f1fcb,067b2f88977b882d69c2571ca80eb31c,067b2f8a300d3aba38c28ce25b8c1bf4,067b2f8da3ff048709a089501afa7f2c,067b2f8f659d34275665dd69c7f36925,067b2f92cd2d08bea0b1362de6864708
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:00:21.680850+00:00'
+  generated_at: '2026-06-12T12:33:24.104185+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

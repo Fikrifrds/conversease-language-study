@@ -1,5 +1,5 @@
 lesson_key: lesson-01-explaining-your-task
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-01-explaining-your-task/listening-English_Aussie_Bloke-20260612T130612Z.wav
+  duration_seconds: 19.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-01-explaining-your-task/listening-English_Aussie_Bloke-20260612T130612Z.wav
+  trace_id: 067b3733868f9fa17644de301cd17adc,067b3736b3195913d17388fb426a2e77,067b3738e851984e1b407403a685d72a,067b373b07af2362172442611166b013,067b373de6e81a6836d766109b5eed88,067b373f861427ebcfc2219d0fbaa9b4,067b374267be691204a3726b6847f52f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:06:12.113678+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

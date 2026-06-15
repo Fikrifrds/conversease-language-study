@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-problems-and-travel
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-English_Aussie_Bloke-20260612T132037Z.wav
+  duration_seconds: 20.43
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-English_Aussie_Bloke-20260612T132037Z.wav
+  trace_id: 067b3a923852ffb817e595a2e37597fa,067b3a95a4fa5a3985af5e4e21b6ab0f,067b3a970aff30316b92002c0e690c01,067b3a9a594197b59c8784806795c4b2,067b3a9cea28c116e06c59ca4535b395,067b3a9ee3368ee3a08026d4cee3d90f,067b3aa1925d7f6ed0f29928786176cf,067b3aa393e5f1b733dfb7ee2347ad01
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:20:37.641318+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

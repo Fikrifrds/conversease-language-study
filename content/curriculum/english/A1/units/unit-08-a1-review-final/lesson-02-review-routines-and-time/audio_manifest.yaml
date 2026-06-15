@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260605T060930Z.wav
-  duration_seconds: 18.04
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260612T124429Z.wav
+  duration_seconds: 20.19
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260605T060930Z.wav
-  trace_id: 06719b09c9f4a7210f51372c5354859f,06719b0b67e0176f169ad3d01021f80b,06719b0d55b0fc8e6d478e65fc8744ba,06719b10969c2212f6d9e0dbf9f9ef69,06719b121635c8003deaeb9d5b9de820,06719b14028cc5ad054ae72f003677df,06719b16f53800b9aa9270c4d6bcf315,06719b195da5ad38787c5ceb8b566c6a
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260612T124429Z.wav
+  trace_id: 067b3217dcd4ed5b5375e197fd5fab60,067b3219a0168ed6174a268cda20e7c1,067b321d04caa1ffcee4fde60853c342,067b32205dbc7987a7c30a5f7a7100f8,067b3223f7280808adbc090c92441cda,067b3226892ff13beb9d088d0f98437e,067b3229d782b12e117a295db1151a36,067b322b9673d78d887c36769ff52b6f
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:09:30.896800+00:00'
+  generated_at: '2026-06-12T12:44:29.272877+00:00'
 lesson_key: lesson-02-review-routines-and-time

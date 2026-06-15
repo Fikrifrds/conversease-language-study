@@ -1,4 +1,4 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260605T060551Z.wav
-  duration_seconds: 14.0
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260612T123947Z.wav
+  duration_seconds: 13.79
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Mina: English_Upbeat_Woman
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260605T060551Z.wav
-  trace_id: 06719a308b4a6388137a46b8c7d1dd4e,06719a32b9ad0aa886aed443929d4625,06719a3426d9f68ffb1668bbda49e93b,06719a36d736d5b5a8bcb71a69ae5587,06719a3845080dbf13e5a31e0e9ac50c,06719a3aced38188c3411523a336c42d,06719a3cd94d327172baa18083c76757,06719a3eef5b17af13565680f880f85a
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260612T123947Z.wav
+  trace_id: 067b3102df6a00b72d1b173b82b8536d,067b3104981d680d1bb815300235f164,067b3106e3bd4837554040ba3e877344,067b31092034d6accfa75271bcec8870,067b310b0f168ce879a241a151affe4e,067b310d840081075893b91a3571cd39,067b310f8e604d1cf0b06a15ce8a2256,067b31111479778254bf77b8f907b52e
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:05:51.753404+00:00'
+  generated_at: '2026-06-12T12:39:47.097449+00:00'
 lesson_key: lesson-01-ordering-a-drink

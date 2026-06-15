@@ -1,5 +1,5 @@
 lesson_key: lesson-02-telling-events-in-order
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-English_Aussie_Bloke-20260612T130426Z.wav
+  duration_seconds: 20.96
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-English_Aussie_Bloke-20260612T130426Z.wav
+  trace_id: 067b36c60d51380ce05104de99d51380,067b36c8e1ff4d6c782fee7bae483fe4,067b36cbb397ff9f5b3e5ce60a61659b,067b36ce813cbc441d3d6dbea5eea7ca,067b36d042e4c88da590416afb0f65e6,067b36d3bbd29841b5b74300cc25fddc,067b36d5626e6d656e923deffd9d4795,067b36d7a21829224c8e0b44d5c54ae1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:04:26.449234+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

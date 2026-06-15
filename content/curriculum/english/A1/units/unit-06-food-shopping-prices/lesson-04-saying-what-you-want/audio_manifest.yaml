@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260605T060645Z.wav
-  duration_seconds: 11.44
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260612T124059Z.wav
+  duration_seconds: 10.38
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Sara: English_CalmWoman
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260605T060645Z.wav
-  trace_id: 06719a68f009d48e62f90cc7e1caac1f,06719a6a29d6a65c3bb16ce0575937e0,06719a6b0bfe8b03463a85609e507502,06719a6ecd5bcf144e88145091f40220,06719a70fd8f688bfc28ad4ebf4828f9,06719a71f13b561e38b75f9907dbd255,06719a748230b093c770fadb868d5e59
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260612T124059Z.wav
+  trace_id: 067b314a290dc38bf21537afebd1e002,067b314cf0a9ff6a5ce603f47644f8b6,067b314ef1427c6a2c8f14c78d5d20cf,067b31518a5ddf300aeed64b47c7f30f,067b3154585889de4fb640c1c0f108b2,067b315686df1478b7061ac29c826679,067b31596af1f9e944d02b94f033185e
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:06:45.567552+00:00'
+  generated_at: '2026-06-12T12:40:59.033640+00:00'
 lesson_key: lesson-04-saying-what-you-want

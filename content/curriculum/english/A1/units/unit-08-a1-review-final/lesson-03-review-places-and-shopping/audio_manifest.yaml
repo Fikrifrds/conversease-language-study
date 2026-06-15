@@ -1,4 +1,4 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260605T060953Z.wav
-  duration_seconds: 19.91
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260612T124506Z.wav
+  duration_seconds: 27.24
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Mina: English_Upbeat_Woman
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260605T060953Z.wav
-  trace_id: 06719b1f14247b3dde7ffe86b8faf6e0,06719b214aab9c8db609d762febcf2f7,06719b23ac8aa104cc1d108d0d37e4ac,06719b25045d3e7c6d61be01362a775d,06719b2784dbacac04c30a557282d1d3,06719b29bad67aba535819e00fc2f514,06719b2b250a73b15f59860025be8661,06719b2d6f17824dc7ef1c1f791494cf,06719b2fd467d21e840cf43ece0e3fe3
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260612T124506Z.wav
+  trace_id: 067b323597d25b38ea03d3b6981ed8a5,067b3238c99f5b884300aa42691df7f3,067b323a754896517b39217d67e84fc7,067b323cff9bddc0f6b5a58b28657a70,067b3241f7c8b9179dd2dd34cc26dacf,067b32438cdaf3c2676ebdf13bfb2914,067b3245e1063db47f1add370b299342,067b3248b4a8c8d942780f41d70db83d,067b324b22820e565013a43cb69686bc
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:09:53.657241+00:00'
+  generated_at: '2026-06-12T12:45:06.671425+00:00'
 lesson_key: lesson-03-review-places-and-shopping

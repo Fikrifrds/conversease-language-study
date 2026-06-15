@@ -1,5 +1,5 @@
 lesson_key: lesson-04-recommending-a-solution
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-04-recommending-a-solution/listening-English_Aussie_Bloke-20260612T133927Z.wav
+  duration_seconds: 24.23
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-04-recommending-a-solution/listening-English_Aussie_Bloke-20260612T133927Z.wav
+  trace_id: 067b3efbda9a87951574a9060a465c4e,067b3efd6ab6635251c81cc9b90cda70,067b3f002e6b388533b737b58413f9d5,067b3f02f06c301faec978ce78de0106,067b3f058ce298af8fbb39d295e9209d,067b3f073b3d27242f1c138fc30edf6f,067b3f095e1cf5befef4c3a4d87c45cf,067b3f0c35f2330085cde6fe9b6c2bd7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:39:27.524348+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

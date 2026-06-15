@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260605T055920Z.wav
-  duration_seconds: 14.22
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260612T123219Z.wav
+  duration_seconds: 16.08
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Officer: English_CalmWoman
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260605T055920Z.wav
-  trace_id: 067198ab83d0bb2b51332bd534683847,067198ad4d449d29d4a3dbf35ba80e88,067198af48503167e7eff3ba1ae6b649,067198b1130c20b80ab9e2197e9f68f1,067198b3cb591694b4d229bd9eab8ade,067198b6a4480edf9f5839183440a4dd
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260612T123219Z.wav
+  trace_id: 067b2f464abdbed69133338d759afed9,067b2f486b92870586f5cc6e59d10b66,067b2f4af553a73b4a70d730efe7066b,067b2f4cc58b87f65961c53b92c565ef,067b2f4f63fe3262437d57788289ec7e,067b2f52a72b087842f05d8e1bb1728a
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:59:20.031681+00:00'
+  generated_at: '2026-06-12T12:32:19.948553+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260605T060531Z.wav
-  duration_seconds: 18.82
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260612T123923Z.wav
+  duration_seconds: 18.34
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Sara: English_CalmWoman
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260605T060531Z.wav
-  trace_id: 06719a1921cd618e17138cff40c619b0,06719a1b7f5e037a15f214ce52d0b320,06719a1db72ef5ec61491ded7dd9011a,06719a1fb53b38ab279cd197c9130f78,06719a22a5f48630e2ece94b552b2df9,06719a25750e1b5f8c16577423ae3c9f,06719a2760cb152bb37f67fff8906fcd,06719a2947c132f3028594071255a17f
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260612T123923Z.wav
+  trace_id: 067b30e949a55ba9b60436881d7caebd,067b30eb8985bedad76f5bfaec7d956b,067b30eee72afca9fcd99a796b9ccd7a,067b30f0f1f96a3c1cda5c1dbf3ea9d5,067b30f388fafd9ea3318dcfd55d2e3c,067b30f5dedc8b1272509258cc4ffd13,067b30f78fe929630c5728a09e315d0d,067b30fa553404b2ccf6133180790465
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:05:31.969627+00:00'
+  generated_at: '2026-06-12T12:39:23.836008+00:00'
 lesson_key: lesson-05-finding-a-place-mission

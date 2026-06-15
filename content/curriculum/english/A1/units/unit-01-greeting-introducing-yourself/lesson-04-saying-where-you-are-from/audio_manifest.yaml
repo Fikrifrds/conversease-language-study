@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_Aussie_Bloke-20260605T055849Z.wav
-  duration_seconds: 10.49
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_Aussie_Bloke-20260612T123140Z.wav
+  duration_seconds: 10.2
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Omar: English_Trustworth_Man
   line_count: 4
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_Aussie_Bloke-20260605T055849Z.wav
-  trace_id: 067198908532452319d27ad07ba167cb,06719892fd12726304d6f861dc58adae,06719895080f41cd39325303f664bcf3,0671989743a1a4e9b82dad4a6f84a57e
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_Aussie_Bloke-20260612T123140Z.wav
+  trace_id: 067b2f222254fc57c5e5aae097520778,067b2f25114dc26269c8b39fe9e5d469,067b2f271aa15fc11172ed33f58df2d2,067b2f29b3dd4b5f922fdc88a3e2a189
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:58:49.391734+00:00'
+  generated_at: '2026-06-12T12:31:40.053498+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

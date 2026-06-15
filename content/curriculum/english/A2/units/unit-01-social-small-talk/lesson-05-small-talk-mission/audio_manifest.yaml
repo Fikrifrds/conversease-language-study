@@ -1,22 +1,28 @@
 lesson_key: lesson-05-small-talk-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-    provider: minimax
-    model: speech-2.8-hd
-    voice_id: multi_speaker
-    speaker_voices:
-      Ben: English_Gentle-voiced_man
-      Lina: English_Upbeat_Woman
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-05-small-talk-mission/listening-English_Aussie_Bloke-20260612T124918Z.wav
+  duration_seconds: 35.07
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Lina: English_Upbeat_Woman
+  line_count: 12
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-05-small-talk-mission/listening-English_Aussie_Bloke-20260612T124918Z.wav
+  trace_id: 067b3331cc92837fd47884fcc3d8235b,067b333389e8a8472c220fe56c21c1c4,067b333557faa60110729c0228ebc617,067b3338b3ee2ebc21203a4d2be3691b,067b333a08bac704fa6fde43b1125b3f,067b333d07c1bb81c359b03db12a822f,067b333fc337c331da47544d7d4cdcff,067b3342717a00c1caddc8d39b1c4b1f,067b3344ce9221c92355bb4399e4e7ed,067b334721155fa97c370118bd56709f,067b334ab2833f34a196ef02e110e396,067b334c8b775283cd705036a4bac019
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:49:18.796053+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

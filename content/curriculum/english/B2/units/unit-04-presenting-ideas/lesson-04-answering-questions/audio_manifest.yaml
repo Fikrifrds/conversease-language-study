@@ -1,5 +1,5 @@
 lesson_key: lesson-04-answering-questions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-04-answering-questions/listening-English_Aussie_Bloke-20260612T133202Z.wav
+  duration_seconds: 26.74
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-04-answering-questions/listening-English_Aussie_Bloke-20260612T133202Z.wav
+  trace_id: 067b3d3c56bc6e84a7d825bd7a10f6d4,067b3d3eaeb801184378523d65de2cb0,067b3d41beb2b31e99133138107a2f3f,067b3d431265b87dcb24fa0bcc9133be,067b3d46200f2e4830d0bd90aa73781d,067b3d49171a244815ff3b82078e092d,067b3d4b56e6c16d3b4359f7a2b1deb5,067b3d4db0f2c727ba4358809a68847f,067b3d4f4c30c5fdf3c981e9c658645c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:32:02.396319+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

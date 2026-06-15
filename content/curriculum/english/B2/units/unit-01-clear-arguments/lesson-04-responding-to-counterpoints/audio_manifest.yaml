@@ -1,5 +1,5 @@
 lesson_key: lesson-04-responding-to-counterpoints
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-English_Aussie_Bloke-20260612T132413Z.wav
+  duration_seconds: 28.51
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-English_Aussie_Bloke-20260612T132413Z.wav
+  trace_id: 067b3b68a8fa31d9454de2f678f1e3e0,067b3b6bfb74c24bf629b8079649aeff,067b3b6dc1a54b418b8ff607bd3f7fa4,067b3b704ed3049da910c71623889fa3,067b3b73c0504d2af9799abc9c9dde84,067b3b75469b8f633c3ef3deedc37480,067b3b783053391849726a9b619611af,067b3b7a01757d012176eb2ac53581fa
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:24:13.191237+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

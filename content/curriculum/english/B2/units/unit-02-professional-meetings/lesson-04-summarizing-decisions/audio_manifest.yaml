@@ -1,5 +1,5 @@
 lesson_key: lesson-04-summarizing-decisions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-English_Aussie_Bloke-20260612T132644Z.wav
+  duration_seconds: 44.78
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-English_Aussie_Bloke-20260612T132644Z.wav
+  trace_id: 067b3bfd34cfb336f5b2d199fade66a9,067b3bff31900dfad8e582fb93cef367,067b3c02f9b0903129f15fb6140162c8,067b3c05334874b000ea036dba35d032,067b3c08dbc1b09246b260a2a9efe54d,067b3c0b456157c388a218f86124974b,067b3c0e8a691ee03c9554ad827ad577,067b3c115988256b464043f3b8fa9281
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:26:44.976386+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

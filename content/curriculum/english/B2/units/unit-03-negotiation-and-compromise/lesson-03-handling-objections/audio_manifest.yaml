@@ -1,5 +1,5 @@
 lesson_key: lesson-03-handling-objections
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-English_Aussie_Bloke-20260612T132853Z.wav
+  duration_seconds: 26.91
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-English_Aussie_Bloke-20260612T132853Z.wav
+  trace_id: 067b3c812a0a7345bc116fe6ad1bd274,067b3c84072bd88e2130489421c5ad37,067b3c86a04036c6be915e05474d884c,067b3c890bf7ea23cd6ecbdfa11d11a4,067b3c8b0083518129e5bbdfe8068315,067b3c8e87ec8132a6804ffed250ff1e,067b3c91a7260b088414499080c8d698,067b3c934c5c536f789540b851ffebfe
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:28:53.948821+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

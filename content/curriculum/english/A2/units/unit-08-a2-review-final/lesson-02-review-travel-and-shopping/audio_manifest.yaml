@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-travel-and-shopping
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-02-review-travel-and-shopping/listening-English_Aussie_Bloke-20260612T130217Z.wav
+  duration_seconds: 18.71
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Staff: English_Upbeat_Woman
     Mina: English_Upbeat_Woman
+    Staff: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-02-review-travel-and-shopping/listening-English_Aussie_Bloke-20260612T130217Z.wav
+  trace_id: 067b36482819a757711234426e5b5211,067b364a27fdbef0d20b6c579cffff6e,067b364d52e2391dcd70659acf155c1d,067b364f71ac887cb3879191356c1032,067b365114dd5716888046e7dfc8c51f,067b3654b1e0bfc274021fdb2db5eb33,067b3657d7157c898740a9444f8ea578
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:02:17.775718+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260605T055937Z.wav
-  duration_seconds: 19.9
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260612T123241Z.wav
+  duration_seconds: 21.95
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Officer: English_CalmWoman
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260605T055937Z.wav
-  trace_id: 067198bb43fca9d655e199da1b78b569,067198bd92c0dc54b57d84273e31e500,067198c0ba65f4810eb5bb6212793f9e,067198c3d7569b38996a88a48392327b,067198c527a8ac9e705172bf08e6d597,067198c7311cfa39da5000ce68f04653
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_Aussie_Bloke-20260612T123241Z.wav
+  trace_id: 067b2f5a36db54ebb407e7df06429f93,067b2f5b2b63bd97927453fb6d0f6d68,067b2f5e0d5f3487007cd99a90624e20,067b2f624a90798094cc9c97ff0d0148,067b2f644b444722c472a96ff7ea975c,067b2f67630bea06b01280bd85380b34
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:59:37.250981+00:00'
+  generated_at: '2026-06-12T12:32:41.262758+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

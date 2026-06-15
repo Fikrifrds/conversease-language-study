@@ -1,5 +1,5 @@
 lesson_key: lesson-01-comparing-two-options
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-English_Aussie_Bloke-20260612T131515Z.wav
+  duration_seconds: 20.94
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-English_Aussie_Bloke-20260612T131515Z.wav
+  trace_id: 067b394fcfb48dd52ee181c9f2c6e549,067b3952f8ddf621dd9c9d12dfcb2898,067b39548c5317621c13f74cee967027,067b3956edf6cdffd7fc03c41921719f,067b3958077d32605a55738a5a5b0285,067b395cda5a2ce64d70050c9e05cca6,067b395fddddb581b682ce215c06e42a,067b3961bace5876b97a00f9ae795c56
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:15:15.569193+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

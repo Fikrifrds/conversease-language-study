@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260605T060052Z.wav
-  duration_seconds: 26.84
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260612T123353Z.wav
+  duration_seconds: 28.0
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Officer: English_CalmWoman
   line_count: 10
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260605T060052Z.wav
-  trace_id: 067198f9a1aa32930976aa883c929d1b,067198fcb3af94e9ff3684b0c382c662,067198fe66fe97a3a1215768efb5cff9,067199008aee8eca6325d5c4672fdd7c,067199029a0368b5e644686d6f091f6f,06719904104b27140e7a0901bcdb9dcf,06719908304928fa4bb621b913281477,0671990d87dec6e9b2c8a7cc5a4edc71,06719910c5033548615716a2e774f589,06719912242e293319e20ec366205320
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260612T123353Z.wav
+  trace_id: 067b2f9969b2b1a2e1de6b61335914a8,067b2f9cae66d2c1202f722f3114c853,067b2f9e070a409914b8331bbe53a9c4,067b2fa1ae2a9b6fade19d2edd576ffa,067b2fa3f060f9972e5ceb538f423361,067b2fa598a9abc3fb6d1ffa7ec14497,067b2fa8a8123e7a963303bdd2876378,067b2faabb8f40b057630b4d408b128c,067b2facbb4e54fae91316928d00938b,067b2faec12e517c6d7f04424a665fe2
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:00:52.673070+00:00'
+  generated_at: '2026-06-12T12:33:53.639843+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-02-discussing-reliable-sources
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-English_Aussie_Bloke-20260612T133328Z.wav
+  duration_seconds: 23.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-English_Aussie_Bloke-20260612T133328Z.wav
+  trace_id: 067b3d93181f491f50e8deff661fd48e,067b3d9654434d19cf8e0ea30292a259,067b3d989db086ed7920ce1ce39b7f1f,067b3d9a484be4f1b1b92dc3db199572,067b3d9d93b6a97953e172d2c80a083f,067b3d9f08cfca93f961be6a103e5963,067b3da2a03b259a14388588a88816fb,067b3da587c8d3321fb06d02179aeee0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:33:28.351626+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

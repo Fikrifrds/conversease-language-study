@@ -1,5 +1,5 @@
 lesson_key: lesson-04-responding-under-pressure
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-English_Aussie_Bloke-20260612T135325Z.wav
+  duration_seconds: 26.5
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-English_Aussie_Bloke-20260612T135325Z.wav
+  trace_id: 067b4241d455fcbefd834569bb78e30a,067b4244191ea2c26c98ed7fc0d3c208,067b42463f58b4395714d56d63ed01d4,067b42489feb156a0d70e1a802dc85bc,067b424b6e69d02f18727399f38436a3,067b424de3cd7696ebbc241016fa408d,067b4250df749f4d057d2ee6fd07bf04,067b4252282fe45d5f839f66f8671f73
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:53:25.212890+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

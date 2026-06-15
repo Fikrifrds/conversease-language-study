@@ -1,5 +1,5 @@
 lesson_key: lesson-05-cross-cultural-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/listening-English_Aussie_Bloke-20260612T135647Z.wav
+  duration_seconds: 49.74
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/listening-English_Aussie_Bloke-20260612T135647Z.wav
+  trace_id: 067b43052d6d980f129b02b9a4e2b119,067b4307b040d98f9bd75fc722ce0ec9,067b430a774594064e48bfda978c34f0,067b430dda32664e7bb14a8da4539207,067b43105f6d28a2f53d1f548f323326,067b4313f1d61572c78b8107e6cd3527,067b431678827db6ca6127d0b004f691,067b4318ad4fa371b51a537c79383296,067b431bcb2a9ff4c3f1b2239e801d4e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:56:47.972728+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

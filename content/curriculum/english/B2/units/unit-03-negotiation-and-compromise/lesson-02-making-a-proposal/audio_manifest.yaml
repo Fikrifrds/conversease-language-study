@@ -1,5 +1,5 @@
 lesson_key: lesson-02-making-a-proposal
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-English_Aussie_Bloke-20260612T132824Z.wav
+  duration_seconds: 39.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-English_Aussie_Bloke-20260612T132824Z.wav
+  trace_id: 067b3c621fc0132bb6e24ae7f8ef6a16,067b3c653a4172c733a4ed61ef559a45,067b3c6834baa41bdc7230e7863bc6d9,067b3c6a51a500c4fd314f72b9ecf7a2,067b3c6d7eb803414d7dd6a62fedc7f0,067b3c70a2989d4bdc3f26e8c10f3243,067b3c73878ecdb024404b62ed46efd0,067b3c757de88c0342be61faa4a29538
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:28:24.976560+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-past-experience-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-05-past-experience-mission/listening-English_Aussie_Bloke-20260612T125925Z.wav
+  duration_seconds: 15.76
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Friend: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Friend: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-05-past-experience-mission/listening-English_Aussie_Bloke-20260612T125925Z.wav
+  trace_id: 067b359d228b2db375b52b409a457961,067b359feb8860eea541eeba57b414c7,067b35a2372dd7cbedeca1083d3d7777,067b35a4135e3dc9a4630c45e0cc794f,067b35a6fa1e797829e7d7a88f58cfb4,067b35a837f0433c0abb57c18daf7da0,067b35ab9d4213d5032ebdc1fac1f6fd
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:59:25.855673+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

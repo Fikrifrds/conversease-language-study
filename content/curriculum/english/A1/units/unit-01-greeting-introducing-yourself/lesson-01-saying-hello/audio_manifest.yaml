@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260605T055810Z.wav
-  duration_seconds: 11.09
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260612T123049Z.wav
+  duration_seconds: 11.25
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260605T055810Z.wav
-  trace_id: 06719866d49817809a37c329605dd755,0671986956b950161db6ef30756e2e33,0671986b7597434e131a2c797b1db2d7,0671986ec138671a7b44b05ec3ec63fb,06719871ca1bdc3332bdf66d162a88c7
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260612T123049Z.wav
+  trace_id: 067b2eeef27dfe950e4d732d2a5c3a5d,067b2ef0e0ea1d020cc4ebe6d215e0db,067b2ef3169e8cb48625627822dd9de2,067b2ef521c2f9f70170bfcea31b43a7,067b2ef88470d94cd9832c81b613f50b
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:58:10.676571+00:00'
+  generated_at: '2026-06-12T12:30:49.838415+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

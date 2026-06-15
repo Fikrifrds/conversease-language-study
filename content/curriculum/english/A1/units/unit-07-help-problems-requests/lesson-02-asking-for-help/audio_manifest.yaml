@@ -1,4 +1,4 @@
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_Aussie_Bloke-20260605T060748Z.wav
-  duration_seconds: 14.77
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_Aussie_Bloke-20260612T124216Z.wav
+  duration_seconds: 16.54
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Sara: English_CalmWoman
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_Aussie_Bloke-20260605T060748Z.wav
-  trace_id: 06719aa594515817a7066dc3068ac7c9,06719aa7b5026ed88fc0f58c7902a067,06719aa994cea2c2b57e7e96fba07d15,06719aabde1a017e4014a1fa92512dde,06719aade84b1768f2b8f33e59595ba3,06719aafee709f630a8be89324cd8298,06719ab11eb776f41b2872d74229774b
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_Aussie_Bloke-20260612T124216Z.wav
+  trace_id: 067b31971fa685269740d190c686e7e5,067b319aa1a48f9cc0ff0209d6f0e53f,067b319d68690eae848876a9488795ab,067b319fd086291a67631c7a57476117,067b31a16045f3e3f9163564cb49ac98,067b31a372e29c4d088ede3e650b4d14,067b31a506a6778c0a838aeb1d3389e4
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:07:48.022512+00:00'
+  generated_at: '2026-06-12T12:42:16.279446+00:00'
 lesson_key: lesson-02-asking-for-help

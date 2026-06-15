@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260605T060107Z.wav
-  duration_seconds: 9.4
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260612T123418Z.wav
+  duration_seconds: 9.2
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260605T060107Z.wav
-  trace_id: 067199186b871c9c409d648429052095,0671991ab4b8ac375a674d1bcab88b4f,0671991c1ce1907a54f88935cfa3967f,0671991ee01eb6bc54cba9c02ea8c3c8,067199207c76a619fb07082c53469f21,06719922f2c583bf1c315dcfc114c56f
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_Aussie_Bloke-20260612T123418Z.wav
+  trace_id: 067b2fbb635e3e3eaf649d43d1891aa8,067b2fbfe7c5544eaa18bc238fa59349,067b2fc143f988d314de4eae205f6894,067b2fc3924abdda528b463ffbfd1f67,067b2fc626e45fe7169970b75394e2a3,067b2fc8d6da2eda0173b23814249d23
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:01:07.842382+00:00'
+  generated_at: '2026-06-12T12:34:18.529976+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

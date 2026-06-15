@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-progress
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-English_Aussie_Bloke-20260612T131326Z.wav
+  duration_seconds: 20.65
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-English_Aussie_Bloke-20260612T131326Z.wav
+  trace_id: 067b38e291cd4d95fe4c98f487cb34db,067b38e4eaf93509349c7a03fc223493,067b38e77ac244582851ef4745c9c198,067b38e98adb941777b6eb751ee3945c,067b38eb30117f3c3ae6097aaf1246ef,067b38eeda21b3b02271890a444b24d5,067b38f192203ed48e2dea18937ae330,067b38f3822b7a04a2397c45f8f42bee
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:13:26.158452+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

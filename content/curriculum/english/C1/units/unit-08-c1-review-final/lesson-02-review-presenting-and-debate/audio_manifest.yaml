@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-presenting-and-debate
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-02-review-presenting-and-debate/listening-English_Aussie_Bloke-20260612T140321Z.wav
+  duration_seconds: 36.84
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 10
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-02-review-presenting-and-debate/listening-English_Aussie_Bloke-20260612T140321Z.wav
+  trace_id: 067b449081015b6ac1fed18ecbd6e8ee,067b4492ab82f57d53ad19eaab55d8c4,067b4495f6d64e00d3078db912c62b7e,067b4498a4da2cc487646e82f50a09eb,067b449b667e9a73bf9050688958c8ec,067b449d39c7645720ecc6ab1ee78365,067b44a00ce8e3f3c9859dd07bd82f23,067b44a15c991574c0679fc19325cb09,067b44a4f57ad82121f7c07a45e2dd97,067b44a6d22ad31fd863d5caced15adc
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T14:03:21.481683+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

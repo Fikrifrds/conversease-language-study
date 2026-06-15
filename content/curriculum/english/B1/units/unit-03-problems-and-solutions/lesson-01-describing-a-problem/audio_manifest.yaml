@@ -1,5 +1,5 @@
 lesson_key: lesson-01-describing-a-problem
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-English_Aussie_Bloke-20260612T130820Z.wav
+  duration_seconds: 18.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-English_Aussie_Bloke-20260612T130820Z.wav
+  trace_id: 067b37b2fe2d0761f730fd941a70c49c,067b37b54b8006c13df1d26388ba134e,067b37b8c6c432c7622fb977330a2772,067b37b9213c8c37290dab70fbfd5d56,067b37bc07583f3fd229918de9d583bf,067b37bed3d4f8f2e445e059b7c460bf,067b37c1cbc4bca02aa91f73a5dd99ad
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:08:20.140048+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

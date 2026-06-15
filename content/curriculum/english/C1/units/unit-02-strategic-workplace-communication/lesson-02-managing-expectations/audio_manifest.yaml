@@ -1,5 +1,5 @@
 lesson_key: lesson-02-managing-expectations
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-English_Aussie_Bloke-20260612T134622Z.wav
+  duration_seconds: 29.75
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-English_Aussie_Bloke-20260612T134622Z.wav
+  trace_id: 067b4098680e20c2b4f7f40d032c6ad6,067b409c4c71619131df5e6f0cda5a48,067b409e0238d4a54feb224bb0960b50,067b40a1a574540e14e599125da28fc6,067b40a442c223ac77071fb92f5320b5,067b40a690a592c33b4105089b1361fe,067b40a9514c16d34ad981103872e0cd,067b40ab2d088c74f9f783216637a4ae
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:46:22.955621+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

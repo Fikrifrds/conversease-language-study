@@ -1,5 +1,5 @@
 lesson_key: lesson-04-communicating-risk
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-04-communicating-risk/listening-English_Aussie_Bloke-20260612T134727Z.wav
+  duration_seconds: 56.97
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-04-communicating-risk/listening-English_Aussie_Bloke-20260612T134727Z.wav
+  trace_id: 067b40d5a17c9e0aa700e65939690b8c,067b40d9c57d177d49224927ebd62a06,067b40dcfab25e97d9f63780a5953072,067b40dfc5757a9e505722f11f909ad3,067b40e21634d92d4431a429a203caa5,067b40e5f5282f10fa07708c045e7e3c,067b40e8455fec0eb6ce8a872caa11df,067b40ebbcceca983961eb7a56407b2f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:47:27.748111+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

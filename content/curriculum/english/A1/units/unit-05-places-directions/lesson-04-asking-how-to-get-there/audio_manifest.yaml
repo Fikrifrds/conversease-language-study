@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_Aussie_Bloke-20260605T060508Z.wav
-  duration_seconds: 14.83
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_Aussie_Bloke-20260612T123859Z.wav
+  duration_seconds: 14.47
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Mina: English_Upbeat_Woman
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_Aussie_Bloke-20260605T060508Z.wav
-  trace_id: 06719a03d2dc1dfeb37f2faf341f70da,06719a0676bf4ca1974ffdf66cb671a4,06719a085d80821d1706b2b61f281679,06719a0a8b2459e2e82c6bdd2860b33f,06719a0d90c169b39aec731027efc697,06719a0faf7b5f57a5265c2df05fbec0,06719a11799ca304e356792211e17025
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_Aussie_Bloke-20260612T123859Z.wav
+  trace_id: 067b30d3291efc4421f3cea4534f6cbd,067b30d55c1f826a7f24d5508975a781,067b30d736735c32e2a57c32654c2489,067b30d9fe75a6f6b697e0598abc0e46,067b30dc20dd0a6f7dc3c1237556a3e4,067b30df677b68cf49e7d1aa70e05fb6,067b30e1c75d91cc36851a0d05ef68bd
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:05:08.050727+00:00'
+  generated_at: '2026-06-12T12:38:59.708228+00:00'
 lesson_key: lesson-04-asking-how-to-get-there

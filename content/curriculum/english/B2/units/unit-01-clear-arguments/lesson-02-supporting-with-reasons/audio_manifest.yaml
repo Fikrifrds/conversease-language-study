@@ -1,5 +1,5 @@
 lesson_key: lesson-02-supporting-with-reasons
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-English_Aussie_Bloke-20260612T132312Z.wav
+  duration_seconds: 26.54
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-English_Aussie_Bloke-20260612T132312Z.wav
+  trace_id: 067b3b2bad36d79689b3964d76392c98,067b3b2e2e4239c6d0bcd81bc0598857,067b3b31f2af4e0ca1febe1592ec1975,067b3b33b9526b8ec887e473b163a712,067b3b353aa0e56a67bff37e385bb797,067b3b384a475c0cbeb977bdcfdad230,067b3b3a122a43860de0bc856f957c21,067b3b3ce29177ae261881a88228181f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:23:12.755233+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

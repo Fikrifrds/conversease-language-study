@@ -1,5 +1,5 @@
 lesson_key: lesson-01-understanding-client-needs
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-English_Aussie_Bloke-20260612T133529Z.wav
+  duration_seconds: 27.21
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-English_Aussie_Bloke-20260612T133529Z.wav
+  trace_id: 067b3e0de96f738044e737dd85f9ca68,067b3e105d1c84de74d95dedca7ea056,067b3e1369fee1d90b221b336f4ebc4a,067b3e15e1c24810f49db36d5224cdec,067b3e175f19bdea5c923f6db7407300,067b3e1a076e6804c0dad703ae32d594,067b3e1d21ca3774145058858cd38185,067b3e1e2ad5c94c3a0522046cf0bc16
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:35:29.571303+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-02-expressing-certainty-and-doubt
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-English_Aussie_Bloke-20260612T134335Z.wav
+  duration_seconds: 27.43
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-English_Aussie_Bloke-20260612T134335Z.wav
+  trace_id: 067b3ff3a18e266a30f163b5120b479f,067b3ff66fb2989c254cc11c9ff78aac,067b3ff8fc1a59416dc82487faa6ff5d,067b3ffa0c03a5b90c27c8b898ad61bb,067b3ffdc4ea3d863f800687b7862fe5,067b3fff87f798bb021d0b610ea34e23,067b400256fe4317679bb76eb7882fb5,067b4004122ac78ce8d89c5398a0431a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:43:35.223247+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

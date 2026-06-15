@@ -1,5 +1,5 @@
 lesson_key: lesson-03-giving-actionable-feedback
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-English_Aussie_Bloke-20260612T135827Z.wav
+  duration_seconds: 27.12
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-English_Aussie_Bloke-20260612T135827Z.wav
+  trace_id: 067b436eb9e9e9b72c9f27fa1c54bc9d,067b437028f5032e6327664eb9940989,067b437369a16772ffba3e16bf96e502,067b437536790ac135bdb28d8138ae9f,067b43771bc1613b867e9bcf27258c1c,067b43797b8757830c2265ab1adb6c8f,067b437c8ae146250778cae8901ab4b5,067b437ecb1b2db2ee720ed92f398635,067b43808e9e33002e063793faf1c8d6
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:58:27.910618+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

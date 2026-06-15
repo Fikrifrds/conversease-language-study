@@ -1,5 +1,5 @@
 lesson_key: lesson-01-setting-direction
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-English_Aussie_Bloke-20260612T135717Z.wav
+  duration_seconds: 25.17
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-English_Aussie_Bloke-20260612T135717Z.wav
+  trace_id: 067b432935d52ec486795ab26438cb63,067b432cf5a46a69e1ecbc1ed4e09c33,067b432e00a77795a33a3768f50f385f,067b4331b2d5b534386c015c6f3da741,067b4334e309bed65415c4e4b311cbc0,067b4336726b6a3656514fc475ef6f26,067b4338b759463c54e1ecc8e9a84e62,067b433b3c0a1ad3ad8284d370bf2905
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:57:17.835070+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

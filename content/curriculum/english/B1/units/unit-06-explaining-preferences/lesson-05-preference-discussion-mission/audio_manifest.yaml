@@ -1,5 +1,5 @@
 lesson_key: lesson-05-preference-discussion-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-05-preference-discussion-mission/listening-English_Aussie_Bloke-20260612T131706Z.wav
+  duration_seconds: 26.39
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-05-preference-discussion-mission/listening-English_Aussie_Bloke-20260612T131706Z.wav
+  trace_id: 067b39bc8b7417bc10562c6617ee6432,067b39bef7bce3c1c1be4fd0b2df6663,067b39c1ba61afe08f1af0be9f66b719,067b39c39757306bf47725f35bcda7a3,067b39c51724a37d90434efbcf58fa2e,067b39c71798848273dfb3ca27dba92b,067b39ca4ea013388bc8f1725acda8a1,067b39ccbac9bc2d76e4b09b1144b772,067b39d048b47cfdc059e7b9773b4f4e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:17:06.730468+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

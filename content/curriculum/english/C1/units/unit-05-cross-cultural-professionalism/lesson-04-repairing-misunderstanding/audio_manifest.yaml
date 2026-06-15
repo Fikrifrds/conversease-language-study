@@ -1,5 +1,5 @@
 lesson_key: lesson-04-repairing-misunderstanding
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-04-repairing-misunderstanding/listening-English_Aussie_Bloke-20260612T135611Z.wav
+  duration_seconds: 29.03
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-04-repairing-misunderstanding/listening-English_Aussie_Bloke-20260612T135611Z.wav
+  trace_id: 067b42e677f9bb73900474577d17222f,067b42e9160822dd7d2aea236991743d,067b42ebb9903386f4ab8578b5406718,067b42ed77de511aaf72291c30845043,067b42f010cb09f61f869b64c73cd888,067b42f21cb9a09bdbbad3d0bccad052,067b42f6091e5c5032b2cc58ebc9fd3a,067b42f853331c4f5d4edcdf618eb0dd
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:56:11.565892+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

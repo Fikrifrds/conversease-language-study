@@ -1,22 +1,28 @@
 lesson_key: lesson-03-comparing-simple-options
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-    provider: minimax
-    model: speech-2.8-hd
-    voice_id: multi_speaker
-    speaker_voices:
-      Ben: English_Gentle-voiced_man
-      Staff: English_Upbeat_Woman
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-English_Aussie_Bloke-20260612T125436Z.wav
+  duration_seconds: 19.38
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Ben: English_Gentle-voiced_man
+    Staff: English_CalmWoman
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-English_Aussie_Bloke-20260612T125436Z.wav
+  trace_id: 067b347c6690c4fc7832c00b701a91ef,067b347f8e34b86619fc7daa9b72cc12,067b3481ed5906413c1569fcfb132a62,067b34848e7b63c9ff86397219658adf,067b34870c75727086d194c220a417f3,067b348990f5ee289166b90521e6c927
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:54:36.289556+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null

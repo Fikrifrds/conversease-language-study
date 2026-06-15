@@ -1,5 +1,5 @@
 lesson_key: lesson-03-handling-concerns
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-English_Aussie_Bloke-20260612T133624Z.wav
+  duration_seconds: 26.37
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-English_Aussie_Bloke-20260612T133624Z.wav
+  trace_id: 067b3e4585872a4a2d4295119ff0ac19,067b3e47bc0a293db7277495b865f948,067b3e4a120e8d7b2b92cd608a5206ea,067b3e4d6c5ab3f0b12fc80ead3173d7,067b3e5041a9426849e375ba738208f4,067b3e528b5f81652fb83b8a849cdbb1,067b3e54c325879ae056f4f5b812a3ed,067b3e5672123875446dbd9abc8c0c50
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:36:24.615836+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

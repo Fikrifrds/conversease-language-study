@@ -1,5 +1,5 @@
 lesson_key: lesson-05-advanced-presentation-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-05-advanced-presentation-mission/listening-English_Aussie_Bloke-20260612T135049Z.wav
+  duration_seconds: 49.54
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 10
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-05-advanced-presentation-mission/listening-English_Aussie_Bloke-20260612T135049Z.wav
+  trace_id: 067b419ccb806183f70a797b2f5e5fcd,067b419febbd139fa01fc7dad4739bb4,067b41a23d7eb778872ca9fc3e8bdf35,067b41a542cfca4197954eeeb816ee6b,067b41a868415f7da9b512802bdd797e,067b41a9f6fbeecc6b5749782375578b,067b41adc1aea041741f87b06b111131,067b41aeec4f24b2f3d93bea409f316e,067b41b1f5d00bb5eee92f4bf1cf7532,067b41b458a3a95972637a769ec03893
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:50:49.176941+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

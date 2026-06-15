@@ -1,5 +1,5 @@
 lesson_key: lesson-02-asking-for-clarification
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-02-asking-for-clarification/listening-English_Aussie_Bloke-20260612T130636Z.wav
+  duration_seconds: 19.63
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-02-asking-for-clarification/listening-English_Aussie_Bloke-20260612T130636Z.wav
+  trace_id: 067b374b935ff5cb6ed633e073164bc6,067b374e8c6f3423bb9689ffed70b1fb,067b375058e2ac918491eb928fdd3050,067b37537f52bb27886d705972087acc,067b37553de422fe471cba77197b1221,067b3757d8ffacf32689e8b61cad6811,067b375a922b00bf8b1eb4a9f325c931
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:06:36.254739+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

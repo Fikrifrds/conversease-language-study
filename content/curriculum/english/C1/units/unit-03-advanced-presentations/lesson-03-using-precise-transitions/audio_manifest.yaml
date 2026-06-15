@@ -1,5 +1,5 @@
 lesson_key: lesson-03-using-precise-transitions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-03-using-precise-transitions/listening-English_Aussie_Bloke-20260612T134931Z.wav
+  duration_seconds: 25.56
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-03-using-precise-transitions/listening-English_Aussie_Bloke-20260612T134931Z.wav
+  trace_id: 067b4157f32f4bf16d89b1ce10e97b2e,067b415903e177387555892c1dddfa59,067b415c95e8ac713e1fe1e4347224e6,067b415eb87f9f3bcfdecad3d1c6cdb1,067b416008c9d841700766eb5e1aa870,067b41625bc38165f09c0bdb43cb7f95,067b4165b065bd57e2dea810568531fb,067b41685f54d83398ba248db9a520ea
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:49:31.135593+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

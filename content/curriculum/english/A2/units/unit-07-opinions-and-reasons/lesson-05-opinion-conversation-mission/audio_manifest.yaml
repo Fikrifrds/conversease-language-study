@@ -1,5 +1,5 @@
 lesson_key: lesson-05-opinion-conversation-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_Aussie_Bloke-20260612T130129Z.wav
+  duration_seconds: 18.28
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Friend: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Friend: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_Aussie_Bloke-20260612T130129Z.wav
+  trace_id: 067b3618dc33d86de8b75c335c0e5bb9,067b361a7858d9b8d8d497f4d5042e22,067b361d44fe6e029ff15ed53d979563,067b361f3694da6c8abee6a2f8de9b9c,067b3622e69cfc8fda6bbe9fa29ccae8,067b36253f2c5366d9dab792080a5080,067b362738c179d9f2012cdcdd2eb7e1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:01:29.661249+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

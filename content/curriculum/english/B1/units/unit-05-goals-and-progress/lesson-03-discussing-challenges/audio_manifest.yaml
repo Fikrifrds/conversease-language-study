@@ -1,5 +1,5 @@
 lesson_key: lesson-03-discussing-challenges
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-English_Aussie_Bloke-20260612T131355Z.wav
+  duration_seconds: 23.82
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-English_Aussie_Bloke-20260612T131355Z.wav
+  trace_id: 067b38fd80bcbca10ea4e619ce6f58e7,067b390057cd1bef4a971b1e321ffa6e,067b3902adcc3482ef0a5a6641676cfb,067b390408b7a1a84d3d0812306d4879,067b39078084bfbd3a43af91a4665f24,067b3909632e55ac0f99eee6c6ad6b3c,067b390b1b7335a98ccb3612a672c660,067b390da1bfc47f45b4756d71098880,067b391087193fa7fb43309a79517c1c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:13:55.330512+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

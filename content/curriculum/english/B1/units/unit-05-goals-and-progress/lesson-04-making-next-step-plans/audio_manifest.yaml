@@ -1,5 +1,5 @@
 lesson_key: lesson-04-making-next-step-plans
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-04-making-next-step-plans/listening-English_Aussie_Bloke-20260612T131421Z.wav
+  duration_seconds: 18.91
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-04-making-next-step-plans/listening-English_Aussie_Bloke-20260612T131421Z.wav
+  trace_id: 067b391a719df9a8027d546d84eb01cf,067b391ccdf72f8a7ccd67b83727c60a,067b391e8eb3b51be71ad4233e38c76b,067b39218e403d80468542fb66fb29ef,067b3923a76af4474b09f1598a007d92,067b39255a84a7327a49dcafcb04669f,067b3928e165363baa0e3c3442f27bdd,067b392a44b8ce678dcf216d41cbc0ab
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:14:21.042017+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_Aussie_Bloke-20260605T060729Z.wav
-  duration_seconds: 16.15
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_Aussie_Bloke-20260612T124148Z.wav
+  duration_seconds: 15.9
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,8 +16,8 @@ assets:
     Ben: English_Gentle-voiced_man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_Aussie_Bloke-20260605T060729Z.wav
-  trace_id: 06719a927fc96e229d45132aaede0cc9,06719a9418307d2075ca7d85b4eb8d80,06719a97051c8da1563ee5683835e306,06719a9933f0ae174344d2b71d13be96,06719a9b770ff570abe2d41b61c78c0f,06719a9d00235521317042bb52a4347f,06719a9f02b4e752725d260a93dc5844
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_Aussie_Bloke-20260612T124148Z.wav
+  trace_id: 067b317c93477e1f9fbe9601cc9e46a2,067b317e3c2a6cc12d22760452e27eab,067b31806a20cf732335f0560f0b684c,067b3182e07ee0b508cd3a67ffbb3f8f,067b31855dfd0559be0f578f336795d2,067b3187cfb2652a1f6ab2e7679606e8,067b318a0ba891c0ef888858ba58b6fe
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:07:29.299098+00:00'
+  generated_at: '2026-06-12T12:41:48.770777+00:00'
 lesson_key: lesson-01-saying-you-do-not-understand

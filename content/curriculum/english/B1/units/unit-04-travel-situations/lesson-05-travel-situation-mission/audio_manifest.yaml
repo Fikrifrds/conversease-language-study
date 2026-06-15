@@ -1,5 +1,5 @@
 lesson_key: lesson-05-travel-situation-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-English_Aussie_Bloke-20260612T131230Z.wav
+  duration_seconds: 38.35
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 9
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-English_Aussie_Bloke-20260612T131230Z.wav
+  trace_id: 067b38a570b41b1da6294f9088b321fc,067b38a8bf74ba022c30fa46cfbc2655,067b38aa513a0ccd93f4dc03dbcc1b4a,067b38adc46e5194b50c034515366c32,067b38af50d1df7cc7b5349b71982f09,067b38b2f41c2c08bffa32ebfd724e8d,067b38b4efb0180683f225cf99d772d2,067b38b7681045052b2baf12ded1d263,067b38babbea891483eba324d5bfc208
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:12:30.019804+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

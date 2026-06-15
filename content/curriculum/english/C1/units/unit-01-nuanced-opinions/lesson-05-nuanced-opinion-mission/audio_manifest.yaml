@@ -1,5 +1,5 @@
 lesson_key: lesson-05-nuanced-opinion-mission
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening-English_Aussie_Bloke-20260612T134511Z.wav
+  duration_seconds: 44.03
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening-English_Aussie_Bloke-20260612T134511Z.wav
+  trace_id: 067b404e5654f95dac61f49fc45ad348,067b405185a3ebf935b1ca95d73da0cb,067b40546f2d6f3df7d289475a420a71,067b405631c8c247e541dc51233e3cd5,067b40582c21b653bf10f1b49e0e4ef8,067b405b6e2a2d91e7122b63d28b69fd,067b405fd550f92565e87778d8c13f39,067b4062053b62bf337ccbd7a1fcf5af
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:45:11.283908+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

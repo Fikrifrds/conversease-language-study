@@ -1,5 +1,5 @@
 lesson_key: lesson-05-c1-final-conversation
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-05-c1-final-conversation/listening-English_Aussie_Bloke-20260612T140458Z.wav
+  duration_seconds: 41.77
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-05-c1-final-conversation/listening-English_Aussie_Bloke-20260612T140458Z.wav
+  trace_id: 067b44f35372bfcc4d364509cdeb33b0,067b44f554423c0af216710c00d31449,067b44f8b83c1accaf7aff423bd63618,067b44fb7e628ee9882b9d5fc393c0a4,067b44fe1677340ac71bc13334806e17,067b4501fa2078654628a8c3166729eb,067b4504adaece1b16ea8204266f8f6f,067b4506a469080c0105cc182f057246
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T14:04:58.676596+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

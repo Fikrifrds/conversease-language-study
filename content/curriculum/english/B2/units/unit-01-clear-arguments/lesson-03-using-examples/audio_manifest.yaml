@@ -1,5 +1,5 @@
 lesson_key: lesson-03-using-examples
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-03-using-examples/listening-English_Aussie_Bloke-20260612T132342Z.wav
+  duration_seconds: 33.79
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-03-using-examples/listening-English_Aussie_Bloke-20260612T132342Z.wav
+  trace_id: 067b3b496762222ee0c97c36a3fb06df,067b3b4bf198d4129ecaf7c26d1a0622,067b3b4e07332bfa8bcca962b6c5891f,067b3b519d2dd4d7d5465a71c9a516f2,067b3b5334f0621a0346f44686046255,067b3b56b8a03160f58a456465065cbd,067b3b58107da9bd0c30a7fd21758bd6,067b3b5b4c0ee7a50b9d310aa1e03233
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:23:42.570994+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

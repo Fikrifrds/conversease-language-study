@@ -1,5 +1,5 @@
 lesson_key: lesson-02-saying-where-you-went
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-English_Aussie_Bloke-20260612T125818Z.wav
+  duration_seconds: 16.62
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Mina: English_Upbeat_Woman
-    Staff: English_Upbeat_Woman
+    Staff: English_CalmWoman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-English_Aussie_Bloke-20260612T125818Z.wav
+  trace_id: 067b355999595f936cbe8e4a70b77ec8,067b355ca3d419162e910a8c123e841c,067b355fe73ca10591fdcd5d7bd354eb,067b35615e99b570a9897d8cbd0b4c6f,067b3563f4f6def4ba84b280d44e4979,067b3566355fb9dd205548820851be8a,067b35681c2d908cca20bc22517e69d8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:58:18.241989+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

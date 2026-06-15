@@ -1,5 +1,5 @@
 lesson_key: lesson-04-handling-challenging-questions
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-English_Aussie_Bloke-20260612T135010Z.wav
+  duration_seconds: 54.26
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-English_Aussie_Bloke-20260612T135010Z.wav
+  trace_id: 067b4179ccd9c893f1747d35b4d97439,067b417c1af5bb1fd98965ba2762d4b3,067b417f1aa4223be3d735bb704caae8,067b41814d4ff19cc5610908f674cd1c,067b418575362366003fda69935ce41f,067b418802b2cc65bcd6b13335e97150,067b418c72cc16bb17c2b0ad30516e17,067b418ec784f481b9acdd85b6609861
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:50:10.842048+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-stating-your-position
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-English_Aussie_Bloke-20260612T132243Z.wav
+  duration_seconds: 26.44
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-English_Aussie_Bloke-20260612T132243Z.wav
+  trace_id: 067b3b0c199bf1dbce41e6ed75653291,067b3b0fc5867eabff4fb17808937c29,067b3b11c3cf96894a7cffb9c64ef55a,067b3b13510972fb1f94c8fa22e3c96b,067b3b162a6b1d66ba16b1d43d61382d,067b3b198f7cd77343213c92aaebce1c,067b3b1cbc70380bb92f72920fe0c202,067b3b1ea2873c3b633fc526dda32a74
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:22:43.065334+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

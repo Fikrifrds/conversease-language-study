@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-about-past-activities
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-English_Aussie_Bloke-20260612T125901Z.wav
+  duration_seconds: 13.71
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Hilmi: English_Diligent_Man
     Mina: English_Upbeat_Woman
-    Hilmi: English_Upbeat_Woman
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-English_Aussie_Bloke-20260612T125901Z.wav
+  trace_id: 067b3586afae774a671d6288b504fb43,067b3588e575081c01a098295d668a7b,067b358a7d592fdf83a442d652155b72,067b358cdd8fb9091cb096c698ac7e36,067b358f4ff1bfbf739e77c9b2388fcb,067b3590e6a0c03b2df358b85e109692,067b3592bc96ad89084e82c38a6af676
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:59:01.365070+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

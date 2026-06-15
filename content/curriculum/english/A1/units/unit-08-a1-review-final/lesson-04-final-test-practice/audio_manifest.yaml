@@ -6,7 +6,7 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260605T061027Z.wav
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260612T124543Z.wav
   duration_seconds: 19.58
   provider: minimax
   model: speech-2.8-hd
@@ -16,8 +16,8 @@ assets:
     Sara: English_CalmWoman
   line_count: 10
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260605T061027Z.wav
-  trace_id: 06719b36cc4d4702a00aa859e9fa79ba,06719b38be650936e0af84709457072a,06719b3aef16719371af6ebb14edc60f,06719b3c35afdde5190e4521c132be8d,06719b3ed13db24883c7574b392d5b7f,06719b429541a2a33dff3a161b241345,06719b483ebd82951b04f1ab7fb98696,06719b4c97cb280df7a8bfd11b153bac,06719b4f74721311c39494893a8f9ed5,06719b515f5565ee24248195408f0386
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260612T124543Z.wav
+  trace_id: 067b325ef38f602681b2d2ac08475343,067b3262e6579fc50b6c7b1cc9fabcbe,067b3264ddcd9fb5394a4f607c4c8ec1,067b3266918c181bb3cec60ae05a2d09,067b32688d03ed2b4b2d7a7cb37fe7a7,067b326a1ee1b6452ddec0d2a15785ea,067b326d3da66e36b22eae302dcc99e6,067b326fdbbf6ba6a051edb2ba98a22d,067b3272cf969cf312748bce00bb8a25,067b3275d2d74c4c5cbe5d5dadaec24a
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T06:10:27.318207+00:00'
+  generated_at: '2026-06-12T12:45:43.458270+00:00'
 lesson_key: lesson-04-final-test-practice

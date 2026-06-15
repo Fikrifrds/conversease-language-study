@@ -1,5 +1,5 @@
 lesson_key: lesson-02-challenging-an-argument
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-English_Aussie_Bloke-20260612T135154Z.wav
+  duration_seconds: 54.68
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-English_Aussie_Bloke-20260612T135154Z.wav
+  trace_id: 067b41e02afa478fdb9ee09526063075,067b41e46bb0c41d3fa623c750a235a9,067b41e7db19ea6f19d866c807bbd0dc,067b41eab03af22f9337b057c43cd568,067b41ed110aed911170f727e95451cb,067b41efdff237b6d43a2fffba2e916e,067b41f3de5064c6e370465ce044cdcc,067b41f646881c050bda34ec94cb9847
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:51:54.486824+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

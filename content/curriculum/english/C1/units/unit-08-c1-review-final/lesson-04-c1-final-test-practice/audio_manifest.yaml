@@ -1,5 +1,5 @@
 lesson_key: lesson-04-c1-final-test-practice
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-04-c1-final-test-practice/listening-English_Aussie_Bloke-20260612T140426Z.wav
+  duration_seconds: 33.87
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Faris: English_Trustworth_Man
     Mina: English_Upbeat_Woman
-    Faris: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-04-c1-final-test-practice/listening-English_Aussie_Bloke-20260612T140426Z.wav
+  trace_id: 067b44d36c75a18b9abc939a6f5e6476,067b44d6ac0ea16fab1be50660b52a7c,067b44d90327de4ed67bcfe3935da7ac,067b44db1af77f31ca481c637417dbed,067b44dfac9b14b1c127515fcd86142b,067b44e12b5850e9011e969c2c065867,067b44e4aa344dc02889cbb80c162a7d,067b44e758ccf2c42f90259903a62939
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T14:04:26.716647+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

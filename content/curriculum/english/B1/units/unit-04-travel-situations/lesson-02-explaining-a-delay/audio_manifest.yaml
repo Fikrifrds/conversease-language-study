@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-a-delay
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,14 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-English_Aussie_Bloke-20260612T131103Z.wav
+  duration_seconds: 21.34
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Ilham: English_Gentle-voiced_man
     Mina: English_Upbeat_Woman
-    Ilham: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-English_Aussie_Bloke-20260612T131103Z.wav
+  trace_id: 067b3853649da750af4412a11b201603,067b385665e11c5494e8151553a298f5,067b3858cd11fd0ec0c12a6211b1eb78,067b385abe31ae8850af70811c47cfd9,067b385dbeaf85565174c5f3ea201198,067b38602a9e3babca36e6a0f79dd332,067b386297cff0694ea3a85e14e3dba0,067b38650976188d5ab27f848d108471
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T13:11:03.391268+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

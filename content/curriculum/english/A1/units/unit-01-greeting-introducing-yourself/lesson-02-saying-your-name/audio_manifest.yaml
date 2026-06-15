@@ -5,8 +5,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260605T055822Z.wav
-  duration_seconds: 9.69
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260612T123106Z.wav
+  duration_seconds: 10.04
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,10 @@ assets:
     Sara: English_CalmWoman
   line_count: 4
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260605T055822Z.wav
-  trace_id: 06719876663797d5bc5805e9b4112ef2,067198788d62271c921ec4cc3dc39493,0671987aa82d94323a1c0bc4f4139cb0,0671987dfbe1a5de0dc2c4576027999a
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/listening-English_Aussie_Bloke-20260612T123106Z.wav
+  trace_id: 067b2f01e40953439b22ac8b614a74c9,067b2f039988b2d103814adc8ffa3f87,067b2f06b1be3a964337a636906f9762,067b2f08a7f1c74db73334dc9d4bcac5
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-05T05:58:22.935989+00:00'
+  generated_at: '2026-06-12T12:31:06.848716+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

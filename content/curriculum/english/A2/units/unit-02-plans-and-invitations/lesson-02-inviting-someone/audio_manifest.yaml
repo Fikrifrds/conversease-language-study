@@ -1,22 +1,28 @@
 lesson_key: lesson-02-inviting-someone
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
 assets:
-  - key: dialogue_main
-    type: dialogue
-    script_file: listening_script.md
-    audio_url:
-    duration_seconds:
-    provider: minimax
-    model: speech-2.8-hd
-    voice_id: multi_speaker
-    speaker_voices:
-      Lina: English_Upbeat_Woman
-      Adi: English_Diligent_Man
-  - key: phrases
-    type: phrase_pronunciation
-    source_file: useful_phrases.yaml
-    audio_url:
-    duration_seconds:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-02-inviting-someone/listening-English_Aussie_Bloke-20260612T125009Z.wav
+  duration_seconds: 20.07
+  provider: minimax
+  model: speech-2.8-hd
+  voice_id: multi_speaker
+  speaker_voices:
+    Adi: English_Diligent_Man
+    Lina: English_Upbeat_Woman
+  line_count: 8
+  audio_format: wav
+  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-02-inviting-someone/listening-English_Aussie_Bloke-20260612T125009Z.wav
+  trace_id: 067b336ea3ac7315b0cdd9b4bf0927d4,067b33701e26eac96a816c90184a8f08,067b33733822d51fbb99a06b190a1075,067b3375766a25d5d05f519d710d1e26,067b3377e6daf3febf19821864555583,067b337ad7de35653448d1986494e252,067b337cc6092c67d0e8f0ca1f6197b9,067b337f623abe41c6e8a6843fc157b7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-12T12:50:09.700442+00:00'
+- key: phrases
+  type: phrase_pronunciation
+  source_file: useful_phrases.yaml
+  audio_url: null
+  duration_seconds: null
