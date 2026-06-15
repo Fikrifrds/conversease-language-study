@@ -66,6 +66,26 @@ class AdminCmsTest(unittest.TestCase):
                     "/api/admin/cms/summary",
                     headers={"x-admin-api-key": settings.payment_admin_api_key},
                 )
+                overview = client.get(
+                    "/api/admin/cms/overview",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
+                english_readiness = client.get(
+                    "/api/admin/cms/readiness?language=english",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
+                english_lessons = client.get(
+                    "/api/admin/cms/curriculum/lessons?language=english",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
+                cms_email_templates = client.get(
+                    "/api/admin/cms/email-templates",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
+                revisions = client.get(
+                    "/api/admin/cms/revisions",
+                    headers={"x-admin-api-key": settings.payment_admin_api_key},
+                )
                 legacy_email_route = client.get(
                     "/api/admin/email-templates",
                     headers={"x-admin-api-key": settings.payment_admin_api_key},
@@ -73,7 +93,17 @@ class AdminCmsTest(unittest.TestCase):
 
                 self.assertEqual(unauthorized.status_code, 401)
                 self.assertEqual(authorized.status_code, 200)
+                self.assertEqual(overview.status_code, 200)
+                self.assertEqual(english_readiness.status_code, 200)
+                self.assertEqual(english_lessons.status_code, 200)
+                self.assertEqual(cms_email_templates.status_code, 200)
+                self.assertEqual(revisions.status_code, 200)
                 self.assertEqual(authorized.json()["data"]["curriculum"]["course"]["lesson_count"], 40)
+                self.assertEqual(
+                    english_readiness.json()["data"]["readiness_overview"]["planned_lesson_count"],
+                    200,
+                )
+                self.assertEqual(len(english_lessons.json()["data"]["lessons"]), 200)
             self.assertEqual(
                 authorized.json()["data"]["curriculum"]["readiness_overview"]["planned_lesson_count"],
                 200,

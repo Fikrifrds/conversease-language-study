@@ -128,6 +128,39 @@ export type AdminContentRevision = {
   createdAt: string;
 };
 
+export type AdminCmsLanguageOption = {
+  language: string;
+  languageCode: string;
+  levelCount: number;
+  lessonCount: number;
+};
+
+export type AdminCmsOverview = {
+  readinessOverview: AdminContentReadinessOverview;
+  levelCount: number;
+  languages: AdminCmsLanguageOption[];
+  validationIssues: string[];
+};
+
+export type AdminCmsReadinessPayload = {
+  readinessOverview: AdminContentReadinessOverview;
+  levelCount: number;
+  readinessLevels: AdminContentReadiness[];
+};
+
+export type AdminCmsLessonIndex = {
+  courses: Array<{
+    language: string;
+    languageCode: string;
+    levelCode: string;
+    courseSlug: string;
+    courseTitle: string;
+    unitCount: number;
+    lessonCount: number;
+  }>;
+  lessons: AdminCmsLesson[];
+};
+
 export type AdminAudioVoice = {
   voiceId: string;
   voiceName: string;
@@ -374,6 +407,39 @@ type ApiAdminContentRevision = {
   created_at: string;
 };
 
+type ApiAdminCmsLanguageOption = {
+  language: string;
+  language_code: string;
+  level_count: number;
+  lesson_count: number;
+};
+
+type ApiAdminCmsOverview = {
+  readiness_overview: ApiAdminContentReadinessOverview;
+  level_count: number;
+  languages: ApiAdminCmsLanguageOption[];
+  validation_issues: string[];
+};
+
+type ApiAdminCmsReadinessPayload = {
+  readiness_overview: ApiAdminContentReadinessOverview;
+  level_count: number;
+  readiness_levels: ApiAdminContentReadiness[];
+};
+
+type ApiAdminCmsLessonIndex = {
+  courses: Array<{
+    language: string;
+    language_code: string;
+    level_code: string;
+    course_slug: string;
+    course_title: string;
+    unit_count: number;
+    lesson_count: number;
+  }>;
+  lessons: ApiAdminLesson[];
+};
+
 type ApiAdminAudioVoice = {
   voice_id: string;
   voice_name: string;
@@ -606,6 +672,47 @@ function mapReadinessOverview(overview: ApiAdminContentReadinessOverview): Admin
   };
 }
 
+function mapLanguageOption(option: ApiAdminCmsLanguageOption): AdminCmsLanguageOption {
+  return {
+    language: option.language,
+    languageCode: option.language_code,
+    levelCount: option.level_count,
+    lessonCount: option.lesson_count
+  };
+}
+
+function mapCmsOverview(overview: ApiAdminCmsOverview): AdminCmsOverview {
+  return {
+    readinessOverview: mapReadinessOverview(overview.readiness_overview),
+    levelCount: overview.level_count,
+    languages: overview.languages.map(mapLanguageOption),
+    validationIssues: overview.validation_issues
+  };
+}
+
+function mapCmsReadinessPayload(payload: ApiAdminCmsReadinessPayload): AdminCmsReadinessPayload {
+  return {
+    readinessOverview: mapReadinessOverview(payload.readiness_overview),
+    levelCount: payload.level_count,
+    readinessLevels: payload.readiness_levels.map(mapReadiness)
+  };
+}
+
+function mapCmsLessonIndex(payload: ApiAdminCmsLessonIndex): AdminCmsLessonIndex {
+  return {
+    courses: payload.courses.map((course) => ({
+      language: course.language,
+      languageCode: course.language_code,
+      levelCode: course.level_code,
+      courseSlug: course.course_slug,
+      courseTitle: course.course_title,
+      unitCount: course.unit_count,
+      lessonCount: course.lesson_count
+    })),
+    lessons: payload.lessons.map(mapLesson)
+  };
+}
+
 function mapRevision(revision: ApiAdminContentRevision): AdminContentRevision {
   return {
     id: revision.id,
@@ -729,6 +836,15 @@ function mapExamAudioTemplate(template: ApiAdminExamAudioTemplate): AdminExamAud
   };
 }
 
+function cmsLanguageQuery(input?: { language?: string | null }) {
+  const params = new URLSearchParams();
+  if (input?.language) {
+    params.set("language", input.language);
+  }
+  const query = params.toString();
+  return query ? `?${query}` : "";
+}
+
 export async function getAdminCmsSummary(): Promise<AdminCmsSummary> {
   const response = await adminRequestJson<
     ApiResponse<{
@@ -771,6 +887,33 @@ export async function getAdminCmsSummary(): Promise<AdminCmsSummary> {
   };
 }
 
+export async function getAdminCmsOverview(input?: {
+  language?: string | null;
+}): Promise<AdminCmsOverview> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminCmsOverview>>(
+    `/admin/cms/overview${cmsLanguageQuery(input)}`
+  );
+  return mapCmsOverview(response.data);
+}
+
+export async function getAdminCmsReadiness(input?: {
+  language?: string | null;
+}): Promise<AdminCmsReadinessPayload> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminCmsReadinessPayload>>(
+    `/admin/cms/readiness${cmsLanguageQuery(input)}`
+  );
+  return mapCmsReadinessPayload(response.data);
+}
+
+export async function listAdminCmsLessons(input?: {
+  language?: string | null;
+}): Promise<AdminCmsLessonIndex> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminCmsLessonIndex>>(
+    `/admin/cms/curriculum/lessons${cmsLanguageQuery(input)}`
+  );
+  return mapCmsLessonIndex(response.data);
+}
+
 export async function getAdminCmsLesson(lessonSlug: string): Promise<AdminCmsLesson> {
   const response = await adminRequestJson<ApiResponse<ApiAdminLesson>>(
     `/admin/cms/curriculum/lessons/${lessonSlug}`
@@ -810,6 +953,11 @@ export async function updateAdminCmsLesson(input: {
     }
   );
   return mapLesson(response.data);
+}
+
+export async function listAdminEmailTemplates(): Promise<AdminEmailTemplate[]> {
+  const response = await adminRequestJson<ApiResponse<ApiAdminEmailTemplate[]>>("/admin/cms/email-templates");
+  return response.data.map(mapEmailTemplate);
 }
 
 export async function getAdminEmailTemplate(templateKey: string): Promise<AdminEmailTemplate> {
@@ -983,6 +1131,28 @@ export async function updateAdminEmailTemplate(input: {
     }
   );
   return mapEmailTemplate(response.data);
+}
+
+export async function listAdminCmsRevisions(input?: {
+  resourceType?: string;
+  resourceKey?: string;
+  limit?: number;
+}): Promise<AdminContentRevision[]> {
+  const params = new URLSearchParams();
+  if (input?.resourceType) {
+    params.set("resource_type", input.resourceType);
+  }
+  if (input?.resourceKey) {
+    params.set("resource_key", input.resourceKey);
+  }
+  if (typeof input?.limit === "number") {
+    params.set("limit", String(input.limit));
+  }
+  const query = params.toString();
+  const response = await adminRequestJson<ApiResponse<ApiAdminContentRevision[]>>(
+    `/admin/cms/revisions${query ? `?${query}` : ""}`
+  );
+  return response.data.map(mapRevision);
 }
 
 export async function rollbackAdminCmsRevision(input: {

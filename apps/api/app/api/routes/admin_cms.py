@@ -13,6 +13,9 @@ from app.db.exam_models import ExamItemModel, ExamSectionModel, ExamTemplateMode
 from app.db.session import get_db
 from app.data.admin_cms import (
     AdminCmsError,
+    curriculum_lesson_index,
+    curriculum_overview,
+    curriculum_readiness,
     curriculum_summary,
     get_admin_lesson,
     get_email_template,
@@ -101,6 +104,30 @@ async def get_cms_summary(
             "recent_revisions": [revision_payload(revision) for revision in revisions],
         }
     }
+
+
+@router.get("/admin/cms/overview")
+async def get_cms_overview(
+    language: Optional[str] = Query(default=None, max_length=32),
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    return {"data": curriculum_overview(language=language)}
+
+
+@router.get("/admin/cms/readiness")
+async def get_cms_readiness(
+    language: Optional[str] = Query(default=None, max_length=32),
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    return {"data": curriculum_readiness(language=language)}
+
+
+@router.get("/admin/cms/curriculum/lessons")
+async def list_cms_lessons(
+    language: Optional[str] = Query(default=None, max_length=32),
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    return {"data": curriculum_lesson_index(language=language)}
 
 
 @router.get("/admin/cms/curriculum/lessons/{lesson_slug}")
@@ -427,6 +454,13 @@ async def generate_exam_template_audio(
             "items": results,
         }
     }
+
+
+@router.get("/admin/cms/email-templates")
+async def list_cms_email_templates(
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    return {"data": list_email_template_files()}
 
 
 @router.get("/admin/cms/email-templates/{template_key}")

@@ -8,6 +8,7 @@ import yaml
 
 from app.data.content_readiness import all_content_readiness_summary, content_readiness_summary
 from app.data.curriculum import (
+    all_authored_courses,
     get_lesson_or_none,
     load_a1_course,
     public_lesson_payload,
@@ -54,6 +55,86 @@ def curriculum_summary() -> dict[str, Any]:
         "readiness_levels": all_readiness["levels"],
         "validation_issues": validate_curriculum_content(),
     }
+
+
+def curriculum_overview(*, language: Optional[str] = None) -> dict[str, Any]:
+    readiness = all_content_readiness_summary(language=language)
+    return {
+        "readiness_overview": readiness["summary"],
+        "level_count": readiness["level_count"],
+        "languages": curriculum_language_options(),
+        "validation_issues": validate_curriculum_content(),
+    }
+
+
+def curriculum_readiness(*, language: Optional[str] = None) -> dict[str, Any]:
+    readiness = all_content_readiness_summary(language=language)
+    return {
+        "readiness_overview": readiness["summary"],
+        "level_count": readiness["level_count"],
+        "readiness_levels": readiness["levels"],
+    }
+
+
+def curriculum_lesson_index(*, language: Optional[str] = None) -> dict[str, Any]:
+    courses = [course for course in all_authored_courses() if not language or course["language"] == language]
+    lessons = []
+    course_items = []
+
+    for course in courses:
+        course_lesson_count = 0
+        for unit in course["units"]:
+            for lesson in unit["lessons"]:
+                course_lesson_count += 1
+                lessons.append(
+                    admin_lesson_payload(
+                        {
+                            **lesson,
+                            "language": course.get("language", ""),
+                            "language_code": course.get("language_code", ""),
+                            "level_code": course.get("level_code", ""),
+                            "course_slug": course.get("course_slug", ""),
+                            "access_tier": course.get("access_tier", ""),
+                        },
+                        unit_slug=unit["slug"],
+                        unit_title=unit["title"],
+                    )
+                )
+
+        course_items.append(
+            {
+                "language": course.get("language", ""),
+                "language_code": course.get("language_code", ""),
+                "level_code": course.get("level_code", ""),
+                "course_slug": course.get("course_slug", ""),
+                "course_title": course.get("course_title", ""),
+                "unit_count": len(course.get("units", [])),
+                "lesson_count": course_lesson_count,
+            }
+        )
+
+    return {"courses": course_items, "lessons": lessons}
+
+
+def curriculum_language_options() -> list[dict[str, Any]]:
+    grouped: dict[str, dict[str, Any]] = {}
+    for course in all_authored_courses():
+        language = str(course.get("language") or "")
+        if not language:
+            continue
+        current = grouped.setdefault(
+            language,
+            {
+                "language": language,
+                "language_code": course.get("language_code", ""),
+                "level_count": 0,
+                "lesson_count": 0,
+            },
+        )
+        current["level_count"] += 1
+        current["lesson_count"] += sum(len(unit.get("lessons", [])) for unit in course.get("units", []))
+
+    return sorted(grouped.values(), key=lambda item: item["language"])
 
 
 def get_admin_lesson(lesson_slug: str) -> dict[str, Any]:

@@ -15,8 +15,6 @@ import {
   ListChecks,
   Mail,
   RefreshCcw,
-  RotateCcw,
-  Save,
   Search,
   ShieldCheck,
   Sparkles,
@@ -31,13 +29,15 @@ import {
   generateAdminExamTemplateAudio,
   getAdminAudioSettings,
   getAdminCmsLesson,
-  getAdminCmsSummary,
+  getAdminCmsOverview,
+  getAdminCmsReadiness,
   getAdminEmailTemplate,
   listAdminExamAudioTemplates,
+  listAdminCmsLessons,
+  listAdminCmsRevisions,
+  listAdminEmailTemplates,
   getAdminVoicePreviews,
   rollbackAdminCmsRevision,
-  updateAdminCmsLesson,
-  updateAdminEmailTemplate,
   type AdminAudioVoice,
   type AdminExamAudioTemplate,
   type AdminExamListeningItem,
@@ -47,38 +47,36 @@ import {
   type AdminContentRevision,
   type AdminAudioSettings,
   type AdminCmsLesson,
-  type AdminCmsSummary,
+  type AdminCmsOverview,
+  type AdminCmsLanguageOption,
   type AdminEmailTemplate,
   type AdminVoicePreviewAudio
 } from "@/lib/admin-cms-api";
+import { ChangeLogPanel, CurriculumEditor, EmailTemplateEditor } from "./admin-cms/editors";
+import { LanguageFilterControl, SectionNavButton } from "./admin-cms/navigation";
+import type { BulkAudioQueueItem, BulkAudioQueueStatus, LanguageFilter, Tab } from "./admin-cms/types";
+import {
+  audioGenerationErrorMessage,
+  clampAudioSpeed,
+  formatDuration
+} from "./admin-cms/utils";
 
 const adminNameStorageKey = "conversease.admin_name";
 const audioModelStorageKey = "conversease.admin_audio_model";
 const audioVoiceStorageKey = "conversease.admin_audio_voice";
 const audioSpeedStorageKey = "conversease.admin_audio_speed";
-const statusOptions = ["draft", "review", "published", "archived"];
 const bulkAudioMaxAttempts = 2;
-
-type Tab = "readiness" | "curriculum" | "lessonAudio" | "examAudio" | "email" | "changelog";
-type LanguageFilter = "all" | string;
-type BulkAudioQueueStatus = "pending" | "running" | "done" | "failed" | "skipped";
-
-type BulkAudioQueueItem = {
-  lessonSlug: string;
-  lessonTitle: string;
-  levelCode: string;
-  unitTitle: string;
-  status: BulkAudioQueueStatus;
-  attempts: number;
-  durationSeconds?: number;
-  error?: string;
-};
 
 export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [adminName, setAdminName] = useState(adminUser.name || adminUser.email);
-  const [summary, setSummary] = useState<AdminCmsSummary | null>(null);
+  const [overview, setOverview] = useState<AdminCmsOverview | null>(null);
+  const [readinessOverview, setReadinessOverview] = useState<AdminContentReadinessOverview | null>(null);
+  const [readinessLevels, setReadinessLevels] = useState<AdminContentReadiness[]>([]);
+  const [cmsLessons, setCmsLessons] = useState<AdminCmsLesson[]>([]);
+  const [emailTemplates, setEmailTemplates] = useState<AdminEmailTemplate[]>([]);
+  const [recentRevisions, setRecentRevisions] = useState<AdminContentRevision[]>([]);
   const [tab, setTab] = useState<Tab>("readiness");
-  const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
+  const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("english");
   const [selectedLesson, setSelectedLesson] = useState<AdminCmsLesson | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<AdminEmailTemplate | null>(null);
   const [audioSettings, setAudioSettings] = useState<AdminAudioSettings | null>(null);
@@ -90,6 +88,10 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingReadiness, setIsLoadingReadiness] = useState(false);
+  const [isLoadingLessons, setIsLoadingLessons] = useState(false);
+  const [isLoadingEmailTemplates, setIsLoadingEmailTemplates] = useState(false);
+  const [isLoadingRevisions, setIsLoadingRevisions] = useState(false);
   const [restoringRevisionId, setRestoringRevisionId] = useState("");
   const [generatingLessonSlug, setGeneratingLessonSlug] = useState("");
   const [generatingExamTemplateId, setGeneratingExamTemplateId] = useState("");
@@ -98,6 +100,8 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   const [isLoadingVoicePreviews, setIsLoadingVoicePreviews] = useState(false);
   const [isLoadingExamTemplates, setIsLoadingExamTemplates] = useState(false);
   const [hasLoadedExamTemplates, setHasLoadedExamTemplates] = useState(false);
+  const [hasLoadedEmailTemplates, setHasLoadedEmailTemplates] = useState(false);
+  const [hasLoadedRevisions, setHasLoadedRevisions] = useState(false);
   const [bulkAudioQueue, setBulkAudioQueue] = useState<BulkAudioQueueItem[]>([]);
   const [isBulkGeneratingAudio, setIsBulkGeneratingAudio] = useState(false);
 
@@ -164,12 +168,24 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   }, [audioModel, audioSpeed]);
 
   useEffect(() => {
-    void loadSummary();
-    // Load once when this admin screen opens.
+    void loadOverview();
+    // Load lightweight overview once when this admin screen opens.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
+    if (tab === "readiness" || tab === "lessonAudio") {
+      void loadReadiness(languageFilter);
+    }
+    if (tab === "curriculum") {
+      void loadLessons(languageFilter);
+    }
+    if (tab === "email") {
+      void loadEmailTemplates();
+    }
+    if (tab === "changelog") {
+      void loadRevisions();
+    }
     if (tab === "lessonAudio" || tab === "examAudio") {
       void loadAudioSettings();
     }
@@ -178,26 +194,114 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
     }
     // Section data is loaded lazily to keep the first CMS screen lighter.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab]);
+  }, [tab, languageFilter]);
 
-  const validationOk = (summary?.curriculum.validationIssues.length ?? 1) === 0;
-  const readinessLevels = summary?.curriculum.readinessLevels ?? [];
+  const validationOk = (overview?.validationIssues.length ?? 1) === 0;
+  const languageOptions = overview?.languages ?? [];
 
-  async function loadSummary() {
+  async function loadOverview() {
     setIsLoading(true);
     setMessage("");
     setError("");
 
     try {
-      const nextSummary = await getAdminCmsSummary();
-      setSummary(nextSummary);
-      setSelectedLesson((current) => current ?? nextSummary.curriculum.lessons[0] ?? null);
-      setSelectedTemplate((current) => current ?? nextSummary.emailTemplates[0] ?? null);
-      setMessage("CMS content berhasil dimuat.");
+      const nextOverview = await getAdminCmsOverview();
+      setOverview(nextOverview);
+      if (!nextOverview.languages.some((language) => language.language === languageFilter)) {
+        setLanguageFilter(nextOverview.languages[0]?.language ?? "english");
+      }
+      setMessage("CMS overview berhasil dimuat.");
     } catch {
       setError("CMS belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
     } finally {
       setIsLoading(false);
+    }
+  }
+
+  async function reloadActiveSection() {
+    await loadOverview();
+    if (tab === "readiness" || tab === "lessonAudio") {
+      await loadReadiness(languageFilter);
+    } else if (tab === "curriculum") {
+      await loadLessons(languageFilter);
+    } else if (tab === "email") {
+      await loadEmailTemplates({ force: true });
+    } else if (tab === "changelog") {
+      await loadRevisions({ force: true });
+    }
+  }
+
+  async function loadReadiness(language: LanguageFilter) {
+    setIsLoadingReadiness(true);
+    setError("");
+    try {
+      const payload = await getAdminCmsReadiness({ language });
+      setReadinessOverview(payload.readinessOverview);
+      setReadinessLevels(payload.readinessLevels);
+    } catch {
+      setError("Readiness belum bisa dimuat untuk bahasa ini.");
+    } finally {
+      setIsLoadingReadiness(false);
+    }
+  }
+
+  async function loadLessons(language: LanguageFilter) {
+    setIsLoadingLessons(true);
+    setError("");
+    try {
+      const payload = await listAdminCmsLessons({ language });
+      setCmsLessons(payload.lessons);
+      setSelectedLesson((current) => {
+        if (current && payload.lessons.some((lesson) => lesson.slug === current.slug)) {
+          return current;
+        }
+        return payload.lessons[0] ?? null;
+      });
+    } catch {
+      setError("Curriculum lesson belum bisa dimuat untuk bahasa ini.");
+    } finally {
+      setIsLoadingLessons(false);
+    }
+  }
+
+  async function loadEmailTemplates(options?: { force?: boolean }) {
+    if (!options?.force && (hasLoadedEmailTemplates || isLoadingEmailTemplates)) {
+      return;
+    }
+
+    setIsLoadingEmailTemplates(true);
+    setError("");
+    try {
+      const templates = await listAdminEmailTemplates();
+      setEmailTemplates(templates);
+      setSelectedTemplate((current) => {
+        if (current && templates.some((template) => template.templateKey === current.templateKey)) {
+          return current;
+        }
+        return templates[0] ?? null;
+      });
+      setHasLoadedEmailTemplates(true);
+    } catch {
+      setError("Email templates belum bisa dimuat.");
+    } finally {
+      setIsLoadingEmailTemplates(false);
+    }
+  }
+
+  async function loadRevisions(options?: { force?: boolean }) {
+    if (!options?.force && (hasLoadedRevisions || isLoadingRevisions)) {
+      return;
+    }
+
+    setIsLoadingRevisions(true);
+    setError("");
+    try {
+      setRecentRevisions(await listAdminCmsRevisions({ limit: 50 }));
+      setHasLoadedRevisions(true);
+    } catch {
+      setError("Change log belum bisa dimuat.");
+    } finally {
+      setIsLoadingRevisions(false);
     }
   }
 
@@ -255,8 +359,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
         voiceId: audioVoiceId,
         speed: audioSpeed
       });
-      const nextSummary = await getAdminCmsSummary();
-      setSummary(nextSummary);
+      await loadReadiness(languageFilter);
       setMessage(`Audio ${audio.title} berhasil dibuat (${formatDuration(audio.durationSeconds)}).`);
     } catch (caughtError) {
       setError(audioGenerationErrorMessage(caughtError));
@@ -324,8 +427,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
         }
       }
 
-      const nextSummary = await getAdminCmsSummary();
-      setSummary(nextSummary);
+      await loadReadiness(languageFilter);
       setMessage(`Bulk audio selesai: ${successCount} berhasil, ${failedCount} gagal.`);
       if (failedCount) {
         setError("Sebagian audio gagal dibuat. Cek queue status lalu jalankan ulang untuk item yang gagal.");
@@ -441,14 +543,16 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
         restoredBy: adminName,
         notes: `Restored from ${revision.resourceKey} v${revision.version}`
       });
-      await loadSummary();
+      await loadRevisions({ force: true });
 
       if (result.resourceType === "curriculum_lesson") {
         setTab("curriculum");
         setSelectedLesson(result.data);
+        await loadLessons(languageFilter);
       } else {
         setTab("email");
         setSelectedTemplate(result.data);
+        await loadEmailTemplates({ force: true });
       }
 
       setMessage(`${revision.resourceKey} berhasil direstore ke v${revision.version}.`);
@@ -488,7 +592,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             </label>
             <button
               type="button"
-              onClick={loadSummary}
+              onClick={reloadActiveSection}
               disabled={isLoading}
               className="focus-ring mt-auto inline-flex h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
             >
@@ -503,7 +607,7 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
           </div>
 
-          {summary ? (
+          {overview ? (
             validationOk ? (
               <div className="flex items-center gap-2 rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
                 <ShieldCheck className="h-4 w-4 text-leaf" aria-hidden="true" />
@@ -511,14 +615,14 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
               </div>
             ) : (
               <div className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">
-                {summary.curriculum.validationIssues.map((issue) => (
+                {overview.validationIssues.map((issue) => (
                   <p key={issue}>{issue}</p>
                 ))}
               </div>
             )
           ) : (
             <div className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/60">
-              Load CMS untuk melihat status validasi content.
+              Muat overview untuk melihat status validasi content.
             </div>
           )}
 
@@ -582,28 +686,34 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
           <div className="min-w-0">
             {tab === "readiness" ? (
               <ReadinessPanel
-                overview={summary?.curriculum.readinessOverview ?? null}
+                overview={readinessOverview}
                 levels={readinessLevels}
+                languages={languageOptions}
                 languageFilter={languageFilter}
+                isLoading={isLoadingReadiness}
                 onLanguageFilterChange={setLanguageFilter}
               />
             ) : tab === "curriculum" ? (
               <CurriculumEditor
                 updatedBy={adminName}
-                lessons={summary?.curriculum.lessons ?? []}
+                lessons={cmsLessons}
+                isLoading={isLoadingLessons}
                 selectedLesson={selectedLesson}
                 onSelectLesson={selectLesson}
                 onSaved={(lesson) => {
                   setSelectedLesson(lesson);
                   setMessage("Lesson tersimpan dan curriculum cache sudah diperbarui.");
-                  void loadSummary();
+                  void loadLessons(languageFilter);
+                  void loadReadiness(languageFilter);
                 }}
                 onError={setError}
               />
             ) : tab === "lessonAudio" ? (
               <LessonAudioPanel
                 levels={readinessLevels}
+                languages={languageOptions}
                 languageFilter={languageFilter}
+                isLoading={isLoadingReadiness}
                 onLanguageFilterChange={setLanguageFilter}
                 audioSettings={audioSettings}
                 audioModel={audioModel}
@@ -652,19 +762,21 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
             ) : tab === "email" ? (
               <EmailTemplateEditor
                 updatedBy={adminName}
-                templates={summary?.emailTemplates ?? []}
+                templates={emailTemplates}
+                isLoading={isLoadingEmailTemplates}
                 selectedTemplate={selectedTemplate}
                 onSelectTemplate={selectTemplate}
                 onSaved={(template) => {
                   setSelectedTemplate(template);
                   setMessage("Email template tersimpan.");
-                  void loadSummary();
+                  void loadEmailTemplates({ force: true });
                 }}
                 onError={setError}
               />
             ) : (
               <ChangeLogPanel
-                revisions={summary?.recentRevisions ?? []}
+                revisions={recentRevisions}
+                isLoading={isLoadingRevisions}
                 restoringRevisionId={restoringRevisionId}
                 onRollback={rollbackRevision}
               />
@@ -676,73 +788,26 @@ export function AdminCmsManager({ adminUser }: { adminUser: AuthUser }) {
   );
 }
 
-function ChangeLogPanel({
-  revisions,
-  restoringRevisionId,
-  onRollback
-}: {
-  revisions: AdminContentRevision[];
-  restoringRevisionId: string;
-  onRollback: (revision: AdminContentRevision) => void;
-}) {
-  return (
-    <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-      <div className="flex items-center gap-2">
-        <Clock3 className="h-5 w-5 text-leaf" aria-hidden="true" />
-        <h2 className="font-semibold">Change Log</h2>
-      </div>
-      {revisions.length ? (
-        <div className="mt-3 grid gap-2 md:grid-cols-2 xl:grid-cols-3">
-          {revisions.map((revision) => (
-            <div key={revision.id} className="rounded-lg bg-paper p-3 text-sm">
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="font-semibold">
-                    {revision.resourceKey} v{revision.version}
-                  </p>
-                  <p className="mt-1 text-xs text-ink/55">
-                    {revision.resourceType} / {revision.action} / {revision.changedBy}
-                  </p>
-                </div>
-                {revision.resourceType === "curriculum_lesson" || revision.resourceType === "email_template" ? (
-                  <button
-                    type="button"
-                    onClick={() => onRollback(revision)}
-                    disabled={restoringRevisionId === revision.id}
-                    className="focus-ring inline-flex min-h-8 items-center justify-center gap-1 rounded-lg bg-white px-2 text-xs font-semibold text-ink hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-                  >
-                    <RotateCcw className="h-3.5 w-3.5" aria-hidden="true" />
-                    {restoringRevisionId === revision.id ? "Restoring" : "Restore"}
-                  </button>
-                ) : (
-                  <span className="inline-flex min-h-8 items-center rounded-lg bg-white px-2 text-xs font-semibold text-ink/55">
-                    Audit
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <p className="mt-3 text-sm leading-6 text-ink/60">Belum ada revision yang tercatat.</p>
-      )}
-    </section>
-  );
-}
-
 function ReadinessPanel({
   overview,
   levels,
+  languages,
   languageFilter,
+  isLoading,
   onLanguageFilterChange
 }: {
   overview: AdminContentReadinessOverview | null;
   levels: AdminContentReadiness[];
+  languages: AdminCmsLanguageOption[];
   languageFilter: LanguageFilter;
+  isLoading: boolean;
   onLanguageFilterChange: (value: LanguageFilter) => void;
 }) {
+  if (isLoading && !overview) {
+    return <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Memuat readiness...</p>;
+  }
   if (!overview) {
-    return <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Load CMS dulu.</p>;
+    return <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Pilih bahasa atau muat ulang CMS.</p>;
   }
 
   const filteredLevels = filterReadinessLevels(levels, languageFilter);
@@ -767,10 +832,12 @@ function ReadinessPanel({
       </div>
 
       <LanguageFilterControl
-        levels={levels}
+        languages={languages}
         value={languageFilter}
         onChange={onLanguageFilterChange}
       />
+
+      {isLoading ? <p className="rounded-lg bg-paper p-3 text-sm text-ink/60">Refreshing readiness...</p> : null}
 
       <div className="grid gap-4">
         {filteredLevels.map((level) => (
@@ -791,7 +858,9 @@ function ReadinessPanel({
 
 function LessonAudioPanel({
   levels,
+  languages,
   languageFilter,
+  isLoading,
   onLanguageFilterChange,
   audioSettings,
   audioModel,
@@ -811,7 +880,9 @@ function LessonAudioPanel({
   onBulkGenerateAudio
 }: {
   levels: AdminContentReadiness[];
+  languages: AdminCmsLanguageOption[];
   languageFilter: LanguageFilter;
+  isLoading: boolean;
   onLanguageFilterChange: (value: LanguageFilter) => void;
   audioSettings: AdminAudioSettings | null;
   audioModel: string;
@@ -852,10 +923,12 @@ function LessonAudioPanel({
       />
 
       <LanguageFilterControl
-        levels={levels}
+        languages={languages}
         value={languageFilter}
         onChange={onLanguageFilterChange}
       />
+
+      {isLoading ? <p className="rounded-lg bg-paper p-3 text-sm text-ink/60">Refreshing lesson audio...</p> : null}
 
       <BulkAudioPanel
         missingCandidates={missingBulkCandidates}
@@ -874,6 +947,7 @@ function LessonAudioPanel({
             audioReadyToGenerate={audioReadyToGenerate && !isBulkGeneratingAudio}
             generatingLessonSlug={generatingLessonSlug}
             onGenerateAudio={onGenerateAudio}
+            onGenerateUnitAudio={onBulkGenerateAudio}
           />
         ))}
         {!filteredLevels.length ? (
@@ -1477,12 +1551,14 @@ function LevelReadinessCard({
   readiness,
   audioReadyToGenerate,
   generatingLessonSlug,
-  onGenerateAudio
+  onGenerateAudio,
+  onGenerateUnitAudio
 }: {
   readiness: AdminContentReadiness;
   audioReadyToGenerate: boolean;
   generatingLessonSlug: string;
   onGenerateAudio?: (lesson: AdminContentReadinessLesson) => void;
+  onGenerateUnitAudio?: (lessons: BulkAudioQueueItem[]) => void;
 }) {
   return (
     <div className="rounded-lg border border-ink/10 bg-white p-4">
@@ -1511,7 +1587,10 @@ function LevelReadinessCard({
       </div>
 
       <div className="mt-4 grid gap-4">
-        {readiness.units.map((unit) => (
+        {readiness.units.map((unit) => {
+          const missingUnitAudio = unitAudioCandidates(readiness, unit, { includeAudioReady: false });
+          const allUnitAudio = unitAudioCandidates(readiness, unit, { includeAudioReady: true });
+          return (
           <div key={unit.unitKey} className="rounded-lg border border-ink/10 bg-white p-4">
             <div className="flex flex-wrap items-start justify-between gap-3">
               <div>
@@ -1519,14 +1598,38 @@ function LevelReadinessCard({
                 <h2 className="mt-1 text-lg font-semibold">{unit.title}</h2>
                 <p className="mt-1 text-sm text-ink/55">{unit.unitKey}</p>
               </div>
-              <div className="flex flex-wrap gap-2 text-xs font-semibold">
-                <StatusPill icon={CheckCircle2} label={`${unit.textReadyCount}/${unit.lessonCount} text`} tone="ok" />
-                <StatusPill icon={Headphones} label={`${unit.audioReadyCount}/${unit.lessonCount} audio`} tone="warn" />
-                <StatusPill
-                  icon={ShieldCheck}
-                  label={`${unit.productionReadyCount}/${unit.lessonCount} prod`}
-                  tone="neutral"
-                />
+              <div className="flex flex-wrap items-center gap-2">
+                <div className="flex flex-wrap gap-2 text-xs font-semibold">
+                  <StatusPill icon={CheckCircle2} label={`${unit.textReadyCount}/${unit.lessonCount} text`} tone="ok" />
+                  <StatusPill icon={Headphones} label={`${unit.audioReadyCount}/${unit.lessonCount} audio`} tone="warn" />
+                  <StatusPill
+                    icon={ShieldCheck}
+                    label={`${unit.productionReadyCount}/${unit.lessonCount} prod`}
+                    tone="neutral"
+                  />
+                </div>
+                {onGenerateUnitAudio ? (
+                  <div className="flex flex-wrap gap-2">
+                    <button
+                      type="button"
+                      onClick={() => onGenerateUnitAudio(missingUnitAudio)}
+                      disabled={!audioReadyToGenerate || !missingUnitAudio.length}
+                      className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-leaf px-3 text-xs font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <Headphones className="h-3.5 w-3.5" aria-hidden="true" />
+                      Generate Missing Unit
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => onGenerateUnitAudio(allUnitAudio)}
+                      disabled={!audioReadyToGenerate || !allUnitAudio.length}
+                      className="focus-ring inline-flex min-h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-xs font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                    >
+                      <RefreshCcw className="h-3.5 w-3.5" aria-hidden="true" />
+                      Regenerate Unit
+                    </button>
+                  </div>
+                ) : null}
               </div>
             </div>
 
@@ -1653,400 +1756,10 @@ function LevelReadinessCard({
               ))}
             </div>
           </div>
-        ))}
+        );
+        })}
       </div>
     </div>
-  );
-}
-
-function CurriculumEditor({
-  updatedBy,
-  lessons,
-  selectedLesson,
-  onSelectLesson,
-  onSaved,
-  onError
-}: {
-  updatedBy: string;
-  lessons: AdminCmsLesson[];
-  selectedLesson: AdminCmsLesson | null;
-  onSelectLesson: (slug: string) => void;
-  onSaved: (lesson: AdminCmsLesson) => void;
-  onError: (message: string) => void;
-}) {
-  const [draft, setDraft] = useState<AdminCmsLesson | null>(selectedLesson);
-  const [targetPhrasesText, setTargetPhrasesText] = useState("");
-  const [isSaving, setIsSaving] = useState(false);
-
-  useEffect(() => {
-    setDraft(selectedLesson);
-    setTargetPhrasesText(selectedLesson?.roleplay.targetPhrases.join("\n") ?? "");
-  }, [selectedLesson]);
-
-  async function saveLesson() {
-    if (!draft) {
-      return;
-    }
-
-    setIsSaving(true);
-    onError("");
-
-    try {
-      const saved = await updateAdminCmsLesson({
-        updatedBy,
-        lessonSlug: draft.slug,
-        title: draft.title,
-        status: draft.status,
-        estimatedMinutes: draft.estimatedMinutes,
-        conversationGoal: draft.conversationGoal,
-        roleplayOpeningLine: draft.roleplay.openingLine,
-        roleplayLearnerGoal: draft.roleplay.learnerGoal,
-        roleplayMaxTurns: draft.roleplay.maxTurns,
-        roleplayTargetPhrases: targetPhrasesText.split("\n").map((item) => item.trim()).filter(Boolean),
-        expectedContentHash: draft.contentHash
-      });
-      onSaved(saved);
-    } catch (error) {
-      onError(contentSaveErrorMessage(error, "Lesson"));
-    } finally {
-      setIsSaving(false);
-    }
-  }
-
-  return (
-    <div className="mt-5 grid gap-5 xl:grid-cols-[0.34fr_0.66fr]">
-      <div className="space-y-2">
-        {lessons.map((lesson) => (
-          <button
-            key={lesson.slug}
-            type="button"
-            onClick={() => onSelectLesson(lesson.slug)}
-            className={`focus-ring w-full rounded-lg p-4 text-left ${
-              selectedLesson?.slug === lesson.slug ? "bg-mint" : "bg-paper hover:bg-mint"
-            }`}
-          >
-            <p className="text-xs font-semibold uppercase text-leaf">{lesson.status}</p>
-            <p className="mt-2 font-semibold">{lesson.title}</p>
-            <p className="mt-1 text-xs text-ink/50">{lesson.slug}</p>
-          </button>
-        ))}
-        {!lessons.length ? <p className="rounded-lg bg-paper p-4 text-sm text-ink/60">Load CMS dulu.</p> : null}
-      </div>
-
-      {draft ? (
-        <div className="grid gap-4">
-          <div className="grid gap-3 md:grid-cols-[1fr_160px]">
-            <TextInput
-              label="Lesson title"
-              value={draft.title}
-              onChange={(value) => setDraft({ ...draft, title: value })}
-            />
-            <label className="text-sm font-medium text-ink/70">
-              Status
-              <select
-                value={draft.status}
-                onChange={(event) => setDraft({ ...draft, status: event.target.value })}
-                className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              >
-                {statusOptions.map((status) => (
-                  <option key={status} value={status}>
-                    {status}
-                  </option>
-                ))}
-              </select>
-            </label>
-          </div>
-
-          <label className="text-sm font-medium text-ink/70">
-            Conversation goal
-            <textarea
-              value={draft.conversationGoal}
-              onChange={(event) => setDraft({ ...draft, conversationGoal: event.target.value })}
-              rows={3}
-              className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-            />
-          </label>
-
-          <div className="grid gap-3 md:grid-cols-[1fr_120px]">
-            <TextInput
-              label="Roleplay opening"
-              value={draft.roleplay.openingLine}
-              onChange={(value) =>
-                setDraft({ ...draft, roleplay: { ...draft.roleplay, openingLine: value } })
-              }
-            />
-            <NumberInput
-              label="Max turns"
-              value={draft.roleplay.maxTurns}
-              onChange={(value) => setDraft({ ...draft, roleplay: { ...draft.roleplay, maxTurns: value } })}
-            />
-          </div>
-
-          <label className="text-sm font-medium text-ink/70">
-            Learner goal
-            <textarea
-              value={draft.roleplay.learnerGoal}
-              onChange={(event) =>
-                setDraft({ ...draft, roleplay: { ...draft.roleplay, learnerGoal: event.target.value } })
-              }
-              rows={3}
-              className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-            />
-          </label>
-
-          <label className="text-sm font-medium text-ink/70">
-            Target phrases, one per line
-            <textarea
-              value={targetPhrasesText}
-              onChange={(event) => setTargetPhrasesText(event.target.value)}
-              rows={5}
-              className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-            />
-          </label>
-
-          <button
-            type="button"
-            onClick={saveLesson}
-            disabled={isSaving}
-            className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            <Save className="h-4 w-4" aria-hidden="true" />
-            {isSaving ? "Saving" : "Save Lesson"}
-          </button>
-        </div>
-      ) : (
-        <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Pilih lesson untuk diedit.</p>
-      )}
-    </div>
-  );
-}
-
-function EmailTemplateEditor({
-  updatedBy,
-  templates,
-  selectedTemplate,
-  onSelectTemplate,
-  onSaved,
-  onError
-}: {
-  updatedBy: string;
-  templates: AdminEmailTemplate[];
-  selectedTemplate: AdminEmailTemplate | null;
-  onSelectTemplate: (templateKey: string) => void;
-  onSaved: (template: AdminEmailTemplate) => void;
-  onError: (message: string) => void;
-}) {
-  const [rawBody, setRawBody] = useState(selectedTemplate?.rawBody ?? "");
-  const [isSaving, setIsSaving] = useState(false);
-
-  useEffect(() => {
-    setRawBody(selectedTemplate?.rawBody ?? "");
-  }, [selectedTemplate]);
-
-  const preview = useMemo(() => selectedTemplate, [selectedTemplate]);
-
-  async function saveTemplate() {
-    if (!selectedTemplate) {
-      return;
-    }
-
-    setIsSaving(true);
-    onError("");
-
-    try {
-      const saved = await updateAdminEmailTemplate({
-        updatedBy,
-        templateKey: selectedTemplate.templateKey,
-        rawBody,
-        expectedContentHash: selectedTemplate.contentHash
-      });
-      onSaved(saved);
-    } catch (error) {
-      onError(contentSaveErrorMessage(error, "Email template"));
-    } finally {
-      setIsSaving(false);
-    }
-  }
-
-  return (
-    <div className="mt-5 grid gap-5 xl:grid-cols-[0.34fr_0.66fr]">
-      <div className="space-y-2">
-        {templates.map((template) => (
-          <button
-            key={template.templateKey}
-            type="button"
-            onClick={() => onSelectTemplate(template.templateKey)}
-            className={`focus-ring w-full rounded-lg p-4 text-left ${
-              selectedTemplate?.templateKey === template.templateKey ? "bg-mint" : "bg-paper hover:bg-mint"
-            }`}
-          >
-            <p className="font-semibold">{template.templateKey}</p>
-            <p className="mt-2 text-sm text-ink/60">{template.subject}</p>
-          </button>
-        ))}
-        {!templates.length ? <p className="rounded-lg bg-paper p-4 text-sm text-ink/60">Load CMS dulu.</p> : null}
-      </div>
-
-      {selectedTemplate ? (
-        <div className="grid gap-4">
-          {preview ? (
-            <div className="grid gap-3 rounded-lg bg-paper p-4 text-sm">
-              <p><span className="font-semibold">Subject:</span> {preview.subject}</p>
-              <p><span className="font-semibold">Preheader:</span> {preview.preheader}</p>
-              <p><span className="font-semibold">CTA:</span> {preview.ctaLabel}</p>
-            </div>
-          ) : null}
-          <label className="text-sm font-medium text-ink/70">
-            Markdown template
-            <textarea
-              value={rawBody}
-              onChange={(event) => setRawBody(event.target.value)}
-              rows={18}
-              className="focus-ring mt-2 w-full resize-y rounded-lg border border-ink/15 bg-white px-3 py-3 font-mono text-sm leading-6 text-ink"
-            />
-          </label>
-          <button
-            type="button"
-            onClick={saveTemplate}
-            disabled={isSaving}
-            className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            <Save className="h-4 w-4" aria-hidden="true" />
-            {isSaving ? "Saving" : "Save Template"}
-          </button>
-        </div>
-      ) : (
-        <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Pilih email template untuk diedit.</p>
-      )}
-    </div>
-  );
-}
-
-function LanguageFilterControl({
-  levels,
-  value,
-  onChange
-}: {
-  levels: AdminContentReadiness[];
-  value: LanguageFilter;
-  onChange: (value: LanguageFilter) => void;
-}) {
-  const languages = readinessLanguages(levels);
-  if (!languages.length) {
-    return null;
-  }
-
-  return (
-    <div className="flex flex-wrap items-center gap-2">
-      <span className="mr-1 text-xs font-semibold uppercase text-ink/45">Language</span>
-      <FilterButton active={value === "all"} onClick={() => onChange("all")}>
-        All
-      </FilterButton>
-      {languages.map((language) => (
-        <FilterButton key={language} active={value === language} onClick={() => onChange(language)}>
-          {languageLabel(language)}
-        </FilterButton>
-      ))}
-    </div>
-  );
-}
-
-function FilterButton({
-  active,
-  onClick,
-  children
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: string;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`focus-ring inline-flex min-h-9 items-center rounded-lg px-3 text-sm font-semibold ${
-        active ? "bg-ink text-white" : "bg-paper text-ink/65 hover:bg-mint"
-      }`}
-    >
-      {children}
-    </button>
-  );
-}
-
-function SectionNavButton({
-  active,
-  icon: Icon,
-  label,
-  description,
-  onClick,
-}: {
-  active: boolean;
-  icon: LucideIcon;
-  label: string;
-  description: string;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`focus-ring flex min-w-52 shrink-0 items-start gap-3 rounded-lg px-3 py-3 text-left transition lg:w-full lg:min-w-0 ${
-        active ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
-      }`}
-    >
-      <Icon className={`mt-0.5 h-4 w-4 shrink-0 ${active ? "text-white" : "text-leaf"}`} aria-hidden="true" />
-      <span className="min-w-0">
-        <span className="block text-sm font-semibold">{label}</span>
-        <span className={`mt-1 block text-xs leading-4 ${active ? "text-white/70" : "text-ink/45"}`}>
-          {description}
-        </span>
-      </span>
-    </button>
-  );
-}
-
-function TextInput({
-  label,
-  value,
-  onChange
-}: {
-  label: string;
-  value: string;
-  onChange: (value: string) => void;
-}) {
-  return (
-    <label className="text-sm font-medium text-ink/70">
-      {label}
-      <input
-        value={value}
-        onChange={(event) => onChange(event.target.value)}
-        className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-      />
-    </label>
-  );
-}
-
-function NumberInput({
-  label,
-  value,
-  onChange
-}: {
-  label: string;
-  value: number;
-  onChange: (value: number) => void;
-}) {
-  return (
-    <label className="text-sm font-medium text-ink/70">
-      {label}
-      <input
-        type="number"
-        min={1}
-        max={20}
-        value={value}
-        onChange={(event) => onChange(Number(event.target.value))}
-        className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-      />
-    </label>
   );
 }
 
@@ -2099,28 +1812,11 @@ function readinessStatusLabel(status: string) {
   return labels[status] ?? status;
 }
 
-function readinessLanguages(levels: AdminContentReadiness[]): string[] {
-  return Array.from(new Set(levels.map((level) => level.course.language).filter(Boolean))).sort((left, right) =>
-    languageLabel(left).localeCompare(languageLabel(right))
-  );
-}
-
 function filterReadinessLevels(
   levels: AdminContentReadiness[],
   languageFilter: LanguageFilter
 ): AdminContentReadiness[] {
-  if (languageFilter === "all") {
-    return levels;
-  }
   return levels.filter((level) => level.course.language === languageFilter);
-}
-
-function languageLabel(language: string) {
-  const labels: Record<string, string> = {
-    arabic: "Arabic",
-    english: "English"
-  };
-  return labels[language] ?? language.charAt(0).toUpperCase() + language.slice(1);
 }
 
 function bulkAudioCandidates(
@@ -2159,6 +1855,25 @@ function bulkAudioCandidates(
   return candidates;
 }
 
+function unitAudioCandidates(
+  level: AdminContentReadiness,
+  unit: AdminContentReadiness["units"][number],
+  { includeAudioReady }: { includeAudioReady: boolean }
+): BulkAudioQueueItem[] {
+  return unit.lessons
+    .filter((lesson) => lesson.slug && lesson.implemented && lesson.textReady)
+    .filter((lesson) => includeAudioReady || !lesson.audioReady)
+    .map((lesson) => ({
+      lessonSlug: lesson.slug,
+      lessonTitle: lesson.title,
+      levelCode: level.course.levelCode,
+      unitTitle: unit.title,
+      status: "pending" as BulkAudioQueueStatus,
+      attempts: 0,
+      error: ""
+    }));
+}
+
 function bulkQueueSummary(queue: BulkAudioQueueItem[]) {
   return queue.reduce(
     (summary, item) => {
@@ -2177,18 +1892,6 @@ function bulkQueueSummary(queue: BulkAudioQueueItem[]) {
   );
 }
 
-function formatDuration(durationSeconds: number) {
-  if (!Number.isFinite(durationSeconds) || durationSeconds <= 0) {
-    return "0s";
-  }
-  if (durationSeconds < 60) {
-    return `${Math.round(durationSeconds)}s`;
-  }
-  const minutes = Math.floor(durationSeconds / 60);
-  const seconds = Math.round(durationSeconds % 60);
-  return `${minutes}m ${seconds}s`;
-}
-
 function storedAudioModel(fallback: string) {
   return window.localStorage.getItem(audioModelStorageKey) || fallback;
 }
@@ -2204,48 +1907,4 @@ function storedAudioSpeed() {
     return 1;
   }
   return value;
-}
-
-function clampAudioSpeed(value: number) {
-  if (!Number.isFinite(value)) {
-    return 1;
-  }
-  return Math.min(2, Math.max(0.5, value));
-}
-
-function audioGenerationErrorMessage(error: unknown) {
-  const message = error instanceof Error ? error.message : "";
-  if (message.includes("minimax_api_key_missing")) {
-    return "Generate audio belum bisa berjalan karena MINIMAX_API_KEY belum terbaca di API.";
-  }
-  if (message.includes("s3_config_missing")) {
-    return "Generate audio belum bisa upload karena konfigurasi S3 belum lengkap.";
-  }
-  if (message.includes("boto3_missing")) {
-    return "Generate audio belum bisa upload karena dependency boto3 belum terinstall di venv API.";
-  }
-  if (message.includes("invalid_minimax_tts_model")) {
-    return "Model MiniMax belum valid. Pilih model dari daftar.";
-  }
-  if (message.includes("lesson_not_found")) {
-    return "Lesson belum ditemukan di content files.";
-  }
-  if (message.includes("listening_script")) {
-    return "Listening script belum siap untuk generate audio.";
-  }
-  if (message.includes("minimax_request_failed") || message.includes("minimax_error")) {
-    return "MiniMax belum berhasil membuat audio. Cek API key, quota, voice, atau coba ulang.";
-  }
-  return "Audio belum bisa digenerate. Cek konfigurasi MiniMax, S3, dan content lesson.";
-}
-
-function contentSaveErrorMessage(error: unknown, label: string) {
-  const message = error instanceof Error ? error.message : "";
-  if (message.includes("content_changed_reload_required")) {
-    return `${label} sudah berubah sejak terakhir diload. Reload CMS dulu sebelum menyimpan.`;
-  }
-  if (label === "Email template") {
-    return "Email template belum bisa disimpan. Pastikan heading, Subject, Preheader, CTA, html, dan txt lengkap.";
-  }
-  return "Lesson belum bisa disimpan. Cek field dan validasi YAML.";
 }
