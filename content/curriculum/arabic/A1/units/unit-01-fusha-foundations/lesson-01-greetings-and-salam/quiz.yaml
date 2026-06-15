@@ -1,0 +1,16 @@
+questions:
+  - key: reply_to_salam
+    prompt: Which phrase replies to السلام عليكم?
+    options:
+      - وعليكم السلام
+      - أنا بخير
+      - كيف حالك؟
+    correct_answer: وعليكم السلام
+  - key: how_are_you
+    prompt: What does كيف حالك؟ mean?
+    options:
+      - Bagaimana kabarmu?
+      - Siapa namamu?
+      - Dari mana kamu?
+    correct_answer: Bagaimana kabarmu?
+

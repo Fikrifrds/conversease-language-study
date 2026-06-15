@@ -1,0 +1,7 @@
+lesson_key: lesson-01-greetings-and-salam
+status: not_generated
+provider: minimax
+model: speech-2.8-hd
+default_voice_id: multi_speaker
+assets: []
+

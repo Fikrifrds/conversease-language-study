@@ -21,6 +21,26 @@ FREE_LEVEL_CODES = ("A1",)
 def requires_pro(level_code: str) -> bool:
     return level_code.upper() not in FREE_LEVEL_CODES
 
+
+def course_requires_pro(course: dict[str, Any]) -> bool:
+    access_tier = str(course.get("access_tier") or "").strip().lower()
+    if access_tier in {"pro", "pro_beta"}:
+        return True
+    if access_tier in {"free", "public"}:
+        return False
+    return requires_pro(str(course.get("level_code") or ""))
+
+
+def lesson_requires_pro(lesson: Optional[dict[str, Any]]) -> bool:
+    if not lesson:
+        return False
+    access_tier = str(lesson.get("access_tier") or "").strip().lower()
+    if access_tier in {"pro", "pro_beta"}:
+        return True
+    if access_tier in {"free", "public"}:
+        return False
+    return requires_pro(str(lesson.get("level_code") or ""))
+
 SECTION_LABELS = {
     "conversation_goal": "Conversation Goal",
     "situation_setup": "Situation Setup",
@@ -140,18 +160,24 @@ def load_course(*, language: str = "english", level_code: str) -> dict[str, Any]
     level_name = LEVEL_NAME if level_code == "A1" else level_code
 
     return {
+        "language": language,
         "language_code": language_code,
         "level_code": level_code,
         "level_name": level_name,
         "course_slug": course_slug,
         "course_title": course_title,
+        "access_tier": plan.get("access_tier") or "",
         "units": units,
     }
 
 
 @lru_cache(maxsize=1)
 def all_courses() -> tuple[dict[str, Any], ...]:
-    """Every level that has authored content, in level order (A1 -> C1)."""
+    """English levels that have authored content, in level order (A1 -> C1).
+
+    This preserves the existing English learning-progress and unlock behavior.
+    Use all_authored_courses() for cross-language discovery.
+    """
     courses = []
     for level_code in SUPPORTED_LEVEL_CODES:
         course = load_course(level_code=level_code)
@@ -160,8 +186,25 @@ def all_courses() -> tuple[dict[str, Any], ...]:
     return tuple(courses)
 
 
+@lru_cache(maxsize=1)
+def all_authored_courses() -> tuple[dict[str, Any], ...]:
+    """All authored courses across language folders.
+
+    Course ordering is stable by language folder and level code. English-only
+    flows should keep using all_courses() until product-scoped access is added.
+    """
+    courses = []
+    for plan_path in sorted(curriculum_root().glob("*/*/content_plan.yaml")):
+        language = plan_path.parents[1].name
+        level_code = plan_path.parent.name
+        course = load_course(language=language, level_code=level_code)
+        if course["units"]:
+            courses.append(course)
+    return tuple(courses)
+
+
 def get_course_by_slug(slug: str) -> Optional[dict[str, Any]]:
-    for course in all_courses():
+    for course in all_authored_courses():
         if course["course_slug"] == slug:
             return course
     return None
@@ -247,12 +290,15 @@ def load_a1_final_evaluation() -> dict[str, Any]:
 
 
 def get_lesson_or_none(lesson_slug: str) -> Optional[dict[str, Any]]:
-    for course in all_courses():
+    for course in all_authored_courses():
         for unit in course["units"]:
             for lesson in unit["lessons"]:
                 if lesson["slug"] == lesson_slug:
                     return {
                         **lesson,
+                        "language": course.get("language", "english"),
+                        "language_code": course.get("language_code", ""),
+                        "access_tier": course.get("access_tier", ""),
                         "unit_slug": unit["slug"],
                         "unit_title": unit["title"],
                         "level_code": course["level_code"],
@@ -502,6 +548,7 @@ def refresh_a1_course() -> dict[str, Any]:
     load_course.cache_clear()
     load_final_evaluation.cache_clear()
     all_courses.cache_clear()
+    all_authored_courses.cache_clear()
     fresh_course = load_a1_course()
     A1_COURSE.clear()
     A1_COURSE.update(fresh_course)

@@ -244,6 +244,7 @@ def content_readiness_from_plan(
             summary["planned_lesson_count"] += 1
             lesson_report = lesson_readiness(
                 base_root=base_root,
+                language=language,
                 level_code=level_code,
                 unit=unit,
                 lesson=lesson,
@@ -318,6 +319,7 @@ def rollup_summary(levels: list[dict[str, Any]]) -> dict[str, int]:
 def lesson_readiness(
     *,
     base_root: Path,
+    language: str,
     level_code: str,
     unit: dict[str, Any],
     lesson: dict[str, Any],
@@ -326,7 +328,9 @@ def lesson_readiness(
     unit_key = unit.get("unit_key", "")
     lesson_key = lesson.get("lesson_key", "")
     lesson_dir = base_root / "units" / unit_key / lesson_key
-    tracker_row = tracker.get((level_code, unit_key, lesson_key), {})
+    tracker_row = tracker.get((f"{language}/{level_code}", unit_key, lesson_key), {})
+    if not tracker_row:
+        tracker_row = tracker.get((level_code, unit_key, lesson_key), {})
     checks = []
 
     for item in REQUIRED_CONTENT_ITEMS:

@@ -1,0 +1,26 @@
+lesson_key: lesson-03-class-and-study-instructions
+slug: arabic-class-and-study-instructions
+title: Class and Study Instructions
+status: beta
+estimated_minutes: 10
+conversation_situation: following_simple_arabic_study_instructions
+conversation_goal: Understand and respond to basic Arabic Fusha instructions used in class or a study circle.
+grammar_summary: Learn short command forms such as اقرأ، استمع، أعد، اكتب، and افهم.
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60
+

@@ -46,47 +46,85 @@ CLEAR_MALE_DIALOGUE_VOICES = (
     "English_Diligent_Man",
 )
 
+CLEAR_ARABIC_FEMALE_DIALOGUE_VOICES = (
+    "Arabic_CalmWoman",
+)
+
+CLEAR_ARABIC_MALE_DIALOGUE_VOICES = (
+    "Arabic_FriendlyGuy",
+)
+
 DIALOGUE_TARGET_PEAK_RATIO = 0.82
-CURATED_MINIMAX_VOICE_IDS = (
+ENGLISH_CURATED_MINIMAX_VOICE_IDS = (
     "English_expressive_narrator",
     *CLEAR_MALE_DIALOGUE_VOICES,
     *CLEAR_FEMALE_DIALOGUE_VOICES,
 )
+
+ARABIC_CURATED_MINIMAX_VOICE_IDS = (
+    *CLEAR_ARABIC_MALE_DIALOGUE_VOICES,
+    *CLEAR_ARABIC_FEMALE_DIALOGUE_VOICES,
+)
+
+CURATED_MINIMAX_VOICE_IDS = (
+    *ENGLISH_CURATED_MINIMAX_VOICE_IDS,
+    *ARABIC_CURATED_MINIMAX_VOICE_IDS,
+)
+
 CURATED_MINIMAX_VOICE_METADATA = {
     "English_expressive_narrator": {
         "voice_name": "Expressive Narrator",
         "gender": "neutral",
+        "language": "English",
         "description": "Clear narrator voice for single-speaker lesson audio.",
     },
     "English_Gentle-voiced_man": {
         "voice_name": "Gentle-voiced Man",
         "gender": "male",
+        "language": "English",
         "description": "Solid male voice for calm beginner dialogue.",
     },
     "English_Trustworth_Man": {
         "voice_name": "Trustworthy Man",
         "gender": "male",
+        "language": "English",
         "description": "Solid male voice for steady instructional dialogue.",
     },
     "English_Diligent_Man": {
         "voice_name": "Diligent Man",
         "gender": "male",
+        "language": "English",
         "description": "Solid male voice for clear learner or staff dialogue.",
     },
     "English_radiant_girl": {
         "voice_name": "Radiant Girl",
         "gender": "female",
+        "language": "English",
         "description": "Solid female voice for friendly beginner dialogue.",
     },
     "English_CalmWoman": {
         "voice_name": "Calm Woman",
         "gender": "female",
+        "language": "English",
         "description": "Solid female voice for teacher, helper, and examiner dialogue.",
     },
     "English_Upbeat_Woman": {
         "voice_name": "Upbeat Woman",
         "gender": "female",
+        "language": "English",
         "description": "Solid female voice for light social dialogue.",
+    },
+    "Arabic_FriendlyGuy": {
+        "voice_name": "Friendly Guy",
+        "gender": "male",
+        "language": "Arabic",
+        "description": "Clear Arabic male voice for Fusha teacher, narrator, and student dialogue.",
+    },
+    "Arabic_CalmWoman": {
+        "voice_name": "Calm Woman",
+        "gender": "female",
+        "language": "Arabic",
+        "description": "Calm Arabic female voice for Fusha teacher, narrator, and student dialogue.",
     },
 }
 
@@ -124,6 +162,25 @@ DIALOGUE_PERSONA_VOICES = {
     "learner": "English_radiant_girl",
     "nurse": "English_CalmWoman",
     "receptionist": "English_radiant_girl",
+    # Arabic Fusha pilot personas. MiniMax currently exposes two Arabic system
+    # voices, so repeated male/female roles share these voices in beta.
+    "ahmad": "Arabic_FriendlyGuy",
+    "ahmed": "Arabic_FriendlyGuy",
+    "ali": "Arabic_FriendlyGuy",
+    "fatimah": "Arabic_CalmWoman",
+    "fatima": "Arabic_CalmWoman",
+    "maryam": "Arabic_CalmWoman",
+    "studentmale": "Arabic_FriendlyGuy",
+    "studentfemale": "Arabic_CalmWoman",
+    "ustadh": "Arabic_FriendlyGuy",
+    "ustadz": "Arabic_FriendlyGuy",
+    "ustaz": "Arabic_FriendlyGuy",
+    "teacherarabicmale": "Arabic_FriendlyGuy",
+    "teacherarabicfemale": "Arabic_CalmWoman",
+    "ustadhah": "Arabic_CalmWoman",
+    "ustadzah": "Arabic_CalmWoman",
+    "arabicteacher": "Arabic_FriendlyGuy",
+    "arabicstudent": "Arabic_CalmWoman",
 }
 
 FALLBACK_MINIMAX_VOICES = tuple(
@@ -187,7 +244,7 @@ def audio_generation_settings_payload(voices: list[dict[str, Any]]) -> dict[str,
 
 
 async def audio_generation_settings() -> dict[str, Any]:
-    voices = await list_minimax_voices()
+    voices = await list_minimax_voices(language="all")
     return audio_generation_settings_payload(voices)
 
 
@@ -248,12 +305,21 @@ def flatten_minimax_voices(payload: dict[str, Any]) -> list[dict[str, Any]]:
 
 
 def filter_voice_options(voices: list[dict[str, Any]], *, language: str) -> list[dict[str, Any]]:
-    del language
     by_id = {str(voice.get("voice_id") or ""): voice for voice in voices}
+    voice_ids = curated_voice_ids_for_language(language)
     return [
         curated_voice_option(voice_id, by_id.get(voice_id))
-        for voice_id in CURATED_MINIMAX_VOICE_IDS
+        for voice_id in voice_ids
     ]
+
+
+def curated_voice_ids_for_language(language: str) -> tuple[str, ...]:
+    normalized = (language or "").strip().lower().replace("_", "-")
+    if normalized in {"all", "any", "*"}:
+        return CURATED_MINIMAX_VOICE_IDS
+    if normalized in {"arabic", "ar", "ar-sa", "ar-ae", "ar-eg"}:
+        return ARABIC_CURATED_MINIMAX_VOICE_IDS
+    return ENGLISH_CURATED_MINIMAX_VOICE_IDS
 
 
 def curated_voice_option(voice_id: str, source: Optional[dict[str, Any]] = None) -> dict[str, Any]:
@@ -264,6 +330,7 @@ def curated_voice_option(voice_id: str, source: Optional[dict[str, Any]] = None)
         "voice_name": str(source.get("voice_name") or metadata["voice_name"]),
         "category": "curated",
         "gender": metadata["gender"],
+        "language": metadata["language"],
         "description": str(source.get("description") or metadata["description"]),
     }
 

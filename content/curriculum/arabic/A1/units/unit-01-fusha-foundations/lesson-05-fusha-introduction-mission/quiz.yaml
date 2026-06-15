@@ -1,0 +1,16 @@
+questions:
+  - key: mission_order
+    prompt: Which answer introduces name and origin?
+    options:
+      - اسمي أحمد. أنا من إندونيسيا.
+      - لا أفهم. أعد من فضلك.
+      - اقرأ الجملة.
+    correct_answer: اسمي أحمد. أنا من إندونيسيا.
+  - key: ask_repeat
+    prompt: Which answer is best when you do not understand?
+    options:
+      - لا أفهم. أعد من فضلك.
+      - أنا من إندونيسيا.
+      - وعليكم السلام.
+    correct_answer: لا أفهم. أعد من فضلك.
+

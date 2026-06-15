@@ -1,0 +1,39 @@
+scenario_key: arabic_greetings_and_salam
+mode: lesson_practice_coach
+level_code: A1
+opening_line: السلام عليكم. كيف حالك اليوم؟
+learner_goal: Reply to salam and answer how you are in simple Arabic Fusha.
+max_turns: 3
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: السلام عليكم.
+    hint: Jawab salam dengan وعليكم السلام.
+    sample_answer: وعليكم السلام.
+    focus: Reply to salam
+    expected_keywords:
+      - وعليكم
+      - السلام
+    indonesian_explanation: Untuk membalas salam, gunakan وعليكم السلام.
+  - coach: كيف حالك اليوم؟
+    hint: Jawab kabar dengan أنا بخير، الحمد لله.
+    sample_answer: أنا بخير، الحمد لله.
+    focus: Answer how you are
+    expected_keywords:
+      - أنا
+      - بخير
+      - الحمد
+    indonesian_explanation: Jawaban pendek yang sopan adalah أنا بخير، الحمد لله.
+target_phrases:
+  - السلام عليكم
+  - وعليكم السلام
+  - أنا بخير، الحمد لله
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55
+

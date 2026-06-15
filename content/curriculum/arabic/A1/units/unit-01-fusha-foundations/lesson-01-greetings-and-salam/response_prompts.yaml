@@ -1,0 +1,16 @@
+prompts:
+  - prompt: Reply to salam.
+    target_response: وعليكم السلام
+    acceptable_responses:
+      - وعليكم السلام
+      - وعليكم السلام ورحمة الله
+  - prompt: Answer "كيف حالك؟"
+    target_response: أنا بخير، الحمد لله
+    acceptable_responses:
+      - أنا بخير، الحمد لله
+      - بخير، الحمد لله
+  - prompt: Say "How are you?"
+    target_response: كيف حالك؟
+    acceptable_responses:
+      - كيف حالك؟
+

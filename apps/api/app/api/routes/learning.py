@@ -10,12 +10,13 @@ from app.api.deps import get_current_user
 from app.data.content_readiness import lesson_audio_asset
 from app.data.curriculum import (
     all_courses,
+    course_requires_pro,
     get_course_by_slug,
+    lesson_requires_pro,
     load_final_evaluation,
     public_course_payload,
     public_final_evaluation_payload,
     public_lesson_payload,
-    requires_pro,
 )
 from app.repositories.billing import BillingRepository
 from app.db.models import LessonProgressModel, UserOnboardingProfileModel
@@ -120,7 +121,7 @@ async def list_levels() -> dict:
 
 
 def course_access_payload(course: dict, *, unlocked: bool, is_pro: bool, is_admin: bool) -> dict:
-    needs_pro = requires_pro(course["level_code"])
+    needs_pro = course_requires_pro(course)
     return {
         **public_course_payload(course),
         "unlocked": unlocked,
@@ -276,7 +277,7 @@ def ensure_lesson_access(db: Session, user: User, lesson: Optional[dict]) -> Non
     if user.is_admin:
         return
     level_code = (lesson or {}).get("level_code", "")
-    if level_code and requires_pro(level_code) and not BillingRepository(db).is_pro(user.id):
+    if level_code and lesson_requires_pro(lesson) and not BillingRepository(db).is_pro(user.id):
         raise HTTPException(
             status_code=403,
             detail="Pro subscription required for this level",

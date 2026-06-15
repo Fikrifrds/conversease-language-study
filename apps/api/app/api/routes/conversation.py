@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from app.api.deps import get_current_user
-from app.data.curriculum import get_lesson_or_none, requires_pro
+from app.data.curriculum import get_lesson_or_none, lesson_requires_pro
 from app.db.session import get_db
 from app.domain.users import User
 from app.domain.conversation_practice import (
@@ -54,7 +54,7 @@ async def create_conversation_session(
     # level_code) and gate Pro-only scenarios so coach access matches course
     # access: A1 is free, A2+ requires an active Pro subscription.
     lesson = get_lesson_or_none(payload.lesson_slug)
-    if lesson is not None and requires_pro(lesson["level_code"]):
+    if lesson is not None and lesson_requires_pro(lesson):
         if not current_user.is_admin and not billing.is_pro(current_user.id):
             raise HTTPException(
                 status_code=403,

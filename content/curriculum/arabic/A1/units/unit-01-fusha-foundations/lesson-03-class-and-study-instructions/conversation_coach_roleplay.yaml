@@ -1,0 +1,48 @@
+scenario_key: arabic_class_and_study_instructions
+mode: lesson_practice_coach
+level_code: A1
+opening_line: اقرأ الجملة.
+learner_goal: Recognize simple study instructions and respond politely.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: اقرأ الجملة.
+    hint: "Jawab bahwa kamu siap: نعم يا أستاذ."
+    sample_answer: نعم يا أستاذ.
+    focus: Polite classroom response
+    expected_keywords:
+      - نعم
+      - أستاذ
+    indonesian_explanation: نعم يا أستاذ adalah respons sopan kepada guru laki-laki.
+  - coach: استمع ثم أعد.
+    hint: Ulangi instruksi pendek ini.
+    sample_answer: استمع ثم أعد.
+    focus: Repeat the instruction
+    expected_keywords:
+      - استمع
+      - أعد
+    indonesian_explanation: استمع berarti dengarkan, ثم berarti lalu, أعد berarti ulangilah.
+  - coach: اكتب الكلمة.
+    hint: Jawab siap menulis.
+    sample_answer: نعم، أكتب الكلمة.
+    focus: Confirm writing
+    expected_keywords:
+      - نعم
+      - أكتب
+      - الكلمة
+    indonesian_explanation: أكتب berarti saya menulis.
+target_phrases:
+  - اقرأ
+  - استمع
+  - أعد
+  - اكتب
+  - نعم يا أستاذ
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

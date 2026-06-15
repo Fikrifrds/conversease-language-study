@@ -26,8 +26,8 @@ export const plans = [
     cadence: "Selamanya",
     access: "Akses terbatas",
     coachAllowance: "Termasuk sesi coba Conversation Coach",
-    description: "Coba beberapa lesson A1 dan feedback dasar sebelum upgrade.",
-    features: ["Lesson A1 pilihan", "Conversation Check dasar", "Progress belajar dasar", "Coba praktik speaking"]
+    description: "Coba beberapa lesson awal dan feedback dasar sebelum upgrade.",
+    features: ["Lesson pilihan", "Conversation Check dasar", "Progress belajar dasar", "Coba praktik speaking"]
   },
   {
     key: "pro_1_month",
@@ -36,8 +36,8 @@ export const plans = [
     cadence: "1 bulan",
     access: "Akses Pro 1 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Akses penuh ke kurikulum aktif, feedback detail, dan evaluasi level.",
-    features: ["Semua lesson aktif", "Detailed Conversation Feedback", "Full A1 Conversation Test", "Skill report dan progress"]
+    description: "Akses penuh ke kurikulum aktif, feedback detail, evaluasi level, dan Arabic Fusha beta.",
+    features: ["English track aktif", "Arabic Fusha beta", "Detailed Conversation Feedback", "Skill report dan progress"]
   },
   {
     key: "pro_3_months",
@@ -46,8 +46,8 @@ export const plans = [
     cadence: "3 bulan",
     access: "Akses Pro 3 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Paket lebih hemat untuk menyelesaikan A1 dengan ritme belajar rutin.",
-    features: ["Semua lesson aktif", "Detailed Conversation Feedback", "Full A1 Conversation Test", "Pengingat renewal"]
+    description: "Paket lebih hemat untuk menyelesaikan satu track dengan ritme belajar rutin.",
+    features: ["English track aktif", "Arabic Fusha beta", "Detailed Conversation Feedback", "Pengingat renewal"]
   },
   {
     key: "pro_12_months",
@@ -56,8 +56,8 @@ export const plans = [
     cadence: "12 bulan",
     access: "Akses Pro 12 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Best value untuk belajar konsisten, evaluasi level, dan lanjut ke path berikutnya.",
-    features: ["Semua lesson aktif", "Skill reports", "Level evaluation", "Review plan personal"]
+    description: "Best value untuk belajar konsisten lintas track, evaluasi level, dan review plan.",
+    features: ["English track aktif", "Arabic Fusha beta", "Skill reports", "Review plan personal"]
   }
 ];
 

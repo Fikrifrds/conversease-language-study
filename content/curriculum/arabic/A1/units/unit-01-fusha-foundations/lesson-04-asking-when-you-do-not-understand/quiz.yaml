@@ -1,0 +1,16 @@
+questions:
+  - key: do_not_understand
+    prompt: Which phrase means "I do not understand"?
+    options:
+      - لا أفهم
+      - أنا بخير
+      - اسمي أحمد
+    correct_answer: لا أفهم
+  - key: what_meaning
+    prompt: Which phrase asks "What is the meaning of ..."?
+    options:
+      - ما معنى ...؟
+      - من أين أنت؟
+      - وعليكم السلام
+    correct_answer: ما معنى ...؟
+

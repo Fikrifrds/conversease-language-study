@@ -11,9 +11,9 @@ export default function PricingPage() {
           <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih akses belajar Conversease</h1>
           <p className="mt-3 leading-7 text-ink/70">
-            Nilai utama Pro adalah akses kurikulum aktif, feedback detail, evaluasi level, dan
-            progress report. Kuota Conversation Coach hanya batas pemakaian untuk sesi praktik
-            tambahan, bukan isi utama paket.
+            Pro saat ini membuka kurikulum English aktif dan Arabic Fusha selama beta. Saat Arabic
+            launch publik, Conversease dapat memisahkan paket English, Arabic, dan All Access agar
+            tiap track punya harga yang adil.
           </p>
         </div>
         <div className="mt-8 grid gap-4 lg:grid-cols-4">
@@ -57,8 +57,8 @@ export default function PricingPage() {
         <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <h2 className="text-xl font-semibold">Top-up opsional Conversation Coach</h2>
           <p className="mt-2 max-w-3xl text-sm leading-6 text-ink/60">
-            Top-up bukan fitur utama paket. Ini hanya tambahan untuk user Pro yang ingin latihan
-            speaking lebih banyak setelah kuota pendamping bulanannya habis.
+            Top-up tetap lintas track. Pakai untuk latihan speaking tambahan di English atau Arabic
+            Fusha setelah kuota pendamping bulanannya habis.
           </p>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
             {topups.map((topup) => (

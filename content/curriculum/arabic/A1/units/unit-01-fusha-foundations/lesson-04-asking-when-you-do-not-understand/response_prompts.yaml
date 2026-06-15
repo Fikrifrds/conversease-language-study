@@ -1,0 +1,14 @@
+prompts:
+  - prompt: Say "I do not understand."
+    target_response: لا أفهم
+    acceptable_responses:
+      - لا أفهم
+  - prompt: Ask someone to repeat.
+    target_response: أعد من فضلك
+    acceptable_responses:
+      - أعد من فضلك
+  - prompt: Ask the meaning of الحديث.
+    target_response: ما معنى الحديث؟
+    acceptable_responses:
+      - ما معنى الحديث؟
+

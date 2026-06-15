@@ -1,0 +1,33 @@
+language: arabic
+language_code: ar
+level_code: A1
+course_slug: arabic-a1-fusha-foundations
+course_title: Fusha Foundations
+access_tier: pro_beta
+target_lesson_count: 5
+units:
+  - unit_key: unit-01-fusha-foundations
+    title: Fusha Foundations
+    status: beta
+    main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.
+    lessons:
+      - lesson_key: lesson-01-greetings-and-salam
+        slug: arabic-greetings-and-salam
+        title: Greetings and Salam
+        status: beta
+      - lesson_key: lesson-02-name-and-origin
+        slug: arabic-name-and-origin
+        title: Name and Origin
+        status: beta
+      - lesson_key: lesson-03-class-and-study-instructions
+        slug: arabic-class-and-study-instructions
+        title: Class and Study Instructions
+        status: beta
+      - lesson_key: lesson-04-asking-when-you-do-not-understand
+        slug: arabic-asking-when-you-do-not-understand
+        title: Asking When You Do Not Understand
+        status: beta
+      - lesson_key: lesson-05-fusha-introduction-mission
+        slug: arabic-fusha-introduction-mission
+        title: Fusha Introduction Mission
+        status: beta

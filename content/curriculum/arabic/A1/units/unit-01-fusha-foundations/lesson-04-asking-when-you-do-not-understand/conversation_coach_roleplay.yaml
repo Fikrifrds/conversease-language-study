@@ -1,0 +1,48 @@
+scenario_key: arabic_asking_when_you_do_not_understand
+mode: lesson_practice_coach
+level_code: A1
+opening_line: اقرأ الحديث.
+learner_goal: Ask for repetition or meaning when you do not understand.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: اقرأ الحديث.
+    hint: Katakan bahwa kamu belum paham.
+    sample_answer: عفوا، لا أفهم.
+    focus: Say you do not understand
+    expected_keywords:
+      - لا
+      - أفهم
+    indonesian_explanation: لا أفهم berarti saya tidak paham.
+  - coach: هل تريد الإعادة؟
+    hint: Minta pengulangan dengan sopan.
+    sample_answer: نعم، أعد من فضلك.
+    focus: Ask for repetition
+    expected_keywords:
+      - أعد
+      - فضلك
+    indonesian_explanation: أعد من فضلك berarti ulangi, tolong.
+  - coach: الكلمة هي الحديث.
+    hint: Tanyakan makna الحديث.
+    sample_answer: ما معنى الحديث؟
+    focus: Ask meaning
+    expected_keywords:
+      - ما
+      - معنى
+      - الحديث
+    indonesian_explanation: Gunakan ما معنى untuk bertanya makna kata.
+target_phrases:
+  - لا أفهم
+  - أعد من فضلك
+  - ما معنى ...؟
+  - ببطء من فضلك
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55
+

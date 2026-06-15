@@ -1,0 +1,15 @@
+prompts:
+  - prompt: Say "my name is Ahmad."
+    target_response: اسمي أحمد
+    acceptable_responses:
+      - اسمي أحمد
+      - أنا أحمد
+  - prompt: Say "I am from Indonesia."
+    target_response: أنا من إندونيسيا
+    acceptable_responses:
+      - أنا من إندونيسيا
+  - prompt: Ask "Where are you from?"
+    target_response: من أين أنت؟
+    acceptable_responses:
+      - من أين أنت؟
+

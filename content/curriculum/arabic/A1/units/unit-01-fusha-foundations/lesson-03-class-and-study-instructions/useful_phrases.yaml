@@ -1,0 +1,17 @@
+phrases:
+  - phrase: اقرأ
+    meaning_id: Bacalah.
+    usage_note: Teacher instruction for reading.
+  - phrase: استمع
+    meaning_id: Dengarkan.
+    usage_note: Teacher instruction before listening.
+  - phrase: أعد
+    meaning_id: Ulangilah.
+    usage_note: Ask someone to repeat.
+  - phrase: اكتب
+    meaning_id: Tulislah.
+    usage_note: Teacher instruction for writing.
+  - phrase: نعم يا أستاذ
+    meaning_id: Baik, Ustadz.
+    usage_note: Polite classroom response to a male teacher.
+

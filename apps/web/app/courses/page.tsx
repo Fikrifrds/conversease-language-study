@@ -53,10 +53,10 @@ export default function CoursesPage() {
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
-          <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan bahasa Inggris</h1>
+          <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan Conversease</h1>
           <p className="mt-3 leading-7 text-ink/70">
-            A1 gratis untuk semua. Level A2 sampai C1 tersedia dengan Pro. Selesaikan semua lesson di
-            satu level untuk membuka level berikutnya.
+            English track aktif dari A1 sampai C1. Arabic Fusha sedang masuk fase beta: formal,
+            bukan amiyah, untuk dialog, kajian, dan pemahaman teks dasar.
           </p>
         </div>
 

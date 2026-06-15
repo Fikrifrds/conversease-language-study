@@ -1,0 +1,17 @@
+phrases:
+  - phrase: السلام عليكم
+    meaning_id: Semoga keselamatan atas kalian.
+    usage_note: Start the conversation politely.
+  - phrase: اسمي ...
+    meaning_id: Nama saya ...
+    usage_note: Introduce your name.
+  - phrase: أنا من إندونيسيا
+    meaning_id: Saya dari Indonesia.
+    usage_note: Say your country.
+  - phrase: لا أفهم
+    meaning_id: Saya tidak paham.
+    usage_note: Use when you are lost.
+  - phrase: أعد من فضلك
+    meaning_id: Ulangi, tolong.
+    usage_note: Ask for repetition politely.
+

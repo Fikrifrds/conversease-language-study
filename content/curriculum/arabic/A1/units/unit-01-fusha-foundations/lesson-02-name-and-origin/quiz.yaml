@@ -1,0 +1,16 @@
+questions:
+  - key: my_name_is
+    prompt: Which phrase means "my name is ..."?
+    options:
+      - اسمي ...
+      - من أين أنت؟
+      - الحمد لله
+    correct_answer: اسمي ...
+  - key: from_indonesia
+    prompt: What does أنا من إندونيسيا mean?
+    options:
+      - Saya dari Indonesia.
+      - Nama saya Indonesia.
+      - Saya belajar bahasa Arab.
+    correct_answer: Saya dari Indonesia.
+

@@ -1,0 +1,17 @@
+phrases:
+  - phrase: لا أفهم
+    meaning_id: Saya tidak paham.
+    usage_note: Say this when you do not understand.
+  - phrase: أعد من فضلك
+    meaning_id: Ulangi, tolong.
+    usage_note: Ask someone to repeat politely.
+  - phrase: ببطء من فضلك
+    meaning_id: Pelan-pelan, tolong.
+    usage_note: Ask someone to speak slowly.
+  - phrase: ما معنى ...؟
+    meaning_id: Apa makna ...?
+    usage_note: Ask for the meaning of a word or phrase.
+  - phrase: الحديث
+    meaning_id: Hadits.
+    usage_note: A key Islamic-study word.
+

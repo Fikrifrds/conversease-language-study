@@ -1,0 +1,14 @@
+prompts:
+  - prompt: Say "Read."
+    target_response: اقرأ
+    acceptable_responses:
+      - اقرأ
+  - prompt: Say "Listen, then repeat."
+    target_response: استمع ثم أعد
+    acceptable_responses:
+      - استمع ثم أعد
+  - prompt: Respond politely to a teacher.
+    target_response: نعم يا أستاذ
+    acceptable_responses:
+      - نعم يا أستاذ
+

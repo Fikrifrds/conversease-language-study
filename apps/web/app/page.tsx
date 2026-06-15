@@ -38,13 +38,13 @@ export default function HomePage() {
         </header>
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
           <div className="max-w-2xl text-white">
-            <p className="text-sm font-semibold uppercase text-sun">Ngobrol jadi mudah</p>
+            <p className="text-sm font-semibold uppercase text-sun">Bahasa jadi bisa dipakai</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Conversease
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
-              Belajar Inggris lewat percakapan nyata. Dengar, pahami, tirukan, respons, praktik,
-              lalu dapat feedback yang jelas.
+              Belajar bahasa lewat percakapan terarah. Mulai dari English speaking, lalu masuk ke
+              Arabic Fusha beta untuk memahami dialog formal, kajian, dan teks dasar.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ActionButton href="/register" icon={ArrowRight} tone="light">
@@ -103,13 +103,14 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="A1 MVP" title="Start Simple Conversations">
-          Mulai dari greeting, self-introduction, daily routine, simple questions, lalu final A1
-          conversation test.
+        <SectionHeading eyebrow="Learning Tracks" title="English aktif, Arabic Fusha mulai beta">
+          Conversease tetap conversation-first: dengar, pahami, tirukan, respons, lalu dapat
+          feedback yang jelas untuk tiap track bahasa.
         </SectionHeading>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
-            ["Menyimak Percakapan", "Audio dialog siap pakai lengkap dengan transkrip dan terjemahan Indonesia."],
+            ["English Conversation", "Mulai dari greeting, self-introduction, daily routine, simple questions, sampai evaluasi A1."],
+            ["Arabic Fusha Beta", "Fondasi Fusha untuk salam, perkenalan, instruksi kajian, dan frasa ketika belum paham."],
             ["Bicara dengan Jelas", "Ulangi frasa berguna dan bangun rasa percaya diri pelafalan langkah demi langkah."],
             ["Feedback Percakapan", "Versi lebih baik, penjelasan Indonesia, skor, dan latihan berikutnya."]
           ].map(([title, text]) => (
@@ -125,9 +126,9 @@ export default function HomePage() {
       <section className="bg-ink text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <SectionHeading eyebrow="Harga" title="Free + Pro" tone="light">
-            Pro membuka seluruh jalur belajar: lesson aktif, feedback detail, evaluasi level, dan
-            laporan progress. Kuota Conversation Coach hanya disertakan sebagai batas latihan untuk
-            sesi bicara tambahan.
+            Pro membuka kurikulum aktif, feedback detail, evaluasi level, laporan progress, dan
+            akses Arabic Fusha selama beta. Setelah launch publik, English, Arabic, dan All Access
+            bisa dipisahkan sebagai paket berbeda.
           </SectionHeading>
           <div className="grid gap-3 md:grid-cols-2">
             {plans.slice(0, 4).map((plan) => (

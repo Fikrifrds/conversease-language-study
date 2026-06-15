@@ -1,0 +1,26 @@
+lesson_key: lesson-02-name-and-origin
+slug: arabic-name-and-origin
+title: Name and Origin
+status: beta
+estimated_minutes: 10
+conversation_situation: introducing_yourself_in_formal_arabic
+conversation_goal: Say your name and country in simple Arabic Fusha, then ask the same question back.
+grammar_summary: Use اسمي + name for "my name is" and أنا من + place for "I am from".
+required_sections:
+  - conversation_goal
+  - situation_setup
+  - listening
+  - comprehension_check
+  - useful_phrases
+  - grammar_for_conversation
+  - speak_clearly
+  - response_practice
+  - conversation_coach_roleplay
+  - conversation_feedback
+  - conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60
+

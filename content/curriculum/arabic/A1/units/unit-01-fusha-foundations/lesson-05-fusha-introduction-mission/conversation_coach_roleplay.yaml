@@ -1,0 +1,53 @@
+scenario_key: arabic_fusha_introduction_mission
+mode: lesson_practice_coach
+level_code: A1
+opening_line: السلام عليكم. ما اسمك؟
+learner_goal: Complete a short formal Arabic introduction and ask for repetition when needed.
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+  - coach: السلام عليكم. ما اسمك؟
+    hint: Balas salam dan sebutkan nama.
+    sample_answer: وعليكم السلام. اسمي أحمد.
+    focus: Greeting and name
+    expected_keywords:
+      - وعليكم
+      - السلام
+      - اسمي
+    indonesian_explanation: Gabungkan balasan salam dengan اسمي untuk menyebut nama.
+  - coach: من أين أنت؟
+    hint: Sebutkan asal negara.
+    sample_answer: أنا من إندونيسيا.
+    focus: Origin
+    expected_keywords:
+      - أنا
+      - من
+      - إندونيسيا
+    indonesian_explanation: أنا من إندونيسيا berarti saya dari Indonesia.
+  - coach: اقرأ الجملة.
+    hint: Kalau belum paham, katakan tidak paham dan minta pengulangan.
+    sample_answer: عفوا، لا أفهم. أعد من فضلك.
+    focus: Ask for help
+    expected_keywords:
+      - لا
+      - أفهم
+      - أعد
+      - فضلك
+    indonesian_explanation: Ini frasa aman saat kamu belum mengerti instruksi.
+target_phrases:
+  - السلام عليكم
+  - وعليكم السلام
+  - اسمي ...
+  - أنا من إندونيسيا
+  - لا أفهم
+  - أعد من فضلك
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55
+
