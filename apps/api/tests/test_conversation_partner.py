@@ -178,6 +178,27 @@ class ConversationPartnerReplyTest(unittest.TestCase):
         self.assertIn("may now end", system_prompt)
         self.assertIn("do NOT end on a question", system_prompt)
 
+    def test_prompt_forbids_repeating_answered_questions(self):
+        provider = FakeProvider(
+            '{"reply": "Nice! What do you study?", "on_topic": true, "should_end": false}'
+        )
+        asyncio.run(
+            generate_partner_reply(
+                topic=TOPIC,
+                level_code="A1",
+                history=[
+                    ("partner", "Where are you from?"),
+                    ("user", "I'm from Indonesia."),
+                ],
+                user_message="I'm from Indonesia.",
+                completed_turns=1,
+                provider=provider,
+            )
+        )
+        system_prompt = provider.last_messages[0].content
+        self.assertIn("already answered", system_prompt)
+        self.assertIn("NEW detail", system_prompt)
+
     def test_cannot_end_too_early(self):
         # Early in the conversation, ending is not allowed even if the LLM signals
         # it, and the prompt must not contain the closing directives.
