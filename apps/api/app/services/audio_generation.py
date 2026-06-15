@@ -2007,7 +2007,7 @@ def update_production_tracker_audio(lesson: LessonAudioReference, *, status: str
     updated = False
     for row in rows:
         if (
-            row.get("level") == lesson.level_code
+            production_tracker_level_matches(row.get("level", ""), lesson)
             and row.get("unit") == lesson.unit_key
             and row.get("lesson") == lesson.lesson_key
         ):
@@ -2022,6 +2022,17 @@ def update_production_tracker_audio(lesson: LessonAudioReference, *, status: str
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(rows)
+
+
+def production_tracker_level_matches(row_level: str, lesson: LessonAudioReference) -> bool:
+    normalized_row_level = (row_level or "").strip().lower()
+    level_code = lesson.level_code.strip()
+    language = lesson.language.strip().lower()
+    expected_levels = {
+        level_code.lower(),
+        f"{language}/{level_code}".lower(),
+    }
+    return normalized_row_level in expected_levels
 
 
 def audio_object_key(

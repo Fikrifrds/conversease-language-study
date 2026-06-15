@@ -12,6 +12,7 @@ from app.services.audio_generation import (
     FALLBACK_MINIMAX_VOICES,
     TTS_PROVIDER_ELEVENLABS,
     TTS_PROVIDER_MINIMAX,
+    LessonAudioReference,
     MiniMaxAudioResult,
     assign_elevenlabs_dialogue_voices,
     assign_dialogue_voices,
@@ -23,6 +24,7 @@ from app.services.audio_generation import (
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
     synthesize_dialogue_minimax_tts,
+    update_production_tracker_audio,
 )
 
 
@@ -314,6 +316,36 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertGreater(first_peak, 25000)
         self.assertGreater(second_peak, 25000)
         self.assertLess(abs(first_peak - second_peak), 4)
+
+    def test_production_tracker_audio_update_matches_language_prefixed_level(self):
+        with tempfile.TemporaryDirectory() as directory:
+            tracker_path = Path(directory) / "production_tracker.csv"
+            tracker_path.write_text(
+                "level,unit,lesson,lesson_md,listening_script,audio_generated,phrases,grammar,"
+                "pronunciation,response_prompts,conversation_coach,quiz,reading,writing,review_status,publish_status\n"
+                "arabic/A1,unit-01-fusha-foundations,lesson-02-name-and-origin,done,done,not_generated,"
+                "done,done,done,done,done,done,done,done,,\n",
+                encoding="utf-8",
+            )
+            lesson = LessonAudioReference(
+                language="arabic",
+                level_code="A1",
+                unit_key="unit-01-fusha-foundations",
+                lesson_key="lesson-02-name-and-origin",
+                lesson_slug="arabic-name-and-origin",
+                title="Name and Origin",
+                lesson_dir=Path(directory),
+                listening_script_path=Path(directory) / "listening_script.md",
+                audio_manifest_path=Path(directory) / "audio_manifest.yaml",
+            )
+
+            with patch("app.services.audio_generation.production_tracker_path", return_value=tracker_path):
+                update_production_tracker_audio(lesson, status="done")
+
+            self.assertIn(
+                "arabic/A1,unit-01-fusha-foundations,lesson-02-name-and-origin,done,done,done",
+                tracker_path.read_text(encoding="utf-8"),
+            )
 
 
 class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
