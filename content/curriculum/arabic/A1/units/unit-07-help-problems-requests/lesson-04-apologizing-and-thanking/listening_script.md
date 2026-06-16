@@ -1,11 +1,11 @@
 # Listening Script
 
 **Ahmad:** عذرًا، لا أفهم.
-**Maryam:** لا مشكلة. أشرح مرة أخرى.
+**Maryam:** لا بأس، أشرح مرة أخرى.
 **Ahmad:** شكرًا.
 **Maryam:** على الرحب والسعة.
 **Ahmad:** آسف على السؤال.
-**Maryam:** لا مشكلة.
+**Maryam:** لا بأس.
 
 ## Audio Direction
 

@@ -1,12 +1,12 @@
 # Listening Script
 
-**Muallim:** مرحبًا. ما اسمك؟
-**Ahmad:** مرحبًا. اسمي أحمد.
+**Muallim:** مرحبًا، ما اسمك؟
+**Ahmad:** مرحبًا، اسمي أحمد.
 **Muallim:** من أين أنت؟
 **Ahmad:** أنا من إندونيسيا.
 **Muallim:** اقرأ الجملة.
 **Ahmad:** عفوا، لا أفهم. أعد من فضلك.
-**Muallim:** أحسنت.
+**Muallim:** حسنًا، أعدها.
 
 ## Audio Direction
 
