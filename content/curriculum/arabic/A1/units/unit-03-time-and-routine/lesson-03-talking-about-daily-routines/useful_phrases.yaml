@@ -1,0 +1,16 @@
+phrases:
+- phrase: ماذا تفعل صباحًا؟
+  meaning_id: Apa yang kamu lakukan pagi hari?
+  usage_note: Ask about a morning routine.
+- phrase: أقرأ
+  meaning_id: Saya membaca.
+  usage_note: Say a reading action.
+- phrase: أكتب
+  meaning_id: Saya menulis.
+  usage_note: Say a writing action.
+- phrase: أدرس العربية
+  meaning_id: Saya belajar bahasa Arab.
+  usage_note: Say what you study.
+- phrase: ثم أعمل
+  meaning_id: Lalu saya bekerja.
+  usage_note: Connect the next action.

@@ -1,0 +1,16 @@
+phrases:
+- phrase: أين الفصل؟
+  meaning_id: Di mana kelas?
+  usage_note: Ask where the classroom is.
+- phrase: كيف أذهب إلى الفصل؟
+  meaning_id: Bagaimana saya pergi ke kelas?
+  usage_note: Ask for directions.
+- phrase: اذهب يمينًا
+  meaning_id: Pergi ke kanan.
+  usage_note: Follow direction.
+- phrase: هو بجانب المكتبة
+  meaning_id: Itu di samping perpustakaan.
+  usage_note: Describe location.
+- phrase: واضح
+  meaning_id: Jelas
+  usage_note: Confirm understanding.

@@ -1,0 +1,12 @@
+unit_key: unit-02-letters-numbers-contact
+level_code: A1
+title: Letters, Numbers & Contact
+main_conversation_outcome: Spell simple names, exchange numbers, and share basic contact details in Arabic
+  Fusha.
+status: beta
+lessons:
+- lesson-01-spelling-your-name
+- lesson-02-arabic-numbers-and-phone
+- lesson-03-sharing-email-addresses
+- lesson-04-asking-to-repeat-a-letter
+- lesson-05-contact-details-mission

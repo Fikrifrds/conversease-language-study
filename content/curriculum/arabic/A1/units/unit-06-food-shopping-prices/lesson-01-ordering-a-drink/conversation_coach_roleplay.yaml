@@ -1,0 +1,46 @@
+scenario_key: arabic_ordering_a_drink
+mode: lesson_practice_coach
+level_code: A1
+opening_line: مرحبًا.
+learner_goal: Order water or coffee using polite Fusha phrases.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مرحبًا.
+  hint: 'Jawab dengan pola: أريد ماءً'
+  sample_answer: أريد ماءً
+  focus: Order water.
+  expected_keywords:
+  - أريد
+  - ماءً
+  indonesian_explanation: Saya ingin air.
+- coach: 'استخدم: أريد قهوة'
+  hint: 'Jawab dengan pola: أريد قهوة'
+  sample_answer: أريد قهوة
+  focus: Order coffee.
+  expected_keywords:
+  - أريد
+  - قهوة
+  indonesian_explanation: Saya ingin kopi.
+- coach: 'استخدم: من فضلك'
+  hint: 'Jawab dengan pola: من فضلك'
+  sample_answer: من فضلك
+  focus: Make it polite.
+  expected_keywords:
+  - من
+  - فضلك
+  indonesian_explanation: Tolong.
+target_phrases:
+- أريد ماءً
+- أريد قهوة
+- من فضلك
+- هل عندكم شاي؟
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

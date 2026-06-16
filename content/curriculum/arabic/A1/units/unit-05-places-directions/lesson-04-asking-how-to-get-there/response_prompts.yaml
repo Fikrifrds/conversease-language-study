@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Bagaimana saya pergi ke perpustakaan?'
+  target_response: كيف أذهب إلى المكتبة؟
+  acceptable_responses:
+  - كيف أذهب إلى المكتبة؟
+- prompt: 'Say: Berjalanlah ke depan.'
+  target_response: امشِ إلى الأمام
+  acceptable_responses:
+  - امشِ إلى الأمام
+- prompt: 'Say: Lalu'
+  target_response: ثم
+  acceptable_responses:
+  - ثم

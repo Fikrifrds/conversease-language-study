@@ -1,0 +1,16 @@
+phrases:
+- phrase: أريد ماءً
+  meaning_id: Saya ingin air.
+  usage_note: Order water.
+- phrase: أريد قهوة
+  meaning_id: Saya ingin kopi.
+  usage_note: Order coffee.
+- phrase: من فضلك
+  meaning_id: Tolong.
+  usage_note: Make it polite.
+- phrase: هل عندكم شاي؟
+  meaning_id: Apakah kalian punya teh?
+  usage_note: Ask availability.
+- phrase: تفضل
+  meaning_id: Silakan.
+  usage_note: Offer something.

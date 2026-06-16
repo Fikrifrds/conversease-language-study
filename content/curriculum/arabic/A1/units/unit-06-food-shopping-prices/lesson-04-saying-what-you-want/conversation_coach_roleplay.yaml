@@ -1,0 +1,47 @@
+scenario_key: arabic_saying_what_you_want
+mode: lesson_practice_coach
+level_code: A1
+opening_line: ماذا تريد؟
+learner_goal: Say what you want, do not want, and need.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: ماذا تريد؟
+  hint: 'Jawab dengan pola: ماذا تريد؟'
+  sample_answer: ماذا تريد؟
+  focus: Ask what someone wants.
+  expected_keywords:
+  - ماذا
+  - تريد
+  indonesian_explanation: Apa yang kamu inginkan?
+- coach: 'استخدم: أريد كتابًا'
+  hint: 'Jawab dengan pola: أريد كتابًا'
+  sample_answer: أريد كتابًا
+  focus: Say a wanted item.
+  expected_keywords:
+  - أريد
+  - كتابًا
+  indonesian_explanation: Saya ingin buku.
+- coach: 'استخدم: لا أريد قهوة'
+  hint: 'Jawab dengan pola: لا أريد قهوة'
+  sample_answer: لا أريد قهوة
+  focus: Say what you do not want.
+  expected_keywords:
+  - لا
+  - أريد
+  - قهوة
+  indonesian_explanation: Saya tidak ingin kopi.
+target_phrases:
+- ماذا تريد؟
+- أريد كتابًا
+- لا أريد قهوة
+- أحتاج قلمًا
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

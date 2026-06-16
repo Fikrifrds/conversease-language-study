@@ -1,0 +1,46 @@
+scenario_key: arabic_asking_about_prices
+mode: lesson_practice_coach
+level_code: A1
+opening_line: كم السعر؟
+learner_goal: Ask a price and understand a simple answer.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كم السعر؟
+  hint: 'Jawab dengan pola: كم السعر؟'
+  sample_answer: كم السعر؟
+  focus: Ask price.
+  expected_keywords:
+  - كم
+  - السعر
+  indonesian_explanation: Berapa harganya?
+- coach: 'استخدم: السعر خمسة ريالات'
+  hint: 'Jawab dengan pola: السعر خمسة ريالات'
+  sample_answer: السعر خمسة ريالات
+  focus: Say a price.
+  expected_keywords:
+  - السعر
+  - خمسة
+  - ريالات
+  indonesian_explanation: Harganya lima riyal.
+- coach: 'استخدم: غالٍ'
+  hint: 'Jawab dengan pola: غالٍ'
+  sample_answer: غالٍ
+  focus: Describe expensive.
+  expected_keywords:
+  - غالٍ
+  indonesian_explanation: Mahal
+target_phrases:
+- كم السعر؟
+- السعر خمسة ريالات
+- غالٍ
+- رخيص
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

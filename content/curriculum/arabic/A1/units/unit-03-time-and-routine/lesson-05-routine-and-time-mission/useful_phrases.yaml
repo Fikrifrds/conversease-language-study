@@ -1,0 +1,16 @@
+phrases:
+- phrase: اليوم ...
+  meaning_id: Hari ini ...
+  usage_note: Start with the day.
+- phrase: الساعة ...
+  meaning_id: Jam ...
+  usage_note: Say a time.
+- phrase: عندي درس
+  meaning_id: Saya punya pelajaran.
+  usage_note: Mention a scheduled lesson.
+- phrase: أدرس العربية
+  meaning_id: Saya belajar bahasa Arab.
+  usage_note: Mention the activity.
+- phrase: بعد الدرس
+  meaning_id: Setelah pelajaran
+  usage_note: Continue the schedule.

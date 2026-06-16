@@ -1,0 +1,25 @@
+lesson_key: lesson-01-asking-the-time
+slug: arabic-asking-the-time
+title: Asking the Time
+status: beta
+estimated_minutes: 10
+conversation_situation: asking_the_time
+conversation_goal: Ask the time and answer with a simple hour.
+grammar_summary: Use الساعة + number for 'it is ... o'clock' and صباحًا/مساءً for morning/evening.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

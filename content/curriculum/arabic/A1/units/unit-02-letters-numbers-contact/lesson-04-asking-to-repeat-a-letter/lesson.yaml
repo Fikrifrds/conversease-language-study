@@ -1,0 +1,25 @@
+lesson_key: lesson-04-asking-to-repeat-a-letter
+slug: arabic-asking-to-repeat-a-letter
+title: Asking to Repeat a Letter
+status: beta
+estimated_minutes: 10
+conversation_situation: asking_to_repeat_a_letter
+conversation_goal: Ask someone to repeat a letter slowly and confirm what you heard.
+grammar_summary: Use لم أسمع + object and هل قلت ...؟ to confirm a heard word or letter.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

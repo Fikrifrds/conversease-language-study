@@ -1,0 +1,45 @@
+scenario_key: arabic_asking_where_a_place_is
+mode: lesson_practice_coach
+level_code: A1
+opening_line: أين المكتبة؟
+learner_goal: Ask where a place is and understand here/there.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أين المكتبة؟
+  hint: 'Jawab dengan pola: أين المكتبة؟'
+  sample_answer: أين المكتبة؟
+  focus: Ask location.
+  expected_keywords:
+  - أين
+  - المكتبة
+  indonesian_explanation: Di mana perpustakaan?
+- coach: 'استخدم: المكتبة هنا'
+  hint: 'Jawab dengan pola: المكتبة هنا'
+  sample_answer: المكتبة هنا
+  focus: Answer here.
+  expected_keywords:
+  - المكتبة
+  - هنا
+  indonesian_explanation: Perpustakaan di sini.
+- coach: 'استخدم: هناك'
+  hint: 'Jawab dengan pola: هناك'
+  sample_answer: هناك
+  focus: Point to another place.
+  expected_keywords:
+  - هناك
+  indonesian_explanation: Di sana
+target_phrases:
+- أين المكتبة؟
+- المكتبة هنا
+- هناك
+- قريبة
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

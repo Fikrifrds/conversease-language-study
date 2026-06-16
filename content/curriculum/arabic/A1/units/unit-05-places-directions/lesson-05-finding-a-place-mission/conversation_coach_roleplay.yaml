@@ -1,0 +1,47 @@
+scenario_key: arabic_finding_a_place_mission
+mode: lesson_practice_coach
+level_code: A1
+opening_line: أين تريد أن تذهب؟
+learner_goal: Combine place questions and simple directions in one conversation.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أين تريد أن تذهب؟
+  hint: 'Jawab dengan pola: أين الفصل؟'
+  sample_answer: أين الفصل؟
+  focus: Ask where the classroom is.
+  expected_keywords:
+  - أين
+  - الفصل
+  indonesian_explanation: Di mana kelas?
+- coach: 'استخدم: كيف أذهب إلى الفصل؟'
+  hint: 'Jawab dengan pola: كيف أذهب إلى الفصل؟'
+  sample_answer: كيف أذهب إلى الفصل؟
+  focus: Ask for directions.
+  expected_keywords:
+  - كيف
+  - أذهب
+  - إلى
+  indonesian_explanation: Bagaimana saya pergi ke kelas?
+- coach: 'استخدم: اذهب يمينًا'
+  hint: 'Jawab dengan pola: اذهب يمينًا'
+  sample_answer: اذهب يمينًا
+  focus: Follow direction.
+  expected_keywords:
+  - اذهب
+  - يمينًا
+  indonesian_explanation: Pergi ke kanan.
+target_phrases:
+- أين الفصل؟
+- كيف أذهب إلى الفصل؟
+- اذهب يمينًا
+- هو بجانب المكتبة
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

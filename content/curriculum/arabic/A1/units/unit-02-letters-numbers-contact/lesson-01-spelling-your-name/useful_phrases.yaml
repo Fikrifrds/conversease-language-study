@@ -1,0 +1,13 @@
+phrases:
+- phrase: كيف تكتب اسمك؟
+  meaning_id: Bagaimana kamu menulis namamu?
+  usage_note: Ask someone to spell or write a name.
+- phrase: أكتب اسمي ...
+  meaning_id: Saya menulis nama saya ...
+  usage_note: Say how you write your name.
+- phrase: هذا حرف ...
+  meaning_id: Ini huruf ...
+  usage_note: Identify one Arabic letter.
+- phrase: هل هذا صحيح؟
+  meaning_id: Apakah ini benar?
+  usage_note: Check spelling politely.

@@ -1,0 +1,25 @@
+lesson_key: lesson-05-help-and-problem-mission
+slug: arabic-help-and-problem-mission
+title: Help and Problem Mission
+status: beta
+estimated_minutes: 10
+conversation_situation: help_and_problem_mission
+conversation_goal: Combine not understanding, asking for help, and thanking in one conversation.
+grammar_summary: Combine لا أفهم, هل تساعدني, من فضلك, and شكرًا.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

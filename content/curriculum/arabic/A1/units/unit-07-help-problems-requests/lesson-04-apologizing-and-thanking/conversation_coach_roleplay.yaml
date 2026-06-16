@@ -1,0 +1,43 @@
+scenario_key: arabic_apologizing_and_thanking
+mode: lesson_practice_coach
+level_code: A1
+opening_line: عذرًا، لا أفهم.
+learner_goal: Apologize, thank someone, and respond politely.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: عذرًا، لا أفهم.
+  hint: 'Jawab dengan pola: آسف'
+  sample_answer: آسف
+  focus: Male speaker apology.
+  expected_keywords:
+  - آسف
+  indonesian_explanation: Maaf.
+- coach: 'استخدم: آسفة'
+  hint: 'Jawab dengan pola: آسفة'
+  sample_answer: آسفة
+  focus: Female speaker apology.
+  expected_keywords:
+  - آسفة
+  indonesian_explanation: Maaf.
+- coach: 'استخدم: عذرًا'
+  hint: 'Jawab dengan pola: عذرًا'
+  sample_answer: عذرًا
+  focus: General apology or excuse.
+  expected_keywords:
+  - عذرًا
+  indonesian_explanation: Permisi/maaf.
+target_phrases:
+- آسف
+- آسفة
+- عذرًا
+- لا مشكلة
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

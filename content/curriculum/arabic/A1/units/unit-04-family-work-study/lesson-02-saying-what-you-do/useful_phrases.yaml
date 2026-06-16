@@ -1,0 +1,16 @@
+phrases:
+- phrase: ماذا تعمل؟
+  meaning_id: Apa pekerjaanmu?
+  usage_note: Ask about work.
+- phrase: أنا طالب
+  meaning_id: Saya pelajar.
+  usage_note: Say student identity.
+- phrase: أنا معلم
+  meaning_id: Saya guru.
+  usage_note: Say teacher identity.
+- phrase: أعمل في مكتب
+  meaning_id: Saya bekerja di kantor.
+  usage_note: Say work place.
+- phrase: أدرس في مدرسة
+  meaning_id: Saya belajar di sekolah.
+  usage_note: Say study place.

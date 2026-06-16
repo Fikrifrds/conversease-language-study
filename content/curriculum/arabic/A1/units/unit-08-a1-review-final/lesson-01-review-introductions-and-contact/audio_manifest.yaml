@@ -1,0 +1,6 @@
+lesson_key: lesson-01-review-introductions-and-contact
+status: not_generated
+provider: elevenlabs
+model: eleven_multilingual_v2
+default_voice_id: multi_speaker
+assets: []

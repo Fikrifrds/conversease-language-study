@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Apa yang kamu inginkan?"?
+  options:
+  - ماذا تريد؟
+  - أريد كتابًا
+  - لا أريد قهوة
+  correct_answer: ماذا تريد؟
+- key: phrase_2
+  prompt: Which phrase means "Saya ingin buku."?
+  options:
+  - أريد كتابًا
+  - ماذا تريد؟
+  - لا أريد قهوة
+  correct_answer: أريد كتابًا

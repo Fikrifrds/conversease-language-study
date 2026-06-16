@@ -1,0 +1,25 @@
+lesson_key: lesson-03-talking-about-daily-routines
+slug: arabic-talking-about-daily-routines
+title: Talking About Daily Routines
+status: beta
+estimated_minutes: 10
+conversation_situation: talking_about_daily_routines
+conversation_goal: Say a few simple daily actions in order.
+grammar_summary: Use present verbs like أقرأ, أكتب, أدرس, and ثم to connect actions.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

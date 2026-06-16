@@ -9,6 +9,9 @@ from unittest.mock import patch
 from app.data.curriculum import curriculum_root
 from app.services.audio_generation import (
     CURATED_MINIMAX_VOICE_IDS,
+    ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES,
+    ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES,
+    ELEVENLABS_ARABIC_VOICE_METADATA,
     ENGLISH_CURATED_MINIMAX_VOICE_IDS,
     FALLBACK_MINIMAX_VOICES,
     TTS_PROVIDER_ELEVENLABS,
@@ -205,8 +208,8 @@ class AudioGenerationTest(unittest.TestCase):
             language="arabic",
         )
 
-        self.assertEqual(voices["Khalid"], "rPNcQ53R703tTmtue1AT")
-        self.assertEqual(voices["Noura"], "4wf10lgibMnboGJGCLrP")
+        self.assertEqual(voices["Khalid"], "t9akNmCDhz230CEXOYmn")
+        self.assertEqual(voices["Noura"], "kdUY91gH5xyDHapxlthT")
 
     def test_elevenlabs_arabic_teacher_and_student_do_not_share_voice(self):
         turns = [
@@ -216,12 +219,12 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_elevenlabs_dialogue_voices(
             turns,
-            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
             language="arabic",
         )
 
-        self.assertEqual(voices["Muallim"], "OFHP1Qg30FPoNfkUFFlA")
-        self.assertEqual(voices["Ahmad"], "rPNcQ53R703tTmtue1AT")
+        self.assertEqual(voices["Muallim"], "3nav5pHC1EYvWOd5LmnA")
+        self.assertEqual(voices["Ahmad"], "RjFuvnufLX42TYe37ekK")
         self.assertNotEqual(voices["Muallim"], voices["Ahmad"])
 
     def test_elevenlabs_arabic_persona_collision_uses_another_male_voice(self):
@@ -232,20 +235,12 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_elevenlabs_dialogue_voices(
             turns,
-            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
             language="arabic",
         )
 
         self.assertNotEqual(voices["Muallim"], voices["Ustadh"])
-        self.assertIn(
-            voices["Ustadh"],
-            {
-                "OFHP1Qg30FPoNfkUFFlA",
-                "yXEnnEln9armDCyhkXcA",
-                "rPNcQ53R703tTmtue1AT",
-                "zthCTrnZpSGUnbO0tTzN",
-            },
-        )
+        self.assertIn(voices["Ustadh"], ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES)
 
     def test_elevenlabs_arabic_unknown_speakers_keep_gendered_voice_pool(self):
         turns = [
@@ -255,27 +250,34 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_elevenlabs_dialogue_voices(
             turns,
-            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
             language="arabic",
         )
 
-        self.assertIn(
-            voices["Female"],
-            {
-                "gMB389pj77Qe5nErWNjd",
-                "4wf10lgibMnboGJGCLrP",
-                "B5xxC4eQoOFJnY4R5XkI",
-            },
+        self.assertIn(voices["Female"], ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES)
+        self.assertIn(voices["Male"], ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES)
+
+    def test_elevenlabs_arabic_uses_only_curated_gendered_voices(self):
+        turns = [
+            _turn("Muallim", "مرحبا."),
+            _turn("Ahmad", "أهلا."),
+            _turn("Fatimah", "أنا جاهزة."),
+            _turn("Noura", "وأنا أيضا."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="legacy-non-curated-voice",
+            language="arabic",
         )
-        self.assertIn(
-            voices["Male"],
-            {
-                "OFHP1Qg30FPoNfkUFFlA",
-                "yXEnnEln9armDCyhkXcA",
-                "rPNcQ53R703tTmtue1AT",
-                "zthCTrnZpSGUnbO0tTzN",
-            },
-        )
+
+        self.assertEqual(len(set(voices.values())), len(voices))
+        for speaker in ("Muallim", "Ahmad"):
+            self.assertIn(voices[speaker], ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES)
+            self.assertEqual(ELEVENLABS_ARABIC_VOICE_METADATA[voices[speaker]]["gender"], "male")
+        for speaker in ("Fatimah", "Noura"):
+            self.assertIn(voices[speaker], ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES)
+            self.assertEqual(ELEVENLABS_ARABIC_VOICE_METADATA[voices[speaker]]["gender"], "female")
 
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
@@ -478,13 +480,13 @@ class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
             result = await synthesize_dialogue_elevenlabs_tts(
                 turns=turns,
                 model="eleven_multilingual_v2",
-                fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+                fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
                 speed=0.9,
                 language="arabic",
             )
 
         self.assertEqual(sent_texts, ["السلام عليكم.", "اسمي أحمد."])
-        self.assertEqual(sent_voice_ids, ["OFHP1Qg30FPoNfkUFFlA", "rPNcQ53R703tTmtue1AT"])
+        self.assertEqual(sent_voice_ids, ["3nav5pHC1EYvWOd5LmnA", "RjFuvnufLX42TYe37ekK"])
         self.assertNotEqual(result.speaker_voices["Muallim"], result.speaker_voices["Ahmad"])
         self.assertEqual(result.audio_format, "wav")
         with wave.open(io.BytesIO(result.audio_bytes), "rb") as reader:

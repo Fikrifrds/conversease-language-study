@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Buka bukunya.'
+  target_response: افتح الكتاب
+  acceptable_responses:
+  - افتح الكتاب
+- prompt: 'Say: Tulis kalimatnya.'
+  target_response: اكتب الجملة
+  acceptable_responses:
+  - اكتب الجملة
+- prompt: 'Say: Dengarkan.'
+  target_response: استمع
+  acceptable_responses:
+  - استمع

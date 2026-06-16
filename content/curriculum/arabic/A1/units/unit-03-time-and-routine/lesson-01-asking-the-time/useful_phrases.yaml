@@ -1,0 +1,16 @@
+phrases:
+- phrase: كم الساعة؟
+  meaning_id: Jam berapa?
+  usage_note: Ask the time.
+- phrase: الساعة الثامنة
+  meaning_id: Jam delapan.
+  usage_note: Answer with an hour.
+- phrase: الآن
+  meaning_id: Sekarang
+  usage_note: Refer to the current time.
+- phrase: صباحًا
+  meaning_id: Pagi
+  usage_note: Clarify morning time.
+- phrase: مساءً
+  meaning_id: Sore/malam
+  usage_note: Clarify evening time.

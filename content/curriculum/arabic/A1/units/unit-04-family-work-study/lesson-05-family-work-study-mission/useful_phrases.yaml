@@ -1,0 +1,16 @@
+phrases:
+- phrase: هذه عائلتي
+  meaning_id: Ini keluarga saya.
+  usage_note: Introduce family.
+- phrase: أنا طالب
+  meaning_id: Saya pelajar.
+  usage_note: Say study identity.
+- phrase: أدرس العربية
+  meaning_id: Saya belajar bahasa Arab.
+  usage_note: Say study topic.
+- phrase: أعمل في مكتب
+  meaning_id: Saya bekerja di kantor.
+  usage_note: Say work place.
+- phrase: أحب القراءة
+  meaning_id: Saya suka membaca.
+  usage_note: Say a preference.

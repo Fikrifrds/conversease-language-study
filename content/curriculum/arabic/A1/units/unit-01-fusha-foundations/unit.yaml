@@ -1,11 +1,12 @@
 unit_key: unit-01-fusha-foundations
+level_code: A1
 title: Fusha Foundations
-main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.
+main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions,
+  and ask for repetition when you do not understand.
 status: beta
 lessons:
-  - lesson-01-greetings-and-salam
-  - lesson-02-name-and-origin
-  - lesson-03-class-and-study-instructions
-  - lesson-04-asking-when-you-do-not-understand
-  - lesson-05-fusha-introduction-mission
-
+- lesson-01-greetings-and-salam
+- lesson-02-name-and-origin
+- lesson-03-class-and-study-instructions
+- lesson-04-asking-when-you-do-not-understand
+- lesson-05-fusha-introduction-mission

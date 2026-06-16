@@ -1,0 +1,25 @@
+lesson_key: lesson-05-family-work-study-mission
+slug: arabic-family-work-study-mission
+title: Family, Work, and Study Mission
+status: beta
+estimated_minutes: 10
+conversation_situation: family_work_study_mission
+conversation_goal: Combine family, work/study, and likes in one short formal conversation.
+grammar_summary: Combine هذا/هذه, أنا, أدرس, أعمل, and أحب.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

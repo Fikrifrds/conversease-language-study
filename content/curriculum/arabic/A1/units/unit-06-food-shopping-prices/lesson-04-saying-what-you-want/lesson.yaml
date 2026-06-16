@@ -1,0 +1,25 @@
+lesson_key: lesson-04-saying-what-you-want
+slug: arabic-saying-what-you-want
+title: Saying What You Want
+status: beta
+estimated_minutes: 10
+conversation_situation: saying_what_you_want
+conversation_goal: Say what you want, do not want, and need.
+grammar_summary: Use أريد, لا أريد, and أحتاج with a simple noun.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

@@ -2,21 +2,31 @@
 
 import { useEffect, useState } from "react";
 import { AlertCircle, Headphones, RefreshCcw } from "lucide-react";
-import { getLessonAudio, type LearningLessonAudioAsset } from "@/lib/learning-api";
+import { ApiRequestError, getLessonAudio, type LearningLessonAudioAsset } from "@/lib/learning-api";
 
 export function LessonAudioPlayer({ lessonSlug }: { lessonSlug: string }) {
   const [audio, setAudio] = useState<LearningLessonAudioAsset | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
+  const [canRetry, setCanRetry] = useState(true);
 
   async function loadAudio() {
     setIsLoading(true);
     setError("");
+    setCanRetry(true);
 
     try {
       setAudio(await getLessonAudio(lessonSlug));
-    } catch {
-      setError("Audio belum bisa dimuat.");
+    } catch (err) {
+      if (err instanceof ApiRequestError && err.status === 403) {
+        setError("Audio tersedia untuk Pro");
+        setCanRetry(false);
+      } else if (err instanceof ApiRequestError && err.status === 401) {
+        setError("Login untuk memutar audio");
+        setCanRetry(false);
+      } else {
+        setError("Audio belum bisa dimuat.");
+      }
     } finally {
       setIsLoading(false);
     }
@@ -38,6 +48,15 @@ export function LessonAudioPlayer({ lessonSlug }: { lessonSlug: string }) {
   }
 
   if (error) {
+    if (!canRetry) {
+      return (
+        <div className="inline-flex min-h-10 items-center gap-2 rounded-lg bg-paper px-3 text-sm font-semibold text-ink/55">
+          <AlertCircle className="h-4 w-4 text-coral" aria-hidden="true" />
+          {error}
+        </div>
+      );
+    }
+
     return (
       <button
         type="button"

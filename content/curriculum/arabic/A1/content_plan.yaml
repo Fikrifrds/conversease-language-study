@@ -4,30 +4,208 @@ level_code: A1
 course_slug: arabic-a1-fusha-foundations
 course_title: Fusha Foundations
 access_tier: pro_beta
-target_lesson_count: 5
+target_lesson_count: 40
 units:
-  - unit_key: unit-01-fusha-foundations
-    title: Fusha Foundations
+- unit_key: unit-01-fusha-foundations
+  title: Fusha Foundations
+  status: beta
+  main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions,
+    and ask for repetition when you do not understand.
+  lessons:
+  - lesson_key: lesson-01-greetings-and-salam
+    slug: arabic-formal-greetings
+    title: Formal Greetings
     status: beta
-    main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.
-    lessons:
-      - lesson_key: lesson-01-greetings-and-salam
-        slug: arabic-formal-greetings
-        title: Formal Greetings
-        status: beta
-      - lesson_key: lesson-02-name-and-origin
-        slug: arabic-name-and-origin
-        title: Name and Origin
-        status: beta
-      - lesson_key: lesson-03-class-and-study-instructions
-        slug: arabic-class-and-study-instructions
-        title: Class and Study Instructions
-        status: beta
-      - lesson_key: lesson-04-asking-when-you-do-not-understand
-        slug: arabic-asking-when-you-do-not-understand
-        title: Asking When You Do Not Understand
-        status: beta
-      - lesson_key: lesson-05-fusha-introduction-mission
-        slug: arabic-fusha-introduction-mission
-        title: Fusha Introduction Mission
-        status: beta
+  - lesson_key: lesson-02-name-and-origin
+    slug: arabic-name-and-origin
+    title: Name and Origin
+    status: beta
+  - lesson_key: lesson-03-class-and-study-instructions
+    slug: arabic-class-and-study-instructions
+    title: Class and Study Instructions
+    status: beta
+  - lesson_key: lesson-04-asking-when-you-do-not-understand
+    slug: arabic-asking-when-you-do-not-understand
+    title: Asking When You Do Not Understand
+    status: beta
+  - lesson_key: lesson-05-fusha-introduction-mission
+    slug: arabic-fusha-introduction-mission
+    title: Fusha Introduction Mission
+    status: beta
+- unit_key: unit-02-letters-numbers-contact
+  title: Letters, Numbers & Contact
+  status: beta
+  main_conversation_outcome: Spell simple names, exchange numbers, and share basic contact details in
+    Arabic Fusha.
+  lessons:
+  - lesson_key: lesson-01-spelling-your-name
+    slug: arabic-spelling-your-name
+    title: Spelling Your Name
+    status: beta
+  - lesson_key: lesson-02-arabic-numbers-and-phone
+    slug: arabic-numbers-and-phone
+    title: Arabic Numbers and Phone
+    status: beta
+  - lesson_key: lesson-03-sharing-email-addresses
+    slug: arabic-sharing-email-addresses
+    title: Sharing Email Addresses
+    status: beta
+  - lesson_key: lesson-04-asking-to-repeat-a-letter
+    slug: arabic-asking-to-repeat-a-letter
+    title: Asking to Repeat a Letter
+    status: beta
+  - lesson_key: lesson-05-contact-details-mission
+    slug: arabic-contact-details-mission
+    title: Contact Details Mission
+    status: beta
+- unit_key: unit-03-time-and-routine
+  title: Time & Daily Routine
+  status: beta
+  main_conversation_outcome: Talk about simple time, days, schedules, and daily activities in Arabic Fusha.
+  lessons:
+  - lesson_key: lesson-01-asking-the-time
+    slug: arabic-asking-the-time
+    title: Asking the Time
+    status: beta
+  - lesson_key: lesson-02-days-of-the-week
+    slug: arabic-days-of-the-week
+    title: Days of the Week
+    status: beta
+  - lesson_key: lesson-03-talking-about-daily-routines
+    slug: arabic-talking-about-daily-routines
+    title: Talking About Daily Routines
+    status: beta
+  - lesson_key: lesson-04-asking-when
+    slug: arabic-asking-when
+    title: Asking When
+    status: beta
+  - lesson_key: lesson-05-routine-and-time-mission
+    slug: arabic-routine-and-time-mission
+    title: Routine and Time Mission
+    status: beta
+- unit_key: unit-04-family-work-study
+  title: Family, Work & Study
+  status: beta
+  main_conversation_outcome: Talk simply about family, work, study, likes, and basic ability.
+  lessons:
+  - lesson_key: lesson-01-family-members
+    slug: arabic-family-members
+    title: Family Members
+    status: beta
+  - lesson_key: lesson-02-saying-what-you-do
+    slug: arabic-saying-what-you-do
+    title: Saying What You Do
+    status: beta
+  - lesson_key: lesson-03-asking-about-work-or-study
+    slug: arabic-asking-about-work-or-study
+    title: Asking About Work or Study
+    status: beta
+  - lesson_key: lesson-04-likes-and-ability
+    slug: arabic-likes-and-ability
+    title: Likes and Ability
+    status: beta
+  - lesson_key: lesson-05-family-work-study-mission
+    slug: arabic-family-work-study-mission
+    title: Family, Work, and Study Mission
+    status: beta
+- unit_key: unit-05-places-directions
+  title: Places & Directions
+  status: beta
+  main_conversation_outcome: Ask where places are and understand simple directions in Arabic Fusha.
+  lessons:
+  - lesson_key: lesson-01-asking-where-a-place-is
+    slug: arabic-asking-where-a-place-is
+    title: Asking Where a Place Is
+    status: beta
+  - lesson_key: lesson-02-simple-place-words
+    slug: arabic-simple-place-words
+    title: Simple Place Words
+    status: beta
+  - lesson_key: lesson-03-understanding-simple-directions
+    slug: arabic-understanding-simple-directions
+    title: Understanding Simple Directions
+    status: beta
+  - lesson_key: lesson-04-asking-how-to-get-there
+    slug: arabic-asking-how-to-get-there
+    title: Asking How to Get There
+    status: beta
+  - lesson_key: lesson-05-finding-a-place-mission
+    slug: arabic-finding-a-place-mission
+    title: Finding a Place Mission
+    status: beta
+- unit_key: unit-06-food-shopping-prices
+  title: Food, Shopping & Prices
+  status: beta
+  main_conversation_outcome: Order simple items, ask prices, and say what you want in Arabic Fusha.
+  lessons:
+  - lesson_key: lesson-01-ordering-a-drink
+    slug: arabic-ordering-a-drink
+    title: Ordering a Drink
+    status: beta
+  - lesson_key: lesson-02-asking-about-prices
+    slug: arabic-asking-about-prices
+    title: Asking About Prices
+    status: beta
+  - lesson_key: lesson-03-buying-a-simple-item
+    slug: arabic-buying-a-simple-item
+    title: Buying a Simple Item
+    status: beta
+  - lesson_key: lesson-04-saying-what-you-want
+    slug: arabic-saying-what-you-want
+    title: Saying What You Want
+    status: beta
+  - lesson_key: lesson-05-cafe-and-shop-mission
+    slug: arabic-cafe-and-shop-mission
+    title: Cafe and Shop Mission
+    status: beta
+- unit_key: unit-07-help-problems-requests
+  title: Help, Problems & Requests
+  status: beta
+  main_conversation_outcome: Ask for help, explain simple problems, and make polite requests in Arabic
+    Fusha.
+  lessons:
+  - lesson_key: lesson-01-saying-you-do-not-understand
+    slug: arabic-saying-you-do-not-understand
+    title: Saying You Do Not Understand
+    status: beta
+  - lesson_key: lesson-02-asking-for-help
+    slug: arabic-asking-for-help
+    title: Asking for Help
+    status: beta
+  - lesson_key: lesson-03-making-simple-requests
+    slug: arabic-making-simple-requests
+    title: Making Simple Requests
+    status: beta
+  - lesson_key: lesson-04-apologizing-and-thanking
+    slug: arabic-apologizing-and-thanking
+    title: Apologizing and Thanking
+    status: beta
+  - lesson_key: lesson-05-help-and-problem-mission
+    slug: arabic-help-and-problem-mission
+    title: Help and Problem Mission
+    status: beta
+- unit_key: unit-08-a1-review-final
+  title: A1 Review & Final Conversation
+  status: beta
+  main_conversation_outcome: Combine Arabic A1 skills in longer but still simple formal conversations.
+  lessons:
+  - lesson_key: lesson-01-review-introductions-and-contact
+    slug: arabic-review-introductions-and-contact
+    title: Review Introductions and Contact
+    status: beta
+  - lesson_key: lesson-02-review-routine-and-study
+    slug: arabic-review-routine-and-study
+    title: Review Routine and Study
+    status: beta
+  - lesson_key: lesson-03-review-places-and-shopping
+    slug: arabic-review-places-and-shopping
+    title: Review Places and Shopping
+    status: beta
+  - lesson_key: lesson-04-a1-final-test-practice
+    slug: arabic-a1-final-test-practice
+    title: A1 Final Test Practice
+    status: beta
+  - lesson_key: lesson-05-a1-final-conversation
+    slug: arabic-a1-final-conversation
+    title: A1 Final Conversation
+    status: beta

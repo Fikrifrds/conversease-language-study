@@ -1,0 +1,25 @@
+lesson_key: lesson-02-saying-what-you-do
+slug: arabic-saying-what-you-do
+title: Saying What You Do
+status: beta
+estimated_minutes: 10
+conversation_situation: saying_what_you_do
+conversation_goal: Say whether you are a student, teacher, or worker.
+grammar_summary: Use أنا + noun for identity and أعمل في + place for work.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

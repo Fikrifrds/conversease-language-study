@@ -1,0 +1,49 @@
+scenario_key: arabic_asking_to_repeat_a_letter
+mode: lesson_practice_coach
+level_code: A1
+opening_line: لم أسمع الحرف.
+learner_goal: Ask someone to repeat a letter slowly and confirm what you heard.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: لم أسمع الحرف.
+  hint: 'Jawab dengan pola: لم أسمع الحرف'
+  sample_answer: لم أسمع الحرف
+  focus: Explain what you missed.
+  expected_keywords:
+  - لم
+  - أسمع
+  - الحرف
+  indonesian_explanation: Saya tidak mendengar hurufnya.
+- coach: 'استخدم: ببطء من فضلك'
+  hint: 'Jawab dengan pola: ببطء من فضلك'
+  sample_answer: ببطء من فضلك
+  focus: Ask for slower speech.
+  expected_keywords:
+  - ببطء
+  - من
+  - فضلك
+  indonesian_explanation: Pelan-pelan, tolong.
+- coach: 'استخدم: هل قلت باء؟'
+  hint: 'Jawab dengan pola: هل قلت باء؟'
+  sample_answer: هل قلت باء؟
+  focus: Confirm one letter.
+  expected_keywords:
+  - هل
+  - قلت
+  - باء
+  indonesian_explanation: Apakah Anda mengatakan ba?
+target_phrases:
+- لم أسمع الحرف
+- ببطء من فضلك
+- هل قلت باء؟
+- نعم، قلت باء
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

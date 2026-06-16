@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Hari ini Senin."?
+  options:
+  - اليوم الإثنين
+  - الساعة الثامنة
+  - أدرس العربية
+  correct_answer: اليوم الإثنين
+- key: phrase_2
+  prompt: Which phrase means "Jam delapan."?
+  options:
+  - الساعة الثامنة
+  - اليوم الإثنين
+  - أدرس العربية
+  correct_answer: الساعة الثامنة

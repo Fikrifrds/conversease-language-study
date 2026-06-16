@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Di mana kafe?'
+  target_response: أين المقهى؟
+  acceptable_responses:
+  - أين المقهى؟
+- prompt: 'Say: Bagaimana saya pergi ke kafe?'
+  target_response: كيف أذهب إلى المقهى؟
+  acceptable_responses:
+  - كيف أذهب إلى المقهى؟
+- prompt: 'Say: Saya ingin air.'
+  target_response: أريد ماءً
+  acceptable_responses:
+  - أريد ماءً

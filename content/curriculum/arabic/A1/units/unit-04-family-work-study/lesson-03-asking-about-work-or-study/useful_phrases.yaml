@@ -1,0 +1,16 @@
+phrases:
+- phrase: أين تدرس؟
+  meaning_id: Di mana kamu belajar?
+  usage_note: Ask study place.
+- phrase: ماذا تدرس؟
+  meaning_id: Apa yang kamu pelajari?
+  usage_note: Ask study topic.
+- phrase: أدرس اللغة العربية
+  meaning_id: Saya belajar bahasa Arab.
+  usage_note: Answer study topic.
+- phrase: هل تعمل؟
+  meaning_id: Apakah kamu bekerja?
+  usage_note: Ask about work.
+- phrase: نعم، أعمل
+  meaning_id: Ya, saya bekerja.
+  usage_note: Answer yes to work.

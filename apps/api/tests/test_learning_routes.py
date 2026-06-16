@@ -117,10 +117,33 @@ class LearningRoutesTest(unittest.TestCase):
             response = client.get("/api/courses", headers=headers)
             self.assertEqual(response.status_code, 200)
             courses = response.json()["data"]
-            self.assertEqual([c["level_code"] for c in courses], ["A1", "A2", "B1", "B2", "C1"])
+            self.assertEqual(
+                [c["course_slug"] for c in courses],
+                [
+                    "english-a1-start-simple-conversations",
+                    "english-a2-everyday-conversations",
+                    "english-b1-confident-everyday-speaking",
+                    "english-b2-professional-discussions",
+                    "english-c1-advanced-fluency",
+                    "arabic-a1-fusha-foundations",
+                ],
+            )
             # Fresh user: A1 unlocked, higher levels locked.
             self.assertTrue(courses[0]["unlocked"])
             self.assertFalse(courses[1]["unlocked"])
+            arabic = courses[-1]
+            self.assertEqual(arabic["language"], "arabic")
+            self.assertTrue(arabic["unlocked"])
+            self.assertTrue(arabic["requires_pro"])
+            self.assertFalse(arabic["accessible"])
+
+            arabic_progress = client.get(
+                "/api/courses/arabic-a1-fusha-foundations/progress",
+                headers=headers,
+            )
+            self.assertEqual(arabic_progress.status_code, 200)
+            self.assertEqual(arabic_progress.json()["data"]["course"]["language"], "arabic")
+            self.assertEqual(arabic_progress.json()["data"]["course"]["total_lessons"], 40)
 
             # A non-A1 lesson resolves through the generalized lookup.
             b2 = client.get("/api/lessons/clear-argument-mission")
@@ -245,6 +268,12 @@ class LearningRoutesTest(unittest.TestCase):
             self.assertEqual(a1.status_code, 200)
             blocked = client.post(f"/api/lessons/{a2_slug}/progress/start", headers=headers, json={})
             self.assertEqual(blocked.status_code, 403)
+            blocked_arabic = client.post(
+                "/api/lessons/arabic-formal-greetings/progress/start",
+                headers=headers,
+                json={},
+            )
+            self.assertEqual(blocked_arabic.status_code, 403)
 
             # /courses marks A2 as requiring Pro and not accessible for a free user.
             courses = client.get("/api/courses", headers=headers).json()["data"]
@@ -270,6 +299,12 @@ class LearningRoutesTest(unittest.TestCase):
                 db.commit()
             allowed = client.post(f"/api/lessons/{a2_slug}/progress/start", headers=headers, json={})
             self.assertEqual(allowed.status_code, 200)
+            allowed_arabic = client.post(
+                "/api/lessons/arabic-formal-greetings/progress/start",
+                headers=headers,
+                json={},
+            )
+            self.assertEqual(allowed_arabic.status_code, 200)
         finally:
             app.dependency_overrides.clear()
 

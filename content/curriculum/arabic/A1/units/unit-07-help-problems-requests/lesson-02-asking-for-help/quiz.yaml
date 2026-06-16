@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Bisakah Anda membantu saya?"?
+  options:
+  - هل تساعدني؟
+  - أحتاج مساعدة
+  - أين أجد الدرس؟
+  correct_answer: هل تساعدني؟
+- key: phrase_2
+  prompt: Which phrase means "Saya butuh bantuan."?
+  options:
+  - أحتاج مساعدة
+  - هل تساعدني؟
+  - أين أجد الدرس؟
+  correct_answer: أحتاج مساعدة

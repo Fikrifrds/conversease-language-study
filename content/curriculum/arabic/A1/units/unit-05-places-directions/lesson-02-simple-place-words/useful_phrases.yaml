@@ -1,0 +1,16 @@
+phrases:
+- phrase: البيت
+  meaning_id: Rumah
+  usage_note: Name a home.
+- phrase: المدرسة
+  meaning_id: Sekolah
+  usage_note: Name a school.
+- phrase: السوق
+  meaning_id: Pasar
+  usage_note: Name a market.
+- phrase: المكتب
+  meaning_id: Kantor
+  usage_note: Name an office.
+- phrase: المقهى
+  meaning_id: Kafe
+  usage_note: Name a cafe.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Saya tidak mendengar hurufnya."?
+  options:
+  - لم أسمع الحرف
+  - ببطء من فضلك
+  - هل قلت باء؟
+  correct_answer: لم أسمع الحرف
+- key: phrase_2
+  prompt: Which phrase means "Pelan-pelan, tolong."?
+  options:
+  - ببطء من فضلك
+  - لم أسمع الحرف
+  - هل قلت باء؟
+  correct_answer: ببطء من فضلك

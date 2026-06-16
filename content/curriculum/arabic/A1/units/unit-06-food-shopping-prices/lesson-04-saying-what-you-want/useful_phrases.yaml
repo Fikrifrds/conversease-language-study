@@ -1,0 +1,16 @@
+phrases:
+- phrase: ماذا تريد؟
+  meaning_id: Apa yang kamu inginkan?
+  usage_note: Ask what someone wants.
+- phrase: أريد كتابًا
+  meaning_id: Saya ingin buku.
+  usage_note: Say a wanted item.
+- phrase: لا أريد قهوة
+  meaning_id: Saya tidak ingin kopi.
+  usage_note: Say what you do not want.
+- phrase: أحتاج قلمًا
+  meaning_id: Saya butuh pena.
+  usage_note: Say a need.
+- phrase: فقط
+  meaning_id: Saja
+  usage_note: Limit the request.

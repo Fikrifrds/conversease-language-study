@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, CircleDot } from "lucide-react";
-import { getLearningProgress, type LearningProgressSummary } from "@/lib/learning-api";
+import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
 
 type Course = (typeof courses)[number];
@@ -16,7 +16,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
 
     async function loadProgress() {
       try {
-        const nextSummary = await getLearningProgress();
+        const nextSummary = await getCourseProgress(course.slug);
 
         if (!ignore) {
           setSummary(nextSummary);
@@ -33,7 +33,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
     return () => {
       ignore = true;
     };
-  }, []);
+  }, [course.slug]);
 
   const progressBySlug = useMemo(
     () => new Map((summary?.lessons ?? []).map((lesson) => [lesson.slug, lesson])),
@@ -43,12 +43,12 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
   return (
     <div className="mt-8 space-y-4">
       {course.units.map((unit, unitIndex) => {
-        const publishedLessons = unit.lessons.filter((lesson) => lesson.status === "published");
-        const completedLessons = publishedLessons.filter(
+        const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
+        const completedLessons = activeLessons.filter(
           (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
         ).length;
-        const progressPercent = publishedLessons.length
-          ? Math.round((completedLessons / publishedLessons.length) * 100)
+        const progressPercent = activeLessons.length
+          ? Math.round((completedLessons / activeLessons.length) * 100)
           : 0;
 
         return (

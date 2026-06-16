@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Jam berapa?"?
+  options:
+  - كم الساعة؟
+  - الساعة الثامنة
+  - الآن
+  correct_answer: كم الساعة؟
+- key: phrase_2
+  prompt: Which phrase means "Jam delapan."?
+  options:
+  - الساعة الثامنة
+  - كم الساعة؟
+  - الآن
+  correct_answer: الساعة الثامنة

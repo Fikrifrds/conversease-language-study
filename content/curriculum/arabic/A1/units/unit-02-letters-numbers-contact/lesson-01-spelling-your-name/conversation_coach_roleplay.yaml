@@ -1,0 +1,47 @@
+scenario_key: arabic_spelling_your_name
+mode: lesson_practice_coach
+level_code: A1
+opening_line: كيف تكتب اسمك؟
+learner_goal: Spell a short name in Arabic Fusha and ask whether the spelling is correct.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كيف تكتب اسمك؟
+  hint: 'Jawab dengan pola: كيف تكتب اسمك؟'
+  sample_answer: كيف تكتب اسمك؟
+  focus: Ask someone to spell or write a name.
+  expected_keywords:
+  - كيف
+  - تكتب
+  - اسمك
+  indonesian_explanation: Bagaimana kamu menulis namamu?
+- coach: 'استخدم: أكتب اسمي ...'
+  hint: 'Jawab dengan pola: أكتب اسمي ...'
+  sample_answer: أكتب اسمي ...
+  focus: Say how you write your name.
+  expected_keywords:
+  - أكتب
+  - اسمي
+  indonesian_explanation: Saya menulis nama saya ...
+- coach: 'استخدم: هذا حرف ...'
+  hint: 'Jawab dengan pola: هذا حرف ...'
+  sample_answer: هذا حرف ...
+  focus: Identify one Arabic letter.
+  expected_keywords:
+  - هذا
+  - حرف
+  indonesian_explanation: Ini huruf ...
+target_phrases:
+- كيف تكتب اسمك؟
+- أكتب اسمي ...
+- هذا حرف ...
+- هل هذا صحيح؟
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

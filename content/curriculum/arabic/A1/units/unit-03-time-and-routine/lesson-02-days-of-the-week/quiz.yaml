@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Hari apa hari ini?"?
+  options:
+  - أي يوم اليوم؟
+  - اليوم الإثنين
+  - غدًا الثلاثاء
+  correct_answer: أي يوم اليوم؟
+- key: phrase_2
+  prompt: Which phrase means "Hari ini Senin."?
+  options:
+  - اليوم الإثنين
+  - أي يوم اليوم؟
+  - غدًا الثلاثاء
+  correct_answer: اليوم الإثنين

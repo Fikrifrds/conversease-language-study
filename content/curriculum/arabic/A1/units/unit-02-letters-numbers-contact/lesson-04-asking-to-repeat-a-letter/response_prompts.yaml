@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Saya tidak mendengar hurufnya.'
+  target_response: لم أسمع الحرف
+  acceptable_responses:
+  - لم أسمع الحرف
+- prompt: 'Say: Pelan-pelan, tolong.'
+  target_response: ببطء من فضلك
+  acceptable_responses:
+  - ببطء من فضلك
+- prompt: 'Say: Apakah Anda mengatakan ba?'
+  target_response: هل قلت باء؟
+  acceptable_responses:
+  - هل قلت باء؟

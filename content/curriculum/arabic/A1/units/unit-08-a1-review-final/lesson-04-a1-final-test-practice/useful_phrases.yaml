@@ -1,0 +1,16 @@
+phrases:
+- phrase: أنا من إندونيسيا
+  meaning_id: Saya dari Indonesia.
+  usage_note: Answer origin.
+- phrase: عندي درس
+  meaning_id: Saya punya pelajaran.
+  usage_note: Answer schedule.
+- phrase: أريد كتابًا
+  meaning_id: Saya ingin buku.
+  usage_note: Answer want.
+- phrase: لا أفهم
+  meaning_id: Saya tidak paham.
+  usage_note: Ask for help.
+- phrase: أعد من فضلك
+  meaning_id: Ulangi, tolong.
+  usage_note: Request repetition.

@@ -58,6 +58,8 @@ export type LearningProgressSummary = {
     slug: string;
     title: string;
     levelCode: string;
+    language: string;
+    languageCode: string;
     completionPercent: number;
     completedLessons: number;
     totalLessons: number;
@@ -207,6 +209,18 @@ type ApiResponse<T> = {
   data: T;
 };
 
+export class ApiRequestError extends Error {
+  status: number;
+  detail: string;
+
+  constructor(status: number, detail: string) {
+    super(detail || `API request failed: ${status}`);
+    this.name = "ApiRequestError";
+    this.status = status;
+    this.detail = detail;
+  }
+}
+
 type ApiOnboarding = {
   primary_goal: string;
   confidence_level: string;
@@ -265,6 +279,8 @@ type ApiLearningProgressSummary = {
     slug: string;
     title: string;
     level_code: string;
+    language?: string;
+    language_code?: string;
     completion_percent: number;
     completed_lessons: number;
     total_lessons: number;
@@ -431,7 +447,16 @@ async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
   });
 
   if (!response.ok) {
-    throw new Error(`API request failed: ${response.status}`);
+    let detail = `API request failed: ${response.status}`;
+    try {
+      const payload = (await response.json()) as { detail?: unknown };
+      if (typeof payload.detail === "string") {
+        detail = payload.detail;
+      }
+    } catch {
+      // Keep the generic status message when the API does not return JSON.
+    }
+    throw new ApiRequestError(response.status, detail);
   }
 
   return response.json() as Promise<T>;
@@ -669,6 +694,8 @@ export async function getLearningProgress(): Promise<LearningProgressSummary> {
       slug: response.data.course.slug,
       title: response.data.course.title,
       levelCode: response.data.course.level_code,
+      language: response.data.course.language ?? "english",
+      languageCode: response.data.course.language_code ?? "en",
       completionPercent: response.data.course.completion_percent,
       completedLessons: response.data.course.completed_lessons,
       totalLessons: response.data.course.total_lessons
@@ -682,6 +709,8 @@ export async function getLearningProgress(): Promise<LearningProgressSummary> {
 
 export type CourseSummary = {
   slug: string;
+  language: string;
+  languageCode: string;
   levelCode: string;
   title: string;
   unitCount: number;
@@ -695,8 +724,11 @@ export async function listCourses(): Promise<CourseSummary[]> {
     ApiResponse<
       Array<{
         course_slug: string;
+        language?: string;
+        language_code?: string;
         level_code: string;
         course_title: string;
+        access_tier?: string;
         units: unknown[];
         unlocked: boolean;
         requires_pro: boolean;
@@ -707,6 +739,8 @@ export async function listCourses(): Promise<CourseSummary[]> {
 
   return response.data.map((course) => ({
     slug: course.course_slug,
+    language: course.language ?? "english",
+    languageCode: course.language_code ?? "en",
     levelCode: course.level_code,
     title: course.course_title,
     unitCount: course.units.length,
@@ -714,6 +748,30 @@ export async function listCourses(): Promise<CourseSummary[]> {
     requiresPro: course.requires_pro,
     accessible: course.accessible
   }));
+}
+
+export async function getCourseProgress(courseSlug: string): Promise<LearningProgressSummary> {
+  const response = await requestJson<ApiResponse<ApiLearningProgressSummary>>(
+    `/courses/${encodeURIComponent(courseSlug)}/progress`
+  );
+
+  return {
+    onboarding: response.data.onboarding ? mapOnboarding(response.data.onboarding) : null,
+    course: {
+      slug: response.data.course.slug,
+      title: response.data.course.title,
+      levelCode: response.data.course.level_code,
+      language: response.data.course.language ?? "english",
+      languageCode: response.data.course.language_code ?? "en",
+      completionPercent: response.data.course.completion_percent,
+      completedLessons: response.data.course.completed_lessons,
+      totalLessons: response.data.course.total_lessons
+    },
+    currentMission: response.data.current_mission
+      ? mapLessonSummary(response.data.current_mission)
+      : null,
+    lessons: response.data.lessons.map(mapLessonSummary)
+  };
 }
 
 export async function getLessonProgress(lessonSlug: string): Promise<LessonProgress | null> {

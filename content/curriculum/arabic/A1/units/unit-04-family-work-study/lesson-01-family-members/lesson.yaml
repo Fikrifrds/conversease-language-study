@@ -1,0 +1,25 @@
+lesson_key: lesson-01-family-members
+slug: arabic-family-members
+title: Family Members
+status: beta
+estimated_minutes: 10
+conversation_situation: family_members
+conversation_goal: Name simple family members and ask who someone is.
+grammar_summary: Use هذا for masculine nouns and هذه for feminine nouns in simple identification.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

@@ -7,6 +7,7 @@ from sqlalchemy.orm import Session
 from app.data.curriculum import (
     A1_COURSE,
     all_courses,
+    get_course_by_slug,
     get_lesson_or_none,
     published_lessons,
 )
@@ -128,20 +129,22 @@ class LearningProgressRepository:
     ) -> Optional[LessonProgressModel]:
         return self._get_lesson_progress_model(user_id=user_id, lesson_slug=lesson_slug)
 
-    def summary(self, user_id: str) -> dict:
+    def summary(self, user_id: str, *, course_slug: str = DEFAULT_COURSE_SLUG) -> dict:
+        course = get_course_by_slug(course_slug) or A1_COURSE
+        course_slug = course["course_slug"]
         onboarding = self.get_onboarding(user_id)
         progress_by_lesson = {
             progress.lesson_slug: progress
             for progress in self.db.execute(
                 select(LessonProgressModel).where(
                     LessonProgressModel.user_id == user_id,
-                    LessonProgressModel.course_slug == DEFAULT_COURSE_SLUG,
+                    LessonProgressModel.course_slug == course_slug,
                 )
             )
             .scalars()
             .all()
         }
-        lessons = published_lessons(DEFAULT_LEVEL_CODE)
+        lessons = active_course_lessons(course)
         total_lessons = len(lessons)
         completed_lessons = sum(
             1
@@ -159,9 +162,11 @@ class LearningProgressRepository:
         return {
             "onboarding": onboarding,
             "course": {
-                "slug": DEFAULT_COURSE_SLUG,
-                "title": A1_COURSE["course_title"],
-                "level_code": DEFAULT_LEVEL_CODE,
+                "slug": course_slug,
+                "title": course["course_title"],
+                "level_code": course["level_code"],
+                "language": course.get("language", "english"),
+                "language_code": course.get("language_code", ""),
                 "completion_percent": completion_percent,
                 "completed_lessons": completed_lessons,
                 "total_lessons": total_lessons,
@@ -234,6 +239,26 @@ def first_incomplete_lesson(
         if progress is None or progress.status != "completed":
             return lesson
     return None
+
+
+def active_course_lessons(course: dict) -> list[dict]:
+    lessons: list[dict] = []
+    for unit in course["units"]:
+        for lesson in unit["lessons"]:
+            if lesson.get("status") not in {"published", "beta"}:
+                continue
+            lessons.append(
+                {
+                    **lesson,
+                    "unit_slug": unit["slug"],
+                    "unit_title": unit["title"],
+                    "level_code": course["level_code"],
+                    "course_slug": course["course_slug"],
+                    "language": course.get("language", "english"),
+                    "language_code": course.get("language_code", ""),
+                }
+            )
+    return lessons
 
 
 def lesson_summary(

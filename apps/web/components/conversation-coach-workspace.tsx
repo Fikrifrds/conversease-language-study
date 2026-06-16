@@ -11,12 +11,16 @@ type Scenario = {
   slug: string;
   label: string;
   description: string;
+  language?: string;
+  languageLabel?: string;
   levelCode?: string;
   scenarioKey?: string;
   mode?: string;
 };
 
 type LessonMeta = {
+  courseKey: string;
+  languageLabel: string;
   levelCode: string;
   courseTitle: string;
   unitTitle: string;
@@ -39,6 +43,7 @@ type UnitGroup = {
 
 type LevelGroup = {
   key: string;
+  languageLabel: string;
   levelCode: string;
   courseTitle: string;
   units: UnitGroup[];
@@ -53,6 +58,8 @@ courses.forEach((course) => {
   course.units.forEach((unit, unitIndex) => {
     unit.lessons.forEach((lesson, lessonIndex) => {
       lessonMetaBySlug.set(lesson.slug, {
+        courseKey: `${course.language}-${course.level}`,
+        languageLabel: course.languageLabel,
         levelCode: course.level,
         courseTitle: course.title,
         unitTitle: unit.title,
@@ -94,8 +101,11 @@ rawScenarios.forEach((scenario) => {
   }
 
   const levelCode = scenario.levelCode ?? "A1";
+  const languageLabel = scenario.languageLabel ?? "English";
   orderedScenarios.push({
     ...scenario,
+    courseKey: `${scenario.language ?? "english"}-${levelCode}`,
+    languageLabel,
     levelCode,
     courseTitle: `${levelCode} Conversation Coach`,
     unitTitle: scenario.description || "Skenario tambahan",
@@ -111,6 +121,7 @@ const scenarios = orderedScenarios.map((scenario) => ({
   searchableText: normalize(
     [
       scenario.levelCode,
+      scenario.languageLabel,
       scenario.courseTitle,
       `unit ${scenario.unitIndex + 1}`,
       scenario.unitTitle,
@@ -144,21 +155,22 @@ function groupScenarios(items: ScenarioWithMeta[]) {
   const unitByKey = new Map<string, UnitGroup>();
 
   items.forEach((scenario) => {
-    let levelGroup = levelByKey.get(scenario.levelCode);
+    let levelGroup = levelByKey.get(scenario.courseKey);
 
     if (!levelGroup) {
       levelGroup = {
-        key: scenario.levelCode,
+        key: scenario.courseKey,
+        languageLabel: scenario.languageLabel,
         levelCode: scenario.levelCode,
         courseTitle: scenario.courseTitle,
         units: [],
         count: 0
       };
-      levelByKey.set(scenario.levelCode, levelGroup);
+      levelByKey.set(scenario.courseKey, levelGroup);
       levelGroups.push(levelGroup);
     }
 
-    const unitKey = `${scenario.levelCode}-${scenario.unitIndex}-${scenario.unitTitle}`;
+    const unitKey = `${scenario.courseKey}-${scenario.unitIndex}-${scenario.unitTitle}`;
     let unitGroup = unitByKey.get(unitKey);
 
     if (!unitGroup) {
@@ -201,10 +213,23 @@ export function ConversationCoachWorkspace() {
 
   const activeScenario = scenarios.find((scenario) => scenario.slug === activeSlug) ?? scenarios[0];
   const activeLevel = activeScenario.levelCode;
-  const levels = ["all", "A1", "A2", "B1", "B2", "C1"];
+  const courseFilters = [
+    { key: "all", label: "Semua" },
+    ...Array.from(
+      new Map(
+        scenarios.map((scenario) => [
+          scenario.courseKey,
+          {
+            key: scenario.courseKey,
+            label: `${scenario.languageLabel} ${scenario.levelCode}`
+          }
+        ])
+      ).values()
+    )
+  ];
 
   const filteredScenarios = useMemo(() => scenarios.filter((scenario) => {
-    if (levelFilter !== "all" && scenario.levelCode !== levelFilter) {
+    if (levelFilter !== "all" && scenario.courseKey !== levelFilter) {
       return false;
     }
 
@@ -245,6 +270,7 @@ export function ConversationCoachWorkspace() {
           <p className="mt-1 text-sm leading-6 text-ink/60">{activeScenario.description}</p>
           <div className="mt-3 flex flex-wrap items-center gap-2 text-xs font-semibold text-ink/60">
             <span className="rounded-lg bg-white px-2 py-1">Level {activeLevel}</span>
+            <span className="rounded-lg bg-white px-2 py-1">{activeScenario.languageLabel}</span>
             <span className="rounded-lg bg-white px-2 py-1">{unitLabel(activeScenario)}</span>
             <span className="rounded-lg bg-white px-2 py-1">{lessonLabel(activeScenario)}</span>
             <span className="rounded-lg bg-white px-2 py-1">{activeScenario.unitTitle}</span>
@@ -275,20 +301,19 @@ export function ConversationCoachWorkspace() {
               </div>
 
               <div className="flex flex-wrap gap-2">
-                {levels.map((level) => {
-                  const selected = levelFilter === level;
-                  const label = level === "all" ? "Semua" : level;
+                {courseFilters.map((level) => {
+                  const selected = levelFilter === level.key;
                   return (
                     <button
-                      key={level}
+                      key={level.key}
                       type="button"
-                      onClick={() => setLevelFilter(level)}
+                      onClick={() => setLevelFilter(level.key)}
                       className={`focus-ring rounded-lg border px-3 py-2 text-xs font-semibold ${
                         selected ? "border-leaf bg-mint text-ink" : "border-ink/10 bg-white text-ink/70 hover:bg-mint"
                       }`}
                       aria-pressed={selected}
                     >
-                      {label}
+                      {level.label}
                     </button>
                   );
                 })}
@@ -305,7 +330,9 @@ export function ConversationCoachWorkspace() {
                   <section key={level.key} className="overflow-hidden rounded-lg border border-ink/10 bg-white">
                     <div className="flex flex-col gap-2 border-b border-ink/10 bg-paper px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
                       <div>
-                        <p className="text-xs font-semibold uppercase text-leaf">Level {level.levelCode}</p>
+                        <p className="text-xs font-semibold uppercase text-leaf">
+                          {level.languageLabel} · Level {level.levelCode}
+                        </p>
                         <h3 className="mt-1 font-semibold">{level.courseTitle}</h3>
                       </div>
                       <span className="w-fit rounded-lg bg-white px-3 py-1 text-xs font-semibold text-ink/60">
@@ -353,7 +380,7 @@ export function ConversationCoachWorkspace() {
                                       {lessonLabel(scenario)}
                                     </span>
                                     <span className="text-[11px] font-semibold uppercase text-ink/45">
-                                      {scenario.levelCode}
+                                      {scenario.languageLabel} · {scenario.levelCode}
                                     </span>
                                   </div>
                                   <p className="mt-3 text-sm font-semibold leading-5">{scenario.lessonTitle}</p>

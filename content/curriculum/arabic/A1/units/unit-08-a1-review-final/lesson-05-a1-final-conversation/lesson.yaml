@@ -1,0 +1,25 @@
+lesson_key: lesson-05-a1-final-conversation
+slug: arabic-a1-final-conversation
+title: A1 Final Conversation
+status: beta
+estimated_minutes: 10
+conversation_situation: a1_final_conversation
+conversation_goal: Complete a short Arabic Fusha A1 conversation using core skills from the level.
+grammar_summary: Combine greetings, introductions, schedule, directions, ordering, and help requests.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

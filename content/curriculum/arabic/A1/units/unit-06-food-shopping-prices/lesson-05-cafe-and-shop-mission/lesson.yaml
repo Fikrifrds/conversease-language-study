@@ -1,0 +1,25 @@
+lesson_key: lesson-05-cafe-and-shop-mission
+slug: arabic-cafe-and-shop-mission
+title: Cafe and Shop Mission
+status: beta
+estimated_minutes: 10
+conversation_situation: cafe_and_shop_mission
+conversation_goal: Combine ordering, price, and buying phrases in one short conversation.
+grammar_summary: Combine أريد, كم السعر, آخذ واحدًا, and من فضلك.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

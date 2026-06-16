@@ -1,0 +1,46 @@
+scenario_key: arabic_saying_what_you_do
+mode: lesson_practice_coach
+level_code: A1
+opening_line: ماذا تعمل؟
+learner_goal: Say whether you are a student, teacher, or worker.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: ماذا تعمل؟
+  hint: 'Jawab dengan pola: ماذا تعمل؟'
+  sample_answer: ماذا تعمل؟
+  focus: Ask about work.
+  expected_keywords:
+  - ماذا
+  - تعمل
+  indonesian_explanation: Apa pekerjaanmu?
+- coach: 'استخدم: أنا طالب'
+  hint: 'Jawab dengan pola: أنا طالب'
+  sample_answer: أنا طالب
+  focus: Say student identity.
+  expected_keywords:
+  - أنا
+  - طالب
+  indonesian_explanation: Saya pelajar.
+- coach: 'استخدم: أنا معلم'
+  hint: 'Jawab dengan pola: أنا معلم'
+  sample_answer: أنا معلم
+  focus: Say teacher identity.
+  expected_keywords:
+  - أنا
+  - معلم
+  indonesian_explanation: Saya guru.
+target_phrases:
+- ماذا تعمل؟
+- أنا طالب
+- أنا معلم
+- أعمل في مكتب
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Pergi ke kanan.'
+  target_response: اذهب يمينًا
+  acceptable_responses:
+  - اذهب يمينًا
+- prompt: 'Say: Pergi ke kiri.'
+  target_response: اذهب يسارًا
+  acceptable_responses:
+  - اذهب يسارًا
+- prompt: 'Say: Ke depan'
+  target_response: إلى الأمام
+  acceptable_responses:
+  - إلى الأمام

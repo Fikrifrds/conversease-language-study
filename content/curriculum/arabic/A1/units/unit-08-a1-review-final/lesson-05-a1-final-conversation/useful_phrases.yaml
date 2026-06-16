@@ -1,0 +1,16 @@
+phrases:
+- phrase: مرحبًا
+  meaning_id: Halo.
+  usage_note: Start politely.
+- phrase: اسمي ...
+  meaning_id: Nama saya ...
+  usage_note: Introduce yourself.
+- phrase: أدرس العربية
+  meaning_id: Saya belajar bahasa Arab.
+  usage_note: Talk about study.
+- phrase: أين المكتبة؟
+  meaning_id: Di mana perpustakaan?
+  usage_note: Ask location.
+- phrase: أحتاج مساعدة
+  meaning_id: Saya butuh bantuan.
+  usage_note: Ask for help.

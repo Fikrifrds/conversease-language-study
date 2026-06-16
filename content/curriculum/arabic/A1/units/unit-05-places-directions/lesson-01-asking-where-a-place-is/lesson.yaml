@@ -1,0 +1,25 @@
+lesson_key: lesson-01-asking-where-a-place-is
+slug: arabic-asking-where-a-place-is
+title: Asking Where a Place Is
+status: beta
+estimated_minutes: 10
+conversation_situation: asking_where_a_place_is
+conversation_goal: Ask where a place is and understand here/there.
+grammar_summary: Use أين + place for location questions and هنا/هناك for here/there.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

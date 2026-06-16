@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Maaf.'
+  target_response: آسف
+  acceptable_responses:
+  - آسف
+- prompt: 'Say: Maaf.'
+  target_response: آسفة
+  acceptable_responses:
+  - آسفة
+- prompt: 'Say: Permisi/maaf.'
+  target_response: عذرًا
+  acceptable_responses:
+  - عذرًا

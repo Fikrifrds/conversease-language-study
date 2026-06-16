@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Pergi ke kanan."?
+  options:
+  - اذهب يمينًا
+  - اذهب يسارًا
+  - إلى الأمام
+  correct_answer: اذهب يمينًا
+- key: phrase_2
+  prompt: Which phrase means "Pergi ke kiri."?
+  options:
+  - اذهب يسارًا
+  - اذهب يمينًا
+  - إلى الأمام
+  correct_answer: اذهب يسارًا

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Apakah kalian punya pena?'
+  target_response: هل عندكم قلم؟
+  acceptable_responses:
+  - هل عندكم قلم؟
+- prompt: 'Say: Ya, ada.'
+  target_response: نعم، موجود
+  acceptable_responses:
+  - نعم، موجود
+- prompt: 'Say: Saya ingin ini.'
+  target_response: أريد هذا
+  acceptable_responses:
+  - أريد هذا

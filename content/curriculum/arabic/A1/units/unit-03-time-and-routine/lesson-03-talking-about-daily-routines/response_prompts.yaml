@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Apa yang kamu lakukan pagi hari?'
+  target_response: ماذا تفعل صباحًا؟
+  acceptable_responses:
+  - ماذا تفعل صباحًا؟
+- prompt: 'Say: Saya membaca.'
+  target_response: أقرأ
+  acceptable_responses:
+  - أقرأ
+- prompt: 'Say: Saya menulis.'
+  target_response: أكتب
+  acceptable_responses:
+  - أكتب

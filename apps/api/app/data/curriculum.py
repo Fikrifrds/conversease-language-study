@@ -14,6 +14,7 @@ LEVEL_CODE = "A1"
 LEVEL_NAME = "A1 - Start Simple Conversations"
 LANGUAGE_CODE = "en"
 SUPPORTED_LEVEL_CODES = ("A1", "A2", "B1", "B2", "C1")
+SUPPORTED_LANGUAGE_ORDER = ("english", "arabic")
 # Levels free to all users; everything else requires a Pro subscription.
 FREE_LEVEL_CODES = ("A1",)
 
@@ -190,17 +191,32 @@ def all_courses() -> tuple[dict[str, Any], ...]:
 def all_authored_courses() -> tuple[dict[str, Any], ...]:
     """All authored courses across language folders.
 
-    Course ordering is stable by language folder and level code. English-only
-    flows should keep using all_courses() until product-scoped access is added.
+    Course ordering is product-stable: English remains first, then other
+    authored languages. English-only flows should keep using all_courses()
+    until product-scoped access is added.
     """
     courses = []
-    for plan_path in sorted(curriculum_root().glob("*/*/content_plan.yaml")):
+    for plan_path in sorted(curriculum_root().glob("*/*/content_plan.yaml"), key=authored_plan_sort_key):
         language = plan_path.parents[1].name
         level_code = plan_path.parent.name
         course = load_course(language=language, level_code=level_code)
         if course["units"]:
             courses.append(course)
     return tuple(courses)
+
+
+def authored_plan_sort_key(path: Path) -> tuple[int, int, str, str]:
+    language = path.parents[1].name
+    level_code = path.parent.name
+    try:
+        language_index = SUPPORTED_LANGUAGE_ORDER.index(language)
+    except ValueError:
+        language_index = len(SUPPORTED_LANGUAGE_ORDER)
+    try:
+        level_index = SUPPORTED_LEVEL_CODES.index(level_code)
+    except ValueError:
+        level_index = len(SUPPORTED_LEVEL_CODES)
+    return (language_index, level_index, language, level_code)
 
 
 def get_course_by_slug(slug: str) -> Optional[dict[str, Any]]:

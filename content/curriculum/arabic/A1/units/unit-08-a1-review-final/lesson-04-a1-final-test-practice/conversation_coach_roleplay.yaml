@@ -1,0 +1,47 @@
+scenario_key: arabic_a1_final_test_practice
+mode: lesson_practice_coach
+level_code: A1
+opening_line: من أين أنت؟
+learner_goal: Practice answering mixed A1 questions before the final conversation.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: من أين أنت؟
+  hint: 'Jawab dengan pola: أنا من إندونيسيا'
+  sample_answer: أنا من إندونيسيا
+  focus: Answer origin.
+  expected_keywords:
+  - أنا
+  - من
+  - إندونيسيا
+  indonesian_explanation: Saya dari Indonesia.
+- coach: 'استخدم: عندي درس'
+  hint: 'Jawab dengan pola: عندي درس'
+  sample_answer: عندي درس
+  focus: Answer schedule.
+  expected_keywords:
+  - عندي
+  - درس
+  indonesian_explanation: Saya punya pelajaran.
+- coach: 'استخدم: أريد كتابًا'
+  hint: 'Jawab dengan pola: أريد كتابًا'
+  sample_answer: أريد كتابًا
+  focus: Answer want.
+  expected_keywords:
+  - أريد
+  - كتابًا
+  indonesian_explanation: Saya ingin buku.
+target_phrases:
+- أنا من إندونيسيا
+- عندي درس
+- أريد كتابًا
+- لا أفهم
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

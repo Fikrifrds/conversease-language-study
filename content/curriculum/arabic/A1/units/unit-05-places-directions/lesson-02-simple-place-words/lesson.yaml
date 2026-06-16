@@ -1,0 +1,25 @@
+lesson_key: lesson-02-simple-place-words
+slug: arabic-simple-place-words
+title: Simple Place Words
+status: beta
+estimated_minutes: 10
+conversation_situation: simple_place_words
+conversation_goal: Recognize and use simple place nouns in short questions.
+grammar_summary: Use أين + place and هذا/هذه + place noun for simple place identification.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Hari ini ...'
+  target_response: اليوم ...
+  acceptable_responses:
+  - اليوم ...
+- prompt: 'Say: Jam ...'
+  target_response: الساعة ...
+  acceptable_responses:
+  - الساعة ...
+- prompt: 'Say: Saya punya pelajaran.'
+  target_response: عندي درس
+  acceptable_responses:
+  - عندي درس

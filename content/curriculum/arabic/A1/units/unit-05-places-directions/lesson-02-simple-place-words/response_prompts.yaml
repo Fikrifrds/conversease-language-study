@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Rumah'
+  target_response: البيت
+  acceptable_responses:
+  - البيت
+- prompt: 'Say: Sekolah'
+  target_response: المدرسة
+  acceptable_responses:
+  - المدرسة
+- prompt: 'Say: Pasar'
+  target_response: السوق
+  acceptable_responses:
+  - السوق

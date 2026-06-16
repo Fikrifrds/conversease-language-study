@@ -1,0 +1,25 @@
+lesson_key: lesson-03-review-places-and-shopping
+slug: arabic-review-places-and-shopping
+title: Review Places and Shopping
+status: beta
+estimated_minutes: 10
+conversation_situation: review_places_and_shopping
+conversation_goal: Review place, direction, ordering, and price phrases.
+grammar_summary: Review أين, كيف أذهب, أريد, and كم السعر.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

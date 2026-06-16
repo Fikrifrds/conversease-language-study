@@ -8,4 +8,4 @@
 
 ## Audio Direction
 
-Voices: one male teacher and one male learner. Use Arabic_FriendlyGuy for both in beta. Keep pacing slow and clear.
+Use Arabic Fusha only. Speaker labels are metadata and must not be spoken. Assign different curated male ElevenLabs voices to Muallim and Ahmad. Keep pacing slow and clear with a short natural pause between speakers.

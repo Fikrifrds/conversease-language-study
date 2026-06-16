@@ -65,84 +65,78 @@ CLEAR_ARABIC_MALE_DIALOGUE_VOICES = (
     "Arabic_FriendlyGuy",
 )
 
-ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID = "OFHP1Qg30FPoNfkUFFlA"
-ELEVENLABS_ARABIC_DEFAULT_FEMALE_VOICE_ID = "gMB389pj77Qe5nErWNjd"
+ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID = "3nav5pHC1EYvWOd5LmnA"
+ELEVENLABS_ARABIC_DEFAULT_FEMALE_VOICE_ID = "gVzwmdZzRgBrNjXaTmi5"
 ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES = (
-    "OFHP1Qg30FPoNfkUFFlA",  # Adam
+    "3nav5pHC1EYvWOd5LmnA",  # Saud
+    "RjFuvnufLX42TYe37ekK",  # Adeeb
     "yXEnnEln9armDCyhkXcA",  # Jeddawi
-    "rPNcQ53R703tTmtue1AT",  # Mazen Lawand
-    "zthCTrnZpSGUnbO0tTzN",  # Mustafa Ajmi
+    "t9akNmCDhz230CEXOYmn",  # Abdullah Saadoun
+    "cFUFIbKkO2iZFwS8cRnY",  # Nasser AlJubaily
+    "3GnbqfjaW8xI6hRTVx4Y",  # Nasser
+    "OoE8swS3hImZANNOodf6",  # Ali Ahmed
+    "kr4VZw8MSZMHE0y2m40n",  # Hasawi
 )
 ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES = (
-    "gMB389pj77Qe5nErWNjd",  # Sara
-    "4wf10lgibMnboGJGCLrP",  # Farah
-    "B5xxC4eQoOFJnY4R5XkI",  # Salma
+    "gVzwmdZzRgBrNjXaTmi5",  # Layan
+    "v7UCHHCrHj1KBa4E41gb",  # Heba Mansuri
+    "kdUY91gH5xyDHapxlthT",  # Hana
 )
 ELEVENLABS_ARABIC_VOICE_METADATA = {
-    "OFHP1Qg30FPoNfkUFFlA": {
-        "voice_name": "Adam",
-        "gender": "male",
-        "description": "Deep, rich, and expressive Arabic male voice for narration and teacher lines.",
-    },
-    "4wf10lgibMnboGJGCLrP": {
-        "voice_name": "Farah",
-        "gender": "female",
-        "description": "Smooth, calm, and warm Arabic female voice.",
-    },
     "yXEnnEln9armDCyhkXcA": {
         "voice_name": "Jeddawi",
         "gender": "male",
         "description": "Calm, confident, and deep Saudi Arabic male voice.",
     },
-    "wxweiHvoC2r2jFM7mS8b": {
-        "voice_name": "Haytham",
+    "t9akNmCDhz230CEXOYmn": {
+        "voice_name": "Abdullah Saadoun",
         "gender": "male",
-        "description": "Dramatic and narrative Arabic male storyteller voice.",
+        "description": "Curated Arabic male voice.",
     },
-    "gMB389pj77Qe5nErWNjd": {
-        "voice_name": "Sara",
+    "3nav5pHC1EYvWOd5LmnA": {
+        "voice_name": "Saud",
+        "gender": "male",
+        "description": "Deep, formal, and clear Arabic male voice.",
+    },
+    "RjFuvnufLX42TYe37ekK": {
+        "voice_name": "Adeeb",
+        "gender": "male",
+        "description": "Clear, confident, and natural Arabic male voice.",
+    },
+    "cFUFIbKkO2iZFwS8cRnY": {
+        "voice_name": "Nasser AlJubaily",
+        "gender": "male",
+        "description": "Authentic Saudi professional Arabic male voice.",
+    },
+    "OoE8swS3hImZANNOodf6": {
+        "voice_name": "Ali Ahmed",
+        "gender": "male",
+        "description": "Authentic Saudi Arabic male voice.",
+    },
+    "kr4VZw8MSZMHE0y2m40n": {
+        "voice_name": "Hasawi",
+        "gender": "male",
+        "description": "Conversational and energetic Arabic male voice.",
+    },
+    "3GnbqfjaW8xI6hRTVx4Y": {
+        "voice_name": "Nasser",
+        "gender": "male",
+        "description": "Enterprise, professional, and clear Arabic male voice.",
+    },
+    "v7UCHHCrHj1KBa4E41gb": {
+        "voice_name": "Heba Mansuri",
         "gender": "female",
-        "description": "Friendly, professional, and clear Arabic coach voice.",
+        "description": "Gentle and calm Arabic female voice.",
     },
-    "amSNjVC0vWYiE8iGimVb": {
-        "voice_name": "Maged Magdy",
-        "gender": "male",
-        "description": "Calm, natural, and balanced Arabic male voice.",
-    },
-    "ulJ49j1YlxrYnPoj5o12": {
-        "voice_name": "Lama",
+    "kdUY91gH5xyDHapxlthT": {
+        "voice_name": "Hana",
         "gender": "female",
-        "description": "Soft emotional Arabic female voice.",
+        "description": "Casual and relatable Arabic female voice.",
     },
-    "68MRVrnQAt8vLbu0FCzw": {
-        "voice_name": "Mamdoh",
-        "gender": "male",
-        "description": "Deep Egyptian Arabic male voice.",
-    },
-    "rPNcQ53R703tTmtue1AT": {
-        "voice_name": "Mazen Lawand",
-        "gender": "male",
-        "description": "Warm, dynamic, and professional Arabic male voice.",
-    },
-    "4mZ0H4Jh5iqmgAWK97eF": {
-        "voice_name": "Omarii",
-        "gender": "male",
-        "description": "Confident and clear Arabic male customer-care voice.",
-    },
-    "B5xxC4eQoOFJnY4R5XkI": {
-        "voice_name": "Salma",
+    "gVzwmdZzRgBrNjXaTmi5": {
+        "voice_name": "Layan",
         "gender": "female",
-        "description": "Friendly, clear, and reassuring Arabic female voice.",
-    },
-    "HJ8unGw6UFYkApOU0Oea": {
-        "voice_name": "Omars",
-        "gender": "male",
-        "description": "Clean Arabic male voice for storytelling and podcasts.",
-    },
-    "zthCTrnZpSGUnbO0tTzN": {
-        "voice_name": "Mustafa Ajmi",
-        "gender": "male",
-        "description": "Deep, modern Omani Arabic male voice.",
+        "description": "Professional Arabic female voice.",
     },
 }
 ELEVENLABS_ARABIC_CURATED_VOICE_IDS = (
@@ -304,37 +298,37 @@ DIALOGUE_PERSONA_VOICES = {
 }
 
 ELEVENLABS_ARABIC_PERSONA_VOICES = {
-    "ahmad": "rPNcQ53R703tTmtue1AT",
-    "ahmed": "rPNcQ53R703tTmtue1AT",
-    "ali": "yXEnnEln9armDCyhkXcA",
-    "arabicstudent": "gMB389pj77Qe5nErWNjd",
-    "arabicteacher": "OFHP1Qg30FPoNfkUFFlA",
-    "aisha": "B5xxC4eQoOFJnY4R5XkI",
-    "fatima": "gMB389pj77Qe5nErWNjd",
-    "fatimah": "gMB389pj77Qe5nErWNjd",
-    "khalid": "rPNcQ53R703tTmtue1AT",
-    "khadijah": "4wf10lgibMnboGJGCLrP",
-    "layla": "B5xxC4eQoOFJnY4R5XkI",
-    "maryam": "B5xxC4eQoOFJnY4R5XkI",
-    "muallim": "OFHP1Qg30FPoNfkUFFlA",
-    "muallimah": "gMB389pj77Qe5nErWNjd",
-    "narrator": "OFHP1Qg30FPoNfkUFFlA",
-    "noura": "4wf10lgibMnboGJGCLrP",
-    "nura": "4wf10lgibMnboGJGCLrP",
-    "studentarabicfemale": "B5xxC4eQoOFJnY4R5XkI",
-    "studentarabicmale": "rPNcQ53R703tTmtue1AT",
-    "studentfemale": "B5xxC4eQoOFJnY4R5XkI",
-    "studentmale": "rPNcQ53R703tTmtue1AT",
-    "talib": "rPNcQ53R703tTmtue1AT",
-    "talibah": "B5xxC4eQoOFJnY4R5XkI",
-    "teacherarabic": "OFHP1Qg30FPoNfkUFFlA",
-    "teacherarabicfemale": "gMB389pj77Qe5nErWNjd",
-    "teacherarabicmale": "OFHP1Qg30FPoNfkUFFlA",
-    "ustadh": "OFHP1Qg30FPoNfkUFFlA",
-    "ustadz": "OFHP1Qg30FPoNfkUFFlA",
-    "ustaz": "OFHP1Qg30FPoNfkUFFlA",
-    "zayd": "yXEnnEln9armDCyhkXcA",
-    "ziyad": "zthCTrnZpSGUnbO0tTzN",
+    "ahmad": "RjFuvnufLX42TYe37ekK",
+    "ahmed": "RjFuvnufLX42TYe37ekK",
+    "ali": "OoE8swS3hImZANNOodf6",
+    "arabicstudent": "kdUY91gH5xyDHapxlthT",
+    "arabicteacher": "3nav5pHC1EYvWOd5LmnA",
+    "aisha": "v7UCHHCrHj1KBa4E41gb",
+    "fatima": "v7UCHHCrHj1KBa4E41gb",
+    "fatimah": "v7UCHHCrHj1KBa4E41gb",
+    "khalid": "t9akNmCDhz230CEXOYmn",
+    "khadijah": "gVzwmdZzRgBrNjXaTmi5",
+    "layla": "kdUY91gH5xyDHapxlthT",
+    "maryam": "gVzwmdZzRgBrNjXaTmi5",
+    "muallim": "3nav5pHC1EYvWOd5LmnA",
+    "muallimah": "gVzwmdZzRgBrNjXaTmi5",
+    "narrator": "3GnbqfjaW8xI6hRTVx4Y",
+    "noura": "kdUY91gH5xyDHapxlthT",
+    "nura": "kdUY91gH5xyDHapxlthT",
+    "studentarabicfemale": "kdUY91gH5xyDHapxlthT",
+    "studentarabicmale": "kr4VZw8MSZMHE0y2m40n",
+    "studentfemale": "kdUY91gH5xyDHapxlthT",
+    "studentmale": "kr4VZw8MSZMHE0y2m40n",
+    "talib": "kr4VZw8MSZMHE0y2m40n",
+    "talibah": "kdUY91gH5xyDHapxlthT",
+    "teacherarabic": "3nav5pHC1EYvWOd5LmnA",
+    "teacherarabicfemale": "gVzwmdZzRgBrNjXaTmi5",
+    "teacherarabicmale": "3nav5pHC1EYvWOd5LmnA",
+    "ustadh": "yXEnnEln9armDCyhkXcA",
+    "ustadz": "yXEnnEln9armDCyhkXcA",
+    "ustaz": "yXEnnEln9armDCyhkXcA",
+    "zayd": "cFUFIbKkO2iZFwS8cRnY",
+    "ziyad": "3GnbqfjaW8xI6hRTVx4Y",
 }
 
 FALLBACK_MINIMAX_VOICES = tuple(
@@ -616,7 +610,8 @@ def is_english_language(language: str) -> bool:
 
 
 def is_arabic_voice_id(voice_id: str) -> bool:
-    return (voice_id or "").strip().lower().startswith("arabic_")
+    value = (voice_id or "").strip()
+    return value in ELEVENLABS_ARABIC_VOICE_METADATA or value.lower().startswith("arabic_")
 
 
 def is_english_voice_id(voice_id: str) -> bool:
@@ -686,8 +681,8 @@ def voice_id_for_language(language: str, requested_voice_id: Optional[str]) -> s
 def default_elevenlabs_voice_id_for_language(language: str) -> str:
     if is_arabic_language(language):
         return (
-            settings.elevenlabs_arabic_male_voice_id.strip()
-            or settings.elevenlabs_tts_voice_id.strip()
+            curated_elevenlabs_arabic_voice_id(settings.elevenlabs_arabic_male_voice_id, gender="male")
+            or curated_elevenlabs_arabic_voice_id(settings.elevenlabs_tts_voice_id, gender="male")
             or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID
         )
     return settings.elevenlabs_tts_voice_id.strip() or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID
@@ -695,6 +690,8 @@ def default_elevenlabs_voice_id_for_language(language: str) -> str:
 
 def elevenlabs_voice_id_for_language(language: str, requested_voice_id: Optional[str]) -> str:
     selected_voice = (requested_voice_id or "").strip()
+    if is_arabic_language(language):
+        return curated_elevenlabs_arabic_voice_id(selected_voice) or default_elevenlabs_voice_id_for_language(language)
     return selected_voice or default_elevenlabs_voice_id_for_language(language)
 
 
@@ -724,6 +721,16 @@ def default_voice_preview_text(voice_id: str) -> str:
     if is_arabic_voice_id(voice_id) or voice_id in ELEVENLABS_ARABIC_VOICE_METADATA:
         return ARABIC_VOICE_PREVIEW_SAMPLE_TEXT
     return "Hello, welcome to Conversease. Listen, repeat, and speak with clear confidence."
+
+
+def curated_elevenlabs_arabic_voice_id(value: Optional[str], *, gender: str = "") -> str:
+    voice_id = (value or "").strip()
+    if voice_id not in ELEVENLABS_ARABIC_VOICE_METADATA:
+        return ""
+    expected_gender = gender.strip().lower()
+    if expected_gender and elevenlabs_voice_gender(voice_id) != expected_gender:
+        return ""
+    return voice_id
 
 
 def speed_for_language(language: str, speed: float) -> float:
@@ -1732,7 +1739,8 @@ def elevenlabs_voice_pool_for_gender(
             if gender == "female"
             else ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES
         )
-        fallback = fallback_voice_id.strip()
+        env_voice = curated_elevenlabs_arabic_voice_id(env_voice, gender=gender)
+        fallback = curated_elevenlabs_arabic_voice_id(fallback_voice_id, gender=gender)
         return tuple(dict.fromkeys(voice for voice in [env_voice, *curated_pool, fallback] if voice).keys())
 
     default_voice = settings.elevenlabs_tts_voice_id.strip() or ELEVENLABS_ARABIC_DEFAULT_MALE_VOICE_ID

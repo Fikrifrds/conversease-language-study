@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Saya dari Indonesia."?
+  options:
+  - أنا من إندونيسيا
+  - عندي درس
+  - أريد كتابًا
+  correct_answer: أنا من إندونيسيا
+- key: phrase_2
+  prompt: Which phrase means "Saya punya pelajaran."?
+  options:
+  - عندي درس
+  - أنا من إندونيسيا
+  - أريد كتابًا
+  correct_answer: عندي درس

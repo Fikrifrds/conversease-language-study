@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Berapa nomor teleponmu?"?
+  options:
+  - ما رقم هاتفك؟
+  - رقمي ...
+  - واحد، اثنان، ثلاثة
+  correct_answer: ما رقم هاتفك؟
+- key: phrase_2
+  prompt: Which phrase means "Nomor saya ..."?
+  options:
+  - رقمي ...
+  - ما رقم هاتفك؟
+  - واحد، اثنان، ثلاثة
+  correct_answer: رقمي ...

@@ -349,7 +349,7 @@ def lesson_readiness(
     publish_status = tracker_row.get("publish_status", "")
     review_status = tracker_row.get("review_status", "")
     implemented = lesson_dir.exists()
-    beta_ready = implemented and text_ready and publish_status in {"published", ""}
+    beta_ready = implemented and text_ready and publish_status in {"published", "beta", ""}
     production_ready = beta_ready and audio_ready and review_status in {"ready", ""}
     missing_items = [check["label"] for check in checks if not check["ready"]]
 

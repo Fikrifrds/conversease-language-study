@@ -1,0 +1,6 @@
+lesson_key: lesson-05-help-and-problem-mission
+status: not_generated
+provider: elevenlabs
+model: eleven_multilingual_v2
+default_voice_id: multi_speaker
+assets: []

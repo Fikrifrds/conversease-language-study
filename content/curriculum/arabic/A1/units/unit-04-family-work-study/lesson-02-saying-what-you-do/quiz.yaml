@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Apa pekerjaanmu?"?
+  options:
+  - ماذا تعمل؟
+  - أنا طالب
+  - أنا معلم
+  correct_answer: ماذا تعمل؟
+- key: phrase_2
+  prompt: Which phrase means "Saya pelajar."?
+  options:
+  - أنا طالب
+  - ماذا تعمل؟
+  - أنا معلم
+  correct_answer: أنا طالب

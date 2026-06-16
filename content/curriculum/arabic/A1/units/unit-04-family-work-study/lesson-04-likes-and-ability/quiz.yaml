@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Saya suka membaca."?
+  options:
+  - أحب القراءة
+  - لا أحب الانتظار
+  - أستطيع القراءة
+  correct_answer: أحب القراءة
+- key: phrase_2
+  prompt: Which phrase means "Saya tidak suka menunggu."?
+  options:
+  - لا أحب الانتظار
+  - أحب القراءة
+  - أستطيع القراءة
+  correct_answer: لا أحب الانتظار

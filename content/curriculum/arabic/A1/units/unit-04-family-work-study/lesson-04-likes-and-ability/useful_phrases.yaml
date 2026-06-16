@@ -1,0 +1,16 @@
+phrases:
+- phrase: أحب القراءة
+  meaning_id: Saya suka membaca.
+  usage_note: Say a like.
+- phrase: لا أحب الانتظار
+  meaning_id: Saya tidak suka menunggu.
+  usage_note: Say a dislike.
+- phrase: أستطيع القراءة
+  meaning_id: Saya bisa membaca.
+  usage_note: Say ability.
+- phrase: لا أستطيع الآن
+  meaning_id: Saya belum bisa sekarang.
+  usage_note: Say inability.
+- phrase: قليلًا
+  meaning_id: Sedikit
+  usage_note: Limit your ability.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Saya ingin air."?
+  options:
+  - أريد ماءً
+  - كم السعر؟
+  - السعر مناسب
+  correct_answer: أريد ماءً
+- key: phrase_2
+  prompt: Which phrase means "Berapa harganya?"?
+  options:
+  - كم السعر؟
+  - أريد ماءً
+  - السعر مناسب
+  correct_answer: كم السعر؟

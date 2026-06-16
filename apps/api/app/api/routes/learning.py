@@ -9,6 +9,7 @@ from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.api.deps import get_current_user
 from app.data.content_readiness import lesson_audio_asset
 from app.data.curriculum import (
+    all_authored_courses,
     all_courses,
     course_requires_pro,
     get_course_by_slug,
@@ -148,7 +149,7 @@ async def list_courses(
                 is_pro=is_pro,
                 is_admin=is_admin,
             )
-            for course in all_courses()
+            for course in all_authored_courses()
         ]
     }
 
@@ -172,6 +173,26 @@ async def get_course(
             is_pro=is_pro,
             is_admin=is_admin,
         )
+    }
+
+
+@router.get("/courses/{slug}/progress")
+async def get_course_progress(
+    slug: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    if get_course_by_slug(slug) is None:
+        raise HTTPException(status_code=404, detail="Course not found")
+    summary = LearningProgressRepository(db).summary(current_user.id, course_slug=slug)
+    onboarding = summary["onboarding"]
+    return {
+        "data": {
+            "onboarding": onboarding_payload(onboarding) if onboarding else None,
+            "course": summary["course"],
+            "current_mission": summary["current_mission"],
+            "lessons": summary["lessons"],
+        }
     }
 
 

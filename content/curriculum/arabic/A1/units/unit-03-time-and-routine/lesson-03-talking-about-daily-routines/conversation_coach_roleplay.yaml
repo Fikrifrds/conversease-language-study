@@ -1,0 +1,45 @@
+scenario_key: arabic_talking_about_daily_routines
+mode: lesson_practice_coach
+level_code: A1
+opening_line: ماذا تفعل صباحًا؟
+learner_goal: Say a few simple daily actions in order.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: ماذا تفعل صباحًا؟
+  hint: 'Jawab dengan pola: ماذا تفعل صباحًا؟'
+  sample_answer: ماذا تفعل صباحًا؟
+  focus: Ask about a morning routine.
+  expected_keywords:
+  - ماذا
+  - تفعل
+  - صباحًا
+  indonesian_explanation: Apa yang kamu lakukan pagi hari?
+- coach: 'استخدم: أقرأ'
+  hint: 'Jawab dengan pola: أقرأ'
+  sample_answer: أقرأ
+  focus: Say a reading action.
+  expected_keywords:
+  - أقرأ
+  indonesian_explanation: Saya membaca.
+- coach: 'استخدم: أكتب'
+  hint: 'Jawab dengan pola: أكتب'
+  sample_answer: أكتب
+  focus: Say a writing action.
+  expected_keywords:
+  - أكتب
+  indonesian_explanation: Saya menulis.
+target_phrases:
+- ماذا تفعل صباحًا؟
+- أقرأ
+- أكتب
+- أدرس العربية
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

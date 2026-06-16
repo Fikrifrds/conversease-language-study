@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Bagaimana kamu menulis namamu?'
+  target_response: كيف تكتب اسمك؟
+  acceptable_responses:
+  - كيف تكتب اسمك؟
+- prompt: 'Say: Saya menulis nama saya ...'
+  target_response: أكتب اسمي ...
+  acceptable_responses:
+  - أكتب اسمي ...
+- prompt: 'Say: Ini huruf ...'
+  target_response: هذا حرف ...
+  acceptable_responses:
+  - هذا حرف ...

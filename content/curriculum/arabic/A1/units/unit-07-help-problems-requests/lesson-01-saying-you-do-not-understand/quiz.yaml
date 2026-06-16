@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Saya tidak paham."?
+  options:
+  - لا أفهم
+  - لا أعرف الكلمة
+  - ماذا يعني هذا؟
+  correct_answer: لا أفهم
+- key: phrase_2
+  prompt: Which phrase means "Saya tidak tahu katanya."?
+  options:
+  - لا أعرف الكلمة
+  - لا أفهم
+  - ماذا يعني هذا؟
+  correct_answer: لا أعرف الكلمة

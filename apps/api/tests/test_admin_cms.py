@@ -26,11 +26,21 @@ class AdminCmsTest(unittest.TestCase):
         template = get_email_template("auth_verify_email")
 
         self.assertEqual(summary["course"]["lesson_count"], 40)
-        self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 200)
-        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 200)
+        self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 240)
+        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 240)
         self.assertEqual(
-            [level["course"]["level_code"] for level in summary["readiness_levels"]],
-            ["A1", "A2", "B1", "B2", "C1"],
+            sorted(
+                (level["course"]["language"], level["course"]["level_code"])
+                for level in summary["readiness_levels"]
+            ),
+            [
+                ("arabic", "A1"),
+                ("english", "A1"),
+                ("english", "A2"),
+                ("english", "B1"),
+                ("english", "B2"),
+                ("english", "C1"),
+            ],
         )
         self.assertEqual(summary["validation_issues"], [])
         self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_online_class")
@@ -106,7 +116,7 @@ class AdminCmsTest(unittest.TestCase):
                 self.assertEqual(len(english_lessons.json()["data"]["lessons"]), 200)
             self.assertEqual(
                 authorized.json()["data"]["curriculum"]["readiness_overview"]["planned_lesson_count"],
-                200,
+                240,
             )
             self.assertEqual(legacy_email_route.status_code, 200)
         finally:
@@ -699,6 +709,7 @@ class AdminCmsExamAudioTest(unittest.TestCase):
             "duration_seconds": 9.5,
             "audio_format": "wav",
             "audio_size": 9000,
+            "provider": "minimax",
             "model": "speech-2.8-hd",
             "voice_id": "English_expressive_narrator",
             "speaker_voices": {},

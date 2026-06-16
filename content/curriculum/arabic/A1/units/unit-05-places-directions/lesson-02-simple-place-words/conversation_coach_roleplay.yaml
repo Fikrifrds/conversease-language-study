@@ -1,0 +1,43 @@
+scenario_key: arabic_simple_place_words
+mode: lesson_practice_coach
+level_code: A1
+opening_line: أين المدرسة؟
+learner_goal: Recognize and use simple place nouns in short questions.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أين المدرسة؟
+  hint: 'Jawab dengan pola: البيت'
+  sample_answer: البيت
+  focus: Name a home.
+  expected_keywords:
+  - البيت
+  indonesian_explanation: Rumah
+- coach: 'استخدم: المدرسة'
+  hint: 'Jawab dengan pola: المدرسة'
+  sample_answer: المدرسة
+  focus: Name a school.
+  expected_keywords:
+  - المدرسة
+  indonesian_explanation: Sekolah
+- coach: 'استخدم: السوق'
+  hint: 'Jawab dengan pola: السوق'
+  sample_answer: السوق
+  focus: Name a market.
+  expected_keywords:
+  - السوق
+  indonesian_explanation: Pasar
+target_phrases:
+- البيت
+- المدرسة
+- السوق
+- المكتب
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

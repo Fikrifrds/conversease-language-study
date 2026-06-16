@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Rumah"?
+  options:
+  - البيت
+  - المدرسة
+  - السوق
+  correct_answer: البيت
+- key: phrase_2
+  prompt: Which phrase means "Sekolah"?
+  options:
+  - المدرسة
+  - البيت
+  - السوق
+  correct_answer: المدرسة

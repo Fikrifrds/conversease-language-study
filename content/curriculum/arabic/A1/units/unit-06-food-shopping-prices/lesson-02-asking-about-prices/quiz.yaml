@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Berapa harganya?"?
+  options:
+  - كم السعر؟
+  - السعر خمسة ريالات
+  - غالٍ
+  correct_answer: كم السعر؟
+- key: phrase_2
+  prompt: Which phrase means "Harganya lima riyal."?
+  options:
+  - السعر خمسة ريالات
+  - كم السعر؟
+  - غالٍ
+  correct_answer: السعر خمسة ريالات

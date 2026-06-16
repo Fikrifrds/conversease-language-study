@@ -1,0 +1,16 @@
+phrases:
+- phrase: كم السعر؟
+  meaning_id: Berapa harganya?
+  usage_note: Ask price.
+- phrase: السعر خمسة ريالات
+  meaning_id: Harganya lima riyal.
+  usage_note: Say a price.
+- phrase: غالٍ
+  meaning_id: Mahal
+  usage_note: Describe expensive.
+- phrase: رخيص
+  meaning_id: Murah
+  usage_note: Describe cheap.
+- phrase: مناسب
+  meaning_id: Cocok/pas
+  usage_note: Say price is acceptable.

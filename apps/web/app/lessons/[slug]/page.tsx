@@ -23,6 +23,8 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
     notFound();
   }
 
+  const isArabic = lesson.language === "arabic";
+
   return (
     <AppShell requireAuth>
       <StudyDayMarker />
@@ -34,7 +36,14 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                 {lessonPlacementLabel(lesson.slug)}
               </p>
             ) : null}
-            <p className="mt-1 text-sm font-semibold uppercase text-leaf">{lesson.unit}</p>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <span className="rounded-lg bg-mint px-3 py-1 text-xs font-bold uppercase text-leaf">
+                {lesson.languageLabel}
+              </span>
+              <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold uppercase text-ink/60">
+                {lesson.unit}
+              </span>
+            </div>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">{lesson.title}</h1>
             <p className="mt-4 rounded-lg bg-mint p-4 leading-7 text-ink/80">{lesson.conversationGoal}</p>
             <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
@@ -58,7 +67,9 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                 {lesson.dialogue.map((line, index) => (
                   <div key={`${line.speaker}-${index}`} className="grid gap-2 rounded-lg bg-paper p-4 lg:grid-cols-[120px_1fr_1fr]">
                     <span className="font-semibold text-leaf">{line.speaker}</span>
-                    <p>{line.text}</p>
+                    <p dir={isArabic ? "rtl" : "auto"} className={isArabic ? "text-right leading-8" : undefined}>
+                      {line.text}
+                    </p>
                     <p className="text-ink/60">{lesson.translation[index]}</p>
                   </div>
                 ))}
@@ -70,7 +81,9 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               <div className="mt-4 grid gap-3 md:grid-cols-2">
                 {lesson.phrases.map((item) => (
                   <div key={item.phrase} className="rounded-lg border border-ink/10 bg-white p-4">
-                    <p className="font-semibold">{item.phrase}</p>
+                    <p dir={isArabic ? "rtl" : "auto"} className={`font-semibold ${isArabic ? "text-right text-lg" : ""}`}>
+                      {item.phrase}
+                    </p>
                     <p className="mt-1 text-sm text-coral">{item.meaning}</p>
                     <p className="mt-2 text-sm leading-6 text-ink/60">{item.usage}</p>
                   </div>

@@ -1,0 +1,16 @@
+phrases:
+- phrase: أي يوم اليوم؟
+  meaning_id: Hari apa hari ini?
+  usage_note: Ask today's day.
+- phrase: اليوم الإثنين
+  meaning_id: Hari ini Senin.
+  usage_note: Say today's day.
+- phrase: غدًا الثلاثاء
+  meaning_id: Besok Selasa.
+  usage_note: Say tomorrow's day.
+- phrase: عندي درس
+  meaning_id: Saya punya pelajaran.
+  usage_note: Talk about a scheduled lesson.
+- phrase: في يوم ...
+  meaning_id: Pada hari ...
+  usage_note: Name a day for an event.

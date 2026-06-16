@@ -1,0 +1,16 @@
+phrases:
+- phrase: متى الدرس؟
+  meaning_id: Kapan pelajarannya?
+  usage_note: Ask when a lesson happens.
+- phrase: في الصباح
+  meaning_id: Pada pagi hari
+  usage_note: Answer with a time of day.
+- phrase: بعد الظهر
+  meaning_id: Setelah tengah hari
+  usage_note: Answer with afternoon timing.
+- phrase: قبل الدرس
+  meaning_id: Sebelum pelajaran
+  usage_note: Say before the lesson.
+- phrase: بعد الدرس
+  meaning_id: Setelah pelajaran
+  usage_note: Say after the lesson.

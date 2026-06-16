@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Berapa nomor teleponmu?'
+  target_response: ما رقم هاتفك؟
+  acceptable_responses:
+  - ما رقم هاتفك؟
+- prompt: 'Say: Nomor saya ...'
+  target_response: رقمي ...
+  acceptable_responses:
+  - رقمي ...
+- prompt: 'Say: Satu, dua, tiga'
+  target_response: واحد، اثنان، ثلاثة
+  acceptable_responses:
+  - واحد، اثنان، ثلاثة

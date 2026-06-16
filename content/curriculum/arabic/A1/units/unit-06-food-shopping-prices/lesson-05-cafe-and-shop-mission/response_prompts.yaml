@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Saya ingin air.'
+  target_response: أريد ماءً
+  acceptable_responses:
+  - أريد ماءً
+- prompt: 'Say: Berapa harganya?'
+  target_response: كم السعر؟
+  acceptable_responses:
+  - كم السعر؟
+- prompt: 'Say: Harganya cocok.'
+  target_response: السعر مناسب
+  acceptable_responses:
+  - السعر مناسب

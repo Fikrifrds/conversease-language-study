@@ -1,0 +1,16 @@
+phrases:
+- phrase: أريد ماءً
+  meaning_id: Saya ingin air.
+  usage_note: Order a drink.
+- phrase: كم السعر؟
+  meaning_id: Berapa harganya?
+  usage_note: Ask price.
+- phrase: السعر مناسب
+  meaning_id: Harganya cocok.
+  usage_note: Accept price.
+- phrase: آخذ واحدًا
+  meaning_id: Saya ambil satu.
+  usage_note: Buy one.
+- phrase: الحساب من فضلك
+  meaning_id: Tagihannya, tolong.
+  usage_note: Close the purchase.

@@ -1,0 +1,16 @@
+phrases:
+- phrase: أين المقهى؟
+  meaning_id: Di mana kafe?
+  usage_note: Ask place.
+- phrase: كيف أذهب إلى المقهى؟
+  meaning_id: Bagaimana saya pergi ke kafe?
+  usage_note: Ask directions.
+- phrase: أريد ماءً
+  meaning_id: Saya ingin air.
+  usage_note: Order a drink.
+- phrase: كم السعر؟
+  meaning_id: Berapa harganya?
+  usage_note: Ask price.
+- phrase: السعر مناسب
+  meaning_id: Harganya cocok.
+  usage_note: Accept price.

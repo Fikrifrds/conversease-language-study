@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Maaf."?
+  options:
+  - آسف
+  - آسفة
+  - عذرًا
+  correct_answer: آسف
+- key: phrase_2
+  prompt: Which phrase means "Maaf."?
+  options:
+  - آسفة
+  - آسف
+  - عذرًا
+  correct_answer: آسفة

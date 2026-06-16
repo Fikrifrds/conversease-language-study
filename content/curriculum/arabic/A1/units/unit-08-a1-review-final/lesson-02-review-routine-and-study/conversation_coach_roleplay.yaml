@@ -1,0 +1,46 @@
+scenario_key: arabic_review_routine_and_study
+mode: lesson_practice_coach
+level_code: A1
+opening_line: متى تدرس العربية؟
+learner_goal: Review days, time, and daily study routine.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: متى تدرس العربية؟
+  hint: 'Jawab dengan pola: اليوم الإثنين'
+  sample_answer: اليوم الإثنين
+  focus: Say the day.
+  expected_keywords:
+  - اليوم
+  - الإثنين
+  indonesian_explanation: Hari ini Senin.
+- coach: 'استخدم: الساعة الثامنة'
+  hint: 'Jawab dengan pola: الساعة الثامنة'
+  sample_answer: الساعة الثامنة
+  focus: Say the time.
+  expected_keywords:
+  - الساعة
+  - الثامنة
+  indonesian_explanation: Jam delapan.
+- coach: 'استخدم: أدرس العربية'
+  hint: 'Jawab dengan pola: أدرس العربية'
+  sample_answer: أدرس العربية
+  focus: Say study action.
+  expected_keywords:
+  - أدرس
+  - العربية
+  indonesian_explanation: Saya belajar bahasa Arab.
+target_phrases:
+- اليوم الإثنين
+- الساعة الثامنة
+- أدرس العربية
+- أقرأ وأكتب
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

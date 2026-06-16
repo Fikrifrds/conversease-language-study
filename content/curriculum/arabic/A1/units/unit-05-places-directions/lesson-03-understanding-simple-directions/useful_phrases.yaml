@@ -1,0 +1,16 @@
+phrases:
+- phrase: اذهب يمينًا
+  meaning_id: Pergi ke kanan.
+  usage_note: Give a right direction.
+- phrase: اذهب يسارًا
+  meaning_id: Pergi ke kiri.
+  usage_note: Give a left direction.
+- phrase: إلى الأمام
+  meaning_id: Ke depan
+  usage_note: Give forward direction.
+- phrase: بجانب المكتب
+  meaning_id: Di samping kantor
+  usage_note: Describe beside.
+- phrase: أمام المدرسة
+  meaning_id: Di depan sekolah
+  usage_note: Describe in front.

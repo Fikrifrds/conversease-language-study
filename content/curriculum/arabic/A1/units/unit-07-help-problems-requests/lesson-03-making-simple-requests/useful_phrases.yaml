@@ -1,0 +1,16 @@
+phrases:
+- phrase: افتح الكتاب
+  meaning_id: Buka bukunya.
+  usage_note: Ask someone to open a book.
+- phrase: اكتب الجملة
+  meaning_id: Tulis kalimatnya.
+  usage_note: Ask someone to write.
+- phrase: استمع
+  meaning_id: Dengarkan.
+  usage_note: Ask someone to listen.
+- phrase: تكلم ببطء
+  meaning_id: Bicaralah pelan.
+  usage_note: Ask someone to speak slowly.
+- phrase: من فضلك
+  meaning_id: Tolong.
+  usage_note: Make the request polite.

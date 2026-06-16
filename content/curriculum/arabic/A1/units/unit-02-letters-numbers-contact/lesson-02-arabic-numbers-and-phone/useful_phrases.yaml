@@ -1,0 +1,16 @@
+phrases:
+- phrase: ما رقم هاتفك؟
+  meaning_id: Berapa nomor teleponmu?
+  usage_note: Ask for a phone number.
+- phrase: رقمي ...
+  meaning_id: Nomor saya ...
+  usage_note: Say your number.
+- phrase: واحد، اثنان، ثلاثة
+  meaning_id: Satu, dua, tiga
+  usage_note: Start counting clearly.
+- phrase: أعد الرقم من فضلك
+  meaning_id: Ulangi nomornya, tolong.
+  usage_note: Ask for repetition.
+- phrase: الرقم صحيح
+  meaning_id: Nomornya benar.
+  usage_note: Confirm the number.

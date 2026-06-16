@@ -85,9 +85,9 @@ class Settings(BaseSettings):
     elevenlabs_api_key: str = ""
     elevenlabs_api_base_url: str = "https://api.elevenlabs.io"
     elevenlabs_tts_model: str = "eleven_multilingual_v2"
-    elevenlabs_tts_voice_id: str = "OFHP1Qg30FPoNfkUFFlA"
-    elevenlabs_arabic_male_voice_id: str = "OFHP1Qg30FPoNfkUFFlA"
-    elevenlabs_arabic_female_voice_id: str = "gMB389pj77Qe5nErWNjd"
+    elevenlabs_tts_voice_id: str = "3nav5pHC1EYvWOd5LmnA"
+    elevenlabs_arabic_male_voice_id: str = "3nav5pHC1EYvWOd5LmnA"
+    elevenlabs_arabic_female_voice_id: str = "gVzwmdZzRgBrNjXaTmi5"
     elevenlabs_tts_output_format: str = "mp3_44100_128"
     elevenlabs_tts_timeout_seconds: int = 90
     s3_bucket: str = ""

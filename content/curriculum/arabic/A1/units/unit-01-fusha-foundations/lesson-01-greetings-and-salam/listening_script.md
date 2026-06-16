@@ -8,4 +8,4 @@
 
 ## Audio Direction
 
-Voices: one male teacher and one female learner. Use Arabic Fusha pronunciation. Teacher uses Arabic_FriendlyGuy. Learner uses Arabic_CalmWoman.
+Use Arabic Fusha only. Speaker labels are metadata and must not be spoken. Assign a curated male ElevenLabs voice to Muallim and a curated female ElevenLabs voice to Fatimah. Keep a calm pace with a short natural pause between speakers.

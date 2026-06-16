@@ -1,0 +1,46 @@
+scenario_key: arabic_family_members
+mode: lesson_practice_coach
+level_code: A1
+opening_line: من هذا؟
+learner_goal: Name simple family members and ask who someone is.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: من هذا؟
+  hint: 'Jawab dengan pola: من هذا؟'
+  sample_answer: من هذا؟
+  focus: Ask about a person.
+  expected_keywords:
+  - من
+  - هذا
+  indonesian_explanation: Siapa ini?
+- coach: 'استخدم: هذا أبي'
+  hint: 'Jawab dengan pola: هذا أبي'
+  sample_answer: هذا أبي
+  focus: Identify father.
+  expected_keywords:
+  - هذا
+  - أبي
+  indonesian_explanation: Ini ayah saya.
+- coach: 'استخدم: هذه أمي'
+  hint: 'Jawab dengan pola: هذه أمي'
+  sample_answer: هذه أمي
+  focus: Identify mother.
+  expected_keywords:
+  - هذه
+  - أمي
+  indonesian_explanation: Ini ibu saya.
+target_phrases:
+- من هذا؟
+- هذا أبي
+- هذه أمي
+- هذا أخي
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

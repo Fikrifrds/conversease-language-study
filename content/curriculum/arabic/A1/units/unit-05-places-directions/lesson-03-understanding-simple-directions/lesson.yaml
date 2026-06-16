@@ -1,0 +1,25 @@
+lesson_key: lesson-03-understanding-simple-directions
+slug: arabic-understanding-simple-directions
+title: Understanding Simple Directions
+status: beta
+estimated_minutes: 10
+conversation_situation: understanding_simple_directions
+conversation_goal: Understand right, left, forward, beside, and in front of.
+grammar_summary: Use اذهب + direction and prepositions like بجانب and أمام.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

@@ -1,0 +1,16 @@
+phrases:
+- phrase: اسمي أحمد
+  meaning_id: Nama saya Ahmad.
+  usage_note: Say your name.
+- phrase: أنا من إندونيسيا
+  meaning_id: Saya dari Indonesia.
+  usage_note: Say origin.
+- phrase: أكتب اسمي
+  meaning_id: Saya menulis nama saya.
+  usage_note: Spell your name.
+- phrase: رقمي ...
+  meaning_id: Nomor saya ...
+  usage_note: Share a number.
+- phrase: بريدي الإلكتروني ...
+  meaning_id: Email saya ...
+  usage_note: Share email.

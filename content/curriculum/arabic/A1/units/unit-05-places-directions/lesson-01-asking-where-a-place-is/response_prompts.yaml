@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Di mana perpustakaan?'
+  target_response: أين المكتبة؟
+  acceptable_responses:
+  - أين المكتبة؟
+- prompt: 'Say: Perpustakaan di sini.'
+  target_response: المكتبة هنا
+  acceptable_responses:
+  - المكتبة هنا
+- prompt: 'Say: Di sana'
+  target_response: هناك
+  acceptable_responses:
+  - هناك

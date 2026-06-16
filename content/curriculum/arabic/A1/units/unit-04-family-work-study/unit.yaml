@@ -1,0 +1,11 @@
+unit_key: unit-04-family-work-study
+level_code: A1
+title: Family, Work & Study
+main_conversation_outcome: Talk simply about family, work, study, likes, and basic ability.
+status: beta
+lessons:
+- lesson-01-family-members
+- lesson-02-saying-what-you-do
+- lesson-03-asking-about-work-or-study
+- lesson-04-likes-and-ability
+- lesson-05-family-work-study-mission

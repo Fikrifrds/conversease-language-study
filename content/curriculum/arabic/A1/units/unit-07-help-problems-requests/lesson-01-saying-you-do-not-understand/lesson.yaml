@@ -1,0 +1,25 @@
+lesson_key: lesson-01-saying-you-do-not-understand
+slug: arabic-saying-you-do-not-understand
+title: Saying You Do Not Understand
+status: beta
+estimated_minutes: 10
+conversation_situation: saying_you_do_not_understand
+conversation_goal: Say you do not understand and ask for a word meaning.
+grammar_summary: Use لا أفهم and ماذا يعني ...؟ to ask for meaning.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

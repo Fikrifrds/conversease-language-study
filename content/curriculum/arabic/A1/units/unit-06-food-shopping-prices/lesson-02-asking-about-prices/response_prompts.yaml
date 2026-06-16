@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Berapa harganya?'
+  target_response: كم السعر؟
+  acceptable_responses:
+  - كم السعر؟
+- prompt: 'Say: Harganya lima riyal.'
+  target_response: السعر خمسة ريالات
+  acceptable_responses:
+  - السعر خمسة ريالات
+- prompt: 'Say: Mahal'
+  target_response: غالٍ
+  acceptable_responses:
+  - غالٍ

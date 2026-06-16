@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Siapa ini?"?
+  options:
+  - من هذا؟
+  - هذا أبي
+  - هذه أمي
+  correct_answer: من هذا؟
+- key: phrase_2
+  prompt: Which phrase means "Ini ayah saya."?
+  options:
+  - هذا أبي
+  - من هذا؟
+  - هذه أمي
+  correct_answer: هذا أبي

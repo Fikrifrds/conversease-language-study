@@ -1,0 +1,25 @@
+lesson_key: lesson-01-spelling-your-name
+slug: arabic-spelling-your-name
+title: Spelling Your Name
+status: beta
+estimated_minutes: 10
+conversation_situation: spelling_your_name
+conversation_goal: Spell a short name in Arabic Fusha and ask whether the spelling is correct.
+grammar_summary: Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 60

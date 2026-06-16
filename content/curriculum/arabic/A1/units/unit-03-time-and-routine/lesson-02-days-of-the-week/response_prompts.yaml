@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Say: Hari apa hari ini?'
+  target_response: أي يوم اليوم؟
+  acceptable_responses:
+  - أي يوم اليوم؟
+- prompt: 'Say: Hari ini Senin.'
+  target_response: اليوم الإثنين
+  acceptable_responses:
+  - اليوم الإثنين
+- prompt: 'Say: Besok Selasa.'
+  target_response: غدًا الثلاثاء
+  acceptable_responses:
+  - غدًا الثلاثاء

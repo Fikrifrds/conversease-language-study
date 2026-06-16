@@ -1,0 +1,16 @@
+phrases:
+- phrase: من هذا؟
+  meaning_id: Siapa ini?
+  usage_note: Ask about a person.
+- phrase: هذا أبي
+  meaning_id: Ini ayah saya.
+  usage_note: Identify father.
+- phrase: هذه أمي
+  meaning_id: Ini ibu saya.
+  usage_note: Identify mother.
+- phrase: هذا أخي
+  meaning_id: Ini saudara laki-laki saya.
+  usage_note: Identify brother.
+- phrase: هذه عائلتي
+  meaning_id: Ini keluarga saya.
+  usage_note: Talk about family.

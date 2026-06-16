@@ -1,0 +1,46 @@
+scenario_key: arabic_asking_when
+mode: lesson_practice_coach
+level_code: A1
+opening_line: متى الدرس؟
+learner_goal: Ask when something happens and answer with a simple time phrase.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: متى الدرس؟
+  hint: 'Jawab dengan pola: متى الدرس؟'
+  sample_answer: متى الدرس؟
+  focus: Ask when a lesson happens.
+  expected_keywords:
+  - متى
+  - الدرس
+  indonesian_explanation: Kapan pelajarannya?
+- coach: 'استخدم: في الصباح'
+  hint: 'Jawab dengan pola: في الصباح'
+  sample_answer: في الصباح
+  focus: Answer with a time of day.
+  expected_keywords:
+  - في
+  - الصباح
+  indonesian_explanation: Pada pagi hari
+- coach: 'استخدم: بعد الظهر'
+  hint: 'Jawab dengan pola: بعد الظهر'
+  sample_answer: بعد الظهر
+  focus: Answer with afternoon timing.
+  expected_keywords:
+  - بعد
+  - الظهر
+  indonesian_explanation: Setelah tengah hari
+target_phrases:
+- متى الدرس؟
+- في الصباح
+- بعد الظهر
+- قبل الدرس
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

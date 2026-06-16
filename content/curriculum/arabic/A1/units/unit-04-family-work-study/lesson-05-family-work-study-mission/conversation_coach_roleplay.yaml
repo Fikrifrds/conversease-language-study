@@ -1,0 +1,46 @@
+scenario_key: arabic_family_work_study_mission
+mode: lesson_practice_coach
+level_code: A1
+opening_line: حدثيني عن نفسك.
+learner_goal: Combine family, work/study, and likes in one short formal conversation.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: حدثيني عن نفسك.
+  hint: 'Jawab dengan pola: هذه عائلتي'
+  sample_answer: هذه عائلتي
+  focus: Introduce family.
+  expected_keywords:
+  - هذه
+  - عائلتي
+  indonesian_explanation: Ini keluarga saya.
+- coach: 'استخدم: أنا طالب'
+  hint: 'Jawab dengan pola: أنا طالب'
+  sample_answer: أنا طالب
+  focus: Say study identity.
+  expected_keywords:
+  - أنا
+  - طالب
+  indonesian_explanation: Saya pelajar.
+- coach: 'استخدم: أدرس العربية'
+  hint: 'Jawab dengan pola: أدرس العربية'
+  sample_answer: أدرس العربية
+  focus: Say study topic.
+  expected_keywords:
+  - أدرس
+  - العربية
+  indonesian_explanation: Saya belajar bahasa Arab.
+target_phrases:
+- هذه عائلتي
+- أنا طالب
+- أدرس العربية
+- أعمل في مكتب
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

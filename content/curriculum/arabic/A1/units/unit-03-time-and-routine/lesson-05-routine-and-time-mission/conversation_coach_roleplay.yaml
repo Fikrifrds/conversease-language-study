@@ -1,0 +1,44 @@
+scenario_key: arabic_routine_and_time_mission
+mode: lesson_practice_coach
+level_code: A1
+opening_line: أي يوم اليوم؟
+learner_goal: Combine day, time, and routine phrases in one short conversation.
+max_turns: 4
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أي يوم اليوم؟
+  hint: 'Jawab dengan pola: اليوم ...'
+  sample_answer: اليوم ...
+  focus: Start with the day.
+  expected_keywords:
+  - اليوم
+  indonesian_explanation: Hari ini ...
+- coach: 'استخدم: الساعة ...'
+  hint: 'Jawab dengan pola: الساعة ...'
+  sample_answer: الساعة ...
+  focus: Say a time.
+  expected_keywords:
+  - الساعة
+  indonesian_explanation: Jam ...
+- coach: 'استخدم: عندي درس'
+  hint: 'Jawab dengan pola: عندي درس'
+  sample_answer: عندي درس
+  focus: Mention a scheduled lesson.
+  expected_keywords:
+  - عندي
+  - درس
+  indonesian_explanation: Saya punya pelajaran.
+target_phrases:
+- اليوم ...
+- الساعة ...
+- عندي درس
+- أدرس العربية
+rubric:
+  speaking:
+    minimum_score: 60
+  relevance:
+    minimum_score: 60
+  grammar:
+    minimum_score: 55

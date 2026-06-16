@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Which phrase means "Halo."?
+  options:
+  - مرحبًا
+  - اسمي ...
+  - أدرس العربية
+  correct_answer: مرحبًا
+- key: phrase_2
+  prompt: Which phrase means "Nama saya ..."?
+  options:
+  - اسمي ...
+  - مرحبًا
+  - أدرس العربية
+  correct_answer: اسمي ...
