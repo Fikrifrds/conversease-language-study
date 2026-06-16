@@ -1,11 +1,11 @@
 # Listening Script
 
 **Muallimah:** ماذا تريد؟
-**Zayd:** أريد ماءً وقلمًا.
-**Muallimah:** السعر ستة ريالات.
-**Zayd:** مناسب، آخذهما.
+**Zayd:** أريد ماءً من فضلك.
 **Muallimah:** تفضل.
-**Zayd:** شكرًا.
+**Zayd:** كم السعر؟
+**Muallimah:** السعر ريالان.
+**Zayd:** آخذ واحدًا، شكرًا.
 
 ## Audio Direction
 

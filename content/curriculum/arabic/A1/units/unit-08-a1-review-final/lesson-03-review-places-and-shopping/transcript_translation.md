@@ -1,8 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** أين المقهى؟ -> Di mana kafe?
-- **Layla:** المقهى بجانب المكتبة. -> Kafe di samping perpustakaan.
+- **Khalid:** أين المقهى؟ -> Di mana kafenya?
+- **Layla:** المقهى بجانب المكتبة. -> Kafe itu di samping perpustakaan.
 - **Khalid:** كيف أذهب إليه؟ -> Bagaimana saya pergi ke sana?
-- **Layla:** اذهب إلى الأمام ثم يسارًا. -> Pergilah ke depan lalu ke kiri.
-- **Khalid:** في المقهى أريد ماءً. كم السعر؟ -> Di kafe saya ingin air. Berapa harganya?
-- **Layla:** السعر ريالان. -> Harganya dua riyal.
+- **Layla:** اذهب إلى الأمام ثم انعطف يسارًا. -> Pergilah lurus ke depan lalu belok kiri.
+- **Khalid:** شكرًا. أريد ماءً في المقهى. -> Terima kasih. Saya ingin air di kafe.
+- **Layla:** نعم، تفضل. -> Ya, silakan.
+- **Khalid:** كم السعر؟ -> Berapa harganya?
+- **Layla:** سعر الماء ريالان. -> Harga airnya dua riyal.

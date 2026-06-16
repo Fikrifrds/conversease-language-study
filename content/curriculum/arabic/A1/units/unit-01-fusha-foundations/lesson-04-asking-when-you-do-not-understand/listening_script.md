@@ -1,10 +1,10 @@
 # Listening Script
 
-**Muallim:** اقرأ الجملة.
-**Fatimah:** عفوا، لا أفهم.
-**Muallim:** أعد من فضلك.
-**Fatimah:** ما معنى الكلمة؟
-**Muallim:** معنى الكلمة: المقصود بها.
+**Muallim:** اقرئي الجملة.
+**Fatimah:** عفوًا، لا أفهم.
+**Muallim:** لا بأس، أقرأها ببطء.
+**Fatimah:** ما معنى كلمة أعد؟
+**Muallim:** معناها: قل الشيء مرة أخرى.
 
 ## Audio Direction
 

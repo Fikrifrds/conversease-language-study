@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Muallim:** أين تريد أن تذهب؟ -> Ke mana kamu ingin pergi?
+- **Muallim:** إلى أين تريدين أن تذهبي؟ -> Ke mana kamu ingin pergi?
 - **Noura:** أريد أن أذهب إلى الفصل. -> Saya ingin pergi ke kelas.
-- **Muallim:** اذهبي يمينًا، ثم إلى الأمام. -> Pergilah ke kanan, lalu ke depan.
-- **Noura:** أين الفصل؟ -> Di mana kelasnya?
-- **Muallim:** هو بجانب المكتبة. -> Kelas di samping perpustakaan.
-- **Noura:** واضح، شكرًا. -> Jelas, terima kasih.
+- **Muallim:** اذهبي يمينًا ثم إلى الأمام. -> Pergilah ke kanan lalu lurus ke depan.
+- **Noura:** وأين الفصل؟ -> Dan di mana kelasnya?
+- **Muallim:** الفصل بجانب المكتبة. -> Kelasnya di samping perpustakaan.
+- **Noura:** حسنًا، شكرًا. -> Baik, terima kasih.

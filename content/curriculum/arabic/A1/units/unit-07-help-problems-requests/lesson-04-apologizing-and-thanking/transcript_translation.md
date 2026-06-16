@@ -1,8 +1,8 @@
 # Transcript Translation
 
 - **Ahmad:** عذرًا، لا أفهم. -> Maaf, saya tidak paham.
-- **Maryam:** لا مشكلة. أشرح مرة أخرى. -> Tidak masalah. Saya jelaskan sekali lagi.
-- **Ahmad:** شكرًا. -> Terima kasih.
+- **Maryam:** لا بأس، أشرح مرة أخرى. -> Tidak apa-apa, saya jelaskan sekali lagi.
+- **Ahmad:** شكرًا جزيلًا. -> Terima kasih banyak.
 - **Maryam:** على الرحب والسعة. -> Sama-sama.
-- **Ahmad:** آسف على السؤال. -> Maaf atas pertanyaannya.
-- **Maryam:** لا مشكلة. -> Tidak masalah.
+- **Ahmad:** آسف، عندي سؤال آخر. -> Maaf, saya punya pertanyaan lain.
+- **Maryam:** لا بأس. -> Tidak apa-apa.

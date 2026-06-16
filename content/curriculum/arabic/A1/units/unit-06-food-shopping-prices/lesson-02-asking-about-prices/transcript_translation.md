@@ -1,7 +1,7 @@
 # Transcript Translation
 
-- **Maryam:** كم السعر؟ -> Berapa harganya?
-- **Zayd:** السعر خمسة ريالات. -> Harganya lima riyal.
-- **Maryam:** هل السعر مناسب؟ -> Apakah harganya cocok?
-- **Zayd:** نعم، السعر مناسب. -> Ya, harganya cocok.
-- **Maryam:** آخذ واحدًا. -> Saya ambil satu.
+- **Maryam:** كم سعر القلم؟ -> Berapa harga penanya?
+- **Zayd:** سعره خمسة ريالات. -> Harganya lima riyal.
+- **Maryam:** السعر مناسب. -> Harganya cocok.
+- **Zayd:** هل تأخذين واحدًا؟ -> Apakah kamu mengambil satu?
+- **Maryam:** نعم، آخذ واحدًا. -> Ya, saya ambil satu.
