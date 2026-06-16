@@ -1,6 +1,23 @@
 lesson_key: lesson-02-simple-place-words
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260616T085902Z.wav
+  duration_seconds: 12.81
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260616T085902Z.wav
+  trace_id: ZHRoALtZWGcP06d0Ig8P,pQ9whwOG5NuJDzoJjI9c,eG3r3ewnMeSDjUV6TzvT,4c3vDIr4uV0rVA9ICAzX,Sci83qns35RTjTvxxTPH,1chFt0otaJ08CE03eDUO
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:59:02.816676+00:00'

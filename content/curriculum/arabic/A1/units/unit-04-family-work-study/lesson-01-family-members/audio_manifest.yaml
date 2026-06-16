@@ -1,6 +1,23 @@
 lesson_key: lesson-01-family-members
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260616T085730Z.wav
+  duration_seconds: 11.28
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260616T085730Z.wav
+  trace_id: LCPL9fsJNJ0hg7Rza7T1,BS5jKA9GnbdZp4CwtBjM,GKChgKD4FYMLYYMmQxhu,kzwk5f2z6c2GrVx4mvwa,Kf9Jt6A6ZQRNgLrLAUkL,E7Ii1mu6t0l3cHnP876n
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:57:30.809309+00:00'

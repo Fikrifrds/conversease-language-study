@@ -1,6 +1,23 @@
 lesson_key: lesson-05-finding-a-place-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085947Z.wav
+  duration_seconds: 13.7
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Muallim: 3nav5pHC1EYvWOd5LmnA
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085947Z.wav
+  trace_id: vrO9nM8OqvfZIxEGCgbk,ztJVXMeElE0LETZjb4Cm,x0zZqBhNPo47VNFAN9NP,WgTO0sqtO1FtpW7RJjbS,w3bJinYZTFZYllgdNtd4,kqHqiCLqJgpHNVTr9Nan
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:59:47.606772+00:00'

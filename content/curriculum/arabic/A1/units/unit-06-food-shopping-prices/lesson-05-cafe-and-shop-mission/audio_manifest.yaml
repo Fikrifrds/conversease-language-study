@@ -1,6 +1,23 @@
 lesson_key: lesson-05-cafe-and-shop-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T090122Z.wav
+  duration_seconds: 11.19
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Muallimah: gVzwmdZzRgBrNjXaTmi5
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T090122Z.wav
+  trace_id: ickz9bKfwCUSlRsQN9ac,ICEcVhuYVKFoC1l5DFUp,PfrCfvntmW9C5Q6sMtyb,P7uMWRS3JyRWUkasmE2l,BwOLItKceA9jDiEyMR8A,RDViKh9m9UwxFmI9lr6U
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T09:01:22.133530+00:00'

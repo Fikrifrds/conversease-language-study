@@ -1,6 +1,23 @@
 lesson_key: lesson-01-review-introductions-and-contact
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260616T090314Z.wav
+  duration_seconds: 15.65
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Muallim: 3nav5pHC1EYvWOd5LmnA
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260616T090314Z.wav
+  trace_id: En7J7Gr1MhPcsnoqXdsl,MjhTE5p31uxpJVfXtVQg,4eN56b8vCTuG7rLPvawJ,Ki9xErqDw0QkPAqCVa1T,JcjvGqdn8Ov4jGVdJRlO,E40xIRoxXNg6tnR42Emn
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T09:03:14.936587+00:00'

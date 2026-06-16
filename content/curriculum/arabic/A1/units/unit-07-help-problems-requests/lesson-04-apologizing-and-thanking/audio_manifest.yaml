@@ -1,6 +1,23 @@
 lesson_key: lesson-04-apologizing-and-thanking
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-3nav5pHC1EYvWOd5LmnA-20260616T090237Z.wav
+  duration_seconds: 12.63
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-3nav5pHC1EYvWOd5LmnA-20260616T090237Z.wav
+  trace_id: FzYdtgHGaxWLASbN5ZdO,v02796awYaAIz0wCSDLQ,MBmSzgohKahzQVPTkl2D,69Mzph0a9l5rvG0kFgHt,3it37qomfqTtRaHXDQ9s,aXrFB9JNdS3lmpGPwTWG
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T09:02:37.337551+00:00'

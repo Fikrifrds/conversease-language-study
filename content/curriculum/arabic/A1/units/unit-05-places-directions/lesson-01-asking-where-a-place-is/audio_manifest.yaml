@@ -1,6 +1,23 @@
 lesson_key: lesson-01-asking-where-a-place-is
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260616T085848Z.wav
+  duration_seconds: 8.25
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260616T085848Z.wav
+  trace_id: ixrLQYWUqwwHYi3PtWV4,TSqVfXOyKZtNCj3vsnLo,mQMy4eoRMJdxWbBnrXjS,APGMF7YjDMPSKKZpyyKa,mz3uslWGaIPX8V3LWpPB
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:58:48.760583+00:00'

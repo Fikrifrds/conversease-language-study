@@ -1,6 +1,23 @@
 lesson_key: lesson-03-class-and-study-instructions
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/listening-3nav5pHC1EYvWOd5LmnA-20260616T085315Z.wav
+  duration_seconds: 11.04
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Muallim: 3nav5pHC1EYvWOd5LmnA
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/listening-3nav5pHC1EYvWOd5LmnA-20260616T085315Z.wav
+  trace_id: njWNuc7OoajfKklXTPHt,JBQ2Sj7E9slbK6txTmzS,QmAwktslKTw604HOiaSG,4coDWR6nrBnoPA8GMFK1,Uep7rb81E1twgVbze2fz
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:53:15.736083+00:00'

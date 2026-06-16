@@ -1,6 +1,23 @@
 lesson_key: lesson-04-asking-to-repeat-a-letter
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/listening-3nav5pHC1EYvWOd5LmnA-20260616T085530Z.wav
+  duration_seconds: 9.93
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Layla: kdUY91gH5xyDHapxlthT
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/listening-3nav5pHC1EYvWOd5LmnA-20260616T085530Z.wav
+  trace_id: T0NUqFocadVd4k6qtZDU,wvmjyK2yIXM3iFA04o7p,kPeDfsJcNYqsZOQ0HJaK,hDphExScgFz7s9z2bAQI,bipmIZ0eqSvlvKfYEV89,pZoJzsRr2RCwKkrsCgtU
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T08:55:30.785481+00:00'
