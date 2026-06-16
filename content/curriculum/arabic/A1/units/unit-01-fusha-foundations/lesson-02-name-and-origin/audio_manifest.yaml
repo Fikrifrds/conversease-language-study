@@ -1,7 +1,23 @@
 lesson_key: lesson-02-name-and-origin
-status: not_generated
-provider: minimax
+status: generated
+provider: elevenlabs
 model: speech-2.8-hd
 default_voice_id: multi_speaker
-assets: []
-
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-OFHP1Qg30FPoNfkUFFlA-20260616T020530Z.wav
+  duration_seconds: 10.76
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: rPNcQ53R703tTmtue1AT
+    Muallim: OFHP1Qg30FPoNfkUFFlA
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-OFHP1Qg30FPoNfkUFFlA-20260616T020530Z.wav
+  trace_id: ar41Z4gsg6ugw1o2Au8M,ko9lOuLHmkhP522iVKn6,NvJRb6BzlSnVz2SWHKII,Ur7K4qDQoxXTQyZXCG6U,5xHZBjsOa8Kb2gjH3zUg
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T02:05:30.691744+00:00'

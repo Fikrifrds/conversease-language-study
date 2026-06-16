@@ -1,7 +1,23 @@
 lesson_key: lesson-05-fusha-introduction-mission
-status: not_generated
-provider: minimax
+status: generated
+provider: elevenlabs
 model: speech-2.8-hd
 default_voice_id: multi_speaker
-assets: []
-
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/listening-OFHP1Qg30FPoNfkUFFlA-20260616T020621Z.wav
+  duration_seconds: 15.98
+  provider: elevenlabs
+  model: eleven_multilingual_v2
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: rPNcQ53R703tTmtue1AT
+    Muallim: OFHP1Qg30FPoNfkUFFlA
+  line_count: 7
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/listening-OFHP1Qg30FPoNfkUFFlA-20260616T020621Z.wav
+  trace_id: EPMSzR5Qh2YzT5pcGhu0,qDIyREqQQHF3RcFtuiOt,Ecxj7FqHcf7VPIg6uRCc,zn2d83cs9KgL1O7e7KJD,bDC2wXdSsVwKHEiAqP1m,RkHiFmJivavOuBGcMWCM,BpC5X4EwBx5t2uamxHym
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-16T02:06:21.213745+00:00'
