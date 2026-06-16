@@ -4,7 +4,7 @@ title: Formal Greetings
 status: beta
 estimated_minutes: 10
 conversation_situation: greeting_a_teacher_in_arabic_class
-conversation_goal: Greet someone formally in Arabic Fusha and answer a simple "how are you" question.
+conversation_goal: Greet someone formally in Arabic and answer a simple "how are you" question.
 grammar_summary: Use مرحبًا or صباح الخير for greeting, and أنا بخير، شكرًا to answer politely.
 required_sections:
   - conversation_goal

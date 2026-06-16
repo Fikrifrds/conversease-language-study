@@ -13,7 +13,7 @@ type LanguageFilter = "all" | "english" | "arabic";
 const languageFilters: Array<{ key: LanguageFilter; label: string }> = [
   { key: "all", label: "Semua" },
   { key: "english", label: "English" },
-  { key: "arabic", label: "Arabic Fusha" }
+  { key: "arabic", label: "Arabic" }
 ];
 
 export default function CoursesPage() {
@@ -68,7 +68,7 @@ export default function CoursesPage() {
             <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan Conversease</h1>
             <p className="mt-3 leading-7 text-ink/70">
-              English track aktif dari A1 sampai C1. Arabic Fusha sedang masuk fase beta: formal,
+              English track aktif dari A1 sampai C1. Arabic sedang masuk fase beta: formal,
               bukan amiyah, untuk dialog umum, instruksi kelas, dan bacaan pendek.
             </p>
           </div>

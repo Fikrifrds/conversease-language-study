@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the Arabic Fusha A1 beta curriculum.
+"""Generate the Arabic A1 beta curriculum.
 
 This is intentionally deterministic: the authored lesson specs below expand
 into the same file layout used by the English curriculum and the Arabic pilot.
@@ -83,7 +83,7 @@ def lesson(
 UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-01-fusha-foundations",
-        "title": "Fusha Foundations",
+        "title": "Arabic Foundations",
         "status": "beta",
         "main_conversation_outcome": "Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.",
         "lessons": [
@@ -114,7 +114,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
             {
                 "lesson_key": "lesson-05-fusha-introduction-mission",
                 "slug": "arabic-fusha-introduction-mission",
-                "title": "Fusha Introduction Mission",
+                "title": "Arabic Introduction Mission",
                 "status": "beta",
             },
         ],
@@ -123,14 +123,14 @@ UNIT_PLANS: list[dict[str, Any]] = [
         "unit_key": "unit-02-letters-numbers-contact",
         "title": "Letters, Numbers & Contact",
         "status": "beta",
-        "main_conversation_outcome": "Spell simple names, exchange numbers, and share basic contact details in Arabic Fusha.",
+        "main_conversation_outcome": "Spell simple names, exchange numbers, and share basic contact details in Arabic.",
         "lessons": [
             lesson(
                 "lesson-01-spelling-your-name",
                 "arabic-spelling-your-name",
                 "Spelling Your Name",
                 "Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.",
-                "Spell a short name in Arabic Fusha and ask whether the spelling is correct.",
+                "Spell a short name in Arabic and ask whether the spelling is correct.",
                 "Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.",
                 ["أكتب اسمي: ...", "هذا حرف ...", "هل هذا صحيح؟"],
                 [
@@ -248,7 +248,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
         "unit_key": "unit-03-time-and-routine",
         "title": "Time & Daily Routine",
         "status": "beta",
-        "main_conversation_outcome": "Talk about simple time, days, schedules, and daily activities in Arabic Fusha.",
+        "main_conversation_outcome": "Talk about simple time, days, schedules, and daily activities in Arabic.",
         "lessons": [
             lesson(
                 "lesson-01-asking-the-time",
@@ -300,7 +300,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "lesson-03-talking-about-daily-routines",
                 "arabic-talking-about-daily-routines",
                 "Talking About Daily Routines",
-                "Kamu menceritakan rutinitas pagi dengan kalimat Fusha yang sangat pendek.",
+                "Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.",
                 "Say a few simple daily actions in order.",
                 "Use present verbs like أقرأ, أكتب, أدرس, and ثم to connect actions.",
                 ["أقرأ", "أكتب", "أدرس العربية", "ثم أعمل"],
@@ -501,7 +501,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
         "unit_key": "unit-05-places-directions",
         "title": "Places & Directions",
         "status": "beta",
-        "main_conversation_outcome": "Ask where places are and understand simple directions in Arabic Fusha.",
+        "main_conversation_outcome": "Ask where places are and understand simple directions in Arabic.",
         "lessons": [
             lesson(
                 "lesson-01-asking-where-a-place-is",
@@ -627,14 +627,14 @@ UNIT_PLANS: list[dict[str, Any]] = [
         "unit_key": "unit-06-food-shopping-prices",
         "title": "Food, Shopping & Prices",
         "status": "beta",
-        "main_conversation_outcome": "Order simple items, ask prices, and say what you want in Arabic Fusha.",
+        "main_conversation_outcome": "Order simple items, ask prices, and say what you want in Arabic.",
         "lessons": [
             lesson(
                 "lesson-01-ordering-a-drink",
                 "arabic-ordering-a-drink",
                 "Ordering a Drink",
                 "Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
-                "Order water or coffee using polite Fusha phrases.",
+                "Order water or coffee using polite Arabic phrases.",
                 "Use أريد + noun and من فضلك for a polite request.",
                 ["أريد ماءً", "أريد قهوة", "من فضلك", "هل عندكم ...؟"],
                 [
@@ -752,7 +752,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
         "unit_key": "unit-07-help-problems-requests",
         "title": "Help, Problems & Requests",
         "status": "beta",
-        "main_conversation_outcome": "Ask for help, explain simple problems, and make polite requests in Arabic Fusha.",
+        "main_conversation_outcome": "Ask for help, explain simple problems, and make polite requests in Arabic.",
         "lessons": [
             lesson(
                 "lesson-01-saying-you-do-not-understand",
@@ -984,7 +984,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "arabic-a1-final-conversation",
                 "A1 Final Conversation",
                 "Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.",
-                "Complete a short Arabic Fusha A1 conversation using core skills from the level.",
+                "Complete a short Arabic A1 conversation using core skills from the level.",
                 "Combine greetings, introductions, schedule, directions, ordering, and help requests.",
                 ["مرحبًا", "اسمي ...", "أدرس العربية", "أين ...؟", "أريد ..."],
                 [
@@ -1037,7 +1037,7 @@ def update_content_plan() -> None:
         "language_code": "ar",
         "level_code": "A1",
         "course_slug": "arabic-a1-fusha-foundations",
-        "course_title": "Fusha Foundations",
+        "course_title": "Arabic Foundations",
         "access_tier": "pro_beta",
         "target_lesson_count": sum(len(unit["lessons"]) for unit in UNIT_PLANS),
         "units": [
@@ -1104,7 +1104,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
         "## Situation\n\n"
         f"{item['situation']}\n\n"
         "## Learning Notes\n\n"
-        "Arabic Fusha is formal and precise. Fokus latihan ini adalah kalimat pendek yang aman "
+        "Arabic is formal and precise. Fokus latihan ini adalah kalimat pendek yang aman "
         "untuk percakapan umum, kelas, dan situasi belajar.\n",
         encoding="utf-8",
     )
@@ -1121,7 +1121,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
         "# Listening Script\n\n"
         + "\n".join(f"**{speaker}:** {text}" for speaker, text, _ in item["dialogue"])
         + "\n\n## Audio Direction\n\n"
-        "Use Arabic Fusha only. Speaker labels are metadata and must not be spoken. "
+        "Use Arabic only. Speaker labels are metadata and must not be spoken. "
         "Keep a calm pace with a short natural pause between speakers.\n",
         encoding="utf-8",
     )

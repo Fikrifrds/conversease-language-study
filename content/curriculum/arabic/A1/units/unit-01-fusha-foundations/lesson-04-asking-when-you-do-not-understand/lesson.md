@@ -1,6 +1,6 @@
 # Asking When You Do Not Understand
 
-After this lesson, learners can ask for repetition and meaning in simple Arabic Fusha.
+After this lesson, learners can ask for repetition and meaning in simple Arabic.
 
 ## Situation
 

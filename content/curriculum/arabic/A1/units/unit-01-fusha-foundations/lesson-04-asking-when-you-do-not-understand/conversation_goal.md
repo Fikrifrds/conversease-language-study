@@ -1,4 +1,4 @@
-Say that you do not understand and ask someone to repeat or explain a word in Arabic Fusha.
+Say that you do not understand and ask someone to repeat or explain a word in Arabic.
 
 Learners should be able to say:
 

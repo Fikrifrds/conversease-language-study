@@ -8,4 +8,4 @@ Kamu menunjukkan foto keluarga dan menyebut anggota keluarga dengan kalimat pend
 
 ## Learning Notes
 
-Arabic Fusha is formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.

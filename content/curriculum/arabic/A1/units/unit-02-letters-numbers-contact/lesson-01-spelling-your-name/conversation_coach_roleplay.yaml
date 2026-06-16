@@ -2,7 +2,7 @@ scenario_key: arabic_spelling_your_name
 mode: lesson_practice_coach
 level_code: A1
 opening_line: كيف تكتب اسمك؟
-learner_goal: Spell a short name in Arabic Fusha and ask whether the spelling is correct.
+learner_goal: Spell a short name in Arabic and ask whether the spelling is correct.
 max_turns: 4
 feedback_level:
   free: basic

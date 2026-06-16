@@ -4,7 +4,7 @@ title: Asking When You Do Not Understand
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_for_repetition_in_arabic_class
-conversation_goal: Say that you do not understand and ask someone to repeat or explain a word in Arabic Fusha.
+conversation_goal: Say that you do not understand and ask someone to repeat or explain a word in Arabic.
 grammar_summary: Use لا أفهم for "I do not understand", أعد من فضلك for "repeat please", and ما معنى ...؟ to ask meaning.
 required_sections:
   - conversation_goal

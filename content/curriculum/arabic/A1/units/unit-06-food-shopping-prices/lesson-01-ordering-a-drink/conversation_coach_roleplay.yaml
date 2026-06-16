@@ -2,7 +2,7 @@ scenario_key: arabic_ordering_a_drink
 mode: lesson_practice_coach
 level_code: A1
 opening_line: مرحبًا.
-learner_goal: Order water or coffee using polite Fusha phrases.
+learner_goal: Order water or coffee using polite Arabic phrases.
 max_turns: 4
 feedback_level:
   free: basic

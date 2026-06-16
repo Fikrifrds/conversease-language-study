@@ -4,7 +4,7 @@ title: Name and Origin
 status: beta
 estimated_minutes: 10
 conversation_situation: introducing_yourself_in_formal_arabic
-conversation_goal: Say your name and country in simple Arabic Fusha, then ask the same question back.
+conversation_goal: Say your name and country in simple Arabic, then ask the same question back.
 grammar_summary: Use اسمي + name for "my name is" and أنا من + place for "I am from".
 required_sections:
   - conversation_goal

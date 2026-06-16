@@ -4,7 +4,7 @@ title: Spelling Your Name
 status: beta
 estimated_minutes: 10
 conversation_situation: spelling_your_name
-conversation_goal: Spell a short name in Arabic Fusha and ask whether the spelling is correct.
+conversation_goal: Spell a short name in Arabic and ask whether the spelling is correct.
 grammar_summary: Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.
 required_sections:
 - conversation_goal

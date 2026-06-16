@@ -138,7 +138,7 @@ def extract_level_outcome(level_spec: Path) -> str:
 def language_label(language: str) -> str:
     labels = {
         "english": "English",
-        "arabic": "Arabic Fusha",
+        "arabic": "Arabic",
     }
     return labels.get(language, language.replace("-", " ").title())
 

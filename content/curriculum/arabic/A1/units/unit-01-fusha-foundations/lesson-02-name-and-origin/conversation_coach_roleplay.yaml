@@ -2,7 +2,7 @@ scenario_key: arabic_name_and_origin
 mode: lesson_practice_coach
 level_code: A1
 opening_line: ما اسمك؟
-learner_goal: Say your name and origin in Arabic Fusha.
+learner_goal: Say your name and origin in Arabic.
 max_turns: 4
 feedback_level:
   free: basic

@@ -2,7 +2,7 @@ scenario_key: arabic_greetings_and_salam
 mode: lesson_practice_coach
 level_code: A1
 opening_line: مرحبًا. كيف حالك اليوم؟
-learner_goal: Reply to a formal greeting and answer how you are in simple Arabic Fusha.
+learner_goal: Reply to a formal greeting and answer how you are in simple Arabic.
 max_turns: 3
 feedback_level:
   free: basic

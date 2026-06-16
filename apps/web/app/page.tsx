@@ -44,7 +44,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
               Belajar bahasa lewat percakapan terarah. Mulai dari English speaking, lalu masuk ke
-              Arabic Fusha beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
+              Arabic beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <ActionButton href="/register" icon={ArrowRight} tone="light">
@@ -103,14 +103,14 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Learning Tracks" title="English aktif, Arabic Fusha mulai beta">
+        <SectionHeading eyebrow="Learning Tracks" title="English aktif, Arabic mulai beta">
           Conversease tetap conversation-first: dengar, pahami, tirukan, respons, lalu dapat
           feedback yang jelas untuk tiap track bahasa.
         </SectionHeading>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {[
             ["English Conversation", "Mulai dari greeting, self-introduction, daily routine, simple questions, sampai evaluasi A1."],
-            ["Arabic Fusha Beta", "Fondasi Fusha untuk sapaan umum, perkenalan, instruksi kelas, dan frasa ketika belum paham."],
+            ["Arabic", "Fondasi Arabic formal untuk sapaan umum, perkenalan, instruksi kelas, dan frasa ketika belum paham."],
             ["Bicara dengan Jelas", "Ulangi frasa berguna dan bangun rasa percaya diri pelafalan langkah demi langkah."],
             ["Feedback Percakapan", "Versi lebih baik, penjelasan Indonesia, skor, dan latihan berikutnya."]
           ].map(([title, text]) => (
@@ -127,7 +127,7 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <SectionHeading eyebrow="Harga" title="Free + Pro" tone="light">
             Pro membuka kurikulum aktif, feedback detail, evaluasi level, laporan progress, dan
-            akses Arabic Fusha selama beta. Setelah launch publik, English, Arabic, dan All Access
+            akses Arabic selama beta. Setelah launch publik, English, Arabic, dan All Access
             bisa dipisahkan sebagai paket berbeda.
           </SectionHeading>
           <div className="grid gap-3 md:grid-cols-2">

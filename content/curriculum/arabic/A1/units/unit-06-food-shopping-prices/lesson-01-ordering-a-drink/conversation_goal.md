@@ -1,6 +1,6 @@
 # Conversation Goal
 
-Order water or coffee using polite Fusha phrases.
+Order water or coffee using polite Arabic phrases.
 
 Learners should be able to say:
 

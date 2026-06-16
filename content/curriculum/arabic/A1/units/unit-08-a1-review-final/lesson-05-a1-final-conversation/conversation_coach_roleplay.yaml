@@ -2,7 +2,7 @@ scenario_key: arabic_a1_final_conversation
 mode: lesson_practice_coach
 level_code: A1
 opening_line: مرحبًا، ما اسمك؟
-learner_goal: Complete a short Arabic Fusha A1 conversation using core skills from the level.
+learner_goal: Complete a short Arabic A1 conversation using core skills from the level.
 max_turns: 4
 feedback_level:
   free: basic

@@ -1,6 +1,6 @@
 # Formal Greetings
 
-After this lesson, learners can greet someone formally in Arabic Fusha and answer a simple "how are you" question.
+After this lesson, learners can greet someone formally in Arabic and answer a simple "how are you" question.
 
 ## Situation
 

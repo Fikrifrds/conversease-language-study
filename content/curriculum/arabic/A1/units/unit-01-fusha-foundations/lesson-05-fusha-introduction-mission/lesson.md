@@ -1,4 +1,4 @@
-# Fusha Introduction Mission
+# Arabic Introduction Mission
 
 After this lesson, learners can complete a short formal Arabic introduction and ask for help when they do not understand.
 
@@ -8,4 +8,4 @@ Kamu mengikuti kelas bahasa Arab sederhana. Mulai dengan sapaan umum, perkenalka
 
 ## Learning Notes
 
-Misi ini menggabungkan semua frasa utama dari unit pertama. Fokusnya bukan bicara panjang, tetapi tidak freezing saat diminta merespons dalam Fusha.
+Misi ini menggabungkan semua frasa utama dari unit pertama. Fokusnya bukan bicara panjang, tetapi tidak freezing saat diminta merespons dalam Arabic formal.

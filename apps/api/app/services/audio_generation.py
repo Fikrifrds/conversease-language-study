@@ -219,13 +219,13 @@ CURATED_MINIMAX_VOICE_METADATA = {
         "voice_name": "Friendly Guy",
         "gender": "male",
         "language": "Arabic",
-        "description": "Clear Arabic male voice for Fusha teacher, narrator, and student dialogue.",
+        "description": "Clear Arabic male voice for teacher, narrator, and student dialogue.",
     },
     "Arabic_CalmWoman": {
         "voice_name": "Calm Woman",
         "gender": "female",
         "language": "Arabic",
-        "description": "Calm Arabic female voice for Fusha teacher, narrator, and student dialogue.",
+        "description": "Calm Arabic female voice for teacher, narrator, and student dialogue.",
     },
 }
 
@@ -263,7 +263,7 @@ DIALOGUE_PERSONA_VOICES = {
     "learner": "English_radiant_girl",
     "nurse": "English_CalmWoman",
     "receptionist": "English_radiant_girl",
-    # Arabic Fusha pilot personas. MiniMax currently exposes two Arabic system
+    # Arabic personas. MiniMax currently exposes two Arabic system
     # voices, so repeated male/female roles share these voices in beta.
     "ahmad": "Arabic_FriendlyGuy",
     "ahmed": "Arabic_FriendlyGuy",

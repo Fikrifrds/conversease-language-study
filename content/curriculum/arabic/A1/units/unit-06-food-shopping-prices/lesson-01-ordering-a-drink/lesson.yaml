@@ -4,7 +4,7 @@ title: Ordering a Drink
 status: beta
 estimated_minutes: 10
 conversation_situation: ordering_a_drink
-conversation_goal: Order water or coffee using polite Fusha phrases.
+conversation_goal: Order water or coffee using polite Arabic phrases.
 grammar_summary: Use أريد + noun and من فضلك for a polite request.
 required_sections:
 - conversation_goal

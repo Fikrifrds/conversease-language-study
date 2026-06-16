@@ -1,7 +1,7 @@
 unit_key: unit-06-food-shopping-prices
 level_code: A1
 title: Food, Shopping & Prices
-main_conversation_outcome: Order simple items, ask prices, and say what you want in Arabic Fusha.
+main_conversation_outcome: Order simple items, ask prices, and say what you want in Arabic.
 status: beta
 lessons:
 - lesson-01-ordering-a-drink

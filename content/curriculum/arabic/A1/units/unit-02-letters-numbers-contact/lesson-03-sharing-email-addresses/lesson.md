@@ -8,4 +8,4 @@ Kamu menulis email di daftar kelas. Kamu perlu menyebutkan bagian email dengan p
 
 ## Learning Notes
 
-Arabic Fusha is formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
