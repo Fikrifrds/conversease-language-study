@@ -9,6 +9,7 @@ from unittest.mock import patch
 from app.data.curriculum import curriculum_root
 from app.services.audio_generation import (
     CURATED_MINIMAX_VOICE_IDS,
+    ENGLISH_CURATED_MINIMAX_VOICE_IDS,
     FALLBACK_MINIMAX_VOICES,
     TTS_PROVIDER_ELEVENLABS,
     TTS_PROVIDER_MINIMAX,
@@ -16,6 +17,7 @@ from app.services.audio_generation import (
     MiniMaxAudioResult,
     assign_elevenlabs_dialogue_voices,
     assign_dialogue_voices,
+    concatenate_pcm16_audio,
     concatenate_wav_audio,
     default_tts_provider_for_language,
     filter_voice_options,
@@ -23,6 +25,7 @@ from app.services.audio_generation import (
     infer_voice_gender,
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
+    synthesize_dialogue_elevenlabs_tts,
     synthesize_dialogue_minimax_tts,
     update_production_tracker_audio,
 )
@@ -205,6 +208,45 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Khalid"], "rPNcQ53R703tTmtue1AT")
         self.assertEqual(voices["Noura"], "4wf10lgibMnboGJGCLrP")
 
+    def test_elevenlabs_arabic_teacher_and_student_do_not_share_voice(self):
+        turns = [
+            _turn("Muallim", "السلام عليكم."),
+            _turn("Ahmad", "وعليكم السلام."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Muallim"], "OFHP1Qg30FPoNfkUFFlA")
+        self.assertEqual(voices["Ahmad"], "rPNcQ53R703tTmtue1AT")
+        self.assertNotEqual(voices["Muallim"], voices["Ahmad"])
+
+    def test_elevenlabs_arabic_persona_collision_uses_another_male_voice(self):
+        turns = [
+            _turn("Muallim", "السلام عليكم."),
+            _turn("Ustadh", "أهلا وسهلا."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+            language="arabic",
+        )
+
+        self.assertNotEqual(voices["Muallim"], voices["Ustadh"])
+        self.assertIn(
+            voices["Ustadh"],
+            {
+                "OFHP1Qg30FPoNfkUFFlA",
+                "yXEnnEln9armDCyhkXcA",
+                "rPNcQ53R703tTmtue1AT",
+                "zthCTrnZpSGUnbO0tTzN",
+            },
+        )
+
     def test_elevenlabs_arabic_unknown_speakers_keep_gendered_voice_pool(self):
         turns = [
             _turn("Female", "أهلا."),
@@ -223,7 +265,6 @@ class AudioGenerationTest(unittest.TestCase):
                 "gMB389pj77Qe5nErWNjd",
                 "4wf10lgibMnboGJGCLrP",
                 "B5xxC4eQoOFJnY4R5XkI",
-                "ulJ49j1YlxrYnPoj5o12",
             },
         )
         self.assertIn(
@@ -233,11 +274,6 @@ class AudioGenerationTest(unittest.TestCase):
                 "yXEnnEln9armDCyhkXcA",
                 "rPNcQ53R703tTmtue1AT",
                 "zthCTrnZpSGUnbO0tTzN",
-                "wxweiHvoC2r2jFM7mS8b",
-                "amSNjVC0vWYiE8iGimVb",
-                "68MRVrnQAt8vLbu0FCzw",
-                "4mZ0H4Jh5iqmgAWK97eF",
-                "HJ8unGw6UFYkApOU0Oea",
             },
         )
 
@@ -276,7 +312,7 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = filter_voice_options(noisy_minimax_result, language="English")
 
-        self.assertEqual([voice["voice_id"] for voice in voices], list(CURATED_MINIMAX_VOICE_IDS))
+        self.assertEqual([voice["voice_id"] for voice in voices], list(ENGLISH_CURATED_MINIMAX_VOICE_IDS))
         self.assertTrue(all(voice["category"] == "curated" for voice in voices))
         self.assertNotIn("English_SlowQuietVoice", {voice["voice_id"] for voice in voices})
         self.assertNotIn("custom_loud_but_unreviewed", {voice["voice_id"] for voice in voices})
@@ -316,6 +352,22 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertGreater(first_peak, 25000)
         self.assertGreater(second_peak, 25000)
         self.assertLess(abs(first_peak - second_peak), 4)
+
+    def test_concatenate_pcm16_audio_wraps_dialogue_as_wav_with_pause(self):
+        first = pcm_chunk(frame_count=240)
+        second = pcm_chunk(frame_count=240)
+
+        audio_bytes, duration = concatenate_pcm16_audio(
+            [first, second],
+            sample_rate=24000,
+            pause_seconds=0.1,
+        )
+
+        with wave.open(io.BytesIO(audio_bytes), "rb") as reader:
+            self.assertEqual(reader.getnchannels(), 1)
+            self.assertEqual(reader.getframerate(), 24000)
+            self.assertEqual(reader.getnframes(), 2880)
+        self.assertAlmostEqual(duration, 0.12, places=2)
 
     def test_production_tracker_audio_update_matches_language_prefixed_level(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -395,6 +447,50 @@ class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(result.line_count, 3)
         self.assertEqual(result.voice_id, "multi_speaker")
 
+    async def test_dialogue_synthesis_sends_clean_turn_text_to_elevenlabs(self):
+        turns = [
+            _turn("Muallim", "Muallim: السلام عليكم."),
+            _turn("Ahmad", "اسمي أحمد."),
+        ]
+        sent_texts: list[str] = []
+        sent_voice_ids: list[str] = []
+
+        async def fake_synthesize_elevenlabs_tts(**kwargs):
+            sent_texts.append(kwargs["text"])
+            sent_voice_ids.append(kwargs["voice_id"])
+            audio = pcm_chunk(frame_count=240)
+            return MiniMaxAudioResult(
+                audio_bytes=audio,
+                duration_seconds=0.01,
+                audio_format="pcm",
+                audio_size=len(audio),
+                trace_id=f"trace-{len(sent_texts)}",
+                usage_characters=len(kwargs["text"]),
+                voice_id=kwargs["voice_id"],
+                speaker_voices={},
+                line_count=1,
+            )
+
+        with patch(
+            "app.services.audio_generation.synthesize_elevenlabs_tts",
+            side_effect=fake_synthesize_elevenlabs_tts,
+        ):
+            result = await synthesize_dialogue_elevenlabs_tts(
+                turns=turns,
+                model="eleven_multilingual_v2",
+                fallback_voice_id="OFHP1Qg30FPoNfkUFFlA",
+                speed=0.9,
+                language="arabic",
+            )
+
+        self.assertEqual(sent_texts, ["السلام عليكم.", "اسمي أحمد."])
+        self.assertEqual(sent_voice_ids, ["OFHP1Qg30FPoNfkUFFlA", "rPNcQ53R703tTmtue1AT"])
+        self.assertNotEqual(result.speaker_voices["Muallim"], result.speaker_voices["Ahmad"])
+        self.assertEqual(result.audio_format, "wav")
+        with wave.open(io.BytesIO(result.audio_bytes), "rb") as reader:
+            self.assertEqual(reader.getframerate(), 24000)
+            self.assertGreater(reader.getnframes(), 480)
+
 
 def _turn(speaker: str, text: str):
     from app.services.audio_generation import DialogueTurn
@@ -410,6 +506,10 @@ def wav_chunk(*, frame_count: int, amplitude: int = 0) -> bytes:
         writer.setframerate(32000)
         writer.writeframes(amplitude.to_bytes(2, "little", signed=True) * frame_count)
     return output.getvalue()
+
+
+def pcm_chunk(*, frame_count: int, amplitude: int = 0) -> bytes:
+    return amplitude.to_bytes(2, "little", signed=True) * frame_count
 
 
 if __name__ == "__main__":

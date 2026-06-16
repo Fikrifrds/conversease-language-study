@@ -72,17 +72,11 @@ ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES = (
     "yXEnnEln9armDCyhkXcA",  # Jeddawi
     "rPNcQ53R703tTmtue1AT",  # Mazen Lawand
     "zthCTrnZpSGUnbO0tTzN",  # Mustafa Ajmi
-    "wxweiHvoC2r2jFM7mS8b",  # Haytham
-    "amSNjVC0vWYiE8iGimVb",  # Maged Magdy
-    "68MRVrnQAt8vLbu0FCzw",  # Mamdoh
-    "4mZ0H4Jh5iqmgAWK97eF",  # Omarii
-    "HJ8unGw6UFYkApOU0Oea",  # Omars
 )
 ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES = (
     "gMB389pj77Qe5nErWNjd",  # Sara
     "4wf10lgibMnboGJGCLrP",  # Farah
     "B5xxC4eQoOFJnY4R5XkI",  # Salma
-    "ulJ49j1YlxrYnPoj5o12",  # Lama
 )
 ELEVENLABS_ARABIC_VOICE_METADATA = {
     "OFHP1Qg30FPoNfkUFFlA": {
@@ -164,6 +158,8 @@ ARABIC_TTS_LANGUAGE_BOOST = "Arabic"
 ENGLISH_TTS_LANGUAGE_BOOST = "English"
 ARABIC_DEFAULT_SPEED = 0.9
 ARABIC_VOICE_PREVIEW_SAMPLE_TEXT = "مرحبًا. اسمي أحمد. أنا أتعلم العربية الفصحى بوضوح وهدوء."
+ELEVENLABS_DIALOGUE_SAMPLE_RATE = 24000
+ELEVENLABS_DIALOGUE_PAUSE_SECONDS = 0.38
 
 DIALOGUE_TARGET_PEAK_RATIO = 0.82
 ENGLISH_CURATED_MINIMAX_VOICE_IDS = (
@@ -308,8 +304,8 @@ DIALOGUE_PERSONA_VOICES = {
 }
 
 ELEVENLABS_ARABIC_PERSONA_VOICES = {
-    "ahmad": "OFHP1Qg30FPoNfkUFFlA",
-    "ahmed": "OFHP1Qg30FPoNfkUFFlA",
+    "ahmad": "rPNcQ53R703tTmtue1AT",
+    "ahmed": "rPNcQ53R703tTmtue1AT",
     "ali": "yXEnnEln9armDCyhkXcA",
     "arabicstudent": "gMB389pj77Qe5nErWNjd",
     "arabicteacher": "OFHP1Qg30FPoNfkUFFlA",
@@ -318,7 +314,7 @@ ELEVENLABS_ARABIC_PERSONA_VOICES = {
     "fatimah": "gMB389pj77Qe5nErWNjd",
     "khalid": "rPNcQ53R703tTmtue1AT",
     "khadijah": "4wf10lgibMnboGJGCLrP",
-    "layla": "ulJ49j1YlxrYnPoj5o12",
+    "layla": "B5xxC4eQoOFJnY4R5XkI",
     "maryam": "B5xxC4eQoOFJnY4R5XkI",
     "muallim": "OFHP1Qg30FPoNfkUFFlA",
     "muallimah": "gMB389pj77Qe5nErWNjd",
@@ -1223,9 +1219,9 @@ async def synthesize_elevenlabs_tts(
         "text": text,
         "model_id": model,
         "voice_settings": {
-            "stability": 0.55,
-            "similarity_boost": 0.78,
-            "style": 0,
+            "stability": 0.62,
+            "similarity_boost": 0.82,
+            "style": 0.08,
             "use_speaker_boost": True,
             "speed": speed,
         },
@@ -1267,30 +1263,34 @@ async def synthesize_dialogue_elevenlabs_tts(
     chunks: list[bytes] = []
     trace_ids: list[str] = []
     total_usage = 0
-    total_duration = 0.0
 
     for turn in turns:
+        text = naturalize_dialogue_turn_text(turn.text)
         generated = await synthesize_elevenlabs_tts(
-            text=turn.text,
+            text=text,
             model=model,
             voice_id=speaker_voices.get(turn.speaker) or fallback_voice_id,
             speed=speed,
-            audio_format="mp3",
+            audio_format="pcm",
         )
         chunks.append(generated.audio_bytes)
         if generated.trace_id:
             trace_ids.append(generated.trace_id)
         total_usage += generated.usage_characters
-        total_duration += generated.duration_seconds
 
     if not chunks:
         raise AudioGenerationError("dialogue_audio_empty")
 
+    audio_bytes, duration_seconds = concatenate_pcm16_audio(
+        chunks,
+        sample_rate=ELEVENLABS_DIALOGUE_SAMPLE_RATE,
+        pause_seconds=ELEVENLABS_DIALOGUE_PAUSE_SECONDS,
+    )
     return MiniMaxAudioResult(
-        audio_bytes=b"".join(chunks),
-        duration_seconds=round(max(total_duration, 0.01), 2),
-        audio_format="mp3",
-        audio_size=sum(len(chunk) for chunk in chunks),
+        audio_bytes=audio_bytes,
+        duration_seconds=duration_seconds,
+        audio_format="wav",
+        audio_size=len(audio_bytes),
         trace_id=",".join(trace_ids),
         usage_characters=total_usage,
         voice_id="multi_speaker",
@@ -1404,8 +1404,11 @@ def elevenlabs_audio_format(output_format: str, content_type: str, fallback: str
 
 
 def elevenlabs_output_format(audio_format: str) -> str:
+    requested = audio_format.lower().strip()
+    if requested == "pcm":
+        return f"pcm_{ELEVENLABS_DIALOGUE_SAMPLE_RATE}"
     configured = settings.elevenlabs_tts_output_format.strip() or "mp3_44100_128"
-    if audio_format.lower() == "mp3" and not configured.lower().startswith("mp3"):
+    if requested == "mp3" and not configured.lower().startswith("mp3"):
         return "mp3_44100_128"
     return configured
 
@@ -1607,6 +1610,12 @@ def clean_dialogue_text(value: str) -> str:
     return value.replace("**", "").replace("*", "").replace("  ", " ").strip()
 
 
+def naturalize_dialogue_turn_text(value: str) -> str:
+    cleaned = clean_dialogue_text(value)
+    cleaned = re.sub(r"^[^:\n：]{1,48}[:：]\s*", "", cleaned).strip()
+    return re.sub(r"\s+", " ", cleaned)
+
+
 def assign_dialogue_voices(
     turns: list[DialogueTurn],
     *,
@@ -1675,6 +1684,18 @@ def assign_elevenlabs_dialogue_voices(
             if not voice_id:
                 continue
             speaker = speaker_by_key[key]
+            if voice_id in used_voices:
+                gender = elevenlabs_voice_gender(voice_id)
+                if gender == "unknown":
+                    gender = infer_speaker_gender(speaker)
+                if gender == "unknown":
+                    gender = stable_unknown_speaker_gender(key)
+                voice_pool = elevenlabs_voice_pool_for_gender(
+                    gender,
+                    fallback_voice_id=fallback_voice_id,
+                    language=language,
+                )
+                voice_id = stable_voice_from_pool(key=key, voice_pool=voice_pool, used_voices=used_voices) or voice_id
             speaker_voices[speaker] = voice_id
             used_voices.add(voice_id)
 
@@ -1719,9 +1740,20 @@ def elevenlabs_voice_pool_for_gender(
     return tuple(dict.fromkeys(voice for voice in [fallback, default_voice] if voice).keys())
 
 
+def elevenlabs_voice_gender(voice_id: str) -> str:
+    metadata = ELEVENLABS_ARABIC_VOICE_METADATA.get(voice_id)
+    if metadata:
+        gender = str(metadata.get("gender") or "").strip().lower()
+        if gender in {"male", "female"}:
+            return gender
+    return infer_voice_gender(voice_id=voice_id)
+
+
 def infer_speaker_gender(speaker: str) -> str:
     normalized = normalized_speaker_key(speaker)
     female_names = {
+        "female",
+        "woman",
         "alya",
         "sara",
         "mina",
@@ -1743,6 +1775,8 @@ def infer_speaker_gender(speaker: str) -> str:
         "layla",
     }
     male_names = {
+        "male",
+        "man",
         "ben",
         "john",
         "adi",
@@ -1849,6 +1883,42 @@ def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -
                 total_frames += pause_frames
 
     duration_seconds = round(total_frames / framerate, 2)
+    return output.getvalue(), max(duration_seconds, 0.01)
+
+
+def concatenate_pcm16_audio(
+    chunks: list[bytes],
+    *,
+    sample_rate: int,
+    pause_seconds: float,
+) -> tuple[bytes, float]:
+    if not chunks:
+        raise AudioGenerationError("dialogue_audio_empty")
+
+    frames: list[bytes] = []
+    total_frames = 0
+    for chunk in chunks:
+        if len(chunk) % 2 != 0:
+            raise AudioGenerationError("dialogue_audio_pcm16_invalid")
+        frame_bytes = normalize_wav_frame_volume(chunk, 2)
+        frames.append(frame_bytes)
+        total_frames += len(frame_bytes) // 2
+
+    pause_frames = max(0, int(sample_rate * pause_seconds))
+    pause_bytes = b"\x00" * pause_frames * 2
+    output = io.BytesIO()
+
+    with wave.open(output, "wb") as writer:
+        writer.setnchannels(1)
+        writer.setsampwidth(2)
+        writer.setframerate(sample_rate)
+        for index, frame_bytes in enumerate(frames):
+            writer.writeframes(frame_bytes)
+            if index < len(frames) - 1 and pause_bytes:
+                writer.writeframes(pause_bytes)
+                total_frames += pause_frames
+
+    duration_seconds = round(total_frames / sample_rate, 2)
     return output.getvalue(), max(duration_seconds, 0.01)
 
 
