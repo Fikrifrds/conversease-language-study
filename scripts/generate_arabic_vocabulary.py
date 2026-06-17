@@ -1,0 +1,403 @@
+#!/usr/bin/env python3
+"""Generate concise Arabic vocabulary files from authored lesson content.
+
+The lesson dialogue and useful phrases remain the source of truth. This script
+adds a small curated vocabulary layer so every Arabic lesson teaches a few new
+words without turning the page into a dictionary.
+"""
+from __future__ import annotations
+
+import argparse
+import re
+from pathlib import Path
+from typing import Any
+
+import yaml
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+ARABIC_ROOT = REPO_ROOT / "content" / "curriculum" / "arabic"
+
+ARABIC_DIACRITICS_RE = re.compile(r"[\u064B-\u065F\u0670]")
+ARABIC_TOKEN_RE = re.compile(r"[\u0621-\u064A\u0671-\u06D3\u064B-\u065F\u0670]+")
+
+STOP_WORDS = {
+    "أَنَا",
+    "أَنْتَ",
+    "أَنْتِ",
+    "أَنْ",
+    "إِلَى",
+    "فِي",
+    "مِنْ",
+    "عَلَى",
+    "عَنْ",
+    "مَعَ",
+    "هَذَا",
+    "هَذِهِ",
+    "هَلْ",
+    "لَا",
+    "نَعَمْ",
+    "وَ",
+    "يَا",
+    "ثُمَّ",
+    "أَمْ",
+    "لِأَنَّ",
+    "لِأَنَّنِي",
+    "مِنْ فَضْلِكَ",
+    "مِنْ فَضْلِكِ",
+}
+
+VOCABULARY: dict[str, tuple[str, str]] = {
+    "السلام": ("السَّلَامُ", "salam"),
+    "وعليكم": ("وَعَلَيْكُمُ", "dan atas kalian"),
+    "مرحبا": ("مَرْحَبًا", "halo"),
+    "اهلا": ("أَهْلًا", "selamat datang"),
+    "صباح": ("صَبَاحٌ", "pagi"),
+    "مساء": ("مَسَاءٌ", "sore/malam"),
+    "خير": ("خَيْرٌ", "baik"),
+    "حال": ("حَالٌ", "keadaan/kabar"),
+    "شكرا": ("شُكْرًا", "terima kasih"),
+    "اسف": ("آسِفٌ", "maaf"),
+    "اسفة": ("آسِفَةٌ", "maaf"),
+    "عذرا": ("عُذْرًا", "permisi/maaf"),
+    "مشكلة": ("مُشْكِلَةٌ", "masalah"),
+    "اسم": ("اِسْمٌ", "nama"),
+    "اسمي": ("اِسْمِي", "nama saya"),
+    "حرف": ("حَرْفٌ", "huruf"),
+    "رقم": ("رَقْمٌ", "nomor"),
+    "رقمي": ("رَقْمِي", "nomor saya"),
+    "هاتف": ("هَاتِفٌ", "telepon"),
+    "بريد": ("بَرِيدٌ", "surat/email"),
+    "الالكتروني": ("الْإِلِكْتُرُونِيُّ", "elektronik"),
+    "نقطة": ("نُقْطَةٌ", "titik"),
+    "باء": ("بَاءٌ", "huruf ba"),
+    "صحيح": ("صَحِيحٌ", "benar"),
+    "واضح": ("وَاضِحٌ", "jelas"),
+    "ببطء": ("بِبُطْءٍ", "pelan-pelan"),
+    "مرة": ("مَرَّةٌ", "sekali/kali"),
+    "اخرى": ("أُخْرَى", "lagi/lain"),
+    "افهم": ("أَفْهَمُ", "saya paham"),
+    "اعرف": ("أَعْرِفُ", "saya tahu"),
+    "يعني": ("يَعْنِي", "artinya"),
+    "اسمع": ("أَسْمَعُ", "saya mendengar"),
+    "قلت": ("قُلْتَ", "kamu mengatakan"),
+    "احتاج": ("أَحْتَاجُ", "saya butuh"),
+    "مساعدة": ("مُسَاعَدَةٌ", "bantuan"),
+    "اريد": ("أُرِيدُ", "saya ingin"),
+    "افتح": ("اِفْتَحْ", "bukalah"),
+    "اكتب": ("اُكْتُبْ", "tulislah"),
+    "اكتبي": ("اُكْتُبِي", "tulislah"),
+    "استمع": ("اِسْتَمِعْ", "dengarkan"),
+    "تكلم": ("تَكَلَّمْ", "berbicaralah"),
+    "تكلمي": ("تَكَلَّمِي", "berbicaralah"),
+    "جملة": ("جُمْلَةٌ", "kalimat"),
+    "مثال": ("مِثَالٌ", "contoh"),
+    "اليوم": ("الْيَوْمُ", "hari ini"),
+    "غدا": ("غَدًا", "besok"),
+    "امس": ("أَمْسِ", "kemarin"),
+    "يوم": ("يَوْمٌ", "hari"),
+    "عندي": ("عِنْدِي", "saya punya"),
+    "ابي": ("أَبِي", "ayah saya"),
+    "امي": ("أُمِّي", "ibu saya"),
+    "اخي": ("أَخِي", "saudara laki-laki saya"),
+    "عائلة": ("عَائِلَةٌ", "keluarga"),
+    "عائلتي": ("عَائِلَتِي", "keluarga saya"),
+    "ساعة": ("سَاعَةٌ", "jam"),
+    "الثامنة": ("الثَّامِنَةُ", "jam delapan/kedelapan"),
+    "التاسعة": ("التَّاسِعَةُ", "jam sembilan/kesembilan"),
+    "العاشرة": ("الْعَاشِرَةُ", "jam sepuluh/kesepuluh"),
+    "الصباح": ("الصَّبَاحُ", "pagi"),
+    "الظهر": ("الظُّهْرُ", "siang"),
+    "العصر": ("الْعَصْرُ", "sore"),
+    "الاثنين": ("الْإِثْنَيْنِ", "Senin"),
+    "الثلاثاء": ("الثُّلَاثَاءُ", "Selasa"),
+    "الاربعاء": ("الْأَرْبِعَاءُ", "Rabu"),
+    "الدرس": ("الدَّرْسُ", "pelajaran"),
+    "الكلمات": ("الْكَلِمَاتُ", "kata-kata"),
+    "الكلمة": ("الْكَلِمَةُ", "kata"),
+    "الصفحة": ("الصَّفْحَةُ", "halaman"),
+    "الكتاب": ("الْكِتَابُ", "buku"),
+    "العربية": ("الْعَرَبِيَّةُ", "bahasa Arab"),
+    "اندونيسيا": ("إِنْدُونِيسِيَا", "Indonesia"),
+    "مدرسة": ("مَدْرَسَةٌ", "sekolah"),
+    "مركز": ("مَرْكَزٌ", "pusat"),
+    "فصل": ("فَصْلٌ", "kelas/ruang kelas"),
+    "مكتبة": ("مَكْتَبَةٌ", "perpustakaan"),
+    "مكتب": ("مَكْتَبٌ", "kantor/meja kerja"),
+    "مقهى": ("مَقْهًى", "kafe"),
+    "سوق": ("سُوقٌ", "pasar"),
+    "بيت": ("بَيْتٌ", "rumah"),
+    "باب": ("بَابٌ", "pintu"),
+    "مصعد": ("مِصْعَدٌ", "lift"),
+    "رصيف": ("رَصِيفٌ", "peron"),
+    "فندق": ("فُنْدُقٌ", "hotel"),
+    "عنوان": ("عُنْوَانٌ", "alamat"),
+    "مدينة": ("مَدِينَةٌ", "kota"),
+    "جاكرتا": ("جَاكَرْتَا", "Jakarta"),
+    "باندونغ": ("بَانْدُونْغ", "Bandung"),
+    "اين": ("أَيْنَ", "di mana"),
+    "كيف": ("كَيْفَ", "bagaimana"),
+    "ماذا": ("مَاذَا", "apa"),
+    "لماذا": ("لِمَاذَا", "mengapa"),
+    "متى": ("مَتَى", "kapan"),
+    "كم": ("كَمْ", "berapa"),
+    "قريب": ("قَرِيبٌ", "dekat"),
+    "قريبة": ("قَرِيبَةٌ", "dekat"),
+    "بعيد": ("بَعِيدٌ", "jauh"),
+    "بعيدة": ("بَعِيدَةٌ", "jauh"),
+    "امام": ("أَمَامَ", "di depan"),
+    "بجانب": ("بِجَانِبِ", "di samping"),
+    "يمين": ("يَمِينًا", "kanan"),
+    "يسار": ("يَسَارًا", "kiri"),
+    "مستقيما": ("مُسْتَقِيمًا", "lurus"),
+    "طريق": ("طَرِيقٌ", "jalan"),
+    "ماء": ("مَاءٌ", "air"),
+    "قهوة": ("قَهْوَةٌ", "kopi"),
+    "حساب": ("حِسَابٌ", "tagihan"),
+    "سعر": ("سِعْرٌ", "harga"),
+    "ريال": ("رِيَالٌ", "riyal"),
+    "ريالات": ("رِيَالَاتٌ", "riyal"),
+    "روبية": ("رُوبِيَّةٌ", "rupiah"),
+    "قلم": ("قَلَمٌ", "pena"),
+    "كتابا": ("كِتَابٌ", "buku"),
+    "واحد": ("وَاحِدٌ", "satu"),
+    "واحدة": ("وَاحِدَةٌ", "satu"),
+    "اثنان": ("اِثْنَانِ", "dua"),
+    "ثلاثة": ("ثَلَاثَةٌ", "tiga"),
+    "اربعة": ("أَرْبَعَةٌ", "empat"),
+    "خمسة": ("خَمْسَةٌ", "lima"),
+    "خمسون": ("خَمْسُونَ", "lima puluh"),
+    "الف": ("أَلْفٌ", "seribu"),
+    "تذكرة": ("تَذْكِرَةٌ", "tiket"),
+    "قطار": ("قِطَارٌ", "kereta"),
+    "يغادر": ("يُغَادِرُ", "berangkat"),
+    "يصل": ("يَصِلُ", "tiba"),
+    "ذهابا": ("ذَهَابًا", "pergi/sekali jalan"),
+    "عودة": ("عَوْدَةٌ", "pulang/kembali"),
+    "درجة": ("دَرَجَةٌ", "kelas/tingkat"),
+    "اقتصادية": ("اِقْتِصَادِيَّةٌ", "ekonomi"),
+    "اولى": ("أُولَى", "pertama"),
+    "لون": ("لَوْنٌ", "warna"),
+    "ازرق": ("أَزْرَقُ", "biru"),
+    "ابيض": ("أَبْيَضُ", "putih"),
+    "اسود": ("أَسْوَدُ", "hitam"),
+    "احمر": ("أَحْمَرُ", "merah"),
+    "مقاس": ("مَقَاسٌ", "ukuran"),
+    "اكبر": ("أَكْبَرُ", "lebih besar"),
+    "اصغر": ("أَصْغَرُ", "lebih kecil"),
+    "صغير": ("صَغِيرٌ", "kecil"),
+    "صغيرة": ("صَغِيرَةٌ", "kecil"),
+    "ارخص": ("أَرْخَصُ", "lebih murah"),
+    "اجود": ("أَجْوَدُ", "lebih berkualitas"),
+    "افضل": ("أَفْضَلُ", "lebih baik"),
+    "غالي": ("غَالٍ", "mahal"),
+    "مناسب": ("مُنَاسِبٌ", "cocok/sesuai"),
+    "مناسبة": ("مُنَاسِبَةٌ", "cocok/sesuai"),
+    "حقيبة": ("حَقِيبَةٌ", "tas"),
+    "جهاز": ("جِهَازٌ", "alat/perangkat"),
+    "يعمل": ("يَعْمَلُ", "berfungsi/bekerja"),
+    "اصلاح": ("إِصْلَاحٌ", "perbaikan"),
+    "ضمان": ("ضَمَانٌ", "garansi"),
+    "طبيب": ("طَبِيبٌ", "dokter"),
+    "موعد": ("مَوْعِدٌ", "janji temu"),
+    "عيادة": ("عِيَادَةٌ", "klinik"),
+    "تعب": ("تَعَبٌ", "lelah"),
+    "صداع": ("صُدَاعٌ", "sakit kepala"),
+    "الم": ("أَلَمٌ", "sakit/nyeri"),
+    "حلق": ("حَلْقٌ", "tenggorokan"),
+    "سعال": ("سُعَالٌ", "batuk"),
+    "حرارة": ("حَرَارَةٌ", "suhu/demam"),
+    "راحة": ("رَاحَةٌ", "nyaman/istirahat"),
+    "خفيف": ("خَفِيفٌ", "ringan"),
+    "خفيفة": ("خَفِيفَةٌ", "ringan"),
+    "منذ": ("مُنْذُ", "sejak"),
+    "طابق": ("طَابِقٌ", "lantai"),
+    "غرفة": ("غُرْفَةٌ", "ruangan/kamar"),
+    "ذهبت": ("ذَهَبْتُ", "saya pergi"),
+    "رجعت": ("رَجَعْتُ", "saya kembali"),
+    "اشتريت": ("اِشْتَرَيْتُ", "saya membeli"),
+    "رايت": ("رَأَيْتُ", "saya melihat"),
+    "فعلت": ("فَعَلْتُ", "saya melakukan"),
+    "حديقة": ("حَدِيقَةٌ", "taman"),
+    "مكان": ("مَكَانٌ", "tempat"),
+    "جميل": ("جَمِيلٌ", "indah/bagus"),
+    "جميلة": ("جَمِيلَةٌ", "indah/bagus"),
+    "هادئ": ("هَادِئٌ", "tenang"),
+    "هادئة": ("هَادِئَةٌ", "tenang"),
+    "نظيف": ("نَظِيفٌ", "bersih"),
+    "تجربة": ("تَجْرِبَةٌ", "pengalaman"),
+    "طعام": ("طَعَامٌ", "makanan"),
+    "مزدحم": ("مُزْدَحِمٌ", "ramai/padat"),
+    "راي": ("رَأْيٌ", "pendapat"),
+    "اعتقد": ("أَعْتَقِدُ", "saya pikir"),
+    "افضل": ("أُفَضِّلُ", "saya lebih memilih"),
+    "اوافق": ("أُوَافِقُ", "saya setuju"),
+    "خطة": ("خُطَّةٌ", "rencana"),
+    "خيار": ("خِيَارٌ", "pilihan"),
+    "سبب": ("سَبَبٌ", "alasan"),
+    "بسيط": ("بَسِيطٌ", "sederhana"),
+    "مفيد": ("مُفِيدٌ", "bermanfaat"),
+    "احب": ("أُحِبُّ", "saya suka"),
+    "استطيع": ("أَسْتَطِيعُ", "saya bisa"),
+    "قليلا": ("قَلِيلًا", "sedikit"),
+    "ادرس": ("أَدْرُسُ", "saya belajar"),
+    "اعمل": ("أَعْمَلُ", "saya bekerja"),
+    "اتعلم": ("أَتَعَلَّمُ", "saya belajar"),
+    "اخذ": ("آخُذُ", "saya ambil"),
+    "موجود": ("مَوْجُودٌ", "tersedia/ada"),
+    "واجب": ("وَاجِبٌ", "tugas"),
+    "سهل": ("سَهْلٌ", "mudah"),
+    "صعب": ("صَعْبٌ", "sulit"),
+    "تدريب": ("تَدْرِيبٌ", "latihan"),
+    "قراءة": ("قِرَاءَةٌ", "membaca"),
+    "كتابة": ("كِتَابَةٌ", "menulis"),
+    "اتدرب": ("أَتَدَرَّبُ", "saya berlatih"),
+    "اراجع": ("أُرَاجِعُ", "saya mengulang/review"),
+    "التقي": ("أَلْتَقِي", "saya bertemu"),
+    "اختبار": ("اِخْتِبَارٌ", "ujian"),
+    "وقت": ("وَقْتٌ", "waktu"),
+    "اخر": ("آخَرُ", "lain"),
+}
+
+
+def normalize_arabic(value: str) -> str:
+    value = ARABIC_DIACRITICS_RE.sub("", value)
+    value = value.replace("ـ", "")
+    value = value.replace("ٱ", "ا")
+    value = value.replace("أ", "ا").replace("إ", "ا").replace("آ", "ا")
+    value = value.replace("ى", "ي")
+    return value.strip(" .،؟!:؛\"'()[]{}")
+
+
+def token_lookup(token: str) -> tuple[str, str] | None:
+    normalized = normalize_arabic(token)
+    if not normalized:
+        return None
+    if normalized in {normalize_arabic(word) for word in STOP_WORDS}:
+        return None
+
+    candidates = [normalized]
+    if normalized.startswith("ال") and len(normalized) > 2:
+        candidates.append(normalized[2:])
+    if normalized.startswith("و") and len(normalized) > 1:
+        candidates.append(normalized[1:])
+    if normalized.startswith("بال") and len(normalized) > 3:
+        candidates.append(normalized[3:])
+    if normalized.startswith("لل") and len(normalized) > 2:
+        candidates.append(normalized[2:])
+
+    for candidate in candidates:
+        if candidate in VOCABULARY:
+            return VOCABULARY[candidate]
+    return None
+
+
+def ordered_tokens(phrases: list[dict[str, Any]], dialogue: list[Any] | None = None) -> list[str]:
+    text_chunks: list[str] = []
+    for entry in phrases:
+        text_chunks.append(str(entry.get("phrase") or ""))
+    for turn in dialogue or []:
+        if isinstance(turn, (tuple, list)) and len(turn) >= 2:
+            text_chunks.append(str(turn[1]))
+        elif isinstance(turn, dict):
+            text_chunks.append(str(turn.get("text") or ""))
+    return [match.group(0) for text in text_chunks for match in ARABIC_TOKEN_RE.finditer(text)]
+
+
+def vocabulary_for_lesson(
+    phrases: list[dict[str, Any]],
+    dialogue: list[Any] | None = None,
+    *,
+    max_items: int = 8,
+) -> list[dict[str, str]]:
+    entries: list[dict[str, str]] = []
+    seen: set[str] = set()
+
+    for token in ordered_tokens(phrases, dialogue):
+        match = token_lookup(token)
+        if not match:
+            continue
+        word, meaning = match
+        key = normalize_arabic(word)
+        if key in seen:
+            continue
+        seen.add(key)
+        entries.append(
+            {
+                "word": word,
+                "meaning_id": meaning,
+                "usage_note": "Kata inti dari dialog dan frasa lesson ini.",
+            }
+        )
+        if len(entries) >= max_items:
+            break
+
+    return entries
+
+
+def read_yaml(path: Path) -> dict[str, Any]:
+    with path.open("r", encoding="utf-8") as file:
+        data = yaml.safe_load(file) or {}
+    if not isinstance(data, dict):
+        raise ValueError(f"YAML file must contain a mapping: {path}")
+    return data
+
+
+def parse_listening_script(path: Path) -> list[tuple[str, str]]:
+    if not path.exists():
+        return []
+    turns: list[tuple[str, str]] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped.startswith("**") or ":**" not in stripped:
+            continue
+        speaker, text = stripped[2:].split(":**", 1)
+        turns.append((speaker.strip(), text.strip()))
+    return turns
+
+
+def write_yaml(path: Path, payload: dict[str, Any]) -> None:
+    path.write_text(
+        yaml.safe_dump(payload, allow_unicode=True, sort_keys=False),
+        encoding="utf-8",
+    )
+
+
+def lesson_dirs_for(levels: list[str]) -> list[Path]:
+    dirs: list[Path] = []
+    for level in levels:
+        units_root = ARABIC_ROOT / level / "units"
+        if units_root.exists():
+            dirs.extend(sorted(units_root.glob("*/lesson-*")))
+    return [path for path in dirs if path.is_dir()]
+
+
+def generate(levels: list[str]) -> int:
+    count = 0
+    for lesson_dir in lesson_dirs_for(levels):
+        phrases_yaml = read_yaml(lesson_dir / "useful_phrases.yaml")
+        phrases = phrases_yaml.get("phrases", [])
+        dialogue = parse_listening_script(lesson_dir / "listening_script.md")
+        vocabulary = vocabulary_for_lesson(phrases, dialogue)
+        write_yaml(lesson_dir / "vocabulary.yaml", {"vocabulary": vocabulary})
+        count += 1
+    return count
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--levels",
+        nargs="+",
+        default=["A1", "A2"],
+        help="Arabic levels to process, for example: --levels A1 A2",
+    )
+    args = parser.parse_args()
+
+    count = generate(args.levels)
+    print(f"Generated vocabulary.yaml for {count} Arabic lessons.")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

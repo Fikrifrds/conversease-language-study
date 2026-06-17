@@ -58,6 +58,14 @@ REQUIRED_CONTENT_ITEMS = (
         "is_audio": False,
     },
     {
+        "key": "vocabulary",
+        "label": "Vocabulary",
+        "filename": "vocabulary.yaml",
+        "tracker_column": None,
+        "is_audio": False,
+        "languages": ("arabic",),
+    },
+    {
         "key": "grammar",
         "label": "Grammar for conversation",
         "filename": "grammar_for_conversation.md",
@@ -121,6 +129,14 @@ REQUIRED_CONTENT_ITEMS = (
         "is_audio": True,
     },
 )
+
+
+def required_content_items_for_language(language: str) -> list[dict[str, Any]]:
+    return [
+        item
+        for item in REQUIRED_CONTENT_ITEMS
+        if not item.get("languages") or language in item["languages"]
+    ]
 
 
 def content_plan_path(language: str = "english", level_code: str = "A1") -> Path:
@@ -293,7 +309,7 @@ def content_readiness_from_plan(
             "plan_path": str(plan_path),
         },
         "summary": summary,
-        "required_items": list(REQUIRED_CONTENT_ITEMS),
+        "required_items": required_content_items_for_language(language),
         "units": units,
     }
 
@@ -334,7 +350,7 @@ def lesson_readiness(
         tracker_row = tracker.get((level_code, unit_key, lesson_key), {})
     checks = []
 
-    for item in REQUIRED_CONTENT_ITEMS:
+    for item in required_content_items_for_language(language):
         checks.append(
             item_readiness(
                 item=item,

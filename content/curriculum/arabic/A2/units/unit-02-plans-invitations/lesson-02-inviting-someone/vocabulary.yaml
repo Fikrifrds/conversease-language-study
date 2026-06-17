@@ -1,0 +1,22 @@
+vocabulary:
+- word: الدَّرْسُ
+  meaning_id: pelajaran
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: مَوْجُودٌ
+  meaning_id: tersedia/ada
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: الْعَصْرُ
+  meaning_id: sore
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: مَرْكَزٌ
+  meaning_id: pusat
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: الْيَوْمُ
+  meaning_id: hari ini
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: لِمَاذَا
+  meaning_id: mengapa
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: قَرِيبٌ
+  meaning_id: dekat
+  usage_note: Kata inti dari dialog dan frasa lesson ini.

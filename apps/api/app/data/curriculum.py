@@ -48,6 +48,7 @@ SECTION_LABELS = {
     "listening": "Listen to a Dialogue",
     "comprehension_check": "Understand the Conversation",
     "useful_phrases": "Useful Phrases",
+    "vocabulary": "Vocabulary",
     "grammar_for_conversation": "Grammar for Conversation",
     "speak_clearly": "Speak Clearly",
     "response_practice": "Respond Practice",
@@ -273,6 +274,7 @@ def load_lesson(lesson_dir: Path) -> dict[str, Any]:
         "content_files": {
             "lesson": str(lesson_dir / "lesson.md"),
             "useful_phrases": str(lesson_dir / "useful_phrases.yaml"),
+            "vocabulary": str(lesson_dir / "vocabulary.yaml"),
             "response_prompts": str(lesson_dir / "response_prompts.yaml"),
             "quiz": str(lesson_dir / "quiz.yaml"),
             "conversation_coach_roleplay": str(lesson_dir / "conversation_coach_roleplay.yaml"),

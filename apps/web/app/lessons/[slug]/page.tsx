@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { Headphones, Mic, RotateCcw, Send } from "lucide-react";
+import { BookOpen, Headphones, Mic, RotateCcw, Send } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
@@ -25,6 +25,7 @@ const ARABIC_LESSON_COPY = {
   situationSetup: "Situasi Latihan",
   listenToDialogue: "Dengarkan Dialog",
   usefulPhrases: "Frasa Penting",
+  vocabulary: "Kosa Kata Baru",
   grammarForConversation: "Pola Percakapan",
   speakClearly: "Latihan Pengucapan",
   conversationCheck: "Cek Pemahaman",
@@ -38,6 +39,7 @@ const DEFAULT_LESSON_COPY = {
   situationSetup: "Situation Setup",
   listenToDialogue: "Listen to a Dialogue",
   usefulPhrases: "Useful Phrases",
+  vocabulary: "New Vocabulary",
   grammarForConversation: "Grammar for Conversation",
   speakClearly: "Speak Clearly",
   conversationCheck: "Conversation Check",
@@ -129,6 +131,30 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                 ))}
               </div>
             </section>
+
+            {lesson.vocabulary?.length ? (
+              <section className="mt-8">
+                <div className="flex items-center gap-2">
+                  <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
+                  <h2 className="text-xl font-semibold">{copy.vocabulary}</h2>
+                </div>
+                <div className="mt-4 grid gap-3 md:grid-cols-2">
+                  {lesson.vocabulary.map((item) => (
+                    <div key={`${item.word}-${item.meaning}`} className="rounded-lg border border-ink/10 bg-paper p-4">
+                      <div className="flex flex-wrap items-start justify-between gap-3">
+                        <p dir={isArabic ? "rtl" : "auto"} className={`font-semibold ${isArabic ? "text-right text-lg leading-8" : ""}`}>
+                          {item.word}
+                        </p>
+                        <p className="rounded-lg bg-mint px-3 py-1 text-sm font-semibold text-leaf">
+                          {item.meaning}
+                        </p>
+                      </div>
+                      <p className="mt-3 text-sm leading-6 text-ink/60">{item.usage}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ) : null}
 
             <section className="mt-8 rounded-lg bg-[#fff2dc] p-5">
               <h2 className="text-xl font-semibold">{copy.grammarForConversation}</h2>

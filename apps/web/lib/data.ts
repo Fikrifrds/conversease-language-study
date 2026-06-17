@@ -114,6 +114,8 @@ export const lessonCatalog = [
         { phrase: "Nice to meet you.", meaning: "Senang bertemu denganmu.", usage: "Use when meeting someone for the first time." },
         { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Casual conversation closing." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I am or I'm for simple personal responses: I'm good. I'm Arif. I'm from Indonesia.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I am** or **I'm** for simple personal responses.\n\nExamples:\n\n- I'm good.\n- I'm Arif.\n- I'm from Indonesia.\n\nPattern:\n\n```txt\nI'm + adjective\nI'm + name\nI'm from + place\n```\n\nKeep the answer short and clear for A1 conversation.",
       patterns: [
@@ -164,6 +166,8 @@ export const lessonCatalog = [
         { phrase: "I'm ...", meaning: "Saya ...", usage: "Natural shorter form for introductions." },
         { phrase: "Nice to meet you too.", meaning: "Senang bertemu denganmu juga.", usage: "Use after someone says nice to meet you." },
         { phrase: "Please call me ...", meaning: "Panggil saya ...", usage: "Use when your nickname is easier." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use My name is + name for clear introductions. Use I'm + name for a shorter, more natural answer.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My name is ...** or **I'm ...** to say your name.\n\nExamples:\n\n- My name is Arif.\n- I'm Arif.\n- What is your name?\n\nPattern:\n\n```txt\nMy name is + name\nI'm + name\nWhat is your name?\n```\n\nFor A1 speaking, choose one clear answer and say it slowly.",
@@ -218,6 +222,8 @@ export const lessonCatalog = [
         { phrase: "Is it Mina?", meaning: "Apakah Mina?", usage: "Use to confirm a name." },
         { phrase: "Nice to meet you, ...", meaning: "Senang bertemu denganmu, ...", usage: "Add the person's name to sound attentive." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What's your + noun for simple questions: What's your name? What's your job?",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is ...?** or **What's ...?** to ask a simple question.\n\nExamples:\n\n- What is your name?\n- What's your name?\n- Can you repeat that?\n\nPattern:\n\n```txt\nWhat is + noun?\nCan you + verb?\n```\n\nUse \"Can you repeat that?\" when you need to hear the name again.",
       patterns: [
@@ -267,6 +273,8 @@ export const lessonCatalog = [
         { phrase: "I live in ...", meaning: "Saya tinggal di ...", usage: "Use for current city." },
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
         { phrase: "I'm from Indonesia.", meaning: "Saya dari Indonesia.", usage: "A complete model answer." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use from for origin and in for current place: I'm from Indonesia. I live in Jakarta.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm from ...** to say your country or city.\n\nExamples:\n\n- I'm from Indonesia.\n- I'm from Jakarta.\n- Where are you from?\n\nPattern:\n\n```txt\nI'm from + place\nWhere are you from?\n```\n\nUse a place name after \"from\". Keep your answer short.",
@@ -319,6 +327,8 @@ export const lessonCatalog = [
         { phrase: "Where are you from?", meaning: "Kamu dari mana?", usage: "Ask about origin." },
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Return the question." },
         { phrase: "See you later.", meaning: "Sampai nanti.", usage: "Close the conversation." },
+      ],
+      vocabulary: [
       ],
       grammar: "Keep A1 conversations short: greeting + name + origin + question back + closing.",
       grammarNotes: "# Grammar for Conversation\n\nUse short A1 patterns together to make one conversation.\n\nExamples:\n\n- My name is Lina.\n- I'm Adi.\n- I'm from Indonesia.\n- What is your name?\n- Where are you from?\n\nPatterns:\n\n```txt\nMy name is + name\nI'm + name\nI'm from + place\nWhat is your name?\nWhere are you from?\n```\n\nUse one idea per sentence. This keeps the conversation clear.",
@@ -378,6 +388,8 @@ export const lessonCatalog = [
         { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask for a repeat when you miss a letter." },
         { phrase: "That's right.", meaning: "Betul.", usage: "Confirm that the spelling is correct." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use How do you spell + it/that to ask about spelling. Use It's spelled + letters to answer: It's spelled D-I-M-A-S.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How do you spell + it/that** to ask about spelling.\n\nExamples:\n\n- How do you spell it?\n- How do you spell that?\n- How do you spell your name?\n\nPattern:\n\n```txt\nHow do you spell + it / that / your name?\n```\n\nUse **It's spelled + letters** to answer.\n\nExample:\n\n- It's spelled D-I-M-A-S.\n\nWhen you answer, say each letter clearly and slowly.",
       patterns: [
@@ -431,6 +443,8 @@ export const lessonCatalog = [
         { phrase: "Let me check.", meaning: "Saya cek ya.", usage: "Introduce a quick confirmation before repeating information." },
         { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm that the repeated information is right." },
         { phrase: "Can you repeat that, please?", meaning: "Bisa diulang, tolong?", usage: "Ask politely when you miss a number." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use What is your + noun? to ask for contact information. Use It's + number to answer: It's zero eight one two.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is your + noun?** to ask for contact information.\n\nExamples:\n\n- What is your phone number?\n- What is your email address?\n\nUse **It's + number** to answer.\n\nPattern:\n\n```txt\nWhat is your + phone number?\nIt's + phone number.\n```\n\nFor phone numbers, say each number clearly. Pause after small groups of numbers.",
@@ -487,6 +501,8 @@ export const lessonCatalog = [
         { phrase: "Is that correct?", meaning: "Apakah itu benar?", usage: "Ask for confirmation after writing information." },
         { phrase: "Yes, that's correct.", meaning: "Ya, itu benar.", usage: "Confirm the email address is right." },
       ],
+      vocabulary: [
+      ],
       grammar: "When saying an email address, use at for @ and dot for a period: ben dot rama at example dot com.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What is your email address?** to ask for an email.\n\nWhen saying an email address, use:\n\n- **at** for @\n- **dot** for .\n\nPattern:\n\n```txt\nIt's + name + at + domain + dot + com.\n```\n\nExample: It's ben dot rama at example dot com.",
       patterns: [
@@ -540,6 +556,8 @@ export const lessonCatalog = [
         { phrase: "Did you say two two five five?", meaning: "Apakah kamu bilang dua dua lima lima?", usage: "Check a specific part of what you heard." },
         { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm that the listener heard correctly." },
         { phrase: "Got it.", meaning: "Sudah saya mengerti.", usage: "Show that you understand now." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Can you repeat that, please? when you need to hear something again. Use Did you say + detail? to check one part.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can you repeat that, please?** when you need to hear something again.\n\nUse **Did you say + information?** to check one detail.\n\nExamples:\n\n- Did you say two two five five?\n- Did you say Ben?\n- Did you say dot com?\n\nPattern:\n\n```txt\nDid you say + the detail?\n```",
@@ -603,6 +621,8 @@ export const lessonCatalog = [
         { phrase: "Is everything correct?", meaning: "Apakah semuanya benar?", usage: "Check all contact information at the end." },
         { phrase: "Yes, everything is correct.", meaning: "Ya, semuanya benar.", usage: "Confirm all information is correct." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use short follow-up questions when the topic is clear: And your phone number? And your email address?",
       grammarNotes: "# Grammar for Conversation\n\nUse short follow-up questions when the topic is clear.\n\nExamples:\n\n- And your phone number?\n- And your email address?\n\nUse **everything** to talk about all the information together.\n\nPattern:\n\n```txt\nIs everything correct?\nYes, everything is correct.\n```",
       patterns: [
@@ -659,6 +679,8 @@ export const lessonCatalog = [
         { phrase: "Yes, in the morning.", meaning: "Ya, pagi.", usage: "Confirm the time of day." },
         { phrase: "You're welcome.", meaning: "Sama-sama.", usage: "Reply after someone says thank you." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What time is + event? to ask about time. Use at + time to answer: It's at nine o'clock.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What time is + event?** to ask about time.\n\nUse **at + time** to answer.\n\nExamples:\n\n- What time is the class?\n- It's at nine o'clock.\n- It's at seven in the evening.\n\nPattern:\n\n```txt\nWhat time is + the event?\nIt's at + time.\n```",
       patterns: [
@@ -713,6 +735,8 @@ export const lessonCatalog = [
         { phrase: "What do you do after that?", meaning: "Apa yang kamu lakukan setelah itu?", usage: "Ask for the next routine step." },
         { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Say a study routine." },
         { phrase: "I work at one.", meaning: "Saya bekerja jam satu.", usage: "Say a work routine." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I + verb + at + time for a simple routine: I wake up at six. Use after that for the next step.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I + verb + at + time** for a simple routine.\n\nExamples:\n\n- I wake up at six.\n- I study English at seven.\n- I work at one.\n\nUse **after that** to continue the routine.\n\nPattern:\n\n```txt\nI + routine verb + at + time.\nAfter that, I + verb.\n```",
@@ -769,6 +793,8 @@ export const lessonCatalog = [
         { phrase: "At seven in the evening.", meaning: "Jam tujuh malam.", usage: "Answer with time of day." },
         { phrase: "See you on Monday.", meaning: "Sampai jumpa hari Senin.", usage: "Close with the day you will meet." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use on + day for schedules and at + time for clock time: on Monday at seven.",
       grammarNotes: "# Grammar for Conversation\n\nUse **on + day** for schedules.\n\nExamples:\n\n- on Monday\n- on Wednesday\n- See you on Monday.\n\nUse **at + time** for the clock time.\n\nPattern:\n\n```txt\nIt's on + day.\nIt's at + time.\n```",
       patterns: [
@@ -823,6 +849,8 @@ export const lessonCatalog = [
         { phrase: "Is it online?", meaning: "Apakah online?", usage: "Ask about the meeting format." },
         { phrase: "Is that right?", meaning: "Benar begitu?", usage: "Check that your understanding is correct." },
         { phrase: "Yes, that's right.", meaning: "Ya, betul.", usage: "Confirm the detail." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use When is + event? to ask about timing. Use Is it + online/today/tomorrow? for yes/no questions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **When is + event?** to ask about timing.\n\nUse **Is it + adjective/place?** for yes/no questions.\n\nExamples:\n\n- When is the meeting?\n- Is it online?\n- Is that right?\n\nPattern:\n\n```txt\nWhen is + event?\nIs it + online / today / tomorrow?\n```",
@@ -883,6 +911,8 @@ export const lessonCatalog = [
         { phrase: "I study on Monday and Wednesday at seven.", meaning: "Saya belajar hari Senin dan Rabu jam tujuh.", usage: "Give days and time together." },
         { phrase: "Is the class online?", meaning: "Apakah kelasnya online?", usage: "Ask about class format." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine on + day and at + time in one sentence: I study on Monday at seven.",
       grammarNotes: "# Grammar for Conversation\n\nCombine **on + day** and **at + time** in one sentence.\n\nExamples:\n\n- I study on Monday at seven.\n- The class is on Wednesday at seven.\n\nUse **What time do you + verb?** for routine time.\n\nPattern:\n\n```txt\nWhat time do you + verb?\nI + verb + on + day + at + time.\n```",
       patterns: [
@@ -938,6 +968,8 @@ export const lessonCatalog = [
         { phrase: "I study design.", meaning: "Saya belajar desain.", usage: "Say what you study." },
         { phrase: "I study online.", meaning: "Saya belajar online.", usage: "Say how you study." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'm a + role to say what you do. Use I study + subject to say what you study.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm a + role** to say what you do.\n\nExamples:\n\n- I'm a student.\n- I'm a teacher.\n- I'm an assistant.\n\nUse **I study + subject** to say what you study.\n\nPattern:\n\n```txt\nWhat do you do?\nI'm a + role.\nI study + subject.\n```",
       patterns: [
@@ -991,6 +1023,8 @@ export const lessonCatalog = [
         { phrase: "What do you do there?", meaning: "Apa yang kamu lakukan di sana?", usage: "Ask about the role or activity." },
         { phrase: "I'm an assistant.", meaning: "Saya seorang asisten.", usage: "Say a simple job." },
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same topic back." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Do you + verb? for yes/no questions. Use I work in + place and I'm a/an + job.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you + verb?** for yes/no questions.\n\nExamples:\n\n- Do you work?\n- Do you study?\n- Do you work or study?\n\nUse **in + place** for a workplace.\n\nPattern:\n\n```txt\nDo you work or study?\nI work in + place.\nI'm a/an + job.\n```",
@@ -1048,6 +1082,8 @@ export const lessonCatalog = [
         { phrase: "I like speaking practice.", meaning: "Saya suka latihan speaking.", usage: "Say a learning preference." },
         { phrase: "Speaking is my favorite.", meaning: "Speaking adalah favorit saya.", usage: "Say your favorite part." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use like + noun/activity to talk about preferences: I like English. I like speaking practice.",
       grammarNotes: "# Grammar for Conversation\n\nUse **like + noun/activity** to talk about preferences.\n\nExamples:\n\n- I like English.\n- I like speaking practice.\n- I like grammar.\n\nUse **Do you like + noun?** to ask.\n\nPattern:\n\n```txt\nDo you like + noun?\nYes, I like it.\nI like + activity.\n```",
       patterns: [
@@ -1103,6 +1139,8 @@ export const lessonCatalog = [
         { phrase: "Can you write simple emails?", meaning: "Apakah kamu bisa menulis email sederhana?", usage: "Ask about writing ability." },
         { phrase: "Yes, I can.", meaning: "Ya, saya bisa.", usage: "Give a short positive answer." },
         { phrase: "Not yet, but I can try.", meaning: "Belum, tapi saya bisa mencoba.", usage: "Say you cannot do it now but are willing." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use can + base verb for ability: I can speak. I can write. I can try.",
       grammarNotes: "# Grammar for Conversation\n\nUse **can + base verb** for ability.\n\nExamples:\n\n- I can speak English.\n- I can write simple emails.\n- I can try.\n\nFor questions, use **Can you + base verb?**\n\nPattern:\n\n```txt\nCan you + verb?\nYes, I can.\nI can + verb.\n```",
@@ -1164,6 +1202,8 @@ export const lessonCatalog = [
         { phrase: "What can you do in English?", meaning: "Apa yang bisa kamu lakukan dalam bahasa Inggris?", usage: "Ask about ability." },
         { phrase: "I can introduce myself.", meaning: "Saya bisa memperkenalkan diri.", usage: "Say one English ability." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine simple A1 patterns: I study, I work, I like, and I can.",
       grammarNotes: "# Grammar for Conversation\n\nCombine simple A1 patterns in one conversation.\n\nUseful patterns:\n\n- I study + subject.\n- I work in + place.\n- I like + activity.\n- I can + verb.\n\nKeep each sentence short. Use **and** to connect two simple ideas only when both are clear.",
       patterns: [
@@ -1215,6 +1255,8 @@ export const lessonCatalog = [
         { phrase: "Where is the classroom?", meaning: "Di mana ruang kelasnya?", usage: "Use 'Where is...' for one place." },
         { phrase: "It is on the first floor.", meaning: "Tempatnya di lantai satu.", usage: "Use 'on' for floors." },
         { phrase: "It is next to the office.", meaning: "Tempatnya di sebelah kantor.", usage: "Use 'next to' for a place beside another place." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Where is + place? and answer with It is + location.",
       grammarNotes: "# Grammar for Conversation: Where is...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'Where is + place?'\n\n- Example: Where is the classroom?\n\n## Answer with 'It is...'\n\n- Example: It is on the first floor.\n\n## Use 'near' and 'next to' for simple location.\n\n- Example: It is next to the office.",
@@ -1268,6 +1310,8 @@ export const lessonCatalog = [
         { phrase: "I'm going to the cafe.", meaning: "Saya mau pergi ke kafe.", usage: "Use 'to' before a destination." },
         { phrase: "near here", meaning: "dekat sini", usage: "Use this for a place close to your current location." },
         { phrase: "Let's go together.", meaning: "Ayo pergi bersama.", usage: "Use this to suggest going with someone." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'm going to + place for a destination.",
       grammarNotes: "# Grammar for Conversation: going to + place\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'I am going to + place.'\n\n- Example: I'm going to the cafe.\n\n## Use 'the' for a known place.\n\n- Example: the cafe, the library\n\n## Ask 'Is it near here?'\n\n- Example: Is the cafe near here?",
@@ -1324,6 +1368,8 @@ export const lessonCatalog = [
         { phrase: "on the right", meaning: "di sebelah kanan", usage: "Use this to locate something on the right side." },
         { phrase: "I understand.", meaning: "Saya mengerti.", usage: "Use this after clear instructions." },
       ],
+      vocabulary: [
+      ],
       grammar: "Direction commands can start with the verb: Go straight. Turn left.",
       grammarNotes: "# Grammar for Conversation: imperatives for directions\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Direction commands can start with the verb.\n\n- Example: Go straight. Turn left.\n\n## Use 'then' for the next step.\n\n- Example: Then turn left.\n\n## Use 'on the left/right' for side location.\n\n- Example: The room is on the right.",
       patterns: [
@@ -1378,6 +1424,8 @@ export const lessonCatalog = [
         { phrase: "for two minutes", meaning: "selama dua menit", usage: "Use this for short walking time." },
         { phrase: "at the bank", meaning: "di bank", usage: "Use 'at' for a direction point." },
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Use this after someone helps you." },
+      ],
+      vocabulary: [
       ],
       grammar: "Ask How do I get to + place? and use at + landmark for a direction point.",
       grammarNotes: "# Grammar for Conversation: How do I get to...?\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Ask 'How do I get to + place?'\n\n- Example: How do I get to the station?\n\n## Use 'for + time' for duration.\n\n- Example: Go straight for two minutes.\n\n## Use 'at + place' for a landmark.\n\n- Example: Turn right at the bank.",
@@ -1435,6 +1483,8 @@ export const lessonCatalog = [
         { phrase: "Go straight and turn left.", meaning: "Jalan lurus dan belok kiri.", usage: "Use 'and' to join two short steps." },
         { phrase: "next to the office", meaning: "di sebelah kantor", usage: "Use this for a landmark beside the place." },
         { phrase: "Is it on the first floor?", meaning: "Apakah di lantai satu?", usage: "Confirm a floor." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use and to join two simple direction steps: Go straight and turn left.",
       grammarNotes: "# Grammar for Conversation: combining direction steps\n\nGrammar di lesson ini hanya dipakai untuk membantu percakapan, bukan untuk hafalan panjang.\n\n## Use 'and' for two simple actions.\n\n- Example: Go straight and turn left.\n\n## Use 'Is it...?' to confirm.\n\n- Example: Is it on the first floor?\n\n## Use 'next to' for a nearby landmark.\n\n- Example: Room A is next to the office.",
@@ -1494,6 +1544,8 @@ export const lessonCatalog = [
         { phrase: "Anything else?", meaning: "Ada lagi?", usage: "Staff asks if you want more." },
         { phrase: "Here you go.", meaning: "Ini pesanannya.", usage: "Staff says this when giving the item." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Can I have + item, please? to order politely.",
       grammarNotes: "# Grammar for Conversation: Can I have...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'Can I have + item, please?'\n\n- Example: Can I have a tea, please?\n\n## Use short size answers.\n\n- Example: Small, please.\n\n## Use 'No, thank you' to finish politely.\n\n- Example: No, thank you.",
       patterns: [
@@ -1548,6 +1600,8 @@ export const lessonCatalog = [
         { phrase: "It is two dollars.", meaning: "Harganya dua dolar.", usage: "Answer a simple price." },
         { phrase: "Two dollars?", meaning: "Dua dolar?", usage: "Repeat the price to confirm." },
         { phrase: "How much is the cake?", meaning: "Berapa harga kuenya?", usage: "Ask another item price." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use How much is + item? and answer with It is + price.",
       grammarNotes: "# Grammar for Conversation: How much is...?\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'How much is + item?'\n\n- Example: How much is the coffee?\n\n## Answer with 'It is + price.'\n\n- Example: It is two dollars.\n\n## Repeat a price to confirm.\n\n- Example: Two dollars?",
@@ -1604,6 +1658,8 @@ export const lessonCatalog = [
         { phrase: "Here you go.", meaning: "Ini uangnya / ini barangnya.", usage: "Use this when giving money or an item." },
         { phrase: "Here is your pen.", meaning: "Ini pulpenmu.", usage: "Staff uses this when giving the item." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use this for one item near you and it after the item is already clear.",
       grammarNotes: "# Grammar for Conversation: this + item\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'this' for one item near you.\n\n- Example: Can I have this pen?\n\n## Use 'it' when the item is already known.\n\n- Example: How much is it?\n\n## Use 'Here is + item' for one item.\n\n- Example: Here is your pen.",
       patterns: [
@@ -1658,6 +1714,8 @@ export const lessonCatalog = [
         { phrase: "I want a sandwich.", meaning: "Saya mau sandwich.", usage: "Say what you want simply." },
         { phrase: "Tea, please.", meaning: "Teh, tolong.", usage: "Choose one option politely." },
         { phrase: "No sugar, please.", meaning: "Tanpa gula, tolong.", usage: "Say you do not want an extra item." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I want + item and No + item, please for simple preferences.",
       grammarNotes: "# Grammar for Conversation: I want...\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'I want + item.'\n\n- Example: I want a sandwich.\n\n## Use 'or' for two options.\n\n- Example: Tea or coffee?\n\n## Use 'No + item, please.'\n\n- Example: No sugar, please.",
@@ -1717,6 +1775,8 @@ export const lessonCatalog = [
         { phrase: "It is five dollars.", meaning: "Totalnya lima dolar.", usage: "Say a simple total price." },
         { phrase: "Here is your order.", meaning: "Ini pesananmu.", usage: "Staff gives the order." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine order and price language: Can I have..., Small please, How much is it?",
       grammarNotes: "# Grammar for Conversation: combining order and price language\n\nGrammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan untuk hafalan panjang.\n\n## Use 'and' to order two items.\n\n- Example: a coffee and a sandwich\n\n## Use 'How much is it?' for the total.\n\n- Example: How much is it?\n\n## Use 'Here is...' for one order.\n\n- Example: Here is your order.",
       patterns: [
@@ -1773,6 +1833,8 @@ export const lessonCatalog = [
         { phrase: "Open my book?", meaning: "Buka buku saya?", usage: "Repeat key words to confirm." },
         { phrase: "I understand now.", meaning: "Sekarang saya mengerti.", usage: "Use this after the explanation is clear." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I don't + verb for a negative statement and Can you + verb? for a request.",
       grammarNotes: "# Grammar for Conversation: I don't understand\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't + verb' for a negative statement.\n\n- Example: I don't understand.\n\n## Use 'Can you + verb?' for a polite request.\n\n- Example: Can you repeat that, please?\n\n## Use a short question to confirm.\n\n- Example: Open my book?",
       patterns: [
@@ -1827,6 +1889,8 @@ export const lessonCatalog = [
         { phrase: "What is the problem?", meaning: "Apa masalahnya?", usage: "Ask what is wrong." },
         { phrase: "I can't open this file.", meaning: "Saya tidak bisa membuka file ini.", usage: "Explain one problem clearly." },
         { phrase: "It works.", meaning: "Berhasil.", usage: "Say the solution works." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use can for help requests and can't + verb for simple problems.",
       grammarNotes: "# Grammar for Conversation: can / can't\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you help me?' to ask for help.\n\n- Example: Can you help me?\n\n## Use 'I can't + verb' for a simple problem.\n\n- Example: I can't open this file.\n\n## Use 'It works' when the problem is fixed.\n\n- Example: It works.",
@@ -1883,6 +1947,8 @@ export const lessonCatalog = [
         { phrase: "Can you wait a minute?", meaning: "Bisa tunggu sebentar?", usage: "Ask someone to wait briefly." },
         { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a request calmly." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Can you + verb + please? for a polite request.",
       grammarNotes: "# Grammar for Conversation: Can you... please?\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Can you + verb + please?' for a request.\n\n- Example: Can you send me the link, please?\n\n## Use 'Can you wait...?' to ask for time.\n\n- Example: Can you wait a minute?\n\n## Use short positive replies.\n\n- Example: Sure. No problem.",
       patterns: [
@@ -1938,6 +2004,8 @@ export const lessonCatalog = [
         { phrase: "My internet was slow.", meaning: "Internet saya lambat.", usage: "Give one short reason." },
         { phrase: "Thank you for waiting.", meaning: "Terima kasih sudah menunggu.", usage: "Thank someone for waiting." },
         { phrase: "I am ready now.", meaning: "Sekarang saya siap.", usage: "Say you are ready to continue." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Sorry + short sentence and Thank you for + ing.",
       grammarNotes: "# Grammar for Conversation: sorry + reason\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'Sorry + sentence' for a small apology.\n\n- Example: Sorry I'm late.\n\n## Use one short reason.\n\n- Example: My internet was slow.\n\n## Use 'Thank you for + ing'.\n\n- Example: Thank you for waiting.",
@@ -1999,6 +2067,8 @@ export const lessonCatalog = [
         { phrase: "No problem.", meaning: "Tidak masalah.", usage: "Accept a small request." },
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close after help." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine I don't understand, I can't + verb, and Can you + verb? for help situations.",
       grammarNotes: "# Grammar for Conversation: combining help language\n\nGrammar di lesson ini membantu learner meminta bantuan dan menjelaskan masalah secara singkat.\n\n## Use 'I don't understand' for meaning problems.\n\n- Example: Sorry, I don't understand.\n\n## Use 'I can't + verb' for action problems.\n\n- Example: I can't open this file.\n\n## Use 'Can you + verb?' for requests.\n\n- Example: Can you wait a minute?",
       patterns: [
@@ -2058,6 +2128,8 @@ export const lessonCatalog = [
         { phrase: "I live in Jakarta now.", meaning: "Saya tinggal di Jakarta sekarang.", usage: "Say your current city." },
         { phrase: "How about you?", meaning: "Kalau kamu?", usage: "Ask the same question back." },
       ],
+      vocabulary: [
+      ],
       grammar: "Review I am or I'm for names, from for origin, and live in for current city.",
       grammarNotes: "# Grammar for Conversation: reviewing be verbs for introductions\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use I am or I'm for names.\n\n- Example: I'm Sara. My name is Dimas.\n\n## Use from for origin.\n\n- Example: I'm from Indonesia.\n\n## Use live in for current city.\n\n- Example: I live in Jakarta now.",
       patterns: [
@@ -2116,6 +2188,8 @@ export const lessonCatalog = [
         { phrase: "When is our speaking class?", meaning: "Kapan kelas speaking kita?", usage: "Ask about a class schedule." },
         { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Say day and time together." },
         { phrase: "See you then.", meaning: "Sampai nanti.", usage: "Close after confirming a time." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use at for clock time, on for days, and simple present for routines.",
       grammarNotes: "# Grammar for Conversation: reviewing on and at for schedules\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use at for clock time.\n\n- Example: I wake up at six.\n\n## Use on for days.\n\n- Example: The class is on Tuesday.\n\n## Use simple present for routines.\n\n- Example: I study English every day.",
@@ -2179,6 +2253,8 @@ export const lessonCatalog = [
         { phrase: "I would like one tea, please.", meaning: "Saya mau satu teh, tolong.", usage: "Order politely." },
         { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." },
       ],
+      vocabulary: [
+      ],
       grammar: "Review Where is for places, short imperatives for directions, and I would like for polite orders.",
       grammarNotes: "# Grammar for Conversation: reviewing where, there is, and would like\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use Where is for one place.\n\n- Example: Where is the cafe?\n\n## Use imperatives for directions.\n\n- Example: Go straight. Turn right.\n\n## Use I would like for polite orders.\n\n- Example: I would like one tea, please.",
       patterns: [
@@ -2241,6 +2317,8 @@ export const lessonCatalog = [
         { phrase: "I study English at seven.", meaning: "Saya belajar bahasa Inggris jam tujuh.", usage: "Talk about a routine." },
         { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for repetition in a test." },
         { phrase: "It is on Tuesday at eight.", meaning: "Hari Selasa jam delapan.", usage: "Answer day and time." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use complete short answers in a test, every morning for routine, and can you repeat for clarification.",
       grammarNotes: "# Grammar for Conversation: reviewing complete short answers\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use complete A1 answers in a test.\n\n- Example: My name is Alya. I'm from Indonesia.\n\n## Use every morning for routine frequency.\n\n- Example: I study English every morning.\n\n## Use can you repeat for clarification.\n\n- Example: Sorry, can you repeat that, please?",
@@ -2317,6 +2395,8 @@ export const lessonCatalog = [
         { phrase: "Sorry, can you repeat that, please?", meaning: "Maaf, bisa diulang, tolong?", usage: "Ask for clarification." },
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuanmu.", usage: "Close politely after help." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine short complete sentences, question back, and polite request forms in one A1 conversation.",
       grammarNotes: "# Grammar for Conversation: combining A1 patterns in one conversation\n\nGrammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelajari.\n\n## Use short complete sentences.\n\n- Example: My name is Mina. I'm from Indonesia.\n\n## Use question back to keep talking.\n\n- Example: How about you?\n\n## Use polite request forms.\n\n- Example: I would like one tea, please. Can you repeat that, please?",
       patterns: [
@@ -2380,6 +2460,8 @@ export const lessonCatalog = [
         { phrase: "How was your weekend?", meaning: "Gimana akhir pekanmu?", usage: "Ask this on Monday or after the weekend." },
         { phrase: "Sounds great.", meaning: "Kedengarannya seru.", usage: "A friendly reaction to good news or a nice plan." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use How's + noun? to ask about someone, and use It was + adjective to talk about the weekend.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How's + noun?** for casual small talk.\n\nExamples:\n\n- How's your day?\n- How's work?\n\nUse **It was + adjective** to talk about a finished time in the past.\n\nExamples:\n\n- How was your weekend? It was nice.\n- How was the trip? It was great.",
       patterns: [
@@ -2437,6 +2519,8 @@ export const lessonCatalog = [
         { phrase: "Was it good?", meaning: "Enak tidak?", usage: "Ask if the experience or food was good." },
         { phrase: "Do you want to go sometime?", meaning: "Kamu mau pergi bareng kapan-kapan?", usage: "A casual invitation without a fixed time." },
         { phrase: "That sounds fun.", meaning: "Kedengarannya seru.", usage: "A positive reaction to a plan or idea." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Where is it? and What did you + verb? for follow-up questions about place and past actions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Where is it?** to ask about the location.\n\nExamples:\n\n- I found a new cafe. Where is it?\n- There's a good shop. Where is it?\n\nUse **What did you + verb?** for follow-up questions about the past.\n\nExamples:\n\n- What did you order?\n- What did you eat?",
@@ -2496,6 +2580,8 @@ export const lessonCatalog = [
         { phrase: "How are you getting there?", meaning: "Kamu ke sana naik apa?", usage: "Ask about transport to a place." },
         { phrase: "Have a great weekend.", meaning: "Semoga akhir pekanmu menyenangkan.", usage: "A friendly closing on Friday or before the weekend." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Any plans for the weekend? to ask, and use I'm going to + verb to talk about your plan.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Any plans for ...?** to ask casually.\n\nExamples:\n\n- Any plans for the weekend?\n- Any plans for tonight?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to visit my parents.\n- I'm going to take the train.",
       patterns: [
@@ -2554,6 +2640,8 @@ export const lessonCatalog = [
         { phrase: "I'm sorry to hear that.", meaning: "Saya ikut sedih dengarnya.", usage: "A polite reaction to bad news or a small problem." },
         { phrase: "That's great!", meaning: "Keren!", usage: "A positive reaction to good news." },
         { phrase: "Nice work.", meaning: "Kerja bagus.", usage: "Use this to compliment someone." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'm sorry to hear that for a small problem, and use That's great! for good news.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm a bit + adjective** to sound natural.\n\nExamples:\n\n- I'm a bit tired today.\n- I'm a bit busy right now.\n\nUse **didn't + base verb** for a negative in the simple past.\n\nExamples:\n\n- I didn't sleep well.\n- I didn't go out yesterday.",
@@ -2622,6 +2710,8 @@ export const lessonCatalog = [
         { phrase: "Do you want to join?", meaning: "Kamu mau ikut?", usage: "Invite someone to join an activity." },
         { phrase: "What time?", meaning: "Jam berapa?", usage: "Ask for the time of a plan." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine small-talk questions with simple past and going to for a short plan.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Did you + base verb?** to ask about the past.\n\nExamples:\n\n- Did you sleep well?\n- Did you go out yesterday?\n\nUse **I'm going to + verb** to talk about a plan.\n\nExamples:\n\n- I'm going to a new cafe.\n- I'm going to meet a friend.",
       patterns: [
@@ -2681,6 +2771,8 @@ export const lessonCatalog = [
         { phrase: "Where should we meet?", meaning: "Kita ketemu di mana?", usage: "Ask for the meeting place." },
         { phrase: "See you then.", meaning: "Sampai ketemu nanti.", usage: "A simple closing when you have a plan." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let's + verb to suggest a plan, and use How about + time? to propose a time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Let's + verb** to suggest a plan.\n\nExamples:\n\n- Let's get coffee.\n- Let's meet after class.\n\nUse **How about + time/place?** to propose an option.\n\nExamples:\n\n- How about 6 pm?\n- How about the cafe near the station?",
       patterns: [
@@ -2739,6 +2831,8 @@ export const lessonCatalog = [
         { phrase: "I'd love to.", meaning: "Saya mau banget.", usage: "A polite, enthusiastic acceptance." },
         { phrase: "Maybe next time.", meaning: "Mungkin lain kali.", usage: "A soft, polite way to decline." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Do you want to + verb? to invite someone, and use I'd love to / I'd like to to accept politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you want to + verb?** to invite someone.\n\nExamples:\n\n- Do you want to watch a movie?\n- Do you want to join?\n\nUse **I'd love to / I'd like to** to accept politely.\n\nExamples:\n\n- I'd love to.\n- I'd like to go.",
       patterns: [
@@ -2792,6 +2886,8 @@ export const lessonCatalog = [
         { phrase: "because I have a meeting", meaning: "karena saya ada meeting", usage: "Add a short reason with because." },
         { phrase: "No problem.", meaning: "Tidak apa-apa.", usage: "A polite response when someone declines." },
         { phrase: "Maybe another time.", meaning: "Mungkin lain kali.", usage: "A soft closing after declining." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I can / I can't to accept or decline, and add a short reason with because.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I can / I can't** to accept or decline.\n\nExamples:\n\n- Sure, I can.\n- Sorry, I can't.\n\nAdd a short reason with **because**.\n\nExamples:\n\n- I'm busy tonight because I have a meeting.\n- I can't go because I have work.",
@@ -2850,6 +2946,8 @@ export const lessonCatalog = [
         { phrase: "When are you free?", meaning: "Kamu kosong kapan?", usage: "Ask for availability." },
         { phrase: "Does 7 pm work for you?", meaning: "Jam 7 malam cocok buat kamu?", usage: "Confirm the new time." },
         { phrase: "Same cafe?", meaning: "Kafe yang sama?", usage: "Confirm the place." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Can we reschedule? and use Does + time work for you? to confirm a new time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can we + verb?** to ask to change a plan.\n\nExamples:\n\n- Can we reschedule?\n- Can we meet later?\n\nUse **Does + time work for you?** to confirm a new time.\n\nExamples:\n\n- Does 7 pm work for you?\n- Does Monday work for you?",
@@ -2913,6 +3011,8 @@ export const lessonCatalog = [
         { phrase: "How about Saturday?", meaning: "Gimana kalau Sabtu?", usage: "Suggest a new day." },
         { phrase: "Does 3 pm work for you?", meaning: "Jam 3 sore cocok buat kamu?", usage: "Confirm the new time." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine invitations with I can't + reason and rescheduling with Does + time work for you?",
       grammarNotes: "# Grammar for Conversation\n\nUse **I can't + time** to decline.\n\nExamples:\n\n- I can't tomorrow.\n- I can't tonight.\n\nUse **Does + time work for you?** to confirm.\n\nExamples:\n\n- Does 3 pm work for you?\n- Does Saturday work for you?",
       patterns: [
@@ -2970,6 +3070,8 @@ export const lessonCatalog = [
         { phrase: "One-way, please.", meaning: "Sekali jalan, ya.", usage: "Choose the ticket type." },
         { phrase: "How much is it?", meaning: "Berapa harganya?", usage: "Ask the price." },
         { phrase: "How much is it again?", meaning: "Berapa tadi harganya?", usage: "Ask to confirm the price." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'd like + noun to request a ticket, and use One-way or Round-trip to choose the ticket type.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something politely.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a bottle of water, please.\n\nUse **One-way / Round-trip** to choose the ticket type.\n\nExamples:\n\n- One-way, please.\n- Round-trip, please.",
@@ -3029,6 +3131,8 @@ export const lessonCatalog = [
         { phrase: "Which platform?", meaning: "Platform berapa?", usage: "Ask where to go." },
         { phrase: "How long is the trip?", meaning: "Perjalanannya berapa lama?", usage: "Ask for the duration." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What time does it leave? to ask about departure, and use Which platform? to confirm where to go.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What time does + noun + verb?** to ask about a schedule.\n\nExamples:\n\n- What time does the train leave?\n- What time does the bus arrive?\n\nUse **Which + noun?** to ask for a choice.\n\nExamples:\n\n- Which platform?\n- Which gate?",
       patterns: [
@@ -3085,6 +3189,8 @@ export const lessonCatalog = [
         { phrase: "Is this the right way?", meaning: "Ini jalan yang benar?", usage: "Ask to confirm." },
         { phrase: "You're going the right way.", meaning: "Kamu sudah jalan yang benar.", usage: "A helpful confirmation." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Is this the right way? to check, and use Turn left/right to follow directions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Is this the right way?** to confirm directions.\n\nExamples:\n\n- Is this the right way to platform 2?\n- Is this the right way?\n\nUse **Turn left/right + at + landmark** for directions.\n\nExamples:\n\n- Turn left at the stairs.\n- Turn right at the bank.",
       patterns: [
@@ -3140,6 +3246,8 @@ export const lessonCatalog = [
         { phrase: "How long will it take?", meaning: "Kira-kira berapa lama?", usage: "Ask for travel time." },
         { phrase: "Please take the fastest route.", meaning: "Tolong lewat rute tercepat.", usage: "A simple request." },
         { phrase: "About 20 minutes.", meaning: "Sekitar 20 menit.", usage: "A simple estimate." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Can you take me to + place? to request a ride, and use How long will it take? to ask about time.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Can you take me to + place?** to request a ride.\n\nExamples:\n\n- Can you take me to the station?\n- Can you take me to the hotel?\n\nUse **How long will it take?** to ask about time.\n\nExamples:\n\n- How long will it take?\n- How long will it take to get there?",
@@ -3205,6 +3313,8 @@ export const lessonCatalog = [
         { phrase: "Can you take me to my hotel?", meaning: "Bisa antar saya ke hotel saya?", usage: "A polite request to a driver." },
         { phrase: "Let's go.", meaning: "Ayo berangkat.", usage: "A simple start phrase." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine I'd like + ticket, What time does it leave?, and Can you take me to + place? in one connected mission.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like + noun** to request something.\n\nExamples:\n\n- I'd like one ticket to Bandung, please.\n- I'd like a taxi, please.\n\nUse **What time does it leave?** to ask about a schedule.\n\nExamples:\n\n- What time does it leave?\n- What time does the train leave?\n\nUse **Can you take me to + place?** for a driver request.\n\nExamples:\n\n- Can you take me to my hotel?\n- Can you take me to the station?",
       patterns: [
@@ -3261,6 +3371,8 @@ export const lessonCatalog = [
         { phrase: "Do you have it?", meaning: "Ada?", usage: "Ask if the item is available." },
         { phrase: "Sorry, we're out of stock.", meaning: "Maaf, stoknya habis.", usage: "A polite way to say the item is not available." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Do you have + item? to ask for availability, and use I'm looking for + item to explain what you want.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a phone charger.\n- I'm looking for a black T-shirt.\n\nUse **Do you have + item?** to ask about availability.\n\nExamples:\n\n- Do you have a USB-C charger?\n- Do you have this in black?",
       patterns: [
@@ -3314,6 +3426,8 @@ export const lessonCatalog = [
         { phrase: "Do you have it in size M?", meaning: "Ada ukuran M?", usage: "Ask about size." },
         { phrase: "Size M is available.", meaning: "Ukuran M tersedia.", usage: "Confirm a size." },
         { phrase: "I'll take the blue one.", meaning: "Saya ambil yang biru.", usage: "Choose an option." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Do you have this in + color? to ask about color, and use Do you have it in size + letter/number? to ask about size.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you have this in + color?** to ask about color.\n\nExamples:\n\n- Do you have this in black?\n- Do you have this in red?\n\nUse **Do you have it in size + letter/number?** to ask about size.\n\nExamples:\n\n- Do you have it in size M?\n- Do you have it in size 40?",
@@ -3369,6 +3483,8 @@ export const lessonCatalog = [
         { phrase: "better quality", meaning: "kualitas lebih bagus", usage: "A simple comparison." },
         { phrase: "I'll take the cheaper one.", meaning: "Saya ambil yang lebih murah.", usage: "Choose an option." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Which one is cheaper? to compare, and use I'll take the cheaper one to choose.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **I'll take the + comparative one** to choose.\n\nExamples:\n\n- I'll take the cheaper one.\n- I'll take the bigger one.",
       patterns: [
@@ -3422,6 +3538,8 @@ export const lessonCatalog = [
         { phrase: "Can you show me where the batteries are?", meaning: "Bisa tunjukkan baterai ada di mana?", usage: "Ask someone to show the location." },
         { phrase: "next to the cash register", meaning: "di sebelah kasir", usage: "Use this to describe a location." },
         { phrase: "Thank you for your help.", meaning: "Terima kasih atas bantuannya.", usage: "A polite closing." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Could you help me? to ask politely, and use Can you show me where + item is? to ask for help finding something.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?\n\nUse **Can you show me where + noun + are/is?** to ask for a location.\n\nExamples:\n\n- Can you show me where the batteries are?\n- Can you show me where the station is?",
@@ -3487,6 +3605,8 @@ export const lessonCatalog = [
         { phrase: "I'll take this one.", meaning: "Saya ambil yang ini.", usage: "Choose an option." },
         { phrase: "Could you help me?", meaning: "Bisa bantu saya?", usage: "Ask for help politely." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine Do you have + item?, Do you have it in size?, and Which one is cheaper? in one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm looking for + item** to explain what you want.\n\nExamples:\n\n- I'm looking for a charger.\n- I'm looking for a T-shirt.\n\nUse **Which one is + comparative?** to compare.\n\nExamples:\n\n- Which one is cheaper?\n- Which one is better?\n\nUse **Could you + verb?** to ask politely.\n\nExamples:\n\n- Could you help me?\n- Could you show me where it is?",
       patterns: [
@@ -3543,6 +3663,8 @@ export const lessonCatalog = [
         { phrase: "I'm really tired.", meaning: "Aku capek banget.", usage: "Use tired for low energy." },
         { phrase: "I think I have a fever.", meaning: "Kayaknya aku demam.", usage: "I think makes it softer and natural." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I feel + adjective and I have + noun to describe how you feel (I feel tired, I have a headache).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I feel + adjective**.\n\nExamples:\n\n- I feel tired.\n- I feel sick today.\n\nUse **I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.",
       patterns: [
@@ -3598,6 +3720,8 @@ export const lessonCatalog = [
         { phrase: "Do you have a fever?", meaning: "Kamu demam?", usage: "A yes/no question from staff." },
         { phrase: "How long have you been coughing?", meaning: "Sudah berapa lama kamu batuk?", usage: "Ask about duration." },
         { phrase: "Please wait here.", meaning: "Tolong tunggu di sini.", usage: "A polite instruction." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I've had + symptom + for/since to say duration (I've had a cough for two days / since yesterday).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a headache for a week.\n\nUse **I've had + symptom + since**.\n\nExamples:\n\n- I've had a sore throat since yesterday.\n- I've had a fever since Monday.",
@@ -3657,6 +3781,8 @@ export const lessonCatalog = [
         { phrase: "We have 3:30 p.m. available.", meaning: "Kami ada jam 3:30 sore.", usage: "Available means open slot." },
         { phrase: "I'll take it.", meaning: "Saya ambil.", usage: "Accept the offered time." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'd like to + verb to make polite requests (I'd like to make an appointment).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to make an appointment.\n- I'd like to see a doctor.\n\nUse **Is + time/day + okay?**.\n\nExamples:\n\n- Is tomorrow afternoon okay?\n- Is Monday morning okay?",
       patterns: [
@@ -3712,6 +3838,8 @@ export const lessonCatalog = [
         { phrase: "My name is ...", meaning: "Nama saya ...", usage: "Say your name clearly." },
         { phrase: "P-A-R-K.", meaning: "P-A-R-K.", usage: "Spell it with letters." },
         { phrase: "See you tomorrow.", meaning: "Sampai besok.", usage: "A friendly closing." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Let me confirm... / So it's on... at... to repeat details and avoid mistakes.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Let me confirm + detail**.\n\nExamples:\n\n- Let me confirm the time.\n- Let me confirm your name.\n\nUse **So it's on... at...**.\n\nExamples:\n\n- So it's on Monday at 3:30 p.m.\n- So it's tomorrow at 10 a.m.",
@@ -3769,6 +3897,8 @@ export const lessonCatalog = [
         { phrase: "Please take a seat.", meaning: "Silakan duduk.", usage: "A polite instruction." },
         { phrase: "The doctor will see you soon.", meaning: "Dokternya akan menemui kamu sebentar lagi.", usage: "Soon means in a short time." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine polite check-in (I have an appointment) with symptom + duration (I've had... since/for...).",
       grammarNotes: "# Grammar for Conversation\n\nUse **I have an appointment at + time**.\n\nExamples:\n\n- I have an appointment at 3:30.\n- I have an appointment at 10 a.m.\n\nUse **I've had + symptom + for**.\n\nExamples:\n\n- I've had a cough for two days.\n- I've had a fever for a day.",
       patterns: [
@@ -3824,6 +3954,8 @@ export const lessonCatalog = [
         { phrase: "What did you do there?", meaning: "Kamu ngapain di sana?", usage: "Use did for past questions." },
         { phrase: "I watched a movie last night.", meaning: "Aku nonton film tadi malam.", usage: "Last night is a common past time phrase." },
         { phrase: "Did you go alone?", meaning: "Kamu pergi sendirian?", usage: "A simple yes/no question in the past." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use simple past verbs (went, ate, watched) and time words (yesterday, last night) to describe what you did.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Simple past verbs**.\n\nExamples:\n\n- I went to the mall.\n- I ate ramen.\n- I watched a movie.\n\nUse **Past question with did**.\n\nExamples:\n\n- What did you do?\n- Did you go alone?",
@@ -3881,6 +4013,8 @@ export const lessonCatalog = [
         { phrase: "I stayed home.", meaning: "Aku di rumah aja.", usage: "Stayed is past of stay." },
         { phrase: "Where did you go after that?", meaning: "Setelah itu kamu ke mana?", usage: "After that helps sequence events." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I went to + place and Where did you go? for simple past questions about places.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I went to + place**.\n\nExamples:\n\n- I went to the museum.\n- I went to a cafe.\n\nUse **Where did you go?**.\n\nExamples:\n\n- Where did you go yesterday?\n- Where did you go after that?",
       patterns: [
@@ -3936,6 +4070,8 @@ export const lessonCatalog = [
         { phrase: "It was delicious.", meaning: "Enak banget.", usage: "Use It was + adjective." },
         { phrase: "I really liked it.", meaning: "Aku suka banget.", usage: "Liked is past of like." },
         { phrase: "The service was great.", meaning: "Pelayanannya bagus.", usage: "Service is singular here." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use It was + adjective and I really liked it / I did not like it to describe experiences.",
       grammarNotes: "# Grammar for Conversation\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was delicious.\n- It was fun.\n\nUse **I liked it / I did not like it**.\n\nExamples:\n\n- I really liked it.\n- I did not like it.",
@@ -3993,6 +4129,8 @@ export const lessonCatalog = [
         { phrase: "What did you cook?", meaning: "Kamu masak apa?", usage: "A follow-up question." },
         { phrase: "I made fried rice.", meaning: "Aku bikin nasi goreng.", usage: "Made is past of make." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What did you do? / Did you + verb? to ask about the past and use short past answers.",
       grammarNotes: "# Grammar for Conversation\n\nUse **What did you do?**.\n\nExamples:\n\n- What did you do yesterday?\n- What did you do last night?\n\nUse **Did you + verb?**.\n\nExamples:\n\n- Did you cook at home?\n- Did you watch a movie?",
       patterns: [
@@ -4048,6 +4186,8 @@ export const lessonCatalog = [
         { phrase: "How was it?", meaning: "Gimana?", usage: "Ask about the experience." },
         { phrase: "It was really interesting.", meaning: "Seru banget.", usage: "Use It was + adjective." },
         { phrase: "Did you go with anyone?", meaning: "Kamu pergi sama siapa?", usage: "Ask who they went with." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine simple past (went/did/ate) with It was + adjective to complete a short past story.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Simple past story**.\n\nExamples:\n\n- I went to the museum.\n- I took photos.\n- I liked it.\n\nUse **It was + adjective**.\n\nExamples:\n\n- It was really interesting.\n- It was fun.",
@@ -4105,6 +4245,8 @@ export const lessonCatalog = [
         { phrase: "He was great.", meaning: "Dia keren.", usage: "Great is a common positive adjective." },
         { phrase: "I want to watch it too.", meaning: "Aku juga mau nonton.", usage: "A natural follow-up after hearing an opinion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I think + sentence and I think it's + adjective to share a simple opinion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I think + sentence**.\n\nExamples:\n\n- I think it's really good.\n- I think the story is fun.\n\nUse **I think it's + adjective**.\n\nExamples:\n\n- I think it's interesting.\n- I think it's boring.",
       patterns: [
@@ -4160,6 +4302,8 @@ export const lessonCatalog = [
         { phrase: "I agree.", meaning: "Setuju.", usage: "Agree shows the same opinion." },
         { phrase: "It is quiet.", meaning: "Tempatnya tenang.", usage: "Quiet is an adjective." },
         { phrase: "I come here often.", meaning: "Aku sering ke sini.", usage: "Often is an adverb of frequency." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use because + reason to explain your opinion (I like it because it is easy).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because the coffee is good.\n- I come here because it is quiet.\n\nUse **Why? / Because...**.\n\nExamples:\n\n- Why?\n- Because it is relaxing.",
@@ -4217,6 +4361,8 @@ export const lessonCatalog = [
         { phrase: "That's fair.", meaning: "Masuk akal.", usage: "Shows you accept their point." },
         { phrase: "It's a bit expensive.", meaning: "Agak mahal.", usage: "A soft negative opinion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I agree / I'm not sure / I don't think so to respond politely to opinions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I'm not sure.\n- I don't think so.\n\nUse **Agree + contrast with but**.\n\nExamples:\n\n- I agree, but...\n- I agree the food is good, but the service is slow.",
       patterns: [
@@ -4272,6 +4418,8 @@ export const lessonCatalog = [
         { phrase: "Because the beaches are beautiful.", meaning: "Karena pantainya indah.", usage: "A simple reason." },
         { phrase: "It might be crowded.", meaning: "Mungkin ramai.", usage: "Might shows possibility." },
         { phrase: "Maybe we go on a weekday.", meaning: "Mungkin kita pergi hari kerja.", usage: "A simple suggestion." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use What do you think about + noun? and respond with I think... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **What do you think about + noun/verb-ing?**.\n\nExamples:\n\n- What do you think about this plan?\n- What do you think about going to Bali?\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's a great idea because the beaches are beautiful.\n- I think it's good because it's relaxing.",
@@ -4329,6 +4477,8 @@ export const lessonCatalog = [
         { phrase: "That's fair.", meaning: "Masuk akal.", usage: "Accept their point politely." },
         { phrase: "Do you have another idea?", meaning: "Kamu ada ide lain?", usage: "Ask for an alternative." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine opinion + because + polite agreement/disagreement (I agree / I'm not sure).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Opinion + because**.\n\nExamples:\n\n- I think it's good because it's cheap.\n- I think it's better because it's quiet.\n\nUse **Polite response**.\n\nExamples:\n\n- I'm not sure.\n- That's fair.",
       patterns: [
@@ -4384,6 +4534,8 @@ export const lessonCatalog = [
         { phrase: "Do you want to grab coffee this weekend?", meaning: "Kamu mau ngopi weekend ini?", usage: "A natural invitation." },
         { phrase: "Are you free on Saturday afternoon?", meaning: "Kamu free Sabtu sore?", usage: "Ask availability for a plan." },
         { phrase: "Let's meet at 3 p.m.", meaning: "Ketemu jam 3 sore ya.", usage: "Confirm a time." },
+      ],
+      vocabulary: [
       ],
       grammar: "Review follow-up questions, invitations, and simple future plans (Do you want to...?, Are you free...?).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Inviting with Do you want to...?**.\n\nExamples:\n\n- Do you want to grab coffee?\n- Do you want to hang out this weekend?\n\nUse **Checking availability**.\n\nExamples:\n\n- Are you free on Saturday?\n- Are you free this weekend?",
@@ -4441,6 +4593,8 @@ export const lessonCatalog = [
         { phrase: "What kind do you need?", meaning: "Jenis yang mana?", usage: "A common staff question." },
         { phrase: "A USB-C charger, please.", meaning: "Charger USB-C, ya.", usage: "A short polite request." },
       ],
+      vocabulary: [
+      ],
       grammar: "Review polite questions (Do you have...?, How much is...?, Where is...?) and simple requests.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Where is...?**.\n\nExamples:\n\n- Where is platform 2?\n- Where is the ticket counter?\n\nUse **Do you have...?**.\n\nExamples:\n\n- Do you have a phone charger?\n- Do you have this in black?",
       patterns: [
@@ -4496,6 +4650,8 @@ export const lessonCatalog = [
         { phrase: "Did you sleep late last night?", meaning: "Kamu tidur larut tadi malam?", usage: "Past question with did." },
         { phrase: "What did you do yesterday?", meaning: "Kamu ngapain kemarin?", usage: "A common past question." },
         { phrase: "I stayed home.", meaning: "Aku di rumah aja.", usage: "Past of stay." },
+      ],
+      vocabulary: [
       ],
       grammar: "Review I don't feel well / I have... and simple past questions with did.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Health: I have + symptom**.\n\nExamples:\n\n- I have a headache.\n- I have a fever.\n\nUse **Past question with did**.\n\nExamples:\n\n- Did you sleep late?\n- What did you do yesterday?",
@@ -4554,6 +4710,8 @@ export const lessonCatalog = [
         { phrase: "I've had a cough for two days.", meaning: "Saya batuk dua hari.", usage: "Symptom + duration." },
         { phrase: "What did you do yesterday?", meaning: "Kamu ngapain kemarin?", usage: "Past question practice." },
         { phrase: "I think it's good because it's cheap.", meaning: "Menurutku bagus karena murah.", usage: "Opinion + reason practice." },
+      ],
+      vocabulary: [
       ],
       grammar: "Review core A2 patterns: Do you want to..., Do you have..., I've had..., What did you do..., I think... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Mixed review patterns**.\n\nExamples:\n\n- Do you want to...?\n- Do you have...?\n- I've had... for/since...\n- What did you do yesterday?\n- I think... because...",
@@ -4617,6 +4775,8 @@ export const lessonCatalog = [
         { phrase: "Are you free on Saturday afternoon?", meaning: "Kamu free Sabtu sore?", usage: "Check availability." },
         { phrase: "A bit tired, though.", meaning: "Agak capek.", usage: "Though softens the tone." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine A2 skills naturally: small talk, past questions, invitations, opinions with because, and simple requests.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Recommend with because**.\n\nExamples:\n\n- Yes, because the coffee is good.\n- Yes, because it is quiet.\n\nUse **Plan with weekend + availability**.\n\nExamples:\n\n- Do you want to go there this weekend?\n- Are you free on Saturday afternoon?",
       patterns: [
@@ -4672,6 +4832,8 @@ export const lessonCatalog = [
         { phrase: "We were visiting my aunt.", meaning: "Kami nengok tanteku.", usage: "Past continuous for background activities." },
         { phrase: "How was the place?", meaning: "Gimana tempatnya?", usage: "A natural follow-up question." },
         { phrase: "It was cooler than Jakarta.", meaning: "Lebih sejuk dari Jakarta.", usage: "Use comparative adjective + than." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use time and place phrases (last weekend, at the beach) and past \"be\" (I was, we were) to set the scene.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Setting time and place**.\n\nExamples:\n\n- Last weekend, I was in Bandung.\n- Yesterday afternoon, we were at the station.\n\nUse **Past be (was / were)**.\n\nExamples:\n\n- I was with my cousin.\n- We were visiting my aunt.",
@@ -4731,6 +4893,8 @@ export const lessonCatalog = [
         { phrase: "After that, we met my aunt for dinner.", meaning: "Setelah itu, kami ketemu tanteku buat makan malam.", usage: "After that is natural for stories." },
         { phrase: "Finally, we went back early.", meaning: "Terakhir, kami pulang lebih cepat.", usage: "Finally ends the story sequence." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use linking words (first, then, after that, finally) to connect past events clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Linking words for sequence**.\n\nExamples:\n\n- First, ...\n- Then, ...\n- After that, ...\n- Finally, ...\n\nUse **Past verbs in stories**.\n\nExamples:\n\n- We checked in.\n- We walked around.\n- We met my aunt.\n- We went back.",
       patterns: [
@@ -4787,6 +4951,8 @@ export const lessonCatalog = [
         { phrase: "I was excited when...", meaning: "Aku excited waktu...", usage: "Use was excited + when for story moments." },
         { phrase: "We got lost.", meaning: "Kami tersesat.", usage: "A common travel problem phrase." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I felt + adjective and I was + adjective to describe feelings in past situations.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I felt + adjective**.\n\nExamples:\n\n- I felt nervous.\n- I felt relieved.\n\nUse **I was + adjective**.\n\nExamples:\n\n- I was excited.\n- I was worried.",
       patterns: [
@@ -4842,6 +5008,8 @@ export const lessonCatalog = [
         { phrase: "How did you feel at that moment?", meaning: "Gimana perasaanmu saat itu?", usage: "Ask about feelings in the story." },
         { phrase: "We asked a local person for help.", meaning: "Kami tanya orang lokal buat bantuan.", usage: "A simple action in the past." },
         { phrase: "I'm glad it worked out.", meaning: "Syukurlah akhirnya beres.", usage: "A natural supportive reaction." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use follow-up questions in the past: What happened next? Why did you...? How did you feel?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Follow-up questions**.\n\nExamples:\n\n- What happened next?\n- Why did you do that?\n- How did you feel?\n\nUse **Past question with did**.\n\nExamples:\n\n- Why did you choose that route?\n- Why did you go there?",
@@ -4901,6 +5069,8 @@ export const lessonCatalog = [
         { phrase: "I felt nervous, but then I felt relieved.", meaning: "Aku gugup, tapi lalu lega.", usage: "Contrast feelings with but." },
         { phrase: "What happened next?", meaning: "Terus apa yang terjadi?", usage: "A follow-up question." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine scene setting + sequence words + feelings to tell a connected story (4 to 6 sentences).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Connected story pattern**.\n\nExamples:\n\n- Last weekend, I was in ...\n- First, ... Then ... After that ... Finally, ...\n- I felt ... because ...",
       patterns: [
@@ -4956,6 +5126,8 @@ export const lessonCatalog = [
         { phrase: "Next, I'll review the copy.", meaning: "Berikutnya, aku review teksnya.", usage: "Use Next to structure your update." },
         { phrase: "Any blockers?", meaning: "Ada hambatan?", usage: "A short workplace check question." },
         { phrase: "Keep me posted.", meaning: "Kabari aku ya.", usage: "A polite closing at work." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I am working on... / I am planning to... to explain your task and next step politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I am working on + noun**.\n\nExamples:\n\n- I'm working on the onboarding email flow.\n- I'm working on the bug fix.\n\nUse **Next, I will / I'll + verb**.\n\nExamples:\n\n- Next, I'll review the copy.\n- Next, I'll update the template.",
@@ -5013,6 +5185,8 @@ export const lessonCatalog = [
         { phrase: "Got it.", meaning: "Oke, paham.", usage: "A natural confirmation of understanding." },
         { phrase: "I'll send it by Thursday afternoon.", meaning: "Aku kirim paling lambat Kamis sore.", usage: "By + time means deadline." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Could you clarify...?, Do you mean...?, and Just to confirm... to avoid mistakes.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Could you clarify...?**.\n\nExamples:\n\n- Could you clarify which sections you need?\n- Could you clarify the deadline?\n\nUse **Just to confirm...**.\n\nExamples:\n\n- Just to confirm, you want the latest numbers, right?\n- Just to confirm, this is for Friday, right?",
       patterns: [
@@ -5068,6 +5242,8 @@ export const lessonCatalog = [
         { phrase: "What's left?", meaning: "Sisa apa?", usage: "A short follow-up question." },
         { phrase: "I still need to double-check the numbers.", meaning: "Aku masih perlu cek lagi angkanya.", usage: "Double-check is common at work." },
         { phrase: "Thanks for the heads-up.", meaning: "Makasih sudah ngasih tahu.", usage: "A polite reaction to a warning." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'm making progress... / I'm almost done... and I might need... to give a clear update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Progress + almost done**.\n\nExamples:\n\n- I'm making good progress.\n- I'm almost done with the summary.\n\nUse **I might need...**.\n\nExamples:\n\n- I might need an extra hour.\n- I might need feedback from you.",
@@ -5125,6 +5301,8 @@ export const lessonCatalog = [
         { phrase: "That makes sense.", meaning: "Masuk akal.", usage: "Agree politely with a point." },
         { phrase: "What are the next steps?", meaning: "Next step-nya apa?", usage: "Ask for action items after discussion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'd like to add... / I suggest... / What are the next steps? for short meeting contributions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to add one point.\n- I'd like to ask a question.\n\nUse **I suggest + sentence**.\n\nExamples:\n\n- I suggest we move the deadline.\n- I suggest we review the risks.",
       patterns: [
@@ -5180,6 +5358,8 @@ export const lessonCatalog = [
         { phrase: "Just to confirm, you need it by Friday morning, right?", meaning: "Sekadar memastikan, kamu butuhnya paling lambat Jumat pagi, ya?", usage: "Confirm deadline details." },
         { phrase: "Please send it by Thursday afternoon if possible.", meaning: "Kalau bisa, kirim paling lambat Kamis sore.", usage: "By indicates a deadline; if possible softens the request." },
         { phrase: "Got it.", meaning: "Oke, paham.", usage: "A natural short acknowledgement." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine workplace patterns: I'm working on..., Could you clarify...?, Just to confirm..., I'll send it by...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Update + clarification + confirmation**.\n\nExamples:\n\n- I'm making good progress.\n- Could you clarify...?\n- Just to confirm..., right?\n- I'll send it by ...",
@@ -5237,6 +5417,8 @@ export const lessonCatalog = [
         { phrase: "Users can't sign in.", meaning: "User nggak bisa login.", usage: "State the impact in a simple sentence." },
         { phrase: "So they can't access their lessons.", meaning: "Jadi mereka nggak bisa akses lesson.", usage: "Use so to show impact/result." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use There's a problem with... / It happened when... / Because... to explain a problem clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with the login page.\n- There's a problem with the payment flow.\n\nUse **Cause and result (because / so)**.\n\nExamples:\n\n- It happened because of the update.\n- Users can't sign in, so they can't access lessons.",
       patterns: [
@@ -5292,6 +5474,8 @@ export const lessonCatalog = [
         { phrase: "Because rollback is quick.", meaning: "Karena rollback itu cepat.", usage: "Give one clear reason." },
         { phrase: "We should add a quick test.", meaning: "Kita harus tambah quick test.", usage: "Should suggests the best next action." },
         { phrase: "So it doesn't happen again.", meaning: "Supaya nggak kejadian lagi.", usage: "So shows purpose/result." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use We could... / We should... / I suggest... because... to propose solutions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **We could... / We should...**.\n\nExamples:\n\n- We could roll back the update.\n- We should add a quick test.\n\nUse **Suggestion + reason**.\n\nExamples:\n\n- I suggest we roll it back because it's quick.\n- We could do it now because it's low risk.",
@@ -5349,6 +5533,8 @@ export const lessonCatalog = [
         { phrase: "I'll try that starting tomorrow.", meaning: "Aku akan coba mulai besok.", usage: "Commit to an action plan." },
         { phrase: "Good idea. Thanks.", meaning: "Ide bagus. Makasih.", usage: "Close politely after advice." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use That sounds good / You're right / I'll try... to respond to advice and commit to an action.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advice with should**.\n\nExamples:\n\n- Maybe you should set a daily goal.\n- You should try a shorter session.\n\nUse **Responding to advice**.\n\nExamples:\n\n- That sounds good.\n- You're right.\n- I'll try that starting tomorrow.",
       patterns: [
@@ -5404,6 +5590,8 @@ export const lessonCatalog = [
         { phrase: "We could do a quick rollback.", meaning: "Kita bisa rollback cepat.", usage: "A practical compromise option." },
         { phrase: "That sounds reasonable.", meaning: "Kedengarannya masuk akal.", usage: "Agree to a plan politely." },
         { phrase: "Let's do a full review tomorrow.", meaning: "Besok kita review penuh.", usage: "Make a clear next step plan." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use We could... but... / I'd rather... / Let's... because... to make decisions politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Preference with I'd rather**.\n\nExamples:\n\n- I'd rather fix it now.\n- I'd rather wait until tomorrow.\n\nUse **Decision with let's + because**.\n\nExamples:\n\n- Let's roll back now because users are blocked.\n- Let's decide after we check the logs.",
@@ -5463,6 +5651,8 @@ export const lessonCatalog = [
         { phrase: "But will it affect other features?", meaning: "Tapi bakal ngaruh ke fitur lain nggak?", usage: "A realistic concern question." },
         { phrase: "It might, so let's roll back and then test the key flows.", meaning: "Mungkin, jadi kita rollback lalu tes alur penting.", usage: "Respond to concern and propose next steps." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: There's a problem with..., We could/should..., Because/so..., Let's... to complete a short problem-solving flow.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem -> solution -> decision**.\n\nExamples:\n\n- There's a problem with ...\n- We could ... because ...\n- But will it ...?\n- It might, so let's ...",
       patterns: [
@@ -5520,6 +5710,8 @@ export const lessonCatalog = [
         { phrase: "I have a reservation under Mina Kim.", meaning: "Saya ada reservasi atas nama Mina Kim.", usage: "Under + name means the booking name." },
         { phrase: "Could I see your ID, please?", meaning: "Boleh saya lihat ID-nya?", usage: "A polite request from staff." },
         { phrase: "Breakfast is included.", meaning: "Sarapan sudah termasuk.", usage: "Included means it is part of the price." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'd like to... and I have a reservation under... to check in politely and confirm details.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'd like to + verb**.\n\nExamples:\n\n- I'd like to check in.\n- I'd like to ask a question.\n\nUse **Reservation under + name**.\n\nExamples:\n\n- I have a reservation under Mina Kim.\n- It's under Faris Chen.",
@@ -5579,6 +5771,8 @@ export const lessonCatalog = [
         { phrase: "Can we start a little later?", meaning: "Bisa mulai agak telat sedikit?", usage: "A polite request to adjust timing." },
         { phrase: "Thank you for waiting.", meaning: "Makasih sudah nungguin ya.", usage: "A polite closing after being late." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'm running a bit late / ... is delayed / I'll be there in ... to explain delays clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Running late**.\n\nExamples:\n\n- I'm running a bit late.\n- Sorry, I'm running late.\n\nUse **In about + time**.\n\nExamples:\n\n- I'll be there in about 20 minutes.\n- I'll arrive in about an hour.",
       patterns: [
@@ -5637,6 +5831,8 @@ export const lessonCatalog = [
         { phrase: "Is it far from here?", meaning: "Jauh nggak dari sini?", usage: "A simple follow-up question about distance." },
         { phrase: "How do I get there?", meaning: "Cara ke sana gimana?", usage: "Ask for directions after a recommendation." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Do you have any recommendations for...? and I'm looking for... to ask politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Do you have any recommendations for...?**.\n\nExamples:\n\n- Do you have any recommendations for dinner?\n- Do you have any recommendations for a museum?\n\nUse **I'm looking for...**.\n\nExamples:\n\n- I'm looking for something local.\n- I'm looking for a quiet cafe.",
       patterns: [
@@ -5694,6 +5890,8 @@ export const lessonCatalog = [
         { phrase: "Could you send someone to take a look?", meaning: "Bisa kirim orang untuk cek?", usage: "A polite request for help." },
         { phrase: "Could I change rooms?", meaning: "Bisa ganti kamar?", usage: "Ask for an alternative option." },
         { phrase: "Thank you for your help.", meaning: "Terima kasih bantuannya.", usage: "Close politely after the request." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use There's a problem with... and Could you... / Could I... to complain politely and request help.",
       grammarNotes: "# Grammar for Conversation\n\nUse **There's a problem with...**.\n\nExamples:\n\n- There's a problem with my room.\n- There's a problem with the key card.\n\nUse **Could you... / Could I...?**.\n\nExamples:\n\n- Could you send someone to take a look?\n- Could I change rooms?",
@@ -5755,6 +5953,8 @@ export const lessonCatalog = [
         { phrase: "Do you have any recommendations for dinner?", meaning: "Ada rekomendasi buat makan malam?", usage: "Ask for ideas politely." },
         { phrase: "If there's a problem with my room, could you help me?", meaning: "Kalau ada masalah di kamar, bisa dibantu?", usage: "A polite conditional request." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine travel patterns: I'm running late..., I'd like to check in..., Do you have any recommendations...?, Could you...?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Combine delay + check-in + request**.\n\nExamples:\n\n- I'm running a bit late. My train is delayed.\n- I have a reservation under ...\n- Do you have any recommendations for ...?\n- Could you help me?",
       patterns: [
@@ -5813,6 +6013,8 @@ export const lessonCatalog = [
         { phrase: "I'd like to improve my speaking.", meaning: "Aku pengen improve speaking-ku.", usage: "A polite, friendly goal phrase." },
         { phrase: "I'll practice five minutes every day.", meaning: "Aku latihan lima menit tiap hari.", usage: "A simple plan connected to a goal." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use My goal is to... / I'd like to... and by + time to describe goals clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My goal is to + verb**.\n\nExamples:\n\n- My goal is to speak more confidently.\n- My goal is to learn 50 new words.\n\nUse **By + time (deadline)**.\n\nExamples:\n\n- By the end of this month.\n- By Friday morning.",
       patterns: [
@@ -5870,6 +6072,8 @@ export const lessonCatalog = [
         { phrase: "I'm about halfway.", meaning: "Kira-kira setengah jalan.", usage: "A simple way to describe progress level." },
         { phrase: "I can speak for two minutes without stopping.", meaning: "Aku bisa ngomong dua menit tanpa berhenti.", usage: "A clear progress metric." },
         { phrase: "I still need to improve my pronunciation.", meaning: "Aku masih perlu improve pronunciation.", usage: "Still need shows what remains." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'm making progress... / I've been practicing... / I still need to... to give a clear progress update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I've been + verb-ing (habit up to now)**.\n\nExamples:\n\n- I've been practicing every morning.\n- I've been studying for 10 minutes a day.\n\nUse **Still need to + verb**.\n\nExamples:\n\n- I still need to improve my pronunciation.\n- I still need to review the grammar.",
@@ -5931,6 +6135,8 @@ export const lessonCatalog = [
         { phrase: "I get distracted by my phone.", meaning: "Aku gampang terdistraksi sama HP.", usage: "A clear reason for the challenge." },
         { phrase: "Do you have any tips?", meaning: "Ada tips nggak?", usage: "A simple way to ask for advice." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use The biggest challenge is... / I'm struggling with... / It's hard to... to talk about challenges clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **The biggest challenge is + noun/verb-ing**.\n\nExamples:\n\n- The biggest challenge is staying consistent.\n- The biggest challenge is finding time.\n\nUse **It's hard to + verb**.\n\nExamples:\n\n- It's hard to stay consistent after work.\n- It's hard to focus when I'm tired.",
       patterns: [
@@ -5988,6 +6194,8 @@ export const lessonCatalog = [
         { phrase: "I'm going to keep it simple.", meaning: "Aku mau bikin simpel.", usage: "A realistic planning phrase." },
         { phrase: "Let's set a simple plan.", meaning: "Yuk bikin rencana sederhana.", usage: "A friendly suggestion to plan together." },
         { phrase: "That sounds realistic.", meaning: "Kedengarannya realistis.", usage: "Agree to a plan politely." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use My next step is to... / I'm going to... / I'll do it ... times this week to plan next steps.",
       grammarNotes: "# Grammar for Conversation\n\nUse **My next step is to + verb**.\n\nExamples:\n\n- My next step is to practice with Conversation Coach.\n- My next step is to review vocabulary.\n\nUse **Times per week**.\n\nExamples:\n\n- I'll do it three times this week.\n- I'll practice twice a week.",
@@ -6047,6 +6255,8 @@ export const lessonCatalog = [
         { phrase: "I get distracted by my phone.", meaning: "Aku gampang terdistraksi sama HP.", usage: "Give one clear reason." },
         { phrase: "My next step is to practice three times this week.", meaning: "Next step aku adalah latihan tiga kali minggu ini.", usage: "Next step + schedule." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: My goal is to... / I've been... / The biggest challenge is... / My next step is to... to complete a goal update.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Goal -> progress -> challenge -> next step**.\n\nExamples:\n\n- My goal is to ... by the end of ...\n- I've been practicing ...\n- The biggest challenge is ...\n- My next step is to ...",
       patterns: [
@@ -6105,6 +6315,8 @@ export const lessonCatalog = [
         { phrase: "Which do you prefer?", meaning: "Kamu lebih pilih yang mana?", usage: "A natural preference question." },
         { phrase: "I think I prefer Noodle House.", meaning: "Kayaknya aku lebih pilih Noodle House.", usage: "I think softens your preference." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Option A is... but Option B is... and Which do you prefer? to compare options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Compare with but**.\n\nExamples:\n\n- Sushi Place is nicer, but it's more expensive.\n- It's closer, but it's noisier.\n\nUse **Preference question**.\n\nExamples:\n\n- Which do you prefer?\n- Which one do you prefer?",
       patterns: [
@@ -6162,6 +6374,8 @@ export const lessonCatalog = [
         { phrase: "The main reason is I don't want to arrive too late.", meaning: "Alasan utamanya aku nggak mau sampai terlalu malam.", usage: "A clear main-reason structure." },
         { phrase: "It feels more convenient.", meaning: "Rasanya lebih praktis.", usage: "Convenient is common for preferences." },
         { phrase: "That makes sense.", meaning: "Masuk akal.", usage: "A polite reaction to a reason." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I prefer... because... / The main reason is... to explain preferences politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I prefer... because...**.\n\nExamples:\n\n- I prefer the earlier flight because it gives us more time.\n- I prefer this option because it's simpler.\n\nUse **The main reason is...**.\n\nExamples:\n\n- The main reason is I don't want to arrive too late.\n- The main reason is it's more reliable.",
@@ -6223,6 +6437,8 @@ export const lessonCatalog = [
         { phrase: "Overall, it depends.", meaning: "Secara keseluruhan, tergantung.", usage: "A natural summary phrase." },
         { phrase: "Any downsides?", meaning: "Ada kekurangan?", usage: "A short follow-up question." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What are the pros and cons? / The advantage is... / One downside is... to discuss trade-offs clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Pros and cons question**.\n\nExamples:\n\n- What are the pros and cons?\n- What are the pros and cons of this plan?\n\nUse **Advantage / downside**.\n\nExamples:\n\n- The advantage is you save time.\n- One downside is it's more expensive.",
       patterns: [
@@ -6280,6 +6496,8 @@ export const lessonCatalog = [
         { phrase: "That works for me.", meaning: "Oke buat aku.", usage: "A natural agreement phrase." },
         { phrase: "So we agree on Noodle House at 6:30?", meaning: "Jadi kita sepakat Noodle House jam 6:30?", usage: "Confirm agreement clearly." },
         { phrase: "Let's go early.", meaning: "Yuk berangkat lebih awal.", usage: "A simple solution to a concern." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use How about we... / I'm okay with... / Let's go with... to reach agreement politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **How about we...?**.\n\nExamples:\n\n- How about we go early?\n- How about we choose the cheaper one?\n\nUse **Confirm agreement**.\n\nExamples:\n\n- So we agree on Noodle House at 6:30?\n- So we agree to book the earlier flight?",
@@ -6341,6 +6559,8 @@ export const lessonCatalog = [
         { phrase: "The advantage is it's healthier. One downside is it takes time.", meaning: "Kelebihannya lebih sehat. Kekurangannya makan waktu.", usage: "Advantage + downside short answers." },
         { phrase: "So we agree on cooking at home?", meaning: "Jadi kita sepakat masak di rumah?", usage: "Confirm agreement clearly." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: ... but ... / I prefer... because... / The advantage is... / One downside is... / So we agree on...?",
       grammarNotes: "# Grammar for Conversation\n\nUse **Comparison -> preference -> pros/cons -> agreement**.\n\nExamples:\n\n- Option A is easier, but it's more expensive.\n- I prefer option B because it's cheaper.\n- The advantage is ... One downside is ...\n- So we agree on ...?",
       patterns: [
@@ -6399,6 +6619,8 @@ export const lessonCatalog = [
         { phrase: "It's convenient but still peaceful.", meaning: "Praktis tapi tetap tenang.", usage: "A nice contrast sentence." },
         { phrase: "We help each other sometimes.", meaning: "Kita kadang saling bantu.", usage: "A simple community habit sentence." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use It's a... neighborhood / It's known for... / I like it because... to describe your community clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Known for**.\n\nExamples:\n\n- It's known for its food stalls.\n- It's known for its beaches.\n\nUse **Because + reason**.\n\nExamples:\n\n- I like it because it's convenient.\n- I like it because it's quiet.",
       patterns: [
@@ -6456,6 +6678,8 @@ export const lessonCatalog = [
         { phrase: "Especially on weekends.", meaning: "Apalagi pas weekend.", usage: "Add detail about frequency." },
         { phrase: "It's a social thing.", meaning: "Itu kegiatan sosial.", usage: "A natural explanation phrase." },
         { phrase: "People often do it after work.", meaning: "Orang sering ngelakuin itu setelah kerja.", usage: "Often is a simple frequency word." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use People usually... / In my area, people often... to describe local habits naturally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **People usually...**.\n\nExamples:\n\n- People usually eat outside in the evening.\n- People usually go home before 10.\n\nUse **People often...**.\n\nExamples:\n\n- People often grab street food after work.\n- People often meet friends on weekends.",
@@ -6517,6 +6741,8 @@ export const lessonCatalog = [
         { phrase: "Mostly we share food and spend time together.", meaning: "Kebanyakan kita berbagi makanan dan kumpul.", usage: "Mostly is a natural frequency word." },
         { phrase: "How about in your country?", meaning: "Kalau di negara kamu gimana?", usage: "A polite way to ask back." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What is it like in your country? / Do people usually...? to ask about culture respectfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Culture questions**.\n\nExamples:\n\n- What is it like in your country?\n- Do people usually travel during holidays?\n\nUse **Mostly / sometimes**.\n\nExamples:\n\n- Mostly we share food.\n- Sometimes people give gifts.",
       patterns: [
@@ -6574,6 +6800,8 @@ export const lessonCatalog = [
         { phrase: "I'm not used to eating that early.", meaning: "Aku nggak terbiasa makan secepat itu.", usage: "A polite way to say it's unfamiliar." },
         { phrase: "That sounds nice.", meaning: "Kedengarannya enak/bagus.", usage: "Show respect even if different." },
         { phrase: "Thanks for sharing.", meaning: "Makasih sudah cerita.", usage: "A polite closing for culture talk." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use In my country,... / That's interesting / I'm not used to... / That sounds nice to be polite about differences.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I'm not used to + noun/verb-ing**.\n\nExamples:\n\n- I'm not used to eating that early.\n- I'm not used to spicy food.\n\nUse **Polite reactions**.\n\nExamples:\n\n- That's interesting.\n- That sounds nice.\n- That makes sense.",
@@ -6633,6 +6861,8 @@ export const lessonCatalog = [
         { phrase: "It's busy, but it's also meaningful.", meaning: "Ramai, tapi juga bermakna.", usage: "Balanced description." },
         { phrase: "I'm not used to that, but it sounds nice.", meaning: "Aku nggak terbiasa, tapi kedengarannya bagus.", usage: "Polite difference response." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: It's known for... / People usually... / What is it like in your country? / I'm not used to... / That sounds nice.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Community + habit + culture + difference**.\n\nExamples:\n\n- It's known for ...\n- People usually ...\n- What is it like in your country ...?\n- I'm not used to ..., but it sounds nice.",
       patterns: [
@@ -6690,6 +6920,8 @@ export const lessonCatalog = [
         { phrase: "I'm working on the release checklist.", meaning: "Aku lagi ngerjain release checklist.", usage: "A clear work status sentence." },
         { phrase: "I'm making good progress.", meaning: "Progressnya bagus.", usage: "A short progress update." },
         { phrase: "Next, I'll review the risks.", meaning: "Berikutnya, aku review risiko.", usage: "Next sets the next step clearly." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine story sequencing (then/after that) with work update phrases (I'm working on..., next...).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Story sequencing**.\n\nExamples:\n\n- Then we grabbed street food.\n- After that, we went home.\n\nUse **Work update**.\n\nExamples:\n\n- I'm working on the release checklist.\n- Next, I'll review the risks.",
@@ -6749,6 +6981,8 @@ export const lessonCatalog = [
         { phrase: "My train is delayed.", meaning: "Kereta aku delay.", usage: "A clear reason for delay." },
         { phrase: "I'll be there in about 15 minutes.", meaning: "Aku sampai kira-kira 15 menit lagi.", usage: "In about + time gives an estimate." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: There's a problem with... / so ... and I'm running late... / I'll be there in about ...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem + impact**.\n\nExamples:\n\n- There's a problem with the meeting link.\n- People can't join, so we need a new link.\n\nUse **Delay + estimate**.\n\nExamples:\n\n- I'm running a bit late.\n- I'll be there in about 15 minutes.",
       patterns: [
@@ -6807,6 +7041,8 @@ export const lessonCatalog = [
         { phrase: "That makes sense.", meaning: "Masuk akal.", usage: "A polite reaction to reasons." },
         { phrase: "It helps me stay consistent.", meaning: "Itu bantu aku tetap konsisten.", usage: "A simple benefit sentence." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: My goal is to... / I've been... / I prefer... because...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Goal + deadline**.\n\nExamples:\n\n- My goal is to ... by the end of this month.\n- My goal is to ... by Friday.\n\nUse **Preference + reason**.\n\nExamples:\n\n- I prefer Conversation Coach because it gives me feedback.\n- I prefer option B because it's simpler.",
       patterns: [
@@ -6864,6 +7100,8 @@ export const lessonCatalog = [
         { phrase: "So I'm keeping sessions short.", meaning: "Jadi aku bikin sesi pendek.", usage: "So shows a solution/decision." },
         { phrase: "I prefer option B because it's cheaper.", meaning: "Aku prefer opsi B karena lebih murah.", usage: "Preference + reason." },
         { phrase: "But it might be crowded.", meaning: "Tapi mungkin rame.", usage: "But + might expresses a concern." },
+      ],
+      vocabulary: [
       ],
       grammar: "Review connectors (because/so/but/then) and key patterns (goal, progress, preference, problems).",
       grammarNotes: "# Grammar for Conversation\n\nUse **Key connectors**.\n\nExamples:\n\n- because (reason)\n- so (result/decision)\n- but (contrast)\n- then (sequence)\n\nUse **Mixed sentence patterns**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- ..., so ...",
@@ -6927,6 +7165,8 @@ export const lessonCatalog = [
         { phrase: "I prefer Conversation Coach because it gives feedback.", meaning: "Aku prefer Conversation Coach karena itu kasih feedback.", usage: "Preference + reason." },
         { phrase: "So my next step is to practice three times this week.", meaning: "Jadi next step aku latihan tiga kali minggu ini.", usage: "A clear next step plan." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use connectors naturally (then/because/so/but) to keep the conversation connected and clear.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Connected conversation connectors**.\n\nExamples:\n\n- at first / then\n- because (reason)\n- so (result/decision)\n- but (contrast)\n\nUse **Goal + preference + next step**.\n\nExamples:\n\n- My goal is to ... by ...\n- I prefer ... because ...\n- So my next step is to ...",
       patterns: [
@@ -6984,6 +7224,8 @@ export const lessonCatalog = [
         { phrase: "I see your point, but...", meaning: "Aku paham poin kamu, tapi...", usage: "Acknowledge and disagree politely." },
         { phrase: "That sounds like a good compromise.", meaning: "Kedengarannya kompromi yang bagus.", usage: "A positive reaction to a balanced solution." },
         { phrase: "I'm happy to draft a proposal.", meaning: "Aku siap bikin draft proposal.", usage: "Offer a clear next step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use In my view... / I believe... and I see your point, but... to state a position clearly and politely.",
       grammarNotes: "# Grammar for Conversation\n\nUse **In my view / I believe**.\n\nExamples:\n\n- In my view, a written update would be better.\n- I believe this approach is more efficient.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- I see your point, but we need to consider the timeline.\n- I see your point, but I have a different view.",
@@ -7043,6 +7285,8 @@ export const lessonCatalog = [
         { phrase: "It saves time later.", meaning: "Itu hemat waktu nanti.", usage: "A simple long-term benefit." },
         { phrase: "We can start small and focus on critical flows.", meaning: "Kita bisa mulai kecil dan fokus ke alur paling penting.", usage: "A practical next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use One reason is... / Another reason is... / Also... to support an argument clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Structured reasons**.\n\nExamples:\n\n- One reason is it reduces bugs.\n- Another reason is it saves time.\n\nUse **Acknowledge + but**.\n\nExamples:\n\n- That's true, but it helps in the long run.\n- That's true, but we can start small.",
       patterns: [
@@ -7100,6 +7344,8 @@ export const lessonCatalog = [
         { phrase: "So they kept asking in multiple channels.", meaning: "Jadi mereka terus tanya di banyak channel.", usage: "Connect the example to the impact." },
         { phrase: "For instance, a simple checklist would help.", meaning: "Misalnya, checklist sederhana akan membantu.", usage: "For instance is similar to for example." },
         { phrase: "Such as pairing each new hire with one mentor.", meaning: "Misalnya memasangkan setiap orang baru dengan satu mentor.", usage: "Such as introduces specific items." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use for example / for instance / such as to support an argument with evidence.",
       grammarNotes: "# Grammar for Conversation\n\nUse **For example / for instance**.\n\nExamples:\n\n- For example, we had three new joiners last quarter.\n- For instance, a checklist would reduce questions.\n\nUse **Such as + noun/verb-ing**.\n\nExamples:\n\n- Such as pairing each new hire with a mentor.\n- Such as adding a short training session.",
@@ -7159,6 +7405,8 @@ export const lessonCatalog = [
         { phrase: "We can phase it in.", meaning: "Kita bisa jalanin bertahap.", usage: "A practical way to reduce risk." },
         { phrase: "Let's define success metrics first.", meaning: "Yuk tentukan metrik sukses dulu.", usage: "A strong next step after discussion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use That's a fair point / I understand the concern / However... to respond professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledge + however**.\n\nExamples:\n\n- That's a fair point. However, we can reduce risk.\n- That's a fair point. However, the benefit is long-term.\n\nUse **I understand the concern, but...**.\n\nExamples:\n\n- I understand the concern, but we can phase it in.\n- I understand the concern, but we can start with a pilot.",
       patterns: [
@@ -7216,6 +7464,8 @@ export const lessonCatalog = [
         { phrase: "For example, last month we spent 30 minutes repeating updates.", meaning: "Contohnya, bulan lalu kita habis 30 menit ngulang update.", usage: "Example with simple data." },
         { phrase: "That's a fair point. However, ...", meaning: "Itu poin yang adil. Tapi, ...", usage: "Polite response to a counterpoint." },
         { phrase: "Let's run a one-month trial and review the results.", meaning: "Yuk coba satu bulan lalu review hasilnya.", usage: "A concrete next step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine: In my view... / One reason is... / For example... / That's a fair point. However... / Let's...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clear argument structure**.\n\nExamples:\n\n- In my view, ...\n- One reason is ... Another reason is ...\n- For example, ...\n- That's a fair point. However, ...\n- Let's ...",
@@ -7275,6 +7525,8 @@ export const lessonCatalog = [
         { phrase: "I'd like to hear your thoughts.", meaning: "Aku pengen denger pendapat kamu/kalian.", usage: "Invite input politely." },
         { phrase: "Let's hear from everyone.", meaning: "Yuk denger dari semua dulu.", usage: "A neutral facilitator phrase." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'd like to bring up... / The main point is... / I'd like to hear your thoughts to open a meeting point professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Open a topic**.\n\nExamples:\n\n- I'd like to bring up the timeline.\n- I'd like to bring up one concern.\n\nUse **Invite input**.\n\nExamples:\n\n- I'd like to hear your thoughts.\n- What are your thoughts on this?",
       patterns: [
@@ -7332,6 +7584,8 @@ export const lessonCatalog = [
         { phrase: "That's out of scope for now.", meaning: "Itu di luar scope dulu.", usage: "A clear out-of-scope statement." },
         { phrase: "Got it. So we focus on the core feature only?", meaning: "Oke. Jadi kita fokus fitur utama saja?", usage: "A confirmation question." },
         { phrase: "I'll update the ticket list.", meaning: "Aku akan update daftar ticket.", usage: "A practical next step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Just to clarify... / Does this include...? / Is ... out of scope? to avoid confusion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Just to clarify**.\n\nExamples:\n\n- Just to clarify, what is in scope?\n- Just to clarify, do we need QA sign-off?\n\nUse **Include / out of scope**.\n\nExamples:\n\n- Does this include the dashboard changes?\n- Is the admin flow out of scope?",
@@ -7391,6 +7645,8 @@ export const lessonCatalog = [
         { phrase: "One suggestion is to start with the main takeaway.", meaning: "Satu saran: mulai dari pesan utama.", usage: "A clear suggestion structure." },
         { phrase: "It might help if you keep the intro under one minute.", meaning: "Mungkin membantu kalau pembukaannya di bawah satu menit.", usage: "A soft, constructive suggestion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use One suggestion is... / It might help if... / I noticed that... to give feedback professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I noticed that...**.\n\nExamples:\n\n- I noticed the introduction was a bit long.\n- I noticed the slides were hard to read.\n\nUse **It might help if...**.\n\nExamples:\n\n- It might help if you start with the takeaway.\n- It might help if you keep it shorter.",
       patterns: [
@@ -7448,6 +7704,8 @@ export const lessonCatalog = [
         { phrase: "Ilham will review QA coverage.", meaning: "Ilham akan review QA coverage.", usage: "Assign another owner." },
         { phrase: "We'll check progress on Thursday.", meaning: "Kita cek progress hari Kamis.", usage: "Set the next checkpoint." },
         { phrase: "Thanks for summarizing.", meaning: "Makasih sudah rangkum.", usage: "A polite closing line." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use To summarize... / We agreed to... / Action items are... / I'll take... to close meetings professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **To summarize**.\n\nExamples:\n\n- To summarize, we agreed to ...\n- To summarize, the decision is ...\n\nUse **Action items**.\n\nExamples:\n\n- Action items are: I'll ..., and you'll ...\n- I'll take the first item.",
@@ -7511,6 +7769,8 @@ export const lessonCatalog = [
         { phrase: "So the key message came late.", meaning: "Jadi pesan utamanya telat muncul.", usage: "Explain impact with so." },
         { phrase: "To summarize, action items are: I'll..., you'll...", meaning: "Kesimpulannya, action items-nya: aku..., kamu...", usage: "Close the meeting clearly." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: I'd like to bring up... / Just to clarify... / I noticed... / It might help if... / To summarize...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Meeting participation flow**.\n\nExamples:\n\n- I'd like to bring up ...\n- Just to clarify, does this include ...?\n- Overall ... I noticed ...\n- To summarize, we agreed ... Action items are ...",
       patterns: [
@@ -7571,6 +7831,8 @@ export const lessonCatalog = [
         { phrase: "The second priority is improving monitoring.", meaning: "Prioritas kedua adalah ningkatin monitoring.", usage: "Add a second priority clearly." },
         { phrase: "What about you? What's your top priority?", meaning: "Kalau kamu gimana? Prioritas utamamu apa?", usage: "Ask for the other person's priorities." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use My top priority is... / What matters most is... / What's your priority? to align on priorities.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Priority statements**.\n\nExamples:\n\n- My top priority is shipping safely.\n- The second priority is improving monitoring.\n\nUse **What matters most**.\n\nExamples:\n\n- What matters most is meeting the deadline.\n- What matters most is quality.",
       patterns: [
@@ -7628,6 +7890,8 @@ export const lessonCatalog = [
         { phrase: "Would that work for you?", meaning: "Itu works buat kamu?", usage: "Check agreement." },
         { phrase: "Not necessarily.", meaning: "Belum tentu.", usage: "A professional way to disagree softly." },
         { phrase: "We can prepare in parallel.", meaning: "Kita bisa siapin paralel.", usage: "Offer a solution to reduce risk." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I propose we... / How about we... / Would that work? to make proposals politely and clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I propose we...**.\n\nExamples:\n\n- I propose we do a small pilot first.\n- I propose we meet with the client tomorrow.\n\nUse **Would that work?**.\n\nExamples:\n\n- Would that work for you?\n- Would that work for the team?",
@@ -7687,6 +7951,8 @@ export const lessonCatalog = [
         { phrase: "What if we define simple criteria?", meaning: "Gimana kalau kita bikin kriteria sederhana?", usage: "A friendly revision option." },
         { phrase: "That sounds reasonable.", meaning: "Kedengarannya masuk akal.", usage: "A polite acceptance." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I understand the concern / What if we... / Would it help if... to handle objections calmly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **I understand the concern**.\n\nExamples:\n\n- I understand the concern.\n- I understand the concern about the timeline.\n\nUse **Would it help if... / What if we...**.\n\nExamples:\n\n- Would it help if we limit reviews?\n- What if we define simple criteria?",
       patterns: [
@@ -7744,6 +8010,8 @@ export const lessonCatalog = [
         { phrase: "If we do a small rollout, can we agree on one extra day?", meaning: "Kalau kita rollout kecil, bisa sepakat tambah satu hari?", usage: "A conditional agreement question." },
         { phrase: "That feels fair.", meaning: "Itu terasa adil.", usage: "A professional acceptance." },
         { phrase: "I'll update the rollout plan.", meaning: "Aku update rollout plan.", usage: "A clear next step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Maybe we can... / A compromise could be... / If we do X, can we agree on Y? to find middle ground.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Maybe we can...**.\n\nExamples:\n\n- Maybe we can find a compromise.\n- Maybe we can try a smaller scope.\n\nUse **A compromise could be...**.\n\nExamples:\n\n- A compromise could be a pilot.\n- A compromise could be a phased rollout.",
@@ -7803,6 +8071,8 @@ export const lessonCatalog = [
         { phrase: "A compromise could be launching to 10% first.", meaning: "Komprominya bisa launch dulu ke 10%.", usage: "Middle-ground option." },
         { phrase: "Then expanding if results look good.", meaning: "Lalu diperluas kalau hasilnya bagus.", usage: "Conditional next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: My top priority is... / I propose we... / I understand the concern... / Would it help if... / A compromise could be...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation structure**.\n\nExamples:\n\n- My top priority is ...\n- I propose we ...\n- I understand the concern. Would it help if ...?\n- A compromise could be ...",
       patterns: [
@@ -7860,6 +8130,8 @@ export const lessonCatalog = [
         { phrase: "My proposal is a simple checklist and a buddy system.", meaning: "Proposal aku: checklist sederhana dan buddy system.", usage: "A concise proposal sentence." },
         { phrase: "Next steps are: draft it today, then pilot it.", meaning: "Next steps-nya: bikin draft hari ini, lalu pilot.", usage: "A strong, actionable close." },
         { phrase: "What's the context?", meaning: "Konteksnya apa?", usage: "A common audience question." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Today I'd like to... / The problem is... / My proposal is... / Next steps are... to keep a short presentation clear.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation structure**.\n\nExamples:\n\n- Today I'd like to ...\n- The problem is ...\n- My proposal is ...\n- Next steps are ...",
@@ -7921,6 +8193,8 @@ export const lessonCatalog = [
         { phrase: "Finally, I'll outline next steps.", meaning: "Terakhir, aku jelasin next steps.", usage: "Signals the closing part." },
         { phrase: "Let me summarize.", meaning: "Biar aku rangkum.", usage: "A quick wrap-up phrase." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use First... / Next... / Finally... / Let me summarize... to make your presentation easy to follow.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Signposting**.\n\nExamples:\n\n- First, ...\n- Next, ...\n- Finally, ...\n- Let me summarize ...",
       patterns: [
@@ -7978,6 +8252,8 @@ export const lessonCatalog = [
         { phrase: "A key risk is that the checklist becomes outdated.", meaning: "Risiko utamanya checklist jadi nggak update.", usage: "A clear risk statement." },
         { phrase: "To reduce the risk, we can review it monthly.", meaning: "Untuk ngurangin risiko, kita bisa review tiap bulan.", usage: "A mitigation plan sentence." },
         { phrase: "We should assign an owner.", meaning: "Kita perlu tentuin owner.", usage: "A practical governance step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use The main benefit is... / Another benefit is... / A key risk is... / To reduce the risk, we can... to present trade-offs clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Benefits and risks**.\n\nExamples:\n\n- The main benefit is ...\n- Another benefit is ...\n- A key risk is ...\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- To mitigate this, we can ...",
@@ -8039,6 +8315,8 @@ export const lessonCatalog = [
         { phrase: "I suggest we assign an owner.", meaning: "Aku saranin kita assign owner.", usage: "A practical answer to governance questions." },
         { phrase: "Any other questions?", meaning: "Ada pertanyaan lain?", usage: "A polite closing invitation." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use That's a good question / As far as I know... / I'm not sure, but I can follow up to answer questions professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Answering questions**.\n\nExamples:\n\n- That's a good question.\n- As far as I know, ...\n- I'm not sure yet, but I can follow up ...",
       patterns: [
@@ -8096,6 +8374,8 @@ export const lessonCatalog = [
         { phrase: "The main benefit is ... Another benefit is ...", meaning: "Manfaat utama ... Manfaat lain ...", usage: "Clear benefits structure." },
         { phrase: "A key risk is ... To reduce the risk, we can ...", meaning: "Risiko utama ... Untuk ngurangin risiko, kita bisa ...", usage: "Risk + mitigation." },
         { phrase: "I'm not sure yet, but I can follow up by tomorrow.", meaning: "Aku belum yakin, tapi aku bisa follow up besok.", usage: "Professional uncertainty." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine: Today I'd like to... / First... Next... Finally... / The main benefit is... / A key risk is... / That's a good question...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation + Q&A flow**.\n\nExamples:\n\n- Today I'd like to ...\n- First ... Next ... Finally ...\n- The main benefit is ... Another benefit is ...\n- A key risk is ... To reduce the risk, ...\n- That's a good question. As far as I know, ...",
@@ -8155,6 +8435,8 @@ export const lessonCatalog = [
         { phrase: "It concludes that hybrid setups work best.", meaning: "Kesimpulannya model hybrid paling cocok.", usage: "A clear conclusion sentence." },
         { phrase: "In short, the key takeaway is clear rules help.", meaning: "Singkatnya, inti pesannya: aturan yang jelas itu membantu.", usage: "A concise summary closing." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use The article is about... / The main point is... / It concludes that... to summarize clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Summary structure**.\n\nExamples:\n\n- The article is about ...\n- The main point is ...\n- It concludes that ...",
       patterns: [
@@ -8212,6 +8494,8 @@ export const lessonCatalog = [
         { phrase: "I'd check official reports.", meaning: "Aku bakal cek laporan resmi.", usage: "Suggest a better verification step." },
         { phrase: "I trust sources that show evidence.", meaning: "Aku percaya sumber yang nunjukin bukti.", usage: "Explain your criteria." },
         { phrase: "Let's verify it before sharing.", meaning: "Yuk verifikasi dulu sebelum share.", usage: "A practical closing suggestion." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I trust this source because... / I'm not sure it's reliable / I'd check... to evaluate sources.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Reliability language**.\n\nExamples:\n\n- I'm not sure it's reliable.\n- I trust this source because it cites evidence.\n\nUse **Verification**.\n\nExamples:\n\n- I'd check official reports.\n- I'd cross-check with two sources.",
@@ -8271,6 +8555,8 @@ export const lessonCatalog = [
         { phrase: "We need balance.", meaning: "Kita butuh keseimbangan.", usage: "A concise wrap-up sentence." },
         { phrase: "That's fair.", meaning: "Itu masuk akal.", usage: "A polite response." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use From my perspective... / The reason is... / I see the other side, but... to discuss viewpoints respectfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Viewpoint language**.\n\nExamples:\n\n- From my perspective, ...\n- The reason is ...\n- I see the other side, but ...",
       patterns: [
@@ -8328,6 +8614,8 @@ export const lessonCatalog = [
         { phrase: "I'd like to understand the methodology.", meaning: "Aku pengen paham metodologinya.", usage: "A thoughtful follow-up request." },
         { phrase: "We should check the full report.", meaning: "Kita harus cek laporan lengkapnya.", usage: "A practical action step." },
         { phrase: "Then we can revise our conclusion.", meaning: "Lalu kita bisa revisi kesimpulannya.", usage: "A collaborative closing." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I wasn't aware of that / That changes things / I'd like to understand... to respond thoughtfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **New information phrases**.\n\nExamples:\n\n- I wasn't aware of that.\n- That changes things.\n- I'd like to understand ...",
@@ -8389,6 +8677,8 @@ export const lessonCatalog = [
         { phrase: "I wasn't aware of that. That changes things.", meaning: "Aku belum tahu itu. Itu mengubah situasinya.", usage: "Open reaction to new info." },
         { phrase: "Can you share the link so we can revise our conclusion?", meaning: "Bisa share link-nya supaya kita bisa revisi kesimpulan?", usage: "A clear next step request." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: The article is about... / I'm not sure it's reliable / From my perspective... / That changes things / I'd like to understand...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Information discussion flow**.\n\nExamples:\n\n- The article is about ... The main point is ...\n- I'm not sure it's reliable because ... I'd check ...\n- From my perspective, ... The reason is ...\n- That changes things. I'd like to understand ...",
       patterns: [
@@ -8446,6 +8736,8 @@ export const lessonCatalog = [
         { phrase: "So what you need is a clear starting point, right?", meaning: "Jadi yang kamu butuh adalah starting point yang jelas, bener?", usage: "A confirmation summary." },
         { phrase: "I'll summarize the requirements and share a proposal.", meaning: "Aku rangkum requirement-nya dan share proposal.", usage: "A clear next step." },
         { phrase: "Got it. Understood.", meaning: "Oke. Paham.", usage: "Professional listening signals." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Just to clarify... / Could you share more about... / So what you need is... to understand clients clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying questions**.\n\nExamples:\n\n- Just to clarify, ...\n- Could you share more about ...?\n\nUse **Summary confirmation**.\n\nExamples:\n\n- So what you need is ..., right?\n- So the key requirement is ..., correct?",
@@ -8505,6 +8797,8 @@ export const lessonCatalog = [
         { phrase: "The trade-off is speed versus long-term stability.", meaning: "Trade-off-nya kecepatan versus stabilitas jangka panjang.", usage: "Explain trade-offs clearly." },
         { phrase: "I'd recommend option B if the timeline allows.", meaning: "Aku rekomendasi opsi B kalau timeline memungkinkan.", usage: "A professional recommendation." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use We have two options... / Option A would... / The trade-off is... / I'd recommend... to explain options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Option structure**.\n\nExamples:\n\n- We have two options: A or B.\n- Option A is ..., but ...\n\nUse **Recommendation**.\n\nExamples:\n\n- I'd recommend option B if the timeline allows.\n- I'd recommend starting with a pilot.",
       patterns: [
@@ -8562,6 +8856,8 @@ export const lessonCatalog = [
         { phrase: "To reduce the risk, we can send a weekly summary.", meaning: "Untuk ngurangin risiko, kita bisa kirim ringkasan mingguan.", usage: "Mitigation language." },
         { phrase: "We can run a two-week trial and gather feedback.", meaning: "Kita bisa coba dua minggu dan kumpulin feedback.", usage: "A practical risk-reduction step." },
         { phrase: "I'll share a draft plan today.", meaning: "Aku share draft plan hari ini.", usage: "Clear next step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I understand the concern / Could you clarify... / To reduce the risk, we can... to respond professionally.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Concern handling**.\n\nExamples:\n\n- I understand the concern.\n- Could you clarify ...?\n\nUse **Mitigation**.\n\nExamples:\n\n- To reduce the risk, we can ...\n- We can run a short trial and gather feedback.",
@@ -8623,6 +8919,8 @@ export const lessonCatalog = [
         { phrase: "We'll meet next Monday to finalize.", meaning: "Kita meeting Senin depan untuk finalize.", usage: "Set the next checkpoint." },
         { phrase: "Does that timeline work for you?", meaning: "Timeline itu works buat kamu?", usage: "Confirm agreement." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use To confirm... / Next steps are... / I'll ... by ... / Does that work? to align on follow-up.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Confirm + next steps**.\n\nExamples:\n\n- To confirm, ...\n- Next steps are: I'll ..., and you'll ...\n\nUse **Deadlines**.\n\nExamples:\n\n- I'll send it today.\n- You'll review it by Friday.",
       patterns: [
@@ -8682,6 +8980,8 @@ export const lessonCatalog = [
         { phrase: "I understand the concern. To reduce the risk, we can run a pilot.", meaning: "Aku paham kekhawatirannya. Untuk ngurangin risiko, kita bisa pilot.", usage: "Concern + mitigation." },
         { phrase: "Next steps are: I'll send a draft plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku kirim draft plan hari ini, dan kamu review sebelum Jumat.", usage: "Clear follow-up." },
         { phrase: "Does that timeline work for you?", meaning: "Timeline itu works buat kamu?", usage: "Confirm agreement." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine: Just to clarify... / We have two options... / I understand the concern... / To reduce the risk... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Client conversation flow**.\n\nExamples:\n\n- Just to clarify, ...\n- We have two options ...\n- I understand the concern. To reduce the risk, ...\n- Next steps are ... Does that timeline work for you?",
@@ -8743,6 +9043,8 @@ export const lessonCatalog = [
         { phrase: "Any constraints we should keep in mind?", meaning: "Ada constraint yang harus kita ingat?", usage: "Surface limitations early." },
         { phrase: "Got it. Understood.", meaning: "Oke. Paham.", usage: "Professional listening signals." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let's define... / What does success look like? / Can we agree on the scope? to frame a problem clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Framing language**.\n\nExamples:\n\n- Let's define the problem statement first.\n- Can we agree on the scope?\n\nUse **Success criteria**.\n\nExamples:\n\n- What does success look like in the next four weeks?\n- How will we measure success?",
       patterns: [
@@ -8800,6 +9102,8 @@ export const lessonCatalog = [
         { phrase: "It might be due to slower load times.", meaning: "Bisa juga karena load time yang lebih lambat.", usage: "A second hypothesis with might be due to." },
         { phrase: "How can we confirm?", meaning: "Gimana cara kita konfirmasi?", usage: "Move from hypothesis to validation." },
         { phrase: "Let's run a small A/B test.", meaning: "Kita jalankan A/B test kecil.", usage: "A practical validation step." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use One possible cause is... / Based on the data... / It might be due to... to discuss root causes calmly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Hypotheses**.\n\nExamples:\n\n- One possible cause is ...\n- It might be due to ...\n\nUse **Evidence**.\n\nExamples:\n\n- Based on the data, ...\n- We saw an increase right after ...",
@@ -8859,6 +9163,8 @@ export const lessonCatalog = [
         { phrase: "Let's choose based on our biggest constraint.", meaning: "Kita pilih berdasarkan constraint terbesar.", usage: "Decision principle tied to constraints." },
         { phrase: "What do you suggest?", meaning: "Kamu saranin apa?", usage: "Invite recommendation." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use The trade-off is... / If we optimize for..., we might... / On the other hand... to compare options clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Trade-offs**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- The trade-off is speed versus reliability.\n\nUse **Contrast + impact**.\n\nExamples:\n\n- If we optimize for X, we might Y.\n- On the other hand, ...",
       patterns: [
@@ -8916,6 +9222,8 @@ export const lessonCatalog = [
         { phrase: "The main risk is slower progress if we over-scope the pilot.", meaning: "Risiko utamanya progress jadi lambat kalau pilot-nya kebesaran scope.", usage: "Name a risk with if-structure." },
         { phrase: "We can mitigate it by setting clear success metrics.", meaning: "Kita mitigasi dengan set metrik sukses yang jelas.", usage: "Mitigation language." },
         { phrase: "Does that approach work for you?", meaning: "Pendekatan itu works buat kamu?", usage: "Check alignment after recommending." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Given these constraints... / I'd recommend... / The main risk is... / We can mitigate it by... to recommend a solution.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Recommendation**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- My recommendation is to start with ...\n\nUse **Risk + mitigation**.\n\nExamples:\n\n- The main risk is ... if ...\n- We can mitigate it by ...",
@@ -8975,6 +9283,8 @@ export const lessonCatalog = [
         { phrase: "Given these constraints, I'd recommend a two-week pilot.", meaning: "Dengan constraint ini, aku rekomend pilot dua minggu.", usage: "Recommendation." },
         { phrase: "We can mitigate it by setting clear metrics and a strict timeline.", meaning: "Kita mitigasi dengan metrik yang jelas dan timeline yang ketat.", usage: "Mitigation + next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine framing + causes + trade-offs + recommendation into one structured discussion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Problem-solving flow**.\n\nExamples:\n\n- Let's define the problem statement first.\n- One possible cause is ... Based on the data, ...\n- The trade-off is X versus Y.\n- Given these constraints, I'd recommend ...\n- We can mitigate it by ...",
       patterns: [
@@ -9032,6 +9342,8 @@ export const lessonCatalog = [
         { phrase: "To summarize, we focus on billing first.", meaning: "Singkatnya, kita fokus billing dulu.", usage: "Closing summary language." },
         { phrase: "Next steps are: I'll share a plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku share plan hari ini, dan kamu review sebelum Jumat.", usage: "Clear owners and deadlines." },
         { phrase: "Some teams prefer new features, but the risk is higher if billing stays broken.", meaning: "Ada tim yang pengen fitur baru, tapi risikonya lebih tinggi kalau billing tetap bermasalah.", usage: "A calm counterpoint response." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use My position is... / The main reason is... / To summarize... / Next steps are... to sound clear in meetings.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Position + reason**.\n\nExamples:\n\n- My position is that we should ...\n- The main reason is ...\n\nUse **Closing**.\n\nExamples:\n\n- To summarize, ...\n- Next steps are: I'll ..., and you'll ... by ...",
@@ -9091,6 +9403,8 @@ export const lessonCatalog = [
         { phrase: "I'd recommend that compromise.", meaning: "Aku rekomend kompromi itu.", usage: "Recommendation language." },
         { phrase: "To summarize: top two features next week, the rest in two weeks.", meaning: "Singkatnya: dua fitur teratas minggu depan, sisanya dua minggu lagi.", usage: "Signposted close." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Here's my proposal... / The trade-off is... / On the other hand... / I'd recommend... to review negotiation language.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Negotiation proposals**.\n\nExamples:\n\n- Here's my proposal: ...\n- Can we meet in the middle?\n\nUse **Trade-offs + summary**.\n\nExamples:\n\n- The trade-off is X versus Y.\n- To summarize: ...",
       patterns: [
@@ -9148,6 +9462,8 @@ export const lessonCatalog = [
         { phrase: "I understand the concern.", meaning: "Aku paham kekhawatirannya.", usage: "Empathetic opener for clients." },
         { phrase: "Just to clarify, what timeline did we promise?", meaning: "Biar jelas, timeline apa yang kita janjikan?", usage: "Clarify commitments." },
         { phrase: "Next steps are: I'll share an update today, and we'll confirm a revised timeline by Friday.", meaning: "Next steps-nya: aku share update hari ini, dan kita konfirmasi timeline revisi sebelum Jumat.", usage: "Close with next steps." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Based on the source... / We should verify... / I understand the concern... / Next steps are... to review information and client communication.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Source reliability**.\n\nExamples:\n\n- Based on the source, ...\n- We should verify it with ...\n\nUse **Client clarity**.\n\nExamples:\n\n- I understand the concern.\n- Just to clarify, ...\n- Next steps are ...",
@@ -9207,6 +9523,8 @@ export const lessonCatalog = [
         { phrase: "I'd recommend the pilot.", meaning: "Aku rekomend pilot.", usage: "Recommendation phrase." },
         { phrase: "Next steps are: I'll draft the plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku draft plan hari ini, dan kamu review sebelum Jumat.", usage: "Next steps with owners and deadlines." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use signposting: My position is... / Based on the data... / The trade-off is... / I'd recommend... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Signposting (test answers)**.\n\nExamples:\n\n- My position is that ...\n- Based on the data, ...\n- The trade-off is X versus Y.\n- I'd recommend ...\n- Next steps are ...",
       patterns: [
@@ -9264,6 +9582,8 @@ export const lessonCatalog = [
         { phrase: "I understand the concern.", meaning: "Aku paham kekhawatirannya.", usage: "Acknowledge concerns before trade-offs." },
         { phrase: "Given these constraints, I'd recommend a time-boxed pilot.", meaning: "Dengan constraint ini, aku rekomend pilot yang time-boxed.", usage: "Recommendation with constraints." },
         { phrase: "Next steps are: I'll share a plan today, and you'll review it by Friday.", meaning: "Next steps-nya: aku share plan hari ini, dan kamu review sebelum Jumat.", usage: "Close with owners and deadlines." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Let's define the scope... / Based on the data... / The trade-off is... / Given these constraints... / Next steps are...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Discussion framing**.\n\nExamples:\n\n- Let's define the scope.\n- What does success look like?\n\nUse **Decision language**.\n\nExamples:\n\n- Given these constraints, I'd recommend ...\n- Next steps are ...",
@@ -9323,6 +9643,8 @@ export const lessonCatalog = [
         { phrase: "In principle it's a good move, but the timeline is too aggressive.", meaning: "Secara prinsip itu langkah bagus, tapi timeline-nya terlalu agresif.", usage: "Support the idea but challenge execution." },
         { phrase: "I'd phase it in over two quarters.", meaning: "Aku akan implement bertahap selama dua kuartal.", usage: "Suggest a measured approach." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use To some extent... / Broadly speaking... / In principle..., but... / That said... to qualify opinions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Partial agreement**.\n\nExamples:\n\n- To some extent, ...\n- Broadly speaking, ...\n\nUse **Limitations**.\n\nExamples:\n\n- That said, ...\n- In principle ..., but ...",
       patterns: [
@@ -9380,6 +9702,8 @@ export const lessonCatalog = [
         { phrase: "There's a strong chance we'll see edge cases.", meaning: "Ada kemungkinan besar kita ketemu edge case.", usage: "Strong probability language." },
         { phrase: "It's unlikely that we'll break core flows, but we should monitor closely.", meaning: "Kemungkinan kecil kita merusak alur inti, tapi kita harus monitor ketat.", usage: "Low probability + mitigation." },
         { phrase: "Let's start with a limited rollout.", meaning: "Kita mulai rollout terbatas.", usage: "A safe next step when uncertain." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I'm fairly confident... / I'm not entirely convinced... / There's a strong chance... / It's unlikely that... to calibrate certainty.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Degrees of certainty**.\n\nExamples:\n\n- I'm fairly confident ...\n- I'm not entirely convinced ...\n\nUse **Probability + mitigation**.\n\nExamples:\n\n- There's a strong chance ...\n- It's unlikely that ..., but ...",
@@ -9439,6 +9763,8 @@ export const lessonCatalog = [
         { phrase: "On balance, I'd prioritize stability.", meaning: "Secara keseluruhan, aku prioritasin stability.", usage: "Give a nuanced conclusion after weighing." },
         { phrase: "I'd ring-fence a small budget for experiments.", meaning: "Aku sisihkan budget kecil untuk eksperimen.", usage: "Practical compromise language." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use On the one hand... / On the other hand... / While it's true that... / On balance... to weigh perspectives.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Balancing viewpoints**.\n\nExamples:\n\n- On the one hand, ...\n- On the other hand, ...\n\nUse **Nuanced conclusion**.\n\nExamples:\n\n- While it's true that ..., ...\n- On balance, ...",
       patterns: [
@@ -9496,6 +9822,8 @@ export const lessonCatalog = [
         { phrase: "I might frame it differently: ...", meaning: "Aku akan framing beda: ...", usage: "Offer an alternative without confrontation." },
         { phrase: "That could work.", meaning: "Bisa juga.", usage: "A flexible response to align." },
         { phrase: "This way we protect reliability without losing momentum.", meaning: "Dengan begitu kita jaga reliability tanpa kehilangan momentum.", usage: "Summarize benefits of the compromise." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I see your point, but... / I'm not sure I'd go that far... / With respect, ... / I might frame it differently... to disagree softly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Soft disagreement**.\n\nExamples:\n\n- I see your point, but ...\n- I'm not sure I'd go that far.\n\nUse **Alternatives**.\n\nExamples:\n\n- I might frame it differently: ...\n- What if we ... instead?",
@@ -9555,6 +9883,8 @@ export const lessonCatalog = [
         { phrase: "I see your point, but I'm not sure I'd go that far.", meaning: "Aku paham poin kamu, tapi aku nggak yakin aku akan sejauh itu.", usage: "Soft disagreement." },
         { phrase: "I might frame it differently: limited launch first, then review the data.", meaning: "Aku akan framing beda: launch terbatas dulu, lalu review data.", usage: "Alternative proposal." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine: to some extent / that said / fairly confident / not entirely convinced / on balance / I see your point, but ...",
       grammarNotes: "# Grammar for Conversation\n\nUse **Nuanced discussion toolkit**.\n\nExamples:\n\n- To some extent, ... That said, ...\n- I'm fairly confident ..., but I'm not entirely convinced ...\n- On the one hand ... On the other hand ... On balance ...\n- I see your point, but ... I might frame it differently: ...",
       patterns: [
@@ -9613,6 +9943,8 @@ export const lessonCatalog = [
         { phrase: "Can we agree that we ship a smaller scope first?", meaning: "Kita sepakat nggak kalau kita ship scope kecil dulu?", usage: "Move toward a decision." },
         { phrase: "I'll capture the decision and circulate it today.", meaning: "Aku rangkum keputusannya dan share hari ini.", usage: "Close with clear next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use To make sure we're aligned... / From your perspective... / The key constraint is... / Can we agree that... to align stakeholders.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Alignment questions**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- From your perspective, ...\n\nUse **Decision confirmation**.\n\nExamples:\n\n- Can we agree that ...?\n- The key constraint is ...",
       patterns: [
@@ -9670,6 +10002,8 @@ export const lessonCatalog = [
         { phrase: "The earliest we can deliver the full scope is two weeks later.", meaning: "Paling cepat scope penuh dua minggu setelahnya.", usage: "State earliest timeline." },
         { phrase: "Assuming no new blockers.", meaning: "Asumsi nggak ada blocker baru.", usage: "Add a condition politely." },
         { phrase: "Success means fewer incidents and a stable rollout.", meaning: "Sukses artinya incident berkurang dan rollout stabil.", usage: "Define success criteria." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use What we can commit to is... / The earliest we can deliver is... / To avoid surprises... / I'd rather under-promise... to manage expectations.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Commitments**.\n\nExamples:\n\n- What we can commit to is ...\n- The earliest we can deliver is ...\n\nUse **Principles + conditions**.\n\nExamples:\n\n- To avoid surprises, ...\n- Assuming no new blockers, ...",
@@ -9731,6 +10065,8 @@ export const lessonCatalog = [
         { phrase: "Would you be open to adding an explicit line?", meaning: "Kamu open nggak kalau kita tambahin kalimat yang eksplisit?", usage: "Invite change collaboratively." },
         { phrase: "We can make it clearer with one sentence.", meaning: "Kita bisa bikin lebih jelas dengan satu kalimat.", usage: "Make the fix feel small and doable." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I wanted to flag... / The impact is... / I appreciate..., and... / Would you be open to... to give sensitive feedback.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Feedback openers**.\n\nExamples:\n\n- I wanted to flag ...\n- I wanted to raise one point ...\n\nUse **Impact + suggestion**.\n\nExamples:\n\n- The impact is ...\n- Would you be open to ...?",
       patterns: [
@@ -9788,6 +10124,8 @@ export const lessonCatalog = [
         { phrase: "The impact would be delayed revenue and higher support load.", meaning: "Dampaknya revenue terlambat dan beban support naik.", usage: "Describe impact in concrete terms." },
         { phrase: "We can mitigate it by time-boxing the rollout.", meaning: "Kita mitigasi dengan time-box rollout.", usage: "Introduce mitigation with by + -ing." },
         { phrase: "Let's include a rollback plan.", meaning: "Kita masukin rollback plan.", usage: "Operational mitigation." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use The main risk is... / There's a reasonable chance... / The impact would be... / We can mitigate it by... to communicate risk.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Risk framing**.\n\nExamples:\n\n- The main risk is ...\n- There's a reasonable chance ...\n\nUse **Impact + mitigation**.\n\nExamples:\n\n- The impact would be ...\n- We can mitigate it by ...",
@@ -9847,6 +10185,8 @@ export const lessonCatalog = [
         { phrase: "The main risk is incidents during rollout. We can mitigate it by time-boxing and monitoring.", meaning: "Risiko utamanya incident saat rollout. Kita mitigasi dengan time-box dan monitoring.", usage: "Risk framing + mitigation." },
         { phrase: "I'll capture the decision and circulate it today.", meaning: "Aku rangkum keputusannya dan share hari ini.", usage: "Close with a clear follow-up action." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine alignment questions, realistic commitments, impact-based feedback, and risk framing into one coherent discussion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Strategic workplace flow**.\n\nExamples:\n\n- To make sure we're aligned, ...\n- What we can commit to is ... assuming ...\n- The impact is that ... Would you be open to ...?\n- The main risk is ... We can mitigate it by ...",
       patterns: [
@@ -9904,6 +10244,8 @@ export const lessonCatalog = [
         { phrase: "The purpose of this is to reduce coupling and speed up delivery.", meaning: "Tujuannya untuk ngurangin coupling dan mempercepat delivery.", usage: "State purpose in one sentence." },
         { phrase: "First, I'll outline the problem we're solving, then the proposed approach.", meaning: "Pertama aku jelasin problemnya, lalu approach yang diusulkan.", usage: "Preview structure with signposting." },
         { phrase: "Let me define what I mean by ...", meaning: "Biar jelas, aku definisikan dulu maksudku dengan ...", usage: "A softer definition starter." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Today I'd like to... / By X, I mean... / The purpose of this is... to frame complex topics.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Presentation framing**.\n\nExamples:\n\n- Today I'd like to ...\n- The purpose of this is to ...\n\nUse **Definitions**.\n\nExamples:\n\n- By X, I mean ...\n- Let me define what I mean by ...",
@@ -9963,6 +10305,8 @@ export const lessonCatalog = [
         { phrase: "That said, shared standards can mitigate it.", meaning: "Tapi, standard bersama bisa mitigasi itu.", usage: "Respond to concern with mitigation." },
         { phrase: "In short, the benefits outweigh the risks.", meaning: "Singkatnya, benefit lebih besar dari risiko.", usage: "Concise conclusion." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use The core claim is... / The evidence suggests... / A common concern is... / That said... to build persuasion.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Claims + evidence**.\n\nExamples:\n\n- The core claim is that ...\n- The evidence suggests ...\n\nUse **Counterarguments**.\n\nExamples:\n\n- A common concern is ...\n- That said, ...",
       patterns: [
@@ -10021,6 +10365,8 @@ export const lessonCatalog = [
         { phrase: "With that in mind, I'd propose ...", meaning: "Dengan itu, aku usul ...", usage: "Link reasoning to a proposal." },
         { phrase: "Let me connect this to ...", meaning: "Biar aku hubungkan ini ke ...", usage: "Another transition option." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use That brings me to... / What's crucial here is... / To put it differently... / With that in mind... to transition clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Transitions**.\n\nExamples:\n\n- That brings me to ...\n- With that in mind, ...\n\nUse **Clarification**.\n\nExamples:\n\n- What's crucial here is ...\n- To put it differently, ...",
       patterns: [
@@ -10078,6 +10424,8 @@ export const lessonCatalog = [
         { phrase: "The short answer is: it's manageable if we pilot first and monitor closely.", meaning: "Jawaban singkatnya: bisa di-manage kalau pilot dulu dan monitor ketat.", usage: "Concise answer with condition." },
         { phrase: "What I'd emphasize is that standards need ownership and enforcement.", meaning: "Yang aku tekankan: standar butuh ownership dan enforcement.", usage: "Reframe to the key point." },
         { phrase: "If adoption stalls, we pause expansion and revisit the design.", meaning: "Kalau adoption mandek, kita stop ekspansi dan evaluasi desainnya.", usage: "A clear fallback plan." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use That's a fair question... / Let me clarify... / The short answer is... / What I'd emphasize is... to handle questions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledgement + clarity**.\n\nExamples:\n\n- That's a fair question.\n- Let me clarify ...\n\nUse **Concise answers**.\n\nExamples:\n\n- The short answer is: ...\n- What I'd emphasize is ...",
@@ -10141,6 +10489,8 @@ export const lessonCatalog = [
         { phrase: "That's a fair question. The short answer is: it's manageable if we pilot first.", meaning: "Pertanyaan yang fair. Jawaban singkatnya: manageable kalau pilot dulu.", usage: "Q&A handling." },
         { phrase: "In short, the benefits outweigh the risks. Next steps are ...", meaning: "Singkatnya, benefit lebih besar dari risiko. Next steps adalah ...", usage: "Strong close: summary + next steps." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine framing, persuasive flow, transitions, and Q&A language into one smooth mission.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advanced presentation toolkit**.\n\nExamples:\n\n- Today I'd like to ...\n- By X, I mean ...\n- The core claim is that ... The evidence suggests ...\n- That brings me to ... What's crucial here is ...\n- That's a fair question. The short answer is: ...\n- In short, ... Next steps are ...",
       patterns: [
@@ -10198,6 +10548,8 @@ export const lessonCatalog = [
         { phrase: "If that's true, then we should see drop-offs mainly on longer forms.", meaning: "Kalau itu benar, drop-off harusnya terutama di form panjang.", usage: "Draw a testable implication from an assumption." },
         { phrase: "Let's separate essential steps from redundant ones and measure impact.", meaning: "Kita pisahkan step essential dari yang redundant lalu ukur dampaknya.", usage: "Turn debate into an experiment plan." },
         { phrase: "Not necessarily.", meaning: "Belum tentu.", usage: "A concise disagreement marker." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use It seems you're assuming... / What are we assuming about... / If that's true, then... to identify assumptions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Assumption language**.\n\nExamples:\n\n- It seems you're assuming ...\n- What are we assuming about ...?\n\nUse **Implications**.\n\nExamples:\n\n- If that's true, then ...\n- If we accept that premise, ...",
@@ -10257,6 +10609,8 @@ export const lessonCatalog = [
         { phrase: "For example, we reduced steps last quarter, but conversion didn't change.", meaning: "Contohnya, kita kurangi step kuartal lalu, tapi conversion nggak berubah.", usage: "Use counterexample to challenge." },
         { phrase: "Let's test messaging changes alongside step reduction.", meaning: "Kita test perubahan messaging bareng pengurangan step.", usage: "Turn challenge into actionable test." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use I'm not sure that follows... / What's the evidence for... / Could there be another explanation? / For example... to challenge arguments.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Challenging logic**.\n\nExamples:\n\n- I'm not sure that follows.\n- What's the evidence for ...?\n\nUse **Alternatives + examples**.\n\nExamples:\n\n- Could there be another explanation?\n- For example, ...",
       patterns: [
@@ -10314,6 +10668,8 @@ export const lessonCatalog = [
         { phrase: "This suggests we should investigate the checkout experience.", meaning: "Ini menyarankan kita investigasi pengalaman checkout.", usage: "Move from evidence to implication." },
         { phrase: "Session recordings show confusion on the verification step.", meaning: "Rekaman sesi menunjukkan kebingungan di step verifikasi.", usage: "Use multiple sources to strengthen argument." },
         { phrase: "The data indicates ...", meaning: "Data menunjukkan ...", usage: "Neutral evidence phrasing." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use According to... / The data indicates... / This suggests... / To be precise... to present evidence.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Sources**.\n\nExamples:\n\n- According to ...\n- Based on ...\n\nUse **Precision**.\n\nExamples:\n\n- To be precise, ...\n- The data indicates ...",
@@ -10373,6 +10729,8 @@ export const lessonCatalog = [
         { phrase: "The key point is ...", meaning: "Poin kuncinya adalah ...", usage: "Refocus under pressure." },
         { phrase: "We run a pilot this week and review results before scaling.", meaning: "Kita pilot minggu ini dan review hasil sebelum scaling.", usage: "Offer a controlled next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let me be clear... / I understand the concern, however... / The key point is... / If you look at... to respond under pressure.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarity under pressure**.\n\nExamples:\n\n- Let me be clear: ...\n- The key point is ...\n\nUse **Acknowledge + pivot**.\n\nExamples:\n\n- I understand the concern. However, ...\n- If you look at ..., ...",
       patterns: [
@@ -10430,6 +10788,8 @@ export const lessonCatalog = [
         { phrase: "To be precise, the data indicates correlation, not necessarily causation.", meaning: "Biar presisi, data menunjukkan korelasi, belum tentu kausalitas.", usage: "Precision in evidence." },
         { phrase: "Let me be clear: we have indicators, not proof yet.", meaning: "Biar jelas: kita punya indikator, belum bukti.", usage: "Stay calm under pressure." },
         { phrase: "However, the key point is ...", meaning: "Tapi poin kuncinya adalah ...", usage: "Refocus to the core point." },
+      ],
+      vocabulary: [
       ],
       grammar: "Combine assumption language, evidence framing, and pressure responses into one coherent mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Debate analysis toolkit**.\n\nExamples:\n\n- It seems you're assuming ...\n- I'm not sure that follows. What's the evidence for ...?\n- Could there be another explanation?\n- According to ... To be precise, ...\n- Let me be clear: ... However, the key point is ...",
@@ -10489,6 +10849,8 @@ export const lessonCatalog = [
         { phrase: "We should stay respectful and avoid sounding defensive.", meaning: "Kita harus tetap respectful dan jangan terdengar defensif.", usage: "Tone management across cultures." },
         { phrase: "What do you think that means in context?", meaning: "Menurut kamu maksudnya apa dalam konteksnya?", usage: "Invite interpretation explicitly." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use It may be worth considering... / My sense is that... / Before we decide, can we clarify... to read context.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Context reading**.\n\nExamples:\n\n- My sense is that ...\n- It may be worth considering ...\n\nUse **Clarifying**.\n\nExamples:\n\n- Before we decide, can we clarify ...?\n- What is their priority: X or Y?",
       patterns: [
@@ -10546,6 +10908,8 @@ export const lessonCatalog = [
         { phrase: "Just to make sure I understand, should we share concerns privately first?", meaning: "Biar aku paham, sebaiknya kita share concern dulu secara private?", usage: "A respectful check for expectations." },
         { phrase: "We'll adjust our approach accordingly.", meaning: "Kita sesuaikan approach-nya.", usage: "Signal respect for preferences." },
         { phrase: "How do you prefer to ...?", meaning: "Kamu lebih nyaman ... seperti apa?", usage: "A general preference question pattern." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use Would you mind if I ask... / If it's okay, could you clarify... / Just to make sure I understand... to ask tactfully.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Tactful openers**.\n\nExamples:\n\n- Would you mind if I ask ...?\n- If it's okay, could you clarify ...?\n\nUse **Understanding checks**.\n\nExamples:\n\n- Just to make sure I understand, ...\n- Just to confirm, ...",
@@ -10605,6 +10969,8 @@ export const lessonCatalog = [
         { phrase: "That usually lands better.", meaning: "Biasanya itu lebih enak diterima.", usage: "Explain the benefit of the norm." },
         { phrase: "People tend to ...", meaning: "Orang cenderung ...", usage: "A neutral phrasing for cultural tendencies." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use In our context... / It's generally expected that... / People tend to... / It might help to... to explain norms.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Norms**.\n\nExamples:\n\n- In our context, ...\n- People tend to ...\n- It's generally expected that ...\n\nUse **Suggestions**.\n\nExamples:\n\n- It might help to ...\n- You might find it useful to ...",
       patterns: [
@@ -10662,6 +11028,8 @@ export const lessonCatalog = [
         { phrase: "Just to clarify, my intent was to confirm the constraints, not reject the request.", meaning: "Biar jelas, niatku untuk konfirmasi constraint, bukan menolak request.", usage: "Clarify the purpose of your message." },
         { phrase: "How about we send a short note acknowledging the misunderstanding and offer a quick call?", meaning: "Gimana kalau kita kirim note singkat mengakui miskomunikasinya dan tawarkan call cepat?", usage: "Propose a constructive repair step." },
         { phrase: "I'll draft it and share it in ten minutes.", meaning: "Aku draft dan share dalam 10 menit.", usage: "Immediate action to repair quickly." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use I may have misunderstood... / I didn't mean to... / Just to clarify... / How about we... to repair misunderstandings.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Acknowledging misunderstanding**.\n\nExamples:\n\n- I may have misunderstood ...\n- I didn't mean to ...\n\nUse **Repair plan**.\n\nExamples:\n\n- Just to clarify, ...\n- How about we ...?",
@@ -10723,6 +11091,8 @@ export const lessonCatalog = [
         { phrase: "I may have misunderstood their tone. Just to clarify, my intent was to confirm constraints, not reject the request.", meaning: "Mungkin aku salah baca tone-nya. Biar jelas, niatku konfirmasi constraint, bukan menolak request.", usage: "Repair misunderstanding." },
         { phrase: "How about we send a short note and offer a quick call?", meaning: "Gimana kalau kita kirim note singkat dan tawarkan call cepat?", usage: "Constructive next step." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine context reading, tactful questions, norms explanation, and repair language into one end-to-end conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Cross-cultural toolkit**.\n\nExamples:\n\n- My sense is that ... Before we decide, can we clarify ...?\n- Would you mind if I ask ...?\n- In our context, people tend to ... It's generally expected that ...\n- I may have misunderstood ... Just to clarify, ... How about we ...?",
       patterns: [
@@ -10780,6 +11150,8 @@ export const lessonCatalog = [
         { phrase: "I'd like you to own the rollout plan.", meaning: "Aku minta kamu own rollout plan.", usage: "Assign ownership clearly." },
         { phrase: "Let's align on scope and keep it time-boxed to two weeks.", meaning: "Kita align scope dan time-box dua minggu.", usage: "Set boundaries and timeline." },
         { phrase: "Does that direction make sense to you?", meaning: "Arah itu masuk akal buat kamu?", usage: "Check alignment after setting direction." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use The direction I'd like to set is... / Success looks like... / I'd like you to own... / Let's align on... to set direction.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Direction + ownership**.\n\nExamples:\n\n- The direction I'd like to set is ...\n- I'd like you to own ...\n\nUse **Success criteria**.\n\nExamples:\n\n- Success looks like ...\n- Let's align on scope ...",
@@ -10843,6 +11215,8 @@ export const lessonCatalog = [
         { phrase: "What support do you need from me?", meaning: "Support apa yang kamu butuh dari aku?", usage: "Offer support while keeping ownership with them." },
         { phrase: "Walk me through your thinking.", meaning: "Coba jelasin cara pikir kamu.", usage: "Invite reasoning." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use What options do you see? / What would success look like? / What's the smallest next step? / What support do you need? to coach.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Coaching questions**.\n\nExamples:\n\n- What options do you see?\n- What's the smallest next step?\n\nUse **Support + ownership**.\n\nExamples:\n\n- What support do you need?\n- Walk me through your thinking.",
       patterns: [
@@ -10902,6 +11276,8 @@ export const lessonCatalog = [
         { phrase: "A concrete improvement would be a one-line summary at the top.", meaning: "Improvement konkretnya: ringkasan satu baris di atas.", usage: "Specific, actionable change." },
         { phrase: "Would you be open to revising it and sending a second draft?", meaning: "Kamu open nggak untuk revisi dan kirim draft kedua?", usage: "Invite revision collaboratively." },
         { phrase: "Overall it's solid.", meaning: "Secara overall bagus.", usage: "Positive framing before feedback." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use One thing I'd suggest is... / The impact is... / A concrete improvement would be... / Would you be open to... to give feedback.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Feedback framing**.\n\nExamples:\n\n- Overall it's ...\n- One thing I'd suggest is ...\n\nUse **Impact + improvement**.\n\nExamples:\n\n- The impact is that ...\n- A concrete improvement would be ...",
@@ -10963,6 +11339,8 @@ export const lessonCatalog = [
         { phrase: "Can we agree on the scope today and review metrics weekly?", meaning: "Kita sepakat scope hari ini dan review metrik tiap minggu?", usage: "Confirm alignment and cadence." },
         { phrase: "Let's align on the decision criteria.", meaning: "Kita align kriteria keputusan.", usage: "A useful meta move to unblock decisions." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use We have three options... / The trade-off is... / Given our constraints... / I'd recommend... / Can we agree on... to guide decisions.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Decision structure**.\n\nExamples:\n\n- We have three options: ...\n- The trade-off is ...\n\nUse **Recommendation + agreement**.\n\nExamples:\n\n- Given our constraints, I'd recommend ...\n- Can we agree on ...?",
       patterns: [
@@ -11023,6 +11401,8 @@ export const lessonCatalog = [
         { phrase: "Given our constraints, I'd recommend a phased rollout.", meaning: "Dengan constraint kita, aku rekomend rollout bertahap.", usage: "Recommendation tied to constraints." },
         { phrase: "Can we agree on scope today and review metrics weekly?", meaning: "Kita sepakat scope hari ini dan review metrik tiap minggu?", usage: "Confirm agreement + cadence." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine direction setting, coaching questions, feedback framing, and decision structure into one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Leadership & coaching toolkit**.\n\nExamples:\n\n- The direction I'd like to set is ... Success looks like ...\n- What options do you see? What's the smallest next step?\n- One thing I'd suggest is ... The impact is ... A concrete improvement would be ...\n- We have three options ... The trade-off is ... Given our constraints, I'd recommend ...\n- Can we agree on ...?",
       patterns: [
@@ -11080,6 +11460,8 @@ export const lessonCatalog = [
         { phrase: "What I'm hearing is we need a phased plan to reduce risk.", meaning: "Yang aku tangkap: kita butuh rencana bertahap untuk ngurangin risiko.", usage: "Summarize implied meaning as a next step." },
         { phrase: "Are you implying that ...?", meaning: "Kamu menyiratkan bahwa ...?", usage: "A direct but polite check." },
         { phrase: "What I'm hearing is ...", meaning: "Yang aku tangkap adalah ...", usage: "A useful listening mirror." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use What I'm hearing is... / Are you implying that...? / It sounds like... / Just to check... to catch implied meaning.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Implied meaning checks**.\n\nExamples:\n\n- It sounds like ...\n- Are you implying that ...?\n- Just to check, ...\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- So you're saying ...",
@@ -11139,6 +11521,8 @@ export const lessonCatalog = [
         { phrase: "Here's how I'd respond: ...", meaning: "Aku akan jawab begini: ...", usage: "Structure your response explicitly." },
         { phrase: "Thanks, that's helpful context.", meaning: "Makasih, itu konteks yang membantu.", usage: "Acknowledge a long explanation politely." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let me make sure I got this... / The key points are... / If I understand correctly... / Here's how I'd respond... to respond to long turns.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Summarizing long turns**.\n\nExamples:\n\n- Let me make sure I got this: ...\n- The key points are: ...\n\nUse **Structured response**.\n\nExamples:\n\n- If I understand correctly, ...\n- Here's how I'd respond: ...",
       patterns: [
@@ -11196,6 +11580,8 @@ export const lessonCatalog = [
         { phrase: "The open questions are around resourcing and internal alignment.", meaning: "Pertanyaan terbuka: resourcing dan alignment internal.", usage: "Separate open questions from decisions." },
         { phrase: "Just to confirm, I'll send the summary and ask if anything is missing.", meaning: "Biar pasti, aku kirim rangkuman dan tanya apakah ada yang kurang.", usage: "Confirm understanding with the group." },
         { phrase: "Does that capture it accurately?", meaning: "Itu sudah menangkapnya dengan akurat?", usage: "A helpful confirmation question." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use So, to summarize... / Just to confirm... / The decision is... / The open questions are... to summarize.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Structured summary**.\n\nExamples:\n\n- So, to summarize: ...\n- The decision is ...\n- The open questions are ...\n\nUse **Confirmation**.\n\nExamples:\n\n- Just to confirm, ...\n- Does that capture it accurately?",
@@ -11257,6 +11643,8 @@ export const lessonCatalog = [
         { phrase: "What's the next step we should take today?", meaning: "Next step apa yang harus kita ambil hari ini?", usage: "Move to action." },
         { phrase: "Do you mean X or Y?", meaning: "Maksudnya X atau Y?", usage: "A useful clarification pattern." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use When you say X, do you mean...? / What's your assumption about...? / What would change your mind? / What's the next step? to follow up.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Clarifying meaning**.\n\nExamples:\n\n- When you say X, do you mean ...?\n- Do you mean X or Y?\n\nUse **Assumptions + criteria**.\n\nExamples:\n\n- What's your assumption about ...?\n- What would change your mind about ...?",
       patterns: [
@@ -11315,6 +11703,8 @@ export const lessonCatalog = [
         { phrase: "When you say X, do you mean Y or Z?", meaning: "Kalau bilang X, maksudnya Y atau Z?", usage: "High-quality follow-up pattern." },
         { phrase: "Next steps are: ...", meaning: "Next steps adalah: ...", usage: "Close with concrete actions." },
       ],
+      vocabulary: [
+      ],
       grammar: "Combine implied meaning checks, structured summaries, and follow-up questions into one mission conversation.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Advanced listening toolkit**.\n\nExamples:\n\n- It sounds like ... Just to check, are you implying ...?\n- Let me make sure I got this: ... The key points are ...\n- So, to summarize: ... The decision is ... The open questions are ...\n- When you say X, do you mean Y or Z? What would change your mind ...?\n- Next steps are ...",
       patterns: [
@@ -11372,6 +11762,8 @@ export const lessonCatalog = [
         { phrase: "What I can commit to is a pilot next week.", meaning: "Yang bisa aku commit: pilot minggu depan.", usage: "Expectation management without overpromising." },
         { phrase: "Next steps are: I'll share a one-page summary today, and we'll align tomorrow.", meaning: "Next steps-nya: aku share ringkasan satu halaman hari ini, lalu kita align besok.", usage: "Clear next steps with time anchors." },
         { phrase: "The key trade-off is speed versus confidence in the metrics.", meaning: "Trade-off utamanya: cepat versus yakin dengan metrik.", usage: "Name trade-offs explicitly and calmly." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use On balance... / To be precise... / What I can commit to is... / The key trade-off is... / Next steps are... to sound strategic.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Nuance + precision**.\n\nExamples:\n\n- On balance, I support it, but ...\n- To be precise, ...\n\nUse **Strategic commitments**.\n\nExamples:\n\n- What I can commit to is ...\n- Next steps are: I'll ..., and we'll ...",
@@ -11435,6 +11827,8 @@ export const lessonCatalog = [
         { phrase: "On the other hand, we can keep one feature in scope if the metrics stay stable.", meaning: "Di sisi lain, kita bisa tetap masukin satu fitur kalau metriknya stabil.", usage: "Balanced counterpoint language." },
         { phrase: "In short: protect reliability, validate with metrics, then expand safely.", meaning: "Singkatnya: lindungi reliability, validasi pakai metrik, lalu ekspansi dengan aman.", usage: "A crisp closing summary." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let me frame this... / The core assumption is... / If we accept that, then... / On the other hand... / In short... to debate clearly.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Framing + assumptions**.\n\nExamples:\n\n- Let me frame this: ...\n- The core assumption is that ...\n\nUse **Conditional reasoning**.\n\nExamples:\n\n- If we accept X, then we should Y.\n- On the other hand, ...\n- In short: ...",
       patterns: [
@@ -11492,6 +11886,8 @@ export const lessonCatalog = [
         { phrase: "What would success look like in the next two weeks?", meaning: "Suksesnya seperti apa dalam dua minggu ke depan?", usage: "A coaching question that defines outcomes." },
         { phrase: "Next steps are: you'll propose the pilot plan, and I'll help align stakeholders.", meaning: "Next steps: kamu usulkan plan pilot, dan aku bantu align stakeholder.", usage: "Leadership language with clear ownership." },
         { phrase: "What would change your mind?", meaning: "Apa yang bisa mengubah pikiran kamu?", usage: "Find decision criteria and reduce conflict." },
+      ],
+      vocabulary: [
       ],
       grammar: "Use What I'm hearing is... / When you say X, do you mean Y or Z? / What would success look like? / What I can commit to is... to lead with listening.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Listening mirrors**.\n\nExamples:\n\n- What I'm hearing is ...\n- It sounds like ...\n\nUse **Coaching questions**.\n\nExamples:\n\n- What would success look like ...?\n- When you say X, do you mean Y or Z?\n\nUse **Leadership close**.\n\nExamples:\n\n- Next steps are: you'll ..., and I'll ...",
@@ -11551,6 +11947,8 @@ export const lessonCatalog = [
         { phrase: "The open questions are resourcing and change management.", meaning: "Pertanyaan terbukanya: resourcing dan change management.", usage: "Label open questions explicitly." },
         { phrase: "Next steps are: I'll send a one-page summary today, and we'll align tomorrow.", meaning: "Next steps: aku kirim ringkasan satu halaman hari ini, lalu kita align besok.", usage: "Time-boxed next steps." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let me frame this... / On balance... / To be precise... / The decision is... / The open questions are... / Next steps are... to stay structured.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Test-style structure**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but ...\n- To be precise, ...\n- The decision is ...\n- The open questions are ...\n- Next steps are ...",
       patterns: [
@@ -11609,6 +12007,8 @@ export const lessonCatalog = [
         { phrase: "The decision is to run a two-week pilot with clear success criteria.", meaning: "Keputusannya: jalankan pilot dua minggu dengan kriteria sukses yang jelas.", usage: "Decision language with criteria." },
         { phrase: "Next steps are: I'll send a one-page plan today, and we'll align stakeholders tomorrow.", meaning: "Next steps: aku kirim plan satu halaman hari ini, lalu kita align stakeholder besok.", usage: "Close with owners and timing." },
       ],
+      vocabulary: [
+      ],
       grammar: "Use Let me frame this... / On balance... / What I'm hearing is... / The decision is... / The open questions are... / Next steps are... to lead end-to-end.",
       grammarNotes: "# Grammar for Conversation\n\nUse **Final conversation toolkit**.\n\nExamples:\n\n- Let me frame this: ...\n- On balance, ... but only if ...\n- What I'm hearing is ...\n- When you say X, do you mean Y or Z?\n- The decision is ...\n- Next steps are ...",
       patterns: [
@@ -11660,6 +12060,13 @@ export const lessonCatalog = [
         { phrase: "كيف حالك؟", meaning: "Bagaimana kabarmu?", usage: "Gunakan untuk menanyakan kabar satu orang." },
         { phrase: "أنا بخير، شكرًا", meaning: "Saya baik, terima kasih.", usage: "Gunakan sebagai jawaban sopan yang sederhana." },
         { phrase: "أحسنت", meaning: "Bagus sekali.", usage: "Ucapan guru untuk jawaban yang baik." },
+      ],
+      vocabulary: [
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَهْلًا", meaning: "selamat datang", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan مرحبًا atau صباح الخير untuk menyapa, lalu أنا بخير، شكرًا untuk menjawab dengan sopan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan **أنا** untuk mengatakan \"saya\" dalam jawaban sederhana.\n\nContoh:\n\n- أنا بخير.\n- أنا طالب.\n- أنا من إندونيسيا.\n\nPola:\n\n```txt\nأنا + word/phrase\nكيف حالك؟\n```\n\nUntuk tahap awal, hafalkan frasa lengkap **أنا بخير، شكرًا** sebagai satu jawaban sopan.",
@@ -11713,6 +12120,12 @@ export const lessonCatalog = [
         { phrase: "من أين أنتَ؟", meaning: "Dari mana kamu?", usage: "Gunakan untuk menanyakan asal seseorang." },
         { phrase: "أنا من إندونيسيا", meaning: "Saya dari Indonesia.", usage: "Gunakan untuk menyebutkan asal negara." },
         { phrase: "وأنتَ؟", meaning: "Dan kamu/Anda?", usage: "Gunakan untuk bertanya balik." },
+      ],
+      vocabulary: [
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "إِنْدُونِيسِيَا", meaning: "Indonesia", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan اسمي + nama untuk \"nama saya\" dan أنا من + tempat untuk \"saya dari\".",
       grammarNotes: "# Pola Percakapan\n\nGunakan **اسمي** untuk mengatakan \"nama saya\".\n\nContoh:\n\n- اسمي أحمد.\n- اسمي فاطمة.\n- أنا من إندونيسيا.\n\nPola:\n\n```txt\nاسمي + name\nأنا من + place\nمن أين أنتَ؟\n```\n\nGunakan **من** untuk makna \"dari\" ketika menyebutkan asal.",
@@ -11768,6 +12181,12 @@ export const lessonCatalog = [
         { phrase: "اُكتبْ", meaning: "Tulislah.", usage: "Instruksi guru untuk menulis." },
         { phrase: "نعم يا مُعَلِّم", meaning: "Baik, Pak Guru.", usage: "Respons sopan kepada guru laki-laki di kelas." },
       ],
+      vocabulary: [
+        { word: "اِسْتَمِعْ", meaning: "dengarkan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكَلِمَةُ", meaning: "kata", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Kenali bentuk perintah pendek seperti اِقرأْ، اِستمعْ، أَعِدْ، اُكتبْ، dan اِفهمْ.",
       grammarNotes: "# Pola Percakapan\n\nBanyak instruksi kelas berbentuk perintah pendek.\n\nContoh:\n\n- اِقرأْ.\n- اِستمعْ.\n- أَعِدْ.\n- اُكتبْ.\n\nPola:\n\n```txt\ncommand word\nنعم يا مُعَلِّم\n```\n\nDi level A1, fokus dulu pada mengenali perintah dan merespons dengan sopan.",
       patterns: [
@@ -11820,6 +12239,13 @@ export const lessonCatalog = [
         { phrase: "بِبُطْءٍ مِنْ فَضْلِكَ", meaning: "Pelan-pelan, tolong.", usage: "Gunakan untuk meminta seseorang berbicara pelan." },
         { phrase: "ما معنى ...؟", meaning: "Apa makna ...?", usage: "Gunakan untuk bertanya makna kata atau frasa." },
         { phrase: "الكلمة", meaning: "Kata itu.", usage: "Kata kelas sederhana untuk bertanya makna." },
+      ],
+      vocabulary: [
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِبُطْءٍ", meaning: "pelan-pelan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكَلِمَةُ", meaning: "kata", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan لا أفهم untuk \"saya tidak paham\", أَعِدْ مِنْ فَضْلِكَ untuk \"ulangi, tolong\", dan ما معنى ...؟ untuk bertanya makna.",
       grammarNotes: "# Pola Percakapan\n\nGunakan **لا** sebelum fi'il untuk membuat kalimat negatif sederhana.\n\nContoh:\n\n- أفهم.\n- لا أفهم.\n- أكتب.\n- لا أكتب.\n\nPola:\n\n```txt\nلا + verb\nما معنى + word؟\n```\n\nDi level A1, hafalkan **لا أفهم** sebagai satu frasa penting saat belum paham.",
@@ -11878,6 +12304,15 @@ export const lessonCatalog = [
         { phrase: "لا أفهم", meaning: "Saya tidak paham.", usage: "Gunakan saat kamu belum paham." },
         { phrase: "أَعِدْ مِنْ فَضْلِكَ", meaning: "Ulangi, tolong.", usage: "Gunakan untuk meminta pengulangan dengan sopan." },
       ],
+      vocabulary: [
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "إِنْدُونِيسِيَا", meaning: "Indonesia", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan مرحبًا, اسمي ..., أنا من ..., لا أفهم, dan أَعِدْ مِنْ فَضْلِكَ dalam satu misi percakapan sederhana.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan pola pendek yang sudah dihafal agar bisa bertahan dalam percakapan pemula.\n\nContoh:\n\n- اسمي أحمد.\n- أنا من إندونيسيا.\n- لا أفهم.\n- أَعِدْ مِنْ فَضْلِكَ.\n\nPola:\n\n```txt\ngreeting + name + origin\nلا + verb\nrequest + من فضلك\n```\n\nJawaban pendek yang benar lebih baik daripada jawaban panjang yang membingungkan.",
       patterns: [
@@ -11930,6 +12365,14 @@ export const lessonCatalog = [
         { phrase: "أَكْتُبُ اسْمِي ...", meaning: "Saya menulis nama saya ...", usage: "Gunakan saat ingin mengatakan: Saya menulis nama saya ..." },
         { phrase: "هَذَا حَرْفُ ...", meaning: "Ini huruf ...", usage: "Gunakan saat ingin mengatakan: Ini huruf ..." },
         { phrase: "هَلْ هَذَا صَحِيحٌ؟", meaning: "Apakah ini benar?", usage: "Gunakan saat ingin mengatakan: Apakah ini benar?" },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَرْفٌ", meaning: "huruf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَلْفٌ", meaning: "seribu", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَكْتُبُ اسْمِي: ...\nهَذَا حَرْفُ ...\nهَلْ هَذَا صَحِيحٌ؟\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -11985,6 +12428,16 @@ export const lessonCatalog = [
         { phrase: "هَلِ الرَّقْمُ ...؟", meaning: "Apakah nomornya ...?", usage: "Gunakan saat ingin mengecek ulang nomor." },
         { phrase: "الرَّقْمُ صَحِيحٌ", meaning: "Nomornya benar.", usage: "Gunakan saat ingin mengatakan: Nomornya benar." },
       ],
+      vocabulary: [
+        { word: "رَقْمٌ", meaning: "nomor", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمِي", meaning: "nomor saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاحِدٌ", meaning: "satu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِثْنَانِ", meaning: "dua", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ثَلَاثَةٌ", meaning: "tiga", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَرْبَعَةٌ", meaning: "empat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nرَقْمِي ...\nهَلِ الرَّقْمُ وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ؟\nالرَّقْمُ صَحِيحٌ.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12038,6 +12491,15 @@ export const lessonCatalog = [
         { phrase: "اُكْتُبْ مِنْ فَضْلِكَ", meaning: "Tulis, tolong.", usage: "Gunakan saat ingin mengatakan: Tulis, tolong." },
         { phrase: "نُقْطَةٌ", meaning: "Titik", usage: "Gunakan saat ingin mengatakan: Titik" },
         { phrase: "شَرْطَةٌ", meaning: "Tanda hubung", usage: "Gunakan saat ingin mengatakan: Tanda hubung" },
+      ],
+      vocabulary: [
+        { word: "الْإِلِكْتُرُونِيُّ", meaning: "elektronik", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "نُقْطَةٌ", meaning: "titik", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاحِدٌ", meaning: "satu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاضِحٌ", meaning: "jelas", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nبَرِيدِي الْإِلِكْتُرُونِيُّ ...\nاُكْتُبْ مِنْ فَضْلِكَ.\nنُقْطَةٌ\nشَرْطَةٌ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12094,6 +12556,13 @@ export const lessonCatalog = [
         { phrase: "بِبُطْءٍ مِنْ فَضْلِكَ", meaning: "Pelan-pelan, tolong.", usage: "Gunakan saat ingin mengatakan: Pelan-pelan, tolong." },
         { phrase: "هَلْ قُلْتَ بَاءً؟", meaning: "Apakah Anda mengatakan ba?", usage: "Gunakan saat ingin mengatakan: Apakah Anda mengatakan ba?" },
         { phrase: "نَعَمْ، قُلْتُ بَاءً", meaning: "Ya, saya mengatakan ba.", usage: "Gunakan saat ingin mengatakan: Ya, saya mengatakan ba." },
+      ],
+      vocabulary: [
+        { word: "أَسْمَعُ", meaning: "saya mendengar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَرْفٌ", meaning: "huruf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِبُطْءٍ", meaning: "pelan-pelan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قُلْتَ", meaning: "kamu mengatakan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَاءٌ", meaning: "huruf ba", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nلم أَسْمَعُ الْحَرْفَ.\nبِبُطْءٍ مِنْ فَضْلِكَ.\nهل قُلْتَ ...؟\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12155,6 +12624,16 @@ export const lessonCatalog = [
         { phrase: "بَرِيدِي الْإِلِكْتُرُونِيُّ ...", meaning: "Email saya ...", usage: "Gunakan saat ingin mengatakan: Email saya ..." },
         { phrase: "هَلْ هَذَا وَاضِحٌ؟", meaning: "Apakah ini jelas?", usage: "Gunakan saat ingin mengatakan: Apakah ini jelas?" },
       ],
+      vocabulary: [
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمِي", meaning: "nomor saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْإِلِكْتُرُونِيُّ", meaning: "elektronik", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاضِحٌ", meaning: "jelas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمٌ", meaning: "nomor", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاحِدٌ", meaning: "satu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nاِسْمِي ...\nأَكْتُبُ اسْمِي ...\nرَقْمِي ...\nبَرِيدِي الْإِلِكْتُرُونِيُّ ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12209,6 +12688,15 @@ export const lessonCatalog = [
         { phrase: "الْآنَ", meaning: "Sekarang", usage: "Gunakan saat ingin mengatakan: Sekarang" },
         { phrase: "صَبَاحًا", meaning: "Pagi", usage: "Gunakan saat ingin mengatakan: Pagi" },
         { phrase: "مَسَاءً", meaning: "Sore/malam", usage: "Gunakan saat ingin mengatakan: Sore/malam" },
+      ],
+      vocabulary: [
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الثَّامِنَةُ", meaning: "jam delapan/kedelapan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَسَاءٌ", meaning: "sore/malam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "التَّاسِعَةُ", meaning: "jam sembilan/kesembilan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nكَمِ السَّاعَةُ؟\nالساعة ...\nصَبَاحًا\nمَسَاءً\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12265,6 +12753,14 @@ export const lessonCatalog = [
         { phrase: "عِنْدِي دَرْسٌ", meaning: "Saya punya pelajaran.", usage: "Gunakan saat ingin mengatakan: Saya punya pelajaran." },
         { phrase: "فِي يَوْمِ ...", meaning: "Pada hari ...", usage: "Gunakan saat ingin mengatakan: Pada hari ..." },
       ],
+      vocabulary: [
+        { word: "يَوْمٌ", meaning: "hari", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْإِثْنَيْنِ", meaning: "Senin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "غَدًا", meaning: "besok", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الثُّلَاثَاءُ", meaning: "Selasa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nالْيَوْمُ ...\nغدًا ...\nعِنْدِي دَرْسٌ ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12320,6 +12816,13 @@ export const lessonCatalog = [
         { phrase: "أكتب", meaning: "Saya menulis.", usage: "Gunakan saat ingin mengatakan: Saya menulis." },
         { phrase: "أَدْرُسُ الْعَرَبِيَّةَ", meaning: "Saya belajar bahasa Arab.", usage: "Gunakan saat ingin mengatakan: Saya belajar bahasa Arab." },
         { phrase: "ثُمَّ أَعْمَلُ", meaning: "Lalu saya bekerja.", usage: "Gunakan saat ingin mengatakan: Lalu saya bekerja." },
+      ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْمَلُ", meaning: "saya bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَقْرَأُ\nأكتب\nأَدْرُسُ الْعَرَبِيَّةَ\nثُمَّ أَعْمَلُ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12378,6 +12881,13 @@ export const lessonCatalog = [
         { phrase: "قَبْلَ الدَّرْسِ", meaning: "Sebelum pelajaran", usage: "Gunakan saat ingin mengatakan: Sebelum pelajaran" },
         { phrase: "بَعْدَ الدَّرْسِ", meaning: "Setelah pelajaran", usage: "Gunakan saat ingin mengatakan: Setelah pelajaran" },
       ],
+      vocabulary: [
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الظُّهْرُ", meaning: "siang", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكَلِمَاتُ", meaning: "kata-kata", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nمَتَى الدَّرْسُ؟\nفِي الصَّبَاحِ\nبَعْدَ الظُّهْرِ\nقَبْلَ الدَّرْسِ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12434,6 +12944,16 @@ export const lessonCatalog = [
         { phrase: "عِنْدِي دَرْسٌ", meaning: "Saya punya pelajaran.", usage: "Gunakan saat ingin mengatakan: Saya punya pelajaran." },
         { phrase: "أَدْرُسُ الْعَرَبِيَّةَ", meaning: "Saya belajar bahasa Arab.", usage: "Gunakan saat ingin mengatakan: Saya belajar bahasa Arab." },
         { phrase: "بَعْدَ الدَّرْسِ", meaning: "Setelah pelajaran", usage: "Gunakan saat ingin mengatakan: Setelah pelajaran" },
+      ],
+      vocabulary: [
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يَوْمٌ", meaning: "hari", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْأَرْبِعَاءُ", meaning: "Rabu", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nالْيَوْمُ ...\nالساعة ...\nعِنْدِي دَرْسٌ\nأَدْرُسُ الْعَرَبِيَّةَ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12492,6 +13012,12 @@ export const lessonCatalog = [
         { phrase: "هَذَا أَخِي", meaning: "Ini saudara laki-laki saya.", usage: "Gunakan saat ingin mengatakan: Ini saudara laki-laki saya." },
         { phrase: "هَذِهِ عَائِلَتِي", meaning: "Ini keluarga saya.", usage: "Gunakan saat ingin mengatakan: Ini keluarga saya." },
       ],
+      vocabulary: [
+        { word: "أَبِي", meaning: "ayah saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُمِّي", meaning: "ibu saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَخِي", meaning: "saudara laki-laki saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عَائِلَتِي", meaning: "keluarga saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nمَنْ هَذَا؟\nهَذَا أَبِي.\nهَذِهِ أُمِّي.\nهَذِهِ عَائِلَتِي.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12548,6 +13074,15 @@ export const lessonCatalog = [
         { phrase: "أَنَا معلم", meaning: "Saya guru.", usage: "Gunakan saat ingin mengatakan: Saya guru." },
         { phrase: "أَعْمَلُ فِي مَكْتَبٍ", meaning: "Saya bekerja di kantor.", usage: "Gunakan saat ingin mengatakan: Saya bekerja di kantor." },
         { phrase: "أَدْرُسُ فِي مَدْرَسَةٍ", meaning: "Saya belajar di sekolah.", usage: "Gunakan saat ingin mengatakan: Saya belajar di sekolah." },
+      ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْمَلُ", meaning: "saya bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبٌ", meaning: "kantor/meja kerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدْرَسَةٌ", meaning: "sekolah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَنَا طَالِبٌ.\nأَنَا معلم.\nأعمل في ...\nأدرس في ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12606,6 +13141,14 @@ export const lessonCatalog = [
         { phrase: "هل تعمل؟", meaning: "Apakah kamu bekerja?", usage: "Gunakan saat ingin mengatakan: Apakah kamu bekerja?" },
         { phrase: "نَعَمْ، أَعْمَلُ", meaning: "Ya, saya bekerja.", usage: "Gunakan saat ingin mengatakan: Ya, saya bekerja." },
       ],
+      vocabulary: [
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْمَلُ", meaning: "saya bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَيْنَ تَدْرُسُ؟\nمَاذَا تَدْرُسُ؟\nهل تعمل؟\nنَعَمْ، أَعْمَلُ.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12660,6 +13203,14 @@ export const lessonCatalog = [
         { phrase: "أَسْتَطِيعُ الْقِرَاءَةَ", meaning: "Saya bisa membaca.", usage: "Gunakan saat ingin mengatakan: Saya bisa membaca." },
         { phrase: "لَا أَسْتَطِيعُ الْآنَ", meaning: "Saya belum bisa sekarang.", usage: "Gunakan saat ingin mengatakan: Saya belum bisa sekarang." },
         { phrase: "قَلِيلًا", meaning: "Sedikit", usage: "Gunakan saat ingin mengatakan: Sedikit" },
+      ],
+      vocabulary: [
+        { word: "أُحِبُّ", meaning: "saya suka", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِرَاءَةٌ", meaning: "membaca", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَسْتَطِيعُ", meaning: "saya bisa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَلِيلًا", meaning: "sedikit", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كِتَابَةٌ", meaning: "menulis", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأحب ...\nلا أحب ...\nأَسْتَطِيعُ ...\nقَلِيلًا\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12718,6 +13269,16 @@ export const lessonCatalog = [
         { phrase: "أَعْمَلُ فِي مَكْتَبٍ", meaning: "Saya bekerja di kantor.", usage: "Gunakan saat ingin mengatakan: Saya bekerja di kantor." },
         { phrase: "أُحِبُّ الْقِرَاءَةَ", meaning: "Saya suka membaca.", usage: "Gunakan saat ingin mengatakan: Saya suka membaca." },
       ],
+      vocabulary: [
+        { word: "عَائِلَتِي", meaning: "keluarga saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْمَلُ", meaning: "saya bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبٌ", meaning: "kantor/meja kerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُحِبُّ", meaning: "saya suka", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِرَاءَةٌ", meaning: "membaca", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nهَذِهِ عَائِلَتِي.\nأَنَا طَالِبٌ.\nأَدْرُسُ الْعَرَبِيَّةَ.\nأُحِبُّ الْقِرَاءَةَ.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12772,6 +13333,13 @@ export const lessonCatalog = [
         { phrase: "هُنَاكَ", meaning: "Di sana", usage: "Gunakan saat ingin mengatakan: Di sana" },
         { phrase: "قَرِيبَةٌ", meaning: "Dekat", usage: "Gunakan saat ingin mengatakan: Dekat" },
         { phrase: "بَعِيدَةٌ", meaning: "Jauh", usage: "Gunakan saat ingin mengatakan: Jauh" },
+      ],
+      vocabulary: [
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبَةٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَعِيدَةٌ", meaning: "jauh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَيْنَ الْمَكْتَبَةُ؟\nالْمَكْتَبَةُ هُنَا.\nهُنَاكَ.\nقَرِيبَةٌ.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12829,6 +13397,15 @@ export const lessonCatalog = [
         { phrase: "السُّوقُ", meaning: "Pasar", usage: "Gunakan saat ingin mengatakan: Pasar" },
         { phrase: "الْمَكْتَبُ", meaning: "Kantor", usage: "Gunakan saat ingin mengatakan: Kantor" },
         { phrase: "الْمَقْهَى", meaning: "Kafe", usage: "Gunakan saat ingin mengatakan: Kafe" },
+      ],
+      vocabulary: [
+        { word: "بَيْتٌ", meaning: "rumah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدْرَسَةٌ", meaning: "sekolah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سُوقٌ", meaning: "pasar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبٌ", meaning: "kantor/meja kerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبَةٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَعِيدٌ", meaning: "jauh", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nالْبَيْتُ\nالْمَدْرَسَةُ\nالسُّوقُ\nالْمَكْتَبُ\nالْمَقْهَى\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -12888,6 +13465,15 @@ export const lessonCatalog = [
         { phrase: "بِجَانِبِ الْمَكْتَبِ", meaning: "Di samping kantor", usage: "Gunakan saat ingin mengatakan: Di samping kantor" },
         { phrase: "أمام الْمَدْرَسَةُ", meaning: "Di depan sekolah", usage: "Gunakan saat ingin mengatakan: Di depan sekolah" },
       ],
+      vocabulary: [
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِجَانِبِ", meaning: "di samping", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبٌ", meaning: "kantor/meja kerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدْرَسَةٌ", meaning: "sekolah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nاِذْهَبْ يَمِينًا\nاِذْهَبْ يَسَارًا\nإِلَى الْأَمَامِ\nبجانب\nأمام\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -12943,6 +13529,14 @@ export const lessonCatalog = [
         { phrase: "ثُمَّ", meaning: "Lalu", usage: "Gunakan saat ingin mengatakan: Lalu" },
         { phrase: "عِنْدَ الْبَابِ", meaning: "Di dekat pintu", usage: "Gunakan saat ingin mengatakan: Di dekat pintu" },
         { phrase: "شُكْرًا", meaning: "Terima kasih.", usage: "Gunakan saat ingin mengatakan: Terima kasih." },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَابٌ", meaning: "pintu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nكَيْفَ أَذْهَبُ إلى ...؟\nامشِ\nثُمَّ\nعِنْدَ الْبَابِ\nشُكْرًا\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13002,6 +13596,16 @@ export const lessonCatalog = [
         { phrase: "هُوَ بِجَانِبِ الْمَكْتَبَةِ", meaning: "Itu di samping perpustakaan.", usage: "Gunakan saat ingin mengatakan: Itu di samping perpustakaan." },
         { phrase: "وَاضِحٌ", meaning: "Jelas", usage: "Gunakan saat ingin mengatakan: Jelas" },
       ],
+      vocabulary: [
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَصْلٌ", meaning: "kelas/ruang kelas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِجَانِبِ", meaning: "di samping", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاضِحٌ", meaning: "jelas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَيْنَ الْفَصْلُ؟\nكَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟\nاِذْهَبْ يَمِينًا\nهُوَ بِجَانِبِ الْمَكْتَبَةِ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13056,6 +13660,14 @@ export const lessonCatalog = [
         { phrase: "من فضلك", meaning: "Tolong.", usage: "Gunakan saat ingin mengatakan: Tolong." },
         { phrase: "هَلْ عِنْدَكُمْ شَايٌ؟", meaning: "Apakah kalian punya teh?", usage: "Gunakan saat ingin mengatakan: Apakah kalian punya teh?" },
         { phrase: "تَفَضَّلْ", meaning: "Silakan.", usage: "Gunakan saat ingin mengatakan: Silakan." },
+      ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاءٌ", meaning: "air", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَهْوَةٌ", meaning: "kopi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأُرِيدُ مَاءً\nأُرِيدُ قَهْوَةً\nمن فضلك\nهَلْ عِنْدَكُمْ ...؟\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13112,6 +13724,15 @@ export const lessonCatalog = [
         { phrase: "رَخِيصٌ", meaning: "Murah", usage: "Gunakan saat ingin mengatakan: Murah" },
         { phrase: "مُنَاسِبٌ", meaning: "Cocok/pas", usage: "Gunakan saat ingin mengatakan: Cocok/pas" },
       ],
+      vocabulary: [
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سِعْرٌ", meaning: "harga", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خَمْسَةٌ", meaning: "lima", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رِيَالَاتٌ", meaning: "riyal", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَلَمٌ", meaning: "pena", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخُذُ", meaning: "saya ambil", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nكَمِ السِّعْرُ؟\nالسِّعْرُ خَمْسَةُ رِيَالَاتٍ\nغَالٍ\nرَخِيصٌ\nمُنَاسِبٌ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13167,6 +13788,14 @@ export const lessonCatalog = [
         { phrase: "أُرِيدُ هَذَا", meaning: "Saya ingin ini.", usage: "Gunakan saat ingin mengatakan: Saya ingin ini." },
         { phrase: "آخُذُ وَاحِدًا", meaning: "Saya ambil satu.", usage: "Gunakan saat ingin mengatakan: Saya ambil satu." },
         { phrase: "الْحِسَابُ مِنْ فَضْلِكَ", meaning: "Tagihannya, tolong.", usage: "Gunakan saat ingin mengatakan: Tagihannya, tolong." },
+      ],
+      vocabulary: [
+        { word: "قَلَمٌ", meaning: "pena", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْجُودٌ", meaning: "tersedia/ada", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخُذُ", meaning: "saya ambil", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حِسَابٌ", meaning: "tagihan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nهَلْ عِنْدَكُمْ قَلَمٌ؟\nنَعَمْ، مَوْجُودٌ.\nأُرِيدُ هَذَا.\nآخُذُ وَاحِدًا.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13225,6 +13854,14 @@ export const lessonCatalog = [
         { phrase: "أَحْتَاجُ قَلَمًا", meaning: "Saya butuh pena.", usage: "Gunakan saat ingin mengatakan: Saya butuh pena." },
         { phrase: "فَقَطْ", meaning: "Saja", usage: "Gunakan saat ingin mengatakan: Saja" },
       ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كِتَابٌ", meaning: "buku", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَهْوَةٌ", meaning: "kopi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَحْتَاجُ", meaning: "saya butuh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخَرُ", meaning: "lain", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nمَاذَا تُرِيدُ؟\nأريد ...\nلا أريد ...\nأحتاج ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13281,6 +13918,16 @@ export const lessonCatalog = [
         { phrase: "السِّعْرُ مُنَاسِبٌ", meaning: "Harganya cocok.", usage: "Gunakan saat ingin mengatakan: Harganya cocok." },
         { phrase: "آخُذُ وَاحِدًا", meaning: "Saya ambil satu.", usage: "Gunakan saat ingin mengatakan: Saya ambil satu." },
         { phrase: "الْحِسَابُ مِنْ فَضْلِكَ", meaning: "Tagihannya, tolong.", usage: "Gunakan saat ingin mengatakan: Tagihannya, tolong." },
+      ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاءٌ", meaning: "air", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سِعْرٌ", meaning: "harga", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخُذُ", meaning: "saya ambil", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حِسَابٌ", meaning: "tagihan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأُرِيدُ مَاءً.\nكَمِ السِّعْرُ؟\nآخُذُ وَاحِدًا.\nمن فضلك.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13339,6 +13986,16 @@ export const lessonCatalog = [
         { phrase: "بِبُطْءٍ مِنْ فَضْلِكَ", meaning: "Pelan-pelan, tolong.", usage: "Gunakan saat ingin mengatakan: Pelan-pelan, tolong." },
         { phrase: "مَرَّةً أُخْرَى", meaning: "Sekali lagi", usage: "Gunakan saat ingin mengatakan: Sekali lagi" },
       ],
+      vocabulary: [
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْرِفُ", meaning: "saya tahu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكَلِمَةُ", meaning: "kata", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يَعْنِي", meaning: "artinya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِبُطْءٍ", meaning: "pelan-pelan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nلَا أَفْهَمُ.\nلَا أَعْرِفُ الْكَلِمَةَ.\nماذا يعني ...؟\nمَرَّةً أُخْرَى\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13393,6 +14050,16 @@ export const lessonCatalog = [
         { phrase: "أَيْنَ أَجِدُ الدَّرْسَ؟", meaning: "Di mana saya menemukan pelajaran?", usage: "Gunakan saat ingin mengatakan: Di mana saya menemukan pelajaran?" },
         { phrase: "اِفْتَحِ الصَّفْحَةَ", meaning: "Buka halamannya.", usage: "Gunakan saat ingin mengatakan: Buka halamannya." },
         { phrase: "شُكْرًا عَلَى الْمُسَاعَدَةِ", meaning: "Terima kasih atas bantuannya.", usage: "Gunakan saat ingin mengatakan: Terima kasih atas bantuannya." },
+      ],
+      vocabulary: [
+        { word: "أَحْتَاجُ", meaning: "saya butuh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُسَاعَدَةٌ", meaning: "bantuan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِفْتَحْ", meaning: "bukalah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّفْحَةُ", meaning: "halaman", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nهَلْ تُسَاعِدُنِي؟\nأَحْتَاجُ مُسَاعَدَةً.\nأَيْنَ أجد ...؟\nاِفْتَحِ الصَّفْحَةَ.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13451,6 +14118,16 @@ export const lessonCatalog = [
         { phrase: "تكلم ببطء", meaning: "Bicaralah pelan.", usage: "Gunakan saat ingin mengatakan: Bicaralah pelan." },
         { phrase: "من فضلك", meaning: "Tolong.", usage: "Gunakan saat ingin mengatakan: Tolong." },
       ],
+      vocabulary: [
+        { word: "اِفْتَحْ", meaning: "bukalah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكِتَابُ", meaning: "buku", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِسْتَمِعْ", meaning: "dengarkan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "تَكَلَّمْ", meaning: "berbicaralah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِبُطْءٍ", meaning: "pelan-pelan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبِي", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nاِفْتَحِ الْكِتَابَ\nاُكْتُبِ الْجُمْلَةَ\nاِسْتَمِعْ\nتكلم ببطء\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13507,6 +14184,16 @@ export const lessonCatalog = [
         { phrase: "عُذْرًا", meaning: "Permisi/maaf.", usage: "Gunakan saat ingin mengatakan: Permisi/maaf." },
         { phrase: "لَا مُشْكِلَةَ", meaning: "Tidak masalah.", usage: "Gunakan saat ingin mengatakan: Tidak masalah." },
         { phrase: "عَلَى الرَّحْبِ وَالسَّعَةِ", meaning: "Sama-sama.", usage: "Gunakan saat ingin mengatakan: Sama-sama." },
+      ],
+      vocabulary: [
+        { word: "آسِفٌ", meaning: "maaf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آسِفَةٌ", meaning: "maaf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عُذْرًا", meaning: "permisi/maaf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُشْكِلَةٌ", meaning: "masalah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nآسِفٌ.\nعُذْرًا.\nلَا مُشْكِلَةَ.\nشُكْرًا.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13565,6 +14252,15 @@ export const lessonCatalog = [
         { phrase: "أَعِدْ مَرَّةً أُخْرَى", meaning: "Ulangi sekali lagi.", usage: "Gunakan saat ingin mengatakan: Ulangi sekali lagi." },
         { phrase: "شُكْرًا عَلَى الْمُسَاعَدَةِ", meaning: "Terima kasih atas bantuannya.", usage: "Gunakan saat ingin mengatakan: Terima kasih atas bantuannya." },
       ],
+      vocabulary: [
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَحْتَاجُ", meaning: "saya butuh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُسَاعَدَةٌ", meaning: "bantuan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِبُطْءٍ", meaning: "pelan-pelan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جُمْلَةٌ", meaning: "kalimat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nلَا أَفْهَمُ.\nأَحْتَاجُ مُسَاعَدَةً\nبِبُطْءٍ مِنْ فَضْلِكَ.\nشُكْرًا.\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13622,6 +14318,16 @@ export const lessonCatalog = [
         { phrase: "رَقْمِي ...", meaning: "Nomor saya ...", usage: "Gunakan saat ingin mengatakan: Nomor saya ..." },
         { phrase: "بَرِيدِي الْإِلِكْتُرُونِيُّ ...", meaning: "Email saya ...", usage: "Gunakan saat ingin mengatakan: Email saya ..." },
       ],
+      vocabulary: [
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "إِنْدُونِيسِيَا", meaning: "Indonesia", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمِي", meaning: "nomor saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْإِلِكْتُرُونِيُّ", meaning: "elektronik", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمٌ", meaning: "nomor", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاحِدٌ", meaning: "satu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nاِسْمِي ...\nأَنَا مِنْ ...\nأَكْتُبُ اسْمِي ...\nرَقْمِي ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13678,6 +14384,16 @@ export const lessonCatalog = [
         { phrase: "أَدْرُسُ الْعَرَبِيَّةَ", meaning: "Saya belajar bahasa Arab.", usage: "Gunakan saat ingin mengatakan: Saya belajar bahasa Arab." },
         { phrase: "أَقْرَأُ وَأَكْتُبُ", meaning: "Saya membaca dan menulis.", usage: "Gunakan saat ingin mengatakan: Saya membaca dan menulis." },
         { phrase: "بَعْدَ الدَّرْسِ", meaning: "Setelah pelajaran", usage: "Gunakan saat ingin mengatakan: Setelah pelajaran" },
+      ],
+      vocabulary: [
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْإِثْنَيْنِ", meaning: "Senin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الثَّامِنَةُ", meaning: "jam delapan/kedelapan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اُكْتُبْ", meaning: "tulislah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nالْيَوْمُ ...\nالساعة ...\nأَدْرُسُ الْعَرَبِيَّةَ\nأَقْرَأُ وَأَكْتُبُ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13740,6 +14456,16 @@ export const lessonCatalog = [
         { phrase: "كَمِ السِّعْرُ؟", meaning: "Berapa harganya?", usage: "Gunakan saat ingin mengatakan: Berapa harganya?" },
         { phrase: "السِّعْرُ مُنَاسِبٌ", meaning: "Harganya cocok.", usage: "Gunakan saat ingin mengatakan: Harganya cocok." },
       ],
+      vocabulary: [
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاءٌ", meaning: "air", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سِعْرٌ", meaning: "harga", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِجَانِبِ", meaning: "di samping", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَيْنَ الْمَقْهَى؟\nكَيْفَ أَذْهَبُ؟\nأُرِيدُ مَاءً\nكَمِ السِّعْرُ؟\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13800,6 +14526,16 @@ export const lessonCatalog = [
         { phrase: "أُرِيدُ كِتَابًا", meaning: "Saya ingin buku.", usage: "Gunakan saat ingin mengatakan: Saya ingin buku." },
         { phrase: "لَا أَفْهَمُ", meaning: "Saya tidak paham.", usage: "Gunakan saat ingin mengatakan: Saya tidak paham." },
         { phrase: "أَعِدْ مِنْ فَضْلِكَ", meaning: "Ulangi, tolong.", usage: "Gunakan saat ingin mengatakan: Ulangi, tolong." },
+      ],
+      vocabulary: [
+        { word: "إِنْدُونِيسِيَا", meaning: "Indonesia", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كِتَابٌ", meaning: "buku", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nأَنَا مِنْ ...\nعِنْدِي دَرْسٌ\nأريد ...\nلَا أَفْهَمُ\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
@@ -13862,6 +14598,16 @@ export const lessonCatalog = [
         { phrase: "أَيْنَ الْمَكْتَبَةُ؟", meaning: "Di mana perpustakaan?", usage: "Gunakan saat ingin mengatakan: Di mana perpustakaan?" },
         { phrase: "أَحْتَاجُ مُسَاعَدَةً", meaning: "Saya butuh bantuan.", usage: "Gunakan saat ingin mengatakan: Saya butuh bantuan." },
       ],
+      vocabulary: [
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِسْمِي", meaning: "nama saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَدْرُسُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَحْتَاجُ", meaning: "saya butuh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُسَاعَدَةٌ", meaning: "bantuan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.\n\n```txt\nمَرْحَبًا\nاِسْمِي ...\nأَدْرُسُ الْعَرَبِيَّةَ\nأَيْنَ ...؟\nأريد ...\n```\n\nMulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.",
       patterns: [
@@ -13919,6 +14665,15 @@ export const lessonCatalog = [
         { phrase: "كَانَ الدَّرْسُ جَيِّدًا.", meaning: "Pelajarannya bagus.", usage: "Gunakan saat ingin mengatakan: Pelajarannya bagus." },
         { phrase: "سَأُرَاجِعُ الْكَلِمَاتِ.", meaning: "Saya akan mengulang kosakata.", usage: "Gunakan saat ingin mengatakan: Saya akan mengulang kosakata." },
         { phrase: "إِلَى اللِّقَاءِ غَدًا.", meaning: "Sampai bertemu besok.", usage: "Gunakan saat ingin mengatakan: Sampai bertemu besok." },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْكَلِمَاتُ", meaning: "kata-kata", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "غَدًا", meaning: "besok", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "السَّلَامُ", meaning: "salam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَعَلَيْكُمُ", meaning: "dan atas kalian", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan pertanyaan kabar, jawaban pendek, dan satu detail tambahan dengan pola: أَنَا بِخَيْرٍ، وَ...",
       grammarNotes: "# Pola Percakapan\n\nGunakan pertanyaan kabar, jawaban pendek, dan satu detail tambahan dengan pola: أَنَا بِخَيْرٍ، وَ...\n\n```txt\nكَيْفَ حَالُكَ؟\nأَنَا بِخَيْرٍ، وَأَنْتَ؟\nكَانَ الدَّرْسُ جَيِّدًا.\nسَأُرَاجِعُ الْكَلِمَاتِ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -13979,6 +14734,16 @@ export const lessonCatalog = [
         { phrase: "هَذَا جَيِّدٌ.", meaning: "Itu bagus.", usage: "Gunakan saat ingin mengatakan: Itu bagus." },
         { phrase: "وَأَنْتَ؟", meaning: "Dan kamu?", usage: "Gunakan saat ingin mengatakan: Dan kamu?" },
       ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لِمَاذَا", meaning: "mengapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَتَدَرَّبُ", meaning: "saya berlatih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِرَاءَةٌ", meaning: "membaca", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَاجِبٌ", meaning: "tugas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan pertanyaan lanjutan dengan مَاذَا dan لِمَاذَا, lalu jawab dengan alasan pendek memakai لِأَنَّ.",
       grammarNotes: "# Pola Percakapan\n\nGunakan pertanyaan lanjutan dengan مَاذَا dan لِمَاذَا, lalu jawab dengan alasan pendek memakai لِأَنَّ.\n\n```txt\nمَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟\nلِمَاذَا؟\nلِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.\nهَذَا جَيِّدٌ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14038,6 +14803,16 @@ export const lessonCatalog = [
         { phrase: "كَانَ الْمَكَانُ جَمِيلًا.", meaning: "Tempatnya indah.", usage: "Gunakan saat ingin mengatakan: Tempatnya indah." },
         { phrase: "وَمَاذَا فَعَلْتِ أَنْتِ؟", meaning: "Dan apa yang kamu lakukan?", usage: "Gunakan saat ingin mengatakan: Dan apa yang kamu lakukan?" },
       ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَعَلْتُ", meaning: "saya melakukan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَدِيقَةٌ", meaning: "taman", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سُوقٌ", meaning: "pasar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِشْتَرَيْتُ", meaning: "saya membeli", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كِتَابٌ", meaning: "buku", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan bentuk lampau sederhana seperti ذَهَبْتُ dan كَانَ untuk menceritakan pengalaman pendek.",
       grammarNotes: "# Pola Percakapan\n\nGunakan bentuk lampau sederhana seperti ذَهَبْتُ dan كَانَ untuk menceritakan pengalaman pendek.\n\n```txt\nمَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟\nذَهَبْتُ إِلَى ...\nكَانَ الْمَكَانُ جَمِيلًا.\nمَعَ أُسْرَتِي.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14094,6 +14869,16 @@ export const lessonCatalog = [
         { phrase: "كَيْفَ كَانَ الْمَكَانُ؟", meaning: "Bagaimana tempatnya?", usage: "Gunakan saat ingin mengatakan: Bagaimana tempatnya?" },
         { phrase: "كَانَ نَظِيفًا وَهَادِئًا.", meaning: "Tempatnya bersih dan tenang.", usage: "Gunakan saat ingin mengatakan: Tempatnya bersih dan tenang." },
         { phrase: "أُرِيدُ أَنْ أَزُورَ ذَلِكَ الْمَكَانَ.", meaning: "Saya ingin mengunjungi tempat itu.", usage: "Gunakan saat ingin mengatakan: Saya ingin mengunjungi tempat itu." },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمْسِ", meaning: "kemarin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبَةٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan reaksi pendek seperti حَقًّا؟ dan مُمْتَازٌ, lalu lanjutkan dengan pertanyaan sederhana.",
       grammarNotes: "# Pola Percakapan\n\nGunakan reaksi pendek seperti حَقًّا؟ dan مُمْتَازٌ, lalu lanjutkan dengan pertanyaan sederhana.\n\n```txt\nحَقًّا؟\nهَذَا مُمْتَازٌ.\nكَيْفَ كَانَ ...؟\nأُرِيدُ أَنْ أَزُورَ ذَلِكَ الْمَكَانَ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14156,6 +14941,16 @@ export const lessonCatalog = [
         { phrase: "لِأَنَّنِي أُرِيدُ أَنْ أَتَعَلَّمَ.", meaning: "Karena saya ingin belajar.", usage: "Gunakan saat ingin mengatakan: Karena saya ingin belajar." },
         { phrase: "سَنَتَحَدَّثُ غَدًا.", meaning: "Kita akan berbicara besok.", usage: "Gunakan saat ingin mengatakan: Kita akan berbicara besok." },
       ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَعَلْتُ", meaning: "saya melakukan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمْسِ", meaning: "kemarin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَتَعَلَّمُ", meaning: "saya belajar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "غَدًا", meaning: "besok", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "السَّلَامُ", meaning: "salam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan salam, pertanyaan lanjutan, alasan pendek, dan rencana dekat dengan سَـ.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan salam, pertanyaan lanjutan, alasan pendek, dan rencana dekat dengan سَـ.\n\n```txt\nكَيْفَ حَالُكَ؟\nمَاذَا فَعَلْتَ أَمْسِ؟\nهَذَا جَيِّدٌ.\nسَنَتَحَدَّثُ غَدًا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14215,6 +15010,14 @@ export const lessonCatalog = [
         { phrase: "نَلْتَقِي السَّاعَةَ الرَّابِعَةَ.", meaning: "Kita bertemu jam empat.", usage: "Gunakan saat ingin mengatakan: Kita bertemu jam empat." },
         { phrase: "أَمَامَ الْمَكْتَبَةِ.", meaning: "Di depan perpustakaan.", usage: "Gunakan saat ingin mengatakan: Di depan perpustakaan." },
       ],
+      vocabulary: [
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan سَـ untuk rencana dekat, مَتَى untuk waktu, dan أَيْنَ untuk tempat bertemu.",
       grammarNotes: "# Pola Percakapan\n\nGunakan سَـ untuk rencana dekat, مَتَى untuk waktu, dan أَيْنَ untuk tempat bertemu.\n\n```txt\nسَأَذْهَبُ إِلَى ...\nمَتَى نَلْتَقِي؟\nنَلْتَقِي السَّاعَةَ ...\nأَمَامَ الْمَكْتَبَةِ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14271,6 +15074,15 @@ export const lessonCatalog = [
         { phrase: "فِكْرَةٌ جَيِّدَةٌ.", meaning: "Ide yang bagus.", usage: "Gunakan saat ingin mengatakan: Ide yang bagus." },
         { phrase: "أَنَا مَوْجُودٌ بَعْدَ الْعَصْرِ.", meaning: "Saya ada setelah Asar.", usage: "Gunakan saat ingin mengatakan: Saya ada setelah Asar." },
         { phrase: "نَدْرُسُ فِي الْمَرْكَزِ.", meaning: "Kita belajar di pusat.", usage: "Gunakan saat ingin mengatakan: Kita belajar di pusat." },
+      ],
+      vocabulary: [
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْجُودٌ", meaning: "tersedia/ada", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَصْرُ", meaning: "sore", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لِمَاذَا", meaning: "mengapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan هَلْ تُرِيدُ أَنْ ... untuk ajakan dan لِأَنَّ untuk alasan pendek.",
       grammarNotes: "# Pola Percakapan\n\nGunakan هَلْ تُرِيدُ أَنْ ... untuk ajakan dan لِأَنَّ untuk alasan pendek.\n\n```txt\nهَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\nلِأَنَّ الدَّرْسَ مُهِمٌّ.\nفِكْرَةٌ جَيِّدَةٌ.\nأَنَا مَوْجُودٌ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14331,6 +15143,16 @@ export const lessonCatalog = [
         { phrase: "رُبَّمَا فِي وَقْتٍ آخَرَ.", meaning: "Mungkin di waktu lain.", usage: "Gunakan saat ingin mengatakan: Mungkin di waktu lain." },
         { phrase: "لَا مُشْكِلَةَ.", meaning: "Tidak masalah.", usage: "Gunakan saat ingin mengatakan: Tidak masalah." },
       ],
+      vocabulary: [
+        { word: "أَسْتَطِيعُ", meaning: "saya bisa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آسِفٌ", meaning: "maaf", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَقْتٌ", meaning: "waktu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخَرُ", meaning: "lain", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُشْكِلَةٌ", meaning: "masalah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الظُّهْرُ", meaning: "siang", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سُوقٌ", meaning: "pasar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan أَسْتَطِيعُ untuk bisa, لَا أَسْتَطِيعُ untuk tidak bisa, dan لِأَنَّ untuk alasan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أَسْتَطِيعُ untuk bisa, لَا أَسْتَطِيعُ untuk tidak bisa, dan لِأَنَّ untuk alasan.\n\n```txt\nنَعَمْ، أَسْتَطِيعُ.\nآسِفٌ، لَا أَسْتَطِيعُ.\nلِأَنَّ لَدَيَّ مَوْعِدًا.\nرُبَّمَا فِي وَقْتٍ آخَرَ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14387,6 +15209,16 @@ export const lessonCatalog = [
         { phrase: "مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟", meaning: "Bagaimana dengan jam lima?", usage: "Gunakan saat ingin mengatakan: Bagaimana dengan jam lima?" },
         { phrase: "الْوَقْتُ مُنَاسِبٌ.", meaning: "Waktunya cocok.", usage: "Gunakan saat ingin mengatakan: Waktunya cocok." },
         { phrase: "شُكْرًا عَلَى التَّفَهُّمِ.", meaning: "Terima kasih atas pengertiannya.", usage: "Gunakan saat ingin mengatakan: Terima kasih atas pengertiannya." },
+      ],
+      vocabulary: [
+        { word: "أَسْتَطِيعُ", meaning: "saya bisa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَقْتٌ", meaning: "waktu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan هَلْ يُمْكِنُ أَنْ ... untuk permintaan sopan dan نُغَيِّرَ untuk mengubah waktu.",
       grammarNotes: "# Pola Percakapan\n\nGunakan هَلْ يُمْكِنُ أَنْ ... untuk permintaan sopan dan نُغَيِّرَ untuk mengubah waktu.\n\n```txt\nلَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.\nهَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟\nمَاذَا عَنِ السَّاعَةِ ...؟\nالْوَقْتُ مُنَاسِبٌ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14449,6 +15281,16 @@ export const lessonCatalog = [
         { phrase: "نَلْتَقِي أَمَامَ الْمَرْكَزِ.", meaning: "Kita bertemu di depan pusat.", usage: "Gunakan saat ingin mengatakan: Kita bertemu di depan pusat." },
         { phrase: "إِلَى اللِّقَاءِ.", meaning: "Sampai bertemu.", usage: "Gunakan saat ingin mengatakan: Sampai bertemu." },
       ],
+      vocabulary: [
+        { word: "اِخْتِبَارٌ", meaning: "ujian", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لِمَاذَا", meaning: "mengapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan ajakan dengan هَلْ تُرِيدُ أَنْ, alasan dengan لِأَنَّ, dan reschedule dengan نُغَيِّرَ الْمَوْعِدَ.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan ajakan dengan هَلْ تُرِيدُ أَنْ, alasan dengan لِأَنَّ, dan reschedule dengan نُغَيِّرَ الْمَوْعِدَ.\n\n```txt\nهَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\nلِأَنَّ الِاخْتِبَارَ قَرِيبٌ.\nهَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟\nنَلْتَقِي أَمَامَ الْمَرْكَزِ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14507,6 +15349,16 @@ export const lessonCatalog = [
         { phrase: "ذَهَابًا وَعَوْدَةً.", meaning: "Pulang pergi.", usage: "Gunakan saat ingin mengatakan: Pulang pergi." },
         { phrase: "الدَّرَجَةُ الِاقْتِصَادِيَّةُ.", meaning: "Kelas ekonomi.", usage: "Gunakan saat ingin mengatakan: Kelas ekonomi." },
         { phrase: "كَمِ السِّعْرُ؟", meaning: "Berapa harganya?", usage: "Gunakan saat ingin mengatakan: Berapa harganya?" },
+      ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "تَذْكِرَةٌ", meaning: "tiket", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جَاكَرْتَا", meaning: "Jakarta", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَابًا", meaning: "pergi/sekali jalan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عَوْدَةٌ", meaning: "pulang/kembali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "دَرَجَةٌ", meaning: "kelas/tingkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِقْتِصَادِيَّةٌ", meaning: "ekonomi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أُرِيدُ untuk permintaan, إِلَى untuk tujuan, dan pilihan dengan أَمْ saat membandingkan dua opsi.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أُرِيدُ untuk permintaan, إِلَى untuk tujuan, dan pilihan dengan أَمْ saat membandingkan dua opsi.\n\n```txt\nأُرِيدُ تَذْكِرَةً إِلَى ...\nذَهَابًا فَقَطْ أَمْ ذَهَابًا وَعَوْدَةً؟\nالدَّرَجَةُ الِاقْتِصَادِيَّةُ.\nكَمِ السِّعْرُ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14567,6 +15419,16 @@ export const lessonCatalog = [
         { phrase: "مِنَ الرَّصِيفِ الثَّانِي.", meaning: "Dari peron dua.", usage: "Gunakan saat ingin mengatakan: Dari peron dua." },
         { phrase: "يَصِلُ السَّاعَةَ التَّاسِعَةَ.", meaning: "Tiba jam sembilan.", usage: "Gunakan saat ingin mengatakan: Tiba jam sembilan." },
       ],
+      vocabulary: [
+        { word: "يُغَادِرُ", meaning: "berangkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِطَارٌ", meaning: "kereta", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَصِيفٌ", meaning: "peron", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يَصِلُ", meaning: "tiba", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "التَّاسِعَةُ", meaning: "jam sembilan/kesembilan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَانْدُونْغ", meaning: "Bandung", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "شُكْرًا", meaning: "terima kasih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan مَتَى untuk waktu, مِنْ أَيِّ untuk asal/peron, dan يَصِلُ untuk menanyakan waktu tiba.",
       grammarNotes: "# Pola Percakapan\n\nGunakan مَتَى untuk waktu, مِنْ أَيِّ untuk asal/peron, dan يَصِلُ untuk menanyakan waktu tiba.\n\n```txt\nمَتَى يَغَادِرُ الْقِطَارُ؟\nيُغَادِرُ السَّاعَةَ ...\nمِنْ أَيِّ رَصِيفٍ؟\nمَتَى يَصِلُ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14623,6 +15485,14 @@ export const lessonCatalog = [
         { phrase: "ثُمَّ اِتَّجِهْ يَمِينًا.", meaning: "Lalu belok kanan.", usage: "Gunakan saat ingin mengatakan: Lalu belok kanan." },
         { phrase: "بِجَانِبِ الْمَصْعَدِ.", meaning: "Di samping lift.", usage: "Gunakan saat ingin mengatakan: Di samping lift." },
         { phrase: "هَلْ هَذَا صَحِيحٌ؟", meaning: "Apakah ini benar?", usage: "Gunakan saat ingin mengatakan: Apakah ini benar?" },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَصِيفٌ", meaning: "peron", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُسْتَقِيمًا", meaning: "lurus", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بِجَانِبِ", meaning: "di samping", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مِصْعَدٌ", meaning: "lift", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan كَيْفَ أَذْهَبُ إِلَى ... untuk arah, ثُمَّ untuk urutan, dan هَلْ هَذَا صَحِيحٌ؟ untuk konfirmasi.",
       grammarNotes: "# Pola Percakapan\n\nGunakan كَيْفَ أَذْهَبُ إِلَى ... untuk arah, ثُمَّ untuk urutan, dan هَلْ هَذَا صَحِيحٌ؟ untuk konfirmasi.\n\n```txt\nكَيْفَ أَذْهَبُ إِلَى ...؟\nاِمْشِ مُسْتَقِيمًا.\nثُمَّ اِتَّجِهْ يَمِينًا.\nهَلْ هَذَا صَحِيحٌ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14682,6 +15552,16 @@ export const lessonCatalog = [
         { phrase: "كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟", meaning: "Berapa lama perjalanannya?", usage: "Gunakan saat ingin mengatakan: Berapa lama perjalanannya?" },
         { phrase: "حَوَالَيْ عِشْرِينَ دَقِيقَةً.", meaning: "Sekitar dua puluh menit.", usage: "Gunakan saat ingin mengatakan: Sekitar dua puluh menit." },
         { phrase: "تَوَقَّفْ هُنَا، مِنْ فَضْلِكَ.", meaning: "Berhenti di sini, tolong.", usage: "Gunakan saat ingin mengatakan: Berhenti di sini, tolong." },
+      ],
+      vocabulary: [
+        { word: "فُنْدُقٌ", meaning: "hotel", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عُنْوَانٌ", meaning: "alamat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَمْ", meaning: "berapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَرِيقٌ", meaning: "jalan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُزْدَحِمٌ", meaning: "ramai/padat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَلِيلًا", meaning: "sedikit", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan إِلَى untuk tujuan, كَمْ يَسْتَغْرِقُ untuk durasi, dan تَوَقَّفْ untuk meminta berhenti.",
       grammarNotes: "# Pola Percakapan\n\nGunakan إِلَى untuk tujuan, كَمْ يَسْتَغْرِقُ untuk durasi, dan تَوَقَّفْ untuk meminta berhenti.\n\n```txt\nإِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.\nهَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟\nكَمْ يَسْتَغْرِقُ الطَّرِيقُ؟\nتَوَقَّفْ هُنَا، مِنْ فَضْلِكَ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14746,6 +15626,16 @@ export const lessonCatalog = [
         { phrase: "هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟", meaning: "Apakah alamat ini benar?", usage: "Gunakan saat ingin mengatakan: Apakah alamat ini benar?" },
         { phrase: "تَوَقَّفْ هُنَا، مِنْ فَضْلِكَ.", meaning: "Berhenti di sini, tolong.", usage: "Gunakan saat ingin mengatakan: Berhenti di sini, tolong." },
       ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "تَذْكِرَةٌ", meaning: "tiket", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدِينَةٌ", meaning: "kota", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يُغَادِرُ", meaning: "berangkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِطَارٌ", meaning: "kereta", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَصِيفٌ", meaning: "peron", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عُنْوَانٌ", meaning: "alamat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan permintaan dengan أُرِيدُ, waktu dengan مَتَى, arah dengan كَيْفَ, dan durasi dengan كَمْ يَسْتَغْرِقُ.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan permintaan dengan أُرِيدُ, waktu dengan مَتَى, arah dengan كَيْفَ, dan durasi dengan كَمْ يَسْتَغْرِقُ.\n\n```txt\nأُرِيدُ تَذْكِرَةً إِلَى ...\nمَتَى يَغَادِرُ؟\nكَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟\nكَمْ يَسْتَغْرِقُ الطَّرِيقُ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14802,6 +15692,16 @@ export const lessonCatalog = [
         { phrase: "هَلْ يُوجَدُ لَوْنٌ آخَرُ؟", meaning: "Apakah ada warna lain?", usage: "Gunakan saat ingin mengatakan: Apakah ada warna lain?" },
         { phrase: "أُرِيدُ وَاحِدًا، مِنْ فَضْلِكَ.", meaning: "Saya ingin satu, tolong.", usage: "Gunakan saat ingin mengatakan: Saya ingin satu, tolong." },
         { phrase: "سَآخُذُ هَذَا.", meaning: "Saya akan mengambil ini.", usage: "Gunakan saat ingin mengatakan: Saya akan mengambil ini." },
+      ],
+      vocabulary: [
+        { word: "قَلَمٌ", meaning: "pena", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَزْرَقُ", meaning: "biru", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لَوْنٌ", meaning: "warna", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "آخَرُ", meaning: "lain", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَسْوَدُ", meaning: "hitam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَحْمَرُ", meaning: "merah", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أَبْحَثُ عَنْ untuk mencari barang, هَلْ عِنْدَكُمْ untuk menanyakan stok, dan سَآخُذُ untuk keputusan membeli.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أَبْحَثُ عَنْ untuk mencari barang, هَلْ عِنْدَكُمْ untuk menanyakan stok, dan سَآخُذُ untuk keputusan membeli.\n\n```txt\nأَبْحَثُ عَنْ ...\nهَلْ عِنْدَكُمْ هَذَا؟\nهَلْ يُوجَدُ لَوْنٌ آخَرُ؟\nسَآخُذُ هَذَا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14862,6 +15762,16 @@ export const lessonCatalog = [
         { phrase: "هَذَا مُنَاسِبٌ.", meaning: "Ini cocok.", usage: "Gunakan saat ingin mengatakan: Ini cocok." },
         { phrase: "هَلْ أَسْتَطِيعُ أَنْ أُجَرِّبَهُ؟", meaning: "Bolehkah saya mencobanya?", usage: "Gunakan saat ingin mengatakan: Bolehkah saya mencobanya?" },
       ],
+      vocabulary: [
+        { word: "مَقَاسٌ", meaning: "ukuran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَكْبَرُ", meaning: "lebih besar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لَوْنٌ", meaning: "warna", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَبْيَضُ", meaning: "putih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَغِيرٌ", meaning: "kecil", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَسْتَطِيعُ", meaning: "saya bisa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan مَقَاسٌ untuk ukuran, لَوْنٌ untuk warna, dan هَلْ أَسْتَطِيعُ أَنْ ... untuk permintaan sopan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan مَقَاسٌ untuk ukuran, لَوْنٌ untuk warna, dan هَلْ أَسْتَطِيعُ أَنْ ... untuk permintaan sopan.\n\n```txt\nهَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟\nأُرِيدُ اللَّوْنَ الْأَبْيَضَ.\nهَذَا صَغِيرٌ جِدًّا.\nهَلْ أَسْتَطِيعُ أَنْ أُجَرِّبَهُ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -14918,6 +15828,16 @@ export const lessonCatalog = [
         { phrase: "أَيُّهُمَا أَفْضَلُ؟", meaning: "Mana yang lebih baik?", usage: "Gunakan saat ingin mengatakan: Mana yang lebih baik?" },
         { phrase: "أُفَضِّلُ هَذَا.", meaning: "Saya lebih memilih ini.", usage: "Gunakan saat ingin mengatakan: Saya lebih memilih ini." },
         { phrase: "السِّعْرُ مُنَاسِبٌ.", meaning: "Harganya cocok.", usage: "Gunakan saat ingin mengatakan: Harganya cocok." },
+      ],
+      vocabulary: [
+        { word: "أَرْخَصُ", meaning: "lebih murah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَجْوَدُ", meaning: "lebih berkualitas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سِعْرٌ", meaning: "harga", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَقِيبَةٌ", meaning: "tas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَغِيرَةٌ", meaning: "kecil", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan bentuk perbandingan sederhana seperti أَرْخَصُ, أَجْوَدُ, أَفْضَلُ, dan أُفَضِّلُ.",
       grammarNotes: "# Pola Percakapan\n\nGunakan bentuk perbandingan sederhana seperti أَرْخَصُ, أَجْوَدُ, أَفْضَلُ, dan أُفَضِّلُ.\n\n```txt\nهَذَا أَرْخَصُ.\nهَذَا أَجْوَدُ.\nأَيُّهُمَا أَفْضَلُ؟\nأُفَضِّلُ هَذَا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -14977,6 +15897,16 @@ export const lessonCatalog = [
         { phrase: "أَحْتَاجُ إِلَى إِصْلَاحٍ.", meaning: "Saya membutuhkan perbaikan.", usage: "Gunakan saat ingin mengatakan: Saya membutuhkan perbaikan." },
         { phrase: "هَلْ عِنْدَكَ ضَمَانٌ؟", meaning: "Apakah kamu punya garansi?", usage: "Gunakan saat ingin mengatakan: Apakah kamu punya garansi?" },
         { phrase: "سَأَفْحَصُهُ الآنَ.", meaning: "Saya akan memeriksanya sekarang.", usage: "Gunakan saat ingin mengatakan: Saya akan memeriksanya sekarang." },
+      ],
+      vocabulary: [
+        { word: "جِهَازٌ", meaning: "alat/perangkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يَعْمَلُ", meaning: "berfungsi/bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَحْتَاجُ", meaning: "saya butuh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "إِصْلَاحٌ", meaning: "perbaikan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ضَمَانٌ", meaning: "garansi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُشْكِلَةٌ", meaning: "masalah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنْذُ", meaning: "sejak", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan هَلْ يُمْكِنُ أَنْ ... untuk meminta bantuan, لَا يَعْمَلُ untuk masalah, dan سَأَفْحَصُهُ untuk respons layanan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan هَلْ يُمْكِنُ أَنْ ... untuk meminta bantuan, لَا يَعْمَلُ untuk masalah, dan سَأَفْحَصُهُ untuk respons layanan.\n\n```txt\nهَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟\nالْجِهَازُ لَا يَعْمَلُ.\nأَحْتَاجُ إِلَى إِصْلَاحٍ.\nسَأَفْحَصُهُ الآنَ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15045,6 +15975,16 @@ export const lessonCatalog = [
         { phrase: "سَآخُذُ الْأَزْرَقَ.", meaning: "Saya akan mengambil yang biru.", usage: "Gunakan saat ingin mengatakan: Saya akan mengambil yang biru." },
         { phrase: "الْجِهَازُ لَا يَعْمَلُ.", meaning: "Perangkatnya tidak bekerja.", usage: "Gunakan saat ingin mengatakan: Perangkatnya tidak bekerja." },
       ],
+      vocabulary: [
+        { word: "حَقِيبَةٌ", meaning: "tas", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَغِيرَةٌ", meaning: "kecil", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لَوْنٌ", meaning: "warna", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَزْرَقُ", meaning: "biru", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "جِهَازٌ", meaning: "alat/perangkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يَعْمَلُ", meaning: "berfungsi/bekerja", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَسْوَدُ", meaning: "hitam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan أَبْحَثُ عَنْ untuk mencari barang, أَيُّهُمَا أَفْضَلُ untuk membandingkan, dan هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي untuk layanan.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan أَبْحَثُ عَنْ untuk mencari barang, أَيُّهُمَا أَفْضَلُ untuk membandingkan, dan هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي untuk layanan.\n\n```txt\nأَبْحَثُ عَنْ حَقِيبَةٍ.\nهَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟\nأَيُّهُمَا أَفْضَلُ؟\nالْجِهَازُ لَا يَعْمَلُ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15103,6 +16043,16 @@ export const lessonCatalog = [
         { phrase: "لَا أَشْعُرُ بِالرَّاحَةِ.", meaning: "Saya tidak merasa nyaman.", usage: "Gunakan saat ingin mengatakan: Saya tidak merasa nyaman." },
         { phrase: "مُنْذُ هَذَا الصَّبَاحِ.", meaning: "Sejak pagi ini.", usage: "Gunakan saat ingin mengatakan: Sejak pagi ini." },
         { phrase: "هَلْ يُمْكِنُنِي أَنْ أَرَى الطَّبِيبَ؟", meaning: "Bisakah saya menemui dokter?", usage: "Gunakan saat ingin mengatakan: Bisakah saya menemui dokter?" },
+      ],
+      vocabulary: [
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صُدَاعٌ", meaning: "sakit kepala", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خَفِيفٌ", meaning: "ringan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَاحَةٌ", meaning: "nyaman/istirahat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنْذُ", meaning: "sejak", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَبِيبٌ", meaning: "dokter", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أَشْعُرُ بِـ untuk perasaan fisik, عِنْدِي untuk gejala sederhana, dan هَلْ يُمْكِنُنِي untuk permintaan sopan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أَشْعُرُ بِـ untuk perasaan fisik, عِنْدِي untuk gejala sederhana, dan هَلْ يُمْكِنُنِي untuk permintaan sopan.\n\n```txt\nأَشْعُرُ بِتَعَبٍ.\nعِنْدِي صُدَاعٌ خَفِيفٌ.\nلَا أَشْعُرُ بِالرَّاحَةِ.\nهَلْ يُمْكِنُنِي أَنْ أَرَى الطَّبِيبَ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15163,6 +16113,16 @@ export const lessonCatalog = [
         { phrase: "مُنْذُ يَوْمَيْنِ.", meaning: "Sejak dua hari.", usage: "Gunakan saat ingin mengatakan: Sejak dua hari." },
         { phrase: "الْأَلَمُ لَيْسَ شَدِيدًا.", meaning: "Rasanya tidak berat.", usage: "Gunakan saat ingin mengatakan: Rasanya tidak berat." },
       ],
+      vocabulary: [
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَلَمٌ", meaning: "sakit/nyeri", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَلْقٌ", meaning: "tenggorokan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سُعَالٌ", meaning: "batuk", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خَفِيفٌ", meaning: "ringan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "دَرَجَةٌ", meaning: "kelas/tingkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَلِيلًا", meaning: "sedikit", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنْذُ", meaning: "sejak", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan عِنْدِي untuk gejala, فِي untuk bagian tubuh, dan مُنْذُ untuk durasi.",
       grammarNotes: "# Pola Percakapan\n\nGunakan عِنْدِي untuk gejala, فِي untuk bagian tubuh, dan مُنْذُ untuk durasi.\n\n```txt\nعِنْدِي أَلَمٌ فِي ...\nلَدَيَّ سُعَالٌ خَفِيفٌ.\nدَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.\nمُنْذُ يَوْمَيْنِ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15222,6 +16182,16 @@ export const lessonCatalog = [
         { phrase: "السَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ.", meaning: "Jam sepuluh cocok.", usage: "Gunakan saat ingin mengatakan: Jam sepuluh cocok." },
         { phrase: "الْمَوْعِدُ بِاسْمِي.", meaning: "Janji atas nama saya.", usage: "Gunakan saat ingin mengatakan: Janji atas nama saya." },
       ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَبِيبٌ", meaning: "dokter", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "غَدًا", meaning: "besok", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَسَاءٌ", meaning: "sore/malam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَاشِرَةُ", meaning: "jam sepuluh/kesepuluh", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبَةٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan أُرِيدُ مَوْعِدًا untuk membuat janji, هَلْ يُوجَدُ untuk menanyakan ketersediaan, dan مُنَاسِبٌ untuk waktu yang cocok.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أُرِيدُ مَوْعِدًا untuk membuat janji, هَلْ يُوجَدُ untuk menanyakan ketersediaan, dan مُنَاسِبٌ untuk waktu yang cocok.\n\n```txt\nأُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.\nهَلْ يُوجَدُ مَوْعِدٌ غَدًا؟\nالسَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ.\nبِاسْمِ مَنْ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15280,6 +16250,16 @@ export const lessonCatalog = [
         { phrase: "فِي أَيِّ طَابِقٍ؟", meaning: "Di lantai berapa?", usage: "Gunakan saat ingin mengatakan: Di lantai berapa?" },
         { phrase: "هَلْ رَقْمِي صَحِيحٌ؟", meaning: "Apakah nomor saya benar?", usage: "Gunakan saat ingin mengatakan: Apakah nomor saya benar?" },
         { phrase: "التَّفَاصِيلُ صَحِيحَةٌ.", meaning: "Detailnya benar.", usage: "Gunakan saat ingin mengatakan: Detailnya benar." },
+      ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "غَدًا", meaning: "besok", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَابِقٌ", meaning: "lantai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَقْمِي", meaning: "nomor saya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْحَبًا", meaning: "halo", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أُرِيدُ أَنْ أُؤَكِّدَ untuk konfirmasi, هَلْ untuk mengecek detail, dan الصَّحِيحُ untuk memastikan data benar.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أُرِيدُ أَنْ أُؤَكِّدَ untuk konfirmasi, هَلْ untuk mengecek detail, dan الصَّحِيحُ untuk memastikan data benar.\n\n```txt\nأُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.\nهَلِ الْمَوْعِدُ غَدًا؟\nهَلْ رَقْمِي صَحِيحٌ؟\nنَعَمْ، التَّفَاصِيلُ صَحِيحَةٌ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15346,6 +16326,16 @@ export const lessonCatalog = [
         { phrase: "السَّاعَةُ الْحَادِيَةَ عَشْرَةَ مُنَاسِبَةٌ.", meaning: "Jam sebelas cocok.", usage: "Gunakan saat ingin mengatakan: Jam sebelas cocok." },
         { phrase: "أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.", meaning: "Saya ingin mengonfirmasi detail.", usage: "Gunakan saat ingin mengatakan: Saya ingin mengonfirmasi detail." },
       ],
+      vocabulary: [
+        { word: "رَاحَةٌ", meaning: "nyaman/istirahat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَلَمٌ", meaning: "sakit/nyeri", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خَفِيفٌ", meaning: "ringan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَبِيبٌ", meaning: "dokter", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبَةٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan عِنْدِي untuk gejala, أُرِيدُ مَوْعِدًا untuk booking, dan أُؤَكِّدَ untuk konfirmasi.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan عِنْدِي untuk gejala, أُرِيدُ مَوْعِدًا untuk booking, dan أُؤَكِّدَ untuk konfirmasi.\n\n```txt\nلَا أَشْعُرُ بِالرَّاحَةِ.\nعِنْدِي أَلَمٌ خَفِيفٌ.\nأُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.\nأُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15404,6 +16394,16 @@ export const lessonCatalog = [
         { phrase: "دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.", meaning: "Saya belajar sedikit bahasa Arab.", usage: "Gunakan saat ingin mengatakan: Saya belajar sedikit bahasa Arab." },
         { phrase: "بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى الْبَيْتِ.", meaning: "Setelah itu, saya kembali ke rumah.", usage: "Gunakan saat ingin mengatakan: Setelah itu, saya kembali ke rumah." },
         { phrase: "كَانَ الْيَوْمُ جَيِّدًا.", meaning: "Harinya baik.", usage: "Gunakan saat ingin mengatakan: Harinya baik." },
+      ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَعَلْتُ", meaning: "saya melakukan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمْسِ", meaning: "kemarin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكْتَبَةٌ", meaning: "perpustakaan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْعَرَبِيَّةُ", meaning: "bahasa Arab", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَجَعْتُ", meaning: "saya kembali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَيْتٌ", meaning: "rumah", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أَمْسِ untuk kemarin, ذَهَبْتُ untuk saya pergi, dan دَرَسْتُ untuk saya belajar.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أَمْسِ untuk kemarin, ذَهَبْتُ untuk saya pergi, dan دَرَسْتُ untuk saya belajar.\n\n```txt\nمَاذَا فَعَلْتَ أَمْسِ؟\nذَهَبْتُ إِلَى ...\nدَرَسْتُ فِي ...\nكَانَ الْيَوْمُ جَيِّدًا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15466,6 +16466,16 @@ export const lessonCatalog = [
         { phrase: "فِي الصَّبَاحِ.", meaning: "Pada pagi hari.", usage: "Gunakan saat ingin mengatakan: Pada pagi hari." },
         { phrase: "رَجَعْتُ فِي الْمَسَاءِ.", meaning: "Saya kembali pada sore hari.", usage: "Gunakan saat ingin mengatakan: Saya kembali pada sore hari." },
       ],
+      vocabulary: [
+        { word: "أَيْنَ", meaning: "di mana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سُوقٌ", meaning: "pasar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَجَعْتُ", meaning: "saya kembali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَسَاءٌ", meaning: "sore/malam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِشْتَرَيْتُ", meaning: "saya membeli", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan ذَهَبْتُ إِلَى untuk tempat, مَعَ untuk bersama siapa, dan فِي الصَّبَاحِ atau فِي الْمَسَاءِ untuk waktu.",
       grammarNotes: "# Pola Percakapan\n\nGunakan ذَهَبْتُ إِلَى untuk tempat, مَعَ untuk bersama siapa, dan فِي الصَّبَاحِ atau فِي الْمَسَاءِ untuk waktu.\n\n```txt\nأَيْنَ ذَهَبْتَ؟\nذَهَبْتُ إِلَى السُّوقِ.\nذَهَبْتُ مَعَ صَدِيقِي.\nفِي الْمَسَاءِ رَجَعْتُ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15527,6 +16537,16 @@ export const lessonCatalog = [
         { phrase: "كَانَ الْمَكَانُ مُزْدَحِمًا.", meaning: "Tempatnya ramai.", usage: "Gunakan saat ingin mengatakan: Tempatnya ramai." },
         { phrase: "أُرِيدُ أَنْ أَذْهَبَ مَرَّةً أُخْرَى.", meaning: "Saya ingin pergi sekali lagi.", usage: "Gunakan saat ingin mengatakan: Saya ingin pergi sekali lagi." },
       ],
+      vocabulary: [
+        { word: "تَجْرِبَةٌ", meaning: "pengalaman", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَأَيْتُ", meaning: "saya melihat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "طَعَامٌ", meaning: "makanan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرَّةٌ", meaning: "sekali/kali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "حَدِيقَةٌ", meaning: "taman", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan كَانَ atau كَانَتْ untuk menggambarkan pengalaman, رَأَيْتُ untuk saya melihat, dan أَعْجَبَنِي untuk saya suka.",
       grammarNotes: "# Pola Percakapan\n\nGunakan كَانَ atau كَانَتْ untuk menggambarkan pengalaman, رَأَيْتُ untuk saya melihat, dan أَعْجَبَنِي untuk saya suka.\n\n```txt\nكَانَتِ التَّجْرِبَةُ جَيِّدَةً.\nرَأَيْتُ مَكَانًا جَمِيلًا.\nأَعْجَبَنِي الطَّعَامُ.\nلَكِنَّ الْمَكَانَ كَانَ مُزْدَحِمًا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15587,6 +16607,16 @@ export const lessonCatalog = [
         { phrase: "كَيْفَ كَانَ الْمَكَانُ؟", meaning: "Bagaimana tempatnya?", usage: "Gunakan saat ingin mengatakan: Bagaimana tempatnya?" },
         { phrase: "هَلْ أَعْجَبَكَ؟", meaning: "Apakah kamu menyukainya?", usage: "Gunakan saat ingin mengatakan: Apakah kamu menyukainya?" },
         { phrase: "مَاذَا فَعَلْتَ بَعْدَ ذَلِكَ؟", meaning: "Apa yang kamu lakukan setelah itu?", usage: "Gunakan saat ingin mengatakan: Apa yang kamu lakukan setelah itu?" },
+      ],
+      vocabulary: [
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَعَلْتُ", meaning: "saya melakukan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَجَعْتُ", meaning: "saya kembali", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan مَاذَا فَعَلْتَ, مَعَ مَنْ, أَيْنَ, dan كَيْفَ كَانَ untuk pertanyaan lanjutan masa lalu.",
       grammarNotes: "# Pola Percakapan\n\nGunakan مَاذَا فَعَلْتَ, مَعَ مَنْ, أَيْنَ, dan كَيْفَ كَانَ untuk pertanyaan lanjutan masa lalu.\n\n```txt\nمَاذَا فَعَلْتَ؟\nمَعَ مَنْ ذَهَبْتَ؟\nكَيْفَ كَانَ الْمَكَانُ؟\nهَلْ أَعْجَبَكَ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15653,6 +16683,16 @@ export const lessonCatalog = [
         { phrase: "بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى الْبَيْتِ.", meaning: "Setelah itu, saya kembali ke rumah.", usage: "Gunakan saat ingin mengatakan: Setelah itu, saya kembali ke rumah." },
         { phrase: "كَانَتِ التَّجْرِبَةُ مُفِيدَةً.", meaning: "Pengalamannya bermanfaat.", usage: "Gunakan saat ingin mengatakan: Pengalamannya bermanfaat." },
       ],
+      vocabulary: [
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدِينَةٌ", meaning: "kota", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَأَيْتُ", meaning: "saya melihat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "اِشْتَرَيْتُ", meaning: "saya membeli", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَجَعْتُ", meaning: "saya kembali", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَيْتٌ", meaning: "rumah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "تَجْرِبَةٌ", meaning: "pengalaman", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan ذَهَبْتُ, رَأَيْتُ, اشْتَرَيْتُ, كَانَ, dan بَعْدَ ذَلِكَ untuk cerita pendek yang runtut.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan ذَهَبْتُ, رَأَيْتُ, اشْتَرَيْتُ, كَانَ, dan بَعْدَ ذَلِكَ untuk cerita pendek yang runtut.\n\n```txt\nفِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى ...\nرَأَيْتُ ...\nبَعْدَ ذَلِكَ، ...\nكَانَتِ التَّجْرِبَةُ ...\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15709,6 +16749,16 @@ export const lessonCatalog = [
         { phrase: "أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.", meaning: "Saya melihat bahwa tempatnya cocok.", usage: "Gunakan saat ingin mengatakan: Saya melihat bahwa tempatnya cocok." },
         { phrase: "هَذَا أَفْضَلُ لِي.", meaning: "Ini lebih baik untuk saya.", usage: "Gunakan saat ingin mengatakan: Ini lebih baik untuk saya." },
         { phrase: "مَا رَأْيُكَ؟", meaning: "Apa pendapatmu?", usage: "Gunakan saat ingin mengatakan: Apa pendapatmu?" },
+      ],
+      vocabulary: [
+        { word: "أَعْتَقِدُ", meaning: "saya pikir", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُفِيدٌ", meaning: "bermanfaat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لِمَاذَا", meaning: "mengapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan أَعْتَقِدُ أَنَّ untuk 'saya pikir bahwa', فِي رَأْيِي untuk 'menurut saya', dan هَذَا untuk merujuk hal yang sedang dibahas.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أَعْتَقِدُ أَنَّ untuk 'saya pikir bahwa', فِي رَأْيِي untuk 'menurut saya', dan هَذَا untuk merujuk hal yang sedang dibahas.\n\n```txt\nأَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.\nفِي رَأْيِي، هَذَا جَيِّدٌ.\nأَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.\nهَذَا أَفْضَلُ لِي.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15769,6 +16819,16 @@ export const lessonCatalog = [
         { phrase: "السَّبَبُ بَسِيطٌ.", meaning: "Alasannya sederhana.", usage: "Gunakan saat ingin mengatakan: Alasannya sederhana." },
         { phrase: "لِأَنَّ الْوَقْتَ مُنَاسِبٌ.", meaning: "Karena waktunya cocok.", usage: "Gunakan saat ingin mengatakan: Karena waktunya cocok." },
       ],
+      vocabulary: [
+        { word: "أُحِبُّ", meaning: "saya suka", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَهْلٌ", meaning: "mudah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَرِيبٌ", meaning: "dekat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَبَبٌ", meaning: "alasan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَسِيطٌ", meaning: "sederhana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَقْتٌ", meaning: "waktu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan لِأَنَّ untuk 'karena', dan sambungkan alasan dengan وَ atau وَلَكِنَّ ketika ada kontras sederhana.",
       grammarNotes: "# Pola Percakapan\n\nGunakan لِأَنَّ untuk 'karena', dan sambungkan alasan dengan وَ atau وَلَكِنَّ ketika ada kontras sederhana.\n\n```txt\nأُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.\nأُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.\nهُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.\nالسَّبَبُ بَسِيطٌ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15828,6 +16888,16 @@ export const lessonCatalog = [
         { phrase: "فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.", meaning: "Menurut saya, ada pilihan yang lebih baik.", usage: "Gunakan saat ingin mengatakan: Menurut saya, ada pilihan yang lebih baik." },
         { phrase: "أَفْهَمُ رَأْيَكَ.", meaning: "Saya memahami pendapatmu.", usage: "Gunakan saat ingin mengatakan: Saya memahami pendapatmu." },
       ],
+      vocabulary: [
+        { word: "أُوَافِقُ", meaning: "saya setuju", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خِيَارٌ", meaning: "pilihan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَفْهَمُ", meaning: "saya paham", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْتَقِدُ", meaning: "saya pikir", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَيْتٌ", meaning: "rumah", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لِمَاذَا", meaning: "mengapa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَحِيحٌ", meaning: "benar", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكِ kepada perempuan, dan لَا أُوَافِقُ تَمَامًا untuk kurang setuju.",
       grammarNotes: "# Pola Percakapan\n\nGunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكِ kepada perempuan, dan لَا أُوَافِقُ تَمَامًا untuk kurang setuju.\n\n```txt\nأُوَافِقُكَ.\nأُوَافِقُكِ فِي هَذَا.\nلَا أُوَافِقُ تَمَامًا.\nفِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -15884,6 +16954,16 @@ export const lessonCatalog = [
         { phrase: "أَيُّهُمَا أَفْضَلُ؟", meaning: "Mana dari keduanya yang lebih baik?", usage: "Gunakan saat ingin mengatakan: Mana dari keduanya yang lebih baik?" },
         { phrase: "هَلْ تَعْتَقِدُ أَنَّ هَذَا مُنَاسِبٌ؟", meaning: "Apakah kamu pikir ini cocok?", usage: "Gunakan saat ingin mengatakan: Apakah kamu pikir ini cocok?" },
         { phrase: "أُرِيدُ رَأْيًا وَاضِحًا.", meaning: "Saya ingin pendapat yang jelas.", usage: "Gunakan saat ingin mengatakan: Saya ingin pendapat yang jelas." },
+      ],
+      vocabulary: [
+        { word: "خِيَارٌ", meaning: "pilihan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْتَقِدُ", meaning: "saya pikir", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قَلِيلًا", meaning: "sedikit", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَسَاءٌ", meaning: "sore/malam", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan مَا رَأْيُكَ؟ untuk bertanya kepada laki-laki, مَا رَأْيُكِ؟ kepada perempuan, dan أَيُّهُمَا untuk dua pilihan.",
       grammarNotes: "# Pola Percakapan\n\nGunakan مَا رَأْيُكَ؟ untuk bertanya kepada laki-laki, مَا رَأْيُكِ؟ kepada perempuan, dan أَيُّهُمَا untuk dua pilihan.\n\n```txt\nمَا رَأْيُكَ فِي هَذَا؟\nمَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟\nأَيُّهُمَا أَفْضَلُ؟\nهَلْ تَعْتَقِدُ أَنَّ هَذَا مُنَاسِبٌ؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -15946,6 +17026,16 @@ export const lessonCatalog = [
         { phrase: "لَا أُوَافِقُ تَمَامًا.", meaning: "Saya tidak sepenuhnya setuju.", usage: "Gunakan saat ingin mengatakan: Saya tidak sepenuhnya setuju." },
         { phrase: "إِذًا نَخْتَارُ هَذَا.", meaning: "Jadi kita memilih ini.", usage: "Gunakan saat ingin mengatakan: Jadi kita memilih ini." },
       ],
+      vocabulary: [
+        { word: "خُطَّةٌ", meaning: "rencana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْتَقِدُ", meaning: "saya pikir", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُوَافِقُ", meaning: "saya setuju", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "وَقْتٌ", meaning: "waktu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنَاسِبٌ", meaning: "cocok/sesuai", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "صَعْبٌ", meaning: "sulit", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Gabungkan مَا رَأْيُكَ, أَعْتَقِدُ أَنَّ, لِأَنَّ, أُوَافِقُ, لَا أُوَافِقُ تَمَامًا, dan أُفَضِّلُ.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan مَا رَأْيُكَ, أَعْتَقِدُ أَنَّ, لِأَنَّ, أُوَافِقُ, لَا أُوَافِقُ تَمَامًا, dan أُفَضِّلُ.\n\n```txt\nمَا رَأْيُكَ فِي ...؟\nأَعْتَقِدُ أَنَّ ...\nأُفَضِّلُ ... لِأَنَّ ...\nلَا أُوَافِقُ تَمَامًا.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -16006,6 +17096,16 @@ export const lessonCatalog = [
         { phrase: "هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟", meaning: "Apakah kamu ingin belajar bersama saya?", usage: "Gunakan saat ingin mengatakan: Apakah kamu ingin belajar bersama saya?" },
         { phrase: "نَلْتَقِي السَّاعَةَ الْخَامِسَةَ.", meaning: "Kita bertemu jam lima.", usage: "Gunakan saat ingin mengatakan: Kita bertemu jam lima." },
         { phrase: "أَمَامَ الْمَرْكَزِ.", meaning: "Di depan pusat.", usage: "Gunakan saat ingin mengatakan: Di depan pusat." },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَاذَا", meaning: "apa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "فَعَلْتُ", meaning: "saya melakukan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الدَّرْسُ", meaning: "pelajaran", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "سَاعَةٌ", meaning: "jam", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمَامَ", meaning: "di depan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الْيَوْمُ", meaning: "hari ini", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Ulangi كَيْفَ كَانَ, مَاذَا فَعَلْتَ, هَلْ تُرِيدُ أَنْ, dan نَلْتَقِي السَّاعَةَ untuk menjaga percakapan sosial dan rencana.",
       grammarNotes: "# Pola Percakapan\n\nUlangi كَيْفَ كَانَ, مَاذَا فَعَلْتَ, هَلْ تُرِيدُ أَنْ, dan نَلْتَقِي السَّاعَةَ untuk menjaga percakapan sosial dan rencana.\n\n```txt\nكَيْفَ كَانَ دَرْسُكَ؟\nمَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟\nهَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\nنَلْتَقِي أَمَامَ الْمَرْكَزِ.\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -16068,6 +17168,16 @@ export const lessonCatalog = [
         { phrase: "هَلْ عِنْدَكُمْ لَوْنٌ آخَرُ؟", meaning: "Apakah kalian punya warna lain?", usage: "Gunakan saat ingin mengatakan: Apakah kalian punya warna lain?" },
         { phrase: "الْجِهَازُ لَا يَعْمَلُ.", meaning: "Perangkatnya tidak bekerja.", usage: "Gunakan saat ingin mengatakan: Perangkatnya tidak bekerja." },
       ],
+      vocabulary: [
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "تَذْكِرَةٌ", meaning: "tiket", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "بَانْدُونْغ", meaning: "Bandung", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "يُغَادِرُ", meaning: "berangkat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "قِطَارٌ", meaning: "kereta", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَصِيفٌ", meaning: "peron", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "لَوْنٌ", meaning: "warna", usage: "Kata inti dari dialog dan frasa lesson ini." },
+      ],
       grammar: "Ulangi أُرِيدُ, مَتَى يَغَادِرُ, كَيْفَ أَذْهَبُ, هَلْ عِنْدَكُمْ, dan هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي.",
       grammarNotes: "# Pola Percakapan\n\nUlangi أُرِيدُ, مَتَى يَغَادِرُ, كَيْفَ أَذْهَبُ, هَلْ عِنْدَكُمْ, dan هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي.\n\n```txt\nأُرِيدُ تَذْكِرَةً إِلَى ...\nمَتَى يَغَادِرُ الْقِطَارُ؟\nكَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟\nهَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
       patterns: [
@@ -16126,6 +17236,16 @@ export const lessonCatalog = [
         { phrase: "مُنْذُ أَمْسِ.", meaning: "Sejak kemarin.", usage: "Gunakan saat ingin mengatakan: Sejak kemarin." },
         { phrase: "ذَهَبْتُ إِلَى الْمَدِينَةِ.", meaning: "Saya pergi ke kota.", usage: "Gunakan saat ingin mengatakan: Saya pergi ke kota." },
         { phrase: "رَجَعْتُ فِي الْمَسَاءِ.", meaning: "Saya kembali pada sore hari.", usage: "Gunakan saat ingin mengatakan: Saya kembali pada sore hari." },
+      ],
+      vocabulary: [
+        { word: "رَاحَةٌ", meaning: "nyaman/istirahat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "عِنْدِي", meaning: "saya punya", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَلَمٌ", meaning: "sakit/nyeri", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خَفِيفٌ", meaning: "ringan", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مُنْذُ", meaning: "sejak", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَمْسِ", meaning: "kemarin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدِينَةٌ", meaning: "kota", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Ulangi لَا أَشْعُرُ بِالرَّاحَةِ, عِنْدِي, مُنْذُ, ذَهَبْتُ, ورَجَعْتُ untuk menggabungkan kondisi dan aktivitas masa lalu.",
       grammarNotes: "# Pola Percakapan\n\nUlangi لَا أَشْعُرُ بِالرَّاحَةِ, عِنْدِي, مُنْذُ, ذَهَبْتُ, ورَجَعْتُ untuk menggabungkan kondisi dan aktivitas masa lalu.\n\n```txt\nلَا أَشْعُرُ بِالرَّاحَةِ.\nعِنْدِي أَلَمٌ خَفِيفٌ.\nمُنْذُ أَمْسِ.\nذَهَبْتُ إِلَى ...\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -16187,6 +17307,16 @@ export const lessonCatalog = [
         { phrase: "أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.", meaning: "Saya lebih memilih pagi karena lebih tenang.", usage: "Gunakan saat ingin mengatakan: Saya lebih memilih pagi karena lebih tenang." },
         { phrase: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.", meaning: "Saya ingin mengonfirmasi janji.", usage: "Gunakan saat ingin mengatakan: Saya ingin mengonfirmasi janji." },
         { phrase: "فِي رَأْيِي، هَذَا خِيَارٌ جَيِّدٌ.", meaning: "Menurut saya, ini pilihan yang baik.", usage: "Gunakan saat ingin mengatakan: Menurut saya, ini pilihan yang baik." },
+      ],
+      vocabulary: [
+        { word: "أَسْتَطِيعُ", meaning: "saya bisa", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "ذَهَبْتُ", meaning: "saya pergi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَكَانٌ", meaning: "tempat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُفَضِّلُ", meaning: "saya lebih memilih", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "الصَّبَاحُ", meaning: "pagi", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خِيَارٌ", meaning: "pilihan", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gunakan jawaban lengkap tapi pendek: satu informasi utama ditambah satu alasan atau detail.",
       grammarNotes: "# Pola Percakapan\n\nGunakan jawaban lengkap tapi pendek: satu informasi utama ditambah satu alasan atau detail.\n\n```txt\nأَعْتَقِدُ أَنَّ ...\nذَهَبْتُ إِلَى ...\nأُفَضِّلُ ... لِأَنَّ ...\nنَلْتَقِي السَّاعَةَ ...\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",
@@ -16252,6 +17382,16 @@ export const lessonCatalog = [
         { phrase: "كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟", meaning: "Bagaimana saya pergi ke pusat?", usage: "Gunakan saat ingin mengatakan: Bagaimana saya pergi ke pusat?" },
         { phrase: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.", meaning: "Saya ingin mengonfirmasi janji.", usage: "Gunakan saat ingin mengatakan: Saya ingin mengonfirmasi janji." },
         { phrase: "أَعْتَقِدُ أَنَّ الْخُطَّةَ جَيِّدَةٌ.", meaning: "Saya pikir rencananya baik.", usage: "Gunakan saat ingin mengatakan: Saya pikir rencananya baik." },
+      ],
+      vocabulary: [
+        { word: "كَيْفَ", meaning: "bagaimana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَرْكَزٌ", meaning: "pusat", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أُرِيدُ", meaning: "saya ingin", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَوْعِدٌ", meaning: "janji temu", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "أَعْتَقِدُ", meaning: "saya pikir", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "خُطَّةٌ", meaning: "rencana", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "مَدِينَةٌ", meaning: "kota", usage: "Kata inti dari dialog dan frasa lesson ini." },
+        { word: "رَأَيْتُ", meaning: "saya melihat", usage: "Kata inti dari dialog dan frasa lesson ini." },
       ],
       grammar: "Gabungkan pertanyaan lanjutan, rencana, arah, layanan, appointment, past experience, dan opini dalam satu dialog yang runtut.",
       grammarNotes: "# Pola Percakapan\n\nGabungkan pertanyaan lanjutan, rencana, arah, layanan, appointment, past experience, dan opini dalam satu dialog yang runtut.\n\n```txt\nكَيْفَ كَانَتْ تَجْرِبَتُكَ؟\nهَلْ تُرِيدُ أَنْ ...؟\nكَيْفَ أَذْهَبُ إِلَى ...؟\nأَعْتَقِدُ أَنَّ ...\n```\n\nDi A2, cukup tambahkan satu alasan, satu reaksi, atau satu detail. Jangan membuat jawaban terlalu panjang sebelum pola inti terasa stabil.",

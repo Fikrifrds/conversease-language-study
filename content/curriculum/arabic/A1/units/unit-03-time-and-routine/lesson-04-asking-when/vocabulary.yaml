@@ -1,0 +1,16 @@
+vocabulary:
+- word: الدَّرْسُ
+  meaning_id: pelajaran
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: الصَّبَاحُ
+  meaning_id: pagi
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: الظُّهْرُ
+  meaning_id: siang
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: مَاذَا
+  meaning_id: apa
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: الْكَلِمَاتُ
+  meaning_id: kata-kata
+  usage_note: Kata inti dari dialog dan frasa lesson ini.

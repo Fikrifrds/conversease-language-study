@@ -13,6 +13,8 @@ from typing import Any
 
 import yaml
 
+from generate_arabic_vocabulary import vocabulary_for_lesson
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 A1_ROOT = REPO_ROOT / "content" / "curriculum" / "arabic" / "A1"
@@ -25,6 +27,7 @@ REQUIRED_SECTIONS = [
     "listening",
     "comprehension_check",
     "useful_phrases",
+    "vocabulary",
     "grammar_for_conversation",
     "speak_clearly",
     "response_practice",
@@ -1483,6 +1486,13 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
                 }
                 for entry in item["phrases"]
             ]
+        },
+    )
+
+    write_yaml(
+        lesson_dir / "vocabulary.yaml",
+        {
+            "vocabulary": vocabulary_for_lesson(item["phrases"], item["dialogue"]),
         },
     )
 

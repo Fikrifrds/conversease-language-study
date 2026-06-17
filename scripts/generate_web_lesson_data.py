@@ -110,6 +110,22 @@ def parse_translations(path: Path) -> list[str]:
     return out
 
 
+def parse_vocabulary(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+
+    vocabulary_yaml = read_yaml(path)
+    return [
+        {
+            "word": str(item.get("word") or ""),
+            "meaning": str(item.get("meaning_id") or item.get("meaning") or ""),
+            "usage": str(item.get("usage_note") or item.get("usage") or ""),
+        }
+        for item in vocabulary_yaml.get("vocabulary", [])
+        if item.get("word")
+    ]
+
+
 def extract_situation(lesson_md: Path) -> str:
     text = lesson_md.read_text(encoding="utf-8")
     # Header is "## Situation" or "## Situation Setup".
@@ -176,6 +192,7 @@ def build_lesson(course: dict[str, Any], unit_title: str, lesson: dict[str, Any]
         }
         for p in phrases_yaml.get("phrases", [])
     ]
+    vocabulary = parse_vocabulary(lesson_dir / "vocabulary.yaml")
 
     # Two authoring formats exist across the curriculum; accept both.
     prompts_yaml = read_yaml(lesson_dir / "response_prompts.yaml")
@@ -216,6 +233,7 @@ def build_lesson(course: dict[str, Any], unit_title: str, lesson: dict[str, Any]
         "dialogue": dialogue,
         "translation": translation,
         "phrases": phrases,
+        "vocabulary": vocabulary,
         "grammar": grammar,
         "grammarNotes": grammar_notes,
         "patterns": patterns,
@@ -349,6 +367,13 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
             lines.append(
                 f"        {{ phrase: {js_string(p['phrase'])}, meaning: {js_string(p['meaning'])}, "
                 f"usage: {js_string(p['usage'])} }},"
+            )
+        lines.append("      ],")
+        lines.append("      vocabulary: [")
+        for v in lesson["vocabulary"]:
+            lines.append(
+                f"        {{ word: {js_string(v['word'])}, meaning: {js_string(v['meaning'])}, "
+                f"usage: {js_string(v['usage'])} }},"
             )
         lines.append("      ],")
         lines.append(f"      grammar: {js_string(lesson['grammar'])},")
