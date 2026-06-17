@@ -1,5 +1,8 @@
+"use client";
+
 import type { ReactNode } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { BookOpen, Home, MessageCircle, Mic, TrendingUp } from "lucide-react";
 import { productRoutes } from "@conversease/shared";
 import { AuthGuard } from "@/components/auth-guard";
@@ -23,22 +26,39 @@ type AppShellProps = {
 };
 
 export function AppShell({ children, requireAuth = false }: AppShellProps) {
+  const pathname = usePathname();
+
+  function isActive(href: string) {
+    if (href === productRoutes.dashboard) {
+      return pathname === href;
+    }
+    return pathname.startsWith(href);
+  }
+
   const shell = (
     <div className="min-h-screen bg-paper text-ink">
       <header className="sticky top-0 z-30 border-b border-ink/10 bg-paper/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
           <BrandMark href={productRoutes.home} size="sm" />
           <nav className="hidden items-center gap-1 md:flex" aria-label="Navigasi utama">
-            {navItems.map((item) => (
+            {navItems.map((item) => {
+              const active = isActive(item.href);
+              return (
               <Link
                 key={item.href}
                 href={item.href}
-                className="focus-ring inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium text-ink/75 hover:bg-mint hover:text-ink"
+                aria-current={active ? "page" : undefined}
+                className={`focus-ring inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-medium transition ${
+                  active
+                    ? "bg-mint text-ink"
+                    : "text-ink/75 hover:bg-mint hover:text-ink"
+                }`}
               >
                 <item.icon className="h-4 w-4" aria-hidden="true" />
                 {item.label}
               </Link>
-            ))}
+              );
+            })}
           </nav>
           <div className="flex items-center gap-2">
             <UserAccountMenu />
@@ -52,16 +72,22 @@ export function AppShell({ children, requireAuth = false }: AppShellProps) {
         aria-label="Navigasi mobile"
       >
         <div className="grid grid-cols-5">
-          {navItems.map((item) => (
+          {navItems.map((item) => {
+            const active = isActive(item.href);
+            return (
             <Link
               key={item.href}
               href={item.href}
-              className="focus-ring flex min-h-16 flex-col items-center justify-center gap-1 px-1 text-[10px] font-medium text-ink/70"
+              aria-current={active ? "page" : undefined}
+              className={`focus-ring flex min-h-16 flex-col items-center justify-center gap-1 px-1 text-[10px] font-medium ${
+                active ? "bg-mint text-ink" : "text-ink/70"
+              }`}
             >
               <item.icon className="h-4 w-4" aria-hidden="true" />
               <span className="max-w-full truncate px-1">{item.shortLabel}</span>
             </Link>
-          ))}
+            );
+          })}
         </div>
       </nav>
     </div>

@@ -42,7 +42,7 @@ export default function AdminPaymentsPage() {
               </nav>
             </div>
           </header>
-          <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+          <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
             <Suspense fallback={<div className="rounded-lg bg-white p-5 shadow-sm">Loading admin payments...</div>}>
               <AdminPaymentManager adminUser={adminUser} />
             </Suspense>

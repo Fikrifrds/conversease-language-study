@@ -4,7 +4,7 @@ import { AppShell } from "@/components/app-shell";
 export default function SettingsPage() {
   return (
     <AppShell requireAuth>
-      <section className="mx-auto max-w-4xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-4xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
         <p className="text-sm font-semibold uppercase text-leaf">Pengaturan</p>
         <h1 className="mt-2 text-3xl font-semibold">Preferensi akun</h1>
         <div className="mt-8 space-y-5">

@@ -47,7 +47,7 @@ export default function AdminCmsPage() {
               </nav>
             </div>
           </header>
-          <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+          <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
             <AdminCmsManager adminUser={adminUser} />
           </section>
         </main>

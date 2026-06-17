@@ -8,7 +8,7 @@ import { PracticeProgressSummary } from "@/components/practice-progress-summary"
 export default function ProgressPage() {
   return (
     <AppShell requireAuth>
-      <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <p className="text-sm font-semibold uppercase text-leaf">Progress</p>
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Kesiapan level test</h1>

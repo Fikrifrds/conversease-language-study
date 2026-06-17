@@ -21,7 +21,7 @@ export default function HomePage() {
           sizes="100vw"
         />
         <div className="hero-mask absolute inset-0" />
-        <header className="relative z-10 mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+        <header className="relative z-10 mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-4 sm:px-6 lg:px-8">
           <BrandMark tone="light" />
           <nav className="hidden items-center gap-2 text-sm font-medium text-white/90 md:flex">
             <Link className="rounded-lg px-3 py-2 hover:bg-white/10" href="/courses">
@@ -36,6 +36,22 @@ export default function HomePage() {
           </nav>
           <LandingAuthAction />
         </header>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 md:hidden lg:px-8">
+          <nav className="flex gap-2 overflow-x-auto pb-2" aria-label="Navigasi landing mobile">
+            <Link className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white" href="/courses">
+              Kurikulum
+            </Link>
+            <Link
+              className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white"
+              href="/conversation-coach"
+            >
+              Conversation Coach
+            </Link>
+            <Link className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white" href="/pricing">
+              Harga
+            </Link>
+          </nav>
+        </div>
         <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
           <div className="max-w-2xl text-white">
             <p className="text-sm font-semibold uppercase text-sun">Bahasa jadi bisa dipakai</p>
