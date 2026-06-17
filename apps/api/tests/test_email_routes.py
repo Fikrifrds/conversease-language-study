@@ -44,7 +44,7 @@ class EmailRoutesTest(unittest.TestCase):
         self.assertEqual(data["template_key"], "auth_verify_email")
         self.assertEqual(data["unresolved_variables"], [])
         self.assertIn("QA Admin", data["html_body"])
-        self.assertIn("logo.png", data["html_body"])
+        self.assertIn("https://conversease.com/logo.svg", data["html_body"])
         self.assertIn("Verifikasi email Conversease kamu", data["html_body"])
         self.assertIn("verify-email?token=test-token", data["cta_url"])
 
@@ -133,7 +133,7 @@ class AuthEmailServiceTest(unittest.IsolatedAsyncioTestCase):
         await service.send_password_reset_email(user, "reset-token-test")
 
         call_kwargs = delivery.await_args.kwargs
-        self.assertIn("logo.png", call_kwargs["html_body"])
+        self.assertIn("https://conversease.com/logo.svg", call_kwargs["html_body"])
         self.assertIn("Reset password Conversease", call_kwargs["html_body"])
         self.assertIn("reset-password?token=reset-token-test", call_kwargs["html_body"])
         self.assertIn("Jika kamu tidak meminta reset password", call_kwargs["text_body"])
