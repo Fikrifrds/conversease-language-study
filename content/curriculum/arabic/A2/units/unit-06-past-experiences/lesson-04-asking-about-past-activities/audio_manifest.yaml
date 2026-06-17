@@ -1,6 +1,24 @@
 lesson_key: lesson-04-asking-about-past-activities
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-3nav5pHC1EYvWOd5LmnA-20260617T173130Z.wav
+  duration_seconds: 19.3
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 8
+  script_content_hash: 4fd6827678543ed5f054e314de6b26fe40deb9f5c840d51e7acf4fe0eb5c0039
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-3nav5pHC1EYvWOd5LmnA-20260617T173130Z.wav
+  trace_id: zFyJDIKF4fCj9dZzkgXo,RABQNrHDwTsdNeI7k4uD,Uiw90ddLNfwhqftMpxzF,guNeo2M5IcRmTmVV4XVw,h3m4vL7UKdr7I8tVQGvB,cdsPo7sLIn5uPJNzMOZd,qofUyIyw5W2TEAaJCIvo,WI6URRdovpNjhBz3rEqJ
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:31:30.975997+00:00'

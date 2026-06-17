@@ -1,6 +1,24 @@
 lesson_key: lesson-03-review-health-and-past
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-03-review-health-and-past/listening-3nav5pHC1EYvWOd5LmnA-20260617T173329Z.wav
+  duration_seconds: 25.32
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Sara: kdUY91gH5xyDHapxlthT
+  line_count: 7
+  script_content_hash: 92a8ce2908ff36179088e23640bb10e61ef670e8814c4bbbdc2f7babca8c6e10
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-03-review-health-and-past/listening-3nav5pHC1EYvWOd5LmnA-20260617T173329Z.wav
+  trace_id: eQ3decdgqvE6OldEI8h5,6TSRDsjFkg2uTdwKi3Qd,vPDY3G8YwBiLJxpKJnD8,uRDyBboH5EGlOaBzqgtp,pDjFeoDhXm5HV5vOvDdw,O6DDJPm4yI3yjC3vIyBU,GTEPytxv5RDUFFx8FCcc
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:33:29.754907+00:00'

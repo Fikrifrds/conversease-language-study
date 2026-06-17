@@ -1,6 +1,24 @@
 lesson_key: lesson-04-asking-for-opinions
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-07-opinions-reasons/lesson-04-asking-for-opinions/listening-3nav5pHC1EYvWOd5LmnA-20260617T173234Z.wav
+  duration_seconds: 23.74
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Dimas: 3nav5pHC1EYvWOd5LmnA
+  line_count: 6
+  script_content_hash: 0a91ec6569a45bb30c813a14ca6ca89e4b48cb96b03a5c11a2ed1829c84bf410
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-07-opinions-reasons/lesson-04-asking-for-opinions/listening-3nav5pHC1EYvWOd5LmnA-20260617T173234Z.wav
+  trace_id: hYTyEQdLVbZseRaQ1HpH,ggIZpYFY5630KxNHWq0M,irEBEMDPEUbdWnGp0GbZ,Z7GXkZ7yFGJ9GblFaqKz,oshau6Jqam7XoDHNIu3R,Dqq13kr5HkTJIIcP1wux
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:32:34.798116+00:00'

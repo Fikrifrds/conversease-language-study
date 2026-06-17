@@ -1,6 +1,24 @@
 lesson_key: lesson-02-asking-about-size-and-color
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-04-shopping-services/lesson-02-asking-about-size-and-color/listening-3nav5pHC1EYvWOd5LmnA-20260617T172858Z.wav
+  duration_seconds: 23.48
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Huda: kdUY91gH5xyDHapxlthT
+    Sami: kr4VZw8MSZMHE0y2m40n
+  line_count: 7
+  script_content_hash: 6c3d6ad7e8ed58b8c10a3751939f14d0c2595b52ad4f4f3507bc00395455ff8d
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-04-shopping-services/lesson-02-asking-about-size-and-color/listening-3nav5pHC1EYvWOd5LmnA-20260617T172858Z.wav
+  trace_id: tbHhvZW3Zhql2HbmjCwd,QKZRnzSHIXp4ZkGhEBtb,RYayZ2p0CkMYhX3v75RK,NKmMpgjOn3EdWcWsly6A,amAm2d7s5qUp8oq8lH6h,dIDkIsk9m1EsLjDVzG5p,kcJ3ctNYIxr9Z7MJ6nDy
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:28:58.387918+00:00'

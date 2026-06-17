@@ -1,6 +1,24 @@
 lesson_key: lesson-02-saying-where-you-went
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-3nav5pHC1EYvWOd5LmnA-20260617T173104Z.wav
+  duration_seconds: 19.62
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Noura: kdUY91gH5xyDHapxlthT
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 8
+  script_content_hash: eccdeb16d1ec714070eb8fe0c9ab03964b74f0897efa795cfec53a030befde03
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-3nav5pHC1EYvWOd5LmnA-20260617T173104Z.wav
+  trace_id: vkGFedDJm7IQlJJKcFqQ,WWxOMklsQuPjAe0za9WF,DnfDlGRqiHXXytBIpgdi,GI8UxCadae8haYYiNwpP,GGhanABdNEvolscI2PDu,D3ApP6jMhdjl8q0ij15u,aBrL2Gp32hXhQtptdPGl,4mR6SZGEnFvD66m9DHP1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:31:04.753470+00:00'
