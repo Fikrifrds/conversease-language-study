@@ -1,5 +1,5 @@
 lesson_key: lesson-01-saying-you-do-not-understand
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T044235Z.wav
-  duration_seconds: 11.74
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T052431Z.wav
+  duration_seconds: 11.66
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -18,7 +18,7 @@ assets:
   line_count: 6
   script_content_hash: 1410e29cec4089b59398a86effcf8053534da3f66bb79f487dd996754a1c615d
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T044235Z.wav
-  trace_id: OmuecWizNYVHkaQ8G2SU,iGUQQkxAgqchwT5X6M1i,k3YuifxpJ8DhSJo0hPKg,qSF94OlBsotAEgkSOFFG,iKklZQutkzE1Ykn5efTZ,qATAMRfAkfAwKtSnqJCq
+  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T052431Z.wav
+  trace_id: nbYf6VMTTTC6UsbhrpWu,xoW78pYnMiB4O3XD9zzf,doacmE5xh7XildK1b7YB,MsgNuhiNtsQgwCPBuNpW,dent9UBPimnZQ3c0gCIt,VOTcgj0xjjxNEmWa07OB
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:42:35.579261+00:00'
+  generated_at: '2026-06-17T05:24:31.321419+00:00'

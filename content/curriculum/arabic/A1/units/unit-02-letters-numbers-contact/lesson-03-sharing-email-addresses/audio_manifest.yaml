@@ -1,5 +1,5 @@
 lesson_key: lesson-03-sharing-email-addresses
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T043836Z.wav
-  duration_seconds: 14.0
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T052408Z.wav
+  duration_seconds: 15.6
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -18,7 +18,7 @@ assets:
   line_count: 5
   script_content_hash: 5967247a261b6811ec43ac41902d10813c04fed9dd333733e99287826fcb7595
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T043836Z.wav
-  trace_id: Bq1qwcm47Tif9YKzoaaQ,dTyN1B5Q9BMCkIroHjfO,kOnJHd0U4K39FnUOEZAu,j1eEXLqg8B3duBgq8Ky1,9jrvPpL7JZHSCa29a6O5
+  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T052408Z.wav
+  trace_id: MaLN9HoYT7LJ6qfLzpWP,ZUKG6P0VSWH1z3Ag7FNU,HK8pSVT8d53eLfceAanF,CXzXW7OQu04RyfgxDraK,JuMcUMCLcJ0rnzNQYp90
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:38:36.595614+00:00'
+  generated_at: '2026-06-17T05:24:08.553233+00:00'

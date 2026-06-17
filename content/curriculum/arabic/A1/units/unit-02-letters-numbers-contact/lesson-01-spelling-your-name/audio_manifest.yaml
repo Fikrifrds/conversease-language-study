@@ -1,5 +1,5 @@
 lesson_key: lesson-01-spelling-your-name
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/listening-3nav5pHC1EYvWOd5LmnA-20260617T043815Z.wav
-  duration_seconds: 10.64
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/listening-3nav5pHC1EYvWOd5LmnA-20260617T052356Z.wav
+  duration_seconds: 12.72
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -18,7 +18,7 @@ assets:
   line_count: 5
   script_content_hash: 185b9fdfd24ba47a0d6fd0e30e85e570c1a7f131c2dbf249febe7dbe49cd58a0
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/listening-3nav5pHC1EYvWOd5LmnA-20260617T043815Z.wav
-  trace_id: 8Md6PoStGMwQEDKcPOmr,nU8AojakovW79vawvfGW,2riWGMbcshUIegnVTu2k,Kq3wTUHCjbdnKCEoznDo,3TcLKGg9DYSoKI0flPJy
+  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/listening-3nav5pHC1EYvWOd5LmnA-20260617T052356Z.wav
+  trace_id: uRLBYTnk1sQaAh97E5W1,xLJtvNECZtlILK0DkVMP,UDPd68Ig18vmsApR6epe,5Zo3Oq0WDDiumL0X4fkG,Kn3dQRIqCH1AueUzQfkF
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:38:15.875689+00:00'
+  generated_at: '2026-06-17T05:23:56.922559+00:00'
