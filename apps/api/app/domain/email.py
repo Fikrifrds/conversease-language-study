@@ -82,7 +82,7 @@ def branded_email_html(
     cta_url: Optional[str] = None,
     footer_note: Optional[str] = None,
 ) -> str:
-    logo_url = public_asset_url(public_app_url, "/logo.png")
+    logo_url = "https://conversease.com/logo.svg"
     home_url = public_app_url.rstrip("/")
     safe_preheader = escape(preheader)
     safe_title = escape(title)

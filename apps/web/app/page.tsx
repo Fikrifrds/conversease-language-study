@@ -58,7 +58,7 @@ export default function HomePage() {
             </Link>
           </nav>
         </div>
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-16 pt-10 sm:px-6 sm:gap-10 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
+        <div className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-16 pt-10 sm:px-6 sm:gap-10 sm:pt-16 lg:grid-cols-[1.02fr_0.98fr] lg:items-center lg:px-8 lg:pt-24">
           <div className="max-w-2xl rounded-2xl border border-white/10 bg-gradient-to-br from-ink/30 via-clay/18 to-transparent p-4 text-white shadow-soft backdrop-blur-[2px] sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none sm:backdrop-blur-0">
             <p className="text-sm font-semibold uppercase text-sun">Bahasa jadi bisa dipakai</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
@@ -79,12 +79,14 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="self-end lg:pl-8">
-            <div className="max-w-md rounded-2xl border border-white/20 bg-paper/92 p-4 shadow-soft backdrop-blur-md sm:rounded-lg sm:bg-white/90 sm:backdrop-blur">
+          <div className="self-end lg:pl-4 xl:pl-8">
+            <div className="max-w-xl rounded-2xl border border-white/20 bg-paper/92 p-4 shadow-soft backdrop-blur-md sm:rounded-lg sm:bg-white/90 sm:backdrop-blur lg:p-5">
               <div className="flex items-start justify-between gap-4">
-                <div>
+                <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold uppercase text-leaf">Misi Hari Ini</p>
-                  <h2 className="mt-1 text-xl font-semibold">{mission.title}</h2>
+                  <h2 className="mt-1 break-words text-2xl font-semibold lg:text-[2rem] lg:leading-tight">
+                    {mission.title}
+                  </h2>
                 </div>
                 <span className="rounded-lg bg-sun px-3 py-1 text-xs font-bold text-ink">
                   {mission.level}
