@@ -1,7 +1,7 @@
 # Transcript Translation
 
 - **Khalid:** مَرْحَبًا. -> Halo.
-- **Layla:** مَرْحَبًا، مَاذَا تُرِيدُ؟ -> Halo, apa yang kamu inginkan?
+- **Cafe Staff:** مَرْحَبًا، مَاذَا تُرِيدُ؟ -> Halo, apa yang kamu inginkan?
 - **Khalid:** أُرِيدُ مَاءً مِنْ فَضْلِكَ. -> Saya ingin air, tolong.
-- **Layla:** تَفَضَّلْ. -> Silakan.
+- **Cafe Staff:** تَفَضَّلْ. -> Silakan.
 - **Khalid:** شُكْرًا. -> Terima kasih.

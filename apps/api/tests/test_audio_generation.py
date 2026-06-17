@@ -53,6 +53,23 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertEqual([turn.text for turn in turns], ["Hi, good morning.", "Good morning. How are you?"])
             self.assertEqual(listening_script_to_tts_text(path), "Hi, good morning.\nGood morning. How are you?")
 
+    def test_dialogue_parser_extracts_trailing_scene_pause(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "listening_script.md"
+            path.write_text(
+                "# Dialogue Script\n\n"
+                "**Khalid:** شكرًا. سأذهب إلى المقهى. <#0.9#>\n"
+                "**Cafe Staff:** مرحبًا، ماذا تريد؟\n",
+                encoding="utf-8",
+            )
+
+            turns = listening_script_to_dialogue_turns(path)
+
+            self.assertEqual([turn.speaker for turn in turns], ["Khalid", "Cafe Staff"])
+            self.assertEqual(turns[0].text, "شكرًا. سأذهب إلى المقهى.")
+            self.assertEqual(turns[0].pause_after_seconds, 0.9)
+            self.assertEqual(turns[1].pause_after_seconds, 0.0)
+
     def test_dialogue_voice_assignment_uses_distinct_gendered_voices(self):
         turns = [
             _turn("Alya", "Hi."),
@@ -192,6 +209,23 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Khalid"], "Arabic_FriendlyGuy")
         self.assertEqual(voices["Noura"], "Arabic_CalmWoman")
 
+    def test_arabic_dialogue_voice_assignment_keeps_staff_roles_arabic(self):
+        turns = [
+            _turn("Khalid", "أين المقهى؟"),
+            _turn("Cafe Staff", "ماذا تريد؟"),
+            _turn("Shopkeeper", "السعر خمسة ريالات."),
+        ]
+
+        voices = assign_dialogue_voices(
+            turns,
+            fallback_voice_id="Arabic_FriendlyGuy",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Khalid"], "Arabic_FriendlyGuy")
+        self.assertEqual(voices["Cafe Staff"], "Arabic_CalmWoman")
+        self.assertEqual(voices["Shopkeeper"], "Arabic_FriendlyGuy")
+
     def test_arabic_defaults_to_elevenlabs_provider(self):
         self.assertEqual(default_tts_provider_for_language("arabic"), TTS_PROVIDER_ELEVENLABS)
         self.assertEqual(default_tts_provider_for_language("english"), TTS_PROVIDER_MINIMAX)
@@ -256,6 +290,25 @@ class AudioGenerationTest(unittest.TestCase):
 
         self.assertIn(voices["Female"], ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES)
         self.assertIn(voices["Male"], ELEVENLABS_ARABIC_MALE_DIALOGUE_VOICES)
+
+    def test_elevenlabs_arabic_staff_roles_use_role_specific_voices(self):
+        turns = [
+            _turn("Khalid", "أين المقهى؟"),
+            _turn("Layla", "المقهى بجانب المكتبة."),
+            _turn("Cafe Staff", "ماذا تريد؟"),
+            _turn("Shopkeeper", "السعر خمسة ريالات."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Khalid"], "t9akNmCDhz230CEXOYmn")
+        self.assertEqual(voices["Layla"], "kdUY91gH5xyDHapxlthT")
+        self.assertEqual(voices["Cafe Staff"], "gVzwmdZzRgBrNjXaTmi5")
+        self.assertEqual(voices["Shopkeeper"], "3GnbqfjaW8xI6hRTVx4Y")
 
     def test_elevenlabs_arabic_uses_only_curated_gendered_voices(self):
         turns = [
@@ -336,6 +389,20 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertEqual(reader.getframerate(), 32000)
             self.assertEqual(reader.getnframes(), 3840)
         self.assertAlmostEqual(duration, 0.12, places=2)
+
+    def test_concatenate_wav_audio_uses_scene_pause_override(self):
+        first = wav_chunk(frame_count=320)
+        second = wav_chunk(frame_count=320)
+
+        audio_bytes, duration = concatenate_wav_audio(
+            [first, second],
+            pause_seconds=0.1,
+            pause_after_seconds=[0.9, 0],
+        )
+
+        with wave.open(io.BytesIO(audio_bytes), "rb") as reader:
+            self.assertEqual(reader.getnframes(), 29440)
+        self.assertAlmostEqual(duration, 0.92, places=2)
 
     def test_concatenate_wav_audio_normalizes_chunk_volume(self):
         quiet = wav_chunk(frame_count=320, amplitude=1000)

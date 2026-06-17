@@ -13038,9 +13038,9 @@ export const lessonCatalog = [
       setup: "Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
       dialogue: [
         { speaker: "Khalid", text: "مَرْحَبًا." },
-        { speaker: "Layla", text: "مَرْحَبًا، مَاذَا تُرِيدُ؟" },
+        { speaker: "Cafe Staff", text: "مَرْحَبًا، مَاذَا تُرِيدُ؟" },
         { speaker: "Khalid", text: "أُرِيدُ مَاءً مِنْ فَضْلِكَ." },
-        { speaker: "Layla", text: "تَفَضَّلْ." },
+        { speaker: "Cafe Staff", text: "تَفَضَّلْ." },
         { speaker: "Khalid", text: "شُكْرًا." },
       ],
       translation: [
@@ -13093,9 +13093,9 @@ export const lessonCatalog = [
       setup: "Kamu melihat barang sederhana dan perlu menanyakan harganya.",
       dialogue: [
         { speaker: "Maryam", text: "كَمْ سِعْرُ الْقَلَمِ؟" },
-        { speaker: "Zayd", text: "سِعْرُهُ خَمْسَةُ رِيَالَاتٍ." },
+        { speaker: "Shopkeeper", text: "سِعْرُهُ خَمْسَةُ رِيَالَاتٍ." },
         { speaker: "Maryam", text: "السِّعْرُ مُنَاسِبٌ." },
-        { speaker: "Zayd", text: "هَلْ تَأْخُذِينَ وَاحِدًا؟" },
+        { speaker: "Shopkeeper", text: "هَلْ تَأْخُذِينَ وَاحِدًا؟" },
         { speaker: "Maryam", text: "نَعَمْ، آخُذُ وَاحِدًا." },
       ],
       translation: [
@@ -13149,9 +13149,9 @@ export const lessonCatalog = [
       setup: "Kamu membeli alat tulis sederhana untuk kelas.",
       dialogue: [
         { speaker: "Ahmad", text: "هَلْ عِنْدَكُمْ قَلَمٌ؟" },
-        { speaker: "Noura", text: "نَعَمْ، مَوْجُودٌ." },
+        { speaker: "Shopkeeper", text: "نَعَمْ، مَوْجُودٌ." },
         { speaker: "Ahmad", text: "أُرِيدُ هَذَا." },
-        { speaker: "Noura", text: "كَمْ قَلَمًا تُرِيدُ؟" },
+        { speaker: "Shopkeeper", text: "كَمْ قَلَمًا تُرِيدُ؟" },
         { speaker: "Ahmad", text: "آخُذُ وَاحِدًا." },
       ],
       translation: [
@@ -13203,11 +13203,11 @@ export const lessonCatalog = [
       conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا تُرِيدُ؟\n- أُرِيدُ كِتَابًا\n- لَا أُرِيدُ قَهْوَةً\n- أَحْتَاجُ قَلَمًا\n- فَقَطْ",
       setup: "Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.",
       dialogue: [
-        { speaker: "Layla", text: "مَاذَا تُرِيدُ؟" },
+        { speaker: "Shopkeeper", text: "مَاذَا تُرِيدُ؟" },
         { speaker: "Khalid", text: "أُرِيدُ كِتَابًا." },
-        { speaker: "Layla", text: "هَلْ تُرِيدُ قَهْوَةً أَيْضًا؟" },
+        { speaker: "Shopkeeper", text: "هَلْ تُرِيدُ قَهْوَةً أَيْضًا؟" },
         { speaker: "Khalid", text: "لَا أُرِيدُ قَهْوَةً." },
-        { speaker: "Layla", text: "هَلْ تَحْتَاجُ شَيْئًا آخَرَ؟" },
+        { speaker: "Shopkeeper", text: "هَلْ تَحْتَاجُ شَيْئًا آخَرَ؟" },
         { speaker: "Khalid", text: "أَحْتَاجُ قَلَمًا فَقَطْ." },
       ],
       translation: [
@@ -13260,11 +13260,11 @@ export const lessonCatalog = [
       conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ مَاءً\n- كَمِ السِّعْرُ؟\n- السِّعْرُ مُنَاسِبٌ\n- آخُذُ وَاحِدًا\n- الْحِسَابُ مِنْ فَضْلِكَ",
       setup: "Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.",
       dialogue: [
-        { speaker: "Muallimah", text: "مَاذَا تُرِيدُ؟" },
+        { speaker: "Cafe Staff", text: "مَاذَا تُرِيدُ؟" },
         { speaker: "Zayd", text: "أُرِيدُ مَاءً مِنْ فَضْلِكَ." },
-        { speaker: "Muallimah", text: "تَفَضَّلْ." },
+        { speaker: "Cafe Staff", text: "تَفَضَّلْ." },
         { speaker: "Zayd", text: "كَمِ السِّعْرُ؟" },
-        { speaker: "Muallimah", text: "السِّعْرُ رِيَالَانِ." },
+        { speaker: "Cafe Staff", text: "السِّعْرُ رِيَالَانِ." },
         { speaker: "Zayd", text: "آخُذُ وَاحِدًا، شُكْرًا." },
       ],
       translation: [
@@ -13718,19 +13718,19 @@ export const lessonCatalog = [
         { speaker: "Layla", text: "الْمَقْهَى بِجَانِبِ الْمَكْتَبَةِ." },
         { speaker: "Khalid", text: "كَيْفَ أَذْهَبُ إِلَيْهِ؟" },
         { speaker: "Layla", text: "اِذْهَبْ إِلَى الْأَمَامِ ثُمَّ اِنْعَطِفْ يَسَارًا." },
-        { speaker: "Khalid", text: "شُكْرًا. أُرِيدُ مَاءً فِي الْمَقْهَى." },
-        { speaker: "Layla", text: "نَعَمْ، تَفَضَّلْْ." },
-        { speaker: "Khalid", text: "كَمِ السِّعْرُ؟" },
-        { speaker: "Layla", text: "سِعْرُ الْمَاءِ رِيَالَانِ." },
+        { speaker: "Khalid", text: "شُكْرًا. سَأَذْهَبُ إِلَى الْمَقْهَى." },
+        { speaker: "Cafe Staff", text: "مَرْحَبًا، مَاذَا تُرِيدُ؟" },
+        { speaker: "Khalid", text: "أُرِيدُ مَاءً. كَمِ السِّعْرُ؟" },
+        { speaker: "Cafe Staff", text: "سِعْرُ الْمَاءِ رِيَالَانِ." },
       ],
       translation: [
         "Di mana kafenya?",
         "Kafe itu di samping perpustakaan.",
         "Bagaimana saya pergi ke sana?",
         "Pergilah lurus ke depan lalu belok kiri.",
-        "Terima kasih. Saya ingin air di kafe.",
-        "Ya, silakan.",
-        "Berapa harganya?",
+        "Terima kasih. Saya akan pergi ke kafe.",
+        "Halo, apa yang kamu inginkan?",
+        "Saya ingin air. Berapa harganya?",
         "Harga airnya dua riyal.",
       ],
       phrases: [

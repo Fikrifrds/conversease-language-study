@@ -4,7 +4,7 @@
 - **Layla:** الْمَقْهَى بِجَانِبِ الْمَكْتَبَةِ. -> Kafe itu di samping perpustakaan.
 - **Khalid:** كَيْفَ أَذْهَبُ إِلَيْهِ؟ -> Bagaimana saya pergi ke sana?
 - **Layla:** اِذْهَبْ إِلَى الْأَمَامِ ثُمَّ اِنْعَطِفْ يَسَارًا. -> Pergilah lurus ke depan lalu belok kiri.
-- **Khalid:** شُكْرًا. أُرِيدُ مَاءً فِي الْمَقْهَى. -> Terima kasih. Saya ingin air di kafe.
-- **Layla:** نَعَمْ، تَفَضَّلْْ. -> Ya, silakan.
-- **Khalid:** كَمِ السِّعْرُ؟ -> Berapa harganya?
-- **Layla:** سِعْرُ الْمَاءِ رِيَالَانِ. -> Harga airnya dua riyal.
+- **Khalid:** شُكْرًا. سَأَذْهَبُ إِلَى الْمَقْهَى. -> Terima kasih. Saya akan pergi ke kafe.
+- **Cafe Staff:** مَرْحَبًا، مَاذَا تُرِيدُ؟ -> Halo, apa yang kamu inginkan?
+- **Khalid:** أُرِيدُ مَاءً. كَمِ السِّعْرُ؟ -> Saya ingin air. Berapa harganya?
+- **Cafe Staff:** سِعْرُ الْمَاءِ رِيَالَانِ. -> Harga airnya dua riyal.

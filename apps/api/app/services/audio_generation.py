@@ -154,6 +154,9 @@ ARABIC_DEFAULT_SPEED = 0.9
 ARABIC_VOICE_PREVIEW_SAMPLE_TEXT = "مرحبًا. اسمي أحمد. أنا أتعلم العربية الفصحى بوضوح وهدوء."
 ELEVENLABS_DIALOGUE_SAMPLE_RATE = 24000
 ELEVENLABS_DIALOGUE_PAUSE_SECONDS = 0.38
+TRAILING_AUDIO_PAUSE_TAG_RE = re.compile(r"\s*<#(\d+(?:\.\d+)?)#>\s*$")
+AUDIO_PAUSE_TAG_RE = re.compile(r"<#\d+(?:\.\d+)?#>")
+MAX_AUDIO_PAUSE_SECONDS = 3.0
 
 DIALOGUE_TARGET_PEAK_RATIO = 0.82
 ENGLISH_CURATED_MINIMAX_VOICE_IDS = (
@@ -297,6 +300,14 @@ DIALOGUE_PERSONA_VOICES = {
     "layla": "Arabic_CalmWoman",
 }
 
+ARABIC_MINIMAX_DIALOGUE_PERSONA_VOICES = {
+    "barista": "Arabic_CalmWoman",
+    "cafestaff": "Arabic_CalmWoman",
+    "seller": "Arabic_FriendlyGuy",
+    "shopkeeper": "Arabic_FriendlyGuy",
+    "staff": "Arabic_CalmWoman",
+}
+
 ELEVENLABS_ARABIC_PERSONA_VOICES = {
     "ahmad": "RjFuvnufLX42TYe37ekK",
     "ahmed": "RjFuvnufLX42TYe37ekK",
@@ -304,6 +315,8 @@ ELEVENLABS_ARABIC_PERSONA_VOICES = {
     "arabicstudent": "kdUY91gH5xyDHapxlthT",
     "arabicteacher": "3nav5pHC1EYvWOd5LmnA",
     "aisha": "v7UCHHCrHj1KBa4E41gb",
+    "barista": "gVzwmdZzRgBrNjXaTmi5",
+    "cafestaff": "gVzwmdZzRgBrNjXaTmi5",
     "fatima": "v7UCHHCrHj1KBa4E41gb",
     "fatimah": "v7UCHHCrHj1KBa4E41gb",
     "khalid": "t9akNmCDhz230CEXOYmn",
@@ -315,6 +328,9 @@ ELEVENLABS_ARABIC_PERSONA_VOICES = {
     "narrator": "3GnbqfjaW8xI6hRTVx4Y",
     "noura": "kdUY91gH5xyDHapxlthT",
     "nura": "kdUY91gH5xyDHapxlthT",
+    "seller": "3GnbqfjaW8xI6hRTVx4Y",
+    "shopkeeper": "3GnbqfjaW8xI6hRTVx4Y",
+    "staff": "gVzwmdZzRgBrNjXaTmi5",
     "studentarabicfemale": "kdUY91gH5xyDHapxlthT",
     "studentarabicmale": "kr4VZw8MSZMHE0y2m40n",
     "studentfemale": "kdUY91gH5xyDHapxlthT",
@@ -379,6 +395,7 @@ class MiniMaxAudioResult:
 class DialogueTurn:
     speaker: str
     text: str
+    pause_after_seconds: float = 0.0
 
 
 def audio_generation_settings_payload(voices: list[dict[str, Any]]) -> dict[str, Any]:
@@ -1200,7 +1217,10 @@ async def synthesize_dialogue_minimax_tts(
             trace_ids.append(generated.trace_id)
         total_usage += generated.usage_characters
 
-    audio_bytes, duration_seconds = concatenate_wav_audio(chunks)
+    audio_bytes, duration_seconds = concatenate_wav_audio(
+        chunks,
+        pause_after_seconds=[turn.pause_after_seconds for turn in turns],
+    )
     return MiniMaxAudioResult(
         audio_bytes=audio_bytes,
         duration_seconds=duration_seconds,
@@ -1292,6 +1312,7 @@ async def synthesize_dialogue_elevenlabs_tts(
         chunks,
         sample_rate=ELEVENLABS_DIALOGUE_SAMPLE_RATE,
         pause_seconds=ELEVENLABS_DIALOGUE_PAUSE_SECONDS,
+        pause_after_seconds=[turn.pause_after_seconds for turn in turns],
     )
     return MiniMaxAudioResult(
         audio_bytes=audio_bytes,
@@ -1539,9 +1560,15 @@ def listening_script_to_dialogue_turns(path: Path) -> list[DialogueTurn]:
             continue
 
         speaker = clean_speaker_name(match.group(1))
-        text = clean_dialogue_text(match.group(2))
+        text, pause_after_seconds = clean_dialogue_turn_payload(match.group(2))
         if speaker and text:
-            turns.append(DialogueTurn(speaker=speaker, text=text))
+            turns.append(
+                DialogueTurn(
+                    speaker=speaker,
+                    text=text,
+                    pause_after_seconds=pause_after_seconds,
+                )
+            )
 
     total_text = "\n".join(turn.text for turn in turns).strip()
     if turns and len(total_text) >= 10000:
@@ -1560,9 +1587,15 @@ def dialogue_turns_from_text(value: str) -> list[DialogueTurn]:
         if not match:
             continue
         speaker = clean_speaker_name(match.group(1))
-        text = clean_dialogue_text(match.group(2))
+        text, pause_after_seconds = clean_dialogue_turn_payload(match.group(2))
         if speaker and text:
-            turns.append(DialogueTurn(speaker=speaker, text=text))
+            turns.append(
+                DialogueTurn(
+                    speaker=speaker,
+                    text=text,
+                    pause_after_seconds=pause_after_seconds,
+                )
+            )
 
     total_text = "\n".join(turn.text for turn in turns).strip()
     if turns and len(total_text) >= 10000:
@@ -1617,8 +1650,28 @@ def clean_dialogue_text(value: str) -> str:
     return value.replace("**", "").replace("*", "").replace("  ", " ").strip()
 
 
+def clean_dialogue_turn_payload(value: str) -> tuple[str, float]:
+    text = clean_dialogue_text(value)
+    pause_after_seconds = 0.0
+    while True:
+        match = TRAILING_AUDIO_PAUSE_TAG_RE.search(text)
+        if not match:
+            break
+        pause_after_seconds = max(pause_after_seconds, safe_audio_pause_seconds(match.group(1)))
+        text = text[: match.start()].strip()
+    return text, pause_after_seconds
+
+
+def safe_audio_pause_seconds(value: str) -> float:
+    try:
+        return min(max(float(value), 0.0), MAX_AUDIO_PAUSE_SECONDS)
+    except ValueError:
+        return 0.0
+
+
 def naturalize_dialogue_turn_text(value: str) -> str:
     cleaned = clean_dialogue_text(value)
+    cleaned = AUDIO_PAUSE_TAG_RE.sub(" ", cleaned)
     cleaned = re.sub(r"^[^:\n：]{1,48}[:：]\s*", "", cleaned).strip()
     return re.sub(r"\s+", " ", cleaned)
 
@@ -1639,7 +1692,10 @@ def assign_dialogue_voices(
     used_voices: set[str] = set()
 
     for key in sorted(speaker_by_key):
-        voice_id = DIALOGUE_PERSONA_VOICES.get(key)
+        voice_id = None
+        if is_arabic_language(language) or is_arabic_voice_id(fallback_voice_id):
+            voice_id = ARABIC_MINIMAX_DIALOGUE_PERSONA_VOICES.get(key)
+        voice_id = voice_id or DIALOGUE_PERSONA_VOICES.get(key)
         if not voice_id:
             continue
         speaker = speaker_by_key[key]
@@ -1775,6 +1831,9 @@ def infer_speaker_gender(speaker: str) -> str:
         "nina",
         "maya",
         "rani",
+        "barista",
+        "cafestaff",
+        "staff",
         "fatimah",
         "khadijah",
         "aisha",
@@ -1801,6 +1860,8 @@ def infer_speaker_gender(speaker: str) -> str:
         "omar",
         "rama",
         "raka",
+        "seller",
+        "shopkeeper",
         "ahmad",
         "budi",
         "umar",
@@ -1844,7 +1905,12 @@ def stable_speaker_index(speaker_key: str, *, modulo: int) -> int:
     return int(digest[:8], 16) % modulo
 
 
-def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -> tuple[bytes, float]:
+def concatenate_wav_audio(
+    chunks: list[bytes],
+    *,
+    pause_seconds: float = 0.25,
+    pause_after_seconds: Optional[list[float]] = None,
+) -> tuple[bytes, float]:
     if not chunks:
         raise AudioGenerationError("dialogue_audio_empty")
 
@@ -1875,8 +1941,6 @@ def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -
         raise AudioGenerationError("dialogue_audio_empty")
 
     nchannels, sampwidth, framerate, comptype, compname = wav_params
-    pause_frames = max(0, int(framerate * pause_seconds))
-    pause_bytes = b"\x00" * pause_frames * nchannels * sampwidth
     output = io.BytesIO()
 
     with wave.open(output, "wb") as writer:
@@ -1886,7 +1950,15 @@ def concatenate_wav_audio(chunks: list[bytes], *, pause_seconds: float = 0.25) -
         writer.setcomptype(comptype, compname)
         for index, frame_bytes in enumerate(frames):
             writer.writeframes(frame_bytes)
-            if index < len(frames) - 1 and pause_bytes:
+            pause_for_turn = dialogue_pause_seconds_for_index(
+                index=index,
+                chunk_count=len(frames),
+                default_pause_seconds=pause_seconds,
+                pause_after_seconds=pause_after_seconds,
+            )
+            pause_frames = max(0, int(framerate * pause_for_turn))
+            if index < len(frames) - 1 and pause_frames:
+                pause_bytes = b"\x00" * pause_frames * nchannels * sampwidth
                 writer.writeframes(pause_bytes)
                 total_frames += pause_frames
 
@@ -1899,6 +1971,7 @@ def concatenate_pcm16_audio(
     *,
     sample_rate: int,
     pause_seconds: float,
+    pause_after_seconds: Optional[list[float]] = None,
 ) -> tuple[bytes, float]:
     if not chunks:
         raise AudioGenerationError("dialogue_audio_empty")
@@ -1912,8 +1985,6 @@ def concatenate_pcm16_audio(
         frames.append(frame_bytes)
         total_frames += len(frame_bytes) // 2
 
-    pause_frames = max(0, int(sample_rate * pause_seconds))
-    pause_bytes = b"\x00" * pause_frames * 2
     output = io.BytesIO()
 
     with wave.open(output, "wb") as writer:
@@ -1922,12 +1993,35 @@ def concatenate_pcm16_audio(
         writer.setframerate(sample_rate)
         for index, frame_bytes in enumerate(frames):
             writer.writeframes(frame_bytes)
-            if index < len(frames) - 1 and pause_bytes:
+            pause_for_turn = dialogue_pause_seconds_for_index(
+                index=index,
+                chunk_count=len(frames),
+                default_pause_seconds=pause_seconds,
+                pause_after_seconds=pause_after_seconds,
+            )
+            pause_frames = max(0, int(sample_rate * pause_for_turn))
+            if index < len(frames) - 1 and pause_frames:
+                pause_bytes = b"\x00" * pause_frames * 2
                 writer.writeframes(pause_bytes)
                 total_frames += pause_frames
 
     duration_seconds = round(total_frames / sample_rate, 2)
     return output.getvalue(), max(duration_seconds, 0.01)
+
+
+def dialogue_pause_seconds_for_index(
+    *,
+    index: int,
+    chunk_count: int,
+    default_pause_seconds: float,
+    pause_after_seconds: Optional[list[float]],
+) -> float:
+    if index >= chunk_count - 1:
+        return 0.0
+    override = 0.0
+    if pause_after_seconds and index < len(pause_after_seconds):
+        override = pause_after_seconds[index]
+    return max(default_pause_seconds, override)
 
 
 def normalize_wav_frame_volume(frame_bytes: bytes, sampwidth: int) -> bytes:
@@ -2043,6 +2137,7 @@ def update_audio_manifest(
         "voice_id": voice_id,
         "speaker_voices": speaker_voices,
         "line_count": line_count,
+        "script_content_hash": file_sha256(lesson.listening_script_path),
         "audio_format": audio_format,
         "storage_key": object_key,
         "trace_id": trace_id,
@@ -2067,6 +2162,10 @@ def update_audio_manifest(
     data["assets"] = next_assets
     write_yaml_mapping(lesson.audio_manifest_path, data)
     return data
+
+
+def file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def update_production_tracker_audio(lesson: LessonAudioReference, *, status: str) -> None:

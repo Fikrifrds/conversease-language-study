@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 from pathlib import Path
 from typing import Any, Optional
 
@@ -438,6 +439,8 @@ def audio_manifest_ready(path: Path) -> bool:
         return False
     if not dialogue_asset.get("duration_seconds"):
         return False
+    if not audio_manifest_script_matches(path, dialogue_asset):
+        return False
 
     return True
 
@@ -473,9 +476,13 @@ def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
 
     if not isinstance(data, dict):
         return None
+    if str(data.get("status", "")).strip() not in AUDIO_READY_STATUSES:
+        return None
 
     dialogue_asset = dialogue_audio_manifest_asset(data)
     if not dialogue_asset:
+        return None
+    if not audio_manifest_script_matches(path, dialogue_asset):
         return None
 
     audio_url = str(dialogue_asset.get("audio_url") or "")
@@ -500,6 +507,21 @@ def lesson_audio_asset(lesson_dir: Path) -> Optional[dict[str, Any]]:
         "generated_at": str(dialogue_asset.get("generated_at") or ""),
         "generated_by": str(dialogue_asset.get("generated_by") or ""),
     }
+
+
+def audio_manifest_script_matches(path: Path, dialogue_asset: dict[str, Any]) -> bool:
+    expected_hash = str(dialogue_asset.get("script_content_hash") or "").strip()
+    if not expected_hash:
+        return True
+
+    script_file = str(dialogue_asset.get("script_file") or "listening_script.md").strip()
+    if not script_file:
+        return False
+    script_path = path.parent / script_file
+    if not script_path.exists():
+        return False
+    actual_hash = hashlib.sha256(script_path.read_bytes()).hexdigest()
+    return actual_hash == expected_hash
 
 
 def load_tracker_rows() -> dict[tuple[str, str, str], dict[str, str]]:

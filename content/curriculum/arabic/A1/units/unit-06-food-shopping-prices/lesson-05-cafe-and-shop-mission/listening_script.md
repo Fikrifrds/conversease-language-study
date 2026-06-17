@@ -1,10 +1,10 @@
 # Listening Script
 
-**Muallimah:** مَاذَا تُرِيدُ؟
+**Cafe Staff:** مَاذَا تُرِيدُ؟
 **Zayd:** أُرِيدُ مَاءً مِنْ فَضْلِكَ.
-**Muallimah:** تَفَضَّلْ.
+**Cafe Staff:** تَفَضَّلْ.
 **Zayd:** كَمِ السِّعْرُ؟
-**Muallimah:** السِّعْرُ رِيَالَانِ.
+**Cafe Staff:** السِّعْرُ رِيَالَانِ.
 **Zayd:** آخُذُ وَاحِدًا، شُكْرًا.
 
 ## Audio Direction

@@ -1,3 +1,4 @@
+import hashlib
 import tempfile
 import unittest
 from pathlib import Path
@@ -86,6 +87,29 @@ class ContentReadinessTest(unittest.TestCase):
             )
 
             self.assertTrue(audio_manifest_ready(manifest))
+
+    def test_audio_manifest_ready_rejects_stale_script_hash(self):
+        with tempfile.TemporaryDirectory() as directory:
+            script = Path(directory) / "listening_script.md"
+            script.write_text("old script", encoding="utf-8")
+            original_hash = hashlib.sha256(script.read_bytes()).hexdigest()
+            script.write_text("new script", encoding="utf-8")
+
+            manifest = Path(directory) / "audio_manifest.yaml"
+            manifest.write_text(
+                "lesson_key: sample\n"
+                "status: generated\n"
+                "assets:\n"
+                "  - key: dialogue_main\n"
+                "    type: dialogue\n"
+                "    script_file: listening_script.md\n"
+                "    script_content_hash: " + original_hash + "\n"
+                "    audio_url: https://cdn.example.com/dialogue.wav\n"
+                "    duration_seconds: 12\n",
+                encoding="utf-8",
+            )
+
+            self.assertFalse(audio_manifest_ready(manifest))
 
     def test_audio_manifest_not_ready_when_tracker_would_be_done_but_manifest_is_empty(self):
         with tempfile.TemporaryDirectory() as directory:

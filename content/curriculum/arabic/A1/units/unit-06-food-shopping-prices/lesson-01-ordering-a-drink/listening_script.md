@@ -1,9 +1,9 @@
 # Listening Script
 
 **Khalid:** مَرْحَبًا.
-**Layla:** مَرْحَبًا، مَاذَا تُرِيدُ؟
+**Cafe Staff:** مَرْحَبًا، مَاذَا تُرِيدُ؟
 **Khalid:** أُرِيدُ مَاءً مِنْ فَضْلِكَ.
-**Layla:** تَفَضَّلْ.
+**Cafe Staff:** تَفَضَّلْ.
 **Khalid:** شُكْرًا.
 
 ## Audio Direction
