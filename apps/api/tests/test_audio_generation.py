@@ -338,6 +338,26 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertIn(voices[speaker], ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES)
             self.assertEqual(ELEVENLABS_ARABIC_VOICE_METADATA[voices[speaker]]["gender"], "female")
 
+    def test_arabic_a1_a2_dialogue_speakers_have_explicit_gendered_elevenlabs_voices(self):
+        for level_code in ("A1", "A2"):
+            root = curriculum_root() / "arabic" / level_code / "units"
+            for script_path in sorted(root.glob("*/*/listening_script.md")):
+                turns = listening_script_to_dialogue_turns(script_path)
+                voices = assign_elevenlabs_dialogue_voices(
+                    turns,
+                    fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
+                    language="arabic",
+                )
+
+                for speaker, voice_id in voices.items():
+                    expected_gender = infer_speaker_gender(speaker)
+                    with self.subTest(level=level_code, script=str(script_path), speaker=speaker):
+                        self.assertIn(expected_gender, {"male", "female"})
+                        self.assertEqual(
+                            ELEVENLABS_ARABIC_VOICE_METADATA[voice_id]["gender"],
+                            expected_gender,
+                        )
+
     def test_voice_gender_inference_uses_name_id_and_raw_metadata(self):
         self.assertEqual(
             infer_voice_gender(
