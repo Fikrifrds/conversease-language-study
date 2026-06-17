@@ -1,0 +1,50 @@
+scenario_key: arabic_asking_about_departure_time
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَتَى يَغَادِرُ الْقِطَارُ إِلَى بَانْدُونْغ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu sudah punya tiket dan ingin memastikan
+  jam keberangkatan, peron, serta waktu tiba.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَتَى يَغَادِرُ الْقِطَارُ إِلَى بَانْدُونْغ؟
+  hint: 'Jawab dengan pola: مَتَى يَغَادِرُ الْقِطَارُ؟'
+  sample_answer: مَتَى يَغَادِرُ الْقِطَارُ؟
+  focus: 'Latihan frasa: Kapan keretanya berangkat?'
+  expected_keywords:
+  - مَتَى
+  - يَغَادِرُ
+  - الْقِطَارُ
+  indonesian_explanation: Kapan keretanya berangkat?
+- coach: 'استخدم: يُغَادِرُ السَّاعَةَ السَّابِعَةَ.'
+  hint: 'Jawab dengan pola: يُغَادِرُ السَّاعَةَ السَّابِعَةَ.'
+  sample_answer: يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+  focus: 'Latihan frasa: Berangkat jam tujuh.'
+  expected_keywords:
+  - يُغَادِرُ
+  - السَّاعَةَ
+  - السَّابِعَةَ
+  indonesian_explanation: Berangkat jam tujuh.
+- coach: 'استخدم: مِنْ أَيِّ رَصِيفٍ؟'
+  hint: 'Jawab dengan pola: مِنْ أَيِّ رَصِيفٍ؟'
+  sample_answer: مِنْ أَيِّ رَصِيفٍ؟
+  focus: 'Latihan frasa: Dari peron berapa?'
+  expected_keywords:
+  - مِنْ
+  - أَيِّ
+  - رَصِيفٍ
+  indonesian_explanation: Dari peron berapa?
+target_phrases:
+- مَتَى يَغَادِرُ الْقِطَارُ؟
+- يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+- مِنْ أَيِّ رَصِيفٍ؟
+- مِنَ الرَّصِيفِ الثَّانِي.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

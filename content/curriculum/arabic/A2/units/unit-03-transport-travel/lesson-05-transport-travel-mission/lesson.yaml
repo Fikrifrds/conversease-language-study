@@ -1,0 +1,27 @@
+lesson_key: lesson-05-transport-travel-mission
+slug: arabic-transport-travel-mission
+title: Transport and Travel Mission
+status: beta
+estimated_minutes: 12
+conversation_situation: transport_travel_mission
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan perjalanan pendek:
+  membeli tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.'
+grammar_summary: Gabungkan permintaan dengan أُرِيدُ, waktu dengan مَتَى, arah dengan كَيْفَ, dan durasi
+  dengan كَمْ يَسْتَغْرِقُ.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

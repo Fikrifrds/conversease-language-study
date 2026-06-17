@@ -1,0 +1,8 @@
+# Bantuan Menulis
+
+Salin frasa berikut. Setelah itu, ganti satu bagian saja, misalnya tempat, waktu, atau aktivitas.
+
+- إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+- هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+- كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+- حَوَالَيْ عِشْرِينَ دَقِيقَةً.

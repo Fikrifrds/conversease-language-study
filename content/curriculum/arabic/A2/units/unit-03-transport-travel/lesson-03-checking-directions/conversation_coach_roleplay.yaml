@@ -1,0 +1,49 @@
+scenario_key: arabic_checking_directions
+mode: lesson_practice_coach
+level_code: A2
+opening_line: عَفْوًا، كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ الثَّالِثِ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berada di terminal dan ingin memastikan
+  arah menuju pintu, peron, atau tempat tunggu tanpa salah jalur.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: عَفْوًا، كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ الثَّالِثِ؟
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke peron?'
+  expected_keywords:
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
+  indonesian_explanation: Bagaimana saya pergi ke peron?
+- coach: 'استخدم: اِمْشِ مُسْتَقِيمًا.'
+  hint: 'Jawab dengan pola: اِمْشِ مُسْتَقِيمًا.'
+  sample_answer: اِمْشِ مُسْتَقِيمًا.
+  focus: 'Latihan frasa: Berjalan lurus.'
+  expected_keywords:
+  - اِمْشِ
+  - مُسْتَقِيمًا
+  indonesian_explanation: Berjalan lurus.
+- coach: 'استخدم: ثُمَّ اِتَّجِهْ يَمِينًا.'
+  hint: 'Jawab dengan pola: ثُمَّ اِتَّجِهْ يَمِينًا.'
+  sample_answer: ثُمَّ اِتَّجِهْ يَمِينًا.
+  focus: 'Latihan frasa: Lalu belok kanan.'
+  expected_keywords:
+  - ثُمَّ
+  - اِتَّجِهْ
+  - يَمِينًا
+  indonesian_explanation: Lalu belok kanan.
+target_phrases:
+- كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+- اِمْشِ مُسْتَقِيمًا.
+- ثُمَّ اِتَّجِهْ يَمِينًا.
+- بِجَانِبِ الْمَصْعَدِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

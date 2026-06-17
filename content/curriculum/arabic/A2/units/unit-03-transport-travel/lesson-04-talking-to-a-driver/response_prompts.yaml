@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Ke hotel, tolong.'
+  target_response: إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+  acceptable_responses:
+  - إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah alamat ini benar?'
+  target_response: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+  acceptable_responses:
+  - هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Berapa lama perjalanannya?'
+  target_response: كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+  acceptable_responses:
+  - كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟

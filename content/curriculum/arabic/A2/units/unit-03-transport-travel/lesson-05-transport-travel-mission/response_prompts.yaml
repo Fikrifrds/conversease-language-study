@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin tiket ke kota.'
+  target_response: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+  acceptable_responses:
+  - أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kapan keretanya berangkat?'
+  target_response: مَتَى يَغَادِرُ الْقِطَارُ؟
+  acceptable_responses:
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana saya pergi ke peron?'
+  target_response: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  acceptable_responses:
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟

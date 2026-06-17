@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana saya pergi ke peron?'
+  target_response: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  acceptable_responses:
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Berjalan lurus.'
+  target_response: اِمْشِ مُسْتَقِيمًا.
+  acceptable_responses:
+  - اِمْشِ مُسْتَقِيمًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu belok kanan.'
+  target_response: ثُمَّ اِتَّجِهْ يَمِينًا.
+  acceptable_responses:
+  - ثُمَّ اِتَّجِهْ يَمِينًا.

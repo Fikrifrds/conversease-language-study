@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Bagaimana saya pergi ke peron?"?
+  options:
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  - اِمْشِ مُسْتَقِيمًا.
+  - ثُمَّ اِتَّجِهْ يَمِينًا.
+  correct_answer: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Berjalan lurus."?
+  options:
+  - اِمْشِ مُسْتَقِيمًا.
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  - ثُمَّ اِتَّجِهْ يَمِينًا.
+  correct_answer: اِمْشِ مُسْتَقِيمًا.

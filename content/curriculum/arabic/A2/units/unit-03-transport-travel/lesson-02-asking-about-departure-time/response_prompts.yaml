@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Kapan keretanya berangkat?'
+  target_response: مَتَى يَغَادِرُ الْقِطَارُ؟
+  acceptable_responses:
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Berangkat jam tujuh.'
+  target_response: يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+  acceptable_responses:
+  - يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dari peron berapa?'
+  target_response: مِنْ أَيِّ رَصِيفٍ؟
+  acceptable_responses:
+  - مِنْ أَيِّ رَصِيفٍ؟

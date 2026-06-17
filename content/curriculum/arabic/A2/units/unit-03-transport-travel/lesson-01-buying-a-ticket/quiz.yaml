@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya ingin tiket ke Jakarta."?
+  options:
+  - أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+  - ذَهَابًا فَقَطْ.
+  - ذَهَابًا وَعَوْدَةً.
+  correct_answer: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Sekali jalan saja."?
+  options:
+  - ذَهَابًا فَقَطْ.
+  - أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+  - ذَهَابًا وَعَوْدَةً.
+  correct_answer: ذَهَابًا فَقَطْ.

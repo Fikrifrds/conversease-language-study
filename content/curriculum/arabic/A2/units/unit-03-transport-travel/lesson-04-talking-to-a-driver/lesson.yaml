@@ -1,0 +1,27 @@
+lesson_key: lesson-04-talking-to-a-driver
+slug: arabic-talking-to-a-driver
+title: Talking to a Driver
+status: beta
+estimated_minutes: 12
+conversation_situation: talking_to_a_driver
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu naik taksi atau kendaraan online
+  dan perlu memastikan tujuan, waktu perjalanan, dan tempat turun.'
+grammar_summary: Gunakan إِلَى untuk tujuan, كَمْ يَسْتَغْرِقُ untuk durasi, dan تَوَقَّفْ untuk meminta
+  berhenti.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

@@ -1,0 +1,8 @@
+# Transcript Translation
+
+- **Noura:** عَفْوًا، كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ الثَّالِثِ؟ -> Permisi, bagaimana saya pergi ke peron tiga?
+- **Karim:** اِمْشِي مُسْتَقِيمًا إِلَى نِهَايَةِ الْمَمَرِّ. -> Berjalanlah lurus sampai ujung lorong.
+- **Noura:** ثُمَّ؟ -> Lalu?
+- **Karim:** ثُمَّ اِتَّجِهِي يَمِينًا. الرَّصِيفُ بِجَانِبِ الْمَصْعَدِ. -> Lalu belok kanan. Peronnya di samping lift.
+- **Noura:** أَمْشِي مُسْتَقِيمًا، ثُمَّ أَتَّجِهُ يَمِينًا. هَلْ هَذَا صَحِيحٌ؟ -> Saya berjalan lurus, lalu belok kanan. Apakah ini benar?
+- **Karim:** نَعَمْ، هَذَا صَحِيحٌ. -> Ya, itu benar.

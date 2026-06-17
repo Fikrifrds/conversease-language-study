@@ -1,0 +1,27 @@
+lesson_key: lesson-01-buying-a-ticket
+slug: arabic-buying-a-ticket
+title: Buying a Ticket
+status: beta
+estimated_minutes: 12
+conversation_situation: buying_a_ticket
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berada di loket stasiun dan ingin
+  membeli tiket sederhana: tujuan, jenis tiket, kelas, dan harga.'
+grammar_summary: Gunakan أُرِيدُ untuk permintaan, إِلَى untuk tujuan, dan pilihan dengan أَمْ saat membandingkan
+  dua opsi.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

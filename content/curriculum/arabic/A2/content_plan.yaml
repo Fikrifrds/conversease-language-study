@@ -61,30 +61,30 @@ units:
     status: beta
 - unit_key: unit-03-transport-travel
   title: Transport & Travel
-  status: planned
+  status: beta
   main_conversation_outcome: Ask about transport, tickets, departure time, directions, and simple travel
     help.
   lessons:
   - lesson_key: lesson-01-buying-a-ticket
     slug: arabic-buying-a-ticket
     title: Buying a Ticket
-    status: planned
+    status: beta
   - lesson_key: lesson-02-asking-about-departure-time
     slug: arabic-asking-about-departure-time
     title: Asking About Departure Time
-    status: planned
+    status: beta
   - lesson_key: lesson-03-checking-directions
     slug: arabic-checking-directions
     title: Checking Directions
-    status: planned
+    status: beta
   - lesson_key: lesson-04-talking-to-a-driver
     slug: arabic-talking-to-a-driver
     title: Talking to a Driver
-    status: planned
+    status: beta
   - lesson_key: lesson-05-transport-travel-mission
     slug: arabic-transport-travel-mission
     title: Transport and Travel Mission
-    status: planned
+    status: beta
 - unit_key: unit-04-shopping-services
   title: Shopping & Services
   status: planned

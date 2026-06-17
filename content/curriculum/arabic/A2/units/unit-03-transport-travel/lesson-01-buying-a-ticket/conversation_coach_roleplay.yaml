@@ -1,0 +1,48 @@
+scenario_key: arabic_buying_a_ticket
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا، مِنْ فَضْلِكِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berada di loket stasiun dan ingin membeli
+  tiket sederhana: tujuan, jenis tiket, kelas, dan harga.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا، مِنْ فَضْلِكِ.
+  hint: 'Jawab dengan pola: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.'
+  sample_answer: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+  focus: 'Latihan frasa: Saya ingin tiket ke Jakarta.'
+  expected_keywords:
+  - أُرِيدُ
+  - تَذْكِرَةً
+  - إِلَى
+  indonesian_explanation: Saya ingin tiket ke Jakarta.
+- coach: 'استخدم: ذَهَابًا فَقَطْ.'
+  hint: 'Jawab dengan pola: ذَهَابًا فَقَطْ.'
+  sample_answer: ذَهَابًا فَقَطْ.
+  focus: 'Latihan frasa: Sekali jalan saja.'
+  expected_keywords:
+  - ذَهَابًا
+  - فَقَطْ
+  indonesian_explanation: Sekali jalan saja.
+- coach: 'استخدم: ذَهَابًا وَعَوْدَةً.'
+  hint: 'Jawab dengan pola: ذَهَابًا وَعَوْدَةً.'
+  sample_answer: ذَهَابًا وَعَوْدَةً.
+  focus: 'Latihan frasa: Pulang pergi.'
+  expected_keywords:
+  - ذَهَابًا
+  - وَعَوْدَةً
+  indonesian_explanation: Pulang pergi.
+target_phrases:
+- أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+- ذَهَابًا فَقَطْ.
+- ذَهَابًا وَعَوْدَةً.
+- الدَّرَجَةُ الِاقْتِصَادِيَّةُ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

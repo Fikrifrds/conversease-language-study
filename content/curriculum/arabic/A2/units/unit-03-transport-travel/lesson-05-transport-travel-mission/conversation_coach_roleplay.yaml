@@ -1,0 +1,50 @@
+scenario_key: arabic_transport_travel_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ، مِنْ فَضْلِكِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan perjalanan pendek: membeli
+  tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ، مِنْ فَضْلِكِ.
+  hint: 'Jawab dengan pola: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.'
+  sample_answer: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+  focus: 'Latihan frasa: Saya ingin tiket ke kota.'
+  expected_keywords:
+  - أُرِيدُ
+  - تَذْكِرَةً
+  - إِلَى
+  indonesian_explanation: Saya ingin tiket ke kota.
+- coach: 'استخدم: مَتَى يَغَادِرُ الْقِطَارُ؟'
+  hint: 'Jawab dengan pola: مَتَى يَغَادِرُ الْقِطَارُ؟'
+  sample_answer: مَتَى يَغَادِرُ الْقِطَارُ؟
+  focus: 'Latihan frasa: Kapan keretanya berangkat?'
+  expected_keywords:
+  - مَتَى
+  - يَغَادِرُ
+  - الْقِطَارُ
+  indonesian_explanation: Kapan keretanya berangkat?
+- coach: 'استخدم: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟'
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke peron?'
+  expected_keywords:
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
+  indonesian_explanation: Bagaimana saya pergi ke peron?
+target_phrases:
+- أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+- مَتَى يَغَادِرُ الْقِطَارُ؟
+- كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+- هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

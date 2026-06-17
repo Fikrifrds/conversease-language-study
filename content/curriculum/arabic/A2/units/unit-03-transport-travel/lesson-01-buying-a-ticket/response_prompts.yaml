@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin tiket ke Jakarta.'
+  target_response: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+  acceptable_responses:
+  - أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+- prompt: 'Ucapkan dalam bahasa Arab: Sekali jalan saja.'
+  target_response: ذَهَابًا فَقَطْ.
+  acceptable_responses:
+  - ذَهَابًا فَقَطْ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pulang pergi.'
+  target_response: ذَهَابًا وَعَوْدَةً.
+  acceptable_responses:
+  - ذَهَابًا وَعَوْدَةً.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Kapan keretanya berangkat?"?
+  options:
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+  - يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+  - مِنْ أَيِّ رَصِيفٍ؟
+  correct_answer: مَتَى يَغَادِرُ الْقِطَارُ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Berangkat jam tujuh."?
+  options:
+  - يُغَادِرُ السَّاعَةَ السَّابِعَةَ.
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+  - مِنْ أَيِّ رَصِيفٍ؟
+  correct_answer: يُغَادِرُ السَّاعَةَ السَّابِعَةَ.

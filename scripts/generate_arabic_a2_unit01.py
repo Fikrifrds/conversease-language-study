@@ -7,6 +7,7 @@ first A2 unit so the team can review quality before scaling the rest of A2.
 from __future__ import annotations
 
 import csv
+import io
 from pathlib import Path
 from typing import Any
 
@@ -518,10 +519,10 @@ def write_lesson_files(item: dict[str, Any]) -> None:
 
 
 def update_tracker() -> None:
-    with TRACKER_PATH.open("r", encoding="utf-8", newline="") as file:
-        reader = csv.DictReader(file)
-        fieldnames = reader.fieldnames or []
-        rows = list(reader)
+    raw_tracker = TRACKER_PATH.read_bytes()
+    reader = csv.DictReader(io.StringIO(raw_tracker.decode("utf-8")))
+    fieldnames = reader.fieldnames or []
+    rows = list(reader)
 
     rows_by_key = {(row["level"], row["unit"], row["lesson"]): row for row in rows}
     for item in UNIT["lessons"]:

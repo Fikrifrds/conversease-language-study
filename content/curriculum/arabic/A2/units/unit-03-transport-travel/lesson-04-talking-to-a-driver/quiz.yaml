@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Ke hotel, tolong."?
+  options:
+  - إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+  - هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+  - كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+  correct_answer: إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah alamat ini benar?"?
+  options:
+  - هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+  - إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+  - كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+  correct_answer: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟

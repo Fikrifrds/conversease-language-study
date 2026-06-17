@@ -1,0 +1,50 @@
+scenario_key: arabic_talking_to_a_driver
+mode: lesson_practice_coach
+level_code: A2
+opening_line: إِلَى فُنْدُقِ النُّورِ، مِنْ فَضْلِكَ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu naik taksi atau kendaraan online dan perlu
+  memastikan tujuan, waktu perjalanan, dan tempat turun.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: إِلَى فُنْدُقِ النُّورِ، مِنْ فَضْلِكَ.
+  hint: 'Jawab dengan pola: إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.'
+  sample_answer: إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+  focus: 'Latihan frasa: Ke hotel, tolong.'
+  expected_keywords:
+  - إِلَى
+  - الْفُنْدُقِ،
+  - مِنْ
+  indonesian_explanation: Ke hotel, tolong.
+- coach: 'استخدم: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟'
+  hint: 'Jawab dengan pola: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟'
+  sample_answer: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+  focus: 'Latihan frasa: Apakah alamat ini benar?'
+  expected_keywords:
+  - هَلْ
+  - هَذَا
+  - الْعُنْوَانُ
+  indonesian_explanation: Apakah alamat ini benar?
+- coach: 'استخدم: كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟'
+  hint: 'Jawab dengan pola: كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟'
+  sample_answer: كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+  focus: 'Latihan frasa: Berapa lama perjalanannya?'
+  expected_keywords:
+  - كَمْ
+  - يَسْتَغْرِقُ
+  - الطَّرِيقُ
+  indonesian_explanation: Berapa lama perjalanannya?
+target_phrases:
+- إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+- هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+- كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+- حَوَالَيْ عِشْرِينَ دَقِيقَةً.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

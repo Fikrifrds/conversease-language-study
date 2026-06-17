@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya ingin tiket ke kota."?
+  options:
+  - أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  correct_answer: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Kapan keretanya berangkat?"?
+  options:
+  - مَتَى يَغَادِرُ الْقِطَارُ؟
+  - أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
+  - كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  correct_answer: مَتَى يَغَادِرُ الْقِطَارُ؟
