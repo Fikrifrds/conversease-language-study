@@ -3,15 +3,7 @@
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import {
-  CheckCircle2,
-  Clipboard,
-  Landmark,
-  MailCheck,
-  ReceiptText,
-  RefreshCcw,
-  WalletCards
-} from "lucide-react";
+import { CheckCircle2, Clipboard, Landmark, ReceiptText } from "lucide-react";
 import { getAuthSession } from "@/lib/auth-api";
 import {
   confirmManualTransfer,
@@ -245,136 +237,124 @@ export function BillingManager() {
   const hasOpenOrder = checkoutOrder && ["pending", "confirmed"].includes(checkoutOrder.status);
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[0.72fr_0.28fr]">
-      <div className="space-y-5">
-        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-            <div>
-              <p className="text-sm font-semibold uppercase text-leaf">Akses Saat Ini</p>
-              <h1 className="mt-2 text-3xl font-semibold">{access?.planName ?? "Memuat"}</h1>
-              <p className="mt-2 text-sm leading-6 text-ink/60">
-                {access?.isPro
-                  ? `Akses Pro aktif sampai ${formatDate(access.expiresAt)}.`
-                  : "Akses Free aktif dengan trial Conversation Coach."}
-              </p>
-            </div>
-            <div className="rounded-lg bg-mint p-4 text-sm">
-              <p className="font-semibold">Kuota Conversation Coach</p>
-              <p className="mt-2 text-3xl font-semibold">{access?.minutes.totalMinutes ?? "-"}</p>
-              <p className="mt-1 text-ink/60">menit tersedia</p>
-            </div>
+    <div className="space-y-5">
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+          <div className="max-w-2xl">
+            <p className="text-sm font-semibold uppercase text-leaf">Billing</p>
+            <h1 className="mt-2 text-3xl font-semibold">{access?.planName ?? "Memuat"}</h1>
+            <p className="mt-2 text-sm leading-6 text-ink/60">
+              {access?.isPro
+                ? `Akses Pro aktif sampai ${formatDate(access.expiresAt)}.`
+                : "Akses Free aktif. Upgrade kapan saja saat kamu siap latihan lebih rutin."}
+            </p>
           </div>
-          <div className="mt-5 grid gap-3 md:grid-cols-3">
-            <Metric label="Langganan" value={access?.minutes.subscriptionMinutes ?? 0} />
-            <Metric label="Top-up" value={access?.minutes.topupMinutes ?? 0} />
-            <Metric label="Status" value={access?.status ?? "-"} />
+          <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+            Transfer manual, nominal unik, lalu konfirmasi dari halaman ini.
           </div>
-          {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
-          {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
-        </section>
+        </div>
 
-        {checkoutOrder ? (
-          <TransferInstruction
-            order={checkoutOrder}
-            transferDate={transferDate}
-            senderName={senderName}
-            senderBank={senderBank}
-            notes={notes}
-            isSubmitting={activePackage === checkoutOrder.packageKey}
-            onTransferDateChange={setTransferDate}
-            onSenderNameChange={setSenderName}
-            onSenderBankChange={setSenderBank}
-            onNotesChange={setNotes}
-            onConfirm={handleConfirmTransfer}
-            onCopy={handleCopy}
-          />
-        ) : null}
+        <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          <Metric label="Menit tersedia" value={access?.minutes.totalMinutes ?? 0} />
+          <Metric label="Dari langganan" value={access?.minutes.subscriptionMinutes ?? 0} />
+          <Metric label="Dari top-up" value={access?.minutes.topupMinutes ?? 0} />
+          <Metric label="Status" value={access?.status ?? "-"} />
+        </div>
 
-        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <p className="text-sm font-semibold uppercase text-leaf">Langganan</p>
-          <h2 className="mt-2 text-2xl font-semibold">Pilih akses belajar</h2>
-          <div className="mt-5 grid gap-3 md:grid-cols-3">
-            {plans.filter((plan) => plan.key !== "free").map((plan) => (
-              <button
-                key={plan.key}
-                type="button"
-                onClick={() => handleCheckout(plan.key, "subscription")}
-                disabled={activePackage !== null || Boolean(hasOpenOrder) || access?.planKey === plan.key}
-                className={`focus-ring rounded-lg border p-4 text-left hover:border-leaf disabled:cursor-not-allowed disabled:opacity-60 ${
-                  access?.planKey === plan.key ? "border-leaf bg-mint" : "border-ink/10 bg-paper"
-                }`}
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="font-semibold">{plan.name}</p>
-                    <p className="mt-2 text-sm text-ink/60">{plan.access}</p>
-                  </div>
-                  {access?.planKey === plan.key ? <CheckCircle2 className="h-5 w-5 text-leaf" aria-hidden="true" /> : null}
+        {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
+        {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
+      </section>
+
+      {checkoutOrder ? (
+        <TransferInstruction
+          order={checkoutOrder}
+          transferDate={transferDate}
+          senderName={senderName}
+          senderBank={senderBank}
+          notes={notes}
+          isSubmitting={activePackage === checkoutOrder.packageKey}
+          onTransferDateChange={setTransferDate}
+          onSenderNameChange={setSenderName}
+          onSenderBankChange={setSenderBank}
+          onNotesChange={setNotes}
+          onConfirm={handleConfirmTransfer}
+          onCopy={handleCopy}
+        />
+      ) : null}
+
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p className="text-sm font-semibold uppercase text-leaf">Langganan</p>
+            <h2 className="mt-2 text-2xl font-semibold">Pilih paket Pro</h2>
+          </div>
+          {hasOpenOrder ? (
+            <p className="text-sm text-ink/55">Selesaikan order aktif dulu sebelum membuat order baru.</p>
+          ) : null}
+        </div>
+
+        <div className="mt-5 grid gap-3 md:grid-cols-3">
+          {plans.filter((plan) => plan.key !== "free").map((plan) => (
+            <button
+              key={plan.key}
+              type="button"
+              onClick={() => handleCheckout(plan.key, "subscription")}
+              disabled={activePackage !== null || Boolean(hasOpenOrder) || access?.planKey === plan.key}
+              className={`focus-ring rounded-lg border p-4 text-left transition hover:border-leaf disabled:cursor-not-allowed disabled:opacity-60 ${
+                access?.planKey === plan.key ? "border-leaf bg-mint" : "border-ink/10 bg-paper"
+              }`}
+            >
+              <div className="flex items-start justify-between gap-3">
+                <div>
+                  <p className="font-semibold">{plan.name}</p>
+                  <p className="mt-1 text-sm text-ink/60">{plan.cadence}</p>
                 </div>
-                <p className="mt-4 text-2xl font-semibold">{plan.price}</p>
-                <p className="mt-3 text-xs font-semibold uppercase text-coral">
-                  {access?.planKey === plan.key
-                    ? "Aktif"
-                    : activePackage === plan.key
-                      ? "Menyiapkan…"
-                      : "Buat Instruksi Transfer"}
-                </p>
-              </button>
-            ))}
-          </div>
-        </section>
+                {access?.planKey === plan.key ? (
+                  <CheckCircle2 className="h-5 w-5 text-leaf" aria-hidden="true" />
+                ) : null}
+              </div>
+              <p className="mt-4 text-2xl font-semibold">{plan.price}</p>
+              <p className="mt-2 text-sm text-ink/60">{plan.access}</p>
+              <p className="mt-4 text-xs font-semibold uppercase text-coral">
+                {access?.planKey === plan.key
+                  ? "Aktif"
+                  : activePackage === plan.key
+                    ? "Menyiapkan…"
+                    : "Buat instruksi transfer"}
+              </p>
+            </button>
+          ))}
+        </div>
+      </section>
 
-        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <h2 className="text-xl font-semibold">Top-up opsional Conversation Coach</h2>
-          <p className="mt-2 text-sm leading-6 text-ink/60">
-            Tambahan untuk user Pro yang ingin latihan speaking lebih banyak setelah kuota pendamping bulanannya habis.
-          </p>
-          <div className="mt-5 grid gap-3 md:grid-cols-3">
-            {topups.map((topup) => (
-              <button
-                key={topup.key}
-                type="button"
-                onClick={() => handleCheckout(topup.key, "topup")}
-                disabled={activePackage !== null || Boolean(hasOpenOrder)}
-                className="focus-ring rounded-lg bg-paper p-4 text-left hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                <p className="font-semibold">{topup.name}</p>
-                <p className="mt-2 text-sm text-ink/60">{topup.minutes} menit latihan tambahan</p>
-                <p className="mt-4 text-2xl font-semibold text-coral">{topup.price}</p>
-                <p className="mt-3 text-xs font-semibold uppercase text-leaf">
-                  {activePackage === topup.key ? "Menyiapkan…" : "Buat Instruksi Transfer"}
-                </p>
-              </button>
-            ))}
+      <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+          <div>
+            <h2 className="text-xl font-semibold">Top-up opsional</h2>
+            <p className="mt-1 text-sm text-ink/60">Tambahan menit latihan setelah kuota bulanan habis.</p>
           </div>
-        </section>
-      </div>
+          <p className="text-sm text-ink/55">Bisa dipakai untuk English atau Arabic.</p>
+        </div>
 
-      <aside className="space-y-4">
-        <section className="rounded-lg bg-ink p-5 text-white">
-          <WalletCards className="h-6 w-6 text-sun" aria-hidden="true" />
-          <h2 className="mt-4 text-xl font-semibold">Transfer manual</h2>
-          <div className="mt-4 space-y-3 text-sm text-white/75">
-            <p>Bank Jago</p>
-            <p>Nominal unik 3 digit</p>
-            <p>Approval admin setelah konfirmasi</p>
-          </div>
-        </section>
-        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <RefreshCcw className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="mt-4 font-semibold">Akses berbasis ledger</h2>
-          <p className="mt-2 text-sm leading-6 text-ink/60">
-            Subscription, top-up, dan pemakaian Conversation Coach dicatat sebagai ledger agar mudah diaudit.
-          </p>
-        </section>
-        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <MailCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
-          <h2 className="mt-4 font-semibold">Notifikasi admin</h2>
-          <p className="mt-2 text-sm leading-6 text-ink/60">
-            Konfirmasi transfer mengirim email ke admin supaya approval bisa diproses dari order yang tepat.
-          </p>
-        </section>
-      </aside>
+        <div className="mt-5 grid gap-3 md:grid-cols-3">
+          {topups.map((topup) => (
+            <button
+              key={topup.key}
+              type="button"
+              onClick={() => handleCheckout(topup.key, "topup")}
+              disabled={activePackage !== null || Boolean(hasOpenOrder)}
+              className="focus-ring rounded-lg border border-ink/10 bg-paper p-4 text-left transition hover:border-leaf hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <p className="font-semibold">{topup.name}</p>
+              <p className="mt-1 text-sm text-ink/60">{topup.minutes} menit tambahan</p>
+              <p className="mt-3 text-2xl font-semibold text-coral">{topup.price}</p>
+              <p className="mt-3 text-xs font-semibold uppercase text-leaf">
+                {activePackage === topup.key ? "Menyiapkan…" : "Buat instruksi transfer"}
+              </p>
+            </button>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
@@ -426,7 +406,7 @@ function TransferInstruction({
       </div>
 
       <div className="mt-5 rounded-lg border border-leaf/20 bg-mint p-4">
-        <p className="text-sm text-ink/70">Transfer tepat sampai 3 digit terakhir</p>
+        <p className="text-sm text-ink/70">Transfer sesuai nominal berikut</p>
         <p className="mt-2 text-3xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
         <p className="mt-1 text-sm text-[#2563eb]">
           Harga {formatRupiah(order.baseAmountIdr ?? order.amountIdr)} + kode{" "}
@@ -466,6 +446,12 @@ function TransferInstruction({
           </button>
         </div>
         <p className="mt-3 text-center text-sm text-ink/60">a.n. {holder}</p>
+      </div>
+
+      <div className="mt-4 grid gap-3 sm:grid-cols-3">
+        <Metric label="Bank" value={bankName} />
+        <Metric label="Status" value={statusLabel(order.status)} />
+        <Metric label="Berlaku sampai" value={formatDateTime(order.expiresAt)} />
       </div>
 
       {canConfirm ? (
