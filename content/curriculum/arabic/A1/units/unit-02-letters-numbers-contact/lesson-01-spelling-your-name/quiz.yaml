@@ -2,14 +2,14 @@ questions:
 - key: phrase_1
   prompt: Frasa mana yang berarti "Bagaimana kamu menulis namamu?"?
   options:
-  - كيف تكتبُ اسمَكَ؟
+  - كَيْفَ تَكْتُبُ اِسْمَكَ؟
   - أَكْتُبُ اسْمِي ...
   - هَذَا حَرْفُ ...
-  correct_answer: كيف تكتبُ اسمَكَ؟
+  correct_answer: كَيْفَ تَكْتُبُ اِسْمَكَ؟
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya menulis nama saya ..."?
   options:
   - أَكْتُبُ اسْمِي ...
-  - كيف تكتبُ اسمَكَ؟
+  - كَيْفَ تَكْتُبُ اِسْمَكَ؟
   - هَذَا حَرْفُ ...
   correct_answer: أَكْتُبُ اسْمِي ...

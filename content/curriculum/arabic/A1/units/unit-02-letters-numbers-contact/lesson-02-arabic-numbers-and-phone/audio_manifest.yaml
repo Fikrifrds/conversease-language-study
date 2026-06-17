@@ -1,23 +1,6 @@
 lesson_key: lesson-02-arabic-numbers-and-phone
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/listening-3nav5pHC1EYvWOd5LmnA-20260616T085440Z.wav
-  duration_seconds: 13.73
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-  line_count: 5
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/listening-3nav5pHC1EYvWOd5LmnA-20260616T085440Z.wav
-  trace_id: L9rgSnGrvgdDI27WEW8R,lZ7Vui7nRym15a5W1C1C,TWQ3CKF8lwm71A5RauO5,juKRtkSHlr64NRURN4n4,6RVzqsUn5nlHBhHdPYtg
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T08:54:40.712775+00:00'
+assets: []

@@ -1,8 +1,8 @@
 prompts:
 - prompt: 'Ucapkan dalam bahasa Arab: Hari apa hari ini?'
-  target_response: أي يوم الْيَوْمُ؟
+  target_response: أي يَوْمَ الْيَوْمُ؟
   acceptable_responses:
-  - أي يوم الْيَوْمُ؟
+  - أي يَوْمَ الْيَوْمُ؟
 - prompt: 'Ucapkan dalam bahasa Arab: Hari ini Senin.'
   target_response: الْيَوْمُ الْإِثْنَيْنِ
   acceptable_responses:

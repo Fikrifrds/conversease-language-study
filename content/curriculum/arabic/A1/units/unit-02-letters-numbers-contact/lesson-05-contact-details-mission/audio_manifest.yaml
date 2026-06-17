@@ -1,23 +1,6 @@
 lesson_key: lesson-05-contact-details-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085549Z.wav
-  duration_seconds: 17.94
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Muallimah: gVzwmdZzRgBrNjXaTmi5
-  line_count: 8
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085549Z.wav
-  trace_id: lH5Ehbn5ARbs5aVZ5zlh,bqRLmYbfDwQ9j8fksI10,bAou8Q4jlJL2DL3FdG2W,bxDIUsj7eVABNS3aclBz,9tgc13gKhAR2cBX1FNOO,7JE1TBUxc6VHvjoxZ8Q2,GFx5KSDMkYMRoMWprlgl,W3kRNdpr4rlrJ432Kgb4
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T08:55:49.263580+00:00'
+assets: []

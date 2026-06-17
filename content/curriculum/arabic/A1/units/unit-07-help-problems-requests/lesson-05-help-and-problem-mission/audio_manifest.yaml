@@ -1,23 +1,6 @@
 lesson_key: lesson-05-help-and-problem-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T090257Z.wav
-  duration_seconds: 13.14
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Muallimah: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T090257Z.wav
-  trace_id: 1adJaa4Cw4oqmKEkURkT,nRR55YQRnS0DDHODxEzh,NPCNe1DrfGPf1nSGYcR7,hjpr7ua871T57z2zwHyF,v52H2v1ezHtlfubG5951,ZDjWRmUgkhJQQ5hJpyHd
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T09:02:57.442546+00:00'
+assets: []

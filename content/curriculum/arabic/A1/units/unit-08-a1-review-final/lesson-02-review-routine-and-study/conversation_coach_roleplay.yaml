@@ -1,7 +1,7 @@
 scenario_key: arabic_review_routine_and_study
 mode: lesson_practice_coach
 level_code: A1
-opening_line: متى تدرسُ الْعَرَبِيَّةَُ؟
+opening_line: مَتَى تَدْرُسُ الْعَرَبِيَّةَ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa
   Arab dan aktivitas sederhana.'
 max_turns: 4
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: متى تدرسُ الْعَرَبِيَّةَُ؟
+- coach: مَتَى تَدْرُسُ الْعَرَبِيَّةَ؟
   hint: 'Jawab dengan pola: الْيَوْمُ الْإِثْنَيْنِ'
   sample_answer: الْيَوْمُ الْإِثْنَيْنِ
   focus: 'Latihan frasa: Hari ini Senin.'
@@ -37,7 +37,7 @@ target_phrases:
 - الْيَوْمُ الْإِثْنَيْنِ
 - السَّاعَةُ الثَّامِنَةُ
 - أَدْرُسُ الْعَرَبِيَّةَ
-- أقرأ وأكتب
+- أَقْرَأُ وَأَكْتُبُ
 rubric:
   speaking:
     minimum_score: 60

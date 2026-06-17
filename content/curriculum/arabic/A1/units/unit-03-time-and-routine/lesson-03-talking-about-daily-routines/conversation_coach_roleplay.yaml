@@ -18,12 +18,12 @@ turns:
   - تَفْعَلُ
   - صَبَاحًا
   indonesian_explanation: Apa yang kamu lakukan pagi hari?
-- coach: 'استخدم: أقرأ'
-  hint: 'Jawab dengan pola: أقرأ'
-  sample_answer: أقرأ
+- coach: 'استخدم: أَقْرَأُ'
+  hint: 'Jawab dengan pola: أَقْرَأُ'
+  sample_answer: أَقْرَأُ
   focus: 'Latihan frasa: Saya membaca.'
   expected_keywords:
-  - أقرأ
+  - أَقْرَأُ
   indonesian_explanation: Saya membaca.
 - coach: 'استخدم: أكتب'
   hint: 'Jawab dengan pola: أكتب'
@@ -34,7 +34,7 @@ turns:
   indonesian_explanation: Saya menulis.
 target_phrases:
 - مَاذَا تَفْعَلُ صَبَاحًا؟
-- أقرأ
+- أَقْرَأُ
 - أكتب
 - أَدْرُسُ الْعَرَبِيَّةَ
 rubric:

@@ -5,7 +5,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas p
 Kamu akan berlatih mengatakan:
 
 - مَاذَا تَفْعَلُ صَبَاحًا؟
-- أقرأ
+- أَقْرَأُ
 - أكتب
 - أَدْرُسُ الْعَرَبِيَّةَ
 - ثُمَّ أَعْمَلُ

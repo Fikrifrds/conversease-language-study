@@ -1,7 +1,7 @@
 scenario_key: arabic_help_and_problem_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اِقرئي الجملةَ.
+opening_line: اِقْرَئِي الْجُمْلَةَ.
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam
   kelas dan menyelesaikannya dengan permintaan sopan.'
 max_turns: 4
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: اِقرئي الجملةَ.
+- coach: اِقْرَئِي الْجُمْلَةَ.
   hint: 'Jawab dengan pola: لَا أَفْهَمُ'
   sample_answer: لَا أَفْهَمُ
   focus: 'Latihan frasa: Saya tidak paham.'

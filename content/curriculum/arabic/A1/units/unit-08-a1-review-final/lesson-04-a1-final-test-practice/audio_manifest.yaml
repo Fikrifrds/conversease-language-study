@@ -1,23 +1,6 @@
 lesson_key: lesson-04-a1-final-test-practice
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-04-a1-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260616T090404Z.wav
-  duration_seconds: 14.36
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Muallimah: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-04-a1-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260616T090404Z.wav
-  trace_id: BRgnSJjLyNEujNdp8vRv,FTAADM5lGvfRxJ4OKFJN,joUggoX8bUfHDDzJp4sq,VqcBtIRI0VVXnbox1xP8,B2rJvrCKrJMbQFX4VhAq,Z5KNfNGGnWSxwXrMHNHi,BJa1TaKbvxpqy2htA8Y4,GR36El0tLK2oo5r7dbNX
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T09:04:04.841994+00:00'
+assets: []

@@ -3,8 +3,8 @@
 Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أنا طالب.
-أنا معلم.
+أَنَا طَالِبٌ.
+أَنَا معلم.
 أعمل في ...
 أدرس في ...
 ```

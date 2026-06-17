@@ -5,7 +5,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedi
 Kamu akan berlatih mengatakan:
 
 - هَذِهِ عَائِلَتِي
-- أنا طالب
+- أَنَا طَالِبٌ
 - أَدْرُسُ الْعَرَبِيَّةَ
 - أَعْمَلُ فِي مَكْتَبٍ
 - أُحِبُّ الْقِرَاءَةَ

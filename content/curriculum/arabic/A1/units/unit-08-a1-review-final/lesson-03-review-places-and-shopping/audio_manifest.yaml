@@ -1,23 +1,6 @@
 lesson_key: lesson-03-review-places-and-shopping
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-3nav5pHC1EYvWOd5LmnA-20260616T090345Z.wav
-  duration_seconds: 12.81
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Layla: kdUY91gH5xyDHapxlthT
-  line_count: 6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-3nav5pHC1EYvWOd5LmnA-20260616T090345Z.wav
-  trace_id: 74dprLpoeN50Tg8WrgZS,S826LWTQMbzHNVmyDHDB,0o4cWCoPJUvbCs826RRx,V8gp9dQdKcjzrEhwWzpI,gGkX5vHFolWiTj08vkBl,h1GUAzRHQK06roKbxj0V
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T09:03:45.305009+00:00'
+assets: []

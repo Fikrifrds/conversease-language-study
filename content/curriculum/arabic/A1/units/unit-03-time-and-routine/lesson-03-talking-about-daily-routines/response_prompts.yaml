@@ -4,9 +4,9 @@ prompts:
   acceptable_responses:
   - مَاذَا تَفْعَلُ صَبَاحًا؟
 - prompt: 'Ucapkan dalam bahasa Arab: Saya membaca.'
-  target_response: أقرأ
+  target_response: أَقْرَأُ
   acceptable_responses:
-  - أقرأ
+  - أَقْرَأُ
 - prompt: 'Ucapkan dalam bahasa Arab: Saya menulis.'
   target_response: أكتب
   acceptable_responses:

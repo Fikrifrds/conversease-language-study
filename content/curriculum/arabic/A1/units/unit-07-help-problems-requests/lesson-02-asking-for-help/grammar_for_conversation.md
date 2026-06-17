@@ -5,7 +5,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 ```txt
 هَلْ تُسَاعِدُنِي؟
 أَحْتَاجُ مُسَاعَدَةً.
-أين أجد ...؟
+أَيْنَ أجد ...؟
 اِفْتَحِ الصَّفْحَةَ.
 ```
 

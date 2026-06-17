@@ -1,23 +1,6 @@
 lesson_key: lesson-05-routine-and-time-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-05-routine-and-time-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085716Z.wav
-  duration_seconds: 14.95
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Muallim: 3nav5pHC1EYvWOd5LmnA
-  line_count: 6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-05-routine-and-time-mission/listening-3nav5pHC1EYvWOd5LmnA-20260616T085716Z.wav
-  trace_id: G4m5KvfBfwpSdOLWiJWz,LeUjY6YjUm7CanoJJG86,8RIeSHGcB1n0ec7eoerF,qdcwK3Efg24fpacbbTj2,vrywfQI0Nm3rG4d9Nii5,OtJun7Zuvq60v4vJytyi
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T08:57:16.751760+00:00'
+assets: []

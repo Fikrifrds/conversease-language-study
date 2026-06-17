@@ -10,13 +10,13 @@ feedback_level:
   pro: detailed
 turns:
 - coach: مِنْ أَيْنَ أَنْتَِ؟
-  hint: 'Jawab dengan pola: أنا من إندونيسيا'
-  sample_answer: أنا من إندونيسيا
+  hint: 'Jawab dengan pola: أَنَا من إِنْدُونِيسِيَا'
+  sample_answer: أَنَا من إِنْدُونِيسِيَا
   focus: 'Latihan frasa: Saya dari Indonesia.'
   expected_keywords:
-  - أنا
+  - أَنَا
   - من
-  - إندونيسيا
+  - إِنْدُونِيسِيَا
   indonesian_explanation: Saya dari Indonesia.
 - coach: 'استخدم: عِنْدِي دَرْسٌ'
   hint: 'Jawab dengan pola: عِنْدِي دَرْسٌ'
@@ -35,7 +35,7 @@ turns:
   - كِتَابًا
   indonesian_explanation: Saya ingin buku.
 target_phrases:
-- أنا من إندونيسيا
+- أَنَا من إِنْدُونِيسِيَا
 - عِنْدِي دَرْسٌ
 - أُرِيدُ كِتَابًا
 - لَا أَفْهَمُ

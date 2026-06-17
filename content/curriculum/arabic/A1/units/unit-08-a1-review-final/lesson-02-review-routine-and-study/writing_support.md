@@ -5,4 +5,4 @@ Salin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau b
 - الْيَوْمُ الْإِثْنَيْنِ
 - السَّاعَةُ الثَّامِنَةُ
 - أَدْرُسُ الْعَرَبِيَّةَ
-- أقرأ وأكتب
+- أَقْرَأُ وَأَكْتُبُ

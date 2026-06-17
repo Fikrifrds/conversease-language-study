@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Nama saya Ahmad."?
   options:
   - اِسْمِي أَحْمَدُ
-  - أنا من إندونيسيا
+  - أَنَا من إِنْدُونِيسِيَا
   - أَكْتُبُ اسْمِي
   correct_answer: اِسْمِي أَحْمَدُ
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya dari Indonesia."?
   options:
-  - أنا من إندونيسيا
+  - أَنَا من إِنْدُونِيسِيَا
   - اِسْمِي أَحْمَدُ
   - أَكْتُبُ اسْمِي
-  correct_answer: أنا من إندونيسيا
+  correct_answer: أَنَا من إِنْدُونِيسِيَا

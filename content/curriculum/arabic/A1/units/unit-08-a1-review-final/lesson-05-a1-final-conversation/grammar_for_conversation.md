@@ -6,7 +6,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 مَرْحَبًا
 اِسْمِي ...
 أَدْرُسُ الْعَرَبِيَّةَ
-أين ...؟
+أَيْنَ ...؟
 أريد ...
 ```
 

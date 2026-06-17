@@ -2,10 +2,10 @@ phrases:
 - phrase: مَاذَا تَعْمَلُ؟
   meaning_id: Apa pekerjaanmu?
   usage_note: 'Gunakan saat ingin mengatakan: Apa pekerjaanmu?'
-- phrase: أنا طالب
+- phrase: أَنَا طَالِبٌ
   meaning_id: Saya pelajar.
   usage_note: 'Gunakan saat ingin mengatakan: Saya pelajar.'
-- phrase: أنا معلم
+- phrase: أَنَا معلم
   meaning_id: Saya guru.
   usage_note: 'Gunakan saat ingin mengatakan: Saya guru.'
 - phrase: أَعْمَلُ فِي مَكْتَبٍ

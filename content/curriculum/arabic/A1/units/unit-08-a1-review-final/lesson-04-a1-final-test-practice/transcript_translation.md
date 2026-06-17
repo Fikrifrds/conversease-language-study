@@ -1,8 +1,8 @@
 # Transcript Translation
 
 - **Muallimah:** مِنْ أَيْنَ أَنْتَِ؟ -> Dari mana kamu?
-- **Noura:** أنا من إندونيسيا. -> Saya dari Indonesia.
-- **Muallimah:** متى الدرس؟ -> Kapan pelajarannya?
+- **Noura:** أَنَا من إِنْدُونِيسِيَا. -> Saya dari Indonesia.
+- **Muallimah:** مَتَى الدَّرْسُ؟ -> Kapan pelajarannya?
 - **Noura:** الدَّرْسُ السَّاعَةَ الثَّامِنَةَ. -> Pelajarannya jam delapan.
 - **Muallimah:** مَاذَا تُرِيدِينَ؟ -> Apa yang kamu inginkan?
 - **Noura:** أُرِيدُ كِتَابًا. -> Saya ingin buku.

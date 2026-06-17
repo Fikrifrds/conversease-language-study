@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Apa yang kamu lakukan pagi hari?"?
   options:
   - مَاذَا تَفْعَلُ صَبَاحًا؟
-  - أقرأ
+  - أَقْرَأُ
   - أكتب
   correct_answer: مَاذَا تَفْعَلُ صَبَاحًا؟
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya membaca."?
   options:
-  - أقرأ
+  - أَقْرَأُ
   - مَاذَا تَفْعَلُ صَبَاحًا؟
   - أكتب
-  correct_answer: أقرأ
+  correct_answer: أَقْرَأُ

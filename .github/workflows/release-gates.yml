@@ -38,6 +38,12 @@ jobs:
       - name: Validate curriculum
         run: python scripts/validate_curriculum.py
 
+      - name: Check Arabic listening vocalization
+        run: python scripts/check_arabic_listening_vocalization.py
+
+      - name: Check generated web lesson data
+        run: python scripts/generate_web_lesson_data.py --check
+
       - name: Run release preflight
         run: python scripts/release_preflight.py
 
@@ -45,7 +51,7 @@ jobs:
         run: bash -n scripts/backup_postgres.sh scripts/verify_postgres_backup.sh
 
       - name: Lint API
-        run: python -m ruff check apps/api/app apps/api/tests scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
+        run: python -m ruff check apps/api/app apps/api/tests scripts/check_arabic_listening_vocalization.py scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
 
       - name: Test API
         run: python -m unittest discover -s apps/api/tests -t apps/api

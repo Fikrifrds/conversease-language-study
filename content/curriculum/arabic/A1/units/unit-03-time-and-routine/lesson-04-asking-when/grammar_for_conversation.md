@@ -3,7 +3,7 @@
 Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-متى الدرس؟
+مَتَى الدَّرْسُ؟
 فِي الصَّبَاحِ
 بَعْدَ الظُّهْرِ
 قَبْلَ الدَّرْسِ

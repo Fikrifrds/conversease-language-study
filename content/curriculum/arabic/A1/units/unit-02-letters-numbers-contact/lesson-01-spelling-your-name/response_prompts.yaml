@@ -1,8 +1,8 @@
 prompts:
 - prompt: 'Ucapkan dalam bahasa Arab: Bagaimana kamu menulis namamu?'
-  target_response: كيف تكتبُ اسمَكَ؟
+  target_response: كَيْفَ تَكْتُبُ اِسْمَكَ؟
   acceptable_responses:
-  - كيف تكتبُ اسمَكَ؟
+  - كَيْفَ تَكْتُبُ اِسْمَكَ؟
 - prompt: 'Ucapkan dalam bahasa Arab: Saya menulis nama saya ...'
   target_response: أَكْتُبُ اسْمِي ...
   acceptable_responses:

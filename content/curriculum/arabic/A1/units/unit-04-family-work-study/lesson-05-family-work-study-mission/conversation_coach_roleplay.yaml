@@ -17,13 +17,13 @@ turns:
   - هَذِهِ
   - عَائِلَتِي
   indonesian_explanation: Ini keluarga saya.
-- coach: 'استخدم: أنا طالب'
-  hint: 'Jawab dengan pola: أنا طالب'
-  sample_answer: أنا طالب
+- coach: 'استخدم: أَنَا طَالِبٌ'
+  hint: 'Jawab dengan pola: أَنَا طَالِبٌ'
+  sample_answer: أَنَا طَالِبٌ
   focus: 'Latihan frasa: Saya pelajar.'
   expected_keywords:
-  - أنا
-  - طالب
+  - أَنَا
+  - طَالِبٌ
   indonesian_explanation: Saya pelajar.
 - coach: 'استخدم: أَدْرُسُ الْعَرَبِيَّةَ'
   hint: 'Jawab dengan pola: أَدْرُسُ الْعَرَبِيَّةَ'
@@ -35,7 +35,7 @@ turns:
   indonesian_explanation: Saya belajar bahasa Arab.
 target_phrases:
 - هَذِهِ عَائِلَتِي
-- أنا طالب
+- أَنَا طَالِبٌ
 - أَدْرُسُ الْعَرَبِيَّةَ
 - أَعْمَلُ فِي مَكْتَبٍ
 rubric:

@@ -5,7 +5,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 ```txt
 هَلْ عِنْدَكُمْ قَلَمٌ؟
 نَعَمْ، مَوْجُودٌ.
-أريدُ هذا.
+أُرِيدُ هَذَا.
 آخُذُ وَاحِدًا.
 ```
 

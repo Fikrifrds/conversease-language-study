@@ -1,8 +1,8 @@
 prompts:
 - prompt: 'Ucapkan dalam bahasa Arab: Saya tidak mendengar hurufnya.'
-  target_response: لم أسمع الحرف
+  target_response: لم أَسْمَعُ الْحَرْفَ
   acceptable_responses:
-  - لم أسمع الحرف
+  - لم أَسْمَعُ الْحَرْفَ
 - prompt: 'Ucapkan dalam bahasa Arab: Pelan-pelan, tolong.'
   target_response: بِبُطْءٍ مِنْ فَضْلِكَ
   acceptable_responses:

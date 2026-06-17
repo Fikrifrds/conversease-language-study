@@ -4,7 +4,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau emai
 
 Kamu akan berlatih mengatakan:
 
-- لم أسمع الحرف
+- لم أَسْمَعُ الْحَرْفَ
 - بِبُطْءٍ مِنْ فَضْلِكَ
 - هَلْ قُلْتَ بَاءً؟
-- نَعَمْ، قلت بَاءٌ
+- نَعَمْ، قُلْتَ بَاءٌ

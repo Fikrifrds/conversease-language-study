@@ -1,7 +1,7 @@
 scenario_key: arabic_asking_to_repeat_a_letter
 mode: lesson_practice_coach
 level_code: A1
-opening_line: لم أسمع الحرف.
+opening_line: لم أَسْمَعُ الْحَرْفَ.
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email, kamu
   tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.'
 max_turns: 4
@@ -9,14 +9,14 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لم أسمع الحرف.
-  hint: 'Jawab dengan pola: لم أسمع الحرف'
-  sample_answer: لم أسمع الحرف
+- coach: لم أَسْمَعُ الْحَرْفَ.
+  hint: 'Jawab dengan pola: لم أَسْمَعُ الْحَرْفَ'
+  sample_answer: لم أَسْمَعُ الْحَرْفَ
   focus: 'Latihan frasa: Saya tidak mendengar hurufnya.'
   expected_keywords:
   - لم
-  - أسمع
-  - الحرف
+  - أَسْمَعُ
+  - الْحَرْفَ
   indonesian_explanation: Saya tidak mendengar hurufnya.
 - coach: 'استخدم: بِبُطْءٍ مِنْ فَضْلِكَ'
   hint: 'Jawab dengan pola: بِبُطْءٍ مِنْ فَضْلِكَ'
@@ -37,10 +37,10 @@ turns:
   - بَاءً
   indonesian_explanation: Apakah Anda mengatakan ba?
 target_phrases:
-- لم أسمع الحرف
+- لم أَسْمَعُ الْحَرْفَ
 - بِبُطْءٍ مِنْ فَضْلِكَ
 - هَلْ قُلْتَ بَاءً؟
-- نَعَمْ، قلت بَاءٌ
+- نَعَمْ، قُلْتَ بَاءٌ
 rubric:
   speaking:
     minimum_score: 60

@@ -1,10 +1,10 @@
 # Listening Script
 
-**Muallim:** مرحبًا.
-**Fatimah:** أهلًا وسهلًا.
-**Muallim:** كيف حالك اليوم؟
-**Fatimah:** أنا بخير، شكرًا.
-**Muallim:** أحسنتِ.
+**Muallim:** مَرْحَبًا.
+**Fatimah:** أَهْلًا وَسَهْلًا.
+**Muallim:** كَيْفَ حَالُكِ الْيَوْمَ؟
+**Fatimah:** أَنَا بِخَيْرٍ، شُكْرًا.
+**Muallim:** أَحْسَنْتِ.
 
 ## Audio Direction
 

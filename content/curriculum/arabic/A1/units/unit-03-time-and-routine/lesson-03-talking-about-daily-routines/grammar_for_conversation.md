@@ -3,7 +3,7 @@
 Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أقرأ
+أَقْرَأُ
 أكتب
 أَدْرُسُ الْعَرَبِيَّةَ
 ثُمَّ أَعْمَلُ

@@ -1,7 +1,7 @@
 scenario_key: arabic_routine_and_time_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أي يوم الْيَوْمُ؟
+opening_line: أي يَوْمَ الْيَوْمُ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana
   kepada teman kelas.'
 max_turns: 4
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أي يوم الْيَوْمُ؟
+- coach: أي يَوْمَ الْيَوْمُ؟
   hint: 'Jawab dengan pola: الْيَوْمُ ...'
   sample_answer: الْيَوْمُ ...
   focus: 'Latihan frasa: Hari ini ...'

@@ -4,7 +4,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 
 ```txt
 هَذِهِ عَائِلَتِي.
-أنا طالب.
+أَنَا طَالِبٌ.
 أَدْرُسُ الْعَرَبِيَّةَ.
 أُحِبُّ الْقِرَاءَةَ.
 ```

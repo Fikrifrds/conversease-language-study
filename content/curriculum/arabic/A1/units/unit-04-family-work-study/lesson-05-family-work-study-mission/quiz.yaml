@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Ini keluarga saya."?
   options:
   - هَذِهِ عَائِلَتِي
-  - أنا طالب
+  - أَنَا طَالِبٌ
   - أَدْرُسُ الْعَرَبِيَّةَ
   correct_answer: هَذِهِ عَائِلَتِي
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya pelajar."?
   options:
-  - أنا طالب
+  - أَنَا طَالِبٌ
   - هَذِهِ عَائِلَتِي
   - أَدْرُسُ الْعَرَبِيَّةَ
-  correct_answer: أنا طالب
+  correct_answer: أَنَا طَالِبٌ

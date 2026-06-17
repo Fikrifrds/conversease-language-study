@@ -1,7 +1,7 @@
 scenario_key: arabic_saying_you_do_not_understand
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اِقرأِ الجملةَ.
+opening_line: اِقْرَأِ الْجُمْلَةَ.
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi
   dan perlu menjelaskannya dengan sopan.'
 max_turns: 4
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: اِقرأِ الجملةَ.
+- coach: اِقْرَأِ الْجُمْلَةَ.
   hint: 'Jawab dengan pola: لَا أَفْهَمُ'
   sample_answer: لَا أَفْهَمُ
   focus: 'Latihan frasa: Saya tidak paham.'

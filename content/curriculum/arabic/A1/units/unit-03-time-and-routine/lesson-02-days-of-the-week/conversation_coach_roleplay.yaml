@@ -1,7 +1,7 @@
 scenario_key: arabic_days_of_the_week
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أي يوم الْيَوْمُ؟
+opening_line: أي يَوْمَ الْيَوْمُ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu
   menyebut hari ini serta hari berikutnya.'
 max_turns: 4
@@ -9,13 +9,13 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أي يوم الْيَوْمُ؟
-  hint: 'Jawab dengan pola: أي يوم الْيَوْمُ؟'
-  sample_answer: أي يوم الْيَوْمُ؟
+- coach: أي يَوْمَ الْيَوْمُ؟
+  hint: 'Jawab dengan pola: أي يَوْمَ الْيَوْمُ؟'
+  sample_answer: أي يَوْمَ الْيَوْمُ؟
   focus: 'Latihan frasa: Hari apa hari ini?'
   expected_keywords:
   - أي
-  - يوم
+  - يَوْمَ
   - الْيَوْمُ
   indonesian_explanation: Hari apa hari ini?
 - coach: 'استخدم: الْيَوْمُ الْإِثْنَيْنِ'
@@ -35,7 +35,7 @@ turns:
   - الثُّلَاثَاءُ
   indonesian_explanation: Besok Selasa.
 target_phrases:
-- أي يوم الْيَوْمُ؟
+- أي يَوْمَ الْيَوْمُ؟
 - الْيَوْمُ الْإِثْنَيْنِ
 - غَدًا الثُّلَاثَاءُ
 - عِنْدِي دَرْسٌ

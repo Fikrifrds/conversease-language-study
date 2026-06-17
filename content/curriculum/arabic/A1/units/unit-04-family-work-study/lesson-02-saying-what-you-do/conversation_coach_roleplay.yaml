@@ -17,26 +17,26 @@ turns:
   - مَاذَا
   - تَعْمَلُ
   indonesian_explanation: Apa pekerjaanmu?
-- coach: 'استخدم: أنا طالب'
-  hint: 'Jawab dengan pola: أنا طالب'
-  sample_answer: أنا طالب
+- coach: 'استخدم: أَنَا طَالِبٌ'
+  hint: 'Jawab dengan pola: أَنَا طَالِبٌ'
+  sample_answer: أَنَا طَالِبٌ
   focus: 'Latihan frasa: Saya pelajar.'
   expected_keywords:
-  - أنا
-  - طالب
+  - أَنَا
+  - طَالِبٌ
   indonesian_explanation: Saya pelajar.
-- coach: 'استخدم: أنا معلم'
-  hint: 'Jawab dengan pola: أنا معلم'
-  sample_answer: أنا معلم
+- coach: 'استخدم: أَنَا معلم'
+  hint: 'Jawab dengan pola: أَنَا معلم'
+  sample_answer: أَنَا معلم
   focus: 'Latihan frasa: Saya guru.'
   expected_keywords:
-  - أنا
+  - أَنَا
   - معلم
   indonesian_explanation: Saya guru.
 target_phrases:
 - مَاذَا تَعْمَلُ؟
-- أنا طالب
-- أنا معلم
+- أَنَا طَالِبٌ
+- أَنَا معلم
 - أَعْمَلُ فِي مَكْتَبٍ
 rubric:
   speaking:

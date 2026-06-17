@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Apa pekerjaanmu?"?
   options:
   - مَاذَا تَعْمَلُ؟
-  - أنا طالب
-  - أنا معلم
+  - أَنَا طَالِبٌ
+  - أَنَا معلم
   correct_answer: مَاذَا تَعْمَلُ؟
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya pelajar."?
   options:
-  - أنا طالب
+  - أَنَا طَالِبٌ
   - مَاذَا تَعْمَلُ؟
-  - أنا معلم
-  correct_answer: أنا طالب
+  - أَنَا معلم
+  correct_answer: أَنَا طَالِبٌ

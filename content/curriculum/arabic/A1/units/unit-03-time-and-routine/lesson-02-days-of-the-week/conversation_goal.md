@@ -4,7 +4,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan
 
 Kamu akan berlatih mengatakan:
 
-- أي يوم الْيَوْمُ؟
+- أي يَوْمَ الْيَوْمُ؟
 - الْيَوْمُ الْإِثْنَيْنِ
 - غَدًا الثُّلَاثَاءُ
 - عِنْدِي دَرْسٌ

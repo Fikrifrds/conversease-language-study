@@ -2,14 +2,14 @@ questions:
 - key: phrase_1
   prompt: Frasa mana yang berarti "Saya tidak mendengar hurufnya."?
   options:
-  - لم أسمع الحرف
+  - لم أَسْمَعُ الْحَرْفَ
   - بِبُطْءٍ مِنْ فَضْلِكَ
   - هَلْ قُلْتَ بَاءً؟
-  correct_answer: لم أسمع الحرف
+  correct_answer: لم أَسْمَعُ الْحَرْفَ
 - key: phrase_2
   prompt: Frasa mana yang berarti "Pelan-pelan, tolong."?
   options:
   - بِبُطْءٍ مِنْ فَضْلِكَ
-  - لم أسمع الحرف
+  - لم أَسْمَعُ الْحَرْفَ
   - هَلْ قُلْتَ بَاءً؟
   correct_answer: بِبُطْءٍ مِنْ فَضْلِكَ

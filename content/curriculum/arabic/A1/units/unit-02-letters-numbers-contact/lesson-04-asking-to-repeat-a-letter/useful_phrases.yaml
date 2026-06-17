@@ -1,5 +1,5 @@
 phrases:
-- phrase: لم أسمع الحرف
+- phrase: لم أَسْمَعُ الْحَرْفَ
   meaning_id: Saya tidak mendengar hurufnya.
   usage_note: 'Gunakan saat ingin mengatakan: Saya tidak mendengar hurufnya.'
 - phrase: بِبُطْءٍ مِنْ فَضْلِكَ
@@ -8,6 +8,6 @@ phrases:
 - phrase: هَلْ قُلْتَ بَاءً؟
   meaning_id: Apakah Anda mengatakan ba?
   usage_note: 'Gunakan saat ingin mengatakan: Apakah Anda mengatakan ba?'
-- phrase: نَعَمْ، قلت بَاءٌ
+- phrase: نَعَمْ، قُلْتَ بَاءٌ
   meaning_id: Ya, saya mengatakan ba.
   usage_note: 'Gunakan saat ingin mengatakan: Ya, saya mengatakan ba.'

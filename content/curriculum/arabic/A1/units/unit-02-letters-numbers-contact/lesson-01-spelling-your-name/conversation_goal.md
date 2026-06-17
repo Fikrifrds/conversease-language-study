@@ -4,7 +4,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. 
 
 Kamu akan berlatih mengatakan:
 
-- كيف تكتبُ اسمَكَ؟
+- كَيْفَ تَكْتُبُ اِسْمَكَ؟
 - أَكْتُبُ اسْمِي ...
 - هَذَا حَرْفُ ...
 - هَلْ هَذَا صَحِيحٌ؟

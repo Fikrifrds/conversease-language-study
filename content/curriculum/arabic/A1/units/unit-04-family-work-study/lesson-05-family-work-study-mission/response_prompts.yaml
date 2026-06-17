@@ -4,9 +4,9 @@ prompts:
   acceptable_responses:
   - هَذِهِ عَائِلَتِي
 - prompt: 'Ucapkan dalam bahasa Arab: Saya pelajar.'
-  target_response: أنا طالب
+  target_response: أَنَا طَالِبٌ
   acceptable_responses:
-  - أنا طالب
+  - أَنَا طَالِبٌ
 - prompt: 'Ucapkan dalam bahasa Arab: Saya belajar bahasa Arab.'
   target_response: أَدْرُسُ الْعَرَبِيَّةَ
   acceptable_responses:

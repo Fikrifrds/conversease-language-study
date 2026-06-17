@@ -1,23 +1,6 @@
 lesson_key: lesson-04-asking-how-to-get-there
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_multilingual_v2
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260616T085931Z.wav
-  duration_seconds: 10.02
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-  line_count: 5
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260616T085931Z.wav
-  trace_id: TiLC1ygtzLmXVyKz2Pc3,d2f6hCJJgI7yOBOIqKQR,jD0IG4rNU1wmbdvrKRDO,6b0e5L1B9zTLbLT77oUN,jWCeXAZyc76ab3G4HuUl
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T08:59:31.551313+00:00'
+assets: []

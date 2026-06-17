@@ -1,8 +1,8 @@
 prompts:
 - prompt: 'Ucapkan dalam bahasa Arab: Kapan pelajarannya?'
-  target_response: متى الدرس؟
+  target_response: مَتَى الدَّرْسُ؟
   acceptable_responses:
-  - متى الدرس؟
+  - مَتَى الدَّرْسُ؟
 - prompt: 'Ucapkan dalam bahasa Arab: Pada pagi hari'
   target_response: فِي الصَّبَاحِ
   acceptable_responses:

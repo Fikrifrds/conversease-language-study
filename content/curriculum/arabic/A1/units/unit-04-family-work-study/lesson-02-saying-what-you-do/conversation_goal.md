@@ -5,7 +5,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan
 Kamu akan berlatih mengatakan:
 
 - مَاذَا تَعْمَلُ؟
-- أنا طالب
-- أنا معلم
+- أَنَا طَالِبٌ
+- أَنَا معلم
 - أَعْمَلُ فِي مَكْتَبٍ
 - أَدْرُسُ فِي مَدْرَسَةٍ

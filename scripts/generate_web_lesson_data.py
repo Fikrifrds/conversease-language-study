@@ -502,9 +502,22 @@ def generate() -> str:
 
 def main() -> int:
     new_contents = generate()
-    if DATA_TS.read_text(encoding="utf-8") == new_contents:
+    current_contents = DATA_TS.read_text(encoding="utf-8")
+    check_only = "--check" in sys.argv[1:]
+
+    if current_contents == new_contents:
         print("data.ts already in sync with curriculum.")
         return 0
+
+    if check_only:
+        print(
+            "apps/web/lib/data.ts is out of sync with curriculum. Run:\n"
+            "  PYTHONPATH=apps/api apps/api/.venv/bin/python "
+            "scripts/generate_web_lesson_data.py",
+            file=sys.stderr,
+        )
+        return 1
+
     DATA_TS.write_text(new_contents, encoding="utf-8")
     print(f"Regenerated {DATA_TS.relative_to(REPO_ROOT)} from curriculum.")
     return 0

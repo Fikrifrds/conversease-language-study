@@ -4,7 +4,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kel
 
 Kamu akan berlatih mengatakan:
 
-- متى الدرس؟
+- مَتَى الدَّرْسُ؟
 - فِي الصَّبَاحِ
 - بَعْدَ الظُّهْرِ
 - قَبْلَ الدَّرْسِ

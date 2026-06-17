@@ -1,7 +1,7 @@
 scenario_key: arabic_asking_when
 mode: lesson_practice_coach
 level_code: A1
-opening_line: متى الدرس؟
+opening_line: مَتَى الدَّرْسُ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kelas, latihan,
   atau pertemuan dimulai.'
 max_turns: 4
@@ -9,13 +9,13 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: متى الدرس؟
-  hint: 'Jawab dengan pola: متى الدرس؟'
-  sample_answer: متى الدرس؟
+- coach: مَتَى الدَّرْسُ؟
+  hint: 'Jawab dengan pola: مَتَى الدَّرْسُ؟'
+  sample_answer: مَتَى الدَّرْسُ؟
   focus: 'Latihan frasa: Kapan pelajarannya?'
   expected_keywords:
-  - متى
-  - الدرس
+  - مَتَى
+  - الدَّرْسُ
   indonesian_explanation: Kapan pelajarannya?
 - coach: 'استخدم: فِي الصَّبَاحِ'
   hint: 'Jawab dengan pola: فِي الصَّبَاحِ'
@@ -34,7 +34,7 @@ turns:
   - الظُّهْرِ
   indonesian_explanation: Setelah tengah hari
 target_phrases:
-- متى الدرس؟
+- مَتَى الدَّرْسُ؟
 - فِي الصَّبَاحِ
 - بَعْدَ الظُّهْرِ
 - قَبْلَ الدَّرْسِ
