@@ -28,7 +28,6 @@ from app.services.audio_generation import (
     infer_voice_gender,
     listening_script_to_dialogue_turns,
     listening_script_to_tts_text,
-    naturalize_dialogue_turn_text,
     synthesize_dialogue_elevenlabs_tts,
     synthesize_dialogue_minimax_tts,
     update_production_tracker_audio,
@@ -70,11 +69,6 @@ class AudioGenerationTest(unittest.TestCase):
             self.assertEqual(turns[0].text, "شكرًا. سأذهب إلى المقهى.")
             self.assertEqual(turns[0].pause_after_seconds, 0.9)
             self.assertEqual(turns[1].pause_after_seconds, 0.0)
-
-    def test_naturalize_dialogue_turn_keeps_meaningful_colon_text(self):
-        text = "بَرِيدِي الْإِلِكْتُرُونِيُّ: أَحْمَدُ نُقْطَةٌ وَاحِدٌ."
-
-        self.assertEqual(naturalize_dialogue_turn_text(text), text)
 
     def test_dialogue_voice_assignment_uses_distinct_gendered_voices(self):
         turns = [

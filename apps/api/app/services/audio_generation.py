@@ -1672,7 +1672,7 @@ def safe_audio_pause_seconds(value: str) -> float:
 def naturalize_dialogue_turn_text(value: str) -> str:
     cleaned = clean_dialogue_text(value)
     cleaned = AUDIO_PAUSE_TAG_RE.sub(" ", cleaned)
-    cleaned = re.sub(r"^[A-Za-z][A-Za-z .'-]{0,47}[:：]\s*", "", cleaned).strip()
+    cleaned = re.sub(r"^[^:\n：]{1,48}[:：]\s*", "", cleaned).strip()
     return re.sub(r"\s+", " ", cleaned)
 
 
