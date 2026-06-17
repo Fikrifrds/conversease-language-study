@@ -32,6 +32,8 @@ export function UserAccountMenu() {
   const [access, setAccess] = useState<BillingAccess | null>(null);
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  const triggerRef = useRef<HTMLButtonElement | null>(null);
+  const firstMenuItemRef = useRef<HTMLAnchorElement | null>(null);
 
   useEffect(() => {
     let ignore = false;
@@ -92,10 +94,32 @@ export function UserAccountMenu() {
         setOpen(false);
       }
     }
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        setOpen(false);
+        triggerRef.current?.focus();
+      }
+    }
+
     if (open) {
       document.addEventListener("mousedown", onClickOutside);
+      document.addEventListener("keydown", onKeyDown);
     }
-    return () => document.removeEventListener("mousedown", onClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", onClickOutside);
+      document.removeEventListener("keydown", onKeyDown);
+    };
+  }, [open]);
+
+  useEffect(() => {
+    if (!open) {
+      return;
+    }
+    const frame = window.requestAnimationFrame(() => {
+      firstMenuItemRef.current?.focus();
+    });
+    return () => window.cancelAnimationFrame(frame);
   }, [open]);
 
   function handleLogout() {
@@ -148,6 +172,7 @@ export function UserAccountMenu() {
 
       <div className="relative" ref={menuRef}>
         <button
+          ref={triggerRef}
           type="button"
           onClick={() => setOpen((value) => !value)}
           aria-haspopup="menu"
@@ -167,7 +192,7 @@ export function UserAccountMenu() {
         {open ? (
           <div
             role="menu"
-            className="absolute right-0 z-50 mt-2 w-60 overflow-hidden rounded-lg border border-ink/10 bg-white shadow-lg"
+            className="absolute right-0 z-50 mt-2 w-[min(15rem,calc(100vw-1rem))] overflow-hidden rounded-lg border border-ink/10 bg-white shadow-lg"
           >
             <div className="border-b border-ink/10 px-4 py-3">
               <p className="truncate text-sm font-semibold text-ink">{session.user.name}</p>
@@ -189,7 +214,12 @@ export function UserAccountMenu() {
             </div>
 
             <nav className="py-1" aria-label="Akun">
-              <MenuLink href={productRoutes.billing} icon={CreditCard} onClick={() => setOpen(false)}>
+              <MenuLink
+                href={productRoutes.billing}
+                icon={CreditCard}
+                onClick={() => setOpen(false)}
+                itemRef={firstMenuItemRef}
+              >
                 Tagihan & Paket
               </MenuLink>
               <MenuLink href={productRoutes.levelTests} icon={Award} onClick={() => setOpen(false)}>
@@ -227,15 +257,18 @@ function MenuLink({
   href,
   icon: Icon,
   onClick,
-  children
+  children,
+  itemRef
 }: {
   href: string;
   icon: typeof CreditCard;
   onClick: () => void;
   children: React.ReactNode;
+  itemRef?: React.Ref<HTMLAnchorElement>;
 }) {
   return (
     <Link
+      ref={itemRef}
       href={href}
       role="menuitem"
       onClick={onClick}

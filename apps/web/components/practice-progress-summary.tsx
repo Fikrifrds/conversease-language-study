@@ -111,9 +111,11 @@ export function PracticeProgressSummary({
   return (
     <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
       <div className="flex items-start justify-between gap-4">
-        <div>
+        <div className="min-w-0 flex-1">
           <p className="text-sm font-semibold uppercase text-leaf">Latihan Terakhir</p>
-          <h2 className="mt-2 text-xl font-semibold">{scenarioTitle ? `Roleplay: ${scenarioTitle}` : "Mulai roleplay pertama"}</h2>
+          <h2 className="mt-2 break-words text-xl font-semibold">
+            {scenarioTitle ? `Roleplay: ${scenarioTitle}` : "Mulai roleplay pertama"}
+          </h2>
         </div>
         <MessageCircle className="h-5 w-5 text-coral" aria-hidden="true" />
       </div>

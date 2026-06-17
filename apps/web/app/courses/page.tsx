@@ -72,7 +72,7 @@ export default function CoursesPage() {
             </p>
           </div>
 
-          <div className="inline-flex shrink-0 rounded-lg border border-ink/10 bg-white p-1 shadow-sm">
+          <div className="flex flex-wrap gap-1 rounded-lg border border-ink/10 bg-white p-1 shadow-sm lg:inline-flex lg:shrink-0">
             {languageFilters.map((item) => (
               <button
                 key={item.key}
@@ -169,10 +169,10 @@ function TrackSummaryCard({
       }`}
     >
       <div className="flex items-start justify-between gap-4">
-        <div>
+        <div className="min-w-0 flex-1">
           <p className="text-xs font-semibold uppercase text-leaf">{status}</p>
-          <h2 className="mt-1 text-xl font-semibold">{title}</h2>
-          <p className="mt-2 text-sm leading-6 text-ink/65">{description}</p>
+          <h2 className="mt-1 break-words text-xl font-semibold">{title}</h2>
+          <p className="mt-2 break-words text-sm leading-6 text-ink/65">{description}</p>
         </div>
         <BookOpen className="h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
       </div>
@@ -256,7 +256,7 @@ function CourseCardHeader({
 }) {
   return (
     <div className="flex items-start justify-between gap-4">
-      <div>
+      <div className="min-w-0 flex-1">
         <div className="flex flex-wrap gap-2">
           <span className={`rounded-lg px-3 py-1 text-xs font-bold ${badgeTone}`}>
             {course.languageLabel}
@@ -270,7 +270,7 @@ function CourseCardHeader({
             </span>
           ) : null}
         </div>
-        <h3 className={`mt-4 text-2xl font-semibold ${muted ? "text-ink/70" : "text-ink"}`}>
+        <h3 className={`mt-4 break-words text-2xl font-semibold ${muted ? "text-ink/70" : "text-ink"}`}>
           {course.title}
         </h3>
       </div>

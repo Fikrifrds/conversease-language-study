@@ -43,8 +43,10 @@ export function LearningProgressReport() {
       </div>
       <div className="mt-6">
         <div className="mb-2 flex items-center justify-between text-sm">
-          <span className="font-medium">{summary?.course.title ?? "Start Simple Conversations"}</span>
-          <span>{completionPercent}%</span>
+          <span className="min-w-0 flex-1 truncate pr-3 font-medium">
+            {summary?.course.title ?? "Start Simple Conversations"}
+          </span>
+          <span className="shrink-0">{completionPercent}%</span>
         </div>
         <div className="h-3 rounded-lg bg-ink/10">
           <div className="h-3 rounded-lg bg-leaf" style={{ width: `${completionPercent}%` }} />
@@ -60,11 +62,11 @@ export function LearningProgressReport() {
               href={`/lessons/${lesson.slug}`}
               className="focus-ring flex items-start justify-between gap-4 rounded-lg bg-paper p-4 hover:bg-mint"
             >
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-xs font-semibold uppercase text-coral">
                   {lessonPlacementLabel(lesson.slug) ?? lesson.unitTitle}
                 </p>
-                <h3 className="mt-1 font-semibold">{lesson.title}</h3>
+                <h3 className="mt-1 break-words font-semibold">{lesson.title}</h3>
                 <p className="mt-1 text-sm text-ink/60">
                   {completed ? "Selesai" : lesson.progressStatus === "in_progress" ? "Sedang berjalan" : "Belum mulai"}
                 </p>

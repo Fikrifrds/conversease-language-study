@@ -63,10 +63,14 @@ export default function HomePage() {
               Arabic beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-              <ActionButton href="/register" icon={ArrowRight} tone="light">
-                Mulai Belajar Gratis
-              </ActionButton>
-              <LandingCoachCta />
+              <div className="w-full sm:w-auto">
+                <ActionButton href="/register" icon={ArrowRight} tone="light">
+                  Mulai Belajar Gratis
+                </ActionButton>
+              </div>
+              <div className="w-full sm:w-auto">
+                <LandingCoachCta />
+              </div>
             </div>
           </div>
           <div className="self-end lg:pl-8">
@@ -123,7 +127,7 @@ export default function HomePage() {
           Conversease tetap conversation-first: dengar, pahami, tirukan, respons, lalu dapat
           feedback yang jelas untuk tiap track bahasa.
         </SectionHeading>
-        <div className="mt-8 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {[
             ["English Conversation", "Mulai dari greeting, self-introduction, daily routine, simple questions, sampai evaluasi A1."],
             ["Arabic", "Fondasi Arabic formal untuk sapaan umum, perkenalan, instruksi kelas, dan frasa ketika belum paham."],
