@@ -39,19 +39,19 @@ export default function HomePage() {
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 md:hidden lg:px-8">
           <nav className="flex gap-2 overflow-x-auto pb-2" aria-label="Navigasi landing mobile">
             <Link
-              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
+              className="focus-ring shrink-0 rounded-lg border border-white/20 bg-white/8 px-3 py-2 text-sm font-medium text-white backdrop-blur-sm"
               href="/courses"
             >
               Kurikulum
             </Link>
             <Link
-              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
+              className="focus-ring shrink-0 rounded-lg border border-white/20 bg-white/8 px-3 py-2 text-sm font-medium text-white backdrop-blur-sm"
               href="/conversation-coach"
             >
               Conversation Coach
             </Link>
             <Link
-              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
+              className="focus-ring shrink-0 rounded-lg border border-white/20 bg-white/8 px-3 py-2 text-sm font-medium text-white backdrop-blur-sm"
               href="/pricing"
             >
               Harga
@@ -59,7 +59,7 @@ export default function HomePage() {
           </nav>
         </div>
         <div className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-16 pt-10 sm:px-6 sm:gap-10 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
-          <div className="max-w-2xl rounded-2xl bg-black/18 p-4 text-white backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-0">
+          <div className="max-w-2xl rounded-2xl border border-white/10 bg-gradient-to-br from-ink/30 via-clay/18 to-transparent p-4 text-white shadow-soft backdrop-blur-[2px] sm:border-0 sm:bg-transparent sm:p-0 sm:shadow-none sm:backdrop-blur-0">
             <p className="text-sm font-semibold uppercase text-sun">Bahasa jadi bisa dipakai</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Conversease

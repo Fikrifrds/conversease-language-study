@@ -47,8 +47,8 @@ textarea {
 @media (max-width: 767px) {
   .hero-mask {
     background:
-      linear-gradient(180deg, rgba(20, 18, 17, 0.82), rgba(28, 25, 23, 0.56) 34%, rgba(28, 25, 23, 0.18) 72%, rgba(28, 25, 23, 0.08) 100%),
-      linear-gradient(90deg, rgba(20, 18, 17, 0.78) 0%, rgba(20, 18, 17, 0.58) 36%, rgba(124, 45, 18, 0.18) 72%, rgba(255, 250, 245, 0.03) 100%);
+      linear-gradient(180deg, rgba(28, 25, 23, 0.76), rgba(154, 52, 18, 0.40) 34%, rgba(255, 250, 245, 0.10) 74%, rgba(255, 250, 245, 0.03) 100%),
+      linear-gradient(90deg, rgba(28, 25, 23, 0.70) 0%, rgba(154, 52, 18, 0.42) 42%, rgba(255, 237, 213, 0.18) 78%, rgba(255, 250, 245, 0.04) 100%);
   }
 }
 
