@@ -38,27 +38,33 @@ export default function HomePage() {
         </header>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 md:hidden lg:px-8">
           <nav className="flex gap-2 overflow-x-auto pb-2" aria-label="Navigasi landing mobile">
-            <Link className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white" href="/courses">
+            <Link
+              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
+              href="/courses"
+            >
               Kurikulum
             </Link>
             <Link
-              className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white"
+              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
               href="/conversation-coach"
             >
               Conversation Coach
             </Link>
-            <Link className="focus-ring shrink-0 rounded-lg bg-white/10 px-3 py-2 text-sm font-medium text-white" href="/pricing">
+            <Link
+              className="focus-ring shrink-0 rounded-lg border border-white/12 bg-black/20 px-3 py-2 text-sm font-medium text-white/95 backdrop-blur-sm"
+              href="/pricing"
+            >
               Harga
             </Link>
           </nav>
         </div>
-        <div className="relative z-10 mx-auto grid max-w-7xl gap-10 px-4 pb-16 pt-12 sm:px-6 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
-          <div className="max-w-2xl text-white">
+        <div className="relative z-10 mx-auto grid max-w-7xl gap-8 px-4 pb-16 pt-10 sm:px-6 sm:gap-10 sm:pt-16 lg:grid-cols-[0.95fr_1.05fr] lg:px-8 lg:pt-24">
+          <div className="max-w-2xl rounded-2xl bg-black/18 p-4 text-white backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-0">
             <p className="text-sm font-semibold uppercase text-sun">Bahasa jadi bisa dipakai</p>
             <h1 className="mt-4 text-4xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
               Conversease
             </h1>
-            <p className="mt-5 max-w-xl text-lg leading-8 text-white/90">
+            <p className="mt-5 max-w-xl text-lg leading-8 text-white/92">
               Belajar bahasa lewat percakapan terarah. Mulai dari English speaking, lalu masuk ke
               Arabic beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
             </p>
@@ -74,7 +80,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="self-end lg:pl-8">
-            <div className="max-w-md rounded-lg border border-white/20 bg-white/90 p-4 shadow-soft backdrop-blur">
+            <div className="max-w-md rounded-2xl border border-white/25 bg-white/94 p-4 shadow-soft backdrop-blur sm:rounded-lg sm:bg-white/90">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-xs font-semibold uppercase text-leaf">Misi Hari Ini</p>
