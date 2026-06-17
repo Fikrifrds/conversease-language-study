@@ -1,6 +1,24 @@
 lesson_key: lesson-04-rescheduling-politely
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-02-plans-invitations/lesson-04-rescheduling-politely/listening-3nav5pHC1EYvWOd5LmnA-20260617T172709Z.wav
+  duration_seconds: 15.18
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Layla: kdUY91gH5xyDHapxlthT
+    Sara: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  script_content_hash: 6a2255f66ed15a06913ded1345b7a9d34564388b5e1d5df820b80e49a6b5a5d9
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-02-plans-invitations/lesson-04-rescheduling-politely/listening-3nav5pHC1EYvWOd5LmnA-20260617T172709Z.wav
+  trace_id: oDTMfjbAPgdLKz3meRVT,RLqMYuXPMWLBIdGmWu4F,0VrYiogvXfZbmPTPIcw1,gJO5lSR4N0veZWjv06cX,mH5AYOBQvMkVZjN1MjeN,z6yN0FFYREfSEVLmCOfB
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:27:09.848685+00:00'

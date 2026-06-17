@@ -1,6 +1,24 @@
 lesson_key: lesson-04-a2-final-test-practice
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260617T173344Z.wav
+  duration_seconds: 29.86
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hakim: kr4VZw8MSZMHE0y2m40n
+    Rami: 3nav5pHC1EYvWOd5LmnA
+  line_count: 8
+  script_content_hash: 3548beb2fc760bb6260618347883d76dae4161db0d99a43518bc389a502110d0
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260617T173344Z.wav
+  trace_id: YHe7joX7t8fwRwASL3LI,93Nn22gylD6A0K7kZIoU,sulkyo86ldp50fRED11Z,sguwXLC1O7nBgN8y7ony,P81v36LcaDM0R5SPnET5,VOMMOWlgL1DbLHv4TMNx,HvyCvkK2RynTbU7sYhck,h4dCcwAkCy52sdjJwPPQ
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:33:44.062863+00:00'

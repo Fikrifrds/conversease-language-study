@@ -1,6 +1,24 @@
 lesson_key: lesson-01-saying-how-you-feel
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-05-health-appointments/lesson-01-saying-how-you-feel/listening-3nav5pHC1EYvWOd5LmnA-20260617T172947Z.wav
+  duration_seconds: 16.6
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 7
+  script_content_hash: 103034dce0e064107b0d7bd1a12d79a2a0b073919890c33363805c3c8b538299
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-05-health-appointments/lesson-01-saying-how-you-feel/listening-3nav5pHC1EYvWOd5LmnA-20260617T172947Z.wav
+  trace_id: o3td1Shdxh8VgN51iONI,WTkbOXHNSU9FvLilq6Tq,AfnQWXpsA9Yn2o0zCnu2,4WZuA2qF9RcV6paviO3f,9UMffzA87aJCB702Ad2V,ou75vrS3eECVnaN2vs1h,BpE1io0VGJ0mxXi6xPPW
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:29:47.664164+00:00'

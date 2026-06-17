@@ -1,6 +1,24 @@
 lesson_key: lesson-01-review-social-and-plans
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-3nav5pHC1EYvWOd5LmnA-20260617T173301Z.wav
+  duration_seconds: 20.98
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 8
+  script_content_hash: 3af3bbcb192aef5bf12c05892962308666d19e714794427a502cbbc47387b99a
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-3nav5pHC1EYvWOd5LmnA-20260617T173301Z.wav
+  trace_id: aiqzTnok8cWQz8up0AoS,v6yKSwjnbNeaXSbYr7eH,zEB10KWfapBldMyVeI1x,D0yomSKueU5DtkwBQCBL,XIbQ48nfX2yqZLXdEM7z,1CY6T781Mts04bbnSSyO,q0URNumtFFwVr1Q7vKRt,N36sYRsWGo1irGOeRo99
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:33:01.251787+00:00'

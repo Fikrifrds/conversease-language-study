@@ -1,6 +1,24 @@
 lesson_key: lesson-02-inviting-someone
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-02-plans-invitations/lesson-02-inviting-someone/listening-3nav5pHC1EYvWOd5LmnA-20260617T172644Z.wav
+  duration_seconds: 16.62
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: fd9895e56590e3cf6f968b84515296634b13f2c248f96c28710a7c7544e23688
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-02-plans-invitations/lesson-02-inviting-someone/listening-3nav5pHC1EYvWOd5LmnA-20260617T172644Z.wav
+  trace_id: 9G3KNFs41p4oedPz6r7n,kOBN5JAqmfmlpq1d78yN,bGaYvfkmyMvslIkZzWPa,wKhoJboSnS9B4KKWEoSd,W9i6tVCjq2Ns7ylTZ4FO,nufAtdN4fJwnIHm1Gusf
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T17:26:44.840003+00:00'
