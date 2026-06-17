@@ -3,6 +3,6 @@
 Salin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.
 
 - لَا أَفْهَمُ
-- هَلْ تُسَاعِدُنِي؟
+- أَحْتَاجُ مُسَاعَدَةً
 - بِبُطْءٍ مِنْ فَضْلِكَ
 - أَعِدْ مَرَّةً أُخْرَى

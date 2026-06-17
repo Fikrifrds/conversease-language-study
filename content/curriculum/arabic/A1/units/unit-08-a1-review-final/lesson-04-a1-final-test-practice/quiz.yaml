@@ -2,14 +2,14 @@ questions:
 - key: phrase_1
   prompt: Frasa mana yang berarti "Saya dari Indonesia."?
   options:
-  - أَنَا من إِنْدُونِيسِيَا
+  - أَنَا مِنْ إِنْدُونِيسِيَا
   - عِنْدِي دَرْسٌ
   - أُرِيدُ كِتَابًا
-  correct_answer: أَنَا من إِنْدُونِيسِيَا
+  correct_answer: أَنَا مِنْ إِنْدُونِيسِيَا
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya punya pelajaran."?
   options:
   - عِنْدِي دَرْسٌ
-  - أَنَا من إِنْدُونِيسِيَا
+  - أَنَا مِنْ إِنْدُونِيسِيَا
   - أُرِيدُ كِتَابًا
   correct_answer: عِنْدِي دَرْسٌ

@@ -5,4 +5,4 @@
 - **Layla:** بِبُطْءٍ مِنْ فَضْلِكَ. -> Pelan-pelan, tolong.
 - **Zayd:** بَاءٌ. -> Ba.
 - **Layla:** هَلْ قُلْتَ بَاءً؟ -> Apakah Anda mengatakan ba?
-- **Zayd:** نَعَمْ، قُلْتَ بَاءٌ. -> Ya, saya mengatakan ba.
+- **Zayd:** نَعَمْ، قُلْتُ بَاءً. -> Ya, saya mengatakan ba.

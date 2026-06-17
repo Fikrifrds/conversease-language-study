@@ -4,7 +4,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertan
 
 Kamu akan berlatih mengatakan:
 
-- أَنَا من إِنْدُونِيسِيَا
+- أَنَا مِنْ إِنْدُونِيسِيَا
 - عِنْدِي دَرْسٌ
 - أُرِيدُ كِتَابًا
 - لَا أَفْهَمُ

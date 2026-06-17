@@ -1,7 +1,7 @@
 scenario_key: arabic_a1_final_test_practice
 mode: lesson_practice_coach
 level_code: A1
-opening_line: مِنْ أَيْنَ أَنْتَِ؟
+opening_line: مِنْ أَيْنَ أَنْتِ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan final
   A1 secara singkat dan jelas.'
 max_turns: 4
@@ -9,9 +9,9 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مِنْ أَيْنَ أَنْتَِ؟
-  hint: 'Jawab dengan pola: أَنَا من إِنْدُونِيسِيَا'
-  sample_answer: أَنَا من إِنْدُونِيسِيَا
+- coach: مِنْ أَيْنَ أَنْتِ؟
+  hint: 'Jawab dengan pola: أَنَا مِنْ إِنْدُونِيسِيَا'
+  sample_answer: أَنَا مِنْ إِنْدُونِيسِيَا
   focus: 'Latihan frasa: Saya dari Indonesia.'
   expected_keywords:
   - أَنَا
@@ -35,7 +35,7 @@ turns:
   - كِتَابًا
   indonesian_explanation: Saya ingin buku.
 target_phrases:
-- أَنَا من إِنْدُونِيسِيَا
+- أَنَا مِنْ إِنْدُونِيسِيَا
 - عِنْدِي دَرْسٌ
 - أُرِيدُ كِتَابًا
 - لَا أَفْهَمُ

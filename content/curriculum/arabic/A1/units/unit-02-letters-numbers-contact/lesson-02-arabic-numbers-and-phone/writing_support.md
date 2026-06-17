@@ -5,4 +5,4 @@ Salin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau b
 - مَا رَقْمُ هَاتِفِكَ؟
 - رَقْمِي ...
 - وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
-- أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ
+- هَلِ الرَّقْمُ وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ؟

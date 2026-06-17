@@ -5,7 +5,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil
 Kamu akan berlatih mengatakan:
 
 - لَا أَفْهَمُ
-- هَلْ تُسَاعِدُنِي؟
+- أَحْتَاجُ مُسَاعَدَةً
 - بِبُطْءٍ مِنْ فَضْلِكَ
 - أَعِدْ مَرَّةً أُخْرَى
 - شُكْرًا عَلَى الْمُسَاعَدَةِ

@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Saya tidak paham."?
   options:
   - لَا أَفْهَمُ
-  - هَلْ تُسَاعِدُنِي؟
+  - أَحْتَاجُ مُسَاعَدَةً
   - بِبُطْءٍ مِنْ فَضْلِكَ
   correct_answer: لَا أَفْهَمُ
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Bisakah Anda membantu saya?"?
+  prompt: Frasa mana yang berarti "Saya butuh bantuan."?
   options:
-  - هَلْ تُسَاعِدُنِي؟
+  - أَحْتَاجُ مُسَاعَدَةً
   - لَا أَفْهَمُ
   - بِبُطْءٍ مِنْ فَضْلِكَ
-  correct_answer: هَلْ تُسَاعِدُنِي؟
+  correct_answer: أَحْتَاجُ مُسَاعَدَةً

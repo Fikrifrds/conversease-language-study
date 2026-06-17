@@ -4,9 +4,9 @@ prompts:
   acceptable_responses:
   - اِسْمِي أَحْمَدُ
 - prompt: 'Ucapkan dalam bahasa Arab: Saya dari Indonesia.'
-  target_response: أَنَا من إِنْدُونِيسِيَا
+  target_response: أَنَا مِنْ إِنْدُونِيسِيَا
   acceptable_responses:
-  - أَنَا من إِنْدُونِيسِيَا
+  - أَنَا مِنْ إِنْدُونِيسِيَا
 - prompt: 'Ucapkan dalam bahasa Arab: Saya menulis nama saya.'
   target_response: أَكْتُبُ اسْمِي
   acceptable_responses:

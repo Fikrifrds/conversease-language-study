@@ -5,7 +5,7 @@ Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, as
 Kamu akan berlatih mengatakan:
 
 - اِسْمِي أَحْمَدُ
-- أَنَا من إِنْدُونِيسِيَا
+- أَنَا مِنْ إِنْدُونِيسِيَا
 - أَكْتُبُ اسْمِي
 - رَقْمِي ...
 - بَرِيدِي الْإِلِكْتُرُونِيُّ ...

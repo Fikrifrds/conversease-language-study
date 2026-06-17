@@ -1,7 +1,7 @@
 # Transcript Translation
 
 - **Muallimah:** اِقْرَئِي الْجُمْلَةَ. -> Bacalah kalimatnya.
-- **Noura:** لَا أَفْهَمُ. هَلْ تُسَاعِدِينَنِي؟ -> Saya tidak paham. Bisa membantu saya?
+- **Noura:** لَا أَفْهَمُ. أَحْتَاجُ مُسَاعَدَةً. -> Saya tidak paham. Saya butuh bantuan.
 - **Muallimah:** نَعَمْ. اِسْتَمِعِي بِبُطْءٍ. -> Ya. Dengarkan pelan-pelan.
 - **Noura:** أَعِيدِي مَرَّةً أُخْرَى مِنْ فَضْلِكِ. -> Ulangi sekali lagi, tolong.
 - **Muallimah:** حَسَنًا، مَرَّةً أُخْرَى. -> Baik, sekali lagi.

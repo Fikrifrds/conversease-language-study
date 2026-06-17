@@ -17,9 +17,9 @@ turns:
   - اِسْمِي
   - أَحْمَدُ
   indonesian_explanation: Nama saya Ahmad.
-- coach: 'استخدم: أَنَا من إِنْدُونِيسِيَا'
-  hint: 'Jawab dengan pola: أَنَا من إِنْدُونِيسِيَا'
-  sample_answer: أَنَا من إِنْدُونِيسِيَا
+- coach: 'استخدم: أَنَا مِنْ إِنْدُونِيسِيَا'
+  hint: 'Jawab dengan pola: أَنَا مِنْ إِنْدُونِيسِيَا'
+  sample_answer: أَنَا مِنْ إِنْدُونِيسِيَا
   focus: 'Latihan frasa: Saya dari Indonesia.'
   expected_keywords:
   - أَنَا
@@ -36,7 +36,7 @@ turns:
   indonesian_explanation: Saya menulis nama saya.
 target_phrases:
 - اِسْمِي أَحْمَدُ
-- أَنَا من إِنْدُونِيسِيَا
+- أَنَا مِنْ إِنْدُونِيسِيَا
 - أَكْتُبُ اسْمِي
 - رَقْمِي ...
 rubric:

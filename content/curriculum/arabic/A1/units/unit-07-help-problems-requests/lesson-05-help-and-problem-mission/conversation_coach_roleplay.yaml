@@ -17,14 +17,14 @@ turns:
   - لَا
   - أَفْهَمُ
   indonesian_explanation: Saya tidak paham.
-- coach: 'استخدم: هَلْ تُسَاعِدُنِي؟'
-  hint: 'Jawab dengan pola: هَلْ تُسَاعِدُنِي؟'
-  sample_answer: هَلْ تُسَاعِدُنِي؟
-  focus: 'Latihan frasa: Bisakah Anda membantu saya?'
+- coach: 'استخدم: أَحْتَاجُ مُسَاعَدَةً'
+  hint: 'Jawab dengan pola: أَحْتَاجُ مُسَاعَدَةً'
+  sample_answer: أَحْتَاجُ مُسَاعَدَةً
+  focus: 'Latihan frasa: Saya butuh bantuan.'
   expected_keywords:
-  - هَلْ
-  - تُسَاعِدُنِي
-  indonesian_explanation: Bisakah Anda membantu saya?
+  - أَحْتَاجُ
+  - مُسَاعَدَةً
+  indonesian_explanation: Saya butuh bantuan.
 - coach: 'استخدم: بِبُطْءٍ مِنْ فَضْلِكَ'
   hint: 'Jawab dengan pola: بِبُطْءٍ مِنْ فَضْلِكَ'
   sample_answer: بِبُطْءٍ مِنْ فَضْلِكَ
@@ -36,7 +36,7 @@ turns:
   indonesian_explanation: Pelan-pelan, tolong.
 target_phrases:
 - لَا أَفْهَمُ
-- هَلْ تُسَاعِدُنِي؟
+- أَحْتَاجُ مُسَاعَدَةً
 - بِبُطْءٍ مِنْ فَضْلِكَ
 - أَعِدْ مَرَّةً أُخْرَى
 rubric:

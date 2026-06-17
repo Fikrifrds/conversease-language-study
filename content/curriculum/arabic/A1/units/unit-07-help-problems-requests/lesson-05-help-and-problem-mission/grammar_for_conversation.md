@@ -4,7 +4,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 
 ```txt
 لَا أَفْهَمُ.
-هَلْ تُسَاعِدُنِي؟
+أَحْتَاجُ مُسَاعَدَةً
 بِبُطْءٍ مِنْ فَضْلِكَ.
 شُكْرًا.
 ```

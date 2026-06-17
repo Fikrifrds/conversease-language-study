@@ -1,8 +1,8 @@
 prompts:
 - prompt: 'Ucapkan dalam bahasa Arab: Saya dari Indonesia.'
-  target_response: أَنَا من إِنْدُونِيسِيَا
+  target_response: أَنَا مِنْ إِنْدُونِيسِيَا
   acceptable_responses:
-  - أَنَا من إِنْدُونِيسِيَا
+  - أَنَا مِنْ إِنْدُونِيسِيَا
 - prompt: 'Ucapkan dalam bahasa Arab: Saya punya pelajaran.'
   target_response: عِنْدِي دَرْسٌ
   acceptable_responses:

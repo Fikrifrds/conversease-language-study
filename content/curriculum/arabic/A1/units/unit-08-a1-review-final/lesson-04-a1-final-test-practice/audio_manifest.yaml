@@ -1,5 +1,5 @@
 lesson_key: lesson-04-a1-final-test-practice
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker

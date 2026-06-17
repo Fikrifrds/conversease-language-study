@@ -8,9 +8,9 @@ phrases:
 - phrase: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
   meaning_id: Satu, dua, tiga
   usage_note: 'Gunakan saat ingin mengatakan: Satu, dua, tiga'
-- phrase: أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ
-  meaning_id: Ulangi nomornya, tolong.
-  usage_note: 'Gunakan saat ingin mengatakan: Ulangi nomornya, tolong.'
+- phrase: هَلِ الرَّقْمُ ...؟
+  meaning_id: Apakah nomornya ...?
+  usage_note: 'Gunakan saat ingin mengecek ulang nomor.'
 - phrase: الرَّقْمُ صَحِيحٌ
   meaning_id: Nomornya benar.
   usage_note: 'Gunakan saat ingin mengatakan: Nomornya benar.'

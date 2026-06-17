@@ -3,10 +3,10 @@ prompts:
   target_response: لَا أَفْهَمُ
   acceptable_responses:
   - لَا أَفْهَمُ
-- prompt: 'Ucapkan dalam bahasa Arab: Bisakah Anda membantu saya?'
-  target_response: هَلْ تُسَاعِدُنِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya butuh bantuan.'
+  target_response: أَحْتَاجُ مُسَاعَدَةً
   acceptable_responses:
-  - هَلْ تُسَاعِدُنِي؟
+  - أَحْتَاجُ مُسَاعَدَةً
 - prompt: 'Ucapkan dalam bahasa Arab: Pelan-pelan, tolong.'
   target_response: بِبُطْءٍ مِنْ فَضْلِكَ
   acceptable_responses:

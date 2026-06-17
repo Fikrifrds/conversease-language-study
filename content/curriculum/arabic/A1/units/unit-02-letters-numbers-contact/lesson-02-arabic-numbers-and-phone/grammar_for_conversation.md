@@ -4,7 +4,7 @@ Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan a
 
 ```txt
 رَقْمِي ...
-أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ.
+هَلِ الرَّقْمُ وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ؟
 الرَّقْمُ صَحِيحٌ.
 ```
 
