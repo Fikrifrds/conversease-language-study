@@ -1,6 +1,23 @@
 lesson_key: lesson-01-greetings-and-salam
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/listening-3nav5pHC1EYvWOd5LmnA-20260617T024740Z.wav
+  duration_seconds: 10.0
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Muallim: 3nav5pHC1EYvWOd5LmnA
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/listening-3nav5pHC1EYvWOd5LmnA-20260617T024740Z.wav
+  trace_id: nWTutmWN01IflEIRQWOP,0oMAQ9gutxYDkl3MscaY,jw3DJNkD5sdER3VyoEbd,MrgX0sLhhPqP4ggCBez3,l7c0bCaMOET9KDVcaW6Y
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:47:40.875739+00:00'

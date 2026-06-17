@@ -1,6 +1,23 @@
 lesson_key: lesson-05-family-work-study-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-05-family-work-study-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025049Z.wav
+  duration_seconds: 11.9
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Layla: kdUY91gH5xyDHapxlthT
+    Muallimah: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-05-family-work-study-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025049Z.wav
+  trace_id: vRh3gswoer1aILT0CScL,thCk5oEewAw9AfMlNNAB,93ECe07xC4RF6wWAdGUj,aITHiGvT7ltNqaPb3ShL,ZaXYs0ll70NchmvrCVV3,M6qQBwM4xedjs6xTNxZm
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:50:49.833212+00:00'

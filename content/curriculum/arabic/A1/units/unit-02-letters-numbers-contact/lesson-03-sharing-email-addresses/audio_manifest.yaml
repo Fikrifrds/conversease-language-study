@@ -1,6 +1,23 @@
 lesson_key: lesson-03-sharing-email-addresses
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T024854Z.wav
+  duration_seconds: 12.96
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T024854Z.wav
+  trace_id: e9dkbz6EDvIx74EE5FcK,KzCHdpvZJBFy3f1XVgiQ,lWH2wcMe8s7drl8nr30g,ZVSGXnaLT4wD5WAquJJh,dsfFeNKo0KTtEqycjun2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:48:54.607604+00:00'

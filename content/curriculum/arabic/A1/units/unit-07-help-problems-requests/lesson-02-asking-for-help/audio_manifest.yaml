@@ -1,6 +1,23 @@
 lesson_key: lesson-02-asking-for-help
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-3nav5pHC1EYvWOd5LmnA-20260617T025240Z.wav
+  duration_seconds: 10.8
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-3nav5pHC1EYvWOd5LmnA-20260617T025240Z.wav
+  trace_id: gq6ghuSgNQTYhfhYPBeq,uAg85ZZr5h2h05VLRgxM,3o6qytgrukAjKt5Cvgo7,4I2Lir8PV6OkaiSZFzsH,4S69Q936p8D6rfMGH9ZC
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:52:40.227863+00:00'

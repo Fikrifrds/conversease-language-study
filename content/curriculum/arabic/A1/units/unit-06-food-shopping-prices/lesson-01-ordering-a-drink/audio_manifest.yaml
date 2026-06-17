@@ -1,6 +1,23 @@
 lesson_key: lesson-01-ordering-a-drink
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-3nav5pHC1EYvWOd5LmnA-20260617T025144Z.wav
+  duration_seconds: 8.24
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Layla: kdUY91gH5xyDHapxlthT
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-3nav5pHC1EYvWOd5LmnA-20260617T025144Z.wav
+  trace_id: y0FWFblwnKKdTZo8RQPp,S7yruzfXrx25seJ3FgVk,fzgP7eb3hWJ7EcqQf4Ic,YMrYYYz0YF9lNqT1WZ9H,C9yLfGMFfOv08fmeyzDj
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:51:44.722085+00:00'

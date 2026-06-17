@@ -1,6 +1,23 @@
 lesson_key: lesson-01-saying-you-do-not-understand
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T025230Z.wav
+  duration_seconds: 12.22
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T025230Z.wav
+  trace_id: JsBpBHOpQZ4TBLWpX7TT,Wz3zZ6evj7PmwPWqKaoa,nd4bWKC47rArE6YQ8SKk,IURtb0TuWTvmTh9HIVhX,faF7pr60JiKsLNrO79zg,uyT9ZBKlJ4CsPUmpFLwJ
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:52:30.702043+00:00'

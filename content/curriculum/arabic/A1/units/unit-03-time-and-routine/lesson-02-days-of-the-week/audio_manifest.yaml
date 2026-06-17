@@ -1,6 +1,23 @@
 lesson_key: lesson-02-days-of-the-week
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-02-days-of-the-week/listening-3nav5pHC1EYvWOd5LmnA-20260617T024933Z.wav
+  duration_seconds: 10.56
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 5
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-02-days-of-the-week/listening-3nav5pHC1EYvWOd5LmnA-20260617T024933Z.wav
+  trace_id: ujgzvO2I7S2HYD9vE285,ALNsSkBCKCWIb7neP07v,nB352HYXjRgMpi0Nigio,4pTFYK3Y7rupob7pbERB,pSK9abGchNdhv03J02su
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:49:33.532803+00:00'

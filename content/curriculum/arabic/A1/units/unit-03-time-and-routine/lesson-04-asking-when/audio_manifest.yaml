@@ -1,6 +1,23 @@
 lesson_key: lesson-04-asking-when
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T024952Z.wav
+  duration_seconds: 12.78
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T024952Z.wav
+  trace_id: JcFZNZ9UQNjSRS2NQg4L,GQWdgBY5v2BacUyRcigd,0GZjbVqVTPxondNHWdrb,QWQ6EUW3vACe50x2E4es,F5cf5t36sidpcv5qw5jG,r5txQrC42cG4m3CDK444
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T02:49:52.225609+00:00'
