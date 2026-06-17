@@ -80,7 +80,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="self-end lg:pl-8">
-            <div className="max-w-md rounded-2xl border border-white/25 bg-white/94 p-4 shadow-soft backdrop-blur sm:rounded-lg sm:bg-white/90">
+            <div className="max-w-md rounded-2xl border border-white/20 bg-paper/92 p-4 shadow-soft backdrop-blur-md sm:rounded-lg sm:bg-white/90 sm:backdrop-blur">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <p className="text-xs font-semibold uppercase text-leaf">Misi Hari Ini</p>
@@ -90,17 +90,17 @@ export default function HomePage() {
                   {mission.level}
                 </span>
               </div>
-              <p className="mt-3 text-sm leading-6 text-ink/70">{mission.prompt}</p>
+              <p className="mt-3 text-sm leading-6 text-ink/75">{mission.prompt}</p>
               <div className="mt-4 grid gap-2 text-sm sm:grid-cols-3">
-                <div className="rounded-lg bg-mint p-3">
+                <div className="rounded-lg border border-white/50 bg-mint/90 p-3">
                   <p className="font-semibold">Dengar</p>
                   <p className="text-ink/60">Dialog</p>
                 </div>
-                <div className="rounded-lg bg-[#fff2dc] p-3">
+                <div className="rounded-lg border border-white/50 bg-[#fff2dc]/92 p-3">
                   <p className="font-semibold">Ulangi</p>
                   <p className="text-ink/60">Frasa</p>
                 </div>
-                <div className="rounded-lg bg-[#fde7df] p-3">
+                <div className="rounded-lg border border-white/50 bg-[#fde7df]/92 p-3">
                   <p className="font-semibold">Bicara</p>
                   <p className="text-ink/60">Coach</p>
                 </div>
