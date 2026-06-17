@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260617T025012Z.wav
-  duration_seconds: 12.22
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260617T043957Z.wav
+  duration_seconds: 11.66
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Noura: kdUY91gH5xyDHapxlthT
   line_count: 6
+  script_content_hash: 8366df3f904ff79d082e4514be007e361afebed58e744f997d935edcbd192555
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260617T025012Z.wav
-  trace_id: 6f7pgNnnIpGLKIRMqtnu,OLHKlTnzarPepFmY9huH,dafZ3ode9ZvJUx394xYA,bxc1lz5SabJVYFPveATx,TpxGfPl3YFDL6gQ0tVRX,wS1oP66yQ48ClYsHqPbG
+  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-01-family-members/listening-3nav5pHC1EYvWOd5LmnA-20260617T043957Z.wav
+  trace_id: OQzw5aDml3x1T0ROTgS0,GY3zq0NGhXIngqMhc4wx,DRXMatS9r8Yu5V8d4s8k,QJ73axcB5iSQ2rt2yoQ7,mZ91deLAvG92fhgf8gFy,UFQNBZvuI5sLZ4sGbrbL
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:50:12.845498+00:00'
+  generated_at: '2026-06-17T04:39:57.236489+00:00'

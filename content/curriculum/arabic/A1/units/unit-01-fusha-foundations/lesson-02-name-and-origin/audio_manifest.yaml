@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-3nav5pHC1EYvWOd5LmnA-20260617T024749Z.wav
-  duration_seconds: 11.6
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-3nav5pHC1EYvWOd5LmnA-20260617T043733Z.wav
+  duration_seconds: 11.92
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Muallim: 3nav5pHC1EYvWOd5LmnA
   line_count: 5
+  script_content_hash: d14e2cdb4e55ece760cc28c2ee4b9debae41d8e8883912571f3fa5bac68e7185
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-3nav5pHC1EYvWOd5LmnA-20260617T024749Z.wav
-  trace_id: EHPyVkpbxWWHYLyzNHAj,MjmIEpHzyGYTmVlH78y9,p0EUJKRCUtcKnMR7mXpb,Pffq5GqT9kznjgRl10VD,VUrSkujZQ5fPgpG2aVhT
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/listening-3nav5pHC1EYvWOd5LmnA-20260617T043733Z.wav
+  trace_id: 75p8vgcsEVZNbGyiPfqQ,WAnRW91xYtAN4To5ARK6,X4H2fSC15X3CkLRAtA77,GIqSqsgUe85oLm7SSExr,ihFhc7GTggq5O1HEoi9B
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:47:49.677251+00:00'
+  generated_at: '2026-06-17T04:37:33.740677+00:00'

@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260617T025126Z.wav
-  duration_seconds: 10.0
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260617T044120Z.wav
+  duration_seconds: 10.72
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Maryam: gVzwmdZzRgBrNjXaTmi5
   line_count: 5
+  script_content_hash: ab17d6ae41fc107305c070c666b1c9e098bdebf24826fbd52b51608aa3e97429
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260617T025126Z.wav
-  trace_id: SfpW8gJ9quyJDa0oJpjC,rSJ7CYjz1xOnmsCd6tIy,zRSyew6aXzWXRLNMkwOi,sivAlWNdYkUDaQk97UFZ,DS5N9fR50VRohWgASPTo
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-3nav5pHC1EYvWOd5LmnA-20260617T044120Z.wav
+  trace_id: x1VrXD4E1UQu6sdGk1Ug,75kouBzUZs90r0glcWEQ,T62y0fVwUmwJwQUdSGVk,0l0L3HSB1amWjTkKJBY7,J0NBolb6PJR9ic1B3eFn
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:51:26.478194+00:00'
+  generated_at: '2026-06-17T04:41:20.007840+00:00'

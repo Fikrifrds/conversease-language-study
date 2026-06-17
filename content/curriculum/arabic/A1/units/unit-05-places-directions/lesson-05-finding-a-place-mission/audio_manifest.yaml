@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025136Z.wav
-  duration_seconds: 13.18
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T044130Z.wav
+  duration_seconds: 14.46
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Muallim: 3nav5pHC1EYvWOd5LmnA
     Noura: kdUY91gH5xyDHapxlthT
   line_count: 6
+  script_content_hash: afba657a9eae07d00e33ff61407608cbb1a0feb8da0ca6e6657b922b0e859165
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025136Z.wav
-  trace_id: XykrYlpKYSno9KNthDvi,rQtFva8EeC70PeKdRo11,0T9qBGkJvpjUafBJ8wo9,4yU6U1Hlj4CibcYLp9yk,gX5GYgpaKG3czKdLoLTZ,TBLVqeaEXdBsGnDOyy9o
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T044130Z.wav
+  trace_id: 53hfwUOsnr4w7bD2OtKX,IO5vFfjcr9XuqR8pZ354,47HokyU0bdoV7SdnUzGH,BYNZr9Br46FPa6tWkw44,EZBwSjGTAwVlDKBcNtgR,GhQdbzCVJQJMWIjo8ouc
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:51:36.401863+00:00'
+  generated_at: '2026-06-17T04:41:30.654609+00:00'

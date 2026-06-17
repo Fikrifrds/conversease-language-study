@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-04-likes-and-ability/listening-3nav5pHC1EYvWOd5LmnA-20260617T025040Z.wav
-  duration_seconds: 12.8
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-04-family-work-study/lesson-04-likes-and-ability/listening-3nav5pHC1EYvWOd5LmnA-20260617T044028Z.wav
+  duration_seconds: 11.44
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Noura: kdUY91gH5xyDHapxlthT
   line_count: 5
+  script_content_hash: a6087659449da37555ed77f83d6be810ed47910dc560139d70f9d31317fdb37b
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-04-likes-and-ability/listening-3nav5pHC1EYvWOd5LmnA-20260617T025040Z.wav
-  trace_id: mRQckUv3kNQMvanVnldC,NykGGROEAkTIMedTiIGI,D0IMX7I4EynQRieRMvo0,PvxnMnoRtKM5PnYx7ZFl,zVDo63bx6nwGpnWjF5pm
+  storage_key: conversease/audio/arabic/A1/unit-04-family-work-study/lesson-04-likes-and-ability/listening-3nav5pHC1EYvWOd5LmnA-20260617T044028Z.wav
+  trace_id: 924AS7CuZkYYGy6dJLPA,4zkJCHZXMkuLQAMaX7Rs,INZkVYpoYbvyzWWgpkUl,HW3XUSN7eid1OSWg6Ncf,LN2mpqJ3PH9kmS7WQ895
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:50:40.550181+00:00'
+  generated_at: '2026-06-17T04:40:28.792179+00:00'

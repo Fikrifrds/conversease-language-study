@@ -1,5 +1,5 @@
 lesson_key: lesson-03-buying-a-simple-item
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,17 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-3nav5pHC1EYvWOd5LmnA-20260617T025201Z.wav
-  duration_seconds: 8.8
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-3nav5pHC1EYvWOd5LmnA-20260617T044205Z.wav
+  duration_seconds: 8.4
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Ahmad: RjFuvnufLX42TYe37ekK
-    Noura: kdUY91gH5xyDHapxlthT
+    Shopkeeper: 3GnbqfjaW8xI6hRTVx4Y
   line_count: 5
+  script_content_hash: 343922a0d4161e808207f605ce69d43fb3abc52b2d4dbb61123f78a05d5ab3e2
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-3nav5pHC1EYvWOd5LmnA-20260617T025201Z.wav
-  trace_id: yEcg6Mq3RD1UcgwDxZ1b,ZgWH2RrUeIJQImaTnHKS,gYKyQGz7dEqNspyJk1qv,znU7FtESPPnLCcqsmjFs,5sMYDsv6Nmze2KQiXG0l
+  storage_key: conversease/audio/arabic/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-3nav5pHC1EYvWOd5LmnA-20260617T044205Z.wav
+  trace_id: 9Yl9sa5EwAWObumxd55q,PqBK6SI5ocUgZ2gC9Zyx,wtn7Bi8sR6CFscHPoKRo,ZTi7NvzpqmDzkHnVyc27,7wX5HeVNoWEj8ED26sLH
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:52:01.788140+00:00'
+  generated_at: '2026-06-17T04:42:05.816552+00:00'

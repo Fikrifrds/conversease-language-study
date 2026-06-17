@@ -1,5 +1,5 @@
 lesson_key: lesson-05-help-and-problem-mission
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025311Z.wav
-  duration_seconds: 12.7
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T044317Z.wav
+  duration_seconds: 12.3
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Muallimah: gVzwmdZzRgBrNjXaTmi5
     Noura: kdUY91gH5xyDHapxlthT
   line_count: 6
+  script_content_hash: 69e809c241c34fb2df15270d86b1d4000ac79264ff363ba7b04c76cf17306110
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T025311Z.wav
-  trace_id: Q7gu0gneF0QKGV4j1xrv,RaOBa6j2dUngeyggAAEl,ukB5gnN33D0p2pCM4wXk,fatrUufblZyorRbdcrlu,seILkfJB2UUdzo8jLB0j,31z03OxnpgIopg7eeLOB
+  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T044317Z.wav
+  trace_id: hKV2eXgtuurliO6rRiYf,yrse0NDRIWe5gklm8SKL,DZxtyq6P30WqQyBhjwzq,Ihdc9QpI6WwdbuRBjyWV,E6bKFgPbp2LO57hIxQ20,lMURjCSniBtT5r6ZFlY9
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:53:11.884232+00:00'
+  generated_at: '2026-06-17T04:43:17.244469+00:00'

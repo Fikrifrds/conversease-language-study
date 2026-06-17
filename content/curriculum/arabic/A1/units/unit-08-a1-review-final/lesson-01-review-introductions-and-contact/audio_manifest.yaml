@@ -1,5 +1,5 @@
 lesson_key: lesson-01-review-introductions-and-contact
-status: needs_regeneration
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260617T025321Z.wav
-  duration_seconds: 13.9
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260617T044327Z.wav
+  duration_seconds: 15.1
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Muallim: 3nav5pHC1EYvWOd5LmnA
   line_count: 6
+  script_content_hash: b0c04649385a32872bd2ad9f1fe6bf91e82bcaf1c53e3f7157bd5fa03e9077cc
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260617T025321Z.wav
-  trace_id: DgyVV5fo781PyR25QM0Y,SHx9Ofuqyv4WTedLNUvF,U6Wpb2IDwJnCv4wPGZal,aZZEB7d3DqQsLrDVeJuM,AQmkxUwvH26yHUFuGydO,8rzYr0aPUcajhDlmdSiB
+  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-01-review-introductions-and-contact/listening-3nav5pHC1EYvWOd5LmnA-20260617T044327Z.wav
+  trace_id: AOJbsAcrmZpDtCqsVVSw,CeHOKK81jrUj2np9K6AI,W4YsYHR0RoHS49vxpyec,BMVwoYOKCSgoeBz19adD,xWFsmlUhWnw5mSQdbAio,Rf5s9ScTR8CpxtURiFfN
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:53:21.766110+00:00'
+  generated_at: '2026-06-17T04:43:27.734723+00:00'

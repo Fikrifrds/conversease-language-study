@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T024809Z.wav
-  duration_seconds: 12.16
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T043753Z.wav
+  duration_seconds: 12.4
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Fatimah: v7UCHHCrHj1KBa4E41gb
     Muallim: 3nav5pHC1EYvWOd5LmnA
   line_count: 5
+  script_content_hash: 4bea58b4e14ba3c9833b2aa236f824b3fc97b054aef97ae4f0b46f98cb6672c8
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T024809Z.wav
-  trace_id: XZfr1Dz2aq0CKNPG8cKA,mor1IvCGUW5lUZCT7z2Z,Hrl3ERzj7jmvNde6hhMc,c2uFRUJb63thnLyOjK4s,0vgKHSpromxZ3FbpgMPI
+  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T043753Z.wav
+  trace_id: fbTA5HukBgI1VlxgpCVY,jgRVqvwZY0VFPzCaH9Jl,ni4X240KONPZH3vZ8Pgl,OPawwO4k7MPkZw28sK5E,PsIObu8QeNrSuLsISi5M
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:48:09.756743+00:00'
+  generated_at: '2026-06-17T04:37:53.442879+00:00'

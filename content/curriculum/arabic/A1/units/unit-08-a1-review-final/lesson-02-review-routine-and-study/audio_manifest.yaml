@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-02-review-routine-and-study/listening-3nav5pHC1EYvWOd5LmnA-20260617T025333Z.wav
-  duration_seconds: 13.9
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-02-review-routine-and-study/listening-3nav5pHC1EYvWOd5LmnA-20260617T044338Z.wav
+  duration_seconds: 13.98
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Maryam: gVzwmdZzRgBrNjXaTmi5
     Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 6
+  script_content_hash: 31168f3d2c4a80653c3bb183af7a676d07bd5fb046713ef8af0f00601cc8a55f
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-02-review-routine-and-study/listening-3nav5pHC1EYvWOd5LmnA-20260617T025333Z.wav
-  trace_id: YNRu4zBX9v8QtzzgcKVY,5CQz6xf7PEGv1f9SNt2z,E7OG0RdPbgfPck24dz8d,kbeQRmQJLbE9vIaKr1OF,vFFGOHjL4TbjQDbgmrXY,6VW1CzeJS3yc58IpR3xA
+  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-02-review-routine-and-study/listening-3nav5pHC1EYvWOd5LmnA-20260617T044338Z.wav
+  trace_id: Zu9WUJfB0PFM4MQkWGfI,yPbLFDrJTrRu0r7r5PsY,O4uUwpsykx0WDNiVhYRd,sxAIRLX6OfvsV2XoiBJw,gYRTxvXcuOzvMCVl95wn,72appEfBYlKMaSKXnuyf
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:53:33.034345+00:00'
+  generated_at: '2026-06-17T04:43:38.634469+00:00'

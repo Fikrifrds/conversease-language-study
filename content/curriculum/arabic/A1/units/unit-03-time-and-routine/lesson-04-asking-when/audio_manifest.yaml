@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T024952Z.wav
-  duration_seconds: 12.78
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T043937Z.wav
+  duration_seconds: 12.54
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Maryam: gVzwmdZzRgBrNjXaTmi5
   line_count: 6
+  script_content_hash: ba80581c18bcf0b16005784c05b74bf13e11cf612e7e41fb5e353ee613bdf190
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T024952Z.wav
-  trace_id: JcFZNZ9UQNjSRS2NQg4L,GQWdgBY5v2BacUyRcigd,0GZjbVqVTPxondNHWdrb,QWQ6EUW3vACe50x2E4es,F5cf5t36sidpcv5qw5jG,r5txQrC42cG4m3CDK444
+  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-04-asking-when/listening-3nav5pHC1EYvWOd5LmnA-20260617T043937Z.wav
+  trace_id: jPBoiKuDnIOounymQd4t,ULkngS98HgZN5QZYPYKA,ZPAzDqsFn1q0trb5ZVeA,kliwrPywS7DILBWTQPtC,ctulRVrDTYm4csUcqFbw,pMDW2oS8yaBvPtrdgOmZ
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:49:52.225609+00:00'
+  generated_at: '2026-06-17T04:39:37.822146+00:00'

@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260617T025108Z.wav
-  duration_seconds: 13.26
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260617T044059Z.wav
+  duration_seconds: 11.02
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Ahmad: RjFuvnufLX42TYe37ekK
     Noura: kdUY91gH5xyDHapxlthT
   line_count: 6
+  script_content_hash: 278b894507279f8b715dc6291e06898aa1072f7659ff2dca221ba3147134008c
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260617T025108Z.wav
-  trace_id: KNix3MN9RD1tRAERQQit,6NDHf1B2oF1p4XLZd7T8,IEdzb1gOy6icdH0HcH5l,4YpIvT5i9vcBD8tNITEb,yzRWobNPjIXBAPPO7kaM,wCSEuuzyPei3wXRjg4aW
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-3nav5pHC1EYvWOd5LmnA-20260617T044059Z.wav
+  trace_id: oU8Zz74iqDdHso8NRJ6g,rRSkfH6P7WTbuLK5NaAB,phGAm77jhM9yeUgq4Ovu,UWuXZBwAPchsiHDod1Rx,Gb2UZzHjZbD36IOuVT4k,t6PlYQGv7i5iDyrTgJk0
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:51:08.315987+00:00'
+  generated_at: '2026-06-17T04:40:59.406280+00:00'

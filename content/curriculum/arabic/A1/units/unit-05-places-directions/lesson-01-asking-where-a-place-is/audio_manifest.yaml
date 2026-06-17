@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260617T025058Z.wav
-  duration_seconds: 7.6
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260617T044049Z.wav
+  duration_seconds: 8.64
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
@@ -16,8 +16,9 @@ assets:
     Maryam: gVzwmdZzRgBrNjXaTmi5
     Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 5
+  script_content_hash: 89137b61013eee837d25eccba3c81edf0feddbc09952891b1823fb27b1d0a970
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260617T025058Z.wav
-  trace_id: Iho4wWpE8CxjyjImhneG,u1Mu5Re3vNhcgpBrOwwS,Rbv1waqenn2XHjHTflMk,gC0N75PkzFACHM02GAqY,wSgKblKcEbq87bofU2GW
+  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-3nav5pHC1EYvWOd5LmnA-20260617T044049Z.wav
+  trace_id: JDG0KjomViVgEv0yWGTe,5mOYHxQNBYyRlmo5FSCU,MZoGlEazqmOSQ1G0H7iP,ScNHFwfEFtHEWwod3Pup,bbfv3fWpT2WmnO68K1U0
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T02:50:58.363729+00:00'
+  generated_at: '2026-06-17T04:40:49.785344+00:00'
