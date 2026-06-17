@@ -1,24 +1,6 @@
 lesson_key: lesson-02-review-travel-and-services
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-02-review-travel-and-services/listening-3nav5pHC1EYvWOd5LmnA-20260617T173315Z.wav
-  duration_seconds: 26.98
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Dimas: 3nav5pHC1EYvWOd5LmnA
-    Huda: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 9d597979c69868e2a9af58797e3c1c9d8fd371d0a48ad9b6554c984e0e80f369
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-08-a2-review-final/lesson-02-review-travel-and-services/listening-3nav5pHC1EYvWOd5LmnA-20260617T173315Z.wav
-  trace_id: DFplK00c7zQMA6yvDXS5,TsOauaeh6Zh5K9NxcAMH,9ZtnLTEsRZrAW9RM5GBu,KDjX9AlV0n0jynrIqNYL,Pqh1e7yo6LxeAbE0vPz1,BCV9wuLCMBD0EjuIhQpy,aAydllEc0mVC5PrnqRmy,4pqDD1wNmuVfo8YvFmbP
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:33:15.903066+00:00'
+assets: []

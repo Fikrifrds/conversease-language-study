@@ -1,24 +1,6 @@
 lesson_key: lesson-01-buying-a-ticket
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-03-transport-travel/lesson-01-buying-a-ticket/listening-3nav5pHC1EYvWOd5LmnA-20260617T172744Z.wav
-  duration_seconds: 23.0
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Huda: kdUY91gH5xyDHapxlthT
-    Sami: kr4VZw8MSZMHE0y2m40n
-  line_count: 7
-  script_content_hash: 7ea55096499f15bc0a7872b3f3ccd6c6bc79063e65292cd1b9fec20b8b0bb1ea
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-03-transport-travel/lesson-01-buying-a-ticket/listening-3nav5pHC1EYvWOd5LmnA-20260617T172744Z.wav
-  trace_id: kYpuCmQr2z2WNwKilx8R,G7lRweBGeZAWZv5YVE8q,35axNUevSxnbtSkKLKj4,92eHayVx2ryVfOUJtzjz,7id0PA5wx04RgENFXEoL,cWTlF7zTrR5k8ocv9dj7,HclRFEyqy7cjZJMQXZms
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:27:44.435587+00:00'
+assets: []

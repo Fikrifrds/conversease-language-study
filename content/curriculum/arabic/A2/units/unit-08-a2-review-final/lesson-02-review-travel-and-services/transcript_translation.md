@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Dimas:** أُرِيدُ تَذْكِرَةً إِلَى بَانْدُونْغ، مِنْ فَضْلِكِ. -> Saya ingin tiket ke Bandung, tolong.
-- **Huda:** ذَهَابًا فَقَطْ؟ -> Sekali jalan saja?
+- **Dimas:** أُرِيدُ تَذْكِرَةً إِلَى بَانْدُونْغ، مِنْ فَضْلِكَ. -> Saya ingin tiket ke Bandung, tolong.
+- **Ahmad:** ذَهَابًا فَقَطْ؟ -> Sekali jalan saja?
 - **Dimas:** نَعَمْ. مَتَى يَغَادِرُ الْقِطَارُ؟ -> Ya. Kapan keretanya berangkat?
-- **Huda:** يُغَادِرُ السَّاعَةَ الثَّامِنَةَ مِنَ الرَّصِيفِ الثَّانِي. -> Berangkat jam delapan dari peron dua.
+- **Ahmad:** يُغَادِرُ السَّاعَةَ الثَّامِنَةَ مِنَ الرَّصِيفِ الثَّانِي. -> Berangkat jam delapan dari peron dua.
 - **Dimas:** كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟ -> Bagaimana saya pergi ke peron?
-- **Huda:** اِمْشِ مُسْتَقِيمًا، ثُمَّ اِتَّجِهْ يَمِينًا. -> Berjalan lurus, lalu belok kanan.
+- **Ahmad:** اِمْشِ مُسْتَقِيمًا، ثُمَّ اِتَّجِهْ يَمِينًا. -> Berjalan lurus, lalu belok kanan.
 - **Dimas:** شُكْرًا. وَبَعْدَ الرِّحْلَةِ أَحْتَاجُ إِلَى مُسَاعَدَةٍ فِي هَذَا الْجِهَازِ. -> Terima kasih. Setelah perjalanan, saya butuh bantuan untuk perangkat ini.
-- **Huda:** قِسْمُ الْخِدْمَةِ بِجَانِبِ الْبَابِ. -> Bagian layanan ada di samping pintu.
+- **Ahmad:** قِسْمُ الْخِدْمَةِ بِجَانِبِ الْبَابِ. -> Bagian layanan ada di samping pintu.

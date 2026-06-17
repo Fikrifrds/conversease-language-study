@@ -1,25 +1,6 @@
 lesson_key: lesson-05-shopping-service-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T172936Z.wav
-  duration_seconds: 29.16
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Huda: gVzwmdZzRgBrNjXaTmi5
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 11
-  script_content_hash: 7bec123fa21d016aaf378d746aef5b50fa99e8e705969b0b40faf6abe9e17cad
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T172936Z.wav
-  trace_id: t9bZcCL0BSZ1jpSb27Fk,VP8qX8z6gxl9gbm3mhnW,c9SYqicm1jcaKQefvX0a,88DR4SAc4JzW8e94Zl1G,q02pHZ9q291ZISzIJKA1,d4DdBdWWFq8YlMOP5CRw,E07iQcjhOUx0vGOctCHc,HXCTMhDw9cQCbFIyyNO7,330nncas48dcGn7X2wFa,htl3y6KJ7FexzDbK04Ek,VYXH04w3EJyqnBqz9XZ0
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:29:36.629445+00:00'
+assets: []

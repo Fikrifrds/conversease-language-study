@@ -1,25 +1,6 @@
 lesson_key: lesson-05-transport-travel-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-03-transport-travel/lesson-05-transport-travel-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T172833Z.wav
-  duration_seconds: 28.88
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Dimas: 3nav5pHC1EYvWOd5LmnA
-    Huda: kdUY91gH5xyDHapxlthT
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 9
-  script_content_hash: 0e56782b53dffdb2d5371e5eff270da4003120ecf6c319c866cb6263de9923d9
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-03-transport-travel/lesson-05-transport-travel-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T172833Z.wav
-  trace_id: johMIO6CqfSfGlhhUWBn,HMgpUExjj517XcuKyyV7,x4MgJL0qtFEdCdNll5Yz,8Pf8CXWUFDKfrcSe4DwE,tbdrd756kXwGdoMGPegU,Gat5Cnv2nzPDTpANgQQp,wybIlKbCTxcc8cJfsNeV,asjMz25KdFPW3r0nlnAC,Nq28hLTDO1GR3NMMB4m8
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:28:33.195626+00:00'
+assets: []

@@ -1,13 +1,13 @@
 # Transcript Translation
 
 - **Layla:** أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ. -> Saya mencari tas kecil.
-- **Huda:** عِنْدَنَا هَذِهِ الْحَقِيبَةُ بِاللَّوْنِ الْأَسْوَدِ. -> Kami punya tas ini dengan warna hitam.
+- **Fatimah:** عِنْدَنَا هَذِهِ الْحَقِيبَةُ بِاللَّوْنِ الْأَسْوَدِ. -> Kami punya tas ini dengan warna hitam.
 - **Layla:** هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟ -> Apakah ada warna biru?
-- **Huda:** نَعَمْ، وَهَذَا الْمَقَاسُ أَكْبَرُ قَلِيلًا. -> Ya, dan ukuran ini sedikit lebih besar.
+- **Fatimah:** نَعَمْ، وَهَذَا الْمَقَاسُ أَكْبَرُ قَلِيلًا. -> Ya, dan ukuran ini sedikit lebih besar.
 - **Layla:** أَيُّهُمَا أَفْضَلُ؟ -> Mana yang lebih baik?
-- **Huda:** الْأَزْرَقُ أَجْوَدُ، وَلَكِنَّهُ أَغْلَى. -> Yang biru lebih bagus kualitasnya, tetapi lebih mahal.
+- **Fatimah:** الْأَزْرَقُ أَجْوَدُ، وَلَكِنَّهُ أَغْلَى. -> Yang biru lebih bagus kualitasnya, tetapi lebih mahal.
 - **Layla:** سَآخُذُ الْأَزْرَقَ. وَأُرِيدُ مُسَاعَدَةً فِي هَذَا الْجِهَازِ. -> Saya akan mengambil yang biru. Dan saya ingin bantuan untuk perangkat ini.
-- **Huda:** زَمِيلِي كَرِيمٌ فِي قِسْمِ الْخِدْمَةِ. -> Rekan saya Karim ada di bagian layanan.
+- **Fatimah:** زَمِيلِي كَرِيمٌ فِي قِسْمِ الْخِدْمَةِ. -> Rekan saya Karim ada di bagian layanan.
 - **Karim:** مَرْحَبًا، مَا الْمُشْكِلَةُ؟ -> Halo, apa masalahnya?
 - **Layla:** الْجِهَازُ لَا يَعْمَلُ. -> Perangkatnya tidak bekerja.
 - **Karim:** سَأَفْحَصُهُ الآنَ. -> Saya akan memeriksanya sekarang.
