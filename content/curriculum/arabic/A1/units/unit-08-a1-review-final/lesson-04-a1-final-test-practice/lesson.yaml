@@ -4,8 +4,9 @@ title: A1 Final Test Practice
 status: beta
 estimated_minutes: 10
 conversation_situation: a1_final_test_practice
-conversation_goal: Practice answering mixed A1 questions before the final conversation.
-grammar_summary: Use short complete answers with أنا, عندي, أريد, and لا أفهم.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan
+  final A1 secara singkat dan jelas.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

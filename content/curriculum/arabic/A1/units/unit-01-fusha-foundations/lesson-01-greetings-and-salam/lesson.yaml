@@ -4,8 +4,8 @@ title: Formal Greetings
 status: beta
 estimated_minutes: 10
 conversation_situation: greeting_a_teacher_in_arabic_class
-conversation_goal: Greet someone formally in Arabic and answer a simple "how are you" question.
-grammar_summary: Use مرحبًا or صباح الخير for greeting, and أنا بخير، شكرًا to answer politely.
+conversation_goal: Latih sapaan formal sederhana dan jawaban kabar dalam bahasa Arab.
+grammar_summary: Gunakan مرحبًا atau صباح الخير untuk menyapa, lalu أنا بخير، شكرًا untuk menjawab dengan sopan.
 required_sections:
   - conversation_goal
   - situation_setup

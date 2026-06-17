@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Combine place questions and simple directions in one conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi, dan mengikuti arahan singkat.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أين الفصل؟
-- كيف أذهب إلى الفصل؟
-- اذهب يمينًا
-- هو بجانب المكتبة
-- واضح
+- أَيْنَ الْفَصْلُ؟
+- كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+- اِذْهَبْ يَمِينًا
+- هُوَ بِجَانِبِ الْمَكْتَبَةِ
+- وَاضِحٌ

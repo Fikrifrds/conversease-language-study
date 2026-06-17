@@ -1,43 +1,44 @@
 scenario_key: arabic_help_and_problem_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اقرئي الجملة.
-learner_goal: Combine not understanding, asking for help, and thanking in one conversation.
+opening_line: اِقرئي الجملةَ.
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam
+  kelas dan menyelesaikannya dengan permintaan sopan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: اقرئي الجملة.
-  hint: 'Jawab dengan pola: لا أفهم'
-  sample_answer: لا أفهم
-  focus: Explain the problem.
+- coach: اِقرئي الجملةَ.
+  hint: 'Jawab dengan pola: لَا أَفْهَمُ'
+  sample_answer: لَا أَفْهَمُ
+  focus: 'Latihan frasa: Saya tidak paham.'
   expected_keywords:
-  - لا
-  - أفهم
+  - لَا
+  - أَفْهَمُ
   indonesian_explanation: Saya tidak paham.
-- coach: 'استخدم: هل تساعدني؟'
-  hint: 'Jawab dengan pola: هل تساعدني؟'
-  sample_answer: هل تساعدني؟
-  focus: Ask for help.
+- coach: 'استخدم: هَلْ تُسَاعِدُنِي؟'
+  hint: 'Jawab dengan pola: هَلْ تُسَاعِدُنِي؟'
+  sample_answer: هَلْ تُسَاعِدُنِي؟
+  focus: 'Latihan frasa: Bisakah Anda membantu saya?'
   expected_keywords:
-  - هل
-  - تساعدني
+  - هَلْ
+  - تُسَاعِدُنِي
   indonesian_explanation: Bisakah Anda membantu saya?
-- coach: 'استخدم: ببطء من فضلك'
-  hint: 'Jawab dengan pola: ببطء من فضلك'
-  sample_answer: ببطء من فضلك
-  focus: Ask for slower speech.
+- coach: 'استخدم: بِبُطْءٍ مِنْ فَضْلِكَ'
+  hint: 'Jawab dengan pola: بِبُطْءٍ مِنْ فَضْلِكَ'
+  sample_answer: بِبُطْءٍ مِنْ فَضْلِكَ
+  focus: 'Latihan frasa: Pelan-pelan, tolong.'
   expected_keywords:
-  - ببطء
-  - من
-  - فضلك
+  - بِبُطْءٍ
+  - مِنْ
+  - فَضْلِكَ
   indonesian_explanation: Pelan-pelan, tolong.
 target_phrases:
-- لا أفهم
-- هل تساعدني؟
-- ببطء من فضلك
-- أعد مرة أخرى
+- لَا أَفْهَمُ
+- هَلْ تُسَاعِدُنِي؟
+- بِبُطْءٍ مِنْ فَضْلِكَ
+- أَعِدْ مَرَّةً أُخْرَى
 rubric:
   speaking:
     minimum_score: 60

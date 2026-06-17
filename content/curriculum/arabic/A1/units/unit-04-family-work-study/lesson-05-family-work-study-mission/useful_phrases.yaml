@@ -1,16 +1,16 @@
 phrases:
-- phrase: هذه عائلتي
+- phrase: هَذِهِ عَائِلَتِي
   meaning_id: Ini keluarga saya.
-  usage_note: Introduce family.
+  usage_note: 'Gunakan saat ingin mengatakan: Ini keluarga saya.'
 - phrase: أنا طالب
   meaning_id: Saya pelajar.
-  usage_note: Say study identity.
-- phrase: أدرس العربية
+  usage_note: 'Gunakan saat ingin mengatakan: Saya pelajar.'
+- phrase: أَدْرُسُ الْعَرَبِيَّةَ
   meaning_id: Saya belajar bahasa Arab.
-  usage_note: Say study topic.
-- phrase: أعمل في مكتب
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belajar bahasa Arab.'
+- phrase: أَعْمَلُ فِي مَكْتَبٍ
   meaning_id: Saya bekerja di kantor.
-  usage_note: Say work place.
-- phrase: أحب القراءة
+  usage_note: 'Gunakan saat ingin mengatakan: Saya bekerja di kantor.'
+- phrase: أُحِبُّ الْقِرَاءَةَ
   meaning_id: Saya suka membaca.
-  usage_note: Say a preference.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya suka membaca.'

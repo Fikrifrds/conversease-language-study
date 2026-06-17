@@ -1,13 +1,13 @@
 questions:
   - key: do_not_understand
-    prompt: Which phrase means "I do not understand"?
+    prompt: Frasa mana yang berarti "saya tidak paham"?
     options:
       - لا أفهم
       - أنا بخير
       - اسمي أحمد
     correct_answer: لا أفهم
   - key: what_meaning
-    prompt: Which phrase asks "What is the meaning of ..."?
+    prompt: Frasa mana yang bertanya "apa arti ..."?
     options:
       - ما معنى ...؟
       - من أين أنت؟

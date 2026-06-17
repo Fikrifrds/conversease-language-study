@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use present verbs like أقرأ, أكتب, أدرس, and ثم to connect actions.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
 أقرأ
 أكتب
-أدرس العربية
-ثم أعمل
+أَدْرُسُ الْعَرَبِيَّةَ
+ثُمَّ أَعْمَلُ
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

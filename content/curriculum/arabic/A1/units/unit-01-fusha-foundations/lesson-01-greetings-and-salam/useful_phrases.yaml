@@ -1,16 +1,16 @@
 phrases:
   - phrase: مرحبًا
     meaning_id: Halo.
-    usage_note: Use this as a neutral greeting.
+    usage_note: Gunakan sebagai sapaan umum yang netral.
   - phrase: أهلًا وسهلًا
     meaning_id: Selamat datang / halo juga.
-    usage_note: Use this as a warm formal reply.
+    usage_note: Gunakan sebagai jawaban formal yang hangat.
   - phrase: كيف حالك؟
     meaning_id: Bagaimana kabarmu?
-    usage_note: Ask one person how they are.
+    usage_note: Gunakan untuk menanyakan kabar satu orang.
   - phrase: أنا بخير، شكرًا
     meaning_id: Saya baik, terima kasih.
-    usage_note: A simple polite answer.
+    usage_note: Gunakan sebagai jawaban sopan yang sederhana.
   - phrase: أحسنت
     meaning_id: Bagus sekali.
-    usage_note: Teacher feedback for a good answer.
+    usage_note: Ucapan guru untuk jawaban yang baik.

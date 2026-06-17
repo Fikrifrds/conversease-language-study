@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Review days, time, and daily study routine.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- اليوم الإثنين
-- الساعة الثامنة
-- أدرس العربية
+- الْيَوْمُ الْإِثْنَيْنِ
+- السَّاعَةُ الثَّامِنَةُ
+- أَدْرُسُ الْعَرَبِيَّةَ
 - أقرأ وأكتب
-- بعد الدرس
+- بَعْدَ الدَّرْسِ

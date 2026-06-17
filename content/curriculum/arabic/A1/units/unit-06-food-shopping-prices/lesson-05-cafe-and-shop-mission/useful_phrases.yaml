@@ -1,16 +1,16 @@
 phrases:
-- phrase: أريد ماءً
+- phrase: أُرِيدُ مَاءً
   meaning_id: Saya ingin air.
-  usage_note: Order a drink.
-- phrase: كم السعر؟
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin air.'
+- phrase: كَمِ السِّعْرُ؟
   meaning_id: Berapa harganya?
-  usage_note: Ask price.
-- phrase: السعر مناسب
+  usage_note: 'Gunakan saat ingin mengatakan: Berapa harganya?'
+- phrase: السِّعْرُ مُنَاسِبٌ
   meaning_id: Harganya cocok.
-  usage_note: Accept price.
-- phrase: آخذ واحدًا
+  usage_note: 'Gunakan saat ingin mengatakan: Harganya cocok.'
+- phrase: آخُذُ وَاحِدًا
   meaning_id: Saya ambil satu.
-  usage_note: Buy one.
-- phrase: الحساب من فضلك
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ambil satu.'
+- phrase: الْحِسَابُ مِنْ فَضْلِكَ
   meaning_id: Tagihannya, tolong.
-  usage_note: Close the purchase.
+  usage_note: 'Gunakan saat ingin mengatakan: Tagihannya, tolong.'

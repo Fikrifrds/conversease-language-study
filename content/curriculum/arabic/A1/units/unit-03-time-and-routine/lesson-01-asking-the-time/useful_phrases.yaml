@@ -1,16 +1,16 @@
 phrases:
-- phrase: كم الساعة؟
+- phrase: كَمِ السَّاعَةُ؟
   meaning_id: Jam berapa?
-  usage_note: Ask the time.
-- phrase: الساعة الثامنة
+  usage_note: 'Gunakan saat ingin mengatakan: Jam berapa?'
+- phrase: السَّاعَةُ الثَّامِنَةُ
   meaning_id: Jam delapan.
-  usage_note: Answer with an hour.
-- phrase: الآن
+  usage_note: 'Gunakan saat ingin mengatakan: Jam delapan.'
+- phrase: الْآنَ
   meaning_id: Sekarang
-  usage_note: Refer to the current time.
-- phrase: صباحًا
+  usage_note: 'Gunakan saat ingin mengatakan: Sekarang'
+- phrase: صَبَاحًا
   meaning_id: Pagi
-  usage_note: Clarify morning time.
-- phrase: مساءً
+  usage_note: 'Gunakan saat ingin mengatakan: Pagi'
+- phrase: مَسَاءً
   meaning_id: Sore/malam
-  usage_note: Clarify evening time.
+  usage_note: 'Gunakan saat ingin mengatakan: Sore/malam'

@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Apa pekerjaanmu?'
-  target_response: ماذا تعمل؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa pekerjaanmu?'
+  target_response: مَاذَا تَعْمَلُ؟
   acceptable_responses:
-  - ماذا تعمل؟
-- prompt: 'Say: Saya pelajar.'
+  - مَاذَا تَعْمَلُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pelajar.'
   target_response: أنا طالب
   acceptable_responses:
   - أنا طالب
-- prompt: 'Say: Saya guru.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya guru.'
   target_response: أنا معلم
   acceptable_responses:
   - أنا معلم

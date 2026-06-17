@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- ما رقم هاتفك؟ -> Berapa nomor teleponmu?
-- رقمي ... -> Nomor saya ...
-- واحد، اثنان، ثلاثة -> Satu, dua, tiga
-- أعد الرقم من فضلك -> Ulangi nomornya, tolong.
-- الرقم صحيح -> Nomornya benar.
+- مَا رَقْمُ هَاتِفِكَ؟ -> Berapa nomor teleponmu?
+- رَقْمِي ... -> Nomor saya ...
+- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ -> Satu, dua, tiga
+- أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ -> Ulangi nomornya, tolong.
+- الرَّقْمُ صَحِيحٌ -> Nomornya benar.

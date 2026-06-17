@@ -1,42 +1,43 @@
 scenario_key: arabic_asking_about_work_or_study
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أين تدرس؟
-learner_goal: Ask simple questions about work or study and answer briefly.
+opening_line: أَيْنَ تَدْرُسُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru tentang
+  tempat belajar dan bidang yang dipelajari.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أين تدرس؟
-  hint: 'Jawab dengan pola: أين تدرس؟'
-  sample_answer: أين تدرس؟
-  focus: Ask study place.
+- coach: أَيْنَ تَدْرُسُ؟
+  hint: 'Jawab dengan pola: أَيْنَ تَدْرُسُ؟'
+  sample_answer: أَيْنَ تَدْرُسُ؟
+  focus: 'Latihan frasa: Di mana kamu belajar?'
   expected_keywords:
-  - أين
-  - تدرس
+  - أَيْنَ
+  - تَدْرُسُ
   indonesian_explanation: Di mana kamu belajar?
-- coach: 'استخدم: ماذا تدرس؟'
-  hint: 'Jawab dengan pola: ماذا تدرس؟'
-  sample_answer: ماذا تدرس؟
-  focus: Ask study topic.
+- coach: 'استخدم: مَاذَا تَدْرُسُ؟'
+  hint: 'Jawab dengan pola: مَاذَا تَدْرُسُ؟'
+  sample_answer: مَاذَا تَدْرُسُ؟
+  focus: 'Latihan frasa: Apa yang kamu pelajari?'
   expected_keywords:
-  - ماذا
-  - تدرس
+  - مَاذَا
+  - تَدْرُسُ
   indonesian_explanation: Apa yang kamu pelajari?
-- coach: 'استخدم: أدرس اللغة العربية'
-  hint: 'Jawab dengan pola: أدرس اللغة العربية'
-  sample_answer: أدرس اللغة العربية
-  focus: Answer study topic.
+- coach: 'استخدم: أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ'
+  hint: 'Jawab dengan pola: أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ'
+  sample_answer: أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
+  focus: 'Latihan frasa: Saya belajar bahasa Arab.'
   expected_keywords:
-  - أدرس
-  - اللغة
-  - العربية
+  - أَدْرُسُ
+  - اللُّغَةَ
+  - الْعَرَبِيَّةَ
   indonesian_explanation: Saya belajar bahasa Arab.
 target_phrases:
-- أين تدرس؟
-- ماذا تدرس؟
-- أدرس اللغة العربية
+- أَيْنَ تَدْرُسُ؟
+- مَاذَا تَدْرُسُ؟
+- أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
 - هل تعمل؟
 rubric:
   speaking:

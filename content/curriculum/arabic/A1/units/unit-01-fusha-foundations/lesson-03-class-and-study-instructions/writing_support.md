@@ -1,16 +1,16 @@
-# Writing Support
+# Bantuan Menulis
 
-Copy the four instruction words:
+Salin empat kata instruksi ini:
 
 ```txt
-اقرأ
-استمع
-أعد
-اكتب
+اِقرأْ
+اِستمعْ
+أَعِدْ
+اُكتبْ
 ```
 
-Then write one response:
+Lalu tulis satu respons:
 
 ```txt
-نعم يا معلم.
+نعم يا مُعَلِّم.
 ```

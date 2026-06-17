@@ -1,11 +1,11 @@
 # Asking How to Get There
 
-After this lesson, learners can ask how to get to a place and follow two-step directions.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu meminta arahan menuju tempat tertentu di sekitar kelas.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

@@ -1,43 +1,44 @@
 scenario_key: arabic_likes_and_ability
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ماذا تحبين؟
-learner_goal: Say what you like and what you can do a little.
+opening_line: مَاذَا تُحِبِّينَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai dan kemampuan
+  sederhana dalam konteks belajar.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ماذا تحبين؟
-  hint: 'Jawab dengan pola: أحب القراءة'
-  sample_answer: أحب القراءة
-  focus: Say a like.
+- coach: مَاذَا تُحِبِّينَ؟
+  hint: 'Jawab dengan pola: أُحِبُّ الْقِرَاءَةَ'
+  sample_answer: أُحِبُّ الْقِرَاءَةَ
+  focus: 'Latihan frasa: Saya suka membaca.'
   expected_keywords:
-  - أحب
-  - القراءة
+  - أُحِبُّ
+  - الْقِرَاءَةَ
   indonesian_explanation: Saya suka membaca.
-- coach: 'استخدم: لا أحب الانتظار'
-  hint: 'Jawab dengan pola: لا أحب الانتظار'
-  sample_answer: لا أحب الانتظار
-  focus: Say a dislike.
+- coach: 'استخدم: لَا أُحِبُّ الِانْتِظَارَ'
+  hint: 'Jawab dengan pola: لَا أُحِبُّ الِانْتِظَارَ'
+  sample_answer: لَا أُحِبُّ الِانْتِظَارَ
+  focus: 'Latihan frasa: Saya tidak suka menunggu.'
   expected_keywords:
-  - لا
-  - أحب
-  - الانتظار
+  - لَا
+  - أُحِبُّ
+  - الِانْتِظَارَ
   indonesian_explanation: Saya tidak suka menunggu.
-- coach: 'استخدم: أستطيع القراءة'
-  hint: 'Jawab dengan pola: أستطيع القراءة'
-  sample_answer: أستطيع القراءة
-  focus: Say ability.
+- coach: 'استخدم: أَسْتَطِيعُ الْقِرَاءَةَ'
+  hint: 'Jawab dengan pola: أَسْتَطِيعُ الْقِرَاءَةَ'
+  sample_answer: أَسْتَطِيعُ الْقِرَاءَةَ
+  focus: 'Latihan frasa: Saya bisa membaca.'
   expected_keywords:
-  - أستطيع
-  - القراءة
+  - أَسْتَطِيعُ
+  - الْقِرَاءَةَ
   indonesian_explanation: Saya bisa membaca.
 target_phrases:
-- أحب القراءة
-- لا أحب الانتظار
-- أستطيع القراءة
-- لا أستطيع الآن
+- أُحِبُّ الْقِرَاءَةَ
+- لَا أُحِبُّ الِانْتِظَارَ
+- أَسْتَطِيعُ الْقِرَاءَةَ
+- لَا أَسْتَطِيعُ الْآنَ
 rubric:
   speaking:
     minimum_score: 60

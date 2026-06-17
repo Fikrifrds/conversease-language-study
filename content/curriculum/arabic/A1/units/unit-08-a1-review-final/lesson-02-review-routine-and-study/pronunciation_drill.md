@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. اليوم الإثنين
-2. الساعة الثامنة
-3. أدرس العربية
+1. الْيَوْمُ الْإِثْنَيْنِ
+2. السَّاعَةُ الثَّامِنَةُ
+3. أَدْرُسُ الْعَرَبِيَّةَ
 4. أقرأ وأكتب
-5. بعد الدرس
+5. بَعْدَ الدَّرْسِ
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

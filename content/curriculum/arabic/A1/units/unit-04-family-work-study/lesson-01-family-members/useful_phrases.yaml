@@ -1,16 +1,16 @@
 phrases:
-- phrase: من هذا؟
+- phrase: مَنْ هَذَا؟
   meaning_id: Siapa ini?
-  usage_note: Ask about a person.
-- phrase: هذا أبي
+  usage_note: 'Gunakan saat ingin mengatakan: Siapa ini?'
+- phrase: هَذَا أَبِي
   meaning_id: Ini ayah saya.
-  usage_note: Identify father.
-- phrase: هذه أمي
+  usage_note: 'Gunakan saat ingin mengatakan: Ini ayah saya.'
+- phrase: هَذِهِ أُمِّي
   meaning_id: Ini ibu saya.
-  usage_note: Identify mother.
-- phrase: هذا أخي
+  usage_note: 'Gunakan saat ingin mengatakan: Ini ibu saya.'
+- phrase: هَذَا أَخِي
   meaning_id: Ini saudara laki-laki saya.
-  usage_note: Identify brother.
-- phrase: هذه عائلتي
+  usage_note: 'Gunakan saat ingin mengatakan: Ini saudara laki-laki saya.'
+- phrase: هَذِهِ عَائِلَتِي
   meaning_id: Ini keluarga saya.
-  usage_note: Talk about family.
+  usage_note: 'Gunakan saat ingin mengatakan: Ini keluarga saya.'

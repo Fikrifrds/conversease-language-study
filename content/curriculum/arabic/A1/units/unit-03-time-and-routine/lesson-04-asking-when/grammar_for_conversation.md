@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use متى + noun/verb for 'when' and في + time phrase for the answer.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
 متى الدرس؟
-في الصباح
-بعد الظهر
-قبل الدرس
+فِي الصَّبَاحِ
+بَعْدَ الظُّهْرِ
+قَبْلَ الدَّرْسِ
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

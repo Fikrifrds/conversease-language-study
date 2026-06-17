@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Halo.'
-  target_response: مرحبًا
+- prompt: 'Ucapkan dalam bahasa Arab: Halo.'
+  target_response: مَرْحَبًا
   acceptable_responses:
-  - مرحبًا
-- prompt: 'Say: Nama saya ...'
-  target_response: اسمي ...
+  - مَرْحَبًا
+- prompt: 'Ucapkan dalam bahasa Arab: Nama saya ...'
+  target_response: اِسْمِي ...
   acceptable_responses:
-  - اسمي ...
-- prompt: 'Say: Saya belajar bahasa Arab.'
-  target_response: أدرس العربية
+  - اِسْمِي ...
+- prompt: 'Ucapkan dalam bahasa Arab: Saya belajar bahasa Arab.'
+  target_response: أَدْرُسُ الْعَرَبِيَّةَ
   acceptable_responses:
-  - أدرس العربية
+  - أَدْرُسُ الْعَرَبِيَّةَ

@@ -1,43 +1,44 @@
 scenario_key: arabic_spelling_your_name
 mode: lesson_practice_coach
 level_code: A1
-opening_line: كيف تكتب اسمك؟
-learner_goal: Spell a short name in Arabic and ask whether the spelling is correct.
+opening_line: كيف تكتبُ اسمَكَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru meminta
+  kamu mengeja nama dengan huruf Arab sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كيف تكتب اسمك؟
-  hint: 'Jawab dengan pola: كيف تكتب اسمك؟'
-  sample_answer: كيف تكتب اسمك؟
-  focus: Ask someone to spell or write a name.
+- coach: كيف تكتبُ اسمَكَ؟
+  hint: 'Jawab dengan pola: كيف تكتبُ اسمَكَ؟'
+  sample_answer: كيف تكتبُ اسمَكَ؟
+  focus: 'Latihan frasa: Bagaimana kamu menulis namamu?'
   expected_keywords:
   - كيف
-  - تكتب
-  - اسمك
+  - تكتبُ
+  - اسمَكَ
   indonesian_explanation: Bagaimana kamu menulis namamu?
-- coach: 'استخدم: أكتب اسمي ...'
-  hint: 'Jawab dengan pola: أكتب اسمي ...'
-  sample_answer: أكتب اسمي ...
-  focus: Say how you write your name.
+- coach: 'استخدم: أَكْتُبُ اسْمِي ...'
+  hint: 'Jawab dengan pola: أَكْتُبُ اسْمِي ...'
+  sample_answer: أَكْتُبُ اسْمِي ...
+  focus: 'Latihan frasa: Saya menulis nama saya ...'
   expected_keywords:
-  - أكتب
-  - اسمي
+  - أَكْتُبُ
+  - اسْمِي
   indonesian_explanation: Saya menulis nama saya ...
-- coach: 'استخدم: هذا حرف ...'
-  hint: 'Jawab dengan pola: هذا حرف ...'
-  sample_answer: هذا حرف ...
-  focus: Identify one Arabic letter.
+- coach: 'استخدم: هَذَا حَرْفُ ...'
+  hint: 'Jawab dengan pola: هَذَا حَرْفُ ...'
+  sample_answer: هَذَا حَرْفُ ...
+  focus: 'Latihan frasa: Ini huruf ...'
   expected_keywords:
-  - هذا
-  - حرف
+  - هَذَا
+  - حَرْفُ
   indonesian_explanation: Ini huruf ...
 target_phrases:
-- كيف تكتب اسمك؟
-- أكتب اسمي ...
-- هذا حرف ...
-- هل هذا صحيح؟
+- كيف تكتبُ اسمَكَ؟
+- أَكْتُبُ اسْمِي ...
+- هَذَا حَرْفُ ...
+- هَلْ هَذَا صَحِيحٌ؟
 rubric:
   speaking:
     minimum_score: 60

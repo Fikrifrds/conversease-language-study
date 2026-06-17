@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
 - أنا من إندونيسيا -> Saya dari Indonesia.
-- عندي درس -> Saya punya pelajaran.
-- أريد كتابًا -> Saya ingin buku.
-- لا أفهم -> Saya tidak paham.
-- أعد من فضلك -> Ulangi, tolong.
+- عِنْدِي دَرْسٌ -> Saya punya pelajaran.
+- أُرِيدُ كِتَابًا -> Saya ingin buku.
+- لَا أَفْهَمُ -> Saya tidak paham.
+- أَعِدْ مِنْ فَضْلِكَ -> Ulangi, tolong.

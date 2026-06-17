@@ -4,8 +4,8 @@ title: Arabic Introduction Mission
 status: beta
 estimated_minutes: 12
 conversation_situation: completing_a_short_formal_arabic_introduction
-conversation_goal: Complete a short formal Arabic introduction using greetings, name, origin, and clarification phrases.
-grammar_summary: Combine مرحبًا, اسمي ..., أنا من ..., لا أفهم, and أعد من فضلك in one simple mission conversation.
+conversation_goal: Latih perkenalan Arab singkat memakai sapaan, nama, asal, dan frasa klarifikasi.
+grammar_summary: Gabungkan مرحبًا, اسمي ..., أنا من ..., لا أفهم, dan أَعِدْ مِنْ فَضْلِكَ dalam satu misi percakapan sederhana.
 required_sections:
   - conversation_goal
   - situation_setup

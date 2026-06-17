@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Di mana kamu belajar?"?
+  prompt: Frasa mana yang berarti "Di mana kamu belajar?"?
   options:
-  - أين تدرس؟
-  - ماذا تدرس؟
-  - أدرس اللغة العربية
-  correct_answer: أين تدرس؟
+  - أَيْنَ تَدْرُسُ؟
+  - مَاذَا تَدْرُسُ؟
+  - أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
+  correct_answer: أَيْنَ تَدْرُسُ؟
 - key: phrase_2
-  prompt: Which phrase means "Apa yang kamu pelajari?"?
+  prompt: Frasa mana yang berarti "Apa yang kamu pelajari?"?
   options:
-  - ماذا تدرس؟
-  - أين تدرس؟
-  - أدرس اللغة العربية
-  correct_answer: ماذا تدرس؟
+  - مَاذَا تَدْرُسُ؟
+  - أَيْنَ تَدْرُسُ؟
+  - أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
+  correct_answer: مَاذَا تَدْرُسُ؟

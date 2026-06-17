@@ -1,43 +1,44 @@
 scenario_key: arabic_days_of_the_week
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أي يوم اليوم؟
-learner_goal: Say today, tomorrow, and a simple class day.
+opening_line: أي يوم الْيَوْمُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu
+  menyebut hari ini serta hari berikutnya.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أي يوم اليوم؟
-  hint: 'Jawab dengan pola: أي يوم اليوم؟'
-  sample_answer: أي يوم اليوم؟
-  focus: Ask today's day.
+- coach: أي يوم الْيَوْمُ؟
+  hint: 'Jawab dengan pola: أي يوم الْيَوْمُ؟'
+  sample_answer: أي يوم الْيَوْمُ؟
+  focus: 'Latihan frasa: Hari apa hari ini?'
   expected_keywords:
   - أي
   - يوم
-  - اليوم
+  - الْيَوْمُ
   indonesian_explanation: Hari apa hari ini?
-- coach: 'استخدم: اليوم الإثنين'
-  hint: 'Jawab dengan pola: اليوم الإثنين'
-  sample_answer: اليوم الإثنين
-  focus: Say today's day.
+- coach: 'استخدم: الْيَوْمُ الْإِثْنَيْنِ'
+  hint: 'Jawab dengan pola: الْيَوْمُ الْإِثْنَيْنِ'
+  sample_answer: الْيَوْمُ الْإِثْنَيْنِ
+  focus: 'Latihan frasa: Hari ini Senin.'
   expected_keywords:
-  - اليوم
-  - الإثنين
+  - الْيَوْمُ
+  - الْإِثْنَيْنِ
   indonesian_explanation: Hari ini Senin.
-- coach: 'استخدم: غدًا الثلاثاء'
-  hint: 'Jawab dengan pola: غدًا الثلاثاء'
-  sample_answer: غدًا الثلاثاء
-  focus: Say tomorrow's day.
+- coach: 'استخدم: غَدًا الثُّلَاثَاءُ'
+  hint: 'Jawab dengan pola: غَدًا الثُّلَاثَاءُ'
+  sample_answer: غَدًا الثُّلَاثَاءُ
+  focus: 'Latihan frasa: Besok Selasa.'
   expected_keywords:
-  - غدًا
-  - الثلاثاء
+  - غَدًا
+  - الثُّلَاثَاءُ
   indonesian_explanation: Besok Selasa.
 target_phrases:
-- أي يوم اليوم؟
-- اليوم الإثنين
-- غدًا الثلاثاء
-- عندي درس
+- أي يوم الْيَوْمُ؟
+- الْيَوْمُ الْإِثْنَيْنِ
+- غَدًا الثُّلَاثَاءُ
+- عِنْدِي دَرْسٌ
 rubric:
   speaking:
     minimum_score: 60

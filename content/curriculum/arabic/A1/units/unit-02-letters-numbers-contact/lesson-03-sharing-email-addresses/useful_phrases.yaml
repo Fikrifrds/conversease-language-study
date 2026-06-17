@@ -1,16 +1,16 @@
 phrases:
-- phrase: ما بريدك الإلكتروني؟
+- phrase: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
   meaning_id: Apa alamat emailmu?
-  usage_note: Ask for an email address.
-- phrase: بريدي الإلكتروني ...
+  usage_note: 'Gunakan saat ingin mengatakan: Apa alamat emailmu?'
+- phrase: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
   meaning_id: Email saya ...
-  usage_note: Share your email.
-- phrase: اكتب من فضلك
+  usage_note: 'Gunakan saat ingin mengatakan: Email saya ...'
+- phrase: اُكْتُبْ مِنْ فَضْلِكَ
   meaning_id: Tulis, tolong.
-  usage_note: Ask someone to write it.
-- phrase: نقطة
+  usage_note: 'Gunakan saat ingin mengatakan: Tulis, tolong.'
+- phrase: نُقْطَةٌ
   meaning_id: Titik
-  usage_note: Say dot in an address.
-- phrase: شرطة
+  usage_note: 'Gunakan saat ingin mengatakan: Titik'
+- phrase: شَرْطَةٌ
   meaning_id: Tanda hubung
-  usage_note: Say dash in an address.
+  usage_note: 'Gunakan saat ingin mengatakan: Tanda hubung'

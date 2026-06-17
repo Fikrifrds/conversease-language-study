@@ -1,16 +1,16 @@
 phrases:
-- phrase: ماذا تعمل؟
+- phrase: مَاذَا تَعْمَلُ؟
   meaning_id: Apa pekerjaanmu?
-  usage_note: Ask about work.
+  usage_note: 'Gunakan saat ingin mengatakan: Apa pekerjaanmu?'
 - phrase: أنا طالب
   meaning_id: Saya pelajar.
-  usage_note: Say student identity.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya pelajar.'
 - phrase: أنا معلم
   meaning_id: Saya guru.
-  usage_note: Say teacher identity.
-- phrase: أعمل في مكتب
+  usage_note: 'Gunakan saat ingin mengatakan: Saya guru.'
+- phrase: أَعْمَلُ فِي مَكْتَبٍ
   meaning_id: Saya bekerja di kantor.
-  usage_note: Say work place.
-- phrase: أدرس في مدرسة
+  usage_note: 'Gunakan saat ingin mengatakan: Saya bekerja di kantor.'
+- phrase: أَدْرُسُ فِي مَدْرَسَةٍ
   meaning_id: Saya belajar di sekolah.
-  usage_note: Say study place.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belajar di sekolah.'

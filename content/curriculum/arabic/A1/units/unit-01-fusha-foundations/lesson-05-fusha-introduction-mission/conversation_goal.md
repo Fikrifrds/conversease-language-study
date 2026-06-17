@@ -1,9 +1,9 @@
-Complete a short formal Arabic introduction using greetings, name, origin, and clarification phrases.
+Latih perkenalan bahasa Arab singkat memakai sapaan, nama, asal, dan frasa klarifikasi.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
 - مرحبًا
 - اسمي ...
 - أنا من إندونيسيا
 - لا أفهم
-- أعد من فضلك
+- أَعِدْ مِنْ فَضْلِكَ

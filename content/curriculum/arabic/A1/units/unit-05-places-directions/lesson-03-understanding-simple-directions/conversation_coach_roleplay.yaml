@@ -1,42 +1,43 @@
 scenario_key: arabic_understanding_simple_directions
 mode: lesson_practice_coach
 level_code: A1
-opening_line: كيف أذهب إلى المكتبة؟
-learner_goal: Understand right, left, forward, beside, and in front of.
+opening_line: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju
+  kelas atau perpustakaan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كيف أذهب إلى المكتبة؟
-  hint: 'Jawab dengan pola: اذهب يمينًا'
-  sample_answer: اذهب يمينًا
-  focus: Give a right direction.
+- coach: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+  hint: 'Jawab dengan pola: اِذْهَبْ يَمِينًا'
+  sample_answer: اِذْهَبْ يَمِينًا
+  focus: 'Latihan frasa: Pergi ke kanan.'
   expected_keywords:
-  - اذهب
-  - يمينًا
+  - اِذْهَبْ
+  - يَمِينًا
   indonesian_explanation: Pergi ke kanan.
-- coach: 'استخدم: اذهب يسارًا'
-  hint: 'Jawab dengan pola: اذهب يسارًا'
-  sample_answer: اذهب يسارًا
-  focus: Give a left direction.
+- coach: 'استخدم: اِذْهَبْ يَسَارًا'
+  hint: 'Jawab dengan pola: اِذْهَبْ يَسَارًا'
+  sample_answer: اِذْهَبْ يَسَارًا
+  focus: 'Latihan frasa: Pergi ke kiri.'
   expected_keywords:
-  - اذهب
-  - يسارًا
+  - اِذْهَبْ
+  - يَسَارًا
   indonesian_explanation: Pergi ke kiri.
-- coach: 'استخدم: إلى الأمام'
-  hint: 'Jawab dengan pola: إلى الأمام'
-  sample_answer: إلى الأمام
-  focus: Give forward direction.
+- coach: 'استخدم: إِلَى الْأَمَامِ'
+  hint: 'Jawab dengan pola: إِلَى الْأَمَامِ'
+  sample_answer: إِلَى الْأَمَامِ
+  focus: 'Latihan frasa: Ke depan'
   expected_keywords:
-  - إلى
-  - الأمام
+  - إِلَى
+  - الْأَمَامِ
   indonesian_explanation: Ke depan
 target_phrases:
-- اذهب يمينًا
-- اذهب يسارًا
-- إلى الأمام
-- بجانب المكتب
+- اِذْهَبْ يَمِينًا
+- اِذْهَبْ يَسَارًا
+- إِلَى الْأَمَامِ
+- بِجَانِبِ الْمَكْتَبِ
 rubric:
   speaking:
     minimum_score: 60

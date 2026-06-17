@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Saya suka membaca.'
-  target_response: أحب القراءة
+- prompt: 'Ucapkan dalam bahasa Arab: Saya suka membaca.'
+  target_response: أُحِبُّ الْقِرَاءَةَ
   acceptable_responses:
-  - أحب القراءة
-- prompt: 'Say: Saya tidak suka menunggu.'
-  target_response: لا أحب الانتظار
+  - أُحِبُّ الْقِرَاءَةَ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak suka menunggu.'
+  target_response: لَا أُحِبُّ الِانْتِظَارَ
   acceptable_responses:
-  - لا أحب الانتظار
-- prompt: 'Say: Saya bisa membaca.'
-  target_response: أستطيع القراءة
+  - لَا أُحِبُّ الِانْتِظَارَ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa membaca.'
+  target_response: أَسْتَطِيعُ الْقِرَاءَةَ
   acceptable_responses:
-  - أستطيع القراءة
+  - أَسْتَطِيعُ الْقِرَاءَةَ

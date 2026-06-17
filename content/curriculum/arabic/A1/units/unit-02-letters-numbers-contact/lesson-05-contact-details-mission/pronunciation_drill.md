@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. اسمي ...
-2. أكتب اسمي ...
-3. رقمي ...
-4. بريدي الإلكتروني ...
-5. هل هذا واضح؟
+1. اِسْمِي ...
+2. أَكْتُبُ اسْمِي ...
+3. رَقْمِي ...
+4. بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+5. هَلْ هَذَا وَاضِحٌ؟
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

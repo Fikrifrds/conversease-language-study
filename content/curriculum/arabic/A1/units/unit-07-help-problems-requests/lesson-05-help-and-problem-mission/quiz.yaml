@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Saya tidak paham."?
+  prompt: Frasa mana yang berarti "Saya tidak paham."?
   options:
-  - لا أفهم
-  - هل تساعدني؟
-  - ببطء من فضلك
-  correct_answer: لا أفهم
+  - لَا أَفْهَمُ
+  - هَلْ تُسَاعِدُنِي؟
+  - بِبُطْءٍ مِنْ فَضْلِكَ
+  correct_answer: لَا أَفْهَمُ
 - key: phrase_2
-  prompt: Which phrase means "Bisakah Anda membantu saya?"?
+  prompt: Frasa mana yang berarti "Bisakah Anda membantu saya?"?
   options:
-  - هل تساعدني؟
-  - لا أفهم
-  - ببطء من فضلك
-  correct_answer: هل تساعدني؟
+  - هَلْ تُسَاعِدُنِي؟
+  - لَا أَفْهَمُ
+  - بِبُطْءٍ مِنْ فَضْلِكَ
+  correct_answer: هَلْ تُسَاعِدُنِي؟

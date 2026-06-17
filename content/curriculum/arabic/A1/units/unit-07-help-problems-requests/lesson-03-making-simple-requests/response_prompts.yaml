@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Buka bukunya.'
-  target_response: افتح الكتاب
+- prompt: 'Ucapkan dalam bahasa Arab: Buka bukunya.'
+  target_response: اِفْتَحِ الْكِتَابَ
   acceptable_responses:
-  - افتح الكتاب
-- prompt: 'Say: Tulis kalimatnya.'
-  target_response: اكتب الجملة
+  - اِفْتَحِ الْكِتَابَ
+- prompt: 'Ucapkan dalam bahasa Arab: Tulis kalimatnya.'
+  target_response: اُكْتُبِ الْجُمْلَةَ
   acceptable_responses:
-  - اكتب الجملة
-- prompt: 'Say: Dengarkan.'
-  target_response: استمع
+  - اُكْتُبِ الْجُمْلَةَ
+- prompt: 'Ucapkan dalam bahasa Arab: Dengarkan.'
+  target_response: اِسْتَمِعْ
   acceptable_responses:
-  - استمع
+  - اِسْتَمِعْ

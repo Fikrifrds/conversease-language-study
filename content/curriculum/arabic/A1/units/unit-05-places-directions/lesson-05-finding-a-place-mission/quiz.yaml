@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Di mana kelas?"?
+  prompt: Frasa mana yang berarti "Di mana kelas?"?
   options:
-  - أين الفصل؟
-  - كيف أذهب إلى الفصل؟
-  - اذهب يمينًا
-  correct_answer: أين الفصل؟
+  - أَيْنَ الْفَصْلُ؟
+  - كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+  - اِذْهَبْ يَمِينًا
+  correct_answer: أَيْنَ الْفَصْلُ؟
 - key: phrase_2
-  prompt: Which phrase means "Bagaimana saya pergi ke kelas?"?
+  prompt: Frasa mana yang berarti "Bagaimana saya pergi ke kelas?"?
   options:
-  - كيف أذهب إلى الفصل؟
-  - أين الفصل؟
-  - اذهب يمينًا
-  correct_answer: كيف أذهب إلى الفصل؟
+  - كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+  - أَيْنَ الْفَصْلُ؟
+  - اِذْهَبْ يَمِينًا
+  correct_answer: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟

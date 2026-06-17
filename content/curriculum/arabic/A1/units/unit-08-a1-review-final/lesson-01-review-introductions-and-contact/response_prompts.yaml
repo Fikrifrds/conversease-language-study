@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Nama saya Ahmad.'
-  target_response: اسمي أحمد
+- prompt: 'Ucapkan dalam bahasa Arab: Nama saya Ahmad.'
+  target_response: اِسْمِي أَحْمَدُ
   acceptable_responses:
-  - اسمي أحمد
-- prompt: 'Say: Saya dari Indonesia.'
+  - اِسْمِي أَحْمَدُ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya dari Indonesia.'
   target_response: أنا من إندونيسيا
   acceptable_responses:
   - أنا من إندونيسيا
-- prompt: 'Say: Saya menulis nama saya.'
-  target_response: أكتب اسمي
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menulis nama saya.'
+  target_response: أَكْتُبُ اسْمِي
   acceptable_responses:
-  - أكتب اسمي
+  - أَكْتُبُ اسْمِي

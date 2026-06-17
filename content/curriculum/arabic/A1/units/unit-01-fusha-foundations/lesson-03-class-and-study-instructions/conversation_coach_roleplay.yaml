@@ -1,44 +1,44 @@
 scenario_key: arabic_class_and_study_instructions
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اقرأ الجملة.
-learner_goal: Recognize simple study instructions and respond politely.
+opening_line: اِقرأِ الجملةَ.
+learner_goal: Kenali instruksi belajar sederhana dan respons dengan sopan.
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: اقرأ الجملة.
-    hint: "Jawab bahwa kamu siap: نعم يا معلم."
-    sample_answer: نعم يا معلم.
-    focus: Polite classroom response
+  - coach: اِقرأِ الجملةَ.
+    hint: "Jawab bahwa kamu siap: نعم يا مُعَلِّم."
+    sample_answer: نعم يا مُعَلِّم.
+    focus: Respons sopan di kelas
     expected_keywords:
       - نعم
-      - معلم
-    indonesian_explanation: نعم يا معلم adalah respons sopan kepada guru laki-laki.
-  - coach: استمع ثم أعد.
+      - مُعَلِّم
+    indonesian_explanation: نعم يا مُعَلِّم adalah respons sopan kepada guru laki-laki.
+  - coach: اِستمعْ ثم أَعِدْ.
     hint: Ulangi instruksi pendek ini.
-    sample_answer: استمع ثم أعد.
-    focus: Repeat the instruction
+    sample_answer: اِستمعْ ثم أَعِدْ.
+    focus: Mengulangi instruksi
     expected_keywords:
-      - استمع
-      - أعد
-    indonesian_explanation: استمع berarti dengarkan, ثم berarti lalu, أعد berarti ulangilah.
-  - coach: اكتب الكلمة.
+      - اِستمعْ
+      - أَعِدْ
+    indonesian_explanation: اِستمعْ berarti dengarkan, ثم berarti lalu, أَعِدْ berarti ulangilah.
+  - coach: اُكتبِ الكلمةَ.
     hint: Jawab siap menulis.
-    sample_answer: نعم، أكتب الكلمة.
-    focus: Confirm writing
+    sample_answer: نعم، أكتبُ الكلمةَ.
+    focus: Mengonfirmasi siap menulis
     expected_keywords:
       - نعم
       - أكتب
       - الكلمة
     indonesian_explanation: أكتب berarti saya menulis.
 target_phrases:
-  - اقرأ
-  - استمع
-  - أعد
-  - اكتب
-  - نعم يا معلم
+  - اِقرأْ
+  - اِستمعْ
+  - أَعِدْ
+  - اُكتبْ
+  - نعم يا مُعَلِّم
 rubric:
   speaking:
     minimum_score: 60

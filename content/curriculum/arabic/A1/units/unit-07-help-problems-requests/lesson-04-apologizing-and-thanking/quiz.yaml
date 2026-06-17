@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Maaf."?
+  prompt: Frasa mana yang berarti "Maaf."?
   options:
-  - آسف
-  - آسفة
-  - عذرًا
-  correct_answer: آسف
+  - آسِفٌ
+  - آسِفَةٌ
+  - عُذْرًا
+  correct_answer: آسِفٌ
 - key: phrase_2
-  prompt: Which phrase means "Maaf."?
+  prompt: Frasa mana yang berarti "Maaf."?
   options:
-  - آسفة
-  - آسف
-  - عذرًا
-  correct_answer: آسفة
+  - آسِفَةٌ
+  - آسِفٌ
+  - عُذْرًا
+  correct_answer: آسِفَةٌ

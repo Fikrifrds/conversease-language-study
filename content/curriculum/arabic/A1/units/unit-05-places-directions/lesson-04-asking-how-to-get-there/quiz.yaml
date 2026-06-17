@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Bagaimana saya pergi ke perpustakaan?"?
+  prompt: Frasa mana yang berarti "Bagaimana saya pergi ke perpustakaan?"?
   options:
-  - كيف أذهب إلى المكتبة؟
-  - امشِ إلى الأمام
-  - ثم
-  correct_answer: كيف أذهب إلى المكتبة؟
+  - كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+  - امشِ إِلَى الْأَمَامِ
+  - ثُمَّ
+  correct_answer: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
 - key: phrase_2
-  prompt: Which phrase means "Berjalanlah ke depan."?
+  prompt: Frasa mana yang berarti "Berjalanlah ke depan."?
   options:
-  - امشِ إلى الأمام
-  - كيف أذهب إلى المكتبة؟
-  - ثم
-  correct_answer: امشِ إلى الأمام
+  - امشِ إِلَى الْأَمَامِ
+  - كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+  - ثُمَّ
+  correct_answer: امشِ إِلَى الْأَمَامِ

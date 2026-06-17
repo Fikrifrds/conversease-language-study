@@ -1,9 +1,8 @@
-Say your name and country in simple Arabic, then ask the same question back.
+Latih menyebutkan nama dan asal negara, lalu tanyakan balik dengan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- ما اسمك؟
+- ما اسمُكَ؟
 - اسمي ...
-- من أين أنت؟
+- من أين أنتَ؟
 - أنا من إندونيسيا.
-

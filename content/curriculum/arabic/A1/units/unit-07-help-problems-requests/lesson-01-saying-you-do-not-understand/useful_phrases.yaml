@@ -1,16 +1,16 @@
 phrases:
-- phrase: لا أفهم
+- phrase: لَا أَفْهَمُ
   meaning_id: Saya tidak paham.
-  usage_note: State lack of understanding.
-- phrase: لا أعرف الكلمة
+  usage_note: 'Gunakan saat ingin mengatakan: Saya tidak paham.'
+- phrase: لَا أَعْرِفُ الْكَلِمَةَ
   meaning_id: Saya tidak tahu katanya.
-  usage_note: Identify the problem.
-- phrase: ماذا يعني هذا؟
+  usage_note: 'Gunakan saat ingin mengatakan: Saya tidak tahu katanya.'
+- phrase: مَاذَا يَعْنِي هَذَا؟
   meaning_id: Apa arti ini?
-  usage_note: Ask meaning.
-- phrase: ببطء من فضلك
+  usage_note: 'Gunakan saat ingin mengatakan: Apa arti ini?'
+- phrase: بِبُطْءٍ مِنْ فَضْلِكَ
   meaning_id: Pelan-pelan, tolong.
-  usage_note: Ask for slower speech.
-- phrase: مرة أخرى
+  usage_note: 'Gunakan saat ingin mengatakan: Pelan-pelan, tolong.'
+- phrase: مَرَّةً أُخْرَى
   meaning_id: Sekali lagi
-  usage_note: Ask repetition.
+  usage_note: 'Gunakan saat ingin mengatakan: Sekali lagi'

@@ -1,15 +1,15 @@
 questions:
   - key: mission_order
-    prompt: Which answer introduces name and origin?
+    prompt: Jawaban mana yang memperkenalkan nama dan asal?
     options:
       - اسمي أحمد. أنا من إندونيسيا.
-      - لا أفهم. أعد من فضلك.
-      - اقرأ الجملة.
+      - لا أفهم. أَعِدْ مِنْ فَضْلِكَ.
+      - اِقرأِ الجملةَ.
     correct_answer: اسمي أحمد. أنا من إندونيسيا.
   - key: ask_repeat
-    prompt: Which answer is best when you do not understand?
+    prompt: Jawaban mana yang paling tepat saat kamu belum paham?
     options:
-      - لا أفهم. أعد من فضلك.
+      - لا أفهم. أَعِدْ مِنْ فَضْلِكَ.
       - أنا من إندونيسيا.
       - مرحبًا.
-    correct_answer: لا أفهم. أعد من فضلك.
+    correct_answer: لا أفهم. أَعِدْ مِنْ فَضْلِكَ.

@@ -1,15 +1,14 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the instruction list:
+Baca daftar instruksi ini:
 
 ```txt
-اقرأ.
-استمع.
-أعد.
-اكتب.
+اِقرأْ.
+اِستمعْ.
+أَعِدْ.
+اُكتبْ.
 ```
 
-Question: Which instruction means "write"?
+Pertanyaan: Instruksi mana yang berarti "tulislah"?
 
-Answer: اكتب.
-
+Jawaban: اُكتبْ.

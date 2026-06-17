@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
 1. أنا من إندونيسيا
-2. عندي درس
-3. أريد كتابًا
-4. لا أفهم
-5. أعد من فضلك
+2. عِنْدِي دَرْسٌ
+3. أُرِيدُ كِتَابًا
+4. لَا أَفْهَمُ
+5. أَعِدْ مِنْ فَضْلِكَ
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

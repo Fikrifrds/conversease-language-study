@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Combine day, time, and routine phrases in one short conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- اليوم ...
+- الْيَوْمُ ...
 - الساعة ...
-- عندي درس
-- أدرس العربية
-- بعد الدرس
+- عِنْدِي دَرْسٌ
+- أَدْرُسُ الْعَرَبِيَّةَ
+- بَعْدَ الدَّرْسِ

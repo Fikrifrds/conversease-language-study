@@ -1,39 +1,40 @@
 scenario_key: arabic_simple_place_words
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أين المدرسة؟
-learner_goal: Recognize and use simple place nouns in short questions.
+opening_line: أَيْنَ الْمَدْرَسَةُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum yang
+  sering muncul dalam percakapan formal.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أين المدرسة؟
-  hint: 'Jawab dengan pola: البيت'
-  sample_answer: البيت
-  focus: Name a home.
+- coach: أَيْنَ الْمَدْرَسَةُ؟
+  hint: 'Jawab dengan pola: الْبَيْتُ'
+  sample_answer: الْبَيْتُ
+  focus: 'Latihan frasa: Rumah'
   expected_keywords:
-  - البيت
+  - الْبَيْتُ
   indonesian_explanation: Rumah
-- coach: 'استخدم: المدرسة'
-  hint: 'Jawab dengan pola: المدرسة'
-  sample_answer: المدرسة
-  focus: Name a school.
+- coach: 'استخدم: الْمَدْرَسَةُ'
+  hint: 'Jawab dengan pola: الْمَدْرَسَةُ'
+  sample_answer: الْمَدْرَسَةُ
+  focus: 'Latihan frasa: Sekolah'
   expected_keywords:
-  - المدرسة
+  - الْمَدْرَسَةُ
   indonesian_explanation: Sekolah
-- coach: 'استخدم: السوق'
-  hint: 'Jawab dengan pola: السوق'
-  sample_answer: السوق
-  focus: Name a market.
+- coach: 'استخدم: السُّوقُ'
+  hint: 'Jawab dengan pola: السُّوقُ'
+  sample_answer: السُّوقُ
+  focus: 'Latihan frasa: Pasar'
   expected_keywords:
-  - السوق
+  - السُّوقُ
   indonesian_explanation: Pasar
 target_phrases:
-- البيت
-- المدرسة
-- السوق
-- المكتب
+- الْبَيْتُ
+- الْمَدْرَسَةُ
+- السُّوقُ
+- الْمَكْتَبُ
 rubric:
   speaking:
     minimum_score: 60

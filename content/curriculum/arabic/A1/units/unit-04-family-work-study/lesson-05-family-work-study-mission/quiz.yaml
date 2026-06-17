@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Ini keluarga saya."?
+  prompt: Frasa mana yang berarti "Ini keluarga saya."?
   options:
-  - هذه عائلتي
+  - هَذِهِ عَائِلَتِي
   - أنا طالب
-  - أدرس العربية
-  correct_answer: هذه عائلتي
+  - أَدْرُسُ الْعَرَبِيَّةَ
+  correct_answer: هَذِهِ عَائِلَتِي
 - key: phrase_2
-  prompt: Which phrase means "Saya pelajar."?
+  prompt: Frasa mana yang berarti "Saya pelajar."?
   options:
   - أنا طالب
-  - هذه عائلتي
-  - أدرس العربية
+  - هَذِهِ عَائِلَتِي
+  - أَدْرُسُ الْعَرَبِيَّةَ
   correct_answer: أنا طالب

@@ -1,6 +1,6 @@
-# Reading Support
+# Bantuan Membaca
 
-Read this short exchange:
+Baca pertukaran singkat ini:
 
 ```txt
 مرحبًا.
@@ -8,6 +8,6 @@ Read this short exchange:
 أنا بخير، شكرًا.
 ```
 
-Question: Which line can answer the greeting?
+Pertanyaan: Baris mana yang bisa menjawab sapaan?
 
-Answer: أهلًا وسهلًا.
+Jawaban: أهلًا وسهلًا.

@@ -4,8 +4,9 @@ title: Talking About Daily Routines
 status: beta
 estimated_minutes: 10
 conversation_situation: talking_about_daily_routines
-conversation_goal: Say a few simple daily actions in order.
-grammar_summary: Use present verbs like أقرأ, أكتب, أدرس, and ثم to connect actions.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas pagi
+  dengan kalimat Arab yang sangat pendek.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

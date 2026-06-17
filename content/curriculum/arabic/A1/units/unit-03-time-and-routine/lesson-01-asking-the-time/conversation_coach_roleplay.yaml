@@ -1,41 +1,42 @@
 scenario_key: arabic_asking_the_time
 mode: lesson_practice_coach
 level_code: A1
-opening_line: كم الساعة الآن؟
-learner_goal: Ask the time and answer with a simple hour.
+opening_line: كَمِ السَّاعَةُ الْآنَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan ingin
+  tahu jam sekarang.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كم الساعة الآن؟
-  hint: 'Jawab dengan pola: كم الساعة؟'
-  sample_answer: كم الساعة؟
-  focus: Ask the time.
+- coach: كَمِ السَّاعَةُ الْآنَ؟
+  hint: 'Jawab dengan pola: كَمِ السَّاعَةُ؟'
+  sample_answer: كَمِ السَّاعَةُ؟
+  focus: 'Latihan frasa: Jam berapa?'
   expected_keywords:
-  - كم
-  - الساعة
+  - كَمِ
+  - السَّاعَةُ
   indonesian_explanation: Jam berapa?
-- coach: 'استخدم: الساعة الثامنة'
-  hint: 'Jawab dengan pola: الساعة الثامنة'
-  sample_answer: الساعة الثامنة
-  focus: Answer with an hour.
+- coach: 'استخدم: السَّاعَةُ الثَّامِنَةُ'
+  hint: 'Jawab dengan pola: السَّاعَةُ الثَّامِنَةُ'
+  sample_answer: السَّاعَةُ الثَّامِنَةُ
+  focus: 'Latihan frasa: Jam delapan.'
   expected_keywords:
-  - الساعة
-  - الثامنة
+  - السَّاعَةُ
+  - الثَّامِنَةُ
   indonesian_explanation: Jam delapan.
-- coach: 'استخدم: الآن'
-  hint: 'Jawab dengan pola: الآن'
-  sample_answer: الآن
-  focus: Refer to the current time.
+- coach: 'استخدم: الْآنَ'
+  hint: 'Jawab dengan pola: الْآنَ'
+  sample_answer: الْآنَ
+  focus: 'Latihan frasa: Sekarang'
   expected_keywords:
-  - الآن
+  - الْآنَ
   indonesian_explanation: Sekarang
 target_phrases:
-- كم الساعة؟
-- الساعة الثامنة
-- الآن
-- صباحًا
+- كَمِ السَّاعَةُ؟
+- السَّاعَةُ الثَّامِنَةُ
+- الْآنَ
+- صَبَاحًا
 rubric:
   speaking:
     minimum_score: 60

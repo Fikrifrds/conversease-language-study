@@ -1,40 +1,41 @@
 scenario_key: arabic_contact_details_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ما اسمك؟
-learner_goal: Combine name, spelling, number, and email in one short formal exchange.
+opening_line: مَا اسْمُكَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri di kelas baru
+  dan memberikan informasi kontak sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ما اسمك؟
-  hint: 'Jawab dengan pola: اسمي ...'
-  sample_answer: اسمي ...
-  focus: Start your contact details.
+- coach: مَا اسْمُكَ؟
+  hint: 'Jawab dengan pola: اِسْمِي ...'
+  sample_answer: اِسْمِي ...
+  focus: 'Latihan frasa: Nama saya ...'
   expected_keywords:
-  - اسمي
+  - اِسْمِي
   indonesian_explanation: Nama saya ...
-- coach: 'استخدم: أكتب اسمي ...'
-  hint: 'Jawab dengan pola: أكتب اسمي ...'
-  sample_answer: أكتب اسمي ...
-  focus: Spell your name.
+- coach: 'استخدم: أَكْتُبُ اسْمِي ...'
+  hint: 'Jawab dengan pola: أَكْتُبُ اسْمِي ...'
+  sample_answer: أَكْتُبُ اسْمِي ...
+  focus: 'Latihan frasa: Saya menulis nama saya ...'
   expected_keywords:
-  - أكتب
-  - اسمي
+  - أَكْتُبُ
+  - اسْمِي
   indonesian_explanation: Saya menulis nama saya ...
-- coach: 'استخدم: رقمي ...'
-  hint: 'Jawab dengan pola: رقمي ...'
-  sample_answer: رقمي ...
-  focus: Give your number.
+- coach: 'استخدم: رَقْمِي ...'
+  hint: 'Jawab dengan pola: رَقْمِي ...'
+  sample_answer: رَقْمِي ...
+  focus: 'Latihan frasa: Nomor saya ...'
   expected_keywords:
-  - رقمي
+  - رَقْمِي
   indonesian_explanation: Nomor saya ...
 target_phrases:
-- اسمي ...
-- أكتب اسمي ...
-- رقمي ...
-- بريدي الإلكتروني ...
+- اِسْمِي ...
+- أَكْتُبُ اسْمِي ...
+- رَقْمِي ...
+- بَرِيدِي الْإِلِكْتُرُونِيُّ ...
 rubric:
   speaking:
     minimum_score: 60

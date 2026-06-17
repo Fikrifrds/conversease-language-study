@@ -1,16 +1,16 @@
 phrases:
-- phrase: هل تساعدني؟
+- phrase: هَلْ تُسَاعِدُنِي؟
   meaning_id: Bisakah Anda membantu saya?
-  usage_note: Ask for help.
-- phrase: أحتاج مساعدة
+  usage_note: 'Gunakan saat ingin mengatakan: Bisakah Anda membantu saya?'
+- phrase: أَحْتَاجُ مُسَاعَدَةً
   meaning_id: Saya butuh bantuan.
-  usage_note: State need.
-- phrase: أين أجد الدرس؟
+  usage_note: 'Gunakan saat ingin mengatakan: Saya butuh bantuan.'
+- phrase: أَيْنَ أَجِدُ الدَّرْسَ؟
   meaning_id: Di mana saya menemukan pelajaran?
-  usage_note: Ask where to find something.
-- phrase: افتح الصفحة
+  usage_note: 'Gunakan saat ingin mengatakan: Di mana saya menemukan pelajaran?'
+- phrase: اِفْتَحِ الصَّفْحَةَ
   meaning_id: Buka halamannya.
-  usage_note: Give a simple instruction.
-- phrase: شكرًا على المساعدة
+  usage_note: 'Gunakan saat ingin mengatakan: Buka halamannya.'
+- phrase: شُكْرًا عَلَى الْمُسَاعَدَةِ
   meaning_id: Terima kasih atas bantuannya.
-  usage_note: Thank someone.
+  usage_note: 'Gunakan saat ingin mengatakan: Terima kasih atas bantuannya.'

@@ -1,43 +1,44 @@
 scenario_key: arabic_asking_for_help
 mode: lesson_practice_coach
 level_code: A1
-opening_line: هل تساعدني؟
-learner_goal: Ask for help and say what you need.
+opening_line: هَلْ تُسَاعِدُنِي؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman atau
+  latihan dan perlu meminta bantuan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: هل تساعدني؟
-  hint: 'Jawab dengan pola: هل تساعدني؟'
-  sample_answer: هل تساعدني؟
-  focus: Ask for help.
+- coach: هَلْ تُسَاعِدُنِي؟
+  hint: 'Jawab dengan pola: هَلْ تُسَاعِدُنِي؟'
+  sample_answer: هَلْ تُسَاعِدُنِي؟
+  focus: 'Latihan frasa: Bisakah Anda membantu saya?'
   expected_keywords:
-  - هل
-  - تساعدني
+  - هَلْ
+  - تُسَاعِدُنِي
   indonesian_explanation: Bisakah Anda membantu saya?
-- coach: 'استخدم: أحتاج مساعدة'
-  hint: 'Jawab dengan pola: أحتاج مساعدة'
-  sample_answer: أحتاج مساعدة
-  focus: State need.
+- coach: 'استخدم: أَحْتَاجُ مُسَاعَدَةً'
+  hint: 'Jawab dengan pola: أَحْتَاجُ مُسَاعَدَةً'
+  sample_answer: أَحْتَاجُ مُسَاعَدَةً
+  focus: 'Latihan frasa: Saya butuh bantuan.'
   expected_keywords:
-  - أحتاج
-  - مساعدة
+  - أَحْتَاجُ
+  - مُسَاعَدَةً
   indonesian_explanation: Saya butuh bantuan.
-- coach: 'استخدم: أين أجد الدرس؟'
-  hint: 'Jawab dengan pola: أين أجد الدرس؟'
-  sample_answer: أين أجد الدرس؟
-  focus: Ask where to find something.
+- coach: 'استخدم: أَيْنَ أَجِدُ الدَّرْسَ؟'
+  hint: 'Jawab dengan pola: أَيْنَ أَجِدُ الدَّرْسَ؟'
+  sample_answer: أَيْنَ أَجِدُ الدَّرْسَ؟
+  focus: 'Latihan frasa: Di mana saya menemukan pelajaran?'
   expected_keywords:
-  - أين
-  - أجد
-  - الدرس
+  - أَيْنَ
+  - أَجِدُ
+  - الدَّرْسَ
   indonesian_explanation: Di mana saya menemukan pelajaran?
 target_phrases:
-- هل تساعدني؟
-- أحتاج مساعدة
-- أين أجد الدرس؟
-- افتح الصفحة
+- هَلْ تُسَاعِدُنِي؟
+- أَحْتَاجُ مُسَاعَدَةً
+- أَيْنَ أَجِدُ الدَّرْسَ؟
+- اِفْتَحِ الصَّفْحَةَ
 rubric:
   speaking:
     minimum_score: 60

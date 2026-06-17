@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- آسف -> Maaf.
-- آسفة -> Maaf.
-- عذرًا -> Permisi/maaf.
-- لا مشكلة -> Tidak masalah.
-- على الرحب والسعة -> Sama-sama.
+- آسِفٌ -> Maaf.
+- آسِفَةٌ -> Maaf.
+- عُذْرًا -> Permisi/maaf.
+- لَا مُشْكِلَةَ -> Tidak masalah.
+- عَلَى الرَّحْبِ وَالسَّعَةِ -> Sama-sama.

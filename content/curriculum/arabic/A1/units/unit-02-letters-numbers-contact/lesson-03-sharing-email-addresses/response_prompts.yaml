@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Apa alamat emailmu?'
-  target_response: ما بريدك الإلكتروني؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa alamat emailmu?'
+  target_response: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
   acceptable_responses:
-  - ما بريدك الإلكتروني؟
-- prompt: 'Say: Email saya ...'
-  target_response: بريدي الإلكتروني ...
+  - مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Email saya ...'
+  target_response: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
   acceptable_responses:
-  - بريدي الإلكتروني ...
-- prompt: 'Say: Tulis, tolong.'
-  target_response: اكتب من فضلك
+  - بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+- prompt: 'Ucapkan dalam bahasa Arab: Tulis, tolong.'
+  target_response: اُكْتُبْ مِنْ فَضْلِكَ
   acceptable_responses:
-  - اكتب من فضلك
+  - اُكْتُبْ مِنْ فَضْلِكَ

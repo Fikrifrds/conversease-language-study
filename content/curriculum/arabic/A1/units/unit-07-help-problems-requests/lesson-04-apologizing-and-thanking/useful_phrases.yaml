@@ -1,16 +1,16 @@
 phrases:
-- phrase: آسف
+- phrase: آسِفٌ
   meaning_id: Maaf.
-  usage_note: Male speaker apology.
-- phrase: آسفة
+  usage_note: 'Gunakan saat ingin mengatakan: Maaf.'
+- phrase: آسِفَةٌ
   meaning_id: Maaf.
-  usage_note: Female speaker apology.
-- phrase: عذرًا
+  usage_note: 'Gunakan saat ingin mengatakan: Maaf.'
+- phrase: عُذْرًا
   meaning_id: Permisi/maaf.
-  usage_note: General apology or excuse.
-- phrase: لا مشكلة
+  usage_note: 'Gunakan saat ingin mengatakan: Permisi/maaf.'
+- phrase: لَا مُشْكِلَةَ
   meaning_id: Tidak masalah.
-  usage_note: Respond to apology.
-- phrase: على الرحب والسعة
+  usage_note: 'Gunakan saat ingin mengatakan: Tidak masalah.'
+- phrase: عَلَى الرَّحْبِ وَالسَّعَةِ
   meaning_id: Sama-sama.
-  usage_note: Respond to thanks.
+  usage_note: 'Gunakan saat ingin mengatakan: Sama-sama.'

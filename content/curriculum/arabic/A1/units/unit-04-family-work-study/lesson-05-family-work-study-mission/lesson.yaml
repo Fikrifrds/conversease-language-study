@@ -4,8 +4,9 @@ title: Family, Work, and Study Mission
 status: beta
 estimated_minutes: 10
 conversation_situation: family_work_study_mission
-conversation_goal: Combine family, work/study, and likes in one short formal conversation.
-grammar_summary: Combine هذا/هذه, أنا, أدرس, أعمل, and أحب.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedikit
+  lebih lengkap: keluarga, pekerjaan/belajar, dan minat.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

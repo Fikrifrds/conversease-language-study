@@ -1,44 +1,45 @@
 scenario_key: arabic_sharing_email_addresses
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ما بريدك الإلكتروني؟
-learner_goal: Share a simple email address and ask someone to write it.
+opening_line: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menulis email di daftar kelas.
+  Kamu perlu menyebutkan bagian email dengan pelan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ما بريدك الإلكتروني؟
-  hint: 'Jawab dengan pola: ما بريدك الإلكتروني؟'
-  sample_answer: ما بريدك الإلكتروني؟
-  focus: Ask for an email address.
+- coach: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+  hint: 'Jawab dengan pola: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟'
+  sample_answer: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+  focus: 'Latihan frasa: Apa alamat emailmu?'
   expected_keywords:
-  - ما
-  - بريدك
-  - الإلكتروني
+  - مَا
+  - بَرِيدُكَ
+  - الْإِلِكْتُرُونِيُّ
   indonesian_explanation: Apa alamat emailmu?
-- coach: 'استخدم: بريدي الإلكتروني ...'
-  hint: 'Jawab dengan pola: بريدي الإلكتروني ...'
-  sample_answer: بريدي الإلكتروني ...
-  focus: Share your email.
+- coach: 'استخدم: بَرِيدِي الْإِلِكْتُرُونِيُّ ...'
+  hint: 'Jawab dengan pola: بَرِيدِي الْإِلِكْتُرُونِيُّ ...'
+  sample_answer: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+  focus: 'Latihan frasa: Email saya ...'
   expected_keywords:
-  - بريدي
-  - الإلكتروني
+  - بَرِيدِي
+  - الْإِلِكْتُرُونِيُّ
   indonesian_explanation: Email saya ...
-- coach: 'استخدم: اكتب من فضلك'
-  hint: 'Jawab dengan pola: اكتب من فضلك'
-  sample_answer: اكتب من فضلك
-  focus: Ask someone to write it.
+- coach: 'استخدم: اُكْتُبْ مِنْ فَضْلِكَ'
+  hint: 'Jawab dengan pola: اُكْتُبْ مِنْ فَضْلِكَ'
+  sample_answer: اُكْتُبْ مِنْ فَضْلِكَ
+  focus: 'Latihan frasa: Tulis, tolong.'
   expected_keywords:
-  - اكتب
-  - من
-  - فضلك
+  - اُكْتُبْ
+  - مِنْ
+  - فَضْلِكَ
   indonesian_explanation: Tulis, tolong.
 target_phrases:
-- ما بريدك الإلكتروني؟
-- بريدي الإلكتروني ...
-- اكتب من فضلك
-- نقطة
+- مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+- بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+- اُكْتُبْ مِنْ فَضْلِكَ
+- نُقْطَةٌ
 rubric:
   speaking:
     minimum_score: 60

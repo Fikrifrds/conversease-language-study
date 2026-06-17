@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- من هذا؟ -> Siapa ini?
-- هذا أبي -> Ini ayah saya.
-- هذه أمي -> Ini ibu saya.
-- هذا أخي -> Ini saudara laki-laki saya.
-- هذه عائلتي -> Ini keluarga saya.
+- مَنْ هَذَا؟ -> Siapa ini?
+- هَذَا أَبِي -> Ini ayah saya.
+- هَذِهِ أُمِّي -> Ini ibu saya.
+- هَذَا أَخِي -> Ini saudara laki-laki saya.
+- هَذِهِ عَائِلَتِي -> Ini keluarga saya.

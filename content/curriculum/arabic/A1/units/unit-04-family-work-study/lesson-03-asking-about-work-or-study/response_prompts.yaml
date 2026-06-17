@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Di mana kamu belajar?'
-  target_response: أين تدرس؟
+- prompt: 'Ucapkan dalam bahasa Arab: Di mana kamu belajar?'
+  target_response: أَيْنَ تَدْرُسُ؟
   acceptable_responses:
-  - أين تدرس؟
-- prompt: 'Say: Apa yang kamu pelajari?'
-  target_response: ماذا تدرس؟
+  - أَيْنَ تَدْرُسُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu pelajari?'
+  target_response: مَاذَا تَدْرُسُ؟
   acceptable_responses:
-  - ماذا تدرس؟
-- prompt: 'Say: Saya belajar bahasa Arab.'
-  target_response: أدرس اللغة العربية
+  - مَاذَا تَدْرُسُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya belajar bahasa Arab.'
+  target_response: أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
   acceptable_responses:
-  - أدرس اللغة العربية
+  - أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ

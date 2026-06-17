@@ -4,8 +4,9 @@ title: Asking Where a Place Is
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_where_a_place_is
-conversation_goal: Ask where a place is and understand here/there.
-grammar_summary: Use أين + place for location questions and هنا/هناك for here/there.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari perpustakaan di gedung
+  belajar dan bertanya dengan sopan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

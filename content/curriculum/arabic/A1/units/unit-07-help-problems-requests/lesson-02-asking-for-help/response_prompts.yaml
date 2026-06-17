@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Bisakah Anda membantu saya?'
-  target_response: هل تساعدني؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bisakah Anda membantu saya?'
+  target_response: هَلْ تُسَاعِدُنِي؟
   acceptable_responses:
-  - هل تساعدني؟
-- prompt: 'Say: Saya butuh bantuan.'
-  target_response: أحتاج مساعدة
+  - هَلْ تُسَاعِدُنِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya butuh bantuan.'
+  target_response: أَحْتَاجُ مُسَاعَدَةً
   acceptable_responses:
-  - أحتاج مساعدة
-- prompt: 'Say: Di mana saya menemukan pelajaran?'
-  target_response: أين أجد الدرس؟
+  - أَحْتَاجُ مُسَاعَدَةً
+- prompt: 'Ucapkan dalam bahasa Arab: Di mana saya menemukan pelajaran?'
+  target_response: أَيْنَ أَجِدُ الدَّرْسَ؟
   acceptable_responses:
-  - أين أجد الدرس؟
+  - أَيْنَ أَجِدُ الدَّرْسَ؟

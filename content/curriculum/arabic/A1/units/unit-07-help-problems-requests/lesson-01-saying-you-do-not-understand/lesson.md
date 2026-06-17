@@ -1,11 +1,11 @@
 # Saying You Do Not Understand
 
-After this lesson, learners can say you do not understand and ask for a word meaning.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

@@ -1,17 +1,16 @@
 phrases:
-  - phrase: ما اسمك؟
+  - phrase: ما اسمُكَ؟
     meaning_id: Siapa namamu?
-    usage_note: Ask someone's name.
+    usage_note: Gunakan untuk menanyakan nama seseorang.
   - phrase: اسمي ...
     meaning_id: Nama saya ...
-    usage_note: Say your name.
-  - phrase: من أين أنت؟
+    usage_note: Gunakan untuk menyebutkan nama.
+  - phrase: من أين أنتَ؟
     meaning_id: Dari mana kamu?
-    usage_note: Ask someone's origin.
+    usage_note: Gunakan untuk menanyakan asal seseorang.
   - phrase: أنا من إندونيسيا
     meaning_id: Saya dari Indonesia.
-    usage_note: Say your country.
-  - phrase: وأنت؟
+    usage_note: Gunakan untuk menyebutkan asal negara.
+  - phrase: وأنتَ؟
     meaning_id: Dan kamu/Anda?
-    usage_note: Ask the same question back.
-
+    usage_note: Gunakan untuk bertanya balik.

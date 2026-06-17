@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Combine لا أفهم, هل تساعدني, من فضلك, and شكرًا.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-لا أفهم.
-هل تساعدني؟
-ببطء من فضلك.
-شكرًا.
+لَا أَفْهَمُ.
+هَلْ تُسَاعِدُنِي؟
+بِبُطْءٍ مِنْ فَضْلِكَ.
+شُكْرًا.
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

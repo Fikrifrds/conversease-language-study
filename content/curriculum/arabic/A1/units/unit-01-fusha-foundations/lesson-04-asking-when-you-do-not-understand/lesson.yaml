@@ -4,8 +4,8 @@ title: Asking When You Do Not Understand
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_for_repetition_in_arabic_class
-conversation_goal: Say that you do not understand and ask someone to repeat or explain a word in Arabic.
-grammar_summary: Use لا أفهم for "I do not understand", أعد من فضلك for "repeat please", and ما معنى ...؟ to ask meaning.
+conversation_goal: Latih mengatakan belum paham, lalu minta pengulangan atau penjelasan makna kata.
+grammar_summary: Gunakan لا أفهم untuk "saya tidak paham", أَعِدْ مِنْ فَضْلِكَ untuk "ulangi, tolong", dan ما معنى ...؟ untuk bertanya makna.
 required_sections:
   - conversation_goal
   - situation_setup
@@ -23,4 +23,3 @@ completion_rules:
   quiz_required: true
   speaking_attempt_required: true
   minimum_score: 60
-

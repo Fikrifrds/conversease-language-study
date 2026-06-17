@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. أي يوم اليوم؟
-2. اليوم الإثنين
-3. غدًا الثلاثاء
-4. عندي درس
-5. في يوم ...
+1. أي يوم الْيَوْمُ؟
+2. الْيَوْمُ الْإِثْنَيْنِ
+3. غَدًا الثُّلَاثَاءُ
+4. عِنْدِي دَرْسٌ
+5. فِي يَوْمِ ...
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

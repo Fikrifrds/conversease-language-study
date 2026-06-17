@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say what you want, do not want, and need.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- ماذا تريد؟
-- أريد كتابًا
-- لا أريد قهوة
-- أحتاج قلمًا
-- فقط
+- مَاذَا تُرِيدُ؟
+- أُرِيدُ كِتَابًا
+- لَا أُرِيدُ قَهْوَةً
+- أَحْتَاجُ قَلَمًا
+- فَقَطْ

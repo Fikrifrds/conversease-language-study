@@ -1,11 +1,11 @@
 # Routine and Time Mission
 
-After this lesson, learners can combine day, time, and routine phrases in one short conversation.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

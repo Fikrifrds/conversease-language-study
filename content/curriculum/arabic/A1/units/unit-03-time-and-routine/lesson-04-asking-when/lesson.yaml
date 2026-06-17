@@ -4,8 +4,9 @@ title: Asking When
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_when
-conversation_goal: Ask when something happens and answer with a simple time phrase.
-grammar_summary: Use متى + noun/verb for 'when' and في + time phrase for the answer.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kelas,
+  latihan, atau pertemuan dimulai.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

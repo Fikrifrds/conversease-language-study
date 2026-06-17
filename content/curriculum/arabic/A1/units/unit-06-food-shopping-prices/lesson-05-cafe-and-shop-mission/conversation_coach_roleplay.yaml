@@ -1,42 +1,43 @@
 scenario_key: arabic_cafe_and_shop_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ماذا تريد؟
-learner_goal: Combine ordering, price, and buying phrases in one short conversation.
+opening_line: مَاذَا تُرِيدُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga,
+  dan membeli satu barang sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ماذا تريد؟
-  hint: 'Jawab dengan pola: أريد ماءً'
-  sample_answer: أريد ماءً
-  focus: Order a drink.
+- coach: مَاذَا تُرِيدُ؟
+  hint: 'Jawab dengan pola: أُرِيدُ مَاءً'
+  sample_answer: أُرِيدُ مَاءً
+  focus: 'Latihan frasa: Saya ingin air.'
   expected_keywords:
-  - أريد
-  - ماءً
+  - أُرِيدُ
+  - مَاءً
   indonesian_explanation: Saya ingin air.
-- coach: 'استخدم: كم السعر؟'
-  hint: 'Jawab dengan pola: كم السعر؟'
-  sample_answer: كم السعر؟
-  focus: Ask price.
+- coach: 'استخدم: كَمِ السِّعْرُ؟'
+  hint: 'Jawab dengan pola: كَمِ السِّعْرُ؟'
+  sample_answer: كَمِ السِّعْرُ؟
+  focus: 'Latihan frasa: Berapa harganya?'
   expected_keywords:
-  - كم
-  - السعر
+  - كَمِ
+  - السِّعْرُ
   indonesian_explanation: Berapa harganya?
-- coach: 'استخدم: السعر مناسب'
-  hint: 'Jawab dengan pola: السعر مناسب'
-  sample_answer: السعر مناسب
-  focus: Accept price.
+- coach: 'استخدم: السِّعْرُ مُنَاسِبٌ'
+  hint: 'Jawab dengan pola: السِّعْرُ مُنَاسِبٌ'
+  sample_answer: السِّعْرُ مُنَاسِبٌ
+  focus: 'Latihan frasa: Harganya cocok.'
   expected_keywords:
-  - السعر
-  - مناسب
+  - السِّعْرُ
+  - مُنَاسِبٌ
   indonesian_explanation: Harganya cocok.
 target_phrases:
-- أريد ماءً
-- كم السعر؟
-- السعر مناسب
-- آخذ واحدًا
+- أُرِيدُ مَاءً
+- كَمِ السِّعْرُ؟
+- السِّعْرُ مُنَاسِبٌ
+- آخُذُ وَاحِدًا
 rubric:
   speaking:
     minimum_score: 60

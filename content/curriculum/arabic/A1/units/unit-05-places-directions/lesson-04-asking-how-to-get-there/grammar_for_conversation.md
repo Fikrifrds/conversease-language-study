@@ -1,13 +1,13 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use كيف أذهب إلى + place and ثم to link steps.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-كيف أذهب إلى ...؟
+كَيْفَ أَذْهَبُ إلى ...؟
 امشِ
-ثم
-عند الباب
-شكرًا
+ثُمَّ
+عِنْدَ الْبَابِ
+شُكْرًا
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

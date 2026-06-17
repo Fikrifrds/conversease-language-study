@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Order water or coffee using polite Arabic phrases.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أريد ماءً
-- أريد قهوة
+- أُرِيدُ مَاءً
+- أُرِيدُ قَهْوَةً
 - من فضلك
-- هل عندكم شاي؟
-- تفضل
+- هَلْ عِنْدَكُمْ شَايٌ؟
+- تَفَضَّلْ

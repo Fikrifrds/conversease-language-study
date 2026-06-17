@@ -4,8 +4,8 @@ title: Class and Study Instructions
 status: beta
 estimated_minutes: 10
 conversation_situation: following_simple_arabic_class_instructions
-conversation_goal: Understand and respond to basic Arabic instructions used in class or a guided lesson.
-grammar_summary: Learn short command forms such as اقرأ، استمع، أعد، اكتب، and افهم.
+conversation_goal: Latih memahami dan merespons instruksi dasar dalam kelas Arab atau lesson terpandu.
+grammar_summary: Kenali bentuk perintah pendek seperti اِقرأْ، اِستمعْ، أَعِدْ، اُكتبْ، dan اِفهمْ.
 required_sections:
   - conversation_goal
   - situation_setup

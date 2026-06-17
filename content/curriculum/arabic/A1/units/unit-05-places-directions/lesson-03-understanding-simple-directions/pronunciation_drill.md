@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. اذهب يمينًا
-2. اذهب يسارًا
-3. إلى الأمام
-4. بجانب المكتب
-5. أمام المدرسة
+1. اِذْهَبْ يَمِينًا
+2. اِذْهَبْ يَسَارًا
+3. إِلَى الْأَمَامِ
+4. بِجَانِبِ الْمَكْتَبِ
+5. أمام الْمَدْرَسَةُ
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

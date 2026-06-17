@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Hari ini ...'
-  target_response: اليوم ...
+- prompt: 'Ucapkan dalam bahasa Arab: Hari ini ...'
+  target_response: الْيَوْمُ ...
   acceptable_responses:
-  - اليوم ...
-- prompt: 'Say: Jam ...'
+  - الْيَوْمُ ...
+- prompt: 'Ucapkan dalam bahasa Arab: Jam ...'
   target_response: الساعة ...
   acceptable_responses:
   - الساعة ...
-- prompt: 'Say: Saya punya pelajaran.'
-  target_response: عندي درس
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya pelajaran.'
+  target_response: عِنْدِي دَرْسٌ
   acceptable_responses:
-  - عندي درس
+  - عِنْدِي دَرْسٌ

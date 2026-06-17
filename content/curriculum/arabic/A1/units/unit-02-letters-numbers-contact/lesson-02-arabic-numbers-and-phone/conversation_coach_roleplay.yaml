@@ -1,43 +1,44 @@
 scenario_key: arabic_numbers_and_phone
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ما رقم هاتفك؟
-learner_goal: Say a simple phone number and ask someone to repeat it.
+opening_line: مَا رَقْمُ هَاتِفِكَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan teman
+  kelas. Kamu perlu mengucapkan angka pelan dan jelas.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ما رقم هاتفك؟
-  hint: 'Jawab dengan pola: ما رقم هاتفك؟'
-  sample_answer: ما رقم هاتفك؟
-  focus: Ask for a phone number.
+- coach: مَا رَقْمُ هَاتِفِكَ؟
+  hint: 'Jawab dengan pola: مَا رَقْمُ هَاتِفِكَ؟'
+  sample_answer: مَا رَقْمُ هَاتِفِكَ؟
+  focus: 'Latihan frasa: Berapa nomor teleponmu?'
   expected_keywords:
-  - ما
-  - رقم
-  - هاتفك
+  - مَا
+  - رَقْمُ
+  - هَاتِفِكَ
   indonesian_explanation: Berapa nomor teleponmu?
-- coach: 'استخدم: رقمي ...'
-  hint: 'Jawab dengan pola: رقمي ...'
-  sample_answer: رقمي ...
-  focus: Say your number.
+- coach: 'استخدم: رَقْمِي ...'
+  hint: 'Jawab dengan pola: رَقْمِي ...'
+  sample_answer: رَقْمِي ...
+  focus: 'Latihan frasa: Nomor saya ...'
   expected_keywords:
-  - رقمي
+  - رَقْمِي
   indonesian_explanation: Nomor saya ...
-- coach: 'استخدم: واحد، اثنان، ثلاثة'
-  hint: 'Jawab dengan pola: واحد، اثنان، ثلاثة'
-  sample_answer: واحد، اثنان، ثلاثة
-  focus: Start counting clearly.
+- coach: 'استخدم: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ'
+  hint: 'Jawab dengan pola: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ'
+  sample_answer: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
+  focus: 'Latihan frasa: Satu, dua, tiga'
   expected_keywords:
-  - واحد،
-  - اثنان،
-  - ثلاثة
+  - وَاحِدٌ،
+  - اِثْنَانِ،
+  - ثَلَاثَةٌ
   indonesian_explanation: Satu, dua, tiga
 target_phrases:
-- ما رقم هاتفك؟
-- رقمي ...
-- واحد، اثنان، ثلاثة
-- أعد الرقم من فضلك
+- مَا رَقْمُ هَاتِفِكَ؟
+- رَقْمِي ...
+- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
+- أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ
 rubric:
   speaking:
     minimum_score: 60

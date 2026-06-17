@@ -4,8 +4,9 @@ title: Asking How to Get There
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_how_to_get_there
-conversation_goal: Ask how to get to a place and follow two-step directions.
-grammar_summary: Use كيف أذهب إلى + place and ثم to link steps.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat
+  tertentu di sekitar kelas.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

@@ -4,8 +4,9 @@ title: Saying You Do Not Understand
 status: beta
 estimated_minutes: 10
 conversation_situation: saying_you_do_not_understand
-conversation_goal: Say you do not understand and ask for a word meaning.
-grammar_summary: Use لا أفهم and ماذا يعني ...؟ to ask for meaning.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi
+  dan perlu menjelaskannya dengan sopan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

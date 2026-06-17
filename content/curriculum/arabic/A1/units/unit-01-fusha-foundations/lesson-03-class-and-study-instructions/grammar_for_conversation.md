@@ -1,19 +1,19 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Many classroom instructions are short command forms.
+Banyak instruksi kelas berbentuk perintah pendek.
 
-Examples:
+Contoh:
 
-- اقرأ.
-- استمع.
-- أعد.
-- اكتب.
+- اِقرأْ.
+- اِستمعْ.
+- أَعِدْ.
+- اُكتبْ.
 
-Pattern:
+Pola:
 
 ```txt
 command word
-نعم يا معلم
+نعم يا مُعَلِّم
 ```
 
-At A1, focus on recognizing the command and responding politely.
+Di level A1, fokus dulu pada mengenali perintah dan merespons dengan sopan.

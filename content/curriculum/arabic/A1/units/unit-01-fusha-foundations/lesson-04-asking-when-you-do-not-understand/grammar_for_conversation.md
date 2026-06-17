@@ -1,20 +1,19 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use **لا** before a verb to make a simple negative sentence.
+Gunakan **لا** sebelum fi'il untuk membuat kalimat negatif sederhana.
 
-Examples:
+Contoh:
 
 - أفهم.
 - لا أفهم.
 - أكتب.
 - لا أكتب.
 
-Pattern:
+Pola:
 
 ```txt
 لا + verb
 ما معنى + word؟
 ```
 
-At A1, memorize **لا أفهم** as one survival phrase.
-
+Di level A1, hafalkan **لا أفهم** sebagai satu frasa penting saat belum paham.

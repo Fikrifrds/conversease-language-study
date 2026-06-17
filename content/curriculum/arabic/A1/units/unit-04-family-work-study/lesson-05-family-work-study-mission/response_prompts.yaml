@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Ini keluarga saya.'
-  target_response: هذه عائلتي
+- prompt: 'Ucapkan dalam bahasa Arab: Ini keluarga saya.'
+  target_response: هَذِهِ عَائِلَتِي
   acceptable_responses:
-  - هذه عائلتي
-- prompt: 'Say: Saya pelajar.'
+  - هَذِهِ عَائِلَتِي
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pelajar.'
   target_response: أنا طالب
   acceptable_responses:
   - أنا طالب
-- prompt: 'Say: Saya belajar bahasa Arab.'
-  target_response: أدرس العربية
+- prompt: 'Ucapkan dalam bahasa Arab: Saya belajar bahasa Arab.'
+  target_response: أَدْرُسُ الْعَرَبِيَّةَ
   acceptable_responses:
-  - أدرس العربية
+  - أَدْرُسُ الْعَرَبِيَّةَ

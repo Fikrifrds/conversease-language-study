@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask how to get to a place and follow two-step directions.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat tertentu di sekitar kelas.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- كيف أذهب إلى المكتبة؟
-- امشِ إلى الأمام
-- ثم
-- عند الباب
-- شكرًا
+- كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+- امشِ إِلَى الْأَمَامِ
+- ثُمَّ
+- عِنْدَ الْبَابِ
+- شُكْرًا

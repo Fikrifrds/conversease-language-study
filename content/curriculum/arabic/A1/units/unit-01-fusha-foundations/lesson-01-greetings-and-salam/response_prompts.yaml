@@ -1,15 +1,15 @@
 prompts:
-  - prompt: Reply to a greeting.
+  - prompt: Balas sapaan.
     target_response: أهلًا وسهلًا
     acceptable_responses:
       - أهلًا وسهلًا
       - مرحبًا
-  - prompt: Answer "كيف حالك؟"
+  - prompt: Jawab pertanyaan "كيف حالك؟"
     target_response: أنا بخير، شكرًا
     acceptable_responses:
       - أنا بخير، شكرًا
       - بخير، شكرًا
-  - prompt: Say "How are you?"
+  - prompt: "Ucapkan dalam bahasa Arab: Apa kabarmu?"
     target_response: كيف حالك؟
     acceptable_responses:
       - كيف حالك؟

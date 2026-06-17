@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Jam berapa?'
-  target_response: كم الساعة؟
+- prompt: 'Ucapkan dalam bahasa Arab: Jam berapa?'
+  target_response: كَمِ السَّاعَةُ؟
   acceptable_responses:
-  - كم الساعة؟
-- prompt: 'Say: Jam delapan.'
-  target_response: الساعة الثامنة
+  - كَمِ السَّاعَةُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Jam delapan.'
+  target_response: السَّاعَةُ الثَّامِنَةُ
   acceptable_responses:
-  - الساعة الثامنة
-- prompt: 'Say: Sekarang'
-  target_response: الآن
+  - السَّاعَةُ الثَّامِنَةُ
+- prompt: 'Ucapkan dalam bahasa Arab: Sekarang'
+  target_response: الْآنَ
   acceptable_responses:
-  - الآن
+  - الْآنَ

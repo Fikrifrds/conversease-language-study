@@ -1,11 +1,11 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use لم أسمع + object and هل قلت ...؟ to confirm a heard word or letter.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
 لم أسمع الحرف.
-ببطء من فضلك.
+بِبُطْءٍ مِنْ فَضْلِكَ.
 هل قلت ...؟
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

@@ -1,10 +1,10 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask someone to repeat a letter slowly and confirm what you heard.
+Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email, kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
 - لم أسمع الحرف
-- ببطء من فضلك
-- هل قلت باء؟
-- نعم، قلت باء
+- بِبُطْءٍ مِنْ فَضْلِكَ
+- هَلْ قُلْتَ بَاءً؟
+- نَعَمْ، قلت بَاءٌ

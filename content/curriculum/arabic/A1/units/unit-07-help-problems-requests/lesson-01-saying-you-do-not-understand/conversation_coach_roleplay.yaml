@@ -1,44 +1,45 @@
 scenario_key: arabic_saying_you_do_not_understand
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اقرأ الجملة.
-learner_goal: Say you do not understand and ask for a word meaning.
+opening_line: اِقرأِ الجملةَ.
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi
+  dan perlu menjelaskannya dengan sopan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: اقرأ الجملة.
-  hint: 'Jawab dengan pola: لا أفهم'
-  sample_answer: لا أفهم
-  focus: State lack of understanding.
+- coach: اِقرأِ الجملةَ.
+  hint: 'Jawab dengan pola: لَا أَفْهَمُ'
+  sample_answer: لَا أَفْهَمُ
+  focus: 'Latihan frasa: Saya tidak paham.'
   expected_keywords:
-  - لا
-  - أفهم
+  - لَا
+  - أَفْهَمُ
   indonesian_explanation: Saya tidak paham.
-- coach: 'استخدم: لا أعرف الكلمة'
-  hint: 'Jawab dengan pola: لا أعرف الكلمة'
-  sample_answer: لا أعرف الكلمة
-  focus: Identify the problem.
+- coach: 'استخدم: لَا أَعْرِفُ الْكَلِمَةَ'
+  hint: 'Jawab dengan pola: لَا أَعْرِفُ الْكَلِمَةَ'
+  sample_answer: لَا أَعْرِفُ الْكَلِمَةَ
+  focus: 'Latihan frasa: Saya tidak tahu katanya.'
   expected_keywords:
-  - لا
-  - أعرف
-  - الكلمة
+  - لَا
+  - أَعْرِفُ
+  - الْكَلِمَةَ
   indonesian_explanation: Saya tidak tahu katanya.
-- coach: 'استخدم: ماذا يعني هذا؟'
-  hint: 'Jawab dengan pola: ماذا يعني هذا؟'
-  sample_answer: ماذا يعني هذا؟
-  focus: Ask meaning.
+- coach: 'استخدم: مَاذَا يَعْنِي هَذَا؟'
+  hint: 'Jawab dengan pola: مَاذَا يَعْنِي هَذَا؟'
+  sample_answer: مَاذَا يَعْنِي هَذَا؟
+  focus: 'Latihan frasa: Apa arti ini?'
   expected_keywords:
-  - ماذا
-  - يعني
-  - هذا
+  - مَاذَا
+  - يَعْنِي
+  - هَذَا
   indonesian_explanation: Apa arti ini?
 target_phrases:
-- لا أفهم
-- لا أعرف الكلمة
-- ماذا يعني هذا؟
-- ببطء من فضلك
+- لَا أَفْهَمُ
+- لَا أَعْرِفُ الْكَلِمَةَ
+- مَاذَا يَعْنِي هَذَا؟
+- بِبُطْءٍ مِنْ فَضْلِكَ
 rubric:
   speaking:
     minimum_score: 60

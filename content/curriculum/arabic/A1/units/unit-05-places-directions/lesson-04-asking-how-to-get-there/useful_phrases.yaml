@@ -1,16 +1,16 @@
 phrases:
-- phrase: كيف أذهب إلى المكتبة؟
+- phrase: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
   meaning_id: Bagaimana saya pergi ke perpustakaan?
-  usage_note: Ask how to get somewhere.
-- phrase: امشِ إلى الأمام
+  usage_note: 'Gunakan saat ingin mengatakan: Bagaimana saya pergi ke perpustakaan?'
+- phrase: امشِ إِلَى الْأَمَامِ
   meaning_id: Berjalanlah ke depan.
-  usage_note: Give walking direction.
-- phrase: ثم
+  usage_note: 'Gunakan saat ingin mengatakan: Berjalanlah ke depan.'
+- phrase: ثُمَّ
   meaning_id: Lalu
-  usage_note: Connect steps.
-- phrase: عند الباب
+  usage_note: 'Gunakan saat ingin mengatakan: Lalu'
+- phrase: عِنْدَ الْبَابِ
   meaning_id: Di dekat pintu
-  usage_note: Give a landmark.
-- phrase: شكرًا
+  usage_note: 'Gunakan saat ingin mengatakan: Di dekat pintu'
+- phrase: شُكْرًا
   meaning_id: Terima kasih.
-  usage_note: Close politely.
+  usage_note: 'Gunakan saat ingin mengatakan: Terima kasih.'

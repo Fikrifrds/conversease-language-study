@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Saya ingin air."?
+  prompt: Frasa mana yang berarti "Saya ingin air."?
   options:
-  - أريد ماءً
-  - أريد قهوة
+  - أُرِيدُ مَاءً
+  - أُرِيدُ قَهْوَةً
   - من فضلك
-  correct_answer: أريد ماءً
+  correct_answer: أُرِيدُ مَاءً
 - key: phrase_2
-  prompt: Which phrase means "Saya ingin kopi."?
+  prompt: Frasa mana yang berarti "Saya ingin kopi."?
   options:
-  - أريد قهوة
-  - أريد ماءً
+  - أُرِيدُ قَهْوَةً
+  - أُرِيدُ مَاءً
   - من فضلك
-  correct_answer: أريد قهوة
+  correct_answer: أُرِيدُ قَهْوَةً

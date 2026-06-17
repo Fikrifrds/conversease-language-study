@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- هل عندكم قلم؟ -> Apakah kalian punya pena?
-- نعم، موجود -> Ya, ada.
-- أريد هذا -> Saya ingin ini.
-- آخذ واحدًا -> Saya ambil satu.
-- الحساب من فضلك -> Tagihannya, tolong.
+- هَلْ عِنْدَكُمْ قَلَمٌ؟ -> Apakah kalian punya pena?
+- نَعَمْ، مَوْجُودٌ -> Ya, ada.
+- أُرِيدُ هَذَا -> Saya ingin ini.
+- آخُذُ وَاحِدًا -> Saya ambil satu.
+- الْحِسَابُ مِنْ فَضْلِكَ -> Tagihannya, tolong.

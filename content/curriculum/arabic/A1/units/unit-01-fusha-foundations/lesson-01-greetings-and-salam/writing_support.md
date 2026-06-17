@@ -1,12 +1,12 @@
-# Writing Support
+# Bantuan Menulis
 
-Write three short lines:
+Tulis tiga baris pendek:
 
-1. A salam.
-2. A reply to salam.
-3. A simple answer about your condition.
+1. Sapaan.
+2. Jawaban sapaan.
+3. Jawaban kabar sederhana.
 
-Example:
+Contoh:
 
 ```txt
 مرحبًا.

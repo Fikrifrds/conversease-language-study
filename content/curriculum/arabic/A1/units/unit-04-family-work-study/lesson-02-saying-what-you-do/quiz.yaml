@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Apa pekerjaanmu?"?
+  prompt: Frasa mana yang berarti "Apa pekerjaanmu?"?
   options:
-  - ماذا تعمل؟
+  - مَاذَا تَعْمَلُ؟
   - أنا طالب
   - أنا معلم
-  correct_answer: ماذا تعمل؟
+  correct_answer: مَاذَا تَعْمَلُ؟
 - key: phrase_2
-  prompt: Which phrase means "Saya pelajar."?
+  prompt: Frasa mana yang berarti "Saya pelajar."?
   options:
   - أنا طالب
-  - ماذا تعمل؟
+  - مَاذَا تَعْمَلُ؟
   - أنا معلم
   correct_answer: أنا طالب

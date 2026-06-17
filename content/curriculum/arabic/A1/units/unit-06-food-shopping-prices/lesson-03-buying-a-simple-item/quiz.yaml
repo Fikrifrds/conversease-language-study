@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Apakah kalian punya pena?"?
+  prompt: Frasa mana yang berarti "Apakah kalian punya pena?"?
   options:
-  - هل عندكم قلم؟
-  - نعم، موجود
-  - أريد هذا
-  correct_answer: هل عندكم قلم؟
+  - هَلْ عِنْدَكُمْ قَلَمٌ؟
+  - نَعَمْ، مَوْجُودٌ
+  - أُرِيدُ هَذَا
+  correct_answer: هَلْ عِنْدَكُمْ قَلَمٌ؟
 - key: phrase_2
-  prompt: Which phrase means "Ya, ada."?
+  prompt: Frasa mana yang berarti "Ya, ada."?
   options:
-  - نعم، موجود
-  - هل عندكم قلم؟
-  - أريد هذا
-  correct_answer: نعم، موجود
+  - نَعَمْ، مَوْجُودٌ
+  - هَلْ عِنْدَكُمْ قَلَمٌ؟
+  - أُرِيدُ هَذَا
+  correct_answer: نَعَمْ، مَوْجُودٌ

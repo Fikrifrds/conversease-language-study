@@ -1,16 +1,16 @@
 phrases:
   - phrase: لا أفهم
     meaning_id: Saya tidak paham.
-    usage_note: Say this when you do not understand.
-  - phrase: أعد من فضلك
+    usage_note: Gunakan saat kamu belum paham.
+  - phrase: أَعِدْ مِنْ فَضْلِكَ
     meaning_id: Ulangi, tolong.
-    usage_note: Ask someone to repeat politely.
-  - phrase: ببطء من فضلك
+    usage_note: Gunakan untuk meminta seseorang mengulangi dengan sopan.
+  - phrase: بِبُطْءٍ مِنْ فَضْلِكَ
     meaning_id: Pelan-pelan, tolong.
-    usage_note: Ask someone to speak slowly.
+    usage_note: Gunakan untuk meminta seseorang berbicara pelan.
   - phrase: ما معنى ...؟
     meaning_id: Apa makna ...?
-    usage_note: Ask for the meaning of a word or phrase.
+    usage_note: Gunakan untuk bertanya makna kata atau frasa.
   - phrase: الكلمة
     meaning_id: Kata itu.
-    usage_note: A simple classroom word for asking meaning.
+    usage_note: Kata kelas sederhana untuk bertanya makna.

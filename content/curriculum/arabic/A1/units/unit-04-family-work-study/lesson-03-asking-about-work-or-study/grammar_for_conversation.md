@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أين for place and ماذا for what someone studies or does.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أين تدرس؟
-ماذا تدرس؟
+أَيْنَ تَدْرُسُ؟
+مَاذَا تَدْرُسُ؟
 هل تعمل؟
-نعم، أعمل.
+نَعَمْ، أَعْمَلُ.
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Apa yang kamu lakukan pagi hari?"?
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan pagi hari?"?
   options:
-  - ماذا تفعل صباحًا؟
+  - مَاذَا تَفْعَلُ صَبَاحًا؟
   - أقرأ
   - أكتب
-  correct_answer: ماذا تفعل صباحًا؟
+  correct_answer: مَاذَا تَفْعَلُ صَبَاحًا؟
 - key: phrase_2
-  prompt: Which phrase means "Saya membaca."?
+  prompt: Frasa mana yang berarti "Saya membaca."?
   options:
   - أقرأ
-  - ماذا تفعل صباحًا؟
+  - مَاذَا تَفْعَلُ صَبَاحًا؟
   - أكتب
   correct_answer: أقرأ

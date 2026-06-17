@@ -4,8 +4,9 @@ title: Sharing Email Addresses
 status: beta
 estimated_minutes: 10
 conversation_situation: sharing_email_addresses
-conversation_goal: Share a simple email address and ask someone to write it.
-grammar_summary: Use بريدي الإلكتروني + address, and اكتب to ask someone to write.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menulis email di daftar kelas.
+  Kamu perlu menyebutkan bagian email dengan pelan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

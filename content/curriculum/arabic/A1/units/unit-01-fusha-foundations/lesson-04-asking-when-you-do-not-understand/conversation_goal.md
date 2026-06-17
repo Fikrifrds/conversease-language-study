@@ -1,9 +1,8 @@
-Say that you do not understand and ask someone to repeat or explain a word in Arabic.
+Latih mengatakan bahwa kamu belum paham, lalu minta pengulangan atau penjelasan makna kata dalam bahasa Arab.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
 - لا أفهم.
-- أعد من فضلك.
+- أَعِدْ مِنْ فَضْلِكَ.
 - ما معنى ...؟
-- ببطء من فضلك.
-
+- بِبُطْءٍ مِنْ فَضْلِكَ.

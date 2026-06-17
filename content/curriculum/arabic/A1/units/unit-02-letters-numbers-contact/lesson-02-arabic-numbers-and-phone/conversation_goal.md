@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say a simple phone number and ask someone to repeat it.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- ما رقم هاتفك؟
-- رقمي ...
-- واحد، اثنان، ثلاثة
-- أعد الرقم من فضلك
-- الرقم صحيح
+- مَا رَقْمُ هَاتِفِكَ؟
+- رَقْمِي ...
+- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
+- أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ
+- الرَّقْمُ صَحِيحٌ

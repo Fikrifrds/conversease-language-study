@@ -1,11 +1,11 @@
 # A1 Final Conversation
 
-After this lesson, learners can complete a short Arabic A1 conversation using core skills from the level.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

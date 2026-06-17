@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Saya tidak paham.'
-  target_response: لا أفهم
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak paham.'
+  target_response: لَا أَفْهَمُ
   acceptable_responses:
-  - لا أفهم
-- prompt: 'Say: Saya tidak tahu katanya.'
-  target_response: لا أعرف الكلمة
+  - لَا أَفْهَمُ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak tahu katanya.'
+  target_response: لَا أَعْرِفُ الْكَلِمَةَ
   acceptable_responses:
-  - لا أعرف الكلمة
-- prompt: 'Say: Apa arti ini?'
-  target_response: ماذا يعني هذا؟
+  - لَا أَعْرِفُ الْكَلِمَةَ
+- prompt: 'Ucapkan dalam bahasa Arab: Apa arti ini?'
+  target_response: مَاذَا يَعْنِي هَذَا؟
   acceptable_responses:
-  - ماذا يعني هذا؟
+  - مَاذَا يَعْنِي هَذَا؟

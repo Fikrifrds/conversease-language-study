@@ -1,43 +1,44 @@
 scenario_key: arabic_review_places_and_shopping
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أين المقهى؟
-learner_goal: Review place, direction, ordering, and price phrases.
+opening_line: أَيْنَ الْمَقْهَى؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kafe, bertanya arah, lalu
+  membeli minuman sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أين المقهى؟
-  hint: 'Jawab dengan pola: أين المقهى؟'
-  sample_answer: أين المقهى؟
-  focus: Ask place.
+- coach: أَيْنَ الْمَقْهَى؟
+  hint: 'Jawab dengan pola: أَيْنَ الْمَقْهَى؟'
+  sample_answer: أَيْنَ الْمَقْهَى؟
+  focus: 'Latihan frasa: Di mana kafe?'
   expected_keywords:
-  - أين
-  - المقهى
+  - أَيْنَ
+  - الْمَقْهَى
   indonesian_explanation: Di mana kafe?
-- coach: 'استخدم: كيف أذهب إلى المقهى؟'
-  hint: 'Jawab dengan pola: كيف أذهب إلى المقهى؟'
-  sample_answer: كيف أذهب إلى المقهى؟
-  focus: Ask directions.
+- coach: 'استخدم: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟'
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke kafe?'
   expected_keywords:
-  - كيف
-  - أذهب
-  - إلى
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
   indonesian_explanation: Bagaimana saya pergi ke kafe?
-- coach: 'استخدم: أريد ماءً'
-  hint: 'Jawab dengan pola: أريد ماءً'
-  sample_answer: أريد ماءً
-  focus: Order a drink.
+- coach: 'استخدم: أُرِيدُ مَاءً'
+  hint: 'Jawab dengan pola: أُرِيدُ مَاءً'
+  sample_answer: أُرِيدُ مَاءً
+  focus: 'Latihan frasa: Saya ingin air.'
   expected_keywords:
-  - أريد
-  - ماءً
+  - أُرِيدُ
+  - مَاءً
   indonesian_explanation: Saya ingin air.
 target_phrases:
-- أين المقهى؟
-- كيف أذهب إلى المقهى؟
-- أريد ماءً
-- كم السعر؟
+- أَيْنَ الْمَقْهَى؟
+- كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+- أُرِيدُ مَاءً
+- كَمِ السِّعْرُ؟
 rubric:
   speaking:
     minimum_score: 60

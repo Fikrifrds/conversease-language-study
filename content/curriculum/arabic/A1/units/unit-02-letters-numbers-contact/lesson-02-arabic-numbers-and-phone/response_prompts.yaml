@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Berapa nomor teleponmu?'
-  target_response: ما رقم هاتفك؟
+- prompt: 'Ucapkan dalam bahasa Arab: Berapa nomor teleponmu?'
+  target_response: مَا رَقْمُ هَاتِفِكَ؟
   acceptable_responses:
-  - ما رقم هاتفك؟
-- prompt: 'Say: Nomor saya ...'
-  target_response: رقمي ...
+  - مَا رَقْمُ هَاتِفِكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Nomor saya ...'
+  target_response: رَقْمِي ...
   acceptable_responses:
-  - رقمي ...
-- prompt: 'Say: Satu, dua, tiga'
-  target_response: واحد، اثنان، ثلاثة
+  - رَقْمِي ...
+- prompt: 'Ucapkan dalam bahasa Arab: Satu, dua, tiga'
+  target_response: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
   acceptable_responses:
-  - واحد، اثنان، ثلاثة
+  - وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ

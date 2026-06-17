@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Buka bukunya."?
+  prompt: Frasa mana yang berarti "Buka bukunya."?
   options:
-  - افتح الكتاب
-  - اكتب الجملة
-  - استمع
-  correct_answer: افتح الكتاب
+  - اِفْتَحِ الْكِتَابَ
+  - اُكْتُبِ الْجُمْلَةَ
+  - اِسْتَمِعْ
+  correct_answer: اِفْتَحِ الْكِتَابَ
 - key: phrase_2
-  prompt: Which phrase means "Tulis kalimatnya."?
+  prompt: Frasa mana yang berarti "Tulis kalimatnya."?
   options:
-  - اكتب الجملة
-  - افتح الكتاب
-  - استمع
-  correct_answer: اكتب الجملة
+  - اُكْتُبِ الْجُمْلَةَ
+  - اِفْتَحِ الْكِتَابَ
+  - اِسْتَمِعْ
+  correct_answer: اُكْتُبِ الْجُمْلَةَ

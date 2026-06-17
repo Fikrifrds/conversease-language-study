@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
 1. لا أفهم.
-2. أعد من فضلك.
-3. ببطء من فضلك.
+2. أَعِدْ مِنْ فَضْلِكَ.
+3. بِبُطْءٍ مِنْ فَضْلِكَ.
 4. ما معنى الكلمة؟
-5. عفوا.
+5. عفوًا.
 
-## Focus
+## Fokus
 
-- Keep the hamzah in **أفهم** and **أعد** clear.
-- Pronounce **ع** in **معنى** from the throat.
-- Say **ببطء** slowly because it means slowly.
+- Ucapkan hamzah dalam **أفهم** dan **أَعِدْ** dengan jelas.
+- Ucapkan **ع** dalam **معنى** dari tenggorokan.
+- Ucapkan **بِبُطْءٍ** perlahan karena maknanya "dengan pelan".

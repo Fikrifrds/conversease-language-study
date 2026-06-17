@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say a few simple daily actions in order.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- ماذا تفعل صباحًا؟
+- مَاذَا تَفْعَلُ صَبَاحًا؟
 - أقرأ
 - أكتب
-- أدرس العربية
-- ثم أعمل
+- أَدْرُسُ الْعَرَبِيَّةَ
+- ثُمَّ أَعْمَلُ

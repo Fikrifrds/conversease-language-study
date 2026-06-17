@@ -1,14 +1,13 @@
-# Writing Support
+# Bantuan Menulis
 
-Write two short Arabic sentences:
+Tulis dua kalimat Arab pendek:
 
-1. Your name.
-2. Your country.
+1. Namamu.
+2. Negara asalmu.
 
-Example:
+Contoh:
 
 ```txt
 اسمي أحمد.
 أنا من إندونيسيا.
 ```
-

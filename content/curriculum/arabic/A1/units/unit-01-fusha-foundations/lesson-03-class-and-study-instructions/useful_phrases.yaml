@@ -1,16 +1,16 @@
 phrases:
-  - phrase: اقرأ
+  - phrase: اِقرأْ
     meaning_id: Bacalah.
-    usage_note: Teacher instruction for reading.
-  - phrase: استمع
+    usage_note: Instruksi guru untuk membaca.
+  - phrase: اِستمعْ
     meaning_id: Dengarkan.
-    usage_note: Teacher instruction before listening.
-  - phrase: أعد
+    usage_note: Instruksi guru sebelum mendengarkan.
+  - phrase: أَعِدْ
     meaning_id: Ulangilah.
-    usage_note: Ask someone to repeat.
-  - phrase: اكتب
+    usage_note: Gunakan untuk meminta seseorang mengulangi.
+  - phrase: اُكتبْ
     meaning_id: Tulislah.
-    usage_note: Teacher instruction for writing.
-  - phrase: نعم يا معلم
+    usage_note: Instruksi guru untuk menulis.
+  - phrase: نعم يا مُعَلِّم
     meaning_id: Baik, Pak Guru.
-    usage_note: Polite classroom response to a male teacher.
+    usage_note: Respons sopan kepada guru laki-laki di kelas.

@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say whether you are a student, teacher, or worker.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau status belajar dalam percakapan formal ringan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- ماذا تعمل؟
+- مَاذَا تَعْمَلُ؟
 - أنا طالب
 - أنا معلم
-- أعمل في مكتب
-- أدرس في مدرسة
+- أَعْمَلُ فِي مَكْتَبٍ
+- أَدْرُسُ فِي مَدْرَسَةٍ

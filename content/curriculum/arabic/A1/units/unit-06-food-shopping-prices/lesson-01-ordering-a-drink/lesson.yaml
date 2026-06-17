@@ -4,8 +4,9 @@ title: Ordering a Drink
 status: beta
 estimated_minutes: 10
 conversation_situation: ordering_a_drink
-conversation_goal: Order water or coffee using polite Arabic phrases.
-grammar_summary: Use أريد + noun and من فضلك for a polite request.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan
+  minuman sederhana dengan sopan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

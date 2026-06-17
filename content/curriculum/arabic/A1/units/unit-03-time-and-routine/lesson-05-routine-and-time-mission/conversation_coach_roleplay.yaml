@@ -1,40 +1,41 @@
 scenario_key: arabic_routine_and_time_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أي يوم اليوم؟
-learner_goal: Combine day, time, and routine phrases in one short conversation.
+opening_line: أي يوم الْيَوْمُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana
+  kepada teman kelas.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أي يوم اليوم؟
-  hint: 'Jawab dengan pola: اليوم ...'
-  sample_answer: اليوم ...
-  focus: Start with the day.
+- coach: أي يوم الْيَوْمُ؟
+  hint: 'Jawab dengan pola: الْيَوْمُ ...'
+  sample_answer: الْيَوْمُ ...
+  focus: 'Latihan frasa: Hari ini ...'
   expected_keywords:
-  - اليوم
+  - الْيَوْمُ
   indonesian_explanation: Hari ini ...
 - coach: 'استخدم: الساعة ...'
   hint: 'Jawab dengan pola: الساعة ...'
   sample_answer: الساعة ...
-  focus: Say a time.
+  focus: 'Latihan frasa: Jam ...'
   expected_keywords:
   - الساعة
   indonesian_explanation: Jam ...
-- coach: 'استخدم: عندي درس'
-  hint: 'Jawab dengan pola: عندي درس'
-  sample_answer: عندي درس
-  focus: Mention a scheduled lesson.
+- coach: 'استخدم: عِنْدِي دَرْسٌ'
+  hint: 'Jawab dengan pola: عِنْدِي دَرْسٌ'
+  sample_answer: عِنْدِي دَرْسٌ
+  focus: 'Latihan frasa: Saya punya pelajaran.'
   expected_keywords:
-  - عندي
-  - درس
+  - عِنْدِي
+  - دَرْسٌ
   indonesian_explanation: Saya punya pelajaran.
 target_phrases:
-- اليوم ...
+- الْيَوْمُ ...
 - الساعة ...
-- عندي درس
-- أدرس العربية
+- عِنْدِي دَرْسٌ
+- أَدْرُسُ الْعَرَبِيَّةَ
 rubric:
   speaking:
     minimum_score: 60

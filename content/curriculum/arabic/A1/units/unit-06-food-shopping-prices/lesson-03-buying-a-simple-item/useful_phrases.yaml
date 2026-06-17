@@ -1,16 +1,16 @@
 phrases:
-- phrase: هل عندكم قلم؟
+- phrase: هَلْ عِنْدَكُمْ قَلَمٌ؟
   meaning_id: Apakah kalian punya pena?
-  usage_note: Ask item availability.
-- phrase: نعم، موجود
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kalian punya pena?'
+- phrase: نَعَمْ، مَوْجُودٌ
   meaning_id: Ya, ada.
-  usage_note: Confirm availability.
-- phrase: أريد هذا
+  usage_note: 'Gunakan saat ingin mengatakan: Ya, ada.'
+- phrase: أُرِيدُ هَذَا
   meaning_id: Saya ingin ini.
-  usage_note: Choose an item.
-- phrase: آخذ واحدًا
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin ini.'
+- phrase: آخُذُ وَاحِدًا
   meaning_id: Saya ambil satu.
-  usage_note: Buy one.
-- phrase: الحساب من فضلك
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ambil satu.'
+- phrase: الْحِسَابُ مِنْ فَضْلِكَ
   meaning_id: Tagihannya, tolong.
-  usage_note: Ask for the bill.
+  usage_note: 'Gunakan saat ingin mengatakan: Tagihannya, tolong.'

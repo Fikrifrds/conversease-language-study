@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Di mana kelas?'
-  target_response: أين الفصل؟
+- prompt: 'Ucapkan dalam bahasa Arab: Di mana kelas?'
+  target_response: أَيْنَ الْفَصْلُ؟
   acceptable_responses:
-  - أين الفصل؟
-- prompt: 'Say: Bagaimana saya pergi ke kelas?'
-  target_response: كيف أذهب إلى الفصل؟
+  - أَيْنَ الْفَصْلُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana saya pergi ke kelas?'
+  target_response: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
   acceptable_responses:
-  - كيف أذهب إلى الفصل؟
-- prompt: 'Say: Pergi ke kanan.'
-  target_response: اذهب يمينًا
+  - كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Pergi ke kanan.'
+  target_response: اِذْهَبْ يَمِينًا
   acceptable_responses:
-  - اذهب يمينًا
+  - اِذْهَبْ يَمِينًا

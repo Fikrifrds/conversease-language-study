@@ -1,40 +1,41 @@
 scenario_key: arabic_a1_final_conversation
 mode: lesson_practice_coach
 level_code: A1
-opening_line: مرحبًا، ما اسمك؟
-learner_goal: Complete a short Arabic A1 conversation using core skills from the level.
+opening_line: مَرْحَبًا، مَا اسْمُكَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final: perkenalan,
+  rutinitas belajar, tempat, belanja, dan bantuan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مرحبًا، ما اسمك؟
-  hint: 'Jawab dengan pola: مرحبًا'
-  sample_answer: مرحبًا
-  focus: Start politely.
+- coach: مَرْحَبًا، مَا اسْمُكَ؟
+  hint: 'Jawab dengan pola: مَرْحَبًا'
+  sample_answer: مَرْحَبًا
+  focus: 'Latihan frasa: Halo.'
   expected_keywords:
-  - مرحبًا
+  - مَرْحَبًا
   indonesian_explanation: Halo.
-- coach: 'استخدم: اسمي ...'
-  hint: 'Jawab dengan pola: اسمي ...'
-  sample_answer: اسمي ...
-  focus: Introduce yourself.
+- coach: 'استخدم: اِسْمِي ...'
+  hint: 'Jawab dengan pola: اِسْمِي ...'
+  sample_answer: اِسْمِي ...
+  focus: 'Latihan frasa: Nama saya ...'
   expected_keywords:
-  - اسمي
+  - اِسْمِي
   indonesian_explanation: Nama saya ...
-- coach: 'استخدم: أدرس العربية'
-  hint: 'Jawab dengan pola: أدرس العربية'
-  sample_answer: أدرس العربية
-  focus: Talk about study.
+- coach: 'استخدم: أَدْرُسُ الْعَرَبِيَّةَ'
+  hint: 'Jawab dengan pola: أَدْرُسُ الْعَرَبِيَّةَ'
+  sample_answer: أَدْرُسُ الْعَرَبِيَّةَ
+  focus: 'Latihan frasa: Saya belajar bahasa Arab.'
   expected_keywords:
-  - أدرس
-  - العربية
+  - أَدْرُسُ
+  - الْعَرَبِيَّةَ
   indonesian_explanation: Saya belajar bahasa Arab.
 target_phrases:
-- مرحبًا
-- اسمي ...
-- أدرس العربية
-- أين المكتبة؟
+- مَرْحَبًا
+- اِسْمِي ...
+- أَدْرُسُ الْعَرَبِيَّةَ
+- أَيْنَ الْمَكْتَبَةُ؟
 rubric:
   speaking:
     minimum_score: 60

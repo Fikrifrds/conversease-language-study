@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask simple questions about work or study and answer briefly.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru tentang tempat belajar dan bidang yang dipelajari.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أين تدرس؟
-- ماذا تدرس؟
-- أدرس اللغة العربية
+- أَيْنَ تَدْرُسُ؟
+- مَاذَا تَدْرُسُ؟
+- أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
 - هل تعمل؟
-- نعم، أعمل
+- نَعَمْ، أَعْمَلُ

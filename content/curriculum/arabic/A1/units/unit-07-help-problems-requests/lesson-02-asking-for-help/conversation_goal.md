@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask for help and say what you need.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- هل تساعدني؟
-- أحتاج مساعدة
-- أين أجد الدرس؟
-- افتح الصفحة
-- شكرًا على المساعدة
+- هَلْ تُسَاعِدُنِي؟
+- أَحْتَاجُ مُسَاعَدَةً
+- أَيْنَ أَجِدُ الدَّرْسَ؟
+- اِفْتَحِ الصَّفْحَةَ
+- شُكْرًا عَلَى الْمُسَاعَدَةِ

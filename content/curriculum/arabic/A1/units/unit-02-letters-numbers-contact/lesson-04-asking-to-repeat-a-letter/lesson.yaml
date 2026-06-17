@@ -4,8 +4,9 @@ title: Asking to Repeat a Letter
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_to_repeat_a_letter
-conversation_goal: Ask someone to repeat a letter slowly and confirm what you heard.
-grammar_summary: Use لم أسمع + object and هل قلت ...؟ to confirm a heard word or letter.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email,
+  kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

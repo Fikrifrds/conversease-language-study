@@ -4,8 +4,9 @@ title: Understanding Simple Directions
 status: beta
 estimated_minutes: 10
 conversation_situation: understanding_simple_directions
-conversation_goal: Understand right, left, forward, beside, and in front of.
-grammar_summary: Use اذهب + direction and prepositions like بجانب and أمام.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju
+  kelas atau perpustakaan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

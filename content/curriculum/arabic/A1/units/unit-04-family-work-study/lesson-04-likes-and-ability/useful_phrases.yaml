@@ -1,16 +1,16 @@
 phrases:
-- phrase: أحب القراءة
+- phrase: أُحِبُّ الْقِرَاءَةَ
   meaning_id: Saya suka membaca.
-  usage_note: Say a like.
-- phrase: لا أحب الانتظار
+  usage_note: 'Gunakan saat ingin mengatakan: Saya suka membaca.'
+- phrase: لَا أُحِبُّ الِانْتِظَارَ
   meaning_id: Saya tidak suka menunggu.
-  usage_note: Say a dislike.
-- phrase: أستطيع القراءة
+  usage_note: 'Gunakan saat ingin mengatakan: Saya tidak suka menunggu.'
+- phrase: أَسْتَطِيعُ الْقِرَاءَةَ
   meaning_id: Saya bisa membaca.
-  usage_note: Say ability.
-- phrase: لا أستطيع الآن
+  usage_note: 'Gunakan saat ingin mengatakan: Saya bisa membaca.'
+- phrase: لَا أَسْتَطِيعُ الْآنَ
   meaning_id: Saya belum bisa sekarang.
-  usage_note: Say inability.
-- phrase: قليلًا
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belum bisa sekarang.'
+- phrase: قَلِيلًا
   meaning_id: Sedikit
-  usage_note: Limit your ability.
+  usage_note: 'Gunakan saat ingin mengatakan: Sedikit'

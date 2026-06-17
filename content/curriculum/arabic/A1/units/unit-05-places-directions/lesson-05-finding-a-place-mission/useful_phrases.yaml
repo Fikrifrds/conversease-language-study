@@ -1,16 +1,16 @@
 phrases:
-- phrase: أين الفصل؟
+- phrase: أَيْنَ الْفَصْلُ؟
   meaning_id: Di mana kelas?
-  usage_note: Ask where the classroom is.
-- phrase: كيف أذهب إلى الفصل؟
+  usage_note: 'Gunakan saat ingin mengatakan: Di mana kelas?'
+- phrase: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
   meaning_id: Bagaimana saya pergi ke kelas?
-  usage_note: Ask for directions.
-- phrase: اذهب يمينًا
+  usage_note: 'Gunakan saat ingin mengatakan: Bagaimana saya pergi ke kelas?'
+- phrase: اِذْهَبْ يَمِينًا
   meaning_id: Pergi ke kanan.
-  usage_note: Follow direction.
-- phrase: هو بجانب المكتبة
+  usage_note: 'Gunakan saat ingin mengatakan: Pergi ke kanan.'
+- phrase: هُوَ بِجَانِبِ الْمَكْتَبَةِ
   meaning_id: Itu di samping perpustakaan.
-  usage_note: Describe location.
-- phrase: واضح
+  usage_note: 'Gunakan saat ingin mengatakan: Itu di samping perpustakaan.'
+- phrase: وَاضِحٌ
   meaning_id: Jelas
-  usage_note: Confirm understanding.
+  usage_note: 'Gunakan saat ingin mengatakan: Jelas'

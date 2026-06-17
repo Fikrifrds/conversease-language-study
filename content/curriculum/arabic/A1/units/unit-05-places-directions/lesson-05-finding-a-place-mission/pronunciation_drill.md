@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. أين الفصل؟
-2. كيف أذهب إلى الفصل؟
-3. اذهب يمينًا
-4. هو بجانب المكتبة
-5. واضح
+1. أَيْنَ الْفَصْلُ؟
+2. كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+3. اِذْهَبْ يَمِينًا
+4. هُوَ بِجَانِبِ الْمَكْتَبَةِ
+5. وَاضِحٌ
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

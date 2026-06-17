@@ -4,8 +4,9 @@ title: Simple Place Words
 status: beta
 estimated_minutes: 10
 conversation_situation: simple_place_words
-conversation_goal: Recognize and use simple place nouns in short questions.
-grammar_summary: Use أين + place and هذا/هذه + place noun for simple place identification.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum
+  yang sering muncul dalam percakapan formal.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

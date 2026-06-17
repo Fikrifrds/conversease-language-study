@@ -4,8 +4,9 @@ title: Making Simple Requests
 status: beta
 estimated_minutes: 10
 conversation_situation: making_simple_requests
-conversation_goal: Make polite classroom requests using short imperative forms.
-grammar_summary: Use imperative verbs plus من فضلك for polite requests.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta teman atau guru melakukan
+  instruksi sederhana dalam konteks belajar.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

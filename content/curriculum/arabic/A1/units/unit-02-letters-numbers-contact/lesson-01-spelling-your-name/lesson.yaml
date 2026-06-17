@@ -4,8 +4,9 @@ title: Spelling Your Name
 status: beta
 estimated_minutes: 10
 conversation_situation: spelling_your_name
-conversation_goal: Spell a short name in Arabic and ask whether the spelling is correct.
-grammar_summary: Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru
+  meminta kamu mengeja nama dengan huruf Arab sederhana.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

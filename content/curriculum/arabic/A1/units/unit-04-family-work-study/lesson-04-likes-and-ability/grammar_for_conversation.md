@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أحب for likes and أستطيع for ability.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
 أحب ...
 لا أحب ...
-أستطيع ...
-قليلًا
+أَسْتَطِيعُ ...
+قَلِيلًا
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

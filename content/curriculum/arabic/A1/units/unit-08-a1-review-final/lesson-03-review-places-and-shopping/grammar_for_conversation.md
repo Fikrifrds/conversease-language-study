@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Review أين, كيف أذهب, أريد, and كم السعر.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أين المقهى؟
-كيف أذهب؟
-أريد ماءً
-كم السعر؟
+أَيْنَ الْمَقْهَى؟
+كَيْفَ أَذْهَبُ؟
+أُرِيدُ مَاءً
+كَمِ السِّعْرُ؟
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

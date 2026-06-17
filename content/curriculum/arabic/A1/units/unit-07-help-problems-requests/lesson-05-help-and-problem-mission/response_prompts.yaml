@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Saya tidak paham.'
-  target_response: لا أفهم
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak paham.'
+  target_response: لَا أَفْهَمُ
   acceptable_responses:
-  - لا أفهم
-- prompt: 'Say: Bisakah Anda membantu saya?'
-  target_response: هل تساعدني؟
+  - لَا أَفْهَمُ
+- prompt: 'Ucapkan dalam bahasa Arab: Bisakah Anda membantu saya?'
+  target_response: هَلْ تُسَاعِدُنِي؟
   acceptable_responses:
-  - هل تساعدني؟
-- prompt: 'Say: Pelan-pelan, tolong.'
-  target_response: ببطء من فضلك
+  - هَلْ تُسَاعِدُنِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Pelan-pelan, tolong.'
+  target_response: بِبُطْءٍ مِنْ فَضْلِكَ
   acceptable_responses:
-  - ببطء من فضلك
+  - بِبُطْءٍ مِنْ فَضْلِكَ

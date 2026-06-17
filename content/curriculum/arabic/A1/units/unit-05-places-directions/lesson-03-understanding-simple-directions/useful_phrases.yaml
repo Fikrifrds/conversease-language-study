@@ -1,16 +1,16 @@
 phrases:
-- phrase: اذهب يمينًا
+- phrase: اِذْهَبْ يَمِينًا
   meaning_id: Pergi ke kanan.
-  usage_note: Give a right direction.
-- phrase: اذهب يسارًا
+  usage_note: 'Gunakan saat ingin mengatakan: Pergi ke kanan.'
+- phrase: اِذْهَبْ يَسَارًا
   meaning_id: Pergi ke kiri.
-  usage_note: Give a left direction.
-- phrase: إلى الأمام
+  usage_note: 'Gunakan saat ingin mengatakan: Pergi ke kiri.'
+- phrase: إِلَى الْأَمَامِ
   meaning_id: Ke depan
-  usage_note: Give forward direction.
-- phrase: بجانب المكتب
+  usage_note: 'Gunakan saat ingin mengatakan: Ke depan'
+- phrase: بِجَانِبِ الْمَكْتَبِ
   meaning_id: Di samping kantor
-  usage_note: Describe beside.
-- phrase: أمام المدرسة
+  usage_note: 'Gunakan saat ingin mengatakan: Di samping kantor'
+- phrase: أمام الْمَدْرَسَةُ
   meaning_id: Di depan sekolah
-  usage_note: Describe in front.
+  usage_note: 'Gunakan saat ingin mengatakan: Di depan sekolah'

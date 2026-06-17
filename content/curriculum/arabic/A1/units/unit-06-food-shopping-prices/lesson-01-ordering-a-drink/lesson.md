@@ -1,11 +1,11 @@
 # Ordering a Drink
 
-After this lesson, learners can order water or coffee using polite Arabic phrases.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

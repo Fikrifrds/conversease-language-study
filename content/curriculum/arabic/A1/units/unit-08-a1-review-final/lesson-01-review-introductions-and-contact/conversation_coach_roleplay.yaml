@@ -1,43 +1,44 @@
 scenario_key: arabic_review_introductions_and_contact
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ما اسمك ومن أين أنت؟
-learner_goal: Review introductions and contact details in one smooth exchange.
+opening_line: مَا اسْمُكَ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal, ejaan
+  nama, dan informasi kontak sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ما اسمك ومن أين أنت؟
-  hint: 'Jawab dengan pola: اسمي أحمد'
-  sample_answer: اسمي أحمد
-  focus: Say your name.
+- coach: مَا اسْمُكَ؟
+  hint: 'Jawab dengan pola: اِسْمِي أَحْمَدُ'
+  sample_answer: اِسْمِي أَحْمَدُ
+  focus: 'Latihan frasa: Nama saya Ahmad.'
   expected_keywords:
-  - اسمي
-  - أحمد
+  - اِسْمِي
+  - أَحْمَدُ
   indonesian_explanation: Nama saya Ahmad.
 - coach: 'استخدم: أنا من إندونيسيا'
   hint: 'Jawab dengan pola: أنا من إندونيسيا'
   sample_answer: أنا من إندونيسيا
-  focus: Say origin.
+  focus: 'Latihan frasa: Saya dari Indonesia.'
   expected_keywords:
   - أنا
   - من
   - إندونيسيا
   indonesian_explanation: Saya dari Indonesia.
-- coach: 'استخدم: أكتب اسمي'
-  hint: 'Jawab dengan pola: أكتب اسمي'
-  sample_answer: أكتب اسمي
-  focus: Spell your name.
+- coach: 'استخدم: أَكْتُبُ اسْمِي'
+  hint: 'Jawab dengan pola: أَكْتُبُ اسْمِي'
+  sample_answer: أَكْتُبُ اسْمِي
+  focus: 'Latihan frasa: Saya menulis nama saya.'
   expected_keywords:
-  - أكتب
-  - اسمي
+  - أَكْتُبُ
+  - اسْمِي
   indonesian_explanation: Saya menulis nama saya.
 target_phrases:
-- اسمي أحمد
+- اِسْمِي أَحْمَدُ
 - أنا من إندونيسيا
-- أكتب اسمي
-- رقمي ...
+- أَكْتُبُ اسْمِي
+- رَقْمِي ...
 rubric:
   speaking:
     minimum_score: 60

@@ -4,8 +4,9 @@ title: Finding a Place Mission
 status: beta
 estimated_minutes: 10
 conversation_situation: finding_a_place_mission
-conversation_goal: Combine place questions and simple directions in one conversation.
-grammar_summary: Combine أين, كيف أذهب, يمينًا, يسارًا, and بجانب.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya
+  lokasi, dan mengikuti arahan singkat.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

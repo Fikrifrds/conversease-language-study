@@ -1,16 +1,16 @@
 phrases:
   - phrase: مرحبًا
     meaning_id: Halo.
-    usage_note: Start the conversation politely with a general greeting.
+    usage_note: Gunakan untuk memulai percakapan dengan sapaan umum yang sopan.
   - phrase: اسمي ...
     meaning_id: Nama saya ...
-    usage_note: Introduce your name.
+    usage_note: Gunakan untuk memperkenalkan nama.
   - phrase: أنا من إندونيسيا
     meaning_id: Saya dari Indonesia.
-    usage_note: Say your country.
+    usage_note: Gunakan untuk menyebutkan asal negara.
   - phrase: لا أفهم
     meaning_id: Saya tidak paham.
-    usage_note: Use when you are lost.
-  - phrase: أعد من فضلك
+    usage_note: Gunakan saat kamu belum paham.
+  - phrase: أَعِدْ مِنْ فَضْلِكَ
     meaning_id: Ulangi, tolong.
-    usage_note: Ask for repetition politely.
+    usage_note: Gunakan untuk meminta pengulangan dengan sopan.

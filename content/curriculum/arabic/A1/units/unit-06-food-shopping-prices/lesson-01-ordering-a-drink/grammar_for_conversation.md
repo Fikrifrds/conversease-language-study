@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أريد + noun and من فضلك for a polite request.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أريد ماءً
-أريد قهوة
+أُرِيدُ مَاءً
+أُرِيدُ قَهْوَةً
 من فضلك
-هل عندكم ...؟
+هَلْ عِنْدَكُمْ ...؟
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

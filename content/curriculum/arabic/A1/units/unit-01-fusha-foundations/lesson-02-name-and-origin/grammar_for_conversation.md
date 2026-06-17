@@ -1,20 +1,19 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use **اسمي** to say "my name is".
+Gunakan **اسمي** untuk mengatakan "nama saya".
 
-Examples:
+Contoh:
 
 - اسمي أحمد.
 - اسمي فاطمة.
 - أنا من إندونيسيا.
 
-Pattern:
+Pola:
 
 ```txt
 اسمي + name
 أنا من + place
-من أين أنت؟
+من أين أنتَ؟
 ```
 
-Use **من** for "from" when you talk about origin.
-
+Gunakan **من** untuk makna "dari" ketika menyebutkan asal.

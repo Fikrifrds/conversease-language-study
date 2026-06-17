@@ -1,10 +1,10 @@
-# Conversation Goal
+# Target Percakapan
 
-Spell a short name in Arabic and ask whether the spelling is correct.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- كيف تكتب اسمك؟
-- أكتب اسمي ...
-- هذا حرف ...
-- هل هذا صحيح؟
+- كيف تكتبُ اسمَكَ؟
+- أَكْتُبُ اسْمِي ...
+- هَذَا حَرْفُ ...
+- هَلْ هَذَا صَحِيحٌ؟

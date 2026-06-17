@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Recognize and use simple place nouns in short questions.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum yang sering muncul dalam percakapan formal.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- البيت
-- المدرسة
-- السوق
-- المكتب
-- المقهى
+- الْبَيْتُ
+- الْمَدْرَسَةُ
+- السُّوقُ
+- الْمَكْتَبُ
+- الْمَقْهَى

@@ -1,6 +1,6 @@
-Greet someone formally in Arabic and answer a simple "how are you" question.
+Latih sapaan formal sederhana dan jawaban kabar dalam bahasa Arab.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
 - مرحبًا
 - أهلًا وسهلًا

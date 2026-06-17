@@ -1,9 +1,9 @@
-Understand and respond to basic Arabic instructions used in class or a guided lesson.
+Latih memahami dan merespons instruksi dasar yang dipakai dalam kelas Arab atau lesson terpandu.
 
-Learners should be able to recognize:
+Kamu akan berlatih mengenali:
 
-- اقرأ
-- استمع
-- أعد
-- اكتب
-- افهم
+- اِقرأْ
+- اِستمعْ
+- أَعِدْ
+- اُكتبْ
+- اِفهمْ

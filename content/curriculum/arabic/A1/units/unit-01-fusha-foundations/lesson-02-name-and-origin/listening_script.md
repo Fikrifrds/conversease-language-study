@@ -1,9 +1,9 @@
 # Listening Script
 
-**Muallim:** ما اسمك؟
+**Muallim:** ما اسمُكَ؟
 **Ahmad:** اسمي أحمد.
-**Muallim:** من أين أنت؟
-**Ahmad:** أنا من إندونيسيا. وأنت؟
+**Muallim:** من أين أنتَ؟
+**Ahmad:** أنا من إندونيسيا. وأنتَ؟
 **Muallim:** أنا من المملكة العربية السعودية.
 
 ## Audio Direction

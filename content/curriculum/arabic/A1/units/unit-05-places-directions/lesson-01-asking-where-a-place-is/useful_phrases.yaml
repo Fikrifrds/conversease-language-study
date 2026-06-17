@@ -1,16 +1,16 @@
 phrases:
-- phrase: أين المكتبة؟
+- phrase: أَيْنَ الْمَكْتَبَةُ؟
   meaning_id: Di mana perpustakaan?
-  usage_note: Ask location.
-- phrase: المكتبة هنا
+  usage_note: 'Gunakan saat ingin mengatakan: Di mana perpustakaan?'
+- phrase: الْمَكْتَبَةُ هُنَا
   meaning_id: Perpustakaan di sini.
-  usage_note: Answer here.
-- phrase: هناك
+  usage_note: 'Gunakan saat ingin mengatakan: Perpustakaan di sini.'
+- phrase: هُنَاكَ
   meaning_id: Di sana
-  usage_note: Point to another place.
-- phrase: قريبة
+  usage_note: 'Gunakan saat ingin mengatakan: Di sana'
+- phrase: قَرِيبَةٌ
   meaning_id: Dekat
-  usage_note: Describe distance.
-- phrase: بعيدة
+  usage_note: 'Gunakan saat ingin mengatakan: Dekat'
+- phrase: بَعِيدَةٌ
   meaning_id: Jauh
-  usage_note: Describe distance.
+  usage_note: 'Gunakan saat ingin mengatakan: Jauh'

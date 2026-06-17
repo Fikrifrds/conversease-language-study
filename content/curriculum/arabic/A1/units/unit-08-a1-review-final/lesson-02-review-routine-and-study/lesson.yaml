@@ -4,8 +4,9 @@ title: Review Routine and Study
 status: beta
 estimated_minutes: 10
 conversation_situation: review_routine_and_study
-conversation_goal: Review days, time, and daily study routine.
-grammar_summary: Review اليوم, الساعة, أدرس, أقرأ, and أكتب.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar
+  bahasa Arab dan aktivitas sederhana.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

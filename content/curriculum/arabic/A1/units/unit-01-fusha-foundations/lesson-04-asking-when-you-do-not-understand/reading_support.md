@@ -1,13 +1,12 @@
-# Reading Support
+# Bantuan Membaca
 
-Read this short request:
+Baca permintaan singkat ini:
 
 ```txt
-عفوا، لا أفهم.
-أعد من فضلك.
+عفوًا، لا أفهم.
+أَعِدْ مِنْ فَضْلِكَ.
 ```
 
-Question: Which sentence asks someone to repeat?
+Pertanyaan: Kalimat mana yang meminta orang lain mengulangi?
 
-Answer: أعد من فضلك.
-
+Jawaban: أَعِدْ مِنْ فَضْلِكَ.

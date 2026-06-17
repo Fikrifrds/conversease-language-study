@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Nama saya Ahmad."?
+  prompt: Frasa mana yang berarti "Nama saya Ahmad."?
   options:
-  - اسمي أحمد
+  - اِسْمِي أَحْمَدُ
   - أنا من إندونيسيا
-  - أكتب اسمي
-  correct_answer: اسمي أحمد
+  - أَكْتُبُ اسْمِي
+  correct_answer: اِسْمِي أَحْمَدُ
 - key: phrase_2
-  prompt: Which phrase means "Saya dari Indonesia."?
+  prompt: Frasa mana yang berarti "Saya dari Indonesia."?
   options:
   - أنا من إندونيسيا
-  - اسمي أحمد
-  - أكتب اسمي
+  - اِسْمِي أَحْمَدُ
+  - أَكْتُبُ اسْمِي
   correct_answer: أنا من إندونيسيا

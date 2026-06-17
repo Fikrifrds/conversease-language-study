@@ -1,46 +1,46 @@
 scenario_key: arabic_fusha_introduction_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: مرحبًا. ما اسمك؟
-learner_goal: Complete a short formal Arabic introduction and ask for repetition when needed.
+opening_line: مرحبًا. ما اسمُكَ؟
+learner_goal: Selesaikan perkenalan singkat dan minta pengulangan saat perlu.
 max_turns: 5
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: مرحبًا. ما اسمك؟
+  - coach: مرحبًا. ما اسمُكَ؟
     hint: Balas sapaan dan sebutkan nama.
     sample_answer: مرحبًا. اسمي أحمد.
-    focus: Greeting and name
+    focus: Sapaan dan nama
     expected_keywords:
       - مرحبًا
       - اسمي
     indonesian_explanation: Gabungkan sapaan umum dengan اسمي untuk menyebut nama.
-  - coach: من أين أنت؟
+  - coach: من أين أنتَ؟
     hint: Sebutkan asal negara.
     sample_answer: أنا من إندونيسيا.
-    focus: Origin
+    focus: Asal negara
     expected_keywords:
       - أنا
       - من
       - إندونيسيا
     indonesian_explanation: أنا من إندونيسيا berarti saya dari Indonesia.
-  - coach: اقرأ الجملة.
+  - coach: اِقرأِ الجملةَ.
     hint: Kalau belum paham, katakan tidak paham dan minta pengulangan.
-    sample_answer: عفوا، لا أفهم. أعد من فضلك.
-    focus: Ask for help
+    sample_answer: عفوًا، لا أفهم. أَعِدْ مِنْ فَضْلِكَ.
+    focus: Meminta bantuan
     expected_keywords:
       - لا
       - أفهم
-      - أعد
-      - فضلك
+      - أَعِدْ
+      - فَضْلِكَ
     indonesian_explanation: Ini frasa aman saat kamu belum mengerti instruksi.
 target_phrases:
   - مرحبًا
   - اسمي ...
   - أنا من إندونيسيا
   - لا أفهم
-  - أعد من فضلك
+  - أَعِدْ مِنْ فَضْلِكَ
 rubric:
   speaking:
     minimum_score: 60

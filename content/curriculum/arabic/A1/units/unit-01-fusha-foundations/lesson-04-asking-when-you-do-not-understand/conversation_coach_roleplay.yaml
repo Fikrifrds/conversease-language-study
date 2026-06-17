@@ -1,33 +1,33 @@
 scenario_key: arabic_asking_when_you_do_not_understand
 mode: lesson_practice_coach
 level_code: A1
-opening_line: اقرأ الجملة.
-learner_goal: Ask for repetition or meaning when you do not understand.
+opening_line: اِقرأِ الجملةَ.
+learner_goal: Minta pengulangan atau makna saat kamu belum paham.
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: اقرأ الجملة.
+  - coach: اِقرأِ الجملةَ.
     hint: Katakan bahwa kamu belum paham.
-    sample_answer: عفوا، لا أفهم.
-    focus: Say you do not understand
+    sample_answer: عفوًا، لا أفهم.
+    focus: Mengatakan belum paham
     expected_keywords:
       - لا
       - أفهم
     indonesian_explanation: لا أفهم berarti saya tidak paham.
   - coach: هل تريد الإعادة؟
     hint: Minta pengulangan dengan sopan.
-    sample_answer: نعم، أعد من فضلك.
-    focus: Ask for repetition
+    sample_answer: نعم، أَعِدْ مِنْ فَضْلِكَ.
+    focus: Meminta pengulangan
     expected_keywords:
-      - أعد
-      - فضلك
-    indonesian_explanation: أعد من فضلك berarti ulangi, tolong.
+      - أَعِدْ
+      - فَضْلِكَ
+    indonesian_explanation: أَعِدْ مِنْ فَضْلِكَ berarti ulangi, tolong.
   - coach: الكلمة هي جديدة.
     hint: Tanyakan makna الكلمة.
     sample_answer: ما معنى الكلمة؟
-    focus: Ask meaning
+    focus: Bertanya makna
     expected_keywords:
       - ما
       - معنى
@@ -35,9 +35,9 @@ turns:
     indonesian_explanation: Gunakan ما معنى untuk bertanya makna kata.
 target_phrases:
   - لا أفهم
-  - أعد من فضلك
+  - أَعِدْ مِنْ فَضْلِكَ
   - ما معنى ...؟
-  - ببطء من فضلك
+  - بِبُطْءٍ مِنْ فَضْلِكَ
 rubric:
   speaking:
     minimum_score: 60

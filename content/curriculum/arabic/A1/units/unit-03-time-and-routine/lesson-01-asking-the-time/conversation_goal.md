@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask the time and answer with a simple hour.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan ingin tahu jam sekarang.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- كم الساعة؟
-- الساعة الثامنة
-- الآن
-- صباحًا
-- مساءً
+- كَمِ السَّاعَةُ؟
+- السَّاعَةُ الثَّامِنَةُ
+- الْآنَ
+- صَبَاحًا
+- مَسَاءً

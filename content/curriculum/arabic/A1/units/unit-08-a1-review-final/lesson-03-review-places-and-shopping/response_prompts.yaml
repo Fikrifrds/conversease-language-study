@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Di mana kafe?'
-  target_response: أين المقهى؟
+- prompt: 'Ucapkan dalam bahasa Arab: Di mana kafe?'
+  target_response: أَيْنَ الْمَقْهَى؟
   acceptable_responses:
-  - أين المقهى؟
-- prompt: 'Say: Bagaimana saya pergi ke kafe?'
-  target_response: كيف أذهب إلى المقهى؟
+  - أَيْنَ الْمَقْهَى؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana saya pergi ke kafe?'
+  target_response: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
   acceptable_responses:
-  - كيف أذهب إلى المقهى؟
-- prompt: 'Say: Saya ingin air.'
-  target_response: أريد ماءً
+  - كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin air.'
+  target_response: أُرِيدُ مَاءً
   acceptable_responses:
-  - أريد ماءً
+  - أُرِيدُ مَاءً

@@ -1,13 +1,13 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Combine greetings, introductions, schedule, directions, ordering, and help requests.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-مرحبًا
-اسمي ...
-أدرس العربية
+مَرْحَبًا
+اِسْمِي ...
+أَدْرُسُ الْعَرَبِيَّةَ
 أين ...؟
 أريد ...
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

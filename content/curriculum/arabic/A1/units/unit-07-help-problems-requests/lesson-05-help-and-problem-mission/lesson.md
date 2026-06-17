@@ -1,11 +1,11 @@
 # Help and Problem Mission
 
-After this lesson, learners can combine not understanding, asking for help, and thanking in one conversation.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

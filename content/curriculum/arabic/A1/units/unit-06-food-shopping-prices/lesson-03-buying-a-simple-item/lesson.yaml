@@ -4,8 +4,9 @@ title: Buying a Simple Item
 status: beta
 estimated_minutes: 10
 conversation_situation: buying_a_simple_item
-conversation_goal: Ask for an item, say you want one, and close the purchase.
-grammar_summary: Use هل عندكم + noun and آخذ واحدًا for taking one item.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana
+  untuk kelas.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

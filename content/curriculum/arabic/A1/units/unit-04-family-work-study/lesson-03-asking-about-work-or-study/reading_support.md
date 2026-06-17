@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- أين تدرس؟ -> Di mana kamu belajar?
-- ماذا تدرس؟ -> Apa yang kamu pelajari?
-- أدرس اللغة العربية -> Saya belajar bahasa Arab.
+- أَيْنَ تَدْرُسُ؟ -> Di mana kamu belajar?
+- مَاذَا تَدْرُسُ؟ -> Apa yang kamu pelajari?
+- أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ -> Saya belajar bahasa Arab.
 - هل تعمل؟ -> Apakah kamu bekerja?
-- نعم، أعمل -> Ya, saya bekerja.
+- نَعَمْ، أَعْمَلُ -> Ya, saya bekerja.

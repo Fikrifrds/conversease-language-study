@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say what you like and what you can do a little.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai dan kemampuan sederhana dalam konteks belajar.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أحب القراءة
-- لا أحب الانتظار
-- أستطيع القراءة
-- لا أستطيع الآن
-- قليلًا
+- أُحِبُّ الْقِرَاءَةَ
+- لَا أُحِبُّ الِانْتِظَارَ
+- أَسْتَطِيعُ الْقِرَاءَةَ
+- لَا أَسْتَطِيعُ الْآنَ
+- قَلِيلًا

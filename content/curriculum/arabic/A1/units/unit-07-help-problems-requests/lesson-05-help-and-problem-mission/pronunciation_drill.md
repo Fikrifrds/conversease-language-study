@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
-1. لا أفهم
-2. هل تساعدني؟
-3. ببطء من فضلك
-4. أعد مرة أخرى
-5. شكرًا على المساعدة
+1. لَا أَفْهَمُ
+2. هَلْ تُسَاعِدُنِي؟
+3. بِبُطْءٍ مِنْ فَضْلِكَ
+4. أَعِدْ مَرَّةً أُخْرَى
+5. شُكْرًا عَلَى الْمُسَاعَدَةِ
 
-## Focus
+## Fokus
 
-- Speak slowly and keep long vowels clear.
-- Do not swallow final consonants in short phrases.
-- Pause briefly between question and answer.
+- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.
+- Jangan hilangkan bunyi akhir pada frasa pendek.
+- Beri jeda singkat antara pertanyaan dan jawaban.

@@ -1,16 +1,16 @@
 phrases:
-- phrase: مرحبًا
+- phrase: مَرْحَبًا
   meaning_id: Halo.
-  usage_note: Start politely.
-- phrase: اسمي ...
+  usage_note: 'Gunakan saat ingin mengatakan: Halo.'
+- phrase: اِسْمِي ...
   meaning_id: Nama saya ...
-  usage_note: Introduce yourself.
-- phrase: أدرس العربية
+  usage_note: 'Gunakan saat ingin mengatakan: Nama saya ...'
+- phrase: أَدْرُسُ الْعَرَبِيَّةَ
   meaning_id: Saya belajar bahasa Arab.
-  usage_note: Talk about study.
-- phrase: أين المكتبة؟
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belajar bahasa Arab.'
+- phrase: أَيْنَ الْمَكْتَبَةُ؟
   meaning_id: Di mana perpustakaan?
-  usage_note: Ask location.
-- phrase: أحتاج مساعدة
+  usage_note: 'Gunakan saat ingin mengatakan: Di mana perpustakaan?'
+- phrase: أَحْتَاجُ مُسَاعَدَةً
   meaning_id: Saya butuh bantuan.
-  usage_note: Ask for help.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya butuh bantuan.'

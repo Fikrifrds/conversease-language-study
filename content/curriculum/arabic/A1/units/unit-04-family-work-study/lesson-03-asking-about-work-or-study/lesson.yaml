@@ -4,8 +4,9 @@ title: Asking About Work or Study
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_about_work_or_study
-conversation_goal: Ask simple questions about work or study and answer briefly.
-grammar_summary: Use أين for place and ماذا for what someone studies or does.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru
+  tentang tempat belajar dan bidang yang dipelajari.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

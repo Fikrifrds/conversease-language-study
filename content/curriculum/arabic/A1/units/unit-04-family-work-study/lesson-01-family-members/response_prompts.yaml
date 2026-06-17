@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Siapa ini?'
-  target_response: من هذا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Siapa ini?'
+  target_response: مَنْ هَذَا؟
   acceptable_responses:
-  - من هذا؟
-- prompt: 'Say: Ini ayah saya.'
-  target_response: هذا أبي
+  - مَنْ هَذَا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Ini ayah saya.'
+  target_response: هَذَا أَبِي
   acceptable_responses:
-  - هذا أبي
-- prompt: 'Say: Ini ibu saya.'
-  target_response: هذه أمي
+  - هَذَا أَبِي
+- prompt: 'Ucapkan dalam bahasa Arab: Ini ibu saya.'
+  target_response: هَذِهِ أُمِّي
   acceptable_responses:
-  - هذه أمي
+  - هَذِهِ أُمِّي

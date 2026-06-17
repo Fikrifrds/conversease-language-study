@@ -1,43 +1,44 @@
 scenario_key: arabic_finding_a_place_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: أين تريد أن تذهب؟
-learner_goal: Combine place questions and simple directions in one conversation.
+opening_line: إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi,
+  dan mengikuti arahan singkat.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أين تريد أن تذهب؟
-  hint: 'Jawab dengan pola: أين الفصل؟'
-  sample_answer: أين الفصل؟
-  focus: Ask where the classroom is.
+- coach: إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي؟
+  hint: 'Jawab dengan pola: أَيْنَ الْفَصْلُ؟'
+  sample_answer: أَيْنَ الْفَصْلُ؟
+  focus: 'Latihan frasa: Di mana kelas?'
   expected_keywords:
-  - أين
-  - الفصل
+  - أَيْنَ
+  - الْفَصْلُ
   indonesian_explanation: Di mana kelas?
-- coach: 'استخدم: كيف أذهب إلى الفصل؟'
-  hint: 'Jawab dengan pola: كيف أذهب إلى الفصل؟'
-  sample_answer: كيف أذهب إلى الفصل؟
-  focus: Ask for directions.
+- coach: 'استخدم: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟'
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke kelas?'
   expected_keywords:
-  - كيف
-  - أذهب
-  - إلى
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
   indonesian_explanation: Bagaimana saya pergi ke kelas?
-- coach: 'استخدم: اذهب يمينًا'
-  hint: 'Jawab dengan pola: اذهب يمينًا'
-  sample_answer: اذهب يمينًا
-  focus: Follow direction.
+- coach: 'استخدم: اِذْهَبْ يَمِينًا'
+  hint: 'Jawab dengan pola: اِذْهَبْ يَمِينًا'
+  sample_answer: اِذْهَبْ يَمِينًا
+  focus: 'Latihan frasa: Pergi ke kanan.'
   expected_keywords:
-  - اذهب
-  - يمينًا
+  - اِذْهَبْ
+  - يَمِينًا
   indonesian_explanation: Pergi ke kanan.
 target_phrases:
-- أين الفصل؟
-- كيف أذهب إلى الفصل؟
-- اذهب يمينًا
-- هو بجانب المكتبة
+- أَيْنَ الْفَصْلُ؟
+- كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
+- اِذْهَبْ يَمِينًا
+- هُوَ بِجَانِبِ الْمَكْتَبَةِ
 rubric:
   speaking:
     minimum_score: 60

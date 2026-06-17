@@ -1,42 +1,43 @@
 scenario_key: arabic_family_members
 mode: lesson_practice_coach
 level_code: A1
-opening_line: من هذا؟
-learner_goal: Name simple family members and ask who someone is.
+opening_line: مَنْ هَذَا؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menunjukkan foto keluarga dan menyebut
+  anggota keluarga dengan kalimat pendek.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: من هذا؟
-  hint: 'Jawab dengan pola: من هذا؟'
-  sample_answer: من هذا؟
-  focus: Ask about a person.
+- coach: مَنْ هَذَا؟
+  hint: 'Jawab dengan pola: مَنْ هَذَا؟'
+  sample_answer: مَنْ هَذَا؟
+  focus: 'Latihan frasa: Siapa ini?'
   expected_keywords:
-  - من
-  - هذا
+  - مَنْ
+  - هَذَا
   indonesian_explanation: Siapa ini?
-- coach: 'استخدم: هذا أبي'
-  hint: 'Jawab dengan pola: هذا أبي'
-  sample_answer: هذا أبي
-  focus: Identify father.
+- coach: 'استخدم: هَذَا أَبِي'
+  hint: 'Jawab dengan pola: هَذَا أَبِي'
+  sample_answer: هَذَا أَبِي
+  focus: 'Latihan frasa: Ini ayah saya.'
   expected_keywords:
-  - هذا
-  - أبي
+  - هَذَا
+  - أَبِي
   indonesian_explanation: Ini ayah saya.
-- coach: 'استخدم: هذه أمي'
-  hint: 'Jawab dengan pola: هذه أمي'
-  sample_answer: هذه أمي
-  focus: Identify mother.
+- coach: 'استخدم: هَذِهِ أُمِّي'
+  hint: 'Jawab dengan pola: هَذِهِ أُمِّي'
+  sample_answer: هَذِهِ أُمِّي
+  focus: 'Latihan frasa: Ini ibu saya.'
   expected_keywords:
-  - هذه
-  - أمي
+  - هَذِهِ
+  - أُمِّي
   indonesian_explanation: Ini ibu saya.
 target_phrases:
-- من هذا؟
-- هذا أبي
-- هذه أمي
-- هذا أخي
+- مَنْ هَذَا؟
+- هَذَا أَبِي
+- هَذِهِ أُمِّي
+- هَذَا أَخِي
 rubric:
   speaking:
     minimum_score: 60

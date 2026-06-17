@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Practice answering mixed A1 questions before the final conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan final A1 secara singkat dan jelas.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
 - أنا من إندونيسيا
-- عندي درس
-- أريد كتابًا
-- لا أفهم
-- أعد من فضلك
+- عِنْدِي دَرْسٌ
+- أُرِيدُ كِتَابًا
+- لَا أَفْهَمُ
+- أَعِدْ مِنْ فَضْلِكَ

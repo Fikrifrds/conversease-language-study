@@ -1,11 +1,11 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-أكتب اسمي: ...
-هذا حرف ...
-هل هذا صحيح؟
+أَكْتُبُ اسْمِي: ...
+هَذَا حَرْفُ ...
+هَلْ هَذَا صَحِيحٌ؟
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

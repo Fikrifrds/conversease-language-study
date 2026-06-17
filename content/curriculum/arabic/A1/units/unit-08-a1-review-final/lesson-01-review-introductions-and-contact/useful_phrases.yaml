@@ -1,16 +1,16 @@
 phrases:
-- phrase: اسمي أحمد
+- phrase: اِسْمِي أَحْمَدُ
   meaning_id: Nama saya Ahmad.
-  usage_note: Say your name.
+  usage_note: 'Gunakan saat ingin mengatakan: Nama saya Ahmad.'
 - phrase: أنا من إندونيسيا
   meaning_id: Saya dari Indonesia.
-  usage_note: Say origin.
-- phrase: أكتب اسمي
+  usage_note: 'Gunakan saat ingin mengatakan: Saya dari Indonesia.'
+- phrase: أَكْتُبُ اسْمِي
   meaning_id: Saya menulis nama saya.
-  usage_note: Spell your name.
-- phrase: رقمي ...
+  usage_note: 'Gunakan saat ingin mengatakan: Saya menulis nama saya.'
+- phrase: رَقْمِي ...
   meaning_id: Nomor saya ...
-  usage_note: Share a number.
-- phrase: بريدي الإلكتروني ...
+  usage_note: 'Gunakan saat ingin mengatakan: Nomor saya ...'
+- phrase: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
   meaning_id: Email saya ...
-  usage_note: Share email.
+  usage_note: 'Gunakan saat ingin mengatakan: Email saya ...'

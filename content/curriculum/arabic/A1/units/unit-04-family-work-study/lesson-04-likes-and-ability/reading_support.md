@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- أحب القراءة -> Saya suka membaca.
-- لا أحب الانتظار -> Saya tidak suka menunggu.
-- أستطيع القراءة -> Saya bisa membaca.
-- لا أستطيع الآن -> Saya belum bisa sekarang.
-- قليلًا -> Sedikit
+- أُحِبُّ الْقِرَاءَةَ -> Saya suka membaca.
+- لَا أُحِبُّ الِانْتِظَارَ -> Saya tidak suka menunggu.
+- أَسْتَطِيعُ الْقِرَاءَةَ -> Saya bisa membaca.
+- لَا أَسْتَطِيعُ الْآنَ -> Saya belum bisa sekarang.
+- قَلِيلًا -> Sedikit

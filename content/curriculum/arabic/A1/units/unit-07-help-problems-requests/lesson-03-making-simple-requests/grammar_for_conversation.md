@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use imperative verbs plus من فضلك for polite requests.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-افتح الكتاب
-اكتب الجملة
-استمع
+اِفْتَحِ الْكِتَابَ
+اُكْتُبِ الْجُمْلَةَ
+اِسْتَمِعْ
 تكلم ببطء
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

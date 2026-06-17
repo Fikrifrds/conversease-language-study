@@ -4,8 +4,9 @@ title: Apologizing and Thanking
 status: beta
 estimated_minutes: 10
 conversation_situation: apologizing_and_thanking
-conversation_goal: Apologize, thank someone, and respond politely.
-grammar_summary: Use آسف/آسفة for sorry and شكرًا for thanks.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu terlambat merespons atau membuat
+  kesalahan kecil dan ingin menjawab sopan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

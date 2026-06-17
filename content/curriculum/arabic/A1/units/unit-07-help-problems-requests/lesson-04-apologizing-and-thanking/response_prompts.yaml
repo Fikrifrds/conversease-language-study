@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Maaf.'
-  target_response: آسف
+- prompt: 'Ucapkan dalam bahasa Arab: Maaf.'
+  target_response: آسِفٌ
   acceptable_responses:
-  - آسف
-- prompt: 'Say: Maaf.'
-  target_response: آسفة
+  - آسِفٌ
+- prompt: 'Ucapkan dalam bahasa Arab: Maaf.'
+  target_response: آسِفَةٌ
   acceptable_responses:
-  - آسفة
-- prompt: 'Say: Permisi/maaf.'
-  target_response: عذرًا
+  - آسِفَةٌ
+- prompt: 'Ucapkan dalam bahasa Arab: Permisi/maaf.'
+  target_response: عُذْرًا
   acceptable_responses:
-  - عذرًا
+  - عُذْرًا

@@ -1,16 +1,16 @@
 phrases:
-- phrase: البيت
+- phrase: الْبَيْتُ
   meaning_id: Rumah
-  usage_note: Name a home.
-- phrase: المدرسة
+  usage_note: 'Gunakan saat ingin mengatakan: Rumah'
+- phrase: الْمَدْرَسَةُ
   meaning_id: Sekolah
-  usage_note: Name a school.
-- phrase: السوق
+  usage_note: 'Gunakan saat ingin mengatakan: Sekolah'
+- phrase: السُّوقُ
   meaning_id: Pasar
-  usage_note: Name a market.
-- phrase: المكتب
+  usage_note: 'Gunakan saat ingin mengatakan: Pasar'
+- phrase: الْمَكْتَبُ
   meaning_id: Kantor
-  usage_note: Name an office.
-- phrase: المقهى
+  usage_note: 'Gunakan saat ingin mengatakan: Kantor'
+- phrase: الْمَقْهَى
   meaning_id: Kafe
-  usage_note: Name a cafe.
+  usage_note: 'Gunakan saat ingin mengatakan: Kafe'

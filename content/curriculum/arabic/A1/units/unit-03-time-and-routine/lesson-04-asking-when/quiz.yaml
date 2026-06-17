@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Kapan pelajarannya?"?
+  prompt: Frasa mana yang berarti "Kapan pelajarannya?"?
   options:
   - متى الدرس؟
-  - في الصباح
-  - بعد الظهر
+  - فِي الصَّبَاحِ
+  - بَعْدَ الظُّهْرِ
   correct_answer: متى الدرس؟
 - key: phrase_2
-  prompt: Which phrase means "Pada pagi hari"?
+  prompt: Frasa mana yang berarti "Pada pagi hari"?
   options:
-  - في الصباح
+  - فِي الصَّبَاحِ
   - متى الدرس؟
-  - بعد الظهر
-  correct_answer: في الصباح
+  - بَعْدَ الظُّهْرِ
+  correct_answer: فِي الصَّبَاحِ

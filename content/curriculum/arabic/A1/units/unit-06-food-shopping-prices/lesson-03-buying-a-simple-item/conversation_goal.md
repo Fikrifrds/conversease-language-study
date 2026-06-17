@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask for an item, say you want one, and close the purchase.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana untuk kelas.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- هل عندكم قلم؟
-- نعم، موجود
-- أريد هذا
-- آخذ واحدًا
-- الحساب من فضلك
+- هَلْ عِنْدَكُمْ قَلَمٌ؟
+- نَعَمْ، مَوْجُودٌ
+- أُرِيدُ هَذَا
+- آخُذُ وَاحِدًا
+- الْحِسَابُ مِنْ فَضْلِكَ

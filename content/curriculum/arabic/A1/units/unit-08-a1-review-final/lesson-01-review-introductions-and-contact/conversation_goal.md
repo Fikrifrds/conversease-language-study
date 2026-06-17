@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Review introductions and contact details in one smooth exchange.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- اسمي أحمد
+- اِسْمِي أَحْمَدُ
 - أنا من إندونيسيا
-- أكتب اسمي
-- رقمي ...
-- بريدي الإلكتروني ...
+- أَكْتُبُ اسْمِي
+- رَقْمِي ...
+- بَرِيدِي الْإِلِكْتُرُونِيُّ ...

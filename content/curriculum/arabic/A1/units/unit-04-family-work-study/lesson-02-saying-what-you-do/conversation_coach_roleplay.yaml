@@ -1,25 +1,26 @@
 scenario_key: arabic_saying_what_you_do
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ماذا تعمل؟
-learner_goal: Say whether you are a student, teacher, or worker.
+opening_line: مَاذَا تَعْمَلُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau status
+  belajar dalam percakapan formal ringan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: ماذا تعمل؟
-  hint: 'Jawab dengan pola: ماذا تعمل؟'
-  sample_answer: ماذا تعمل؟
-  focus: Ask about work.
+- coach: مَاذَا تَعْمَلُ؟
+  hint: 'Jawab dengan pola: مَاذَا تَعْمَلُ؟'
+  sample_answer: مَاذَا تَعْمَلُ؟
+  focus: 'Latihan frasa: Apa pekerjaanmu?'
   expected_keywords:
-  - ماذا
-  - تعمل
+  - مَاذَا
+  - تَعْمَلُ
   indonesian_explanation: Apa pekerjaanmu?
 - coach: 'استخدم: أنا طالب'
   hint: 'Jawab dengan pola: أنا طالب'
   sample_answer: أنا طالب
-  focus: Say student identity.
+  focus: 'Latihan frasa: Saya pelajar.'
   expected_keywords:
   - أنا
   - طالب
@@ -27,16 +28,16 @@ turns:
 - coach: 'استخدم: أنا معلم'
   hint: 'Jawab dengan pola: أنا معلم'
   sample_answer: أنا معلم
-  focus: Say teacher identity.
+  focus: 'Latihan frasa: Saya guru.'
   expected_keywords:
   - أنا
   - معلم
   indonesian_explanation: Saya guru.
 target_phrases:
-- ماذا تعمل؟
+- مَاذَا تَعْمَلُ؟
 - أنا طالب
 - أنا معلم
-- أعمل في مكتب
+- أَعْمَلُ فِي مَكْتَبٍ
 rubric:
   speaking:
     minimum_score: 60

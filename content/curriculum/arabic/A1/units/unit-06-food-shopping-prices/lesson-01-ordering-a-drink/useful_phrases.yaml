@@ -1,16 +1,16 @@
 phrases:
-- phrase: أريد ماءً
+- phrase: أُرِيدُ مَاءً
   meaning_id: Saya ingin air.
-  usage_note: Order water.
-- phrase: أريد قهوة
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin air.'
+- phrase: أُرِيدُ قَهْوَةً
   meaning_id: Saya ingin kopi.
-  usage_note: Order coffee.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin kopi.'
 - phrase: من فضلك
   meaning_id: Tolong.
-  usage_note: Make it polite.
-- phrase: هل عندكم شاي؟
+  usage_note: 'Gunakan saat ingin mengatakan: Tolong.'
+- phrase: هَلْ عِنْدَكُمْ شَايٌ؟
   meaning_id: Apakah kalian punya teh?
-  usage_note: Ask availability.
-- phrase: تفضل
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kalian punya teh?'
+- phrase: تَفَضَّلْ
   meaning_id: Silakan.
-  usage_note: Offer something.
+  usage_note: 'Gunakan saat ingin mengatakan: Silakan.'

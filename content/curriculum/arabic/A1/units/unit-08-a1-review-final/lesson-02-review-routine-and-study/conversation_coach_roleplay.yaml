@@ -1,41 +1,42 @@
 scenario_key: arabic_review_routine_and_study
 mode: lesson_practice_coach
 level_code: A1
-opening_line: متى تدرس العربية؟
-learner_goal: Review days, time, and daily study routine.
+opening_line: متى تدرسُ الْعَرَبِيَّةَُ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa
+  Arab dan aktivitas sederhana.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: متى تدرس العربية؟
-  hint: 'Jawab dengan pola: اليوم الإثنين'
-  sample_answer: اليوم الإثنين
-  focus: Say the day.
+- coach: متى تدرسُ الْعَرَبِيَّةَُ؟
+  hint: 'Jawab dengan pola: الْيَوْمُ الْإِثْنَيْنِ'
+  sample_answer: الْيَوْمُ الْإِثْنَيْنِ
+  focus: 'Latihan frasa: Hari ini Senin.'
   expected_keywords:
-  - اليوم
-  - الإثنين
+  - الْيَوْمُ
+  - الْإِثْنَيْنِ
   indonesian_explanation: Hari ini Senin.
-- coach: 'استخدم: الساعة الثامنة'
-  hint: 'Jawab dengan pola: الساعة الثامنة'
-  sample_answer: الساعة الثامنة
-  focus: Say the time.
+- coach: 'استخدم: السَّاعَةُ الثَّامِنَةُ'
+  hint: 'Jawab dengan pola: السَّاعَةُ الثَّامِنَةُ'
+  sample_answer: السَّاعَةُ الثَّامِنَةُ
+  focus: 'Latihan frasa: Jam delapan.'
   expected_keywords:
-  - الساعة
-  - الثامنة
+  - السَّاعَةُ
+  - الثَّامِنَةُ
   indonesian_explanation: Jam delapan.
-- coach: 'استخدم: أدرس العربية'
-  hint: 'Jawab dengan pola: أدرس العربية'
-  sample_answer: أدرس العربية
-  focus: Say study action.
+- coach: 'استخدم: أَدْرُسُ الْعَرَبِيَّةَ'
+  hint: 'Jawab dengan pola: أَدْرُسُ الْعَرَبِيَّةَ'
+  sample_answer: أَدْرُسُ الْعَرَبِيَّةَ
+  focus: 'Latihan frasa: Saya belajar bahasa Arab.'
   expected_keywords:
-  - أدرس
-  - العربية
+  - أَدْرُسُ
+  - الْعَرَبِيَّةَ
   indonesian_explanation: Saya belajar bahasa Arab.
 target_phrases:
-- اليوم الإثنين
-- الساعة الثامنة
-- أدرس العربية
+- الْيَوْمُ الْإِثْنَيْنِ
+- السَّاعَةُ الثَّامِنَةُ
+- أَدْرُسُ الْعَرَبِيَّةَ
 - أقرأ وأكتب
 rubric:
   speaking:

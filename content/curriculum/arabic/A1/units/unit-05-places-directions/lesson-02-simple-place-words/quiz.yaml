@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Rumah"?
+  prompt: Frasa mana yang berarti "Rumah"?
   options:
-  - البيت
-  - المدرسة
-  - السوق
-  correct_answer: البيت
+  - الْبَيْتُ
+  - الْمَدْرَسَةُ
+  - السُّوقُ
+  correct_answer: الْبَيْتُ
 - key: phrase_2
-  prompt: Which phrase means "Sekolah"?
+  prompt: Frasa mana yang berarti "Sekolah"?
   options:
-  - المدرسة
-  - البيت
-  - السوق
-  correct_answer: المدرسة
+  - الْمَدْرَسَةُ
+  - الْبَيْتُ
+  - السُّوقُ
+  correct_answer: الْمَدْرَسَةُ

@@ -1,15 +1,15 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
 1. مرحبًا.
 2. اسمي أحمد.
 3. أنا من إندونيسيا.
 4. لا أفهم.
-5. أعد من فضلك.
+5. أَعِدْ مِنْ فَضْلِكَ.
 
-## Focus
+## Fokus
 
-- Keep the long vowel in **إندونيسيا** smooth.
-- Pronounce **أحمد** with a clear hamzah and **ح**.
-- Pause after **عفوا** before saying **لا أفهم**.
+- Jaga vokal panjang dalam **إندونيسيا** tetap halus.
+- Ucapkan **أحمد** dengan hamzah dan **ح** yang jelas.
+- Beri jeda setelah **عفوًا** sebelum mengucapkan **لا أفهم**.

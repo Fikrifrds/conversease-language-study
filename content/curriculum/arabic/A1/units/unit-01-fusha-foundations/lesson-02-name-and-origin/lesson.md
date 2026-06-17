@@ -1,12 +1,11 @@
 # Name and Origin
 
-After this lesson, learners can say their name and country in simple Arabic.
+Setelah lesson ini, kamu bisa menyebutkan nama dan asal negara dengan kalimat Arab sederhana.
 
 ## Situation
 
 Kamu bertemu peserta baru di kelas bahasa Arab. Sebutkan nama, asal negara, lalu tanyakan balik dengan sopan.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic has gendered forms in some questions. In this pilot, we start with the common forms and explain details gradually.
-
+Bahasa Arab punya bentuk yang bisa berubah sesuai lawan bicara. Di A1, baca frasa berharakat dulu agar bentuk seperti **اسمُكَ** dan **أنتَ** tidak tertukar.

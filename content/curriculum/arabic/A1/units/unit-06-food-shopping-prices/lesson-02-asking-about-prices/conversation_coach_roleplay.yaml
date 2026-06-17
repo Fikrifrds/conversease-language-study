@@ -1,42 +1,43 @@
 scenario_key: arabic_asking_about_prices
 mode: lesson_practice_coach
 level_code: A1
-opening_line: كم السعر؟
-learner_goal: Ask a price and understand a simple answer.
+opening_line: كَمْ سِعْرُ الْقَلَمِ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan perlu
+  menanyakan harganya.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كم السعر؟
-  hint: 'Jawab dengan pola: كم السعر؟'
-  sample_answer: كم السعر؟
-  focus: Ask price.
+- coach: كَمْ سِعْرُ الْقَلَمِ؟
+  hint: 'Jawab dengan pola: كَمِ السِّعْرُ؟'
+  sample_answer: كَمِ السِّعْرُ؟
+  focus: 'Latihan frasa: Berapa harganya?'
   expected_keywords:
-  - كم
-  - السعر
+  - كَمِ
+  - السِّعْرُ
   indonesian_explanation: Berapa harganya?
-- coach: 'استخدم: السعر خمسة ريالات'
-  hint: 'Jawab dengan pola: السعر خمسة ريالات'
-  sample_answer: السعر خمسة ريالات
-  focus: Say a price.
+- coach: 'استخدم: السِّعْرُ خَمْسَةُ رِيَالَاتٍ'
+  hint: 'Jawab dengan pola: السِّعْرُ خَمْسَةُ رِيَالَاتٍ'
+  sample_answer: السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+  focus: 'Latihan frasa: Harganya lima riyal.'
   expected_keywords:
-  - السعر
-  - خمسة
-  - ريالات
+  - السِّعْرُ
+  - خَمْسَةُ
+  - رِيَالَاتٍ
   indonesian_explanation: Harganya lima riyal.
-- coach: 'استخدم: غالٍ'
-  hint: 'Jawab dengan pola: غالٍ'
-  sample_answer: غالٍ
-  focus: Describe expensive.
+- coach: 'استخدم: غَالٍ'
+  hint: 'Jawab dengan pola: غَالٍ'
+  sample_answer: غَالٍ
+  focus: 'Latihan frasa: Mahal'
   expected_keywords:
-  - غالٍ
+  - غَالٍ
   indonesian_explanation: Mahal
 target_phrases:
-- كم السعر؟
-- السعر خمسة ريالات
-- غالٍ
-- رخيص
+- كَمِ السِّعْرُ؟
+- السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+- غَالٍ
+- رَخِيصٌ
 rubric:
   speaking:
     minimum_score: 60

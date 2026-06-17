@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Say you do not understand and ask for a word meaning.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- لا أفهم
-- لا أعرف الكلمة
-- ماذا يعني هذا؟
-- ببطء من فضلك
-- مرة أخرى
+- لَا أَفْهَمُ
+- لَا أَعْرِفُ الْكَلِمَةَ
+- مَاذَا يَعْنِي هَذَا؟
+- بِبُطْءٍ مِنْ فَضْلِكَ
+- مَرَّةً أُخْرَى

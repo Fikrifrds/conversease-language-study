@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Combine not understanding, asking for help, and thanking in one conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- لا أفهم
-- هل تساعدني؟
-- ببطء من فضلك
-- أعد مرة أخرى
-- شكرًا على المساعدة
+- لَا أَفْهَمُ
+- هَلْ تُسَاعِدُنِي؟
+- بِبُطْءٍ مِنْ فَضْلِكَ
+- أَعِدْ مَرَّةً أُخْرَى
+- شُكْرًا عَلَى الْمُسَاعَدَةِ

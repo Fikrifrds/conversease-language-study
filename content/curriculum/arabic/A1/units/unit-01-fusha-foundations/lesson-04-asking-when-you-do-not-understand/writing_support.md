@@ -1,13 +1,13 @@
-# Writing Support
+# Bantuan Menulis
 
-Write two helpful classroom requests:
+Tulis dua permintaan yang berguna di kelas:
 
 ```txt
 لا أفهم.
-أعد من فضلك.
+أَعِدْ مِنْ فَضْلِكَ.
 ```
 
-Then write one meaning question:
+Lalu tulis satu pertanyaan makna:
 
 ```txt
 ما معنى الكلمة؟

@@ -1,13 +1,13 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use كم السعر؟ for price and السعر + number + currency for answer.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-كم السعر؟
-السعر خمسة ريالات
-غالٍ
-رخيص
-مناسب
+كَمِ السِّعْرُ؟
+السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+غَالٍ
+رَخِيصٌ
+مُنَاسِبٌ
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

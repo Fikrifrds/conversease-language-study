@@ -4,8 +4,9 @@ title: Arabic Numbers and Phone
 status: beta
 estimated_minutes: 10
 conversation_situation: numbers_and_phone
-conversation_goal: Say a simple phone number and ask someone to repeat it.
-grammar_summary: Use رقمي + number for 'my number is' and أعد الرقم من فضلك for repetition.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan
+  teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

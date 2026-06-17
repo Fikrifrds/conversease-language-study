@@ -1,16 +1,16 @@
 phrases:
-- phrase: كم السعر؟
+- phrase: كَمِ السِّعْرُ؟
   meaning_id: Berapa harganya?
-  usage_note: Ask price.
-- phrase: السعر خمسة ريالات
+  usage_note: 'Gunakan saat ingin mengatakan: Berapa harganya?'
+- phrase: السِّعْرُ خَمْسَةُ رِيَالَاتٍ
   meaning_id: Harganya lima riyal.
-  usage_note: Say a price.
-- phrase: غالٍ
+  usage_note: 'Gunakan saat ingin mengatakan: Harganya lima riyal.'
+- phrase: غَالٍ
   meaning_id: Mahal
-  usage_note: Describe expensive.
-- phrase: رخيص
+  usage_note: 'Gunakan saat ingin mengatakan: Mahal'
+- phrase: رَخِيصٌ
   meaning_id: Murah
-  usage_note: Describe cheap.
-- phrase: مناسب
+  usage_note: 'Gunakan saat ingin mengatakan: Murah'
+- phrase: مُنَاسِبٌ
   meaning_id: Cocok/pas
-  usage_note: Say price is acceptable.
+  usage_note: 'Gunakan saat ingin mengatakan: Cocok/pas'

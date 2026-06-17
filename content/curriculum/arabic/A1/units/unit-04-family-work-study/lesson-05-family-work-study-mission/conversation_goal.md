@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Combine family, work/study, and likes in one short formal conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- هذه عائلتي
+- هَذِهِ عَائِلَتِي
 - أنا طالب
-- أدرس العربية
-- أعمل في مكتب
-- أحب القراءة
+- أَدْرُسُ الْعَرَبِيَّةَ
+- أَعْمَلُ فِي مَكْتَبٍ
+- أُحِبُّ الْقِرَاءَةَ

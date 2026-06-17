@@ -4,8 +4,9 @@ title: Asking About Prices
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_about_prices
-conversation_goal: Ask a price and understand a simple answer.
-grammar_summary: Use كم السعر؟ for price and السعر + number + currency for answer.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan
+  perlu menanyakan harganya.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

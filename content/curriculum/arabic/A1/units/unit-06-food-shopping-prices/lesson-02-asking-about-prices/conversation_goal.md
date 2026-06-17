@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask a price and understand a simple answer.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan perlu menanyakan harganya.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- كم السعر؟
-- السعر خمسة ريالات
-- غالٍ
-- رخيص
-- مناسب
+- كَمِ السِّعْرُ؟
+- السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+- غَالٍ
+- رَخِيصٌ
+- مُنَاسِبٌ

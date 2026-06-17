@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- أين الفصل؟ -> Di mana kelas?
-- كيف أذهب إلى الفصل؟ -> Bagaimana saya pergi ke kelas?
-- اذهب يمينًا -> Pergi ke kanan.
-- هو بجانب المكتبة -> Itu di samping perpustakaan.
-- واضح -> Jelas
+- أَيْنَ الْفَصْلُ؟ -> Di mana kelas?
+- كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟ -> Bagaimana saya pergi ke kelas?
+- اِذْهَبْ يَمِينًا -> Pergi ke kanan.
+- هُوَ بِجَانِبِ الْمَكْتَبَةِ -> Itu di samping perpustakaan.
+- وَاضِحٌ -> Jelas

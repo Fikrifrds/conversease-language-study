@@ -1,43 +1,44 @@
 scenario_key: arabic_buying_a_simple_item
 mode: lesson_practice_coach
 level_code: A1
-opening_line: هل عندكم قلم؟
-learner_goal: Ask for an item, say you want one, and close the purchase.
+opening_line: هَلْ عِنْدَكُمْ قَلَمٌ؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana untuk
+  kelas.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: هل عندكم قلم؟
-  hint: 'Jawab dengan pola: هل عندكم قلم؟'
-  sample_answer: هل عندكم قلم؟
-  focus: Ask item availability.
+- coach: هَلْ عِنْدَكُمْ قَلَمٌ؟
+  hint: 'Jawab dengan pola: هَلْ عِنْدَكُمْ قَلَمٌ؟'
+  sample_answer: هَلْ عِنْدَكُمْ قَلَمٌ؟
+  focus: 'Latihan frasa: Apakah kalian punya pena?'
   expected_keywords:
-  - هل
-  - عندكم
-  - قلم
+  - هَلْ
+  - عِنْدَكُمْ
+  - قَلَمٌ
   indonesian_explanation: Apakah kalian punya pena?
-- coach: 'استخدم: نعم، موجود'
-  hint: 'Jawab dengan pola: نعم، موجود'
-  sample_answer: نعم، موجود
-  focus: Confirm availability.
+- coach: 'استخدم: نَعَمْ، مَوْجُودٌ'
+  hint: 'Jawab dengan pola: نَعَمْ، مَوْجُودٌ'
+  sample_answer: نَعَمْ، مَوْجُودٌ
+  focus: 'Latihan frasa: Ya, ada.'
   expected_keywords:
-  - نعم،
-  - موجود
+  - نَعَمْ،
+  - مَوْجُودٌ
   indonesian_explanation: Ya, ada.
-- coach: 'استخدم: أريد هذا'
-  hint: 'Jawab dengan pola: أريد هذا'
-  sample_answer: أريد هذا
-  focus: Choose an item.
+- coach: 'استخدم: أُرِيدُ هَذَا'
+  hint: 'Jawab dengan pola: أُرِيدُ هَذَا'
+  sample_answer: أُرِيدُ هَذَا
+  focus: 'Latihan frasa: Saya ingin ini.'
   expected_keywords:
-  - أريد
-  - هذا
+  - أُرِيدُ
+  - هَذَا
   indonesian_explanation: Saya ingin ini.
 target_phrases:
-- هل عندكم قلم؟
-- نعم، موجود
-- أريد هذا
-- آخذ واحدًا
+- هَلْ عِنْدَكُمْ قَلَمٌ؟
+- نَعَمْ، مَوْجُودٌ
+- أُرِيدُ هَذَا
+- آخُذُ وَاحِدًا
 rubric:
   speaking:
     minimum_score: 60

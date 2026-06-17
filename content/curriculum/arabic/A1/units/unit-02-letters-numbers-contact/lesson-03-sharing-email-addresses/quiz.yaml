@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Apa alamat emailmu?"?
+  prompt: Frasa mana yang berarti "Apa alamat emailmu?"?
   options:
-  - ما بريدك الإلكتروني؟
-  - بريدي الإلكتروني ...
-  - اكتب من فضلك
-  correct_answer: ما بريدك الإلكتروني؟
+  - مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+  - بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+  - اُكْتُبْ مِنْ فَضْلِكَ
+  correct_answer: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
 - key: phrase_2
-  prompt: Which phrase means "Email saya ..."?
+  prompt: Frasa mana yang berarti "Email saya ..."?
   options:
-  - بريدي الإلكتروني ...
-  - ما بريدك الإلكتروني؟
-  - اكتب من فضلك
-  correct_answer: بريدي الإلكتروني ...
+  - بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+  - مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+  - اُكْتُبْ مِنْ فَضْلِكَ
+  correct_answer: بَرِيدِي الْإِلِكْتُرُونِيُّ ...

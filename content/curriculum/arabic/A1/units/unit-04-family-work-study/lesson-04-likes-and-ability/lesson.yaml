@@ -4,8 +4,9 @@ title: Likes and Ability
 status: beta
 estimated_minutes: 10
 conversation_situation: likes_and_ability
-conversation_goal: Say what you like and what you can do a little.
-grammar_summary: Use أحب for likes and أستطيع for ability.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai
+  dan kemampuan sederhana dalam konteks belajar.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

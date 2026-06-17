@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Combine ordering, price, and buying phrases in one short conversation.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أريد ماءً
-- كم السعر؟
-- السعر مناسب
-- آخذ واحدًا
-- الحساب من فضلك
+- أُرِيدُ مَاءً
+- كَمِ السِّعْرُ؟
+- السِّعْرُ مُنَاسِبٌ
+- آخُذُ وَاحِدًا
+- الْحِسَابُ مِنْ فَضْلِكَ

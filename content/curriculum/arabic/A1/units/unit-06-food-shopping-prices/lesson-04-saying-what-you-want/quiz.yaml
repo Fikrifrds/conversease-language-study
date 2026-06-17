@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Apa yang kamu inginkan?"?
+  prompt: Frasa mana yang berarti "Apa yang kamu inginkan?"?
   options:
-  - ماذا تريد؟
-  - أريد كتابًا
-  - لا أريد قهوة
-  correct_answer: ماذا تريد؟
+  - مَاذَا تُرِيدُ؟
+  - أُرِيدُ كِتَابًا
+  - لَا أُرِيدُ قَهْوَةً
+  correct_answer: مَاذَا تُرِيدُ؟
 - key: phrase_2
-  prompt: Which phrase means "Saya ingin buku."?
+  prompt: Frasa mana yang berarti "Saya ingin buku."?
   options:
-  - أريد كتابًا
-  - ماذا تريد؟
-  - لا أريد قهوة
-  correct_answer: أريد كتابًا
+  - أُرِيدُ كِتَابًا
+  - مَاذَا تُرِيدُ؟
+  - لَا أُرِيدُ قَهْوَةً
+  correct_answer: أُرِيدُ كِتَابًا

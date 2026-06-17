@@ -1,40 +1,41 @@
 scenario_key: arabic_making_simple_requests
 mode: lesson_practice_coach
 level_code: A1
-opening_line: افتح الكتاب من فضلك.
-learner_goal: Make polite classroom requests using short imperative forms.
+opening_line: اِفْتَحِ الْكِتَابَ مِنْ فَضْلِكَ.
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta teman atau guru melakukan
+  instruksi sederhana dalam konteks belajar.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: افتح الكتاب من فضلك.
-  hint: 'Jawab dengan pola: افتح الكتاب'
-  sample_answer: افتح الكتاب
-  focus: Ask someone to open a book.
+- coach: اِفْتَحِ الْكِتَابَ مِنْ فَضْلِكَ.
+  hint: 'Jawab dengan pola: اِفْتَحِ الْكِتَابَ'
+  sample_answer: اِفْتَحِ الْكِتَابَ
+  focus: 'Latihan frasa: Buka bukunya.'
   expected_keywords:
-  - افتح
-  - الكتاب
+  - اِفْتَحِ
+  - الْكِتَابَ
   indonesian_explanation: Buka bukunya.
-- coach: 'استخدم: اكتب الجملة'
-  hint: 'Jawab dengan pola: اكتب الجملة'
-  sample_answer: اكتب الجملة
-  focus: Ask someone to write.
+- coach: 'استخدم: اُكْتُبِ الْجُمْلَةَ'
+  hint: 'Jawab dengan pola: اُكْتُبِ الْجُمْلَةَ'
+  sample_answer: اُكْتُبِ الْجُمْلَةَ
+  focus: 'Latihan frasa: Tulis kalimatnya.'
   expected_keywords:
-  - اكتب
-  - الجملة
+  - اُكْتُبِ
+  - الْجُمْلَةَ
   indonesian_explanation: Tulis kalimatnya.
-- coach: 'استخدم: استمع'
-  hint: 'Jawab dengan pola: استمع'
-  sample_answer: استمع
-  focus: Ask someone to listen.
+- coach: 'استخدم: اِسْتَمِعْ'
+  hint: 'Jawab dengan pola: اِسْتَمِعْ'
+  sample_answer: اِسْتَمِعْ
+  focus: 'Latihan frasa: Dengarkan.'
   expected_keywords:
-  - استمع
+  - اِسْتَمِعْ
   indonesian_explanation: Dengarkan.
 target_phrases:
-- افتح الكتاب
-- اكتب الجملة
-- استمع
+- اِفْتَحِ الْكِتَابَ
+- اُكْتُبِ الْجُمْلَةَ
+- اِسْتَمِعْ
 - تكلم ببطء
 rubric:
   speaking:

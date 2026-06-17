@@ -1,15 +1,15 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the mission script:
+Baca skrip misi ini:
 
 ```txt
 مرحبًا.
 اسمي أحمد.
 أنا من إندونيسيا.
 لا أفهم.
-أعد من فضلك.
+أَعِدْ مِنْ فَضْلِكَ.
 ```
 
-Question: Which line asks for repetition?
+Pertanyaan: Baris mana yang meminta pengulangan?
 
-Answer: أعد من فضلك.
+Jawaban: أَعِدْ مِنْ فَضْلِكَ.

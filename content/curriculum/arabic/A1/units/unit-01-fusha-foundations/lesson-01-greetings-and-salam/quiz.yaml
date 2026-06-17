@@ -1,13 +1,13 @@
 questions:
   - key: reply_to_salam
-    prompt: Which phrase can reply to مرحبًا?
+    prompt: Frasa mana yang bisa menjawab مرحبًا?
     options:
       - أهلًا وسهلًا
       - أنا بخير
       - كيف حالك؟
     correct_answer: أهلًا وسهلًا
   - key: how_are_you
-    prompt: What does كيف حالك؟ mean?
+    prompt: Apa arti كيف حالك؟
     options:
       - Bagaimana kabarmu?
       - Siapa namamu?

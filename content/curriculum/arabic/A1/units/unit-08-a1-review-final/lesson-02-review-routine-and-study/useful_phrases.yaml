@@ -1,16 +1,16 @@
 phrases:
-- phrase: اليوم الإثنين
+- phrase: الْيَوْمُ الْإِثْنَيْنِ
   meaning_id: Hari ini Senin.
-  usage_note: Say the day.
-- phrase: الساعة الثامنة
+  usage_note: 'Gunakan saat ingin mengatakan: Hari ini Senin.'
+- phrase: السَّاعَةُ الثَّامِنَةُ
   meaning_id: Jam delapan.
-  usage_note: Say the time.
-- phrase: أدرس العربية
+  usage_note: 'Gunakan saat ingin mengatakan: Jam delapan.'
+- phrase: أَدْرُسُ الْعَرَبِيَّةَ
   meaning_id: Saya belajar bahasa Arab.
-  usage_note: Say study action.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belajar bahasa Arab.'
 - phrase: أقرأ وأكتب
   meaning_id: Saya membaca dan menulis.
-  usage_note: Say routine actions.
-- phrase: بعد الدرس
+  usage_note: 'Gunakan saat ingin mengatakan: Saya membaca dan menulis.'
+- phrase: بَعْدَ الدَّرْسِ
   meaning_id: Setelah pelajaran
-  usage_note: Continue the sequence.
+  usage_note: 'Gunakan saat ingin mengatakan: Setelah pelajaran'

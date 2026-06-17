@@ -1,13 +1,13 @@
 phrases:
 - phrase: لم أسمع الحرف
   meaning_id: Saya tidak mendengar hurufnya.
-  usage_note: Explain what you missed.
-- phrase: ببطء من فضلك
+  usage_note: 'Gunakan saat ingin mengatakan: Saya tidak mendengar hurufnya.'
+- phrase: بِبُطْءٍ مِنْ فَضْلِكَ
   meaning_id: Pelan-pelan, tolong.
-  usage_note: Ask for slower speech.
-- phrase: هل قلت باء؟
+  usage_note: 'Gunakan saat ingin mengatakan: Pelan-pelan, tolong.'
+- phrase: هَلْ قُلْتَ بَاءً؟
   meaning_id: Apakah Anda mengatakan ba?
-  usage_note: Confirm one letter.
-- phrase: نعم، قلت باء
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah Anda mengatakan ba?'
+- phrase: نَعَمْ، قلت بَاءٌ
   meaning_id: Ya, saya mengatakan ba.
-  usage_note: Confirm clearly.
+  usage_note: 'Gunakan saat ingin mengatakan: Ya, saya mengatakan ba.'

@@ -4,8 +4,9 @@ title: Asking for Help
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_for_help
-conversation_goal: Ask for help and say what you need.
-grammar_summary: Use هل تساعدني؟ and أحتاج مساعدة for simple help requests.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman
+  atau latihan dan perlu meminta bantuan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

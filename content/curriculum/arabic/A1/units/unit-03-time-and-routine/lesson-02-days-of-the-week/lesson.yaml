@@ -4,8 +4,9 @@ title: Days of the Week
 status: beta
 estimated_minutes: 10
 conversation_situation: days_of_the_week
-conversation_goal: Say today, tomorrow, and a simple class day.
-grammar_summary: Use اليوم + day and غدًا + day to speak about today and tomorrow.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu
+  menyebut hari ini serta hari berikutnya.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use هل عندكم + noun and آخذ واحدًا for taking one item.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-هل عندكم قلم؟
-نعم، موجود.
-أريد هذا.
-آخذ واحدًا.
+هَلْ عِنْدَكُمْ قَلَمٌ؟
+نَعَمْ، مَوْجُودٌ.
+أريدُ هذا.
+آخُذُ وَاحِدًا.
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

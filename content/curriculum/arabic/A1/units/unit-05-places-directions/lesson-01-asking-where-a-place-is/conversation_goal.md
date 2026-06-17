@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Ask where a place is and understand here/there.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari perpustakaan di gedung belajar dan bertanya dengan sopan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أين المكتبة؟
-- المكتبة هنا
-- هناك
-- قريبة
-- بعيدة
+- أَيْنَ الْمَكْتَبَةُ؟
+- الْمَكْتَبَةُ هُنَا
+- هُنَاكَ
+- قَرِيبَةٌ
+- بَعِيدَةٌ

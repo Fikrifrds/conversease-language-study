@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Combine اليوم, الساعة, عندي درس, and أدرس العربية.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-اليوم ...
+الْيَوْمُ ...
 الساعة ...
-عندي درس
-أدرس العربية
+عِنْدِي دَرْسٌ
+أَدْرُسُ الْعَرَبِيَّةَ
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Combine هذا/هذه, أنا, أدرس, أعمل, and أحب.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-هذه عائلتي.
+هَذِهِ عَائِلَتِي.
 أنا طالب.
-أدرس العربية.
-أحب القراءة.
+أَدْرُسُ الْعَرَبِيَّةَ.
+أُحِبُّ الْقِرَاءَةَ.
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Jam berapa?"?
+  prompt: Frasa mana yang berarti "Jam berapa?"?
   options:
-  - كم الساعة؟
-  - الساعة الثامنة
-  - الآن
-  correct_answer: كم الساعة؟
+  - كَمِ السَّاعَةُ؟
+  - السَّاعَةُ الثَّامِنَةُ
+  - الْآنَ
+  correct_answer: كَمِ السَّاعَةُ؟
 - key: phrase_2
-  prompt: Which phrase means "Jam delapan."?
+  prompt: Frasa mana yang berarti "Jam delapan."?
   options:
-  - الساعة الثامنة
-  - كم الساعة؟
-  - الآن
-  correct_answer: الساعة الثامنة
+  - السَّاعَةُ الثَّامِنَةُ
+  - كَمِ السَّاعَةُ؟
+  - الْآنَ
+  correct_answer: السَّاعَةُ الثَّامِنَةُ

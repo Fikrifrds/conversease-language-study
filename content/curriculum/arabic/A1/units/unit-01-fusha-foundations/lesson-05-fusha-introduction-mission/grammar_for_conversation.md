@@ -1,15 +1,15 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Combine short memorized patterns to survive a formal beginner conversation.
+Gabungkan pola pendek yang sudah dihafal agar bisa bertahan dalam percakapan pemula.
 
-Examples:
+Contoh:
 
 - اسمي أحمد.
 - أنا من إندونيسيا.
 - لا أفهم.
-- أعد من فضلك.
+- أَعِدْ مِنْ فَضْلِكَ.
 
-Pattern:
+Pola:
 
 ```txt
 greeting + name + origin
@@ -17,5 +17,4 @@ greeting + name + origin
 request + من فضلك
 ```
 
-Short, correct answers are better than long answers with confusion.
-
+Jawaban pendek yang benar lebih baik daripada jawaban panjang yang membingungkan.

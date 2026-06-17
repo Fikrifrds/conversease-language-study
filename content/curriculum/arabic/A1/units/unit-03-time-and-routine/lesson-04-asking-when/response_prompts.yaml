@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Kapan pelajarannya?'
+- prompt: 'Ucapkan dalam bahasa Arab: Kapan pelajarannya?'
   target_response: متى الدرس؟
   acceptable_responses:
   - متى الدرس؟
-- prompt: 'Say: Pada pagi hari'
-  target_response: في الصباح
+- prompt: 'Ucapkan dalam bahasa Arab: Pada pagi hari'
+  target_response: فِي الصَّبَاحِ
   acceptable_responses:
-  - في الصباح
-- prompt: 'Say: Setelah tengah hari'
-  target_response: بعد الظهر
+  - فِي الصَّبَاحِ
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah tengah hari'
+  target_response: بَعْدَ الظُّهْرِ
   acceptable_responses:
-  - بعد الظهر
+  - بَعْدَ الظُّهْرِ

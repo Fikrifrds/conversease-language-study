@@ -4,8 +4,9 @@ title: Saying What You Want
 status: beta
 estimated_minutes: 10
 conversation_situation: saying_what_you_want
-conversation_goal: Say what you want, do not want, and need.
-grammar_summary: Use أريد, لا أريد, and أحتاج with a simple noun.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana
+  tentang apa yang diinginkan atau dibutuhkan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

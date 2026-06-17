@@ -4,8 +4,9 @@ title: A1 Final Conversation
 status: beta
 estimated_minutes: 10
 conversation_situation: a1_final_conversation
-conversation_goal: Complete a short Arabic A1 conversation using core skills from the level.
-grammar_summary: Combine greetings, introductions, schedule, directions, ordering, and help requests.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final:
+  perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

@@ -1,6 +1,6 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أنا + noun for identity and أعمل في + place for work.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
 أنا طالب.
@@ -9,4 +9,4 @@ Use أنا + noun for identity and أعمل في + place for work.
 أدرس في ...
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

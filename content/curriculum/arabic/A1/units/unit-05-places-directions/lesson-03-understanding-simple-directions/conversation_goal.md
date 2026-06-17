@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Understand right, left, forward, beside, and in front of.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju kelas atau perpustakaan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- اذهب يمينًا
-- اذهب يسارًا
-- إلى الأمام
-- بجانب المكتب
-- أمام المدرسة
+- اِذْهَبْ يَمِينًا
+- اِذْهَبْ يَسَارًا
+- إِلَى الْأَمَامِ
+- بِجَانِبِ الْمَكْتَبِ
+- أمام الْمَدْرَسَةُ

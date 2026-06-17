@@ -1,13 +1,13 @@
 prompts:
-  - prompt: Say "Read."
-    target_response: اقرأ
+  - prompt: "Ucapkan dalam bahasa Arab: Bacalah."
+    target_response: اِقرأْ
     acceptable_responses:
-      - اقرأ
-  - prompt: Say "Listen, then repeat."
-    target_response: استمع ثم أعد
+      - اِقرأْ
+  - prompt: "Ucapkan dalam bahasa Arab: Dengarkan, lalu ulangi."
+    target_response: اِستمعْ ثم أَعِدْ
     acceptable_responses:
-      - استمع ثم أعد
-  - prompt: Respond politely to a teacher.
-    target_response: نعم يا معلم
+      - اِستمعْ ثم أَعِدْ
+  - prompt: Respons guru dengan sopan.
+    target_response: نعم يا مُعَلِّم
     acceptable_responses:
-      - نعم يا معلم
+      - نعم يا مُعَلِّم

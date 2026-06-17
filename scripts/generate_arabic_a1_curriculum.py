@@ -47,12 +47,283 @@ TEXT_TRACKER_COLUMNS = [
 ]
 
 
+ARABIC_VOCALIZATION_REPLACEMENTS = {
+    "أحتاج مساعدة": "أَحْتَاجُ مُسَاعَدَةً",
+    "أحتاجُ مساعدةً": "أَحْتَاجُ مُسَاعَدَةً",
+    "أحتاج قلمًا": "أَحْتَاجُ قَلَمًا",
+    "أحتاجُ قلمًا": "أَحْتَاجُ قَلَمًا",
+    "أحتاجُ مساعدةً من فضلك": "أَحْتَاجُ مُسَاعَدَةً مِنْ فَضْلِكَ",
+    "أحب القراءة والكتابة": "أُحِبُّ الْقِرَاءَةَ وَالْكِتَابَةَ",
+    "أحب القراءة": "أُحِبُّ الْقِرَاءَةَ",
+    "أدرس اللغة العربية": "أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ",
+    "أدرسُ العربيةَ": "أَدْرُسُ الْعَرَبِيَّةَ",
+    "أدرسُ العربيةَ اليوم الساعة الثامنة": "أَدْرُسُ الْعَرَبِيَّةَ الْيَوْمَ السَّاعَةَ الثَّامِنَةَ",
+    "أدرسُ العربيةَ الساعة الثامنة صباحًا": "أَدْرُسُ الْعَرَبِيَّةَ السَّاعَةَ الثَّامِنَةَ صَبَاحًا",
+    "أدرس في المركز": "أَدْرُسُ فِي الْمَرْكَزِ",
+    "أدرس في مدرسة": "أَدْرُسُ فِي مَدْرَسَةٍ",
+    "أراجع الكلمات": "أُرَاجِعُ الْكَلِمَاتِ",
+    "أريد أن أذهب إلى الفصل": "أُرِيدُ أَنْ أَذْهَبَ إِلَى الْفَصْلِ",
+    "أريد أن أذهب إلى المكتبة": "أُرِيدُ أَنْ أَذْهَبَ إِلَى الْمَكْتَبَةِ",
+    "أريد هذا": "أُرِيدُ هَذَا",
+    "أريد قهوة": "أُرِيدُ قَهْوَةً",
+    "أريدُ قهوة": "أُرِيدُ قَهْوَةً",
+    "أريدُ كتابًا": "أُرِيدُ كِتَابًا",
+    "أريدُ ماءً": "أُرِيدُ مَاءً",
+    "أريدُ ماءً في المقهى": "أُرِيدُ مَاءً فِي الْمَقْهَى",
+    "أريدُ ماءً من فضلك": "أُرِيدُ مَاءً مِنْ فَضْلِكَ",
+    "أستطيع القراءة": "أَسْتَطِيعُ الْقِرَاءَةَ",
+    "أستطيع الكتابة قليلًا": "أَسْتَطِيعُ الْكِتَابَةَ قَلِيلًا",
+    "أستطيع ...": "أَسْتَطِيعُ ...",
+    "أستمع": "أَسْتَمِعُ",
+    "أعطني مثالًا": "أَعْطِنِي مِثَالًا",
+    "أَعِدْ مِنْ فَضْلِكَ": "أَعِدْ مِنْ فَضْلِكَ",
+    "أعد الرقم من فضلك": "أَعِدِ الرَّقْمَ مِنْ فَضْلِكَ",
+    "أعد مرة أخرى": "أَعِدْ مَرَّةً أُخْرَى",
+    "أعيدي مرة أخرى من فضلك": "أَعِيدِي مَرَّةً أُخْرَى مِنْ فَضْلِكِ",
+    "أعرف": "أَعْرِفُ",
+    "أعمل في مكتب": "أَعْمَلُ فِي مَكْتَبٍ",
+    "أفتح الكتاب": "أَفْتَحُ الْكِتَابَ",
+    "أكتب الجملة الآن": "أَكْتُبُ الْجُمْلَةَ الْآنَ",
+    "أكتبُ اسمي": "أَكْتُبُ اسْمِي",
+    "أكتبُ اسمي: أحمد": "أَكْتُبُ اسْمِي: أَحْمَدُ",
+    "أكتبُ اسمي ...": "أَكْتُبُ اسْمِي ...",
+    "أين أجد الدرس": "أَيْنَ أَجِدُ الدَّرْسَ",
+    "أين المقهى": "أَيْنَ الْمَقْهَى",
+    "أين المكتبة": "أَيْنَ الْمَكْتَبَةُ",
+    "أين المدرسة": "أَيْنَ الْمَدْرَسَةُ",
+    "أين الفصل": "أَيْنَ الْفَصْلُ",
+    "أين تدرس": "أَيْنَ تَدْرُسُ",
+    "أين تريدُ أن تذهبَ بعد الدرسِ": "أَيْنَ تُرِيدُ أَنْ تَذْهَبَ بَعْدَ الدَّرْسِ",
+    "إلى أين تريدين أن تذهبي": "إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي",
+    "إلى الأمام": "إِلَى الْأَمَامِ",
+    "اذهب إلى الأمام": "اِذْهَبْ إِلَى الْأَمَامِ",
+    "اذهب إلى الأمام ثم انعطف يسارًا": "اِذْهَبْ إِلَى الْأَمَامِ ثُمَّ اِنْعَطِفْ يَسَارًا",
+    "اذهب يمينًا": "اِذْهَبْ يَمِينًا",
+    "اذهب يسارًا": "اِذْهَبْ يَسَارًا",
+    "اذهبي يمينًا ثم إلى الأمام": "اِذْهَبِي يَمِينًا ثُمَّ إِلَى الْأَمَامِ",
+    "استمع": "اِسْتَمِعْ",
+    "استمعي ببطء": "اِسْتَمِعِي بِبُطْءٍ",
+    "استمعي ثم تكلمي": "اِسْتَمِعِي ثُمَّ تَكَلَّمِي",
+    "اسمي": "اِسْمِي",
+    "اسمي أحمد": "اِسْمِي أَحْمَدُ",
+    "اسمي ...": "اِسْمِي ...",
+    "افتح الصفحة": "اِفْتَحِ الصَّفْحَةَ",
+    "افتح الصفحة الثانية": "اِفْتَحِ الصَّفْحَةَ الثَّانِيَةَ",
+    "افتح الكتاب": "اِفْتَحِ الْكِتَابَ",
+    "افتح الكتاب من فضلك": "اِفْتَحِ الْكِتَابَ مِنْ فَضْلِكَ",
+    "اكتب الجملة": "اُكْتُبِ الْجُمْلَةَ",
+    "اكتبي الجملة": "اُكْتُبِي الْجُمْلَةَ",
+    "اكتب من فضلك": "اُكْتُبْ مِنْ فَضْلِكَ",
+    "الآن": "الْآنَ",
+    "البيت": "الْبَيْتُ",
+    "التاسعة": "التَّاسِعَةُ",
+    "الثامنة": "الثَّامِنَةُ",
+    "الثانية": "الثَّانِيَةُ",
+    "الحرف باء": "الْحَرْفُ بَاءٌ",
+    "الحساب من فضلك": "الْحِسَابُ مِنْ فَضْلِكَ",
+    "الدرس الساعة التاسعة": "الدَّرْسُ السَّاعَةَ التَّاسِعَةَ",
+    "الدرس الساعة الثامنة": "الدَّرْسُ السَّاعَةَ الثَّامِنَةَ",
+    "الدرس في الصباح": "الدَّرْسُ فِي الصَّبَاحِ",
+    "الرقم صحيح": "الرَّقْمُ صَحِيحٌ",
+    "الساعة الثامنة": "السَّاعَةُ الثَّامِنَةُ",
+    "الساعة الثامنة صباحًا": "السَّاعَةُ الثَّامِنَةُ صَبَاحًا",
+    "السعر خمسة ريالات": "السِّعْرُ خَمْسَةُ رِيَالَاتٍ",
+    "السعر مناسب": "السِّعْرُ مُنَاسِبٌ",
+    "السعرُ ريالان": "السِّعْرُ رِيَالَانِ",
+    "السعرُ مناسبٌ": "السِّعْرُ مُنَاسِبٌ",
+    "السوق": "السُّوقُ",
+    "السوق بعيد": "السُّوقُ بَعِيدٌ",
+    "الصباح": "الصَّبَاحُ",
+    "الصفحة الثانية": "الصَّفْحَةُ الثَّانِيَةُ",
+    "العربية": "الْعَرَبِيَّةُ",
+    "الفصل بجانب المكتبة": "الْفَصْلُ بِجَانِبِ الْمَكْتَبَةِ",
+    "الكتاب": "الْكِتَابُ",
+    "الكلمة": "الْكَلِمَةُ",
+    "المركز": "الْمَرْكَزُ",
+    "المدرسة": "الْمَدْرَسَةُ",
+    "المدرسة قريبة": "الْمَدْرَسَةُ قَرِيبَةٌ",
+    "المقهى": "الْمَقْهَى",
+    "المقهى بجانب المكتبة": "الْمَقْهَى بِجَانِبِ الْمَكْتَبَةِ",
+    "المقهى هنا": "الْمَقْهَى هُنَا",
+    "المكتبة": "الْمَكْتَبَةُ",
+    "المكتبة هناك": "الْمَكْتَبَةُ هُنَاكَ",
+    "المكتبة هنا": "الْمَكْتَبَةُ هُنَا",
+    "المكتب": "الْمَكْتَبُ",
+    "الموجود": "الْمَوْجُودُ",
+    "اليوم": "الْيَوْمُ",
+    "اليوم الأربعاء": "الْيَوْمُ الْأَرْبِعَاءُ",
+    "اليوم الإثنين": "الْيَوْمُ الْإِثْنَيْنِ",
+    "اليوم ...": "الْيَوْمُ ...",
+    "باء": "بَاءٌ",
+    "بجانب المكتب": "بِجَانِبِ الْمَكْتَبِ",
+    "بجانب المكتبة": "بِجَانِبِ الْمَكْتَبَةِ",
+    "بعد الدرس": "بَعْدَ الدَّرْسِ",
+    "بعد الظهر": "بَعْدَ الظُّهْرِ",
+    "بعيدة": "بَعِيدَةٌ",
+    "بريدي الإلكتروني": "بَرِيدِي الْإِلِكْتُرُونِيُّ",
+    "بريدي الإلكتروني: أحمد نقطة واحد": "بَرِيدِي الْإِلِكْتُرُونِيُّ: أَحْمَدُ نُقْطَةٌ وَاحِدٌ",
+    "ببطء من فضلك": "بِبُطْءٍ مِنْ فَضْلِكَ",
+    "تفضل": "تَفَضَّلْ",
+    "تفضّلْ": "تَفَضَّلْ",
+    "ثم": "ثُمَّ",
+    "ثم أعمل": "ثُمَّ أَعْمَلُ",
+    "ثم اذهب يمينًا": "ثُمَّ اِذْهَبْ يَمِينًا",
+    "ثم اذهب يسارًا عند الباب": "ثُمَّ اِذْهَبْ يَسَارًا عِنْدَ الْبَابِ",
+    "ثم ماذا": "ثُمَّ مَاذَا",
+    "جيد": "جَيِّدٌ",
+    "جيد جدًا": "جَيِّدٌ جِدًّا",
+    "حسنًا": "حَسَنًا",
+    "حسنًا، شكرًا": "حَسَنًا، شُكْرًا",
+    "حسنًا، مرة أخرى": "حَسَنًا، مَرَّةً أُخْرَى",
+    "حدثيني عن نفسك": "حَدِّثِينِي عَنْ نَفْسِكِ",
+    "حرف الألف": "حَرْفُ الْأَلِفِ",
+    "حرف الحاء": "حَرْفُ الْحَاءِ",
+    "رقمي": "رَقْمِي",
+    "رقمي واحدٌ، اثنان، ثلاثة": "رَقْمِي وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ",
+    "رقمي واحدٌ، اثنان، ثلاثة، أربعة": "رَقْمِي وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ، أَرْبَعَةٌ",
+    "رخيص": "رَخِيصٌ",
+    "سعرُ القلمِ": "سِعْرُ الْقَلَمِ",
+    "سعرُ الماءِ ريالان": "سِعْرُ الْمَاءِ رِيَالَانِ",
+    "سعرُه خمسةُ ريالاتٍ": "سِعْرُهُ خَمْسَةُ رِيَالَاتٍ",
+    "شكرًا": "شُكْرًا",
+    "شكرًا جزيلًا": "شُكْرًا جَزِيلًا",
+    "شكرًا على المساعدة": "شُكْرًا عَلَى الْمُسَاعَدَةِ",
+    "صباحًا": "صَبَاحًا",
+    "غالٍ": "غَالٍ",
+    "غدًا الثلاثاء": "غَدًا الثُّلَاثَاءُ",
+    "فقط": "فَقَطْ",
+    "في الصباح": "فِي الصَّبَاحِ",
+    "في يوم": "فِي يَوْمِ",
+    "قبل الدرس": "قَبْلَ الدَّرْسِ",
+    "قريبة": "قَرِيبَةٌ",
+    "قليلًا": "قَلِيلًا",
+    "كم السعر": "كَمِ السِّعْرُ",
+    "كم السعرُ": "كَمِ السِّعْرُ",
+    "كم الساعة": "كَمِ السَّاعَةُ",
+    "كم الساعة الآن": "كَمِ السَّاعَةُ الْآنَ",
+    "كم سعرُ القلمِ": "كَمْ سِعْرُ الْقَلَمِ",
+    "كم قلمًا تريدُ": "كَمْ قَلَمًا تُرِيدُ",
+    "كتاب": "كِتَابٌ",
+    "كيف أذهب": "كَيْفَ أَذْهَبُ",
+    "كيف أذهب إلى الفصل": "كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ",
+    "كيف أذهب إلى المكتبة": "كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ",
+    "كيف أذهب إلى المقهى": "كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى",
+    "كيف أذهب إليه": "كَيْفَ أَذْهَبُ إِلَيْهِ",
+    "لا أريد قهوة": "لَا أُرِيدُ قَهْوَةً",
+    "لا أريدُ قهوةً": "لَا أُرِيدُ قَهْوَةً",
+    "لا أحب الانتظار": "لَا أُحِبُّ الِانْتِظَارَ",
+    "لا أستطيع الآن": "لَا أَسْتَطِيعُ الْآنَ",
+    "لا أعرف الكلمة": "لَا أَعْرِفُ الْكَلِمَةَ",
+    "لا أفهم": "لَا أَفْهَمُ",
+    "لا أفهم الكلمة": "لَا أَفْهَمُ الْكَلِمَةَ",
+    "لا بأس": "لَا بَأْسَ",
+    "لا مشكلة": "لَا مُشْكِلَةَ",
+    "ماذا تعمل": "مَاذَا تَعْمَلُ",
+    "ماذا تحبين": "مَاذَا تُحِبِّينَ",
+    "ماذا تحتاج": "مَاذَا تَحْتَاجُ",
+    "ماذا تدرس": "مَاذَا تَدْرُسُ",
+    "ماذا تدرسين": "مَاذَا تَدْرُسِينَ",
+    "ماذا تفعل": "مَاذَا تَفْعَلُ",
+    "ماذا تفعل صباحًا": "مَاذَا تَفْعَلُ صَبَاحًا",
+    "ماذا تفعل في الدرس": "مَاذَا تَفْعَلُ فِي الدَّرْسِ",
+    "ماذا تريدُ": "مَاذَا تُرِيدُ",
+    "ماذا تريدينَ": "مَاذَا تُرِيدِينَ",
+    "ماذا يعني هذا": "مَاذَا يَعْنِي هَذَا",
+    "ما اسمُكَ": "مَا اسْمُكَ",
+    "ما بريدك الإلكتروني": "مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ",
+    "ما رقمُ هاتفِكَ": "مَا رَقْمُ هَاتِفِكَ",
+    "ما معنى": "مَا مَعْنَى",
+    "مرة أخرى": "مَرَّةً أُخْرَى",
+    "مرحبًا": "مَرْحَبًا",
+    "مساءً": "مَسَاءً",
+    "مناسب": "مُنَاسِبٌ",
+    "من أين أنت": "مِنْ أَيْنَ أَنْتَ",
+    "من أين أنتَ": "مِنْ أَيْنَ أَنْتَ",
+    "من هذا": "مَنْ هَذَا",
+    "نعم": "نَعَمْ",
+    "نعم، آخذُ واحدًا": "نَعَمْ، آخُذُ وَاحِدًا",
+    "نعم، أدرسُ العربيةَ": "نَعَمْ، أَدْرُسُ الْعَرَبِيَّةَ",
+    "نعم، أعمل": "نَعَمْ، أَعْمَلُ",
+    "نعم، أفهم": "نَعَمْ، أَفْهَمُ",
+    "نعم، الرقم صحيح": "نَعَمْ، الرَّقْمُ صَحِيحٌ",
+    "نعم، المقهى هنا": "نَعَمْ، الْمَقْهَى هُنَا",
+    "نعم، تفضّل": "نَعَمْ، تَفَضَّلْ",
+    "نعم، عندي درس يوم الثلاثاء": "نَعَمْ، عِنْدِي دَرْسٌ يَوْمَ الثُّلَاثَاءِ",
+    "نعم، موجود": "نَعَمْ، مَوْجُودٌ",
+    "نعم، واضح": "نَعَمْ، وَاضِحٌ",
+    "نعم، هذا صحيح": "نَعَمْ، هَذَا صَحِيحٌ",
+    "نعم، هي قريبة": "نَعَمْ، هِيَ قَرِيبَةٌ",
+    "نعم، هذه عائلتي": "نَعَمْ، هَذِهِ عَائِلَتِي",
+    "نقطة": "نُقْطَةٌ",
+    "هذا أبي": "هَذَا أَبِي",
+    "هذا أخي": "هَذَا أَخِي",
+    "هذا حرف": "هَذَا حَرْفُ",
+    "هذا حرف الألف، وهذا حرف الحاء": "هَذَا حَرْفُ الْأَلِفِ، وَهَذَا حَرْفُ الْحَاءِ",
+    "هذا صحيح": "هَذَا صَحِيحٌ",
+    "هل تساعدني": "هَلْ تُسَاعِدُنِي",
+    "هل تساعدينني": "هَلْ تُسَاعِدِينَنِي",
+    "هل تدرس العربية": "هَلْ تَدْرُسُ الْعَرَبِيَّةَ",
+    "هل تدرسين": "هَلْ تَدْرُسِينَ",
+    "هل تحتاج شيئًا آخر": "هَلْ تَحْتَاجُ شَيْئًا آخَرَ",
+    "هل تفهمين": "هَلْ تَفْهَمِينَ",
+    "هل تكتبه مرة أخرى من فضلك": "هَلْ تَكْتُبُهُ مَرَّةً أُخْرَى مِنْ فَضْلِكَ",
+    "هل تستطيعين الكتابة بالعربية": "هَلْ تَسْتَطِيعِينَ الْكِتَابَةَ بِالْعَرَبِيَّةِ",
+    "هل تريد قهوة أيضًا": "هَلْ تُرِيدُ قَهْوَةً أَيْضًا",
+    "هل تريدُ": "هَلْ تُرِيدُ",
+    "هل تأخذينَ واحدًا": "هَلْ تَأْخُذِينَ وَاحِدًا",
+    "هل عندك درس غدًا": "هَلْ عِنْدَكَ دَرْسٌ غَدًا",
+    "هل عندكم": "هَلْ عِنْدَكُمْ",
+    "هل عندكم شاي": "هَلْ عِنْدَكُمْ شَايٌ",
+    "هل عندكم قلم": "هَلْ عِنْدَكُمْ قَلَمٌ",
+    "هل قلت باء": "هَلْ قُلْتَ بَاءً",
+    "هل المقهى هنا": "هَلِ الْمَقْهَى هُنَا",
+    "هل هذا صحيح": "هَلْ هَذَا صَحِيحٌ",
+    "هل هذا واضح": "هَلْ هَذَا وَاضِحٌ",
+    "هل هي قريبة": "هَلْ هِيَ قَرِيبَةٌ",
+    "هذه أمي": "هَذِهِ أُمِّي",
+    "هذه الكلمة تعني": "هَذِهِ الْكَلِمَةُ تَعْنِي",
+    "هذه عائلتي": "هَذِهِ عَائِلَتِي",
+    "هو بجانب المكتبة": "هُوَ بِجَانِبِ الْمَكْتَبَةِ",
+    "هي بجانب المكتب": "هِيَ بِجَانِبِ الْمَكْتَبِ",
+    "هناك": "هُنَاكَ",
+    "هنا": "هُنَا",
+    "واضح": "وَاضِحٌ",
+    "واحد، اثنان، ثلاثة": "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ",
+    "واحد، اثنان، ثلاثة، أربعة": "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ، أَرْبَعَةٌ",
+    "واحدًا": "وَاحِدًا",
+    "وماذا تفعل بعد الدرس": "وَمَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ",
+    "وماذا تفعلين بعد الدرس": "وَمَاذَا تَفْعَلِينَ بَعْدَ الدَّرْسِ",
+    "ومن هذه": "وَمَنْ هَذِهِ",
+    "وأين": "وَأَيْنَ",
+    "وأين السوق": "وَأَيْنَ السُّوقُ",
+    "وشكرًا": "وَشُكْرًا",
+    "شرطة": "شَرْطَةٌ",
+    "آخذُ واحدًا": "آخُذُ وَاحِدًا",
+    "آخذُ واحدًا، شكرًا": "آخُذُ وَاحِدًا، شُكْرًا",
+    "آسف": "آسِفٌ",
+    "آسفة": "آسِفَةٌ",
+    "عندي درس": "عِنْدِي دَرْسٌ",
+    "عند الباب": "عِنْدَ الْبَابِ",
+    "على الرحب والسعة": "عَلَى الرَّحْبِ وَالسَّعَةِ",
+    "عذرًا": "عُذْرًا",
+}
+
+
+def vocalize_arabic(text: str) -> str:
+    vocalized = text
+    for plain, marked in sorted(
+        ARABIC_VOCALIZATION_REPLACEMENTS.items(), key=lambda item: len(item[0]), reverse=True
+    ):
+        vocalized = vocalized.replace(plain, marked)
+    return vocalized
+
+
 def phrase(text: str, meaning: str, usage: str) -> dict[str, str]:
-    return {"phrase": text, "meaning": meaning, "usage": usage}
+    return {"phrase": vocalize_arabic(text), "meaning": meaning, "usage": usage}
 
 
 def line(speaker: str, text: str, translation: str) -> tuple[str, str, str]:
-    return (speaker, text, translation)
+    return (speaker, vocalize_arabic(text), translation)
 
 
 def lesson(
@@ -74,10 +345,26 @@ def lesson(
         "situation": situation,
         "goal": goal,
         "grammar": grammar,
-        "patterns": patterns,
+        "patterns": [vocalize_arabic(pattern) for pattern in patterns],
         "phrases": phrases,
         "dialogue": dialogue,
     }
+
+
+def learner_goal_id(item: dict[str, Any]) -> str:
+    return f"Latih percakapan Arab sederhana untuk situasi ini: {item['situation']}"
+
+
+def grammar_summary_id(item: dict[str, Any]) -> str:
+    return "Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman."
+
+
+def usage_note_id(entry: dict[str, str]) -> str:
+    return f"Gunakan saat ingin mengatakan: {entry['meaning']}"
+
+
+def focus_note_id(entry: dict[str, str]) -> str:
+    return f"Latihan frasa: {entry['meaning']}"
 
 
 UNIT_PLANS: list[dict[str, Any]] = [
@@ -131,17 +418,17 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Spelling Your Name",
                 "Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.",
                 "Spell a short name in Arabic and ask whether the spelling is correct.",
-                "Use أكتب اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.",
-                ["أكتب اسمي: ...", "هذا حرف ...", "هل هذا صحيح؟"],
+                "Use أكتبُ اسمي + name to say how you write your name, and هل هذا صحيح؟ to check.",
+                ["أكتبُ اسمي: ...", "هذا حرف ...", "هل هذا صحيح؟"],
                 [
-                    phrase("كيف تكتب اسمك؟", "Bagaimana kamu menulis namamu?", "Ask someone to spell or write a name."),
-                    phrase("أكتب اسمي ...", "Saya menulis nama saya ...", "Say how you write your name."),
+                    phrase("كيف تكتبُ اسمَكَ؟", "Bagaimana kamu menulis namamu?", "Ask someone to spell or write a name."),
+                    phrase("أكتبُ اسمي ...", "Saya menulis nama saya ...", "Say how you write your name."),
                     phrase("هذا حرف ...", "Ini huruf ...", "Identify one Arabic letter."),
                     phrase("هل هذا صحيح؟", "Apakah ini benar?", "Check spelling politely."),
                 ],
                 [
-                    line("Muallim", "كيف تكتب اسمك؟", "Bagaimana kamu menulis namamu?"),
-                    line("Ahmad", "أكتب اسمي: أحمد.", "Saya menulis nama saya: Ahmad."),
+                    line("Muallim", "كيف تكتبُ اسمَكَ؟", "Bagaimana kamu menulis namamu?"),
+                    line("Ahmad", "أكتبُ اسمي: أحمد.", "Saya menulis nama saya: Ahmad."),
                     line("Muallim", "هذا حرف الألف، وهذا حرف الحاء.", "Ini huruf alif, dan ini huruf ha."),
                     line("Ahmad", "هل هذا صحيح؟", "Apakah ini benar?"),
                     line("Muallim", "نعم، هذا صحيح.", "Ya, ini benar."),
@@ -156,15 +443,15 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Use رقمي + number for 'my number is' and أعد الرقم من فضلك for repetition.",
                 ["رقمي ...", "أعد الرقم من فضلك.", "الرقم صحيح."],
                 [
-                    phrase("ما رقم هاتفك؟", "Berapa nomor teleponmu?", "Ask for a phone number."),
+                    phrase("ما رقمُ هاتفِكَ؟", "Berapa nomor teleponmu?", "Ask for a phone number."),
                     phrase("رقمي ...", "Nomor saya ...", "Say your number."),
                     phrase("واحد، اثنان، ثلاثة", "Satu, dua, tiga", "Start counting clearly."),
                     phrase("أعد الرقم من فضلك", "Ulangi nomornya, tolong.", "Ask for repetition."),
                     phrase("الرقم صحيح", "Nomornya benar.", "Confirm the number."),
                 ],
                 [
-                    line("Maryam", "ما رقم هاتفك؟", "Berapa nomor teleponmu?"),
-                    line("Khalid", "رقمي واحد، اثنان، ثلاثة، أربعة.", "Nomor saya satu, dua, tiga, empat."),
+                    line("Maryam", "ما رقمُ هاتفِكَ؟", "Berapa nomor teleponmu?"),
+                    line("Khalid", "رقمي واحدٌ، اثنان، ثلاثة، أربعة.", "Nomor saya satu, dua, tiga, empat."),
                     line("Maryam", "أعد الرقم من فضلك.", "Ulangi nomornya, tolong."),
                     line("Khalid", "واحد، اثنان، ثلاثة، أربعة.", "Satu, dua, tiga, empat."),
                     line("Maryam", "نعم، الرقم صحيح.", "Ya, nomornya benar."),
@@ -222,22 +509,22 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Contact Details Mission",
                 "Kamu memperkenalkan diri di kelas baru dan memberikan informasi kontak sederhana.",
                 "Combine name, spelling, number, and email in one short formal exchange.",
-                "Combine اسمي, أكتب اسمي, رقمي, and بريدي الإلكتروني in one conversation.",
-                ["اسمي ...", "أكتب اسمي ...", "رقمي ...", "بريدي الإلكتروني ..."],
+                "Combine اسمي, أكتبُ اسمي, رقمي, and بريدي الإلكتروني in one conversation.",
+                ["اسمي ...", "أكتبُ اسمي ...", "رقمي ...", "بريدي الإلكتروني ..."],
                 [
                     phrase("اسمي ...", "Nama saya ...", "Start your contact details."),
-                    phrase("أكتب اسمي ...", "Saya menulis nama saya ...", "Spell your name."),
+                    phrase("أكتبُ اسمي ...", "Saya menulis nama saya ...", "Spell your name."),
                     phrase("رقمي ...", "Nomor saya ...", "Give your number."),
                     phrase("بريدي الإلكتروني ...", "Email saya ...", "Give your email."),
                     phrase("هل هذا واضح؟", "Apakah ini jelas?", "Check understanding."),
                 ],
                 [
-                    line("Muallimah", "ما اسمك؟", "Siapa namamu?"),
+                    line("Muallimah", "ما اسمُكَ؟", "Siapa namamu?"),
                     line("Ahmad", "اسمي أحمد.", "Nama saya Ahmad."),
-                    line("Muallimah", "كيف تكتب اسمك؟", "Bagaimana kamu menulis namamu?"),
-                    line("Ahmad", "أكتب اسمي: أحمد.", "Saya menulis nama saya: Ahmad."),
-                    line("Muallimah", "ما رقم هاتفك؟", "Berapa nomor teleponmu?"),
-                    line("Ahmad", "رقمي واحد، اثنان، ثلاثة، أربعة.", "Nomor saya satu, dua, tiga, empat."),
+                    line("Muallimah", "كيف تكتبُ اسمَكَ؟", "Bagaimana kamu menulis namamu?"),
+                    line("Ahmad", "أكتبُ اسمي: أحمد.", "Saya menulis nama saya: Ahmad."),
+                    line("Muallimah", "ما رقمُ هاتفِكَ؟", "Berapa nomor teleponmu?"),
+                    line("Ahmad", "رقمي واحدٌ، اثنان، ثلاثة، أربعة.", "Nomor saya satu, dua, tiga, empat."),
                     line("Muallimah", "هل هذا واضح؟", "Apakah ini jelas?"),
                     line("Ahmad", "نعم، واضح.", "Ya, jelas."),
                 ],
@@ -303,19 +590,19 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.",
                 "Say a few simple daily actions in order.",
                 "Use present verbs like أقرأ, أكتب, أدرس, and ثم to connect actions.",
-                ["أقرأ", "أكتب", "أدرس العربية", "ثم أعمل"],
+                ["أقرأ", "أكتب", "أدرسُ العربيةَ", "ثم أعمل"],
                 [
                     phrase("ماذا تفعل صباحًا؟", "Apa yang kamu lakukan pagi hari?", "Ask about a morning routine."),
                     phrase("أقرأ", "Saya membaca.", "Say a reading action."),
                     phrase("أكتب", "Saya menulis.", "Say a writing action."),
-                    phrase("أدرس العربية", "Saya belajar bahasa Arab.", "Say what you study."),
+                    phrase("أدرسُ العربيةَ", "Saya belajar bahasa Arab.", "Say what you study."),
                     phrase("ثم أعمل", "Lalu saya bekerja.", "Connect the next action."),
                 ],
                 [
                     line("Layla", "ماذا تفعل صباحًا؟", "Apa yang kamu lakukan pagi hari?"),
                     line("Zayd", "أقرأ وأكتب.", "Saya membaca dan menulis."),
                     line("Layla", "هل تدرس العربية؟", "Apakah kamu belajar bahasa Arab?"),
-                    line("Zayd", "نعم، أدرس العربية صباحًا.", "Ya, saya belajar bahasa Arab pagi hari."),
+                    line("Zayd", "نعم، أدرسُ العربيةَ صباحًا.", "Ya, saya belajar bahasa Arab pagi hari."),
                     line("Layla", "ثم ماذا تفعل؟", "Lalu apa yang kamu lakukan?"),
                     line("Zayd", "ثم أعمل.", "Lalu saya bekerja."),
                 ],
@@ -350,20 +637,20 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Routine and Time Mission",
                 "Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.",
                 "Combine day, time, and routine phrases in one short conversation.",
-                "Combine اليوم, الساعة, عندي درس, and أدرس العربية.",
-                ["اليوم ...", "الساعة ...", "عندي درس", "أدرس العربية"],
+                "Combine اليوم, الساعة, عندي درس, and أدرسُ العربيةَ.",
+                ["اليوم ...", "الساعة ...", "عندي درس", "أدرسُ العربيةَ"],
                 [
                     phrase("اليوم ...", "Hari ini ...", "Start with the day."),
                     phrase("الساعة ...", "Jam ...", "Say a time."),
                     phrase("عندي درس", "Saya punya pelajaran.", "Mention a scheduled lesson."),
-                    phrase("أدرس العربية", "Saya belajar bahasa Arab.", "Mention the activity."),
+                    phrase("أدرسُ العربيةَ", "Saya belajar bahasa Arab.", "Mention the activity."),
                     phrase("بعد الدرس", "Setelah pelajaran", "Continue the schedule."),
                 ],
                 [
                     line("Muallim", "أي يوم اليوم؟", "Hari apa hari ini?"),
                     line("Layla", "اليوم الأربعاء.", "Hari ini Rabu."),
                     line("Muallim", "متى تدرسين العربية؟", "Kapan kamu belajar bahasa Arab?"),
-                    line("Layla", "أدرس العربية الساعة الثامنة صباحًا.", "Saya belajar bahasa Arab jam delapan pagi."),
+                    line("Layla", "أدرسُ العربيةَ الساعة الثامنة صباحًا.", "Saya belajar bahasa Arab jam delapan pagi."),
                     line("Muallim", "وماذا تفعلين بعد الدرس؟", "Dan apa yang kamu lakukan setelah pelajaran?"),
                     line("Layla", "أقرأ وأكتب.", "Saya membaca dan menulis."),
                 ],
@@ -421,7 +708,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                     line("Khalid", "أين تدرس؟", "Di mana kamu belajar?"),
                     line("Zayd", "أدرس في مدرسة.", "Saya belajar di sekolah."),
                     line("Khalid", "ماذا تدرس؟", "Apa yang kamu pelajari?"),
-                    line("Zayd", "أدرس العربية.", "Saya belajar bahasa Arab."),
+                    line("Zayd", "أدرسُ العربيةَ.", "Saya belajar bahasa Arab."),
                 ],
             ),
             lesson(
@@ -478,11 +765,11 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.",
                 "Combine family, work/study, and likes in one short formal conversation.",
                 "Combine هذا/هذه, أنا, أدرس, أعمل, and أحب.",
-                ["هذه عائلتي.", "أنا طالب.", "أدرس العربية.", "أحب القراءة."],
+                ["هذه عائلتي.", "أنا طالب.", "أدرسُ العربيةَ.", "أحب القراءة."],
                 [
                     phrase("هذه عائلتي", "Ini keluarga saya.", "Introduce family."),
                     phrase("أنا طالب", "Saya pelajar.", "Say study identity."),
-                    phrase("أدرس العربية", "Saya belajar bahasa Arab.", "Say study topic."),
+                    phrase("أدرسُ العربيةَ", "Saya belajar bahasa Arab.", "Say study topic."),
                     phrase("أعمل في مكتب", "Saya bekerja di kantor.", "Say work place."),
                     phrase("أحب القراءة", "Saya suka membaca.", "Say a preference."),
                 ],
@@ -490,7 +777,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                     line("Muallimah", "حدثيني عن نفسك.", "Ceritakan tentang dirimu."),
                     line("Layla", "اسمي ليلى، وهذه عائلتي.", "Nama saya Layla, dan ini keluarga saya."),
                     line("Muallimah", "هل تدرسين؟", "Apakah kamu belajar?"),
-                    line("Layla", "نعم، أدرس العربية.", "Ya, saya belajar bahasa Arab."),
+                    line("Layla", "نعم، أدرسُ العربيةَ.", "Ya, saya belajar bahasa Arab."),
                     line("Muallimah", "ماذا تحبين؟", "Apa yang kamu sukai?"),
                     line("Layla", "أحب القراءة والكتابة.", "Saya suka membaca dan menulis."),
                 ],
@@ -636,9 +923,9 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
                 "Order water or coffee using polite Arabic phrases.",
                 "Use أريد + noun and من فضلك for a polite request.",
-                ["أريد ماءً", "أريد قهوة", "من فضلك", "هل عندكم ...؟"],
+                ["أريدُ ماءً", "أريد قهوة", "من فضلك", "هل عندكم ...؟"],
                 [
-                    phrase("أريد ماءً", "Saya ingin air.", "Order water."),
+                    phrase("أريدُ ماءً", "Saya ingin air.", "Order water."),
                     phrase("أريد قهوة", "Saya ingin kopi.", "Order coffee."),
                     phrase("من فضلك", "Tolong.", "Make it polite."),
                     phrase("هل عندكم شاي؟", "Apakah kalian punya teh?", "Ask availability."),
@@ -646,9 +933,9 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 ],
                 [
                     line("Khalid", "مرحبًا.", "Halo."),
-                    line("Layla", "مرحبًا، ماذا تريد؟", "Halo, apa yang kamu inginkan?"),
-                    line("Khalid", "أريد ماءً من فضلك.", "Saya ingin air, tolong."),
-                    line("Layla", "تفضل.", "Silakan."),
+                    line("Layla", "مرحبًا، ماذا تريدُ؟", "Halo, apa yang kamu inginkan?"),
+                    line("Khalid", "أريدُ ماءً من فضلك.", "Saya ingin air, tolong."),
+                    line("Layla", "تفضّلْ.", "Silakan."),
                     line("Khalid", "شكرًا.", "Terima kasih."),
                 ],
             ),
@@ -658,21 +945,21 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Asking About Prices",
                 "Kamu melihat barang sederhana dan perlu menanyakan harganya.",
                 "Ask a price and understand a simple answer.",
-                "Use كم السعر؟ for price and السعر + number + currency for answer.",
-                ["كم السعر؟", "السعر خمسة ريالات", "غالٍ", "رخيص", "مناسب"],
+                "Use كم السعرُ؟ for price and السعر + number + currency for answer.",
+                ["كم السعرُ؟", "السعر خمسة ريالات", "غالٍ", "رخيص", "مناسب"],
                 [
-                    phrase("كم السعر؟", "Berapa harganya?", "Ask price."),
+                    phrase("كم السعرُ؟", "Berapa harganya?", "Ask price."),
                     phrase("السعر خمسة ريالات", "Harganya lima riyal.", "Say a price."),
                     phrase("غالٍ", "Mahal", "Describe expensive."),
                     phrase("رخيص", "Murah", "Describe cheap."),
                     phrase("مناسب", "Cocok/pas", "Say price is acceptable."),
                 ],
                 [
-                    line("Maryam", "كم سعر القلم؟", "Berapa harga penanya?"),
-                    line("Zayd", "سعره خمسة ريالات.", "Harganya lima riyal."),
-                    line("Maryam", "السعر مناسب.", "Harganya cocok."),
-                    line("Zayd", "هل تأخذين واحدًا؟", "Apakah kamu mengambil satu?"),
-                    line("Maryam", "نعم، آخذ واحدًا.", "Ya, saya ambil satu."),
+                    line("Maryam", "كم سعرُ القلمِ؟", "Berapa harga penanya?"),
+                    line("Zayd", "سعرُه خمسةُ ريالاتٍ.", "Harganya lima riyal."),
+                    line("Maryam", "السعرُ مناسبٌ.", "Harganya cocok."),
+                    line("Zayd", "هل تأخذينَ واحدًا؟", "Apakah kamu mengambil satu?"),
+                    line("Maryam", "نعم، آخذُ واحدًا.", "Ya, saya ambil satu."),
                 ],
             ),
             lesson(
@@ -681,21 +968,21 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Buying a Simple Item",
                 "Kamu membeli alat tulis sederhana untuk kelas.",
                 "Ask for an item, say you want one, and close the purchase.",
-                "Use هل عندكم + noun and آخذ واحدًا for taking one item.",
-                ["هل عندكم قلم؟", "نعم، موجود.", "أريد هذا.", "آخذ واحدًا."],
+                "Use هل عندكم + noun and آخذُ واحدًا for taking one item.",
+                ["هل عندكم قلم؟", "نعم، موجود.", "أريدُ هذا.", "آخذُ واحدًا."],
                 [
                     phrase("هل عندكم قلم؟", "Apakah kalian punya pena?", "Ask item availability."),
                     phrase("نعم، موجود", "Ya, ada.", "Confirm availability."),
                     phrase("أريد هذا", "Saya ingin ini.", "Choose an item."),
-                    phrase("آخذ واحدًا", "Saya ambil satu.", "Buy one."),
+                    phrase("آخذُ واحدًا", "Saya ambil satu.", "Buy one."),
                     phrase("الحساب من فضلك", "Tagihannya, tolong.", "Ask for the bill."),
                 ],
                 [
                     line("Ahmad", "هل عندكم قلم؟", "Apakah kalian punya pena?"),
                     line("Noura", "نعم، موجود.", "Ya, ada."),
-                    line("Ahmad", "أريد هذا.", "Saya ingin ini."),
-                    line("Noura", "كم قلمًا تريد؟", "Berapa pena yang kamu inginkan?"),
-                    line("Ahmad", "آخذ واحدًا.", "Saya ambil satu."),
+                    line("Ahmad", "أريدُ هذا.", "Saya ingin ini."),
+                    line("Noura", "كم قلمًا تريدُ؟", "Berapa pena yang kamu inginkan?"),
+                    line("Ahmad", "آخذُ واحدًا.", "Saya ambil satu."),
                 ],
             ),
             lesson(
@@ -705,21 +992,21 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.",
                 "Say what you want, do not want, and need.",
                 "Use أريد, لا أريد, and أحتاج with a simple noun.",
-                ["ماذا تريد؟", "أريد ...", "لا أريد ...", "أحتاج ..."],
+                ["ماذا تريدُ؟", "أريد ...", "لا أريد ...", "أحتاج ..."],
                 [
-                    phrase("ماذا تريد؟", "Apa yang kamu inginkan?", "Ask what someone wants."),
-                    phrase("أريد كتابًا", "Saya ingin buku.", "Say a wanted item."),
+                    phrase("ماذا تريدُ؟", "Apa yang kamu inginkan?", "Ask what someone wants."),
+                    phrase("أريدُ كتابًا", "Saya ingin buku.", "Say a wanted item."),
                     phrase("لا أريد قهوة", "Saya tidak ingin kopi.", "Say what you do not want."),
                     phrase("أحتاج قلمًا", "Saya butuh pena.", "Say a need."),
                     phrase("فقط", "Saja", "Limit the request."),
                 ],
                 [
-                    line("Layla", "ماذا تريد؟", "Apa yang kamu inginkan?"),
-                    line("Khalid", "أريد كتابًا.", "Saya ingin buku."),
+                    line("Layla", "ماذا تريدُ؟", "Apa yang kamu inginkan?"),
+                    line("Khalid", "أريدُ كتابًا.", "Saya ingin buku."),
                     line("Layla", "هل تريد قهوة أيضًا؟", "Apakah kamu juga ingin kopi?"),
-                    line("Khalid", "لا أريد قهوة.", "Saya tidak ingin kopi."),
+                    line("Khalid", "لا أريدُ قهوةً.", "Saya tidak ingin kopi."),
                     line("Layla", "هل تحتاج شيئًا آخر؟", "Apakah kamu membutuhkan hal lain?"),
-                    line("Khalid", "أحتاج قلمًا فقط.", "Saya hanya butuh pena."),
+                    line("Khalid", "أحتاجُ قلمًا فقط.", "Saya hanya butuh pena."),
                 ],
             ),
             lesson(
@@ -728,22 +1015,22 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Cafe and Shop Mission",
                 "Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.",
                 "Combine ordering, price, and buying phrases in one short conversation.",
-                "Combine أريد, كم السعر, آخذ واحدًا, and من فضلك.",
-                ["أريد ماءً.", "كم السعر؟", "آخذ واحدًا.", "من فضلك."],
+                "Combine أريد, كم السعر, آخذُ واحدًا, and من فضلك.",
+                ["أريدُ ماءً.", "كم السعرُ؟", "آخذُ واحدًا.", "من فضلك."],
                 [
-                    phrase("أريد ماءً", "Saya ingin air.", "Order a drink."),
-                    phrase("كم السعر؟", "Berapa harganya?", "Ask price."),
+                    phrase("أريدُ ماءً", "Saya ingin air.", "Order a drink."),
+                    phrase("كم السعرُ؟", "Berapa harganya?", "Ask price."),
                     phrase("السعر مناسب", "Harganya cocok.", "Accept price."),
-                    phrase("آخذ واحدًا", "Saya ambil satu.", "Buy one."),
+                    phrase("آخذُ واحدًا", "Saya ambil satu.", "Buy one."),
                     phrase("الحساب من فضلك", "Tagihannya, tolong.", "Close the purchase."),
                 ],
                 [
-                    line("Muallimah", "ماذا تريد؟", "Apa yang kamu inginkan?"),
-                    line("Zayd", "أريد ماءً من فضلك.", "Saya ingin air, tolong."),
-                    line("Muallimah", "تفضل.", "Silakan."),
-                    line("Zayd", "كم السعر؟", "Berapa harganya?"),
-                    line("Muallimah", "السعر ريالان.", "Harganya dua riyal."),
-                    line("Zayd", "آخذ واحدًا، شكرًا.", "Saya ambil satu, terima kasih."),
+                    line("Muallimah", "ماذا تريدُ؟", "Apa yang kamu inginkan?"),
+                    line("Zayd", "أريدُ ماءً من فضلك.", "Saya ingin air, tolong."),
+                    line("Muallimah", "تفضّلْ.", "Silakan."),
+                    line("Zayd", "كم السعرُ؟", "Berapa harganya?"),
+                    line("Muallimah", "السعرُ ريالان.", "Harganya dua riyal."),
+                    line("Zayd", "آخذُ واحدًا، شكرًا.", "Saya ambil satu, terima kasih."),
                 ],
             ),
         ],
@@ -770,7 +1057,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                     phrase("مرة أخرى", "Sekali lagi", "Ask repetition."),
                 ],
                 [
-                    line("Maryam", "اقرأ الجملة.", "Bacalah kalimatnya."),
+                    line("Maryam", "اِقرأِ الجملةَ.", "Bacalah kalimatnya."),
                     line("Ahmad", "لا أفهم الكلمة.", "Saya tidak paham kata itu."),
                     line("Maryam", "أي كلمة؟", "Kata yang mana?"),
                     line("Ahmad", "ماذا يعني هذا؟", "Apa artinya ini?"),
@@ -784,11 +1071,11 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Asking for Help",
                 "Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.",
                 "Ask for help and say what you need.",
-                "Use هل تساعدني؟ and أحتاج مساعدة for simple help requests.",
-                ["هل تساعدني؟", "أحتاج مساعدة.", "أين أجد ...؟", "افتح الصفحة."],
+                "Use هل تساعدني؟ and أحتاجُ مساعدةً for simple help requests.",
+                ["هل تساعدني؟", "أحتاجُ مساعدةً.", "أين أجد ...؟", "افتح الصفحة."],
                 [
                     phrase("هل تساعدني؟", "Bisakah Anda membantu saya?", "Ask for help."),
-                    phrase("أحتاج مساعدة", "Saya butuh bantuan.", "State need."),
+                    phrase("أحتاجُ مساعدةً", "Saya butuh bantuan.", "State need."),
                     phrase("أين أجد الدرس؟", "Di mana saya menemukan pelajaran?", "Ask where to find something."),
                     phrase("افتح الصفحة", "Buka halamannya.", "Give a simple instruction."),
                     phrase("شكرًا على المساعدة", "Terima kasih atas bantuannya.", "Thank someone."),
@@ -796,7 +1083,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 [
                     line("Khalid", "هل تساعدني؟", "Bisakah Anda membantu saya?"),
                     line("Noura", "نعم، ماذا تحتاج؟", "Ya, apa yang kamu butuhkan?"),
-                    line("Khalid", "أحتاج مساعدة في الدرس.", "Saya butuh bantuan dalam pelajaran."),
+                    line("Khalid", "أحتاجُ مساعدةً في الدرس.", "Saya butuh bantuan dalam pelajaran."),
                     line("Noura", "افتح الصفحة الثانية.", "Buka halaman kedua."),
                     line("Khalid", "شكرًا على المساعدة.", "Terima kasih atas bantuannya."),
                 ],
@@ -865,7 +1152,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
                     phrase("شكرًا على المساعدة", "Terima kasih atas bantuannya.", "Close politely."),
                 ],
                 [
-                    line("Muallimah", "اقرئي الجملة.", "Bacalah kalimatnya."),
+                    line("Muallimah", "اِقرئي الجملةَ.", "Bacalah kalimatnya."),
                     line("Noura", "لا أفهم. هل تساعدينني؟", "Saya tidak paham. Bisa membantu saya?"),
                     line("Muallimah", "نعم. استمعي ببطء.", "Ya. Dengarkan pelan-pelan."),
                     line("Noura", "أعيدي مرة أخرى من فضلك.", "Ulangi sekali lagi, tolong."),
@@ -887,22 +1174,22 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Review Introductions and Contact",
                 "Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.",
                 "Review introductions and contact details in one smooth exchange.",
-                "Review اسمي, أنا من, أكتب اسمي, رقمي, and بريدي الإلكتروني.",
-                ["اسمي ...", "أنا من ...", "أكتب اسمي ...", "رقمي ..."],
+                "Review اسمي, أنا من, أكتبُ اسمي, رقمي, and بريدي الإلكتروني.",
+                ["اسمي ...", "أنا من ...", "أكتبُ اسمي ...", "رقمي ..."],
                 [
                     phrase("اسمي أحمد", "Nama saya Ahmad.", "Say your name."),
                     phrase("أنا من إندونيسيا", "Saya dari Indonesia.", "Say origin."),
-                    phrase("أكتب اسمي", "Saya menulis nama saya.", "Spell your name."),
+                    phrase("أكتبُ اسمي", "Saya menulis nama saya.", "Spell your name."),
                     phrase("رقمي ...", "Nomor saya ...", "Share a number."),
                     phrase("بريدي الإلكتروني ...", "Email saya ...", "Share email."),
                 ],
                 [
-                    line("Muallim", "ما اسمك؟", "Siapa namamu?"),
+                    line("Muallim", "ما اسمُكَ؟", "Siapa namamu?"),
                     line("Ahmad", "اسمي أحمد.", "Nama saya Ahmad."),
-                    line("Muallim", "من أين أنت؟", "Dari mana kamu?"),
+                    line("Muallim", "من أين أنتَ؟", "Dari mana kamu?"),
                     line("Ahmad", "أنا من إندونيسيا.", "Saya dari Indonesia."),
-                    line("Muallim", "ما رقم هاتفك؟", "Berapa nomor teleponmu?"),
-                    line("Ahmad", "رقمي واحد، اثنان، ثلاثة.", "Nomor saya satu, dua, tiga."),
+                    line("Muallim", "ما رقمُ هاتفِكَ؟", "Berapa nomor teleponmu?"),
+                    line("Ahmad", "رقمي واحدٌ، اثنان، ثلاثة.", "Nomor saya satu, dua, tiga."),
                 ],
             ),
             lesson(
@@ -912,17 +1199,17 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.",
                 "Review days, time, and daily study routine.",
                 "Review اليوم, الساعة, أدرس, أقرأ, and أكتب.",
-                ["اليوم ...", "الساعة ...", "أدرس العربية", "أقرأ وأكتب"],
+                ["اليوم ...", "الساعة ...", "أدرسُ العربيةَ", "أقرأ وأكتب"],
                 [
                     phrase("اليوم الإثنين", "Hari ini Senin.", "Say the day."),
                     phrase("الساعة الثامنة", "Jam delapan.", "Say the time."),
-                    phrase("أدرس العربية", "Saya belajar bahasa Arab.", "Say study action."),
+                    phrase("أدرسُ العربيةَ", "Saya belajar bahasa Arab.", "Say study action."),
                     phrase("أقرأ وأكتب", "Saya membaca dan menulis.", "Say routine actions."),
                     phrase("بعد الدرس", "Setelah pelajaran", "Continue the sequence."),
                 ],
                 [
-                    line("Maryam", "متى تدرس العربية؟", "Kapan kamu belajar bahasa Arab?"),
-                    line("Zayd", "أدرس العربية اليوم الساعة الثامنة.", "Saya belajar bahasa Arab hari ini jam delapan."),
+                    line("Maryam", "متى تدرسُ العربيةَ؟", "Kapan kamu belajar bahasa Arab?"),
+                    line("Zayd", "أدرسُ العربيةَ اليوم الساعة الثامنة.", "Saya belajar bahasa Arab hari ini jam delapan."),
                     line("Maryam", "ماذا تفعل في الدرس؟", "Apa yang kamu lakukan dalam pelajaran?"),
                     line("Zayd", "أقرأ وأكتب وأستمع.", "Saya membaca, menulis, dan mendengarkan."),
                     line("Maryam", "وماذا تفعل بعد الدرس؟", "Dan apa yang kamu lakukan setelah pelajaran?"),
@@ -936,12 +1223,12 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.",
                 "Review place, direction, ordering, and price phrases.",
                 "Review أين, كيف أذهب, أريد, and كم السعر.",
-                ["أين المقهى؟", "كيف أذهب؟", "أريد ماءً", "كم السعر؟"],
+                ["أين المقهى؟", "كيف أذهب؟", "أريدُ ماءً", "كم السعرُ؟"],
                 [
                     phrase("أين المقهى؟", "Di mana kafe?", "Ask place."),
                     phrase("كيف أذهب إلى المقهى؟", "Bagaimana saya pergi ke kafe?", "Ask directions."),
-                    phrase("أريد ماءً", "Saya ingin air.", "Order a drink."),
-                    phrase("كم السعر؟", "Berapa harganya?", "Ask price."),
+                    phrase("أريدُ ماءً", "Saya ingin air.", "Order a drink."),
+                    phrase("كم السعرُ؟", "Berapa harganya?", "Ask price."),
                     phrase("السعر مناسب", "Harganya cocok.", "Accept price."),
                 ],
                 [
@@ -949,10 +1236,10 @@ UNIT_PLANS: list[dict[str, Any]] = [
                     line("Layla", "المقهى بجانب المكتبة.", "Kafe itu di samping perpustakaan."),
                     line("Khalid", "كيف أذهب إليه؟", "Bagaimana saya pergi ke sana?"),
                     line("Layla", "اذهب إلى الأمام ثم انعطف يسارًا.", "Pergilah lurus ke depan lalu belok kiri."),
-                    line("Khalid", "شكرًا. أريد ماءً في المقهى.", "Terima kasih. Saya ingin air di kafe."),
-                    line("Layla", "نعم، تفضل.", "Ya, silakan."),
-                    line("Khalid", "كم السعر؟", "Berapa harganya?"),
-                    line("Layla", "سعر الماء ريالان.", "Harga airnya dua riyal."),
+                    line("Khalid", "شكرًا. أريدُ ماءً في المقهى.", "Terima kasih. Saya ingin air di kafe."),
+                    line("Layla", "نعم، تفضّلْ.", "Ya, silakan."),
+                    line("Khalid", "كم السعرُ؟", "Berapa harganya?"),
+                    line("Layla", "سعرُ الماءِ ريالان.", "Harga airnya dua riyal."),
                 ],
             ),
             lesson(
@@ -966,17 +1253,17 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 [
                     phrase("أنا من إندونيسيا", "Saya dari Indonesia.", "Answer origin."),
                     phrase("عندي درس", "Saya punya pelajaran.", "Answer schedule."),
-                    phrase("أريد كتابًا", "Saya ingin buku.", "Answer want."),
+                    phrase("أريدُ كتابًا", "Saya ingin buku.", "Answer want."),
                     phrase("لا أفهم", "Saya tidak paham.", "Ask for help."),
-                    phrase("أعد من فضلك", "Ulangi, tolong.", "Request repetition."),
+                    phrase("أَعِدْ مِنْ فَضْلِكَ", "Ulangi, tolong.", "Request repetition."),
                 ],
                 [
-                    line("Muallimah", "من أين أنت؟", "Dari mana kamu?"),
+                    line("Muallimah", "من أين أنتِ؟", "Dari mana kamu?"),
                     line("Noura", "أنا من إندونيسيا.", "Saya dari Indonesia."),
                     line("Muallimah", "متى الدرس؟", "Kapan pelajarannya?"),
                     line("Noura", "الدرس الساعة الثامنة.", "Pelajarannya jam delapan."),
-                    line("Muallimah", "ماذا تريد؟", "Apa yang kamu inginkan?"),
-                    line("Noura", "أريد كتابًا.", "Saya ingin buku."),
+                    line("Muallimah", "ماذا تريدينَ؟", "Apa yang kamu inginkan?"),
+                    line("Noura", "أريدُ كتابًا.", "Saya ingin buku."),
                     line("Muallimah", "هل تفهمين؟", "Apakah kamu paham?"),
                     line("Noura", "نعم، أفهم.", "Ya, saya paham."),
                 ],
@@ -988,23 +1275,23 @@ UNIT_PLANS: list[dict[str, Any]] = [
                 "Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.",
                 "Complete a short Arabic A1 conversation using core skills from the level.",
                 "Combine greetings, introductions, schedule, directions, ordering, and help requests.",
-                ["مرحبًا", "اسمي ...", "أدرس العربية", "أين ...؟", "أريد ..."],
+                ["مرحبًا", "اسمي ...", "أدرسُ العربيةَ", "أين ...؟", "أريد ..."],
                 [
                     phrase("مرحبًا", "Halo.", "Start politely."),
                     phrase("اسمي ...", "Nama saya ...", "Introduce yourself."),
-                    phrase("أدرس العربية", "Saya belajar bahasa Arab.", "Talk about study."),
+                    phrase("أدرسُ العربيةَ", "Saya belajar bahasa Arab.", "Talk about study."),
                     phrase("أين المكتبة؟", "Di mana perpustakaan?", "Ask location."),
-                    phrase("أحتاج مساعدة", "Saya butuh bantuan.", "Ask for help."),
+                    phrase("أحتاجُ مساعدةً", "Saya butuh bantuan.", "Ask for help."),
                 ],
                 [
-                    line("Muallim", "مرحبًا، ما اسمك؟", "Halo, siapa namamu?"),
+                    line("Muallim", "مرحبًا، ما اسمُكَ؟", "Halo, siapa namamu?"),
                     line("Ahmad", "مرحبًا، اسمي أحمد.", "Halo, nama saya Ahmad."),
-                    line("Muallim", "متى تدرس العربية؟", "Kapan kamu belajar bahasa Arab?"),
-                    line("Ahmad", "أدرس العربية في الصباح.", "Saya belajar bahasa Arab pada pagi hari."),
-                    line("Muallim", "أين تريد أن تذهب بعد الدرس؟", "Ke mana kamu ingin pergi setelah pelajaran?"),
+                    line("Muallim", "متى تدرسُ العربيةَ؟", "Kapan kamu belajar bahasa Arab?"),
+                    line("Ahmad", "أدرسُ العربيةَ في الصباح.", "Saya belajar bahasa Arab pada pagi hari."),
+                    line("Muallim", "أين تريدُ أن تذهبَ بعد الدرسِ؟", "Ke mana kamu ingin pergi setelah pelajaran?"),
                     line("Ahmad", "أريد أن أذهب إلى المكتبة.", "Saya ingin pergi ke perpustakaan."),
-                    line("Muallim", "هل تحتاج مساعدة؟", "Apakah kamu butuh bantuan?"),
-                    line("Ahmad", "نعم، أحتاج مساعدة من فضلك.", "Ya, saya butuh bantuan, tolong."),
+                    line("Muallim", "هل تحتاجُ مساعدةً؟", "Apakah kamu butuh bantuan?"),
+                    line("Ahmad", "نعم، أحتاجُ مساعدةً من فضلك.", "Ya, saya butuh bantuan, tolong."),
                 ],
             ),
         ],
@@ -1088,8 +1375,8 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
             "status": item["status"],
             "estimated_minutes": 10,
             "conversation_situation": item["slug"].replace("arabic-", "").replace("-", "_"),
-            "conversation_goal": item["goal"],
-            "grammar_summary": item["grammar"],
+            "conversation_goal": learner_goal_id(item),
+            "grammar_summary": grammar_summary_id(item),
             "required_sections": REQUIRED_SECTIONS,
             "completion_rules": {
                 "listening_completed": True,
@@ -1102,18 +1389,18 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
 
     (lesson_dir / "lesson.md").write_text(
         f"# {item['title']}\n\n"
-        f"After this lesson, learners can {item['goal'][0].lower() + item['goal'][1:]}\n\n"
+        f"Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.\n\n"
         "## Situation\n\n"
         f"{item['situation']}\n\n"
-        "## Learning Notes\n\n"
-        "Arabic is formal and precise. Fokus latihan ini adalah kalimat pendek yang aman "
-        "untuk percakapan umum, kelas, dan situasi belajar.\n",
+        "## Catatan Belajar\n\n"
+        "Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, "
+        "kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.\n",
         encoding="utf-8",
     )
 
     (lesson_dir / "conversation_goal.md").write_text(
-        f"# Conversation Goal\n\n{item['goal']}\n\n"
-        "Learners should be able to say:\n\n"
+        f"# Target Percakapan\n\n{learner_goal_id(item)}\n\n"
+        "Kamu akan berlatih mengatakan:\n\n"
         + "\n".join(f"- {entry['phrase']}" for entry in item["phrases"][:5])
         + "\n",
         encoding="utf-8",
@@ -1145,7 +1432,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
                 {
                     "phrase": entry["phrase"],
                     "meaning_id": entry["meaning"],
-                    "usage_note": entry["usage"],
+                    "usage_note": usage_note_id(entry),
                 }
                 for entry in item["phrases"]
             ]
@@ -1153,23 +1440,23 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
     )
 
     (lesson_dir / "grammar_for_conversation.md").write_text(
-        "# Grammar for Conversation\n\n"
-        f"{item['grammar']}\n\n"
+        "# Pola Percakapan\n\n"
+        f"{grammar_summary_id(item)}\n\n"
         "```txt\n"
         + "\n".join(item["patterns"])
         + "\n```\n\n"
-        "Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, "
+        "Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, "
         "atau benda sesuai kebutuhan percakapan.\n",
         encoding="utf-8",
     )
 
     (lesson_dir / "pronunciation_drill.md").write_text(
-        "# Speak Clearly\n\n## Repeat\n\n"
+        "# Latihan Pengucapan\n\n## Ulangi\n\n"
         + "\n".join(f"{index}. {entry['phrase']}" for index, entry in enumerate(item["phrases"][:5], 1))
-        + "\n\n## Focus\n\n"
-        "- Speak slowly and keep long vowels clear.\n"
-        "- Do not swallow final consonants in short phrases.\n"
-        "- Pause briefly between question and answer.\n",
+        + "\n\n## Fokus\n\n"
+        "- Ucapkan perlahan dan jaga bunyi panjang tetap jelas.\n"
+        "- Jangan hilangkan bunyi akhir pada frasa pendek.\n"
+        "- Beri jeda singkat antara pertanyaan dan jawaban.\n",
         encoding="utf-8",
     )
 
@@ -1178,7 +1465,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
         {
             "prompts": [
                 {
-                    "prompt": f"Say: {entry['meaning']}",
+                    "prompt": f"Ucapkan dalam bahasa Arab: {entry['meaning']}",
                     "target_response": entry["phrase"],
                     "acceptable_responses": [entry["phrase"]],
                 }
@@ -1193,7 +1480,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
             "questions": [
                 {
                     "key": f"phrase_{index}",
-                    "prompt": f"Which phrase means \"{entry['meaning']}\"?",
+                    "prompt": f"Frasa mana yang berarti \"{entry['meaning']}\"?",
                     "options": phrase_options(item["phrases"], index - 1),
                     "correct_answer": entry["phrase"],
                 }
@@ -1205,18 +1492,18 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
     write_yaml(lesson_dir / "conversation_coach_roleplay.yaml", roleplay_payload(item))
 
     (lesson_dir / "reading_support.md").write_text(
-        "# Reading Support\n\n"
-        "Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, "
-        "then identify the changing word.\n\n"
+        "# Bantuan Membaca\n\n"
+        "Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan "
+        "kata yang berubah.\n\n"
         + "\n".join(f"- {entry['phrase']} -> {entry['meaning']}" for entry in item["phrases"][:5])
         + "\n",
         encoding="utf-8",
     )
 
     (lesson_dir / "writing_support.md").write_text(
-        "# Writing Support\n\n"
-        "Copy the phrase by hand or type it slowly. Replace only the name, place, number, "
-        "or object when the pattern is stable.\n\n"
+        "# Bantuan Menulis\n\n"
+        "Salin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, "
+        "atau benda hanya setelah polanya terasa stabil.\n\n"
         + "\n".join(f"- {entry['phrase']}" for entry in item["phrases"][:4])
         + "\n",
         encoding="utf-8",
@@ -1255,7 +1542,7 @@ def roleplay_payload(item: dict[str, Any]) -> dict[str, Any]:
                 "coach": item["dialogue"][0][1] if index == 1 else f"استخدم: {entry['phrase']}",
                 "hint": f"Jawab dengan pola: {entry['phrase']}",
                 "sample_answer": entry["phrase"],
-                "focus": entry["usage"],
+                "focus": focus_note_id(entry),
                 "expected_keywords": entry["phrase"].replace("؟", "").replace(".", "").split()[:3],
                 "indonesian_explanation": entry["meaning"],
             }
@@ -1266,7 +1553,7 @@ def roleplay_payload(item: dict[str, Any]) -> dict[str, Any]:
         "mode": "lesson_practice_coach",
         "level_code": "A1",
         "opening_line": item["dialogue"][0][1],
-        "learner_goal": item["goal"],
+        "learner_goal": learner_goal_id(item),
         "max_turns": 4,
         "feedback_level": {"free": "basic", "pro": "detailed"},
         "turns": turns,

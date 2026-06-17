@@ -4,8 +4,9 @@ title: Cafe and Shop Mission
 status: beta
 estimated_minutes: 10
 conversation_situation: cafe_and_shop_mission
-conversation_goal: Combine ordering, price, and buying phrases in one short conversation.
-grammar_summary: Combine أريد, كم السعر, آخذ واحدًا, and من فضلك.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya
+  harga, dan membeli satu barang sederhana.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

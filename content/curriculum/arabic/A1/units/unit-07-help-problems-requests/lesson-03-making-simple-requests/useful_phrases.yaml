@@ -1,16 +1,16 @@
 phrases:
-- phrase: افتح الكتاب
+- phrase: اِفْتَحِ الْكِتَابَ
   meaning_id: Buka bukunya.
-  usage_note: Ask someone to open a book.
-- phrase: اكتب الجملة
+  usage_note: 'Gunakan saat ingin mengatakan: Buka bukunya.'
+- phrase: اُكْتُبِ الْجُمْلَةَ
   meaning_id: Tulis kalimatnya.
-  usage_note: Ask someone to write.
-- phrase: استمع
+  usage_note: 'Gunakan saat ingin mengatakan: Tulis kalimatnya.'
+- phrase: اِسْتَمِعْ
   meaning_id: Dengarkan.
-  usage_note: Ask someone to listen.
+  usage_note: 'Gunakan saat ingin mengatakan: Dengarkan.'
 - phrase: تكلم ببطء
   meaning_id: Bicaralah pelan.
-  usage_note: Ask someone to speak slowly.
+  usage_note: 'Gunakan saat ingin mengatakan: Bicaralah pelan.'
 - phrase: من فضلك
   meaning_id: Tolong.
-  usage_note: Make the request polite.
+  usage_note: 'Gunakan saat ingin mengatakan: Tolong.'

@@ -1,6 +1,6 @@
-# Speak Clearly
+# Latihan Pengucapan
 
-## Repeat
+## Ulangi
 
 1. مرحبًا.
 2. أهلًا وسهلًا.
@@ -8,8 +8,8 @@
 4. أنا بخير، شكرًا.
 5. أحسنت.
 
-## Focus
+## Fokus
 
-- Keep the final sound in **مرحبًا** light.
-- Say **أهلًا وسهلًا** slowly as two words.
-- Do not rush **شكرًا**.
+- Jaga bunyi akhir **مرحبًا** tetap ringan.
+- Ucapkan **أهلًا وسهلًا** perlahan sebagai dua kata.
+- Jangan terburu-buru saat mengucapkan **شكرًا**.

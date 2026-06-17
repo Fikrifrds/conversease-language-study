@@ -1,15 +1,15 @@
 prompts:
-  - prompt: Greet and say your name.
+  - prompt: Sapa dan sebutkan namamu.
     target_response: مرحبًا. اسمي أحمد.
     acceptable_responses:
       - مرحبًا. اسمي أحمد.
       - أهلًا. اسمي أحمد.
-  - prompt: Say your country.
+  - prompt: Sebutkan negaramu.
     target_response: أنا من إندونيسيا.
     acceptable_responses:
       - أنا من إندونيسيا.
-  - prompt: Say you do not understand and ask for repetition.
-    target_response: لا أفهم. أعد من فضلك.
+  - prompt: Katakan bahwa kamu belum paham dan minta pengulangan.
+    target_response: لا أفهم. أَعِدْ مِنْ فَضْلِكَ.
     acceptable_responses:
-      - لا أفهم. أعد من فضلك.
-      - عفوا، لا أفهم. أعد من فضلك.
+      - لا أفهم. أَعِدْ مِنْ فَضْلِكَ.
+      - عفوًا، لا أفهم. أَعِدْ مِنْ فَضْلِكَ.

@@ -1,16 +1,15 @@
 questions:
   - key: read_command
-    prompt: Which word means "Read"?
+    prompt: Kata mana yang berarti "bacalah"?
     options:
-      - اقرأ
-      - اكتب
-      - استمع
-    correct_answer: اقرأ
+      - اِقرأْ
+      - اُكتبْ
+      - اِستمعْ
+    correct_answer: اِقرأْ
   - key: listen_command
-    prompt: What does استمع mean?
+    prompt: Apa arti اِستمعْ?
     options:
       - Dengarkan.
       - Tulislah.
       - Siapa namamu?
     correct_answer: Dengarkan.
-

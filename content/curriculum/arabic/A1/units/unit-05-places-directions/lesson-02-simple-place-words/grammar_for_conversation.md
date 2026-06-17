@@ -1,13 +1,13 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use أين + place and هذا/هذه + place noun for simple place identification.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-البيت
-المدرسة
-السوق
-المكتب
-المقهى
+الْبَيْتُ
+الْمَدْرَسَةُ
+السُّوقُ
+الْمَكْتَبُ
+الْمَقْهَى
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

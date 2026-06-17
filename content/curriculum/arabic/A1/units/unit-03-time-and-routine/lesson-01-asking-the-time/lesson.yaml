@@ -4,8 +4,9 @@ title: Asking the Time
 status: beta
 estimated_minutes: 10
 conversation_situation: asking_the_time
-conversation_goal: Ask the time and answer with a simple hour.
-grammar_summary: Use الساعة + number for 'it is ... o'clock' and صباحًا/مساءً for morning/evening.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan
+  ingin tahu jam sekarang.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

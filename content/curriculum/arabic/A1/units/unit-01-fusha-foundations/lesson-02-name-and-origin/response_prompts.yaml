@@ -1,15 +1,14 @@
 prompts:
-  - prompt: Say "my name is Ahmad."
+  - prompt: "Ucapkan dalam bahasa Arab: Nama saya Ahmad."
     target_response: اسمي أحمد
     acceptable_responses:
       - اسمي أحمد
       - أنا أحمد
-  - prompt: Say "I am from Indonesia."
+  - prompt: "Ucapkan dalam bahasa Arab: Saya dari Indonesia."
     target_response: أنا من إندونيسيا
     acceptable_responses:
       - أنا من إندونيسيا
-  - prompt: Ask "Where are you from?"
-    target_response: من أين أنت؟
+  - prompt: "Tanyakan dalam bahasa Arab: Dari mana kamu?"
+    target_response: من أين أنتَ؟
     acceptable_responses:
-      - من أين أنت؟
-
+      - من أين أنتَ؟

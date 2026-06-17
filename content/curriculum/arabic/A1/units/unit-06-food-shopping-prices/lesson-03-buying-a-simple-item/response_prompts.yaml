@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Apakah kalian punya pena?'
-  target_response: هل عندكم قلم؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kalian punya pena?'
+  target_response: هَلْ عِنْدَكُمْ قَلَمٌ؟
   acceptable_responses:
-  - هل عندكم قلم؟
-- prompt: 'Say: Ya, ada.'
-  target_response: نعم، موجود
+  - هَلْ عِنْدَكُمْ قَلَمٌ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Ya, ada.'
+  target_response: نَعَمْ، مَوْجُودٌ
   acceptable_responses:
-  - نعم، موجود
-- prompt: 'Say: Saya ingin ini.'
-  target_response: أريد هذا
+  - نَعَمْ، مَوْجُودٌ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin ini.'
+  target_response: أُرِيدُ هَذَا
   acceptable_responses:
-  - أريد هذا
+  - أُرِيدُ هَذَا

@@ -4,8 +4,9 @@ title: Contact Details Mission
 status: beta
 estimated_minutes: 10
 conversation_situation: contact_details_mission
-conversation_goal: Combine name, spelling, number, and email in one short formal exchange.
-grammar_summary: Combine اسمي, أكتب اسمي, رقمي, and بريدي الإلكتروني in one conversation.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri di kelas
+  baru dan memberikan informasi kontak sederhana.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

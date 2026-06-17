@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Di mana perpustakaan?"?
+  prompt: Frasa mana yang berarti "Di mana perpustakaan?"?
   options:
-  - أين المكتبة؟
-  - المكتبة هنا
-  - هناك
-  correct_answer: أين المكتبة؟
+  - أَيْنَ الْمَكْتَبَةُ؟
+  - الْمَكْتَبَةُ هُنَا
+  - هُنَاكَ
+  correct_answer: أَيْنَ الْمَكْتَبَةُ؟
 - key: phrase_2
-  prompt: Which phrase means "Perpustakaan di sini."?
+  prompt: Frasa mana yang berarti "Perpustakaan di sini."?
   options:
-  - المكتبة هنا
-  - أين المكتبة؟
-  - هناك
-  correct_answer: المكتبة هنا
+  - الْمَكْتَبَةُ هُنَا
+  - أَيْنَ الْمَكْتَبَةُ؟
+  - هُنَاكَ
+  correct_answer: الْمَكْتَبَةُ هُنَا

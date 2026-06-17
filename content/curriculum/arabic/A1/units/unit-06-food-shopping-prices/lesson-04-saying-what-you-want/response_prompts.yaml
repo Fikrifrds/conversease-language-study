@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Apa yang kamu inginkan?'
-  target_response: ماذا تريد؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu inginkan?'
+  target_response: مَاذَا تُرِيدُ؟
   acceptable_responses:
-  - ماذا تريد؟
-- prompt: 'Say: Saya ingin buku.'
-  target_response: أريد كتابًا
+  - مَاذَا تُرِيدُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin buku.'
+  target_response: أُرِيدُ كِتَابًا
   acceptable_responses:
-  - أريد كتابًا
-- prompt: 'Say: Saya tidak ingin kopi.'
-  target_response: لا أريد قهوة
+  - أُرِيدُ كِتَابًا
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak ingin kopi.'
+  target_response: لَا أُرِيدُ قَهْوَةً
   acceptable_responses:
-  - لا أريد قهوة
+  - لَا أُرِيدُ قَهْوَةً

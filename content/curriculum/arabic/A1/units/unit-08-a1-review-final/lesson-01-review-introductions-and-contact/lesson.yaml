@@ -4,8 +4,9 @@ title: Review Introductions and Contact
 status: beta
 estimated_minutes: 10
 conversation_situation: review_introductions_and_contact
-conversation_goal: Review introductions and contact details in one smooth exchange.
-grammar_summary: Review اسمي, أنا من, أكتب اسمي, رقمي, and بريدي الإلكتروني.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal,
+  ejaan nama, dan informasi kontak sederhana.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

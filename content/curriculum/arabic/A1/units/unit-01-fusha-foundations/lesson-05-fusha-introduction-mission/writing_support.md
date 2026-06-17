@@ -1,6 +1,6 @@
-# Writing Support
+# Bantuan Menulis
 
-Write a four-line self-introduction:
+Tulis perkenalan diri dalam empat baris:
 
 ```txt
 مرحبًا.
@@ -9,8 +9,8 @@ Write a four-line self-introduction:
 أنا أتعلم العربية.
 ```
 
-Then add one help phrase:
+Lalu tambahkan satu frasa meminta bantuan:
 
 ```txt
-أعد من فضلك.
+أَعِدْ مِنْ فَضْلِكَ.
 ```

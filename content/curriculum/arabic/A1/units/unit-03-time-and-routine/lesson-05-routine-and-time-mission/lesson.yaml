@@ -4,8 +4,9 @@ title: Routine and Time Mission
 status: beta
 estimated_minutes: 10
 conversation_situation: routine_and_time_mission
-conversation_goal: Combine day, time, and routine phrases in one short conversation.
-grammar_summary: Combine اليوم, الساعة, عندي درس, and أدرس العربية.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar
+  sederhana kepada teman kelas.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

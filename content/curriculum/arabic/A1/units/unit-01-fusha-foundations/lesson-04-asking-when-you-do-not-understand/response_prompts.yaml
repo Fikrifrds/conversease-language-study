@@ -1,13 +1,13 @@
 prompts:
-  - prompt: Say "I do not understand."
+  - prompt: "Ucapkan dalam bahasa Arab: Saya tidak paham."
     target_response: لا أفهم
     acceptable_responses:
       - لا أفهم
-  - prompt: Ask someone to repeat.
-    target_response: أعد من فضلك
+  - prompt: Minta seseorang mengulangi.
+    target_response: أَعِدْ مِنْ فَضْلِكَ
     acceptable_responses:
-      - أعد من فضلك
-  - prompt: Ask the meaning of الكلمة.
+      - أَعِدْ مِنْ فَضْلِكَ
+  - prompt: Tanyakan arti الكلمة.
     target_response: ما معنى الكلمة؟
     acceptable_responses:
       - ما معنى الكلمة؟

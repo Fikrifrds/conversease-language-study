@@ -1,11 +1,11 @@
 # Spelling Your Name
 
-After this lesson, learners can spell a short name in Arabic and ask whether the spelling is correct.
+Setelah lesson ini, kamu bisa memakai frasa Arab inti untuk situasi berikut.
 
 ## Situation
 
 Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.
 
-## Learning Notes
+## Catatan Belajar
 
-Arabic in this lesson stays formal and precise. Fokus latihan ini adalah kalimat pendek yang aman untuk percakapan umum, kelas, dan situasi belajar.
+Fokus latihan ini adalah kalimat Arab pendek yang aman untuk percakapan umum, kelas, dan situasi belajar. Di A1, baca frasa dengan harakat dan ulangi perlahan.

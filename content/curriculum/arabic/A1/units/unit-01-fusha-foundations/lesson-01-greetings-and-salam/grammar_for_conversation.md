@@ -1,18 +1,18 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use **أنا** to say "I" in a simple answer.
+Gunakan **أنا** untuk mengatakan "saya" dalam jawaban sederhana.
 
-Examples:
+Contoh:
 
 - أنا بخير.
 - أنا طالب.
 - أنا من إندونيسيا.
 
-Pattern:
+Pola:
 
 ```txt
 أنا + word/phrase
 كيف حالك؟
 ```
 
-For now, memorize the full phrase **أنا بخير، شكرًا** as one polite answer.
+Untuk tahap awal, hafalkan frasa lengkap **أنا بخير، شكرًا** sebagai satu jawaban sopan.

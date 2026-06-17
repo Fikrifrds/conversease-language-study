@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Berapa harganya?"?
+  prompt: Frasa mana yang berarti "Berapa harganya?"?
   options:
-  - كم السعر؟
-  - السعر خمسة ريالات
-  - غالٍ
-  correct_answer: كم السعر؟
+  - كَمِ السِّعْرُ؟
+  - السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+  - غَالٍ
+  correct_answer: كَمِ السِّعْرُ؟
 - key: phrase_2
-  prompt: Which phrase means "Harganya lima riyal."?
+  prompt: Frasa mana yang berarti "Harganya lima riyal."?
   options:
-  - السعر خمسة ريالات
-  - كم السعر؟
-  - غالٍ
-  correct_answer: السعر خمسة ريالات
+  - السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+  - كَمِ السِّعْرُ؟
+  - غَالٍ
+  correct_answer: السِّعْرُ خَمْسَةُ رِيَالَاتٍ

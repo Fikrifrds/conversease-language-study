@@ -1,43 +1,44 @@
 scenario_key: arabic_asking_how_to_get_there
 mode: lesson_practice_coach
 level_code: A1
-opening_line: كيف أذهب إلى المقهى؟
-learner_goal: Ask how to get to a place and follow two-step directions.
+opening_line: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat tertentu
+  di sekitar kelas.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كيف أذهب إلى المقهى؟
-  hint: 'Jawab dengan pola: كيف أذهب إلى المكتبة؟'
-  sample_answer: كيف أذهب إلى المكتبة؟
-  focus: Ask how to get somewhere.
+- coach: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke perpustakaan?'
   expected_keywords:
-  - كيف
-  - أذهب
-  - إلى
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
   indonesian_explanation: Bagaimana saya pergi ke perpustakaan?
-- coach: 'استخدم: امشِ إلى الأمام'
-  hint: 'Jawab dengan pola: امشِ إلى الأمام'
-  sample_answer: امشِ إلى الأمام
-  focus: Give walking direction.
+- coach: 'استخدم: امشِ إِلَى الْأَمَامِ'
+  hint: 'Jawab dengan pola: امشِ إِلَى الْأَمَامِ'
+  sample_answer: امشِ إِلَى الْأَمَامِ
+  focus: 'Latihan frasa: Berjalanlah ke depan.'
   expected_keywords:
   - امشِ
-  - إلى
-  - الأمام
+  - إِلَى
+  - الْأَمَامِ
   indonesian_explanation: Berjalanlah ke depan.
-- coach: 'استخدم: ثم'
-  hint: 'Jawab dengan pola: ثم'
-  sample_answer: ثم
-  focus: Connect steps.
+- coach: 'استخدم: ثُمَّ'
+  hint: 'Jawab dengan pola: ثُمَّ'
+  sample_answer: ثُمَّ
+  focus: 'Latihan frasa: Lalu'
   expected_keywords:
-  - ثم
+  - ثُمَّ
   indonesian_explanation: Lalu
 target_phrases:
-- كيف أذهب إلى المكتبة؟
-- امشِ إلى الأمام
-- ثم
-- عند الباب
+- كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+- امشِ إِلَى الْأَمَامِ
+- ثُمَّ
+- عِنْدَ الْبَابِ
 rubric:
   speaking:
     minimum_score: 60

@@ -1,12 +1,12 @@
-# Grammar for Conversation
+# Pola Percakapan
 
-Use هل تساعدني؟ and أحتاج مساعدة for simple help requests.
+Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 
 ```txt
-هل تساعدني؟
-أحتاج مساعدة.
+هَلْ تُسَاعِدُنِي؟
+أَحْتَاجُ مُسَاعَدَةً.
 أين أجد ...؟
-افتح الصفحة.
+اِفْتَحِ الصَّفْحَةَ.
 ```
 
-Keep the sentence short first. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.
+Mulai dari kalimat pendek. Setelah pola terasa mudah, ganti nama, tempat, waktu, atau benda sesuai kebutuhan percakapan.

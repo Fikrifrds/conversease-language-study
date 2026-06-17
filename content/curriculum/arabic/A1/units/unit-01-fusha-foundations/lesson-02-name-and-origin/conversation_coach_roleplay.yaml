@@ -1,42 +1,42 @@
 scenario_key: arabic_name_and_origin
 mode: lesson_practice_coach
 level_code: A1
-opening_line: ما اسمك؟
-learner_goal: Say your name and origin in Arabic.
+opening_line: ما اسمُكَ؟
+learner_goal: Latih menyebutkan nama dan asal negara dalam bahasa Arab.
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: ما اسمك؟
+  - coach: ما اسمُكَ؟
     hint: Jawab dengan اسمي + nama.
     sample_answer: اسمي أحمد.
-    focus: Say your name
+    focus: Menyebutkan nama
     expected_keywords:
       - اسمي
     indonesian_explanation: Gunakan اسمي untuk mengatakan nama saya.
-  - coach: من أين أنت؟
+  - coach: من أين أنتَ؟
     hint: Jawab dengan أنا من إندونيسيا.
     sample_answer: أنا من إندونيسيا.
-    focus: Say your origin
+    focus: Menyebutkan asal
     expected_keywords:
       - أنا
       - من
       - إندونيسيا
     indonesian_explanation: Gunakan أنا من untuk mengatakan asal.
-  - coach: وأنت؟
-    hint: Tanyakan balik dengan من أين أنت؟
-    sample_answer: من أين أنت؟
-    focus: Ask back
+  - coach: وأنتَ؟
+    hint: Tanyakan balik dengan من أين أنتَ؟
+    sample_answer: من أين أنتَ؟
+    focus: Bertanya balik
     expected_keywords:
       - من
       - أين
       - أنت
-    indonesian_explanation: Untuk bertanya balik, gunakan من أين أنت؟
+    indonesian_explanation: Untuk bertanya balik, gunakan من أين أنتَ؟
 target_phrases:
-  - ما اسمك؟
+  - ما اسمُكَ؟
   - اسمي ...
-  - من أين أنت؟
+  - من أين أنتَ؟
   - أنا من إندونيسيا
 rubric:
   speaking:
@@ -45,4 +45,3 @@ rubric:
     minimum_score: 60
   grammar:
     minimum_score: 55
-

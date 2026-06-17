@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Complete a short Arabic A1 conversation using core skills from the level.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- مرحبًا
-- اسمي ...
-- أدرس العربية
-- أين المكتبة؟
-- أحتاج مساعدة
+- مَرْحَبًا
+- اِسْمِي ...
+- أَدْرُسُ الْعَرَبِيَّةَ
+- أَيْنَ الْمَكْتَبَةُ؟
+- أَحْتَاجُ مُسَاعَدَةً

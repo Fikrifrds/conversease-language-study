@@ -1,16 +1,16 @@
 phrases:
-- phrase: ماذا تفعل صباحًا؟
+- phrase: مَاذَا تَفْعَلُ صَبَاحًا؟
   meaning_id: Apa yang kamu lakukan pagi hari?
-  usage_note: Ask about a morning routine.
+  usage_note: 'Gunakan saat ingin mengatakan: Apa yang kamu lakukan pagi hari?'
 - phrase: أقرأ
   meaning_id: Saya membaca.
-  usage_note: Say a reading action.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya membaca.'
 - phrase: أكتب
   meaning_id: Saya menulis.
-  usage_note: Say a writing action.
-- phrase: أدرس العربية
+  usage_note: 'Gunakan saat ingin mengatakan: Saya menulis.'
+- phrase: أَدْرُسُ الْعَرَبِيَّةَ
   meaning_id: Saya belajar bahasa Arab.
-  usage_note: Say what you study.
-- phrase: ثم أعمل
+  usage_note: 'Gunakan saat ingin mengatakan: Saya belajar bahasa Arab.'
+- phrase: ثُمَّ أَعْمَلُ
   meaning_id: Lalu saya bekerja.
-  usage_note: Connect the next action.
+  usage_note: 'Gunakan saat ingin mengatakan: Lalu saya bekerja.'

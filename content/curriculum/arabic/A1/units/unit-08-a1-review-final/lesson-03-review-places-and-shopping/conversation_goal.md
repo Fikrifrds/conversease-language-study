@@ -1,11 +1,11 @@
-# Conversation Goal
+# Target Percakapan
 
-Review place, direction, ordering, and price phrases.
+Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.
 
-Learners should be able to say:
+Kamu akan berlatih mengatakan:
 
-- أين المقهى؟
-- كيف أذهب إلى المقهى؟
-- أريد ماءً
-- كم السعر؟
-- السعر مناسب
+- أَيْنَ الْمَقْهَى؟
+- كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+- أُرِيدُ مَاءً
+- كَمِ السِّعْرُ؟
+- السِّعْرُ مُنَاسِبٌ

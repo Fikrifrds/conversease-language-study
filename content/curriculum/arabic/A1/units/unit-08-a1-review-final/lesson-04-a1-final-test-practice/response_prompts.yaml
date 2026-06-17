@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Say: Saya dari Indonesia.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya dari Indonesia.'
   target_response: أنا من إندونيسيا
   acceptable_responses:
   - أنا من إندونيسيا
-- prompt: 'Say: Saya punya pelajaran.'
-  target_response: عندي درس
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya pelajaran.'
+  target_response: عِنْدِي دَرْسٌ
   acceptable_responses:
-  - عندي درس
-- prompt: 'Say: Saya ingin buku.'
-  target_response: أريد كتابًا
+  - عِنْدِي دَرْسٌ
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin buku.'
+  target_response: أُرِيدُ كِتَابًا
   acceptable_responses:
-  - أريد كتابًا
+  - أُرِيدُ كِتَابًا

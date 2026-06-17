@@ -1,9 +1,9 @@
-# Reading Support
+# Bantuan Membaca
 
-Read the Arabic phrases from right to left. Focus on recognizing the full phrase first, then identify the changing word.
+Baca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.
 
-- ماذا تريد؟ -> Apa yang kamu inginkan?
-- أريد كتابًا -> Saya ingin buku.
-- لا أريد قهوة -> Saya tidak ingin kopi.
-- أحتاج قلمًا -> Saya butuh pena.
-- فقط -> Saja
+- مَاذَا تُرِيدُ؟ -> Apa yang kamu inginkan?
+- أُرِيدُ كِتَابًا -> Saya ingin buku.
+- لَا أُرِيدُ قَهْوَةً -> Saya tidak ingin kopi.
+- أَحْتَاجُ قَلَمًا -> Saya butuh pena.
+- فَقَطْ -> Saja

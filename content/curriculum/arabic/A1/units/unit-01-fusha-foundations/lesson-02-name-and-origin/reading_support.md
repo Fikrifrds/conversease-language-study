@@ -1,13 +1,12 @@
-# Reading Support
+# Bantuan Membaca
 
-Read this short text:
+Baca teks pendek ini:
 
 ```txt
 اسمي أحمد.
 أنا من إندونيسيا.
 ```
 
-Question: Which sentence says the country?
+Pertanyaan: Kalimat mana yang menyebutkan negara asal?
 
-Answer: أنا من إندونيسيا.
-
+Jawaban: أنا من إندونيسيا.

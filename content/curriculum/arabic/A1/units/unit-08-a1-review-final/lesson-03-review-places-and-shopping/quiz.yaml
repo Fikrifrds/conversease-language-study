@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Di mana kafe?"?
+  prompt: Frasa mana yang berarti "Di mana kafe?"?
   options:
-  - أين المقهى؟
-  - كيف أذهب إلى المقهى؟
-  - أريد ماءً
-  correct_answer: أين المقهى؟
+  - أَيْنَ الْمَقْهَى؟
+  - كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+  - أُرِيدُ مَاءً
+  correct_answer: أَيْنَ الْمَقْهَى؟
 - key: phrase_2
-  prompt: Which phrase means "Bagaimana saya pergi ke kafe?"?
+  prompt: Frasa mana yang berarti "Bagaimana saya pergi ke kafe?"?
   options:
-  - كيف أذهب إلى المقهى؟
-  - أين المقهى؟
-  - أريد ماءً
-  correct_answer: كيف أذهب إلى المقهى؟
+  - كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟
+  - أَيْنَ الْمَقْهَى؟
+  - أُرِيدُ مَاءً
+  correct_answer: كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟

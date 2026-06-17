@@ -1,42 +1,43 @@
 scenario_key: arabic_ordering_a_drink
 mode: lesson_practice_coach
 level_code: A1
-opening_line: مرحبًا.
-learner_goal: Order water or coffee using polite Arabic phrases.
+opening_line: مَرْحَبًا.
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan
+  minuman sederhana dengan sopan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مرحبًا.
-  hint: 'Jawab dengan pola: أريد ماءً'
-  sample_answer: أريد ماءً
-  focus: Order water.
+- coach: مَرْحَبًا.
+  hint: 'Jawab dengan pola: أُرِيدُ مَاءً'
+  sample_answer: أُرِيدُ مَاءً
+  focus: 'Latihan frasa: Saya ingin air.'
   expected_keywords:
-  - أريد
-  - ماءً
+  - أُرِيدُ
+  - مَاءً
   indonesian_explanation: Saya ingin air.
-- coach: 'استخدم: أريد قهوة'
-  hint: 'Jawab dengan pola: أريد قهوة'
-  sample_answer: أريد قهوة
-  focus: Order coffee.
+- coach: 'استخدم: أُرِيدُ قَهْوَةً'
+  hint: 'Jawab dengan pola: أُرِيدُ قَهْوَةً'
+  sample_answer: أُرِيدُ قَهْوَةً
+  focus: 'Latihan frasa: Saya ingin kopi.'
   expected_keywords:
-  - أريد
-  - قهوة
+  - أُرِيدُ
+  - قَهْوَةً
   indonesian_explanation: Saya ingin kopi.
 - coach: 'استخدم: من فضلك'
   hint: 'Jawab dengan pola: من فضلك'
   sample_answer: من فضلك
-  focus: Make it polite.
+  focus: 'Latihan frasa: Tolong.'
   expected_keywords:
   - من
   - فضلك
   indonesian_explanation: Tolong.
 target_phrases:
-- أريد ماءً
-- أريد قهوة
+- أُرِيدُ مَاءً
+- أُرِيدُ قَهْوَةً
 - من فضلك
-- هل عندكم شاي؟
+- هَلْ عِنْدَكُمْ شَايٌ؟
 rubric:
   speaking:
     minimum_score: 60

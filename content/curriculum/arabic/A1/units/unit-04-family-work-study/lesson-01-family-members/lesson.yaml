@@ -4,8 +4,9 @@ title: Family Members
 status: beta
 estimated_minutes: 10
 conversation_situation: family_members
-conversation_goal: Name simple family members and ask who someone is.
-grammar_summary: Use هذا for masculine nouns and هذه for feminine nouns in simple identification.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu menunjukkan foto keluarga
+  dan menyebut anggota keluarga dengan kalimat pendek.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup

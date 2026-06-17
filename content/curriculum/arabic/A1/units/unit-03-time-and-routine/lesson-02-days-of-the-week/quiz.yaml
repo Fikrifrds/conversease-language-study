@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Which phrase means "Hari apa hari ini?"?
+  prompt: Frasa mana yang berarti "Hari apa hari ini?"?
   options:
-  - أي يوم اليوم؟
-  - اليوم الإثنين
-  - غدًا الثلاثاء
-  correct_answer: أي يوم اليوم؟
+  - أي يوم الْيَوْمُ؟
+  - الْيَوْمُ الْإِثْنَيْنِ
+  - غَدًا الثُّلَاثَاءُ
+  correct_answer: أي يوم الْيَوْمُ؟
 - key: phrase_2
-  prompt: Which phrase means "Hari ini Senin."?
+  prompt: Frasa mana yang berarti "Hari ini Senin."?
   options:
-  - اليوم الإثنين
-  - أي يوم اليوم؟
-  - غدًا الثلاثاء
-  correct_answer: اليوم الإثنين
+  - الْيَوْمُ الْإِثْنَيْنِ
+  - أي يوم الْيَوْمُ؟
+  - غَدًا الثُّلَاثَاءُ
+  correct_answer: الْيَوْمُ الْإِثْنَيْنِ

@@ -1,39 +1,40 @@
 scenario_key: arabic_apologizing_and_thanking
 mode: lesson_practice_coach
 level_code: A1
-opening_line: عذرًا، لا أفهم.
-learner_goal: Apologize, thank someone, and respond politely.
+opening_line: عُذْرًا، لَا أَفْهَمُ.
+learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu terlambat merespons atau membuat
+  kesalahan kecil dan ingin menjawab sopan.'
 max_turns: 4
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: عذرًا، لا أفهم.
-  hint: 'Jawab dengan pola: آسف'
-  sample_answer: آسف
-  focus: Male speaker apology.
+- coach: عُذْرًا، لَا أَفْهَمُ.
+  hint: 'Jawab dengan pola: آسِفٌ'
+  sample_answer: آسِفٌ
+  focus: 'Latihan frasa: Maaf.'
   expected_keywords:
-  - آسف
+  - آسِفٌ
   indonesian_explanation: Maaf.
-- coach: 'استخدم: آسفة'
-  hint: 'Jawab dengan pola: آسفة'
-  sample_answer: آسفة
-  focus: Female speaker apology.
+- coach: 'استخدم: آسِفَةٌ'
+  hint: 'Jawab dengan pola: آسِفَةٌ'
+  sample_answer: آسِفَةٌ
+  focus: 'Latihan frasa: Maaf.'
   expected_keywords:
-  - آسفة
+  - آسِفَةٌ
   indonesian_explanation: Maaf.
-- coach: 'استخدم: عذرًا'
-  hint: 'Jawab dengan pola: عذرًا'
-  sample_answer: عذرًا
-  focus: General apology or excuse.
+- coach: 'استخدم: عُذْرًا'
+  hint: 'Jawab dengan pola: عُذْرًا'
+  sample_answer: عُذْرًا
+  focus: 'Latihan frasa: Permisi/maaf.'
   expected_keywords:
-  - عذرًا
+  - عُذْرًا
   indonesian_explanation: Permisi/maaf.
 target_phrases:
-- آسف
-- آسفة
-- عذرًا
-- لا مشكلة
+- آسِفٌ
+- آسِفَةٌ
+- عُذْرًا
+- لَا مُشْكِلَةَ
 rubric:
   speaking:
     minimum_score: 60

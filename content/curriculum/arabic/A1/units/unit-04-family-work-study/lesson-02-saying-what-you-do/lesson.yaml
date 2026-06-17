@@ -4,8 +4,9 @@ title: Saying What You Do
 status: beta
 estimated_minutes: 10
 conversation_situation: saying_what_you_do
-conversation_goal: Say whether you are a student, teacher, or worker.
-grammar_summary: Use أنا + noun for identity and أعمل في + place for work.
+conversation_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau
+  status belajar dalam percakapan formal ringan.'
+grammar_summary: Gunakan pola Arab pendek berikut untuk memahami, menjawab, dan bertanya dengan aman.
 required_sections:
 - conversation_goal
 - situation_setup
