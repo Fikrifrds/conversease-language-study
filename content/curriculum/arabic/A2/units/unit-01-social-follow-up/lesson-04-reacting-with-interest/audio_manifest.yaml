@@ -1,6 +1,24 @@
 lesson_key: lesson-04-reacting-with-interest
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-04-reacting-with-interest/listening-3nav5pHC1EYvWOd5LmnA-20260617T112158Z.wav
+  duration_seconds: 16.3
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Adi: OoE8swS3hImZANNOodf6
+    Sara: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: 17be719a52f78f8fca45204883afef6c81c13e98bc2eddc3333cfead66d10359
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-04-reacting-with-interest/listening-3nav5pHC1EYvWOd5LmnA-20260617T112158Z.wav
+  trace_id: Tub7aJNRRjGOtGhuWCqQ,fhEbappchTGVDRIHXfVF,Ay0mxW7fOZ5RAO74H4XS,sfttIXn6X58EVMlVUqiw,mdlOMKNXlhlwEtfdKwnp,gPPQjEzyVyCMwGImH3Tw
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T11:21:58.868336+00:00'

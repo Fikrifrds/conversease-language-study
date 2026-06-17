@@ -1,6 +1,24 @@
 lesson_key: lesson-03-talking-about-the-weekend
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-03-talking-about-the-weekend/listening-3nav5pHC1EYvWOd5LmnA-20260617T112139Z.wav
+  duration_seconds: 19.56
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Noura: kdUY91gH5xyDHapxlthT
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 7
+  script_content_hash: a2ec79af62a1e7ea60ddbf234a8d534a493edd005dce247ab131171e89cfbc33
+  audio_format: wav
+  storage_key: conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-03-talking-about-the-weekend/listening-3nav5pHC1EYvWOd5LmnA-20260617T112139Z.wav
+  trace_id: 5nLbadA7r4qnRMCHjsyY,2iMslqXGVxrMWV3BHPIA,JcOSr9K5ls8G1c2OygCj,JX574qffgFjAn0rtenCJ,DaItz8ibkaXktufZoDBk,h0BF3HrUBwf6VSeGhqui,4j0rX6xfGO2pBsJPF8AM
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-17T11:21:39.991311+00:00'
