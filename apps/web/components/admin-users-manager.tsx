@@ -40,18 +40,6 @@ function roleTone(role: AdminUser["role"]) {
   return role === "admin" ? "bg-mint text-leaf" : "bg-paper text-ink/65";
 }
 
-type VerificationFilter = "all" | "verified" | "unverified";
-
-function verificationFilterValue(filter: VerificationFilter) {
-  if (filter === "verified") {
-    return true;
-  }
-  if (filter === "unverified") {
-    return false;
-  }
-  return undefined;
-}
-
 function isUserDeletable(user: AdminUser, currentAdminId: string) {
   return user.role !== "admin" && user.id !== currentAdminId;
 }
@@ -59,9 +47,6 @@ function isUserDeletable(user: AdminUser, currentAdminId: string) {
 export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [search, setSearch] = useState("");
-  const [verificationFilter, setVerificationFilter] = useState<VerificationFilter>("unverified");
-  const [minAccountAgeDays, setMinAccountAgeDays] = useState("14");
-  const [suspiciousOnly, setSuspiciousOnly] = useState(true);
   const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
   const [selectedUser, setSelectedUser] = useState<AdminUser | null>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -82,15 +67,9 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
         if (user.role === "admin") {
           acc.admin += 1;
         }
-        if (!user.emailVerifiedAt) {
-          acc.unverified += 1;
-        }
-        if (user.looksSuspicious) {
-          acc.suspicious += 1;
-        }
         return acc;
       },
-      { admin: 0, count: 0, suspicious: 0, unverified: 0 }
+      { admin: 0, count: 0 }
     );
   }, [users]);
 
@@ -105,13 +84,9 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
     setError("");
 
     try {
-      const parsedMinAge = Number.parseInt(minAccountAgeDays, 10);
       const nextUsers = await listAdminUsers({
         search: nextSearch.trim(),
-        limit: 200,
-        emailVerified: verificationFilterValue(verificationFilter),
-        minAccountAgeDays: Number.isFinite(parsedMinAge) && parsedMinAge > 0 ? parsedMinAge : undefined,
-        suspiciousOnly
+        limit: 200
       });
       setUsers(nextUsers);
       setSelectedUserIds((current) => current.filter((userId) => nextUsers.some((user) => user.id === userId)));
@@ -225,7 +200,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
               <p className="text-sm font-semibold uppercase text-leaf">Admin Users</p>
               <h1 className="mt-1 text-2xl font-semibold">User Access</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
-                Kelola role admin, cari akun spam, dan hapus user tanpa membuka database.
+                Kelola role admin dan hapus user tanpa membuka database.
               </p>
             </div>
           </div>
@@ -274,40 +249,9 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
             </button>
           </div>
 
-          <div className="mt-4 grid gap-2 sm:grid-cols-2">
-            <select
-              value={verificationFilter}
-              onChange={(event) => setVerificationFilter(event.target.value as VerificationFilter)}
-              className="focus-ring rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
-            >
-              <option value="all">Semua status email</option>
-              <option value="verified">Email verified</option>
-              <option value="unverified">Belum verified</option>
-            </select>
-            <input
-              type="number"
-              min={1}
-              value={minAccountAgeDays}
-              onChange={(event) => setMinAccountAgeDays(event.target.value)}
-              className="focus-ring rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
-              placeholder="Minimal umur akun (hari)"
-            />
-          </div>
-
-          <label className="mt-3 flex items-center gap-2 rounded-lg bg-paper px-3 py-2 text-sm text-ink/70">
-            <input
-              type="checkbox"
-              checked={suspiciousOnly}
-              onChange={(event) => setSuspiciousOnly(event.target.checked)}
-            />
-            Hanya tampilkan nama yang mencurigakan
-          </label>
-
           <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
             <Metric label="Users" value={totals.count} />
             <Metric label="Admins" value={totals.admin} />
-            <Metric label="Unverified" value={totals.unverified} />
-            <Metric label="Suspicious" value={totals.suspicious} />
           </div>
 
           {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
