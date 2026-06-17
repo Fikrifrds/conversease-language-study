@@ -1,0 +1,49 @@
+scenario_key: arabic_describing_a_simple_experience
+mode: lesson_practice_coach
+level_code: A2
+opening_line: كَيْفَ كَانَتْ رِحْلَتُكَ إِلَى الْحَدِيقَةِ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman sederhana di tempat
+  umum: apa yang kamu lihat, apa yang kamu lakukan, dan bagaimana rasanya.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ كَانَتْ رِحْلَتُكَ إِلَى الْحَدِيقَةِ؟
+  hint: 'Jawab dengan pola: كَانَتِ التَّجْرِبَةُ جَيِّدَةً.'
+  sample_answer: كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+  focus: 'Latihan frasa: Pengalamannya baik.'
+  expected_keywords:
+  - كَانَتِ
+  - التَّجْرِبَةُ
+  - جَيِّدَةً
+  indonesian_explanation: Pengalamannya baik.
+- coach: 'استخدم: رَأَيْتُ مَكَانًا جَمِيلًا.'
+  hint: 'Jawab dengan pola: رَأَيْتُ مَكَانًا جَمِيلًا.'
+  sample_answer: رَأَيْتُ مَكَانًا جَمِيلًا.
+  focus: 'Latihan frasa: Saya melihat tempat yang indah.'
+  expected_keywords:
+  - رَأَيْتُ
+  - مَكَانًا
+  - جَمِيلًا
+  indonesian_explanation: Saya melihat tempat yang indah.
+- coach: 'استخدم: أَعْجَبَنِي الطَّعَامُ.'
+  hint: 'Jawab dengan pola: أَعْجَبَنِي الطَّعَامُ.'
+  sample_answer: أَعْجَبَنِي الطَّعَامُ.
+  focus: 'Latihan frasa: Saya suka makanannya.'
+  expected_keywords:
+  - أَعْجَبَنِي
+  - الطَّعَامُ
+  indonesian_explanation: Saya suka makanannya.
+target_phrases:
+- كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+- رَأَيْتُ مَكَانًا جَمِيلًا.
+- أَعْجَبَنِي الطَّعَامُ.
+- كَانَ الْمَكَانُ مُزْدَحِمًا.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

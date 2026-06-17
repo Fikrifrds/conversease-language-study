@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu lakukan kemarin?'
+  target_response: مَاذَا فَعَلْتَ أَمْسِ؟
+  acceptable_responses:
+  - مَاذَا فَعَلْتَ أَمْسِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pergi ke perpustakaan.'
+  target_response: ذَهَبْتُ إِلَى الْمَكْتَبَةِ.
+  acceptable_responses:
+  - ذَهَبْتُ إِلَى الْمَكْتَبَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya belajar sedikit bahasa Arab.'
+  target_response: دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.
+  acceptable_responses:
+  - دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.

@@ -139,29 +139,29 @@ units:
     status: beta
 - unit_key: unit-06-past-experiences
   title: Past Experiences
-  status: planned
+  status: beta
   main_conversation_outcome: Talk about recent activities, where you went, what happened, and how it felt.
   lessons:
   - lesson_key: lesson-01-talking-about-yesterday
     slug: arabic-talking-about-yesterday
     title: Talking About Yesterday
-    status: planned
+    status: beta
   - lesson_key: lesson-02-saying-where-you-went
     slug: arabic-saying-where-you-went
     title: Saying Where You Went
-    status: planned
+    status: beta
   - lesson_key: lesson-03-describing-a-simple-experience
     slug: arabic-describing-a-simple-experience
     title: Describing a Simple Experience
-    status: planned
+    status: beta
   - lesson_key: lesson-04-asking-about-past-activities
     slug: arabic-asking-about-past-activities
     title: Asking About Past Activities
-    status: planned
+    status: beta
   - lesson_key: lesson-05-past-experience-mission
     slug: arabic-past-experience-mission
     title: Past Experience Mission
-    status: planned
+    status: beta
 - unit_key: unit-07-opinions-reasons
   title: Opinions & Reasons
   status: planned

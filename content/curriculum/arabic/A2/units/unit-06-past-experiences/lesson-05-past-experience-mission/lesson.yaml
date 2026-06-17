@@ -1,0 +1,27 @@
+lesson_key: lesson-05-past-experience-mission
+slug: arabic-past-experience-mission
+title: Past Experience Mission
+status: beta
+estimated_minutes: 12
+conversation_situation: past_experience_mission
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan
+  dan menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.'
+grammar_summary: Gabungkan ذَهَبْتُ, رَأَيْتُ, اشْتَرَيْتُ, كَانَ, dan بَعْدَ ذَلِكَ untuk cerita pendek
+  yang runtut.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

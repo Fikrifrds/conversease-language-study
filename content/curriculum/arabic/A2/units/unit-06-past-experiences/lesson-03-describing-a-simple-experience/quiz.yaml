@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Pengalamannya baik."?
+  options:
+  - كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+  - رَأَيْتُ مَكَانًا جَمِيلًا.
+  - أَعْجَبَنِي الطَّعَامُ.
+  correct_answer: كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya melihat tempat yang indah."?
+  options:
+  - رَأَيْتُ مَكَانًا جَمِيلًا.
+  - كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+  - أَعْجَبَنِي الطَّعَامُ.
+  correct_answer: رَأَيْتُ مَكَانًا جَمِيلًا.

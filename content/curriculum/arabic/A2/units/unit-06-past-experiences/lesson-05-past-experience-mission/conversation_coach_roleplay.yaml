@@ -1,0 +1,50 @@
+scenario_key: arabic_past_experience_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ يَا سَارَةُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan dan
+  menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ يَا سَارَةُ؟
+  hint: 'Jawab dengan pola: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.'
+  sample_answer: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+  focus: 'Latihan frasa: Pada akhir pekan, saya pergi ke kota.'
+  expected_keywords:
+  - فِي
+  - نِهَايَةِ
+  - الْأُسْبُوعِ،
+  indonesian_explanation: Pada akhir pekan, saya pergi ke kota.
+- coach: 'استخدم: رَأَيْتُ مَكَانًا جَدِيدًا.'
+  hint: 'Jawab dengan pola: رَأَيْتُ مَكَانًا جَدِيدًا.'
+  sample_answer: رَأَيْتُ مَكَانًا جَدِيدًا.
+  focus: 'Latihan frasa: Saya melihat tempat baru.'
+  expected_keywords:
+  - رَأَيْتُ
+  - مَكَانًا
+  - جَدِيدًا
+  indonesian_explanation: Saya melihat tempat baru.
+- coach: 'استخدم: اشْتَرَيْتُ شَيْئًا صَغِيرًا.'
+  hint: 'Jawab dengan pola: اشْتَرَيْتُ شَيْئًا صَغِيرًا.'
+  sample_answer: اشْتَرَيْتُ شَيْئًا صَغِيرًا.
+  focus: 'Latihan frasa: Saya membeli sesuatu yang kecil.'
+  expected_keywords:
+  - اشْتَرَيْتُ
+  - شَيْئًا
+  - صَغِيرًا
+  indonesian_explanation: Saya membeli sesuatu yang kecil.
+target_phrases:
+- فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+- رَأَيْتُ مَكَانًا جَدِيدًا.
+- اشْتَرَيْتُ شَيْئًا صَغِيرًا.
+- بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى الْبَيْتِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

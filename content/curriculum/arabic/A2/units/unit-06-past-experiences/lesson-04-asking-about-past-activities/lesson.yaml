@@ -1,0 +1,27 @@
+lesson_key: lesson-04-asking-about-past-activities
+slug: arabic-asking-about-past-activities
+title: Asking About Past Activities
+status: beta
+estimated_minutes: 12
+conversation_situation: asking_about_past_activities
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan
+  dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.'
+grammar_summary: Gunakan مَاذَا فَعَلْتَ, مَعَ مَنْ, أَيْنَ, dan كَيْفَ كَانَ untuk pertanyaan lanjutan
+  masa lalu.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

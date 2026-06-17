@@ -1,0 +1,50 @@
+scenario_key: arabic_asking_about_past_activities
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَاذَا فَعَلْتِ بَعْدَ الدَّرْسِ يَا مَرْيَمُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan
+  dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَاذَا فَعَلْتِ بَعْدَ الدَّرْسِ يَا مَرْيَمُ؟
+  hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟'
+  sample_answer: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+  focus: 'Latihan frasa: Apa yang kamu lakukan setelah pelajaran?'
+  expected_keywords:
+  - مَاذَا
+  - فَعَلْتَ
+  - بَعْدَ
+  indonesian_explanation: Apa yang kamu lakukan setelah pelajaran?
+- coach: 'استخدم: مَعَ مَنْ ذَهَبْتَ؟'
+  hint: 'Jawab dengan pola: مَعَ مَنْ ذَهَبْتَ؟'
+  sample_answer: مَعَ مَنْ ذَهَبْتَ؟
+  focus: 'Latihan frasa: Dengan siapa kamu pergi?'
+  expected_keywords:
+  - مَعَ
+  - مَنْ
+  - ذَهَبْتَ
+  indonesian_explanation: Dengan siapa kamu pergi?
+- coach: 'استخدم: كَيْفَ كَانَ الْمَكَانُ؟'
+  hint: 'Jawab dengan pola: كَيْفَ كَانَ الْمَكَانُ؟'
+  sample_answer: كَيْفَ كَانَ الْمَكَانُ؟
+  focus: 'Latihan frasa: Bagaimana tempatnya?'
+  expected_keywords:
+  - كَيْفَ
+  - كَانَ
+  - الْمَكَانُ
+  indonesian_explanation: Bagaimana tempatnya?
+target_phrases:
+- مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+- مَعَ مَنْ ذَهَبْتَ؟
+- كَيْفَ كَانَ الْمَكَانُ؟
+- هَلْ أَعْجَبَكَ؟
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

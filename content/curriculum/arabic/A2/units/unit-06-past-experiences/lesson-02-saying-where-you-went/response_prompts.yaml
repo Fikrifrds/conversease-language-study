@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Ke mana kamu pergi?'
+  target_response: أَيْنَ ذَهَبْتَ؟
+  acceptable_responses:
+  - أَيْنَ ذَهَبْتَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pergi ke pasar.'
+  target_response: ذَهَبْتُ إِلَى السُّوقِ.
+  acceptable_responses:
+  - ذَهَبْتُ إِلَى السُّوقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pergi bersama teman saya.'
+  target_response: ذَهَبْتُ مَعَ صَدِيقِي.
+  acceptable_responses:
+  - ذَهَبْتُ مَعَ صَدِيقِي.

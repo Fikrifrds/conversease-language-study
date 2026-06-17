@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Pada akhir pekan, saya pergi ke kota."?
+  options:
+  - فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+  - رَأَيْتُ مَكَانًا جَدِيدًا.
+  - اشْتَرَيْتُ شَيْئًا صَغِيرًا.
+  correct_answer: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya melihat tempat baru."?
+  options:
+  - رَأَيْتُ مَكَانًا جَدِيدًا.
+  - فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+  - اشْتَرَيْتُ شَيْئًا صَغِيرًا.
+  correct_answer: رَأَيْتُ مَكَانًا جَدِيدًا.

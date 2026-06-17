@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan setelah pelajaran?"?
+  options:
+  - مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+  - مَعَ مَنْ ذَهَبْتَ؟
+  - كَيْفَ كَانَ الْمَكَانُ؟
+  correct_answer: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Dengan siapa kamu pergi?"?
+  options:
+  - مَعَ مَنْ ذَهَبْتَ؟
+  - مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+  - كَيْفَ كَانَ الْمَكَانُ؟
+  correct_answer: مَعَ مَنْ ذَهَبْتَ؟

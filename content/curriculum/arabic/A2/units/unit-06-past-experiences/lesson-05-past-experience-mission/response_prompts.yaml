@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Pada akhir pekan, saya pergi ke kota.'
+  target_response: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+  acceptable_responses:
+  - فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat tempat baru.'
+  target_response: رَأَيْتُ مَكَانًا جَدِيدًا.
+  acceptable_responses:
+  - رَأَيْتُ مَكَانًا جَدِيدًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya membeli sesuatu yang kecil.'
+  target_response: اشْتَرَيْتُ شَيْئًا صَغِيرًا.
+  acceptable_responses:
+  - اشْتَرَيْتُ شَيْئًا صَغِيرًا.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan kemarin?"?
+  options:
+  - مَاذَا فَعَلْتَ أَمْسِ؟
+  - ذَهَبْتُ إِلَى الْمَكْتَبَةِ.
+  - دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.
+  correct_answer: مَاذَا فَعَلْتَ أَمْسِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya pergi ke perpustakaan."?
+  options:
+  - ذَهَبْتُ إِلَى الْمَكْتَبَةِ.
+  - مَاذَا فَعَلْتَ أَمْسِ؟
+  - دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.
+  correct_answer: ذَهَبْتُ إِلَى الْمَكْتَبَةِ.

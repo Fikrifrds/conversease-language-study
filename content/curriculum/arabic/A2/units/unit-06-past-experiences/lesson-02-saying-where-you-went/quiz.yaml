@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Ke mana kamu pergi?"?
+  options:
+  - أَيْنَ ذَهَبْتَ؟
+  - ذَهَبْتُ إِلَى السُّوقِ.
+  - ذَهَبْتُ مَعَ صَدِيقِي.
+  correct_answer: أَيْنَ ذَهَبْتَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya pergi ke pasar."?
+  options:
+  - ذَهَبْتُ إِلَى السُّوقِ.
+  - أَيْنَ ذَهَبْتَ؟
+  - ذَهَبْتُ مَعَ صَدِيقِي.
+  correct_answer: ذَهَبْتُ إِلَى السُّوقِ.

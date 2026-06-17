@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Pengalamannya baik.'
+  target_response: كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+  acceptable_responses:
+  - كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat tempat yang indah.'
+  target_response: رَأَيْتُ مَكَانًا جَمِيلًا.
+  acceptable_responses:
+  - رَأَيْتُ مَكَانًا جَمِيلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya suka makanannya.'
+  target_response: أَعْجَبَنِي الطَّعَامُ.
+  acceptable_responses:
+  - أَعْجَبَنِي الطَّعَامُ.
