@@ -1,0 +1,50 @@
+scenario_key: arabic_making_an_appointment
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menelepon klinik untuk membuat janji,
+  memilih hari dan waktu, serta menyebut nama untuk pendaftaran.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  hint: 'Jawab dengan pola: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.'
+  sample_answer: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  focus: 'Latihan frasa: Saya ingin janji dengan dokter.'
+  expected_keywords:
+  - أُرِيدُ
+  - مَوْعِدًا
+  - مَعَ
+  indonesian_explanation: Saya ingin janji dengan dokter.
+- coach: 'استخدم: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟'
+  hint: 'Jawab dengan pola: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟'
+  sample_answer: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+  focus: 'Latihan frasa: Apakah ada janji besok?'
+  expected_keywords:
+  - هَلْ
+  - يُوجَدُ
+  - مَوْعِدٌ
+  indonesian_explanation: Apakah ada janji besok?
+- coach: 'استخدم: صَبَاحًا أَمْ مَسَاءً؟'
+  hint: 'Jawab dengan pola: صَبَاحًا أَمْ مَسَاءً؟'
+  sample_answer: صَبَاحًا أَمْ مَسَاءً؟
+  focus: 'Latihan frasa: Pagi atau sore?'
+  expected_keywords:
+  - صَبَاحًا
+  - أَمْ
+  - مَسَاءً
+  indonesian_explanation: Pagi atau sore?
+target_phrases:
+- أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+- هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+- صَبَاحًا أَمْ مَسَاءً؟
+- السَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

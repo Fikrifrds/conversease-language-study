@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya sakit di tenggorokan.'
+  target_response: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  acceptable_responses:
+  - عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya batuk ringan.'
+  target_response: لَدَيَّ سُعَالٌ خَفِيفٌ.
+  acceptable_responses:
+  - لَدَيَّ سُعَالٌ خَفِيفٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Suhu badan saya sedikit tinggi.'
+  target_response: دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+  acceptable_responses:
+  - دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.

@@ -1,0 +1,50 @@
+scenario_key: arabic_describing_simple_symptoms
+mode: lesson_practice_coach
+level_code: A2
+opening_line: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan petugas kesehatan dan
+  menjelaskan gejala ringan secara jelas: bagian tubuh, intensitas, dan durasi.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  hint: 'Jawab dengan pola: عِنْدِي أَلَمٌ فِي الْحَلْقِ.'
+  sample_answer: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  focus: 'Latihan frasa: Saya punya sakit di tenggorokan.'
+  expected_keywords:
+  - عِنْدِي
+  - أَلَمٌ
+  - فِي
+  indonesian_explanation: Saya punya sakit di tenggorokan.
+- coach: 'استخدم: لَدَيَّ سُعَالٌ خَفِيفٌ.'
+  hint: 'Jawab dengan pola: لَدَيَّ سُعَالٌ خَفِيفٌ.'
+  sample_answer: لَدَيَّ سُعَالٌ خَفِيفٌ.
+  focus: 'Latihan frasa: Saya punya batuk ringan.'
+  expected_keywords:
+  - لَدَيَّ
+  - سُعَالٌ
+  - خَفِيفٌ
+  indonesian_explanation: Saya punya batuk ringan.
+- coach: 'استخدم: دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.'
+  hint: 'Jawab dengan pola: دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.'
+  sample_answer: دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+  focus: 'Latihan frasa: Suhu badan saya sedikit tinggi.'
+  expected_keywords:
+  - دَرَجَةُ
+  - حَرَارَتِي
+  - مُرْتَفِعَةٌ
+  indonesian_explanation: Suhu badan saya sedikit tinggi.
+target_phrases:
+- عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+- لَدَيَّ سُعَالٌ خَفِيفٌ.
+- دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+- مُنْذُ يَوْمَيْنِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

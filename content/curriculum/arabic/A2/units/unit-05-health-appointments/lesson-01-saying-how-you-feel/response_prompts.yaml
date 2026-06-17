@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya merasa lelah.'
+  target_response: أَشْعُرُ بِتَعَبٍ.
+  acceptable_responses:
+  - أَشْعُرُ بِتَعَبٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya sakit kepala ringan.'
+  target_response: عِنْدِي صُدَاعٌ خَفِيفٌ.
+  acceptable_responses:
+  - عِنْدِي صُدَاعٌ خَفِيفٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak merasa nyaman.'
+  target_response: لَا أَشْعُرُ بِالرَّاحَةِ.
+  acceptable_responses:
+  - لَا أَشْعُرُ بِالرَّاحَةِ.

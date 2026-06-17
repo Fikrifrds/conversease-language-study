@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya punya sakit di tenggorokan."?
+  options:
+  - عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  - لَدَيَّ سُعَالٌ خَفِيفٌ.
+  - دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+  correct_answer: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya punya batuk ringan."?
+  options:
+  - لَدَيَّ سُعَالٌ خَفِيفٌ.
+  - عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  - دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+  correct_answer: لَدَيَّ سُعَالٌ خَفِيفٌ.

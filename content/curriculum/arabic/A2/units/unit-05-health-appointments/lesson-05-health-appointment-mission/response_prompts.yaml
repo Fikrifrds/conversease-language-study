@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak merasa nyaman.'
+  target_response: لَا أَشْعُرُ بِالرَّاحَةِ.
+  acceptable_responses:
+  - لَا أَشْعُرُ بِالرَّاحَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya sakit ringan.'
+  target_response: عِنْدِي أَلَمٌ خَفِيفٌ.
+  acceptable_responses:
+  - عِنْدِي أَلَمٌ خَفِيفٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin janji dengan dokter.'
+  target_response: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  acceptable_responses:
+  - أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.

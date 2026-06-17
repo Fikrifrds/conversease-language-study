@@ -1,0 +1,16 @@
+phrases:
+- phrase: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  meaning_id: Saya ingin janji dengan dokter.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin janji dengan dokter.'
+- phrase: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+  meaning_id: Apakah ada janji besok?
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah ada janji besok?'
+- phrase: صَبَاحًا أَمْ مَسَاءً؟
+  meaning_id: Pagi atau sore?
+  usage_note: 'Gunakan saat ingin mengatakan: Pagi atau sore?'
+- phrase: السَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ.
+  meaning_id: Jam sepuluh cocok.
+  usage_note: 'Gunakan saat ingin mengatakan: Jam sepuluh cocok.'
+- phrase: الْمَوْعِدُ بِاسْمِي.
+  meaning_id: Janji atas nama saya.
+  usage_note: 'Gunakan saat ingin mengatakan: Janji atas nama saya.'

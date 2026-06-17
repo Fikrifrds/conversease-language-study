@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya merasa lelah."?
+  options:
+  - أَشْعُرُ بِتَعَبٍ.
+  - عِنْدِي صُدَاعٌ خَفِيفٌ.
+  - لَا أَشْعُرُ بِالرَّاحَةِ.
+  correct_answer: أَشْعُرُ بِتَعَبٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya punya sakit kepala ringan."?
+  options:
+  - عِنْدِي صُدَاعٌ خَفِيفٌ.
+  - أَشْعُرُ بِتَعَبٍ.
+  - لَا أَشْعُرُ بِالرَّاحَةِ.
+  correct_answer: عِنْدِي صُدَاعٌ خَفِيفٌ.

@@ -1,0 +1,50 @@
+scenario_key: arabic_confirming_appointment_details
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu ingin memastikan ulang detail janji: nama,
+  tanggal, waktu, lokasi, dan nomor kontak.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+  hint: 'Jawab dengan pola: أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.'
+  sample_answer: أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+  focus: 'Latihan frasa: Saya ingin mengonfirmasi janji.'
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أُؤَكِّدَ
+  indonesian_explanation: Saya ingin mengonfirmasi janji.
+- coach: 'استخدم: هَلِ الْمَوْعِدُ غَدًا؟'
+  hint: 'Jawab dengan pola: هَلِ الْمَوْعِدُ غَدًا؟'
+  sample_answer: هَلِ الْمَوْعِدُ غَدًا؟
+  focus: 'Latihan frasa: Apakah janjinya besok?'
+  expected_keywords:
+  - هَلِ
+  - الْمَوْعِدُ
+  - غَدًا
+  indonesian_explanation: Apakah janjinya besok?
+- coach: 'استخدم: فِي أَيِّ طَابِقٍ؟'
+  hint: 'Jawab dengan pola: فِي أَيِّ طَابِقٍ؟'
+  sample_answer: فِي أَيِّ طَابِقٍ؟
+  focus: 'Latihan frasa: Di lantai berapa?'
+  expected_keywords:
+  - فِي
+  - أَيِّ
+  - طَابِقٍ
+  indonesian_explanation: Di lantai berapa?
+target_phrases:
+- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+- هَلِ الْمَوْعِدُ غَدًا؟
+- فِي أَيِّ طَابِقٍ؟
+- هَلْ رَقْمِي صَحِيحٌ؟
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

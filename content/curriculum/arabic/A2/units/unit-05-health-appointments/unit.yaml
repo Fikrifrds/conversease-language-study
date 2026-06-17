@@ -1,0 +1,12 @@
+unit_key: unit-05-health-appointments
+level_code: A2
+title: Health & Appointments
+main_conversation_outcome: Describe simple symptoms, make appointments, and confirm basic health service
+  details.
+status: beta
+lessons:
+- lesson-01-saying-how-you-feel
+- lesson-02-describing-simple-symptoms
+- lesson-03-making-an-appointment
+- lesson-04-confirming-appointment-details
+- lesson-05-health-appointment-mission

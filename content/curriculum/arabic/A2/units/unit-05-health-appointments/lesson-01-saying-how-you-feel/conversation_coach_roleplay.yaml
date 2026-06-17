@@ -1,0 +1,49 @@
+scenario_key: arabic_saying_how_you_feel
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، لَا أَشْعُرُ بِالرَّاحَةِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke klinik dan perlu mengatakan
+  kondisi umum dengan sederhana sebelum petugas mencatat informasi awal.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، لَا أَشْعُرُ بِالرَّاحَةِ.
+  hint: 'Jawab dengan pola: أَشْعُرُ بِتَعَبٍ.'
+  sample_answer: أَشْعُرُ بِتَعَبٍ.
+  focus: 'Latihan frasa: Saya merasa lelah.'
+  expected_keywords:
+  - أَشْعُرُ
+  - بِتَعَبٍ
+  indonesian_explanation: Saya merasa lelah.
+- coach: 'استخدم: عِنْدِي صُدَاعٌ خَفِيفٌ.'
+  hint: 'Jawab dengan pola: عِنْدِي صُدَاعٌ خَفِيفٌ.'
+  sample_answer: عِنْدِي صُدَاعٌ خَفِيفٌ.
+  focus: 'Latihan frasa: Saya punya sakit kepala ringan.'
+  expected_keywords:
+  - عِنْدِي
+  - صُدَاعٌ
+  - خَفِيفٌ
+  indonesian_explanation: Saya punya sakit kepala ringan.
+- coach: 'استخدم: لَا أَشْعُرُ بِالرَّاحَةِ.'
+  hint: 'Jawab dengan pola: لَا أَشْعُرُ بِالرَّاحَةِ.'
+  sample_answer: لَا أَشْعُرُ بِالرَّاحَةِ.
+  focus: 'Latihan frasa: Saya tidak merasa nyaman.'
+  expected_keywords:
+  - لَا
+  - أَشْعُرُ
+  - بِالرَّاحَةِ
+  indonesian_explanation: Saya tidak merasa nyaman.
+target_phrases:
+- أَشْعُرُ بِتَعَبٍ.
+- عِنْدِي صُدَاعٌ خَفِيفٌ.
+- لَا أَشْعُرُ بِالرَّاحَةِ.
+- مُنْذُ هَذَا الصَّبَاحِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

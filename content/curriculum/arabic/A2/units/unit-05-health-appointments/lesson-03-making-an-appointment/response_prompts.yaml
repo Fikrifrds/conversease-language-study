@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin janji dengan dokter.'
+  target_response: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  acceptable_responses:
+  - أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah ada janji besok?'
+  target_response: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+  acceptable_responses:
+  - هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Pagi atau sore?'
+  target_response: صَبَاحًا أَمْ مَسَاءً؟
+  acceptable_responses:
+  - صَبَاحًا أَمْ مَسَاءً؟

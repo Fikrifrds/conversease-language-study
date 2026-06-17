@@ -1,0 +1,50 @@
+scenario_key: arabic_health_appointment_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، لَا أَشْعُرُ بِالرَّاحَةِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan kondisi ringan, membuat janji,
+  lalu mengonfirmasi detail appointment dengan petugas klinik.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، لَا أَشْعُرُ بِالرَّاحَةِ.
+  hint: 'Jawab dengan pola: لَا أَشْعُرُ بِالرَّاحَةِ.'
+  sample_answer: لَا أَشْعُرُ بِالرَّاحَةِ.
+  focus: 'Latihan frasa: Saya tidak merasa nyaman.'
+  expected_keywords:
+  - لَا
+  - أَشْعُرُ
+  - بِالرَّاحَةِ
+  indonesian_explanation: Saya tidak merasa nyaman.
+- coach: 'استخدم: عِنْدِي أَلَمٌ خَفِيفٌ.'
+  hint: 'Jawab dengan pola: عِنْدِي أَلَمٌ خَفِيفٌ.'
+  sample_answer: عِنْدِي أَلَمٌ خَفِيفٌ.
+  focus: 'Latihan frasa: Saya punya sakit ringan.'
+  expected_keywords:
+  - عِنْدِي
+  - أَلَمٌ
+  - خَفِيفٌ
+  indonesian_explanation: Saya punya sakit ringan.
+- coach: 'استخدم: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.'
+  hint: 'Jawab dengan pola: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.'
+  sample_answer: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  focus: 'Latihan frasa: Saya ingin janji dengan dokter.'
+  expected_keywords:
+  - أُرِيدُ
+  - مَوْعِدًا
+  - مَعَ
+  indonesian_explanation: Saya ingin janji dengan dokter.
+target_phrases:
+- لَا أَشْعُرُ بِالرَّاحَةِ.
+- عِنْدِي أَلَمٌ خَفِيفٌ.
+- أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+- السَّاعَةُ الْحَادِيَةَ عَشْرَةَ مُنَاسِبَةٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

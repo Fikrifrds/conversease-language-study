@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya ingin janji dengan dokter."?
+  options:
+  - أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  - هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+  - صَبَاحًا أَمْ مَسَاءً؟
+  correct_answer: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah ada janji besok?"?
+  options:
+  - هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟
+  - أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  - صَبَاحًا أَمْ مَسَاءً؟
+  correct_answer: هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟

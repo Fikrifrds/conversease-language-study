@@ -113,30 +113,30 @@ units:
     status: beta
 - unit_key: unit-05-health-appointments
   title: Health & Appointments
-  status: planned
+  status: beta
   main_conversation_outcome: Describe simple symptoms, make appointments, and confirm basic health service
     details.
   lessons:
   - lesson_key: lesson-01-saying-how-you-feel
     slug: arabic-saying-how-you-feel
     title: Saying How You Feel
-    status: planned
+    status: beta
   - lesson_key: lesson-02-describing-simple-symptoms
     slug: arabic-describing-simple-symptoms
     title: Describing Simple Symptoms
-    status: planned
+    status: beta
   - lesson_key: lesson-03-making-an-appointment
     slug: arabic-making-an-appointment
     title: Making an Appointment
-    status: planned
+    status: beta
   - lesson_key: lesson-04-confirming-appointment-details
     slug: arabic-confirming-appointment-details
     title: Confirming Appointment Details
-    status: planned
+    status: beta
   - lesson_key: lesson-05-health-appointment-mission
     slug: arabic-health-appointment-mission
     title: Health Appointment Mission
-    status: planned
+    status: beta
 - unit_key: unit-06-past-experiences
   title: Past Experiences
   status: planned

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mengonfirmasi janji.'
+  target_response: أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah janjinya besok?'
+  target_response: هَلِ الْمَوْعِدُ غَدًا؟
+  acceptable_responses:
+  - هَلِ الْمَوْعِدُ غَدًا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Di lantai berapa?'
+  target_response: فِي أَيِّ طَابِقٍ؟
+  acceptable_responses:
+  - فِي أَيِّ طَابِقٍ؟
