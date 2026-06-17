@@ -84,7 +84,7 @@ class Settings(BaseSettings):
     minimax_tts_timeout_seconds: int = 90
     elevenlabs_api_key: str = ""
     elevenlabs_api_base_url: str = "https://api.elevenlabs.io"
-    elevenlabs_tts_model: str = "eleven_multilingual_v2"
+    elevenlabs_tts_model: str = "eleven_v3"
     elevenlabs_tts_voice_id: str = "3nav5pHC1EYvWOd5LmnA"
     elevenlabs_arabic_male_voice_id: str = "3nav5pHC1EYvWOd5LmnA"
     elevenlabs_arabic_female_voice_id: str = "gVzwmdZzRgBrNjXaTmi5"

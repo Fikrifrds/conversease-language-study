@@ -1555,7 +1555,7 @@ def write_lesson_files(unit: dict[str, Any], item: dict[str, Any]) -> None:
             "lesson_key": item["lesson_key"],
             "status": "not_generated",
             "provider": "elevenlabs",
-            "model": "eleven_multilingual_v2",
+            "model": "eleven_v3",
             "default_voice_id": "multi_speaker",
             "assets": [],
         },

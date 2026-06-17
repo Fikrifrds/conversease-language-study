@@ -1,23 +1,6 @@
 lesson_key: lesson-04-asking-when-you-do-not-understand
-status: generated
+status: not_generated
 provider: elevenlabs
-model: eleven_multilingual_v2
+model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260616T085332Z.wav
-  duration_seconds: 11.13
-  provider: elevenlabs
-  model: eleven_multilingual_v2
-  voice_id: multi_speaker
-  speaker_voices:
-    Fatimah: v7UCHHCrHj1KBa4E41gb
-    Muallim: 3nav5pHC1EYvWOd5LmnA
-  line_count: 5
-  audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260616T085332Z.wav
-  trace_id: IuQLJ3hN6kT5LpmyyP4i,DwCtqNQSCJFCGjs7Quac,k8JxXtiUTvgmZ0QiRLOG,caqrwQgNBiQPkieXWWFQ,bSVrO70atP0SG2waiehD
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-16T08:53:32.447773+00:00'
+assets: []

@@ -479,7 +479,7 @@ class AudioGenerationPayloadTest(unittest.IsolatedAsyncioTestCase):
         ):
             result = await synthesize_dialogue_elevenlabs_tts(
                 turns=turns,
-                model="eleven_multilingual_v2",
+                model="eleven_v3",
                 fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
                 speed=0.9,
                 language="arabic",
