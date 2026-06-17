@@ -36,6 +36,8 @@ Each lesson is a folder of markdown/yaml files (listening_script, useful_phrases
 quiz, roleplay, etc.). The required set and per-file purpose is listed under
 "Required Files Per Lesson" in [content_operations.md](content_operations.md).
 Level scope/targets: `content/curriculum/english/<LEVEL>/LEVEL_SPEC.md`.
+For Arabic, use [arabic_content_standard.md](arabic_content_standard.md) and
+`content/curriculum/arabic/A1` as the baseline quality reference.
 
 Copy from the templates in
 [`content/curriculum/templates/`](../content/curriculum/templates/) — they encode
