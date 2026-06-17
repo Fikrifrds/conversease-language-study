@@ -1,0 +1,50 @@
+scenario_key: arabic_requesting_service_help
+mode: lesson_practice_coach
+level_code: A2
+opening_line: عَفْوًا، هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke bagian layanan karena sebuah
+  perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: عَفْوًا، هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+  hint: 'Jawab dengan pola: هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟'
+  sample_answer: هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+  focus: 'Latihan frasa: Bisakah Anda membantu saya?'
+  expected_keywords:
+  - هَلْ
+  - يُمْكِنُ
+  - أَنْ
+  indonesian_explanation: Bisakah Anda membantu saya?
+- coach: 'استخدم: الْجِهَازُ لَا يَعْمَلُ.'
+  hint: 'Jawab dengan pola: الْجِهَازُ لَا يَعْمَلُ.'
+  sample_answer: الْجِهَازُ لَا يَعْمَلُ.
+  focus: 'Latihan frasa: Perangkatnya tidak bekerja.'
+  expected_keywords:
+  - الْجِهَازُ
+  - لَا
+  - يَعْمَلُ
+  indonesian_explanation: Perangkatnya tidak bekerja.
+- coach: 'استخدم: أَحْتَاجُ إِلَى إِصْلَاحٍ.'
+  hint: 'Jawab dengan pola: أَحْتَاجُ إِلَى إِصْلَاحٍ.'
+  sample_answer: أَحْتَاجُ إِلَى إِصْلَاحٍ.
+  focus: 'Latihan frasa: Saya membutuhkan perbaikan.'
+  expected_keywords:
+  - أَحْتَاجُ
+  - إِلَى
+  - إِصْلَاحٍ
+  indonesian_explanation: Saya membutuhkan perbaikan.
+target_phrases:
+- هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+- الْجِهَازُ لَا يَعْمَلُ.
+- أَحْتَاجُ إِلَى إِصْلَاحٍ.
+- هَلْ عِنْدَكَ ضَمَانٌ؟
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,27 @@
+lesson_key: lesson-02-asking-about-size-and-color
+slug: arabic-asking-about-size-and-color
+title: Asking About Size and Color
+status: beta
+estimated_minutes: 12
+conversation_situation: asking_about_size_and_color
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membeli pakaian sederhana dan perlu
+  menanyakan ukuran, warna, serta izin mencoba barang.'
+grammar_summary: Gunakan مَقَاسٌ untuk ukuran, لَوْنٌ untuk warna, dan هَلْ أَسْتَطِيعُ أَنْ ... untuk
+  permintaan sopan.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

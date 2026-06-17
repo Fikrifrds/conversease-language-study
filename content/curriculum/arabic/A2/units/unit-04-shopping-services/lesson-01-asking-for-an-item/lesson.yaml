@@ -1,0 +1,27 @@
+lesson_key: lesson-01-asking-for-an-item
+slug: arabic-asking-for-an-item
+title: Asking for an Item
+status: beta
+estimated_minutes: 12
+conversation_situation: asking_for_an_item
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berada di toko alat tulis dan ingin
+  meminta barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.'
+grammar_summary: Gunakan أَبْحَثُ عَنْ untuk mencari barang, هَلْ عِنْدَكُمْ untuk menanyakan stok, dan
+  سَآخُذُ untuk keputusan membeli.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

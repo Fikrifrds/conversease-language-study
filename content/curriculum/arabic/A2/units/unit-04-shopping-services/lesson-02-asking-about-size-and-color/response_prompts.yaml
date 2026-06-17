@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kalian punya ukuran yang lebih besar?'
+  target_response: هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+  acceptable_responses:
+  - هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin warna putih.'
+  target_response: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+  acceptable_responses:
+  - أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini terlalu kecil.'
+  target_response: هَذَا صَغِيرٌ جِدًّا.
+  acceptable_responses:
+  - هَذَا صَغِيرٌ جِدًّا.

@@ -1,0 +1,16 @@
+phrases:
+- phrase: هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+  meaning_id: Bisakah Anda membantu saya?
+  usage_note: 'Gunakan saat ingin mengatakan: Bisakah Anda membantu saya?'
+- phrase: الْجِهَازُ لَا يَعْمَلُ.
+  meaning_id: Perangkatnya tidak bekerja.
+  usage_note: 'Gunakan saat ingin mengatakan: Perangkatnya tidak bekerja.'
+- phrase: أَحْتَاجُ إِلَى إِصْلَاحٍ.
+  meaning_id: Saya membutuhkan perbaikan.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya membutuhkan perbaikan.'
+- phrase: هَلْ عِنْدَكَ ضَمَانٌ؟
+  meaning_id: Apakah kamu punya garansi?
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kamu punya garansi?'
+- phrase: سَأَفْحَصُهُ الآنَ.
+  meaning_id: Saya akan memeriksanya sekarang.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya akan memeriksanya sekarang.'

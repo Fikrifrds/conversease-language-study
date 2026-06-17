@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mencari tas kecil.'
+  target_response: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+  acceptable_responses:
+  - أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah ada warna biru?'
+  target_response: هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+  acceptable_responses:
+  - هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Mana yang lebih baik?'
+  target_response: أَيُّهُمَا أَفْضَلُ؟
+  acceptable_responses:
+  - أَيُّهُمَا أَفْضَلُ؟

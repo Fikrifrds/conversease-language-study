@@ -87,30 +87,30 @@ units:
     status: beta
 - unit_key: unit-04-shopping-services
   title: Shopping & Services
-  status: planned
+  status: beta
   main_conversation_outcome: Ask for items, compare simple options, request service help, and confirm
     details.
   lessons:
   - lesson_key: lesson-01-asking-for-an-item
     slug: arabic-asking-for-an-item
     title: Asking for an Item
-    status: planned
+    status: beta
   - lesson_key: lesson-02-asking-about-size-and-color
     slug: arabic-asking-about-size-and-color
     title: Asking About Size and Color
-    status: planned
+    status: beta
   - lesson_key: lesson-03-comparing-simple-options
     slug: arabic-comparing-simple-options
     title: Comparing Simple Options
-    status: planned
+    status: beta
   - lesson_key: lesson-04-requesting-service-help
     slug: arabic-requesting-service-help
     title: Requesting Service Help
-    status: planned
+    status: beta
   - lesson_key: lesson-05-shopping-service-mission
     slug: arabic-shopping-service-mission
     title: Shopping Service Mission
-    status: planned
+    status: beta
 - unit_key: unit-05-health-appointments
   title: Health & Appointments
   status: planned

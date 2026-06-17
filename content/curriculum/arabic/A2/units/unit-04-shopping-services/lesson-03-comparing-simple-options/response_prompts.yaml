@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Ini lebih murah.'
+  target_response: هَذَا أَرْخَصُ.
+  acceptable_responses:
+  - هَذَا أَرْخَصُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini lebih bagus kualitasnya.'
+  target_response: هَذَا أَجْوَدُ.
+  acceptable_responses:
+  - هَذَا أَجْوَدُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mana yang lebih baik?'
+  target_response: أَيُّهُمَا أَفْضَلُ؟
+  acceptable_responses:
+  - أَيُّهُمَا أَفْضَلُ؟

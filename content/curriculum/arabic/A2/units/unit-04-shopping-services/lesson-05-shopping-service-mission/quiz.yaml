@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya mencari tas kecil."?
+  options:
+  - أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+  - هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah ada warna biru?"?
+  options:
+  - هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+  - أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya mencari pulpen biru."?
+  options:
+  - أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  - هَلْ عِنْدَكُمْ هَذَا؟
+  - هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+  correct_answer: أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah kalian punya ini?"?
+  options:
+  - هَلْ عِنْدَكُمْ هَذَا؟
+  - أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  - هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+  correct_answer: هَلْ عِنْدَكُمْ هَذَا؟

@@ -1,0 +1,50 @@
+scenario_key: arabic_asking_for_an_item
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berada di toko alat tulis dan ingin meminta
+  barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  hint: 'Jawab dengan pola: أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.'
+  sample_answer: أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  focus: 'Latihan frasa: Saya mencari pulpen biru.'
+  expected_keywords:
+  - أَبْحَثُ
+  - عَنْ
+  - قَلَمٍ
+  indonesian_explanation: Saya mencari pulpen biru.
+- coach: 'استخدم: هَلْ عِنْدَكُمْ هَذَا؟'
+  hint: 'Jawab dengan pola: هَلْ عِنْدَكُمْ هَذَا؟'
+  sample_answer: هَلْ عِنْدَكُمْ هَذَا؟
+  focus: 'Latihan frasa: Apakah kalian punya ini?'
+  expected_keywords:
+  - هَلْ
+  - عِنْدَكُمْ
+  - هَذَا
+  indonesian_explanation: Apakah kalian punya ini?
+- coach: 'استخدم: هَلْ يُوجَدُ لَوْنٌ آخَرُ؟'
+  hint: 'Jawab dengan pola: هَلْ يُوجَدُ لَوْنٌ آخَرُ؟'
+  sample_answer: هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+  focus: 'Latihan frasa: Apakah ada warna lain?'
+  expected_keywords:
+  - هَلْ
+  - يُوجَدُ
+  - لَوْنٌ
+  indonesian_explanation: Apakah ada warna lain?
+target_phrases:
+- أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+- هَلْ عِنْدَكُمْ هَذَا؟
+- هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+- أُرِيدُ وَاحِدًا، مِنْ فَضْلِكَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

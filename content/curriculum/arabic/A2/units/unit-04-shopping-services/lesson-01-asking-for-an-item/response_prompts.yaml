@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mencari pulpen biru.'
+  target_response: أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  acceptable_responses:
+  - أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kalian punya ini?'
+  target_response: هَلْ عِنْدَكُمْ هَذَا؟
+  acceptable_responses:
+  - هَلْ عِنْدَكُمْ هَذَا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah ada warna lain?'
+  target_response: هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+  acceptable_responses:
+  - هَلْ يُوجَدُ لَوْنٌ آخَرُ؟

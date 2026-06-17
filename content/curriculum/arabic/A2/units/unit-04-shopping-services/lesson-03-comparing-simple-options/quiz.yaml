@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Ini lebih murah."?
+  options:
+  - هَذَا أَرْخَصُ.
+  - هَذَا أَجْوَدُ.
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: هَذَا أَرْخَصُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Ini lebih bagus kualitasnya."?
+  options:
+  - هَذَا أَجْوَدُ.
+  - هَذَا أَرْخَصُ.
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: هَذَا أَجْوَدُ.

@@ -1,0 +1,49 @@
+scenario_key: arabic_shopping_service_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu memilih barang di toko, membandingkan
+  pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+  hint: 'Jawab dengan pola: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.'
+  sample_answer: أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+  focus: 'Latihan frasa: Saya mencari tas kecil.'
+  expected_keywords:
+  - أَبْحَثُ
+  - عَنْ
+  - حَقِيبَةٍ
+  indonesian_explanation: Saya mencari tas kecil.
+- coach: 'استخدم: هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟'
+  hint: 'Jawab dengan pola: هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟'
+  sample_answer: هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+  focus: 'Latihan frasa: Apakah ada warna biru?'
+  expected_keywords:
+  - هَلْ
+  - يُوجَدُ
+  - لَوْنٌ
+  indonesian_explanation: Apakah ada warna biru?
+- coach: 'استخدم: أَيُّهُمَا أَفْضَلُ؟'
+  hint: 'Jawab dengan pola: أَيُّهُمَا أَفْضَلُ؟'
+  sample_answer: أَيُّهُمَا أَفْضَلُ؟
+  focus: 'Latihan frasa: Mana yang lebih baik?'
+  expected_keywords:
+  - أَيُّهُمَا
+  - أَفْضَلُ
+  indonesian_explanation: Mana yang lebih baik?
+target_phrases:
+- أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.
+- هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟
+- أَيُّهُمَا أَفْضَلُ؟
+- سَآخُذُ الْأَزْرَقَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

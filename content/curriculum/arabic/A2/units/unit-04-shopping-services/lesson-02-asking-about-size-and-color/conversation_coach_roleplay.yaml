@@ -1,0 +1,50 @@
+scenario_key: arabic_asking_about_size_and_color
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أُرِيدُ قَمِيصًا أَبْيَضَ، مِنْ فَضْلِكِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membeli pakaian sederhana dan perlu menanyakan
+  ukuran, warna, serta izin mencoba barang.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أُرِيدُ قَمِيصًا أَبْيَضَ، مِنْ فَضْلِكِ.
+  hint: 'Jawab dengan pola: هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟'
+  sample_answer: هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+  focus: 'Latihan frasa: Apakah kalian punya ukuran yang lebih besar?'
+  expected_keywords:
+  - هَلْ
+  - عِنْدَكُمْ
+  - مَقَاسٌ
+  indonesian_explanation: Apakah kalian punya ukuran yang lebih besar?
+- coach: 'استخدم: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.'
+  hint: 'Jawab dengan pola: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.'
+  sample_answer: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+  focus: 'Latihan frasa: Saya ingin warna putih.'
+  expected_keywords:
+  - أُرِيدُ
+  - اللَّوْنَ
+  - الْأَبْيَضَ
+  indonesian_explanation: Saya ingin warna putih.
+- coach: 'استخدم: هَذَا صَغِيرٌ جِدًّا.'
+  hint: 'Jawab dengan pola: هَذَا صَغِيرٌ جِدًّا.'
+  sample_answer: هَذَا صَغِيرٌ جِدًّا.
+  focus: 'Latihan frasa: Ini terlalu kecil.'
+  expected_keywords:
+  - هَذَا
+  - صَغِيرٌ
+  - جِدًّا
+  indonesian_explanation: Ini terlalu kecil.
+target_phrases:
+- هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+- أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+- هَذَا صَغِيرٌ جِدًّا.
+- هَذَا مُنَاسِبٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

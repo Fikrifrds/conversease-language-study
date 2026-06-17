@@ -1,0 +1,47 @@
+scenario_key: arabic_comparing_simple_options
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أُرِيدُ حَقِيبَةً صَغِيرَةً. أَيُّهُمَا أَفْضَلُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membandingkan dua barang sederhana berdasarkan
+  harga, kualitas, dan kecocokan sebelum memilih.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أُرِيدُ حَقِيبَةً صَغِيرَةً. أَيُّهُمَا أَفْضَلُ؟
+  hint: 'Jawab dengan pola: هَذَا أَرْخَصُ.'
+  sample_answer: هَذَا أَرْخَصُ.
+  focus: 'Latihan frasa: Ini lebih murah.'
+  expected_keywords:
+  - هَذَا
+  - أَرْخَصُ
+  indonesian_explanation: Ini lebih murah.
+- coach: 'استخدم: هَذَا أَجْوَدُ.'
+  hint: 'Jawab dengan pola: هَذَا أَجْوَدُ.'
+  sample_answer: هَذَا أَجْوَدُ.
+  focus: 'Latihan frasa: Ini lebih bagus kualitasnya.'
+  expected_keywords:
+  - هَذَا
+  - أَجْوَدُ
+  indonesian_explanation: Ini lebih bagus kualitasnya.
+- coach: 'استخدم: أَيُّهُمَا أَفْضَلُ؟'
+  hint: 'Jawab dengan pola: أَيُّهُمَا أَفْضَلُ؟'
+  sample_answer: أَيُّهُمَا أَفْضَلُ؟
+  focus: 'Latihan frasa: Mana yang lebih baik?'
+  expected_keywords:
+  - أَيُّهُمَا
+  - أَفْضَلُ
+  indonesian_explanation: Mana yang lebih baik?
+target_phrases:
+- هَذَا أَرْخَصُ.
+- هَذَا أَجْوَدُ.
+- أَيُّهُمَا أَفْضَلُ؟
+- أُفَضِّلُ هَذَا.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

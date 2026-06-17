@@ -1,0 +1,11 @@
+unit_key: unit-04-shopping-services
+level_code: A2
+title: Shopping & Services
+main_conversation_outcome: Ask for items, compare simple options, request service help, and confirm details.
+status: beta
+lessons:
+- lesson-01-asking-for-an-item
+- lesson-02-asking-about-size-and-color
+- lesson-03-comparing-simple-options
+- lesson-04-requesting-service-help
+- lesson-05-shopping-service-mission

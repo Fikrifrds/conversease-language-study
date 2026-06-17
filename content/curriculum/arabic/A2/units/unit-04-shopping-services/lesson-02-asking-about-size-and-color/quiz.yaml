@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apakah kalian punya ukuran yang lebih besar?"?
+  options:
+  - هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+  - أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+  - هَذَا صَغِيرٌ جِدًّا.
+  correct_answer: هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya ingin warna putih."?
+  options:
+  - أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+  - هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+  - هَذَا صَغِيرٌ جِدًّا.
+  correct_answer: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.

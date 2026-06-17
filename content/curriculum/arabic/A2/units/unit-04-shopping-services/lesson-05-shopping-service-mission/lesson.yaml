@@ -1,0 +1,27 @@
+lesson_key: lesson-05-shopping-service-mission
+slug: arabic-shopping-service-mission
+title: Shopping Service Mission
+status: beta
+estimated_minutes: 12
+conversation_situation: shopping_service_mission
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu memilih barang di toko, membandingkan
+  pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.'
+grammar_summary: Gabungkan أَبْحَثُ عَنْ untuk mencari barang, أَيُّهُمَا أَفْضَلُ untuk membandingkan,
+  dan هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي untuk layanan.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

@@ -1,0 +1,27 @@
+lesson_key: lesson-04-requesting-service-help
+slug: arabic-requesting-service-help
+title: Requesting Service Help
+status: beta
+estimated_minutes: 12
+conversation_situation: requesting_service_help
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke bagian layanan karena sebuah
+  perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.'
+grammar_summary: Gunakan هَلْ يُمْكِنُ أَنْ ... untuk meminta bantuan, لَا يَعْمَلُ untuk masalah, dan
+  سَأَفْحَصُهُ untuk respons layanan.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65
