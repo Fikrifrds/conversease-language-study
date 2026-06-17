@@ -60,7 +60,7 @@ UNIT = {
     "title": "Social Follow-up",
     "status": "beta",
     "main_conversation_outcome": (
-        "Keep a short Fusha conversation going with follow-up questions, reactions, "
+        "Keep a short Arabic conversation going with follow-up questions, reactions, "
         "and simple personal details."
     ),
     "lessons": [
@@ -383,7 +383,7 @@ def write_lesson_files(item: dict[str, Any]) -> None:
 
     (lesson_dir / "lesson.md").write_text(
         f"# {item['title']}\n\n"
-        "Setelah lesson ini, kamu bisa menjaga percakapan Fusha pendek dengan lebih alami.\n\n"
+        "Setelah lesson ini, kamu bisa menjaga percakapan Arab pendek dengan lebih alami.\n\n"
         "## Situation\n\n"
         f"{item['situation']}\n\n"
         "## Catatan Belajar\n\n"
@@ -550,7 +550,8 @@ def main() -> None:
     for item in UNIT["lessons"]:
         write_lesson_files(item)
     update_tracker()
-    print("Generated Arabic A2 Unit 1 pilot content.")
+    unit_number = UNIT["unit_key"].split("-")[1].lstrip("0") or "0"
+    print(f"Generated Arabic A2 Unit {unit_number} content.")
 
 
 if __name__ == "__main__":

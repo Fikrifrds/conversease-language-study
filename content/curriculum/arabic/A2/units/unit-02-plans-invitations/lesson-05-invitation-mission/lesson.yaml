@@ -1,0 +1,27 @@
+lesson_key: lesson-05-invitation-mission
+slug: arabic-invitation-mission
+title: Invitation Mission
+status: beta
+estimated_minutes: 12
+conversation_situation: invitation_mission
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana belajar bersama,
+  mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.'
+grammar_summary: Gabungkan ajakan dengan هَلْ تُرِيدُ أَنْ, alasan dengan لِأَنَّ, dan reschedule dengan
+  نُغَيِّرَ الْمَوْعِدَ.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

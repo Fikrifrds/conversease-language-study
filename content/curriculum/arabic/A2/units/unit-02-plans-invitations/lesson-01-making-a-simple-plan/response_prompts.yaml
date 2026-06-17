@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan pergi ke perpustakaan.'
+  target_response: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  acceptable_responses:
+  - سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu ingin pergi bersama saya?'
+  target_response: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  acceptable_responses:
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Kapan kita bertemu?'
+  target_response: مَتَى نَلْتَقِي؟
+  acceptable_responses:
+  - مَتَى نَلْتَقِي؟

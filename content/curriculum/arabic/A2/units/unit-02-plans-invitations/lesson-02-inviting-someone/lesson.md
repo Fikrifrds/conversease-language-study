@@ -1,10 +1,10 @@
-# Reacting With Interest
+# Inviting Someone
 
 Setelah lesson ini, kamu bisa menjaga percakapan Arab pendek dengan lebih alami.
 
 ## Situation
 
-Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.
+Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat mengapa kegiatan itu bermanfaat.
 
 ## Catatan Belajar
 

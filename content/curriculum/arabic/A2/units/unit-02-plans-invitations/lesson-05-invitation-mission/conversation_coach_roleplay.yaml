@@ -1,0 +1,50 @@
+scenario_key: arabic_invitation_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي الْيَوْمَ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana belajar bersama, mengajak
+  teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي الْيَوْمَ؟
+  hint: 'Jawab dengan pola: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟'
+  sample_answer: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  focus: 'Latihan frasa: Apakah kamu ingin belajar bersama saya?'
+  expected_keywords:
+  - هَلْ
+  - تُرِيدُ
+  - أَنْ
+  indonesian_explanation: Apakah kamu ingin belajar bersama saya?
+- coach: 'استخدم: لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.'
+  hint: 'Jawab dengan pola: لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.'
+  sample_answer: لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.
+  focus: 'Latihan frasa: Karena tesnya dekat.'
+  expected_keywords:
+  - لِأَنَّ
+  - الِاخْتِبَارَ
+  - قَرِيبٌ
+  indonesian_explanation: Karena tesnya dekat.
+- coach: 'استخدم: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟'
+  hint: 'Jawab dengan pola: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟'
+  sample_answer: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  focus: 'Latihan frasa: Bisakah kita mengubah jadwalnya?'
+  expected_keywords:
+  - هَلْ
+  - يُمْكِنُ
+  - أَنْ
+  indonesian_explanation: Bisakah kita mengubah jadwalnya?
+target_phrases:
+- هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+- لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.
+- هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+- نَلْتَقِي أَمَامَ الْمَرْكَزِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

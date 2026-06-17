@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Ya, saya bisa."?
+  options:
+  - نَعَمْ، أَسْتَطِيعُ.
+  - آسِفٌ، لَا أَسْتَطِيعُ.
+  - لِأَنَّ لَدَيَّ مَوْعِدًا.
+  correct_answer: نَعَمْ، أَسْتَطِيعُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Maaf, saya tidak bisa."?
+  options:
+  - آسِفٌ، لَا أَسْتَطِيعُ.
+  - نَعَمْ، أَسْتَطِيعُ.
+  - لِأَنَّ لَدَيَّ مَوْعِدًا.
+  correct_answer: آسِفٌ، لَا أَسْتَطِيعُ.

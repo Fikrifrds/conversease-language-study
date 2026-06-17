@@ -1,0 +1,49 @@
+scenario_key: arabic_making_a_simple_plan
+mode: lesson_practice_coach
+level_code: A2
+opening_line: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ بَعْدَ الدَّرْسِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana sederhana dengan teman:
+  menentukan kegiatan, hari, waktu, dan tempat bertemu.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ بَعْدَ الدَّرْسِ.
+  hint: 'Jawab dengan pola: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.'
+  sample_answer: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  focus: 'Latihan frasa: Saya akan pergi ke perpustakaan.'
+  expected_keywords:
+  - سَأَذْهَبُ
+  - إِلَى
+  - الْمَكْتَبَةِ
+  indonesian_explanation: Saya akan pergi ke perpustakaan.
+- coach: 'استخدم: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟'
+  hint: 'Jawab dengan pola: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟'
+  sample_answer: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  focus: 'Latihan frasa: Apakah kamu ingin pergi bersama saya?'
+  expected_keywords:
+  - هَلْ
+  - تُرِيدُ
+  - أَنْ
+  indonesian_explanation: Apakah kamu ingin pergi bersama saya?
+- coach: 'استخدم: مَتَى نَلْتَقِي؟'
+  hint: 'Jawab dengan pola: مَتَى نَلْتَقِي؟'
+  sample_answer: مَتَى نَلْتَقِي؟
+  focus: 'Latihan frasa: Kapan kita bertemu?'
+  expected_keywords:
+  - مَتَى
+  - نَلْتَقِي
+  indonesian_explanation: Kapan kita bertemu?
+target_phrases:
+- سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+- هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+- مَتَى نَلْتَقِي؟
+- نَلْتَقِي السَّاعَةَ الرَّابِعَةَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,16 @@
+phrases:
+- phrase: نَعَمْ، أَسْتَطِيعُ.
+  meaning_id: Ya, saya bisa.
+  usage_note: 'Gunakan saat ingin mengatakan: Ya, saya bisa.'
+- phrase: آسِفٌ، لَا أَسْتَطِيعُ.
+  meaning_id: Maaf, saya tidak bisa.
+  usage_note: 'Gunakan saat ingin mengatakan: Maaf, saya tidak bisa.'
+- phrase: لِأَنَّ لَدَيَّ مَوْعِدًا.
+  meaning_id: Karena saya punya janji.
+  usage_note: 'Gunakan saat ingin mengatakan: Karena saya punya janji.'
+- phrase: رُبَّمَا فِي وَقْتٍ آخَرَ.
+  meaning_id: Mungkin di waktu lain.
+  usage_note: 'Gunakan saat ingin mengatakan: Mungkin di waktu lain.'
+- phrase: لَا مُشْكِلَةَ.
+  meaning_id: Tidak masalah.
+  usage_note: 'Gunakan saat ingin mengatakan: Tidak masalah.'

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apakah kamu ingin belajar bersama saya?"?
+  options:
+  - هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  - لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.
+  - هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  correct_answer: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Karena tesnya dekat."?
+  options:
+  - لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.
+  - هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  - هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  correct_answer: لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.

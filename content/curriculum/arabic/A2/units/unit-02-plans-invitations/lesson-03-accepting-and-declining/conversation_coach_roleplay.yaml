@@ -1,0 +1,49 @@
+scenario_key: arabic_accepting_and_declining
+mode: lesson_practice_coach
+level_code: A2
+opening_line: هَلْ تَأْتِي إِلَى الْمَكْتَبَةِ مَعِي؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menerima satu ajakan dan menolak ajakan
+  lain dengan sopan sambil memberi alasan pendek.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: هَلْ تَأْتِي إِلَى الْمَكْتَبَةِ مَعِي؟
+  hint: 'Jawab dengan pola: نَعَمْ، أَسْتَطِيعُ.'
+  sample_answer: نَعَمْ، أَسْتَطِيعُ.
+  focus: 'Latihan frasa: Ya, saya bisa.'
+  expected_keywords:
+  - نَعَمْ،
+  - أَسْتَطِيعُ
+  indonesian_explanation: Ya, saya bisa.
+- coach: 'استخدم: آسِفٌ، لَا أَسْتَطِيعُ.'
+  hint: 'Jawab dengan pola: آسِفٌ، لَا أَسْتَطِيعُ.'
+  sample_answer: آسِفٌ، لَا أَسْتَطِيعُ.
+  focus: 'Latihan frasa: Maaf, saya tidak bisa.'
+  expected_keywords:
+  - آسِفٌ،
+  - لَا
+  - أَسْتَطِيعُ
+  indonesian_explanation: Maaf, saya tidak bisa.
+- coach: 'استخدم: لِأَنَّ لَدَيَّ مَوْعِدًا.'
+  hint: 'Jawab dengan pola: لِأَنَّ لَدَيَّ مَوْعِدًا.'
+  sample_answer: لِأَنَّ لَدَيَّ مَوْعِدًا.
+  focus: 'Latihan frasa: Karena saya punya janji.'
+  expected_keywords:
+  - لِأَنَّ
+  - لَدَيَّ
+  - مَوْعِدًا
+  indonesian_explanation: Karena saya punya janji.
+target_phrases:
+- نَعَمْ، أَسْتَطِيعُ.
+- آسِفٌ، لَا أَسْتَطِيعُ.
+- لِأَنَّ لَدَيَّ مَوْعِدًا.
+- رُبَّمَا فِي وَقْتٍ آخَرَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

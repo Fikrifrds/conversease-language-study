@@ -1,10 +1,10 @@
-# Reacting With Interest
+# Rescheduling Politely
 
 Setelah lesson ini, kamu bisa menjaga percakapan Arab pendek dengan lebih alami.
 
 ## Situation
 
-Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.
+Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu dengan sopan.
 
 ## Catatan Belajar
 

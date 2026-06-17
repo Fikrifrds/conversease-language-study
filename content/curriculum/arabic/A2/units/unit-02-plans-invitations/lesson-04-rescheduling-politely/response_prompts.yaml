@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak bisa pada waktu ini.'
+  target_response: لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+  acceptable_responses:
+  - لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Bisakah kita mengubah jadwalnya?'
+  target_response: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  acceptable_responses:
+  - هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana dengan jam lima?'
+  target_response: مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+  acceptable_responses:
+  - مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟

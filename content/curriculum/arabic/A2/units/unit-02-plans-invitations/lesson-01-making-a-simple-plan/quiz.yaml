@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan pergi ke perpustakaan."?
+  options:
+  - سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  - مَتَى نَلْتَقِي؟
+  correct_answer: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah kamu ingin pergi bersama saya?"?
+  options:
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  - سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  - مَتَى نَلْتَقِي؟
+  correct_answer: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟

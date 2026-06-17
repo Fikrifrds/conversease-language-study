@@ -1,6 +1,6 @@
 # Social Follow-up Mission
 
-Setelah lesson ini, kamu bisa menjaga percakapan Fusha pendek dengan lebih alami.
+Setelah lesson ini, kamu bisa menjaga percakapan Arab pendek dengan lebih alami.
 
 ## Situation
 

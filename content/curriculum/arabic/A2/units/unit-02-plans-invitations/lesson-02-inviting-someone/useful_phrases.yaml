@@ -1,0 +1,16 @@
+phrases:
+- phrase: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  meaning_id: Apakah kamu ingin belajar bersama saya?
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kamu ingin belajar bersama saya?'
+- phrase: لِأَنَّ الدَّرْسَ مُهِمٌّ.
+  meaning_id: Karena pelajarannya penting.
+  usage_note: 'Gunakan saat ingin mengatakan: Karena pelajarannya penting.'
+- phrase: فِكْرَةٌ جَيِّدَةٌ.
+  meaning_id: Ide yang bagus.
+  usage_note: 'Gunakan saat ingin mengatakan: Ide yang bagus.'
+- phrase: أَنَا مَوْجُودٌ بَعْدَ الْعَصْرِ.
+  meaning_id: Saya ada setelah Asar.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ada setelah Asar.'
+- phrase: نَدْرُسُ فِي الْمَرْكَزِ.
+  meaning_id: Kita belajar di pusat.
+  usage_note: 'Gunakan saat ingin mengatakan: Kita belajar di pusat.'

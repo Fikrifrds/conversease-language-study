@@ -1,8 +1,8 @@
 language: arabic
 language_code: ar
 level_code: A2
-course_slug: arabic-a2-everyday-fusha-conversations
-course_title: Arabic Everyday Fusha Conversations
+course_slug: arabic-a2-everyday-conversations
+course_title: Arabic Everyday Conversations
 access_tier: pro_beta
 target_lesson_count: 40
 quality_reference: docs/arabic_content_standard.md
@@ -10,7 +10,7 @@ units:
 - unit_key: unit-01-social-follow-up
   title: Social Follow-up
   status: beta
-  main_conversation_outcome: Keep a short Fusha conversation going with follow-up questions, reactions,
+  main_conversation_outcome: Keep a short Arabic conversation going with follow-up questions, reactions,
     and simple personal details.
   lessons:
   - lesson_key: lesson-01-reconnecting-after-class
@@ -35,30 +35,30 @@ units:
     status: beta
 - unit_key: unit-02-plans-invitations
   title: Plans & Invitations
-  status: planned
+  status: beta
   main_conversation_outcome: Invite someone, accept or decline politely, reschedule, and confirm time
-    and place in Fusha.
+    and place in Arabic.
   lessons:
   - lesson_key: lesson-01-making-a-simple-plan
     slug: arabic-making-a-simple-plan
     title: Making a Simple Plan
-    status: planned
+    status: beta
   - lesson_key: lesson-02-inviting-someone
     slug: arabic-inviting-someone
     title: Inviting Someone
-    status: planned
+    status: beta
   - lesson_key: lesson-03-accepting-and-declining
     slug: arabic-accepting-and-declining
     title: Accepting and Declining
-    status: planned
+    status: beta
   - lesson_key: lesson-04-rescheduling-politely
     slug: arabic-rescheduling-politely
     title: Rescheduling Politely
-    status: planned
+    status: beta
   - lesson_key: lesson-05-invitation-mission
     slug: arabic-invitation-mission
     title: Invitation Mission
-    status: planned
+    status: beta
 - unit_key: unit-03-transport-travel
   title: Transport & Travel
   status: planned
@@ -166,7 +166,7 @@ units:
   title: Opinions & Reasons
   status: planned
   main_conversation_outcome: Give simple opinions, short reasons, agreement, disagreement, and preference
-    in Fusha.
+    in Arabic.
   lessons:
   - lesson_key: lesson-01-saying-what-you-think
     slug: arabic-saying-what-you-think

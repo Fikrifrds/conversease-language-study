@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu ingin belajar bersama saya?'
+  target_response: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  acceptable_responses:
+  - هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Karena pelajarannya penting.'
+  target_response: لِأَنَّ الدَّرْسَ مُهِمٌّ.
+  acceptable_responses:
+  - لِأَنَّ الدَّرْسَ مُهِمٌّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ide yang bagus.'
+  target_response: فِكْرَةٌ جَيِّدَةٌ.
+  acceptable_responses:
+  - فِكْرَةٌ جَيِّدَةٌ.

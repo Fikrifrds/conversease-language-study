@@ -1,0 +1,16 @@
+phrases:
+- phrase: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  meaning_id: Saya akan pergi ke perpustakaan.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya akan pergi ke perpustakaan.'
+- phrase: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  meaning_id: Apakah kamu ingin pergi bersama saya?
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kamu ingin pergi bersama saya?'
+- phrase: مَتَى نَلْتَقِي؟
+  meaning_id: Kapan kita bertemu?
+  usage_note: 'Gunakan saat ingin mengatakan: Kapan kita bertemu?'
+- phrase: نَلْتَقِي السَّاعَةَ الرَّابِعَةَ.
+  meaning_id: Kita bertemu jam empat.
+  usage_note: 'Gunakan saat ingin mengatakan: Kita bertemu jam empat.'
+- phrase: أَمَامَ الْمَكْتَبَةِ.
+  meaning_id: Di depan perpustakaan.
+  usage_note: 'Gunakan saat ingin mengatakan: Di depan perpustakaan.'

@@ -1,0 +1,50 @@
+scenario_key: arabic_rescheduling_politely
+mode: lesson_practice_coach
+level_code: A2
+opening_line: نَلْتَقِي السَّاعَةَ الرَّابِعَةَ، صَحِيحٌ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu tidak bisa datang pada waktu awal, lalu
+  meminta perubahan waktu dengan sopan.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: نَلْتَقِي السَّاعَةَ الرَّابِعَةَ، صَحِيحٌ؟
+  hint: 'Jawab dengan pola: لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.'
+  sample_answer: لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+  focus: 'Latihan frasa: Saya tidak bisa pada waktu ini.'
+  expected_keywords:
+  - لَا
+  - أَسْتَطِيعُ
+  - فِي
+  indonesian_explanation: Saya tidak bisa pada waktu ini.
+- coach: 'استخدم: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟'
+  hint: 'Jawab dengan pola: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟'
+  sample_answer: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  focus: 'Latihan frasa: Bisakah kita mengubah jadwalnya?'
+  expected_keywords:
+  - هَلْ
+  - يُمْكِنُ
+  - أَنْ
+  indonesian_explanation: Bisakah kita mengubah jadwalnya?
+- coach: 'استخدم: مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟'
+  hint: 'Jawab dengan pola: مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟'
+  sample_answer: مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+  focus: 'Latihan frasa: Bagaimana dengan jam lima?'
+  expected_keywords:
+  - مَاذَا
+  - عَنِ
+  - السَّاعَةِ
+  indonesian_explanation: Bagaimana dengan jam lima?
+target_phrases:
+- لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+- هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+- مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+- الْوَقْتُ مُنَاسِبٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,8 +1,8 @@
-# Arabic A2 - Everyday Fusha Conversations
+# Arabic A2 - Everyday Conversations
 
 ## Level Outcome
 
-Learners can handle short everyday Fusha conversations, ask simple follow-up
+Learners can handle short everyday Arabic conversations, ask simple follow-up
 questions, make plans, describe simple past experiences, ask for service help,
 and give short reasons while maintaining clear formal Arabic pronunciation and
 basic reading support.

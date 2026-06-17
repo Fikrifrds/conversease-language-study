@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya tidak bisa pada waktu ini."?
+  options:
+  - لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+  - هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  - مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+  correct_answer: لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Bisakah kita mengubah jadwalnya?"?
+  options:
+  - هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  - لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+  - مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+  correct_answer: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟

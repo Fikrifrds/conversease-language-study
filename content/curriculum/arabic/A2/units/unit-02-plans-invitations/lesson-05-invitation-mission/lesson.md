@@ -1,10 +1,10 @@
-# Reacting With Interest
+# Invitation Mission
 
 Setelah lesson ini, kamu bisa menjaga percakapan Arab pendek dengan lebih alami.
 
 ## Situation
 
-Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.
+Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.
 
 ## Catatan Belajar
 
