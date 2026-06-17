@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana pengalamanmu?'
+  target_response: كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+  acceptable_responses:
+  - كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu ingin pergi bersama saya?'
+  target_response: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  acceptable_responses:
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana saya pergi ke pusat?'
+  target_response: كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+  acceptable_responses:
+  - كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟

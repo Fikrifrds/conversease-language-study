@@ -1,0 +1,16 @@
+phrases:
+- phrase: أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+  meaning_id: Saya bisa berbicara tentang hari saya.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya bisa berbicara tentang hari saya.'
+- phrase: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+  meaning_id: Saya pergi ke tempat baru.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya pergi ke tempat baru.'
+- phrase: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  meaning_id: Saya lebih memilih pagi karena lebih tenang.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya lebih memilih pagi karena lebih tenang.'
+- phrase: أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+  meaning_id: Saya ingin mengonfirmasi janji.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin mengonfirmasi janji.'
+- phrase: فِي رَأْيِي، هَذَا خِيَارٌ جَيِّدٌ.
+  meaning_id: Menurut saya, ini pilihan yang baik.
+  usage_note: 'Gunakan saat ingin mengatakan: Menurut saya, ini pilihan yang baik.'

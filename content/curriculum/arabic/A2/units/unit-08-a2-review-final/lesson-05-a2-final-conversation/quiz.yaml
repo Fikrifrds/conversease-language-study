@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Bagaimana pengalamanmu?"?
+  options:
+  - كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  - كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+  correct_answer: كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah kamu ingin pergi bersama saya?"?
+  options:
+  - هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  - كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+  - كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+  correct_answer: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟

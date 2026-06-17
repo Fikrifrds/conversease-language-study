@@ -1,0 +1,27 @@
+lesson_key: lesson-04-a2-final-test-practice
+slug: arabic-a2-final-test-practice
+title: A2 Final Test Practice
+status: beta
+estimated_minutes: 12
+conversation_situation: a2_final_test_practice
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu latihan simulasi tes A2: menjawab
+  pertanyaan sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.'
+grammar_summary: 'Gunakan jawaban lengkap tapi pendek: satu informasi utama ditambah satu alasan atau
+  detail.'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

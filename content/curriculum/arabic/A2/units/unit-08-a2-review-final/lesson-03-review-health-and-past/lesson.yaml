@@ -1,0 +1,27 @@
+lesson_key: lesson-03-review-health-and-past
+slug: arabic-review-health-and-past
+title: Review Health and Past
+status: beta
+estimated_minutes: 12
+conversation_situation: review_health_and_past
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menghubungi klinik, menjelaskan gejala
+  ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.'
+grammar_summary: Ulangi لَا أَشْعُرُ بِالرَّاحَةِ, عِنْدِي, مُنْذُ, ذَهَبْتُ, ورَجَعْتُ untuk menggabungkan
+  kondisi dan aktivitas masa lalu.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

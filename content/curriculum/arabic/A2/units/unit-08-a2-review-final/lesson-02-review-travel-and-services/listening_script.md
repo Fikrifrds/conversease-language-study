@@ -1,0 +1,14 @@
+# Listening Script
+
+**Dimas:** أُرِيدُ تَذْكِرَةً إِلَى بَانْدُونْغ، مِنْ فَضْلِكِ.
+**Huda:** ذَهَابًا فَقَطْ؟
+**Dimas:** نَعَمْ. مَتَى يَغَادِرُ الْقِطَارُ؟
+**Huda:** يُغَادِرُ السَّاعَةَ الثَّامِنَةَ مِنَ الرَّصِيفِ الثَّانِي.
+**Dimas:** كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+**Huda:** اِمْشِ مُسْتَقِيمًا، ثُمَّ اِتَّجِهْ يَمِينًا.
+**Dimas:** شُكْرًا. وَبَعْدَ الرِّحْلَةِ أَحْتَاجُ إِلَى مُسَاعَدَةٍ فِي هَذَا الْجِهَازِ.
+**Huda:** قِسْمُ الْخِدْمَةِ بِجَانِبِ الْبَابِ.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/female voices according to speaker names.

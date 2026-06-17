@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana pelajaranmu?'
+  target_response: كَيْفَ كَانَ دَرْسُكَ؟
+  acceptable_responses:
+  - كَيْفَ كَانَ دَرْسُكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu lakukan setelah pelajaran?'
+  target_response: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+  acceptable_responses:
+  - مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu ingin belajar bersama saya?'
+  target_response: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  acceptable_responses:
+  - هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟

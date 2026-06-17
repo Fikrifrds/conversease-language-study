@@ -1,0 +1,50 @@
+scenario_key: arabic_a2_final_conversation
+mode: lesson_practice_coach
+level_code: A2
+opening_line: كَيْفَ كَانَتْ تَجْرِبَتُكَ فِي الْمَدِينَةِ يَا خَالِدُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan percakapan A2 lengkap: bertemu
+  teman, membahas pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ كَانَتْ تَجْرِبَتُكَ فِي الْمَدِينَةِ يَا خَالِدُ؟
+  hint: 'Jawab dengan pola: كَيْفَ كَانَتْ تَجْرِبَتُكَ؟'
+  sample_answer: كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+  focus: 'Latihan frasa: Bagaimana pengalamanmu?'
+  expected_keywords:
+  - كَيْفَ
+  - كَانَتْ
+  - تَجْرِبَتُكَ
+  indonesian_explanation: Bagaimana pengalamanmu?
+- coach: 'استخدم: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟'
+  hint: 'Jawab dengan pola: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟'
+  sample_answer: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  focus: 'Latihan frasa: Apakah kamu ingin pergi bersama saya?'
+  expected_keywords:
+  - هَلْ
+  - تُرِيدُ
+  - أَنْ
+  indonesian_explanation: Apakah kamu ingin pergi bersama saya?
+- coach: 'استخدم: كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟'
+  hint: 'Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟'
+  sample_answer: كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+  focus: 'Latihan frasa: Bagaimana saya pergi ke pusat?'
+  expected_keywords:
+  - كَيْفَ
+  - أَذْهَبُ
+  - إِلَى
+  indonesian_explanation: Bagaimana saya pergi ke pusat?
+target_phrases:
+- كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+- هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+- كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

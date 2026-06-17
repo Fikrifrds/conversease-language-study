@@ -1,0 +1,49 @@
+scenario_key: arabic_review_health_and_past
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَرْحَبًا، أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menghubungi klinik, menjelaskan gejala
+  ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَرْحَبًا، أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  hint: 'Jawab dengan pola: لَا أَشْعُرُ بِالرَّاحَةِ.'
+  sample_answer: لَا أَشْعُرُ بِالرَّاحَةِ.
+  focus: 'Latihan frasa: Saya tidak merasa nyaman.'
+  expected_keywords:
+  - لَا
+  - أَشْعُرُ
+  - بِالرَّاحَةِ
+  indonesian_explanation: Saya tidak merasa nyaman.
+- coach: 'استخدم: عِنْدِي أَلَمٌ خَفِيفٌ.'
+  hint: 'Jawab dengan pola: عِنْدِي أَلَمٌ خَفِيفٌ.'
+  sample_answer: عِنْدِي أَلَمٌ خَفِيفٌ.
+  focus: 'Latihan frasa: Saya punya sakit ringan.'
+  expected_keywords:
+  - عِنْدِي
+  - أَلَمٌ
+  - خَفِيفٌ
+  indonesian_explanation: Saya punya sakit ringan.
+- coach: 'استخدم: مُنْذُ أَمْسِ.'
+  hint: 'Jawab dengan pola: مُنْذُ أَمْسِ.'
+  sample_answer: مُنْذُ أَمْسِ.
+  focus: 'Latihan frasa: Sejak kemarin.'
+  expected_keywords:
+  - مُنْذُ
+  - أَمْسِ
+  indonesian_explanation: Sejak kemarin.
+target_phrases:
+- لَا أَشْعُرُ بِالرَّاحَةِ.
+- عِنْدِي أَلَمٌ خَفِيفٌ.
+- مُنْذُ أَمْسِ.
+- ذَهَبْتُ إِلَى الْمَدِينَةِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya tidak merasa nyaman."?
+  options:
+  - لَا أَشْعُرُ بِالرَّاحَةِ.
+  - عِنْدِي أَلَمٌ خَفِيفٌ.
+  - مُنْذُ أَمْسِ.
+  correct_answer: لَا أَشْعُرُ بِالرَّاحَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya punya sakit ringan."?
+  options:
+  - عِنْدِي أَلَمٌ خَفِيفٌ.
+  - لَا أَشْعُرُ بِالرَّاحَةِ.
+  - مُنْذُ أَمْسِ.
+  correct_answer: عِنْدِي أَلَمٌ خَفِيفٌ.

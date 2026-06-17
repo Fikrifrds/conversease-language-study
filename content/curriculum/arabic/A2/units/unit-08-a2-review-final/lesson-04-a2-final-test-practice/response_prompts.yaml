@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa berbicara tentang hari saya.'
+  target_response: أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+  acceptable_responses:
+  - أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pergi ke tempat baru.'
+  target_response: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+  acceptable_responses:
+  - ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih pagi karena lebih tenang.'
+  target_response: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  acceptable_responses:
+  - أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.

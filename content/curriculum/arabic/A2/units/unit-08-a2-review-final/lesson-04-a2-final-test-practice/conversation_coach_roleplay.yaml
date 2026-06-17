@@ -1,0 +1,50 @@
+scenario_key: arabic_a2_final_test_practice
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَاذَا فَعَلْتَ أَمْسِ يَا رَامِي؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu latihan simulasi tes A2: menjawab pertanyaan
+  sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَاذَا فَعَلْتَ أَمْسِ يَا رَامِي؟
+  hint: 'Jawab dengan pola: أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.'
+  sample_answer: أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+  focus: 'Latihan frasa: Saya bisa berbicara tentang hari saya.'
+  expected_keywords:
+  - أَسْتَطِيعُ
+  - أَنْ
+  - أَتَحَدَّثَ
+  indonesian_explanation: Saya bisa berbicara tentang hari saya.
+- coach: 'استخدم: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.'
+  hint: 'Jawab dengan pola: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.'
+  sample_answer: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+  focus: 'Latihan frasa: Saya pergi ke tempat baru.'
+  expected_keywords:
+  - ذَهَبْتُ
+  - إِلَى
+  - مَكَانٍ
+  indonesian_explanation: Saya pergi ke tempat baru.
+- coach: 'استخدم: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.'
+  hint: 'Jawab dengan pola: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.'
+  sample_answer: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  focus: 'Latihan frasa: Saya lebih memilih pagi karena lebih tenang.'
+  expected_keywords:
+  - أُفَضِّلُ
+  - الصَّبَاحَ
+  - لِأَنَّهُ
+  indonesian_explanation: Saya lebih memilih pagi karena lebih tenang.
+target_phrases:
+- أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+- ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+- أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,50 @@
+scenario_key: arabic_review_social_and_plans
+mode: lesson_practice_coach
+level_code: A2
+opening_line: كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ يَا مَرْيَمُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas, bertanya
+  kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ يَا مَرْيَمُ؟
+  hint: 'Jawab dengan pola: كَيْفَ كَانَ دَرْسُكَ؟'
+  sample_answer: كَيْفَ كَانَ دَرْسُكَ؟
+  focus: 'Latihan frasa: Bagaimana pelajaranmu?'
+  expected_keywords:
+  - كَيْفَ
+  - كَانَ
+  - دَرْسُكَ
+  indonesian_explanation: Bagaimana pelajaranmu?
+- coach: 'استخدم: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟'
+  hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟'
+  sample_answer: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+  focus: 'Latihan frasa: Apa yang kamu lakukan setelah pelajaran?'
+  expected_keywords:
+  - مَاذَا
+  - فَعَلْتَ
+  - بَعْدَ
+  indonesian_explanation: Apa yang kamu lakukan setelah pelajaran?
+- coach: 'استخدم: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟'
+  hint: 'Jawab dengan pola: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟'
+  sample_answer: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+  focus: 'Latihan frasa: Apakah kamu ingin belajar bersama saya?'
+  expected_keywords:
+  - هَلْ
+  - تُرِيدُ
+  - أَنْ
+  indonesian_explanation: Apakah kamu ingin belajar bersama saya?
+target_phrases:
+- كَيْفَ كَانَ دَرْسُكَ؟
+- مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
+- هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
+- نَلْتَقِي السَّاعَةَ الْخَامِسَةَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60
