@@ -1,9 +1,9 @@
-from datetime import datetime
+from datetime import datetime, timedelta
 from secrets import token_urlsafe
 from typing import Optional
 from uuid import uuid4
 
-from sqlalchemy import select
+from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
 from app.core.security import hash_password, verify_password
@@ -110,16 +110,34 @@ class UserRepository:
         self.db.commit()
         return self._model_to_domain(model)
 
-    def list_users(self, limit: int = 100, search: Optional[str] = None) -> list[User]:
-        statement = select(UserModel).order_by(UserModel.created_at.desc()).limit(limit)
+    def list_users(
+        self,
+        limit: int = 100,
+        search: Optional[str] = None,
+        email_verified: Optional[bool] = None,
+        min_account_age_days: Optional[int] = None,
+    ) -> list[User]:
+        statement = select(UserModel)
+
         if search:
-            pattern = f"%{normalize_email(search)}%"
-            statement = (
-                select(UserModel)
-                .where(UserModel.email.ilike(pattern))
-                .order_by(UserModel.created_at.desc())
-                .limit(limit)
+            pattern = f"%{search.strip()}%"
+            statement = statement.where(
+                or_(
+                    UserModel.email.ilike(pattern),
+                    UserModel.name.ilike(pattern),
+                )
             )
+
+        if email_verified is True:
+            statement = statement.where(UserModel.email_verified_at.is_not(None))
+        elif email_verified is False:
+            statement = statement.where(UserModel.email_verified_at.is_(None))
+
+        if min_account_age_days and min_account_age_days > 0:
+            cutoff = datetime.utcnow() - timedelta(days=min_account_age_days)
+            statement = statement.where(UserModel.created_at <= cutoff)
+
+        statement = statement.order_by(UserModel.created_at.desc()).limit(limit)
         return [self._model_to_domain(model) for model in self.db.execute(statement).scalars().all()]
 
     def update_role(self, user_id: str, role: str) -> User:
@@ -132,6 +150,27 @@ class UserRepository:
         model.updated_at = datetime.utcnow()
         self.db.commit()
         return self._model_to_domain(model)
+
+    def delete_user(self, user_id: str) -> None:
+        model = self.db.get(UserModel, user_id)
+        if model is None:
+            raise KeyError(user_id)
+
+        self.db.delete(model)
+        self.db.commit()
+
+    def delete_users(self, user_ids: list[str]) -> list[str]:
+        deleted_ids: list[str] = []
+
+        for user_id in dict.fromkeys(user_ids):
+            model = self.db.get(UserModel, user_id)
+            if model is None:
+                continue
+            self.db.delete(model)
+            deleted_ids.append(user_id)
+
+        self.db.commit()
+        return deleted_ids
 
     def ensure_configured_admin_role(self, user: User, admin_emails: list[str]) -> User:
         configured_admin_emails = {normalize_email(email) for email in admin_emails if email.strip()}

@@ -1,21 +1,79 @@
 import Link from "next/link";
-import { CheckCircle2, CreditCard } from "lucide-react";
+import { BookOpen, CheckCircle2, CreditCard, Languages, ShieldCheck, Sparkles } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { plans, topups } from "@/lib/data";
+
+const packagingOptions = [
+  {
+    title: "English",
+    status: "Future standalone",
+    price: "Rp49.000/bulan",
+    description: "Untuk learner yang hanya butuh English conversation track dari A1 sampai C1.",
+    icon: BookOpen
+  },
+  {
+    title: "Arabic",
+    status: "Future standalone",
+    price: "TBD setelah beta",
+    description: "Untuk learner yang fokus Arabic formal, conversation, classroom instruction, dan reading support.",
+    icon: Languages
+  },
+  {
+    title: "All Access",
+    status: "Recommended",
+    price: "Current Pro",
+    description: "Satu membership untuk English aktif dan Arabic beta selama fase release awal.",
+    icon: Sparkles
+  }
+];
 
 export default function PricingPage() {
   return (
     <AppShell>
       <section className="mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 lg:px-8">
-        <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
-          <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih akses belajar Conversease</h1>
-          <p className="mt-3 leading-7 text-ink/70">
-            Pro saat ini membuka kurikulum English aktif dan Arabic selama beta. Saat Arabic
-            launch publik, Conversease dapat memisahkan paket English, Arabic, dan All Access agar
-            tiap track punya harga yang adil.
-          </p>
+        <div className="grid gap-6 lg:grid-cols-[0.62fr_0.38fr] lg:items-end">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
+            <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih akses belajar Conversease</h1>
+            <p className="mt-3 leading-7 text-ink/70">
+              Untuk release sekarang, Pro adalah All Access: English aktif dan Arabic beta berada
+              dalam satu membership. Setelah Arabic stabil, paket dapat dipisah menjadi English,
+              Arabic, dan All Access.
+            </p>
+          </div>
+          <div className="rounded-lg border border-leaf/25 bg-mint p-5">
+            <div className="flex items-start gap-3">
+              <ShieldCheck className="mt-0.5 h-5 w-5 text-leaf" aria-hidden="true" />
+              <div>
+                <p className="text-sm font-semibold text-ink">Keputusan pricing saat ini</p>
+                <p className="mt-2 text-sm leading-6 text-ink/65">
+                  Tidak perlu paket Arabic terpisah selama beta. Ini mengurangi kompleksitas billing
+                  dan memberi waktu untuk mengukur demand Arabic sebelum menetapkan harga mandiri.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {packagingOptions.map((option) => {
+            const Icon = option.icon;
+            return (
+              <section key={option.title} className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+                <div className="flex items-start justify-between gap-3">
+                  <div>
+                    <p className="text-xs font-semibold uppercase text-leaf">{option.status}</p>
+                    <h2 className="mt-1 text-xl font-semibold">{option.title}</h2>
+                  </div>
+                  <Icon className="h-5 w-5 text-leaf" aria-hidden="true" />
+                </div>
+                <p className="mt-4 text-2xl font-semibold">{option.price}</p>
+                <p className="mt-3 text-sm leading-6 text-ink/60">{option.description}</p>
+              </section>
+            );
+          })}
+        </div>
+
         <div className="mt-8 grid gap-4 lg:grid-cols-4">
           {plans.map((plan) => (
             <section
@@ -41,7 +99,7 @@ export default function PricingPage() {
                 {plan.coachAllowance}.
                 {plan.key === "free"
                   ? " Ini hanya untuk mencoba sesi praktik."
-                  : " Dipakai untuk latihan speaking tambahan; top-up bersifat opsional."}
+                  : " Membership mencakup English aktif dan Arabic beta; top-up bersifat opsional."}
               </p>
               <Link
                 href="/billing"

@@ -9,6 +9,7 @@ type ApiAdminUser = {
   name: string;
   email: string;
   role: "student" | "admin";
+  looks_suspicious: boolean;
   email_verified_at: string | null;
   created_at: string;
   updated_at: string;
@@ -19,6 +20,7 @@ export type AdminUser = {
   name: string;
   email: string;
   role: "student" | "admin";
+  looksSuspicious: boolean;
   emailVerifiedAt: string | null;
   createdAt: string;
   updatedAt: string;
@@ -57,6 +59,7 @@ function mapUser(user: ApiAdminUser): AdminUser {
     name: user.name,
     email: user.email,
     role: user.role,
+    looksSuspicious: user.looks_suspicious,
     emailVerifiedAt: user.email_verified_at,
     createdAt: user.created_at,
     updatedAt: user.updated_at
@@ -66,10 +69,22 @@ function mapUser(user: ApiAdminUser): AdminUser {
 export async function listAdminUsers(input?: {
   search?: string;
   limit?: number;
+  emailVerified?: boolean;
+  minAccountAgeDays?: number;
+  suspiciousOnly?: boolean;
 }): Promise<AdminUser[]> {
   const params = new URLSearchParams();
   if (input?.search) {
     params.set("search", input.search);
+  }
+  if (typeof input?.emailVerified === "boolean") {
+    params.set("email_verified", String(input.emailVerified));
+  }
+  if (typeof input?.minAccountAgeDays === "number" && input.minAccountAgeDays > 0) {
+    params.set("min_account_age_days", String(input.minAccountAgeDays));
+  }
+  if (input?.suspiciousOnly) {
+    params.set("suspicious_only", "true");
   }
   params.set("limit", String(input?.limit ?? 100));
 
@@ -91,4 +106,31 @@ export async function updateAdminUserRole(input: {
     }
   );
   return mapUser(response.data);
+}
+
+export async function deleteAdminUser(input: { userId: string }): Promise<void> {
+  await adminRequestJson<ApiResponse<{ deleted: boolean; user_id: string }>>(
+    `/admin/users/${input.userId}`,
+    {
+      method: "DELETE"
+    }
+  );
+}
+
+export async function bulkDeleteAdminUsers(input: { userIds: string[] }): Promise<{
+  deleted: number;
+  userIds: string[];
+}> {
+  const response = await adminRequestJson<ApiResponse<{ deleted: number; user_ids: string[] }>>(
+    "/admin/users/bulk-delete",
+    {
+      method: "POST",
+      body: JSON.stringify({ user_ids: input.userIds })
+    }
+  );
+
+  return {
+    deleted: response.data.deleted,
+    userIds: response.data.user_ids
+  };
 }

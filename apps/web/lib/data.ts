@@ -34,30 +34,30 @@ export const plans = [
     name: "Pro 1 Month",
     price: "Rp49.000",
     cadence: "1 bulan",
-    access: "Akses Pro 1 bulan",
+    access: "Pro All Access 1 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Akses penuh ke kurikulum aktif, feedback detail, evaluasi level, dan Arabic beta.",
-    features: ["English track aktif", "Arabic beta", "Detailed Conversation Feedback", "Skill report dan progress"]
+    description: "Akses penuh ke English aktif, Arabic beta, feedback detail, evaluasi level, dan progress report.",
+    features: ["English track aktif", "Arabic beta included", "Detailed Conversation Feedback", "Skill report dan progress"]
   },
   {
     key: "pro_3_months",
     name: "Pro 3 Months",
     price: "Rp129.000",
     cadence: "3 bulan",
-    access: "Akses Pro 3 bulan",
+    access: "Pro All Access 3 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Paket lebih hemat untuk menyelesaikan satu track dengan ritme belajar rutin.",
-    features: ["English track aktif", "Arabic beta", "Detailed Conversation Feedback", "Pengingat renewal"]
+    features: ["English track aktif", "Arabic beta included", "Detailed Conversation Feedback", "Pengingat renewal"]
   },
   {
     key: "pro_12_months",
     name: "Pro 12 Months",
     price: "Rp399.000",
     cadence: "12 bulan",
-    access: "Akses Pro 12 bulan",
+    access: "Pro All Access 12 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Best value untuk belajar konsisten lintas track, evaluasi level, dan review plan.",
-    features: ["English track aktif", "Arabic beta", "Skill reports", "Review plan personal"]
+    features: ["English track aktif", "Arabic beta included", "Skill reports", "Review plan personal"]
   }
 ];
 

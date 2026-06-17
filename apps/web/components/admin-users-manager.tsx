@@ -1,9 +1,26 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { RefreshCcw, Search, ShieldCheck, ShieldMinus, ShieldPlus, UsersRound } from "lucide-react";
+import {
+  MailCheck,
+  MailX,
+  RefreshCcw,
+  Search,
+  ShieldAlert,
+  ShieldCheck,
+  ShieldMinus,
+  ShieldPlus,
+  Trash2,
+  UsersRound
+} from "lucide-react";
 import type { AuthUser } from "@/lib/auth-api";
-import { listAdminUsers, updateAdminUserRole, type AdminUser } from "@/lib/admin-users-api";
+import {
+  bulkDeleteAdminUsers,
+  deleteAdminUser,
+  listAdminUsers,
+  updateAdminUserRole,
+  type AdminUser
+} from "@/lib/admin-users-api";
 
 function formatDate(value: string | null) {
   if (!value) {
@@ -23,9 +40,29 @@ function roleTone(role: AdminUser["role"]) {
   return role === "admin" ? "bg-mint text-leaf" : "bg-paper text-ink/65";
 }
 
+type VerificationFilter = "all" | "verified" | "unverified";
+
+function verificationFilterValue(filter: VerificationFilter) {
+  if (filter === "verified") {
+    return true;
+  }
+  if (filter === "unverified") {
+    return false;
+  }
+  return undefined;
+}
+
+function isUserDeletable(user: AdminUser, currentAdminId: string) {
+  return user.role !== "admin" && user.id !== currentAdminId;
+}
+
 export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [search, setSearch] = useState("");
+  const [verificationFilter, setVerificationFilter] = useState<VerificationFilter>("unverified");
+  const [minAccountAgeDays, setMinAccountAgeDays] = useState("14");
+  const [suspiciousOnly, setSuspiciousOnly] = useState(true);
+  const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
   const [selectedUser, setSelectedUser] = useState<AdminUser | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [actionUserId, setActionUserId] = useState<string | null>(null);
@@ -45,11 +82,22 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
         if (user.role === "admin") {
           acc.admin += 1;
         }
+        if (!user.emailVerifiedAt) {
+          acc.unverified += 1;
+        }
+        if (user.looksSuspicious) {
+          acc.suspicious += 1;
+        }
         return acc;
       },
-      { admin: 0, count: 0 }
+      { admin: 0, count: 0, suspicious: 0, unverified: 0 }
     );
   }, [users]);
+
+  const deletableUsers = useMemo(
+    () => users.filter((user) => isUserDeletable(user, adminUser.id)),
+    [adminUser.id, users]
+  );
 
   async function loadUsers(nextSearch = search) {
     setIsLoading(true);
@@ -57,8 +105,16 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
     setError("");
 
     try {
-      const nextUsers = await listAdminUsers({ search: nextSearch.trim(), limit: 200 });
+      const parsedMinAge = Number.parseInt(minAccountAgeDays, 10);
+      const nextUsers = await listAdminUsers({
+        search: nextSearch.trim(),
+        limit: 200,
+        emailVerified: verificationFilterValue(verificationFilter),
+        minAccountAgeDays: Number.isFinite(parsedMinAge) && parsedMinAge > 0 ? parsedMinAge : undefined,
+        suspiciousOnly
+      });
       setUsers(nextUsers);
+      setSelectedUserIds((current) => current.filter((userId) => nextUsers.some((user) => user.id === userId)));
       setSelectedUser((current) => {
         if (!current) {
           return nextUsers[0] ?? null;
@@ -90,6 +146,73 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
     }
   }
 
+  async function removeUser(user: AdminUser) {
+    if (!isUserDeletable(user, adminUser.id)) {
+      setError("Akun admin tidak bisa dihapus dari halaman ini.");
+      return;
+    }
+    const confirmed = window.confirm(
+      `Hapus user ${user.email}? Semua data terkait user ini juga ikut terhapus.`
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    setActionUserId(user.id);
+    setMessage("");
+    setError("");
+
+    try {
+      await deleteAdminUser({ userId: user.id });
+      setUsers((current) => current.filter((item) => item.id !== user.id));
+      setSelectedUserIds((current) => current.filter((item) => item !== user.id));
+      setSelectedUser((current) => {
+        if (current?.id !== user.id) {
+          return current;
+        }
+        return users.find((item) => item.id !== user.id) ?? null;
+      });
+      setMessage(`${user.email} berhasil dihapus.`);
+    } catch {
+      setError("User belum bisa dihapus. Pastikan user tersebut bukan admin.");
+    } finally {
+      setActionUserId(null);
+    }
+  }
+
+  async function removeSelectedUsers() {
+    if (!selectedUserIds.length) {
+      return;
+    }
+    const confirmed = window.confirm(
+      `Hapus ${selectedUserIds.length} user terpilih? Semua data terkait user ini juga ikut terhapus.`
+    );
+    if (!confirmed) {
+      return;
+    }
+
+    setActionUserId("bulk-delete");
+    setMessage("");
+    setError("");
+
+    try {
+      const result = await bulkDeleteAdminUsers({ userIds: selectedUserIds });
+      setUsers((current) => current.filter((item) => !result.userIds.includes(item.id)));
+      setSelectedUserIds([]);
+      setSelectedUser((current) => {
+        if (!current || !result.userIds.includes(current.id)) {
+          return current;
+        }
+        return users.find((item) => !result.userIds.includes(item.id)) ?? null;
+      });
+      setMessage(`${result.deleted} user berhasil dihapus.`);
+    } catch {
+      setError("Bulk delete gagal. Pastikan daftar yang dipilih tidak berisi admin.");
+    } finally {
+      setActionUserId(null);
+    }
+  }
+
   return (
     <div className="grid gap-5 lg:grid-cols-[0.36fr_0.64fr]">
       <section className="space-y-5">
@@ -102,7 +225,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
               <p className="text-sm font-semibold uppercase text-leaf">Admin Users</p>
               <h1 className="mt-1 text-2xl font-semibold">User Access</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
-                Kelola role admin tanpa membuka database.
+                Kelola role admin, cari akun spam, dan hapus user tanpa membuka database.
               </p>
             </div>
           </div>
@@ -137,7 +260,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
                 }
               }}
               className="focus-ring min-w-0 flex-1 rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
-              placeholder="Cari email user"
+              placeholder="Cari nama atau email"
             />
             <button
               type="button"
@@ -151,9 +274,40 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
             </button>
           </div>
 
+          <div className="mt-4 grid gap-2 sm:grid-cols-2">
+            <select
+              value={verificationFilter}
+              onChange={(event) => setVerificationFilter(event.target.value as VerificationFilter)}
+              className="focus-ring rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
+            >
+              <option value="all">Semua status email</option>
+              <option value="verified">Email verified</option>
+              <option value="unverified">Belum verified</option>
+            </select>
+            <input
+              type="number"
+              min={1}
+              value={minAccountAgeDays}
+              onChange={(event) => setMinAccountAgeDays(event.target.value)}
+              className="focus-ring rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
+              placeholder="Minimal umur akun (hari)"
+            />
+          </div>
+
+          <label className="mt-3 flex items-center gap-2 rounded-lg bg-paper px-3 py-2 text-sm text-ink/70">
+            <input
+              type="checkbox"
+              checked={suspiciousOnly}
+              onChange={(event) => setSuspiciousOnly(event.target.checked)}
+            />
+            Hanya tampilkan nama yang mencurigakan
+          </label>
+
           <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
             <Metric label="Users" value={totals.count} />
             <Metric label="Admins" value={totals.admin} />
+            <Metric label="Unverified" value={totals.unverified} />
+            <Metric label="Suspicious" value={totals.suspicious} />
           </div>
 
           {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
@@ -163,33 +317,102 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
 
       <section className="grid gap-5 xl:grid-cols-[0.42fr_0.58fr]">
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <h2 className="font-semibold">Users</h2>
-          <div className="mt-4 space-y-3">
-            {users.map((user) => (
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="font-semibold">Users</h2>
+            <div className="flex flex-wrap gap-2">
               <button
-                key={user.id}
                 type="button"
-                onClick={() => setSelectedUser(user)}
-                className={`focus-ring w-full rounded-lg border p-4 text-left ${
-                  selectedUser?.id === user.id ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
-                }`}
+                onClick={() => setSelectedUserIds(deletableUsers.map((user) => user.id))}
+                disabled={!deletableUsers.length}
+                className="focus-ring rounded-lg border border-ink/10 px-3 py-2 text-sm font-semibold text-ink disabled:cursor-not-allowed disabled:opacity-60"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0">
-                    <p className="truncate font-semibold">{user.name || user.email}</p>
-                    <p className="mt-1 truncate text-sm text-ink/60">{user.email}</p>
-                  </div>
-                  <span className={`rounded-md px-2 py-1 text-xs font-semibold ${roleTone(user.role)}`}>
-                    {user.role}
-                  </span>
-                </div>
-                <p className="mt-3 text-xs text-ink/50">Updated {formatDate(user.updatedAt)}</p>
+                Pilih semua
               </button>
-            ))}
+              <button
+                type="button"
+                onClick={() => setSelectedUserIds([])}
+                disabled={!selectedUserIds.length}
+                className="focus-ring rounded-lg border border-ink/10 px-3 py-2 text-sm font-semibold text-ink disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                Reset pilih
+              </button>
+              <button
+                type="button"
+                onClick={removeSelectedUsers}
+                disabled={!selectedUserIds.length || actionUserId === "bulk-delete"}
+                className="focus-ring inline-flex items-center gap-2 rounded-lg border border-coral px-3 py-2 text-sm font-semibold text-coral disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                <Trash2 className="h-4 w-4" aria-hidden="true" />
+                {actionUserId === "bulk-delete" ? "Menghapus..." : `Hapus ${selectedUserIds.length}`}
+              </button>
+            </div>
+          </div>
+          <div className="mt-4 space-y-3">
+            {users.map((user) => {
+              const canDelete = isUserDeletable(user, adminUser.id);
+              const isSelected = selectedUserIds.includes(user.id);
+
+              return (
+                <div
+                  key={user.id}
+                  className={`rounded-lg border p-4 ${
+                    selectedUser?.id === user.id ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
+                  }`}
+                >
+                  <div className="flex items-start gap-3">
+                    <input
+                      type="checkbox"
+                      checked={isSelected}
+                      disabled={!canDelete}
+                      onChange={(event) => {
+                        if (event.target.checked) {
+                          setSelectedUserIds((current) =>
+                            current.includes(user.id) ? current : [...current, user.id]
+                          );
+                          return;
+                        }
+                        setSelectedUserIds((current) => current.filter((item) => item !== user.id));
+                      }}
+                      className="mt-1"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setSelectedUser(user)}
+                      className="focus-ring flex-1 text-left"
+                    >
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <p className="truncate font-semibold">{user.name || user.email}</p>
+                          <p className="mt-1 truncate text-sm text-ink/60">{user.email}</p>
+                        </div>
+                        <span className={`rounded-md px-2 py-1 text-xs font-semibold ${roleTone(user.role)}`}>
+                          {user.role}
+                        </span>
+                      </div>
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        <StatusBadge
+                          icon={user.emailVerifiedAt ? MailCheck : MailX}
+                          label={user.emailVerifiedAt ? "verified" : "unverified"}
+                          tone={user.emailVerifiedAt ? "bg-mint text-leaf" : "bg-[#fde7df] text-coral"}
+                        />
+                        {user.looksSuspicious ? (
+                          <StatusBadge
+                            icon={ShieldAlert}
+                            label="suspicious"
+                            tone="bg-[#fde7df] text-coral"
+                          />
+                        ) : null}
+                      </div>
+                      <p className="mt-3 text-xs text-ink/50">Updated {formatDate(user.updatedAt)}</p>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
 
             {!users.length ? (
               <div className="rounded-lg bg-paper p-5 text-sm leading-6 text-ink/60">
-                Klik refresh atau cari email user.
+                Klik refresh atau cari nama/email user.
               </div>
             ) : null}
           </div>
@@ -201,8 +424,10 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
               user={selectedUser}
               currentAdminId={adminUser.id}
               isActing={actionUserId === selectedUser.id}
+              canDelete={isUserDeletable(selectedUser, adminUser.id)}
               onPromote={() => updateRole(selectedUser, "admin")}
               onDemote={() => updateRole(selectedUser, "student")}
+              onDelete={() => removeUser(selectedUser)}
             />
           ) : (
             <div className="grid min-h-[360px] place-items-center rounded-lg bg-paper p-6 text-center">
@@ -225,14 +450,18 @@ function UserDetail({
   user,
   currentAdminId,
   isActing,
+  canDelete,
   onPromote,
-  onDemote
+  onDemote,
+  onDelete
 }: {
   user: AdminUser;
   currentAdminId: string;
   isActing: boolean;
+  canDelete: boolean;
   onPromote: () => void;
   onDemote: () => void;
+  onDelete: () => void;
 }) {
   const isCurrentAdmin = user.id === currentAdminId;
 
@@ -256,7 +485,18 @@ function UserDetail({
         <DetailItem label="Updated" value={formatDate(user.updatedAt)} />
       </dl>
 
-      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+      <div className="mt-5 flex flex-wrap gap-2">
+        <StatusBadge
+          icon={user.emailVerifiedAt ? MailCheck : MailX}
+          label={user.emailVerifiedAt ? "Email verified" : "Belum verified"}
+          tone={user.emailVerifiedAt ? "bg-mint text-leaf" : "bg-[#fde7df] text-coral"}
+        />
+        {user.looksSuspicious ? (
+          <StatusBadge icon={ShieldAlert} label="Nama mencurigakan" tone="bg-[#fde7df] text-coral" />
+        ) : null}
+      </div>
+
+      <div className="mt-5 grid gap-3 sm:grid-cols-3">
         <button
           type="button"
           onClick={onPromote}
@@ -274,6 +514,15 @@ function UserDetail({
         >
           <ShieldMinus className="h-4 w-4" aria-hidden="true" />
           Remove Admin
+        </button>
+        <button
+          type="button"
+          onClick={onDelete}
+          disabled={!canDelete || isActing}
+          className="focus-ring inline-flex min-h-12 items-center justify-center gap-2 rounded-lg border border-coral px-4 text-sm font-semibold text-coral disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          <Trash2 className="h-4 w-4" aria-hidden="true" />
+          Hapus User
         </button>
       </div>
 
@@ -301,5 +550,22 @@ function Metric({ label, value }: { label: string; value: number | string }) {
       <p className="text-xs font-semibold uppercase text-ink/50">{label}</p>
       <p className="mt-1 font-semibold">{value}</p>
     </div>
+  );
+}
+
+function StatusBadge({
+  icon: Icon,
+  label,
+  tone
+}: {
+  icon: typeof MailCheck;
+  label: string;
+  tone: string;
+}) {
+  return (
+    <span className={`inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-semibold ${tone}`}>
+      <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+      {label}
+    </span>
   );
 }

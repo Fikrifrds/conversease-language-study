@@ -1,5 +1,5 @@
 import unittest
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -82,6 +82,23 @@ class AdminUsersRoutesTest(unittest.TestCase):
     def auth_headers(self, user_id: str) -> dict[str, str]:
         return {"Authorization": f"Bearer {create_access_token(user_id)}"}
 
+    def seed_spam_user(self) -> None:
+        with self.SessionLocal() as db:
+            old = datetime.utcnow() - timedelta(days=45)
+            db.add(
+                models.UserModel(
+                    id="user-spam",
+                    name="MFTzSHgLpPSVUlCkOYM",
+                    email="spammy@example.local",
+                    role="student",
+                    password_hash="hashed",
+                    email_verified_at=None,
+                    created_at=old,
+                    updated_at=old,
+                )
+            )
+            db.commit()
+
     def test_admin_bearer_can_list_and_update_user_roles(self):
         self.seed_users()
         client = self.client()
@@ -126,6 +143,34 @@ class AdminUsersRoutesTest(unittest.TestCase):
         self.assertEqual(me.status_code, 200)
         self.assertEqual(me.json()["role"], "admin")
         self.assertEqual(admin_route.status_code, 200)
+        client.app.dependency_overrides.clear()
+
+    def test_admin_can_filter_and_bulk_delete_old_unverified_spam_users(self):
+        self.seed_users()
+        self.seed_spam_user()
+        client = self.client()
+
+        listed = client.get(
+            "/api/admin/users?email_verified=false&min_account_age_days=30&suspicious_only=true",
+            headers=self.auth_headers("user-admin"),
+        )
+        deleted = client.post(
+            "/api/admin/users/bulk-delete",
+            headers=self.auth_headers("user-admin"),
+            json={"user_ids": ["user-spam"]},
+        )
+        search_after_delete = client.get(
+            "/api/admin/users?search=spammy@example.local",
+            headers=self.auth_headers("user-admin"),
+        )
+
+        self.assertEqual(listed.status_code, 200)
+        self.assertEqual([user["id"] for user in listed.json()["data"]], ["user-spam"])
+        self.assertTrue(listed.json()["data"][0]["looks_suspicious"])
+        self.assertEqual(deleted.status_code, 200)
+        self.assertEqual(deleted.json()["data"]["deleted"], 1)
+        self.assertEqual(search_after_delete.status_code, 200)
+        self.assertEqual(search_after_delete.json()["data"], [])
         client.app.dependency_overrides.clear()
 
 

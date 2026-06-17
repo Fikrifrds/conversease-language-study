@@ -871,6 +871,7 @@ function ReadinessPanel({
   }
 
   const filteredLevels = filterReadinessLevels(levels, languageFilter);
+  const operations = readinessOperations(filteredLevels);
   const stats = [
     { label: "Planned", value: overview.plannedLessonCount },
     { label: "Implemented", value: overview.implementedLessonCount },
@@ -898,6 +899,12 @@ function ReadinessPanel({
       />
 
       {isLoading ? <p className="rounded-lg bg-paper p-3 text-sm text-ink/60">Refreshing readiness...</p> : null}
+
+      <ProductionOpsPanel
+        operations={operations}
+        language={languageFilter}
+        mode="readiness"
+      />
 
       <div className="grid gap-4">
         {filteredLevels.map((level) => (
@@ -969,6 +976,7 @@ function LessonAudioPanel({
   const missingBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: false });
   const allTextReadyBulkCandidates = bulkAudioCandidates(filteredLevels, { includeAudioReady: true });
   const audioReadyToGenerate = Boolean(audioSettings && audioProviderConfigured(audioSettings, audioProvider) && audioSettings.s3Configured);
+  const operations = readinessOperations(filteredLevels);
 
   return (
     <div className="space-y-5">
@@ -997,6 +1005,12 @@ function LessonAudioPanel({
 
       {isLoading ? <p className="rounded-lg bg-paper p-3 text-sm text-ink/60">Refreshing lesson audio...</p> : null}
 
+      <ProductionOpsPanel
+        operations={operations}
+        language={languageFilter}
+        mode="audio"
+      />
+
       <BulkAudioPanel
         missingCandidates={missingBulkCandidates}
         allTextReadyCandidates={allTextReadyBulkCandidates}
@@ -1021,6 +1035,96 @@ function LessonAudioPanel({
           <p className="rounded-lg bg-paper p-5 text-sm text-ink/60">Belum ada lesson audio untuk filter ini.</p>
         ) : null}
       </div>
+    </div>
+  );
+}
+
+function ProductionOpsPanel({
+  operations,
+  language,
+  mode
+}: {
+  operations: ReadinessOperations;
+  language: LanguageFilter;
+  mode: "readiness" | "audio";
+}) {
+  const action =
+    operations.missingTextCount > 0
+      ? "Lengkapi text readiness sebelum audio."
+      : operations.missingAudioCount > 0
+        ? "Generate missing audio per unit atau jalankan batch."
+        : operations.productionGapCount > 0
+          ? "Review publish status sebelum release."
+          : "Track siap untuk release check.";
+  const actionTone =
+    operations.missingTextCount > 0 || operations.missingAudioCount > 0
+      ? "warn"
+      : operations.productionGapCount > 0
+        ? "neutral"
+        : "ok";
+
+  return (
+    <section className="rounded-lg border border-ink/10 bg-white p-4 shadow-sm">
+      <div className="flex flex-col gap-4 xl:flex-row xl:items-start xl:justify-between">
+        <div>
+          <p className="text-xs font-semibold uppercase text-leaf">
+            {languageLabelForOps(language)} / production operations
+          </p>
+          <h2 className="mt-1 text-lg font-semibold">
+            {mode === "audio" ? "Audio release queue" : "Release readiness summary"}
+          </h2>
+          <p className="mt-1 max-w-3xl text-sm leading-6 text-ink/60">
+            Ringkasan ini membantu admin menentukan apakah fokus berikutnya content, audio, atau publish review.
+          </p>
+        </div>
+        <StatusPill icon={ListChecks} label={action} tone={actionTone} />
+      </div>
+
+      <div className="mt-4 grid gap-3 md:grid-cols-4">
+        <OpsMetric label="Text missing" value={operations.missingTextCount} tone={operations.missingTextCount ? "danger" : "ok"} />
+        <OpsMetric label="Audio missing" value={operations.missingAudioCount} tone={operations.missingAudioCount ? "warn" : "ok"} />
+        <OpsMetric label="Production gap" value={operations.productionGapCount} tone={operations.productionGapCount ? "warn" : "ok"} />
+        <OpsMetric label="Regenerate candidates" value={operations.textReadyCount} tone="neutral" />
+      </div>
+
+      {operations.firstBlockingLessons.length ? (
+        <div className="mt-4 rounded-lg bg-paper p-3">
+          <p className="text-xs font-semibold uppercase text-ink/45">First blocking lessons</p>
+          <div className="mt-2 grid gap-2 md:grid-cols-2">
+            {operations.firstBlockingLessons.map((lesson) => (
+              <div key={lesson.slug || lesson.lessonKey} className="rounded-lg bg-white px-3 py-2">
+                <p className="truncate text-sm font-semibold text-ink">{lesson.title}</p>
+                <p className="mt-1 truncate text-xs text-ink/50">{lesson.slug || lesson.lessonKey}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      ) : null}
+    </section>
+  );
+}
+
+function OpsMetric({
+  label,
+  value,
+  tone
+}: {
+  label: string;
+  value: number;
+  tone: "ok" | "warn" | "danger" | "neutral";
+}) {
+  const toneClass =
+    tone === "ok"
+      ? "bg-mint text-leaf"
+      : tone === "warn"
+        ? "bg-[#fff4d5] text-[#7a5600]"
+        : tone === "danger"
+          ? "bg-[#fde7df] text-coral"
+          : "bg-paper text-ink/60";
+  return (
+    <div className={`rounded-lg px-4 py-3 ${toneClass}`}>
+      <p className="text-xs font-semibold uppercase opacity-75">{label}</p>
+      <p className="mt-1 text-2xl font-semibold">{value}</p>
     </div>
   );
 }
@@ -1922,6 +2026,39 @@ function filterReadinessLevels(
   languageFilter: LanguageFilter
 ): AdminContentReadiness[] {
   return levels.filter((level) => level.course.language === languageFilter);
+}
+
+type ReadinessOperations = {
+  textReadyCount: number;
+  missingTextCount: number;
+  missingAudioCount: number;
+  productionGapCount: number;
+  firstBlockingLessons: AdminContentReadinessLesson[];
+};
+
+function readinessOperations(levels: AdminContentReadiness[]): ReadinessOperations {
+  const lessons = levels.flatMap((level) => level.units.flatMap((unit) => unit.lessons));
+  const firstBlockingLessons = lessons
+    .filter((lesson) => !lesson.textReady || !lesson.audioReady || !lesson.productionReady)
+    .slice(0, 4);
+
+  return {
+    textReadyCount: lessons.filter((lesson) => lesson.implemented && lesson.textReady).length,
+    missingTextCount: lessons.filter((lesson) => lesson.implemented && !lesson.textReady).length,
+    missingAudioCount: lessons.filter((lesson) => lesson.implemented && lesson.textReady && !lesson.audioReady).length,
+    productionGapCount: lessons.filter((lesson) => lesson.implemented && lesson.textReady && !lesson.productionReady).length,
+    firstBlockingLessons
+  };
+}
+
+function languageLabelForOps(language: LanguageFilter) {
+  if (language.toLowerCase() === "arabic") {
+    return "Arabic";
+  }
+  if (language.toLowerCase() === "english") {
+    return "English";
+  }
+  return language;
 }
 
 function bulkAudioCandidates(

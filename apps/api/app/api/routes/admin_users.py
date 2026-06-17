@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime
+import re
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -20,12 +21,17 @@ class AdminUserRolePayload(BaseModel):
     role: str = Field(pattern=f"^({USER_ROLE_STUDENT}|{USER_ROLE_ADMIN})$")
 
 
+class AdminBulkDeleteUsersPayload(BaseModel):
+    user_ids: list[str] = Field(min_length=1, max_length=100)
+
+
 def user_payload(user: User) -> dict:
     return {
         "id": user.id,
         "name": user.name,
         "email": user.email,
         "role": user.role,
+        "looks_suspicious": looks_suspicious_user(user),
         "email_verified_at": isoformat(user.email_verified_at),
         "created_at": user.created_at.isoformat(),
         "updated_at": user.updated_at.isoformat(),
@@ -36,14 +42,48 @@ def isoformat(value: Optional[datetime]) -> Optional[str]:
     return value.isoformat() if value else None
 
 
+def looks_suspicious_user(user: User) -> bool:
+    name = (user.name or "").strip()
+    email_local_part = user.email.split("@", 1)[0].strip().lower()
+    collapsed = re.sub(r"[^A-Za-z0-9]", "", name)
+    letters = [char for char in collapsed if char.isalpha()]
+    digits = sum(1 for char in collapsed if char.isdigit())
+    uppercase = sum(1 for char in collapsed if char.isupper())
+    vowel_count = sum(1 for char in letters if char.lower() in {"a", "e", "i", "o", "u"})
+
+    if not collapsed:
+        return True
+    if digits >= 3:
+        return True
+    if len(collapsed) >= 12 and " " not in name and collapsed.lower() == email_local_part:
+        return True
+    if len(collapsed) >= 12 and " " not in name and uppercase >= max(6, len(collapsed) // 2):
+        return True
+    if len(letters) >= 8 and vowel_count <= 1:
+        return True
+    return False
+
+
 @router.get("/admin/users")
 async def list_admin_users(
     search: Optional[str] = Query(default=None, max_length=160),
     limit: int = Query(default=100, ge=1, le=200),
+    email_verified: Optional[bool] = Query(default=None),
+    min_account_age_days: Optional[int] = Query(default=None, ge=1, le=3650),
+    suspicious_only: bool = Query(default=False),
     _: AdminActor = Depends(require_admin_api_key),
     db: Session = Depends(get_db),
 ) -> dict:
-    users = UserRepository(db).list_users(limit=limit, search=search)
+    repository = UserRepository(db)
+    fetch_limit = min(limit * 5, 1000) if suspicious_only else limit
+    users = repository.list_users(
+        limit=fetch_limit,
+        search=search,
+        email_verified=email_verified,
+        min_account_age_days=min_account_age_days,
+    )
+    if suspicious_only:
+        users = [user for user in users if looks_suspicious_user(user)][:limit]
     return {"data": [user_payload(user) for user in users]}
 
 
@@ -65,3 +105,44 @@ async def update_admin_user_role(
         raise HTTPException(status_code=404, detail="User not found") from exc
 
     return {"data": user_payload(user)}
+
+
+@router.delete("/admin/users/{user_id}")
+async def delete_admin_user(
+    user_id: str,
+    admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    repository = UserRepository(db)
+    user = repository.get_by_id(user_id)
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    if user_id == admin.id:
+        raise HTTPException(status_code=409, detail="Cannot delete your own account")
+    if user.role == USER_ROLE_ADMIN:
+        raise HTTPException(status_code=409, detail="Cannot delete another admin account")
+
+    repository.delete_user(user_id)
+    return {"data": {"deleted": True, "user_id": user_id}}
+
+
+@router.post("/admin/users/bulk-delete")
+async def bulk_delete_admin_users(
+    payload: AdminBulkDeleteUsersPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    repository = UserRepository(db)
+    candidate_ids = [user_id.strip() for user_id in payload.user_ids if user_id.strip()]
+    if not candidate_ids:
+        raise HTTPException(status_code=422, detail="No user ids provided")
+
+    users = [repository.get_by_id(user_id) for user_id in dict.fromkeys(candidate_ids)]
+    protected_users = [
+        user for user in users if user is not None and (user.id == admin.id or user.role == USER_ROLE_ADMIN)
+    ]
+    if protected_users:
+        raise HTTPException(status_code=409, detail="Admin accounts cannot be deleted in bulk")
+
+    deleted_ids = repository.delete_users(candidate_ids)
+    return {"data": {"deleted": len(deleted_ids), "user_ids": deleted_ids}}
