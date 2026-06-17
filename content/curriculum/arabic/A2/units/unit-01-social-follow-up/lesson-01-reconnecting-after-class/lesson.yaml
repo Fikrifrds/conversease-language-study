@@ -1,0 +1,27 @@
+lesson_key: lesson-01-reconnecting-after-class
+slug: arabic-reconnecting-after-class
+title: Reconnecting After Class
+status: beta
+estimated_minutes: 12
+conversation_situation: reconnecting_after_class
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa
+  Arab dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.'
+grammar_summary: 'Gunakan pertanyaan kabar, jawaban pendek, dan satu detail tambahan dengan pola: أَنَا
+  بِخَيْرٍ، وَ...'
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check Arabic A1 listening scripts are vocalized for learner display and TTS."""
+"""Check Arabic listening scripts are vocalized for learner display and TTS."""
 from __future__ import annotations
 
 import re
@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-ARABIC_A1_ROOT = REPO_ROOT / "content" / "curriculum" / "arabic" / "A1"
+ARABIC_ROOT = REPO_ROOT / "content" / "curriculum" / "arabic"
 ARABIC_LETTERS = re.compile(r"[\u0621-\u064a]")
 ARABIC_TOKEN = re.compile(r"[\u0621-\u064a\u064b-\u0652\u0670]+")
 HARAKAT = set("\u064b\u064c\u064d\u064e\u064f\u0650\u0651\u0652\u0670")
@@ -26,16 +26,16 @@ def unchecked_tokens(path: Path) -> list[str]:
 
 def main() -> int:
     failures: list[tuple[Path, list[str]]] = []
-    for path in sorted(ARABIC_A1_ROOT.glob("units/*/*/listening_script.md")):
+    for path in sorted(ARABIC_ROOT.glob("*/units/*/*/listening_script.md")):
         tokens = unchecked_tokens(path)
         if tokens:
             failures.append((path, tokens))
 
     if not failures:
-        print("Arabic A1 listening scripts are vocalized.")
+        print("Arabic listening scripts are vocalized.")
         return 0
 
-    print("Arabic A1 listening scripts still contain unvocalized tokens:", file=sys.stderr)
+    print("Arabic listening scripts still contain unvocalized tokens:", file=sys.stderr)
     for path, tokens in failures:
         rel_path = path.relative_to(REPO_ROOT)
         sample = ", ".join(tokens[:12])

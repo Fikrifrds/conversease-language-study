@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan pada akhir pekan?"?
+  options:
+  - مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
+  - ذَهَبْتُ إِلَى الْحَدِيقَةِ.
+  - مَعَ أُسْرَتِي.
+  correct_answer: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya pergi ke taman."?
+  options:
+  - ذَهَبْتُ إِلَى الْحَدِيقَةِ.
+  - مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
+  - مَعَ أُسْرَتِي.
+  correct_answer: ذَهَبْتُ إِلَى الْحَدِيقَةِ.

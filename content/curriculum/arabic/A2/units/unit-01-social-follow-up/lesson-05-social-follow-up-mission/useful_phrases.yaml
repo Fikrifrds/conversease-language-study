@@ -1,0 +1,16 @@
+phrases:
+- phrase: كَيْفَ حَالُكَ؟
+  meaning_id: Apa kabarmu?
+  usage_note: 'Gunakan saat ingin mengatakan: Apa kabarmu?'
+- phrase: مَاذَا فَعَلْتَ أَمْسِ؟
+  meaning_id: Apa yang kamu lakukan kemarin?
+  usage_note: 'Gunakan saat ingin mengatakan: Apa yang kamu lakukan kemarin?'
+- phrase: هَذَا جَيِّدٌ.
+  meaning_id: Itu bagus.
+  usage_note: 'Gunakan saat ingin mengatakan: Itu bagus.'
+- phrase: لِأَنَّنِي أُرِيدُ أَنْ أَتَعَلَّمَ.
+  meaning_id: Karena saya ingin belajar.
+  usage_note: 'Gunakan saat ingin mengatakan: Karena saya ingin belajar.'
+- phrase: سَنَتَحَدَّثُ غَدًا.
+  meaning_id: Kita akan berbicara besok.
+  usage_note: 'Gunakan saat ingin mengatakan: Kita akan berbicara besok.'

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Benarkah?'
+  target_response: حَقًّا؟
+  acceptable_responses:
+  - حَقًّا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Itu luar biasa.'
+  target_response: هَذَا مُمْتَازٌ.
+  acceptable_responses:
+  - هَذَا مُمْتَازٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana tempatnya?'
+  target_response: كَيْفَ كَانَ الْمَكَانُ؟
+  acceptable_responses:
+  - كَيْفَ كَانَ الْمَكَانُ؟

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa kabarmu?'
+  target_response: كَيْفَ حَالُكَ؟
+  acceptable_responses:
+  - كَيْفَ حَالُكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya baik, dan kamu?'
+  target_response: أَنَا بِخَيْرٍ، وَأَنْتَ؟
+  acceptable_responses:
+  - أَنَا بِخَيْرٍ، وَأَنْتَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Pelajarannya bagus.'
+  target_response: كَانَ الدَّرْسُ جَيِّدًا.
+  acceptable_responses:
+  - كَانَ الدَّرْسُ جَيِّدًا.

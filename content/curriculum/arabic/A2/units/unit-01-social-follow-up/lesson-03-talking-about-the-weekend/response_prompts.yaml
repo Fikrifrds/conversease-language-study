@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu lakukan pada akhir pekan?'
+  target_response: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
+  acceptable_responses:
+  - مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pergi ke taman.'
+  target_response: ذَهَبْتُ إِلَى الْحَدِيقَةِ.
+  acceptable_responses:
+  - ذَهَبْتُ إِلَى الْحَدِيقَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Bersama keluarga saya.'
+  target_response: مَعَ أُسْرَتِي.
+  acceptable_responses:
+  - مَعَ أُسْرَتِي.

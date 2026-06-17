@@ -1,0 +1,16 @@
+phrases:
+- phrase: حَقًّا؟
+  meaning_id: Benarkah?
+  usage_note: 'Gunakan saat ingin mengatakan: Benarkah?'
+- phrase: هَذَا مُمْتَازٌ.
+  meaning_id: Itu luar biasa.
+  usage_note: 'Gunakan saat ingin mengatakan: Itu luar biasa.'
+- phrase: كَيْفَ كَانَ الْمَكَانُ؟
+  meaning_id: Bagaimana tempatnya?
+  usage_note: 'Gunakan saat ingin mengatakan: Bagaimana tempatnya?'
+- phrase: كَانَ نَظِيفًا وَهَادِئًا.
+  meaning_id: Tempatnya bersih dan tenang.
+  usage_note: 'Gunakan saat ingin mengatakan: Tempatnya bersih dan tenang.'
+- phrase: أُرِيدُ أَنْ أَزُورَ ذَلِكَ الْمَكَانَ.
+  meaning_id: Saya ingin mengunjungi tempat itu.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin mengunjungi tempat itu.'

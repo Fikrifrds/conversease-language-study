@@ -1,0 +1,47 @@
+scenario_key: arabic_reacting_with_interest
+mode: lesson_practice_coach
+level_code: A2
+opening_line: ذَهَبْتُ إِلَى مَكْتَبَةٍ جَدِيدَةٍ أَمْسِ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu merespons cerita teman dengan ekspresi
+  pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: ذَهَبْتُ إِلَى مَكْتَبَةٍ جَدِيدَةٍ أَمْسِ.
+  hint: 'Jawab dengan pola: حَقًّا؟'
+  sample_answer: حَقًّا؟
+  focus: 'Latihan frasa: Benarkah?'
+  expected_keywords:
+  - حَقًّا
+  indonesian_explanation: Benarkah?
+- coach: 'استخدم: هَذَا مُمْتَازٌ.'
+  hint: 'Jawab dengan pola: هَذَا مُمْتَازٌ.'
+  sample_answer: هَذَا مُمْتَازٌ.
+  focus: 'Latihan frasa: Itu luar biasa.'
+  expected_keywords:
+  - هَذَا
+  - مُمْتَازٌ
+  indonesian_explanation: Itu luar biasa.
+- coach: 'استخدم: كَيْفَ كَانَ الْمَكَانُ؟'
+  hint: 'Jawab dengan pola: كَيْفَ كَانَ الْمَكَانُ؟'
+  sample_answer: كَيْفَ كَانَ الْمَكَانُ؟
+  focus: 'Latihan frasa: Bagaimana tempatnya?'
+  expected_keywords:
+  - كَيْفَ
+  - كَانَ
+  - الْمَكَانُ
+  indonesian_explanation: Bagaimana tempatnya?
+target_phrases:
+- حَقًّا؟
+- هَذَا مُمْتَازٌ.
+- كَيْفَ كَانَ الْمَكَانُ؟
+- كَانَ نَظِيفًا وَهَادِئًا.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

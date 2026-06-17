@@ -1,0 +1,49 @@
+scenario_key: arabic_reconnecting_after_class
+mode: lesson_practice_coach
+level_code: A2
+opening_line: السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa Arab
+  dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.
+  hint: 'Jawab dengan pola: كَيْفَ حَالُكَ؟'
+  sample_answer: كَيْفَ حَالُكَ؟
+  focus: 'Latihan frasa: Apa kabarmu?'
+  expected_keywords:
+  - كَيْفَ
+  - حَالُكَ
+  indonesian_explanation: Apa kabarmu?
+- coach: 'استخدم: أَنَا بِخَيْرٍ، وَأَنْتَ؟'
+  hint: 'Jawab dengan pola: أَنَا بِخَيْرٍ، وَأَنْتَ؟'
+  sample_answer: أَنَا بِخَيْرٍ، وَأَنْتَ؟
+  focus: 'Latihan frasa: Saya baik, dan kamu?'
+  expected_keywords:
+  - أَنَا
+  - بِخَيْرٍ،
+  - وَأَنْتَ
+  indonesian_explanation: Saya baik, dan kamu?
+- coach: 'استخدم: كَانَ الدَّرْسُ جَيِّدًا.'
+  hint: 'Jawab dengan pola: كَانَ الدَّرْسُ جَيِّدًا.'
+  sample_answer: كَانَ الدَّرْسُ جَيِّدًا.
+  focus: 'Latihan frasa: Pelajarannya bagus.'
+  expected_keywords:
+  - كَانَ
+  - الدَّرْسُ
+  - جَيِّدًا
+  indonesian_explanation: Pelajarannya bagus.
+target_phrases:
+- كَيْفَ حَالُكَ؟
+- أَنَا بِخَيْرٍ، وَأَنْتَ؟
+- كَانَ الدَّرْسُ جَيِّدًا.
+- سَأُرَاجِعُ الْكَلِمَاتِ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,9 @@
+# Transcript Translation
+
+- **Layla:** مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟ -> Apa yang kamu lakukan setelah pelajaran?
+- **Zayd:** سَأَذْهَبُ إِلَى الْمَكْتَبَةِ. -> Saya akan pergi ke perpustakaan.
+- **Layla:** لِمَاذَا؟ -> Mengapa?
+- **Zayd:** لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ عَلَى الْقِرَاءَةِ. -> Karena saya ingin berlatih membaca.
+- **Layla:** هَذَا جَيِّدٌ. أَنَا سَأَكْتُبُ الْوَاجِبَ. -> Itu bagus. Saya akan menulis tugas.
+- **Zayd:** جَمِيلٌ. وَهَلْ تَحْتَاجِينَ إِلَى مُسَاعَدَةٍ؟ -> Bagus. Apakah kamu butuh bantuan?
+- **Layla:** لَا، شُكْرًا. الْوَاجِبُ سَهْلٌ. -> Tidak, terima kasih. Tugasnya mudah.

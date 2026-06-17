@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Benarkah?"?
+  options:
+  - حَقًّا؟
+  - هَذَا مُمْتَازٌ.
+  - كَيْفَ كَانَ الْمَكَانُ؟
+  correct_answer: حَقًّا؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Itu luar biasa."?
+  options:
+  - هَذَا مُمْتَازٌ.
+  - حَقًّا؟
+  - كَيْفَ كَانَ الْمَكَانُ؟
+  correct_answer: هَذَا مُمْتَازٌ.

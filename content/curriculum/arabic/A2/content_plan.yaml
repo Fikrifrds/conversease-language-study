@@ -9,35 +9,35 @@ quality_reference: docs/arabic_content_standard.md
 units:
 - unit_key: unit-01-social-follow-up
   title: Social Follow-up
-  status: planned
-  main_conversation_outcome: Keep a short Fusha conversation going with follow-up questions,
-    reactions, and simple personal details.
+  status: beta
+  main_conversation_outcome: Keep a short Fusha conversation going with follow-up questions, reactions,
+    and simple personal details.
   lessons:
   - lesson_key: lesson-01-reconnecting-after-class
     slug: arabic-reconnecting-after-class
     title: Reconnecting After Class
-    status: planned
+    status: beta
   - lesson_key: lesson-02-asking-follow-up-questions
     slug: arabic-asking-follow-up-questions
     title: Asking Follow-up Questions
-    status: planned
+    status: beta
   - lesson_key: lesson-03-talking-about-the-weekend
     slug: arabic-talking-about-the-weekend
     title: Talking About the Weekend
-    status: planned
+    status: beta
   - lesson_key: lesson-04-reacting-with-interest
     slug: arabic-reacting-with-interest
     title: Reacting With Interest
-    status: planned
+    status: beta
   - lesson_key: lesson-05-social-follow-up-mission
     slug: arabic-social-follow-up-mission
     title: Social Follow-up Mission
-    status: planned
+    status: beta
 - unit_key: unit-02-plans-invitations
   title: Plans & Invitations
   status: planned
-  main_conversation_outcome: Invite someone, accept or decline politely, reschedule, and confirm
-    time and place in Fusha.
+  main_conversation_outcome: Invite someone, accept or decline politely, reschedule, and confirm time
+    and place in Fusha.
   lessons:
   - lesson_key: lesson-01-making-a-simple-plan
     slug: arabic-making-a-simple-plan
@@ -62,8 +62,8 @@ units:
 - unit_key: unit-03-transport-travel
   title: Transport & Travel
   status: planned
-  main_conversation_outcome: Ask about transport, tickets, departure time, directions, and simple
-    travel help.
+  main_conversation_outcome: Ask about transport, tickets, departure time, directions, and simple travel
+    help.
   lessons:
   - lesson_key: lesson-01-buying-a-ticket
     slug: arabic-buying-a-ticket
@@ -114,8 +114,8 @@ units:
 - unit_key: unit-05-health-appointments
   title: Health & Appointments
   status: planned
-  main_conversation_outcome: Describe simple symptoms, make appointments, and confirm basic health
-    service details.
+  main_conversation_outcome: Describe simple symptoms, make appointments, and confirm basic health service
+    details.
   lessons:
   - lesson_key: lesson-01-saying-how-you-feel
     slug: arabic-saying-how-you-feel
@@ -140,8 +140,7 @@ units:
 - unit_key: unit-06-past-experiences
   title: Past Experiences
   status: planned
-  main_conversation_outcome: Talk about recent activities, where you went, what happened, and how
-    it felt.
+  main_conversation_outcome: Talk about recent activities, where you went, what happened, and how it felt.
   lessons:
   - lesson_key: lesson-01-talking-about-yesterday
     slug: arabic-talking-about-yesterday
@@ -166,8 +165,8 @@ units:
 - unit_key: unit-07-opinions-reasons
   title: Opinions & Reasons
   status: planned
-  main_conversation_outcome: Give simple opinions, short reasons, agreement, disagreement, and
-    preference in Fusha.
+  main_conversation_outcome: Give simple opinions, short reasons, agreement, disagreement, and preference
+    in Fusha.
   lessons:
   - lesson_key: lesson-01-saying-what-you-think
     slug: arabic-saying-what-you-think
@@ -192,8 +191,8 @@ units:
 - unit_key: unit-08-a2-review-final
   title: A2 Review & Final Conversation
   status: planned
-  main_conversation_outcome: Combine Arabic A2 social, planning, travel, service, health, past,
-    and opinion skills in practical formal conversations.
+  main_conversation_outcome: Combine Arabic A2 social, planning, travel, service, health, past, and opinion
+    skills in practical formal conversations.
   lessons:
   - lesson_key: lesson-01-review-social-and-plans
     slug: arabic-review-social-and-plans

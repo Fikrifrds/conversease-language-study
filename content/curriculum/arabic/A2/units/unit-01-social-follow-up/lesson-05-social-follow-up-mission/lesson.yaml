@@ -1,0 +1,26 @@
+lesson_key: lesson-05-social-follow-up-mission
+slug: arabic-social-follow-up-mission
+title: Social Follow-up Mission
+status: beta
+estimated_minutes: 12
+conversation_situation: social_follow_up_mission
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menjaga percakapan singkat dengan
+  teman: membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.'
+grammar_summary: Gabungkan salam, pertanyaan lanjutan, alasan pendek, dan rencana dekat dengan سَـ.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

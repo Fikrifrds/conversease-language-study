@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang kamu lakukan setelah pelajaran?'
+  target_response: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  acceptable_responses:
+  - مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Mengapa?'
+  target_response: لِمَاذَا؟
+  acceptable_responses:
+  - لِمَاذَا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Karena saya ingin berlatih.'
+  target_response: لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+  acceptable_responses:
+  - لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.

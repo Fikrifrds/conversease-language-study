@@ -1,0 +1,48 @@
+scenario_key: arabic_asking_follow_up_questions
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan teman kelas dan menjaga
+  percakapan tetap berjalan dengan pertanyaan lanjutan yang sederhana.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  hint: 'Jawab dengan pola: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟'
+  sample_answer: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  focus: 'Latihan frasa: Apa yang kamu lakukan setelah pelajaran?'
+  expected_keywords:
+  - مَاذَا
+  - تَفْعَلُ
+  - بَعْدَ
+  indonesian_explanation: Apa yang kamu lakukan setelah pelajaran?
+- coach: 'استخدم: لِمَاذَا؟'
+  hint: 'Jawab dengan pola: لِمَاذَا؟'
+  sample_answer: لِمَاذَا؟
+  focus: 'Latihan frasa: Mengapa?'
+  expected_keywords:
+  - لِمَاذَا
+  indonesian_explanation: Mengapa?
+- coach: 'استخدم: لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.'
+  hint: 'Jawab dengan pola: لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.'
+  sample_answer: لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+  focus: 'Latihan frasa: Karena saya ingin berlatih.'
+  expected_keywords:
+  - لِأَنَّنِي
+  - أُرِيدُ
+  - أَنْ
+  indonesian_explanation: Karena saya ingin berlatih.
+target_phrases:
+- مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+- لِمَاذَا؟
+- لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+- هَذَا جَيِّدٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

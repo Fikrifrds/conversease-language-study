@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan setelah pelajaran?"?
+  options:
+  - مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  - لِمَاذَا؟
+  - لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+  correct_answer: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Mengapa?"?
+  options:
+  - لِمَاذَا؟
+  - مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  - لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+  correct_answer: لِمَاذَا؟

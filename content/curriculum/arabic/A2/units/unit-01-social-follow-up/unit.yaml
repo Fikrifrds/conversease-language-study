@@ -1,0 +1,12 @@
+unit_key: unit-01-social-follow-up
+level_code: A2
+title: Social Follow-up
+main_conversation_outcome: Keep a short Fusha conversation going with follow-up questions, reactions,
+  and simple personal details.
+status: beta
+lessons:
+- lesson-01-reconnecting-after-class
+- lesson-02-asking-follow-up-questions
+- lesson-03-talking-about-the-weekend
+- lesson-04-reacting-with-interest
+- lesson-05-social-follow-up-mission

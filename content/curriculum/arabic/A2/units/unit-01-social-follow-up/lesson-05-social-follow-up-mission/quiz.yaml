@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa kabarmu?"?
+  options:
+  - كَيْفَ حَالُكَ؟
+  - مَاذَا فَعَلْتَ أَمْسِ؟
+  - هَذَا جَيِّدٌ.
+  correct_answer: كَيْفَ حَالُكَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apa yang kamu lakukan kemarin?"?
+  options:
+  - مَاذَا فَعَلْتَ أَمْسِ؟
+  - كَيْفَ حَالُكَ؟
+  - هَذَا جَيِّدٌ.
+  correct_answer: مَاذَا فَعَلْتَ أَمْسِ؟

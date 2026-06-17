@@ -1,0 +1,48 @@
+scenario_key: arabic_social_follow_up_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: السَّلَامُ عَلَيْكَ يَا أَحْمَدُ. كَيْفَ حَالُكَ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menjaga percakapan singkat dengan teman:
+  membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: السَّلَامُ عَلَيْكَ يَا أَحْمَدُ. كَيْفَ حَالُكَ؟
+  hint: 'Jawab dengan pola: كَيْفَ حَالُكَ؟'
+  sample_answer: كَيْفَ حَالُكَ؟
+  focus: 'Latihan frasa: Apa kabarmu?'
+  expected_keywords:
+  - كَيْفَ
+  - حَالُكَ
+  indonesian_explanation: Apa kabarmu?
+- coach: 'استخدم: مَاذَا فَعَلْتَ أَمْسِ؟'
+  hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ أَمْسِ؟'
+  sample_answer: مَاذَا فَعَلْتَ أَمْسِ؟
+  focus: 'Latihan frasa: Apa yang kamu lakukan kemarin?'
+  expected_keywords:
+  - مَاذَا
+  - فَعَلْتَ
+  - أَمْسِ
+  indonesian_explanation: Apa yang kamu lakukan kemarin?
+- coach: 'استخدم: هَذَا جَيِّدٌ.'
+  hint: 'Jawab dengan pola: هَذَا جَيِّدٌ.'
+  sample_answer: هَذَا جَيِّدٌ.
+  focus: 'Latihan frasa: Itu bagus.'
+  expected_keywords:
+  - هَذَا
+  - جَيِّدٌ
+  indonesian_explanation: Itu bagus.
+target_phrases:
+- كَيْفَ حَالُكَ؟
+- مَاذَا فَعَلْتَ أَمْسِ؟
+- هَذَا جَيِّدٌ.
+- لِأَنَّنِي أُرِيدُ أَنْ أَتَعَلَّمَ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

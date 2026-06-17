@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa kabarmu?"?
+  options:
+  - كَيْفَ حَالُكَ؟
+  - أَنَا بِخَيْرٍ، وَأَنْتَ؟
+  - كَانَ الدَّرْسُ جَيِّدًا.
+  correct_answer: كَيْفَ حَالُكَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya baik, dan kamu?"?
+  options:
+  - أَنَا بِخَيْرٍ، وَأَنْتَ؟
+  - كَيْفَ حَالُكَ؟
+  - كَانَ الدَّرْسُ جَيِّدًا.
+  correct_answer: أَنَا بِخَيْرٍ، وَأَنْتَ؟
