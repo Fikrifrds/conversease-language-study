@@ -1,0 +1,13 @@
+# Listening Script
+
+**Layla:** أَيُّ مَكَانٍ تُفَضِّلُ لِلدِّرَاسَةِ يَا رَامِي؟
+**Rami:** أُفَضِّلُ الْمَكْتَبَةَ.
+**Layla:** لِمَاذَا؟
+**Rami:** السَّبَبُ بَسِيطٌ. أُفَضِّلُهَا لِأَنَّهَا هَادِئَةٌ وَقَرِيبَةٌ.
+**Layla:** وَالْمَقْهَى؟
+**Rami:** الْمَقْهَى جَيِّدٌ، وَلَكِنَّهُ مُزْدَحِمٌ.
+**Layla:** فَهِمْتُ. الْمَكْتَبَةُ أَفْضَلُ لَكَ.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/female voices according to speaker names.

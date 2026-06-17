@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya pikir pelajarannya bermanfaat."?
+  options:
+  - أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+  - فِي رَأْيِي، هَذَا جَيِّدٌ.
+  - أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+  correct_answer: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Menurut saya, ini baik."?
+  options:
+  - فِي رَأْيِي، هَذَا جَيِّدٌ.
+  - أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+  - أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+  correct_answer: فِي رَأْيِي، هَذَا جَيِّدٌ.

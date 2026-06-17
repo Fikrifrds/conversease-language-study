@@ -1,0 +1,16 @@
+phrases:
+- phrase: أُوَافِقُكَ.
+  meaning_id: Saya setuju denganmu.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya setuju denganmu.'
+- phrase: أُوَافِقُكِ فِي هَذَا.
+  meaning_id: Saya setuju denganmu dalam hal ini.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya setuju denganmu dalam hal ini.'
+- phrase: لَا أُوَافِقُ تَمَامًا.
+  meaning_id: Saya tidak sepenuhnya setuju.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya tidak sepenuhnya setuju.'
+- phrase: فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.
+  meaning_id: Menurut saya, ada pilihan yang lebih baik.
+  usage_note: 'Gunakan saat ingin mengatakan: Menurut saya, ada pilihan yang lebih baik.'
+- phrase: أَفْهَمُ رَأْيَكَ.
+  meaning_id: Saya memahami pendapatmu.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya memahami pendapatmu.'

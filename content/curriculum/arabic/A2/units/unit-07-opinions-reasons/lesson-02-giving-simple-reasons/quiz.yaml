@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya suka ini karena mudah."?
+  options:
+  - أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+  - أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+  - هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
+  correct_answer: أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya lebih memilih ini karena dekat."?
+  options:
+  - أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+  - أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+  - هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
+  correct_answer: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.

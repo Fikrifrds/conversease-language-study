@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa pendapatmu tentang rencana ini?"?
+  options:
+  - مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+  - أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+  - أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  correct_answer: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya pikir itu baik."?
+  options:
+  - أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+  - مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+  - أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  correct_answer: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.

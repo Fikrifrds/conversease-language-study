@@ -1,0 +1,16 @@
+phrases:
+- phrase: مَا رَأْيُكَ فِي هَذَا؟
+  meaning_id: Apa pendapatmu tentang ini?
+  usage_note: 'Gunakan saat ingin mengatakan: Apa pendapatmu tentang ini?'
+- phrase: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+  meaning_id: Apa pendapatmu tentang pilihan kedua?
+  usage_note: 'Gunakan saat ingin mengatakan: Apa pendapatmu tentang pilihan kedua?'
+- phrase: أَيُّهُمَا أَفْضَلُ؟
+  meaning_id: Mana dari keduanya yang lebih baik?
+  usage_note: 'Gunakan saat ingin mengatakan: Mana dari keduanya yang lebih baik?'
+- phrase: هَلْ تَعْتَقِدُ أَنَّ هَذَا مُنَاسِبٌ؟
+  meaning_id: Apakah kamu pikir ini cocok?
+  usage_note: 'Gunakan saat ingin mengatakan: Apakah kamu pikir ini cocok?'
+- phrase: أُرِيدُ رَأْيًا وَاضِحًا.
+  meaning_id: Saya ingin pendapat yang jelas.
+  usage_note: 'Gunakan saat ingin mengatakan: Saya ingin pendapat yang jelas.'

@@ -1,0 +1,27 @@
+lesson_key: lesson-01-saying-what-you-think
+slug: arabic-saying-what-you-think
+title: Saying What You Think
+status: beta
+estimated_minutes: 12
+conversation_situation: saying_what_you_think
+conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan
+  ingin menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.'
+grammar_summary: Gunakan أَعْتَقِدُ أَنَّ untuk 'saya pikir bahwa', فِي رَأْيِي untuk 'menurut saya',
+  dan هَذَا untuk merujuk hal yang sedang dibahas.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 65

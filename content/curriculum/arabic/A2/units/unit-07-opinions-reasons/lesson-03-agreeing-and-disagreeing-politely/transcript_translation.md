@@ -1,0 +1,9 @@
+# Transcript Translation
+
+- **Ahmad:** أَعْتَقِدُ أَنَّ الدِّرَاسَةَ فِي الْبَيْتِ أَفْضَلُ. -> Saya pikir belajar di rumah lebih baik.
+- **Sara:** أَفْهَمُ رَأْيَكَ، وَلَكِنْ لَا أُوَافِقُ تَمَامًا. -> Saya memahami pendapatmu, tetapi saya tidak sepenuhnya setuju.
+- **Ahmad:** لِمَاذَا؟ -> Mengapa?
+- **Sara:** فِي رَأْيِي، الدِّرَاسَةُ مَعَ صَدِيقَةٍ أَفْضَلُ لِأَنَّهَا تُسَاعِدُنِي. -> Menurut saya, belajar dengan teman lebih baik karena ia membantu saya.
+- **Ahmad:** هَذَا صَحِيحٌ أَيْضًا. -> Itu juga benar.
+- **Sara:** إِذًا نَدْرُسُ مَعًا فِي الْمَكْتَبَةِ؟ -> Jadi kita belajar bersama di perpustakaan?
+- **Ahmad:** نَعَمْ، أُوَافِقُكِ فِي هَذَا. -> Ya, saya setuju denganmu dalam hal ini.

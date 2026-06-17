@@ -1,0 +1,50 @@
+scenario_key: arabic_giving_simple_reasons
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أَيُّ مَكَانٍ تُفَضِّلُ لِلدِّرَاسَةِ يَا رَامِي؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan alasan pendek untuk pendapatmu:
+  karena mudah, dekat, murah, jelas, atau cocok untuk jadwalmu.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أَيُّ مَكَانٍ تُفَضِّلُ لِلدِّرَاسَةِ يَا رَامِي؟
+  hint: 'Jawab dengan pola: أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.'
+  sample_answer: أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+  focus: 'Latihan frasa: Saya suka ini karena mudah.'
+  expected_keywords:
+  - أُحِبُّ
+  - هَذَا
+  - لِأَنَّهُ
+  indonesian_explanation: Saya suka ini karena mudah.
+- coach: 'استخدم: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.'
+  hint: 'Jawab dengan pola: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.'
+  sample_answer: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+  focus: 'Latihan frasa: Saya lebih memilih ini karena dekat.'
+  expected_keywords:
+  - أُفَضِّلُ
+  - هَذَا
+  - لِأَنَّهُ
+  indonesian_explanation: Saya lebih memilih ini karena dekat.
+- coach: 'استخدم: هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.'
+  hint: 'Jawab dengan pola: هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.'
+  sample_answer: هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
+  focus: 'Latihan frasa: Itu bagus, tetapi mahal.'
+  expected_keywords:
+  - هُوَ
+  - جَيِّدٌ،
+  - وَلَكِنَّهُ
+  indonesian_explanation: Itu bagus, tetapi mahal.
+target_phrases:
+- أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+- أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+- هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
+- السَّبَبُ بَسِيطٌ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

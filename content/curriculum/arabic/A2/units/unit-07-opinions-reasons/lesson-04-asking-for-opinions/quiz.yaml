@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa pendapatmu tentang ini?"?
+  options:
+  - مَا رَأْيُكَ فِي هَذَا؟
+  - مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: مَا رَأْيُكَ فِي هَذَا؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apa pendapatmu tentang pilihan kedua?"?
+  options:
+  - مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+  - مَا رَأْيُكَ فِي هَذَا؟
+  - أَيُّهُمَا أَفْضَلُ؟
+  correct_answer: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟

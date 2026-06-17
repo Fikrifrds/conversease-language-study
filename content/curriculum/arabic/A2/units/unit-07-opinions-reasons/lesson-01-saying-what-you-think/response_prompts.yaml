@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pikir pelajarannya bermanfaat.'
+  target_response: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+  acceptable_responses:
+  - أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Menurut saya, ini baik.'
+  target_response: فِي رَأْيِي، هَذَا جَيِّدٌ.
+  acceptable_responses:
+  - فِي رَأْيِي، هَذَا جَيِّدٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat bahwa tempatnya cocok.'
+  target_response: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+  acceptable_responses:
+  - أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.

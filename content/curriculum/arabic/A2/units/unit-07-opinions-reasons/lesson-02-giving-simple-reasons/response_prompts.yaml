@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya suka ini karena mudah.'
+  target_response: أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+  acceptable_responses:
+  - أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih ini karena dekat.'
+  target_response: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+  acceptable_responses:
+  - أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Itu bagus, tetapi mahal.'
+  target_response: هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
+  acceptable_responses:
+  - هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.

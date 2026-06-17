@@ -1,0 +1,50 @@
+scenario_key: arabic_saying_what_you_think
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَا رَأْيُكِ فِي الدَّرْسِ الْيَوْمَ يَا نُورَةُ؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan ingin
+  menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا رَأْيُكِ فِي الدَّرْسِ الْيَوْمَ يَا نُورَةُ؟
+  hint: 'Jawab dengan pola: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.'
+  sample_answer: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+  focus: 'Latihan frasa: Saya pikir pelajarannya bermanfaat.'
+  expected_keywords:
+  - أَعْتَقِدُ
+  - أَنَّ
+  - الدَّرْسَ
+  indonesian_explanation: Saya pikir pelajarannya bermanfaat.
+- coach: 'استخدم: فِي رَأْيِي، هَذَا جَيِّدٌ.'
+  hint: 'Jawab dengan pola: فِي رَأْيِي، هَذَا جَيِّدٌ.'
+  sample_answer: فِي رَأْيِي، هَذَا جَيِّدٌ.
+  focus: 'Latihan frasa: Menurut saya, ini baik.'
+  expected_keywords:
+  - فِي
+  - رَأْيِي،
+  - هَذَا
+  indonesian_explanation: Menurut saya, ini baik.
+- coach: 'استخدم: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.'
+  hint: 'Jawab dengan pola: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.'
+  sample_answer: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+  focus: 'Latihan frasa: Saya melihat bahwa tempatnya cocok.'
+  expected_keywords:
+  - أَرَى
+  - أَنَّ
+  - الْمَكَانَ
+  indonesian_explanation: Saya melihat bahwa tempatnya cocok.
+target_phrases:
+- أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+- فِي رَأْيِي، هَذَا جَيِّدٌ.
+- أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+- هَذَا أَفْضَلُ لِي.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

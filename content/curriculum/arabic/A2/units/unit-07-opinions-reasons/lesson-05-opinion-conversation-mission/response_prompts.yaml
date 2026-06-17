@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa pendapatmu tentang rencana ini?'
+  target_response: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+  acceptable_responses:
+  - مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pikir itu baik.'
+  target_response: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+  acceptable_responses:
+  - أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih pagi karena lebih tenang.'
+  target_response: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  acceptable_responses:
+  - أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.

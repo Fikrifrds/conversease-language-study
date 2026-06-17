@@ -1,0 +1,48 @@
+scenario_key: arabic_agreeing_and_disagreeing_politely
+mode: lesson_practice_coach
+level_code: A2
+opening_line: أَعْتَقِدُ أَنَّ الدِّرَاسَةَ فِي الْبَيْتِ أَفْضَلُ.
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan perlu setuju,
+  kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أَعْتَقِدُ أَنَّ الدِّرَاسَةَ فِي الْبَيْتِ أَفْضَلُ.
+  hint: 'Jawab dengan pola: أُوَافِقُكَ.'
+  sample_answer: أُوَافِقُكَ.
+  focus: 'Latihan frasa: Saya setuju denganmu.'
+  expected_keywords:
+  - أُوَافِقُكَ
+  indonesian_explanation: Saya setuju denganmu.
+- coach: 'استخدم: أُوَافِقُكِ فِي هَذَا.'
+  hint: 'Jawab dengan pola: أُوَافِقُكِ فِي هَذَا.'
+  sample_answer: أُوَافِقُكِ فِي هَذَا.
+  focus: 'Latihan frasa: Saya setuju denganmu dalam hal ini.'
+  expected_keywords:
+  - أُوَافِقُكِ
+  - فِي
+  - هَذَا
+  indonesian_explanation: Saya setuju denganmu dalam hal ini.
+- coach: 'استخدم: لَا أُوَافِقُ تَمَامًا.'
+  hint: 'Jawab dengan pola: لَا أُوَافِقُ تَمَامًا.'
+  sample_answer: لَا أُوَافِقُ تَمَامًا.
+  focus: 'Latihan frasa: Saya tidak sepenuhnya setuju.'
+  expected_keywords:
+  - لَا
+  - أُوَافِقُ
+  - تَمَامًا
+  indonesian_explanation: Saya tidak sepenuhnya setuju.
+target_phrases:
+- أُوَافِقُكَ.
+- أُوَافِقُكِ فِي هَذَا.
+- لَا أُوَافِقُ تَمَامًا.
+- فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -1,0 +1,50 @@
+scenario_key: arabic_opinion_conversation_mission
+mode: lesson_practice_coach
+level_code: A2
+opening_line: مَا رَأْيُكِ فِي هَذِهِ الْخُطَّةِ يَا لَيْلَى؟
+learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu memilih rencana belajar bersama teman:
+  meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.'
+max_turns: 5
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا رَأْيُكِ فِي هَذِهِ الْخُطَّةِ يَا لَيْلَى؟
+  hint: 'Jawab dengan pola: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟'
+  sample_answer: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+  focus: 'Latihan frasa: Apa pendapatmu tentang rencana ini?'
+  expected_keywords:
+  - مَا
+  - رَأْيُكَ
+  - فِي
+  indonesian_explanation: Apa pendapatmu tentang rencana ini?
+- coach: 'استخدم: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.'
+  hint: 'Jawab dengan pola: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.'
+  sample_answer: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+  focus: 'Latihan frasa: Saya pikir itu baik.'
+  expected_keywords:
+  - أَعْتَقِدُ
+  - أَنَّهَا
+  - جَيِّدَةٌ
+  indonesian_explanation: Saya pikir itu baik.
+- coach: 'استخدم: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.'
+  hint: 'Jawab dengan pola: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.'
+  sample_answer: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  focus: 'Latihan frasa: Saya lebih memilih pagi karena lebih tenang.'
+  expected_keywords:
+  - أُفَضِّلُ
+  - الصَّبَاحَ
+  - لِأَنَّهُ
+  indonesian_explanation: Saya lebih memilih pagi karena lebih tenang.
+target_phrases:
+- مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+- أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+- أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+- لَا أُوَافِقُ تَمَامًا.
+rubric:
+  speaking:
+    minimum_score: 65
+  relevance:
+    minimum_score: 65
+  grammar:
+    minimum_score: 60

@@ -164,30 +164,30 @@ units:
     status: beta
 - unit_key: unit-07-opinions-reasons
   title: Opinions & Reasons
-  status: planned
+  status: beta
   main_conversation_outcome: Give simple opinions, short reasons, agreement, disagreement, and preference
     in Arabic.
   lessons:
   - lesson_key: lesson-01-saying-what-you-think
     slug: arabic-saying-what-you-think
     title: Saying What You Think
-    status: planned
+    status: beta
   - lesson_key: lesson-02-giving-simple-reasons
     slug: arabic-giving-simple-reasons
     title: Giving Simple Reasons
-    status: planned
+    status: beta
   - lesson_key: lesson-03-agreeing-and-disagreeing-politely
     slug: arabic-agreeing-and-disagreeing-politely
     title: Agreeing and Disagreeing Politely
-    status: planned
+    status: beta
   - lesson_key: lesson-04-asking-for-opinions
     slug: arabic-asking-for-opinions
     title: Asking for Opinions
-    status: planned
+    status: beta
   - lesson_key: lesson-05-opinion-conversation-mission
     slug: arabic-opinion-conversation-mission
     title: Opinion Conversation Mission
-    status: planned
+    status: beta
 - unit_key: unit-08-a2-review-final
   title: A2 Review & Final Conversation
   status: planned
