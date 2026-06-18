@@ -18,7 +18,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
 
   return (
-    <AppShell requireAuth>
+    <AppShell>
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-7">
           <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">

@@ -1,13 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpen, CheckCircle2, Languages, Lock, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Languages } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { courses } from "@/lib/data";
-import { listCourses, type CourseSummary } from "@/lib/learning-api";
 
-type Access = { unlocked: boolean; requiresPro: boolean; accessible: boolean };
 type LanguageFilter = "all" | "english" | "arabic";
 type Course = (typeof courses)[number];
 
@@ -18,49 +16,11 @@ const languageFilters: Array<{ key: LanguageFilter; label: string }> = [
 ];
 
 export default function CoursesPage() {
-  const [accessBySlug, setAccessBySlug] = useState<Record<string, Access>>({});
-  const [loaded, setLoaded] = useState(false);
   const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
-
-  useEffect(() => {
-    let cancelled = false;
-    listCourses()
-      .then((summaries: CourseSummary[]) => {
-        if (cancelled) {
-          return;
-        }
-        setAccessBySlug(
-          Object.fromEntries(
-            summaries.map((c) => [
-              c.slug,
-              { unlocked: c.unlocked, requiresPro: c.requiresPro, accessible: c.accessible }
-            ])
-          )
-        );
-      })
-      .catch(() => {
-        if (!cancelled) {
-          setAccessBySlug(
-            courses.length
-              ? { [courses[0].slug]: { unlocked: true, requiresPro: false, accessible: true } }
-              : {}
-          );
-        }
-      })
-      .finally(() => {
-        if (!cancelled) {
-          setLoaded(true);
-        }
-      });
-    return () => {
-      cancelled = true;
-    };
-  }, []);
-
   const visibleCourseGroups = groupedCourses(languageFilter);
 
   return (
-    <AppShell requireAuth>
+    <AppShell>
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-7">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
@@ -128,12 +88,7 @@ export default function CoursesPage() {
 
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.courses.map((course) => (
-                  <CourseCard
-                    key={course.slug}
-                    course={course}
-                    access={courseAccess(course, accessBySlug)}
-                    loaded={loaded}
-                  />
+                  <CourseCard key={course.slug} course={course} />
                 ))}
               </div>
             </section>
@@ -188,79 +143,42 @@ function TrackSummaryCard({
 }
 
 function CourseCard({
-  course,
-  access,
-  loaded
+  course
 }: {
   course: Course;
-  access: Access & { prevLevel: string | null };
-  loaded: boolean;
 }) {
   const badgeTone = course.language === "arabic" ? "bg-[#fff2dc] text-coral" : "bg-mint text-leaf";
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
 
-  if (access.accessible) {
-    return (
-      <Link
-        href={`/courses/${course.slug}`}
-        className="focus-ring group flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
-      >
-        <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
-        <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
-        <div className="mt-auto flex items-center justify-between gap-3 pt-5">
-          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
-            <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-            Siap dipelajari
-          </p>
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
-            Buka
-            <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
-          </span>
-        </div>
-      </Link>
-    );
-  }
-
-  const lockedForPro = access.requiresPro && access.unlocked;
   return (
-    <div
-      className="flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 text-ink/60 shadow-sm"
-      aria-disabled="true"
+    <Link
+      href={`/courses/${course.slug}`}
+      className="focus-ring group flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
     >
-      <CourseCardHeader course={course} badgeTone="bg-paper text-ink/55" lessonCount={lessonCount} muted />
-      <p className="mt-3 text-sm leading-6">{course.outcome}</p>
-      <div className="mt-auto pt-5">
-        {!loaded ? (
-          <p className="text-xs font-semibold uppercase text-ink/40">Memeriksa akses...</p>
-        ) : lockedForPro ? (
-          <Link
-            href="/pricing"
-            className="focus-ring inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-2 text-sm font-semibold text-white hover:bg-leaf"
-          >
-            <Sparkles className="h-4 w-4" aria-hidden="true" />
-            Upgrade ke Pro
-          </Link>
-        ) : (
-          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-coral">
-            <Lock className="h-4 w-4" aria-hidden="true" />
-            Selesaikan {access.prevLevel} dulu
-          </p>
-        )}
+      <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
+      <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
+      <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+        <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
+          <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+          Lihat modul
+        </p>
+        <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
+          Buka
+          <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }
 
 function CourseCardHeader({
   course,
   badgeTone,
-  lessonCount,
-  muted = false
+  lessonCount
 }: {
   course: Course;
   badgeTone: string;
   lessonCount: number;
-  muted?: boolean;
 }) {
   return (
     <div className="flex items-start justify-between gap-4">
@@ -279,27 +197,12 @@ function CourseCardHeader({
             {lessonCount} lesson
           </span>
         </div>
-        <h3 className={`mt-4 break-words text-[1.45rem] font-semibold leading-tight ${muted ? "text-ink/70" : "text-ink"}`}>
+        <h3 className="mt-4 break-words text-[1.45rem] font-semibold leading-tight text-ink">
           {course.title}
         </h3>
       </div>
     </div>
   );
-}
-
-function courseAccess(course: Course, accessBySlug: Record<string, Access>): Access & { prevLevel: string | null } {
-  const courseIndex = courses.findIndex((item) => item.slug === course.slug);
-  const access = accessBySlug[course.slug] ?? {
-    unlocked: courseIndex === 0,
-    requiresPro: courseIndex !== 0,
-    accessible: courseIndex === 0
-  };
-  const languageCourses = courses.filter((item) => item.language === course.language);
-  const languageIndex = languageCourses.findIndex((item) => item.slug === course.slug);
-  return {
-    ...access,
-    prevLevel: languageIndex > 0 ? languageCourses[languageIndex - 1].level : null
-  };
 }
 
 function groupedCourses(languageFilter: LanguageFilter) {

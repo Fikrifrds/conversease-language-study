@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, CircleDot, PlayCircle } from "lucide-react";
+import { getAuthSession } from "@/lib/auth-api";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
 
@@ -13,6 +14,14 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
 
   useEffect(() => {
     let ignore = false;
+    const session = getAuthSession();
+
+    if (!session) {
+      setSummary(null);
+      return () => {
+        ignore = true;
+      };
+    }
 
     async function loadProgress() {
       try {
@@ -63,15 +72,21 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                 <h2 className="mt-2 text-xl font-semibold">{unit.title}</h2>
                 <p className="mt-2 text-sm leading-6 text-ink/70">{unit.outcome}</p>
               </div>
-              <div className="w-full max-w-xs">
-                <div className="mb-2 flex justify-between text-sm">
-                  <span>Progress</span>
-                  <span>{progressPercent}%</span>
+              {summary ? (
+                <div className="w-full max-w-xs">
+                  <div className="mb-2 flex justify-between text-sm">
+                    <span>Progress</span>
+                    <span>{progressPercent}%</span>
+                  </div>
+                  <div className="h-2 rounded-lg bg-ink/10">
+                    <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
+                  </div>
                 </div>
-                <div className="h-2 rounded-lg bg-ink/10">
-                  <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
+              ) : (
+                <div className="rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
+                  Preview modul publik
                 </div>
-              </div>
+              )}
             </div>
 
             {activeLessons.length ? (
@@ -80,7 +95,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                   const lessonProgress = progressBySlug.get(lesson.slug);
                   const completed = lessonProgress?.progressStatus === "completed";
                   const inProgress = lessonProgress?.progressStatus === "in_progress";
-                  const statusLabel = completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
+                  const statusLabel = !summary ? "Preview" : completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
 
                   return (
                     <Link
