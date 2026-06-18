@@ -1,19 +1,23 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟"'
 - word: رَصِيفٌ
   meaning_id: peron
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "peron". Contoh: "كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟"'
 - word: مُسْتَقِيمًا
   meaning_id: lurus
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lurus". Contoh: "اِمْشِ مُسْتَقِيمًا."'
 - word: بِجَانِبِ
   meaning_id: di samping
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di samping". Contoh: "بِجَانِبِ الْمَصْعَدِ."'
 - word: مِصْعَدٌ
   meaning_id: lift
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lift". Contoh: "بِجَانِبِ الْمَصْعَدِ."'
 - word: صَحِيحٌ
   meaning_id: benar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "benar". Contoh: "هَلْ هَذَا صَحِيحٌ؟"'
+- word: نِهَايَةٌ
+  meaning_id: akhir
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "اِمْشِي مُسْتَقِيمًا إِلَى نِهَايَةِ
+    الْمَمَرِّ."'

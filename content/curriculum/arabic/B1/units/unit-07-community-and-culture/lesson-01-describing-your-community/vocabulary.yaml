@@ -1,25 +1,31 @@
 vocabulary:
 - word: مُجْتَمَعٌ
   meaning_id: komunitas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "komunitas". Contoh: "أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ."'
 - word: هَادِئٌ
   meaning_id: tenang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tenang". Contoh: "أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ."'
 - word: النَّاسُ
   meaning_id: orang-orang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "orang-orang". Contoh: "النَّاسُ يَتَعَاوَنُونَ
+    فِي الْأَعْمَالِ الْيَوْمِيَّةِ."'
 - word: يَتَعَاوَنُونَ
   meaning_id: mereka saling membantu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mereka saling membantu". Contoh: "النَّاسُ يَتَعَاوَنُونَ
+    فِي الْأَعْمَالِ الْيَوْمِيَّةِ."'
 - word: عَادَاتٌ
   meaning_id: kebiasaan-kebiasaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kebiasaan-kebiasaan". Contoh: "تُوجَدُ عَادَاتٌ
+    جَمِيلَةٌ فِي الْحَيِّ."'
 - word: جَمِيلَةٌ
   meaning_id: indah/bagus
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "indah/bagus". Contoh: "تُوجَدُ عَادَاتٌ جَمِيلَةٌ
+    فِي الْحَيِّ."'
 - word: حَيٌّ
   meaning_id: lingkungan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lingkungan". Contoh: "تُوجَدُ عَادَاتٌ جَمِيلَةٌ
+    فِي الْحَيِّ."'
 - word: اِنْتِمَاءٌ
   meaning_id: rasa memiliki
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rasa memiliki". Contoh: "أَشْعُرُ بِالِانْتِمَاءِ
+    إِلَى هَذَا الْمَكَانِ."'

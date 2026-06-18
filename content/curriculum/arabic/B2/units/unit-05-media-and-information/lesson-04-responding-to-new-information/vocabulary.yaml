@@ -1,25 +1,33 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ مِنَ الْمَقَالِ
+    أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ."'
 - word: مَصْدَرٌ
   meaning_id: sumber
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sumber". Contoh: "يَجِبُ أَنْ نَتَأَكَّدَ مِنْ
+    أَنَّ الْمَصْدَرَ مَوْثُوقٌ."'
 - word: مَوْثُوقٌ
   meaning_id: tepercaya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tepercaya". Contoh: "يَجِبُ أَنْ نَتَأَكَّدَ مِنْ
+    أَنَّ الْمَصْدَرَ مَوْثُوقٌ."'
 - word: وِجْهَةٌ
   meaning_id: arah/sudut pandang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "arah/sudut pandang". Contoh: "وِجْهَةُ النَّظَرِ
+    هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى."'
 - word: نَظَرٌ
   meaning_id: pandangan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pandangan". Contoh: "وِجْهَةُ النَّظَرِ هَذِهِ
+    تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى."'
 - word: دَلِيلٌ
   meaning_id: bukti/petunjuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "وِجْهَةُ النَّظَرِ هَذِهِ
+    تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى."'
 - word: مَعْلُومَاتٌ
   meaning_id: informasi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "informasi". Contoh: "بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ،
+    تَغَيَّرَ رَأْيِي قَلِيلًا."'
 - word: قَلِيلًا
   meaning_id: sedikit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ،
+    تَغَيَّرَ رَأْيِي قَلِيلًا."'

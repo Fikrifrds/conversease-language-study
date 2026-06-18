@@ -1,19 +1,19 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟"'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟"'
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "امشِ إِلَى الْأَمَامِ"'
 - word: بَابٌ
   meaning_id: pintu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pintu". Contoh: "عِنْدَ الْبَابِ"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "ثُمَّ مَاذَا؟"'

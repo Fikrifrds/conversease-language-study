@@ -1,25 +1,26 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى
+    جَاكَرْتَا."'
 - word: تَذْكِرَةٌ
   meaning_id: tiket
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tiket". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا."'
 - word: جَاكَرْتَا
   meaning_id: Jakarta
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Jakarta". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا."'
 - word: ذَهَابًا
   meaning_id: pergi/sekali jalan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pergi/sekali jalan". Contoh: "ذَهَابًا فَقَطْ."'
 - word: عَوْدَةٌ
   meaning_id: pulang/kembali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pulang/kembali". Contoh: "ذَهَابًا وَعَوْدَةً."'
 - word: دَرَجَةٌ
   meaning_id: kelas/tingkat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kelas/tingkat". Contoh: "الدَّرَجَةُ الِاقْتِصَادِيَّةُ."'
 - word: اِقْتِصَادِيَّةٌ
   meaning_id: ekonomi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ekonomi". Contoh: "الدَّرَجَةُ الِاقْتِصَادِيَّةُ."'
 - word: كَمْ
   meaning_id: berapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berapa". Contoh: "كَمِ السِّعْرُ؟"'

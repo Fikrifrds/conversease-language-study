@@ -1,25 +1,33 @@
 vocabulary:
 - word: أُرَاجِعُ
   meaning_id: saya mengulang/review
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "أُرَاجِعُ مَهَارَةَ
+    النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ."'
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "أُرَاجِعُ مَهَارَةَ النِّقَاشُ
+    النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "أُرَاجِعُ مَهَارَةَ النِّقَاشُ
+    النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ."'
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "أَسْتَطِيعُ أَنْ أُقَدِّمَ
+    رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ."'
 - word: اِعْتِرَاضٌ
   meaning_id: keberatan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keberatan". Contoh: "إِذَا ظَهَرَ اِعْتِرَاضٌ،
+    فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ."'
 - word: اِخْتِبَارٌ
   meaning_id: ujian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ujian". Contoh: "فِي الِاخْتِبَارِ النِّهَائِيِّ،
+    سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها
+    الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشُ النِّهَائِي..."'
 - word: دَلِيلٌ
   meaning_id: bukti/petunjuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ
+    الَّذِي يُوَضِّحُ ذَلِكَ؟"'

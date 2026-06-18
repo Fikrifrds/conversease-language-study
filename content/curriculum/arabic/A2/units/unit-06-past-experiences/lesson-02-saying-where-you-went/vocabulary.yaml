@@ -1,25 +1,26 @@
 vocabulary:
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ ذَهَبْتَ؟"'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "أَيْنَ ذَهَبْتَ؟"'
 - word: سُوقٌ
   meaning_id: pasar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pasar". Contoh: "ذَهَبْتُ إِلَى السُّوقِ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "فِي الصَّبَاحِ."'
 - word: رَجَعْتُ
   meaning_id: saya kembali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya kembali". Contoh: "رَجَعْتُ فِي الْمَسَاءِ."'
 - word: مَسَاءٌ
   meaning_id: sore/malam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sore/malam". Contoh: "رَجَعْتُ فِي الْمَسَاءِ."'
+- word: نِهَايَةٌ
+  meaning_id: akhir
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "أَيْنَ ذَهَبْتَ فِي نِهَايَةِ
+    الْأُسْبُوعِ يَا عُمَرُ؟"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: اِشْتَرَيْتُ
-  meaning_id: saya membeli
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا اشْتَرَيْتَ؟"'

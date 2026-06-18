@@ -1,16 +1,16 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تَفْعَلُ صَبَاحًا؟"'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "أكتب"'
 - word: أَدْرُسُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "ثُمَّ أَعْمَلُ"'

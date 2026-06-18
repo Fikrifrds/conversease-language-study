@@ -1,25 +1,33 @@
 vocabulary:
 - word: ضِمْنِيٌّ
   meaning_id: tersirat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tersirat". Contoh: "فِي مَهَارَةِ الْتِقَاطِ الْمَعْنَى
+    الضِّمْنِيِّ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ الْتِقَاطِ
+    الْمَعْنَى الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَس..."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "عِنْدَ تَطْبِيقِ الْتِقَاطِ
+    الْمَعْنَى الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَس..."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "عِنْدَ تَطْبِيقِ الْتِقَاطِ الْمَعْنَى
+    الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَس..."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "عِنْدَ تَطْبِيقِ الْتِقَاطِ الْمَعْنَى
+    الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَس..."'
 - word: تَأْخِيرٌ
   meaning_id: keterlambatan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keterlambatan". Contoh: "إِذَا لَخَّصْتُ مَا سَمِعْتُهُ،
+    فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا لَخَّصْتُ مَا سَمِعْتُهُ،
+    فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ."'
 - word: تَحَدٍّ
   meaning_id: tantangan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ
+    الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذ..."'

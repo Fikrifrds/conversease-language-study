@@ -1,19 +1,19 @@
 vocabulary:
 - word: قَلَمٌ
   meaning_id: pena
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pena". Contoh: "هَلْ عِنْدَكُمْ قَلَمٌ؟"'
 - word: مَوْجُودٌ
   meaning_id: tersedia/ada
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tersedia/ada". Contoh: "نَعَمْ، مَوْجُودٌ"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ هَذَا"'
 - word: آخُذُ
   meaning_id: saya ambil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ambil". Contoh: "آخُذُ وَاحِدًا"'
 - word: حِسَابٌ
   meaning_id: tagihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tagihan". Contoh: "الْحِسَابُ مِنْ فَضْلِكَ"'
 - word: كَمْ
   meaning_id: berapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berapa". Contoh: "كَمْ قَلَمًا تُرِيدُ؟"'

@@ -1,25 +1,27 @@
 vocabulary:
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "نَعَمْ، أَسْتَطِيعُ."'
 - word: آسِفٌ
   meaning_id: maaf
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "maaf". Contoh: "آسِفٌ، لَا أَسْتَطِيعُ."'
 - word: وَقْتٌ
   meaning_id: waktu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "waktu". Contoh: "رُبَّمَا فِي وَقْتٍ آخَرَ."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "رُبَّمَا فِي وَقْتٍ آخَرَ."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "لَا مُشْكِلَةَ."'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "هَلْ تَأْتِي إِلَى الْمَكْتَبَةِ
+    مَعِي؟"'
 - word: الظُّهْرُ
   meaning_id: siang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "siang". Contoh: "نَعَمْ، أَسْتَطِيعُ بَعْدَ الظُّهْرِ."'
 - word: سُوقٌ
   meaning_id: pasar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pasar". Contoh: "وَهَلْ تَأْتِي إِلَى السُّوقِ
+    مَسَاءً؟"'

@@ -1,25 +1,25 @@
 vocabulary:
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "الْيَوْمُ ..."'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "الساعة ..."'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي دَرْسٌ"'
 - word: أَدْرُسُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "بَعْدَ الدَّرْسِ"'
 - word: يَوْمٌ
   meaning_id: hari
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari". Contoh: "أي يَوْمَ الْيَوْمُ؟"'
 - word: الْأَرْبِعَاءُ
   meaning_id: Rabu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Rabu". Contoh: "الْيَوْمُ الْأَرْبِعَاءُ."'

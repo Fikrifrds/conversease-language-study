@@ -1,25 +1,33 @@
 vocabulary:
 - word: فَائِدَةٌ
   meaning_id: manfaat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "manfaat". Contoh: "بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ
+    الْأَسَاسِيَّةَ."'
 - word: مَخَاطِرُ
   meaning_id: risiko
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "risiko". Contoh: "مِنَ الْمُهِمِّ أَنْ نَذْكُرَ
+    الْمَخَاطِرَ أَيْضًا."'
 - word: أَسْئِلَةٌ
   meaning_id: pertanyaan-pertanyaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pertanyaan-pertanyaan". Contoh: "إِذَا كَانَتْ
+    هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ."'
 - word: خُطْوَةٌ
   meaning_id: langkah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "فِي الْخِتَامِ، سَأَقْتَرِحُ
+    خُطْوَةً عَمَلِيَّةً."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ سَتُقَدِّمِينَ هَذِهِ
+    الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ فِكْرَةٍ وَالدّ..."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "كَيْفَ سَتُقَدِّمِينَ هَذِهِ
+    الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ فِكْرَةٍ وَالدّ..."'
 - word: دَلِيلٌ
   meaning_id: bukti/petunjuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ
+    الَّذِي يُوَضِّحُ ذَلِكَ؟"'
 - word: مِثَالٌ
   meaning_id: contoh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "contoh". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ
+    الَّذِي يُوَضِّحُ ذَلِكَ؟"'

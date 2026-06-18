@@ -1,25 +1,28 @@
 vocabulary:
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "لَا أَسْتَطِيعُ فِي هَذَا
+    الْوَقْتِ."'
 - word: وَقْتٌ
   meaning_id: waktu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "waktu". Contoh: "لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "هَلْ يُمْكِنُ أَنْ نُغَيِّرَ
+    الْمَوْعِدَ؟"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟"'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "الْوَقْتُ مُنَاسِبٌ."'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا عَلَى التَّفَهُّمِ."'
 - word: صَحِيحٌ
   meaning_id: benar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "benar". Contoh: "نَلْتَقِي السَّاعَةَ الرَّابِعَةَ،
+    صَحِيحٌ؟"'

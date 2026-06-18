@@ -1,22 +1,24 @@
 vocabulary:
 - word: الْإِلِكْتُرُونِيُّ
   meaning_id: elektronik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "elektronik". Contoh: "مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟"'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "اُكْتُبْ مِنْ فَضْلِكَ"'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "نُقْطَةٌ"'
 - word: وَاحِدٌ
   meaning_id: satu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "بَرِيدِي الْإِلِكْتُرُونِيُّ: أَحْمَدُ
+    نُقْطَةٌ وَاحِدٌ."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "هَلْ تَكْتُبُهُ مَرَّةً
+    أُخْرَى مِنْ فَضْلِكَ؟"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا، الْآنَ هو وَاضِحٌ."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "شُكْرًا، الْآنَ هو وَاضِحٌ."'

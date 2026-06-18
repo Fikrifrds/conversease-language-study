@@ -1,22 +1,28 @@
 vocabulary:
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى
+    الْآنَ."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى
+    الْآنَ."'
 - word: أَقْتَرِحُ
   meaning_id: saya menyarankan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "أَقْتَرِحُ أَنْ نُجَرِّبَ
+    حَلًّا مُؤَقَّتًا."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "وَإِذَا لَمْ يَنْجَحْ، نَبْحَثُ
+    عَنْ خِيَارٍ آخَرَ."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "وَإِذَا لَمْ يَنْجَحْ، نَبْحَثُ
+    عَنْ خِيَارٍ آخَرَ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

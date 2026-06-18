@@ -1,25 +1,30 @@
 vocabulary:
+- word: نِهَايَةٌ
+  meaning_id: akhir
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ
+    إِلَى الْمَدِينَةِ."'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "فِي نِهَايَةِ الْأُسْبُوعِ،
+    ذَهَبْتُ إِلَى الْمَدِينَةِ."'
 - word: مَدِينَةٌ
   meaning_id: kota
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kota". Contoh: "فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ
+    إِلَى الْمَدِينَةِ."'
 - word: رَأَيْتُ
   meaning_id: saya melihat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melihat". Contoh: "رَأَيْتُ مَكَانًا جَدِيدًا."'
 - word: اِشْتَرَيْتُ
   meaning_id: saya membeli
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya membeli". Contoh: "اشْتَرَيْتُ شَيْئًا صَغِيرًا."'
 - word: رَجَعْتُ
   meaning_id: saya kembali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya kembali". Contoh: "بَعْدَ ذَلِكَ، رَجَعْتُ
+    إِلَى الْبَيْتِ."'
 - word: بَيْتٌ
   meaning_id: rumah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rumah". Contoh: "بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى
+    الْبَيْتِ."'
 - word: تَجْرِبَةٌ
   meaning_id: pengalaman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: مَاذَا
-  meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pengalaman". Contoh: "كَانَتِ التَّجْرِبَةُ مُفِيدَةً."'

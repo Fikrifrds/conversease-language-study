@@ -1,22 +1,29 @@
 vocabulary:
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي
+    مَوْجُودٌ."'
 - word: مَوْجُودٌ
   meaning_id: tersedia/ada
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tersedia/ada". Contoh: "هَدَفِي وَاضِحٌ وَلَكِنَّ
+    التَّحَدِّي مَوْجُودٌ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ خُطَّةً
+    بَسِيطَةً وَمُسْتَمِرَّةً."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "أُفَضِّلُ خُطَّةً بَسِيطَةً
+    وَمُسْتَمِرَّةً."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ الرَّئِيسِيُّ هُوَ
+    الْجَوْدَةُ."'
 - word: جَوْدَةٌ
   meaning_id: kualitas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kualitas". Contoh: "السَّبَبُ الرَّئِيسِيُّ هُوَ
+    الْجَوْدَةُ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

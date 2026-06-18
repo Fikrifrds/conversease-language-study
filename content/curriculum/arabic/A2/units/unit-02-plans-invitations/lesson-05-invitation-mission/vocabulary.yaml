@@ -1,25 +1,27 @@
 vocabulary:
 - word: اِخْتِبَارٌ
   meaning_id: ujian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ujian". Contoh: "لِأَنَّ الِاخْتِبَارَ قَرِيبٌ."'
 - word: قَرِيبٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "لِأَنَّ الِاخْتِبَارَ قَرِيبٌ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "هَلْ يُمْكِنُ أَنْ نُغَيِّرَ
+    الْمَوْعِدَ؟"'
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "نَلْتَقِي أَمَامَ الْمَرْكَزِ."'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "نَلْتَقِي أَمَامَ الْمَرْكَزِ."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "هَلْ تُرِيدُ أَنْ تَدْرُسَ
+    مَعِي الْيَوْمَ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "نَعَمْ، وَلَكِنْ لِمَاذَا الْيَوْمَ؟"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "حَسَنًا. نَلْتَقِي السَّاعَةَ الرَّابِعَةَ؟"'

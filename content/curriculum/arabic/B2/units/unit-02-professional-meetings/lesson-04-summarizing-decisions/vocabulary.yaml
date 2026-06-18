@@ -1,25 +1,33 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
+    عَنْ تَلْخِيصُ الْقَرَارَاتِ."'
 - word: نِطَاقٌ
   meaning_id: cakupan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
+    لِلْجَمِيعِ؟"'
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
+    لِلْجَمِيعِ؟"'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
+    لِلْجَمِيعِ؟"'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
+    عَلَى هَذَا الِاقْتِرَاحِ."'
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "عِنْدِي مُلَاحَظَةٌ
+    بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ."'
 - word: بَنَّاءَةٌ
   meaning_id: konstruktif
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "konstruktif". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
+    عَلَى هَذَا الِاقْتِرَاحِ."'
 - word: اِقْتِرَاحٌ
   meaning_id: usulan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "usulan". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
+    عَلَى هَذَا الِاقْتِرَاحِ."'

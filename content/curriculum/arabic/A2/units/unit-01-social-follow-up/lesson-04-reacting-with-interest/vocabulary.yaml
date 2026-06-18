@@ -1,25 +1,29 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ كَانَ الْمَكَانُ؟"'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "كَيْفَ كَانَ الْمَكَانُ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَزُورَ ذَلِكَ
+    الْمَكَانَ."'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "ذَهَبْتُ إِلَى مَكْتَبَةٍ
+    جَدِيدَةٍ أَمْسِ."'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "ذَهَبْتُ إِلَى مَكْتَبَةٍ
+    جَدِيدَةٍ أَمْسِ."'
 - word: أَمْسِ
   meaning_id: kemarin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kemarin". Contoh: "ذَهَبْتُ إِلَى مَكْتَبَةٍ جَدِيدَةٍ
+    أَمْسِ."'
 - word: قَرِيبَةٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "هَذَا مُمْتَازٌ. هَلْ هِيَ قَرِيبَةٌ؟"'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "نَعَمْ، هِيَ قَرِيبَةٌ مِنَ الْمَرْكَزِ."'

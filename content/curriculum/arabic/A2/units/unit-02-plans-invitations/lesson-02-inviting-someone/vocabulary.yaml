@@ -1,22 +1,25 @@
 vocabulary:
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "لِأَنَّ الدَّرْسَ مُهِمٌّ."'
 - word: مَوْجُودٌ
   meaning_id: tersedia/ada
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tersedia/ada". Contoh: "أَنَا مَوْجُودٌ بَعْدَ
+    الْعَصْرِ."'
 - word: الْعَصْرُ
   meaning_id: sore
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sore". Contoh: "أَنَا مَوْجُودٌ بَعْدَ الْعَصْرِ."'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "نَدْرُسُ فِي الْمَرْكَزِ."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "هَلْ تُرِيدِينَ أَنْ تَدْرُسِي
+    مَعِي الْيَوْمَ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "رُبَّمَا. لِمَاذَا؟"'
 - word: قَرِيبٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "لِأَنَّ الدَّرْسَ مُهِمٌّ، وَالِاخْتِبَارَ
+    قَرِيبٌ."'

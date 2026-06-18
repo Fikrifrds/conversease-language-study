@@ -45,6 +45,11 @@ class ArabicVocabularyTest(unittest.TestCase):
                 self.assertRegex(word, ARABIC_TEXT_RE, f"Vocabulary word must be Arabic: {path}")
                 self.assertTrue(meaning, f"Vocabulary meaning is required: {path}")
                 self.assertTrue(usage, f"Vocabulary usage note is required: {path}")
+                self.assertNotEqual(
+                    usage,
+                    "Kata inti dari dialog dan frasa lesson ini.",
+                    f"Vocabulary usage note should explain usage with context: {path}",
+                )
                 self.assertLessEqual(
                     len(word.split()),
                     3,

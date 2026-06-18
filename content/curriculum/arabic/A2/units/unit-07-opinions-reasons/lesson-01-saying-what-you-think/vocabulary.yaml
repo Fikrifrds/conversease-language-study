@@ -1,25 +1,30 @@
 vocabulary:
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "أَعْتَقِدُ أَنَّ الدَّرْسَ
+    مُفِيدٌ."'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "أَعْتَقِدُ أَنَّ الدَّرْسَ
+    مُفِيدٌ."'
 - word: مُفِيدٌ
   meaning_id: bermanfaat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bermanfaat". Contoh: "أَعْتَقِدُ أَنَّ الدَّرْسَ
+    مُفِيدٌ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ."'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "أَرَى أَنَّ الْمَكَانَ
+    مُنَاسِبٌ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "هَذَا أَفْضَلُ لِي."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "مَا رَأْيُكِ فِي الدَّرْسِ
+    الْيَوْمَ يَا نُورَةُ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا؟"'

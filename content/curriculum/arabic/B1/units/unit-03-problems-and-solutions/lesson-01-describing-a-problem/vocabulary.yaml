@@ -1,22 +1,27 @@
 vocabulary:
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ."'
 - word: مُنْذُ
   meaning_id: sejak
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sejak". Contoh: "الْمُشْكِلَةُ بَدَأَتْ مُنْذُ
+    الصَّبَاحِ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ."'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى حَلٍّ سَرِيعٍ."'
+- word: حَلٌّ
+  meaning_id: solusi
+  usage_note: 'Dipakai untuk arti "solusi". Contoh: "أَحْتَاجُ إِلَى حَلٍّ سَرِيعٍ."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "سَأُرَاجِعُ السَّبَبَ أَوَّلًا."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "سَأُرَاجِعُ السَّبَبَ أَوَّلًا."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

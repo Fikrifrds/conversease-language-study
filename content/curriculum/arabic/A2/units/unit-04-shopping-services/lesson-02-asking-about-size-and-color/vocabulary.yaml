@@ -1,25 +1,26 @@
 vocabulary:
 - word: مَقَاسٌ
   meaning_id: ukuran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ukuran". Contoh: "هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟"'
 - word: أَكْبَرُ
   meaning_id: lebih besar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "هَلْ عِنْدَكُمْ مَقَاسٌ
+    أَكْبَرُ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ اللَّوْنَ الْأَبْيَضَ."'
 - word: لَوْنٌ
   meaning_id: warna
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "warna". Contoh: "أُرِيدُ اللَّوْنَ الْأَبْيَضَ."'
 - word: أَبْيَضُ
   meaning_id: putih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "putih". Contoh: "أُرِيدُ اللَّوْنَ الْأَبْيَضَ."'
 - word: صَغِيرٌ
   meaning_id: kecil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kecil". Contoh: "هَذَا صَغِيرٌ جِدًّا."'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "هَذَا مُنَاسِبٌ."'
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "هَلْ أَسْتَطِيعُ أَنْ أُجَرِّبَهُ؟"'

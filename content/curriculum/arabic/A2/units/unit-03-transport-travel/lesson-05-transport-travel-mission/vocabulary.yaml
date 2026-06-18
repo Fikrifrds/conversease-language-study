@@ -1,25 +1,26 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى
+    الْمَدِينَةِ."'
 - word: تَذْكِرَةٌ
   meaning_id: tiket
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tiket". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ."'
 - word: مَدِينَةٌ
   meaning_id: kota
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kota". Contoh: "أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ."'
 - word: يُغَادِرُ
   meaning_id: berangkat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berangkat". Contoh: "مَتَى يَغَادِرُ الْقِطَارُ؟"'
 - word: قِطَارٌ
   meaning_id: kereta
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kereta". Contoh: "مَتَى يَغَادِرُ الْقِطَارُ؟"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟"'
 - word: رَصِيفٌ
   meaning_id: peron
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "peron". Contoh: "كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟"'
 - word: عُنْوَانٌ
   meaning_id: alamat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alamat". Contoh: "هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟"'

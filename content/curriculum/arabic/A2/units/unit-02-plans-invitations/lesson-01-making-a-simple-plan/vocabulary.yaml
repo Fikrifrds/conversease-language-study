@@ -1,19 +1,21 @@
 vocabulary:
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "سَأَذْهَبُ إِلَى الْمَكْتَبَةِ."'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "نَلْتَقِي السَّاعَةَ الرَّابِعَةَ."'
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "أَمَامَ الْمَكْتَبَةِ."'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "سَأَذْهَبُ إِلَى الْمَكْتَبَةِ
+    بَعْدَ الدَّرْسِ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "نَعَمْ، أُرِيدُ ذَلِكَ. مَتَى
+    نَلْتَقِي؟"'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ نَلْتَقِي؟"'

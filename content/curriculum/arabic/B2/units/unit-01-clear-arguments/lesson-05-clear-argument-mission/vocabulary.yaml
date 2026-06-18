@@ -1,25 +1,33 @@
 vocabulary:
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ
+    مُهِمٌّ فِي النِّقَاشِ."'
 - word: رَأْيٌ
   meaning_id: pendapat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ
+    وَاضِحَيْنِ."'
 - word: مِثَالٌ
   meaning_id: contoh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "contoh". Contoh: "مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ
+    يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ
+    يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ هَذِهِ النُّقْطَةَ
+    الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ،
+    وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ."'
 - word: فَائِدَةٌ
   meaning_id: manfaat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "manfaat". Contoh: "أَفْهَمُ هَذِهِ النُّقْطَةَ
+    الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ."'
 - word: أَكْبَرُ
   meaning_id: lebih besar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أَفْهَمُ هَذِهِ النُّقْطَةَ
+    الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ."'

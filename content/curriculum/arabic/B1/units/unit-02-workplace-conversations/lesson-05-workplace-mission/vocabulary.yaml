@@ -1,16 +1,20 @@
 vocabulary:
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "أَعْمَلُ عَلَى تَنْظِيمِ
+    الْمَلَفَّاتِ."'
 - word: تَنْظِيمٌ
   meaning_id: pengaturan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pengaturan". Contoh: "أَعْمَلُ عَلَى تَنْظِيمِ
+    الْمَلَفَّاتِ."'
 - word: أَنْجَزْتُ
   meaning_id: saya menyelesaikan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya menyelesaikan". Contoh: "أَنْجَزْتُ نِصْفَ
+    الْعَمَلِ حَتَّى الْآنَ."'
 - word: مَسَاءٌ
   meaning_id: sore/malam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sore/malam". Contoh: "سَأُرْسِلُ مُلَخَّصًا قَبْلَ
+    الْمَسَاءِ."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "إِذَا ظَهَرَتْ مُشْكِلَةٌ، سَأُخْبِرُكِ."'

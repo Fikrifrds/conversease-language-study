@@ -1,22 +1,31 @@
 vocabulary:
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "فِي الْأُسْبُوعِ الْمَاضِي،
+    كُنْتُ فِي الْمَكْتَبَةِ."'
 - word: وَقْتٌ
   meaning_id: waktu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "waktu". Contoh: "كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ
+    الْوَقْتِ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا."'
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "هَذَا يُسَاعِدُ عَلَى فَهْمِ
+    الْقِصَّةِ."'
 - word: قِصَّةٌ
   meaning_id: cerita
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cerita". Contoh: "هَذَا يُسَاعِدُ عَلَى فَهْمِ
+    الْقِصَّةِ."'
 - word: حَدَثٌ
   meaning_id: kejadian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kejadian". Contoh: "بَعْدَ ذَلِكَ، بَدَأَ الْحَدَثُ
+    الْأَسَاسِيُّ."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "بَعْدَ ذَلِكَ، بَدَأَ الْحَدَثُ
+    الْأَسَاسِيُّ."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَبْدَأُ قِصَّةً شَخْصِيَّةً؟"'

@@ -1,25 +1,25 @@
 vocabulary:
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "الْيَوْمُ الْإِثْنَيْنِ"'
 - word: الْإِثْنَيْنِ
   meaning_id: Senin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Senin". Contoh: "الْيَوْمُ الْإِثْنَيْنِ"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "السَّاعَةُ الثَّامِنَةُ"'
 - word: الثَّامِنَةُ
   meaning_id: jam delapan/kedelapan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam delapan/kedelapan". Contoh: "السَّاعَةُ الثَّامِنَةُ"'
 - word: أَدْرُسُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ"'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "أَقْرَأُ وَأَكْتُبُ"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "بَعْدَ الدَّرْسِ"'

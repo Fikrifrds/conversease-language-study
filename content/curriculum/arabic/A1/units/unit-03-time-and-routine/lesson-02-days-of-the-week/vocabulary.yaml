@@ -1,19 +1,19 @@
 vocabulary:
 - word: يَوْمٌ
   meaning_id: hari
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari". Contoh: "أي يَوْمَ الْيَوْمُ؟"'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "أي يَوْمَ الْيَوْمُ؟"'
 - word: الْإِثْنَيْنِ
   meaning_id: Senin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Senin". Contoh: "الْيَوْمُ الْإِثْنَيْنِ"'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "غَدًا الثُّلَاثَاءُ"'
 - word: الثُّلَاثَاءُ
   meaning_id: Selasa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Selasa". Contoh: "غَدًا الثُّلَاثَاءُ"'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي دَرْسٌ"'

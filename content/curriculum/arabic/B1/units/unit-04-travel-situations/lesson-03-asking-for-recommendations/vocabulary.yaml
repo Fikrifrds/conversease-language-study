@@ -1,25 +1,30 @@
 vocabulary:
 - word: تُوصِي
   meaning_id: merekomendasikan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "merekomendasikan". Contoh: "هَلْ تُوصِي بِمَطْعَمٍ
+    قَرِيبٍ؟"'
 - word: قَرِيبٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟"'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ مَكَانًا
+    هَادِئًا."'
 - word: سِعْرٌ
   meaning_id: harga
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "harga". Contoh: "يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ
+    مُنَاسِبًا."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "مَا أَفْضَلُ خِيَارٍ فِي رَأْيِكَ؟"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا، سَأُجَرِّبُ هَذَا
+    الْمَكَانَ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "شُكْرًا، سَأُجَرِّبُ هَذَا الْمَكَانَ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

@@ -1,19 +1,27 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ أَنَّ الْعَادَاتِ
+    تَخْتَلِفُ."'
 - word: عَادَاتٌ
   meaning_id: kebiasaan-kebiasaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kebiasaan-kebiasaan". Contoh: "أَفْهَمُ أَنَّ الْعَادَاتِ
+    تَخْتَلِفُ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "لَا أُرِيدُ أَنْ أُسِيءَ
+    الْفَهْمَ."'
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "مِنَ الْأَفْضَلِ
+    أَنْ نَسْأَلَ بِأَدَبٍ."'
 - word: اِخْتِلَافٌ
   meaning_id: perbedaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perbedaan". Contoh: "أَحْتَرِمُ اخْتِلَافَ الطُّرُقِ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

@@ -1,25 +1,27 @@
 vocabulary:
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي أَلَمٌ فِي الْحَلْقِ."'
 - word: أَلَمٌ
   meaning_id: sakit/nyeri
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sakit/nyeri". Contoh: "عِنْدِي أَلَمٌ فِي الْحَلْقِ."'
 - word: حَلْقٌ
   meaning_id: tenggorokan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tenggorokan". Contoh: "عِنْدِي أَلَمٌ فِي الْحَلْقِ."'
 - word: سُعَالٌ
   meaning_id: batuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "batuk". Contoh: "لَدَيَّ سُعَالٌ خَفِيفٌ."'
 - word: خَفِيفٌ
   meaning_id: ringan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ringan". Contoh: "لَدَيَّ سُعَالٌ خَفِيفٌ."'
 - word: دَرَجَةٌ
   meaning_id: kelas/tingkat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kelas/tingkat". Contoh: "دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ
+    قَلِيلًا."'
 - word: قَلِيلًا
   meaning_id: sedikit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ
+    قَلِيلًا."'
 - word: مُنْذُ
   meaning_id: sejak
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sejak". Contoh: "مُنْذُ يَوْمَيْنِ."'

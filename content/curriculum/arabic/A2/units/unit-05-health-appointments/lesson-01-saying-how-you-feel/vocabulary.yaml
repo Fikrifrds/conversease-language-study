@@ -1,25 +1,25 @@
 vocabulary:
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي صُدَاعٌ خَفِيفٌ."'
 - word: صُدَاعٌ
   meaning_id: sakit kepala
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sakit kepala". Contoh: "عِنْدِي صُدَاعٌ خَفِيفٌ."'
 - word: خَفِيفٌ
   meaning_id: ringan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ringan". Contoh: "عِنْدِي صُدَاعٌ خَفِيفٌ."'
 - word: رَاحَةٌ
-  meaning_id: nyaman/istirahat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  meaning_id: nyaman/lega
+  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "لَا أَشْعُرُ بِالرَّاحَةِ."'
 - word: مُنْذُ
   meaning_id: sejak
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sejak". Contoh: "مُنْذُ هَذَا الصَّبَاحِ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "مُنْذُ هَذَا الصَّبَاحِ."'
 - word: طَبِيبٌ
   meaning_id: dokter
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dokter". Contoh: "هَلْ يُمْكِنُنِي أَنْ أَرَى الطَّبِيبَ؟"'
 - word: مَرْحَبًا
   meaning_id: halo
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "halo". Contoh: "مَرْحَبًا، لَا أَشْعُرُ بِالرَّاحَةِ."'

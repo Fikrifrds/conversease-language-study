@@ -1,13 +1,14 @@
 vocabulary:
 - word: اِسْتَمِعْ
   meaning_id: dengarkan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dengarkan". Contoh: "اِستمعْ"'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "اُكتبْ"'
 - word: جُمْلَةٌ
   meaning_id: kalimat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَأِ الْجُمْلَةَ."'
 - word: الْكَلِمَةُ
   meaning_id: kata
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kata". Contoh: "أَحْسَنْتَ. اُكْتُبِ الْكَلِمَةَ
+    الْآنَ."'

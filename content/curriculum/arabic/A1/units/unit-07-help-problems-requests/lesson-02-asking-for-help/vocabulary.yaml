@@ -1,25 +1,25 @@
 vocabulary:
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ مُسَاعَدَةً"'
 - word: مُسَاعَدَةٌ
   meaning_id: bantuan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bantuan". Contoh: "أَحْتَاجُ مُسَاعَدَةً"'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ أَجِدُ الدَّرْسَ؟"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "أَيْنَ أَجِدُ الدَّرْسَ؟"'
 - word: اِفْتَحْ
   meaning_id: bukalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bukalah". Contoh: "اِفْتَحِ الصَّفْحَةَ"'
 - word: الصَّفْحَةُ
   meaning_id: halaman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "halaman". Contoh: "اِفْتَحِ الصَّفْحَةَ"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا عَلَى الْمُسَاعَدَةِ"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "نَعَمْ، مَاذَا تَحْتَاجُ؟"'

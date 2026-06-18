@@ -1,22 +1,26 @@
 vocabulary:
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "الْخِيَارُ الْأَوَّلُ أَسْرَعُ."'
 - word: أَرْخَصُ
   meaning_id: lebih murah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih murah". Contoh: "الْخِيَارُ الثَّانِي أَرْخَصُ."'
 - word: جَوْدَةٌ
   meaning_id: kualitas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kualitas". Contoh: "لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ
+    أَيْضًا."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ
+    أَيْضًا."'
 - word: مُقَارَنَةٌ
   meaning_id: perbandingan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perbandingan". Contoh: "نَحْتَاجُ إِلَى مُقَارَنَةٍ
+    هَادِئَةٍ."'
 - word: هَادِئَةٌ
   meaning_id: tenang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tenang". Contoh: "نَحْتَاجُ إِلَى مُقَارَنَةٍ هَادِئَةٍ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

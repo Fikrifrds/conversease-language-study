@@ -1,25 +1,27 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ حَالُكَ؟"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: فَعَلْتُ
   meaning_id: saya melakukan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melakukan". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: أَمْسِ
   meaning_id: kemarin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kemarin". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "لِأَنَّنِي أُرِيدُ أَنْ أَتَعَلَّمَ."'
 - word: أَتَعَلَّمُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "لِأَنَّنِي أُرِيدُ أَنْ
+    أَتَعَلَّمَ."'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "سَنَتَحَدَّثُ غَدًا."'
 - word: السَّلَامُ
   meaning_id: salam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "salam". Contoh: "السَّلَامُ عَلَيْكَ يَا أَحْمَدُ.
+    كَيْفَ حَالُكَ؟"'

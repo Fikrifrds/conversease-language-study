@@ -1,25 +1,27 @@
 vocabulary:
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ الْفَصْلُ؟"'
 - word: فَصْلٌ
   meaning_id: kelas/ruang kelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kelas/ruang kelas". Contoh: "أَيْنَ الْفَصْلُ؟"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟"'
 - word: بِجَانِبِ
   meaning_id: di samping
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di samping". Contoh: "هُوَ بِجَانِبِ الْمَكْتَبَةِ"'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "هُوَ بِجَانِبِ الْمَكْتَبَةِ"'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "وَاضِحٌ"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَذْهَبَ إِلَى
+    الْفَصْلِ."'
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "اِذْهَبِي يَمِينًا ثُمَّ إِلَى
+    الْأَمَامِ."'

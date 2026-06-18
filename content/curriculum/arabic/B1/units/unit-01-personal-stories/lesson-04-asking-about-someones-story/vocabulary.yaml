@@ -1,25 +1,30 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟"'
 - word: حَدَثٌ
   meaning_id: kejadian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kejadian". Contoh: "مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ شَعَرْتَ فِي تِلْكَ
+    اللَّحْظَةِ؟"'
 - word: شَعَرْتُ
   meaning_id: saya merasa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya merasa". Contoh: "كَيْفَ شَعَرْتَ فِي تِلْكَ
+    اللَّحْظَةِ؟"'
 - word: لَحْظَةٌ
   meaning_id: momen
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "momen". Contoh: "كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا كَانَ ذَلِكَ مُهِمًّا
+    لَكَ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ
+    أَكْثَرَ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ
+    أَكْثَرَ."'

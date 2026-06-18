@@ -1,25 +1,25 @@
 vocabulary:
 - word: رَاحَةٌ
-  meaning_id: nyaman/istirahat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  meaning_id: nyaman/lega
+  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "لَا أَشْعُرُ بِالرَّاحَةِ."'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: أَلَمٌ
   meaning_id: sakit/nyeri
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sakit/nyeri". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: خَفِيفٌ
   meaning_id: ringan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ringan". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: مُنْذُ
   meaning_id: sejak
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sejak". Contoh: "مُنْذُ أَمْسِ."'
 - word: أَمْسِ
   meaning_id: kemarin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kemarin". Contoh: "مُنْذُ أَمْسِ."'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "ذَهَبْتُ إِلَى الْمَدِينَةِ."'
 - word: مَدِينَةٌ
   meaning_id: kota
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kota". Contoh: "ذَهَبْتُ إِلَى الْمَدِينَةِ."'

@@ -1,16 +1,16 @@
 vocabulary:
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ الْمَكْتَبَةُ؟"'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "أَيْنَ الْمَكْتَبَةُ؟"'
 - word: قَرِيبَةٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "قَرِيبَةٌ"'
 - word: بَعِيدَةٌ
   meaning_id: jauh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jauh". Contoh: "بَعِيدَةٌ"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا."'

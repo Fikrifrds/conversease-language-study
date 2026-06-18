@@ -1,25 +1,29 @@
 vocabulary:
 - word: أُوَافِقُ
   meaning_id: saya setuju
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya setuju". Contoh: "لَا أُوَافِقُ تَمَامًا."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "فِي رَأْيِي، هُنَاكَ خِيَارٌ
+    أَفْضَلُ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "فِي رَأْيِي، هُنَاكَ
+    خِيَارٌ أَفْضَلُ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ رَأْيَكَ."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "أَعْتَقِدُ أَنَّ الدِّرَاسَةَ
+    فِي الْبَيْتِ أَفْضَلُ."'
 - word: بَيْتٌ
   meaning_id: rumah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rumah". Contoh: "أَعْتَقِدُ أَنَّ الدِّرَاسَةَ
+    فِي الْبَيْتِ أَفْضَلُ."'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا؟"'
 - word: صَحِيحٌ
   meaning_id: benar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "benar". Contoh: "هَذَا صَحِيحٌ أَيْضًا."'

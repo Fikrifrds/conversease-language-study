@@ -1,25 +1,28 @@
 vocabulary:
 - word: قَلَمٌ
   meaning_id: pena
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pena". Contoh: "أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ."'
 - word: أَزْرَقُ
   meaning_id: biru
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "biru". Contoh: "أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ."'
 - word: لَوْنٌ
   meaning_id: warna
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "warna". Contoh: "هَلْ يُوجَدُ لَوْنٌ آخَرُ؟"'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "هَلْ يُوجَدُ لَوْنٌ آخَرُ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ وَاحِدًا، مِنْ فَضْلِكَ."'
 - word: مَرْحَبًا
   meaning_id: halo
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "halo". Contoh: "مَرْحَبًا، أَبْحَثُ عَنْ قَلَمٍ
+    أَزْرَقَ."'
 - word: أَسْوَدُ
   meaning_id: hitam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hitam". Contoh: "عِنْدَنَا أَزْرَقُ وَأَسْوَدُ
+    وَأَحْمَرُ."'
 - word: أَحْمَرُ
   meaning_id: merah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "merah". Contoh: "عِنْدَنَا أَزْرَقُ وَأَسْوَدُ
+    وَأَحْمَرُ."'

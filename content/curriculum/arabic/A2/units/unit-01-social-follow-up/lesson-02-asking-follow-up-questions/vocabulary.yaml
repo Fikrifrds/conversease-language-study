@@ -1,25 +1,28 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ."'
 - word: أَتَدَرَّبُ
   meaning_id: saya berlatih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya berlatih". Contoh: "لِأَنَّنِي أُرِيدُ أَنْ
+    أَتَدَرَّبَ."'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "سَأَذْهَبُ إِلَى الْمَكْتَبَةِ."'
 - word: قِرَاءَةٌ
   meaning_id: membaca
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "membaca". Contoh: "لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ
+    عَلَى الْقِرَاءَةِ."'
 - word: وَاجِبٌ
   meaning_id: tugas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "هَذَا جَيِّدٌ. أَنَا سَأَكْتُبُ
+    الْوَاجِبَ."'

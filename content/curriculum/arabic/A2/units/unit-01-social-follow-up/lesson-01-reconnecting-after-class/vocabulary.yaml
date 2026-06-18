@@ -1,22 +1,24 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ حَالُكَ؟"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "كَانَ الدَّرْسُ جَيِّدًا."'
 - word: الْكَلِمَاتُ
   meaning_id: kata-kata
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kata-kata". Contoh: "سَأُرَاجِعُ الْكَلِمَاتِ."'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "إِلَى اللِّقَاءِ غَدًا."'
 - word: السَّلَامُ
   meaning_id: salam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "salam". Contoh: "السَّلَامُ عَلَيْكِ يَا مَرْيَمُ."'
 - word: وَعَلَيْكُمُ
   meaning_id: dan atas kalian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dan atas kalian". Contoh: "وَعَلَيْكُمُ السَّلَامُ
+    يَا خَالِدُ. كَيْفَ حَالُكَ؟"'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "نَعَمْ، وَسَأُرَاجِعُ الْكَلِمَاتِ
+    الْيَوْمَ."'

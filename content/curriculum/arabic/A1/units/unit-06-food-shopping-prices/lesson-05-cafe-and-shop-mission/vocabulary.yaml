@@ -1,25 +1,25 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ مَاءً"'
 - word: مَاءٌ
   meaning_id: air
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "air". Contoh: "أُرِيدُ مَاءً"'
 - word: كَمْ
   meaning_id: berapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berapa". Contoh: "كَمِ السِّعْرُ؟"'
 - word: سِعْرٌ
   meaning_id: harga
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "harga". Contoh: "كَمِ السِّعْرُ؟"'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "السِّعْرُ مُنَاسِبٌ"'
 - word: آخُذُ
   meaning_id: saya ambil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ambil". Contoh: "آخُذُ وَاحِدًا"'
 - word: حِسَابٌ
   meaning_id: tagihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tagihan". Contoh: "الْحِسَابُ مِنْ فَضْلِكَ"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تُرِيدُ؟"'

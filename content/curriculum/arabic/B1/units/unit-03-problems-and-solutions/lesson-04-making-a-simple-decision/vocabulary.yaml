@@ -1,16 +1,23 @@
 vocabulary:
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "الْخِيَارُ الْأَوَّلُ أَسْهَلُ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "الْخِيَارُ الثَّانِي
+    أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ."'
+- word: طَوِيلٌ
+  meaning_id: panjang
+  usage_note: 'Dipakai untuk arti "panjang". Contoh: "الْخِيَارُ الثَّانِي أَفْضَلُ
+    عَلَى الْمَدَى الطَّوِيلِ."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "أُفَضِّلُ الْخِيَارَ الثَّانِي
+    لِهَذَا السَّبَبِ."'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "إِذَنْ، نَبْدَأُ بِهِ غَدًا."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

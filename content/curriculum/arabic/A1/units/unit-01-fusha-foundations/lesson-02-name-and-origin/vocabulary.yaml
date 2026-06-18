@@ -1,13 +1,14 @@
 vocabulary:
 - word: اِسْمِي
   meaning_id: nama saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nama saya". Contoh: "اسمي ..."'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "من أين أنتَ؟"'
 - word: إِنْدُونِيسِيَا
   meaning_id: Indonesia
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Indonesia". Contoh: "أنا من إندونيسيا"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَنَا مِنَ الْمَمْلَكَةِ
+    الْعَرَبِيَّةِ السُّعُودِيَّةِ."'

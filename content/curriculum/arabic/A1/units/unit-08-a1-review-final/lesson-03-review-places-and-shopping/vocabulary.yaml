@@ -1,25 +1,25 @@
 vocabulary:
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ الْمَقْهَى؟"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ مَاءً"'
 - word: مَاءٌ
   meaning_id: air
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "air". Contoh: "أُرِيدُ مَاءً"'
 - word: كَمْ
   meaning_id: berapa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berapa". Contoh: "كَمِ السِّعْرُ؟"'
 - word: سِعْرٌ
   meaning_id: harga
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "harga". Contoh: "كَمِ السِّعْرُ؟"'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "السِّعْرُ مُنَاسِبٌ"'
 - word: بِجَانِبِ
   meaning_id: di samping
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di samping". Contoh: "الْمَقْهَى بِجَانِبِ الْمَكْتَبَةِ."'

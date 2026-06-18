@@ -1,25 +1,29 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ كَانَتْ تَجْرِبَتُكَ؟"'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "أَعْتَقِدُ أَنَّ الْخُطَّةَ
+    جَيِّدَةٌ."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "أَعْتَقِدُ أَنَّ الْخُطَّةَ
+    جَيِّدَةٌ."'
 - word: مَدِينَةٌ
   meaning_id: kota
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kota". Contoh: "كَيْفَ كَانَتْ تَجْرِبَتُكَ فِي
+    الْمَدِينَةِ يَا خَالِدُ؟"'
 - word: رَأَيْتُ
   meaning_id: saya melihat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melihat". Contoh: "كَانَتْ جَيِّدَةً. رَأَيْتُ
+    مَكَانًا جَدِيدًا وَاشْتَرَيْتُ كِتَابًا."'

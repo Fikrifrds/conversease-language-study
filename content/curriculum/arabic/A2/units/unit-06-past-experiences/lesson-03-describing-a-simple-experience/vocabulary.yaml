@@ -1,25 +1,29 @@
 vocabulary:
 - word: تَجْرِبَةٌ
   meaning_id: pengalaman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pengalaman". Contoh: "كَانَتِ التَّجْرِبَةُ جَيِّدَةً."'
 - word: رَأَيْتُ
   meaning_id: saya melihat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melihat". Contoh: "رَأَيْتُ مَكَانًا جَمِيلًا."'
 - word: طَعَامٌ
   meaning_id: makanan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "makanan". Contoh: "أَعْجَبَنِي الطَّعَامُ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "كَانَ الْمَكَانُ مُزْدَحِمًا."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَذْهَبَ مَرَّةً
+    أُخْرَى."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "أُرِيدُ أَنْ أَذْهَبَ مَرَّةً
+    أُخْرَى."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ كَانَتْ رِحْلَتُكَ
+    إِلَى الْحَدِيقَةِ؟"'
 - word: حَدِيقَةٌ
   meaning_id: taman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "taman". Contoh: "كَيْفَ كَانَتْ رِحْلَتُكَ إِلَى
+    الْحَدِيقَةِ؟"'

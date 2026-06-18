@@ -1,25 +1,27 @@
 vocabulary:
 - word: اِسْمِي
   meaning_id: nama saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nama saya". Contoh: "اِسْمِي ..."'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "أَكْتُبُ اسْمِي ..."'
 - word: رَقْمِي
   meaning_id: nomor saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor saya". Contoh: "رَقْمِي ..."'
 - word: الْإِلِكْتُرُونِيُّ
   meaning_id: elektronik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "elektronik". Contoh: "بَرِيدِي الْإِلِكْتُرُونِيُّ
+    ..."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ هَذَا وَاضِحٌ؟"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَكْتُبُ اِسْمَكَ؟"'
 - word: رَقْمٌ
   meaning_id: nomor
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor". Contoh: "مَا رَقْمُ هَاتِفِكَ؟"'
 - word: وَاحِدٌ
   meaning_id: satu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "رَقْمِي وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ،
+    أَرْبَعَةٌ."'

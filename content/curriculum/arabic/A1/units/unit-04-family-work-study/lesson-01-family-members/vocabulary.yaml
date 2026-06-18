@@ -1,13 +1,13 @@
 vocabulary:
 - word: أَبِي
   meaning_id: ayah saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ayah saya". Contoh: "هَذَا أَبِي"'
 - word: أُمِّي
   meaning_id: ibu saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ibu saya". Contoh: "هَذِهِ أُمِّي"'
 - word: أَخِي
   meaning_id: saudara laki-laki saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saudara laki-laki saya". Contoh: "هَذَا أَخِي"'
 - word: عَائِلَتِي
   meaning_id: keluarga saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keluarga saya". Contoh: "هَذِهِ عَائِلَتِي"'

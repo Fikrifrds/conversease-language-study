@@ -1,13 +1,18 @@
 vocabulary:
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ
+    الْأُولَى."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "لَكِنَّنِي أَرَى خِيَارًا آخَرَ."'
+- word: حَلٌّ
+  meaning_id: solusi
+  usage_note: 'Dipakai untuk arti "solusi". Contoh: "هَذَا حَلٌّ مُتَوَازِنٌ."'
 - word: مُتَوَازِنٌ
   meaning_id: seimbang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "seimbang". Contoh: "هَذَا حَلٌّ مُتَوَازِنٌ."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ
+    الْخُطَّةِ."'

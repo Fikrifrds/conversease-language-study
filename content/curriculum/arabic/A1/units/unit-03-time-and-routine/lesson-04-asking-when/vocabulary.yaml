@@ -1,16 +1,16 @@
 vocabulary:
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "مَتَى الدَّرْسُ؟"'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "فِي الصَّبَاحِ"'
 - word: الظُّهْرُ
   meaning_id: siang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "siang". Contoh: "بَعْدَ الظُّهْرِ"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "وَمَاذَا نَفْعَلُ بَعْدَ الدَّرْسِ؟"'
 - word: الْكَلِمَاتُ
   meaning_id: kata-kata
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kata-kata". Contoh: "نُرَاجِعُ الْكَلِمَاتِ."'

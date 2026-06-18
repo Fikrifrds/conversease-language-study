@@ -1,25 +1,26 @@
 vocabulary:
 - word: اِسْمِي
   meaning_id: nama saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nama saya". Contoh: "اِسْمِي أَحْمَدُ"'
 - word: إِنْدُونِيسِيَا
   meaning_id: Indonesia
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Indonesia". Contoh: "أَنَا مِنْ إِنْدُونِيسِيَا"'
 - word: اُكْتُبْ
   meaning_id: tulislah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tulislah". Contoh: "أَكْتُبُ اسْمِي"'
 - word: رَقْمِي
   meaning_id: nomor saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor saya". Contoh: "رَقْمِي ..."'
 - word: الْإِلِكْتُرُونِيُّ
   meaning_id: elektronik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "elektronik". Contoh: "بَرِيدِي الْإِلِكْتُرُونِيُّ
+    ..."'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "مِنْ أَيْنَ أَنْتَ؟"'
 - word: رَقْمٌ
   meaning_id: nomor
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor". Contoh: "مَا رَقْمُ هَاتِفِكَ؟"'
 - word: وَاحِدٌ
   meaning_id: satu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "رَقْمِي وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ."'

@@ -1,22 +1,22 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "لَا أَفْهَمُ"'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ مُسَاعَدَةً"'
 - word: مُسَاعَدَةٌ
   meaning_id: bantuan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bantuan". Contoh: "أَحْتَاجُ مُسَاعَدَةً"'
 - word: بِبُطْءٍ
   meaning_id: pelan-pelan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelan-pelan". Contoh: "بِبُطْءٍ مِنْ فَضْلِكَ"'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "أَعِدْ مَرَّةً أُخْرَى"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا عَلَى الْمُسَاعَدَةِ"'
 - word: جُمْلَةٌ
   meaning_id: kalimat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَئِي الْجُمْلَةَ."'

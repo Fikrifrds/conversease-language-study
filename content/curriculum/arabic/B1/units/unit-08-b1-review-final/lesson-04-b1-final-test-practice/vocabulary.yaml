@@ -1,13 +1,16 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "إِذَا لَمْ أَفْهَمْ، أَطْلُبُ
+    تَوْضِيحًا."'
 - word: مُنَاسِبَةٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "أُحَافِظُ عَلَى الْهُدُوءِ
+    وَالسُّرْعَةِ الْمُنَاسِبَةِ."'
 - word: اِخْتِبَارٌ
   meaning_id: ujian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ujian". Contoh: "هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

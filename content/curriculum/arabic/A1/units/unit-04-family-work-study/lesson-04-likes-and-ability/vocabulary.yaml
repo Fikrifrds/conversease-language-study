@@ -1,19 +1,20 @@
 vocabulary:
 - word: أُحِبُّ
   meaning_id: saya suka
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya suka". Contoh: "أُحِبُّ الْقِرَاءَةَ"'
 - word: قِرَاءَةٌ
   meaning_id: membaca
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "membaca". Contoh: "أُحِبُّ الْقِرَاءَةَ"'
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "أَسْتَطِيعُ الْقِرَاءَةَ"'
 - word: قَلِيلًا
   meaning_id: sedikit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "قَلِيلًا"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تُحِبِّينَ؟"'
 - word: كِتَابَةٌ
   meaning_id: menulis
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "menulis". Contoh: "هَلْ تَسْتَطِيعِينَ الْكِتَابَةَ
+    بِالْعَرَبِيَّةِ؟"'

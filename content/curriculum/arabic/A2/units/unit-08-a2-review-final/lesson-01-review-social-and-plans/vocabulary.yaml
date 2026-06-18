@@ -1,25 +1,27 @@
 vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ كَانَ دَرْسُكَ؟"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟"'
 - word: فَعَلْتُ
   meaning_id: saya melakukan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melakukan". Contoh: "مَاذَا فَعَلْتَ بَعْدَ
+    الدَّرْسِ؟"'
 - word: الدَّرْسُ
   meaning_id: pelajaran
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelajaran". Contoh: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "نَلْتَقِي السَّاعَةَ الْخَامِسَةَ."'
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "أَمَامَ الْمَرْكَزِ."'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "أَمَامَ الْمَرْكَزِ."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ
+    يَا مَرْيَمُ؟"'

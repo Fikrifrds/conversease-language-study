@@ -20,6 +20,7 @@ ARABIC_ROOT = REPO_ROOT / "content" / "curriculum" / "arabic"
 
 ARABIC_DIACRITICS_RE = re.compile(r"[\u064B-\u065F\u0670]")
 ARABIC_TOKEN_RE = re.compile(r"[\u0621-\u064A\u0671-\u06D3\u064B-\u065F\u0670]+")
+AUDIO_TAG_RE = re.compile(r"\((?:[a-z][a-z-]*)\)|<#\d+(?:\.\d+)?#>")
 
 STOP_WORDS = {
     "أَنَا",
@@ -437,7 +438,24 @@ def token_lookup(token: str) -> tuple[str, str] | None:
     return None
 
 
-def ordered_tokens(phrases: list[dict[str, Any]], dialogue: list[Any] | None = None) -> list[str]:
+def clean_example(text: str) -> str:
+    cleaned = AUDIO_TAG_RE.sub("", text)
+    cleaned = re.sub(r"\s{2,}", " ", cleaned).strip()
+    return cleaned
+
+
+def shorten_example(text: str, max_chars: int = 96) -> str:
+    if len(text) <= max_chars:
+        return text
+
+    shortened = text[:max_chars].rstrip(" ،,.;؛")
+    return f"{shortened}..."
+
+
+def ordered_token_sources(
+    phrases: list[dict[str, Any]],
+    dialogue: list[Any] | None = None,
+) -> list[tuple[str, str]]:
     text_chunks: list[str] = []
     for entry in phrases:
         text_chunks.append(str(entry.get("phrase") or ""))
@@ -446,7 +464,18 @@ def ordered_tokens(phrases: list[dict[str, Any]], dialogue: list[Any] | None = N
             text_chunks.append(str(turn[1]))
         elif isinstance(turn, dict):
             text_chunks.append(str(turn.get("text") or ""))
-    return [match.group(0) for text in text_chunks for match in ARABIC_TOKEN_RE.finditer(text)]
+    return [
+        (match.group(0), clean_example(text))
+        for text in text_chunks
+        for match in ARABIC_TOKEN_RE.finditer(text)
+    ]
+
+
+def usage_note_for(word: str, meaning: str, source: str) -> str:
+    note = f"Dipakai untuk arti \"{meaning}\"."
+    if source:
+        return f"{note} Contoh: \"{shorten_example(source)}\""
+    return note
 
 
 def vocabulary_for_lesson(
@@ -458,7 +487,7 @@ def vocabulary_for_lesson(
     entries: list[dict[str, str]] = []
     seen: set[str] = set()
 
-    for token in ordered_tokens(phrases, dialogue):
+    for token, source in ordered_token_sources(phrases, dialogue):
         match = token_lookup(token)
         if not match:
             continue
@@ -471,7 +500,7 @@ def vocabulary_for_lesson(
             {
                 "word": word,
                 "meaning_id": meaning,
-                "usage_note": "Kata inti dari dialog dan frasa lesson ini.",
+                "usage_note": usage_note_for(word, meaning, source),
             }
         )
         if len(entries) >= max_items:

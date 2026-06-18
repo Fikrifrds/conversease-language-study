@@ -1,25 +1,28 @@
 vocabulary:
 - word: يُغَادِرُ
   meaning_id: berangkat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berangkat". Contoh: "مَتَى يَغَادِرُ الْقِطَارُ؟"'
 - word: قِطَارٌ
   meaning_id: kereta
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kereta". Contoh: "مَتَى يَغَادِرُ الْقِطَارُ؟"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "يُغَادِرُ السَّاعَةَ السَّابِعَةَ."'
 - word: رَصِيفٌ
   meaning_id: peron
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "peron". Contoh: "مِنْ أَيِّ رَصِيفٍ؟"'
 - word: يَصِلُ
   meaning_id: tiba
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tiba". Contoh: "يَصِلُ السَّاعَةَ التَّاسِعَةَ."'
 - word: التَّاسِعَةُ
   meaning_id: jam sembilan/kesembilan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam sembilan/kesembilan". Contoh: "يَصِلُ السَّاعَةَ
+    التَّاسِعَةَ."'
 - word: بَانْدُونْغ
   meaning_id: Bandung
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "Bandung". Contoh: "مَتَى يَغَادِرُ الْقِطَارُ إِلَى
+    بَانْدُونْغ؟"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "جَيِّدٌ، شُكْرًا عَلَى
+    الْمُسَاعَدَةِ."'

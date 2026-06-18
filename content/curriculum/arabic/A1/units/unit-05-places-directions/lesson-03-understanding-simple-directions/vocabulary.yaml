@@ -1,22 +1,22 @@
 vocabulary:
 - word: أَمَامَ
   meaning_id: di depan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di depan". Contoh: "إِلَى الْأَمَامِ"'
 - word: بِجَانِبِ
   meaning_id: di samping
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di samping". Contoh: "بِجَانِبِ الْمَكْتَبِ"'
 - word: مَكْتَبٌ
   meaning_id: kantor/meja kerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kantor/meja kerja". Contoh: "بِجَانِبِ الْمَكْتَبِ"'
 - word: مَدْرَسَةٌ
   meaning_id: sekolah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekolah". Contoh: "أمام الْمَدْرَسَةُ"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟"'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟"'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ الْمَكْتَبَةُ؟"'

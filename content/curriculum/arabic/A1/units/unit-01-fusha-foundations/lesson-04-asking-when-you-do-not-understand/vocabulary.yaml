@@ -1,16 +1,17 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "لا أفهم"'
 - word: بِبُطْءٍ
   meaning_id: pelan-pelan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelan-pelan". Contoh: "بِبُطْءٍ مِنْ فَضْلِكَ"'
 - word: الْكَلِمَةُ
   meaning_id: kata
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kata". Contoh: "الكلمة"'
 - word: جُمْلَةٌ
   meaning_id: kalimat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَئِي الْجُمْلَةَ."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "مَعْنَاهَا: قُلِ الشَّيْءَ
+    مَرَّةً أُخْرَى."'

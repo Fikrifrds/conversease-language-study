@@ -1,25 +1,26 @@
 vocabulary:
 - word: آسِفٌ
   meaning_id: maaf
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "maaf". Contoh: "آسِفٌ"'
 - word: آسِفَةٌ
   meaning_id: maaf
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "maaf". Contoh: "آسِفَةٌ"'
 - word: عُذْرًا
   meaning_id: permisi/maaf
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "permisi/maaf". Contoh: "عُذْرًا"'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "لَا مُشْكِلَةَ"'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "عُذْرًا، لَا أَفْهَمُ."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "لَا بَأْسَ، أَشْرَحُ مَرَّةً
+    أُخْرَى."'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا جَزِيلًا."'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "آسِفٌ، عِنْدِي سُؤَالٌ آخَرُ."'

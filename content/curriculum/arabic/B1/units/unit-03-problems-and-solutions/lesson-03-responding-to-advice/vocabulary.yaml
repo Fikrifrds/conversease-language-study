@@ -1,19 +1,19 @@
 vocabulary:
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "سَأُجَرِّبُ ذَلِكَ الْيَوْمَ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ."'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "لَكِنْ عِنْدِي سُؤَالٌ صَغِيرٌ."'
 - word: صَغِيرٌ
   meaning_id: kecil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kecil". Contoh: "لَكِنْ عِنْدِي سُؤَالٌ صَغِيرٌ."'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا عَلَى التَّوْجِيهِ."'
 - word: تَوْجِيهٌ
   meaning_id: arahan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "arahan". Contoh: "شُكْرًا عَلَى التَّوْجِيهِ."'

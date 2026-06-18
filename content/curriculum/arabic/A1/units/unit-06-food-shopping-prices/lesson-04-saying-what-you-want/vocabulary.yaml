@@ -1,19 +1,19 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تُرِيدُ؟"'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ كِتَابًا"'
 - word: كِتَابٌ
   meaning_id: buku
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "buku". Contoh: "أُرِيدُ كِتَابًا"'
 - word: قَهْوَةٌ
   meaning_id: kopi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kopi". Contoh: "لَا أُرِيدُ قَهْوَةً"'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ قَلَمًا"'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "هَلْ تَحْتَاجُ شَيْئًا آخَرَ؟"'

@@ -1,25 +1,27 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ."'
 - word: طَبِيبٌ
   meaning_id: dokter
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dokter". Contoh: "أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟"'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟"'
 - word: مَسَاءٌ
   meaning_id: sore/malam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sore/malam". Contoh: "صَبَاحًا أَمْ مَسَاءً؟"'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "السَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ."'
 - word: الْعَاشِرَةُ
   meaning_id: jam sepuluh/kesepuluh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam sepuluh/kesepuluh". Contoh: "السَّاعَةُ الْعَاشِرَةُ
+    مُنَاسِبَةٌ."'
 - word: مُنَاسِبَةٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "السَّاعَةُ الْعَاشِرَةُ
+    مُنَاسِبَةٌ."'

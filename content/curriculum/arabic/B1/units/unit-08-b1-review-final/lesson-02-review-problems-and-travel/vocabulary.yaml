@@ -1,25 +1,33 @@
 vocabulary:
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "سَأَشْرَحُ مُشْكِلَةً ثُمَّ
+    أَقْتَرِحُ حَلًّا."'
 - word: أَقْتَرِحُ
   meaning_id: saya menyarankan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "سَأَشْرَحُ مُشْكِلَةً
+    ثُمَّ أَقْتَرِحُ حَلًّا."'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "فِي السَّفَرِ، أَحْتَاجُ
+    إِلَى تَفَاصِيلَ وَاضِحَةٍ."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "فِي السَّفَرِ، أَحْتَاجُ إِلَى
+    تَفَاصِيلَ وَاضِحَةٍ."'
 - word: حَدَثٌ
   meaning_id: kejadian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kejadian". Contoh: "إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ
+    الطَّرَفَ الْآخَرَ."'
 - word: تَأْخِيرٌ
   meaning_id: keterlambatan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keterlambatan". Contoh: "إِذَا حَدَثَ تَأْخِيرٌ،
+    سَأُخْبِرُ الطَّرَفَ الْآخَرَ."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ
+    الطَّرَفَ الْآخَرَ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ حَلًّا
+    سَرِيعًا وَمُهَذَّبًا."'

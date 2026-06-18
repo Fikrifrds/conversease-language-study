@@ -1,25 +1,27 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: فَعَلْتُ
   meaning_id: saya melakukan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melakukan". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: أَمْسِ
   meaning_id: kemarin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kemarin". Contoh: "مَاذَا فَعَلْتَ أَمْسِ؟"'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "ذَهَبْتُ إِلَى الْمَكْتَبَةِ."'
 - word: مَكْتَبَةٌ
   meaning_id: perpustakaan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perpustakaan". Contoh: "ذَهَبْتُ إِلَى الْمَكْتَبَةِ."'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ."'
 - word: رَجَعْتُ
   meaning_id: saya kembali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya kembali". Contoh: "بَعْدَ ذَلِكَ، رَجَعْتُ
+    إِلَى الْبَيْتِ."'
 - word: بَيْتٌ
   meaning_id: rumah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rumah". Contoh: "بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى
+    الْبَيْتِ."'

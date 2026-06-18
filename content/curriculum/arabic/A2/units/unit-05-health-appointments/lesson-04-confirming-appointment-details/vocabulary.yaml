@@ -1,25 +1,26 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: غَدًا
   meaning_id: besok
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "besok". Contoh: "هَلِ الْمَوْعِدُ غَدًا؟"'
 - word: طَابِقٌ
   meaning_id: lantai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lantai". Contoh: "فِي أَيِّ طَابِقٍ؟"'
 - word: رَقْمِي
   meaning_id: nomor saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor saya". Contoh: "هَلْ رَقْمِي صَحِيحٌ؟"'
 - word: صَحِيحٌ
   meaning_id: benar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "benar". Contoh: "هَلْ رَقْمِي صَحِيحٌ؟"'
+- word: تَفَاصِيلُ
+  meaning_id: detail
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "التَّفَاصِيلُ صَحِيحَةٌ."'
 - word: مَرْحَبًا
   meaning_id: halo
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: سَاعَةٌ
-  meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "halo". Contoh: "مَرْحَبًا، أُرِيدُ أَنْ أُؤَكِّدَ
+    الْمَوْعِدَ."'

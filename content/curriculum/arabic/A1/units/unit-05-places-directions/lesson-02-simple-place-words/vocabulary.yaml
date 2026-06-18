@@ -1,22 +1,22 @@
 vocabulary:
 - word: بَيْتٌ
   meaning_id: rumah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "rumah". Contoh: "الْبَيْتُ"'
 - word: مَدْرَسَةٌ
   meaning_id: sekolah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekolah". Contoh: "الْمَدْرَسَةُ"'
 - word: سُوقٌ
   meaning_id: pasar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pasar". Contoh: "السُّوقُ"'
 - word: مَكْتَبٌ
   meaning_id: kantor/meja kerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kantor/meja kerja". Contoh: "الْمَكْتَبُ"'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ الْمَدْرَسَةُ؟"'
 - word: قَرِيبَةٌ
   meaning_id: dekat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dekat". Contoh: "الْمَدْرَسَةُ قَرِيبَةٌ."'
 - word: بَعِيدٌ
   meaning_id: jauh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jauh". Contoh: "السُّوقُ بَعِيدٌ."'

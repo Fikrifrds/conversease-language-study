@@ -1,25 +1,28 @@
 vocabulary:
 - word: أَسْتَطِيعُ
   meaning_id: saya bisa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bisa". Contoh: "أَسْتَطِيعُ أَنْ أَتَحَدَّثَ
+    عَنْ يَوْمِي."'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ الصَّبَاحَ
+    لِأَنَّهُ أَهْدَأُ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ
+    أَهْدَأُ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "فِي رَأْيِي، هَذَا خِيَارٌ جَيِّدٌ."'

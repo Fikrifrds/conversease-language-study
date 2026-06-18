@@ -1,25 +1,27 @@
 vocabulary:
 - word: رَاحَةٌ
-  meaning_id: nyaman/istirahat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  meaning_id: nyaman/lega
+  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "لَا أَشْعُرُ بِالرَّاحَةِ."'
 - word: عِنْدِي
   meaning_id: saya punya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: أَلَمٌ
   meaning_id: sakit/nyeri
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sakit/nyeri". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: خَفِيفٌ
   meaning_id: ringan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ringan". Contoh: "عِنْدِي أَلَمٌ خَفِيفٌ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ."'
 - word: طَبِيبٌ
   meaning_id: dokter
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dokter". Contoh: "أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ."'
 - word: سَاعَةٌ
   meaning_id: jam
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jam". Contoh: "السَّاعَةُ الْحَادِيَةَ عَشْرَةَ
+    مُنَاسِبَةٌ."'
 - word: مُنَاسِبَةٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "السَّاعَةُ الْحَادِيَةَ
+    عَشْرَةَ مُنَاسِبَةٌ."'

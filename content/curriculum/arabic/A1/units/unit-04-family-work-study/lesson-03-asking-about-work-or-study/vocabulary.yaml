@@ -1,19 +1,19 @@
 vocabulary:
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ تَدْرُسُ؟"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تَدْرُسُ؟"'
 - word: أَدْرُسُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ"'
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "نَعَمْ، أَعْمَلُ"'
 - word: مَرْكَزٌ
   meaning_id: pusat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pusat". Contoh: "أَدْرُسُ فِي الْمَرْكَزِ."'

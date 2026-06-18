@@ -1,25 +1,27 @@
 vocabulary:
 - word: جِهَازٌ
   meaning_id: alat/perangkat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "alat/perangkat". Contoh: "الْجِهَازُ لَا يَعْمَلُ."'
 - word: يَعْمَلُ
   meaning_id: berfungsi/bekerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "berfungsi/bekerja". Contoh: "الْجِهَازُ لَا يَعْمَلُ."'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى إِصْلَاحٍ."'
 - word: إِصْلَاحٌ
   meaning_id: perbaikan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "أَحْتَاجُ إِلَى إِصْلَاحٍ."'
 - word: ضَمَانٌ
   meaning_id: garansi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "garansi". Contoh: "هَلْ عِنْدَكَ ضَمَانٌ؟"'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "نَعَمْ، مَا الْمُشْكِلَةُ؟"'
 - word: مُنْذُ
   meaning_id: sejak
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sejak". Contoh: "الْجِهَازُ لَا يَعْمَلُ مُنْذُ
+    الصَّبَاحِ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "الْجِهَازُ لَا يَعْمَلُ مُنْذُ
+    الصَّبَاحِ."'

@@ -1,25 +1,26 @@
 vocabulary:
 - word: رَقْمٌ
   meaning_id: nomor
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor". Contoh: "مَا رَقْمُ هَاتِفِكَ؟"'
 - word: رَقْمِي
   meaning_id: nomor saya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "nomor saya". Contoh: "رَقْمِي ..."'
 - word: وَاحِدٌ
   meaning_id: satu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ"'
 - word: اِثْنَانِ
   meaning_id: dua
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "dua". Contoh: "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ"'
 - word: ثَلَاثَةٌ
   meaning_id: tiga
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tiga". Contoh: "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ"'
 - word: صَحِيحٌ
   meaning_id: benar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "benar". Contoh: "الرَّقْمُ صَحِيحٌ"'
 - word: أَرْبَعَةٌ
   meaning_id: empat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "empat". Contoh: "رَقْمِي وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ،
+    أَرْبَعَةٌ."'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "شُكْرًا، حَفِظْتُ الرَّقْمَ."'

@@ -1,25 +1,25 @@
 vocabulary:
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "لَا أَفْهَمُ"'
 - word: أَعْرِفُ
   meaning_id: saya tahu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya tahu". Contoh: "لَا أَعْرِفُ الْكَلِمَةَ"'
 - word: الْكَلِمَةُ
   meaning_id: kata
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kata". Contoh: "لَا أَعْرِفُ الْكَلِمَةَ"'
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا يَعْنِي هَذَا؟"'
 - word: يَعْنِي
   meaning_id: artinya
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "artinya". Contoh: "مَاذَا يَعْنِي هَذَا؟"'
 - word: بِبُطْءٍ
   meaning_id: pelan-pelan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelan-pelan". Contoh: "بِبُطْءٍ مِنْ فَضْلِكَ"'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "مَرَّةً أُخْرَى"'
 - word: جُمْلَةٌ
   meaning_id: kalimat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَأِ الْجُمْلَةَ."'

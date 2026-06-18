@@ -1,16 +1,16 @@
 vocabulary:
 - word: أَسْمَعُ
   meaning_id: saya mendengar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya mendengar". Contoh: "لم أَسْمَعُ الْحَرْفَ"'
 - word: حَرْفٌ
   meaning_id: huruf
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "huruf". Contoh: "لم أَسْمَعُ الْحَرْفَ"'
 - word: بِبُطْءٍ
   meaning_id: pelan-pelan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pelan-pelan". Contoh: "بِبُطْءٍ مِنْ فَضْلِكَ"'
 - word: قُلْتَ
   meaning_id: kamu mengatakan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kamu mengatakan". Contoh: "هَلْ قُلْتَ بَاءً؟"'
 - word: بَاءٌ
   meaning_id: huruf ba
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "huruf ba". Contoh: "هَلْ قُلْتَ بَاءً؟"'

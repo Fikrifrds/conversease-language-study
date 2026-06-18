@@ -1,19 +1,21 @@
 vocabulary:
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ."'
 - word: أَكْبَرُ
   meaning_id: lebih besar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ."'
 - word: تَحَدٍّ
   meaning_id: tantangan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ."'
 - word: تَرَدُّدٌ
   meaning_id: keraguan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "keraguan". Contoh: "أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ."'
 - word: نَتِيجَةٌ
   meaning_id: hasil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hasil". Contoh: "سَأُرَاجِعُ النَّتِيجَةَ بَعْدَ
+    أُسْبُوعٍ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

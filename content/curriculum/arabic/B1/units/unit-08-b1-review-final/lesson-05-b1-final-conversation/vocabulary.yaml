@@ -1,16 +1,20 @@
 vocabulary:
 - word: تَجْرِبَةٌ
   meaning_id: pengalaman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pengalaman". Contoh: "سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ
+    شَخْصِيَّةٍ."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا."'
 - word: نِهَايَةٌ
   meaning_id: akhir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ
+    الْمُهِمَّةَ."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ
+    الْمُهِمَّةَ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

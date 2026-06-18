@@ -1,25 +1,27 @@
 vocabulary:
 - word: حَجْزٌ
   meaning_id: reservasi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "reservasi". Contoh: "لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ."'
 - word: غُرْفَةٌ
   meaning_id: ruangan/kamar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "ruangan/kamar". Contoh: "هَلِ الْغُرْفَةُ جَاهِزَةٌ
+    الآنَ؟"'
 - word: جَاهِزَةٌ
   meaning_id: siap
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "siap". Contoh: "هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟"'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ
+    الدُّخُولِ."'
 - word: بِطَاقَةٌ
   meaning_id: kartu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kartu". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ."'
 - word: دُخُولٌ
   meaning_id: masuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "masuk". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ."'

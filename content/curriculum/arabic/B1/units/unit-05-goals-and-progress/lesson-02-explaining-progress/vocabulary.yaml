@@ -1,19 +1,21 @@
 vocabulary:
 - word: قَلِيلًا
   meaning_id: sedikit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَصْبَحْتُ أَفْهَمُ الْحِوَارَ
+    أَسْرَعَ."'
 - word: تَحَسُّنٌ
   meaning_id: perbaikan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "لَكِنَّ التَّحَسُّنَ وَاضِحٌ."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "لَكِنَّ التَّحَسُّنَ وَاضِحٌ."'
 - word: تَدْرِيبٌ
-  meaning_id: latihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "سَأُوَاصِلُ التَّدْرِيبَ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
+    فِي هَذَا الْمَوْضُوعِ؟"'

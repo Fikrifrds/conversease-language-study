@@ -1,25 +1,33 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ
+    الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ
+    الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ."'
 - word: اِحْتِيَاجٌ
   meaning_id: kebutuhan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kebutuhan". Contoh: "أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ
+    الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ."'
 - word: عَمِيلٌ
   meaning_id: klien/pelanggan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "klien/pelanggan". Contoh: "أُرِيدُ أَنْ أَفْهَمَ
+    اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "لَدَيْنَا خِيَارَانِ، وَكُلُّ
+    خِيَارٍ لَهُ فَائِدَةٌ."'
 - word: فَائِدَةٌ
   meaning_id: manfaat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "manfaat". Contoh: "لَدَيْنَا خِيَارَانِ، وَكُلُّ
+    خِيَارٍ لَهُ فَائِدَةٌ."'
 - word: اِهْتِمَامٌ
   meaning_id: perhatian/kepedulian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "perhatian/kepedulian". Contoh: "أَفْهَمُ هَذَا
+    الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "أَفْهَمُ هَذَا الِاهْتِمَامَ،
+    وَسَأُوَضِّحُ التَّفَاصِيلَ."'

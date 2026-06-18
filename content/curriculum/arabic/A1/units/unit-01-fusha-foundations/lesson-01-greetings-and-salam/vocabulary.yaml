@@ -1,16 +1,16 @@
 vocabulary:
 - word: مَرْحَبًا
   meaning_id: halo
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "halo". Contoh: "مرحبًا"'
 - word: أَهْلًا
   meaning_id: selamat datang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "selamat datang". Contoh: "أهلًا وسهلًا"'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كيف حالك؟"'
 - word: شُكْرًا
   meaning_id: terima kasih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "terima kasih". Contoh: "أنا بخير، شكرًا"'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "كَيْفَ حَالُكِ الْيَوْمَ؟"'

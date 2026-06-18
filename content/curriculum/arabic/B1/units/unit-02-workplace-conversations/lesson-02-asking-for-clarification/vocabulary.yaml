@@ -1,13 +1,14 @@
 vocabulary:
 - word: مَوْعِدٌ
   meaning_id: janji temu
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ
+    تَغَيَّرَ؟"'
 - word: الْمَقْصُودُ
   meaning_id: maksud
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "maksud". Contoh: "مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟"'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟"'
 - word: تَعْلِيمَاتٌ
   meaning_id: instruksi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "instruksi". Contoh: "هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟"'

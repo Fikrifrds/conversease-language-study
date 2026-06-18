@@ -1,25 +1,28 @@
 vocabulary:
 - word: أَرْخَصُ
   meaning_id: lebih murah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih murah". Contoh: "هَذَا أَرْخَصُ."'
 - word: أَجْوَدُ
   meaning_id: lebih berkualitas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "lebih berkualitas". Contoh: "هَذَا أَجْوَدُ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أَيُّهُمَا أَفْضَلُ؟"'
 - word: سِعْرٌ
   meaning_id: harga
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "harga". Contoh: "السِّعْرُ مُنَاسِبٌ."'
 - word: مُنَاسِبٌ
   meaning_id: cocok/sesuai
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "السِّعْرُ مُنَاسِبٌ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ حَقِيبَةً صَغِيرَةً.
+    أَيُّهُمَا أَفْضَلُ؟"'
 - word: حَقِيبَةٌ
   meaning_id: tas
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tas". Contoh: "أُرِيدُ حَقِيبَةً صَغِيرَةً. أَيُّهُمَا
+    أَفْضَلُ؟"'
 - word: صَغِيرَةٌ
   meaning_id: kecil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kecil". Contoh: "أُرِيدُ حَقِيبَةً صَغِيرَةً. أَيُّهُمَا
+    أَفْضَلُ؟"'

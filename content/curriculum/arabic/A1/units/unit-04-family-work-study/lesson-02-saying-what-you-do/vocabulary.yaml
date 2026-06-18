@@ -1,22 +1,22 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا تَعْمَلُ؟"'
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "أَعْمَلُ فِي مَكْتَبٍ"'
 - word: مَكْتَبٌ
   meaning_id: kantor/meja kerja
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "kantor/meja kerja". Contoh: "أَعْمَلُ فِي مَكْتَبٍ"'
 - word: أَدْرُسُ
   meaning_id: saya belajar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya belajar". Contoh: "أَدْرُسُ فِي مَدْرَسَةٍ"'
 - word: مَدْرَسَةٌ
   meaning_id: sekolah
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "sekolah". Contoh: "أَدْرُسُ فِي مَدْرَسَةٍ"'
 - word: أَيْنَ
   meaning_id: di mana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "di mana". Contoh: "أَيْنَ تَدْرُسُ؟"'
 - word: الْعَرَبِيَّةُ
   meaning_id: bahasa Arab
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "bahasa Arab". Contoh: "أَدْرُسُ الْعَرَبِيَّةَ."'

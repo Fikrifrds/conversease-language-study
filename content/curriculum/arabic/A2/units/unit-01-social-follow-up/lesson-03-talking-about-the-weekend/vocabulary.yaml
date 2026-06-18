@@ -1,25 +1,28 @@
 vocabulary:
 - word: مَاذَا
   meaning_id: apa
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "apa". Contoh: "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟"'
 - word: فَعَلْتُ
   meaning_id: saya melakukan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya melakukan". Contoh: "مَاذَا فَعَلْتَ فِي نِهَايَةِ
+    الْأُسْبُوعِ؟"'
+- word: نِهَايَةٌ
+  meaning_id: akhir
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "مَاذَا فَعَلْتَ فِي نِهَايَةِ
+    الْأُسْبُوعِ؟"'
 - word: ذَهَبْتُ
   meaning_id: saya pergi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya pergi". Contoh: "ذَهَبْتُ إِلَى الْحَدِيقَةِ."'
 - word: حَدِيقَةٌ
   meaning_id: taman
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "taman". Contoh: "ذَهَبْتُ إِلَى الْحَدِيقَةِ."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "كَانَ الْمَكَانُ جَمِيلًا."'
 - word: سُوقٌ
   meaning_id: pasar
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "pasar". Contoh: "جَيِّدٌ. أَنَا ذَهَبْتُ إِلَى
+    السُّوقِ."'
 - word: اِشْتَرَيْتُ
   meaning_id: saya membeli
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: كِتَابٌ
-  meaning_id: buku
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
+  usage_note: 'Dipakai untuk arti "saya membeli". Contoh: "وَمَاذَا اشْتَرَيْتَ؟"'
