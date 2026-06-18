@@ -1,6 +1,24 @@
 lesson_key: lesson-02-discussing-reliable-sources
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-3nav5pHC1EYvWOd5LmnA-20260618T055146Z.wav
+  duration_seconds: 39.94
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hasan: t9akNmCDhz230CEXOYmn
+    Yusuf: kr4VZw8MSZMHE0y2m40n
+  line_count: 8
+  script_content_hash: 1c1dcfdf79aa8230ac0cbe6ce0ad55c14081c496956cedb53cb2ea828e061c1e
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-3nav5pHC1EYvWOd5LmnA-20260618T055146Z.wav
+  trace_id: 0WJEGdC4LG9oc7GCUV69,RfDWX36BborU0EpqO2LT,7rq4qV6xJ53A6l72Wo4d,2TrcAlfdkrpQf7I8QTTY,nNwyFpwVXwM50Gc5ug2j,3kT55zsLjuCycfuCZcW0,K4UOBIN7hfq7IgP3GlGE,DVYIwIpZiMEVMBj9gWTX
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:51:46.718470+00:00'

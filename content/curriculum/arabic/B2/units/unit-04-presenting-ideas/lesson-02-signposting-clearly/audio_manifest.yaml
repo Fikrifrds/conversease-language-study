@@ -1,6 +1,24 @@
 lesson_key: lesson-02-signposting-clearly
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-3nav5pHC1EYvWOd5LmnA-20260618T055022Z.wav
+  duration_seconds: 34.26
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Salma: gVzwmdZzRgBrNjXaTmi5
+    Lina: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 84be16fff93e2e5851e1096491ffc4318c4d9f67884fefac706ff4ce426ccbce
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-3nav5pHC1EYvWOd5LmnA-20260618T055022Z.wav
+  trace_id: cf6FQRjbGozHUC3UFArW,rBLCAXW8hkSggTOZl2KY,ttTZIr2OR06UHdN22lmv,MjjChOOFJ7I7XSxDuT5o,rr9bpDyuYrcskjNr5dYS,xrToIg9LENAi6R9t8MTw,oBly1PHKXVkZorowGELU,7VszRYZeYPDVL1z9kpC5
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:50:22.486291+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-04-guiding-a-decision
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-3nav5pHC1EYvWOd5LmnA-20260618T060804Z.wav
+  duration_seconds: 58.34
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: cff79557116790ad82b6269d202ba325f4833282e1ce0abe128c6b33aead638a
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-3nav5pHC1EYvWOd5LmnA-20260618T060804Z.wav
+  trace_id: 4XqelB4ds6DyrmzL6g5E,AmlZGnCUFEELEc7bWDCB,9z6BwYY2m8igKXIYzWhN,ZYXtBcSlrNc7ZWUp50Tk,xDnvIPR6mzqNWPB5HKld,xtKouAm9MbnW6GdV0Mf2,iGVW3VG2tLnJFJRBkWgv,ic9oBDN2SmcMHn90kCa5
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:08:04.693183+00:00'

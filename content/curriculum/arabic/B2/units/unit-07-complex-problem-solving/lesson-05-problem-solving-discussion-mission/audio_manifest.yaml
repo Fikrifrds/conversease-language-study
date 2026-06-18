@@ -1,6 +1,24 @@
 lesson_key: lesson-05-problem-solving-discussion-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-05-problem-solving-discussion-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055535Z.wav
+  duration_seconds: 36.18
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 14d665e24c6be31851c3ad9744f3f01000983280aaecbc84f6733ce956d8155e
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-05-problem-solving-discussion-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055535Z.wav
+  trace_id: 1qYFS9R65SlUU3h21hkH,D0uTNfUjTnNf7LQN3Bt0,nEQoNdf2yK3YttXXIeRv,Q1Nnrn3pK8jCIXDE6spZ,bhYOnqT4SLjHblUD2iE2,6Inrw5Z7zuFRZIFIzNvj,S33Jrm3CCVrexq6QcYAj,5hpH2ZyK6AHXcQc5ukP6
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:55:35.136763+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-03-explaining-a-viewpoint
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-05-media-and-information/lesson-03-explaining-a-viewpoint/listening-3nav5pHC1EYvWOd5LmnA-20260618T055204Z.wav
+  duration_seconds: 38.02
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hasan: t9akNmCDhz230CEXOYmn
+    Yusuf: kr4VZw8MSZMHE0y2m40n
+  line_count: 8
+  script_content_hash: 294268da41fff4a41d0183d9dc3c0cbabf409544167b47997381321eac431c96
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-05-media-and-information/lesson-03-explaining-a-viewpoint/listening-3nav5pHC1EYvWOd5LmnA-20260618T055204Z.wav
+  trace_id: kANuLceDVmSwHmC3OCA6,MAKeEouIvv02AUPpWtnt,OK0NFlRLbxj4IkWVbTkN,PqTr8JeEwL4NflcdoZM1,iLWHqapW9KvTrVo92ZkA,0rpVx0AVkZMIAOMV1VNL,KXC49CYxHu4RFjadmxjA,5A2lG0H6g57js5CMMh3w
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:52:04.125884+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-04-asking-high-quality-follow-ups
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-3nav5pHC1EYvWOd5LmnA-20260618T061005Z.wav
+  duration_seconds: 75.3
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hasan: t9akNmCDhz230CEXOYmn
+    Yusuf: kr4VZw8MSZMHE0y2m40n
+  line_count: 8
+  script_content_hash: b935ed99bbce9ff57a7b46866b414e4e68f1144bac7fef345b3488b5b8f4b948
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-3nav5pHC1EYvWOd5LmnA-20260618T061005Z.wav
+  trace_id: OPL2IWfsvarRlE4TItK2,eAv9sOi8dtadxsi1zlfh,KxOEyZI6EeCrGbpWDLeD,dtM9hFUeqWssBJnON0sU,ejWqrFEz5JH6NWh9eB3t,pBDkZUAjl4PvfPxUetct,JOBVtibbCdevLeS68ZRP,Ultb2NYbn1vGDKuMDEKY
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:10:05.505199+00:00'

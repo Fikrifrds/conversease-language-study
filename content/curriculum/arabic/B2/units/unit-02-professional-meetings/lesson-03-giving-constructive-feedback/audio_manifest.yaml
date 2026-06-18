@@ -1,6 +1,24 @@
 lesson_key: lesson-03-giving-constructive-feedback
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-03-giving-constructive-feedback/listening-3nav5pHC1EYvWOd5LmnA-20260618T054748Z.wav
+  duration_seconds: 34.58
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 4fc9c6afca93eb3fcdd144bf5afc77f139602ec924bca194bb9241afc529d8de
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-03-giving-constructive-feedback/listening-3nav5pHC1EYvWOd5LmnA-20260618T054748Z.wav
+  trace_id: grnsNts7zUVDj5Cx8SjH,8KQHjTfD16xW4NjsrCZT,kRiS5skAHfB90uORnIo4,nq1X8x1crRw9SF5e22Jx,OQNTpGh4ODlvxM0m6Wt3,b8GQCKfO9wMgzXeH09lt,R5acQM2qOh4zMHz9liZn,03cz7zWnDEhhmQUTUEGz
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:47:48.204880+00:00'

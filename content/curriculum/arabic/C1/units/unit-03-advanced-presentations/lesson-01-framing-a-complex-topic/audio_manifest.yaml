@@ -1,6 +1,24 @@
 lesson_key: lesson-01-framing-a-complex-topic
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-01-framing-a-complex-topic/listening-3nav5pHC1EYvWOd5LmnA-20260618T060114Z.wav
+  duration_seconds: 57.62
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Salma: gVzwmdZzRgBrNjXaTmi5
+    Lina: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: df64279e7a3400b9b08f897fbc746c3563a324225a16f93415b0895f05b89be8
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-01-framing-a-complex-topic/listening-3nav5pHC1EYvWOd5LmnA-20260618T060114Z.wav
+  trace_id: 6LWY3uHT45vDgHQK6v65,BsEHzRtwg7YBKz5dhXSl,OsTlIBKGGnqhGxg3L76i,Q6werebWCtScWOcp3iJ6,Q7HHuHWf1g6wu4YP09of,bmwaJYt31NDZ8b9wjKfS,8yAjYdZxmP1GEmEfivuR,gLOYlHdg3gFKRcXcqGvD
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:01:14.082304+00:00'

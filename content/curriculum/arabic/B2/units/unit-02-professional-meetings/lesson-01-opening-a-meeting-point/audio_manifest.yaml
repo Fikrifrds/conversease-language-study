@@ -1,6 +1,24 @@
 lesson_key: lesson-01-opening-a-meeting-point
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-3nav5pHC1EYvWOd5LmnA-20260618T054715Z.wav
+  duration_seconds: 32.82
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 7204d4aff4fdc6097d651b1aad365eb2fdd3e9b21214475eb4f3608da6b04618
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-3nav5pHC1EYvWOd5LmnA-20260618T054715Z.wav
+  trace_id: Qpq7RzakzGft00SyQ4sG,UZmcOxbgVjP65bIr2p36,ku5foixni8L7qsVVZqL3,1c2JrDhdS2jbMl26SzBr,EVO6Q0mCmZ173mlr9TX1,Ak2a20ahb70myNAgPibX,KT31K9O7g3Ck4XI1bNxR,CoobKWoKvoYvAHxQoTgZ
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:47:15.558630+00:00'

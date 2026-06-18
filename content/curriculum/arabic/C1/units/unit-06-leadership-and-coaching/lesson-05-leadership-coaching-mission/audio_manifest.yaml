@@ -1,6 +1,24 @@
 lesson_key: lesson-05-leadership-coaching-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060828Z.wav
+  duration_seconds: 58.58
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 3cdaabc3104a533c5d9311424860e064b19bd4e7ba30570395ce789267776d27
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060828Z.wav
+  trace_id: 4FgALYIUh0btX8qHeO79,LBBiqsNw87fLWo1iBFAs,JEFugQx4lo4E5iDmGWaY,loUm7KPBhCcfHZXhX6sM,nffCUuI0H7SqwF2mCEnF,fg57eoZ0aG40nylteTx4,Tv9y0XmN6bbPZ3LAKpp2,aRtU0eACR1YOjgp30M7s
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:08:28.909277+00:00'

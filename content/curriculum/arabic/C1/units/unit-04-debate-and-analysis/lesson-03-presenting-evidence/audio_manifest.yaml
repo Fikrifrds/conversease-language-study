@@ -1,6 +1,24 @@
 lesson_key: lesson-03-presenting-evidence
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-3nav5pHC1EYvWOd5LmnA-20260618T060354Z.wav
+  duration_seconds: 64.9
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 8
+  script_content_hash: e0e5788067d63aad0e9543a47e53dbc425356a223df7de95c62ef7db33a49ab4
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-3nav5pHC1EYvWOd5LmnA-20260618T060354Z.wav
+  trace_id: 0r5lIFXOkYtrCf2Kk6cg,r3aFjLfEnuptV8Y96ADZ,1sCsy6KHzysblHQpvZty,IRfEfQJduSFGD6RBj7UJ,KlvwzpMaG7WbgdXupnMf,0TI3An8uerldMLrzxj7o,0kqCR8oV9P7TPP19XM1I,PkvpMBjYhNzfmOjvkLtq
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:03:54.900140+00:00'

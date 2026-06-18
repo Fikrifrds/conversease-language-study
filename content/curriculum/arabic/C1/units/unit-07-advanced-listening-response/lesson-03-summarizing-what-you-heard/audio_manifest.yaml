@@ -1,6 +1,24 @@
 lesson_key: lesson-03-summarizing-what-you-heard
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/listening-3nav5pHC1EYvWOd5LmnA-20260618T060940Z.wav
+  duration_seconds: 70.1
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hasan: t9akNmCDhz230CEXOYmn
+    Yusuf: kr4VZw8MSZMHE0y2m40n
+  line_count: 8
+  script_content_hash: cea06512977ec8357b0aafa4b84476e1c39138063af89504c99a9f4cf0aa044c
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/listening-3nav5pHC1EYvWOd5LmnA-20260618T060940Z.wav
+  trace_id: 2Lzx11RsIOIXrMiKFjfG,9Ov8XxQNfs4qGD07KtMl,NohabUM2ABDPKTzLUwTb,ChidadtQBpFMWKai7Iug,GUfQ7Msrd3sNYIS4MPVH,794wHdEsTDYNfHsq4jBQ,Ub0UOOrMy7IbUHylMuCW,ptA34ZYPflhjGnvUGkUM
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:09:40.984838+00:00'

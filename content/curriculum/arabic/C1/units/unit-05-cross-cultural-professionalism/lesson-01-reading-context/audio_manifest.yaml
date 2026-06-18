@@ -1,6 +1,24 @@
 lesson_key: lesson-01-reading-context
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-01-reading-context/listening-3nav5pHC1EYvWOd5LmnA-20260618T060503Z.wav
+  duration_seconds: 62.26
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Aisha: v7UCHHCrHj1KBa4E41gb
+    Fatimah: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: c45776fc1b4f9acdda4b130fd53f2e5de7ebc4bec73262eb03d0478b02e906db
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-01-reading-context/listening-3nav5pHC1EYvWOd5LmnA-20260618T060503Z.wav
+  trace_id: bw8KkA85QrdPFEWzg6JH,6Iui8dKtBvgdqPFXLnLv,oWZvaI213eSBmLOIO5BC,lFRAcHX4oRo6sTvkznT7,BvajbOtw5WGm9BSp0JRs,gKJfsg8OJLEC3upVQkXh,HuCbTBlmCE0Ucn1pTPGf,kqAC2W7rAnppsH93alPx
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:05:03.600292+00:00'

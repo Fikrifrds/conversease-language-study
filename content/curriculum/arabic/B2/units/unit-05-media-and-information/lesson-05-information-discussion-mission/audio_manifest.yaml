@@ -1,6 +1,24 @@
 lesson_key: lesson-05-information-discussion-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055240Z.wav
+  duration_seconds: 38.02
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Hasan: t9akNmCDhz230CEXOYmn
+    Yusuf: kr4VZw8MSZMHE0y2m40n
+  line_count: 8
+  script_content_hash: 5ac1fd7ae4011e852c162222ac48896da81b7eaf6862040952e0c47cdadfa7ac
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055240Z.wav
+  trace_id: HwfjMAz5RBc8Q92kmVDT,tPIumbltU4tCwE85LIU8,9zVJ0tNM0hv8OBdv7MFR,UV2TqTmd4sHbXyOJYtPc,f1a9BWlAHWdWVe4wCKea,CIWMF1kXHdPqZMBD3Q5a,9BBFWMepok3igIGf4D0i,fFIJ3UpTkaWGigcmFJkU
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:52:40.534552+00:00'

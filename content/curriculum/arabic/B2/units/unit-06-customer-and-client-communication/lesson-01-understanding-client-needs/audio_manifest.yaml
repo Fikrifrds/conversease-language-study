@@ -1,6 +1,24 @@
 lesson_key: lesson-01-understanding-client-needs
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-3nav5pHC1EYvWOd5LmnA-20260618T055258Z.wav
+  duration_seconds: 40.74
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Aisha: v7UCHHCrHj1KBa4E41gb
+    Fatimah: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: f52468b848c20f0c96e08d2d54f80730f9368d8d28fbc09fa917ccf1c9275ffb
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-3nav5pHC1EYvWOd5LmnA-20260618T055258Z.wav
+  trace_id: PfGuVneHjdjHJfIgEGOJ,NsU76eLwidgpEfRnlDmq,E1GYf1HGJGmcvaP9Awc2,x103bRnSaqFuFHn9wgDW,PhdB4PlmBGRLKWAeOb4O,gSGGicO7Wm7274jExV7Q,vM2rTOgwsJ4S5lFVW4sr,RCYJ0a5lBXU6aRaN8rRE
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:52:58.814624+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-04-responding-under-pressure
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-3nav5pHC1EYvWOd5LmnA-20260618T060417Z.wav
+  duration_seconds: 60.58
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 8
+  script_content_hash: fd2b2dd08d388745222ac2d180d2bcbcbb703456cb79dbec6c5d29b97efc6e22
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-3nav5pHC1EYvWOd5LmnA-20260618T060417Z.wav
+  trace_id: DBnY3l41kXr8ur5WoASN,o6Bihe3QY7XmKaEOw8Uy,aML2rrrTTootdAuP6RVQ,X5rkmpNherFfo7OZ7PTj,VVX4kMRC0DX32JEdRE5g,DDtOKszOsDYfpNxWcatD,Gx2G4UeixA7G8OUdjVdY,OShCMk3IlsQKMpfm7I3p
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T06:04:17.093067+00:00'

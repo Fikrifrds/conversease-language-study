@@ -1,6 +1,24 @@
 lesson_key: lesson-02-managing-expectations
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-3nav5pHC1EYvWOd5LmnA-20260618T055943Z.wav
+  duration_seconds: 60.98
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: bfe44487c5ce387989d9eaab8823f86981f1e5686f9a28dba34eeef358bc17ba
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-3nav5pHC1EYvWOd5LmnA-20260618T055943Z.wav
+  trace_id: vhGfgfxwMg40bWW6C4S0,wBtoUCzkB3ryyVOp3h4k,zim4byzzdyodAI54gITm,TTtwqfQ65WOJF0FhImqZ,Oo8WcXcux4tY7K0wuAAK,jJzeUOg466yV2BuXqNLC,2ilD4XU5cIXUWkX5MXb2,HitqySdTGS611d7k9UKD
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:59:43.963539+00:00'

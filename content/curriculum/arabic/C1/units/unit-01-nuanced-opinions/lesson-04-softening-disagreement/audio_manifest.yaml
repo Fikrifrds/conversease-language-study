@@ -1,6 +1,24 @@
 lesson_key: lesson-04-softening-disagreement
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-04-softening-disagreement/listening-3nav5pHC1EYvWOd5LmnA-20260618T055836Z.wav
+  duration_seconds: 66.1
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 8
+  script_content_hash: e49b12213a8decb83e7346c48224154676224517eca6f248cd6a109f1201042b
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-04-softening-disagreement/listening-3nav5pHC1EYvWOd5LmnA-20260618T055836Z.wav
+  trace_id: FRYiRBTsVtLWXc2Yui3W,6bLS43PTKroAKJz73ubo,Tbqi1xitBRSTSTty3pzA,oJ3RdGha2B4CgPMiVa11,0qTFmZN125u3MjOzaYsY,Ml7Oq3njyGmQS5GjZMPY,e4lkgdSAwNRAUEQN0FuJ,ZQ0qRq9A9mLEYOl6oXRO
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T05:58:36.181661+00:00'
