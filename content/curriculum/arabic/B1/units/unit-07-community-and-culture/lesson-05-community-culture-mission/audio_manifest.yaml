@@ -1,6 +1,24 @@
 lesson_key: lesson-05-community-culture-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T023051Z.wav
+  duration_seconds: 19.42
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 6
+  script_content_hash: 7401be1508c9f1347b01130854dc3e4740594221d5dccc3e104327b5a29a528d
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T023051Z.wav
+  trace_id: bhSQNgguO5qlQl8LXRNV,5YoLl4nhekLW7F9LOYkh,3fYX5ssB1jtKhJRisyLn,R8Q3ympCjWoGlpoeXLXX,8TLSF5coWgAl2dnXOchv,5pisx3RyoXF4i9JeSj3X
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:30:51.664503+00:00'

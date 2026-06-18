@@ -1,6 +1,24 @@
 lesson_key: lesson-03-responding-to-advice
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-3nav5pHC1EYvWOd5LmnA-20260618T022636Z.wav
+  duration_seconds: 17.74
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Omar: OoE8swS3hImZANNOodf6
+    Raka: kr4VZw8MSZMHE0y2m40n
+  line_count: 6
+  script_content_hash: f93967b3c73c184e56c107020a893c188ed57ee4367db95798febd97e1b04f73
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-3nav5pHC1EYvWOd5LmnA-20260618T022636Z.wav
+  trace_id: tn3e75Ch1Bl0gEC7LNp4,6JoS7q5LdZcuMwsxhVYI,hQFLne5ojQpdvN29iQ4Q,AMC6xnF8QK5LU5Kped3E,QJujTLhod9NzLqMvgxoY,Td72vpoGj6cCCmyjGEFW
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:26:36.361102+00:00'

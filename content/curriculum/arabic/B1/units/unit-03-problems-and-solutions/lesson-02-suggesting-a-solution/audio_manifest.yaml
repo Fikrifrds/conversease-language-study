@@ -1,6 +1,24 @@
 lesson_key: lesson-02-suggesting-a-solution
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-02-suggesting-a-solution/listening-3nav5pHC1EYvWOd5LmnA-20260618T022624Z.wav
+  duration_seconds: 23.18
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Omar: OoE8swS3hImZANNOodf6
+    Raka: kr4VZw8MSZMHE0y2m40n
+  line_count: 6
+  script_content_hash: a9f3e3c5ee736493f66efb32bb8cf73b966b018fcafe8f08991a63edd44d153b
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-02-suggesting-a-solution/listening-3nav5pHC1EYvWOd5LmnA-20260618T022624Z.wav
+  trace_id: yYS9UsjsjMmBcFcyFu6U,xk9XE8aJcmq0jxpCxfZT,vKoK8WLKKxQrcjZmQQvR,zwp4p5wXjl3WVyAablp1,4pfYP9RF3WzPS8bAsN9p,rO9ZJA5uDTQdYWLya2QR
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:26:24.914820+00:00'

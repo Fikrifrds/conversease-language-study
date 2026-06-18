@@ -1,6 +1,24 @@
 lesson_key: lesson-05-problem-solving-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-05-problem-solving-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022701Z.wav
+  duration_seconds: 23.66
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Omar: OoE8swS3hImZANNOodf6
+    Raka: kr4VZw8MSZMHE0y2m40n
+  line_count: 6
+  script_content_hash: 5f0242114ac02a4ccada0a701e503adc6bf228f0a11e73f9f66d89d3d322f128
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-05-problem-solving-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022701Z.wav
+  trace_id: ymvhqyBthyqSxWMQ4n1G,78kbS9eFDejlG3W4pfhl,Sl5wKI8ngB8a3cf2QoY4,jvDr3nxnoN0bNS4IqFYG,vXyqmj11t7WOI1WyVAJp,dUTLByKNE0Cb5svo4Orl
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:27:01.248501+00:00'

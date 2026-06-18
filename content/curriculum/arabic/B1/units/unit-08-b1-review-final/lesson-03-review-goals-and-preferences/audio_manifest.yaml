@@ -1,6 +1,24 @@
 lesson_key: lesson-03-review-goals-and-preferences
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-03-review-goals-and-preferences/listening-3nav5pHC1EYvWOd5LmnA-20260618T023128Z.wav
+  duration_seconds: 20.78
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 6
+  script_content_hash: 305caa41726d361889dd81c71d025adb8b8674b9c36ff33a733b163f45c7d087
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-03-review-goals-and-preferences/listening-3nav5pHC1EYvWOd5LmnA-20260618T023128Z.wav
+  trace_id: YafbYt6fItW72OLZ0ihw,fpmawPyV9iTulijWshdv,KwIiYiWKqdr5SHUwZQys,z1I0YTOoQAFUaD4ao7mo,DDU9TkNKxXSooGLuWgfi,WqyLuWT0bkIdWI0ism1k
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:31:28.402181+00:00'

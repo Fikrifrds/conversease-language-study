@@ -1,6 +1,24 @@
 lesson_key: lesson-05-goals-progress-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-05-goals-progress-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022854Z.wav
+  duration_seconds: 18.14
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Layla: kdUY91gH5xyDHapxlthT
+    Sara: gVzwmdZzRgBrNjXaTmi5
+  line_count: 6
+  script_content_hash: 2b2456d9fb2479b04f1280b640ee564033f405fc389c02aa4f65ffb0ebb3ba56
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-05-goals-progress-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022854Z.wav
+  trace_id: EGa82ry2FtatP4ZVqlbV,elDRRKdMh2C9vHvvB1Xs,wBS8NvSdDIrOhrIznWfN,79sgkL1TMrSI7jHyrmuk,lN9dfGKCrEf0OqoefD22,qdoQKE6gMvGnfhcFLwMC
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:28:54.649765+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-03-handling-objections
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-3nav5pHC1EYvWOd5LmnA-20260618T023507Z.wav
+  duration_seconds: 33.06
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 8
+  script_content_hash: 054f77cea12608d0a78db7c4f0448f847076e101afdad1f6eca091ba0faedb50
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-3nav5pHC1EYvWOd5LmnA-20260618T023507Z.wav
+  trace_id: u0n0fHAouy63BpNNLt0O,7YqcwulDhQX862C98Xl8,BMVRCz9HdCdV5w7RygMp,zyBeiSwVokMspkxdHLnM,XeofsVovX7SXsAktHaIG,eBLGvZAf4QpASWM7v0OS,rbZPTr1lYSmjYdGjHIhj,nHQMb5tJT2DW7KOXKJUI
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:35:07.858628+00:00'

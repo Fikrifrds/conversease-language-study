@@ -1,6 +1,24 @@
 lesson_key: lesson-04-finding-middle-ground
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/listening-3nav5pHC1EYvWOd5LmnA-20260618T023523Z.wav
+  duration_seconds: 34.18
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Omar: OoE8swS3hImZANNOodf6
+  line_count: 8
+  script_content_hash: 1c0a34f25a1947dd38ab461fbc25c31ef16e7f841b5845dc34c8ba0d7aa7fceb
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/listening-3nav5pHC1EYvWOd5LmnA-20260618T023523Z.wav
+  trace_id: hv1rjTjwdxGpmDsQS5qM,6C8Ym8oZU8G2NRV53IOL,4h3TujC6R8mqpuHkBHP5,bkqqReK12FJtXwhP5BHH,LvMVAj9U6EsZ2kz3GifI,35KUfyNFldXA2NtEf9qi,M0LXadwLvvu25uWBqjX7,uHH36Sp3XwQ2cqKO7CIm
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:35:23.272331+00:00'

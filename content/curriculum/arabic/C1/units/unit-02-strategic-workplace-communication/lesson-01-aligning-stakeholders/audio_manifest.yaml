@@ -1,6 +1,24 @@
 lesson_key: lesson-01-aligning-stakeholders
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-3nav5pHC1EYvWOd5LmnA-20260618T025012Z.wav
+  duration_seconds: 40.82
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 89b830879fd0aada7b9c8631da43ea623419d3aef1cffc6507a27f2d1fd01c68
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-3nav5pHC1EYvWOd5LmnA-20260618T025012Z.wav
+  trace_id: FY2h2VlgMu0yytu1hce8,9oG9ma4hYmFq7KL7uTA3,xQg4FmqVVwig6kILDLCP,FjHNzW56D42gUxHGd56M,yb9H7DyogQg5UQHDxPMy,R0DSGBAZhAy3zupTudEV,1zabdyTJQgW89AUf96ks,R8TF641pE2nmSBWjQuYM
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:50:12.628017+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-03-asking-about-culture
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-03-asking-about-culture/listening-3nav5pHC1EYvWOd5LmnA-20260618T023028Z.wav
+  duration_seconds: 17.02
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 6
+  script_content_hash: 7a7e772f2a5bfe7cbfec15e9972e79d4dd0a3324b81fa5e9cf9d1519414c446d
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-03-asking-about-culture/listening-3nav5pHC1EYvWOd5LmnA-20260618T023028Z.wav
+  trace_id: qyIpwNlDjF63pp3iLY9X,UYKZ42pja4PXfafO5Hvq,S1xgtiMNxVvXlkRNupeW,dwyAUN259jQu4Mle7dsn,JI5as2uJsukb5tWuSvAK,M02cBOcgYR6tmzFzr9zY
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:30:28.367541+00:00'

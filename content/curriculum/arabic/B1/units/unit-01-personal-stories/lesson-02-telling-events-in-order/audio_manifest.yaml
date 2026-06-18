@@ -1,6 +1,24 @@
 lesson_key: lesson-02-telling-events-in-order
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-3nav5pHC1EYvWOd5LmnA-20260618T022429Z.wav
+  duration_seconds: 21.1
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 6
+  script_content_hash: f484c33b43d5d0bf342b54a23d351a507d7a608dddba3b082d2681b0b57c3e32
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-3nav5pHC1EYvWOd5LmnA-20260618T022429Z.wav
+  trace_id: zcMXB18QrwegcbDErT2R,V3uT8axZtQjSLiYRiEoC,MpUnxx2k0nnN2plxfv02,OJXaVLGeAMG5vNa5ZXd9,3HY7Lb3DGdSuVIRCMlBQ,l1OWFrG6Ba1sFFpVtfbw
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:24:29.073853+00:00'

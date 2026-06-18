@@ -1,6 +1,24 @@
 lesson_key: lesson-05-b1-final-conversation
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-05-b1-final-conversation/listening-3nav5pHC1EYvWOd5LmnA-20260618T023151Z.wav
+  duration_seconds: 21.34
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 6
+  script_content_hash: 0ee207bad359f5cb55393e3bfbd9f52fe59532b29cf6ff7ab176280df06aea4f
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-05-b1-final-conversation/listening-3nav5pHC1EYvWOd5LmnA-20260618T023151Z.wav
+  trace_id: zkDBHSDoimJOZMO1b7tN,RBiax8omKRtTk6cKwic6,QkSZdh7PDmUoQ0Cp0w6b,UTzIFecLUipsZkZ6jJqa,gqwKGgDJbH32tn3a6g5a,LdxI2IrWrL7HrFMPXFeX
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:31:51.878498+00:00'

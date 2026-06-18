@@ -1,6 +1,24 @@
 lesson_key: lesson-05-personal-story-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-01-personal-stories/lesson-05-personal-story-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022504Z.wav
+  duration_seconds: 21.34
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 6
+  script_content_hash: 371e5ed2aeaf0b1a6fefef1b5a8623987a238d3eaac9e11f2c0866e49f13dcbc
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-01-personal-stories/lesson-05-personal-story-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022504Z.wav
+  trace_id: gCMFSRulKSuLKmnk1Zw3,qhJI5v6tRy8FjZyOc7op,2QthIOTH6Pcf09AIWhXw,5FWj2q4gbIBhyZe9vCZu,bVCXuo8bzBLfbTFvLHqa,xqn3rGI2A9K59XvDlCrS
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:25:04.536931+00:00'

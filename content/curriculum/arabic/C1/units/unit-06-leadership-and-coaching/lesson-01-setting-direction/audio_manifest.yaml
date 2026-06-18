@@ -1,6 +1,24 @@
 lesson_key: lesson-01-setting-direction
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-3nav5pHC1EYvWOd5LmnA-20260618T024243Z.wav
+  duration_seconds: 46.26
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 500778c6232dfe8f21757937e6868e33436bd9d160934a5a052620d9e7f7e1fa
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-3nav5pHC1EYvWOd5LmnA-20260618T024243Z.wav
+  trace_id: LNiz3wMzwA5sFbM2p8Ic,vFthJiT2SmkxHv8LcaUk,NtbMestv32T9Eku8y9pV,VR3pXuYA9yF0WgIdFVkl,W7A4W2yJoJ1llLpcWRbq,U8pYaeG7QeuqCiUGfkxa,ZEU5u6Ir5vVNCOXuaU2N,E4ZmK39D1PKJrVy7WXmD
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:42:43.265296+00:00'

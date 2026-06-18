@@ -1,6 +1,24 @@
 lesson_key: lesson-02-review-problems-and-travel
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-3nav5pHC1EYvWOd5LmnA-20260618T023115Z.wav
+  duration_seconds: 24.22
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
+  line_count: 6
+  script_content_hash: ee694f8a2aa1da5c2598aaad3ae1498752e7ef63b7ec2c674b6f1bc642644e54
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-3nav5pHC1EYvWOd5LmnA-20260618T023115Z.wav
+  trace_id: nFmah8N5V0gCLoyYryy5,SXTptdfoaFVMgTtOKxNc,fBiX13P4oPdCjLATi8Hb,k8rVMHvqIELRLPTqY6um,ToGN9KHMmkX8ZJIbCGzC,tlmQKvqA0ZWHJV6A6Yfn
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:31:15.352516+00:00'

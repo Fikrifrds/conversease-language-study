@@ -1,6 +1,24 @@
 lesson_key: lesson-03-giving-a-short-update
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-3nav5pHC1EYvWOd5LmnA-20260618T022538Z.wav
+  duration_seconds: 16.38
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: 951b809e9012a81def7dd6764215311ed878c473075f3ff2a5e40c60b9ff8fbb
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-3nav5pHC1EYvWOd5LmnA-20260618T022538Z.wav
+  trace_id: EriIvu7l47jMeuuxretf,U7CkYLhI7AAmantII6aE,ORGOFPGHPPDJkjzNgcm8,q00OZdAVXU50bVh0U8pw,ZpFzDvk5ikPbYGuVZUe4,22nS70P4ggCVUZPKZ5BH
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:25:38.056734+00:00'

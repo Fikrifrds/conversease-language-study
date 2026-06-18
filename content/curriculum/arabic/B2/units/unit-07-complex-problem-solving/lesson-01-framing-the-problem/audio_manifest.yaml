@@ -1,6 +1,24 @@
 lesson_key: lesson-01-framing-the-problem
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening-3nav5pHC1EYvWOd5LmnA-20260618T023946Z.wav
+  duration_seconds: 31.54
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 89c78e9c61de78dc5ba438ef59d224e35d757ef57e635fac53f49d6edaa3330c
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening-3nav5pHC1EYvWOd5LmnA-20260618T023946Z.wav
+  trace_id: v0hQ57PAQQFbzrAets8R,sIUUb67CgEyjsUssW2jy,5QZ2KMkT0ZXHlzhunx8C,lXdKf5sypTGgYE42qaLh,BxBCDcgm9GnggFPCRFmK,sf66i1pNBI12HLMIZRUy,hAORGAgS66AdNqttBsAV,nusKWT8I20L56Prq1nff
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:39:46.788695+00:00'

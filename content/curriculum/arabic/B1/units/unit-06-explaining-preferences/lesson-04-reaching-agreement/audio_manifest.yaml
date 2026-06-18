@@ -1,6 +1,24 @@
 lesson_key: lesson-04-reaching-agreement
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-3nav5pHC1EYvWOd5LmnA-20260618T022940Z.wav
+  duration_seconds: 19.26
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: 127283e29679637c975ad097d1a2b09d4746ee948bcd13d631aa6e07f0f173dc
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-3nav5pHC1EYvWOd5LmnA-20260618T022940Z.wav
+  trace_id: 7BUtJ2fDSY6glv0EupAg,luyFw7F9eLvvOycEn22O,HNQ1NnAjpnYfBcDYd7sS,09HKjST2gTp0y06fTFoL,XR06YNfxOKTUkV6cEpU1,FuY6xUYB6S5tyneqCPsP
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:29:40.140466+00:00'

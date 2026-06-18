@@ -1,6 +1,24 @@
 lesson_key: lesson-05-workplace-mission
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022601Z.wav
+  duration_seconds: 17.74
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: b5a7cb534d5c90ad4f7fa8291a82b58f4f18f0446685bf6ad119e9529f80ed0c
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022601Z.wav
+  trace_id: sZxmhzwV9CX9VO2sVSjB,hou4fjt7SWOy3KaXmtAt,z2Q9qHU8rrhfI0ynCZs5,pq9CdjjEZX7U48U1CX1F,w6KgcPkaEqSX8wQ4xS5p,dHtIRldvLl10Vy7I2hEl
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:26:01.008654+00:00'

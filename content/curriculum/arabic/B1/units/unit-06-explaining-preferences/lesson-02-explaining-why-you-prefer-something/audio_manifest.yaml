@@ -1,6 +1,24 @@
 lesson_key: lesson-02-explaining-why-you-prefer-something
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-3nav5pHC1EYvWOd5LmnA-20260618T022917Z.wav
+  duration_seconds: 17.9
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: c546fa78ee4928d87156052545af31cf6a9e4490d03aba223fe44d0b2c12b78d
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-3nav5pHC1EYvWOd5LmnA-20260618T022917Z.wav
+  trace_id: 7G3FseFbE9eVUkZTQGlE,QZh9HJAohxOsThmxIXFw,kCAsrS2LTdi9dkiQx6ce,fVOCDsQUgsuC4gGo4dyj,vW6pv1Cor9BTq5GrMWzC,5xXz6O1rqofy1odS4ZnV
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:29:17.304325+00:00'

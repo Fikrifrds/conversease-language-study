@@ -1,6 +1,24 @@
 lesson_key: lesson-04-confirming-next-steps
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-04-confirming-next-steps/listening-3nav5pHC1EYvWOd5LmnA-20260618T023908Z.wav
+  duration_seconds: 36.98
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Aisha: v7UCHHCrHj1KBa4E41gb
+    Fatimah: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 310d9982aeb6df937e6884272315f41c37bcdf01808f413a0c17416838d2c557
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-04-confirming-next-steps/listening-3nav5pHC1EYvWOd5LmnA-20260618T023908Z.wav
+  trace_id: yvYzU2NHWMVJ9uKm0BWG,6M3LknL5vkzmBAp0sGI6,axEwad3WEFTkCK5X4okt,g89OqNvlSAVFrkTxNUHE,KnxaijICwPPYQ0vdapZb,uzvDVisQZeKq6fa0kbLh,i4PglJaXig5eM6vvQZf9,y834Kd89QMP6psuROgpG
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:39:08.026142+00:00'

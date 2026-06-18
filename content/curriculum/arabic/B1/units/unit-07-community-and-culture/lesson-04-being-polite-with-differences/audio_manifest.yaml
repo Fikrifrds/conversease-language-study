@@ -1,6 +1,24 @@
 lesson_key: lesson-04-being-polite-with-differences
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-04-being-polite-with-differences/listening-3nav5pHC1EYvWOd5LmnA-20260618T023039Z.wav
+  duration_seconds: 19.1
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Khalid: t9akNmCDhz230CEXOYmn
+    Zayd: cFUFIbKkO2iZFwS8cRnY
+  line_count: 6
+  script_content_hash: e14612a3569fdd5e609a6d99e3a0698668f535c797591d79791288a6c0eb111d
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-04-being-polite-with-differences/listening-3nav5pHC1EYvWOd5LmnA-20260618T023039Z.wav
+  trace_id: KRvN6heGTYvCF5EqhcL3,AbC7qlRQcm1ilywoCJXt,MPSvupNetcxfqyace7tx,nEkiWiw2yjFhmhuL9jEh,Tpig7rj25ykuAdH3ciR3,mOHusjMpqrPrB5hcgtK5
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:30:39.944740+00:00'

@@ -1,6 +1,24 @@
 lesson_key: lesson-02-coaching-with-questions
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T025617Z.wav
+  duration_seconds: 43.14
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Rami: yXEnnEln9armDCyhkXcA
+    Tariq: kdUY91gH5xyDHapxlthT
+  line_count: 8
+  script_content_hash: 500778c6232dfe8f21757937e6868e33436bd9d160934a5a052620d9e7f7e1fa
+  audio_format: wav
+  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T025617Z.wav
+  trace_id: vrhpte8uAQypVUuG5UfT,OahDL61XkG00rULHSAhS,mwYy5cuQJpivO5zv1gip,66sfL69vyzBCy4XKMBXa,kBUT6kSz7ImgTmauRSqX,gBNvJgFjrOqCNDJ5Ajgq,wqGhEOyLg9KizuGF1J8e,Uh3MJ9eWhwltZvaxvTwf
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:56:17.090055+00:00'

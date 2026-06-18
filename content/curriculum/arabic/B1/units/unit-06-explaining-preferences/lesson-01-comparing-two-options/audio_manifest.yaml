@@ -1,6 +1,24 @@
 lesson_key: lesson-01-comparing-two-options
-status: not_generated
+status: generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets: []
+assets:
+- key: dialogue_main
+  type: dialogue
+  script_file: listening_script.md
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-3nav5pHC1EYvWOd5LmnA-20260618T022905Z.wav
+  duration_seconds: 19.02
+  provider: elevenlabs
+  model: eleven_v3
+  voice_id: multi_speaker
+  speaker_voices:
+    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Noura: kdUY91gH5xyDHapxlthT
+  line_count: 6
+  script_content_hash: f02487319dccde050fc3489904b5b16fc5585651de9e169d87b931becd2c6104
+  audio_format: wav
+  storage_key: conversease/audio/arabic/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-3nav5pHC1EYvWOd5LmnA-20260618T022905Z.wav
+  trace_id: k7eaV8vefhaOrspCaJnO,t75R8LnwAakkcsgoteV7,0CpXkyOmrrz5B71O0Xkn,gYkvZbMb1s9SMT9M4PFa,JM1aOmGKIlFLHUIJ1NsE,lOptr2xIs6NJ8CWZTDRL
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-18T02:29:05.723694+00:00'
