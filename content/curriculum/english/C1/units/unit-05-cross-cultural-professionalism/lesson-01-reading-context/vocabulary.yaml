@@ -1,0 +1,23 @@
+vocabulary:
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "It may be worth considering a phased plan."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "What do you think that means in context?"'
+- word: context
+  meaning_id: konteks
+  usage_note: 'Latar atau situasi yang membantu memahami topik. Contoh: "What do you think that means
+    in context?"'
+- word: priority
+  meaning_id: prioritas
+  usage_note: 'Hal yang paling penting didahulukan. Contoh: "Before we decide, can we clarify what their
+    priority is—speed or risk reduction?"'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "Before we decide, can we clarify what their priority
+    is—speed or risk reduction?"'
+- word: client
+  meaning_id: klien
+  usage_note: 'Pihak yang menerima layanan profesional. Contoh: "The client said the timeline is ''ambitious''.
+    What do you think that means?"'

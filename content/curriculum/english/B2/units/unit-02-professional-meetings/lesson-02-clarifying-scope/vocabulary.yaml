@@ -1,0 +1,13 @@
+vocabulary:
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Okay, thanks. I''ll update the ticket list."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "That''s out of scope for now."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "I''ll update the ticket list."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "Just to clarify, what exactly is in scope?"'

@@ -1,0 +1,19 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Could you help me?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Great. Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. I''m looking for a charger."'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "Which one is cheaper?"'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "I''ll take this one."'
+- word: looking
+  meaning_id: terlihat/sedang melihat
+  usage_note: 'Bentuk -ing dari look. Contoh: "I''m looking for a charger."'

@@ -1,0 +1,19 @@
+vocabulary:
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "The earliest we can deliver the full scope
+    is two weeks later."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Okay. What does success look like?"'
+- word: rather
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan preferensi. Contoh: "To avoid surprises, I''d rather under-promise
+    and deliver reliably."'
+- word: look
+  meaning_id: terlihat/melihat
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "Okay. What does success look like?"'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "The earliest we can deliver the full scope is two
+    weeks later."'

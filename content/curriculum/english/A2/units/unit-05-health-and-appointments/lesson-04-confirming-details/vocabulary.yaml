@@ -1,0 +1,16 @@
+vocabulary:
+- word: name
+  meaning_id: nama
+  usage_note: Dipakai saat memperkenalkan diri.
+- word: phone number
+  meaning_id: nomor telepon
+  usage_note: 'Dipakai saat bertukar kontak. Contoh: "Thank you. Do you have a phone number?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Do you have a phone number?"'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "See you tomorrow."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "Let me confirm the time."'

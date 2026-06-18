@@ -1,0 +1,23 @@
+vocabulary:
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "Not right now, but I may need feedback
+    later."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Hi Mina. What are you working on today?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "Not right now, but I may need feedback
+    later."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Next, I''ll review the copy and update the
+    templates."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Next, I''ll review the copy."'
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "I''m working on the onboarding
+    email flow."'

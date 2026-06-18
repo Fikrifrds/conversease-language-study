@@ -1,0 +1,13 @@
+vocabulary:
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "When is the English class?"'
+- word: monday
+  meaning_id: Senin
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "It''s on Monday and Wednesday."'
+- word: wednesday
+  meaning_id: Rabu
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "It''s on Monday and Wednesday."'
+- word: evening
+  meaning_id: malam/sore
+  usage_note: 'Bagian hari setelah afternoon. Contoh: "At seven in the evening."'

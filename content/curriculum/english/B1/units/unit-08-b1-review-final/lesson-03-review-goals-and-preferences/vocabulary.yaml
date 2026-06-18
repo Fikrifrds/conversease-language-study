@@ -1,0 +1,22 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. What do you prefer for practice:
+    coach or shadowing?"'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "How''s it going?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "It helps me stay consistent."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "What''s your goal right now?"'
+- word: goal
+  meaning_id: tujuan
+  usage_note: 'Hal yang ingin dicapai. Contoh: "My goal is to speak more confidently by the end of this
+    month."'
+- word: progress
+  meaning_id: kemajuan
+  usage_note: 'Perkembangan menuju tujuan. Contoh: "I''m making progress. I''ve been practicing every
+    morning."'

@@ -1,0 +1,24 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "When you say X, do you mean Y or
+    Z?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What would success look like in the
+    next two weeks?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "A small pilot with stable metrics."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Next steps are: you''ll propose the pilot plan,
+    and I''ll help align stakeholders."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Great. Next steps are: you''ll propose
+    the pilot plan, and I''ll help you align stakeholders tomorrow."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: you''ll propose the pilot plan, and I''ll
+    help align stakeholders."'

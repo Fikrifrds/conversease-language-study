@@ -1,0 +1,24 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "It sounds like timing is the main concern."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Got it. I''ll draft a phased option
+    and share it today."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "What I''m hearing is we need a phased plan to reduce
+    risk."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "Got it. I''ll draft a phased option and share
+    it today."'
+- word: delay
+  meaning_id: keterlambatan
+  usage_note: 'Saat sesuatu terjadi lebih lambat dari jadwal. Contoh: "Just to check, are you implying
+    that we should delay the rollout?"'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Got it. I''ll draft a phased option
+    and share it today."'

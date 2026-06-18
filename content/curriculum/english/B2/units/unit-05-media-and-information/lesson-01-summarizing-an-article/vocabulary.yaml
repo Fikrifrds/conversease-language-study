@@ -1,0 +1,16 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "The article is about how remote work affects
+    productivity."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "In short, the key takeaway is clear rules help."'
+- word: improve
+  meaning_id: meningkatkan/memperbaiki
+  usage_note: 'Membuat sesuatu menjadi lebih baik. Contoh: "The main point is productivity improves with
+    clear rules."'
+- word: article
+  meaning_id: artikel
+  usage_note: 'Tulisan informatif di media atau publikasi. Contoh: "The article is about how remote work
+    affects productivity."'

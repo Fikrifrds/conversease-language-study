@@ -1,0 +1,17 @@
+vocabulary:
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "To reduce the risk, we can review it monthly."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "What are the benefits of your idea?"'
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "The main benefit is faster
+    onboarding for new hires."'
+- word: benefit
+  meaning_id: manfaat
+  usage_note: 'Dampak positif dari pilihan. Contoh: "The main benefit is faster onboarding for new hires."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "A key risk is that the checklist becomes outdated."'

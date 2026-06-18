@@ -1,0 +1,13 @@
+vocabulary:
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight for two minutes."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Thank you for your help."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you for your help."'
+- word: station
+  meaning_id: 'bagian dari frasa: Bagaimana saya ke stasiun?'
+  usage_note: 'Muncul dalam frasa lesson: "How do I get to the station?"'

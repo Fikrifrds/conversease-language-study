@@ -1,0 +1,13 @@
+vocabulary:
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Which one is cheaper?"'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "Which one is cheaper?"'
+- word: quality
+  meaning_id: kualitas
+  usage_note: 'Tingkat mutu suatu barang atau layanan. Contoh: "better quality."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "I''ll take the cheaper one."'

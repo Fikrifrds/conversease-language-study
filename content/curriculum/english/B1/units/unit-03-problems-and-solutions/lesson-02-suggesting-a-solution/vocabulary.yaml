@@ -1,0 +1,19 @@
+vocabulary:
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Good plan."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Why do you think that''s best?"'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "We could roll back the update."'
+- word: rollback
+  meaning_id: mengembalikan perubahan
+  usage_note: 'Istilah kerja untuk kembali ke kondisi sebelumnya. Contoh: "Because rollback is quick."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "Any ideas to fix it?"'
+- word: happen
+  meaning_id: terjadi
+  usage_note: 'Dipakai saat menjelaskan peristiwa. Contoh: "So it doesn''t happen again."'

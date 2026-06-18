@@ -1,0 +1,23 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Does that timeline work for you?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "We want to improve onboarding. What can you
+    do?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll send a draft
+    plan today, and you''ll review it by Friday."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: I''ll send a draft plan today, and you''ll
+    review it by Friday."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "To confirm, next steps are: I''ll send a draft
+    plan today, and you''ll review it by Friday. Does that timeline work for you?"'
+- word: solution
+  meaning_id: solusi
+  usage_note: 'Cara menyelesaikan masalah. Contoh: "We have two options: a quick fix or a robust solution."'

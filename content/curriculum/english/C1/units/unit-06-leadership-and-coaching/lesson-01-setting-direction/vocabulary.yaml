@@ -1,0 +1,24 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "The direction I''d like to set is stabilizing
+    the billing flow first."'
+- word: direction
+  meaning_id: arah
+  usage_note: 'Petunjuk jalan atau posisi. Contoh: "The direction I''d like to set is stabilizing the
+    billing flow first."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "I''d like you to own the rollout plan."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "I''d like you to own the rollout plan, and
+    I''ll own stakeholder updates."'
+- word: look
+  meaning_id: terlihat/melihat
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "Success looks like fewer incidents and faster
+    completion rates."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "Let''s align on scope and keep it time-boxed to two
+    weeks."'

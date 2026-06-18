@@ -1,0 +1,22 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Yes, I''ll revise it and send it today."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "How was my update message?"'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "One thing I''d suggest is leading
+    with the decision."'
+- word: summary
+  meaning_id: ringkasan
+  usage_note: 'Versi singkat dari informasi utama. Contoh: "A concrete improvement would be a one-line
+    summary at the top."'
+- word: overall
+  meaning_id: secara keseluruhan
+  usage_note: 'Dipakai saat memberi ringkasan umum. Contoh: "Overall it''s solid."'
+- word: stakeholder
+  meaning_id: pemangku kepentingan
+  usage_note: 'Orang atau pihak yang terdampak keputusan. Contoh: "The impact is that stakeholders scan
+    quickly and might miss the point."'

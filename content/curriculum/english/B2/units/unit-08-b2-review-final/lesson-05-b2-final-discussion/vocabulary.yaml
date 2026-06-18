@@ -1,0 +1,24 @@
+vocabulary:
+- word: monday
+  meaning_id: Senin
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "Next steps are: I''ll share a plan today,
+    and you''ll review it by Friday. Then we finalize on Monday."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Let''s define the scope and what success
+    looks like."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "We want fewer complaints and faster completion."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll share a plan
+    today, and you''ll review it by Friday."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: I''ll share a plan today, and you''ll
+    review it by Friday."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Next steps are: I''ll share a plan today,
+    and you''ll review it by Friday."'

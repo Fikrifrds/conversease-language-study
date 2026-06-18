@@ -1,0 +1,13 @@
+vocabulary:
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "Hi. What is your name?"'
+- word: spell
+  meaning_id: mengeja
+  usage_note: 'Dipakai saat menyebut huruf satu per satu. Contoh: "How do you spell it?"'
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Can you repeat that, please?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Let me read it back. D-I-M-A-S."'

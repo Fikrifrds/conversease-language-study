@@ -1,0 +1,13 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Do you work or study?"'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "Do you work or study?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What do you like about English?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. I will."'

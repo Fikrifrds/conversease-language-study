@@ -1,0 +1,13 @@
+vocabulary:
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Okay. Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. How much is the coffee?"'
+- word: much
+  meaning_id: 'bagian dari frasa: Berapa harga kopinya?'
+  usage_note: 'Muncul dalam frasa lesson: "How much is the coffee?"'
+- word: two
+  meaning_id: 'bagian dari frasa: Harganya dua dolar.'
+  usage_note: 'Muncul dalam frasa lesson: "It is two dollars."'

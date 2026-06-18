@@ -1,0 +1,19 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "It works."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "What is the problem?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Can you help me?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "(laughs) It works. Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Can you help me?"'
+- word: try
+  meaning_id: mencoba
+  usage_note: 'Melakukan sesuatu untuk melihat hasilnya. Contoh: "Yes. Try again."'

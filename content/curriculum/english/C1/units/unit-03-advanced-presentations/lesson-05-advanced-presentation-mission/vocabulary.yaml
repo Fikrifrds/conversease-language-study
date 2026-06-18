@@ -1,0 +1,26 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Today I''d like to walk you through
+    the proposal and why it matters."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Today I''d like to walk you through
+    the proposal and why it matters."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "In short, the benefits outweigh the risks if we set guardrails
+    early. Next steps are: I''ll share the plan today, and you''ll review it by Friday."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "In short, the benefits outweigh the risks
+    if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review it by Friday."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "In short, the benefits outweigh
+    the risks if we set guardrails early. Next steps are: I''ll share the plan today, and you''ll review
+    it by Friday."'
+- word: improve
+  meaning_id: meningkatkan/memperbaiki
+  usage_note: 'Membuat sesuatu menjadi lebih baik. Contoh: "The core claim is that this will improve delivery
+    speed."'

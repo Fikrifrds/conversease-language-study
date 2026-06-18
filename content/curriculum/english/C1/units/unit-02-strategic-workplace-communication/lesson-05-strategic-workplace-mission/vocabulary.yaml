@@ -1,0 +1,24 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "I''ll capture the decision and circulate
+    it today."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "The main risk is incidents during rollout. We can mitigate
+    it by time-boxing, adding monitoring, and having a rollback plan."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Some teams think it''s a hard deadline."'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "I''ll capture the decision and circulate
+    it today."'
+- word: rollback
+  meaning_id: mengembalikan perubahan
+  usage_note: 'Istilah kerja untuk kembali ke kondisi sebelumnya. Contoh: "The main risk is incidents
+    during rollout. We can mitigate it by time-boxing, adding monitoring, and having a rollback plan."'
+- word: priority
+  meaning_id: prioritas
+  usage_note: 'Hal yang paling penting didahulukan. Contoh: "To make sure we''re aligned, what''s your
+    top priority and biggest constraint?"'

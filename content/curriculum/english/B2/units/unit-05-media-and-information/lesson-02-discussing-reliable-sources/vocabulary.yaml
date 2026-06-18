@@ -1,0 +1,13 @@
+vocabulary:
+- word: evidence
+  meaning_id: bukti
+  usage_note: 'Data atau contoh yang mendukung argumen. Contoh: "I trust sources that show evidence."'
+- word: sure
+  meaning_id: 'bagian dari frasa: Aku nggak yakin sumber itu reliable.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m not sure that source is reliable."'
+- word: because
+  meaning_id: 'bagian dari frasa: Karena nggak nyantumin data atau penulisnya.'
+  usage_note: 'Muncul dalam frasa lesson: "Because it doesn''t cite data or mention the author."'
+- word: i'd
+  meaning_id: 'bagian dari frasa: Aku bakal cek laporan resmi.'
+  usage_note: 'Muncul dalam frasa lesson: "I''d check official reports."'

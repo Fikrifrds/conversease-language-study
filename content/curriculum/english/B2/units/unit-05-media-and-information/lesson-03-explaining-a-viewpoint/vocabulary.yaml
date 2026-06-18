@@ -1,0 +1,24 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "From my perspective, some regulation is necessary."'
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "Why do you say that? A lot of people
+    argue the market will correct itself."'
+- word: tell
+  meaning_id: memberi tahu/menceritakan
+  usage_note: 'Dipakai saat menyampaikan informasi kepada orang lain. Contoh: "The reason is it protects
+    users from misuse and misinformation. Ordinary users can''t always tell what''s reliable."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "I read two completely opposite opinions
+    about this today. What''s your take on regulating AI tools?"'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "I read two completely opposite opinions
+    about this today. What''s your take on regulating AI tools?"'
+- word: opinion
+  meaning_id: pendapat
+  usage_note: 'Apa yang kamu pikirkan tentang sesuatu. Contoh: "I read two completely opposite opinions
+    about this today. What''s your take on regulating AI tools?"'

@@ -1,0 +1,13 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like one ticket to Bandung, please."'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Hi. Where are you going?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Great. Thank you."'
+- word: trip
+  meaning_id: perjalanan
+  usage_note: 'Perjalanan dari satu tempat ke tempat lain. Contoh: "One-way or round-trip?"'

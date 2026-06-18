@@ -1,0 +1,16 @@
+vocabulary:
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "I appreciate the intent, and I think we can
+    make it clearer."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "How did the last review go?"'
+- word: impact
+  meaning_id: dampak
+  usage_note: 'Pengaruh atau akibat dari suatu tindakan. Contoh: "The impact is that some teams interpreted
+    it as a hard deadline."'
+- word: appreciate
+  meaning_id: menghargai
+  usage_note: 'Dipakai untuk menunjukkan penghargaan dengan sopan. Contoh: "I appreciate the intent, and
+    I think we can make it clearer."'

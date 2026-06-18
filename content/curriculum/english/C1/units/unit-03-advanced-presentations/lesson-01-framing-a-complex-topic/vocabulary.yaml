@@ -1,0 +1,25 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Today I''d like to walk you through
+    the proposal and why it matters."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "First, I''ll outline the problem
+    we''re solving, then the proposed approach."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Today I''d like to walk you through
+    the proposal and why it matters."'
+- word: proposal
+  meaning_id: usulan
+  usage_note: 'Ide atau rencana yang diajukan. Contoh: "Today I''d like to walk you through the proposal
+    and why it matters."'
+- word: modular
+  meaning_id: modular/terpisah per bagian
+  usage_note: 'Struktur yang dibagi menjadi komponen mandiri. Contoh: "By ''modular architecture'', I
+    mean we separate features into independent components."'
+- word: purpose
+  meaning_id: tujuan
+  usage_note: 'Alasan utama sesuatu dilakukan. Contoh: "The purpose of this is to reduce coupling and
+    speed up delivery."'

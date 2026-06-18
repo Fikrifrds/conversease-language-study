@@ -1,0 +1,18 @@
+vocabulary:
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "It saves time later."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "We can start small and focus on critical flows."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "But writing tests takes time."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "I think we should. One reason is it reduces
+    bugs in production."'
+- word: reason
+  meaning_id: alasan
+  usage_note: 'Penjelasan mengapa sesuatu dipilih atau terjadi. Contoh: "One reason is it reduces bugs
+    in production."'

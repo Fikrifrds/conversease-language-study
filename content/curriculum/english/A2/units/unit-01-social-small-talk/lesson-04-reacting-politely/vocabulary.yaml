@@ -1,0 +1,16 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice work."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Nice work."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks!"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "I''m a bit tired today."'
+- word: tired
+  meaning_id: lelah
+  usage_note: 'Kondisi ketika energi sedang rendah. Contoh: "I''m a bit tired today."'

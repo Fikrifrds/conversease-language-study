@@ -1,0 +1,13 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Do you work or study?"'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "Do you work or study?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "I work in a small office."'
+- word: assistant
+  meaning_id: 'bagian dari frasa: Saya seorang asisten.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m an assistant."'

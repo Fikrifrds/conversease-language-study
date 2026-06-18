@@ -1,0 +1,23 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "So the issue is: multiple teams depend on
+    this, the timeline is tight, and leadership wants visibility. Also, clients are sensitive to changes."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "The key points are: keep changes small, communicate clearly,
+    and monitor risk."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks, that''s helpful context."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Here''s how I''d respond: propose
+    phases, share metrics, and set weekly check-ins."'
+- word: context
+  meaning_id: konteks
+  usage_note: 'Latar atau situasi yang membantu memahami topik. Contoh: "Thanks, that''s helpful context."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "The key points are: keep changes small, communicate
+    clearly, and monitor risk."'

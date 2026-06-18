@@ -1,0 +1,21 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What does success look like?"'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "Let''s define the problem statement
+    first."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "Can we agree on the scope?"'
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "Our customer complaints have increased
+    this month."'
+- word: look
+  meaning_id: terlihat/melihat
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "What does success look like?"'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "Can we agree on the scope?"'

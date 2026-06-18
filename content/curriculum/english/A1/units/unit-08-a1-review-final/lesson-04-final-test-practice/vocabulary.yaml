@@ -1,0 +1,17 @@
+vocabulary:
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "My name is Alya."'
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Sorry, can you repeat that,
+    please?"'
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "I''m from Indonesia."'
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "Good. When is your class?"'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "I study English at seven."'

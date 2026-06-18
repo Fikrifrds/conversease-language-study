@@ -1,0 +1,19 @@
+vocabulary:
+- word: good morning
+  meaning_id: selamat pagi
+  usage_note: 'Sapaan yang dipakai sebelum siang. Contoh: "Hi, good morning."'
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice to meet you too."'
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Nice to meet you too."'
+- word: name
+  meaning_id: nama
+  usage_note: Dipakai saat memperkenalkan diri.
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "I''m from Indonesia."'
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "Oh, nice. See you in class."'

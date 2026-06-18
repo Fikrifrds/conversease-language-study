@@ -1,0 +1,19 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "Say a symptom and duration."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Do you want to grab coffee this weekend?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Do you want to grab coffee this weekend?"'
+- word: invite
+  meaning_id: mengundang
+  usage_note: 'Mengajak seseorang melakukan sesuatu. Contoh: "Invite a friend for coffee this weekend."'
+- word: symptom
+  meaning_id: gejala
+  usage_note: 'Tanda kondisi kesehatan. Contoh: "Say a symptom and duration."'
+- word: yesterday
+  meaning_id: kemarin
+  usage_note: 'Hari sebelum hari ini. Contoh: "What did you do yesterday?"'

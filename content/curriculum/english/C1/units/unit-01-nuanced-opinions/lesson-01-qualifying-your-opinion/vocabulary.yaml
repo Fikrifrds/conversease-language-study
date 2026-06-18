@@ -1,0 +1,15 @@
+vocabulary:
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Do you think we should adopt the new policy
+    immediately?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "I''d phase it in over two quarters and
+    review adoption data along the way."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: 'Hal yang membuat seseorang ragu. Contoh: "What''s the main concern?"'
+- word: extent
+  meaning_id: 'bagian dari frasa: Sampai batas tertentu, iya—terutama untuk project baru.'
+  usage_note: 'Muncul dalam frasa lesson: "To some extent, yes—especially for new projects."'

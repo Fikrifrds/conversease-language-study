@@ -1,0 +1,21 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: Dipakai untuk menyatakan hal yang disukai.
+- word: direction
+  meaning_id: arah
+  usage_note: Petunjuk jalan atau posisi.
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Can we agree on scope today and review
+    metrics weekly?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "What options do you see right now?"'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "Can we agree on scope today and review metrics weekly?"'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Overall your update is solid. One thing I''d
+    suggest is leading with the decision—the impact is people might miss it."'

@@ -1,0 +1,16 @@
+vocabulary:
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "You''re going the right way."'
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Where is platform 2?"'
+- word: platform
+  meaning_id: peron/platform
+  usage_note: 'Tempat menunggu kereta. Contoh: "Where is platform 2?"'

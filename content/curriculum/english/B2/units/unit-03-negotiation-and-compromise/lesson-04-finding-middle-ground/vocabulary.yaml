@@ -1,0 +1,21 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "That could work. What about testing?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Like what?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "I want to launch next week, but you want more
+    testing."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "If we do a small rollout, can we agree on one extra day?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "I''ll update the rollout plan."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "If we do a small rollout, can we agree on one extra
+    day?"'

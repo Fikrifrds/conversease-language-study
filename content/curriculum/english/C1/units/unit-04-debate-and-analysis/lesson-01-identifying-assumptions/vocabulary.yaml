@@ -1,0 +1,24 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "Let''s separate essential steps from redundant
+    ones and measure impact."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "That users just want speed."'
+- word: seem
+  meaning_id: terlihat/terkesan
+  usage_note: 'Dipakai untuk kesan yang belum pasti. Contoh: "It seems you''re assuming fewer steps automatically
+    mean better conversion."'
+- word: seems
+  meaning_id: terlihat/terkesan
+  usage_note: 'Bentuk present untuk he/she/it. Contoh: "It seems you''re assuming fewer steps automatically
+    mean better conversion."'
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "We should cut the onboarding
+    steps to increase conversion."'
+- word: impact
+  meaning_id: dampak
+  usage_note: 'Pengaruh atau akibat dari suatu tindakan. Contoh: "Let''s separate essential steps from
+    redundant ones and measure impact."'

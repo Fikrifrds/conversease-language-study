@@ -1,0 +1,15 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Does that approach work for you?"'
+- word: progress
+  meaning_id: kemajuan
+  usage_note: 'Perkembangan menuju tujuan. Contoh: "The main risk is slower progress if we over-scope
+    the pilot."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "The main risk is slower progress if we over-scope
+    the pilot."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "It reduces risk and gives us data before a full rollout."'

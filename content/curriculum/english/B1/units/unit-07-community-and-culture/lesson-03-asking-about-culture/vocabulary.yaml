@@ -1,0 +1,15 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What is it like in your country?"'
+- word: together
+  meaning_id: bersama
+  usage_note: 'Dipakai saat mengajak orang melakukan sesuatu bersama. Contoh: "Mostly we share food and
+    spend time together."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Mostly we share food and spend time
+    together."'
+- word: people
+  meaning_id: 'bagian dari frasa: Orang biasanya mudik/berkunjung ke keluarga?'
+  usage_note: 'Muncul dalam frasa lesson: "Do people usually travel to visit family?"'

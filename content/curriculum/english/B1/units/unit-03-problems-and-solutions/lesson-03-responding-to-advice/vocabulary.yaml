@@ -1,0 +1,19 @@
+vocabulary:
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "Maybe you should set a small daily goal."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Good idea. Thanks."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "I''ll try that starting tomorrow."'
+- word: goal
+  meaning_id: tujuan
+  usage_note: 'Hal yang ingin dicapai. Contoh: "Maybe you should set a small daily goal."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "Good idea. Thanks."'
+- word: try
+  meaning_id: mencoba
+  usage_note: 'Melakukan sesuatu untuk melihat hasilnya. Contoh: "I''ll try that starting tomorrow."'

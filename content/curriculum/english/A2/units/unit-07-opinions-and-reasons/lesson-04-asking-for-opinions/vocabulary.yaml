@@ -1,0 +1,17 @@
+vocabulary:
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "What do you think about going
+    to Bali?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Good plan."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "What do you think about going to Bali?"'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "I agree. But it might be crowded."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "I think it''s a great idea."'

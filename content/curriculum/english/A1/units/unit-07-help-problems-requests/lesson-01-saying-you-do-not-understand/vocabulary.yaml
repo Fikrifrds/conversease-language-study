@@ -1,0 +1,13 @@
+vocabulary:
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Can you repeat that, please?"'
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "That''s okay. I can say it again."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. I understand now."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "I understand now."'

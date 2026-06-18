@@ -1,0 +1,19 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Where do they live?"'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "I''m going to visit my parents."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks! You too."'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Any plans for the weekend?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Any plans for the weekend?"'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "I''m taking the train on Saturday morning."'

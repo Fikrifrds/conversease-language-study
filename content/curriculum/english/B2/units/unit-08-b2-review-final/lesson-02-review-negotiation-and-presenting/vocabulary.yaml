@@ -1,0 +1,23 @@
+vocabulary:
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "Here''s my proposal: we deliver a smaller
+    scope next week, then the full version two weeks later."'
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Can we meet in the middle?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "Yes. On the other hand, we can include
+    the top two features now and postpone the rest."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "Here''s my proposal: we deliver a smaller scope next
+    week."'
+- word: proposal
+  meaning_id: usulan
+  usage_note: 'Ide atau rencana yang diajukan. Contoh: "Here''s my proposal: we deliver a smaller scope
+    next week."'
+- word: compromise
+  meaning_id: kompromi
+  usage_note: 'Solusi tengah yang bisa diterima bersama. Contoh: "I''d recommend that compromise."'

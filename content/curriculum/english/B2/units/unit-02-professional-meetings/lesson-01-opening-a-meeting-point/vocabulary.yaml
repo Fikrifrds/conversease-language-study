@@ -1,0 +1,23 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "Let''s hear from everyone."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to bring up the timeline
+    for the next release."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Because the design handoff depends on it,
+    and we don''t want to block the team."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "The main point is we need to confirm
+    the scope today."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "The main point is we need to confirm the scope
+    today."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "The main point is we need to confirm the scope today."'

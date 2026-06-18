@@ -1,0 +1,19 @@
+vocabulary:
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "Sure. What''s your name?"'
+- word: appointment
+  meaning_id: janji temu
+  usage_note: 'Waktu yang disepakati untuk bertemu atau layanan. Contoh: "I have an appointment at 3:30."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "What seems to be the problem?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Hello. How can I help you today?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. What seems to be the problem?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Hello. How can I help you today?"'

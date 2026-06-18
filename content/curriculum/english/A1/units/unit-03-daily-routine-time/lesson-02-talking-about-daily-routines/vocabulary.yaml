@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Do you work in the afternoon?"'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "I work at one."'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "I study English at seven."'
+- word: morning
+  meaning_id: 'bagian dari frasa: Apa yang kamu lakukan di pagi hari?'
+  usage_note: 'Muncul dalam frasa lesson: "What do you do in the morning?"'

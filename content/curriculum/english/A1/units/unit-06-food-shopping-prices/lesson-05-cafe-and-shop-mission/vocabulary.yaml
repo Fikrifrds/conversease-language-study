@@ -1,0 +1,16 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Hi! (chuckle) What would you like?"'
+- word: order
+  meaning_id: memesan
+  usage_note: 'Dipakai saat membeli makanan atau minuman. Contoh: "Here is your order."'
+- word: sandwich
+  meaning_id: sandwich/roti lapis
+  usage_note: 'Contoh makanan yang bisa dipesan. Contoh: "Can I have a coffee and a sandwich, please?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "Small or large coffee?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Here is your order."'

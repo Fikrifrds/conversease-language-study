@@ -1,0 +1,21 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. By when?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to improve my speaking."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Because I want to join meetings without feeling
+    nervous."'
+- word: feeling
+  meaning_id: perasaan
+  usage_note: 'Emosi atau kondisi batin. Contoh: "Because I want to join meetings without feeling nervous."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Because I want to join meetings without
+    feeling nervous."'
+- word: goal
+  meaning_id: tujuan
+  usage_note: 'Hal yang ingin dicapai. Contoh: "My goal is to speak more confidently."'

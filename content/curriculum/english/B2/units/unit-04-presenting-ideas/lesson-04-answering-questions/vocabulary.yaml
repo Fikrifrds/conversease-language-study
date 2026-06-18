@@ -1,0 +1,15 @@
+vocabulary:
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "No, that''s all. Thanks."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "I''m not sure yet, but I can follow up
+    by tomorrow."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "As far as I know, it takes about
+    one day."'
+- word: good
+  meaning_id: 'bagian dari frasa: Pertanyaan bagus.'
+  usage_note: 'Muncul dalam frasa lesson: "That''s a good question."'

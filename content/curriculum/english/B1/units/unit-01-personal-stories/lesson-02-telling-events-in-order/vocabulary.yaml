@@ -1,0 +1,20 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. What happened after that?"'
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "Finally, we went back early."'
+- word: trip
+  meaning_id: perjalanan
+  usage_note: 'Perjalanan dari satu tempat ke tempat lain. Contoh: "So what did you do on your trip?"'
+- word: tired
+  meaning_id: lelah
+  usage_note: 'Kondisi ketika energi sedang rendah. Contoh: "(sighs) Finally, we went back early because
+    we were tired."'
+- word: tried
+  meaning_id: mencoba
+  usage_note: 'Bentuk lampau dari try. Contoh: "Then we walked around and tried street food."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "What happened after that?"'

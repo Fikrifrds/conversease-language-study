@@ -1,0 +1,22 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "That works for me. So we agree on cooking
+    at home?"'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "I prefer cooking at home because it''s cheaper."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "The advantage is it''s healthier.
+    One downside is it takes time."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "So we agree on cooking at home?"'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "We have two options: eat out or cook at home."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "I prefer cooking at home because
+    it''s cheaper."'

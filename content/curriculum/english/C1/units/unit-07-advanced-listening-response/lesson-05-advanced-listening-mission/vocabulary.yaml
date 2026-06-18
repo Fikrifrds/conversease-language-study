@@ -1,0 +1,25 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "When you say X, do you mean Y or
+    Z?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "It sounds like timing and risk are
+    the main concerns."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "The client says the plan is ''ambitious'',
+    and leadership wants visibility. Also, a few teams are nervous about changes."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "The client says the plan is ''ambitious'', and leadership
+    wants visibility. Also, a few teams are nervous about changes."'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "The decision is to propose a phased
+    rollout with clear metrics."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "Got it. Next steps are: I''ll send the summary,
+    draft phased options, and propose a weekly check-in."'

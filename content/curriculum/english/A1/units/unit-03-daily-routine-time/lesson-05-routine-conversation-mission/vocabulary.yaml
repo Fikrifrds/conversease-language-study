@@ -1,0 +1,13 @@
+vocabulary:
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "Is the class online?"'
+- word: monday
+  meaning_id: Senin
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "I study on Monday and Wednesday at seven."'
+- word: wednesday
+  meaning_id: Rabu
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "I study on Monday and Wednesday at seven."'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "When do you study English?"'

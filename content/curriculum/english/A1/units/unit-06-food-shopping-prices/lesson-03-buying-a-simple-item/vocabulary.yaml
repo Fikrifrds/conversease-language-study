@@ -1,0 +1,13 @@
+vocabulary:
+- word: pen
+  meaning_id: pulpen
+  usage_note: 'Alat untuk menulis. Contoh: "Can I have this pen?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Here is your pen."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Can I have this pen?"'
+- word: much
+  meaning_id: 'bagian dari frasa: Berapa harganya?'
+  usage_note: 'Muncul dalam frasa lesson: "How much is it?"'

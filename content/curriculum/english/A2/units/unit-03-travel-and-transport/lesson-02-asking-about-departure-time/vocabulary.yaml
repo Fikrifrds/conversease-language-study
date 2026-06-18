@@ -1,0 +1,16 @@
+vocabulary:
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me."'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "What time does the train leave?"'
+- word: leave
+  meaning_id: berangkat/meninggalkan
+  usage_note: 'Dipakai untuk jadwal keberangkatan. Contoh: "What time does the train leave?"'
+- word: platform
+  meaning_id: peron/platform
+  usage_note: 'Tempat menunggu kereta. Contoh: "Which platform?"'
+- word: trip
+  meaning_id: perjalanan
+  usage_note: 'Perjalanan dari satu tempat ke tempat lain. Contoh: "How long is the trip?"'

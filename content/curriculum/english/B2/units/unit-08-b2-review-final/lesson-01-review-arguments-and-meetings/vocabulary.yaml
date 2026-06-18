@@ -1,0 +1,25 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll share a plan
+    today, and you''ll review it by Friday."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: I''ll share a plan today, and you''ll
+    review it by Friday."'
+- word: reason
+  meaning_id: alasan
+  usage_note: 'Penjelasan mengapa sesuatu dipilih atau terjadi. Contoh: "The main reason is it affects
+    revenue and support workload."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Can you summarize your position for the
+    meeting?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Next steps are: I''ll share a plan today,
+    and you''ll review it by Friday."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "Some teams prefer new features,
+    but the risk is higher if billing stays broken."'

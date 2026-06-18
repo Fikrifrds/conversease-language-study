@@ -1,0 +1,24 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "Before we commit to a direction, do we have
+    any data to support this, or are we working from anecdotes?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "So the redesign caused it? That seems
+    like the obvious reading."'
+- word: direction
+  meaning_id: arah
+  usage_note: 'Petunjuk jalan atau posisi. Contoh: "Before we commit to a direction, do we have any data
+    to support this, or are we working from anecdotes?"'
+- word: experience
+  meaning_id: pengalaman
+  usage_note: 'Hal yang pernah dialami. Contoh: "This suggests we should investigate the checkout experience."'
+- word: seem
+  meaning_id: terlihat/terkesan
+  usage_note: 'Dipakai untuk kesan yang belum pasti. Contoh: "So the redesign caused it? That seems like
+    the obvious reading."'
+- word: seems
+  meaning_id: terlihat/terkesan
+  usage_note: 'Bentuk present untuk he/she/it. Contoh: "So the redesign caused it? That seems like the
+    obvious reading."'

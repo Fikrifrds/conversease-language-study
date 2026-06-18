@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. How was it?"'
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "I went to the museum and took photos."'
+- word: yesterday
+  meaning_id: kemarin
+  usage_note: 'Hari sebelum hari ini. Contoh: "What did you do yesterday?"'
+- word: really
+  meaning_id: 'bagian dari frasa: Seru banget.'
+  usage_note: 'Muncul dalam frasa lesson: "It was really interesting."'

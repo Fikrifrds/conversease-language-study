@@ -1,0 +1,20 @@
+vocabulary:
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "How''s it going?"'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "Yes. I''m going to a new cafe.
+    Do you want to join?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Do you want to join?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Hi Ben. I''m good, thanks. How about you?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "(sighs) I''m a bit tired today."'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Any plans for the weekend?"'

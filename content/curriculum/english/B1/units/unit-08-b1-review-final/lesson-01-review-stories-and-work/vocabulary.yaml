@@ -1,0 +1,22 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. What happened after that?"'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Sounds fun. How''s work going today?"'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Sounds fun. How''s work going
+    today?"'
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "It was great. I visited my cousin, and we went to a small
+    concert."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "It was great. I visited my cousin, and we went to a small
+    concert."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Sounds fun. How''s work going today?"'

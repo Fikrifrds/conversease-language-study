@@ -1,0 +1,13 @@
+vocabulary:
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. I understand."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Where is the meeting room?"'
+- word: turn
+  meaning_id: 'bagian dari frasa: Belok kiri.'
+  usage_note: 'Muncul dalam frasa lesson: "Turn left."'

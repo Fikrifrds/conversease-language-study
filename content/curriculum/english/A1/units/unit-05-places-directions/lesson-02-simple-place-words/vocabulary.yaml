@@ -1,0 +1,13 @@
+vocabulary:
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Where are you going?"'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "I''m going to the cafe."'
+- word: near
+  meaning_id: dekat
+  usage_note: 'Dipakai untuk menjelaskan jarak yang dekat. Contoh: "near here."'
+- word: together
+  meaning_id: bersama
+  usage_note: 'Dipakai saat mengajak orang melakukan sesuatu bersama. Contoh: "Let''s go together."'

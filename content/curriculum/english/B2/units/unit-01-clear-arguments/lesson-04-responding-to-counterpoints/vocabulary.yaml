@@ -1,0 +1,15 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I like your idea, but I''m worried
+    it will increase costs."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "I like your idea, but I''m worried it will increase
+    costs."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: Hal yang membuat seseorang ragu.
+- word: fair
+  meaning_id: 'bagian dari frasa: Itu poin yang adil/masuk akal.'
+  usage_note: 'Muncul dalam frasa lesson: "That''s a fair point."'

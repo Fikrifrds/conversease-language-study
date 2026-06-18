@@ -1,0 +1,20 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Oh, nice! Where is it?"'
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "Hi Lina. I went to a new cafe yesterday."'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "Hi Lina. I went to a new cafe
+    yesterday."'
+- word: near
+  meaning_id: dekat
+  usage_note: 'Dipakai untuk menjelaskan jarak yang dekat. Contoh: "It''s near the station."'
+- word: order
+  meaning_id: memesan
+  usage_note: 'Dipakai saat membeli makanan atau minuman. Contoh: "What did you order?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Do you want to go sometime?"'

@@ -1,0 +1,24 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll draft the plan
+    today, and you''ll review it by Friday."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: I''ll draft the plan today, and you''ll
+    review it by Friday."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Next steps are: I''ll draft the plan today,
+    and you''ll review it by Friday."'
+- word: recommendation
+  meaning_id: rekomendasi
+  usage_note: 'Saran pilihan yang dianggap baik. Contoh: "Make a recommendation and next steps."'
+- word: position
+  meaning_id: posisi/pendapat
+  usage_note: 'Sikap utama dalam diskusi. Contoh: "My position is that we should run a two-week pilot
+    before a full rollout."'
+- word: next steps
+  meaning_id: langkah berikutnya
+  usage_note: 'Aksi yang dilakukan setelah diskusi. Contoh: "Next steps are: I''ll draft the plan today,
+    and you''ll review it by Friday."'

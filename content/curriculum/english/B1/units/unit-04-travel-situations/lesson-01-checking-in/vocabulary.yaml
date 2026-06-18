@@ -1,0 +1,14 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to check in."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Welcome. How can I help you?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Breakfast is included. Check-out
+    is at 11 a.m."'
+- word: check in
+  meaning_id: check-in
+  usage_note: 'Proses masuk hotel atau melapor kedatangan. Contoh: "I''d like to check in."'

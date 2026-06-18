@@ -1,0 +1,13 @@
+vocabulary:
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks. What time is the next train?"'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Where is platform 2?"'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "What time is the next train?"'
+- word: platform
+  meaning_id: peron/platform
+  usage_note: 'Tempat menunggu kereta. Contoh: "Where is platform 2?"'

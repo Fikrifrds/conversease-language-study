@@ -1,0 +1,22 @@
+vocabulary:
+- word: routine
+  meaning_id: rutinitas
+  usage_note: 'Kebiasaan yang dilakukan secara teratur. Contoh: "In my view, a written update would be
+    better for routine topics."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Because it saves time and lets people focus
+    on deep work."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "That sounds like a good compromise."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Why do you think that?"'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "In my view, a written update would be better."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Should we switch our weekly meeting to
+    a written update?"'

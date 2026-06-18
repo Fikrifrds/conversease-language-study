@@ -1,0 +1,23 @@
+vocabulary:
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "On the other hand, the slower option
+    reduces risk but takes more effort."'
+- word: solution
+  meaning_id: solusi
+  usage_note: 'Cara menyelesaikan masalah. Contoh: "We have two solutions. Which one should we pick?"'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "On the other hand, the slower option reduces
+    risk."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "On the other hand, the slower option reduces risk."'
+- word: trade-off
+  meaning_id: kompromi pilihan
+  usage_note: 'Hal yang dikorbankan saat memilih opsi. Contoh: "The trade-off is speed versus long-term
+    reliability."'
+- word: reliability
+  meaning_id: keandalan
+  usage_note: 'Tingkat bisa dipercaya atau stabilnya sesuatu. Contoh: "The trade-off is speed versus long-term
+    reliability."'

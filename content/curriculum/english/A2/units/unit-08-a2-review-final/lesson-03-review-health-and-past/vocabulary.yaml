@@ -1,0 +1,19 @@
+vocabulary:
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "Yes. I studied and went to bed late."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "(sighs) I don''t feel well today."'
+- word: headache
+  meaning_id: sakit kepala
+  usage_note: 'Gejala sakit pada kepala. Contoh: "I have a headache and I''m really tired."'
+- word: tired
+  meaning_id: lelah
+  usage_note: 'Kondisi ketika energi sedang rendah. Contoh: "I have a headache and I''m really tired."'
+- word: wrong
+  meaning_id: salah/ada masalah
+  usage_note: 'Dipakai untuk menanyakan apa yang terjadi. Contoh: "What''s wrong?"'
+- word: yesterday
+  meaning_id: kemarin
+  usage_note: 'Hari sebelum hari ini. Contoh: "What did you do yesterday?"'

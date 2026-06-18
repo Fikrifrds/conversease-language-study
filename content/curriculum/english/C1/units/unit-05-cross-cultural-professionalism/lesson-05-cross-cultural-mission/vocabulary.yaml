@@ -1,0 +1,25 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "The client says the timeline is
+    ''ambitious''."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "In our context, it''s generally expected that we
+    raise concerns one-on-one first. It might help to start with appreciation."'
+- word: request
+  meaning_id: permintaan
+  usage_note: 'Cara meminta sesuatu dengan sopan. Contoh: "I may have misunderstood their tone. Just to
+    clarify, my intent was to confirm constraints, not reject the request."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "I may have misunderstood their tone. Just to clarify,
+    my intent was to confirm constraints, not reject the request."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "Would you mind if I ask how you
+    prefer to receive feedback?"'
+- word: culture
+  meaning_id: budaya
+  usage_note: 'Kebiasaan dan nilai dalam masyarakat. Contoh: "In our culture, they prefer private feedback
+    first."'

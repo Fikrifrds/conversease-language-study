@@ -1,0 +1,13 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "(laughs) It works. Thank you for your help."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "No problem."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Thank you for your help."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you for your help."'

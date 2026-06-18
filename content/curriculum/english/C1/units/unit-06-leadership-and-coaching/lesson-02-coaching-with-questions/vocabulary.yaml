@@ -1,0 +1,22 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "What support do you need from me?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What would success look like for the
+    pilot?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Can you review it and help me align with stakeholders?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "What''s the smallest next step you
+    can take today?"'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Yes. Send it to me today, and I''ll help
+    you align tomorrow."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "What options do you see right now?"'

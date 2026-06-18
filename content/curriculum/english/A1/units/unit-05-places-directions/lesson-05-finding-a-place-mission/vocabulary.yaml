@@ -1,0 +1,13 @@
+vocabulary:
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight and turn left."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Great. Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. How do I get to room A?"'
+- word: room
+  meaning_id: 'bagian dari frasa: Bagaimana saya ke ruang A?'
+  usage_note: 'Muncul dalam frasa lesson: "How do I get to room A?"'

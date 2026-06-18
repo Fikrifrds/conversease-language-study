@@ -1,0 +1,19 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Oh nice. What were you doing there?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Sounds like a good trip."'
+- word: place
+  meaning_id: tempat
+  usage_note: 'Lokasi yang ingin dituju atau dijelaskan. Contoh: "How was the place?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "You look happy today. What happened?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Last weekend, I was in Bandung."'
+- word: trip
+  meaning_id: perjalanan
+  usage_note: 'Perjalanan dari satu tempat ke tempat lain. Contoh: "Sounds like a good trip."'

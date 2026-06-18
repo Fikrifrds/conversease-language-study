@@ -1,0 +1,13 @@
+vocabulary:
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Let''s meet at 3 p.m."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Pretty good. Busy with work."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Do you want to grab coffee this weekend?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Do you want to grab coffee this weekend?"'

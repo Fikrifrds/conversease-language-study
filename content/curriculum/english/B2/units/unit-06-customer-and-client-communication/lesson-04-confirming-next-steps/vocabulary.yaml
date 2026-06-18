@@ -1,0 +1,21 @@
+vocabulary:
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "We''ll meet next Monday to finalize."'
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "That works. Friday gives me enough time to
+    collect feedback from the team."'
+- word: monday
+  meaning_id: Senin
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "We''ll meet next Monday to finalize."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Does that timeline work for you?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "Okay. Starting with a small group makes sense for us."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll send the draft
+    plan today."'

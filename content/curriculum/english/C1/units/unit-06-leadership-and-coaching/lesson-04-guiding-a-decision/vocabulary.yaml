@@ -1,0 +1,24 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Can we agree on the scope today and
+    review metrics weekly?"'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "We can''t decide which approach
+    to take."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "Can we agree on the scope today and review metrics
+    weekly?"'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "Let''s align on the decision criteria."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "We have three options: pilot, phased rollout,
+    or full rollout."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Can we agree on the scope today and review
+    metrics weekly?"'

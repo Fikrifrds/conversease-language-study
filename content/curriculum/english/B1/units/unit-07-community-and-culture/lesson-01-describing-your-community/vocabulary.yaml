@@ -1,0 +1,21 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. What''s it like?"'
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "Yeah, we say hi and help each other
+    sometimes."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I like it because it''s convenient."'
+- word: near
+  meaning_id: dekat
+  usage_note: 'Dipakai untuk menjelaskan jarak yang dekat. Contoh: "I live in a quiet neighborhood near
+    the city center."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "It''s known for its food stalls and small parks."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "We help each other sometimes."'

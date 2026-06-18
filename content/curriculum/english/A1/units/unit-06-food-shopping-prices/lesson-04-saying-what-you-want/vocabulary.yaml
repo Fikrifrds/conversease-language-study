@@ -1,0 +1,13 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "What do you want?"'
+- word: sandwich
+  meaning_id: sandwich/roti lapis
+  usage_note: 'Contoh makanan yang bisa dipesan. Contoh: "I want a sandwich."'
+- word: tea
+  meaning_id: teh
+  usage_note: 'Minuman yang umum dipesan. Contoh: "Tea, please."'
+- word: sugar
+  meaning_id: gula
+  usage_note: 'Tambahan untuk minuman atau makanan. Contoh: "No sugar, please."'

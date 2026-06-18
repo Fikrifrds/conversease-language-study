@@ -1,0 +1,19 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Yes, it is. I work there. Come with me."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I would like one tea, please."'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "Where is the cafe?"'
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight and turn right."'
+- word: tea
+  meaning_id: teh
+  usage_note: 'Minuman yang umum dipesan. Contoh: "I would like one tea, please."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you."'

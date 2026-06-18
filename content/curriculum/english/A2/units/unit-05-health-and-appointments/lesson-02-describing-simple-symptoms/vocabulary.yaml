@@ -1,0 +1,16 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "What seems to be the problem?"'
+- word: fever
+  meaning_id: demam
+  usage_note: 'Kondisi suhu tubuh naik saat sakit. Contoh: "Do you have a fever?"'
+- word: yesterday
+  meaning_id: kemarin
+  usage_note: 'Hari sebelum hari ini. Contoh: "I''ve had a sore throat since yesterday."'
+- word: seem
+  meaning_id: terlihat/terkesan
+  usage_note: 'Dipakai untuk kesan yang belum pasti. Contoh: "What seems to be the problem?"'
+- word: seems
+  meaning_id: terlihat/terkesan
+  usage_note: 'Bentuk present untuk he/she/it. Contoh: "What seems to be the problem?"'

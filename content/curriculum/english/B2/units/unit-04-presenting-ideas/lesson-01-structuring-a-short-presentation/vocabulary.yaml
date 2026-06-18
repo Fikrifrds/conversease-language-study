@@ -1,0 +1,24 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Let''s do it."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Today I''d like to share an idea to
+    improve our onboarding."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "The problem is new hires often feel
+    lost."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Today I''d like to share an idea to
+    improve our onboarding."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Today I''d like to share an idea
+    to improve our onboarding."'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "Today I''d like to share an idea to improve our
+    onboarding."'

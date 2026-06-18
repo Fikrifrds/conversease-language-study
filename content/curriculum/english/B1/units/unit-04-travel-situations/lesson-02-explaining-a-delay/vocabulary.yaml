@@ -1,0 +1,17 @@
+vocabulary:
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "Can we start a little later?"'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "My train is delayed because of a
+    signal problem."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you for waiting."'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "My train is delayed."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "Oh no. What happened?"'

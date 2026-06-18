@@ -1,0 +1,13 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "That works for me."'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "How about we go with the cheaper one?"'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "So we agree on Noodle House at 6:30?"'
+- word: about
+  meaning_id: 'bagian dari frasa: Gimana kalau kita pilih yang lebih murah?'
+  usage_note: 'Muncul dalam frasa lesson: "How about we go with the cheaper one?"'

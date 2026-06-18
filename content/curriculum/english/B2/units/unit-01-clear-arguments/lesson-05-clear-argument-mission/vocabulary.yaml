@@ -1,0 +1,23 @@
+vocabulary:
+- word: routine
+  meaning_id: rutinitas
+  usage_note: 'Kebiasaan yang dilakukan secara teratur. Contoh: "In my view, we should move routine updates
+    to a written summary."'
+- word: reason
+  meaning_id: alasan
+  usage_note: 'Penjelasan mengapa sesuatu dipilih atau terjadi. Contoh: "One reason is it saves time."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "In my view, we should move routine updates
+    to a written summary."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Should we change our weekly meeting format?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Let''s run a one-month trial and review
+    the results."'
+- word: example
+  meaning_id: contoh
+  usage_note: 'Detail yang membuat argumen lebih jelas. Contoh: "For example, last month we spent 30 minutes
+    repeating updates."'

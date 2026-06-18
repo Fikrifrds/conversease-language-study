@@ -1,0 +1,24 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "When you say ''more cautious'',
+    do you mean smaller scope or slower timing?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "What''s the next step we should take
+    today?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Let''s draft a smaller-scope plan and share it today."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "What''s the next step we should
+    take today?"'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Let''s draft a smaller-scope plan
+    and share it today."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "When you say ''more cautious'', do you mean smaller
+    scope or slower timing?"'

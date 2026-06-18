@@ -1,0 +1,13 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What would you like?"'
+- word: tea
+  meaning_id: teh
+  usage_note: 'Minuman yang umum dipesan. Contoh: "Can I have a tea, please?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "Small or large?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "No, thank you."'

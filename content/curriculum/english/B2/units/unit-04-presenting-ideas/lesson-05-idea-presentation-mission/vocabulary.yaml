@@ -1,0 +1,25 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Today I''d like to propose a shared
+    onboarding checklist."'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "Today I''d like to propose a shared
+    onboarding checklist. First, the problem is onboarding is inconsistent. Next, the proposal is a checklist
+    plus a buddy. Finally, we''ll pilot it next week."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Today I''d like to propose a shared
+    onboarding checklist."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "I''m not sure yet, but I can follow up
+    by tomorrow."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "How much effort will it take?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "A key risk is it becomes outdated. To reduce
+    the risk, we''ll review it monthly and assign an owner."'

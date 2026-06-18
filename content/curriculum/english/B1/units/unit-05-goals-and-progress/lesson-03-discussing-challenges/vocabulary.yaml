@@ -1,0 +1,22 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "It''s hard to stay consistent after work."'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "How is your practice going this
+    week?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "I see. Do you want a quick tip?"'
+- word: tired
+  meaning_id: lelah
+  usage_note: 'Kondisi ketika energi sedang rendah. Contoh: "I get distracted by my phone, and I feel
+    tired."'
+- word: challenge
+  meaning_id: tantangan
+  usage_note: 'Hal yang membuat sesuatu sulit. Contoh: "The biggest challenge is staying consistent."'
+- word: try
+  meaning_id: mencoba
+  usage_note: 'Melakukan sesuatu untuk melihat hasilnya. Contoh: "Sure. Try a 10-minute timer and put
+    your phone away."'

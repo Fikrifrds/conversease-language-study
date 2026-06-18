@@ -1,0 +1,23 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Could you clarify which risks you want me
+    to focus on?"'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "Just to confirm, you need it by Friday morning,
+    right?"'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Hi Mina. Quick update on the report?"'
+- word: progress
+  meaning_id: kemajuan
+  usage_note: 'Perkembangan menuju tujuan. Contoh: "I''m making good progress."'
+- word: summary
+  meaning_id: ringkasan
+  usage_note: 'Versi singkat dari informasi utama. Contoh: "I''m making good progress. I''m almost done
+    with the summary."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "Could you clarify which risks you want me to focus
+    on?"'

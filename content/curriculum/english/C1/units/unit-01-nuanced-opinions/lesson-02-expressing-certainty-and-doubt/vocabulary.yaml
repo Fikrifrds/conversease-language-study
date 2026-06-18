@@ -1,0 +1,13 @@
+vocabulary:
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "Will this change reduce complaints?"'
+- word: fairly
+  meaning_id: 'bagian dari frasa: Aku cukup yakin iya, melihat tren di support.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m fairly confident it will, given the support trends."'
+- word: entirely
+  meaning_id: 'bagian dari frasa: Aku belum sepenuhnya yakin.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m not entirely convinced."'
+- word: strong
+  meaning_id: 'bagian dari frasa: Ada kemungkinan besar kita ketemu edge case.'
+  usage_note: 'Muncul dalam frasa lesson: "There''s a strong chance we''ll see edge cases."'

@@ -1,0 +1,13 @@
+vocabulary:
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "It''s tomorrow at ten."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "When is the meeting?"'
+- word: online
+  meaning_id: 'bagian dari frasa: Apakah online?'
+  usage_note: 'Muncul dalam frasa lesson: "Is it online?"'
+- word: right
+  meaning_id: 'bagian dari frasa: Benar begitu?'
+  usage_note: 'Muncul dalam frasa lesson: "Is that right?"'

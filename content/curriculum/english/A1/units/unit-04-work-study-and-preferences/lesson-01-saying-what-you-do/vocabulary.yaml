@@ -1,0 +1,7 @@
+vocabulary:
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "What do you study?"'
+- word: student
+  meaning_id: 'bagian dari frasa: Saya seorang pelajar.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m a student."'

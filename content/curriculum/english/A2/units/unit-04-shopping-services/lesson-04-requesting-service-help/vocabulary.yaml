@@ -1,0 +1,13 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Could you help me?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you for your help."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Could you help me?"'
+- word: need
+  meaning_id: 'bagian dari frasa: Kamu perlu apa?'
+  usage_note: 'Muncul dalam frasa lesson: "What do you need?"'

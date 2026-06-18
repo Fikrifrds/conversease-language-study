@@ -1,0 +1,13 @@
+vocabulary:
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "What time is the class?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you."'
+- word: time
+  meaning_id: 'bagian dari frasa: Jam berapa kelasnya?'
+  usage_note: 'Muncul dalam frasa lesson: "What time is the class?"'
+- word: nine
+  meaning_id: 'bagian dari frasa: Jam sembilan.'
+  usage_note: 'Muncul dalam frasa lesson: "It''s at nine o''clock."'

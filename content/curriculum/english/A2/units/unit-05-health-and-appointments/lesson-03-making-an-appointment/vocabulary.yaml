@@ -1,0 +1,20 @@
+vocabulary:
+- word: good morning
+  meaning_id: selamat pagi
+  usage_note: 'Sapaan yang dipakai sebelum siang. Contoh: "Good morning. Green Clinic. How can I help
+    you?"'
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "Can I have your name, please?"'
+- word: appointment
+  meaning_id: janji temu
+  usage_note: 'Waktu yang disepakati untuk bertemu atau layanan. Contoh: "I''d like to make an appointment."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "What day works for you?"'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to make an appointment."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Good morning. Green Clinic. How can I help you?"'

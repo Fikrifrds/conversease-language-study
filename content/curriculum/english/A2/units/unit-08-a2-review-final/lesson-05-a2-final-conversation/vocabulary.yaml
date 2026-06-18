@@ -1,0 +1,20 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Do you want to go there this weekend?"'
+- word: went
+  meaning_id: pergi
+  usage_note: 'Bentuk lampau dari go. Contoh: "I went to a new cafe yesterday. It was great."'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "I went to a new cafe yesterday.
+    It was great."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Do you want to go there this weekend?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Do you want to go there this weekend?"'
+- word: tired
+  meaning_id: lelah
+  usage_note: 'Kondisi ketika energi sedang rendah. Contoh: "A bit tired, though."'

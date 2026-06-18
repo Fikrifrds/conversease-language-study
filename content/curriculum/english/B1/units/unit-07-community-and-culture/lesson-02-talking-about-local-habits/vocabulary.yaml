@@ -1,0 +1,13 @@
+vocabulary:
+- word: evening
+  meaning_id: malam/sore
+  usage_note: 'Bagian hari setelah afternoon. Contoh: "People usually eat outside in the evening."'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "People often do it after work."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Interesting. Like street food?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Especially on weekends."'

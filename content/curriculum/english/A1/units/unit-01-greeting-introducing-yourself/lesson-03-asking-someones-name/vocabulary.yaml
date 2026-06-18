@@ -1,0 +1,16 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: Dipakai untuk menyatakan kesan positif.
+- word: meet
+  meaning_id: bertemu
+  usage_note: Kata kerja untuk bertemu seseorang.
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "What''s your name?"'
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Sorry, can you repeat that?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you, Raka."'

@@ -1,0 +1,19 @@
+vocabulary:
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Let''s do a full review tomorrow."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "I''d rather fix it now."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "We have two options."'
+- word: rather
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan preferensi. Contoh: "I''d rather fix it now."'
+- word: rollback
+  meaning_id: mengembalikan perubahan
+  usage_note: 'Istilah kerja untuk kembali ke kondisi sebelumnya. Contoh: "We could do a quick rollback."'
+- word: reasonable
+  meaning_id: masuk akal
+  usage_note: 'Dipakai saat menyetujui ide yang terdengar baik. Contoh: "That sounds reasonable."'

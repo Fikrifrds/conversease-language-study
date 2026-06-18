@@ -1,0 +1,18 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "For instance, a simple checklist would help."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Why do you think onboarding should be more structured?"'
+- word: example
+  meaning_id: contoh
+  usage_note: 'Detail yang membuat argumen lebih jelas. Contoh: "For example, last quarter we had three
+    new joiners who felt lost."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "What happened exactly?"'
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "Why do you think onboarding
+    should be more structured?"'

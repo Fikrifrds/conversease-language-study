@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Do you study English after that?"'
+- word: class
+  meaning_id: kelas
+  usage_note: 'Dipakai saat membicarakan pelajaran atau sesi belajar. Contoh: "When is our speaking class?"'
+- word: study
+  meaning_id: belajar/kuliah
+  usage_note: 'Dipakai saat membicarakan kegiatan belajar. Contoh: "I study English at seven."'
+- word: wake
+  meaning_id: 'bagian dari frasa: Saya bangun jam enam.'
+  usage_note: 'Muncul dalam frasa lesson: "I wake up at six."'

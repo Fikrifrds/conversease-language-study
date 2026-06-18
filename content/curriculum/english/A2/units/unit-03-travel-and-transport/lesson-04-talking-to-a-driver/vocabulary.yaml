@@ -1,0 +1,13 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "No problem."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks. How long will it take?"'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "Can you take me to the station?"'
+- word: long
+  meaning_id: 'bagian dari frasa: Kira-kira berapa lama?'
+  usage_note: 'Muncul dalam frasa lesson: "How long will it take?"'

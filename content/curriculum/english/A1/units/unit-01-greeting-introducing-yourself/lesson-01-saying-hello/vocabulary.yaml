@@ -1,0 +1,16 @@
+vocabulary:
+- word: good morning
+  meaning_id: selamat pagi
+  usage_note: 'Sapaan yang dipakai sebelum siang. Contoh: "Good morning."'
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice to meet you."'
+- word: later
+  meaning_id: nanti
+  usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "See you later."'
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Nice to meet you."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "I''m good, thank you."'

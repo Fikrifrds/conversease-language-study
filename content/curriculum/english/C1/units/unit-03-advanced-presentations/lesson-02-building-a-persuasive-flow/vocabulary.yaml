@@ -1,0 +1,20 @@
+vocabulary:
+- word: argument
+  meaning_id: argumen
+  usage_note: 'Alasan yang mendukung posisi. Contoh: "What''s the main argument for the proposal?"'
+- word: improve
+  meaning_id: meningkatkan/memperbaiki
+  usage_note: 'Membuat sesuatu menjadi lebih baik. Contoh: "The core claim is that modularization will
+    improve delivery speed."'
+- word: proposal
+  meaning_id: usulan
+  usage_note: 'Ide atau rencana yang diajukan. Contoh: "What''s the main argument for the proposal?"'
+- word: benefit
+  meaning_id: manfaat
+  usage_note: 'Dampak positif dari pilihan. Contoh: "In short, the benefits outweigh the risks."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "In short, the benefits outweigh the risks."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: 'Hal yang membuat seseorang ragu. Contoh: "A common concern is fragmentation."'

@@ -1,0 +1,23 @@
+vocabulary:
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "Just to confirm, I''ll send the summary and ask
+    if anything is missing."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Can you summarize the meeting?"'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "The decision is to propose a phased
+    rollout with clear metrics."'
+- word: summary
+  meaning_id: ringkasan
+  usage_note: 'Versi singkat dari informasi utama. Contoh: "Just to confirm, I''ll send the summary and
+    ask if anything is missing."'
+- word: client
+  meaning_id: klien
+  usage_note: 'Pihak yang menerima layanan profesional. Contoh: "Sure. So, to summarize: the timeline
+    is tight and clients are sensitive to change."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: 'Hal yang membuat seseorang ragu. Contoh: "What concerns remain?"'

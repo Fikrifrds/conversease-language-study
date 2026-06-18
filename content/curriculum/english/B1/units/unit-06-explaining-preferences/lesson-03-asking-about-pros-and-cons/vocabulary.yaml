@@ -1,0 +1,20 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Overall, it depends on your work style."'
+- word: preference
+  meaning_id: preferensi
+  usage_note: 'Pilihan yang lebih disukai. Contoh: "What''s your preference?"'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "I prefer a mix. I work remotely
+    most days."'
+- word: pros and cons
+  meaning_id: kelebihan dan kekurangan
+  usage_note: 'Sisi baik dan buruk dari pilihan. Contoh: "What are the pros and cons?"'
+- word: overall
+  meaning_id: secara keseluruhan
+  usage_note: 'Dipakai saat memberi ringkasan umum. Contoh: "Overall, it depends."'
+- word: advantage
+  meaning_id: keunggulan
+  usage_note: 'Sisi positif dari sebuah pilihan. Contoh: "The advantage is you save time."'

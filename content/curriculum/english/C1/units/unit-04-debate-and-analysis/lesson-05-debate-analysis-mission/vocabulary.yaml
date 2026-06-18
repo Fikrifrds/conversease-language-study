@@ -1,0 +1,23 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''m not sure that follows. Could there
+    be another explanation, like unclear copy or missing reassurance?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "This is speculation. Why act now?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Let me be clear: we have indicators, not
+    proof yet. However, the key point is waiting increases risk. We run a pilot this week and review results
+    before scaling."'
+- word: seem
+  meaning_id: terlihat/terkesan
+  usage_note: Dipakai untuk kesan yang belum pasti.
+- word: seems
+  meaning_id: terlihat/terkesan
+  usage_note: Bentuk present untuk he/she/it.
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "We should cut onboarding
+    steps. Fewer steps always increase conversion."'

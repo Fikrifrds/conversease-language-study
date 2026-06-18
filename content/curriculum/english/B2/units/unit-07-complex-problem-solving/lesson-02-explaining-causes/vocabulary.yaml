@@ -1,0 +1,20 @@
+vocabulary:
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "Let''s run a small A/B test."'
+- word: compare
+  meaning_id: membandingkan
+  usage_note: 'Melihat perbedaan dua pilihan. Contoh: "Let''s compare load times and run a small A/B test."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "How can we confirm?"'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Why do you think billing complaints are up?"'
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "Why do you think billing complaints
+    are up?"'
+- word: cause
+  meaning_id: penyebab
+  usage_note: 'Alasan sesuatu terjadi. Contoh: "One possible cause is the new checkout design."'

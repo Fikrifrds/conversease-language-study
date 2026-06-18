@@ -1,0 +1,16 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. When will you do it?"'
+- word: monday
+  meaning_id: Senin
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "Monday, Wednesday, and Friday."'
+- word: wednesday
+  meaning_id: Rabu
+  usage_note: 'Nama hari; gunakan on sebelum nama hari. Contoh: "Monday, Wednesday, and Friday."'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "I''m going to keep it simple."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Let''s set a simple plan."'

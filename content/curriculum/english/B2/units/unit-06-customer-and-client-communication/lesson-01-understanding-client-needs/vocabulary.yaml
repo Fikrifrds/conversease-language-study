@@ -1,0 +1,22 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "We want to improve our onboarding experience."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks. Could you share more about the
+    biggest pain point today?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Thanks. Could you share more about
+    the biggest pain point today?"'
+- word: experience
+  meaning_id: pengalaman
+  usage_note: 'Hal yang pernah dialami. Contoh: "We want to improve our onboarding experience."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Could you share more about the biggest
+    pain point?"'
+- word: improve
+  meaning_id: meningkatkan/memperbaiki
+  usage_note: 'Membuat sesuatu menjadi lebih baik. Contoh: "We want to improve our onboarding experience."'

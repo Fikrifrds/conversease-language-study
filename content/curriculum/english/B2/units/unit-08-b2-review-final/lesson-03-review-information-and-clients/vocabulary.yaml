@@ -1,0 +1,24 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll share an update
+    today, and we''ll confirm a revised timeline by Friday."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "Next steps are: I''ll share an update today, and
+    we''ll confirm a revised timeline by Friday."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Next steps are: I''ll share an update today,
+    and we''ll confirm a revised timeline by Friday."'
+- word: delay
+  meaning_id: keterlambatan
+  usage_note: 'Saat sesuatu terjadi lebih lambat dari jadwal. Contoh: "Clients are worried about delays."'
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "We saw a report saying complaints
+    are up. Is it reliable?"'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Next steps are: I''ll share an update
+    today, and we''ll confirm a revised timeline by Friday."'

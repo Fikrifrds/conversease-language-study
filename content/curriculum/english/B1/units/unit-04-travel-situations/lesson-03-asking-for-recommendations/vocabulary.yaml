@@ -1,0 +1,13 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "Is it far from here?"'
+- word: straight
+  meaning_id: lurus
+  usage_note: 'Dipakai dalam instruksi arah. Contoh: "Go straight and turn left at the second corner."'
+- word: recommendation
+  meaning_id: rekomendasi
+  usage_note: 'Saran pilihan yang dianggap baik. Contoh: "Do you have any recommendations for dinner?"'
+- word: looking
+  meaning_id: terlihat/sedang melihat
+  usage_note: 'Bentuk -ing dari look. Contoh: "I''m looking for something local."'

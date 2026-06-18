@@ -1,0 +1,15 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "There''s a problem with the login
+    page."'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "We could roll back now because it''s
+    quick."'
+- word: quick
+  meaning_id: 'bagian dari frasa: Cek cepat: masalahnya apa?'
+  usage_note: 'Muncul dalam frasa lesson: "Quick check: what''s the issue?"'
+- word: roll
+  meaning_id: 'bagian dari frasa: Kita bisa rollback sekarang karena cepat.'
+  usage_note: 'Muncul dalam frasa lesson: "We could roll back now because it''s quick."'

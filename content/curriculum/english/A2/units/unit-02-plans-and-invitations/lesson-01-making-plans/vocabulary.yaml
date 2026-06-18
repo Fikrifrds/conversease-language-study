@@ -1,0 +1,20 @@
+vocabulary:
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Where should we meet?"'
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Let''s get coffee after work."'
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "Let''s meet at the cafe near
+    the station."'
+- word: near
+  meaning_id: dekat
+  usage_note: 'Dipakai untuk menjelaskan jarak yang dekat. Contoh: "Let''s meet at the cafe near the station."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Are you free tomorrow?"'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "Tomorrow? Yes, I think so. Why?"'

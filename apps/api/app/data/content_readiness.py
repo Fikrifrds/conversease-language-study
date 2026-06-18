@@ -63,7 +63,6 @@ REQUIRED_CONTENT_ITEMS = (
         "filename": "vocabulary.yaml",
         "tracker_column": None,
         "is_audio": False,
-        "languages": ("arabic",),
     },
     {
         "key": "grammar",

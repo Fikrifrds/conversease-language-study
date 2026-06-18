@@ -1,0 +1,23 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "Would that work for you?"'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "I propose we do a small pilot first."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Yes, that works for me. I''ll share the
+    pilot plan tomorrow morning."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "How should we handle the launch plan? Marketing keeps
+    asking me for a firm date."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "How about we run it for two weeks and review
+    the results? Two weeks is enough to see real usage patterns."'
+- word: delay
+  meaning_id: keterlambatan
+  usage_note: 'Saat sesuatu terjadi lebih lambat dari jadwal. Contoh: "Would that delay the full launch?
+    That''s my main worry here."'

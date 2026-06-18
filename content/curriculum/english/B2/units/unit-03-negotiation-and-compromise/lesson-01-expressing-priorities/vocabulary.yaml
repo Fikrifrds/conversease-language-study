@@ -1,0 +1,16 @@
+vocabulary:
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "My top priority is keeping scope small so we can hit
+    the deadline."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "My top priority is keeping scope small so we can hit
+    the deadline."'
+- word: priority
+  meaning_id: prioritas
+  usage_note: 'Hal yang paling penting didahulukan. Contoh: "My top priority is shipping the core feature
+    safely."'
+- word: top
+  meaning_id: 'bagian dari frasa: Prioritas utamaku adalah rilis fitur utama dengan aman.'
+  usage_note: 'Muncul dalam frasa lesson: "My top priority is shipping the core feature safely."'

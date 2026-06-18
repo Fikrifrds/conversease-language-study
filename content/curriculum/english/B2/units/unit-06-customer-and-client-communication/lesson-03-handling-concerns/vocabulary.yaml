@@ -1,0 +1,20 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Okay, that helps."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "I''ll share a draft plan today."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "I''ll share a draft plan today."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "People might miss updates."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "That makes sense. To reduce the risk,
+    we can send a weekly summary and keep a monthly live meeting."'
+- word: reasonable
+  meaning_id: masuk akal
+  usage_note: 'Dipakai saat menyetujui ide yang terdengar baik. Contoh: "Sounds reasonable."'

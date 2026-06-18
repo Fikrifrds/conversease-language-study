@@ -1,0 +1,15 @@
+vocabulary:
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Sorry, can you repeat that,
+    please?"'
+- word: phone number
+  meaning_id: nomor telepon
+  usage_note: 'Dipakai saat bertukar kontak. Contoh: "My phone number is zero eight one three, two two
+    five five, nine zero one."'
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "Did you say two two five five?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Did you say two two five five?"'

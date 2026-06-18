@@ -1,0 +1,13 @@
+vocabulary:
+- word: repeat
+  meaning_id: mengulang
+  usage_note: 'Dipakai saat meminta lawan bicara mengatakan lagi. Contoh: "Can you repeat that, please?"'
+- word: phone number
+  meaning_id: nomor telepon
+  usage_note: 'Dipakai saat bertukar kontak. Contoh: "What is your phone number?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. We will send you a message."'
+- word: zero
+  meaning_id: 'bagian dari frasa: Nomornya nol delapan satu dua.'
+  usage_note: 'Muncul dalam frasa lesson: "It''s zero eight one two."'

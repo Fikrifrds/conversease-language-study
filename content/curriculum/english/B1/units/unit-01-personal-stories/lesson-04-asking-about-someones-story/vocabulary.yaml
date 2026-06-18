@@ -1,0 +1,13 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "We asked a local person for help."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "What happened next?"'
+- word: why
+  meaning_id: 'bagian dari frasa: Kenapa kamu pilih jalan itu?'
+  usage_note: 'Muncul dalam frasa lesson: "Why did you choose that route?"'
+- word: feel
+  meaning_id: 'bagian dari frasa: Gimana perasaanmu saat itu?'
+  usage_note: 'Muncul dalam frasa lesson: "How did you feel at that moment?"'

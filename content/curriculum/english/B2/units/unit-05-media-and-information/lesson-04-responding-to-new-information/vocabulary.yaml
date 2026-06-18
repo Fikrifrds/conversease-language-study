@@ -1,0 +1,21 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "It says the data sample was very
+    small."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to understand the methodology."'
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "It says the data sample was very small."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks. Then we can revise our conclusion."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Agreed. Can you share the link?"'
+- word: article
+  meaning_id: artikel
+  usage_note: 'Tulisan informatif di media atau publikasi. Contoh: "I found a report that contradicts
+    the article we read."'

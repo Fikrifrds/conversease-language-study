@@ -1,0 +1,24 @@
+vocabulary:
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll share a one-page
+    summary today, and we''ll align tomorrow."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Next steps are: I''ll share a one-page
+    summary today, and we''ll align tomorrow."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "So do you support the plan or not?"'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Next steps are: I''ll share a one-page
+    summary today, and we''ll align tomorrow."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "On balance, I support it, but I''d adjust the scope
+    to reduce risk."'
+- word: summary
+  meaning_id: ringkasan
+  usage_note: 'Versi singkat dari informasi utama. Contoh: "Next steps are: I''ll share a one-page summary
+    today, and we''ll align tomorrow."'

@@ -1,0 +1,21 @@
+vocabulary:
+- word: accept
+  meaning_id: menerima
+  usage_note: 'Menyetujui ajakan atau tawaran. Contoh: "If we accept speed as the priority, then we should
+    time-box a pilot and limit scope."'
+- word: driver
+  meaning_id: pengemudi
+  usage_note: 'Orang yang mengendarai kendaraan. Contoh: "You''re assuming reliability is the main driver."'
+- word: delay
+  meaning_id: keterlambatan
+  usage_note: 'Saat sesuatu terjadi lebih lambat dari jadwal. Contoh: "The core assumption is that incidents
+    cost more than delay."'
+- word: goal
+  meaning_id: tujuan
+  usage_note: 'Hal yang ingin dicapai. Contoh: "Let me frame this: the goal is reliability, not just speed."'
+- word: argument
+  meaning_id: argumen
+  usage_note: 'Alasan yang mendukung posisi. Contoh: "Give me the short version of your argument."'
+- word: counterpoint
+  meaning_id: sanggahan
+  usage_note: 'Poin yang menantang argumen. Contoh: "Any counterpoint?"'

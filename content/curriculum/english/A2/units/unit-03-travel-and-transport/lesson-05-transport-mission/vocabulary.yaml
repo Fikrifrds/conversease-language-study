@@ -1,0 +1,19 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "from platform 2."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like one ticket to Bandung, please."'
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Hi. Where are you going?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Great. Thank you."'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "Sure. How long is your train trip?"'
+- word: leave
+  meaning_id: berangkat/meninggalkan
+  usage_note: 'Dipakai untuk jadwal keberangkatan. Contoh: "It leaves at 6:30 pm."'

@@ -1,0 +1,13 @@
+vocabulary:
+- word: near
+  meaning_id: dekat
+  usage_note: 'Dipakai untuk menjelaskan jarak yang dekat. Contoh: "Is it near the office?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me."'
+- word: classroom
+  meaning_id: 'bagian dari frasa: Di mana ruang kelasnya?'
+  usage_note: 'Muncul dalam frasa lesson: "Where is the classroom?"'

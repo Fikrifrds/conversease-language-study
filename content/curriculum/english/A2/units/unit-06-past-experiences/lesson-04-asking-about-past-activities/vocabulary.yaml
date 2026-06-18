@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. Did you cook at home?"'
+- word: evening
+  meaning_id: malam/sore
+  usage_note: 'Bagian hari setelah afternoon. Contoh: "What did you do yesterday evening?"'
+- word: yesterday
+  meaning_id: kemarin
+  usage_note: 'Hari sebelum hari ini. Contoh: "What did you do yesterday evening?"'
+- word: cook
+  meaning_id: 'bagian dari frasa: Kamu masak di rumah?'
+  usage_note: 'Muncul dalam frasa lesson: "Did you cook at home?"'

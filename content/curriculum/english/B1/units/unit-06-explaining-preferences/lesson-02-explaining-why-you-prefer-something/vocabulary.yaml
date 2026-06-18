@@ -1,0 +1,15 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "The main reason is I don''t want to arrive
+    too late."'
+- word: reason
+  meaning_id: alasan
+  usage_note: 'Penjelasan mengapa sesuatu dipilih atau terjadi. Contoh: "The main reason is I don''t want
+    to arrive too late."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "I prefer the earlier flight."'
+- word: because
+  meaning_id: 'bagian dari frasa: Karena itu kasih kita lebih banyak waktu.'
+  usage_note: 'Muncul dalam frasa lesson: "Because it gives us more time."'

@@ -1,0 +1,17 @@
+vocabulary:
+- word: place
+  meaning_id: tempat
+  usage_note: 'Lokasi yang ingin dituju atau dijelaskan. Contoh: "We have two options for dinner: Sushi
+    Place or Noodle House."'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "It''s cheaper and faster."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "I think I prefer Noodle House."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "We have two options."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "Which do you prefer?"'

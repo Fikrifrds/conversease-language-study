@@ -1,0 +1,25 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Go ahead. I''d like to hear how you''re
+    framing it before we debate the details."'
+- word: platform
+  meaning_id: peron/platform
+  usage_note: 'Tempat menunggu kereta. Contoh: "Isn''t this approach too risky? You''re proposing to change
+    the platform while three teams are in the middle of delivery."'
+- word: wrong
+  meaning_id: salah/ada masalah
+  usage_note: 'Dipakai untuk menanyakan apa yang terjadi. Contoh: "Understood. And if it still goes wrong,
+    what''s the fallback?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "What I''d emphasize is that standards need
+    ownership and enforcement. Every guideline will have a named owner and a review cadence, not just
+    a document."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "What if teams ignore the standards once the pilot pressure
+    is off? That''s what happened with the last initiative."'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "Let me clarify what risk we''re accepting."'

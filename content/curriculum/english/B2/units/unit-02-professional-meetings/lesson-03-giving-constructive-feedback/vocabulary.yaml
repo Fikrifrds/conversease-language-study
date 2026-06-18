@@ -1,0 +1,16 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "It might help if you keep the intro under one minute."'
+- word: noticed
+  meaning_id: menyadari/memperhatikan
+  usage_note: 'Bentuk lampau dari notice. Contoh: "I noticed the introduction was a bit long."'
+- word: feedback
+  meaning_id: masukan
+  usage_note: 'Tanggapan untuk memperbaiki sesuatu. Contoh: "How did the demo go? Any feedback?"'
+- word: overall
+  meaning_id: secara keseluruhan
+  usage_note: 'Dipakai saat memberi ringkasan umum. Contoh: "Overall it was clear."'
+- word: impact
+  meaning_id: dampak
+  usage_note: 'Pengaruh atau akibat dari suatu tindakan. Contoh: "Oh, okay. What was the impact?"'

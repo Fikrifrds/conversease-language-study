@@ -1,0 +1,20 @@
+vocabulary:
+- word: schedule
+  meaning_id: jadwal
+  usage_note: 'Rencana waktu kegiatan. Contoh: "I''d like to add one point about the schedule."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to add one point."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "We''ll confirm the plan and share it with the team."'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "We''ll confirm the plan and share it with the team."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Any updates before we close?"'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "We''ll confirm the plan and share
+    it with the team."'

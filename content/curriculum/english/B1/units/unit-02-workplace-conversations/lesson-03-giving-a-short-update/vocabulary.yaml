@@ -1,0 +1,21 @@
+vocabulary:
+- word: going
+  meaning_id: pergi/menuju
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Quick update: how is the report
+    going?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks for the heads-up."'
+- word: update
+  meaning_id: kabar terbaru
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Quick update: how is the report going?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "One concern is time. I might need an extra
+    hour to review everything."'
+- word: progress
+  meaning_id: kemajuan
+  usage_note: 'Perkembangan menuju tujuan. Contoh: "I''m making good progress."'
+- word: summary
+  meaning_id: ringkasan
+  usage_note: 'Versi singkat dari informasi utama. Contoh: "I''m almost done with the summary."'

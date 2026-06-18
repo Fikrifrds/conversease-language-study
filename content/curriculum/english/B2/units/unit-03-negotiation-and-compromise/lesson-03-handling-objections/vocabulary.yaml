@@ -1,0 +1,22 @@
+vocabulary:
+- word: together
+  meaning_id: bersama
+  usage_note: 'Dipakai saat mengajak orang melakukan sesuatu bersama. Contoh: "Good question. What if
+    we define simple criteria and review them together?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Would it help if we limit reviews to high-risk changes
+    only?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Great. Let''s draft criteria today."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "I''m concerned this plan will slow us down."'
+- word: reasonable
+  meaning_id: masuk akal
+  usage_note: 'Dipakai saat menyetujui ide yang terdengar baik. Contoh: "That sounds reasonable."'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "Would it help if we limit reviews to high-risk
+    changes only?"'

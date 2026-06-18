@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice to meet you too."'
+- word: meet
+  meaning_id: bertemu
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Nice to meet you too."'
+- word: name
+  meaning_id: nama
+  usage_note: Dipakai saat memperkenalkan diri.
+- word: call
+  meaning_id: 'bagian dari frasa: Panggil saya ...'
+  usage_note: Muncul sebagai bagian dari frasa lesson.

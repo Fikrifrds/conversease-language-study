@@ -1,0 +1,20 @@
+vocabulary:
+- word: tell
+  meaning_id: memberi tahu/menceritakan
+  usage_note: 'Dipakai saat menyampaikan informasi kepada orang lain. Contoh: "Tell me about something
+    interesting that happened recently."'
+- word: place
+  meaning_id: tempat
+  usage_note: 'Lokasi yang ingin dituju atau dijelaskan. Contoh: "Finally, we found a great place to eat
+    and ended the day happily."'
+- word: direction
+  meaning_id: arah
+  usage_note: 'Petunjuk jalan atau posisi. Contoh: "I felt nervous, but after we asked for directions,
+    (sighs) I felt relieved."'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "Last weekend, I was in Bandung with
+    my cousin."'
+- word: happened
+  meaning_id: terjadi
+  usage_note: 'Bentuk lampau dari happen. Contoh: "Tell me about something interesting that happened recently."'

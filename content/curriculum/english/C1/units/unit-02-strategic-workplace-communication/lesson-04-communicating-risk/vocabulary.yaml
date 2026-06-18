@@ -1,0 +1,23 @@
+vocabulary:
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Leadership wants the briefing tomorrow, and
+    they expect a candid picture. What risks should we highlight to leadership?"'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Leadership wants the briefing tomorrow,
+    and they expect a candid picture. What risks should we highlight to leadership?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Let''s include a rollback plan."'
+- word: rollback
+  meaning_id: mengembalikan perubahan
+  usage_note: 'Istilah kerja untuk kembali ke kondisi sebelumnya. Contoh: "Let''s include a rollback plan."'
+- word: reasonable
+  meaning_id: masuk akal
+  usage_note: 'Dipakai saat menyetujui ide yang terdengar baik. Contoh: "There''s a reasonable chance,
+    given recent instability."'
+- word: happen
+  meaning_id: terjadi
+  usage_note: 'Dipakai saat menjelaskan peristiwa. Contoh: "And if it does happen, what''s the impact
+    in business terms?"'

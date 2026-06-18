@@ -1,0 +1,14 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "There''s a problem with the meeting
+    link."'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "My train is delayed."'
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "There''s a problem with the meeting link."'
+- word: impact
+  meaning_id: dampak
+  usage_note: 'Pengaruh atau akibat dari suatu tindakan. Contoh: "What''s the impact?"'

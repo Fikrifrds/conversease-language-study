@@ -1,0 +1,16 @@
+vocabulary:
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "It might help to start with appreciation, then ask
+    a question."'
+- word: disagree
+  meaning_id: tidak setuju
+  usage_note: 'Berbeda pendapat dengan sopan. Contoh: "So I shouldn''t disagree openly?"'
+- word: context
+  meaning_id: konteks
+  usage_note: 'Latar atau situasi yang membantu memahami topik. Contoh: "In our context, people tend to
+    be indirect when disagreeing in group settings."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: 'Hal yang membuat seseorang ragu. Contoh: "It''s generally expected that you raise concerns
+    one-on-one first."'

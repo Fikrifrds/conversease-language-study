@@ -1,0 +1,23 @@
+vocabulary:
+- word: from
+  meaning_id: dari
+  usage_note: 'Dipakai untuk asal kota atau negara. Contoh: "From your perspective, what''s the biggest
+    constraint?"'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "I''ll capture the decision and circulate
+    it today."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "Can we agree that we ship a smaller scope first?"'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "I''ll capture the decision and circulate
+    it today."'
+- word: reasonable
+  meaning_id: masuk akal
+  usage_note: 'Dipakai saat menyetujui ide yang terdengar baik. Contoh: "That sounds reasonable."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "To make sure we''re aligned, can
+    you share your top priority?"'

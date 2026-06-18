@@ -1,0 +1,19 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "If there''s a problem with my room,
+    could you help me?"'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "If there''s a problem with my room, could you help
+    me?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thanks. I have a reservation under Mina
+    Kim."'
+- word: train
+  meaning_id: kereta
+  usage_note: 'Transportasi rel. Contoh: "I''m running a bit late. My train is delayed."'
+- word: recommendation
+  meaning_id: rekomendasi
+  usage_note: 'Saran pilihan yang dianggap baik. Contoh: "Do you have any recommendations for dinner?"'

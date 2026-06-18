@@ -1,0 +1,13 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice. I want to watch it too."'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "I want to watch it too."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "What did you think?"'
+- word: story
+  meaning_id: 'bagian dari frasa: Ceritanya sederhana, tapi seru.'
+  usage_note: 'Muncul dalam frasa lesson: "The story is simple, but fun."'

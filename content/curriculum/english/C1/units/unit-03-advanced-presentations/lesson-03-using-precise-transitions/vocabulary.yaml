@@ -1,0 +1,23 @@
+vocabulary:
+- word: trade-off
+  meaning_id: kompromi pilihan
+  usage_note: 'Hal yang dikorbankan saat memilih opsi. Contoh: "That brings me to the key trade-off: speed
+    versus reliability."'
+- word: reliability
+  meaning_id: keandalan
+  usage_note: 'Tingkat bisa dipercaya atau stabilnya sesuatu. Contoh: "That brings me to the key trade-off:
+    speed versus reliability."'
+- word: crucial
+  meaning_id: sangat penting
+  usage_note: 'Dipakai untuk menekankan poin utama. Contoh: "What''s crucial here is that we set clear
+    standards early."'
+- word: standard
+  meaning_id: standar
+  usage_note: 'Ukuran atau aturan mutu yang disepakati. Contoh: "What''s crucial here is that we set clear
+    standards early."'
+- word: differently
+  meaning_id: dengan cara berbeda
+  usage_note: Dipakai saat menjelaskan ulang dengan kata lain.
+- word: connect
+  meaning_id: menghubungkan
+  usage_note: Menyambungkan satu ide ke ide lain.

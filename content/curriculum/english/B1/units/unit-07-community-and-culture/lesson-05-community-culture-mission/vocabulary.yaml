@@ -1,0 +1,16 @@
+vocabulary:
+- word: nice
+  meaning_id: ramah/menyenangkan
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "I''m not used to that, but it sounds nice."'
+- word: evening
+  meaning_id: malam/sore
+  usage_note: 'Bagian hari setelah afternoon. Contoh: "People usually eat outside in the evening, especially
+    on weekends."'
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "What is it like in your country during
+    big holidays?"'
+- word: weekend
+  meaning_id: akhir pekan
+  usage_note: 'Sabtu dan Minggu atau waktu libur mingguan. Contoh: "People usually eat outside in the
+    evening, especially on weekends."'

@@ -1,0 +1,21 @@
+vocabulary:
+- word: work
+  meaning_id: bekerja/pekerjaan
+  usage_note: 'Dipakai saat membicarakan pekerjaan. Contoh: "The biggest challenge is staying consistent
+    after work, so I''m keeping sessions short."'
+- word: cheaper
+  meaning_id: lebih murah
+  usage_note: 'Bentuk perbandingan dari cheap. Contoh: "I prefer option B because it''s cheaper."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "I prefer option B because it''s cheaper."'
+- word: goal
+  meaning_id: tujuan
+  usage_note: 'Hal yang ingin dicapai. Contoh: "What''s your goal this month?"'
+- word: challenge
+  meaning_id: tantangan
+  usage_note: 'Hal yang membuat sesuatu sulit. Contoh: "The biggest challenge is staying consistent."'
+- word: prefer
+  meaning_id: lebih memilih
+  usage_note: 'Dipakai untuk menyatakan pilihan yang disukai. Contoh: "I prefer option B because it''s
+    cheaper."'

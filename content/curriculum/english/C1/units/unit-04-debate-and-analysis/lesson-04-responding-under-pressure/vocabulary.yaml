@@ -1,0 +1,23 @@
+vocabulary:
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "So why should we act now?"'
+- word: review
+  meaning_id: meninjau ulang
+  usage_note: 'Memeriksa sesuatu dengan lebih teliti. Contoh: "We run a pilot this week and review results
+    before scaling."'
+- word: look
+  meaning_id: terlihat/melihat
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "If you look at the last four weeks, incident
+    volume has doubled."'
+- word: proposal
+  meaning_id: usulan
+  usage_note: 'Ide atau rencana yang diajukan. Contoh: "Fine. What''s your proposal?"'
+- word: risk
+  meaning_id: risiko
+  usage_note: 'Kemungkinan dampak negatif. Contoh: "I understand the concern. However, the key point is
+    that waiting increases risk."'
+- word: concern
+  meaning_id: kekhawatiran
+  usage_note: 'Hal yang membuat seseorang ragu. Contoh: "I understand the concern. However, the key point
+    is that waiting increases risk."'

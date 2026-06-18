@@ -1,0 +1,20 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "Could there be another explanation,
+    like unclear copy or missing reassurance at the payment step? Abandonment isn''t always about effort."'
+- word: wrong
+  meaning_id: salah/ada masalah
+  usage_note: 'Dipakai untuk menanyakan apa yang terjadi. Contoh: "I''m not sure that follows. What''s
+    the evidence for that claim? We''ve assumed it before and been wrong."'
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "Maybe. Although if that were true,
+    I''d expect complaints about trust, not about length."'
+- word: example
+  meaning_id: contoh
+  usage_note: 'Detail yang membuat argumen lebih jelas. Contoh: "For example, we reduced steps last quarter,
+    but conversion didn''t change."'
+- word: evidence
+  meaning_id: bukti
+  usage_note: 'Data atau contoh yang mendukung argumen. Contoh: "What''s the evidence for that claim?"'

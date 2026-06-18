@@ -1,0 +1,21 @@
+vocabulary:
+- word: tell
+  meaning_id: memberi tahu/menceritakan
+  usage_note: 'Dipakai saat menyampaikan informasi kepada orang lain. Contoh: "Okay. Could you tell me
+    your room number?"'
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "There''s a problem with my room."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "Thank you for your help."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you for your help."'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "Could you send someone to take a
+    look?"'
+- word: wrong
+  meaning_id: salah/ada masalah
+  usage_note: 'Dipakai untuk menanyakan apa yang terjadi. Contoh: "I''m sorry to hear that. What''s wrong?"'

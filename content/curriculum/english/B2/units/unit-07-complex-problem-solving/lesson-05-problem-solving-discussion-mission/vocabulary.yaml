@@ -1,0 +1,24 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "Let''s define the problem statement
+    first."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "Let''s define the problem statement first. Can we
+    agree on the scope?"'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "What are our options?"'
+- word: complaint
+  meaning_id: keluhan
+  usage_note: 'Pernyataan tentang masalah layanan atau produk. Contoh: "We need to fix billing complaints.
+    What should we do?"'
+- word: progress
+  meaning_id: kemajuan
+  usage_note: 'Perkembangan menuju tujuan. Contoh: "The main risk is slower progress if we over-scope.
+    We can mitigate it by setting clear metrics and a strict timeline."'
+- word: scope
+  meaning_id: ruang lingkup
+  usage_note: 'Batas topik atau pekerjaan. Contoh: "Let''s define the problem statement first. Can we
+    agree on the scope?"'

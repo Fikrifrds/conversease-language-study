@@ -1,0 +1,13 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "No problem."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you."'
+- word: send
+  meaning_id: 'bagian dari frasa: Bisa kirimkan linknya, tolong?'
+  usage_note: 'Muncul dalam frasa lesson: "Can you send me the link, please?"'
+- word: course
+  meaning_id: 'bagian dari frasa: Ya, tentu.'
+  usage_note: 'Muncul dalam frasa lesson: "Yes, of course."'

@@ -1,0 +1,16 @@
+vocabulary:
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "Option B is more robust, but it
+    takes two more weeks."'
+- word: solution
+  meaning_id: solusi
+  usage_note: 'Cara menyelesaikan masalah. Contoh: "Option B is a more robust solution, but it takes two
+    more weeks."'
+- word: option
+  meaning_id: opsi/pilihan
+  usage_note: 'Salah satu pilihan yang tersedia. Contoh: "We have two options."'
+- word: trade-off
+  meaning_id: kompromi pilihan
+  usage_note: 'Hal yang dikorbankan saat memilih opsi. Contoh: "The trade-off is speed versus long-term
+    stability."'

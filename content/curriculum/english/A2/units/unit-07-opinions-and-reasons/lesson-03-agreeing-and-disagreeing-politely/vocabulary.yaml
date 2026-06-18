@@ -1,0 +1,18 @@
+vocabulary:
+- word: place
+  meaning_id: tempat
+  usage_note: 'Lokasi yang ingin dituju atau dijelaskan. Contoh: "Maybe we can try another place next
+    time."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "I don''t think so."'
+- word: agree
+  meaning_id: setuju
+  usage_note: 'Menerima pendapat orang lain. Contoh: "I agree."'
+- word: try
+  meaning_id: mencoba
+  usage_note: 'Melakukan sesuatu untuk melihat hasilnya. Contoh: "Maybe we can try another place next
+    time."'
+- word: notice
+  meaning_id: menyadari/memperhatikan
+  usage_note: 'Melihat sesuatu yang penting. Contoh: "Oh, I didn''t notice."'

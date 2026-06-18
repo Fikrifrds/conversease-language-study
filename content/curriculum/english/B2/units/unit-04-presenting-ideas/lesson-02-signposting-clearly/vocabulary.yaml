@@ -1,0 +1,21 @@
+vocabulary:
+- word: problem
+  meaning_id: masalah
+  usage_note: 'Hal yang perlu dijelaskan atau diselesaikan. Contoh: "First, I''ll explain the problem."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Let me quickly walk you through the plan."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "Next, I''ll share the proposal."'
+- word: onboarding
+  meaning_id: proses orientasi
+  usage_note: 'Proses membantu orang baru mulai bekerja atau belajar. Contoh: "First, the problem is that
+    onboarding is inconsistent across teams."'
+- word: feedback
+  meaning_id: masukan
+  usage_note: 'Tanggapan untuk memperbaiki sesuatu. Contoh: "Finally, we can pilot it next week and collect
+    feedback."'
+- word: proposal
+  meaning_id: usulan
+  usage_note: 'Ide atau rencana yang diajukan. Contoh: "Next, I''ll share the proposal."'

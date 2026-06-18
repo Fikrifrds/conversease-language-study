@@ -1,0 +1,14 @@
+vocabulary:
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. Do you have this T-shirt in
+    black?"'
+- word: size
+  meaning_id: ukuran
+  usage_note: 'Ukuran pakaian atau barang. Contoh: "Do you have it in size M?"'
+- word: take
+  meaning_id: mengambil/memilih
+  usage_note: 'Dipakai saat memilih barang yang akan dibeli. Contoh: "I''ll take the blue one."'
+- word: black
+  meaning_id: 'bagian dari frasa: Ada ini warna hitam?'
+  usage_note: 'Muncul dalam frasa lesson: "Do you have this in black?"'

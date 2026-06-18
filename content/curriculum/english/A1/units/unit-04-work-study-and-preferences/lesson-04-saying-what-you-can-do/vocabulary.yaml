@@ -1,0 +1,13 @@
+vocabulary:
+- word: meeting
+  meaning_id: rapat
+  usage_note: 'Percakapan kerja dengan beberapa orang. Contoh: "Can you join a meeting in English?"'
+- word: try
+  meaning_id: mencoba
+  usage_note: 'Melakukan sesuatu untuk melihat hasilnya. Contoh: "Not yet, but I can try."'
+- word: speak
+  meaning_id: 'bagian dari frasa: Apakah kamu bisa berbicara bahasa Inggris?'
+  usage_note: 'Muncul dalam frasa lesson: "Can you speak English?"'
+- word: write
+  meaning_id: 'bagian dari frasa: Apakah kamu bisa menulis email sederhana?'
+  usage_note: 'Muncul dalam frasa lesson: "Can you write simple emails?"'

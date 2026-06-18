@@ -1,0 +1,14 @@
+vocabulary:
+- word: cafe
+  meaning_id: kafe
+  usage_note: 'Tempat untuk membeli minuman atau makanan ringan. Contoh: "Yes. I think the cafe next door
+    is better."'
+- word: think
+  meaning_id: berpikir/berpendapat
+  usage_note: 'Dipakai saat menyatakan pendapat. Contoh: "What do you think about this restaurant?"'
+- word: idea
+  meaning_id: ide
+  usage_note: 'Gagasan yang ingin disampaikan. Contoh: "Do you have another idea?"'
+- word: sure
+  meaning_id: 'bagian dari frasa: Aku kurang yakin.'
+  usage_note: 'Muncul dalam frasa lesson: "I''m not sure."'

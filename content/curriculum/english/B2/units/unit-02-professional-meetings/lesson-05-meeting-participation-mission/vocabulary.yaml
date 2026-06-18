@@ -1,0 +1,21 @@
+vocabulary:
+- word: like
+  meaning_id: suka
+  usage_note: 'Dipakai untuk menyatakan hal yang disukai. Contoh: "I''d like to bring up the timeline
+    for the next release."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Understood. Thanks for clarifying."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Any topics to discuss today?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "No, that''s out of scope for now."'
+- word: item
+  meaning_id: barang
+  usage_note: Benda yang ingin dibeli atau diminta.
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "To summarize, we agreed on the scope. Action items
+    are: I''ll update the tickets, and you''ll confirm the design handoff."'

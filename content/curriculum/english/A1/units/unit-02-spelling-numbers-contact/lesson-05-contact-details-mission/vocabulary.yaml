@@ -1,0 +1,19 @@
+vocabulary:
+- word: name
+  meaning_id: nama
+  usage_note: 'Dipakai saat memperkenalkan diri. Contoh: "How do you spell your name?"'
+- word: spell
+  meaning_id: mengeja
+  usage_note: 'Dipakai saat menyebut huruf satu per satu. Contoh: "How do you spell your name?"'
+- word: phone number
+  meaning_id: nomor telepon
+  usage_note: 'Dipakai saat bertukar kontak. Contoh: "What is your phone number?"'
+- word: email address
+  meaning_id: alamat email
+  usage_note: 'Dipakai saat memberikan kontak email. Contoh: "And your email address?"'
+- word: contact details
+  meaning_id: detail kontak
+  usage_note: 'Informasi seperti nomor telepon dan email. Contoh: "I need your contact details."'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Is everything correct?"'

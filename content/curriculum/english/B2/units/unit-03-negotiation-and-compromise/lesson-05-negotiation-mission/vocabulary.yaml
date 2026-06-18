@@ -1,0 +1,22 @@
+vocabulary:
+- word: small
+  meaning_id: kecil
+  usage_note: 'Ukuran yang tidak besar. Contoh: "I propose we run a small pilot for two weeks."'
+- word: help
+  meaning_id: bantuan
+  usage_note: 'Dipakai saat meminta bantuan. Contoh: "I understand the concern. Would it help if we prepare
+    in parallel?"'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "We need to decide our launch plan."'
+- word: quality
+  meaning_id: kualitas
+  usage_note: 'Tingkat mutu suatu barang atau layanan. Contoh: "My top priority is quality. What matters
+    most to you?"'
+- word: delay
+  meaning_id: keterlambatan
+  usage_note: 'Saat sesuatu terjadi lebih lambat dari jadwal. Contoh: "I''m concerned it will delay the
+    launch."'
+- word: look
+  meaning_id: terlihat/melihat
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "Then expanding if results look good."'

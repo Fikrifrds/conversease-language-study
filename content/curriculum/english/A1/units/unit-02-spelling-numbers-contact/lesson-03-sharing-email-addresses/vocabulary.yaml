@@ -1,0 +1,13 @@
+vocabulary:
+- word: spell
+  meaning_id: mengeja
+  usage_note: 'Dipakai saat menyebut huruf satu per satu. Contoh: "Can you spell that, please?"'
+- word: email address
+  meaning_id: alamat email
+  usage_note: 'Dipakai saat memberikan kontak email. Contoh: "What is your email address?"'
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Thank you. Is that correct?"'
+- word: example
+  meaning_id: contoh
+  usage_note: 'Detail yang membuat argumen lebih jelas. Contoh: "It''s ben dot rama at example dot com."'

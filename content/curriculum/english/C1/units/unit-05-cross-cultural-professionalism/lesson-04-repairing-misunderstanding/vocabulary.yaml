@@ -1,0 +1,22 @@
+vocabulary:
+- word: request
+  meaning_id: permintaan
+  usage_note: 'Cara meminta sesuatu dengan sopan. Contoh: "Just to clarify, my intent was to confirm the
+    constraints, not reject the request."'
+- word: apologize
+  meaning_id: meminta maaf
+  usage_note: 'Dipakai saat mengakui kesalahan kecil. Contoh: "Should we apologize?"'
+- word: now
+  meaning_id: sekarang
+  usage_note: 'Dipakai untuk menyatakan waktu saat ini. Contoh: "What should we do now?"'
+- word: confirm
+  meaning_id: mengonfirmasi
+  usage_note: 'Memastikan detail sudah benar. Contoh: "Just to clarify, my intent was to confirm the constraints,
+    not reject the request."'
+- word: share
+  meaning_id: membagikan/menyampaikan
+  usage_note: 'Dipakai saat menyampaikan ide atau informasi. Contoh: "I''ll draft it and share it in ten
+    minutes."'
+- word: client
+  meaning_id: klien
+  usage_note: 'Pihak yang menerima layanan profesional. Contoh: "The client seemed upset after your message."'

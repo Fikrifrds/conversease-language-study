@@ -1,0 +1,13 @@
+vocabulary:
+- word: thank
+  meaning_id: berterima kasih
+  usage_note: 'Dipakai saat mengucapkan terima kasih. Contoh: "Great. Thank you."'
+- word: excuse me
+  meaning_id: permisi
+  usage_note: 'Pembuka sopan untuk meminta perhatian. Contoh: "Excuse me. I''m looking for a phone charger."'
+- word: looking
+  meaning_id: terlihat/sedang melihat
+  usage_note: 'Bentuk -ing dari look. Contoh: "I''m looking for a phone charger."'
+- word: kind
+  meaning_id: 'bagian dari frasa: Jenis yang mana?'
+  usage_note: 'Muncul dalam frasa lesson: "What kind?"'

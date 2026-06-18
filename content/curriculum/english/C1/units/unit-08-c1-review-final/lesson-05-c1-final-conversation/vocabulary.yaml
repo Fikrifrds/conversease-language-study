@@ -1,0 +1,24 @@
+vocabulary:
+- word: say
+  meaning_id: mengatakan/menyebutkan
+  usage_note: 'Dipakai saat menyampaikan kata atau informasi. Contoh: "What I''m hearing is some fear
+    of visibility. When you say ''hesitant'', do you mean scope concerns or accountability concerns?"'
+- word: want
+  meaning_id: mau/ingin
+  usage_note: 'Dipakai untuk menyatakan keinginan. Contoh: "Leadership wants speed."'
+- word: today
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk membicarakan waktu sekarang. Contoh: "Next steps are: I''ll send a one-page
+    plan today, and we''ll align stakeholders tomorrow."'
+- word: tomorrow
+  meaning_id: besok
+  usage_note: 'Dipakai untuk rencana hari berikutnya. Contoh: "Next steps are: I''ll send a one-page plan
+    today, and we''ll align stakeholders tomorrow."'
+- word: plan
+  meaning_id: rencana
+  usage_note: 'Hal yang akan dilakukan. Contoh: "Next steps are: I''ll send a one-page plan today, and
+    we''ll align stakeholders tomorrow."'
+- word: decision
+  meaning_id: keputusan
+  usage_note: 'Pilihan akhir setelah mempertimbangkan opsi. Contoh: "The decision is to run a two-week
+    pilot with clear success criteria."'
