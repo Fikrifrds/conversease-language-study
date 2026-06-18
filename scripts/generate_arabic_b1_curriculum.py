@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Arabic B1 beta curriculum content.
+"""Generate Arabic B1 curriculum content.
 
 Arabic A1/A2 are the style baseline. B1 keeps the same file layout, but moves
 from short exchanges into connected explanations: stories, work updates,
@@ -86,7 +86,7 @@ def lesson(
         "lesson_key": key,
         "slug": slug,
         "title": title,
-        "status": "beta",
+        "status": "published",
         "situation": situation,
         "goal": goal,
         "grammar": grammar,
@@ -467,14 +467,14 @@ def write_level_files(units: list[dict[str, Any]]) -> None:
             "level_code": "B1",
             "course_slug": "arabic-b1-connected-conversations",
             "course_title": "Arabic Connected Conversations",
-            "access_tier": "pro_beta",
+            "access_tier": "pro",
             "target_lesson_count": 40,
             "quality_reference": "docs/arabic_content_standard.md",
             "units": [
                 {
                     "unit_key": unit["unit_key"],
                     "title": unit["title"],
-                    "status": "beta",
+                    "status": "published",
                     "main_conversation_outcome": unit["main_conversation_outcome"],
                     "lessons": [
                         {
@@ -545,7 +545,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
             "level_code": "B1",
             "title": unit["title"],
             "main_conversation_outcome": unit["main_conversation_outcome"],
-            "status": "beta",
+            "status": "published",
             "lessons": [item["lesson_key"] for item in unit["lessons"]],
         },
     )
@@ -733,8 +733,8 @@ def update_tracker(units: list[dict[str, Any]]) -> None:
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
-            row["review_status"] = ""
-            row["publish_status"] = "beta"
+            row["review_status"] = "ready"
+            row["publish_status"] = "published"
 
     with TRACKER_PATH.open("w", encoding="utf-8", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")

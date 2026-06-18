@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-06-past-experiences",
     "title": "Past Experiences",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Talk about recent activities, where you went, what happened, and how it felt."
     ),
@@ -30,7 +30,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-talking-about-yesterday",
             "slug": "arabic-talking-about-yesterday",
             "title": "Talking About Yesterday",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu bertemu teman setelah kelas dan menceritakan kegiatan kemarin "
                 "dengan kalimat pendek."
@@ -67,7 +67,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-saying-where-you-went",
             "slug": "arabic-saying-where-you-went",
             "title": "Saying Where You Went",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menceritakan tempat yang kamu datangi akhir pekan lalu: pasar, "
                 "taman, rumah teman, atau pusat kota."
@@ -105,7 +105,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-describing-a-simple-experience",
             "slug": "arabic-describing-a-simple-experience",
             "title": "Describing a Simple Experience",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menceritakan pengalaman sederhana di tempat umum: apa yang kamu "
                 "lihat, apa yang kamu lakukan, dan bagaimana rasanya."
@@ -143,7 +143,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-asking-about-past-activities",
             "slug": "arabic-asking-about-past-activities",
             "title": "Asking About Past Activities",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu ingin menjaga percakapan tetap berjalan dengan bertanya tentang "
                 "aktivitas masa lalu teman secara sopan dan natural."
@@ -181,7 +181,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-past-experience-mission",
             "slug": "arabic-past-experience-mission",
             "title": "Past Experience Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menceritakan pengalaman akhir pekan dan menjawab pertanyaan "
                 "lanjutan tentang tempat, teman, kegiatan, dan kesan."

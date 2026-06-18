@@ -3,207 +3,207 @@ language_code: ar
 level_code: C1
 course_slug: arabic-c1-advanced-fluency
 course_title: Arabic Advanced Fluency
-access_tier: pro_beta
+access_tier: pro
 target_lesson_count: 40
 quality_reference: docs/arabic_content_standard.md
 units:
 - unit_key: unit-01-nuanced-opinions
   title: Nuanced Opinions
-  status: beta
+  status: published
   main_conversation_outcome: Express nuanced opinions with precision and flexibility.
   lessons:
   - lesson_key: lesson-01-qualifying-your-opinion
     slug: arabic-c1-qualifying-your-opinion
     title: Qualifying Your Opinion
-    status: beta
+    status: published
   - lesson_key: lesson-02-expressing-certainty-and-doubt
     slug: arabic-c1-expressing-certainty-and-doubt
     title: Expressing Certainty and Doubt
-    status: beta
+    status: published
   - lesson_key: lesson-03-balancing-two-viewpoints
     slug: arabic-c1-balancing-two-viewpoints
     title: Balancing Two Viewpoints
-    status: beta
+    status: published
   - lesson_key: lesson-04-softening-disagreement
     slug: arabic-c1-softening-disagreement
     title: Softening Disagreement
-    status: beta
+    status: published
   - lesson_key: lesson-05-nuanced-opinion-mission
     slug: arabic-c1-nuanced-opinion-mission
     title: Nuanced Opinion Mission
-    status: beta
+    status: published
 - unit_key: unit-02-strategic-workplace-communication
   title: Strategic Workplace Communication
-  status: beta
+  status: published
   main_conversation_outcome: Communicate strategically in complex professional situations.
   lessons:
   - lesson_key: lesson-01-aligning-stakeholders
     slug: arabic-c1-aligning-stakeholders
     title: Aligning Stakeholders
-    status: beta
+    status: published
   - lesson_key: lesson-02-managing-expectations
     slug: arabic-c1-managing-expectations
     title: Managing Expectations
-    status: beta
+    status: published
   - lesson_key: lesson-03-handling-sensitive-feedback
     slug: arabic-c1-handling-sensitive-feedback
     title: Handling Sensitive Feedback
-    status: beta
+    status: published
   - lesson_key: lesson-04-communicating-risk
     slug: arabic-c1-communicating-risk
     title: Communicating Risk
-    status: beta
+    status: published
   - lesson_key: lesson-05-strategic-workplace-mission
     slug: arabic-c1-strategic-workplace-mission
     title: Strategic Workplace Mission
-    status: beta
+    status: published
 - unit_key: unit-03-advanced-presentations
   title: Advanced Presentations
-  status: beta
+  status: published
   main_conversation_outcome: Present complex ideas and handle challenging questions.
   lessons:
   - lesson_key: lesson-01-framing-a-complex-topic
     slug: arabic-c1-framing-a-complex-topic
     title: Framing a Complex Topic
-    status: beta
+    status: published
   - lesson_key: lesson-02-building-a-persuasive-flow
     slug: arabic-c1-building-a-persuasive-flow
     title: Building a Persuasive Flow
-    status: beta
+    status: published
   - lesson_key: lesson-03-using-precise-transitions
     slug: arabic-c1-using-precise-transitions
     title: Using Precise Transitions
-    status: beta
+    status: published
   - lesson_key: lesson-04-handling-challenging-questions
     slug: arabic-c1-handling-challenging-questions
     title: Handling Challenging Questions
-    status: beta
+    status: published
   - lesson_key: lesson-05-advanced-presentation-mission
     slug: arabic-c1-advanced-presentation-mission
     title: Advanced Presentation Mission
-    status: beta
+    status: published
 - unit_key: unit-04-debate-and-analysis
   title: Debate & Analysis
-  status: beta
+  status: published
   main_conversation_outcome: Analyze arguments and respond persuasively in debate-style conversations.
   lessons:
   - lesson_key: lesson-01-identifying-assumptions
     slug: arabic-c1-identifying-assumptions
     title: Identifying Assumptions
-    status: beta
+    status: published
   - lesson_key: lesson-02-challenging-an-argument
     slug: arabic-c1-challenging-an-argument
     title: Challenging an Argument
-    status: beta
+    status: published
   - lesson_key: lesson-03-presenting-evidence
     slug: arabic-c1-presenting-evidence
     title: Presenting Evidence
-    status: beta
+    status: published
   - lesson_key: lesson-04-responding-under-pressure
     slug: arabic-c1-responding-under-pressure
     title: Responding Under Pressure
-    status: beta
+    status: published
   - lesson_key: lesson-05-debate-analysis-mission
     slug: arabic-c1-debate-analysis-mission
     title: Debate Analysis Mission
-    status: beta
+    status: published
 - unit_key: unit-05-cross-cultural-professionalism
   title: Cross-cultural Professionalism
-  status: beta
+  status: published
   main_conversation_outcome: Communicate across cultures with tact, clarity, and professionalism.
   lessons:
   - lesson_key: lesson-01-reading-context
     slug: arabic-c1-reading-context
     title: Reading Context
-    status: beta
+    status: published
   - lesson_key: lesson-02-asking-tactful-questions
     slug: arabic-c1-asking-tactful-questions
     title: Asking Tactful Questions
-    status: beta
+    status: published
   - lesson_key: lesson-03-explaining-local-norms
     slug: arabic-c1-explaining-local-norms
     title: Explaining Local Norms
-    status: beta
+    status: published
   - lesson_key: lesson-04-repairing-misunderstanding
     slug: arabic-c1-repairing-misunderstanding
     title: Repairing Misunderstanding
-    status: beta
+    status: published
   - lesson_key: lesson-05-cross-cultural-mission
     slug: arabic-c1-cross-cultural-mission
     title: Cross-cultural Mission
-    status: beta
+    status: published
 - unit_key: unit-06-leadership-and-coaching
   title: Leadership & Coaching
-  status: beta
+  status: published
   main_conversation_outcome: Lead conversations, coach others, and guide decisions.
   lessons:
   - lesson_key: lesson-01-setting-direction
     slug: arabic-c1-setting-direction
     title: Setting Direction
-    status: beta
+    status: published
   - lesson_key: lesson-02-coaching-with-questions
     slug: arabic-c1-coaching-with-questions
     title: Coaching With Questions
-    status: beta
+    status: published
   - lesson_key: lesson-03-giving-actionable-feedback
     slug: arabic-c1-giving-actionable-feedback
     title: Giving Actionable Feedback
-    status: beta
+    status: published
   - lesson_key: lesson-04-guiding-a-decision
     slug: arabic-c1-guiding-a-decision
     title: Guiding a Decision
-    status: beta
+    status: published
   - lesson_key: lesson-05-leadership-coaching-mission
     slug: arabic-c1-leadership-coaching-mission
     title: Leadership Coaching Mission
-    status: beta
+    status: published
 - unit_key: unit-07-advanced-listening-response
   title: Advanced Listening & Response
-  status: beta
+  status: published
   main_conversation_outcome: Respond accurately to dense, fast, or indirect speech.
   lessons:
   - lesson_key: lesson-01-catching-implied-meaning
     slug: arabic-c1-catching-implied-meaning
     title: Catching Implied Meaning
-    status: beta
+    status: published
   - lesson_key: lesson-02-responding-to-long-turns
     slug: arabic-c1-responding-to-long-turns
     title: Responding to Long Turns
-    status: beta
+    status: published
   - lesson_key: lesson-03-summarizing-what-you-heard
     slug: arabic-c1-summarizing-what-you-heard
     title: Summarizing What You Heard
-    status: beta
+    status: published
   - lesson_key: lesson-04-asking-high-quality-follow-ups
     slug: arabic-c1-asking-high-quality-follow-ups
     title: Asking High-quality Follow-ups
-    status: beta
+    status: published
   - lesson_key: lesson-05-advanced-listening-mission
     slug: arabic-c1-advanced-listening-mission
     title: Advanced Listening Mission
-    status: beta
+    status: published
 - unit_key: unit-08-c1-review-final
   title: C1 Review & Final Conversation
-  status: beta
+  status: published
   main_conversation_outcome: Use C1 skills in complex professional and social conversations.
   lessons:
   - lesson_key: lesson-01-review-nuance-and-strategy
     slug: arabic-c1-review-nuance-and-strategy
     title: Review Nuance and Strategy
-    status: beta
+    status: published
   - lesson_key: lesson-02-review-presenting-and-debate
     slug: arabic-c1-review-presenting-and-debate
     title: Review Presenting and Debate
-    status: beta
+    status: published
   - lesson_key: lesson-03-review-leadership-and-listening
     slug: arabic-c1-review-leadership-and-listening
     title: Review Leadership and Listening
-    status: beta
+    status: published
   - lesson_key: lesson-04-c1-final-test-practice
     slug: arabic-c1-c1-final-test-practice
     title: C1 Final Test Practice
-    status: beta
+    status: published
   - lesson_key: lesson-05-c1-final-conversation
     slug: arabic-c1-c1-final-conversation
     title: C1 Final Conversation
-    status: beta
+    status: published

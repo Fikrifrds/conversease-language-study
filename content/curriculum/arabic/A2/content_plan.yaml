@@ -3,214 +3,214 @@ language_code: ar
 level_code: A2
 course_slug: arabic-a2-everyday-conversations
 course_title: Arabic Everyday Conversations
-access_tier: pro_beta
+access_tier: pro
 target_lesson_count: 40
 quality_reference: docs/arabic_content_standard.md
 units:
 - unit_key: unit-01-social-follow-up
   title: Social Follow-up
-  status: beta
+  status: published
   main_conversation_outcome: Keep a short Arabic conversation going with follow-up questions, reactions,
     and simple personal details.
   lessons:
   - lesson_key: lesson-01-reconnecting-after-class
     slug: arabic-reconnecting-after-class
     title: Reconnecting After Class
-    status: beta
+    status: published
   - lesson_key: lesson-02-asking-follow-up-questions
     slug: arabic-asking-follow-up-questions
     title: Asking Follow-up Questions
-    status: beta
+    status: published
   - lesson_key: lesson-03-talking-about-the-weekend
     slug: arabic-talking-about-the-weekend
     title: Talking About the Weekend
-    status: beta
+    status: published
   - lesson_key: lesson-04-reacting-with-interest
     slug: arabic-reacting-with-interest
     title: Reacting With Interest
-    status: beta
+    status: published
   - lesson_key: lesson-05-social-follow-up-mission
     slug: arabic-social-follow-up-mission
     title: Social Follow-up Mission
-    status: beta
+    status: published
 - unit_key: unit-02-plans-invitations
   title: Plans & Invitations
-  status: beta
+  status: published
   main_conversation_outcome: Invite someone, accept or decline politely, reschedule, and confirm time
     and place in Arabic.
   lessons:
   - lesson_key: lesson-01-making-a-simple-plan
     slug: arabic-making-a-simple-plan
     title: Making a Simple Plan
-    status: beta
+    status: published
   - lesson_key: lesson-02-inviting-someone
     slug: arabic-inviting-someone
     title: Inviting Someone
-    status: beta
+    status: published
   - lesson_key: lesson-03-accepting-and-declining
     slug: arabic-accepting-and-declining
     title: Accepting and Declining
-    status: beta
+    status: published
   - lesson_key: lesson-04-rescheduling-politely
     slug: arabic-rescheduling-politely
     title: Rescheduling Politely
-    status: beta
+    status: published
   - lesson_key: lesson-05-invitation-mission
     slug: arabic-invitation-mission
     title: Invitation Mission
-    status: beta
+    status: published
 - unit_key: unit-03-transport-travel
   title: Transport & Travel
-  status: beta
+  status: published
   main_conversation_outcome: Ask about transport, tickets, departure time, directions, and simple travel
     help.
   lessons:
   - lesson_key: lesson-01-buying-a-ticket
     slug: arabic-buying-a-ticket
     title: Buying a Ticket
-    status: beta
+    status: published
   - lesson_key: lesson-02-asking-about-departure-time
     slug: arabic-asking-about-departure-time
     title: Asking About Departure Time
-    status: beta
+    status: published
   - lesson_key: lesson-03-checking-directions
     slug: arabic-checking-directions
     title: Checking Directions
-    status: beta
+    status: published
   - lesson_key: lesson-04-talking-to-a-driver
     slug: arabic-talking-to-a-driver
     title: Talking to a Driver
-    status: beta
+    status: published
   - lesson_key: lesson-05-transport-travel-mission
     slug: arabic-transport-travel-mission
     title: Transport and Travel Mission
-    status: beta
+    status: published
 - unit_key: unit-04-shopping-services
   title: Shopping & Services
-  status: beta
+  status: published
   main_conversation_outcome: Ask for items, compare simple options, request service help, and confirm
     details.
   lessons:
   - lesson_key: lesson-01-asking-for-an-item
     slug: arabic-asking-for-an-item
     title: Asking for an Item
-    status: beta
+    status: published
   - lesson_key: lesson-02-asking-about-size-and-color
     slug: arabic-asking-about-size-and-color
     title: Asking About Size and Color
-    status: beta
+    status: published
   - lesson_key: lesson-03-comparing-simple-options
     slug: arabic-comparing-simple-options
     title: Comparing Simple Options
-    status: beta
+    status: published
   - lesson_key: lesson-04-requesting-service-help
     slug: arabic-requesting-service-help
     title: Requesting Service Help
-    status: beta
+    status: published
   - lesson_key: lesson-05-shopping-service-mission
     slug: arabic-shopping-service-mission
     title: Shopping Service Mission
-    status: beta
+    status: published
 - unit_key: unit-05-health-appointments
   title: Health & Appointments
-  status: beta
+  status: published
   main_conversation_outcome: Describe simple symptoms, make appointments, and confirm basic health service
     details.
   lessons:
   - lesson_key: lesson-01-saying-how-you-feel
     slug: arabic-saying-how-you-feel
     title: Saying How You Feel
-    status: beta
+    status: published
   - lesson_key: lesson-02-describing-simple-symptoms
     slug: arabic-describing-simple-symptoms
     title: Describing Simple Symptoms
-    status: beta
+    status: published
   - lesson_key: lesson-03-making-an-appointment
     slug: arabic-making-an-appointment
     title: Making an Appointment
-    status: beta
+    status: published
   - lesson_key: lesson-04-confirming-appointment-details
     slug: arabic-confirming-appointment-details
     title: Confirming Appointment Details
-    status: beta
+    status: published
   - lesson_key: lesson-05-health-appointment-mission
     slug: arabic-health-appointment-mission
     title: Health Appointment Mission
-    status: beta
+    status: published
 - unit_key: unit-06-past-experiences
   title: Past Experiences
-  status: beta
+  status: published
   main_conversation_outcome: Talk about recent activities, where you went, what happened, and how it felt.
   lessons:
   - lesson_key: lesson-01-talking-about-yesterday
     slug: arabic-talking-about-yesterday
     title: Talking About Yesterday
-    status: beta
+    status: published
   - lesson_key: lesson-02-saying-where-you-went
     slug: arabic-saying-where-you-went
     title: Saying Where You Went
-    status: beta
+    status: published
   - lesson_key: lesson-03-describing-a-simple-experience
     slug: arabic-describing-a-simple-experience
     title: Describing a Simple Experience
-    status: beta
+    status: published
   - lesson_key: lesson-04-asking-about-past-activities
     slug: arabic-asking-about-past-activities
     title: Asking About Past Activities
-    status: beta
+    status: published
   - lesson_key: lesson-05-past-experience-mission
     slug: arabic-past-experience-mission
     title: Past Experience Mission
-    status: beta
+    status: published
 - unit_key: unit-07-opinions-reasons
   title: Opinions & Reasons
-  status: beta
+  status: published
   main_conversation_outcome: Give simple opinions, short reasons, agreement, disagreement, and preference
     in Arabic.
   lessons:
   - lesson_key: lesson-01-saying-what-you-think
     slug: arabic-saying-what-you-think
     title: Saying What You Think
-    status: beta
+    status: published
   - lesson_key: lesson-02-giving-simple-reasons
     slug: arabic-giving-simple-reasons
     title: Giving Simple Reasons
-    status: beta
+    status: published
   - lesson_key: lesson-03-agreeing-and-disagreeing-politely
     slug: arabic-agreeing-and-disagreeing-politely
     title: Agreeing and Disagreeing Politely
-    status: beta
+    status: published
   - lesson_key: lesson-04-asking-for-opinions
     slug: arabic-asking-for-opinions
     title: Asking for Opinions
-    status: beta
+    status: published
   - lesson_key: lesson-05-opinion-conversation-mission
     slug: arabic-opinion-conversation-mission
     title: Opinion Conversation Mission
-    status: beta
+    status: published
 - unit_key: unit-08-a2-review-final
   title: A2 Review & Final Conversation
-  status: beta
+  status: published
   main_conversation_outcome: Combine Arabic A2 social, planning, travel, service, health, past, and opinion
     skills in practical formal conversations.
   lessons:
   - lesson_key: lesson-01-review-social-and-plans
     slug: arabic-review-social-and-plans
     title: Review Social and Plans
-    status: beta
+    status: published
   - lesson_key: lesson-02-review-travel-and-services
     slug: arabic-review-travel-and-services
     title: Review Travel and Services
-    status: beta
+    status: published
   - lesson_key: lesson-03-review-health-and-past
     slug: arabic-review-health-and-past
     title: Review Health and Past
-    status: beta
+    status: published
   - lesson_key: lesson-04-a2-final-test-practice
     slug: arabic-a2-final-test-practice
     title: A2 Final Test Practice
-    status: beta
+    status: published
   - lesson_key: lesson-05-a2-final-conversation
     slug: arabic-a2-final-conversation
     title: A2 Final Conversation
-    status: beta
+    status: published

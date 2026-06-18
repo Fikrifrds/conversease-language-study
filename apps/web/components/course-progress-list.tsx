@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, CircleDot } from "lucide-react";
+import { ArrowRight, CheckCircle2, CircleDot, PlayCircle } from "lucide-react";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
 
@@ -74,38 +74,44 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
               </div>
             </div>
 
-            {unit.lessons.length ? (
+            {activeLessons.length ? (
               <div className="mt-5 grid gap-3 md:grid-cols-3">
-                {unit.lessons.map((lesson, lessonIndex) => {
+                {activeLessons.map((lesson, lessonIndex) => {
                   const lessonProgress = progressBySlug.get(lesson.slug);
                   const completed = lessonProgress?.progressStatus === "completed";
                   const inProgress = lessonProgress?.progressStatus === "in_progress";
+                  const statusLabel = completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
 
                   return (
                     <Link
                       key={lesson.slug}
                       href={`/lessons/${lesson.slug}`}
-                      className="focus-ring rounded-lg bg-paper p-4 hover:bg-mint"
+                      className="focus-ring group rounded-lg bg-paper p-4 transition hover:bg-mint"
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="text-xs font-semibold uppercase text-leaf">
                           {course.level} · U{unitIndex + 1} · L{lessonIndex + 1}
                         </span>
                         <span className="flex items-center gap-2">
-                          <span className="text-xs font-semibold uppercase text-coral">
-                            {completed ? "selesai" : inProgress ? "sedang berjalan" : lesson.status}
+                          <span className={`text-xs font-semibold uppercase ${
+                            completed ? "text-leaf" : inProgress ? "text-coral" : "text-ink/45"
+                          }`}>
+                            {statusLabel}
                           </span>
                           {completed ? (
                             <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
                           ) : inProgress ? (
                             <CircleDot className="h-4 w-4 text-coral" aria-hidden="true" />
                           ) : (
-                            <ArrowRight className="h-4 w-4 text-ink/40" aria-hidden="true" />
+                            <PlayCircle className="h-4 w-4 text-ink/40 group-hover:text-leaf" aria-hidden="true" />
                           )}
                         </span>
                       </div>
-                      <h3 className="mt-3 font-semibold">{lesson.title}</h3>
-                      <p className="mt-2 text-sm text-ink/60">{lesson.minutes} menit</p>
+                      <h3 className="mt-3 font-semibold text-ink">{lesson.title}</h3>
+                      <div className="mt-3 flex items-center justify-between gap-3 text-sm text-ink/60">
+                        <span>{lesson.minutes} menit</span>
+                        <ArrowRight className="h-4 w-4 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" />
+                      </div>
                     </Link>
                   );
                 })}

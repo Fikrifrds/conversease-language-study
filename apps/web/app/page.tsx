@@ -66,7 +66,7 @@ export default function HomePage() {
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-white/92">
               Belajar bahasa lewat percakapan terarah. Mulai dari English speaking, lalu masuk ke
-              Arabic beta untuk memahami dialog formal, instruksi kelas, dan bacaan pendek.
+              Arabic formal dengan dialog berharakat, audio, roleplay, dan latihan bertahap.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <div className="w-full sm:w-auto">

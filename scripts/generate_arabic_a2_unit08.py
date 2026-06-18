@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-08-a2-review-final",
     "title": "A2 Review & Final Conversation",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Combine Arabic A2 social, planning, travel, service, health, past, and "
         "opinion skills in practical formal conversations."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-review-social-and-plans",
             "slug": "arabic-review-social-and-plans",
             "title": "Review Social and Plans",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu bertemu teman setelah kelas, bertanya kabar, menanyakan rencana, "
                 "lalu menentukan waktu belajar bersama."
@@ -69,7 +69,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-review-travel-and-services",
             "slug": "arabic-review-travel-and-services",
             "title": "Review Travel and Services",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu membeli tiket, menanyakan arah, lalu meminta bantuan layanan "
                 "untuk barang kecil yang bermasalah."
@@ -107,7 +107,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-review-health-and-past",
             "slug": "arabic-review-health-and-past",
             "title": "Review Health and Past",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menghubungi klinik, menjelaskan gejala ringan, lalu menceritakan "
                 "aktivitas kemarin yang mungkin perlu dicatat."
@@ -144,7 +144,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-a2-final-test-practice",
             "slug": "arabic-a2-final-test-practice",
             "title": "A2 Final Test Practice",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu latihan simulasi tes A2: menjawab pertanyaan sosial, membuat "
                 "rencana, menceritakan pengalaman, dan memberi pendapat pendek."
@@ -182,7 +182,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-a2-final-conversation",
             "slug": "arabic-a2-final-conversation",
             "title": "A2 Final Conversation",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menyelesaikan percakapan A2 lengkap: bertemu teman, membahas "
                 "pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat."

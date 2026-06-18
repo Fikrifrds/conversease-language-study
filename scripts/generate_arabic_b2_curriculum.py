@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Arabic B2 beta curriculum content.
+"""Generate Arabic B2 curriculum content.
 
 B2 follows the English B2 professional-discussion scope while keeping the
 Arabic A1-B1 authoring standard: formal Arabic, harakat on listening scripts,
@@ -278,7 +278,7 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
         "lesson_key": lesson_key,
         "slug": slug,
         "title": title,
-        "status": "beta",
+        "status": "published",
         "focus": focus,
         "focus_id": focus_id,
         "situation": profile["situation"],
@@ -355,14 +355,14 @@ def write_level_files(units: list[dict[str, Any]]) -> None:
             "level_code": "B2",
             "course_slug": "arabic-b2-professional-discussions",
             "course_title": "Arabic Professional Discussions",
-            "access_tier": "pro_beta",
+            "access_tier": "pro",
             "target_lesson_count": 40,
             "quality_reference": "docs/arabic_content_standard.md",
             "units": [
                 {
                     "unit_key": unit["unit_key"],
                     "title": unit["title"],
-                    "status": "beta",
+                    "status": "published",
                     "main_conversation_outcome": unit["main_conversation_outcome"],
                     "lessons": [
                         {
@@ -430,7 +430,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
             "level_code": "B2",
             "title": unit["title"],
             "main_conversation_outcome": unit["main_conversation_outcome"],
-            "status": "beta",
+            "status": "published",
             "lessons": [item["lesson_key"] for item in unit["lessons"]],
         },
     )
@@ -610,8 +610,8 @@ def update_tracker(units: list[dict[str, Any]]) -> None:
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
-            row["review_status"] = ""
-            row["publish_status"] = "beta"
+            row["review_status"] = "ready"
+            row["publish_status"] = "published"
             missing_rows.append(row)
 
     if not missing_rows:

@@ -151,7 +151,7 @@ function formatStatus(status: string) {
     return "Published";
   }
   if (status === "planned") {
-    return "Beta Draft";
+    return "Draft";
   }
   return status;
 }

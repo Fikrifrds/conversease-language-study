@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Languages, Lock, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Languages, Lock, Sparkles } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { courses } from "@/lib/data";
 import { listCourses, type CourseSummary } from "@/lib/learning-api";
@@ -67,8 +67,8 @@ export default function CoursesPage() {
             <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan Conversease</h1>
             <p className="mt-3 leading-7 text-ink/70">
-              Pilih track bahasa sebelum masuk ke level. English adalah track aktif utama,
-              sementara Arabic tersedia sebagai beta dengan fokus percakapan formal sehari-hari.
+              Pilih track bahasa, lanjutkan level yang terbuka, dan belajar dari lesson yang sudah
+              lengkap dengan dialog, latihan respons, roleplay, dan audio.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export default function CoursesPage() {
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           <TrackSummaryCard
             title="English Track"
-            status="Active"
+            status="Ready"
             description="A1 sampai C1 untuk percakapan umum, kerja, presentasi, dan diskusi profesional."
             courses={courses.filter((course) => course.language === "english")}
             active={languageFilter === "english"}
@@ -102,8 +102,8 @@ export default function CoursesPage() {
           />
           <TrackSummaryCard
             title="Arabic Track"
-            status="Beta"
-            description="Arabic formal untuk sapaan, instruksi kelas, dialog umum, dan fondasi membaca pendek."
+            status="Ready"
+            description="Arabic formal A1 sampai C1 dengan dialog bertahap, harakat, audio, dan roleplay."
             courses={courses.filter((course) => course.language === "arabic")}
             active={languageFilter === "arabic"}
             onClick={() => setLanguageFilter("arabic")}
@@ -192,10 +192,8 @@ function CourseCard({
   access: Access & { prevLevel: string | null };
   loaded: boolean;
 }) {
-  const isBeta = course.accessTier === "pro_beta" || course.units.some((unit) =>
-    unit.lessons.some((lesson) => lesson.status === "beta")
-  );
   const badgeTone = course.language === "arabic" ? "bg-[#fff2dc] text-coral" : "bg-mint text-leaf";
+  const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
 
   if (access.accessible) {
     return (
@@ -203,11 +201,17 @@ function CourseCard({
         href={`/courses/${course.slug}`}
         className="focus-ring flex min-h-[260px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition-colors hover:border-leaf/40"
       >
-        <CourseCardHeader course={course} isBeta={isBeta} badgeTone={badgeTone} />
+        <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
         <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
-        <div className="mt-auto flex items-center justify-between pt-5">
-          <p className="text-xs font-semibold uppercase text-leaf">{course.units.length} unit</p>
-          <ArrowRight className="h-5 w-5 text-leaf" aria-hidden="true" />
+        <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
+            <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+            Siap dipelajari
+          </p>
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
+            Buka
+            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+          </span>
         </div>
       </Link>
     );
@@ -219,7 +223,7 @@ function CourseCard({
       className="flex min-h-[260px] flex-col rounded-lg border border-ink/10 bg-white p-5 text-ink/60 shadow-sm"
       aria-disabled="true"
     >
-      <CourseCardHeader course={course} isBeta={isBeta} badgeTone="bg-paper text-ink/55" muted />
+      <CourseCardHeader course={course} badgeTone="bg-paper text-ink/55" lessonCount={lessonCount} muted />
       <p className="mt-3 text-sm leading-6">{course.outcome}</p>
       <div className="mt-auto pt-5">
         {!loaded ? (
@@ -245,13 +249,13 @@ function CourseCard({
 
 function CourseCardHeader({
   course,
-  isBeta,
   badgeTone,
+  lessonCount,
   muted = false
 }: {
   course: Course;
-  isBeta: boolean;
   badgeTone: string;
+  lessonCount: number;
   muted?: boolean;
 }) {
   return (
@@ -264,11 +268,12 @@ function CourseCardHeader({
           <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
             {course.level}
           </span>
-          {isBeta ? (
-            <span className="rounded-lg bg-[#fff2dc] px-3 py-1 text-xs font-bold text-coral">
-              Beta
-            </span>
-          ) : null}
+          <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
+            {course.units.length} unit
+          </span>
+          <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
+            {lessonCount} lesson
+          </span>
         </div>
         <h3 className={`mt-4 break-words text-2xl font-semibold ${muted ? "text-ink/70" : "text-ink"}`}>
           {course.title}
@@ -298,15 +303,15 @@ function groupedCourses(languageFilter: LanguageFilter) {
     {
       language: "english",
       title: "English Track",
-      status: "Active curriculum",
+      status: "Ready curriculum",
       description: "Track utama untuk speaking dari A1 sampai C1.",
       courses: courses.filter((course) => course.language === "english")
     },
     {
       language: "arabic",
       title: "Arabic Track",
-      status: "Beta curriculum",
-      description: "Track Arabic formal untuk fondasi percakapan dan instruksi dasar.",
+      status: "Ready curriculum",
+      description: "Track Arabic formal lengkap dari A1 sampai C1 dengan audio dan roleplay.",
       courses: courses.filter((course) => course.language === "arabic")
     }
   ];

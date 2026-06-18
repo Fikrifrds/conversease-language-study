@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-04-shopping-services",
     "title": "Shopping & Services",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Ask for items, compare simple options, request service help, and confirm "
         "details."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-asking-for-an-item",
             "slug": "arabic-asking-for-an-item",
             "title": "Asking for an Item",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berada di toko alat tulis dan ingin meminta barang tertentu, "
                 "menanyakan pilihan warna, lalu memutuskan membeli satu barang."
@@ -67,7 +67,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-asking-about-size-and-color",
             "slug": "arabic-asking-about-size-and-color",
             "title": "Asking About Size and Color",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu membeli pakaian sederhana dan perlu menanyakan ukuran, warna, "
                 "serta izin mencoba barang."
@@ -104,7 +104,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-comparing-simple-options",
             "slug": "arabic-comparing-simple-options",
             "title": "Comparing Simple Options",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu membandingkan dua barang sederhana berdasarkan harga, kualitas, "
                 "dan kecocokan sebelum memilih."
@@ -140,7 +140,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-requesting-service-help",
             "slug": "arabic-requesting-service-help",
             "title": "Requesting Service Help",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu datang ke bagian layanan karena sebuah perangkat tidak bekerja "
                 "dan kamu perlu menjelaskan masalahnya dengan sopan."
@@ -177,7 +177,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-shopping-service-mission",
             "slug": "arabic-shopping-service-mission",
             "title": "Shopping Service Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu memilih barang di toko, membandingkan pilihan, lalu berpindah "
                 "ke bagian layanan untuk meminta bantuan perangkat."

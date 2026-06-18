@@ -3,7 +3,7 @@ level_code: B1
 title: Travel Situations
 main_conversation_outcome: Handle travel check-in, delays, recommendations, complaints, and practical
   travel requests.
-status: beta
+status: published
 lessons:
 - lesson-01-checking-in
 - lesson-02-explaining-a-delay

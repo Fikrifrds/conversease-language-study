@@ -2,7 +2,7 @@ unit_key: unit-06-food-shopping-prices
 level_code: A1
 title: Food, Shopping & Prices
 main_conversation_outcome: Order simple items, ask prices, and say what you want in Arabic.
-status: beta
+status: published
 lessons:
 - lesson-01-ordering-a-drink
 - lesson-02-asking-about-prices

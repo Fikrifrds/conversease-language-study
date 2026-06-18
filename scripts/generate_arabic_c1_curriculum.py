@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate Arabic C1 beta curriculum content.
+"""Generate Arabic C1 curriculum content.
 
 C1 is the final authored Arabic level in the current roadmap. It keeps the
 same operational structure as A1-B2, but raises the conversation target:
@@ -346,7 +346,7 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
         "lesson_key": lesson_key,
         "slug": slug,
         "title": title,
-        "status": "beta",
+        "status": "published",
         "focus": focus_ar,
         "focus_id": focus_id,
         "situation": profile["situation"],
@@ -416,14 +416,14 @@ def write_level_files(units: list[dict[str, Any]]) -> None:
             "level_code": "C1",
             "course_slug": "arabic-c1-advanced-fluency",
             "course_title": "Arabic Advanced Fluency",
-            "access_tier": "pro_beta",
+            "access_tier": "pro",
             "target_lesson_count": 40,
             "quality_reference": "docs/arabic_content_standard.md",
             "units": [
                 {
                     "unit_key": unit["unit_key"],
                     "title": unit["title"],
-                    "status": "beta",
+                    "status": "published",
                     "main_conversation_outcome": unit["main_conversation_outcome"],
                     "lessons": [
                         {"lesson_key": item["lesson_key"], "slug": item["slug"], "title": item["title"], "status": item["status"]}
@@ -486,7 +486,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
             "level_code": "C1",
             "title": unit["title"],
             "main_conversation_outcome": unit["main_conversation_outcome"],
-            "status": "beta",
+            "status": "published",
             "lessons": [item["lesson_key"] for item in unit["lessons"]],
         },
     )
@@ -607,8 +607,8 @@ def update_tracker(units: list[dict[str, Any]]) -> None:
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
-            row["review_status"] = ""
-            row["publish_status"] = "beta"
+            row["review_status"] = "ready"
+            row["publish_status"] = "published"
             missing_rows.append(row)
 
     if not missing_rows:

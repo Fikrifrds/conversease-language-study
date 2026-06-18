@@ -3,7 +3,7 @@ level_code: A1
 title: Arabic Foundations
 main_conversation_outcome: Start a simple formal Arabic conversation, follow basic study instructions,
   and ask for repetition when you do not understand.
-status: beta
+status: published
 lessons:
 - lesson-01-greetings-and-salam
 - lesson-02-name-and-origin

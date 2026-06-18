@@ -11,7 +11,7 @@ export default function PricingPage() {
           <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih paket yang paling pas</h1>
           <p className="mt-3 leading-7 text-ink/70">
-            Saat ini semua paket Pro sudah termasuk English aktif dan Arabic beta dalam satu akses.
+            Semua paket Pro sudah termasuk English dan Arabic lengkap dalam satu akses.
           </p>
         </div>
 

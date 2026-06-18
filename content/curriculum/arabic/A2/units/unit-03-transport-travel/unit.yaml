@@ -3,7 +3,7 @@ level_code: A2
 title: Transport & Travel
 main_conversation_outcome: Ask about transport, tickets, departure time, directions, and simple travel
   help.
-status: beta
+status: published
 lessons:
 - lesson-01-buying-a-ticket
 - lesson-02-asking-about-departure-time

@@ -3,7 +3,7 @@ level_code: A2
 title: Plans & Invitations
 main_conversation_outcome: Invite someone, accept or decline politely, reschedule, and confirm time and
   place in Arabic.
-status: beta
+status: published
 lessons:
 - lesson-01-making-a-simple-plan
 - lesson-02-inviting-someone

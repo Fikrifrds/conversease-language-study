@@ -22,7 +22,7 @@ SUBSCRIPTION_PLANS = [
         "monthly_minutes": 300,
         "features": [
             "All active English lessons",
-            "Arabic beta included",
+            "Full Arabic curriculum access",
             "Detailed Conversation Feedback",
             "Full A1 Level Conversation Test",
             "Monthly Conversation Coach practice quota",
@@ -36,7 +36,7 @@ SUBSCRIPTION_PLANS = [
         "monthly_minutes": 300,
         "features": [
             "Discounted Pro All Access",
-            "English active track and Arabic beta",
+            "English and Arabic active curriculum",
             "Monthly Conversation Coach quota reset",
             "Pro-only top-up support",
         ],
@@ -50,7 +50,7 @@ SUBSCRIPTION_PLANS = [
         "features": [
             "Best value",
             "Full active curriculum access",
-            "Arabic beta included",
+            "Full Arabic curriculum access",
             "Evaluation and skill report access",
         ],
     },

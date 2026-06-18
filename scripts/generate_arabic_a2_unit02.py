@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-02-plans-invitations",
     "title": "Plans & Invitations",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Invite someone, accept or decline politely, reschedule, and confirm time "
         "and place in Arabic."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-making-a-simple-plan",
             "slug": "arabic-making-a-simple-plan",
             "title": "Making a Simple Plan",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu membuat rencana sederhana dengan teman: menentukan kegiatan, "
                 "hari, waktu, dan tempat bertemu."
@@ -68,7 +68,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-inviting-someone",
             "slug": "arabic-inviting-someone",
             "title": "Inviting Someone",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat "
                 "mengapa kegiatan itu bermanfaat."
@@ -103,7 +103,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-accepting-and-declining",
             "slug": "arabic-accepting-and-declining",
             "title": "Accepting and Declining",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menerima satu ajakan dan menolak ajakan lain dengan sopan sambil "
                 "memberi alasan pendek."
@@ -140,7 +140,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-rescheduling-politely",
             "slug": "arabic-rescheduling-politely",
             "title": "Rescheduling Politely",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu "
                 "dengan sopan."
@@ -176,7 +176,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-invitation-mission",
             "slug": "arabic-invitation-mission",
             "title": "Invitation Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan "
                 "waktu, dan mengonfirmasi detail akhir."

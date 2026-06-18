@@ -3,207 +3,207 @@ language_code: ar
 level_code: B2
 course_slug: arabic-b2-professional-discussions
 course_title: Arabic Professional Discussions
-access_tier: pro_beta
+access_tier: pro
 target_lesson_count: 40
 quality_reference: docs/arabic_content_standard.md
 units:
 - unit_key: unit-01-clear-arguments
   title: Clear Arguments
-  status: beta
+  status: published
   main_conversation_outcome: Present and support an argument clearly in formal Arabic conversation.
   lessons:
   - lesson_key: lesson-01-stating-your-position
     slug: arabic-b2-stating-your-position
     title: Stating Your Position
-    status: beta
+    status: published
   - lesson_key: lesson-02-supporting-with-reasons
     slug: arabic-b2-supporting-with-reasons
     title: Supporting With Reasons
-    status: beta
+    status: published
   - lesson_key: lesson-03-using-examples
     slug: arabic-b2-using-examples
     title: Using Examples
-    status: beta
+    status: published
   - lesson_key: lesson-04-responding-to-counterpoints
     slug: arabic-b2-responding-to-counterpoints
     title: Responding to Counterpoints
-    status: beta
+    status: published
   - lesson_key: lesson-05-clear-argument-mission
     slug: arabic-b2-clear-argument-mission
     title: Clear Argument Mission
-    status: beta
+    status: published
 - unit_key: unit-02-professional-meetings
   title: Professional Meetings
-  status: beta
+  status: published
   main_conversation_outcome: Participate actively and professionally in meetings.
   lessons:
   - lesson_key: lesson-01-opening-a-meeting-point
     slug: arabic-b2-opening-a-meeting-point
     title: Opening a Meeting Point
-    status: beta
+    status: published
   - lesson_key: lesson-02-clarifying-scope
     slug: arabic-b2-clarifying-scope
     title: Clarifying Scope
-    status: beta
+    status: published
   - lesson_key: lesson-03-giving-constructive-feedback
     slug: arabic-b2-giving-constructive-feedback
     title: Giving Constructive Feedback
-    status: beta
+    status: published
   - lesson_key: lesson-04-summarizing-decisions
     slug: arabic-b2-summarizing-decisions
     title: Summarizing Decisions
-    status: beta
+    status: published
   - lesson_key: lesson-05-meeting-participation-mission
     slug: arabic-b2-meeting-participation-mission
     title: Meeting Participation Mission
-    status: beta
+    status: published
 - unit_key: unit-03-negotiation-and-compromise
   title: Negotiation & Compromise
-  status: beta
+  status: published
   main_conversation_outcome: Negotiate simple professional outcomes and find compromise.
   lessons:
   - lesson_key: lesson-01-expressing-priorities
     slug: arabic-b2-expressing-priorities
     title: Expressing Priorities
-    status: beta
+    status: published
   - lesson_key: lesson-02-making-a-proposal
     slug: arabic-b2-making-a-proposal
     title: Making a Proposal
-    status: beta
+    status: published
   - lesson_key: lesson-03-handling-objections
     slug: arabic-b2-handling-objections
     title: Handling Objections
-    status: beta
+    status: published
   - lesson_key: lesson-04-finding-middle-ground
     slug: arabic-b2-finding-middle-ground
     title: Finding Middle Ground
-    status: beta
+    status: published
   - lesson_key: lesson-05-negotiation-mission
     slug: arabic-b2-negotiation-mission
     title: Negotiation Mission
-    status: beta
+    status: published
 - unit_key: unit-04-presenting-ideas
   title: Presenting Ideas
-  status: beta
+  status: published
   main_conversation_outcome: Present an idea and answer questions naturally.
   lessons:
   - lesson_key: lesson-01-structuring-a-short-presentation
     slug: arabic-b2-structuring-a-short-presentation
     title: Structuring a Short Presentation
-    status: beta
+    status: published
   - lesson_key: lesson-02-signposting-clearly
     slug: arabic-b2-signposting-clearly
     title: Signposting Clearly
-    status: beta
+    status: published
   - lesson_key: lesson-03-explaining-benefits-and-risks
     slug: arabic-b2-explaining-benefits-and-risks
     title: Explaining Benefits and Risks
-    status: beta
+    status: published
   - lesson_key: lesson-04-answering-questions
     slug: arabic-b2-answering-questions
     title: Answering Questions
-    status: beta
+    status: published
   - lesson_key: lesson-05-idea-presentation-mission
     slug: arabic-b2-idea-presentation-mission
     title: Idea Presentation Mission
-    status: beta
+    status: published
 - unit_key: unit-05-media-and-information
   title: Media & Information
-  status: beta
+  status: published
   main_conversation_outcome: Discuss information, sources, and viewpoints critically.
   lessons:
   - lesson_key: lesson-01-summarizing-an-article
     slug: arabic-b2-summarizing-an-article
     title: Summarizing an Article
-    status: beta
+    status: published
   - lesson_key: lesson-02-discussing-reliable-sources
     slug: arabic-b2-discussing-reliable-sources
     title: Discussing Reliable Sources
-    status: beta
+    status: published
   - lesson_key: lesson-03-explaining-a-viewpoint
     slug: arabic-b2-explaining-a-viewpoint
     title: Explaining a Viewpoint
-    status: beta
+    status: published
   - lesson_key: lesson-04-responding-to-new-information
     slug: arabic-b2-responding-to-new-information
     title: Responding to New Information
-    status: beta
+    status: published
   - lesson_key: lesson-05-information-discussion-mission
     slug: arabic-b2-information-discussion-mission
     title: Information Discussion Mission
-    status: beta
+    status: published
 - unit_key: unit-06-customer-and-client-communication
   title: Customer & Client Communication
-  status: beta
+  status: published
   main_conversation_outcome: Handle client conversations with clarity, empathy, and professionalism.
   lessons:
   - lesson_key: lesson-01-understanding-client-needs
     slug: arabic-b2-understanding-client-needs
     title: Understanding Client Needs
-    status: beta
+    status: published
   - lesson_key: lesson-02-explaining-options
     slug: arabic-b2-explaining-options
     title: Explaining Options
-    status: beta
+    status: published
   - lesson_key: lesson-03-handling-concerns
     slug: arabic-b2-handling-concerns
     title: Handling Concerns
-    status: beta
+    status: published
   - lesson_key: lesson-04-confirming-next-steps
     slug: arabic-b2-confirming-next-steps
     title: Confirming Next Steps
-    status: beta
+    status: published
   - lesson_key: lesson-05-client-conversation-mission
     slug: arabic-b2-client-conversation-mission
     title: Client Conversation Mission
-    status: beta
+    status: published
 - unit_key: unit-07-complex-problem-solving
   title: Complex Problem Solving
-  status: beta
+  status: published
   main_conversation_outcome: Analyze a complex problem and discuss tradeoffs.
   lessons:
   - lesson_key: lesson-01-framing-the-problem
     slug: arabic-b2-framing-the-problem
     title: Framing the Problem
-    status: beta
+    status: published
   - lesson_key: lesson-02-explaining-causes
     slug: arabic-b2-explaining-causes
     title: Explaining Causes
-    status: beta
+    status: published
   - lesson_key: lesson-03-discussing-tradeoffs
     slug: arabic-b2-discussing-tradeoffs
     title: Discussing Tradeoffs
-    status: beta
+    status: published
   - lesson_key: lesson-04-recommending-a-solution
     slug: arabic-b2-recommending-a-solution
     title: Recommending a Solution
-    status: beta
+    status: published
   - lesson_key: lesson-05-problem-solving-discussion-mission
     slug: arabic-b2-problem-solving-discussion-mission
     title: Problem Solving Discussion Mission
-    status: beta
+    status: published
 - unit_key: unit-08-b2-review-final
   title: B2 Review & Final Discussion
-  status: beta
+  status: published
   main_conversation_outcome: Use B2 discussion skills in professional and social contexts.
   lessons:
   - lesson_key: lesson-01-review-arguments-and-meetings
     slug: arabic-b2-review-arguments-and-meetings
     title: Review Arguments and Meetings
-    status: beta
+    status: published
   - lesson_key: lesson-02-review-negotiation-and-presenting
     slug: arabic-b2-review-negotiation-and-presenting
     title: Review Negotiation and Presenting
-    status: beta
+    status: published
   - lesson_key: lesson-03-review-information-and-clients
     slug: arabic-b2-review-information-and-clients
     title: Review Information and Clients
-    status: beta
+    status: published
   - lesson_key: lesson-04-b2-final-test-practice
     slug: arabic-b2-b2-final-test-practice
     title: B2 Final Test Practice
-    status: beta
+    status: published
   - lesson_key: lesson-05-b2-final-discussion
     slug: arabic-b2-b2-final-discussion
     title: B2 Final Discussion
-    status: beta
+    status: published

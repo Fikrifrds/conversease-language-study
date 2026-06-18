@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-05-health-appointments",
     "title": "Health & Appointments",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Describe simple symptoms, make appointments, and confirm basic health "
         "service details."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-saying-how-you-feel",
             "slug": "arabic-saying-how-you-feel",
             "title": "Saying How You Feel",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu datang ke klinik dan perlu mengatakan kondisi umum dengan "
                 "sederhana sebelum petugas mencatat informasi awal."
@@ -68,7 +68,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-describing-simple-symptoms",
             "slug": "arabic-describing-simple-symptoms",
             "title": "Describing Simple Symptoms",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berbicara dengan petugas kesehatan dan menjelaskan gejala "
                 "ringan secara jelas: bagian tubuh, intensitas, dan durasi."
@@ -105,7 +105,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-making-an-appointment",
             "slug": "arabic-making-an-appointment",
             "title": "Making an Appointment",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menelepon klinik untuk membuat janji, memilih hari dan waktu, "
                 "serta menyebut nama untuk pendaftaran."
@@ -142,7 +142,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-confirming-appointment-details",
             "slug": "arabic-confirming-appointment-details",
             "title": "Confirming Appointment Details",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu ingin memastikan ulang detail janji: nama, tanggal, waktu, "
                 "lokasi, dan nomor kontak."
@@ -179,7 +179,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-health-appointment-mission",
             "slug": "arabic-health-appointment-mission",
             "title": "Health Appointment Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menjelaskan kondisi ringan, membuat janji, lalu mengonfirmasi "
                 "detail appointment dengan petugas klinik."

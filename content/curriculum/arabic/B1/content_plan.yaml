@@ -3,214 +3,214 @@ language_code: ar
 level_code: B1
 course_slug: arabic-b1-connected-conversations
 course_title: Arabic Connected Conversations
-access_tier: pro_beta
+access_tier: pro
 target_lesson_count: 40
 quality_reference: docs/arabic_content_standard.md
 units:
 - unit_key: unit-01-personal-stories
   title: Personal Stories
-  status: beta
+  status: published
   main_conversation_outcome: Tell connected personal stories with time, place, sequence, feeling, and
     follow-up details.
   lessons:
   - lesson_key: lesson-01-setting-the-scene
     slug: arabic-b1-setting-the-scene
     title: Setting the Scene
-    status: beta
+    status: published
   - lesson_key: lesson-02-telling-events-in-order
     slug: arabic-b1-telling-events-in-order
     title: Telling Events in Order
-    status: beta
+    status: published
   - lesson_key: lesson-03-describing-feelings
     slug: arabic-b1-describing-feelings
     title: Describing Feelings
-    status: beta
+    status: published
   - lesson_key: lesson-04-asking-about-someones-story
     slug: arabic-b1-asking-about-someones-story
     title: Asking About Someone's Story
-    status: beta
+    status: published
   - lesson_key: lesson-05-personal-story-mission
     slug: arabic-b1-personal-story-mission
     title: Personal Story Mission
-    status: beta
+    status: published
 - unit_key: unit-02-workplace-conversations
   title: Workplace Conversations
-  status: beta
+  status: published
   main_conversation_outcome: Explain tasks, clarify requests, give updates, join simple meetings, and
     close with action points.
   lessons:
   - lesson_key: lesson-01-explaining-your-task
     slug: arabic-b1-explaining-your-task
     title: Explaining Your Task
-    status: beta
+    status: published
   - lesson_key: lesson-02-asking-for-clarification
     slug: arabic-b1-asking-for-clarification
     title: Asking for Clarification
-    status: beta
+    status: published
   - lesson_key: lesson-03-giving-a-short-update
     slug: arabic-b1-giving-a-short-update
     title: Giving a Short Update
-    status: beta
+    status: published
   - lesson_key: lesson-04-joining-a-simple-meeting
     slug: arabic-b1-joining-a-simple-meeting
     title: Joining a Simple Meeting
-    status: beta
+    status: published
   - lesson_key: lesson-05-workplace-mission
     slug: arabic-b1-workplace-mission
     title: Workplace Mission
-    status: beta
+    status: published
 - unit_key: unit-03-problems-and-solutions
   title: Problems & Solutions
-  status: beta
+  status: published
   main_conversation_outcome: Explain a problem, suggest solutions, respond to advice, and make a simple
     decision.
   lessons:
   - lesson_key: lesson-01-describing-a-problem
     slug: arabic-b1-describing-a-problem
     title: Describing a Problem
-    status: beta
+    status: published
   - lesson_key: lesson-02-suggesting-a-solution
     slug: arabic-b1-suggesting-a-solution
     title: Suggesting a Solution
-    status: beta
+    status: published
   - lesson_key: lesson-03-responding-to-advice
     slug: arabic-b1-responding-to-advice
     title: Responding to Advice
-    status: beta
+    status: published
   - lesson_key: lesson-04-making-a-simple-decision
     slug: arabic-b1-making-a-simple-decision
     title: Making a Simple Decision
-    status: beta
+    status: published
   - lesson_key: lesson-05-problem-solving-mission
     slug: arabic-b1-problem-solving-mission
     title: Problem Solving Mission
-    status: beta
+    status: published
 - unit_key: unit-04-travel-situations
   title: Travel Situations
-  status: beta
+  status: published
   main_conversation_outcome: Handle travel check-in, delays, recommendations, complaints, and practical
     travel requests.
   lessons:
   - lesson_key: lesson-01-checking-in
     slug: arabic-b1-checking-in
     title: Checking In
-    status: beta
+    status: published
   - lesson_key: lesson-02-explaining-a-delay
     slug: arabic-b1-explaining-a-delay
     title: Explaining a Delay
-    status: beta
+    status: published
   - lesson_key: lesson-03-asking-for-recommendations
     slug: arabic-b1-asking-for-recommendations
     title: Asking for Recommendations
-    status: beta
+    status: published
   - lesson_key: lesson-04-handling-a-simple-complaint
     slug: arabic-b1-handling-a-simple-complaint
     title: Handling a Simple Complaint
-    status: beta
+    status: published
   - lesson_key: lesson-05-travel-situation-mission
     slug: arabic-b1-travel-situation-mission
     title: Travel Situation Mission
-    status: beta
+    status: published
 - unit_key: unit-05-goals-and-progress
   title: Goals & Progress
-  status: beta
+  status: published
   main_conversation_outcome: Talk about goals, progress, challenges, and next steps with connected reasons.
   lessons:
   - lesson_key: lesson-01-talking-about-goals
     slug: arabic-b1-talking-about-goals
     title: Talking About Goals
-    status: beta
+    status: published
   - lesson_key: lesson-02-explaining-progress
     slug: arabic-b1-explaining-progress
     title: Explaining Progress
-    status: beta
+    status: published
   - lesson_key: lesson-03-discussing-challenges
     slug: arabic-b1-discussing-challenges
     title: Discussing Challenges
-    status: beta
+    status: published
   - lesson_key: lesson-04-making-next-step-plans
     slug: arabic-b1-making-next-step-plans
     title: Making Next-step Plans
-    status: beta
+    status: published
   - lesson_key: lesson-05-goals-progress-mission
     slug: arabic-b1-goals-progress-mission
     title: Goals Progress Mission
-    status: beta
+    status: published
 - unit_key: unit-06-explaining-preferences
   title: Explaining Preferences
-  status: beta
+  status: published
   main_conversation_outcome: Compare options, explain preferences, ask about pros and cons, and reach
     agreement.
   lessons:
   - lesson_key: lesson-01-comparing-two-options
     slug: arabic-b1-comparing-two-options
     title: Comparing Two Options
-    status: beta
+    status: published
   - lesson_key: lesson-02-explaining-why-you-prefer-something
     slug: arabic-b1-explaining-why-you-prefer-something
     title: Explaining Why You Prefer Something
-    status: beta
+    status: published
   - lesson_key: lesson-03-asking-about-pros-and-cons
     slug: arabic-b1-asking-about-pros-and-cons
     title: Asking About Pros and Cons
-    status: beta
+    status: published
   - lesson_key: lesson-04-reaching-agreement
     slug: arabic-b1-reaching-agreement
     title: Reaching Agreement
-    status: beta
+    status: published
   - lesson_key: lesson-05-preference-discussion-mission
     slug: arabic-b1-preference-discussion-mission
     title: Preference Discussion Mission
-    status: beta
+    status: published
 - unit_key: unit-07-community-and-culture
   title: Community & Culture
-  status: beta
+  status: published
   main_conversation_outcome: Discuss community, habits, differences, and polite cultural questions in
     clear formal Arabic.
   lessons:
   - lesson_key: lesson-01-describing-your-community
     slug: arabic-b1-describing-your-community
     title: Describing Your Community
-    status: beta
+    status: published
   - lesson_key: lesson-02-talking-about-local-habits
     slug: arabic-b1-talking-about-local-habits
     title: Talking About Local Habits
-    status: beta
+    status: published
   - lesson_key: lesson-03-asking-about-culture
     slug: arabic-b1-asking-about-culture
     title: Asking About Culture
-    status: beta
+    status: published
   - lesson_key: lesson-04-being-polite-with-differences
     slug: arabic-b1-being-polite-with-differences
     title: Being Polite With Differences
-    status: beta
+    status: published
   - lesson_key: lesson-05-community-culture-mission
     slug: arabic-b1-community-culture-mission
     title: Community Culture Mission
-    status: beta
+    status: published
 - unit_key: unit-08-b1-review-final
   title: B1 Review & Final Conversation
-  status: beta
+  status: published
   main_conversation_outcome: Use B1 Arabic skills in connected conversations across stories, work, problems,
     travel, goals, and culture.
   lessons:
   - lesson_key: lesson-01-review-stories-and-work
     slug: arabic-b1-review-stories-and-work
     title: Review Stories and Work
-    status: beta
+    status: published
   - lesson_key: lesson-02-review-problems-and-travel
     slug: arabic-b1-review-problems-and-travel
     title: Review Problems and Travel
-    status: beta
+    status: published
   - lesson_key: lesson-03-review-goals-and-preferences
     slug: arabic-b1-review-goals-and-preferences
     title: Review Goals and Preferences
-    status: beta
+    status: published
   - lesson_key: lesson-04-b1-final-test-practice
     slug: arabic-b1-b1-final-test-practice
     title: B1 Final Test Practice
-    status: beta
+    status: published
   - lesson_key: lesson-05-b1-final-conversation
     slug: arabic-b1-b1-final-conversation
     title: B1 Final Conversation
-    status: beta
+    status: published

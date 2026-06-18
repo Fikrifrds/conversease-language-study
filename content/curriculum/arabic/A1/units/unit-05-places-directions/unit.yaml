@@ -2,7 +2,7 @@ unit_key: unit-05-places-directions
 level_code: A1
 title: Places & Directions
 main_conversation_outcome: Ask where places are and understand simple directions in Arabic.
-status: beta
+status: published
 lessons:
 - lesson-01-asking-where-a-place-is
 - lesson-02-simple-place-words

@@ -3,7 +3,7 @@ level_code: B1
 title: Problems & Solutions
 main_conversation_outcome: Explain a problem, suggest solutions, respond to advice, and make a simple
   decision.
-status: beta
+status: published
 lessons:
 - lesson-01-describing-a-problem
 - lesson-02-suggesting-a-solution

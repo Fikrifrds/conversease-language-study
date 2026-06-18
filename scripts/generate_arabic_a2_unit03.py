@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-03-transport-travel",
     "title": "Transport & Travel",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Ask about transport, tickets, departure time, directions, and simple "
         "travel help."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-buying-a-ticket",
             "slug": "arabic-buying-a-ticket",
             "title": "Buying a Ticket",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berada di loket stasiun dan ingin membeli tiket sederhana: "
                 "tujuan, jenis tiket, kelas, dan harga."
@@ -68,7 +68,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-asking-about-departure-time",
             "slug": "arabic-asking-about-departure-time",
             "title": "Asking About Departure Time",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu sudah punya tiket dan ingin memastikan jam keberangkatan, "
                 "peron, serta waktu tiba."
@@ -105,7 +105,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-checking-directions",
             "slug": "arabic-checking-directions",
             "title": "Checking Directions",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berada di terminal dan ingin memastikan arah menuju pintu, "
                 "peron, atau tempat tunggu tanpa salah jalur."
@@ -141,7 +141,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-talking-to-a-driver",
             "slug": "arabic-talking-to-a-driver",
             "title": "Talking to a Driver",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu naik taksi atau kendaraan online dan perlu memastikan tujuan, "
                 "waktu perjalanan, dan tempat turun."
@@ -178,7 +178,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-transport-travel-mission",
             "slug": "arabic-transport-travel-mission",
             "title": "Transport and Travel Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menyelesaikan perjalanan pendek: membeli tiket, mengecek jam "
                 "berangkat, mencari peron, lalu memastikan tujuan dengan sopir."

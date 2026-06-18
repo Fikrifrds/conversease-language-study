@@ -877,7 +877,7 @@ function ReadinessPanel({
     { label: "Implemented", value: overview.implementedLessonCount },
     { label: "Text ready", value: overview.textReadyCount },
     { label: "Audio ready", value: overview.audioReadyCount },
-    { label: "Beta ready", value: overview.betaReadyCount },
+    { label: "Content ready", value: overview.betaReadyCount },
     { label: "Production ready", value: overview.productionReadyCount }
   ];
 
@@ -2014,7 +2014,7 @@ function StatusPill({
 function readinessStatusLabel(status: string) {
   const labels: Record<string, string> = {
     production_ready: "production ready",
-    beta_ready_needs_audio: "beta ready, needs audio",
+    beta_ready_needs_audio: "content ready, needs audio",
     implemented_needs_content: "needs content",
     planned_missing_content: "planned"
   };

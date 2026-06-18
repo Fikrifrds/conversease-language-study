@@ -36,8 +36,8 @@ export const plans = [
     cadence: "1 bulan",
     access: "Pro All Access 1 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Akses penuh ke English aktif, Arabic beta, feedback detail, evaluasi level, dan progress report.",
-    features: ["English track aktif", "Arabic beta included", "Detailed Conversation Feedback", "Skill report dan progress"]
+    description: "Akses penuh ke English dan Arabic, feedback detail, evaluasi level, dan progress report.",
+    features: ["English track lengkap", "Arabic track lengkap", "Detailed Conversation Feedback", "Skill report dan progress"]
   },
   {
     key: "pro_3_months",
@@ -47,7 +47,7 @@ export const plans = [
     access: "Pro All Access 3 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Paket lebih hemat untuk menyelesaikan satu track dengan ritme belajar rutin.",
-    features: ["English track aktif", "Arabic beta included", "Detailed Conversation Feedback", "Pengingat renewal"]
+    features: ["English track lengkap", "Arabic track lengkap", "Detailed Conversation Feedback", "Pengingat renewal"]
   },
   {
     key: "pro_12_months",
@@ -57,7 +57,7 @@ export const plans = [
     access: "Pro All Access 12 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Best value untuk belajar konsisten lintas track, evaluasi level, dan review plan.",
-    features: ["English track aktif", "Arabic beta included", "Skill reports", "Review plan personal"]
+    features: ["English track lengkap", "Arabic track lengkap", "Skill reports", "Review plan personal"]
   }
 ];
 
@@ -29911,7 +29911,7 @@ export const courses = [
       level: "A1",
       title: "Arabic Foundations",
       outcome: "Learners can recognize and produce very simple Arabic phrases for greetings, introductions, classroom instructions, and asking for clarification, while beginning to understand short formal study-circle expressions.",
-      accessTier: "pro_beta",
+      accessTier: "pro",
       units: [
         {
           slug: "unit-01-fusha-foundations",
@@ -29922,31 +29922,31 @@ export const courses = [
             {
               slug: "arabic-formal-greetings",
               title: "Formal Greetings",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-name-and-origin",
               title: "Name and Origin",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-class-and-study-instructions",
               title: "Class and Study Instructions",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-when-you-do-not-understand",
               title: "Asking When You Do Not Understand",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-fusha-introduction-mission",
               title: "Arabic Introduction Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -29960,31 +29960,31 @@ export const courses = [
             {
               slug: "arabic-spelling-your-name",
               title: "Spelling Your Name",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-numbers-and-phone",
               title: "Arabic Numbers and Phone",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-sharing-email-addresses",
               title: "Sharing Email Addresses",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-to-repeat-a-letter",
               title: "Asking to Repeat a Letter",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-contact-details-mission",
               title: "Contact Details Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -29998,31 +29998,31 @@ export const courses = [
             {
               slug: "arabic-asking-the-time",
               title: "Asking the Time",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-days-of-the-week",
               title: "Days of the Week",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-talking-about-daily-routines",
               title: "Talking About Daily Routines",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-when",
               title: "Asking When",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-routine-and-time-mission",
               title: "Routine and Time Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30036,31 +30036,31 @@ export const courses = [
             {
               slug: "arabic-family-members",
               title: "Family Members",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-saying-what-you-do",
               title: "Saying What You Do",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-about-work-or-study",
               title: "Asking About Work or Study",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-likes-and-ability",
               title: "Likes and Ability",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-family-work-study-mission",
               title: "Family, Work, and Study Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30074,31 +30074,31 @@ export const courses = [
             {
               slug: "arabic-asking-where-a-place-is",
               title: "Asking Where a Place Is",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-simple-place-words",
               title: "Simple Place Words",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-understanding-simple-directions",
               title: "Understanding Simple Directions",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-how-to-get-there",
               title: "Asking How to Get There",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-finding-a-place-mission",
               title: "Finding a Place Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30112,31 +30112,31 @@ export const courses = [
             {
               slug: "arabic-ordering-a-drink",
               title: "Ordering a Drink",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-about-prices",
               title: "Asking About Prices",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-buying-a-simple-item",
               title: "Buying a Simple Item",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-saying-what-you-want",
               title: "Saying What You Want",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-cafe-and-shop-mission",
               title: "Cafe and Shop Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30150,31 +30150,31 @@ export const courses = [
             {
               slug: "arabic-saying-you-do-not-understand",
               title: "Saying You Do Not Understand",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-asking-for-help",
               title: "Asking for Help",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-making-simple-requests",
               title: "Making Simple Requests",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-apologizing-and-thanking",
               title: "Apologizing and Thanking",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-help-and-problem-mission",
               title: "Help and Problem Mission",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30188,31 +30188,31 @@ export const courses = [
             {
               slug: "arabic-review-introductions-and-contact",
               title: "Review Introductions and Contact",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-review-routine-and-study",
               title: "Review Routine and Study",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-review-places-and-shopping",
               title: "Review Places and Shopping",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-a1-final-test-practice",
               title: "A1 Final Test Practice",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
             {
               slug: "arabic-a1-final-conversation",
               title: "A1 Final Conversation",
-              status: "beta",
+              status: "published",
               minutes: 10
             },
           ]
@@ -30227,7 +30227,7 @@ export const courses = [
       level: "A2",
       title: "Arabic Everyday Conversations",
       outcome: "Learners can handle short everyday Arabic conversations, ask simple follow-up questions, make plans, describe simple past experiences, ask for service help, and give short reasons while maintaining clear formal Arabic pronunciation and basic reading support.",
-      accessTier: "pro_beta",
+      accessTier: "pro",
       units: [
         {
           slug: "unit-01-social-follow-up",
@@ -30238,31 +30238,31 @@ export const courses = [
             {
               slug: "arabic-reconnecting-after-class",
               title: "Reconnecting After Class",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-asking-follow-up-questions",
               title: "Asking Follow-up Questions",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-talking-about-the-weekend",
               title: "Talking About the Weekend",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-reacting-with-interest",
               title: "Reacting With Interest",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-social-follow-up-mission",
               title: "Social Follow-up Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30276,31 +30276,31 @@ export const courses = [
             {
               slug: "arabic-making-a-simple-plan",
               title: "Making a Simple Plan",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-inviting-someone",
               title: "Inviting Someone",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-accepting-and-declining",
               title: "Accepting and Declining",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-rescheduling-politely",
               title: "Rescheduling Politely",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-invitation-mission",
               title: "Invitation Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30314,31 +30314,31 @@ export const courses = [
             {
               slug: "arabic-buying-a-ticket",
               title: "Buying a Ticket",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-asking-about-departure-time",
               title: "Asking About Departure Time",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-checking-directions",
               title: "Checking Directions",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-talking-to-a-driver",
               title: "Talking to a Driver",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-transport-travel-mission",
               title: "Transport and Travel Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30352,31 +30352,31 @@ export const courses = [
             {
               slug: "arabic-asking-for-an-item",
               title: "Asking for an Item",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-asking-about-size-and-color",
               title: "Asking About Size and Color",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-comparing-simple-options",
               title: "Comparing Simple Options",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-requesting-service-help",
               title: "Requesting Service Help",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-shopping-service-mission",
               title: "Shopping Service Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30390,31 +30390,31 @@ export const courses = [
             {
               slug: "arabic-saying-how-you-feel",
               title: "Saying How You Feel",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-describing-simple-symptoms",
               title: "Describing Simple Symptoms",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-making-an-appointment",
               title: "Making an Appointment",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-confirming-appointment-details",
               title: "Confirming Appointment Details",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-health-appointment-mission",
               title: "Health Appointment Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30428,31 +30428,31 @@ export const courses = [
             {
               slug: "arabic-talking-about-yesterday",
               title: "Talking About Yesterday",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-saying-where-you-went",
               title: "Saying Where You Went",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-describing-a-simple-experience",
               title: "Describing a Simple Experience",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-asking-about-past-activities",
               title: "Asking About Past Activities",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-past-experience-mission",
               title: "Past Experience Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30466,31 +30466,31 @@ export const courses = [
             {
               slug: "arabic-saying-what-you-think",
               title: "Saying What You Think",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-giving-simple-reasons",
               title: "Giving Simple Reasons",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-agreeing-and-disagreeing-politely",
               title: "Agreeing and Disagreeing Politely",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-asking-for-opinions",
               title: "Asking for Opinions",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-opinion-conversation-mission",
               title: "Opinion Conversation Mission",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30504,31 +30504,31 @@ export const courses = [
             {
               slug: "arabic-review-social-and-plans",
               title: "Review Social and Plans",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-review-travel-and-services",
               title: "Review Travel and Services",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-review-health-and-past",
               title: "Review Health and Past",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-a2-final-test-practice",
               title: "A2 Final Test Practice",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
             {
               slug: "arabic-a2-final-conversation",
               title: "A2 Final Conversation",
-              status: "beta",
+              status: "published",
               minutes: 12
             },
           ]
@@ -30543,7 +30543,7 @@ export const courses = [
       level: "B1",
       title: "Arabic Connected Conversations",
       outcome: "Learners can tell connected personal stories, handle work and travel situations, explain problems and solutions, compare options, discuss goals, and ask polite cultural questions in clear formal Arabic.",
-      accessTier: "pro_beta",
+      accessTier: "pro",
       units: [
         {
           slug: "unit-01-personal-stories",
@@ -30554,31 +30554,31 @@ export const courses = [
             {
               slug: "arabic-b1-setting-the-scene",
               title: "Setting the Scene",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-telling-events-in-order",
               title: "Telling Events in Order",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-describing-feelings",
               title: "Describing Feelings",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-asking-about-someones-story",
               title: "Asking About Someone's Story",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-personal-story-mission",
               title: "Personal Story Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30592,31 +30592,31 @@ export const courses = [
             {
               slug: "arabic-b1-explaining-your-task",
               title: "Explaining Your Task",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-asking-for-clarification",
               title: "Asking for Clarification",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-giving-a-short-update",
               title: "Giving a Short Update",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-joining-a-simple-meeting",
               title: "Joining a Simple Meeting",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-workplace-mission",
               title: "Workplace Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30630,31 +30630,31 @@ export const courses = [
             {
               slug: "arabic-b1-describing-a-problem",
               title: "Describing a Problem",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-suggesting-a-solution",
               title: "Suggesting a Solution",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-responding-to-advice",
               title: "Responding to Advice",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-making-a-simple-decision",
               title: "Making a Simple Decision",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-problem-solving-mission",
               title: "Problem Solving Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30668,31 +30668,31 @@ export const courses = [
             {
               slug: "arabic-b1-checking-in",
               title: "Checking In",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-explaining-a-delay",
               title: "Explaining a Delay",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-asking-for-recommendations",
               title: "Asking for Recommendations",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-handling-a-simple-complaint",
               title: "Handling a Simple Complaint",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-travel-situation-mission",
               title: "Travel Situation Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30706,31 +30706,31 @@ export const courses = [
             {
               slug: "arabic-b1-talking-about-goals",
               title: "Talking About Goals",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-explaining-progress",
               title: "Explaining Progress",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-discussing-challenges",
               title: "Discussing Challenges",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-making-next-step-plans",
               title: "Making Next-step Plans",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-goals-progress-mission",
               title: "Goals Progress Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30744,31 +30744,31 @@ export const courses = [
             {
               slug: "arabic-b1-comparing-two-options",
               title: "Comparing Two Options",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-explaining-why-you-prefer-something",
               title: "Explaining Why You Prefer Something",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-asking-about-pros-and-cons",
               title: "Asking About Pros and Cons",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-reaching-agreement",
               title: "Reaching Agreement",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-preference-discussion-mission",
               title: "Preference Discussion Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30782,31 +30782,31 @@ export const courses = [
             {
               slug: "arabic-b1-describing-your-community",
               title: "Describing Your Community",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-talking-about-local-habits",
               title: "Talking About Local Habits",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-asking-about-culture",
               title: "Asking About Culture",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-being-polite-with-differences",
               title: "Being Polite With Differences",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-community-culture-mission",
               title: "Community Culture Mission",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30820,31 +30820,31 @@ export const courses = [
             {
               slug: "arabic-b1-review-stories-and-work",
               title: "Review Stories and Work",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-review-problems-and-travel",
               title: "Review Problems and Travel",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-review-goals-and-preferences",
               title: "Review Goals and Preferences",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-b1-final-test-practice",
               title: "B1 Final Test Practice",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
             {
               slug: "arabic-b1-b1-final-conversation",
               title: "B1 Final Conversation",
-              status: "beta",
+              status: "published",
               minutes: 14
             },
           ]
@@ -30859,7 +30859,7 @@ export const courses = [
       level: "B2",
       title: "Arabic Professional Discussions",
       outcome: "Learners can participate in structured professional and social discussions: state a position, support it with reasons and examples, respond to objections, take part in meetings, negotiate compromises, present ideas, evaluate sources, communicate with clients, and recommend solutions in clear formal Arabic.",
-      accessTier: "pro_beta",
+      accessTier: "pro",
       units: [
         {
           slug: "unit-01-clear-arguments",
@@ -30870,31 +30870,31 @@ export const courses = [
             {
               slug: "arabic-b2-stating-your-position",
               title: "Stating Your Position",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-supporting-with-reasons",
               title: "Supporting With Reasons",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-using-examples",
               title: "Using Examples",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-responding-to-counterpoints",
               title: "Responding to Counterpoints",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-clear-argument-mission",
               title: "Clear Argument Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -30908,31 +30908,31 @@ export const courses = [
             {
               slug: "arabic-b2-opening-a-meeting-point",
               title: "Opening a Meeting Point",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-clarifying-scope",
               title: "Clarifying Scope",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-giving-constructive-feedback",
               title: "Giving Constructive Feedback",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-summarizing-decisions",
               title: "Summarizing Decisions",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-meeting-participation-mission",
               title: "Meeting Participation Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -30946,31 +30946,31 @@ export const courses = [
             {
               slug: "arabic-b2-expressing-priorities",
               title: "Expressing Priorities",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-making-a-proposal",
               title: "Making a Proposal",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-handling-objections",
               title: "Handling Objections",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-finding-middle-ground",
               title: "Finding Middle Ground",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-negotiation-mission",
               title: "Negotiation Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -30984,31 +30984,31 @@ export const courses = [
             {
               slug: "arabic-b2-structuring-a-short-presentation",
               title: "Structuring a Short Presentation",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-signposting-clearly",
               title: "Signposting Clearly",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-explaining-benefits-and-risks",
               title: "Explaining Benefits and Risks",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-answering-questions",
               title: "Answering Questions",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-idea-presentation-mission",
               title: "Idea Presentation Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -31022,31 +31022,31 @@ export const courses = [
             {
               slug: "arabic-b2-summarizing-an-article",
               title: "Summarizing an Article",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-discussing-reliable-sources",
               title: "Discussing Reliable Sources",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-explaining-a-viewpoint",
               title: "Explaining a Viewpoint",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-responding-to-new-information",
               title: "Responding to New Information",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-information-discussion-mission",
               title: "Information Discussion Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -31060,31 +31060,31 @@ export const courses = [
             {
               slug: "arabic-b2-understanding-client-needs",
               title: "Understanding Client Needs",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-explaining-options",
               title: "Explaining Options",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-handling-concerns",
               title: "Handling Concerns",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-confirming-next-steps",
               title: "Confirming Next Steps",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-client-conversation-mission",
               title: "Client Conversation Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -31098,31 +31098,31 @@ export const courses = [
             {
               slug: "arabic-b2-framing-the-problem",
               title: "Framing the Problem",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-explaining-causes",
               title: "Explaining Causes",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-discussing-tradeoffs",
               title: "Discussing Tradeoffs",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-recommending-a-solution",
               title: "Recommending a Solution",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-problem-solving-discussion-mission",
               title: "Problem Solving Discussion Mission",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -31136,31 +31136,31 @@ export const courses = [
             {
               slug: "arabic-b2-review-arguments-and-meetings",
               title: "Review Arguments and Meetings",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-review-negotiation-and-presenting",
               title: "Review Negotiation and Presenting",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-review-information-and-clients",
               title: "Review Information and Clients",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-b2-final-test-practice",
               title: "B2 Final Test Practice",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
             {
               slug: "arabic-b2-b2-final-discussion",
               title: "B2 Final Discussion",
-              status: "beta",
+              status: "published",
               minutes: 16
             },
           ]
@@ -31175,7 +31175,7 @@ export const courses = [
       level: "C1",
       title: "Arabic Advanced Fluency",
       outcome: "Learners can participate in complex professional and social conversations with nuance, precision, tact, strategic framing, persuasive structure, and accurate response to indirect or dense speech in formal Arabic.",
-      accessTier: "pro_beta",
+      accessTier: "pro",
       units: [
         {
           slug: "unit-01-nuanced-opinions",
@@ -31186,31 +31186,31 @@ export const courses = [
             {
               slug: "arabic-c1-qualifying-your-opinion",
               title: "Qualifying Your Opinion",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-expressing-certainty-and-doubt",
               title: "Expressing Certainty and Doubt",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-balancing-two-viewpoints",
               title: "Balancing Two Viewpoints",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-softening-disagreement",
               title: "Softening Disagreement",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-nuanced-opinion-mission",
               title: "Nuanced Opinion Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31224,31 +31224,31 @@ export const courses = [
             {
               slug: "arabic-c1-aligning-stakeholders",
               title: "Aligning Stakeholders",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-managing-expectations",
               title: "Managing Expectations",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-handling-sensitive-feedback",
               title: "Handling Sensitive Feedback",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-communicating-risk",
               title: "Communicating Risk",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-strategic-workplace-mission",
               title: "Strategic Workplace Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31262,31 +31262,31 @@ export const courses = [
             {
               slug: "arabic-c1-framing-a-complex-topic",
               title: "Framing a Complex Topic",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-building-a-persuasive-flow",
               title: "Building a Persuasive Flow",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-using-precise-transitions",
               title: "Using Precise Transitions",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-handling-challenging-questions",
               title: "Handling Challenging Questions",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-advanced-presentation-mission",
               title: "Advanced Presentation Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31300,31 +31300,31 @@ export const courses = [
             {
               slug: "arabic-c1-identifying-assumptions",
               title: "Identifying Assumptions",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-challenging-an-argument",
               title: "Challenging an Argument",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-presenting-evidence",
               title: "Presenting Evidence",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-responding-under-pressure",
               title: "Responding Under Pressure",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-debate-analysis-mission",
               title: "Debate Analysis Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31338,31 +31338,31 @@ export const courses = [
             {
               slug: "arabic-c1-reading-context",
               title: "Reading Context",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-asking-tactful-questions",
               title: "Asking Tactful Questions",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-explaining-local-norms",
               title: "Explaining Local Norms",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-repairing-misunderstanding",
               title: "Repairing Misunderstanding",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-cross-cultural-mission",
               title: "Cross-cultural Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31376,31 +31376,31 @@ export const courses = [
             {
               slug: "arabic-c1-setting-direction",
               title: "Setting Direction",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-coaching-with-questions",
               title: "Coaching With Questions",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-giving-actionable-feedback",
               title: "Giving Actionable Feedback",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-guiding-a-decision",
               title: "Guiding a Decision",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-leadership-coaching-mission",
               title: "Leadership Coaching Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31414,31 +31414,31 @@ export const courses = [
             {
               slug: "arabic-c1-catching-implied-meaning",
               title: "Catching Implied Meaning",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-responding-to-long-turns",
               title: "Responding to Long Turns",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-summarizing-what-you-heard",
               title: "Summarizing What You Heard",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-asking-high-quality-follow-ups",
               title: "Asking High-quality Follow-ups",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-advanced-listening-mission",
               title: "Advanced Listening Mission",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]
@@ -31452,31 +31452,31 @@ export const courses = [
             {
               slug: "arabic-c1-review-nuance-and-strategy",
               title: "Review Nuance and Strategy",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-review-presenting-and-debate",
               title: "Review Presenting and Debate",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-review-leadership-and-listening",
               title: "Review Leadership and Listening",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-c1-final-test-practice",
               title: "C1 Final Test Practice",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
             {
               slug: "arabic-c1-c1-final-conversation",
               title: "C1 Final Conversation",
-              status: "beta",
+              status: "published",
               minutes: 18
             },
           ]

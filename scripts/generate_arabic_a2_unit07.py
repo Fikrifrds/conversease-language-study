@@ -21,7 +21,7 @@ line = generator.line
 UNIT: dict[str, Any] = {
     "unit_key": "unit-07-opinions-reasons",
     "title": "Opinions & Reasons",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Give simple opinions, short reasons, agreement, disagreement, and preference "
         "in Arabic."
@@ -31,7 +31,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-01-saying-what-you-think",
             "slug": "arabic-saying-what-you-think",
             "title": "Saying What You Think",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berdiskusi santai setelah kelas dan ingin menyampaikan pendapat "
                 "tentang pelajaran, tempat belajar, atau aktivitas."
@@ -67,7 +67,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-02-giving-simple-reasons",
             "slug": "arabic-giving-simple-reasons",
             "title": "Giving Simple Reasons",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menjelaskan alasan pendek untuk pendapatmu: karena mudah, dekat, "
                 "murah, jelas, atau cocok untuk jadwalmu."
@@ -104,7 +104,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-03-agreeing-and-disagreeing-politely",
             "slug": "arabic-agreeing-and-disagreeing-politely",
             "title": "Agreeing and Disagreeing Politely",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berdiskusi dengan teman dan perlu setuju, kurang setuju, atau "
                 "memberi pendapat berbeda tanpa terdengar kasar."
@@ -141,7 +141,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-04-asking-for-opinions",
             "slug": "arabic-asking-for-opinions",
             "title": "Asking for Opinions",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu meminta pendapat teman sebelum memilih tempat, waktu, aktivitas, "
                 "atau opsi sederhana."
@@ -177,7 +177,7 @@ UNIT: dict[str, Any] = {
             "lesson_key": "lesson-05-opinion-conversation-mission",
             "slug": "arabic-opinion-conversation-mission",
             "title": "Opinion Conversation Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu memilih rencana belajar bersama teman: meminta pendapat, memberi "
                 "alasan, setuju/kurang setuju, lalu mengambil keputusan."

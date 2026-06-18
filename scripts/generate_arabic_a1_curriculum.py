@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate the Arabic A1 beta curriculum.
+"""Generate the Arabic A1 curriculum.
 
 This is intentionally deterministic: the authored lesson specs below expand
 into the same file layout used by the English curriculum and the Arabic pilot.
@@ -391,7 +391,7 @@ def lesson(
         "lesson_key": key,
         "slug": slug,
         "title": title,
-        "status": "beta",
+        "status": "published",
         "situation": situation,
         "goal": goal,
         "grammar": grammar,
@@ -421,45 +421,45 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-01-fusha-foundations",
         "title": "Arabic Foundations",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Start a simple formal Arabic conversation, follow basic study instructions, and ask for repetition when you do not understand.",
         "lessons": [
             {
                 "lesson_key": "lesson-01-greetings-and-salam",
                 "slug": "arabic-formal-greetings",
                 "title": "Formal Greetings",
-                "status": "beta",
+                "status": "published",
             },
             {
                 "lesson_key": "lesson-02-name-and-origin",
                 "slug": "arabic-name-and-origin",
                 "title": "Name and Origin",
-                "status": "beta",
+                "status": "published",
             },
             {
                 "lesson_key": "lesson-03-class-and-study-instructions",
                 "slug": "arabic-class-and-study-instructions",
                 "title": "Class and Study Instructions",
-                "status": "beta",
+                "status": "published",
             },
             {
                 "lesson_key": "lesson-04-asking-when-you-do-not-understand",
                 "slug": "arabic-asking-when-you-do-not-understand",
                 "title": "Asking When You Do Not Understand",
-                "status": "beta",
+                "status": "published",
             },
             {
                 "lesson_key": "lesson-05-fusha-introduction-mission",
                 "slug": "arabic-fusha-introduction-mission",
                 "title": "Arabic Introduction Mission",
-                "status": "beta",
+                "status": "published",
             },
         ],
     },
     {
         "unit_key": "unit-02-letters-numbers-contact",
         "title": "Letters, Numbers & Contact",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Spell simple names, exchange numbers, and share basic contact details in Arabic.",
         "lessons": [
             lesson(
@@ -584,7 +584,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-03-time-and-routine",
         "title": "Time & Daily Routine",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Talk about simple time, days, schedules, and daily activities in Arabic.",
         "lessons": [
             lesson(
@@ -710,7 +710,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-04-family-work-study",
         "title": "Family, Work & Study",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Talk simply about family, work, study, likes, and basic ability.",
         "lessons": [
             lesson(
@@ -837,7 +837,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-05-places-directions",
         "title": "Places & Directions",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Ask where places are and understand simple directions in Arabic.",
         "lessons": [
             lesson(
@@ -963,7 +963,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-06-food-shopping-prices",
         "title": "Food, Shopping & Prices",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Order simple items, ask prices, and say what you want in Arabic.",
         "lessons": [
             lesson(
@@ -1088,7 +1088,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-07-help-problems-requests",
         "title": "Help, Problems & Requests",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Ask for help, explain simple problems, and make polite requests in Arabic.",
         "lessons": [
             lesson(
@@ -1215,7 +1215,7 @@ UNIT_PLANS: list[dict[str, Any]] = [
     {
         "unit_key": "unit-08-a1-review-final",
         "title": "A1 Review & Final Conversation",
-        "status": "beta",
+        "status": "published",
         "main_conversation_outcome": "Combine Arabic A1 skills in longer but still simple formal conversations.",
         "lessons": [
             lesson(
@@ -1364,7 +1364,7 @@ def lesson_plan_entries(unit: dict[str, Any]) -> list[dict[str, str]]:
                 "lesson_key": item["lesson_key"],
                 "slug": item["slug"],
                 "title": item["title"],
-                "status": item.get("status", "beta"),
+                "status": item.get("status", "published"),
             }
         )
     return entries
@@ -1377,7 +1377,7 @@ def update_content_plan() -> None:
         "level_code": "A1",
         "course_slug": "arabic-a1-fusha-foundations",
         "course_title": "Arabic Foundations",
-        "access_tier": "pro_beta",
+        "access_tier": "pro",
         "target_lesson_count": sum(len(unit["lessons"]) for unit in UNIT_PLANS),
         "units": [
             {
@@ -1641,7 +1641,7 @@ def update_tracker() -> None:
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
-            row["publish_status"] = "beta"
+            row["publish_status"] = "published"
 
     with TRACKER_PATH.open("w", encoding="utf-8", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")

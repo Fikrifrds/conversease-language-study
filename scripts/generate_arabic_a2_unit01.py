@@ -62,7 +62,7 @@ def line(speaker: str, text: str, translation: str) -> tuple[str, str, str]:
 UNIT = {
     "unit_key": "unit-01-social-follow-up",
     "title": "Social Follow-up",
-    "status": "beta",
+    "status": "published",
     "main_conversation_outcome": (
         "Keep a short Arabic conversation going with follow-up questions, reactions, "
         "and simple personal details."
@@ -72,7 +72,7 @@ UNIT = {
             "lesson_key": "lesson-01-reconnecting-after-class",
             "slug": "arabic-reconnecting-after-class",
             "title": "Reconnecting After Class",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu bertemu teman setelah kelas bahasa Arab dan membuka percakapan "
                 "singkat dengan kabar, kelas, dan rencana belajar."
@@ -111,7 +111,7 @@ UNIT = {
             "lesson_key": "lesson-02-asking-follow-up-questions",
             "slug": "arabic-asking-follow-up-questions",
             "title": "Asking Follow-up Questions",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu berbicara dengan teman kelas dan menjaga percakapan tetap berjalan "
                 "dengan pertanyaan lanjutan yang sederhana."
@@ -148,7 +148,7 @@ UNIT = {
             "lesson_key": "lesson-03-talking-about-the-weekend",
             "slug": "arabic-talking-about-the-weekend",
             "title": "Talking About the Weekend",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menceritakan kegiatan akhir pekan secara pendek: ke mana pergi, "
                 "dengan siapa, dan bagaimana rasanya."
@@ -185,7 +185,7 @@ UNIT = {
             "lesson_key": "lesson-04-reacting-with-interest",
             "slug": "arabic-reacting-with-interest",
             "title": "Reacting With Interest",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu "
                 "bertanya satu pertanyaan lanjutan."
@@ -221,7 +221,7 @@ UNIT = {
             "lesson_key": "lesson-05-social-follow-up-mission",
             "slug": "arabic-social-follow-up-mission",
             "title": "Social Follow-up Mission",
-            "status": "beta",
+            "status": "published",
             "situation": (
                 "Kamu menjaga percakapan singkat dengan teman: membuka kabar, menanyakan "
                 "kegiatan, memberi reaksi, dan menutup dengan rencana sederhana."
@@ -546,8 +546,8 @@ def update_tracker() -> None:
         for column in TEXT_TRACKER_COLUMNS:
             row[column] = "done"
         row["audio_generated"] = "not_generated"
-        row["review_status"] = ""
-        row["publish_status"] = "beta"
+        row["review_status"] = "ready"
+        row["publish_status"] = "published"
 
     with TRACKER_PATH.open("w", encoding="utf-8", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")
