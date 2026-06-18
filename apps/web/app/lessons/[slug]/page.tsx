@@ -16,6 +16,7 @@ const ARABIC_SECTION_LABELS: Record<string, string> = {
   "Conversation Goal": "Target Percakapan",
   "Listen": "Dengarkan",
   "Useful Phrases": "Frasa Penting",
+  "Vocabulary": "Kosa Kata Baru",
   "Speak Clearly": "Latihan Pengucapan",
   "Respond": "Latihan Respons",
   "Conversation Coach": "Roleplay Terarah"
@@ -26,6 +27,7 @@ const ARABIC_LESSON_COPY = {
   listenToDialogue: "Dengarkan Dialog",
   usefulPhrases: "Frasa Penting",
   vocabulary: "Kosa Kata Baru",
+  vocabularyItems: "kata",
   grammarForConversation: "Pola Percakapan",
   speakClearly: "Latihan Pengucapan",
   conversationCheck: "Cek Pemahaman",
@@ -40,6 +42,7 @@ const DEFAULT_LESSON_COPY = {
   listenToDialogue: "Listen to a Dialogue",
   usefulPhrases: "Useful Phrases",
   vocabulary: "New Vocabulary",
+  vocabularyItems: "items",
   grammarForConversation: "Grammar for Conversation",
   speakClearly: "Speak Clearly",
   conversationCheck: "Conversation Check",
@@ -134,9 +137,14 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
 
             {lesson.vocabulary?.length ? (
               <section className="mt-8">
-                <div className="flex items-center gap-2">
-                  <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
-                  <h2 className="text-xl font-semibold">{copy.vocabulary}</h2>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="flex items-center gap-2">
+                    <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
+                    <h2 className="text-xl font-semibold">{copy.vocabulary}</h2>
+                  </div>
+                  <span className="rounded-lg bg-mint px-3 py-1 text-xs font-bold uppercase text-leaf">
+                    {lesson.vocabulary.length} {copy.vocabularyItems}
+                  </span>
                 </div>
                 <div className="mt-4 grid gap-3 md:grid-cols-2">
                   {lesson.vocabulary.map((item) => (

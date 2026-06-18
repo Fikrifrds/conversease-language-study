@@ -71,6 +71,7 @@ const lessonSections = [
   { label: "Conversation Goal", icon: CircleCheck },
   { label: "Listen", icon: Headphones },
   { label: "Useful Phrases", icon: BookOpen },
+  { label: "Vocabulary", icon: BookOpen },
   { label: "Speak Clearly", icon: Mic },
   { label: "Respond", icon: PenLine },
   { label: "Conversation Coach", icon: MessageCircle }
