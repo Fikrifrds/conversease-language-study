@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { ArrowRight, BookOpen, CheckCircle2, Languages } from "lucide-react";
+import { ArrowRight, CheckCircle2, Languages } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { courseGroupDescriptions, courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courses } from "@/lib/data";
 
 type LanguageFilter = "all" | "english" | "arabic";
@@ -53,25 +54,6 @@ export default function CoursesPage() {
           </div>
         </div>
 
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          <TrackSummaryCard
-            title="English Track"
-            status="Ready"
-            description="A1 sampai C1 untuk percakapan umum, kerja, presentasi, dan diskusi profesional."
-            courses={courses.filter((course) => course.language === "english")}
-            active={languageFilter === "english"}
-            onClick={() => setLanguageFilter("english")}
-          />
-          <TrackSummaryCard
-            title="Arabic Track"
-            status="Ready"
-            description="Arabic formal A1 sampai C1 dengan dialog bertahap, harakat, audio, dan roleplay."
-            courses={courses.filter((course) => course.language === "arabic")}
-            active={languageFilter === "arabic"}
-            onClick={() => setLanguageFilter("arabic")}
-          />
-        </div>
-
         <div className="mt-8 space-y-10">
           {visibleCourseGroups.map((group) => (
             <section key={group.language} className="space-y-4">
@@ -102,46 +84,6 @@ export default function CoursesPage() {
   );
 }
 
-function TrackSummaryCard({
-  title,
-  status,
-  description,
-  courses: trackCourses,
-  active,
-  onClick
-}: {
-  title: string;
-  status: string;
-  description: string;
-  courses: Course[];
-  active: boolean;
-  onClick: () => void;
-}) {
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`focus-ring group rounded-lg border p-5 text-left shadow-sm transition ${
-        active ? "border-leaf bg-mint" : "border-ink/10 bg-white hover:border-leaf/40 hover:shadow-soft"
-      }`}
-    >
-      <div className="flex items-start justify-between gap-4">
-        <div className="min-w-0 flex-1">
-          <p className="text-xs font-semibold uppercase text-leaf">{status}</p>
-          <h2 className="mt-1 break-words text-xl font-semibold">{title}</h2>
-          <p className="mt-2 break-words text-sm leading-6 text-ink/65">{description}</p>
-        </div>
-        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-paper transition group-hover:bg-mint">
-          <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
-        </span>
-      </div>
-      <p className="mt-4 text-xs font-semibold uppercase text-ink/45">
-        {trackCourses.length} level / {trackCourses.reduce((sum, course) => sum + course.units.length, 0)} unit
-      </p>
-    </button>
-  );
-}
-
 function CourseCard({
   course
 }: {
@@ -156,7 +98,9 @@ function CourseCard({
       className="focus-ring group flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
     >
       <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
-      <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
+      <p className="mt-3 text-sm leading-6 text-ink/70">
+        {courseMarketingDescription(course.slug, course.outcome)}
+      </p>
       <div className="mt-auto flex items-center justify-between gap-3 pt-5">
         <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
           <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
@@ -211,14 +155,14 @@ function groupedCourses(languageFilter: LanguageFilter) {
       language: "english",
       title: "English Track",
       status: "Ready curriculum",
-      description: "Track utama untuk speaking dari A1 sampai C1.",
+      description: courseGroupDescriptions.english,
       courses: courses.filter((course) => course.language === "english")
     },
     {
       language: "arabic",
       title: "Arabic Track",
       status: "Ready curriculum",
-      description: "Track Arabic formal lengkap dari A1 sampai C1 dengan audio dan roleplay.",
+      description: courseGroupDescriptions.arabic,
       courses: courses.filter((course) => course.language === "arabic")
     }
   ];

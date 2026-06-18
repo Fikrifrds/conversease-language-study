@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, BookOpen, CheckCircle2, Headphones, Layers3 } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { CourseProgressList } from "@/components/course-progress-list";
+import { courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courses } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -36,7 +37,9 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
                 </span>
               </div>
               <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">{course.title}</h1>
-              <p className="mt-3 leading-7 text-ink/70">{course.outcome}</p>
+              <p className="mt-3 leading-7 text-ink/70">
+                {courseMarketingDescription(course.slug, course.outcome)}
+              </p>
               <div className="mt-5 grid gap-2 text-sm font-semibold text-ink/65 sm:grid-cols-3">
                 <span className="inline-flex items-center gap-2 rounded-lg bg-paper px-3 py-3">
                   <Layers3 className="h-4 w-4 text-leaf" aria-hidden="true" />
