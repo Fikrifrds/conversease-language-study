@@ -1,5 +1,6 @@
 from datetime import timedelta
 import logging
+import re
 from typing import Optional
 from fastapi import APIRouter, Depends, HTTPException, Query
 from fastapi.responses import RedirectResponse
@@ -103,9 +104,19 @@ def auth_response(user: User) -> AuthResponse:
     return AuthResponse(access_token=create_access_token(user.id), user=user_payload(user))
 
 
+# Pragmatic email check: a single local part and domain made of standard,
+# unambiguous characters. Rejects the SQL/script payloads (quotes, parentheses,
+# pipes, spaces, semicolons) seen in registration spam so they never reach the DB.
+EMAIL_PATTERN = re.compile(
+    r"^[A-Za-z0-9](?:[A-Za-z0-9._%+-]{0,62}[A-Za-z0-9])?"
+    r"@[A-Za-z0-9](?:[A-Za-z0-9-]{0,62}[A-Za-z0-9])?"
+    r"(?:\.[A-Za-z0-9](?:[A-Za-z0-9-]{0,62}[A-Za-z0-9])?)+$"
+)
+
+
 def validate_email(email: str) -> str:
     normalized = normalize_email(email)
-    if "@" not in normalized or "." not in normalized.split("@")[-1]:
+    if len(normalized) > 320 or not EMAIL_PATTERN.fullmatch(normalized):
         raise HTTPException(status_code=422, detail="Valid email is required")
     return normalized
 

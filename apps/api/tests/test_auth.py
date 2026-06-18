@@ -1,8 +1,10 @@
 import unittest
 
+from fastapi import HTTPException
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
+from app.api.routes.auth import validate_email
 from app.core.security import create_access_token, decode_access_token
 from app.db.base import Base
 from app.db import models  # noqa: F401
@@ -39,6 +41,25 @@ class AuthTest(unittest.TestCase):
         token = create_access_token("user-123")
 
         self.assertEqual(decode_access_token(token), "user-123")
+
+    def test_validate_email_accepts_normal_addresses(self):
+        self.assertEqual(validate_email("Fikri.Firdaus@Example.com"), "fikri.firdaus@example.com")
+        self.assertEqual(validate_email("user+tag@sub.example.co.id"), "user+tag@sub.example.co.id")
+
+    def test_validate_email_rejects_injection_and_spam_payloads(self):
+        payloads = [
+            "testing@example.com'||dbms_pipe.receive_message(chr(98)||chr(98)||chr(98),15)||'",
+            "testing@example.comv8k2f6yq') or 801=(select 801 from pg_sleep(15))--",
+            "testing@example.com-1 waitfor delay '0:0:15' --",
+            "no-at-symbol.com",
+            "spaces in@example.com",
+            "trailing.dot@example.",
+            "@example.com",
+        ]
+        for payload in payloads:
+            with self.assertRaises(HTTPException, msg=payload) as ctx:
+                validate_email(payload)
+            self.assertEqual(ctx.exception.status_code, 422)
 
     def test_google_oauth_state_roundtrip_sanitizes_next_path(self):
         state = create_google_oauth_state("/lessons/saying-your-name")
