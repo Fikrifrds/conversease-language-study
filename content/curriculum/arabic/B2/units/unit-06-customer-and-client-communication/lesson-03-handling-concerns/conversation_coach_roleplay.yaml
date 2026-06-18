@@ -1,0 +1,71 @@
+scenario_key: arabic_b2_handling_concerns
+mode: lesson_practice_coach
+level_code: B2
+opening_line: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟
+learner_goal: Latih percakapan Arab B2 untuk menangani concern klien dengan alasan, contoh, respons, dan
+  rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟
+  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ التَّعَامُلُ
+    مَعَ اهْتِمَامَاتِ الْعَمِيلِ.'
+  sample_answer: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ التَّعَامُلُ مَعَ اهْتِمَامَاتِ الْعَمِيلِ.
+  focus: Memahami kebutuhan klien.
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أَفْهَمَ
+  - اِحْتِيَاجَ
+  - الْعَمِيلِ
+  indonesian_explanation: Saya ingin memahami kebutuhan klien tentang menangani concern klien.
+- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
+  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  focus: Menjelaskan opsi.
+  expected_keywords:
+  - لَدَيْنَا
+  - خِيَارَانِ،
+  - وَكُلُّ
+  - خِيَارٍ
+  - لَهُ
+  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
+- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
+  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  focus: Menangani concern.
+  expected_keywords:
+  - أَفْهَمُ
+  - هَذَا
+  - الِاهْتِمَامَ،
+  - وَسَأُوَضِّحُ
+  - التَّفَاصِيلَ
+  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
+- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
+  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  focus: Mengonfirmasi next step.
+  expected_keywords:
+  - الْخُطْوَةُ
+  - التَّالِيَةُ
+  - هِيَ
+  - مُرَاجَعَةُ
+  - الِاتِّفَاقِ
+  indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+target_phrases:
+- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ التَّعَامُلُ مَعَ اهْتِمَامَاتِ الْعَمِيلِ.
+- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

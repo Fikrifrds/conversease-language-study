@@ -1,0 +1,19 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengulang skill review informasi dan klien karena itu penting
+    dalam diskusi.'
+  target_response: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ
+    فِي النِّقَاشِ.
+  acceptable_responses:
+  - أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.'
+  target_response: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+  acceptable_responses:
+  - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya juga bisa mengelola percakapan profesional dengan jelas.'
+  target_response: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+  acceptable_responses:
+  - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul keberatan, saya akan menanggapinya dengan tenang.'
+  target_response: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  acceptable_responses:
+  - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

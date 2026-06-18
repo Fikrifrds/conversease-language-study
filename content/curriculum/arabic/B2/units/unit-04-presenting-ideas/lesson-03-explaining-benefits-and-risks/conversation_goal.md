@@ -1,0 +1,11 @@
+# Target Percakapan
+
+Latih percakapan Arab B2 untuk menjelaskan manfaat dan risiko dengan alasan, contoh, respons, dan rekomendasi.
+
+Kamu akan berlatih mengatakan:
+
+- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ.
+- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.

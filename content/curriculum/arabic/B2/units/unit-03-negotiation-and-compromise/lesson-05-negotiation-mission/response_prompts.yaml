@@ -1,0 +1,17 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Prioritas saya adalah agar mengelola negosiasi jelas tetap jelas.'
+  target_response: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ وَاضِحًا.
+  acceptable_responses:
+  - أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ وَاضِحًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengajukan usulan berikut sebagai solusi praktis.'
+  target_response: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
+  acceptable_responses:
+  - أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami kekhawatiranmu, tetapi kita punya pilihan lain.'
+  target_response: أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+  acceptable_responses:
+  - أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita bisa mencapai solusi tengah.'
+  target_response: يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.
+  acceptable_responses:
+  - يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.

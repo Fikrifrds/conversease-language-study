@@ -1,0 +1,9 @@
+# Bantuan Membaca
+
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
+
+- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik menanggapi keberatan penting dalam diskusi.
+- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas.
+- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Contohnya, tim membutuhkan keputusan yang cepat.
+- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Karena itu, saya lebih memilih kita sepakat pada arah ini.

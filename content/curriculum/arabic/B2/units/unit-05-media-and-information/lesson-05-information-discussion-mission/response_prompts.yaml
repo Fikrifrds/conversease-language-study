@@ -1,0 +1,18 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami dari artikel bahwa topik mengelola diskusi informasi
+    penting.'
+  target_response: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+  acceptable_responses:
+  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita harus memastikan bahwa sumbernya tepercaya.'
+  target_response: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  acceptable_responses:
+  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sudut pandang ini membutuhkan bukti yang lebih kuat.'
+  target_response: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  acceptable_responses:
+  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah informasi baru, pendapat saya sedikit berubah.'
+  target_response: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  acceptable_responses:
+  - بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.

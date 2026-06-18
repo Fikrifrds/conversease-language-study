@@ -1,0 +1,14 @@
+# Listening Script
+
+**Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟
+**Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+**Ahmad:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟
+**Karim:** أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+**Ahmad:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟
+**Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+**Ahmad:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟
+**Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a measured B2 discussion pace with a short natural pause between speakers. Use distinct voices according to speaker names and gender.

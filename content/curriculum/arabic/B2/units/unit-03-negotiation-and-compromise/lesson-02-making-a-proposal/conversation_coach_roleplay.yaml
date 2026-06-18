@@ -1,0 +1,71 @@
+scenario_key: arabic_b2_making_a_proposal
+mode: lesson_practice_coach
+level_code: B2
+opening_line: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟
+learner_goal: Latih percakapan Arab B2 untuk mengajukan usulan praktis dengan alasan, contoh, respons,
+  dan rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَقْدِيمُ اِقْتِرَاحٍ عَمَلِيٍّ
+    وَاضِحًا.'
+  sample_answer: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَقْدِيمُ اِقْتِرَاحٍ عَمَلِيٍّ وَاضِحًا.
+  focus: Menyatakan prioritas.
+  expected_keywords:
+  - أَوْلَوِيَّتِي
+  - هِيَ
+  - أَنْ
+  - يَبْقَى
+  - تَقْدِيمُ
+  indonesian_explanation: Prioritas saya adalah agar mengajukan usulan praktis tetap jelas.
+- coach: 'استخدم الفكرة: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.'
+  sample_answer: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
+  focus: Membuat proposal.
+  expected_keywords:
+  - أُقَدِّمُ
+  - الِاقْتِرَاحَ
+  - التَّالِيَ
+  - كَحَلٍّ
+  - عَمَلِيٍّ
+  indonesian_explanation: Saya mengajukan usulan berikut sebagai solusi praktis.
+- coach: 'استخدم الفكرة: أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.'
+  sample_answer: أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+  focus: Menangani objection.
+  expected_keywords:
+  - أَفْهَمُ
+  - قَلَقَكَ،
+  - وَلَكِنْ
+  - لَدَيْنَا
+  - خِيَارٌ
+  indonesian_explanation: Saya memahami kekhawatiranmu, tetapi kita punya pilihan lain.
+- coach: 'استخدم الفكرة: يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.'
+  sample_answer: يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.
+  focus: Mencari kompromi.
+  expected_keywords:
+  - يُمْكِنُنَا
+  - أَنْ
+  - نَصِلَ
+  - إِلَى
+  - حَلٍّ
+  indonesian_explanation: Kita bisa mencapai solusi tengah.
+target_phrases:
+- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَقْدِيمُ اِقْتِرَاحٍ عَمَلِيٍّ وَاضِحًا.
+- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
+- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.
+- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

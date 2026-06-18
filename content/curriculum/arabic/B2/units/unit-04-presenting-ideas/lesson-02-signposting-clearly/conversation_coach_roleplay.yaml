@@ -1,0 +1,70 @@
+scenario_key: arabic_b2_signposting_clearly
+mode: lesson_practice_coach
+level_code: B2
+opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+learner_goal: Latih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan
+  rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+  hint: 'Jawab dengan struktur B2 memakai: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.'
+  sample_answer: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+  focus: Membuka presentasi.
+  expected_keywords:
+  - سَأَبْدَأُ
+  - بِمُقَدِّمَةٍ
+  - قَصِيرَةٍ
+  - عَنْ
+  - تَوْضِيحُ
+  indonesian_explanation: Saya akan mulai dengan pembuka singkat tentang memberi transisi jelas.
+- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
+  sample_answer: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  focus: Memberi signposting.
+  expected_keywords:
+  - بَعْدَ
+  - ذَلِكَ،
+  - سَأَشْرَحُ
+  - الْفَائِدَةَ
+  - الْأَسَاسِيَّةَ
+  indonesian_explanation: Setelah itu, saya akan menjelaskan manfaat utamanya.
+- coach: 'استخدم الفكرة: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
+  hint: 'Jawab dengan struktur B2 memakai: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
+  sample_answer: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  focus: Menjelaskan risk secara seimbang.
+  expected_keywords:
+  - مِنَ
+  - الْمُهِمِّ
+  - أَنْ
+  - نَذْكُرَ
+  - الْمَخَاطِرَ
+  indonesian_explanation: Penting juga untuk menyebutkan risikonya.
+- coach: 'استخدم الفكرة: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
+  sample_answer: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  focus: Menyiapkan Q&A.
+  expected_keywords:
+  - إِذَا
+  - كَانَتْ
+  - هُنَاكَ
+  - أَسْئِلَةٌ،
+  - فَسَأُجِيبُ
+  indonesian_explanation: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
+target_phrases:
+- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

@@ -1,0 +1,69 @@
+scenario_key: arabic_b2_summarizing_an_article
+mode: lesson_practice_coach
+level_code: B2
+opening_line: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟
+learner_goal: Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.'
+  sample_answer: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+  focus: Merangkum artikel.
+  expected_keywords:
+  - أَفْهَمُ
+  - مِنَ
+  - الْمَقَالِ
+  - أَنَّ
+  - هَذَا
+  indonesian_explanation: Saya memahami dari artikel bahwa topik merangkum artikel penting.
+- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
+  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
+  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  focus: Mengevaluasi sumber.
+  expected_keywords:
+  - يَجِبُ
+  - أَنْ
+  - نَتَأَكَّدَ
+  - مِنْ
+  - أَنَّ
+  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
+- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
+  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
+  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  focus: Menguji viewpoint.
+  expected_keywords:
+  - وِجْهَةُ
+  - النَّظَرِ
+  - هَذِهِ
+  - تَحْتَاجُ
+  - إِلَى
+  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
+- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
+  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
+  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  focus: Merespons informasi baru.
+  expected_keywords:
+  - بَعْدَ
+  - الْمَعْلُومَاتِ
+  - الْجَدِيدَةِ،
+  - تَغَيَّرَ
+  - رَأْيِي
+  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+target_phrases:
+- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

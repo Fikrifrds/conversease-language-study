@@ -1,0 +1,14 @@
+# Listening Script
+
+**Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟
+**Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+**Yusuf:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟
+**Hasan:** يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+**Yusuf:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟
+**Hasan:** بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+**Yusuf:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟
+**Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a measured B2 discussion pace with a short natural pause between speakers. Use distinct voices according to speaker names and gender.

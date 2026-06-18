@@ -1,0 +1,28 @@
+lesson_key: lesson-02-supporting-with-reasons
+slug: arabic-b2-supporting-with-reasons
+title: Supporting With Reasons
+status: beta
+estimated_minutes: 16
+conversation_situation: supporting_with_reasons
+conversation_goal: Latih percakapan Arab B2 untuk mendukung pendapat dengan alasan dengan alasan, contoh,
+  respons, dan rekomendasi.
+grammar_summary: Gunakan مَوْقِفِي هُوَ، أَدْعَمُ، مِثَالُ ذَلِكَ، dan وَلَكِنَّ untuk membuat argumen
+  B2 yang terstruktur.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

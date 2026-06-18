@@ -1,0 +1,72 @@
+scenario_key: arabic_b2_review_arguments_and_meetings
+mode: lesson_practice_coach
+level_code: B2
+opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
+learner_goal: Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons,
+  dan rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
+  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ
+    لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.'
+  sample_answer: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي
+    النِّقَاشِ.
+  focus: Membuka review.
+  expected_keywords:
+  - أُرَاجِعُ
+  - مَهَارَةَ
+  - مُرَاجَعَةُ
+  - الْحُجَجِ
+  - وَالِاجْتِمَاعَاتِ
+  indonesian_explanation: Saya mengulang skill review argumen dan rapat karena itu penting dalam diskusi.
+- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
+  sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+  focus: Mereview argument skill.
+  expected_keywords:
+  - أَسْتَطِيعُ
+  - أَنْ
+  - أُقَدِّمَ
+  - رَأْيًا
+  - وَأَدْعَمَهُ
+  indonesian_explanation: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
+- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
+  sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+  focus: Mereview professional skill.
+  expected_keywords:
+  - أَسْتَطِيعُ
+  - أَيْضًا
+  - أَنْ
+  - أُدِيرَ
+  - حِوَارًا
+  indonesian_explanation: Saya juga bisa mengelola percakapan profesional dengan jelas.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
+  sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  focus: Mereview counterpoint skill.
+  expected_keywords:
+  - إِذَا
+  - ظَهَرَ
+  - اِعْتِرَاضٌ،
+  - فَسَأَرُدُّ
+  - عَلَيْهِ
+  indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+target_phrases:
+- أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

@@ -1,0 +1,17 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Posisi saya adalah bahwa topik menentukan posisi penting dalam diskusi.'
+  target_response: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+  acceptable_responses:
+  - مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mendukung pendapat ini dengan dua alasan yang jelas.'
+  target_response: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+  acceptable_responses:
+  - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Contohnya, tim membutuhkan keputusan yang cepat.'
+  target_response: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+  acceptable_responses:
+  - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.'
+  target_response: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  acceptable_responses:
+  - أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.

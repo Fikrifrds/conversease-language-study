@@ -1,0 +1,16 @@
+phrases:
+- phrase: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  meaning_id: Saya melihat bahwa poin merekomendasikan solusi adalah bagian dari masalah yang lebih besar.
+  usage_note: Melakukan framing problem.
+- phrase: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  meaning_id: Penyebab utamanya mungkin lemahnya pengaturan.
+  usage_note: Menjelaskan cause.
+- phrase: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  meaning_id: Setiap solusi punya manfaat dan efek samping.
+  usage_note: Membahas tradeoff.
+- phrase: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  meaning_id: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  usage_note: Memberi rekomendasi.
+- phrase: بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+  meaning_id: Setelah percobaan, kita menilai hasilnya lagi.
+  usage_note: Menutup dengan evaluasi.

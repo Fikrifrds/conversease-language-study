@@ -1,0 +1,14 @@
+# Listening Script
+
+**Rami:** كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟
+**Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+**Rami:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟
+**Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+**Rami:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟
+**Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+**Rami:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟
+**Tariq:** بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a measured B2 discussion pace with a short natural pause between speakers. Use distinct voices according to speaker names and gender.

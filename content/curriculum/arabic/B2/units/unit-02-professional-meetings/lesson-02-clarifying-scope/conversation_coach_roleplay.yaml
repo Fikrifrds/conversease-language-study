@@ -1,0 +1,70 @@
+scenario_key: arabic_b2_clarifying_scope
+mode: lesson_practice_coach
+level_code: B2
+opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+learner_goal: Latih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons,
+  dan rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.'
+  sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
+  focus: Membuka kontribusi rapat.
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أَبْدَأَ
+  - بِنُقْطَةٍ
+  - عَنْ
+  indonesian_explanation: Saya ingin mulai dengan poin tentang memperjelas scope diskusi.
+- coach: 'استخدم الفكرة: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
+  hint: 'Jawab dengan struktur B2 memakai: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
+  sample_answer: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+  focus: Memastikan scope.
+  expected_keywords:
+  - هَلْ
+  - نِطَاقُ
+  - النِّقَاشِ
+  - وَاضِحٌ
+  - لِلْجَمِيعِ
+  indonesian_explanation: Apakah cakupan diskusi jelas untuk semua orang?
+- coach: 'استخدم الفكرة: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
+  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
+  sample_answer: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+  focus: Memberi feedback profesional.
+  expected_keywords:
+  - عِنْدِي
+  - مُلَاحَظَةٌ
+  - بَنَّاءَةٌ
+  - عَلَى
+  - هَذَا
+  indonesian_explanation: Saya punya masukan konstruktif untuk usulan ini.
+- coach: 'استخدم الفكرة: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
+  sample_answer: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  focus: Merangkum keputusan.
+  expected_keywords:
+  - الْقَرَارُ
+  - الْأَسَاسِيُّ
+  - هُوَ
+  - أَنْ
+  - نُكْمِلَ
+  indonesian_explanation: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+target_phrases:
+- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
+- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

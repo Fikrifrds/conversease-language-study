@@ -1,0 +1,14 @@
+# Listening Script
+
+**Khalid:** مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟
+**Omar:** أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ وَاضِحًا.
+**Khalid:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟
+**Omar:** أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ. أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+**Khalid:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟
+**Omar:** يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.
+**Khalid:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟
+**Omar:** إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a measured B2 discussion pace with a short natural pause between speakers. Use distinct voices according to speaker names and gender.

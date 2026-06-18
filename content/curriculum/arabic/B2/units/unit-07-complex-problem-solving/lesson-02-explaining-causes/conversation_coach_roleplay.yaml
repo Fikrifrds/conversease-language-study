@@ -1,0 +1,71 @@
+scenario_key: arabic_b2_explaining_causes
+mode: lesson_practice_coach
+level_code: B2
+opening_line: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan penyebab dengan alasan, contoh, respons, dan
+  rekomendasi.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.'
+  sample_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  focus: Melakukan framing problem.
+  expected_keywords:
+  - أَرَى
+  - أَنَّ
+  - هَذِهِ
+  - النُّقْطَةَ
+  - جُزْءٌ
+  indonesian_explanation: Saya melihat bahwa poin menjelaskan penyebab adalah bagian dari masalah yang
+    lebih besar.
+- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
+  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
+  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  focus: Menjelaskan cause.
+  expected_keywords:
+  - السَّبَبُ
+  - الْأَسَاسِيُّ
+  - قَدْ
+  - يَكُونُ
+  - ضَعْفَ
+  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
+- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
+  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
+  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  focus: Membahas tradeoff.
+  expected_keywords:
+  - لِكُلِّ
+  - حَلٍّ
+  - فَائِدَةٌ
+  - وَتَأْثِيرٌ
+  - جَانِبِيٌّ
+  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
+- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
+  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  focus: Memberi rekomendasi.
+  expected_keywords:
+  - أُوصِي
+  - بِحَلٍّ
+  - تَدْرِيجِيٍّ
+  - لِتَقْلِيلِ
+  - الْمَخَاطِرِ
+  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+target_phrases:
+- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+rubric:
+  speaking:
+    minimum_score: 72
+  relevance:
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
+  grammar:
+    minimum_score: 70

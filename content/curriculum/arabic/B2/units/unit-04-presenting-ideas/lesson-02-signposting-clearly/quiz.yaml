@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan mulai dengan pembuka singkat tentang memberi transisi jelas."?
+  options:
+  - سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+  - بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  - مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  correct_answer: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Setelah itu, saya akan menjelaskan manfaat utamanya."?
+  options:
+  - بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  - سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+  - مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  correct_answer: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.

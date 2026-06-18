@@ -1,0 +1,27 @@
+lesson_key: lesson-04-b2-final-test-practice
+slug: arabic-b2-b2-final-test-practice
+title: B2 Final Test Practice
+status: beta
+estimated_minutes: 16
+conversation_situation: b2_final_test_practice
+conversation_goal: Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan
+  rekomendasi.
+grammar_summary: Gabungkan أَسْتَطِيعُ أَنْ، إِذَا، فَـ، dan لِأَنَّ untuk final discussion yang koheren.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

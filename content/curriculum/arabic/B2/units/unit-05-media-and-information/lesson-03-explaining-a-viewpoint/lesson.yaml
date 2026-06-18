@@ -1,0 +1,28 @@
+lesson_key: lesson-03-explaining-a-viewpoint
+slug: arabic-b2-explaining-a-viewpoint
+title: Explaining a Viewpoint
+status: beta
+estimated_minutes: 16
+conversation_situation: explaining_a_viewpoint
+conversation_goal: Latih percakapan Arab B2 untuk menjelaskan sudut pandang dengan alasan, contoh, respons,
+  dan rekomendasi.
+grammar_summary: Gunakan أَفْهَمُ مِنْ، يَجِبُ أَنْ، تَحْتَاجُ إِلَى، dan بَعْدَ untuk diskusi informasi
+  yang kritis.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 72

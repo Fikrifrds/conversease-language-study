@@ -1,0 +1,14 @@
+# Listening Script
+
+**Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+**Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.
+**Salma:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟
+**Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+**Salma:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟
+**Lina:** إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+**Salma:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟
+**Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
+
+## Audio Direction
+
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a measured B2 discussion pace with a short natural pause between speakers. Use distinct voices according to speaker names and gender.

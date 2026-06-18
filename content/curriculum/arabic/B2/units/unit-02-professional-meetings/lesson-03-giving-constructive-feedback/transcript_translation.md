@@ -1,0 +1,10 @@
+# Transcript Translation
+
+- **Maryam:** مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ -> Poin apa yang ingin kamu bahas?
+- **Noura:** أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ. -> Saya ingin mulai dengan poin tentang memberi masukan konstruktif.
+- **Maryam:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
+- **Noura:** هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Apakah cakupan diskusi jelas untuk semua orang? Saya punya masukan konstruktif untuk usulan ini.
+- **Maryam:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?
+- **Noura:** الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+- **Maryam:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟ -> Jadi apa rekomendasi akhirnya?
+- **Noura:** سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
