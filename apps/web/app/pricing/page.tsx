@@ -3,8 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { CheckCircle2, Clipboard, CreditCard, LogIn, ReceiptText, ShieldCheck, X } from "lucide-react";
+import { CheckCircle2, Clipboard, CreditCard, LogIn, ReceiptText, ShieldCheck } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { Modal } from "@/components/modal";
 import { getAuthSession } from "@/lib/auth-api";
 import {
   confirmManualTransfer,
@@ -363,24 +364,14 @@ function CheckoutModal({
   const holder = order ? orderMetadata(order, "bank_account_holder", "Conversease") : "Conversease";
 
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-ink/55 p-0 backdrop-blur-sm sm:items-center sm:p-4">
-      <section className="max-h-[92svh] w-full overflow-y-auto rounded-t-lg bg-white p-5 shadow-2xl sm:max-w-2xl sm:rounded-lg sm:p-6">
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase text-leaf">Checkout</p>
-            <h2 className="mt-1 text-2xl font-semibold">{item.name}</h2>
-            <p className="mt-1 text-sm text-ink/60">{item.access} / {item.cadence}</p>
-          </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="focus-ring rounded-lg p-2 text-ink/55 hover:bg-paper hover:text-ink"
-            aria-label="Tutup checkout"
-          >
-            <X className="h-5 w-5" aria-hidden="true" />
-          </button>
-        </div>
-
+    <Modal
+      eyebrow="Checkout"
+      title={item.name}
+      description={`${item.access} / ${item.cadence}`}
+      size="lg"
+      closeLabel="Tutup checkout"
+      onClose={onClose}
+    >
         {authPrompt ? (
           <div className="mt-5 rounded-lg border border-leaf/20 bg-mint p-5">
             <LogIn className="h-6 w-6 text-leaf" aria-hidden="true" />
@@ -517,7 +508,6 @@ function CheckoutModal({
 
         {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
         {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
-      </section>
-    </div>
+    </Modal>
   );
 }

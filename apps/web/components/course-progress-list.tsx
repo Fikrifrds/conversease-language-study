@@ -3,8 +3,9 @@
 import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowRight, CheckCircle2, CircleDot, PlayCircle, X } from "lucide-react";
+import { ArrowRight, CheckCircle2, CircleDot, PlayCircle } from "lucide-react";
 import { LoginForm } from "@/components/login-form";
+import { Modal } from "@/components/modal";
 import { getAuthSession } from "@/lib/auth-api";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
@@ -181,28 +182,15 @@ function LessonLoginModal({
   onSuccess: (nextPath: string) => void;
 }) {
   return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center bg-ink/55 p-0 backdrop-blur-sm sm:items-center sm:p-4">
-      <section className="max-h-[92svh] w-full overflow-y-auto rounded-t-lg bg-white p-5 shadow-2xl sm:max-w-md sm:rounded-lg sm:p-6">
-        <div className="flex items-start justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase text-leaf">Mulai lesson</p>
-            <h2 className="mt-1 text-2xl font-semibold">Login untuk lanjut belajar</h2>
-            <p className="mt-2 text-sm leading-6 text-ink/60">
-              Katalog course bisa dilihat bebas. Untuk membuka lesson, simpan progress, dan memutar audio,
-              silakan login dulu.
-            </p>
-          </div>
-          <button
-            type="button"
-            onClick={onClose}
-            className="focus-ring rounded-lg p-2 text-ink/55 hover:bg-paper hover:text-ink"
-            aria-label="Tutup login"
-          >
-            <X className="h-5 w-5" aria-hidden="true" />
-          </button>
-        </div>
-        <LoginForm defaultNextPath={targetPath} onSuccess={onSuccess} />
-      </section>
-    </div>
+    <Modal
+      eyebrow="Mulai lesson"
+      title="Login untuk lanjut belajar"
+      description="Katalog course bisa dilihat bebas. Untuk membuka lesson, simpan progress, dan memutar audio, silakan login dulu."
+      size="sm"
+      closeLabel="Tutup login"
+      onClose={onClose}
+    >
+      <LoginForm defaultNextPath={targetPath} onSuccess={onSuccess} />
+    </Modal>
   );
 }
