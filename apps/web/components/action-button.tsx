@@ -6,9 +6,10 @@ type ActionButtonProps = {
   children: React.ReactNode;
   icon?: LucideIcon;
   tone?: "dark" | "light" | "leaf" | "outline" | "glass";
+  className?: string;
 };
 
-export function ActionButton({ href, children, icon: Icon, tone = "dark" }: ActionButtonProps) {
+export function ActionButton({ href, children, icon: Icon, tone = "dark", className = "" }: ActionButtonProps) {
   const tones = {
     dark: "bg-ink text-white hover:bg-leaf",
     light: "bg-white text-ink hover:bg-mint",
@@ -20,7 +21,7 @@ export function ActionButton({ href, children, icon: Icon, tone = "dark" }: Acti
   return (
     <Link
       href={href}
-      className={`focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition ${tones[tone]}`}
+      className={`focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition ${tones[tone]} ${className}`}
     >
       {Icon ? <Icon className="h-4 w-4" aria-hidden="true" /> : null}
       <span>{children}</span>
