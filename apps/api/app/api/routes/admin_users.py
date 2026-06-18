@@ -61,7 +61,15 @@ def looks_suspicious_user(user: User) -> bool:
         return True
     if len(letters) >= 8 and vowel_count <= 1:
         return True
+    # Random camelCase names (e.g. "gnGtDYnbGqUCvugrLa") have many lowercase->
+    # uppercase humps. Real names cap out at one ("McDonald", "JoAnne").
+    if " " not in name and _camelcase_humps(collapsed) >= 3:
+        return True
     return False
+
+
+def _camelcase_humps(value: str) -> int:
+    return sum(1 for prev, curr in zip(value, value[1:]) if prev.islower() and curr.isupper())
 
 
 @router.get("/admin/users")

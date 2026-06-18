@@ -6,12 +6,27 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
+from app.api.routes.admin_users import looks_suspicious_user
 from app.core.config import settings
 from app.core.security import create_access_token
 from app.db import models  # noqa: F401
 from app.db.base import Base
 from app.db.session import get_db
+from app.domain.users import User
 from app.main import create_app
+
+
+def _user(name: str, email: str = "real@yahoo.com") -> User:
+    now = datetime.utcnow()
+    return User(
+        id="x",
+        name=name,
+        email=email,
+        role="student",
+        email_verified_at=None,
+        created_at=now,
+        updated_at=now,
+    )
 
 
 class AdminUsersRoutesTest(unittest.TestCase):
@@ -172,6 +187,34 @@ class AdminUsersRoutesTest(unittest.TestCase):
         self.assertEqual(search_after_delete.status_code, 200)
         self.assertEqual(search_after_delete.json()["data"], [])
         client.app.dependency_overrides.clear()
+
+
+class SuspiciousUserHeuristicTest(unittest.TestCase):
+    def test_flags_random_camelcase_bot_names(self):
+        bots = [
+            "fJaAhbRGXTxSKaVrRax",
+            "WIfQXmGLlhBnhhWhXbajOzjn",
+            "gnGtDYnbGqUCvugrLa",
+            "ltOAfUpgXoPgqVEcnr",
+            "ajcYCQcpFstPCggfOyFblb",
+            "exmmOiDApydGukbbQCEupYzc",
+        ]
+        for name in bots:
+            self.assertTrue(looks_suspicious_user(_user(name)), msg=name)
+
+    def test_does_not_flag_real_names(self):
+        real = [
+            "Sandra Andrus",
+            "Daniel Haefliger",
+            "McDonald",
+            "MacArthur",
+            "JoAnne",
+            "DeWitt",
+            "Fikri Firdaus",
+            "LaToya",
+        ]
+        for name in real:
+            self.assertFalse(looks_suspicious_user(_user(name)), msg=name)
 
 
 if __name__ == "__main__":
