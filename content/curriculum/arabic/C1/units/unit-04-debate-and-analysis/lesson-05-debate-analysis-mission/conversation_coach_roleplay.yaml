@@ -1,0 +1,73 @@
+scenario_key: arabic_c1_debate_analysis_mission
+mode: lesson_practice_coach
+level_code: C1
+opening_line: مَا الِافْتِرَاضُ الَّذِي يَقُومُ عَلَيْهِ هَذَا الْحُجَّةُ؟
+learner_goal: Latih percakapan Arab C1 untuk debate analysis mission dengan nuance, struktur, presisi,
+  dan respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا الِافْتِرَاضُ الَّذِي يَقُومُ عَلَيْهِ هَذَا الْحُجَّةُ؟
+  hint: 'Jawab dengan struktur C1 memakai: أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ
+    بِوُضُوحٍ.'
+  sample_answer: أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
+  focus: Mengidentifikasi asumsi.
+  expected_keywords:
+  - أَعْتَقِدُ
+  - أَنَّ
+  - الِافْتِرَاضَ
+  - الْأَسَاسِيَّ
+  - هُنَا
+  indonesian_explanation: Saya pikir asumsi dasarnya di sini belum disebutkan dengan jelas.
+- coach: 'استخدم الفكرة: يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
+  sample_answer: يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
+  focus: Menantang argumen.
+  expected_keywords:
+  - يُمْكِنُنَا
+  - أَنْ
+  - نُحَدِّيَ
+  - هَذِهِ
+  - الْحُجَّةَ
+  indonesian_explanation: Kita bisa menantang argumen ini dari sisi bukti.
+- coach: 'استخدم الفكرة: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي
+    أَكْثَرَ مِنْ سِيَاقٍ.'
+  sample_answer: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
+  focus: Menyajikan evidence.
+  expected_keywords:
+  - الدَّلِيلُ
+  - الْأَقْوَى
+  - هُوَ
+  - أَنَّ
+  - النَّتِيجَةَ
+  indonesian_explanation: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
+- coach: 'استخدم الفكرة: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
+  hint: 'Jawab dengan struktur C1 memakai: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
+    وَلَا أُطِيلُ.'
+  sample_answer: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  focus: Merespons under pressure.
+  expected_keywords:
+  - تَحْتَ
+  - الضَّغْطِ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  - النُّقْطَةِ
+  indonesian_explanation: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
+target_phrases:
+- أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
+- يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
+- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
+- تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

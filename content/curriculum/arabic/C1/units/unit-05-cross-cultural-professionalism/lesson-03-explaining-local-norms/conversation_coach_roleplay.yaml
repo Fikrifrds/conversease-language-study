@@ -1,0 +1,71 @@
+scenario_key: arabic_c1_explaining_local_norms
+mode: lesson_practice_coach
+level_code: C1
+opening_line: كَيْفَ نَتَصَرَّفُ بِمِهَنِيَّةٍ فِي سِيَاقٍ ثَقَافِيٍّ مُخْتَلِفٍ؟
+learner_goal: Latih percakapan Arab C1 untuk explaining local norms dengan nuance, struktur, presisi,
+  dan respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ نَتَصَرَّفُ بِمِهَنِيَّةٍ فِي سِيَاقٍ ثَقَافِيٍّ مُخْتَلِفٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.'
+  sample_answer: قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+  focus: Membaca konteks.
+  expected_keywords:
+  - قَبْلَ
+  - أَنْ
+  - نَرُدَّ،
+  - يَجِبُ
+  - أَنْ
+  indonesian_explanation: Sebelum merespons, kita harus membaca konteks dengan cermat.
+- coach: 'استخدم الفكرة: هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟'
+  hint: 'Jawab dengan struktur C1 memakai: هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟'
+  sample_answer: هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
+  focus: Bertanya dengan halus.
+  expected_keywords:
+  - هَلْ
+  - يُمْكِنُ
+  - أَنْ
+  - أَسْأَلَ
+  - بِطَرِيقَةٍ
+  indonesian_explanation: Bisakah saya bertanya dengan cara yang lebih tactful?
+- coach: 'استخدم الفكرة: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
+  sample_answer: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
+  focus: Menjelaskan norma lokal.
+  expected_keywords:
+  - فِي
+  - بَلَدِي،
+  - هَذَا
+  - الْمِعْيَارُ
+  - يُفْهَمُ
+  indonesian_explanation: Di negara saya, norma ini dipahami dengan cara yang berbeda.
+- coach: 'استخدم الفكرة: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ
+    الْفِكْرَةِ.'
+  sample_answer: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+  focus: Memperbaiki misunderstanding.
+  expected_keywords:
+  - يَبْدُو
+  - أَنَّ
+  - هُنَاكَ
+  - سُوءَ
+  - فَهْمٍ،
+  indonesian_explanation: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
+target_phrases:
+- قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+- هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
+- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
+- يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+- الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

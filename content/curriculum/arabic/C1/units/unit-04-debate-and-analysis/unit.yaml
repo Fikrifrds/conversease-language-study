@@ -1,0 +1,11 @@
+unit_key: unit-04-debate-and-analysis
+level_code: C1
+title: Debate & Analysis
+main_conversation_outcome: Analyze arguments and respond persuasively in debate-style conversations.
+status: beta
+lessons:
+- lesson-01-identifying-assumptions
+- lesson-02-challenging-an-argument
+- lesson-03-presenting-evidence
+- lesson-04-responding-under-pressure
+- lesson-05-debate-analysis-mission

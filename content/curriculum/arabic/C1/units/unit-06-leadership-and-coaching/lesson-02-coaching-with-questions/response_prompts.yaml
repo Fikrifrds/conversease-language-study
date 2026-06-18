@@ -1,0 +1,20 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Hal pertama adalah menetapkan arah dengan jelas.'
+  target_response: أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+  acceptable_responses:
+  - أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Daripada memberi jawaban langsung, saya akan bertanya pertanyaan
+    yang membuka pemikiran.'
+  target_response: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+  acceptable_responses:
+  - بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Feedback yang berguna adalah yang berubah menjadi langkah yang dapat
+    diterapkan.'
+  target_response: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
+  acceptable_responses:
+  - الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan
+    kualitas.'
+  target_response: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  acceptable_responses:
+  - عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.

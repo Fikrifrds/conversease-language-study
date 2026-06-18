@@ -1,0 +1,28 @@
+lesson_key: lesson-03-review-leadership-and-listening
+slug: arabic-c1-review-leadership-and-listening
+title: Review Leadership and Listening
+status: beta
+estimated_minutes: 18
+conversation_situation: review_leadership_and_listening
+conversation_goal: Latih percakapan Arab C1 untuk review leadership and listening dengan nuance, struktur,
+  presisi, dan respons profesional.
+grammar_summary: Gabungkan دُونَ، فِي، عِنْدَ، إِذَا، dan وَ untuk final conversation yang kompleks tetapi
+  jelas.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 76

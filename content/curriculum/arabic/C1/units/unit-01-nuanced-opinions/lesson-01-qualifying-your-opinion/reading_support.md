@@ -1,0 +1,9 @@
+# Bantuan Membaca
+
+Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+
+- مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
+- لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. -> Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini.
+- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
+- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
+- لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.

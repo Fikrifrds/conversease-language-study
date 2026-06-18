@@ -1,0 +1,73 @@
+scenario_key: arabic_c1_managing_expectations
+mode: lesson_practice_coach
+level_code: C1
+opening_line: كَيْفَ نُدِيرُ هَذَا الْحِوَارَ بِطَرِيقَةٍ اِسْتِرَاتِيجِيَّةٍ؟
+learner_goal: Latih percakapan Arab C1 untuk managing expectations dengan nuance, struktur, presisi, dan
+  respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ نُدِيرُ هَذَا الْحِوَارَ بِطَرِيقَةٍ اِسْتِرَاتِيجِيَّةٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.'
+  sample_answer: نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
+  focus: Menyelaraskan stakeholder.
+  expected_keywords:
+  - نَحْتَاجُ
+  - أَوَّلًا
+  - إِلَى
+  - تَوْحِيدِ
+  - فَهْمِ
+  indonesian_explanation: Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
+- coach: 'استخدم الفكرة: مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ
+    بِشَيْءٍ مُحَدَّدٍ.'
+  sample_answer: مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
+  focus: Mengelola ekspektasi.
+  expected_keywords:
+  - مِنَ
+  - الْأَفْضَلِ
+  - أَنْ
+  - نُدِيرَ
+  - التَّوَقُّعَاتِ
+  indonesian_explanation: Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
+- coach: 'استخدم الفكرة: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.'
+  hint: 'Jawab dengan struktur C1 memakai: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ
+    مُهِمٌّ.'
+  sample_answer: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
+  focus: Memberi feedback sensitif.
+  expected_keywords:
+  - سَأُقَدِّمُ
+  - هَذِهِ
+  - الْمُلَاحَظَةَ
+  - بِحَسَاسِيَّةٍ،
+  - لِأَنَّ
+  indonesian_explanation: Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
+- coach: 'استخدم الفكرة: يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ
+    بِخُطَّةٍ وَاضِحَةٍ.'
+  sample_answer: يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
+  focus: Mengomunikasikan risiko.
+  expected_keywords:
+  - يُوجَدُ
+  - خَطَرٌ
+  - مُحْتَمَلٌ،
+  - وَلَكِنْ
+  - يُمْكِنُنَا
+  indonesian_explanation: Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
+target_phrases:
+- نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
+- مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
+- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
+- يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
+- إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

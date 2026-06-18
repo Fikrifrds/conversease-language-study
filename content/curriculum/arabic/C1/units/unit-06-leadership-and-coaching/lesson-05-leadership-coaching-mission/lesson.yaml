@@ -1,0 +1,28 @@
+lesson_key: lesson-05-leadership-coaching-mission
+slug: arabic-c1-leadership-coaching-mission
+title: Leadership Coaching Mission
+status: beta
+estimated_minutes: 18
+conversation_situation: leadership_coaching_mission
+conversation_goal: Latih percakapan Arab C1 untuk leadership coaching mission dengan nuance, struktur,
+  presisi, dan respons profesional.
+grammar_summary: Gunakan بَدَلًا مِنْ أَنْ، الَّتِي، عِنْدَ، dan سَـ untuk leadership conversation yang
+  matang.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 76

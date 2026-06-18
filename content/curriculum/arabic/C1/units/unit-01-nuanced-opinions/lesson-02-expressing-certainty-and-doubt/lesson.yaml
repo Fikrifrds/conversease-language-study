@@ -1,0 +1,28 @@
+lesson_key: lesson-02-expressing-certainty-and-doubt
+slug: arabic-c1-expressing-certainty-and-doubt
+title: Expressing Certainty and Doubt
+status: beta
+estimated_minutes: 18
+conversation_situation: expressing_certainty_and_doubt
+conversation_goal: Latih percakapan Arab C1 untuk expressing certainty and doubt dengan nuance, struktur,
+  presisi, dan respons profesional.
+grammar_summary: Gunakan مِنْ حَيْثُ، لَسْتُ مُتَيَقِّنًا، مِنْ جِهَةٍ، غَيْرَ أَنَّ، dan لِذَلِكَ untuk
+  opini C1 yang nuanced.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 76

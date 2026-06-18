@@ -1,0 +1,74 @@
+scenario_key: arabic_c1_review_presenting_and_debate
+mode: lesson_practice_coach
+level_code: C1
+opening_line: مَا الْمَهَارَةُ الَّتِي تَحْتَاجُ إِلَى مُرَاجَعَةٍ أَخِيرَةٍ؟
+learner_goal: Latih percakapan Arab C1 untuk review presenting and debate dengan nuance, struktur, presisi,
+  dan respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا الْمَهَارَةُ الَّتِي تَحْتَاجُ إِلَى مُرَاجَعَةٍ أَخِيرَةٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ
+    مُبَالَغَةٍ.'
+  sample_answer: أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
+  focus: Review nuance.
+  expected_keywords:
+  - أُرَاجِعُ
+  - الْآنَ
+  - كَيْفَ
+  - أُعَبِّرُ
+  - عَنْ
+  indonesian_explanation: Saya sedang mereview cara menyampaikan opini yang tepat tanpa berlebihan.
+- coach: 'استخدم الفكرة: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
+  hint: 'Jawab dengan struktur C1 memakai: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ
+    وَالْمَخَاطِرِ.'
+  sample_answer: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+  focus: Review strategy.
+  expected_keywords:
+  - فِي
+  - الْحِوَارِ
+  - الْمِهَنِيِّ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  indonesian_explanation: Dalam percakapan profesional, saya akan fokus pada konteks, ekspektasi, dan
+    risiko.
+- coach: 'استخدم الفكرة: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ
+    مُقْنِعٍ.'
+  sample_answer: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
+  focus: Review presenting and debate.
+  expected_keywords:
+  - عِنْدَ
+  - الْعَرْضِ
+  - أَوِ
+  - النِّقَاشِ،
+  - سَأَبْنِي
+  indonesian_explanation: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
+  sample_answer: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  focus: Review cross-cultural repair.
+  expected_keywords:
+  - إِذَا
+  - ظَهَرَ
+  - سُوءُ
+  - فَهْمٍ،
+  - فَسَأُصْلِحُهُ
+  indonesian_explanation: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
+target_phrases:
+- أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
+- فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
+- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+- فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,28 @@
+lesson_key: lesson-01-setting-direction
+slug: arabic-c1-setting-direction
+title: Setting Direction
+status: beta
+estimated_minutes: 18
+conversation_situation: setting_direction
+conversation_goal: Latih percakapan Arab C1 untuk setting direction dengan nuance, struktur, presisi,
+  dan respons profesional.
+grammar_summary: Gunakan بَدَلًا مِنْ أَنْ، الَّتِي، عِنْدَ، dan سَـ untuk leadership conversation yang
+  matang.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 76

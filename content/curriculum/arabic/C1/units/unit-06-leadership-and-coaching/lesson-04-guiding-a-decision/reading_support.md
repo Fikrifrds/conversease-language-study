@@ -1,0 +1,9 @@
+# Bantuan Membaca
+
+Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+
+- أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Hal pertama adalah menetapkan arah dengan jelas.
+- بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. -> Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran.
+- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
+- عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
+- سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.

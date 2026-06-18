@@ -1,0 +1,76 @@
+scenario_key: arabic_c1_giving_actionable_feedback
+mode: lesson_practice_coach
+level_code: C1
+opening_line: كَيْفَ تُوَجِّهُ الْفَرِيقَ فِي هَذَا الْمَوْقِفِ؟
+learner_goal: Latih percakapan Arab C1 untuk giving actionable feedback dengan nuance, struktur, presisi,
+  dan respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ تُوَجِّهُ الْفَرِيقَ فِي هَذَا الْمَوْقِفِ؟
+  hint: 'Jawab dengan struktur C1 memakai: أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.'
+  sample_answer: أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+  focus: Menetapkan direction.
+  expected_keywords:
+  - أَوَّلُ
+  - شَيْءٍ
+  - هُوَ
+  - تَحْدِيدُ
+  - الْمَسَارِ
+  indonesian_explanation: Hal pertama adalah menetapkan arah dengan jelas.
+- coach: 'استخدم الفكرة: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ
+    التَّفْكِيرَ.'
+  hint: 'Jawab dengan struktur C1 memakai: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ
+    سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.'
+  sample_answer: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+  focus: Coaching dengan pertanyaan.
+  expected_keywords:
+  - بَدَلًا
+  - مِنْ
+  - أَنْ
+  - أُعْطِيَ
+  - جَوَابًا
+  indonesian_explanation: Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka
+    pemikiran.
+- coach: 'استخدم الفكرة: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ
+    لِلتَّطْبِيقِ.'
+  hint: 'Jawab dengan struktur C1 memakai: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى
+    خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.'
+  sample_answer: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
+  focus: Memberi actionable feedback.
+  expected_keywords:
+  - الْمُلَاحَظَةُ
+  - الْمُفِيدَةُ
+  - هِيَ
+  - الَّتِي
+  - تَتَحَوَّلُ
+  indonesian_explanation: Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
+- coach: 'استخدم الفكرة: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ
+    وَالْجَوْدَةِ.'
+  sample_answer: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  focus: Membimbing keputusan.
+  expected_keywords:
+  - عِنْدَ
+  - اتِّخَاذِ
+  - الْقَرَارِ،
+  - يَجِبُ
+  - أَنْ
+  indonesian_explanation: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
+target_phrases:
+- أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+- بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
+- عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+- سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

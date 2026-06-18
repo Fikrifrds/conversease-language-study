@@ -1,0 +1,18 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya pikir asumsi dasarnya di sini belum disebutkan dengan jelas.'
+  target_response: أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
+  acceptable_responses:
+  - أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita bisa menantang argumen ini dari sisi bukti.'
+  target_response: يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
+  acceptable_responses:
+  - يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari
+    satu konteks.'
+  target_response: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
+  acceptable_responses:
+  - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.'
+  target_response: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  acceptable_responses:
+  - تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.

@@ -1,0 +1,77 @@
+scenario_key: arabic_c1_qualifying_your_opinion
+mode: lesson_practice_coach
+level_code: C1
+opening_line: كَيْفَ تُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: Latih percakapan Arab C1 untuk qualifying your opinion dengan nuance, struktur, presisi,
+  dan respons profesional.
+max_turns: 8
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ تُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan struktur C1 memakai: مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ
+    لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
+  sample_answer: مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
+  focus: Menyampaikan opini dengan nuance.
+  expected_keywords:
+  - مِنْ
+  - حَيْثُ
+  - الْمَبْدَأُ،
+  - أَمِيلُ
+  - إِلَى
+  indonesian_explanation: Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan
+    penting.
+- coach: 'استخدم الفكرة: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
+  hint: 'Jawab dengan struktur C1 memakai: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ
+    إِلَى هَذَا الْمَسَارِ.'
+  sample_answer: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.
+  focus: Menyatakan kepastian dan keraguan.
+  expected_keywords:
+  - لَسْتُ
+  - مُتَيَقِّنًا
+  - تَمَامًا،
+  - لَكِنَّ
+  - الْأَدِلَّةَ
+  indonesian_explanation: Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini.
+- coach: 'استخدم الفكرة: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ
+    وَاضِحَةٌ.'
+  hint: 'Jawab dengan struktur C1 memakai: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى،
+    لَهُ مَخَاطِرُ وَاضِحَةٌ.'
+  sample_answer: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
+  focus: Menyeimbangkan dua sudut pandang.
+  expected_keywords:
+  - مِنْ
+  - جِهَةٍ،
+  - هَذَا
+  - الْخِيَارُ
+  - عَمَلِيٌّ،
+  indonesian_explanation: Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
+- coach: 'استخدم الفكرة: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ
+    أُخْرَى.'
+  hint: 'Jawab dengan struktur C1 memakai: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
+    مِنْ زَاوِيَةٍ أُخْرَى.'
+  sample_answer: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+  focus: Melunakkan disagreement.
+  expected_keywords:
+  - أُقَدِّرُ
+  - وِجْهَةَ
+  - نَظَرِكَ،
+  - غَيْرَ
+  - أَنَّنِي
+  indonesian_explanation: Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
+target_phrases:
+- مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
+- لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.
+- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
+- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+- لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.
+rubric:
+  speaking:
+    minimum_score: 76
+  relevance:
+    minimum_score: 76
+  nuance:
+    minimum_score: 74
+  grammar:
+    minimum_score: 74

@@ -1,0 +1,6 @@
+lesson_key: lesson-02-coaching-with-questions
+status: not_generated
+provider: elevenlabs
+model: eleven_v3
+default_voice_id: multi_speaker
+assets: []
