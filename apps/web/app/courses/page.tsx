@@ -61,37 +61,39 @@ export default function CoursesPage() {
 
   return (
     <AppShell requireAuth>
-      <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
-        <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
-            <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan Conversease</h1>
-            <p className="mt-3 leading-7 text-ink/70">
-              Pilih track bahasa, lanjutkan level yang terbuka, dan belajar dari lesson yang sudah
-              lengkap dengan dialog, latihan respons, roleplay, dan audio.
-            </p>
-          </div>
+      <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
+        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-7">
+          <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
+            <div className="max-w-3xl">
+              <p className="text-sm font-semibold uppercase text-leaf">Kurikulum</p>
+              <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Jalur percakapan Conversease</h1>
+              <p className="mt-3 leading-7 text-ink/70">
+                Pilih track bahasa, lanjutkan level yang terbuka, dan belajar dari lesson yang sudah
+                lengkap dengan dialog, latihan respons, roleplay, dan audio.
+              </p>
+            </div>
 
-          <div className="flex flex-wrap gap-1 rounded-lg border border-ink/10 bg-white p-1 shadow-sm lg:inline-flex lg:shrink-0">
-            {languageFilters.map((item) => (
-              <button
-                key={item.key}
-                type="button"
-                onClick={() => setLanguageFilter(item.key)}
-                className={`focus-ring inline-flex h-10 items-center gap-2 rounded-lg px-3 text-sm font-semibold transition ${
-                  languageFilter === item.key
-                    ? "bg-ink text-white"
-                    : "text-ink/65 hover:bg-paper hover:text-ink"
-                }`}
-              >
-                {item.key === "all" ? <Languages className="h-4 w-4" aria-hidden="true" /> : null}
-                {item.label}
-              </button>
-            ))}
+            <div className="flex flex-wrap gap-1 rounded-lg border border-ink/10 bg-paper p-1 lg:inline-flex lg:shrink-0">
+              {languageFilters.map((item) => (
+                <button
+                  key={item.key}
+                  type="button"
+                  onClick={() => setLanguageFilter(item.key)}
+                  className={`focus-ring inline-flex h-10 items-center gap-2 rounded-lg px-3 text-sm font-semibold transition ${
+                    languageFilter === item.key
+                      ? "bg-ink text-white"
+                      : "text-ink/65 hover:bg-paper hover:text-ink"
+                  }`}
+                >
+                  {item.key === "all" ? <Languages className="h-4 w-4" aria-hidden="true" /> : null}
+                  {item.label}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 grid gap-4 md:grid-cols-2">
+        <div className="mt-5 grid gap-4 md:grid-cols-2">
           <TrackSummaryCard
             title="English Track"
             status="Ready"
@@ -164,8 +166,8 @@ function TrackSummaryCard({
     <button
       type="button"
       onClick={onClick}
-      className={`focus-ring rounded-lg border p-5 text-left transition ${
-        active ? "border-leaf bg-mint" : "border-ink/10 bg-white hover:border-leaf/40"
+      className={`focus-ring group rounded-lg border p-5 text-left shadow-sm transition ${
+        active ? "border-leaf bg-mint" : "border-ink/10 bg-white hover:border-leaf/40 hover:shadow-soft"
       }`}
     >
       <div className="flex items-start justify-between gap-4">
@@ -174,7 +176,9 @@ function TrackSummaryCard({
           <h2 className="mt-1 break-words text-xl font-semibold">{title}</h2>
           <p className="mt-2 break-words text-sm leading-6 text-ink/65">{description}</p>
         </div>
-        <BookOpen className="h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+        <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-paper transition group-hover:bg-mint">
+          <BookOpen className="h-5 w-5 text-leaf" aria-hidden="true" />
+        </span>
       </div>
       <p className="mt-4 text-xs font-semibold uppercase text-ink/45">
         {trackCourses.length} level / {trackCourses.reduce((sum, course) => sum + course.units.length, 0)} unit
@@ -199,7 +203,7 @@ function CourseCard({
     return (
       <Link
         href={`/courses/${course.slug}`}
-        className="focus-ring flex min-h-[260px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition-colors hover:border-leaf/40"
+        className="focus-ring group flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
       >
         <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
         <p className="mt-3 text-sm leading-6 text-ink/70">{course.outcome}</p>
@@ -210,7 +214,7 @@ function CourseCard({
           </p>
           <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
             Buka
-            <ArrowRight className="h-5 w-5" aria-hidden="true" />
+            <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
           </span>
         </div>
       </Link>
@@ -220,7 +224,7 @@ function CourseCard({
   const lockedForPro = access.requiresPro && access.unlocked;
   return (
     <div
-      className="flex min-h-[260px] flex-col rounded-lg border border-ink/10 bg-white p-5 text-ink/60 shadow-sm"
+      className="flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 text-ink/60 shadow-sm"
       aria-disabled="true"
     >
       <CourseCardHeader course={course} badgeTone="bg-paper text-ink/55" lessonCount={lessonCount} muted />
@@ -275,7 +279,7 @@ function CourseCardHeader({
             {lessonCount} lesson
           </span>
         </div>
-        <h3 className={`mt-4 break-words text-2xl font-semibold ${muted ? "text-ink/70" : "text-ink"}`}>
+        <h3 className={`mt-4 break-words text-[1.45rem] font-semibold leading-tight ${muted ? "text-ink/70" : "text-ink"}`}>
           {course.title}
         </h3>
       </div>

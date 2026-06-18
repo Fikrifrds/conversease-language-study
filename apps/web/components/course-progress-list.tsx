@@ -41,7 +41,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
   );
 
   return (
-    <div className="mt-8 space-y-4">
+    <div className="mt-8 space-y-5">
       {course.units.map((unit, unitIndex) => {
         const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
         const completedLessons = activeLessons.filter(
@@ -55,7 +55,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
           <section
             key={unit.title}
             id={`unit-${unitIndex + 1}`}
-            className="scroll-mt-24 rounded-lg border border-ink/10 bg-white p-5 shadow-sm"
+            className="scroll-mt-24 rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-6"
           >
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div>
@@ -75,7 +75,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
             </div>
 
             {activeLessons.length ? (
-              <div className="mt-5 grid gap-3 md:grid-cols-3">
+              <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
                 {activeLessons.map((lesson, lessonIndex) => {
                   const lessonProgress = progressBySlug.get(lesson.slug);
                   const completed = lessonProgress?.progressStatus === "completed";
@@ -86,7 +86,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                     <Link
                       key={lesson.slug}
                       href={`/lessons/${lesson.slug}`}
-                      className="focus-ring group rounded-lg bg-paper p-4 transition hover:bg-mint"
+                      className="focus-ring group rounded-lg border border-transparent bg-paper p-4 transition hover:border-leaf/20 hover:bg-mint"
                     >
                       <div className="flex items-center justify-between gap-3">
                         <span className="text-xs font-semibold uppercase text-leaf">
@@ -107,7 +107,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                           )}
                         </span>
                       </div>
-                      <h3 className="mt-3 font-semibold text-ink">{lesson.title}</h3>
+                      <h3 className="mt-3 font-semibold leading-snug text-ink">{lesson.title}</h3>
                       <div className="mt-3 flex items-center justify-between gap-3 text-sm text-ink/60">
                         <span>{lesson.minutes} menit</span>
                         <ArrowRight className="h-4 w-4 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" />
