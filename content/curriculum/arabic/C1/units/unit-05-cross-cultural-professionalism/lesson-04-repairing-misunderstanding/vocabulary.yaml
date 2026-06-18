@@ -1,12 +1,6 @@
 vocabulary:
-- word: السِّيَاقُ
-  meaning_id: konteks
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: لَبَاقَةٌ
-  meaning_id: takt/kesantunan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: مِعْيَارٌ
-  meaning_id: norma/standar
+- word: إِصْلَاحٌ
+  meaning_id: perbaikan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: سُوءٌ
   meaning_id: keburukan/salah
@@ -14,12 +8,18 @@ vocabulary:
 - word: فَهْمٌ
   meaning_id: pemahaman
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: هَدَفٌ
-  meaning_id: tujuan
+- word: السِّيَاقُ
+  meaning_id: konteks
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: اِحْتِرَامٌ
-  meaning_id: penghormatan
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: كَيْفَ
-  meaning_id: bagaimana
+- word: لَبَاقَةٌ
+  meaning_id: takt/kesantunan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: مِعْيَارٌ
+  meaning_id: norma/standar
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.

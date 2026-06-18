@@ -1,6 +1,15 @@
 vocabulary:
+- word: تَوْجِيهٌ
+  meaning_id: arahan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: أَسْئِلَةٌ
+  meaning_id: pertanyaan-pertanyaan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: مَسَارٌ
   meaning_id: jalur/arah
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
@@ -8,18 +17,9 @@ vocabulary:
 - word: خُطْوَةٌ
   meaning_id: langkah
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: تَطْبِيقٌ
-  meaning_id: penerapan
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: كَيْفَ
-  meaning_id: bagaimana
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: مَوْقِفٌ
-  meaning_id: posisi/sikap
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: دِقَّةٌ
-  meaning_id: ketepatan
   usage_note: Kata inti dari dialog dan frasa lesson ini.

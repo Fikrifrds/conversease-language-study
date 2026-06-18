@@ -1,24 +1,6 @@
 lesson_key: lesson-01-identifying-assumptions
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-01-identifying-assumptions/listening-3nav5pHC1EYvWOd5LmnA-20260618T025315Z.wav
-  duration_seconds: 42.42
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Omar: OoE8swS3hImZANNOodf6
-  line_count: 8
-  script_content_hash: 0797e8eea7e44828ad32f078b0fa4016adf54e8b3d24e3806787ee4d70c4aafd
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-01-identifying-assumptions/listening-3nav5pHC1EYvWOd5LmnA-20260618T025315Z.wav
-  trace_id: U22QvSq5UENnereGcPS7,gzYac4G3SvGkFVzzCA78,jdRvaRlzX89bHOxMe4QC,jbnYV6ecDXOQuaoyVrkm,uMW2xYJnJPARLO4lwpES,uMq4dmgKLTXKb72AC27w,A1Xsa1bHlL6NOJDqlUwZ,ap0lx6rVjkNPBPMhqDuV
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:53:15.639387+00:00'
+assets: []

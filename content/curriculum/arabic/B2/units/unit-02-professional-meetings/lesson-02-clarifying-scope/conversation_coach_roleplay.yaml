@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_clarifying_scope
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ
+  نِطَاقِ النِّقَاشِ.
 learner_goal: Latih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons,
   dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ نِطَاقِ
+    النِّقَاشِ.
   hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.'
   sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
   focus: Membuka kontribusi rapat.

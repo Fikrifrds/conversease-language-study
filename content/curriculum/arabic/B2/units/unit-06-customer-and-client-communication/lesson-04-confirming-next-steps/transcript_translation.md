@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ -> Apa yang dibutuhkan klien?
+- **Fatimah:** مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ. -> Apa yang dibutuhkan klien? Saya ingin fokus pada mengonfirmasi langkah berikutnya.
 - **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ. -> Saya ingin memahami kebutuhan klien tentang mengonfirmasi langkah berikutnya.
 - **Fatimah:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Aisha:** لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Kita punya dua opsi, dan setiap opsi memiliki manfaat. Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.

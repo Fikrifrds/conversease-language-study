@@ -253,12 +253,85 @@ LESSONS_BY_UNIT: dict[str, list[tuple[str, str, str]]] = {
 }
 
 
+LESSON_FOCUS_BY_KEY: dict[str, tuple[str, str]] = {
+    "lesson-01-qualifying-your-opinion": ("تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ", "qualifying opinion before making a claim"),
+    "lesson-02-expressing-certainty-and-doubt": ("التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ", "separating certainty and doubt"),
+    "lesson-03-balancing-two-viewpoints": ("الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ", "balancing two viewpoints"),
+    "lesson-04-softening-disagreement": ("تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ", "softening disagreement"),
+    "lesson-05-nuanced-opinion-mission": ("تَرْكِيبِ رَأْيٍ دَقِيقٍ مُتَكَامِلٍ", "building a complete nuanced opinion"),
+    "lesson-01-aligning-stakeholders": ("مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ", "aligning stakeholders"),
+    "lesson-02-managing-expectations": ("إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ", "managing realistic expectations"),
+    "lesson-03-handling-sensitive-feedback": ("تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ", "handling sensitive feedback tactfully"),
+    "lesson-04-communicating-risk": ("شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ", "communicating risk without exaggeration"),
+    "lesson-05-strategic-workplace-mission": ("إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ", "running a strategic workplace conversation"),
+    "lesson-01-framing-a-complex-topic": ("تَأْطِيرِ مَوْضُوعٍ مُعَقَّدٍ", "framing a complex topic"),
+    "lesson-02-building-a-persuasive-flow": ("بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ", "building a persuasive flow"),
+    "lesson-03-using-precise-transitions": ("اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ", "using precise transitions"),
+    "lesson-04-handling-challenging-questions": ("التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ", "handling challenging questions"),
+    "lesson-05-advanced-presentation-mission": ("تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ", "delivering an advanced presentation"),
+    "lesson-01-identifying-assumptions": ("تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ", "identifying hidden assumptions"),
+    "lesson-02-challenging-an-argument": ("مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ", "challenging an argument politely"),
+    "lesson-03-presenting-evidence": ("تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ", "presenting relevant evidence"),
+    "lesson-04-responding-under-pressure": ("الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ", "responding calmly under pressure"),
+    "lesson-05-debate-analysis-mission": ("إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ", "running a balanced analytical debate"),
+    "lesson-01-reading-context": ("قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ", "reading social context"),
+    "lesson-02-asking-tactful-questions": ("طَرْحِ أَسْئِلَةٍ لَبِقَةٍ", "asking tactful questions"),
+    "lesson-03-explaining-local-norms": ("شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ", "explaining local norms"),
+    "lesson-04-repairing-misunderstanding": ("إِصْلَاحِ سُوءِ الْفَهْمِ", "repairing misunderstanding"),
+    "lesson-05-cross-cultural-mission": ("إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ", "running a cross-cultural conversation"),
+    "lesson-01-setting-direction": ("تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ", "setting direction clearly"),
+    "lesson-02-coaching-with-questions": ("التَّوْجِيهِ بِالْأَسْئِلَةِ", "coaching with questions"),
+    "lesson-03-giving-actionable-feedback": ("تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ", "giving actionable feedback"),
+    "lesson-04-guiding-a-decision": ("تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ", "guiding a group decision"),
+    "lesson-05-leadership-coaching-mission": ("إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ", "running a leadership coaching conversation"),
+    "lesson-01-catching-implied-meaning": ("الْتِقَاطِ الْمَعْنَى الضِّمْنِيِّ", "catching implied meaning"),
+    "lesson-02-responding-to-long-turns": ("الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ", "responding to long turns"),
+    "lesson-03-summarizing-what-you-heard": ("تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ", "summarizing what you heard accurately"),
+    "lesson-04-asking-high-quality-follow-ups": ("طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ", "asking high-quality follow-ups"),
+    "lesson-05-advanced-listening-mission": ("إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ", "responding after advanced listening"),
+    "lesson-01-review-nuance-and-strategy": ("مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ", "reviewing nuance and strategy"),
+    "lesson-02-review-presenting-and-debate": ("مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ", "reviewing presenting and debate"),
+    "lesson-03-review-leadership-and-listening": ("مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ", "reviewing leadership and listening"),
+    "lesson-04-c1-final-test-practice": ("تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ", "practicing the final test"),
+    "lesson-05-c1-final-conversation": ("إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ", "running a complete final conversation"),
+}
+
+
 def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, Any]:
     profile = UNIT_PROFILES[unit_key]
     lesson_key, slug, title = lesson_data
     speaker_a, speaker_b = profile["speakers"]
-    prompt_ar, prompt_id = profile["prompt"]
-    phrases = profile["phrases"]
+    focus_ar, focus_id = LESSON_FOCUS_BY_KEY[lesson_key]
+    base_phrases = profile["phrases"]
+    phrases = [
+        phrase(
+            f"فِي مَهَارَةِ {focus_ar}، {base_phrases[0]['phrase']}",
+            f"Dalam skill {focus_id}, {base_phrases[0]['meaning']}",
+            f"{base_phrases[0]['usage']} Fokus lesson: {focus_id}.",
+        ),
+        phrase(
+            f"عِنْدَ تَطْبِيقِ {focus_ar}، {base_phrases[1]['phrase']}",
+            f"Saat menerapkan {focus_id}, {base_phrases[1]['meaning']}",
+            f"{base_phrases[1]['usage']} Hubungkan dengan fokus lesson.",
+        ),
+        phrase(
+            base_phrases[2]["phrase"],
+            base_phrases[2]["meaning"],
+            f"{base_phrases[2]['usage']} Pakai sebagai penghubung dalam {focus_id}.",
+        ),
+        phrase(
+            f"إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، {base_phrases[3]['phrase']}",
+            f"Jika muncul tantangan dalam skill ini, {base_phrases[3]['meaning']}",
+            f"{base_phrases[3]['usage']} Gunakan untuk repair dalam {focus_id}.",
+        ),
+        phrase(
+            f"فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، {base_phrases[4]['phrase']}",
+            f"Dalam final formulation untuk {focus_id}, {base_phrases[4]['meaning']}",
+            f"{base_phrases[4]['usage']} Tutup percakapan sesuai fokus lesson.",
+        ),
+    ]
+    prompt_ar = f"كَيْفَ تُطَبِّقُ مَهَارَةَ {focus_ar} فِي حِوَارٍ رَسْمِيٍّ؟"
+    prompt_id = f"Bagaimana kamu menerapkan {focus_id} dalam percakapan formal?"
     dialogue = [
         line(speaker_a, prompt_ar, prompt_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),
@@ -274,8 +347,10 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
         "slug": slug,
         "title": title,
         "status": "beta",
+        "focus": focus_ar,
+        "focus_id": focus_id,
         "situation": profile["situation"],
-        "goal": f"Latih percakapan Arab C1 untuk {title.lower()} dengan nuance, struktur, presisi, dan respons profesional.",
+        "goal": f"Latih percakapan Arab C1 untuk {focus_id} dengan nuance, struktur, presisi, dan respons profesional.",
         "grammar": profile["grammar"],
         "patterns": profile["patterns"],
         "phrases": phrases,

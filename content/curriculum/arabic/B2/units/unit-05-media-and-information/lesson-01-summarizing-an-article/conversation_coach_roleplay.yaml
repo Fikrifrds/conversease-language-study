@@ -1,14 +1,14 @@
 scenario_key: arabic_b2_summarizing_an_article
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟
+opening_line: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَلْخِيصُ مَقَالٍ.
 learner_goal: Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟
+- coach: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَلْخِيصُ مَقَالٍ.
   hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.'
   sample_answer: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
   focus: Merangkum artikel.

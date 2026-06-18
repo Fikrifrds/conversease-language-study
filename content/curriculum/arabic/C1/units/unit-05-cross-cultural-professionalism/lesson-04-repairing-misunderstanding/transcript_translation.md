@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** كَيْفَ نَتَصَرَّفُ بِمِهَنِيَّةٍ فِي سِيَاقٍ ثَقَافِيٍّ مُخْتَلِفٍ؟ -> Bagaimana kita bersikap profesional dalam konteks budaya yang berbeda?
-- **Aisha:** قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ. -> Sebelum merespons, kita harus membaca konteks dengan cermat.
+- **Fatimah:** كَيْفَ تُطَبِّقُ مَهَارَةَ إِصْلَاحِ سُوءِ الْفَهْمِ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan repairing misunderstanding dalam percakapan formal?
+- **Aisha:** فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ. -> Dalam skill repairing misunderstanding, Sebelum merespons, kita harus membaca konteks dengan cermat.
 - **Fatimah:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
-- **Aisha:** هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ. -> Bisakah saya bertanya dengan cara yang lebih tactful? Di negara saya, norma ini dipahami dengan cara yang berbeda.
+- **Aisha:** عِنْدَ تَطْبِيقِ إِصْلَاحِ سُوءِ الْفَهْمِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ. -> Saat menerapkan repairing misunderstanding, Bisakah saya bertanya dengan cara yang lebih tactful? Di negara saya, norma ini dipahami dengan cara yang berbeda.
 - **Fatimah:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
-- **Aisha:** يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ. -> Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
+- **Aisha:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ. -> Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
 - **Fatimah:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
-- **Aisha:** الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.
+- **Aisha:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Dalam final formulation untuk repairing misunderstanding, Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.

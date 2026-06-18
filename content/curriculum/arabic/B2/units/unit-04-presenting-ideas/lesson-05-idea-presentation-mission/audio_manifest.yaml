@@ -1,24 +1,6 @@
 lesson_key: lesson-05-idea-presentation-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-05-idea-presentation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T023652Z.wav
-  duration_seconds: 32.98
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Lina: kdUY91gH5xyDHapxlthT
-    Salma: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: 13a99fa674354087578959b95981e140426b931e40bb489bda64d259adf8be0b
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-05-idea-presentation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T023652Z.wav
-  trace_id: J7gksWhkWr9b5nY7WGY1,Q0IW5bLJps1RxjOHXfyO,CypYENjMrXm9ycuxGNbJ,GsAGkjzsizJBVT9Z9J2w,yRDDVnRhqzj7AxrpkJpc,gAabkvteaWLEAc8qRSQq,K7MhsVLn8kfjTZUJDLtp,QhzjZrOIc0hL7Zf1zYYE
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:36:52.466358+00:00'
+assets: []

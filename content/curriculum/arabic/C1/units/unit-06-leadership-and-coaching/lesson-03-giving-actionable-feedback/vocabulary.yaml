@@ -2,14 +2,17 @@ vocabulary:
 - word: مَسَارٌ
   meaning_id: jalur/arah
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: خُطْوَةٌ
   meaning_id: langkah
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: تَطْبِيقٌ
-  meaning_id: penerapan
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: قَرَارٌ
   meaning_id: keputusan
@@ -17,9 +20,6 @@ vocabulary:
 - word: كَيْفَ
   meaning_id: bagaimana
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: مَوْقِفٌ
-  meaning_id: posisi/sikap
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: دِقَّةٌ
-  meaning_id: ketepatan
+- word: رَسْمِيٌّ
+  meaning_id: resmi
   usage_note: Kata inti dari dialog dan frasa lesson ini.

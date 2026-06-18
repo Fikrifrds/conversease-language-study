@@ -1,24 +1,6 @@
 lesson_key: lesson-05-advanced-listening-mission
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-05-advanced-listening-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T025844Z.wav
-  duration_seconds: 49.3
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Hasan: t9akNmCDhz230CEXOYmn
-    Yusuf: kr4VZw8MSZMHE0y2m40n
-  line_count: 8
-  script_content_hash: f6de348e70dbbeb06fe1df9e973cf2ef06974ae84eaf6feeeba6d201aa782f0a
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-05-advanced-listening-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T025844Z.wav
-  trace_id: L6RZbJNsSRxzscsFFvQ9,X7MLWdFRnkWBr3LNfxVk,CGvGU1vqrfgM4n1tj4CD,dufEDnAyV0t0omOAKzPU,k2vluidi4CB6sgXktqh7,J4aHfGmuQYQjer6DNQqx,YmS29oQIq7nnAT1rMk5R,EOgjVcvGvnCpJZyxYPo5
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:58:44.108258+00:00'
+assets: []

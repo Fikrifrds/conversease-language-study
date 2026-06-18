@@ -1,4 +1,7 @@
 vocabulary:
+- word: ضَغْطٌ
+  meaning_id: tekanan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -8,6 +11,9 @@ vocabulary:
 - word: أَسَاسِيٌّ
   meaning_id: utama
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: حُجَّةٌ
   meaning_id: argumen
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -16,10 +22,4 @@ vocabulary:
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: دَلِيلٌ
   meaning_id: bukti/petunjuk
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: نَتِيجَةٌ
-  meaning_id: hasil
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: سِيَاقٌ
-  meaning_id: konteks
   usage_note: Kata inti dari dialog dan frasa lesson ini.

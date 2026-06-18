@@ -1,24 +1,6 @@
 lesson_key: lesson-02-supporting-with-reasons
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-3nav5pHC1EYvWOd5LmnA-20260618T023221Z.wav
-  duration_seconds: 34.5
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: d06da871a813e71ae577cb1b2c881bce37c68693daf4f807404c78b0a8f60988
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-3nav5pHC1EYvWOd5LmnA-20260618T023221Z.wav
-  trace_id: eRyfHLL999ejeEZFR3w5,wIEiZZi21rFXus44ZrzB,QEg9Qx94JVr68dpzgBLp,t8OO5OYx9wKZs4gLtS9q,nxEiz82LsST2pKrp643I,Kd70wltRnwG4E2y2tDOM,mFUCXECoRj2fuw5a4DWH,SKnzYJFHafdlj8dtsZse
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:32:21.659308+00:00'
+assets: []

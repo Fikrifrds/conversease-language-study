@@ -26,8 +26,8 @@ class AdminCmsTest(unittest.TestCase):
         template = get_email_template("auth_verify_email")
 
         self.assertEqual(summary["course"]["lesson_count"], 40)
-        self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 240)
-        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 240)
+        self.assertEqual(summary["readiness_overview"]["planned_lesson_count"], 400)
+        self.assertEqual(summary["readiness_overview"]["implemented_lesson_count"], 400)
         self.assertEqual(
             sorted(
                 (level["course"]["language"], level["course"]["level_code"])
@@ -35,6 +35,10 @@ class AdminCmsTest(unittest.TestCase):
             ),
             [
                 ("arabic", "A1"),
+                ("arabic", "A2"),
+                ("arabic", "B1"),
+                ("arabic", "B2"),
+                ("arabic", "C1"),
                 ("english", "A1"),
                 ("english", "A2"),
                 ("english", "B1"),
@@ -116,7 +120,7 @@ class AdminCmsTest(unittest.TestCase):
                 self.assertEqual(len(english_lessons.json()["data"]["lessons"]), 200)
             self.assertEqual(
                 authorized.json()["data"]["curriculum"]["readiness_overview"]["planned_lesson_count"],
-                240,
+                400,
             )
             self.assertEqual(legacy_email_route.status_code, 200)
         finally:

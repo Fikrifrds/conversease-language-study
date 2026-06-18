@@ -1,24 +1,6 @@
 lesson_key: lesson-02-expressing-certainty-and-doubt
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-3nav5pHC1EYvWOd5LmnA-20260618T024900Z.wav
-  duration_seconds: 49.46
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: a9ae111e0e34906d17fed480de837067349917f04ef3b94cec4225736db46135
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-3nav5pHC1EYvWOd5LmnA-20260618T024900Z.wav
-  trace_id: NBtqxXGm5daKc5Wli0th,JjggBUD6mOtRwuGmsOz9,UUlBDF9wKbELwBVnkN8Z,uVaOAK74A8EY3cNzjOLQ,tYmtonaaIHPZrAnEJA54,L1O3NZlNuUaUH046Sf5m,8u14NSRGmocPPUZmTx3N,hHZKc7PpELwl0UWSuc9c
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:49:00.627596+00:00'
+assets: []

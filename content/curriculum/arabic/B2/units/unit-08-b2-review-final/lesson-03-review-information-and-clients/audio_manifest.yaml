@@ -1,24 +1,6 @@
 lesson_key: lesson-03-review-information-and-clients
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-08-b2-review-final/lesson-03-review-information-and-clients/listening-3nav5pHC1EYvWOd5LmnA-20260618T024136Z.wav
-  duration_seconds: 42.74
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Noura: v7UCHHCrHj1KBa4E41gb
-  line_count: 8
-  script_content_hash: 42462072e9904c21123caa1578e3267e94a09c8856ccf79bf839dc2db99d962c
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-08-b2-review-final/lesson-03-review-information-and-clients/listening-3nav5pHC1EYvWOd5LmnA-20260618T024136Z.wav
-  trace_id: BCxBm8n8qklwvosffrkL,QE1FtB093hlnINjjfwYA,puEzJWXd2XOlJ7Zmw1Wa,VSi3hFuHfUv6UdiLWOvu,V0uyjUDz71a9AzIKj79G,yYGJCAdExdZ3QTzVnuOM,4xNd4uZ3oblo2k1q8rRR,uteK5mAB078A57Ul9WA0
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:41:36.418066+00:00'
+assets: []

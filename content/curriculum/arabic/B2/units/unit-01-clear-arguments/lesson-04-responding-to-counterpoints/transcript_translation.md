@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ -> Apa posisimu tentang topik ini?
+- **Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الرَّدُّ عَلَى الِاعْتِرَاضِ. -> Apa posisimu tentang topik ini? Saya ingin fokus pada menanggapi keberatan.
 - **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik menanggapi keberatan penting dalam diskusi.
 - **Ahmad:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Karim:** أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas. Contohnya, tim membutuhkan keputusan yang cepat.

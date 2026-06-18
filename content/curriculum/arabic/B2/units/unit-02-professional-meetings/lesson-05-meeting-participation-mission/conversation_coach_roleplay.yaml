@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_meeting_participation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْمُشَارَكَةُ
+  فِي اِجْتِمَاعٍ مِهَنِيٍّ.
 learner_goal: Latih percakapan Arab B2 untuk berpartisipasi dalam rapat profesional dengan alasan, contoh,
   respons, dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟
+- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْمُشَارَكَةُ
+    فِي اِجْتِمَاعٍ مِهَنِيٍّ.
   hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ
     مِهَنِيٍّ.'
   sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.

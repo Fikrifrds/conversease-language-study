@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ -> Bagaimana kita mendefinisikan masalah ini?
+- **Rami:** كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى نِقَاشُ حَلِّ مُشْكِلَةٍ مُعَقَّدَةٍ. -> Bagaimana kita mendefinisikan masalah ini? Saya ingin fokus pada mendiskusikan solusi masalah kompleks.
 - **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin mendiskusikan solusi masalah kompleks adalah bagian dari masalah yang lebih besar.
 - **Rami:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Penyebab utamanya mungkin lemahnya pengaturan. Setiap solusi punya manfaat dan efek samping.

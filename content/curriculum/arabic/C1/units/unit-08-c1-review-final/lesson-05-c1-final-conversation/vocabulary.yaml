@@ -8,6 +8,9 @@ vocabulary:
 - word: رَأْيٌ
   meaning_id: pendapat
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: مِهَنِيٌّ
   meaning_id: profesional
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -19,7 +22,4 @@ vocabulary:
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: سُوءٌ
-  meaning_id: keburukan/salah
   usage_note: Kata inti dari dialog dan frasa lesson ini.

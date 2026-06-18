@@ -3,7 +3,7 @@ vocabulary:
   meaning_id: saya mengulang/review
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: تَدْرِيبٌ
-  meaning_id: latihan
+  meaning_id: coaching/latihan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: اِخْتِبَارٌ
   meaning_id: ujian
@@ -20,6 +20,6 @@ vocabulary:
 - word: اِعْتِرَاضٌ
   meaning_id: keberatan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: دَلِيلٌ
-  meaning_id: bukti/petunjuk
+- word: أُرِيدُ
+  meaning_id: saya ingin
   usage_note: Kata inti dari dialog dan frasa lesson ini.

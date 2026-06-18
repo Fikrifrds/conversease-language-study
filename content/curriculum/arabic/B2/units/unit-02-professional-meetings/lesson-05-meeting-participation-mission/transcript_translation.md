@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Maryam:** مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ -> Poin apa yang ingin kamu bahas?
+- **Maryam:** مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ. -> Poin apa yang ingin kamu bahas? Saya ingin fokus pada berpartisipasi dalam rapat profesional.
 - **Noura:** أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ. -> Saya ingin mulai dengan poin tentang berpartisipasi dalam rapat profesional.
 - **Maryam:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Noura:** هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Apakah cakupan diskusi jelas untuk semua orang? Saya punya masukan konstruktif untuk usulan ini.

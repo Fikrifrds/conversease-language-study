@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ -> Bagaimana kamu merangkum informasi ini?
+- **Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الرَّدُّ عَلَى مَعْلُومَاتٍ جَدِيدَةٍ. -> Bagaimana kamu merangkum informasi ini? Saya ingin fokus pada menanggapi informasi baru.
 - **Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ. -> Saya memahami dari artikel bahwa topik menanggapi informasi baru penting.
 - **Yusuf:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Hasan:** يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Kita harus memastikan bahwa sumbernya tepercaya. Sudut pandang ini membutuhkan bukti yang lebih kuat.

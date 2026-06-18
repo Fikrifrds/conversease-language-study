@@ -1,16 +1,24 @@
 phrases:
-- phrase: أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  meaning_id: Saya pikir asumsi dasarnya di sini belum disebutkan dengan jelas.
-  usage_note: Mengidentifikasi asumsi.
-- phrase: يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
-  meaning_id: Kita bisa menantang argumen ini dari sisi bukti.
-  usage_note: Menantang argumen.
+- phrase: فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+    هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
+  meaning_id: Dalam skill presenting relevant evidence, Saya pikir asumsi dasarnya di sini belum disebutkan
+    dengan jelas.
+  usage_note: 'Mengidentifikasi asumsi. Fokus lesson: presenting relevant evidence.'
+- phrase: عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ
+    الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
+  meaning_id: Saat menerapkan presenting relevant evidence, Kita bisa menantang argumen ini dari sisi
+    bukti.
+  usage_note: Menantang argumen. Hubungkan dengan fokus lesson.
 - phrase: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
   meaning_id: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-  usage_note: Menyajikan evidence.
-- phrase: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
-  meaning_id: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
-  usage_note: Merespons under pressure.
-- phrase: لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
-  meaning_id: Karena itu, respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.
-  usage_note: Menutup analisis debat.
+  usage_note: Menyajikan evidence. Pakai sebagai penghubung dalam presenting relevant evidence.
+- phrase: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
+    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  meaning_id: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan fokus pada poin pusat
+    dan tidak berpanjang-panjang.
+  usage_note: Merespons under pressure. Gunakan untuk repair dalam presenting relevant evidence.
+- phrase: فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ
+    تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
+  meaning_id: Dalam final formulation untuk presenting relevant evidence, Karena itu, respons terkuat
+    adalah memperjelas asumsi lalu memeriksa bukti.
+  usage_note: Menutup analisis debat. Tutup percakapan sesuai fokus lesson.

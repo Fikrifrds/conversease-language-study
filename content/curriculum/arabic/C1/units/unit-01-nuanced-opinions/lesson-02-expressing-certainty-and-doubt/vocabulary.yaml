@@ -1,6 +1,12 @@
 vocabulary:
+- word: يَقِينٌ
+  meaning_id: kepastian
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: رَأْيٌ
   meaning_id: pendapat
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أَدِلَّةٌ
   meaning_id: bukti-bukti
@@ -14,12 +20,6 @@ vocabulary:
 - word: مَخَاطِرُ
   meaning_id: risiko
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: وِجْهَةٌ
-  meaning_id: arah/sudut pandang
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: أُفَضِّلُ
-  meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: دِقَّةٌ
-  meaning_id: ketepatan
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.

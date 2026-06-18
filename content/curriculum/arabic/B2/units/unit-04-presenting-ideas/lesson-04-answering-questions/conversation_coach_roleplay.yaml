@@ -1,14 +1,15 @@
 scenario_key: arabic_b2_answering_questions
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْإِجَابَةُ عَنِ
+  الْأَسْئِلَةِ.
 learner_goal: Latih percakapan Arab B2 untuk menjawab pertanyaan dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.
   hint: 'Jawab dengan struktur B2 memakai: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.'
   sample_answer: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.
   focus: Membuka presentasi.

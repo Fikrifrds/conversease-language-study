@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ فِي هَذَا الْمَوْضُوعِ؟ -> Bagaimana kamu menyampaikan opini yang nuanced tentang topik ini?
-- **Karim:** مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
+- **Ahmad:** كَيْفَ تُطَبِّقُ مَهَارَةَ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan balancing two viewpoints dalam percakapan formal?
+- **Karim:** فِي مَهَارَةِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Dalam skill balancing two viewpoints, Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
 - **Ahmad:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
-- **Karim:** لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini. Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
+- **Karim:** عِنْدَ تَطْبِيقِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Saat menerapkan balancing two viewpoints, Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini. Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
 - **Ahmad:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
-- **Karim:** أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
+- **Karim:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
 - **Ahmad:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
-- **Karim:** لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.
+- **Karim:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Dalam final formulation untuk balancing two viewpoints, Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.

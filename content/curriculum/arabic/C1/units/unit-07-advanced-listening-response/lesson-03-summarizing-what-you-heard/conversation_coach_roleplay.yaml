@@ -1,44 +1,49 @@
 scenario_key: arabic_c1_summarizing_what_you_heard
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَاذَا فَهِمْتَ مِنَ الْكَلَامِ الطَّوِيلِ الَّذِي سَمِعْتَهُ؟
-learner_goal: Latih percakapan Arab C1 untuk summarizing what you heard dengan nuance, struktur, presisi,
-  dan respons profesional.
+opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ فِي حِوَارٍ رَسْمِيٍّ؟
+learner_goal: Latih percakapan Arab C1 untuk summarizing what you heard accurately dengan nuance, struktur,
+  presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا فَهِمْتَ مِنَ الْكَلَامِ الطَّوِيلِ الَّذِي سَمِعْتَهُ؟
-  hint: 'Jawab dengan struktur C1 memakai: الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ
-    مُتَأَكِّدٍ تَمَامًا.'
-  sample_answer: الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.
-  focus: Menangkap implied meaning.
+- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ فِي حِوَارٍ رَسْمِيٍّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، الْمَعْنَى
+    الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.'
+  sample_answer: فِي مَهَارَةِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ
+    أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.
+  focus: 'Menangkap implied meaning. Fokus lesson: summarizing what you heard accurately.'
   expected_keywords:
-  - الْمَعْنَى
-  - الضِّمْنِيُّ
-  - هُنَا
-  - هُوَ
-  - أَنَّ
-  indonesian_explanation: Makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
-- coach: 'استخدم الفكرة: سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.'
-  hint: 'Jawab dengan struktur C1 memakai: سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ
-    أَعُودُ إِلَى التَّفَاصِيلِ.'
-  sample_answer: سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.
-  focus: Merespons long turn.
+  - فِي
+  - مَهَارَةِ
+  - تَلْخِيصِ
+  - مَا
+  - سَمِعْتَهُ
+  indonesian_explanation: Dalam skill summarizing what you heard accurately, Makna tersiratnya di sini
+    adalah pembicara belum sepenuhnya yakin.
+- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، سَأُجِيبُ أَوَّلًا عَلَى
+    النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، سَأُجِيبُ
+    أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.'
+  sample_answer: عِنْدَ تَطْبِيقِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ
+    الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.
+  focus: Merespons long turn. Hubungkan dengan fokus lesson.
   expected_keywords:
-  - سَأُجِيبُ
-  - أَوَّلًا
-  - عَلَى
-  - النُّقْطَةِ
-  - الْأَسَاسِيَّةِ،
-  indonesian_explanation: Saya akan menjawab poin utama dulu, lalu kembali ke detail.
+  - عِنْدَ
+  - تَطْبِيقِ
+  - تَلْخِيصِ
+  - مَا
+  - سَمِعْتَهُ
+  indonesian_explanation: Saat menerapkan summarizing what you heard accurately, Saya akan menjawab poin
+    utama dulu, lalu kembali ke detail.
 - coach: 'استخدم الفكرة: إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ
     الْقَرَارِ.'
   hint: 'Jawab dengan struktur C1 memakai: إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ
     هِيَ تَأْخِيرُ الْقَرَارِ.'
   sample_answer: إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.
-  focus: Merangkum yang didengar.
+  focus: Merangkum yang didengar. Pakai sebagai penghubung dalam summarizing what you heard accurately.
   expected_keywords:
   - إِذَا
   - لَخَّصْتُ
@@ -46,24 +51,31 @@ turns:
   - سَمِعْتُهُ،
   - فَالْفِكْرَةُ
   indonesian_explanation: Jika saya merangkum apa yang saya dengar, ide utamanya adalah menunda keputusan.
-- coach: 'استخدم الفكرة: سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
-  hint: 'Jawab dengan struktur C1 memakai: سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ
-    هَذَا الْقَرَارَ؟'
-  sample_answer: 'سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
-  focus: Bertanya follow-up berkualitas.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ
+    هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ
+    الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+  sample_answer: 'إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ:
+    مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+  focus: Bertanya follow-up berkualitas. Gunakan untuk repair dalam summarizing what you heard accurately.
   expected_keywords:
-  - سُؤَالُ
-  - الْمُتَابَعَةِ
-  - الْأَفْضَلُ
-  - 'هُوَ:'
-  - مَا
-  indonesian_explanation: 'Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?'
+  - إِذَا
+  - ظَهَرَ
+  - تَحَدٍّ
+  - فِي
+  - هَذِهِ
+  indonesian_explanation: 'Jika muncul tantangan dalam skill ini, Pertanyaan follow-up terbaik adalah:
+    apa yang akan mengubah keputusan ini?'
 target_phrases:
-- الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.
-- سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.
+- فِي مَهَارَةِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ
+  غَيْرُ مُتَأَكِّدٍ تَمَامًا.
+- عِنْدَ تَطْبِيقِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ،
+  ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.
 - إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.
-- 'سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
-- بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.
+- 'إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي
+  سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ
+  فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.
 rubric:
   speaking:
     minimum_score: 76

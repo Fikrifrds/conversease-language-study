@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Hal pertama adalah menetapkan arah dengan jelas.
-- بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. -> Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran.
+- فِي مَهَارَةِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Dalam skill setting direction clearly, Hal pertama adalah menetapkan arah dengan jelas.
+- عِنْدَ تَطْبِيقِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. -> Saat menerapkan setting direction clearly, Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran.
 - الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
-- سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Jika muncul tantangan dalam skill ini, Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Dalam final formulation untuk setting direction clearly, Saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.

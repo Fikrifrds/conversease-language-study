@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
-- لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. -> Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini.
+- فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Dalam skill separating certainty and doubt, Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
+- عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. -> Saat menerapkan separating certainty and doubt, Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini.
 - مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
-- لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Dalam final formulation untuk separating certainty and doubt, Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.

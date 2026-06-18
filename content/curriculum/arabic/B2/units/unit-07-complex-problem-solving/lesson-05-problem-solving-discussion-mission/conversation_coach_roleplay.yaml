@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_problem_solving_discussion_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟
+opening_line: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى نِقَاشُ حَلِّ مُشْكِلَةٍ
+  مُعَقَّدَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan, contoh,
   respons, dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟
+- coach: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى نِقَاشُ حَلِّ مُشْكِلَةٍ
+    مُعَقَّدَةٍ.
   hint: 'Jawab dengan struktur B2 memakai: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.'
   sample_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
   focus: Melakukan framing problem.

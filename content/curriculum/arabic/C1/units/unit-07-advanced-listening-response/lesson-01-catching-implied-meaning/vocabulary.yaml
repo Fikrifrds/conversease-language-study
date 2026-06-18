@@ -2,6 +2,9 @@ vocabulary:
 - word: ضِمْنِيٌّ
   meaning_id: tersirat
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أَوَّلًا
   meaning_id: pertama
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -17,9 +20,6 @@ vocabulary:
 - word: قَرَارٌ
   meaning_id: keputusan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: مُتَابَعَةٌ
-  meaning_id: follow-up/lanjutan
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: أُفَضِّلُ
-  meaning_id: saya lebih memilih
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.

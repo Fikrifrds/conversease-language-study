@@ -1,7 +1,7 @@
 scenario_key: arabic_b2_signposting_clearly
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الِانْتِقَالَاتِ.
 learner_goal: Latih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan
   rekomendasi.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الِانْتِقَالَاتِ.
   hint: 'Jawab dengan struktur B2 memakai: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.'
   sample_answer: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
   focus: Membuka presentasi.

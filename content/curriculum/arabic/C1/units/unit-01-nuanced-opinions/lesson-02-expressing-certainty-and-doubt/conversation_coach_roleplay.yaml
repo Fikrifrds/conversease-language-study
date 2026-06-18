@@ -1,45 +1,49 @@
 scenario_key: arabic_c1_expressing_certainty_and_doubt
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ فِي هَذَا الْمَوْضُوعِ؟
-learner_goal: Latih percakapan Arab C1 untuk expressing certainty and doubt dengan nuance, struktur, presisi,
+opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ فِي حِوَارٍ رَسْمِيٍّ؟
+learner_goal: Latih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ فِي هَذَا الْمَوْضُوعِ؟
-  hint: 'Jawab dengan struktur C1 memakai: مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ
-    لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
-  sample_answer: مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
-  focus: Menyampaikan opini dengan nuance.
+- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ فِي حِوَارٍ رَسْمِيٍّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ
+    حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
+  sample_answer: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ
+    إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
+  focus: 'Menyampaikan opini dengan nuance. Fokus lesson: separating certainty and doubt.'
   expected_keywords:
-  - مِنْ
-  - حَيْثُ
-  - الْمَبْدَأُ،
-  - أَمِيلُ
-  - إِلَى
-  indonesian_explanation: Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan
-    penting.
-- coach: 'استخدم الفكرة: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
-  hint: 'Jawab dengan struktur C1 memakai: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ
-    إِلَى هَذَا الْمَسَارِ.'
-  sample_answer: لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.
-  focus: Menyatakan kepastian dan keraguan.
+  - فِي
+  - مَهَارَةِ
+  - التَّفْرِيقِ
+  - بَيْنَ
+  - الْيَقِينِ
+  indonesian_explanation: Dalam skill separating certainty and doubt, Secara prinsip, saya cenderung pada
+    pendapat ini, tetapi saya punya satu catatan penting.
+- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا
+    تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ،
+    لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
+  sample_answer: عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا تَمَامًا،
+    لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.
+  focus: Menyatakan kepastian dan keraguan. Hubungkan dengan fokus lesson.
   expected_keywords:
-  - لَسْتُ
-  - مُتَيَقِّنًا
-  - تَمَامًا،
-  - لَكِنَّ
-  - الْأَدِلَّةَ
-  indonesian_explanation: Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini.
+  - عِنْدَ
+  - تَطْبِيقِ
+  - التَّفْرِيقِ
+  - بَيْنَ
+  - الْيَقِينِ
+  indonesian_explanation: Saat menerapkan separating certainty and doubt, Saya belum sepenuhnya yakin,
+    tetapi bukti mengarah ke arah ini.
 - coach: 'استخدم الفكرة: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ
     وَاضِحَةٌ.'
   hint: 'Jawab dengan struktur C1 memakai: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى،
     لَهُ مَخَاطِرُ وَاضِحَةٌ.'
   sample_answer: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-  focus: Menyeimbangkan dua sudut pandang.
+  focus: Menyeimbangkan dua sudut pandang. Pakai sebagai penghubung dalam separating certainty and doubt.
   expected_keywords:
   - مِنْ
   - جِهَةٍ،
@@ -47,25 +51,31 @@ turns:
   - الْخِيَارُ
   - عَمَلِيٌّ،
   indonesian_explanation: Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- coach: 'استخدم الفكرة: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ
-    أُخْرَى.'
-  hint: 'Jawab dengan struktur C1 memakai: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
-    مِنْ زَاوِيَةٍ أُخْرَى.'
-  sample_answer: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
-  focus: Melunakkan disagreement.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ
+    أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ
+    نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
+  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي
+    أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+  focus: Melunakkan disagreement. Gunakan untuk repair dalam separating certainty and doubt.
   expected_keywords:
-  - أُقَدِّرُ
-  - وِجْهَةَ
-  - نَظَرِكَ،
-  - غَيْرَ
-  - أَنَّنِي
-  indonesian_explanation: Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
+  - إِذَا
+  - ظَهَرَ
+  - تَحَدٍّ
+  - فِي
+  - هَذِهِ
+  indonesian_explanation: Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi
+    saya melihat masalah ini dari sisi lain.
 target_phrases:
-- مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
-- لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.
+- فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا
+  الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
+- عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ
+  تُشِيرُ إِلَى هَذَا الْمَسَارِ.
 - مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
-- لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
+  مِنْ زَاوِيَةٍ أُخْرَى.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً
+  وَمُرُونَةً.
 rubric:
   speaking:
     minimum_score: 76

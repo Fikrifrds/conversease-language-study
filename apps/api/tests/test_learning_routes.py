@@ -126,12 +126,18 @@ class LearningRoutesTest(unittest.TestCase):
                     "english-b2-professional-discussions",
                     "english-c1-advanced-fluency",
                     "arabic-a1-fusha-foundations",
+                    "arabic-a2-everyday-conversations",
+                    "arabic-b1-connected-conversations",
+                    "arabic-b2-professional-discussions",
+                    "arabic-c1-advanced-fluency",
                 ],
             )
             # Fresh user: A1 unlocked, higher levels locked.
             self.assertTrue(courses[0]["unlocked"])
             self.assertFalse(courses[1]["unlocked"])
-            arabic = courses[-1]
+            arabic = next(
+                course for course in courses if course["course_slug"] == "arabic-a1-fusha-foundations"
+            )
             self.assertEqual(arabic["language"], "arabic")
             self.assertTrue(arabic["unlocked"])
             self.assertTrue(arabic["requires_pro"])

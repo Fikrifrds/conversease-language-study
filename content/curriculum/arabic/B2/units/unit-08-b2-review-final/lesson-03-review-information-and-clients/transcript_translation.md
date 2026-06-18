@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ -> Skill terpenting apa yang sedang kamu review sekarang?
+- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ. -> Skill terpenting apa yang sedang kamu review sekarang? Saya ingin fokus pada review informasi dan klien.
 - **Noura:** أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ. -> Saya mengulang skill review informasi dan klien karena itu penting dalam diskusi.
 - **Layla:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.

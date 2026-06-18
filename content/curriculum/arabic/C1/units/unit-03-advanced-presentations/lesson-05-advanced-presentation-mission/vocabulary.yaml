@@ -1,9 +1,18 @@
 vocabulary:
+- word: عَرْضٌ
+  meaning_id: presentasi/tawaran
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: وَاضِحٌ
+  meaning_id: jelas
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أَوَّلًا
   meaning_id: pertama
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: جُمْهُورٌ
   meaning_id: audiens
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: خُطْوَةٌ
   meaning_id: langkah
@@ -13,13 +22,4 @@ vocabulary:
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: تَأْثِيرٌ
   meaning_id: dampak/pengaruh
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: صَعْبٌ
-  meaning_id: sulit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: نِهَايَةٌ
-  meaning_id: akhir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: أُرِيدُ
-  meaning_id: saya ingin
   usage_note: Kata inti dari dialog dan frasa lesson ini.

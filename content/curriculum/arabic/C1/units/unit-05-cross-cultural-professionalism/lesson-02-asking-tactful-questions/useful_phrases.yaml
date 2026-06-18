@@ -1,16 +1,23 @@
 phrases:
-- phrase: قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
-  meaning_id: Sebelum merespons, kita harus membaca konteks dengan cermat.
-  usage_note: Membaca konteks.
-- phrase: هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
-  meaning_id: Bisakah saya bertanya dengan cara yang lebih tactful?
-  usage_note: Bertanya dengan halus.
+- phrase: فِي مَهَارَةِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+    بِدِقَّةٍ.
+  meaning_id: Dalam skill asking tactful questions, Sebelum merespons, kita harus membaca konteks dengan
+    cermat.
+  usage_note: 'Membaca konteks. Fokus lesson: asking tactful questions.'
+- phrase: عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
+    لَبَاقَةً؟
+  meaning_id: Saat menerapkan asking tactful questions, Bisakah saya bertanya dengan cara yang lebih tactful?
+  usage_note: Bertanya dengan halus. Hubungkan dengan fokus lesson.
 - phrase: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
   meaning_id: Di negara saya, norma ini dipahami dengan cara yang berbeda.
-  usage_note: Menjelaskan norma lokal.
-- phrase: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
-  meaning_id: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
-  usage_note: Memperbaiki misunderstanding.
-- phrase: الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
-  meaning_id: Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.
-  usage_note: Menutup dengan prinsip profesional.
+  usage_note: Menjelaskan norma lokal. Pakai sebagai penghubung dalam asking tactful questions.
+- phrase: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
+    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+  meaning_id: Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham, jadi mari kita merumuskan
+    ulang idenya.
+  usage_note: Memperbaiki misunderstanding. Gunakan untuk repair dalam asking tactful questions.
+- phrase: فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ،
+    لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
+  meaning_id: Dalam final formulation untuk asking tactful questions, Tujuannya adalah kejelasan dengan
+    rasa hormat, bukan sekadar kebenaran bahasa.
+  usage_note: Menutup dengan prinsip profesional. Tutup percakapan sesuai fokus lesson.

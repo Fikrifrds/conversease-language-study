@@ -1,44 +1,48 @@
 scenario_key: arabic_c1_review_presenting_and_debate
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَا الْمَهَارَةُ الَّتِي تَحْتَاجُ إِلَى مُرَاجَعَةٍ أَخِيرَةٍ؟
-learner_goal: Latih percakapan Arab C1 untuk review presenting and debate dengan nuance, struktur, presisi,
-  dan respons profesional.
+opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ فِي حِوَارٍ رَسْمِيٍّ؟
+learner_goal: Latih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur,
+  presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الْمَهَارَةُ الَّتِي تَحْتَاجُ إِلَى مُرَاجَعَةٍ أَخِيرَةٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ
-    مُبَالَغَةٍ.'
-  sample_answer: أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-  focus: Review nuance.
-  expected_keywords:
-  - أُرَاجِعُ
-  - الْآنَ
-  - كَيْفَ
-  - أُعَبِّرُ
-  - عَنْ
-  indonesian_explanation: Saya sedang mereview cara menyampaikan opini yang tepat tanpa berlebihan.
-- coach: 'استخدم الفكرة: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur C1 memakai: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ
-    وَالْمَخَاطِرِ.'
-  sample_answer: فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-  focus: Review strategy.
+- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ فِي حِوَارٍ رَسْمِيٍّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ
+    الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.'
+  sample_answer: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ
+    رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
+  focus: 'Review nuance. Fokus lesson: reviewing presenting and debate.'
   expected_keywords:
   - فِي
-  - الْحِوَارِ
-  - الْمِهَنِيِّ،
-  - سَأُرَكِّزُ
-  - عَلَى
-  indonesian_explanation: Dalam percakapan profesional, saya akan fokus pada konteks, ekspektasi, dan
-    risiko.
+  - مَهَارَةِ
+  - مُرَاجَعَةِ
+  - الْعَرْضِ
+  - وَالنِّقَاشِ،
+  indonesian_explanation: Dalam skill reviewing presenting and debate, Saya sedang mereview cara menyampaikan
+    opini yang tepat tanpa berlebihan.
+- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ،
+    سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ
+    الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
+  sample_answer: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ
+    عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+  focus: Review strategy. Hubungkan dengan fokus lesson.
+  expected_keywords:
+  - عِنْدَ
+  - تَطْبِيقِ
+  - مُرَاجَعَةِ
+  - الْعَرْضِ
+  - وَالنِّقَاشِ،
+  indonesian_explanation: Saat menerapkan reviewing presenting and debate, Dalam percakapan profesional,
+    saya akan fokus pada konteks, ekspektasi, dan risiko.
 - coach: 'استخدم الفكرة: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ
     مُقْنِعٍ.'
   sample_answer: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-  focus: Review presenting and debate.
+  focus: Review presenting and debate. Pakai sebagai penghubung dalam reviewing presenting and debate.
   expected_keywords:
   - عِنْدَ
   - الْعَرْضِ
@@ -46,23 +50,31 @@ turns:
   - النِّقَاشِ،
   - سَأَبْنِي
   indonesian_explanation: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
-  sample_answer: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
-  focus: Review cross-cultural repair.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ
+    بِلَبَاقَةٍ وَوُضُوحٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ
+    سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
+  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ
+    بِلَبَاقَةٍ وَوُضُوحٍ.
+  focus: Review cross-cultural repair. Gunakan untuk repair dalam reviewing presenting and debate.
   expected_keywords:
   - إِذَا
   - ظَهَرَ
-  - سُوءُ
-  - فَهْمٍ،
-  - فَسَأُصْلِحُهُ
-  indonesian_explanation: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
+  - تَحَدٍّ
+  - فِي
+  - هَذِهِ
+  indonesian_explanation: Jika muncul tantangan dalam skill ini, Jika muncul salah paham, saya akan memperbaikinya
+    dengan tact dan kejelasan.
 target_phrases:
-- أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-- فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+- فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ
+  دُونَ مُبَالَغَةٍ.
+- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى
+  السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
 - عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
-- فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ
+  وَوُضُوحٍ.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ
+  وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
 rubric:
   speaking:
     minimum_score: 76

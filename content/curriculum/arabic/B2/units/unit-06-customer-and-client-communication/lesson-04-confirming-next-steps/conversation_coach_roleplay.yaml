@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_confirming_next_steps
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟
+opening_line: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَأْكِيدُ الْخُطْوَاتِ
+  التَّالِيَةِ.
 learner_goal: Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh, respons,
   dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟
+- coach: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَأْكِيدُ الْخُطْوَاتِ
+    التَّالِيَةِ.
   hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ
     الْخُطْوَاتِ التَّالِيَةِ.'
   sample_answer: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.

@@ -1,24 +1,6 @@
 lesson_key: lesson-03-using-examples
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-03-using-examples/listening-3nav5pHC1EYvWOd5LmnA-20260618T023236Z.wav
-  duration_seconds: 34.66
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: d06da871a813e71ae577cb1b2c881bce37c68693daf4f807404c78b0a8f60988
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-03-using-examples/listening-3nav5pHC1EYvWOd5LmnA-20260618T023236Z.wav
-  trace_id: xWiNDlC3Ldd6jSrzNJcs,9QJk6IzZOyPXiOLJOfq8,IOA5KhLrcdecbYTNZN0o,iavZU1BRjyTI7NAiLUCl,Wcuk9bKCdjEbJmM0QOSx,40K8SbmtykvDd5CG2VOQ,7GAJTTJGR9OgmMF71tg6,NHaED6qgGguFUpXIC4hv
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:32:36.369443+00:00'
+assets: []

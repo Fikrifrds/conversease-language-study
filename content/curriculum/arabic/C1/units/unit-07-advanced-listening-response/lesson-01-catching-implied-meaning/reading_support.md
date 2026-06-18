@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا. -> Makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
-- سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. -> Saya akan menjawab poin utama dulu, lalu kembali ke detail.
+- فِي مَهَارَةِ الْتِقَاطِ الْمَعْنَى الضِّمْنِيِّ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا. -> Dalam skill catching implied meaning, Makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
+- عِنْدَ تَطْبِيقِ الْتِقَاطِ الْمَعْنَى الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. -> Saat menerapkan catching implied meaning, Saya akan menjawab poin utama dulu, lalu kembali ke detail.
 - إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ. -> Jika saya merangkum apa yang saya dengar, ide utamanya adalah menunda keputusan.
-- سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?
-- بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Dengan cara ini, saya tidak hanya merespons kata-kata, tetapi maksudnya.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Jika muncul tantangan dalam skill ini, Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Dalam final formulation untuk catching implied meaning, Dengan cara ini, saya tidak hanya merespons kata-kata, tetapi maksudnya.

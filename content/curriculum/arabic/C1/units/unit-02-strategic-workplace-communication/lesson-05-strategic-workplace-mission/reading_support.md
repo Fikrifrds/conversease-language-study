@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. -> Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
+- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam skill running a strategic workplace conversation, Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
+- عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. -> Saat menerapkan running a strategic workplace conversation, Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
 - سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Dalam final formulation untuk running a strategic workplace conversation, Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.

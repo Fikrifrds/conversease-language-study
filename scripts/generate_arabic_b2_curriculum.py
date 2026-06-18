@@ -262,6 +262,8 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
     ]
     speaker_a, speaker_b = profile["speakers"]
     prompt_ar, prompt_id = profile["prompt"]
+    prompt_ar = f"{prompt_ar} أُرِيدُ أَنْ أُرَكِّزَ عَلَى {focus}."
+    prompt_id = f"{prompt_id} Saya ingin fokus pada {focus_id}."
     dialogue = [
         line(speaker_a, prompt_ar, prompt_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),

@@ -1,6 +1,6 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ -> Bagaimana kamu akan mempresentasikan ide ini?
+- **Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَنْظِيمُ عَرْضٍ قَصِيرٍ. -> Bagaimana kamu akan mempresentasikan ide ini? Saya ingin fokus pada menyusun presentasi singkat.
 - **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ. -> Saya akan mulai dengan pembuka singkat tentang menyusun presentasi singkat.
 - **Salma:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Setelah itu, saya akan menjelaskan manfaat utamanya. Penting juga untuk menyebutkan risikonya.

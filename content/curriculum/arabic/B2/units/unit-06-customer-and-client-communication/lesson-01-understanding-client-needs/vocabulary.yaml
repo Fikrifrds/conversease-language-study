@@ -11,6 +11,9 @@ vocabulary:
 - word: عَمِيلٌ
   meaning_id: klien/pelanggan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: خِيَارٌ
   meaning_id: pilihan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -19,7 +22,4 @@ vocabulary:
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: اِهْتِمَامٌ
   meaning_id: perhatian/kepedulian
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: تَفَاصِيلُ
-  meaning_id: detail
   usage_note: Kata inti dari dialog dan frasa lesson ini.

@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_coaching_with_questions
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُوَجِّهُ الْفَرِيقَ فِي هَذَا الْمَوْقِفِ؟
+opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّوْجِيهِ بِالْأَسْئِلَةِ فِي حِوَارٍ رَسْمِيٍّ؟
 learner_goal: Latih percakapan Arab C1 untuk coaching with questions dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
@@ -9,37 +9,41 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُوَجِّهُ الْفَرِيقَ فِي هَذَا الْمَوْقِفِ؟
-  hint: 'Jawab dengan struktur C1 memakai: أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.'
-  sample_answer: أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
-  focus: Menetapkan direction.
+- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّوْجِيهِ بِالْأَسْئِلَةِ فِي حِوَارٍ رَسْمِيٍّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ التَّوْجِيهِ بِالْأَسْئِلَةِ، أَوَّلُ شَيْءٍ
+    هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.'
+  sample_answer: فِي مَهَارَةِ التَّوْجِيهِ بِالْأَسْئِلَةِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ
+    بِصُورَةٍ وَاضِحَةٍ.
+  focus: 'Menetapkan direction. Fokus lesson: coaching with questions.'
   expected_keywords:
+  - فِي
+  - مَهَارَةِ
+  - التَّوْجِيهِ
+  - بِالْأَسْئِلَةِ،
   - أَوَّلُ
-  - شَيْءٍ
-  - هُوَ
-  - تَحْدِيدُ
-  - الْمَسَارِ
-  indonesian_explanation: Hal pertama adalah menetapkan arah dengan jelas.
-- coach: 'استخدم الفكرة: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ
-    التَّفْكِيرَ.'
-  hint: 'Jawab dengan struktur C1 memakai: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ
-    سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.'
-  sample_answer: بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
-  focus: Coaching dengan pertanyaan.
+  indonesian_explanation: Dalam skill coaching with questions, Hal pertama adalah menetapkan arah dengan
+    jelas.
+- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ التَّوْجِيهِ بِالْأَسْئِلَةِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا
+    مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ التَّوْجِيهِ بِالْأَسْئِلَةِ، بَدَلًا مِنْ
+    أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.'
+  sample_answer: عِنْدَ تَطْبِيقِ التَّوْجِيهِ بِالْأَسْئِلَةِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا،
+    سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+  focus: Coaching dengan pertanyaan. Hubungkan dengan fokus lesson.
   expected_keywords:
+  - عِنْدَ
+  - تَطْبِيقِ
+  - التَّوْجِيهِ
+  - بِالْأَسْئِلَةِ،
   - بَدَلًا
-  - مِنْ
-  - أَنْ
-  - أُعْطِيَ
-  - جَوَابًا
-  indonesian_explanation: Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka
-    pemikiran.
+  indonesian_explanation: Saat menerapkan coaching with questions, Daripada memberi jawaban langsung,
+    saya akan bertanya pertanyaan yang membuka pemikiran.
 - coach: 'استخدم الفكرة: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ
     لِلتَّطْبِيقِ.'
   hint: 'Jawab dengan struktur C1 memakai: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى
     خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.'
   sample_answer: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
-  focus: Memberi actionable feedback.
+  focus: Memberi actionable feedback. Pakai sebagai penghubung dalam coaching with questions.
   expected_keywords:
   - الْمُلَاحَظَةُ
   - الْمُفِيدَةُ
@@ -47,24 +51,30 @@ turns:
   - الَّتِي
   - تَتَحَوَّلُ
   indonesian_explanation: Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- coach: 'استخدم الفكرة: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ
-    وَالْجَوْدَةِ.'
-  sample_answer: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
-  focus: Membimbing keputusan.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ
+    أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ
+    الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
+  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ
+    نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  focus: Membimbing keputusan. Gunakan untuk repair dalam coaching with questions.
   expected_keywords:
-  - عِنْدَ
-  - اتِّخَاذِ
-  - الْقَرَارِ،
-  - يَجِبُ
-  - أَنْ
-  indonesian_explanation: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
+  - إِذَا
+  - ظَهَرَ
+  - تَحَدٍّ
+  - فِي
+  - هَذِهِ
+  indonesian_explanation: Jika muncul tantangan dalam skill ini, Saat mengambil keputusan, kita harus
+    menyeimbangkan kecepatan dan kualitas.
 target_phrases:
-- أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
-- بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+- فِي مَهَارَةِ التَّوْجِيهِ بِالْأَسْئِلَةِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+- عِنْدَ تَطْبِيقِ التَّوْجِيهِ بِالْأَسْئِلَةِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ
+  سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
 - الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
-- عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
-- سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.
+- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ
+  السُّرْعَةِ وَالْجَوْدَةِ.
+- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ
+  وَالْمَوْعِدِ.
 rubric:
   speaking:
     minimum_score: 76

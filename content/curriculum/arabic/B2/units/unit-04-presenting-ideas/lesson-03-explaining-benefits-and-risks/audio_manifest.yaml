@@ -1,24 +1,6 @@
 lesson_key: lesson-03-explaining-benefits-and-risks
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-03-explaining-benefits-and-risks/listening-3nav5pHC1EYvWOd5LmnA-20260618T023622Z.wav
-  duration_seconds: 32.34
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Lina: kdUY91gH5xyDHapxlthT
-    Salma: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: 4ab61abc45a0f05f4c0a4bbc52220db27d88207aa581a3655a70f5905bf2bbe1
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-03-explaining-benefits-and-risks/listening-3nav5pHC1EYvWOd5LmnA-20260618T023622Z.wav
-  trace_id: TFJrVfDDa2dKdjWjA6K9,zuKfkx3yiO6WDsDMg3mI,0gZ0DXKx0XefhGDVejt1,4eFI99llTYKYUnFHvqM4,u00F4d8LU7pBmR6AZCvZ,5TlzqdloEYQhpYhOkqYC,1hXTaMNWRk35dSHyVWm8,G5o8nY47fDEP4gs61XpS
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:36:22.593511+00:00'
+assets: []

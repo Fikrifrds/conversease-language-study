@@ -1,17 +1,26 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Sebelum merespons, kita harus membaca konteks dengan cermat.'
-  target_response: قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill reading social context, Sebelum merespons, kita harus
+    membaca konteks dengan cermat.'
+  target_response: فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ
+    نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
   acceptable_responses:
-  - قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Bisakah saya bertanya dengan cara yang lebih tactful?'
-  target_response: هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
+  - فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+    بِدِقَّةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan reading social context, Bisakah saya bertanya dengan
+    cara yang lebih tactful?'
+  target_response: عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ
+    بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
   acceptable_responses:
-  - هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
+  - عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
+    لَبَاقَةً؟
 - prompt: 'Ucapkan dalam bahasa Arab: Di negara saya, norma ini dipahami dengan cara yang berbeda.'
   target_response: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
   acceptable_responses:
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.'
-  target_response: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham,
+    jadi mari kita merumuskan ulang idenya.'
+  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
+    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
   acceptable_responses:
-  - يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ
+    صِيَاغَةَ الْفِكْرَةِ.

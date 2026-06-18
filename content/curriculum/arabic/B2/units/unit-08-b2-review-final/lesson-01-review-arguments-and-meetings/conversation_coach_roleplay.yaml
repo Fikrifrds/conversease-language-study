@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_review_arguments_and_meetings
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
+opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ الْحُجَجِ
+  وَالِاجْتِمَاعَاتِ.
 learner_goal: Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons,
   dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
+- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ الْحُجَجِ
+    وَالِاجْتِمَاعَاتِ.
   hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ
     لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.'
   sample_answer: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي

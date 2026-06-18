@@ -1,4 +1,7 @@
 vocabulary:
+- word: تَوَقُّعَاتٌ
+  meaning_id: ekspektasi
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أَوَّلًا
   meaning_id: pertama
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -8,18 +11,15 @@ vocabulary:
 - word: أَطْرَافٌ
   meaning_id: pihak-pihak
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: تَوَقُّعَاتٌ
-  meaning_id: ekspektasi
   usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
   usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: إِطَارٌ
-  meaning_id: kerangka
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: كَيْفَ
-  meaning_id: bagaimana
+- word: تَحَدٍّ
+  meaning_id: tantangan
   usage_note: Kata inti dari dialog dan frasa lesson ini.

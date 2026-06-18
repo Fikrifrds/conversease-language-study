@@ -1,7 +1,7 @@
 scenario_key: arabic_b2_responding_to_counterpoints
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟
+opening_line: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الرَّدُّ عَلَى الِاعْتِرَاضِ.
 learner_goal: Latih percakapan Arab B2 untuk menanggapi keberatan dengan alasan, contoh, respons, dan
   rekomendasi.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟
+- coach: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الرَّدُّ عَلَى الِاعْتِرَاضِ.
   hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.'
   sample_answer: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
   focus: Menyatakan posisi dengan jelas.

@@ -5,6 +5,9 @@ vocabulary:
 - word: جُمْهُورٌ
   meaning_id: audiens
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَطْبِيقٌ
+  meaning_id: penerapan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: خُطْوَةٌ
   meaning_id: langkah
   usage_note: Kata inti dari dialog dan frasa lesson ini.
@@ -14,12 +17,9 @@ vocabulary:
 - word: تَأْثِيرٌ
   meaning_id: dampak/pengaruh
   usage_note: Kata inti dari dialog dan frasa lesson ini.
+- word: تَحَدٍّ
+  meaning_id: tantangan
+  usage_note: Kata inti dari dialog dan frasa lesson ini.
 - word: صَعْبٌ
   meaning_id: sulit
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: نِهَايَةٌ
-  meaning_id: akhir
-  usage_note: Kata inti dari dialog dan frasa lesson ini.
-- word: أُرِيدُ
-  meaning_id: saya ingin
   usage_note: Kata inti dari dialog dan frasa lesson ini.

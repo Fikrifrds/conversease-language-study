@@ -1,24 +1,6 @@
 lesson_key: lesson-01-expressing-priorities
-status: generated
+status: not_generated
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-3nav5pHC1EYvWOd5LmnA-20260618T023436Z.wav
-  duration_seconds: 34.26
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Omar: OoE8swS3hImZANNOodf6
-  line_count: 8
-  script_content_hash: 8257a6690ec58e1014c9e653ae25c229d4a6aaef05af0a2d36813986d599eb5e
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-3nav5pHC1EYvWOd5LmnA-20260618T023436Z.wav
-  trace_id: 48PPKVK4eMis2OoJrpNh,UmSSsC3AK1BuqEQAmOxp,ftojlbHtNnVufrwKdaf8,XxasJPBF1wiDahljya74,k62257hIahrWGtxj5KLB,hCExHtkgxNt7h13Pl3zW,r7Z2YlPaHwTS1fWTQM3U,9xYFi2SybBXppXVIudAe
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:34:36.104097+00:00'
+assets: []

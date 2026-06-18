@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_structuring_a_short_presentation
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+opening_line: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَنْظِيمُ عَرْضٍ
+  قَصِيرٍ.
 learner_goal: Latih percakapan Arab B2 untuk menyusun presentasi singkat dengan alasan, contoh, respons,
   dan rekomendasi.
 max_turns: 8
@@ -9,7 +10,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟
+- coach: كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَنْظِيمُ عَرْضٍ قَصِيرٍ.
   hint: 'Jawab dengan struktur B2 memakai: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ.'
   sample_answer: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ.
   focus: Membuka presentasi.

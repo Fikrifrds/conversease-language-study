@@ -1,7 +1,8 @@
 scenario_key: arabic_b2_finding_middle_ground
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟
+opening_line: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْوُصُولُ إِلَى
+  حَلٍّ وَسَطٍ.
 learner_goal: Latih percakapan Arab B2 untuk mencari jalan tengah dengan alasan, contoh, respons, dan
   rekomendasi.
 max_turns: 8
@@ -9,7 +10,8 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟
+- coach: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْوُصُولُ إِلَى حَلٍّ
+    وَسَطٍ.
   hint: 'Jawab dengan struktur B2 memakai: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى الْوُصُولُ إِلَى حَلٍّ وَسَطٍ
     وَاضِحًا.'
   sample_answer: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى الْوُصُولُ إِلَى حَلٍّ وَسَطٍ وَاضِحًا.

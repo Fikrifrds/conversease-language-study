@@ -1,20 +1,27 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Pertama kita perlu menyatukan pemahaman pihak-pihak utama.'
-  target_response: نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill managing realistic expectations, Pertama kita perlu
+    menyatukan pemahaman pihak-pihak utama.'
+  target_response: فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ
+    فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
   acceptable_responses:
-  - نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu
-    yang spesifik.'
-  target_response: مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
+  - فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ
+    الْأَطْرَافِ الرَّئِيسِيَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan managing realistic expectations, Lebih baik kita
+    mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.'
+  target_response: عِنْدَ تَطْبِيقِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ
+    التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
   acceptable_responses:
-  - مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
+  - عِنْدَ تَطْبِيقِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ
+    قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
 - prompt: 'Ucapkan dalam bahasa Arab: Saya akan menyampaikan feedback ini dengan sensitif karena topiknya
     penting.'
   target_response: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
   acceptable_responses:
   - سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana
-    yang jelas.'
-  target_response: يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi
+    kita bisa menguranginya dengan rencana yang jelas.'
+  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا
+    تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
   acceptable_responses:
-  - يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
+  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ
+    بِخُطَّةٍ وَاضِحَةٍ.
