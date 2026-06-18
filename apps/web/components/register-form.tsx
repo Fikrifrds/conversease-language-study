@@ -6,6 +6,15 @@ import { GoogleAuthButton } from "@/components/google-auth-button";
 import { registerUser, saveAuthSession } from "@/lib/auth-api";
 import { trackEvent } from "@/lib/analytics";
 
+function safeNextPath(defaultNextPath = "/onboarding") {
+  const value = new URL(window.location.href).searchParams.get("next");
+
+  if (value?.startsWith("/") && !value.startsWith("//")) {
+    return value;
+  }
+
+  return defaultNextPath;
+}
 
 export function RegisterForm() {
   const [name, setName] = useState("");
@@ -23,7 +32,7 @@ export function RegisterForm() {
       const session = await registerUser({ name, email, password });
       saveAuthSession(session);
       trackEvent("sign_up", { method: "email" });
-      window.location.href = "/onboarding";
+      window.location.href = safeNextPath();
     } catch {
       setError("Akun belum bisa dibuat. Cek email dan password, lalu coba lagi.");
       setIsSubmitting(false);

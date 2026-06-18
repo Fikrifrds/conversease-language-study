@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, CircleDot, PlayCircle } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { ArrowRight, CheckCircle2, CircleDot, PlayCircle, X } from "lucide-react";
+import { LoginForm } from "@/components/login-form";
 import { getAuthSession } from "@/lib/auth-api";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
@@ -10,11 +12,15 @@ import { course as defaultCourse, type courses } from "@/lib/data";
 type Course = (typeof courses)[number];
 
 export function CourseProgressList({ course = defaultCourse }: { course?: Course }) {
+  const router = useRouter();
   const [summary, setSummary] = useState<LearningProgressSummary | null>(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [loginTarget, setLoginTarget] = useState("");
 
   useEffect(() => {
     let ignore = false;
     const session = getAuthSession();
+    setIsAuthenticated(Boolean(session));
 
     if (!session) {
       setSummary(null);
@@ -49,92 +55,154 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
     [summary]
   );
 
+  function requestLesson(event: MouseEvent<HTMLAnchorElement>, href: string) {
+    if (isAuthenticated) {
+      return;
+    }
+
+    event.preventDefault();
+    setLoginTarget(href);
+  }
+
+  function handleLoginSuccess(nextPath: string) {
+    setIsAuthenticated(true);
+    setLoginTarget("");
+    router.push(nextPath);
+  }
+
   return (
-    <div className="mt-8 space-y-5">
-      {course.units.map((unit, unitIndex) => {
-        const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
-        const completedLessons = activeLessons.filter(
-          (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
-        ).length;
-        const progressPercent = activeLessons.length
-          ? Math.round((completedLessons / activeLessons.length) * 100)
-          : 0;
+    <>
+      <div className="mt-8 space-y-5">
+        {course.units.map((unit, unitIndex) => {
+          const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
+          const completedLessons = activeLessons.filter(
+            (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
+          ).length;
+          const progressPercent = activeLessons.length
+            ? Math.round((completedLessons / activeLessons.length) * 100)
+            : 0;
 
-        return (
-          <section
-            key={unit.title}
-            id={`unit-${unitIndex + 1}`}
-            className="scroll-mt-24 rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-6"
-          >
-            <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-              <div>
-                <span className="text-xs font-semibold uppercase text-coral">Unit {unitIndex + 1}</span>
-                <h2 className="mt-2 text-xl font-semibold">{unit.title}</h2>
-                <p className="mt-2 text-sm leading-6 text-ink/70">{unit.outcome}</p>
+          return (
+            <section
+              key={unit.title}
+              id={`unit-${unitIndex + 1}`}
+              className="scroll-mt-24 rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-6"
+            >
+              <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                  <span className="text-xs font-semibold uppercase text-coral">Unit {unitIndex + 1}</span>
+                  <h2 className="mt-2 text-xl font-semibold">{unit.title}</h2>
+                  <p className="mt-2 text-sm leading-6 text-ink/70">{unit.outcome}</p>
+                </div>
+                {summary ? (
+                  <div className="w-full max-w-xs">
+                    <div className="mb-2 flex justify-between text-sm">
+                      <span>Progress</span>
+                      <span>{progressPercent}%</span>
+                    </div>
+                    <div className="h-2 rounded-lg bg-ink/10">
+                      <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
+                    </div>
+                  </div>
+                ) : (
+                  <div className="rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
+                    Preview modul publik
+                  </div>
+                )}
               </div>
-              {summary ? (
-                <div className="w-full max-w-xs">
-                  <div className="mb-2 flex justify-between text-sm">
-                    <span>Progress</span>
-                    <span>{progressPercent}%</span>
-                  </div>
-                  <div className="h-2 rounded-lg bg-ink/10">
-                    <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
-                  </div>
-                </div>
-              ) : (
-                <div className="rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
-                  Preview modul publik
-                </div>
-              )}
-            </div>
 
-            {activeLessons.length ? (
-              <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                {activeLessons.map((lesson, lessonIndex) => {
-                  const lessonProgress = progressBySlug.get(lesson.slug);
-                  const completed = lessonProgress?.progressStatus === "completed";
-                  const inProgress = lessonProgress?.progressStatus === "in_progress";
-                  const statusLabel = !summary ? "Preview" : completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
+              {activeLessons.length ? (
+                <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                  {activeLessons.map((lesson, lessonIndex) => {
+                    const lessonProgress = progressBySlug.get(lesson.slug);
+                    const completed = lessonProgress?.progressStatus === "completed";
+                    const inProgress = lessonProgress?.progressStatus === "in_progress";
+                    const statusLabel = !summary ? "Preview" : completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
+                    const lessonHref = `/lessons/${lesson.slug}`;
 
-                  return (
-                    <Link
-                      key={lesson.slug}
-                      href={`/lessons/${lesson.slug}`}
-                      className="focus-ring group rounded-lg border border-transparent bg-paper p-4 transition hover:border-leaf/20 hover:bg-mint"
-                    >
-                      <div className="flex items-center justify-between gap-3">
-                        <span className="text-xs font-semibold uppercase text-leaf">
-                          {course.level} · U{unitIndex + 1} · L{lessonIndex + 1}
-                        </span>
-                        <span className="flex items-center gap-2">
-                          <span className={`text-xs font-semibold uppercase ${
-                            completed ? "text-leaf" : inProgress ? "text-coral" : "text-ink/45"
-                          }`}>
-                            {statusLabel}
+                    return (
+                      <Link
+                        key={lesson.slug}
+                        href={lessonHref}
+                        onClick={(event) => requestLesson(event, lessonHref)}
+                        className="focus-ring group rounded-lg border border-transparent bg-paper p-4 transition hover:border-leaf/20 hover:bg-mint"
+                      >
+                        <div className="flex items-center justify-between gap-3">
+                          <span className="text-xs font-semibold uppercase text-leaf">
+                            {course.level} · U{unitIndex + 1} · L{lessonIndex + 1}
                           </span>
-                          {completed ? (
-                            <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
-                          ) : inProgress ? (
-                            <CircleDot className="h-4 w-4 text-coral" aria-hidden="true" />
-                          ) : (
-                            <PlayCircle className="h-4 w-4 text-ink/40 group-hover:text-leaf" aria-hidden="true" />
-                          )}
-                        </span>
-                      </div>
-                      <h3 className="mt-3 font-semibold leading-snug text-ink">{lesson.title}</h3>
-                      <div className="mt-3 flex items-center justify-between gap-3 text-sm text-ink/60">
-                        <span>{lesson.minutes} menit</span>
-                        <ArrowRight className="h-4 w-4 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" />
-                      </div>
-                    </Link>
-                  );
-                })}
-              </div>
-            ) : null}
-          </section>
-        );
-      })}
+                          <span className="flex items-center gap-2">
+                            <span className={`text-xs font-semibold uppercase ${
+                              completed ? "text-leaf" : inProgress ? "text-coral" : "text-ink/45"
+                            }`}>
+                              {statusLabel}
+                            </span>
+                            {completed ? (
+                              <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
+                            ) : inProgress ? (
+                              <CircleDot className="h-4 w-4 text-coral" aria-hidden="true" />
+                            ) : (
+                              <PlayCircle className="h-4 w-4 text-ink/40 group-hover:text-leaf" aria-hidden="true" />
+                            )}
+                          </span>
+                        </div>
+                        <h3 className="mt-3 font-semibold leading-snug text-ink">{lesson.title}</h3>
+                        <div className="mt-3 flex items-center justify-between gap-3 text-sm text-ink/60">
+                          <span>{lesson.minutes} menit</span>
+                          <ArrowRight className="h-4 w-4 opacity-0 transition group-hover:translate-x-0.5 group-hover:opacity-100" aria-hidden="true" />
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              ) : null}
+            </section>
+          );
+        })}
+      </div>
+      {loginTarget ? (
+        <LessonLoginModal
+          targetPath={loginTarget}
+          onClose={() => setLoginTarget("")}
+          onSuccess={handleLoginSuccess}
+        />
+      ) : null}
+    </>
+  );
+}
+
+function LessonLoginModal({
+  targetPath,
+  onClose,
+  onSuccess
+}: {
+  targetPath: string;
+  onClose: () => void;
+  onSuccess: (nextPath: string) => void;
+}) {
+  return (
+    <div className="fixed inset-0 z-50 flex items-end justify-center bg-ink/55 p-0 backdrop-blur-sm sm:items-center sm:p-4">
+      <section className="max-h-[92svh] w-full overflow-y-auto rounded-t-lg bg-white p-5 shadow-2xl sm:max-w-md sm:rounded-lg sm:p-6">
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase text-leaf">Mulai lesson</p>
+            <h2 className="mt-1 text-2xl font-semibold">Login untuk lanjut belajar</h2>
+            <p className="mt-2 text-sm leading-6 text-ink/60">
+              Katalog course bisa dilihat bebas. Untuk membuka lesson, simpan progress, dan memutar audio,
+              silakan login dulu.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            className="focus-ring rounded-lg p-2 text-ink/55 hover:bg-paper hover:text-ink"
+            aria-label="Tutup login"
+          >
+            <X className="h-5 w-5" aria-hidden="true" />
+          </button>
+        </div>
+        <LoginForm defaultNextPath={targetPath} onSuccess={onSuccess} />
+      </section>
     </div>
   );
 }

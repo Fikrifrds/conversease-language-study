@@ -7,17 +7,23 @@ import { Mail } from "lucide-react";
 import { GoogleAuthButton } from "@/components/google-auth-button";
 import { loginUser, saveAuthSession } from "@/lib/auth-api";
 
-function safeNextPath() {
+function safeNextPath(defaultNextPath = "/dashboard") {
   const value = new URL(window.location.href).searchParams.get("next");
 
   if (value?.startsWith("/") && !value.startsWith("//")) {
     return value;
   }
 
-  return "/dashboard";
+  return defaultNextPath;
 }
 
-export function LoginForm() {
+export function LoginForm({
+  defaultNextPath = "/dashboard",
+  onSuccess
+}: {
+  defaultNextPath?: string;
+  onSuccess?: (nextPath: string) => void;
+}) {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -39,7 +45,12 @@ export function LoginForm() {
     try {
       const session = await loginUser({ email, password });
       saveAuthSession(session);
-      router.replace(safeNextPath());
+      const nextPath = safeNextPath(defaultNextPath);
+      if (onSuccess) {
+        onSuccess(nextPath);
+        return;
+      }
+      router.replace(nextPath);
     } catch {
       setError("Email atau password belum cocok.");
       setIsSubmitting(false);
@@ -48,7 +59,7 @@ export function LoginForm() {
 
   return (
     <div className="mt-6 space-y-4">
-      <GoogleAuthButton label="Masuk dengan Google" />
+      <GoogleAuthButton label="Masuk dengan Google" defaultNextPath={defaultNextPath} />
       <div className="flex items-center gap-3 text-xs font-semibold uppercase text-ink/40">
         <span className="h-px flex-1 bg-ink/10" />
         <span>Email</span>
@@ -94,7 +105,7 @@ export function LoginForm() {
       </button>
       <p className="pt-2 text-sm text-ink/60">
         Belum punya akun?{" "}
-        <Link className="font-semibold text-leaf" href="/register">
+        <Link className="font-semibold text-leaf" href={`/register?next=${encodeURIComponent(defaultNextPath)}`}>
           Buat akun
         </Link>
       </p>
