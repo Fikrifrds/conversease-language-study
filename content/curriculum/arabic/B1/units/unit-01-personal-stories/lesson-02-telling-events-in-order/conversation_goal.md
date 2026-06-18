@@ -1,0 +1,11 @@
+# Target Percakapan
+
+Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah mengikuti alurnya.
+
+Kamu akan berlatih mengatakan:
+
+- أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+- ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+- بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+- وَأَخِيرًا، اتَّفَقْنَا عَلَى الْخُطْوَةِ التَّالِيَةِ.
+- هَكَذَا صَارَتِ الْقِصَّةُ وَاضِحَةً.

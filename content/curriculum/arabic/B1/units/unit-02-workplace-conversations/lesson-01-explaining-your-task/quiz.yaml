@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya mengerjakan tugas baru minggu ini."?
+  options:
+  - أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+  - الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.
+  - أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.
+  correct_answer: أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Tujuannya adalah memperbaiki pengaturan."?
+  options:
+  - الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.
+  - أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+  - أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.
+  correct_answer: الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.

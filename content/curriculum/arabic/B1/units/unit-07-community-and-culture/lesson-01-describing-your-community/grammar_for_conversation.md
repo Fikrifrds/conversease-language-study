@@ -1,0 +1,12 @@
+# Pola Percakapan
+
+Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+
+```txt
+أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.
+أَشْعُرُ بِالِانْتِمَاءِ إِلَى هَذَا الْمَكَانِ.
+```
+
+Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.

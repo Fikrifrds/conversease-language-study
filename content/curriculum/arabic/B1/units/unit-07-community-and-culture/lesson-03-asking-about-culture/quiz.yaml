@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Bolehkah saya bertanya tentang kebiasaan ini?"?
+  options:
+  - هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
+  - أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.
+  - هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟
+  correct_answer: هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya ingin memahami konteks budaya."?
+  options:
+  - أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.
+  - هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
+  - هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟
+  correct_answer: أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.

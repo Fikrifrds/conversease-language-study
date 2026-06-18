@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengerjakan tugas baru minggu ini.'
+  target_response: أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+  acceptable_responses:
+  - أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tujuannya adalah memperbaiki pengaturan.'
+  target_response: الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.
+  acceptable_responses:
+  - الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya perlu meninjau detailnya dulu.'
+  target_response: أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.
+  acceptable_responses:
+  - أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.

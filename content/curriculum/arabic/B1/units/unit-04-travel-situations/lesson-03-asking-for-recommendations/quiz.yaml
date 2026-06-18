@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apakah kamu merekomendasikan restoran dekat?"?
+  options:
+  - هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+  - أُفَضِّلُ مَكَانًا هَادِئًا.
+  - يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.
+  correct_answer: هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya lebih suka tempat yang tenang."?
+  options:
+  - أُفَضِّلُ مَكَانًا هَادِئًا.
+  - هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+  - يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.
+  correct_answer: أُفَضِّلُ مَكَانًا هَادِئًا.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya mengerjakan pengaturan file."?
+  options:
+  - أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+  - هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+  - أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
+  correct_answer: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apakah maksudmu hanya file baru?"?
+  options:
+  - هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+  - أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+  - أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
+  correct_answer: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟

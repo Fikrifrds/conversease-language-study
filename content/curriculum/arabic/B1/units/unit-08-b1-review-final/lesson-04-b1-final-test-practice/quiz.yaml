@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan menjawab dengan kalimat yang terhubung."?
+  options:
+  - سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+  - أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  - إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  correct_answer: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya menyebut konteks, alasan, dan hasil."?
+  options:
+  - أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  - سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+  - إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  correct_answer: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.

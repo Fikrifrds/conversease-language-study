@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Ada masalah pada layanan."?
+  options:
+  - تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.
+  - الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.
+  - أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ.
+  correct_answer: تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Masalahnya mulai sejak pagi."?
+  options:
+  - الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.
+  - تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.
+  - أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ.
+  correct_answer: الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.

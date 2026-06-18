@@ -1,0 +1,27 @@
+lesson_key: lesson-04-being-polite-with-differences
+slug: arabic-b1-being-polite-with-differences
+title: Being Polite With Differences
+status: beta
+estimated_minutes: 14
+conversation_situation: being_polite_with_differences
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: being polite with
+  differences, dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+grammar_summary: Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apakah maksudmu jadwalnya berubah?"?
+  options:
+  - هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+  - مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+  - أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+  correct_answer: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Apa maksud poin ini?"?
+  options:
+  - مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+  - هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+  - أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+  correct_answer: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟

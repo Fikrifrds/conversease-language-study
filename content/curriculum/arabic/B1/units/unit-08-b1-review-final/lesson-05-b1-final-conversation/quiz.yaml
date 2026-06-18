@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan berbicara tentang pengalaman pribadi."?
+  options:
+  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  correct_answer: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Lalu saya menjelaskan masalah dan solusi."?
+  options:
+  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  correct_answer: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.

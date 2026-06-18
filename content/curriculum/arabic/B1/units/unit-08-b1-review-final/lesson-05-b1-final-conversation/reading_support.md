@@ -1,0 +1,9 @@
+# Bantuan Membaca
+
+Baca kalimat dari kanan ke kiri. Cari dulu frasa penghubung, lalu pahami fungsi kalimat: konteks, alasan, hasil, atau langkah berikutnya.
+
+- سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ. -> Saya akan berbicara tentang pengalaman pribadi.
+- ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا. -> Lalu saya menjelaskan masalah dan solusi.
+- بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ. -> Setelah itu, saya menjelaskan pendapat saya dengan alasan.
+- أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا. -> Saya bertanya agar dialog tetap hidup.
+- فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ. -> Pada akhir, saya merangkum poin penting.

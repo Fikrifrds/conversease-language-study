@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Ada masalah pada layanan.'
+  target_response: تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.
+  acceptable_responses:
+  - تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Masalahnya mulai sejak pagi.'
+  target_response: الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.
+  acceptable_responses:
+  - الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Itu memengaruhi pekerjaan.'
+  target_response: أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ.
+  acceptable_responses:
+  - أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ.

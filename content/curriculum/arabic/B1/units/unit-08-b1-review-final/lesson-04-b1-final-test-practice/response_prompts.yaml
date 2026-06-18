@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menjawab dengan kalimat yang terhubung.'
+  target_response: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+  acceptable_responses:
+  - سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menyebut konteks, alasan, dan hasil.'
+  target_response: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  acceptable_responses:
+  - أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika saya tidak paham, saya meminta klarifikasi.'
+  target_response: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  acceptable_responses:
+  - إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.

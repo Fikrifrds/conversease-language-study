@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa kelebihan pilihan ini?"?
+  options:
+  - مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
+  - وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟
+  - هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟
+  correct_answer: مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Dan apa kemungkinan kekurangannya?"?
+  options:
+  - وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟
+  - مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
+  - هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟
+  correct_answer: وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟

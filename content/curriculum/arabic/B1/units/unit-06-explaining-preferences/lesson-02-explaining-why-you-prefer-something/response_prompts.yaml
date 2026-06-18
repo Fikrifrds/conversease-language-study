@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih pilihan ini karena lebih jelas.'
+  target_response: أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+  acceptable_responses:
+  - أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini lebih cocok dengan tujuan kita.'
+  target_response: يُنَاسِبُ هَدَفَنَا أَكْثَرَ.
+  acceptable_responses:
+  - يُنَاسِبُ هَدَفَنَا أَكْثَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Meskipun sedikit lebih mahal.'
+  target_response: رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.
+  acceptable_responses:
+  - رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya setuju denganmu pada poin pertama.'
+  target_response: أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
+  acceptable_responses:
+  - أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
+- prompt: 'Ucapkan dalam bahasa Arab: Tetapi saya melihat pilihan lain.'
+  target_response: لَكِنَّنِي أَرَى خِيَارًا آخَرَ.
+  acceptable_responses:
+  - لَكِنَّنِي أَرَى خِيَارًا آخَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mungkin kita bisa menggabungkan dua ide.'
+  target_response: مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.
+  acceptable_responses:
+  - مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.

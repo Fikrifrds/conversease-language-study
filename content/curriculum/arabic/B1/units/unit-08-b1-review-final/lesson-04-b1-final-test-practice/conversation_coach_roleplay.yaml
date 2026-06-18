@@ -1,0 +1,53 @@
+scenario_key: arabic_b1_b1_final_test_practice
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.'
+  sample_answer: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - سَأُجِيبُ
+  - بِجُمَلٍ
+  - مُتَرَابِطَةٍ
+  indonesian_explanation: Saya akan menjawab dengan kalimat yang terhubung.
+- coach: 'استخدم الفكرة: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.'
+  sample_answer: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَذْكُرُ
+  - السِّبَاقَ
+  - وَالسَّبَبَ
+  - وَالنَّتِيجَةَ
+  indonesian_explanation: Saya menyebut konteks, alasan, dan hasil.
+- coach: 'استخدم الفكرة: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.'
+  hint: 'Jawab dengan kalimat terhubung memakai: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.'
+  sample_answer: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - إِذَا
+  - لَمْ
+  - أَفْهَمْ،
+  - أَطْلُبُ
+  indonesian_explanation: Jika saya tidak paham, saya meminta klarifikasi.
+target_phrases:
+- سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+- أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+- إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+- أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.
+- هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

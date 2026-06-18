@@ -1,0 +1,27 @@
+lesson_key: lesson-02-telling-events-in-order
+slug: arabic-b1-telling-events-in-order
+title: Telling Events in Order
+status: beta
+estimated_minutes: 14
+conversation_situation: telling_events_in_order
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan
+  agar lawan bicara mudah mengikuti alurnya.'
+grammar_summary: Gunakan أَوَّلًا، ثُمَّ، بَعْدَ ذَلِكَ، وَأَخِيرًا untuk menyusun cerita.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya merasa khawatir di awal."?
+  options:
+  - شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+  - لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+  - بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+  correct_answer: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Karena situasinya baru bagi saya."?
+  options:
+  - لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+  - شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+  - بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+  correct_answer: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.

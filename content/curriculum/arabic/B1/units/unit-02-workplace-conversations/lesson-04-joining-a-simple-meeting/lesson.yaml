@@ -1,0 +1,27 @@
+lesson_key: lesson-04-joining-a-simple-meeting
+slug: arabic-b1-joining-a-simple-meeting
+title: Joining a Simple Meeting
+status: beta
+estimated_minutes: 14
+conversation_situation: joining_a_simple_meeting
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi
+  pendapat, dan menanyakan langkah berikutnya.'
+grammar_summary: Gunakan أُرِيدُ أَنْ أُضِيفَ، أَقْتَرِحُ، وَمَا الْخُطْوَةُ التَّالِيَةُ؟
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

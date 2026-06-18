@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Kita punya dua pilihan berbeda."?
+  options:
+  - عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+  - الْخِيَارُ الْأَوَّلُ أَسْرَعُ.
+  - الْخِيَارُ الثَّانِي أَرْخَصُ.
+  correct_answer: عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Pilihan pertama lebih cepat."?
+  options:
+  - الْخِيَارُ الْأَوَّلُ أَسْرَعُ.
+  - عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+  - الْخِيَارُ الثَّانِي أَرْخَصُ.
+  correct_answer: الْخِيَارُ الْأَوَّلُ أَسْرَعُ.

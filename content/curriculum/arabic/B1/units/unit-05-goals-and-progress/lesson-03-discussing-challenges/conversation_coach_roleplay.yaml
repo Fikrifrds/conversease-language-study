@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_discussing_challenges
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: discussing challenges,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.'
+  sample_answer: أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَكْبَرُ
+  - تَحَدٍّ
+  - هُوَ
+  - السُّرْعَةُ
+  indonesian_explanation: Tantangan terbesar adalah kecepatan.
+- coach: 'استخدم الفكرة: أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.'
+  sample_answer: أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَحْتَاجُ
+  - إِلَى
+  - وَقْتٍ
+  - لِلتَّفْكِيرِ
+  indonesian_explanation: Saya butuh waktu untuk berpikir.
+- coach: 'استخدم الفكرة: أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.'
+  sample_answer: أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَحْيَانًا
+  - أَنْسَى
+  - الْكَلِمَاتِ
+  - الْمُنَاسِبَةَ
+  indonesian_explanation: Kadang saya lupa kata yang cocok.
+target_phrases:
+- أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+- أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+- أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.
+- سَأُقَلِّلُ الْجُمَلَ الطَّوِيلَةَ.
+- هَذَا يُسَاعِدُنِي عَلَى الطَّلَاقَةِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

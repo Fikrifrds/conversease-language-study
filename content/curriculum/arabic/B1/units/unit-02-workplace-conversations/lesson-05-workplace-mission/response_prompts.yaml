@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengerjakan pengaturan file.'
+  target_response: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+  acceptable_responses:
+  - أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah maksudmu hanya file baru?'
+  target_response: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+  acceptable_responses:
+  - هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya sudah menyelesaikan setengah pekerjaan sampai sekarang.'
+  target_response: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
+  acceptable_responses:
+  - أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.

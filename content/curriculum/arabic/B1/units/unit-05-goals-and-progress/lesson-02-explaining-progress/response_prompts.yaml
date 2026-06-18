@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya sedikit maju bulan ini.'
+  target_response: تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+  acceptable_responses:
+  - تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menjadi lebih cepat memahami dialog.'
+  target_response: أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.
+  acceptable_responses:
+  - أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya masih salah pada beberapa kalimat.'
+  target_response: مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.
+  acceptable_responses:
+  - مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.

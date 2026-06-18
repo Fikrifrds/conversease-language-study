@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya setuju denganmu pada poin pertama."?
+  options:
+  - أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
+  - لَكِنَّنِي أَرَى خِيَارًا آخَرَ.
+  - مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.
+  correct_answer: أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Tetapi saya melihat pilihan lain."?
+  options:
+  - لَكِنَّنِي أَرَى خِيَارًا آخَرَ.
+  - أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
+  - مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.
+  correct_answer: لَكِنَّنِي أَرَى خِيَارًا آخَرَ.

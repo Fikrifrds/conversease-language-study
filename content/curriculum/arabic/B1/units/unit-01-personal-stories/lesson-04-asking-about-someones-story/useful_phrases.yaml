@@ -1,0 +1,16 @@
+phrases:
+- phrase: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  meaning_id: Apa yang terjadi setelah itu?
+  usage_note: Meminta lanjutan cerita.
+- phrase: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  meaning_id: Bagaimana perasaanmu pada saat itu?
+  usage_note: Menanyakan perasaan.
+- phrase: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  meaning_id: Mengapa itu penting bagimu?
+  usage_note: Menanyakan makna cerita.
+- phrase: أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ أَكْثَرَ.
+  meaning_id: Saya ingin memahami konteksnya lebih banyak.
+  usage_note: Meminta konteks dengan sopan.
+- phrase: شُكْرًا، أَصْبَحَتِ الْقِصَّةُ أَوْضَحَ.
+  meaning_id: Terima kasih, ceritanya menjadi lebih jelas.
+  usage_note: Merespons setelah penjelasan.

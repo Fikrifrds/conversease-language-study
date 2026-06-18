@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa kelebihan pilihan ini?'
+  target_response: مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
+  acceptable_responses:
+  - مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Dan apa kemungkinan kekurangannya?'
+  target_response: وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟
+  acceptable_responses:
+  - وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kelebihannya lebih banyak dari masalahnya?'
+  target_response: هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟
+  acceptable_responses:
+  - هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟

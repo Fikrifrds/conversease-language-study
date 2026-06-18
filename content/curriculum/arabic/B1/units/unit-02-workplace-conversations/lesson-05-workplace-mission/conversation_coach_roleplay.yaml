@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_workplace_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: أَعْطِينِي تَحْدِيثًا عَنِ الْعَمَلِ.
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi,
+  memberi update, dan menutup dengan action point.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: أَعْطِينِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  hint: 'Jawab dengan kalimat terhubung memakai: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.'
+  sample_answer: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+  focus: Menjelaskan tugas.
+  expected_keywords:
+  - أَعْمَلُ
+  - عَلَى
+  - تَنْظِيمِ
+  - الْمَلَفَّاتِ
+  indonesian_explanation: Saya mengerjakan pengaturan file.
+- coach: 'استخدم الفكرة: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟'
+  hint: 'Jawab dengan kalimat terhubung memakai: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟'
+  sample_answer: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+  focus: Meminta klarifikasi.
+  expected_keywords:
+  - هَلْ
+  - تَقْصِدِينَ
+  - الْمَلَفَّاتِ
+  - الْجَدِيدَةَ
+  indonesian_explanation: Apakah maksudmu hanya file baru?
+- coach: 'استخدم الفكرة: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.'
+  sample_answer: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
+  focus: Memberi progress.
+  expected_keywords:
+  - أَنْجَزْتُ
+  - نِصْفَ
+  - الْعَمَلِ
+  - حَتَّى
+  indonesian_explanation: Saya sudah menyelesaikan setengah pekerjaan sampai sekarang.
+target_phrases:
+- أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
+- هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
+- أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
+- سَأُرْسِلُ مُلَخَّصًا قَبْلَ الْمَسَاءِ.
+- إِذَا ظَهَرَتْ مُشْكِلَةٌ، سَأُخْبِرُكِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

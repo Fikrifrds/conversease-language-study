@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Bolehkah saya bertanya tentang kebiasaan ini?'
+  target_response: هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
+  acceptable_responses:
+  - هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami konteks budaya.'
+  target_response: أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah ini hal resmi atau biasa?'
+  target_response: هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟
+  acceptable_responses:
+  - هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟

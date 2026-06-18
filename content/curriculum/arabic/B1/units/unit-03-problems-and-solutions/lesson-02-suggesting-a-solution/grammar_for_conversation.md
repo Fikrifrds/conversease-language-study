@@ -1,0 +1,12 @@
+# Pola Percakapan
+
+Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+
+```txt
+أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+لَكِنَّهُ يَحْتَاجُ إِلَى مُرَاجَعَةٍ.
+```
+
+Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.

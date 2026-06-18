@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya reservasi tetapi terlambat.'
+  target_response: عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+  acceptable_responses:
+  - عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mengonfirmasi kedatangan.'
+  target_response: أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu merekomendasikan tempat makan dekat?'
+  target_response: هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟
+  acceptable_responses:
+  - هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟

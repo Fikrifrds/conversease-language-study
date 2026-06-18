@@ -1,0 +1,12 @@
+unit_key: unit-02-workplace-conversations
+level_code: B1
+title: Workplace Conversations
+main_conversation_outcome: Explain tasks, clarify requests, give updates, join simple meetings, and close
+  with action points.
+status: beta
+lessons:
+- lesson-01-explaining-your-task
+- lesson-02-asking-for-clarification
+- lesson-03-giving-a-short-update
+- lesson-04-joining-a-simple-meeting
+- lesson-05-workplace-mission

@@ -1,0 +1,27 @@
+lesson_key: lesson-02-explaining-why-you-prefer-something
+slug: arabic-b1-explaining-why-you-prefer-something
+title: Explaining Why You Prefer Something
+status: beta
+estimated_minutes: 14
+conversation_situation: explaining_why_you_prefer_something
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining why
+  you prefer something, dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+grammar_summary: Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

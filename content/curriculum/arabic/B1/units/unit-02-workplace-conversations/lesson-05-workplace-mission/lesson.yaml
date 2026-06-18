@@ -1,0 +1,27 @@
+lesson_key: lesson-05-workplace-mission
+slug: arabic-b1-workplace-mission
+title: Workplace Mission
+status: beta
+estimated_minutes: 14
+conversation_situation: workplace_mission
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi,
+  memberi update, dan menutup dengan action point.'
+grammar_summary: Gabungkan أَعْمَلُ عَلَى، هَلْ تَقْصِدُ، أَنْجَزْتُ، وَسَأُرْسِلُ.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

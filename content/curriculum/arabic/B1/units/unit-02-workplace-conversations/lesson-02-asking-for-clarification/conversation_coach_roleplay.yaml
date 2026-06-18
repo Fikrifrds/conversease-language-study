@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_asking_for_clarification
+mode: lesson_practice_coach
+level_code: B1
+opening_line: هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum
+  cukup jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟'
+  sample_answer: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+  focus: Mengecek maksud.
+  expected_keywords:
+  - هَلْ
+  - تَقْصِدِينَ
+  - أَنَّ
+  - الْمَوْعِدَ
+  indonesian_explanation: Apakah maksudmu jadwalnya berubah?
+- coach: 'استخدم الفكرة: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟'
+  hint: 'Jawab dengan kalimat terhubung memakai: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟'
+  sample_answer: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+  focus: Meminta penjelasan detail.
+  expected_keywords:
+  - مَا
+  - الْمَقْصُودُ
+  - بِهَذِهِ
+  - النُّقْطَةِ
+  indonesian_explanation: Apa maksud poin ini?
+- coach: 'استخدم الفكرة: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.'
+  sample_answer: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+  focus: Melembutkan klarifikasi.
+  expected_keywords:
+  - أَسْأَلُ
+  - لِكَيْ
+  - أَتَأَكَّدَ
+  - فَقَطْ
+  indonesian_explanation: Saya bertanya hanya untuk memastikan.
+target_phrases:
+- هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+- مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+- أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+- هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟
+- الْآنَ فَهِمْتُ الْمَطْلُوبَ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

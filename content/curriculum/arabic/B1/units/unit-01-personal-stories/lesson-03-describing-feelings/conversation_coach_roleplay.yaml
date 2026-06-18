@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_describing_feelings
+mode: lesson_practice_coach
+level_code: B1
+opening_line: كَيْفَ شَعَرْتَ فِي ذَلِكَ الْمَوْقِفِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan
+  memberi alasan singkat mengapa merasa begitu.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ شَعَرْتَ فِي ذَلِكَ الْمَوْقِفِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.'
+  sample_answer: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+  focus: Menyebut perasaan awal.
+  expected_keywords:
+  - شَعَرْتُ
+  - بِالْقَلَقِ
+  - فِي
+  - الْبِدَايَةِ
+  indonesian_explanation: Saya merasa khawatir di awal.
+- coach: 'استخدم الفكرة: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.'
+  sample_answer: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+  focus: Memberi alasan perasaan.
+  expected_keywords:
+  - لِأَنَّ
+  - الْمَوْقِفَ
+  - كَانَ
+  - جَدِيدًا
+  indonesian_explanation: Karena situasinya baru bagi saya.
+- coach: 'استخدم الفكرة: بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.'
+  sample_answer: بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+  focus: Menunjukkan perubahan perasaan.
+  expected_keywords:
+  - بَعْدَ
+  - قَلِيلٍ،
+  - شَعَرْتُ
+  - بِالرَّاحَةِ
+  indonesian_explanation: Setelah sebentar, saya merasa nyaman.
+target_phrases:
+- شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+- لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+- بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+- هَذَا التَّغْيِيرُ كَانَ مُهِمًّا فِي الْقِصَّةِ.
+- فِي النِّهَايَةِ، كُنْتُ سَعِيدًا بِالنَّتِيجَةِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

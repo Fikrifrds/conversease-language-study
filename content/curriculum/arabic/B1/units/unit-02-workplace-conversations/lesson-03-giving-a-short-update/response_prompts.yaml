@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya sudah menyelesaikan bagian pertama tugas.'
+  target_response: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+  acceptable_responses:
+  - أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya masih mengerjakan detailnya.'
+  target_response: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+  acceptable_responses:
+  - مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Belum ada masalah besar sampai sekarang.'
+  target_response: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+  acceptable_responses:
+  - لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.

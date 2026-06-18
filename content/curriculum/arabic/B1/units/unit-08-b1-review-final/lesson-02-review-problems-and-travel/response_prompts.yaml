@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menjelaskan masalah lalu menyarankan solusi.'
+  target_response: سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
+  acceptable_responses:
+  - سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam perjalanan, saya butuh detail jelas.'
+  target_response: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
+  acceptable_responses:
+  - فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika terjadi keterlambatan, saya akan memberi tahu pihak lain.'
+  target_response: إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
+  acceptable_responses:
+  - إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya punya reservasi atas nama Ahmad."?
+  options:
+  - لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+  - أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+  - هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟
+  correct_answer: لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya ingin mengonfirmasi detailnya."?
+  options:
+  - أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+  - لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+  - هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟
+  correct_answer: أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.

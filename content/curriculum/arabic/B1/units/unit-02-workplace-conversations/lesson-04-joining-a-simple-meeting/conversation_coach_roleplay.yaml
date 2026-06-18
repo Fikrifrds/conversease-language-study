@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_joining_a_simple_meeting
+mode: lesson_practice_coach
+level_code: B1
+opening_line: هَلْ تُرِيدِينَ أَنْ تُضِيفِي شَيْئًا؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat,
+  dan menanyakan langkah berikutnya.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: هَلْ تُرِيدِينَ أَنْ تُضِيفِي شَيْئًا؟
+  hint: 'Jawab dengan kalimat terhubung memakai: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.'
+  sample_answer: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+  focus: Masuk diskusi dengan sopan.
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أُضِيفَ
+  - نُقْطَةً
+  indonesian_explanation: Saya ingin menambahkan poin kecil.
+- coach: 'استخدم الفكرة: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.'
+  sample_answer: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+  focus: Memberi saran.
+  expected_keywords:
+  - أَقْتَرِحُ
+  - أَنْ
+  - نُرَاجِعَ
+  - الْخُطَّةَ
+  indonesian_explanation: Saya menyarankan kita meninjau rencana dulu.
+- coach: 'استخدم الفكرة: هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.'
+  sample_answer: هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
+  focus: Memberi alasan saran.
+  expected_keywords:
+  - هَذَا
+  - يُمْكِنُ
+  - أَنْ
+  - يُقَلِّلَ
+  indonesian_explanation: Ini bisa mengurangi kesalahan.
+target_phrases:
+- أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+- أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+- هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
+- مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟
+- سَأَكْتُبُ النِّقَاطَ الْمُهِمَّةَ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

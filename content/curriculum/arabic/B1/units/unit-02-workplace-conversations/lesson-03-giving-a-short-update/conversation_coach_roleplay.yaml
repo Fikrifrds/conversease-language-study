@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_giving_a_short_update
+mode: lesson_practice_coach
+level_code: B1
+opening_line: هَلْ عِنْدَكِ تَحْدِيثٌ قَصِيرٌ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress,
+  kendala, dan langkah berikutnya.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: هَلْ عِنْدَكِ تَحْدِيثٌ قَصِيرٌ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.'
+  sample_answer: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+  focus: Menyebut progress.
+  expected_keywords:
+  - أَنْجَزْتُ
+  - الْجُزْءَ
+  - الْأَوَّلَ
+  - مِنَ
+  indonesian_explanation: Saya sudah menyelesaikan bagian pertama tugas.
+- coach: 'استخدم الفكرة: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.'
+  sample_answer: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+  focus: Menyebut yang belum selesai.
+  expected_keywords:
+  - مَا
+  - زِلْتُ
+  - أَعْمَلُ
+  - عَلَى
+  indonesian_explanation: Saya masih mengerjakan detailnya.
+- coach: 'استخدم الفكرة: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.'
+  sample_answer: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+  focus: Memberi status kendala.
+  expected_keywords:
+  - لَا
+  - تُوجَدُ
+  - مُشْكِلَةٌ
+  - كَبِيرَةٌ
+  indonesian_explanation: Belum ada masalah besar sampai sekarang.
+target_phrases:
+- أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+- مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+- لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+- سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ.
+- هَذَا هُوَ الْوَضْعُ الْحَالِيُّ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

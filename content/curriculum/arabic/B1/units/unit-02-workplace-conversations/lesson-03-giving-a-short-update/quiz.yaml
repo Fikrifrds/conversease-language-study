@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya sudah menyelesaikan bagian pertama tugas."?
+  options:
+  - أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+  - مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+  - لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+  correct_answer: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya masih mengerjakan detailnya."?
+  options:
+  - مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+  - أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+  - لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+  correct_answer: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.

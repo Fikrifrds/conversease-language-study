@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Pertama, saya tiba di tempat itu lebih awal.'
+  target_response: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+  acceptable_responses:
+  - أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu saya menunggu teman saya sebentar.'
+  target_response: ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+  acceptable_responses:
+  - ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, kami berbicara tentang rencana.'
+  target_response: بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+  acceptable_responses:
+  - بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.

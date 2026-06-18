@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Tujuan saya jelas tetapi tantangannya ada.'
+  target_response: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  acceptable_responses:
+  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih rencana sederhana dan berkelanjutan.'
+  target_response: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  acceptable_responses:
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan membandingkan dua pilihan.'
+  target_response: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  acceptable_responses:
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Tujuan saya jelas untuk bulan ini."?
+  options:
+  - هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.
+  - تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.
+  - أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ.
+  correct_answer: هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya maju dalam listening, tetapi speaking lebih sulit."?
+  options:
+  - تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.
+  - هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.
+  - أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ.
+  correct_answer: تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.

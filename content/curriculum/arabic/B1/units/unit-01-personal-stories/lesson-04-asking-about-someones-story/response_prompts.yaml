@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang terjadi setelah itu?'
+  target_response: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  acceptable_responses:
+  - مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana perasaanmu pada saat itu?'
+  target_response: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  acceptable_responses:
+  - كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Mengapa itu penting bagimu?'
+  target_response: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  acceptable_responses:
+  - لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟

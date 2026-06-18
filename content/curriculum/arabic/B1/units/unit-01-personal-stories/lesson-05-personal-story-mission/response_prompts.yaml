@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Di awal, situasinya belum jelas.'
+  target_response: فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
+  acceptable_responses:
+  - فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu saya bertanya kepada teman saya tentang detailnya.'
+  target_response: ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.
+  acceptable_responses:
+  - ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya memahami alasannya.'
+  target_response: بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ.
+  acceptable_responses:
+  - بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ.

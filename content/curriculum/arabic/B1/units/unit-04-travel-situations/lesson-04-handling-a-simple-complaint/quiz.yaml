@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya ingin menjelaskan masalah kecil."?
+  options:
+  - أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً.
+  - الْغُرْفَةُ غَيْرُ نَظِيفَةٍ تَمَامًا.
+  - هَلْ يُمْكِنُ أَنْ تُرْسِلُوا أَحَدًا؟
+  correct_answer: أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Kamarnya tidak sepenuhnya bersih."?
+  options:
+  - الْغُرْفَةُ غَيْرُ نَظِيفَةٍ تَمَامًا.
+  - أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً.
+  - هَلْ يُمْكِنُ أَنْ تُرْسِلُوا أَحَدًا؟
+  correct_answer: الْغُرْفَةُ غَيْرُ نَظِيفَةٍ تَمَامًا.

@@ -1,0 +1,27 @@
+lesson_key: lesson-05-personal-story-mission
+slug: arabic-b1-personal-story-mission
+title: Personal Story Mission
+status: beta
+estimated_minutes: 14
+conversation_situation: personal_story_mission
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian,
+  perasaan, dan pertanyaan lanjutan dalam satu cerita.'
+grammar_summary: Gabungkan frasa konteks, sequence markers, feeling, dan follow-up response.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

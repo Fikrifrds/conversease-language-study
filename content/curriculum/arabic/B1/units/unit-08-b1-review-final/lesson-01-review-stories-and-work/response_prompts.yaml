@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mulai dengan cerita singkat.'
+  target_response: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+  acceptable_responses:
+  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya memberi update tentang pekerjaan.'
+  target_response: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  acceptable_responses:
+  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya butuh klarifikasi pada satu poin.'
+  target_response: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  acceptable_responses:
+  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.

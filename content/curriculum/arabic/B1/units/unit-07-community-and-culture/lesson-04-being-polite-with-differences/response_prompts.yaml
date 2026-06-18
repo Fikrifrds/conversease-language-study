@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya paham bahwa kebiasaan berbeda-beda.'
+  target_response: أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
+  acceptable_responses:
+  - أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tidak ingin salah paham.'
+  target_response: لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
+  acceptable_responses:
+  - لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lebih baik bertanya dengan sopan.'
+  target_response: مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.
+  acceptable_responses:
+  - مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.

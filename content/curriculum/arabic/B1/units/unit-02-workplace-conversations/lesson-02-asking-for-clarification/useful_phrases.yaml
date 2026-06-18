@@ -1,0 +1,16 @@
+phrases:
+- phrase: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+  meaning_id: Apakah maksudmu jadwalnya berubah?
+  usage_note: Mengecek maksud.
+- phrase: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+  meaning_id: Apa maksud poin ini?
+  usage_note: Meminta penjelasan detail.
+- phrase: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+  meaning_id: Saya bertanya hanya untuk memastikan.
+  usage_note: Melembutkan klarifikasi.
+- phrase: هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟
+  meaning_id: Bisakah kamu mengulang penjelasan dengan singkat?
+  usage_note: Meminta pengulangan.
+- phrase: الْآنَ فَهِمْتُ الْمَطْلُوبَ.
+  meaning_id: Sekarang saya memahami yang diminta.
+  usage_note: Menutup klarifikasi.

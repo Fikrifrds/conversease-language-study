@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Nasihatmu bermanfaat."?
+  options:
+  - نَصِيحَتُكَ مُفِيدَةٌ.
+  - سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.
+  - أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.
+  correct_answer: نَصِيحَتُكَ مُفِيدَةٌ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya akan mencoba itu hari ini."?
+  options:
+  - سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.
+  - نَصِيحَتُكَ مُفِيدَةٌ.
+  - أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.
+  correct_answer: سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.

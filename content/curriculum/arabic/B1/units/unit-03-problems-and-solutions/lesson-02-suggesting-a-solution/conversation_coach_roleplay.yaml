@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_suggesting_a_solution
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: suggesting a solution,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.'
+  sample_answer: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَقْتَرِحُ
+  - أَنْ
+  - نُجَرِّبَ
+  - حَلًّا
+  indonesian_explanation: Saya menyarankan kita mencoba solusi sederhana.
+- coach: 'استخدم الفكرة: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.'
+  hint: 'Jawab dengan kalimat terhubung memakai: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.'
+  sample_answer: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - يُمْكِنُنَا
+  - أَنْ
+  - نُغَيِّرَ
+  - الْخُطَّةَ
+  indonesian_explanation: Kita bisa mengubah rencana sedikit.
+- coach: 'استخدم الفكرة: هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.'
+  sample_answer: هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - هَذَا
+  - الْحَلُّ
+  - أَسْرَعُ
+  - مِنَ
+  indonesian_explanation: Solusi ini lebih cepat dari pilihan lain.
+target_phrases:
+- أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+- يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+- هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+- لَكِنَّهُ يَحْتَاجُ إِلَى مُرَاجَعَةٍ.
+- إِذَا نَجَحَ، نَسْتَمِرُّ عَلَيْهِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

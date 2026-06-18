@@ -1,0 +1,6 @@
+lesson_key: lesson-04-b1-final-test-practice
+status: not_generated
+provider: elevenlabs
+model: eleven_v3
+default_voice_id: multi_speaker
+assets: []

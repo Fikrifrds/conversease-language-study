@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan membandingkan dua pilihan.'
+  target_response: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  acceptable_responses:
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih pilihan pertama karena lebih mudah.'
+  target_response: أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.
+  acceptable_responses:
+  - أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tetapi pilihan kedua lebih kuat.'
+  target_response: لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.
+  acceptable_responses:
+  - لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Di awal, situasinya belum jelas."?
+  options:
+  - فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
+  - ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.
+  - بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ.
+  correct_answer: فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Lalu saya bertanya kepada teman saya tentang detailnya."?
+  options:
+  - ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.
+  - فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
+  - بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ.
+  correct_answer: ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.

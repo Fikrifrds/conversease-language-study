@@ -1,0 +1,16 @@
+phrases:
+- phrase: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
+  meaning_id: Saya sudah menyelesaikan bagian pertama tugas.
+  usage_note: Menyebut progress.
+- phrase: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
+  meaning_id: Saya masih mengerjakan detailnya.
+  usage_note: Menyebut yang belum selesai.
+- phrase: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
+  meaning_id: Belum ada masalah besar sampai sekarang.
+  usage_note: Memberi status kendala.
+- phrase: سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ.
+  meaning_id: Saya akan mengirim update setelah satu jam.
+  usage_note: Memberi waktu update.
+- phrase: هَذَا هُوَ الْوَضْعُ الْحَالِيُّ.
+  meaning_id: Ini adalah kondisi saat ini.
+  usage_note: Menutup update.

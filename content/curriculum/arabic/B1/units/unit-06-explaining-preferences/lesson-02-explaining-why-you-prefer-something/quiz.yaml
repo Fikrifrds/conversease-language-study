@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya lebih memilih pilihan ini karena lebih jelas."?
+  options:
+  - أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+  - يُنَاسِبُ هَدَفَنَا أَكْثَرَ.
+  - رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.
+  correct_answer: أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Ini lebih cocok dengan tujuan kita."?
+  options:
+  - يُنَاسِبُ هَدَفَنَا أَكْثَرَ.
+  - أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+  - رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.
+  correct_answer: يُنَاسِبُ هَدَفَنَا أَكْثَرَ.

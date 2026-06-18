@@ -1,0 +1,27 @@
+lesson_key: lesson-01-explaining-your-task
+slug: arabic-b1-explaining-your-task
+title: Explaining Your Task
+status: beta
+estimated_minutes: 14
+conversation_situation: explaining_your_task
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar
+  secara jelas: tujuan, langkah, dan hasil yang diharapkan.'
+grammar_summary: Gunakan أَعْمَلُ عَلَى، الْهَدَفُ، وَالْخُطْوَةُ التَّالِيَةُ untuk menjelaskan tugas.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

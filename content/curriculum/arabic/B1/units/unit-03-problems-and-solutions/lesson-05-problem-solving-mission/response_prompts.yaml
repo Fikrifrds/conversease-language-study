@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menjelaskan masalahnya dengan singkat.'
+  target_response: سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+  acceptable_responses:
+  - سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Penyebabnya belum jelas sampai sekarang.'
+  target_response: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+  acceptable_responses:
+  - السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menyarankan kita mencoba solusi sementara.'
+  target_response: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+  acceptable_responses:
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.

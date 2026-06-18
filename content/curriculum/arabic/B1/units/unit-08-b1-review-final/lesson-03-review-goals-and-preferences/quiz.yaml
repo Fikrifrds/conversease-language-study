@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Tujuan saya jelas tetapi tantangannya ada."?
+  options:
+  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  correct_answer: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya lebih memilih rencana sederhana dan berkelanjutan."?
+  options:
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  correct_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.

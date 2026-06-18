@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Biasanya kami menyapa tetangga.'
+  target_response: مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+  acceptable_responses:
+  - مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pada pagi hari, jalan menjadi aktif.'
+  target_response: فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.
+  acceptable_responses:
+  - فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Sebagian orang lebih suka ketenangan.'
+  target_response: بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.
+  acceptable_responses:
+  - بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.

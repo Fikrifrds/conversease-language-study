@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Apa yang terjadi setelah itu?"?
+  options:
+  - مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  - كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  - لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  correct_answer: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Bagaimana perasaanmu pada saat itu?"?
+  options:
+  - كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  - مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  - لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  correct_answer: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟

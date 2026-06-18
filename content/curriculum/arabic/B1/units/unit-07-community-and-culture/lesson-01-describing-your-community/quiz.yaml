@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya tinggal di komunitas yang tenang."?
+  options:
+  - أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+  - النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+  - تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.
+  correct_answer: أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Orang-orang saling membantu dalam pekerjaan harian."?
+  options:
+  - النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+  - أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+  - تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.
+  correct_answer: النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.

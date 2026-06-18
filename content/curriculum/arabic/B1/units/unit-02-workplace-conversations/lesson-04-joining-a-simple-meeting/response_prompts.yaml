@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin menambahkan poin kecil.'
+  target_response: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menyarankan kita meninjau rencana dulu.'
+  target_response: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+  acceptable_responses:
+  - أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini bisa mengurangi kesalahan.'
+  target_response: هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
+  acceptable_responses:
+  - هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.

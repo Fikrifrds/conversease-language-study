@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Tantangan terbesar adalah kecepatan.'
+  target_response: أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+  acceptable_responses:
+  - أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya butuh waktu untuk berpikir.'
+  target_response: أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+  acceptable_responses:
+  - أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kadang saya lupa kata yang cocok.'
+  target_response: أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.
+  acceptable_responses:
+  - أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.

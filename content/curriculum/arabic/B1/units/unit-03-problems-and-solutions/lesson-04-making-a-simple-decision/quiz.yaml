@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Kita punya dua pilihan yang cocok."?
+  options:
+  - لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ.
+  - الْخِيَارُ الْأَوَّلُ أَسْهَلُ.
+  - الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ.
+  correct_answer: لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Pilihan pertama lebih mudah."?
+  options:
+  - الْخِيَارُ الْأَوَّلُ أَسْهَلُ.
+  - لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ.
+  - الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ.
+  correct_answer: الْخِيَارُ الْأَوَّلُ أَسْهَلُ.

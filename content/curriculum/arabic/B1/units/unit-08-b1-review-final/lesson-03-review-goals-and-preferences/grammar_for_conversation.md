@@ -1,0 +1,12 @@
+# Pola Percakapan
+
+Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+
+```txt
+هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
+```
+
+Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.

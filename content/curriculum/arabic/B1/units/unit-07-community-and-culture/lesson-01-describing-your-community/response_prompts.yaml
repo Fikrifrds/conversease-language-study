@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya tinggal di komunitas yang tenang.'
+  target_response: أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+  acceptable_responses:
+  - أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Orang-orang saling membantu dalam pekerjaan harian.'
+  target_response: النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+  acceptable_responses:
+  - النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ada kebiasaan indah di lingkungan.'
+  target_response: تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.
+  acceptable_responses:
+  - تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.

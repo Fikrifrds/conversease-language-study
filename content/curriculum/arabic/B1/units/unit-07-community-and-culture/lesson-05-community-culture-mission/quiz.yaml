@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan menjelaskan komunitas saya dengan singkat."?
+  options:
+  - سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+  - تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+  - أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.
+  correct_answer: سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Ada kebiasaan penting di tempat kami."?
+  options:
+  - تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+  - سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+  - أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.
+  correct_answer: تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.

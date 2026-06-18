@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah maksudmu jadwalnya berubah?'
+  target_response: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+  acceptable_responses:
+  - هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa maksud poin ini?'
+  target_response: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+  acceptable_responses:
+  - مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya bertanya hanya untuk memastikan.'
+  target_response: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
+  acceptable_responses:
+  - أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.

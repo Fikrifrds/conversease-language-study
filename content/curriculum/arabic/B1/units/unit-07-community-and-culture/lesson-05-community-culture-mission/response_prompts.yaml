@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menjelaskan komunitas saya dengan singkat.'
+  target_response: سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+  acceptable_responses:
+  - سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ada kebiasaan penting di tempat kami.'
+  target_response: تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+  acceptable_responses:
+  - تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami kebiasaan kalian juga.'
+  target_response: أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.

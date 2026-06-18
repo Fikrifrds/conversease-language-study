@@ -1,0 +1,27 @@
+lesson_key: lesson-03-giving-a-short-update
+slug: arabic-b1-giving-a-short-update
+title: Giving a Short Update
+status: beta
+estimated_minutes: 14
+conversation_situation: giving_a_short_update
+conversation_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress,
+  kendala, dan langkah berikutnya.'
+grammar_summary: Gunakan أَنْجَزْتُ، مَا زِلْتُ، وَسَأُكْمِلُ untuk update ringkas.
+required_sections:
+- conversation_goal
+- situation_setup
+- listening
+- comprehension_check
+- useful_phrases
+- vocabulary
+- grammar_for_conversation
+- speak_clearly
+- response_practice
+- conversation_coach_roleplay
+- conversation_feedback
+- conversation_check
+completion_rules:
+  listening_completed: true
+  quiz_required: true
+  speaking_attempt_required: true
+  minimum_score: 70

@@ -1,0 +1,53 @@
+scenario_key: arabic_b1_problem_solving_mission
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: problem solving mission,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.'
+  sample_answer: سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - سَأَشْرَحُ
+  - الْمُشْكِلَةَ
+  - بِاخْتِصَارٍ
+  indonesian_explanation: Saya akan menjelaskan masalahnya dengan singkat.
+- coach: 'استخدم الفكرة: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.'
+  sample_answer: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - السَّبَبُ
+  - غَيْرُ
+  - وَاضِحٍ
+  - حَتَّى
+  indonesian_explanation: Penyebabnya belum jelas sampai sekarang.
+- coach: 'استخدم الفكرة: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.'
+  sample_answer: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أَقْتَرِحُ
+  - أَنْ
+  - نُجَرِّبَ
+  - حَلًّا
+  indonesian_explanation: Saya menyarankan kita mencoba solusi sementara.
+target_phrases:
+- سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+- السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+- أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+- إِذَا نَجَحَ، نُثَبِّتُهُ.
+- وَإِذَا لَمْ يَنْجَحْ، نَبْحَثُ عَنْ خِيَارٍ آخَرَ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

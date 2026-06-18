@@ -1,0 +1,53 @@
+scenario_key: arabic_b1_review_goals_and_preferences
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.'
+  sample_answer: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - هَدَفِي
+  - وَاضِحٌ
+  - وَلَكِنَّ
+  - التَّحَدِّي
+  indonesian_explanation: Tujuan saya jelas tetapi tantangannya ada.
+- coach: 'استخدم الفكرة: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.'
+  sample_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أُفَضِّلُ
+  - خُطَّةً
+  - بَسِيطَةً
+  - وَمُسْتَمِرَّةً
+  indonesian_explanation: Saya lebih memilih rencana sederhana dan berkelanjutan.
+- coach: 'استخدم الفكرة: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.'
+  sample_answer: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - سَأُقَارِنُ
+  - بَيْنَ
+  - خِيَارَيْنِ
+  indonesian_explanation: Saya akan membandingkan dua pilihan.
+target_phrases:
+- هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+- أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+- السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
+- بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

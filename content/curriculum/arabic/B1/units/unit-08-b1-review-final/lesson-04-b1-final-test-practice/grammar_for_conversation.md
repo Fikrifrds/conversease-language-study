@@ -1,0 +1,12 @@
+# Pola Percakapan
+
+Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+
+```txt
+سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.
+```
+
+Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.

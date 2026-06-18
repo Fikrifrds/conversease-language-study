@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya sedikit maju bulan ini."?
+  options:
+  - تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+  - أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.
+  - مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.
+  correct_answer: تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya menjadi lebih cepat memahami dialog."?
+  options:
+  - أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.
+  - تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+  - مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.
+  correct_answer: أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.

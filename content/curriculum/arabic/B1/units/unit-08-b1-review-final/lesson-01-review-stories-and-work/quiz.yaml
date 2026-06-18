@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan mulai dengan cerita singkat."?
+  options:
+  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  correct_answer: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Setelah itu, saya memberi update tentang pekerjaan."?
+  options:
+  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  correct_answer: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.

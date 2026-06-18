@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan menjelaskan masalahnya dengan singkat."?
+  options:
+  - سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+  - السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+  correct_answer: سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Penyebabnya belum jelas sampai sekarang."?
+  options:
+  - السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+  - سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+  correct_answer: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Minggu lalu, saya berada di perpustakaan.'
+  target_response: فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.
+  acceptable_responses:
+  - فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya bersama teman saya pada waktu itu.'
+  target_response: كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ.
+  acceptable_responses:
+  - كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tempatnya tenang dan cocok.'
+  target_response: كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا.
+  acceptable_responses:
+  - كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا.

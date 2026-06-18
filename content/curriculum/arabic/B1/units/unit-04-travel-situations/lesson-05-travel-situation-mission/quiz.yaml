@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya punya reservasi tetapi terlambat."?
+  options:
+  - عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+  - أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.
+  - هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟
+  correct_answer: عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya ingin mengonfirmasi kedatangan."?
+  options:
+  - أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.
+  - عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+  - هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟
+  correct_answer: أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.

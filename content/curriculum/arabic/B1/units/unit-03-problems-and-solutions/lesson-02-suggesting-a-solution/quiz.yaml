@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya menyarankan kita mencoba solusi sederhana."?
+  options:
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+  - يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+  - هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+  correct_answer: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Kita bisa mengubah rencana sedikit."?
+  options:
+  - يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+  - هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+  correct_answer: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.

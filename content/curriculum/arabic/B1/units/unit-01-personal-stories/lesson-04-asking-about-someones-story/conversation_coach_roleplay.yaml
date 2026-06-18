@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_asking_about_someones_story
+mode: lesson_practice_coach
+level_code: B1
+opening_line: كَيْفَ تَسْأَلُ عَنْ قِصَّةِ شَخْصٍ آخَرَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang
+  tanpa memotong alur pembicaraan.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: كَيْفَ تَسْأَلُ عَنْ قِصَّةِ شَخْصٍ آخَرَ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟'
+  sample_answer: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  focus: Meminta lanjutan cerita.
+  expected_keywords:
+  - مَاذَا
+  - حَدَثَ
+  - بَعْدَ
+  - ذَلِكَ
+  indonesian_explanation: Apa yang terjadi setelah itu?
+- coach: 'استخدم الفكرة: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟'
+  hint: 'Jawab dengan kalimat terhubung memakai: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟'
+  sample_answer: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  focus: Menanyakan perasaan.
+  expected_keywords:
+  - كَيْفَ
+  - شَعَرْتَ
+  - فِي
+  - تِلْكَ
+  indonesian_explanation: Bagaimana perasaanmu pada saat itu?
+- coach: 'استخدم الفكرة: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟'
+  hint: 'Jawab dengan kalimat terhubung memakai: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟'
+  sample_answer: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  focus: Menanyakan makna cerita.
+  expected_keywords:
+  - لِمَاذَا
+  - كَانَ
+  - ذَلِكَ
+  - مُهِمًّا
+  indonesian_explanation: Mengapa itu penting bagimu?
+target_phrases:
+- مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+- كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+- لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+- أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ أَكْثَرَ.
+- شُكْرًا، أَصْبَحَتِ الْقِصَّةُ أَوْضَحَ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

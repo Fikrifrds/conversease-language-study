@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya ingin menambahkan poin kecil."?
+  options:
+  - أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+  - أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+  - هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
+  correct_answer: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya menyarankan kita meninjau rencana dulu."?
+  options:
+  - أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
+  - أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
+  - هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
+  correct_answer: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.

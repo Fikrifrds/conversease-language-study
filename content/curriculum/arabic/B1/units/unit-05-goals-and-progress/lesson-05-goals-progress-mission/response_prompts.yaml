@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Tujuan saya jelas untuk bulan ini.'
+  target_response: هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.
+  acceptable_responses:
+  - هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya maju dalam listening, tetapi speaking lebih sulit.'
+  target_response: تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.
+  acceptable_responses:
+  - تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tantangan terbesar adalah keraguan.'
+  target_response: أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ.
+  acceptable_responses:
+  - أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ.

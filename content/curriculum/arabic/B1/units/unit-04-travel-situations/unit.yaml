@@ -1,0 +1,12 @@
+unit_key: unit-04-travel-situations
+level_code: B1
+title: Travel Situations
+main_conversation_outcome: Handle travel check-in, delays, recommendations, complaints, and practical
+  travel requests.
+status: beta
+lessons:
+- lesson-01-checking-in
+- lesson-02-explaining-a-delay
+- lesson-03-asking-for-recommendations
+- lesson-04-handling-a-simple-complaint
+- lesson-05-travel-situation-mission

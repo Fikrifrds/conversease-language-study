@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Perjalanannya sedikit terlambat."?
+  options:
+  - تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
+  - السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.
+  - سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.
+  correct_answer: تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Alasannya adalah kemacetan di jalan."?
+  options:
+  - السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.
+  - تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
+  - سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.
+  correct_answer: السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.

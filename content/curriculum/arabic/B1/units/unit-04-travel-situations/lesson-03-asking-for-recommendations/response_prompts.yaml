@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamu merekomendasikan restoran dekat?'
+  target_response: هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+  acceptable_responses:
+  - هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih suka tempat yang tenang.'
+  target_response: أُفَضِّلُ مَكَانًا هَادِئًا.
+  acceptable_responses:
+  - أُفَضِّلُ مَكَانًا هَادِئًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Penting bagi saya agar harganya cocok.'
+  target_response: يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.
+  acceptable_responses:
+  - يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.

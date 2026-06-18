@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Nasihatmu bermanfaat.'
+  target_response: نَصِيحَتُكَ مُفِيدَةٌ.
+  acceptable_responses:
+  - نَصِيحَتُكَ مُفِيدَةٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mencoba itu hari ini.'
+  target_response: سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.
+  acceptable_responses:
+  - سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya setuju denganmu pada poin ini.'
+  target_response: أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.
+  acceptable_responses:
+  - أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.

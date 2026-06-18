@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya punya reservasi atas nama Ahmad.'
+  target_response: لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+  acceptable_responses:
+  - لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mengonfirmasi detailnya.'
+  target_response: أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+  acceptable_responses:
+  - أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apakah kamarnya sudah siap sekarang?'
+  target_response: هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟
+  acceptable_responses:
+  - هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟

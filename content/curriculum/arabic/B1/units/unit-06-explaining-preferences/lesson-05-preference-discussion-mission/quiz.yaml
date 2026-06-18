@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya akan membandingkan dua pilihan."?
+  options:
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  - أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.
+  - لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.
+  correct_answer: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya lebih memilih pilihan pertama karena lebih mudah."?
+  options:
+  - أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.
+  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  - لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.
+  correct_answer: أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.

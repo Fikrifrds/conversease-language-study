@@ -1,0 +1,11 @@
+# Target Percakapan
+
+Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.
+
+Kamu akan berlatih mengatakan:
+
+- سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+- تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+- أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.
+- إِذَا اخْتَلَفْنَا، نَسْأَلُ بِاحْتِرَامٍ.
+- هَكَذَا يَصِيرُ التَّوَاصُلُ أَفْضَلَ.

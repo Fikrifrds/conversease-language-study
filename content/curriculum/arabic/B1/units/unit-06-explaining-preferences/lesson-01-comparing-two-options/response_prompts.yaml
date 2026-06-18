@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua pilihan berbeda.'
+  target_response: عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+  acceptable_responses:
+  - عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pilihan pertama lebih cepat.'
+  target_response: الْخِيَارُ الْأَوَّلُ أَسْرَعُ.
+  acceptable_responses:
+  - الْخِيَارُ الْأَوَّلُ أَسْرَعُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pilihan kedua lebih murah.'
+  target_response: الْخِيَارُ الثَّانِي أَرْخَصُ.
+  acceptable_responses:
+  - الْخِيَارُ الثَّانِي أَرْخَصُ.

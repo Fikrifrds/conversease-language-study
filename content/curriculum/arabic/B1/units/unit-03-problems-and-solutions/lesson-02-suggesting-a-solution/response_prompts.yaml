@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menyarankan kita mencoba solusi sederhana.'
+  target_response: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+  acceptable_responses:
+  - أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita bisa mengubah rencana sedikit.'
+  target_response: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+  acceptable_responses:
+  - يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Solusi ini lebih cepat dari pilihan lain.'
+  target_response: هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+  acceptable_responses:
+  - هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.

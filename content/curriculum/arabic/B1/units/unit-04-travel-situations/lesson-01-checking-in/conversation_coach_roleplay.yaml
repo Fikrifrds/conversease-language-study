@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_checking_in
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: checking in, dengan
+  jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.'
+  sample_answer: لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - لَدَيَّ
+  - حَجْزٌ
+  - بِاسْمِ
+  - أَحْمَدَ
+  indonesian_explanation: Saya punya reservasi atas nama Ahmad.
+- coach: 'استخدم الفكرة: أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.'
+  sample_answer: أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أُؤَكِّدَ
+  - التَّفَاصِيلَ
+  indonesian_explanation: Saya ingin mengonfirmasi detailnya.
+- coach: 'استخدم الفكرة: هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟'
+  hint: 'Jawab dengan kalimat terhubung memakai: هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟'
+  sample_answer: هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - هَلِ
+  - الْغُرْفَةُ
+  - جَاهِزَةٌ
+  - الآنَ
+  indonesian_explanation: Apakah kamarnya sudah siap sekarang?
+target_phrases:
+- لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.
+- أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.
+- هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟
+- أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ.
+- شُكْرًا عَلَى الْمُسَاعَدَةِ.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

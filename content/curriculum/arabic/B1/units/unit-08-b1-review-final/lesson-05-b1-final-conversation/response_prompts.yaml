@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan berbicara tentang pengalaman pribadi.'
+  target_response: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+  acceptable_responses:
+  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu saya menjelaskan masalah dan solusi.'
+  target_response: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  acceptable_responses:
+  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya menjelaskan pendapat saya dengan alasan.'
+  target_response: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  acceptable_responses:
+  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.

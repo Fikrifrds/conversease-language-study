@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_telling_events_in_order
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan
+  agar lawan bicara mudah mengikuti alurnya.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.'
+  sample_answer: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+  focus: Memulai urutan kejadian.
+  expected_keywords:
+  - أَوَّلًا،
+  - وَصَلْتُ
+  - إِلَى
+  - الْمَكَانِ
+  indonesian_explanation: Pertama, saya tiba di tempat itu lebih awal.
+- coach: 'استخدم الفكرة: ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.'
+  hint: 'Jawab dengan kalimat terhubung memakai: ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.'
+  sample_answer: ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+  focus: Menyebut kejadian berikutnya.
+  expected_keywords:
+  - ثُمَّ
+  - انْتَظَرْتُ
+  - صَدِيقِي
+  - قَلِيلًا
+  indonesian_explanation: Lalu saya menunggu teman saya sebentar.
+- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.'
+  sample_answer: بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+  focus: Menyambung urutan.
+  expected_keywords:
+  - بَعْدَ
+  - ذَلِكَ،
+  - تَحَدَّثْنَا
+  - عَنِ
+  indonesian_explanation: Setelah itu, kami berbicara tentang rencana.
+target_phrases:
+- أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+- ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+- بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+- وَأَخِيرًا، اتَّفَقْنَا عَلَى الْخُطْوَةِ التَّالِيَةِ.
+- هَكَذَا صَارَتِ الْقِصَّةُ وَاضِحَةً.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

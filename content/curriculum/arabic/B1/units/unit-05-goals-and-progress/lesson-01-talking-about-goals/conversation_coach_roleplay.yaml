@@ -1,0 +1,54 @@
+scenario_key: arabic_b1_talking_about_goals
+mode: lesson_practice_coach
+level_code: B1
+opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about goals,
+  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+max_turns: 6
+feedback_level:
+  free: basic
+  pro: detailed
+turns:
+- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+  hint: 'Jawab dengan kalimat terhubung memakai: هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ.'
+  sample_answer: هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - هَدَفِي
+  - هُوَ
+  - تَحْسِينُ
+  - الْمُحَادَثَةِ
+  indonesian_explanation: Tujuan saya adalah memperbaiki percakapan.
+- coach: 'استخدم الفكرة: أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.'
+  sample_answer: أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - أُرِيدُ
+  - أَنْ
+  - أَتَكَلَّمَ
+  - بِثِقَةٍ
+  indonesian_explanation: Saya ingin berbicara dengan lebih percaya diri.
+- coach: 'استخدم الفكرة: لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.'
+  hint: 'Jawab dengan kalimat terhubung memakai: لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.'
+  sample_answer: لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.
+  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  expected_keywords:
+  - لِذَلِكَ
+  - أَتَدَرَّبُ
+  - كُلَّ
+  - يَوْمٍ
+  indonesian_explanation: Karena itu saya berlatih setiap hari.
+target_phrases:
+- هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ.
+- أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+- لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.
+- أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ.
+- هَذَا الْهَدَفُ مُهِمٌّ لِي.
+rubric:
+  speaking:
+    minimum_score: 70
+  relevance:
+    minimum_score: 70
+  grammar:
+    minimum_score: 68

@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Saya merasa khawatir di awal.'
+  target_response: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+  acceptable_responses:
+  - شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Karena situasinya baru bagi saya.'
+  target_response: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+  acceptable_responses:
+  - لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah sebentar, saya merasa nyaman.'
+  target_response: بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+  acceptable_responses:
+  - بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Tantangan terbesar adalah kecepatan."?
+  options:
+  - أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+  - أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+  - أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.
+  correct_answer: أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya butuh waktu untuk berpikir."?
+  options:
+  - أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.
+  - أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.
+  - أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.
+  correct_answer: أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.

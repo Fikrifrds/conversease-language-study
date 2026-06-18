@@ -1,0 +1,13 @@
+prompts:
+- prompt: 'Ucapkan dalam bahasa Arab: Perjalanannya sedikit terlambat.'
+  target_response: تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
+  acceptable_responses:
+  - تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Alasannya adalah kemacetan di jalan.'
+  target_response: السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.
+  acceptable_responses:
+  - السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan tiba setelah tiga puluh menit.'
+  target_response: سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.
+  acceptable_responses:
+  - سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Biasanya kami menyapa tetangga."?
+  options:
+  - مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+  - فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.
+  - بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.
+  correct_answer: مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Pada pagi hari, jalan menjadi aktif."?
+  options:
+  - فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.
+  - مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+  - بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.
+  correct_answer: فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.

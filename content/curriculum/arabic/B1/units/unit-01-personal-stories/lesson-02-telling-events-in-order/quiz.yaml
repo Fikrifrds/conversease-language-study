@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Pertama, saya tiba di tempat itu lebih awal."?
+  options:
+  - أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+  - ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+  - بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+  correct_answer: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Lalu saya menunggu teman saya sebentar."?
+  options:
+  - ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.
+  - أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
+  - بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.
+  correct_answer: ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.

@@ -1,0 +1,15 @@
+questions:
+- key: phrase_1
+  prompt: Frasa mana yang berarti "Saya paham bahwa kebiasaan berbeda-beda."?
+  options:
+  - أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
+  - لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
+  - مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.
+  correct_answer: أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
+- key: phrase_2
+  prompt: Frasa mana yang berarti "Saya tidak ingin salah paham."?
+  options:
+  - لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
+  - أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
+  - مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.
+  correct_answer: لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
