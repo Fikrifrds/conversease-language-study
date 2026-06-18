@@ -302,6 +302,7 @@ DIALOGUE_PERSONA_VOICES = {
     "noura": "Arabic_CalmWoman",
     "nura": "Arabic_CalmWoman",
     "layla": "Arabic_CalmWoman",
+    "salma": "Arabic_CalmWoman",
 }
 
 ARABIC_MINIMAX_DIALOGUE_PERSONA_VOICES = {
@@ -336,6 +337,7 @@ ELEVENLABS_ARABIC_PERSONA_VOICES = {
     "nura": "kdUY91gH5xyDHapxlthT",
     "rami": "yXEnnEln9armDCyhkXcA",
     "seller": "3GnbqfjaW8xI6hRTVx4Y",
+    "salma": "gVzwmdZzRgBrNjXaTmi5",
     "shopkeeper": "3GnbqfjaW8xI6hRTVx4Y",
     "staff": "gVzwmdZzRgBrNjXaTmi5",
     "studentarabicfemale": "kdUY91gH5xyDHapxlthT",
@@ -1847,6 +1849,7 @@ def infer_speaker_gender(speaker: str) -> str:
         "noura",
         "nura",
         "layla",
+        "salma",
         "maryam",
         "muallimah",
     }

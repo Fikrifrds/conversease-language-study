@@ -316,6 +316,24 @@ class AudioGenerationTest(unittest.TestCase):
         self.assertEqual(voices["Cafe Staff"], "gVzwmdZzRgBrNjXaTmi5")
         self.assertEqual(voices["Shopkeeper"], "3GnbqfjaW8xI6hRTVx4Y")
 
+    def test_elevenlabs_arabic_salma_and_lina_use_female_voices(self):
+        turns = [
+            _turn("Salma", "كيف تقدمين موضوعا معقدا؟"),
+            _turn("Lina", "سأبدأ بالمقدمة."),
+        ]
+
+        voices = assign_elevenlabs_dialogue_voices(
+            turns,
+            fallback_voice_id="3nav5pHC1EYvWOd5LmnA",
+            language="arabic",
+        )
+
+        self.assertEqual(voices["Salma"], "gVzwmdZzRgBrNjXaTmi5")
+        self.assertIn(voices["Lina"], ELEVENLABS_ARABIC_FEMALE_DIALOGUE_VOICES)
+        self.assertNotEqual(voices["Salma"], voices["Lina"])
+        self.assertEqual(ELEVENLABS_ARABIC_VOICE_METADATA[voices["Salma"]]["gender"], "female")
+        self.assertEqual(ELEVENLABS_ARABIC_VOICE_METADATA[voices["Lina"]]["gender"], "female")
+
     def test_elevenlabs_arabic_uses_only_curated_gendered_voices(self):
         turns = [
             _turn("Muallim", "مرحبا."),
