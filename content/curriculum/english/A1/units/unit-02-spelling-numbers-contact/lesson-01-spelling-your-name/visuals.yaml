@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan formulir kosong untuk latihan mengeja nama.
+  caption: Eja nama dengan jelas saat mengisi formulir kelas.
+cards:
+  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-spell-it.png
+    width: 1254
+    height: 1254
+    label: How do you spell it?
+    alt: Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.
+  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-repeat-that.png
+    width: 1254
+    height: 1254
+    label: Can you repeat that, please?
+    alt: Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.
+  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-thats-right.png
+    width: 1254
+    height: 1254
+    label: That's right.
+    alt: Kartu kosong dengan ikon centang sederhana di meja kelas Indonesia.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan formulir kosong untuk latihan menulis nama.
+  caption: Tulis dan cek nama dengan huruf Arab sederhana.
+cards:
+  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-kayfa-taktub.png
+    width: 1254
+    height: 1254
+    label: كَيْفَ تَكْتُبُ اِسْمَكَ؟
+    alt: Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.
+  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-aktubu-ismi.png
+    width: 1254
+    height: 1254
+    label: أَكْتُبُ اسْمِي ...
+    alt: Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.
+  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-hal-hadha-sahih.png
+    width: 1254
+    height: 1254
+    label: هَلْ هَذَا صَحِيحٌ؟
+    alt: Kartu kosong dengan ikon centang sederhana di meja kelas.

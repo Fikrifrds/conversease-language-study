@@ -476,6 +476,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your name?\nDimas: My name is Dimas.\nOfficer: How do you spell it?\nDimas: It's spelled D-I-M-A-S.\n```\n\nQuestion: What does the officer ask after the name?\n\nAnswer: How do you spell it?",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. Say your name.\n2. Spell your name letter by letter.\n3. Confirm the spelling.\n\nExample:\n\n```txt\nMy name is Dimas.\nD-I-M-A-S.\nThat's right.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan formulir kosong untuk latihan mengeja nama.", caption: "Eja nama dengan jelas saat mengisi formulir kelas." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-spell-it.png", width: 1254, height: 1254, alt: "Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.", label: "How do you spell it?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-repeat-that.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.", label: "Can you repeat that, please?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-thats-right.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas Indonesia.", label: "That's right." },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -537,6 +545,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your phone number?\nDimas: It's zero eight one two, three four five six, seven eight nine zero.\nOfficer: Let me check. Zero eight one two, three four five six, seven eight nine zero?\nDimas: Yes, that's correct.\n```\n\nQuestion: What does Dimas give to the officer?\n\nAnswer: His phone number.",
       writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write a phone number in words.\n2. Ask someone to repeat it.\n3. Confirm that the number is correct.\n\nExample:\n\n```txt\nIt's zero eight one two, three four five six.\nCan you repeat that, please?\nYes, that's correct.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja registrasi kelas dengan ponsel layar kosong dan formulir kontak.", caption: "Ucapkan nomor telepon pelan dan konfirmasi dengan jelas." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-phone-number.png", width: 1254, height: 1254, alt: "Ponsel layar kosong dan kartu kontak kosong di meja kelas.", label: "What is your phone number?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-zero-eight.png", width: 1254, height: 1254, alt: "Token kecil tersusun rapi di samping kartu kontak kosong.", label: "It's zero eight one two." },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-correct.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "Yes, that's correct." },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -597,6 +613,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: What is your email address?\nBen: It's ben dot rama at example dot com.\nOfficer: Can you spell that, please?\nBen: B-E-N dot R-A-M-A at example dot com.\n```\n\nQuestion: What email address does Ben give?\n\nAnswer: Ben dot rama at example dot com.",
       writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write a simple email address in spoken form.\n2. Spell the name part.\n3. Confirm that the email is correct.\n\nExample:\n\n```txt\nIt's ben dot rama at example dot com.\nB-E-N dot R-A-M-A.\nYes, that's correct.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan kartu amplop kosong untuk latihan alamat email.", caption: "Sebutkan alamat email secara pelan dan mudah ditulis." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-email-address.png", width: 1254, height: 1254, alt: "Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.", label: "What is your email address?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-spell-that.png", width: 1254, height: 1254, alt: "Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.", label: "Can you spell that, please?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-is-that-correct.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "Is that correct?" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -657,6 +681,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nAlya: My phone number is zero eight one three, two two five five, nine zero one.\nBen: Sorry, can you repeat that, please?\nAlya: Sure. Zero eight one three, two two five five, nine zero one.\nBen: Thank you. Did you say two two five five?\n```\n\nQuestion: Why does Ben ask Alya to repeat?\n\nAnswer: He does not hear the phone number clearly.",
       writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Ask someone to repeat information.\n2. Check one detail with Did you say.\n3. Say that you understand now.\n\nExample:\n\n```txt\nCan you repeat that, please?\nDid you say two two five five?\nGot it. Thank you.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan kartu ulang dan buku kosong untuk meminta pengulangan.", caption: "Minta pengulangan dengan sopan saat informasi belum jelas." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-repeat-that.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.", label: "Sorry, can you repeat that, please?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-did-you-say.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon suara sederhana di meja kelas.", label: "Did you say two two five five?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-got-it.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "Got it." },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -729,6 +761,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nOfficer: Hi. I need your contact details.\nDimas: Sure. My name is Dimas.\nOfficer: How do you spell your name?\nDimas: D-I-M-A-S.\n```\n\nQuestion: What contact details does Dimas give?\n\nAnswer: His name, spelling, phone number, and email address.",
       writingSupport: "# Writing Support\n\nWrite short lines:\n\n1. Write your name.\n2. Spell your name.\n3. Write a phone number and email address in spoken form.\n4. Confirm that everything is correct.\n\nExample:\n\n```txt\nMy name is Dimas.\nD-I-M-A-S.\nZero eight one two, three four five six.\nDimas at example dot com.\nEverything is correct.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan folder dan formulir kontak kosong.", caption: "Gabungkan nama, ejaan, nomor telepon, dan email dalam satu percakapan." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-contact-details.png", width: 1254, height: 1254, alt: "Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.", label: "I need your contact details." },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-spell-name.png", width: 1254, height: 1254, alt: "Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.", label: "How do you spell your name?" },
+          { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-email-address.png", width: 1254, height: 1254, alt: "Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.", label: "And your email address?" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13503,6 +13543,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.\n\n- كَيْفَ تَكْتُبُ اِسْمَكَ؟ -> Bagaimana kamu menulis namamu?\n- أَكْتُبُ اسْمِي ... -> Saya menulis nama saya ...\n- هَذَا حَرْفُ ... -> Ini huruf ...\n- هَلْ هَذَا صَحِيحٌ؟ -> Apakah ini benar?",
       writingSupport: "# Bantuan Menulis\n\nSalin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.\n\n- كَيْفَ تَكْتُبُ اِسْمَكَ؟\n- أَكْتُبُ اسْمِي ...\n- هَذَا حَرْفُ ...\n- هَلْ هَذَا صَحِيحٌ؟",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan formulir kosong untuk latihan menulis nama.", caption: "Tulis dan cek nama dengan huruf Arab sederhana." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-kayfa-taktub.png", width: 1254, height: 1254, alt: "Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.", label: "كَيْفَ تَكْتُبُ اِسْمَكَ؟" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-aktubu-ismi.png", width: 1254, height: 1254, alt: "Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.", label: "أَكْتُبُ اسْمِي ..." },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-hal-hadha-sahih.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "هَلْ هَذَا صَحِيحٌ؟" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13567,6 +13615,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.\n\n- مَا رَقْمُ هَاتِفِكَ؟ -> Berapa nomor teleponmu?\n- رَقْمِي ... -> Nomor saya ...\n- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ -> Satu, dua, tiga\n- هَلِ الرَّقْمُ وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ؟ -> Apakah nomornya satu, dua, tiga?\n- الرَّقْمُ صَحِيحٌ -> Nomornya benar.",
       writingSupport: "# Bantuan Menulis\n\nSalin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.\n\n- مَا رَقْمُ هَاتِفِكَ؟\n- رَقْمِي ...\n- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ\n- هَلِ الرَّقْمُ وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ؟",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja registrasi kelas dengan ponsel layar kosong dan formulir kontak.", caption: "Ucapkan nomor telepon dengan angka Arab sederhana secara pelan." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqmu-hatif.png", width: 1254, height: 1254, alt: "Ponsel layar kosong dan kartu kontak kosong di meja kelas.", label: "مَا رَقْمُ هَاتِفِكَ؟" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-numbers.png", width: 1254, height: 1254, alt: "Token kecil tersusun rapi di samping kartu kontak kosong.", label: "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqm-sahih.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "الرَّقْمُ صَحِيحٌ" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13631,6 +13687,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.\n\n- مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟ -> Apa alamat emailmu?\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ... -> Email saya ...\n- اُكْتُبْ مِنْ فَضْلِكَ -> Tulis, tolong.\n- نُقْطَةٌ -> Titik\n- شَرْطَةٌ -> Tanda hubung",
       writingSupport: "# Bantuan Menulis\n\nSalin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.\n\n- مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ...\n- اُكْتُبْ مِنْ فَضْلِكَ\n- نُقْطَةٌ",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan kartu amplop kosong untuk latihan email.", caption: "Sebutkan bagian email dengan pelan dan mudah ditulis." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-barid.png", width: 1254, height: 1254, alt: "Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.", label: "مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-uktub.png", width: 1254, height: 1254, alt: "Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.", label: "اُكْتُبْ مِنْ فَضْلِكَ" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-nuqta-sharta.png", width: 1254, height: 1254, alt: "Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.", label: "نُقْطَةٌ" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13693,6 +13757,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.\n\n- لم أَسْمَعُ الْحَرْفَ -> Saya tidak mendengar hurufnya.\n- بِبُطْءٍ مِنْ فَضْلِكَ -> Pelan-pelan, tolong.\n- هَلْ قُلْتَ بَاءً؟ -> Apakah Anda mengatakan ba?\n- نَعَمْ، قُلْتُ بَاءً -> Ya, saya mengatakan ba.",
       writingSupport: "# Bantuan Menulis\n\nSalin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.\n\n- لم أَسْمَعُ الْحَرْفَ\n- بِبُطْءٍ مِنْ فَضْلِكَ\n- هَلْ قُلْتَ بَاءً؟\n- نَعَمْ، قُلْتُ بَاءً",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan kartu ulang untuk meminta pengulangan huruf.", caption: "Minta pengulangan huruf dengan sopan saat belum terdengar jelas." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-lam-asma.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.", label: "لم أَسْمَعُ الْحَرْفَ" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-bibut.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon suara sederhana di meja kelas.", label: "بِبُطْءٍ مِنْ فَضْلِكَ" },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-qultu.png", width: 1254, height: 1254, alt: "Kartu kosong dengan ikon centang sederhana di meja kelas.", label: "نَعَمْ، قُلْتُ بَاءً" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13764,6 +13836,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca frasa Arab dari kanan ke kiri. Kenali frasa utuhnya dulu, lalu perhatikan kata yang berubah.\n\n- اِسْمِي ... -> Nama saya ...\n- أَكْتُبُ اسْمِي ... -> Saya menulis nama saya ...\n- رَقْمِي ... -> Nomor saya ...\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ... -> Email saya ...\n- هَلْ هَذَا وَاضِحٌ؟ -> Apakah ini jelas?",
       writingSupport: "# Bantuan Menulis\n\nSalin frasa dengan tangan atau ketik perlahan. Ganti nama, tempat, angka, atau benda hanya setelah polanya terasa stabil.\n\n- اِسْمِي ...\n- أَكْتُبُ اسْمِي ...\n- رَقْمِي ...\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ...",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only meja kelas Indonesia dengan folder dan formulir kontak kosong.", caption: "Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-ismi.png", width: 1254, height: 1254, alt: "Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.", label: "اِسْمِي ..." },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-raqmi.png", width: 1254, height: 1254, alt: "Ponsel layar kosong dan kartu kontak kosong di meja kelas.", label: "رَقْمِي ..." },
+          { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-baridi.png", width: 1254, height: 1254, alt: "Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.", label: "بَرِيدِي الْإِلِكْتُرُونِيُّ ..." },
+        ]
+      },
       sections: lessonSections
     },
     {
