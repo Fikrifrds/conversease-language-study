@@ -122,6 +122,42 @@ def validate_email(email: str) -> str:
     return normalized
 
 
+# The handful of passwords credential-stuffing tries first. min_length=8 already
+# blocks shorter ones; this catches the weak 8+ char favourites.
+COMMON_PASSWORDS = {
+    "password",
+    "password1",
+    "password123",
+    "12345678",
+    "123456789",
+    "1234567890",
+    "qwertyui",
+    "qwerty123",
+    "iloveyou",
+    "11111111",
+    "00000000",
+    "abc12345",
+    "letmein1",
+    "admin123",
+    "welcome1",
+}
+
+
+def validate_password_strength(password: str) -> None:
+    lowered = password.lower()
+    if lowered in COMMON_PASSWORDS:
+        raise HTTPException(status_code=422, detail="Password is too common. Please choose a stronger one.")
+    if len(set(password)) <= 2:
+        # e.g. "aaaaaaaa" or "abababab" — almost no entropy.
+        raise HTTPException(status_code=422, detail="Password is too weak. Please choose a stronger one.")
+    if password.isdigit() or password.isalpha():
+        # Require a mix so all-digit ("19901990") and all-letter passwords fail.
+        raise HTTPException(
+            status_code=422,
+            detail="Password must include both letters and numbers.",
+        )
+
+
 def guard_email_recipient(email: str) -> None:
     """Cap how many transactional emails one address can receive in the window,
     so abusing forgot-password / verification can't email-bomb a victim even
@@ -151,6 +187,7 @@ async def register(payload: RegisterPayload, db: Session = Depends(get_db)) -> A
     if name_looks_suspicious(payload.name, email):
         raise HTTPException(status_code=422, detail="Please enter your real name")
 
+    validate_password_strength(payload.password)
     guard_email_recipient(email)
     repository = UserRepository(db)
 
@@ -325,6 +362,7 @@ async def forgot_password(payload: ForgotPasswordPayload, db: Session = Depends(
 
 @router.post("/auth/reset-password")
 async def reset_password(payload: ResetPasswordPayload, db: Session = Depends(get_db)) -> dict:
+    validate_password_strength(payload.password)
     try:
         token = AuthTokenRepository(db).consume_token(payload.token, PASSWORD_RESET_TOKEN)
         user = UserRepository(db).update_password(token.user_id, payload.password)

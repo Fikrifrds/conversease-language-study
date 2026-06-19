@@ -4,7 +4,7 @@ from fastapi import HTTPException
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from app.api.routes.auth import validate_email
+from app.api.routes.auth import validate_email, validate_password_strength
 from app.core.security import create_access_token, decode_access_token
 from app.db.base import Base
 from app.db import models  # noqa: F401
@@ -60,6 +60,25 @@ class AuthTest(unittest.TestCase):
         for payload in payloads:
             with self.assertRaises(HTTPException, msg=payload) as ctx:
                 validate_email(payload)
+            self.assertEqual(ctx.exception.status_code, 422)
+
+    def test_validate_password_strength_accepts_reasonable_passwords(self):
+        for password in ["CorrectHorse9", "myDog$Rex2024", "sunset47beach"]:
+            validate_password_strength(password)  # should not raise
+
+    def test_validate_password_strength_rejects_weak_passwords(self):
+        weak = [
+            "password",      # common
+            "password123",   # common
+            "12345678",      # common + all digits
+            "aaaaaaaa",      # <= 2 distinct chars
+            "abababab",      # <= 2 distinct chars
+            "19901990",      # all digits
+            "letmeinplease",  # all letters
+        ]
+        for password in weak:
+            with self.assertRaises(HTTPException, msg=password) as ctx:
+                validate_password_strength(password)
             self.assertEqual(ctx.exception.status_code, 422)
 
     def test_register_rejects_bot_names(self):
