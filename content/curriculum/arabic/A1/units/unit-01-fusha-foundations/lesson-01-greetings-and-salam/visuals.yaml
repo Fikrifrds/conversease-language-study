@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless kelas bahasa Arab laki-laki di Indonesia.
+  caption: Latihan sapaan formal di kelas bahasa Arab laki-laki dengan adab belajar yang sopan.
+cards:
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-marhaban.png
+    width: 1254
+    height: 1254
+    label: مرحبًا
+    alt: Meja kelas Indonesia dengan buku kosong dan pintu kelas terbuka.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-kayfa-haluk.png
+    width: 1254
+    height: 1254
+    label: كيف حالك؟
+    alt: Dua kursi kelas kosong menghadap papan tulis kosong.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-ana-bikhayr.png
+    width: 1254
+    height: 1254
+    label: أنا بخير، شكرًا
+    alt: Meja belajar dengan buku kosong, pensil, tanaman, dan tanda centang.

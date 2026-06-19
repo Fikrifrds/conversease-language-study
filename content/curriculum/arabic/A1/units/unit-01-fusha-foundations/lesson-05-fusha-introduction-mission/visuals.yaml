@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless misi perkenalan formal di kelas bahasa Arab laki-laki.
+  caption: Gabungkan sapaan, nama, asal, dan klarifikasi dalam perkenalan singkat.
+cards:
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png
+    width: 1254
+    height: 1254
+    label: مرحبًا
+    alt: Dua pelajar laki-laki faceless saling menyapa di pintu kelas.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png
+    width: 1254
+    height: 1254
+    label: اسمي ...
+    alt: Kartu nama kosong di meja kelas bahasa Arab.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png
+    width: 1254
+    height: 1254
+    label: أنا من إندونيسيا
+    alt: Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.

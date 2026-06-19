@@ -237,7 +237,7 @@ Consistency rules:
 - Jangan membuat grammar sebagai pusat lesson. Grammar hanya alat untuk menyelesaikan conversation.
 - Indonesian support harus jelas, ringkas, dan tidak kaku.
 - Hindari slang kecuali sengaja diajarkan dan cocok level.
-- Jangan pakai gambar manusia atau makhluk bernyawa. Jika perlu visual, gunakan object, UI, document, sign, map, atau faceless isometric yang tidak detail.
+- Default visual adalah object-only. Jika konteks percakapan butuh orang, gunakan kartun soft/faceless yang tidak detail, same-gender dalam satu scene, dan jangan tampilkan laki-laki dan perempuan duduk bersama dalam satu kelas. Utamakan situasi dunia nyata; gunakan UI/online meeting/chat screen hanya kalau lesson memang tentang interaksi digital.
 - Jangan publish lesson kalau text-ready tetapi roleplay backend/frontend belum bisa menjalankan slug-nya.
 
 ## Persona And Voice Rules
@@ -328,7 +328,10 @@ Use these standards:
 - Keep phrase family consistent across all files.
 - Indonesian explanations must be clear and short.
 - Do not introduce advanced vocabulary unless needed for the conversation.
-- Do not use images or references to living beings.
+- Prefer object-only visuals. If people are needed for the conversation context,
+  use soft faceless cartoon figures, keep one scene same-gender, and avoid
+  mixed-gender classroom seating. Use online UI only when the lesson is about a
+  digital interaction.
 - Dialogue must be realistic and easy to record with TTS.
 - Speaker names must map to persona rules. Reuse existing characters when possible.
 - If adding a new character, state gender, role, and recommended MiniMax voice.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless dua pelajar laki-laki bertanya nama di kelas Indonesia.
+  caption: Tanyakan nama dengan sopan saat bertemu teman kelas.
+cards:
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-whats-your-name.png
+    width: 1254
+    height: 1254
+    label: What's your name?
+    alt: Dua kartu nama kosong di meja kelas dengan pensil.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-may-i-know.png
+    width: 1254
+    height: 1254
+    label: May I know your name?
+    alt: Dua pelajar laki-laki faceless berbicara sopan di pintu kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-is-it-mina.png
+    width: 1254
+    height: 1254
+    label: Is it Mina?
+    alt: Kartu nama kosong dan stiker centang di meja kelas.

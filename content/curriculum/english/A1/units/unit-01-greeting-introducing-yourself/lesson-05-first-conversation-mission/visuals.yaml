@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless misi percakapan pertama di kelas laki-laki Indonesia.
+  caption: Gabungkan sapaan, nama, asal, dan penutup percakapan.
+cards:
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png
+    width: 1254
+    height: 1254
+    label: Good morning. My name is ...
+    alt: Pelajar laki-laki faceless menyapa dan memperkenalkan diri di pintu kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png
+    width: 1254
+    height: 1254
+    label: Where are you from?
+    alt: Lembar peta Indonesia tanpa label dengan kartu kosong di meja kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-see-you-later.png
+    width: 1254
+    height: 1254
+    label: See you later.
+    alt: Dua pelajar laki-laki faceless berpamitan di pintu kelas.

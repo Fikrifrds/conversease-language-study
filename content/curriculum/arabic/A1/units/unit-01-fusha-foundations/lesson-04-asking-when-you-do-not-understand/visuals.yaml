@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless pelajar laki-laki mengangkat tangan di kelas bahasa Arab.
+  caption: Minta pengulangan atau penjelasan ketika belum paham.
+cards:
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-la-afham.png
+    width: 1254
+    height: 1254
+    label: لا أفهم
+    alt: Buku kosong dengan simbol tanya kecil di meja kelas.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-aid-min-fadlik.png
+    width: 1254
+    height: 1254
+    label: أَعِدْ مِنْ فَضْلِكَ
+    alt: Kartu kosong dengan simbol ulang di meja kelas.
+  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-ma-mana.png
+    width: 1254
+    height: 1254
+    label: ما معنى ...؟
+    alt: Kartu kosong di bawah kaca pembesar di meja kelas.

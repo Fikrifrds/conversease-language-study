@@ -6,7 +6,7 @@ After this lesson, learners can start and close a very simple English conversati
 
 ## Situation
 
-Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.
+Kamu bertemu seseorang di kelas bahasa Inggris. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.
 
 ## Lesson Flow
 
@@ -17,4 +17,3 @@ Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, jawab perta
 5. Respond to simple prompts.
 6. Practice the same situation with Conversation Coach.
 7. Review conversation feedback.
-

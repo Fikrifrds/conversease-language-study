@@ -31,8 +31,10 @@ content is written in this repo or generated elsewhere with another model.
 8. Do not use religious source text, hadith, dhikr, or devotional phrases with
    generated TTS until a separate religious review and approved audio process
    exists.
-9. Do not use human or living-being images. Arabic visuals should use objects,
-   documents, maps, signs, UI, or faceless isometric assets only.
+9. Prefer object-only visuals. If a greeting or classroom scene needs people,
+   use soft cartoon/faceless figures only, keep the scene same-gender, and do
+   not show men and women seated together in one classroom. Use UI/online
+   imagery only when the lesson explicitly teaches a digital interaction.
 
 ## Arabic A1 Baseline
 
@@ -142,7 +144,8 @@ Requirements:
 - Reuse the lesson phrase family across useful phrases, response prompts, quiz,
   roleplay, reading, and writing.
 - Do not include religious source text or devotional phrases.
-- Do not include images of people or living beings.
+- Prefer object-only visuals. If people are necessary, use same-gender soft
+  faceless cartoons and avoid mixed-gender classroom scenes.
 
 Before returning the lesson, self-check:
 1. Are all dialogue turns coherent?
@@ -166,4 +169,3 @@ PYTHONPATH=apps/api apps/api/.venv/bin/python -m unittest \
   apps/api/tests/test_content_readiness.py
 git diff --check
 ```
-

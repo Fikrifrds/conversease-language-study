@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless kelas laki-laki di Indonesia saat seorang pelajar memperkenalkan nama.
+  caption: Perkenalkan nama dengan singkat di kelas nyata.
+cards:
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png
+    width: 1254
+    height: 1254
+    label: My name is ...
+    alt: Kartu nama kosong di meja kelas Indonesia dengan buku dan pensil.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png
+    width: 1254
+    height: 1254
+    label: I'm ...
+    alt: Pelajar laki-laki faceless berdiri sopan di pintu kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png
+    width: 1254
+    height: 1254
+    label: Nice to meet you too.
+    alt: Dua pelajar laki-laki faceless saling menyapa dengan sopan di pintu kelas.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless kelas offline Indonesia untuk latihan sapaan pagi.
+  caption: Mulai percakapan sederhana di kelas nyata.
+cards:
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png
+    width: 1254
+    height: 1254
+    label: Good morning
+    alt: Meja kelas pagi di Indonesia dengan teh, tanaman, dan buku catatan.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-how-are-you.png
+    width: 1254
+    height: 1254
+    label: How are you?
+    alt: Dua pelajar laki-laki faceless saling menyapa di pintu kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-see-you-later.png
+    width: 1254
+    height: 1254
+    label: See you later
+    alt: Dua pelajar laki-laki faceless berpamitan di pintu kelas.

@@ -6,7 +6,7 @@ Learner can say their name clearly, respond to an introduction, and use a simple
 
 ## Situation Setup
 
-Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.
+Kamu masuk kelas bahasa Inggris dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.
 
 ## Dialogue
 

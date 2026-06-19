@@ -23,7 +23,7 @@ class CurriculumContentTest(unittest.TestCase):
         lesson = get_lesson_or_none("saying-your-name")
 
         self.assertIsNotNone(lesson)
-        self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_online_class")
+        self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_class")
         self.assertEqual(
             lesson["roleplay"]["opening_line"],
             "Hi, my name is Sara. What is your name?",

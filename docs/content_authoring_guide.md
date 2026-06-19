@@ -26,8 +26,11 @@ and consistent with the existing files for that lesson.**
    For multi-skill "mission"/"review" lessons, connect the scenes with a natural
    transition line and/or a pause.
 5. **Indonesian support is clear and concise**, never stiff.
-6. **No human/living-being images.** Visuals = objects, UI, signs, maps,
-   faceless isometric only.
+6. **Conservative visual policy.** Prefer object-only visuals. If a real-world
+   conversation needs people, use soft cartoon/faceless figures only, keep the
+   scene same-gender, and never show men and women seated together in one class.
+   Do not use online-meeting or chat-screen imagery unless the lesson is
+   explicitly about a digital interaction.
 7. **Never publish** a lesson whose roleplay slug the backend/frontend can't run.
 
 ## 2. Files a lesson needs

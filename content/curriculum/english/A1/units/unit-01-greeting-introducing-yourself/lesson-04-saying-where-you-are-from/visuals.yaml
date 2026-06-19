@@ -1,0 +1,22 @@
+hero:
+  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi kartun faceless kelas laki-laki di Indonesia saat pelajar menyebutkan asal.
+  caption: Sebutkan asal dan tanyakan balik dengan natural.
+cards:
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png
+    width: 1254
+    height: 1254
+    label: I'm from ...
+    alt: Lembar kosong dengan bentuk peta Indonesia tanpa label di meja kelas.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-i-live-in.png
+    width: 1254
+    height: 1254
+    label: I live in ...
+    alt: Pemandangan lingkungan Indonesia dari jendela kelas dengan buku kosong.
+  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-how-about-you.png
+    width: 1254
+    height: 1254
+    label: How about you?
+    alt: Dua pelajar laki-laki faceless saling bertanya balik di pintu kelas.

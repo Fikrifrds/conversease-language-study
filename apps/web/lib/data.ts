@@ -93,7 +93,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Start and close a very simple English conversation.",
       conversationGoalDetails: "Start and close a very simple English conversation.\n\nLearners should be able to say:\n\n- Good morning.\n- How are you?\n- I'm good, thank you.\n- Nice to meet you.\n- See you later.",
-      setup: "Kamu bertemu seseorang di kelas online. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.",
+      setup: "Kamu bertemu seseorang di kelas bahasa Inggris. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.",
       dialogue: [
         { speaker: "Alya", text: "Hi, good morning." },
         { speaker: "Ben", text: "Good morning. How are you?" },
@@ -141,6 +141,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, good morning.\nMy name is Alya.\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which sentence closes the conversation?\n\nAnswer: See you later.",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A goodbye.\n\nExample:\n\n```txt\nGood morning.\nMy name is Arif.\nSee you later.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless kelas offline Indonesia untuk latihan sapaan pagi.", caption: "Mulai percakapan sederhana di kelas nyata." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png", width: 1254, height: 1254, alt: "Meja kelas pagi di Indonesia dengan teh, tanaman, dan buku catatan.", label: "Good morning" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-how-are-you.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless saling menyapa di pintu kelas.", label: "How are you?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-see-you-later.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless berpamitan di pintu kelas.", label: "See you later" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -154,7 +162,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
       conversationGoalDetails: "Say your name naturally and ask for someone's name.\n\nLearners should be able to say:\n\n- My name is ...\n- I'm ...\n- What is your name?\n- Nice to meet you.",
-      setup: "Kamu masuk kelas online dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
+      setup: "Kamu masuk kelas bahasa Inggris dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
       dialogue: [
         { speaker: "Sara", text: "Hi, my name is Sara. What is your name?" },
         { speaker: "Arif", text: "Hi Sara. My name is Arif." },
@@ -198,6 +206,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, my name is Arif.\nWhat is your name?\nNice to meet you.\n```\n\nQuestion: Which sentence asks for the other person's name?\n\nAnswer: What is your name?",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A question asking for a name.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nWhat is your name?\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless kelas laki-laki di Indonesia saat seorang pelajar memperkenalkan nama.", caption: "Perkenalkan nama dengan singkat di kelas nyata." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png", width: 1254, height: 1254, alt: "Kartu nama kosong di meja kelas Indonesia dengan buku dan pensil.", label: "My name is ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png", width: 1254, height: 1254, alt: "Pelajar laki-laki faceless berdiri sopan di pintu kelas.", label: "I'm ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless saling menyapa dengan sopan di pintu kelas.", label: "Nice to meet you too." },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -257,6 +273,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```\n\nQuestion: Which sentence asks someone to say it again?\n\nAnswer: Can you repeat that?",
       writingSupport: "# Writing Support\n\nWrite four short lines:\n\n1. A greeting.\n2. A name question.\n3. A repeat request.\n4. A thank you.\n\nExample:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless dua pelajar laki-laki bertanya nama di kelas Indonesia.", caption: "Tanyakan nama dengan sopan saat bertemu teman kelas." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-whats-your-name.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong di meja kelas dengan pensil.", label: "What's your name?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-may-i-know.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless berbicara sopan di pintu kelas.", label: "May I know your name?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-is-it-mina.png", width: 1254, height: 1254, alt: "Kartu nama kosong dan stiker centang di meja kelas.", label: "Is it Mina?" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -313,6 +337,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, I'm Maya.\nI'm from Indonesia.\nWhere are you from?\n```\n\nQuestion: Which sentence says the country?\n\nAnswer: I'm from Indonesia.",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. Your name.\n2. Your country or city.\n3. A question asking where someone is from.\n\nExample:\n\n```txt\nI'm Arif.\nI'm from Indonesia.\nWhere are you from?\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless kelas laki-laki di Indonesia saat pelajar menyebutkan asal.", caption: "Sebutkan asal dan tanyakan balik dengan natural." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png", width: 1254, height: 1254, alt: "Lembar kosong dengan bentuk peta Indonesia tanpa label di meja kelas.", label: "I'm from ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-i-live-in.png", width: 1254, height: 1254, alt: "Pemandangan lingkungan Indonesia dari jendela kelas dengan buku kosong.", label: "I live in ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-how-about-you.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless saling bertanya balik di pintu kelas.", label: "How about you?" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -376,6 +408,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nHi, my name is Lina.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which two sentences ask questions?\n\nAnswer: What is your name? Where are you from?",
       writingSupport: "# Writing Support\n\nWrite a six-line first conversation:\n\n1. A greeting.\n2. Your name.\n3. Your country or city.\n4. Ask the other person's name.\n5. Ask where the person is from.\n6. Close the conversation.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nSee you later.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless misi percakapan pertama di kelas laki-laki Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup percakapan." },
+        cards: [
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png", width: 1254, height: 1254, alt: "Pelajar laki-laki faceless menyapa dan memperkenalkan diri di pintu kelas.", label: "Good morning. My name is ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label dengan kartu kosong di meja kelas.", label: "Where are you from?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-see-you-later.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless berpamitan di pintu kelas.", label: "See you later." },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13116,6 +13156,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca pertukaran singkat ini:\n\n```txt\nمرحبًا.\nأهلًا وسهلًا.\nأنا بخير، شكرًا.\n```\n\nPertanyaan: Baris mana yang bisa menjawab sapaan?\n\nJawaban: أهلًا وسهلًا.",
       writingSupport: "# Bantuan Menulis\n\nTulis tiga baris pendek:\n\n1. Sapaan.\n2. Jawaban sapaan.\n3. Jawaban kabar sederhana.\n\nContoh:\n\n```txt\nمرحبًا.\nأهلًا وسهلًا.\nأنا بخير، شكرًا.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless kelas bahasa Arab laki-laki di Indonesia.", caption: "Latihan sapaan formal di kelas bahasa Arab laki-laki dengan adab belajar yang sopan." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-marhaban.png", width: 1254, height: 1254, alt: "Meja kelas Indonesia dengan buku kosong dan pintu kelas terbuka.", label: "مرحبًا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-kayfa-haluk.png", width: 1254, height: 1254, alt: "Dua kursi kelas kosong menghadap papan tulis kosong.", label: "كيف حالك؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-ana-bikhayr.png", width: 1254, height: 1254, alt: "Meja belajar dengan buku kosong, pensil, tanaman, dan tanda centang.", label: "أنا بخير، شكرًا" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13176,6 +13224,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca teks pendek ini:\n\n```txt\nاسمي أحمد.\nأنا من إندونيسيا.\n```\n\nPertanyaan: Kalimat mana yang menyebutkan negara asal?\n\nJawaban: أنا من إندونيسيا.",
       writingSupport: "# Bantuan Menulis\n\nTulis dua kalimat Arab pendek:\n\n1. Namamu.\n2. Negara asalmu.\n\nContoh:\n\n```txt\nاسمي أحمد.\nأنا من إندونيسيا.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless kelas bahasa Arab laki-laki di Indonesia saat latihan nama dan asal.", caption: "Perkenalkan nama dan asal dengan kalimat Arab formal yang singkat." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ma-ismuka.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong di meja kelas bahasa Arab.", label: "ما اسمُكَ؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ismi.png", width: 1254, height: 1254, alt: "Pelajar laki-laki faceless berdiri sopan untuk memperkenalkan diri.", label: "اسمي ..." },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-min-ayna.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.", label: "من أين أنتَ؟" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13235,6 +13291,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca daftar instruksi ini:\n\n```txt\nاِقرأْ.\nاِستمعْ.\nأَعِدْ.\nاُكتبْ.\n```\n\nPertanyaan: Instruksi mana yang berarti \"tulislah\"?\n\nJawaban: اُكتبْ.",
       writingSupport: "# Bantuan Menulis\n\nSalin empat kata instruksi ini:\n\n```txt\nاِقرأْ\nاِستمعْ\nأَعِدْ\nاُكتبْ\n```\n\nLalu tulis satu respons:\n\n```txt\nنعم يا مُعَلِّم.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless guru memberi instruksi di kelas bahasa Arab laki-laki.", caption: "Dengarkan instruksi kelas sederhana dan jawab dengan sopan." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-iqra.png", width: 1254, height: 1254, alt: "Buku kosong terbuka di meja kelas bahasa Arab.", label: "اِقرأْ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-istami.png", width: 1254, height: 1254, alt: "Speaker kecil tanpa logo di meja kelas dengan buku kosong.", label: "اِستمعْ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-uktub.png", width: 1254, height: 1254, alt: "Buku tulis kosong dan pensil di meja kelas bahasa Arab.", label: "اُكتبْ" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13295,6 +13359,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca permintaan singkat ini:\n\n```txt\nعفوًا، لا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nPertanyaan: Kalimat mana yang meminta orang lain mengulangi?\n\nJawaban: أَعِدْ مِنْ فَضْلِكَ.",
       writingSupport: "# Bantuan Menulis\n\nTulis dua permintaan yang berguna di kelas:\n\n```txt\nلا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nLalu tulis satu pertanyaan makna:\n\n```txt\nما معنى الكلمة؟\n```",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar laki-laki mengangkat tangan di kelas bahasa Arab.", caption: "Minta pengulangan atau penjelasan ketika belum paham." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-la-afham.png", width: 1254, height: 1254, alt: "Buku kosong dengan simbol tanya kecil di meja kelas.", label: "لا أفهم" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-aid-min-fadlik.png", width: 1254, height: 1254, alt: "Kartu kosong dengan simbol ulang di meja kelas.", label: "أَعِدْ مِنْ فَضْلِكَ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-ma-mana.png", width: 1254, height: 1254, alt: "Kartu kosong di bawah kaca pembesar di meja kelas.", label: "ما معنى ...؟" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -13362,6 +13434,14 @@ export const lessonCatalog = [
       ],
       readingSupport: "# Bantuan Membaca\n\nBaca skrip misi ini:\n\n```txt\nمرحبًا.\nاسمي أحمد.\nأنا من إندونيسيا.\nلا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nPertanyaan: Baris mana yang meminta pengulangan?\n\nJawaban: أَعِدْ مِنْ فَضْلِكَ.",
       writingSupport: "# Bantuan Menulis\n\nTulis perkenalan diri dalam empat baris:\n\n```txt\nمرحبًا.\nاسمي أحمد.\nأنا من إندونيسيا.\nأنا أتعلم العربية.\n```\n\nLalu tambahkan satu frasa meminta bantuan:\n\n```txt\nأَعِدْ مِنْ فَضْلِكَ.\n```",
+      visuals: {
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless misi perkenalan formal di kelas bahasa Arab laki-laki.", caption: "Gabungkan sapaan, nama, asal, dan klarifikasi dalam perkenalan singkat." },
+        cards: [
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png", width: 1254, height: 1254, alt: "Dua pelajar laki-laki faceless saling menyapa di pintu kelas.", label: "مرحبًا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png", width: 1254, height: 1254, alt: "Kartu nama kosong di meja kelas bahasa Arab.", label: "اسمي ..." },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.", label: "أنا من إندونيسيا" },
+        ]
+      },
       sections: lessonSections
     },
     {
@@ -29183,7 +29263,7 @@ export const coachScenarios = [
   { slug: "asking-for-repetition", label: "Asking for Repetition", description: "Spelling, Numbers & Contact Details", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_for_repetition_contact_info", mode: "lesson_practice_coach" },
   { slug: "asking-high-quality-follow-ups", label: "Asking High-quality Follow-ups", description: "Advanced Listening & Response", language: "english", languageLabel: "English", levelCode: "C1", scenarioKey: "c1_followups", mode: "lesson_practice_coach" },
   { slug: "asking-how-to-get-there", label: "Asking How to Get There", description: "Places & Directions", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_for_steps_to_reach_a_place", mode: "lesson_practice_coach" },
-  { slug: "asking-someones-name", label: "Asking Someone's Name", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_someones_name_online_class", mode: "lesson_practice_coach" },
+  { slug: "asking-someones-name", label: "Asking Someone's Name", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_someones_name_class", mode: "lesson_practice_coach" },
   { slug: "asking-tactful-questions", label: "Asking Tactful Questions", description: "Cross-cultural Professionalism", language: "english", languageLabel: "English", levelCode: "C1", scenarioKey: "c1_tactful_questions", mode: "lesson_practice_coach" },
   { slug: "asking-when-something-happens", label: "Asking When Something Happens", description: "Daily Routine & Time", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_about_meeting_time", mode: "lesson_practice_coach" },
   { slug: "asking-where-a-place-is", label: "Asking Where a Place Is", description: "Places & Directions", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "asking_for_a_place_location", mode: "lesson_practice_coach" },
@@ -29239,7 +29319,7 @@ export const coachScenarios = [
   { slug: "final-test-practice", label: "Final Test Practice", description: "A1 Review & Final Conversation", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "practicing_the_a1_final_conversation_test", mode: "lesson_practice_coach" },
   { slug: "finding-a-place-mission", label: "Finding a Place Mission", description: "Places & Directions", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "finding_a_place_with_simple_directions", mode: "lesson_practice_coach" },
   { slug: "finding-middle-ground", label: "Finding Middle Ground", description: "Negotiation & Compromise", language: "english", languageLabel: "English", levelCode: "B2", scenarioKey: "b2_negotiation_middle_ground", mode: "lesson_practice_coach" },
-  { slug: "first-conversation-mission", label: "First Conversation Mission", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "first_conversation_mission_online_class", mode: "lesson_practice_coach" },
+  { slug: "first-conversation-mission", label: "First Conversation Mission", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "first_conversation_mission_class", mode: "lesson_practice_coach" },
   { slug: "framing-a-complex-topic", label: "Framing a Complex Topic", description: "Advanced Presentations", language: "english", languageLabel: "English", levelCode: "C1", scenarioKey: "c1_presentation_framing", mode: "lesson_practice_coach" },
   { slug: "framing-the-problem", label: "Framing the Problem", description: "Complex Problem Solving", language: "english", languageLabel: "English", levelCode: "B2", scenarioKey: "b2_problem_framing", mode: "lesson_practice_coach" },
   { slug: "giving-a-short-update", label: "Giving a Short Update", description: "Workplace Conversations", language: "english", languageLabel: "English", levelCode: "B1", scenarioKey: "b1_work_short_update", mode: "lesson_practice_coach" },
@@ -29311,16 +29391,16 @@ export const coachScenarios = [
   { slug: "review-stories-and-work", label: "Review Stories and Work", description: "B1 Review & Final Conversation", language: "english", languageLabel: "English", levelCode: "B1", scenarioKey: "b1_review_stories_work", mode: "lesson_practice_coach" },
   { slug: "review-travel-and-shopping", label: "Review Travel and Shopping", description: "A2 Review & Final Conversation", language: "english", languageLabel: "English", levelCode: "A2", scenarioKey: "a2_review_travel_shopping", mode: "lesson_practice_coach" },
   { slug: "routine-conversation-mission", label: "Routine Conversation Mission", description: "Daily Routine & Time", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "routine_and_schedule_unit_mission", mode: "lesson_practice_coach" },
-  { slug: "saying-hello-and-goodbye", label: "Saying Hello and Goodbye", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "greeting_intro_online_class", mode: "lesson_practice_coach" },
+  { slug: "saying-hello-and-goodbye", label: "Saying Hello and Goodbye", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "greeting_intro_class", mode: "lesson_practice_coach" },
   { slug: "saying-how-you-feel", label: "Saying How You Feel", description: "Health & Appointments", language: "english", languageLabel: "English", levelCode: "A2", scenarioKey: "a2_health_saying_how_you_feel", mode: "lesson_practice_coach" },
   { slug: "saying-what-you-can-do", label: "Saying What You Can Do", description: "Work, Study & Preferences", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_simple_english_abilities", mode: "lesson_practice_coach" },
   { slug: "saying-what-you-do", label: "Saying What You Do", description: "Work, Study & Preferences", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_work_or_study_status", mode: "lesson_practice_coach" },
   { slug: "saying-what-you-think", label: "Saying What You Think", description: "Opinions & Reasons", language: "english", languageLabel: "English", levelCode: "A2", scenarioKey: "a2_opinion_say_what_you_think", mode: "lesson_practice_coach" },
   { slug: "saying-what-you-want", label: "Saying What You Want", description: "Food, Shopping & Prices", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_a_simple_food_or_drink_preference", mode: "lesson_practice_coach" },
-  { slug: "saying-where-you-are-from", label: "Saying Where You Are From", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_where_you_are_from_online_class", mode: "lesson_practice_coach" },
+  { slug: "saying-where-you-are-from", label: "Saying Where You Are From", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_where_you_are_from_class", mode: "lesson_practice_coach" },
   { slug: "saying-where-you-went", label: "Saying Where You Went", description: "Past Experiences", language: "english", languageLabel: "English", levelCode: "A2", scenarioKey: "a2_past_where_you_went", mode: "lesson_practice_coach" },
   { slug: "saying-you-do-not-understand", label: "Saying You Do Not Understand", description: "Help, Problems & Requests", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_you_do_not_understand", mode: "lesson_practice_coach" },
-  { slug: "saying-your-name", label: "Saying Your Name", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_your_name_online_class", mode: "lesson_practice_coach" },
+  { slug: "saying-your-name", label: "Saying Your Name", description: "Greeting & Introducing Yourself", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "saying_your_name_class", mode: "lesson_practice_coach" },
   { slug: "setting-direction", label: "Setting Direction", description: "Leadership & Coaching", language: "english", languageLabel: "English", levelCode: "C1", scenarioKey: "c1_setting_direction", mode: "lesson_practice_coach" },
   { slug: "setting-the-scene", label: "Setting the Scene", description: "Personal Stories", language: "english", languageLabel: "English", levelCode: "B1", scenarioKey: "b1_story_setting_scene", mode: "lesson_practice_coach" },
   { slug: "sharing-email-addresses", label: "Sharing Email Addresses", description: "Spelling, Numbers & Contact Details", language: "english", languageLabel: "English", levelCode: "A1", scenarioKey: "sharing_email_for_class_updates", mode: "lesson_practice_coach" },

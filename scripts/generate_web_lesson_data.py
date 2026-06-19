@@ -126,6 +126,51 @@ def parse_vocabulary(path: Path) -> list[dict[str, str]]:
     ]
 
 
+def parse_visuals(path: Path) -> dict[str, Any] | None:
+    if not path.exists():
+        return None
+
+    visuals = read_yaml(path)
+    hero = visuals.get("hero")
+    cards = visuals.get("cards")
+    if not isinstance(hero, dict):
+        raise GeneratorError(f"{path}: visuals.hero must be a mapping")
+    if not isinstance(cards, list) or len(cards) != 3:
+        raise GeneratorError(f"{path}: visuals.cards must contain exactly 3 items")
+
+    def clean_item(item: Any, label: str) -> dict[str, str]:
+        if not isinstance(item, dict):
+            raise GeneratorError(f"{path}: {label} must be a mapping")
+        src = str(item.get("src") or "").strip()
+        alt = str(item.get("alt") or "").strip()
+        if not src.startswith("/images/"):
+            raise GeneratorError(f"{path}: {label}.src must start with /images/")
+        if not alt:
+            raise GeneratorError(f"{path}: {label}.alt is required")
+        width = int(item.get("width") or 0)
+        height = int(item.get("height") or 0)
+        if width < 1 or height < 1:
+            raise GeneratorError(f"{path}: {label}.width and {label}.height are required")
+
+        asset_path = REPO_ROOT / "apps" / "web" / "public" / src.removeprefix("/")
+        if not asset_path.exists():
+            raise GeneratorError(f"{path}: visual asset does not exist: {asset_path}")
+
+        return {
+            "src": src,
+            "width": width,
+            "height": height,
+            "alt": alt,
+            "label": str(item.get("label") or "").strip(),
+            "caption": str(item.get("caption") or "").strip(),
+        }
+
+    return {
+        "hero": clean_item(hero, "hero"),
+        "cards": [clean_item(card, f"cards[{index}]") for index, card in enumerate(cards)],
+    }
+
+
 def extract_situation(lesson_md: Path) -> str:
     text = lesson_md.read_text(encoding="utf-8")
     # Header is "## Situation" or "## Situation Setup".
@@ -242,6 +287,7 @@ def build_lesson(course: dict[str, Any], unit_title: str, lesson: dict[str, Any]
         "quiz": quiz,
         "readingSupport": reading_support,
         "writingSupport": writing_support,
+        "visuals": parse_visuals(lesson_dir / "visuals.yaml"),
     }
 
 
@@ -395,6 +441,24 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
         lines.append("      ],")
         lines.append(f"      readingSupport: {js_string(lesson['readingSupport'])},")
         lines.append(f"      writingSupport: {js_string(lesson['writingSupport'])},")
+        if lesson.get("visuals"):
+            visuals = lesson["visuals"]
+            hero = visuals["hero"]
+            lines.append("      visuals: {")
+            lines.append(
+                f"        hero: {{ src: {js_string(hero['src'])}, width: {int(hero['width'])}, "
+                f"height: {int(hero['height'])}, alt: {js_string(hero['alt'])}, "
+                f"caption: {js_string(hero['caption'])} }},"
+            )
+            lines.append("        cards: [")
+            for card in visuals["cards"]:
+                lines.append(
+                    f"          {{ src: {js_string(card['src'])}, width: {int(card['width'])}, "
+                    f"height: {int(card['height'])}, alt: {js_string(card['alt'])}, "
+                    f"label: {js_string(card['label'])} }},"
+                )
+            lines.append("        ]")
+            lines.append("      },")
         lines.append("      sections: lessonSections")
         lines.append("    }")
         blocks.append("\n".join(lines))

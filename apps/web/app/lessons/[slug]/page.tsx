@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BookOpen, Headphones, Mic, RotateCcw, Send } from "lucide-react";
@@ -99,6 +100,26 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               <p className="mt-2 leading-7 text-ink/70">{lesson.setup}</p>
             </section>
 
+            {lesson.visuals ? (
+              <section className="mt-6">
+                <figure className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
+                  <Image
+                    src={lesson.visuals.hero.src}
+                    alt={lesson.visuals.hero.alt}
+                    width={lesson.visuals.hero.width}
+                    height={lesson.visuals.hero.height}
+                    className="h-auto w-full"
+                    priority
+                  />
+                  {lesson.visuals.hero.caption ? (
+                    <figcaption className="px-4 py-3 text-sm leading-6 text-ink/60">
+                      {lesson.visuals.hero.caption}
+                    </figcaption>
+                  ) : null}
+                </figure>
+              </section>
+            ) : null}
+
             <section className="mt-8">
               <div className="flex flex-wrap items-center justify-between gap-4">
                 <div className="flex items-center gap-2">
@@ -118,6 +139,27 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                   </div>
                 ))}
               </div>
+              {lesson.visuals?.cards?.length ? (
+                <div className="mt-4 grid gap-3 md:grid-cols-3">
+                  {lesson.visuals.cards.map((visual) => (
+                    <figure key={visual.src} className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
+                      <Image
+                        src={visual.src}
+                        alt={visual.alt}
+                        width={visual.width}
+                        height={visual.height}
+                        className="aspect-square w-full object-cover"
+                      />
+                      <figcaption
+                        dir={isArabic ? "rtl" : "auto"}
+                        className={`px-3 py-3 text-sm font-semibold text-ink ${isArabic ? "text-right text-base" : ""}`}
+                      >
+                        {visual.label}
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
             </section>
 
             <section className="mt-8">
