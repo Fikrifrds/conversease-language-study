@@ -142,12 +142,20 @@ async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONR
 
 
 def security_headers() -> dict[str, str]:
-    return {
+    headers = {
         "x-content-type-options": "nosniff",
         "x-frame-options": "DENY",
         "referrer-policy": "strict-origin-when-cross-origin",
         "permissions-policy": "camera=(), microphone=(self), geolocation=()",
+        # This service only returns JSON, so lock the CSP all the way down: no
+        # resource may load and the response may not be framed.
+        "content-security-policy": "default-src 'none'; frame-ancestors 'none'",
     }
+    # HSTS only matters over HTTPS; sending it on local HTTP dev would pin
+    # browsers to a scheme that isn't served there.
+    if settings.is_production:
+        headers["strict-transport-security"] = "max-age=31536000; includeSubDomains"
+    return headers
 
 
 def apply_security_headers(headers) -> None:

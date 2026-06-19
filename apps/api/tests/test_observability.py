@@ -44,6 +44,12 @@ class ObservabilityTest(unittest.TestCase):
         self.assertEqual(response.headers["x-request-id"], "req-test-123")
         self.assertEqual(response.headers["x-content-type-options"], "nosniff")
         self.assertEqual(response.headers["x-frame-options"], "DENY")
+        self.assertEqual(
+            response.headers["content-security-policy"],
+            "default-src 'none'; frame-ancestors 'none'",
+        )
+        # HSTS is production-only; dev (is_production=False) must not send it.
+        self.assertNotIn("strict-transport-security", response.headers)
         self.assertEqual(response.json()["release_version"], "dev")
 
     def test_ready_includes_database_and_migration_checks(self):
