@@ -11,6 +11,7 @@ import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-p
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { StudyDayMarker } from "@/components/study-day-marker";
+import { versionedAssetSrc } from "@/lib/assets";
 import { lessonCatalog, lessonsBySlug, lessonPlacementLabel } from "@/lib/data";
 
 const ARABIC_SECTION_LABELS: Record<string, string> = {
@@ -104,7 +105,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               <section className="mt-6">
                 <figure className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
                   <Image
-                    src={lesson.visuals.hero.src}
+                    src={versionedAssetSrc(lesson.visuals.hero.src)}
                     alt={lesson.visuals.hero.alt}
                     width={lesson.visuals.hero.width}
                     height={lesson.visuals.hero.height}
@@ -144,7 +145,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
                   {lesson.visuals.cards.map((visual) => (
                     <figure key={visual.src} className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
                       <Image
-                        src={visual.src}
+                        src={versionedAssetSrc(visual.src)}
                         alt={visual.alt}
                         width={visual.width}
                         height={visual.height}
