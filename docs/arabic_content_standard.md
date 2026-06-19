@@ -32,9 +32,18 @@ content is written in this repo or generated elsewhere with another model.
    generated TTS until a separate religious review and approved audio process
    exists.
 9. Prefer object-only visuals. If a greeting or classroom scene needs people,
-   use soft cartoon/faceless figures only, keep the scene same-gender, and do
-   not show men and women seated together in one classroom. Use UI/online
-   imagery only when the lesson explicitly teaches a digital interaction.
+   use soft cartoon/faceless figures only and match visible gender to the
+   speaker/persona. Female figures should wear a wide khimar/jilbab or
+   abaya-style outfit in dark or neutral colors, not bright multicolor clothing.
+   Male figures should wear modest loose clothing with trousers clearly above
+   the ankles; avoid isbal. Do not show men and women sitting side by side,
+   standing close together, or making physical contact; use object-only,
+   single-speaker, or clearly separated compositions for mixed speaker sets.
+   Arabic visuals do not automatically need peci/songkok or other
+   culture-specific clothing unless the speaker/context calls for it. Reuse
+   English/Arabic assets when the scene, speaker profile, and phrase context
+   match. Use UI/online imagery only when the lesson explicitly teaches a
+   digital interaction.
 
 ## Arabic A1 Baseline
 
@@ -144,8 +153,12 @@ Requirements:
 - Reuse the lesson phrase family across useful phrases, response prompts, quiz,
   roleplay, reading, and writing.
 - Do not include religious source text or devotional phrases.
-- Prefer object-only visuals. If people are necessary, use same-gender soft
-  faceless cartoons and avoid mixed-gender classroom scenes.
+- Prefer object-only visuals. If people are necessary, use soft faceless
+  cartoons that match the speaker/persona gender. Female figures should wear
+  wide khimar/jilbab or abaya-style clothing in dark or neutral colors. Male
+  figures should avoid isbal, with trousers clearly above the ankles. Avoid
+  close mixed-gender scenes and do not add culture-specific clothing by language
+  track alone.
 
 Before returning the lesson, self-check:
 1. Are all dialogue turns coherent?

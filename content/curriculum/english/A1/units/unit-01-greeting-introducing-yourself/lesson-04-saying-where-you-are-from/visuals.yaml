@@ -2,7 +2,7 @@ hero:
   src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless kelas laki-laki di Indonesia saat pelajar menyebutkan asal.
+  alt: Ilustrasi kartun object-only kelas Indonesia dengan worksheet peta tanpa label untuk menyebutkan asal.
   caption: Sebutkan asal dan tanyakan balik dengan natural.
 cards:
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png
@@ -19,4 +19,4 @@ cards:
     width: 1254
     height: 1254
     label: How about you?
-    alt: Dua pelajar laki-laki faceless saling bertanya balik di pintu kelas.
+    alt: Dua kartu nama kosong terpisah di meja kelas untuk bertanya balik dengan sopan.

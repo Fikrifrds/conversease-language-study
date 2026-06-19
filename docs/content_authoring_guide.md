@@ -27,10 +27,18 @@ and consistent with the existing files for that lesson.**
    transition line and/or a pause.
 5. **Indonesian support is clear and concise**, never stiff.
 6. **Conservative visual policy.** Prefer object-only visuals. If a real-world
-   conversation needs people, use soft cartoon/faceless figures only, keep the
-   scene same-gender, and never show men and women seated together in one class.
-   Do not use online-meeting or chat-screen imagery unless the lesson is
-   explicitly about a digital interaction.
+   conversation needs people, use soft cartoon/faceless figures only and match
+   the visible gender to the lesson speaker/persona. Female figures should wear
+   a wide khimar/jilbab or abaya-style outfit in dark or neutral colors, not
+   bright multicolor clothing. Male figures should wear modest loose clothing
+   with trousers clearly above the ankles; avoid isbal. Do not show men and
+   women sitting side by side, standing close together, or making physical
+   contact; use object-only, single-speaker, or clearly separated compositions
+   for mixed speaker sets. Do not add culture-specific clothing by track alone:
+   Arabic visuals do not automatically need peci/songkok. Reuse English/Arabic
+   assets when the scene, speaker profile, and phrase context match. Do not use
+   online-meeting or chat-screen imagery unless the lesson is explicitly about a
+   digital interaction.
 7. **Never publish** a lesson whose roleplay slug the backend/frontend can't run.
 
 ## 2. Files a lesson needs

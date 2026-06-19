@@ -2,7 +2,7 @@ hero:
   src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless kelas offline Indonesia untuk latihan sapaan pagi.
+  alt: Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap menyapa di kelas Indonesia.
   caption: Mulai percakapan sederhana di kelas nyata.
 cards:
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png
@@ -14,9 +14,9 @@ cards:
     width: 1254
     height: 1254
     label: How are you?
-    alt: Dua pelajar laki-laki faceless saling menyapa di pintu kelas.
+    alt: Pelajar perempuan faceless berjilbab lebar gelap bertanya kabar di pintu kelas.
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-see-you-later.png
     width: 1254
     height: 1254
     label: See you later
-    alt: Dua pelajar laki-laki faceless berpamitan di pintu kelas.
+    alt: Pelajar perempuan faceless berjilbab lebar gelap berpamitan di pintu kelas.
