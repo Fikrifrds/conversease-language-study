@@ -98,9 +98,14 @@ class Settings(BaseSettings):
     s3_presigned_url_expires_seconds: int = 3600
     rate_limit_enabled: bool = True
     rate_limit_window_seconds: int = 60
-    auth_rate_limit_requests: int = 30
+    auth_rate_limit_requests: int = 10
     admin_rate_limit_requests: int = 120
     conversation_rate_limit_requests: int = 40
+    # Per-recipient cap on transactional emails (password reset, email
+    # verification) so abusing forgot-password can't email-bomb a victim from
+    # many IPs. Counts emails sent to one address within the window.
+    email_recipient_rate_limit_requests: int = 3
+    email_recipient_rate_limit_window_seconds: int = 3600
 
     model_config = SettingsConfigDict(env_file=(".env", ".env.local"), extra="ignore")
 
@@ -200,6 +205,12 @@ class Settings(BaseSettings):
 
         if self.rate_limit_enabled and self.conversation_rate_limit_requests < 1:
             errors.append("CONVERSATION_RATE_LIMIT_REQUESTS must be positive")
+
+        if self.rate_limit_enabled and self.email_recipient_rate_limit_requests < 1:
+            errors.append("EMAIL_RECIPIENT_RATE_LIMIT_REQUESTS must be positive")
+
+        if self.rate_limit_enabled and self.email_recipient_rate_limit_window_seconds < 1:
+            errors.append("EMAIL_RECIPIENT_RATE_LIMIT_WINDOW_SECONDS must be positive")
 
         if errors:
             raise ValueError("; ".join(errors))

@@ -20,6 +20,7 @@ class RateLimitTest(unittest.TestCase):
         self.original_auth_limit = settings.auth_rate_limit_requests
         self.original_admin_limit = settings.admin_rate_limit_requests
         self.original_conversation_limit = settings.conversation_rate_limit_requests
+        self.original_email_recipient_limit = settings.email_recipient_rate_limit_requests
         rate_limiter.reset()
 
     def tearDown(self):
@@ -28,6 +29,7 @@ class RateLimitTest(unittest.TestCase):
         settings.auth_rate_limit_requests = self.original_auth_limit
         settings.admin_rate_limit_requests = self.original_admin_limit
         settings.conversation_rate_limit_requests = self.original_conversation_limit
+        settings.email_recipient_rate_limit_requests = self.original_email_recipient_limit
         rate_limiter.reset()
 
     def client_with_database(self) -> TestClient:
@@ -99,6 +101,33 @@ class RateLimitTest(unittest.TestCase):
         self.assertNotEqual(first.status_code, 429)
         self.assertEqual(second.status_code, 429)
         self.assertEqual(second.json()["detail"], "Rate limit exceeded")
+
+    def test_forgot_password_is_limited_per_recipient_email(self):
+        settings.rate_limit_enabled = True
+        settings.rate_limit_window_seconds = 60
+        settings.auth_rate_limit_requests = 100  # keep the per-IP limiter out of the way
+        settings.email_recipient_rate_limit_requests = 2
+        client = self.client_with_database()
+
+        payload = {"email": "victim@example.local"}
+        statuses = [client.post("/api/auth/forgot-password", json=payload).status_code for _ in range(3)]
+
+        self.assertEqual(statuses, [200, 200, 429])
+
+    def test_email_recipient_limit_does_not_leak_account_existence(self):
+        # A non-existent address hits the same cap, so 429-vs-200 can't be used
+        # to enumerate which emails are registered.
+        settings.rate_limit_enabled = True
+        settings.rate_limit_window_seconds = 60
+        settings.auth_rate_limit_requests = 100
+        settings.email_recipient_rate_limit_requests = 1
+        client = self.client_with_database()
+
+        first = client.post("/api/auth/forgot-password", json={"email": "ghost@example.local"})
+        second = client.post("/api/auth/forgot-password", json={"email": "ghost@example.local"})
+
+        self.assertEqual(first.status_code, 200)
+        self.assertEqual(second.status_code, 429)
 
     def test_health_is_not_rate_limited(self):
         settings.rate_limit_enabled = True

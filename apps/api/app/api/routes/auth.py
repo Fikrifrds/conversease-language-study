@@ -11,6 +11,7 @@ from urllib.parse import urlencode
 
 from app.api.deps import get_current_user
 from app.core.config import settings
+from app.core.rate_limit import rate_limiter
 from app.core.security import create_access_token
 from app.db.session import get_db
 from app.domain.users import User, name_looks_suspicious
@@ -121,6 +122,25 @@ def validate_email(email: str) -> str:
     return normalized
 
 
+def guard_email_recipient(email: str) -> None:
+    """Cap how many transactional emails one address can receive in the window,
+    so abusing forgot-password / verification can't email-bomb a victim even
+    from many IPs (the per-IP limiter alone doesn't stop that).
+    """
+    if not settings.rate_limit_enabled:
+        return
+    remaining = rate_limiter.hit(
+        f"email-recipient:{email}",
+        limit=settings.email_recipient_rate_limit_requests,
+        window_seconds=settings.email_recipient_rate_limit_window_seconds,
+    )
+    if remaining < 0:
+        raise HTTPException(
+            status_code=429,
+            detail="Too many email requests for this address. Please try again later.",
+        )
+
+
 @router.post("/auth/register", response_model=AuthResponse)
 async def register(payload: RegisterPayload, db: Session = Depends(get_db)) -> AuthResponse:
     email = validate_email(payload.email)
@@ -131,6 +151,7 @@ async def register(payload: RegisterPayload, db: Session = Depends(get_db)) -> A
     if name_looks_suspicious(payload.name, email):
         raise HTTPException(status_code=422, detail="Please enter your real name")
 
+    guard_email_recipient(email)
     repository = UserRepository(db)
 
     if repository.get_by_email(email):
@@ -240,6 +261,7 @@ async def request_email_verification(
     if current_user.email_verified_at:
         return {"data": {"already_verified": True, "email": current_user.email}}
 
+    guard_email_recipient(current_user.email)
     result = await send_verification_email(current_user, db)
     return {
         "data": {
@@ -266,6 +288,7 @@ async def verify_email(payload: VerifyEmailPayload, db: Session = Depends(get_db
 @router.post("/auth/forgot-password")
 async def forgot_password(payload: ForgotPasswordPayload, db: Session = Depends(get_db)) -> dict:
     email = validate_email(payload.email)
+    guard_email_recipient(email)
     user = UserRepository(db).get_by_email(email)
     delivery = None
 
