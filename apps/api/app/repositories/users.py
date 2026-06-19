@@ -6,7 +6,7 @@ from uuid import uuid4
 from sqlalchemy import or_, select
 from sqlalchemy.orm import Session
 
-from app.core.security import hash_password, verify_password
+from app.core.security import hash_password, verify_password, waste_password_verification
 from app.db.models import UserModel
 from app.domain.users import User
 
@@ -83,6 +83,9 @@ class UserRepository:
     def authenticate(self, email: str, password: str) -> Optional[User]:
         model = self.get_model_by_email(email)
         if model is None:
+            # Verify against a dummy hash anyway so a missing account takes the
+            # same time as a wrong password, preventing user enumeration.
+            waste_password_verification()
             return None
         if not verify_password(password, model.password_hash):
             return None

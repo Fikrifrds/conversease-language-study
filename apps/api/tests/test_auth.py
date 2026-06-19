@@ -1,4 +1,5 @@
 import unittest
+import unittest.mock
 
 from fastapi import HTTPException
 from sqlalchemy import create_engine
@@ -37,6 +38,17 @@ class AuthTest(unittest.TestCase):
             self.assertIsNotNone(authenticated)
             self.assertEqual(authenticated.id, user.id)
             self.assertIsNone(repository.authenticate("fikri@example.com", "wrong-password"))
+
+    def test_authenticate_missing_user_still_verifies_to_equalize_timing(self):
+        with self.SessionLocal() as db:
+            repository = UserRepository(db)
+            with unittest.mock.patch(
+                "app.repositories.users.waste_password_verification"
+            ) as waste:
+                result = repository.authenticate("ghost@example.com", "password123")
+
+            self.assertIsNone(result)
+            waste.assert_called_once()
 
     def test_access_token_roundtrip(self):
         token = create_access_token("user-123")

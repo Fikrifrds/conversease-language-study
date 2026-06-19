@@ -9,6 +9,11 @@ from app.core.config import settings
 
 password_context = CryptContext(schemes=["pbkdf2_sha256"], deprecated="auto")
 
+# Precomputed hash with the same scheme/cost as real ones. Verifying against it
+# for a non-existent account makes login take the same time as for a real one,
+# so response timing can't reveal which emails are registered.
+_dummy_password_hash = password_context.hash("conversease-timing-equalizer")
+
 
 def hash_password(password: str) -> str:
     return password_context.hash(password)
@@ -16,6 +21,12 @@ def hash_password(password: str) -> str:
 
 def verify_password(password: str, password_hash: str) -> bool:
     return password_context.verify(password, password_hash)
+
+
+def waste_password_verification() -> None:
+    """Run a hash verification and discard the result, to equalize login timing
+    when the account does not exist."""
+    password_context.verify("conversease-timing-equalizer", _dummy_password_hash)
 
 
 def create_access_token(subject: str, expires_delta: Optional[timedelta] = None) -> str:
