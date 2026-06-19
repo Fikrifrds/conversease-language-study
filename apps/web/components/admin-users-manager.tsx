@@ -54,6 +54,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
   const [search, setSearch] = useState("");
   const [roleFilter, setRoleFilter] = useState<"all" | "admin" | "student">("all");
   const [verificationFilter, setVerificationFilter] = useState<"all" | "verified" | "unverified">("all");
+  const [suspiciousFilter, setSuspiciousFilter] = useState<"all" | "suspicious" | "clean">("all");
   const [sortBy, setSortBy] = useState<"updated_desc" | "updated_asc" | "name_asc" | "name_desc">("updated_desc");
   const [selectedUserIds, setSelectedUserIds] = useState<string[]>([]);
   const [selectedUserId, setSelectedUserId] = useState<string | null>(null);
@@ -79,6 +80,12 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
       if (verificationFilter === "unverified" && user.emailVerifiedAt) {
         return false;
       }
+      if (suspiciousFilter === "suspicious" && !user.looksSuspicious) {
+        return false;
+      }
+      if (suspiciousFilter === "clean" && user.looksSuspicious) {
+        return false;
+      }
       return true;
     });
 
@@ -96,7 +103,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
     });
 
     return nextUsers;
-  }, [roleFilter, sortBy, users, verificationFilter]);
+  }, [roleFilter, sortBy, suspiciousFilter, users, verificationFilter]);
 
   const totals = useMemo(() => {
     return filteredUsers.reduce(
@@ -283,7 +290,7 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
           <Metric label="Unverified" value={totals.unverified} />
         </div>
 
-        <div className="mt-4 grid gap-2 lg:grid-cols-3">
+        <div className="mt-4 grid gap-2 lg:grid-cols-2 xl:grid-cols-4">
           <select
             value={roleFilter}
             onChange={(event) => setRoleFilter(event.target.value as "all" | "admin" | "student")}
@@ -304,6 +311,18 @@ export function AdminUsersManager({ adminUser }: { adminUser: AuthUser }) {
             <option value="all">Semua email</option>
             <option value="verified">Email verified</option>
             <option value="unverified">Belum verified</option>
+          </select>
+
+          <select
+            value={suspiciousFilter}
+            onChange={(event) =>
+              setSuspiciousFilter(event.target.value as "all" | "suspicious" | "clean")
+            }
+            className="focus-ring rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
+          >
+            <option value="all">Semua nama</option>
+            <option value="suspicious">Mencurigakan</option>
+            <option value="clean">Nama wajar</option>
           </select>
 
           <select
