@@ -11,7 +11,7 @@ from urllib.parse import urlencode
 
 from app.api.deps import get_current_user
 from app.core.config import settings
-from app.core.rate_limit import rate_limiter
+from app.core.rate_limit import login_attempts, rate_limiter
 from app.core.security import create_access_token
 from app.db.session import get_db
 from app.domain.users import User, name_looks_suspicious
@@ -171,11 +171,26 @@ async def register(payload: RegisterPayload, db: Session = Depends(get_db)) -> A
 @router.post("/auth/login", response_model=AuthResponse)
 async def login(payload: LoginPayload, db: Session = Depends(get_db)) -> AuthResponse:
     email = validate_email(payload.email)
+
+    if settings.rate_limit_enabled and login_attempts.is_locked(
+        email,
+        max_attempts=settings.login_max_failed_attempts,
+        window_seconds=settings.login_lockout_window_seconds,
+    ):
+        raise HTTPException(
+            status_code=429,
+            detail="Too many failed login attempts. Please try again later.",
+        )
+
     user = UserRepository(db).authenticate(email=email, password=payload.password)
 
     if user is None:
+        if settings.rate_limit_enabled:
+            login_attempts.register_failure(email, window_seconds=settings.login_lockout_window_seconds)
         raise HTTPException(status_code=401, detail="Invalid email or password")
 
+    if settings.rate_limit_enabled:
+        login_attempts.reset_key(email)
     return auth_response(user)
 
 

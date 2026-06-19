@@ -6,11 +6,12 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.pool import StaticPool
 
 from app.core.config import settings
-from app.core.rate_limit import rate_limiter
+from app.core.rate_limit import login_attempts, rate_limiter
 from app.db import models  # noqa: F401
 from app.db.base import Base
 from app.db.session import get_db
 from app.main import create_app
+from app.repositories.users import UserRepository
 
 
 class RateLimitTest(unittest.TestCase):
@@ -21,7 +22,9 @@ class RateLimitTest(unittest.TestCase):
         self.original_admin_limit = settings.admin_rate_limit_requests
         self.original_conversation_limit = settings.conversation_rate_limit_requests
         self.original_email_recipient_limit = settings.email_recipient_rate_limit_requests
+        self.original_login_max_failed = settings.login_max_failed_attempts
         rate_limiter.reset()
+        login_attempts.reset()
 
     def tearDown(self):
         settings.rate_limit_enabled = self.original_enabled
@@ -30,7 +33,9 @@ class RateLimitTest(unittest.TestCase):
         settings.admin_rate_limit_requests = self.original_admin_limit
         settings.conversation_rate_limit_requests = self.original_conversation_limit
         settings.email_recipient_rate_limit_requests = self.original_email_recipient_limit
+        settings.login_max_failed_attempts = self.original_login_max_failed
         rate_limiter.reset()
+        login_attempts.reset()
 
     def client_with_database(self) -> TestClient:
         engine = create_engine(
@@ -48,6 +53,7 @@ class RateLimitTest(unittest.TestCase):
             finally:
                 db.close()
 
+        self.session_local = session_local
         app = create_app()
         app.dependency_overrides[get_db] = override_db
         return TestClient(app)
@@ -128,6 +134,59 @@ class RateLimitTest(unittest.TestCase):
 
         self.assertEqual(first.status_code, 200)
         self.assertEqual(second.status_code, 429)
+
+    def test_login_locks_account_after_repeated_failures(self):
+        settings.rate_limit_enabled = True
+        settings.rate_limit_window_seconds = 60
+        settings.auth_rate_limit_requests = 100  # keep per-IP limiter out of the way
+        settings.login_max_failed_attempts = 3
+        client = self.client_with_database()
+
+        # Seed a real account so the lockout (not bad-credentials) is what blocks.
+        with self.session_local() as db:
+            UserRepository(db).create_user(
+                name="Victim",
+                email="victim@example.local",
+                password="CorrectHorse9",
+            )
+
+        bad = {"email": "victim@example.local", "password": "WrongPassword1"}
+        # 3 failures are allowed (each returns 401); the account locks after that.
+        statuses = [client.post("/api/auth/login", json=bad).status_code for _ in range(3)]
+
+        # Now locked: even the correct password is rejected with 429.
+        locked = client.post(
+            "/api/auth/login",
+            json={"email": "victim@example.local", "password": "CorrectHorse9"},
+        )
+
+        self.assertEqual(statuses, [401, 401, 401])
+        self.assertEqual(locked.status_code, 429)
+        self.assertEqual(locked.json()["detail"], "Too many failed login attempts. Please try again later.")
+
+    def test_successful_login_clears_failed_attempt_counter(self):
+        settings.rate_limit_enabled = True
+        settings.auth_rate_limit_requests = 100
+        settings.login_max_failed_attempts = 3
+        client = self.client_with_database()
+
+        with self.session_local() as db:
+            UserRepository(db).create_user(
+                name="Comeback",
+                email="comeback@example.local",
+                password="CorrectHorse9",
+            )
+
+        creds = {"email": "comeback@example.local", "password": "CorrectHorse9"}
+        # Two failures, then a success resets the counter, so further failures
+        # don't immediately trip the lockout.
+        client.post("/api/auth/login", json={**creds, "password": "WrongPassword1"})
+        client.post("/api/auth/login", json={**creds, "password": "WrongPassword1"})
+        success = client.post("/api/auth/login", json=creds)
+        after = client.post("/api/auth/login", json={**creds, "password": "WrongPassword1"})
+
+        self.assertEqual(success.status_code, 200)
+        self.assertEqual(after.status_code, 401)  # 401, not 429 — counter was cleared
 
     def test_health_is_not_rate_limited(self):
         settings.rate_limit_enabled = True

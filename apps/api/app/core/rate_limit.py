@@ -51,6 +51,49 @@ class InMemoryRateLimiter:
 rate_limiter = InMemoryRateLimiter()
 
 
+@dataclass
+class FailedLoginEntry:
+    window_started_at: float
+    count: int
+
+
+class LoginAttemptTracker:
+    """Tracks consecutive failed logins per account so a single email can be
+    locked out across all source IPs. Distinct from the rate limiter: only
+    failures count, and a success clears the account's counter.
+    """
+
+    def __init__(self) -> None:
+        self.entries: dict[str, FailedLoginEntry] = {}
+
+    def is_locked(self, key: str, *, max_attempts: int, window_seconds: int, now: Optional[float] = None) -> bool:
+        current_time = now if now is not None else time.monotonic()
+        entry = self.entries.get(key)
+        if entry is None:
+            return False
+        if current_time - entry.window_started_at >= window_seconds:
+            del self.entries[key]
+            return False
+        return entry.count >= max_attempts
+
+    def register_failure(self, key: str, *, window_seconds: int, now: Optional[float] = None) -> None:
+        current_time = now if now is not None else time.monotonic()
+        entry = self.entries.get(key)
+        if entry is None or current_time - entry.window_started_at >= window_seconds:
+            self.entries[key] = FailedLoginEntry(window_started_at=current_time, count=1)
+            return
+        entry.count += 1
+
+    def reset_key(self, key: str) -> None:
+        self.entries.pop(key, None)
+
+    def reset(self) -> None:
+        self.entries.clear()
+
+
+login_attempts = LoginAttemptTracker()
+
+
 class RateLimitMiddleware(BaseHTTPMiddleware):
     async def dispatch(self, request: Request, call_next):
         rule = rate_limit_rule(request)

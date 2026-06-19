@@ -106,6 +106,12 @@ class Settings(BaseSettings):
     # many IPs. Counts emails sent to one address within the window.
     email_recipient_rate_limit_requests: int = 3
     email_recipient_rate_limit_window_seconds: int = 3600
+    # Per-account login lockout: after this many consecutive failed logins for
+    # one email, reject further attempts for the lockout window regardless of
+    # source IP, so a botnet can't brute-force a single account. A successful
+    # login clears the counter.
+    login_max_failed_attempts: int = 5
+    login_lockout_window_seconds: int = 900
 
     model_config = SettingsConfigDict(env_file=(".env", ".env.local"), extra="ignore")
 
@@ -211,6 +217,12 @@ class Settings(BaseSettings):
 
         if self.rate_limit_enabled and self.email_recipient_rate_limit_window_seconds < 1:
             errors.append("EMAIL_RECIPIENT_RATE_LIMIT_WINDOW_SECONDS must be positive")
+
+        if self.rate_limit_enabled and self.login_max_failed_attempts < 1:
+            errors.append("LOGIN_MAX_FAILED_ATTEMPTS must be positive")
+
+        if self.rate_limit_enabled and self.login_lockout_window_seconds < 1:
+            errors.append("LOGIN_LOCKOUT_WINDOW_SECONDS must be positive")
 
         if errors:
             raise ValueError("; ".join(errors))
