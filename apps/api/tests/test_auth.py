@@ -8,6 +8,7 @@ from app.api.routes.auth import validate_email
 from app.core.security import create_access_token, decode_access_token
 from app.db.base import Base
 from app.db import models  # noqa: F401
+from app.domain.users import name_looks_suspicious
 from app.repositories.users import UserRepository
 from app.services.google_oauth import create_google_oauth_state, decode_google_oauth_state, google_profile_from_claims
 
@@ -60,6 +61,49 @@ class AuthTest(unittest.TestCase):
             with self.assertRaises(HTTPException, msg=payload) as ctx:
                 validate_email(payload)
             self.assertEqual(ctx.exception.status_code, 422)
+
+    def test_register_rejects_bot_names(self):
+        bots = [
+            "mMFlPCiwwJYwWfsti",
+            "DRSRQoBbtXEYlUBgNEOOgBFY",
+            "QZgliFlBSLlPoAQSkIcXgixZ",
+            "UlYJaxJpfztTPBzxlrJf",
+            "iThQipySquPsQnKoMlUK",
+            "pAEFlvwOZTiGpbbdd",
+            "   ",
+            "...",
+        ]
+        for name in bots:
+            self.assertTrue(name_looks_suspicious(name, "stolen@hotmail.com"), msg=name)
+
+    def test_register_allows_real_names_including_non_latin_scripts(self):
+        real = [
+            "Fikri Firdaus",
+            "Budi Santoso",
+            "Li Wang",
+            "McDonald",
+            "JoAnne",
+            "García",
+            "Müller",
+            "王伟",
+            "أحمد",
+            "محمد علي",
+            "Иван",
+        ]
+        for name in real:
+            self.assertFalse(name_looks_suspicious(name, "real.person@gmail.com"), msg=name)
+
+    def test_google_login_does_not_run_name_check(self):
+        # Google has already verified the human, so the gibberish-name heuristic
+        # must not gate the Google flow even if Google returns an unusual name.
+        with self.SessionLocal() as db:
+            user = UserRepository(db).get_or_create_google_user(
+                name="mMFlPCiwwJYwWfsti",
+                email="real.google.user@gmail.com",
+                email_verified=True,
+            )
+            self.assertEqual(user.name, "mMFlPCiwwJYwWfsti")
+            self.assertIsNotNone(user.email_verified_at)
 
     def test_google_oauth_state_roundtrip_sanitizes_next_path(self):
         state = create_google_oauth_state("/lessons/saying-your-name")

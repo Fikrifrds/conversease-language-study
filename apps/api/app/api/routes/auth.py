@@ -13,7 +13,7 @@ from app.api.deps import get_current_user
 from app.core.config import settings
 from app.core.security import create_access_token
 from app.db.session import get_db
-from app.domain.users import User
+from app.domain.users import User, name_looks_suspicious
 from app.repositories.billing import BillingRepository
 from app.repositories.auth_tokens import (
     EMAIL_VERIFICATION_TOKEN,
@@ -124,6 +124,13 @@ def validate_email(email: str) -> str:
 @router.post("/auth/register", response_model=AuthResponse)
 async def register(payload: RegisterPayload, db: Session = Depends(get_db)) -> AuthResponse:
     email = validate_email(payload.email)
+
+    # Bots register with stolen-email combo lists under random names like
+    # "mMFlPCiwwJYwWfsti". Reject those up front so they never reach the DB,
+    # using the same heuristic the admin user list flags as suspicious.
+    if name_looks_suspicious(payload.name, email):
+        raise HTTPException(status_code=422, detail="Please enter your real name")
+
     repository = UserRepository(db)
 
     if repository.get_by_email(email):

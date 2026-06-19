@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from datetime import datetime
-import re
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Query
@@ -10,7 +9,7 @@ from sqlalchemy.orm import Session
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.db.session import get_db
-from app.domain.users import User
+from app.domain.users import User, name_looks_suspicious
 from app.repositories.users import USER_ROLE_ADMIN, USER_ROLE_STUDENT, UserRepository, normalize_role
 
 
@@ -43,33 +42,7 @@ def isoformat(value: Optional[datetime]) -> Optional[str]:
 
 
 def looks_suspicious_user(user: User) -> bool:
-    name = (user.name or "").strip()
-    email_local_part = user.email.split("@", 1)[0].strip().lower()
-    collapsed = re.sub(r"[^A-Za-z0-9]", "", name)
-    letters = [char for char in collapsed if char.isalpha()]
-    digits = sum(1 for char in collapsed if char.isdigit())
-    uppercase = sum(1 for char in collapsed if char.isupper())
-    vowel_count = sum(1 for char in letters if char.lower() in {"a", "e", "i", "o", "u"})
-
-    if not collapsed:
-        return True
-    if digits >= 3:
-        return True
-    if len(collapsed) >= 12 and " " not in name and collapsed.lower() == email_local_part:
-        return True
-    if len(collapsed) >= 12 and " " not in name and uppercase >= max(6, len(collapsed) // 2):
-        return True
-    if len(letters) >= 8 and vowel_count <= 1:
-        return True
-    # Random camelCase names (e.g. "gnGtDYnbGqUCvugrLa") have many lowercase->
-    # uppercase humps. Real names cap out at one ("McDonald", "JoAnne").
-    if " " not in name and _camelcase_humps(collapsed) >= 3:
-        return True
-    return False
-
-
-def _camelcase_humps(value: str) -> int:
-    return sum(1 for prev, curr in zip(value, value[1:]) if prev.islower() and curr.isupper())
+    return name_looks_suspicious(user.name, user.email)
 
 
 @router.get("/admin/users")
