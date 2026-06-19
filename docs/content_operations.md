@@ -237,7 +237,7 @@ Consistency rules:
 - Jangan membuat grammar sebagai pusat lesson. Grammar hanya alat untuk menyelesaikan conversation.
 - Indonesian support harus jelas, ringkas, dan tidak kaku.
 - Hindari slang kecuali sengaja diajarkan dan cocok level.
-- Default visual adalah object-only. Jika konteks percakapan butuh orang, gunakan kartun soft/faceless yang tidak detail dan cocokkan gender visual dengan speaker/persona lesson. Figur perempuan memakai jilbab lebar/khimar atau abaya sederhana warna gelap/netral, bukan pakaian warna-warni. Figur laki-laki memakai pakaian longgar sopan dengan celana yang jelas di atas mata kaki; hindari isbal. Jangan tampilkan laki-laki dan perempuan duduk berdampingan, berdiri berdekatan, atau kontak fisik; untuk speaker campuran, pilih object-only, single-speaker, atau komposisi yang jelas terpisah. Jangan menambahkan pakaian/kode budaya hanya karena track bahasa; Arabic tidak otomatis perlu peci/songkok. Asset English/Arabic boleh reusable kalau scene, speaker, dan konteks frasanya cocok. Utamakan situasi dunia nyata; gunakan UI/online meeting/chat screen hanya kalau lesson memang tentang interaksi digital.
+- Visual harus conversation-first: terlihat siapa berbicara dengan siapa dan lokasinya di mana. Hindari flashcard, cue card, kartu dekoratif, dan teks yang dibakar ke gambar. Jika konteks percakapan butuh orang, gunakan kartun soft/faceless yang tidak detail dan cocokkan gender visual dengan speaker/persona lesson. Figur perempuan memakai jilbab lebar/khimar atau abaya sederhana warna gelap/netral, bukan pakaian warna-warni. Figur laki-laki memakai pakaian longgar sopan dengan celana yang jelas di atas mata kaki; hindari isbal. Jangan tampilkan laki-laki dan perempuan duduk berdampingan, berdiri berdekatan, atau kontak fisik; untuk speaker campuran, pilih single-speaker, same-gender, atau komposisi yang jelas terpisah. Jangan menambahkan pakaian/kode budaya hanya karena track bahasa; Arabic tidak otomatis perlu peci/songkok. Asset English/Arabic boleh reusable kalau scene, speaker, dan konteks frasanya cocok. Utamakan situasi dunia nyata; gunakan UI/online meeting/chat screen hanya kalau lesson memang tentang interaksi digital.
 - Jangan publish lesson kalau text-ready tetapi roleplay backend/frontend belum bisa menjalankan slug-nya.
 
 ## Persona And Voice Rules
@@ -328,17 +328,20 @@ Use these standards:
 - Keep phrase family consistent across all files.
 - Indonesian explanations must be clear and short.
 - Do not introduce advanced vocabulary unless needed for the conversation.
-- Prefer object-only visuals. If people are needed for the conversation context,
+- Use conversation-first visuals: show who is speaking, who they are speaking
+  to, and where the exchange happens. Avoid flashcards, cue cards, decorative
+  cards, and baked-in text. If people are needed for the conversation context,
   use soft faceless cartoon figures and match visible gender to the lesson
   speaker/persona. Female figures should wear a wide khimar/jilbab or
   abaya-style outfit in dark or neutral colors; avoid bright multicolor
   clothing. Male figures should wear modest loose clothing with trousers
   clearly above the ankles; avoid isbal. Do not show men and women sitting side
-  by side, standing close together, or making physical contact; use object-only,
-  single-speaker, or clearly separated compositions for mixed speaker sets. Do
-  not add culture-specific clothing by language track alone, and reuse
-  English/Arabic assets when scene, speaker profile, and phrase context match.
-  Use online UI only when the lesson is about a digital interaction.
+  by side, standing close together, or making physical contact; use
+  single-speaker, same-gender, or clearly separated compositions for mixed
+  speaker sets. Do not add culture-specific clothing by language track alone,
+  and reuse English/Arabic assets when scene, speaker profile, and phrase
+  context match. Use online UI only when the lesson is about a digital
+  interaction.
 - Dialogue must be realistic and easy to record with TTS.
 - Speaker names must map to persona rules. Reuse existing characters when possible.
 - If adding a new character, state gender, role, and recommended MiniMax voice.

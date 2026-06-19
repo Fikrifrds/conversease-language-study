@@ -26,19 +26,21 @@ and consistent with the existing files for that lesson.**
    For multi-skill "mission"/"review" lessons, connect the scenes with a natural
    transition line and/or a pause.
 5. **Indonesian support is clear and concise**, never stiff.
-6. **Conservative visual policy.** Prefer object-only visuals. If a real-world
-   conversation needs people, use soft cartoon/faceless figures only and match
-   the visible gender to the lesson speaker/persona. Female figures should wear
-   a wide khimar/jilbab or abaya-style outfit in dark or neutral colors, not
-   bright multicolor clothing. Male figures should wear modest loose clothing
-   with trousers clearly above the ankles; avoid isbal. Do not show men and
-   women sitting side by side, standing close together, or making physical
-   contact; use object-only, single-speaker, or clearly separated compositions
-   for mixed speaker sets. Do not add culture-specific clothing by track alone:
-   Arabic visuals do not automatically need peci/songkok. Reuse English/Arabic
-   assets when the scene, speaker profile, and phrase context match. Do not use
-   online-meeting or chat-screen imagery unless the lesson is explicitly about a
-   digital interaction.
+6. **Conversation-first visual policy.** Visuals should represent the lesson
+   dialogue: who is speaking, who they are speaking to, and where the exchange
+   happens. Avoid flashcards, cue cards, decorative cards, and baked-in text.
+   Use soft cartoon/faceless figures only and match the visible gender to the
+   lesson speaker/persona. Female figures should wear a wide khimar/jilbab or
+   abaya-style outfit in dark or neutral colors, not bright multicolor clothing.
+   Male figures should wear modest loose clothing with trousers clearly above
+   the ankles; avoid isbal. Do not show men and women sitting side by side,
+   standing close together, or making physical contact; use single-speaker,
+   same-gender, or clearly separated compositions for mixed speaker sets. Do
+   not add culture-specific clothing by track alone: Arabic visuals do not
+   automatically need peci/songkok. Reuse English/Arabic assets when the scene,
+   speaker profile, and phrase context match. Do not use online-meeting or
+   chat-screen imagery unless the lesson is explicitly about a digital
+   interaction.
 7. **Never publish** a lesson whose roleplay slug the backend/frontend can't run.
 
 ## 2. Files a lesson needs

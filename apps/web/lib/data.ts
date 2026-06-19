@@ -142,11 +142,11 @@ export const lessonCatalog = [
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, good morning.\nMy name is Alya.\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which sentence closes the conversation?\n\nAnswer: See you later.",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A goodbye.\n\nExample:\n\n```txt\nGood morning.\nMy name is Arif.\nSee you later.\n```",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap menyapa di kelas Indonesia.", caption: "Mulai percakapan sederhana di kelas nyata." },
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Alya dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Mulai percakapan sederhana di kelas nyata dengan lawan bicara dan lokasi yang jelas." },
         cards: [
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png", width: 1254, height: 1254, alt: "Meja kelas pagi di Indonesia dengan teh, tanaman, dan buku catatan.", label: "Good morning" },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-how-are-you.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap bertanya kabar di pintu kelas.", label: "How are you?" },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-see-you-later.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap berpamitan di pintu kelas.", label: "See you later" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png", width: 1254, height: 1254, alt: "Alya faceless berjilbab lebar gelap masuk kelas Indonesia dan memberi salam pagi.", label: "Good morning" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-how-are-you.png", width: 1254, height: 1254, alt: "Ben faceless bertanya kabar dari depan kelas dengan celana di atas mata kaki.", label: "How are you?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-see-you-later.png", width: 1254, height: 1254, alt: "Alya faceless berjilbab lebar gelap berpamitan di pintu kelas Indonesia.", label: "See you later" },
         ]
       },
       sections: lessonSections
@@ -13197,11 +13197,11 @@ export const lessonCatalog = [
       readingSupport: "# Bantuan Membaca\n\nBaca pertukaran singkat ini:\n\n```txt\nمرحبًا.\nأهلًا وسهلًا.\nأنا بخير، شكرًا.\n```\n\nPertanyaan: Baris mana yang bisa menjawab sapaan?\n\nJawaban: أهلًا وسهلًا.",
       writingSupport: "# Bantuan Menulis\n\nTulis tiga baris pendek:\n\n1. Sapaan.\n2. Jawaban sapaan.\n3. Jawaban kabar sederhana.\n\nContoh:\n\n```txt\nمرحبًا.\nأهلًا وسهلًا.\nأنا بخير، شكرًا.\n```",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap untuk latihan sapaan formal.", caption: "Latihan sapaan formal di kelas nyata dengan adab belajar yang sopan." },
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Muallim dan Fatimah faceless berlatih sapaan formal dari jarak sopan di kelas Indonesia.", caption: "Latihan sapaan formal di kelas nyata dengan lawan bicara dan adab visual yang jelas." },
         cards: [
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-marhaban.png", width: 1254, height: 1254, alt: "Meja kelas Indonesia dengan buku kosong dan pintu kelas terbuka.", label: "مرحبًا" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-kayfa-haluk.png", width: 1254, height: 1254, alt: "Dua kursi kelas kosong menghadap papan tulis kosong.", label: "كيف حالك؟" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-ana-bikhayr.png", width: 1254, height: 1254, alt: "Meja belajar dengan buku kosong, pensil, tanaman, dan tanda centang.", label: "أنا بخير، شكرًا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-marhaban.png", width: 1254, height: 1254, alt: "Fatimah faceless berjilbab lebar gelap masuk kelas dan memberi sapaan formal.", label: "مرحبًا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-kayfa-haluk.png", width: 1254, height: 1254, alt: "Muallim faceless bertanya kabar di depan papan tulis kosong tanpa peci.", label: "كيف حالك؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-ana-bikhayr.png", width: 1254, height: 1254, alt: "Fatimah faceless berjilbab lebar gelap menjawab dengan sopan di meja kelas.", label: "أنا بخير، شكرًا" },
         ]
       },
       sections: lessonSections
