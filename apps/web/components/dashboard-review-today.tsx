@@ -3,8 +3,16 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
-import { getLearningProgress, type LearningLessonSummary } from "@/lib/learning-api";
-import { buildReviewItems, selectReviewLessonSlugs } from "@/lib/review-utils";
+import {
+  getLearningProgress,
+  getReviewContent,
+  type LearningLessonSummary
+} from "@/lib/learning-api";
+import {
+  buildReviewItems,
+  selectReviewLessonSlugs,
+  type ReviewContentMap
+} from "@/lib/review-utils";
 
 function dateKeyForToday() {
   return new Date().toISOString().slice(0, 10);
@@ -45,6 +53,7 @@ function saveCachedReview(dateKey: string, state: ReviewState) {
 export function DashboardReviewToday() {
   const [lessons, setLessons] = useState<LearningLessonSummary[] | null>(null);
   const [reviewSlugs, setReviewSlugs] = useState<string[]>([]);
+  const [content, setContent] = useState<ReviewContentMap>({});
 
   const todayKey = useMemo(() => dateKeyForToday(), []);
 
@@ -82,7 +91,32 @@ export function DashboardReviewToday() {
     };
   }, [todayKey]);
 
-  const items = useMemo(() => buildReviewItems(reviewSlugs, todayKey), [reviewSlugs, todayKey]);
+  useEffect(() => {
+    let ignore = false;
+    if (!reviewSlugs.length) {
+      setContent({});
+      return;
+    }
+    getReviewContent(reviewSlugs)
+      .then((map) => {
+        if (!ignore) {
+          setContent(map);
+        }
+      })
+      .catch(() => {
+        if (!ignore) {
+          setContent({});
+        }
+      });
+    return () => {
+      ignore = true;
+    };
+  }, [reviewSlugs]);
+
+  const items = useMemo(
+    () => buildReviewItems(reviewSlugs, todayKey, content),
+    [reviewSlugs, todayKey, content]
+  );
   const empty = lessons !== null && items.length === 0;
 
   return (

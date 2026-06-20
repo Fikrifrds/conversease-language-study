@@ -1,5 +1,46 @@
 import { getAuthToken } from "@/lib/auth-api";
 
+type LessonVisual = {
+  src: string;
+  width: number;
+  height: number;
+  alt: string;
+  label: string;
+  caption: string;
+};
+
+// The full, Pro-gated lesson body returned by GET /lessons/{slug}/full. The API
+// builds it from the same curriculum source as the static catalog (see
+// app/services/lesson_content.py), so this mirrors that builder's output. It is
+// defined here rather than derived from the static catalog, since the catalog
+// intentionally omits these gated fields so they never ship in the bundle.
+export type LessonContent = {
+  slug: string;
+  language: string;
+  languageCode: string;
+  languageLabel: string;
+  courseSlug: string;
+  level: string;
+  title: string;
+  unit: string;
+  conversationGoal: string;
+  conversationGoalDetails: string;
+  setup: string;
+  dialogue: { speaker: string; text: string }[];
+  translation: string[];
+  phrases: { phrase: string; meaning: string; usage: string }[];
+  vocabulary: { word: string; meaning: string; usage: string }[];
+  grammar: string;
+  grammarNotes: string;
+  patterns: string[];
+  pronunciationDrill: string;
+  prompts: string[];
+  quiz: { question: string; answer: string }[];
+  readingSupport: string;
+  writingSupport: string;
+  visuals: { hero: LessonVisual; cards: LessonVisual[] } | null;
+};
+
 export type OnboardingProfile = {
   primaryGoal: string;
   confidenceLevel: string;
@@ -786,6 +827,43 @@ export async function getLessonAudio(lessonSlug: string): Promise<LearningLesson
     `/lessons/${lessonSlug}/audio`
   );
   return response.data ? mapLessonAudioAsset(response.data) : null;
+}
+
+/**
+ * Fetch the full, Pro-gated lesson body. Throws ApiRequestError(403) for free
+ * users (the server withholds the content), which the paywall gate uses to
+ * decide whether to show the locked overlay.
+ */
+export async function getLessonFull(lessonSlug: string): Promise<LessonContent> {
+  const response = await requestJson<ApiResponse<LessonContent>>(`/lessons/${lessonSlug}/full`);
+  return response.data;
+}
+
+// Review-only slice of a lesson, served by the Pro-gated review-content
+// endpoint so this content is never bundled into the browser.
+export type ReviewLessonContent = Pick<
+  LessonContent,
+  "dialogue" | "translation" | "phrases" | "patterns" | "prompts" | "writingSupport"
+>;
+
+/**
+ * Fetch the review-only fields for the given lesson slugs. Returns a slug-keyed
+ * map; free users get an empty map (the server withholds the content).
+ */
+export async function getReviewContent(
+  slugs: string[]
+): Promise<Record<string, ReviewLessonContent>> {
+  if (!slugs.length) {
+    return {};
+  }
+  const response = await requestJson<ApiResponse<Record<string, ReviewLessonContent>>>(
+    "/lessons/review-content",
+    {
+      method: "POST",
+      body: JSON.stringify({ slugs })
+    }
+  );
+  return response.data;
 }
 
 export async function startLessonProgress(lessonSlug: string): Promise<LessonProgress> {

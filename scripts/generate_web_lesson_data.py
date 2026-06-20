@@ -24,11 +24,14 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 API_ROOT = REPO_ROOT / "apps" / "api"
 DATA_TS = REPO_ROOT / "apps" / "web" / "lib" / "data.ts"
 
-# Reuse the curriculum loader and dialogue parser from the API package.
+# Reuse the curriculum loader from the API package, plus the shared lesson
+# content builder so data.ts and the runtime Pro-gated endpoint never drift.
 sys.path.insert(0, str(API_ROOT))
-from app.data.curriculum import all_authored_courses, read_yaml  # noqa: E402
-from app.services.audio_generation import (  # noqa: E402
-    listening_script_to_dialogue_turns,
+from app.data.curriculum import all_authored_courses  # noqa: E402
+from app.services.lesson_content import (  # noqa: E402
+    LessonContentError as GeneratorError,
+    build_lesson,
+    language_label,
 )
 
 BEGIN_MARKER = "  // <generated:lessons>"
@@ -43,145 +46,6 @@ COACH_TURNS_END_MARKER = "  // </generated:coach_turns>"
 COACH_SCENARIOS_BEGIN_MARKER = "  // <generated:coach_scenarios>"
 COACH_SCENARIOS_END_MARKER = "  // </generated:coach_scenarios>"
 
-# Audio-only markers that must be stripped from displayed dialogue text.
-AUDIO_TAG_RE = re.compile(r"\((?:[a-z][a-z-]*)\)|<#\d+(?:\.\d+)?#>")
-
-
-class GeneratorError(Exception):
-    pass
-
-
-def strip_audio_tags(text: str) -> str:
-    cleaned = AUDIO_TAG_RE.sub("", text)
-    return re.sub(r"\s{2,}", " ", cleaned).strip()
-
-
-def lesson_dir_for(lesson: dict[str, Any]) -> Path:
-    # content_files paths point inside the lesson directory.
-    return Path(lesson["content_files"]["lesson"]).parent
-
-
-def read_markdown(path: Path) -> str:
-    if not path.exists():
-        raise GeneratorError(f"Missing markdown file: {path}")
-    return path.read_text(encoding="utf-8").strip()
-
-
-def extract_patterns(grammar_notes_markdown: str) -> list[str]:
-    match = re.search(r"```(?:txt)?\n([\s\S]*?)\n```", grammar_notes_markdown)
-    if match:
-        return [line.strip() for line in match.group(1).splitlines() if line.strip()][:12]
-
-    fallback = re.search(r"^Pattern(?:s)?:\s*$([\s\S]*?)(?:\n\s*\n|^##\s+)", grammar_notes_markdown, re.MULTILINE)
-    if fallback:
-        raw = fallback.group(1)
-        lines = []
-        for line in raw.splitlines():
-            cleaned = line.strip().lstrip("-").strip()
-            if cleaned:
-                lines.append(cleaned)
-        return lines[:12]
-
-    return []
-
-
-def parse_translations(path: Path) -> list[str]:
-    """Return the Indonesian side of transcript_translation.md, in order.
-
-    Supports both formats present in the repo:
-      - `- **Speaker:** English -> Indonesian`
-      - `| English | Indonesian |` table rows (skips header/separator).
-    """
-    lines = path.read_text(encoding="utf-8").splitlines()
-    out: list[str] = []
-    for raw in lines:
-        line = raw.strip()
-        if line.startswith("- ") and "->" in line:
-            out.append(line.split("->", 1)[1].strip())
-        elif line.startswith("|") and line.count("|") >= 3:
-            cells = [c.strip() for c in line.strip("|").split("|")]
-            if len(cells) < 2:
-                continue
-            english = cells[0].lower()
-            # skip header row and markdown separator row
-            if english in {"english", "english phrase"} or set(cells[0]) <= {"-", " ", ":"}:
-                continue
-            out.append(cells[1])
-    return out
-
-
-def parse_vocabulary(path: Path) -> list[dict[str, str]]:
-    if not path.exists():
-        return []
-
-    vocabulary_yaml = read_yaml(path)
-    return [
-        {
-            "word": str(item.get("word") or ""),
-            "meaning": str(item.get("meaning_id") or item.get("meaning") or ""),
-            "usage": str(item.get("usage_note") or item.get("usage") or ""),
-        }
-        for item in vocabulary_yaml.get("vocabulary", [])
-        if item.get("word")
-    ]
-
-
-def parse_visuals(path: Path) -> dict[str, Any] | None:
-    if not path.exists():
-        return None
-
-    visuals = read_yaml(path)
-    hero = visuals.get("hero")
-    cards = visuals.get("cards")
-    if not isinstance(hero, dict):
-        raise GeneratorError(f"{path}: visuals.hero must be a mapping")
-    if not isinstance(cards, list) or len(cards) != 3:
-        raise GeneratorError(f"{path}: visuals.cards must contain exactly 3 items")
-
-    def clean_item(item: Any, label: str) -> dict[str, str]:
-        if not isinstance(item, dict):
-            raise GeneratorError(f"{path}: {label} must be a mapping")
-        src = str(item.get("src") or "").strip()
-        alt = str(item.get("alt") or "").strip()
-        if not src.startswith("/images/"):
-            raise GeneratorError(f"{path}: {label}.src must start with /images/")
-        if not alt:
-            raise GeneratorError(f"{path}: {label}.alt is required")
-        width = int(item.get("width") or 0)
-        height = int(item.get("height") or 0)
-        if width < 1 or height < 1:
-            raise GeneratorError(f"{path}: {label}.width and {label}.height are required")
-
-        asset_path = REPO_ROOT / "apps" / "web" / "public" / src.removeprefix("/")
-        if not asset_path.exists():
-            raise GeneratorError(f"{path}: visual asset does not exist: {asset_path}")
-
-        return {
-            "src": src,
-            "width": width,
-            "height": height,
-            "alt": alt,
-            "label": str(item.get("label") or "").strip(),
-            "caption": str(item.get("caption") or "").strip(),
-        }
-
-    return {
-        "hero": clean_item(hero, "hero"),
-        "cards": [clean_item(card, f"cards[{index}]") for index, card in enumerate(cards)],
-    }
-
-
-def extract_situation(lesson_md: Path) -> str:
-    text = lesson_md.read_text(encoding="utf-8")
-    # Header is "## Situation" or "## Situation Setup".
-    match = re.search(r"^##\s+Situation(?:\s+Setup)?\s*$", text, re.MULTILINE)
-    if not match:
-        raise GeneratorError(f"No Situation section in {lesson_md}")
-    rest = text[match.end():]
-    body = rest.split("\n##", 1)[0]
-    paragraph = next((p.strip() for p in body.split("\n\n") if p.strip()), "")
-    return paragraph.replace("\n", " ").strip()
-
 
 def extract_level_outcome(level_spec: Path) -> str:
     if not level_spec.exists():
@@ -194,101 +58,6 @@ def extract_level_outcome(level_spec: Path) -> str:
     body = rest.split("\n##", 1)[0]
     paragraph = next((p.strip() for p in body.split("\n\n") if p.strip()), "")
     return paragraph.replace("\n", " ").strip()
-
-
-def language_label(language: str) -> str:
-    labels = {
-        "english": "English",
-        "arabic": "Arabic",
-    }
-    return labels.get(language, language.replace("-", " ").title())
-
-
-def build_lesson(course: dict[str, Any], unit_title: str, lesson: dict[str, Any]) -> dict[str, Any]:
-    lesson_dir = lesson_dir_for(lesson)
-    slug = lesson["slug"]
-
-    conversation_goal_details = read_markdown(lesson_dir / "conversation_goal.md")
-    grammar_notes = read_markdown(lesson_dir / "grammar_for_conversation.md")
-    pronunciation_drill = read_markdown(lesson_dir / "pronunciation_drill.md")
-    reading_support = read_markdown(lesson_dir / "reading_support.md")
-    writing_support = read_markdown(lesson_dir / "writing_support.md")
-    patterns = extract_patterns(grammar_notes)
-
-    turns = listening_script_to_dialogue_turns(lesson_dir / "listening_script.md")
-    dialogue = [
-        {"speaker": t.speaker, "text": strip_audio_tags(t.text)} for t in turns
-    ]
-    translation = parse_translations(lesson_dir / "transcript_translation.md")
-
-    if len(dialogue) != len(translation):
-        raise GeneratorError(
-            f"{slug}: dialogue has {len(dialogue)} lines but transcript_translation "
-            f"has {len(translation)}. Re-sync listening_script.md and "
-            f"transcript_translation.md so they line up 1:1."
-        )
-
-    phrases_yaml = read_yaml(lesson_dir / "useful_phrases.yaml")
-    phrases = [
-        {
-            "phrase": p["phrase"],
-            "meaning": p["meaning_id"],
-            "usage": p["usage_note"],
-        }
-        for p in phrases_yaml.get("phrases", [])
-    ]
-    vocabulary = parse_vocabulary(lesson_dir / "vocabulary.yaml")
-
-    # Two authoring formats exist across the curriculum; accept both.
-    prompts_yaml = read_yaml(lesson_dir / "response_prompts.yaml")
-    prompts = [
-        p.get("prompt") or p.get("prompt_en")
-        for p in prompts_yaml.get("prompts", [])
-    ]
-
-    quiz_yaml = read_yaml(lesson_dir / "quiz.yaml")
-    quiz = [
-        {
-            "question": q["prompt"],
-            "answer": q.get("answer") or q.get("correct_answer"),
-        }
-        for q in quiz_yaml.get("questions", [])
-    ]
-
-    lesson_yaml = read_yaml(lesson_dir / "lesson.yaml")
-    grammar = lesson_yaml.get("grammar_summary")
-    if not grammar:
-        raise GeneratorError(
-            f"{slug}: lesson.yaml is missing grammar_summary (the 1-line text shown "
-            f"in the 'Grammar for Conversation' box on the lesson page)."
-        )
-
-    return {
-        "slug": slug,
-        "language": course.get("language") or "english",
-        "languageCode": course.get("language_code") or "",
-        "languageLabel": language_label(str(course.get("language") or "english")),
-        "courseSlug": course.get("course_slug") or "",
-        "level": course.get("level_code") or "",
-        "title": lesson["title"],
-        "unit": unit_title,
-        "conversationGoal": lesson["conversation_goal"],
-        "conversationGoalDetails": conversation_goal_details,
-        "setup": extract_situation(lesson_dir / "lesson.md"),
-        "dialogue": dialogue,
-        "translation": translation,
-        "phrases": phrases,
-        "vocabulary": vocabulary,
-        "grammar": grammar,
-        "grammarNotes": grammar_notes,
-        "patterns": patterns,
-        "pronunciationDrill": pronunciation_drill,
-        "prompts": prompts,
-        "quiz": quiz,
-        "readingSupport": reading_support,
-        "writingSupport": writing_support,
-        "visuals": parse_visuals(lesson_dir / "visuals.yaml"),
-    }
 
 
 def collect_lessons() -> list[dict[str, Any]]:
@@ -384,80 +153,30 @@ def js_string(value: str) -> str:
 
 
 def render_lessons(lessons: list[dict[str, Any]]) -> str:
+    # Only the lesson PREVIEW (the part free users may see) is emitted into the
+    # client bundle. The gated body (dialogue, phrases, vocabulary, grammar,
+    # pronunciation, prompts, quiz, reading/writing, visual cards) is served at
+    # runtime by the Pro-gated /lessons/{slug}/full endpoint and never bundled,
+    # so it cannot be extracted from the browser by a free user.
     blocks: list[str] = []
     for lesson in lessons:
         lines = ["    {"]
         lines.append(f"      slug: {js_string(lesson['slug'])},")
         lines.append(f"      language: {js_string(lesson['language'])},")
-        lines.append(f"      languageCode: {js_string(lesson['languageCode'])},")
         lines.append(f"      languageLabel: {js_string(lesson['languageLabel'])},")
-        lines.append(f"      courseSlug: {js_string(lesson['courseSlug'])},")
-        lines.append(f"      level: {js_string(lesson['level'])},")
         lines.append(f"      title: {js_string(lesson['title'])},")
         lines.append(f"      unit: {js_string(lesson['unit'])},")
         lines.append(f"      conversationGoal: {js_string(lesson['conversationGoal'])},")
         lines.append(f"      conversationGoalDetails: {js_string(lesson['conversationGoalDetails'])},")
         lines.append(f"      setup: {js_string(lesson['setup'])},")
-        lines.append("      dialogue: [")
-        for d in lesson["dialogue"]:
-            lines.append(
-                f"        {{ speaker: {js_string(d['speaker'])}, text: {js_string(d['text'])} }},"
-            )
-        lines.append("      ],")
-        lines.append("      translation: [")
-        for t in lesson["translation"]:
-            lines.append(f"        {js_string(t)},")
-        lines.append("      ],")
-        lines.append("      phrases: [")
-        for p in lesson["phrases"]:
-            lines.append(
-                f"        {{ phrase: {js_string(p['phrase'])}, meaning: {js_string(p['meaning'])}, "
-                f"usage: {js_string(p['usage'])} }},"
-            )
-        lines.append("      ],")
-        lines.append("      vocabulary: [")
-        for v in lesson["vocabulary"]:
-            lines.append(
-                f"        {{ word: {js_string(v['word'])}, meaning: {js_string(v['meaning'])}, "
-                f"usage: {js_string(v['usage'])} }},"
-            )
-        lines.append("      ],")
-        lines.append(f"      grammar: {js_string(lesson['grammar'])},")
-        lines.append(f"      grammarNotes: {js_string(lesson['grammarNotes'])},")
-        lines.append("      patterns: [")
-        for pattern in lesson["patterns"]:
-            lines.append(f"        {js_string(pattern)},")
-        lines.append("      ],")
-        lines.append(f"      pronunciationDrill: {js_string(lesson['pronunciationDrill'])},")
-        lines.append("      prompts: [")
-        for prompt in lesson["prompts"]:
-            lines.append(f"        {js_string(prompt)},")
-        lines.append("      ],")
-        lines.append("      quiz: [")
-        for q in lesson["quiz"]:
-            lines.append(
-                f"        {{ question: {js_string(q['question'])}, answer: {js_string(q['answer'])} }},"
-            )
-        lines.append("      ],")
-        lines.append(f"      readingSupport: {js_string(lesson['readingSupport'])},")
-        lines.append(f"      writingSupport: {js_string(lesson['writingSupport'])},")
         if lesson.get("visuals"):
-            visuals = lesson["visuals"]
-            hero = visuals["hero"]
+            hero = lesson["visuals"]["hero"]
             lines.append("      visuals: {")
             lines.append(
                 f"        hero: {{ src: {js_string(hero['src'])}, width: {int(hero['width'])}, "
                 f"height: {int(hero['height'])}, alt: {js_string(hero['alt'])}, "
-                f"caption: {js_string(hero['caption'])} }},"
+                f"caption: {js_string(hero['caption'])} }}"
             )
-            lines.append("        cards: [")
-            for card in visuals["cards"]:
-                lines.append(
-                    f"          {{ src: {js_string(card['src'])}, width: {int(card['width'])}, "
-                    f"height: {int(card['height'])}, alt: {js_string(card['alt'])}, "
-                    f"label: {js_string(card['label'])} }},"
-                )
-            lines.append("        ]")
             lines.append("      },")
         lines.append("      sections: lessonSections")
         lines.append("    }")

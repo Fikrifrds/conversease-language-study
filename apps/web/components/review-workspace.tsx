@@ -3,8 +3,17 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { BookOpen, Sparkles } from "lucide-react";
-import { getLearningProgress, type LearningLessonSummary } from "@/lib/learning-api";
-import { buildReviewItems, collectPatternBank, selectReviewLessonSlugs } from "@/lib/review-utils";
+import {
+  getLearningProgress,
+  getReviewContent,
+  type LearningLessonSummary
+} from "@/lib/learning-api";
+import {
+  buildReviewItems,
+  collectPatternBank,
+  selectReviewLessonSlugs,
+  type ReviewContentMap
+} from "@/lib/review-utils";
 import { PatternDrill } from "@/components/pattern-drill";
 import { ReviewMiniCheck } from "@/components/review-mini-check";
 
@@ -47,6 +56,7 @@ function saveCachedReview(dateKey: string, state: ReviewState) {
 export function ReviewWorkspace() {
   const [lessons, setLessons] = useState<LearningLessonSummary[] | null>(null);
   const [reviewSlugs, setReviewSlugs] = useState<string[]>([]);
+  const [content, setContent] = useState<ReviewContentMap>({});
 
   const todayKey = useMemo(() => dateKeyForToday(), []);
 
@@ -84,13 +94,49 @@ export function ReviewWorkspace() {
     };
   }, [todayKey]);
 
-  const items = useMemo(() => buildReviewItems(reviewSlugs, todayKey), [reviewSlugs, todayKey]);
-
   const completedSlugs = useMemo(
     () => (lessons ?? []).filter((lesson) => lesson.progressStatus === "completed").map((lesson) => lesson.slug),
     [lessons]
   );
-  const patternBank = useMemo(() => collectPatternBank(completedSlugs, 30), [completedSlugs]);
+
+  // The gated review fields come from the Pro-gated API, not the bundle. Fetch
+  // them for every slug the page renders (today's review set + completed
+  // lessons used by the Pattern Bank). Free users receive an empty map.
+  const neededSlugs = useMemo(
+    () => Array.from(new Set([...reviewSlugs, ...completedSlugs])),
+    [reviewSlugs, completedSlugs]
+  );
+
+  useEffect(() => {
+    let ignore = false;
+    if (!neededSlugs.length) {
+      setContent({});
+      return;
+    }
+    getReviewContent(neededSlugs)
+      .then((map) => {
+        if (!ignore) {
+          setContent(map);
+        }
+      })
+      .catch(() => {
+        if (!ignore) {
+          setContent({});
+        }
+      });
+    return () => {
+      ignore = true;
+    };
+  }, [neededSlugs]);
+
+  const items = useMemo(
+    () => buildReviewItems(reviewSlugs, todayKey, content),
+    [reviewSlugs, todayKey, content]
+  );
+  const patternBank = useMemo(
+    () => collectPatternBank(completedSlugs, 30, content),
+    [completedSlugs, content]
+  );
 
   if (lessons === null) {
     return <p className="mt-8 text-sm leading-6 text-ink/60">Menyiapkan review…</p>;
@@ -99,7 +145,7 @@ export function ReviewWorkspace() {
   return (
     <div className="mt-8 grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
       <div className="space-y-5">
-        <ReviewMiniCheck items={items} seedKey={todayKey} />
+        <ReviewMiniCheck items={items} seedKey={todayKey} content={content} />
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <div className="flex items-center gap-2">
           <Sparkles className="h-5 w-5 text-leaf" aria-hidden="true" />

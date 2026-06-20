@@ -1,5 +1,5 @@
 import { lessonsBySlug } from "@/lib/data";
-import type { LearningLessonSummary } from "@/lib/learning-api";
+import type { LearningLessonSummary, ReviewLessonContent } from "@/lib/learning-api";
 
 export type ReviewItem = {
   lessonSlug: string;
@@ -8,6 +8,10 @@ export type ReviewItem = {
   phrase: string;
   pattern: string | null;
 };
+
+// Gated review content (phrases, patterns, dialogue, ...) is fetched from the
+// Pro-gated API rather than bundled, so the helpers below take a slug-keyed map.
+export type ReviewContentMap = Record<string, ReviewLessonContent>;
 
 function stableIndex(seed: string, size: number) {
   if (size <= 0) {
@@ -79,35 +83,44 @@ export function selectReviewLessonSlugs(lessons: LearningLessonSummary[], dateKe
   return selected.slice(0, count).filter(Boolean);
 }
 
-export function buildReviewItems(slugs: string[], dateKey: string): ReviewItem[] {
+export function buildReviewItems(
+  slugs: string[],
+  dateKey: string,
+  content: ReviewContentMap
+): ReviewItem[] {
   return slugs
-    .map((slug) => lessonsBySlug[slug])
-    .filter(Boolean)
-    .map((lesson) => {
-      const phraseIndex = stableIndex(`${dateKey}:${lesson.slug}:phrase`, lesson.phrases.length);
-      const patternIndex = stableIndex(`${dateKey}:${lesson.slug}:pattern`, lesson.patterns.length || 1);
-      const phrase = lesson.phrases[phraseIndex]?.phrase || lesson.dialogue[0]?.text || lesson.title;
-      const pattern = lesson.patterns.length ? lesson.patterns[patternIndex] : null;
+    .map((slug) => ({ slug, meta: lessonsBySlug[slug], body: content[slug] }))
+    .filter((entry) => entry.meta && entry.body)
+    .map(({ slug, meta, body }) => {
+      const phraseIndex = stableIndex(`${dateKey}:${slug}:phrase`, body.phrases.length);
+      const patternIndex = stableIndex(`${dateKey}:${slug}:pattern`, body.patterns.length || 1);
+      const phrase = body.phrases[phraseIndex]?.phrase || body.dialogue[0]?.text || meta.title;
+      const pattern = body.patterns.length ? body.patterns[patternIndex] : null;
 
       return {
-        lessonSlug: lesson.slug,
-        lessonTitle: lesson.title,
-        unitTitle: lesson.unit,
+        lessonSlug: slug,
+        lessonTitle: meta.title,
+        unitTitle: meta.unit,
         phrase,
         pattern
       };
     });
 }
 
-export function collectPatternBank(lessonSlugs: string[], limit: number) {
+export function collectPatternBank(
+  lessonSlugs: string[],
+  limit: number,
+  content: ReviewContentMap
+) {
   const entries: { pattern: string; lessonSlug: string; lessonTitle: string; unitTitle: string }[] = [];
   for (const slug of lessonSlugs) {
-    const lesson = lessonsBySlug[slug];
-    if (!lesson) {
+    const meta = lessonsBySlug[slug];
+    const body = content[slug];
+    if (!meta || !body) {
       continue;
     }
-    for (const pattern of lesson.patterns) {
-      entries.push({ pattern, lessonSlug: slug, lessonTitle: lesson.title, unitTitle: lesson.unit });
+    for (const pattern of body.patterns) {
+      entries.push({ pattern, lessonSlug: slug, lessonTitle: meta.title, unitTitle: meta.unit });
     }
   }
 

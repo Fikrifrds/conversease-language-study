@@ -20,6 +20,7 @@ from app.data.curriculum import (
     public_lesson_payload,
 )
 from app.repositories.billing import BillingRepository
+from app.services.lesson_content import build_lesson_body_or_none
 from app.db.models import LessonProgressModel, UserOnboardingProfileModel
 from app.db.session import get_db
 from app.domain.users import User
@@ -54,6 +55,10 @@ class OnboardingResponse(BaseModel):
 
 class LessonProgressPayload(BaseModel):
     completed_sections: Optional[list[str]] = None
+
+
+class ReviewContentPayload(BaseModel):
+    slugs: list[str] = Field(default_factory=list, max_length=200)
 
 
 class LevelTestSubmitPayload(BaseModel):
@@ -209,6 +214,70 @@ async def get_lesson(slug: str) -> dict:
             "level_code": lesson.get("level_code", ""),
         }
     }
+
+
+@router.get("/lessons/{slug}/full")
+async def get_lesson_full(
+    slug: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    """Full, render-ready lesson body, gated behind a Pro subscription.
+
+    The paywalled sections (dialogue, phrases, vocabulary, roleplay prompts,
+    quiz, reading/writing support, etc.) are served only to Pro or admin users.
+    Free users get a 403 and never receive the content, so the paywall is
+    enforced server-side rather than only hidden in the browser.
+    """
+    lesson = get_lesson_or_none(slug)
+    if lesson is None:
+        raise HTTPException(status_code=404, detail="Lesson not found")
+
+    if not current_user.is_admin and not BillingRepository(db).is_pro(current_user.id):
+        raise HTTPException(status_code=403, detail="lesson_requires_pro")
+
+    body = build_lesson_body_or_none(slug)
+    if body is None:
+        raise HTTPException(status_code=404, detail="Lesson not found")
+
+    return {"data": body}
+
+
+# Fields the Review feature needs client-side. Kept narrow so only what Review
+# renders is exposed, and gated like the full lesson body.
+_REVIEW_CONTENT_FIELDS = (
+    "dialogue",
+    "translation",
+    "phrases",
+    "patterns",
+    "prompts",
+    "writingSupport",
+)
+
+
+@router.post("/lessons/review-content")
+async def get_review_content(
+    payload: ReviewContentPayload,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    """Review-only lesson fields for the given slugs, gated behind Pro.
+
+    Returns a slug -> {fields} map so the Review feature can render its prompts
+    without bundling lesson content into the browser. Free users (non-Pro,
+    non-admin) get an empty map, so no content leaves the server for them.
+    """
+    if not current_user.is_admin and not BillingRepository(db).is_pro(current_user.id):
+        return {"data": {}}
+
+    content: dict[str, dict] = {}
+    for slug in dict.fromkeys(payload.slugs):
+        body = build_lesson_body_or_none(slug)
+        if body is None:
+            continue
+        content[slug] = {field: body[field] for field in _REVIEW_CONTENT_FIELDS}
+
+    return {"data": content}
 
 
 @router.get("/lessons/{slug}/audio")

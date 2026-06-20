@@ -314,6 +314,81 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
+    def test_full_lesson_body_is_gated_behind_pro(self):
+        engine = create_engine(
+            "sqlite:///:memory:",
+            connect_args={"check_same_thread": False},
+            poolclass=StaticPool,
+        )
+        Base.metadata.create_all(engine)
+        session_local = sessionmaker(bind=engine, expire_on_commit=False)
+
+        def override_db():
+            db = session_local()
+            try:
+                yield db
+            finally:
+                db.close()
+
+        app = create_app()
+        app.dependency_overrides[get_db] = override_db
+        client = TestClient(app)
+        headers = {"Authorization": f"Bearer {create_access_token('user-123')}"}
+        # Every lesson (even free A1) is preview-only for free users, so the
+        # full body must be withheld until they upgrade.
+        slug = "saying-hello-and-goodbye"
+        try:
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserModel(
+                        id="user-123",
+                        name="QA",
+                        email="qa-full@example.local",
+                        password_hash="hashed",
+                        email_verified_at=now,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+
+            # Unauthenticated and free users never receive the content.
+            self.assertEqual(client.get(f"/api/lessons/{slug}/full").status_code, 401)
+            blocked = client.get(f"/api/lessons/{slug}/full", headers=headers)
+            self.assertEqual(blocked.status_code, 403)
+            self.assertEqual(blocked.json()["detail"], "lesson_requires_pro")
+
+            # Upgrade to Pro -> full body is returned with the render-ready shape.
+            with session_local() as db:
+                now = datetime.utcnow()
+                db.add(
+                    models.UserSubscriptionModel(
+                        id="sub-1",
+                        user_id="user-123",
+                        plan_key="pro_1_month",
+                        status="active",
+                        starts_at=now,
+                        expires_at=None,
+                        created_at=now,
+                        updated_at=now,
+                    )
+                )
+                db.commit()
+            allowed = client.get(f"/api/lessons/{slug}/full", headers=headers)
+            self.assertEqual(allowed.status_code, 200)
+            body = allowed.json()["data"]
+            self.assertEqual(body["slug"], slug)
+            self.assertTrue(body["dialogue"])
+            self.assertEqual(len(body["dialogue"]), len(body["translation"]))
+            self.assertTrue(body["quiz"])
+
+            # Missing lessons 404 even for Pro users.
+            missing = client.get("/api/lessons/not-a-real-lesson/full", headers=headers)
+            self.assertEqual(missing.status_code, 404)
+        finally:
+            app.dependency_overrides.clear()
+
     def test_admin_bypasses_pro_and_prerequisite_gates(self):
         engine = create_engine(
             "sqlite:///:memory:",

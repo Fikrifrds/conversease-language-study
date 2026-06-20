@@ -2,10 +2,9 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ChevronDown, ChevronUp, Eye, Mic, Play, Square, Sparkles } from "lucide-react";
-import { lessonsBySlug } from "@/lib/data";
 import { useVoiceRecorder } from "@/lib/use-voice-recorder";
 import { VoiceWaveform } from "@/components/voice-waveform";
-import type { ReviewItem } from "@/lib/review-utils";
+import type { ReviewContentMap, ReviewItem } from "@/lib/review-utils";
 
 function stableIndex(seed: string, size: number) {
   if (size <= 0) {
@@ -18,8 +17,8 @@ function stableIndex(seed: string, size: number) {
   return hash % size;
 }
 
-function sampleDialogueCard(item: ReviewItem, seedKey: string) {
-  const lesson = lessonsBySlug[item.lessonSlug];
+function sampleDialogueCard(item: ReviewItem, seedKey: string, content: ReviewContentMap) {
+  const lesson = content[item.lessonSlug];
   if (!lesson?.dialogue?.length) {
     return null;
   }
@@ -32,8 +31,8 @@ function sampleDialogueCard(item: ReviewItem, seedKey: string) {
   return { prompt: line.text, answer: translation };
 }
 
-function sampleWritingExample(item: ReviewItem, seedKey: string) {
-  const lesson = lessonsBySlug[item.lessonSlug];
+function sampleWritingExample(item: ReviewItem, seedKey: string, content: ReviewContentMap) {
+  const lesson = content[item.lessonSlug];
   if (!lesson) {
     return null;
   }
@@ -57,7 +56,15 @@ function sampleWritingExample(item: ReviewItem, seedKey: string) {
   return item.pattern;
 }
 
-export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedKey: string }) {
+export function ReviewMiniCheck({
+  items,
+  seedKey,
+  content
+}: {
+  items: ReviewItem[];
+  seedKey: string;
+  content: ReviewContentMap;
+}) {
   const [open, setOpen] = useState(false);
   const [revealMeaning, setRevealMeaning] = useState(false);
   const [revealWriting, setRevealWriting] = useState(false);
@@ -69,8 +76,14 @@ export function ReviewMiniCheck({ items, seedKey }: { items: ReviewItem[]; seedK
   const unitTitle = items[0]?.unitTitle ?? "Unit";
   const focusItem = items[0] ?? null;
 
-  const meaningCard = useMemo(() => (focusItem ? sampleDialogueCard(focusItem, seedKey) : null), [focusItem, seedKey]);
-  const writingExample = useMemo(() => (focusItem ? sampleWritingExample(focusItem, seedKey) : null), [focusItem, seedKey]);
+  const meaningCard = useMemo(
+    () => (focusItem ? sampleDialogueCard(focusItem, seedKey, content) : null),
+    [focusItem, seedKey, content]
+  );
+  const writingExample = useMemo(
+    () => (focusItem ? sampleWritingExample(focusItem, seedKey, content) : null),
+    [focusItem, seedKey, content]
+  );
 
   const recorder = useVoiceRecorder({
     onResult: (blob) => {
