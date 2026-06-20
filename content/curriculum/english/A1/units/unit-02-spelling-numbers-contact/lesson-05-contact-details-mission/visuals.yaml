@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan folder dan formulir kontak kosong.
+  alt: Officer dan Dimas faceless menjalankan misi detail kontak di meja registrasi kelas Indonesia.
   caption: Gabungkan nama, ejaan, nomor telepon, dan email dalam satu percakapan.
 cards:
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-contact-details.png
     width: 1254
     height: 1254
     label: I need your contact details.
-    alt: Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.
+    alt: Officer faceless meminta detail kontak di depan formulir kosong.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-spell-name.png
     width: 1254
     height: 1254
     label: How do you spell your name?
-    alt: Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.
+    alt: Officer faceless bertanya ejaan nama di meja registrasi kelas.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-email-address.png
     width: 1254
     height: 1254
     label: And your email address?
-    alt: Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.
+    alt: Officer faceless bertanya alamat email dengan layar kosong di meja registrasi.

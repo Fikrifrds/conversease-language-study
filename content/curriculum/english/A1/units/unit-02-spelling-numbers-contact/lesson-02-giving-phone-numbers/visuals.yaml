@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja registrasi kelas dengan ponsel layar kosong dan formulir kontak.
-  caption: Ucapkan nomor telepon pelan dan konfirmasi dengan jelas.
+  alt: Officer dan Dimas faceless berlatih memberi nomor telepon di meja registrasi kelas Indonesia.
+  caption: Ucapkan nomor telepon pelan dan konfirmasi dengan jelas tanpa menampilkan angka di gambar.
 cards:
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-phone-number.png
     width: 1254
     height: 1254
     label: What is your phone number?
-    alt: Ponsel layar kosong dan kartu kontak kosong di meja kelas.
+    alt: Officer faceless bertanya nomor telepon di meja registrasi dengan layar ponsel kosong.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-zero-eight.png
     width: 1254
     height: 1254
     label: It's zero eight one two.
-    alt: Token kecil tersusun rapi di samping kartu kontak kosong.
+    alt: Dimas faceless memberi nomor telepon secara pelan tanpa angka terlihat.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-correct.png
     width: 1254
     height: 1254
     label: Yes, that's correct.
-    alt: Kartu kosong dengan ikon centang sederhana di meja kelas.
+    alt: Dimas faceless mengonfirmasi nomor telepon dengan sopan di meja registrasi.

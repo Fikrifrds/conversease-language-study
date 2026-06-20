@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan folder dan formulir kontak kosong.
+  alt: Muallimah dan Ahmad faceless menjalankan misi kontak di meja registrasi kelas Indonesia.
   caption: Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana.
 cards:
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-ismi.png
     width: 1254
     height: 1254
     label: اِسْمِي ...
-    alt: Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.
+    alt: Ahmad faceless memperkenalkan nama di meja registrasi kelas.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-raqmi.png
     width: 1254
     height: 1254
     label: رَقْمِي ...
-    alt: Ponsel layar kosong dan kartu kontak kosong di meja kelas.
+    alt: Ahmad faceless memberi nomor telepon dengan ponsel layar kosong.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-baridi.png
     width: 1254
     height: 1254
     label: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
-    alt: Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.
+    alt: Ahmad faceless memberi informasi email dengan layar tablet kosong.

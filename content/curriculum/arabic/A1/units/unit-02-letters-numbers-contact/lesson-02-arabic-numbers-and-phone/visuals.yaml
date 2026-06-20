@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja registrasi kelas dengan ponsel layar kosong dan formulir kontak.
-  caption: Ucapkan nomor telepon dengan angka Arab sederhana secara pelan.
+  alt: Maryam dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.
+  caption: Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar.
 cards:
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqmu-hatif.png
     width: 1254
     height: 1254
     label: مَا رَقْمُ هَاتِفِكَ؟
-    alt: Ponsel layar kosong dan kartu kontak kosong di meja kelas.
+    alt: Maryam faceless bertanya nomor telepon dengan ponsel layar kosong.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-numbers.png
     width: 1254
     height: 1254
     label: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
-    alt: Token kecil tersusun rapi di samping kartu kontak kosong.
+    alt: Khalid faceless memberi nomor telepon secara pelan tanpa angka terlihat.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqm-sahih.png
     width: 1254
     height: 1254
     label: الرَّقْمُ صَحِيحٌ
-    alt: Kartu kosong dengan ikon centang sederhana di meja kelas.
+    alt: Khalid faceless mengonfirmasi nomor telepon sudah benar.

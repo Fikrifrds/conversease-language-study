@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan kartu ulang dan buku kosong untuk meminta pengulangan.
+  alt: Alya dan Ben faceless berlatih meminta pengulangan informasi kontak di kelas Indonesia.
   caption: Minta pengulangan dengan sopan saat informasi belum jelas.
 cards:
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-repeat-that.png
     width: 1254
     height: 1254
     label: Sorry, can you repeat that, please?
-    alt: Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.
+    alt: Ben faceless meminta Alya mengulang informasi kontak dari jarak sopan.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-did-you-say.png
     width: 1254
     height: 1254
     label: Did you say two two five five?
-    alt: Kartu kosong dengan ikon suara sederhana di meja kelas.
+    alt: Ben faceless mengecek satu bagian informasi kontak tanpa angka terlihat.
   - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-got-it.png
     width: 1254
     height: 1254
     label: Got it.
-    alt: Kartu kosong dengan ikon centang sederhana di meja kelas.
+    alt: Ben faceless menunjukkan sudah paham setelah informasi diulang.

@@ -75,8 +75,8 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
     <AppShell requireAuth>
       <StudyDayMarker />
       <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
-        <div className="grid gap-6 lg:grid-cols-[0.72fr_0.28fr]">
-          <article className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="grid gap-6 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,0.28fr)]">
+          <article className="min-w-0 rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
             {lessonPlacementLabel(lesson.slug) ? (
               <p className="text-xs font-semibold uppercase tracking-wide text-coral">
                 {lessonPlacementLabel(lesson.slug)}

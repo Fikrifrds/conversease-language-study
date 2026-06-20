@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan kartu ulang untuk meminta pengulangan huruf.
+  alt: Layla dan Zayd faceless berlatih meminta pengulangan huruf dari jarak sopan di kelas Indonesia.
   caption: Minta pengulangan huruf dengan sopan saat belum terdengar jelas.
 cards:
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-lam-asma.png
     width: 1254
     height: 1254
     label: لم أَسْمَعُ الْحَرْفَ
-    alt: Kartu kosong dengan ikon ulang sederhana di meja kelas Indonesia.
+    alt: Layla faceless berkhimar abu gelap dan abaya hitam memberi isyarat belum mendengar jelas.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-bibut.png
     width: 1254
     height: 1254
     label: بِبُطْءٍ مِنْ فَضْلِكَ
-    alt: Kartu kosong dengan ikon suara sederhana di meja kelas.
+    alt: Layla faceless meminta pengulangan dengan pelan di meja kelas.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-qultu.png
     width: 1254
     height: 1254
     label: نَعَمْ، قُلْتُ بَاءً
-    alt: Kartu kosong dengan ikon centang sederhana di meja kelas.
+    alt: Zayd faceless mengonfirmasi pengulangan huruf dengan sopan.

@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun object-only meja kelas Indonesia dengan kartu amplop kosong untuk latihan email.
-  caption: Sebutkan bagian email dengan pelan dan mudah ditulis.
+  alt: Noura dan Ahmad faceless berlatih alamat email di meja registrasi kelas Indonesia.
+  caption: Sebutkan bagian email dengan pelan tanpa menampilkan teks email di gambar.
 cards:
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-barid.png
     width: 1254
     height: 1254
     label: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
-    alt: Kartu ikon amplop kosong dan formulir kontak kosong di meja kelas.
+    alt: Noura faceless bertanya alamat email dengan layar tablet kosong.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-uktub.png
     width: 1254
     height: 1254
     label: اُكْتُبْ مِنْ فَضْلِكَ
-    alt: Clipboard dengan formulir kosong, folder, dan pensil di meja kelas.
+    alt: Ahmad faceless menulis ulang informasi email pada formulir kosong.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-nuqta-sharta.png
     width: 1254
     height: 1254
     label: نُقْطَةٌ
-    alt: Kartu nama kosong, formulir kosong, dan pensil di meja kelas Indonesia.
+    alt: Ahmad faceless menjelaskan satu bagian email tanpa simbol atau huruf terlihat.
