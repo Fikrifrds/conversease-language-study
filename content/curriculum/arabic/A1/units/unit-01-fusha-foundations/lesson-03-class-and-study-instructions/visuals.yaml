@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki berlatih instruksi kelas.
-  caption: Dengarkan instruksi kelas sederhana dan jawab dengan sopan.
+  alt: Muallim dan Ahmad faceless berlatih instruksi kelas dari jarak sopan di kelas Indonesia.
+  caption: Dengarkan instruksi kelas sederhana dan jawab dengan sopan dalam setting nyata.
 cards:
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-iqra.png
     width: 1254
     height: 1254
     label: اِقرأْ
-    alt: Buku kosong terbuka di meja kelas bahasa Arab.
+    alt: Muallim faceless memberi instruksi membaca di kelas dengan papan tulis kosong.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-istami.png
     width: 1254
     height: 1254
     label: اِستمعْ
-    alt: Speaker kecil tanpa logo di meja kelas dengan buku kosong.
+    alt: Ahmad faceless mendengarkan instruksi di meja kelas dengan buku kosong.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-uktub.png
     width: 1254
     height: 1254
     label: اُكتبْ
-    alt: Buku tulis kosong dan pensil di meja kelas bahasa Arab.
+    alt: Ahmad faceless menulis di buku kosong saat mengikuti instruksi kelas.

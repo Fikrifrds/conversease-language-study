@@ -30,8 +30,9 @@ and consistent with the existing files for that lesson.**
    dialogue: who is speaking, who they are speaking to, and where the exchange
    happens. Avoid flashcards, cue cards, decorative cards, and baked-in text.
    Use soft cartoon/faceless figures only and match the visible gender to the
-   lesson speaker/persona. Female figures should wear a wide khimar/jilbab or
-   abaya-style outfit in dark or neutral colors, not bright multicolor clothing.
+   lesson speaker/persona. Female figures should use the approved Indonesian
+   style: wide dark charcoal khimar draped over the shoulders with a simple
+   black abaya, not bright multicolor clothing.
    Male figures should wear modest loose clothing with trousers clearly above
    the ankles; avoid isbal. Do not show men and women sitting side by side,
    standing close together, or making physical contact; use single-speaker,

@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki saat latihan nama dan asal.
-  caption: Perkenalkan nama dan asal dengan kalimat Arab formal yang singkat.
+  alt: Muallim dan Ahmad faceless berlatih nama dan asal dari jarak sopan di kelas Indonesia.
+  caption: Perkenalkan nama dan asal dalam dialog kelas formal yang jelas.
 cards:
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ma-ismuka.png
     width: 1254
     height: 1254
     label: ما اسمُكَ؟
-    alt: Dua kartu nama kosong di meja kelas bahasa Arab.
+    alt: Muallim faceless bertanya nama di depan papan tulis kosong tanpa peci.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ismi.png
     width: 1254
     height: 1254
     label: اسمي ...
-    alt: Pelajar laki-laki faceless berpakaian sopan dan tidak isbal saat memperkenalkan diri.
+    alt: Ahmad faceless memperkenalkan nama dengan celana di atas mata kaki.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-min-ayna.png
     width: 1254
     height: 1254
     label: من أين أنتَ؟
-    alt: Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.
+    alt: Muallim faceless bertanya asal dengan latar jendela kelas Indonesia.

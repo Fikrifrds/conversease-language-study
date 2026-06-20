@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap memperkenalkan nama di kelas Indonesia.
-  caption: Perkenalkan nama dengan singkat di kelas nyata.
+  alt: Sara dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.
+  caption: Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas.
 cards:
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png
     width: 1254
     height: 1254
     label: My name is ...
-    alt: Kartu nama kosong di meja kelas Indonesia dengan buku dan pensil.
+    alt: Sara faceless berkhimar abu gelap dan abaya hitam memperkenalkan nama di kelas.
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png
     width: 1254
     height: 1254
     label: I'm ...
-    alt: Pelajar perempuan faceless berjilbab lebar gelap memperkenalkan diri di kelas.
+    alt: Arif faceless memperkenalkan nama dengan celana di atas mata kaki di kelas.
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png
     width: 1254
     height: 1254
     label: Nice to meet you too.
-    alt: Dua kartu nama kosong terpisah di meja kelas untuk perkenalan sopan.
+    alt: Arif faceless merespons perkenalan dengan sopan di kelas Indonesia.

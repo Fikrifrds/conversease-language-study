@@ -2,21 +2,21 @@ hero:
   src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki untuk misi perkenalan formal.
-  caption: Gabungkan sapaan, nama, asal, dan klarifikasi dalam perkenalan singkat.
+  alt: Muallim dan Ahmad faceless menjalankan misi perkenalan formal dari jarak sopan di kelas Indonesia.
+  caption: Gabungkan sapaan, nama, asal, dan klarifikasi dalam dialog kelas nyata.
 cards:
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png
     width: 1254
     height: 1254
     label: مرحبًا
-    alt: Dua kartu nama kosong terpisah di meja kelas untuk sapaan formal.
+    alt: Ahmad faceless memberi sapaan formal di kelas dengan celana di atas mata kaki.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png
     width: 1254
     height: 1254
     label: اسمي ...
-    alt: Pelajar laki-laki faceless berpakaian sopan dan tidak isbal saat memperkenalkan diri.
+    alt: Ahmad faceless memperkenalkan nama dalam misi kelas formal.
   - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png
     width: 1254
     height: 1254
     label: أنا من إندونيسيا
-    alt: Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.
+    alt: Ahmad faceless menyebutkan asal dengan latar jendela kelas Indonesia.

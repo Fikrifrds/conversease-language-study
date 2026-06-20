@@ -35,8 +35,9 @@ content is written in this repo or generated elsewhere with another model.
    to, and where the exchange happens. Avoid flashcards, cue cards, decorative
    cards, and baked-in text. If a greeting or classroom scene needs people, use
    soft cartoon/faceless figures only and match visible gender to the
-   speaker/persona. Female figures should wear a wide khimar/jilbab or
-   abaya-style outfit in dark or neutral colors, not bright multicolor clothing.
+   speaker/persona. Female figures should use the approved Indonesian style:
+   wide dark charcoal khimar draped over the shoulders with a simple black
+   abaya, not bright multicolor clothing.
    Male figures should wear modest loose clothing with trousers clearly above
    the ankles; avoid isbal. Do not show men and women sitting side by side,
    standing close together, or making physical contact; use single-speaker,
@@ -157,8 +158,8 @@ Requirements:
 - Use conversation-first visuals with clear speaker/context/location. Avoid
   flashcards, cue cards, decorative cards, and baked-in text. If people are
   necessary, use soft faceless cartoons that match the speaker/persona gender.
-  Female figures should wear wide khimar/jilbab or abaya-style clothing in dark
-  or neutral colors. Male figures should avoid isbal, with trousers clearly
+  Female figures should use the approved Indonesian style: wide dark charcoal
+  khimar draped over the shoulders with a simple black abaya. Male figures should avoid isbal, with trousers clearly
   above the ankles. Avoid close mixed-gender scenes and do not add
   culture-specific clothing by language track alone.
 

@@ -207,11 +207,11 @@ export const lessonCatalog = [
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, my name is Arif.\nWhat is your name?\nNice to meet you.\n```\n\nQuestion: Which sentence asks for the other person's name?\n\nAnswer: What is your name?",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. A greeting.\n2. Your name.\n3. A question asking for a name.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nWhat is your name?\n```",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap memperkenalkan nama di kelas Indonesia.", caption: "Perkenalkan nama dengan singkat di kelas nyata." },
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Sara dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas." },
         cards: [
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png", width: 1254, height: 1254, alt: "Kartu nama kosong di meja kelas Indonesia dengan buku dan pensil.", label: "My name is ..." },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap memperkenalkan diri di kelas.", label: "I'm ..." },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong terpisah di meja kelas untuk perkenalan sopan.", label: "Nice to meet you too." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png", width: 1254, height: 1254, alt: "Sara faceless berkhimar abu gelap dan abaya hitam memperkenalkan nama di kelas.", label: "My name is ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png", width: 1254, height: 1254, alt: "Arif faceless memperkenalkan nama dengan celana di atas mata kaki di kelas.", label: "I'm ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png", width: 1254, height: 1254, alt: "Arif faceless merespons perkenalan dengan sopan di kelas Indonesia.", label: "Nice to meet you too." },
         ]
       },
       sections: lessonSections
@@ -274,11 +274,11 @@ export const lessonCatalog = [
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```\n\nQuestion: Which sentence asks someone to say it again?\n\nAnswer: Can you repeat that?",
       writingSupport: "# Writing Support\n\nWrite four short lines:\n\n1. A greeting.\n2. A name question.\n3. A repeat request.\n4. A thank you.\n\nExample:\n\n```txt\nHello.\nWhat's your name?\nCan you repeat that?\nThank you.\n```",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap bertanya nama di kelas Indonesia.", caption: "Tanyakan nama dengan sopan saat bertemu teman kelas." },
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Nina dan Raka faceless bertanya nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Tanyakan nama dan konfirmasi dengan sopan saat bertemu teman kelas." },
         cards: [
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-whats-your-name.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong di meja kelas dengan pensil.", label: "What's your name?" },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-may-i-know.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap bertanya dengan sopan di pintu kelas.", label: "May I know your name?" },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-is-it-mina.png", width: 1254, height: 1254, alt: "Kartu nama kosong dan stiker centang di meja kelas.", label: "Is it Mina?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-whats-your-name.png", width: 1254, height: 1254, alt: "Nina faceless berkhimar abu gelap dan abaya hitam bertanya nama di kelas.", label: "What's your name?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-may-i-know.png", width: 1254, height: 1254, alt: "Nina faceless bertanya nama dengan lebih sopan di kelas Indonesia.", label: "May I know your name?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-is-it-mina.png", width: 1254, height: 1254, alt: "Nina faceless mengonfirmasi nama yang didengar di kelas Indonesia.", label: "Is it Mina?" },
         ]
       },
       sections: lessonSections
@@ -338,11 +338,11 @@ export const lessonCatalog = [
       readingSupport: "# Reading Support\n\nRead this short message:\n\n```txt\nHi, I'm Maya.\nI'm from Indonesia.\nWhere are you from?\n```\n\nQuestion: Which sentence says the country?\n\nAnswer: I'm from Indonesia.",
       writingSupport: "# Writing Support\n\nWrite three short lines:\n\n1. Your name.\n2. Your country or city.\n3. A question asking where someone is from.\n\nExample:\n\n```txt\nI'm Arif.\nI'm from Indonesia.\nWhere are you from?\n```",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun object-only kelas Indonesia dengan worksheet peta tanpa label untuk menyebutkan asal.", caption: "Sebutkan asal dan tanyakan balik dengan natural." },
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Maya dan Omar faceless membicarakan asal dari jarak sopan di kelas Indonesia.", caption: "Sebutkan asal dan tanyakan balik dalam percakapan kelas nyata." },
         cards: [
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png", width: 1254, height: 1254, alt: "Lembar kosong dengan bentuk peta Indonesia tanpa label di meja kelas.", label: "I'm from ..." },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-i-live-in.png", width: 1254, height: 1254, alt: "Pemandangan lingkungan Indonesia dari jendela kelas dengan buku kosong.", label: "I live in ..." },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-how-about-you.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong terpisah di meja kelas untuk bertanya balik dengan sopan.", label: "How about you?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png", width: 1254, height: 1254, alt: "Maya faceless berkhimar abu gelap dan abaya hitam menyebutkan asal di kelas.", label: "I'm from ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-i-live-in.png", width: 1254, height: 1254, alt: "Omar faceless menyebutkan tempat tinggal dengan latar jendela kelas Indonesia.", label: "I live in ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-how-about-you.png", width: 1254, height: 1254, alt: "Maya faceless bertanya balik dengan sopan di kelas Indonesia.", label: "How about you?" },
         ]
       },
       sections: lessonSections
@@ -409,11 +409,11 @@ export const lessonCatalog = [
       readingSupport: "# Reading Support\n\nRead this short conversation:\n\n```txt\nHi, my name is Lina.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nNice to meet you.\nSee you later.\n```\n\nQuestion: Which two sentences ask questions?\n\nAnswer: What is your name? Where are you from?",
       writingSupport: "# Writing Support\n\nWrite a six-line first conversation:\n\n1. A greeting.\n2. Your name.\n3. Your country or city.\n4. Ask the other person's name.\n5. Ask where the person is from.\n6. Close the conversation.\n\nExample:\n\n```txt\nHi.\nMy name is Arif.\nI'm from Indonesia.\nWhat is your name?\nWhere are you from?\nSee you later.\n```",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar perempuan berjilbab lebar gelap memulai misi percakapan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup percakapan." },
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Lina dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata." },
         cards: [
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap menyapa dan memperkenalkan diri di kelas.", label: "Good morning. My name is ..." },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label dengan kartu kosong di meja kelas.", label: "Where are you from?" },
-          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-see-you-later.png", width: 1254, height: 1254, alt: "Pelajar perempuan faceless berjilbab lebar gelap berpamitan di pintu kelas.", label: "See you later." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png", width: 1254, height: 1254, alt: "Lina faceless berkhimar abu gelap dan abaya hitam menyapa dan memperkenalkan diri.", label: "Good morning. My name is ..." },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png", width: 1254, height: 1254, alt: "Adi faceless bertanya asal dengan sopan di kelas Indonesia.", label: "Where are you from?" },
+          { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-see-you-later.png", width: 1254, height: 1254, alt: "Lina faceless berkhimar abu gelap dan abaya hitam berpamitan di pintu kelas.", label: "See you later." },
         ]
       },
       sections: lessonSections
@@ -13265,11 +13265,11 @@ export const lessonCatalog = [
       readingSupport: "# Bantuan Membaca\n\nBaca teks pendek ini:\n\n```txt\nاسمي أحمد.\nأنا من إندونيسيا.\n```\n\nPertanyaan: Kalimat mana yang menyebutkan negara asal?\n\nJawaban: أنا من إندونيسيا.",
       writingSupport: "# Bantuan Menulis\n\nTulis dua kalimat Arab pendek:\n\n1. Namamu.\n2. Negara asalmu.\n\nContoh:\n\n```txt\nاسمي أحمد.\nأنا من إندونيسيا.\n```",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki saat latihan nama dan asal.", caption: "Perkenalkan nama dan asal dengan kalimat Arab formal yang singkat." },
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih nama dan asal dari jarak sopan di kelas Indonesia.", caption: "Perkenalkan nama dan asal dalam dialog kelas formal yang jelas." },
         cards: [
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ma-ismuka.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong di meja kelas bahasa Arab.", label: "ما اسمُكَ؟" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ismi.png", width: 1254, height: 1254, alt: "Pelajar laki-laki faceless berpakaian sopan dan tidak isbal saat memperkenalkan diri.", label: "اسمي ..." },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-min-ayna.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.", label: "من أين أنتَ؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ma-ismuka.png", width: 1254, height: 1254, alt: "Muallim faceless bertanya nama di depan papan tulis kosong tanpa peci.", label: "ما اسمُكَ؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ismi.png", width: 1254, height: 1254, alt: "Ahmad faceless memperkenalkan nama dengan celana di atas mata kaki.", label: "اسمي ..." },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-min-ayna.png", width: 1254, height: 1254, alt: "Muallim faceless bertanya asal dengan latar jendela kelas Indonesia.", label: "من أين أنتَ؟" },
         ]
       },
       sections: lessonSections
@@ -13332,11 +13332,11 @@ export const lessonCatalog = [
       readingSupport: "# Bantuan Membaca\n\nBaca daftar instruksi ini:\n\n```txt\nاِقرأْ.\nاِستمعْ.\nأَعِدْ.\nاُكتبْ.\n```\n\nPertanyaan: Instruksi mana yang berarti \"tulislah\"?\n\nJawaban: اُكتبْ.",
       writingSupport: "# Bantuan Menulis\n\nSalin empat kata instruksi ini:\n\n```txt\nاِقرأْ\nاِستمعْ\nأَعِدْ\nاُكتبْ\n```\n\nLalu tulis satu respons:\n\n```txt\nنعم يا مُعَلِّم.\n```",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki berlatih instruksi kelas.", caption: "Dengarkan instruksi kelas sederhana dan jawab dengan sopan." },
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih instruksi kelas dari jarak sopan di kelas Indonesia.", caption: "Dengarkan instruksi kelas sederhana dan jawab dengan sopan dalam setting nyata." },
         cards: [
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-iqra.png", width: 1254, height: 1254, alt: "Buku kosong terbuka di meja kelas bahasa Arab.", label: "اِقرأْ" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-istami.png", width: 1254, height: 1254, alt: "Speaker kecil tanpa logo di meja kelas dengan buku kosong.", label: "اِستمعْ" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-uktub.png", width: 1254, height: 1254, alt: "Buku tulis kosong dan pensil di meja kelas bahasa Arab.", label: "اُكتبْ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-iqra.png", width: 1254, height: 1254, alt: "Muallim faceless memberi instruksi membaca di kelas dengan papan tulis kosong.", label: "اِقرأْ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-istami.png", width: 1254, height: 1254, alt: "Ahmad faceless mendengarkan instruksi di meja kelas dengan buku kosong.", label: "اِستمعْ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-uktub.png", width: 1254, height: 1254, alt: "Ahmad faceless menulis di buku kosong saat mengikuti instruksi kelas.", label: "اُكتبْ" },
         ]
       },
       sections: lessonSections
@@ -13400,11 +13400,11 @@ export const lessonCatalog = [
       readingSupport: "# Bantuan Membaca\n\nBaca permintaan singkat ini:\n\n```txt\nعفوًا، لا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nPertanyaan: Kalimat mana yang meminta orang lain mengulangi?\n\nJawaban: أَعِدْ مِنْ فَضْلِكَ.",
       writingSupport: "# Bantuan Menulis\n\nTulis dua permintaan yang berguna di kelas:\n\n```txt\nلا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nLalu tulis satu pertanyaan makna:\n\n```txt\nما معنى الكلمة؟\n```",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki meminta penjelasan di kelas.", caption: "Minta pengulangan atau penjelasan ketika belum paham." },
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Fatimah dan Muallim faceless berlatih meminta penjelasan dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan atau penjelasan ketika belum paham dalam kelas nyata." },
         cards: [
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-la-afham.png", width: 1254, height: 1254, alt: "Buku kosong dengan simbol tanya kecil di meja kelas.", label: "لا أفهم" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-aid-min-fadlik.png", width: 1254, height: 1254, alt: "Kartu kosong dengan simbol ulang di meja kelas.", label: "أَعِدْ مِنْ فَضْلِكَ" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-ma-mana.png", width: 1254, height: 1254, alt: "Kartu kosong di bawah kaca pembesar di meja kelas.", label: "ما معنى ...؟" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-la-afham.png", width: 1254, height: 1254, alt: "Fatimah faceless berkhimar abu gelap dan abaya hitam mengangkat tangan karena belum paham.", label: "لا أفهم" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-aid-min-fadlik.png", width: 1254, height: 1254, alt: "Fatimah faceless meminta pengulangan dengan sopan di meja kelas.", label: "أَعِدْ مِنْ فَضْلِكَ" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-ma-mana.png", width: 1254, height: 1254, alt: "Fatimah faceless bertanya makna dengan sopan di depan buku kosong.", label: "ما معنى ...؟" },
         ]
       },
       sections: lessonSections
@@ -13475,11 +13475,11 @@ export const lessonCatalog = [
       readingSupport: "# Bantuan Membaca\n\nBaca skrip misi ini:\n\n```txt\nمرحبًا.\nاسمي أحمد.\nأنا من إندونيسيا.\nلا أفهم.\nأَعِدْ مِنْ فَضْلِكَ.\n```\n\nPertanyaan: Baris mana yang meminta pengulangan?\n\nJawaban: أَعِدْ مِنْ فَضْلِكَ.",
       writingSupport: "# Bantuan Menulis\n\nTulis perkenalan diri dalam empat baris:\n\n```txt\nمرحبًا.\nاسمي أحمد.\nأنا من إندونيسيا.\nأنا أتعلم العربية.\n```\n\nLalu tambahkan satu frasa meminta bantuan:\n\n```txt\nأَعِدْ مِنْ فَضْلِكَ.\n```",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png", width: 1672, height: 941, alt: "Ilustrasi kartun faceless pelajar laki-laki bercelana di atas mata kaki untuk misi perkenalan formal.", caption: "Gabungkan sapaan, nama, asal, dan klarifikasi dalam perkenalan singkat." },
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless menjalankan misi perkenalan formal dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan klarifikasi dalam dialog kelas nyata." },
         cards: [
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png", width: 1254, height: 1254, alt: "Dua kartu nama kosong terpisah di meja kelas untuk sapaan formal.", label: "مرحبًا" },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png", width: 1254, height: 1254, alt: "Pelajar laki-laki faceless berpakaian sopan dan tidak isbal saat memperkenalkan diri.", label: "اسمي ..." },
-          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png", width: 1254, height: 1254, alt: "Lembar peta Indonesia tanpa label di meja kelas bahasa Arab.", label: "أنا من إندونيسيا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png", width: 1254, height: 1254, alt: "Ahmad faceless memberi sapaan formal di kelas dengan celana di atas mata kaki.", label: "مرحبًا" },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png", width: 1254, height: 1254, alt: "Ahmad faceless memperkenalkan nama dalam misi kelas formal.", label: "اسمي ..." },
+          { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png", width: 1254, height: 1254, alt: "Ahmad faceless menyebutkan asal dengan latar jendela kelas Indonesia.", label: "أنا من إندونيسيا" },
         ]
       },
       sections: lessonSections
