@@ -1,5 +1,5 @@
 lesson_key: lesson-02-asking-about-size-and-color
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-02-asking-about-size-and-color/listening-English_Aussie_Bloke-20260612T125414Z.wav
-  duration_seconds: 16.69
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
-    Staff: English_CalmWoman
+    Dimas: English_radiant_girl
+    Staff: English_Diligent_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-02-asking-about-size-and-color/listening-English_Aussie_Bloke-20260612T125414Z.wav
-  trace_id: 067b3467556b4647f61f12161ab44661,067b346a8fc2c65dae3e0c66e22b0258,067b346d1efa74461f1149744ab9427e,067b3470cf51fe46bffbebc94bc81831,067b347216be628aa486502b24f490bd,067b34742b0d79c8666baef4d9585d10
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:54:14.055434+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

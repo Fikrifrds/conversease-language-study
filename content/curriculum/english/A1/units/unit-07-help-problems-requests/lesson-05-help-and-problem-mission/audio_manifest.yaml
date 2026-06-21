@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260612T124330Z.wav
-  duration_seconds: 19.4
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
     Dimas: English_Diligent_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/listening-English_Aussie_Bloke-20260612T124330Z.wav
-  trace_id: 067b31dcfe944681c7bcbdb21daac3d6,067b31dfd9a497fdd842a09f962586a8,067b31e2654ffe27ae7d6fab84a03232,067b31e45485d493212732f05bd0dbc7,067b31e6e8c972752621f4fbd52d9183,067b31e8be517f789a77976e86e1aaaa,067b31ea1058f874b2cbc10710d1c6d5,067b31ec9bf929f2a89d41b7d5be1202,067b31efb4689bf926f77a4d906d7fa4
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:43:30.277900+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-05-help-and-problem-mission
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

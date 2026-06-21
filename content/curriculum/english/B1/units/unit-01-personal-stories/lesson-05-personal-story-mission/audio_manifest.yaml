@@ -1,5 +1,5 @@
 lesson_key: lesson-05-personal-story-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-05-personal-story-mission/listening-English_Aussie_Bloke-20260612T130549Z.wav
-  duration_seconds: 26.12
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-05-personal-story-mission/listening-English_Aussie_Bloke-20260612T130549Z.wav
-  trace_id: 067b3717663a6b4f06648408c874c6c5,067b3719e814e9136045998f8cef2074,067b371c4838edbda8dd902fe9d15594,067b371eb35ac3fe47a5ca3d80826a10,067b37215e73e538a37dce7b1d69ced5,067b37252b822bcbfb2f72a2bb31d68a,067b3728d4f2b21dc1f7ad62747d83e3,067b372a19b721e7583bd8cb522a822e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:05:49.085560+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

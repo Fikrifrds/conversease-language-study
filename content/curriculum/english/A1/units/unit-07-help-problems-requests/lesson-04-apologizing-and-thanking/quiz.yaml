@@ -7,7 +7,7 @@ questions:
   - He is in a shop.
   answer: His internet was slow.
 - type: multiple_choice
-  prompt: What does Ben thank Sara for?
+  prompt: What does Ben thank Omar for?
   choices:
   - Waiting.
   - Buying a pen.

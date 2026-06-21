@@ -1,5 +1,5 @@
 lesson_key: lesson-03-understanding-simple-directions
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-3nav5pHC1EYvWOd5LmnA-20260617T044110Z.wav
-  duration_seconds: 9.74
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Khalid: t9akNmCDhz230CEXOYmn
-    Layla: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
   line_count: 6
-  script_content_hash: c47ba90270561666f76793ecef299c6566d27afe3e3beb2d6370e2aed0eb10fd
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-3nav5pHC1EYvWOd5LmnA-20260617T044110Z.wav
-  trace_id: 9ZTH6yI1EQlvBTtOy8jk,RjtMFRyyZptNY9xXVFDX,esave3vEN7HeIHST4nT0,SdhCgW62Bzux3Qc4tm5V,Pj403MBzx6wWICw4XczU,xY8SGUU9bjO8l9GGKgjI
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:41:10.156600+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

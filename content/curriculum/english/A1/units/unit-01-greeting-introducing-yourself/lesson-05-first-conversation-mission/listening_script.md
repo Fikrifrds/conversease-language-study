@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Lina:** Hi, my name is Lina. What is your name?  
-**Adi:** Hi Lina. I'm Adi. Nice to meet you.  
-**Lina:** Nice to meet you too. I'm from Indonesia. Where are you from?  
-**Adi:** I'm from Indonesia too. See you later.  
-**Lina:** See you.
+**Raka:** Hi, my name is Raka. What is your name?
+**Adi:** Hi Raka. I'm Adi. Nice to meet you.
+**Raka:** Nice to meet you too. I'm from Indonesia. Where are you from?
+**Adi:** I'm from Indonesia too. See you later.
+**Raka:** See you.
 
 ## Audio Direction
 

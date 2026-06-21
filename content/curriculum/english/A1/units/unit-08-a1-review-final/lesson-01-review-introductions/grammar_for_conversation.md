@@ -4,7 +4,7 @@ Grammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelaja
 
 ## Use I am or I'm for names.
 
-- Example: I'm Sara. My name is Dimas.
+- Example: I'm Omar. My name is Dimas.
 
 ## Use from for origin.
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-invitation-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-05-invitation-mission/listening-English_Aussie_Bloke-20260612T125125Z.wav
-  duration_seconds: 28.58
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 10
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-05-invitation-mission/listening-English_Aussie_Bloke-20260612T125125Z.wav
-  trace_id: 067b33b4b9ce8db771e0e0aae67ce84a,067b33b666ef28e73fd09465c5e72093,067b33b90b7e6ac21630681ae046c350,067b33bb6c5771202c65c3786b71a070,067b33be6f4520f3091afc47504eb684,067b33c0009a390d90bbce493038e3a3,067b33c3a64d9dc55677212acf95ceb4,067b33c567544cf881fcd30d232612fc,067b33c88206a63349b5b9b34f3d2143,067b33ca41131426f70ec9da80723a02
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:51:25.070574+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

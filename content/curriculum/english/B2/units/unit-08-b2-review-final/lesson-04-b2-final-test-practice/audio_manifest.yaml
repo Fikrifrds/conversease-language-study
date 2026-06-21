@@ -1,5 +1,5 @@
 lesson_key: lesson-04-b2-final-test-practice
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-08-b2-review-final/lesson-04-b2-final-test-practice/listening-English_Aussie_Bloke-20260612T134207Z.wav
-  duration_seconds: 27.64
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-08-b2-review-final/lesson-04-b2-final-test-practice/listening-English_Aussie_Bloke-20260612T134207Z.wav
-  trace_id: 067b3f9a81d5673dedfc98d00ac9238f,067b3f9d91dd8fb555c9e8fa9e131d9e,067b3f9f63d8bc07469e558d9ff1dfb1,067b3fa116ce9fa3ef4a6766bbebca18,067b3fa4e061299b9b0f9e84482eef68,067b3fa6d404cf3927435c03dd1c7dd2,067b3fa95a41c6bdb479d683f6f2264e,067b3fac765830383213679b35d4c78a
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:42:07.131289+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

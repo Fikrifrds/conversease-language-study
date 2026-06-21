@@ -1,5 +1,5 @@
 lesson_key: lesson-03-asking-about-pros-and-cons
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-03-asking-about-pros-and-cons/listening-English_Aussie_Bloke-20260612T131610Z.wav
-  duration_seconds: 22.43
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-03-asking-about-pros-and-cons/listening-English_Aussie_Bloke-20260612T131610Z.wav
-  trace_id: 067b3986985fb550d3af225c9ab77969,067b3988b0495628848ee9d9764041ea,067b398be0339b5303de165b25d87d8f,067b398d5a0bf4111c7e07f7d923a018,067b398f2f7304f8bca0c8bbd9a2f113,067b3992c16b24f0202b5bd6ff358d84,067b399481e15d9e8bc963037ed28aad,067b3996f01a24e3eb1ae4aef95e364e,067b39980677921e8d65fdaed07c7343
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:16:10.889754+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

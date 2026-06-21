@@ -1,13 +1,13 @@
 questions:
 - type: multiple_choice
-  prompt: What does Mina ask for?
+  prompt: What does Faris ask for?
   choices:
   - The link.
   - The price.
   - The station.
   answer: The link.
 - type: multiple_choice
-  prompt: What does Ben ask Mina to do?
+  prompt: What does Ben ask Faris to do?
   choices:
   - Wait a minute.
   - Buy a pen.

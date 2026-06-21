@@ -1,5 +1,5 @@
 lesson_key: lesson-03-review-health-and-past
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-03-review-health-and-past/listening-English_Aussie_Bloke-20260612T130240Z.wav
-  duration_seconds: 18.76
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-03-review-health-and-past/listening-English_Aussie_Bloke-20260612T130240Z.wav
-  trace_id: 067b365f58dd4ba69ad062fce3ccb273,067b3661bdb19ed44f0074df2046f40c,067b3664f541cbd3b4e39ea09e2ae2b6,067b36667c67a92f2a611f5e7b1b277b,067b3668de0831589f899ba61f1ef688,067b366ae65cf736b6b86a41df098867,067b366df75f21d6a650a19eb15edca8
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:02:40.095823+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

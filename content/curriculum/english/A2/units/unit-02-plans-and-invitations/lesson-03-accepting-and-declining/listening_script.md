@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Alya:** Hey Dimas. Do you want to join our dinner tonight?  
-**Dimas:** Thanks, but I can't.  
-**Alya:** Oh, okay. Are you busy?  
-**Dimas:** Yeah. I'm busy tonight because I have a meeting.  
-**Alya:** No problem. Maybe another time.  
+**Ben:** Hey Dimas. Do you want to join our dinner tonight?
+**Dimas:** Thanks, but I can't.
+**Ben:** Oh, okay. Are you busy?
+**Dimas:** Yeah. I'm busy tonight because I have a meeting.
+**Ben:** No problem. Maybe another time.
 **Dimas:** Yes, maybe tomorrow. Thanks for asking.
 
 ## Audio Direction

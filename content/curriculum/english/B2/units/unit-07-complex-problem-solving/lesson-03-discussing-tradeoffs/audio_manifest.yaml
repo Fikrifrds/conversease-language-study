@@ -1,5 +1,5 @@
 lesson_key: lesson-03-discussing-tradeoffs
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/listening-English_Aussie_Bloke-20260612T133859Z.wav
-  duration_seconds: 25.17
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/listening-English_Aussie_Bloke-20260612T133859Z.wav
-  trace_id: 067b3ede5052c2e00b3b3dd2e55ffaa1,067b3ee175c917acc9746519a5abeffd,067b3ee366021d51aa98dc20c084a526,067b3ee5061d9d783f80f2e886b5ba7e,067b3ee8ed5e5b673991a78ed18b792e,067b3eea3999108e89e156464b291423,067b3eed02e7ef0fbcffa968ed020aa0,067b3ef032a791d6e27e54bc84a81dab
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:38:59.076836+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-social-follow-up-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-05-social-follow-up-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T112215Z.wav
-  duration_seconds: 29.38
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Ahmad: RjFuvnufLX42TYe37ekK
-    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
   line_count: 8
-  script_content_hash: f23a5bba1c1177f03b6dc1abdfd131de156389a5cfa78d9b50f9b09a22e8c050
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-05-social-follow-up-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T112215Z.wav
-  trace_id: NhzuU3eUM3vXhLvN018b,RNi5q4MAnxMpMyBO8Nb8,VfggAHYl4V7l88LFoPzw,yRj9eBW3Hu4RrcUQFpHq,3frzdNRdF1erTl2MbSPn,uPQq8wxF21B1GytgSBRU,IqDiiypnzV7lYc7iWJ2j,qSnS9W5iKbGTuopoei9d
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T11:22:15.585572+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

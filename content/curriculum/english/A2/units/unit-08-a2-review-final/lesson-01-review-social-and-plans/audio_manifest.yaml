@@ -1,5 +1,5 @@
 lesson_key: lesson-01-review-social-and-plans
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-English_Aussie_Bloke-20260612T130153Z.wav
-  duration_seconds: 20.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-English_Aussie_Bloke-20260612T130153Z.wav
-  trace_id: 067b3631bda34021d0b8b34f9bc65972,067b363349daf153fa013192a0c32927,067b3636c28df0e790fb447287cfab79,067b363894a83b5710761852b40f1c1f,067b363a5909f9d73bc4110394eedb03,067b363cab779522bfdbd07e0bd44655,067b363f788eaf422cdb80ab94f36179
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:01:53.527854+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

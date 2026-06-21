@@ -1,5 +1,5 @@
 lesson_key: lesson-01-asking-the-time
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-01-asking-the-time/listening-3nav5pHC1EYvWOd5LmnA-20260617T043907Z.wav
-  duration_seconds: 9.36
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Khalid: t9akNmCDhz230CEXOYmn
-    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
   line_count: 5
-  script_content_hash: 23d4dc2aa6dcce52817ba7206abd51097bd5ef6fef4822ff702f2a1d0bc1b183
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-01-asking-the-time/listening-3nav5pHC1EYvWOd5LmnA-20260617T043907Z.wav
-  trace_id: Xpw2iyKnp7RuAuFI6QDI,3K9DDt5Zx6Tba7JxVaNu,KrzFezhlNceHyoPBYiir,I5gwGtxGFpBTEjMaFkdY,ipQ8frzQPfvsxi0OYaWJ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:39:07.495431+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

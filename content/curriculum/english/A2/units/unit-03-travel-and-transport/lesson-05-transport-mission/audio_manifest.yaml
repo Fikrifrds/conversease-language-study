@@ -1,5 +1,5 @@
 lesson_key: lesson-05-transport-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,23 +7,25 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-05-transport-mission/listening-English_Aussie_Bloke-20260612T125328Z.wav
-  duration_seconds: 29.25
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_radiant_girl
     Driver: English_Diligent_Man
-    Staff: English_CalmWoman
+    Staff: English_Diligent_Man
   line_count: 11
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-05-transport-mission/listening-English_Aussie_Bloke-20260612T125328Z.wav
-  trace_id: 067b342e3a6a3e086c4973f58bf5267f,067b34302b30556e82a0c64a75685871,067b3433775bd973b4421f43635cfd03,067b34358bd12a039f30b0a5fdf4672a,067b3437dabbe215d885a4178655af21,067b343acd60f5377191b770bf793dd3,067b343c8a908bd449ef3452cc5cd885,067b343e45f2cbd3f32bb7d4e269b854,067b3441744a48cc1d0a1b88b0603873,067b3443dc595edf6e30731469b2bda4,067b3446f5552f5895521084e7fdeda2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:53:28.528352+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

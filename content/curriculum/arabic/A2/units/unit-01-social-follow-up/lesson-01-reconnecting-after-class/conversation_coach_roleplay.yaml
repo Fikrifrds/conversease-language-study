@@ -1,7 +1,7 @@
 scenario_key: arabic_reconnecting_after_class
 mode: lesson_practice_coach
 level_code: A2
-opening_line: السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.
+opening_line: السَّلَامُ عَلَيْكَ يَا كَرِيمُ.
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa Arab
   dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.
+- coach: السَّلَامُ عَلَيْكَ يَا كَرِيمُ.
   hint: 'Jawab dengan pola: كَيْفَ حَالُكَ؟'
   sample_answer: كَيْفَ حَالُكَ؟
   focus: 'Latihan frasa: Apa kabarmu?'

@@ -3,13 +3,13 @@ questions:
   prompt: Frasa mana yang berarti "Saya setuju denganmu."?
   options:
   - أُوَافِقُكَ.
-  - أُوَافِقُكِ فِي هَذَا.
+  - أُوَافِقُكَ فِي هَذَا.
   - لَا أُوَافِقُ تَمَامًا.
   correct_answer: أُوَافِقُكَ.
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya setuju denganmu dalam hal ini."?
   options:
-  - أُوَافِقُكِ فِي هَذَا.
+  - أُوَافِقُكَ فِي هَذَا.
   - أُوَافِقُكَ.
   - لَا أُوَافِقُ تَمَامًا.
-  correct_answer: أُوَافِقُكِ فِي هَذَا.
+  correct_answer: أُوَافِقُكَ فِي هَذَا.

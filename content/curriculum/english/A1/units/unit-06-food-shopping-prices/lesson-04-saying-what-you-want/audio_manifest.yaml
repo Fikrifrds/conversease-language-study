@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260612T124059Z.wav
-  duration_seconds: 10.38
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/listening-English_Aussie_Bloke-20260612T124059Z.wav
-  trace_id: 067b314a290dc38bf21537afebd1e002,067b314cf0a9ff6a5ce603f47644f8b6,067b314ef1427c6a2c8f14c78d5d20cf,067b31518a5ddf300aeed64b47c7f30f,067b3154585889de4fb640c1c0f108b2,067b315686df1478b7061ac29c826679,067b31596af1f9e944d02b94f033185e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:40:59.033640+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-04-saying-what-you-want
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

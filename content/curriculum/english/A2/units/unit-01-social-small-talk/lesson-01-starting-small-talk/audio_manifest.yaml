@@ -1,5 +1,5 @@
 lesson_key: lesson-01-starting-small-talk
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-01-starting-small-talk/listening-English_Aussie_Bloke-20260612T124704Z.wav
-  duration_seconds: 21.5
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-01-starting-small-talk/listening-English_Aussie_Bloke-20260612T124704Z.wav
-  trace_id: 067b32b2c346db4776b8275391d70c84,067b32b47ef3683495238cf6766cc1e4,067b32b77b354a635785691caf7a524c,067b32b90b1453aa66b4d4489ee91cc1,067b32bb3c8b45b7137091527e427cfa,067b32be4f168a339146da32949e2b9b,067b32c0506279088843902577d07a67,067b32c3edb827bd4d967bc9f44209d1
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:47:04.241919+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

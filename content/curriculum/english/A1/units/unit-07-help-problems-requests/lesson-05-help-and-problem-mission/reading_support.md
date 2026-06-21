@@ -1,6 +1,6 @@
 # Reading Support
 
-Alya does not understand and cannot open a file. Dimas helps her. Alya sends a screenshot, clicks a button, and the file works.
+Ben does not understand and cannot open a file. Dimas helps her. Ben sends a screenshot, clicks a button, and the file works.
 
 ## Check
 

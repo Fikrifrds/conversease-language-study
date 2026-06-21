@@ -1,14 +1,14 @@
 scenario_key: saying_your_name_class
 mode: lesson_practice_coach
 level_code: A1
-opening_line: Hi, my name is Sara. What is your name?
+opening_line: Hi, my name is Omar. What is your name?
 learner_goal: Say your name, respond politely, and use a simple nickname phrase.
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: Hi, my name is Sara. What is your name?
+- coach: Hi, my name is Omar. What is your name?
   hint: 'Jawab dengan pola: My name is ... atau I''m ...'
   sample_answer: My name is Arif. Nice to meet you.
   focus: Saying your name

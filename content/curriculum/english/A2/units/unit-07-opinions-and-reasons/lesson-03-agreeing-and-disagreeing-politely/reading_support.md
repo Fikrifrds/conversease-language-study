@@ -1,6 +1,6 @@
 # Reading Support
 
-Hilmi says the restaurant is the best. Mina disagrees politely, agrees the food is good, but says the service is slow.
+Hilmi says the restaurant is the best. Faris disagrees politely, agrees the food is good, but says the service is slow.
 
 ## Check
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-handling-a-simple-complaint
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-04-handling-a-simple-complaint/listening-English_Aussie_Bloke-20260612T131157Z.wav
-  duration_seconds: 23.73
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-04-handling-a-simple-complaint/listening-English_Aussie_Bloke-20260612T131157Z.wav
-  trace_id: 067b388945338062bf1d16b13c496b57,067b388cda10b03860e5f50f41283ff6,067b388ed1f110eac7c5eb3afcaa9b7a,067b3890865e46e735e8bc662123a519,067b38932055cc42148b2cc13600fa31,067b3895976a33871aa609c1e7dad4d3,067b38985ad85a53e14a32197d585a96,067b389a7573ffb7409bfd1efc408208
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:11:57.949457+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

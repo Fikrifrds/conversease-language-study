@@ -1,5 +1,5 @@
 lesson_key: lesson-03-asking-for-recommendations
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-English_Aussie_Bloke-20260612T131131Z.wav
-  duration_seconds: 26.36
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-English_Aussie_Bloke-20260612T131131Z.wav
-  trace_id: 067b386f015ab521486664cb91a2ff23,067b3871be83f87f20a191428d929277,067b3874637ecb47b53985e292067f1c,067b38760799ab157009bd97a0d20e28,067b3879baa38c5af575df9d74f0f119,067b387b3a2086f7f62241ac3118b5d3,067b387e58b949f4be9691cb84855a27,067b388079d334046a6ff7bde4d84d6c
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:11:31.370128+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

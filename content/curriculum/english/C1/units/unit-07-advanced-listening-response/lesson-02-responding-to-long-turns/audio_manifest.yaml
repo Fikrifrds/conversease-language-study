@@ -1,5 +1,5 @@
 lesson_key: lesson-02-responding-to-long-turns
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-English_Aussie_Bloke-20260612T140040Z.wav
-  duration_seconds: 42.05
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-English_Aussie_Bloke-20260612T140040Z.wav
-  trace_id: 067b43ef95d7e096eb2a77468b1c8999,067b43f4c6e8528072ad12300963f4be,067b43f8eca76328d509e5c5f6425956,067b43fad806e947ed6881658dcc2cfc,067b43fdbd2f6488e5b3dedabb28e402,067b43ff1869d40cebcc83e7e6f9ba59,067b4402c41be5e6e1df7641c10bd4a0,067b440484adea4f6a9db6ef6b073236
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T14:00:40.764361+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

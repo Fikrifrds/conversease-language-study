@@ -1,5 +1,5 @@
 lesson_key: lesson-03-describing-a-simple-experience
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-06-past-experiences/lesson-03-describing-a-simple-experience/listening-3nav5pHC1EYvWOd5LmnA-20260617T173117Z.wav
-  duration_seconds: 24.66
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Rami: kr4VZw8MSZMHE0y2m40n
-    Sara: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
+    Ahmad: RjFuvnufLX42TYe37ekK
   line_count: 8
-  script_content_hash: 0ab9973ab20e84a97864f5ec40f90910036a06cc17ec3aab529bafb7ce418ae2
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-06-past-experiences/lesson-03-describing-a-simple-experience/listening-3nav5pHC1EYvWOd5LmnA-20260617T173117Z.wav
-  trace_id: 4kPfEUhsAatoOIIXUP8q,vMYMj67nuez0bV6mc4hr,NpCpeNLkAcYRUzGq5F0Z,k4SA6tCmiCMaSO46omZu,iUWvHTBN6CIBN3uEL4HN,xZS15naKI2q4ebxabqgu,l8J1OKdZd4zuHguA7VHB,6BS8uRWPgqBw1io3yyPp
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:31:17.938245+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

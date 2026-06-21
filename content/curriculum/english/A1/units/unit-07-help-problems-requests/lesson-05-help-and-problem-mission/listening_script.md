@@ -1,14 +1,14 @@
 # Dialogue Script
 
-**Alya:** Sorry, I don't understand.
+**Ben:** Sorry, I don't understand.
 **Dimas:** That's okay. What is the problem?
-**Alya:** I can't open this file.
+**Ben:** I can't open this file.
 **Dimas:** Can you send me a screenshot?
-**Alya:** Sure. Can you wait a minute?
+**Ben:** Sure. Can you wait a minute?
 **Dimas:** No problem.
-**Alya:** Here is the screenshot.
+**Ben:** Here is the screenshot.
 **Dimas:** Good. Click this button.
-**Alya:** (laughs) It works. Thank you for your help.
+**Ben:** (laughs) It works. Thank you for your help.
 
 ## Audio Direction
 

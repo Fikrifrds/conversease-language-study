@@ -1,5 +1,5 @@
 lesson_key: lesson-05-community-culture-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-English_Aussie_Bloke-20260612T131939Z.wav
-  duration_seconds: 33.75
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-English_Aussie_Bloke-20260612T131939Z.wav
-  trace_id: 067b3a55f729632d96f79d80ee667728,067b3a589a47b506ceaf703fade606eb,067b3a5bd453e79ed24fe05a1602e34f,067b3a5d149cee285e769708d5674e16,067b3a60ff1357674bb0cb00d8ae21e2,067b3a63e7fed0cdb06ba705455c1ec9,067b3a658477ef883ec847a9f8660c83,067b3a6835b8d7c6ec0e676444d2f3aa
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:19:39.605276+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

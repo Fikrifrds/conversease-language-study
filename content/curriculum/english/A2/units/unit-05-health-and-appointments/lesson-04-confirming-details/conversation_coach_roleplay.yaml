@@ -18,7 +18,7 @@ turns:
   - right
 - coach: Yes, that's right.
   hint: Sebutkan nama dan eja.
-  sample_answer: My name is Mina Park. P-A-R-K.
+  sample_answer: My name is Raka Park. P-A-R-K.
   focus: Give name and spelling
   expected_keywords:
   - my name is
@@ -32,7 +32,7 @@ turns:
   - 0812
 target_phrases:
 - Let me confirm the time.
-- My name is Mina Park.
+- My name is Raka Park.
 - P-A-R-K.
 rubric:
   speaking:

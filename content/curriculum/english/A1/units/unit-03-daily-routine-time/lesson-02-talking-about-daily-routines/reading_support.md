@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Alya: What do you do in the morning?
+Dimas: What do you do in the morning?
 Ben: I wake up at six.
-Alya: What do you do after that?
+Dimas: What do you do after that?
 Ben: I study English at seven.
 ```
 

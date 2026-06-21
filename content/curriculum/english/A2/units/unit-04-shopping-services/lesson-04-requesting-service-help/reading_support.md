@@ -1,6 +1,6 @@
 # Reading Support
 
-Lina asks a staff member for help finding batteries. The staff says the batteries are next to the cash register. Lina thanks the staff.
+Adi asks a staff member for help finding batteries. The staff says the batteries are next to the cash register. Adi thanks the staff.
 
 ## Check
 

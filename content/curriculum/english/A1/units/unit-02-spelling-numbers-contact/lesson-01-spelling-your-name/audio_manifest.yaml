@@ -1,26 +1,28 @@
 lesson_key: lesson-01-spelling-your-name
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260612T123219Z.wav
-  duration_seconds: 16.08
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Officer: English_CalmWoman
+    Officer: English_Trustworth_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_Aussie_Bloke-20260612T123219Z.wav
-  trace_id: 067b2f464abdbed69133338d759afed9,067b2f486b92870586f5cc6e59d10b66,067b2f4af553a73b4a70d730efe7066b,067b2f4cc58b87f65961c53b92c565ef,067b2f4f63fe3262437d57788289ec7e,067b2f52a72b087842f05d8e1bb1728a
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:32:19.948553+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

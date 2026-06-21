@@ -1,6 +1,6 @@
 # Reading Support
 
-Alya is going to visit her parents this weekend. They live in Bandung. She is taking the train on Saturday morning.
+Ben is going to visit her parents this weekend. They live in Bandung. She is taking the train on Saturday morning.
 
 ## Check
 

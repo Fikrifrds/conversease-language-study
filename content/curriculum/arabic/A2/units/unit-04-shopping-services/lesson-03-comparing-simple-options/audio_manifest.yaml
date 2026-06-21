@@ -1,5 +1,5 @@
 lesson_key: lesson-03-comparing-simple-options
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-3nav5pHC1EYvWOd5LmnA-20260617T172910Z.wav
-  duration_seconds: 19.1
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Rami: kr4VZw8MSZMHE0y2m40n
+    Ahmad: RjFuvnufLX42TYe37ekK
+    Rami: yXEnnEln9armDCyhkXcA
   line_count: 6
-  script_content_hash: a5eb5af37d0bfbb1736478770f7635473357d9043243e4ede577062a156a9951
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-3nav5pHC1EYvWOd5LmnA-20260617T172910Z.wav
-  trace_id: riUgIdHFOFuLxTJnwK4A,4xmLQERJycnkuYhO1lTZ,CutUwypNsuZsfiiWCNE3,OimkzkouKVoLkTgBzzOv,rjpRHCL0YCkF8yALUIY7,49OCUil1bsxbQg3geAOe
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:29:10.169792+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

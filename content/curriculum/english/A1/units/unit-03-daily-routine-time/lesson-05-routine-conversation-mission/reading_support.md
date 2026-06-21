@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Alya: Hi, Ben. What time do you wake up?
+Dimas: Hi, Ben. What time do you wake up?
 Ben: I wake up at six.
-Alya: When do you study English?
+Dimas: When do you study English?
 Ben: I study on Monday and Wednesday at seven.
 ```
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-a2-final-conversation
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-05-a2-final-conversation/listening-English_Aussie_Bloke-20260612T130336Z.wav
-  duration_seconds: 29.32
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 10
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-05-a2-final-conversation/listening-English_Aussie_Bloke-20260612T130336Z.wav
-  trace_id: 067b369017e8a2fec547a06db7f01b56,067b369240f29bb6d1734a9a292e2582,067b36954ffc897feb0ceb71249025c9,067b3697f8d4ba202bfcdd1b21edf53a,067b3699f31b299f8d4aba799cd5c3b3,067b369b9f41b9af876de1dc34d202fb,067b369d9820d487b091400e1011fa9a,067b36a01b415897958395f39bbc05f8,067b36a32fae1375a42adc84f94d1177,067b36a5927db08f529d8f9328676f47
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:03:36.234999+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

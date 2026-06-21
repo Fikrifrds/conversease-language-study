@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { AppShell } from "@/components/app-shell";
 import { LessonGatedBody } from "@/components/lesson-gated-body";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
-import { SimpleMarkdown } from "@/components/simple-markdown";
 import { StudyDayMarker } from "@/components/study-day-marker";
 import { versionedAssetSrc } from "@/lib/assets";
 import { lessonCatalog, lessonsBySlug, lessonPlacementLabel } from "@/lib/data";
@@ -18,11 +17,6 @@ const ARABIC_SECTION_LABELS: Record<string, string> = {
   "Conversation Coach": "Roleplay Terarah"
 };
 
-const SITUATION_SETUP_COPY = {
-  arabic: "Situasi Latihan",
-  default: "Situation Setup"
-};
-
 export function generateStaticParams() {
   return lessonCatalog.map((lesson) => ({ slug: lesson.slug }));
 }
@@ -35,7 +29,6 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
   }
 
   const isArabic = lesson.language === "arabic";
-  const situationSetupLabel = isArabic ? SITUATION_SETUP_COPY.arabic : SITUATION_SETUP_COPY.default;
   const progressSections = lesson.sections.map((section) =>
     isArabic ? ARABIC_SECTION_LABELS[section.label] ?? section.label : section.label
   );
@@ -61,14 +54,6 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             </div>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">{lesson.title}</h1>
             <p className="mt-4 rounded-lg bg-mint p-4 leading-7 text-ink/80">{lesson.conversationGoal}</p>
-            <div className="mt-4 rounded-lg border border-ink/10 bg-white p-4">
-              <SimpleMarkdown markdown={lesson.conversationGoalDetails} />
-            </div>
-
-            <section className="mt-6">
-              <h2 className="text-xl font-semibold">{situationSetupLabel}</h2>
-              <p className="mt-2 leading-7 text-ink/70">{lesson.setup}</p>
-            </section>
 
             {lesson.visuals ? (
               <section className="mt-6">

@@ -1,10 +1,10 @@
 vocabulary:
 - word: nice
   meaning_id: ramah/menyenangkan
-  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice to meet you, Maya. I''m Omar."'
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Nice to meet you, Arif. I''m Omar."'
 - word: meet
   meaning_id: bertemu
-  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Nice to meet you, Maya. I''m Omar."'
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Nice to meet you, Arif. I''m Omar."'
 - word: from
   meaning_id: dari
   usage_note: Dipakai untuk asal kota atau negara.

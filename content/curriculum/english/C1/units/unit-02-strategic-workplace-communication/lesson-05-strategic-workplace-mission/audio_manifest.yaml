@@ -1,5 +1,5 @@
 lesson_key: lesson-05-strategic-workplace-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-English_Aussie_Bloke-20260612T134758Z.wav
-  duration_seconds: 39.94
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-English_Aussie_Bloke-20260612T134758Z.wav
-  trace_id: 067b40f7e0d1a99dd72f49a0aa7a79f5,067b40fa6ae3899aa523db3837b51115,067b40fde989b141e54fff71f417f460,067b40ff936e88d08262842c9c03f2b7,067b4102b8c94828fdbed5bce21310cb,067b41042e4d1f5e77989b5191318278,067b41088830705ab20ed419eb8d3e99,067b410b808baef80cd3b7f234817da7
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:47:58.935184+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

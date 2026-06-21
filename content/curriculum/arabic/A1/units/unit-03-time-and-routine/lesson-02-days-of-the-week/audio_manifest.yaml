@@ -1,5 +1,5 @@
 lesson_key: lesson-02-days-of-the-week
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-02-days-of-the-week/listening-3nav5pHC1EYvWOd5LmnA-20260617T043917Z.wav
-  duration_seconds: 10.72
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Ahmad: RjFuvnufLX42TYe37ekK
-    Noura: kdUY91gH5xyDHapxlthT
+    Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 5
-  script_content_hash: a341e2356619b44a6445bea33413686d2beee982c72ae2c083eb76bea11ffb3f
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-03-time-and-routine/lesson-02-days-of-the-week/listening-3nav5pHC1EYvWOd5LmnA-20260617T043917Z.wav
-  trace_id: wDuQEMdZ4wNAMHivCNzo,XJRA6EYvGciTcdp5khpp,cY3zrMmG6xIlXkO6ZGC6,z4hBIfcs3V38FfkNbWEl,hMLARQG0aPodzmggMlMX
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:39:17.373845+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-accepting-and-declining
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-03-accepting-and-declining/listening-English_Aussie_Bloke-20260612T125030Z.wav
-  duration_seconds: 17.34
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
     Dimas: English_Diligent_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-03-accepting-and-declining/listening-English_Aussie_Bloke-20260612T125030Z.wav
-  trace_id: 067b3388226586809ed1376f5e67bb15,067b338a6ab3485d999788491992b63c,067b338c04f74b86038206952aa3d01e,067b338fbbd054313c1e68668b726b91,067b33929f63bf043789ac401cd22888,067b33945e2b9e5b0cb5ec4083831799
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:50:30.443073+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

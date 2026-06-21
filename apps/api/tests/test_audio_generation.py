@@ -143,7 +143,7 @@ class AudioGenerationTest(unittest.TestCase):
 
         voices = assign_dialogue_voices(turns, fallback_voice_id="English_expressive_narrator")
 
-        self.assertEqual(voices["Officer"], "English_CalmWoman")
+        self.assertEqual(voices["Officer"], "English_Trustworth_Man")
         self.assertEqual(voices["Dimas"], "English_Diligent_Man")
         self.assertNotIn(voices["Dimas"], {"English_radiant_girl", "English_Graceful_Lady"})
 
@@ -229,7 +229,7 @@ class AudioGenerationTest(unittest.TestCase):
         )
 
         self.assertEqual(voices["Khalid"], "Arabic_FriendlyGuy")
-        self.assertEqual(voices["Cafe Staff"], "Arabic_CalmWoman")
+        self.assertEqual(voices["Cafe Staff"], "Arabic_FriendlyGuy")
         self.assertEqual(voices["Shopkeeper"], "Arabic_FriendlyGuy")
 
     def test_arabic_defaults_to_elevenlabs_provider(self):
@@ -300,7 +300,6 @@ class AudioGenerationTest(unittest.TestCase):
     def test_elevenlabs_arabic_staff_roles_use_role_specific_voices(self):
         turns = [
             _turn("Khalid", "أين المقهى؟"),
-            _turn("Layla", "المقهى بجانب المكتبة."),
             _turn("Cafe Staff", "ماذا تريد؟"),
             _turn("Shopkeeper", "السعر خمسة ريالات."),
         ]
@@ -312,8 +311,7 @@ class AudioGenerationTest(unittest.TestCase):
         )
 
         self.assertEqual(voices["Khalid"], "t9akNmCDhz230CEXOYmn")
-        self.assertEqual(voices["Layla"], "kdUY91gH5xyDHapxlthT")
-        self.assertEqual(voices["Cafe Staff"], "gVzwmdZzRgBrNjXaTmi5")
+        self.assertEqual(voices["Cafe Staff"], "yXEnnEln9armDCyhkXcA")
         self.assertEqual(voices["Shopkeeper"], "3GnbqfjaW8xI6hRTVx4Y")
 
     def test_elevenlabs_arabic_salma_and_lina_use_female_voices(self):

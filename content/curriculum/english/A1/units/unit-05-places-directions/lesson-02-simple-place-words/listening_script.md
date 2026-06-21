@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Mina:** Where are you going?
+**Faris:** Where are you going?
 **Dimas:** I'm going to the cafe.
-**Mina:** Is the cafe near here?
+**Faris:** Is the cafe near here?
 **Dimas:** Yes. It is near the library.
-**Mina:** Great. I am going to the library.
+**Faris:** Great. I am going to the library.
 **Dimas:** Let's go together.
 
 ## Audio Direction

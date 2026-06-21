@@ -2,14 +2,14 @@ hero:
   src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png
   width: 1672
   height: 941
-  alt: Alya dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.
+  alt: Dimas dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.
   caption: Mulai percakapan sederhana di kelas nyata dengan lawan bicara dan lokasi yang jelas.
 cards:
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-good-morning.png
     width: 1254
     height: 1254
     label: Good morning
-    alt: Alya faceless berjilbab lebar gelap masuk kelas Indonesia dan memberi salam pagi.
+    alt: Dimas faceless berpakaian sopan masuk kelas Indonesia dan memberi salam pagi.
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/card-how-are-you.png
     width: 1254
     height: 1254
@@ -19,4 +19,4 @@ cards:
     width: 1254
     height: 1254
     label: See you later
-    alt: Alya faceless berjilbab lebar gelap berpamitan di pintu kelas Indonesia.
+    alt: Dimas faceless berpakaian sopan berpamitan di pintu kelas Indonesia.

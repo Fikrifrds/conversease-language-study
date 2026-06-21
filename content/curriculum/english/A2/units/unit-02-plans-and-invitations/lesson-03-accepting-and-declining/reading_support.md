@@ -1,6 +1,6 @@
 # Reading Support
 
-Alya invites Dimas to dinner tonight. Dimas declines politely because he has a meeting. Alya responds kindly and they suggest another time.
+Ben invites Dimas to dinner tonight. Dimas declines politely because he has a meeting. Ben responds kindly and they suggest another time.
 
 ## Check
 

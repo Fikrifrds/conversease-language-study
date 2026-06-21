@@ -1,27 +1,27 @@
 questions:
 - type: multiple_choice
-  prompt: What is Mina's routine?
+  prompt: What is Faris's routine?
   choices:
   - She studies English at seven.
   - She wakes up at ten.
   - She buys a pen.
   answer: She studies English at seven.
 - type: multiple_choice
-  prompt: Where does Mina want to go?
+  prompt: Where does Faris want to go?
   choices:
   - The cafe.
   - The library.
   - The office.
   answer: The cafe.
 - type: multiple_choice
-  prompt: What does Mina order?
+  prompt: What does Faris order?
   choices:
   - One tea.
   - One coffee.
   - One sandwich.
   answer: One tea.
 - type: multiple_choice
-  prompt: Why does Mina ask Ben to repeat?
+  prompt: Why does Faris ask Ben to repeat?
   choices:
   - She wants to hear the price again.
   - She wants directions again.

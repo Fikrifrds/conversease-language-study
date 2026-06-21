@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Mina:** Hi Ben. (sighs) I'm a bit tired today.  
-**Ben:** Oh no. Are you okay?  
-**Mina:** Yeah, I'm fine. I didn't sleep well.  
-**Ben:** I'm sorry to hear that.  
-**Mina:** It's okay. How about you?  
-**Ben:** I'm good. I finished my project.  
-**Mina:** (chuckle) That's great! Nice work.  
+**Faris:** Hi Ben. (sighs) I'm a bit tired today.
+**Ben:** Oh no. Are you okay?
+**Faris:** Yeah, I'm fine. I didn't sleep well.
+**Ben:** I'm sorry to hear that.
+**Faris:** It's okay. How about you?
+**Ben:** I'm good. I finished my project.
+**Faris:** (chuckle) That's great! Nice work.
 **Ben:** Thanks!
 
 ## Audio Direction

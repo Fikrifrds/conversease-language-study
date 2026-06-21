@@ -5,7 +5,7 @@ Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan per
 Kamu akan berlatih mengatakan:
 
 - أُوَافِقُكَ.
-- أُوَافِقُكِ فِي هَذَا.
+- أُوَافِقُكَ فِي هَذَا.
 - لَا أُوَافِقُ تَمَامًا.
 - فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.
 - أَفْهَمُ رَأْيَكَ.

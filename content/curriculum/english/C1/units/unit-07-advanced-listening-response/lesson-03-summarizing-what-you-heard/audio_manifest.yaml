@@ -1,5 +1,5 @@
 lesson_key: lesson-03-summarizing-what-you-heard
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/listening-English_Aussie_Bloke-20260612T140111Z.wav
-  duration_seconds: 28.02
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/listening-English_Aussie_Bloke-20260612T140111Z.wav
-  trace_id: 067b4412d56e1a7cd83258e05a46c328,067b4415dbe6116b5cc8e3da8ea71158,067b441778b94b9f9396b5cc975d74ff,067b44191697d4d2e9b5105a29884728,067b441cecaf420e80bb8c6d9091f14e,067b441f91254d74a45e6ed9741b5fa7,067b4422c67779a70d8c139688713df1,067b44240560ac20fa1bb94c87801810
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T14:01:11.417295+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

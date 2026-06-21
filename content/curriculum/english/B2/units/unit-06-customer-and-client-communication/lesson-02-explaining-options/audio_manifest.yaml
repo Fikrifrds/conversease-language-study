@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-options
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-English_Aussie_Bloke-20260612T133556Z.wav
-  duration_seconds: 24.7
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-English_Aussie_Bloke-20260612T133556Z.wav
-  trace_id: 067b3e29015b0b73b6195afb9d979c8c,067b3e2b0d8c2ad68a121383b2cf2dfa,067b3e2e02d32cdde15e8c5b3dc18609,067b3e304ed2dfc102ae754379a81fae,067b3e320ad391b7560e89d0112e12cc,067b3e3517a6a23ffcba2ea3ba5e30cb,067b3e37613b3ce300c90a9671b063ae,067b3e3a03fb365e059102f8b32a2933
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:35:56.502980+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

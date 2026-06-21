@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Mina:** Can you send me the link, please?
+**Faris:** Can you send me the link, please?
 **Ben:** Yes, of course.
-**Mina:** Thank you.
+**Faris:** Thank you.
 **Ben:** Can you wait a minute?
-**Mina:** Sure. No problem.
+**Faris:** Sure. No problem.
 **Ben:** Here is the link.
-**Mina:** Great. Thanks.
+**Faris:** Great. Thanks.
 
 ## Audio Direction
 

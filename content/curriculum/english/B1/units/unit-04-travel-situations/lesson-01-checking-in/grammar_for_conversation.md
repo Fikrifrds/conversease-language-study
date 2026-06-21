@@ -11,5 +11,5 @@ Use **Reservation under + name**.
 
 Examples:
 
-- I have a reservation under Mina Kim.
+- I have a reservation under Faris Kim.
 - It's under Faris Chen.

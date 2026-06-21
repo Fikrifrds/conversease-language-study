@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Mina:** Excuse me. I'm looking for a phone charger.  
-**Staff:** Sure. What kind?  
-**Mina:** A USB-C charger, please.  
-**Staff:** Okay. Do you need a cable too?  
-**Mina:** No, just the charger. Do you have it?  
-**Staff:** Yes, we do. It's over here.  
-**Mina:** Great. Thank you.
+**Raka:** Excuse me. I'm looking for a phone charger.
+**Staff:** Sure. What kind?
+**Raka:** A USB-C charger, please.
+**Staff:** Okay. Do you need a cable too?
+**Raka:** No, just the charger. Do you have it?
+**Staff:** Yes, we do. It's over here.
+**Raka:** Great. Thank you.
 
 ## Audio Direction
 

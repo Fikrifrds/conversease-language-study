@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Alya: What time is the class?
+Dimas: What time is the class?
 Ben: It's at nine o'clock.
-Alya: In the morning?
+Dimas: In the morning?
 Ben: Yes, in the morning.
 ```
 

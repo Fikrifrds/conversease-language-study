@@ -1,5 +1,5 @@
 lesson_key: lesson-05-debate-analysis-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening-English_Aussie_Bloke-20260612T135357Z.wav
-  duration_seconds: 44.2
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening-English_Aussie_Bloke-20260612T135357Z.wav
-  trace_id: 067b425e3fc73c3161c443be12722f6e,067b4261f3bfd9a9c80ce1ff841f4992,067b42649a0ef2c8e28e4b3f9b60f794,067b4266dd4b5f64bdc0eea08dfb9354,067b42693b3867fd49301f946d32fbbd,067b426b7a6cc395702ce5287733550b,067b426f053032ce8ccc81ea4985c659,067b427127d720aca11cd637a99d555c
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:53:57.735320+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

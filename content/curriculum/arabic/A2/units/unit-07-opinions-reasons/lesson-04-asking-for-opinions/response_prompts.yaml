@@ -4,9 +4,9 @@ prompts:
   acceptable_responses:
   - مَا رَأْيُكَ فِي هَذَا؟
 - prompt: 'Ucapkan dalam bahasa Arab: Apa pendapatmu tentang pilihan kedua?'
-  target_response: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+  target_response: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟
   acceptable_responses:
-  - مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+  - مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟
 - prompt: 'Ucapkan dalam bahasa Arab: Mana dari keduanya yang lebih baik?'
   target_response: أَيُّهُمَا أَفْضَلُ؟
   acceptable_responses:

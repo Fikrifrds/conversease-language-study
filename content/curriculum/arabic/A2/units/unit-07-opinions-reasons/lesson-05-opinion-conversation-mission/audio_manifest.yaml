@@ -1,5 +1,5 @@
 lesson_key: lesson-05-opinion-conversation-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-07-opinions-reasons/lesson-05-opinion-conversation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T173248Z.wav
-  duration_seconds: 24.66
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Khalid: t9akNmCDhz230CEXOYmn
-    Layla: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
   line_count: 8
-  script_content_hash: 66d6de43854d7bac7da7f070013b2f1b0cc7623c65ee2836ccff6cf275df01f1
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-07-opinions-reasons/lesson-05-opinion-conversation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T173248Z.wav
-  trace_id: 6h2dlmPv8IpeC84M4OGw,eFIFjFgFu7rBPztVukw7,z9BJmadNJo2Yzpc7uZZo,fCkvv1hqkucKuQaXkOnM,562fN7ZZYxnyWtSzdSPG,ZvfN48tqfWfcAseHxuRl,TfU3KaBNzxRqxPcFSdA4,Gog4P5pWay27fLzvxt8X
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:32:48.037388+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

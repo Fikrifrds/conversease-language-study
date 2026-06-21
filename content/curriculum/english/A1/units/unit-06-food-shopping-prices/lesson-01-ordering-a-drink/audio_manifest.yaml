@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260612T123947Z.wav
-  duration_seconds: 13.79
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_Aussie_Bloke-20260612T123947Z.wav
-  trace_id: 067b3102df6a00b72d1b173b82b8536d,067b3104981d680d1bb815300235f164,067b3106e3bd4837554040ba3e877344,067b31092034d6accfa75271bcec8870,067b310b0f168ce879a241a151affe4e,067b310d840081075893b91a3571cd39,067b310f8e604d1cf0b06a15ce8a2256,067b31111479778254bf77b8f907b52e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:39:47.097449+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-01-ordering-a-drink
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

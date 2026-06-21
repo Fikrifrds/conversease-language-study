@@ -1,26 +1,27 @@
 lesson_key: lesson-05-work-study-conversation-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_Aussie_Bloke-20260612T123737Z.wav
-  duration_seconds: 22.71
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_Aussie_Bloke-20260612T123737Z.wav
-  trace_id: 067b307d376af2bb4759abb44f06b58a,067b307fe3d8d67d60f483e9349e5289,067b3082072bbb03cc6227a4178ed2a0,067b30859c689cab1c0c30deb2f17bce,067b30874487b06b6f7eef5612b8b6a9,067b308928905d6cbd96d2aa12e0dac2,067b308cbab5c1f905e38c371e0b4bc8,067b308f5f7323fb8ca81e3bf06c974c
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:37:37.492438+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

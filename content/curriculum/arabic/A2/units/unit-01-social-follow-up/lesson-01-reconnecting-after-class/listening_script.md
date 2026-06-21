@@ -1,12 +1,12 @@
 # Listening Script
 
-**Khalid:** السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.
-**Maryam:** وَعَلَيْكُمُ السَّلَامُ يَا خَالِدُ. كَيْفَ حَالُكَ؟
-**Khalid:** أَنَا بِخَيْرٍ، وَأَنْتِ؟
-**Maryam:** أَنَا بِخَيْرٍ. كَانَ الدَّرْسُ جَيِّدًا.
+**Khalid:** السَّلَامُ عَلَيْكَ يَا كَرِيمُ.
+**Karim:** وَعَلَيْكُمُ السَّلَامُ يَا خَالِدُ. كَيْفَ حَالُكَ؟
+**Khalid:** أَنَا بِخَيْرٍ، وَأَنْتَ؟
+**Karim:** أَنَا بِخَيْرٍ. كَانَ الدَّرْسُ جَيِّدًا.
 **Khalid:** نَعَمْ، وَسَأُرَاجِعُ الْكَلِمَاتِ الْيَوْمَ.
-**Maryam:** جَيِّدٌ. إِلَى اللِّقَاءِ غَدًا.
+**Karim:** جَيِّدٌ. إِلَى اللِّقَاءِ غَدًا.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/female voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/male voices according to speaker names.

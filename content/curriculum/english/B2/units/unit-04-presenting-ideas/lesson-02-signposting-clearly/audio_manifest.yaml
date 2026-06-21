@@ -1,5 +1,5 @@
 lesson_key: lesson-02-signposting-clearly
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-English_Aussie_Bloke-20260612T133104Z.wav
-  duration_seconds: 28.49
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-English_Aussie_Bloke-20260612T133104Z.wav
-  trace_id: 067b3d011f098c99f83ed2b717a41f2b,067b3d04ab49d98b2420ed593dda8b44,067b3d06a8c69b0deaa05a792987d93f,067b3d09360c7f68bedd62e41efbe04c,067b3d0bbce644baded367fe23b3a66f,067b3d0eb9a547b1093276984ed3dd02,067b3d0f9974bac248dc599dd0a11641,067b3d126f411d9ac45d9ccc64c43914,067b3d147ebe4ec1c69ce1f60aeb48ef
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:31:04.306493+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

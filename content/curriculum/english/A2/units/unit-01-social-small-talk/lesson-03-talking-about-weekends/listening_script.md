@@ -1,13 +1,13 @@
 # Dialogue Script
 
-**Dimas:** Hi Alya. Any plans for the weekend?  
-**Alya:** Yes. I'm going to visit my parents.  
-**Dimas:** Nice. Where do they live?  
-**Alya:** They live in Bandung.  
-**Dimas:** How are you getting there?  
-**Alya:** I'm taking the train on Saturday morning.  
-**Dimas:** Sounds good. Have a great weekend.  
-**Alya:** Thanks! You too.
+**Dimas:** Hi Ben. Any plans for the weekend?
+**Ben:** Yes. I'm going to visit my parents.
+**Dimas:** Nice. Where do they live?
+**Ben:** They live in Bandung.
+**Dimas:** How are you getting there?
+**Ben:** I'm taking the train on Saturday morning.
+**Dimas:** Sounds good. Have a great weekend.
+**Ben:** Thanks! You too.
 
 ## Audio Direction
 

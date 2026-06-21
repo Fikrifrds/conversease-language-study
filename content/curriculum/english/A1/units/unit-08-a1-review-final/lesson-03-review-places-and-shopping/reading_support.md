@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina asks for the cafe. Ben gives simple directions. Mina finds the cafe and buys one tea for two dollars.
+Faris asks for the cafe. Ben gives simple directions. Faris finds the cafe and buys one tea for two dollars.
 
 ## Check
 

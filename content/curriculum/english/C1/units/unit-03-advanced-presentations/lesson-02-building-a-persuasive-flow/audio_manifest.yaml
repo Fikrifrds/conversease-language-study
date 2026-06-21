@@ -1,5 +1,5 @@
 lesson_key: lesson-02-building-a-persuasive-flow
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-English_Aussie_Bloke-20260612T134857Z.wav
-  duration_seconds: 26.92
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-English_Aussie_Bloke-20260612T134857Z.wav
-  trace_id: 067b413342ec61e61629c20d9592c150,067b41362f912ffacbdfeeece673d246,067b413888581f5efe3515f50f9641b7,067b413ad4a9e9858235b55539d2a781,067b413d4bf0a9af443e38dc2ce18c6e,067b4140698c5a6c325f27b073ed8b24,067b4143edbd1ec2446102cc35f062e7,067b4145076a497a0f886ea156d92153
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:48:57.238227+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

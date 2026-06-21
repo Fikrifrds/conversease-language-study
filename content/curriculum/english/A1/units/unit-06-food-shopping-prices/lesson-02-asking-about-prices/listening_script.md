@@ -1,11 +1,11 @@
 # Dialogue Script
 
 **Dimas:** Excuse me. How much is the coffee?
-**Sara:** It is two dollars.
+**Omar:** It is two dollars.
 **Dimas:** Two dollars?
-**Sara:** Yes, two dollars.
+**Omar:** Yes, two dollars.
 **Dimas:** How much is the cake?
-**Sara:** It is three dollars.
+**Omar:** It is three dollars.
 **Dimas:** Okay. Thank you.
 
 ## Audio Direction

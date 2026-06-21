@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Alya: Do you like English?
+Dimas: Do you like English?
 Ben: Yes, I like it.
-Alya: What do you like?
+Dimas: What do you like?
 Ben: I like speaking practice.
 ```
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-health-appointment-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-05-health-appointment-mission/listening-English_Aussie_Bloke-20260612T125730Z.wav
-  duration_seconds: 20.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Mina: English_Upbeat_Woman
-    Receptionist: English_radiant_girl
+    Raka: English_Upbeat_Woman
+    Receptionist: English_Gentle-voiced_man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-05-health-appointment-mission/listening-English_Aussie_Bloke-20260612T125730Z.wav
-  trace_id: 067b352968de552db08f7e3c84153d16,067b352b31f1aef47714c655f14b3911,067b352eb97403fcfb0e590aa96499c3,067b35304e4ae271bc93d5e6976d1da4,067b35338dfa98818545de11ddab2689,067b3535a904918c9125f672f57c5927,067b35388ac2463c950baaf8cf1b9a95
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:57:30.856766+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

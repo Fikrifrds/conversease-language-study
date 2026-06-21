@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Alya: When is the English class?
+Dimas: When is the English class?
 Ben: It's on Monday and Wednesday.
-Alya: What time?
+Dimas: What time?
 Ben: At seven in the evening.
 ```
 

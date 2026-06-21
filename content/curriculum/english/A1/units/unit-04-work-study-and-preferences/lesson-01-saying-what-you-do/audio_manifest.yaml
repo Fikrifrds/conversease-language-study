@@ -1,26 +1,27 @@
 lesson_key: lesson-01-saying-what-you-do
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260612T123612Z.wav
-  duration_seconds: 9.69
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_Aussie_Bloke-20260612T123612Z.wav
-  trace_id: 067b302fc21401779c149eb752eba473,067b30316b6d8f65f2c71fb217e54672,067b3033833a92187fde1f7052cd9f5c,067b303506919fbe0d388036b6a94201,067b30379cdf69437a254adb87c45c1a,067b30390121e622579eefe8b93b2e11
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:36:12.040679+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

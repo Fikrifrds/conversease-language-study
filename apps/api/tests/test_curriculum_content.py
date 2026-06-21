@@ -26,7 +26,7 @@ class CurriculumContentTest(unittest.TestCase):
         self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_class")
         self.assertEqual(
             lesson["roleplay"]["opening_line"],
-            "Hi, my name is Sara. What is your name?",
+            "Hi, my name is Omar. What is your name?",
         )
         self.assertIn("Conversation Coach Roleplay", lesson["sections"])
 

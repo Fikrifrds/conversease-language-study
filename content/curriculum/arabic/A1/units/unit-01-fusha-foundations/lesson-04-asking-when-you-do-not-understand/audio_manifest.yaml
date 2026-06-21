@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-when-you-do-not-understand
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T052346Z.wav
-  duration_seconds: 13.36
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Fatimah: v7UCHHCrHj1KBa4E41gb
+    Khalid: t9akNmCDhz230CEXOYmn
     Muallim: 3nav5pHC1EYvWOd5LmnA
   line_count: 5
-  script_content_hash: 4bea58b4e14ba3c9833b2aa236f824b3fc97b054aef97ae4f0b46f98cb6672c8
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/listening-3nav5pHC1EYvWOd5LmnA-20260617T052346Z.wav
-  trace_id: R2t3xDQdJCvKbr7pBCWB,4dmyKW0kgQUef9Nte8lx,pYgsAfWQ1AilfxvzVUUc,0scVD1LOXKOKKQnpL3LZ,wMdakwz47iGZp0RMMcu8
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T05:23:46.308843+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

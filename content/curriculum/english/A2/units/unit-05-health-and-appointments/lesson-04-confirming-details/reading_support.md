@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina confirms her appointment time and gives her name and phone number to the clinic.
+Raka confirms her appointment time and gives her name and phone number to the clinic.
 
 ## Check
 

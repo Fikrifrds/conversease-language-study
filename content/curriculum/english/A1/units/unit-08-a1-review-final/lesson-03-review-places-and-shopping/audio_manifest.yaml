@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260612T124506Z.wav
-  duration_seconds: 27.24
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_Aussie_Bloke-20260612T124506Z.wav
-  trace_id: 067b323597d25b38ea03d3b6981ed8a5,067b3238c99f5b884300aa42691df7f3,067b323a754896517b39217d67e84fc7,067b323cff9bddc0f6b5a58b28657a70,067b3241f7c8b9179dd2dd34cc26dacf,067b32438cdaf3c2676ebdf13bfb2914,067b3245e1063db47f1add370b299342,067b3248b4a8c8d942780f41d70db83d,067b324b22820e565013a43cb69686bc
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:45:06.671425+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-03-review-places-and-shopping
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

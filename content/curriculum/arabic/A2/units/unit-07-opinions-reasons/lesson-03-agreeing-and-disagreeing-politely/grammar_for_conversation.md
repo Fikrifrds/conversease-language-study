@@ -1,10 +1,10 @@
 # Pola Percakapan
 
-Gunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكِ kepada perempuan, dan لَا أُوَافِقُ تَمَامًا untuk kurang setuju.
+Gunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكَ kepada perempuan, dan لَا أُوَافِقُ تَمَامًا untuk kurang setuju.
 
 ```txt
 أُوَافِقُكَ.
-أُوَافِقُكِ فِي هَذَا.
+أُوَافِقُكَ فِي هَذَا.
 لَا أُوَافِقُ تَمَامًا.
 فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.
 ```

@@ -1,6 +1,6 @@
 # Reading Support
 
-Alya does not understand the instruction. She asks Ben to repeat. Then she understands and says thank you.
+Dimas does not understand the instruction. She asks Ben to repeat. Then she understands and says thank you.
 
 ## Check
 

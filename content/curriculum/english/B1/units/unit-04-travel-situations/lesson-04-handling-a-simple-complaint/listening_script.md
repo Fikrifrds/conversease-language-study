@@ -1,17 +1,17 @@
 # Dialogue Script
 
-**Mina:** Hi. There's a problem with my room.  
-**Ilham:** I'm sorry to hear that. What's wrong?  
-**Mina:** The air conditioning isn't working.  
-**Ilham:** Okay. Could you tell me your room number?  
-**Mina:** It's room 508.  
-**Ilham:** Thanks. We can send someone to take a look.  
-**Mina:** Could I change rooms if it can't be fixed?  
-**Ilham:** Yes, of course. We'll help you.  
+**Faris:** Hi. There's a problem with my room.
+**Ilham:** I'm sorry to hear that. What's wrong?
+**Faris:** The air conditioning isn't working.
+**Ilham:** Okay. Could you tell me your room number?
+**Faris:** It's room 508.
+**Ilham:** Thanks. We can send someone to take a look.
+**Faris:** Could I change rooms if it can't be fixed?
+**Ilham:** Yes, of course. We'll help you.
 
 ## Audio Direction
 
 - Level: B1
 - Speed: slow and natural
 - Tone: friendly, clear, helpful
-- Voices: Mina and Ilham
+- Voices: Faris and Ilham

@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Sara:** Can you speak English?
+**Omar:** Can you speak English?
 **Dimas:** I can speak a little.
-**Sara:** Can you write simple emails?
+**Omar:** Can you write simple emails?
 **Dimas:** Yes, I can.
-**Sara:** Can you join a meeting in English?
+**Omar:** Can you join a meeting in English?
 **Dimas:** Not yet, but I can try.
 
 ## Audio Direction

@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-causes
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-English_Aussie_Bloke-20260612T133830Z.wav
-  duration_seconds: 21.12
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-English_Aussie_Bloke-20260612T133830Z.wav
-  trace_id: 067b3ec2fdd345126415c1d45c6372b7,067b3ec4790027f6db3079a54be9694c,067b3ec6939401fdbca1c0c285b246b1,067b3ec978eb42811f079c3e1eaa7913,067b3ecbf4dc511c7364d258b453442a,067b3ece348da4823ebb874b7d4faf3d,067b3ed167f87b3d73b516e5c470a414,067b3ed3724c83189b3e8e56b13d1ac8
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:38:30.624013+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

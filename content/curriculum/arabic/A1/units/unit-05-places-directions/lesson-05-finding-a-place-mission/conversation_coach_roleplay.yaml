@@ -1,7 +1,7 @@
 scenario_key: arabic_finding_a_place_mission
 mode: lesson_practice_coach
 level_code: A1
-opening_line: إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي؟
+opening_line: إِلَى أَيْنَ تُرِيدُ أَنْ تَذْهَبَ؟
 learner_goal: 'Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi,
   dan mengikuti arahan singkat.'
 max_turns: 4
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي؟
+- coach: إِلَى أَيْنَ تُرِيدُ أَنْ تَذْهَبَ؟
   hint: 'Jawab dengan pola: أَيْنَ الْفَصْلُ؟'
   sample_answer: أَيْنَ الْفَصْلُ؟
   focus: 'Latihan frasa: Di mana kelas?'

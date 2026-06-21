@@ -1,5 +1,5 @@
 lesson_key: lesson-04-rescheduling
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-04-rescheduling/listening-English_Aussie_Bloke-20260612T125054Z.wav
-  duration_seconds: 22.15
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-04-rescheduling/listening-English_Aussie_Bloke-20260612T125054Z.wav
-  trace_id: 067b339cb8dafcc2e6622294e7babfc6,067b339ec17a75220f9ebfddbb98a433,067b33a0bc9110dcf3a140c6c65aceec,067b33a2aefd7575d7b8aa90fbc38079,067b33a545a99a53de41e51e2bf02837,067b33a792cc81a4f7a5da3ce9f3f9a5,067b33aaeffcc8b483b1a501cc2b5040,067b33aceea6b27641f508f238486b26
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:50:54.914583+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

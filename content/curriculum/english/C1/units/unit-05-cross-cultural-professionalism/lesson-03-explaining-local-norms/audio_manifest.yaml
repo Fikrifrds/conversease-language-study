@@ -1,5 +1,5 @@
 lesson_key: lesson-03-explaining-local-norms
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-English_Aussie_Bloke-20260612T135541Z.wav
-  duration_seconds: 27.54
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-English_Aussie_Bloke-20260612T135541Z.wav
-  trace_id: 067b42c9e3c6260fd2a6b8ad005d4bbe,067b42cb689c15dff68370c5918f27a7,067b42cf69a372af94d06fb01a88b2b3,067b42d1050176f5dc86cd5d3469528c,067b42d3a27f1eb28c0c1b9228d13c6f,067b42d651a83ebb9581d43a994791c0,067b42d86afe1ae4ebd2668f40f6006e,067b42da5ff19890428ac2396a9ba31e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:55:41.384828+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

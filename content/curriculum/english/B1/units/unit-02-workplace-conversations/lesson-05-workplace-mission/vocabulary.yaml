@@ -9,7 +9,7 @@ vocabulary:
     right?"'
 - word: update
   meaning_id: kabar terbaru
-  usage_note: 'Informasi terbaru tentang progres. Contoh: "Hi Mina. Quick update on the report?"'
+  usage_note: 'Informasi terbaru tentang progres. Contoh: "Hi Dimas. Quick update on the report?"'
 - word: progress
   meaning_id: kemajuan
   usage_note: 'Perkembangan menuju tujuan. Contoh: "I''m making good progress."'

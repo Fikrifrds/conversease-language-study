@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina and a friend discuss where to eat. They share opinions, give reasons with because, and respond politely.
+Raka and a friend discuss where to eat. They share opinions, give reasons with because, and respond politely.
 
 ## Check
 

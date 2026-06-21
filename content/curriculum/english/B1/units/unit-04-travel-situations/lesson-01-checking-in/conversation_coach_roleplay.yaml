@@ -16,7 +16,7 @@ turns:
   - check in
 - coach: Sure. Do you have a reservation?
   hint: Jawab dengan under + name.
-  sample_answer: Yes. I have a reservation under Mina Kim.
+  sample_answer: Yes. I have a reservation under Faris Kim.
   focus: Confirm reservation name
   expected_keywords:
   - reservation

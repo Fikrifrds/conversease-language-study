@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260612T124357Z.wav
-  duration_seconds: 19.5
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_Aussie_Bloke-20260612T124357Z.wav
-  trace_id: 067b31f99d840af64eaf75996c74d9a5,067b31fbd0f7b9682ac7db2bf99ceec0,067b31fe3568ed0daa4496c5f13950b8,067b3200761b2c90361c7f5097eb5297,067b320378b6ef833cfdc0114bece431,067b3205b49737a0b5d77a63e82743a9,067b3207eb3a4c621ddf50ef8a7c630c,067b320ace8985342f405474f0470696
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:43:57.313253+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-01-review-introductions
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

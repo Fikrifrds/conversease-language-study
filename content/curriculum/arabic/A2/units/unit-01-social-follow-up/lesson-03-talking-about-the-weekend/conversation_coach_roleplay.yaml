@@ -1,7 +1,7 @@
 scenario_key: arabic_talking_about_the_weekend
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ؟
+opening_line: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan kegiatan akhir pekan secara
   pendek: ke mana pergi, dengan siapa, dan bagaimana rasanya.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ؟
+- coach: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
   hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟'
   sample_answer: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟
   focus: 'Latihan frasa: Apa yang kamu lakukan pada akhir pekan?'

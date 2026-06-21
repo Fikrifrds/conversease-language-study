@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-English_Aussie_Bloke-20260612T124125Z.wav
-  duration_seconds: 20.33
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-English_Aussie_Bloke-20260612T124125Z.wav
-  trace_id: 067b3161baa6b3dead9d0480007dcff5,067b31648ef0fac853e5a42b88702a5f,067b3167e6b3fb2b7e0eaf62df6cde09,067b31698840b4b68ae6404a475a4f97,067b316c0f51865a2d63c1055972991a,067b316ee40804eac6109219b061df81,067b3171da89db4169816612d164540d,067b31734afe77837307b70000a04e08
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:41:25.830052+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-05-cafe-and-shop-mission
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

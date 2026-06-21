@@ -1,11 +1,11 @@
 # Dialogue Script
 
 **Dimas:** Excuse me. Can you help me?
-**Sara:** Sure. What is the problem?
+**Omar:** Sure. What is the problem?
 **Dimas:** I can't open this file.
-**Sara:** Okay. Click this button.
+**Omar:** Okay. Click this button.
 **Dimas:** This button?
-**Sara:** Yes. Try again.
+**Omar:** Yes. Try again.
 **Dimas:** (laughs) It works. Thank you.
 
 ## Audio Direction

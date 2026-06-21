@@ -9,12 +9,12 @@ questions:
   correct_answer: I'd like to check in.
 - key: under_name
   type: multiple_choice
-  prompt: What does "under Mina Kim" mean?
+  prompt: What does "under Faris Kim" mean?
   options:
-  - atas nama Mina Kim
+  - atas nama Faris Kim
   - di bawah meja
   - di dalam tas
-  correct_answer: atas nama Mina Kim
+  correct_answer: atas nama Faris Kim
 - key: included_meaning
   type: multiple_choice
   prompt: What does "included" mean?

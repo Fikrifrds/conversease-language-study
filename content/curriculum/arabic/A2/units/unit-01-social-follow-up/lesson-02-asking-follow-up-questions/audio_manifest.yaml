@@ -1,5 +1,5 @@
 lesson_key: lesson-02-asking-follow-up-questions
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-02-asking-follow-up-questions/listening-3nav5pHC1EYvWOd5LmnA-20260617T112114Z.wav
-  duration_seconds: 19.16
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
     Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 7
-  script_content_hash: ef50074d3ff55ad0c69cb756248e37e71fdaaf4f219fb75045d146e0a648668a
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-01-social-follow-up/lesson-02-asking-follow-up-questions/listening-3nav5pHC1EYvWOd5LmnA-20260617T112114Z.wav
-  trace_id: Fu0RuMpaQ1ijhsAia3rM,ebbEaP02IZvDIhYnhP0j,5Pf4vO5dls5bihMFjSCN,wsuKEOSlIaaXGN8KKG1R,jjqvmDcgcQM7OhYfUHeD,2kaDxVbtl28LMkp47VTp,v6IOLiO1LU0Id5yYr09C
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T11:21:14.876461+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

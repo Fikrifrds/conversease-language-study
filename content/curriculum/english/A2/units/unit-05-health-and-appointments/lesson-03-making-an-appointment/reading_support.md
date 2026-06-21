@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina calls a clinic to make an appointment. The receptionist offers a time at 3:30 p.m.
+Raka calls a clinic to make an appointment. The receptionist offers a time at 3:30 p.m.
 
 ## Check
 

@@ -1,7 +1,7 @@
 scenario_key: arabic_saying_what_you_think
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَا رَأْيُكِ فِي الدَّرْسِ الْيَوْمَ يَا نُورَةُ؟
+opening_line: مَا رَأْيُكَ فِي الدَّرْسِ الْيَوْمَ يَا زَيْدُ؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan ingin
   menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكِ فِي الدَّرْسِ الْيَوْمَ يَا نُورَةُ؟
+- coach: مَا رَأْيُكَ فِي الدَّرْسِ الْيَوْمَ يَا زَيْدُ؟
   hint: 'Jawab dengan pola: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.'
   sample_answer: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
   focus: 'Latihan frasa: Saya pikir pelajarannya bermanfaat.'

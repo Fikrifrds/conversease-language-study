@@ -1,5 +1,5 @@
 lesson_key: lesson-03-review-leadership-and-listening
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-03-review-leadership-and-listening/listening-English_Aussie_Bloke-20260612T140354Z.wav
-  duration_seconds: 32.03
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-03-review-leadership-and-listening/listening-English_Aussie_Bloke-20260612T140354Z.wav
-  trace_id: 067b44b2343ba9f13a00dec4961f2743,067b44b515e9139757fe7654287be3a1,067b44b81c08736d04e23245946a4ff5,067b44ba8f6daba67323438c41b58ef4,067b44bd4450be81951bac2b439f484f,067b44c07f21015dabeaaea98d6aa1c2,067b44c35e9cf426baa4c16edb27cbcd,067b44c6b4870342aacd126db6a666ed
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T14:03:54.153561+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

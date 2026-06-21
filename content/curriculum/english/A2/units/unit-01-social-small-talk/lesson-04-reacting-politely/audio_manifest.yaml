@@ -1,5 +1,5 @@
 lesson_key: lesson-04-reacting-politely
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-04-reacting-politely/listening-English_Aussie_Bloke-20260612T124837Z.wav
-  duration_seconds: 20.14
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-04-reacting-politely/listening-English_Aussie_Bloke-20260612T124837Z.wav
-  trace_id: 067b33103d431abad5ab57b529b0b20d,067b33130140e22f210512aae03934bf,067b331519a58fccfded59e942b1ff66,067b3318e77b43173d98f449e1d5b3a1,067b331bb7ba4e0b798a56df7f460932,067b331dbbd8ae26be279285fd314167,067b3320d24422bec596846998c6c589,067b3322f6899534e0dd63c4d3559c11
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:48:37.183560+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

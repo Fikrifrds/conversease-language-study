@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Sara: Can you speak English?
+Omar: Can you speak English?
 Dimas: I can speak a little.
-Sara: Can you write simple emails?
+Omar: Can you write simple emails?
 Dimas: Yes, I can.
 ```
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-describing-a-simple-experience
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-03-describing-a-simple-experience/listening-English_Aussie_Bloke-20260612T125839Z.wav
-  duration_seconds: 15.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-03-describing-a-simple-experience/listening-English_Aussie_Bloke-20260612T125839Z.wav
-  trace_id: 067b35705aeabb239b116f2877e066cb,067b35724757de6754d6337c7aaa76bf,067b35757023b7cee2535e671d44a63b,067b357731906b90c93bb7ed8125dde6,067b3579eefa5d5f5fcab3a3ab3678ec,067b357b5405e055c268fd8f2af0c746,067b357d19bb23a775f7c67a67698f4a
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:58:39.957951+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,26 +1,28 @@
 lesson_key: lesson-05-contact-details-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260612T123353Z.wav
-  duration_seconds: 28.0
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Officer: English_CalmWoman
+    Officer: English_Trustworth_Man
   line_count: 10
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_Aussie_Bloke-20260612T123353Z.wav
-  trace_id: 067b2f9969b2b1a2e1de6b61335914a8,067b2f9cae66d2c1202f722f3114c853,067b2f9e070a409914b8331bbe53a9c4,067b2fa1ae2a9b6fade19d2edd576ffa,067b2fa3f060f9972e5ceb538f423361,067b2fa598a9abc3fb6d1ffa7ec14497,067b2fa8a8123e7a963303bdd2876378,067b2faabb8f40b057630b4d408b128c,067b2facbb4e54fae91316928d00938b,067b2faec12e517c6d7f04424a665fe2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:33:53.639843+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260612T124429Z.wav
-  duration_seconds: 20.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_Aussie_Bloke-20260612T124429Z.wav
-  trace_id: 067b3217dcd4ed5b5375e197fd5fab60,067b3219a0168ed6174a268cda20e7c1,067b321d04caa1ffcee4fde60853c342,067b32205dbc7987a7c30a5f7a7100f8,067b3223f7280808adbc090c92441cda,067b3226892ff13beb9d088d0f98437e,067b3229d782b12e117a295db1151a36,067b322b9673d78d887c36769ff52b6f
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:44:29.272877+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-02-review-routines-and-time
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

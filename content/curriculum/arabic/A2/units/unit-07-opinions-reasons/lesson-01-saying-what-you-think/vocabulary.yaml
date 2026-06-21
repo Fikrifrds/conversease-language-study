@@ -23,8 +23,8 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "هَذَا أَفْضَلُ لِي."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "مَا رَأْيُكِ فِي الدَّرْسِ
-    الْيَوْمَ يَا نُورَةُ؟"'
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "مَا رَأْيُكَ فِي الدَّرْسِ
+    الْيَوْمَ يَا زَيْدُ؟"'
 - word: لِمَاذَا
   meaning_id: mengapa
   usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا؟"'

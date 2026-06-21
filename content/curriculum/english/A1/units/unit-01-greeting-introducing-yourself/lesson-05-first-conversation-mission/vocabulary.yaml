@@ -4,13 +4,13 @@ vocabulary:
   usage_note: Sapaan yang dipakai sebelum siang.
 - word: nice
   meaning_id: ramah/menyenangkan
-  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Hi Lina. I''m Adi. Nice to meet you."'
+  usage_note: 'Dipakai untuk menyatakan kesan positif. Contoh: "Hi Raka. I''m Adi. Nice to meet you."'
 - word: later
   meaning_id: nanti
   usage_note: 'Dipakai saat menutup percakapan santai. Contoh: "See you later."'
 - word: meet
   meaning_id: bertemu
-  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Hi Lina. I''m Adi. Nice to meet you."'
+  usage_note: 'Kata kerja untuk bertemu seseorang. Contoh: "Hi Raka. I''m Adi. Nice to meet you."'
 - word: name
   meaning_id: nama
   usage_note: Dipakai saat memperkenalkan diri.

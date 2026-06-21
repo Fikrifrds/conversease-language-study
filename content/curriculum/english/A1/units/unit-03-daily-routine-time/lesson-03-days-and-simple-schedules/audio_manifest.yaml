@@ -1,26 +1,27 @@
 lesson_key: lesson-03-days-and-simple-schedules
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_Aussie_Bloke-20260612T123504Z.wav
-  duration_seconds: 11.23
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_Aussie_Bloke-20260612T123504Z.wav
-  trace_id: 067b2fea44d9212e8a4b2c499dc99a85,067b2fec389b742acfc1f56cb8c55a9a,067b2ff0dd30782761c48139c47a01c1,067b2ff15d081dd21edd22273cebd5d2,067b2ff32fdd33f2f80af7d85f368ec0,067b2ff6b41848047fb83d2719d19299
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:35:04.182288+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

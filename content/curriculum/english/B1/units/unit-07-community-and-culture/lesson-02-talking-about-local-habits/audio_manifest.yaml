@@ -1,5 +1,5 @@
 lesson_key: lesson-02-talking-about-local-habits
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-English_Aussie_Bloke-20260612T131807Z.wav
-  duration_seconds: 22.61
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-English_Aussie_Bloke-20260612T131807Z.wav
-  trace_id: 067b39fb4c1f65d52af7ed1088b1bd6c,067b39fe09bfa37fc70006b89fe81e5e,067b3a015db6ae688abd4ea5c5df05a2,067b3a03cd23e697a9979210cb60eb0a,067b3a06f653ff881012d13a2c3902f9,067b3a081f722c1762475b110b45f542,067b3a0a59152086020390d8821a8f60,067b3a0cebae02c48cf02f65c8000df2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:18:07.022873+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

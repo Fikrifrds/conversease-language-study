@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Alya:** When is the English class?
+**Dimas:** When is the English class?
 **Ben:** It's on Monday and Wednesday.
-**Alya:** What time?
+**Dimas:** What time?
 **Ben:** At seven in the evening.
-**Alya:** Great. See you on Monday.
+**Dimas:** Great. See you on Monday.
 **Ben:** See you.
 
 ## Audio Direction

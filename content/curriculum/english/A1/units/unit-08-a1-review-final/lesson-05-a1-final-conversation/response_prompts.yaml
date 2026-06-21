@@ -1,9 +1,9 @@
 prompts:
 - prompt: Introduce yourself.
-  target_response: My name is Mina.
+  target_response: My name is Faris.
   acceptable_variations:
-  - My name is Mina.
-  - I'm Mina.
+  - My name is Faris.
+  - I'm Faris.
 - prompt: Say your origin and ask back.
   target_response: I'm from Indonesia. How about you?
   acceptable_variations:

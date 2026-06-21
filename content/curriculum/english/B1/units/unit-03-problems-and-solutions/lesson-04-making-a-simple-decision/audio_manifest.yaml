@@ -1,5 +1,5 @@
 lesson_key: lesson-04-making-a-simple-decision
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-English_Aussie_Bloke-20260612T130932Z.wav
-  duration_seconds: 18.16
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-English_Aussie_Bloke-20260612T130932Z.wav
-  trace_id: 067b37fb13371b971ffb0e5c1af21cf7,067b37ff5d015e87d64b9432538cb96c,067b380153d582a3fc509966d68dcaa9,067b3803b6028ed5da6d56b7ac9d34ab,067b3806fd1a7c96224cbf7d76e9cec4,067b3807794a46be25a169096faa2de9,067b380a5a7005c37ab80d686fa21b72
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:09:32.197903+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

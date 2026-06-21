@@ -1,26 +1,27 @@
 lesson_key: lesson-01-saying-hello
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260612T123049Z.wav
-  duration_seconds: 11.25
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/listening-English_Aussie_Bloke-20260612T123049Z.wav
-  trace_id: 067b2eeef27dfe950e4d732d2a5c3a5d,067b2ef0e0ea1d020cc4ebe6d215e0db,067b2ef3169e8cb48625627822dd9de2,067b2ef521c2f9f70170bfcea31b43a7,067b2ef88470d94cd9832c81b613f50b
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:30:49.838415+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

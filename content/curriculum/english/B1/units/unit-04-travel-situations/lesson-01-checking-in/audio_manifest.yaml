@@ -1,5 +1,5 @@
 lesson_key: lesson-01-checking-in
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-01-checking-in/listening-English_Aussie_Bloke-20260612T131035Z.wav
-  duration_seconds: 24.24
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-01-checking-in/listening-English_Aussie_Bloke-20260612T131035Z.wav
-  trace_id: 067b383547fba372420442b984a21904,067b383752a15856319920577d1a11c6,067b383a3f041f6ecbeadbac2a390764,067b383c0d1e3d49a6105f519e3da66a,067b383fddb4db97c4b95f7f193f9ec8,067b3842425aabea9b35e67608902977,067b38448ea022c370cd4b080e5f9369,067b3848f2bc3001e7b9b23b1079bda4
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:10:35.923717+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

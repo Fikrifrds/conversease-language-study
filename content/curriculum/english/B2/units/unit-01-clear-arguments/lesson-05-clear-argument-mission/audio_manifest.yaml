@@ -1,5 +1,5 @@
 lesson_key: lesson-05-clear-argument-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-05-clear-argument-mission/listening-English_Aussie_Bloke-20260612T132442Z.wav
-  duration_seconds: 27.09
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-05-clear-argument-mission/listening-English_Aussie_Bloke-20260612T132442Z.wav
-  trace_id: 067b3b86ac70a9bfe139d211357b8243,067b3b8888d6598c819466393fb553a3,067b3b8a91ee51bc4f7ce7dc40f5163d,067b3b8c9f3609bff6abfbcebcac0ace,067b3b8fdd04892e58396f510b57465a,067b3b9295deddf0616aa911f5817e35,067b3b958cfe2bc18a5adba840fc2032,067b3b9759deec9b74f96228c44e482f
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:24:42.904008+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

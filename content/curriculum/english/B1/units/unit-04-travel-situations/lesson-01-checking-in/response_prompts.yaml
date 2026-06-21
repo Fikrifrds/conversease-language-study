@@ -5,9 +5,9 @@ prompts:
   - I'd like to check in.
   - Hi, I'd like to check in.
 - prompt: Say you have a reservation under your name.
-  target_response: I have a reservation under Mina Kim.
+  target_response: I have a reservation under Faris Kim.
   acceptable_variations:
-  - I have a reservation under Mina Kim.
+  - I have a reservation under Faris Kim.
   - I have a reservation under Faris Chen.
 - prompt: Ask one practical question (check-out time).
   target_response: What time is check-out?
