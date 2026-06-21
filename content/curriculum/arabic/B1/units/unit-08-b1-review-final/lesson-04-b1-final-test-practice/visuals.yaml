@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Test Practice di Indonesia.
+  caption: 'Konteks percakapan nyata: B1 Final Test Practice.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+  alt: Cuplikan visual classroom male untuk frasa سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  alt: Cuplikan visual classroom male untuk frasa أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  alt: Cuplikan visual classroom male untuk frasa إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا..

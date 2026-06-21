@@ -1,0 +1,27 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Leadership Coaching Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Leadership Coaching Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ
+    بِصُورَةٍ وَاضِحَةٍ.
+  alt: Cuplikan visual workplace male untuk frasa فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ،
+    أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا
+    مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
+  alt: Cuplikan visual workplace male untuk frasa عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ،
+    بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
+  alt: Cuplikan visual workplace male untuk frasa الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ
+    إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ..

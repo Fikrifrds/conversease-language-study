@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Agreeing and Disagreeing Politely di Indonesia.
+  caption: 'Konteks percakapan nyata: Agreeing and Disagreeing Politely.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'm not sure.
+  alt: Cuplikan visual classroom male untuk frasa I'm not sure..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I don't think so.
+  alt: Cuplikan visual classroom male untuk frasa I don't think so..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I agree.
+  alt: Cuplikan visual classroom male untuk frasa I agree..

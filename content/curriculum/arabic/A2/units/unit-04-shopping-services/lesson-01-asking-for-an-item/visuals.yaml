@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for an Item di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking for an Item.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.
+  alt: Cuplikan visual service male untuk frasa أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ..
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ عِنْدَكُمْ هَذَا؟
+  alt: Cuplikan visual service male untuk frasa هَلْ عِنْدَكُمْ هَذَا؟.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَلْ يُوجَدُ لَوْنٌ آخَرُ؟
+  alt: Cuplikan visual service male untuk frasa هَلْ يُوجَدُ لَوْنٌ آخَرُ؟.

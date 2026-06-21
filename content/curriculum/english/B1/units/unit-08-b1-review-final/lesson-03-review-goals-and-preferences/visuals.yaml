@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Goals and Preferences di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Goals and Preferences.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: My goal is to speak more confidently by the end of this month.
+  alt: Cuplikan visual workplace male untuk frasa My goal is to speak more confidently by the end of this
+    month..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I've been practicing every morning.
+  alt: Cuplikan visual workplace male untuk frasa I've been practicing every morning..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I prefer Conversation Coach because it gives me feedback.
+  alt: Cuplikan visual workplace male untuk frasa I prefer Conversation Coach because it gives me feedback..

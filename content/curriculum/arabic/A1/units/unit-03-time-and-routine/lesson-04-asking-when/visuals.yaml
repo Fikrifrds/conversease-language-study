@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking When di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking When.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَتَى الدَّرْسُ؟
+  alt: Cuplikan visual classroom male untuk frasa مَتَى الدَّرْسُ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: فِي الصَّبَاحِ
+  alt: Cuplikan visual classroom male untuk frasa فِي الصَّبَاحِ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: بَعْدَ الظُّهْرِ
+  alt: Cuplikan visual classroom male untuk frasa بَعْدَ الظُّهْرِ.

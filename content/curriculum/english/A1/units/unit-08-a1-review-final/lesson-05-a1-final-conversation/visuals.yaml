@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks A1 Final Conversation di Indonesia.
+  caption: 'Konteks percakapan nyata: A1 Final Conversation.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: My name is Faris.
+  alt: Cuplikan visual classroom male untuk frasa My name is Faris..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I'm from Indonesia. How about you?
+  alt: Cuplikan visual classroom male untuk frasa I'm from Indonesia. How about you?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I study English at seven.
+  alt: Cuplikan visual classroom male untuk frasa I study English at seven..

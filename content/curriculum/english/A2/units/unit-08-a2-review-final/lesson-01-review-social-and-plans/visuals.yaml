@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Social and Plans di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Social and Plans.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: How have you been?
+  alt: Cuplikan visual classroom male untuk frasa How have you been?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What have you been working on?
+  alt: Cuplikan visual classroom male untuk frasa What have you been working on?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Do you want to grab coffee this weekend?
+  alt: Cuplikan visual classroom male untuk frasa Do you want to grab coffee this weekend?.

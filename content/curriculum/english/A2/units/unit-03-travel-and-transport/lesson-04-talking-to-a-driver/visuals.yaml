@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking to a Driver di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking to a Driver.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Where to?
+  alt: Cuplikan visual travel male untuk frasa Where to?.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Can you take me to the station?
+  alt: Cuplikan visual travel male untuk frasa Can you take me to the station?.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: How long will it take?
+  alt: Cuplikan visual travel male untuk frasa How long will it take?.

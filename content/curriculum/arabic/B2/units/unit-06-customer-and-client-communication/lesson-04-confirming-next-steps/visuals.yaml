@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/service-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Confirming Next Steps di Indonesia.
+  caption: 'Konteks percakapan nyata: Confirming Next Steps.'
+cards:
+- src: /images/lesson-visual-library/service-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.
+  alt: Cuplikan visual service female untuk frasa أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ
+    تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ..
+- src: /images/lesson-visual-library/service-female/card-2.png
+  width: 1254
+  height: 1254
+  label: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  alt: Cuplikan visual service female untuk frasa لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ..
+- src: /images/lesson-visual-library/service-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  alt: Cuplikan visual service female untuk frasa أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ..

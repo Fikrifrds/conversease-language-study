@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing an Article di Indonesia.
+  caption: 'Konteks percakapan nyata: Summarizing an Article.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: The article is about how remote work affects productivity.
+  alt: Cuplikan visual workplace male untuk frasa The article is about how remote work affects productivity..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: The main point is productivity improves with clear rules.
+  alt: Cuplikan visual workplace male untuk frasa The main point is productivity improves with clear rules..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It mentions isolation as a downside.
+  alt: Cuplikan visual workplace male untuk frasa It mentions isolation as a downside..

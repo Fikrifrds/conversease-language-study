@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Requesting Service Help di Indonesia.
+  caption: 'Konteks percakapan nyata: Requesting Service Help.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟
+  alt: Cuplikan visual service male untuk frasa هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: الْجِهَازُ لَا يَعْمَلُ.
+  alt: Cuplikan visual service male untuk frasa الْجِهَازُ لَا يَعْمَلُ..
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَحْتَاجُ إِلَى إِصْلَاحٍ.
+  alt: Cuplikan visual service male untuk frasa أَحْتَاجُ إِلَى إِصْلَاحٍ..

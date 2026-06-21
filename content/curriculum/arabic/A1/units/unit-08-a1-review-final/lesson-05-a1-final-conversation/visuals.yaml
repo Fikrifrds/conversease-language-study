@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks A1 Final Conversation di Indonesia.
+  caption: 'Konteks percakapan nyata: A1 Final Conversation.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَرْحَبًا
+  alt: Cuplikan visual classroom male untuk frasa مَرْحَبًا.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اِسْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa اِسْمِي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَدْرُسُ الْعَرَبِيَّةَ
+  alt: Cuplikan visual classroom male untuk frasa أَدْرُسُ الْعَرَبِيَّةَ.

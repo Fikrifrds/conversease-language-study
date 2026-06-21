@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Leadership and Listening di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Leadership and Listening.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What I'm hearing is there's some concern under the surface.
+  alt: Cuplikan visual workplace male untuk frasa What I'm hearing is there's some concern under the surface..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: When you say X, do you mean Y or Z?
+  alt: Cuplikan visual workplace male untuk frasa When you say X, do you mean Y or Z?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What would success look like in the next two weeks?
+  alt: Cuplikan visual workplace male untuk frasa What would success look like in the next two weeks?.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Workplace Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Workplace Mission.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'm making good progress.
+  alt: Cuplikan visual travel male untuk frasa I'm making good progress..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Could you clarify which risks you want me to focus on?
+  alt: Cuplikan visual travel male untuk frasa Could you clarify which risks you want me to focus on?.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Just to confirm, you need it by Friday morning, right?
+  alt: Cuplikan visual travel male untuk frasa Just to confirm, you need it by Friday morning, right?.

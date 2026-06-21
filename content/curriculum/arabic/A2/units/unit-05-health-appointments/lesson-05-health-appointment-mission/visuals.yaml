@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/health-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Health Appointment Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Health Appointment Mission.'
+cards:
+- src: /images/lesson-visual-library/health-female/card-1.png
+  width: 1254
+  height: 1254
+  label: لَا أَشْعُرُ بِالرَّاحَةِ.
+  alt: Cuplikan visual health female untuk frasa لَا أَشْعُرُ بِالرَّاحَةِ..
+- src: /images/lesson-visual-library/health-female/card-2.png
+  width: 1254
+  height: 1254
+  label: عِنْدِي أَلَمٌ خَفِيفٌ.
+  alt: Cuplikan visual health female untuk frasa عِنْدِي أَلَمٌ خَفِيفٌ..
+- src: /images/lesson-visual-library/health-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.
+  alt: Cuplikan visual health female untuk frasa أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ..

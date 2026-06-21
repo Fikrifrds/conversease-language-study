@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Reconnecting After Class di Indonesia.
+  caption: 'Konteks percakapan nyata: Reconnecting After Class.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ حَالُكَ؟
+  alt: Cuplikan visual classroom male untuk frasa كَيْفَ حَالُكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَنَا بِخَيْرٍ، وَأَنْتَ؟
+  alt: Cuplikan visual classroom male untuk frasa أَنَا بِخَيْرٍ، وَأَنْتَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: كَانَ الدَّرْسُ جَيِّدًا.
+  alt: Cuplikan visual classroom male untuk frasa كَانَ الدَّرْسُ جَيِّدًا..

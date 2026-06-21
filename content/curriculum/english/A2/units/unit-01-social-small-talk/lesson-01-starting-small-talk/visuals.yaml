@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Starting Small Talk di Indonesia.
+  caption: 'Konteks percakapan nyata: Starting Small Talk.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: How's your day?
+  alt: Cuplikan visual classroom male untuk frasa How's your day?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Pretty good.
+  alt: Cuplikan visual classroom male untuk frasa Pretty good..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It's busy today.
+  alt: Cuplikan visual classroom male untuk frasa It's busy today..

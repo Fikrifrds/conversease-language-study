@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing Feelings di Indonesia.
+  caption: 'Konteks percakapan nyata: Describing Feelings.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
+  alt: Cuplikan visual classroom male untuk frasa شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.
+  alt: Cuplikan visual classroom male untuk frasa لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.
+  alt: Cuplikan visual classroom male untuk frasa بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ..

@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Presentation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Advanced Presentation Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Today I'd like to walk you through the proposal and why it matters.
+  alt: Cuplikan visual workplace male untuk frasa Today I'd like to walk you through the proposal and
+    why it matters..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: The core claim is that this will improve delivery speed.
+  alt: Cuplikan visual workplace male untuk frasa The core claim is that this will improve delivery speed..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: 'That brings me to the key trade-off: speed versus reliability.'
+  alt: 'Cuplikan visual workplace male untuk frasa That brings me to the key trade-off: speed versus reliability..'

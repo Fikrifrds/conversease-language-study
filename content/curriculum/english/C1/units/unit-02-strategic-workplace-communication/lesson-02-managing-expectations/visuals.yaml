@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Managing Expectations di Indonesia.
+  caption: 'Konteks percakapan nyata: Managing Expectations.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What we can commit to is a smaller release by next week.
+  alt: Cuplikan visual travel male untuk frasa What we can commit to is a smaller release by next week..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: To avoid surprises, I'd rather under-promise and deliver reliably.
+  alt: Cuplikan visual travel male untuk frasa To avoid surprises, I'd rather under-promise and deliver
+    reliably..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The earliest we can deliver the full scope is two weeks later.
+  alt: Cuplikan visual travel male untuk frasa The earliest we can deliver the full scope is two weeks
+    later..

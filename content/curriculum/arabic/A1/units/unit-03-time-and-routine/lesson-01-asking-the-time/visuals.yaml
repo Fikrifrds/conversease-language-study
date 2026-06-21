@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking the Time di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking the Time.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَمِ السَّاعَةُ؟
+  alt: Cuplikan visual classroom male untuk frasa كَمِ السَّاعَةُ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: السَّاعَةُ الثَّامِنَةُ
+  alt: Cuplikan visual classroom male untuk frasa السَّاعَةُ الثَّامِنَةُ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: الْآنَ
+  alt: Cuplikan visual classroom male untuk frasa الْآنَ.

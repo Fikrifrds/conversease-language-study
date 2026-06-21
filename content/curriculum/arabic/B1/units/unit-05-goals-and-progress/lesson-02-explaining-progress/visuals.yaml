@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Explaining Progress di Indonesia.
+  caption: 'Konteks percakapan nyata: Explaining Progress.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.
+  alt: Cuplikan visual workplace female untuk frasa تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.
+  alt: Cuplikan visual workplace female untuk frasa أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.
+  alt: Cuplikan visual workplace female untuk frasa مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ..

@@ -3,12 +3,12 @@ phrases:
   meaning_id: Berapa harga kopinya?
   usage_note: Ask the price of one item.
   common_mistake: Do not say 'How many is the coffee?'
-- phrase: It is two dollars.
-  meaning_id: Harganya dua dolar.
+- phrase: It is twenty thousand rupiah.
+  meaning_id: Harganya dua puluh ribu rupiah.
   usage_note: Answer a simple price.
   common_mistake: Use 'is' for one item price.
-- phrase: Two dollars?
-  meaning_id: Dua dolar?
+- phrase: Twenty thousand rupiah?
+  meaning_id: Dua puluh ribu rupiah?
   usage_note: Repeat the price to confirm.
   common_mistake: Keep your voice rising a little.
 - phrase: How much is the cake?

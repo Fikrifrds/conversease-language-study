@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Adi dan Raka faceless bertanya nama dari jarak sopan di kelas bahasa Inggris Indonesia.
-  caption: Tanyakan nama dan konfirmasi dengan sopan saat bertemu teman kelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking Someone's Name di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking Someone''s Name.'
 cards:
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-whats-your-name.png
-    width: 1254
-    height: 1254
-    label: What's your name?
-    alt: Adi faceless berpakaian sopan bertanya nama di kelas.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-may-i-know.png
-    width: 1254
-    height: 1254
-    label: May I know your name?
-    alt: Adi faceless bertanya nama dengan lebih sopan di kelas Indonesia.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/card-is-it-raka.png
-    width: 1254
-    height: 1254
-    label: Is it Raka?
-    alt: Adi faceless mengonfirmasi nama yang didengar di kelas Indonesia.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What's your name?
+  alt: Cuplikan visual classroom male untuk frasa What's your name?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: May I know your name?
+  alt: Cuplikan visual classroom male untuk frasa May I know your name?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Is it Raka?
+  alt: Cuplikan visual classroom male untuk frasa Is it Raka?.

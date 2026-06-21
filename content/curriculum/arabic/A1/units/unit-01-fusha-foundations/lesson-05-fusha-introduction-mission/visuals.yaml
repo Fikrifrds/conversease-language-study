@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Ahmad faceless menjalankan misi perkenalan formal dari jarak sopan di kelas Indonesia.
-  caption: Gabungkan sapaan, nama, asal, dan klarifikasi dalam dialog kelas nyata.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Introduction Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Arabic Introduction Mission.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-marhaban.png
-    width: 1254
-    height: 1254
-    label: مرحبًا
-    alt: Ahmad faceless memberi sapaan formal di kelas dengan celana di atas mata kaki.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ismi.png
-    width: 1254
-    height: 1254
-    label: اسمي ...
-    alt: Ahmad faceless memperkenalkan nama dalam misi kelas formal.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/card-ana-min-indonesia.png
-    width: 1254
-    height: 1254
-    label: أنا من إندونيسيا
-    alt: Ahmad faceless menyebutkan asal dengan latar jendela kelas Indonesia.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مرحبًا
+  alt: Cuplikan visual classroom male untuk frasa مرحبًا.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اسمي ...
+  alt: Cuplikan visual classroom male untuk frasa اسمي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أنا من إندونيسيا
+  alt: Cuplikan visual classroom male untuk frasa أنا من إندونيسيا.

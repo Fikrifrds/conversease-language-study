@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Culture di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Culture.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What is it like in your country?
+  alt: Cuplikan visual classroom male untuk frasa What is it like in your country?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Do people usually travel to visit family?
+  alt: Cuplikan visual classroom male untuk frasa Do people usually travel to visit family?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It's busy, but it's also meaningful.
+  alt: Cuplikan visual classroom male untuk frasa It's busy, but it's also meaningful..

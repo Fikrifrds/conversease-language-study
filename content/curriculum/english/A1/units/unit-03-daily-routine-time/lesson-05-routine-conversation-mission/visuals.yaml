@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Routine Conversation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Routine Conversation Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What time do you wake up?
+  alt: Cuplikan visual classroom male untuk frasa What time do you wake up?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I wake up at six.
+  alt: Cuplikan visual classroom male untuk frasa I wake up at six..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: When do you study English?
+  alt: Cuplikan visual classroom male untuk frasa When do you study English?.

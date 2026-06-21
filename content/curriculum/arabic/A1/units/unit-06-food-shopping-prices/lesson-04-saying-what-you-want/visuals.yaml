@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Want di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying What You Want.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَاذَا تُرِيدُ؟
+  alt: Cuplikan visual service male untuk frasa مَاذَا تُرِيدُ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ كِتَابًا
+  alt: Cuplikan visual service male untuk frasa أُرِيدُ كِتَابًا.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: لَا أُرِيدُ قَهْوَةً
+  alt: Cuplikan visual service male untuk frasa لَا أُرِيدُ قَهْوَةً.

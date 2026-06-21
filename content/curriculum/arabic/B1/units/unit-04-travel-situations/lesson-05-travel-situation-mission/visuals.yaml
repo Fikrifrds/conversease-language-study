@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Travel Situation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Travel Situation Mission.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
+  alt: Cuplikan visual travel male untuk frasa عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.
+  alt: Cuplikan visual travel male untuk frasa أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟
+  alt: Cuplikan visual travel male untuk frasa هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟.

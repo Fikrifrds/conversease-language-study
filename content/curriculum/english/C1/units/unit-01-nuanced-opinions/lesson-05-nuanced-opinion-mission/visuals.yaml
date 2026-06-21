@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Nuanced Opinion Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Nuanced Opinion Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: To some extent, yes—especially for new projects.
+  alt: Cuplikan visual classroom male untuk frasa To some extent, yes—especially for new projects..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I'm fairly confident it will, but I'm not entirely convinced.
+  alt: Cuplikan visual classroom male untuk frasa I'm fairly confident it will, but I'm not entirely convinced..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: On balance, I'd prioritize stability with a limited rollout.
+  alt: Cuplikan visual classroom male untuk frasa On balance, I'd prioritize stability with a limited
+    rollout..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Introductions and Contact di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Introductions and Contact.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: اِسْمِي أَحْمَدُ
+  alt: Cuplikan visual classroom male untuk frasa اِسْمِي أَحْمَدُ.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَنَا مِنْ إِنْدُونِيسِيَا
+  alt: Cuplikan visual classroom male untuk frasa أَنَا مِنْ إِنْدُونِيسِيَا.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَكْتُبُ اسْمِي
+  alt: Cuplikan visual classroom male untuk frasa أَكْتُبُ اسْمِي.

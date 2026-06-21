@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Simple Item di Indonesia.
+  caption: 'Konteks percakapan nyata: Buying a Simple Item.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Can I have this pen?
+  alt: Cuplikan visual service male untuk frasa Can I have this pen?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: How much is it?
+  alt: Cuplikan visual service male untuk frasa How much is it?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Here you go.
+  alt: Cuplikan visual service male untuk frasa Here you go..

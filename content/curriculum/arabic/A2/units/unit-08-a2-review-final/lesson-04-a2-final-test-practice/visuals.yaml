@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Test Practice di Indonesia.
+  caption: 'Konteks percakapan nyata: A2 Final Test Practice.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.
+  alt: Cuplikan visual classroom male untuk frasa أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.
+  alt: Cuplikan visual classroom male untuk frasa ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  alt: Cuplikan visual classroom male untuk frasa أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Ahmad faceless berlatih instruksi kelas dari jarak sopan di kelas Indonesia.
-  caption: Dengarkan instruksi kelas sederhana dan jawab dengan sopan dalam setting nyata.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Class and Study Instructions di Indonesia.
+  caption: 'Konteks percakapan nyata: Class and Study Instructions.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-iqra.png
-    width: 1254
-    height: 1254
-    label: اِقرأْ
-    alt: Muallim faceless memberi instruksi membaca di kelas dengan papan tulis kosong.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-istami.png
-    width: 1254
-    height: 1254
-    label: اِستمعْ
-    alt: Ahmad faceless mendengarkan instruksi di meja kelas dengan buku kosong.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/card-uktub.png
-    width: 1254
-    height: 1254
-    label: اُكتبْ
-    alt: Ahmad faceless menulis di buku kosong saat mengikuti instruksi kelas.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: اِقرأْ
+  alt: Cuplikan visual classroom male untuk frasa اِقرأْ.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اِستمعْ
+  alt: Cuplikan visual classroom male untuk frasa اِستمعْ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَعِدْ
+  alt: Cuplikan visual classroom male untuk frasa أَعِدْ.

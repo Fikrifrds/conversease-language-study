@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Reading Context di Indonesia.
+  caption: 'Konteks percakapan nyata: Reading Context.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: My sense is that they're signaling concern without saying no directly.
+  alt: Cuplikan visual workplace male untuk frasa My sense is that they're signaling concern without saying
+    no directly..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Before we decide, can we clarify what their priority is—speed or risk reduction?
+  alt: Cuplikan visual workplace male untuk frasa Before we decide, can we clarify what their priority
+    is—speed or risk reduction?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It may be worth considering a phased plan.
+  alt: Cuplikan visual workplace male untuk frasa It may be worth considering a phased plan..

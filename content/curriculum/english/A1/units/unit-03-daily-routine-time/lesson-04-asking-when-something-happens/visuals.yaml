@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking When Something Happens di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking When Something Happens.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: When is the meeting?
+  alt: Cuplikan visual classroom male untuk frasa When is the meeting?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: It's tomorrow at ten.
+  alt: Cuplikan visual classroom male untuk frasa It's tomorrow at ten..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Is it online?
+  alt: Cuplikan visual classroom male untuk frasa Is it online?.

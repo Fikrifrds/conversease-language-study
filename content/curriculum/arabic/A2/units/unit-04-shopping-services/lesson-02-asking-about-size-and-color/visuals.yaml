@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Size and Color di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Size and Color.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟
+  alt: Cuplikan visual service male untuk frasa هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ اللَّوْنَ الْأَبْيَضَ.
+  alt: Cuplikan visual service male untuk frasa أُرِيدُ اللَّوْنَ الْأَبْيَضَ..
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَذَا صَغِيرٌ جِدًّا.
+  alt: Cuplikan visual service male untuk frasa هَذَا صَغِيرٌ جِدًّا..

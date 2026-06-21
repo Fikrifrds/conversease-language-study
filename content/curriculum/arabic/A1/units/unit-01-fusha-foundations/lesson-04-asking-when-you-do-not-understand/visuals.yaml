@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Khalid dan Muallim faceless berlatih meminta penjelasan dari jarak sopan di kelas Indonesia.
-  caption: Minta pengulangan atau penjelasan ketika belum paham dalam kelas nyata.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking When You Do Not Understand di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking When You Do Not Understand.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-la-afham.png
-    width: 1254
-    height: 1254
-    label: لا أفهم
-    alt: Khalid faceless berpakaian sopan mengangkat tangan karena belum paham.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-aid-min-fadlik.png
-    width: 1254
-    height: 1254
-    label: أَعِدْ مِنْ فَضْلِكَ
-    alt: Khalid faceless meminta pengulangan dengan sopan di meja kelas.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/card-ma-mana.png
-    width: 1254
-    height: 1254
-    label: ما معنى ...؟
-    alt: Khalid faceless bertanya makna dengan sopan di depan buku kosong.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: لا أفهم
+  alt: Cuplikan visual classroom male untuk frasa لا أفهم.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَعِدْ مِنْ فَضْلِكَ
+  alt: Cuplikan visual classroom male untuk frasa أَعِدْ مِنْ فَضْلِكَ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: بِبُطْءٍ مِنْ فَضْلِكَ
+  alt: Cuplikan visual classroom male untuk frasa بِبُطْءٍ مِنْ فَضْلِكَ.

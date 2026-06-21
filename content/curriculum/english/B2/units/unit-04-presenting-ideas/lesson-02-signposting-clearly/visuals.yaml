@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Signposting Clearly di Indonesia.
+  caption: 'Konteks percakapan nyata: Signposting Clearly.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Let me quickly walk you through the plan.
+  alt: Cuplikan visual classroom male untuk frasa Let me quickly walk you through the plan..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: First, I'll explain the problem.
+  alt: Cuplikan visual classroom male untuk frasa First, I'll explain the problem..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Next, I'll share the proposal.
+  alt: Cuplikan visual classroom male untuk frasa Next, I'll share the proposal..

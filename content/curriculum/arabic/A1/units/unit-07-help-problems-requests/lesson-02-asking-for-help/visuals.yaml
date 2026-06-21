@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Help di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking for Help.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: هَلْ تُسَاعِدُنِي؟
+  alt: Cuplikan visual workplace male untuk frasa هَلْ تُسَاعِدُنِي؟.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَحْتَاجُ مُسَاعَدَةً
+  alt: Cuplikan visual workplace male untuk frasa أَحْتَاجُ مُسَاعَدَةً.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَيْنَ أَجِدُ الدَّرْسَ؟
+  alt: Cuplikan visual workplace male untuk frasa أَيْنَ أَجِدُ الدَّرْسَ؟.

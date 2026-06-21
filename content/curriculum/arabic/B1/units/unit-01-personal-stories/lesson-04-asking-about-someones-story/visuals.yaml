@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Someone's Story di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Someone''s Story.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+  alt: Cuplikan visual classroom male untuk frasa مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟
+  alt: Cuplikan visual classroom male untuk frasa كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
+  alt: Cuplikan visual classroom male untuk frasa لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟.

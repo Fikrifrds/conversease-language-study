@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Counterpoints di Indonesia.
+  caption: 'Konteks percakapan nyata: Responding to Counterpoints.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: That's a fair point.
+  alt: Cuplikan visual workplace male untuk frasa That's a fair point..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: However, the long-term savings could be significant.
+  alt: Cuplikan visual workplace male untuk frasa However, the long-term savings could be significant..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I understand the concern, but...
+  alt: Cuplikan visual workplace male untuk frasa I understand the concern, but....

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Prices di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Prices.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَمِ السِّعْرُ؟
+  alt: Cuplikan visual service male untuk frasa كَمِ السِّعْرُ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: السِّعْرُ خَمْسَةُ رِيَالَاتٍ
+  alt: Cuplikan visual service male untuk frasa السِّعْرُ خَمْسَةُ رِيَالَاتٍ.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: غَالٍ
+  alt: Cuplikan visual service male untuk frasa غَالٍ.

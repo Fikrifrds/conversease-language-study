@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Meeting Participation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Meeting Participation Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.
+  alt: Cuplikan visual workplace female untuk frasa أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ
+    فِي اِجْتِمَاعٍ مِهَنِيٍّ..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+  alt: Cuplikan visual workplace female untuk frasa هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟.
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+  alt: Cuplikan visual workplace female untuk frasa عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ..

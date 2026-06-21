@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Conversation di Indonesia.
+  caption: 'Konteks percakapan nyata: B1 Final Conversation.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+  alt: Cuplikan visual classroom male untuk frasa سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  alt: Cuplikan visual classroom male untuk frasa ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  alt: Cuplikan visual classroom male untuk frasa بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ..

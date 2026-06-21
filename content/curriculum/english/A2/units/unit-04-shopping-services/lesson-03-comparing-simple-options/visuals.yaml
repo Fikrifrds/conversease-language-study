@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Simple Options di Indonesia.
+  caption: 'Konteks percakapan nyata: Comparing Simple Options.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Which one is cheaper?
+  alt: Cuplikan visual service male untuk frasa Which one is cheaper?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: This one is cheaper.
+  alt: Cuplikan visual service male untuk frasa This one is cheaper..
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The other one
+  alt: Cuplikan visual service male untuk frasa The other one.

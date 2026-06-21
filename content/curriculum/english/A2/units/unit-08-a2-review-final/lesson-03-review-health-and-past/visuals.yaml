@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/health-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Health and Past di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Health and Past.'
+cards:
+- src: /images/lesson-visual-library/health-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I don't feel well.
+  alt: Cuplikan visual health male untuk frasa I don't feel well..
+- src: /images/lesson-visual-library/health-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What's wrong?
+  alt: Cuplikan visual health male untuk frasa What's wrong?.
+- src: /images/lesson-visual-library/health-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Did you sleep late last night?
+  alt: Cuplikan visual health male untuk frasa Did you sleep late last night?.

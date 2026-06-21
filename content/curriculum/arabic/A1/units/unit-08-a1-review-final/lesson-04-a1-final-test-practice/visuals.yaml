@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks A1 Final Test Practice di Indonesia.
+  caption: 'Konteks percakapan nyata: A1 Final Test Practice.'
+cards:
+- src: /images/lesson-visual-library/classroom-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أَنَا مِنْ إِنْدُونِيسِيَا
+  alt: Cuplikan visual classroom female untuk frasa أَنَا مِنْ إِنْدُونِيسِيَا.
+- src: /images/lesson-visual-library/classroom-female/card-2.png
+  width: 1254
+  height: 1254
+  label: عِنْدِي دَرْسٌ
+  alt: Cuplikan visual classroom female untuk frasa عِنْدِي دَرْسٌ.
+- src: /images/lesson-visual-library/classroom-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ كِتَابًا
+  alt: Cuplikan visual classroom female untuk frasa أُرِيدُ كِتَابًا.

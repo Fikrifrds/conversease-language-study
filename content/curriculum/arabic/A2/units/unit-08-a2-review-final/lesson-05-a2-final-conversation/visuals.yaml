@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Conversation di Indonesia.
+  caption: 'Konteks percakapan nyata: A2 Final Conversation.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ كَانَتْ تَجْرِبَتُكَ؟
+  alt: Cuplikan visual classroom male untuk frasa كَيْفَ كَانَتْ تَجْرِبَتُكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  alt: Cuplikan visual classroom male untuk frasa هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟
+  alt: Cuplikan visual classroom male untuk frasa كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟.

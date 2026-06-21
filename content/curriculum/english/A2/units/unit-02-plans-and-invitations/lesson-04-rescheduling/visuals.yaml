@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Rescheduling di Indonesia.
+  caption: 'Konteks percakapan nyata: Rescheduling.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Can we reschedule?
+  alt: Cuplikan visual classroom male untuk frasa Can we reschedule?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Something came up.
+  alt: Cuplikan visual classroom male untuk frasa Something came up..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: When are you free?
+  alt: Cuplikan visual classroom male untuk frasa When are you free?.

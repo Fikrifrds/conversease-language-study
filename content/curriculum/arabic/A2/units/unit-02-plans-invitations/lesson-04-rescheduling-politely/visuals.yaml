@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Rescheduling Politely di Indonesia.
+  caption: 'Konteks percakapan nyata: Rescheduling Politely.'
+cards:
+- src: /images/lesson-visual-library/classroom-female/card-1.png
+  width: 1254
+  height: 1254
+  label: لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.
+  alt: Cuplikan visual classroom female untuk frasa لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ..
+- src: /images/lesson-visual-library/classroom-female/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟
+  alt: Cuplikan visual classroom female untuk frasa هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟.
+- src: /images/lesson-visual-library/classroom-female/card-3.png
+  width: 1254
+  height: 1254
+  label: مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟
+  alt: Cuplikan visual classroom female untuk frasa مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟.

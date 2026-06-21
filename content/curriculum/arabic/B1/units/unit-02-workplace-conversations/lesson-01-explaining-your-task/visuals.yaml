@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Explaining Your Task di Indonesia.
+  caption: 'Konteks percakapan nyata: Explaining Your Task.'
+cards:
+- src: /images/lesson-visual-library/travel-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
+  alt: Cuplikan visual travel female untuk frasa أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ..
+- src: /images/lesson-visual-library/travel-female/card-2.png
+  width: 1254
+  height: 1254
+  label: الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.
+  alt: Cuplikan visual travel female untuk frasa الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ..
+- src: /images/lesson-visual-library/travel-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.
+  alt: Cuplikan visual travel female untuk frasa أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا..

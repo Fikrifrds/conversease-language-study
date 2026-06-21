@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Departure Time di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Departure Time.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Excuse me.
+  alt: Cuplikan visual travel male untuk frasa Excuse me..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What time does the train leave?
+  alt: Cuplikan visual travel male untuk frasa What time does the train leave?.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It leaves at 6:30.
+  alt: Cuplikan visual travel male untuk frasa It leaves at 6:30..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Can Do di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying What You Can Do.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Can you speak English?
+  alt: Cuplikan visual classroom male untuk frasa Can you speak English?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I can speak a little.
+  alt: Cuplikan visual classroom male untuk frasa I can speak a little..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Can you write simple emails?
+  alt: Cuplikan visual classroom male untuk frasa Can you write simple emails?.

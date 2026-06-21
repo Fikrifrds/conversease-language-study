@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing Your Community di Indonesia.
+  caption: 'Konteks percakapan nyata: Describing Your Community.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.
+  alt: Cuplikan visual classroom male untuk frasa أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.
+  alt: Cuplikan visual classroom male untuk frasa النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.
+  alt: Cuplikan visual classroom male untuk frasa تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Opinions di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking for Opinions.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What do you think about going to Bali?
+  alt: Cuplikan visual classroom male untuk frasa What do you think about going to Bali?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I think it's a great idea.
+  alt: Cuplikan visual classroom male untuk frasa I think it's a great idea..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Because the beaches are beautiful.
+  alt: Cuplikan visual classroom male untuk frasa Because the beaches are beautiful..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Preference Discussion Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Preference Discussion Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Eating out is easier, but it's more expensive.
+  alt: Cuplikan visual workplace male untuk frasa Eating out is easier, but it's more expensive..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I prefer cooking at home because it's cheaper.
+  alt: Cuplikan visual workplace male untuk frasa I prefer cooking at home because it's cheaper..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What are the pros and cons?
+  alt: Cuplikan visual workplace male untuk frasa What are the pros and cons?.

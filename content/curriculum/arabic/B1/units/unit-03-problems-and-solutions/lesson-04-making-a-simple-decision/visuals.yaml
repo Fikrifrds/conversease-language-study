@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Decision di Indonesia.
+  caption: 'Konteks percakapan nyata: Making a Simple Decision.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ.
+  alt: Cuplikan visual workplace male untuk frasa لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: الْخِيَارُ الْأَوَّلُ أَسْهَلُ.
+  alt: Cuplikan visual workplace male untuk frasa الْخِيَارُ الْأَوَّلُ أَسْهَلُ..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ.
+  alt: Cuplikan visual workplace male untuk frasa الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ..

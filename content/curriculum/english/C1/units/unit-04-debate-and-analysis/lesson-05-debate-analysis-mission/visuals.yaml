@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Debate Analysis Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Debate Analysis Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: It seems you're assuming ... What's the evidence for that claim?
+  alt: Cuplikan visual workplace male untuk frasa It seems you're assuming ... What's the evidence for
+    that claim?.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I'm not sure that follows. Could there be another explanation?
+  alt: Cuplikan visual workplace male untuk frasa I'm not sure that follows. Could there be another explanation?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: To be precise, the data indicates correlation, not necessarily causation.
+  alt: Cuplikan visual workplace male untuk frasa To be precise, the data indicates correlation, not necessarily
+    causation..

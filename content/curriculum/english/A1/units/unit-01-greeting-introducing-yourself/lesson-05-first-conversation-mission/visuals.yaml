@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Raka dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.
-  caption: Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks First Conversation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: First Conversation Mission.'
 cards:
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png
-    width: 1254
-    height: 1254
-    label: Good morning. My name is ...
-    alt: Raka faceless berpakaian sopan menyapa dan memperkenalkan diri.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png
-    width: 1254
-    height: 1254
-    label: Where are you from?
-    alt: Adi faceless bertanya asal dengan sopan di kelas Indonesia.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-see-you-later.png
-    width: 1254
-    height: 1254
-    label: See you later.
-    alt: Raka faceless berpakaian sopan berpamitan di pintu kelas.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Good morning. My name is ...
+  alt: Cuplikan visual classroom male untuk frasa Good morning. My name is ....
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Where are you from?
+  alt: Cuplikan visual classroom male untuk frasa Where are you from?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: How about you?
+  alt: Cuplikan visual classroom male untuk frasa How about you?.

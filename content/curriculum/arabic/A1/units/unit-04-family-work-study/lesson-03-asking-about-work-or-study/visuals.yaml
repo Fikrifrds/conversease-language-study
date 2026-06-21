@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Asking About Work or Study di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Work or Study.'
+cards:
+- src: /images/lesson-visual-library/classroom-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أَيْنَ تَدْرُسُ؟
+  alt: Cuplikan visual classroom female untuk frasa أَيْنَ تَدْرُسُ؟.
+- src: /images/lesson-visual-library/classroom-female/card-2.png
+  width: 1254
+  height: 1254
+  label: مَاذَا تَدْرُسُ؟
+  alt: Cuplikan visual classroom female untuk frasa مَاذَا تَدْرُسُ؟.
+- src: /images/lesson-visual-library/classroom-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ
+  alt: Cuplikan visual classroom female untuk frasa أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ.

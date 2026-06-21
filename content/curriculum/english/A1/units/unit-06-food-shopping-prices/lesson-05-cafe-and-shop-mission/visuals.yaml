@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Cafe and Shop Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Cafe and Shop Mission.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Can I have a coffee and a sandwich, please?
+  alt: Cuplikan visual service male untuk frasa Can I have a coffee and a sandwich, please?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Small or large coffee?
+  alt: Cuplikan visual service male untuk frasa Small or large coffee?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: How much is it?
+  alt: Cuplikan visual service male untuk frasa How much is it?.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Officer dan Dimas faceless berlatih mengeja nama di meja registrasi kelas Indonesia.
-  caption: Eja nama dengan jelas saat mengisi formulir kelas bersama petugas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.
+  caption: 'Konteks percakapan nyata: Spelling Your Name.'
 cards:
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-spell-it.png
-    width: 1254
-    height: 1254
-    label: How do you spell it?
-    alt: Officer faceless berpakaian sopan bertanya ejaan nama di meja registrasi.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-repeat-that.png
-    width: 1254
-    height: 1254
-    label: Can you repeat that, please?
-    alt: Dimas faceless meminta pengulangan dengan sopan di meja registrasi.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/card-thats-right.png
-    width: 1254
-    height: 1254
-    label: That's right.
-    alt: Dimas faceless mengonfirmasi ejaan yang sudah benar di meja registrasi.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: How do you spell it?
+  alt: Cuplikan visual classroom male untuk frasa How do you spell it?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Let me spell it for you.
+  alt: Cuplikan visual classroom male untuk frasa Let me spell it for you..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: It's spelled D-I-M-A-S.
+  alt: Cuplikan visual classroom male untuk frasa It's spelled D-I-M-A-S..

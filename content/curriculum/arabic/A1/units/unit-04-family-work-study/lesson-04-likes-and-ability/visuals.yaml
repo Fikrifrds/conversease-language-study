@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Likes and Ability di Indonesia.
+  caption: 'Konteks percakapan nyata: Likes and Ability.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أُحِبُّ الْقِرَاءَةَ
+  alt: Cuplikan visual classroom male untuk frasa أُحِبُّ الْقِرَاءَةَ.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: لَا أُحِبُّ الِانْتِظَارَ
+  alt: Cuplikan visual classroom male untuk frasa لَا أُحِبُّ الِانْتِظَارَ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَسْتَطِيعُ الْقِرَاءَةَ
+  alt: Cuplikan visual classroom male untuk frasa أَسْتَطِيعُ الْقِرَاءَةَ.

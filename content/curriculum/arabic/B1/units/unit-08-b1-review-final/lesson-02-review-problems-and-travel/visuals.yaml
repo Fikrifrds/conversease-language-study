@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Problems and Travel di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Problems and Travel.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
+  alt: Cuplikan visual travel male untuk frasa سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
+  alt: Cuplikan visual travel male untuk frasa فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
+  alt: Cuplikan visual travel male untuk frasa إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Reliable Sources di Indonesia.
+  caption: 'Konteks percakapan nyata: Discussing Reliable Sources.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'm not sure that source is reliable.
+  alt: Cuplikan visual workplace male untuk frasa I'm not sure that source is reliable..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Because it doesn't cite data or mention the author.
+  alt: Cuplikan visual workplace male untuk frasa Because it doesn't cite data or mention the author..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I'd check official reports.
+  alt: Cuplikan visual workplace male untuk frasa I'd check official reports..

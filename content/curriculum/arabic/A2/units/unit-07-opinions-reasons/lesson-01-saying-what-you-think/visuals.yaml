@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Think di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying What You Think.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.
+  alt: Cuplikan visual classroom male untuk frasa أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: فِي رَأْيِي، هَذَا جَيِّدٌ.
+  alt: Cuplikan visual classroom male untuk frasa فِي رَأْيِي، هَذَا جَيِّدٌ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.
+  alt: Cuplikan visual classroom male untuk frasa أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ..

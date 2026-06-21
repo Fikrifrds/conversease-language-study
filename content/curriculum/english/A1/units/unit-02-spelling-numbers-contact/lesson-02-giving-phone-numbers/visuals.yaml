@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Officer dan Dimas faceless berlatih memberi nomor telepon di meja registrasi kelas Indonesia.
-  caption: Ucapkan nomor telepon pelan dan konfirmasi dengan jelas tanpa menampilkan angka di gambar.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Giving Phone Numbers di Indonesia.
+  caption: 'Konteks percakapan nyata: Giving Phone Numbers.'
 cards:
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-phone-number.png
-    width: 1254
-    height: 1254
-    label: What is your phone number?
-    alt: Officer faceless bertanya nomor telepon di meja registrasi dengan layar ponsel kosong.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-zero-eight.png
-    width: 1254
-    height: 1254
-    label: It's zero eight one two.
-    alt: Dimas faceless memberi nomor telepon secara pelan tanpa angka terlihat.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/card-correct.png
-    width: 1254
-    height: 1254
-    label: Yes, that's correct.
-    alt: Dimas faceless mengonfirmasi nomor telepon dengan sopan di meja registrasi.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What is your phone number?
+  alt: Cuplikan visual classroom male untuk frasa What is your phone number?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: It's zero eight one two.
+  alt: Cuplikan visual classroom male untuk frasa It's zero eight one two..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Let me check.
+  alt: Cuplikan visual classroom male untuk frasa Let me check..

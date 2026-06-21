@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Personal Story Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Personal Story Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Tell me about something interesting that happened recently.
+  alt: Cuplikan visual classroom male untuk frasa Tell me about something interesting that happened recently..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: First, we explored the city.
+  alt: Cuplikan visual classroom male untuk frasa First, we explored the city..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Then we got lost for a while.
+  alt: Cuplikan visual classroom male untuk frasa Then we got lost for a while..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Khalid faceless berlatih sapaan formal dari jarak sopan di kelas Indonesia.
-  caption: Latihan sapaan formal di kelas nyata dengan lawan bicara dan adab visual yang jelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Formal Greetings di Indonesia.
+  caption: 'Konteks percakapan nyata: Formal Greetings.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-marhaban.png
-    width: 1254
-    height: 1254
-    label: مرحبًا
-    alt: Khalid faceless berpakaian sopan masuk kelas dan memberi sapaan formal.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-kayfa-haluk.png
-    width: 1254
-    height: 1254
-    label: كيف حالك؟
-    alt: Muallim faceless bertanya kabar di depan papan tulis kosong di kelas Indonesia.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/card-ana-bikhayr.png
-    width: 1254
-    height: 1254
-    label: أنا بخير، شكرًا
-    alt: Khalid faceless berpakaian sopan menjawab dengan sopan di meja kelas.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مرحبًا
+  alt: Cuplikan visual classroom male untuk frasa مرحبًا.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أهلًا وسهلًا
+  alt: Cuplikan visual classroom male untuk frasa أهلًا وسهلًا.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: كيف حالك؟
+  alt: Cuplikan visual classroom male untuk frasa كيف حالك؟.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking How to Get There di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking How to Get There.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟
+  alt: Cuplikan visual travel male untuk frasa كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: امشِ إِلَى الْأَمَامِ
+  alt: Cuplikan visual travel male untuk frasa امشِ إِلَى الْأَمَامِ.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: ثُمَّ
+  alt: Cuplikan visual travel male untuk frasa ثُمَّ.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Plan di Indonesia.
+  caption: 'Konteks percakapan nyata: Making a Simple Plan.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.
+  alt: Cuplikan visual classroom male untuk frasa سَأَذْهَبُ إِلَى الْمَكْتَبَةِ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟
+  alt: Cuplikan visual classroom male untuk frasa هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: مَتَى نَلْتَقِي؟
+  alt: Cuplikan visual classroom male untuk frasa مَتَى نَلْتَقِي؟.

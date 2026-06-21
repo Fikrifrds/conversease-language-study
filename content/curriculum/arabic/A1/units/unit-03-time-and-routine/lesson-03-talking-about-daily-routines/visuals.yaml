@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Daily Routines di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking About Daily Routines.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَاذَا تَفْعَلُ صَبَاحًا؟
+  alt: Cuplikan visual classroom male untuk frasa مَاذَا تَفْعَلُ صَبَاحًا؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَقْرَأُ
+  alt: Cuplikan visual classroom male untuk frasa أَقْرَأُ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أكتب
+  alt: Cuplikan visual classroom male untuk frasa أكتب.

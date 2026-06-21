@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Omar dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.
-  caption: Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying Your Name di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying Your Name.'
 cards:
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-my-name-is.png
-    width: 1254
-    height: 1254
-    label: My name is ...
-    alt: Omar faceless berpakaian sopan memperkenalkan nama di kelas.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-im.png
-    width: 1254
-    height: 1254
-    label: I'm ...
-    alt: Arif faceless memperkenalkan nama dengan celana di atas mata kaki di kelas.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/card-nice-to-meet-you-too.png
-    width: 1254
-    height: 1254
-    label: Nice to meet you too.
-    alt: Arif faceless merespons perkenalan dengan sopan di kelas Indonesia.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: My name is ...
+  alt: Cuplikan visual classroom male untuk frasa My name is ....
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I'm ...
+  alt: Cuplikan visual classroom male untuk frasa I'm ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Nice to meet you too.
+  alt: Cuplikan visual classroom male untuk frasa Nice to meet you too..

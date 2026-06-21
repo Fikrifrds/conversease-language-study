@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Stories and Work di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Stories and Work.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+  alt: Cuplikan visual classroom male untuk frasa سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  alt: Cuplikan visual classroom male untuk frasa بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  alt: Cuplikan visual classroom male untuk frasa أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ..

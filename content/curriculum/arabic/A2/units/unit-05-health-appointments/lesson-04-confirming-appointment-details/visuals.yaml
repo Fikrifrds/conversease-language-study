@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/health-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Appointment Details di Indonesia.
+  caption: 'Konteks percakapan nyata: Confirming Appointment Details.'
+cards:
+- src: /images/lesson-visual-library/health-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.
+  alt: Cuplikan visual health male untuk frasa أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ..
+- src: /images/lesson-visual-library/health-male/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلِ الْمَوْعِدُ غَدًا؟
+  alt: Cuplikan visual health male untuk frasa هَلِ الْمَوْعِدُ غَدًا؟.
+- src: /images/lesson-visual-library/health-male/card-3.png
+  width: 1254
+  height: 1254
+  label: فِي أَيِّ طَابِقٍ؟
+  alt: Cuplikan visual health male untuk frasa فِي أَيِّ طَابِقٍ؟.

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Using Precise Transitions di Indonesia.
+  caption: 'Konteks percakapan nyata: Using Precise Transitions.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: 'That brings me to the key trade-off: speed versus reliability.'
+  alt: 'Cuplikan visual workplace male untuk frasa That brings me to the key trade-off: speed versus reliability..'
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What's crucial here is that we set clear standards early.
+  alt: Cuplikan visual workplace male untuk frasa What's crucial here is that we set clear standards early..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: To put it differently, ...
+  alt: Cuplikan visual workplace male untuk frasa To put it differently, ....

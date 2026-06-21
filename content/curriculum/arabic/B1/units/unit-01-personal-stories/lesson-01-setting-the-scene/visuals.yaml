@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Setting the Scene di Indonesia.
+  caption: 'Konteks percakapan nyata: Setting the Scene.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.
+  alt: Cuplikan visual classroom male untuk frasa فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ.
+  alt: Cuplikan visual classroom male untuk frasa كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا.
+  alt: Cuplikan visual classroom male untuk frasa كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Talking About Goals di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking About Goals.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ.
+  alt: Cuplikan visual workplace female untuk frasa هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+  alt: Cuplikan visual workplace female untuk frasa أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.
+  alt: Cuplikan visual workplace female untuk frasa لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Opinion Conversation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Opinion Conversation Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
+  alt: Cuplikan visual classroom male untuk frasa مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.
+  alt: Cuplikan visual classroom male untuk frasa أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.
+  alt: Cuplikan visual classroom male untuk frasa أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ..

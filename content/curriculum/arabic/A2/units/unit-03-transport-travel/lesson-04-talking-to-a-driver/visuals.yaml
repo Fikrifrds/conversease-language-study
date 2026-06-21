@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking to a Driver di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking to a Driver.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.
+  alt: Cuplikan visual travel male untuk frasa إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟
+  alt: Cuplikan visual travel male untuk frasa هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟
+  alt: Cuplikan visual travel male untuk frasa كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟.

@@ -90,7 +90,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Start and close a very simple English conversation.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Dimas dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Mulai percakapan sederhana di kelas nyata dengan lawan bicara dan lokasi yang jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying Hello and Goodbye di Indonesia.", caption: "Konteks percakapan nyata: Saying Hello and Goodbye." }
       },
       sections: lessonSections
     },
@@ -102,7 +102,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Omar dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying Your Name di Indonesia.", caption: "Konteks percakapan nyata: Saying Your Name." }
       },
       sections: lessonSections
     },
@@ -114,7 +114,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Ask someone's name politely and confirm what you heard.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Adi dan Raka faceless bertanya nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Tanyakan nama dan konfirmasi dengan sopan saat bertemu teman kelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Someone's Name di Indonesia.", caption: "Konteks percakapan nyata: Asking Someone's Name." }
       },
       sections: lessonSections
     },
@@ -126,7 +126,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say where you are from and ask the same question back.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Arif dan Omar faceless membicarakan asal dari jarak sopan di kelas Indonesia.", caption: "Sebutkan asal dan tanyakan balik dalam percakapan kelas nyata." }
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying Where You Are From di Indonesia.", caption: "Konteks percakapan nyata: Saying Where You Are From." }
       },
       sections: lessonSections
     },
@@ -138,7 +138,7 @@ export const lessonCatalog = [
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Raka dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks First Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: First Conversation Mission." }
       },
       sections: lessonSections
     },
@@ -150,7 +150,7 @@ export const lessonCatalog = [
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Spell your name clearly when someone needs to write it down.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless berlatih mengeja nama di meja registrasi kelas Indonesia.", caption: "Eja nama dengan jelas saat mengisi formulir kelas bersama petugas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.", caption: "Konteks percakapan nyata: Spelling Your Name." }
       },
       sections: lessonSections
     },
@@ -162,7 +162,7 @@ export const lessonCatalog = [
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless berlatih memberi nomor telepon di meja registrasi kelas Indonesia.", caption: "Ucapkan nomor telepon pelan dan konfirmasi dengan jelas tanpa menampilkan angka di gambar." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Phone Numbers di Indonesia.", caption: "Konteks percakapan nyata: Giving Phone Numbers." }
       },
       sections: lessonSections
     },
@@ -174,7 +174,7 @@ export const lessonCatalog = [
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share an email address slowly and spell the important parts.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Officer dan Ben faceless berlatih alamat email di meja registrasi kelas Indonesia.", caption: "Sebutkan alamat email secara pelan tanpa menampilkan teks email di gambar." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.", caption: "Konteks percakapan nyata: Sharing Email Addresses." }
       },
       sections: lessonSections
     },
@@ -186,7 +186,7 @@ export const lessonCatalog = [
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png", width: 1672, height: 941, alt: "Dimas dan Ben faceless berlatih meminta pengulangan informasi kontak di kelas Indonesia.", caption: "Minta pengulangan dengan sopan saat informasi belum jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Repetition di Indonesia.", caption: "Konteks percakapan nyata: Asking for Repetition." }
       },
       sections: lessonSections
     },
@@ -198,7 +198,7 @@ export const lessonCatalog = [
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless menjalankan misi detail kontak di meja registrasi kelas Indonesia.", caption: "Gabungkan nama, ejaan, nomor telepon, dan email dalam satu percakapan." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.", caption: "Konteks percakapan nyata: Contact Details Mission." }
       },
       sections: lessonSections
     },
@@ -209,6 +209,9 @@ export const lessonCatalog = [
       title: "Telling the Time",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask and answer a simple question about time.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Telling the Time di Indonesia.", caption: "Konteks percakapan nyata: Telling the Time." }
+      },
       sections: lessonSections
     },
     {
@@ -218,6 +221,9 @@ export const lessonCatalog = [
       title: "Talking About Daily Routines",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can say a simple daily routine with time words.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Daily Routines di Indonesia.", caption: "Konteks percakapan nyata: Talking About Daily Routines." }
+      },
       sections: lessonSections
     },
     {
@@ -227,6 +233,9 @@ export const lessonCatalog = [
       title: "Days and Simple Schedules",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can talk about simple days and class schedules.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Days and Simple Schedules di Indonesia.", caption: "Konteks percakapan nyata: Days and Simple Schedules." }
+      },
       sections: lessonSections
     },
     {
@@ -236,6 +245,9 @@ export const lessonCatalog = [
       title: "Asking When Something Happens",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask when a simple event happens and confirm the details.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking When Something Happens di Indonesia.", caption: "Konteks percakapan nyata: Asking When Something Happens." }
+      },
       sections: lessonSections
     },
     {
@@ -245,6 +257,9 @@ export const lessonCatalog = [
       title: "Routine Conversation Mission",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can combine time, routine, days, and schedule questions in one simple conversation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Routine Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Routine Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -254,6 +269,9 @@ export const lessonCatalog = [
       title: "Saying What You Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they do in a simple work or study conversation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Do di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Do." }
+      },
       sections: lessonSections
     },
     {
@@ -263,6 +281,9 @@ export const lessonCatalog = [
       title: "Asking About Work or Study",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can ask if someone works or studies and ask one simple follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Work or Study di Indonesia.", caption: "Konteks percakapan nyata: Asking About Work or Study." }
+      },
       sections: lessonSections
     },
     {
@@ -272,6 +293,9 @@ export const lessonCatalog = [
       title: "Talking About Likes",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they like and ask someone about simple preferences.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Likes di Indonesia.", caption: "Konteks percakapan nyata: Talking About Likes." }
+      },
       sections: lessonSections
     },
     {
@@ -281,6 +305,9 @@ export const lessonCatalog = [
       title: "Saying What You Can Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they can do in English with simple ability sentences.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Can Do di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Can Do." }
+      },
       sections: lessonSections
     },
     {
@@ -290,6 +317,9 @@ export const lessonCatalog = [
       title: "Work and Study Conversation Mission",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can combine work, study, preferences, and simple abilities in one conversation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Work and Study Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Work and Study Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -299,6 +329,9 @@ export const lessonCatalog = [
       title: "Asking Where a Place Is",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask where a place is and understand a short location answer.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Where a Place Is di Indonesia.", caption: "Konteks percakapan nyata: Asking Where a Place Is." }
+      },
       sections: lessonSections
     },
     {
@@ -308,6 +341,9 @@ export const lessonCatalog = [
       title: "Simple Place Words",
       unit: "Places & Directions",
       conversationGoal: "Learners can name common places and answer where someone is going.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Simple Place Words di Indonesia.", caption: "Konteks percakapan nyata: Simple Place Words." }
+      },
       sections: lessonSections
     },
     {
@@ -317,6 +353,9 @@ export const lessonCatalog = [
       title: "Understanding Simple Directions",
       unit: "Places & Directions",
       conversationGoal: "Learners can understand very simple directions with go straight, turn left, and turn right.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Understanding Simple Directions di Indonesia.", caption: "Konteks percakapan nyata: Understanding Simple Directions." }
+      },
       sections: lessonSections
     },
     {
@@ -326,6 +365,9 @@ export const lessonCatalog = [
       title: "Asking How to Get There",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask how to get to a place and follow two simple steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking How to Get There di Indonesia.", caption: "Konteks percakapan nyata: Asking How to Get There." }
+      },
       sections: lessonSections
     },
     {
@@ -335,6 +377,9 @@ export const lessonCatalog = [
       title: "Finding a Place Mission",
       unit: "Places & Directions",
       conversationGoal: "Learners can complete a short place-finding conversation from question to confirmation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Finding a Place Mission di Indonesia.", caption: "Konteks percakapan nyata: Finding a Place Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -344,6 +389,9 @@ export const lessonCatalog = [
       title: "Ordering a Drink",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order one drink politely and answer a simple size question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Ordering a Drink di Indonesia.", caption: "Konteks percakapan nyata: Ordering a Drink." }
+      },
       sections: lessonSections
     },
     {
@@ -353,6 +401,9 @@ export const lessonCatalog = [
       title: "Asking About Prices",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can ask the price of one item and understand a short price answer.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Prices di Indonesia.", caption: "Konteks percakapan nyata: Asking About Prices." }
+      },
       sections: lessonSections
     },
     {
@@ -362,6 +413,9 @@ export const lessonCatalog = [
       title: "Buying a Simple Item",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can buy one simple item, ask the price, and complete the payment.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Simple Item di Indonesia.", caption: "Konteks percakapan nyata: Buying a Simple Item." }
+      },
       sections: lessonSections
     },
     {
@@ -371,6 +425,9 @@ export const lessonCatalog = [
       title: "Saying What You Want",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can say what they want and choose between two simple options.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Want di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Want." }
+      },
       sections: lessonSections
     },
     {
@@ -380,6 +437,9 @@ export const lessonCatalog = [
       title: "Cafe and Shop Mission",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order, ask a price, choose an option, and complete a simple purchase.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Cafe and Shop Mission di Indonesia.", caption: "Konteks percakapan nyata: Cafe and Shop Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -389,6 +449,9 @@ export const lessonCatalog = [
       title: "Saying You Do Not Understand",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can say they do not understand and ask for repetition politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying You Do Not Understand di Indonesia.", caption: "Konteks percakapan nyata: Saying You Do Not Understand." }
+      },
       sections: lessonSections
     },
     {
@@ -398,6 +461,9 @@ export const lessonCatalog = [
       title: "Asking for Help",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can ask for help with one simple task and respond to the helper.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Help di Indonesia.", caption: "Konteks percakapan nyata: Asking for Help." }
+      },
       sections: lessonSections
     },
     {
@@ -407,6 +473,9 @@ export const lessonCatalog = [
       title: "Making Simple Requests",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can make a simple request with please and respond to yes or no.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making Simple Requests di Indonesia.", caption: "Konteks percakapan nyata: Making Simple Requests." }
+      },
       sections: lessonSections
     },
     {
@@ -416,6 +485,9 @@ export const lessonCatalog = [
       title: "Apologizing and Thanking",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can apologize for a small problem and thank someone for help.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Apologizing and Thanking di Indonesia.", caption: "Konteks percakapan nyata: Apologizing and Thanking." }
+      },
       sections: lessonSections
     },
     {
@@ -425,6 +497,9 @@ export const lessonCatalog = [
       title: "Help and Problem Mission",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can explain a simple problem, ask for help, make a request, and close politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Help and Problem Mission di Indonesia.", caption: "Konteks percakapan nyata: Help and Problem Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -434,6 +509,9 @@ export const lessonCatalog = [
       title: "Review Introductions",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Introductions di Indonesia.", caption: "Konteks percakapan nyata: Review Introductions." }
+      },
       sections: lessonSections
     },
     {
@@ -443,6 +521,9 @@ export const lessonCatalog = [
       title: "Review Routines and Time",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can talk about a simple daily routine, class day, and class time in one short conversation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Routines and Time di Indonesia.", caption: "Konteks percakapan nyata: Review Routines and Time." }
+      },
       sections: lessonSections
     },
     {
@@ -452,6 +533,9 @@ export const lessonCatalog = [
       title: "Review Places and Shopping",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can ask where a place is, follow simple directions, order one item, and ask the price.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Places and Shopping di Indonesia.", caption: "Konteks percakapan nyata: Review Places and Shopping." }
+      },
       sections: lessonSections
     },
     {
@@ -461,6 +545,9 @@ export const lessonCatalog = [
       title: "Final Test Practice",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -470,6 +557,9 @@ export const lessonCatalog = [
       title: "A1 Final Conversation",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: A1 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -479,6 +569,9 @@ export const lessonCatalog = [
       title: "Starting Small Talk",
       unit: "Social Small Talk",
       conversationGoal: "Start a short small-talk conversation and keep it going with one follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Starting Small Talk di Indonesia.", caption: "Konteks percakapan nyata: Starting Small Talk." }
+      },
       sections: lessonSections
     },
     {
@@ -488,6 +581,9 @@ export const lessonCatalog = [
       title: "Asking Follow-up Questions",
       unit: "Social Small Talk",
       conversationGoal: "Ask simple follow-up questions to keep a conversation going.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Follow-up Questions di Indonesia.", caption: "Konteks percakapan nyata: Asking Follow-up Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -497,6 +593,9 @@ export const lessonCatalog = [
       title: "Talking About Weekends",
       unit: "Social Small Talk",
       conversationGoal: "Ask about weekend plans and answer with simple details.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Weekends di Indonesia.", caption: "Konteks percakapan nyata: Talking About Weekends." }
+      },
       sections: lessonSections
     },
     {
@@ -506,6 +605,9 @@ export const lessonCatalog = [
       title: "Reacting Politely",
       unit: "Social Small Talk",
       conversationGoal: "React politely to good news and to a small problem.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Reacting Politely di Indonesia.", caption: "Konteks percakapan nyata: Reacting Politely." }
+      },
       sections: lessonSections
     },
     {
@@ -515,6 +617,9 @@ export const lessonCatalog = [
       title: "Small Talk Mission",
       unit: "Social Small Talk",
       conversationGoal: "Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Small Talk Mission di Indonesia.", caption: "Konteks percakapan nyata: Small Talk Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -524,6 +629,9 @@ export const lessonCatalog = [
       title: "Making Plans",
       unit: "Plans & Invitations",
       conversationGoal: "Make a simple plan with a time and a place.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making Plans di Indonesia.", caption: "Konteks percakapan nyata: Making Plans." }
+      },
       sections: lessonSections
     },
     {
@@ -533,6 +641,9 @@ export const lessonCatalog = [
       title: "Inviting Someone",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone to an activity and respond politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Inviting Someone di Indonesia.", caption: "Konteks percakapan nyata: Inviting Someone." }
+      },
       sections: lessonSections
     },
     {
@@ -542,6 +653,9 @@ export const lessonCatalog = [
       title: "Accepting and Declining",
       unit: "Plans & Invitations",
       conversationGoal: "Accept or decline an invitation politely with a short reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Accepting and Declining di Indonesia.", caption: "Konteks percakapan nyata: Accepting and Declining." }
+      },
       sections: lessonSections
     },
     {
@@ -551,6 +665,9 @@ export const lessonCatalog = [
       title: "Rescheduling",
       unit: "Plans & Invitations",
       conversationGoal: "Reschedule a plan and agree on a new time.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Rescheduling di Indonesia.", caption: "Konteks percakapan nyata: Rescheduling." }
+      },
       sections: lessonSections
     },
     {
@@ -560,6 +677,9 @@ export const lessonCatalog = [
       title: "Invitation Mission",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone, decline politely with a reason, reschedule, and confirm the new plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Invitation Mission di Indonesia.", caption: "Konteks percakapan nyata: Invitation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -569,6 +689,9 @@ export const lessonCatalog = [
       title: "Buying a Ticket",
       unit: "Travel & Transport",
       conversationGoal: "Buy a simple ticket and confirm the destination.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Ticket di Indonesia.", caption: "Konteks percakapan nyata: Buying a Ticket." }
+      },
       sections: lessonSections
     },
     {
@@ -578,6 +701,9 @@ export const lessonCatalog = [
       title: "Asking About Departure Time",
       unit: "Travel & Transport",
       conversationGoal: "Ask about a departure time and confirm the platform.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Departure Time di Indonesia.", caption: "Konteks percakapan nyata: Asking About Departure Time." }
+      },
       sections: lessonSections
     },
     {
@@ -587,6 +713,9 @@ export const lessonCatalog = [
       title: "Checking Directions",
       unit: "Travel & Transport",
       conversationGoal: "Check directions and confirm you are going the right way.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Checking Directions di Indonesia.", caption: "Konteks percakapan nyata: Checking Directions." }
+      },
       sections: lessonSections
     },
     {
@@ -596,6 +725,9 @@ export const lessonCatalog = [
       title: "Talking to a Driver",
       unit: "Travel & Transport",
       conversationGoal: "Tell a driver where you want to go and ask about the travel time.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking to a Driver di Indonesia.", caption: "Konteks percakapan nyata: Talking to a Driver." }
+      },
       sections: lessonSections
     },
     {
@@ -605,6 +737,9 @@ export const lessonCatalog = [
       title: "Transport Mission",
       unit: "Travel & Transport",
       conversationGoal: "Buy a ticket, confirm time and platform, then tell a driver your destination.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Transport Mission di Indonesia.", caption: "Konteks percakapan nyata: Transport Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -614,6 +749,9 @@ export const lessonCatalog = [
       title: "Asking for an Item",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item in a shop and check if it is available.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for an Item di Indonesia.", caption: "Konteks percakapan nyata: Asking for an Item." }
+      },
       sections: lessonSections
     },
     {
@@ -623,6 +761,9 @@ export const lessonCatalog = [
       title: "Asking About Size and Color",
       unit: "Shopping & Services",
       conversationGoal: "Ask about size and color and choose one option.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Size and Color di Indonesia.", caption: "Konteks percakapan nyata: Asking About Size and Color." }
+      },
       sections: lessonSections
     },
     {
@@ -632,6 +773,9 @@ export const lessonCatalog = [
       title: "Comparing Simple Options",
       unit: "Shopping & Services",
       conversationGoal: "Compare two simple options and choose one.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Simple Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Simple Options." }
+      },
       sections: lessonSections
     },
     {
@@ -641,6 +785,9 @@ export const lessonCatalog = [
       title: "Requesting Service Help",
       unit: "Shopping & Services",
       conversationGoal: "Ask for simple service help and respond politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Requesting Service Help di Indonesia.", caption: "Konteks percakapan nyata: Requesting Service Help." }
+      },
       sections: lessonSections
     },
     {
@@ -650,6 +797,9 @@ export const lessonCatalog = [
       title: "Shopping Service Mission",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item, ask about size and color, compare options, and request help politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Shopping Service Mission di Indonesia.", caption: "Konteks percakapan nyata: Shopping Service Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -659,6 +809,9 @@ export const lessonCatalog = [
       title: "Saying How You Feel",
       unit: "Health & Appointments",
       conversationGoal: "Say how you feel and mention one or two simple symptoms.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying How You Feel di Indonesia.", caption: "Konteks percakapan nyata: Saying How You Feel." }
+      },
       sections: lessonSections
     },
     {
@@ -668,6 +821,9 @@ export const lessonCatalog = [
       title: "Describing Simple Symptoms",
       unit: "Health & Appointments",
       conversationGoal: "Describe simple symptoms and say how long you have had them.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Simple Symptoms di Indonesia.", caption: "Konteks percakapan nyata: Describing Simple Symptoms." }
+      },
       sections: lessonSections
     },
     {
@@ -677,6 +833,9 @@ export const lessonCatalog = [
       title: "Making an Appointment",
       unit: "Health & Appointments",
       conversationGoal: "Ask for an appointment and choose a day and time.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making an Appointment di Indonesia.", caption: "Konteks percakapan nyata: Making an Appointment." }
+      },
       sections: lessonSections
     },
     {
@@ -686,6 +845,9 @@ export const lessonCatalog = [
       title: "Confirming Details",
       unit: "Health & Appointments",
       conversationGoal: "Confirm the appointment date, time, and name details.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Details di Indonesia.", caption: "Konteks percakapan nyata: Confirming Details." }
+      },
       sections: lessonSections
     },
     {
@@ -695,6 +857,9 @@ export const lessonCatalog = [
       title: "Health Appointment Mission",
       unit: "Health & Appointments",
       conversationGoal: "Check in for an appointment, confirm details, and describe a symptom briefly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Health Appointment Mission di Indonesia.", caption: "Konteks percakapan nyata: Health Appointment Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -704,6 +869,9 @@ export const lessonCatalog = [
       title: "Talking About Yesterday",
       unit: "Past Experiences",
       conversationGoal: "Talk about what you did yesterday using simple past tense verbs.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Yesterday di Indonesia.", caption: "Konteks percakapan nyata: Talking About Yesterday." }
+      },
       sections: lessonSections
     },
     {
@@ -713,6 +881,9 @@ export const lessonCatalog = [
       title: "Saying Where You Went",
       unit: "Past Experiences",
       conversationGoal: "Say where you went and ask where someone went.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying Where You Went di Indonesia.", caption: "Konteks percakapan nyata: Saying Where You Went." }
+      },
       sections: lessonSections
     },
     {
@@ -722,6 +893,9 @@ export const lessonCatalog = [
       title: "Describing a Simple Experience",
       unit: "Past Experiences",
       conversationGoal: "Describe a simple experience and how it felt.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing a Simple Experience di Indonesia.", caption: "Konteks percakapan nyata: Describing a Simple Experience." }
+      },
       sections: lessonSections
     },
     {
@@ -731,6 +905,9 @@ export const lessonCatalog = [
       title: "Asking About Past Activities",
       unit: "Past Experiences",
       conversationGoal: "Ask what someone did and ask follow-up questions about their past activities.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Past Activities di Indonesia.", caption: "Konteks percakapan nyata: Asking About Past Activities." }
+      },
       sections: lessonSections
     },
     {
@@ -740,6 +917,9 @@ export const lessonCatalog = [
       title: "Past Experience Mission",
       unit: "Past Experiences",
       conversationGoal: "Tell someone about yesterday: where you went, what you did, and how it was.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Past Experience Mission di Indonesia.", caption: "Konteks percakapan nyata: Past Experience Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -749,6 +929,9 @@ export const lessonCatalog = [
       title: "Saying What You Think",
       unit: "Opinions & Reasons",
       conversationGoal: "Say what you think about a simple topic and give a short opinion.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Think di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Think." }
+      },
       sections: lessonSections
     },
     {
@@ -758,6 +941,9 @@ export const lessonCatalog = [
       title: "Giving Simple Reasons",
       unit: "Opinions & Reasons",
       conversationGoal: "Give a simple opinion and a short reason using because.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Simple Reasons di Indonesia.", caption: "Konteks percakapan nyata: Giving Simple Reasons." }
+      },
       sections: lessonSections
     },
     {
@@ -767,6 +953,9 @@ export const lessonCatalog = [
       title: "Agreeing and Disagreeing Politely",
       unit: "Opinions & Reasons",
       conversationGoal: "Agree or disagree politely and give a short reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Agreeing and Disagreeing Politely di Indonesia.", caption: "Konteks percakapan nyata: Agreeing and Disagreeing Politely." }
+      },
       sections: lessonSections
     },
     {
@@ -776,6 +965,9 @@ export const lessonCatalog = [
       title: "Asking for Opinions",
       unit: "Opinions & Reasons",
       conversationGoal: "Ask for someone's opinion and respond with a simple opinion and reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Opinions di Indonesia.", caption: "Konteks percakapan nyata: Asking for Opinions." }
+      },
       sections: lessonSections
     },
     {
@@ -785,6 +977,9 @@ export const lessonCatalog = [
       title: "Opinion Conversation Mission",
       unit: "Opinions & Reasons",
       conversationGoal: "Have a short opinion conversation: ask for an opinion, give a reason, and respond politely.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Opinion Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Opinion Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -794,6 +989,9 @@ export const lessonCatalog = [
       title: "Review Social and Plans",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review social small talk and making simple plans with follow-up questions.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Social and Plans di Indonesia.", caption: "Konteks percakapan nyata: Review Social and Plans." }
+      },
       sections: lessonSections
     },
     {
@@ -803,6 +1001,9 @@ export const lessonCatalog = [
       title: "Review Travel and Shopping",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review asking travel questions and shopping requests (tickets, directions, items, sizes).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Travel and Shopping di Indonesia.", caption: "Konteks percakapan nyata: Review Travel and Shopping." }
+      },
       sections: lessonSections
     },
     {
@@ -812,6 +1013,9 @@ export const lessonCatalog = [
       title: "Review Health and Past",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review describing symptoms and talking about the past (yesterday, last night).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Health and Past di Indonesia.", caption: "Konteks percakapan nyata: Review Health and Past." }
+      },
       sections: lessonSections
     },
     {
@@ -821,6 +1025,9 @@ export const lessonCatalog = [
       title: "A2 Final Test Practice",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Practice mixed A2 skills with short prompts (plans, shopping, symptoms, past, opinions).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: A2 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -830,6 +1037,9 @@ export const lessonCatalog = [
       title: "A2 Final Conversation",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: A2 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -839,6 +1049,9 @@ export const lessonCatalog = [
       title: "Setting the Scene",
       unit: "Personal Stories",
       conversationGoal: "Set the scene for a short story (when, where, who) before telling what happened.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting the Scene di Indonesia.", caption: "Konteks percakapan nyata: Setting the Scene." }
+      },
       sections: lessonSections
     },
     {
@@ -848,6 +1061,9 @@ export const lessonCatalog = [
       title: "Telling Events in Order",
       unit: "Personal Stories",
       conversationGoal: "Tell story events in order using simple linking words (first, then, after that, finally).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Telling Events in Order di Indonesia.", caption: "Konteks percakapan nyata: Telling Events in Order." }
+      },
       sections: lessonSections
     },
     {
@@ -857,6 +1073,9 @@ export const lessonCatalog = [
       title: "Describing Feelings",
       unit: "Personal Stories",
       conversationGoal: "Describe how you felt during a story using feeling adjectives.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Feelings di Indonesia.", caption: "Konteks percakapan nyata: Describing Feelings." }
+      },
       sections: lessonSections
     },
     {
@@ -866,6 +1085,9 @@ export const lessonCatalog = [
       title: "Asking About Someone's Story",
       unit: "Personal Stories",
       conversationGoal: "Ask follow-up questions to keep someone's story going (next event, reason, feelings).",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Someone's Story di Indonesia.", caption: "Konteks percakapan nyata: Asking About Someone's Story." }
+      },
       sections: lessonSections
     },
     {
@@ -875,6 +1097,9 @@ export const lessonCatalog = [
       title: "Personal Story Mission",
       unit: "Personal Stories",
       conversationGoal: "Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Personal Story Mission di Indonesia.", caption: "Konteks percakapan nyata: Personal Story Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -884,6 +1109,9 @@ export const lessonCatalog = [
       title: "Explaining Your Task",
       unit: "Workplace Conversations",
       conversationGoal: "Explain what you are working on and what the next step is in a short, clear way.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
+      },
       sections: lessonSections
     },
     {
@@ -893,6 +1121,9 @@ export const lessonCatalog = [
       title: "Asking for Clarification",
       unit: "Workplace Conversations",
       conversationGoal: "Ask for clarification politely when you are not sure about a task.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
+      },
       sections: lessonSections
     },
     {
@@ -902,6 +1133,9 @@ export const lessonCatalog = [
       title: "Giving a Short Update",
       unit: "Workplace Conversations",
       conversationGoal: "Give a short work update with progress, a plan, and one risk or blocker.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
+      },
       sections: lessonSections
     },
     {
@@ -911,6 +1145,9 @@ export const lessonCatalog = [
       title: "Joining a Simple Meeting",
       unit: "Workplace Conversations",
       conversationGoal: "Join a simple meeting, state your point briefly, and ask for the next step.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
+      },
       sections: lessonSections
     },
     {
@@ -920,6 +1157,9 @@ export const lessonCatalog = [
       title: "Workplace Mission",
       unit: "Workplace Conversations",
       conversationGoal: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -929,6 +1169,9 @@ export const lessonCatalog = [
       title: "Describing a Problem",
       unit: "Problems & Solutions",
       conversationGoal: "Describe a problem clearly and explain what happened and why it matters.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing a Problem di Indonesia.", caption: "Konteks percakapan nyata: Describing a Problem." }
+      },
       sections: lessonSections
     },
     {
@@ -938,6 +1181,9 @@ export const lessonCatalog = [
       title: "Suggesting a Solution",
       unit: "Problems & Solutions",
       conversationGoal: "Suggest a solution politely and explain why it could help.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Suggesting a Solution di Indonesia.", caption: "Konteks percakapan nyata: Suggesting a Solution." }
+      },
       sections: lessonSections
     },
     {
@@ -947,6 +1193,9 @@ export const lessonCatalog = [
       title: "Responding to Advice",
       unit: "Problems & Solutions",
       conversationGoal: "Respond to advice politely and decide what you will do next.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Advice di Indonesia.", caption: "Konteks percakapan nyata: Responding to Advice." }
+      },
       sections: lessonSections
     },
     {
@@ -956,6 +1205,9 @@ export const lessonCatalog = [
       title: "Making a Simple Decision",
       unit: "Problems & Solutions",
       conversationGoal: "Compare two options and make a simple decision with a clear reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Decision di Indonesia.", caption: "Konteks percakapan nyata: Making a Simple Decision." }
+      },
       sections: lessonSections
     },
     {
@@ -965,6 +1217,9 @@ export const lessonCatalog = [
       title: "Problem Solving Mission",
       unit: "Problems & Solutions",
       conversationGoal: "Complete a mini problem-solving conversation: describe a problem, suggest a solution, respond to a concern, and decide next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Mission di Indonesia.", caption: "Konteks percakapan nyata: Problem Solving Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -974,6 +1229,9 @@ export const lessonCatalog = [
       title: "Checking In",
       unit: "Travel Situations",
       conversationGoal: "Check in at a hotel, confirm your reservation, and ask one practical question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Checking In di Indonesia.", caption: "Konteks percakapan nyata: Checking In." }
+      },
       sections: lessonSections
     },
     {
@@ -983,6 +1241,9 @@ export const lessonCatalog = [
       title: "Explaining a Delay",
       unit: "Travel Situations",
       conversationGoal: "Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining a Delay di Indonesia.", caption: "Konteks percakapan nyata: Explaining a Delay." }
+      },
       sections: lessonSections
     },
     {
@@ -992,6 +1253,9 @@ export const lessonCatalog = [
       title: "Asking for Recommendations",
       unit: "Travel Situations",
       conversationGoal: "Ask for recommendations, describe what you want, and ask one follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Recommendations di Indonesia.", caption: "Konteks percakapan nyata: Asking for Recommendations." }
+      },
       sections: lessonSections
     },
     {
@@ -1001,6 +1265,9 @@ export const lessonCatalog = [
       title: "Handling a Simple Complaint",
       unit: "Travel Situations",
       conversationGoal: "Explain a simple problem politely and ask for help or an alternative.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling a Simple Complaint di Indonesia.", caption: "Konteks percakapan nyata: Handling a Simple Complaint." }
+      },
       sections: lessonSections
     },
     {
@@ -1010,6 +1277,9 @@ export const lessonCatalog = [
       title: "Travel Situation Mission",
       unit: "Travel Situations",
       conversationGoal: "Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Travel Situation Mission di Indonesia.", caption: "Konteks percakapan nyata: Travel Situation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1019,6 +1289,9 @@ export const lessonCatalog = [
       title: "Talking About Goals",
       unit: "Goals & Progress",
       conversationGoal: "Talk about a personal goal, give a time frame, and explain why it matters.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Goals di Indonesia.", caption: "Konteks percakapan nyata: Talking About Goals." }
+      },
       sections: lessonSections
     },
     {
@@ -1028,6 +1301,9 @@ export const lessonCatalog = [
       title: "Explaining Progress",
       unit: "Goals & Progress",
       conversationGoal: "Explain your progress clearly, mention what improved, and say what you still need to work on.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Progress di Indonesia.", caption: "Konteks percakapan nyata: Explaining Progress." }
+      },
       sections: lessonSections
     },
     {
@@ -1037,6 +1313,9 @@ export const lessonCatalog = [
       title: "Discussing Challenges",
       unit: "Goals & Progress",
       conversationGoal: "Describe a challenge, explain why it is difficult, and ask for a simple suggestion.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Challenges di Indonesia.", caption: "Konteks percakapan nyata: Discussing Challenges." }
+      },
       sections: lessonSections
     },
     {
@@ -1046,6 +1325,9 @@ export const lessonCatalog = [
       title: "Making Next-step Plans",
       unit: "Goals & Progress",
       conversationGoal: "State your next step, set a simple schedule, and confirm the plan clearly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making Next-step Plans di Indonesia.", caption: "Konteks percakapan nyata: Making Next-step Plans." }
+      },
       sections: lessonSections
     },
     {
@@ -1055,6 +1337,9 @@ export const lessonCatalog = [
       title: "Goals Progress Mission",
       unit: "Goals & Progress",
       conversationGoal: "Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Goals Progress Mission di Indonesia.", caption: "Konteks percakapan nyata: Goals Progress Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1064,6 +1349,9 @@ export const lessonCatalog = [
       title: "Comparing Two Options",
       unit: "Explaining Preferences",
       conversationGoal: "Compare two options and ask what the other person prefers.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
+      },
       sections: lessonSections
     },
     {
@@ -1073,6 +1361,9 @@ export const lessonCatalog = [
       title: "Explaining Why You Prefer Something",
       unit: "Explaining Preferences",
       conversationGoal: "State a preference and explain the main reason clearly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Why You Prefer Something di Indonesia.", caption: "Konteks percakapan nyata: Explaining Why You Prefer Something." }
+      },
       sections: lessonSections
     },
     {
@@ -1082,6 +1373,9 @@ export const lessonCatalog = [
       title: "Asking About Pros and Cons",
       unit: "Explaining Preferences",
       conversationGoal: "Ask about pros and cons and respond with one advantage and one downside.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Pros and Cons di Indonesia.", caption: "Konteks percakapan nyata: Asking About Pros and Cons." }
+      },
       sections: lessonSections
     },
     {
@@ -1091,6 +1385,9 @@ export const lessonCatalog = [
       title: "Reaching Agreement",
       unit: "Explaining Preferences",
       conversationGoal: "Suggest a plan, respond politely, and confirm an agreement.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Reaching Agreement di Indonesia.", caption: "Konteks percakapan nyata: Reaching Agreement." }
+      },
       sections: lessonSections
     },
     {
@@ -1100,6 +1397,9 @@ export const lessonCatalog = [
       title: "Preference Discussion Mission",
       unit: "Explaining Preferences",
       conversationGoal: "Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Preference Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Preference Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1109,6 +1409,9 @@ export const lessonCatalog = [
       title: "Describing Your Community",
       unit: "Community & Culture",
       conversationGoal: "Describe your neighborhood, mention what you like, and invite a follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Your Community di Indonesia.", caption: "Konteks percakapan nyata: Describing Your Community." }
+      },
       sections: lessonSections
     },
     {
@@ -1118,6 +1421,9 @@ export const lessonCatalog = [
       title: "Talking About Local Habits",
       unit: "Community & Culture",
       conversationGoal: "Describe a local habit, say how often it happens, and give a simple example.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Local Habits di Indonesia.", caption: "Konteks percakapan nyata: Talking About Local Habits." }
+      },
       sections: lessonSections
     },
     {
@@ -1127,6 +1433,9 @@ export const lessonCatalog = [
       title: "Asking About Culture",
       unit: "Community & Culture",
       conversationGoal: "Ask about cultural traditions politely and respond with a short explanation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Culture di Indonesia.", caption: "Konteks percakapan nyata: Asking About Culture." }
+      },
       sections: lessonSections
     },
     {
@@ -1136,6 +1445,9 @@ export const lessonCatalog = [
       title: "Being Polite With Differences",
       unit: "Community & Culture",
       conversationGoal: "Talk about cultural differences politely and show respect even if you do things differently.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Being Polite With Differences di Indonesia.", caption: "Konteks percakapan nyata: Being Polite With Differences." }
+      },
       sections: lessonSections
     },
     {
@@ -1145,6 +1457,9 @@ export const lessonCatalog = [
       title: "Community Culture Mission",
       unit: "Community & Culture",
       conversationGoal: "Complete a mini conversation: describe your community, share a local habit, ask about culture, and respond politely to differences.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Community Culture Mission di Indonesia.", caption: "Konteks percakapan nyata: Community Culture Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1154,6 +1469,9 @@ export const lessonCatalog = [
       title: "Review Stories and Work",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Tell a short story and give a clear work update with one next step.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Stories and Work di Indonesia.", caption: "Konteks percakapan nyata: Review Stories and Work." }
+      },
       sections: lessonSections
     },
     {
@@ -1163,6 +1481,9 @@ export const lessonCatalog = [
       title: "Review Problems and Travel",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Explain a problem, describe the impact, and give a travel-style delay update with an estimate.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Problems and Travel di Indonesia.", caption: "Konteks percakapan nyata: Review Problems and Travel." }
+      },
       sections: lessonSections
     },
     {
@@ -1172,6 +1493,9 @@ export const lessonCatalog = [
       title: "Review Goals and Preferences",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "State a goal, share progress, and explain a preference with a clear reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Goals and Preferences di Indonesia.", caption: "Konteks percakapan nyata: Review Goals and Preferences." }
+      },
       sections: lessonSections
     },
     {
@@ -1181,6 +1505,9 @@ export const lessonCatalog = [
       title: "B1 Final Test Practice",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Practice a short mixed conversation with clear, accurate sentences across B1 topics.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: B1 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -1190,6 +1517,9 @@ export const lessonCatalog = [
       title: "B1 Final Conversation",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: B1 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -1199,6 +1529,9 @@ export const lessonCatalog = [
       title: "Stating Your Position",
       unit: "Clear Arguments",
       conversationGoal: "State your position clearly, acknowledge another view, and give one short reason.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Stating Your Position di Indonesia.", caption: "Konteks percakapan nyata: Stating Your Position." }
+      },
       sections: lessonSections
     },
     {
@@ -1208,6 +1541,9 @@ export const lessonCatalog = [
       title: "Supporting With Reasons",
       unit: "Clear Arguments",
       conversationGoal: "Support your argument with two structured reasons and keep it concise.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Supporting With Reasons di Indonesia.", caption: "Konteks percakapan nyata: Supporting With Reasons." }
+      },
       sections: lessonSections
     },
     {
@@ -1217,6 +1553,9 @@ export const lessonCatalog = [
       title: "Using Examples",
       unit: "Clear Arguments",
       conversationGoal: "Support your point with a clear example and connect it back to your argument.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Using Examples di Indonesia.", caption: "Konteks percakapan nyata: Using Examples." }
+      },
       sections: lessonSections
     },
     {
@@ -1226,6 +1565,9 @@ export const lessonCatalog = [
       title: "Responding to Counterpoints",
       unit: "Clear Arguments",
       conversationGoal: "Respond to a counterpoint politely, show you understand it, and reinforce your position.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Counterpoints di Indonesia.", caption: "Konteks percakapan nyata: Responding to Counterpoints." }
+      },
       sections: lessonSections
     },
     {
@@ -1235,6 +1577,9 @@ export const lessonCatalog = [
       title: "Clear Argument Mission",
       unit: "Clear Arguments",
       conversationGoal: "Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Clear Argument Mission di Indonesia.", caption: "Konteks percakapan nyata: Clear Argument Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1244,6 +1589,9 @@ export const lessonCatalog = [
       title: "Opening a Meeting Point",
       unit: "Professional Meetings",
       conversationGoal: "Open a discussion point clearly, explain why it matters, and invite input.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Opening a Meeting Point di Indonesia.", caption: "Konteks percakapan nyata: Opening a Meeting Point." }
+      },
       sections: lessonSections
     },
     {
@@ -1253,6 +1601,9 @@ export const lessonCatalog = [
       title: "Clarifying Scope",
       unit: "Professional Meetings",
       conversationGoal: "Clarify scope, ask what is included, and confirm what is out of scope.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Clarifying Scope di Indonesia.", caption: "Konteks percakapan nyata: Clarifying Scope." }
+      },
       sections: lessonSections
     },
     {
@@ -1262,6 +1613,9 @@ export const lessonCatalog = [
       title: "Giving Constructive Feedback",
       unit: "Professional Meetings",
       conversationGoal: "Give constructive feedback politely, focus on impact, and suggest one improvement.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Constructive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Giving Constructive Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -1271,6 +1625,9 @@ export const lessonCatalog = [
       title: "Summarizing Decisions",
       unit: "Professional Meetings",
       conversationGoal: "Summarize decisions clearly, confirm action items, and assign owners.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing Decisions di Indonesia.", caption: "Konteks percakapan nyata: Summarizing Decisions." }
+      },
       sections: lessonSections
     },
     {
@@ -1280,6 +1637,9 @@ export const lessonCatalog = [
       title: "Meeting Participation Mission",
       unit: "Professional Meetings",
       conversationGoal: "Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Meeting Participation Mission di Indonesia.", caption: "Konteks percakapan nyata: Meeting Participation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1289,6 +1649,9 @@ export const lessonCatalog = [
       title: "Expressing Priorities",
       unit: "Negotiation & Compromise",
       conversationGoal: "State your priorities clearly, explain what matters most, and ask about the other person's priorities.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Expressing Priorities di Indonesia.", caption: "Konteks percakapan nyata: Expressing Priorities." }
+      },
       sections: lessonSections
     },
     {
@@ -1298,6 +1661,9 @@ export const lessonCatalog = [
       title: "Making a Proposal",
       unit: "Negotiation & Compromise",
       conversationGoal: "Make a clear proposal, suggest a timeline, and ask if it works.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making a Proposal di Indonesia.", caption: "Konteks percakapan nyata: Making a Proposal." }
+      },
       sections: lessonSections
     },
     {
@@ -1307,6 +1673,9 @@ export const lessonCatalog = [
       title: "Handling Objections",
       unit: "Negotiation & Compromise",
       conversationGoal: "Respond to an objection politely, ask a clarifying question, and offer a revised proposal.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Objections di Indonesia.", caption: "Konteks percakapan nyata: Handling Objections." }
+      },
       sections: lessonSections
     },
     {
@@ -1316,6 +1685,9 @@ export const lessonCatalog = [
       title: "Finding Middle Ground",
       unit: "Negotiation & Compromise",
       conversationGoal: "Find a compromise, propose a middle-ground option, and confirm agreement.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Finding Middle Ground di Indonesia.", caption: "Konteks percakapan nyata: Finding Middle Ground." }
+      },
       sections: lessonSections
     },
     {
@@ -1325,6 +1697,9 @@ export const lessonCatalog = [
       title: "Negotiation Mission",
       unit: "Negotiation & Compromise",
       conversationGoal: "Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Negotiation Mission di Indonesia.", caption: "Konteks percakapan nyata: Negotiation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1334,6 +1709,9 @@ export const lessonCatalog = [
       title: "Structuring a Short Presentation",
       unit: "Presenting Ideas",
       conversationGoal: "Present an idea with a clear structure: context, proposal, and next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Structuring a Short Presentation di Indonesia.", caption: "Konteks percakapan nyata: Structuring a Short Presentation." }
+      },
       sections: lessonSections
     },
     {
@@ -1343,6 +1721,9 @@ export const lessonCatalog = [
       title: "Signposting Clearly",
       unit: "Presenting Ideas",
       conversationGoal: "Use clear signposting to guide listeners through your presentation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Signposting Clearly di Indonesia.", caption: "Konteks percakapan nyata: Signposting Clearly." }
+      },
       sections: lessonSections
     },
     {
@@ -1352,6 +1733,9 @@ export const lessonCatalog = [
       title: "Explaining Benefits and Risks",
       unit: "Presenting Ideas",
       conversationGoal: "Explain two benefits, mention one risk, and propose a mitigation plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Benefits and Risks di Indonesia.", caption: "Konteks percakapan nyata: Explaining Benefits and Risks." }
+      },
       sections: lessonSections
     },
     {
@@ -1361,6 +1745,9 @@ export const lessonCatalog = [
       title: "Answering Questions",
       unit: "Presenting Ideas",
       conversationGoal: "Answer a question clearly, admit uncertainty when needed, and offer to follow up.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Answering Questions di Indonesia.", caption: "Konteks percakapan nyata: Answering Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -1370,6 +1757,9 @@ export const lessonCatalog = [
       title: "Idea Presentation Mission",
       unit: "Presenting Ideas",
       conversationGoal: "Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Idea Presentation Mission di Indonesia.", caption: "Konteks percakapan nyata: Idea Presentation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1379,6 +1769,9 @@ export const lessonCatalog = [
       title: "Summarizing an Article",
       unit: "Media & Information",
       conversationGoal: "Summarize an article in 2–3 sentences: main topic, key point, and conclusion.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing an Article di Indonesia.", caption: "Konteks percakapan nyata: Summarizing an Article." }
+      },
       sections: lessonSections
     },
     {
@@ -1388,6 +1781,9 @@ export const lessonCatalog = [
       title: "Discussing Reliable Sources",
       unit: "Media & Information",
       conversationGoal: "Discuss whether a source is reliable, explain why, and suggest a better source.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Reliable Sources di Indonesia.", caption: "Konteks percakapan nyata: Discussing Reliable Sources." }
+      },
       sections: lessonSections
     },
     {
@@ -1397,6 +1793,9 @@ export const lessonCatalog = [
       title: "Explaining a Viewpoint",
       unit: "Media & Information",
       conversationGoal: "Explain a viewpoint clearly, support it with one reason, and acknowledge another perspective.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining a Viewpoint di Indonesia.", caption: "Konteks percakapan nyata: Explaining a Viewpoint." }
+      },
       sections: lessonSections
     },
     {
@@ -1406,6 +1805,9 @@ export const lessonCatalog = [
       title: "Responding to New Information",
       unit: "Media & Information",
       conversationGoal: "Respond to new information, update your opinion, and ask a follow-up question.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to New Information di Indonesia.", caption: "Konteks percakapan nyata: Responding to New Information." }
+      },
       sections: lessonSections
     },
     {
@@ -1415,6 +1817,9 @@ export const lessonCatalog = [
       title: "Information Discussion Mission",
       unit: "Media & Information",
       conversationGoal: "Complete a discussion: summarize an article, evaluate source reliability, explain a viewpoint, and respond to new information with next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Information Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Information Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1424,6 +1829,9 @@ export const lessonCatalog = [
       title: "Understanding Client Needs",
       unit: "Customer & Client Communication",
       conversationGoal: "Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Understanding Client Needs di Indonesia.", caption: "Konteks percakapan nyata: Understanding Client Needs." }
+      },
       sections: lessonSections
     },
     {
@@ -1433,6 +1841,9 @@ export const lessonCatalog = [
       title: "Explaining Options",
       unit: "Customer & Client Communication",
       conversationGoal: "Explain two options clearly, compare trade-offs, and recommend one option.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Options di Indonesia.", caption: "Konteks percakapan nyata: Explaining Options." }
+      },
       sections: lessonSections
     },
     {
@@ -1442,6 +1853,9 @@ export const lessonCatalog = [
       title: "Handling Concerns",
       unit: "Customer & Client Communication",
       conversationGoal: "Acknowledge a client concern, ask a clarifying question, and propose a mitigation plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Concerns di Indonesia.", caption: "Konteks percakapan nyata: Handling Concerns." }
+      },
       sections: lessonSections
     },
     {
@@ -1451,6 +1865,9 @@ export const lessonCatalog = [
       title: "Confirming Next Steps",
       unit: "Customer & Client Communication",
       conversationGoal: "Confirm next steps, assign owners, and set a timeline clearly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Next Steps di Indonesia.", caption: "Konteks percakapan nyata: Confirming Next Steps." }
+      },
       sections: lessonSections
     },
     {
@@ -1460,6 +1877,9 @@ export const lessonCatalog = [
       title: "Client Conversation Mission",
       unit: "Customer & Client Communication",
       conversationGoal: "Complete a client conversation: understand needs, explain options, handle concerns, and confirm next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Client Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Client Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1469,6 +1889,9 @@ export const lessonCatalog = [
       title: "Framing the Problem",
       unit: "Complex Problem Solving",
       conversationGoal: "Frame a complex problem clearly by defining scope, success criteria, and constraints.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Framing the Problem di Indonesia.", caption: "Konteks percakapan nyata: Framing the Problem." }
+      },
       sections: lessonSections
     },
     {
@@ -1478,6 +1901,9 @@ export const lessonCatalog = [
       title: "Explaining Causes",
       unit: "Complex Problem Solving",
       conversationGoal: "Explain possible causes using evidence language and clarify what data supports each cause.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Causes di Indonesia.", caption: "Konteks percakapan nyata: Explaining Causes." }
+      },
       sections: lessonSections
     },
     {
@@ -1487,6 +1913,9 @@ export const lessonCatalog = [
       title: "Discussing Tradeoffs",
       unit: "Complex Problem Solving",
       conversationGoal: "Discuss trade-offs between options, highlighting impact on cost, time, and risk.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Tradeoffs di Indonesia.", caption: "Konteks percakapan nyata: Discussing Tradeoffs." }
+      },
       sections: lessonSections
     },
     {
@@ -1496,6 +1925,9 @@ export const lessonCatalog = [
       title: "Recommending a Solution",
       unit: "Complex Problem Solving",
       conversationGoal: "Recommend a solution clearly by summarizing reasoning, risks, and next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Recommending a Solution di Indonesia.", caption: "Konteks percakapan nyata: Recommending a Solution." }
+      },
       sections: lessonSections
     },
     {
@@ -1505,6 +1937,9 @@ export const lessonCatalog = [
       title: "Problem Solving Discussion Mission",
       unit: "Complex Problem Solving",
       conversationGoal: "Lead a problem-solving discussion: frame the problem, explain causes, discuss trade-offs, and recommend next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Problem Solving Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1514,6 +1949,9 @@ export const lessonCatalog = [
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Summarize your position clearly, support it with reasons, and close with clear next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Arguments and Meetings di Indonesia.", caption: "Konteks percakapan nyata: Review Arguments and Meetings." }
+      },
       sections: lessonSections
     },
     {
@@ -1523,6 +1961,9 @@ export const lessonCatalog = [
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Propose a compromise, explain trade-offs, and present a recommendation with clear signposting.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Negotiation and Presenting di Indonesia.", caption: "Konteks percakapan nyata: Review Negotiation and Presenting." }
+      },
       sections: lessonSections
     },
     {
@@ -1532,6 +1973,9 @@ export const lessonCatalog = [
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Discuss information sources carefully and handle a client call with clarity, empathy, and next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Information and Clients di Indonesia.", caption: "Konteks percakapan nyata: Review Information and Clients." }
+      },
       sections: lessonSections
     },
     {
@@ -1541,6 +1985,9 @@ export const lessonCatalog = [
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B2 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -1550,6 +1997,9 @@ export const lessonCatalog = [
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B2 Final Discussion di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Discussion." }
+      },
       sections: lessonSections
     },
     {
@@ -1559,6 +2009,9 @@ export const lessonCatalog = [
       title: "Qualifying Your Opinion",
       unit: "Nuanced Opinions",
       conversationGoal: "Qualify your opinion with nuance by signaling scope, conditions, and limits.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Qualifying Your Opinion di Indonesia.", caption: "Konteks percakapan nyata: Qualifying Your Opinion." }
+      },
       sections: lessonSections
     },
     {
@@ -1568,6 +2021,9 @@ export const lessonCatalog = [
       title: "Expressing Certainty and Doubt",
       unit: "Nuanced Opinions",
       conversationGoal: "Express degrees of certainty and doubt using precise language and evidence framing.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Expressing Certainty and Doubt di Indonesia.", caption: "Konteks percakapan nyata: Expressing Certainty and Doubt." }
+      },
       sections: lessonSections
     },
     {
@@ -1577,6 +2033,9 @@ export const lessonCatalog = [
       title: "Balancing Two Viewpoints",
       unit: "Nuanced Opinions",
       conversationGoal: "Balance two viewpoints fairly and reach a nuanced conclusion.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Balancing Two Viewpoints di Indonesia.", caption: "Konteks percakapan nyata: Balancing Two Viewpoints." }
+      },
       sections: lessonSections
     },
     {
@@ -1586,6 +2045,9 @@ export const lessonCatalog = [
       title: "Softening Disagreement",
       unit: "Nuanced Opinions",
       conversationGoal: "Disagree tactfully while staying precise and constructive.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Softening Disagreement di Indonesia.", caption: "Konteks percakapan nyata: Softening Disagreement." }
+      },
       sections: lessonSections
     },
     {
@@ -1595,6 +2057,9 @@ export const lessonCatalog = [
       title: "Nuanced Opinion Mission",
       unit: "Nuanced Opinions",
       conversationGoal: "Hold a nuanced discussion: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Nuanced Opinion Mission di Indonesia.", caption: "Konteks percakapan nyata: Nuanced Opinion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1604,6 +2069,9 @@ export const lessonCatalog = [
       title: "Aligning Stakeholders",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
+      },
       sections: lessonSections
     },
     {
@@ -1613,6 +2081,9 @@ export const lessonCatalog = [
       title: "Managing Expectations",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Manage expectations by setting clear boundaries, timelines, and what success looks like.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
+      },
       sections: lessonSections
     },
     {
@@ -1622,6 +2093,9 @@ export const lessonCatalog = [
       title: "Handling Sensitive Feedback",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -1631,6 +2105,9 @@ export const lessonCatalog = [
       title: "Communicating Risk",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Communicate risk clearly by describing likelihood, impact, and mitigation options.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
+      },
       sections: lessonSections
     },
     {
@@ -1640,6 +2117,9 @@ export const lessonCatalog = [
       title: "Strategic Workplace Mission",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1649,6 +2129,9 @@ export const lessonCatalog = [
       title: "Framing a Complex Topic",
       unit: "Advanced Presentations",
       conversationGoal: "Frame a complex topic by setting context, defining terms, and stating the purpose clearly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Framing a Complex Topic di Indonesia.", caption: "Konteks percakapan nyata: Framing a Complex Topic." }
+      },
       sections: lessonSections
     },
     {
@@ -1658,6 +2141,9 @@ export const lessonCatalog = [
       title: "Building a Persuasive Flow",
       unit: "Advanced Presentations",
       conversationGoal: "Build a persuasive flow by stating a claim, supporting it with evidence, and addressing counterarguments.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Building a Persuasive Flow di Indonesia.", caption: "Konteks percakapan nyata: Building a Persuasive Flow." }
+      },
       sections: lessonSections
     },
     {
@@ -1667,6 +2153,9 @@ export const lessonCatalog = [
       title: "Using Precise Transitions",
       unit: "Advanced Presentations",
       conversationGoal: "Use precise transitions to guide listeners through complex ideas smoothly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Using Precise Transitions di Indonesia.", caption: "Konteks percakapan nyata: Using Precise Transitions." }
+      },
       sections: lessonSections
     },
     {
@@ -1676,6 +2165,9 @@ export const lessonCatalog = [
       title: "Handling Challenging Questions",
       unit: "Advanced Presentations",
       conversationGoal: "Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Challenging Questions di Indonesia.", caption: "Konteks percakapan nyata: Handling Challenging Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -1685,6 +2177,9 @@ export const lessonCatalog = [
       title: "Advanced Presentation Mission",
       unit: "Advanced Presentations",
       conversationGoal: "Deliver an advanced presentation and handle challenging questions with clear signposting and strategic answers.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Presentation Mission di Indonesia.", caption: "Konteks percakapan nyata: Advanced Presentation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1694,6 +2189,9 @@ export const lessonCatalog = [
       title: "Identifying Assumptions",
       unit: "Debate & Analysis",
       conversationGoal: "Identify assumptions behind an argument and ask clarifying questions about the premise.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Identifying Assumptions di Indonesia.", caption: "Konteks percakapan nyata: Identifying Assumptions." }
+      },
       sections: lessonSections
     },
     {
@@ -1703,6 +2201,9 @@ export const lessonCatalog = [
       title: "Challenging an Argument",
       unit: "Debate & Analysis",
       conversationGoal: "Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Challenging an Argument di Indonesia.", caption: "Konteks percakapan nyata: Challenging an Argument." }
+      },
       sections: lessonSections
     },
     {
@@ -1712,6 +2213,9 @@ export const lessonCatalog = [
       title: "Presenting Evidence",
       unit: "Debate & Analysis",
       conversationGoal: "Present evidence clearly, distinguish facts from interpretations, and reference sources confidently.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Presenting Evidence di Indonesia.", caption: "Konteks percakapan nyata: Presenting Evidence." }
+      },
       sections: lessonSections
     },
     {
@@ -1721,6 +2225,9 @@ export const lessonCatalog = [
       title: "Responding Under Pressure",
       unit: "Debate & Analysis",
       conversationGoal: "Respond under pressure by staying calm, addressing the core point, and tightening your argument.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding Under Pressure di Indonesia.", caption: "Konteks percakapan nyata: Responding Under Pressure." }
+      },
       sections: lessonSections
     },
     {
@@ -1730,6 +2237,9 @@ export const lessonCatalog = [
       title: "Debate Analysis Mission",
       unit: "Debate & Analysis",
       conversationGoal: "Lead a debate-style discussion: identify assumptions, challenge claims, present evidence, and respond under pressure.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Debate Analysis Mission di Indonesia.", caption: "Konteks percakapan nyata: Debate Analysis Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1739,6 +2249,9 @@ export const lessonCatalog = [
       title: "Reading Context",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Read context carefully by noticing tone, hierarchy, and implied expectations before responding.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Reading Context di Indonesia.", caption: "Konteks percakapan nyata: Reading Context." }
+      },
       sections: lessonSections
     },
     {
@@ -1748,6 +2261,9 @@ export const lessonCatalog = [
       title: "Asking Tactful Questions",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Tactful Questions di Indonesia.", caption: "Konteks percakapan nyata: Asking Tactful Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -1757,6 +2273,9 @@ export const lessonCatalog = [
       title: "Explaining Local Norms",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Explain local work norms tactfully and help others adapt without sounding judgmental.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Local Norms di Indonesia.", caption: "Konteks percakapan nyata: Explaining Local Norms." }
+      },
       sections: lessonSections
     },
     {
@@ -1766,6 +2285,9 @@ export const lessonCatalog = [
       title: "Repairing Misunderstanding",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Repairing Misunderstanding di Indonesia.", caption: "Konteks percakapan nyata: Repairing Misunderstanding." }
+      },
       sections: lessonSections
     },
     {
@@ -1775,6 +2297,9 @@ export const lessonCatalog = [
       title: "Cross-cultural Mission",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Cross-cultural Mission di Indonesia.", caption: "Konteks percakapan nyata: Cross-cultural Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1784,6 +2309,9 @@ export const lessonCatalog = [
       title: "Setting Direction",
       unit: "Leadership & Coaching",
       conversationGoal: "Set direction by clarifying priorities, success criteria, and ownership.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
+      },
       sections: lessonSections
     },
     {
@@ -1793,6 +2321,9 @@ export const lessonCatalog = [
       title: "Coaching with Questions",
       unit: "Leadership & Coaching",
       conversationGoal: "Coach others using questions that build ownership, clarify thinking, and unblock decisions.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Coaching with Questions di Indonesia.", caption: "Konteks percakapan nyata: Coaching with Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -1802,6 +2333,9 @@ export const lessonCatalog = [
       title: "Giving Actionable Feedback",
       unit: "Leadership & Coaching",
       conversationGoal: "Give actionable feedback by describing impact, being specific, and proposing a clear improvement.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Actionable Feedback di Indonesia.", caption: "Konteks percakapan nyata: Giving Actionable Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -1811,6 +2345,9 @@ export const lessonCatalog = [
       title: "Guiding a Decision",
       unit: "Leadership & Coaching",
       conversationGoal: "Guide a decision by structuring options, trade-offs, and a clear recommendation.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Guiding a Decision di Indonesia.", caption: "Konteks percakapan nyata: Guiding a Decision." }
+      },
       sections: lessonSections
     },
     {
@@ -1820,6 +2357,9 @@ export const lessonCatalog = [
       title: "Leadership Coaching Mission",
       unit: "Leadership & Coaching",
       conversationGoal: "Lead a coaching conversation: set direction, ask coaching questions, give actionable feedback, and guide a decision.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Leadership Coaching Mission di Indonesia.", caption: "Konteks percakapan nyata: Leadership Coaching Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1829,6 +2369,9 @@ export const lessonCatalog = [
       title: "Catching Implied Meaning",
       unit: "Advanced Listening & Response",
       conversationGoal: "Catch implied meaning by listening for hints, hedges, and what is not said explicitly.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Catching Implied Meaning di Indonesia.", caption: "Konteks percakapan nyata: Catching Implied Meaning." }
+      },
       sections: lessonSections
     },
     {
@@ -1838,6 +2381,9 @@ export const lessonCatalog = [
       title: "Responding to Long Turns",
       unit: "Advanced Listening & Response",
       conversationGoal: "Respond to long turns by extracting key points, acknowledging emotions, and replying in a structured way.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Long Turns di Indonesia.", caption: "Konteks percakapan nyata: Responding to Long Turns." }
+      },
       sections: lessonSections
     },
     {
@@ -1847,6 +2393,9 @@ export const lessonCatalog = [
       title: "Summarizing What You Heard",
       unit: "Advanced Listening & Response",
       conversationGoal: "Summarize accurately by separating facts, concerns, and decisions, then confirm with the speaker.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing What You Heard di Indonesia.", caption: "Konteks percakapan nyata: Summarizing What You Heard." }
+      },
       sections: lessonSections
     },
     {
@@ -1856,6 +2405,9 @@ export const lessonCatalog = [
       title: "Asking High-quality Follow-ups",
       unit: "Advanced Listening & Response",
       conversationGoal: "Ask high-quality follow-up questions that clarify scope, assumptions, and next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking High-quality Follow-ups di Indonesia.", caption: "Konteks percakapan nyata: Asking High-quality Follow-ups." }
+      },
       sections: lessonSections
     },
     {
@@ -1865,6 +2417,9 @@ export const lessonCatalog = [
       title: "Advanced Listening Mission",
       unit: "Advanced Listening & Response",
       conversationGoal: "Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Listening Mission di Indonesia.", caption: "Konteks percakapan nyata: Advanced Listening Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -1874,6 +2429,9 @@ export const lessonCatalog = [
       title: "Review Nuance and Strategy",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Express a nuanced position, manage expectations, and align stakeholders on a careful plan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Nuance and Strategy di Indonesia.", caption: "Konteks percakapan nyata: Review Nuance and Strategy." }
+      },
       sections: lessonSections
     },
     {
@@ -1883,6 +2441,9 @@ export const lessonCatalog = [
       title: "Review Presenting and Debate",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Present a structured argument, challenge assumptions respectfully, and respond under pressure with clarity.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Presenting and Debate di Indonesia.", caption: "Konteks percakapan nyata: Review Presenting and Debate." }
+      },
       sections: lessonSections
     },
     {
@@ -1892,6 +2453,9 @@ export const lessonCatalog = [
       title: "Review Leadership and Listening",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Coach someone with questions, catch implied meaning, and align on a decision with clear next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Leadership and Listening di Indonesia.", caption: "Konteks percakapan nyata: Review Leadership and Listening." }
+      },
       sections: lessonSections
     },
     {
@@ -1901,6 +2465,9 @@ export const lessonCatalog = [
       title: "C1 Final Test Practice",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Answer C1-style prompts with nuance, structure, and precise language under time pressure.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks C1 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: C1 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -1910,6 +2477,9 @@ export const lessonCatalog = [
       title: "C1 Final Conversation",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Lead a complex conversation from framing to decision: nuance, debate, leadership listening, and clear next steps.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks C1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: C1 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -1920,7 +2490,7 @@ export const lessonCatalog = [
       unit: "Arabic Foundations",
       conversationGoal: "Latih sapaan formal sederhana dan jawaban kabar dalam bahasa Arab.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Muallim dan Khalid faceless berlatih sapaan formal dari jarak sopan di kelas Indonesia.", caption: "Latihan sapaan formal di kelas nyata dengan lawan bicara dan adab visual yang jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Formal Greetings di Indonesia.", caption: "Konteks percakapan nyata: Formal Greetings." }
       },
       sections: lessonSections
     },
@@ -1932,7 +2502,7 @@ export const lessonCatalog = [
       unit: "Arabic Foundations",
       conversationGoal: "Latih menyebutkan nama dan asal negara, lalu tanyakan balik dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih nama dan asal dari jarak sopan di kelas Indonesia.", caption: "Perkenalkan nama dan asal dalam dialog kelas formal yang jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Name and Origin di Indonesia.", caption: "Konteks percakapan nyata: Name and Origin." }
       },
       sections: lessonSections
     },
@@ -1944,7 +2514,7 @@ export const lessonCatalog = [
       unit: "Arabic Foundations",
       conversationGoal: "Latih memahami dan merespons instruksi dasar dalam kelas Arab atau lesson terpandu.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih instruksi kelas dari jarak sopan di kelas Indonesia.", caption: "Dengarkan instruksi kelas sederhana dan jawab dengan sopan dalam setting nyata." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Class and Study Instructions di Indonesia.", caption: "Konteks percakapan nyata: Class and Study Instructions." }
       },
       sections: lessonSections
     },
@@ -1956,7 +2526,7 @@ export const lessonCatalog = [
       unit: "Arabic Foundations",
       conversationGoal: "Latih mengatakan belum paham, lalu minta pengulangan atau penjelasan makna kata.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Khalid dan Muallim faceless berlatih meminta penjelasan dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan atau penjelasan ketika belum paham dalam kelas nyata." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking When You Do Not Understand di Indonesia.", caption: "Konteks percakapan nyata: Asking When You Do Not Understand." }
       },
       sections: lessonSections
     },
@@ -1968,7 +2538,7 @@ export const lessonCatalog = [
       unit: "Arabic Foundations",
       conversationGoal: "Latih perkenalan Arab singkat memakai sapaan, nama, asal, dan frasa klarifikasi.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless menjalankan misi perkenalan formal dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan klarifikasi dalam dialog kelas nyata." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Introduction Mission di Indonesia.", caption: "Konteks percakapan nyata: Arabic Introduction Mission." }
       },
       sections: lessonSections
     },
@@ -1980,7 +2550,7 @@ export const lessonCatalog = [
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih menulis nama di kelas Indonesia.", caption: "Tulis dan cek nama dengan huruf Arab sederhana tanpa menampilkan tulisan di gambar." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.", caption: "Konteks percakapan nyata: Spelling Your Name." }
       },
       sections: lessonSections
     },
@@ -1992,7 +2562,7 @@ export const lessonCatalog = [
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png", width: 1672, height: 941, alt: "Karim dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.", caption: "Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Numbers and Phone di Indonesia.", caption: "Konteks percakapan nyata: Arabic Numbers and Phone." }
       },
       sections: lessonSections
     },
@@ -2004,7 +2574,7 @@ export const lessonCatalog = [
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menulis email di daftar kelas. Kamu perlu menyebutkan bagian email dengan pelan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Zayd dan Ahmad faceless berlatih alamat email di meja registrasi kelas Indonesia.", caption: "Sebutkan bagian email dengan pelan tanpa menampilkan teks email di gambar." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.", caption: "Konteks percakapan nyata: Sharing Email Addresses." }
       },
       sections: lessonSections
     },
@@ -2016,7 +2586,7 @@ export const lessonCatalog = [
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email, kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png", width: 1672, height: 941, alt: "Rami dan Zayd faceless berlatih meminta pengulangan huruf dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan huruf dengan sopan saat belum terdengar jelas." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking to Repeat a Letter di Indonesia.", caption: "Konteks percakapan nyata: Asking to Repeat a Letter." }
       },
       sections: lessonSections
     },
@@ -2028,7 +2598,7 @@ export const lessonCatalog = [
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri di kelas baru dan memberikan informasi kontak sederhana.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless menjalankan misi kontak di meja registrasi kelas Indonesia.", caption: "Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.", caption: "Konteks percakapan nyata: Contact Details Mission." }
       },
       sections: lessonSections
     },
@@ -2039,6 +2609,9 @@ export const lessonCatalog = [
       title: "Asking the Time",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan ingin tahu jam sekarang.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking the Time di Indonesia.", caption: "Konteks percakapan nyata: Asking the Time." }
+      },
       sections: lessonSections
     },
     {
@@ -2048,6 +2621,9 @@ export const lessonCatalog = [
       title: "Days of the Week",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu menyebut hari ini serta hari berikutnya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Days of the Week di Indonesia.", caption: "Konteks percakapan nyata: Days of the Week." }
+      },
       sections: lessonSections
     },
     {
@@ -2057,6 +2633,9 @@ export const lessonCatalog = [
       title: "Talking About Daily Routines",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Daily Routines di Indonesia.", caption: "Konteks percakapan nyata: Talking About Daily Routines." }
+      },
       sections: lessonSections
     },
     {
@@ -2066,6 +2645,9 @@ export const lessonCatalog = [
       title: "Asking When",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kelas, latihan, atau pertemuan dimulai.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking When di Indonesia.", caption: "Konteks percakapan nyata: Asking When." }
+      },
       sections: lessonSections
     },
     {
@@ -2075,6 +2657,9 @@ export const lessonCatalog = [
       title: "Routine and Time Mission",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Routine and Time Mission di Indonesia.", caption: "Konteks percakapan nyata: Routine and Time Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2084,6 +2669,9 @@ export const lessonCatalog = [
       title: "Family Members",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menunjukkan foto keluarga dan menyebut anggota keluarga dengan kalimat pendek.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Family Members di Indonesia.", caption: "Konteks percakapan nyata: Family Members." }
+      },
       sections: lessonSections
     },
     {
@@ -2093,6 +2681,9 @@ export const lessonCatalog = [
       title: "Saying What You Do",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau status belajar dalam percakapan formal ringan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Do di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Do." }
+      },
       sections: lessonSections
     },
     {
@@ -2102,6 +2693,9 @@ export const lessonCatalog = [
       title: "Asking About Work or Study",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru tentang tempat belajar dan bidang yang dipelajari.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking About Work or Study di Indonesia.", caption: "Konteks percakapan nyata: Asking About Work or Study." }
+      },
       sections: lessonSections
     },
     {
@@ -2111,6 +2705,9 @@ export const lessonCatalog = [
       title: "Likes and Ability",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai dan kemampuan sederhana dalam konteks belajar.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Likes and Ability di Indonesia.", caption: "Konteks percakapan nyata: Likes and Ability." }
+      },
       sections: lessonSections
     },
     {
@@ -2120,6 +2717,9 @@ export const lessonCatalog = [
       title: "Family, Work, and Study Mission",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Family, Work, and Study Mission di Indonesia.", caption: "Konteks percakapan nyata: Family, Work, and Study Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2129,6 +2729,9 @@ export const lessonCatalog = [
       title: "Asking Where a Place Is",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari perpustakaan di gedung belajar dan bertanya dengan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Where a Place Is di Indonesia.", caption: "Konteks percakapan nyata: Asking Where a Place Is." }
+      },
       sections: lessonSections
     },
     {
@@ -2138,6 +2741,9 @@ export const lessonCatalog = [
       title: "Simple Place Words",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum yang sering muncul dalam percakapan formal.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Simple Place Words di Indonesia.", caption: "Konteks percakapan nyata: Simple Place Words." }
+      },
       sections: lessonSections
     },
     {
@@ -2147,6 +2753,9 @@ export const lessonCatalog = [
       title: "Understanding Simple Directions",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju kelas atau perpustakaan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Understanding Simple Directions di Indonesia.", caption: "Konteks percakapan nyata: Understanding Simple Directions." }
+      },
       sections: lessonSections
     },
     {
@@ -2156,6 +2765,9 @@ export const lessonCatalog = [
       title: "Asking How to Get There",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat tertentu di sekitar kelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking How to Get There di Indonesia.", caption: "Konteks percakapan nyata: Asking How to Get There." }
+      },
       sections: lessonSections
     },
     {
@@ -2165,6 +2777,9 @@ export const lessonCatalog = [
       title: "Finding a Place Mission",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi, dan mengikuti arahan singkat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Finding a Place Mission di Indonesia.", caption: "Konteks percakapan nyata: Finding a Place Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2174,6 +2789,9 @@ export const lessonCatalog = [
       title: "Ordering a Drink",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Ordering a Drink di Indonesia.", caption: "Konteks percakapan nyata: Ordering a Drink." }
+      },
       sections: lessonSections
     },
     {
@@ -2183,6 +2801,9 @@ export const lessonCatalog = [
       title: "Asking About Prices",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan perlu menanyakan harganya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Prices di Indonesia.", caption: "Konteks percakapan nyata: Asking About Prices." }
+      },
       sections: lessonSections
     },
     {
@@ -2192,6 +2813,9 @@ export const lessonCatalog = [
       title: "Buying a Simple Item",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana untuk kelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Simple Item di Indonesia.", caption: "Konteks percakapan nyata: Buying a Simple Item." }
+      },
       sections: lessonSections
     },
     {
@@ -2201,6 +2825,9 @@ export const lessonCatalog = [
       title: "Saying What You Want",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Want di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Want." }
+      },
       sections: lessonSections
     },
     {
@@ -2210,6 +2837,9 @@ export const lessonCatalog = [
       title: "Cafe and Shop Mission",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Cafe and Shop Mission di Indonesia.", caption: "Konteks percakapan nyata: Cafe and Shop Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2219,6 +2849,9 @@ export const lessonCatalog = [
       title: "Saying You Do Not Understand",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying You Do Not Understand di Indonesia.", caption: "Konteks percakapan nyata: Saying You Do Not Understand." }
+      },
       sections: lessonSections
     },
     {
@@ -2228,6 +2861,9 @@ export const lessonCatalog = [
       title: "Asking for Help",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Help di Indonesia.", caption: "Konteks percakapan nyata: Asking for Help." }
+      },
       sections: lessonSections
     },
     {
@@ -2237,6 +2873,9 @@ export const lessonCatalog = [
       title: "Making Simple Requests",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta teman atau guru melakukan instruksi sederhana dalam konteks belajar.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making Simple Requests di Indonesia.", caption: "Konteks percakapan nyata: Making Simple Requests." }
+      },
       sections: lessonSections
     },
     {
@@ -2246,6 +2885,9 @@ export const lessonCatalog = [
       title: "Apologizing and Thanking",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu terlambat merespons atau membuat kesalahan kecil dan ingin menjawab sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Apologizing and Thanking di Indonesia.", caption: "Konteks percakapan nyata: Apologizing and Thanking." }
+      },
       sections: lessonSections
     },
     {
@@ -2255,6 +2897,9 @@ export const lessonCatalog = [
       title: "Help and Problem Mission",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Help and Problem Mission di Indonesia.", caption: "Konteks percakapan nyata: Help and Problem Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2264,6 +2909,9 @@ export const lessonCatalog = [
       title: "Review Introductions and Contact",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Introductions and Contact di Indonesia.", caption: "Konteks percakapan nyata: Review Introductions and Contact." }
+      },
       sections: lessonSections
     },
     {
@@ -2273,6 +2921,9 @@ export const lessonCatalog = [
       title: "Review Routine and Study",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Routine and Study di Indonesia.", caption: "Konteks percakapan nyata: Review Routine and Study." }
+      },
       sections: lessonSections
     },
     {
@@ -2282,6 +2933,9 @@ export const lessonCatalog = [
       title: "Review Places and Shopping",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Places and Shopping di Indonesia.", caption: "Konteks percakapan nyata: Review Places and Shopping." }
+      },
       sections: lessonSections
     },
     {
@@ -2291,6 +2945,9 @@ export const lessonCatalog = [
       title: "A1 Final Test Practice",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan final A1 secara singkat dan jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks A1 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: A1 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -2300,6 +2957,9 @@ export const lessonCatalog = [
       title: "A1 Final Conversation",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: A1 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -2309,6 +2969,9 @@ export const lessonCatalog = [
       title: "Reconnecting After Class",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa Arab dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Reconnecting After Class di Indonesia.", caption: "Konteks percakapan nyata: Reconnecting After Class." }
+      },
       sections: lessonSections
     },
     {
@@ -2318,6 +2981,9 @@ export const lessonCatalog = [
       title: "Asking Follow-up Questions",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan teman kelas dan menjaga percakapan tetap berjalan dengan pertanyaan lanjutan yang sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking Follow-up Questions di Indonesia.", caption: "Konteks percakapan nyata: Asking Follow-up Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -2327,6 +2993,9 @@ export const lessonCatalog = [
       title: "Talking About the Weekend",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan kegiatan akhir pekan secara pendek: ke mana pergi, dengan siapa, dan bagaimana rasanya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About the Weekend di Indonesia.", caption: "Konteks percakapan nyata: Talking About the Weekend." }
+      },
       sections: lessonSections
     },
     {
@@ -2336,6 +3005,9 @@ export const lessonCatalog = [
       title: "Reacting With Interest",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Reacting With Interest di Indonesia.", caption: "Konteks percakapan nyata: Reacting With Interest." }
+      },
       sections: lessonSections
     },
     {
@@ -2345,6 +3017,9 @@ export const lessonCatalog = [
       title: "Social Follow-up Mission",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjaga percakapan singkat dengan teman: membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Social Follow-up Mission di Indonesia.", caption: "Konteks percakapan nyata: Social Follow-up Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2354,6 +3029,9 @@ export const lessonCatalog = [
       title: "Making a Simple Plan",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana sederhana dengan teman: menentukan kegiatan, hari, waktu, dan tempat bertemu.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Plan di Indonesia.", caption: "Konteks percakapan nyata: Making a Simple Plan." }
+      },
       sections: lessonSections
     },
     {
@@ -2363,6 +3041,9 @@ export const lessonCatalog = [
       title: "Inviting Someone",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat mengapa kegiatan itu bermanfaat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Inviting Someone di Indonesia.", caption: "Konteks percakapan nyata: Inviting Someone." }
+      },
       sections: lessonSections
     },
     {
@@ -2372,6 +3053,9 @@ export const lessonCatalog = [
       title: "Accepting and Declining",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menerima satu ajakan dan menolak ajakan lain dengan sopan sambil memberi alasan pendek.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Accepting and Declining di Indonesia.", caption: "Konteks percakapan nyata: Accepting and Declining." }
+      },
       sections: lessonSections
     },
     {
@@ -2381,6 +3065,9 @@ export const lessonCatalog = [
       title: "Rescheduling Politely",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu dengan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Rescheduling Politely di Indonesia.", caption: "Konteks percakapan nyata: Rescheduling Politely." }
+      },
       sections: lessonSections
     },
     {
@@ -2390,6 +3077,9 @@ export const lessonCatalog = [
       title: "Invitation Mission",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Invitation Mission di Indonesia.", caption: "Konteks percakapan nyata: Invitation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2399,6 +3089,9 @@ export const lessonCatalog = [
       title: "Buying a Ticket",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di loket stasiun dan ingin membeli tiket sederhana: tujuan, jenis tiket, kelas, dan harga.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Ticket di Indonesia.", caption: "Konteks percakapan nyata: Buying a Ticket." }
+      },
       sections: lessonSections
     },
     {
@@ -2408,6 +3101,9 @@ export const lessonCatalog = [
       title: "Asking About Departure Time",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu sudah punya tiket dan ingin memastikan jam keberangkatan, peron, serta waktu tiba.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Departure Time di Indonesia.", caption: "Konteks percakapan nyata: Asking About Departure Time." }
+      },
       sections: lessonSections
     },
     {
@@ -2417,6 +3113,9 @@ export const lessonCatalog = [
       title: "Checking Directions",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di terminal dan ingin memastikan arah menuju pintu, peron, atau tempat tunggu tanpa salah jalur.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Checking Directions di Indonesia.", caption: "Konteks percakapan nyata: Checking Directions." }
+      },
       sections: lessonSections
     },
     {
@@ -2426,6 +3125,9 @@ export const lessonCatalog = [
       title: "Talking to a Driver",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu naik taksi atau kendaraan online dan perlu memastikan tujuan, waktu perjalanan, dan tempat turun.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking to a Driver di Indonesia.", caption: "Konteks percakapan nyata: Talking to a Driver." }
+      },
       sections: lessonSections
     },
     {
@@ -2435,6 +3137,9 @@ export const lessonCatalog = [
       title: "Transport and Travel Mission",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan perjalanan pendek: membeli tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Transport and Travel Mission di Indonesia.", caption: "Konteks percakapan nyata: Transport and Travel Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2444,6 +3149,9 @@ export const lessonCatalog = [
       title: "Asking for an Item",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di toko alat tulis dan ingin meminta barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for an Item di Indonesia.", caption: "Konteks percakapan nyata: Asking for an Item." }
+      },
       sections: lessonSections
     },
     {
@@ -2453,6 +3161,9 @@ export const lessonCatalog = [
       title: "Asking About Size and Color",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membeli pakaian sederhana dan perlu menanyakan ukuran, warna, serta izin mencoba barang.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Size and Color di Indonesia.", caption: "Konteks percakapan nyata: Asking About Size and Color." }
+      },
       sections: lessonSections
     },
     {
@@ -2462,6 +3173,9 @@ export const lessonCatalog = [
       title: "Comparing Simple Options",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membandingkan dua barang sederhana berdasarkan harga, kualitas, dan kecocokan sebelum memilih.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Simple Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Simple Options." }
+      },
       sections: lessonSections
     },
     {
@@ -2471,6 +3185,9 @@ export const lessonCatalog = [
       title: "Requesting Service Help",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke bagian layanan karena sebuah perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Requesting Service Help di Indonesia.", caption: "Konteks percakapan nyata: Requesting Service Help." }
+      },
       sections: lessonSections
     },
     {
@@ -2480,6 +3197,9 @@ export const lessonCatalog = [
       title: "Shopping Service Mission",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu memilih barang di toko, membandingkan pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Shopping Service Mission di Indonesia.", caption: "Konteks percakapan nyata: Shopping Service Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2489,6 +3209,9 @@ export const lessonCatalog = [
       title: "Saying How You Feel",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke klinik dan perlu mengatakan kondisi umum dengan sederhana sebelum petugas mencatat informasi awal.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Saying How You Feel di Indonesia.", caption: "Konteks percakapan nyata: Saying How You Feel." }
+      },
       sections: lessonSections
     },
     {
@@ -2498,6 +3221,9 @@ export const lessonCatalog = [
       title: "Describing Simple Symptoms",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan petugas kesehatan dan menjelaskan gejala ringan secara jelas: bagian tubuh, intensitas, dan durasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Simple Symptoms di Indonesia.", caption: "Konteks percakapan nyata: Describing Simple Symptoms." }
+      },
       sections: lessonSections
     },
     {
@@ -2507,6 +3233,9 @@ export const lessonCatalog = [
       title: "Making an Appointment",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menelepon klinik untuk membuat janji, memilih hari dan waktu, serta menyebut nama untuk pendaftaran.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Making an Appointment di Indonesia.", caption: "Konteks percakapan nyata: Making an Appointment." }
+      },
       sections: lessonSections
     },
     {
@@ -2516,6 +3245,9 @@ export const lessonCatalog = [
       title: "Confirming Appointment Details",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu ingin memastikan ulang detail janji: nama, tanggal, waktu, lokasi, dan nomor kontak.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Appointment Details di Indonesia.", caption: "Konteks percakapan nyata: Confirming Appointment Details." }
+      },
       sections: lessonSections
     },
     {
@@ -2525,6 +3257,9 @@ export const lessonCatalog = [
       title: "Health Appointment Mission",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan kondisi ringan, membuat janji, lalu mengonfirmasi detail appointment dengan petugas klinik.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Health Appointment Mission di Indonesia.", caption: "Konteks percakapan nyata: Health Appointment Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2534,6 +3269,9 @@ export const lessonCatalog = [
       title: "Talking About Yesterday",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas dan menceritakan kegiatan kemarin dengan kalimat pendek.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Yesterday di Indonesia.", caption: "Konteks percakapan nyata: Talking About Yesterday." }
+      },
       sections: lessonSections
     },
     {
@@ -2543,6 +3281,9 @@ export const lessonCatalog = [
       title: "Saying Where You Went",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan tempat yang kamu datangi akhir pekan lalu: pasar, taman, rumah teman, atau pusat kota.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying Where You Went di Indonesia.", caption: "Konteks percakapan nyata: Saying Where You Went." }
+      },
       sections: lessonSections
     },
     {
@@ -2552,6 +3293,9 @@ export const lessonCatalog = [
       title: "Describing a Simple Experience",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman sederhana di tempat umum: apa yang kamu lihat, apa yang kamu lakukan, dan bagaimana rasanya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing a Simple Experience di Indonesia.", caption: "Konteks percakapan nyata: Describing a Simple Experience." }
+      },
       sections: lessonSections
     },
     {
@@ -2561,6 +3305,9 @@ export const lessonCatalog = [
       title: "Asking About Past Activities",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Past Activities di Indonesia.", caption: "Konteks percakapan nyata: Asking About Past Activities." }
+      },
       sections: lessonSections
     },
     {
@@ -2570,6 +3317,9 @@ export const lessonCatalog = [
       title: "Past Experience Mission",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan dan menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Past Experience Mission di Indonesia.", caption: "Konteks percakapan nyata: Past Experience Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2579,6 +3329,9 @@ export const lessonCatalog = [
       title: "Saying What You Think",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan ingin menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Think di Indonesia.", caption: "Konteks percakapan nyata: Saying What You Think." }
+      },
       sections: lessonSections
     },
     {
@@ -2588,6 +3341,9 @@ export const lessonCatalog = [
       title: "Giving Simple Reasons",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan alasan pendek untuk pendapatmu: karena mudah, dekat, murah, jelas, atau cocok untuk jadwalmu.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Simple Reasons di Indonesia.", caption: "Konteks percakapan nyata: Giving Simple Reasons." }
+      },
       sections: lessonSections
     },
     {
@@ -2597,6 +3353,9 @@ export const lessonCatalog = [
       title: "Agreeing and Disagreeing Politely",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan perlu setuju, kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Agreeing and Disagreeing Politely di Indonesia.", caption: "Konteks percakapan nyata: Agreeing and Disagreeing Politely." }
+      },
       sections: lessonSections
     },
     {
@@ -2606,6 +3365,9 @@ export const lessonCatalog = [
       title: "Asking for Opinions",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu meminta pendapat teman sebelum memilih tempat, waktu, aktivitas, atau opsi sederhana.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Opinions di Indonesia.", caption: "Konteks percakapan nyata: Asking for Opinions." }
+      },
       sections: lessonSections
     },
     {
@@ -2615,6 +3377,9 @@ export const lessonCatalog = [
       title: "Opinion Conversation Mission",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu memilih rencana belajar bersama teman: meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Opinion Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Opinion Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2624,6 +3389,9 @@ export const lessonCatalog = [
       title: "Review Social and Plans",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas, bertanya kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Social and Plans di Indonesia.", caption: "Konteks percakapan nyata: Review Social and Plans." }
+      },
       sections: lessonSections
     },
     {
@@ -2633,6 +3401,9 @@ export const lessonCatalog = [
       title: "Review Travel and Services",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membeli tiket, menanyakan arah, lalu meminta bantuan layanan untuk barang kecil yang bermasalah.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Travel and Services di Indonesia.", caption: "Konteks percakapan nyata: Review Travel and Services." }
+      },
       sections: lessonSections
     },
     {
@@ -2642,6 +3413,9 @@ export const lessonCatalog = [
       title: "Review Health and Past",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menghubungi klinik, menjelaskan gejala ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/health-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Health and Past di Indonesia.", caption: "Konteks percakapan nyata: Review Health and Past." }
+      },
       sections: lessonSections
     },
     {
@@ -2651,6 +3425,9 @@ export const lessonCatalog = [
       title: "A2 Final Test Practice",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu latihan simulasi tes A2: menjawab pertanyaan sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: A2 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -2660,6 +3437,9 @@ export const lessonCatalog = [
       title: "A2 Final Conversation",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan percakapan A2 lengkap: bertemu teman, membahas pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: A2 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -2669,6 +3449,9 @@ export const lessonCatalog = [
       title: "Setting the Scene",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu membuka cerita pendek dengan waktu, tempat, dan orang yang terlibat sebelum masuk ke kejadian utama.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting the Scene di Indonesia.", caption: "Konteks percakapan nyata: Setting the Scene." }
+      },
       sections: lessonSections
     },
     {
@@ -2678,6 +3461,9 @@ export const lessonCatalog = [
       title: "Telling Events in Order",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah mengikuti alurnya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Telling Events in Order di Indonesia.", caption: "Konteks percakapan nyata: Telling Events in Order." }
+      },
       sections: lessonSections
     },
     {
@@ -2687,6 +3473,9 @@ export const lessonCatalog = [
       title: "Describing Feelings",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan memberi alasan singkat mengapa merasa begitu.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Feelings di Indonesia.", caption: "Konteks percakapan nyata: Describing Feelings." }
+      },
       sections: lessonSections
     },
     {
@@ -2696,6 +3485,9 @@ export const lessonCatalog = [
       title: "Asking About Someone's Story",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang tanpa memotong alur pembicaraan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Someone's Story di Indonesia.", caption: "Konteks percakapan nyata: Asking About Someone's Story." }
+      },
       sections: lessonSections
     },
     {
@@ -2705,6 +3497,9 @@ export const lessonCatalog = [
       title: "Personal Story Mission",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian, perasaan, dan pertanyaan lanjutan dalam satu cerita.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Personal Story Mission di Indonesia.", caption: "Konteks percakapan nyata: Personal Story Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2714,6 +3509,9 @@ export const lessonCatalog = [
       title: "Explaining Your Task",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan, langkah, dan hasil yang diharapkan.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
+      },
       sections: lessonSections
     },
     {
@@ -2723,6 +3521,9 @@ export const lessonCatalog = [
       title: "Asking for Clarification",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum cukup jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
+      },
       sections: lessonSections
     },
     {
@@ -2732,6 +3533,9 @@ export const lessonCatalog = [
       title: "Giving a Short Update",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
+      },
       sections: lessonSections
     },
     {
@@ -2741,6 +3545,9 @@ export const lessonCatalog = [
       title: "Joining a Simple Meeting",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan langkah berikutnya.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
+      },
       sections: lessonSections
     },
     {
@@ -2750,6 +3557,9 @@ export const lessonCatalog = [
       title: "Workplace Mission",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan menutup dengan action point.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2759,6 +3569,9 @@ export const lessonCatalog = [
       title: "Describing a Problem",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing a problem, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing a Problem di Indonesia.", caption: "Konteks percakapan nyata: Describing a Problem." }
+      },
       sections: lessonSections
     },
     {
@@ -2768,6 +3581,9 @@ export const lessonCatalog = [
       title: "Suggesting a Solution",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: suggesting a solution, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Suggesting a Solution di Indonesia.", caption: "Konteks percakapan nyata: Suggesting a Solution." }
+      },
       sections: lessonSections
     },
     {
@@ -2777,6 +3593,9 @@ export const lessonCatalog = [
       title: "Responding to Advice",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: responding to advice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Advice di Indonesia.", caption: "Konteks percakapan nyata: Responding to Advice." }
+      },
       sections: lessonSections
     },
     {
@@ -2786,6 +3605,9 @@ export const lessonCatalog = [
       title: "Making a Simple Decision",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making a simple decision, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Decision di Indonesia.", caption: "Konteks percakapan nyata: Making a Simple Decision." }
+      },
       sections: lessonSections
     },
     {
@@ -2795,6 +3617,9 @@ export const lessonCatalog = [
       title: "Problem Solving Mission",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: problem solving mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Mission di Indonesia.", caption: "Konteks percakapan nyata: Problem Solving Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2804,6 +3629,9 @@ export const lessonCatalog = [
       title: "Checking In",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: checking in, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Checking In di Indonesia.", caption: "Konteks percakapan nyata: Checking In." }
+      },
       sections: lessonSections
     },
     {
@@ -2813,6 +3641,9 @@ export const lessonCatalog = [
       title: "Explaining a Delay",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining a delay, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining a Delay di Indonesia.", caption: "Konteks percakapan nyata: Explaining a Delay." }
+      },
       sections: lessonSections
     },
     {
@@ -2822,6 +3653,9 @@ export const lessonCatalog = [
       title: "Asking for Recommendations",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking for recommendations, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Recommendations di Indonesia.", caption: "Konteks percakapan nyata: Asking for Recommendations." }
+      },
       sections: lessonSections
     },
     {
@@ -2831,6 +3665,9 @@ export const lessonCatalog = [
       title: "Handling a Simple Complaint",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: handling a simple complaint, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling a Simple Complaint di Indonesia.", caption: "Konteks percakapan nyata: Handling a Simple Complaint." }
+      },
       sections: lessonSections
     },
     {
@@ -2840,6 +3677,9 @@ export const lessonCatalog = [
       title: "Travel Situation Mission",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: travel situation mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Travel Situation Mission di Indonesia.", caption: "Konteks percakapan nyata: Travel Situation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2849,6 +3689,9 @@ export const lessonCatalog = [
       title: "Talking About Goals",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about goals, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Talking About Goals di Indonesia.", caption: "Konteks percakapan nyata: Talking About Goals." }
+      },
       sections: lessonSections
     },
     {
@@ -2858,6 +3701,9 @@ export const lessonCatalog = [
       title: "Explaining Progress",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining progress, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Progress di Indonesia.", caption: "Konteks percakapan nyata: Explaining Progress." }
+      },
       sections: lessonSections
     },
     {
@@ -2867,6 +3713,9 @@ export const lessonCatalog = [
       title: "Discussing Challenges",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: discussing challenges, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Discussing Challenges di Indonesia.", caption: "Konteks percakapan nyata: Discussing Challenges." }
+      },
       sections: lessonSections
     },
     {
@@ -2876,6 +3725,9 @@ export const lessonCatalog = [
       title: "Making Next-step Plans",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making next-step plans, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Making Next-step Plans di Indonesia.", caption: "Konteks percakapan nyata: Making Next-step Plans." }
+      },
       sections: lessonSections
     },
     {
@@ -2885,6 +3737,9 @@ export const lessonCatalog = [
       title: "Goals Progress Mission",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: goals progress mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Goals Progress Mission di Indonesia.", caption: "Konteks percakapan nyata: Goals Progress Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2894,6 +3749,9 @@ export const lessonCatalog = [
       title: "Comparing Two Options",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: comparing two options, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
+      },
       sections: lessonSections
     },
     {
@@ -2903,6 +3761,9 @@ export const lessonCatalog = [
       title: "Explaining Why You Prefer Something",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining why you prefer something, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Why You Prefer Something di Indonesia.", caption: "Konteks percakapan nyata: Explaining Why You Prefer Something." }
+      },
       sections: lessonSections
     },
     {
@@ -2912,6 +3773,9 @@ export const lessonCatalog = [
       title: "Asking About Pros and Cons",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about pros and cons, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking About Pros and Cons di Indonesia.", caption: "Konteks percakapan nyata: Asking About Pros and Cons." }
+      },
       sections: lessonSections
     },
     {
@@ -2921,6 +3785,9 @@ export const lessonCatalog = [
       title: "Reaching Agreement",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: reaching agreement, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Reaching Agreement di Indonesia.", caption: "Konteks percakapan nyata: Reaching Agreement." }
+      },
       sections: lessonSections
     },
     {
@@ -2930,6 +3797,9 @@ export const lessonCatalog = [
       title: "Preference Discussion Mission",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: preference discussion mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Preference Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Preference Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2939,6 +3809,9 @@ export const lessonCatalog = [
       title: "Describing Your Community",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing your community, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Describing Your Community di Indonesia.", caption: "Konteks percakapan nyata: Describing Your Community." }
+      },
       sections: lessonSections
     },
     {
@@ -2948,6 +3821,9 @@ export const lessonCatalog = [
       title: "Talking About Local Habits",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about local habits, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Local Habits di Indonesia.", caption: "Konteks percakapan nyata: Talking About Local Habits." }
+      },
       sections: lessonSections
     },
     {
@@ -2957,6 +3833,9 @@ export const lessonCatalog = [
       title: "Asking About Culture",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about culture, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Culture di Indonesia.", caption: "Konteks percakapan nyata: Asking About Culture." }
+      },
       sections: lessonSections
     },
     {
@@ -2966,6 +3845,9 @@ export const lessonCatalog = [
       title: "Being Polite With Differences",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: being polite with differences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Being Polite With Differences di Indonesia.", caption: "Konteks percakapan nyata: Being Polite With Differences." }
+      },
       sections: lessonSections
     },
     {
@@ -2975,6 +3857,9 @@ export const lessonCatalog = [
       title: "Community Culture Mission",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Community Culture Mission di Indonesia.", caption: "Konteks percakapan nyata: Community Culture Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -2984,6 +3869,9 @@ export const lessonCatalog = [
       title: "Review Stories and Work",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review stories and work, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Stories and Work di Indonesia.", caption: "Konteks percakapan nyata: Review Stories and Work." }
+      },
       sections: lessonSections
     },
     {
@@ -2993,6 +3881,9 @@ export const lessonCatalog = [
       title: "Review Problems and Travel",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review problems and travel, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Problems and Travel di Indonesia.", caption: "Konteks percakapan nyata: Review Problems and Travel." }
+      },
       sections: lessonSections
     },
     {
@@ -3002,6 +3893,9 @@ export const lessonCatalog = [
       title: "Review Goals and Preferences",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Review Goals and Preferences di Indonesia.", caption: "Konteks percakapan nyata: Review Goals and Preferences." }
+      },
       sections: lessonSections
     },
     {
@@ -3011,6 +3905,9 @@ export const lessonCatalog = [
       title: "B1 Final Test Practice",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: B1 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -3020,6 +3917,9 @@ export const lessonCatalog = [
       title: "B1 Final Conversation",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: B1 Final Conversation." }
+      },
       sections: lessonSections
     },
     {
@@ -3029,6 +3929,9 @@ export const lessonCatalog = [
       title: "Stating Your Position",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menentukan posisi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Stating Your Position di Indonesia.", caption: "Konteks percakapan nyata: Stating Your Position." }
+      },
       sections: lessonSections
     },
     {
@@ -3038,6 +3941,9 @@ export const lessonCatalog = [
       title: "Supporting With Reasons",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk mendukung pendapat dengan alasan dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Supporting With Reasons di Indonesia.", caption: "Konteks percakapan nyata: Supporting With Reasons." }
+      },
       sections: lessonSections
     },
     {
@@ -3047,6 +3953,9 @@ export const lessonCatalog = [
       title: "Using Examples",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menggunakan contoh dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Using Examples di Indonesia.", caption: "Konteks percakapan nyata: Using Examples." }
+      },
       sections: lessonSections
     },
     {
@@ -3056,6 +3965,9 @@ export const lessonCatalog = [
       title: "Responding to Counterpoints",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menanggapi keberatan dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Counterpoints di Indonesia.", caption: "Konteks percakapan nyata: Responding to Counterpoints." }
+      },
       sections: lessonSections
     },
     {
@@ -3065,6 +3977,9 @@ export const lessonCatalog = [
       title: "Clear Argument Mission",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk membangun argumen jelas dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Clear Argument Mission di Indonesia.", caption: "Konteks percakapan nyata: Clear Argument Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3074,6 +3989,9 @@ export const lessonCatalog = [
       title: "Opening a Meeting Point",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk membuka poin rapat dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Opening a Meeting Point di Indonesia.", caption: "Konteks percakapan nyata: Opening a Meeting Point." }
+      },
       sections: lessonSections
     },
     {
@@ -3083,6 +4001,9 @@ export const lessonCatalog = [
       title: "Clarifying Scope",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Clarifying Scope di Indonesia.", caption: "Konteks percakapan nyata: Clarifying Scope." }
+      },
       sections: lessonSections
     },
     {
@@ -3092,6 +4013,9 @@ export const lessonCatalog = [
       title: "Giving Constructive Feedback",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk memberi masukan konstruktif dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Giving Constructive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Giving Constructive Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -3101,6 +4025,9 @@ export const lessonCatalog = [
       title: "Summarizing Decisions",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk merangkum keputusan dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Summarizing Decisions di Indonesia.", caption: "Konteks percakapan nyata: Summarizing Decisions." }
+      },
       sections: lessonSections
     },
     {
@@ -3110,6 +4037,9 @@ export const lessonCatalog = [
       title: "Meeting Participation Mission",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk berpartisipasi dalam rapat profesional dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Meeting Participation Mission di Indonesia.", caption: "Konteks percakapan nyata: Meeting Participation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3119,6 +4049,9 @@ export const lessonCatalog = [
       title: "Expressing Priorities",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan prioritas dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Expressing Priorities di Indonesia.", caption: "Konteks percakapan nyata: Expressing Priorities." }
+      },
       sections: lessonSections
     },
     {
@@ -3128,6 +4061,9 @@ export const lessonCatalog = [
       title: "Making a Proposal",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mengajukan usulan praktis dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Making a Proposal di Indonesia.", caption: "Konteks percakapan nyata: Making a Proposal." }
+      },
       sections: lessonSections
     },
     {
@@ -3137,6 +4073,9 @@ export const lessonCatalog = [
       title: "Handling Objections",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk menangani keberatan dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Objections di Indonesia.", caption: "Konteks percakapan nyata: Handling Objections." }
+      },
       sections: lessonSections
     },
     {
@@ -3146,6 +4085,9 @@ export const lessonCatalog = [
       title: "Finding Middle Ground",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mencari jalan tengah dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Finding Middle Ground di Indonesia.", caption: "Konteks percakapan nyata: Finding Middle Ground." }
+      },
       sections: lessonSections
     },
     {
@@ -3155,6 +4097,9 @@ export const lessonCatalog = [
       title: "Negotiation Mission",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola negosiasi jelas dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Negotiation Mission di Indonesia.", caption: "Konteks percakapan nyata: Negotiation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3164,6 +4109,9 @@ export const lessonCatalog = [
       title: "Structuring a Short Presentation",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menyusun presentasi singkat dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Structuring a Short Presentation di Indonesia.", caption: "Konteks percakapan nyata: Structuring a Short Presentation." }
+      },
       sections: lessonSections
     },
     {
@@ -3173,6 +4121,9 @@ export const lessonCatalog = [
       title: "Signposting Clearly",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Signposting Clearly di Indonesia.", caption: "Konteks percakapan nyata: Signposting Clearly." }
+      },
       sections: lessonSections
     },
     {
@@ -3182,6 +4133,9 @@ export const lessonCatalog = [
       title: "Explaining Benefits and Risks",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan manfaat dan risiko dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Benefits and Risks di Indonesia.", caption: "Konteks percakapan nyata: Explaining Benefits and Risks." }
+      },
       sections: lessonSections
     },
     {
@@ -3191,6 +4145,9 @@ export const lessonCatalog = [
       title: "Answering Questions",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menjawab pertanyaan dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Answering Questions di Indonesia.", caption: "Konteks percakapan nyata: Answering Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -3200,6 +4157,9 @@ export const lessonCatalog = [
       title: "Idea Presentation Mission",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk mempresentasikan dan mempertahankan ide dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Idea Presentation Mission di Indonesia.", caption: "Konteks percakapan nyata: Idea Presentation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3209,6 +4169,9 @@ export const lessonCatalog = [
       title: "Summarizing an Article",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing an Article di Indonesia.", caption: "Konteks percakapan nyata: Summarizing an Article." }
+      },
       sections: lessonSections
     },
     {
@@ -3218,6 +4181,9 @@ export const lessonCatalog = [
       title: "Discussing Reliable Sources",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk membahas sumber tepercaya dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Reliable Sources di Indonesia.", caption: "Konteks percakapan nyata: Discussing Reliable Sources." }
+      },
       sections: lessonSections
     },
     {
@@ -3227,6 +4193,9 @@ export const lessonCatalog = [
       title: "Explaining a Viewpoint",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan sudut pandang dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining a Viewpoint di Indonesia.", caption: "Konteks percakapan nyata: Explaining a Viewpoint." }
+      },
       sections: lessonSections
     },
     {
@@ -3236,6 +4205,9 @@ export const lessonCatalog = [
       title: "Responding to New Information",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk menanggapi informasi baru dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to New Information di Indonesia.", caption: "Konteks percakapan nyata: Responding to New Information." }
+      },
       sections: lessonSections
     },
     {
@@ -3245,6 +4217,9 @@ export const lessonCatalog = [
       title: "Information Discussion Mission",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola diskusi informasi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Information Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Information Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3254,6 +4229,9 @@ export const lessonCatalog = [
       title: "Understanding Client Needs",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk memahami kebutuhan klien dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Understanding Client Needs di Indonesia.", caption: "Konteks percakapan nyata: Understanding Client Needs." }
+      },
       sections: lessonSections
     },
     {
@@ -3263,6 +4241,9 @@ export const lessonCatalog = [
       title: "Explaining Options",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan opsi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Options di Indonesia.", caption: "Konteks percakapan nyata: Explaining Options." }
+      },
       sections: lessonSections
     },
     {
@@ -3272,6 +4253,9 @@ export const lessonCatalog = [
       title: "Handling Concerns",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk menangani concern klien dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Handling Concerns di Indonesia.", caption: "Konteks percakapan nyata: Handling Concerns." }
+      },
       sections: lessonSections
     },
     {
@@ -3281,6 +4265,9 @@ export const lessonCatalog = [
       title: "Confirming Next Steps",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Confirming Next Steps di Indonesia.", caption: "Konteks percakapan nyata: Confirming Next Steps." }
+      },
       sections: lessonSections
     },
     {
@@ -3290,6 +4277,9 @@ export const lessonCatalog = [
       title: "Client Conversation Mission",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Client Conversation Mission di Indonesia.", caption: "Konteks percakapan nyata: Client Conversation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3299,6 +4289,9 @@ export const lessonCatalog = [
       title: "Framing the Problem",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk membingkai masalah dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Framing the Problem di Indonesia.", caption: "Konteks percakapan nyata: Framing the Problem." }
+      },
       sections: lessonSections
     },
     {
@@ -3308,6 +4301,9 @@ export const lessonCatalog = [
       title: "Explaining Causes",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan penyebab dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Causes di Indonesia.", caption: "Konteks percakapan nyata: Explaining Causes." }
+      },
       sections: lessonSections
     },
     {
@@ -3317,6 +4313,9 @@ export const lessonCatalog = [
       title: "Discussing Tradeoffs",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk membahas tradeoff dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Tradeoffs di Indonesia.", caption: "Konteks percakapan nyata: Discussing Tradeoffs." }
+      },
       sections: lessonSections
     },
     {
@@ -3326,6 +4325,9 @@ export const lessonCatalog = [
       title: "Recommending a Solution",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk merekomendasikan solusi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Recommending a Solution di Indonesia.", caption: "Konteks percakapan nyata: Recommending a Solution." }
+      },
       sections: lessonSections
     },
     {
@@ -3335,6 +4337,9 @@ export const lessonCatalog = [
       title: "Problem Solving Discussion Mission",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Discussion Mission di Indonesia.", caption: "Konteks percakapan nyata: Problem Solving Discussion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3344,6 +4349,9 @@ export const lessonCatalog = [
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Arguments and Meetings di Indonesia.", caption: "Konteks percakapan nyata: Review Arguments and Meetings." }
+      },
       sections: lessonSections
     },
     {
@@ -3353,6 +4361,9 @@ export const lessonCatalog = [
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Negotiation and Presenting di Indonesia.", caption: "Konteks percakapan nyata: Review Negotiation and Presenting." }
+      },
       sections: lessonSections
     },
     {
@@ -3362,6 +4373,9 @@ export const lessonCatalog = [
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review informasi dan klien dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Information and Clients di Indonesia.", caption: "Konteks percakapan nyata: Review Information and Clients." }
+      },
       sections: lessonSections
     },
     {
@@ -3371,6 +4385,9 @@ export const lessonCatalog = [
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks B2 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -3380,6 +4397,9 @@ export const lessonCatalog = [
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks B2 Final Discussion di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Discussion." }
+      },
       sections: lessonSections
     },
     {
@@ -3389,6 +4409,9 @@ export const lessonCatalog = [
       title: "Qualifying Your Opinion",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk qualifying opinion before making a claim dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Qualifying Your Opinion di Indonesia.", caption: "Konteks percakapan nyata: Qualifying Your Opinion." }
+      },
       sections: lessonSections
     },
     {
@@ -3398,6 +4421,9 @@ export const lessonCatalog = [
       title: "Expressing Certainty and Doubt",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Expressing Certainty and Doubt di Indonesia.", caption: "Konteks percakapan nyata: Expressing Certainty and Doubt." }
+      },
       sections: lessonSections
     },
     {
@@ -3407,6 +4433,9 @@ export const lessonCatalog = [
       title: "Balancing Two Viewpoints",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk balancing two viewpoints dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Balancing Two Viewpoints di Indonesia.", caption: "Konteks percakapan nyata: Balancing Two Viewpoints." }
+      },
       sections: lessonSections
     },
     {
@@ -3416,6 +4445,9 @@ export const lessonCatalog = [
       title: "Softening Disagreement",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk softening disagreement dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Softening Disagreement di Indonesia.", caption: "Konteks percakapan nyata: Softening Disagreement." }
+      },
       sections: lessonSections
     },
     {
@@ -3425,6 +4457,9 @@ export const lessonCatalog = [
       title: "Nuanced Opinion Mission",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk building a complete nuanced opinion dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Nuanced Opinion Mission di Indonesia.", caption: "Konteks percakapan nyata: Nuanced Opinion Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3434,6 +4469,9 @@ export const lessonCatalog = [
       title: "Aligning Stakeholders",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk aligning stakeholders dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
+      },
       sections: lessonSections
     },
     {
@@ -3443,6 +4481,9 @@ export const lessonCatalog = [
       title: "Managing Expectations",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk managing realistic expectations dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
+      },
       sections: lessonSections
     },
     {
@@ -3452,6 +4493,9 @@ export const lessonCatalog = [
       title: "Handling Sensitive Feedback",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk handling sensitive feedback tactfully dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -3461,6 +4505,9 @@ export const lessonCatalog = [
       title: "Communicating Risk",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk communicating risk without exaggeration dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
+      },
       sections: lessonSections
     },
     {
@@ -3470,6 +4517,9 @@ export const lessonCatalog = [
       title: "Strategic Workplace Mission",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk running a strategic workplace conversation dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3479,6 +4529,9 @@ export const lessonCatalog = [
       title: "Framing a Complex Topic",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk framing a complex topic dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Framing a Complex Topic di Indonesia.", caption: "Konteks percakapan nyata: Framing a Complex Topic." }
+      },
       sections: lessonSections
     },
     {
@@ -3488,6 +4541,9 @@ export const lessonCatalog = [
       title: "Building a Persuasive Flow",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk building a persuasive flow dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Building a Persuasive Flow di Indonesia.", caption: "Konteks percakapan nyata: Building a Persuasive Flow." }
+      },
       sections: lessonSections
     },
     {
@@ -3497,6 +4553,9 @@ export const lessonCatalog = [
       title: "Using Precise Transitions",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk using precise transitions dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Using Precise Transitions di Indonesia.", caption: "Konteks percakapan nyata: Using Precise Transitions." }
+      },
       sections: lessonSections
     },
     {
@@ -3506,6 +4565,9 @@ export const lessonCatalog = [
       title: "Handling Challenging Questions",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk handling challenging questions dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Handling Challenging Questions di Indonesia.", caption: "Konteks percakapan nyata: Handling Challenging Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -3515,6 +4577,9 @@ export const lessonCatalog = [
       title: "Advanced Presentation Mission",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk delivering an advanced presentation dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Advanced Presentation Mission di Indonesia.", caption: "Konteks percakapan nyata: Advanced Presentation Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3524,6 +4589,9 @@ export const lessonCatalog = [
       title: "Identifying Assumptions",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk identifying hidden assumptions dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Identifying Assumptions di Indonesia.", caption: "Konteks percakapan nyata: Identifying Assumptions." }
+      },
       sections: lessonSections
     },
     {
@@ -3533,6 +4601,9 @@ export const lessonCatalog = [
       title: "Challenging an Argument",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk challenging an argument politely dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Challenging an Argument di Indonesia.", caption: "Konteks percakapan nyata: Challenging an Argument." }
+      },
       sections: lessonSections
     },
     {
@@ -3542,6 +4613,9 @@ export const lessonCatalog = [
       title: "Presenting Evidence",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk presenting relevant evidence dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Presenting Evidence di Indonesia.", caption: "Konteks percakapan nyata: Presenting Evidence." }
+      },
       sections: lessonSections
     },
     {
@@ -3551,6 +4625,9 @@ export const lessonCatalog = [
       title: "Responding Under Pressure",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk responding calmly under pressure dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding Under Pressure di Indonesia.", caption: "Konteks percakapan nyata: Responding Under Pressure." }
+      },
       sections: lessonSections
     },
     {
@@ -3560,6 +4637,9 @@ export const lessonCatalog = [
       title: "Debate Analysis Mission",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk running a balanced analytical debate dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Debate Analysis Mission di Indonesia.", caption: "Konteks percakapan nyata: Debate Analysis Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3569,6 +4649,9 @@ export const lessonCatalog = [
       title: "Reading Context",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk reading social context dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Reading Context di Indonesia.", caption: "Konteks percakapan nyata: Reading Context." }
+      },
       sections: lessonSections
     },
     {
@@ -3578,6 +4661,9 @@ export const lessonCatalog = [
       title: "Asking Tactful Questions",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk asking tactful questions dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking Tactful Questions di Indonesia.", caption: "Konteks percakapan nyata: Asking Tactful Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -3587,6 +4673,9 @@ export const lessonCatalog = [
       title: "Explaining Local Norms",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk explaining local norms dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Local Norms di Indonesia.", caption: "Konteks percakapan nyata: Explaining Local Norms." }
+      },
       sections: lessonSections
     },
     {
@@ -3596,6 +4685,9 @@ export const lessonCatalog = [
       title: "Repairing Misunderstanding",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk repairing misunderstanding dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Repairing Misunderstanding di Indonesia.", caption: "Konteks percakapan nyata: Repairing Misunderstanding." }
+      },
       sections: lessonSections
     },
     {
@@ -3605,6 +4697,9 @@ export const lessonCatalog = [
       title: "Cross-cultural Mission",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk running a cross-cultural conversation dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Cross-cultural Mission di Indonesia.", caption: "Konteks percakapan nyata: Cross-cultural Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3614,6 +4709,9 @@ export const lessonCatalog = [
       title: "Setting Direction",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk setting direction clearly dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
+      },
       sections: lessonSections
     },
     {
@@ -3623,6 +4721,9 @@ export const lessonCatalog = [
       title: "Coaching With Questions",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk coaching with questions dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Coaching With Questions di Indonesia.", caption: "Konteks percakapan nyata: Coaching With Questions." }
+      },
       sections: lessonSections
     },
     {
@@ -3632,6 +4733,9 @@ export const lessonCatalog = [
       title: "Giving Actionable Feedback",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk giving actionable feedback dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving Actionable Feedback di Indonesia.", caption: "Konteks percakapan nyata: Giving Actionable Feedback." }
+      },
       sections: lessonSections
     },
     {
@@ -3641,6 +4745,9 @@ export const lessonCatalog = [
       title: "Guiding a Decision",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk guiding a group decision dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Guiding a Decision di Indonesia.", caption: "Konteks percakapan nyata: Guiding a Decision." }
+      },
       sections: lessonSections
     },
     {
@@ -3650,6 +4757,9 @@ export const lessonCatalog = [
       title: "Leadership Coaching Mission",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk running a leadership coaching conversation dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Leadership Coaching Mission di Indonesia.", caption: "Konteks percakapan nyata: Leadership Coaching Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3659,6 +4769,9 @@ export const lessonCatalog = [
       title: "Catching Implied Meaning",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk catching implied meaning dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Catching Implied Meaning di Indonesia.", caption: "Konteks percakapan nyata: Catching Implied Meaning." }
+      },
       sections: lessonSections
     },
     {
@@ -3668,6 +4781,9 @@ export const lessonCatalog = [
       title: "Responding to Long Turns",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk responding to long turns dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Long Turns di Indonesia.", caption: "Konteks percakapan nyata: Responding to Long Turns." }
+      },
       sections: lessonSections
     },
     {
@@ -3677,6 +4793,9 @@ export const lessonCatalog = [
       title: "Summarizing What You Heard",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk summarizing what you heard accurately dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing What You Heard di Indonesia.", caption: "Konteks percakapan nyata: Summarizing What You Heard." }
+      },
       sections: lessonSections
     },
     {
@@ -3686,6 +4805,9 @@ export const lessonCatalog = [
       title: "Asking High-quality Follow-ups",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk asking high-quality follow-ups dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking High-quality Follow-ups di Indonesia.", caption: "Konteks percakapan nyata: Asking High-quality Follow-ups." }
+      },
       sections: lessonSections
     },
     {
@@ -3695,6 +4817,9 @@ export const lessonCatalog = [
       title: "Advanced Listening Mission",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk responding after advanced listening dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Listening Mission di Indonesia.", caption: "Konteks percakapan nyata: Advanced Listening Mission." }
+      },
       sections: lessonSections
     },
     {
@@ -3704,6 +4829,9 @@ export const lessonCatalog = [
       title: "Review Nuance and Strategy",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing nuance and strategy dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Nuance and Strategy di Indonesia.", caption: "Konteks percakapan nyata: Review Nuance and Strategy." }
+      },
       sections: lessonSections
     },
     {
@@ -3713,6 +4841,9 @@ export const lessonCatalog = [
       title: "Review Presenting and Debate",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Presenting and Debate di Indonesia.", caption: "Konteks percakapan nyata: Review Presenting and Debate." }
+      },
       sections: lessonSections
     },
     {
@@ -3722,6 +4853,9 @@ export const lessonCatalog = [
       title: "Review Leadership and Listening",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing leadership and listening dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Leadership and Listening di Indonesia.", caption: "Konteks percakapan nyata: Review Leadership and Listening." }
+      },
       sections: lessonSections
     },
     {
@@ -3731,6 +4865,9 @@ export const lessonCatalog = [
       title: "C1 Final Test Practice",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk practicing the final test dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks C1 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: C1 Final Test Practice." }
+      },
       sections: lessonSections
     },
     {
@@ -3740,6 +4877,9 @@ export const lessonCatalog = [
       title: "C1 Final Conversation",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk running a complete final conversation dengan nuance, struktur, presisi, dan respons profesional.",
+      visuals: {
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks C1 Final Conversation di Indonesia.", caption: "Konteks percakapan nyata: C1 Final Conversation." }
+      },
       sections: lessonSections
     }
   // </generated:lessons>

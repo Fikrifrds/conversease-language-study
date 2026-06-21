@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Officer dan Dimas faceless menjalankan misi detail kontak di meja registrasi kelas Indonesia.
-  caption: Gabungkan nama, ejaan, nomor telepon, dan email dalam satu percakapan.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Contact Details Mission.'
 cards:
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-contact-details.png
-    width: 1254
-    height: 1254
-    label: I need your contact details.
-    alt: Officer faceless meminta detail kontak di depan formulir kosong.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-spell-name.png
-    width: 1254
-    height: 1254
-    label: How do you spell your name?
-    alt: Officer faceless bertanya ejaan nama di meja registrasi kelas.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/card-email-address.png
-    width: 1254
-    height: 1254
-    label: And your email address?
-    alt: Officer faceless bertanya alamat email dengan layar kosong di meja registrasi.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I need your contact details.
+  alt: Cuplikan visual classroom male untuk frasa I need your contact details..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: How do you spell your name?
+  alt: Cuplikan visual classroom male untuk frasa How do you spell your name?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: And your email address?
+  alt: Cuplikan visual classroom male untuk frasa And your email address?.

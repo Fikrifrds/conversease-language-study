@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Family, Work, and Study Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Family, Work, and Study Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-female/card-1.png
+  width: 1254
+  height: 1254
+  label: هَذِهِ عَائِلَتِي
+  alt: Cuplikan visual classroom female untuk frasa هَذِهِ عَائِلَتِي.
+- src: /images/lesson-visual-library/classroom-female/card-2.png
+  width: 1254
+  height: 1254
+  label: أَنَا طَالِبٌ
+  alt: Cuplikan visual classroom female untuk frasa أَنَا طَالِبٌ.
+- src: /images/lesson-visual-library/classroom-female/card-3.png
+  width: 1254
+  height: 1254
+  label: أَدْرُسُ الْعَرَبِيَّةَ
+  alt: Cuplikan visual classroom female untuk frasa أَدْرُسُ الْعَرَبِيَّةَ.

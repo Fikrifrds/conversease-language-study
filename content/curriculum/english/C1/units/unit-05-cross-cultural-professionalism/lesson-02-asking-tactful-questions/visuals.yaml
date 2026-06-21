@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking Tactful Questions di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking Tactful Questions.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Would you mind if I ask how you prefer to receive feedback?
+  alt: Cuplikan visual workplace male untuk frasa Would you mind if I ask how you prefer to receive feedback?.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: If it's okay, could you clarify whether you want feedback in writing or in a call?
+  alt: Cuplikan visual workplace male untuk frasa If it's okay, could you clarify whether you want feedback
+    in writing or in a call?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Just to make sure I understand, should we share concerns privately first?
+  alt: Cuplikan visual workplace male untuk frasa Just to make sure I understand, should we share concerns
+    privately first?.

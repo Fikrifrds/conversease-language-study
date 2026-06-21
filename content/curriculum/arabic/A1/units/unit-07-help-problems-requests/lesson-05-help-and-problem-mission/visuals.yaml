@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Help and Problem Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Help and Problem Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: لَا أَفْهَمُ
+  alt: Cuplikan visual workplace female untuk frasa لَا أَفْهَمُ.
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: أَحْتَاجُ مُسَاعَدَةً
+  alt: Cuplikan visual workplace female untuk frasa أَحْتَاجُ مُسَاعَدَةً.
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: بِبُطْءٍ مِنْ فَضْلِكَ
+  alt: Cuplikan visual workplace female untuk frasa بِبُطْءٍ مِنْ فَضْلِكَ.

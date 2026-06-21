@@ -1,0 +1,25 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Strategic Workplace Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Strategic Workplace Mission.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: To make sure we're aligned, what's your top priority and biggest constraint?
+  alt: Cuplikan visual travel male untuk frasa To make sure we're aligned, what's your top priority and
+    biggest constraint?.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What we can commit to is a smaller release by next week, assuming no new blockers.
+  alt: Cuplikan visual travel male untuk frasa What we can commit to is a smaller release by next week,
+    assuming no new blockers..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: 'I wanted to flag the impact: it was interpreted as a hard deadline.'
+  alt: 'Cuplikan visual travel male untuk frasa I wanted to flag the impact: it was interpreted as a hard
+    deadline..'

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining a Viewpoint di Indonesia.
+  caption: 'Konteks percakapan nyata: Explaining a Viewpoint.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: From my perspective, some regulation is necessary.
+  alt: Cuplikan visual workplace male untuk frasa From my perspective, some regulation is necessary..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: The reason is it protects users from misinformation.
+  alt: Cuplikan visual workplace male untuk frasa The reason is it protects users from misinformation..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I see the other side, but...
+  alt: Cuplikan visual workplace male untuk frasa I see the other side, but....

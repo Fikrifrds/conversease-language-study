@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Stories and Work di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Stories and Work.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Then we grabbed street food.
+  alt: Cuplikan visual classroom male untuk frasa Then we grabbed street food..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What happened after that?
+  alt: Cuplikan visual classroom male untuk frasa What happened after that?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I'm working on the release checklist.
+  alt: Cuplikan visual classroom male untuk frasa I'm working on the release checklist..

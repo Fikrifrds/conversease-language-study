@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Local Habits di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking About Local Habits.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
+  alt: Cuplikan visual classroom male untuk frasa مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.
+  alt: Cuplikan visual classroom male untuk frasa فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.
+  alt: Cuplikan visual classroom male untuk frasa بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ..

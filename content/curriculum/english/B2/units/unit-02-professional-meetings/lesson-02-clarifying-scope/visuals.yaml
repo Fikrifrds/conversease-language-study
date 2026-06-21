@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Clarifying Scope di Indonesia.
+  caption: 'Konteks percakapan nyata: Clarifying Scope.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Just to clarify, what exactly is in scope?
+  alt: Cuplikan visual workplace male untuk frasa Just to clarify, what exactly is in scope?.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Does this include the admin dashboard changes?
+  alt: Cuplikan visual workplace male untuk frasa Does this include the admin dashboard changes?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: That's out of scope for now.
+  alt: Cuplikan visual workplace male untuk frasa That's out of scope for now..

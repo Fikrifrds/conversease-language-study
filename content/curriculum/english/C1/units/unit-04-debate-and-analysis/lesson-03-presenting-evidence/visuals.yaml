@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Presenting Evidence di Indonesia.
+  caption: 'Konteks percakapan nyata: Presenting Evidence.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: According to the support dashboard, drop-offs increased after the redesign.
+  alt: Cuplikan visual workplace male untuk frasa According to the support dashboard, drop-offs increased
+    after the redesign..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: To be precise, the data indicates correlation, not necessarily causation.
+  alt: Cuplikan visual workplace male untuk frasa To be precise, the data indicates correlation, not necessarily
+    causation..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: This suggests we should investigate the checkout experience.
+  alt: Cuplikan visual workplace male untuk frasa This suggests we should investigate the checkout experience..

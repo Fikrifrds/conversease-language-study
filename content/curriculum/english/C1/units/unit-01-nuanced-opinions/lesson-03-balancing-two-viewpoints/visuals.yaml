@@ -1,0 +1,25 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Balancing Two Viewpoints di Indonesia.
+  caption: 'Konteks percakapan nyata: Balancing Two Viewpoints.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: On the one hand, growth initiatives could unlock new revenue.
+  alt: Cuplikan visual workplace male untuk frasa On the one hand, growth initiatives could unlock new
+    revenue..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: On the other hand, stability work reduces long-term risk.
+  alt: Cuplikan visual workplace male untuk frasa On the other hand, stability work reduces long-term
+    risk..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: While it's true that growth matters, the incident rate is concerning.
+  alt: Cuplikan visual workplace male untuk frasa While it's true that growth matters, the incident rate
+    is concerning..

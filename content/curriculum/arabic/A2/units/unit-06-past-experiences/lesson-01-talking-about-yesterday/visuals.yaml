@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Yesterday di Indonesia.
+  caption: 'Konteks percakapan nyata: Talking About Yesterday.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَاذَا فَعَلْتَ أَمْسِ؟
+  alt: Cuplikan visual classroom male untuk frasa مَاذَا فَعَلْتَ أَمْسِ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: ذَهَبْتُ إِلَى الْمَكْتَبَةِ.
+  alt: Cuplikan visual classroom male untuk frasa ذَهَبْتُ إِلَى الْمَكْتَبَةِ..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.
+  alt: Cuplikan visual classroom male untuk frasa دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ..

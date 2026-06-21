@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Ahmad faceless berlatih nama dan asal dari jarak sopan di kelas Indonesia.
-  caption: Perkenalkan nama dan asal dalam dialog kelas formal yang jelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Name and Origin di Indonesia.
+  caption: 'Konteks percakapan nyata: Name and Origin.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ma-ismuka.png
-    width: 1254
-    height: 1254
-    label: ما اسمُكَ؟
-    alt: Muallim faceless bertanya nama di depan papan tulis kosong di kelas Indonesia.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-ismi.png
-    width: 1254
-    height: 1254
-    label: اسمي ...
-    alt: Ahmad faceless memperkenalkan nama dengan celana di atas mata kaki.
-  - src: /images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/card-min-ayna.png
-    width: 1254
-    height: 1254
-    label: من أين أنتَ؟
-    alt: Muallim faceless bertanya asal dengan latar jendela kelas Indonesia.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: ما اسمُكَ؟
+  alt: Cuplikan visual classroom male untuk frasa ما اسمُكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اسمي ...
+  alt: Cuplikan visual classroom male untuk frasa اسمي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: من أين أنتَ؟
+  alt: Cuplikan visual classroom male untuk frasa من أين أنتَ؟.

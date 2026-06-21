@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Shopping Service Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Shopping Service Mission.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'm looking for a charger.
+  alt: Cuplikan visual service male untuk frasa I'm looking for a charger..
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Do you have it?
+  alt: Cuplikan visual service male untuk frasa Do you have it?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Which one is cheaper?
+  alt: Cuplikan visual service male untuk frasa Which one is cheaper?.

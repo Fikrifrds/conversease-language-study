@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Understanding Client Needs di Indonesia.
+  caption: 'Konteks percakapan nyata: Understanding Client Needs.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Just to clarify, who is the main user group?
+  alt: Cuplikan visual service male untuk frasa Just to clarify, who is the main user group?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Could you share more about the biggest pain point?
+  alt: Cuplikan visual service male untuk frasa Could you share more about the biggest pain point?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: So what you need is a clear starting point, right?
+  alt: Cuplikan visual service male untuk frasa So what you need is a clear starting point, right?.

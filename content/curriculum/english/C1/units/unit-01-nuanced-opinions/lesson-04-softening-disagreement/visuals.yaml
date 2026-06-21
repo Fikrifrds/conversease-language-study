@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Softening Disagreement di Indonesia.
+  caption: 'Konteks percakapan nyata: Softening Disagreement.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I see your point, but I'm not sure I'd go that far.
+  alt: Cuplikan visual classroom male untuk frasa I see your point, but I'm not sure I'd go that far..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: With respect, the current error rate suggests we're not ready.
+  alt: Cuplikan visual classroom male untuk frasa With respect, the current error rate suggests we're
+    not ready..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: 'I might frame it differently: ...'
+  alt: 'Cuplikan visual classroom male untuk frasa I might frame it differently: ....'

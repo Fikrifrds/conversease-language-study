@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Ticket di Indonesia.
+  caption: 'Konteks percakapan nyata: Buying a Ticket.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.
+  alt: Cuplikan visual travel male untuk frasa أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا..
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: ذَهَابًا فَقَطْ.
+  alt: Cuplikan visual travel male untuk frasa ذَهَابًا فَقَطْ..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: ذَهَابًا وَعَوْدَةً.
+  alt: Cuplikan visual travel male untuk frasa ذَهَابًا وَعَوْدَةً..

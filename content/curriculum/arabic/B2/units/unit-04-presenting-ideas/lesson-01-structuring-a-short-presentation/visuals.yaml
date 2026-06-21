@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Structuring a Short Presentation di Indonesia.
+  caption: 'Konteks percakapan nyata: Structuring a Short Presentation.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ.
+  alt: Cuplikan visual workplace female untuk frasa سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ
+    عَرْضٍ قَصِيرٍ..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  alt: Cuplikan visual workplace female untuk frasa بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  alt: Cuplikan visual workplace female untuk frasa مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا..

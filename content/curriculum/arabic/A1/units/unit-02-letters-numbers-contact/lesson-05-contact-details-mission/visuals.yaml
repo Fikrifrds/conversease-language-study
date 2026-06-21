@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Ahmad faceless menjalankan misi kontak di meja registrasi kelas Indonesia.
-  caption: Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Contact Details Mission.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-ismi.png
-    width: 1254
-    height: 1254
-    label: اِسْمِي ...
-    alt: Ahmad faceless memperkenalkan nama di meja registrasi kelas.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-raqmi.png
-    width: 1254
-    height: 1254
-    label: رَقْمِي ...
-    alt: Ahmad faceless memberi nomor telepon dengan ponsel layar kosong.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/card-baridi.png
-    width: 1254
-    height: 1254
-    label: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
-    alt: Ahmad faceless memberi informasi email dengan layar tablet kosong.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: اِسْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa اِسْمِي ....
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَكْتُبُ اسْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa أَكْتُبُ اسْمِي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: رَقْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa رَقْمِي ....

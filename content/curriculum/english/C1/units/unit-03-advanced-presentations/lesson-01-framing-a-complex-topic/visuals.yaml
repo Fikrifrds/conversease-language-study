@@ -1,0 +1,25 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Framing a Complex Topic di Indonesia.
+  caption: 'Konteks percakapan nyata: Framing a Complex Topic.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Today I'd like to walk you through the proposal and why it matters.
+  alt: Cuplikan visual workplace male untuk frasa Today I'd like to walk you through the proposal and
+    why it matters..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: By 'modular architecture', I mean we separate features into independent components.
+  alt: Cuplikan visual workplace male untuk frasa By 'modular architecture', I mean we separate features
+    into independent components..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The purpose of this is to reduce coupling and speed up delivery.
+  alt: Cuplikan visual workplace male untuk frasa The purpose of this is to reduce coupling and speed
+    up delivery..

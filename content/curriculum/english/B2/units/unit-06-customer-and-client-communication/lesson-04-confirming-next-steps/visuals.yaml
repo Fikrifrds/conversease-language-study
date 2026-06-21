@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Next Steps di Indonesia.
+  caption: 'Konteks percakapan nyata: Confirming Next Steps.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: To confirm, we'll start with a two-week pilot.
+  alt: Cuplikan visual service male untuk frasa To confirm, we'll start with a two-week pilot..
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: 'Next steps are: I''ll send the draft plan today.'
+  alt: 'Cuplikan visual service male untuk frasa Next steps are: I''ll send the draft plan today..'
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: You'll review it by Friday.
+  alt: Cuplikan visual service male untuk frasa You'll review it by Friday..

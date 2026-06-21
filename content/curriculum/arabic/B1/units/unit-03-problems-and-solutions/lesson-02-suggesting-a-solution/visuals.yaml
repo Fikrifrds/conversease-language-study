@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Suggesting a Solution di Indonesia.
+  caption: 'Konteks percakapan nyata: Suggesting a Solution.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.
+  alt: Cuplikan visual workplace male untuk frasa أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.
+  alt: Cuplikan visual workplace male untuk frasa يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.
+  alt: Cuplikan visual workplace male untuk frasa هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ..

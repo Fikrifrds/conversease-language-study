@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Zayd dan Ahmad faceless berlatih alamat email di meja registrasi kelas Indonesia.
-  caption: Sebutkan bagian email dengan pelan tanpa menampilkan teks email di gambar.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.
+  caption: 'Konteks percakapan nyata: Sharing Email Addresses.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-barid.png
-    width: 1254
-    height: 1254
-    label: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
-    alt: Zayd faceless bertanya alamat email dengan layar tablet kosong.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-uktub.png
-    width: 1254
-    height: 1254
-    label: اُكْتُبْ مِنْ فَضْلِكَ
-    alt: Ahmad faceless menulis ulang informasi email pada formulir kosong.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/card-nuqta-sharta.png
-    width: 1254
-    height: 1254
-    label: نُقْطَةٌ
-    alt: Ahmad faceless menjelaskan satu bagian email tanpa simbol atau huruf terlihat.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
+  alt: Cuplikan visual classroom male untuk frasa مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
+  alt: Cuplikan visual classroom male untuk frasa بَرِيدِي الْإِلِكْتُرُونِيُّ ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: اُكْتُبْ مِنْ فَضْلِكَ
+  alt: Cuplikan visual classroom male untuk frasa اُكْتُبْ مِنْ فَضْلِكَ.

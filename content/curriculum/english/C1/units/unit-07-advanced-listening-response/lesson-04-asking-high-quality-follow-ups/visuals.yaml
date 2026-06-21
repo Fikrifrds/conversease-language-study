@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking High-quality Follow-ups di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking High-quality Follow-ups.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: When you say 'more cautious', do you mean smaller scope or slower timing?
+  alt: Cuplikan visual classroom male untuk frasa When you say 'more cautious', do you mean smaller scope
+    or slower timing?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What's your assumption about the main risk?
+  alt: Cuplikan visual classroom male untuk frasa What's your assumption about the main risk?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What would change your mind about the timeline?
+  alt: Cuplikan visual classroom male untuk frasa What would change your mind about the timeline?.

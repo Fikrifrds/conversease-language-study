@@ -1,0 +1,25 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Presenting and Debate di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Presenting and Debate.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: 'Let me frame this: the goal is reliability, not just speed.'
+  alt: 'Cuplikan visual workplace male untuk frasa Let me frame this: the goal is reliability, not just
+    speed..'
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: The core assumption is that incidents cost more than delay.
+  alt: Cuplikan visual workplace male untuk frasa The core assumption is that incidents cost more than
+    delay..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: If we accept speed as the priority, then we should time-box a pilot and limit scope.
+  alt: Cuplikan visual workplace male untuk frasa If we accept speed as the priority, then we should time-box
+    a pilot and limit scope..

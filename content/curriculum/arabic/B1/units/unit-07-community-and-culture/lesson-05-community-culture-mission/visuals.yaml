@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Community Culture Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Community Culture Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
+  alt: Cuplikan visual classroom male untuk frasa سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.
+  alt: Cuplikan visual classroom male untuk frasa تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.
+  alt: Cuplikan visual classroom male untuk frasa أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا..

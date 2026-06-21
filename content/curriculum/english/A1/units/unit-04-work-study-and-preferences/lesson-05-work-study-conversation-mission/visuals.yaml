@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Work and Study Conversation Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Work and Study Conversation Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Do you work or study?
+  alt: Cuplikan visual classroom male untuk frasa Do you work or study?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I study English online and I work in a shop.
+  alt: Cuplikan visual classroom male untuk frasa I study English online and I work in a shop..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What do you like about English?
+  alt: Cuplikan visual classroom male untuk frasa What do you like about English?.

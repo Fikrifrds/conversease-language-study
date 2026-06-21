@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Inviting Someone di Indonesia.
+  caption: 'Konteks percakapan nyata: Inviting Someone.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Do you want to watch a movie?
+  alt: Cuplikan visual classroom male untuk frasa Do you want to watch a movie?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Would you like to join?
+  alt: Cuplikan visual classroom male untuk frasa Would you like to join?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: That sounds fun.
+  alt: Cuplikan visual classroom male untuk frasa That sounds fun..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Places and Shopping di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Places and Shopping.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Where is the cafe?
+  alt: Cuplikan visual travel male untuk frasa Where is the cafe?.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Go straight and turn right.
+  alt: Cuplikan visual travel male untuk frasa Go straight and turn right..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Is it next to the library?
+  alt: Cuplikan visual travel male untuk frasa Is it next to the library?.

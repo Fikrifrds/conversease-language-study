@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Checking Directions di Indonesia.
+  caption: 'Konteks percakapan nyata: Checking Directions.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
+  alt: Cuplikan visual travel male untuk frasa كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اِمْشِ مُسْتَقِيمًا.
+  alt: Cuplikan visual travel male untuk frasa اِمْشِ مُسْتَقِيمًا..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: ثُمَّ اِتَّجِهْ يَمِينًا.
+  alt: Cuplikan visual travel male untuk frasa ثُمَّ اِتَّجِهْ يَمِينًا..

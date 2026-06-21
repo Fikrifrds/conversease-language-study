@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Catching Implied Meaning di Indonesia.
+  caption: 'Konteks percakapan nyata: Catching Implied Meaning.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: It sounds like timing is the main concern.
+  alt: Cuplikan visual classroom male untuk frasa It sounds like timing is the main concern..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Just to check, are you implying that we should delay the rollout?
+  alt: Cuplikan visual classroom male untuk frasa Just to check, are you implying that we should delay
+    the rollout?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What I'm hearing is we need a phased plan to reduce risk.
+  alt: Cuplikan visual classroom male untuk frasa What I'm hearing is we need a phased plan to reduce
+    risk..

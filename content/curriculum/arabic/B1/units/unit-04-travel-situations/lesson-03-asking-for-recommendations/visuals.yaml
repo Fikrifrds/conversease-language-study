@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Recommendations di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking for Recommendations.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟
+  alt: Cuplikan visual travel male untuk frasa هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُفَضِّلُ مَكَانًا هَادِئًا.
+  alt: Cuplikan visual travel male untuk frasa أُفَضِّلُ مَكَانًا هَادِئًا..
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.
+  alt: Cuplikan visual travel male untuk frasa يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا..

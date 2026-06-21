@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Recommending a Solution di Indonesia.
+  caption: 'Konteks percakapan nyata: Recommending a Solution.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Given these constraints, I'd recommend starting with a two-week pilot.
+  alt: Cuplikan visual workplace male untuk frasa Given these constraints, I'd recommend starting with
+    a two-week pilot..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: It reduces risk and gives us data before a full rollout.
+  alt: Cuplikan visual workplace male untuk frasa It reduces risk and gives us data before a full rollout..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The main risk is slower progress if we over-scope the pilot.
+  alt: Cuplikan visual workplace male untuk frasa The main risk is slower progress if we over-scope the
+    pilot..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Karim dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.
-  caption: Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Numbers and Phone di Indonesia.
+  caption: 'Konteks percakapan nyata: Arabic Numbers and Phone.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqmu-hatif.png
-    width: 1254
-    height: 1254
-    label: مَا رَقْمُ هَاتِفِكَ؟
-    alt: Karim faceless bertanya nomor telepon dengan ponsel layar kosong.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-numbers.png
-    width: 1254
-    height: 1254
-    label: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
-    alt: Khalid faceless memberi nomor telepon secara pelan tanpa angka terlihat.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqm-sahih.png
-    width: 1254
-    height: 1254
-    label: الرَّقْمُ صَحِيحٌ
-    alt: Khalid faceless mengonfirmasi nomor telepon sudah benar.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَا رَقْمُ هَاتِفِكَ؟
+  alt: Cuplikan visual classroom male untuk frasa مَا رَقْمُ هَاتِفِكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: رَقْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa رَقْمِي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
+  alt: Cuplikan visual classroom male untuk frasa وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ.

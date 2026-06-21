@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Leadership Coaching Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Leadership Coaching Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: The direction I'd like to set is ...
+  alt: Cuplikan visual workplace male untuk frasa The direction I'd like to set is ....
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What options do you see right now?
+  alt: Cuplikan visual workplace male untuk frasa What options do you see right now?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: One thing I'd suggest is leading with the decision.
+  alt: Cuplikan visual workplace male untuk frasa One thing I'd suggest is leading with the decision..

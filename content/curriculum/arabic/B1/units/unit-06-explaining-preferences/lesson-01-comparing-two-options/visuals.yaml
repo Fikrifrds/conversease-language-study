@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Comparing Two Options di Indonesia.
+  caption: 'Konteks percakapan nyata: Comparing Two Options.'
+cards:
+- src: /images/lesson-visual-library/workplace-female/card-1.png
+  width: 1254
+  height: 1254
+  label: عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.
+  alt: Cuplikan visual workplace female untuk frasa عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
+  width: 1254
+  height: 1254
+  label: الْخِيَارُ الْأَوَّلُ أَسْرَعُ.
+  alt: Cuplikan visual workplace female untuk frasa الْخِيَارُ الْأَوَّلُ أَسْرَعُ..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
+  width: 1254
+  height: 1254
+  label: الْخِيَارُ الثَّانِي أَرْخَصُ.
+  alt: Cuplikan visual workplace female untuk frasa الْخِيَارُ الثَّانِي أَرْخَصُ..

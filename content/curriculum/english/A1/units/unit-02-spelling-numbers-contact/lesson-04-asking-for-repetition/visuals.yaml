@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Dimas dan Ben faceless berlatih meminta pengulangan informasi kontak di kelas Indonesia.
-  caption: Minta pengulangan dengan sopan saat informasi belum jelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Repetition di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking for Repetition.'
 cards:
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-repeat-that.png
-    width: 1254
-    height: 1254
-    label: Sorry, can you repeat that, please?
-    alt: Ben faceless meminta Dimas mengulang informasi kontak dari jarak sopan.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-did-you-say.png
-    width: 1254
-    height: 1254
-    label: Did you say two two five five?
-    alt: Ben faceless mengecek satu bagian informasi kontak tanpa angka terlihat.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/card-got-it.png
-    width: 1254
-    height: 1254
-    label: Got it.
-    alt: Ben faceless menunjukkan sudah paham setelah informasi diulang.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Sorry, can you repeat that, please?
+  alt: Cuplikan visual classroom male untuk frasa Sorry, can you repeat that, please?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Sure.
+  alt: Cuplikan visual classroom male untuk frasa Sure..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Did you say two two five five?
+  alt: Cuplikan visual classroom male untuk frasa Did you say two two five five?.

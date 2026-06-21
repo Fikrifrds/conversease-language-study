@@ -1,0 +1,27 @@
+hero:
+  src: /images/lesson-visual-library/travel-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Communicating Risk di Indonesia.
+  caption: 'Konteks percakapan nyata: Communicating Risk.'
+cards:
+- src: /images/lesson-visual-library/travel-female/card-1.png
+  width: 1254
+  height: 1254
+  label: فِي مَهَارَةِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ
+    الْأَطْرَافِ الرَّئِيسِيَّةِ.
+  alt: Cuplikan visual travel female untuk frasa فِي مَهَارَةِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ،
+    نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ..
+- src: /images/lesson-visual-library/travel-female/card-2.png
+  width: 1254
+  height: 1254
+  label: عِنْدَ تَطْبِيقِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ
+    قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
+  alt: Cuplikan visual travel female untuk frasa عِنْدَ تَطْبِيقِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ،
+    مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ..
+- src: /images/lesson-visual-library/travel-female/card-3.png
+  width: 1254
+  height: 1254
+  label: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
+  alt: Cuplikan visual travel female untuk frasa سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ
+    الْمَوْضُوعَ مُهِمٌّ..

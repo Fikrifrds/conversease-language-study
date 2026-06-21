@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Requesting Service Help di Indonesia.
+  caption: 'Konteks percakapan nyata: Requesting Service Help.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Could you help me?
+  alt: Cuplikan visual service male untuk frasa Could you help me?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What do you need?
+  alt: Cuplikan visual service male untuk frasa What do you need?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Can you show me where the batteries are?
+  alt: Cuplikan visual service male untuk frasa Can you show me where the batteries are?.

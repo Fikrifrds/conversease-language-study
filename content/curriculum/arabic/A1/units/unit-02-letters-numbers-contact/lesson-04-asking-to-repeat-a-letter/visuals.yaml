@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Rami dan Zayd faceless berlatih meminta pengulangan huruf dari jarak sopan di kelas Indonesia.
-  caption: Minta pengulangan huruf dengan sopan saat belum terdengar jelas.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking to Repeat a Letter di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking to Repeat a Letter.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-lam-asma.png
-    width: 1254
-    height: 1254
-    label: لم أَسْمَعُ الْحَرْفَ
-    alt: Rami faceless berpakaian sopan memberi isyarat belum mendengar jelas.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-bibut.png
-    width: 1254
-    height: 1254
-    label: بِبُطْءٍ مِنْ فَضْلِكَ
-    alt: Rami faceless meminta pengulangan dengan pelan di meja kelas.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/card-qultu.png
-    width: 1254
-    height: 1254
-    label: نَعَمْ، قُلْتُ بَاءً
-    alt: Zayd faceless mengonfirmasi pengulangan huruf dengan sopan.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: لم أَسْمَعُ الْحَرْفَ
+  alt: Cuplikan visual classroom male untuk frasa لم أَسْمَعُ الْحَرْفَ.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: بِبُطْءٍ مِنْ فَضْلِكَ
+  alt: Cuplikan visual classroom male untuk frasa بِبُطْءٍ مِنْ فَضْلِكَ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَلْ قُلْتَ بَاءً؟
+  alt: Cuplikan visual classroom male untuk frasa هَلْ قُلْتَ بَاءً؟.

@@ -1,0 +1,24 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Summarizing What You Heard di Indonesia.
+  caption: 'Konteks percakapan nyata: Summarizing What You Heard.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: 'So, to summarize: ...'
+  alt: 'Cuplikan visual classroom male untuk frasa So, to summarize: ....'
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: The decision is to propose a phased rollout with clear metrics.
+  alt: Cuplikan visual classroom male untuk frasa The decision is to propose a phased rollout with clear
+    metrics..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The open questions are around resourcing and internal alignment.
+  alt: Cuplikan visual classroom male untuk frasa The open questions are around resourcing and internal
+    alignment..

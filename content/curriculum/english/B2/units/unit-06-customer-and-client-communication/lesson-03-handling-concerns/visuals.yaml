@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Handling Concerns di Indonesia.
+  caption: 'Konteks percakapan nyata: Handling Concerns.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I understand the concern.
+  alt: Cuplikan visual service male untuk frasa I understand the concern..
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Could you clarify what disruption you expect?
+  alt: Cuplikan visual service male untuk frasa Could you clarify what disruption you expect?.
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: To reduce the risk, we can send a weekly summary.
+  alt: Cuplikan visual service male untuk frasa To reduce the risk, we can send a weekly summary..

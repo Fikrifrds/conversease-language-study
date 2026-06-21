@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Days of the Week di Indonesia.
+  caption: 'Konteks percakapan nyata: Days of the Week.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أي يَوْمَ الْيَوْمُ؟
+  alt: Cuplikan visual classroom male untuk frasa أي يَوْمَ الْيَوْمُ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: الْيَوْمُ الْإِثْنَيْنِ
+  alt: Cuplikan visual classroom male untuk frasa الْيَوْمُ الْإِثْنَيْنِ.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: غَدًا الثُّلَاثَاءُ
+  alt: Cuplikan visual classroom male untuk frasa غَدًا الثُّلَاثَاءُ.

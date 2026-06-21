@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/health-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing Simple Symptoms di Indonesia.
+  caption: 'Konteks percakapan nyata: Describing Simple Symptoms.'
+cards:
+- src: /images/lesson-visual-library/health-male/card-1.png
+  width: 1254
+  height: 1254
+  label: عِنْدِي أَلَمٌ فِي الْحَلْقِ.
+  alt: Cuplikan visual health male untuk frasa عِنْدِي أَلَمٌ فِي الْحَلْقِ..
+- src: /images/lesson-visual-library/health-male/card-2.png
+  width: 1254
+  height: 1254
+  label: لَدَيَّ سُعَالٌ خَفِيفٌ.
+  alt: Cuplikan visual health male untuk frasa لَدَيَّ سُعَالٌ خَفِيفٌ..
+- src: /images/lesson-visual-library/health-male/card-3.png
+  width: 1254
+  height: 1254
+  label: دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.
+  alt: Cuplikan visual health male untuk frasa دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا..

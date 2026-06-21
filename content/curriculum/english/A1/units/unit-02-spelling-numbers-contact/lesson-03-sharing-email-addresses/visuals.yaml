@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Officer dan Ben faceless berlatih alamat email di meja registrasi kelas Indonesia.
-  caption: Sebutkan alamat email secara pelan tanpa menampilkan teks email di gambar.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.
+  caption: 'Konteks percakapan nyata: Sharing Email Addresses.'
 cards:
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-email-address.png
-    width: 1254
-    height: 1254
-    label: What is your email address?
-    alt: Officer faceless bertanya alamat email dengan layar tablet kosong di meja registrasi.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-spell-that.png
-    width: 1254
-    height: 1254
-    label: Can you spell that, please?
-    alt: Ben faceless mengeja bagian email secara pelan tanpa huruf terlihat.
-  - src: /images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/card-is-that-correct.png
-    width: 1254
-    height: 1254
-    label: Is that correct?
-    alt: Ben faceless mengonfirmasi alamat email di meja registrasi.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What is your email address?
+  alt: Cuplikan visual classroom male untuk frasa What is your email address?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: It's ben dot rama at example dot com.
+  alt: Cuplikan visual classroom male untuk frasa It's ben dot rama at example dot com..
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Can you spell that, please?
+  alt: Cuplikan visual classroom male untuk frasa Can you spell that, please?.

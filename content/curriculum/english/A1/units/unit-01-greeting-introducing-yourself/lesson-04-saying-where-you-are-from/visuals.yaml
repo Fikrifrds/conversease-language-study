@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
-  alt: Arif dan Omar faceless membicarakan asal dari jarak sopan di kelas Indonesia.
-  caption: Sebutkan asal dan tanyakan balik dalam percakapan kelas nyata.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying Where You Are From di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying Where You Are From.'
 cards:
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-im-from.png
-    width: 1254
-    height: 1254
-    label: I'm from ...
-    alt: Arif faceless berpakaian sopan menyebutkan asal di kelas.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-i-live-in.png
-    width: 1254
-    height: 1254
-    label: I live in ...
-    alt: Omar faceless menyebutkan tempat tinggal dengan latar jendela kelas Indonesia.
-  - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/card-how-about-you.png
-    width: 1254
-    height: 1254
-    label: How about you?
-    alt: Arif faceless bertanya balik dengan sopan di kelas Indonesia.
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'm from ...
+  alt: Cuplikan visual travel male untuk frasa I'm from ....
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: I live in ...
+  alt: Cuplikan visual travel male untuk frasa I live in ....
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: How about you?
+  alt: Cuplikan visual travel male untuk frasa How about you?.

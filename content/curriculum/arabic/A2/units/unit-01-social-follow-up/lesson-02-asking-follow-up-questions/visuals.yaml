@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking Follow-up Questions di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking Follow-up Questions.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟
+  alt: Cuplikan visual classroom male untuk frasa مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: لِمَاذَا؟
+  alt: Cuplikan visual classroom male untuk frasa لِمَاذَا؟.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.
+  alt: Cuplikan visual classroom male untuk frasa لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ..

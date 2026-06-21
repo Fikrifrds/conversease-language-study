@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Problem Solving Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.
+  alt: Cuplikan visual workplace male untuk frasa سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.
+  alt: Cuplikan visual workplace male untuk frasa السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.
+  alt: Cuplikan visual workplace male untuk frasa أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا..

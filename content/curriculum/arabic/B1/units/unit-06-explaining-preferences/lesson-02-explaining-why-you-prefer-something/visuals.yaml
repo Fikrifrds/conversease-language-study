@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-female/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless perempuan untuk konteks Explaining Why You Prefer Something di Indonesia.
+  caption: 'Konteks percakapan nyata: Explaining Why You Prefer Something.'
+cards:
+- src: /images/lesson-visual-library/classroom-female/card-1.png
+  width: 1254
+  height: 1254
+  label: أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.
+  alt: Cuplikan visual classroom female untuk frasa أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ..
+- src: /images/lesson-visual-library/classroom-female/card-2.png
+  width: 1254
+  height: 1254
+  label: يُنَاسِبُ هَدَفَنَا أَكْثَرَ.
+  alt: Cuplikan visual classroom female untuk frasa يُنَاسِبُ هَدَفَنَا أَكْثَرَ..
+- src: /images/lesson-visual-library/classroom-female/card-3.png
+  width: 1254
+  height: 1254
+  label: رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.
+  alt: Cuplikan visual classroom female untuk frasa رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا..

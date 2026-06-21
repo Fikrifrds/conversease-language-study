@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Coaching with Questions di Indonesia.
+  caption: 'Konteks percakapan nyata: Coaching with Questions.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: What options do you see right now?
+  alt: Cuplikan visual workplace male untuk frasa What options do you see right now?.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What would success look like for the pilot?
+  alt: Cuplikan visual workplace male untuk frasa What would success look like for the pilot?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: What's the smallest next step you can take today?
+  alt: Cuplikan visual workplace male untuk frasa What's the smallest next step you can take today?.

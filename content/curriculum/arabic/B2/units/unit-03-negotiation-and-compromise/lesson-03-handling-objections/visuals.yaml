@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Handling Objections di Indonesia.
+  caption: 'Konteks percakapan nyata: Handling Objections.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى التَّعَامُلُ مَعَ الِاعْتِرَاضَاتِ وَاضِحًا.
+  alt: Cuplikan visual workplace male untuk frasa أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى التَّعَامُلُ مَعَ الِاعْتِرَاضَاتِ
+    وَاضِحًا..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
+  alt: Cuplikan visual workplace male untuk frasa أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
+  alt: Cuplikan visual workplace male untuk frasa أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ..

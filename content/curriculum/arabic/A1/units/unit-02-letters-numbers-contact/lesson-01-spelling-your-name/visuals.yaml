@@ -1,22 +1,22 @@
 hero:
-  src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
-  alt: Muallim dan Ahmad faceless berlatih menulis nama di kelas Indonesia.
-  caption: Tulis dan cek nama dengan huruf Arab sederhana tanpa menampilkan tulisan di gambar.
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.
+  caption: 'Konteks percakapan nyata: Spelling Your Name.'
 cards:
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-kayfa-taktub.png
-    width: 1254
-    height: 1254
-    label: كَيْفَ تَكْتُبُ اِسْمَكَ؟
-    alt: Muallim faceless bertanya cara menulis nama di depan papan tulis kosong.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-aktubu-ismi.png
-    width: 1254
-    height: 1254
-    label: أَكْتُبُ اسْمِي ...
-    alt: Ahmad faceless menulis nama pada halaman kosong di kelas.
-  - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/card-hal-hadha-sahih.png
-    width: 1254
-    height: 1254
-    label: هَلْ هَذَا صَحِيحٌ؟
-    alt: Ahmad faceless bertanya apakah tulisan sudah benar di kelas.
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: كَيْفَ تَكْتُبُ اِسْمَكَ؟
+  alt: Cuplikan visual classroom male untuk frasa كَيْفَ تَكْتُبُ اِسْمَكَ؟.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أَكْتُبُ اسْمِي ...
+  alt: Cuplikan visual classroom male untuk frasa أَكْتُبُ اسْمِي ....
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: هَذَا حَرْفُ ...
+  alt: Cuplikan visual classroom male untuk frasa هَذَا حَرْفُ ....

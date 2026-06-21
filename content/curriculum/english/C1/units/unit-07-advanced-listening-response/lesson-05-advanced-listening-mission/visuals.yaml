@@ -1,0 +1,23 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Listening Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Advanced Listening Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: It sounds like timing and risk are the main concerns.
+  alt: Cuplikan visual classroom male untuk frasa It sounds like timing and risk are the main concerns..
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: 'Let me make sure I got this: ...'
+  alt: 'Cuplikan visual classroom male untuk frasa Let me make sure I got this: ....'
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: The decision is to propose a phased rollout with clear metrics.
+  alt: Cuplikan visual classroom male untuk frasa The decision is to propose a phased rollout with clear
+    metrics..

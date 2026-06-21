@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Understanding Simple Directions di Indonesia.
+  caption: 'Konteks percakapan nyata: Understanding Simple Directions.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: اِذْهَبْ يَمِينًا
+  alt: Cuplikan visual travel male untuk frasa اِذْهَبْ يَمِينًا.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: اِذْهَبْ يَسَارًا
+  alt: Cuplikan visual travel male untuk frasa اِذْهَبْ يَسَارًا.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: إِلَى الْأَمَامِ
+  alt: Cuplikan visual travel male untuk frasa إِلَى الْأَمَامِ.

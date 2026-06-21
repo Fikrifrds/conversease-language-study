@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Problem Solving Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Problem Solving Mission.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: 'Quick check: what''s the issue?'
+  alt: 'Cuplikan visual workplace male untuk frasa Quick check: what''s the issue?.'
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: There's a problem with the login page.
+  alt: Cuplikan visual workplace male untuk frasa There's a problem with the login page..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: We could roll back now because it's quick.
+  alt: Cuplikan visual workplace male untuk frasa We could roll back now because it's quick..

@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/service-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Prices di Indonesia.
+  caption: 'Konteks percakapan nyata: Asking About Prices.'
+cards:
+- src: /images/lesson-visual-library/service-male/card-1.png
+  width: 1254
+  height: 1254
+  label: How much is the coffee?
+  alt: Cuplikan visual service male untuk frasa How much is the coffee?.
+- src: /images/lesson-visual-library/service-male/card-2.png
+  width: 1254
+  height: 1254
+  label: It is twenty thousand rupiah.
+  alt: Cuplikan visual service male untuk frasa It is twenty thousand rupiah..
+- src: /images/lesson-visual-library/service-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Twenty thousand rupiah?
+  alt: Cuplikan visual service male untuk frasa Twenty thousand rupiah?.

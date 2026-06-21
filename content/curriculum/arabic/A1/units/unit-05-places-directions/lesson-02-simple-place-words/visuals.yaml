@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/travel-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Simple Place Words di Indonesia.
+  caption: 'Konteks percakapan nyata: Simple Place Words.'
+cards:
+- src: /images/lesson-visual-library/travel-male/card-1.png
+  width: 1254
+  height: 1254
+  label: الْبَيْتُ
+  alt: Cuplikan visual travel male untuk frasa الْبَيْتُ.
+- src: /images/lesson-visual-library/travel-male/card-2.png
+  width: 1254
+  height: 1254
+  label: الْمَدْرَسَةُ
+  alt: Cuplikan visual travel male untuk frasa الْمَدْرَسَةُ.
+- src: /images/lesson-visual-library/travel-male/card-3.png
+  width: 1254
+  height: 1254
+  label: السُّوقُ
+  alt: Cuplikan visual travel male untuk frasa السُّوقُ.

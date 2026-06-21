@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/health-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making an Appointment di Indonesia.
+  caption: 'Konteks percakapan nyata: Making an Appointment.'
+cards:
+- src: /images/lesson-visual-library/health-male/card-1.png
+  width: 1254
+  height: 1254
+  label: I'd like to make an appointment.
+  alt: Cuplikan visual health male untuk frasa I'd like to make an appointment..
+- src: /images/lesson-visual-library/health-male/card-2.png
+  width: 1254
+  height: 1254
+  label: What day works for you?
+  alt: Cuplikan visual health male untuk frasa What day works for you?.
+- src: /images/lesson-visual-library/health-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Is tomorrow afternoon okay?
+  alt: Cuplikan visual health male untuk frasa Is tomorrow afternoon okay?.

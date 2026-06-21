@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying You Do Not Understand di Indonesia.
+  caption: 'Konteks percakapan nyata: Saying You Do Not Understand.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: Sorry, I don't understand.
+  alt: Cuplikan visual workplace male untuk frasa Sorry, I don't understand..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Can you repeat that, please?
+  alt: Cuplikan visual workplace male untuk frasa Can you repeat that, please?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: Open my book?
+  alt: Cuplikan visual workplace male untuk frasa Open my book?.

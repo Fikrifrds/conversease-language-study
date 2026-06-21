@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/workplace-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Goals and Preferences di Indonesia.
+  caption: 'Konteks percakapan nyata: Review Goals and Preferences.'
+cards:
+- src: /images/lesson-visual-library/workplace-male/card-1.png
+  width: 1254
+  height: 1254
+  label: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  alt: Cuplikan visual workplace male untuk frasa هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
+  width: 1254
+  height: 1254
+  label: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  alt: Cuplikan visual workplace male untuk frasa أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
+  width: 1254
+  height: 1254
+  label: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  alt: Cuplikan visual workplace male untuk frasa سَأُقَارِنُ بَيْنَ خِيَارَيْنِ..

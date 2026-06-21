@@ -1,0 +1,22 @@
+hero:
+  src: /images/lesson-visual-library/classroom-male/hero.png
+  width: 1672
+  height: 941
+  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Small Talk Mission di Indonesia.
+  caption: 'Konteks percakapan nyata: Small Talk Mission.'
+cards:
+- src: /images/lesson-visual-library/classroom-male/card-1.png
+  width: 1254
+  height: 1254
+  label: How's it going?
+  alt: Cuplikan visual classroom male untuk frasa How's it going?.
+- src: /images/lesson-visual-library/classroom-male/card-2.png
+  width: 1254
+  height: 1254
+  label: Did you sleep well?
+  alt: Cuplikan visual classroom male untuk frasa Did you sleep well?.
+- src: /images/lesson-visual-library/classroom-male/card-3.png
+  width: 1254
+  height: 1254
+  label: I stayed up late.
+  alt: Cuplikan visual classroom male untuk frasa I stayed up late..
