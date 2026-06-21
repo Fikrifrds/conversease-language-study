@@ -205,7 +205,7 @@ function UnlockedBody({ lesson }: { lesson: LessonContent }) {
                 />
                 <figcaption
                   dir={isArabic ? "rtl" : "auto"}
-                  className={`px-3 py-3 text-sm font-semibold text-ink ${isArabic ? "text-right text-base" : ""}`}
+                  className={`break-words px-3 py-3 text-sm font-semibold leading-6 text-ink ${isArabic ? "text-right text-base leading-8" : ""}`}
                 >
                   {visual.label}
                 </figcaption>

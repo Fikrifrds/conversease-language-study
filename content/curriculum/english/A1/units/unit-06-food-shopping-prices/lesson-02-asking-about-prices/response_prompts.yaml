@@ -4,9 +4,9 @@ prompts:
   acceptable_variations:
   - How much is the coffee?
 - prompt: Confirm the price.
-  target_response: Two dollars?
+  target_response: Twenty thousand rupiah?
   acceptable_variations:
-  - Two dollars?
+  - Twenty thousand rupiah?
 - prompt: Ask the price of cake.
   target_response: How much is the cake?
   acceptable_variations:

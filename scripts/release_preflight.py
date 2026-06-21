@@ -385,7 +385,176 @@ def check_curriculum(root: Path = REPO_ROOT) -> CheckResult:
     return CheckResult(
         name="curriculum_content",
         status="pass",
-        message="A1 curriculum and final evaluation content are valid.",
+        message="Authored curriculum structure and English final evaluation content are valid.",
+    )
+
+
+def check_content_release_readiness(root: Path = REPO_ROOT) -> CheckResult:
+    ensure_api_import_path(root)
+    try:
+        from app.data.content_readiness import all_content_readiness_summary
+
+        readiness = all_content_readiness_summary()
+    except Exception as exc:
+        return CheckResult(
+            name="content_release_readiness",
+            status="fail",
+            message="Content release readiness could not run.",
+            details={"error": safe_exception_message(exc)},
+        )
+
+    summary = readiness.get("summary", {})
+    levels = []
+    for level in readiness.get("levels", []):
+        course = level.get("course", {})
+        level_summary = level.get("summary", {})
+        levels.append(
+            {
+                "language": course.get("language", ""),
+                "level_code": course.get("level_code", ""),
+                "planned_lesson_count": level_summary.get("planned_lesson_count", 0),
+                "text_ready_count": level_summary.get("text_ready_count", 0),
+                "audio_ready_count": level_summary.get("audio_ready_count", 0),
+                "production_ready_count": level_summary.get("production_ready_count", 0),
+                "missing_content_count": level_summary.get("missing_content_count", 0),
+                "missing_audio_count": level_summary.get("missing_audio_count", 0),
+            }
+        )
+
+    missing_content = int(summary.get("missing_content_count", 0) or 0)
+    missing_audio = int(summary.get("missing_audio_count", 0) or 0)
+    planned_lessons = int(summary.get("planned_lesson_count", 0) or 0)
+    production_ready = int(summary.get("production_ready_count", 0) or 0)
+
+    details = {
+        "summary": summary,
+        "levels": levels,
+    }
+    if missing_content or missing_audio or production_ready != planned_lessons:
+        return CheckResult(
+            name="content_release_readiness",
+            status="fail",
+            message="Full release requires every planned lesson to be text-ready, audio-ready, and production-ready.",
+            details=details,
+        )
+
+    return CheckResult(
+        name="content_release_readiness",
+        status="pass",
+        message="Every planned lesson is text-ready, audio-ready, and production-ready.",
+        details=details,
+    )
+
+
+def content_audio_requirements(readiness: dict[str, Any]) -> dict[str, Any]:
+    missing_levels: list[dict[str, Any]] = []
+    languages: set[str] = set()
+
+    for level in readiness.get("levels", []):
+        course = level.get("course", {})
+        summary = level.get("summary", {})
+        missing_audio = int(summary.get("missing_audio_count", 0) or 0)
+        if missing_audio <= 0:
+            continue
+
+        language = str(course.get("language") or "").strip().lower()
+        if language:
+            languages.add(language)
+        missing_levels.append(
+            {
+                "language": language,
+                "level_code": course.get("level_code", ""),
+                "missing_audio_count": missing_audio,
+                "planned_lesson_count": summary.get("planned_lesson_count", 0),
+                "audio_ready_count": summary.get("audio_ready_count", 0),
+            }
+        )
+
+    summary = readiness.get("summary", {})
+    missing_audio_count = int(
+        summary.get("missing_audio_count", sum(level["missing_audio_count"] for level in missing_levels)) or 0
+    )
+    return {
+        "missing_audio_count": missing_audio_count,
+        "languages": sorted(languages),
+        "levels": missing_levels,
+    }
+
+
+def missing_audio_generation_fields(settings: Any, requirements: dict[str, Any]) -> list[str]:
+    if int(requirements.get("missing_audio_count", 0) or 0) <= 0:
+        return []
+
+    missing_fields: list[str] = []
+    for field_name in ("s3_bucket", "aws_access_key_id", "aws_secret_access_key", "aws_region"):
+        if not getattr(settings, field_name, ""):
+            missing_fields.append(field_name)
+
+    languages = set(requirements.get("languages", []))
+    if "english" in languages and not getattr(settings, "minimax_api_key", ""):
+        missing_fields.append("minimax_api_key")
+    if "arabic" in languages and not getattr(settings, "elevenlabs_api_key", ""):
+        missing_fields.append("elevenlabs_api_key")
+
+    unknown_languages = sorted(language for language in languages if language not in {"english", "arabic"})
+    missing_fields.extend(f"tts_provider_for_{language}" for language in unknown_languages)
+    return missing_fields
+
+
+def check_audio_generation_config(settings: Optional[Any], root: Path = REPO_ROOT) -> CheckResult:
+    if settings is None:
+        return CheckResult(
+            name="audio_generation_config",
+            status="skip",
+            message="Audio generation configuration could not be checked because runtime configuration failed.",
+        )
+
+    ensure_api_import_path(root)
+    try:
+        from app.data.content_readiness import all_content_readiness_summary
+
+        readiness = all_content_readiness_summary()
+    except Exception as exc:
+        return CheckResult(
+            name="audio_generation_config",
+            status="fail",
+            message="Audio generation configuration could not be checked.",
+            details={"error": safe_exception_message(exc)},
+        )
+
+    requirements = content_audio_requirements(readiness)
+    missing_fields = missing_audio_generation_fields(settings, requirements)
+    storage_fields = ("s3_bucket", "aws_access_key_id", "aws_secret_access_key", "aws_region")
+    storage_missing = [field_name for field_name in storage_fields if not getattr(settings, field_name, "")]
+    details = {
+        "missing_audio_count": requirements["missing_audio_count"],
+        "missing_audio_levels": requirements["levels"],
+        "required_languages": requirements["languages"],
+        "storage_configured": not storage_missing,
+        "missing_fields": missing_fields,
+    }
+
+    if requirements["missing_audio_count"] <= 0:
+        return CheckResult(
+            name="audio_generation_config",
+            status="pass",
+            message="No lesson audio generation is required for the current content release.",
+            details=details,
+        )
+
+    if missing_fields:
+        return CheckResult(
+            name="audio_generation_config",
+            status="fail",
+            message="Missing lesson audio cannot be regenerated with the current TTS/storage configuration.",
+            details=details,
+        )
+
+    return CheckResult(
+        name="audio_generation_config",
+        status="pass",
+        message="TTS providers and S3 storage are configured for the remaining lesson audio generation.",
+        details=details,
     )
 
 
@@ -535,6 +704,8 @@ def run_preflight(root: Path = REPO_ROOT) -> list[CheckResult]:
         check_database_connectivity(settings),
         check_migration_head(settings, root),
         check_curriculum(root),
+        check_content_release_readiness(root),
+        check_audio_generation_config(settings, root),
         check_email_templates(settings, root),
         check_backup_tooling(root, production=production),
         check_optional_automation_integrations(settings),

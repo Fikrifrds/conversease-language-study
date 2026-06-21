@@ -1,7 +1,7 @@
 # Transcript Translation
 
-- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ. -> Skill terpenting apa yang sedang kamu review sekarang? Saya ingin fokus pada latihan tes akhir.
-- **Noura:** أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ. -> Saya mengulang skill latihan tes akhir karena itu penting dalam diskusi.
+- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. -> Keterampilan terpenting apa yang sedang kamu review sekarang? Saya ingin fokus pada latihan tes akhir.
+- **Noura:** أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ. -> Saya mereview latihan tes akhir karena itu membantu saya bersiap.
 - **Layla:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
 - **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
 - **Layla:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?

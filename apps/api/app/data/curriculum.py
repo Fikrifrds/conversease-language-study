@@ -72,6 +72,7 @@ REQUIRED_LESSON_FILES = (
     "quiz.yaml",
     "conversation_coach_roleplay.yaml",
     "writing_support.md",
+    "visuals.yaml",
 )
 
 FINAL_EVALUATION_REQUIRED_FIELDS = (
@@ -382,17 +383,20 @@ def validate_curriculum_content() -> list[str]:
     issues: list[str] = []
     seen_slugs: set[str] = set()
 
-    # Content structure is validated for every level that has content; production
-    # gates (published status, tracker review/publish) are enforced for A1 only,
-    # since higher levels are authored but not yet production-reviewed.
-    for course in all_courses():
+    # Content structure is validated for every authored course, including
+    # Arabic. The legacy level-test files are still English-level scoped, so
+    # final evaluation validation remains limited to English until tests become
+    # language-scoped.
+    for course in all_authored_courses():
+        language = str(course.get("language") or "english")
         level_code = course["level_code"]
-        is_production_level = level_code == LEVEL_CODE
-        evaluation = load_final_evaluation(level_code)
-        if evaluation is None:
-            issues.append(f"Missing final evaluation file for level: {level_code}")
-        else:
-            issues.extend(validate_final_evaluation(evaluation, level_code))
+        is_production_level = language == "english" and level_code == LEVEL_CODE
+        if language == "english":
+            evaluation = load_final_evaluation(level_code)
+            if evaluation is None:
+                issues.append(f"Missing final evaluation file for level: {level_code}")
+            else:
+                issues.extend(validate_final_evaluation(evaluation, level_code))
 
         for unit in course["units"]:
             if is_production_level and unit.get("status") != "published":

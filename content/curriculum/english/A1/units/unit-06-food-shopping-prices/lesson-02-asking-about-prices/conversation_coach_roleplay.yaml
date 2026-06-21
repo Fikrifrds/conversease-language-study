@@ -17,15 +17,16 @@ turns:
       - much
       - coffee
       - "?"
-  - coach: It is two dollars.
+  - coach: It is twenty thousand rupiah.
     hint: Konfirmasi harga.
-    sample_answer: Two dollars?
+    sample_answer: Twenty thousand rupiah?
     focus: Price confirmation
     expected_keywords:
-      - two
-      - dollars
+      - twenty
+      - thousand
+      - rupiah
       - "?"
-  - coach: Yes, two dollars.
+  - coach: Yes, twenty thousand rupiah.
     hint: Tanyakan harga cake.
     sample_answer: How much is the cake?
     focus: Second price
@@ -34,14 +35,14 @@ turns:
       - much
       - cake
       - "?"
-  - coach: It is three dollars.
+  - coach: It is twenty-five thousand rupiah.
     hint: Tutup dengan thank you.
     sample_answer: Okay. Thank you.
     focus: Closing
     expected_keywords: []
 target_phrases:
   - How much is the coffee?
-  - Two dollars?
+  - Twenty thousand rupiah?
   - How much is the cake?
   - Thank you.
 rubric:

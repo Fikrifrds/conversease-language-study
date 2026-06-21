@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Clarification di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Clarification.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: Could you clarify which sections you need?
-  alt: Cuplikan visual travel male untuk frasa Could you clarify which sections you need?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa Could you clarify which sections you need?.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: Just to confirm, you want the latest numbers too, right?
-  alt: Cuplikan visual travel male untuk frasa Just to confirm, you want the latest numbers too, right?.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual workplace male untuk frasa Just to confirm, you want the latest numbers too, right?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: Do you mean the summary or the full report?
-  alt: Cuplikan visual travel male untuk frasa Do you mean the summary or the full report?.
+  alt: Cuplikan visual workplace male untuk frasa Do you mean the summary or the full report?.

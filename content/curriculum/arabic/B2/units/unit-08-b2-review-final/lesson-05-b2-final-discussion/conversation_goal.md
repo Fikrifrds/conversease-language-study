@@ -1,10 +1,10 @@
 # Target Percakapan
 
-Latih percakapan Arab B2 untuk diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.
+Latih percakapan Arab B2 untuk menjalani diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.
 
 Kamu akan berlatih mengatakan:
 
-- أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

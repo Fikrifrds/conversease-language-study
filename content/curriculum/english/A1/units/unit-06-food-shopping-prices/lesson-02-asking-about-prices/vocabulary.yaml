@@ -8,6 +8,6 @@ vocabulary:
 - word: much
   meaning_id: 'bagian dari frasa: Berapa harga kopinya?'
   usage_note: 'Muncul dalam frasa lesson: "How much is the coffee?"'
-- word: two
-  meaning_id: 'bagian dari frasa: Harganya dua dolar.'
-  usage_note: 'Muncul dalam frasa lesson: "It is two dollars."'
+- word: rupiah
+  meaning_id: mata uang rupiah
+  usage_note: 'Muncul dalam frasa lesson: "It is twenty thousand rupiah."'

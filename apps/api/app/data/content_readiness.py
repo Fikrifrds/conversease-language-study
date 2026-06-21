@@ -114,6 +114,13 @@ REQUIRED_CONTENT_ITEMS = (
         "is_audio": False,
     },
     {
+        "key": "visuals",
+        "label": "Lesson visuals",
+        "filename": "visuals.yaml",
+        "tracker_column": None,
+        "is_audio": False,
+    },
+    {
         "key": "audio_manifest",
         "label": "Audio manifest",
         "filename": "audio_manifest.yaml",

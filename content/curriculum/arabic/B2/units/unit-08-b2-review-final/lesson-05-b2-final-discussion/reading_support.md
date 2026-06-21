@@ -2,7 +2,7 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ. -> Saya mengulang skill diskusi akhir karena itu penting dalam diskusi.
+- أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى. -> Saya mereview diskusi akhir karena itu menggabungkan keterampilan level ini.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya juga bisa mengelola percakapan profesional dengan jelas.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Jika muncul keberatan, saya akan menanggapinya dengan tenang.

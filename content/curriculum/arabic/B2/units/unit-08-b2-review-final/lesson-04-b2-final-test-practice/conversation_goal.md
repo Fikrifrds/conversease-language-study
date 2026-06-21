@@ -1,10 +1,10 @@
 # Target Percakapan
 
-Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.
+Latih percakapan Arab B2 untuk mempersiapkan tes akhir dengan alasan, contoh, respons, dan rekomendasi.
 
 Kamu akan berlatih mengatakan:
 
-- أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

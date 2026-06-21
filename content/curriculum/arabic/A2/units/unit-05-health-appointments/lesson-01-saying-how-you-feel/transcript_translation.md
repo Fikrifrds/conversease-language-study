@@ -7,3 +7,4 @@
 - **Maryam:** مُنْذُ هَذَا الصَّبَاحِ. -> Sejak pagi ini.
 - **Fatimah:** هَلْ عِنْدَكِ مَوْعِدٌ؟ -> Apakah kamu punya janji?
 - **Maryam:** لَا، هَلْ يُمْكِنُنِي أَنْ أَرَى الطَّبِيبَ؟ -> Tidak, bisakah saya menemui dokter?
+- **Fatimah:** نَعَمْ، تَفَضَّلِي. سَأُسَجِّلُ اسْمَكِ الآنَ. -> Ya, silakan. Saya akan mencatat namamu sekarang.

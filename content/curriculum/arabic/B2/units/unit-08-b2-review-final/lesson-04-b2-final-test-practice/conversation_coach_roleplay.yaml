@@ -1,31 +1,32 @@
 scenario_key: arabic_b2_b2_final_test_practice
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبُ الِاخْتِبَارِ
+opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبِ الِاخْتِبَارِ
   النِّهَائِيِّ.
-learner_goal: Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.
+learner_goal: Latih percakapan Arab B2 untuk mempersiapkan tes akhir dengan alasan, contoh, respons, dan
+  rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبُ الِاخْتِبَارِ
+- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبِ الِاخْتِبَارِ
     النِّهَائِيِّ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا
-    مُهِمَّةٌ فِي النِّقَاشِ.'
-  sample_answer: أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي
+    عَلَى الِاسْتِعْدَادِ.'
+  sample_answer: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.
   focus: Membuka review.
   expected_keywords:
   - أُرَاجِعُ
-  - مَهَارَةَ
-  - تَدْرِيبُ
+  - تَدْرِيبَ
   - الِاخْتِبَارِ
   - النِّهَائِيِّ
-  indonesian_explanation: Saya mengulang skill latihan tes akhir karena itu penting dalam diskusi.
+  - لِأَنَّهُ
+  indonesian_explanation: Saya mereview latihan tes akhir karena itu membantu saya bersiap.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  focus: Mereview argument skill.
+  focus: Mereview kemampuan menyusun argumen.
   expected_keywords:
   - أَسْتَطِيعُ
   - أَنْ
@@ -36,7 +37,7 @@ turns:
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
   sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  focus: Mereview professional skill.
+  focus: Mereview kemampuan percakapan profesional.
   expected_keywords:
   - أَسْتَطِيعُ
   - أَيْضًا
@@ -47,7 +48,7 @@ turns:
 - coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
   hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
   sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  focus: Mereview counterpoint skill.
+  focus: Mereview respons terhadap keberatan.
   expected_keywords:
   - إِذَا
   - ظَهَرَ
@@ -56,7 +57,7 @@ turns:
   - عَلَيْهِ
   indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
 target_phrases:
-- أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

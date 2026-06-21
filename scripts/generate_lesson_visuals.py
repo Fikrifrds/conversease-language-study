@@ -157,10 +157,6 @@ def classify_scene(lesson_dir: Path, lesson: dict[str, Any], *, language: str, g
 
     if has_any(text, ("health", "symptom", "appointment", "clinic", "doctor", "nurse")):
         category = "health"
-    elif has_any(text, ("travel", "transport", "ticket", "departure", "driver", "direction", "place", "where", "route")):
-        category = "travel"
-    elif has_any(text, ("food", "shopping", "shop", "price", "drink", "item", "service", "customer", "client", "buying", "cafe")):
-        category = "service"
     elif has_any(
         text,
         (
@@ -172,7 +168,6 @@ def classify_scene(lesson_dir: Path, lesson: dict[str, Any], *, language: str, g
             "proposal",
             "feedback",
             "decision",
-            "problem",
             "solution",
             "goals",
             "progress",
@@ -189,9 +184,14 @@ def classify_scene(lesson_dir: Path, lesson: dict[str, Any], *, language: str, g
             "task",
             "update",
             "priorities",
-            "options",
         ),
     ):
+        category = "workplace"
+    elif has_any(text, ("travel", "transport", "ticket", "departure", "driver", "direction", "place", "where", "route")):
+        category = "travel"
+    elif has_any(text, ("food", "shopping", "shop", "price", "drink", "item", "service", "customer", "client", "buying", "cafe")):
+        category = "service"
+    elif has_any(text, ("problem",)):
         category = "workplace"
     else:
         category = "classroom"

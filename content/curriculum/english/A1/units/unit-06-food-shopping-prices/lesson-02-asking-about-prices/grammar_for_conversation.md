@@ -8,8 +8,8 @@ Grammar di lesson ini dipakai untuk menyelesaikan transaksi sederhana, bukan unt
 
 ## Answer with 'It is + price.'
 
-- Example: It is two dollars.
+- Example: It is twenty thousand rupiah.
 
 ## Repeat a price to confirm.
 
-- Example: Two dollars?
+- Example: Twenty thousand rupiah?

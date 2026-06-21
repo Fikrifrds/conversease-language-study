@@ -20,11 +20,13 @@ This document tracks the Conversease MVP release candidate.
 - Admin CMS has a batch audio queue for generating all missing text-ready listening audio or regenerating every text-ready lesson after script edits.
 - Admin A1 final-test review page for beta manual scoring of submitted attempts and official user report updates.
 - Sandbox package activation remains available for local QA only and is disabled in production.
-- Full A1 curriculum with all 40 lessons published across 8 units (greetings, spelling/numbers/contact, daily routine, work/study, places/directions, food/shopping, help/requests, review/final). 32 of 40 lessons are audio-ready; 8 still need audio generation.
-- A2, B1, B2, and C1 curriculum text is complete (40 lessons per level) but not yet published: audio is not generated and publish status is unset in `content/production_tracker.csv`.
+- English A1 curriculum has all 40 lessons published across 8 units (greetings, spelling/numbers/contact, daily routine, work/study, places/directions, food/shopping, help/requests, review/final). Current manifest-level audio readiness is 1 of 40; 39 lessons need listening audio regeneration.
+- English A2, B1, B2, and C1 curriculum text and visuals are complete (40 lessons per level), but current manifest-level audio readiness is 0 of 160 and `content/production_tracker.csv` review/publish fields are unset for those levels.
+- Arabic A1-C1 curriculum text and visuals are complete (200 lessons). Arabic B1-C1 are fully audio-ready (120 of 120); Arabic A1 is 13 of 40 audio-ready and Arabic A2 is 14 of 40 audio-ready, leaving 53 Arabic lessons needing listening audio regeneration.
 - Real Exam system (A1): database-backed templates/sections/items, exam runner UI, automatic scoring for objective items (MCQ, fill-blank, matching), weighted section results, and an admin review queue for speaking/writing responses. The A1 exam is seeded via `apps/api/scripts/seed_a1_exam.py` (32 items per the Real Exam PRD) and listening items need audio generation before public use.
 - API course/lesson data is loaded from `content/curriculum` YAML files and validated by `scripts/validate_curriculum.py`, including required lesson support files and `content/production_tracker.csv`.
 - Content readiness report is available at `scripts/content_readiness_report.py`; audio-specific audit is available at `scripts/audio_readiness_report.py`.
+- Release preflight now blocks full production release unless every planned lesson is text-ready, audio-ready, and production-ready; when lesson audio is missing, it also verifies that the required TTS provider keys and S3 upload configuration are present before regeneration.
 - Published A1 final conversation test is loaded from `content/curriculum/english/A1/final_evaluation.yaml`, validated for weights and minimums, exposed at `/api/level-tests/A1`, and persisted through authenticated attempt start, submit, report, and admin-reviewed scoring endpoints.
 - Production env validation rejects unsafe production defaults and placeholder secrets from `.env.production.example`.
 - API liveness, readiness, and runtime metrics endpoints are available at `/api/health`, `/api/ready`, and `/api/metrics`; readiness verifies database connectivity and Alembic migration head.
@@ -47,6 +49,7 @@ apps/api/.venv/bin/alembic -c apps/api/alembic.ini upgrade head
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m app.db.migration_status
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/content_readiness_report.py --format markdown
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/audio_readiness_report.py --missing-only --text-ready-only
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/regenerate_lesson_audio.py --format table
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/validate_curriculum.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/release_preflight.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python -m ruff check apps/api/app apps/api/tests scripts/release_preflight.py scripts/release_smoke.py scripts/validate_curriculum.py
@@ -64,8 +67,10 @@ CI runs the static and database-backed release gates through `.github/workflows/
 - Manual transfer can support controlled paid beta after `RESEND_API_KEY`, `PAYMENT_ADMIN_API_KEY`, admin email, and Bank Jago account details are configured. Admin approval/rejection sends a user email, records delivery status, and supports resend from the payment detail.
 - Manual transfer checkout links can be reopened by the owning user through `/billing?order_id=<order-id>` to recover instructions and current order status.
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
-- Full public A1 release still needs the remaining 8 A1 lessons audio-ready (text is complete for all 40).
-- Full multi-level release needs A2-C1 audio generated and lessons published; all four levels are text-ready but unpublished.
+- Full public English A1 release still needs the remaining 39 English A1 lessons audio-ready (text and visuals are complete for all 40).
+- Full multi-level English release needs A2-C1 listening audio generated and production tracker review/publish status set; all four levels are text-ready with visuals.
+- Full Arabic release needs 53 A1-A2 listening audio files regenerated; Arabic B1-C1 are currently audio-ready by manifest checks.
+- Lesson audio regeneration needs S3 upload configuration (`S3_BUCKET`, `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `AWS_REGION`), `MINIMAX_API_KEY` for English lesson audio, and `ELEVENLABS_API_KEY` for Arabic lesson audio. Use `scripts/regenerate_lesson_audio.py` without `--execute` for a dry-run target list, then add `--execute` only after confirming provider cost/quotas and storage credentials.
 - A1 Real Exam needs listening audio generated for its items and at least one full QA pass (start → answer all sections → submit → admin review → published result) before exposing it to users.
 - Conversation Coach supports turn-based recorded-audio STT (Whisper via Together by default, AssemblyAI optional) and LLM feedback with deterministic fallback. Verify production AI configuration through `GET /api/admin/ai/status` and `POST /api/admin/ai/test-llm`. Exam speaking uploads are auto-transcribed (best-effort) so admin review shows a transcript next to the audio; official fully-automated speaking assessment remains future work.
 - Admin CMS is file-backed for controlled beta. Full production CMS still needs media/audio asset upload, automated TTS publishing, and draft review workflow before multi-editor editorial operations.

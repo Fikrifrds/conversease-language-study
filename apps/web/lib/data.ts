@@ -1110,7 +1110,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Explain what you are working on and what the next step is in a short, clear way.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
       },
       sections: lessonSections
     },
@@ -1122,7 +1122,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Ask for clarification politely when you are not sure about a task.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
       },
       sections: lessonSections
     },
@@ -1134,7 +1134,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Give a short work update with progress, a plan, and one risk or blocker.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
       },
       sections: lessonSections
     },
@@ -1146,7 +1146,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Join a simple meeting, state your point briefly, and ask for the next step.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
       },
       sections: lessonSections
     },
@@ -1158,7 +1158,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
       },
       sections: lessonSections
     },
@@ -1350,7 +1350,7 @@ export const lessonCatalog = [
       unit: "Explaining Preferences",
       conversationGoal: "Compare two options and ask what the other person prefers.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
+        hero: { src: "/images/lesson-visual-library/classroom-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
       },
       sections: lessonSections
     },
@@ -2070,7 +2070,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
       },
       sections: lessonSections
     },
@@ -2082,7 +2082,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Manage expectations by setting clear boundaries, timelines, and what success looks like.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
       },
       sections: lessonSections
     },
@@ -2094,7 +2094,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
       },
       sections: lessonSections
     },
@@ -2106,7 +2106,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Communicate risk clearly by describing likelihood, impact, and mitigation options.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
       },
       sections: lessonSections
     },
@@ -2118,7 +2118,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
       },
       sections: lessonSections
     },
@@ -2310,7 +2310,7 @@ export const lessonCatalog = [
       unit: "Leadership & Coaching",
       conversationGoal: "Set direction by clarifying priorities, success criteria, and ownership.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
       },
       sections: lessonSections
     },
@@ -3510,7 +3510,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan, langkah, dan hasil yang diharapkan.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Explaining Your Task di Indonesia.", caption: "Konteks percakapan nyata: Explaining Your Task." }
       },
       sections: lessonSections
     },
@@ -3522,7 +3522,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum cukup jelas.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Asking for Clarification di Indonesia.", caption: "Konteks percakapan nyata: Asking for Clarification." }
       },
       sections: lessonSections
     },
@@ -3534,7 +3534,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Giving a Short Update di Indonesia.", caption: "Konteks percakapan nyata: Giving a Short Update." }
       },
       sections: lessonSections
     },
@@ -3546,7 +3546,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan langkah berikutnya.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Joining a Simple Meeting di Indonesia.", caption: "Konteks percakapan nyata: Joining a Simple Meeting." }
       },
       sections: lessonSections
     },
@@ -3558,7 +3558,7 @@ export const lessonCatalog = [
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan menutup dengan action point.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Workplace Mission." }
       },
       sections: lessonSections
     },
@@ -3750,7 +3750,7 @@ export const lessonCatalog = [
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: comparing two options, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
+        hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Comparing Two Options di Indonesia.", caption: "Konteks percakapan nyata: Comparing Two Options." }
       },
       sections: lessonSections
     },
@@ -4348,7 +4348,7 @@ export const lessonCatalog = [
       languageLabel: "Arabic",
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
-      conversationGoal: "Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.",
+      conversationGoal: "Latih percakapan Arab B2 untuk meninjau argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.",
       visuals: {
         hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Arguments and Meetings di Indonesia.", caption: "Konteks percakapan nyata: Review Arguments and Meetings." }
       },
@@ -4360,7 +4360,7 @@ export const lessonCatalog = [
       languageLabel: "Arabic",
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
-      conversationGoal: "Latih percakapan Arab B2 untuk review negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.",
+      conversationGoal: "Latih percakapan Arab B2 untuk meninjau negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.",
       visuals: {
         hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Negotiation and Presenting di Indonesia.", caption: "Konteks percakapan nyata: Review Negotiation and Presenting." }
       },
@@ -4372,7 +4372,7 @@ export const lessonCatalog = [
       languageLabel: "Arabic",
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
-      conversationGoal: "Latih percakapan Arab B2 untuk review informasi dan klien dengan alasan, contoh, respons, dan rekomendasi.",
+      conversationGoal: "Latih percakapan Arab B2 untuk meninjau cara menangani informasi dan klien dengan alasan, contoh, respons, dan rekomendasi.",
       visuals: {
         hero: { src: "/images/lesson-visual-library/service-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Review Information and Clients di Indonesia.", caption: "Konteks percakapan nyata: Review Information and Clients." }
       },
@@ -4384,7 +4384,7 @@ export const lessonCatalog = [
       languageLabel: "Arabic",
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
-      conversationGoal: "Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.",
+      conversationGoal: "Latih percakapan Arab B2 untuk mempersiapkan tes akhir dengan alasan, contoh, respons, dan rekomendasi.",
       visuals: {
         hero: { src: "/images/lesson-visual-library/classroom-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks B2 Final Test Practice di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Test Practice." }
       },
@@ -4396,7 +4396,7 @@ export const lessonCatalog = [
       languageLabel: "Arabic",
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
-      conversationGoal: "Latih percakapan Arab B2 untuk diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.",
+      conversationGoal: "Latih percakapan Arab B2 untuk menjalani diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.",
       visuals: {
         hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks B2 Final Discussion di Indonesia.", caption: "Konteks percakapan nyata: B2 Final Discussion." }
       },
@@ -4470,7 +4470,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk aligning stakeholders dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Aligning Stakeholders di Indonesia.", caption: "Konteks percakapan nyata: Aligning Stakeholders." }
       },
       sections: lessonSections
     },
@@ -4482,7 +4482,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk managing realistic expectations dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Managing Expectations di Indonesia.", caption: "Konteks percakapan nyata: Managing Expectations." }
       },
       sections: lessonSections
     },
@@ -4494,7 +4494,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk handling sensitive feedback tactfully dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Handling Sensitive Feedback di Indonesia.", caption: "Konteks percakapan nyata: Handling Sensitive Feedback." }
       },
       sections: lessonSections
     },
@@ -4506,7 +4506,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk communicating risk without exaggeration dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Communicating Risk di Indonesia.", caption: "Konteks percakapan nyata: Communicating Risk." }
       },
       sections: lessonSections
     },
@@ -4518,7 +4518,7 @@ export const lessonCatalog = [
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk running a strategic workplace conversation dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
+        hero: { src: "/images/lesson-visual-library/workplace-female/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless perempuan untuk konteks Strategic Workplace Mission di Indonesia.", caption: "Konteks percakapan nyata: Strategic Workplace Mission." }
       },
       sections: lessonSections
     },
@@ -4710,7 +4710,7 @@ export const lessonCatalog = [
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk setting direction clearly dengan nuance, struktur, presisi, dan respons profesional.",
       visuals: {
-        hero: { src: "/images/lesson-visual-library/travel-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
+        hero: { src: "/images/lesson-visual-library/workplace-male/hero.png", width: 1672, height: 941, alt: "Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.", caption: "Konteks percakapan nyata: Setting Direction." }
       },
       sections: lessonSections
     },
@@ -5261,16 +5261,16 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم الفكرة: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.", sampleAnswer: "إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.", focus: "Menyiapkan Q&A.", expectedKeywords: ["إِذَا", "كَانَتْ", "هُنَاكَ", "أَسْئِلَةٌ،", "فَسَأُجِيبُ"], indonesianExplanation: "Jika ada pertanyaan, saya akan menjawabnya dengan jelas." },
   ],
   "arabic-b2-b2-final-discussion": [
-    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشُ النِّهَائِيُّ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "مَهَارَةَ", "النِّقَاشُ", "النِّهَائِيُّ", "لِأَنَّهَا"], indonesianExplanation: "Saya mengulang skill diskusi akhir karena itu penting dalam diskusi." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview argument skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview professional skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
-    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview counterpoint skill.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
+    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشِ النِّهَائِيِّ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.", sampleAnswer: "أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "النِّقَاشَ", "النِّهَائِيَّ", "لِأَنَّهُ", "يَجْمَعُ"], indonesianExplanation: "Saya mereview diskusi akhir karena itu menggabungkan keterampilan level ini." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview kemampuan menyusun argumen.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview kemampuan percakapan profesional.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
+    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview respons terhadap keberatan.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
   ],
   "arabic-b2-b2-final-test-practice": [
-    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "مَهَارَةَ", "تَدْرِيبُ", "الِاخْتِبَارِ", "النِّهَائِيِّ"], indonesianExplanation: "Saya mengulang skill latihan tes akhir karena itu penting dalam diskusi." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview argument skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview professional skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
-    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview counterpoint skill.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
+    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.", sampleAnswer: "أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "تَدْرِيبَ", "الِاخْتِبَارِ", "النِّهَائِيِّ", "لِأَنَّهُ"], indonesianExplanation: "Saya mereview latihan tes akhir karena itu membantu saya bersiap." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview kemampuan menyusun argumen.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview kemampuan percakapan profesional.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
+    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview respons terhadap keberatan.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
   ],
   "arabic-b2-clarifying-scope": [
     { coach: "مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ نِطَاقِ النِّقَاشِ.", hint: "Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.", sampleAnswer: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.", focus: "Membuka kontribusi rapat.", expectedKeywords: ["أُرِيدُ", "أَنْ", "أَبْدَأَ", "بِنُقْطَةٍ", "عَنْ"], indonesianExplanation: "Saya ingin mulai dengan poin tentang memperjelas scope diskusi." },
@@ -5429,22 +5429,22 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.", hint: "Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.", sampleAnswer: "بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.", focus: "Merespons informasi baru.", expectedKeywords: ["بَعْدَ", "الْمَعْلُومَاتِ", "الْجَدِيدَةِ،", "تَغَيَّرَ", "رَأْيِي"], indonesianExplanation: "Setelah informasi baru, pendapat saya sedikit berubah." },
   ],
   "arabic-b2-review-arguments-and-meetings": [
-    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "مَهَارَةَ", "مُرَاجَعَةُ", "الْحُجَجِ", "وَالِاجْتِمَاعَاتِ"], indonesianExplanation: "Saya mengulang skill review argumen dan rapat karena itu penting dalam diskusi." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview argument skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview professional skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
-    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview counterpoint skill.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
+    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْحُجَجِ وَالِاجْتِمَاعَاتِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "الْحُجَجَ", "وَالِاجْتِمَاعَاتِ", "لِأَنَّهَا", "مُهِمَّةٌ"], indonesianExplanation: "Saya mereview argumen dan rapat karena itu penting dalam diskusi." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview kemampuan menyusun argumen.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview kemampuan percakapan profesional.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
+    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview respons terhadap keberatan.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
   ],
   "arabic-b2-review-information-and-clients": [
-    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "مَهَارَةَ", "مُرَاجَعَةُ", "الْمَعْلُومَاتِ", "وَالْعُمَلَاءِ"], indonesianExplanation: "Saya mengulang skill review informasi dan klien karena itu penting dalam diskusi." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview argument skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview professional skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
-    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview counterpoint skill.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
+    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّعَامُلِ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "التَّعَامُلَ", "مَعَ", "الْمَعْلُومَاتِ", "وَالْعُمَلَاءِ"], indonesianExplanation: "Saya mereview cara menangani informasi dan klien karena itu penting dalam diskusi." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview kemampuan menyusun argumen.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview kemampuan percakapan profesional.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
+    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview respons terhadap keberatan.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
   ],
   "arabic-b2-review-negotiation-and-presenting": [
-    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُرَاجَعَةُ التَّفَاوُضِ وَالْعَرْضِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ التَّفَاوُضِ وَالْعَرْضِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ التَّفَاوُضِ وَالْعَرْضِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "مَهَارَةَ", "مُرَاجَعَةُ", "التَّفَاوُضِ", "وَالْعَرْضِ"], indonesianExplanation: "Saya mengulang skill review negosiasi dan presentasi karena itu penting dalam diskusi." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview argument skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
-    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview professional skill.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
-    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview counterpoint skill.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
+    { coach: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّفَاوُضِ وَالْعَرْضِ.", hint: "Jawab dengan struktur B2 memakai: أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.", sampleAnswer: "أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.", focus: "Membuka review.", expectedKeywords: ["أُرَاجِعُ", "التَّفَاوُضَ", "وَالْعَرْضَ", "لِأَنَّهُمَا", "مُهِمَّانِ"], indonesianExplanation: "Saya mereview negosiasi dan presentasi karena keduanya penting dalam diskusi." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", sampleAnswer: "أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", focus: "Mereview kemampuan menyusun argumen.", expectedKeywords: ["أَسْتَطِيعُ", "أَنْ", "أُقَدِّمَ", "رَأْيًا", "وَأَدْعَمَهُ"], indonesianExplanation: "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti." },
+    { coach: "استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", hint: "Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", sampleAnswer: "أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", focus: "Mereview kemampuan percakapan profesional.", expectedKeywords: ["أَسْتَطِيعُ", "أَيْضًا", "أَنْ", "أُدِيرَ", "حِوَارًا"], indonesianExplanation: "Saya juga bisa mengelola percakapan profesional dengan jelas." },
+    { coach: "استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", hint: "Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", sampleAnswer: "إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", focus: "Mereview respons terhadap keberatan.", expectedKeywords: ["إِذَا", "ظَهَرَ", "اِعْتِرَاضٌ،", "فَسَأَرُدُّ", "عَلَيْهِ"], indonesianExplanation: "Jika muncul keberatan, saya akan menanggapinya dengan tenang." },
   ],
   "arabic-b2-signposting-clearly": [
     { coach: "كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الِانْتِقَالَاتِ.", hint: "Jawab dengan struktur B2 memakai: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.", sampleAnswer: "سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.", focus: "Membuka presentasi.", expectedKeywords: ["سَأَبْدَأُ", "بِمُقَدِّمَةٍ", "قَصِيرَةٍ", "عَنْ", "تَوْضِيحُ"], indonesianExplanation: "Saya akan mulai dengan pembuka singkat tentang memberi transisi jelas." },
@@ -6040,9 +6040,9 @@ export const coachTurnsByLessonSlug = {
   ],
   "asking-about-prices": [
     { coach: "Hello. Can I help you?", hint: "Tanyakan harga coffee.", sampleAnswer: "How much is the coffee?", focus: "Price question", expectedKeywords: ["how", "much", "coffee", "?"], indonesianExplanation: "" },
-    { coach: "It is two dollars.", hint: "Konfirmasi harga.", sampleAnswer: "Two dollars?", focus: "Price confirmation", expectedKeywords: ["two", "dollars", "?"], indonesianExplanation: "" },
-    { coach: "Yes, two dollars.", hint: "Tanyakan harga cake.", sampleAnswer: "How much is the cake?", focus: "Second price", expectedKeywords: ["how", "much", "cake", "?"], indonesianExplanation: "" },
-    { coach: "It is three dollars.", hint: "Tutup dengan thank you.", sampleAnswer: "Okay. Thank you.", focus: "Closing", expectedKeywords: [], indonesianExplanation: "" },
+    { coach: "It is twenty thousand rupiah.", hint: "Konfirmasi harga.", sampleAnswer: "Twenty thousand rupiah?", focus: "Price confirmation", expectedKeywords: ["twenty", "thousand", "rupiah", "?"], indonesianExplanation: "" },
+    { coach: "Yes, twenty thousand rupiah.", hint: "Tanyakan harga cake.", sampleAnswer: "How much is the cake?", focus: "Second price", expectedKeywords: ["how", "much", "cake", "?"], indonesianExplanation: "" },
+    { coach: "It is twenty-five thousand rupiah.", hint: "Tutup dengan thank you.", sampleAnswer: "Okay. Thank you.", focus: "Closing", expectedKeywords: [], indonesianExplanation: "" },
   ],
   "asking-about-pros-and-cons": [
     { coach: "Ask me about pros and cons of this option.", hint: "Tanya: What are the pros and cons ...?", sampleAnswer: "What are the pros and cons of working remotely?", focus: "Ask about trade-offs", expectedKeywords: ["pros", "cons"], indonesianExplanation: "" },

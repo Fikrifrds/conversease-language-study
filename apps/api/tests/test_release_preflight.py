@@ -164,6 +164,138 @@ class ReleasePreflightTest(unittest.TestCase):
         self.assertEqual(result.status, "pass")
         self.assertGreaterEqual(result.details["template_count"], 1)
 
+    def test_content_release_readiness_fails_when_audio_is_missing(self):
+        self.preflight.ensure_api_import_path(REPO_ROOT)
+        readiness = {
+            "summary": {
+                "planned_lesson_count": 2,
+                "text_ready_count": 2,
+                "audio_ready_count": 1,
+                "production_ready_count": 1,
+                "missing_content_count": 0,
+                "missing_audio_count": 1,
+            },
+            "levels": [
+                {
+                    "course": {"language": "english", "level_code": "A1"},
+                    "summary": {
+                        "planned_lesson_count": 2,
+                        "text_ready_count": 2,
+                        "audio_ready_count": 1,
+                        "production_ready_count": 1,
+                        "missing_content_count": 0,
+                        "missing_audio_count": 1,
+                    },
+                }
+            ],
+        }
+
+        with patch("app.data.content_readiness.all_content_readiness_summary", return_value=readiness):
+            result = self.preflight.check_content_release_readiness(REPO_ROOT)
+
+        self.assertEqual(result.status, "fail")
+        self.assertEqual(result.details["summary"]["missing_audio_count"], 1)
+
+    def test_content_release_readiness_passes_when_all_lessons_are_ready(self):
+        self.preflight.ensure_api_import_path(REPO_ROOT)
+        readiness = {
+            "summary": {
+                "planned_lesson_count": 2,
+                "text_ready_count": 2,
+                "audio_ready_count": 2,
+                "production_ready_count": 2,
+                "missing_content_count": 0,
+                "missing_audio_count": 0,
+            },
+            "levels": [
+                {
+                    "course": {"language": "english", "level_code": "A1"},
+                    "summary": {
+                        "planned_lesson_count": 2,
+                        "text_ready_count": 2,
+                        "audio_ready_count": 2,
+                        "production_ready_count": 2,
+                        "missing_content_count": 0,
+                        "missing_audio_count": 0,
+                    },
+                }
+            ],
+        }
+
+        with patch("app.data.content_readiness.all_content_readiness_summary", return_value=readiness):
+            result = self.preflight.check_content_release_readiness(REPO_ROOT)
+
+        self.assertEqual(result.status, "pass")
+
+    def test_audio_generation_config_fails_when_missing_audio_cannot_be_generated(self):
+        self.preflight.ensure_api_import_path(REPO_ROOT)
+        settings = SimpleNamespace(
+            s3_bucket="",
+            aws_access_key_id="key",
+            aws_secret_access_key="secret",
+            aws_region="ap-southeast-1",
+            minimax_api_key="minimax-key",
+            elevenlabs_api_key="",
+        )
+        readiness = {
+            "summary": {"missing_audio_count": 3},
+            "levels": [
+                {
+                    "course": {"language": "english", "level_code": "A1"},
+                    "summary": {
+                        "planned_lesson_count": 2,
+                        "audio_ready_count": 1,
+                        "missing_audio_count": 1,
+                    },
+                },
+                {
+                    "course": {"language": "arabic", "level_code": "A2"},
+                    "summary": {
+                        "planned_lesson_count": 2,
+                        "audio_ready_count": 0,
+                        "missing_audio_count": 2,
+                    },
+                },
+            ],
+        }
+
+        with patch("app.data.content_readiness.all_content_readiness_summary", return_value=readiness):
+            result = self.preflight.check_audio_generation_config(settings, REPO_ROOT)
+
+        self.assertEqual(result.status, "fail")
+        self.assertEqual(result.details["missing_audio_count"], 3)
+        self.assertEqual(result.details["missing_fields"], ["s3_bucket", "elevenlabs_api_key"])
+
+    def test_audio_generation_config_passes_when_no_audio_generation_is_needed(self):
+        self.preflight.ensure_api_import_path(REPO_ROOT)
+        settings = SimpleNamespace(
+            s3_bucket="",
+            aws_access_key_id="",
+            aws_secret_access_key="",
+            aws_region="",
+            minimax_api_key="",
+            elevenlabs_api_key="",
+        )
+        readiness = {
+            "summary": {"missing_audio_count": 0},
+            "levels": [
+                {
+                    "course": {"language": "english", "level_code": "A1"},
+                    "summary": {
+                        "planned_lesson_count": 2,
+                        "audio_ready_count": 2,
+                        "missing_audio_count": 0,
+                    },
+                }
+            ],
+        }
+
+        with patch("app.data.content_readiness.all_content_readiness_summary", return_value=readiness):
+            result = self.preflight.check_audio_generation_config(settings, REPO_ROOT)
+
+        self.assertEqual(result.status, "pass")
+        self.assertEqual(result.details["missing_fields"], [])
+
     def test_backup_tooling_warns_in_development_when_postgres_tools_missing(self):
         bash_path = shutil.which("bash")
         if bash_path is None:

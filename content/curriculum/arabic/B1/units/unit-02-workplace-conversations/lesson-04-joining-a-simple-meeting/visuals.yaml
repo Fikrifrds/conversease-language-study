@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-female/hero.png
+  src: /images/lesson-visual-library/workplace-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Joining a Simple Meeting di Indonesia.
   caption: 'Konteks percakapan nyata: Joining a Simple Meeting.'
 cards:
-- src: /images/lesson-visual-library/travel-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.png
   width: 1254
   height: 1254
   label: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
-  alt: Cuplikan visual travel female untuk frasa أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً..
-- src: /images/lesson-visual-library/travel-female/card-2.png
+  alt: Cuplikan visual workplace female untuk frasa أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
   width: 1254
   height: 1254
   label: أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.
-  alt: Cuplikan visual travel female untuk frasa أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا..
-- src: /images/lesson-visual-library/travel-female/card-3.png
+  alt: Cuplikan visual workplace female untuk frasa أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
   width: 1254
   height: 1254
   label: هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.
-  alt: Cuplikan visual travel female untuk frasa هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ..
+  alt: Cuplikan visual workplace female untuk frasa هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ..

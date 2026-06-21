@@ -1,10 +1,10 @@
 # Target Percakapan
 
-Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.
+Latih percakapan Arab B2 untuk meninjau argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.
 
 Kamu akan berlatih mengatakan:
 
-- أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

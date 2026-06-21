@@ -1,15 +1,16 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya mengulang skill diskusi akhir karena itu penting dalam diskusi."?
+  prompt: Frasa mana yang berarti "Saya mereview diskusi akhir karena itu menggabungkan keterampilan level
+    ini."?
   options:
-  - أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+  - أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
   - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
   - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  correct_answer: أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+  correct_answer: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
 - key: phrase_2
   prompt: Frasa mana yang berarti "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti."?
   options:
   - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  - أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+  - أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
   - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
   correct_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

@@ -73,7 +73,7 @@ def normalize_text(text: str) -> str:
 
 
 def is_question(text: str) -> bool:
-    return text.strip().endswith("?")
+    return text.strip().endswith(("?", "؟"))
 
 
 def is_yes_no_question(text: str) -> bool:
@@ -325,7 +325,7 @@ def check_file(path: Path) -> list[Issue]:
 
 
 def iter_listening_scripts(root: Path) -> list[Path]:
-    return sorted(root.glob("content/curriculum/english/*/units/*/lesson-*/listening_script.md"))
+    return sorted(root.glob("content/curriculum/*/*/units/*/lesson-*/listening_script.md"))
 
 
 def main() -> None:

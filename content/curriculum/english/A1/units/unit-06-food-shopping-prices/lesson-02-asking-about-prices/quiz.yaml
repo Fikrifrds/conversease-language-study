@@ -2,17 +2,17 @@ questions:
 - type: multiple_choice
   prompt: How much is the coffee?
   choices:
-  - Two dollars.
-  - Three dollars.
-  - Ten dollars.
-  answer: Two dollars.
+  - Twenty thousand rupiah.
+  - Twenty-five thousand rupiah.
+  - Ten thousand rupiah.
+  answer: Twenty thousand rupiah.
 - type: multiple_choice
   prompt: How much is the cake?
   choices:
-  - Three dollars.
-  - One dollar.
+  - Twenty-five thousand rupiah.
+  - Twenty thousand rupiah.
   - Free.
-  answer: Three dollars.
+  answer: Twenty-five thousand rupiah.
 - type: multiple_choice
   prompt: Which question asks price?
   choices:

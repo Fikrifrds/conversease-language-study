@@ -179,14 +179,51 @@ UNIT_PROFILES: dict[str, dict[str, Any]] = {
         "speakers": ("Layla", "Noura"),
         "outcome": "Use B2 discussion skills in professional and social contexts.",
         "situation": "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
-        "prompt": ("مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟", "Skill terpenting apa yang sedang kamu review sekarang?"),
+        "prompt": ("مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟", "Keterampilan terpenting apa yang sedang kamu review sekarang?"),
         "phrases": [
-            ("أُرَاجِعُ مَهَارَةَ {focus} لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.", "Saya mengulang skill {focus_id} karena itu penting dalam diskusi.", "Membuka review."),
-            ("أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.", "Mereview argument skill."),
-            ("أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", "Saya juga bisa mengelola percakapan profesional dengan jelas.", "Mereview professional skill."),
-            ("إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", "Jika muncul keberatan, saya akan menanggapinya dengan tenang.", "Mereview counterpoint skill."),
-            ("فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.", "Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.", "Menutup dengan strategy."),
+            ("أُرَاجِعُ {focus} لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.", "Saya mereview {focus_id} karena itu penting dalam diskusi.", "Membuka review."),
+            ("أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.", "Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.", "Mereview kemampuan menyusun argumen."),
+            ("أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.", "Saya juga bisa mengelola percakapan profesional dengan jelas.", "Mereview kemampuan percakapan profesional."),
+            ("إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.", "Jika muncul keberatan, saya akan menanggapinya dengan tenang.", "Mereview respons terhadap keberatan."),
+            ("فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.", "Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.", "Menutup dengan strategi."),
         ],
+        "review_overrides": {
+            "lesson-01-review-arguments-and-meetings": {
+                "prompt_focus": "الْحُجَجِ وَالِاجْتِمَاعَاتِ",
+                "prompt_focus_id": "argumen dan rapat",
+                "goal_focus_id": "meninjau argumen dan rapat",
+                "phrase": "أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.",
+                "meaning": "Saya mereview argumen dan rapat karena itu penting dalam diskusi.",
+            },
+            "lesson-02-review-negotiation-and-presenting": {
+                "prompt_focus": "التَّفَاوُضِ وَالْعَرْضِ",
+                "prompt_focus_id": "negosiasi dan presentasi",
+                "goal_focus_id": "meninjau negosiasi dan presentasi",
+                "phrase": "أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.",
+                "meaning": "Saya mereview negosiasi dan presentasi karena keduanya penting dalam diskusi.",
+            },
+            "lesson-03-review-information-and-clients": {
+                "prompt_focus": "التَّعَامُلِ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ",
+                "prompt_focus_id": "cara menangani informasi dan klien",
+                "goal_focus_id": "meninjau cara menangani informasi dan klien",
+                "phrase": "أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.",
+                "meaning": "Saya mereview cara menangani informasi dan klien karena itu penting dalam diskusi.",
+            },
+            "lesson-04-b2-final-test-practice": {
+                "prompt_focus": "تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ",
+                "prompt_focus_id": "latihan tes akhir",
+                "goal_focus_id": "mempersiapkan tes akhir",
+                "phrase": "أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.",
+                "meaning": "Saya mereview latihan tes akhir karena itu membantu saya bersiap.",
+            },
+            "lesson-05-b2-final-discussion": {
+                "prompt_focus": "النِّقَاشِ النِّهَائِيِّ",
+                "prompt_focus_id": "diskusi akhir",
+                "goal_focus_id": "menjalani diskusi akhir",
+                "phrase": "أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.",
+                "meaning": "Saya mereview diskusi akhir karena itu menggabungkan keterampilan level ini.",
+            },
+        },
         "grammar": "Gabungkan أَسْتَطِيعُ أَنْ، إِذَا، فَـ، dan لِأَنَّ untuk final discussion yang koheren.",
         "patterns": ["أُرَاجِعُ ... لِأَنَّ ...", "أَسْتَطِيعُ أَنْ ...", "إِذَا ظَهَرَ ... فَـ ...", "سَأُرَكِّزُ عَلَى ..."],
     },
@@ -260,10 +297,23 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
         phrase(text.format(focus=focus, focus_id=focus_id), meaning.format(focus_id=focus_id), usage)
         for text, meaning, usage in profile["phrases"]
     ]
+    review_override = profile.get("review_overrides", {}).get(lesson_key)
+    prompt_focus = focus
+    prompt_focus_id = focus_id
+    goal_focus_id = focus_id
+    if review_override:
+        phrases[0] = phrase(
+            review_override["phrase"],
+            review_override["meaning"],
+            phrases[0]["usage"],
+        )
+        prompt_focus = review_override["prompt_focus"]
+        prompt_focus_id = review_override["prompt_focus_id"]
+        goal_focus_id = review_override.get("goal_focus_id", focus_id)
     speaker_a, speaker_b = profile["speakers"]
     prompt_ar, prompt_id = profile["prompt"]
-    prompt_ar = f"{prompt_ar} أُرِيدُ أَنْ أُرَكِّزَ عَلَى {focus}."
-    prompt_id = f"{prompt_id} Saya ingin fokus pada {focus_id}."
+    prompt_ar = f"{prompt_ar} أُرِيدُ أَنْ أُرَكِّزَ عَلَى {prompt_focus}."
+    prompt_id = f"{prompt_id} Saya ingin fokus pada {prompt_focus_id}."
     dialogue = [
         line(speaker_a, prompt_ar, prompt_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),
@@ -282,7 +332,7 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
         "focus": focus,
         "focus_id": focus_id,
         "situation": profile["situation"],
-        "goal": f"Latih percakapan Arab B2 untuk {focus_id} dengan alasan, contoh, respons, dan rekomendasi.",
+        "goal": f"Latih percakapan Arab B2 untuk {goal_focus_id} dengan alasan, contoh, respons, dan rekomendasi.",
         "grammar": profile["grammar"],
         "patterns": profile["patterns"],
         "phrases": phrases,

@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Handling Sensitive Feedback di Indonesia.
   caption: 'Konteks percakapan nyata: Handling Sensitive Feedback.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: I wanted to flag one point about the messaging.
-  alt: Cuplikan visual travel male untuk frasa I wanted to flag one point about the messaging..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa I wanted to flag one point about the messaging..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: The impact is that some teams interpreted it as a hard deadline.
-  alt: Cuplikan visual travel male untuk frasa The impact is that some teams interpreted it as a hard
+  alt: Cuplikan visual workplace male untuk frasa The impact is that some teams interpreted it as a hard
     deadline..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: I appreciate the intent, and I think we can make it clearer.
-  alt: Cuplikan visual travel male untuk frasa I appreciate the intent, and I think we can make it clearer..
+  alt: Cuplikan visual workplace male untuk frasa I appreciate the intent, and I think we can make it
+    clearer..

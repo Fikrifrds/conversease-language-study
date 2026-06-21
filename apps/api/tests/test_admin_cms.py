@@ -47,7 +47,7 @@ class AdminCmsTest(unittest.TestCase):
             ],
         )
         self.assertEqual(summary["validation_issues"], [])
-        self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_online_class")
+        self.assertEqual(lesson["roleplay"]["scenario_key"], "saying_your_name_class")
         self.assertEqual(len(lesson["content_hash"]), 64)
         self.assertEqual(template["subject"], "Verifikasi email Conversease kamu")
         self.assertEqual(len(template["content_hash"]), 64)
