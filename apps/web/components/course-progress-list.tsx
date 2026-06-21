@@ -9,7 +9,7 @@ import { LoginForm } from "@/components/login-form";
 import { Modal } from "@/components/modal";
 import { versionedAssetSrc } from "@/lib/assets";
 import { getAuthSession } from "@/lib/auth-api";
-import { unitHeroVisual } from "@/lib/course-visuals";
+import { courseUnitVisuals } from "@/lib/course-visuals";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
 
@@ -79,7 +79,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
       <div className="mt-8 space-y-5">
         {course.units.map((unit, unitIndex) => {
           const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
-          const unitVisual = unitHeroVisual(unit);
+          const unitVisuals = courseUnitVisuals(course, unit, unitIndex);
           const completedLessons = activeLessons.filter(
             (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
           ).length;
@@ -95,17 +95,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
             >
               <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
                 <div className="flex min-w-0 flex-col gap-4 sm:flex-row">
-                  {unitVisual ? (
-                    <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-paper sm:w-44 sm:shrink-0">
-                      <Image
-                        src={versionedAssetSrc(unitVisual.src)}
-                        alt={unitVisual.alt}
-                        fill
-                        sizes="(min-width: 640px) 176px, 100vw"
-                        className="object-cover"
-                      />
-                    </div>
-                  ) : null}
+                  <UnitVisualMosaic visuals={unitVisuals} variant={unitIndex} />
                   <div className="min-w-0">
                     <span className="text-xs font-semibold uppercase text-coral">Unit {unitIndex + 1}</span>
                     <h2 className="mt-2 break-words text-xl font-semibold">{unit.title}</h2>
@@ -186,6 +176,71 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
         />
       ) : null}
     </>
+  );
+}
+
+function UnitVisualMosaic({
+  visuals,
+  variant
+}: {
+  visuals: Array<{ src: string; alt: string }>;
+  variant: number;
+}) {
+  const [primary, secondary, tertiary] = visuals;
+
+  if (!primary) {
+    return null;
+  }
+
+  if (!secondary) {
+    return (
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-paper sm:w-44 sm:shrink-0">
+        <Image
+          src={versionedAssetSrc(primary.src)}
+          alt={primary.alt}
+          fill
+          sizes="(min-width: 640px) 176px, 100vw"
+          className="object-cover"
+        />
+      </div>
+    );
+  }
+
+  const primaryTile = (
+    <div className="relative min-h-0 overflow-hidden rounded-[6px]">
+      <Image
+        src={versionedAssetSrc(primary.src)}
+        alt={primary.alt}
+        fill
+        sizes="(min-width: 640px) 104px, 64vw"
+        className="object-cover"
+      />
+    </div>
+  );
+  const sideTiles = (
+    <div className="grid min-h-0 gap-1">
+      {[secondary, tertiary ?? primary].map((visual, index) => (
+        <div key={`${visual.src}-${index}`} className="relative min-h-0 overflow-hidden rounded-[6px]">
+          <Image
+            src={versionedAssetSrc(visual.src)}
+            alt={visual.alt}
+            fill
+            sizes="(min-width: 640px) 68px, 32vw"
+            className="object-cover"
+          />
+        </div>
+      ))}
+    </div>
+  );
+  const primaryOnRight = variant % 2 === 1;
+
+  return (
+    <div className={`grid aspect-[16/9] w-full gap-1 overflow-hidden rounded-lg bg-paper p-1 sm:w-44 sm:shrink-0 ${
+      primaryOnRight ? "grid-cols-[0.85fr_1.35fr]" : "grid-cols-[1.35fr_0.85fr]"
+    }`}>
+      {primaryOnRight ? sideTiles : primaryTile}
+      {primaryOnRight ? primaryTile : sideTiles}
+    </div>
   );
 }
 

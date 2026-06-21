@@ -5,13 +5,21 @@ type LessonRef = {
 };
 
 type UnitRef = {
+  title?: string;
+  outcome?: string;
   lessons: LessonRef[];
 };
 
 type CourseRef = {
   slug?: string;
+  language?: string;
   units: UnitRef[];
 };
+
+type VisualAsset = "hero" | "card-1" | "card-2" | "card-3";
+type SceneBase = "classroom" | "health" | "service" | "travel" | "workplace";
+type VisualScene = `${SceneBase}-${"female" | "male"}`;
+type VisualSpec = [VisualScene, VisualAsset];
 
 type CourseVisual = {
   src: string;
@@ -24,7 +32,7 @@ const HERO_WIDTH = 1672;
 const HERO_HEIGHT = 941;
 const CARD_SIZE = 1254;
 
-const COURSE_VISUAL_SETS: Record<string, Array<[string, "hero" | "card-1" | "card-2" | "card-3"]>> = {
+const COURSE_VISUAL_SETS: Record<string, VisualSpec[]> = {
   "english-a1-start-simple-conversations": [
     ["classroom-male", "hero"],
     ["service-male", "card-1"],
@@ -77,13 +85,115 @@ const COURSE_VISUAL_SETS: Record<string, Array<[string, "hero" | "card-1" | "car
   ]
 };
 
+const DEFAULT_UNIT_BASE_SETS: SceneBase[][] = [
+  ["classroom", "service", "travel"],
+  ["service", "workplace", "classroom"],
+  ["travel", "classroom", "service"],
+  ["workplace", "classroom", "service"],
+  ["travel", "service", "classroom"],
+  ["service", "travel", "workplace"],
+  ["health", "service", "classroom"],
+  ["classroom", "travel", "workplace"]
+];
+
+const UNIT_TOPIC_BASE_SETS: Array<{ pattern: RegExp; bases: SceneBase[] }> = [
+  {
+    pattern: /foundation|greeting|introduc|class|instruction/i,
+    bases: ["classroom", "service", "travel"]
+  },
+  {
+    pattern: /health|symptom|appointment/i,
+    bases: ["health", "service", "classroom"]
+  },
+  {
+    pattern: /travel|transport|direction|place|checking in|ticket|departure|delay|recommendation/i,
+    bases: ["travel", "service", "classroom"]
+  },
+  {
+    pattern: /contact|phone|email|number/i,
+    bases: ["service", "workplace", "classroom"]
+  },
+  {
+    pattern: /food|drink|shopping|prices|service|customer|client/i,
+    bases: ["service", "travel", "workplace"]
+  },
+  {
+    pattern: /work|study|meeting|professional|negotiation|presentation|leadership|stakeholder|task|feedback|argument|proposal|priority/i,
+    bases: ["workplace", "classroom", "service"]
+  },
+  {
+    pattern: /media|information|debate|analysis|listening|response|nuanced|certainty|doubt|viewpoint|evidence/i,
+    bases: ["classroom", "workplace", "travel"]
+  },
+  {
+    pattern: /problem|help|request|solution|concern/i,
+    bases: ["health", "service", "workplace"]
+  },
+  {
+    pattern: /community|culture|family|social|small talk|weekend|story|past|opinion|preference|goal|routine|time/i,
+    bases: ["travel", "classroom", "service"]
+  }
+];
+
+const UNIT_ASSET_PATTERNS: VisualAsset[][] = [
+  ["hero", "card-1", "card-2"],
+  ["card-1", "hero", "card-3"],
+  ["card-2", "hero", "card-1"],
+  ["hero", "card-2", "card-3"],
+  ["card-3", "card-1", "hero"],
+  ["card-2", "card-3", "hero"],
+  ["hero", "card-3", "card-1"],
+  ["card-1", "card-2", "hero"]
+];
+
 export function lessonHeroVisual(lessonSlug: string) {
   return lessonsBySlug[lessonSlug]?.visuals?.hero ?? null;
 }
 
 export function unitHeroVisual(unit: UnitRef) {
-  const firstVisualLesson = unit.lessons.find((lesson) => lessonHeroVisual(lesson.slug));
-  return firstVisualLesson ? lessonHeroVisual(firstVisualLesson.slug) : null;
+  return unitHeroVisuals(unit, 1)[0] ?? null;
+}
+
+export function courseUnitVisuals(course: CourseRef, unit: UnitRef, unitIndex: number, maxCount = 3) {
+  const curatedVisuals = curatedUnitVisuals(course, unit, unitIndex);
+  if (curatedVisuals.length) {
+    return curatedVisuals.slice(0, maxCount);
+  }
+
+  return unitHeroVisuals(unit, maxCount);
+}
+
+export function unitHeroVisuals(unit: UnitRef, maxCount = 3) {
+  const seen = new Set<string>();
+  const visuals: CourseVisual[] = [];
+
+  for (const lesson of unit.lessons) {
+    const visual = lessonHeroVisual(lesson.slug);
+    if (!visual || seen.has(visual.src)) {
+      continue;
+    }
+    visuals.push(visual);
+    seen.add(visual.src);
+    if (visuals.length >= maxCount) {
+      return visuals;
+    }
+  }
+
+  const firstHero = visuals[0];
+  if (firstHero) {
+    for (const cardVisual of cardVisualsForHero(firstHero)) {
+      if (seen.has(cardVisual.src)) {
+        continue;
+      }
+      visuals.push(cardVisual);
+      seen.add(cardVisual.src);
+      if (visuals.length >= maxCount) {
+        break;
+      }
+    }
+  }
+
+  return visuals;
 }
 
 export function courseHeroVisuals(course: CourseRef, maxCount = 3) {
@@ -119,15 +229,69 @@ function curatedCourseVisuals(slug?: string): CourseVisual[] {
     return [];
   }
 
-  return (COURSE_VISUAL_SETS[slug] ?? []).map(([scene, asset]) => {
-    const isHero = asset === "hero";
-    const filename = isHero ? "hero.png" : `${asset}.png`;
-    const sceneLabel = scene.replace("-", " ");
-    return {
-      src: `/images/lesson-visual-library/${scene}/${filename}`,
-      width: isHero ? HERO_WIDTH : CARD_SIZE,
-      height: isHero ? HERO_HEIGHT : CARD_SIZE,
-      alt: `Ilustrasi ${sceneLabel} untuk ringkasan course.`
-    };
+  return (COURSE_VISUAL_SETS[slug] ?? []).map((spec) => visualFromSpec(spec, "ringkasan course"));
+}
+
+function curatedUnitVisuals(course: CourseRef, unit: UnitRef, unitIndex: number): CourseVisual[] {
+  const bases = basesForUnit(unit, unitIndex);
+  const gender = preferredGenderForCourse(course);
+  const assets = UNIT_ASSET_PATTERNS[unitIndex % UNIT_ASSET_PATTERNS.length];
+  const unitLabel = unit.title ? `unit ${unit.title}` : "unit course";
+
+  return bases.map((base, index) => {
+    const scene: VisualScene = `${base}-${gender}`;
+    return visualFromSpec([scene, assets[index] ?? "hero"], unitLabel);
   });
+}
+
+function basesForUnit(unit: UnitRef, unitIndex: number): SceneBase[] {
+  const text = [unit.title, unit.outcome].filter(Boolean).join(" ");
+  const topicBases = UNIT_TOPIC_BASE_SETS.find((preset) => preset.pattern.test(text))?.bases ?? [];
+  const defaultBases = DEFAULT_UNIT_BASE_SETS[unitIndex % DEFAULT_UNIT_BASE_SETS.length];
+  return uniqueBases([...topicBases, ...defaultBases]).slice(0, 3);
+}
+
+function uniqueBases(bases: SceneBase[]) {
+  const seen = new Set<SceneBase>();
+  return bases.filter((base) => {
+    if (seen.has(base)) {
+      return false;
+    }
+    seen.add(base);
+    return true;
+  });
+}
+
+function preferredGenderForCourse(course: CourseRef): "female" | "male" {
+  if (course.language === "arabic" || course.slug?.startsWith("arabic-")) {
+    return "female";
+  }
+
+  return "male";
+}
+
+function visualFromSpec([scene, asset]: VisualSpec, purpose: string): CourseVisual {
+  const isHero = asset === "hero";
+  const filename = isHero ? "hero.png" : `${asset}.png`;
+  const sceneLabel = scene.replace("-", " ");
+  return {
+    src: `/images/lesson-visual-library/${scene}/${filename}`,
+    width: isHero ? HERO_WIDTH : CARD_SIZE,
+    height: isHero ? HERO_HEIGHT : CARD_SIZE,
+    alt: `Ilustrasi ${sceneLabel} untuk ${purpose}.`
+  };
+}
+
+function cardVisualsForHero(hero: CourseVisual): CourseVisual[] {
+  const basePath = hero.src.replace(/\/hero\.png$/, "");
+  if (basePath === hero.src) {
+    return [];
+  }
+
+  return [1, 2, 3].map((index) => ({
+    src: `${basePath}/card-${index}.png`,
+    width: CARD_SIZE,
+    height: CARD_SIZE,
+    alt: hero.alt
+  }));
 }
