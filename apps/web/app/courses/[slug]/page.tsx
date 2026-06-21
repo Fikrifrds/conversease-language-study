@@ -1,9 +1,12 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, BookOpen, CheckCircle2, Headphones, Layers3 } from "lucide-react";
+import { ArrowLeft, BookOpen, CheckCircle2, MessageCircle, Layers3 } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { CourseProgressList } from "@/components/course-progress-list";
+import { versionedAssetSrc } from "@/lib/assets";
 import { courseMarketingDescription } from "@/lib/course-marketing-copy";
+import { courseHeroVisual } from "@/lib/course-visuals";
 import { courses } from "@/lib/data";
 
 export function generateStaticParams() {
@@ -17,13 +20,21 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
     notFound();
   }
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
+  const visual = courseHeroVisual(course);
 
   return (
     <AppShell>
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-7">
-          <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
-            <div className="max-w-3xl">
+        <div className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm">
+          <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_420px]">
+            <div className="p-5 md:p-7">
+              <Link
+                href="/courses"
+                className="focus-ring mb-5 inline-flex items-center justify-center gap-2 rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm font-semibold text-ink hover:bg-mint"
+              >
+                <ArrowLeft className="h-4 w-4" aria-hidden="true" />
+                Kembali ke Kurikulum
+              </Link>
               <div className="flex flex-wrap gap-2">
                 <span className="rounded-lg bg-mint px-3 py-1 text-xs font-bold uppercase text-leaf">
                   {course.languageLabel}
@@ -50,18 +61,23 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
                   {lessonCount} lesson
                 </span>
                 <span className="inline-flex items-center gap-2 rounded-lg bg-paper px-3 py-3">
-                  <Headphones className="h-4 w-4 text-leaf" aria-hidden="true" />
-                  Audio lengkap
+                  <MessageCircle className="h-4 w-4 text-leaf" aria-hidden="true" />
+                  Roleplay & audio
                 </span>
               </div>
             </div>
-            <Link
-              href="/courses"
-              className="focus-ring inline-flex items-center justify-center gap-2 rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm font-semibold text-ink hover:bg-mint"
-            >
-              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-              Kembali ke Kurikulum
-            </Link>
+            {visual ? (
+              <div className="relative min-h-[240px] bg-paper lg:min-h-full">
+                <Image
+                  src={versionedAssetSrc(visual.src)}
+                  alt={visual.alt}
+                  fill
+                  priority
+                  sizes="(min-width: 1024px) 420px, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            ) : null}
           </div>
         </div>
 

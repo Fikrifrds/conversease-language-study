@@ -1,10 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, Languages } from "lucide-react";
+import { ArrowRight, BookOpen, CheckCircle2, Languages, Layers3 } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { versionedAssetSrc } from "@/lib/assets";
 import { courseGroupDescriptions, courseMarketingDescription } from "@/lib/course-marketing-copy";
+import { courseHeroVisuals } from "@/lib/course-visuals";
 import { courses } from "@/lib/data";
 
 type LanguageFilter = "all" | "english" | "arabic";
@@ -91,38 +94,101 @@ function CourseCard({
 }) {
   const badgeTone = course.language === "arabic" ? "bg-[#fff2dc] text-coral" : "bg-mint text-leaf";
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
+  const visuals = courseHeroVisuals(course);
 
   return (
     <Link
       href={`/courses/${course.slug}`}
-      className="focus-ring group flex min-h-[250px] flex-col rounded-lg border border-ink/10 bg-white p-5 shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
+      className="focus-ring group flex min-h-[390px] flex-col overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
     >
-      <CourseCardHeader course={course} badgeTone={badgeTone} lessonCount={lessonCount} />
-      <p className="mt-3 text-sm leading-6 text-ink/70">
-        {courseMarketingDescription(course.slug, course.outcome)}
-      </p>
-      <div className="mt-auto flex items-center justify-between gap-3 pt-5">
-        <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
-          <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-          Lihat modul
+      {visuals.length ? (
+        <CourseVisualMosaic visuals={visuals} />
+      ) : null}
+      <div className="flex flex-1 flex-col p-5">
+        <CourseCardHeader course={course} badgeTone={badgeTone} />
+        <p className="mt-3 text-sm leading-6 text-ink/70">
+          {courseMarketingDescription(course.slug, course.outcome)}
         </p>
-        <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
-          Buka
-          <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
-        </span>
+        <div className="mt-5 grid grid-cols-2 gap-2 text-xs font-semibold text-ink/60">
+          <span className="inline-flex items-center gap-2 rounded-lg bg-paper px-3 py-2">
+            <Layers3 className="h-4 w-4 text-leaf" aria-hidden="true" />
+            {course.units.length} unit
+          </span>
+          <span className="inline-flex items-center gap-2 rounded-lg bg-paper px-3 py-2">
+            <BookOpen className="h-4 w-4 text-leaf" aria-hidden="true" />
+            {lessonCount} lesson
+          </span>
+        </div>
+        <div className="mt-auto flex items-center justify-between gap-3 pt-5">
+          <p className="inline-flex items-center gap-2 text-xs font-semibold uppercase text-leaf">
+            <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+            Lihat modul
+          </p>
+          <span className="inline-flex items-center gap-2 text-sm font-semibold text-leaf">
+            Buka
+            <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
+          </span>
+        </div>
       </div>
     </Link>
   );
 }
 
+function CourseVisualMosaic({
+  visuals
+}: {
+  visuals: Array<{ src: string; alt: string }>;
+}) {
+  const [primary, secondary, tertiary] = visuals;
+
+  if (!secondary) {
+    return (
+      <div className="relative aspect-[16/9] overflow-hidden bg-paper">
+        <Image
+          src={versionedAssetSrc(primary.src)}
+          alt={primary.alt}
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+          className="object-cover transition duration-300 group-hover:scale-[1.03]"
+        />
+      </div>
+    );
+  }
+
+  return (
+    <div className="grid aspect-[16/9] grid-cols-[1.35fr_0.85fr] gap-1 bg-paper p-1">
+      <div className="relative overflow-hidden rounded-[6px]">
+        <Image
+          src={versionedAssetSrc(primary.src)}
+          alt={primary.alt}
+          fill
+          sizes="(min-width: 1024px) 22vw, (min-width: 768px) 34vw, 70vw"
+          className="object-cover transition duration-300 group-hover:scale-[1.03]"
+        />
+      </div>
+      <div className="grid min-h-0 gap-1">
+        {[secondary, tertiary ?? primary].map((visual, index) => (
+          <div key={`${visual.src}-${index}`} className="relative min-h-0 overflow-hidden rounded-[6px]">
+            <Image
+              src={versionedAssetSrc(visual.src)}
+              alt={visual.alt}
+              fill
+              sizes="(min-width: 1024px) 12vw, (min-width: 768px) 18vw, 30vw"
+              className="object-cover transition duration-300 group-hover:scale-[1.03]"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function CourseCardHeader({
   course,
-  badgeTone,
-  lessonCount
+  badgeTone
 }: {
   course: Course;
   badgeTone: string;
-  lessonCount: number;
 }) {
   return (
     <div className="flex items-start justify-between gap-4">
@@ -133,12 +199,6 @@ function CourseCardHeader({
           </span>
           <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
             {course.level}
-          </span>
-          <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
-            {course.units.length} unit
-          </span>
-          <span className="rounded-lg bg-paper px-3 py-1 text-xs font-bold text-ink/60">
-            {lessonCount} lesson
           </span>
         </div>
         <h3 className="mt-4 break-words text-[1.45rem] font-semibold leading-tight text-ink">
