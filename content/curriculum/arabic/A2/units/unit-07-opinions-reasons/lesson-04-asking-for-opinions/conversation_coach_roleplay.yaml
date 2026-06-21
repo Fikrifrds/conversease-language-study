@@ -18,13 +18,13 @@ turns:
   - رَأْيُكَ
   - فِي
   indonesian_explanation: Apa pendapatmu tentang ini?
-- coach: 'استخدم: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟'
-  hint: 'Jawab dengan pola: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟'
-  sample_answer: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+- coach: 'استخدم: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟'
+  hint: 'Jawab dengan pola: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟'
+  sample_answer: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟
   focus: 'Latihan frasa: Apa pendapatmu tentang pilihan kedua?'
   expected_keywords:
   - مَا
-  - رَأْيُكِ
+  - رَأْيُكَ
   - فِي
   indonesian_explanation: Apa pendapatmu tentang pilihan kedua?
 - coach: 'استخدم: أَيُّهُمَا أَفْضَلُ؟'
@@ -37,7 +37,7 @@ turns:
   indonesian_explanation: Mana dari keduanya yang lebih baik?
 target_phrases:
 - مَا رَأْيُكَ فِي هَذَا؟
-- مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟
+- مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟
 - أَيُّهُمَا أَفْضَلُ؟
 - هَلْ تَعْتَقِدُ أَنَّ هَذَا مُنَاسِبٌ؟
 rubric:

@@ -15,7 +15,7 @@ class CoachTurn:
 
 GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     "a1-final-conversation": (
-        CoachTurn(coach="Hi, good morning. What is your name?", hint="Perkenalkan diri dengan kalimat lengkap.", sample_answer="Good morning. My name is Mina.", focus="Final opening", expected_keywords=("morning", "name", "mina")),
+        CoachTurn(coach="Hi, good morning. What is your name?", hint="Perkenalkan diri dengan kalimat lengkap.", sample_answer="Good morning. My name is Faris.", focus="Final opening", expected_keywords=("morning", "name", "faris")),
         CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asal dan tanyakan balik.", sample_answer="I'm from Indonesia. How about you?", focus="Origin and follow-up", expected_keywords=("i'm", "from", "indonesia", "how", "?")),
         CoachTurn(coach="I'm from Malaysia. What do you do every morning?", hint="Sebutkan rutinitas dan waktu.", sample_answer="I study English at seven.", focus="Routine", expected_keywords=("study", "english", "seven")),
         CoachTurn(coach="Great. The cafe is open now.", hint="Tanyakan lokasi cafe.", sample_answer="Where is the cafe?", focus="Place", expected_keywords=("where", "cafe", "?")),
@@ -257,7 +257,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     ),
     "checking-in": (
         CoachTurn(coach="Welcome. How can I help you?", hint="Mulai dengan: I'd like to check in.", sample_answer="Hi. I'd like to check in.", focus="Start check-in", expected_keywords=("check in",)),
-        CoachTurn(coach="Sure. Do you have a reservation?", hint="Jawab dengan under + name.", sample_answer="Yes. I have a reservation under Mina Kim.", focus="Confirm reservation name", expected_keywords=("reservation", "under")),
+        CoachTurn(coach="Sure. Do you have a reservation?", hint="Jawab dengan under + name.", sample_answer="Yes. I have a reservation under Faris Kim.", focus="Confirm reservation name", expected_keywords=("reservation", "under")),
         CoachTurn(coach="Great. Any questions about your stay?", hint="Tanya 1 hal (check-out / breakfast).", sample_answer="Yes. What time is check-out?", focus="Ask a practical question", expected_keywords=("what time", "check-out")),
     ),
     "clarifying-scope": (
@@ -302,7 +302,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     ),
     "confirming-details": (
         CoachTurn(coach="Okay, you're booked for tomorrow at 3:30 p.m.", hint="Konfirmasi jamnya.", sample_answer="Let me confirm the time: 3:30 p.m., right?", focus="Confirm the time", expected_keywords=("confirm", "3:30", "right")),
-        CoachTurn(coach="Yes, that's right.", hint="Sebutkan nama dan eja.", sample_answer="My name is Mina Park. P-A-R-K.", focus="Give name and spelling", expected_keywords=("my name is", "p-a-r-k")),
+        CoachTurn(coach="Yes, that's right.", hint="Sebutkan nama dan eja.", sample_answer="My name is Raka Park. P-A-R-K.", focus="Give name and spelling", expected_keywords=("my name is", "p-a-r-k")),
         CoachTurn(coach="Thank you. Do you have a phone number?", hint="Berikan nomor telepon.", sample_answer="Yes. It's 0812-345-678.", focus="Provide phone number", expected_keywords=("it's", "0812")),
     ),
     "confirming-next-steps": (
@@ -522,7 +522,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     ),
     "health-appointment-mission": (
         CoachTurn(coach="Hello. How can I help you today?", hint="Bilang kamu ada janji + jamnya.", sample_answer="Hi. I have an appointment at 3:30.", focus="Check in for appointment", expected_keywords=("appointment", "3:30")),
-        CoachTurn(coach="Sure. What's your name?", hint="Sebutkan nama dan eja.", sample_answer="Mina Park. P-A-R-K.", focus="Provide name and spelling", expected_keywords=("p-a-r-k", "mina")),
+        CoachTurn(coach="Sure. What's your name?", hint="Sebutkan nama dan eja.", sample_answer="Raka Park. P-A-R-K.", focus="Provide name and spelling", expected_keywords=("p-a-r-k", "raka")),
         CoachTurn(coach="Thank you. What seems to be the problem?", hint="Sebutkan gejala + durasi.", sample_answer="I've had a cough for two days, and I feel tired.", focus="Describe symptoms with duration", expected_keywords=("have had", "for", "days", "tired")),
     ),
     "help-and-problem-mission": (
@@ -751,7 +751,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Close with next steps and a deadline.", hint="Next steps are... today... by Friday.", sample_answer="Next steps are: I'll share an update today, and we'll confirm a revised timeline by Friday.", focus="Next steps", expected_keywords=("next steps", "today", "by")),
     ),
     "review-introductions": (
-        CoachTurn(coach="Hi, good morning. My name is Sara.", hint="Sapa balik dan sebutkan namamu.", sample_answer="Good morning. My name is Dimas.", focus="Name review", expected_keywords=("morning", "name", "dimas")),
+        CoachTurn(coach="Hi, good morning. My name is Omar.", hint="Sapa balik dan sebutkan namamu.", sample_answer="Good morning. My name is Dimas.", focus="Name review", expected_keywords=("morning", "name", "dimas")),
         CoachTurn(coach="Nice to meet you. Where are you from?", hint="Jawab asalmu dengan I'm from ...", sample_answer="I'm from Indonesia.", focus="Origin review", expected_keywords=("i'm", "from", "indonesia")),
         CoachTurn(coach="I live in Jakarta now.", hint="Tanyakan balik dengan How about you?", sample_answer="How about you?", focus="Question back", expected_keywords=("how", "about", "?")),
         CoachTurn(coach="I'm from Malaysia.", hint="Tutup percakapan dengan sopan.", sample_answer="Oh, nice. See you in class.", focus="Closing", expected_keywords=("nice", "see", "class")),
@@ -861,7 +861,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
         CoachTurn(coach="Yes, that's right.", hint="Katakan sudah paham.", sample_answer="Thank you. I understand now.", focus="Closing", expected_keywords=("understand",)),
     ),
     "saying-your-name": (
-        CoachTurn(coach="Hi, my name is Sara. What is your name?", hint="Jawab dengan pola: My name is ... atau I'm ...", sample_answer="My name is Arif. Nice to meet you.", focus="Saying your name", expected_keywords=("my name is", "i'm", "i am", "nice to meet"), indonesian_explanation="Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'."),
+        CoachTurn(coach="Hi, my name is Omar. What is your name?", hint="Jawab dengan pola: My name is ... atau I'm ...", sample_answer="My name is Arif. Nice to meet you.", focus="Saying your name", expected_keywords=("my name is", "i'm", "i am", "nice to meet"), indonesian_explanation="Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'."),
         CoachTurn(coach="Nice to meet you. What should I call you?", hint="Gunakan pola: Please call me ...", sample_answer="Please call me Arif.", focus="Nickname", expected_keywords=("please call me", "call me"), indonesian_explanation="Kalau ingin menyebut nama panggilan, gunakan pola pendek 'Please call me ...'."),
         CoachTurn(coach="Great. Nice to meet you, Arif.", hint="Balas dengan sopan: Nice to meet you too.", sample_answer="Nice to meet you too.", focus="Polite response", expected_keywords=("nice to meet you too", "you too"), indonesian_explanation="Untuk membalas sapaan perkenalan, 'Nice to meet you too' sudah natural dan sopan."),
     ),
@@ -1010,7 +1010,7 @@ GENERATED_ROLEPLAY_SCRIPTS: dict[str, tuple[CoachTurn, ...]] = {
     ),
     "travel-situation-mission": (
         CoachTurn(coach="Hi. Are you on your way to the hotel?", hint="Jelaskan kamu telat + alasan + estimasi.", sample_answer="Yes, but I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.", focus="Delay explanation with estimate", expected_keywords=("running", "delayed", "in about")),
-        CoachTurn(coach="Okay. Do you have a reservation?", hint="Jawab dengan under + name.", sample_answer="Yes. I have a reservation under Mina Kim.", focus="Confirm reservation", expected_keywords=("reservation", "under")),
+        CoachTurn(coach="Okay. Do you have a reservation?", hint="Jawab dengan under + name.", sample_answer="Yes. I have a reservation under Faris Kim.", focus="Confirm reservation", expected_keywords=("reservation", "under")),
         CoachTurn(coach="Great. Anything else you need?", hint="Tanya rekomendasi + minta bantuan dengan could you.", sample_answer="Do you have any recommendations for dinner? If there's a problem with my room, could you help me?", focus="Ask recommendations and request help", expected_keywords=("recommendations", "could you", "problem")),
     ),
     "understanding-client-needs": (

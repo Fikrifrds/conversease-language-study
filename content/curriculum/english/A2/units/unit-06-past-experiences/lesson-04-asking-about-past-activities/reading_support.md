@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina asks Hilmi about yesterday evening. He cooked dinner, listened to music, and made fried rice.
+Faris asks Hilmi about yesterday evening. He cooked dinner, listened to music, and made fried rice.
 
 ## Check
 

@@ -1,26 +1,27 @@
 lesson_key: lesson-03-asking-someones-name
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260612T123123Z.wav
-  duration_seconds: 10.49
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Nina: English_Upbeat_Woman
+    Adi: English_Diligent_Man
     Raka: English_Gentle-voiced_man
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_Aussie_Bloke-20260612T123123Z.wav
-  trace_id: 067b2f0ff5a19443bc72b01ba046052f,067b2f12987fa14980b303d043fc2e68,067b2f141416a2a6baa16284dda34e06,067b2f168132ab72b0b828a8d21c7602,067b2f190b05e940a801119698397853
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:31:23.012310+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

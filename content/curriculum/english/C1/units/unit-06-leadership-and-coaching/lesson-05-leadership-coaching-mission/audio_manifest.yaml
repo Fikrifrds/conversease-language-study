@@ -1,5 +1,5 @@
 lesson_key: lesson-05-leadership-coaching-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-English_Aussie_Bloke-20260612T135935Z.wav
-  duration_seconds: 40.68
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-English_Aussie_Bloke-20260612T135935Z.wav
-  trace_id: 067b43ae581c2ea14785d10b5fe8ebaa,067b43b186db5b0c1c5384f4d107b1d6,067b43b35b6c11539a92a73f548e486f,067b43b6557ca4546e14ba338b0f5df7,067b43b9595a8090ddf7c89bf43e2b91,067b43bbaf5b6b8641c6f1041308dc1e,067b43be397732184d9f736e4ea40b96,067b43c19eb5f3e777c814fba9f8eb37,067b43c3c9c1a78e0eb0f02a7ed119b7
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:59:35.174746+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

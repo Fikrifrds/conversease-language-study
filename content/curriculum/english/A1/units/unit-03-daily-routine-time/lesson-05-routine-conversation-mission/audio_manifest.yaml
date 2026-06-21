@@ -1,26 +1,27 @@
 lesson_key: lesson-05-routine-conversation-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260612T123554Z.wav
-  duration_seconds: 17.49
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_Aussie_Bloke-20260612T123554Z.wav
-  trace_id: 067b3017f276b5ba81466ad2291d2c83,067b301a901511cf63b8758b723d0ea1,067b301c65e68d15fa4e97365f5b9ed9,067b301eec0ff1e954ba84e9a42348d7,067b30217e76d70d1ec8927461ad241d,067b30234984dfc7163c37462a8a36ac,067b3026d2b25cedfd133ae2851033f4,067b3028afd20afbef958ff80a5b1ba2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:35:54.106843+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

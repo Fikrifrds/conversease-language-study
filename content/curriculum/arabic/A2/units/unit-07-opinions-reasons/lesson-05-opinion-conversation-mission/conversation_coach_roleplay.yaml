@@ -1,7 +1,7 @@
 scenario_key: arabic_opinion_conversation_mission
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَا رَأْيُكِ فِي هَذِهِ الْخُطَّةِ يَا لَيْلَى؟
+opening_line: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ يَا رَامِي؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu memilih rencana belajar bersama teman:
   meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكِ فِي هَذِهِ الْخُطَّةِ يَا لَيْلَى؟
+- coach: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ يَا رَامِي؟
   hint: 'Jawab dengan pola: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟'
   sample_answer: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟
   focus: 'Latihan frasa: Apa pendapatmu tentang rencana ini?'

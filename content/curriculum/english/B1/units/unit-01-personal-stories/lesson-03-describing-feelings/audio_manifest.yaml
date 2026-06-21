@@ -1,5 +1,5 @@
 lesson_key: lesson-03-describing-feelings
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-03-describing-feelings/listening-English_Aussie_Bloke-20260612T130450Z.wav
-  duration_seconds: 23.06
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-03-describing-feelings/listening-English_Aussie_Bloke-20260612T130450Z.wav
-  trace_id: 067b36e0afe8583258c4df14ba424d0a,067b36e37623fa640ea2172b730de060,067b36e5f3095e6a9c3d358be8193507,067b36e85f417a089d6e30d8321e3f40,067b36eb91b510de9c01ccd3d93e0625,067b36eedc15459c5d86690d90ddb0ee,067b36f047504f8ea8b96e91f67d3ffa
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:04:50.546193+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

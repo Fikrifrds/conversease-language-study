@@ -4,7 +4,7 @@ Use short A1 patterns together to make one conversation.
 
 Examples:
 
-- My name is Lina.
+- My name is Raka.
 - I'm Adi.
 - I'm from Indonesia.
 - What is your name?

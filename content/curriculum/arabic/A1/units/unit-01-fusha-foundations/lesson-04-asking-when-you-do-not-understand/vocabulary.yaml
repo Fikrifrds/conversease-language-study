@@ -10,7 +10,7 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "kata". Contoh: "الكلمة"'
 - word: جُمْلَةٌ
   meaning_id: kalimat
-  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَئِي الْجُمْلَةَ."'
+  usage_note: 'Dipakai untuk arti "kalimat". Contoh: "اِقْرَأِ الْجُمْلَةَ."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
   usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "مَعْنَاهَا: قُلِ الشَّيْءَ

@@ -10,7 +10,7 @@ prompts:
     prompt_en: Nice to meet you.
     expected_response_examples:
       - Nice to meet you too.
-      - Nice to meet you too, Sara.
+      - Nice to meet you too, Omar.
   - key: say_nickname
     instruction_id: Sebutkan nama panggilanmu.
     prompt_en: Please call me ...

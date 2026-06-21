@@ -1,7 +1,7 @@
 scenario_key: arabic_asking_about_past_activities
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَاذَا فَعَلْتِ بَعْدَ الدَّرْسِ يَا مَرْيَمُ؟
+opening_line: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ يَا كَرِيمُ؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan
   dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا فَعَلْتِ بَعْدَ الدَّرْسِ يَا مَرْيَمُ؟
+- coach: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ يَا كَرِيمُ؟
   hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟'
   sample_answer: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟
   focus: 'Latihan frasa: Apa yang kamu lakukan setelah pelajaran?'

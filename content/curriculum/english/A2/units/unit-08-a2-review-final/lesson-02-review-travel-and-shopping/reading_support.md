@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina asks for a platform and the next train time, then asks for a phone charger and specifies USB-C.
+Raka asks for a platform and the next train time, then asks for a phone charger and specifies USB-C.
 
 ## Check
 

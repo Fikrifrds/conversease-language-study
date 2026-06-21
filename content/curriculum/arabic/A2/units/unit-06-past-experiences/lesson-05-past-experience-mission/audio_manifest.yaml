@@ -1,5 +1,5 @@
 lesson_key: lesson-05-past-experience-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A2/unit-06-past-experiences/lesson-05-past-experience-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T173145Z.wav
-  duration_seconds: 29.66
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: 3nav5pHC1EYvWOd5LmnA
-    Sara: kdUY91gH5xyDHapxlthT
+    Dimas: kr4VZw8MSZMHE0y2m40n
+    Rami: yXEnnEln9armDCyhkXcA
   line_count: 10
-  script_content_hash: e62db0ee78b50b7aa85dabd69b295773ef600ee1374c9ff0dcac1c1857fc54d2
   audio_format: wav
-  storage_key: conversease/audio/arabic/A2/unit-06-past-experiences/lesson-05-past-experience-mission/listening-3nav5pHC1EYvWOd5LmnA-20260617T173145Z.wav
-  trace_id: Ou7o5KSWWJO3Z1DhR9n9,p8ZAVhFTYmi7hm13FAFZ,pcl14lBA7elqHhvHFfZW,SQQf66PJnojw5YCPH8AN,8AWVk8JupTpnmxyEnG5q,8Jn6wQKTC58me83kvO5X,CLq7AJY2GVoEQcMkHKGK,zds29KoCqJ9KV7bGSEwX,rgiemfQ0AXZzgUSAiiCp,CE4CExKKWY71UbxZFbMZ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T17:31:45.626683+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

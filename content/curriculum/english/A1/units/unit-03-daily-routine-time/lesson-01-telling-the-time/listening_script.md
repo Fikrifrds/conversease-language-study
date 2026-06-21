@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Alya:** What time is the class?
+**Dimas:** What time is the class?
 **Ben:** It's at nine o'clock.
-**Alya:** In the morning?
+**Dimas:** In the morning?
 **Ben:** Yes, in the morning.
-**Alya:** Thank you.
+**Dimas:** Thank you.
 **Ben:** You're welcome.
 
 ## Audio Direction

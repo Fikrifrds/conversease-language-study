@@ -6,7 +6,7 @@ estimated_minutes: 12
 conversation_situation: agreeing_and_disagreeing_politely
 conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan perlu
   setuju, kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.'
-grammar_summary: Gunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكِ kepada perempuan, dan
+grammar_summary: Gunakan أُوَافِقُكَ untuk setuju kepada laki-laki, أُوَافِقُكَ kepada perempuan, dan
   لَا أُوَافِقُ تَمَامًا untuk kurang setuju.
 required_sections:
 - conversation_goal

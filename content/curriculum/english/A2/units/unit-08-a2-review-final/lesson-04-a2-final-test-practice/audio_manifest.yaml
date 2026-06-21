@@ -1,5 +1,5 @@
 lesson_key: lesson-04-a2-final-test-practice
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-English_Aussie_Bloke-20260612T130305Z.wav
-  duration_seconds: 18.17
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Coach: English_Trustworth_Man
-    Learner: English_radiant_girl
+    Learner: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-English_Aussie_Bloke-20260612T130305Z.wav
-  trace_id: 067b36763b182f83510987166d1199a8,067b3678335de6557cb083256c3bd5f3,067b367b3d0ce33022b094e0fa600131,067b367dc218b5e0cf4e8f22eb479402,067b367f7ee5447fc021fcae8735b8a6,067b3681ad97eb3a31cace374ef9b8e9,067b36844dae11ef2dcdbbd259484fe9,067b3687a5bbdcf215fc6d562d95401e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:03:05.212794+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

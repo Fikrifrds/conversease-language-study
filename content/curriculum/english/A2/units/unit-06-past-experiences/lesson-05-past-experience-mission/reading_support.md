@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina tells a friend about yesterday. She went to the museum, took photos, and says it was interesting.
+Raka tells a friend about yesterday. She went to the museum, took photos, and says it was interesting.
 
 ## Check
 

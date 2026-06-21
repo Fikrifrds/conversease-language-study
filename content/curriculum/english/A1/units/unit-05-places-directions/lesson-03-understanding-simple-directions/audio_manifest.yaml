@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-English_Aussie_Bloke-20260612T123837Z.wav
-  duration_seconds: 13.53
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/listening-English_Aussie_Bloke-20260612T123837Z.wav
-  trace_id: 067b30bdfcc054a959a9ce6faf661df2,067b30bfbfa2fa6dc5a047ecd67d759d,067b30c1040da60f16e7e54c06ea4970,067b30c4f3c4cf149043d19a0fdfeaf1,067b30c51ba56749d78c46d56993ed70,067b30c759cd417150ddaf2b84e9c225,067b30ca245df86384525bc2ce3dcb21
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:38:37.445510+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-03-understanding-simple-directions
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

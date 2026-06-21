@@ -1,5 +1,5 @@
 lesson_key: lesson-02-asking-follow-up-questions
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-02-asking-follow-up-questions/listening-English_Aussie_Bloke-20260612T124734Z.wav
-  duration_seconds: 17.59
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Adi: English_Diligent_Man
-    Lina: English_Upbeat_Woman
+    Raka: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-02-asking-follow-up-questions/listening-English_Aussie_Bloke-20260612T124734Z.wav
-  trace_id: 067b32d01eb2524eaccb6e5959b31734,067b32d48c39d329fc3d030a86f2ead9,067b32d66b0029834e37b394c0411e93,067b32d811b093f2bb9eda8d06d5bd44,067b32da9d00de3aca6aadb32726bd54,067b32ddd5e373011c54ef07396b6680,067b32df6c27babea52ae26da4f33fc5,067b32e2771aebfa3f6a65312f0ef680
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:47:34.207906+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

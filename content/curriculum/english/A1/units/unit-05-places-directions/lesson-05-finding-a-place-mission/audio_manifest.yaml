@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260612T123923Z.wav
-  duration_seconds: 18.34
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_Aussie_Bloke-20260612T123923Z.wav
-  trace_id: 067b30e949a55ba9b60436881d7caebd,067b30eb8985bedad76f5bfaec7d956b,067b30eee72afca9fcd99a796b9ccd7a,067b30f0f1f96a3c1cda5c1dbf3ea9d5,067b30f388fafd9ea3318dcfd55d2e3c,067b30f5dedc8b1272509258cc4ffd13,067b30f78fe929630c5728a09e315d0d,067b30fa553404b2ccf6133180790465
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:39:23.836008+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-05-finding-a-place-mission
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

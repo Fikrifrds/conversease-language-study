@@ -89,10 +89,8 @@ export const lessonCatalog = [
       title: "Saying Hello and Goodbye",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Start and close a very simple English conversation.",
-      conversationGoalDetails: "Start and close a very simple English conversation.\n\nLearners should be able to say:\n\n- Good morning.\n- How are you?\n- I'm good, thank you.\n- Nice to meet you.\n- See you later.",
-      setup: "Kamu bertemu seseorang di kelas bahasa Inggris. Mulai dengan sapaan singkat, jawab pertanyaan sederhana, lalu tutup percakapan dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Alya dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Mulai percakapan sederhana di kelas nyata dengan lawan bicara dan lokasi yang jelas." }
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/hero.png", width: 1672, height: 941, alt: "Dimas dan Ben faceless saling menyapa dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Mulai percakapan sederhana di kelas nyata dengan lawan bicara dan lokasi yang jelas." }
       },
       sections: lessonSections
     },
@@ -103,10 +101,8 @@ export const lessonCatalog = [
       title: "Saying Your Name",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say your name naturally and respond when someone introduces themselves.",
-      conversationGoalDetails: "Say your name naturally and ask for someone's name.\n\nLearners should be able to say:\n\n- My name is ...\n- I'm ...\n- What is your name?\n- Nice to meet you.",
-      setup: "Kamu masuk kelas bahasa Inggris dan diminta memperkenalkan nama dengan kalimat pendek yang jelas.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Sara dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas." }
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/hero.png", width: 1672, height: 941, alt: "Omar dan Arif faceless berkenalan nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Perkenalkan nama dengan singkat di kelas nyata bersama lawan bicara yang jelas." }
       },
       sections: lessonSections
     },
@@ -117,10 +113,8 @@ export const lessonCatalog = [
       title: "Asking Someone's Name",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Ask someone's name politely and confirm what you heard.",
-      conversationGoalDetails: "Ask someone's name politely and confirm what you heard.\n\nLearners should be able to say:\n\n- What's your name?\n- Can you repeat that?\n- Is it ...?\n- Yes, that's right.",
-      setup: "Kamu bertemu peserta baru di kelas. Tanyakan namanya, lalu ulangi nama itu dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Nina dan Raka faceless bertanya nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Tanyakan nama dan konfirmasi dengan sopan saat bertemu teman kelas." }
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/hero.png", width: 1672, height: 941, alt: "Adi dan Raka faceless bertanya nama dari jarak sopan di kelas bahasa Inggris Indonesia.", caption: "Tanyakan nama dan konfirmasi dengan sopan saat bertemu teman kelas." }
       },
       sections: lessonSections
     },
@@ -131,10 +125,8 @@ export const lessonCatalog = [
       title: "Saying Where You Are From",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Say where you are from and ask the same question back.",
-      conversationGoalDetails: "Say where you are from and ask the same question back.\n\nLearners should be able to say:\n\n- I'm from ...\n- Where are you from?\n- I'm from Indonesia.\n- Nice to meet you.",
-      setup: "Kamu melanjutkan perkenalan singkat. Jawab asalmu, lalu tanyakan balik agar percakapan berjalan.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Maya dan Omar faceless membicarakan asal dari jarak sopan di kelas Indonesia.", caption: "Sebutkan asal dan tanyakan balik dalam percakapan kelas nyata." }
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/hero.png", width: 1672, height: 941, alt: "Arif dan Omar faceless membicarakan asal dari jarak sopan di kelas Indonesia.", caption: "Sebutkan asal dan tanyakan balik dalam percakapan kelas nyata." }
       },
       sections: lessonSections
     },
@@ -145,10 +137,8 @@ export const lessonCatalog = [
       title: "First Conversation Mission",
       unit: "Greeting & Introducing Yourself",
       conversationGoal: "Combine greeting, name, origin, and a polite closing in one short conversation.",
-      conversationGoalDetails: "Combine greeting, name, origin, and a polite closing in one short conversation.\n\nLearners should be able to say:\n\n- Hi, my name is ...\n- I'm from ...\n- What is your name?\n- Where are you from?\n- Nice to meet you.\n- See you later.",
-      setup: "Ini misi gabungan Unit 1. Selesaikan percakapan pendek tanpa melihat contoh terlalu sering.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Lina dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata." }
+        hero: { src: "/images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png", width: 1672, height: 941, alt: "Raka dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata." }
       },
       sections: lessonSections
     },
@@ -159,8 +149,6 @@ export const lessonCatalog = [
       title: "Spelling Your Name",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Spell your name clearly when someone needs to write it down.",
-      conversationGoalDetails: "Spell your name clearly when someone needs to write it down.\n\nLearners should be able to answer and confirm:\n\n- My name is Dimas.\n- It's spelled D-I-M-A-S.\n- That's right.\n\nLearners should also understand:\n\n- How do you spell it?",
-      setup: "Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas saat diminta.",
       visuals: {
         hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless berlatih mengeja nama di meja registrasi kelas Indonesia.", caption: "Eja nama dengan jelas saat mengisi formulir kelas bersama petugas." }
       },
@@ -173,8 +161,6 @@ export const lessonCatalog = [
       title: "Giving Phone Numbers",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Give a phone number clearly and confirm it when someone reads it back.",
-      conversationGoalDetails: "Give a phone number clearly and confirm it when someone reads it back.\n\nLearners should be able to answer and confirm:\n\n- It's zero eight one two, three four five six, seven eight nine zero.\n- Thank you.\n\nLearners should also understand:\n\n- What is your phone number?",
-      setup: "Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.",
       visuals: {
         hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless berlatih memberi nomor telepon di meja registrasi kelas Indonesia.", caption: "Ucapkan nomor telepon pelan dan konfirmasi dengan jelas tanpa menampilkan angka di gambar." }
       },
@@ -187,8 +173,6 @@ export const lessonCatalog = [
       title: "Sharing Email Addresses",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share an email address slowly and spell the important parts.",
-      conversationGoalDetails: "Share an email address slowly and spell the important parts.\n\nLearners should be able to answer and confirm:\n\n- It's ben dot rama at example dot com.\n- Yes, that's correct.\n\nLearners should also understand:\n\n- What is your email address?",
-      setup: "Kamu ingin menerima informasi kelas lewat email. Petugas meminta alamat emailmu. Sebutkan alamat email dengan pelan, lalu eja bagian yang penting.",
       visuals: {
         hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Officer dan Ben faceless berlatih alamat email di meja registrasi kelas Indonesia.", caption: "Sebutkan alamat email secara pelan tanpa menampilkan teks email di gambar." }
       },
@@ -201,10 +185,8 @@ export const lessonCatalog = [
       title: "Asking for Repetition",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Ask someone to repeat a name, number, or email address politely.",
-      conversationGoalDetails: "Ask someone to repeat a name, number, or email address politely.\n\nLearners should be able to answer and confirm:\n\n- Sorry, can you repeat that, please?\n- Got it. Thank you.\n\nLearners should also understand:\n\n- My phone number is zero eight one three, two two five five, nine zero one.",
-      setup: "Kamu tidak mendengar informasi dengan jelas. Daripada menebak, kamu meminta orang lain mengulang dengan sopan dan mengecek bagian yang kamu dengar.",
       visuals: {
-        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png", width: 1672, height: 941, alt: "Alya dan Ben faceless berlatih meminta pengulangan informasi kontak di kelas Indonesia.", caption: "Minta pengulangan dengan sopan saat informasi belum jelas." }
+        hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/hero.png", width: 1672, height: 941, alt: "Dimas dan Ben faceless berlatih meminta pengulangan informasi kontak di kelas Indonesia.", caption: "Minta pengulangan dengan sopan saat informasi belum jelas." }
       },
       sections: lessonSections
     },
@@ -215,8 +197,6 @@ export const lessonCatalog = [
       title: "Contact Details Mission",
       unit: "Spelling, Numbers & Contact Details",
       conversationGoal: "Share your name, spelling, phone number, and email address in one simple conversation.",
-      conversationGoalDetails: "Share your name, spelling, phone number, and email address in one simple conversation.\n\nLearners should be able to answer and confirm:\n\n- Sure. My name is Dimas.\n- Yes, everything is correct.\n\nLearners should also understand:\n\n- Hi. I need your contact details.",
-      setup: "Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.",
       visuals: {
         hero: { src: "/images/lessons/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Officer dan Dimas faceless menjalankan misi detail kontak di meja registrasi kelas Indonesia.", caption: "Gabungkan nama, ejaan, nomor telepon, dan email dalam satu percakapan." }
       },
@@ -229,8 +209,6 @@ export const lessonCatalog = [
       title: "Telling the Time",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask and answer a simple question about time.",
-      conversationGoalDetails: "Learners can ask and answer a simple question about time.\n\nLearners should be able to say:\n\n- It's at nine o'clock.\n- You're welcome.\n\nLearners should also understand:\n\n- What time is the class?",
-      setup: "Kamu ingin tahu jam mulai kelas online. Tanyakan waktunya, lalu cek apakah itu pagi, siang, atau malam.",
       sections: lessonSections
     },
     {
@@ -240,8 +218,6 @@ export const lessonCatalog = [
       title: "Talking About Daily Routines",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can say a simple daily routine with time words.",
-      conversationGoalDetails: "Learners can say a simple daily routine with time words.\n\nLearners should be able to say:\n\n- I wake up at six.\n- Yes, I work at one.\n\nLearners should also understand:\n\n- What do you do in the morning?",
-      setup: "Kamu mengobrol dengan teman kelas tentang kebiasaan pagi. Sebutkan kegiatan sederhana dan kapan kamu melakukannya.",
       sections: lessonSections
     },
     {
@@ -251,8 +227,6 @@ export const lessonCatalog = [
       title: "Days and Simple Schedules",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can talk about simple days and class schedules.",
-      conversationGoalDetails: "Learners can talk about simple days and class schedules.\n\nLearners should be able to say:\n\n- It's on Monday and Wednesday.\n- See you.\n\nLearners should also understand:\n\n- When is the English class?",
-      setup: "Kamu ingin tahu hari apa kelas berlangsung. Tanyakan jadwal sederhana, lalu ulangi hari dan jamnya.",
       sections: lessonSections
     },
     {
@@ -262,8 +236,6 @@ export const lessonCatalog = [
       title: "Asking When Something Happens",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can ask when a simple event happens and confirm the details.",
-      conversationGoalDetails: "Learners can ask when a simple event happens and confirm the details.\n\nLearners should be able to say:\n\n- It's tomorrow at ten.\n- Yes, that's right.\n\nLearners should also understand:\n\n- When is the meeting?",
-      setup: "Kamu perlu ikut meeting singkat. Tanyakan kapan meeting berlangsung, apakah online, dan konfirmasi waktunya.",
       sections: lessonSections
     },
     {
@@ -273,8 +245,6 @@ export const lessonCatalog = [
       title: "Routine Conversation Mission",
       unit: "Daily Routine & Time",
       conversationGoal: "Learners can combine time, routine, days, and schedule questions in one simple conversation.",
-      conversationGoalDetails: "Learners can combine time, routine, days, and schedule questions in one simple conversation.\n\nLearners should be able to say:\n\n- I wake up at six.\n- See you.\n\nLearners should also understand:\n\n- Hi, Ben. What time do you wake up?",
-      setup: "Ini misi akhir unit. Kamu berbicara tentang rutinitas pagi, jadwal belajar, hari kelas, dan waktu meeting sederhana.",
       sections: lessonSections
     },
     {
@@ -284,8 +254,6 @@ export const lessonCatalog = [
       title: "Saying What You Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they do in a simple work or study conversation.",
-      conversationGoalDetails: "Learners can say what they do in a simple work or study conversation.\n\nLearners should be able to say:\n\n- I'm a student.\n- Yes, I study online.\n\nLearners should also understand:\n\n- What do you do?",
-      setup: "Kamu bertemu teman baru di kelas online. Ia bertanya apa kegiatanmu. Jawab dengan status sederhana seperti student, worker, atau pekerjaan yang mudah.",
       sections: lessonSections
     },
     {
@@ -295,8 +263,6 @@ export const lessonCatalog = [
       title: "Asking About Work or Study",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can ask if someone works or studies and ask one simple follow-up question.",
-      conversationGoalDetails: "Learners can ask if someone works or studies and ask one simple follow-up question.\n\nLearners should be able to say:\n\n- I work in a small office.\n- I study English online.\n\nLearners should also understand:\n\n- Do you work or study?",
-      setup: "Kamu ingin mengenal teman kelas. Tanyakan apakah ia bekerja atau belajar, lalu tanyakan satu detail sederhana tentang kegiatannya.",
       sections: lessonSections
     },
     {
@@ -306,8 +272,6 @@ export const lessonCatalog = [
       title: "Talking About Likes",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they like and ask someone about simple preferences.",
-      conversationGoalDetails: "Learners can say what they like and ask someone about simple preferences.\n\nLearners should be able to say:\n\n- Yes, I like it.\n- It's okay, but speaking is my favorite.\n\nLearners should also understand:\n\n- Do you like English?",
-      setup: "Kamu berbicara dengan teman belajar tentang bagian bahasa Inggris yang kamu suka. Gunakan kalimat pendek untuk menyebutkan hal yang kamu suka.",
       sections: lessonSections
     },
     {
@@ -317,8 +281,6 @@ export const lessonCatalog = [
       title: "Saying What You Can Do",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can say what they can do in English with simple ability sentences.",
-      conversationGoalDetails: "Learners can say what they can do in English with simple ability sentences.\n\nLearners should be able to say:\n\n- I can speak a little.\n- Not yet, but I can try.\n\nLearners should also understand:\n\n- Can you speak English?",
-      setup: "Kamu ditanya kemampuan bahasa Inggrismu. Jawab dengan jujur dan sederhana: apa yang sudah bisa kamu lakukan, dan apa yang belum.",
       sections: lessonSections
     },
     {
@@ -328,8 +290,6 @@ export const lessonCatalog = [
       title: "Work and Study Conversation Mission",
       unit: "Work, Study & Preferences",
       conversationGoal: "Learners can combine work, study, preferences, and simple abilities in one conversation.",
-      conversationGoalDetails: "Learners can combine work, study, preferences, and simple abilities in one conversation.\n\nLearners should be able to say:\n\n- I study English online and I work in a shop.\n- Thank you. I will.\n\nLearners should also understand:\n\n- Hi, Ben. Do you work or study?",
-      setup: "Ini misi akhir unit. Kamu memperkenalkan kegiatanmu, menanyakan pekerjaan atau studi, menyebutkan hal yang kamu suka, dan mengatakan kemampuan sederhana.",
       sections: lessonSections
     },
     {
@@ -339,8 +299,6 @@ export const lessonCatalog = [
       title: "Asking Where a Place Is",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask where a place is and understand a short location answer.",
-      conversationGoalDetails: "# Conversation Goal: Asking Where a Place Is\n\nLearners can ask where a place is and understand a short location answer.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
-      setup: "Kamu berada di gedung kursus baru. Kamu perlu mencari ruang kelas dan bertanya dengan sopan.",
       sections: lessonSections
     },
     {
@@ -350,8 +308,6 @@ export const lessonCatalog = [
       title: "Simple Place Words",
       unit: "Places & Directions",
       conversationGoal: "Learners can name common places and answer where someone is going.",
-      conversationGoalDetails: "# Conversation Goal: Simple Place Words\n\nLearners can name common places and answer where someone is going.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
-      setup: "Kamu bicara dengan teman setelah kelas. Kamu menyebut tempat sederhana yang ingin kamu datangi.",
       sections: lessonSections
     },
     {
@@ -361,8 +317,6 @@ export const lessonCatalog = [
       title: "Understanding Simple Directions",
       unit: "Places & Directions",
       conversationGoal: "Learners can understand very simple directions with go straight, turn left, and turn right.",
-      conversationGoalDetails: "# Conversation Goal: Understanding Simple Directions\n\nLearners can understand very simple directions with go straight, turn left, and turn right.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
-      setup: "Kamu mencari ruang meeting di gedung. Temanmu memberi arahan sederhana.",
       sections: lessonSections
     },
     {
@@ -372,8 +326,6 @@ export const lessonCatalog = [
       title: "Asking How to Get There",
       unit: "Places & Directions",
       conversationGoal: "Learners can ask how to get to a place and follow two simple steps.",
-      conversationGoalDetails: "# Conversation Goal: Asking How to Get There\n\nLearners can ask how to get to a place and follow two simple steps.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
-      setup: "Kamu ingin ke stasiun dari area kursus. Kamu meminta arahan yang sangat singkat.",
       sections: lessonSections
     },
     {
@@ -383,8 +335,6 @@ export const lessonCatalog = [
       title: "Finding a Place Mission",
       unit: "Places & Directions",
       conversationGoal: "Learners can complete a short place-finding conversation from question to confirmation.",
-      conversationGoalDetails: "# Conversation Goal: Finding a Place Mission\n\nLearners can complete a short place-finding conversation from question to confirmation.\n\n## Success Looks Like\n\n- The learner starts politely.\n- The learner asks the main place or direction question.\n- The learner repeats or confirms key information.\n- The learner closes with thanks.",
-      setup: "Kamu perlu menemukan ruang kelas, lalu memastikan arah dengan orang lain secara sopan.",
       sections: lessonSections
     },
     {
@@ -394,8 +344,6 @@ export const lessonCatalog = [
       title: "Ordering a Drink",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order one drink politely and answer a simple size question.",
-      conversationGoalDetails: "# Conversation Goal: Ordering a Drink\n\nLearners can order one drink politely and answer a simple size question.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
-      setup: "Kamu berada di kafe kecil setelah kelas. Pesan satu minuman dengan sopan dan jawab pertanyaan ukuran.",
       sections: lessonSections
     },
     {
@@ -405,8 +353,6 @@ export const lessonCatalog = [
       title: "Asking About Prices",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can ask the price of one item and understand a short price answer.",
-      conversationGoalDetails: "# Conversation Goal: Asking About Prices\n\nLearners can ask the price of one item and understand a short price answer.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
-      setup: "Kamu melihat minuman dan makanan ringan. Tanyakan harga satu item sebelum membeli.",
       sections: lessonSections
     },
     {
@@ -416,8 +362,6 @@ export const lessonCatalog = [
       title: "Buying a Simple Item",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can buy one simple item, ask the price, and complete the payment.",
-      conversationGoalDetails: "# Conversation Goal: Buying a Simple Item\n\nLearners can buy one simple item, ask the price, and complete the payment.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
-      setup: "Kamu berada di toko alat tulis. Kamu membeli satu pulpen dan membayar dengan sopan.",
       sections: lessonSections
     },
     {
@@ -427,8 +371,6 @@ export const lessonCatalog = [
       title: "Saying What You Want",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can say what they want and choose between two simple options.",
-      conversationGoalDetails: "# Conversation Goal: Saying What You Want\n\nLearners can say what they want and choose between two simple options.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
-      setup: "Kamu memilih makanan ringan di kafe. Katakan apa yang kamu mau dan jawab pilihan sederhana.",
       sections: lessonSections
     },
     {
@@ -438,8 +380,6 @@ export const lessonCatalog = [
       title: "Cafe and Shop Mission",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Learners can order, ask a price, choose an option, and complete a simple purchase.",
-      conversationGoalDetails: "# Conversation Goal: Cafe and Shop Mission\n\nLearners can order, ask a price, choose an option, and complete a simple purchase.\n\n## Success Looks Like\n\n- The learner orders or says what they want.\n- The learner handles one price or option question.\n- The learner uses please, thank you, or a polite closing.\n- The learner keeps sentences short and clear.",
-      setup: "Ini misi akhir unit. Kamu memesan minuman dan makanan kecil, bertanya harga, memilih opsi, lalu membayar.",
       sections: lessonSections
     },
     {
@@ -449,8 +389,6 @@ export const lessonCatalog = [
       title: "Saying You Do Not Understand",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can say they do not understand and ask for repetition politely.",
-      conversationGoalDetails: "# Conversation Goal: Saying You Do Not Understand\n\nLearners can say they do not understand and ask for repetition politely.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
-      setup: "Kamu sedang belajar online dan tidak paham satu instruksi. Katakan dengan sopan bahwa kamu belum mengerti.",
       sections: lessonSections
     },
     {
@@ -460,8 +398,6 @@ export const lessonCatalog = [
       title: "Asking for Help",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can ask for help with one simple task and respond to the helper.",
-      conversationGoalDetails: "# Conversation Goal: Asking for Help\n\nLearners can ask for help with one simple task and respond to the helper.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
-      setup: "Kamu kesulitan membuka file kelas. Minta bantuan singkat dan sopan.",
       sections: lessonSections
     },
     {
@@ -471,8 +407,6 @@ export const lessonCatalog = [
       title: "Making Simple Requests",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can make a simple request with please and respond to yes or no.",
-      conversationGoalDetails: "# Conversation Goal: Making Simple Requests\n\nLearners can make a simple request with please and respond to yes or no.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
-      setup: "Kamu sedang di kelas online. Kamu perlu meminta link dan meminta teman menunggu sebentar.",
       sections: lessonSections
     },
     {
@@ -482,8 +416,6 @@ export const lessonCatalog = [
       title: "Apologizing and Thanking",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can apologize for a small problem and thank someone for help.",
-      conversationGoalDetails: "# Conversation Goal: Apologizing and Thanking\n\nLearners can apologize for a small problem and thank someone for help.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
-      setup: "Kamu terlambat masuk kelas online karena masalah koneksi. Minta maaf dan ucapkan terima kasih ketika dibantu.",
       sections: lessonSections
     },
     {
@@ -493,8 +425,6 @@ export const lessonCatalog = [
       title: "Help and Problem Mission",
       unit: "Help, Problems & Requests",
       conversationGoal: "Learners can explain a simple problem, ask for help, make a request, and close politely.",
-      conversationGoalDetails: "# Conversation Goal: Help and Problem Mission\n\nLearners can explain a simple problem, ask for help, make a request, and close politely.\n\n## Success Looks Like\n\n- The learner uses a clear help or problem phrase.\n- The learner makes one polite request.\n- The learner confirms or responds to the helper.\n- The learner closes with thanks or apology.",
-      setup: "Ini misi akhir unit. Kamu tidak paham instruksi, punya masalah file, lalu meminta bantuan dan berterima kasih.",
       sections: lessonSections
     },
     {
@@ -504,8 +434,6 @@ export const lessonCatalog = [
       title: "Review Introductions",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.",
-      conversationGoalDetails: "# Conversation Goal\n\nLearners can greet someone, introduce themselves, say where they are from, and ask simple follow-up questions.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
-      setup: "Ini review awal sebelum final A1. Kamu bertemu teman kelas baru dan merapikan pola greeting, name, origin, dan closing.",
       sections: lessonSections
     },
     {
@@ -515,8 +443,6 @@ export const lessonCatalog = [
       title: "Review Routines and Time",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can talk about a simple daily routine, class day, and class time in one short conversation.",
-      conversationGoalDetails: "# Conversation Goal\n\nLearners can talk about a simple daily routine, class day, and class time in one short conversation.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
-      setup: "Kamu ngobrol dengan teman kelas tentang rutinitas pagi dan jadwal kelas. Fokus pada time, days, dan simple present.",
       sections: lessonSections
     },
     {
@@ -526,8 +452,6 @@ export const lessonCatalog = [
       title: "Review Places and Shopping",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can ask where a place is, follow simple directions, order one item, and ask the price.",
-      conversationGoalDetails: "# Conversation Goal\n\nLearners can ask where a place is, follow simple directions, order one item, and ask the price.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
-      setup: "Kamu mencari cafe dekat kelas, lalu membeli satu minuman. Ini menggabungkan places, directions, ordering, dan prices.",
       sections: lessonSections
     },
     {
@@ -537,8 +461,6 @@ export const lessonCatalog = [
       title: "Final Test Practice",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.",
-      conversationGoalDetails: "# Conversation Goal\n\nLearners can answer common A1 test questions about identity, routine, schedule, places, requests, and simple needs.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
-      setup: "Ini latihan sebelum final test. Kamu menjawab beberapa pertanyaan pendek dari examiner dengan kalimat sederhana dan jelas.",
       sections: lessonSections
     },
     {
@@ -548,8 +470,6 @@ export const lessonCatalog = [
       title: "A1 Final Conversation",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Learners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.",
-      conversationGoalDetails: "# Conversation Goal\n\nLearners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.\n\n## Success Looks Like\n\n- You answer with short complete A1 sentences.\n- You ask one simple follow-up question.\n- You use polite language when you need help or clarification.",
-      setup: "Ini misi final A1. Kamu melakukan percakapan lebih panjang, tetapi kalimat tetap pendek, jelas, dan sesuai level A1.",
       sections: lessonSections
     },
     {
@@ -559,8 +479,6 @@ export const lessonCatalog = [
       title: "Starting Small Talk",
       unit: "Social Small Talk",
       conversationGoal: "Start a short small-talk conversation and keep it going with one follow-up question.",
-      conversationGoalDetails: "Start a short small-talk conversation and keep it going with one follow-up question.\n\nLearners should be able to say:\n\n- How's your day?\n- It's busy today.\n- How was your weekend?\n- Sounds great.\n- Have a good day!",
-      setup: "Kamu bertemu rekan kerja di kantor. Kamu ingin memulai obrolan ringan, tanya kabar, dan tanya satu pertanyaan lanjutan dengan sopan.",
       sections: lessonSections
     },
     {
@@ -570,8 +488,6 @@ export const lessonCatalog = [
       title: "Asking Follow-up Questions",
       unit: "Social Small Talk",
       conversationGoal: "Ask simple follow-up questions to keep a conversation going.",
-      conversationGoalDetails: "Ask simple follow-up questions to keep a conversation going.\n\nLearners should be able to say:\n\n- Where is it?\n- What did you order?\n- Was it good?\n- Do you want to go sometime?\n- That sounds fun.",
-      setup: "Temanmu cerita tentang sesuatu yang dia lakukan kemarin. Kamu ingin bertanya lebih lanjut: di mana, apa yang dia lakukan, dan bagaimana hasilnya.",
       sections: lessonSections
     },
     {
@@ -581,8 +497,6 @@ export const lessonCatalog = [
       title: "Talking About Weekends",
       unit: "Social Small Talk",
       conversationGoal: "Ask about weekend plans and answer with simple details.",
-      conversationGoalDetails: "Ask about weekend plans and answer with simple details.\n\nLearners should be able to say:\n\n- Any plans for the weekend?\n- I'm going to visit my parents.\n- Where do they live?\n- How are you getting there?\n- I'm taking the train.",
-      setup: "Kamu ngobrol sebentar dengan teman. Kamu ingin tanya rencana akhir pekan, dan kamu juga bisa menjawab dengan rencana sederhana.",
       sections: lessonSections
     },
     {
@@ -592,8 +506,6 @@ export const lessonCatalog = [
       title: "Reacting Politely",
       unit: "Social Small Talk",
       conversationGoal: "React politely to good news and to a small problem.",
-      conversationGoalDetails: "React politely to good news and to a small problem.\n\nLearners should be able to say:\n\n- I'm a bit tired today.\n- Are you okay?\n- I'm sorry to hear that.\n- That's great!\n- Nice work.",
-      setup: "Kamu ngobrol singkat dengan teman. Temanmu bilang dia capek. Kamu merespons dengan sopan, lalu temanmu juga cerita kabar baik.",
       sections: lessonSections
     },
     {
@@ -603,8 +515,6 @@ export const lessonCatalog = [
       title: "Small Talk Mission",
       unit: "Social Small Talk",
       conversationGoal: "Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.",
-      conversationGoalDetails: "Start small talk, ask follow-up questions, react politely, and make a simple weekend plan.\n\nLearners should be able to say:\n\n- How's it going?\n- Did you sleep well?\n- I'm sorry to hear that.\n- Any plans for the weekend?\n- Do you want to join?",
-      setup: "Ini misi gabungan Unit 1. Kamu ngobrol singkat dengan teman, tanya kabar, tanya lebih lanjut, lalu buat rencana sederhana untuk akhir pekan.",
       sections: lessonSections
     },
     {
@@ -614,8 +524,6 @@ export const lessonCatalog = [
       title: "Making Plans",
       unit: "Plans & Invitations",
       conversationGoal: "Make a simple plan with a time and a place.",
-      conversationGoalDetails: "Make a simple plan with a time and a place.\n\nLearners should be able to say:\n\n- Let's get coffee.\n- Are you free tomorrow?\n- How about 6 pm?\n- Let's meet at the cafe.\n- See you then.",
-      setup: "Kamu ngobrol dengan teman setelah kelas. Kamu mau ngajak ketemu sebentar, pilih waktu, dan pilih tempat.",
       sections: lessonSections
     },
     {
@@ -625,8 +533,6 @@ export const lessonCatalog = [
       title: "Inviting Someone",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone to an activity and respond politely.",
-      conversationGoalDetails: "Invite someone to an activity and respond politely.\n\nLearners should be able to say:\n\n- Do you want to watch a movie?\n- Would you like to join?\n- I'd love to.\n- That sounds fun.\n- Maybe next time.",
-      setup: "Kamu mau ngajak teman ikut acara sederhana (misalnya nonton film atau makan). Kamu juga bisa menerima atau menolak dengan sopan.",
       sections: lessonSections
     },
     {
@@ -636,8 +542,6 @@ export const lessonCatalog = [
       title: "Accepting and Declining",
       unit: "Plans & Invitations",
       conversationGoal: "Accept or decline an invitation politely with a short reason.",
-      conversationGoalDetails: "Accept or decline an invitation politely with a short reason.\n\nLearners should be able to say:\n\n- Sure, I can.\n- Sorry, I can't.\n- I'm busy tonight.\n- Because I have a meeting.\n- Maybe another time.",
-      setup: "Temanmu ngajak kamu ikut acara. Kamu bisa bilang iya, atau menolak dengan sopan dan alasan singkat.",
       sections: lessonSections
     },
     {
@@ -647,8 +551,6 @@ export const lessonCatalog = [
       title: "Rescheduling",
       unit: "Plans & Invitations",
       conversationGoal: "Reschedule a plan and agree on a new time.",
-      conversationGoalDetails: "Reschedule a plan and agree on a new time.\n\nLearners should be able to say:\n\n- Can we reschedule?\n- Something came up.\n- How about Friday?\n- Does 7 pm work for you?\n- No problem.",
-      setup: "Kamu sudah punya rencana, tapi tiba-tiba tidak bisa. Kamu minta reschedule dan menawarkan waktu baru.",
       sections: lessonSections
     },
     {
@@ -658,8 +560,6 @@ export const lessonCatalog = [
       title: "Invitation Mission",
       unit: "Plans & Invitations",
       conversationGoal: "Invite someone, decline politely with a reason, reschedule, and confirm the new plan.",
-      conversationGoalDetails: "Invite someone, decline politely with a reason, reschedule, and confirm the new plan.\n\nLearners should be able to say:\n\n- Do you want to grab coffee?\n- Sorry, I can't.\n- Something came up.\n- How about Saturday?\n- Does 3 pm work for you?",
-      setup: "Ini misi gabungan Unit 2. Kamu ngajak teman ketemu, temanmu tidak bisa, lalu kalian atur ulang waktu dan tempat.",
       sections: lessonSections
     },
     {
@@ -669,8 +569,6 @@ export const lessonCatalog = [
       title: "Buying a Ticket",
       unit: "Travel & Transport",
       conversationGoal: "Buy a simple ticket and confirm the destination.",
-      conversationGoalDetails: "Buy a simple ticket and confirm the destination.\n\nLearners should be able to say:\n\n- I'd like one ticket to Bandung.\n- One-way, please.\n- How much is it?\n- What time is the next train?\n- Thank you.",
-      setup: "Kamu ada di loket stasiun. Kamu ingin beli tiket ke satu kota, lalu memastikan jenis tiket dan tujuan.",
       sections: lessonSections
     },
     {
@@ -680,8 +578,6 @@ export const lessonCatalog = [
       title: "Asking About Departure Time",
       unit: "Travel & Transport",
       conversationGoal: "Ask about a departure time and confirm the platform.",
-      conversationGoalDetails: "Ask about a departure time and confirm the platform.\n\nLearners should be able to say:\n\n- What time does the train leave?\n- It leaves at 6:30.\n- Which platform?\n- How long is the trip?\n- Thank you.",
-      setup: "Kamu sudah punya tiket. Kamu ingin tahu kereta berangkat jam berapa, dari platform mana, dan berapa lama perjalanan.",
       sections: lessonSections
     },
     {
@@ -691,8 +587,6 @@ export const lessonCatalog = [
       title: "Checking Directions",
       unit: "Travel & Transport",
       conversationGoal: "Check directions and confirm you are going the right way.",
-      conversationGoalDetails: "Check directions and confirm you are going the right way.\n\nLearners should be able to say:\n\n- Excuse me. Where is platform 2?\n- Go straight.\n- Turn left at the stairs.\n- Is this the right way?\n- Thank you.",
-      setup: "Kamu sedang di stasiun atau terminal. Kamu mau ke gate/platform tertentu, tapi kamu ragu. Kamu minta arahan dan konfirmasi.",
       sections: lessonSections
     },
     {
@@ -702,8 +596,6 @@ export const lessonCatalog = [
       title: "Talking to a Driver",
       unit: "Travel & Transport",
       conversationGoal: "Tell a driver where you want to go and ask about the travel time.",
-      conversationGoalDetails: "Tell a driver where you want to go and ask about the travel time.\n\nLearners should be able to say:\n\n- Hi. Can you take me to the station?\n- To the station, please.\n- How long will it take?\n- About 20 minutes.\n- Thank you.",
-      setup: "Kamu naik taksi/ojek online. Kamu mau ke hotel atau stasiun. Kamu menyebutkan tujuan dan tanya berapa lama.",
       sections: lessonSections
     },
     {
@@ -713,8 +605,6 @@ export const lessonCatalog = [
       title: "Transport Mission",
       unit: "Travel & Transport",
       conversationGoal: "Buy a ticket, confirm time and platform, then tell a driver your destination.",
-      conversationGoalDetails: "Buy a ticket, confirm time and platform, then tell a driver your destination.\n\nLearners should be able to say:\n\n- I'd like one ticket to Bandung.\n- What time does it leave?\n- Which platform?\n- Can you take me to the hotel?\n- How long will it take?",
-      setup: "Ini misi gabungan Unit 3. Kamu beli tiket, tanya jadwal dan platform, lalu lanjut naik taksi/ojek ke hotel.",
       sections: lessonSections
     },
     {
@@ -724,8 +614,6 @@ export const lessonCatalog = [
       title: "Asking for an Item",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item in a shop and check if it is available.",
-      conversationGoalDetails: "Ask for an item in a shop and check if it is available.\n\nLearners should be able to say:\n\n- Excuse me. Do you have this in black?\n- I'm looking for a charger.\n- Do you have it?\n- Yes, we do.\n- Sorry, we're out of stock.",
-      setup: "Kamu ada di toko. Kamu mencari satu barang, lalu tanya apakah barang itu tersedia.",
       sections: lessonSections
     },
     {
@@ -735,8 +623,6 @@ export const lessonCatalog = [
       title: "Asking About Size and Color",
       unit: "Shopping & Services",
       conversationGoal: "Ask about size and color and choose one option.",
-      conversationGoalDetails: "Ask about size and color and choose one option.\n\nLearners should be able to say:\n\n- Do you have this in black?\n- Do you have it in size M?\n- We have it in blue.\n- Size M is available.\n- I'll take it.",
-      setup: "Kamu beli baju di toko. Kamu tanya warna dan ukuran yang tersedia, lalu pilih salah satu.",
       sections: lessonSections
     },
     {
@@ -746,8 +632,6 @@ export const lessonCatalog = [
       title: "Comparing Simple Options",
       unit: "Shopping & Services",
       conversationGoal: "Compare two simple options and choose one.",
-      conversationGoalDetails: "Compare two simple options and choose one.\n\nLearners should be able to say:\n\n- Which one is cheaper?\n- This one is cheaper.\n- Which one is better?\n- I'll take the cheaper one.\n- How much is it?",
-      setup: "Kamu lihat dua produk di toko. Kamu ingin membandingkan harga atau kualitas sederhana, lalu pilih salah satu.",
       sections: lessonSections
     },
     {
@@ -757,8 +641,6 @@ export const lessonCatalog = [
       title: "Requesting Service Help",
       unit: "Shopping & Services",
       conversationGoal: "Ask for simple service help and respond politely.",
-      conversationGoalDetails: "Ask for simple service help and respond politely.\n\nLearners should be able to say:\n\n- Could you help me?\n- Can you show me where the batteries are?\n- It's over there.\n- Thank you for your help.\n- You're welcome.",
-      setup: "Kamu butuh bantuan di toko. Kamu minta staff menunjukkan lokasi barang, atau membantu cari ukuran.",
       sections: lessonSections
     },
     {
@@ -768,8 +650,6 @@ export const lessonCatalog = [
       title: "Shopping Service Mission",
       unit: "Shopping & Services",
       conversationGoal: "Ask for an item, ask about size and color, compare options, and request help politely.",
-      conversationGoalDetails: "Ask for an item, ask about size and color, compare options, and request help politely.\n\nLearners should be able to say:\n\n- I'm looking for a charger.\n- Do you have it in black?\n- Do you have it in size M?\n- Which one is cheaper?\n- Could you help me?",
-      setup: "Ini misi gabungan Unit 4. Kamu cari barang, tanya warna/ukuran, bandingkan dua opsi, lalu minta staff menunjukkan lokasinya.",
       sections: lessonSections
     },
     {
@@ -779,8 +659,6 @@ export const lessonCatalog = [
       title: "Saying How You Feel",
       unit: "Health & Appointments",
       conversationGoal: "Say how you feel and mention one or two simple symptoms.",
-      conversationGoalDetails: "Say how you feel and mention one or two simple symptoms.\n\nLearners should be able to say:\n\n- I don't feel well.\n- I have a headache.\n- I'm really tired.\n- I think I have a fever.",
-      setup: "Kamu ngobrol sama teman. Kamu merasa nggak enak badan dan jelaskan satu-dua gejala.",
       sections: lessonSections
     },
     {
@@ -790,8 +668,6 @@ export const lessonCatalog = [
       title: "Describing Simple Symptoms",
       unit: "Health & Appointments",
       conversationGoal: "Describe simple symptoms and say how long you have had them.",
-      conversationGoalDetails: "Describe simple symptoms and say how long you have had them.\n\nLearners should be able to say:\n\n- I've had a sore throat since yesterday.\n- I've had a cough for two days.\n- Do you have a fever?\n- A little.",
-      setup: "Kamu di klinik. Kamu jelaskan gejala dan bilang sudah berapa lama.",
       sections: lessonSections
     },
     {
@@ -801,8 +677,6 @@ export const lessonCatalog = [
       title: "Making an Appointment",
       unit: "Health & Appointments",
       conversationGoal: "Ask for an appointment and choose a day and time.",
-      conversationGoalDetails: "Ask for an appointment and choose a day and time.\n\nLearners should be able to say:\n\n- I'd like to make an appointment.\n- Is tomorrow afternoon okay?\n- We have 3:30 p.m. available.\n- I'll take it.",
-      setup: "Kamu telepon klinik untuk buat janji. Kamu pilih hari dan jam.",
       sections: lessonSections
     },
     {
@@ -812,8 +686,6 @@ export const lessonCatalog = [
       title: "Confirming Details",
       unit: "Health & Appointments",
       conversationGoal: "Confirm the appointment date, time, and name details.",
-      conversationGoalDetails: "Confirm the appointment date, time, and name details.\n\nLearners should be able to say:\n\n- Let me confirm the time: 3:30 p.m., right?\n- My name is Mina Park.\n- P-A-R-K.\n- See you tomorrow.",
-      setup: "Kamu konfirmasi detail janji: jam, nama, dan nomor telepon.",
       sections: lessonSections
     },
     {
@@ -823,8 +695,6 @@ export const lessonCatalog = [
       title: "Health Appointment Mission",
       unit: "Health & Appointments",
       conversationGoal: "Check in for an appointment, confirm details, and describe a symptom briefly.",
-      conversationGoalDetails: "Check in for an appointment, confirm details, and describe a symptom briefly.\n\nLearners should be able to say:\n\n- I have an appointment at 3:30.\n- Mina Park. P-A-R-K.\n- I've had a cough for two days.\n- Please take a seat.",
-      setup: "Kamu datang ke klinik untuk janji, konfirmasi nama, lalu jelaskan gejala singkat.",
       sections: lessonSections
     },
     {
@@ -834,8 +704,6 @@ export const lessonCatalog = [
       title: "Talking About Yesterday",
       unit: "Past Experiences",
       conversationGoal: "Talk about what you did yesterday using simple past tense verbs.",
-      conversationGoalDetails: "Talk about what you did yesterday using simple past tense verbs.\n\nLearners should be able to say:\n\n- I went to the mall yesterday.\n- What did you do there?\n- I watched a movie last night.",
-      setup: "Kamu ngobrol sama teman. Kamu cerita singkat tentang kemarin: kamu pergi ke mana dan ngapain.",
       sections: lessonSections
     },
     {
@@ -845,8 +713,6 @@ export const lessonCatalog = [
       title: "Saying Where You Went",
       unit: "Past Experiences",
       conversationGoal: "Say where you went and ask where someone went.",
-      conversationGoalDetails: "Say where you went and ask where someone went.\n\nLearners should be able to say:\n\n- Where did you go yesterday?\n- I went to the museum.\n- I stayed home.",
-      setup: "Kamu ngobrol singkat setelah acara. Kamu bilang kamu pergi ke suatu tempat, lalu tanya lawan bicara.",
       sections: lessonSections
     },
     {
@@ -856,8 +722,6 @@ export const lessonCatalog = [
       title: "Describing a Simple Experience",
       unit: "Past Experiences",
       conversationGoal: "Describe a simple experience and how it felt.",
-      conversationGoalDetails: "Describe a simple experience and how it felt.\n\nLearners should be able to say:\n\n- I tried a new restaurant yesterday.\n- It was delicious.\n- I really liked it.",
-      setup: "Kamu cerita pengalaman singkat (makan di tempat baru). Kamu jelaskan rasanya dengan kata sifat sederhana.",
       sections: lessonSections
     },
     {
@@ -867,8 +731,6 @@ export const lessonCatalog = [
       title: "Asking About Past Activities",
       unit: "Past Experiences",
       conversationGoal: "Ask what someone did and ask follow-up questions about their past activities.",
-      conversationGoalDetails: "Ask what someone did and ask follow-up questions about their past activities.\n\nLearners should be able to say:\n\n- What did you do yesterday evening?\n- Did you cook at home?\n- Yes, I did.",
-      setup: "Kamu ngobrol santai. Kamu tanya apa yang dia lakukan kemarin, lalu tanya detail singkat.",
       sections: lessonSections
     },
     {
@@ -878,8 +740,6 @@ export const lessonCatalog = [
       title: "Past Experience Mission",
       unit: "Past Experiences",
       conversationGoal: "Tell someone about yesterday: where you went, what you did, and how it was.",
-      conversationGoalDetails: "Tell someone about yesterday: where you went, what you did, and how it was.\n\nLearners should be able to say:\n\n- I went to the museum and took photos.\n- It was really interesting.\n- Did you go with anyone?",
-      setup: "Misi: kamu cerita kemarin ke teman. Kamu sebutkan tempat, aktivitas, dan pendapat singkat.",
       sections: lessonSections
     },
     {
@@ -889,8 +749,6 @@ export const lessonCatalog = [
       title: "Saying What You Think",
       unit: "Opinions & Reasons",
       conversationGoal: "Say what you think about a simple topic and give a short opinion.",
-      conversationGoalDetails: "Say what you think about a simple topic and give a short opinion.\n\nLearners should be able to say:\n\n- I think it's really good.\n- The story is simple, but fun.\n- What did you think?",
-      setup: "Kamu ngobrol santai. Kamu kasih opini sederhana tentang film yang baru kamu tonton.",
       sections: lessonSections
     },
     {
@@ -900,8 +758,6 @@ export const lessonCatalog = [
       title: "Giving Simple Reasons",
       unit: "Opinions & Reasons",
       conversationGoal: "Give a simple opinion and a short reason using because.",
-      conversationGoalDetails: "Give a simple opinion and a short reason using because.\n\nLearners should be able to say:\n\n- Why?\n- Because the coffee is good.\n- I agree.",
-      setup: "Kamu kasih opini tentang tempat makan, lalu jelaskan alasannya dengan because.",
       sections: lessonSections
     },
     {
@@ -911,8 +767,6 @@ export const lessonCatalog = [
       title: "Agreeing and Disagreeing Politely",
       unit: "Opinions & Reasons",
       conversationGoal: "Agree or disagree politely and give a short reason.",
-      conversationGoalDetails: "Agree or disagree politely and give a short reason.\n\nLearners should be able to say:\n\n- I'm not sure.\n- I don't think so.\n- That's fair.",
-      setup: "Kamu diskusi santai soal makanan. Kamu setuju dan tidak setuju dengan cara sopan.",
       sections: lessonSections
     },
     {
@@ -922,8 +776,6 @@ export const lessonCatalog = [
       title: "Asking for Opinions",
       unit: "Opinions & Reasons",
       conversationGoal: "Ask for someone's opinion and respond with a simple opinion and reason.",
-      conversationGoalDetails: "Ask for someone's opinion and respond with a simple opinion and reason.\n\nLearners should be able to say:\n\n- What do you think about going to Bali?\n- I think it's a great idea.\n- It might be crowded.",
-      setup: "Kamu lagi memilih tempat liburan. Kamu tanya pendapat teman dan kasih pendapatmu juga.",
       sections: lessonSections
     },
     {
@@ -933,8 +785,6 @@ export const lessonCatalog = [
       title: "Opinion Conversation Mission",
       unit: "Opinions & Reasons",
       conversationGoal: "Have a short opinion conversation: ask for an opinion, give a reason, and respond politely.",
-      conversationGoalDetails: "Have a short opinion conversation: ask for an opinion, give a reason, and respond politely.\n\nLearners should be able to say:\n\n- What do you think about this restaurant?\n- I'm not sure. The service might be slow.\n- Because it's quieter and the coffee is good.",
-      setup: "Misi: kamu dan teman memilih tempat makan. Kamu tanya pendapat, kasih alasan, dan tanggapi dengan sopan.",
       sections: lessonSections
     },
     {
@@ -944,8 +794,6 @@ export const lessonCatalog = [
       title: "Review Social and Plans",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review social small talk and making simple plans with follow-up questions.",
-      conversationGoalDetails: "Review social small talk and making simple plans with follow-up questions.\n\nLearners should be able to say:\n\n- How have you been?\n- What have you been working on?\n- Are you free on Saturday?",
-      setup: "Review: kamu ketemu teman. Kamu mulai small talk, tanya follow-up, lalu ajak bikin rencana sederhana.",
       sections: lessonSections
     },
     {
@@ -955,8 +803,6 @@ export const lessonCatalog = [
       title: "Review Travel and Shopping",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review asking travel questions and shopping requests (tickets, directions, items, sizes).",
-      conversationGoalDetails: "Review asking travel questions and shopping requests (tickets, directions, items, sizes).\n\nLearners should be able to say:\n\n- Where is platform 2?\n- What time is the next train?\n- Do you have a phone charger?",
-      setup: "Review: kamu di stasiun lalu mampir toko. Kamu tanya arah/jadwal, lalu tanya barang dan ukuran.",
       sections: lessonSections
     },
     {
@@ -966,8 +812,6 @@ export const lessonCatalog = [
       title: "Review Health and Past",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Review describing symptoms and talking about the past (yesterday, last night).",
-      conversationGoalDetails: "Review describing symptoms and talking about the past (yesterday, last night).\n\nLearners should be able to say:\n\n- I don't feel well.\n- What did you do yesterday?\n- Did you sleep late last night?",
-      setup: "Review: kamu ngobrol sama teman. Kamu bilang kamu nggak enak badan, lalu cerita singkat tentang kemarin.",
       sections: lessonSections
     },
     {
@@ -977,8 +821,6 @@ export const lessonCatalog = [
       title: "A2 Final Test Practice",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Practice mixed A2 skills with short prompts (plans, shopping, symptoms, past, opinions).",
-      conversationGoalDetails: "Practice mixed A2 skills with short prompts (plans, shopping, symptoms, past, opinions).\n\nLearners should be able to say:\n\n- Do you want to grab coffee this weekend?\n- Do you have a USB-C charger?\n- I've had a cough for two days.",
-      setup: "Latihan final: kamu jawab prompt campuran dengan kalimat pendek yang benar dan jelas.",
       sections: lessonSections
     },
     {
@@ -988,8 +830,6 @@ export const lessonCatalog = [
       title: "A2 Final Conversation",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).",
-      conversationGoalDetails: "Complete a longer everyday conversation using multiple A2 skills (plans, past, opinions, requests).\n\nLearners should be able to say:\n\n- Would you recommend it?\n- Yes, because the coffee is good.\n- Are you free on Saturday afternoon?",
-      setup: "Final: kamu ketemu teman. Kamu small talk, cerita kemarin, kasih opini, lalu bikin rencana dan minta bantuan kecil.",
       sections: lessonSections
     },
     {
@@ -999,8 +839,6 @@ export const lessonCatalog = [
       title: "Setting the Scene",
       unit: "Personal Stories",
       conversationGoal: "Set the scene for a short story (when, where, who) before telling what happened.",
-      conversationGoalDetails: "Set the scene for a short story (when, where, who) before telling what happened.\n\nLearners should be able to say:\n\n- Last weekend, I was in Bandung with my cousin.\n- We were visiting my aunt.\n- It was cooler than Jakarta.",
-      setup: "Kamu cerita pengalaman singkat. Kamu jelaskan kapan, di mana, dan sama siapa dulu sebelum cerita inti.",
       sections: lessonSections
     },
     {
@@ -1010,8 +848,6 @@ export const lessonCatalog = [
       title: "Telling Events in Order",
       unit: "Personal Stories",
       conversationGoal: "Tell story events in order using simple linking words (first, then, after that, finally).",
-      conversationGoalDetails: "Tell story events in order using simple linking words (first, then, after that, finally).\n\nLearners should be able to say:\n\n- First, we checked in at the hotel.\n- What happened after that?\n- Finally, we went back early.",
-      setup: "Kamu cerita kejadian berurutan. Kamu pakai first/then/after that/finally supaya jelas.",
       sections: lessonSections
     },
     {
@@ -1021,8 +857,6 @@ export const lessonCatalog = [
       title: "Describing Feelings",
       unit: "Personal Stories",
       conversationGoal: "Describe how you felt during a story using feeling adjectives.",
-      conversationGoalDetails: "Describe how you felt during a story using feeling adjectives.\n\nLearners should be able to say:\n\n- How did you feel?\n- I felt nervous because we got lost.\n- I felt relieved after that.",
-      setup: "Kamu cerita pengalaman dan jelaskan perasaan kamu (nervous, excited, relieved).",
       sections: lessonSections
     },
     {
@@ -1032,8 +866,6 @@ export const lessonCatalog = [
       title: "Asking About Someone's Story",
       unit: "Personal Stories",
       conversationGoal: "Ask follow-up questions to keep someone's story going (next event, reason, feelings).",
-      conversationGoalDetails: "Ask follow-up questions to keep someone's story going (next event, reason, feelings).\n\nLearners should be able to say:\n\n- What happened next?\n- Why did you choose that route?\n- How did you feel at that moment?",
-      setup: "Kamu dengar cerita teman. Kamu tanya follow-up: next, alasan, dan perasaan.",
       sections: lessonSections
     },
     {
@@ -1043,8 +875,6 @@ export const lessonCatalog = [
       title: "Personal Story Mission",
       unit: "Personal Stories",
       conversationGoal: "Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.",
-      conversationGoalDetails: "Tell a connected personal story with a clear scene, ordered events, and feelings, then answer a follow-up question.\n\nLearners should be able to say:\n\n- Last weekend, I was in ...\n- First..., then...\n- I felt ... but ...",
-      setup: "Misi: kamu cerita pengalaman kemarin. Kamu set the scene, urutkan kejadian, jelaskan perasaan, lalu jawab follow-up.",
       sections: lessonSections
     },
     {
@@ -1054,8 +884,6 @@ export const lessonCatalog = [
       title: "Explaining Your Task",
       unit: "Workplace Conversations",
       conversationGoal: "Explain what you are working on and what the next step is in a short, clear way.",
-      conversationGoalDetails: "Explain what you are working on and what the next step is in a short, clear way.\n\nLearners should be able to say:\n\n- I'm working on ...\n- Next, I'll ...\n- Any blockers?",
-      setup: "Kamu ngobrol sama manager. Kamu jelaskan kamu lagi ngerjain apa dan langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -1065,8 +893,6 @@ export const lessonCatalog = [
       title: "Asking for Clarification",
       unit: "Workplace Conversations",
       conversationGoal: "Ask for clarification politely when you are not sure about a task.",
-      conversationGoalDetails: "Ask for clarification politely when you are not sure about a task.\n\nLearners should be able to say:\n\n- Could you clarify...?\n- Just to confirm, ...\n- I'll send it by ...",
-      setup: "Kamu dapat instruksi kerja. Kamu belum yakin, jadi kamu minta klarifikasi dengan sopan.",
       sections: lessonSections
     },
     {
@@ -1076,8 +902,6 @@ export const lessonCatalog = [
       title: "Giving a Short Update",
       unit: "Workplace Conversations",
       conversationGoal: "Give a short work update with progress, a plan, and one risk or blocker.",
-      conversationGoalDetails: "Give a short work update with progress, a plan, and one risk or blocker.\n\nLearners should be able to say:\n\n- I'm making good progress.\n- What's left?\n- One concern is ...",
-      setup: "Kamu kasih update singkat ke manager: progress, rencana berikutnya, dan risiko kecil.",
       sections: lessonSections
     },
     {
@@ -1087,8 +911,6 @@ export const lessonCatalog = [
       title: "Joining a Simple Meeting",
       unit: "Workplace Conversations",
       conversationGoal: "Join a simple meeting, state your point briefly, and ask for the next step.",
-      conversationGoalDetails: "Join a simple meeting, state your point briefly, and ask for the next step.\n\nLearners should be able to say:\n\n- I'd like to add...\n- I suggest we ...\n- What are the next steps?",
-      setup: "Kamu ikut meeting singkat. Kamu tambahkan satu poin, lalu tanya next step.",
       sections: lessonSections
     },
     {
@@ -1098,8 +920,6 @@ export const lessonCatalog = [
       title: "Workplace Mission",
       unit: "Workplace Conversations",
       conversationGoal: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.",
-      conversationGoalDetails: "Complete a workplace mini-conversation: give an update, ask for clarification, and confirm a deadline.\n\nLearners should be able to say:\n\n- I'm making good progress.\n- Could you clarify...?\n- Just to confirm, ... right?",
-      setup: "Misi: kamu kasih update kerja, minta klarifikasi, lalu konfirmasi deadline dengan jelas.",
       sections: lessonSections
     },
     {
@@ -1109,8 +929,6 @@ export const lessonCatalog = [
       title: "Describing a Problem",
       unit: "Problems & Solutions",
       conversationGoal: "Describe a problem clearly and explain what happened and why it matters.",
-      conversationGoalDetails: "Describe a problem clearly and explain what happened and why it matters.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- It started ...\n- Users can't ..., so ...",
-      setup: "Kamu ngobrol sama manager. Kamu jelaskan masalah yang terjadi dan dampaknya.",
       sections: lessonSections
     },
     {
@@ -1120,8 +938,6 @@ export const lessonCatalog = [
       title: "Suggesting a Solution",
       unit: "Problems & Solutions",
       conversationGoal: "Suggest a solution politely and explain why it could help.",
-      conversationGoalDetails: "Suggest a solution politely and explain why it could help.\n\nLearners should be able to say:\n\n- We could ...\n- Because ...\n- We should ... so ...",
-      setup: "Kamu diskusi solusi. Kamu kasih saran, jelaskan alasan, dan pilih langkah aman.",
       sections: lessonSections
     },
     {
@@ -1131,8 +947,6 @@ export const lessonCatalog = [
       title: "Responding to Advice",
       unit: "Problems & Solutions",
       conversationGoal: "Respond to advice politely and decide what you will do next.",
-      conversationGoalDetails: "Respond to advice politely and decide what you will do next.\n\nLearners should be able to say:\n\n- That sounds good.\n- You're right.\n- I'll try that starting ...",
-      setup: "Kamu cerita masalah kecil, teman kasih saran. Kamu respon dengan sopan dan bilang langkahmu.",
       sections: lessonSections
     },
     {
@@ -1142,8 +956,6 @@ export const lessonCatalog = [
       title: "Making a Simple Decision",
       unit: "Problems & Solutions",
       conversationGoal: "Compare two options and make a simple decision with a clear reason.",
-      conversationGoalDetails: "Compare two options and make a simple decision with a clear reason.\n\nLearners should be able to say:\n\n- I'd rather ... because ...\n- We could ...\n- Let's ...",
-      setup: "Kamu pilih antara dua opsi. Kamu jelaskan alasan singkat dan putuskan bareng.",
       sections: lessonSections
     },
     {
@@ -1153,8 +965,6 @@ export const lessonCatalog = [
       title: "Problem Solving Mission",
       unit: "Problems & Solutions",
       conversationGoal: "Complete a mini problem-solving conversation: describe a problem, suggest a solution, respond to a concern, and decide next steps.",
-      conversationGoalDetails: "Complete a mini problem-solving conversation: describe a problem, suggest a solution, respond to a concern, and decide next steps.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- We could ... because ...\n- It might, so let's ...",
-      setup: "Misi: kamu jelaskan problem, kasih solusi, tanggapi concern, lalu putuskan next step.",
       sections: lessonSections
     },
     {
@@ -1164,8 +974,6 @@ export const lessonCatalog = [
       title: "Checking In",
       unit: "Travel Situations",
       conversationGoal: "Check in at a hotel, confirm your reservation, and ask one practical question.",
-      conversationGoalDetails: "Check in at a hotel, confirm your reservation, and ask one practical question.\n\nLearners should be able to say:\n\n- I'd like to check in.\n- I have a reservation under ...\n- What time is check-out?",
-      setup: "Kamu baru sampai hotel. Kamu check-in, konfirmasi reservasi, lalu tanya info penting (sarapan / check-out).",
       sections: lessonSections
     },
     {
@@ -1175,8 +983,6 @@ export const lessonCatalog = [
       title: "Explaining a Delay",
       unit: "Travel Situations",
       conversationGoal: "Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.",
-      conversationGoalDetails: "Explain that you are delayed, give an updated arrival time, and ask to adjust the plan.\n\nLearners should be able to say:\n\n- I'm running a bit late.\n- My train is delayed.\n- I'll be there in about ... minutes.",
-      setup: "Kamu telat karena transport delay. Kamu kasih kabar, sebut estimasi, dan minta mulai sedikit lebih lambat.",
       sections: lessonSections
     },
     {
@@ -1186,8 +992,6 @@ export const lessonCatalog = [
       title: "Asking for Recommendations",
       unit: "Travel Situations",
       conversationGoal: "Ask for recommendations, describe what you want, and ask one follow-up question.",
-      conversationGoalDetails: "Ask for recommendations, describe what you want, and ask one follow-up question.\n\nLearners should be able to say:\n\n- Do you have any recommendations for ...?\n- I'm looking for ...\n- How do I get there?",
-      setup: "Kamu tanya rekomendasi tempat makan. Kamu jelaskan yang kamu cari, lalu tanya jarak atau cara pergi.",
       sections: lessonSections
     },
     {
@@ -1197,8 +1001,6 @@ export const lessonCatalog = [
       title: "Handling a Simple Complaint",
       unit: "Travel Situations",
       conversationGoal: "Explain a simple problem politely and ask for help or an alternative.",
-      conversationGoalDetails: "Explain a simple problem politely and ask for help or an alternative.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- The ... isn't working.\n- Could you send someone to take a look?",
-      setup: "Kamu punya masalah kecil di hotel. Kamu jelaskan masalahnya, lalu minta bantuan atau ganti kamar.",
       sections: lessonSections
     },
     {
@@ -1208,8 +1010,6 @@ export const lessonCatalog = [
       title: "Travel Situation Mission",
       unit: "Travel Situations",
       conversationGoal: "Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.",
-      conversationGoalDetails: "Complete a travel mini-conversation: explain a delay, check in, ask for a recommendation, and request help with a small issue.\n\nLearners should be able to say:\n\n- I'm running a bit late.\n- I have a reservation under ...\n- Could you help me?",
-      setup: "Misi: kamu telat sampai hotel, check-in, minta rekomendasi makan, lalu minta bantuan untuk masalah kecil di kamar.",
       sections: lessonSections
     },
     {
@@ -1219,8 +1019,6 @@ export const lessonCatalog = [
       title: "Talking About Goals",
       unit: "Goals & Progress",
       conversationGoal: "Talk about a personal goal, give a time frame, and explain why it matters.",
-      conversationGoalDetails: "Talk about a personal goal, give a time frame, and explain why it matters.\n\nLearners should be able to say:\n\n- My goal is to ...\n- By the end of ...\n- Because I want to ...",
-      setup: "Kamu ngobrol sama teman. Kamu cerita goal kamu, kapan targetnya, dan kenapa penting buat kamu.",
       sections: lessonSections
     },
     {
@@ -1230,8 +1028,6 @@ export const lessonCatalog = [
       title: "Explaining Progress",
       unit: "Goals & Progress",
       conversationGoal: "Explain your progress clearly, mention what improved, and say what you still need to work on.",
-      conversationGoalDetails: "Explain your progress clearly, mention what improved, and say what you still need to work on.\n\nLearners should be able to say:\n\n- I'm making progress.\n- I've been practicing ...\n- I still need to ...",
-      setup: "Kamu kasih update progress ke teman. Kamu bilang progressnya gimana, apa yang membaik, dan apa yang masih perlu dilatih.",
       sections: lessonSections
     },
     {
@@ -1241,8 +1037,6 @@ export const lessonCatalog = [
       title: "Discussing Challenges",
       unit: "Goals & Progress",
       conversationGoal: "Describe a challenge, explain why it is difficult, and ask for a simple suggestion.",
-      conversationGoalDetails: "Describe a challenge, explain why it is difficult, and ask for a simple suggestion.\n\nLearners should be able to say:\n\n- The biggest challenge is ...\n- It's hard to ...\n- Do you have any tips?",
-      setup: "Kamu cerita tantangan belajar. Kamu jelaskan kendalanya, kenapa susah, lalu minta saran sederhana.",
       sections: lessonSections
     },
     {
@@ -1252,8 +1046,6 @@ export const lessonCatalog = [
       title: "Making Next-step Plans",
       unit: "Goals & Progress",
       conversationGoal: "State your next step, set a simple schedule, and confirm the plan clearly.",
-      conversationGoalDetails: "State your next step, set a simple schedule, and confirm the plan clearly.\n\nLearners should be able to say:\n\n- My next step is to ...\n- I'll do it ... times this week.\n- I'll keep it simple.",
-      setup: "Kamu bikin rencana langkah berikutnya. Kamu sebut next step, jadwal sederhana, dan konfirmasi plan-nya.",
       sections: lessonSections
     },
     {
@@ -1263,8 +1055,6 @@ export const lessonCatalog = [
       title: "Goals Progress Mission",
       unit: "Goals & Progress",
       conversationGoal: "Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.",
-      conversationGoalDetails: "Complete a mini conversation: state a goal, share progress, describe a challenge, and set a next-step plan.\n\nLearners should be able to say:\n\n- My goal is to ...\n- I'm making progress.\n- My next step is to ...",
-      setup: "Misi: kamu cerita goal kamu, update progress, sebut tantangan, lalu bikin next step plan yang realistis.",
       sections: lessonSections
     },
     {
@@ -1274,8 +1064,6 @@ export const lessonCatalog = [
       title: "Comparing Two Options",
       unit: "Explaining Preferences",
       conversationGoal: "Compare two options and ask what the other person prefers.",
-      conversationGoalDetails: "Compare two options and ask what the other person prefers.\n\nLearners should be able to say:\n\n- Option A is ..., but ...\n- Which do you prefer?\n- I think I prefer ...",
-      setup: "Kamu pilih antara dua opsi (misalnya dua restoran). Kamu bandingin singkat, lalu tanya preferensi teman kamu.",
       sections: lessonSections
     },
     {
@@ -1285,8 +1073,6 @@ export const lessonCatalog = [
       title: "Explaining Why You Prefer Something",
       unit: "Explaining Preferences",
       conversationGoal: "State a preference and explain the main reason clearly.",
-      conversationGoalDetails: "State a preference and explain the main reason clearly.\n\nLearners should be able to say:\n\n- I prefer ... because ...\n- The main reason is ...\n- It feels more convenient.",
-      setup: "Kamu jelasin kenapa kamu prefer satu opsi. Kamu sebut preferensinya dan alasan utamanya.",
       sections: lessonSections
     },
     {
@@ -1296,8 +1082,6 @@ export const lessonCatalog = [
       title: "Asking About Pros and Cons",
       unit: "Explaining Preferences",
       conversationGoal: "Ask about pros and cons and respond with one advantage and one downside.",
-      conversationGoalDetails: "Ask about pros and cons and respond with one advantage and one downside.\n\nLearners should be able to say:\n\n- What are the pros and cons of ...?\n- The advantage is ...\n- One downside is ...",
-      setup: "Kamu lagi diskusi pilihan (misalnya remote vs office). Kamu tanya pros and cons, lalu respon dengan satu kelebihan dan satu kekurangan.",
       sections: lessonSections
     },
     {
@@ -1307,8 +1091,6 @@ export const lessonCatalog = [
       title: "Reaching Agreement",
       unit: "Explaining Preferences",
       conversationGoal: "Suggest a plan, respond politely, and confirm an agreement.",
-      conversationGoalDetails: "Suggest a plan, respond politely, and confirm an agreement.\n\nLearners should be able to say:\n\n- How about we ...?\n- That works for me.\n- So we agree on ...?",
-      setup: "Kamu mau mencapai kesepakatan. Kamu usul rencana, dengar respons, lalu konfirmasi keputusan bareng.",
       sections: lessonSections
     },
     {
@@ -1318,8 +1100,6 @@ export const lessonCatalog = [
       title: "Preference Discussion Mission",
       unit: "Explaining Preferences",
       conversationGoal: "Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.",
-      conversationGoalDetails: "Complete a mini conversation: compare options, explain your preference with reasons, discuss pros and cons, and reach an agreement.\n\nLearners should be able to say:\n\n- I prefer ... because ...\n- The advantage is ...\n- So we agree on ...?",
-      setup: "Misi: kamu diskusi pilihan bareng teman. Kamu bandingin opsi, jelasin preferensi dan alasan, bahas pro/kontra, lalu sepakat.",
       sections: lessonSections
     },
     {
@@ -1329,8 +1109,6 @@ export const lessonCatalog = [
       title: "Describing Your Community",
       unit: "Community & Culture",
       conversationGoal: "Describe your neighborhood, mention what you like, and invite a follow-up question.",
-      conversationGoalDetails: "Describe your neighborhood, mention what you like, and invite a follow-up question.\n\nLearners should be able to say:\n\n- I live in a ... neighborhood.\n- It's known for ...\n- I like it because ...",
-      setup: "Kamu ngobrol sama teman baru. Kamu jelasin lingkungan tempat kamu tinggal, apa yang kamu suka, dan tanya balik.",
       sections: lessonSections
     },
     {
@@ -1340,8 +1118,6 @@ export const lessonCatalog = [
       title: "Talking About Local Habits",
       unit: "Community & Culture",
       conversationGoal: "Describe a local habit, say how often it happens, and give a simple example.",
-      conversationGoalDetails: "Describe a local habit, say how often it happens, and give a simple example.\n\nLearners should be able to say:\n\n- People usually ...\n- In my area, people often ...\n- Especially on weekends.",
-      setup: "Kamu cerita kebiasaan di daerah kamu. Kamu jelaskan biasanya orang ngapain dan kasih contoh singkat.",
       sections: lessonSections
     },
     {
@@ -1351,8 +1127,6 @@ export const lessonCatalog = [
       title: "Asking About Culture",
       unit: "Community & Culture",
       conversationGoal: "Ask about cultural traditions politely and respond with a short explanation.",
-      conversationGoalDetails: "Ask about cultural traditions politely and respond with a short explanation.\n\nLearners should be able to say:\n\n- What is it like in your country?\n- Do people usually...?\n- How about in your country?",
-      setup: "Kamu ngobrol sama orang baru. Kamu tanya tradisi atau kebiasaan di negaranya dengan sopan, lalu jawab singkat tentang negaramu juga.",
       sections: lessonSections
     },
     {
@@ -1362,8 +1136,6 @@ export const lessonCatalog = [
       title: "Being Polite With Differences",
       unit: "Community & Culture",
       conversationGoal: "Talk about cultural differences politely and show respect even if you do things differently.",
-      conversationGoalDetails: "Talk about cultural differences politely and show respect even if you do things differently.\n\nLearners should be able to say:\n\n- Oh, that's interesting.\n- I'm not used to ...\n- That sounds nice.",
-      setup: "Kamu diskusi perbedaan kebiasaan. Kamu jelasin kebiasaanmu, respon dengan sopan, dan tunjukkan respek.",
       sections: lessonSections
     },
     {
@@ -1373,8 +1145,6 @@ export const lessonCatalog = [
       title: "Community Culture Mission",
       unit: "Community & Culture",
       conversationGoal: "Complete a mini conversation: describe your community, share a local habit, ask about culture, and respond politely to differences.",
-      conversationGoalDetails: "Complete a mini conversation: describe your community, share a local habit, ask about culture, and respond politely to differences.\n\nLearners should be able to say:\n\n- It's known for ...\n- People usually ...\n- Oh, that's interesting.",
-      setup: "Misi: kamu kenalan sama orang baru. Kamu ceritain komunitas kamu, kebiasaan lokal, tanya budaya negaranya, lalu respon sopan soal perbedaan.",
       sections: lessonSections
     },
     {
@@ -1384,8 +1154,6 @@ export const lessonCatalog = [
       title: "Review Stories and Work",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Tell a short story and give a clear work update with one next step.",
-      conversationGoalDetails: "Tell a short story and give a clear work update with one next step.\n\nLearners should be able to say:\n\n- Then ...\n- I'm working on ...\n- Next, I'll ...",
-      setup: "Review: kamu cerita kejadian singkat (personal story), lalu kasih update kerja singkat (progress + next step).",
       sections: lessonSections
     },
     {
@@ -1395,8 +1163,6 @@ export const lessonCatalog = [
       title: "Review Problems and Travel",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Explain a problem, describe the impact, and give a travel-style delay update with an estimate.",
-      conversationGoalDetails: "Explain a problem, describe the impact, and give a travel-style delay update with an estimate.\n\nLearners should be able to say:\n\n- There's a problem with ...\n- ..., so ...\n- I'll be there in about ...",
-      setup: "Review: kamu jelasin masalah (impact), lalu kasih update telat (delay + estimasi).",
       sections: lessonSections
     },
     {
@@ -1406,8 +1172,6 @@ export const lessonCatalog = [
       title: "Review Goals and Preferences",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "State a goal, share progress, and explain a preference with a clear reason.",
-      conversationGoalDetails: "State a goal, share progress, and explain a preference with a clear reason.\n\nLearners should be able to say:\n\n- My goal is to ...\n- I've been practicing ...\n- I prefer ... because ...",
-      setup: "Review: kamu cerita goal + progress, lalu jelasin preferensi kamu dengan alasan.",
       sections: lessonSections
     },
     {
@@ -1417,8 +1181,6 @@ export const lessonCatalog = [
       title: "B1 Final Test Practice",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Practice a short mixed conversation with clear, accurate sentences across B1 topics.",
-      conversationGoalDetails: "Practice a short mixed conversation with clear, accurate sentences across B1 topics.\n\nLearners should be able to say:\n\n- My goal is to ...\n- The biggest challenge is ...\n- I prefer ... because ...",
-      setup: "Latihan test: kamu jawab beberapa prompt cepat (goal, progress, problem, preference) dengan kalimat jelas.",
       sections: lessonSections
     },
     {
@@ -1428,8 +1190,6 @@ export const lessonCatalog = [
       title: "B1 Final Conversation",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.",
-      conversationGoalDetails: "Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.\n\nLearners should be able to say:\n\n- At first..., but then...\n- I prefer ... because ...\n- So my next step is to ...",
-      setup: "Final conversation: kamu ngobrol panjang (tetap sederhana) mencakup cerita, goal, problem, preferensi, dan kesepakatan next step.",
       sections: lessonSections
     },
     {
@@ -1439,8 +1199,6 @@ export const lessonCatalog = [
       title: "Stating Your Position",
       unit: "Clear Arguments",
       conversationGoal: "State your position clearly, acknowledge another view, and give one short reason.",
-      conversationGoalDetails: "State your position clearly, acknowledge another view, and give one short reason.\n\nLearners should be able to say:\n\n- In my view, ...\n- I see your point, but ...\n- Because ...",
-      setup: "Kamu lagi diskusi di meeting. Kamu jelasin posisi kamu, akui pendapat orang lain, lalu kasih satu alasan utama.",
       sections: lessonSections
     },
     {
@@ -1450,8 +1208,6 @@ export const lessonCatalog = [
       title: "Supporting With Reasons",
       unit: "Clear Arguments",
       conversationGoal: "Support your argument with two structured reasons and keep it concise.",
-      conversationGoalDetails: "Support your argument with two structured reasons and keep it concise.\n\nLearners should be able to say:\n\n- One reason is ...\n- Another reason is ...\n- That's true, but ...",
-      setup: "Kamu lagi meyakinkan tim. Kamu kasih dua alasan yang terstruktur dan tetap ringkas.",
       sections: lessonSections
     },
     {
@@ -1461,8 +1217,6 @@ export const lessonCatalog = [
       title: "Using Examples",
       unit: "Clear Arguments",
       conversationGoal: "Support your point with a clear example and connect it back to your argument.",
-      conversationGoalDetails: "Support your point with a clear example and connect it back to your argument.\n\nLearners should be able to say:\n\n- For example, ...\n- For instance, ...\n- Such as ...",
-      setup: "Kamu lagi diskusi ide. Kamu kasih contoh yang jelas supaya argumen kamu lebih kuat.",
       sections: lessonSections
     },
     {
@@ -1472,8 +1226,6 @@ export const lessonCatalog = [
       title: "Responding to Counterpoints",
       unit: "Clear Arguments",
       conversationGoal: "Respond to a counterpoint politely, show you understand it, and reinforce your position.",
-      conversationGoalDetails: "Respond to a counterpoint politely, show you understand it, and reinforce your position.\n\nLearners should be able to say:\n\n- That's a fair point.\n- I understand the concern, but ...\n- However, ...",
-      setup: "Kamu debat sehat. Lawan bicara kasih counterpoint, kamu respon sopan dan tetap mempertahankan argumenmu.",
       sections: lessonSections
     },
     {
@@ -1483,8 +1235,6 @@ export const lessonCatalog = [
       title: "Clear Argument Mission",
       unit: "Clear Arguments",
       conversationGoal: "Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.",
-      conversationGoalDetails: "Complete a mini argument: state your position, give reasons and an example, respond to a counterpoint, and agree on next steps.\n\nLearners should be able to say:\n\n- In my view, ...\n- One reason is ...\n- For example, ...",
-      setup: "Misi: kamu usul perubahan proses kerja. Kamu jelasin posisi, dua alasan, satu contoh, respon counterpoint, lalu sepakat next step.",
       sections: lessonSections
     },
     {
@@ -1494,8 +1244,6 @@ export const lessonCatalog = [
       title: "Opening a Meeting Point",
       unit: "Professional Meetings",
       conversationGoal: "Open a discussion point clearly, explain why it matters, and invite input.",
-      conversationGoalDetails: "Open a discussion point clearly, explain why it matters, and invite input.\n\nLearners should be able to say:\n\n- I'd like to bring up ...\n- The main point is ...\n- I'd like to hear your thoughts.",
-      setup: "Kamu lagi meeting. Kamu buka satu poin diskusi, jelasin kenapa penting, lalu minta pendapat tim.",
       sections: lessonSections
     },
     {
@@ -1505,8 +1253,6 @@ export const lessonCatalog = [
       title: "Clarifying Scope",
       unit: "Professional Meetings",
       conversationGoal: "Clarify scope, ask what is included, and confirm what is out of scope.",
-      conversationGoalDetails: "Clarify scope, ask what is included, and confirm what is out of scope.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- Does this include ...?\n- That's out of scope.",
-      setup: "Kamu ingin scope jelas. Kamu tanya apa yang termasuk, apa yang tidak, dan konfirmasi biar nggak salah paham.",
       sections: lessonSections
     },
     {
@@ -1516,8 +1262,6 @@ export const lessonCatalog = [
       title: "Giving Constructive Feedback",
       unit: "Professional Meetings",
       conversationGoal: "Give constructive feedback politely, focus on impact, and suggest one improvement.",
-      conversationGoalDetails: "Give constructive feedback politely, focus on impact, and suggest one improvement.\n\nLearners should be able to say:\n\n- I noticed ...\n- One suggestion is ...\n- It might help if ...",
-      setup: "Kamu kasih feedback ke rekan kerja. Kamu tetap sopan, jelasin dampaknya, lalu kasih satu saran perbaikan.",
       sections: lessonSections
     },
     {
@@ -1527,8 +1271,6 @@ export const lessonCatalog = [
       title: "Summarizing Decisions",
       unit: "Professional Meetings",
       conversationGoal: "Summarize decisions clearly, confirm action items, and assign owners.",
-      conversationGoalDetails: "Summarize decisions clearly, confirm action items, and assign owners.\n\nLearners should be able to say:\n\n- To summarize, ...\n- Action items are ...\n- We'll check progress on ...",
-      setup: "Di akhir meeting kamu rangkum keputusan, sebut action items, dan jelas siapa yang ngerjain.",
       sections: lessonSections
     },
     {
@@ -1538,8 +1280,6 @@ export const lessonCatalog = [
       title: "Meeting Participation Mission",
       unit: "Professional Meetings",
       conversationGoal: "Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.",
-      conversationGoalDetails: "Complete a mini meeting: open a point, clarify scope, give constructive feedback, and summarize decisions with action items.\n\nLearners should be able to say:\n\n- I'd like to bring up ...\n- Just to clarify, ...\n- To summarize, ...",
-      setup: "Misi: kamu aktif di meeting secara profesional dari awal sampai rangkuman akhir.",
       sections: lessonSections
     },
     {
@@ -1549,8 +1289,6 @@ export const lessonCatalog = [
       title: "Expressing Priorities",
       unit: "Negotiation & Compromise",
       conversationGoal: "State your priorities clearly, explain what matters most, and ask about the other person's priorities.",
-      conversationGoalDetails: "State your priorities clearly, explain what matters most, and ask about the other person's priorities.\n\nLearners should be able to say:\n\n- My top priority is ...\n- What matters most is ...\n- What's your top priority?",
-      setup: "Kamu lagi diskusi rencana kerja. Kamu jelasin prioritas utama kamu, jelasin alasannya singkat, lalu tanya prioritas lawan bicara.",
       sections: lessonSections
     },
     {
@@ -1560,8 +1298,6 @@ export const lessonCatalog = [
       title: "Making a Proposal",
       unit: "Negotiation & Compromise",
       conversationGoal: "Make a clear proposal, suggest a timeline, and ask if it works.",
-      conversationGoalDetails: "Make a clear proposal, suggest a timeline, and ask if it works.\n\nLearners should be able to say:\n\n- I propose we ...\n- How about we ...?\n- Would that work for you?",
-      setup: "Kamu negosiasi rencana. Kamu ajukan proposal, sebut timeline, lalu tanya apakah itu works buat tim.",
       sections: lessonSections
     },
     {
@@ -1571,8 +1307,6 @@ export const lessonCatalog = [
       title: "Handling Objections",
       unit: "Negotiation & Compromise",
       conversationGoal: "Respond to an objection politely, ask a clarifying question, and offer a revised proposal.",
-      conversationGoalDetails: "Respond to an objection politely, ask a clarifying question, and offer a revised proposal.\n\nLearners should be able to say:\n\n- I understand the concern.\n- Would it help if we ...?\n- What if we ...?",
-      setup: "Lawan bicara keberatan. Kamu respon sopan, tanya klarifikasi, lalu revisi proposal biar lebih bisa diterima.",
       sections: lessonSections
     },
     {
@@ -1582,8 +1316,6 @@ export const lessonCatalog = [
       title: "Finding Middle Ground",
       unit: "Negotiation & Compromise",
       conversationGoal: "Find a compromise, propose a middle-ground option, and confirm agreement.",
-      conversationGoalDetails: "Find a compromise, propose a middle-ground option, and confirm agreement.\n\nLearners should be able to say:\n\n- Maybe we can ...\n- A compromise could be ...\n- Can we agree on ...?",
-      setup: "Kalian beda pendapat. Kamu usul opsi tengah, jelasin trade-off singkat, lalu konfirmasi kesepakatan.",
       sections: lessonSections
     },
     {
@@ -1593,8 +1325,6 @@ export const lessonCatalog = [
       title: "Negotiation Mission",
       unit: "Negotiation & Compromise",
       conversationGoal: "Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.",
-      conversationGoalDetails: "Complete a negotiation: align priorities, make a proposal, handle objections, find middle ground, and agree on next steps.\n\nLearners should be able to say:\n\n- My top priority is ...\n- I propose we ...\n- A compromise could be ...",
-      setup: "Misi: kamu negosiasi rencana launch. Kamu align prioritas, usul proposal, handle keberatan, cari kompromi, lalu sepakat next step.",
       sections: lessonSections
     },
     {
@@ -1604,8 +1334,6 @@ export const lessonCatalog = [
       title: "Structuring a Short Presentation",
       unit: "Presenting Ideas",
       conversationGoal: "Present an idea with a clear structure: context, proposal, and next steps.",
-      conversationGoalDetails: "Present an idea with a clear structure: context, proposal, and next steps.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- My proposal is ...\n- Next steps are ...",
-      setup: "Kamu presentasi ide di meeting singkat. Kamu kasih konteks, jelasin proposal, dan tutup dengan next steps.",
       sections: lessonSections
     },
     {
@@ -1615,8 +1343,6 @@ export const lessonCatalog = [
       title: "Signposting Clearly",
       unit: "Presenting Ideas",
       conversationGoal: "Use clear signposting to guide listeners through your presentation.",
-      conversationGoalDetails: "Use clear signposting to guide listeners through your presentation.\n\nLearners should be able to say:\n\n- First, ...\n- Next, ...\n- Finally, ...",
-      setup: "Kamu presentasi ide. Kamu pakai signposting supaya alurnya mudah diikutin.",
       sections: lessonSections
     },
     {
@@ -1626,8 +1352,6 @@ export const lessonCatalog = [
       title: "Explaining Benefits and Risks",
       unit: "Presenting Ideas",
       conversationGoal: "Explain two benefits, mention one risk, and propose a mitigation plan.",
-      conversationGoalDetails: "Explain two benefits, mention one risk, and propose a mitigation plan.\n\nLearners should be able to say:\n\n- The main benefit is ...\n- A key risk is ...\n- To reduce the risk, we can ...",
-      setup: "Kamu jelasin ide dan trade-off-nya. Kamu sebut manfaat, risikonya, lalu mitigasinya.",
       sections: lessonSections
     },
     {
@@ -1637,8 +1361,6 @@ export const lessonCatalog = [
       title: "Answering Questions",
       unit: "Presenting Ideas",
       conversationGoal: "Answer a question clearly, admit uncertainty when needed, and offer to follow up.",
-      conversationGoalDetails: "Answer a question clearly, admit uncertainty when needed, and offer to follow up.\n\nLearners should be able to say:\n\n- That's a good question.\n- As far as I know, ...\n- I'm not sure yet, but ...",
-      setup: "Setelah presentasi, kamu jawab pertanyaan dengan jelas. Kalau belum yakin, kamu bilang jujur dan janji follow up.",
       sections: lessonSections
     },
     {
@@ -1648,8 +1370,6 @@ export const lessonCatalog = [
       title: "Idea Presentation Mission",
       unit: "Presenting Ideas",
       conversationGoal: "Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.",
-      conversationGoalDetails: "Complete a mini presentation: structure the idea, signpost clearly, explain benefits and risks, and answer questions professionally.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- The main benefit is ...\n- That's a good question.",
-      setup: "Misi: kamu presentasi ide singkat lalu Q&A. Kamu pakai struktur, signposting, trade-offs, dan jawaban profesional.",
       sections: lessonSections
     },
     {
@@ -1659,8 +1379,6 @@ export const lessonCatalog = [
       title: "Summarizing an Article",
       unit: "Media & Information",
       conversationGoal: "Summarize an article in 2–3 sentences: main topic, key point, and conclusion.",
-      conversationGoalDetails: "Summarize an article in 2–3 sentences: main topic, key point, and conclusion.\n\nLearners should be able to say:\n\n- The article is about ...\n- The main point is ...\n- It concludes that ...",
-      setup: "Kamu habis baca artikel. Kamu jelasin topiknya, poin utama, dan kesimpulan singkat ke teman kerja.",
       sections: lessonSections
     },
     {
@@ -1670,8 +1388,6 @@ export const lessonCatalog = [
       title: "Discussing Reliable Sources",
       unit: "Media & Information",
       conversationGoal: "Discuss whether a source is reliable, explain why, and suggest a better source.",
-      conversationGoalDetails: "Discuss whether a source is reliable, explain why, and suggest a better source.\n\nLearners should be able to say:\n\n- I'm not sure it's reliable.\n- I'd check ...\n- I trust sources that ...",
-      setup: "Kamu bahas berita. Kamu nilai sumbernya reliable atau tidak, jelasin alasannya, lalu saranin sumber yang lebih baik.",
       sections: lessonSections
     },
     {
@@ -1681,8 +1397,6 @@ export const lessonCatalog = [
       title: "Explaining a Viewpoint",
       unit: "Media & Information",
       conversationGoal: "Explain a viewpoint clearly, support it with one reason, and acknowledge another perspective.",
-      conversationGoalDetails: "Explain a viewpoint clearly, support it with one reason, and acknowledge another perspective.\n\nLearners should be able to say:\n\n- From my perspective, ...\n- The reason is ...\n- I see the other side, but ...",
-      setup: "Kamu diskusi isu publik. Kamu jelasin viewpoint kamu, kasih alasan, dan akui perspektif lain dengan sopan.",
       sections: lessonSections
     },
     {
@@ -1692,8 +1406,6 @@ export const lessonCatalog = [
       title: "Responding to New Information",
       unit: "Media & Information",
       conversationGoal: "Respond to new information, update your opinion, and ask a follow-up question.",
-      conversationGoalDetails: "Respond to new information, update your opinion, and ask a follow-up question.\n\nLearners should be able to say:\n\n- I wasn't aware of that.\n- That changes things.\n- I'd like to understand ...",
-      setup: "Kamu dapat info baru. Kamu respon dengan terbuka, update pendapat kamu, dan tanya pertanyaan follow-up.",
       sections: lessonSections
     },
     {
@@ -1703,8 +1415,6 @@ export const lessonCatalog = [
       title: "Information Discussion Mission",
       unit: "Media & Information",
       conversationGoal: "Complete a discussion: summarize an article, evaluate source reliability, explain a viewpoint, and respond to new information with next steps.",
-      conversationGoalDetails: "Complete a discussion: summarize an article, evaluate source reliability, explain a viewpoint, and respond to new information with next steps.\n\nLearners should be able to say:\n\n- The article is about ...\n- I'm not sure it's reliable ...\n- From my perspective, ...",
-      setup: "Misi: kamu diskusi informasi. Kamu ringkas artikel, nilai sumber, jelasin viewpoint, lalu respon info baru dan tentuin langkah lanjut.",
       sections: lessonSections
     },
     {
@@ -1714,8 +1424,6 @@ export const lessonCatalog = [
       title: "Understanding Client Needs",
       unit: "Customer & Client Communication",
       conversationGoal: "Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.",
-      conversationGoalDetails: "Ask clarifying questions to understand client needs, confirm requirements, and summarize what you heard.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- Could you share more about ...?\n- So what you need is ...",
-      setup: "Kamu ngobrol sama klien. Kamu gali kebutuhan, tanya detail, lalu rangkum supaya nggak salah paham.",
       sections: lessonSections
     },
     {
@@ -1725,8 +1433,6 @@ export const lessonCatalog = [
       title: "Explaining Options",
       unit: "Customer & Client Communication",
       conversationGoal: "Explain two options clearly, compare trade-offs, and recommend one option.",
-      conversationGoalDetails: "Explain two options clearly, compare trade-offs, and recommend one option.\n\nLearners should be able to say:\n\n- We have two options.\n- The trade-off is ...\n- I'd recommend ...",
-      setup: "Kamu jelasin dua opsi solusi ke klien. Kamu bandingin trade-off-nya dan kasih rekomendasi.",
       sections: lessonSections
     },
     {
@@ -1736,8 +1442,6 @@ export const lessonCatalog = [
       title: "Handling Concerns",
       unit: "Customer & Client Communication",
       conversationGoal: "Acknowledge a client concern, ask a clarifying question, and propose a mitigation plan.",
-      conversationGoalDetails: "Acknowledge a client concern, ask a clarifying question, and propose a mitigation plan.\n\nLearners should be able to say:\n\n- I understand the concern.\n- Could you clarify ...?\n- To reduce the risk, we can ...",
-      setup: "Klien punya kekhawatiran. Kamu respon dengan empati, tanya detail, lalu kasih mitigasi.",
       sections: lessonSections
     },
     {
@@ -1747,8 +1451,6 @@ export const lessonCatalog = [
       title: "Confirming Next Steps",
       unit: "Customer & Client Communication",
       conversationGoal: "Confirm next steps, assign owners, and set a timeline clearly.",
-      conversationGoalDetails: "Confirm next steps, assign owners, and set a timeline clearly.\n\nLearners should be able to say:\n\n- To confirm, ...\n- Next steps are ...\n- Does that timeline work for you?",
-      setup: "Kamu menutup call dengan klien. Kamu rangkum keputusan, sebut next steps, dan set timeline.",
       sections: lessonSections
     },
     {
@@ -1758,8 +1460,6 @@ export const lessonCatalog = [
       title: "Client Conversation Mission",
       unit: "Customer & Client Communication",
       conversationGoal: "Complete a client conversation: understand needs, explain options, handle concerns, and confirm next steps.",
-      conversationGoalDetails: "Complete a client conversation: understand needs, explain options, handle concerns, and confirm next steps.\n\nLearners should be able to say:\n\n- Just to clarify, ...\n- We have two options ...\n- Next steps are ...",
-      setup: "Misi: kamu handle call klien dari discovery sampai follow-up yang jelas.",
       sections: lessonSections
     },
     {
@@ -1769,8 +1469,6 @@ export const lessonCatalog = [
       title: "Framing the Problem",
       unit: "Complex Problem Solving",
       conversationGoal: "Frame a complex problem clearly by defining scope, success criteria, and constraints.",
-      conversationGoalDetails: "Frame a complex problem clearly by defining scope, success criteria, and constraints.\n\nLearners should be able to say:\n\n- Let's define the problem statement first.\n- Can we agree on the scope?\n- What does success look like?",
-      setup: "Kamu lagi meeting internal. Kamu bantu tim ngerumuskan problem statement yang jelas sebelum loncat ke solusi.",
       sections: lessonSections
     },
     {
@@ -1780,8 +1478,6 @@ export const lessonCatalog = [
       title: "Explaining Causes",
       unit: "Complex Problem Solving",
       conversationGoal: "Explain possible causes using evidence language and clarify what data supports each cause.",
-      conversationGoalDetails: "Explain possible causes using evidence language and clarify what data supports each cause.\n\nLearners should be able to say:\n\n- One possible cause is ...\n- Based on the data, ...\n- It might be due to ...",
-      setup: "Kamu bahas akar masalah. Kamu jelasin kemungkinan penyebab dengan bahasa yang hati-hati dan berbasis data.",
       sections: lessonSections
     },
     {
@@ -1791,8 +1487,6 @@ export const lessonCatalog = [
       title: "Discussing Tradeoffs",
       unit: "Complex Problem Solving",
       conversationGoal: "Discuss trade-offs between options, highlighting impact on cost, time, and risk.",
-      conversationGoalDetails: "Discuss trade-offs between options, highlighting impact on cost, time, and risk.\n\nLearners should be able to say:\n\n- The trade-off is ...\n- If we optimize for ..., we might ...\n- On the other hand, ...",
-      setup: "Kamu bandingin beberapa opsi. Kamu jelasin trade-off-nya dengan jelas: cepat vs kualitas, biaya vs risiko, dll.",
       sections: lessonSections
     },
     {
@@ -1802,8 +1496,6 @@ export const lessonCatalog = [
       title: "Recommending a Solution",
       unit: "Complex Problem Solving",
       conversationGoal: "Recommend a solution clearly by summarizing reasoning, risks, and next steps.",
-      conversationGoalDetails: "Recommend a solution clearly by summarizing reasoning, risks, and next steps.\n\nLearners should be able to say:\n\n- Given these constraints, I'd recommend ...\n- The main risk is ...\n- We can mitigate it by ...",
-      setup: "Kamu harus kasih rekomendasi. Kamu rangkum reasoning-nya, sebut risiko utama, dan next steps yang realistis.",
       sections: lessonSections
     },
     {
@@ -1813,8 +1505,6 @@ export const lessonCatalog = [
       title: "Problem Solving Discussion Mission",
       unit: "Complex Problem Solving",
       conversationGoal: "Lead a problem-solving discussion: frame the problem, explain causes, discuss trade-offs, and recommend next steps.",
-      conversationGoalDetails: "Lead a problem-solving discussion: frame the problem, explain causes, discuss trade-offs, and recommend next steps.\n\nLearners should be able to say:\n\n- Let's define the problem statement first.\n- One possible cause is ...\n- Given these constraints, I'd recommend ...",
-      setup: "Misi: kamu pimpin diskusi problem solving dari framing sampai rekomendasi, lalu set next steps yang jelas.",
       sections: lessonSections
     },
     {
@@ -1824,8 +1514,6 @@ export const lessonCatalog = [
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Summarize your position clearly, support it with reasons, and close with clear next steps.",
-      conversationGoalDetails: "Summarize your position clearly, support it with reasons, and close with clear next steps.\n\nLearners should be able to say:\n\n- My position is that ...\n- The main reason is ...\n- Next steps are ...",
-      setup: "Review: kamu rangkum posisi kamu di meeting, kasih alasan, lalu tutup dengan next steps yang jelas.",
       sections: lessonSections
     },
     {
@@ -1835,8 +1523,6 @@ export const lessonCatalog = [
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Propose a compromise, explain trade-offs, and present a recommendation with clear signposting.",
-      conversationGoalDetails: "Propose a compromise, explain trade-offs, and present a recommendation with clear signposting.\n\nLearners should be able to say:\n\n- Here's my proposal: ...\n- The trade-off is ...\n- I'd recommend ...",
-      setup: "Review: kamu negosiasi timeline dan scope, jelasin trade-off, dan present rekomendasi singkat dengan signposting.",
       sections: lessonSections
     },
     {
@@ -1846,8 +1532,6 @@ export const lessonCatalog = [
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Discuss information sources carefully and handle a client call with clarity, empathy, and next steps.",
-      conversationGoalDetails: "Discuss information sources carefully and handle a client call with clarity, empathy, and next steps.\n\nLearners should be able to say:\n\n- We should verify it with ...\n- I understand the concern.\n- Next steps are ...",
-      setup: "Review: kamu bahas sumber informasi (reliability) dan jalankan mini client call: clarify, handle concerns, confirm next steps.",
       sections: lessonSections
     },
     {
@@ -1857,8 +1541,6 @@ export const lessonCatalog = [
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.",
-      conversationGoalDetails: "Answer a set of B2-style prompts: position, evidence, trade-offs, recommendation, and next steps.\n\nLearners should be able to say:\n\n- My position is that ...\n- Based on the data, ...\n- Next steps are ...",
-      setup: "Latihan final: kamu jawab prompt satu per satu dengan struktur B2 yang rapi dan natural.",
       sections: lessonSections
     },
     {
@@ -1868,8 +1550,6 @@ export const lessonCatalog = [
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.",
-      conversationGoalDetails: "Hold a final B2 discussion: frame the issue, compare options, address concerns, and align on a decision.\n\nLearners should be able to say:\n\n- Let's define the scope.\n- The trade-off is ...\n- Next steps are ...",
-      setup: "Final: kamu pimpin diskusi profesional yang utuh dan natural (problem framing, trade-off, rekomendasi, next steps).",
       sections: lessonSections
     },
     {
@@ -1879,8 +1559,6 @@ export const lessonCatalog = [
       title: "Qualifying Your Opinion",
       unit: "Nuanced Opinions",
       conversationGoal: "Qualify your opinion with nuance by signaling scope, conditions, and limits.",
-      conversationGoalDetails: "Qualify your opinion with nuance by signaling scope, conditions, and limits.\n\nLearners should be able to say:\n\n- To some extent, ...\n- That said, ...\n- In principle ..., but ...",
-      setup: "Kamu lagi diskusi kerja. Kamu setuju sebagian, tapi kamu kasih batasan dan kondisi biar opini kamu lebih presisi.",
       sections: lessonSections
     },
     {
@@ -1890,8 +1568,6 @@ export const lessonCatalog = [
       title: "Expressing Certainty and Doubt",
       unit: "Nuanced Opinions",
       conversationGoal: "Express degrees of certainty and doubt using precise language and evidence framing.",
-      conversationGoalDetails: "Express degrees of certainty and doubt using precise language and evidence framing.\n\nLearners should be able to say:\n\n- I'm fairly confident ...\n- I'm not entirely convinced ...\n- It's unlikely that ..., but ...",
-      setup: "Kamu diskusi strategi. Kamu harus bilang mana yang kamu yakin, mana yang kamu ragu, tanpa terdengar ragu-ragu atau terlalu absolut.",
       sections: lessonSections
     },
     {
@@ -1901,8 +1577,6 @@ export const lessonCatalog = [
       title: "Balancing Two Viewpoints",
       unit: "Nuanced Opinions",
       conversationGoal: "Balance two viewpoints fairly and reach a nuanced conclusion.",
-      conversationGoalDetails: "Balance two viewpoints fairly and reach a nuanced conclusion.\n\nLearners should be able to say:\n\n- On the one hand, ...\n- While it's true that ..., ...\n- On balance, ...",
-      setup: "Kamu diminta menilai dua sisi. Kamu harus adil, jelasin pro-kontra, lalu kasih kesimpulan yang seimbang.",
       sections: lessonSections
     },
     {
@@ -1912,8 +1586,6 @@ export const lessonCatalog = [
       title: "Softening Disagreement",
       unit: "Nuanced Opinions",
       conversationGoal: "Disagree tactfully while staying precise and constructive.",
-      conversationGoalDetails: "Disagree tactfully while staying precise and constructive.\n\nLearners should be able to say:\n\n- I see your point, but ...\n- With respect, ...\n- I might frame it differently: ...",
-      setup: "Kamu nggak setuju di meeting, tapi kamu harus tetap sopan, jelas, dan konstruktif.",
       sections: lessonSections
     },
     {
@@ -1923,8 +1595,6 @@ export const lessonCatalog = [
       title: "Nuanced Opinion Mission",
       unit: "Nuanced Opinions",
       conversationGoal: "Hold a nuanced discussion: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully.",
-      conversationGoalDetails: "Hold a nuanced discussion: qualify your stance, calibrate certainty, balance viewpoints, and disagree tactfully.\n\nLearners should be able to say:\n\n- To some extent, ...\n- I'm fairly confident ...\n- On balance, ...",
-      setup: "Misi: kamu ikut diskusi yang menuntut opini yang nuanced. Kamu harus presisi, sopan, dan tetap decisive.",
       sections: lessonSections
     },
     {
@@ -1934,8 +1604,6 @@ export const lessonCatalog = [
       title: "Aligning Stakeholders",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.",
-      conversationGoalDetails: "Align stakeholders by clarifying priorities, surfacing constraints, and confirming a shared decision.\n\nLearners should be able to say:\n\n- To make sure we're aligned, ...\n- From your perspective, ...\n- Can we agree that ...?",
-      setup: "Kamu fasilitasi alignment meeting lintas tim. Kamu klarifikasi prioritas tiap pihak, highlight constraint, lalu sepakati keputusan.",
       sections: lessonSections
     },
     {
@@ -1945,8 +1613,6 @@ export const lessonCatalog = [
       title: "Managing Expectations",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Manage expectations by setting clear boundaries, timelines, and what success looks like.",
-      conversationGoalDetails: "Manage expectations by setting clear boundaries, timelines, and what success looks like.\n\nLearners should be able to say:\n\n- What we can commit to is ...\n- The earliest we can deliver is ...\n- Success means ...",
-      setup: "Ada permintaan besar. Kamu harus set ekspektasi yang realistis, jelas, dan tetap menjaga hubungan baik.",
       sections: lessonSections
     },
     {
@@ -1956,8 +1622,6 @@ export const lessonCatalog = [
       title: "Handling Sensitive Feedback",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.",
-      conversationGoalDetails: "Give sensitive feedback tactfully, focusing on impact and concrete next steps.\n\nLearners should be able to say:\n\n- I wanted to flag ...\n- The impact is that ...\n- Would you be open to ...?",
-      setup: "Kamu perlu kasih feedback sensitif ke stakeholder. Kamu tetap sopan, fokus ke impact, dan tawarkan next step yang konkret.",
       sections: lessonSections
     },
     {
@@ -1967,8 +1631,6 @@ export const lessonCatalog = [
       title: "Communicating Risk",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Communicate risk clearly by describing likelihood, impact, and mitigation options.",
-      conversationGoalDetails: "Communicate risk clearly by describing likelihood, impact, and mitigation options.\n\nLearners should be able to say:\n\n- The main risk is ...\n- There's a reasonable chance ...\n- We can mitigate it by ...",
-      setup: "Kamu harus komunikasi risiko ke stakeholder. Kamu jelasin probabilitas, dampak, dan mitigasi dengan bahasa yang jelas.",
       sections: lessonSections
     },
     {
@@ -1978,8 +1640,6 @@ export const lessonCatalog = [
       title: "Strategic Workplace Mission",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.",
-      conversationGoalDetails: "Lead a strategic workplace conversation: align stakeholders, manage expectations, give sensitive feedback, and communicate risk.\n\nLearners should be able to say:\n\n- To make sure we're aligned, ...\n- What we can commit to is ...\n- The main risk is ...",
-      setup: "Misi: kamu memimpin diskusi lintas tim. Kamu selaraskan stakeholder, set ekspektasi, kasih feedback sensitif, dan jelasin risk + mitigasi.",
       sections: lessonSections
     },
     {
@@ -1989,8 +1649,6 @@ export const lessonCatalog = [
       title: "Framing a Complex Topic",
       unit: "Advanced Presentations",
       conversationGoal: "Frame a complex topic by setting context, defining terms, and stating the purpose clearly.",
-      conversationGoalDetails: "Frame a complex topic by setting context, defining terms, and stating the purpose clearly.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- By X, I mean ...\n- The purpose of this is to ...",
-      setup: "Kamu presentasi topik kompleks. Kamu mulai dengan konteks, definisi istilah, dan tujuan supaya audiens nggak kehilangan arah.",
       sections: lessonSections
     },
     {
@@ -2000,8 +1658,6 @@ export const lessonCatalog = [
       title: "Building a Persuasive Flow",
       unit: "Advanced Presentations",
       conversationGoal: "Build a persuasive flow by stating a claim, supporting it with evidence, and addressing counterarguments.",
-      conversationGoalDetails: "Build a persuasive flow by stating a claim, supporting it with evidence, and addressing counterarguments.\n\nLearners should be able to say:\n\n- The core claim is that ...\n- The evidence suggests ...\n- A common concern is ...",
-      setup: "Kamu presentasi dengan tujuan meyakinkan. Kamu harus runtut: claim, evidence, counterpoint, lalu conclusion.",
       sections: lessonSections
     },
     {
@@ -2011,8 +1667,6 @@ export const lessonCatalog = [
       title: "Using Precise Transitions",
       unit: "Advanced Presentations",
       conversationGoal: "Use precise transitions to guide listeners through complex ideas smoothly.",
-      conversationGoalDetails: "Use precise transitions to guide listeners through complex ideas smoothly.\n\nLearners should be able to say:\n\n- That brings me to ...\n- What's crucial here is ...\n- With that in mind, ...",
-      setup: "Kamu menjelaskan ide yang panjang. Kamu perlu transisi yang rapi supaya audiens bisa ngikutin alurnya.",
       sections: lessonSections
     },
     {
@@ -2022,8 +1676,6 @@ export const lessonCatalog = [
       title: "Handling Challenging Questions",
       unit: "Advanced Presentations",
       conversationGoal: "Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.",
-      conversationGoalDetails: "Handle challenging questions by acknowledging concerns, answering precisely, and reframing when needed.\n\nLearners should be able to say:\n\n- That's a fair question.\n- The short answer is: ...\n- What I'd emphasize is ...",
-      setup: "Saat Q&A, kamu dapat pertanyaan menantang. Kamu harus tetap tenang, jawab presisi, dan bisa reframe kalau perlu.",
       sections: lessonSections
     },
     {
@@ -2033,8 +1685,6 @@ export const lessonCatalog = [
       title: "Advanced Presentation Mission",
       unit: "Advanced Presentations",
       conversationGoal: "Deliver an advanced presentation and handle challenging questions with clear signposting and strategic answers.",
-      conversationGoalDetails: "Deliver an advanced presentation and handle challenging questions with clear signposting and strategic answers.\n\nLearners should be able to say:\n\n- Today I'd like to ...\n- The evidence suggests ...\n- The short answer is: ...",
-      setup: "Misi: kamu presentasi topik kompleks dengan alur yang meyakinkan, transisi rapi, dan Q&A yang tenang.",
       sections: lessonSections
     },
     {
@@ -2044,8 +1694,6 @@ export const lessonCatalog = [
       title: "Identifying Assumptions",
       unit: "Debate & Analysis",
       conversationGoal: "Identify assumptions behind an argument and ask clarifying questions about the premise.",
-      conversationGoalDetails: "Identify assumptions behind an argument and ask clarifying questions about the premise.\n\nLearners should be able to say:\n\n- It seems you're assuming ...\n- What are we assuming about ...?\n- If that's true, then ...",
-      setup: "Kamu lagi debat ringan di kerja. Kamu ingin menguji argumen dengan cara mengangkat asumsi yang tersembunyi, tanpa menyerang orangnya.",
       sections: lessonSections
     },
     {
@@ -2055,8 +1703,6 @@ export const lessonCatalog = [
       title: "Challenging an Argument",
       unit: "Debate & Analysis",
       conversationGoal: "Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.",
-      conversationGoalDetails: "Challenge an argument constructively using counterexamples, alternative explanations, and precise questions.\n\nLearners should be able to say:\n\n- I'm not sure that follows.\n- What's the evidence for ...?\n- Could there be another explanation?",
-      setup: "Kamu menantang argumen orang lain secara konstruktif. Kamu fokus ke logika dan evidence, bukan menyerang personal.",
       sections: lessonSections
     },
     {
@@ -2066,8 +1712,6 @@ export const lessonCatalog = [
       title: "Presenting Evidence",
       unit: "Debate & Analysis",
       conversationGoal: "Present evidence clearly, distinguish facts from interpretations, and reference sources confidently.",
-      conversationGoalDetails: "Present evidence clearly, distinguish facts from interpretations, and reference sources confidently.\n\nLearners should be able to say:\n\n- According to ...\n- To be precise, ...\n- This suggests ...",
-      setup: "Kamu mendukung argumen dengan evidence. Kamu bisa membedakan fakta, interpretasi, dan menyebut sumbernya.",
       sections: lessonSections
     },
     {
@@ -2077,8 +1721,6 @@ export const lessonCatalog = [
       title: "Responding Under Pressure",
       unit: "Debate & Analysis",
       conversationGoal: "Respond under pressure by staying calm, addressing the core point, and tightening your argument.",
-      conversationGoalDetails: "Respond under pressure by staying calm, addressing the core point, and tightening your argument.\n\nLearners should be able to say:\n\n- Let me be clear: ...\n- The key point is ...\n- If you look at ...",
-      setup: "Debat mulai panas. Kamu perlu tetap calm, jawab poin inti, dan perjelas argumen kamu tanpa defensif.",
       sections: lessonSections
     },
     {
@@ -2088,8 +1730,6 @@ export const lessonCatalog = [
       title: "Debate Analysis Mission",
       unit: "Debate & Analysis",
       conversationGoal: "Lead a debate-style discussion: identify assumptions, challenge claims, present evidence, and respond under pressure.",
-      conversationGoalDetails: "Lead a debate-style discussion: identify assumptions, challenge claims, present evidence, and respond under pressure.\n\nLearners should be able to say:\n\n- It seems you're assuming ...\n- According to ...\n- Let me be clear: ...",
-      setup: "Misi: kamu memimpin diskusi debat yang realistis. Kamu angkat asumsi, uji logika, bawa evidence, dan tetap calm saat ditekan.",
       sections: lessonSections
     },
     {
@@ -2099,8 +1739,6 @@ export const lessonCatalog = [
       title: "Reading Context",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Read context carefully by noticing tone, hierarchy, and implied expectations before responding.",
-      conversationGoalDetails: "Read context carefully by noticing tone, hierarchy, and implied expectations before responding.\n\nLearners should be able to say:\n\n- My sense is that ...\n- Before we decide, can we clarify ...?\n- It may be worth considering ...",
-      setup: "Kamu dapat pesan yang agak indirect dari stakeholder lintas budaya. Kamu perlu baca konteksnya dulu sebelum jawab.",
       sections: lessonSections
     },
     {
@@ -2110,8 +1748,6 @@ export const lessonCatalog = [
       title: "Asking Tactful Questions",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.",
-      conversationGoalDetails: "Ask tactful questions to clarify expectations, boundaries, and sensitive topics without causing discomfort.\n\nLearners should be able to say:\n\n- Would you mind if I ask ...?\n- If it's okay, could you clarify ...?\n- Just to make sure I understand, ...",
-      setup: "Kamu perlu tanya hal sensitif ke klien/stakeholder. Kamu harus menjaga sopan santun dan tetap jelas.",
       sections: lessonSections
     },
     {
@@ -2121,8 +1757,6 @@ export const lessonCatalog = [
       title: "Explaining Local Norms",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Explain local work norms tactfully and help others adapt without sounding judgmental.",
-      conversationGoalDetails: "Explain local work norms tactfully and help others adapt without sounding judgmental.\n\nLearners should be able to say:\n\n- In our context, ...\n- It's generally expected that ...\n- It might help to ...",
-      setup: "Ada rekan baru dari budaya berbeda. Kamu jelasin kebiasaan kerja lokal dengan cara yang sopan dan membantu.",
       sections: lessonSections
     },
     {
@@ -2132,8 +1766,6 @@ export const lessonCatalog = [
       title: "Repairing Misunderstanding",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.",
-      conversationGoalDetails: "Repair a misunderstanding by acknowledging it, clarifying intent, and proposing a constructive next step.\n\nLearners should be able to say:\n\n- I may have misunderstood ...\n- Just to clarify, ...\n- How about we ...?",
-      setup: "Terjadi miskomunikasi lintas budaya. Kamu perlu memperbaiki situasi dengan cepat, sopan, dan jelas.",
       sections: lessonSections
     },
     {
@@ -2143,8 +1775,6 @@ export const lessonCatalog = [
       title: "Cross-cultural Mission",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.",
-      conversationGoalDetails: "Handle a cross-cultural situation: read context, ask tactful questions, explain norms, and repair misunderstandings.\n\nLearners should be able to say:\n\n- My sense is that ...\n- Would you mind if I ask ...?\n- I may have misunderstood ...",
-      setup: "Misi: kamu handle situasi lintas budaya dari interpretasi pesan sampai repair miskomunikasi, dengan tone yang profesional.",
       sections: lessonSections
     },
     {
@@ -2154,8 +1784,6 @@ export const lessonCatalog = [
       title: "Setting Direction",
       unit: "Leadership & Coaching",
       conversationGoal: "Set direction by clarifying priorities, success criteria, and ownership.",
-      conversationGoalDetails: "Set direction by clarifying priorities, success criteria, and ownership.\n\nLearners should be able to say:\n\n- The direction I'd like to set is ...\n- Success looks like ...\n- I'd like you to own ...",
-      setup: "Kamu jadi lead. Kamu perlu set arah kerja: prioritas, definisi sukses, dan siapa yang owning apa.",
       sections: lessonSections
     },
     {
@@ -2165,8 +1793,6 @@ export const lessonCatalog = [
       title: "Coaching with Questions",
       unit: "Leadership & Coaching",
       conversationGoal: "Coach others using questions that build ownership, clarify thinking, and unblock decisions.",
-      conversationGoalDetails: "Coach others using questions that build ownership, clarify thinking, and unblock decisions.\n\nLearners should be able to say:\n\n- What options do you see?\n- What's the smallest next step?\n- What support do you need?",
-      setup: "Kamu coaching teammate. Alih-alih kasih jawaban, kamu pakai pertanyaan yang membantu mereka berpikir dan ambil ownership.",
       sections: lessonSections
     },
     {
@@ -2176,8 +1802,6 @@ export const lessonCatalog = [
       title: "Giving Actionable Feedback",
       unit: "Leadership & Coaching",
       conversationGoal: "Give actionable feedback by describing impact, being specific, and proposing a clear improvement.",
-      conversationGoalDetails: "Give actionable feedback by describing impact, being specific, and proposing a clear improvement.\n\nLearners should be able to say:\n\n- One thing I'd suggest is ...\n- The impact is that ...\n- A concrete improvement would be ...",
-      setup: "Kamu kasih feedback yang actionable: spesifik, fokus ke impact, dan ada improvement yang jelas.",
       sections: lessonSections
     },
     {
@@ -2187,8 +1811,6 @@ export const lessonCatalog = [
       title: "Guiding a Decision",
       unit: "Leadership & Coaching",
       conversationGoal: "Guide a decision by structuring options, trade-offs, and a clear recommendation.",
-      conversationGoalDetails: "Guide a decision by structuring options, trade-offs, and a clear recommendation.\n\nLearners should be able to say:\n\n- We have three options: ...\n- The trade-off is ...\n- Given our constraints, I'd recommend ...",
-      setup: "Tim buntu. Kamu bantu bikin keputusan dengan struktur: opsi, trade-off, constraint, rekomendasi, lalu alignment.",
       sections: lessonSections
     },
     {
@@ -2198,8 +1820,6 @@ export const lessonCatalog = [
       title: "Leadership Coaching Mission",
       unit: "Leadership & Coaching",
       conversationGoal: "Lead a coaching conversation: set direction, ask coaching questions, give actionable feedback, and guide a decision.",
-      conversationGoalDetails: "Lead a coaching conversation: set direction, ask coaching questions, give actionable feedback, and guide a decision.\n\nLearners should be able to say:\n\n- The direction I'd like to set is ...\n- What options do you see?\n- Given our constraints, I'd recommend ...",
-      setup: "Misi: kamu memimpin percakapan coaching yang utuh, dari set direction sampai membuat keputusan dan next steps.",
       sections: lessonSections
     },
     {
@@ -2209,8 +1829,6 @@ export const lessonCatalog = [
       title: "Catching Implied Meaning",
       unit: "Advanced Listening & Response",
       conversationGoal: "Catch implied meaning by listening for hints, hedges, and what is not said explicitly.",
-      conversationGoalDetails: "Catch implied meaning by listening for hints, hedges, and what is not said explicitly.\n\nLearners should be able to say:\n\n- It sounds like ...\n- Just to check, are you implying ...?\n- What I'm hearing is ...",
-      setup: "Kamu ngobrol dengan stakeholder yang ngomongnya halus/indirect. Kamu perlu nangkep maksud tersirat dan cek pemahaman.",
       sections: lessonSections
     },
     {
@@ -2220,8 +1838,6 @@ export const lessonCatalog = [
       title: "Responding to Long Turns",
       unit: "Advanced Listening & Response",
       conversationGoal: "Respond to long turns by extracting key points, acknowledging emotions, and replying in a structured way.",
-      conversationGoalDetails: "Respond to long turns by extracting key points, acknowledging emotions, and replying in a structured way.\n\nLearners should be able to say:\n\n- Let me make sure I got this: ...\n- The key points are: ...\n- Here's how I'd respond: ...",
-      setup: "Kamu dengar penjelasan panjang. Kamu harus merespons dengan rapi: rangkum poin, konfirmasi, lalu jawab.",
       sections: lessonSections
     },
     {
@@ -2231,8 +1847,6 @@ export const lessonCatalog = [
       title: "Summarizing What You Heard",
       unit: "Advanced Listening & Response",
       conversationGoal: "Summarize accurately by separating facts, concerns, and decisions, then confirm with the speaker.",
-      conversationGoalDetails: "Summarize accurately by separating facts, concerns, and decisions, then confirm with the speaker.\n\nLearners should be able to say:\n\n- So, to summarize: ...\n- The decision is ...\n- The open questions are ...",
-      setup: "Kamu habis meeting. Kamu rangkum dengan rapi (fakta, concern, keputusan) dan cek konfirmasi.",
       sections: lessonSections
     },
     {
@@ -2242,8 +1856,6 @@ export const lessonCatalog = [
       title: "Asking High-quality Follow-ups",
       unit: "Advanced Listening & Response",
       conversationGoal: "Ask high-quality follow-up questions that clarify scope, assumptions, and next steps.",
-      conversationGoalDetails: "Ask high-quality follow-up questions that clarify scope, assumptions, and next steps.\n\nLearners should be able to say:\n\n- When you say X, do you mean ...?\n- What would change your mind?\n- What's the next step?",
-      setup: "Kamu ingin memastikan pemahaman dan menggali detail dengan follow-up yang tajam tapi sopan.",
       sections: lessonSections
     },
     {
@@ -2253,8 +1865,6 @@ export const lessonCatalog = [
       title: "Advanced Listening Mission",
       unit: "Advanced Listening & Response",
       conversationGoal: "Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.",
-      conversationGoalDetails: "Handle advanced listening: implied meaning, long turns, accurate summary, and high-quality follow-ups.\n\nLearners should be able to say:\n\n- It sounds like ...\n- Let me make sure I got this: ...\n- When you say X, do you mean Y or Z?",
-      setup: "Misi: kamu harus menangkap maksud tersirat, merespons penjelasan panjang, merangkum akurat, dan tanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -2264,8 +1874,6 @@ export const lessonCatalog = [
       title: "Review Nuance and Strategy",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Express a nuanced position, manage expectations, and align stakeholders on a careful plan.",
-      conversationGoalDetails: "Express a nuanced position, manage expectations, and align stakeholders on a careful plan.\n\nLearners should be able to say:\n\n- On balance, ...\n- To be precise, ...\n- What I can commit to is ...",
-      setup: "Review: kamu perlu menyampaikan opini yang bernuansa, ngatur ekspektasi, dan align stakeholder tanpa overpromise.",
       sections: lessonSections
     },
     {
@@ -2275,8 +1883,6 @@ export const lessonCatalog = [
       title: "Review Presenting and Debate",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Present a structured argument, challenge assumptions respectfully, and respond under pressure with clarity.",
-      conversationGoalDetails: "Present a structured argument, challenge assumptions respectfully, and respond under pressure with clarity.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- The core assumption is ...\n- In short: ...",
-      setup: "Review: kamu present argumen singkat, lalu kamu ditantang. Kamu harus jawab dengan struktur dan tetap sopan.",
       sections: lessonSections
     },
     {
@@ -2286,8 +1892,6 @@ export const lessonCatalog = [
       title: "Review Leadership and Listening",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Coach someone with questions, catch implied meaning, and align on a decision with clear next steps.",
-      conversationGoalDetails: "Coach someone with questions, catch implied meaning, and align on a decision with clear next steps.\n\nLearners should be able to say:\n\n- What I'm hearing is ...\n- What would success look like ...?\n- Next steps are ...",
-      setup: "Review: kamu memimpin percakapan coaching. Kamu nangkep maksud tersirat, tanya pertanyaan bagus, dan tutup dengan keputusan + next steps.",
       sections: lessonSections
     },
     {
@@ -2297,8 +1901,6 @@ export const lessonCatalog = [
       title: "C1 Final Test Practice",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Answer C1-style prompts with nuance, structure, and precise language under time pressure.",
-      conversationGoalDetails: "Answer C1-style prompts with nuance, structure, and precise language under time pressure.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- On balance, ...\n- The decision is ...",
-      setup: "Latihan final: kamu jawab prompt C1 dengan cepat tapi tetap bernuansa (frame, asumsi, trade-off, keputusan, next steps).",
       sections: lessonSections
     },
     {
@@ -2308,8 +1910,6 @@ export const lessonCatalog = [
       title: "C1 Final Conversation",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Lead a complex conversation from framing to decision: nuance, debate, leadership listening, and clear next steps.",
-      conversationGoalDetails: "Lead a complex conversation from framing to decision: nuance, debate, leadership listening, and clear next steps.\n\nLearners should be able to say:\n\n- Let me frame this: ...\n- On balance, ...\n- The decision is ...",
-      setup: "Final: kamu memimpin percakapan kompleks yang realistis. Kamu harus frame, jawab tantangan, nangkep maksud, dan tutup dengan keputusan + next steps.",
       sections: lessonSections
     },
     {
@@ -2319,10 +1919,8 @@ export const lessonCatalog = [
       title: "Formal Greetings",
       unit: "Arabic Foundations",
       conversationGoal: "Latih sapaan formal sederhana dan jawaban kabar dalam bahasa Arab.",
-      conversationGoalDetails: "Latih sapaan formal sederhana dan jawaban kabar dalam bahasa Arab.\n\nKamu akan berlatih mengatakan:\n\n- مرحبًا\n- أهلًا وسهلًا\n- كيف حالك؟\n- أنا بخير، شكرًا.",
-      setup: "Kamu masuk ke kelas bahasa Arab singkat. Ucapkan sapaan umum, jawab sapaan, lalu jawab pertanyaan kabar dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Muallim dan Fatimah faceless berlatih sapaan formal dari jarak sopan di kelas Indonesia.", caption: "Latihan sapaan formal di kelas nyata dengan lawan bicara dan adab visual yang jelas." }
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-01-greetings-and-salam/hero.png", width: 1672, height: 941, alt: "Muallim dan Khalid faceless berlatih sapaan formal dari jarak sopan di kelas Indonesia.", caption: "Latihan sapaan formal di kelas nyata dengan lawan bicara dan adab visual yang jelas." }
       },
       sections: lessonSections
     },
@@ -2333,8 +1931,6 @@ export const lessonCatalog = [
       title: "Name and Origin",
       unit: "Arabic Foundations",
       conversationGoal: "Latih menyebutkan nama dan asal negara, lalu tanyakan balik dengan sopan.",
-      conversationGoalDetails: "Latih menyebutkan nama dan asal negara, lalu tanyakan balik dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- ما اسمُكَ؟\n- اسمي ...\n- من أين أنتَ؟\n- أنا من إندونيسيا.",
-      setup: "Kamu bertemu peserta baru di kelas bahasa Arab. Sebutkan nama, asal negara, lalu tanyakan balik dengan sopan.",
       visuals: {
         hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-02-name-and-origin/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih nama dan asal dari jarak sopan di kelas Indonesia.", caption: "Perkenalkan nama dan asal dalam dialog kelas formal yang jelas." }
       },
@@ -2347,8 +1943,6 @@ export const lessonCatalog = [
       title: "Class and Study Instructions",
       unit: "Arabic Foundations",
       conversationGoal: "Latih memahami dan merespons instruksi dasar dalam kelas Arab atau lesson terpandu.",
-      conversationGoalDetails: "Latih memahami dan merespons instruksi dasar yang dipakai dalam kelas Arab atau lesson terpandu.\n\nKamu akan berlatih mengenali:\n\n- اِقرأْ\n- اِستمعْ\n- أَعِدْ\n- اُكتبْ\n- اِفهمْ",
-      setup: "Seorang guru memberi instruksi sederhana dalam bahasa Arab. Kamu mengenali perintahnya dan merespons dengan نعم يا معلم.",
       visuals: {
         hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-03-class-and-study-instructions/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih instruksi kelas dari jarak sopan di kelas Indonesia.", caption: "Dengarkan instruksi kelas sederhana dan jawab dengan sopan dalam setting nyata." }
       },
@@ -2361,10 +1955,8 @@ export const lessonCatalog = [
       title: "Asking When You Do Not Understand",
       unit: "Arabic Foundations",
       conversationGoal: "Latih mengatakan belum paham, lalu minta pengulangan atau penjelasan makna kata.",
-      conversationGoalDetails: "Latih mengatakan bahwa kamu belum paham, lalu minta pengulangan atau penjelasan makna kata dalam bahasa Arab.\n\nKamu akan berlatih mengatakan:\n\n- لا أفهم.\n- أَعِدْ مِنْ فَضْلِكَ.\n- ما معنى ...؟\n- بِبُطْءٍ مِنْ فَضْلِكَ.",
-      setup: "Kamu mendengar kalimat Arab di kelas, tetapi belum paham. Katakan dengan sopan bahwa kamu belum paham dan minta pengulangan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Fatimah dan Muallim faceless berlatih meminta penjelasan dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan atau penjelasan ketika belum paham dalam kelas nyata." }
+        hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-04-asking-when-you-do-not-understand/hero.png", width: 1672, height: 941, alt: "Khalid dan Muallim faceless berlatih meminta penjelasan dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan atau penjelasan ketika belum paham dalam kelas nyata." }
       },
       sections: lessonSections
     },
@@ -2375,8 +1967,6 @@ export const lessonCatalog = [
       title: "Arabic Introduction Mission",
       unit: "Arabic Foundations",
       conversationGoal: "Latih perkenalan Arab singkat memakai sapaan, nama, asal, dan frasa klarifikasi.",
-      conversationGoalDetails: "Latih perkenalan bahasa Arab singkat memakai sapaan, nama, asal, dan frasa klarifikasi.\n\nKamu akan berlatih mengatakan:\n\n- مرحبًا\n- اسمي ...\n- أنا من إندونيسيا\n- لا أفهم\n- أَعِدْ مِنْ فَضْلِكَ",
-      setup: "Kamu mengikuti kelas bahasa Arab sederhana. Mulai dengan sapaan umum, perkenalkan diri, sebutkan asal, lalu minta pengulangan ketika belum paham.",
       visuals: {
         hero: { src: "/images/lessons/arabic/A1/unit-01-fusha-foundations/lesson-05-fusha-introduction-mission/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless menjalankan misi perkenalan formal dari jarak sopan di kelas Indonesia.", caption: "Gabungkan sapaan, nama, asal, dan klarifikasi dalam dialog kelas nyata." }
       },
@@ -2389,8 +1979,6 @@ export const lessonCatalog = [
       title: "Spelling Your Name",
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ تَكْتُبُ اِسْمَكَ؟\n- أَكْتُبُ اسْمِي ...\n- هَذَا حَرْفُ ...\n- هَلْ هَذَا صَحِيحٌ؟",
-      setup: "Kamu mengisi formulir kelas. Guru meminta kamu mengeja nama dengan huruf Arab sederhana.",
       visuals: {
         hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-01-spelling-your-name/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless berlatih menulis nama di kelas Indonesia.", caption: "Tulis dan cek nama dengan huruf Arab sederhana tanpa menampilkan tulisan di gambar." }
       },
@@ -2403,10 +1991,8 @@ export const lessonCatalog = [
       title: "Arabic Numbers and Phone",
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu bertukar nomor telepon dengan teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.\n\nKamu akan berlatih mengatakan:\n\n- مَا رَقْمُ هَاتِفِكَ؟\n- رَقْمِي ...\n- وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ\n- هَلِ الرَّقْمُ ...؟\n- الرَّقْمُ صَحِيحٌ",
-      setup: "Kamu bertukar nomor telepon dengan teman kelas. Kamu perlu mengucapkan angka pelan dan jelas.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png", width: 1672, height: 941, alt: "Maryam dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.", caption: "Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar." }
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png", width: 1672, height: 941, alt: "Karim dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.", caption: "Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar." }
       },
       sections: lessonSections
     },
@@ -2417,10 +2003,8 @@ export const lessonCatalog = [
       title: "Sharing Email Addresses",
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menulis email di daftar kelas. Kamu perlu menyebutkan bagian email dengan pelan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menulis email di daftar kelas. Kamu perlu menyebutkan bagian email dengan pelan.\n\nKamu akan berlatih mengatakan:\n\n- مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ...\n- اُكْتُبْ مِنْ فَضْلِكَ\n- نُقْطَةٌ\n- شَرْطَةٌ",
-      setup: "Kamu menulis email di daftar kelas. Kamu perlu menyebutkan bagian email dengan pelan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Noura dan Ahmad faceless berlatih alamat email di meja registrasi kelas Indonesia.", caption: "Sebutkan bagian email dengan pelan tanpa menampilkan teks email di gambar." }
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/hero.png", width: 1672, height: 941, alt: "Zayd dan Ahmad faceless berlatih alamat email di meja registrasi kelas Indonesia.", caption: "Sebutkan bagian email dengan pelan tanpa menampilkan teks email di gambar." }
       },
       sections: lessonSections
     },
@@ -2431,10 +2015,8 @@ export const lessonCatalog = [
       title: "Asking to Repeat a Letter",
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email, kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Saat mendengar nama atau email, kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- لم أَسْمَعُ الْحَرْفَ\n- بِبُطْءٍ مِنْ فَضْلِكَ\n- هَلْ قُلْتَ بَاءً؟\n- نَعَمْ، قُلْتُ بَاءً",
-      setup: "Saat mendengar nama atau email, kamu tidak yakin satu huruf. Kamu meminta pengulangan dengan sopan.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png", width: 1672, height: 941, alt: "Layla dan Zayd faceless berlatih meminta pengulangan huruf dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan huruf dengan sopan saat belum terdengar jelas." }
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/hero.png", width: 1672, height: 941, alt: "Rami dan Zayd faceless berlatih meminta pengulangan huruf dari jarak sopan di kelas Indonesia.", caption: "Minta pengulangan huruf dengan sopan saat belum terdengar jelas." }
       },
       sections: lessonSections
     },
@@ -2445,10 +2027,8 @@ export const lessonCatalog = [
       title: "Contact Details Mission",
       unit: "Letters, Numbers & Contact",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri di kelas baru dan memberikan informasi kontak sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri di kelas baru dan memberikan informasi kontak sederhana.\n\nKamu akan berlatih mengatakan:\n\n- اِسْمِي ...\n- أَكْتُبُ اسْمِي ...\n- رَقْمِي ...\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ...\n- هَلْ هَذَا وَاضِحٌ؟",
-      setup: "Kamu memperkenalkan diri di kelas baru dan memberikan informasi kontak sederhana.",
       visuals: {
-        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Muallimah dan Ahmad faceless menjalankan misi kontak di meja registrasi kelas Indonesia.", caption: "Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana." }
+        hero: { src: "/images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-05-contact-details-mission/hero.png", width: 1672, height: 941, alt: "Muallim dan Ahmad faceless menjalankan misi kontak di meja registrasi kelas Indonesia.", caption: "Gabungkan nama, nomor telepon, dan email dalam percakapan kontak sederhana." }
       },
       sections: lessonSections
     },
@@ -2459,8 +2039,6 @@ export const lessonCatalog = [
       title: "Asking the Time",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan ingin tahu jam sekarang.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menunggu kelas dimulai dan ingin tahu jam sekarang.\n\nKamu akan berlatih mengatakan:\n\n- كَمِ السَّاعَةُ؟\n- السَّاعَةُ الثَّامِنَةُ\n- الْآنَ\n- صَبَاحًا\n- مَسَاءً",
-      setup: "Kamu menunggu kelas dimulai dan ingin tahu jam sekarang.",
       sections: lessonSections
     },
     {
@@ -2470,8 +2048,6 @@ export const lessonCatalog = [
       title: "Days of the Week",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu menyebut hari ini serta hari berikutnya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu melihat jadwal kelas dan perlu menyebut hari ini serta hari berikutnya.\n\nKamu akan berlatih mengatakan:\n\n- أي يَوْمَ الْيَوْمُ؟\n- الْيَوْمُ الْإِثْنَيْنِ\n- غَدًا الثُّلَاثَاءُ\n- عِنْدِي دَرْسٌ\n- فِي يَوْمِ ...",
-      setup: "Kamu melihat jadwal kelas dan perlu menyebut hari ini serta hari berikutnya.",
       sections: lessonSections
     },
     {
@@ -2481,8 +2057,6 @@ export const lessonCatalog = [
       title: "Talking About Daily Routines",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا تَفْعَلُ صَبَاحًا؟\n- أَقْرَأُ\n- أكتب\n- أَدْرُسُ الْعَرَبِيَّةَ\n- ثُمَّ أَعْمَلُ",
-      setup: "Kamu menceritakan rutinitas pagi dengan kalimat Arab yang sangat pendek.",
       sections: lessonSections
     },
     {
@@ -2492,8 +2066,6 @@ export const lessonCatalog = [
       title: "Asking When",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kelas, latihan, atau pertemuan dimulai.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu perlu bertanya kapan kelas, latihan, atau pertemuan dimulai.\n\nKamu akan berlatih mengatakan:\n\n- مَتَى الدَّرْسُ؟\n- فِي الصَّبَاحِ\n- بَعْدَ الظُّهْرِ\n- قَبْلَ الدَّرْسِ\n- بَعْدَ الدَّرْسِ",
-      setup: "Kamu perlu bertanya kapan kelas, latihan, atau pertemuan dimulai.",
       sections: lessonSections
     },
     {
@@ -2503,8 +2075,6 @@ export const lessonCatalog = [
       title: "Routine and Time Mission",
       unit: "Time & Daily Routine",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.\n\nKamu akan berlatih mengatakan:\n\n- الْيَوْمُ ...\n- الساعة ...\n- عِنْدِي دَرْسٌ\n- أَدْرُسُ الْعَرَبِيَّةَ\n- بَعْدَ الدَّرْسِ",
-      setup: "Kamu menjelaskan jadwal belajar sederhana kepada teman kelas.",
       sections: lessonSections
     },
     {
@@ -2514,8 +2084,6 @@ export const lessonCatalog = [
       title: "Family Members",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menunjukkan foto keluarga dan menyebut anggota keluarga dengan kalimat pendek.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menunjukkan foto keluarga dan menyebut anggota keluarga dengan kalimat pendek.\n\nKamu akan berlatih mengatakan:\n\n- مَنْ هَذَا؟\n- هَذَا أَبِي\n- هَذِهِ أُمِّي\n- هَذَا أَخِي\n- هَذِهِ عَائِلَتِي",
-      setup: "Kamu menunjukkan foto keluarga dan menyebut anggota keluarga dengan kalimat pendek.",
       sections: lessonSections
     },
     {
@@ -2525,8 +2093,6 @@ export const lessonCatalog = [
       title: "Saying What You Do",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau status belajar dalam percakapan formal ringan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan pekerjaan atau status belajar dalam percakapan formal ringan.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا تَعْمَلُ؟\n- أَنَا طَالِبٌ\n- أَنَا معلم\n- أَعْمَلُ فِي مَكْتَبٍ\n- أَدْرُسُ فِي مَدْرَسَةٍ",
-      setup: "Kamu memperkenalkan pekerjaan atau status belajar dalam percakapan formal ringan.",
       sections: lessonSections
     },
     {
@@ -2536,8 +2102,6 @@ export const lessonCatalog = [
       title: "Asking About Work or Study",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru tentang tempat belajar dan bidang yang dipelajari.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu bertanya kepada teman baru tentang tempat belajar dan bidang yang dipelajari.\n\nKamu akan berlatih mengatakan:\n\n- أَيْنَ تَدْرُسُ؟\n- مَاذَا تَدْرُسُ؟\n- أَدْرُسُ اللُّغَةَ الْعَرَبِيَّةَ\n- هل تعمل؟\n- نَعَمْ، أَعْمَلُ",
-      setup: "Kamu bertanya kepada teman baru tentang tempat belajar dan bidang yang dipelajari.",
       sections: lessonSections
     },
     {
@@ -2547,8 +2111,6 @@ export const lessonCatalog = [
       title: "Likes and Ability",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai dan kemampuan sederhana dalam konteks belajar.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menyebut hal yang disukai dan kemampuan sederhana dalam konteks belajar.\n\nKamu akan berlatih mengatakan:\n\n- أُحِبُّ الْقِرَاءَةَ\n- لَا أُحِبُّ الِانْتِظَارَ\n- أَسْتَطِيعُ الْقِرَاءَةَ\n- لَا أَسْتَطِيعُ الْآنَ\n- قَلِيلًا",
-      setup: "Kamu menyebut hal yang disukai dan kemampuan sederhana dalam konteks belajar.",
       sections: lessonSections
     },
     {
@@ -2558,8 +2120,6 @@ export const lessonCatalog = [
       title: "Family, Work, and Study Mission",
       unit: "Family, Work & Study",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.\n\nKamu akan berlatih mengatakan:\n\n- هَذِهِ عَائِلَتِي\n- أَنَا طَالِبٌ\n- أَدْرُسُ الْعَرَبِيَّةَ\n- أَعْمَلُ فِي مَكْتَبٍ\n- أُحِبُّ الْقِرَاءَةَ",
-      setup: "Kamu memperkenalkan diri sedikit lebih lengkap: keluarga, pekerjaan/belajar, dan minat.",
       sections: lessonSections
     },
     {
@@ -2569,8 +2129,6 @@ export const lessonCatalog = [
       title: "Asking Where a Place Is",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari perpustakaan di gedung belajar dan bertanya dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu mencari perpustakaan di gedung belajar dan bertanya dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- أَيْنَ الْمَكْتَبَةُ؟\n- الْمَكْتَبَةُ هُنَا\n- هُنَاكَ\n- قَرِيبَةٌ\n- بَعِيدَةٌ",
-      setup: "Kamu mencari perpustakaan di gedung belajar dan bertanya dengan sopan.",
       sections: lessonSections
     },
     {
@@ -2580,8 +2138,6 @@ export const lessonCatalog = [
       title: "Simple Place Words",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum yang sering muncul dalam percakapan formal.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menyebut beberapa tempat umum yang sering muncul dalam percakapan formal.\n\nKamu akan berlatih mengatakan:\n\n- الْبَيْتُ\n- الْمَدْرَسَةُ\n- السُّوقُ\n- الْمَكْتَبُ\n- الْمَقْهَى",
-      setup: "Kamu menyebut beberapa tempat umum yang sering muncul dalam percakapan formal.",
       sections: lessonSections
     },
     {
@@ -2591,8 +2147,6 @@ export const lessonCatalog = [
       title: "Understanding Simple Directions",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju kelas atau perpustakaan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menerima arahan singkat menuju kelas atau perpustakaan.\n\nKamu akan berlatih mengatakan:\n\n- اِذْهَبْ يَمِينًا\n- اِذْهَبْ يَسَارًا\n- إِلَى الْأَمَامِ\n- بِجَانِبِ الْمَكْتَبِ\n- أمام الْمَدْرَسَةُ",
-      setup: "Kamu menerima arahan singkat menuju kelas atau perpustakaan.",
       sections: lessonSections
     },
     {
@@ -2602,8 +2156,6 @@ export const lessonCatalog = [
       title: "Asking How to Get There",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat tertentu di sekitar kelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu meminta arahan menuju tempat tertentu di sekitar kelas.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ أَذْهَبُ إِلَى الْمَكْتَبَةِ؟\n- امشِ إِلَى الْأَمَامِ\n- ثُمَّ\n- عِنْدَ الْبَابِ\n- شُكْرًا",
-      setup: "Kamu meminta arahan menuju tempat tertentu di sekitar kelas.",
       sections: lessonSections
     },
     {
@@ -2613,8 +2165,6 @@ export const lessonCatalog = [
       title: "Finding a Place Mission",
       unit: "Places & Directions",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi, dan mengikuti arahan singkat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu mencari kelas baru, bertanya lokasi, dan mengikuti arahan singkat.\n\nKamu akan berlatih mengatakan:\n\n- أَيْنَ الْفَصْلُ؟\n- كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟\n- اِذْهَبْ يَمِينًا\n- هُوَ بِجَانِبِ الْمَكْتَبَةِ\n- وَاضِحٌ",
-      setup: "Kamu mencari kelas baru, bertanya lokasi, dan mengikuti arahan singkat.",
       sections: lessonSections
     },
     {
@@ -2624,8 +2174,6 @@ export const lessonCatalog = [
       title: "Ordering a Drink",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ مَاءً\n- أُرِيدُ قَهْوَةً\n- من فضلك\n- هَلْ عِنْدَكُمْ شَايٌ؟\n- تَفَضَّلْ",
-      setup: "Kamu berada di kafe dan ingin memesan minuman sederhana dengan sopan.",
       sections: lessonSections
     },
     {
@@ -2635,8 +2183,6 @@ export const lessonCatalog = [
       title: "Asking About Prices",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan perlu menanyakan harganya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu melihat barang sederhana dan perlu menanyakan harganya.\n\nKamu akan berlatih mengatakan:\n\n- كَمِ السِّعْرُ؟\n- السِّعْرُ خَمْسَةُ رِيَالَاتٍ\n- غَالٍ\n- رَخِيصٌ\n- مُنَاسِبٌ",
-      setup: "Kamu melihat barang sederhana dan perlu menanyakan harganya.",
       sections: lessonSections
     },
     {
@@ -2646,8 +2192,6 @@ export const lessonCatalog = [
       title: "Buying a Simple Item",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana untuk kelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu membeli alat tulis sederhana untuk kelas.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ عِنْدَكُمْ قَلَمٌ؟\n- نَعَمْ، مَوْجُودٌ\n- أُرِيدُ هَذَا\n- آخُذُ وَاحِدًا\n- الْحِسَابُ مِنْ فَضْلِكَ",
-      setup: "Kamu membeli alat tulis sederhana untuk kelas.",
       sections: lessonSections
     },
     {
@@ -2657,8 +2201,6 @@ export const lessonCatalog = [
       title: "Saying What You Want",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا تُرِيدُ؟\n- أُرِيدُ كِتَابًا\n- لَا أُرِيدُ قَهْوَةً\n- أَحْتَاجُ قَلَمًا\n- فَقَطْ",
-      setup: "Kamu menjawab pertanyaan sederhana tentang apa yang diinginkan atau dibutuhkan.",
       sections: lessonSections
     },
     {
@@ -2668,8 +2210,6 @@ export const lessonCatalog = [
       title: "Cafe and Shop Mission",
       unit: "Food, Shopping & Prices",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ مَاءً\n- كَمِ السِّعْرُ؟\n- السِّعْرُ مُنَاسِبٌ\n- آخُذُ وَاحِدًا\n- الْحِسَابُ مِنْ فَضْلِكَ",
-      setup: "Kamu memesan minuman, bertanya harga, dan membeli satu barang sederhana.",
       sections: lessonSections
     },
     {
@@ -2679,8 +2219,6 @@ export const lessonCatalog = [
       title: "Saying You Do Not Understand",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- لَا أَفْهَمُ\n- لَا أَعْرِفُ الْكَلِمَةَ\n- مَاذَا يَعْنِي هَذَا؟\n- بِبُطْءٍ مِنْ فَضْلِكَ\n- مَرَّةً أُخْرَى",
-      setup: "Kamu tidak paham kata atau instruksi dan perlu menjelaskannya dengan sopan.",
       sections: lessonSections
     },
     {
@@ -2690,8 +2228,6 @@ export const lessonCatalog = [
       title: "Asking for Help",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ تُسَاعِدُنِي؟\n- أَحْتَاجُ مُسَاعَدَةً\n- أَيْنَ أَجِدُ الدَّرْسَ؟\n- اِفْتَحِ الصَّفْحَةَ\n- شُكْرًا عَلَى الْمُسَاعَدَةِ",
-      setup: "Kamu kesulitan menemukan halaman atau latihan dan perlu meminta bantuan.",
       sections: lessonSections
     },
     {
@@ -2701,8 +2237,6 @@ export const lessonCatalog = [
       title: "Making Simple Requests",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu meminta teman atau guru melakukan instruksi sederhana dalam konteks belajar.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu meminta teman atau guru melakukan instruksi sederhana dalam konteks belajar.\n\nKamu akan berlatih mengatakan:\n\n- اِفْتَحِ الْكِتَابَ\n- اُكْتُبِ الْجُمْلَةَ\n- اِسْتَمِعْ\n- تكلم ببطء\n- من فضلك",
-      setup: "Kamu meminta teman atau guru melakukan instruksi sederhana dalam konteks belajar.",
       sections: lessonSections
     },
     {
@@ -2712,8 +2246,6 @@ export const lessonCatalog = [
       title: "Apologizing and Thanking",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu terlambat merespons atau membuat kesalahan kecil dan ingin menjawab sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu terlambat merespons atau membuat kesalahan kecil dan ingin menjawab sopan.\n\nKamu akan berlatih mengatakan:\n\n- آسِفٌ\n- آسِفَةٌ\n- عُذْرًا\n- لَا مُشْكِلَةَ\n- عَلَى الرَّحْبِ وَالسَّعَةِ",
-      setup: "Kamu terlambat merespons atau membuat kesalahan kecil dan ingin menjawab sopan.",
       sections: lessonSections
     },
     {
@@ -2723,8 +2255,6 @@ export const lessonCatalog = [
       title: "Help and Problem Mission",
       unit: "Help, Problems & Requests",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.\n\nKamu akan berlatih mengatakan:\n\n- لَا أَفْهَمُ\n- أَحْتَاجُ مُسَاعَدَةً\n- بِبُطْءٍ مِنْ فَضْلِكَ\n- أَعِدْ مَرَّةً أُخْرَى\n- شُكْرًا عَلَى الْمُسَاعَدَةِ",
-      setup: "Kamu menghadapi masalah kecil dalam kelas dan menyelesaikannya dengan permintaan sopan.",
       sections: lessonSections
     },
     {
@@ -2734,8 +2264,6 @@ export const lessonCatalog = [
       title: "Review Introductions and Contact",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.\n\nKamu akan berlatih mengatakan:\n\n- اِسْمِي أَحْمَدُ\n- أَنَا مِنْ إِنْدُونِيسِيَا\n- أَكْتُبُ اسْمِي\n- رَقْمِي ...\n- بَرِيدِي الْإِلِكْتُرُونِيُّ ...",
-      setup: "Kamu mengulang perkenalan, asal, ejaan nama, dan informasi kontak sederhana.",
       sections: lessonSections
     },
     {
@@ -2745,8 +2273,6 @@ export const lessonCatalog = [
       title: "Review Routine and Study",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.\n\nKamu akan berlatih mengatakan:\n\n- الْيَوْمُ الْإِثْنَيْنِ\n- السَّاعَةُ الثَّامِنَةُ\n- أَدْرُسُ الْعَرَبِيَّةَ\n- أَقْرَأُ وَأَكْتُبُ\n- بَعْدَ الدَّرْسِ",
-      setup: "Kamu menceritakan jadwal belajar bahasa Arab dan aktivitas sederhana.",
       sections: lessonSections
     },
     {
@@ -2756,8 +2282,6 @@ export const lessonCatalog = [
       title: "Review Places and Shopping",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.\n\nKamu akan berlatih mengatakan:\n\n- أَيْنَ الْمَقْهَى؟\n- كَيْفَ أَذْهَبُ إِلَى الْمَقْهَى؟\n- أُرِيدُ مَاءً\n- كَمِ السِّعْرُ؟\n- السِّعْرُ مُنَاسِبٌ",
-      setup: "Kamu mencari kafe, bertanya arah, lalu membeli minuman sederhana.",
       sections: lessonSections
     },
     {
@@ -2767,8 +2291,6 @@ export const lessonCatalog = [
       title: "A1 Final Test Practice",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan final A1 secara singkat dan jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu berlatih menjawab pertanyaan final A1 secara singkat dan jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَنَا مِنْ إِنْدُونِيسِيَا\n- عِنْدِي دَرْسٌ\n- أُرِيدُ كِتَابًا\n- لَا أَفْهَمُ\n- أَعِدْ مِنْ فَضْلِكَ",
-      setup: "Kamu berlatih menjawab pertanyaan final A1 secara singkat dan jelas.",
       sections: lessonSections
     },
     {
@@ -2778,8 +2300,6 @@ export const lessonCatalog = [
       title: "A1 Final Conversation",
       unit: "A1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab sederhana untuk situasi ini: Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.\n\nKamu akan berlatih mengatakan:\n\n- مَرْحَبًا\n- اِسْمِي ...\n- أَدْرُسُ الْعَرَبِيَّةَ\n- أَيْنَ الْمَكْتَبَةُ؟\n- أَحْتَاجُ مُسَاعَدَةً",
-      setup: "Kamu menjalani percakapan final: perkenalan, rutinitas belajar, tempat, belanja, dan bantuan.",
       sections: lessonSections
     },
     {
@@ -2789,8 +2309,6 @@ export const lessonCatalog = [
       title: "Reconnecting After Class",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa Arab dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas bahasa Arab dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ حَالُكَ؟\n- أَنَا بِخَيْرٍ، وَأَنْتَ؟\n- كَانَ الدَّرْسُ جَيِّدًا.\n- سَأُرَاجِعُ الْكَلِمَاتِ.\n- إِلَى اللِّقَاءِ غَدًا.",
-      setup: "Kamu bertemu teman setelah kelas bahasa Arab dan membuka percakapan singkat dengan kabar, kelas, dan rencana belajar.",
       sections: lessonSections
     },
     {
@@ -2800,8 +2318,6 @@ export const lessonCatalog = [
       title: "Asking Follow-up Questions",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan teman kelas dan menjaga percakapan tetap berjalan dengan pertanyaan lanjutan yang sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan teman kelas dan menjaga percakapan tetap berjalan dengan pertanyaan lanjutan yang sederhana.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا تَفْعَلُ بَعْدَ الدَّرْسِ؟\n- لِمَاذَا؟\n- لِأَنَّنِي أُرِيدُ أَنْ أَتَدَرَّبَ.\n- هَذَا جَيِّدٌ.\n- وَأَنْتَ؟",
-      setup: "Kamu berbicara dengan teman kelas dan menjaga percakapan tetap berjalan dengan pertanyaan lanjutan yang sederhana.",
       sections: lessonSections
     },
     {
@@ -2811,8 +2327,6 @@ export const lessonCatalog = [
       title: "Talking About the Weekend",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan kegiatan akhir pekan secara pendek: ke mana pergi, dengan siapa, dan bagaimana rasanya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menceritakan kegiatan akhir pekan secara pendek: ke mana pergi, dengan siapa, dan bagaimana rasanya.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟\n- ذَهَبْتُ إِلَى الْحَدِيقَةِ.\n- مَعَ أُسْرَتِي.\n- كَانَ الْمَكَانُ جَمِيلًا.\n- وَمَاذَا فَعَلْتِ أَنْتِ؟",
-      setup: "Kamu menceritakan kegiatan akhir pekan secara pendek: ke mana pergi, dengan siapa, dan bagaimana rasanya.",
       sections: lessonSections
     },
     {
@@ -2822,8 +2336,6 @@ export const lessonCatalog = [
       title: "Reacting With Interest",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.\n\nKamu akan berlatih mengatakan:\n\n- حَقًّا؟\n- هَذَا مُمْتَازٌ.\n- كَيْفَ كَانَ الْمَكَانُ؟\n- كَانَ نَظِيفًا وَهَادِئًا.\n- أُرِيدُ أَنْ أَزُورَ ذَلِكَ الْمَكَانَ.",
-      setup: "Kamu merespons cerita teman dengan ekspresi pendek yang sopan, lalu bertanya satu pertanyaan lanjutan.",
       sections: lessonSections
     },
     {
@@ -2833,8 +2345,6 @@ export const lessonCatalog = [
       title: "Social Follow-up Mission",
       unit: "Social Follow-up",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjaga percakapan singkat dengan teman: membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menjaga percakapan singkat dengan teman: membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ حَالُكَ؟\n- مَاذَا فَعَلْتَ أَمْسِ؟\n- هَذَا جَيِّدٌ.\n- لِأَنَّنِي أُرِيدُ أَنْ أَتَعَلَّمَ.\n- سَنَتَحَدَّثُ غَدًا.",
-      setup: "Kamu menjaga percakapan singkat dengan teman: membuka kabar, menanyakan kegiatan, memberi reaksi, dan menutup dengan rencana sederhana.",
       sections: lessonSections
     },
     {
@@ -2844,8 +2354,6 @@ export const lessonCatalog = [
       title: "Making a Simple Plan",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana sederhana dengan teman: menentukan kegiatan, hari, waktu, dan tempat bertemu.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana sederhana dengan teman: menentukan kegiatan, hari, waktu, dan tempat bertemu.\n\nKamu akan berlatih mengatakan:\n\n- سَأَذْهَبُ إِلَى الْمَكْتَبَةِ.\n- هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟\n- مَتَى نَلْتَقِي؟\n- نَلْتَقِي السَّاعَةَ الرَّابِعَةَ.\n- أَمَامَ الْمَكْتَبَةِ.",
-      setup: "Kamu membuat rencana sederhana dengan teman: menentukan kegiatan, hari, waktu, dan tempat bertemu.",
       sections: lessonSections
     },
     {
@@ -2855,8 +2363,6 @@ export const lessonCatalog = [
       title: "Inviting Someone",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat mengapa kegiatan itu bermanfaat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat mengapa kegiatan itu bermanfaat.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\n- لِأَنَّ الدَّرْسَ مُهِمٌّ.\n- فِكْرَةٌ جَيِّدَةٌ.\n- أَنَا مَوْجُودٌ بَعْدَ الْعَصْرِ.\n- نَدْرُسُ فِي الْمَرْكَزِ.",
-      setup: "Kamu mengajak teman ikut belajar bersama dan menjelaskan alasan singkat mengapa kegiatan itu bermanfaat.",
       sections: lessonSections
     },
     {
@@ -2866,8 +2372,6 @@ export const lessonCatalog = [
       title: "Accepting and Declining",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menerima satu ajakan dan menolak ajakan lain dengan sopan sambil memberi alasan pendek.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menerima satu ajakan dan menolak ajakan lain dengan sopan sambil memberi alasan pendek.\n\nKamu akan berlatih mengatakan:\n\n- نَعَمْ، أَسْتَطِيعُ.\n- آسِفٌ، لَا أَسْتَطِيعُ.\n- لِأَنَّ لَدَيَّ مَوْعِدًا.\n- رُبَّمَا فِي وَقْتٍ آخَرَ.\n- لَا مُشْكِلَةَ.",
-      setup: "Kamu menerima satu ajakan dan menolak ajakan lain dengan sopan sambil memberi alasan pendek.",
       sections: lessonSections
     },
     {
@@ -2877,8 +2381,6 @@ export const lessonCatalog = [
       title: "Rescheduling Politely",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- لَا أَسْتَطِيعُ فِي هَذَا الْوَقْتِ.\n- هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟\n- مَاذَا عَنِ السَّاعَةِ الْخَامِسَةِ؟\n- الْوَقْتُ مُنَاسِبٌ.\n- شُكْرًا عَلَى التَّفَهُّمِ.",
-      setup: "Kamu tidak bisa datang pada waktu awal, lalu meminta perubahan waktu dengan sopan.",
       sections: lessonSections
     },
     {
@@ -2888,8 +2390,6 @@ export const lessonCatalog = [
       title: "Invitation Mission",
       unit: "Plans & Invitations",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\n- لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.\n- هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟\n- نَلْتَقِي أَمَامَ الْمَرْكَزِ.\n- إِلَى اللِّقَاءِ.",
-      setup: "Kamu membuat rencana belajar bersama, mengajak teman, menerima perubahan waktu, dan mengonfirmasi detail akhir.",
       sections: lessonSections
     },
     {
@@ -2899,8 +2399,6 @@ export const lessonCatalog = [
       title: "Buying a Ticket",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di loket stasiun dan ingin membeli tiket sederhana: tujuan, jenis tiket, kelas, dan harga.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berada di loket stasiun dan ingin membeli tiket sederhana: tujuan, jenis tiket, kelas, dan harga.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ تَذْكِرَةً إِلَى جَاكَرْتَا.\n- ذَهَابًا فَقَطْ.\n- ذَهَابًا وَعَوْدَةً.\n- الدَّرَجَةُ الِاقْتِصَادِيَّةُ.\n- كَمِ السِّعْرُ؟",
-      setup: "Kamu berada di loket stasiun dan ingin membeli tiket sederhana: tujuan, jenis tiket, kelas, dan harga.",
       sections: lessonSections
     },
     {
@@ -2910,8 +2408,6 @@ export const lessonCatalog = [
       title: "Asking About Departure Time",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu sudah punya tiket dan ingin memastikan jam keberangkatan, peron, serta waktu tiba.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu sudah punya tiket dan ingin memastikan jam keberangkatan, peron, serta waktu tiba.\n\nKamu akan berlatih mengatakan:\n\n- مَتَى يَغَادِرُ الْقِطَارُ؟\n- يُغَادِرُ السَّاعَةَ السَّابِعَةَ.\n- مِنْ أَيِّ رَصِيفٍ؟\n- مِنَ الرَّصِيفِ الثَّانِي.\n- يَصِلُ السَّاعَةَ التَّاسِعَةَ.",
-      setup: "Kamu sudah punya tiket dan ingin memastikan jam keberangkatan, peron, serta waktu tiba.",
       sections: lessonSections
     },
     {
@@ -2921,8 +2417,6 @@ export const lessonCatalog = [
       title: "Checking Directions",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di terminal dan ingin memastikan arah menuju pintu, peron, atau tempat tunggu tanpa salah jalur.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berada di terminal dan ingin memastikan arah menuju pintu, peron, atau tempat tunggu tanpa salah jalur.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟\n- اِمْشِ مُسْتَقِيمًا.\n- ثُمَّ اِتَّجِهْ يَمِينًا.\n- بِجَانِبِ الْمَصْعَدِ.\n- هَلْ هَذَا صَحِيحٌ؟",
-      setup: "Kamu berada di terminal dan ingin memastikan arah menuju pintu, peron, atau tempat tunggu tanpa salah jalur.",
       sections: lessonSections
     },
     {
@@ -2932,8 +2426,6 @@ export const lessonCatalog = [
       title: "Talking to a Driver",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu naik taksi atau kendaraan online dan perlu memastikan tujuan, waktu perjalanan, dan tempat turun.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu naik taksi atau kendaraan online dan perlu memastikan tujuan, waktu perjalanan, dan tempat turun.\n\nKamu akan berlatih mengatakan:\n\n- إِلَى الْفُنْدُقِ، مِنْ فَضْلِكَ.\n- هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟\n- كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟\n- حَوَالَيْ عِشْرِينَ دَقِيقَةً.\n- تَوَقَّفْ هُنَا، مِنْ فَضْلِكَ.",
-      setup: "Kamu naik taksi atau kendaraan online dan perlu memastikan tujuan, waktu perjalanan, dan tempat turun.",
       sections: lessonSections
     },
     {
@@ -2943,8 +2435,6 @@ export const lessonCatalog = [
       title: "Transport and Travel Mission",
       unit: "Transport & Travel",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan perjalanan pendek: membeli tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan perjalanan pendek: membeli tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.\n- مَتَى يَغَادِرُ الْقِطَارُ؟\n- كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟\n- هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟\n- تَوَقَّفْ هُنَا، مِنْ فَضْلِكَ.",
-      setup: "Kamu menyelesaikan perjalanan pendek: membeli tiket, mengecek jam berangkat, mencari peron, lalu memastikan tujuan dengan sopir.",
       sections: lessonSections
     },
     {
@@ -2954,8 +2444,6 @@ export const lessonCatalog = [
       title: "Asking for an Item",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berada di toko alat tulis dan ingin meminta barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berada di toko alat tulis dan ingin meminta barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.\n\nKamu akan berlatih mengatakan:\n\n- أَبْحَثُ عَنْ قَلَمٍ أَزْرَقَ.\n- هَلْ عِنْدَكُمْ هَذَا؟\n- هَلْ يُوجَدُ لَوْنٌ آخَرُ؟\n- أُرِيدُ وَاحِدًا، مِنْ فَضْلِكَ.\n- سَآخُذُ هَذَا.",
-      setup: "Kamu berada di toko alat tulis dan ingin meminta barang tertentu, menanyakan pilihan warna, lalu memutuskan membeli satu barang.",
       sections: lessonSections
     },
     {
@@ -2965,8 +2453,6 @@ export const lessonCatalog = [
       title: "Asking About Size and Color",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membeli pakaian sederhana dan perlu menanyakan ukuran, warna, serta izin mencoba barang.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu membeli pakaian sederhana dan perlu menanyakan ukuran, warna, serta izin mencoba barang.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ عِنْدَكُمْ مَقَاسٌ أَكْبَرُ؟\n- أُرِيدُ اللَّوْنَ الْأَبْيَضَ.\n- هَذَا صَغِيرٌ جِدًّا.\n- هَذَا مُنَاسِبٌ.\n- هَلْ أَسْتَطِيعُ أَنْ أُجَرِّبَهُ؟",
-      setup: "Kamu membeli pakaian sederhana dan perlu menanyakan ukuran, warna, serta izin mencoba barang.",
       sections: lessonSections
     },
     {
@@ -2976,8 +2462,6 @@ export const lessonCatalog = [
       title: "Comparing Simple Options",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membandingkan dua barang sederhana berdasarkan harga, kualitas, dan kecocokan sebelum memilih.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu membandingkan dua barang sederhana berdasarkan harga, kualitas, dan kecocokan sebelum memilih.\n\nKamu akan berlatih mengatakan:\n\n- هَذَا أَرْخَصُ.\n- هَذَا أَجْوَدُ.\n- أَيُّهُمَا أَفْضَلُ؟\n- أُفَضِّلُ هَذَا.\n- السِّعْرُ مُنَاسِبٌ.",
-      setup: "Kamu membandingkan dua barang sederhana berdasarkan harga, kualitas, dan kecocokan sebelum memilih.",
       sections: lessonSections
     },
     {
@@ -2987,8 +2471,6 @@ export const lessonCatalog = [
       title: "Requesting Service Help",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke bagian layanan karena sebuah perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu datang ke bagian layanan karena sebuah perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ يُمْكِنُ أَنْ تُسَاعِدَنِي؟\n- الْجِهَازُ لَا يَعْمَلُ.\n- أَحْتَاجُ إِلَى إِصْلَاحٍ.\n- هَلْ عِنْدَكَ ضَمَانٌ؟\n- سَأَفْحَصُهُ الآنَ.",
-      setup: "Kamu datang ke bagian layanan karena sebuah perangkat tidak bekerja dan kamu perlu menjelaskan masalahnya dengan sopan.",
       sections: lessonSections
     },
     {
@@ -2998,8 +2480,6 @@ export const lessonCatalog = [
       title: "Shopping Service Mission",
       unit: "Shopping & Services",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu memilih barang di toko, membandingkan pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu memilih barang di toko, membandingkan pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.\n\nKamu akan berlatih mengatakan:\n\n- أَبْحَثُ عَنْ حَقِيبَةٍ صَغِيرَةٍ.\n- هَلْ يُوجَدُ لَوْنٌ أَزْرَقُ؟\n- أَيُّهُمَا أَفْضَلُ؟\n- سَآخُذُ الْأَزْرَقَ.\n- الْجِهَازُ لَا يَعْمَلُ.",
-      setup: "Kamu memilih barang di toko, membandingkan pilihan, lalu berpindah ke bagian layanan untuk meminta bantuan perangkat.",
       sections: lessonSections
     },
     {
@@ -3009,8 +2489,6 @@ export const lessonCatalog = [
       title: "Saying How You Feel",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu datang ke klinik dan perlu mengatakan kondisi umum dengan sederhana sebelum petugas mencatat informasi awal.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu datang ke klinik dan perlu mengatakan kondisi umum dengan sederhana sebelum petugas mencatat informasi awal.\n\nKamu akan berlatih mengatakan:\n\n- أَشْعُرُ بِتَعَبٍ.\n- عِنْدِي صُدَاعٌ خَفِيفٌ.\n- لَا أَشْعُرُ بِالرَّاحَةِ.\n- مُنْذُ هَذَا الصَّبَاحِ.\n- هَلْ يُمْكِنُنِي أَنْ أَرَى الطَّبِيبَ؟",
-      setup: "Kamu datang ke klinik dan perlu mengatakan kondisi umum dengan sederhana sebelum petugas mencatat informasi awal.",
       sections: lessonSections
     },
     {
@@ -3020,8 +2498,6 @@ export const lessonCatalog = [
       title: "Describing Simple Symptoms",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan petugas kesehatan dan menjelaskan gejala ringan secara jelas: bagian tubuh, intensitas, dan durasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berbicara dengan petugas kesehatan dan menjelaskan gejala ringan secara jelas: bagian tubuh, intensitas, dan durasi.\n\nKamu akan berlatih mengatakan:\n\n- عِنْدِي أَلَمٌ فِي الْحَلْقِ.\n- لَدَيَّ سُعَالٌ خَفِيفٌ.\n- دَرَجَةُ حَرَارَتِي مُرْتَفِعَةٌ قَلِيلًا.\n- مُنْذُ يَوْمَيْنِ.\n- الْأَلَمُ لَيْسَ شَدِيدًا.",
-      setup: "Kamu berbicara dengan petugas kesehatan dan menjelaskan gejala ringan secara jelas: bagian tubuh, intensitas, dan durasi.",
       sections: lessonSections
     },
     {
@@ -3031,8 +2507,6 @@ export const lessonCatalog = [
       title: "Making an Appointment",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menelepon klinik untuk membuat janji, memilih hari dan waktu, serta menyebut nama untuk pendaftaran.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menelepon klinik untuk membuat janji, memilih hari dan waktu, serta menyebut nama untuk pendaftaran.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.\n- هَلْ يُوجَدُ مَوْعِدٌ غَدًا؟\n- صَبَاحًا أَمْ مَسَاءً؟\n- السَّاعَةُ الْعَاشِرَةُ مُنَاسِبَةٌ.\n- الْمَوْعِدُ بِاسْمِي.",
-      setup: "Kamu menelepon klinik untuk membuat janji, memilih hari dan waktu, serta menyebut nama untuk pendaftaran.",
       sections: lessonSections
     },
     {
@@ -3042,8 +2516,6 @@ export const lessonCatalog = [
       title: "Confirming Appointment Details",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu ingin memastikan ulang detail janji: nama, tanggal, waktu, lokasi, dan nomor kontak.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu ingin memastikan ulang detail janji: nama, tanggal, waktu, lokasi, dan nomor kontak.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.\n- هَلِ الْمَوْعِدُ غَدًا؟\n- فِي أَيِّ طَابِقٍ؟\n- هَلْ رَقْمِي صَحِيحٌ؟\n- التَّفَاصِيلُ صَحِيحَةٌ.",
-      setup: "Kamu ingin memastikan ulang detail janji: nama, tanggal, waktu, lokasi, dan nomor kontak.",
       sections: lessonSections
     },
     {
@@ -3053,8 +2525,6 @@ export const lessonCatalog = [
       title: "Health Appointment Mission",
       unit: "Health & Appointments",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan kondisi ringan, membuat janji, lalu mengonfirmasi detail appointment dengan petugas klinik.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan kondisi ringan, membuat janji, lalu mengonfirmasi detail appointment dengan petugas klinik.\n\nKamu akan berlatih mengatakan:\n\n- لَا أَشْعُرُ بِالرَّاحَةِ.\n- عِنْدِي أَلَمٌ خَفِيفٌ.\n- أُرِيدُ مَوْعِدًا مَعَ الطَّبِيبِ.\n- السَّاعَةُ الْحَادِيَةَ عَشْرَةَ مُنَاسِبَةٌ.\n- أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.",
-      setup: "Kamu menjelaskan kondisi ringan, membuat janji, lalu mengonfirmasi detail appointment dengan petugas klinik.",
       sections: lessonSections
     },
     {
@@ -3064,8 +2534,6 @@ export const lessonCatalog = [
       title: "Talking About Yesterday",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas dan menceritakan kegiatan kemarin dengan kalimat pendek.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas dan menceritakan kegiatan kemarin dengan kalimat pendek.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا فَعَلْتَ أَمْسِ؟\n- ذَهَبْتُ إِلَى الْمَكْتَبَةِ.\n- دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.\n- بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى الْبَيْتِ.\n- كَانَ الْيَوْمُ جَيِّدًا.",
-      setup: "Kamu bertemu teman setelah kelas dan menceritakan kegiatan kemarin dengan kalimat pendek.",
       sections: lessonSections
     },
     {
@@ -3075,8 +2543,6 @@ export const lessonCatalog = [
       title: "Saying Where You Went",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan tempat yang kamu datangi akhir pekan lalu: pasar, taman, rumah teman, atau pusat kota.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menceritakan tempat yang kamu datangi akhir pekan lalu: pasar, taman, rumah teman, atau pusat kota.\n\nKamu akan berlatih mengatakan:\n\n- أَيْنَ ذَهَبْتَ؟\n- ذَهَبْتُ إِلَى السُّوقِ.\n- ذَهَبْتُ مَعَ صَدِيقِي.\n- فِي الصَّبَاحِ.\n- رَجَعْتُ فِي الْمَسَاءِ.",
-      setup: "Kamu menceritakan tempat yang kamu datangi akhir pekan lalu: pasar, taman, rumah teman, atau pusat kota.",
       sections: lessonSections
     },
     {
@@ -3086,8 +2552,6 @@ export const lessonCatalog = [
       title: "Describing a Simple Experience",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman sederhana di tempat umum: apa yang kamu lihat, apa yang kamu lakukan, dan bagaimana rasanya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman sederhana di tempat umum: apa yang kamu lihat, apa yang kamu lakukan, dan bagaimana rasanya.\n\nKamu akan berlatih mengatakan:\n\n- كَانَتِ التَّجْرِبَةُ جَيِّدَةً.\n- رَأَيْتُ مَكَانًا جَمِيلًا.\n- أَعْجَبَنِي الطَّعَامُ.\n- كَانَ الْمَكَانُ مُزْدَحِمًا.\n- أُرِيدُ أَنْ أَذْهَبَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menceritakan pengalaman sederhana di tempat umum: apa yang kamu lihat, apa yang kamu lakukan, dan bagaimana rasanya.",
       sections: lessonSections
     },
     {
@@ -3097,8 +2561,6 @@ export const lessonCatalog = [
       title: "Asking About Past Activities",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu ingin menjaga percakapan tetap berjalan dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟\n- مَعَ مَنْ ذَهَبْتَ؟\n- كَيْفَ كَانَ الْمَكَانُ؟\n- هَلْ أَعْجَبَكَ؟\n- مَاذَا فَعَلْتَ بَعْدَ ذَلِكَ؟",
-      setup: "Kamu ingin menjaga percakapan tetap berjalan dengan bertanya tentang aktivitas masa lalu teman secara sopan dan natural.",
       sections: lessonSections
     },
     {
@@ -3108,8 +2570,6 @@ export const lessonCatalog = [
       title: "Past Experience Mission",
       unit: "Past Experiences",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan dan menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan dan menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.\n\nKamu akan berlatih mengatakan:\n\n- فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.\n- رَأَيْتُ مَكَانًا جَدِيدًا.\n- اشْتَرَيْتُ شَيْئًا صَغِيرًا.\n- بَعْدَ ذَلِكَ، رَجَعْتُ إِلَى الْبَيْتِ.\n- كَانَتِ التَّجْرِبَةُ مُفِيدَةً.",
-      setup: "Kamu menceritakan pengalaman akhir pekan dan menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.",
       sections: lessonSections
     },
     {
@@ -3119,8 +2579,6 @@ export const lessonCatalog = [
       title: "Saying What You Think",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan ingin menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi santai setelah kelas dan ingin menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.\n\nKamu akan berlatih mengatakan:\n\n- أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.\n- فِي رَأْيِي، هَذَا جَيِّدٌ.\n- أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.\n- هَذَا أَفْضَلُ لِي.\n- مَا رَأْيُكَ؟",
-      setup: "Kamu berdiskusi santai setelah kelas dan ingin menyampaikan pendapat tentang pelajaran, tempat belajar, atau aktivitas.",
       sections: lessonSections
     },
     {
@@ -3130,8 +2588,6 @@ export const lessonCatalog = [
       title: "Giving Simple Reasons",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan alasan pendek untuk pendapatmu: karena mudah, dekat, murah, jelas, atau cocok untuk jadwalmu.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menjelaskan alasan pendek untuk pendapatmu: karena mudah, dekat, murah, jelas, atau cocok untuk jadwalmu.\n\nKamu akan berlatih mengatakan:\n\n- أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.\n- أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.\n- هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.\n- السَّبَبُ بَسِيطٌ.\n- لِأَنَّ الْوَقْتَ مُنَاسِبٌ.",
-      setup: "Kamu menjelaskan alasan pendek untuk pendapatmu: karena mudah, dekat, murah, jelas, atau cocok untuk jadwalmu.",
       sections: lessonSections
     },
     {
@@ -3141,8 +2597,6 @@ export const lessonCatalog = [
       title: "Agreeing and Disagreeing Politely",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan perlu setuju, kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu berdiskusi dengan teman dan perlu setuju, kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.\n\nKamu akan berlatih mengatakan:\n\n- أُوَافِقُكَ.\n- أُوَافِقُكِ فِي هَذَا.\n- لَا أُوَافِقُ تَمَامًا.\n- فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.\n- أَفْهَمُ رَأْيَكَ.",
-      setup: "Kamu berdiskusi dengan teman dan perlu setuju, kurang setuju, atau memberi pendapat berbeda tanpa terdengar kasar.",
       sections: lessonSections
     },
     {
@@ -3152,8 +2606,6 @@ export const lessonCatalog = [
       title: "Asking for Opinions",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu meminta pendapat teman sebelum memilih tempat, waktu, aktivitas, atau opsi sederhana.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu meminta pendapat teman sebelum memilih tempat, waktu, aktivitas, atau opsi sederhana.\n\nKamu akan berlatih mengatakan:\n\n- مَا رَأْيُكَ فِي هَذَا؟\n- مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟\n- أَيُّهُمَا أَفْضَلُ؟\n- هَلْ تَعْتَقِدُ أَنَّ هَذَا مُنَاسِبٌ؟\n- أُرِيدُ رَأْيًا وَاضِحًا.",
-      setup: "Kamu meminta pendapat teman sebelum memilih tempat, waktu, aktivitas, atau opsi sederhana.",
       sections: lessonSections
     },
     {
@@ -3163,8 +2615,6 @@ export const lessonCatalog = [
       title: "Opinion Conversation Mission",
       unit: "Opinions & Reasons",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu memilih rencana belajar bersama teman: meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu memilih rencana belajar bersama teman: meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.\n\nKamu akan berlatih mengatakan:\n\n- مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟\n- أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.\n- أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.\n- لَا أُوَافِقُ تَمَامًا.\n- إِذًا نَخْتَارُ هَذَا.",
-      setup: "Kamu memilih rencana belajar bersama teman: meminta pendapat, memberi alasan, setuju/kurang setuju, lalu mengambil keputusan.",
       sections: lessonSections
     },
     {
@@ -3174,8 +2624,6 @@ export const lessonCatalog = [
       title: "Review Social and Plans",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas, bertanya kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas, bertanya kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ كَانَ دَرْسُكَ؟\n- مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟\n- هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟\n- نَلْتَقِي السَّاعَةَ الْخَامِسَةَ.\n- أَمَامَ الْمَرْكَزِ.",
-      setup: "Kamu bertemu teman setelah kelas, bertanya kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.",
       sections: lessonSections
     },
     {
@@ -3185,8 +2633,6 @@ export const lessonCatalog = [
       title: "Review Travel and Services",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu membeli tiket, menanyakan arah, lalu meminta bantuan layanan untuk barang kecil yang bermasalah.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu membeli tiket, menanyakan arah, lalu meminta bantuan layanan untuk barang kecil yang bermasalah.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ تَذْكِرَةً إِلَى بَانْدُونْغ.\n- مَتَى يَغَادِرُ الْقِطَارُ؟\n- كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟\n- هَلْ عِنْدَكُمْ لَوْنٌ آخَرُ؟\n- الْجِهَازُ لَا يَعْمَلُ.",
-      setup: "Kamu membeli tiket, menanyakan arah, lalu meminta bantuan layanan untuk barang kecil yang bermasalah.",
       sections: lessonSections
     },
     {
@@ -3196,8 +2642,6 @@ export const lessonCatalog = [
       title: "Review Health and Past",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menghubungi klinik, menjelaskan gejala ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menghubungi klinik, menjelaskan gejala ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.\n\nKamu akan berlatih mengatakan:\n\n- لَا أَشْعُرُ بِالرَّاحَةِ.\n- عِنْدِي أَلَمٌ خَفِيفٌ.\n- مُنْذُ أَمْسِ.\n- ذَهَبْتُ إِلَى الْمَدِينَةِ.\n- رَجَعْتُ فِي الْمَسَاءِ.",
-      setup: "Kamu menghubungi klinik, menjelaskan gejala ringan, lalu menceritakan aktivitas kemarin yang mungkin perlu dicatat.",
       sections: lessonSections
     },
     {
@@ -3207,8 +2651,6 @@ export const lessonCatalog = [
       title: "A2 Final Test Practice",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu latihan simulasi tes A2: menjawab pertanyaan sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu latihan simulasi tes A2: menjawab pertanyaan sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.\n\nKamu akan berlatih mengatakan:\n\n- أَسْتَطِيعُ أَنْ أَتَحَدَّثَ عَنْ يَوْمِي.\n- ذَهَبْتُ إِلَى مَكَانٍ جَدِيدٍ.\n- أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.\n- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.\n- فِي رَأْيِي، هَذَا خِيَارٌ جَيِّدٌ.",
-      setup: "Kamu latihan simulasi tes A2: menjawab pertanyaan sosial, membuat rencana, menceritakan pengalaman, dan memberi pendapat pendek.",
       sections: lessonSections
     },
     {
@@ -3218,8 +2660,6 @@ export const lessonCatalog = [
       title: "A2 Final Conversation",
       unit: "A2 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan percakapan A2 lengkap: bertemu teman, membahas pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab A2 untuk situasi ini: Kamu menyelesaikan percakapan A2 lengkap: bertemu teman, membahas pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat.\n\nKamu akan berlatih mengatakan:\n\n- كَيْفَ كَانَتْ تَجْرِبَتُكَ؟\n- هَلْ تُرِيدُ أَنْ تَذْهَبَ مَعِي؟\n- كَيْفَ أَذْهَبُ إِلَى الْمَرْكَزِ؟\n- أُرِيدُ أَنْ أُؤَكِّدَ الْمَوْعِدَ.\n- أَعْتَقِدُ أَنَّ الْخُطَّةَ جَيِّدَةٌ.",
-      setup: "Kamu menyelesaikan percakapan A2 lengkap: bertemu teman, membahas pengalaman, membuat rencana, menangani kebutuhan layanan, dan memberi pendapat.",
       sections: lessonSections
     },
     {
@@ -3229,8 +2669,6 @@ export const lessonCatalog = [
       title: "Setting the Scene",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu membuka cerita pendek dengan waktu, tempat, dan orang yang terlibat sebelum masuk ke kejadian utama.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu membuka cerita pendek dengan waktu, tempat, dan orang yang terlibat sebelum masuk ke kejadian utama.\n\nKamu akan berlatih mengatakan:\n\n- فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.\n- كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ.\n- كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا.\n- هَذَا يُسَاعِدُ عَلَى فَهْمِ الْقِصَّةِ.\n- بَعْدَ ذَلِكَ، بَدَأَ الْحَدَثُ الْأَسَاسِيُّ.",
-      setup: "Kamu membuka cerita pendek dengan waktu, tempat, dan orang yang terlibat sebelum masuk ke kejadian utama.",
       sections: lessonSections
     },
     {
@@ -3240,8 +2678,6 @@ export const lessonCatalog = [
       title: "Telling Events in Order",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah mengikuti alurnya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah mengikuti alurnya.\n\nKamu akan berlatih mengatakan:\n\n- أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.\n- ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا.\n- بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ.\n- وَأَخِيرًا، اتَّفَقْنَا عَلَى الْخُطْوَةِ التَّالِيَةِ.\n- هَكَذَا صَارَتِ الْقِصَّةُ وَاضِحَةً.",
-      setup: "Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah mengikuti alurnya.",
       sections: lessonSections
     },
     {
@@ -3251,8 +2687,6 @@ export const lessonCatalog = [
       title: "Describing Feelings",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan memberi alasan singkat mengapa merasa begitu.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan memberi alasan singkat mengapa merasa begitu.\n\nKamu akan berlatih mengatakan:\n\n- شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.\n- لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ.\n- بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ.\n- هَذَا التَّغْيِيرُ كَانَ مُهِمًّا فِي الْقِصَّةِ.\n- فِي النِّهَايَةِ، كُنْتُ سَعِيدًا بِالنَّتِيجَةِ.",
-      setup: "Kamu menjelaskan perasaan dalam cerita dan memberi alasan singkat mengapa merasa begitu.",
       sections: lessonSections
     },
     {
@@ -3262,8 +2696,6 @@ export const lessonCatalog = [
       title: "Asking About Someone's Story",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang tanpa memotong alur pembicaraan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang tanpa memotong alur pembicaraan.\n\nKamu akan berlatih mengatakan:\n\n- مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟\n- كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟\n- لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟\n- أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ أَكْثَرَ.\n- شُكْرًا، أَصْبَحَتِ الْقِصَّةُ أَوْضَحَ.",
-      setup: "Kamu bertanya lanjutan tentang cerita seseorang tanpa memotong alur pembicaraan.",
       sections: lessonSections
     },
     {
@@ -3273,8 +2705,6 @@ export const lessonCatalog = [
       title: "Personal Story Mission",
       unit: "Personal Stories",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian, perasaan, dan pertanyaan lanjutan dalam satu cerita.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian, perasaan, dan pertanyaan lanjutan dalam satu cerita.\n\nKamu akan berlatih mengatakan:\n\n- فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.\n- ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ.\n- بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ.\n- شَعَرْتُ بِالرَّاحَةِ لِأَنَّ الْأَمْرَ صَارَ وَاضِحًا.\n- فِي النِّهَايَةِ، تَعَلَّمْتُ دَرْسًا مُفِيدًا.",
-      setup: "Kamu menggabungkan konteks, urutan kejadian, perasaan, dan pertanyaan lanjutan dalam satu cerita.",
       sections: lessonSections
     },
     {
@@ -3284,8 +2714,6 @@ export const lessonCatalog = [
       title: "Explaining Your Task",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan, langkah, dan hasil yang diharapkan.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan, langkah, dan hasil yang diharapkan.\n\nKamu akan berlatih mengatakan:\n\n- أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.\n- الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ.\n- أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ إِرْسَالُ مُلَخَّصٍ.\n- سَأُكْمِلُ ذَلِكَ قَبْلَ نِهَايَةِ الْيَوْمِ.",
-      setup: "Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan, langkah, dan hasil yang diharapkan.",
       sections: lessonSections
     },
     {
@@ -3295,8 +2723,6 @@ export const lessonCatalog = [
       title: "Asking for Clarification",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum cukup jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum cukup jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟\n- مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟\n- أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.\n- هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟\n- الْآنَ فَهِمْتُ الْمَطْلُوبَ.",
-      setup: "Kamu meminta klarifikasi ketika instruksi belum cukup jelas.",
       sections: lessonSections
     },
     {
@@ -3306,8 +2732,6 @@ export const lessonCatalog = [
       title: "Giving a Short Update",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.\n\nKamu akan berlatih mengatakan:\n\n- أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.\n- مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.\n- لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.\n- سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ.\n- هَذَا هُوَ الْوَضْعُ الْحَالِيُّ.",
-      setup: "Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3317,8 +2741,6 @@ export const lessonCatalog = [
       title: "Joining a Simple Meeting",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan langkah berikutnya.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan langkah berikutnya.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.\n- أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا.\n- هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ.\n- مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟\n- سَأَكْتُبُ النِّقَاطَ الْمُهِمَّةَ.",
-      setup: "Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3328,8 +2750,6 @@ export const lessonCatalog = [
       title: "Workplace Mission",
       unit: "Workplace Conversations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan menutup dengan action point.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan menutup dengan action point.\n\nKamu akan berlatih mengatakan:\n\n- أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.\n- هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟\n- أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.\n- سَأُرْسِلُ مُلَخَّصًا قَبْلَ الْمَسَاءِ.\n- إِذَا ظَهَرَتْ مُشْكِلَةٌ، سَأُخْبِرُكِ.",
-      setup: "Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan menutup dengan action point.",
       sections: lessonSections
     },
     {
@@ -3339,8 +2759,6 @@ export const lessonCatalog = [
       title: "Describing a Problem",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing a problem, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing a problem, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ.\n- الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ.\n- أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ.\n- أَحْتَاجُ إِلَى حَلٍّ سَرِيعٍ.\n- سَأُرَاجِعُ السَّبَبَ أَوَّلًا.",
-      setup: "Kamu berlatih topik B1: describing a problem, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3350,8 +2768,6 @@ export const lessonCatalog = [
       title: "Suggesting a Solution",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: suggesting a solution, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: suggesting a solution, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا.\n- يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا.\n- هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ.\n- لَكِنَّهُ يَحْتَاجُ إِلَى مُرَاجَعَةٍ.\n- إِذَا نَجَحَ، نَسْتَمِرُّ عَلَيْهِ.",
-      setup: "Kamu berlatih topik B1: suggesting a solution, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3361,8 +2777,6 @@ export const lessonCatalog = [
       title: "Responding to Advice",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: responding to advice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: responding to advice, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- نَصِيحَتُكَ مُفِيدَةٌ.\n- سَأُجَرِّبُ ذَلِكَ الْيَوْمَ.\n- أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.\n- لَكِنْ عِنْدِي سُؤَالٌ صَغِيرٌ.\n- شُكْرًا عَلَى التَّوْجِيهِ.",
-      setup: "Kamu berlatih topik B1: responding to advice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3372,8 +2786,6 @@ export const lessonCatalog = [
       title: "Making a Simple Decision",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making a simple decision, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making a simple decision, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ.\n- الْخِيَارُ الْأَوَّلُ أَسْهَلُ.\n- الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ.\n- أُفَضِّلُ الْخِيَارَ الثَّانِي لِهَذَا السَّبَبِ.\n- إِذَنْ، نَبْدَأُ بِهِ غَدًا.",
-      setup: "Kamu berlatih topik B1: making a simple decision, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3383,8 +2795,6 @@ export const lessonCatalog = [
       title: "Problem Solving Mission",
       unit: "Problems & Solutions",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: problem solving mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: problem solving mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ.\n- السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ.\n- أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا.\n- إِذَا نَجَحَ، نُثَبِّتُهُ.\n- وَإِذَا لَمْ يَنْجَحْ، نَبْحَثُ عَنْ خِيَارٍ آخَرَ.",
-      setup: "Kamu berlatih topik B1: problem solving mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3394,8 +2804,6 @@ export const lessonCatalog = [
       title: "Checking In",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: checking in, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: checking in, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ.\n- أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ.\n- هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟\n- أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ.\n- شُكْرًا عَلَى الْمُسَاعَدَةِ.",
-      setup: "Kamu berlatih topik B1: checking in, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3405,8 +2813,6 @@ export const lessonCatalog = [
       title: "Explaining a Delay",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining a delay, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining a delay, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.\n- السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ.\n- سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.\n- آسِفٌ عَلَى التَّأْخِيرِ.\n- سَأُخْبِرُكَ إِذَا تَغَيَّرَ الْوَقْتُ.",
-      setup: "Kamu berlatih topik B1: explaining a delay, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3416,8 +2822,6 @@ export const lessonCatalog = [
       title: "Asking for Recommendations",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking for recommendations, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking for recommendations, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ تُوصِي بِمَطْعَمٍ قَرِيبٍ؟\n- أُفَضِّلُ مَكَانًا هَادِئًا.\n- يَهُمُّنِي أَنْ يَكُونَ السِّعْرُ مُنَاسِبًا.\n- مَا أَفْضَلُ خِيَارٍ فِي رَأْيِكَ؟\n- شُكْرًا، سَأُجَرِّبُ هَذَا الْمَكَانَ.",
-      setup: "Kamu berlatih topik B1: asking for recommendations, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3427,8 +2831,6 @@ export const lessonCatalog = [
       title: "Handling a Simple Complaint",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: handling a simple complaint, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: handling a simple complaint, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً.\n- الْغُرْفَةُ غَيْرُ نَظِيفَةٍ تَمَامًا.\n- هَلْ يُمْكِنُ أَنْ تُرْسِلُوا أَحَدًا؟\n- أُقَدِّرُ مُسَاعَدَتَكُمْ.\n- إِذَا أَمْكَنَ، أُرِيدُ حَلًّا الْيَوْمَ.",
-      setup: "Kamu berlatih topik B1: handling a simple complaint, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3438,8 +2840,6 @@ export const lessonCatalog = [
       title: "Travel Situation Mission",
       unit: "Travel Situations",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: travel situation mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: travel situation mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.\n- أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ.\n- هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟\n- لَدَيَّ مُشْكِلَةٌ صَغِيرَةٌ فِي الْغُرْفَةِ.\n- شُكْرًا عَلَى سُرْعَةِ الْمُسَاعَدَةِ.",
-      setup: "Kamu berlatih topik B1: travel situation mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3449,8 +2849,6 @@ export const lessonCatalog = [
       title: "Talking About Goals",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about goals, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about goals, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ.\n- أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.\n- لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ.\n- أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ.\n- هَذَا الْهَدَفُ مُهِمٌّ لِي.",
-      setup: "Kamu berlatih topik B1: talking about goals, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3460,8 +2858,6 @@ export const lessonCatalog = [
       title: "Explaining Progress",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining progress, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining progress, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- تَقَدَّمْتُ قَلِيلًا هَذَا الشَّهْرَ.\n- أَصْبَحْتُ أَفْهَمُ الْحِوَارَ أَسْرَعَ.\n- مَا زِلْتُ أُخْطِئُ فِي بَعْضِ الْجُمَلِ.\n- لَكِنَّ التَّحَسُّنَ وَاضِحٌ.\n- سَأُوَاصِلُ التَّدْرِيبَ.",
-      setup: "Kamu berlatih topik B1: explaining progress, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3471,8 +2867,6 @@ export const lessonCatalog = [
       title: "Discussing Challenges",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: discussing challenges, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: discussing challenges, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ.\n- أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ.\n- أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ.\n- سَأُقَلِّلُ الْجُمَلَ الطَّوِيلَةَ.\n- هَذَا يُسَاعِدُنِي عَلَى الطَّلَاقَةِ.",
-      setup: "Kamu berlatih topik B1: discussing challenges, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3482,8 +2876,6 @@ export const lessonCatalog = [
       title: "Making Next-step Plans",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making next-step plans, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: making next-step plans, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- الْخُطْوَةُ التَّالِيَةُ هِيَ التَّدْرِيبُ الْيَوْمِيُّ.\n- سَأُرَاجِعُ خَمْسَ عِبَارَاتٍ كُلَّ يَوْمٍ.\n- سَأُسَجِّلُ صَوْتِي مَرَّةً وَاحِدَةً.\n- بَعْدَ أُسْبُوعٍ، سَأُقَيِّمُ النَّتِيجَةَ.\n- إِذَا احْتَجْتُ، سَأُغَيِّرُ الْخُطَّةَ.",
-      setup: "Kamu berlatih topik B1: making next-step plans, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3493,8 +2885,6 @@ export const lessonCatalog = [
       title: "Goals Progress Mission",
       unit: "Goals & Progress",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: goals progress mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: goals progress mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَدَفِي وَاضِحٌ لِهَذَا الشَّهْرِ.\n- تَقَدَّمْتُ فِي الِاسْتِمَاعِ، وَلَكِنَّ الْكَلَامَ أَصْعَبُ.\n- أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ.\n- سَأَتَدَرَّبُ عَلَى إِجَابَاتٍ قَصِيرَةٍ.\n- سَأُرَاجِعُ النَّتِيجَةَ بَعْدَ أُسْبُوعٍ.",
-      setup: "Kamu berlatih topik B1: goals progress mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3504,8 +2894,6 @@ export const lessonCatalog = [
       title: "Comparing Two Options",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: comparing two options, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: comparing two options, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ.\n- الْخِيَارُ الْأَوَّلُ أَسْرَعُ.\n- الْخِيَارُ الثَّانِي أَرْخَصُ.\n- لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ أَيْضًا.\n- نَحْتَاجُ إِلَى مُقَارَنَةٍ هَادِئَةٍ.",
-      setup: "Kamu berlatih topik B1: comparing two options, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3515,8 +2903,6 @@ export const lessonCatalog = [
       title: "Explaining Why You Prefer Something",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining why you prefer something, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: explaining why you prefer something, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ.\n- يُنَاسِبُ هَدَفَنَا أَكْثَرَ.\n- رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا.\n- لَكِنَّهُ يُوَفِّرُ وَقْتًا.\n- لِذَلِكَ أَرَاهُ أَفْضَلَ.",
-      setup: "Kamu berlatih topik B1: explaining why you prefer something, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3526,8 +2912,6 @@ export const lessonCatalog = [
       title: "Asking About Pros and Cons",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about pros and cons, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about pros and cons, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟\n- وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟\n- هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟\n- أُرِيدُ أَنْ أَفْهَمَ الصُّورَةَ كَامِلَةً.\n- بَعْدَ ذَلِكَ، نَقْرِّرُ.",
-      setup: "Kamu berlatih topik B1: asking about pros and cons, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3537,8 +2921,6 @@ export const lessonCatalog = [
       title: "Reaching Agreement",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: reaching agreement, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: reaching agreement, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.\n- لَكِنَّنِي أَرَى خِيَارًا آخَرَ.\n- مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.\n- هَذَا حَلٌّ مُتَوَازِنٌ.\n- إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ الْخُطَّةِ.",
-      setup: "Kamu berlatih topik B1: reaching agreement, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3548,8 +2930,6 @@ export const lessonCatalog = [
       title: "Preference Discussion Mission",
       unit: "Explaining Preferences",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: preference discussion mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: preference discussion mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.\n- أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.\n- لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.\n- نَحْتَاجُ إِلَى تَوَازُنٍ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- إِذَنْ، نَخْتَارُ الْحَلَّ الْمُتَوَازِنَ.",
-      setup: "Kamu berlatih topik B1: preference discussion mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3559,8 +2939,6 @@ export const lessonCatalog = [
       title: "Describing Your Community",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing your community, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: describing your community, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَعِيشُ فِي مُجْتَمَعٍ هَادِئٍ.\n- النَّاسُ يَتَعَاوَنُونَ فِي الْأَعْمَالِ الْيَوْمِيَّةِ.\n- تُوجَدُ عَادَاتٌ جَمِيلَةٌ فِي الْحَيِّ.\n- أَشْعُرُ بِالِانْتِمَاءِ إِلَى هَذَا الْمَكَانِ.\n- هَذَا يُؤَثِّرُ عَلَى حَيَاتِي.",
-      setup: "Kamu berlatih topik B1: describing your community, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3570,8 +2948,6 @@ export const lessonCatalog = [
       title: "Talking About Local Habits",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about local habits, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: talking about local habits, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.\n- فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا.\n- بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.\n- هَذِهِ الْعَادَةُ تُسَاعِدُ عَلَى الِاحْتِرَامِ.\n- أَحْتَرِمُ هَذِهِ الطَّرِيقَةَ.",
-      setup: "Kamu berlatih topik B1: talking about local habits, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3581,8 +2957,6 @@ export const lessonCatalog = [
       title: "Asking About Culture",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about culture, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: asking about culture, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟\n- أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ.\n- هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟\n- شُكْرًا عَلَى التَّوْضِيحِ.\n- سَأَتَصَرَّفُ بِاحْتِرَامٍ.",
-      setup: "Kamu berlatih topik B1: asking about culture, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3592,8 +2966,6 @@ export const lessonCatalog = [
       title: "Being Polite With Differences",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: being polite with differences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: being polite with differences, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.\n- لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.\n- مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.\n- أَحْتَرِمُ اخْتِلَافَ الطُّرُقِ.\n- هَذَا يَجْعَلُ الْحِوَارَ أَسْهَلَ.",
-      setup: "Kamu berlatih topik B1: being polite with differences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3603,8 +2975,6 @@ export const lessonCatalog = [
       title: "Community Culture Mission",
       unit: "Community & Culture",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.\n- تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا.\n- أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا.\n- إِذَا اخْتَلَفْنَا، نَسْأَلُ بِاحْتِرَامٍ.\n- هَكَذَا يَصِيرُ التَّوَاصُلُ أَفْضَلَ.",
-      setup: "Kamu berlatih topik B1: community culture mission, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3614,8 +2984,6 @@ export const lessonCatalog = [
       title: "Review Stories and Work",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review stories and work, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review stories and work, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.\n- بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.\n- أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.\n- سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.\n- هَذَا يُظْهِرُ التَّرَابُطَ فِي الْحِوَارِ.",
-      setup: "Kamu berlatih topik B1: review stories and work, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3625,8 +2993,6 @@ export const lessonCatalog = [
       title: "Review Problems and Travel",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review problems and travel, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review problems and travel, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.\n- فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.\n- إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.\n- أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا.\n- فِي النِّهَايَةِ، أُؤَكِّدُ الْخُطْوَةَ التَّالِيَةَ.",
-      setup: "Kamu berlatih topik B1: review problems and travel, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3636,8 +3002,6 @@ export const lessonCatalog = [
       title: "Review Goals and Preferences",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.\n- أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.\n- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.\n- السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.\n- بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا.",
-      setup: "Kamu berlatih topik B1: review goals and preferences, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3647,8 +3011,6 @@ export const lessonCatalog = [
       title: "B1 Final Test Practice",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.\n- أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.\n- إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.\n- أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.\n- هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ.",
-      setup: "Kamu berlatih topik B1: b1 final test practice, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3658,8 +3020,6 @@ export const lessonCatalog = [
       title: "B1 Final Conversation",
       unit: "B1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang lebih terhubung dan alasan yang jelas.\n\nKamu akan berlatih mengatakan:\n\n- سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.\n- ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.\n- بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.\n- أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا.\n- فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ.",
-      setup: "Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang lebih terhubung dan alasan yang jelas.",
       sections: lessonSections
     },
     {
@@ -3669,8 +3029,6 @@ export const lessonCatalog = [
       title: "Stating Your Position",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menentukan posisi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menentukan posisi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.\n- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.\n- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.\n- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.\n- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.",
-      setup: "Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.",
       sections: lessonSections
     },
     {
@@ -3680,8 +3038,6 @@ export const lessonCatalog = [
       title: "Supporting With Reasons",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk mendukung pendapat dengan alasan dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mendukung pendapat dengan alasan dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.\n- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.\n- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.\n- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.\n- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.",
-      setup: "Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.",
       sections: lessonSections
     },
     {
@@ -3691,8 +3047,6 @@ export const lessonCatalog = [
       title: "Using Examples",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menggunakan contoh dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menggunakan contoh dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.\n- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.\n- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.\n- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.\n- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.",
-      setup: "Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.",
       sections: lessonSections
     },
     {
@@ -3702,8 +3056,6 @@ export const lessonCatalog = [
       title: "Responding to Counterpoints",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk menanggapi keberatan dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menanggapi keberatan dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.\n- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.\n- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.\n- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.\n- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.",
-      setup: "Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.",
       sections: lessonSections
     },
     {
@@ -3713,8 +3065,6 @@ export const lessonCatalog = [
       title: "Clear Argument Mission",
       unit: "Clear Arguments",
       conversationGoal: "Latih percakapan Arab B2 untuk membangun argumen jelas dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk membangun argumen jelas dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.\n- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.\n- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.\n- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.\n- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.",
-      setup: "Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.",
       sections: lessonSections
     },
     {
@@ -3724,8 +3074,6 @@ export const lessonCatalog = [
       title: "Opening a Meeting Point",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk membuka poin rapat dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk membuka poin rapat dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.\n- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟\n- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.\n- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.\n- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.",
-      setup: "Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.",
       sections: lessonSections
     },
     {
@@ -3735,8 +3083,6 @@ export const lessonCatalog = [
       title: "Clarifying Scope",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.\n- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟\n- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.\n- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.\n- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.",
-      setup: "Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.",
       sections: lessonSections
     },
     {
@@ -3746,8 +3092,6 @@ export const lessonCatalog = [
       title: "Giving Constructive Feedback",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk memberi masukan konstruktif dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk memberi masukan konstruktif dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.\n- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟\n- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.\n- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.\n- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.",
-      setup: "Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.",
       sections: lessonSections
     },
     {
@@ -3757,8 +3101,6 @@ export const lessonCatalog = [
       title: "Summarizing Decisions",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk merangkum keputusan dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk merangkum keputusan dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَلْخِيصُ الْقَرَارَاتِ.\n- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟\n- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.\n- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.\n- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.",
-      setup: "Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.",
       sections: lessonSections
     },
     {
@@ -3768,8 +3110,6 @@ export const lessonCatalog = [
       title: "Meeting Participation Mission",
       unit: "Professional Meetings",
       conversationGoal: "Latih percakapan Arab B2 untuk berpartisipasi dalam rapat profesional dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk berpartisipasi dalam rapat profesional dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.\n- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟\n- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.\n- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.\n- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.",
-      setup: "Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.",
       sections: lessonSections
     },
     {
@@ -3779,8 +3119,6 @@ export const lessonCatalog = [
       title: "Expressing Priorities",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan prioritas dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjelaskan prioritas dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا.\n- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.\n- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.\n- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.\n- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.",
-      setup: "Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.",
       sections: lessonSections
     },
     {
@@ -3790,8 +3128,6 @@ export const lessonCatalog = [
       title: "Making a Proposal",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mengajukan usulan praktis dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mengajukan usulan praktis dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَقْدِيمُ اِقْتِرَاحٍ عَمَلِيٍّ وَاضِحًا.\n- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.\n- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.\n- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.\n- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.",
-      setup: "Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.",
       sections: lessonSections
     },
     {
@@ -3801,8 +3137,6 @@ export const lessonCatalog = [
       title: "Handling Objections",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk menangani keberatan dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menangani keberatan dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى التَّعَامُلُ مَعَ الِاعْتِرَاضَاتِ وَاضِحًا.\n- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.\n- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.\n- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.\n- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.",
-      setup: "Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.",
       sections: lessonSections
     },
     {
@@ -3812,8 +3146,6 @@ export const lessonCatalog = [
       title: "Finding Middle Ground",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mencari jalan tengah dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mencari jalan tengah dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى الْوُصُولُ إِلَى حَلٍّ وَسَطٍ وَاضِحًا.\n- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.\n- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.\n- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.\n- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.",
-      setup: "Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.",
       sections: lessonSections
     },
     {
@@ -3823,8 +3155,6 @@ export const lessonCatalog = [
       title: "Negotiation Mission",
       unit: "Negotiation & Compromise",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola negosiasi jelas dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mengelola negosiasi jelas dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ وَاضِحًا.\n- أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.\n- أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.\n- يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.\n- إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ.",
-      setup: "Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.",
       sections: lessonSections
     },
     {
@@ -3834,8 +3164,6 @@ export const lessonCatalog = [
       title: "Structuring a Short Presentation",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menyusun presentasi singkat dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menyusun presentasi singkat dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ.\n- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.\n- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.\n- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.\n- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.",
-      setup: "Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.",
       sections: lessonSections
     },
     {
@@ -3845,8 +3173,6 @@ export const lessonCatalog = [
       title: "Signposting Clearly",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.\n- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.\n- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.\n- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.\n- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.",
-      setup: "Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.",
       sections: lessonSections
     },
     {
@@ -3856,8 +3182,6 @@ export const lessonCatalog = [
       title: "Explaining Benefits and Risks",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan manfaat dan risiko dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjelaskan manfaat dan risiko dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ.\n- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.\n- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.\n- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.\n- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.",
-      setup: "Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.",
       sections: lessonSections
     },
     {
@@ -3867,8 +3191,6 @@ export const lessonCatalog = [
       title: "Answering Questions",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk menjawab pertanyaan dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjawab pertanyaan dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.\n- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.\n- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.\n- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.\n- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.",
-      setup: "Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.",
       sections: lessonSections
     },
     {
@@ -3878,8 +3200,6 @@ export const lessonCatalog = [
       title: "Idea Presentation Mission",
       unit: "Presenting Ideas",
       conversationGoal: "Latih percakapan Arab B2 untuk mempresentasikan dan mempertahankan ide dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mempresentasikan dan mempertahankan ide dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَقْدِيمُ فِكْرَةٍ وَالدِّفَاعُ عَنْهَا.\n- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.\n- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.\n- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.\n- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.",
-      setup: "Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.",
       sections: lessonSections
     },
     {
@@ -3889,8 +3209,6 @@ export const lessonCatalog = [
       title: "Summarizing an Article",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.\n- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.\n- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.\n- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.\n- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.",
-      setup: "Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.",
       sections: lessonSections
     },
     {
@@ -3900,8 +3218,6 @@ export const lessonCatalog = [
       title: "Discussing Reliable Sources",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk membahas sumber tepercaya dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk membahas sumber tepercaya dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.\n- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.\n- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.\n- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.\n- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.",
-      setup: "Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.",
       sections: lessonSections
     },
     {
@@ -3911,8 +3227,6 @@ export const lessonCatalog = [
       title: "Explaining a Viewpoint",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan sudut pandang dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjelaskan sudut pandang dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.\n- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.\n- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.\n- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.\n- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.",
-      setup: "Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.",
       sections: lessonSections
     },
     {
@@ -3922,8 +3236,6 @@ export const lessonCatalog = [
       title: "Responding to New Information",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk menanggapi informasi baru dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menanggapi informasi baru dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.\n- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.\n- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.\n- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.\n- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.",
-      setup: "Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.",
       sections: lessonSections
     },
     {
@@ -3933,8 +3245,6 @@ export const lessonCatalog = [
       title: "Information Discussion Mission",
       unit: "Media & Information",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola diskusi informasi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mengelola diskusi informasi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.\n- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.\n- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.\n- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.\n- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.",
-      setup: "Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.",
       sections: lessonSections
     },
     {
@@ -3944,8 +3254,6 @@ export const lessonCatalog = [
       title: "Understanding Client Needs",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk memahami kebutuhan klien dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk memahami kebutuhan klien dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.\n- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.\n- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.\n- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.",
-      setup: "Kamu berbicara dengan klien, memahami kebutuhan, menjelaskan opsi, menangani kekhawatiran, dan mengonfirmasi langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3955,8 +3263,6 @@ export const lessonCatalog = [
       title: "Explaining Options",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan opsi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjelaskan opsi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ.\n- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.\n- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.\n- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.",
-      setup: "Kamu berbicara dengan klien, memahami kebutuhan, menjelaskan opsi, menangani kekhawatiran, dan mengonfirmasi langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3966,8 +3272,6 @@ export const lessonCatalog = [
       title: "Handling Concerns",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk menangani concern klien dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menangani concern klien dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ التَّعَامُلُ مَعَ اهْتِمَامَاتِ الْعَمِيلِ.\n- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.\n- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.\n- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.",
-      setup: "Kamu berbicara dengan klien, memahami kebutuhan, menjelaskan opsi, menangani kekhawatiran, dan mengonfirmasi langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3977,8 +3281,6 @@ export const lessonCatalog = [
       title: "Confirming Next Steps",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.\n- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.\n- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.\n- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.",
-      setup: "Kamu berbicara dengan klien, memahami kebutuhan, menjelaskan opsi, menangani kekhawatiran, dan mengonfirmasi langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3988,8 +3290,6 @@ export const lessonCatalog = [
       title: "Client Conversation Mission",
       unit: "Customer & Client Communication",
       conversationGoal: "Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ.\n- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.\n- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.\n- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.\n- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.",
-      setup: "Kamu berbicara dengan klien, memahami kebutuhan, menjelaskan opsi, menangani kekhawatiran, dan mengonfirmasi langkah berikutnya.",
       sections: lessonSections
     },
     {
@@ -3999,8 +3299,6 @@ export const lessonCatalog = [
       title: "Framing the Problem",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk membingkai masalah dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk membingkai masalah dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.\n- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.\n- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.\n- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.\n- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.",
       sections: lessonSections
     },
     {
@@ -4010,8 +3308,6 @@ export const lessonCatalog = [
       title: "Explaining Causes",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk menjelaskan penyebab dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk menjelaskan penyebab dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.\n- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.\n- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.\n- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.\n- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.",
       sections: lessonSections
     },
     {
@@ -4021,8 +3317,6 @@ export const lessonCatalog = [
       title: "Discussing Tradeoffs",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk membahas tradeoff dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk membahas tradeoff dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.\n- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.\n- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.\n- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.\n- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.",
       sections: lessonSections
     },
     {
@@ -4032,8 +3326,6 @@ export const lessonCatalog = [
       title: "Recommending a Solution",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk merekomendasikan solusi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk merekomendasikan solusi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.\n- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.\n- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.\n- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.\n- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.",
       sections: lessonSections
     },
     {
@@ -4043,8 +3335,6 @@ export const lessonCatalog = [
       title: "Problem Solving Discussion Mission",
       unit: "Complex Problem Solving",
       conversationGoal: "Latih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.\n- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.\n- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.\n- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.\n- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.",
-      setup: "Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.",
       sections: lessonSections
     },
     {
@@ -4054,8 +3344,6 @@ export const lessonCatalog = [
       title: "Review Arguments and Meetings",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk review argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْحُجَجِ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.\n- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.\n- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.\n- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.\n- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.",
-      setup: "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
       sections: lessonSections
     },
     {
@@ -4065,8 +3353,6 @@ export const lessonCatalog = [
       title: "Review Negotiation and Presenting",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk review negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ التَّفَاوُضِ وَالْعَرْضِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.\n- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.\n- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.\n- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.\n- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.",
-      setup: "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
       sections: lessonSections
     },
     {
@@ -4076,8 +3362,6 @@ export const lessonCatalog = [
       title: "Review Information and Clients",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk review informasi dan klien dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk review informasi dan klien dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرَاجِعُ مَهَارَةَ مُرَاجَعَةُ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.\n- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.\n- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.\n- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.\n- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.",
-      setup: "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
       sections: lessonSections
     },
     {
@@ -4087,8 +3371,6 @@ export const lessonCatalog = [
       title: "B2 Final Test Practice",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk latihan tes akhir dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرَاجِعُ مَهَارَةَ تَدْرِيبُ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.\n- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.\n- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.\n- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.\n- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.",
-      setup: "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
       sections: lessonSections
     },
     {
@@ -4098,8 +3380,6 @@ export const lessonCatalog = [
       title: "B2 Final Discussion",
       unit: "B2 Review & Final Discussion",
       conversationGoal: "Latih percakapan Arab B2 untuk diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab B2 untuk diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.\n\nKamu akan berlatih mengatakan:\n\n- أُرَاجِعُ مَهَارَةَ النِّقَاشُ النِّهَائِيُّ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.\n- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.\n- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.\n- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.\n- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.",
-      setup: "Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.",
       sections: lessonSections
     },
     {
@@ -4109,8 +3389,6 @@ export const lessonCatalog = [
       title: "Qualifying Your Opinion",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk qualifying opinion before making a claim dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk qualifying opinion before making a claim dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.\n- عِنْدَ تَطْبِيقِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.\n- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.",
-      setup: "Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan.",
       sections: lessonSections
     },
     {
@@ -4120,8 +3398,6 @@ export const lessonCatalog = [
       title: "Expressing Certainty and Doubt",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.\n- عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.\n- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.",
-      setup: "Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan.",
       sections: lessonSections
     },
     {
@@ -4131,8 +3407,6 @@ export const lessonCatalog = [
       title: "Balancing Two Viewpoints",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk balancing two viewpoints dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk balancing two viewpoints dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.\n- عِنْدَ تَطْبِيقِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.\n- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.",
-      setup: "Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan.",
       sections: lessonSections
     },
     {
@@ -4142,8 +3416,6 @@ export const lessonCatalog = [
       title: "Softening Disagreement",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk softening disagreement dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk softening disagreement dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.\n- عِنْدَ تَطْبِيقِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.\n- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.",
-      setup: "Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan.",
       sections: lessonSections
     },
     {
@@ -4153,8 +3425,6 @@ export const lessonCatalog = [
       title: "Nuanced Opinion Mission",
       unit: "Nuanced Opinions",
       conversationGoal: "Latih percakapan Arab C1 untuk building a complete nuanced opinion dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk building a complete nuanced opinion dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَرْكِيبِ رَأْيٍ دَقِيقٍ مُتَكَامِلٍ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.\n- عِنْدَ تَطْبِيقِ تَرْكِيبِ رَأْيٍ دَقِيقٍ مُتَكَامِلٍ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.\n- مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً.",
-      setup: "Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan.",
       sections: lessonSections
     },
     {
@@ -4164,8 +3434,6 @@ export const lessonCatalog = [
       title: "Aligning Stakeholders",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk aligning stakeholders dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk aligning stakeholders dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.\n- عِنْدَ تَطْبِيقِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.\n- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.",
-      setup: "Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.",
       sections: lessonSections
     },
     {
@@ -4175,8 +3443,6 @@ export const lessonCatalog = [
       title: "Managing Expectations",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk managing realistic expectations dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk managing realistic expectations dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.\n- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.",
-      setup: "Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.",
       sections: lessonSections
     },
     {
@@ -4186,8 +3452,6 @@ export const lessonCatalog = [
       title: "Handling Sensitive Feedback",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk handling sensitive feedback tactfully dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk handling sensitive feedback tactfully dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.\n- عِنْدَ تَطْبِيقِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.\n- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.",
-      setup: "Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.",
       sections: lessonSections
     },
     {
@@ -4197,8 +3461,6 @@ export const lessonCatalog = [
       title: "Communicating Risk",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk communicating risk without exaggeration dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk communicating risk without exaggeration dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.\n- عِنْدَ تَطْبِيقِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.\n- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.",
-      setup: "Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.",
       sections: lessonSections
     },
     {
@@ -4208,8 +3470,6 @@ export const lessonCatalog = [
       title: "Strategic Workplace Mission",
       unit: "Strategic Workplace Communication",
       conversationGoal: "Latih percakapan Arab C1 untuk running a strategic workplace conversation dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk running a strategic workplace conversation dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.\n- سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.",
-      setup: "Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.",
       sections: lessonSections
     },
     {
@@ -4219,8 +3479,6 @@ export const lessonCatalog = [
       title: "Framing a Complex Topic",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk framing a complex topic dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk framing a complex topic dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَأْطِيرِ مَوْضُوعٍ مُعَقَّدٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.\n- عِنْدَ تَطْبِيقِ تَأْطِيرِ مَوْضُوعٍ مُعَقَّدٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.\n- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ.",
-      setup: "Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.",
       sections: lessonSections
     },
     {
@@ -4230,8 +3488,6 @@ export const lessonCatalog = [
       title: "Building a Persuasive Flow",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk building a persuasive flow dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk building a persuasive flow dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.\n- عِنْدَ تَطْبِيقِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.\n- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ.",
-      setup: "Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.",
       sections: lessonSections
     },
     {
@@ -4241,8 +3497,6 @@ export const lessonCatalog = [
       title: "Using Precise Transitions",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk using precise transitions dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk using precise transitions dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.\n- عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.\n- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ.",
-      setup: "Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.",
       sections: lessonSections
     },
     {
@@ -4252,8 +3506,6 @@ export const lessonCatalog = [
       title: "Handling Challenging Questions",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk handling challenging questions dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk handling challenging questions dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.\n- عِنْدَ تَطْبِيقِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.\n- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ.",
-      setup: "Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.",
       sections: lessonSections
     },
     {
@@ -4263,8 +3515,6 @@ export const lessonCatalog = [
       title: "Advanced Presentation Mission",
       unit: "Advanced Presentations",
       conversationGoal: "Latih percakapan Arab C1 untuk delivering an advanced presentation dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk delivering an advanced presentation dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.\n- عِنْدَ تَطْبِيقِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.\n- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ.",
-      setup: "Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.",
       sections: lessonSections
     },
     {
@@ -4274,8 +3524,6 @@ export const lessonCatalog = [
       title: "Identifying Assumptions",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk identifying hidden assumptions dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk identifying hidden assumptions dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.\n- عِنْدَ تَطْبِيقِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.\n- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.",
-      setup: "Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang.",
       sections: lessonSections
     },
     {
@@ -4285,8 +3533,6 @@ export const lessonCatalog = [
       title: "Challenging an Argument",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk challenging an argument politely dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk challenging an argument politely dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.\n- عِنْدَ تَطْبِيقِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.\n- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.",
-      setup: "Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang.",
       sections: lessonSections
     },
     {
@@ -4296,8 +3542,6 @@ export const lessonCatalog = [
       title: "Presenting Evidence",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk presenting relevant evidence dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk presenting relevant evidence dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.\n- عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.\n- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.",
-      setup: "Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang.",
       sections: lessonSections
     },
     {
@@ -4307,8 +3551,6 @@ export const lessonCatalog = [
       title: "Responding Under Pressure",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk responding calmly under pressure dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk responding calmly under pressure dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.\n- عِنْدَ تَطْبِيقِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.\n- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.",
-      setup: "Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang.",
       sections: lessonSections
     },
     {
@@ -4318,8 +3560,6 @@ export const lessonCatalog = [
       title: "Debate Analysis Mission",
       unit: "Debate & Analysis",
       conversationGoal: "Latih percakapan Arab C1 untuk running a balanced analytical debate dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk running a balanced analytical debate dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.\n- الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.",
-      setup: "Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang.",
       sections: lessonSections
     },
     {
@@ -4329,8 +3569,6 @@ export const lessonCatalog = [
       title: "Reading Context",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk reading social context dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk reading social context dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.\n- عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟\n- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.",
-      setup: "Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.",
       sections: lessonSections
     },
     {
@@ -4340,8 +3578,6 @@ export const lessonCatalog = [
       title: "Asking Tactful Questions",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk asking tactful questions dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk asking tactful questions dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.\n- عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟\n- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.",
-      setup: "Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.",
       sections: lessonSections
     },
     {
@@ -4351,8 +3587,6 @@ export const lessonCatalog = [
       title: "Explaining Local Norms",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk explaining local norms dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk explaining local norms dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.\n- عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟\n- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.",
-      setup: "Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.",
       sections: lessonSections
     },
     {
@@ -4362,8 +3596,6 @@ export const lessonCatalog = [
       title: "Repairing Misunderstanding",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk repairing misunderstanding dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk repairing misunderstanding dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.\n- عِنْدَ تَطْبِيقِ إِصْلَاحِ سُوءِ الْفَهْمِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟\n- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.",
-      setup: "Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.",
       sections: lessonSections
     },
     {
@@ -4373,8 +3605,6 @@ export const lessonCatalog = [
       title: "Cross-cultural Mission",
       unit: "Cross-cultural Professionalism",
       conversationGoal: "Latih percakapan Arab C1 untuk running a cross-cultural conversation dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk running a cross-cultural conversation dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟\n- فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.",
-      setup: "Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.",
       sections: lessonSections
     },
     {
@@ -4384,8 +3614,6 @@ export const lessonCatalog = [
       title: "Setting Direction",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk setting direction clearly dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk setting direction clearly dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.\n- عِنْدَ تَطْبِيقِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.\n- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.",
-      setup: "Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.",
       sections: lessonSections
     },
     {
@@ -4395,8 +3623,6 @@ export const lessonCatalog = [
       title: "Coaching With Questions",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk coaching with questions dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk coaching with questions dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ التَّوْجِيهِ بِالْأَسْئِلَةِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.\n- عِنْدَ تَطْبِيقِ التَّوْجِيهِ بِالْأَسْئِلَةِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.\n- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.",
-      setup: "Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.",
       sections: lessonSections
     },
     {
@@ -4406,8 +3632,6 @@ export const lessonCatalog = [
       title: "Giving Actionable Feedback",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk giving actionable feedback dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk giving actionable feedback dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.\n- عِنْدَ تَطْبِيقِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.\n- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.",
-      setup: "Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.",
       sections: lessonSections
     },
     {
@@ -4417,8 +3641,6 @@ export const lessonCatalog = [
       title: "Guiding a Decision",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk guiding a group decision dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk guiding a group decision dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.\n- عِنْدَ تَطْبِيقِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.\n- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.",
-      setup: "Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.",
       sections: lessonSections
     },
     {
@@ -4428,8 +3650,6 @@ export const lessonCatalog = [
       title: "Leadership Coaching Mission",
       unit: "Leadership & Coaching",
       conversationGoal: "Latih percakapan Arab C1 untuk running a leadership coaching conversation dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk running a leadership coaching conversation dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.\n- الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ.",
-      setup: "Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.",
       sections: lessonSections
     },
     {
@@ -4439,8 +3659,6 @@ export const lessonCatalog = [
       title: "Catching Implied Meaning",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk catching implied meaning dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk catching implied meaning dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ الْتِقَاطِ الْمَعْنَى الضِّمْنِيِّ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.\n- عِنْدَ تَطْبِيقِ الْتِقَاطِ الْمَعْنَى الضِّمْنِيِّ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.\n- إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.",
-      setup: "Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -4450,8 +3668,6 @@ export const lessonCatalog = [
       title: "Responding to Long Turns",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk responding to long turns dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk responding to long turns dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.\n- عِنْدَ تَطْبِيقِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.\n- إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.",
-      setup: "Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -4461,8 +3677,6 @@ export const lessonCatalog = [
       title: "Summarizing What You Heard",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk summarizing what you heard accurately dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk summarizing what you heard accurately dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.\n- عِنْدَ تَطْبِيقِ تَلْخِيصِ مَا سَمِعْتَهُ بِدِقَّةٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.\n- إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.",
-      setup: "Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -4472,8 +3686,6 @@ export const lessonCatalog = [
       title: "Asking High-quality Follow-ups",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk asking high-quality follow-ups dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk asking high-quality follow-ups dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.\n- عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.\n- إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.",
-      setup: "Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -4483,8 +3695,6 @@ export const lessonCatalog = [
       title: "Advanced Listening Mission",
       unit: "Advanced Listening & Response",
       conversationGoal: "Latih percakapan Arab C1 untuk responding after advanced listening dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk responding after advanced listening dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.\n- إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ.",
-      setup: "Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.",
       sections: lessonSections
     },
     {
@@ -4494,8 +3704,6 @@ export const lessonCatalog = [
       title: "Review Nuance and Strategy",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing nuance and strategy dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk reviewing nuance and strategy dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.\n- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.\n- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.",
-      setup: "Kamu menggabungkan nuance, strategi, presentasi, debat, cross-cultural tact, leadership, dan listening response dalam final conversation.",
       sections: lessonSections
     },
     {
@@ -4505,8 +3713,6 @@ export const lessonCatalog = [
       title: "Review Presenting and Debate",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.\n- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.\n- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.",
-      setup: "Kamu menggabungkan nuance, strategi, presentasi, debat, cross-cultural tact, leadership, dan listening response dalam final conversation.",
       sections: lessonSections
     },
     {
@@ -4516,8 +3722,6 @@ export const lessonCatalog = [
       title: "Review Leadership and Listening",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk reviewing leadership and listening dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk reviewing leadership and listening dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.\n- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.\n- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.",
-      setup: "Kamu menggabungkan nuance, strategi, presentasi, debat, cross-cultural tact, leadership, dan listening response dalam final conversation.",
       sections: lessonSections
     },
     {
@@ -4527,8 +3731,6 @@ export const lessonCatalog = [
       title: "C1 Final Test Practice",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk practicing the final test dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk practicing the final test dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.\n- عِنْدَ تَطْبِيقِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.\n- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.",
-      setup: "Kamu menggabungkan nuance, strategi, presentasi, debat, cross-cultural tact, leadership, dan listening response dalam final conversation.",
       sections: lessonSections
     },
     {
@@ -4538,8 +3740,6 @@ export const lessonCatalog = [
       title: "C1 Final Conversation",
       unit: "C1 Review & Final Conversation",
       conversationGoal: "Latih percakapan Arab C1 untuk running a complete final conversation dengan nuance, struktur, presisi, dan respons profesional.",
-      conversationGoalDetails: "# Target Percakapan\n\nLatih percakapan Arab C1 untuk running a complete final conversation dengan nuance, struktur, presisi, dan respons profesional.\n\nKamu akan berlatih mengatakan:\n\n- فِي مَهَارَةِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.\n- عِنْدَ تَطْبِيقِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.\n- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.\n- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.\n- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.",
-      setup: "Kamu menggabungkan nuance, strategi, presentasi, debat, cross-cultural tact, leadership, dan listening response dalam final conversation.",
       sections: lessonSections
     }
   // </generated:lessons>
@@ -4550,7 +3750,7 @@ export const lessonsBySlug = Object.fromEntries(lessonCatalog.map((item) => [ite
 export const coachTurnsByLessonSlug = {
   // <generated:coach_turns>
   "a1-final-conversation": [
-    { coach: "Hi, good morning. What is your name?", hint: "Perkenalkan diri dengan kalimat lengkap.", sampleAnswer: "Good morning. My name is Mina.", focus: "Final opening", expectedKeywords: ["morning", "name", "mina"], indonesianExplanation: "" },
+    { coach: "Hi, good morning. What is your name?", hint: "Perkenalkan diri dengan kalimat lengkap.", sampleAnswer: "Good morning. My name is Faris.", focus: "Final opening", expectedKeywords: ["morning", "name", "faris"], indonesianExplanation: "" },
     { coach: "Nice to meet you. Where are you from?", hint: "Jawab asal dan tanyakan balik.", sampleAnswer: "I'm from Indonesia. How about you?", focus: "Origin and follow-up", expectedKeywords: ["i'm", "from", "indonesia", "how", "?"], indonesianExplanation: "" },
     { coach: "I'm from Malaysia. What do you do every morning?", hint: "Sebutkan rutinitas dan waktu.", sampleAnswer: "I study English at seven.", focus: "Routine", expectedKeywords: ["study", "english", "seven"], indonesianExplanation: "" },
     { coach: "Great. The cafe is open now.", hint: "Tanyakan lokasi cafe.", sampleAnswer: "Where is the cafe?", focus: "Place", expectedKeywords: ["where", "cafe", "?"], indonesianExplanation: "" },
@@ -4631,7 +3831,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "arabic-agreeing-and-disagreeing-politely": [
     { coach: "أَعْتَقِدُ أَنَّ الدِّرَاسَةَ فِي الْبَيْتِ أَفْضَلُ.", hint: "Jawab dengan pola: أُوَافِقُكَ.", sampleAnswer: "أُوَافِقُكَ.", focus: "Latihan frasa: Saya setuju denganmu.", expectedKeywords: ["أُوَافِقُكَ"], indonesianExplanation: "Saya setuju denganmu." },
-    { coach: "استخدم: أُوَافِقُكِ فِي هَذَا.", hint: "Jawab dengan pola: أُوَافِقُكِ فِي هَذَا.", sampleAnswer: "أُوَافِقُكِ فِي هَذَا.", focus: "Latihan frasa: Saya setuju denganmu dalam hal ini.", expectedKeywords: ["أُوَافِقُكِ", "فِي", "هَذَا"], indonesianExplanation: "Saya setuju denganmu dalam hal ini." },
+    { coach: "استخدم: أُوَافِقُكَ فِي هَذَا.", hint: "Jawab dengan pola: أُوَافِقُكَ فِي هَذَا.", sampleAnswer: "أُوَافِقُكَ فِي هَذَا.", focus: "Latihan frasa: Saya setuju denganmu dalam hal ini.", expectedKeywords: ["أُوَافِقُكَ", "فِي", "هَذَا"], indonesianExplanation: "Saya setuju denganmu dalam hal ini." },
     { coach: "استخدم: لَا أُوَافِقُ تَمَامًا.", hint: "Jawab dengan pola: لَا أُوَافِقُ تَمَامًا.", sampleAnswer: "لَا أُوَافِقُ تَمَامًا.", focus: "Latihan frasa: Saya tidak sepenuhnya setuju.", expectedKeywords: ["لَا", "أُوَافِقُ", "تَمَامًا"], indonesianExplanation: "Saya tidak sepenuhnya setuju." },
   ],
   "arabic-apologizing-and-thanking": [
@@ -4645,7 +3845,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: مِنْ أَيِّ رَصِيفٍ؟", hint: "Jawab dengan pola: مِنْ أَيِّ رَصِيفٍ؟", sampleAnswer: "مِنْ أَيِّ رَصِيفٍ؟", focus: "Latihan frasa: Dari peron berapa?", expectedKeywords: ["مِنْ", "أَيِّ", "رَصِيفٍ"], indonesianExplanation: "Dari peron berapa?" },
   ],
   "arabic-asking-about-past-activities": [
-    { coach: "مَاذَا فَعَلْتِ بَعْدَ الدَّرْسِ يَا مَرْيَمُ؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", sampleAnswer: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", focus: "Latihan frasa: Apa yang kamu lakukan setelah pelajaran?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "بَعْدَ"], indonesianExplanation: "Apa yang kamu lakukan setelah pelajaran?" },
+    { coach: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ يَا كَرِيمُ؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", sampleAnswer: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", focus: "Latihan frasa: Apa yang kamu lakukan setelah pelajaran?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "بَعْدَ"], indonesianExplanation: "Apa yang kamu lakukan setelah pelajaran?" },
     { coach: "استخدم: مَعَ مَنْ ذَهَبْتَ؟", hint: "Jawab dengan pola: مَعَ مَنْ ذَهَبْتَ؟", sampleAnswer: "مَعَ مَنْ ذَهَبْتَ؟", focus: "Latihan frasa: Dengan siapa kamu pergi?", expectedKeywords: ["مَعَ", "مَنْ", "ذَهَبْتَ"], indonesianExplanation: "Dengan siapa kamu pergi?" },
     { coach: "استخدم: كَيْفَ كَانَ الْمَكَانُ؟", hint: "Jawab dengan pola: كَيْفَ كَانَ الْمَكَانُ؟", sampleAnswer: "كَيْفَ كَانَ الْمَكَانُ؟", focus: "Latihan frasa: Bagaimana tempatnya?", expectedKeywords: ["كَيْفَ", "كَانَ", "الْمَكَانُ"], indonesianExplanation: "Bagaimana tempatnya?" },
   ],
@@ -4681,7 +3881,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "arabic-asking-for-opinions": [
     { coach: "مَا رَأْيُكَ فِي هَذَا الْجَدْوَلِ يَا دِيمَاسُ؟", hint: "Jawab dengan pola: مَا رَأْيُكَ فِي هَذَا؟", sampleAnswer: "مَا رَأْيُكَ فِي هَذَا؟", focus: "Latihan frasa: Apa pendapatmu tentang ini?", expectedKeywords: ["مَا", "رَأْيُكَ", "فِي"], indonesianExplanation: "Apa pendapatmu tentang ini?" },
-    { coach: "استخدم: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟", hint: "Jawab dengan pola: مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟", sampleAnswer: "مَا رَأْيُكِ فِي الْخِيَارِ الثَّانِي؟", focus: "Latihan frasa: Apa pendapatmu tentang pilihan kedua?", expectedKeywords: ["مَا", "رَأْيُكِ", "فِي"], indonesianExplanation: "Apa pendapatmu tentang pilihan kedua?" },
+    { coach: "استخدم: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟", hint: "Jawab dengan pola: مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟", sampleAnswer: "مَا رَأْيُكَ فِي الْخِيَارِ الثَّانِي؟", focus: "Latihan frasa: Apa pendapatmu tentang pilihan kedua?", expectedKeywords: ["مَا", "رَأْيُكَ", "فِي"], indonesianExplanation: "Apa pendapatmu tentang pilihan kedua?" },
     { coach: "استخدم: أَيُّهُمَا أَفْضَلُ؟", hint: "Jawab dengan pola: أَيُّهُمَا أَفْضَلُ؟", sampleAnswer: "أَيُّهُمَا أَفْضَلُ؟", focus: "Latihan frasa: Mana dari keduanya yang lebih baik?", expectedKeywords: ["أَيُّهُمَا", "أَفْضَلُ"], indonesianExplanation: "Mana dari keduanya yang lebih baik?" },
   ],
   "arabic-asking-how-to-get-there": [
@@ -5460,7 +4660,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: أَدْرُسُ الْعَرَبِيَّةَ", hint: "Jawab dengan pola: أَدْرُسُ الْعَرَبِيَّةَ", sampleAnswer: "أَدْرُسُ الْعَرَبِيَّةَ", focus: "Latihan frasa: Saya belajar bahasa Arab.", expectedKeywords: ["أَدْرُسُ", "الْعَرَبِيَّةَ"], indonesianExplanation: "Saya belajar bahasa Arab." },
   ],
   "arabic-finding-a-place-mission": [
-    { coach: "إِلَى أَيْنَ تُرِيدِينَ أَنْ تَذْهَبِي؟", hint: "Jawab dengan pola: أَيْنَ الْفَصْلُ؟", sampleAnswer: "أَيْنَ الْفَصْلُ؟", focus: "Latihan frasa: Di mana kelas?", expectedKeywords: ["أَيْنَ", "الْفَصْلُ"], indonesianExplanation: "Di mana kelas?" },
+    { coach: "إِلَى أَيْنَ تُرِيدُ أَنْ تَذْهَبَ؟", hint: "Jawab dengan pola: أَيْنَ الْفَصْلُ؟", sampleAnswer: "أَيْنَ الْفَصْلُ؟", focus: "Latihan frasa: Di mana kelas?", expectedKeywords: ["أَيْنَ", "الْفَصْلُ"], indonesianExplanation: "Di mana kelas?" },
     { coach: "استخدم: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟", hint: "Jawab dengan pola: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟", sampleAnswer: "كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟", focus: "Latihan frasa: Bagaimana saya pergi ke kelas?", expectedKeywords: ["كَيْفَ", "أَذْهَبُ", "إِلَى"], indonesianExplanation: "Bagaimana saya pergi ke kelas?" },
     { coach: "استخدم: اِذْهَبْ يَمِينًا", hint: "Jawab dengan pola: اِذْهَبْ يَمِينًا", sampleAnswer: "اِذْهَبْ يَمِينًا", focus: "Latihan frasa: Pergi ke kanan.", expectedKeywords: ["اِذْهَبْ", "يَمِينًا"], indonesianExplanation: "Pergi ke kanan." },
   ],
@@ -5529,7 +4729,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ", hint: "Jawab dengan pola: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ", sampleAnswer: "وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ", focus: "Latihan frasa: Satu, dua, tiga", expectedKeywords: ["وَاحِدٌ،", "اِثْنَانِ،", "ثَلَاثَةٌ"], indonesianExplanation: "Satu, dua, tiga" },
   ],
   "arabic-opinion-conversation-mission": [
-    { coach: "مَا رَأْيُكِ فِي هَذِهِ الْخُطَّةِ يَا لَيْلَى؟", hint: "Jawab dengan pola: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟", sampleAnswer: "مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟", focus: "Latihan frasa: Apa pendapatmu tentang rencana ini?", expectedKeywords: ["مَا", "رَأْيُكَ", "فِي"], indonesianExplanation: "Apa pendapatmu tentang rencana ini?" },
+    { coach: "مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ يَا رَامِي؟", hint: "Jawab dengan pola: مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟", sampleAnswer: "مَا رَأْيُكَ فِي هَذِهِ الْخُطَّةِ؟", focus: "Latihan frasa: Apa pendapatmu tentang rencana ini?", expectedKeywords: ["مَا", "رَأْيُكَ", "فِي"], indonesianExplanation: "Apa pendapatmu tentang rencana ini?" },
     { coach: "استخدم: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.", hint: "Jawab dengan pola: أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.", sampleAnswer: "أَعْتَقِدُ أَنَّهَا جَيِّدَةٌ.", focus: "Latihan frasa: Saya pikir itu baik.", expectedKeywords: ["أَعْتَقِدُ", "أَنَّهَا", "جَيِّدَةٌ"], indonesianExplanation: "Saya pikir itu baik." },
     { coach: "استخدم: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.", hint: "Jawab dengan pola: أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.", sampleAnswer: "أُفَضِّلُ الصَّبَاحَ لِأَنَّهُ أَهْدَأُ.", focus: "Latihan frasa: Saya lebih memilih pagi karena lebih tenang.", expectedKeywords: ["أُفَضِّلُ", "الصَّبَاحَ", "لِأَنَّهُ"], indonesianExplanation: "Saya lebih memilih pagi karena lebih tenang." },
   ],
@@ -5539,7 +4739,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: من فضلك", hint: "Jawab dengan pola: من فضلك", sampleAnswer: "من فضلك", focus: "Latihan frasa: Tolong.", expectedKeywords: ["من", "فضلك"], indonesianExplanation: "Tolong." },
   ],
   "arabic-past-experience-mission": [
-    { coach: "مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ يَا سَارَةُ؟", hint: "Jawab dengan pola: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.", sampleAnswer: "فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.", focus: "Latihan frasa: Pada akhir pekan, saya pergi ke kota.", expectedKeywords: ["فِي", "نِهَايَةِ", "الْأُسْبُوعِ،"], indonesianExplanation: "Pada akhir pekan, saya pergi ke kota." },
+    { coach: "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ يَا رَامِي؟", hint: "Jawab dengan pola: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.", sampleAnswer: "فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.", focus: "Latihan frasa: Pada akhir pekan, saya pergi ke kota.", expectedKeywords: ["فِي", "نِهَايَةِ", "الْأُسْبُوعِ،"], indonesianExplanation: "Pada akhir pekan, saya pergi ke kota." },
     { coach: "استخدم: رَأَيْتُ مَكَانًا جَدِيدًا.", hint: "Jawab dengan pola: رَأَيْتُ مَكَانًا جَدِيدًا.", sampleAnswer: "رَأَيْتُ مَكَانًا جَدِيدًا.", focus: "Latihan frasa: Saya melihat tempat baru.", expectedKeywords: ["رَأَيْتُ", "مَكَانًا", "جَدِيدًا"], indonesianExplanation: "Saya melihat tempat baru." },
     { coach: "استخدم: اشْتَرَيْتُ شَيْئًا صَغِيرًا.", hint: "Jawab dengan pola: اشْتَرَيْتُ شَيْئًا صَغِيرًا.", sampleAnswer: "اشْتَرَيْتُ شَيْئًا صَغِيرًا.", focus: "Latihan frasa: Saya membeli sesuatu yang kecil.", expectedKeywords: ["اشْتَرَيْتُ", "شَيْئًا", "صَغِيرًا"], indonesianExplanation: "Saya membeli sesuatu yang kecil." },
   ],
@@ -5549,7 +4749,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: كَيْفَ كَانَ الْمَكَانُ؟", hint: "Jawab dengan pola: كَيْفَ كَانَ الْمَكَانُ؟", sampleAnswer: "كَيْفَ كَانَ الْمَكَانُ؟", focus: "Latihan frasa: Bagaimana tempatnya?", expectedKeywords: ["كَيْفَ", "كَانَ", "الْمَكَانُ"], indonesianExplanation: "Bagaimana tempatnya?" },
   ],
   "arabic-reconnecting-after-class": [
-    { coach: "السَّلَامُ عَلَيْكِ يَا مَرْيَمُ.", hint: "Jawab dengan pola: كَيْفَ حَالُكَ؟", sampleAnswer: "كَيْفَ حَالُكَ؟", focus: "Latihan frasa: Apa kabarmu?", expectedKeywords: ["كَيْفَ", "حَالُكَ"], indonesianExplanation: "Apa kabarmu?" },
+    { coach: "السَّلَامُ عَلَيْكَ يَا كَرِيمُ.", hint: "Jawab dengan pola: كَيْفَ حَالُكَ؟", sampleAnswer: "كَيْفَ حَالُكَ؟", focus: "Latihan frasa: Apa kabarmu?", expectedKeywords: ["كَيْفَ", "حَالُكَ"], indonesianExplanation: "Apa kabarmu?" },
     { coach: "استخدم: أَنَا بِخَيْرٍ، وَأَنْتَ؟", hint: "Jawab dengan pola: أَنَا بِخَيْرٍ، وَأَنْتَ؟", sampleAnswer: "أَنَا بِخَيْرٍ، وَأَنْتَ؟", focus: "Latihan frasa: Saya baik, dan kamu?", expectedKeywords: ["أَنَا", "بِخَيْرٍ،", "وَأَنْتَ"], indonesianExplanation: "Saya baik, dan kamu?" },
     { coach: "استخدم: كَانَ الدَّرْسُ جَيِّدًا.", hint: "Jawab dengan pola: كَانَ الدَّرْسُ جَيِّدًا.", sampleAnswer: "كَانَ الدَّرْسُ جَيِّدًا.", focus: "Latihan frasa: Pelajarannya bagus.", expectedKeywords: ["كَانَ", "الدَّرْسُ", "جَيِّدًا"], indonesianExplanation: "Pelajarannya bagus." },
   ],
@@ -5584,7 +4784,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: أَدْرُسُ الْعَرَبِيَّةَ", hint: "Jawab dengan pola: أَدْرُسُ الْعَرَبِيَّةَ", sampleAnswer: "أَدْرُسُ الْعَرَبِيَّةَ", focus: "Latihan frasa: Saya belajar bahasa Arab.", expectedKeywords: ["أَدْرُسُ", "الْعَرَبِيَّةَ"], indonesianExplanation: "Saya belajar bahasa Arab." },
   ],
   "arabic-review-social-and-plans": [
-    { coach: "كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ يَا مَرْيَمُ؟", hint: "Jawab dengan pola: كَيْفَ كَانَ دَرْسُكَ؟", sampleAnswer: "كَيْفَ كَانَ دَرْسُكَ؟", focus: "Latihan frasa: Bagaimana pelajaranmu?", expectedKeywords: ["كَيْفَ", "كَانَ", "دَرْسُكَ"], indonesianExplanation: "Bagaimana pelajaranmu?" },
+    { coach: "كَيْفَ كَانَ دَرْسُكَ الْيَوْمَ يَا كَرِيمُ؟", hint: "Jawab dengan pola: كَيْفَ كَانَ دَرْسُكَ؟", sampleAnswer: "كَيْفَ كَانَ دَرْسُكَ؟", focus: "Latihan frasa: Bagaimana pelajaranmu?", expectedKeywords: ["كَيْفَ", "كَانَ", "دَرْسُكَ"], indonesianExplanation: "Bagaimana pelajaranmu?" },
     { coach: "استخدم: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", sampleAnswer: "مَاذَا فَعَلْتَ بَعْدَ الدَّرْسِ؟", focus: "Latihan frasa: Apa yang kamu lakukan setelah pelajaran?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "بَعْدَ"], indonesianExplanation: "Apa yang kamu lakukan setelah pelajaran?" },
     { coach: "استخدم: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟", hint: "Jawab dengan pola: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟", sampleAnswer: "هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟", focus: "Latihan frasa: Apakah kamu ingin belajar bersama saya?", expectedKeywords: ["هَلْ", "تُرِيدُ", "أَنْ"], indonesianExplanation: "Apakah kamu ingin belajar bersama saya?" },
   ],
@@ -5609,7 +4809,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: أَنَا معلم", hint: "Jawab dengan pola: أَنَا معلم", sampleAnswer: "أَنَا معلم", focus: "Latihan frasa: Saya guru.", expectedKeywords: ["أَنَا", "معلم"], indonesianExplanation: "Saya guru." },
   ],
   "arabic-saying-what-you-think": [
-    { coach: "مَا رَأْيُكِ فِي الدَّرْسِ الْيَوْمَ يَا نُورَةُ؟", hint: "Jawab dengan pola: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.", sampleAnswer: "أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.", focus: "Latihan frasa: Saya pikir pelajarannya bermanfaat.", expectedKeywords: ["أَعْتَقِدُ", "أَنَّ", "الدَّرْسَ"], indonesianExplanation: "Saya pikir pelajarannya bermanfaat." },
+    { coach: "مَا رَأْيُكَ فِي الدَّرْسِ الْيَوْمَ يَا زَيْدُ؟", hint: "Jawab dengan pola: أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.", sampleAnswer: "أَعْتَقِدُ أَنَّ الدَّرْسَ مُفِيدٌ.", focus: "Latihan frasa: Saya pikir pelajarannya bermanfaat.", expectedKeywords: ["أَعْتَقِدُ", "أَنَّ", "الدَّرْسَ"], indonesianExplanation: "Saya pikir pelajarannya bermanfaat." },
     { coach: "استخدم: فِي رَأْيِي، هَذَا جَيِّدٌ.", hint: "Jawab dengan pola: فِي رَأْيِي، هَذَا جَيِّدٌ.", sampleAnswer: "فِي رَأْيِي، هَذَا جَيِّدٌ.", focus: "Latihan frasa: Menurut saya, ini baik.", expectedKeywords: ["فِي", "رَأْيِي،", "هَذَا"], indonesianExplanation: "Menurut saya, ini baik." },
     { coach: "استخدم: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.", hint: "Jawab dengan pola: أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.", sampleAnswer: "أَرَى أَنَّ الْمَكَانَ مُنَاسِبٌ.", focus: "Latihan frasa: Saya melihat bahwa tempatnya cocok.", expectedKeywords: ["أَرَى", "أَنَّ", "الْمَكَانَ"], indonesianExplanation: "Saya melihat bahwa tempatnya cocok." },
   ],
@@ -5659,12 +4859,12 @@ export const coachTurnsByLessonSlug = {
     { coach: "استخدم: أكتب", hint: "Jawab dengan pola: أكتب", sampleAnswer: "أكتب", focus: "Latihan frasa: Saya menulis.", expectedKeywords: ["أكتب"], indonesianExplanation: "Saya menulis." },
   ],
   "arabic-talking-about-the-weekend": [
-    { coach: "مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟", sampleAnswer: "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟", focus: "Latihan frasa: Apa yang kamu lakukan pada akhir pekan?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "فِي"], indonesianExplanation: "Apa yang kamu lakukan pada akhir pekan?" },
+    { coach: "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟", sampleAnswer: "مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ؟", focus: "Latihan frasa: Apa yang kamu lakukan pada akhir pekan?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "فِي"], indonesianExplanation: "Apa yang kamu lakukan pada akhir pekan?" },
     { coach: "استخدم: ذَهَبْتُ إِلَى الْحَدِيقَةِ.", hint: "Jawab dengan pola: ذَهَبْتُ إِلَى الْحَدِيقَةِ.", sampleAnswer: "ذَهَبْتُ إِلَى الْحَدِيقَةِ.", focus: "Latihan frasa: Saya pergi ke taman.", expectedKeywords: ["ذَهَبْتُ", "إِلَى", "الْحَدِيقَةِ"], indonesianExplanation: "Saya pergi ke taman." },
     { coach: "استخدم: مَعَ أُسْرَتِي.", hint: "Jawab dengan pola: مَعَ أُسْرَتِي.", sampleAnswer: "مَعَ أُسْرَتِي.", focus: "Latihan frasa: Bersama keluarga saya.", expectedKeywords: ["مَعَ", "أُسْرَتِي"], indonesianExplanation: "Bersama keluarga saya." },
   ],
   "arabic-talking-about-yesterday": [
-    { coach: "مَاذَا فَعَلْتِ أَمْسِ يَا لَيْلَى؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ أَمْسِ؟", sampleAnswer: "مَاذَا فَعَلْتَ أَمْسِ؟", focus: "Latihan frasa: Apa yang kamu lakukan kemarin?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "أَمْسِ"], indonesianExplanation: "Apa yang kamu lakukan kemarin?" },
+    { coach: "مَاذَا فَعَلْتَ أَمْسِ يَا رَامِي؟", hint: "Jawab dengan pola: مَاذَا فَعَلْتَ أَمْسِ؟", sampleAnswer: "مَاذَا فَعَلْتَ أَمْسِ؟", focus: "Latihan frasa: Apa yang kamu lakukan kemarin?", expectedKeywords: ["مَاذَا", "فَعَلْتَ", "أَمْسِ"], indonesianExplanation: "Apa yang kamu lakukan kemarin?" },
     { coach: "استخدم: ذَهَبْتُ إِلَى الْمَكْتَبَةِ.", hint: "Jawab dengan pola: ذَهَبْتُ إِلَى الْمَكْتَبَةِ.", sampleAnswer: "ذَهَبْتُ إِلَى الْمَكْتَبَةِ.", focus: "Latihan frasa: Saya pergi ke perpustakaan.", expectedKeywords: ["ذَهَبْتُ", "إِلَى", "الْمَكْتَبَةِ"], indonesianExplanation: "Saya pergi ke perpustakaan." },
     { coach: "استخدم: دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.", hint: "Jawab dengan pola: دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.", sampleAnswer: "دَرَسْتُ بَعْضَ الْعَرَبِيَّةِ.", focus: "Latihan frasa: Saya belajar sedikit bahasa Arab.", expectedKeywords: ["دَرَسْتُ", "بَعْضَ", "الْعَرَبِيَّةِ"], indonesianExplanation: "Saya belajar sedikit bahasa Arab." },
   ],
@@ -5871,7 +5071,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "checking-in": [
     { coach: "Welcome. How can I help you?", hint: "Mulai dengan: I'd like to check in.", sampleAnswer: "Hi. I'd like to check in.", focus: "Start check-in", expectedKeywords: ["check in"], indonesianExplanation: "" },
-    { coach: "Sure. Do you have a reservation?", hint: "Jawab dengan under + name.", sampleAnswer: "Yes. I have a reservation under Mina Kim.", focus: "Confirm reservation name", expectedKeywords: ["reservation", "under"], indonesianExplanation: "" },
+    { coach: "Sure. Do you have a reservation?", hint: "Jawab dengan under + name.", sampleAnswer: "Yes. I have a reservation under Faris Kim.", focus: "Confirm reservation name", expectedKeywords: ["reservation", "under"], indonesianExplanation: "" },
     { coach: "Great. Any questions about your stay?", hint: "Tanya 1 hal (check-out / breakfast).", sampleAnswer: "Yes. What time is check-out?", focus: "Ask a practical question", expectedKeywords: ["what time", "check-out"], indonesianExplanation: "" },
   ],
   "clarifying-scope": [
@@ -5916,7 +5116,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "confirming-details": [
     { coach: "Okay, you're booked for tomorrow at 3:30 p.m.", hint: "Konfirmasi jamnya.", sampleAnswer: "Let me confirm the time: 3:30 p.m., right?", focus: "Confirm the time", expectedKeywords: ["confirm", "3:30", "right"], indonesianExplanation: "" },
-    { coach: "Yes, that's right.", hint: "Sebutkan nama dan eja.", sampleAnswer: "My name is Mina Park. P-A-R-K.", focus: "Give name and spelling", expectedKeywords: ["my name is", "p-a-r-k"], indonesianExplanation: "" },
+    { coach: "Yes, that's right.", hint: "Sebutkan nama dan eja.", sampleAnswer: "My name is Raka Park. P-A-R-K.", focus: "Give name and spelling", expectedKeywords: ["my name is", "p-a-r-k"], indonesianExplanation: "" },
     { coach: "Thank you. Do you have a phone number?", hint: "Berikan nomor telepon.", sampleAnswer: "Yes. It's 0812-345-678.", focus: "Provide phone number", expectedKeywords: ["it's", "0812"], indonesianExplanation: "" },
   ],
   "confirming-next-steps": [
@@ -6136,7 +5336,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "health-appointment-mission": [
     { coach: "Hello. How can I help you today?", hint: "Bilang kamu ada janji + jamnya.", sampleAnswer: "Hi. I have an appointment at 3:30.", focus: "Check in for appointment", expectedKeywords: ["appointment", "3:30"], indonesianExplanation: "" },
-    { coach: "Sure. What's your name?", hint: "Sebutkan nama dan eja.", sampleAnswer: "Mina Park. P-A-R-K.", focus: "Provide name and spelling", expectedKeywords: ["p-a-r-k", "mina"], indonesianExplanation: "" },
+    { coach: "Sure. What's your name?", hint: "Sebutkan nama dan eja.", sampleAnswer: "Raka Park. P-A-R-K.", focus: "Provide name and spelling", expectedKeywords: ["p-a-r-k", "raka"], indonesianExplanation: "" },
     { coach: "Thank you. What seems to be the problem?", hint: "Sebutkan gejala + durasi.", sampleAnswer: "I've had a cough for two days, and I feel tired.", focus: "Describe symptoms with duration", expectedKeywords: ["have had", "for", "days", "tired"], indonesianExplanation: "" },
   ],
   "help-and-problem-mission": [
@@ -6365,7 +5565,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "Close with next steps and a deadline.", hint: "Next steps are... today... by Friday.", sampleAnswer: "Next steps are: I'll share an update today, and we'll confirm a revised timeline by Friday.", focus: "Next steps", expectedKeywords: ["next steps", "today", "by"], indonesianExplanation: "" },
   ],
   "review-introductions": [
-    { coach: "Hi, good morning. My name is Sara.", hint: "Sapa balik dan sebutkan namamu.", sampleAnswer: "Good morning. My name is Dimas.", focus: "Name review", expectedKeywords: ["morning", "name", "dimas"], indonesianExplanation: "" },
+    { coach: "Hi, good morning. My name is Omar.", hint: "Sapa balik dan sebutkan namamu.", sampleAnswer: "Good morning. My name is Dimas.", focus: "Name review", expectedKeywords: ["morning", "name", "dimas"], indonesianExplanation: "" },
     { coach: "Nice to meet you. Where are you from?", hint: "Jawab asalmu dengan I'm from ...", sampleAnswer: "I'm from Indonesia.", focus: "Origin review", expectedKeywords: ["i'm", "from", "indonesia"], indonesianExplanation: "" },
     { coach: "I live in Jakarta now.", hint: "Tanyakan balik dengan How about you?", sampleAnswer: "How about you?", focus: "Question back", expectedKeywords: ["how", "about", "?"], indonesianExplanation: "" },
     { coach: "I'm from Malaysia.", hint: "Tutup percakapan dengan sopan.", sampleAnswer: "Oh, nice. See you in class.", focus: "Closing", expectedKeywords: ["nice", "see", "class"], indonesianExplanation: "" },
@@ -6475,7 +5675,7 @@ export const coachTurnsByLessonSlug = {
     { coach: "Yes, that's right.", hint: "Katakan sudah paham.", sampleAnswer: "Thank you. I understand now.", focus: "Closing", expectedKeywords: ["understand"], indonesianExplanation: "" },
   ],
   "saying-your-name": [
-    { coach: "Hi, my name is Sara. What is your name?", hint: "Jawab dengan pola: My name is ... atau I'm ...", sampleAnswer: "My name is Arif. Nice to meet you.", focus: "Saying your name", expectedKeywords: ["my name is", "i'm", "i am", "nice to meet"], indonesianExplanation: "Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'." },
+    { coach: "Hi, my name is Omar. What is your name?", hint: "Jawab dengan pola: My name is ... atau I'm ...", sampleAnswer: "My name is Arif. Nice to meet you.", focus: "Saying your name", expectedKeywords: ["my name is", "i'm", "i am", "nice to meet"], indonesianExplanation: "Sebutkan nama dengan satu kalimat jelas, lalu tambahkan respons ramah seperti 'Nice to meet you'." },
     { coach: "Nice to meet you. What should I call you?", hint: "Gunakan pola: Please call me ...", sampleAnswer: "Please call me Arif.", focus: "Nickname", expectedKeywords: ["please call me", "call me"], indonesianExplanation: "Kalau ingin menyebut nama panggilan, gunakan pola pendek 'Please call me ...'." },
     { coach: "Great. Nice to meet you, Arif.", hint: "Balas dengan sopan: Nice to meet you too.", sampleAnswer: "Nice to meet you too.", focus: "Polite response", expectedKeywords: ["nice to meet you too", "you too"], indonesianExplanation: "Untuk membalas sapaan perkenalan, 'Nice to meet you too' sudah natural dan sopan." },
   ],
@@ -6624,7 +5824,7 @@ export const coachTurnsByLessonSlug = {
   ],
   "travel-situation-mission": [
     { coach: "Hi. Are you on your way to the hotel?", hint: "Jelaskan kamu telat + alasan + estimasi.", sampleAnswer: "Yes, but I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.", focus: "Delay explanation with estimate", expectedKeywords: ["running", "delayed", "in about"], indonesianExplanation: "" },
-    { coach: "Okay. Do you have a reservation?", hint: "Jawab dengan under + name.", sampleAnswer: "Yes. I have a reservation under Mina Kim.", focus: "Confirm reservation", expectedKeywords: ["reservation", "under"], indonesianExplanation: "" },
+    { coach: "Okay. Do you have a reservation?", hint: "Jawab dengan under + name.", sampleAnswer: "Yes. I have a reservation under Faris Kim.", focus: "Confirm reservation", expectedKeywords: ["reservation", "under"], indonesianExplanation: "" },
     { coach: "Great. Anything else you need?", hint: "Tanya rekomendasi + minta bantuan dengan could you.", sampleAnswer: "Do you have any recommendations for dinner? If there's a problem with my room, could you help me?", focus: "Ask recommendations and request help", expectedKeywords: ["recommendations", "could you", "problem"], indonesianExplanation: "" },
   ],
   "understanding-client-needs": [

@@ -2,7 +2,7 @@
 
 ## Repeat
 
-1. Hi, my name is Lina.
+1. Hi, my name is Raka.
 2. What is your name?
 3. I'm from Indonesia.
 4. Where are you from?

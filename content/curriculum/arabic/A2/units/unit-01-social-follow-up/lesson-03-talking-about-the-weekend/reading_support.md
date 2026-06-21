@@ -6,4 +6,4 @@ Baca frasa Arab dari kanan ke kiri. Kenali pola utuhnya dulu, lalu perhatikan ka
 - ذَهَبْتُ إِلَى الْحَدِيقَةِ. -> Saya pergi ke taman.
 - مَعَ أُسْرَتِي. -> Bersama keluarga saya.
 - كَانَ الْمَكَانُ جَمِيلًا. -> Tempatnya indah.
-- وَمَاذَا فَعَلْتِ أَنْتِ؟ -> Dan apa yang kamu lakukan?
+- وَمَاذَا فَعَلْتَ أَنْتَ؟ -> Dan apa yang kamu lakukan?

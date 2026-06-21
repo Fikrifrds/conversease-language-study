@@ -1,14 +1,14 @@
 # Listening Script
 
-**Sara:** كَيْفَ كَانَتْ رِحْلَتُكَ إِلَى الْحَدِيقَةِ؟
+**Ahmad:** كَيْفَ كَانَتْ رِحْلَتُكَ إِلَى الْحَدِيقَةِ؟
 **Rami:** كَانَتِ التَّجْرِبَةُ جَيِّدَةً.
-**Sara:** مَاذَا رَأَيْتَ هُنَاكَ؟
+**Ahmad:** مَاذَا رَأَيْتَ هُنَاكَ؟
 **Rami:** رَأَيْتُ مَكَانًا جَمِيلًا وَبُحَيْرَةً صَغِيرَةً.
-**Sara:** هَلْ أَعْجَبَكَ الطَّعَامُ؟
+**Ahmad:** هَلْ أَعْجَبَكَ الطَّعَامُ؟
 **Rami:** نَعَمْ، أَعْجَبَنِي الطَّعَامُ، وَلَكِنَّ الْمَكَانَ كَانَ مُزْدَحِمًا.
-**Sara:** هَلْ تُرِيدُ أَنْ تَذْهَبَ مَرَّةً أُخْرَى؟
+**Ahmad:** هَلْ تُرِيدُ أَنْ تَذْهَبَ مَرَّةً أُخْرَى؟
 **Rami:** نَعَمْ، أُرِيدُ ذَلِكَ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/female voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/male voices according to speaker names.

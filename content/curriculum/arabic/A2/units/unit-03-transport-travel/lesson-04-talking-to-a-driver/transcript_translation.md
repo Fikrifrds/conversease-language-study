@@ -1,9 +1,9 @@
 # Transcript Translation
 
-- **Layla:** إِلَى فُنْدُقِ النُّورِ، مِنْ فَضْلِكَ. -> Ke Hotel An-Nur, tolong.
+- **Rami:** إِلَى فُنْدُقِ النُّورِ، مِنْ فَضْلِكَ. -> Ke Hotel An-Nur, tolong.
 - **Karim:** حَسَنًا. هَلْ هَذَا الْعُنْوَانُ صَحِيحٌ؟ -> Baik. Apakah alamat ini benar?
-- **Layla:** نَعَمْ، الْعُنْوَانُ صَحِيحٌ. -> Ya, alamatnya benar.
+- **Rami:** نَعَمْ، الْعُنْوَانُ صَحِيحٌ. -> Ya, alamatnya benar.
 - **Karim:** الطَّرِيقُ مُزْدَحِمٌ قَلِيلًا الْيَوْمَ. -> Jalan agak macet hari ini.
-- **Layla:** كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟ -> Berapa lama perjalanannya?
+- **Rami:** كَمْ يَسْتَغْرِقُ الطَّرِيقُ؟ -> Berapa lama perjalanannya?
 - **Karim:** حَوَالَيْ عِشْرِينَ دَقِيقَةً. -> Sekitar dua puluh menit.
-- **Layla:** حَسَنًا. تَوَقَّفْ عِنْدَ الْبَابِ، مِنْ فَضْلِكَ. -> Baik. Berhenti di pintu, tolong.
+- **Rami:** حَسَنًا. تَوَقَّفْ عِنْدَ الْبَابِ، مِنْ فَضْلِكَ. -> Baik. Berhenti di pintu, tolong.

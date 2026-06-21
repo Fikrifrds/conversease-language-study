@@ -1,12 +1,12 @@
 # Listening Script
 
-**Sara:** ذَهَبْتُ إِلَى مَكْتَبَةٍ جَدِيدَةٍ أَمْسِ.
+**Rami:** ذَهَبْتُ إِلَى مَكْتَبَةٍ جَدِيدَةٍ أَمْسِ.
 **Adi:** حَقًّا؟ كَيْفَ كَانَ الْمَكَانُ؟
-**Sara:** كَانَ نَظِيفًا وَهَادِئًا.
+**Rami:** كَانَ نَظِيفًا وَهَادِئًا.
 **Adi:** هَذَا مُمْتَازٌ. هَلْ هِيَ قَرِيبَةٌ؟
-**Sara:** نَعَمْ، هِيَ قَرِيبَةٌ مِنَ الْمَرْكَزِ.
+**Rami:** نَعَمْ، هِيَ قَرِيبَةٌ مِنَ الْمَرْكَزِ.
 **Adi:** أُرِيدُ أَنْ أَزُورَ ذَلِكَ الْمَكَانَ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/female voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct male/male voices according to speaker names.

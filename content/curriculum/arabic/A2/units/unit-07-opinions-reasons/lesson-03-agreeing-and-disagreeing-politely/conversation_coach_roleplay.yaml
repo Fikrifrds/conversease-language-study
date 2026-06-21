@@ -16,12 +16,12 @@ turns:
   expected_keywords:
   - أُوَافِقُكَ
   indonesian_explanation: Saya setuju denganmu.
-- coach: 'استخدم: أُوَافِقُكِ فِي هَذَا.'
-  hint: 'Jawab dengan pola: أُوَافِقُكِ فِي هَذَا.'
-  sample_answer: أُوَافِقُكِ فِي هَذَا.
+- coach: 'استخدم: أُوَافِقُكَ فِي هَذَا.'
+  hint: 'Jawab dengan pola: أُوَافِقُكَ فِي هَذَا.'
+  sample_answer: أُوَافِقُكَ فِي هَذَا.
   focus: 'Latihan frasa: Saya setuju denganmu dalam hal ini.'
   expected_keywords:
-  - أُوَافِقُكِ
+  - أُوَافِقُكَ
   - فِي
   - هَذَا
   indonesian_explanation: Saya setuju denganmu dalam hal ini.
@@ -36,7 +36,7 @@ turns:
   indonesian_explanation: Saya tidak sepenuhnya setuju.
 target_phrases:
 - أُوَافِقُكَ.
-- أُوَافِقُكِ فِي هَذَا.
+- أُوَافِقُكَ فِي هَذَا.
 - لَا أُوَافِقُ تَمَامًا.
 - فِي رَأْيِي، هُنَاكَ خِيَارٌ أَفْضَلُ.
 rubric:

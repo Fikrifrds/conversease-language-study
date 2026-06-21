@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_Aussie_Bloke-20260612T124301Z.wav
-  duration_seconds: 12.84
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_Aussie_Bloke-20260612T124301Z.wav
-  trace_id: 067b31c644f21e684b86e0dbd9988cc3,067b31c8c5f51dd18814a0fe6fad2f3a,067b31ca1bd41bfcb36c5ea8ff033b16,067b31ccc08d855b82b58cd7b16b6103,067b31ce37fb59a9c29fbf9cae328382,067b31d1a568e61ee70209d5b39d2e39,067b31d35c86a0e2ae833d0819ca1370
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:43:01.178583+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-04-apologizing-and-thanking
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina shares her opinion about a new movie. She says it is really good and the story is simple but fun.
+Faris shares her opinion about a new movie. She says it is really good and the story is simple but fun.
 
 ## Check
 

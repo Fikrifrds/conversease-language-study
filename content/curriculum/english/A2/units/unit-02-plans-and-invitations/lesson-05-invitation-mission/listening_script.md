@@ -1,15 +1,15 @@
 # Dialogue Script
 
-**Ben:** Hi Mina. Do you want to grab coffee tomorrow?  
-**Mina:** Thanks, but I can't tomorrow.  
-**Ben:** Oh, okay. Are you busy?  
-**Mina:** Yes. Something came up at work.  
-**Ben:** No problem. How about Saturday?  
-**Mina:** Saturday is good. What time?  
-**Ben:** Does 3 pm work for you?  
-**Mina:** Yes, 3 pm works. Where should we meet?  
-**Ben:** Let's meet at the cafe near the station.  
-**Mina:** Great. See you then.
+**Ben:** Hi Faris. Do you want to grab coffee tomorrow?
+**Faris:** Thanks, but I can't tomorrow.
+**Ben:** Oh, okay. Are you busy?
+**Faris:** Yes. Something came up at work.
+**Ben:** No problem. How about Saturday?
+**Faris:** Saturday is good. What time?
+**Ben:** Does 3 pm work for you?
+**Faris:** Yes, 3 pm works. Where should we meet?
+**Ben:** Let's meet at the cafe near the station.
+**Faris:** Great. See you then.
 
 ## Audio Direction
 

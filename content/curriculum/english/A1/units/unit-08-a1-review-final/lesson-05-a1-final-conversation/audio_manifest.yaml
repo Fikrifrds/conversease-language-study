@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,19 +6,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260612T124631Z.wav
-  duration_seconds: 46.53
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
-    Staff: English_CalmWoman
+    Faris: English_Trustworth_Man
+    Staff: English_Diligent_Man
   line_count: 15
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_Aussie_Bloke-20260612T124631Z.wav
-  trace_id: 067b32809b7101c4eca33d2a96a5821e,067b32831add64328c450c3262680f54,067b328622a0d35fe902cc796f897899,067b3289ce28f7e1bfb6908c7912e21f,067b328bf208ac0da7838538467fe4c1,067b328eaaf9bce9759839460665c619,067b3291101d3fbd4ef91e1f9233d69a,067b32942acae2078fa462cb4623ee18,067b329524d8cd9a686f7fe46955fc81,067b3298fa887ec266452ee94853b690,067b329b901b8642d77730b0c12f28c7,067b329d3c7d93d4858e8c924ed1d074,067b329faa2dca3f6582d135ca4e75b2,067b32a2eec6421cd72d84743f7801f8,067b32a3bae933289397fb472709063e
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:46:31.623745+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-05-a1-final-conversation
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

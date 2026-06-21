@@ -1,26 +1,27 @@
 lesson_key: lesson-05-first-conversation-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260612T123159Z.wav
-  duration_seconds: 14.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Adi: English_Diligent_Man
-    Lina: English_Upbeat_Woman
+    Raka: English_Gentle-voiced_man
   line_count: 5
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_Aussie_Bloke-20260612T123159Z.wav
-  trace_id: 067b2f338adcf820b8b67f5a9cc99409,067b2f35f7ffcdb1c94dc5d2f076a4db,067b2f3800e1b878b44540327913d55e,067b2f3b1d532c882d44c232d4fe1f58,067b2f3d3975553f9f4f0baeef6c9276
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:31:59.292292+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

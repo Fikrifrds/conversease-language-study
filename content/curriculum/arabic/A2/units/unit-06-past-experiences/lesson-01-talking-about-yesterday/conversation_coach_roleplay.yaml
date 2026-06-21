@@ -1,7 +1,7 @@
 scenario_key: arabic_talking_about_yesterday
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَاذَا فَعَلْتِ أَمْسِ يَا لَيْلَى؟
+opening_line: مَاذَا فَعَلْتَ أَمْسِ يَا رَامِي؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas dan menceritakan
   kegiatan kemarin dengan kalimat pendek.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا فَعَلْتِ أَمْسِ يَا لَيْلَى؟
+- coach: مَاذَا فَعَلْتَ أَمْسِ يَا رَامِي؟
   hint: 'Jawab dengan pola: مَاذَا فَعَلْتَ أَمْسِ؟'
   sample_answer: مَاذَا فَعَلْتَ أَمْسِ؟
   focus: 'Latihan frasa: Apa yang kamu lakukan kemarin?'

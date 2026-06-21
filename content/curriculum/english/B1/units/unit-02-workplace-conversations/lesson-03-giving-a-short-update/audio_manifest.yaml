@@ -1,5 +1,5 @@
 lesson_key: lesson-03-giving-a-short-update
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-English_Aussie_Bloke-20260612T130702Z.wav
-  duration_seconds: 20.19
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-English_Aussie_Bloke-20260612T130702Z.wav
-  trace_id: 067b37655b1c34e1b0cf5183c6d21d04,067b3767bae60a271d173d738a8b63d6,067b376a1b01ac2a3096b5307f469a8b,067b376ca0a0cfd4b7dfbd4b37c66233,067b376f6829443f9d8ced6ba6fdc8b4,067b37715adf3718448f22cc1b83aaa4,067b3774a6bb9cf739181d13fb496942
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:07:02.565612+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

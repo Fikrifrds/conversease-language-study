@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Sara:** What do you want?
+**Omar:** What do you want?
 **Dimas:** I want a sandwich.
-**Sara:** Do you want tea or coffee?
+**Omar:** Do you want tea or coffee?
 **Dimas:** Tea, please.
-**Sara:** Do you want sugar?
+**Omar:** Do you want sugar?
 **Dimas:** No sugar, please.
-**Sara:** Okay.
+**Omar:** Okay.
 
 ## Audio Direction
 

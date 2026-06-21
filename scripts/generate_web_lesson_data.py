@@ -153,11 +153,12 @@ def js_string(value: str) -> str:
 
 
 def render_lessons(lessons: list[dict[str, Any]]) -> str:
-    # Only the lesson PREVIEW (the part free users may see) is emitted into the
-    # client bundle. The gated body (dialogue, phrases, vocabulary, grammar,
-    # pronunciation, prompts, quiz, reading/writing, visual cards) is served at
-    # runtime by the Pro-gated /lessons/{slug}/full endpoint and never bundled,
-    # so it cannot be extracted from the browser by a free user.
+    # Only a minimal lesson PREVIEW (title, one-line goal, hero) is emitted into
+    # the client bundle. The gated body — including the goal details and
+    # situation setup, plus dialogue, phrases, vocabulary, grammar, pronunciation,
+    # prompts, quiz, reading/writing, and visual cards — is served at runtime by
+    # the Pro-gated /lessons/{slug}/full endpoint and never bundled, so it cannot
+    # be extracted from the browser by a free user.
     blocks: list[str] = []
     for lesson in lessons:
         lines = ["    {"]
@@ -167,8 +168,6 @@ def render_lessons(lessons: list[dict[str, Any]]) -> str:
         lines.append(f"      title: {js_string(lesson['title'])},")
         lines.append(f"      unit: {js_string(lesson['unit'])},")
         lines.append(f"      conversationGoal: {js_string(lesson['conversationGoal'])},")
-        lines.append(f"      conversationGoalDetails: {js_string(lesson['conversationGoalDetails'])},")
-        lines.append(f"      setup: {js_string(lesson['setup'])},")
         if lesson.get("visuals"):
             hero = lesson["visuals"]["hero"]
             lines.append("      visuals: {")

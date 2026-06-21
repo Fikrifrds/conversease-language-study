@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina asks Hilmi's opinion about going to Bali. Hilmi says it's a great idea because the beaches are beautiful.
+Faris asks Hilmi's opinion about going to Bali. Hilmi says it's a great idea because the beaches are beautiful.
 
 ## Check
 

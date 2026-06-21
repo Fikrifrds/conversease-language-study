@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina tried a new restaurant yesterday. She says the food was delicious and the service was great.
+Faris tried a new restaurant yesterday. She says the food was delicious and the service was great.
 
 ## Check
 

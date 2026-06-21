@@ -1,26 +1,27 @@
 lesson_key: lesson-04-saying-what-you-can-do
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-04-saying-what-you-can-do/listening-English_Aussie_Bloke-20260612T123710Z.wav
-  duration_seconds: 11.46
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Sara: English_CalmWoman
+    Omar: English_Trustworth_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-04-saying-what-you-can-do/listening-English_Aussie_Bloke-20260612T123710Z.wav
-  trace_id: 067b30683970636c0dd69878c21b0513,067b306af5d250d594265f4e099c5c04,067b306d896f3c800ac5161367826b6b,067b306fd5469bcd28bd5904ee6c9763,067b30716342e127515b0a8da2d996b7,067b307441217227d3ef93b548848f4a
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:37:10.206460+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

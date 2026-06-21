@@ -51,7 +51,7 @@ class ConversationPracticeTest(unittest.TestCase):
         payload = session_payload(session)
         turn = store.add_turn(session.id, "My name is Arif. Nice to meet you.")
 
-        self.assertEqual(payload["first_coach_message"], "Hi, my name is Sara. What is your name?")
+        self.assertEqual(payload["first_coach_message"], "Hi, my name is Omar. What is your name?")
         self.assertEqual(turn.coach_reply, "Nice to meet you. What should I call you?")
         self.assertEqual(turn.feedback.better_version, "My name is Arif. Nice to meet you.")
 

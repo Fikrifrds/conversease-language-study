@@ -1,5 +1,5 @@
 lesson_key: lesson-03-review-places-and-shopping
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,19 +7,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-3nav5pHC1EYvWOd5LmnA-20260617T044350Z.wav
-  duration_seconds: 18.86
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Cafe Staff: gVzwmdZzRgBrNjXaTmi5
+    Cafe Staff: yXEnnEln9armDCyhkXcA
     Khalid: t9akNmCDhz230CEXOYmn
-    Layla: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
   line_count: 8
-  script_content_hash: 7c42cedf93cc3f56eba552e83ab42f0f65c2649b5a6aa4d33fab742142112950
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-3nav5pHC1EYvWOd5LmnA-20260617T044350Z.wav
-  trace_id: 49kxzh9d9TlHQCnRxj1m,kS7eCTvztQnCXlS68yKN,3Wr3tdigLCSiMCfLVZdu,TotThwwhHU1ksaj6krTh,uRnZF9iVUrirPcNRPtJa,sU1kgOwRHcLSSYE25omr,Fk5BsMSaVdQOrGBsiBv7,BzxQKME9aWU17fHyTA2i
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:43:50.717177+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

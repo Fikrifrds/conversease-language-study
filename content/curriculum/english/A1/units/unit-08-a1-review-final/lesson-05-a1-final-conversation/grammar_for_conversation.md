@@ -4,7 +4,7 @@ Grammar di lesson ini membantu learner menggabungkan pola A1 yang sudah dipelaja
 
 ## Use short complete sentences.
 
-- Example: My name is Mina. I'm from Indonesia.
+- Example: My name is Faris. I'm from Indonesia.
 
 ## Use question back to keep talking.
 

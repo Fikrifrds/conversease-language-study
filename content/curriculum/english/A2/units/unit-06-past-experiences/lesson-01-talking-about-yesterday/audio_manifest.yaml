@@ -1,5 +1,5 @@
 lesson_key: lesson-01-talking-about-yesterday
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-01-talking-about-yesterday/listening-English_Aussie_Bloke-20260612T125755Z.wav
-  duration_seconds: 17.25
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-01-talking-about-yesterday/listening-English_Aussie_Bloke-20260612T125755Z.wav
-  trace_id: 067b3541eb210f88d8df9c1f6115cf3b,067b35438b6ecba08405700f01fade98,067b3545f8f86232b44eb155f32131d9,067b3547822f61c964f3f77f2bbafa2e,067b354af628c910f3430f1afc3705c3,067b354cf4bf7aed44a460e01132e1ac,067b354fab238ef975850ccd64198d8b
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:57:55.294300+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

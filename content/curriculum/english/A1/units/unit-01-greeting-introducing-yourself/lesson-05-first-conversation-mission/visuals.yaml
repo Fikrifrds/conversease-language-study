@@ -2,14 +2,14 @@ hero:
   src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/hero.png
   width: 1672
   height: 941
-  alt: Lina dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.
+  alt: Raka dan Adi faceless menjalankan misi percakapan singkat dari jarak sopan di kelas Indonesia.
   caption: Gabungkan sapaan, nama, asal, dan penutup dalam percakapan kelas nyata.
 cards:
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-good-morning-my-name.png
     width: 1254
     height: 1254
     label: Good morning. My name is ...
-    alt: Lina faceless berkhimar abu gelap dan abaya hitam menyapa dan memperkenalkan diri.
+    alt: Raka faceless berpakaian sopan menyapa dan memperkenalkan diri.
   - src: /images/lessons/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/card-where-from.png
     width: 1254
     height: 1254
@@ -19,4 +19,4 @@ cards:
     width: 1254
     height: 1254
     label: See you later.
-    alt: Lina faceless berkhimar abu gelap dan abaya hitam berpamitan di pintu kelas.
+    alt: Raka faceless berpakaian sopan berpamitan di pintu kelas.

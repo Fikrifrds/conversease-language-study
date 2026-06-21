@@ -1,6 +1,6 @@
 # Reading Support
 
-Dimas cannot open a file. Sara helps him. He clicks the button and the file works.
+Dimas cannot open a file. Omar helps him. He clicks the button and the file works.
 
 ## Check
 

@@ -1,6 +1,6 @@
 # Reading Support
 
-Alya buys a one-way ticket to Bandung. The train leaves at 6:30 pm from platform 2. Then she asks a driver to take her to her hotel.
+Dimas buys a one-way ticket to Bandung. The train leaves at 6:30 pm from platform 2. Then she asks a driver to take her to her hotel.
 
 ## Check
 

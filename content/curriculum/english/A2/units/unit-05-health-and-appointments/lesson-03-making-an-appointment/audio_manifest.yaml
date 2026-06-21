@@ -1,5 +1,5 @@
 lesson_key: lesson-03-making-an-appointment
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-03-making-an-appointment/listening-English_Aussie_Bloke-20260612T125640Z.wav
-  duration_seconds: 18.62
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Mina: English_Upbeat_Woman
-    Receptionist: English_radiant_girl
+    Raka: English_Upbeat_Woman
+    Receptionist: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-03-making-an-appointment/listening-English_Aussie_Bloke-20260612T125640Z.wav
-  trace_id: 067b34f638d96a65cee10ebe9aa599de,067b34f988810f007a8f4b4b44921a04,067b34fb05def27289059e71b9c0a155,067b34fe6aee3db218bb44b5ec6240f2,067b350053dd09efc7c069ac1aaf4dea,067b3502703436f53357b8b07c62f74b,067b35047c8dcdc0f8640b87220aa486,067b35061d4634038e3d624504615b7c
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:56:40.632872+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

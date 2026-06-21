@@ -1,10 +1,10 @@
 # Transcript Translation
 
 - **Ilham:** What are our options? -> Opsi kita apa aja?
-- **Mina:** We have two options. Option A is a quick fix we can deliver this week. -> Kita punya dua opsi. Opsi A quick fix yang bisa kita deliver minggu ini.
+- **Faris:** We have two options. Option A is a quick fix we can deliver this week. -> Kita punya dua opsi. Opsi A quick fix yang bisa kita deliver minggu ini.
 - **Ilham:** And option B? -> Kalau opsi B?
-- **Mina:** Option B is a more robust solution, but it takes two more weeks. -> Opsi B solusi yang lebih robust, tapi butuh dua minggu lagi.
+- **Faris:** Option B is a more robust solution, but it takes two more weeks. -> Opsi B solusi yang lebih robust, tapi butuh dua minggu lagi.
 - **Ilham:** What's the trade-off? -> Trade-off-nya apa?
-- **Mina:** The trade-off is speed versus long-term stability. -> Trade-off-nya kecepatan versus stabilitas jangka panjang.
+- **Faris:** The trade-off is speed versus long-term stability. -> Trade-off-nya kecepatan versus stabilitas jangka panjang.
 - **Ilham:** What do you recommend? -> Kamu rekomendasiin yang mana?
-- **Mina:** I'd recommend option B if the timeline allows. -> Aku rekomendasi opsi B kalau timeline memungkinkan.
+- **Faris:** I'd recommend option B if the timeline allows. -> Aku rekomendasi opsi B kalau timeline memungkinkan.

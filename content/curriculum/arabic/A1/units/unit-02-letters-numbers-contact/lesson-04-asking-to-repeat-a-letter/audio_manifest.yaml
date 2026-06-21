@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-to-repeat-a-letter
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/listening-3nav5pHC1EYvWOd5LmnA-20260617T043845Z.wav
-  duration_seconds: 10.7
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
+    Rami: yXEnnEln9armDCyhkXcA
     Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 6
-  script_content_hash: 3200bcec40413f84a8784dce8a338f6e898dc112f98c1ea7e685a216bc4fda2f
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-04-asking-to-repeat-a-letter/listening-3nav5pHC1EYvWOd5LmnA-20260617T043845Z.wav
-  trace_id: xoyWC7cpAe94h3Y76dGk,yFD8u4tADVrH9ILQZpFp,eAIkPpLOr86x74DzsiuQ,DeyN5M3NpW3xuTnzUmrT,kGHwwH0yNfJwOkyNE5wS,vRpq3ea2elpiCgQeuWlN
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:38:45.513511+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,20 +1,20 @@
 questions:
 - type: multiple_choice
-  prompt: What problem does Alya have?
+  prompt: What problem does Ben have?
   choices:
   - She can't open a file.
   - She can't find a cafe.
   - She wants a sandwich.
   answer: She can't open a file.
 - type: multiple_choice
-  prompt: What does Dimas ask Alya to send?
+  prompt: What does Dimas ask Ben to send?
   choices:
   - A screenshot.
   - A coffee.
   - A pen.
   answer: A screenshot.
 - type: multiple_choice
-  prompt: What does Alya say when the problem is fixed?
+  prompt: What does Ben say when the problem is fixed?
   choices:
   - It works.
   - It is five dollars.

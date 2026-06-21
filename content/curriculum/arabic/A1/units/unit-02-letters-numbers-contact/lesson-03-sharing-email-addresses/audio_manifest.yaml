@@ -1,5 +1,5 @@
 lesson_key: lesson-03-sharing-email-addresses
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T052408Z.wav
-  duration_seconds: 15.6
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Ahmad: RjFuvnufLX42TYe37ekK
-    Noura: kdUY91gH5xyDHapxlthT
+    Zayd: cFUFIbKkO2iZFwS8cRnY
   line_count: 5
-  script_content_hash: 5967247a261b6811ec43ac41902d10813c04fed9dd333733e99287826fcb7595
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-03-sharing-email-addresses/listening-3nav5pHC1EYvWOd5LmnA-20260617T052408Z.wav
-  trace_id: MaLN9HoYT7LJ6qfLzpWP,ZUKG6P0VSWH1z3Ag7FNU,HK8pSVT8d53eLfceAanF,CXzXW7OQu04RyfgxDraK,JuMcUMCLcJ0rnzNQYp90
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T05:24:08.553233+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

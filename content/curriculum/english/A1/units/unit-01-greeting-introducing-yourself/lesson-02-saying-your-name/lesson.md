@@ -10,8 +10,8 @@ Kamu masuk kelas bahasa Inggris dan diminta memperkenalkan nama dengan kalimat p
 
 ## Dialogue
 
-- Coach: Hi, my name is Sara.
-- Learner: Hi Sara. My name is Arif.
+- Coach: Hi, my name is Omar.
+- Learner: Hi Omar. My name is Arif.
 - Coach: Nice to meet you, Arif.
 - Learner: Nice to meet you too.
 

@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Sara:** Hi, good morning.
+**Omar:** Hi, good morning.
 **Dimas:** Good morning. My name is Dimas.
-**Sara:** Nice to meet you, Dimas. I'm Sara.
-**Dimas:** Nice to meet you too, Sara.
-**Sara:** Where are you from?
+**Omar:** Nice to meet you, Dimas. I'm Omar.
+**Dimas:** Nice to meet you too, Omar.
+**Omar:** Where are you from?
 **Dimas:** I'm from Indonesia. How about you?
-**Sara:** I'm from Malaysia, and I live in Jakarta now.
+**Omar:** I'm from Malaysia, and I live in Jakarta now.
 **Dimas:** Oh, nice. See you in class.
 
 ## Audio Direction

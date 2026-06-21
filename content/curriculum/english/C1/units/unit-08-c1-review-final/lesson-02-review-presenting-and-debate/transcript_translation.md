@@ -1,12 +1,12 @@
 # Transcript Translation
 
 - **Faris:** Give me the short version of your argument. -> Kasih versi singkat argumen kamu.
-- **Mina:** Let me frame this: the goal is reliability, not just speed. -> Biar aku frame: targetnya reliability, bukan cuma cepat.
+- **Dimas:** Let me frame this: the goal is reliability, not just speed. -> Biar aku frame: targetnya reliability, bukan cuma cepat.
 - **Faris:** You're assuming reliability is the main driver. -> Kamu mengasumsikan reliability itu driver utama.
-- **Mina:** That's fair. The core assumption is that incidents cost more than delay. -> Masuk akal. Asumsi intinya: incident biayanya lebih mahal daripada delay.
+- **Dimas:** That's fair. The core assumption is that incidents cost more than delay. -> Masuk akal. Asumsi intinya: incident biayanya lebih mahal daripada delay.
 - **Faris:** What if leadership rejects that? -> Kalau leadership nolak asumsi itu?
-- **Mina:** If we accept speed as the priority, then we should time-box a pilot and limit scope. -> Kalau prioritasnya speed, maka kita time-box pilot dan batasi scope.
+- **Dimas:** If we accept speed as the priority, then we should time-box a pilot and limit scope. -> Kalau prioritasnya speed, maka kita time-box pilot dan batasi scope.
 - **Faris:** Any counterpoint? -> Ada counterpoint?
-- **Mina:** On the other hand, we can keep one feature in scope if the metrics stay stable. -> Di sisi lain, kita bisa tetap masukin satu fitur kalau metriknya stabil.
+- **Dimas:** On the other hand, we can keep one feature in scope if the metrics stay stable. -> Di sisi lain, kita bisa tetap masukin satu fitur kalau metriknya stabil.
 - **Faris:** Summarize. -> Rangkum.
-- **Mina:** In short: protect reliability, validate with metrics, then expand safely. -> Singkatnya: lindungi reliability, validasi pakai metrik, lalu ekspansi dengan aman.
+- **Dimas:** In short: protect reliability, validate with metrics, then expand safely. -> Singkatnya: lindungi reliability, validasi pakai metrik, lalu ekspansi dengan aman.

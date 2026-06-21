@@ -7,10 +7,10 @@ phrases:
   meaning_id: Aku sampai kira-kira 20 menit lagi.
   usage_note: A simple estimate.
   common_mistake: Do not say "I will there"; use I'll be there.
-- phrase: I have a reservation under Mina Kim.
-  meaning_id: Aku ada reservasi atas nama Mina Kim.
+- phrase: I have a reservation under Faris Kim.
+  meaning_id: Aku ada reservasi atas nama Faris Kim.
   usage_note: Confirm your booking name.
-  common_mistake: Do not say "reservation name Mina"; use under + name.
+  common_mistake: Do not say "reservation name Faris"; use under + name.
 - phrase: Do you have any recommendations for dinner?
   meaning_id: Ada rekomendasi buat makan malam?
   usage_note: Ask for ideas politely.

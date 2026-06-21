@@ -12,12 +12,12 @@ feedback_level:
 turns:
   - coach: Hi, good morning. What is your name?
     hint: Perkenalkan diri dengan kalimat lengkap.
-    sample_answer: Good morning. My name is Mina.
+    sample_answer: Good morning. My name is Faris.
     focus: Final opening
     expected_keywords:
       - morning
       - name
-      - mina
+      - faris
   - coach: Nice to meet you. Where are you from?
     hint: Jawab asal dan tanyakan balik.
     sample_answer: I'm from Indonesia. How about you?

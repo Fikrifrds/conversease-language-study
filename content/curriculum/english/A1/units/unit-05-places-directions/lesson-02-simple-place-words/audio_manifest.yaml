@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_Aussie_Bloke-20260612T123816Z.wav
-  duration_seconds: 11.41
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_Aussie_Bloke-20260612T123816Z.wav
-  trace_id: 067b30aa07143794e7ae22ff62dab740,067b30ad2e5c00b7e0cc782d0dd2d358,067b30af2b18b4b769c821d490edc225,067b30b14d93dd425afd479b8850c0ad,067b30b370f54f7e8c0fa31df21e6bd4,067b30b6fde733ad0d8b3f1fcfa31df1
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:38:16.262145+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-02-simple-place-words
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,13 +1,13 @@
 questions:
 - type: multiple_choice
-  prompt: What does Alya not understand?
+  prompt: What does Dimas not understand?
   choices:
   - An instruction.
   - A price.
   - A phone number.
   answer: An instruction.
 - type: multiple_choice
-  prompt: What does Alya ask Ben to do?
+  prompt: What does Dimas ask Ben to do?
   choices:
   - Repeat.
   - Leave.

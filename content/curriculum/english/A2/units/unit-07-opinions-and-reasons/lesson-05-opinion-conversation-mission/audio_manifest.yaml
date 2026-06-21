@@ -1,5 +1,5 @@
 lesson_key: lesson-05-opinion-conversation-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -14,7 +14,7 @@ assets:
   voice_id: multi_speaker
   speaker_voices:
     Friend: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Raka: English_Upbeat_Woman
   line_count: 7
   audio_format: wav
   storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_Aussie_Bloke-20260612T130129Z.wav
@@ -26,3 +26,5 @@ assets:
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate
+  listening audio.

@@ -2,14 +2,14 @@ hero:
   src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/hero.png
   width: 1672
   height: 941
-  alt: Maryam dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.
+  alt: Karim dan Khalid faceless bertukar nomor telepon dari jarak sopan di kelas Indonesia.
   caption: Ucapkan nomor telepon dengan angka Arab sederhana tanpa menampilkan angka di gambar.
 cards:
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-raqmu-hatif.png
     width: 1254
     height: 1254
     label: مَا رَقْمُ هَاتِفِكَ؟
-    alt: Maryam faceless bertanya nomor telepon dengan ponsel layar kosong.
+    alt: Karim faceless bertanya nomor telepon dengan ponsel layar kosong.
   - src: /images/lessons/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/card-numbers.png
     width: 1254
     height: 1254

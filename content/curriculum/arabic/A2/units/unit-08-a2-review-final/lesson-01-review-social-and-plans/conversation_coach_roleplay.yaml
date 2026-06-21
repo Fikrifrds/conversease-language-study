@@ -1,7 +1,7 @@
 scenario_key: arabic_review_social_and_plans
 mode: lesson_practice_coach
 level_code: A2
-opening_line: كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ يَا مَرْيَمُ؟
+opening_line: كَيْفَ كَانَ دَرْسُكَ الْيَوْمَ يَا كَرِيمُ؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu bertemu teman setelah kelas, bertanya
   kabar, menanyakan rencana, lalu menentukan waktu belajar bersama.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ كَانَ دَرْسُكِ الْيَوْمَ يَا مَرْيَمُ؟
+- coach: كَيْفَ كَانَ دَرْسُكَ الْيَوْمَ يَا كَرِيمُ؟
   hint: 'Jawab dengan pola: كَيْفَ كَانَ دَرْسُكَ؟'
   sample_answer: كَيْفَ كَانَ دَرْسُكَ؟
   focus: 'Latihan frasa: Bagaimana pelajaranmu?'

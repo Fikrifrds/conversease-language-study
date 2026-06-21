@@ -7,7 +7,7 @@ questions:
   - Turn left.
   answer: My name is Dimas.
 - type: multiple_choice
-  prompt: Where is Sara from?
+  prompt: Where is Omar from?
   choices:
   - Malaysia.
   - The cafe.

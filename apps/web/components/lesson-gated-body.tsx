@@ -15,6 +15,7 @@ import { versionedAssetSrc } from "@/lib/assets";
 import { ApiRequestError, getLessonFull, type LessonContent } from "@/lib/learning-api";
 
 const ARABIC_LESSON_COPY = {
+  situationSetup: "Situasi Latihan",
   listenToDialogue: "Dengarkan Dialog",
   usefulPhrases: "Frasa Penting",
   vocabulary: "Kosa Kata Baru",
@@ -29,6 +30,7 @@ const ARABIC_LESSON_COPY = {
 };
 
 const DEFAULT_LESSON_COPY = {
+  situationSetup: "Situation Setup",
   listenToDialogue: "Listen to a Dialogue",
   usefulPhrases: "Useful Phrases",
   vocabulary: "New Vocabulary",
@@ -162,6 +164,15 @@ function UnlockedBody({ lesson }: { lesson: LessonContent }) {
 
   return (
     <>
+      <div className="mt-6 rounded-lg border border-ink/10 bg-white p-4">
+        <SimpleMarkdown markdown={lesson.conversationGoalDetails} />
+      </div>
+
+      <section className="mt-6">
+        <h2 className="text-xl font-semibold">{copy.situationSetup}</h2>
+        <p className="mt-2 leading-7 text-ink/70">{lesson.setup}</p>
+      </section>
+
       <section className="mt-8">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2">

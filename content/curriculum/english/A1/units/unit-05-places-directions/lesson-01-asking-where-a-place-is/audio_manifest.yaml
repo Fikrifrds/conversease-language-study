@@ -1,4 +1,4 @@
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,18 +6,19 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260612T123757Z.wav
-  duration_seconds: 12.26
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_Aussie_Bloke-20260612T123757Z.wav
-  trace_id: 067b3097f6d00349457652016b6e2436,067b3099b67d6ce348fb6b15f9f9516b,067b309c2dbfa7a8b25d17f7d3accc5b,067b309ee852b9dc997c956c63f92750,067b30a1b37ca5aa317ec8ac43a16b3a,067b30a3402d99c428cee3b3c93aee74
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:37:57.621544+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 lesson_key: lesson-01-asking-where-a-place-is
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -7,8 +7,8 @@ phrases:
   meaning_id: Ada reservasi?
   usage_note: A standard check-in question.
   common_mistake: Do not say "You have reservation?" without do.
-- phrase: I have a reservation under Mina Kim.
-  meaning_id: Saya ada reservasi atas nama Mina Kim.
+- phrase: I have a reservation under Faris Kim.
+  meaning_id: Saya ada reservasi atas nama Faris Kim.
   usage_note: Under + name means the booking name.
   common_mistake: Do not say "in the name"; use under + name.
 - phrase: Could I see your ID, please?

@@ -1,5 +1,5 @@
 lesson_key: lesson-02-giving-simple-reasons
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-02-giving-simple-reasons/listening-English_Aussie_Bloke-20260612T130016Z.wav
-  duration_seconds: 14.06
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Hilmi: English_Diligent_Man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-02-giving-simple-reasons/listening-English_Aussie_Bloke-20260612T130016Z.wav
-  trace_id: 067b35d1c2bfe97954543b65dcdfd89b,067b35d338af3fa85000445eba4543c0,067b35d5b3ba6c860179d19699192195,067b35d770927fbdbd8a4267a752448c,067b35dab8f383ae797458eb82dde7e2,067b35dc6c8b17323f2dea989b831344,067b35debe97feaa802830eb79fe2998
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:00:16.610588+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

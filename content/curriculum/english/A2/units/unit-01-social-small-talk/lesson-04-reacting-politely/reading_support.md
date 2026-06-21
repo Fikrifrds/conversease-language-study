@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina is tired today because she didn't sleep well. Ben reacts politely. Then Ben shares good news: he finished his project, and Mina reacts positively.
+Faris is tired today because she didn't sleep well. Ben reacts politely. Then Ben shares good news: he finished his project, and Faris reacts positively.
 
 ## Check
 

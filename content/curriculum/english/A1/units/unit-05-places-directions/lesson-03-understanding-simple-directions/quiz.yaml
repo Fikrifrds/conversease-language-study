@@ -7,7 +7,7 @@ questions:
   - Stop here.
   answer: Go straight.
 - type: multiple_choice
-  prompt: After going straight, what should Sara do?
+  prompt: After going straight, what should Omar do?
   choices:
   - Turn left.
   - Go home.

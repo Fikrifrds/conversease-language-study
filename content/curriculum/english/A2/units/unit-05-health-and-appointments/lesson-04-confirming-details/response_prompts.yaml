@@ -4,11 +4,11 @@ prompts:
   acceptable_variations:
   - 'Let me confirm the time: 3:30 p.m., right?'
   - So it's 3:30 p.m., right?
-- prompt: Say your name is Mina Park.
-  target_response: My name is Mina Park.
+- prompt: Say your name is Raka Park.
+  target_response: My name is Raka Park.
   acceptable_variations:
-  - My name is Mina Park.
-  - It's Mina Park.
+  - My name is Raka Park.
+  - It's Raka Park.
 - prompt: Spell Park.
   target_response: P-A-R-K.
   acceptable_variations:

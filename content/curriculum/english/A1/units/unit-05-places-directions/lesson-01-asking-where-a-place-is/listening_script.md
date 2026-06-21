@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Alya:** Excuse me. Where is the classroom?
+**Dimas:** Excuse me. Where is the classroom?
 **Ben:** It is on the first floor.
-**Alya:** Is it near the office?
+**Dimas:** Is it near the office?
 **Ben:** Yes, it is next to the office.
-**Alya:** Thank you.
+**Dimas:** Thank you.
 **Ben:** You're welcome.
 
 ## Audio Direction

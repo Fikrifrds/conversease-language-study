@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina keeps Hilmi's story going with follow-up questions: what happened next, why he chose something, and how he felt.
+Faris keeps Hilmi's story going with follow-up questions: what happened next, why he chose something, and how he felt.
 
 ## Check
 

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-high-quality-follow-ups
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-English_Aussie_Bloke-20260612T140144Z.wav
-  duration_seconds: 28.67
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-English_Aussie_Bloke-20260612T140144Z.wav
-  trace_id: 067b443263219ed35e42ecd652622547,067b44348b83d14c0b8488f88f7c4e2b,067b4437ef93fa6213a26a610ae98fa9,067b443975e2c745bc51fdcc33898c05,067b443bee6348457b17943befcd3207,067b443e5deb616a6c787a9249117401,067b4440e1dda64975042c3056b3b88c,067b44436322f2159795ea1ccf1cc051,067b44456865ee3915d37a68f0f9f8ed
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T14:01:44.802174+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

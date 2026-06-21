@@ -1,8 +1,8 @@
 # Dialogue Script
 
-**Sara:** Hi, my name is Sara. What is your name?  
-**Arif:** Hi Sara. My name is Arif.
-**Sara:** Nice to meet you, Arif.
+**Omar:** Hi, my name is Omar. What is your name?
+**Arif:** Hi Omar. My name is Arif.
+**Omar:** Nice to meet you, Arif.
 **Arif:** Nice to meet you too.
 
 ## Audio Direction

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-talking-to-a-driver
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -14,7 +14,7 @@ assets:
   voice_id: multi_speaker
   speaker_voices:
     Driver: English_Diligent_Man
-    Lina: English_Upbeat_Woman
+    Adi: English_Upbeat_Woman
   line_count: 7
   audio_format: wav
   storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/listening-English_Aussie_Bloke-20260612T125256Z.wav
@@ -26,3 +26,5 @@ assets:
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate
+  listening audio.

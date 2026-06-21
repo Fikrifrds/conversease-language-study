@@ -1,7 +1,7 @@
 scenario_key: arabic_past_experience_mission
 mode: lesson_practice_coach
 level_code: A2
-opening_line: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ يَا سَارَةُ؟
+opening_line: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ يَا رَامِي؟
 learner_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu menceritakan pengalaman akhir pekan dan
   menjawab pertanyaan lanjutan tentang tempat, teman, kegiatan, dan kesan.'
 max_turns: 5
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا فَعَلْتِ فِي نِهَايَةِ الْأُسْبُوعِ يَا سَارَةُ؟
+- coach: مَاذَا فَعَلْتَ فِي نِهَايَةِ الْأُسْبُوعِ يَا رَامِي؟
   hint: 'Jawab dengan pola: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.'
   sample_answer: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
   focus: 'Latihan frasa: Pada akhir pekan, saya pergi ke kota.'

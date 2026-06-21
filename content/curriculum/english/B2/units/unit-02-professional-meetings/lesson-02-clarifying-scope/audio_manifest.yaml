@@ -1,5 +1,5 @@
 lesson_key: lesson-02-clarifying-scope
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-English_Aussie_Bloke-20260612T132540Z.wav
-  duration_seconds: 23.93
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-English_Aussie_Bloke-20260612T132540Z.wav
-  trace_id: 067b3bc119321b2d7d249c9960088d35,067b3bc4eb0d4423f0d0374ed9a8e9a4,067b3bc63800d147bbb6f75b2371175d,067b3bc98b172ff5c3bac0e502c2baf4,067b3bcb8733abb42cbe1cd115d992f9,067b3bcd99266a863e6f5b3b278bc4b6,067b3bd056a115736ca2a96018905ae4,067b3bd2c938b3b3da75c33fa2300068
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:25:40.496517+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

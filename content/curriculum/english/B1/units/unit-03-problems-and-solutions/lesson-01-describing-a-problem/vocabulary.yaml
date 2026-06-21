@@ -1,7 +1,7 @@
 vocabulary:
 - word: going
   meaning_id: pergi/menuju
-  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Hey Mina. You look concerned.
+  usage_note: 'Dipakai saat menanyakan atau menyatakan tujuan. Contoh: "Hey Dimas. You look concerned.
     What''s going on?"'
 - word: problem
   meaning_id: masalah
@@ -15,5 +15,5 @@ vocabulary:
   usage_note: 'Bentuk lampau dari happen. Contoh: "It happened when we deployed the update."'
 - word: look
   meaning_id: terlihat/melihat
-  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "Hey Mina. You look concerned. What''s going
+  usage_note: 'Dipakai untuk kesan atau pengamatan. Contoh: "Hey Dimas. You look concerned. What''s going
     on?"'

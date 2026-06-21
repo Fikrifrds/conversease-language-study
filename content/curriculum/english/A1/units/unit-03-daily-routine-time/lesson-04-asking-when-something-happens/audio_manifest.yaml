@@ -1,26 +1,27 @@
 lesson_key: lesson-04-asking-when-something-happens
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-04-asking-when-something-happens/listening-English_Aussie_Bloke-20260612T123528Z.wav
-  duration_seconds: 11.2
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
     Dimas: English_Diligent_Man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-04-asking-when-something-happens/listening-English_Aussie_Bloke-20260612T123528Z.wav
-  trace_id: 067b3003d108f05d7557bc17d19bb920,067b3005cea95745a4ebd1698e562cbb,067b30085a0efed28dd1a524ffc4a8e5,067b30094e98438607a706f403df7b0a,067b300bff25753935a5d9a166d3773f,067b300e748eb57dba959293aeafeef5
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:35:28.897221+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

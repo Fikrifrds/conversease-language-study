@@ -1,5 +1,5 @@
 lesson_key: lesson-02-arabic-numbers-and-phone
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/listening-3nav5pHC1EYvWOd5LmnA-20260617T043826Z.wav
-  duration_seconds: 15.2
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Khalid: t9akNmCDhz230CEXOYmn
-    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
   line_count: 5
-  script_content_hash: f4595d35873cf3a7d8558953a90e179e37577343f687ea91686125bdabcc5d05
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-02-letters-numbers-contact/lesson-02-arabic-numbers-and-phone/listening-3nav5pHC1EYvWOd5LmnA-20260617T043826Z.wav
-  trace_id: CEJrJazva1orLXRqJYBF,fpnDsBvq9MWq9qTw47Rk,0ET2nhEvocjQpi9GQPnC,MqrPCdfawifBfRk6QrOr,eR3CHlSteESIGMTlwptZ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:38:26.916290+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina says she does not feel well and has a headache. She answers questions about last night and yesterday.
+Faris says she does not feel well and has a headache. She answers questions about last night and yesterday.
 
 ## Check
 

@@ -1,6 +1,6 @@
 # Reading Support
 
-Dimas is going to the cafe. The cafe is near the library. Mina is going to the library.
+Dimas is going to the cafe. The cafe is near the library. Faris is going to the library.
 
 ## Check
 

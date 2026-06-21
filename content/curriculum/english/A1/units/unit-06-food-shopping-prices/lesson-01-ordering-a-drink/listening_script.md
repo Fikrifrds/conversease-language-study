@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Mina:** Hi! (chuckle) What would you like?
+**Faris:** Hi! (chuckle) What would you like?
 **Ben:** Can I have a tea, please?
-**Mina:** Small or large?
+**Faris:** Small or large?
 **Ben:** Small, please.
-**Mina:** Anything else?
+**Faris:** Anything else?
 **Ben:** No, thank you.
-**Mina:** Here you go.
+**Faris:** Here you go.
 **Ben:** Thank you.
 
 ## Audio Direction

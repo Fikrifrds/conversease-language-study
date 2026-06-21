@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina checks in at the clinic, confirms her name, and describes her symptoms briefly.
+Raka checks in at the clinic, confirms her name, and describes her symptoms briefly.
 
 ## Check
 

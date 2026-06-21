@@ -1,12 +1,12 @@
 # Dialogue Script
 
-**Sara:** Where is the meeting room?
+**Omar:** Where is the meeting room?
 **Ben:** Go straight.
-**Sara:** Okay. Go straight.
+**Omar:** Okay. Go straight.
 **Ben:** Then turn left.
-**Sara:** Turn left?
+**Omar:** Turn left?
 **Ben:** Yes. The room is on the right.
-**Sara:** Thank you. I understand.
+**Omar:** Thank you. I understand.
 
 ## Audio Direction
 

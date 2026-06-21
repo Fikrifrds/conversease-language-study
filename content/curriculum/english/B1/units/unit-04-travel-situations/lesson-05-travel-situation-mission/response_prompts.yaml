@@ -5,9 +5,9 @@ prompts:
   - I'm running a bit late. My train is delayed. I'll be there in about 20 minutes.
   - I'm running a bit late. My flight is delayed. I'll be there in about 30 minutes.
 - prompt: Confirm reservation name.
-  target_response: I have a reservation under Mina Kim.
+  target_response: I have a reservation under Faris Kim.
   acceptable_variations:
-  - I have a reservation under Mina Kim.
+  - I have a reservation under Faris Kim.
   - I have a reservation under Faris Chen.
 - prompt: Ask for recommendation + request help politely.
   target_response: Do you have any recommendations for dinner? If there's a problem with my room, could you help me?

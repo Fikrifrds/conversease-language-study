@@ -3,9 +3,9 @@
 Read this short conversation:
 
 ```txt
-Sara: What do you do?
+Omar: What do you do?
 Dimas: I'm a student.
-Sara: What do you study?
+Omar: What do you study?
 Dimas: I study design.
 ```
 

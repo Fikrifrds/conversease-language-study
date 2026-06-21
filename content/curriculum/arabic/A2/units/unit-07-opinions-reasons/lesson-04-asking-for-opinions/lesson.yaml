@@ -6,7 +6,7 @@ estimated_minutes: 12
 conversation_situation: asking_for_opinions
 conversation_goal: 'Latih percakapan Arab A2 untuk situasi ini: Kamu meminta pendapat teman sebelum memilih
   tempat, waktu, aktivitas, atau opsi sederhana.'
-grammar_summary: Gunakan مَا رَأْيُكَ؟ untuk bertanya kepada laki-laki, مَا رَأْيُكِ؟ kepada perempuan,
+grammar_summary: Gunakan مَا رَأْيُكَ؟ untuk bertanya kepada laki-laki, مَا رَأْيُكَ؟ kepada perempuan,
   dan أَيُّهُمَا untuk dua pilihan.
 required_sections:
 - conversation_goal

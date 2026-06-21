@@ -1,5 +1,5 @@
 lesson_key: lesson-03-handling-sensitive-feedback
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-03-handling-sensitive-feedback/listening-English_Aussie_Bloke-20260612T134653Z.wav
-  duration_seconds: 28.24
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ilham: English_Gentle-voiced_man
-    Mina: English_Upbeat_Woman
+    Faris: English_Trustworth_Man
   line_count: 9
   audio_format: wav
-  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-03-handling-sensitive-feedback/listening-English_Aussie_Bloke-20260612T134653Z.wav
-  trace_id: 067b40b62fd59a824ffdee8f05f3f17d,067b40b97801938c6190d45a4b613c85,067b40bbce9dd8b0a39c1269c3b061b5,067b40be8fc34e1fba9c672881d84b09,067b40c14396a2fc4f0854390ced265f,067b40c36b1607d60a4aeaf65388bb0e,067b40c6ce05fb4177f9316269e97f08,067b40c8bd2710520df68c758bc421be,067b40cb144818c2f077aec2d3b14f14
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:46:53.998785+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

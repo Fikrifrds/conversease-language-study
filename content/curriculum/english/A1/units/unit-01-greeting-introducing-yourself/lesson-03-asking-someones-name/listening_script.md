@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Nina:** Hello. What's your name?  
-**Raka:** My name is Raka.  
-**Nina:** Sorry, can you repeat that?  
-**Raka:** Raka. R-A-K-A.  
-**Nina:** Thank you, Raka.
+**Adi:** Hello. What's your name?
+**Raka:** My name is Raka.
+**Adi:** Sorry, can you repeat that?
+**Raka:** Raka. R-A-K-A.
+**Adi:** Thank you, Raka.
 
 ## Audio Direction
 

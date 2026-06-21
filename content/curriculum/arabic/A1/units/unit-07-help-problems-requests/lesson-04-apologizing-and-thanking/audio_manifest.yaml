@@ -1,5 +1,5 @@
 lesson_key: lesson-04-apologizing-and-thanking
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
@@ -7,18 +7,18 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-3nav5pHC1EYvWOd5LmnA-20260617T044305Z.wav
-  duration_seconds: 13.74
+  audio_url: null
+  duration_seconds: null
   provider: elevenlabs
   model: eleven_v3
   voice_id: multi_speaker
   speaker_voices:
     Ahmad: RjFuvnufLX42TYe37ekK
-    Maryam: gVzwmdZzRgBrNjXaTmi5
+    Karim: 3GnbqfjaW8xI6hRTVx4Y
   line_count: 6
-  script_content_hash: 938d89e7e27271a13b00d5e078e4de7bf43b5fe33378d631b5a37f428f5b4221
   audio_format: wav
-  storage_key: conversease/audio/arabic/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-3nav5pHC1EYvWOd5LmnA-20260617T044305Z.wav
-  trace_id: h6bu7bYm2hRI7AApXuF9,1yw89r5AnLiQAnWf4ogm,NVpPqi4lhfvrqJqRETtj,TUu4gIkHhQvtpMhMiNXn,ypowPZfi6pnymodhjUZX,zfGQuKBB7EVJfg8KuJu7
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-17T04:43:05.556952+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

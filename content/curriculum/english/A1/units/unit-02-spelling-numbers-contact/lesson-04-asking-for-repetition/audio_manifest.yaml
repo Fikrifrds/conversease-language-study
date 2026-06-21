@@ -1,26 +1,27 @@
 lesson_key: lesson-04-asking-for-repetition
-status: generated
+status: needs_regeneration
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260612T123324Z.wav
-  duration_seconds: 24.34
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
   line_count: 6
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_Aussie_Bloke-20260612T123324Z.wav
-  trace_id: 067b2f85b981604305825494246f1fcb,067b2f88977b882d69c2571ca80eb31c,067b2f8a300d3aba38c28ce25b8c1bf4,067b2f8da3ff048709a089501afa7f2c,067b2f8f659d34275665dd69c7f36925,067b2f92cd2d08bea0b1362de6864708
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:33:24.104185+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

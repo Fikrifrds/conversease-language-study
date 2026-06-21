@@ -1,6 +1,6 @@
 # Reading Support
 
-Mina and Hilmi do small talk, ask a follow-up question about work, and make a plan to get coffee on Saturday.
+Faris and Hilmi do small talk, ask a follow-up question about work, and make a plan to get coffee on Saturday.
 
 ## Check
 

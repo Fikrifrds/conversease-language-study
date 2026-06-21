@@ -1,14 +1,14 @@
 scenario_key: reviewing_introductions_before_class
 mode: lesson_practice_coach
 level_code: A1
-opening_line: Hi, good morning. My name is Sara.
-learner_goal: Greet Sara, introduce yourself, say where you are from, ask one question back, and close politely.
+opening_line: Hi, good morning. My name is Omar.
+learner_goal: Greet Omar, introduce yourself, say where you are from, ask one question back, and close politely.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-  - coach: Hi, good morning. My name is Sara.
+  - coach: Hi, good morning. My name is Omar.
     hint: Sapa balik dan sebutkan namamu.
     sample_answer: Good morning. My name is Dimas.
     focus: Name review

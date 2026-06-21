@@ -1,5 +1,5 @@
 lesson_key: lesson-03-talking-about-weekends
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-03-talking-about-weekends/listening-English_Aussie_Bloke-20260612T124804Z.wav
-  duration_seconds: 18.51
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Alya: English_radiant_girl
+    Ben: English_Gentle-voiced_man
     Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-03-talking-about-weekends/listening-English_Aussie_Bloke-20260612T124804Z.wav
-  trace_id: 067b32f1db1e9e2077e2148243944255,067b32f3618880aa67a379a5db16d435,067b32f618f86c5598bd965301c50328,067b32f83c6ac711f10020451abf8945,067b32fa3029a63274f47653bb5c80ce,067b32fc385ca3616839ab17a715727c,067b32ff0f57b5d6e36f94bab62d9d1d,067b33013914b9b9c63902dff3836fb0
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:48:04.494626+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

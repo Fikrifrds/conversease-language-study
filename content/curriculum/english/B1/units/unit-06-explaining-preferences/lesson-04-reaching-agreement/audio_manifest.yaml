@@ -1,5 +1,5 @@
 lesson_key: lesson-04-reaching-agreement
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,23 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-English_Aussie_Bloke-20260612T131636Z.wav
-  duration_seconds: 18.89
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Faris: English_Trustworth_Man
-    Mina: English_Upbeat_Woman
+    Dimas: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-English_Aussie_Bloke-20260612T131636Z.wav
-  trace_id: 067b39a2347881502ba0554f840483ee,067b39a4632abfbdb7864c91b3f6ebb9,067b39a76e85f71e01f13ba6b1c309f9,067b39a917ebdcc286a51ef44b050675,067b39ab29a89720b5237136557c7ad1,067b39ad29eaf4694c7764c871655adf,067b39b07c004d03ce885b5996d1a4d6,067b39b24dfd711af95c4080967ba586
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:16:36.384917+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

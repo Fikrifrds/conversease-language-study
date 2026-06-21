@@ -1,5 +1,5 @@
 lesson_key: lesson-03-checking-directions
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-03-checking-directions/listening-English_Aussie_Bloke-20260612T125234Z.wav
-  duration_seconds: 19.03
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Staff: English_CalmWoman
+    Staff: English_Diligent_Man
   line_count: 7
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-03-checking-directions/listening-English_Aussie_Bloke-20260612T125234Z.wav
-  trace_id: 067b340208e55674f352ab82fdf0a570,067b34045d815329c6ad893eab640fbd,067b340748b00eef40e239762ca0c8e0,067b340a93476350414bde31605583be,067b340c479534e423c47bb9b4c779f7,067b340ecf1bcea87cdba84cbba9d52b,067b3411d5cf64bc9db2e9f63be9cbcb
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:52:34.972265+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

@@ -1,10 +1,10 @@
 # Dialogue Script
 
-**Alya:** Do you like English?
+**Dimas:** Do you like English?
 **Ben:** Yes, I like it.
-**Alya:** What do you like?
+**Dimas:** What do you like?
 **Ben:** I like speaking practice.
-**Alya:** Do you like grammar?
+**Dimas:** Do you like grammar?
 **Ben:** (chuckle) It's okay, but speaking is my favorite.
 
 ## Audio Direction

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-buying-a-ticket
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-01-buying-a-ticket/listening-English_Aussie_Bloke-20260612T125150Z.wav
-  duration_seconds: 20.76
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Staff: English_CalmWoman
+    Staff: English_Diligent_Man
   line_count: 8
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-01-buying-a-ticket/listening-English_Aussie_Bloke-20260612T125150Z.wav
-  trace_id: 067b33d238e58d4048eea9cf0ea289d9,067b33d4d0e6b7f93db0d28fdd5d14c6,067b33d7de76112aeaad87f5e2beb1c0,067b33d9f71867c74c1e99bad68e6ba0,067b33db0a0768b37b23149c46baef0a,067b33de98ecf1112c879a1782a9a053,067b33e19a6d304c60d8bac503c9be17,067b33e3e356ecb1f0c97cf7e6172f86
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:51:50.126297+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.

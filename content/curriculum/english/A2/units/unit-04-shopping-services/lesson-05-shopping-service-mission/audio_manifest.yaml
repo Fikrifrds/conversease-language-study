@@ -1,5 +1,5 @@
 lesson_key: lesson-05-shopping-service-mission
-status: generated
+status: needs_regeneration
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,22 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-English_Aussie_Bloke-20260612T125531Z.wav
-  duration_seconds: 31.03
+  audio_url: null
+  duration_seconds: null
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Staff: English_CalmWoman
+    Staff: English_Diligent_Man
   line_count: 11
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-English_Aussie_Bloke-20260612T125531Z.wav
-  trace_id: 067b34a984f6f3584118730ec942200e,067b34ac12352fe66ee2fb2cffa294e9,067b34ae5cac9ced35c8e2cb41c768c7,067b34b0290906ea82ea42820121bdf1,067b34b36bc83215390539c5cfa8b9d8,067b34b54025151c43cb941149051358,067b34b7a0eb8944a420f4621dccc0e8,067b34bafdcff25e37c6cc952f13cefc,067b34bc6e3f63b8884fe0424771c3a9,067b34bf17059e3743ff8638e546c4c8,067b34c1bf472fd1b2828178ee5a8d81
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:55:31.786896+00:00'
+  storage_key: ''
+  trace_id: ''
+  generated_by: ''
+  generated_at: ''
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
+  listening audio.
