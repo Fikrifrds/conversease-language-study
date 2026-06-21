@@ -194,12 +194,12 @@ function UnitVisualMosaic({
 
   if (!secondary) {
     return (
-      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-paper sm:w-44 sm:shrink-0">
+      <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg bg-paper sm:w-52 sm:shrink-0 md:w-56">
         <Image
           src={versionedAssetSrc(primary.src)}
           alt={primary.alt}
           fill
-          sizes="(min-width: 640px) 176px, 100vw"
+          sizes="(min-width: 768px) 224px, (min-width: 640px) 208px, 100vw"
           className="object-cover"
         />
       </div>
@@ -212,7 +212,7 @@ function UnitVisualMosaic({
         src={versionedAssetSrc(primary.src)}
         alt={primary.alt}
         fill
-        sizes="(min-width: 640px) 104px, 64vw"
+        sizes="(min-width: 768px) 132px, (min-width: 640px) 122px, 64vw"
         className="object-cover"
       />
     </div>
@@ -225,7 +225,7 @@ function UnitVisualMosaic({
             src={versionedAssetSrc(visual.src)}
             alt={visual.alt}
             fill
-            sizes="(min-width: 640px) 68px, 32vw"
+            sizes="(min-width: 768px) 86px, (min-width: 640px) 80px, 32vw"
             className="object-cover"
           />
         </div>
@@ -235,7 +235,7 @@ function UnitVisualMosaic({
   const primaryOnRight = variant % 2 === 1;
 
   return (
-    <div className={`grid aspect-[16/9] w-full gap-1 overflow-hidden rounded-lg bg-paper p-1 sm:w-44 sm:shrink-0 ${
+    <div className={`grid aspect-[16/9] w-full gap-1 overflow-hidden rounded-lg bg-paper p-1 sm:w-52 sm:shrink-0 md:w-56 ${
       primaryOnRight ? "grid-cols-[0.85fr_1.35fr]" : "grid-cols-[1.35fr_0.85fr]"
     }`}>
       {primaryOnRight ? sideTiles : primaryTile}
