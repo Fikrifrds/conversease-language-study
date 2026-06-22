@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState, type MouseEvent } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { ArrowRight, CheckCircle2, CircleDot, PlayCircle } from "lucide-react";
+import { ArrowRight, CheckCircle2, CircleDot, Loader2, PlayCircle } from "lucide-react";
 import { LoginForm } from "@/components/login-form";
 import { Modal } from "@/components/modal";
 import { versionedAssetSrc } from "@/lib/assets";
@@ -19,6 +19,8 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
   const router = useRouter();
   const [summary, setSummary] = useState<LearningProgressSummary | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isProgressLoading, setIsProgressLoading] = useState(false);
+  const [progressError, setProgressError] = useState(false);
   const [loginTarget, setLoginTarget] = useState("");
 
   useEffect(() => {
@@ -28,12 +30,16 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
 
     if (!session) {
       setSummary(null);
+      setIsProgressLoading(false);
+      setProgressError(false);
       return () => {
         ignore = true;
       };
     }
 
     async function loadProgress() {
+      setIsProgressLoading(true);
+      setProgressError(false);
       try {
         const nextSummary = await getCourseProgress(course.slug);
 
@@ -43,6 +49,11 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
       } catch {
         if (!ignore) {
           setSummary(null);
+          setProgressError(true);
+        }
+      } finally {
+        if (!ignore) {
+          setIsProgressLoading(false);
         }
       }
     }
@@ -83,9 +94,15 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
           const completedLessons = activeLessons.filter(
             (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
           ).length;
+          const inProgressLessons = activeLessons.filter(
+            (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "in_progress"
+          ).length;
           const progressPercent = activeLessons.length
             ? Math.round((completedLessons / activeLessons.length) * 100)
             : 0;
+          const progressLabel = `${completedLessons}/${activeLessons.length} selesai${
+            inProgressLessons ? ` · ${inProgressLessons} berjalan` : ""
+          }`;
 
           return (
             <section
@@ -102,15 +119,24 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                     <p className="mt-2 max-w-2xl text-sm leading-6 text-ink/70">{unit.outcome}</p>
                   </div>
                 </div>
-                {summary ? (
+                {isProgressLoading ? (
+                  <div className="inline-flex items-center gap-2 rounded-lg bg-paper px-4 py-3 text-sm font-semibold text-ink/60">
+                    <Loader2 className="h-4 w-4 animate-spin text-leaf" aria-hidden="true" />
+                    Memuat progress
+                  </div>
+                ) : summary ? (
                   <div className="w-full lg:max-w-xs">
-                    <div className="mb-2 flex justify-between text-sm">
+                    <div className="mb-2 flex justify-between gap-3 text-sm">
                       <span>Progress</span>
-                      <span>{progressPercent}%</span>
+                      <span className="text-right">{progressLabel}</span>
                     </div>
                     <div className="h-2 rounded-lg bg-ink/10">
                       <div className="h-2 rounded-lg bg-leaf" style={{ width: `${progressPercent}%` }} />
                     </div>
+                  </div>
+                ) : progressError ? (
+                  <div className="rounded-lg bg-[#fde7df] px-4 py-3 text-sm font-semibold text-ink/70">
+                    Progress belum tersambung
                   </div>
                 ) : (
                   <div className="rounded-lg bg-mint px-4 py-3 text-sm font-semibold text-ink/70">
@@ -125,7 +151,12 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                     const lessonProgress = progressBySlug.get(lesson.slug);
                     const completed = lessonProgress?.progressStatus === "completed";
                     const inProgress = lessonProgress?.progressStatus === "in_progress";
-                    const statusLabel = !summary ? "Preview" : completed ? "Selesai" : inProgress ? "Lanjutkan" : "Mulai";
+                    const statusMeta = lessonStatusMeta({
+                      isAuthenticated,
+                      hasProgress: Boolean(summary),
+                      completed,
+                      inProgress
+                    });
                     const lessonHref = `/lessons/${lesson.slug}`;
 
                     return (
@@ -140,10 +171,8 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
                             {course.level} · U{unitIndex + 1} · L{lessonIndex + 1}
                           </span>
                           <span className="flex items-center gap-2">
-                            <span className={`text-xs font-semibold uppercase ${
-                              completed ? "text-leaf" : inProgress ? "text-coral" : "text-ink/45"
-                            }`}>
-                              {statusLabel}
+                            <span className={`text-xs font-semibold uppercase ${statusMeta.textClassName}`}>
+                              {statusMeta.label}
                             </span>
                             {completed ? (
                               <CheckCircle2 className="h-4 w-4 text-leaf" aria-hidden="true" />
@@ -177,6 +206,36 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
       ) : null}
     </>
   );
+}
+
+function lessonStatusMeta({
+  isAuthenticated,
+  hasProgress,
+  completed,
+  inProgress
+}: {
+  isAuthenticated: boolean;
+  hasProgress: boolean;
+  completed: boolean;
+  inProgress: boolean;
+}) {
+  if (!isAuthenticated) {
+    return { label: "Preview", textClassName: "text-ink/45" };
+  }
+
+  if (!hasProgress) {
+    return { label: "Buka", textClassName: "text-ink/50" };
+  }
+
+  if (completed) {
+    return { label: "Selesai", textClassName: "text-leaf" };
+  }
+
+  if (inProgress) {
+    return { label: "Lanjutkan", textClassName: "text-coral" };
+  }
+
+  return { label: "Mulai", textClassName: "text-ink/45" };
 }
 
 function UnitVisualMosaic({

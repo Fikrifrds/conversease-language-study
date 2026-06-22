@@ -9,6 +9,8 @@ import { courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisual } from "@/lib/course-visuals";
 import { courses } from "@/lib/data";
 
+type Course = (typeof courses)[number];
+
 export function generateStaticParams() {
   return courses.map((course) => ({ slug: course.slug }));
 }
@@ -21,6 +23,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
   }
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
   const visual = courseHeroVisual(course);
+  const summaryItems = courseDetailSummary(course);
 
   return (
     <AppShell>
@@ -65,6 +68,14 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
                   Roleplay & audio
                 </span>
               </div>
+              <dl className="mt-5 grid gap-x-5 gap-y-3 border-t border-ink/10 pt-5 text-sm md:grid-cols-3">
+                {summaryItems.map((item) => (
+                  <div key={item.label} className="min-w-0">
+                    <dt className="text-xs font-bold uppercase text-coral">{item.label}</dt>
+                    <dd className="mt-1 leading-6 text-ink/70">{item.value}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
             {visual ? (
               <div className="relative min-h-[240px] bg-paper lg:min-h-full">
@@ -85,4 +96,33 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
       </section>
     </AppShell>
   );
+}
+
+function courseDetailSummary(course: Course) {
+  const levelSummary: Record<string, string> = {
+    A1: "Percakapan dasar yang aman untuk mulai bicara.",
+    A2: "Situasi harian dengan respons yang lebih natural.",
+    B1: "Cerita, alasan, dan solusi yang tersambung.",
+    B2: "Diskusi profesional dengan argumen dan keputusan.",
+    C1: "Komunikasi kompleks yang presisi dan fleksibel."
+  };
+  const firstThemes = course.units
+    .slice(0, 3)
+    .map((unit) => unit.title)
+    .join(" · ");
+
+  return [
+    {
+      label: "Level",
+      value: levelSummary[course.level] ?? course.outcome
+    },
+    {
+      label: "Fokus",
+      value: firstThemes
+    },
+    {
+      label: "Target",
+      value: course.language === "arabic" ? "Bahasa Arab formal bertahap." : "Percakapan English aktif bertahap."
+    }
+  ];
 }

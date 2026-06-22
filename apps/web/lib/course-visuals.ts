@@ -102,11 +102,15 @@ const UNIT_TOPIC_BASE_SETS: Array<{ pattern: RegExp; bases: SceneBase[] }> = [
     bases: ["classroom", "service", "travel"]
   },
   {
+    pattern: /social|small talk|follow-up|weekend|plan|invitation|invite|accept|declin|reschedule/i,
+    bases: ["classroom", "service", "travel"]
+  },
+  {
     pattern: /health|symptom|appointment/i,
     bases: ["health", "service", "classroom"]
   },
   {
-    pattern: /travel|transport|direction|place|checking in|ticket|departure|delay|recommendation/i,
+    pattern: /travel|transport|direction|\bplaces?\b|checking in|ticket|departure|delay|recommendation/i,
     bases: ["travel", "service", "classroom"]
   },
   {
@@ -118,19 +122,31 @@ const UNIT_TOPIC_BASE_SETS: Array<{ pattern: RegExp; bases: SceneBase[] }> = [
     bases: ["service", "travel", "workplace"]
   },
   {
+    pattern: /story|stories|past|experience|routine|time|preference|goal|progress/i,
+    bases: ["classroom", "travel", "workplace"]
+  },
+  {
+    pattern: /clear argument|nuanced|opinion|debate|analysis|media|information|listening|response|certainty|doubt|viewpoint|evidence/i,
+    bases: ["classroom", "workplace", "travel"]
+  },
+  {
+    pattern: /negotiation|compromise|client|customer|concern|option/i,
+    bases: ["service", "workplace", "travel"]
+  },
+  {
+    pattern: /presenting|presentation|presentations|present /i,
+    bases: ["classroom", "workplace", "service"]
+  },
+  {
     pattern: /work|study|meeting|professional|negotiation|presentation|leadership|stakeholder|task|feedback|argument|proposal|priority/i,
     bases: ["workplace", "classroom", "service"]
   },
   {
-    pattern: /media|information|debate|analysis|listening|response|nuanced|certainty|doubt|viewpoint|evidence/i,
-    bases: ["classroom", "workplace", "travel"]
-  },
-  {
-    pattern: /problem|help|request|solution|concern/i,
+    pattern: /problem|help|request|solution|tradeoff|cause|framing/i,
     bases: ["health", "service", "workplace"]
   },
   {
-    pattern: /community|culture|family|social|small talk|weekend|story|past|opinion|preference|goal|routine|time/i,
+    pattern: /community|culture|family|cross-cultural|local norm/i,
     bases: ["travel", "classroom", "service"]
   }
 ];

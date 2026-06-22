@@ -12,6 +12,7 @@
     "build": "npm run build --workspace apps/web",
     "lint": "npm run lint --workspace apps/web",
     "typecheck": "npm run typecheck --workspace apps/web",
+    "release:course-check": "node --no-warnings scripts/course_release_check.mjs",
     "test:api": "DATABASE_URL=sqlite:///:memory: python3 -m unittest discover -s apps/api/tests -t apps/api",
     "test:e2e": "npm run test:e2e --workspace apps/web"
   },

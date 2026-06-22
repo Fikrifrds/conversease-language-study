@@ -475,7 +475,7 @@ async function requestJson<T>(path: string, init?: RequestInit): Promise<T> {
   const token = getAuthToken();
 
   if (!token) {
-    throw new Error("Authentication required");
+    throw new ApiRequestError(401, "Authentication required");
   }
 
   const response = await fetch(`${apiBaseUrl()}${path}`, {
