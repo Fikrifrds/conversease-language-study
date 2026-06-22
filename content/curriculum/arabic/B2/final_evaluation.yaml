@@ -1,0 +1,87 @@
+level_code: B2
+title: Arabic B2 Level Conversation Test
+status: published
+description: Final readiness test for professional Arabic discussion, clear arguments, meetings, negotiation, presentations, client communication, and problem solving.
+overall_threshold: 78
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 70
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a professional Arabic discussion and identify the argument, counterpoint, compromise, and agreed action items.
+      success_criteria:
+        - Understands main argument and supporting reasons.
+        - Identifies disagreement, compromise, and next steps.
+        - Notices professional tone and priority.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 70
+    task:
+      type: roleplay_response
+      prompt: Present a position in Arabic, support it with reasons, respond to one counterpoint, and propose a practical next step.
+      success_criteria:
+        - States a clear position.
+        - Supports the point with reasons or examples.
+        - Responds respectfully to a counterpoint.
+        - Ends with a concrete recommendation or action.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 65
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read a professional Arabic passage aloud with confident pacing, clear emphasis, and smooth transitions.
+      success_criteria:
+        - Maintains intelligible pronunciation in complex sentences.
+        - Uses emphasis to highlight key points.
+        - Speaks with steady professional pacing.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 70
+    task:
+      type: phrase_selection
+      prompt: Select Arabic phrases for meetings, clarifying scope, giving constructive feedback, negotiating, summarizing decisions, and handling client concerns.
+      success_criteria:
+        - Chooses phrases suitable for professional discussion.
+        - Uses tactful language for disagreement or feedback.
+        - Explains how each phrase changes tone or clarity.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 70
+    task:
+      type: sentence_completion
+      prompt: Complete B2 Arabic sentences using conditional meaning, contrast, concession, cause and effect, and precise connectors.
+      success_criteria:
+        - Uses complex connectors accurately enough.
+        - Shows contrast or concession clearly.
+        - Keeps sentences professional and concise.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 62
+    task:
+      type: short_message_reading
+      prompt: Read a professional Arabic memo, meeting note, or client message and answer questions about purpose, priority, and implied concern.
+      success_criteria:
+        - Identifies purpose and action items.
+        - Understands priority and implied concern.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 62
+    task:
+      type: short_reply_writing
+      prompt: Write a concise professional Arabic response that states a position, gives reasons, and proposes next steps.
+      success_criteria:
+        - Writes a clear professional paragraph.
+        - Includes position, reason, and action.
+        - Uses tactful wording.

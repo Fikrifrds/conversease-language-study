@@ -46,7 +46,9 @@ class ReleaseSmokeTest(unittest.TestCase):
     def test_level_test_validator_requires_seven_sections(self):
         payload = {
             "data": {
+                "language": "english",
                 "level_code": "A1",
+                "attempt_level_code": "A1",
                 "status": "published",
                 "sections": [{"key": str(index)} for index in range(7)],
             }

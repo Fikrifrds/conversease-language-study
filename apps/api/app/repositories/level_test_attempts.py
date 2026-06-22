@@ -7,7 +7,11 @@ from uuid import uuid4
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.data.curriculum import load_final_evaluation, public_final_evaluation_payload
+from app.data.curriculum import (
+    load_final_evaluation,
+    parse_level_test_attempt_code,
+    public_final_evaluation_payload,
+)
 from app.db.models import LevelTestAttemptModel
 from app.domain.evaluation import evaluate_level_attempt
 
@@ -21,7 +25,8 @@ class LevelTestAttemptRepository:
         self.db = db
 
     def create_attempt(self, user_id: str, level_code: str) -> LevelTestAttemptModel:
-        normalized_level_code = level_code.upper()
+        evaluation = evaluation_for_level(level_code, require_published=False)
+        normalized_level_code = evaluation["attempt_level_code"]
         existing_attempt = self.db.execute(
             select(LevelTestAttemptModel)
             .where(LevelTestAttemptModel.user_id == user_id)
@@ -33,12 +38,11 @@ class LevelTestAttemptRepository:
         if existing_attempt is not None:
             return existing_attempt
 
-        evaluation = evaluation_for_level(level_code, require_published=False)
         now = datetime.utcnow()
         attempt = LevelTestAttemptModel(
             id=f"lta-{uuid4().hex[:16]}",
             user_id=user_id,
-            level_code=evaluation["level_code"],
+            level_code=normalized_level_code,
             status="in_progress",
             lesson_completion_percent=None,
             scores_json={},
@@ -222,7 +226,8 @@ class LevelTestAttemptRepository:
 
 
 def evaluation_for_level(level_code: str, *, require_published: bool = True) -> dict[str, Any]:
-    evaluation = load_final_evaluation(level_code.upper())
+    language, normalized_level_code = parse_level_test_attempt_code(level_code)
+    evaluation = load_final_evaluation(normalized_level_code, language=language)
     if evaluation is None:
         raise KeyError(level_code)
     if require_published and evaluation.get("status") != "published":

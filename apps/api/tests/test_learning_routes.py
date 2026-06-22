@@ -438,16 +438,29 @@ class LearningRoutesTest(unittest.TestCase):
         finally:
             app.dependency_overrides.clear()
 
-    def test_get_a1_level_test_returns_published_test(self):
+    def test_get_level_tests_return_published_tests_for_all_release_levels(self):
         client = TestClient(create_app())
 
-        response = client.get("/api/level-tests/A1")
+        cases = [
+            ("english", level_code, f"/api/level-tests/{level_code}", level_code)
+            for level_code in ["A1", "A2", "B1", "B2", "C1"]
+        ] + [
+            ("arabic", level_code, f"/api/level-tests/arabic/{level_code}", f"AR-{level_code}")
+            for level_code in ["A1", "A2", "B1", "B2", "C1"]
+        ]
 
-        self.assertEqual(response.status_code, 200)
-        data = response.json()["data"]
-        self.assertEqual(data["level_code"], "A1")
-        self.assertEqual(data["status"], "published")
-        self.assertEqual(sum(section["weight"] for section in data["sections"]), 100)
+        for language, level_code, path, attempt_level_code in cases:
+            with self.subTest(language=language, level_code=level_code):
+                response = client.get(path)
+
+                self.assertEqual(response.status_code, 200)
+                data = response.json()["data"]
+                self.assertEqual(data["level_code"], level_code)
+                self.assertEqual(data["language"], language)
+                self.assertEqual(data["attempt_level_code"], attempt_level_code)
+                self.assertEqual(data["status"], "published")
+                self.assertEqual(len(data["sections"]), 7)
+                self.assertEqual(sum(section["weight"] for section in data["sections"]), 100)
 
     def test_a1_level_test_preview_uses_yaml_thresholds(self):
         client = TestClient(create_app())
@@ -473,27 +486,37 @@ class LearningRoutesTest(unittest.TestCase):
         self.assertTrue(data["passed"])
         self.assertEqual(data["overall_score"], 70)
 
-    def test_planned_level_preview_is_available_for_take_test_flow(self):
+    def test_higher_level_preview_is_available_for_take_test_flow(self):
         client = TestClient(create_app())
 
-        response = client.post(
+        scores = {
+            "listening": 70,
+            "speaking_conversation": 70,
+            "pronunciation_fluency": 70,
+            "useful_phrases": 70,
+            "grammar": 70,
+            "reading": 70,
+            "writing": 70,
+        }
+        english_response = client.post(
             "/api/level-tests/A2/attempts/preview",
             json={
                 "lesson_completion_percent": 85,
-                "scores": {
-                    "listening": 70,
-                    "speaking_conversation": 70,
-                    "pronunciation_fluency": 70,
-                    "useful_phrases": 70,
-                    "grammar": 70,
-                    "reading": 70,
-                    "writing": 70,
-                },
+                "scores": scores,
+            },
+        )
+        arabic_response = client.post(
+            "/api/level-tests/arabic/A2/attempts/preview",
+            json={
+                "lesson_completion_percent": 85,
+                "scores": scores,
             },
         )
 
-        self.assertEqual(response.status_code, 200)
-        self.assertEqual(response.json()["data"]["overall_score"], 70)
+        self.assertEqual(english_response.status_code, 200)
+        self.assertEqual(arabic_response.status_code, 200)
+        self.assertEqual(english_response.json()["data"]["overall_score"], 70)
+        self.assertEqual(arabic_response.json()["data"]["overall_score"], 70)
 
     def test_authenticated_user_can_start_submit_and_read_level_test_report(self):
         engine = create_engine(

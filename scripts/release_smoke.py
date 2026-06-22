@@ -297,16 +297,36 @@ def validate_lesson(payload: dict[str, Any]) -> Optional[str]:
     return None
 
 
-def validate_level_test(payload: dict[str, Any]) -> Optional[str]:
+def validate_level_test(
+    payload: dict[str, Any],
+    expected_level: str = "A1",
+    expected_language: str = "english",
+    expected_attempt_level: Optional[str] = None,
+) -> Optional[str]:
+    expected_attempt_level = expected_attempt_level or expected_level
     test = payload.get("data", {})
-    if test.get("level_code") != "A1":
-        return "A1 level test did not load."
+    if test.get("level_code") != expected_level:
+        return f"{expected_level} level test did not load."
+    if test.get("language") != expected_language:
+        return f"{expected_language} {expected_level} level test language did not load."
+    if test.get("attempt_level_code") != expected_attempt_level:
+        return f"{expected_language} {expected_level} level test attempt code did not load."
     if test.get("status") != "published":
-        return "A1 level test is not published."
+        return f"{expected_language} {expected_level} level test is not published."
     sections = test.get("sections", [])
     if len(sections) != 7:
-        return f"A1 level test should have 7 sections, got {len(sections)}."
+        return f"{expected_language} {expected_level} level test should have 7 sections, got {len(sections)}."
     return None
+
+
+def level_test_validator(
+    expected_level: str,
+    expected_language: str = "english",
+    expected_attempt_level: str = "A1",
+):
+    return lambda payload: validate_level_test(
+        payload, expected_level, expected_language, expected_attempt_level
+    )
 
 
 def validate_plans(payload: dict[str, Any]) -> Optional[str]:
@@ -348,7 +368,24 @@ def run_smoke(api_base_url: str, web_base_url: str, admin_api_key: str = "") -> 
         api_check("api_metrics", api_base_url, "/metrics", validate_metrics),
         courses_requires_auth_check(api_base_url),
         api_check("api_starter_lesson", api_base_url, "/lessons/saying-hello-and-goodbye", validate_lesson),
-        api_check("api_a1_level_test", api_base_url, "/level-tests/A1", validate_level_test),
+        *[
+            api_check(
+                f"api_english_{level_code.lower()}_level_test",
+                api_base_url,
+                f"/level-tests/{level_code}",
+                level_test_validator(level_code, "english", level_code),
+            )
+            for level_code in ["A1", "A2", "B1", "B2", "C1"]
+        ],
+        *[
+            api_check(
+                f"api_arabic_{level_code.lower()}_level_test",
+                api_base_url,
+                f"/level-tests/arabic/{level_code}",
+                level_test_validator(level_code, "arabic", f"AR-{level_code}"),
+            )
+            for level_code in ["A1", "A2", "B1", "B2", "C1"]
+        ],
         api_check("api_plans", api_base_url, "/plans", validate_plans),
         web_check("web_home", web_base_url, "/", "Conversease"),
         web_security_headers_check(web_base_url),

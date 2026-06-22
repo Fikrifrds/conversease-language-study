@@ -6,7 +6,10 @@ type ApiResponse<T> = {
 };
 
 type ApiLevelTest = {
+  language?: string;
+  language_code?: string;
   level_code: string;
+  attempt_level_code?: string;
   title: string;
   status: string;
   description: string;
@@ -76,7 +79,10 @@ async function adminRequestJson<T>(path: string, init?: RequestInit): Promise<T>
 
 function mapLevelTest(test: ApiLevelTest): LevelTest {
   return {
+    language: test.language ?? "english",
+    languageCode: test.language_code ?? "en",
     levelCode: test.level_code,
+    attemptLevelCode: test.attempt_level_code ?? test.level_code,
     title: test.title,
     status: test.status,
     description: test.description,

@@ -4,9 +4,11 @@ from app.data.curriculum import (
     A1_COURSE,
     get_lesson_or_none,
     load_a1_final_evaluation,
+    load_final_evaluation,
     public_course_payload,
     published_lessons,
     validate_curriculum_content,
+    validate_final_evaluation,
     validate_production_tracker,
 )
 
@@ -59,6 +61,29 @@ class CurriculumContentTest(unittest.TestCase):
         for section in evaluation["sections"]:
             self.assertTrue(section["task"]["prompt"])
             self.assertTrue(section["task"]["success_criteria"])
+
+    def test_all_language_level_tests_are_release_ready(self):
+        expected_sections = {
+            "listening",
+            "speaking_conversation",
+            "pronunciation_fluency",
+            "useful_phrases",
+            "grammar",
+            "reading",
+            "writing",
+        }
+
+        for language in ["english", "arabic"]:
+            for level_code in ["A1", "A2", "B1", "B2", "C1"]:
+                with self.subTest(language=language, level_code=level_code):
+                    evaluation = load_final_evaluation(level_code, language=language)
+
+                    self.assertIsNotNone(evaluation)
+                    self.assertEqual(validate_final_evaluation(evaluation, level_code), [])
+                    self.assertEqual(evaluation["language"], language)
+                    self.assertEqual(evaluation["status"], "published")
+                    self.assertEqual(sum(section["weight"] for section in evaluation["sections"]), 100)
+                    self.assertEqual({section["key"] for section in evaluation["sections"]}, expected_sections)
 
     def test_public_course_payload_does_not_expose_local_file_paths(self):
         payload = public_course_payload()

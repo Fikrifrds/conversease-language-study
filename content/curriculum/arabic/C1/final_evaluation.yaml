@@ -1,0 +1,87 @@
+level_code: C1
+title: Arabic C1 Level Conversation Test
+status: published
+description: Final readiness test for advanced Arabic fluency, nuanced opinions, strategic workplace communication, complex presentations, debate, leadership, and cross-cultural professionalism.
+overall_threshold: 82
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 75
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a nuanced Arabic discussion and identify the underlying position, implied attitude, strategic framing, and unresolved tension.
+      success_criteria:
+        - Understands explicit and implied meaning.
+        - Identifies nuance, stance, and strategic intent.
+        - Notices soft disagreement, caution, or emphasis.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 75
+    task:
+      type: roleplay_response
+      prompt: Give a nuanced Arabic response to a complex professional or cultural issue, balance two viewpoints, and guide the conversation toward a decision.
+      success_criteria:
+        - Expresses a nuanced position with precision.
+        - Balances competing viewpoints fairly.
+        - Manages disagreement diplomatically.
+        - Guides the listener toward a clear next step.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 70
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read an advanced Arabic passage aloud with controlled rhythm, emphasis, pausing, and persuasive delivery.
+      success_criteria:
+        - Maintains clarity through long sentences.
+        - Uses pausing and emphasis to support meaning.
+        - Sounds fluent and controlled.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 75
+    task:
+      type: phrase_selection
+      prompt: Select Arabic phrases for nuanced disagreement, expectation management, risk communication, persuasive framing, debate, and cross-cultural sensitivity.
+      success_criteria:
+        - Chooses high-precision phrases for complex contexts.
+        - Matches phrase tone to professional stakes.
+        - Explains subtle differences in meaning or register.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 75
+    task:
+      type: sentence_completion
+      prompt: Complete C1 Arabic sentences using nuanced modality, concession, emphasis, hypotheticals, and cohesive discourse markers.
+      success_criteria:
+        - Uses advanced structures to express nuance.
+        - Keeps meaning precise under complexity.
+        - Connects ideas elegantly and coherently.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 65
+    task:
+      type: short_message_reading
+      prompt: Read an advanced Arabic professional brief or opinion excerpt and answer questions about argument, implication, tone, and recommended action.
+      success_criteria:
+        - Identifies argument structure and implied stance.
+        - Understands tone and recommendation.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 65
+    task:
+      type: short_reply_writing
+      prompt: Write an advanced Arabic response that balances viewpoints, manages tone, and recommends a strategic next step.
+      success_criteria:
+        - Writes a coherent advanced response.
+        - Shows nuance and diplomatic control.
+        - Gives a clear strategic recommendation.

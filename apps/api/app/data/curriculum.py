@@ -15,6 +15,8 @@ LEVEL_NAME = "A1 - Start Simple Conversations"
 LANGUAGE_CODE = "en"
 SUPPORTED_LEVEL_CODES = ("A1", "A2", "B1", "B2", "C1")
 SUPPORTED_LANGUAGE_ORDER = ("english", "arabic")
+LANGUAGE_CODES = {"english": "en", "arabic": "ar"}
+LEVEL_TEST_LANGUAGE_PREFIXES = {"arabic": "AR"}
 # Levels free to all users; everything else requires a Pro subscription.
 FREE_LEVEL_CODES = ("A1",)
 
@@ -134,6 +136,31 @@ def production_tracker_path() -> Path:
 
 def level_root(*, language: str = "english", level_code: str) -> Path:
     return curriculum_root() / language / level_code
+
+
+def normalize_language(language: str = "english") -> str:
+    normalized = (language or "english").strip().lower()
+    if normalized in {"en", "eng"}:
+        return "english"
+    if normalized in {"ar", "ara"}:
+        return "arabic"
+    return normalized
+
+
+def level_test_attempt_code(*, language: str = "english", level_code: str) -> str:
+    normalized_language = normalize_language(language)
+    normalized_level = level_code.upper()
+    prefix = LEVEL_TEST_LANGUAGE_PREFIXES.get(normalized_language)
+    return f"{prefix}-{normalized_level}" if prefix else normalized_level
+
+
+def parse_level_test_attempt_code(level_code: str) -> tuple[str, str]:
+    normalized = level_code.upper()
+    for language, prefix in LEVEL_TEST_LANGUAGE_PREFIXES.items():
+        marker = f"{prefix}-"
+        if normalized.startswith(marker):
+            return language, normalized[len(marker):]
+    return "english", normalized
 
 
 def a1_root() -> Path:
@@ -291,14 +318,24 @@ def read_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-@lru_cache(maxsize=8)
-def load_final_evaluation(level_code: str = LEVEL_CODE) -> Optional[dict[str, Any]]:
-    path = level_root(language="english", level_code=level_code) / "final_evaluation.yaml"
+@lru_cache(maxsize=16)
+def load_final_evaluation(
+    level_code: str = LEVEL_CODE, *, language: str = "english"
+) -> Optional[dict[str, Any]]:
+    normalized_language = normalize_language(language)
+    normalized_level = level_code.upper()
+    path = level_root(language=normalized_language, level_code=normalized_level) / "final_evaluation.yaml"
     if not path.exists():
         return None
     data = read_yaml(path)
     return {
         **data,
+        "language": normalized_language,
+        "language_code": data.get("language_code") or LANGUAGE_CODES.get(normalized_language, ""),
+        "level_code": data.get("level_code") or normalized_level,
+        "attempt_level_code": level_test_attempt_code(
+            language=normalized_language, level_code=normalized_level
+        ),
         "sections": data.get("sections", []),
         "critical_skills": data.get("critical_skills", []),
     }
@@ -347,7 +384,10 @@ def public_lesson_payload(lesson: dict[str, Any]) -> dict[str, Any]:
 def public_final_evaluation_payload(evaluation: Optional[dict[str, Any]] = None) -> dict[str, Any]:
     source = evaluation or load_a1_final_evaluation()
     return {
+        "language": source.get("language", "english"),
+        "language_code": source.get("language_code", LANGUAGE_CODE),
         "level_code": source["level_code"],
+        "attempt_level_code": source.get("attempt_level_code", source["level_code"]),
         "title": source["title"],
         "status": source["status"],
         "description": source.get("description", ""),
@@ -383,20 +423,17 @@ def validate_curriculum_content() -> list[str]:
     issues: list[str] = []
     seen_slugs: set[str] = set()
 
-    # Content structure is validated for every authored course, including
-    # Arabic. The legacy level-test files are still English-level scoped, so
-    # final evaluation validation remains limited to English until tests become
-    # language-scoped.
+    # Content structure and final evaluations are validated for every authored
+    # course, including language-scoped level tests.
     for course in all_authored_courses():
         language = str(course.get("language") or "english")
         level_code = course["level_code"]
         is_production_level = language == "english" and level_code == LEVEL_CODE
-        if language == "english":
-            evaluation = load_final_evaluation(level_code)
-            if evaluation is None:
-                issues.append(f"Missing final evaluation file for level: {level_code}")
-            else:
-                issues.extend(validate_final_evaluation(evaluation, level_code))
+        evaluation = load_final_evaluation(level_code, language=language)
+        if evaluation is None:
+            issues.append(f"Missing final evaluation file for {language} level: {level_code}")
+        else:
+            issues.extend(validate_final_evaluation(evaluation, level_code))
 
         for unit in course["units"]:
             if is_production_level and unit.get("status") != "published":
@@ -505,10 +542,8 @@ def validate_final_evaluation(
     if evaluation.get("level_code") != expected_level_code:
         issues.append(f"Final evaluation level_code must be {expected_level_code}")
 
-    # Only the production level (A1) must be published; higher levels may be
-    # authored but still "planned".
-    if expected_level_code == LEVEL_CODE and evaluation.get("status") != "published":
-        issues.append("Final evaluation must be published")
+    if evaluation.get("status") != "published":
+        issues.append(f"Final evaluation must be published for {expected_level_code}")
 
     overall_threshold = int(evaluation.get("overall_threshold", 0))
     if overall_threshold < 1 or overall_threshold > 100:

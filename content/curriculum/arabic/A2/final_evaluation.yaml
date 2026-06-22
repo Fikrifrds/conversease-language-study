@@ -1,0 +1,87 @@
+level_code: A2
+title: Arabic A2 Level Conversation Test
+status: published
+description: Final readiness test for everyday Arabic conversations, follow-up questions, plans, invitations, transport, services, health, past experiences, and simple opinions.
+overall_threshold: 72
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 65
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a short everyday Arabic conversation and identify the plan, time or place detail, follow-up question, and polite closing.
+      success_criteria:
+        - Understands the main topic of an everyday Arabic exchange.
+        - Identifies one key detail such as time, place, price, or service.
+        - Recognizes a follow-up question and natural closing.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 65
+    task:
+      type: roleplay_response
+      prompt: Keep a short Arabic conversation going by asking one follow-up question, reacting politely, and confirming a simple plan.
+      success_criteria:
+        - Responds on topic and asks a relevant follow-up question.
+        - Confirms time, place, or preference when needed.
+        - Uses polite reactions and short reasons.
+        - Closes naturally.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 60
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read five A2 Arabic phrases aloud with clear stress, connected phrasing, and question intonation.
+      success_criteria:
+        - Pronounces key words clearly enough to understand.
+        - Uses steady pacing without long pauses.
+        - Makes simple questions sound natural.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 65
+    task:
+      type: phrase_selection
+      prompt: Select suitable Arabic phrases for invitations, accepting or declining, asking directions, explaining a simple problem, and giving a short opinion.
+      success_criteria:
+        - Chooses context-appropriate A2 phrases.
+        - Avoids phrases that are too formal, too advanced, or off topic.
+        - Can explain the Indonesian meaning clearly.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 65
+    task:
+      type: sentence_completion
+      prompt: Complete short Arabic sentences using simple past, future or plan forms, possessive phrases, and basic connectors.
+      success_criteria:
+        - Uses simple tense and plan patterns understandably.
+        - Uses basic connectors such as because, then, and but.
+        - Keeps sentences natural for conversation.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 58
+    task:
+      type: short_message_reading
+      prompt: Read a short Arabic message about plans, transport, shopping, or health and answer simple comprehension questions.
+      success_criteria:
+        - Finds time, place, activity, or request details.
+        - Understands the main intention of the message.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 58
+    task:
+      type: short_reply_writing
+      prompt: Write a short Arabic reply with a plan, simple reason, and polite closing.
+      success_criteria:
+        - Writes 3 to 5 clear A2 sentences.
+        - Includes time or plan details.
+        - Uses one simple reason and a polite closing.

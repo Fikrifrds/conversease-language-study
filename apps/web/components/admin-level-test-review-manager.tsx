@@ -10,6 +10,10 @@ import {
 import type { LevelTestAttempt } from "@/lib/learning-api";
 import type { AuthUser } from "@/lib/auth-api";
 
+const levelFilterOptions = [
+  ...CEFR_LEVELS.map((level) => ({ label: `English ${level}`, value: level })),
+  ...CEFR_LEVELS.map((level) => ({ label: `Arabic ${level}`, value: `AR-${level}` }))
+];
 const reviewerStorageKey = "conversease.level_test_reviewer";
 const statusOptions = [
   { label: "Submitted", value: "submitted" },
@@ -40,6 +44,13 @@ function statusTone(status: string) {
     return "bg-[#e8f0ff] text-[#1f3f91]";
   }
   return "bg-paper text-ink/70";
+}
+
+function levelLabel(levelCode: string) {
+  if (levelCode.startsWith("AR-")) {
+    return `Arabic ${levelCode.slice(3)}`;
+  }
+  return `English ${levelCode}`;
 }
 
 export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser }) {
@@ -177,7 +188,7 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
             </div>
             <div>
               <p className="text-sm font-semibold uppercase text-leaf">Admin Review</p>
-              <h1 className="mt-1 text-2xl font-semibold">{levelCode} Test Attempts</h1>
+              <h1 className="mt-1 text-2xl font-semibold">{levelLabel(levelCode)} Test Attempts</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
                 Review attempt per level dan simpan skor official user.
               </p>
@@ -195,9 +206,9 @@ export function AdminLevelTestReviewManager({ adminUser }: { adminUser: AuthUser
                 onChange={(event) => setLevelCode(event.target.value)}
                 className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
               >
-                {CEFR_LEVELS.map((level) => (
-                  <option key={level} value={level}>
-                    {level}
+                {levelFilterOptions.map((level) => (
+                  <option key={level.value} value={level.value}>
+                    {level.label}
                   </option>
                 ))}
               </select>

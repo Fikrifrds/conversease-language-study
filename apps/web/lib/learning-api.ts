@@ -122,7 +122,10 @@ export type LevelTestSection = {
 };
 
 export type LevelTest = {
+  language: string;
+  languageCode: string;
   levelCode: string;
+  attemptLevelCode: string;
   title: string;
   status: string;
   description: string;
@@ -343,7 +346,10 @@ type ApiLevelTestSection = {
 };
 
 type ApiLevelTest = {
+  language?: string;
+  language_code?: string;
   level_code: string;
+  attempt_level_code?: string;
   title: string;
   status: string;
   description: string;
@@ -565,7 +571,10 @@ function mapLessonAudioAsset(asset: ApiLearningLessonAudioAsset): LearningLesson
 
 function mapLevelTest(test: ApiLevelTest): LevelTest {
   return {
+    language: test.language ?? "english",
+    languageCode: test.language_code ?? "en",
     levelCode: test.level_code,
+    attemptLevelCode: test.attempt_level_code ?? test.level_code,
     title: test.title,
     status: test.status,
     description: test.description,
@@ -892,18 +901,27 @@ export async function completeLessonProgress(
   return mapLessonProgress(response.data);
 }
 
-export async function getLevelTest(levelCode: string): Promise<LevelTest> {
-  const response = await requestJson<ApiResponse<ApiLevelTest>>(`/level-tests/${levelCode}`);
+function levelTestApiPath(levelCode: string, language = "english") {
+  const normalizedLanguage = language.toLowerCase();
+  if (normalizedLanguage === "english" || normalizedLanguage === "en") {
+    return `/level-tests/${levelCode.toUpperCase()}`;
+  }
+  return `/level-tests/${encodeURIComponent(normalizedLanguage)}/${levelCode.toUpperCase()}`;
+}
+
+export async function getLevelTest(levelCode: string, language = "english"): Promise<LevelTest> {
+  const response = await requestJson<ApiResponse<ApiLevelTest>>(levelTestApiPath(levelCode, language));
   return mapLevelTest(response.data);
 }
 
 export async function previewLevelTestAttempt(input: {
   levelCode: string;
+  language?: string;
   lessonCompletionPercent: number;
   scores: Record<string, number>;
 }): Promise<LevelTestPreviewResult> {
   const response = await requestJson<ApiResponse<ApiLevelTestPreviewResult>>(
-    `/level-tests/${input.levelCode}/attempts/preview`,
+    `${levelTestApiPath(input.levelCode, input.language)}/attempts/preview`,
     {
       method: "POST",
       body: JSON.stringify({
@@ -928,9 +946,9 @@ export async function listMyLevelTestAttempts(levelCode: string): Promise<LevelT
   return response.data.map(mapLevelTestAttempt);
 }
 
-export async function startLevelTestAttempt(levelCode: string): Promise<LevelTestAttempt> {
+export async function startLevelTestAttempt(levelCode: string, language = "english"): Promise<LevelTestAttempt> {
   const response = await requestJson<ApiResponse<ApiLevelTestAttempt>>(
-    `/level-tests/${levelCode}/attempts`,
+    `${levelTestApiPath(levelCode, language)}/attempts`,
     { method: "POST" }
   );
   return mapLevelTestAttempt(response.data);

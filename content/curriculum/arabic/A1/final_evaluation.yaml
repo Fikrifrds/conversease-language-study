@@ -1,0 +1,87 @@
+level_code: A1
+title: Arabic A1 Level Conversation Test
+status: published
+description: Final readiness test for formal Arabic greetings, introductions, study instructions, spelling, numbers, time, places, shopping, and polite help requests.
+overall_threshold: 70
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 60
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a short formal Arabic classroom conversation and identify the greeting, name, origin, and request for repetition.
+      success_criteria:
+        - Understands the main purpose of a short formal Arabic exchange.
+        - Identifies simple personal details such as name, origin, number, or time.
+        - Recognizes polite phrases for repetition and thanks.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 60
+    task:
+      type: roleplay_response
+      prompt: Complete a short Arabic introduction using greetings, name, origin, and one polite clarification phrase.
+      success_criteria:
+        - Starts and closes with an appropriate formal greeting.
+        - Gives name and origin clearly.
+        - Uses a polite request when something is not understood.
+        - Keeps the exchange simple and complete.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 55
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read five A1 Arabic phrases aloud with clear long vowels, short vowels, and steady pacing.
+      success_criteria:
+        - Pronounces familiar sounds clearly enough to understand.
+        - Keeps a slow but steady rhythm.
+        - Reads short phrases without skipping key words.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 60
+    task:
+      type: phrase_selection
+      prompt: Select suitable Arabic phrases for greeting, introducing yourself, asking for repetition, thanking, and saying you do not understand.
+      success_criteria:
+        - Chooses phrases that match the situation.
+        - Understands the Indonesian meaning of each phrase.
+        - Avoids informal or unrelated phrases in a formal A1 context.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 60
+    task:
+      type: sentence_completion
+      prompt: Complete short Arabic sentences using simple pronouns, name/origin patterns, numbers, and basic question words.
+      success_criteria:
+        - Uses simple identity and origin patterns accurately.
+        - Places basic question words naturally.
+        - Keeps sentences short and understandable.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 55
+    task:
+      type: short_message_reading
+      prompt: Read a short Arabic classroom note and answer simple questions about name, time, place, or contact detail.
+      success_criteria:
+        - Finds the main detail in a short text.
+        - Recognizes familiar A1 words and numbers.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 55
+    task:
+      type: short_reply_writing
+      prompt: Write a short formal Arabic self-introduction with greeting, name, origin, and thanks.
+      success_criteria:
+        - Writes 3 to 5 simple Arabic sentences.
+        - Includes greeting, name, origin, and closing.
+        - Uses familiar vocabulary from A1 lessons.

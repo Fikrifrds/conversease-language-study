@@ -58,7 +58,19 @@ class LevelTestAttemptRepositoryTest(unittest.TestCase):
 
             self.assertEqual(first_attempt.id, second_attempt.id)
 
-    def test_can_save_draft_for_planned_level_attempt(self):
+    def test_language_scoped_attempts_do_not_collide(self):
+        with self.SessionLocal() as db:
+            repository = LevelTestAttemptRepository(db)
+
+            english_attempt = repository.create_attempt(user_id="user-123", level_code="A1")
+            arabic_attempt = repository.create_attempt(user_id="user-123", level_code="AR-A1")
+
+            self.assertNotEqual(english_attempt.id, arabic_attempt.id)
+            self.assertEqual(english_attempt.level_code, "A1")
+            self.assertEqual(arabic_attempt.level_code, "AR-A1")
+            self.assertEqual(arabic_attempt.evaluation_snapshot_json["language"], "arabic")
+
+    def test_can_save_draft_for_higher_level_attempt(self):
         with self.SessionLocal() as db:
             repository = LevelTestAttemptRepository(db)
 

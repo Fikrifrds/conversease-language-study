@@ -295,12 +295,28 @@ async def get_lesson_audio(
     return {"data": lesson_audio_asset(lesson_dir)}
 
 
-@router.get("/level-tests/{level_code}")
-async def get_level_test(level_code: str) -> dict:
-    evaluation = load_final_evaluation(level_code.upper())
+def level_test_payload_or_404(*, language: str, level_code: str) -> dict:
+    evaluation = load_final_evaluation(level_code.upper(), language=language)
     if evaluation is None:
         raise HTTPException(status_code=404, detail="Level test not found")
     return {"data": public_final_evaluation_payload(evaluation)}
+
+
+def level_test_attempt_code_or_404(*, language: str, level_code: str) -> str:
+    evaluation = load_final_evaluation(level_code.upper(), language=language)
+    if evaluation is None:
+        raise HTTPException(status_code=404, detail="Level test not found")
+    return str(evaluation["attempt_level_code"])
+
+
+@router.get("/level-tests/{level_code}")
+async def get_level_test(level_code: str) -> dict:
+    return level_test_payload_or_404(language="english", level_code=level_code)
+
+
+@router.get("/level-tests/{language}/{level_code}")
+async def get_language_level_test(language: str, level_code: str) -> dict:
+    return level_test_payload_or_404(language=language, level_code=level_code)
 
 
 @router.get("/me/onboarding")
@@ -531,10 +547,34 @@ async def start_level_test_attempt(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
+    return start_level_test_attempt_for(
+        attempt_code=level_test_attempt_code_or_404(language="english", level_code=level_code),
+        current_user=current_user,
+        db=db,
+    )
+
+
+@router.post("/level-tests/{language}/{level_code}/attempts")
+async def start_language_level_test_attempt(
+    language: str,
+    level_code: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    return start_level_test_attempt_for(
+        attempt_code=level_test_attempt_code_or_404(language=language, level_code=level_code),
+        current_user=current_user,
+        db=db,
+    )
+
+
+def start_level_test_attempt_for(
+    *, attempt_code: str, current_user: User, db: Session
+) -> dict:
     try:
         attempt = LevelTestAttemptRepository(db).create_attempt(
             user_id=current_user.id,
-            level_code=level_code,
+            level_code=attempt_code,
         )
     except KeyError as exc:
         raise HTTPException(status_code=404, detail="Level test not found") from exc
@@ -609,7 +649,16 @@ async def get_level_test_attempt_report(
 
 @router.post("/level-tests/{level_code}/attempts/preview")
 async def preview_level_attempt(level_code: str, payload: dict) -> dict:
-    evaluation = load_final_evaluation(level_code.upper())
+    return preview_level_attempt_for(language="english", level_code=level_code, payload=payload)
+
+
+@router.post("/level-tests/{language}/{level_code}/attempts/preview")
+async def preview_language_level_attempt(language: str, level_code: str, payload: dict) -> dict:
+    return preview_level_attempt_for(language=language, level_code=level_code, payload=payload)
+
+
+def preview_level_attempt_for(*, language: str, level_code: str, payload: dict) -> dict:
+    evaluation = load_final_evaluation(level_code.upper(), language=language)
     if evaluation is None:
         raise HTTPException(status_code=404, detail="Level test not found")
     scores = sanitize_scores(payload.get("scores", {}), evaluation)

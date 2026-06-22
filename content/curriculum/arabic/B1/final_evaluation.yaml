@@ -1,0 +1,87 @@
+level_code: B1
+title: Arabic B1 Level Conversation Test
+status: published
+description: Final readiness test for connected Arabic conversation, including personal stories, workplace updates, problems and solutions, travel, opinions, community topics, and culture.
+overall_threshold: 75
+lesson_completion_required_percent: 80
+critical_skills:
+  - speaking_conversation
+  - listening
+sections:
+  - key: listening
+    title: Listening
+    weight: 25
+    minimum_score: 68
+    task:
+      type: dialogue_understanding
+      prompt: Listen to a connected Arabic conversation and identify the main problem, key reason, speaker attitude, and final decision.
+      success_criteria:
+        - Understands the main point and supporting details.
+        - Identifies sequence, reason, and decision.
+        - Recognizes polite disagreement or advice.
+  - key: speaking_conversation
+    title: Speaking / Conversation Response
+    weight: 30
+    minimum_score: 68
+    task:
+      type: roleplay_response
+      prompt: Tell a short Arabic story or explain a practical problem, then respond to one follow-up question with a reason.
+      success_criteria:
+        - Connects ideas with time order and reason.
+        - Gives enough detail for the listener to follow.
+        - Responds to follow-up questions naturally.
+        - Uses polite phrases for suggestions or decisions.
+  - key: pronunciation_fluency
+    title: Pronunciation and Fluency
+    weight: 15
+    minimum_score: 62
+    task:
+      type: repeat_and_read_aloud
+      prompt: Read a connected B1 Arabic paragraph aloud with clear phrasing, sentence stress, and manageable speed.
+      success_criteria:
+        - Groups phrases naturally.
+        - Keeps pronunciation clear in longer sentences.
+        - Recovers smoothly from hesitation.
+  - key: useful_phrases
+    title: Useful Phrases
+    weight: 10
+    minimum_score: 68
+    task:
+      type: phrase_selection
+      prompt: Select Arabic phrases for telling a story, giving an update, suggesting a solution, giving advice, and expressing an opinion with a reason.
+      success_criteria:
+        - Chooses phrases that support connected speech.
+        - Uses appropriate politeness for the context.
+        - Explains why each phrase fits.
+  - key: grammar
+    title: Grammar for Conversation
+    weight: 10
+    minimum_score: 68
+    task:
+      type: sentence_completion
+      prompt: Complete B1 Arabic sentences using sequence markers, reasons, comparisons, and opinion structures.
+      success_criteria:
+        - Connects events clearly.
+        - Uses reason and comparison patterns accurately enough.
+        - Keeps grammar supportive of communication.
+  - key: reading
+    title: Reading
+    weight: 5
+    minimum_score: 60
+    task:
+      type: short_message_reading
+      prompt: Read a short Arabic email, travel note, community post, or workplace update and answer detail and inference questions.
+      success_criteria:
+        - Identifies main point and important details.
+        - Understands a simple implied reason or preference.
+  - key: writing
+    title: Writing
+    weight: 5
+    minimum_score: 60
+    task:
+      type: short_reply_writing
+      prompt: Write a connected Arabic reply explaining a situation, giving a reason, and suggesting next steps.
+      success_criteria:
+        - Writes one coherent short paragraph.
+        - Includes reason and next action.
+        - Uses B1 connectors naturally.

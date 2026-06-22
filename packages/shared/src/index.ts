@@ -1,4 +1,5 @@
 export const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"] as const;
+export const COURSE_LANGUAGES = ["english", "arabic"] as const;
 
 export const skillLabels = {
   speaking_conversation: "Speaking",
@@ -23,8 +24,12 @@ export const productRoutes = {
   levelTestA1: "/level-test/A1"
 } as const;
 
-export function levelTestRoute(levelCode: string) {
-  return `/level-test/${levelCode.toUpperCase()}`;
+export function levelTestRoute(levelCode: string, language = "english") {
+  const normalizedLanguage = language.toLowerCase();
+  if (normalizedLanguage === "english" || normalizedLanguage === "en") {
+    return `/level-test/${levelCode.toUpperCase()}`;
+  }
+  return `/level-test/${normalizedLanguage}/${levelCode.toUpperCase()}`;
 }
 
 export const a1Thresholds = {

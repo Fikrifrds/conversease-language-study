@@ -42,7 +42,13 @@ const initialScores: Record<string, number> = {
   writing: 70
 };
 
-export function LevelTestPanel({ levelCode }: { levelCode: string }) {
+export function LevelTestPanel({
+  levelCode,
+  language = "english"
+}: {
+  levelCode: string;
+  language?: string;
+}) {
   const [test, setTest] = useState<LevelTest | null>(null);
   const [scores, setScores] = useState(initialScores);
   const [responses, setResponses] = useState<SectionResponseMap>({});
@@ -67,8 +73,8 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
       setStatusMessage("");
       setIsLoading(true);
       try {
-        const nextTest = await getLevelTest(levelCode);
-        const attempts = await listMyLevelTestAttempts(nextTest.levelCode);
+        const nextTest = await getLevelTest(levelCode, language);
+        const attempts = await listMyLevelTestAttempts(nextTest.attemptLevelCode);
         const nextAttempt = attempts[0] ?? null;
 
         if (ignore) {
@@ -101,7 +107,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
     return () => {
       ignore = true;
     };
-  }, [levelCode]);
+  }, [language, levelCode]);
 
   const totalWeight = useMemo(
     () => test?.sections.reduce((total, section) => total + section.weight, 0) ?? 0,
@@ -132,6 +138,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
       setPreview(
         await previewLevelTestAttempt({
           levelCode: test.levelCode,
+          language: test.language,
           lessonCompletionPercent,
           scores
         })
@@ -158,7 +165,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
 
     setIsStarting(true);
     try {
-      const attempt = await startLevelTestAttempt(test.levelCode);
+      const attempt = await startLevelTestAttempt(test.levelCode, test.language);
       setSavedAttempt(attempt);
       setScores(buildInitialScores(test, attempt));
       setResponses(buildInitialResponses(test, attempt));
@@ -188,7 +195,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
       const activeAttempt =
         savedAttempt?.status === "in_progress"
           ? savedAttempt
-          : await startLevelTestAttempt(test.levelCode);
+          : await startLevelTestAttempt(test.levelCode, test.language);
       const updatedAttempt = await saveLevelTestDraft({
         attemptId: activeAttempt.id,
         lessonCompletionPercent,
@@ -237,7 +244,7 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
       const activeAttempt =
         savedAttempt?.status === "in_progress"
           ? savedAttempt
-          : await startLevelTestAttempt(test.levelCode);
+          : await startLevelTestAttempt(test.levelCode, test.language);
       const submitted = await submitLevelTestAttempt({
         attemptId: activeAttempt.id,
         lessonCompletionPercent,
@@ -300,7 +307,9 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
         <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <p className="text-sm font-semibold uppercase text-leaf">{test.levelCode} Final Test</p>
+              <p className="text-sm font-semibold uppercase text-leaf">
+                {languageLabel(test.language)} {test.levelCode} Final Test
+              </p>
               <h1 className="mt-2 text-3xl font-semibold">{test.title}</h1>
               <p className="mt-3 max-w-3xl leading-7 text-ink/70">{test.description}</p>
             </div>
@@ -650,8 +659,8 @@ export function LevelTestPanel({ levelCode }: { levelCode: string }) {
             <h2 className="mt-1 text-3xl font-semibold">{preview.overallScore}</h2>
             <p className="mt-2 text-sm text-ink/70">
               {preview.passed
-                ? `Siap untuk level test ${test.levelCode}.`
-                : `Perlu review lagi sebelum kirim level test ${test.levelCode}.`}
+                ? `Siap untuk level test ${languageLabel(test.language)} ${test.levelCode}.`
+                : `Perlu review lagi sebelum kirim level test ${languageLabel(test.language)} ${test.levelCode}.`}
             </p>
             {preview.missingRequirements.length ? (
               <div className="mt-4 space-y-2 text-sm text-ink/70">
@@ -794,6 +803,10 @@ function formatStatus(status: string) {
     return "Draft";
   }
   return status;
+}
+
+function languageLabel(language: string) {
+  return language === "arabic" ? "Arabic" : "English";
 }
 
 function badgeClassName(status: string) {
