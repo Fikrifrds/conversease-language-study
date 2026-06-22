@@ -1,10 +1,10 @@
 # Setting Direction
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk setting direction clearly dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan.
+Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan. Fokus lesson ini adalah setting direction clearly, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

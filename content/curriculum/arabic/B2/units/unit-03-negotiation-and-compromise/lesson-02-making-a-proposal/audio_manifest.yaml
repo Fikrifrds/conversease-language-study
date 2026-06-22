@@ -1,24 +1,6 @@
 lesson_key: lesson-02-making-a-proposal
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-3nav5pHC1EYvWOd5LmnA-20260618T054855Z.wav
-  duration_seconds: 38.34
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Omar: OoE8swS3hImZANNOodf6
-  line_count: 8
-  script_content_hash: d24708b97cc65d46fc186d34a173c57c9c3b0e8c2d7ab6649776d49af57cde13
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-3nav5pHC1EYvWOd5LmnA-20260618T054855Z.wav
-  trace_id: 2G8MTNACz8VUeHbzf6PU,DeFGB6Qk8iq5kooGQxsU,ulnk7QjZ6DWNplDQjnVs,FYD71o6nfgfCYc6Y3CTT,E7NWAEe1tO9bLINKFNvE,1PzwGjtxUsUVmwQXlMGs,G00UMjutcP1H5KtPOanN,ki7S0rhjNG8ICwF8jmlL
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:48:55.147879+00:00'
+assets: []

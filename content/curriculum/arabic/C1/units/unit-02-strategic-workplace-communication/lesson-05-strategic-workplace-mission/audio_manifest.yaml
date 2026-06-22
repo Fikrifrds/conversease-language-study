@@ -1,24 +1,6 @@
 lesson_key: lesson-05-strategic-workplace-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060051Z.wav
-  duration_seconds: 60.1
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 19d6d2f130046b70973f455acdaee6266d061c40eb46c072e2d2bf268da93463
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060051Z.wav
-  trace_id: AcElV5f46eTGlZ9WpSwB,eSxwrlRbkpvjLS6xRfwP,ebeN8QfFPDGdd1XGqcc5,u1FY4lbvFLuqc7h9CbXc,oR6ZTGRKOGlKhXkZsgkR,JLGqqWRDvNLZBVWCYTTA,kHgJUgT0TNc5fbbLtZgv,I1twfErOAudLe9ZoMQxZ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:00:51.481621+00:00'
+assets: []

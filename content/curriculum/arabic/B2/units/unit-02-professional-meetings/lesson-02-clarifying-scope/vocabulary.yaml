@@ -1,33 +1,30 @@
 vocabulary:
-- word: أُرِيدُ
-  meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ."'
-- word: تَوْضِيحٌ
-  meaning_id: klarifikasi/penjelasan
-  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أُرِيدُ أَنْ
-    أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ."'
 - word: نِطَاقٌ
   meaning_id: cakupan
-  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ."'
-- word: نِقَاشٌ
-  meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ."'
+  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا."'
+- word: الصَّفْحَةُ
+  meaning_id: halaman
+  usage_note: 'Dipakai untuk arti "halaman". Contoh: "نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ
+    التَّقَارِيرَ."'
+- word: مَوْعِدٌ
+  meaning_id: janji temu
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ
+    الْمَخَاطِرَ."'
+- word: مَخَاطِرُ
+  meaning_id: risiko
+  usage_note: 'Dipakai untuk arti "risiko". Contoh: "هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ
+    الْمَخَاطِرَ."'
+- word: اِجْتِمَاعٌ
+  meaning_id: rapat/pertemuan
+  usage_note: 'Dipakai untuk arti "rapat/pertemuan". Contoh: "سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ
+    بَعْدَ الِاجْتِمَاعِ."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: عِنْدِي
-  meaning_id: saya punya
-  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: مُلَاحَظَةٌ
-  meaning_id: catatan/masukan
-  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "عِنْدِي مُلَاحَظَةٌ
-    بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: بَنَّاءَةٌ
-  meaning_id: konstruktif
-  usage_note: 'Dipakai untuk arti "konstruktif". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟"'
+- word: أُرِيدُ
+  meaning_id: saya ingin
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "لَيْسَ تَمَامًا. أُرِيدُ أَنْ نُحَدِّدَ مَا يَدْخُلُ
+    فِي الْمَرْحَلَةِ الأُولَى."'
+- word: سَبَبٌ
+  meaning_id: alasan
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "وَمَا السَّبَبُ؟"'

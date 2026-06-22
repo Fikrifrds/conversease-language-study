@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ. -> Poin apa yang ingin kamu bahas? Saya ingin fokus pada memberi masukan konstruktif.
-- **Noura:** أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ. -> Saya ingin mulai dengan poin tentang memberi masukan konstruktif.
-- **Maryam:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
-- **Noura:** هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Apakah cakupan diskusi jelas untuk semua orang? Saya punya masukan konstruktif untuk usulan ini.
-- **Maryam:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?
-- **Noura:** الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- **Maryam:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟ -> Jadi apa rekomendasi akhirnya?
-- **Noura:** سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- **Maryam:** رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟ -> Saya sudah melihat draft proposal. Apa komentar pertamamu?
+- **Noura:** الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
+- **Maryam:** كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟ -> Bagaimana kita mengatakan itu secara konstruktif?
+- **Noura:** نَقُولُ: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى. -> Kita katakan: idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.
+- **Maryam:** هَلْ تُضِيفِينَ مِثَالًا؟ -> Apakah kamu akan menambahkan contoh?
+- **Noura:** نَعَمْ، نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ. -> Ya, kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.
+- **Maryam:** مَاذَا بَعْدَ ذَلِكَ؟ -> Apa setelah itu?
+- **Noura:** أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ. -> Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.

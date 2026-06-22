@@ -1,10 +1,10 @@
 # Responding to Long Turns
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk responding to long turns dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas.
+Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas. Fokus lesson ini adalah responding to long turns, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

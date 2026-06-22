@@ -1,24 +1,6 @@
 lesson_key: lesson-05-negotiation-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-05-negotiation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T054948Z.wav
-  duration_seconds: 40.26
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Omar: OoE8swS3hImZANNOodf6
-  line_count: 8
-  script_content_hash: 060890ae09c1f7decd309aaf0416f2fd25dcb57aed709675af085d673d423560
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-03-negotiation-and-compromise/lesson-05-negotiation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T054948Z.wav
-  trace_id: fwvqOO0tgXXDMsOovSus,Omj84LvAfYcHGEYFKWy0,PppHsOrAsnxk9sivtdVn,YfFaWBDqd8v3V0EC7qMP,Qm7IaNKLXzK1U2ecWEz5,eqnNBQQS1XV52FMW3DC9,tHvvwOi6CH9CmDtpyvwP,bDemgrLUOdYWvy6kxqUn
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:49:48.069644+00:00'
+assets: []

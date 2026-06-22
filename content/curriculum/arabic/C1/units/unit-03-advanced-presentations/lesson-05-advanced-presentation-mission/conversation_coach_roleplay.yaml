@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_advanced_presentation_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
 learner_goal: Latih percakapan Arab C1 untuk delivering an advanced presentation dengan nuance, struktur,
   presisi, dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ
     الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.'
   sample_answer: فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا

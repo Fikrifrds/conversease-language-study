@@ -1,32 +1,28 @@
 vocabulary:
 - word: بِدَايَةٌ
   meaning_id: awal
-  usage_note: 'Dipakai untuk arti "awal". Contoh: "فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ
-    غَيْرَ وَاضِحٍ."'
+  usage_note: 'Dipakai untuk arti "awal". Contoh: "فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ."'
 - word: مَوْقِفٌ
   meaning_id: posisi/sikap
-  usage_note: 'Dipakai untuk arti "posisi/sikap". Contoh: "فِي الْبِدَايَةِ، كَانَ
-    الْمَوْقِفُ غَيْرَ وَاضِحٍ."'
+  usage_note: 'Dipakai untuk arti "posisi/sikap". Contoh: "فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ
+    وَاضِحٍ."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ
-    غَيْرَ وَاضِحٍ."'
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: 'Dipakai untuk arti "detail". Contoh: "ثُمَّ سَأَلْتُ صَدِيقِي عَنْ
-    التَّفَاصِيلِ."'
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "ثُمَّ سَأَلْتُ صَدِيقِي عَنْ التَّفَاصِيلِ."'
 - word: سَبَبٌ
   meaning_id: alasan
   usage_note: 'Dipakai untuk arti "alasan". Contoh: "بَعْدَ ذَلِكَ، فَهِمْتُ السَّبَبَ."'
 - word: شَعَرْتُ
   meaning_id: saya merasa
-  usage_note: 'Dipakai untuk arti "saya merasa". Contoh: "شَعَرْتُ بِالرَّاحَةِ لِأَنَّ
-    الْأَمْرَ صَارَ وَاضِحًا."'
+  usage_note: 'Dipakai untuk arti "saya merasa". Contoh: "شَعَرْتُ بِالرَّاحَةِ لِأَنَّ الْأَمْرَ صَارَ
+    وَاضِحًا."'
 - word: رَاحَةٌ
   meaning_id: nyaman/lega
-  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "شَعَرْتُ بِالرَّاحَةِ لِأَنَّ
-    الْأَمْرَ صَارَ وَاضِحًا."'
+  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "شَعَرْتُ بِالرَّاحَةِ لِأَنَّ الْأَمْرَ صَارَ
+    وَاضِحًا."'
 - word: نِهَايَةٌ
   meaning_id: akhir
-  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي النِّهَايَةِ، تَعَلَّمْتُ
-    دَرْسًا مُفِيدًا."'
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي النِّهَايَةِ، تَعَلَّمْتُ دَرْسًا مُفِيدًا."'

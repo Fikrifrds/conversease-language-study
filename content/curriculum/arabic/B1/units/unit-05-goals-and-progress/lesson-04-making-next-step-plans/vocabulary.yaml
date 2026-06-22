@@ -1,32 +1,26 @@
 vocabulary:
 - word: خُطْوَةٌ
   meaning_id: langkah
-  usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْخُطْوَةُ التَّالِيَةُ هِيَ
-    التَّدْرِيبُ الْيَوْمِيُّ."'
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْخُطْوَةُ التَّالِيَةُ هِيَ التَّدْرِيبُ الْيَوْمِيُّ."'
 - word: تَدْرِيبٌ
   meaning_id: coaching/latihan
-  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "الْخُطْوَةُ التَّالِيَةُ
-    هِيَ التَّدْرِيبُ الْيَوْمِيُّ."'
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "الْخُطْوَةُ التَّالِيَةُ هِيَ التَّدْرِيبُ
+    الْيَوْمِيُّ."'
 - word: يَوْمٌ
   meaning_id: hari
-  usage_note: 'Dipakai untuk arti "hari". Contoh: "سَأُرَاجِعُ خَمْسَ عِبَارَاتٍ كُلَّ
-    يَوْمٍ."'
+  usage_note: 'Dipakai untuk arti "hari". Contoh: "سَأُرَاجِعُ خَمْسَ عِبَارَاتٍ كُلَّ يَوْمٍ."'
 - word: مَرَّةٌ
   meaning_id: sekali/kali
-  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "سَأُسَجِّلُ صَوْتِي مَرَّةً
-    وَاحِدَةً."'
+  usage_note: 'Dipakai untuk arti "sekali/kali". Contoh: "سَأُسَجِّلُ صَوْتِي مَرَّةً وَاحِدَةً."'
 - word: وَاحِدَةٌ
   meaning_id: satu
   usage_note: 'Dipakai untuk arti "satu". Contoh: "سَأُسَجِّلُ صَوْتِي مَرَّةً وَاحِدَةً."'
 - word: نَتِيجَةٌ
   meaning_id: hasil
-  usage_note: 'Dipakai untuk arti "hasil". Contoh: "بَعْدَ أُسْبُوعٍ، سَأُقَيِّمُ
-    النَّتِيجَةَ."'
+  usage_note: 'Dipakai untuk arti "hasil". Contoh: "بَعْدَ أُسْبُوعٍ، سَأُقَيِّمُ النَّتِيجَةَ."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: 'Dipakai untuk arti "rencana". Contoh: "إِذَا احْتَجْتُ، سَأُغَيِّرُ
-    الْخُطَّةَ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "إِذَا احْتَجْتُ، سَأُغَيِّرُ الْخُطَّةَ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟"'

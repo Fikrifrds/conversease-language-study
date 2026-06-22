@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_clarifying_scope
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ
-  نِطَاقِ النِّقَاشِ.
-learner_goal: Latih percakapan Arab B2 untuk memperjelas scope diskusi dengan alasan, contoh, respons,
-  dan rekomendasi.
+opening_line: قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟
+learner_goal: Latih percakapan Arab B2 untuk memperjelas scope rapat, menetapkan batasan, dan mengonfirmasi
+  tindak lanjut.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ نِطَاقِ
-    النِّقَاشِ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.'
-  sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
-  focus: Membuka kontribusi rapat.
+- coach: قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟
+  hint: 'Jawab dengan struktur B2 memakai: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.'
+  sample_answer: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
+  focus: Membuka klarifikasi scope.
   expected_keywords:
-  - أُرِيدُ
-  - أَنْ
-  - أَبْدَأَ
-  - بِنُقْطَةٍ
-  - عَنْ
-  indonesian_explanation: Saya ingin mulai dengan poin tentang memperjelas scope diskusi.
-- coach: 'استخدم الفكرة: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  hint: 'Jawab dengan struktur B2 memakai: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  sample_answer: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  focus: Memastikan scope.
+  - لَيْسَ
+  - النِّطَاقُ
+  - وَاضِحًا
+  - تَمَامًا
+  indonesian_explanation: Cakupannya belum sepenuhnya jelas.
+- coach: 'استخدم الفكرة: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.'
+  hint: 'Jawab dengan struktur B2 memakai: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.'
+  sample_answer: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
+  focus: Membatasi scope.
   expected_keywords:
-  - هَلْ
-  - نِطَاقُ
-  - النِّقَاشِ
-  - وَاضِحٌ
-  - لِلْجَمِيعِ
-  indonesian_explanation: Apakah cakupan diskusi jelas untuk semua orang?
-- coach: 'استخدم الفكرة: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  sample_answer: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  focus: Memberi feedback profesional.
+  - نُدْخِلُ
+  - الصَّفْحَةَ
+  - الرَّئِيسِيَّةَ
+  - وَنُؤَجِّلُ
+  - التَّقَارِيرَ
+  indonesian_explanation: Kita memasukkan halaman utama dan menunda laporan.
+- coach: 'استخدم الفكرة: هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.'
+  sample_answer: هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.
+  focus: Memberi alasan batasan.
   expected_keywords:
-  - عِنْدِي
-  - مُلَاحَظَةٌ
-  - بَنَّاءَةٌ
-  - عَلَى
   - هَذَا
-  indonesian_explanation: Saya punya masukan konstruktif untuk usulan ini.
-- coach: 'استخدم الفكرة: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  sample_answer: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  focus: Merangkum keputusan.
+  - يُبْقِي
+  - الْمَوْعِدَ
+  - وَاقِعِيًّا
+  - وَيُقَلِّلُ
+  indonesian_explanation: Ini membuat tenggat tetap realistis dan mengurangi risiko.
+- coach: 'استخدم الفكرة: سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.'
+  sample_answer: سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.
+  focus: Mengonfirmasi follow-up.
   expected_keywords:
-  - الْقَرَارُ
-  - الْأَسَاسِيُّ
-  - هُوَ
-  - أَنْ
-  - نُكْمِلَ
-  indonesian_explanation: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+  - سَأُؤَكِّدُ
+  - ذَلِكَ
+  - فِي
+  - رِسَالَةٍ
+  - قَصِيرَةٍ
+  indonesian_explanation: Saya akan mengonfirmasi itu dalam pesan singkat setelah rapat.
 target_phrases:
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
+- لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
+- نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
+- هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.
+- سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.
+- مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى؟
 rubric:
   speaking:
     minimum_score: 72

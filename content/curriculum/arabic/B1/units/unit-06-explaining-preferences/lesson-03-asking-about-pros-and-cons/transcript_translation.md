@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Fatimah:** مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟ -> Apa poin utama dalam topik ini?
+- **Fatimah:** مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟ -> Pertanyaan apa yang membantumu memahami situasi?
 - **Noura:** مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟ -> Apa kelebihan pilihan ini?
-- **Fatimah:** هَلْ يُمْكِنُ أَنْ تُوَضِّحَ أَكْثَرَ؟ -> Bisakah kamu menjelaskan lebih banyak?
+- **Fatimah:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟ -> Apa yang terjadi setelah itu?
 - **Noura:** وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟ هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟ -> Dan apa kemungkinan kekurangannya? Apakah kelebihannya lebih banyak dari masalahnya?
 - **Fatimah:** أُرِيدُ أَنْ أَفْهَمَ الصُّورَةَ كَامِلَةً. -> Saya ingin memahami gambaran lengkap.
 - **Noura:** بَعْدَ ذَلِكَ، نَقْرِّرُ. -> Setelah itu, kita putuskan.

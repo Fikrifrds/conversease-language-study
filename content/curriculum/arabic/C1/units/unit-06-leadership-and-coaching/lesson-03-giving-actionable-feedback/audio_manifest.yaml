@@ -1,24 +1,6 @@
 lesson_key: lesson-03-giving-actionable-feedback
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-3nav5pHC1EYvWOd5LmnA-20260618T060741Z.wav
-  duration_seconds: 61.14
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Rami: yXEnnEln9armDCyhkXcA
-    Tariq: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 8d39c760c387f1f18529b85404fb55a51531da73805ead008951d7f93159ecc6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-3nav5pHC1EYvWOd5LmnA-20260618T060741Z.wav
-  trace_id: 9ZbRCyKxKf2kmL7Nbnxn,n2sOgd3mk9QQyfMbRkYl,c43oQ3sRmdSUOBCrhDzb,Jca1xUliGa64Y49ywR0M,VHC2CoUCJWTGMI7R7q0u,R12Uul2DJUMphDBk5bPS,EXZloYn2Q64EjumvtpKT,GAa3raAa8tSUl90kzLvy
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:07:41.329327+00:00'
+assets: []

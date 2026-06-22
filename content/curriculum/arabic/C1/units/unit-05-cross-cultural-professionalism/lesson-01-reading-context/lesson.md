@@ -1,10 +1,10 @@
 # Reading Context
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk reading social context dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham.
+Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah reading social context, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

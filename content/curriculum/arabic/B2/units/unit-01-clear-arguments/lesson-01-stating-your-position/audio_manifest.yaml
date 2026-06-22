@@ -1,24 +1,6 @@
 lesson_key: lesson-01-stating-your-position
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-3nav5pHC1EYvWOd5LmnA-20260618T054548Z.wav
-  duration_seconds: 38.66
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: 312cea20ce0a37eb775f7a9e00f18146a114ba289fec48259cc3bfe686c8097d
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-3nav5pHC1EYvWOd5LmnA-20260618T054548Z.wav
-  trace_id: OMe5DvJJVHSe0GBD6MDZ,VF84zctCNiJv1MlumrHe,05HZ7OLkD6HyfZlnOegM,OIZyNVQMMmzFtAnYPR8O,IHC47I0QUORQK12ZX53P,o3b8GX6MauHDsqwQCfXy,M9mtnO7mT0JKQO9Ga0AS,efB6Usl8ZNO6USlXF3Au
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:45:48.750967+00:00'
+assets: []

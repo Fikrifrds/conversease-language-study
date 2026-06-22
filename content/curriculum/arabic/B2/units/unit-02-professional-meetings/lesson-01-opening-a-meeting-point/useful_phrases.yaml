@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.
-  meaning_id: Saya ingin mulai dengan poin tentang membuka poin rapat.
-  usage_note: Membuka kontribusi rapat.
-- phrase: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  meaning_id: Apakah cakupan diskusi jelas untuk semua orang?
-  usage_note: Memastikan scope.
-- phrase: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  meaning_id: Saya punya masukan konstruktif untuk usulan ini.
-  usage_note: Memberi feedback profesional.
-- phrase: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  meaning_id: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-  usage_note: Merangkum keputusan.
-- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
-  meaning_id: Saya akan mengirim ringkasan singkat setelah rapat.
+- phrase: أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
+  meaning_id: Saya ingin membuka diskusi tentang tenggat penyerahan proyek.
+  usage_note: Membuka topik rapat.
+- phrase: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
+  meaning_id: Karena tim membutuhkan keputusan sebelum akhir hari.
+  usage_note: Memberi alasan rapat.
+- phrase: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.
+  meaning_id: Kita menentukan tenggat akhir dan siapa yang akan meninjau versi terakhir.
+  usage_note: Meminta keputusan konkret.
+- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.
+  meaning_id: Saya akan mengirim ringkasan singkat berisi keputusan dan tanggung jawab.
   usage_note: Menutup dengan action item.
+- phrase: لِنَحْصُرِ النِّقَاشَ فِي هَذِهِ النُّقْطَةِ أَوَّلًا.
+  meaning_id: Mari kita batasi diskusi pada poin ini dulu.
+  usage_note: Menjaga fokus rapat.

@@ -1,24 +1,6 @@
 lesson_key: lesson-01-talking-about-goals
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-01-talking-about-goals/listening-3nav5pHC1EYvWOd5LmnA-20260618T022810Z.wav
-  duration_seconds: 16.86
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Sara: gVzwmdZzRgBrNjXaTmi5
-  line_count: 6
-  script_content_hash: 7ff49d99e4fa698b482aa117955ecd3fd58da21ba896b7a538e80988cb41c547
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-01-talking-about-goals/listening-3nav5pHC1EYvWOd5LmnA-20260618T022810Z.wav
-  trace_id: 2i1PSXC4trNktu21m0wY,LGCcerKiOIAXK5GnISaA,rV6nkAdvfMKDQegU3oxY,0TynPouSAXtegKZ0rOKd,zL8GwwBtFIhYeCltWNad,mlEh7PCHPH5b9UkcVRc2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:28:10.632356+00:00'
+assets: []

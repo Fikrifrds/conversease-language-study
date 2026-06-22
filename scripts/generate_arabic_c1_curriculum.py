@@ -297,6 +297,94 @@ LESSON_FOCUS_BY_KEY: dict[str, tuple[str, str]] = {
 }
 
 
+C1_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
+    {
+        "precision": (
+            "أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟",
+            "Di bagian mana skill {focus_id} membutuhkan presisi lebih besar?",
+        ),
+        "repair": (
+            "إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟",
+            "Jika seseorang keberatan pada cara {focus_id}, bagaimana kamu menjaga percakapan tetap profesional?",
+        ),
+        "final": (
+            "مَا الصِّيَاغَةُ الَّتِي تُظْهِرُ الْفِكْرَةَ مِنْ غَيْرِ مُبَالَغَةٍ؟",
+            "Formulasi apa yang menunjukkan {focus_id} tanpa berlebihan?",
+        ),
+    },
+    {
+        "precision": (
+            "مَا الْفَرْقُ بَيْنَ الصِّيَاغَةِ الْمُبَاشِرَةِ وَالصِّيَاغَةِ الْأَدَقِّ هُنَا؟",
+            "Apa bedanya formulasi langsung dan formulasi yang lebih presisi dalam {focus_id}?",
+        ),
+        "repair": (
+            "كَيْفَ تُصَحِّحُ سُوءَ فَهْمٍ صَغِيرًا أَثْنَاءَ الْحِوَارِ؟",
+            "Bagaimana kamu memperbaiki salah paham kecil saat {focus_id}?",
+        ),
+        "final": (
+            "مَا الْقَيْدُ الَّذِي سَتُضِيفُهُ لِجَعْلِ الْجَوَابِ أَكْثَرَ تَوَازُنًا؟",
+            "Batasan apa yang akan kamu tambahkan agar {focus_id} lebih seimbang?",
+        ),
+    },
+    {
+        "precision": (
+            "مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟",
+            "Informasi apa yang membuat {focus_id} lebih meyakinkan?",
+        ),
+        "repair": (
+            "إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟",
+            "Jika pihak lain memahami {focus_id} terlalu sempit, bagaimana kamu memperluas gambarannya?",
+        ),
+        "final": (
+            "كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟",
+            "Bagaimana kamu menghubungkan {focus_id} dengan pesan penutup yang jelas?",
+        ),
+    },
+    {
+        "precision": (
+            "أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟",
+            "Kalimat mana yang mungkin menimbulkan salah paham dalam {focus_id}?",
+        ),
+        "repair": (
+            "كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟",
+            "Bagaimana kamu merumuskan ulang {focus_id} saat ada tekanan?",
+        ),
+        "final": (
+            "مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟",
+            "Langkah profesional apa setelah {focus_id}?",
+        ),
+    },
+    {
+        "precision": (
+            "مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟",
+            "Kriteria apa yang akan kamu pakai untuk menilai keberhasilan {focus_id}?",
+        ),
+        "repair": (
+            "إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟",
+            "Jika nada percakapan berubah, bagaimana kamu menyesuaikan {focus_id}?",
+        ),
+        "final": (
+            "كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟",
+            "Bagaimana kamu menutup {focus_id} dengan kalimat yang menunjukkan presisi dan fleksibilitas?",
+        ),
+    },
+]
+
+
+C1_OPENING_PROMPTS: list[tuple[str, str]] = [
+    ("كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟", "Bagaimana kamu menerapkan skill ini dalam percakapan formal?"),
+    ("مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟", "Cara paling presisi apa untuk memakai skill ini?"),
+    ("كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟", "Bagaimana kamu membuat jawaban ini meyakinkan dan seimbang?"),
+    ("كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟", "Bagaimana kamu menjaga kejelasan saat ada tekanan?"),
+    ("كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟", "Bagaimana kamu mengubah skill ini menjadi langkah praktis?"),
+]
+
+
+def format_dialogue_move(move: tuple[str, str], focus: str, focus_id: str) -> tuple[str, str]:
+    arabic, indonesian = move
+    return arabic.format(focus=focus), indonesian.format(focus_id=focus_id)
+
+
 def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, Any]:
     profile = UNIT_PROFILES[unit_key]
     lesson_key, slug, title = lesson_data
@@ -330,16 +418,20 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
             f"{base_phrases[4]['usage']} Tutup percakapan sesuai fokus lesson.",
         ),
     ]
-    prompt_ar = f"كَيْفَ تُطَبِّقُ مَهَارَةَ {focus_ar} فِي حِوَارٍ رَسْمِيٍّ؟"
-    prompt_id = f"Bagaimana kamu menerapkan {focus_id} dalam percakapan formal?"
+    lesson_index = [item[0] for item in LESSONS_BY_UNIT[unit_key]].index(lesson_key)
+    prompt_ar, prompt_id = C1_OPENING_PROMPTS[lesson_index]
+    dialogue_move = C1_DIALOGUE_MOVES[lesson_index]
+    precision_question = format_dialogue_move(dialogue_move["precision"], focus_ar, focus_id)
+    repair_question = format_dialogue_move(dialogue_move["repair"], focus_ar, focus_id)
+    final_question = format_dialogue_move(dialogue_move["final"], focus_ar, focus_id)
     dialogue = [
         line(speaker_a, prompt_ar, prompt_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),
-        line(speaker_a, "هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟", "Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?"),
+        line(speaker_a, precision_question[0], precision_question[1]),
         line(speaker_b, f"{phrases[1]['phrase']} {phrases[2]['phrase']}", f"{phrases[1]['meaning']} {phrases[2]['meaning']}"),
-        line(speaker_a, "كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟", "Bagaimana kamu menangani counterpoint atau salah paham?"),
+        line(speaker_a, repair_question[0], repair_question[1]),
         line(speaker_b, phrases[3]["phrase"], phrases[3]["meaning"]),
-        line(speaker_a, "مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟", "Apa formulasi akhir yang cocok untuk situasi formal?"),
+        line(speaker_a, final_question[0], final_question[1]),
         line(speaker_b, phrases[4]["phrase"], phrases[4]["meaning"]),
     ]
     return {
@@ -349,7 +441,7 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
         "status": "published",
         "focus": focus_ar,
         "focus_id": focus_id,
-        "situation": profile["situation"],
+        "situation": f"{profile['situation']} Fokus lesson ini adalah {focus_id}, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.",
         "goal": f"Latih percakapan Arab C1 untuk {focus_id} dengan nuance, struktur, presisi, dan respons profesional.",
         "grammar": profile["grammar"],
         "patterns": profile["patterns"],
@@ -511,7 +603,8 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
         )
         (lesson_dir / "lesson.md").write_text(
             f"# {item['title']}\n\n"
-            "Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.\n\n"
+            f"Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk {item['focus_id']} "
+            "dengan respons yang halus, strategis, dan presisi.\n\n"
             "## Situation\n\n"
             f"{item['situation']}\n\n"
             "## Catatan Belajar\n\n"
@@ -586,7 +679,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
         )
         write_yaml(
             lesson_dir / "audio_manifest.yaml",
-            {"lesson_key": item["lesson_key"], "status": "not_generated", "provider": "elevenlabs", "model": "eleven_v3", "default_voice_id": "multi_speaker", "assets": []},
+            {"lesson_key": item["lesson_key"], "status": "needs_regeneration", "provider": "elevenlabs", "model": "eleven_v3", "default_voice_id": "multi_speaker", "assets": []},
         )
 
 
@@ -594,33 +687,28 @@ def update_tracker(units: list[dict[str, Any]]) -> None:
     raw_tracker = TRACKER_PATH.read_bytes()
     reader = csv.DictReader(io.StringIO(raw_tracker.decode("utf-8")))
     fieldnames = reader.fieldnames or []
-    existing = {(row["level"], row["unit"], row["lesson"]) for row in reader}
-    missing_rows: list[dict[str, str]] = []
+    rows = list(reader)
+    rows_by_key = {(row["level"], row["unit"], row["lesson"]): row for row in rows}
 
     for unit in units:
         for item in unit["lessons"]:
             key = ("arabic/C1", unit["unit_key"], item["lesson_key"])
-            if key in existing:
-                continue
-            row = {name: "" for name in fieldnames}
-            row["level"], row["unit"], row["lesson"] = key
+            row = rows_by_key.get(key)
+            if row is None:
+                row = {name: "" for name in fieldnames}
+                row["level"], row["unit"], row["lesson"] = key
+                rows.append(row)
+                rows_by_key[key] = row
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
             row["review_status"] = "ready"
             row["publish_status"] = "published"
-            missing_rows.append(row)
 
-    if not missing_rows:
-        return
-
-    buffer = io.StringIO()
-    writer = csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator="\n")
-    writer.writerows(missing_rows)
-    with TRACKER_PATH.open("ab") as file:
-        if raw_tracker and not raw_tracker.endswith((b"\n", b"\r\n")):
-            file.write(b"\n")
-        file.write(buffer.getvalue().encode("utf-8"))
+    with TRACKER_PATH.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def main() -> int:

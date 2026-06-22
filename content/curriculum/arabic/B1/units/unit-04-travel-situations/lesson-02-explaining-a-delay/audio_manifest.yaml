@@ -1,24 +1,6 @@
 lesson_key: lesson-02-explaining-a-delay
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-3nav5pHC1EYvWOd5LmnA-20260618T022724Z.wav
-  duration_seconds: 19.66
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: 1dcf7f45adb9c45659a6dc7a1ca4834546cfed52980867f8b13615888ce814b6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-3nav5pHC1EYvWOd5LmnA-20260618T022724Z.wav
-  trace_id: nAk49teAN1FedrLREkPv,DpnhH6JaRRmRJPWw9LCx,CxB41glXUDhjzCA04NYw,N8dQqC6vjHjreQ2iuuZ7,LQBmamAw6uQHGMqRz2h0,NaMb6w09o7lC5LuiVgRw
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:27:24.515382+00:00'
+assets: []

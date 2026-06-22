@@ -1,33 +1,28 @@
 vocabulary:
 - word: تَوْضِيحٌ
   meaning_id: klarifikasi/penjelasan
-  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أَوْلَوِيَّتِي
-    هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا."'
+  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى
+    تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا."'
 - word: أَوْلَوِيَّاتٌ
   meaning_id: prioritas-prioritas
-  usage_note: 'Dipakai untuk arti "prioritas-prioritas". Contoh: "أَوْلَوِيَّتِي هِيَ
-    أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا."'
+  usage_note: 'Dipakai untuk arti "prioritas-prioritas". Contoh: "أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ
+    الْأَوْلَوِيَّاتِ وَاضِحًا."'
 - word: اِقْتِرَاحٌ
   meaning_id: usulan
-  usage_note: 'Dipakai untuk arti "usulan". Contoh: "أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ
-    كَحَلٍّ عَمَلِيٍّ."'
+  usage_note: 'Dipakai untuk arti "usulan". Contoh: "أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ
-    لَدَيْنَا خِيَارٌ آخَرُ."'
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ
+    آخَرُ."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ
-    لَدَيْنَا خِيَارٌ آخَرُ."'
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: 'Dipakai untuk arti "lain". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا
-    خِيَارٌ آخَرُ."'
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ."'
 - word: حَلٌّ
   meaning_id: solusi
-  usage_note: 'Dipakai untuk arti "solusi". Contoh: "يُمْكِنُنَا أَنْ نَصِلَ إِلَى
-    حَلٍّ وَسَطٍ."'
+  usage_note: 'Dipakai untuk arti "solusi". Contoh: "يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ."'
 - word: وَسَطٌ
   meaning_id: tengah
-  usage_note: 'Dipakai untuk arti "tengah". Contoh: "يُمْكِنُنَا أَنْ نَصِلَ إِلَى
-    حَلٍّ وَسَطٍ."'
+  usage_note: 'Dipakai untuk arti "tengah". Contoh: "يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ."'

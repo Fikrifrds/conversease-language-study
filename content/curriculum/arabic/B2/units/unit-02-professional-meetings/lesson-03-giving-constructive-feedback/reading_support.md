@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ. -> Saya ingin mulai dengan poin tentang memberi masukan konstruktif.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ -> Apakah cakupan diskusi jelas untuk semua orang?
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Saya punya masukan konstruktif untuk usulan ini.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
+- الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى. -> Idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.
+- نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ. -> Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.
+- أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ. -> Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.
+- كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟ -> Bagaimana kita mengatakan itu secara konstruktif?

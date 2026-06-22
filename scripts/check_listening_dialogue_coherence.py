@@ -1,8 +1,10 @@
 from __future__ import annotations
 
 import argparse
+from collections import defaultdict
 import json
 import re
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -45,6 +47,10 @@ WH_PREFIXES = ("what", "where", "when", "why", "how", "which", "who", "whom", "w
 
 _WS_RE = re.compile(r"\s+")
 _STAGE_DIRECTION_RE = re.compile(r"^\([^)]*\)\s*")
+_ARABIC_DIACRITIC_RE = re.compile(r"[\u064b-\u065f]")
+_REPETITION_NORMALIZE_RE = re.compile(r"[^\w\s\u0600-\u06ff؟?]")
+MAX_REPEATED_DIALOGUE_LINE_COUNT = 12
+MIN_REPEATED_DIALOGUE_LINE_LENGTH = 20
 _TIME_MARKERS = (
     "yesterday",
     "last night",
@@ -70,6 +76,13 @@ def normalize_text(text: str) -> str:
     t = text.strip().lower()
     t = _STAGE_DIRECTION_RE.sub("", t)
     return _WS_RE.sub(" ", t)
+
+
+def normalize_dialogue_line_for_repetition(text: str) -> str:
+    t = unicodedata.normalize("NFKC", normalize_text(text))
+    t = _ARABIC_DIACRITIC_RE.sub("", t)
+    t = _REPETITION_NORMALIZE_RE.sub(" ", t)
+    return _WS_RE.sub(" ", t).strip()
 
 
 def is_question(text: str) -> bool:
@@ -328,6 +341,40 @@ def iter_listening_scripts(root: Path) -> list[Path]:
     return sorted(root.glob("content/curriculum/*/*/units/*/lesson-*/listening_script.md"))
 
 
+def check_repeated_dialogue_lines(scripts: list[Path]) -> list[Issue]:
+    line_usage: dict[str, list[tuple[Path, DialogueTurn]]] = defaultdict(list)
+    display_text: dict[str, str] = {}
+
+    for script in scripts:
+        for turn in listening_script_to_dialogue_turns(script):
+            normalized = normalize_dialogue_line_for_repetition(turn.text)
+            if len(normalized) < MIN_REPEATED_DIALOGUE_LINE_LENGTH:
+                continue
+            line_usage[normalized].append((script, turn))
+            display_text.setdefault(normalized, turn.text)
+
+    issues: list[Issue] = []
+    for normalized, occurrences in sorted(line_usage.items(), key=lambda entry: len(entry[1]), reverse=True):
+        if len(occurrences) <= MAX_REPEATED_DIALOGUE_LINE_COUNT:
+            break
+        sample_paths = [str(path) for path, _ in occurrences[:8]]
+        first_path = occurrences[0][0]
+        issues.append(
+            Issue(
+                code="overused_dialogue_line",
+                message=(
+                    "Baris dialog panjang dipakai terlalu sering "
+                    f"({len(occurrences)} lessons). Ini biasanya tanda template lesson yang terasa copy-paste."
+                ),
+                file_path=str(first_path),
+                lesson_slug=extract_lesson_slug(first_path),
+                context=[f"Repeated line: {display_text[normalized]}", *sample_paths],
+            )
+        )
+
+    return issues
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--json", dest="json_path", default=None)
@@ -340,6 +387,7 @@ def main() -> None:
     all_issues: list[Issue] = []
     for script in scripts:
         all_issues.extend(check_file(script))
+    all_issues.extend(check_repeated_dialogue_lines(scripts))
 
     payload = {
         "file_count": len(scripts),

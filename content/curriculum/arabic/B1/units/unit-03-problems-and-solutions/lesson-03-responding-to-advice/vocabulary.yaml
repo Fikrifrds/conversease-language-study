@@ -17,3 +17,11 @@ vocabulary:
 - word: تَوْجِيهٌ
   meaning_id: arahan
   usage_note: 'Dipakai untuk arti "arahan". Contoh: "شُكْرًا عَلَى التَّوْجِيهِ."'
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ
+    الْمَوْقِفِ؟"'
+- word: مَوْقِفٌ
+  meaning_id: posisi/sikap
+  usage_note: 'Dipakai untuk arti "posisi/sikap". Contoh: "مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ
+    الْمَوْقِفِ؟"'

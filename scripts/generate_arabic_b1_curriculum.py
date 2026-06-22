@@ -60,6 +60,32 @@ def line(speaker: str, text: str, translation: str) -> tuple[str, str, str]:
     return (speaker, text, translation)
 
 
+B1_CLARIFICATION_TURNS: list[tuple[str, str]] = [
+    ("مَا التَّفْصِيلُ الْأَهَمُّ فِي هَذِهِ النُّقْطَةِ؟", "Detail paling penting apa dalam poin ini?"),
+    ("هَلْ يُمْكِنُ أَنْ تُعْطِيَ مِثَالًا بَسِيطًا؟", "Bisakah kamu memberi contoh sederhana?"),
+    ("مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟", "Apa yang terjadi setelah itu?"),
+    ("لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟", "Mengapa ini penting dalam situasi ini?"),
+    ("مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟", "Apa langkah berikutnya setelah itu?"),
+]
+
+
+B1_OPENING_TURNS: list[tuple[str, str]] = [
+    ("مَا الْفِكْرَةُ الرَّئِيسِيَّةُ الَّتِي تُرِيدُ بَدْءَ الْحِوَارِ بِهَا؟", "Ide utama apa yang ingin kamu pakai untuk memulai percakapan?"),
+    ("مَا أَوَّلُ تَفْصِيلٍ يَحْتَاجُ إِلَى شَرْحٍ؟", "Detail pertama apa yang perlu dijelaskan?"),
+    ("مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟", "Pertanyaan apa yang membantumu memahami situasi?"),
+    ("كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟", "Bagaimana kamu merespons dengan jelas dan sopan?"),
+    ("كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟", "Bagaimana kamu mengakhiri percakapan dengan langkah berikutnya?"),
+]
+
+
+def clarification_turn_for_lesson(key: str) -> tuple[str, str]:
+    try:
+        lesson_number = int(key.split("-")[1])
+    except (IndexError, ValueError):
+        lesson_number = 1
+    return B1_CLARIFICATION_TURNS[(lesson_number - 1) % len(B1_CLARIFICATION_TURNS)]
+
+
 def lesson(
     key: str,
     slug: str,
@@ -74,10 +100,11 @@ def lesson(
 ) -> dict[str, Any]:
     speaker_a, speaker_b = speakers
     opening_ar, opening_id = opening
+    clarification_ar, clarification_id = clarification_turn_for_lesson(key)
     dialogue = [
         line(speaker_a, opening_ar, opening_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),
-        line(speaker_a, "هَلْ يُمْكِنُ أَنْ تُوَضِّحَ أَكْثَرَ؟", "Bisakah kamu menjelaskan lebih banyak?"),
+        line(speaker_a, clarification_ar, clarification_id),
         line(speaker_b, f"{phrases[1]['phrase']} {phrases[2]['phrase']}", f"{phrases[1]['meaning']} {phrases[2]['meaning']}"),
         line(speaker_a, phrases[3]["phrase"], phrases[3]["meaning"]),
         line(speaker_b, phrases[4]["phrase"], phrases[4]["meaning"]),
@@ -395,7 +422,7 @@ def topic_lesson(unit: dict[str, Any], index: int, topic: tuple[str, ...]) -> di
         [item["phrase"] for item in phrase_items[:4]],
         phrase_items,
         unit["speakers"],
-        ("مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟", "Apa poin utama dalam topik ini?"),
+        B1_OPENING_TURNS[(index - 1) % len(B1_OPENING_TURNS)],
     )
 
 
@@ -705,7 +732,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
             lesson_dir / "audio_manifest.yaml",
             {
                 "lesson_key": item["lesson_key"],
-                "status": "not_generated",
+                "status": "needs_regeneration",
                 "provider": "elevenlabs",
                 "model": "eleven_v3",
                 "default_voice_id": "multi_speaker",

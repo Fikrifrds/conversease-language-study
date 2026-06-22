@@ -1,24 +1,6 @@
 lesson_key: lesson-05-travel-situation-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022758Z.wav
-  duration_seconds: 21.26
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: a58b9b90cb927f4ce01371862ccfabe2799c99229436c5d43c6a8ad2149e7b28
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T022758Z.wav
-  trace_id: epgt48sWAQZoEBK6uV4E,btflRVXMyrAM7YCFw4dU,sPbtEtEknIZJZYT1r384,1fNw4cXNcpcbe0jwmo00,34oXzVQfVSpajgalP23E,cWSpAePaAjsEaG19yCoa
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:27:58.211904+00:00'
+assets: []

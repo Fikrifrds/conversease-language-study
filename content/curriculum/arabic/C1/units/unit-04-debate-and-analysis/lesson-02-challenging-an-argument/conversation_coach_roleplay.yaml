@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_challenging_an_argument
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
 learner_goal: Latih percakapan Arab C1 untuk challenging an argument politely dengan nuance, struktur,
   presisi, dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ
     الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.'
   sample_answer: فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ

@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_guiding_a_decision
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟
 learner_goal: Latih percakapan Arab C1 untuk guiding a group decision dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ
     هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.'
   sample_answer: فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ

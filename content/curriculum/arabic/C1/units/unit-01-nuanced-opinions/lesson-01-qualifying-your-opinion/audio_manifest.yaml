@@ -1,24 +1,6 @@
 lesson_key: lesson-01-qualifying-your-opinion
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/listening-3nav5pHC1EYvWOd5LmnA-20260618T055728Z.wav
-  duration_seconds: 63.78
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: 4ecd2b09d15ccdeff90f97e2e12cf24f9583f659fd2b2303bdd068ec9677c127
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/listening-3nav5pHC1EYvWOd5LmnA-20260618T055728Z.wav
-  trace_id: solptWPsL7jXesOklAuj,nr6H2KmUxEaHtx7e3qhV,ykMKagqNgO1rMWqRu80c,q9xCincdybiPIkXbbQLi,PbAcFZfOCeFDGMLrpgwi,JQykEmIhHUX4v2IWv9JX,CGpLjPwKXOuYxgRhXG9d,5aNGlyvbpx6TFKXGsF1t
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:57:28.538695+00:00'
+assets: []

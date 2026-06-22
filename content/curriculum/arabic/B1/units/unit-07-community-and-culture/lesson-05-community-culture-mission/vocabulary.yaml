@@ -1,28 +1,25 @@
 vocabulary:
 - word: عَادَةٌ
   meaning_id: kebiasaan
-  usage_note: 'Dipakai untuk arti "kebiasaan". Contoh: "تُوجَدُ عَادَةٌ مُهِمَّةٌ
-    عِنْدَنَا."'
+  usage_note: 'Dipakai untuk arti "kebiasaan". Contoh: "تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
   usage_note: 'Dipakai untuk arti "tugas". Contoh: "تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ
-    أَيْضًا."'
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا."'
 - word: أَفْهَمُ
   meaning_id: saya paham
-  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ
-    أَيْضًا."'
+  usage_note: 'Dipakai untuk arti "saya paham". Contoh: "أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا."'
 - word: تَوَاصُلٌ
   meaning_id: komunikasi
-  usage_note: 'Dipakai untuk arti "komunikasi". Contoh: "هَكَذَا يَصِيرُ التَّوَاصُلُ
-    أَفْضَلَ."'
+  usage_note: 'Dipakai untuk arti "komunikasi". Contoh: "هَكَذَا يَصِيرُ التَّوَاصُلُ أَفْضَلَ."'
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "هَكَذَا يَصِيرُ التَّوَاصُلُ
-    أَفْضَلَ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "هَكَذَا يَصِيرُ التَّوَاصُلُ أَفْضَلَ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟"'
+- word: خُطْوَةٌ
+  meaning_id: langkah
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟"'

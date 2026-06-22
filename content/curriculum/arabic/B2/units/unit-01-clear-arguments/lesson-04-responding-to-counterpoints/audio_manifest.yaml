@@ -1,24 +1,6 @@
 lesson_key: lesson-04-responding-to-counterpoints
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-3nav5pHC1EYvWOd5LmnA-20260618T054639Z.wav
-  duration_seconds: 41.54
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: 8d0d0af236c5eddf674d950b5a3cc596709a87dcde05f85aff18978a5caea65d
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-3nav5pHC1EYvWOd5LmnA-20260618T054639Z.wav
-  trace_id: kQ4Ysi7vWHCVYoPqFR0n,yLNh8H0uuKMgTcDJX9xe,Bp4mZNnYbxXjRzvGrYEd,QGNxjHPZuq9QwmR9XWhq,rM5jNQfjPbwst0tLutMB,JHHTZLuGxTIpcRQO3zDh,ihHk5bJtbrk3azjhnUp4,uTrNm2Fa46Jmim8QltlE
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:46:39.405772+00:00'
+assets: []

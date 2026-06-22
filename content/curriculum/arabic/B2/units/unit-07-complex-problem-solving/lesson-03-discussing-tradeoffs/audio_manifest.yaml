@@ -1,24 +1,6 @@
 lesson_key: lesson-03-discussing-tradeoffs
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/listening-3nav5pHC1EYvWOd5LmnA-20260618T055502Z.wav
-  duration_seconds: 36.82
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Rami: yXEnnEln9armDCyhkXcA
-    Tariq: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 54dcc98b73dd8f9685967657948d0c1587a47ff31443a36b18f95452d67f54fe
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/listening-3nav5pHC1EYvWOd5LmnA-20260618T055502Z.wav
-  trace_id: RAWEBeKdTLiZzcEaGdel,9ZyuEaLXrqakNu3L4o0L,rqICanp2mO8zUCm6tDBj,mHa5pmW93MKNytGiNymW,a2Umjq2hRmOOadjckqht,AV7XLyLgbvaM5tvRNo7b,wLGGgZIzDCdbeaipF44z,IogiFEHlyun66ArhaOKJ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:55:02.232403+00:00'
+assets: []

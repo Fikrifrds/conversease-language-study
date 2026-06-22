@@ -203,7 +203,7 @@ def build_visuals_yaml(lesson_dir: Path) -> str:
     language, level, unit_key, lesson_key = lesson_identity(lesson_dir)
     slug = str(lesson.get("slug") or lesson_key)
     title = str(lesson.get("title") or slug.replace("-", " ").title())
-    gender = lesson_visual_gender(lesson_dir)
+    gender = lesson_visual_gender(lesson_dir, language=language)
     scene = classify_scene(lesson_dir, lesson, language=language, gender=gender)
     labels = phrase_labels(useful_phrases, fallback=title)
     scene_label = scene.replace("-", " ")
@@ -243,7 +243,7 @@ def read_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
-def lesson_visual_gender(lesson_dir: Path) -> str:
+def lesson_visual_gender(lesson_dir: Path, *, language: str) -> str:
     from app.services.audio_generation import infer_speaker_gender
 
     genders: set[str] = set()
@@ -252,6 +252,8 @@ def lesson_visual_gender(lesson_dir: Path) -> str:
         if gender in {"male", "female"}:
             genders.add(gender)
 
+    if language == "arabic":
+        return "male" if genders == {"male"} else "female"
     if genders == {"female"}:
         return "female"
     return "male"

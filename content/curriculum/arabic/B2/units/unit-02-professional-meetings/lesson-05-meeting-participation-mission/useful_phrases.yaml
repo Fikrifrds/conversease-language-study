@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.
-  meaning_id: Saya ingin mulai dengan poin tentang berpartisipasi dalam rapat profesional.
-  usage_note: Membuka kontribusi rapat.
-- phrase: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  meaning_id: Apakah cakupan diskusi jelas untuk semua orang?
-  usage_note: Memastikan scope.
-- phrase: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  meaning_id: Saya punya masukan konstruktif untuk usulan ini.
-  usage_note: Memberi feedback profesional.
-- phrase: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  meaning_id: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-  usage_note: Merangkum keputusan.
-- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
-  meaning_id: Saya akan mengirim ringkasan singkat setelah rapat.
-  usage_note: Menutup dengan action item.
+- phrase: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
+  meaning_id: Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope.
+  usage_note: Memulai bagian rapat.
+- phrase: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
+  meaning_id: Saya akan berterima kasih kepada pemberi masukan dan meminta contoh spesifik.
+  usage_note: Merespons objection.
+- phrase: سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.
+  meaning_id: Saya akan membandingkan dua opsi lalu mengusulkan satu langkah.
+  usage_note: Mengarahkan ke keputusan.
+- phrase: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.
+  meaning_id: Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah rapat.
+  usage_note: Menutup rapat.
+- phrase: كَيْفَ سَتَبْدَئِينَ؟
+  meaning_id: Bagaimana kamu akan memulai?
+  usage_note: Menyiapkan roleplay rapat.

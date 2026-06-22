@@ -1,67 +1,67 @@
 scenario_key: arabic_b2_meeting_participation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْمُشَارَكَةُ
-  فِي اِجْتِمَاعٍ مِهَنِيٍّ.
-learner_goal: Latih percakapan Arab B2 untuk berpartisipasi dalam rapat profesional dengan alasan, contoh,
-  respons, dan rekomendasi.
+opening_line: الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟
+learner_goal: Latih percakapan Arab B2 untuk berpartisipasi aktif dalam rapat profesional dari pembuka
+  sampai ringkasan akhir.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْمُشَارَكَةُ
-    فِي اِجْتِمَاعٍ مِهَنِيٍّ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ
-    مِهَنِيٍّ.'
-  sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.
-  focus: Membuka kontribusi rapat.
+- coach: الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟
+  hint: 'Jawab dengan struktur B2 memakai: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ
+    عَنِ النِّطَاقِ.'
+  sample_answer: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
+  focus: Memulai bagian rapat.
   expected_keywords:
-  - أُرِيدُ
-  - أَنْ
-  - أَبْدَأَ
-  - بِنُقْطَةٍ
-  - عَنْ
-  indonesian_explanation: Saya ingin mulai dengan poin tentang berpartisipasi dalam rapat profesional.
-- coach: 'استخدم الفكرة: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  hint: 'Jawab dengan struktur B2 memakai: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  sample_answer: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  focus: Memastikan scope.
+  - سَأَفْتَحُ
+  - الْمَوْضُوعَ
+  - بِجُمْلَةٍ
+  - قَصِيرَةٍ
+  - ثُمَّ
+  indonesian_explanation: Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope.
+- coach: 'استخدم الفكرة: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.'
+  sample_answer: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
+  focus: Merespons objection.
   expected_keywords:
-  - هَلْ
-  - نِطَاقُ
-  - النِّقَاشِ
-  - وَاضِحٌ
-  - لِلْجَمِيعِ
-  indonesian_explanation: Apakah cakupan diskusi jelas untuk semua orang?
-- coach: 'استخدم الفكرة: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  sample_answer: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  focus: Memberi feedback profesional.
+  - سَأَشْكُرُ
+  - صَاحِبَ
+  - الْمُلَاحَظَةِ
+  - وَأَطْلُبُ
+  - مِثَالًا
+  indonesian_explanation: Saya akan berterima kasih kepada pemberi masukan dan meminta contoh spesifik.
+- coach: 'استخدم الفكرة: سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.'
+  sample_answer: سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.
+  focus: Mengarahkan ke keputusan.
   expected_keywords:
-  - عِنْدِي
-  - مُلَاحَظَةٌ
-  - بَنَّاءَةٌ
-  - عَلَى
-  - هَذَا
-  indonesian_explanation: Saya punya masukan konstruktif untuk usulan ini.
-- coach: 'استخدم الفكرة: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  sample_answer: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  focus: Merangkum keputusan.
+  - سَأُقَارِنُ
+  - الْخِيَارَيْنِ
+  - ثُمَّ
+  - أَقْتَرِحُ
+  - خُطْوَةً
+  indonesian_explanation: Saya akan membandingkan dua opsi lalu mengusulkan satu langkah.
+- coach: 'استخدم الفكرة: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ
+    الِاجْتِمَاعِ.'
+  sample_answer: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.
+  focus: Menutup rapat.
   expected_keywords:
-  - الْقَرَارُ
-  - الْأَسَاسِيُّ
-  - هُوَ
-  - أَنْ
-  - نُكْمِلَ
-  indonesian_explanation: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+  - سَأُلَخِّصُ
+  - الْقَرَارَ
+  - وَالْمَسْؤُولِيَّاتِ
+  - وَأُرْسِلُهَا
+  - بَعْدَ
+  indonesian_explanation: Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah
+    rapat.
 target_phrases:
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
+- سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
+- سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
+- سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.
+- سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.
+- كَيْفَ سَتَبْدَئِينَ؟
 rubric:
   speaking:
     minimum_score: 72

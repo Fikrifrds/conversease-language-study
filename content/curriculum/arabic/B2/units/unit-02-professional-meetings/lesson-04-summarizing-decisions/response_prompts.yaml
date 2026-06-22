@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mulai dengan poin tentang merangkum keputusan.'
-  target_response: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَلْخِيصُ الْقَرَارَاتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita sepakat menyerahkan versi pertama pada hari Kamis.'
+  target_response: اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَلْخِيصُ الْقَرَارَاتِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Apakah cakupan diskusi jelas untuk semua orang?'
-  target_response: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+  - اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau teks, dan Fatimah meninjau desain.'
+  target_response: أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.
   acceptable_responses:
-  - هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- prompt: 'Ucapkan dalam bahasa Arab: Saya punya masukan konstruktif untuk usulan ini.'
-  target_response: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+  - أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita membutuhkan persetujuan klien untuk gambar.'
+  target_response: نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.
   acceptable_responses:
-  - عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.'
-  target_response: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat.'
+  target_response: 'سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.'
   acceptable_responses:
-  - الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - 'سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.'

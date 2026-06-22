@@ -1,33 +1,33 @@
 vocabulary:
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
+  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+    أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
 - word: مُتَوَازِنٌ
   meaning_id: seimbang
-  usage_note: 'Dipakai untuk arti "seimbang". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
+  usage_note: 'Dipakai untuk arti "seimbang". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+    أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ
+    مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
 - word: اِفْتِرَاضٌ
   meaning_id: asumsi
-  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
+  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+    أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+    أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ
-    نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'
+  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ
+    مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'
 - word: حُجَّةٌ
   meaning_id: argumen
-  usage_note: 'Dipakai untuk arti "argumen". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ
-    تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'
+  usage_note: 'Dipakai untuk arti "argumen". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ
+    مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'
 - word: أَدِلَّةٌ
   meaning_id: bukti-bukti
-  usage_note: 'Dipakai untuk arti "bukti-bukti". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ
-    نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'
+  usage_note: 'Dipakai untuk arti "bukti-bukti". Contoh: "عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ
+    مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ ا..."'

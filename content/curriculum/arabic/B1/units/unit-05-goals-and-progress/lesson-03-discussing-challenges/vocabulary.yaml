@@ -13,17 +13,14 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "waktu". Contoh: "أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ."'
 - word: الْكَلِمَاتُ
   meaning_id: kata-kata
-  usage_note: 'Dipakai untuk arti "kata-kata". Contoh: "أَحْيَانًا أَنْسَى الْكَلِمَاتِ
-    الْمُنَاسِبَةَ."'
+  usage_note: 'Dipakai untuk arti "kata-kata". Contoh: "أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ."'
 - word: مُنَاسِبَةٌ
   meaning_id: cocok/sesuai
-  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "أَحْيَانًا أَنْسَى الْكَلِمَاتِ
-    الْمُنَاسِبَةَ."'
+  usage_note: 'Dipakai untuk arti "cocok/sesuai". Contoh: "أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ."'
 - word: طَلَاقَةٌ
   meaning_id: kelancaran
-  usage_note: 'Dipakai untuk arti "kelancaran". Contoh: "هَذَا يُسَاعِدُنِي عَلَى
-    الطَّلَاقَةِ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "kelancaran". Contoh: "هَذَا يُسَاعِدُنِي عَلَى الطَّلَاقَةِ."'
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ
+    الْمَوْقِفِ؟"'

@@ -1,24 +1,6 @@
 lesson_key: lesson-02-explaining-progress
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-3nav5pHC1EYvWOd5LmnA-20260618T022820Z.wav
-  duration_seconds: 15.66
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Sara: gVzwmdZzRgBrNjXaTmi5
-  line_count: 6
-  script_content_hash: 4840507c6680001dcae3958492672a9f36c2b5fb79c2b4ec501c308b877b54f8
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-3nav5pHC1EYvWOd5LmnA-20260618T022820Z.wav
-  trace_id: mb86rcPEylhcPOUwYsTh,gczZFtVDp2KUOlLBGhhf,Mr4Jw6GJ7rzV4jj3yDnC,mVYpY7H6qR6n7JKThu0Y,NzTRxdEjJdJoGUfevrbk,tvruoseYeOTV0JcZ1Yvo
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:28:20.919345+00:00'
+assets: []

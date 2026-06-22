@@ -1,24 +1,6 @@
 lesson_key: lesson-03-handling-concerns
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-3nav5pHC1EYvWOd5LmnA-20260618T055334Z.wav
-  duration_seconds: 42.74
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 46f71c08f3d248d0f899ef9a982bb86e04ff4958362ab00e9eb817d48f3d7073
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-3nav5pHC1EYvWOd5LmnA-20260618T055334Z.wav
-  trace_id: 7wOwPdMPpir1vguXfxLf,0xT7yIiYN9yDg4td0GEM,EHSwcpmiU5qKAOuhwyMB,yjzH5fwmHvvFFH3nuKr3,dypaXYpHn5wYJaFyObNc,nmIRBE22SAFut9wEIsLW,0VYK4vxbvfV6HauKnsHF,nfdj0tQ21HyUzoB6toFW
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:53:34.429781+00:00'
+assets: []

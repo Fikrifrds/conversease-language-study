@@ -1,24 +1,6 @@
 lesson_key: lesson-02-responding-to-long-turns
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-3nav5pHC1EYvWOd5LmnA-20260618T060915Z.wav
-  duration_seconds: 66.18
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Hasan: t9akNmCDhz230CEXOYmn
-    Yusuf: kr4VZw8MSZMHE0y2m40n
-  line_count: 8
-  script_content_hash: 0b4571555e3288c0a521fe993779ae2974a54c94d7c912ce2dd2ea43f40f9f3e
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-3nav5pHC1EYvWOd5LmnA-20260618T060915Z.wav
-  trace_id: qJRYDreeYig1D9hE75uL,8WeVpCnhKuspmKVcyLah,58SxGHitULpHCw8WbmzF,OZbjFJuBv0uR8RxSZ7zp,ubpDnrQfgdO07auSptyA,u90k88yZGbzqNcYC7wC2,Et0CBq0cYukyC9gfsXib,AV7G169J99LQuwGLh89z
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:09:15.794831+00:00'
+assets: []

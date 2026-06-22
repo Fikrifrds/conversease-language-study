@@ -1,10 +1,10 @@
 # Building a Persuasive Flow
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk building a persuasive flow dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit.
+Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah building a persuasive flow, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

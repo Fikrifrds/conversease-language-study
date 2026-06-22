@@ -1,24 +1,6 @@
 lesson_key: lesson-04-b1-final-test-practice
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-04-b1-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260618T023140Z.wav
-  duration_seconds: 20.54
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: 003d529737e650ca404ff4e165ce6d7493b2e80d9c3c1ba1672ff4c7818bdd11
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-08-b1-review-final/lesson-04-b1-final-test-practice/listening-3nav5pHC1EYvWOd5LmnA-20260618T023140Z.wav
-  trace_id: abfdNn7JZJQR0SND2e6J,aHrY1MkjokDFdrc12Fg7,zdHZwwQBh0t1rxHnt8xl,wXnbTi5u7Us4CUuk1Qcw,BdYXVhwBSgczTPkuNkKI,3R0URM25WTYT1pVNkOyI
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:31:40.104979+00:00'
+assets: []

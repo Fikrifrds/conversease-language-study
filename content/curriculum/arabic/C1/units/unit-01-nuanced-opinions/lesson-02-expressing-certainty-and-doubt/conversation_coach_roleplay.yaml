@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_expressing_certainty_and_doubt
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
 learner_goal: Latih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ
     حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
   sample_answer: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ

@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَلْخِيصُ الْقَرَارَاتِ. -> Saya ingin mulai dengan poin tentang merangkum keputusan.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ -> Apakah cakupan diskusi jelas untuk semua orang?
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Saya punya masukan konstruktif untuk usulan ini.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ. -> Kita sepakat menyerahkan versi pertama pada hari Kamis.
+- أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ. -> Saya meninjau teks, dan Fatimah meninjau desain.
+- نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ. -> Kita membutuhkan persetujuan klien untuk gambar.
+- سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ. -> Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat.
+- مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟ -> Apa yang sudah kita sepakati?

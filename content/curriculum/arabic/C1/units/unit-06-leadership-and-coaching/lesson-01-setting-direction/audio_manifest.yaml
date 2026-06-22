@@ -1,24 +1,6 @@
 lesson_key: lesson-01-setting-direction
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-3nav5pHC1EYvWOd5LmnA-20260618T060654Z.wav
-  duration_seconds: 56.02
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Rami: yXEnnEln9armDCyhkXcA
-    Tariq: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 8b692710e3ef35634b1cd9c7a399ca4cd33e25e88cc38e734f1b2fd85a1e5a86
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-3nav5pHC1EYvWOd5LmnA-20260618T060654Z.wav
-  trace_id: b7aGYEuodTzEWOmfgz8W,DzkONNNBd49w21KQdwHl,3pGakQMU6aXdliGENYks,ctEX065o0SzpozEKOyEK,D9hKkw5Pq8chVwVT8K7E,zuHyujssLE0i9SN6V6P6,gIG2fwZCh139iIkUivrd,PLctc7TTWkZyOk9I4928
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:06:54.439162+00:00'
+assets: []

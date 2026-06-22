@@ -1,33 +1,32 @@
 vocabulary:
-- word: أُرِيدُ
-  meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ."'
-- word: اِجْتِمَاعٌ
-  meaning_id: rapat/pertemuan
-  usage_note: 'Dipakai untuk arti "rapat/pertemuan". Contoh: "أُرِيدُ أَنْ أَبْدَأَ
-    بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ."'
-- word: نِطَاقٌ
-  meaning_id: cakupan
-  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
+- word: اِفْتَحْ
+  meaning_id: bukalah
+  usage_note: 'Dipakai untuk arti "bukalah". Contoh: "أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ
+    تَسْلِيمِ الْمَشْرُوعِ."'
 - word: نِقَاشٌ
   meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: وَاضِحٌ
-  meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: عِنْدِي
-  meaning_id: saya punya
-  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: مُلَاحَظَةٌ
-  meaning_id: catatan/masukan
-  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "عِنْدِي مُلَاحَظَةٌ
-    بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ."'
+  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ
+    تَسْلِيمِ الْمَشْرُوعِ."'
+- word: مَوْعِدٌ
+  meaning_id: janji temu
+  usage_note: 'Dipakai untuk arti "janji temu". Contoh: "أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ
+    تَسْلِيمِ الْمَشْرُوعِ."'
+- word: مَشْرُوعٌ
+  meaning_id: proyek
+  usage_note: 'Dipakai untuk arti "proyek". Contoh: "أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ
+    تَسْلِيمِ الْمَشْرُوعِ."'
+- word: قَرَارٌ
+  meaning_id: keputusan
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ
+    نِهَايَةِ الْيَوْمِ."'
+- word: نِهَايَةٌ
+  meaning_id: akhir
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ
+    نِهَايَةِ الْيَوْمِ."'
+- word: الْيَوْمُ
+  meaning_id: hari ini
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ
+    نِهَايَةِ الْيَوْمِ."'
+- word: نُقْطَةٌ
+  meaning_id: titik
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "لِنَحْصُرِ النِّقَاشَ فِي هَذِهِ النُّقْطَةِ أَوَّلًا."'

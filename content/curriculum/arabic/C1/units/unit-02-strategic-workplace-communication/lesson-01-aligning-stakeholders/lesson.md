@@ -1,10 +1,10 @@
 # Aligning Stakeholders
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan C1 yang lebih halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk aligning stakeholders dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati.
+Kamu perlu menyelaraskan beberapa pihak, mengelola ekspektasi, memberi feedback sensitif, dan menyampaikan risiko dengan hati-hati. Fokus lesson ini adalah aligning stakeholders, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

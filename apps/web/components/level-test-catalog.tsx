@@ -64,7 +64,7 @@ export function LevelTestCatalog() {
     return (
       <section className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
         <Loader2 className="h-6 w-6 animate-spin text-leaf" aria-hidden="true" />
-        <p className="mt-3 text-sm text-ink/60">Loading level tests...</p>
+        <p className="mt-3 text-sm text-ink/60">Memuat level test...</p>
       </section>
     );
   }
@@ -86,7 +86,7 @@ export function LevelTestCatalog() {
           <section key={language}>
             <div className="mb-4 flex items-end justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase text-leaf">Release Test Track</p>
+                <p className="text-xs font-semibold uppercase text-leaf">Track Level Test</p>
                 <h2 className="mt-1 text-2xl font-semibold">{languageLabel(language)} Track</h2>
               </div>
               <p className="text-sm font-semibold text-ink/45">{trackEntries.length} level test</p>
@@ -114,13 +114,13 @@ export function LevelTestCatalog() {
                   </div>
 
                   <div className="mt-5 grid gap-3 sm:grid-cols-3">
-                    <Metric label="Threshold" value={entry.test ? String(entry.test.overallThreshold) : "-"} />
+                    <Metric label="Ambang" value={entry.test ? String(entry.test.overallThreshold) : "-"} />
                     <Metric
                       label="Lesson Min"
                       value={entry.test ? `${entry.test.lessonCompletionRequiredPercent}%` : "-"}
                     />
                     <Metric
-                      label="Attempt"
+                      label="Status"
                       value={entry.latestAttempt ? formatAttemptStatus(entry.latestAttempt.status) : "Belum mulai"}
                     />
                   </div>
@@ -129,9 +129,9 @@ export function LevelTestCatalog() {
                     <div className="flex items-start gap-2">
                       <ClipboardCheck className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
                       <div>
-                        <p className="font-semibold text-ink">Flow tes</p>
+                        <p className="font-semibold text-ink">Alur tes</p>
                         <p className="mt-1">
-                          Mulai tes, isi section satu per satu, simpan draft, lalu kirim untuk review admin.
+                          Kerjakan tiap bagian, simpan jawaban, lalu kirim untuk dinilai.
                         </p>
                       </div>
                     </div>
@@ -168,14 +168,14 @@ function formatAttemptStatus(status: LevelTestAttempt["status"]) {
     return "Draft";
   }
   if (status === "submitted") {
-    return "Submitted";
+    return "Terkirim";
   }
-  return "Reviewed";
+  return "Selesai";
 }
 
 function formatStatus(status: string) {
   if (status === "published") {
-    return "Published";
+    return "Terbit";
   }
   if (status === "planned") {
     return "Draft";

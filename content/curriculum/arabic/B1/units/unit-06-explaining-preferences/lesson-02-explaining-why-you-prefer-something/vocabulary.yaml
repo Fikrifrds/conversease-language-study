@@ -1,16 +1,11 @@
 vocabulary:
 - word: أُفَضِّلُ
   meaning_id: saya lebih memilih
-  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ هَذَا الْخِيَارَ
-    لِأَنَّهُ أَوْضَحُ."'
+  usage_note: 'Dipakai untuk arti "saya lebih memilih". Contoh: "أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ
+    أَوْضَحُ."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ
-    أَوْضَحُ."'
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ."'
 - word: قَلِيلًا
   meaning_id: sedikit
   usage_note: 'Dipakai untuk arti "sedikit". Contoh: "رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'

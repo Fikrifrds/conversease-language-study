@@ -1,24 +1,6 @@
 lesson_key: lesson-05-meeting-participation-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T054821Z.wav
-  duration_seconds: 35.06
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 0c5ffb6f34a9067ca8bc36f0434a985032350553ba46e7fbd12818bcbcf4035f
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T054821Z.wav
-  trace_id: xQ0bumJVJdP9cwanKtlX,mICinemqm8B9TSUtrPNG,GTBn8UkV2clLHDxAqfEP,iF0JhmXqgVlovyWaWhgh,yVvzPfijoFUX75zyyb88,lco0mSfZLX1bio01hC7j,w8teplVi2Km0LT7nCCs2,mpb2UsV7cQDWI7J5kcK2
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:48:21.304920+00:00'
+assets: []

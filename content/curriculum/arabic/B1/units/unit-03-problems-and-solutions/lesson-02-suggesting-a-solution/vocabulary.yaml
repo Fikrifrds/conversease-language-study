@@ -1,33 +1,22 @@
 vocabulary:
 - word: أَقْتَرِحُ
   meaning_id: saya menyarankan
-  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "أَقْتَرِحُ أَنْ نُجَرِّبَ
-    حَلًّا بَسِيطًا."'
+  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: 'Dipakai untuk arti "rencana". Contoh: "يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ
-    قَلِيلًا."'
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا."'
 - word: قَلِيلًا
   meaning_id: sedikit
-  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ
-    قَلِيلًا."'
+  usage_note: 'Dipakai untuk arti "sedikit". Contoh: "يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا."'
 - word: حَلٌّ
   meaning_id: solusi
-  usage_note: 'Dipakai untuk arti "solusi". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ
-    الْخِيَارِ الْآخَرِ."'
+  usage_note: 'Dipakai untuk arti "solusi". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ."'
 - word: خِيَارٌ
   meaning_id: pilihan
-  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ
-    الْخِيَارِ الْآخَرِ."'
+  usage_note: 'Dipakai untuk arti "pilihan". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ."'
 - word: آخَرُ
   meaning_id: lain
-  usage_note: 'Dipakai untuk arti "lain". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ
-    الْآخَرِ."'
+  usage_note: 'Dipakai untuk arti "lain". Contoh: "هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ."'
 - word: مُرَاجَعَةٌ
   meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "لَكِنَّهُ يَحْتَاجُ
-    إِلَى مُرَاجَعَةٍ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "لَكِنَّهُ يَحْتَاجُ إِلَى مُرَاجَعَةٍ."'

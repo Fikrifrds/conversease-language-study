@@ -1,32 +1,25 @@
 vocabulary:
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ
-    مُبَكِّرًا."'
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا."'
 - word: وَصَلْتُ
   meaning_id: saya tiba
-  usage_note: 'Dipakai untuk arti "saya tiba". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ
-    مُبَكِّرًا."'
+  usage_note: 'Dipakai untuk arti "saya tiba". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا."'
 - word: مَكَانٌ
   meaning_id: tempat
-  usage_note: 'Dipakai untuk arti "tempat". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ
-    مُبَكِّرًا."'
+  usage_note: 'Dipakai untuk arti "tempat". Contoh: "أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا."'
 - word: اِنْتَظَرْتُ
   meaning_id: saya menunggu
-  usage_note: 'Dipakai untuk arti "saya menunggu". Contoh: "ثُمَّ انْتَظَرْتُ صَدِيقِي
-    قَلِيلًا."'
+  usage_note: 'Dipakai untuk arti "saya menunggu". Contoh: "ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا."'
 - word: قَلِيلًا
   meaning_id: sedikit
   usage_note: 'Dipakai untuk arti "sedikit". Contoh: "ثُمَّ انْتَظَرْتُ صَدِيقِي قَلِيلًا."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: 'Dipakai untuk arti "rencana". Contoh: "بَعْدَ ذَلِكَ، تَحَدَّثْنَا
-    عَنِ الْخُطَّةِ."'
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "بَعْدَ ذَلِكَ، تَحَدَّثْنَا عَنِ الْخُطَّةِ."'
 - word: أَخِيرًا
   meaning_id: akhirnya
-  usage_note: 'Dipakai untuk arti "akhirnya". Contoh: "وَأَخِيرًا، اتَّفَقْنَا عَلَى
-    الْخُطْوَةِ التَّالِيَةِ."'
+  usage_note: 'Dipakai untuk arti "akhirnya". Contoh: "وَأَخِيرًا، اتَّفَقْنَا عَلَى الْخُطْوَةِ التَّالِيَةِ."'
 - word: اِتَّفَقْنَا
   meaning_id: kami sepakat
-  usage_note: 'Dipakai untuk arti "kami sepakat". Contoh: "وَأَخِيرًا، اتَّفَقْنَا
-    عَلَى الْخُطْوَةِ التَّالِيَةِ."'
+  usage_note: 'Dipakai untuk arti "kami sepakat". Contoh: "وَأَخِيرًا، اتَّفَقْنَا عَلَى الْخُطْوَةِ التَّالِيَةِ."'

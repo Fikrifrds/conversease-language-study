@@ -1,24 +1,6 @@
 lesson_key: lesson-04-making-a-simple-decision
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-3nav5pHC1EYvWOd5LmnA-20260618T022649Z.wav
-  duration_seconds: 24.3
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Omar: OoE8swS3hImZANNOodf6
-    Raka: kr4VZw8MSZMHE0y2m40n
-  line_count: 6
-  script_content_hash: a585f6a4819e4fad9e761e302035d8d29f87923afb7cf31eaa22a0f2e0768f4b
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-3nav5pHC1EYvWOd5LmnA-20260618T022649Z.wav
-  trace_id: YmbREAwcl38jQoepUYkT,e76atrPj8Jc50WVonDzQ,HAHHt5SSTFDgGMSIQGGa,YU7s13iwbZ5r1q8BndWO,Ni6uWIRHSMuudKRWiTWp,nK5GioXrWZvC0sl9pzSq
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:26:49.082789+00:00'
+assets: []

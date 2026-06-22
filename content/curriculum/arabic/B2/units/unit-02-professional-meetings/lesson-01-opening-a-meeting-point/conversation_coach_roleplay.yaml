@@ -1,65 +1,67 @@
 scenario_key: arabic_b2_opening_a_meeting_point
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى فَتْحُ نُقْطَةٍ
-  فِي الِاجْتِمَاعِ.
-learner_goal: Latih percakapan Arab B2 untuk membuka poin rapat dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: لِنَبْدَأِ الِاجْتِمَاعَ. مَا النُّقْطَةُ الأُولَى الَّتِي تُرِيدِينَ طَرْحَهَا؟
+learner_goal: Latih percakapan Arab B2 untuk membuka topik rapat, memberi alasan, meminta keputusan, dan
+  menutup dengan action item.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى فَتْحُ نُقْطَةٍ
-    فِي الِاجْتِمَاعِ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.'
-  sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.
-  focus: Membuka kontribusi rapat.
+- coach: لِنَبْدَأِ الِاجْتِمَاعَ. مَا النُّقْطَةُ الأُولَى الَّتِي تُرِيدِينَ طَرْحَهَا؟
+  hint: 'Jawab dengan struktur B2 memakai: أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ
+    الْمَشْرُوعِ.'
+  sample_answer: أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
+  focus: Membuka topik rapat.
   expected_keywords:
-  - أُرِيدُ
+  - أَوَدُّ
   - أَنْ
-  - أَبْدَأَ
-  - بِنُقْطَةٍ
-  - عَنْ
-  indonesian_explanation: Saya ingin mulai dengan poin tentang membuka poin rapat.
-- coach: 'استخدم الفكرة: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  hint: 'Jawab dengan struktur B2 memakai: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  sample_answer: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  focus: Memastikan scope.
+  - أَفْتَحَ
+  - النِّقَاشَ
+  - حَوْلَ
+  indonesian_explanation: Saya ingin membuka diskusi tentang tenggat penyerahan proyek.
+- coach: 'استخدم الفكرة: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.'
+  hint: 'Jawab dengan struktur B2 memakai: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ
+    الْيَوْمِ.'
+  sample_answer: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
+  focus: Memberi alasan rapat.
   expected_keywords:
-  - هَلْ
-  - نِطَاقُ
-  - النِّقَاشِ
-  - وَاضِحٌ
-  - لِلْجَمِيعِ
-  indonesian_explanation: Apakah cakupan diskusi jelas untuk semua orang?
-- coach: 'استخدم الفكرة: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  sample_answer: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  focus: Memberi feedback profesional.
+  - لِأَنَّ
+  - الْفَرِيقَ
+  - يَحْتَاجُ
+  - إِلَى
+  - قَرَارٍ
+  indonesian_explanation: Karena tim membutuhkan keputusan sebelum akhir hari.
+- coach: 'استخدم الفكرة: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ
+    الأَخِيرَةَ.'
+  sample_answer: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.
+  focus: Meminta keputusan konkret.
   expected_keywords:
-  - عِنْدِي
-  - مُلَاحَظَةٌ
-  - بَنَّاءَةٌ
-  - عَلَى
-  - هَذَا
-  indonesian_explanation: Saya punya masukan konstruktif untuk usulan ini.
-- coach: 'استخدم الفكرة: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  sample_answer: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  focus: Merangkum keputusan.
+  - نُحَدِّدُ
+  - الْمَوْعِدَ
+  - النِّهَائِيَّ
+  - وَمَنْ
+  - سَيُرَاجِعُ
+  indonesian_explanation: Kita menentukan tenggat akhir dan siapa yang akan meninjau versi terakhir.
+- coach: 'استخدم الفكرة: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.'
+  sample_answer: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.
+  focus: Menutup dengan action item.
   expected_keywords:
-  - الْقَرَارُ
-  - الْأَسَاسِيُّ
-  - هُوَ
-  - أَنْ
-  - نُكْمِلَ
-  indonesian_explanation: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+  - سَأُرْسِلُ
+  - مُلَخَّصًا
+  - قَصِيرًا
+  - مَعَ
+  - الْقَرَارِ
+  indonesian_explanation: Saya akan mengirim ringkasan singkat berisi keputusan dan tanggung jawab.
 target_phrases:
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
+- أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
+- لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
+- نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.
+- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.
+- لِنَحْصُرِ النِّقَاشَ فِي هَذِهِ النُّقْطَةِ أَوَّلًا.
 rubric:
   speaking:
     minimum_score: 72

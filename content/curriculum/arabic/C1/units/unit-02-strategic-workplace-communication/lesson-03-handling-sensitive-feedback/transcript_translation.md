@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** كَيْفَ تُطَبِّقُ مَهَارَةَ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan handling sensitive feedback tactfully dalam percakapan formal?
+- **Maryam:** كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟ -> Bagaimana kamu membuat jawaban ini meyakinkan dan seimbang?
 - **Noura:** فِي مَهَارَةِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam skill handling sensitive feedback tactfully, Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- **Maryam:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Maryam:** مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟ -> Informasi apa yang membuat handling sensitive feedback tactfully lebih meyakinkan?
 - **Noura:** عِنْدَ تَطْبِيقِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan handling sensitive feedback tactfully, Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- **Maryam:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Maryam:** إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟ -> Jika pihak lain memahami handling sensitive feedback tactfully terlalu sempit, bagaimana kamu memperluas gambarannya?
 - **Noura:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- **Maryam:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Maryam:** كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟ -> Bagaimana kamu menghubungkan handling sensitive feedback tactfully dengan pesan penutup yang jelas?
 - **Noura:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Dalam final formulation untuk handling sensitive feedback tactfully, Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.

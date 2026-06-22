@@ -177,7 +177,7 @@ export function LevelTestPanel({
       setActiveSectionIndex(0);
       setStatusMessage("Tes dimulai. Isi jawaban per bagian lalu simpan draft atau kirim saat selesai.");
     } catch {
-      setError("Attempt belum bisa dimulai.");
+      setError("Tes belum bisa dimulai.");
     } finally {
       setIsStarting(false);
     }
@@ -233,7 +233,7 @@ export function LevelTestPanel({
     }
 
     if (!canSubmit) {
-      setError("Lengkapi semua jawaban section sebelum mengirim tes.");
+      setError("Lengkapi semua jawaban bagian sebelum mengirim tes.");
       return;
     }
 
@@ -257,9 +257,9 @@ export function LevelTestPanel({
       setSavedAttempt(submitted);
       setPreview(getPreviewFromAttempt(submitted));
       setIsTakingTest(false);
-      setStatusMessage("Tes berhasil dikirim. Hasil resmi akan muncul setelah review admin.");
+      setStatusMessage("Tes berhasil dikirim. Hasil resmi akan muncul setelah ditinjau.");
     } catch {
-      setError("Attempt belum bisa disubmit.");
+      setError("Tes belum bisa dikirim.");
     } finally {
       setIsSubmitting(false);
     }
@@ -287,7 +287,7 @@ export function LevelTestPanel({
     return (
       <section className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
         <Loader2 className="h-6 w-6 animate-spin text-leaf" aria-hidden="true" />
-        <p className="mt-3 text-sm text-ink/60">Loading level test...</p>
+        <p className="mt-3 text-sm text-ink/60">Memuat level test...</p>
       </section>
     );
   }
@@ -331,7 +331,7 @@ export function LevelTestPanel({
                 {savedAttempt?.status === "in_progress"
                   ? "Lanjutkan Tes"
                   : savedAttempt?.status === "submitted" || savedAttempt?.status === "reviewed"
-                    ? "Mulai Attempt Baru"
+                    ? "Mulai Percobaan Baru"
                     : "Mulai Tes"}
               </button>
             </div>
@@ -348,14 +348,14 @@ export function LevelTestPanel({
           <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
-                <p className="text-sm font-semibold uppercase text-leaf">Take Test Flow</p>
-                <h2 className="mt-2 text-2xl font-semibold">Section {activeSectionIndex + 1} dari {test.sections.length}</h2>
+                <p className="text-sm font-semibold uppercase text-leaf">Pengerjaan Tes</p>
+                <h2 className="mt-2 text-2xl font-semibold">Bagian {activeSectionIndex + 1} dari {test.sections.length}</h2>
                 <p className="mt-2 text-sm text-ink/60">
-                  Jawab setiap bagian, beri self-score, lalu simpan draft jika ingin lanjut nanti.
+                  Jawab setiap bagian, isi perkiraan skor, lalu simpan draft jika ingin lanjut nanti.
                 </p>
               </div>
               <div className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/70">
-                {answeredCount}/{test.sections.length} section terisi
+                {answeredCount}/{test.sections.length} bagian terisi
               </div>
             </div>
 
@@ -367,14 +367,15 @@ export function LevelTestPanel({
                   <button
                     key={section.key}
                     type="button"
-                    onClick={() => setActiveSectionIndex(index)}
+                    onClick={() => void goToSection(index)}
+                    disabled={isSavingDraft}
                     className={`rounded-lg border px-3 py-3 text-left text-sm transition ${
                       active
                         ? "border-leaf bg-mint"
                         : answered
                           ? "border-leaf/30 bg-white"
                           : "border-ink/10 bg-white hover:bg-paper"
-                    }`}
+                    } disabled:cursor-not-allowed disabled:opacity-60`}
                   >
                     <p className="font-semibold text-ink">{section.title}</p>
                     <p className="mt-1 text-xs text-ink/60">{answered ? "Sudah dijawab" : "Belum dijawab"}</p>
@@ -387,11 +388,11 @@ export function LevelTestPanel({
               <div className="flex flex-wrap items-start justify-between gap-3">
                 <div>
                   <p className="text-sm font-semibold uppercase text-leaf">{currentSection.title}</p>
-                  <h3 className="mt-2 text-xl font-semibold">Tugas Section</h3>
+                  <h3 className="mt-2 text-xl font-semibold">Tugas Bagian</h3>
                   <p className="mt-3 max-w-3xl text-sm leading-7 text-ink/70">{currentSection.task.prompt}</p>
                 </div>
                 <div className="flex gap-2 text-xs font-semibold">
-                  <span className="rounded-md bg-white px-2 py-1">Weight {currentSection.weight}%</span>
+                  <span className="rounded-md bg-white px-2 py-1">Bobot {currentSection.weight}%</span>
                   <span className="rounded-md bg-mint px-2 py-1 text-leaf">Min {currentSection.minimumScore}</span>
                 </div>
               </div>
@@ -419,7 +420,7 @@ export function LevelTestPanel({
 
                 <div className="grid gap-4 sm:grid-cols-[0.3fr_0.7fr]">
                   <label className="block text-sm font-medium text-ink/70">
-                    Self-score
+                    Perkiraan skor
                     <input
                       type="number"
                       min={0}
@@ -435,7 +436,7 @@ export function LevelTestPanel({
                       value={responses[currentSection.key]?.notes ?? ""}
                       onChange={(event) => updateResponse(currentSection.key, "notes", event.target.value)}
                       rows={3}
-                      placeholder="Tulis konteks, hal yang masih ragu, atau poin yang ingin dicek admin."
+                      placeholder="Tulis konteks, hal yang masih ragu, atau poin yang ingin dicek penilai."
                       className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-sm text-ink"
                     />
                   </label>
@@ -506,7 +507,7 @@ export function LevelTestPanel({
                   <p className="mt-2 text-sm leading-6 text-ink/65">{section.task.prompt}</p>
                 </div>
                 <div className="flex gap-2 text-xs font-semibold">
-                  <span className="rounded-md bg-paper px-2 py-1">Weight {section.weight}%</span>
+                  <span className="rounded-md bg-paper px-2 py-1">Bobot {section.weight}%</span>
                   <span className="rounded-md bg-mint px-2 py-1 text-leaf">Min {section.minimumScore}</span>
                 </div>
               </div>
@@ -528,12 +529,11 @@ export function LevelTestPanel({
           <ClipboardCheck className="h-6 w-6 text-leaf" aria-hidden="true" />
           <h2 className="mt-3 text-xl font-semibold">Kontrol Tes</h2>
           <p className="mt-2 text-sm leading-6 text-ink/60">
-            Flow sekarang lengkap: mulai tes, isi jawaban per bagian, simpan draft, cek kesiapan,
-            lalu kirim untuk review admin.
+            Kelola jawaban per bagian, simpan draft, cek kesiapan, lalu kirim untuk dinilai.
           </p>
 
           <label className="mt-4 block text-sm font-medium text-ink/70">
-            Lesson completion
+            Penyelesaian lesson
             <input
               type="number"
               min={0}
@@ -555,7 +555,7 @@ export function LevelTestPanel({
                     </p>
                   </div>
                   <div className="text-right">
-                    <p className="text-xs font-semibold uppercase text-ink/45">Score</p>
+                    <p className="text-xs font-semibold uppercase text-ink/45">Skor</p>
                     <p className="text-lg font-semibold">{scores[section.key] ?? 0}</p>
                   </div>
                 </div>
@@ -608,12 +608,12 @@ export function LevelTestPanel({
 
         {savedAttempt ? (
           <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-            <p className="text-sm font-semibold uppercase text-leaf">Attempt Saat Ini</p>
+            <p className="text-sm font-semibold uppercase text-leaf">Percobaan Saat Ini</p>
             <h2 className="mt-2 text-xl font-semibold">
               {savedAttempt.status === "reviewed"
-                ? "Sudah Ditinjau Admin"
+                ? "Sudah Ditinjau"
                 : savedAttempt.status === "submitted"
-                  ? "Menunggu Tinjauan Admin"
+                  ? "Menunggu Tinjauan"
                   : "Draft Tes Tersimpan"}
             </h2>
             <p className="mt-2 text-sm text-ink/60">{savedAttempt.id}</p>
@@ -635,13 +635,13 @@ export function LevelTestPanel({
                     ? savedAttempt.passed
                       ? "Lulus"
                       : "Belum lulus"
-                    : "Menunggu review admin"}
+                    : "Menunggu tinjauan"}
                 </p>
                 {savedAttempt.reviewedBy ? (
                   <p className="mt-2 text-xs text-ink/55">Ditinjau oleh {savedAttempt.reviewedBy}</p>
                 ) : null}
                 {savedAttempt.adminNotes ? (
-                  <p className="mt-2 text-sm text-ink/65">Catatan admin: {savedAttempt.adminNotes}</p>
+                  <p className="mt-2 text-sm text-ink/65">Catatan penilai: {savedAttempt.adminNotes}</p>
                 ) : null}
               </div>
             ) : null}
@@ -671,7 +671,7 @@ export function LevelTestPanel({
             ) : null}
             {preview.weakSkills.length ? (
               <div className="mt-4 rounded-lg bg-white/70 px-3 py-3 text-sm text-ink/70">
-                Weak skills: {preview.weakSkills.join(", ")}
+                Skill yang perlu diperkuat: {preview.weakSkills.join(", ")}
               </div>
             ) : null}
           </section>
@@ -797,7 +797,7 @@ function responsePlaceholder(taskType: string, sectionTitle: string) {
 
 function formatStatus(status: string) {
   if (status === "published") {
-    return "Published";
+    return "Terbit";
   }
   if (status === "planned") {
     return "Draft";

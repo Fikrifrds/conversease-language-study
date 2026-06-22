@@ -1,24 +1,6 @@
 lesson_key: lesson-01-checking-in
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-04-travel-situations/lesson-01-checking-in/listening-3nav5pHC1EYvWOd5LmnA-20260618T022712Z.wav
-  duration_seconds: 18.94
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: a411e9a439b1dd169aaefceecb266ccbe614e21fad5f152002cf1c617781d441
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-04-travel-situations/lesson-01-checking-in/listening-3nav5pHC1EYvWOd5LmnA-20260618T022712Z.wav
-  trace_id: ITpCCJxN1w0yCbA1mb3X,s16o1NlwRaVgs65amogc,ZUVicyWL1m9kmPJbDNEK,q9yegggxu2RX17SddwSt,5TZpReKcmU67Ocz2R0Kp,r7xqmy5CukW7dysofWtH
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:27:12.594654+00:00'
+assets: []

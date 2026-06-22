@@ -1,33 +1,33 @@
 vocabulary:
 - word: قِرَاءَةٌ
   meaning_id: membaca
-  usage_note: 'Dipakai untuk arti "membaca". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ
-    الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
+  usage_note: 'Dipakai untuk arti "membaca". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+    قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
 - word: السِّيَاقُ
   meaning_id: konteks
-  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ
-    الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
+  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+    قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ قِرَاءَةِ
-    السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ..."'
+  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+    هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ..."'
 - word: لَبَاقَةٌ
   meaning_id: takt/kesantunan
-  usage_note: 'Dipakai untuk arti "takt/kesantunan". Contoh: "عِنْدَ تَطْبِيقِ قِرَاءَةِ
-    السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ..."'
+  usage_note: 'Dipakai untuk arti "takt/kesantunan". Contoh: "عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+    هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ..."'
 - word: مِعْيَارٌ
   meaning_id: norma/standar
-  usage_note: 'Dipakai untuk arti "norma/standar". Contoh: "فِي بَلَدِي، هَذَا الْمِعْيَارُ
-    يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ."'
+  usage_note: 'Dipakai untuk arti "norma/standar". Contoh: "فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ
+    مُخْتَلِفَةٍ."'
 - word: تَحَدٍّ
   meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ
-    الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
+  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
+    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
 - word: سُوءٌ
   meaning_id: keburukan/salah
-  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "إِذَا ظَهَرَ تَحَدٍّ
-    فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
+  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
+    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
 - word: فَهْمٌ
   meaning_id: pemahaman
-  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ
-    الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
+    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'

@@ -1,67 +1,66 @@
 scenario_key: arabic_b2_giving_constructive_feedback
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ
-  مُلَاحَظَةٍ بَنَّاءَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk memberi masukan konstruktif dengan alasan, contoh, respons,
-  dan rekomendasi.
+opening_line: رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟
+learner_goal: Latih percakapan Arab B2 untuk memberi feedback konstruktif, menyebut kekuatan, memberi
+  saran, dan menawarkan perbaikan.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ مُلَاحَظَةٍ
-    بَنَّاءَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ
-    بَنَّاءَةٍ.'
-  sample_answer: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.
-  focus: Membuka kontribusi rapat.
+- coach: رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟
+  hint: 'Jawab dengan struktur B2 memakai: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى
+    هَدَفٍ أَوْضَحَ.'
+  sample_answer: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+  focus: Memberi feedback seimbang.
   expected_keywords:
-  - أُرِيدُ
-  - أَنْ
-  - أَبْدَأَ
-  - بِنُقْطَةٍ
-  - عَنْ
-  indonesian_explanation: Saya ingin mulai dengan poin tentang memberi masukan konstruktif.
-- coach: 'استخدم الفكرة: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  hint: 'Jawab dengan struktur B2 memakai: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟'
-  sample_answer: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  focus: Memastikan scope.
+  - الْهَيْكَلُ
+  - جَيِّدٌ،
+  - وَلَكِنَّ
+  - الْمُقَدِّمَةَ
+  - تَحْتَاجُ
+  indonesian_explanation: Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
+- coach: 'استخدم الفكرة: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.'
+  hint: 'Jawab dengan struktur B2 memakai: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا
+    أَقْوَى.'
+  sample_answer: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
+  focus: Membuat feedback konstruktif.
   expected_keywords:
-  - هَلْ
-  - نِطَاقُ
-  - النِّقَاشِ
-  - وَاضِحٌ
-  - لِلْجَمِيعِ
-  indonesian_explanation: Apakah cakupan diskusi jelas untuk semua orang?
-- coach: 'استخدم الفكرة: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.'
-  sample_answer: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  focus: Memberi feedback profesional.
+  - الْفِكْرَةُ
+  - قَوِيَّةٌ،
+  - وَإِضَافَةُ
+  - هَدَفٍ
+  - وَاحِدٍ
+  indonesian_explanation: Idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.
+- coach: 'استخدم الفكرة: نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.'
+  sample_answer: نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
+  focus: Memberi contoh konkret.
   expected_keywords:
-  - عِنْدِي
-  - مُلَاحَظَةٌ
-  - بَنَّاءَةٌ
-  - عَلَى
-  - هَذَا
-  indonesian_explanation: Saya punya masukan konstruktif untuk usulan ini.
-- coach: 'استخدم الفكرة: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.'
-  sample_answer: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  focus: Merangkum keputusan.
+  - نَذْكُرُ
+  - كَيْفَ
+  - سَيَقِيسُ
+  - الْعَمِيلُ
+  - النَّجَاحَ
+  indonesian_explanation: Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.
+- coach: 'استخدم الفكرة: أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.'
+  sample_answer: أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.
+  focus: Menutup feedback dengan bantuan.
   expected_keywords:
-  - الْقَرَارُ
-  - الْأَسَاسِيُّ
-  - هُوَ
-  - أَنْ
-  - نُكْمِلَ
-  indonesian_explanation: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
+  - أُرْسِلُ
+  - التَّعْلِيقَ
+  - مَعَ
+  - اقْتِرَاحٍ
+  - صَغِيرٍ
+  indonesian_explanation: Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.
 target_phrases:
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
+- الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+- الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
+- نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
+- أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.
+- كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟
 rubric:
   speaking:
     minimum_score: 72

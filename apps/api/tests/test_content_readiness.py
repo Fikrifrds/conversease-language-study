@@ -78,9 +78,9 @@ class ContentReadinessTest(unittest.TestCase):
         self.assertEqual(readiness["summary"]["planned_lesson_count"], 400)
         self.assertEqual(readiness["summary"]["implemented_lesson_count"], 400)
         self.assertEqual(readiness["summary"]["text_ready_count"], 400)
-        self.assertEqual(readiness["summary"]["audio_ready_count"], 143)
+        self.assertEqual(readiness["summary"]["audio_ready_count"], 28)
         self.assertEqual(readiness["summary"]["missing_content_count"], 0)
-        self.assertEqual(readiness["summary"]["missing_audio_count"], 257)
+        self.assertEqual(readiness["summary"]["missing_audio_count"], 372)
 
     def test_audio_manifest_ready_requires_dialogue_main_audio(self):
         with tempfile.TemporaryDirectory() as directory:

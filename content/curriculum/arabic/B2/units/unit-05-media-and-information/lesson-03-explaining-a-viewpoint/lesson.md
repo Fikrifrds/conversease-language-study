@@ -1,10 +1,10 @@
 # Explaining a Viewpoint
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk menjelaskan sudut pandang dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru.
+Kamu membahas artikel, sumber informasi, sudut pandang, dan perubahan pendapat berdasarkan informasi baru. Fokus lesson ini adalah menjelaskan sudut pandang; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

@@ -1,10 +1,10 @@
 # Stating Your Position
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk menentukan posisi dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan.
+Kamu menyampaikan pendapat dalam diskusi profesional dan perlu mendukungnya dengan alasan, contoh, serta respons terhadap keberatan. Fokus lesson ini adalah menentukan posisi; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

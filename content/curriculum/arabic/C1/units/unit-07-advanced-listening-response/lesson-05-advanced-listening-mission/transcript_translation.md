@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُطَبِّقُ مَهَارَةَ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan responding after advanced listening dalam percakapan formal?
+- **Yusuf:** كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah skill ini menjadi langkah praktis?
 - **Hasan:** فِي مَهَارَةِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا. -> Dalam skill responding after advanced listening, Makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
-- **Yusuf:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Yusuf:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan responding after advanced listening?
 - **Hasan:** عِنْدَ تَطْبِيقِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ. -> Saat menerapkan responding after advanced listening, Saya akan menjawab poin utama dulu, lalu kembali ke detail. Jika saya merangkum apa yang saya dengar, ide utamanya adalah menunda keputusan.
-- **Yusuf:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Yusuf:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan responding after advanced listening?
 - **Hasan:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Jika muncul tantangan dalam skill ini, Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?
-- **Yusuf:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Yusuf:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup responding after advanced listening dengan kalimat yang menunjukkan presisi dan fleksibilitas?
 - **Hasan:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Dalam final formulation untuk responding after advanced listening, Dengan cara ini, saya tidak hanya merespons kata-kata, tetapi maksudnya.

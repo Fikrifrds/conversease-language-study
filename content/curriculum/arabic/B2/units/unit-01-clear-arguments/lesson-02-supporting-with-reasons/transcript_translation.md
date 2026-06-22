@@ -2,9 +2,9 @@
 
 - **Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى دَعْمُ الرَّأْيِ بِالْأَسْبَابِ. -> Apa posisimu tentang topik ini? Saya ingin fokus pada mendukung pendapat dengan alasan.
 - **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik mendukung pendapat dengan alasan penting dalam diskusi.
-- **Ahmad:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
-- **Karim:** أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas. Contohnya, tim membutuhkan keputusan yang cepat.
-- **Ahmad:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?
-- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- **Ahmad:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟ -> Jadi apa rekomendasi akhirnya?
-- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- **Ahmad:** أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟ -> Bagian mana dari mendukung pendapat dengan alasan yang perlu diperjelas?
+- **Karim:** لِتَجَنُّبِ سُوءِ الْفَهْمِ، أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Untuk menghindari salah paham, Saya mendukung pendapat ini dengan dua alasan yang jelas. Contohnya, tim membutuhkan keputusan yang cepat.
+- **Ahmad:** مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟ -> Batas apa yang tidak ingin kita lewati dalam mendukung pendapat dengan alasan?
+- **Karim:** بَعْدَ هَذَا التَّوْضِيحِ، أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Setelah penjelasan ini, Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+- **Ahmad:** كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟ -> Bagaimana kita mengunci kesepakatan tentang mendukung pendapat dengan alasan?
+- **Karim:** سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ: لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Saya akan menutup diskusi dengan hal praktis: Karena itu, saya lebih memilih kita sepakat pada arah ini.

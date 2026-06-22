@@ -1,24 +1,6 @@
 lesson_key: lesson-03-describing-feelings
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-01-personal-stories/lesson-03-describing-feelings/listening-3nav5pHC1EYvWOd5LmnA-20260618T022440Z.wav
-  duration_seconds: 19.82
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: 141c70f8150d0e28dfebcc34051f8e8ba1f37d53716459b45944449c735b5a73
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-01-personal-stories/lesson-03-describing-feelings/listening-3nav5pHC1EYvWOd5LmnA-20260618T022440Z.wav
-  trace_id: NkLyw76hHe0k79bq7bRS,y6bQVSp2fsMtqOU1pjwi,cgQy9JI7WnAJM5yUUHy7,m0D1QLh5ljuigtkuqV3Z,WtrFIrHW5IpP0I5YesuH,mRLfGpgi28bzHq2yznic
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:24:40.660519+00:00'
+assets: []

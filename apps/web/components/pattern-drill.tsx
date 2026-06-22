@@ -26,7 +26,6 @@ function blankFromPattern(pattern: string) {
 export function PatternDrill({
   pattern,
   example,
-  seedKey,
   defaultOpen = false
 }: {
   pattern: string;
@@ -39,7 +38,7 @@ export function PatternDrill({
   const variations = useMemo(() => {
     const items = [example?.trim(), scaffoldFromPattern(pattern), blankFromPattern(pattern)].filter(Boolean);
     return Array.from(new Set(items));
-  }, [example, pattern, seedKey]);
+  }, [example, pattern]);
 
   return (
     <div className="mt-3 rounded-lg border border-ink/10 bg-white p-4">

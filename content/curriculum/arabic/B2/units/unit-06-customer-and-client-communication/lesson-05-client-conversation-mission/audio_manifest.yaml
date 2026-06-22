@@ -1,24 +1,6 @@
 lesson_key: lesson-05-client-conversation-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055412Z.wav
-  duration_seconds: 40.98
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: b450215762a278fafedf95acb1db0160b1efb970ba4decb53a4a833aa058dfcb
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T055412Z.wav
-  trace_id: vUqN1jYTL6mSHii3qBi5,BNnxJBq5nlOo8zrBWdxu,6tTph41Uy0WbLFmx9MFK,iXhBlhtRf62QAArt3anu,mdZVerB1Gb6U65XQ1bSD,EyarV4QpT4Uw0Zqt8P9P,8kg37leIoeDBCEfvIYto,pcNEEAyo3opIoFSCHHYF
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:54:12.219235+00:00'
+assets: []

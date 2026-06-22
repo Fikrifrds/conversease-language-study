@@ -1,17 +1,19 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mulai dengan poin tentang memberi masukan konstruktif.'
-  target_response: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih
+    jelas.'
+  target_response: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Apakah cakupan diskusi jelas untuk semua orang?'
-  target_response: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+  - الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.'
+  target_response: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
   acceptable_responses:
-  - هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- prompt: 'Ucapkan dalam bahasa Arab: Saya punya masukan konstruktif untuk usulan ini.'
-  target_response: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+  - الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah
+    satu bulan.'
+  target_response: نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
   acceptable_responses:
-  - عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.'
-  target_response: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.'
+  target_response: أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.
   acceptable_responses:
-  - الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.

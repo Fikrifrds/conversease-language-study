@@ -1,21 +1,13 @@
 vocabulary:
 - word: عَادَةٌ
   meaning_id: kebiasaan
-  usage_note: 'Dipakai untuk arti "kebiasaan". Contoh: "مِنَ الْعَادَةِ أَنْ نُحَيِّيَ
-    الْجِيرَانَ."'
+  usage_note: 'Dipakai untuk arti "kebiasaan". Contoh: "مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ."'
 - word: الصَّبَاحُ
   meaning_id: pagi
-  usage_note: 'Dipakai untuk arti "pagi". Contoh: "فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ
-    نَشِيطًا."'
+  usage_note: 'Dipakai untuk arti "pagi". Contoh: "فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا."'
 - word: النَّاسُ
   meaning_id: orang-orang
-  usage_note: 'Dipakai untuk arti "orang-orang". Contoh: "بَعْضُ النَّاسِ يَفْضِّلُونَ
-    الْهُدُوءَ."'
+  usage_note: 'Dipakai untuk arti "orang-orang". Contoh: "بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ."'
 - word: اِحْتِرَامٌ
   meaning_id: penghormatan
-  usage_note: 'Dipakai untuk arti "penghormatan". Contoh: "هَذِهِ الْعَادَةُ تُسَاعِدُ
-    عَلَى الِاحْتِرَامِ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "penghormatan". Contoh: "هَذِهِ الْعَادَةُ تُسَاعِدُ عَلَى الِاحْتِرَامِ."'

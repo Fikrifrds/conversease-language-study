@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_review_presenting_and_debate
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
 learner_goal: Latih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur,
   presisi, dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ
     الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.'
   sample_answer: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ

@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ.
-  meaning_id: Saya ingin mulai dengan poin tentang memperjelas scope diskusi.
-  usage_note: Membuka kontribusi rapat.
-- phrase: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  meaning_id: Apakah cakupan diskusi jelas untuk semua orang?
-  usage_note: Memastikan scope.
-- phrase: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  meaning_id: Saya punya masukan konstruktif untuk usulan ini.
-  usage_note: Memberi feedback profesional.
-- phrase: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  meaning_id: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-  usage_note: Merangkum keputusan.
-- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
-  meaning_id: Saya akan mengirim ringkasan singkat setelah rapat.
-  usage_note: Menutup dengan action item.
+- phrase: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
+  meaning_id: Cakupannya belum sepenuhnya jelas.
+  usage_note: Membuka klarifikasi scope.
+- phrase: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
+  meaning_id: Kita memasukkan halaman utama dan menunda laporan.
+  usage_note: Membatasi scope.
+- phrase: هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.
+  meaning_id: Ini membuat tenggat tetap realistis dan mengurangi risiko.
+  usage_note: Memberi alasan batasan.
+- phrase: سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.
+  meaning_id: Saya akan mengonfirmasi itu dalam pesan singkat setelah rapat.
+  usage_note: Mengonfirmasi follow-up.
+- phrase: مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى؟
+  meaning_id: Apa yang masuk fase pertama?
+  usage_note: Bertanya batas scope.

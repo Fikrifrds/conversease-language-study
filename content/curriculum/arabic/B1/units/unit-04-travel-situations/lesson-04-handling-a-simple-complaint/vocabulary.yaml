@@ -1,25 +1,22 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: 'Dipakai untuk arti "masalah". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً."'
 - word: صَغِيرَةٌ
   meaning_id: kecil
-  usage_note: 'Dipakai untuk arti "kecil". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "kecil". Contoh: "أُرِيدُ أَنْ أُوَضِّحَ مُشْكِلَةً صَغِيرَةً."'
 - word: غُرْفَةٌ
   meaning_id: ruangan/kamar
-  usage_note: 'Dipakai untuk arti "ruangan/kamar". Contoh: "الْغُرْفَةُ غَيْرُ نَظِيفَةٍ
-    تَمَامًا."'
+  usage_note: 'Dipakai untuk arti "ruangan/kamar". Contoh: "الْغُرْفَةُ غَيْرُ نَظِيفَةٍ تَمَامًا."'
 - word: الْيَوْمُ
   meaning_id: hari ini
-  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "إِذَا أَمْكَنَ، أُرِيدُ حَلًّا
-    الْيَوْمَ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "hari ini". Contoh: "إِذَا أَمْكَنَ، أُرِيدُ حَلًّا الْيَوْمَ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟"'
+- word: لِمَاذَا
+  meaning_id: mengapa
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟"'

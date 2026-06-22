@@ -1,33 +1,25 @@
 vocabulary:
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً."'
 - word: أُضِيفُ
   meaning_id: saya menambahkan
-  usage_note: 'Dipakai untuk arti "saya menambahkan". Contoh: "أُرِيدُ أَنْ أُضِيفَ
-    نُقْطَةً صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "saya menambahkan". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً."'
 - word: صَغِيرَةٌ
   meaning_id: kecil
-  usage_note: 'Dipakai untuk arti "kecil". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً
-    صَغِيرَةً."'
+  usage_note: 'Dipakai untuk arti "kecil". Contoh: "أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً."'
 - word: أَقْتَرِحُ
   meaning_id: saya menyarankan
-  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ
-    الْخُطَّةَ أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: 'Dipakai untuk arti "rencana". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ
-    أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ
-    أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "أَقْتَرِحُ أَنْ نُرَاجِعَ الْخُطَّةَ أَوَّلًا."'
 - word: خَطَأٌ
   meaning_id: kesalahan
-  usage_note: 'Dipakai untuk arti "kesalahan". Contoh: "هَذَا يُمْكِنُ أَنْ يُقَلِّلَ
-    الْخَطَأَ."'
+  usage_note: 'Dipakai untuk arti "kesalahan". Contoh: "هَذَا يُمْكِنُ أَنْ يُقَلِّلَ الْخَطَأَ."'

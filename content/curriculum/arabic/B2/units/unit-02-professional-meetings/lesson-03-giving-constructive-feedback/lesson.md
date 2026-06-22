@@ -1,10 +1,10 @@
 # Giving Constructive Feedback
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk memberi masukan konstruktif dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.
+Kamu meninjau draft proposal di rapat kecil dan perlu memberi feedback yang spesifik tanpa terdengar menyerang.
 
 ## Catatan Belajar
 

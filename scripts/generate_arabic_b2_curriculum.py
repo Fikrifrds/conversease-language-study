@@ -290,6 +290,225 @@ LESSONS_BY_UNIT: dict[str, list[tuple[str, str, str, str, str]]] = {
 }
 
 
+B2_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
+    {
+        "detail": (
+            "مَا السَّبَبُ الْأَوَّلُ الَّذِي يَجْعَلُ هَذِهِ النُّقْطَةَ مُهِمَّةً؟",
+            "Apa alasan pertama yang membuat {focus_id} penting di sini?",
+        ),
+        "challenge": (
+            "مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟",
+            "Bagian mana dari {focus_id} yang mungkin dipertanyakan tim?",
+        ),
+        "closing": (
+            "مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟",
+            "Langkah realistis apa setelah membahas {focus_id}?",
+        ),
+    },
+    {
+        "detail": (
+            "أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟",
+            "Bagian mana dari {focus_id} yang perlu diperjelas?",
+        ),
+        "challenge": (
+            "مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟",
+            "Batas apa yang tidak ingin kita lewati dalam {focus_id}?",
+        ),
+        "closing": (
+            "كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟",
+            "Bagaimana kita mengunci kesepakatan tentang {focus_id}?",
+        ),
+    },
+    {
+        "detail": (
+            "مَا الْمِثَالُ الْعَمَلِيُّ الَّذِي يُوَضِّحُ الْفِكْرَةَ؟",
+            "Contoh praktis apa yang menjelaskan {focus_id}?",
+        ),
+        "challenge": (
+            "كَيْفَ نُقَدِّمُ الْمُلَاحَظَةَ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادَّةً؟",
+            "Bagaimana memberi masukan tentang {focus_id} tanpa terdengar keras?",
+        ),
+        "closing": (
+            "مَا التَّعْدِيلُ الصَّغِيرُ الَّذِي يَجْعَلُ الْفِكْرَةَ أَقْوَى؟",
+            "Perubahan kecil apa yang membuat {focus_id} lebih kuat?",
+        ),
+    },
+    {
+        "detail": (
+            "مَا الْقَرَارُ الَّذِي نَحْتَاجُ إِلَى تَسْمِيَتِهِ بِوُضُوحٍ؟",
+            "Keputusan apa yang perlu kita sebutkan dengan jelas dalam {focus_id}?",
+        ),
+        "challenge": (
+            "مَنْ يَحْتَاجُ إِلَى مَعْرِفَةِ هَذَا الْقَرَارِ بَعْدَ الِاجْتِمَاعِ؟",
+            "Siapa yang perlu mengetahui keputusan ini setelah {focus_id}?",
+        ),
+        "closing": (
+            "مَا الصِّيَاغَةُ الْمُخْتَصَرَةُ الَّتِي سَنُرْسِلُهَا؟",
+            "Rumusan singkat apa yang akan kita kirim tentang {focus_id}?",
+        ),
+    },
+    {
+        "detail": (
+            "كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟",
+            "Bagaimana kamu menggabungkan skill unit ini saat menangani {focus_id}?",
+        ),
+        "challenge": (
+            "إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟",
+            "Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam {focus_id}?",
+        ),
+        "closing": (
+            "مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟",
+            "Hasil profesional apa yang ingin kamu capai dari {focus_id}?",
+        ),
+    },
+]
+
+
+B2_RESPONSE_FRAMES: list[dict[str, tuple[str, str]]] = [
+    {
+        "combined": ("فِي هَذِهِ الْحَالَةِ،", "Dalam situasi ini,"),
+        "decision": ("لِذَلِكَ،", "Karena itu,"),
+        "closing": ("وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا،", "Agar semuanya jelas,"),
+    },
+    {
+        "combined": ("لِتَجَنُّبِ سُوءِ الْفَهْمِ،", "Untuk menghindari salah paham,"),
+        "decision": ("بَعْدَ هَذَا التَّوْضِيحِ،", "Setelah penjelasan ini,"),
+        "closing": ("سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ:", "Saya akan menutup diskusi dengan hal praktis:"),
+    },
+    {
+        "combined": ("بِطَرِيقَةٍ مِهَنِيَّةٍ،", "Dengan cara profesional,"),
+        "decision": ("إِذَا قَبِلَ الْفَرِيقُ التَّعْدِيلَ،", "Jika tim menerima perubahan,"),
+        "closing": ("ثُمَّ أُوَثِّقُ ذَلِكَ بِاخْتِصَارٍ:", "Lalu saya mendokumentasikannya secara singkat:"),
+    },
+    {
+        "combined": ("عِنْدَ نِهَايَةِ الِاجْتِمَاعِ،", "Di akhir rapat,"),
+        "decision": ("مِنْ نَاحِيَةِ الْقَرَارِ،", "Dari sisi keputusan,"),
+        "closing": ("وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ،", "Dalam pesan setelah rapat,"),
+    },
+    {
+        "combined": ("لِجَمْعِ الصُّورَةِ كَامِلَةً،", "Untuk menyatukan gambaran utuh,"),
+        "decision": ("عَلَى مُسْتَوَى التَّنْفِيذِ،", "Pada level implementasi,"),
+        "closing": ("وَكَخُطْوَةٍ أَخِيرَةٍ،", "Sebagai langkah terakhir,"),
+    },
+]
+
+
+B2_LESSON_OVERRIDES: dict[str, dict[str, dict[str, Any]]] = {
+    "unit-02-professional-meetings": {
+        "lesson-01-opening-a-meeting-point": {
+            "situation": "Kamu berada dalam rapat mingguan dan perlu membuka pembahasan tentang tenggat proyek tanpa membuat diskusi melebar.",
+            "goal": "Latih percakapan Arab B2 untuk membuka topik rapat, memberi alasan, meminta keputusan, dan menutup dengan action item.",
+            "phrases": [
+                phrase("أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.", "Saya ingin membuka diskusi tentang tenggat penyerahan proyek.", "Membuka topik rapat."),
+                phrase("لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.", "Karena tim membutuhkan keputusan sebelum akhir hari.", "Memberi alasan rapat."),
+                phrase("نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.", "Kita menentukan tenggat akhir dan siapa yang akan meninjau versi terakhir.", "Meminta keputusan konkret."),
+                phrase("سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.", "Saya akan mengirim ringkasan singkat berisi keputusan dan tanggung jawab.", "Menutup dengan action item."),
+                phrase("لِنَحْصُرِ النِّقَاشَ فِي هَذِهِ النُّقْطَةِ أَوَّلًا.", "Mari kita batasi diskusi pada poin ini dulu.", "Menjaga fokus rapat."),
+            ],
+            "dialogue": [
+                line("Maryam", "لِنَبْدَأِ الِاجْتِمَاعَ. مَا النُّقْطَةُ الأُولَى الَّتِي تُرِيدِينَ طَرْحَهَا؟", "Mari kita mulai rapat. Poin pertama apa yang ingin kamu ajukan?"),
+                line("Noura", "أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.", "Saya ingin membuka diskusi tentang tenggat penyerahan proyek."),
+                line("Maryam", "لِمَاذَا نَبْدَأُ بِهَذَا الْمَوْضُوعِ؟", "Mengapa kita mulai dengan topik ini?"),
+                line("Noura", "لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.", "Karena tim membutuhkan keputusan sebelum akhir hari."),
+                line("Maryam", "حَسَنًا، مَا الْقَرَارُ الَّذِي تُرِيدِينَ مِنَّا أَنْ نُحَدِّدَهُ؟", "Baik, keputusan apa yang kamu ingin kita tetapkan?"),
+                line("Noura", "نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.", "Kita menentukan tenggat akhir dan siapa yang akan meninjau versi terakhir."),
+                line("Maryam", "اتَّفَقْنَا. هَلْ سَتُرْسِلِينَ مُلَخَّصًا بَعْدَ الِاجْتِمَاعِ؟", "Sepakat. Apakah kamu akan mengirim ringkasan setelah rapat?"),
+                line("Noura", "نَعَمْ، سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.", "Ya, saya akan mengirim ringkasan singkat berisi keputusan dan tanggung jawab."),
+            ],
+        },
+        "lesson-02-clarifying-scope": {
+            "situation": "Kamu berada dalam kickoff proyek dan perlu memperjelas apa yang masuk fase pertama serta apa yang harus ditunda.",
+            "goal": "Latih percakapan Arab B2 untuk memperjelas scope rapat, menetapkan batasan, dan mengonfirmasi tindak lanjut.",
+            "phrases": [
+                phrase("لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.", "Cakupannya belum sepenuhnya jelas.", "Membuka klarifikasi scope."),
+                phrase("نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.", "Kita memasukkan halaman utama dan menunda laporan.", "Membatasi scope."),
+                phrase("هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.", "Ini membuat tenggat tetap realistis dan mengurangi risiko.", "Memberi alasan batasan."),
+                phrase("سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.", "Saya akan mengonfirmasi itu dalam pesan singkat setelah rapat.", "Mengonfirmasi follow-up."),
+                phrase("مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى؟", "Apa yang masuk fase pertama?", "Bertanya batas scope."),
+            ],
+            "dialogue": [
+                line("Maryam", "قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟", "Sebelum kita lanjut, apakah cakupannya jelas?"),
+                line("Noura", "لَيْسَ تَمَامًا. أُرِيدُ أَنْ نُحَدِّدَ مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى.", "Belum sepenuhnya. Saya ingin kita menentukan apa yang masuk fase pertama."),
+                line("Maryam", "مَا الَّذِي تَقْتَرِحِينَ إِدْخَالَهُ؟", "Apa yang kamu usulkan untuk dimasukkan?"),
+                line("Noura", "نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ إِلَى الْمَرْحَلَةِ الثَّانِيَةِ.", "Kita memasukkan halaman utama dan menunda laporan ke fase kedua."),
+                line("Maryam", "وَمَا السَّبَبُ؟", "Apa alasannya?"),
+                line("Noura", "هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.", "Ini membuat tenggat tetap realistis dan mengurangi risiko."),
+                line("Maryam", "جَيِّدٌ. مَنْ سَيُؤَكِّدُ هَذَا مَعَ الْعَمِيلِ؟", "Bagus. Siapa yang akan mengonfirmasi ini dengan klien?"),
+                line("Noura", "سَأُؤَكِّدُهُ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.", "Saya akan mengonfirmasinya dalam pesan singkat setelah rapat."),
+            ],
+        },
+        "lesson-03-giving-constructive-feedback": {
+            "situation": "Kamu meninjau draft proposal di rapat kecil dan perlu memberi feedback yang spesifik tanpa terdengar menyerang.",
+            "goal": "Latih percakapan Arab B2 untuk memberi feedback konstruktif, menyebut kekuatan, memberi saran, dan menawarkan perbaikan.",
+            "phrases": [
+                phrase("الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.", "Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.", "Memberi feedback seimbang."),
+                phrase("الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.", "Idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.", "Membuat feedback konstruktif."),
+                phrase("نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.", "Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.", "Memberi contoh konkret."),
+                phrase("أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.", "Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.", "Menutup feedback dengan bantuan."),
+                phrase("كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟", "Bagaimana kita mengatakan itu secara konstruktif?", "Menjaga nada feedback."),
+            ],
+            "dialogue": [
+                line("Maryam", "رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟", "Saya sudah melihat draft proposal. Apa komentar pertamamu?"),
+                line("Noura", "الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.", "Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas."),
+                line("Maryam", "كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟", "Bagaimana kita mengatakan itu secara konstruktif?"),
+                line("Noura", "نَقُولُ: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.", "Kita katakan: idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat."),
+                line("Maryam", "هَلْ تُضِيفِينَ مِثَالًا؟", "Apakah kamu akan menambahkan contoh?"),
+                line("Noura", "نَعَمْ، نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.", "Ya, kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan."),
+                line("Maryam", "مَاذَا بَعْدَ ذَلِكَ؟", "Apa setelah itu?"),
+                line("Noura", "أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.", "Saya mengirim komentar dengan saran kecil untuk merumuskan ulang."),
+            ],
+        },
+        "lesson-04-summarizing-decisions": {
+            "situation": "Kamu menutup rapat dan perlu merangkum keputusan, pemilik tugas, tenggat, serta poin yang belum selesai.",
+            "goal": "Latih percakapan Arab B2 untuk merangkum keputusan rapat dengan jelas dan bisa ditindaklanjuti.",
+            "phrases": [
+                phrase("اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.", "Kita sepakat menyerahkan versi pertama pada hari Kamis.", "Menyebut keputusan."),
+                phrase("أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.", "Saya meninjau teks, dan Fatimah meninjau desain.", "Menyebut tanggung jawab."),
+                phrase("نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.", "Kita membutuhkan persetujuan klien untuk gambar.", "Menyebut poin terbuka."),
+                phrase("سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.", "Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat.", "Merangkum action items."),
+                phrase("مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟", "Apa yang sudah kita sepakati?", "Membuka ringkasan."),
+            ],
+            "dialogue": [
+                line("Maryam", "قَبْلَ أَنْ نُنْهِيَ الِاجْتِمَاعَ، مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟", "Sebelum kita mengakhiri rapat, apa yang sudah kita sepakati?"),
+                line("Noura", "اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.", "Kita sepakat menyerahkan versi pertama pada hari Kamis."),
+                line("Maryam", "وَمَنْ الْمَسْؤُولُ عَنْ كُلِّ جُزْءٍ؟", "Siapa yang bertanggung jawab untuk tiap bagian?"),
+                line("Noura", "أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ، وَالْفَرِيقُ يُؤَكِّدُ الْجَدْوَلَ.", "Saya meninjau teks, Fatimah meninjau desain, dan tim mengonfirmasi jadwal."),
+                line("Maryam", "هَلْ هُنَاكَ نُقْطَةٌ غَيْرُ مَحْسُومَةٍ؟", "Apakah ada poin yang belum selesai?"),
+                line("Noura", "نَعَمْ، نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.", "Ya, kita membutuhkan persetujuan klien untuk gambar."),
+                line("Maryam", "كَيْفَ سَتُلَخِّصِينَ ذَلِكَ؟", "Bagaimana kamu akan merangkum itu?"),
+                line("Noura", "سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.", "Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat."),
+            ],
+        },
+        "lesson-05-meeting-participation-mission": {
+            "situation": "Kamu memimpin bagian pendek dari rapat dan perlu memakai semua skill unit: membuka topik, menjaga scope, merespons keberatan, dan menutup keputusan.",
+            "goal": "Latih percakapan Arab B2 untuk berpartisipasi aktif dalam rapat profesional dari pembuka sampai ringkasan akhir.",
+            "phrases": [
+                phrase("سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.", "Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope.", "Memulai bagian rapat."),
+                phrase("سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.", "Saya akan berterima kasih kepada pemberi masukan dan meminta contoh spesifik.", "Merespons objection."),
+                phrase("سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.", "Saya akan membandingkan dua opsi lalu mengusulkan satu langkah.", "Mengarahkan ke keputusan."),
+                phrase("سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.", "Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah rapat.", "Menutup rapat."),
+                phrase("كَيْفَ سَتَبْدَئِينَ؟", "Bagaimana kamu akan memulai?", "Menyiapkan roleplay rapat."),
+            ],
+            "dialogue": [
+                line("Maryam", "الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟", "Hari ini kamu akan memimpin sebagian rapat. Bagaimana kamu akan memulai?"),
+                line("Noura", "سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.", "Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope."),
+                line("Maryam", "وَإِذَا ظَهَرَ اعْتِرَاضٌ؟", "Jika muncul keberatan?"),
+                line("Noura", "سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.", "Saya akan berterima kasih kepada pemberi masukan dan meminta contoh spesifik."),
+                line("Maryam", "كَيْفَ سَتُحَوِّلِينَ النِّقَاشَ إِلَى قَرَارٍ؟", "Bagaimana kamu akan mengubah diskusi menjadi keputusan?"),
+                line("Noura", "سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.", "Saya akan membandingkan dua opsi lalu mengusulkan satu langkah."),
+                line("Maryam", "وَكَيْفَ سَتُغْلِقِينَ الِاجْتِمَاعَ؟", "Bagaimana kamu akan menutup rapat?"),
+                line("Noura", "سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.", "Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah rapat."),
+            ],
+        },
+    }
+}
+
+
+def format_dialogue_move(move: tuple[str, str], focus: str, focus_id: str) -> tuple[str, str]:
+    arabic, indonesian = move
+    return arabic.format(focus=focus), indonesian.format(focus_id=focus_id)
+
+
 def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> dict[str, Any]:
     profile = UNIT_PROFILES[unit_key]
     lesson_key, slug, title, focus, focus_id = lesson_data
@@ -314,16 +533,36 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
     prompt_ar, prompt_id = profile["prompt"]
     prompt_ar = f"{prompt_ar} أُرِيدُ أَنْ أُرَكِّزَ عَلَى {prompt_focus}."
     prompt_id = f"{prompt_id} Saya ingin fokus pada {prompt_focus_id}."
+    goal = f"Latih percakapan Arab B2 untuk {goal_focus_id} dengan alasan, contoh, respons, dan rekomendasi."
+    situation = f"{profile['situation']} Fokus lesson ini adalah {goal_focus_id}; latih cara menyampaikannya dengan urutan yang natural."
+    lesson_index = [item[0] for item in LESSONS_BY_UNIT[unit_key]].index(lesson_key)
+    dialogue_move = B2_DIALOGUE_MOVES[lesson_index]
+    response_frame = B2_RESPONSE_FRAMES[lesson_index]
+    detail_question = format_dialogue_move(dialogue_move["detail"], prompt_focus, prompt_focus_id)
+    challenge_question = format_dialogue_move(dialogue_move["challenge"], prompt_focus, prompt_focus_id)
+    closing_question = format_dialogue_move(dialogue_move["closing"], prompt_focus, prompt_focus_id)
+    combined_ar = f"{response_frame['combined'][0]} {phrases[1]['phrase']} {phrases[2]['phrase']}"
+    combined_id = f"{response_frame['combined'][1]} {phrases[1]['meaning']} {phrases[2]['meaning']}"
+    decision_ar = f"{response_frame['decision'][0]} {phrases[3]['phrase']}"
+    decision_id = f"{response_frame['decision'][1]} {phrases[3]['meaning']}"
+    closing_ar = f"{response_frame['closing'][0]} {phrases[4]['phrase']}"
+    closing_id = f"{response_frame['closing'][1]} {phrases[4]['meaning']}"
     dialogue = [
         line(speaker_a, prompt_ar, prompt_id),
         line(speaker_b, phrases[0]["phrase"], phrases[0]["meaning"]),
-        line(speaker_a, "مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟", "Apa bukti atau contoh yang menjelaskan itu?"),
-        line(speaker_b, f"{phrases[1]['phrase']} {phrases[2]['phrase']}", f"{phrases[1]['meaning']} {phrases[2]['meaning']}"),
-        line(speaker_a, "هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟", "Itu jelas, tetapi apa counterpoint yang mungkin muncul?"),
-        line(speaker_b, phrases[3]["phrase"], phrases[3]["meaning"]),
-        line(speaker_a, "مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟", "Jadi apa rekomendasi akhirnya?"),
-        line(speaker_b, phrases[4]["phrase"], phrases[4]["meaning"]),
+        line(speaker_a, detail_question[0], detail_question[1]),
+        line(speaker_b, combined_ar, combined_id),
+        line(speaker_a, challenge_question[0], challenge_question[1]),
+        line(speaker_b, decision_ar, decision_id),
+        line(speaker_a, closing_question[0], closing_question[1]),
+        line(speaker_b, closing_ar, closing_id),
     ]
+    override = B2_LESSON_OVERRIDES.get(unit_key, {}).get(lesson_key)
+    if override:
+        phrases = override.get("phrases", phrases)
+        dialogue = override.get("dialogue", dialogue)
+        goal = override.get("goal", goal)
+        situation = override.get("situation", situation)
     return {
         "lesson_key": lesson_key,
         "slug": slug,
@@ -331,8 +570,8 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str, str, str]) -> 
         "status": "published",
         "focus": focus,
         "focus_id": focus_id,
-        "situation": profile["situation"],
-        "goal": f"Latih percakapan Arab B2 untuk {goal_focus_id} dengan alasan, contoh, respons, dan rekomendasi.",
+        "situation": situation,
+        "goal": goal,
         "grammar": profile["grammar"],
         "patterns": profile["patterns"],
         "phrases": phrases,
@@ -512,8 +751,8 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
 
         (lesson_dir / "lesson.md").write_text(
             f"# {item['title']}\n\n"
-            "Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: "
-            "posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.\n\n"
+            f"Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk {item['focus_id']} "
+            "dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.\n\n"
             "## Situation\n\n"
             f"{item['situation']}\n\n"
             "## Catatan Belajar\n\n"
@@ -634,7 +873,7 @@ def write_unit_and_lessons(unit: dict[str, Any]) -> None:
             lesson_dir / "audio_manifest.yaml",
             {
                 "lesson_key": item["lesson_key"],
-                "status": "not_generated",
+                "status": "needs_regeneration",
                 "provider": "elevenlabs",
                 "model": "eleven_v3",
                 "default_voice_id": "multi_speaker",
@@ -647,33 +886,28 @@ def update_tracker(units: list[dict[str, Any]]) -> None:
     raw_tracker = TRACKER_PATH.read_bytes()
     reader = csv.DictReader(io.StringIO(raw_tracker.decode("utf-8")))
     fieldnames = reader.fieldnames or []
-    existing = {(row["level"], row["unit"], row["lesson"]) for row in reader}
+    rows = list(reader)
+    rows_by_key = {(row["level"], row["unit"], row["lesson"]): row for row in rows}
 
-    missing_rows: list[dict[str, str]] = []
     for unit in units:
         for item in unit["lessons"]:
             key = ("arabic/B2", unit["unit_key"], item["lesson_key"])
-            if key in existing:
-                continue
-            row = {name: "" for name in fieldnames}
-            row["level"], row["unit"], row["lesson"] = key
+            row = rows_by_key.get(key)
+            if row is None:
+                row = {name: "" for name in fieldnames}
+                row["level"], row["unit"], row["lesson"] = key
+                rows.append(row)
+                rows_by_key[key] = row
             for column in TEXT_TRACKER_COLUMNS:
                 row[column] = "done"
             row["audio_generated"] = "not_generated"
             row["review_status"] = "ready"
             row["publish_status"] = "published"
-            missing_rows.append(row)
 
-    if not missing_rows:
-        return
-
-    buffer = io.StringIO()
-    writer = csv.DictWriter(buffer, fieldnames=fieldnames, lineterminator="\n")
-    writer.writerows(missing_rows)
-    with TRACKER_PATH.open("ab") as file:
-        if raw_tracker and not raw_tracker.endswith((b"\n", b"\r\n")):
-            file.write(b"\n")
-        file.write(buffer.getvalue().encode("utf-8"))
+    with TRACKER_PATH.open("w", encoding="utf-8", newline="") as file:
+        writer = csv.DictWriter(file, fieldnames=fieldnames, lineterminator="\n")
+        writer.writeheader()
+        writer.writerows(rows)
 
 
 def main() -> int:

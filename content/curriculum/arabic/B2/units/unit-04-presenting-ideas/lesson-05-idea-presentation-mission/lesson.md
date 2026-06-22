@@ -1,10 +1,10 @@
 # Idea Presentation Mission
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk mempresentasikan dan mempertahankan ide dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan.
+Kamu mempresentasikan ide singkat, memberi struktur, menjelaskan manfaat dan risiko, lalu menjawab pertanyaan. Fokus lesson ini adalah mempresentasikan dan mempertahankan ide; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

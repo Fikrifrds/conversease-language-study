@@ -1,10 +1,10 @@
 # Discussing Tradeoffs
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk membahas tradeoff dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi.
+Kamu menganalisis masalah yang lebih kompleks: framing, penyebab, tradeoff, solusi, dan rekomendasi. Fokus lesson ini adalah membahas tradeoff; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

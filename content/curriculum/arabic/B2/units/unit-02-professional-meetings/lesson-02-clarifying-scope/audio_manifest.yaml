@@ -1,24 +1,6 @@
 lesson_key: lesson-02-clarifying-scope
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-3nav5pHC1EYvWOd5LmnA-20260618T054731Z.wav
-  duration_seconds: 34.9
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: dfa17b4f62550763445df294e9ab4c76a48a4f4c3d2ad7fe3a603b250f0466de
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-3nav5pHC1EYvWOd5LmnA-20260618T054731Z.wav
-  trace_id: cF1KEbUEX4lKqqh2H1c9,KkOhVcfdFbASvXVA5h81,0pi4pYlb9XgGhri9UWPE,miUyXiSj31W2OqjI5Sg2,WcQzSoImz2LO1vp5Gi9Z,fLa8FEvUqS1uK6l4xEJr,8Y8nTfmoqwfKCtyuJRl6,rvrYrChKuqieyehe9EOz
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:47:31.943877+00:00'
+assets: []

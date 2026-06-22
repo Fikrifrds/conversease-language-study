@@ -23,11 +23,10 @@ vocabulary:
   meaning_id: saya ingin
   usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
     أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّفَاوُضِ وَالْعَرْ..."'
-- word: دَلِيلٌ
-  meaning_id: bukti/petunjuk
-  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ
-    ذَلِكَ؟"'
-- word: مِثَالٌ
-  meaning_id: contoh
-  usage_note: 'Dipakai untuk arti "contoh". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ
-    ذَلِكَ؟"'
+- word: جُزْءٌ
+  meaning_id: bagian
+  usage_note: 'Dipakai untuk arti "bagian". Contoh: "أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟"'
+- word: تَوْضِيحٌ
+  meaning_id: klarifikasi/penjelasan
+  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ
+    أَكْثَرَ؟"'

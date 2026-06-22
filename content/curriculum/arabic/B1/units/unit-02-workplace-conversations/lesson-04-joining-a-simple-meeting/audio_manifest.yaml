@@ -1,24 +1,6 @@
 lesson_key: lesson-04-joining-a-simple-meeting
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-04-joining-a-simple-meeting/listening-3nav5pHC1EYvWOd5LmnA-20260618T022549Z.wav
-  duration_seconds: 16.38
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 6
-  script_content_hash: 743c7a4cf4ced4e73376355cb67735f0003d0446ac4603f1c7f7f9a7c548b85d
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-02-workplace-conversations/lesson-04-joining-a-simple-meeting/listening-3nav5pHC1EYvWOd5LmnA-20260618T022549Z.wav
-  trace_id: KWnXQG6u6LiRiVESDk6D,KXe5lF36hvVf2IapGr4w,u5izkg53YuYMR3SE7lQN,O1Yiq60S3Obbpr9vp0Hw,tH9CRGmhtjJ4ZsDZfO1j,O9RjyJ6GKistM2uW9bKx
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:25:49.671064+00:00'
+assets: []

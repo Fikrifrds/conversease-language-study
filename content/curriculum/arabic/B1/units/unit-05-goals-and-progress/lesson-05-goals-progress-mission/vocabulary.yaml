@@ -13,9 +13,10 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "keraguan". Contoh: "أَكْبَرُ تَحَدٍّ هُوَ التَّرَدُّدُ."'
 - word: نَتِيجَةٌ
   meaning_id: hasil
-  usage_note: 'Dipakai untuk arti "hasil". Contoh: "سَأُرَاجِعُ النَّتِيجَةَ بَعْدَ
-    أُسْبُوعٍ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'
+  usage_note: 'Dipakai untuk arti "hasil". Contoh: "سَأُرَاجِعُ النَّتِيجَةَ بَعْدَ أُسْبُوعٍ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟"'
+- word: خُطْوَةٌ
+  meaning_id: langkah
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟"'

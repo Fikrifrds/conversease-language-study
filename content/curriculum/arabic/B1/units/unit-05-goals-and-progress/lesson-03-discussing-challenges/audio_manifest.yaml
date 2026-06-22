@@ -1,24 +1,6 @@
 lesson_key: lesson-03-discussing-challenges
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-3nav5pHC1EYvWOd5LmnA-20260618T022832Z.wav
-  duration_seconds: 17.42
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Sara: gVzwmdZzRgBrNjXaTmi5
-  line_count: 6
-  script_content_hash: 3e3f46c383fac0b55488770e85db0bc4d3d439801d8e9b7fa46882a9a2925392
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-3nav5pHC1EYvWOd5LmnA-20260618T022832Z.wav
-  trace_id: zFy2SehZe4C6ns6uqhbJ,M5FXHjFbGJbW8xhdPpxW,SPZirVJajUMw57xDQ9wg,GV5MARnkvyIfL2j8ZEff,PcJpdWoSOF9g4te7AeJv,OJRbp81dVWizmXZmL2Bd
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:28:32.370230+00:00'
+assets: []

@@ -2,9 +2,9 @@
 
 - **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشِ النِّهَائِيِّ. -> Keterampilan terpenting apa yang sedang kamu review sekarang? Saya ingin fokus pada diskusi akhir.
 - **Noura:** أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى. -> Saya mereview diskusi akhir karena itu menggabungkan keterampilan level ini.
-- **Layla:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
-- **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
-- **Layla:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?
-- **Noura:** إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Jika muncul keberatan, saya akan menanggapinya dengan tenang.
-- **Layla:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟ -> Jadi apa rekomendasi akhirnya?
-- **Noura:** فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- **Layla:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan skill unit ini saat menangani diskusi akhir?
+- **Noura:** لِجَمْعِ الصُّورَةِ كَامِلَةً، أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Untuk menyatukan gambaran utuh, Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
+- **Layla:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam diskusi akhir?
+- **Noura:** عَلَى مُسْتَوَى التَّنْفِيذِ، إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Pada level implementasi, Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+- **Layla:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari diskusi akhir?
+- **Noura:** وَكَخُطْوَةٍ أَخِيرَةٍ، فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Sebagai langkah terakhir, Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.

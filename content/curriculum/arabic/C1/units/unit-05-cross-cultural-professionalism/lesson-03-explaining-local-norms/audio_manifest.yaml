@@ -1,24 +1,6 @@
 lesson_key: lesson-03-explaining-local-norms
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-3nav5pHC1EYvWOd5LmnA-20260618T060547Z.wav
-  duration_seconds: 62.5
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 6b936340f61ba8e245a592c0df50579c2ade916546f5df7db04d88825d4fa61a
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-3nav5pHC1EYvWOd5LmnA-20260618T060547Z.wav
-  trace_id: Y8iYIAG8cQTPuckNEX8a,5GKObxWQGnETU5k4zKfG,fsLVrJQy58UgGuViEQlr,WAKi9pW1hhA2YakMGmD4,PhdilAFd8KRPtOfWuUJE,Wuj2oFcbnrrKlqthc1Ir,jVXiTMnAhQ9uWxYsN6D1,1YVbOvu85SyFFvH7psIj
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:05:47.404124+00:00'
+assets: []

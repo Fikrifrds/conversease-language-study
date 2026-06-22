@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَقْدِيمُ مُلَاحَظَةٍ بَنَّاءَةٍ.
-  meaning_id: Saya ingin mulai dengan poin tentang memberi masukan konstruktif.
-  usage_note: Membuka kontribusi rapat.
-- phrase: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  meaning_id: Apakah cakupan diskusi jelas untuk semua orang?
-  usage_note: Memastikan scope.
-- phrase: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  meaning_id: Saya punya masukan konstruktif untuk usulan ini.
-  usage_note: Memberi feedback profesional.
-- phrase: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  meaning_id: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-  usage_note: Merangkum keputusan.
-- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
-  meaning_id: Saya akan mengirim ringkasan singkat setelah rapat.
-  usage_note: Menutup dengan action item.
+- phrase: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+  meaning_id: Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
+  usage_note: Memberi feedback seimbang.
+- phrase: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
+  meaning_id: Idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.
+  usage_note: Membuat feedback konstruktif.
+- phrase: نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
+  meaning_id: Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.
+  usage_note: Memberi contoh konkret.
+- phrase: أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.
+  meaning_id: Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.
+  usage_note: Menutup feedback dengan bantuan.
+- phrase: كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟
+  meaning_id: Bagaimana kita mengatakan itu secara konstruktif?
+  usage_note: Menjaga nada feedback.

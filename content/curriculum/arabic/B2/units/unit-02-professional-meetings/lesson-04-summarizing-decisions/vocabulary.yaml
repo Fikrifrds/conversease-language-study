@@ -1,33 +1,31 @@
 vocabulary:
-- word: أُرِيدُ
-  meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ تَلْخِيصُ الْقَرَارَاتِ."'
-- word: نِطَاقٌ
-  meaning_id: cakupan
-  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: نِقَاشٌ
-  meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: وَاضِحٌ
-  meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: عِنْدِي
-  meaning_id: saya punya
-  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: مُلَاحَظَةٌ
-  meaning_id: catatan/masukan
-  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "عِنْدِي مُلَاحَظَةٌ
-    بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: بَنَّاءَةٌ
-  meaning_id: konstruktif
-  usage_note: 'Dipakai untuk arti "konstruktif". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
-- word: اِقْتِرَاحٌ
-  meaning_id: usulan
-  usage_note: 'Dipakai untuk arti "usulan". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
+- word: اِتَّفَقْنَا
+  meaning_id: kami sepakat
+  usage_note: 'Dipakai untuk arti "kami sepakat". Contoh: "اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى
+    يَوْمَ الْخَمِيسِ."'
+- word: يَوْمٌ
+  meaning_id: hari
+  usage_note: 'Dipakai untuk arti "hari". Contoh: "اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ
+    الْخَمِيسِ."'
+- word: أُرَاجِعُ
+  meaning_id: saya mengulang/review
+  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ
+    تُرَاجِعُ التَّصْمِيمَ."'
+- word: عَمِيلٌ
+  meaning_id: klien/pelanggan
+  usage_note: 'Dipakai untuk arti "klien/pelanggan". Contoh: "نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى
+    الصُّوَرِ."'
+- word: قَرَارٌ
+  meaning_id: keputusan
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ،
+    وَالْمَوْعِدَ."'
+- word: اِجْتِمَاعٌ
+  meaning_id: rapat/pertemuan
+  usage_note: 'Dipakai untuk arti "rapat/pertemuan". Contoh: "قَبْلَ أَنْ نُنْهِيَ الِاجْتِمَاعَ، مَا
+    الَّذِي اتَّفَقْنَا عَلَيْهِ؟"'
+- word: جُزْءٌ
+  meaning_id: bagian
+  usage_note: 'Dipakai untuk arti "bagian". Contoh: "وَمَنْ الْمَسْؤُولُ عَنْ كُلِّ جُزْءٍ؟"'
+- word: نُقْطَةٌ
+  meaning_id: titik
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "هَلْ هُنَاكَ نُقْطَةٌ غَيْرُ مَحْسُومَةٍ؟"'

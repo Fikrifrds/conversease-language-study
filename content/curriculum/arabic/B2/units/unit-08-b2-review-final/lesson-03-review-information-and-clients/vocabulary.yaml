@@ -27,7 +27,6 @@ vocabulary:
   meaning_id: saya ingin
   usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟
     أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّعَامُلِ مَعَ الْم..."'
-- word: دَلِيلٌ
-  meaning_id: bukti/petunjuk
-  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ
-    ذَلِكَ؟"'
+- word: مِثَالٌ
+  meaning_id: contoh
+  usage_note: 'Dipakai untuk arti "contoh". Contoh: "مَا الْمِثَالُ الْعَمَلِيُّ الَّذِي يُوَضِّحُ الْفِكْرَةَ؟"'

@@ -1,24 +1,6 @@
 lesson_key: lesson-04-handling-challenging-questions
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T060222Z.wav
-  duration_seconds: 59.86
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Salma: gVzwmdZzRgBrNjXaTmi5
-    Lina: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: e5aa5dd41b9d24db80f3a347d77a70a7da51c459b1433c2de8a1f3636a1b18ac
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T060222Z.wav
-  trace_id: pILq6WloBeSe9YTXIVVj,J9QvWQqHdy1ly0l3Qmqq,5iWG8ydisIDSxhDYAGtd,wLdl7a559jx3EyLwEaZt,MDMU0c4fLy05yFxLzfXm,OwUeCcLePY8qAL2jQwbJ,aODWhMRMGxJtVE562kUk,b1xou4rrPZPTR0yaPRlf
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:02:22.349451+00:00'
+assets: []

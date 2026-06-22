@@ -10,15 +10,13 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "detail". Contoh: "أُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ."'
 - word: غُرْفَةٌ
   meaning_id: ruangan/kamar
-  usage_note: 'Dipakai untuk arti "ruangan/kamar". Contoh: "هَلِ الْغُرْفَةُ جَاهِزَةٌ
-    الآنَ؟"'
+  usage_note: 'Dipakai untuk arti "ruangan/kamar". Contoh: "هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟"'
 - word: جَاهِزَةٌ
   meaning_id: siap
   usage_note: 'Dipakai untuk arti "siap". Contoh: "هَلِ الْغُرْفَةُ جَاهِزَةٌ الآنَ؟"'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ
-    الدُّخُولِ."'
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ."'
 - word: بِطَاقَةٌ
   meaning_id: kartu
   usage_note: 'Dipakai untuk arti "kartu". Contoh: "أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ."'

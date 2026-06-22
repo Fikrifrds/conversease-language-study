@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_responding_to_long_turns
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
 learner_goal: Latih percakapan Arab C1 untuk responding to long turns dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى الضِّمْنِيُّ
     هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.'
   sample_answer: فِي مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ

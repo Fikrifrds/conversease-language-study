@@ -1,20 +1,17 @@
 vocabulary:
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ
-    فِي نُقْطَةٍ وَاحِدَةٍ."'
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ."'
 - word: تَوْضِيحٌ
   meaning_id: klarifikasi/penjelasan
-  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أَحْتَاجُ إِلَى
-    تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ."'
+  usage_note: 'Dipakai untuk arti "klarifikasi/penjelasan". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ
+    وَاحِدَةٍ."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي
-    نُقْطَةٍ وَاحِدَةٍ."'
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ."'
 - word: وَاحِدَةٌ
   meaning_id: satu
-  usage_note: 'Dipakai untuk arti "satu". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ
-    وَاحِدَةٍ."'
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ."'
 - word: نِهَايَةٌ
   meaning_id: akhir
   usage_note: 'Dipakai untuk arti "akhir". Contoh: "سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ."'

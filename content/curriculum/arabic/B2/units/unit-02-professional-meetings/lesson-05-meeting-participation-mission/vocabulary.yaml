@@ -1,33 +1,32 @@
 vocabulary:
-- word: أُرِيدُ
-  meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ."'
-- word: اِجْتِمَاعٌ
-  meaning_id: rapat/pertemuan
-  usage_note: 'Dipakai untuk arti "rapat/pertemuan". Contoh: "أُرِيدُ أَنْ أَبْدَأَ
-    بِنُقْطَةٍ عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ."'
-- word: مِهَنِيٌّ
-  meaning_id: profesional
-  usage_note: 'Dipakai untuk arti "profesional". Contoh: "أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ
-    عَنْ الْمُشَارَكَةُ فِي اِجْتِمَاعٍ مِهَنِيٍّ."'
 - word: نِطَاقٌ
   meaning_id: cakupan
-  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: نِقَاشٌ
-  meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: وَاضِحٌ
-  meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ
-    لِلْجَمِيعِ؟"'
-- word: عِنْدِي
-  meaning_id: saya punya
-  usage_note: 'Dipakai untuk arti "saya punya". Contoh: "عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ
-    عَلَى هَذَا الِاقْتِرَاحِ."'
+  usage_note: 'Dipakai untuk arti "cakupan". Contoh: "سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ
+    أَسْأَلُ عَنِ النِّطَاقِ."'
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
-  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "عِنْدِي مُلَاحَظَةٌ
-    بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ."'
+  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ
+    مِثَالًا مُحَدَّدًا."'
+- word: أَقْتَرِحُ
+  meaning_id: saya menyarankan
+  usage_note: 'Dipakai untuk arti "saya menyarankan". Contoh: "سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ
+    خُطْوَةً وَاحِدَةً."'
+- word: خُطْوَةٌ
+  meaning_id: langkah
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً
+    وَاحِدَةً."'
+- word: وَاحِدَةٌ
+  meaning_id: satu
+  usage_note: 'Dipakai untuk arti "satu". Contoh: "سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً
+    وَاحِدَةً."'
+- word: قَرَارٌ
+  meaning_id: keputusan
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا
+    بَعْدَ الِاجْتِمَاعِ."'
+- word: اِجْتِمَاعٌ
+  meaning_id: rapat/pertemuan
+  usage_note: 'Dipakai untuk arti "rapat/pertemuan". Contoh: "سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ
+    وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ سَتَبْدَئِينَ؟"'

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** كَيْفَ تُطَبِّقُ مَهَارَةَ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan reading social context dalam percakapan formal?
+- **Fatimah:** كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan skill ini dalam percakapan formal?
 - **Aisha:** فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ. -> Dalam skill reading social context, Sebelum merespons, kita harus membaca konteks dengan cermat.
-- **Fatimah:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Fatimah:** أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Di bagian mana skill reading social context membutuhkan presisi lebih besar?
 - **Aisha:** عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ. -> Saat menerapkan reading social context, Bisakah saya bertanya dengan cara yang lebih tactful? Di negara saya, norma ini dipahami dengan cara yang berbeda.
-- **Fatimah:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Fatimah:** إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟ -> Jika seseorang keberatan pada cara reading social context, bagaimana kamu menjaga percakapan tetap profesional?
 - **Aisha:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ. -> Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
-- **Fatimah:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Fatimah:** مَا الصِّيَاغَةُ الَّتِي تُظْهِرُ الْفِكْرَةَ مِنْ غَيْرِ مُبَالَغَةٍ؟ -> Formulasi apa yang menunjukkan reading social context tanpa berlebihan?
 - **Aisha:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Dalam final formulation untuk reading social context, Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.

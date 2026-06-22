@@ -1,10 +1,10 @@
 # Summarizing Decisions
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk merangkum keputusan dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.
+Kamu menutup rapat dan perlu merangkum keputusan, pemilik tugas, tenggat, serta poin yang belum selesai.
 
 ## Catatan Belajar
 

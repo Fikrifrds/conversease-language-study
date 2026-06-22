@@ -1,24 +1,6 @@
 lesson_key: lesson-01-describing-a-problem
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-3nav5pHC1EYvWOd5LmnA-20260618T022612Z.wav
-  duration_seconds: 20.46
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Omar: OoE8swS3hImZANNOodf6
-    Raka: kr4VZw8MSZMHE0y2m40n
-  line_count: 6
-  script_content_hash: 5b10473c682a2cdae8383dd77bcfa5d5bafe0220e1047700efc4fc246147efb4
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-3nav5pHC1EYvWOd5LmnA-20260618T022612Z.wav
-  trace_id: IO4fUN3YjRxU5LnQHyW9,ysM1BhWRK0O3brtE0eVG,cxLxkaXnRSeHy4O6ilSg,g5DKbpODXfpWMN1UAGTv,iXyFwL0e7iTAfuionswi,5mDU9u514e0reD3BzHxZ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:26:12.629465+00:00'
+assets: []

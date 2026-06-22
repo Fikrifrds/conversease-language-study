@@ -1,33 +1,32 @@
 vocabulary:
 - word: مَسَارٌ
   meaning_id: jalur/arah
-  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي مَهَارَةِ تَقْدِيمِ تَغْذِيَةٍ
-    رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ..."'
+  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي مَهَارَةِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ
+    قَابِلَةٍ لِلْعَمَلِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ تَقْدِيمِ
-    تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، بَدَلًا مِنْ أَنْ أُعْطِيَ..."'
+  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ
+    قَابِلَةٍ لِلْعَمَلِ، بَدَلًا مِنْ أَنْ أُعْطِيَ..."'
 - word: مُلَاحَظَةٌ
   meaning_id: catatan/masukan
-  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ
-    هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
+  usage_note: 'Dipakai untuk arti "catatan/masukan". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي
+    تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
 - word: خُطْوَةٌ
   meaning_id: langkah
-  usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ
-    هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
+  usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ
+    إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
 - word: تَحَدٍّ
   meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ
-    الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
+  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
+    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ
-    الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
+    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُطَبِّقُ مَهَارَةَ
-    تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ فِي حِوَارٍ رَسْم..."'
-- word: رَسْمِيٌّ
-  meaning_id: resmi
-  usage_note: 'Dipakai untuk arti "resmi". Contoh: "كَيْفَ تُطَبِّقُ مَهَارَةَ تَقْدِيمِ
-    تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ فِي حِوَارٍ رَسْم..."'
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟"'
+- word: فَهْمٌ
+  meaning_id: pemahaman
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ
+    ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟"'

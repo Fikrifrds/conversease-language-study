@@ -1,33 +1,29 @@
 vocabulary:
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ
-    جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
+    أَكْبَرَ."'
 - word: جُزْءٌ
   meaning_id: bagian
-  usage_note: 'Dipakai untuk arti "bagian". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ
-    جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "bagian". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
+    أَكْبَرَ."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: 'Dipakai untuk arti "masalah". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ
-    جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
+    أَكْبَرَ."'
 - word: أَكْبَرُ
   meaning_id: lebih besar
-  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ
-    جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
+    أَكْبَرَ."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ
-    يَكُونُ ضَعْفَ التَّنْظِيمِ."'
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: 'Dipakai untuk arti "utama". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ
-    ضَعْفَ التَّنْظِيمِ."'
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ."'
 - word: تَنْظِيمٌ
   meaning_id: pengaturan
-  usage_note: 'Dipakai untuk arti "pengaturan". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ
-    يَكُونُ ضَعْفَ التَّنْظِيمِ."'
+  usage_note: 'Dipakai untuk arti "pengaturan". Contoh: "السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ."'
 - word: حَلٌّ
   meaning_id: solusi
-  usage_note: 'Dipakai untuk arti "solusi". Contoh: "لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ
-    جَانِبِيٌّ."'
+  usage_note: 'Dipakai untuk arti "solusi". Contoh: "لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ."'

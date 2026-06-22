@@ -1,12 +1,10 @@
 vocabulary:
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "أَعْمَلُ عَلَى مَهَمَّةٍ
-    جَدِيدَةٍ هَذَا الْأُسْبُوعَ."'
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
-  usage_note: 'Dipakai untuk arti "tugas". Contoh: "أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ
-    هَذَا الْأُسْبُوعَ."'
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ."'
 - word: هَدَفٌ
   meaning_id: tujuan
   usage_note: 'Dipakai untuk arti "tujuan". Contoh: "الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ."'
@@ -15,17 +13,14 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ."'
 - word: تَنْظِيمٌ
   meaning_id: pengaturan
-  usage_note: 'Dipakai untuk arti "pengaturan". Contoh: "الْهَدَفُ هُوَ تَحْسِينُ
-    التَّنْظِيمِ."'
+  usage_note: 'Dipakai untuk arti "pengaturan". Contoh: "الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ."'
 - word: أَحْتَاجُ
   meaning_id: saya butuh
-  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ
-    التَّفَاصِيلِ أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا."'
 - word: مُرَاجَعَةٌ
   meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ
-    التَّفَاصِيلِ أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ
+    أَوَّلًا."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: 'Dipakai untuk arti "detail". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ
-    أَوَّلًا."'
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا."'

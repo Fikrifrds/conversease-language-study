@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Fatimah:** مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟ -> Apa poin utama dalam topik ini?
+- **Fatimah:** كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟ -> Bagaimana kamu merespons dengan jelas dan sopan?
 - **Noura:** أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى. -> Saya setuju denganmu pada poin pertama.
-- **Fatimah:** هَلْ يُمْكِنُ أَنْ تُوَضِّحَ أَكْثَرَ؟ -> Bisakah kamu menjelaskan lebih banyak?
+- **Fatimah:** لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟ -> Mengapa ini penting dalam situasi ini?
 - **Noura:** لَكِنَّنِي أَرَى خِيَارًا آخَرَ. مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ. -> Tetapi saya melihat pilihan lain. Mungkin kita bisa menggabungkan dua ide.
 - **Fatimah:** هَذَا حَلٌّ مُتَوَازِنٌ. -> Ini solusi yang seimbang.
 - **Noura:** إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ الْخُطَّةِ. -> Kalau begitu, kita sepakat pada rencana ini.

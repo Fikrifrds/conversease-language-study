@@ -4,16 +4,13 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "هَدَفِي هُوَ تَحْسِينُ الْمُحَادَثَةِ."'
 - word: أُرِيدُ
   meaning_id: saya ingin
-  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَتَكَلَّمَ
-    بِثِقَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "saya ingin". Contoh: "أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ."'
 - word: أَكْبَرُ
   meaning_id: lebih besar
-  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أُرِيدُ أَنْ أَتَكَلَّمَ
-    بِثِقَةٍ أَكْبَرَ."'
+  usage_note: 'Dipakai untuk arti "lebih besar". Contoh: "أُرِيدُ أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ."'
 - word: أَتَدَرَّبُ
   meaning_id: saya berlatih
-  usage_note: 'Dipakai untuk arti "saya berlatih". Contoh: "لِذَلِكَ أَتَدَرَّبُ كُلَّ
-    يَوْمٍ."'
+  usage_note: 'Dipakai untuk arti "saya berlatih". Contoh: "لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ."'
 - word: يَوْمٌ
   meaning_id: hari
   usage_note: 'Dipakai untuk arti "hari". Contoh: "لِذَلِكَ أَتَدَرَّبُ كُلَّ يَوْمٍ."'
@@ -22,8 +19,7 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "kemajuan". Contoh: "أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ."'
 - word: مُرَاجَعَةٌ
   meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَقِيسُ التَّقَدُّمَ
-    بِالْمُرَاجَعَةِ."'
+  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ."'
 - word: هَدَفٌ
   meaning_id: tujuan
   usage_note: 'Dipakai untuk arti "tujuan". Contoh: "هَذَا الْهَدَفُ مُهِمٌّ لِي."'

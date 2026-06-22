@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ تُطَبِّقُ مَهَارَةَ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan running a leadership coaching conversation dalam percakapan formal?
+- **Rami:** كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah skill ini menjadi langkah praktis?
 - **Tariq:** فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Dalam skill running a leadership coaching conversation, Hal pertama adalah menetapkan arah dengan jelas.
-- **Rami:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Rami:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan running a leadership coaching conversation?
 - **Tariq:** عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Saat menerapkan running a leadership coaching conversation, Daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran. Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- **Rami:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Rami:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan running a leadership coaching conversation?
 - **Tariq:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Jika muncul tantangan dalam skill ini, Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
-- **Rami:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Rami:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup running a leadership coaching conversation dengan kalimat yang menunjukkan presisi dan fleksibilitas?
 - **Tariq:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Dalam final formulation untuk running a leadership coaching conversation, Saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.

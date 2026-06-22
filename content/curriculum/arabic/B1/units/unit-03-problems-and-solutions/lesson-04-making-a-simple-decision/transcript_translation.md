@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Omar:** مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟ -> Apa poin utama dalam topik ini?
+- **Omar:** كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟ -> Bagaimana kamu merespons dengan jelas dan sopan?
 - **Raka:** لَدَيْنَا خِيَارَانِ مُنَاسِبَانِ. -> Kita punya dua pilihan yang cocok.
-- **Omar:** هَلْ يُمْكِنُ أَنْ تُوَضِّحَ أَكْثَرَ؟ -> Bisakah kamu menjelaskan lebih banyak?
+- **Omar:** لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟ -> Mengapa ini penting dalam situasi ini?
 - **Raka:** الْخِيَارُ الْأَوَّلُ أَسْهَلُ. الْخِيَارُ الثَّانِي أَفْضَلُ عَلَى الْمَدَى الطَّوِيلِ. -> Pilihan pertama lebih mudah. Pilihan kedua lebih baik untuk jangka panjang.
 - **Omar:** أُفَضِّلُ الْخِيَارَ الثَّانِي لِهَذَا السَّبَبِ. -> Saya memilih pilihan kedua karena alasan ini.
 - **Raka:** إِذَنْ، نَبْدَأُ بِهِ غَدًا. -> Kalau begitu, kita mulai besok.

@@ -1,24 +1,6 @@
 lesson_key: lesson-02-talking-about-local-habits
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-3nav5pHC1EYvWOd5LmnA-20260618T023016Z.wav
-  duration_seconds: 19.82
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Zayd: cFUFIbKkO2iZFwS8cRnY
-  line_count: 6
-  script_content_hash: d4b57eb66fe117d1e6e1c861be488f8680ff728b4fe2c4ada7c8c40acc0f5462
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-3nav5pHC1EYvWOd5LmnA-20260618T023016Z.wav
-  trace_id: nP8ib3Q8LSR36K49HmN6,rjJjYsiWIBDWnNKdg5LD,xi2NkkbHHE66S3ZW5bVj,oBSAHZATnCtMLuih0B9n,kh8FHfGPEmVlvxkVYodU,CS7Q5ZDeuLouXGLouJ8A
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:30:16.416901+00:00'
+assets: []

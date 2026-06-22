@@ -1,7 +1,7 @@
 scenario_key: arabic_b1_review_goals_and_preferences
 mode: lesson_practice_coach
 level_code: B1
-opening_line: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+opening_line: مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟
 learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences,
   dengan jawaban yang lebih terhubung dan alasan yang jelas.'
 max_turns: 6
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا النُّقْطَةُ الْأَسَاسِيَّةُ فِي هَذَا الْمَوْضُوعِ؟
+- coach: مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟
   hint: 'Jawab dengan kalimat terhubung memakai: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.'
   sample_answer: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
   focus: Gunakan untuk percakapan B1 yang lebih terhubung.

@@ -1,10 +1,10 @@
 # Meeting Participation Mission
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk berpartisipasi dalam rapat profesional dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu mengikuti rapat kerja dan perlu membuka poin, memperjelas cakupan, memberi masukan, serta merangkum keputusan.
+Kamu memimpin bagian pendek dari rapat dan perlu memakai semua skill unit: membuka topik, menjaga scope, merespons keberatan, dan menutup keputusan.
 
 ## Catatan Belajar
 

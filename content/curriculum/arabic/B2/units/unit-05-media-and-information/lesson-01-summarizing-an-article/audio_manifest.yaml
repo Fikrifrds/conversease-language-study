@@ -1,24 +1,6 @@
 lesson_key: lesson-01-summarizing-an-article
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-05-media-and-information/lesson-01-summarizing-an-article/listening-3nav5pHC1EYvWOd5LmnA-20260618T055129Z.wav
-  duration_seconds: 38.66
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Hasan: t9akNmCDhz230CEXOYmn
-    Yusuf: kr4VZw8MSZMHE0y2m40n
-  line_count: 8
-  script_content_hash: d55ca2c43d734873a9fb46f022921ec00c1dd5406505699d8aabaa9d357169ad
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-05-media-and-information/lesson-01-summarizing-an-article/listening-3nav5pHC1EYvWOd5LmnA-20260618T055129Z.wav
-  trace_id: eJNN76h423CfCztafDdl,ubWxHr7JSB8X6MeSpUIg,DIwPEI7cGVwddNSPo3RJ,fHelpqGX7py8wzKM1gYr,OfLjM8k4sF9aIBvDAE9D,H4MO9I9haGwg8wlyhGNz,Wv8pzRIm1Mn1BnjP2Vqf,2cVgXNzj4lhB3wDEpvPa
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:51:29.050279+00:00'
+assets: []

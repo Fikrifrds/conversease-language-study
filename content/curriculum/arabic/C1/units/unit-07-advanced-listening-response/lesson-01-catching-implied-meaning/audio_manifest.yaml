@@ -1,24 +1,6 @@
 lesson_key: lesson-01-catching-implied-meaning
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-3nav5pHC1EYvWOd5LmnA-20260618T060851Z.wav
-  duration_seconds: 62.5
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Hasan: t9akNmCDhz230CEXOYmn
-    Yusuf: kr4VZw8MSZMHE0y2m40n
-  line_count: 8
-  script_content_hash: ddfeacc451fd61f0e56f24fc5296e33155450d86008618df16eb57525da108c6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-3nav5pHC1EYvWOd5LmnA-20260618T060851Z.wav
-  trace_id: lo4TZs5gDTG7COyIpNfW,CegCVsKgKutHIk6JrZrH,xWzbIFkQLhK709Dt5Vlz,1eq0lXN4sMmmSS59d8M3,hznQAJ2buCzt8vxGjMeo,lyj5DUNhJFQ0FOLwgfJC,RccN5u8TodoY0d014GWM,zGXJNFz1BysSBokgKnKQ
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:08:51.384501+00:00'
+assets: []

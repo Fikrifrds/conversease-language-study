@@ -1,24 +1,6 @@
 lesson_key: lesson-04-summarizing-decisions
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-3nav5pHC1EYvWOd5LmnA-20260618T054804Z.wav
-  duration_seconds: 34.34
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Maryam: gVzwmdZzRgBrNjXaTmi5
-    Noura: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: bfe29e13ccf69af48d561eb2a171c9333c47d0d14ba84e0178d6d4c9cf77bd3f
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-3nav5pHC1EYvWOd5LmnA-20260618T054804Z.wav
-  trace_id: k1vIMcq1piPWditTsIi8,jh6RlVyGeKqmPv9IdH5l,lSalW9P1O1dlhsrZKfHo,br48L1LkT03oOgJxEDFj,t2I7ERdG0rVNQrb4r6pd,8mtur0T7rTdROhiNIuBm,fxSdViiDCA8z2d3IwnRK,uWijAJa9O1xQOUzOVpYp
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:48:04.408849+00:00'
+assets: []

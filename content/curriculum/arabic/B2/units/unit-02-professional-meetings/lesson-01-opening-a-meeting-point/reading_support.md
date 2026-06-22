@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ. -> Saya ingin mulai dengan poin tentang membuka poin rapat.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ -> Apakah cakupan diskusi jelas untuk semua orang?
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Saya punya masukan konstruktif untuk usulan ini.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ. -> Saya ingin membuka diskusi tentang tenggat penyerahan proyek.
+- لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ. -> Karena tim membutuhkan keputusan sebelum akhir hari.
+- نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ. -> Kita menentukan tenggat akhir dan siapa yang akan meninjau versi terakhir.
+- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ. -> Saya akan mengirim ringkasan singkat berisi keputusan dan tanggung jawab.
+- لِنَحْصُرِ النِّقَاشَ فِي هَذِهِ النُّقْطَةِ أَوَّلًا. -> Mari kita batasi diskusi pada poin ini dulu.

@@ -1,10 +1,10 @@
 # Negotiation Mission
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk mengelola negosiasi jelas dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras.
+Kamu bernegosiasi tentang prioritas, proposal, keberatan, dan jalan tengah tanpa membuat percakapan terasa keras. Fokus lesson ini adalah mengelola negosiasi jelas; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

@@ -1,24 +1,6 @@
 lesson_key: lesson-01-structuring-a-short-presentation
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-3nav5pHC1EYvWOd5LmnA-20260618T055005Z.wav
-  duration_seconds: 36.34
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Salma: gVzwmdZzRgBrNjXaTmi5
-    Lina: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 072135e88f0bcfaba4543f950d834cf989f0c069812b3645958a1d9447db1980
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-3nav5pHC1EYvWOd5LmnA-20260618T055005Z.wav
-  trace_id: u2S0lgGI33oE1J6MzSkl,bzXhi1WVxXdiEddALgqT,07O50QND2MT9OETVILn2,4RJ6q2kTyDttqHu9lPIy,MKlGf6llbD5CDXYHAKN3,KlWWVDMTOVxpDBeKwnmY,UGuFBWWFwI2D7poR8kvg,RlKUdLmQK6FILVSTl5EW
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:50:05.375531+00:00'
+assets: []

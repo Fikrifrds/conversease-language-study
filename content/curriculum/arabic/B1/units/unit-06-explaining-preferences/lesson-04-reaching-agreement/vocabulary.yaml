@@ -1,8 +1,7 @@
 vocabulary:
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ
-    الْأُولَى."'
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى."'
 - word: آخَرُ
   meaning_id: lain
   usage_note: 'Dipakai untuk arti "lain". Contoh: "لَكِنَّنِي أَرَى خِيَارًا آخَرَ."'
@@ -14,5 +13,10 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "seimbang". Contoh: "هَذَا حَلٌّ مُتَوَازِنٌ."'
 - word: خُطَّةٌ
   meaning_id: rencana
-  usage_note: 'Dipakai untuk arti "rencana". Contoh: "إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ
-    الْخُطَّةِ."'
+  usage_note: 'Dipakai untuk arti "rencana". Contoh: "إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ الْخُطَّةِ."'
+- word: كَيْفَ
+  meaning_id: bagaimana
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟"'
+- word: لِمَاذَا
+  meaning_id: mengapa
+  usage_note: 'Dipakai untuk arti "mengapa". Contoh: "لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟"'

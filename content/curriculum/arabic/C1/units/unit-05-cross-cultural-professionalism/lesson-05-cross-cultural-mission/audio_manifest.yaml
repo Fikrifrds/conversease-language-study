@@ -1,24 +1,6 @@
 lesson_key: lesson-05-cross-cultural-mission
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060631Z.wav
-  duration_seconds: 65.62
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 0252c4b9396d577bcd3865f6cd375f469c248b49f86c98cd7876aafd774d51c6
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/listening-3nav5pHC1EYvWOd5LmnA-20260618T060631Z.wav
-  trace_id: eU6QvPo8BSRuoneHobt5,5Vkr9UrJlGkCBL6rGBPU,O4Rn3EenIa9dfB7tYXUx,JNNzCLzfzk8P4Z6KSti2,7EQLSMHaJkFDXSLesdLt,p0oudJfCcQk4CtkskYna,KdisbGS6csJLMHlvfAI5,COBoquaKSzTPg6E2eKFH
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:06:31.951876+00:00'
+assets: []

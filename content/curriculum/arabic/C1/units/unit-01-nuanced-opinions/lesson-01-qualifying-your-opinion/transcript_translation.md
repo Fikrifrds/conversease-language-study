@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تُطَبِّقُ مَهَارَةَ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan qualifying opinion before making a claim dalam percakapan formal?
+- **Ahmad:** كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan skill ini dalam percakapan formal?
 - **Karim:** فِي مَهَارَةِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Dalam skill qualifying opinion before making a claim, Secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
-- **Ahmad:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Ahmad:** أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Di bagian mana skill qualifying opinion before making a claim membutuhkan presisi lebih besar?
 - **Karim:** عِنْدَ تَطْبِيقِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Saat menerapkan qualifying opinion before making a claim, Saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini. Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- **Ahmad:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Ahmad:** إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟ -> Jika seseorang keberatan pada cara qualifying opinion before making a claim, bagaimana kamu menjaga percakapan tetap profesional?
 - **Karim:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
-- **Ahmad:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Ahmad:** مَا الصِّيَاغَةُ الَّتِي تُظْهِرُ الْفِكْرَةَ مِنْ غَيْرِ مُبَالَغَةٍ؟ -> Formulasi apa yang menunjukkan qualifying opinion before making a claim tanpa berlebihan?
 - **Karim:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Dalam final formulation untuk qualifying opinion before making a claim, Karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.

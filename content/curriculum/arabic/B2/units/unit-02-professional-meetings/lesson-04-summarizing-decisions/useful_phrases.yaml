@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَلْخِيصُ الْقَرَارَاتِ.
-  meaning_id: Saya ingin mulai dengan poin tentang merangkum keputusan.
-  usage_note: Membuka kontribusi rapat.
-- phrase: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-  meaning_id: Apakah cakupan diskusi jelas untuk semua orang?
-  usage_note: Memastikan scope.
-- phrase: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-  meaning_id: Saya punya masukan konstruktif untuk usulan ini.
-  usage_note: Memberi feedback profesional.
-- phrase: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
-  meaning_id: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-  usage_note: Merangkum keputusan.
-- phrase: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ.
-  meaning_id: Saya akan mengirim ringkasan singkat setelah rapat.
-  usage_note: Menutup dengan action item.
+- phrase: اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.
+  meaning_id: Kita sepakat menyerahkan versi pertama pada hari Kamis.
+  usage_note: Menyebut keputusan.
+- phrase: أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.
+  meaning_id: Saya meninjau teks, dan Fatimah meninjau desain.
+  usage_note: Menyebut tanggung jawab.
+- phrase: نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.
+  meaning_id: Kita membutuhkan persetujuan klien untuk gambar.
+  usage_note: Menyebut poin terbuka.
+- phrase: 'سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.'
+  meaning_id: 'Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat.'
+  usage_note: Merangkum action items.
+- phrase: مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟
+  meaning_id: Apa yang sudah kita sepakati?
+  usage_note: Membuka ringkasan.

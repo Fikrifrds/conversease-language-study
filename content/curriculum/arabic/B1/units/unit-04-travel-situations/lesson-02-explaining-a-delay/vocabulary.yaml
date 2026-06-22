@@ -4,16 +4,13 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "sedikit". Contoh: "تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا."'
 - word: سَبَبٌ
   meaning_id: alasan
-  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ
-    فِي الطَّرِيقِ."'
+  usage_note: 'Dipakai untuk arti "alasan". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ."'
 - word: اِزْدِحَامٌ
   meaning_id: kemacetan/keramaian
-  usage_note: 'Dipakai untuk arti "kemacetan/keramaian". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ
-    فِي الطَّرِيقِ."'
+  usage_note: 'Dipakai untuk arti "kemacetan/keramaian". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ."'
 - word: طَرِيقٌ
   meaning_id: jalan
-  usage_note: 'Dipakai untuk arti "jalan". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ فِي
-    الطَّرِيقِ."'
+  usage_note: 'Dipakai untuk arti "jalan". Contoh: "السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ."'
 - word: آسِفٌ
   meaning_id: maaf
   usage_note: 'Dipakai untuk arti "maaf". Contoh: "آسِفٌ عَلَى التَّأْخِيرِ."'
@@ -23,7 +20,3 @@ vocabulary:
 - word: وَقْتٌ
   meaning_id: waktu
   usage_note: 'Dipakai untuk arti "waktu". Contoh: "سَأُخْبِرُكَ إِذَا تَغَيَّرَ الْوَقْتُ."'
-- word: نُقْطَةٌ
-  meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "مَا النُّقْطَةُ الْأَسَاسِيَّةُ
-    فِي هَذَا الْمَوْضُوعِ؟"'

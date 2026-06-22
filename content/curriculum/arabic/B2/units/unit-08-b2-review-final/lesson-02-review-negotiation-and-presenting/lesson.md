@@ -1,10 +1,10 @@
 # Review Negotiation and Presenting
 
-Setelah lesson ini, kamu bisa membangun diskusi Arab B2 yang lebih matang: posisi, alasan, contoh, respons terhadap keberatan, dan rekomendasi akhir.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk review negosiasi dan presentasi dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 
-Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion.
+Kamu menggabungkan argumen, meeting, negosiasi, presentasi, informasi, klien, dan problem solving dalam final discussion. Fokus lesson ini adalah meninjau negosiasi dan presentasi; latih cara menyampaikannya dengan urutan yang natural.
 
 ## Catatan Belajar
 

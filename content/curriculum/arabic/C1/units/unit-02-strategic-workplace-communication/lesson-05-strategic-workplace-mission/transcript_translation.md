@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** كَيْفَ تُطَبِّقُ مَهَارَةَ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan running a strategic workplace conversation dalam percakapan formal?
+- **Maryam:** كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah skill ini menjadi langkah praktis?
 - **Noura:** فِي مَهَارَةِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam skill running a strategic workplace conversation, Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- **Maryam:** هَذَا جَيِّدٌ، وَلَكِنْ مَا الْجَانِبُ الَّذِي يَحْتَاجُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Bagus, tetapi sisi mana yang membutuhkan presisi lebih besar?
+- **Maryam:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan running a strategic workplace conversation?
 - **Noura:** عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan running a strategic workplace conversation, Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- **Maryam:** كَيْفَ تَتَعَامَلُ مَعَ النُّقْطَةِ الْمُعَارِضَةِ أَوْ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menangani counterpoint atau salah paham?
+- **Maryam:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan running a strategic workplace conversation?
 - **Noura:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- **Maryam:** مَا الصِّيَاغَةُ النِّهَائِيَّةُ الَّتِي تُنَاسِبُ مَوْقِفًا رَسْمِيًّا؟ -> Apa formulasi akhir yang cocok untuk situasi formal?
+- **Maryam:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup running a strategic workplace conversation dengan kalimat yang menunjukkan presisi dan fleksibilitas?
 - **Noura:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Dalam final formulation untuk running a strategic workplace conversation, Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   AlertCircle,
   CheckCircle2,
@@ -93,16 +93,16 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
   const [lastResult, setLastResult] = useState<RealExamResult | null>(null);
   const [attemptStatus, setAttemptStatus] = useState<ExamAttemptStatus | null>(null);
 
-  async function refreshAttemptStatus(templateId: string) {
+  const refreshAttemptStatus = useCallback(async (templateId: string) => {
     try {
       setAttemptStatus(await getExamAttemptStatus(templateId));
     } catch {
       // Non-fatal: the start call still enforces the policy server-side.
     }
-  }
+  }, []);
   const audioUrlRef = useRef<Record<string, string>>({});
 
-  async function refreshLastResult() {
+  const refreshLastResult = useCallback(async () => {
     const lastSessionId =
       typeof window !== "undefined" ? window.localStorage.getItem(lastResultStorageKey(levelCode)) : null;
     if (!lastSessionId) {
@@ -113,7 +113,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     } catch {
       // Result may not exist yet (or session was cleaned up) — keep the card hidden.
     }
-  }
+  }, [levelCode]);
 
   const recorder = useVoiceRecorder({
     onResult: async (blob) => {
@@ -141,7 +141,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       if (!manifest) {
         return;
       }
-      setNotice("Uploading speaking answer...");
+      setNotice("Mengunggah jawaban speaking...");
       try {
         const uploaded = await uploadExamSpeakingAudio({
           sessionId: manifest.sessionId,
@@ -155,11 +155,11 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             fileUrl: uploaded.fileUrl
           }
         }));
-        setNotice("Speaking answer uploaded. Save the section to keep it.");
+        setNotice("Jawaban speaking terunggah. Simpan bagian ini untuk menyimpannya.");
       } catch {
         setNotice("");
         setError(
-          "The recording could not be uploaded. You can record again, or continue — your typed answer will still be submitted."
+          "Rekaman belum bisa diunggah. Kamu bisa merekam ulang atau lanjut; jawaban tertulis tetap akan dikirim."
         );
       }
     },
@@ -225,7 +225,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         }
       } catch {
         if (!cancelled) {
-          setError("The real exam could not be loaded yet.");
+          setError("Exam belum bisa dimuat.");
         }
       } finally {
         if (!cancelled) {
@@ -238,7 +238,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     return () => {
       cancelled = true;
     };
-  }, [levelCode]);
+  }, [levelCode, refreshAttemptStatus, refreshLastResult]);
 
   useEffect(() => {
     if (!manifest?.sessionId) {
@@ -298,7 +298,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       setDrafts({});
       window.localStorage.setItem(sessionStorageKey(levelCode), session.sessionId);
       trackEvent("exam_start", { level: levelCode.toUpperCase() });
-      setNotice("Exam started. Complete each section and save before moving on.");
+      setNotice("Exam dimulai. Kerjakan tiap bagian dengan tenang; jawaban akan disimpan saat kamu lanjut.");
     } catch (startError) {
       if (startError instanceof ExamStartBlockedError) {
         if (startError.code === "exam_cooldown" && startError.nextAvailableAt) {
@@ -313,19 +313,35 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         }
         void refreshAttemptStatus(activeTemplate.id);
       } else {
-        setError("The exam could not be started.");
+          setError("Exam belum bisa dimulai.");
       }
     } finally {
       setIsStarting(false);
     }
   }
 
-  async function openSection(sectionId: string) {
+  async function openSection(
+    sectionId: string,
+    options: { saveBeforeNavigate?: boolean } = {}
+  ) {
     if (!manifest) {
+      return;
+    }
+    if (isSaving || isSubmitting) {
       return;
     }
     setError("");
     try {
+      if (
+        options.saveBeforeNavigate !== false &&
+        content &&
+        content.section.id !== sectionId
+      ) {
+        const saved = await saveCurrentSection();
+        if (!saved) {
+          return;
+        }
+      }
       await navigateExamSession({
         sessionId: manifest.sessionId,
         targetSectionId: sectionId
@@ -333,7 +349,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       const nextContent = await getExamSectionContent(manifest.sessionId, sectionId);
       setContent(nextContent);
     } catch {
-      setError("The requested section could not be opened.");
+      setError("Bagian yang dipilih belum bisa dibuka.");
     }
   }
 
@@ -370,10 +386,10 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           timeSpentSeconds: null
         });
       }
-      setNotice("Section responses saved.");
+      setNotice("Jawaban bagian ini tersimpan.");
       return true;
     } catch {
-      setError("Section responses could not be saved.");
+      setError("Jawaban bagian ini belum bisa disimpan.");
       return false;
     } finally {
       setIsSaving(false);
@@ -390,8 +406,8 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     }
     const nextSection = manifest.sections[sectionIndex + 1];
     if (nextSection) {
-      await openSection(nextSection.id);
-      setNotice("Section saved. Continue with the next section.");
+      await openSection(nextSection.id, { saveBeforeNavigate: false });
+      setNotice("Bagian tersimpan. Lanjut ke bagian berikutnya.");
     }
   }
 
@@ -419,13 +435,13 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       });
       if (submitResult.pending_review_count > 0) {
         setNotice(
-          `Exam submitted. Provisional score: ${scorePercent}%. ` +
-            `${submitResult.pending_review_count} speaking/writing answer(s) are waiting for reviewer scoring, ` +
-            "so your final result may change."
+          `Exam terkirim. Nilai sementara: ${scorePercent}%. ` +
+            `${submitResult.pending_review_count} jawaban speaking/writing menunggu review, ` +
+            "jadi hasil final masih bisa berubah."
         );
       } else {
         setNotice(
-          `Exam submitted. Final score: ${scorePercent}% — ${submitResult.passed ? "Passed" : "Not passed"}.`
+          `Exam terkirim. Nilai final: ${scorePercent}% - ${submitResult.passed ? "Lulus" : "Belum lulus"}.`
         );
       }
       setManifest((current) => (current ? { ...current, status: "submitted" } : current));
@@ -433,7 +449,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         void refreshAttemptStatus(activeTemplate.id);
       }
     } catch {
-      setError("The exam could not be submitted.");
+      setError("Exam belum bisa dikirim.");
     } finally {
       setIsSubmitting(false);
     }
@@ -524,7 +540,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 }
                 className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-500"
               >
-                <option value="">Select match</option>
+                <option value="">Pilih pasangan</option>
                 {rightItems.map((rightItem) => (
                   <option key={rightItem.id} value={rightItem.id}>
                     {rightItem.text}
@@ -552,7 +568,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
               className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Mic className="h-4 w-4" />
-              {recorder.status === "recording" && activeSpeakingItemId === item.id ? "Recording..." : "Record answer"}
+              {recorder.status === "recording" && activeSpeakingItemId === item.id ? "Merekam..." : "Rekam jawaban"}
             </button>
             {recorder.status === "recording" && activeSpeakingItemId === item.id ? (
               <button
@@ -561,7 +577,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700"
               >
                 <PauseCircle className="h-4 w-4" />
-                Stop
+                Hentikan
               </button>
             ) : null}
             {localAudioUrl ? <audio controls src={localAudioUrl} className="max-w-full" /> : null}
@@ -570,7 +586,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             value={draft.textResponse ?? ""}
             onChange={(event) => updateDraft(item.id, { textResponse: event.target.value })}
             rows={4}
-            placeholder="Optional transcript or notes about your spoken answer"
+            placeholder="Catatan atau transkrip opsional untuk jawaban lisanmu"
             className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-emerald-500"
           />
         </div>
@@ -582,7 +598,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         value={draft.textResponse ?? ""}
         onChange={(event) => updateDraft(item.id, { textResponse: event.target.value })}
         rows={6}
-        placeholder="Write your answer here"
+        placeholder="Tulis jawaban di sini"
         className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-emerald-500"
       />
     );
@@ -593,7 +609,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
         <div className="flex items-center gap-3 text-slate-700">
           <Loader2 className="h-5 w-5 animate-spin" />
-          <span>Loading real exam...</span>
+          <span>Memuat exam...</span>
         </div>
       </section>
     );
@@ -605,8 +621,8 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         <div className="flex items-start gap-3 text-slate-700">
           <AlertCircle className="mt-0.5 h-5 w-5 text-amber-600" />
           <div>
-            <p className="font-semibold">No active exam is published for {levelCode.toUpperCase()} yet.</p>
-            <p className="mt-1 text-sm text-slate-500">Publish an exam template first, then this page becomes usable immediately.</p>
+            <p className="font-semibold">Exam aktif untuk {levelCode.toUpperCase()} belum diterbitkan.</p>
+            <p className="mt-1 text-sm text-slate-500">Setelah template exam dipublikasikan, halaman ini akan langsung bisa dipakai.</p>
           </div>
         </div>
       </section>
@@ -620,15 +636,15 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
-                Real Exam {activeTemplate.levelCode}
+                Exam Resmi {activeTemplate.levelCode}
               </p>
               <h1 className="mt-2 text-3xl font-semibold text-slate-900">{activeTemplate.title}</h1>
               <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
-                {activeTemplate.description ?? "Official exam session for this level."}
+                {activeTemplate.description ?? "Sesi exam resmi untuk level ini."}
               </p>
             </div>
             <div className="rounded-2xl bg-slate-900 px-5 py-4 text-white">
-              <p className="text-xs uppercase tracking-wide text-slate-300">Time Remaining</p>
+              <p className="text-xs uppercase tracking-wide text-slate-300">Sisa Waktu</p>
               <p className="mt-2 flex items-center gap-2 text-2xl font-semibold">
                 <Clock3 className="h-5 w-5" />
                 {formatSeconds(timeRemaining)}
@@ -637,10 +653,10 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           </div>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
             <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-700">
-              {activeTemplate.durationMinutes} minutes
+              {activeTemplate.durationMinutes} menit
             </span>
             <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
-              Pass mark {activeTemplate.passingScorePercent}%
+              Nilai lulus {activeTemplate.passingScorePercent}%
             </span>
             {attemptStatus && attemptStatus.maxAttempts !== null ? (
               <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
@@ -657,11 +673,11 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isStarting ? <Loader2 className="h-4 w-4 animate-spin" /> : <PlayCircle className="h-4 w-4" />}
-                {attemptStatus?.hasOpenSession ? "Lanjutkan exam" : "Start exam"}
+                {attemptStatus?.hasOpenSession ? "Lanjutkan exam" : "Mulai exam"}
               </button>
             ) : (
               <span className="rounded-full bg-blue-50 px-3 py-1 font-medium text-blue-700">
-                Session {manifest.status}
+                Sesi {manifest.status}
               </span>
             )}
           </div>
@@ -678,18 +694,17 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Your latest exam result</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Hasil exam terakhir</p>
                 {lastResult.status === "published" ? (
                   <p className="mt-2 text-2xl font-semibold text-slate-900">
                     {Math.round(lastResult.scorePercent)}%{" "}
                     <span className={lastResult.passed ? "text-emerald-600" : "text-rose-600"}>
-                      {lastResult.passed ? "Passed" : "Not passed"}
+                      {lastResult.passed ? "Lulus" : "Belum lulus"}
                     </span>
                   </p>
                 ) : (
                   <p className="mt-2 text-lg font-semibold text-slate-900">
-                    Provisional score {Math.round(lastResult.scorePercent)}% — speaking/writing answers are still
-                    being reviewed.
+                    Nilai sementara {Math.round(lastResult.scorePercent)}% - jawaban speaking/writing masih direview.
                   </p>
                 )}
               </div>
@@ -698,7 +713,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                   lastResult.status === "published" ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"
                 }`}
               >
-                {lastResult.status === "published" ? "Final" : "Pending review"}
+                {lastResult.status === "published" ? "Final" : "Menunggu review"}
               </span>
             </div>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
@@ -730,7 +745,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
                   <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                    Section {content.currentSectionNumber} of {content.totalSections}
+                    Bagian {content.currentSectionNumber} dari {content.totalSections}
                   </p>
                   <h2 className="mt-2 text-2xl font-semibold text-slate-900">{content.section.title}</h2>
                   <p className="mt-2 text-sm text-slate-600">{content.section.description}</p>
@@ -746,7 +761,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
-                      Item {index + 1}
+                      Soal {index + 1}
                     </p>
                     <h3 className="mt-2 text-lg font-semibold text-slate-900">{item.promptText}</h3>
                   </div>
@@ -763,7 +778,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     item.stimulusAudioUrl &&
                     !item.stimulusText.includes("[BLANK]") ? (
                       <p className="text-sm font-medium text-slate-600">
-                        Listen to the audio, then answer. You can replay it.
+                        Dengarkan audio, lalu jawab. Audio bisa diputar ulang.
                       </p>
                     ) : (
                       <p className="whitespace-pre-wrap text-sm leading-7 text-slate-700">{item.stimulusText}</p>
@@ -778,7 +793,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                           className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700"
                         >
                           <PlayCircle className="h-4 w-4" />
-                          Play prompt audio
+                          Putar audio prompt
                         </button>
                       )}
                     </div>
@@ -797,7 +812,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isSaving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
-                Save section
+                Simpan bagian
               </button>
 
               <div className="flex flex-wrap gap-3">
@@ -809,7 +824,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isSaving ? <Loader2 className="h-4 w-4 animate-spin" /> : <CheckCircle2 className="h-4 w-4" />}
-                    Save and continue
+                    Simpan dan lanjut
                   </button>
                 ) : (
                   <button
@@ -819,7 +834,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
-                    Submit exam
+                    Kirim exam
                   </button>
                 )}
               </div>
@@ -830,7 +845,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
 
       <aside className="space-y-4">
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Sections</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Bagian</h2>
           <div className="mt-4 space-y-3">
             {(manifest?.sections ?? []).map((section) => {
               const isActive = content?.section.id === section.id;
@@ -839,11 +854,12 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                   key={section.id}
                   type="button"
                   onClick={() => void openSection(section.id)}
+                  disabled={isSaving || isSubmitting}
                   className={`w-full rounded-2xl border px-4 py-3 text-left ${
                     isActive
                       ? "border-emerald-500 bg-emerald-50 text-emerald-800"
                       : "border-slate-200 bg-white text-slate-700"
-                  }`}
+                  } disabled:cursor-not-allowed disabled:opacity-60`}
                 >
                   <p className="text-xs font-semibold uppercase tracking-wide">{section.code}</p>
                   <p className="mt-1 text-sm font-medium">{section.title}</p>
@@ -854,12 +870,11 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         </section>
 
         <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">How To Test</h2>
+          <h2 className="text-lg font-semibold text-slate-900">Catatan Penilaian</h2>
           <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
-            <li>Use the play button in Listening to hear browser-generated prompt audio when no pre-generated audio exists.</li>
-            <li>Answer all items in the section, then use Save section or Save and continue.</li>
-            <li>For Speaking, record locally in the browser and optionally add a transcript note.</li>
-            <li>Submit on the final section to complete the session and verify the full exam flow.</li>
+            <li>Waktu berjalan setelah exam dimulai.</li>
+            <li>Jawaban disimpan saat kamu menyimpan atau berpindah bagian.</li>
+            <li>Speaking dan writing dapat menunggu review sebelum hasil final diterbitkan.</li>
           </ul>
         </section>
       </aside>

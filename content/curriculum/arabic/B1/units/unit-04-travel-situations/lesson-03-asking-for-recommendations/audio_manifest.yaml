@@ -1,24 +1,6 @@
 lesson_key: lesson-03-asking-for-recommendations
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-3nav5pHC1EYvWOd5LmnA-20260618T022735Z.wav
-  duration_seconds: 20.14
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 6
-  script_content_hash: 5e8391a40ed00088c441938abefe1bbdb82612f86bf78a9bd7c4b9be938b2661
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-3nav5pHC1EYvWOd5LmnA-20260618T022735Z.wav
-  trace_id: ynkuB9eOuBAzzlIVHFum,iHqYhl6aw6mt9ZsfZyNH,bp5g8AUUyi7RRFsqD31e,AaSrOR2OWEAscQAWaDEN,XH2sdYe2f1CqCHjQ2V6V,nmib1YmydLtZ0XaQLuDg
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T02:27:35.060326+00:00'
+assets: []

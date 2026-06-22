@@ -3,23 +3,4 @@ status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Layla: kdUY91gH5xyDHapxlthT
-    Noura: v7UCHHCrHj1KBa4E41gb
-  line_count: 8
-  audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
-stale_reason: Arabic B2 review dialogue phrasing was revised for natural grammar; regenerate after script
-  fix.
+assets: []

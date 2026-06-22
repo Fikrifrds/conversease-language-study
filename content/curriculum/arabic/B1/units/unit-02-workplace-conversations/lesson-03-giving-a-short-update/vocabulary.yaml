@@ -1,31 +1,26 @@
 vocabulary:
 - word: أَنْجَزْتُ
   meaning_id: saya menyelesaikan
-  usage_note: 'Dipakai untuk arti "saya menyelesaikan". Contoh: "أَنْجَزْتُ الْجُزْءَ
-    الْأَوَّلَ مِنَ الْمَهَمَّةِ."'
+  usage_note: 'Dipakai untuk arti "saya menyelesaikan". Contoh: "أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ
+    الْمَهَمَّةِ."'
 - word: جُزْءٌ
   meaning_id: bagian
-  usage_note: 'Dipakai untuk arti "bagian". Contoh: "أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ
-    مِنَ الْمَهَمَّةِ."'
+  usage_note: 'Dipakai untuk arti "bagian". Contoh: "أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ."'
 - word: مَهَمَّةٌ
   meaning_id: tugas
-  usage_note: 'Dipakai untuk arti "tugas". Contoh: "أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ
-    مِنَ الْمَهَمَّةِ."'
+  usage_note: 'Dipakai untuk arti "tugas". Contoh: "أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ."'
 - word: أَعْمَلُ
   meaning_id: saya bekerja
-  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "مَا زِلْتُ أَعْمَلُ عَلَى
-    التَّفَاصِيلِ."'
+  usage_note: 'Dipakai untuk arti "saya bekerja". Contoh: "مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ."'
 - word: تَفَاصِيلُ
   meaning_id: detail
   usage_note: 'Dipakai untuk arti "detail". Contoh: "مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ."'
 - word: مُشْكِلَةٌ
   meaning_id: masalah
-  usage_note: 'Dipakai untuk arti "masalah". Contoh: "لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ
-    حَتَّى الْآنَ."'
+  usage_note: 'Dipakai untuk arti "masalah". Contoh: "لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ."'
 - word: تَحْدِيثٌ
   meaning_id: update
-  usage_note: 'Dipakai untuk arti "update". Contoh: "سَأُرْسِلُ التَّحْدِيثَ بَعْدَ
-    سَاعَةٍ."'
+  usage_note: 'Dipakai untuk arti "update". Contoh: "سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ."'
 - word: سَاعَةٌ
   meaning_id: jam
   usage_note: 'Dipakai untuk arti "jam". Contoh: "سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ."'

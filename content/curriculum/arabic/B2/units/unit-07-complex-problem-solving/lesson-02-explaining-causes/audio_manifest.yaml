@@ -1,24 +1,6 @@
 lesson_key: lesson-02-explaining-causes
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-3nav5pHC1EYvWOd5LmnA-20260618T055446Z.wav
-  duration_seconds: 34.18
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Rami: yXEnnEln9armDCyhkXcA
-    Tariq: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 579c1d065fe85ce770833ae8f681f4850f70ea4317b7c9858ae82b5219574be1
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-3nav5pHC1EYvWOd5LmnA-20260618T055446Z.wav
-  trace_id: m14SxXlxgQuvp4I20Ju8,JJNzLN8tRrPkDoOIu19a,2qbpfgSoVmImDcmz4N5A,abr5gdYmVAuhLfNs4pBR,5mOJBN03ZrtV3viFPq2W,kK8zJNb6Far9ao8s47mz,Yup0hGcj92cDoG1UUJ40,yNs246zh6bS6bP56FdP7
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:54:46.389871+00:00'
+assets: []

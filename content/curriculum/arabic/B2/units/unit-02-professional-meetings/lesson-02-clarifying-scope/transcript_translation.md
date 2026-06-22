@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** مَا النُّقْطَةُ الَّتِي تُرِيدِينَ مُنَاقَشَتَهَا؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ نِطَاقِ النِّقَاشِ. -> Poin apa yang ingin kamu bahas? Saya ingin fokus pada memperjelas scope diskusi.
-- **Noura:** أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ. -> Saya ingin mulai dengan poin tentang memperjelas scope diskusi.
-- **Maryam:** مَا الدَّلِيلُ أَوِ الْمِثَالُ الَّذِي يُوَضِّحُ ذَلِكَ؟ -> Apa bukti atau contoh yang menjelaskan itu?
-- **Noura:** هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Apakah cakupan diskusi jelas untuk semua orang? Saya punya masukan konstruktif untuk usulan ini.
-- **Maryam:** هَذَا وَاضِحٌ، وَلَكِنْ مَا النُّقْطَةُ الْمُعَارِضَةُ الْمُمْكِنَةُ؟ -> Itu jelas, tetapi apa counterpoint yang mungkin muncul?
-- **Noura:** الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- **Maryam:** مَا التَّوْصِيَةُ النِّهَائِيَّةُ إِذَنْ؟ -> Jadi apa rekomendasi akhirnya?
-- **Noura:** سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- **Maryam:** قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟ -> Sebelum kita lanjut, apakah cakupannya jelas?
+- **Noura:** لَيْسَ تَمَامًا. أُرِيدُ أَنْ نُحَدِّدَ مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى. -> Belum sepenuhnya. Saya ingin kita menentukan apa yang masuk fase pertama.
+- **Maryam:** مَا الَّذِي تَقْتَرِحِينَ إِدْخَالَهُ؟ -> Apa yang kamu usulkan untuk dimasukkan?
+- **Noura:** نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ إِلَى الْمَرْحَلَةِ الثَّانِيَةِ. -> Kita memasukkan halaman utama dan menunda laporan ke fase kedua.
+- **Maryam:** وَمَا السَّبَبُ؟ -> Apa alasannya?
+- **Noura:** هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ. -> Ini membuat tenggat tetap realistis dan mengurangi risiko.
+- **Maryam:** جَيِّدٌ. مَنْ سَيُؤَكِّدُ هَذَا مَعَ الْعَمِيلِ؟ -> Bagus. Siapa yang akan mengonfirmasi ini dengan klien?
+- **Noura:** سَأُؤَكِّدُهُ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengonfirmasinya dalam pesan singkat setelah rapat.

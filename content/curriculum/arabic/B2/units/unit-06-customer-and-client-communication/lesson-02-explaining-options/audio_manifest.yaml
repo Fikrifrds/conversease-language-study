@@ -1,24 +1,6 @@
 lesson_key: lesson-02-explaining-options
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-3nav5pHC1EYvWOd5LmnA-20260618T055316Z.wav
-  duration_seconds: 37.78
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: eea7adecf6bf7957fe0f9166ed0eb8c0779c3ff35dcaab8088bf24caead9db9c
-  audio_format: wav
-  storage_key: conversease/audio/arabic/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-3nav5pHC1EYvWOd5LmnA-20260618T055316Z.wav
-  trace_id: E5jFToYxNZy16wFtmWus,H9ZPY8zwW6yaji6JwkrZ,1YqrnDpxH5WQJGcLGVKH,8pYcGk9PyDEgWKhgfoGy,LKwAv3eTILNbXgSAk6am,goVUSSbjImemOLuQn3GT,6K9b04EySIOWU5b18GLC,VJH1RaSfGadikQgr6FPr
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:53:16.899140+00:00'
+assets: []

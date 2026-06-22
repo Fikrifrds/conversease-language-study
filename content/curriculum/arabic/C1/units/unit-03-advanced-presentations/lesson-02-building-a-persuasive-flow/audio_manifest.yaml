@@ -1,24 +1,6 @@
 lesson_key: lesson-02-building-a-persuasive-flow
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-3nav5pHC1EYvWOd5LmnA-20260618T060136Z.wav
-  duration_seconds: 55.14
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Salma: gVzwmdZzRgBrNjXaTmi5
-    Lina: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: d92d8e5f295be386de6a7b805cd6ebd9b0a5a95147a4794a07732979a4c0d601
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-3nav5pHC1EYvWOd5LmnA-20260618T060136Z.wav
-  trace_id: S0TSVYvibB2uTD5o4q4Y,P1f40InjFhkSbKKOQy77,UrLXfHIfCnYb4vrJiqRS,ykJuZAoZXWLHRd3JhMqO,qGraZUdnkCXQstTItgRn,DZcChylxdvhgse4sGY5l,szGrMrfkqgWNO20CZDXI,HRLtGkBZrpQt9nJeaTBv
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:01:36.005765+00:00'
+assets: []

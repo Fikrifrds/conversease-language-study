@@ -1,17 +1,19 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin mulai dengan poin tentang membuka poin rapat.'
-  target_response: أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin membuka diskusi tentang tenggat penyerahan proyek.'
+  target_response: أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ فَتْحُ نُقْطَةٍ فِي الِاجْتِمَاعِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Apakah cakupan diskusi jelas untuk semua orang?'
-  target_response: هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
+  - أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Karena tim membutuhkan keputusan sebelum akhir hari.'
+  target_response: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
   acceptable_responses:
-  - هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟
-- prompt: 'Ucapkan dalam bahasa Arab: Saya punya masukan konstruktif untuk usulan ini.'
-  target_response: عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
+  - لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita menentukan tenggat akhir dan siapa yang akan meninjau versi
+    terakhir.'
+  target_response: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.
   acceptable_responses:
-  - عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.'
-  target_response: الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mengirim ringkasan singkat berisi keputusan dan tanggung
+    jawab.'
+  target_response: سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.
   acceptable_responses:
-  - الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ.
+  - سَأُرْسِلُ مُلَخَّصًا قَصِيرًا مَعَ الْقَرَارِ وَالْمَسْؤُولِيَّاتِ.

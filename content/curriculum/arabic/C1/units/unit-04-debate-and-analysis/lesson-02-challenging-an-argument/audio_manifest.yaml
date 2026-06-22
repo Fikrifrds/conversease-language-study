@@ -1,24 +1,6 @@
 lesson_key: lesson-02-challenging-an-argument
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-3nav5pHC1EYvWOd5LmnA-20260618T060330Z.wav
-  duration_seconds: 61.62
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Khalid: t9akNmCDhz230CEXOYmn
-    Omar: OoE8swS3hImZANNOodf6
-  line_count: 8
-  script_content_hash: c36d77f113d741f3e3ce1b33a11499f756b8a66fab64fc9962c6b5f60188e3a7
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-3nav5pHC1EYvWOd5LmnA-20260618T060330Z.wav
-  trace_id: 9SOvrTCnv7c6EnH254Sj,0KeQKzP56ADRktrRc0bT,HFUGyppzBepnkn2dNQsr,HwsqecoINO3x2cOaylhU,KCneqcnLBMBU9sCDT00O,K5unJSNEAqAy0OhFw4se,JJjoHCmgd2wvlSi16IQt,Ro6GT65Z1f9JCMdSWjcV
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:03:30.966990+00:00'
+assets: []

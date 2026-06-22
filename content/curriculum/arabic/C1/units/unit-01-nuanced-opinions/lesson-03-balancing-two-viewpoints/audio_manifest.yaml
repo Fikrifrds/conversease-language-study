@@ -1,24 +1,6 @@
 lesson_key: lesson-03-balancing-two-viewpoints
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/listening-3nav5pHC1EYvWOd5LmnA-20260618T055812Z.wav
-  duration_seconds: 60.98
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Ahmad: RjFuvnufLX42TYe37ekK
-    Karim: 3GnbqfjaW8xI6hRTVx4Y
-  line_count: 8
-  script_content_hash: f2723f38fea9ef075aebb2548f5e1e37eb9d87d33d7ae664083cb5efea5f10d9
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/listening-3nav5pHC1EYvWOd5LmnA-20260618T055812Z.wav
-  trace_id: W1SMRuO0R4dTkQNGaIbc,h1nuGt9Ay2eOxmEGRiKL,Vzj2OxgrUsbM2wKnRvbx,d55sTmOFO6eYIwVEReRR,ahUpGTWRHjw8WrKQ56g8,NC6TWNPilWdpitLZyQD3,cKvf3EMfewd1VLIrDE0o,JCPhk8GM1DjiOnaJ9Flq
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T05:58:12.837697+00:00'
+assets: []

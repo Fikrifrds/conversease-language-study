@@ -1,24 +1,6 @@
 lesson_key: lesson-02-asking-tactful-questions
-status: generated
+status: needs_regeneration
 provider: elevenlabs
 model: eleven_v3
 default_voice_id: multi_speaker
-assets:
-- key: dialogue_main
-  type: dialogue
-  script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T060525Z.wav
-  duration_seconds: 61.62
-  provider: elevenlabs
-  model: eleven_v3
-  voice_id: multi_speaker
-  speaker_voices:
-    Aisha: v7UCHHCrHj1KBa4E41gb
-    Fatimah: kdUY91gH5xyDHapxlthT
-  line_count: 8
-  script_content_hash: 3bfda741097f0659eac407ad571a75e408d011b1029997d45862ee8b88bcd9de
-  audio_format: wav
-  storage_key: conversease/audio/arabic/C1/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/listening-3nav5pHC1EYvWOd5LmnA-20260618T060525Z.wav
-  trace_id: ATC9TQ4yC7MR6jKcI9J7,I5FD7t3ms26WjNpmm06U,qnicHYDL0J6afsGx9Rqr,AOEi8U1fxBIjGkZbVlYt,mJfVs2bkMLtv4OsxoRE2,4ZSXfgmZd6KLvyDTJnwl,kZKGPD1LS0ubKmcmuy2R,CRHSHmQz87jqZgBRxT9V
-  generated_by: Fikri Firdaus
-  generated_at: '2026-06-18T06:05:25.766263+00:00'
+assets: []

@@ -1,8 +1,7 @@
 vocabulary:
 - word: شَعَرْتُ
   meaning_id: saya merasa
-  usage_note: 'Dipakai untuk arti "saya merasa". Contoh: "شَعَرْتُ بِالْقَلَقِ فِي
-    الْبِدَايَةِ."'
+  usage_note: 'Dipakai untuk arti "saya merasa". Contoh: "شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ."'
 - word: قَلَقٌ
   meaning_id: khawatir
   usage_note: 'Dipakai untuk arti "khawatir". Contoh: "شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ."'
@@ -11,21 +10,16 @@ vocabulary:
   usage_note: 'Dipakai untuk arti "awal". Contoh: "شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ."'
 - word: مَوْقِفٌ
   meaning_id: posisi/sikap
-  usage_note: 'Dipakai untuk arti "posisi/sikap". Contoh: "لِأَنَّ الْمَوْقِفَ كَانَ
-    جَدِيدًا عَلَيَّ."'
+  usage_note: 'Dipakai untuk arti "posisi/sikap". Contoh: "لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ."'
 - word: رَاحَةٌ
   meaning_id: nyaman/lega
-  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "بَعْدَ قَلِيلٍ، شَعَرْتُ
-    بِالرَّاحَةِ."'
+  usage_note: 'Dipakai untuk arti "nyaman/lega". Contoh: "بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ."'
 - word: تَغْيِيرٌ
   meaning_id: perubahan
-  usage_note: 'Dipakai untuk arti "perubahan". Contoh: "هَذَا التَّغْيِيرُ كَانَ مُهِمًّا
-    فِي الْقِصَّةِ."'
+  usage_note: 'Dipakai untuk arti "perubahan". Contoh: "هَذَا التَّغْيِيرُ كَانَ مُهِمًّا فِي الْقِصَّةِ."'
 - word: قِصَّةٌ
   meaning_id: cerita
-  usage_note: 'Dipakai untuk arti "cerita". Contoh: "هَذَا التَّغْيِيرُ كَانَ مُهِمًّا
-    فِي الْقِصَّةِ."'
+  usage_note: 'Dipakai untuk arti "cerita". Contoh: "هَذَا التَّغْيِيرُ كَانَ مُهِمًّا فِي الْقِصَّةِ."'
 - word: نِهَايَةٌ
   meaning_id: akhir
-  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي النِّهَايَةِ، كُنْتُ سَعِيدًا
-    بِالنَّتِيجَةِ."'
+  usage_note: 'Dipakai untuk arti "akhir". Contoh: "فِي النِّهَايَةِ، كُنْتُ سَعِيدًا بِالنَّتِيجَةِ."'

@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_reading_context
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟
 learner_goal: Latih percakapan Arab C1 untuk reading social context dengan nuance, struktur, presisi,
   dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ
     أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.'
   sample_answer: فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ

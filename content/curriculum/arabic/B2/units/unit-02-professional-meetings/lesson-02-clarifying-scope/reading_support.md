@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرِيدُ أَنْ أَبْدَأَ بِنُقْطَةٍ عَنْ تَوْضِيحُ نِطَاقِ النِّقَاشِ. -> Saya ingin mulai dengan poin tentang memperjelas scope diskusi.
-- هَلْ نِطَاقُ النِّقَاشِ وَاضِحٌ لِلْجَمِيعِ؟ -> Apakah cakupan diskusi jelas untuk semua orang?
-- عِنْدِي مُلَاحَظَةٌ بَنَّاءَةٌ عَلَى هَذَا الِاقْتِرَاحِ. -> Saya punya masukan konstruktif untuk usulan ini.
-- الْقَرَارُ الْأَسَاسِيُّ هُوَ أَنْ نُكْمِلَ الْخُطْوَةَ التَّالِيَةَ. -> Keputusan utamanya adalah kita menyelesaikan langkah berikutnya.
-- سَأُرْسِلُ مُلَخَّصًا قَصِيرًا بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengirim ringkasan singkat setelah rapat.
+- لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا. -> Cakupannya belum sepenuhnya jelas.
+- نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ. -> Kita memasukkan halaman utama dan menunda laporan.
+- هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ. -> Ini membuat tenggat tetap realistis dan mengurangi risiko.
+- سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengonfirmasi itu dalam pesan singkat setelah rapat.
+- مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى؟ -> Apa yang masuk fase pertama?

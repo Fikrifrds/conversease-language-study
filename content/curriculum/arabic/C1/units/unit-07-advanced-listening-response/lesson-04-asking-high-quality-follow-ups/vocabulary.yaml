@@ -1,33 +1,33 @@
 vocabulary:
 - word: أَسْئِلَةٌ
   meaning_id: pertanyaan-pertanyaan
-  usage_note: 'Dipakai untuk arti "pertanyaan-pertanyaan". Contoh: "فِي مَهَارَةِ
-    طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
+  usage_note: 'Dipakai untuk arti "pertanyaan-pertanyaan". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ
+    عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
 - word: مُتَابَعَةٌ
   meaning_id: follow-up/lanjutan
-  usage_note: 'Dipakai untuk arti "follow-up/lanjutan". Contoh: "فِي مَهَارَةِ طَرْحِ
-    أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
+  usage_note: 'Dipakai untuk arti "follow-up/lanjutan". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ
+    عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
 - word: جَوْدَةٌ
   meaning_id: kualitas
-  usage_note: 'Dipakai untuk arti "kualitas". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
+  usage_note: 'Dipakai untuk arti "kualitas". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ
+    الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
 - word: ضِمْنِيٌّ
   meaning_id: tersirat
-  usage_note: 'Dipakai untuk arti "tersirat". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
+  usage_note: 'Dipakai untuk arti "tersirat". Contoh: "فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ
+    الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
+  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ
+    عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ
+    الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
 - word: نُقْطَةٌ
   meaning_id: titik
-  usage_note: 'Dipakai untuk arti "titik". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
+  usage_note: 'Dipakai untuk arti "titik". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ
+    الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
 - word: تَفَاصِيلُ
   meaning_id: detail
-  usage_note: 'Dipakai untuk arti "detail". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ
-    مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'
+  usage_note: 'Dipakai untuk arti "detail". Contoh: "عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ
+    الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا عَلَى ا..."'

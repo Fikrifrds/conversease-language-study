@@ -1,7 +1,7 @@
 scenario_key: arabic_c1_managing_expectations
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
 learner_goal: Latih percakapan Arab C1 untuk managing realistic expectations dengan nuance, struktur,
   presisi, dan respons profesional.
 max_turns: 8
@@ -9,7 +9,7 @@ feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
   hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ
     أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.'
   sample_answer: فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ
