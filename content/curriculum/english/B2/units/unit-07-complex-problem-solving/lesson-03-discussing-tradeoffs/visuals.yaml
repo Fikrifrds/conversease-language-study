@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Tradeoffs di Indonesia.
   caption: 'Konteks percakapan nyata: Discussing Tradeoffs.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: The trade-off is speed versus long-term reliability.
-  alt: Cuplikan visual workplace male untuk frasa The trade-off is speed versus long-term reliability..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa The trade-off is speed versus long-term reliability..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: If we optimize for speed, we might introduce more bugs.
-  alt: Cuplikan visual workplace male untuk frasa If we optimize for speed, we might introduce more bugs..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa If we optimize for speed, we might introduce more bugs..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: On the other hand, the slower option reduces risk.
-  alt: Cuplikan visual workplace male untuk frasa On the other hand, the slower option reduces risk..
+  alt: Cuplikan visual service male untuk frasa On the other hand, the slower option reduces risk..

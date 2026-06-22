@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Finding a Place Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Finding a Place Mission.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: How do I get to room A?
-  alt: Cuplikan visual travel male untuk frasa How do I get to room A?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa How do I get to room A?.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: Go straight and turn left.
-  alt: Cuplikan visual travel male untuk frasa Go straight and turn left..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa Go straight and turn left..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: next to the office
-  alt: Cuplikan visual travel male untuk frasa next to the office.
+  alt: Cuplikan visual service male untuk frasa next to the office.

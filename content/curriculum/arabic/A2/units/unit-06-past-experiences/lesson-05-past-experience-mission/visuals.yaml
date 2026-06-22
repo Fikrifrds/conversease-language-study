@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Past Experience Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Past Experience Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ.
-  alt: Cuplikan visual classroom male untuk frasa فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa فِي نِهَايَةِ الْأُسْبُوعِ، ذَهَبْتُ إِلَى الْمَدِينَةِ..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: رَأَيْتُ مَكَانًا جَدِيدًا.
-  alt: Cuplikan visual classroom male untuk frasa رَأَيْتُ مَكَانًا جَدِيدًا..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa رَأَيْتُ مَكَانًا جَدِيدًا..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: اشْتَرَيْتُ شَيْئًا صَغِيرًا.
-  alt: Cuplikan visual classroom male untuk frasa اشْتَرَيْتُ شَيْئًا صَغِيرًا..
+  alt: Cuplikan visual service male untuk frasa اشْتَرَيْتُ شَيْئًا صَغِيرًا..

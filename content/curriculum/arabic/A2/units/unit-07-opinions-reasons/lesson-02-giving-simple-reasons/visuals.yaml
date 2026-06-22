@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Giving Simple Reasons di Indonesia.
   caption: 'Konteks percakapan nyata: Giving Simple Reasons.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ.
-  alt: Cuplikan visual classroom male untuk frasa أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa أُحِبُّ هَذَا لِأَنَّهُ سَهْلٌ..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ.
-  alt: Cuplikan visual classroom male untuk frasa أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa أُفَضِّلُ هَذَا لِأَنَّهُ قَرِيبٌ..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ.
-  alt: Cuplikan visual classroom male untuk frasa هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ..
+  alt: Cuplikan visual service male untuk frasa هُوَ جَيِّدٌ، وَلَكِنَّهُ غَالٍ..

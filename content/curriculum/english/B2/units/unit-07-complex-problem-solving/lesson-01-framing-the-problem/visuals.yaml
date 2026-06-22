@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Framing the Problem di Indonesia.
   caption: 'Konteks percakapan nyata: Framing the Problem.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: Let's define the problem statement first.
-  alt: Cuplikan visual workplace male untuk frasa Let's define the problem statement first..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa Let's define the problem statement first..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: Can we agree on the scope?
-  alt: Cuplikan visual workplace male untuk frasa Can we agree on the scope?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa Can we agree on the scope?.
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: What does success look like?
-  alt: Cuplikan visual workplace male untuk frasa What does success look like?.
+  alt: Cuplikan visual service male untuk frasa What does success look like?.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Contact Details Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: I need your contact details.
-  alt: Cuplikan visual classroom male untuk frasa I need your contact details..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa I need your contact details..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: How do you spell your name?
-  alt: Cuplikan visual classroom male untuk frasa How do you spell your name?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual workplace male untuk frasa How do you spell your name?.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: And your email address?
-  alt: Cuplikan visual classroom male untuk frasa And your email address?.
+  alt: Cuplikan visual workplace male untuk frasa And your email address?.

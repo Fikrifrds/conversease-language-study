@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/health-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Social Follow-up Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Social Follow-up Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/health-male/card-1.png
   width: 1254
   height: 1254
   label: كَيْفَ حَالُكَ؟
-  alt: Cuplikan visual classroom male untuk frasa كَيْفَ حَالُكَ؟.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual health male untuk frasa كَيْفَ حَالُكَ؟.
+- src: /images/lesson-visual-library/health-male/card-2.png
   width: 1254
   height: 1254
   label: مَاذَا فَعَلْتَ أَمْسِ؟
-  alt: Cuplikan visual classroom male untuk frasa مَاذَا فَعَلْتَ أَمْسِ؟.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual health male untuk frasa مَاذَا فَعَلْتَ أَمْسِ؟.
+- src: /images/lesson-visual-library/health-male/card-3.png
   width: 1254
   height: 1254
   label: هَذَا جَيِّدٌ.
-  alt: Cuplikan visual classroom male untuk frasa هَذَا جَيِّدٌ..
+  alt: Cuplikan visual health male untuk frasa هَذَا جَيِّدٌ..

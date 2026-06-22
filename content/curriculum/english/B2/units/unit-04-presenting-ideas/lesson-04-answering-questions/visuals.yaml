@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Answering Questions di Indonesia.
   caption: 'Konteks percakapan nyata: Answering Questions.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: That's a good question.
-  alt: Cuplikan visual classroom male untuk frasa That's a good question..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa That's a good question..
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: As far as I know, it takes about one day.
-  alt: Cuplikan visual classroom male untuk frasa As far as I know, it takes about one day..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual workplace male untuk frasa As far as I know, it takes about one day..
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: I'm not sure yet, but I can follow up by tomorrow.
-  alt: Cuplikan visual classroom male untuk frasa I'm not sure yet, but I can follow up by tomorrow..
+  alt: Cuplikan visual workplace male untuk frasa I'm not sure yet, but I can follow up by tomorrow..

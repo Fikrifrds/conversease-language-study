@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.
   caption: 'Konteks percakapan nyata: Spelling Your Name.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: كَيْفَ تَكْتُبُ اِسْمَكَ؟
-  alt: Cuplikan visual classroom male untuk frasa كَيْفَ تَكْتُبُ اِسْمَكَ؟.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa كَيْفَ تَكْتُبُ اِسْمَكَ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: أَكْتُبُ اسْمِي ...
-  alt: Cuplikan visual classroom male untuk frasa أَكْتُبُ اسْمِي ....
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa أَكْتُبُ اسْمِي ....
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: هَذَا حَرْفُ ...
-  alt: Cuplikan visual classroom male untuk frasa هَذَا حَرْفُ ....
+  alt: Cuplikan visual service male untuk frasa هَذَا حَرْفُ ....

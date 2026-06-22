@@ -1,27 +1,27 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Debate Analysis Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Debate Analysis Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/classroom-male/card-1.png
   width: 1254
   height: 1254
   label: فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
     هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  alt: Cuplikan visual workplace male untuk frasa فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+  alt: Cuplikan visual classroom male untuk frasa فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+- src: /images/lesson-visual-library/classroom-male/card-2.png
   width: 1254
   height: 1254
   label: عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ
     الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
-  alt: Cuplikan visual workplace male untuk frasa عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
+  alt: Cuplikan visual classroom male untuk frasa عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
     يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+- src: /images/lesson-visual-library/classroom-male/card-3.png
   width: 1254
   height: 1254
   label: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-  alt: Cuplikan visual workplace male untuk frasa الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ
+  alt: Cuplikan visual classroom male untuk frasa الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ
     فِي أَكْثَرَ مِنْ سِيَاقٍ..

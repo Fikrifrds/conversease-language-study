@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Transport Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Transport Mission.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: I'd like one ticket to Bandung, please.
-  alt: Cuplikan visual travel male untuk frasa I'd like one ticket to Bandung, please..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa I'd like one ticket to Bandung, please..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: It leaves at 6:30 pm.
-  alt: Cuplikan visual travel male untuk frasa It leaves at 6:30 pm..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa It leaves at 6:30 pm..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: from platform 2
-  alt: Cuplikan visual travel male untuk frasa from platform 2.
+  alt: Cuplikan visual service male untuk frasa from platform 2.

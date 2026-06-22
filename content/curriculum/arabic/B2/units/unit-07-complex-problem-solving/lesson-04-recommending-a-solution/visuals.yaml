@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Recommending a Solution di Indonesia.
   caption: 'Konteks percakapan nyata: Recommending a Solution.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  alt: Cuplikan visual workplace male untuk frasa أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
+  alt: Cuplikan visual service male untuk frasa أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ
     أَكْبَرَ..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  alt: Cuplikan visual workplace male untuk frasa السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  alt: Cuplikan visual workplace male untuk frasa لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ..
+  alt: Cuplikan visual service male untuk frasa لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ..

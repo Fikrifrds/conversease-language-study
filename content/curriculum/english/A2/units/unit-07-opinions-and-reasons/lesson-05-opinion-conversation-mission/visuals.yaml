@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/health-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Opinion Conversation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Opinion Conversation Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/health-male/card-1.png
   width: 1254
   height: 1254
   label: What do you think about this restaurant?
-  alt: Cuplikan visual classroom male untuk frasa What do you think about this restaurant?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual health male untuk frasa What do you think about this restaurant?.
+- src: /images/lesson-visual-library/health-male/card-2.png
   width: 1254
   height: 1254
   label: I think it's good because it's cheap.
-  alt: Cuplikan visual classroom male untuk frasa I think it's good because it's cheap..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual health male untuk frasa I think it's good because it's cheap..
+- src: /images/lesson-visual-library/health-male/card-3.png
   width: 1254
   height: 1254
   label: I'm not sure.
-  alt: Cuplikan visual classroom male untuk frasa I'm not sure..
+  alt: Cuplikan visual health male untuk frasa I'm not sure..

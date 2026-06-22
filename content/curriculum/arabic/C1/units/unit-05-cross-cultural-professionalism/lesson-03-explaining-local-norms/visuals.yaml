@@ -1,27 +1,27 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
+  src: /images/lesson-visual-library/travel-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Explaining Local Norms di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Local Norms.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/travel-female/card-1.png
   width: 1254
   height: 1254
   label: فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
     السِّيَاقَ بِدِقَّةٍ.
-  alt: Cuplikan visual workplace female untuk frasa فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ،
-    قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+  alt: Cuplikan visual travel female untuk frasa فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ
+    أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ..
+- src: /images/lesson-visual-library/travel-female/card-2.png
   width: 1254
   height: 1254
   label: عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ
     أَكْثَرَ لَبَاقَةً؟
-  alt: Cuplikan visual workplace female untuk frasa عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ،
+  alt: Cuplikan visual travel female untuk frasa عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ،
     هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟.
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+- src: /images/lesson-visual-library/travel-female/card-3.png
   width: 1254
   height: 1254
   label: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-  alt: Cuplikan visual workplace female untuk frasa فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ
+  alt: Cuplikan visual travel female untuk frasa فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ
     مُخْتَلِفَةٍ..

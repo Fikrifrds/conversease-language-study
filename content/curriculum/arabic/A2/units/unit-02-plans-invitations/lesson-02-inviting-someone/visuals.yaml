@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
+  src: /images/lesson-visual-library/service-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Inviting Someone di Indonesia.
   caption: 'Konteks percakapan nyata: Inviting Someone.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/service-female/card-1.png
   width: 1254
   height: 1254
   label: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
-  alt: Cuplikan visual classroom female untuk frasa هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟.
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+  alt: Cuplikan visual service female untuk frasa هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟.
+- src: /images/lesson-visual-library/service-female/card-2.png
   width: 1254
   height: 1254
   label: لِأَنَّ الدَّرْسَ مُهِمٌّ.
-  alt: Cuplikan visual classroom female untuk frasa لِأَنَّ الدَّرْسَ مُهِمٌّ..
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+  alt: Cuplikan visual service female untuk frasa لِأَنَّ الدَّرْسَ مُهِمٌّ..
+- src: /images/lesson-visual-library/service-female/card-3.png
   width: 1254
   height: 1254
   label: فِكْرَةٌ جَيِّدَةٌ.
-  alt: Cuplikan visual classroom female untuk frasa فِكْرَةٌ جَيِّدَةٌ..
+  alt: Cuplikan visual service female untuk frasa فِكْرَةٌ جَيِّدَةٌ..

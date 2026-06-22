@@ -247,6 +247,83 @@ function courseHeroVisuals(course) {
   return (courseVisualSets[course.slug] ?? []).map(visualFromSpec);
 }
 
+function lessonHeroVisual(lessonsBySlug, lessonSlug) {
+  return lessonsBySlug[lessonSlug]?.visuals?.hero ?? null;
+}
+
+function cardVisualsForHero(hero) {
+  const basePath = hero.src.replace(/\/hero\.png$/, "");
+  if (basePath === hero.src) {
+    return [];
+  }
+
+  return [1, 2, 3].map((index) => ({ src: `${basePath}/card-${index}.png` }));
+}
+
+function rotateItems(items, seed) {
+  if (items.length <= 1) {
+    return items;
+  }
+
+  const offset = ((seed % items.length) + items.length) % items.length;
+  return [...items.slice(offset), ...items.slice(0, offset)];
+}
+
+function unitHeroVisuals(lessonsBySlug, unit, maxCount = 3, seed = 0) {
+  const seen = new Set();
+  const heroVisuals = [];
+
+  for (const lesson of unit.lessons) {
+    const visual = lessonHeroVisual(lessonsBySlug, lesson.slug);
+    if (!visual || seen.has(visual.src)) {
+      continue;
+    }
+    heroVisuals.push(visual);
+    seen.add(visual.src);
+  }
+
+  const orderedHeroes = arrangeUnitHeroes(heroVisuals, seed);
+  const visuals = orderedHeroes.slice(0, maxCount);
+  if (visuals.length >= maxCount) {
+    return visuals;
+  }
+
+  for (const hero of orderedHeroes) {
+    for (const cardVisual of rotateItems(cardVisualsForHero(hero), seed)) {
+      if (seen.has(cardVisual.src)) {
+        continue;
+      }
+      visuals.push(cardVisual);
+      seen.add(cardVisual.src);
+      if (visuals.length >= maxCount) {
+        return visuals;
+      }
+    }
+  }
+
+  return visuals;
+}
+
+function arrangeUnitHeroes(items, seed) {
+  const rotated = rotateItems(items, seed);
+  if (rotated.length <= 2) {
+    return rotated;
+  }
+
+  const [first, second, third, ...rest] = rotated;
+  if (seed % 4 === 1) {
+    return [first, third, second, ...rest];
+  }
+  if (seed % 4 === 2) {
+    return [second, first, third, ...rest];
+  }
+  if (seed % 4 === 3) {
+    return [third, first, second, ...rest];
+  }
+
+  return rotated;
+}
+
 function uniqueItems(items) {
   const seen = new Set();
   return items.filter((item) => {
@@ -269,7 +346,12 @@ function preferredGenderForCourse(course) {
   return course.language === "arabic" || course.slug?.startsWith("arabic-") ? "female" : "male";
 }
 
-function courseUnitVisuals(course, unit, unitIndex) {
+function courseUnitVisuals(course, unit, unitIndex, lessonsBySlug) {
+  const lessonVisuals = unitHeroVisuals(lessonsBySlug, unit, 3, unitIndex);
+  if (lessonVisuals.length) {
+    return lessonVisuals;
+  }
+
   const gender = preferredGenderForCourse(course);
   const assets = unitAssetPatterns[unitIndex % unitAssetPatterns.length];
   return basesForUnit(unit, unitIndex).map((base, index) => visualFromSpec([`${base}-${gender}`, assets[index] ?? "hero"]));
@@ -353,7 +435,7 @@ function checkCourseStructure(courses, lessonsBySlug, courseHeroVisuals, courseU
         });
       }
 
-      const unitVisuals = courseUnitVisuals(course, unit, unitIndex);
+      const unitVisuals = courseUnitVisuals(course, unit, unitIndex, lessonsBySlug);
       if (unitVisuals.length < 3) {
         addFailure("unit_visual_count", "Each unit should have at least 3 visual panels.", {
           course: course.slug,
@@ -368,6 +450,22 @@ function checkCourseStructure(courses, lessonsBySlug, courseHeroVisuals, courseU
           course: course.slug,
           unit: unit.title,
           visuals: unitVisuals.map((visual) => visualKey(visual.src))
+        });
+      }
+
+      const lessonHeroScenes = new Set(
+        unit.lessons
+          .map((lesson) => lessonHeroVisual(lessonsBySlug, lesson.slug)?.src)
+          .filter(Boolean)
+          .map(sceneKey)
+      );
+      const hasLessonSceneMatch = [...unitScenes].some((scene) => lessonHeroScenes.has(scene));
+      if (lessonHeroScenes.size && !hasLessonSceneMatch) {
+        addFailure("unit_visual_lesson_mismatch", "Unit visual setting should match at least one lesson in the unit.", {
+          course: course.slug,
+          unit: unit.title,
+          unitScenes: [...unitScenes],
+          lessonHeroScenes: [...lessonHeroScenes]
         });
       }
 

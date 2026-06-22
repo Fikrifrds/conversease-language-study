@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
+  src: /images/lesson-visual-library/workplace-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Reaching Agreement di Indonesia.
   caption: 'Konteks percakapan nyata: Reaching Agreement.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.png
   width: 1254
   height: 1254
   label: أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
-  alt: Cuplikan visual classroom female untuk frasa أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى..
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+  alt: Cuplikan visual workplace female untuk frasa أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى..
+- src: /images/lesson-visual-library/workplace-female/card-2.png
   width: 1254
   height: 1254
   label: لَكِنَّنِي أَرَى خِيَارًا آخَرَ.
-  alt: Cuplikan visual classroom female untuk frasa لَكِنَّنِي أَرَى خِيَارًا آخَرَ..
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+  alt: Cuplikan visual workplace female untuk frasa لَكِنَّنِي أَرَى خِيَارًا آخَرَ..
+- src: /images/lesson-visual-library/workplace-female/card-3.png
   width: 1254
   height: 1254
   label: مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.
-  alt: Cuplikan visual classroom female untuk frasa مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ..
+  alt: Cuplikan visual workplace female untuk frasa مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ..

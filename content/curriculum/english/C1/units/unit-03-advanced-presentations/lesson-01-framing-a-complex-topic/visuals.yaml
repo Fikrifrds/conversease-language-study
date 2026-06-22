@@ -1,25 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/classroom-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Framing a Complex Topic di Indonesia.
   caption: 'Konteks percakapan nyata: Framing a Complex Topic.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/classroom-male/card-1.png
   width: 1254
   height: 1254
   label: Today I'd like to walk you through the proposal and why it matters.
-  alt: Cuplikan visual workplace male untuk frasa Today I'd like to walk you through the proposal and
+  alt: Cuplikan visual classroom male untuk frasa Today I'd like to walk you through the proposal and
     why it matters..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+- src: /images/lesson-visual-library/classroom-male/card-2.png
   width: 1254
   height: 1254
   label: By 'modular architecture', I mean we separate features into independent components.
-  alt: Cuplikan visual workplace male untuk frasa By 'modular architecture', I mean we separate features
+  alt: Cuplikan visual classroom male untuk frasa By 'modular architecture', I mean we separate features
     into independent components..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+- src: /images/lesson-visual-library/classroom-male/card-3.png
   width: 1254
   height: 1254
   label: The purpose of this is to reduce coupling and speed up delivery.
-  alt: Cuplikan visual workplace male untuk frasa The purpose of this is to reduce coupling and speed
+  alt: Cuplikan visual classroom male untuk frasa The purpose of this is to reduce coupling and speed
     up delivery..

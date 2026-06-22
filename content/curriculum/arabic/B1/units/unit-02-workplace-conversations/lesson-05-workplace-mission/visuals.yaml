@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
+  src: /images/lesson-visual-library/classroom-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Workplace Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Workplace Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/classroom-female/card-1.png
   width: 1254
   height: 1254
   label: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
-  alt: Cuplikan visual workplace female untuk frasa أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+  alt: Cuplikan visual classroom female untuk frasa أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ..
+- src: /images/lesson-visual-library/classroom-female/card-2.png
   width: 1254
   height: 1254
   label: هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟
-  alt: Cuplikan visual workplace female untuk frasa هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟.
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+  alt: Cuplikan visual classroom female untuk frasa هَلْ تَقْصِدِينَ الْمَلَفَّاتِ الْجَدِيدَةَ فَقَطْ؟.
+- src: /images/lesson-visual-library/classroom-female/card-3.png
   width: 1254
   height: 1254
   label: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
-  alt: Cuplikan visual workplace female untuk frasa أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ..
+  alt: Cuplikan visual classroom female untuk frasa أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ..

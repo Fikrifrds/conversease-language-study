@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/health-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Invitation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Invitation Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/health-male/card-1.png
   width: 1254
   height: 1254
   label: Do you want to grab coffee?
-  alt: Cuplikan visual classroom male untuk frasa Do you want to grab coffee?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual health male untuk frasa Do you want to grab coffee?.
+- src: /images/lesson-visual-library/health-male/card-2.png
   width: 1254
   height: 1254
   label: Sorry, I can't.
-  alt: Cuplikan visual classroom male untuk frasa Sorry, I can't..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual health male untuk frasa Sorry, I can't..
+- src: /images/lesson-visual-library/health-male/card-3.png
   width: 1254
   height: 1254
   label: Something came up.
-  alt: Cuplikan visual classroom male untuk frasa Something came up..
+  alt: Cuplikan visual health male untuk frasa Something came up..

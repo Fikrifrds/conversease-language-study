@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Numbers and Phone di Indonesia.
   caption: 'Konteks percakapan nyata: Arabic Numbers and Phone.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: مَا رَقْمُ هَاتِفِكَ؟
-  alt: Cuplikan visual classroom male untuk frasa مَا رَقْمُ هَاتِفِكَ؟.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa مَا رَقْمُ هَاتِفِكَ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: رَقْمِي ...
-  alt: Cuplikan visual classroom male untuk frasa رَقْمِي ....
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa رَقْمِي ....
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ
-  alt: Cuplikan visual classroom male untuk frasa وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ.
+  alt: Cuplikan visual service male untuk frasa وَاحِدٌ، اِثْنَانِ، ثَلَاثَةٌ.

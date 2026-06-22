@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Apologizing and Thanking di Indonesia.
   caption: 'Konteks percakapan nyata: Apologizing and Thanking.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: آسِفٌ
-  alt: Cuplikan visual workplace male untuk frasa آسِفٌ.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa آسِفٌ.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: آسِفَةٌ
-  alt: Cuplikan visual workplace male untuk frasa آسِفَةٌ.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa آسِفَةٌ.
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: عُذْرًا
-  alt: Cuplikan visual workplace male untuk frasa عُذْرًا.
+  alt: Cuplikan visual service male untuk frasa عُذْرًا.

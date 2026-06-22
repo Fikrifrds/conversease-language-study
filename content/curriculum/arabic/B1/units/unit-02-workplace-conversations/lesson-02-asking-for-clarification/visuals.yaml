@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
+  src: /images/lesson-visual-library/service-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Asking for Clarification di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Clarification.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/service-female/card-1.png
   width: 1254
   height: 1254
   label: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
-  alt: Cuplikan visual workplace female untuk frasa هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟.
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+  alt: Cuplikan visual service female untuk frasa هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟.
+- src: /images/lesson-visual-library/service-female/card-2.png
   width: 1254
   height: 1254
   label: مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟
-  alt: Cuplikan visual workplace female untuk frasa مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟.
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+  alt: Cuplikan visual service female untuk frasa مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟.
+- src: /images/lesson-visual-library/service-female/card-3.png
   width: 1254
   height: 1254
   label: أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
-  alt: Cuplikan visual workplace female untuk frasa أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ..
+  alt: Cuplikan visual service female untuk frasa أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ..

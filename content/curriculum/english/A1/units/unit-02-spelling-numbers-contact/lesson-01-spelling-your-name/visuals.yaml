@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Spelling Your Name di Indonesia.
   caption: 'Konteks percakapan nyata: Spelling Your Name.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: How do you spell it?
-  alt: Cuplikan visual classroom male untuk frasa How do you spell it?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa How do you spell it?.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: Let me spell it for you.
-  alt: Cuplikan visual classroom male untuk frasa Let me spell it for you..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa Let me spell it for you..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: It's spelled D-I-M-A-S.
-  alt: Cuplikan visual classroom male untuk frasa It's spelled D-I-M-A-S..
+  alt: Cuplikan visual service male untuk frasa It's spelled D-I-M-A-S..

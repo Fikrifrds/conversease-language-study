@@ -1,24 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
+  src: /images/lesson-visual-library/classroom-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Review Arguments and Meetings di Indonesia.
   caption: 'Konteks percakapan nyata: Review Arguments and Meetings.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/classroom-female/card-1.png
   width: 1254
   height: 1254
   label: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
-  alt: Cuplikan visual workplace female untuk frasa أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا
+  alt: Cuplikan visual classroom female untuk frasa أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا
     مُهِمَّةٌ فِي النِّقَاشِ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+- src: /images/lesson-visual-library/classroom-female/card-2.png
   width: 1254
   height: 1254
   label: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  alt: Cuplikan visual workplace female untuk frasa أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+  alt: Cuplikan visual classroom female untuk frasa أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ..
+- src: /images/lesson-visual-library/classroom-female/card-3.png
   width: 1254
   height: 1254
   label: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  alt: Cuplikan visual workplace female untuk frasa أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا
+  alt: Cuplikan visual classroom female untuk frasa أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا
     بِوُضُوحٍ..

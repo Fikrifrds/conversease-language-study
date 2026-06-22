@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Accepting and Declining di Indonesia.
   caption: 'Konteks percakapan nyata: Accepting and Declining.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: نَعَمْ، أَسْتَطِيعُ.
-  alt: Cuplikan visual classroom male untuk frasa نَعَمْ، أَسْتَطِيعُ..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa نَعَمْ، أَسْتَطِيعُ..
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: آسِفٌ، لَا أَسْتَطِيعُ.
-  alt: Cuplikan visual classroom male untuk frasa آسِفٌ، لَا أَسْتَطِيعُ..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa آسِفٌ، لَا أَسْتَطِيعُ..
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: لِأَنَّ لَدَيَّ مَوْعِدًا.
-  alt: Cuplikan visual classroom male untuk frasa لِأَنَّ لَدَيَّ مَوْعِدًا..
+  alt: Cuplikan visual travel male untuk frasa لِأَنَّ لَدَيَّ مَوْعِدًا..

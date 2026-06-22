@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Advice di Indonesia.
   caption: 'Konteks percakapan nyata: Responding to Advice.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: Maybe you should set a small daily goal.
-  alt: Cuplikan visual workplace male untuk frasa Maybe you should set a small daily goal..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa Maybe you should set a small daily goal..
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: That sounds good.
-  alt: Cuplikan visual workplace male untuk frasa That sounds good..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa That sounds good..
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: You're right.
-  alt: Cuplikan visual workplace male untuk frasa You're right..
+  alt: Cuplikan visual travel male untuk frasa You're right..

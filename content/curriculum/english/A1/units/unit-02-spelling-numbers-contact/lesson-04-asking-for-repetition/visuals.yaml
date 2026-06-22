@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Repetition di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Repetition.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: Sorry, can you repeat that, please?
-  alt: Cuplikan visual classroom male untuk frasa Sorry, can you repeat that, please?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa Sorry, can you repeat that, please?.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: Sure.
-  alt: Cuplikan visual classroom male untuk frasa Sure..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa Sure..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: Did you say two two five five?
-  alt: Cuplikan visual classroom male untuk frasa Did you say two two five five?.
+  alt: Cuplikan visual service male untuk frasa Did you say two two five five?.

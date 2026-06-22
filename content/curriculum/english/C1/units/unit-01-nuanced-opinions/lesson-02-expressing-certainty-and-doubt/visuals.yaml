@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Expressing Certainty and Doubt di Indonesia.
   caption: 'Konteks percakapan nyata: Expressing Certainty and Doubt.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: I'm fairly confident it will, given the support trends.
-  alt: Cuplikan visual classroom male untuk frasa I'm fairly confident it will, given the support trends..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa I'm fairly confident it will, given the support trends..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: I'm not entirely convinced.
-  alt: Cuplikan visual classroom male untuk frasa I'm not entirely convinced..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa I'm not entirely convinced..
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: There's a strong chance we'll see edge cases.
-  alt: Cuplikan visual classroom male untuk frasa There's a strong chance we'll see edge cases..
+  alt: Cuplikan visual service male untuk frasa There's a strong chance we'll see edge cases..

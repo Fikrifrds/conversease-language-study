@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
+  src: /images/lesson-visual-library/classroom-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Preference Discussion Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Preference Discussion Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/classroom-female/card-1.png
   width: 1254
   height: 1254
   label: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-  alt: Cuplikan visual workplace female untuk frasa سَأُقَارِنُ بَيْنَ خِيَارَيْنِ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+  alt: Cuplikan visual classroom female untuk frasa سَأُقَارِنُ بَيْنَ خِيَارَيْنِ..
+- src: /images/lesson-visual-library/classroom-female/card-2.png
   width: 1254
   height: 1254
   label: أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ.
-  alt: Cuplikan visual workplace female untuk frasa أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+  alt: Cuplikan visual classroom female untuk frasa أُفَضِّلُ الْخِيَارَ الْأَوَّلَ لِأَنَّهُ أَسْهَلُ..
+- src: /images/lesson-visual-library/classroom-female/card-3.png
   width: 1254
   height: 1254
   label: لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى.
-  alt: Cuplikan visual workplace female untuk frasa لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى..
+  alt: Cuplikan visual classroom female untuk frasa لَكِنَّ الْخِيَارَ الثَّانِي أَقْوَى..

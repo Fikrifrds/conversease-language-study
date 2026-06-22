@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Being Polite With Differences di Indonesia.
   caption: 'Konteks percakapan nyata: Being Polite With Differences.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ.
-  alt: Cuplikan visual classroom male untuk frasa أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa أَفْهَمُ أَنَّ الْعَادَاتِ تَخْتَلِفُ..
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ.
-  alt: Cuplikan visual classroom male untuk frasa لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa لَا أُرِيدُ أَنْ أُسِيءَ الْفَهْمَ..
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ.
-  alt: Cuplikan visual classroom male untuk frasa مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ..
+  alt: Cuplikan visual travel male untuk frasa مِنَ الْأَفْضَلِ أَنْ نَسْأَلَ بِأَدَبٍ..

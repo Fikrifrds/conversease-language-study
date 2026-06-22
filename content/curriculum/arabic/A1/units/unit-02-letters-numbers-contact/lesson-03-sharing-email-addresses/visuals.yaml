@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.
   caption: 'Konteks percakapan nyata: Sharing Email Addresses.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟
-  alt: Cuplikan visual classroom male untuk frasa مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa مَا بَرِيدُكَ الْإِلِكْتُرُونِيُّ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: بَرِيدِي الْإِلِكْتُرُونِيُّ ...
-  alt: Cuplikan visual classroom male untuk frasa بَرِيدِي الْإِلِكْتُرُونِيُّ ....
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa بَرِيدِي الْإِلِكْتُرُونِيُّ ....
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: اُكْتُبْ مِنْ فَضْلِكَ
-  alt: Cuplikan visual classroom male untuk frasa اُكْتُبْ مِنْ فَضْلِكَ.
+  alt: Cuplikan visual service male untuk frasa اُكْتُبْ مِنْ فَضْلِكَ.

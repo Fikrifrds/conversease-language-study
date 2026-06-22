@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Finding a Place Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Finding a Place Mission.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: أَيْنَ الْفَصْلُ؟
-  alt: Cuplikan visual travel male untuk frasa أَيْنَ الْفَصْلُ؟.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa أَيْنَ الْفَصْلُ؟.
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟
-  alt: Cuplikan visual travel male untuk frasa كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa كَيْفَ أَذْهَبُ إِلَى الْفَصْلِ؟.
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: اِذْهَبْ يَمِينًا
-  alt: Cuplikan visual travel male untuk frasa اِذْهَبْ يَمِينًا.
+  alt: Cuplikan visual service male untuk frasa اِذْهَبْ يَمِينًا.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Setting the Scene di Indonesia.
   caption: 'Konteks percakapan nyata: Setting the Scene.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: Last weekend, I was in Bandung.
-  alt: Cuplikan visual classroom male untuk frasa Last weekend, I was in Bandung..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa Last weekend, I was in Bandung..
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: I was there with my cousin.
-  alt: Cuplikan visual classroom male untuk frasa I was there with my cousin..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa I was there with my cousin..
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: We were visiting my aunt.
-  alt: Cuplikan visual classroom male untuk frasa We were visiting my aunt..
+  alt: Cuplikan visual travel male untuk frasa We were visiting my aunt..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Someone's Story di Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Someone''s Story.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: What happened next?
-  alt: Cuplikan visual classroom male untuk frasa What happened next?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa What happened next?.
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: Why did you choose that route?
-  alt: Cuplikan visual classroom male untuk frasa Why did you choose that route?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa Why did you choose that route?.
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: How did you feel at that moment?
-  alt: Cuplikan visual classroom male untuk frasa How did you feel at that moment?.
+  alt: Cuplikan visual travel male untuk frasa How did you feel at that moment?.

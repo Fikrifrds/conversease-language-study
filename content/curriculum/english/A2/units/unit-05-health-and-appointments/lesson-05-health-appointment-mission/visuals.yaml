@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Health Appointment Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Health Appointment Mission.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: I have an appointment at 3:30.
-  alt: Cuplikan visual health male untuk frasa I have an appointment at 3:30..
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa I have an appointment at 3:30..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: What seems to be the problem?
-  alt: Cuplikan visual health male untuk frasa What seems to be the problem?.
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa What seems to be the problem?.
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: I've had a cough for two days.
-  alt: Cuplikan visual health male untuk frasa I've had a cough for two days..
+  alt: Cuplikan visual service male untuk frasa I've had a cough for two days..

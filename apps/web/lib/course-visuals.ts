@@ -171,40 +171,47 @@ export function unitHeroVisual(unit: UnitRef) {
 }
 
 export function courseUnitVisuals(course: CourseRef, unit: UnitRef, unitIndex: number, maxCount = 3) {
+  const lessonVisuals = unitHeroVisuals(unit, maxCount, unitIndex);
+  if (lessonVisuals.length) {
+    return lessonVisuals;
+  }
+
   const curatedVisuals = curatedUnitVisuals(course, unit, unitIndex);
   if (curatedVisuals.length) {
     return curatedVisuals.slice(0, maxCount);
   }
 
-  return unitHeroVisuals(unit, maxCount);
+  return [];
 }
 
-export function unitHeroVisuals(unit: UnitRef, maxCount = 3) {
+export function unitHeroVisuals(unit: UnitRef, maxCount = 3, seed = 0) {
   const seen = new Set<string>();
-  const visuals: CourseVisual[] = [];
+  const heroVisuals: CourseVisual[] = [];
 
   for (const lesson of unit.lessons) {
     const visual = lessonHeroVisual(lesson.slug);
     if (!visual || seen.has(visual.src)) {
       continue;
     }
-    visuals.push(visual);
+    heroVisuals.push(visual);
     seen.add(visual.src);
-    if (visuals.length >= maxCount) {
-      return visuals;
-    }
   }
 
-  const firstHero = visuals[0];
-  if (firstHero) {
-    for (const cardVisual of cardVisualsForHero(firstHero)) {
+  const orderedHeroes = arrangeUnitHeroes(heroVisuals, seed);
+  const visuals = orderedHeroes.slice(0, maxCount);
+  if (visuals.length >= maxCount) {
+    return visuals;
+  }
+
+  for (const hero of orderedHeroes) {
+    for (const cardVisual of rotateItems(cardVisualsForHero(hero), seed)) {
       if (seen.has(cardVisual.src)) {
         continue;
       }
       visuals.push(cardVisual);
       seen.add(cardVisual.src);
       if (visuals.length >= maxCount) {
-        break;
+        return visuals;
       }
     }
   }
@@ -237,6 +244,13 @@ export function courseHeroVisuals(course: CourseRef, maxCount = 3) {
 }
 
 export function courseHeroVisual(course: CourseRef) {
+  for (const [unitIndex, unit] of course.units.entries()) {
+    const visual = courseUnitVisuals(course, unit, unitIndex, 1)[0];
+    if (visual) {
+      return visual;
+    }
+  }
+
   return courseHeroVisuals(course, 1)[0] ?? null;
 }
 
@@ -310,4 +324,33 @@ function cardVisualsForHero(hero: CourseVisual): CourseVisual[] {
     height: CARD_SIZE,
     alt: hero.alt
   }));
+}
+
+function rotateItems<T>(items: T[], seed: number): T[] {
+  if (items.length <= 1) {
+    return items;
+  }
+
+  const offset = ((seed % items.length) + items.length) % items.length;
+  return [...items.slice(offset), ...items.slice(0, offset)];
+}
+
+function arrangeUnitHeroes<T>(items: T[], seed: number): T[] {
+  const rotated = rotateItems(items, seed);
+  if (rotated.length <= 2) {
+    return rotated;
+  }
+
+  const [first, second, third, ...rest] = rotated;
+  if (seed % 4 === 1) {
+    return [first, third, second, ...rest];
+  }
+  if (seed % 4 === 2) {
+    return [second, first, third, ...rest];
+  }
+  if (seed % 4 === 3) {
+    return [third, first, second, ...rest];
+  }
+
+  return rotated;
 }

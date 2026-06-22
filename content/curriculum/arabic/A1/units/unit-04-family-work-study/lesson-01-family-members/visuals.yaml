@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Family Members di Indonesia.
   caption: 'Konteks percakapan nyata: Family Members.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: مَنْ هَذَا؟
-  alt: Cuplikan visual classroom male untuk frasa مَنْ هَذَا؟.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa مَنْ هَذَا؟.
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: هَذَا أَبِي
-  alt: Cuplikan visual classroom male untuk frasa هَذَا أَبِي.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual workplace male untuk frasa هَذَا أَبِي.
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: هَذِهِ أُمِّي
-  alt: Cuplikan visual classroom male untuk frasa هَذِهِ أُمِّي.
+  alt: Cuplikan visual workplace male untuk frasa هَذِهِ أُمِّي.

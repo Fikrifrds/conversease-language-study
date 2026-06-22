@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/workplace-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Contact Details Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Contact Details Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/workplace-male/card-1.png
   width: 1254
   height: 1254
   label: اِسْمِي ...
-  alt: Cuplikan visual classroom male untuk frasa اِسْمِي ....
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual workplace male untuk frasa اِسْمِي ....
+- src: /images/lesson-visual-library/workplace-male/card-2.png
   width: 1254
   height: 1254
   label: أَكْتُبُ اسْمِي ...
-  alt: Cuplikan visual classroom male untuk frasa أَكْتُبُ اسْمِي ....
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual workplace male untuk frasa أَكْتُبُ اسْمِي ....
+- src: /images/lesson-visual-library/workplace-male/card-3.png
   width: 1254
   height: 1254
   label: رَقْمِي ...
-  alt: Cuplikan visual classroom male untuk frasa رَقْمِي ....
+  alt: Cuplikan visual workplace male untuk frasa رَقْمِي ....

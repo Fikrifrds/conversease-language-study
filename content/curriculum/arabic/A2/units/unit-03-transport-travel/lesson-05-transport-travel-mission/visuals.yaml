@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/service-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Transport and Travel Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Transport and Travel Mission.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.png
   width: 1254
   height: 1254
   label: أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ.
-  alt: Cuplikan visual travel male untuk frasa أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual service male untuk frasa أُرِيدُ تَذْكِرَةً إِلَى الْمَدِينَةِ..
+- src: /images/lesson-visual-library/service-male/card-2.png
   width: 1254
   height: 1254
   label: مَتَى يَغَادِرُ الْقِطَارُ؟
-  alt: Cuplikan visual travel male untuk frasa مَتَى يَغَادِرُ الْقِطَارُ؟.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual service male untuk frasa مَتَى يَغَادِرُ الْقِطَارُ؟.
+- src: /images/lesson-visual-library/service-male/card-3.png
   width: 1254
   height: 1254
   label: كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟
-  alt: Cuplikan visual travel male untuk frasa كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟.
+  alt: Cuplikan visual service male untuk frasa كَيْفَ أَذْهَبُ إِلَى الرَّصِيفِ؟.

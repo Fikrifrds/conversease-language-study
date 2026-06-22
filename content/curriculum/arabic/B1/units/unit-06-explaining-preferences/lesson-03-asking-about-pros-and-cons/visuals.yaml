@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
+  src: /images/lesson-visual-library/travel-female/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Asking About Pros and Cons di Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Pros and Cons.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/travel-female/card-1.png
   width: 1254
   height: 1254
   label: مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
-  alt: Cuplikan visual classroom female untuk frasa مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟.
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+  alt: Cuplikan visual travel female untuk frasa مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟.
+- src: /images/lesson-visual-library/travel-female/card-2.png
   width: 1254
   height: 1254
   label: وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟
-  alt: Cuplikan visual classroom female untuk frasa وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟.
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+  alt: Cuplikan visual travel female untuk frasa وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟.
+- src: /images/lesson-visual-library/travel-female/card-3.png
   width: 1254
   height: 1254
   label: هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟
-  alt: Cuplikan visual classroom female untuk frasa هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟.
+  alt: Cuplikan visual travel female untuk frasa هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟.

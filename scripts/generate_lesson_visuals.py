@@ -18,6 +18,127 @@ HERO_WIDTH = 1672
 HERO_HEIGHT = 941
 CARD_WIDTH = 1254
 CARD_HEIGHT = 1254
+FALLBACK_SCENE_ROTATION = ("classroom", "service", "travel", "workplace", "health")
+
+SCENE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
+    (
+        "health",
+        (
+            r"\bhealth\b",
+            r"\bsymptoms?\b",
+            r"\bappointment\b",
+            r"\bclinic\b",
+            r"\bdoctor\b",
+            r"\bnurse\b",
+            r"\bmedicine\b",
+            r"\bsick\b",
+            r"\bpain\b",
+        ),
+    ),
+    (
+        "service",
+        (
+            r"\bphone\b",
+            r"\bemail\b",
+            r"\bcontact\b",
+            r"\bnumbers?\b",
+            r"\bclarif(?:y|ication)\b",
+            r"\brequests?\b",
+            r"\bhelp\b",
+            r"\bproblem\b",
+            r"\bfood\b",
+            r"\bdrinks?\b",
+            r"\bshopping\b",
+            r"\bshops?\b",
+            r"\bprices?\b",
+            r"\bitems?\b",
+            r"\bservice\b",
+            r"\bcustomer\b",
+            r"\bclient\b",
+            r"\bbuying\b",
+            r"\bcaf[ée]?\b",
+        ),
+    ),
+    (
+        "travel",
+        (
+            r"\borigin\b",
+            r"\bfrom\b",
+            r"\bplaces?\b",
+            r"\bwhere\b",
+            r"\bdirections?\b",
+            r"\broute\b",
+            r"\btravel\b",
+            r"\btransport\b",
+            r"\btickets?\b",
+            r"\bdeparture\b",
+            r"\bdriver\b",
+            r"\bweekend\b",
+            r"\byesterday\b",
+            r"\bpast\b",
+            r"\bexperience\b",
+            r"\bstor(?:y|ies)\b",
+            r"\bcommunity\b",
+            r"\bculture\b",
+            r"\blocal\b",
+        ),
+    ),
+    (
+        "workplace",
+        (
+            r"\bwork(?:ing)?\b",
+            r"\bworkplace\b",
+            r"\bmeeting\b",
+            r"\bpresentation\b",
+            r"\bargument\b",
+            r"\bnegotiation\b",
+            r"\bproposal\b",
+            r"\bfeedback\b",
+            r"\bdecision\b",
+            r"\bsolution\b",
+            r"\bgoals?\b",
+            r"\bprogress\b",
+            r"\barticle\b",
+            r"\bsources?\b",
+            r"\bviewpoint\b",
+            r"\bleadership\b",
+            r"\bcoaching\b",
+            r"\bstakeholder\b",
+            r"\brisk\b",
+            r"\bdebate\b",
+            r"\bdiscussion\b",
+            r"\bprofessional\b",
+            r"\btasks?\b",
+            r"\bupdates?\b",
+            r"\bpriorit(?:y|ies)\b",
+        ),
+    ),
+    (
+        "classroom",
+        (
+            r"\bclass\b",
+            r"\bstudy\b",
+            r"\binstructions?\b",
+            r"\bgreetings?\b",
+            r"\bsal[au]m\b",
+            r"\bhello\b",
+            r"\bname\b",
+            r"\bspell(?:ing)?\b",
+            r"\bletters?\b",
+            r"\brepeat(?:ing)?\b",
+            r"\bunderstand\b",
+            r"\bintroduc(?:e|ing|tion)\b",
+            r"\btime\b",
+            r"\bdays?\b",
+            r"\broutine\b",
+            r"\bschedules?\b",
+            r"\breview\b",
+            r"\btest\b",
+            r"\bfinal\b",
+            r"\bgrammar\b",
+        ),
+    ),
+)
 
 
 def ensure_api_import_path() -> None:
@@ -154,53 +275,54 @@ def classify_scene(lesson_dir: Path, lesson: dict[str, Any], *, language: str, g
     slug = str(lesson.get("slug") or "")
     unit = lesson_dir.parent.name
     text = f"{language} {unit} {lesson_dir.name} {slug} {title}".lower()
-
-    if has_any(text, ("health", "symptom", "appointment", "clinic", "doctor", "nurse")):
-        category = "health"
-    elif has_any(
-        text,
-        (
-            "workplace",
-            "meeting",
-            "presentation",
-            "argument",
-            "negotiation",
-            "proposal",
-            "feedback",
-            "decision",
-            "solution",
-            "goals",
-            "progress",
-            "article",
-            "source",
-            "viewpoint",
-            "leadership",
-            "coaching",
-            "stakeholder",
-            "risk",
-            "debate",
-            "discussion",
-            "professional",
-            "task",
-            "update",
-            "priorities",
-        ),
-    ):
-        category = "workplace"
-    elif has_any(text, ("travel", "transport", "ticket", "departure", "driver", "direction", "place", "where", "route")):
-        category = "travel"
-    elif has_any(text, ("food", "shopping", "shop", "price", "drink", "item", "service", "customer", "client", "buying", "cafe")):
-        category = "service"
-    elif has_any(text, ("problem",)):
-        category = "workplace"
-    else:
-        category = "classroom"
-
+    category = scene_category(text, lesson_dir)
     return f"{category}-{gender}"
 
 
-def has_any(text: str, needles: tuple[str, ...]) -> bool:
-    return any(needle in text for needle in needles)
+def scene_category(text: str, lesson_dir: Path) -> str:
+    lesson_number = numeric_part(lesson_dir.name)
+    for category, patterns in SCENE_RULES:
+        if has_any_pattern(text, patterns):
+            if "mission" in text:
+                return mission_scene_category(text, category, lesson_number)
+            return category
+
+    return FALLBACK_SCENE_ROTATION[(lesson_number - 1) % len(FALLBACK_SCENE_ROTATION)]
+
+
+def mission_scene_category(text: str, category: str, lesson_number: int) -> str:
+    if category == "classroom" and has_any_pattern(text, (r"\bcontact\b", r"\bphone\b", r"\bemail\b")):
+        return "service"
+    if category == "classroom" and has_any_pattern(text, (r"\bplaces?\b", r"\bdirections?\b", r"\btravel\b")):
+        return "travel"
+    if category == "classroom" and has_any_pattern(text, (r"\bwork\b", r"\bstudy\b", r"\bprofessional\b")):
+        return "workplace"
+
+    rotation = mission_rotation_for_category(category)
+    return rotation[(lesson_number - 1) % len(rotation)]
+
+
+def mission_rotation_for_category(category: str) -> tuple[str, ...]:
+    if category == "service":
+        return ("service", "workplace", "travel")
+    if category == "travel":
+        return ("travel", "service", "classroom")
+    if category == "workplace":
+        return ("workplace", "classroom", "service")
+    if category == "health":
+        return ("health", "service", "classroom")
+    return ("classroom", "service", "travel")
+
+
+def has_any_pattern(text: str, patterns: tuple[str, ...]) -> bool:
+    return any(re.search(pattern, text) for pattern in patterns)
+
+
+def numeric_part(value: str) -> int:
+    match = re.search(r"(\d+)", value)
+    if not match:
+        return 1
+    return int(match.group(1))
 
 
 def phrase_labels(useful_phrases: dict[str, Any], *, fallback: str) -> list[str]:

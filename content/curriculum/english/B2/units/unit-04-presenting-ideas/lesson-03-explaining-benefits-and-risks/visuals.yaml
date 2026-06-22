@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Benefits and Risks di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Benefits and Risks.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: The main benefit is faster onboarding for new hires.
-  alt: Cuplikan visual workplace male untuk frasa The main benefit is faster onboarding for new hires..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual travel male untuk frasa The main benefit is faster onboarding for new hires..
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: Another benefit is fewer repeated questions.
-  alt: Cuplikan visual workplace male untuk frasa Another benefit is fewer repeated questions..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual travel male untuk frasa Another benefit is fewer repeated questions..
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: A key risk is that the checklist becomes outdated.
-  alt: Cuplikan visual workplace male untuk frasa A key risk is that the checklist becomes outdated..
+  alt: Cuplikan visual travel male untuk frasa A key risk is that the checklist becomes outdated..

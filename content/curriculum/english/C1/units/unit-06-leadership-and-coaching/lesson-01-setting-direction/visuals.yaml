@@ -1,24 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/travel-male/hero.png
   width: 1672
   height: 941
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Setting Direction di Indonesia.
   caption: 'Konteks percakapan nyata: Setting Direction.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.png
   width: 1254
   height: 1254
   label: The direction I'd like to set is stabilizing the billing flow first.
-  alt: Cuplikan visual workplace male untuk frasa The direction I'd like to set is stabilizing the billing
+  alt: Cuplikan visual travel male untuk frasa The direction I'd like to set is stabilizing the billing
     flow first..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+- src: /images/lesson-visual-library/travel-male/card-2.png
   width: 1254
   height: 1254
   label: Success looks like fewer incidents and faster completion rates.
-  alt: Cuplikan visual workplace male untuk frasa Success looks like fewer incidents and faster completion
+  alt: Cuplikan visual travel male untuk frasa Success looks like fewer incidents and faster completion
     rates..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+- src: /images/lesson-visual-library/travel-male/card-3.png
   width: 1254
   height: 1254
   label: I'd like you to own the rollout plan.
-  alt: Cuplikan visual workplace male untuk frasa I'd like you to own the rollout plan..
+  alt: Cuplikan visual travel male untuk frasa I'd like you to own the rollout plan..
