@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** هَذِهِ آخِرُ مُحَادَثَةٍ قَبْلَ الِاخْتِبَارِ. كَيْفَ تَسْتَعِدُّ؟ -> Ini percakapan terakhir sebelum ujian. Gimana kamu bersiap?
-- **Karim:** سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ، ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا. -> Aku akan bicara tentang pengalaman pribadi, lalu menjelaskan masalah dan solusi.
-- **Ahmad:** وَهَلْ تُعْطِي رَأْيَكَ؟ -> Apa kamu memberikan pendapatmu?
-- **Karim:** بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ. -> Setelah itu, aku menjelaskan pendapatku dengan alasan.
-- **Ahmad:** وَكَيْفَ تُبْقِي الْحِوَارَ حَيًّا؟ -> Gimana kamu menjaga percakapan tetap hidup?
-- **Karim:** أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا، وَفِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ. -> Aku bertanya agar percakapan tetap hidup, dan di akhir, aku merangkum poin-poin penting.
+- **Ahmad:** احْكِ لِي تَجْرِبَةً مَرَّتْ بِكَ. -> Ceritain pengalaman yang pernah kamu alami.
+- **Karim:** مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ، وَسَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي. -> Suatu kali aku tersesat di kota baru, dan aku bertanya ke seseorang dengan sopan dan dia membantu.
+- **Ahmad:** وَمَا رَأْيُكَ الْآنَ؟ -> Apa pendapatmu sekarang?
+- **Karim:** فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ. وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟ -> Menurutku, bertanya lebih baik daripada cemas. Dan kamu, pernah mengalami yang seperti itu?
+- **Ahmad:** نَعَمْ، مَرَّةً وَاحِدَةً. -> Iya, sekali.
+- **Karim:** لِذَلِكَ تَعَلَّمْتُ أَنْ أَسْأَلَ مُبَكِّرًا. -> Karena itu aku belajar untuk bertanya lebih awal.

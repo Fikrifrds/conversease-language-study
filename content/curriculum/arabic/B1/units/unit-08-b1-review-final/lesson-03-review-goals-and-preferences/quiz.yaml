@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Tujuan saya jelas tetapi tantangannya ada."?
+  prompt: Frasa mana yang berarti "Tujuanku berbicara dengan lebih percaya diri."?
   options:
-  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-  correct_answer: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+  - هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+  - الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+  correct_answer: هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saya lebih memilih rencana sederhana dan berkelanjutan."?
+  prompt: Frasa mana yang berarti "Aku lebih pilih rencana sederhana karena lebih mudah."?
   options:
-  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-  correct_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+  - هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+  - الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+  correct_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.

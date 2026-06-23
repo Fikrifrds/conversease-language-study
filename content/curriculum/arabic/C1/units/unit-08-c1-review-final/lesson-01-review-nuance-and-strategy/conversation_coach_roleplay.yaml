@@ -1,69 +1,71 @@
 scenario_key: arabic_c1_review_nuance_and_strategy
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
-learner_goal: Latih percakapan Arab C1 untuk peninjauan nuansa dan strategi dengan nuansa, struktur, presisi, dan respons profesional.
+opening_line: هَلْ تُؤَيِّدِينَ سِيَاسَةَ الْعَمَلِ الْمَرِنِ؟
+learner_goal: 'Latih percakapan Arab C1 untuk menyampaikan pendapat bernuansa: setuju sebagian, beri syarat,
+  lalu rumuskan dengan tepat.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.'
-  sample_answer: عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
-  focus: Menempatkan opini dengan presisi tanpa terdengar berlebihan.
+- coach: هَلْ تُؤَيِّدِينَ سِيَاسَةَ الْعَمَلِ الْمَرِنِ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَتَّفِقُ مَعَكِ جُزْئِيًّا، لَا بِشَكْلٍ كَامِلٍ.'
+  sample_answer: أَتَّفِقُ مَعَكِ جُزْئِيًّا، لَا بِشَكْلٍ كَامِلٍ.
+  focus: Setuju dengan kualifikasi.
   expected_keywords:
-  - عِنْدَ
-  - مُرَاجَعَةِ
-  - الدِّقَّةِ
-  - وَالِاسْتِرَاتِيجِيَّةِ
-  - أُوَازِنُ
-  indonesian_explanation: Saat meninjau nuansa dan strategi, saya menyeimbangkan keterusterangan dan kesantunan.
-- coach: 'استخدم الفكرة: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.'
-  hint: 'Jawab dengan struktur C1 memakai: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.'
-  sample_answer: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
-  focus: Menambahkan konteks agar strategi terdengar matang.
+  - أَتَّفِقُ
+  - مَعَكِ
+  - جُزْئِيًّا
+  - لَا
+  - بِشَكْلٍ
+  indonesian_explanation: Aku setuju sebagian, tidak sepenuhnya.
+- coach: 'استخدم الفكرة: أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.'
+  sample_answer: أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.
+  focus: Memberi syarat.
   expected_keywords:
-  - فِي
-  - الْحِوَارِ
-  - الْمِهَنِيِّ
-  - أَرْبِطُ
-  - الرَّأْيَ
-  indonesian_explanation: Dalam dialog profesional, saya mengaitkan pendapat dengan konteks dan risiko yang mungkin muncul.
-- coach: 'استخدم الفكرة: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.'
-  hint: 'Jawab dengan struktur C1 memakai: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.'
-  sample_answer: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.
-  focus: Membangun alur argumentasi yang bisa diikuti.
-  expected_keywords:
-  - أُقَدِّمُ
+  - أُؤَيِّدُ
   - الْفِكْرَةَ
-  - بِتَسَلْسُلٍ
-  - يُسَهِّلُ
-  - عَلَى
-  indonesian_explanation: Saya menyampaikan ide dengan urutan yang memudahkan pihak lain mengikutinya.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.'
-  sample_answer: إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.
-  focus: Memperbaiki miskomunikasi tanpa menaikkan tensi.
+  - بِشَرْطٍ
+  - وَاحِدٍ
+  - مُهِمٍّ
+  indonesian_explanation: Aku dukung idenya dengan satu syarat penting.
+- coach: 'استخدم الفكرة: مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.'
+  hint: 'Jawab dengan struktur B2 memakai: مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.'
+  sample_answer: مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.
+  focus: Menambah perspektif.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - سُوءُ
-  - فَهْمٍ
-  - أُعِيدُ
-  indonesian_explanation: Jika muncul salah paham, saya menyusun ulang kalimat dengan lembut dan tepat.
+  - مِنْ
+  - زَاوِيَةٍ
+  - أُخْرَى
+  - هُنَاكَ
+  - خَطَرٌ
+  indonesian_explanation: Dari sudut lain, ada risiko tersembunyi.
+- coach: 'استخدم الفكرة: لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ حَادٌّ.'
+  hint: 'Jawab dengan struktur B2 memakai: لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ
+    حَادٌّ.'
+  sample_answer: لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ حَادٌّ.
+  focus: Memperhalus rumusan.
+  expected_keywords:
+  - لِأَكُونَ
+  - دَقِيقَةً
+  - الْمَسْأَلَةُ
+  - تَوَازُنٌ
+  - لَا
+  indonesian_explanation: Supaya tepat, ini soal keseimbangan, bukan pilihan keras.
 target_phrases:
-- عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
-- فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
-- أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.
-- إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.
-- فِي النِّهَايَةِ، أُؤَكِّدُ الرِّسَالَةَ بِوُضُوحٍ دُونَ أَنْ أُبَالِغَ.
+- أَتَّفِقُ مَعَكِ جُزْئِيًّا، لَا بِشَكْلٍ كَامِلٍ.
+- أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.
+- مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.
+- لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ حَادٌّ.
+- 'الصِّيَاغَةُ الْأَدَقُّ هِيَ: نَعَمْ مَعَ ضَوَابِطَ.'
 rubric:
   speaking:
-    minimum_score: 76
+    minimum_score: 72
   relevance:
-    minimum_score: 76
-  nuance:
-    minimum_score: 74
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
   grammar:
-    minimum_score: 74
+    minimum_score: 70

@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mulai dengan pembuka singkat tentang memberi transisi
-    jelas.'
-  target_response: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pertama, izinkan aku jelaskan masalahnya singkat.'
+  target_response: أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ.
   acceptable_responses:
-  - سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya akan menjelaskan manfaat utamanya.'
-  target_response: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  - أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu kita beralih ke manfaat utamanya.'
+  target_response: ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.
   acceptable_responses:
-  - بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penting juga untuk menyebutkan risikonya.'
-  target_response: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  - ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu kita lihat angkanya sekilas.'
+  target_response: بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.
   acceptable_responses:
-  - مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.'
-  target_response: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di sini ada poin penting yang perlu kamu cermati.'
+  target_response: هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.
   acceptable_responses:
-  - إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.

@@ -1,12 +1,12 @@
 # Pola Percakapan
 
-Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+Gunakan حَدَثَتْ مُشْكِلَةٌ، أَقْتَرِحُ أَنْ، dan سَأُخْبِرُكَ إِذَا untuk masalah dan perjalanan.
 
 ```txt
-سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا.
+حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي ...
+السَّبَبُ أَنَّ الِاسْمَ كُتِبَ ...
+أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ ...
+إِذَا لَمْ يَرُدُّوا نَذْهَبُ ...
 ```
 
-Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.
+Pakai pola ini untuk menjaga jawaban tetap koheren. Jika respons terasa panjang, pisahkan menjadi dua kalimat tetapi tetap jaga hubungan logisnya.

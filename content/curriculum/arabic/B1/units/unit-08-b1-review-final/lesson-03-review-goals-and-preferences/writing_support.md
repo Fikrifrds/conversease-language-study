@@ -1,8 +1,9 @@
 # Bantuan Menulis
 
-Tulis jawaban B1 pendek dengan empat bagian: konteks, detail utama, alasan, dan penutup. Gunakan frasa berikut sebagai kerangka.
+Tulis jawaban B1 dalam beberapa bagian pendek dan saling terhubung. Gunakan kerangka berikut.
 
-- هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-- أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-- السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
+- هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+- أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+- الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+- الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+- إِذَنْ سَأَبْدَأُ بِالْخُطَّةِ الْبَسِيطَةِ غَدًا.

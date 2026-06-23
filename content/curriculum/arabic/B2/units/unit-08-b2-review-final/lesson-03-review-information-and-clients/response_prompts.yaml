@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.'
-  target_response: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sebelum mengandalkan angkanya, kita pastikan sumbernya.'
+  target_response: قَبْلَ أَنْ نَعْتَمِدَ الرَّقْمَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
   acceptable_responses:
-  - أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.'
-  target_response: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+  - قَبْلَ أَنْ نَعْتَمِدَ الرَّقْمَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sampelnya kecil, jadi belum bisa menggeneralisasi.'
+  target_response: الْعَيِّنَةُ صَغِيرَةٌ، فَلَا نُعَمِّمُ بَعْدُ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya juga bisa mengelola percakapan profesional dengan jelas.'
-  target_response: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+  - الْعَيِّنَةُ صَغِيرَةٌ، فَلَا نُعَمِّمُ بَعْدُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham kekhawatiran klien soal keterlambatan.'
+  target_response: أَفْهَمُ قَلَقَ الْعَمِيلِ مِنَ التَّأْخِيرِ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul keberatan, saya akan menanggapinya dengan tenang.'
-  target_response: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - أَفْهَمُ قَلَقَ الْعَمِيلِ مِنَ التَّأْخِيرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini rencananya: update harian sampai penyerahan.'
+  target_response: 'إِلَيْكَ الْخُطَّةُ: تَحْدِيثٌ يَوْمِيٌّ حَتَّى التَّسْلِيمِ.'
   acceptable_responses:
-  - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - 'إِلَيْكَ الْخُطَّةُ: تَحْدِيثٌ يَوْمِيٌّ حَتَّى التَّسْلِيمِ.'

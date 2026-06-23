@@ -1,16 +1,16 @@
 phrases:
-- phrase: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-  meaning_id: Saya akan mulai dengan cerita singkat.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-  meaning_id: Setelah itu, saya memberi update tentang pekerjaan.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-  meaning_id: Saya butuh klarifikasi pada satu poin.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.
-  meaning_id: Saya akan mengirim ringkasan di akhir.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: هَذَا يُظْهِرُ التَّرَابُطَ فِي الْحِوَارِ.
-  meaning_id: Ini menunjukkan keterhubungan dalam dialog.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
+- phrase: أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+  meaning_id: Kemarin aku telat rapat karena bus.
+  usage_note: Membuka cerita singkat.
+- phrase: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+  meaning_id: Lalu aku minta maaf dan menyelesaikan kerjaku.
+  usage_note: Menyambung kejadian.
+- phrase: الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+  meaning_id: Sekarang aku mengerjakan laporan kecil.
+  usage_note: Memberi kabar pekerjaan.
+- phrase: عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.
+  meaning_id: Aku punya satu pertanyaan soal tenggat.
+  usage_note: Meminta klarifikasi.
+- phrase: سَأُرْسِلُ مُلَخَّصًا قَبْلَ الْمَسَاءِ.
+  meaning_id: Aku kirim ringkasan sebelum sore.
+  usage_note: Menutup dengan tindak lanjut.

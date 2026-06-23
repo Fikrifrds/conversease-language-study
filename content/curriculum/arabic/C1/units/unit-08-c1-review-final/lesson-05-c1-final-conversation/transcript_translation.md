@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** هَذِهِ آخِرُ مُحَادَثَةٍ قَبْلَ الِاخْتِبَارِ. كَيْفَ تَجْمَعِينَ كُلَّ شَيْءٍ؟ -> Ini percakapan terakhir sebelum ujian. Gimana kamu menyatukan semuanya?
-- **Noura:** فِي الْمُحَادَثَةِ النِّهَائِيَّةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ. -> Dalam percakapan akhir, aku mengelola diskusi dengan jelas dan fleksibel.
-- **Layla:** وَكَيْفَ تَبْدَئِينَ؟ -> Gimana kamu memulainya?
-- **Noura:** أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ. -> Aku mulai dengan menentukan topiknya, lalu mengundang pihak lain untuk merespons.
-- **Layla:** وَكَيْفَ يَبْقَى الْحِوَارُ مُتَّصِلًا؟ -> Gimana percakapannya tetap tersambung?
-- **Noura:** أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا. -> Aku menghubungkan pendapat, bukti, dan pertanyaan agar percakapannya tetap tersambung.
-- **Layla:** وَإِنْ تَغَيَّرَتِ النَّبْرَةُ؟ -> Kalau nadanya berubah?
-- **Noura:** إِذَا تَغَيَّرَتْ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ، ثُمَّ أُنْهِي الْمُحَادَثَةَ بِخُلَاصَةٍ وَخُطْوَةٍ تَالِيَةٍ وَاضِحَةٍ. -> Kalau berubah, aku melunakkan bahasa dan mengarahkan ulang diskusi, lalu menutup percakapan dengan ringkasan dan langkah berikutnya yang jelas.
+- **Layla:** هَذِهِ مُحَادَثَتُنَا الْأَخِيرَةُ. أَدِيرِيهَا. -> Ini percakapan terakhir kita. Pimpinlah.
+- **Noura:** لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ. -> Mari mulai dengan menentukan apa yang ingin kita putuskan hari ini.
+- **Layla:** حَسَنًا، أَكْمِلِي. -> Oke, lanjutkan.
+- **Noura:** مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟ -> Bagaimana pendapatmu sebelum aku lanjut?
+- **Layla:** أَنَا أَمِيلُ إِلَى التَّأْجِيلِ. -> Aku cenderung menunda.
+- **Noura:** أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ، وَإِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ. -> Aku kaitkan pendapatmu dengan bukti agar tetap di jalur, dan kalau nadanya memanas, aku lembutkan dan arahkan ulang.
+- **Layla:** فَكَيْفَ نَخْتِمُ؟ -> Jadi gimana kita menutup?
+- **Noura:** نَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ وَاضِحَةٍ. -> Kita keluar dengan satu langkah yang jelas.

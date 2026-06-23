@@ -1,8 +1,9 @@
 # Bantuan Menulis
 
-Tulis jawaban B1 pendek dengan empat bagian: konteks, detail utama, alasan, dan penutup. Gunakan frasa berikut sebagai kerangka.
+Tulis jawaban B1 dalam beberapa bagian pendek dan saling terhubung. Gunakan kerangka berikut.
 
-- سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
-- أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
-- إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
-- أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.
+- فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
+- لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
+- مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
+- إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.
+- وَأُجِيبُ بِهُدُوءٍ دُونَ عَجَلَةٍ.

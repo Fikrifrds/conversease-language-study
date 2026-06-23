@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Baca kalimat dari kanan ke kiri. Cari dulu frasa penghubung, lalu pahami fungsi kalimat: konteks, alasan, hasil, atau langkah berikutnya.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ. -> Saya akan berbicara tentang pengalaman pribadi.
-- ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا. -> Lalu saya menjelaskan masalah dan solusi.
-- بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ. -> Setelah itu, saya menjelaskan pendapat saya dengan alasan.
-- أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا. -> Saya bertanya agar dialog tetap hidup.
-- فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ. -> Pada akhir, saya merangkum poin penting.
+- مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ. -> Suatu kali aku tersesat di kota baru.
+- سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي. -> Aku bertanya ke seseorang dengan sopan dan dia membantu.
+- فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ. -> Menurutku, bertanya lebih baik daripada cemas.
+- وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟ -> Dan kamu, pernah mengalami yang seperti itu?
+- لِذَلِكَ تَعَلَّمْتُ أَنْ أَسْأَلَ مُبَكِّرًا. -> Karena itu aku belajar untuk bertanya lebih awal.

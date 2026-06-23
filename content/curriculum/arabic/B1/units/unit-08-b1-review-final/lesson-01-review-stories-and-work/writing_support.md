@@ -1,8 +1,9 @@
 # Bantuan Menulis
 
-Tulis jawaban B1 pendek dengan empat bagian: konteks, detail utama, alasan, dan penutup. Gunakan frasa berikut sebagai kerangka.
+Tulis jawaban B1 dalam beberapa bagian pendek dan saling terhubung. Gunakan kerangka berikut.
 
-- سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-- بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-- أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-- سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.
+- أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+- وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+- الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+- عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.
+- سَأُرْسِلُ مُلَخَّصًا قَبْلَ الْمَسَاءِ.

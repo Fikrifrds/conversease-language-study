@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَوْضِيحُ الِانْتِقَالَاتِ. -> Saya akan mulai dengan pembuka singkat tentang memberi transisi jelas.
-- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. -> Setelah itu, saya akan menjelaskan manfaat utamanya.
-- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Penting juga untuk menyebutkan risikonya.
-- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
-- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً. -> Sebagai penutup, saya akan mengusulkan langkah praktis.
+- أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ. -> Pertama, izinkan aku jelaskan masalahnya singkat.
+- ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ. -> Lalu kita beralih ke manfaat utamanya.
+- بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ. -> Setelah itu kita lihat angkanya sekilas.
+- هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا. -> Di sini ada poin penting yang perlu kamu cermati.
+- وَأَخِيرًا، أَصِلُ إِلَى الْخُطْوَةِ الْمُقْتَرَحَةِ. -> Dan terakhir, aku sampai ke langkah yang diusulkan.

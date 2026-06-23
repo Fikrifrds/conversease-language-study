@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_b2_final_discussion
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menjalani diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: 'لِنَتَنَاقَشْ بِحُرِّيَّةٍ: هَلْ نَتَبَنَّى الْعَمَلَ الْمَرِنَ؟'
+learner_goal: 'Latih percakapan Arab B2 untuk diskusi terbuka: memberi pendapat berbukti, menanggapi keberatan,
+  lalu menutup dengan langkah.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka sesi peninjauan ulang.
+- coach: 'لِنَتَنَاقَشْ بِحُرِّيَّةٍ: هَلْ نَتَبَنَّى الْعَمَلَ الْمَرِنَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: أَرَى أَنَّ الْعَمَلَ الْمَرِنَ يُنَاسِبُ فَرِيقَنَا.'
+  sample_answer: أَرَى أَنَّ الْعَمَلَ الْمَرِنَ يُنَاسِبُ فَرِيقَنَا.
+  focus: Memberi pendapat.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - النِّقَاشِ
-  - النِّهَائِيِّ
-  - فِي
-  indonesian_explanation: Posisi saya adalah bahwa diskusi akhir B2 membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  focus: Mereview kemampuan menyusun argumen.
+  - أَرَى
+  - أَنَّ
+  - الْعَمَلَ
+  - الْمَرِنَ
+  - يُنَاسِبُ
+  indonesian_explanation: Menurutku kerja fleksibel cocok untuk tim kita.
+- coach: 'استخدم الفكرة: الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.'
+  hint: 'Jawab dengan struktur B2 memakai: الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.'
+  sample_answer: الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.
+  focus: Menopang dengan bukti.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَنْ
-  - أُقَدِّمَ
-  - رَأْيًا
-  - وَأَدْعَمَهُ
-  indonesian_explanation: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  focus: Mereview kemampuan percakapan profesional.
+  - الدَّلِيلُ
+  - هُوَ
+  - أَنَّ
+  - الْإِنْتَاجَ
+  - ارْتَفَعَ
+  indonesian_explanation: Buktinya, produksi naik bulan lalu.
+- coach: 'استخدم الفكرة: أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.'
+  sample_answer: أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.
+  focus: Mengakui keberatan.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَيْضًا
-  - أَنْ
-  - أُدِيرَ
-  - حِوَارًا
-  indonesian_explanation: Saya juga bisa mengelola percakapan profesional dengan jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  focus: Mereview respons terhadap keberatan.
+  - أَفْهَمُ
+  - مَنْ
+  - يَخْشَى
+  - عَلَى
+  - الِانْضِبَاطِ
+  indonesian_explanation: Aku paham yang khawatir soal disiplin.
+- coach: 'استخدم الفكرة: لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.'
+  sample_answer: لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.
+  focus: Menjawab keberatan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - اِعْتِرَاضٌ،
-  - فَسَأَرُدُّ
-  - عَلَيْهِ
-  indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+  - لَكِنَّ
+  - مِعْيَارَ
+  - الْحُضُورِ
+  - يَحُلُّ
+  - ذَلِكَ
+  indonesian_explanation: Tapi standar kehadiran menyelesaikannya.
 target_phrases:
-- مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
+- أَرَى أَنَّ الْعَمَلَ الْمَرِنَ يُنَاسِبُ فَرِيقَنَا.
+- الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.
+- أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.
+- لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.
+- أَقْتَرِحُ كَخُطْوَةٍ أَنْ نُجَرِّبَهُ شَهْرًا.
 rubric:
   speaking:
     minimum_score: 72

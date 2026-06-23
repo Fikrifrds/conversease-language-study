@@ -1,11 +1,11 @@
 # Target Percakapan
 
-Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review problems and travel, dengan jawaban yang lebih terhubung dan alasan yang jelas.
+Latih percakapan Arab B1 untuk menjelaskan masalah perjalanan singkat lalu menyepakati langkah.
 
 Kamu akan berlatih mengatakan:
 
-- سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-- فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-- إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-- أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا.
-- فِي النِّهَايَةِ، أُؤَكِّدُ الْخُطْوَةَ التَّالِيَةَ.
+- حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+- السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+- أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+- إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.
+- سَأُخْبِرُكَ إِذَا تَغَيَّرَ شَيْءٌ.

@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ. -> Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya juga bisa mengelola percakapan profesional dengan jelas.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Jika muncul keberatan, saya akan menanggapinya dengan tenang.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- قَبْلَ أَنْ نَعْتَمِدَ الرَّقْمَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ. -> Sebelum mengandalkan angkanya, kita pastikan sumbernya.
+- الْعَيِّنَةُ صَغِيرَةٌ، فَلَا نُعَمِّمُ بَعْدُ. -> Sampelnya kecil, jadi belum bisa menggeneralisasi.
+- أَفْهَمُ قَلَقَ الْعَمِيلِ مِنَ التَّأْخِيرِ. -> Aku paham kekhawatiran klien soal keterlambatan.
+- إِلَيْكَ الْخُطَّةُ: تَحْدِيثٌ يَوْمِيٌّ حَتَّى التَّسْلِيمِ. -> Ini rencananya: update harian sampai penyerahan.
+- سَأُؤَكِّدُ كُلَّ ذَلِكَ كِتَابَةً. -> Aku konfirmasi semua itu secara tertulis.

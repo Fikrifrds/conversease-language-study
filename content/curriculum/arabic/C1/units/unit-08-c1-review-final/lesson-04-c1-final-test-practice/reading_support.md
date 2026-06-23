@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ. -> Dalam latihan tes akhir, saya menggabungkan ketepatan, kefasihan, dan kejelasan.
-- أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا. -> Saya menjawab pertanyaan terlebih dahulu, lalu menambahkan alasan dan contoh singkat.
-- إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا. -> Jika saya lupa satu kata, saya menyusun ulang kalimat dan tidak berhenti terlalu lama.
-- إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ. -> Jika waktu sempit, saya memilih kalimat yang jelas daripada kalimat yang rumit.
-- فِي آخِرِ الْإِجَابَةِ، أَرْبِطُ النُّقْطَةَ بِالْمَهَمَّةِ الْمَطْلُوبَةِ. -> Di akhir jawaban, saya menghubungkan poin dengan tugas yang diminta.
+- مَوْقِفِي دَقِيقٌ: أُؤَيِّدُ، لَكِنْ بِحُدُودٍ. -> Posisiku tepat: aku mendukung, tapi dengan batas.
+- الدَّلِيلُ هُوَ نَتِيجَةٌ تَكَرَّرَتْ فِي فَرِيقَيْنِ. -> Buktinya, hasil yang berulang di dua tim.
+- مِنْ نَاحِيَةٍ أُخْرَى، أَعْتَرِفُ بِالْخَطَرِ. -> Di sisi lain, aku akui ada risikonya.
+- لَوْ نَسِيتُ مُصْطَلَحًا، أَشْرَحُ الْفِكْرَةَ بِكَلِمَاتٍ أَبْسَطَ. -> Kalau lupa istilah, aku jelaskan idenya dengan kata lebih sederhana.
+- خُلَاصَتِي الدَّقِيقَةُ: نَعَمْ، مَعَ مُتَابَعَةٍ مُسْتَمِرَّةٍ. -> Kesimpulan tepatku: ya, dengan pemantauan berkelanjutan.

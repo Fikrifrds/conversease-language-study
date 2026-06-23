@@ -1,69 +1,70 @@
 scenario_key: arabic_c1_review_leadership_and_listening
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تَجْعَلُ جَوَابَكَ فِي مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ مُقْنِعًا وَمُتَوَازِنًا؟
-learner_goal: Latih percakapan Arab C1 untuk peninjauan kepemimpinan dan listening dengan nuansa, struktur, presisi, dan respons profesional.
+opening_line: زَمِيلَتُكِ مُرْتَبِكَةٌ وَلَا تَعْرِفُ مِنْ أَيْنَ تَبْدَأُ.
+learner_goal: 'Latih percakapan Arab C1 untuk memimpin lewat mendengar: bertanya terbuka, memantulkan,
+  lalu mengarahkan.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَجْعَلُ جَوَابَكَ فِي مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ مُقْنِعًا وَمُتَوَازِنًا؟
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ.'
-  sample_answer: عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ.
-  focus: Memimpin dengan mendengar sebelum memberi arahan.
+- coach: زَمِيلَتُكِ مُرْتَبِكَةٌ وَلَا تَعْرِفُ مِنْ أَيْنَ تَبْدَأُ.
+  hint: 'Jawab dengan struktur B2 memakai: دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا.'
+  sample_answer: دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا.
+  focus: Membuka dengan mendengar.
   expected_keywords:
-  - عِنْدَ
-  - مُرَاجَعَةِ
-  - الْقِيَادَةِ
-  - وَحُسْنِ
-  - الِاسْتِمَاعِ
-  indonesian_explanation: Saat meninjau kepemimpinan dan listening, saya mendengarkan dulu lalu mengarahkan percakapan.
-- coach: 'استخدم الفكرة: أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.'
-  hint: 'Jawab dengan struktur C1 memakai: أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.'
-  sample_answer: أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.
-  focus: Menggali kebutuhan sebelum menawarkan respons.
-  expected_keywords:
-  - أَسْأَلُ
-  - سُؤَالًا
-  - مُفْتُوحًا
-  - لِأَفْهَمَ
+  - دَعِينِي
+  - أَفْهَمُ
   - مَا
-  indonesian_explanation: Saya mengajukan pertanyaan terbuka untuk memahami kebutuhan pihak lain.
-- coach: 'استخدم الفكرة: أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.'
-  hint: 'Jawab dengan struktur C1 memakai: أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.'
-  sample_answer: أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.
-  focus: Menunjukkan active listening dengan parafrasa.
+  - يُقْلِقُكِ
+  - أَوَّلًا
+  indonesian_explanation: Coba aku pahami dulu apa yang membuatmu cemas.
+- coach: 'استخدم الفكرة: إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.'
+  sample_answer: إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.
+  focus: Memantulkan pemahaman.
   expected_keywords:
-  - أُعِيدُ
-  - النُّقْطَةَ
-  - بِكَلِمَاتِي
-  - لِأَتَأَكَّدَ
-  - أَنَّنِي
-  indonesian_explanation: Saya mengulang poin dengan kata-kata saya sendiri untuk memastikan saya memahaminya.
-- coach: 'استخدم الفكرة: إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.'
-  sample_answer: إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.
-  focus: Menjaga arah saat percakapan menegang.
+  - إِنْ
+  - فَهِمْتُكِ
+  - صَحِيحًا
+  - الْمُشْكِلَةُ
+  - فِي
+  indonesian_explanation: Kalau aku paham benar, masalahnya waktu, bukan usaha.
+- coach: 'استخدم الفكرة: مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟'
+  sample_answer: مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟
+  focus: Bertanya terbuka.
   expected_keywords:
-  - إِذَا
-  - اخْتَلَفَتِ
-  - الْآرَاءُ
-  - أُحَافِظُ
+  - مَا
+  - الَّذِي
+  - يُسَاعِدُكِ
   - عَلَى
-  indonesian_explanation: Jika pendapat berbeda, saya tetap tenang dan menjelaskan langkah berikutnya.
+  - إِنْجَازِهِ
+  indonesian_explanation: Apa yang membantumu menyelesaikannya minggu ini?
+- coach: 'استخدم الفكرة: أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.'
+  hint: 'Jawab dengan struktur B2 memakai: أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.'
+  sample_answer: أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.
+  focus: Menjaga ketenangan.
+  expected_keywords:
+  - أَبْقَى
+  - هَادِئَةً
+  - حَتَّى
+  - لَوِ
+  - اخْتَلَفْنَا
+  indonesian_explanation: Aku tetap tenang meski kita berbeda.
 target_phrases:
-- عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ.
-- أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.
-- أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.
-- إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.
-- أَخْتِمُ الْحِوَارَ بِمَا اتَّفَقْنَا عَلَيْهِ وَمَا يَبْقَى لِلْمُتَابَعَةِ.
+- دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا.
+- إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.
+- مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟
+- أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.
+- الْخُطْوَةُ التَّالِيَةُ أَنْ تُجَرِّبِي أَصْغَرَ جُزْءٍ.
 rubric:
   speaking:
-    minimum_score: 76
+    minimum_score: 72
   relevance:
-    minimum_score: 76
-  nuance:
-    minimum_score: 74
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
   grammar:
-    minimum_score: 74
+    minimum_score: 70

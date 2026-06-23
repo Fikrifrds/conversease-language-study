@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ. -> Saat meninjau presentasi dan debat, saya menetapkan klaim lalu mendukungnya dengan bukti.
-- أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا. -> Saya memisahkan poin utama dan detail agar presentasi tetap fokus.
-- أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ. -> Saya mengantisipasi sanggahan dan menjawabnya dengan tenang.
-- إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ. -> Jika seseorang memotong saya, saya kembali ke poin utama dengan kalimat singkat.
-- أَخْتِمُ الْمُنَاقَشَةَ بِتَلْخِيصٍ يُظْهِرُ الْمَوْقِفَ وَالسَّبَبَ. -> Saya menutup diskusi dengan ringkasan yang menunjukkan posisi dan alasannya.
+- ادِّعَائِي هُوَ أَنَّ الْجَوْدَةَ تَسْبِقُ السُّرْعَةَ هُنَا. -> Klaimku, kualitas mendahului kecepatan di sini.
+- وَدَلِيلِي تَجْرِبَةٌ خَسِرْنَا فِيهَا عَمِيلًا. -> Buktiku, pengalaman kita kehilangan klien.
+- أَتَوَقَّعُ أَنْ تَقُولِي إِنَّ السُّوقَ لَا يَنْتَظِرُ. -> Aku menduga kamu bilang pasar tidak menunggu.
+- وَهَذَا صَحِيحٌ، لَكِنَّ الثِّقَةَ أَغْلَى عَلَى الْمَدَى الطَّوِيلِ. -> Itu benar, tapi kepercayaan lebih mahal jangka panjang.
+- خُلَاصَةً: جَوْدَةٌ أَوَّلًا، ثُمَّ سُرْعَةٌ مُنَظَّمَةٌ. -> Kesimpulan: kualitas dulu, lalu kecepatan terkelola.

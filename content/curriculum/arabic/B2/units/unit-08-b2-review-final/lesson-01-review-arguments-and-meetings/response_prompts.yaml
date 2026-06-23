@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali argumen dan rapat karena keduanya penting dalam diskusi.'
-  target_response: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku usul kita kunci tenggatnya hari ini.'
+  target_response: أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.
   acceptable_responses:
-  - أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.'
-  target_response: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+  - أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Alasannya, penundaan justru lebih memakan biaya.'
+  target_response: السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya juga bisa mengelola percakapan profesional dengan jelas.'
-  target_response: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+  - السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham keberatanmu, tapi kita bisa mulai dari bagian kecil.'
+  target_response: أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul keberatan, saya akan menanggapinya dengan tenang.'
-  target_response: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jadi keputusannya: penyerahan awal hari Kamis.'
+  target_response: إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.
   acceptable_responses:
-  - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.

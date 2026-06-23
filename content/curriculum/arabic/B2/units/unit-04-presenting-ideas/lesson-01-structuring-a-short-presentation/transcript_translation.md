@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** عِنْدَكِ عَرْضٌ عَنْ لَوْحَةِ الْمُتَابَعَةِ غَدًا. كَيْفَ سَتُرَتِّبِينَهُ؟ -> Besok kamu presentasi soal dashboard. Gimana kamu menyusunnya?
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنِ الْمُشْكِلَةِ الَّتِي يَرَاهَا الْفَرِيقُ كُلَّ يَوْمٍ. -> Aku akan mulai dengan pembuka singkat soal masalah yang tim hadapi tiap hari.
-- **Salma:** ثُمَّ؟ -> Lalu?
-- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ: كَيْفَ تُقَلِّلُ اللَّوْحَةُ الْوَقْتَ. -> Setelah itu, aku akan menjelaskan manfaat utamanya: gimana dashboard menghemat waktu.
-- **Salma:** وَهَلْ تَذْكُرِينَ السَّلْبِيَّاتِ؟ -> Apa kamu menyebutkan kekurangannya?
-- **Lina:** نَعَمْ، مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، مِثْلَ الْجُهْدِ الْأَوَّلِيِّ. -> Iya, penting juga menyebutkan risikonya, seperti effort awal.
-- **Salma:** وَكَيْفَ تُنْهِينَ الْعَرْضَ؟ -> Dan gimana kamu menutup presentasinya?
-- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً: تَجْرِبَةٌ صَغِيرَةٌ لِفَرِيقٍ وَاحِدٍ. -> Sebagai penutup, aku akan mengusulkan langkah praktis: uji coba kecil untuk satu tim.
+- **Salma:** حَدِّثِينِي عَنْ فِكْرَةِ لَوْحَةِ الْمُتَابَعَةِ. -> Ceritain ide dashboard tracking-mu.
+- **Lina:** الْمُشْكِلَةُ هِيَ أَنَّ الْفَرِيقَ يُضَيِّعُ وَقْتًا فِي الْمُتَابَعَةِ. -> Masalahnya, tim membuang waktu untuk tracking.
+- **Salma:** وَمَا الَّذِي تُقَدِّمُهُ اللَّوْحَةُ؟ -> Apa yang dashboard ini berikan?
+- **Lina:** الْفَائِدَةُ أَنَّ اللَّوْحَةَ تُوَفِّرُ سَاعَةً كُلَّ يَوْمٍ. -> Manfaatnya, dashboard menghemat satu jam tiap hari.
+- **Salma:** أَلَيْسَ إِعْدَادُهَا مُتْعِبًا؟ -> Bukannya setup-nya melelahkan?
+- **Lina:** أَعْرِفُ أَنَّ الْإِعْدَادَ يَأْخُذُ جُهْدًا فِي الْبِدَايَةِ، لَكِنَّهُ جُهْدٌ لِمَرَّةٍ وَاحِدَةٍ فَقَطْ. -> Aku tahu setup-nya butuh usaha di awal, tapi itu usaha sekali saja.
+- **Salma:** فَمَا خُطْوَتُكِ الْأُولَى؟ -> Jadi langkah pertamamu apa?
+- **Lina:** أَقْتَرِحُ كَبِدَايَةٍ تَجْرِبَةً لِفَرِيقٍ وَاحِدٍ. -> Sebagai awal, aku usul uji coba untuk satu tim.

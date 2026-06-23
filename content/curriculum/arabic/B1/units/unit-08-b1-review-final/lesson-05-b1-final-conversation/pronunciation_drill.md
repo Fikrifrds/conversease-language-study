@@ -2,14 +2,14 @@
 
 ## Ulangi
 
-1. سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-2. ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-3. بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-4. أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا.
-5. فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ.
+1. مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+2. سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+3. فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+4. وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟
+5. لِذَلِكَ تَعَلَّمْتُ أَنْ أَسْأَلَ مُبَكِّرًا.
 
 ## Fokus
 
-- Jaga harakat akhir tetap terdengar cukup jelas.
-- Beri jeda kecil setelah frasa penghubung seperti ثُمَّ dan بَعْدَ ذَلِكَ.
-- Jangan mempercepat kalimat yang berisi alasan atau hasil.
+- Jaga tekanan pada frasa penghubung seperti وَلَكِنَّ، لِذَلِكَ، dan إِذَا.
+- Beri jeda sebelum alasan, contoh, dan rekomendasi.
+- Jangan membaca seluruh argumen sebagai satu kalimat panjang.

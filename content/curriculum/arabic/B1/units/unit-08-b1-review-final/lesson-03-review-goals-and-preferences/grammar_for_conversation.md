@@ -1,12 +1,12 @@
 # Pola Percakapan
 
-Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+Gunakan هَدَفِي، أُفَضِّلُ ... لِأَنَّ، dan إِذَنْ سَأَبْدَأُ untuk tujuan dan preferensi.
 
 ```txt
-هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
+هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ ...
+أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا ...
+الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ ...
+الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ ...
 ```
 
-Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.
+Pakai pola ini untuk menjaga jawaban tetap koheren. Jika respons terasa panjang, pisahkan menjadi dua kalimat tetapi tetap jaga hubungan logisnya.

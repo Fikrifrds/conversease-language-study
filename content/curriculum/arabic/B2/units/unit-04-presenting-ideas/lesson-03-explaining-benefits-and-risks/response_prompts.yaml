@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mulai dengan pembuka singkat tentang menjelaskan manfaat
-    dan risiko.'
-  target_response: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Manfaat terbesarnya, mengurangi pekerjaan berulang.'
+  target_response: الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ.
   acceptable_responses:
-  - سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya akan menjelaskan manfaat utamanya.'
-  target_response: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  - الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di sisi lain ada risiko kalau kita abai memantau.'
+  target_response: وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.
   acceptable_responses:
-  - بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penting juga untuk menyebutkan risikonya.'
-  target_response: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  - وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham yang takut otomatisasi.'
+  target_response: أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.
   acceptable_responses:
-  - مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.'
-  target_response: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Untuk menguranginya, kita pantau hasil tiap minggu.'
+  target_response: لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.
   acceptable_responses:
-  - إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.

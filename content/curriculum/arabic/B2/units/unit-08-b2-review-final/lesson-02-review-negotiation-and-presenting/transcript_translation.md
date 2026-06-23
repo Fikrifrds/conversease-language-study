@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** وَالْيَوْمَ، أَيُّ مَهَارَةٍ تُرَاجِعِينَ؟ -> Dan hari ini, keterampilan apa yang kamu review?
-- **Noura:** أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ. -> Aku mereview negosiasi dan presentasi karena keduanya penting dalam diskusi.
-- **Layla:** كَيْفَ تَبْدَئِينَ التَّفَاوُضَ؟ -> Gimana kamu memulai negosiasi?
-- **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ، ثُمَّ أُحَدِّدُ الْأَوْلَوِيَّةَ. -> Aku bisa menyampaikan pendapat dan mendukungnya dengan bukti, lalu menentukan prioritas.
-- **Layla:** وَفِي الْعَرْضِ؟ -> Kalau di presentasi?
-- **Noura:** أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ، وَأَرْبِطَ كُلَّ نُقْطَةٍ بِفَائِدَةٍ وَخَطَرٍ. -> Aku juga bisa mengelola percakapan profesional dengan jelas, dan mengaitkan tiap poin dengan manfaat dan risiko.
-- **Layla:** وَإِنْ سَأَلُوا عَنِ الْبَدِيلِ؟ -> Kalau mereka tanya soal alternatif?
-- **Noura:** إِذَا ظَهَرَ اِعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ، وَفِي الِاخْتِبَارِ النِّهَائِيِّ سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Kalau muncul keberatan aku akan menanggapinya dengan tenang, dan di ujian akhir aku fokus pada koherensi dan kejelasan.
+- **Layla:** الْمُورِّدُ يُرِيدُ سِعْرًا أَعْلَى. كَيْفَ نُفَاوِضُ؟ -> Vendor mau harga lebih tinggi. Gimana kita negosiasi?
+- **Noura:** أَوْلَوِيَّتِي أَنْ يَبْقَى السِّعْرُ فِي الْمِيزَانِيَّةِ. -> Prioritasku, harganya tetap dalam anggaran.
+- **Layla:** وَإِنْ رَفَضَ؟ -> Kalau dia menolak?
+- **Noura:** يُمْكِنُنِي أَنْ أَتَنَازَلَ عَنْ مِيزَةٍ صَغِيرَةٍ، وَفِي الْمُقَابِلِ، أَحْتَاجُ إِلَى دَعْمٍ أَسْرَعَ. -> Aku bisa melepas satu fitur kecil, dan sebagai gantinya, aku butuh dukungan lebih cepat.
+- **Layla:** يَبْدُو مَعْقُولًا. -> Kelihatannya masuk akal.
+- **Noura:** هَذَا عَرْضٌ عَادِلٌ لِلطَّرَفَيْنِ. -> Ini tawaran yang adil untuk kedua pihak.
+- **Layla:** فَكَيْفَ نُثَبِّتُهُ؟ -> Gimana kita menguncinya?
+- **Noura:** إِنِ اتَّفَقْنَا، نَكْتُبُ ذَلِكَ فِي الْعَقْدِ. -> Kalau sepakat, kita tulis di kontrak.

@@ -1,8 +1,9 @@
 # Bantuan Menulis
 
-Tulis jawaban B1 pendek dengan empat bagian: konteks, detail utama, alasan, dan penutup. Gunakan frasa berikut sebagai kerangka.
+Tulis jawaban B1 dalam beberapa bagian pendek dan saling terhubung. Gunakan kerangka berikut.
 
-- سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-- فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-- إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-- أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا.
+- حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+- السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+- أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+- إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.
+- سَأُخْبِرُكَ إِذَا تَغَيَّرَ شَيْءٌ.

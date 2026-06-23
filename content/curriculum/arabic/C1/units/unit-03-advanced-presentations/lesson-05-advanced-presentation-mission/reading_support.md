@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ. -> Dalam latihan presentasi lanjutan yang jelas, saya akan membingkai topiknya dulu agar audiens memahami konteksnya.
-- عِنْدَ تَطْبِيقِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً. -> Saat menerapkan presentasi lanjutan yang jelas, setelah itu, saya akan membangun alur persuasif langkah demi langkah.
-- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak.
-- إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ. -> Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu menjelaskan dasarnya.
-- فِي خِتَامِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada bagian akhir presentasi lanjutan yang jelas, pada akhirnya, saya ingin audiens pulang dengan pesan yang jelas.
+- رِسَالَتِي الْأَسَاسِيَّةُ هِيَ أَنَّنَا نَخْسَرُ وَقْتًا ثَمِينًا. -> Pesan utamaku, kita kehilangan waktu berharga.
+- كُلُّ قِسْمٍ فِي عَرْضِي يَخْدُمُ هَذَا الْقَرَارَ. -> Tiap bagian presentasiku melayani keputusan ini.
+- الدَّلِيلُ هُوَ مُقَارَنَةٌ بَيْنَ شَهْرَيْنِ. -> Buktinya, perbandingan antara dua bulan.
+- الْمُخَاطَرَةُ صَغِيرَةٌ لِأَنَّنَا نُجَرِّبُ أَوَّلًا. -> Risikonya kecil karena kita uji dulu.
+- أَطْلُبُ قَرَارًا الْيَوْمَ، وَلَوْ كَانَ مَبْدَئِيًّا. -> Aku minta keputusan hari ini, walau sementara.

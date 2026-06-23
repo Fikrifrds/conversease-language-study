@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Baca kalimat dari kanan ke kiri. Cari dulu frasa penghubung, lalu pahami fungsi kalimat: konteks, alasan, hasil, atau langkah berikutnya.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا. -> Saya akan menjelaskan masalah lalu menyarankan solusi.
-- فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ. -> Dalam perjalanan, saya butuh detail jelas.
-- إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ. -> Jika terjadi keterlambatan, saya akan memberi tahu pihak lain.
-- أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا. -> Saya lebih memilih solusi cepat dan sopan.
-- فِي النِّهَايَةِ، أُؤَكِّدُ الْخُطْوَةَ التَّالِيَةَ. -> Pada akhir, saya memastikan langkah berikutnya.
+- حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ. -> Ada masalah kecil di reservasi.
+- السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً. -> Sebabnya, namanya salah tulis.
+- أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ. -> Aku usul kita telepon hotel sekarang.
+- إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا. -> Kalau tidak diangkat, kita datang lebih awal.
+- سَأُخْبِرُكَ إِذَا تَغَيَّرَ شَيْءٌ. -> Aku kabari kamu kalau ada yang berubah.

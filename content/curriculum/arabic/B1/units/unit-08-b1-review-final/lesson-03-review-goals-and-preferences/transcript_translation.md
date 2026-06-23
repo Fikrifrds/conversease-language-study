@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** بَقِيَتْ مَهَارَتَانِ. كَيْفَ تُرَاجِعُ الْأَهْدَافَ وَالتَّفْضِيلَاتِ؟ -> Tinggal dua keterampilan. Gimana kamu mereview target dan preferensi?
-- **Karim:** هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّيَ مَوْجُودٌ. -> Tujuanku jelas tapi tantangannya ada.
-- **Ahmad:** وَأَيُّ خُطَّةٍ تُفَضِّلُ؟ -> Rencana mana yang kamu pilih?
-- **Karim:** أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً، وَسَأُقَارِنُ بَيْنَ خِيَارَيْنِ. -> Aku lebih memilih rencana sederhana dan berkelanjutan, dan aku akan membandingkan dua pilihan.
-- **Ahmad:** وَعَلَى أَيِّ أَسَاسٍ تَخْتَارُ؟ -> Atas dasar apa kamu memilih?
-- **Karim:** السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ. بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا. -> Alasan utamanya kualitas. Setelah itu, aku mengambil keputusan.
+- **Ahmad:** مَا هَدَفُكَ هَذَا الشَّهْرَ؟ -> Apa tujuanmu bulan ini?
+- **Karim:** هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ. -> Tujuanku berbicara dengan lebih percaya diri.
+- **Ahmad:** وَأَيَّ خُطَّةٍ تَخْتَارُ؟ -> Rencana mana yang kamu pilih?
+- **Karim:** أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ. الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا. -> Aku lebih pilih rencana sederhana karena lebih mudah. Pilihan lain lebih kuat tapi makan waktu.
+- **Ahmad:** وَمَا الْأَهَمُّ عِنْدَكَ؟ -> Apa yang terpenting buatmu?
+- **Karim:** الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ. إِذَنْ سَأَبْدَأُ بِالْخُطَّةِ الْبَسِيطَةِ غَدًا. -> Yang terpenting bagiku adalah konsistensi. Kalau begitu aku mulai dengan rencana sederhana besok.

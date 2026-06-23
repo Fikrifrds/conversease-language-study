@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ. كَيْفَ تُجِيبُ؟ -> Ayo coba satu pertanyaan seperti ujian. Gimana kamu menjawabnya?
-- **Karim:** سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ، وَأَذْكُرُ السِّيَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ. -> Aku akan menjawab dengan kalimat yang terhubung, dan menyebut konteks, alasan, dan hasil.
+- **Ahmad:** سُؤَالٌ كَالِاخْتِبَارِ: هَلِ التَّدْرِيبُ الْيَوْمِيُّ مُهِمٌّ؟ -> Pertanyaan seperti ujian: apakah latihan harian itu penting?
+- **Karim:** فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ، لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ. -> Menurutku, latihan harian itu bermanfaat, karena membantu mengingat kata.
+- **Ahmad:** هَلْ عِنْدَكَ مِثَالٌ؟ -> Ada contohnya?
+- **Karim:** مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ. -> Misalnya, aku tinjau lima kalimat tiap malam.
 - **Ahmad:** وَإِنْ لَمْ تَفْهَمِ السُّؤَالَ؟ -> Kalau kamu tidak paham pertanyaannya?
-- **Karim:** إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا. -> Kalau aku tidak paham, aku minta klarifikasi.
-- **Ahmad:** وَإِذَا تَوَتَّرْتَ؟ -> Kalau kamu gugup?
-- **Karim:** أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ. هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ. -> Aku menjaga ketenangan dan kecepatan yang sesuai. Ini membantuku dalam tes.
+- **Karim:** إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ، وَأُجِيبُ بِهُدُوءٍ دُونَ عَجَلَةٍ. -> Kalau tidak paham, aku minta diulang, dan aku jawab dengan tenang tanpa terburu.

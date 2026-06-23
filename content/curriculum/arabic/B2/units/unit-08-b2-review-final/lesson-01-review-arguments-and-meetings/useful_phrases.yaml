@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
-  meaning_id: Saya meninjau kembali argumen dan rapat karena keduanya penting dalam diskusi.
-  usage_note: Membuka sesi peninjauan ulang.
-- phrase: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  meaning_id: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-  usage_note: Mereview kemampuan menyusun argumen.
-- phrase: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  meaning_id: Saya juga bisa mengelola percakapan profesional dengan jelas.
-  usage_note: Mereview kemampuan percakapan profesional.
-- phrase: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  meaning_id: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
-  usage_note: Mereview respons terhadap keberatan.
-- phrase: فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
-  meaning_id: Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
-  usage_note: Menutup dengan strategi.
+- phrase: أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.
+  meaning_id: Aku usul kita kunci tenggatnya hari ini.
+  usage_note: Membuka usulan rapat.
+- phrase: السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.
+  meaning_id: Alasannya, penundaan justru lebih memakan biaya.
+  usage_note: Memberi alasan.
+- phrase: أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.
+  meaning_id: Aku paham keberatanmu, tapi kita bisa mulai dari bagian kecil.
+  usage_note: Menanggapi keberatan.
+- phrase: إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.
+  meaning_id: 'Jadi keputusannya: penyerahan awal hari Kamis.'
+  usage_note: Menyimpulkan keputusan.
+- phrase: سَأُرْسِلُ الْمُلَخَّصَ وَالْمَسْؤُولِيَّاتِ بَعْدَ الِاجْتِمَاعِ.
+  meaning_id: Aku kirim ringkasan dan tanggung jawab setelah rapat.
+  usage_note: Menutup dengan tindak lanjut.

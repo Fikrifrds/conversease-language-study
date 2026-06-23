@@ -1,16 +1,16 @@
 phrases:
-- phrase: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ الْإِجَابَةُ عَنِ الْأَسْئِلَةِ.
-  meaning_id: Saya akan mulai dengan pembuka singkat tentang menjawab pertanyaan.
-  usage_note: Membuka presentasi.
-- phrase: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-  meaning_id: Setelah itu, saya akan menjelaskan manfaat utamanya.
-  usage_note: Memberi signposting.
-- phrase: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-  meaning_id: Penting juga untuk menyebutkan risikonya.
-  usage_note: Menjelaskan risk secara seimbang.
-- phrase: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-  meaning_id: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
-  usage_note: Menyiapkan Q&A.
-- phrase: فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
-  meaning_id: Sebagai penutup, saya akan mengusulkan langkah praktis.
-  usage_note: Menutup presentasi.
+- phrase: سُؤَالٌ جَيِّدٌ، وَسَأُجِيبُ بِنُقْطَةٍ وَاحِدَةٍ.
+  meaning_id: Pertanyaan bagus, akan kujawab dengan satu poin.
+  usage_note: Membuka jawaban.
+- phrase: لَا أَمْلِكُ الرَّقْمَ الْآنَ، لَكِنِّي سَأُرْسِلُهُ غَدًا.
+  meaning_id: Aku tidak punya angkanya sekarang, tapi kukirim besok.
+  usage_note: Jujur soal batas.
+- phrase: هَذَا السُّؤَالُ خَارِجُ نِطَاقِنَا قَلِيلًا.
+  meaning_id: Pertanyaan ini sedikit di luar lingkup kita.
+  usage_note: Menandai di luar topik.
+- phrase: لَكِنْ دَعِينِي أَرْبِطُهُ بِهَدَفِنَا الْأَسَاسِيِّ.
+  meaning_id: Tapi biar kuhubungkan ke tujuan utama kita.
+  usage_note: Mengembalikan ke fokus.
+- phrase: بِاخْتِصَارٍ، الْجَوَابُ يَخْدُمُ نَفْسَ الْهَدَفِ.
+  meaning_id: Singkatnya, jawabannya melayani tujuan yang sama.
+  usage_note: Menutup terhubung tujuan.

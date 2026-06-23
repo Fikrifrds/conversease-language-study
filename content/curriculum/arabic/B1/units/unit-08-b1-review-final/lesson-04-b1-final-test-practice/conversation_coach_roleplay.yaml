@@ -1,53 +1,70 @@
 scenario_key: arabic_b1_b1_final_test_practice
 mode: lesson_practice_coach
 level_code: B1
-opening_line: لِنَتَدَرَّبْ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice, dengan jawaban
-  yang lebih terhubung dan alasan yang jelas.'
-max_turns: 6
+opening_line: 'سُؤَالٌ كَالِاخْتِبَارِ: هَلِ التَّدْرِيبُ الْيَوْمِيُّ مُهِمٌّ؟'
+learner_goal: 'Latih percakapan Arab B1 untuk menjawab pertanyaan ujian sederhana: jawaban, alasan, lalu
+  contoh.'
+max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لِنَتَدَرَّبْ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-  hint: 'Jawab dengan kalimat terhubung memakai: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.'
-  sample_answer: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+- coach: 'سُؤَالٌ كَالِاخْتِبَارِ: هَلِ التَّدْرِيبُ الْيَوْمِيُّ مُهِمٌّ؟'
+  hint: 'Jawab dengan struktur B2 memakai: فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.'
+  sample_answer: فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
+  focus: Memberi jawaban.
   expected_keywords:
-  - سَأُجِيبُ
-  - بِجُمَلٍ
-  - مُتَرَابِطَةٍ
-  indonesian_explanation: Saya akan menjawab dengan kalimat yang terhubung.
-- coach: 'استخدم الفكرة: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.'
-  sample_answer: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - فِي
+  - رَأْيِي
+  - التَّدْرِيبُ
+  - الْيَوْمِيُّ
+  - مُفِيدٌ
+  indonesian_explanation: Menurutku, latihan harian itu bermanfaat.
+- coach: 'استخدم الفكرة: لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.'
+  hint: 'Jawab dengan struktur B2 memakai: لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.'
+  sample_answer: لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
+  focus: Memberi alasan.
   expected_keywords:
-  - أَذْكُرُ
-  - السِّبَاقَ
-  - وَالسَّبَبَ
-  - وَالنَّتِيجَةَ
-  indonesian_explanation: Saya menyebut konteks, alasan, dan hasil.
-- coach: 'استخدم الفكرة: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.'
-  hint: 'Jawab dengan kalimat terhubung memakai: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.'
-  sample_answer: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - لِأَنَّهُ
+  - يُسَاعِدُ
+  - عَلَى
+  - تَذَكُّرِ
+  - الْكَلِمَاتِ
+  indonesian_explanation: Karena itu membantu mengingat kata.
+- coach: 'استخدم الفكرة: مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.'
+  sample_answer: مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
+  focus: Memberi contoh.
+  expected_keywords:
+  - مَثَلًا
+  - أُرَاجِعُ
+  - خَمْسَ
+  - جُمَلٍ
+  - كُلَّ
+  indonesian_explanation: Misalnya, aku tinjau lima kalimat tiap malam.
+- coach: 'استخدم الفكرة: إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.'
+  sample_answer: إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.
+  focus: Mengatasi kebingungan.
   expected_keywords:
   - إِذَا
   - لَمْ
-  - أَفْهَمْ،
+  - أَفْهَمِ
+  - السُّؤَالَ
   - أَطْلُبُ
-  indonesian_explanation: Jika saya tidak paham, saya meminta klarifikasi.
+  indonesian_explanation: Kalau tidak paham pertanyaannya, aku minta diulang.
 target_phrases:
-- سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
-- أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
-- إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
-- أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.
-- هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ.
+- فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
+- لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
+- مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
+- إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.
+- وَأُجِيبُ بِهُدُوءٍ دُونَ عَجَلَةٍ.
 rubric:
   speaking:
-    minimum_score: 70
+    minimum_score: 72
   relevance:
+    minimum_score: 72
+  argument_structure:
     minimum_score: 70
   grammar:
-    minimum_score: 68
+    minimum_score: 70

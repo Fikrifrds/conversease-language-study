@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saat meninjau nuansa dan strategi, saya menyeimbangkan keterusterangan dan kesantunan.'
-  target_response: عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku setuju sebagian, tidak sepenuhnya.'
+  target_response: أَتَّفِقُ مَعَكِ جُزْئِيًّا، لَا بِشَكْلٍ كَامِلٍ.
   acceptable_responses:
-  - عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam dialog profesional, saya mengaitkan pendapat dengan konteks dan risiko yang mungkin muncul.'
-  target_response: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
+  - أَتَّفِقُ مَعَكِ جُزْئِيًّا، لَا بِشَكْلٍ كَامِلٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku dukung idenya dengan satu syarat penting.'
+  target_response: أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.
   acceptable_responses:
-  - فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya menyampaikan ide dengan urutan yang memudahkan pihak lain mengikutinya.'
-  target_response: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.
+  - أُؤَيِّدُ الْفِكْرَةَ بِشَرْطٍ وَاحِدٍ مُهِمٍّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dari sudut lain, ada risiko tersembunyi.'
+  target_response: مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.
   acceptable_responses:
-  - أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul salah paham, saya menyusun ulang kalimat dengan lembut dan tepat.'
-  target_response: إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.
+  - مِنْ زَاوِيَةٍ أُخْرَى، هُنَاكَ خَطَرٌ خَفِيٌّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Supaya tepat, ini soal keseimbangan, bukan pilihan keras.'
+  target_response: لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ حَادٌّ.
   acceptable_responses:
-  - إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.
+  - لِأَكُونَ دَقِيقَةً، الْمَسْأَلَةُ تَوَازُنٌ لَا اخْتِيَارٌ حَادٌّ.

@@ -1,84 +1,69 @@
 scenario_key: arabic_c1_using_precise_transitions
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تَجْعَلُ جَوَابَكَ فِي اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ مُقْنِعًا وَمُتَوَازِنًا؟
-learner_goal: Latih percakapan Arab C1 untuk penggunaan transisi yang presisi dengan nuansa, struktur,
-  presisi, dan respons profesional.
+opening_line: عَرْضُكِ يَقْفِزُ بَيْنَ الْأَفْكَارِ. كَيْفَ تُحَسِّنِينَ الِانْتِقَالَاتِ؟
+learner_goal: Latih percakapan Arab C1 untuk memakai transisi yang presisi antarbagian presentasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَجْعَلُ جَوَابَكَ فِي اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ مُقْنِعًا وَمُتَوَازِنًا؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ
-    الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.'
-  sample_answer: فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا
-    حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.
-  focus: 'Membingkai topik kompleks. Fokus lesson: penggunaan transisi yang presisi.'
+- coach: عَرْضُكِ يَقْفِزُ بَيْنَ الْأَفْكَارِ. كَيْفَ تُحَسِّنِينَ الِانْتِقَالَاتِ؟
+  hint: 'Jawab dengan struktur B2 memakai: لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ.'
+  sample_answer: لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ.
+  focus: Transisi sebab-dampak.
   expected_keywords:
-  - فِي
-  - تَدْرِيبِ
-  - اِسْتِخْدَامِ
-  - اِنْتِقَالَاتٍ
-  - دَقِيقَةٍ،
-  indonesian_explanation: Dalam latihan penggunaan transisi yang presisi, saya akan membingkai topiknya
-    dulu agar audiens memahami konteksnya.
-- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي
-    التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.'
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ
-    ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.'
-  sample_answer: عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ
-    الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.
-  focus: Membangun persuasive flow. Hubungkan dengan fokus lesson.
+  - لِنَنْتَقِلْ
+  - مِنَ
+  - السَّبَبِ
+  - إِلَى
+  - أَثَرِهِ
+  indonesian_explanation: Mari pindah dari sebab ke dampak langsungnya.
+- coach: 'استخدم الفكرة: بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.'
+  hint: 'Jawab dengan struktur B2 memakai: بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.'
+  sample_answer: بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.
+  focus: Menjembatani ke langkah.
   expected_keywords:
-  - عِنْدَ
-  - تَطْبِيقِ
-  - اِسْتِخْدَامِ
-  - اِنْتِقَالَاتٍ
-  - دَقِيقَةٍ،
-  indonesian_explanation: Saat menerapkan penggunaan transisi yang presisi, setelah itu, saya akan membangun
-    alur persuasif langkah demi langkah.
-- coach: 'استخدم الفكرة: الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.'
-  hint: 'Jawab dengan struktur C1 memakai: الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ
-    إِلَى التَّأْثِيرِ.'
-  sample_answer: الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
-  focus: Memakai transisi presisi. Pakai sebagai penghubung dalam penggunaan transisi yang presisi.
+  - بِنَاءً
+  - عَلَى
+  - مَا
+  - سَبَقَ
+  - تَتَّضِحُ
+  indonesian_explanation: Berdasarkan yang tadi, langkah berikutnya jadi jelas.
+- coach: 'استخدم الفكرة: قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.'
+  sample_answer: قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.
+  focus: Merangkum sebelum lanjut.
   expected_keywords:
-  - الِانْتِقَالُ
-  - الْأَدَقُّ
-  - هُنَا
-  - هُوَ
+  - قَبْلَ
   - أَنْ
-  indonesian_explanation: Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak.
-- coach: 'استخدم الفكرة: إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ
-    الْأَسَاسَ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ
-    ثُمَّ أُوَضِّحُ الْأَسَاسَ.'
-  sample_answer: إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.
-  focus: Menjawab pertanyaan menantang. Gunakan untuk repair dalam penggunaan transisi yang presisi.
+  - نُكْمِلَ
+  - أُلَخِّصُ
+  - النُّقْطَةَ
+  indonesian_explanation: Sebelum lanjut, aku rangkum poin sebelumnya.
+- coach: 'استخدم الفكرة: هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.'
+  sample_answer: هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.
+  focus: Menyiapkan peralihan.
   expected_keywords:
-  - إِذَا
-  - جَاءَ
-  - سُؤَالٌ
-  - صَعْبٌ،
-  - فَسَأَعْتَرِفُ
-  indonesian_explanation: Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu menjelaskan
-    dasarnya.
+  - هَذِهِ
+  - الْجُمْلَةُ
+  - تُهَيِّئُ
+  - الْجُمْهُورَ
+  - لِلتَّحَوُّلِ
+  indonesian_explanation: Kalimat ini menyiapkan audiens untuk peralihan.
 target_phrases:
-- فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
-  الْجُمْهُورُ سِيَاقَهُ.
-- عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
-  خُطْوَةً فَخُطْوَةً.
-- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
-- إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.
-- فِي خِتَامِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ
-  بِرِسَالَةٍ وَاضِحَةٍ.
+- لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ.
+- بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.
+- قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.
+- هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.
+- بِهَذَا لَا يَبْدُو الِانْتِقَالُ مُفَاجِئًا.
 rubric:
   speaking:
-    minimum_score: 76
+    minimum_score: 72
   relevance:
-    minimum_score: 76
-  nuance:
-    minimum_score: 74
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
   grammar:
-    minimum_score: 74
+    minimum_score: 70

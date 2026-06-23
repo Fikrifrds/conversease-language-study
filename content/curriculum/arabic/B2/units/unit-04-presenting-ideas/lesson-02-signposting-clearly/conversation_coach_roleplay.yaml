@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_signposting_clearly
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَرْتِيبِ عَرْضٍ عَنْ خِدْمَةٍ جَدِيدَةٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk memberi transisi jelas dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: اعْرِضِي فِكْرَةَ الْخِدْمَةِ، وَاجْعَلِينِي أُتَابِعُ بِسُهُولَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk memandu pendengar dengan penanda yang jelas antarbagian.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَرْتِيبِ عَرْضٍ عَنْ خِدْمَةٍ جَدِيدَةٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَرْتِيبِ عَرْضٍ عَنْ خِدْمَةٍ جَدِيدَةٍ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَرْتِيبِ عَرْضٍ عَنْ خِدْمَةٍ جَدِيدَةٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka presentasi.
+- coach: اعْرِضِي فِكْرَةَ الْخِدْمَةِ، وَاجْعَلِينِي أُتَابِعُ بِسُهُولَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ.'
+  sample_answer: أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ.
+  focus: Menandai pembuka.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - تَرْتِيبِ
-  - عَرْضٍ
-  - عَنْ
-  indonesian_explanation: Posisi saya adalah bahwa susunan presentasi layanan baru membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  sample_answer: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-  focus: Memberi signposting.
+  - أَوَّلًا
+  - دَعِينِي
+  - أَشْرَحُ
+  - الْمُشْكِلَةَ
+  - بِإِيجَازٍ
+  indonesian_explanation: Pertama, izinkan aku jelaskan masalahnya singkat.
+- coach: 'استخدم الفكرة: ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.'
+  sample_answer: ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.
+  focus: Menandai transisi.
+  expected_keywords:
+  - ثُمَّ
+  - نَنْتَقِلُ
+  - إِلَى
+  - الْفَائِدَةِ
+  - الْأَسَاسِيَّةِ
+  indonesian_explanation: Lalu kita beralih ke manfaat utamanya.
+- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.'
+  sample_answer: بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.
+  focus: Menandai bagian data.
   expected_keywords:
   - بَعْدَ
-  - ذَلِكَ،
-  - سَأَشْرَحُ
-  - الْفَائِدَةَ
-  - الْأَسَاسِيَّةَ
-  indonesian_explanation: Setelah itu, saya akan menjelaskan manfaat utamanya.
-- coach: 'استخدم الفكرة: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  hint: 'Jawab dengan struktur B2 memakai: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  sample_answer: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-  focus: Menjelaskan risk secara seimbang.
+  - ذَلِكَ
+  - نَنْظُرُ
+  - إِلَى
+  - الْأَرْقَامِ
+  indonesian_explanation: Setelah itu kita lihat angkanya sekilas.
+- coach: 'استخدم الفكرة: هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.'
+  hint: 'Jawab dengan struktur B2 memakai: هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.'
+  sample_answer: هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.
+  focus: Menyorot poin kunci.
   expected_keywords:
-  - مِنَ
-  - الْمُهِمِّ
+  - هُنَا
+  - نُقْطَةٌ
+  - مُهِمَّةٌ
+  - يَجِبُ
   - أَنْ
-  - نَذْكُرَ
-  - الْمَخَاطِرَ
-  indonesian_explanation: Penting juga untuk menyebutkan risikonya.
-- coach: 'استخدم الفكرة: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  sample_answer: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-  focus: Menyiapkan Q&A.
-  expected_keywords:
-  - إِذَا
-  - كَانَتْ
-  - هُنَاكَ
-  - أَسْئِلَةٌ،
-  - فَسَأُجِيبُ
-  indonesian_explanation: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
+  indonesian_explanation: Di sini ada poin penting yang perlu kamu cermati.
 target_phrases:
-- مَوْقِفِي فِي تَرْتِيبِ عَرْضٍ عَنْ خِدْمَةٍ جَدِيدَةٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
+- أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ.
+- ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ.
+- بَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ.
+- هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا.
+- وَأَخِيرًا، أَصِلُ إِلَى الْخُطْوَةِ الْمُقْتَرَحَةِ.
 rubric:
   speaking:
     minimum_score: 72

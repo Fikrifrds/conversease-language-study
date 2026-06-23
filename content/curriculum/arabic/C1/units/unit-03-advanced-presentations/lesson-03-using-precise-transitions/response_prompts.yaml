@@ -1,25 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan penggunaan transisi yang presisi, saya akan membingkai
-    topiknya dulu agar audiens memahami konteksnya.'
-  target_response: فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا
-    حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mari pindah dari sebab ke dampak langsungnya.'
+  target_response: لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ.
   acceptable_responses:
-  - فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
-    الْجُمْهُورُ سِيَاقَهُ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan penggunaan transisi yang presisi, setelah itu, saya
-    akan membangun alur persuasif langkah demi langkah.'
-  target_response: عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ
-    الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً.
+  - لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Berdasarkan yang tadi, langkah berikutnya jadi jelas.'
+  target_response: بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.
   acceptable_responses:
-  - عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
-    خُطْوَةً فَخُطْوَةً.
-- prompt: 'Ucapkan dalam bahasa Arab: Transisi yang lebih tepat di sini adalah berpindah dari sebab ke
-    dampak.'
-  target_response: الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
+  - بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sebelum lanjut, aku rangkum poin sebelumnya.'
+  target_response: قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.
   acceptable_responses:
-  - الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu
-    menjelaskan dasarnya.'
-  target_response: إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.
+  - قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalimat ini menyiapkan audiens untuk peralihan.'
+  target_response: هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.
   acceptable_responses:
-  - إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ.
+  - هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ.

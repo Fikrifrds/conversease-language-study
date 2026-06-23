@@ -1,11 +1,11 @@
 # Target Percakapan
 
-Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences, dengan jawaban yang lebih terhubung dan alasan yang jelas.
+Latih percakapan Arab B1 untuk membicarakan tujuan dan menjelaskan pilihan dengan alasan.
 
 Kamu akan berlatih mengatakan:
 
-- هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-- أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-- السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
-- بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا.
+- هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+- أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+- الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+- الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+- إِذَنْ سَأَبْدَأُ بِالْخُطَّةِ الْبَسِيطَةِ غَدًا.

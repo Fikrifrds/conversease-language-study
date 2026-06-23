@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Baca kalimat dari kanan ke kiri. Cari dulu frasa penghubung, lalu pahami fungsi kalimat: konteks, alasan, hasil, atau langkah berikutnya.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ. -> Saya akan menjawab dengan kalimat yang terhubung.
-- أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ. -> Saya menyebut konteks, alasan, dan hasil.
-- إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا. -> Jika saya tidak paham, saya meminta klarifikasi.
-- أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ. -> Saya menjaga ketenangan dan kecepatan yang sesuai.
-- هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ. -> Ini membantu saya dalam tes.
+- فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ. -> Menurutku, latihan harian itu bermanfaat.
+- لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ. -> Karena itu membantu mengingat kata.
+- مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ. -> Misalnya, aku tinjau lima kalimat tiap malam.
+- إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ. -> Kalau tidak paham pertanyaannya, aku minta diulang.
+- وَأُجِيبُ بِهُدُوءٍ دُونَ عَجَلَةٍ. -> Dan aku jawab dengan tenang tanpa terburu.

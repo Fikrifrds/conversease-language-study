@@ -2,14 +2,14 @@
 
 ## Ulangi
 
-1. هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-2. أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-3. سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-4. السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
-5. بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا.
+1. هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+2. أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+3. الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+4. الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+5. إِذَنْ سَأَبْدَأُ بِالْخُطَّةِ الْبَسِيطَةِ غَدًا.
 
 ## Fokus
 
-- Jaga harakat akhir tetap terdengar cukup jelas.
-- Beri jeda kecil setelah frasa penghubung seperti ثُمَّ dan بَعْدَ ذَلِكَ.
-- Jangan mempercepat kalimat yang berisi alasan atau hasil.
+- Jaga tekanan pada frasa penghubung seperti وَلَكِنَّ، لِذَلِكَ، dan إِذَا.
+- Beri jeda sebelum alasan, contoh, dan rekomendasi.
+- Jangan membaca seluruh argumen sebagai satu kalimat panjang.

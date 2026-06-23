@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** عَرْضُكِ غَدًا أَمَامَ الْإِدَارَةِ. كَيْفَ تَجْمَعِينَ كُلَّ شَيْءٍ؟ -> Besok presentasimu di depan manajemen. Gimana kamu menyatukan semuanya?
-- **Lina:** سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ، وَأَجْعَلُ الرِّسَالَةَ الْمَرْكَزِيَّةَ وَاحِدَةً. -> Aku akan membingkai topiknya dulu agar audiens memahami konteksnya, dan menjaga pesan utamanya tetap satu.
-- **Salma:** وَكَيْفَ تَبْنِينَ الْأَجْزَاءَ؟ -> Gimana kamu menyusun bagiannya?
-- **Lina:** بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً، فَكُلُّ قِسْمٍ يَدْعَمُ الْقَرَارَ الْمَطْلُوبَ. -> Setelah itu, aku akan membangun alur persuasif langkah demi langkah, jadi tiap bagian mendukung keputusan yang diminta.
-- **Salma:** وَإِنْ طَالَ النِّقَاشُ بَعْدَ الْعَرْضِ؟ -> Kalau diskusi setelah presentasi memanjang?
-- **Lina:** الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ، وَإِذَا جَاءَ سُؤَالٌ صَعْبٌ فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ. -> Transisi yang lebih tepat adalah berpindah dari sebab ke dampak, dan kalau ada pertanyaan sulit aku akan mengakui batas jawaban lalu menjelaskan dasarnya.
-- **Salma:** وَالْخِتَامُ؟ -> Penutupnya?
-- **Lina:** فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ، فَأَعُودُ إِلَى السُّؤَالِ الْمَرْكَزِيِّ وَأَقْتَرِحُ خُطْوَةً وَاحِدَةً. -> Pada akhirnya, aku ingin audiens pulang dengan pesan yang jelas, jadi aku kembali ke pertanyaan inti dan mengusulkan satu langkah.
+- **Salma:** أَمَامَكِ الْإِدَارَةُ وَخَمْسُ دَقَائِقَ. اعْرِضِي. -> Di depanmu manajemen dan lima menit. Presentasikan.
+- **Lina:** رِسَالَتِي الْأَسَاسِيَّةُ هِيَ أَنَّنَا نَخْسَرُ وَقْتًا ثَمِينًا. -> Pesan utamaku, kita kehilangan waktu berharga.
+- **Salma:** كَيْفَ تَبْنِينَ عَرْضَكِ حَوْلَهَا؟ -> Gimana kamu menyusun presentasi di sekitarnya?
+- **Lina:** كُلُّ قِسْمٍ فِي عَرْضِي يَخْدُمُ هَذَا الْقَرَارَ، وَالدَّلِيلُ هُوَ مُقَارَنَةٌ بَيْنَ شَهْرَيْنِ. -> Tiap bagian presentasiku melayani keputusan ini, dan buktinya perbandingan antara dua bulan.
+- **Salma:** وَإِنْ خَافُوا مِنَ الْمُخَاطَرَةِ؟ -> Kalau mereka takut risiko?
+- **Lina:** الْمُخَاطَرَةُ صَغِيرَةٌ لِأَنَّنَا نُجَرِّبُ أَوَّلًا. -> Risikonya kecil karena kita uji dulu.
+- **Salma:** فَمَا الَّذِي تَطْلُبِينَهُ؟ -> Jadi apa yang kamu minta?
+- **Lina:** أَطْلُبُ قَرَارًا الْيَوْمَ، وَلَوْ كَانَ مَبْدَئِيًّا. -> Aku minta keputusan hari ini, walau sementara.

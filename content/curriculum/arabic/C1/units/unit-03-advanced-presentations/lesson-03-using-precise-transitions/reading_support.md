@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ. -> Dalam latihan penggunaan transisi yang presisi, saya akan membingkai topiknya dulu agar audiens memahami konteksnya.
-- عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً. -> Saat menerapkan penggunaan transisi yang presisi, setelah itu, saya akan membangun alur persuasif langkah demi langkah.
-- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak.
-- إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ. -> Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu menjelaskan dasarnya.
-- فِي خِتَامِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada bagian akhir penggunaan transisi yang presisi, pada akhirnya, saya ingin audiens pulang dengan pesan yang jelas.
+- لِنَنْتَقِلْ مِنَ السَّبَبِ إِلَى أَثَرِهِ الْمُبَاشِرِ. -> Mari pindah dari sebab ke dampak langsungnya.
+- بِنَاءً عَلَى مَا سَبَقَ، تَتَّضِحُ الْخُطْوَةُ التَّالِيَةُ. -> Berdasarkan yang tadi, langkah berikutnya jadi jelas.
+- قَبْلَ أَنْ نُكْمِلَ، أُلَخِّصُ النُّقْطَةَ السَّابِقَةَ. -> Sebelum lanjut, aku rangkum poin sebelumnya.
+- هَذِهِ الْجُمْلَةُ تُهَيِّئُ الْجُمْهُورَ لِلتَّحَوُّلِ. -> Kalimat ini menyiapkan audiens untuk peralihan.
+- بِهَذَا لَا يَبْدُو الِانْتِقَالُ مُفَاجِئًا. -> Dengan begitu transisinya tidak terasa mendadak.

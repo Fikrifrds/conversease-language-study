@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** سَتَعْرِضِينَ فِكْرَةَ الْأَتْمَتَةِ. كَيْفَ تُوَازِنِينَ بَيْنَ الْفَائِدَةِ وَالْخَطَرِ؟ -> Kamu akan presentasi ide otomatisasi. Gimana kamu menyeimbangkan manfaat dan risiko?
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنِ الْعَمَلِ الْمُكَرَّرِ الَّذِي يُتْعِبُ الْفَرِيقَ. -> Aku akan mulai dengan pembuka singkat soal pekerjaan berulang yang melelahkan tim.
-- **Salma:** وَالْفَائِدَةُ؟ -> Manfaatnya?
-- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ: تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> Setelah itu, aku akan menjelaskan manfaat utamanya: mengurangi pekerjaan berulang.
-- **Salma:** لَكِنَّ بَعْضَهُمْ يَخَافُ مِنَ الْأَتْمَتَةِ. -> Tapi sebagian takut sama otomatisasi.
-- **Lina:** لِذَلِكَ مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، مِثْلَ الْحَاجَةِ إِلَى مُرَاقَبَةِ النَّتَائِجِ. -> Makanya penting juga menyebutkan risikonya, seperti perlunya memantau hasil.
-- **Salma:** وَكَيْفَ تُطَمْئِنِينَهُمْ؟ -> Gimana kamu menenangkan mereka?
-- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً: نَبْدَأُ صَغِيرًا وَنَقِيسُ الْأَثَرَ. -> Sebagai penutup, aku akan mengusulkan langkah praktis: mulai kecil dan ukur dampaknya.
+- **Salma:** اعْرِضِي فِكْرَةَ الْأَتْمَتَةِ بِتَوَازُنٍ بَيْنَ الْفَائِدَةِ وَالْخَطَرِ. -> Presentasikan ide otomatisasi dengan seimbang antara manfaat dan risiko.
+- **Lina:** الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> Manfaat terbesarnya, mengurangi pekerjaan berulang.
+- **Salma:** وَالْجَانِبُ السَّلْبِيُّ؟ -> Sisi negatifnya?
+- **Lina:** وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ. -> Di sisi lain ada risiko kalau kita abai memantau.
+- **Salma:** بَعْضُهُمْ يَخَافُ مِنَ الْأَتْمَتَةِ أَصْلًا. -> Sebagian memang takut otomatisasi.
+- **Lina:** أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ. لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ. -> Aku paham yang takut otomatisasi. Untuk menguranginya, kita pantau hasil tiap minggu.
+- **Salma:** فَكَيْفَ نَبْدَأُ بِأَمَانٍ؟ -> Jadi gimana kita mulai dengan aman?
+- **Lina:** فَالْبِدَايَةُ الصَّغِيرَةُ تَكْشِفُ أَيَّ مُشْكِلَةٍ مُبَكِّرًا. -> Mulai kecil membuat masalah ketahuan lebih awal.

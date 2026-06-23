@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_review_negotiation_and_presenting
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk meninjau negosiasi dan presentasi dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: الْمُورِّدُ يُرِيدُ سِعْرًا أَعْلَى. كَيْفَ نُفَاوِضُ؟
+learner_goal: 'Latih percakapan Arab B2 untuk bernegosiasi: menyatakan prioritas, memberi konsesi kecil,
+  lalu menutup kesepakatan.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka sesi peninjauan ulang.
+- coach: الْمُورِّدُ يُرِيدُ سِعْرًا أَعْلَى. كَيْفَ نُفَاوِضُ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَوْلَوِيَّتِي أَنْ يَبْقَى السِّعْرُ فِي الْمِيزَانِيَّةِ.'
+  sample_answer: أَوْلَوِيَّتِي أَنْ يَبْقَى السِّعْرُ فِي الْمِيزَانِيَّةِ.
+  focus: Menyatakan prioritas.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - مُرَاجَعَةِ
-  - التَّفَاوُضِ
-  - وَالْعَرْضِ
-  indonesian_explanation: Posisi saya adalah bahwa review negosiasi dan presentasi membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  focus: Mereview kemampuan menyusun argumen.
-  expected_keywords:
-  - أَسْتَطِيعُ
+  - أَوْلَوِيَّتِي
   - أَنْ
-  - أُقَدِّمَ
-  - رَأْيًا
-  - وَأَدْعَمَهُ
-  indonesian_explanation: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  focus: Mereview kemampuan percakapan profesional.
+  - يَبْقَى
+  - السِّعْرُ
+  - فِي
+  indonesian_explanation: Prioritasku, harganya tetap dalam anggaran.
+- coach: 'استخدم الفكرة: يُمْكِنُنِي أَنْ أَتَنَازَلَ عَنْ مِيزَةٍ صَغِيرَةٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: يُمْكِنُنِي أَنْ أَتَنَازَلَ عَنْ مِيزَةٍ صَغِيرَةٍ.'
+  sample_answer: يُمْكِنُنِي أَنْ أَتَنَازَلَ عَنْ مِيزَةٍ صَغِيرَةٍ.
+  focus: Memberi konsesi.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَيْضًا
+  - يُمْكِنُنِي
   - أَنْ
-  - أُدِيرَ
-  - حِوَارًا
-  indonesian_explanation: Saya juga bisa mengelola percakapan profesional dengan jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  focus: Mereview respons terhadap keberatan.
+  - أَتَنَازَلَ
+  - عَنْ
+  - مِيزَةٍ
+  indonesian_explanation: Aku bisa melepas satu fitur kecil.
+- coach: 'استخدم الفكرة: فِي الْمُقَابِلِ، أَحْتَاجُ إِلَى دَعْمٍ أَسْرَعَ.'
+  hint: 'Jawab dengan struktur B2 memakai: فِي الْمُقَابِلِ، أَحْتَاجُ إِلَى دَعْمٍ أَسْرَعَ.'
+  sample_answer: فِي الْمُقَابِلِ، أَحْتَاجُ إِلَى دَعْمٍ أَسْرَعَ.
+  focus: Meminta imbalan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - اِعْتِرَاضٌ،
-  - فَسَأَرُدُّ
-  - عَلَيْهِ
-  indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+  - فِي
+  - الْمُقَابِلِ
+  - أَحْتَاجُ
+  - إِلَى
+  - دَعْمٍ
+  indonesian_explanation: Sebagai gantinya, aku butuh dukungan lebih cepat.
+- coach: 'استخدم الفكرة: هَذَا عَرْضٌ عَادِلٌ لِلطَّرَفَيْنِ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا عَرْضٌ عَادِلٌ لِلطَّرَفَيْنِ.'
+  sample_answer: هَذَا عَرْضٌ عَادِلٌ لِلطَّرَفَيْنِ.
+  focus: Menyeimbangkan.
+  expected_keywords:
+  - هَذَا
+  - عَرْضٌ
+  - عَادِلٌ
+  - لِلطَّرَفَيْنِ
+  indonesian_explanation: Ini tawaran yang adil untuk kedua pihak.
 target_phrases:
-- مَوْقِفِي فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
+- أَوْلَوِيَّتِي أَنْ يَبْقَى السِّعْرُ فِي الْمِيزَانِيَّةِ.
+- يُمْكِنُنِي أَنْ أَتَنَازَلَ عَنْ مِيزَةٍ صَغِيرَةٍ.
+- فِي الْمُقَابِلِ، أَحْتَاجُ إِلَى دَعْمٍ أَسْرَعَ.
+- هَذَا عَرْضٌ عَادِلٌ لِلطَّرَفَيْنِ.
+- إِنِ اتَّفَقْنَا، نَكْتُبُ ذَلِكَ فِي الْعَقْدِ.
 rubric:
   speaking:
     minimum_score: 72

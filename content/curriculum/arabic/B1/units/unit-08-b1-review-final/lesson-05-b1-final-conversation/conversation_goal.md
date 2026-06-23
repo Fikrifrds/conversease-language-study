@@ -1,11 +1,11 @@
 # Target Percakapan
 
-Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang lebih terhubung dan alasan yang jelas.
+Latih percakapan Arab B1 untuk bercerita lalu memberi pendapat dengan alasan dalam satu obrolan.
 
 Kamu akan berlatih mengatakan:
 
-- سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-- ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-- بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-- أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا.
-- فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ.
+- مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+- سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+- فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+- وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟
+- لِذَلِكَ تَعَلَّمْتُ أَنْ أَسْأَلَ مُبَكِّرًا.

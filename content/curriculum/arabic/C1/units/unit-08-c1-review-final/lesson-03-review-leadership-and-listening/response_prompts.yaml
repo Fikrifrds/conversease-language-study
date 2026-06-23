@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saat meninjau kepemimpinan dan listening, saya mendengarkan dulu lalu mengarahkan percakapan.'
-  target_response: عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Coba aku pahami dulu apa yang membuatmu cemas.'
+  target_response: دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا.
   acceptable_responses:
-  - عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mengajukan pertanyaan terbuka untuk memahami kebutuhan pihak lain.'
-  target_response: أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.
+  - دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau aku paham benar, masalahnya waktu, bukan usaha.'
+  target_response: إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.
   acceptable_responses:
-  - أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mengulang poin dengan kata-kata saya sendiri untuk memastikan saya memahaminya.'
-  target_response: أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.
+  - إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Apa yang membantumu menyelesaikannya minggu ini?'
+  target_response: مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟
   acceptable_responses:
-  - أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika pendapat berbeda, saya tetap tenang dan menjelaskan langkah berikutnya.'
-  target_response: إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.
+  - مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Aku tetap tenang meski kita berbeda.'
+  target_response: أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.
   acceptable_responses:
-  - إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ.
+  - أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا.

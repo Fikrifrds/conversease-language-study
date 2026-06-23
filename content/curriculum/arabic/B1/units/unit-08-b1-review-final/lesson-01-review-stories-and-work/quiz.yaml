@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya akan mulai dengan cerita singkat."?
+  prompt: Frasa mana yang berarti "Kemarin aku telat rapat karena bus."?
   options:
-  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-  correct_answer: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+  - أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+  - وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+  - الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+  correct_answer: أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Setelah itu, saya memberi update tentang pekerjaan."?
+  prompt: Frasa mana yang berarti "Lalu aku minta maaf dan menyelesaikan kerjaku."?
   options:
-  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-  correct_answer: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  - وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+  - أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+  - الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+  correct_answer: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.

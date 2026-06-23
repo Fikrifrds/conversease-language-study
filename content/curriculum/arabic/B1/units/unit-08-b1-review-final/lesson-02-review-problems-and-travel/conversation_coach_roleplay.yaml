@@ -1,54 +1,69 @@
 scenario_key: arabic_b1_review_problems_and_travel
 mode: lesson_practice_coach
 level_code: B1
-opening_line: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ مُشْكِلَةٍ فِي السَّفَرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review problems and travel, dengan jawaban
-  yang lebih terhubung dan alasan yang jelas.'
-max_turns: 6
+opening_line: هَلْ كُلُّ شَيْءٍ جَاهِزٌ لِلرِّحْلَةِ؟
+learner_goal: Latih percakapan Arab B1 untuk menjelaskan masalah perjalanan singkat lalu menyepakati langkah.
+max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ مُشْكِلَةٍ فِي السَّفَرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-  hint: 'Jawab dengan kalimat terhubung memakai: سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.'
-  sample_answer: سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+- coach: هَلْ كُلُّ شَيْءٍ جَاهِزٌ لِلرِّحْلَةِ؟
+  hint: 'Jawab dengan struktur B2 memakai: حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.'
+  sample_answer: حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+  focus: Membuka masalah.
   expected_keywords:
-  - سَأَشْرَحُ
-  - مُشْكِلَةً
-  - ثُمَّ
-  - أَقْتَرِحُ
-  indonesian_explanation: Saya akan menjelaskan masalah lalu menyarankan solusi.
-- coach: 'استخدم الفكرة: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.'
-  sample_answer: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
-  expected_keywords:
+  - حَدَثَتْ
+  - مُشْكِلَةٌ
+  - صَغِيرَةٌ
   - فِي
-  - السَّفَرِ،
-  - أَحْتَاجُ
-  - إِلَى
-  indonesian_explanation: Dalam perjalanan, saya butuh detail jelas.
-- coach: 'استخدم الفكرة: إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.'
-  sample_answer: إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - الْحَجْزِ
+  indonesian_explanation: Ada masalah kecil di reservasi.
+- coach: 'استخدم الفكرة: السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.'
+  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.'
+  sample_answer: السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+  focus: Menjelaskan penyebab.
+  expected_keywords:
+  - السَّبَبُ
+  - أَنَّ
+  - الِاسْمَ
+  - كُتِبَ
+  - خَطَأً
+  indonesian_explanation: Sebabnya, namanya salah tulis.
+- coach: 'استخدم الفكرة: أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.'
+  sample_answer: أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+  focus: Mengusulkan solusi.
+  expected_keywords:
+  - أَقْتَرِحُ
+  - أَنْ
+  - نَتَّصِلَ
+  - بِالْفُنْدُقِ
+  - الْآنَ
+  indonesian_explanation: Aku usul kita telepon hotel sekarang.
+- coach: 'استخدم الفكرة: إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.'
+  hint: 'Jawab dengan struktur B2 memakai: إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.'
+  sample_answer: إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.
+  focus: Menyiapkan rencana cadangan.
   expected_keywords:
   - إِذَا
-  - حَدَثَ
-  - تَأْخِيرٌ،
-  - سَأُخْبِرُ
-  indonesian_explanation: Jika terjadi keterlambatan, saya akan memberi tahu pihak lain.
+  - لَمْ
+  - يَرُدُّوا
+  - نَذْهَبُ
+  - مُبَكِّرًا
+  indonesian_explanation: Kalau tidak diangkat, kita datang lebih awal.
 target_phrases:
-- سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-- فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-- إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-- أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا.
-- فِي النِّهَايَةِ، أُؤَكِّدُ الْخُطْوَةَ التَّالِيَةَ.
+- حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+- السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+- أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+- إِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا.
+- سَأُخْبِرُكَ إِذَا تَغَيَّرَ شَيْءٌ.
 rubric:
   speaking:
-    minimum_score: 70
+    minimum_score: 72
   relevance:
+    minimum_score: 72
+  argument_structure:
     minimum_score: 70
   grammar:
-    minimum_score: 68
+    minimum_score: 70

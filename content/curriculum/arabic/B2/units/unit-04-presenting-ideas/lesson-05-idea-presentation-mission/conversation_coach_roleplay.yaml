@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_idea_presentation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mempresentasikan dan mempertahankan ide dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: عِنْدَكِ خَمْسُ دَقَائِقَ فَقَطْ. اعْرِضِي فِكْرَتَكِ.
+learner_goal: Latih percakapan Arab B2 untuk menyampaikan ide dalam waktu singkat dan meminta keputusan.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka presentasi.
+- coach: عِنْدَكِ خَمْسُ دَقَائِقَ فَقَطْ. اعْرِضِي فِكْرَتَكِ.
+  hint: 'Jawab dengan struktur B2 memakai: لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ.'
+  sample_answer: لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ.
+  focus: Membuka pitch.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - تَقْدِيمِ
-  - فِكْرَةٍ
-  - أَمَامَ
-  indonesian_explanation: Posisi saya adalah bahwa presentasi ide di depan manajer membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  sample_answer: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-  focus: Memberi signposting.
+  - لَدَيَّ
+  - فِكْرَةٌ
+  - تُوَفِّرُ
+  - وَقْتَ
+  - الْفَرِيقِ
+  indonesian_explanation: Aku punya ide yang menghemat waktu tim.
+- coach: 'استخدم الفكرة: الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.'
+  hint: 'Jawab dengan struktur B2 memakai: الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.'
+  sample_answer: الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.
+  focus: Menopang dengan bukti.
   expected_keywords:
-  - بَعْدَ
-  - ذَلِكَ،
-  - سَأَشْرَحُ
-  - الْفَائِدَةَ
-  - الْأَسَاسِيَّةَ
-  indonesian_explanation: Setelah itu, saya akan menjelaskan manfaat utamanya.
-- coach: 'استخدم الفكرة: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  hint: 'Jawab dengan struktur B2 memakai: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  sample_answer: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-  focus: Menjelaskan risk secara seimbang.
+  - الدَّلِيلُ
+  - هُوَ
+  - تَجْرِبَةٌ
+  - نَجَحَتْ
+  - مَعَ
+  indonesian_explanation: Buktinya, uji coba yang berhasil di tim lain.
+- coach: 'استخدم الفكرة: الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.'
+  hint: 'Jawab dengan struktur B2 memakai: الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.'
+  sample_answer: الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.
+  focus: Menjawab risiko.
   expected_keywords:
-  - مِنَ
-  - الْمُهِمِّ
-  - أَنْ
-  - نَذْكُرَ
-  - الْمَخَاطِرَ
-  indonesian_explanation: Penting juga untuk menyebutkan risikonya.
-- coach: 'استخدم الفكرة: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  sample_answer: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-  focus: Menyiapkan Q&A.
+  - الْخَطَرُ
+  - مَحْدُودٌ
+  - لِأَنَّنَا
+  - نَبْدَأُ
+  - صَغِيرًا
+  indonesian_explanation: Risikonya terbatas karena kita mulai kecil.
+- coach: 'استخدم الفكرة: لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.'
+  sample_answer: لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.
+  focus: Memperjelas komitmen kecil.
   expected_keywords:
-  - إِذَا
-  - كَانَتْ
-  - هُنَاكَ
-  - أَسْئِلَةٌ،
-  - فَسَأُجِيبُ
-  indonesian_explanation: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
+  - لَنْ
+  - يَأْخُذَ
+  - هَذَا
+  - أَكْثَرَ
+  - مِنْ
+  indonesian_explanation: Ini tidak makan waktu lebih dari sepekan untuk diuji.
 target_phrases:
-- مَوْقِفِي فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
+- لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ.
+- الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.
+- الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.
+- لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.
+- أَطْلُبُ مُوَافَقَتَكِ عَلَى تَجْرِبَةٍ وَاحِدَةٍ.
 rubric:
   speaking:
     minimum_score: 72

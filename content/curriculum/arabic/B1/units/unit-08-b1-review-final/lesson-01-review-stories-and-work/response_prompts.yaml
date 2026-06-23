@@ -1,13 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mulai dengan cerita singkat.'
-  target_response: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kemarin aku telat rapat karena bus.'
+  target_response: أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
   acceptable_responses:
-  - سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya memberi update tentang pekerjaan.'
-  target_response: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
+  - أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu aku minta maaf dan menyelesaikan kerjaku.'
+  target_response: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
   acceptable_responses:
-  - بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya butuh klarifikasi pada satu poin.'
-  target_response: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  - وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+- prompt: 'Ucapkan dalam bahasa Arab: Sekarang aku mengerjakan laporan kecil.'
+  target_response: الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
   acceptable_responses:
-  - أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
+  - الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku punya satu pertanyaan soal tenggat.'
+  target_response: عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.
+  acceptable_responses:
+  - عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ. كَيْفَ تَسْتَعِدِّينَ؟ -> Ayo coba satu pertanyaan seperti ujian. Gimana kamu bersiap?
-- **Noura:** فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ. -> Dalam latihan tes akhir, aku menggabungkan ketepatan, kefasihan, dan kejelasan.
-- **Layla:** حَسَنًا: لِمَاذَا تُؤَيِّدِينَ هَذَا الْإِطَارَ؟ -> Oke: kenapa kamu mendukung kerangka ini?
-- **Noura:** أُجِيبُ أَوَّلًا عَنِ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا. -> Aku menjawab pertanyaannya dulu, lalu menambah alasan dan contoh singkat.
-- **Layla:** وَإِنْ نَسِيتِ كَلِمَةً؟ -> Kalau kamu lupa satu kata?
-- **Noura:** إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا، وَإِذَا ضَاقَ الْوَقْتُ أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ مُعَقَّدَةٍ. -> Kalau lupa satu kata, aku menyusun ulang kalimat dan tidak berhenti lama, dan kalau waktu sempit aku pilih kalimat jelas daripada yang rumit.
-- **Layla:** وَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
-- **Noura:** فِي آخِرِ الْإِجَابَةِ، أَرْبِطُ النُّقْطَةَ بِالْمَهَمَّةِ الْمَطْلُوبَةِ. -> Di akhir jawaban, aku menghubungkan poin dengan tugas yang diminta.
+- **Layla:** سُؤَالٌ كَالِاخْتِبَارِ: هَلْ نَعْتَمِدُ الْأَتْمَتَةَ؟ -> Pertanyaan seperti ujian: apakah kita adopsi otomatisasi?
+- **Noura:** مَوْقِفِي دَقِيقٌ: أُؤَيِّدُ، لَكِنْ بِحُدُودٍ. -> Posisiku tepat: aku mendukung, tapi dengan batas.
+- **Layla:** أَعْطِينِي دَلِيلًا. -> Beri aku bukti.
+- **Noura:** الدَّلِيلُ هُوَ نَتِيجَةٌ تَكَرَّرَتْ فِي فَرِيقَيْنِ. وَمِنْ نَاحِيَةٍ أُخْرَى، أَعْتَرِفُ بِالْخَطَرِ. -> Buktinya, hasil yang berulang di dua tim. Dan di sisi lain, aku akui ada risikonya.
+- **Layla:** وَإِنْ تَعَثَّرْتِ فِي كَلِمَةٍ؟ -> Kalau kamu tersendat di satu kata?
+- **Noura:** لَوْ نَسِيتُ مُصْطَلَحًا، أَشْرَحُ الْفِكْرَةَ بِكَلِمَاتٍ أَبْسَطَ. -> Kalau lupa istilah, aku jelaskan idenya dengan kata lebih sederhana.
+- **Layla:** فَخُلَاصَتُكِ؟ -> Jadi kesimpulanmu?
+- **Noura:** خُلَاصَتِي الدَّقِيقَةُ: نَعَمْ، مَعَ مُتَابَعَةٍ مُسْتَمِرَّةٍ. -> Kesimpulan tepatku: ya, dengan pemantauan berkelanjutan.

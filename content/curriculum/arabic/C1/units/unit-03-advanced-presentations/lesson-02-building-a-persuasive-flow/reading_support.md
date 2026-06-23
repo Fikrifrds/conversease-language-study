@@ -1,9 +1,9 @@
 # Bantuan Membaca
 
-Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
+Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- فِي تَدْرِيبِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ. -> Dalam latihan pembangunan alur persuasif, saya akan membingkai topiknya dulu agar audiens memahami konteksnya.
-- عِنْدَ تَطْبِيقِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً. -> Saat menerapkan pembangunan alur persuasif, setelah itu, saya akan membangun alur persuasif langkah demi langkah.
-- الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak.
-- إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ. -> Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu menjelaskan dasarnya.
-- فِي خِتَامِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada bagian akhir pembangunan alur persuasif, pada akhirnya, saya ingin audiens pulang dengan pesan yang jelas.
+- أَبْدَأُ مِنَ الْمُشْكِلَةِ قَبْلَ أَيِّ رَقْمٍ. -> Aku mulai dari masalah sebelum angka apa pun.
+- يَقُودُنَا ذَلِكَ إِلَى الدَّلِيلِ بِشَكْلٍ طَبِيعِيٍّ. -> Itu membawa kita ke bukti secara natural.
+- الْآنَ نَنْظُرُ إِلَى الْخِيَارَيْنِ الْمُتَاحَيْنِ. -> Sekarang kita lihat dua opsi yang tersedia.
+- لَوْ قَاطَعَنِي أَحَدٌ، أُجِيبُ ثُمَّ أَعُودُ إِلَى الْمَسَارِ. -> Kalau ada yang memotong, aku jawab lalu kembali ke alur.
+- هَكَذَا يَصِلُ الْجُمْهُورُ إِلَى الِاسْتِنْتَاجِ مَعِي. -> Dengan begitu audiens sampai ke kesimpulan bersamaku.

@@ -1,53 +1,70 @@
 scenario_key: arabic_b1_review_stories_and_work
 mode: lesson_practice_coach
 level_code: B1
-opening_line: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review stories and work, dengan jawaban
-  yang lebih terhubung dan alasan yang jelas.'
-max_turns: 6
+opening_line: كَيْفَ كَانَ يَوْمُكَ أَمْسِ؟
+learner_goal: Latih percakapan Arab B1 untuk menceritakan kejadian singkat lalu memberi kabar pekerjaan
+  dengan jelas.
+max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-  hint: 'Jawab dengan kalimat terhubung memakai: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.'
-  sample_answer: سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+- coach: كَيْفَ كَانَ يَوْمُكَ أَمْسِ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.'
+  sample_answer: أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+  focus: Membuka cerita singkat.
   expected_keywords:
-  - سَأَبْدَأُ
-  - بِقِصَّةٍ
-  - قَصِيرَةٍ
-  indonesian_explanation: Saya akan mulai dengan cerita singkat.
-- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.'
-  sample_answer: بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - أَمْسِ
+  - تَأَخَّرْتُ
+  - عَنِ
+  - الِاجْتِمَاعِ
+  - بِسَبَبِ
+  indonesian_explanation: Kemarin aku telat rapat karena bus.
+- coach: 'استخدم الفكرة: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.'
+  hint: 'Jawab dengan struktur B2 memakai: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.'
+  sample_answer: وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+  focus: Menyambung kejadian.
   expected_keywords:
-  - بَعْدَ
-  - ذَلِكَ،
-  - أُعْطِي
-  - تَحْدِيثًا
-  indonesian_explanation: Setelah itu, saya memberi update tentang pekerjaan.
-- coach: 'استخدم الفكرة: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.'
-  sample_answer: أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - وَبَعْدَ
+  - ذَلِكَ
+  - اعْتَذَرْتُ
+  - وَأَكْمَلْتُ
+  - عَمَلِي
+  indonesian_explanation: Lalu aku minta maaf dan menyelesaikan kerjaku.
+- coach: 'استخدم الفكرة: الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.'
+  sample_answer: الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+  focus: Memberi kabar pekerjaan.
   expected_keywords:
-  - أَحْتَاجُ
-  - إِلَى
-  - تَوْضِيحٍ
-  - فِي
-  indonesian_explanation: Saya butuh klarifikasi pada satu poin.
+  - الْآنَ
+  - أَعْمَلُ
+  - عَلَى
+  - تَقْرِيرٍ
+  - صَغِيرٍ
+  indonesian_explanation: Sekarang aku mengerjakan laporan kecil.
+- coach: 'استخدم الفكرة: عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.'
+  hint: 'Jawab dengan struktur B2 memakai: عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.'
+  sample_answer: عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.
+  focus: Meminta klarifikasi.
+  expected_keywords:
+  - عِنْدِي
+  - سُؤَالٌ
+  - وَاحِدٌ
+  - عَنِ
+  - الْمَوْعِدِ
+  indonesian_explanation: Aku punya satu pertanyaan soal tenggat.
 target_phrases:
-- سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-- بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-- أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-- سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.
-- هَذَا يُظْهِرُ التَّرَابُطَ فِي الْحِوَارِ.
+- أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ بِسَبَبِ الْحَافِلَةِ.
+- وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ عَمَلِي.
+- الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ صَغِيرٍ.
+- عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ الْمَوْعِدِ.
+- سَأُرْسِلُ مُلَخَّصًا قَبْلَ الْمَسَاءِ.
 rubric:
   speaking:
-    minimum_score: 70
+    minimum_score: 72
   relevance:
+    minimum_score: 72
+  argument_structure:
     minimum_score: 70
   grammar:
-    minimum_score: 68
+    minimum_score: 70

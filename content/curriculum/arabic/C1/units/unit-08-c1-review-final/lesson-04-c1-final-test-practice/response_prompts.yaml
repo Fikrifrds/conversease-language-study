@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan tes akhir, saya menggabungkan ketepatan, kefasihan, dan kejelasan.'
-  target_response: فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Posisiku tepat: aku mendukung, tapi dengan batas.'
+  target_response: 'مَوْقِفِي دَقِيقٌ: أُؤَيِّدُ، لَكِنْ بِحُدُودٍ.'
   acceptable_responses:
-  - فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya menjawab pertanyaan terlebih dahulu, lalu menambahkan alasan dan contoh singkat.'
-  target_response: أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.
+  - 'مَوْقِفِي دَقِيقٌ: أُؤَيِّدُ، لَكِنْ بِحُدُودٍ.'
+- prompt: 'Ucapkan dalam bahasa Arab: Buktinya, hasil yang berulang di dua tim.'
+  target_response: الدَّلِيلُ هُوَ نَتِيجَةٌ تَكَرَّرَتْ فِي فَرِيقَيْنِ.
   acceptable_responses:
-  - أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika saya lupa satu kata, saya menyusun ulang kalimat dan tidak berhenti terlalu lama.'
-  target_response: إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.
+  - الدَّلِيلُ هُوَ نَتِيجَةٌ تَكَرَّرَتْ فِي فَرِيقَيْنِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di sisi lain, aku akui ada risikonya.'
+  target_response: مِنْ نَاحِيَةٍ أُخْرَى، أَعْتَرِفُ بِالْخَطَرِ.
   acceptable_responses:
-  - إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika waktu sempit, saya memilih kalimat yang jelas daripada kalimat yang rumit.'
-  target_response: إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.
+  - مِنْ نَاحِيَةٍ أُخْرَى، أَعْتَرِفُ بِالْخَطَرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau lupa istilah, aku jelaskan idenya dengan kata lebih sederhana.'
+  target_response: لَوْ نَسِيتُ مُصْطَلَحًا، أَشْرَحُ الْفِكْرَةَ بِكَلِمَاتٍ أَبْسَطَ.
   acceptable_responses:
-  - إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.
+  - لَوْ نَسِيتُ مُصْطَلَحًا، أَشْرَحُ الْفِكْرَةَ بِكَلِمَاتٍ أَبْسَطَ.

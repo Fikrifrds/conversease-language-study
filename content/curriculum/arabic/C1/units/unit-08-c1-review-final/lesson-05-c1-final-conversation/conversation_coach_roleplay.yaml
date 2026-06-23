@@ -1,69 +1,70 @@
 scenario_key: arabic_c1_c1_final_conversation
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-learner_goal: Latih percakapan Arab C1 untuk percakapan akhir C1 yang utuh dengan nuansa, struktur, presisi, dan respons profesional.
+opening_line: هَذِهِ مُحَادَثَتُنَا الْأَخِيرَةُ. أَدِيرِيهَا.
+learner_goal: 'Latih percakapan Arab C1 untuk memimpin diskusi utuh: membuka topik, mengundang, lalu menutup
+  dengan langkah.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.'
-  sample_answer: فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
-  focus: Membuka final conversation dengan kontrol arah.
+- coach: هَذِهِ مُحَادَثَتُنَا الْأَخِيرَةُ. أَدِيرِيهَا.
+  hint: 'Jawab dengan struktur B2 memakai: لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ.'
+  sample_answer: لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ.
+  focus: Membuka diskusi.
   expected_keywords:
-  - فِي
-  - الْمُحَادَثَةِ
-  - النِّهَائِيَّةِ
-  - الْمُتَكَامِلَةِ
-  - أُدِيرُ
-  indonesian_explanation: Dalam percakapan akhir yang utuh, saya mengelola diskusi dengan jelas dan fleksibel.
-- coach: 'استخدم الفكرة: أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.'
-  hint: 'Jawab dengan struktur C1 memakai: أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.'
-  sample_answer: أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
-  focus: Membuka interaksi dua arah secara terstruktur.
-  expected_keywords:
-  - أَبْدَأُ
+  - لِنَبْدَأْ
   - بِتَحْدِيدِ
-  - الْمَوْضُوعِ
-  - ثُمَّ
-  - أَدْعُو
-  indonesian_explanation: Saya mulai dengan menentukan topik, lalu mengundang pihak lain untuk merespons.
-- coach: 'استخدم الفكرة: أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.'
-  hint: 'Jawab dengan struktur C1 memakai: أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.'
-  sample_answer: أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
-  focus: Menjaga percakapan panjang tetap koheren.
+  - مَا
+  - نُرِيدُ
+  - حَسْمَهُ
+  indonesian_explanation: Mari mulai dengan menentukan apa yang ingin kita putuskan hari ini.
+- coach: 'استخدم الفكرة: مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟'
+  sample_answer: مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟
+  focus: Mengundang pihak lain.
+  expected_keywords:
+  - مَا
+  - رَأْيُكِ
+  - أَنْتِ
+  - قَبْلَ
+  - أَنْ
+  indonesian_explanation: Bagaimana pendapatmu sebelum aku lanjut?
+- coach: 'استخدم الفكرة: أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.'
+  sample_answer: أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.
+  focus: Menjaga keterhubungan.
   expected_keywords:
   - أَرْبِطُ
-  - بَيْنَ
-  - الرَّأْيِ
-  - وَالدَّلِيلِ
-  - وَالسُّؤَالِ
-  indonesian_explanation: Saya menghubungkan pendapat, bukti, dan pertanyaan agar percakapan tetap tersambung.
-- coach: 'استخدم الفكرة: إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.'
-  sample_answer: إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.
-  focus: Menyesuaikan nada saat percakapan berubah.
+  - رَأْيَكِ
+  - بِالدَّلِيلِ
+  - حَتَّى
+  - نَبْقَى
+  indonesian_explanation: Aku kaitkan pendapatmu dengan bukti agar tetap di jalur.
+- coach: 'استخدم الفكرة: إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.'
+  sample_answer: إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.
+  focus: Mengelola nada.
   expected_keywords:
-  - إِذَا
-  - تَغَيَّرَتْ
-  - نَبْرَةُ
-  - الْحِوَارِ
-  - أُخَفِّفُ
-  indonesian_explanation: Jika nada percakapan berubah, saya melunakkan bahasa dan mengarahkan ulang diskusi.
+  - إِنِ
+  - احْتَدَّتِ
+  - النَّبْرَةُ
+  - أُخَفِّفُهَا
+  - وَأُعِيدُ
+  indonesian_explanation: Kalau nadanya memanas, aku lembutkan dan arahkan ulang.
 target_phrases:
-- فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
-- أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
-- أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
-- إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.
-- أُنْهِي الْمُحَادَثَةَ بِخُلَاصَةٍ وَخُطْوَةٍ تَالِيَةٍ وَاضِحَةٍ.
+- لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ.
+- مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟
+- أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.
+- إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.
+- نَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ وَاضِحَةٍ.
 rubric:
   speaking:
-    minimum_score: 76
+    minimum_score: 72
   relevance:
-    minimum_score: 76
-  nuance:
-    minimum_score: 74
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
   grammar:
-    minimum_score: 74
+    minimum_score: 70

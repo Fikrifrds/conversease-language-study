@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** الِاخْتِبَارُ بَعْدَ يَوْمَيْنِ. مَاذَا تُرَاجِعِينَ الْآنَ؟ -> Ujiannya dua hari lagi. Apa yang kamu review sekarang?
-- **Noura:** أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ. -> Aku mereview argumen dan rapat karena keduanya penting dalam diskusi.
-- **Layla:** وَهَلْ تَثِقِينَ بِالْجُزْءِ الْأَوَّلِ؟ -> Apa kamu pede di bagian pertama?
-- **Noura:** نَعَمْ، أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. -> Iya, aku bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- **Layla:** وَمَاذَا عَنْ إِدَارَةِ الِاجْتِمَاعِ؟ -> Kalau soal memimpin rapat gimana?
-- **Noura:** أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ، وَإِذَا ظَهَرَ اِعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Aku juga bisa mengelola percakapan profesional dengan jelas, dan kalau ada keberatan aku akan menanggapinya dengan tenang.
-- **Layla:** خُطَّةٌ جَيِّدَةٌ. وَفِي الِاخْتِبَارِ؟ -> Rencana yang bagus. Dan saat ujian?
-- **Noura:** فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Dalam ujian akhir, aku akan fokus pada koherensi dan kejelasan.
+- **Layla:** مَا زِلْنَا بِلَا مَوْعِدٍ نِهَائِيٍّ. مَا رَأْيُكِ؟ -> Kita masih belum punya tenggat final. Gimana menurutmu?
+- **Noura:** أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ. -> Aku usul kita kunci tenggatnya hari ini.
+- **Layla:** لِمَاذَا الْعَجَلَةُ؟ -> Kenapa buru-buru?
+- **Noura:** السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ. -> Alasannya, penundaan justru lebih memakan biaya.
+- **Layla:** لَكِنَّ الْفَرِيقَ غَيْرُ جَاهِزٍ لِكُلِّ شَيْءٍ. -> Tapi tim belum siap untuk semuanya.
+- **Noura:** أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ. -> Aku paham keberatanmu, tapi kita bisa mulai dari bagian kecil.
+- **Layla:** حَسَنًا، فَلْنَحْسِمْهَا. -> Oke, ayo putuskan.
+- **Noura:** إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ، وَسَأُرْسِلُ الْمُلَخَّصَ وَالْمَسْؤُولِيَّاتِ بَعْدَ الِاجْتِمَاعِ. -> Jadi keputusannya: penyerahan awal hari Kamis, dan aku kirim ringkasan dan tanggung jawab setelah rapat.

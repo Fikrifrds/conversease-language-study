@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ. -> Saya meninjau kembali argumen dan rapat karena keduanya penting dalam diskusi.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. -> Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Saya juga bisa mengelola percakapan profesional dengan jelas.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Jika muncul keberatan, saya akan menanggapinya dengan tenang.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ. -> Aku usul kita kunci tenggatnya hari ini.
+- السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ. -> Alasannya, penundaan justru lebih memakan biaya.
+- أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ. -> Aku paham keberatanmu, tapi kita bisa mulai dari bagian kecil.
+- إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ. -> Jadi keputusannya: penyerahan awal hari Kamis.
+- سَأُرْسِلُ الْمُلَخَّصَ وَالْمَسْؤُولِيَّاتِ بَعْدَ الِاجْتِمَاعِ. -> Aku kirim ringkasan dan tanggung jawab setelah rapat.

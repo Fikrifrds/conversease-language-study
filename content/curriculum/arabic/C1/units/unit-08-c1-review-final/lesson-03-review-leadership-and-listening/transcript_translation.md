@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** بَقِيَتْ مَهَارَتَانِ. مَاذَا تُرَاجِعِينَ؟ -> Tinggal dua keterampilan. Apa yang kamu review?
-- **Noura:** عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ. -> Saat meninjau kepemimpinan dan listening, aku mendengarkan dulu lalu mengarahkan percakapan.
-- **Layla:** وَكَيْفَ تَفْهَمِينَ حَاجَةَ الطَّرَفِ الْآخَرِ؟ -> Gimana kamu memahami kebutuhan pihak lain?
-- **Noura:** أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ، وَأُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا. -> Aku mengajukan pertanyaan terbuka untuk memahami kebutuhannya, dan mengulang poinnya dengan kata-kataku untuk memastikan aku paham.
-- **Layla:** وَإِنِ اخْتَلَفَتِ الْآرَاءُ؟ -> Kalau pendapatnya berbeda?
-- **Noura:** إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ. -> Kalau pendapatnya berbeda, aku tetap tenang dan menjelaskan langkah berikutnya.
-- **Layla:** وَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
-- **Noura:** أَخْتِمُ الْحِوَارَ بِمَا اتَّفَقْنَا عَلَيْهِ وَمَا يَبْقَى لِلْمُتَابَعَةِ. -> Aku menutup percakapan dengan hal yang sudah disepakati dan yang masih perlu ditindaklanjuti.
+- **Layla:** زَمِيلَتُكِ مُرْتَبِكَةٌ وَلَا تَعْرِفُ مِنْ أَيْنَ تَبْدَأُ. -> Rekanmu bingung dan tidak tahu mulai dari mana.
+- **Noura:** دَعِينِي أَفْهَمُ مَا يُقْلِقُكِ أَوَّلًا. -> Coba aku pahami dulu apa yang membuatmu cemas.
+- **Layla:** تَقُولُ إِنَّ الْعَمَلَ كَثِيرٌ. -> Katanya pekerjaannya banyak.
+- **Noura:** إِنْ فَهِمْتُكِ صَحِيحًا، الْمُشْكِلَةُ فِي الْوَقْتِ لَا الْجُهْدِ. مَا الَّذِي يُسَاعِدُكِ عَلَى إِنْجَازِهِ هَذَا الْأُسْبُوعَ؟ -> Kalau aku paham benar, masalahnya waktu, bukan usaha. Apa yang membantumu menyelesaikannya minggu ini?
+- **Layla:** وَإِنِ اخْتَلَفْتُمَا؟ -> Kalau kalian berbeda pendapat?
+- **Noura:** أَبْقَى هَادِئَةً حَتَّى لَوِ اخْتَلَفْنَا. -> Aku tetap tenang meski kita berbeda.
+- **Layla:** فَمَا تُوصِينَ بِهِ؟ -> Jadi apa rekomendasimu?
+- **Noura:** الْخُطْوَةُ التَّالِيَةُ أَنْ تُجَرِّبِي أَصْغَرَ جُزْءٍ. -> Langkah berikutnya, coba bagian terkecilnya.

@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** وَالْيَوْمَ، كَيْفَ تُرَاجِعُ الْمَشَاكِلَ وَالسَّفَرَ؟ -> Dan hari ini, gimana kamu mereview masalah dan perjalanan?
-- **Karim:** سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا. -> Aku akan menjelaskan masalah lalu mengusulkan solusi.
-- **Ahmad:** وَفِي السَّفَرِ؟ -> Kalau saat perjalanan?
-- **Karim:** فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ، وَإِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ. -> Dalam perjalanan, aku butuh detail jelas, dan kalau ada keterlambatan, aku akan memberi tahu pihak lain.
-- **Ahmad:** وَكَيْفَ تَتَعَامَلُ مَعَ مُشْكِلَةٍ؟ -> Gimana kamu menangani masalah?
-- **Karim:** أُفَضِّلُ حَلًّا سَرِيعًا وَمُهَذَّبًا. فِي النِّهَايَةِ، أُؤَكِّدُ الْخُطْوَةَ التَّالِيَةَ. -> Aku lebih memilih solusi cepat dan sopan. Di akhir, aku memastikan langkah berikutnya.
+- **Ahmad:** هَلْ كُلُّ شَيْءٍ جَاهِزٌ لِلرِّحْلَةِ؟ -> Semua sudah siap buat perjalanannya?
+- **Karim:** حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ. السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً. -> Ada masalah kecil di reservasi. Sebabnya, namanya salah tulis.
+- **Ahmad:** فَمَاذَا نَفْعَلُ؟ -> Jadi kita harus gimana?
+- **Karim:** أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ، وَإِذَا لَمْ يَرُدُّوا، نَذْهَبُ مُبَكِّرًا. -> Aku usul kita telepon hotel sekarang, dan kalau tidak diangkat, kita datang lebih awal.
+- **Ahmad:** فِكْرَةٌ جَيِّدَةٌ. -> Ide bagus.
+- **Karim:** سَأُخْبِرُكَ إِذَا تَغَيَّرَ شَيْءٌ. -> Aku kabari kamu kalau ada yang berubah.

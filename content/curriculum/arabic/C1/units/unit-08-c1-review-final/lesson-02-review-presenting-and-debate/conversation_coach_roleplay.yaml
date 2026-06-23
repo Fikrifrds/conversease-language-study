@@ -1,69 +1,70 @@
 scenario_key: arabic_c1_review_presenting_and_debate
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ؟
-learner_goal: Latih percakapan Arab C1 untuk peninjauan presentasi dan debat dengan nuansa, struktur, presisi, dan respons profesional.
+opening_line: 'لِنَتَنَاظَرْ: السُّرْعَةُ أَمِ الْجَوْدَةُ؟'
+learner_goal: 'Latih percakapan Arab C1 untuk berdebat: menyatakan klaim, mengantisipasi sanggahan, lalu
+  menutup ringkas.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ؟
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.'
-  sample_answer: عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.
-  focus: Membuka presentasi atau debat dengan klaim yang jelas.
+- coach: 'لِنَتَنَاظَرْ: السُّرْعَةُ أَمِ الْجَوْدَةُ؟'
+  hint: 'Jawab dengan struktur B2 memakai: ادِّعَائِي هُوَ أَنَّ الْجَوْدَةَ تَسْبِقُ السُّرْعَةَ هُنَا.'
+  sample_answer: ادِّعَائِي هُوَ أَنَّ الْجَوْدَةَ تَسْبِقُ السُّرْعَةَ هُنَا.
+  focus: Menyatakan klaim.
   expected_keywords:
-  - عِنْدَ
-  - مُرَاجَعَةِ
-  - الْعَرْضِ
-  - وَالنِّقَاشِ
-  - أُحَدِّدُ
-  indonesian_explanation: Saat meninjau presentasi dan debat, saya menetapkan klaim lalu mendukungnya dengan bukti.
-- coach: 'استخدم الفكرة: أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.'
-  hint: 'Jawab dengan struktur C1 memakai: أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.'
-  sample_answer: أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.
-  focus: Menjaga struktur presentasi tetap rapi.
+  - ادِّعَائِي
+  - هُوَ
+  - أَنَّ
+  - الْجَوْدَةَ
+  - تَسْبِقُ
+  indonesian_explanation: Klaimku, kualitas mendahului kecepatan di sini.
+- coach: 'استخدم الفكرة: وَدَلِيلِي تَجْرِبَةٌ خَسِرْنَا فِيهَا عَمِيلًا.'
+  hint: 'Jawab dengan struktur B2 memakai: وَدَلِيلِي تَجْرِبَةٌ خَسِرْنَا فِيهَا عَمِيلًا.'
+  sample_answer: وَدَلِيلِي تَجْرِبَةٌ خَسِرْنَا فِيهَا عَمِيلًا.
+  focus: Menopang klaim.
   expected_keywords:
-  - أَفْصِلُ
-  - بَيْنَ
-  - النُّقْطَةِ
-  - الرَّئِيسِيَّةِ
-  - وَالتَّفَاصِيلِ
-  indonesian_explanation: Saya memisahkan poin utama dan detail agar presentasi tetap fokus.
-- coach: 'استخدم الفكرة: أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.'
-  sample_answer: أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.
-  focus: Menangani counterpoint tanpa kehilangan arah.
+  - وَدَلِيلِي
+  - تَجْرِبَةٌ
+  - خَسِرْنَا
+  - فِيهَا
+  - عَمِيلًا
+  indonesian_explanation: Buktiku, pengalaman kita kehilangan klien.
+- coach: 'استخدم الفكرة: أَتَوَقَّعُ أَنْ تَقُولِي إِنَّ السُّوقَ لَا يَنْتَظِرُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَتَوَقَّعُ أَنْ تَقُولِي إِنَّ السُّوقَ لَا يَنْتَظِرُ.'
+  sample_answer: أَتَوَقَّعُ أَنْ تَقُولِي إِنَّ السُّوقَ لَا يَنْتَظِرُ.
+  focus: Mengantisipasi sanggahan.
   expected_keywords:
-  - أَتَوَقَّعُ
-  - الِاعْتِرَاضَ
-  - وَأُجِيبُ
-  - عَنْهُ
-  - بِهُدُوءٍ
-  indonesian_explanation: Saya mengantisipasi sanggahan dan menjawabnya dengan tenang.
-- coach: 'استخدم الفكرة: إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.'
-  sample_answer: إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.
-  focus: Mengambil kembali alur diskusi secara profesional.
+  - أَتَوَقَّعُ
+  - أَنْ
+  - تَقُولِي
+  - إِنَّ
+  - السُّوقَ
+  indonesian_explanation: Aku menduga kamu bilang pasar tidak menunggu.
+- coach: 'استخدم الفكرة: وَهَذَا صَحِيحٌ، لَكِنَّ الثِّقَةَ أَغْلَى عَلَى الْمَدَى الطَّوِيلِ.'
+  hint: 'Jawab dengan struktur B2 memakai: وَهَذَا صَحِيحٌ، لَكِنَّ الثِّقَةَ أَغْلَى عَلَى الْمَدَى الطَّوِيلِ.'
+  sample_answer: وَهَذَا صَحِيحٌ، لَكِنَّ الثِّقَةَ أَغْلَى عَلَى الْمَدَى الطَّوِيلِ.
+  focus: Menjawab sanggahan.
   expected_keywords:
-  - إِذَا
-  - قَاطَعَنِي
-  - أَحَدٌ
-  - أَعُودُ
-  - إِلَى
-  indonesian_explanation: Jika seseorang memotong saya, saya kembali ke poin utama dengan kalimat singkat.
+  - وَهَذَا
+  - صَحِيحٌ
+  - لَكِنَّ
+  - الثِّقَةَ
+  - أَغْلَى
+  indonesian_explanation: Itu benar, tapi kepercayaan lebih mahal jangka panjang.
 target_phrases:
-- عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.
-- أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.
-- أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.
-- إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.
-- أَخْتِمُ الْمُنَاقَشَةَ بِتَلْخِيصٍ يُظْهِرُ الْمَوْقِفَ وَالسَّبَبَ.
+- ادِّعَائِي هُوَ أَنَّ الْجَوْدَةَ تَسْبِقُ السُّرْعَةَ هُنَا.
+- وَدَلِيلِي تَجْرِبَةٌ خَسِرْنَا فِيهَا عَمِيلًا.
+- أَتَوَقَّعُ أَنْ تَقُولِي إِنَّ السُّوقَ لَا يَنْتَظِرُ.
+- وَهَذَا صَحِيحٌ، لَكِنَّ الثِّقَةَ أَغْلَى عَلَى الْمَدَى الطَّوِيلِ.
+- 'خُلَاصَةً: جَوْدَةٌ أَوَّلًا، ثُمَّ سُرْعَةٌ مُنَظَّمَةٌ.'
 rubric:
   speaking:
-    minimum_score: 76
+    minimum_score: 72
   relevance:
-    minimum_score: 76
-  nuance:
-    minimum_score: 74
+    minimum_score: 72
+  argument_structure:
+    minimum_score: 70
   grammar:
-    minimum_score: 74
+    minimum_score: 70

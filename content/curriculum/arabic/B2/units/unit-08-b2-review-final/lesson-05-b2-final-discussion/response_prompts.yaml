@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali diskusi akhir karena itu menggabungkan keterampilan level ini.'
-  target_response: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
+- prompt: 'Ucapkan dalam bahasa Arab: Menurutku kerja fleksibel cocok untuk tim kita.'
+  target_response: أَرَى أَنَّ الْعَمَلَ الْمَرِنَ يُنَاسِبُ فَرِيقَنَا.
   acceptable_responses:
-  - أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.'
-  target_response: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
+  - أَرَى أَنَّ الْعَمَلَ الْمَرِنَ يُنَاسِبُ فَرِيقَنَا.
+- prompt: 'Ucapkan dalam bahasa Arab: Buktinya, produksi naik bulan lalu.'
+  target_response: الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya juga bisa mengelola percakapan profesional dengan jelas.'
-  target_response: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
+  - الدَّلِيلُ هُوَ أَنَّ الْإِنْتَاجَ ارْتَفَعَ الشَّهْرَ الْمَاضِيَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham yang khawatir soal disiplin.'
+  target_response: أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.
   acceptable_responses:
-  - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul keberatan, saya akan menanggapinya dengan tenang.'
-  target_response: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - أَفْهَمُ مَنْ يَخْشَى عَلَى الِانْضِبَاطِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tapi standar kehadiran menyelesaikannya.'
+  target_response: لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.
   acceptable_responses:
-  - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
+  - لَكِنَّ مِعْيَارَ الْحُضُورِ يَحُلُّ ذَلِكَ.

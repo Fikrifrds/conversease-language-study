@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_explaining_benefits_and_risks
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menjelaskan manfaat dan risiko dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: اعْرِضِي فِكْرَةَ الْأَتْمَتَةِ بِتَوَازُنٍ بَيْنَ الْفَائِدَةِ وَالْخَطَرِ.
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan manfaat dan risiko sebuah ide secara seimbang.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka presentasi.
+- coach: اعْرِضِي فِكْرَةَ الْأَتْمَتَةِ بِتَوَازُنٍ بَيْنَ الْفَائِدَةِ وَالْخَطَرِ.
+  hint: 'Jawab dengan struktur B2 memakai: الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ.'
+  sample_answer: الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ.
+  focus: Menyebut manfaat utama.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - شَرْحِ
-  - فَوَائِدِ
-  - الْأَتْمَتَةِ
-  indonesian_explanation: Posisi saya adalah bahwa penjelasan manfaat dan risiko otomatisasi membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.'
-  sample_answer: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-  focus: Memberi signposting.
+  - الْفَائِدَةُ
+  - الْأَكْبَرُ
+  - هِيَ
+  - تَقْلِيلُ
+  - الْعَمَلِ
+  indonesian_explanation: Manfaat terbesarnya, mengurangi pekerjaan berulang.
+- coach: 'استخدم الفكرة: وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.'
+  sample_answer: وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.
+  focus: Menyebut risiko.
   expected_keywords:
-  - بَعْدَ
-  - ذَلِكَ،
-  - سَأَشْرَحُ
-  - الْفَائِدَةَ
-  - الْأَسَاسِيَّةَ
-  indonesian_explanation: Setelah itu, saya akan menjelaskan manfaat utamanya.
-- coach: 'استخدم الفكرة: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  hint: 'Jawab dengan struktur B2 memakai: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.'
-  sample_answer: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-  focus: Menjelaskan risk secara seimbang.
-  expected_keywords:
-  - مِنَ
-  - الْمُهِمِّ
-  - أَنْ
-  - نَذْكُرَ
-  - الْمَخَاطِرَ
-  indonesian_explanation: Penting juga untuk menyebutkan risikonya.
-- coach: 'استخدم الفكرة: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.'
-  sample_answer: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-  focus: Menyiapkan Q&A.
-  expected_keywords:
-  - إِذَا
-  - كَانَتْ
+  - وَفِي
+  - الْمُقَابِلِ
   - هُنَاكَ
-  - أَسْئِلَةٌ،
-  - فَسَأُجِيبُ
-  indonesian_explanation: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
+  - خَطَرٌ
+  - إِنْ
+  indonesian_explanation: Di sisi lain ada risiko kalau kita abai memantau.
+- coach: 'استخدم الفكرة: أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.'
+  sample_answer: أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.
+  focus: Mengakui kekhawatiran.
+  expected_keywords:
+  - أَتَفَهَّمُ
+  - خَوْفَ
+  - مَنْ
+  - يَخْشَى
+  - الْأَتْمَتَةَ
+  indonesian_explanation: Aku paham yang takut otomatisasi.
+- coach: 'استخدم الفكرة: لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.'
+  sample_answer: لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.
+  focus: Memitigasi risiko.
+  expected_keywords:
+  - لِتَقْلِيلِهِ
+  - نُرَاقِبُ
+  - النَّتَائِجَ
+  - كُلَّ
+  - أُسْبُوعٍ
+  indonesian_explanation: Untuk menguranginya, kita pantau hasil tiap minggu.
 target_phrases:
-- مَوْقِفِي فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
-- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً.
+- الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ.
+- وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ.
+- أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ.
+- لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ.
+- فَالْبِدَايَةُ الصَّغِيرَةُ تَكْشِفُ أَيَّ مُشْكِلَةٍ مُبَكِّرًا.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,16 +1,16 @@
 phrases:
-- phrase: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
-  meaning_id: Saya akan menjawab dengan kalimat yang terhubung.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
-  meaning_id: Saya menyebut konteks, alasan, dan hasil.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
-  meaning_id: Jika saya tidak paham, saya meminta klarifikasi.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: أُحَافِظُ عَلَى الْهُدُوءِ وَالسُّرْعَةِ الْمُنَاسِبَةِ.
-  meaning_id: Saya menjaga ketenangan dan kecepatan yang sesuai.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
-- phrase: هَذَا يُسَاعِدُنِي فِي الِاخْتِبَارِ.
-  meaning_id: Ini membantu saya dalam tes.
-  usage_note: Gunakan untuk percakapan B1 yang lebih terhubung.
+- phrase: فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
+  meaning_id: Menurutku, latihan harian itu bermanfaat.
+  usage_note: Memberi jawaban.
+- phrase: لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
+  meaning_id: Karena itu membantu mengingat kata.
+  usage_note: Memberi alasan.
+- phrase: مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
+  meaning_id: Misalnya, aku tinjau lima kalimat tiap malam.
+  usage_note: Memberi contoh.
+- phrase: إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.
+  meaning_id: Kalau tidak paham pertanyaannya, aku minta diulang.
+  usage_note: Mengatasi kebingungan.
+- phrase: وَأُجِيبُ بِهُدُوءٍ دُونَ عَجَلَةٍ.
+  meaning_id: Dan aku jawab dengan tenang tanpa terburu.
+  usage_note: Menutup.

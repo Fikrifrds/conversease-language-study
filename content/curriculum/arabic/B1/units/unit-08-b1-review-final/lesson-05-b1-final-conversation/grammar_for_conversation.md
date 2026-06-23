@@ -1,12 +1,12 @@
 # Pola Percakapan
 
-Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+Gunakan مَرَّةً، فِي رَأْيِي، dan لِذَلِكَ untuk obrolan utuh.
 
 ```txt
-سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا.
+مَرَّةً ضِعْتُ فِي مَدِينَةٍ ...
+سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي ...
+فِي رَأْيِي السُّؤَالُ أَفْضَلُ ...
+وَأَنْتَ هَلْ مَرَّ بِكَ ...
 ```
 
-Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.
+Pakai pola ini untuk menjaga jawaban tetap koheren. Jika respons terasa panjang, pisahkan menjadi dua kalimat tetapi tetap jaga hubungan logisnya.

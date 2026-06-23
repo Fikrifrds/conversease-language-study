@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan mulai dengan pembuka singkat tentang mempresentasikan
-    dan mempertahankan ide.'
-  target_response: سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَقْدِيمُ فِكْرَةٍ وَالدِّفَاعُ عَنْهَا.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku punya ide yang menghemat waktu tim.'
+  target_response: لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ.
   acceptable_responses:
-  - سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَقْدِيمُ فِكْرَةٍ وَالدِّفَاعُ عَنْهَا.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya akan menjelaskan manfaat utamanya.'
-  target_response: بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
+  - لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Buktinya, uji coba yang berhasil di tim lain.'
+  target_response: الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.
   acceptable_responses:
-  - بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penting juga untuk menyebutkan risikonya.'
-  target_response: مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
+  - الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Risikonya terbatas karena kita mulai kecil.'
+  target_response: الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.
   acceptable_responses:
-  - مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika ada pertanyaan, saya akan menjawabnya dengan jelas.'
-  target_response: إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini tidak makan waktu lebih dari sepekan untuk diuji.'
+  target_response: لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.
   acceptable_responses:
-  - إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ.
+  - لَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ.

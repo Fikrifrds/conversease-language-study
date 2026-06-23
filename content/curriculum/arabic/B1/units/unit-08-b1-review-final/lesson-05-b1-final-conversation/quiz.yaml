@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya akan berbicara tentang pengalaman pribadi."?
+  prompt: Frasa mana yang berarti "Suatu kali aku tersesat di kota baru."?
   options:
-  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-  correct_answer: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+  - مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+  - سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+  - فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+  correct_answer: مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Lalu saya menjelaskan masalah dan solusi."?
+  prompt: Frasa mana yang berarti "Aku bertanya ke seseorang dengan sopan dan dia membantu."?
   options:
-  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-  correct_answer: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  - سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+  - مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+  - فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+  correct_answer: سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.

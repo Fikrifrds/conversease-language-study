@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya akan menjelaskan masalah lalu menyarankan solusi."?
+  prompt: Frasa mana yang berarti "Ada masalah kecil di reservasi."?
   options:
-  - سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-  - فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-  - إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-  correct_answer: سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
+  - حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+  - السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+  - أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+  correct_answer: حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Dalam perjalanan, saya butuh detail jelas."?
+  prompt: Frasa mana yang berarti "Sebabnya, namanya salah tulis."?
   options:
-  - فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
-  - سَأَشْرَحُ مُشْكِلَةً ثُمَّ أَقْتَرِحُ حَلًّا.
-  - إِذَا حَدَثَ تَأْخِيرٌ، سَأُخْبِرُ الطَّرَفَ الْآخَرَ.
-  correct_answer: فِي السَّفَرِ، أَحْتَاجُ إِلَى تَفَاصِيلَ وَاضِحَةٍ.
+  - السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.
+  - حَدَثَتْ مُشْكِلَةٌ صَغِيرَةٌ فِي الْحَجْزِ.
+  - أَقْتَرِحُ أَنْ نَتَّصِلَ بِالْفُنْدُقِ الْآنَ.
+  correct_answer: السَّبَبُ أَنَّ الِاسْمَ كُتِبَ خَطَأً.

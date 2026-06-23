@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam percakapan akhir yang utuh, saya mengelola diskusi dengan jelas dan fleksibel.'
-  target_response: فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mari mulai dengan menentukan apa yang ingin kita putuskan hari ini.'
+  target_response: لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ.
   acceptable_responses:
-  - فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mulai dengan menentukan topik, lalu mengundang pihak lain untuk merespons.'
-  target_response: أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
+  - لِنَبْدَأْ بِتَحْدِيدِ مَا نُرِيدُ حَسْمَهُ الْيَوْمَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Bagaimana pendapatmu sebelum aku lanjut?'
+  target_response: مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟
   acceptable_responses:
-  - أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya menghubungkan pendapat, bukti, dan pertanyaan agar percakapan tetap tersambung.'
-  target_response: أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
+  - مَا رَأْيُكِ أَنْتِ قَبْلَ أَنْ أُكْمِلَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Aku kaitkan pendapatmu dengan bukti agar tetap di jalur.'
+  target_response: أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.
   acceptable_responses:
-  - أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika nada percakapan berubah, saya melunakkan bahasa dan mengarahkan ulang diskusi.'
-  target_response: إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.
+  - أَرْبِطُ رَأْيَكِ بِالدَّلِيلِ حَتَّى نَبْقَى عَلَى الْمَسَارِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau nadanya memanas, aku lembutkan dan arahkan ulang.'
+  target_response: إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.
   acceptable_responses:
-  - إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.
+  - إِنِ احْتَدَّتِ النَّبْرَةُ، أُخَفِّفُهَا وَأُعِيدُ التَّوْجِيهَ.

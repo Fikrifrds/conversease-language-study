@@ -1,12 +1,12 @@
 # Pola Percakapan
 
-Gunakan kalimat terhubung dengan konteks, alasan, hasil, dan langkah berikutnya.
+Gunakan أَمْسِ حَدَثَ، وَبَعْدَ ذَلِكَ، dan الْآنَ أَعْمَلُ عَلَى untuk menghubungkan cerita dan kerja.
 
 ```txt
-سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ.
-أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.
+أَمْسِ تَأَخَّرْتُ عَنِ الِاجْتِمَاعِ ...
+وَبَعْدَ ذَلِكَ اعْتَذَرْتُ وَأَكْمَلْتُ ...
+الْآنَ أَعْمَلُ عَلَى تَقْرِيرٍ ...
+عِنْدِي سُؤَالٌ وَاحِدٌ عَنِ ...
 ```
 
-Gunakan pola ini untuk membuat jawaban yang tetap pendek tetapi terhubung. Jika kalimat terasa panjang, pecah menjadi dua kalimat sederhana.
+Pakai pola ini untuk menjaga jawaban tetap koheren. Jika respons terasa panjang, pisahkan menjadi dua kalimat tetapi tetap jaga hubungan logisnya.

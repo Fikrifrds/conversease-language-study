@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** الْجُمْهُورُ تَاهَ فِي عَرْضِكِ السَّابِقِ. مَا الْخُطَّةُ هَذِهِ الْمَرَّةَ؟ -> Audiens tersesat di presentasimu yang lalu. Apa rencananya kali ini?
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ مَا الَّذِي تَحُلُّهُ الْخِدْمَةُ. -> Aku akan mulai dengan pembuka singkat soal masalah apa yang diselesaikan layanan ini.
-- **Salma:** كَيْفَ يَعْرِفُ النَّاسُ أَيْنَ نَحْنُ فِي الْعَرْضِ؟ -> Gimana orang tahu kita ada di bagian mana?
-- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ، وَأَقُولُ بِوُضُوحٍ: "نَنْتَقِلُ الْآنَ إِلَى الْفَائِدَةِ". -> Setelah itu, aku akan menjelaskan manfaat utamanya, dan bilang jelas: "Sekarang kita pindah ke manfaat".
-- **Salma:** وَالْأَرْقَامُ؟ -> Kalau angkanya?
-- **Lina:** مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا قَبْلَ الْأَرْقَامِ حَتَّى لَا يَتُوهَ أَحَدٌ. -> Penting juga menyebutkan risikonya sebelum angka, supaya tidak ada yang tersesat.
-- **Salma:** خِتَامٌ وَاضِحٌ إِذَنْ. -> Penutup yang jelas dong.
-- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً وَاحِدَةً فَقَطْ. -> Sebagai penutup, aku akan mengusulkan satu langkah praktis saja.
+- **Salma:** اعْرِضِي فِكْرَةَ الْخِدْمَةِ، وَاجْعَلِينِي أُتَابِعُ بِسُهُولَةٍ. -> Presentasikan ide layanannya, dan buat aku mudah mengikuti.
+- **Lina:** أَوَّلًا، دَعِينِي أَشْرَحُ الْمُشْكِلَةَ بِإِيجَازٍ. -> Pertama, izinkan aku jelaskan masalahnya singkat.
+- **Salma:** حَسَنًا، وَبَعْدَهَا؟ -> Oke, lalu setelahnya?
+- **Lina:** ثُمَّ نَنْتَقِلُ إِلَى الْفَائِدَةِ الْأَسَاسِيَّةِ، وَبَعْدَ ذَلِكَ نَنْظُرُ إِلَى الْأَرْقَامِ بِسُرْعَةٍ. -> Lalu kita beralih ke manfaat utamanya, setelah itu kita lihat angkanya sekilas.
+- **Salma:** وَأَيْنَ أُرَكِّزُ انْتِبَاهِي؟ -> Di mana aku harus fokus?
+- **Lina:** هُنَا نُقْطَةٌ مُهِمَّةٌ يَجِبُ أَنْ تَنْتَبِهِي لَهَا: التَّكْلِفَةُ تَنْخَفِضُ بَعْدَ شَهْرٍ. -> Di sini ada poin penting yang perlu kamu cermati: biayanya turun setelah sebulan.
+- **Salma:** وَكَيْفَ تُنْهِينَ؟ -> Gimana kamu menutupnya?
+- **Lina:** وَأَخِيرًا، أَصِلُ إِلَى الْخُطْوَةِ الْمُقْتَرَحَةِ. -> Dan terakhir, aku sampai ke langkah yang diusulkan.

@@ -1,54 +1,69 @@
 scenario_key: arabic_b1_b1_final_conversation
 mode: lesson_practice_coach
 level_code: B1
-opening_line: لِنَتَدَرَّبْ عَلَى مُسْتَوَى بِي وَاحِدٍ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final conversation, dengan jawaban yang
-  lebih terhubung dan alasan yang jelas.'
-max_turns: 6
+opening_line: احْكِ لِي تَجْرِبَةً مَرَّتْ بِكَ.
+learner_goal: Latih percakapan Arab B1 untuk bercerita lalu memberi pendapat dengan alasan dalam satu
+  obrolan.
+max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لِنَتَدَرَّبْ عَلَى مُسْتَوَى بِي وَاحِدٍ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-  hint: 'Jawab dengan kalimat terhubung memakai: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.'
-  sample_answer: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+- coach: احْكِ لِي تَجْرِبَةً مَرَّتْ بِكَ.
+  hint: 'Jawab dengan struktur B2 memakai: مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.'
+  sample_answer: مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+  focus: Membuka cerita pribadi.
   expected_keywords:
-  - سَأَتَحَدَّثُ
-  - عَنْ
-  - تَجْرِبَةٍ
-  - شَخْصِيَّةٍ
-  indonesian_explanation: Saya akan berbicara tentang pengalaman pribadi.
-- coach: 'استخدم الفكرة: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.'
-  hint: 'Jawab dengan kalimat terhubung memakai: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.'
-  sample_answer: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - مَرَّةً
+  - ضِعْتُ
+  - فِي
+  - مَدِينَةٍ
+  - جَدِيدَةٍ
+  indonesian_explanation: Suatu kali aku tersesat di kota baru.
+- coach: 'استخدم الفكرة: سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.'
+  sample_answer: سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+  focus: Menyebut solusi.
   expected_keywords:
-  - ثُمَّ
-  - أَشْرَحُ
-  - مُشْكِلَةً
-  - وَحَلًّا
-  indonesian_explanation: Lalu saya menjelaskan masalah dan solusi.
-- coach: 'استخدم الفكرة: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.'
-  sample_answer: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - سَأَلْتُ
+  - شَخْصًا
+  - بِأَدَبٍ
+  - فَسَاعَدَنِي
+  indonesian_explanation: Aku bertanya ke seseorang dengan sopan dan dia membantu.
+- coach: 'استخدم الفكرة: فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.'
+  hint: 'Jawab dengan struktur B2 memakai: فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.'
+  sample_answer: فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+  focus: Memberi pendapat.
   expected_keywords:
-  - بَعْدَ
-  - ذَلِكَ،
-  - أُبَيِّنُ
+  - فِي
   - رَأْيِي
-  indonesian_explanation: Setelah itu, saya menjelaskan pendapat saya dengan alasan.
+  - السُّؤَالُ
+  - أَفْضَلُ
+  - مِنَ
+  indonesian_explanation: Menurutku, bertanya lebih baik daripada cemas.
+- coach: 'استخدم الفكرة: وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟'
+  hint: 'Jawab dengan struktur B2 memakai: وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟'
+  sample_answer: وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟
+  focus: Menjaga obrolan hidup.
+  expected_keywords:
+  - وَأَنْتَ
+  - هَلْ
+  - مَرَّ
+  - بِكَ
+  - مَوْقِفٌ
+  indonesian_explanation: Dan kamu, pernah mengalami yang seperti itu?
 target_phrases:
-- سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-- ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-- بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
-- أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا.
-- فِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ.
+- مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+- سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+- فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+- وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟
+- لِذَلِكَ تَعَلَّمْتُ أَنْ أَسْأَلَ مُبَكِّرًا.
 rubric:
   speaking:
-    minimum_score: 70
+    minimum_score: 72
   relevance:
+    minimum_score: 72
+  argument_structure:
     minimum_score: 70
   grammar:
-    minimum_score: 68
+    minimum_score: 70

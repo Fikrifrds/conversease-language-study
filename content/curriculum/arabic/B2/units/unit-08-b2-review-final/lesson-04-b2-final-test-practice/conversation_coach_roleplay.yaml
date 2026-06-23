@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_b2_final_test_practice
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mempersiapkan tes akhir dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: 'لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ: لِمَاذَا تُؤَيِّدِينَ الْعَمَلَ الْمَرِنَ؟'
+learner_goal: 'Latih percakapan Arab B2 untuk menjawab pertanyaan ujian: posisi, dua alasan, contoh, lalu
+  kesimpulan.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka sesi peninjauan ulang.
+- coach: 'لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ: لِمَاذَا تُؤَيِّدِينَ الْعَمَلَ الْمَرِنَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي وَاضِحٌ، وَسَأَشْرَحُهُ بِنُقْطَتَيْنِ.'
+  sample_answer: مَوْقِفِي وَاضِحٌ، وَسَأَشْرَحُهُ بِنُقْطَتَيْنِ.
+  focus: Membuka jawaban.
   expected_keywords:
   - مَوْقِفِي
-  - أَنَّ
-  - تَدْرِيبِ
-  - الِاخْتِبَارِ
-  - النِّهَائِيِّ
-  indonesian_explanation: Posisi saya adalah bahwa latihan ujian akhir membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  focus: Mereview kemampuan menyusun argumen.
+  - وَاضِحٌ
+  - وَسَأَشْرَحُهُ
+  - بِنُقْطَتَيْنِ
+  indonesian_explanation: Posisiku jelas, akan kujelaskan dengan dua poin.
+- coach: 'استخدم الفكرة: السَّبَبُ الْأَوَّلُ هُوَ كَذَا، وَالثَّانِي هُوَ كَذَا.'
+  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَوَّلُ هُوَ كَذَا، وَالثَّانِي هُوَ كَذَا.'
+  sample_answer: السَّبَبُ الْأَوَّلُ هُوَ كَذَا، وَالثَّانِي هُوَ كَذَا.
+  focus: Memberi dua alasan.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَنْ
-  - أُقَدِّمَ
-  - رَأْيًا
-  - وَأَدْعَمَهُ
-  indonesian_explanation: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  focus: Mereview kemampuan percakapan profesional.
+  - السَّبَبُ
+  - الْأَوَّلُ
+  - هُوَ
+  - كَذَا
+  - وَالثَّانِي
+  indonesian_explanation: Alasan pertama begini, kedua begitu.
+- coach: 'استخدم الفكرة: مِثَالٌ بَسِيطٌ عَلَى ذَلِكَ مِنْ عَمَلِنَا.'
+  hint: 'Jawab dengan struktur B2 memakai: مِثَالٌ بَسِيطٌ عَلَى ذَلِكَ مِنْ عَمَلِنَا.'
+  sample_answer: مِثَالٌ بَسِيطٌ عَلَى ذَلِكَ مِنْ عَمَلِنَا.
+  focus: Memberi contoh.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَيْضًا
-  - أَنْ
-  - أُدِيرَ
-  - حِوَارًا
-  indonesian_explanation: Saya juga bisa mengelola percakapan profesional dengan jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  focus: Mereview respons terhadap keberatan.
+  - مِثَالٌ
+  - بَسِيطٌ
+  - عَلَى
+  - ذَلِكَ
+  - مِنْ
+  indonesian_explanation: Contoh sederhananya dari pekerjaan kita.
+- coach: 'استخدم الفكرة: أَفْهَمُ السُّؤَالَ، وَلَوْ نَسِيتُ كَلِمَةً قُلْتُهَا بِطَرِيقَةٍ أُخْرَى.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ السُّؤَالَ، وَلَوْ نَسِيتُ كَلِمَةً قُلْتُهَا بِطَرِيقَةٍ
+    أُخْرَى.'
+  sample_answer: أَفْهَمُ السُّؤَالَ، وَلَوْ نَسِيتُ كَلِمَةً قُلْتُهَا بِطَرِيقَةٍ أُخْرَى.
+  focus: Mengatasi lupa kata.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - اِعْتِرَاضٌ،
-  - فَسَأَرُدُّ
-  - عَلَيْهِ
-  indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+  - أَفْهَمُ
+  - السُّؤَالَ
+  - وَلَوْ
+  - نَسِيتُ
+  - كَلِمَةً
+  indonesian_explanation: Aku paham pertanyaannya, kalau lupa kata kuungkap cara lain.
 target_phrases:
-- مَوْقِفِي فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
+- مَوْقِفِي وَاضِحٌ، وَسَأَشْرَحُهُ بِنُقْطَتَيْنِ.
+- السَّبَبُ الْأَوَّلُ هُوَ كَذَا، وَالثَّانِي هُوَ كَذَا.
+- مِثَالٌ بَسِيطٌ عَلَى ذَلِكَ مِنْ عَمَلِنَا.
+- أَفْهَمُ السُّؤَالَ، وَلَوْ نَسِيتُ كَلِمَةً قُلْتُهَا بِطَرِيقَةٍ أُخْرَى.
+- بِاخْتِصَارٍ، خُلَاصَتِي هِيَ ...
 rubric:
   speaking:
     minimum_score: 72

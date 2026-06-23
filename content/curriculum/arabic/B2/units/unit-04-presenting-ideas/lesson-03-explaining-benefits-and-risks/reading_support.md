@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ. -> Saya akan mulai dengan pembuka singkat tentang menjelaskan manfaat dan risiko.
-- بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. -> Setelah itu, saya akan menjelaskan manfaat utamanya.
-- مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Penting juga untuk menyebutkan risikonya.
-- إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Jika ada pertanyaan, saya akan menjawabnya dengan jelas.
-- فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً. -> Sebagai penutup, saya akan mengusulkan langkah praktis.
+- الْفَائِدَةُ الْأَكْبَرُ هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> Manfaat terbesarnya, mengurangi pekerjaan berulang.
+- وَفِي الْمُقَابِلِ هُنَاكَ خَطَرٌ إِنْ أَهْمَلْنَا الْمُرَاقَبَةَ. -> Di sisi lain ada risiko kalau kita abai memantau.
+- أَتَفَهَّمُ خَوْفَ مَنْ يَخْشَى الْأَتْمَتَةَ. -> Aku paham yang takut otomatisasi.
+- لِتَقْلِيلِهِ، نُرَاقِبُ النَّتَائِجَ كُلَّ أُسْبُوعٍ. -> Untuk menguranginya, kita pantau hasil tiap minggu.
+- فَالْبِدَايَةُ الصَّغِيرَةُ تَكْشِفُ أَيَّ مُشْكِلَةٍ مُبَكِّرًا. -> Mulai kecil membuat masalah ketahuan lebih awal.

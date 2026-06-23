@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** عِنْدَكِ خَمْسُ دَقَائِقَ فَقَطْ أَمَامَ الْمُدِيرِ. كَيْفَ سَتَعْرِضِينَ فِكْرَتَكِ؟ -> Kamu cuma punya lima menit di depan manajer. Gimana kamu mempresentasikan idemu?
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنِ الْمُشْكِلَةِ، ثُمَّ الْحَلِّ، ثُمَّ الطَّلَبِ. -> Aku akan mulai dengan pembuka singkat soal masalah, lalu solusi, lalu permintaan.
-- **Salma:** وَالدَّلِيلُ؟ -> Buktinya?
-- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ بِدَلِيلٍ وَاحِدٍ قَوِيٍّ. -> Setelah itu, aku akan menjelaskan manfaat utamanya dengan satu bukti yang kuat.
-- **Salma:** وَلَوِ اعْتَرَضَ؟ -> Kalau dia keberatan?
-- **Lina:** مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، وَإِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Penting juga menyebut risikonya, dan kalau ada pertanyaan aku akan menjawabnya dengan jelas.
-- **Salma:** وَكَيْفَ تَطْلُبِينَ الْقَرَارَ؟ -> Gimana kamu meminta keputusannya?
-- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً وَاحِدَةً وَأَطْلُبُ الْمُوَافَقَةَ عَلَيْهَا. -> Sebagai penutup, aku akan mengusulkan satu langkah praktis dan meminta persetujuannya.
+- **Salma:** عِنْدَكِ خَمْسُ دَقَائِقَ فَقَطْ. اعْرِضِي فِكْرَتَكِ. -> Kamu cuma punya lima menit. Presentasikan idemu.
+- **Lina:** لَدَيَّ فِكْرَةٌ تُوَفِّرُ وَقْتَ الْفَرِيقِ. -> Aku punya ide yang menghemat waktu tim.
+- **Salma:** أَقْنِعِينِي بِسُرْعَةٍ. -> Yakinkan aku cepat.
+- **Lina:** الدَّلِيلُ هُوَ تَجْرِبَةٌ نَجَحَتْ مَعَ فَرِيقٍ آخَرَ. -> Buktinya, uji coba yang berhasil di tim lain.
+- **Salma:** وَمَا الْخَطَرُ؟ -> Apa risikonya?
+- **Lina:** الْخَطَرُ مَحْدُودٌ لِأَنَّنَا نَبْدَأُ صَغِيرًا، وَلَنْ يَأْخُذَ هَذَا أَكْثَرَ مِنْ أُسْبُوعٍ لِلتَّجْرِبَةِ. -> Risikonya terbatas karena kita mulai kecil, dan ini tidak makan waktu lebih dari sepekan untuk diuji.
+- **Salma:** حَسَنًا، مَا الَّذِي تَطْلُبِينَهُ؟ -> Oke, apa yang kamu minta?
+- **Lina:** أَطْلُبُ مُوَافَقَتَكِ عَلَى تَجْرِبَةٍ وَاحِدَةٍ. -> Aku minta persetujuanmu untuk satu uji coba.

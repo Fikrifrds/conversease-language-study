@@ -1,66 +1,65 @@
 scenario_key: arabic_b2_review_arguments_and_meetings
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk meninjau argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: مَا زِلْنَا بِلَا مَوْعِدٍ نِهَائِيٍّ. مَا رَأْيُكِ؟
+learner_goal: Latih percakapan Arab B2 untuk menutup poin rapat dengan argumen ringkas dan keputusan yang
+  jelas.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-    وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Membuka sesi peninjauan ulang.
+- coach: مَا زِلْنَا بِلَا مَوْعِدٍ نِهَائِيٍّ. مَا رَأْيُكِ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.'
+  sample_answer: أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.
+  focus: Membuka usulan rapat.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - مُرَاجَعَةِ
-  - الْحُجَّةِ
-  - وَمُلَخَّصِ
-  indonesian_explanation: Posisi saya adalah bahwa review argumen dan ringkasan rapat membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
-  sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  focus: Mereview kemampuan menyusun argumen.
-  expected_keywords:
-  - أَسْتَطِيعُ
+  - أَقْتَرِحُ
   - أَنْ
-  - أُقَدِّمَ
-  - رَأْيًا
-  - وَأَدْعَمَهُ
-  indonesian_explanation: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-- coach: 'استخدم الفكرة: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.'
-  sample_answer: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  focus: Mereview kemampuan percakapan profesional.
+  - نُثَبِّتَ
+  - الْمَوْعِدَ
+  - الْيَوْمَ
+  indonesian_explanation: Aku usul kita kunci tenggatnya hari ini.
+- coach: 'استخدم الفكرة: السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.'
+  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.'
+  sample_answer: السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.
+  focus: Memberi alasan.
   expected_keywords:
-  - أَسْتَطِيعُ
-  - أَيْضًا
-  - أَنْ
-  - أُدِيرَ
-  - حِوَارًا
-  indonesian_explanation: Saya juga bisa mengelola percakapan profesional dengan jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.'
-  sample_answer: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  focus: Mereview respons terhadap keberatan.
+  - السَّبَبُ
+  - هُوَ
+  - أَنَّ
+  - التَّأْخِيرَ
+  - يُكَلِّفُنَا
+  indonesian_explanation: Alasannya, penundaan justru lebih memakan biaya.
+- coach: 'استخدم الفكرة: أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ
+    صَغِيرٍ.'
+  sample_answer: أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.
+  focus: Menanggapi keberatan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - اِعْتِرَاضٌ،
-  - فَسَأَرُدُّ
-  - عَلَيْهِ
-  indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
+  - أَفْهَمُ
+  - تَحَفُّظَكِ
+  - لَكِنْ
+  - يُمْكِنُنَا
+  - الْبَدْءُ
+  indonesian_explanation: Aku paham keberatanmu, tapi kita bisa mulai dari bagian kecil.
+- coach: 'استخدم الفكرة: إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.'
+  sample_answer: إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.
+  focus: Menyimpulkan keputusan.
+  expected_keywords:
+  - إِذَنِ
+  - الْقَرَارُ
+  - هُوَ
+  - تَسْلِيمٌ
+  - مَبْدَئِيٌّ
+  indonesian_explanation: 'Jadi keputusannya: penyerahan awal hari Kamis.'
 target_phrases:
-- مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-- أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-- إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-- فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
+- أَقْتَرِحُ أَنْ نُثَبِّتَ الْمَوْعِدَ الْيَوْمَ.
+- السَّبَبُ هُوَ أَنَّ التَّأْخِيرَ يُكَلِّفُنَا أَكْثَرَ.
+- أَفْهَمُ تَحَفُّظَكِ، لَكِنْ يُمْكِنُنَا الْبَدْءُ بِجُزْءٍ صَغِيرٍ.
+- إِذَنِ الْقَرَارُ هُوَ تَسْلِيمٌ مَبْدَئِيٌّ يَوْمَ الْخَمِيسِ.
+- سَأُرْسِلُ الْمُلَخَّصَ وَالْمَسْؤُولِيَّاتِ بَعْدَ الِاجْتِمَاعِ.
 rubric:
   speaking:
     minimum_score: 72

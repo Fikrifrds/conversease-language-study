@@ -1,13 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan berbicara tentang pengalaman pribadi.'
-  target_response: سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Suatu kali aku tersesat di kota baru.'
+  target_response: مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
   acceptable_responses:
-  - سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Lalu saya menjelaskan masalah dan solusi.'
-  target_response: ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
+  - مَرَّةً ضِعْتُ فِي مَدِينَةٍ جَدِيدَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku bertanya ke seseorang dengan sopan dan dia membantu.'
+  target_response: سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
   acceptable_responses:
-  - ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah itu, saya menjelaskan pendapat saya dengan alasan.'
-  target_response: بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  - سَأَلْتُ شَخْصًا بِأَدَبٍ فَسَاعَدَنِي.
+- prompt: 'Ucapkan dalam bahasa Arab: Menurutku, bertanya lebih baik daripada cemas.'
+  target_response: فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
   acceptable_responses:
-  - بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ.
+  - فِي رَأْيِي، السُّؤَالُ أَفْضَلُ مِنَ الْقَلَقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dan kamu, pernah mengalami yang seperti itu?'
+  target_response: وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟
+  acceptable_responses:
+  - وَأَنْتَ، هَلْ مَرَّ بِكَ مَوْقِفٌ مِثْلُهُ؟

@@ -1,13 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Tujuan saya jelas tetapi tantangannya ada.'
-  target_response: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tujuanku berbicara dengan lebih percaya diri.'
+  target_response: هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
   acceptable_responses:
-  - هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya lebih memilih rencana sederhana dan berkelanjutan.'
-  target_response: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
+  - هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku lebih pilih rencana sederhana karena lebih mudah.'
+  target_response: أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
   acceptable_responses:
-  - أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan membandingkan dua pilihan.'
-  target_response: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  - أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Pilihan lain lebih kuat tapi makan waktu.'
+  target_response: الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
   acceptable_responses:
-  - سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
+  - الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Yang terpenting bagiku adalah konsistensi.'
+  target_response: الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+  acceptable_responses:
+  - الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.

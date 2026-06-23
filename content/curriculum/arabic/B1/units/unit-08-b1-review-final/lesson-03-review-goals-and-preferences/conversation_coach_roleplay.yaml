@@ -1,53 +1,68 @@
 scenario_key: arabic_b1_review_goals_and_preferences
 mode: lesson_practice_coach
 level_code: B1
-opening_line: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ الأَهْدَافِ وَالتَّفْضِيلَاتِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: review goals and preferences, dengan jawaban
-  yang lebih terhubung dan alasan yang jelas.'
-max_turns: 6
+opening_line: مَا هَدَفُكَ هَذَا الشَّهْرَ؟
+learner_goal: Latih percakapan Arab B1 untuk membicarakan tujuan dan menjelaskan pilihan dengan alasan.
+max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: لِنَتَدَرَّبْ عَلَى مُرَاجَعَةِ الأَهْدَافِ وَالتَّفْضِيلَاتِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
-  hint: 'Jawab dengan kalimat terhubung memakai: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.'
-  sample_answer: هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+- coach: مَا هَدَفُكَ هَذَا الشَّهْرَ؟
+  hint: 'Jawab dengan struktur B2 memakai: هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.'
+  sample_answer: هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+  focus: Menyatakan tujuan.
   expected_keywords:
   - هَدَفِي
-  - وَاضِحٌ
-  - وَلَكِنَّ
-  - التَّحَدِّي
-  indonesian_explanation: Tujuan saya jelas tetapi tantangannya ada.
-- coach: 'استخدم الفكرة: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.'
-  hint: 'Jawab dengan kalimat terhubung memakai: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.'
-  sample_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - أَنْ
+  - أَتَكَلَّمَ
+  - بِثِقَةٍ
+  - أَكْبَرَ
+  indonesian_explanation: Tujuanku berbicara dengan lebih percaya diri.
+- coach: 'استخدم الفكرة: أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.'
+  sample_answer: أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+  focus: Menjelaskan pilihan.
   expected_keywords:
-  - أُفَضِّلُ
-  - خُطَّةً
+  - أُفَضِّلُ
+  - خُطَّةً
   - بَسِيطَةً
-  - وَمُسْتَمِرَّةً
-  indonesian_explanation: Saya lebih memilih rencana sederhana dan berkelanjutan.
-- coach: 'استخدم الفكرة: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.'
-  hint: 'Jawab dengan kalimat terhubung memakai: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.'
-  sample_answer: سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-  focus: Gunakan untuk percakapan B1 yang lebih terhubung.
+  - لِأَنَّهَا
+  - أَسْهَلُ
+  indonesian_explanation: Aku lebih pilih rencana sederhana karena lebih mudah.
+- coach: 'استخدم الفكرة: الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.'
+  hint: 'Jawab dengan struktur B2 memakai: الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.'
+  sample_answer: الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+  focus: Membandingkan.
   expected_keywords:
-  - سَأُقَارِنُ
-  - بَيْنَ
-  - خِيَارَيْنِ
-  indonesian_explanation: Saya akan membandingkan dua pilihan.
+  - الْخِيَارُ
+  - الْآخَرُ
+  - أَقْوَى
+  - لَكِنَّهُ
+  - يَأْخُذُ
+  indonesian_explanation: Pilihan lain lebih kuat tapi makan waktu.
+- coach: 'استخدم الفكرة: الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.'
+  sample_answer: الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+  focus: Menyebut prioritas.
+  expected_keywords:
+  - الْأَهَمُّ
+  - عِنْدِي
+  - هُوَ
+  - الِاسْتِمْرَارُ
+  indonesian_explanation: Yang terpenting bagiku adalah konsistensi.
 target_phrases:
-- هَدَفِي وَاضِحٌ وَلَكِنَّ التَّحَدِّي مَوْجُودٌ.
-- أُفَضِّلُ خُطَّةً بَسِيطَةً وَمُسْتَمِرَّةً.
-- سَأُقَارِنُ بَيْنَ خِيَارَيْنِ.
-- السَّبَبُ الرَّئِيسِيُّ هُوَ الْجَوْدَةُ.
-- بَعْدَ ذَلِكَ، أَتَّخِذُ قَرَارًا.
+- هَدَفِي أَنْ أَتَكَلَّمَ بِثِقَةٍ أَكْبَرَ.
+- أُفَضِّلُ خُطَّةً بَسِيطَةً لِأَنَّهَا أَسْهَلُ.
+- الْخِيَارُ الْآخَرُ أَقْوَى لَكِنَّهُ يَأْخُذُ وَقْتًا.
+- الْأَهَمُّ عِنْدِي هُوَ الِاسْتِمْرَارُ.
+- إِذَنْ سَأَبْدَأُ بِالْخُطَّةِ الْبَسِيطَةِ غَدًا.
 rubric:
   speaking:
-    minimum_score: 70
+    minimum_score: 72
   relevance:
+    minimum_score: 72
+  argument_structure:
     minimum_score: 70
   grammar:
-    minimum_score: 68
+    minimum_score: 70

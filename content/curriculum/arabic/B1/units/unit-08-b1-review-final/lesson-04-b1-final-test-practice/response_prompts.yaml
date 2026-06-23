@@ -1,13 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya akan menjawab dengan kalimat yang terhubung.'
-  target_response: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Menurutku, latihan harian itu bermanfaat.'
+  target_response: فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
   acceptable_responses:
-  - سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya menyebut konteks, alasan, dan hasil.'
-  target_response: أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
+  - فِي رَأْيِي، التَّدْرِيبُ الْيَوْمِيُّ مُفِيدٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Karena itu membantu mengingat kata.'
+  target_response: لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
   acceptable_responses:
-  - أَذْكُرُ السِّبَاقَ وَالسَّبَبَ وَالنَّتِيجَةَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika saya tidak paham, saya meminta klarifikasi.'
-  target_response: إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  - لِأَنَّهُ يُسَاعِدُ عَلَى تَذَكُّرِ الْكَلِمَاتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Misalnya, aku tinjau lima kalimat tiap malam.'
+  target_response: مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
   acceptable_responses:
-  - إِذَا لَمْ أَفْهَمْ، أَطْلُبُ تَوْضِيحًا.
+  - مَثَلًا، أُرَاجِعُ خَمْسَ جُمَلٍ كُلَّ مَسَاءٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau tidak paham pertanyaannya, aku minta diulang.'
+  target_response: إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.
+  acceptable_responses:
+  - إِذَا لَمْ أَفْهَمِ السُّؤَالَ، أَطْلُبُ إِعَادَتَهُ.

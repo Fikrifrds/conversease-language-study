@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
-  meaning_id: Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.
-  usage_note: Membuka sesi peninjauan ulang.
-- phrase: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
-  meaning_id: Saya bisa menyampaikan pendapat dan mendukungnya dengan bukti.
-  usage_note: Mereview kemampuan menyusun argumen.
-- phrase: أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
-  meaning_id: Saya juga bisa mengelola percakapan profesional dengan jelas.
-  usage_note: Mereview kemampuan percakapan profesional.
-- phrase: إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.
-  meaning_id: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
-  usage_note: Mereview respons terhadap keberatan.
-- phrase: فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ.
-  meaning_id: Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
-  usage_note: Menutup dengan strategi.
+- phrase: قَبْلَ أَنْ نَعْتَمِدَ الرَّقْمَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
+  meaning_id: Sebelum mengandalkan angkanya, kita pastikan sumbernya.
+  usage_note: Menilai informasi.
+- phrase: الْعَيِّنَةُ صَغِيرَةٌ، فَلَا نُعَمِّمُ بَعْدُ.
+  meaning_id: Sampelnya kecil, jadi belum bisa menggeneralisasi.
+  usage_note: Menahan kesimpulan.
+- phrase: أَفْهَمُ قَلَقَ الْعَمِيلِ مِنَ التَّأْخِيرِ.
+  meaning_id: Aku paham kekhawatiran klien soal keterlambatan.
+  usage_note: Mengakui kekhawatiran klien.
+- phrase: 'إِلَيْكَ الْخُطَّةُ: تَحْدِيثٌ يَوْمِيٌّ حَتَّى التَّسْلِيمِ.'
+  meaning_id: 'Ini rencananya: update harian sampai penyerahan.'
+  usage_note: Menawarkan solusi.
+- phrase: سَأُؤَكِّدُ كُلَّ ذَلِكَ كِتَابَةً.
+  meaning_id: Aku konfirmasi semua itu secara tertulis.
+  usage_note: Menutup dengan tindak lanjut.
