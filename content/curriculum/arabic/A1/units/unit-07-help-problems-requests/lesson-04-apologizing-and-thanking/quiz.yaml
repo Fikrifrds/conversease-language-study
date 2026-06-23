@@ -1,13 +1,13 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Maaf."?
+  prompt: Frasa mana yang berarti "Maaf" untuk pembicara laki-laki?
   options:
   - آسِفٌ
   - آسِفَةٌ
   - عُذْرًا
   correct_answer: آسِفٌ
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Maaf."?
+  prompt: Frasa mana yang berarti "Maaf" untuk pembicara perempuan?
   options:
   - آسِفَةٌ
   - آسِفٌ

@@ -1,9 +1,9 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Maaf.'
+- prompt: 'Ucapkan dalam bahasa Arab: Maaf, untuk pembicara laki-laki.'
   target_response: آسِفٌ
   acceptable_responses:
   - آسِفٌ
-- prompt: 'Ucapkan dalam bahasa Arab: Maaf.'
+- prompt: 'Ucapkan dalam bahasa Arab: Maaf, untuk pembicara perempuan.'
   target_response: آسِفَةٌ
   acceptable_responses:
   - آسِفَةٌ

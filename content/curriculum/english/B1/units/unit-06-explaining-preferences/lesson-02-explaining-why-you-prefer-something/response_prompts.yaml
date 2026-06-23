@@ -7,6 +7,7 @@ prompts:
 - prompt: Give a reason with because.
   target_response: Because it gives us more time in the afternoon.
   acceptable_variations:
+  - Because it gives us more time in the afternoon.
   - Because it gives us more time.
   - Because it's more convenient.
 - prompt: Say the main reason.

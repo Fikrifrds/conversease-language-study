@@ -5,3 +5,6 @@ vocabulary:
 - word: speaking
   meaning_id: 'bagian dari frasa: Speaking adalah favorit saya.'
   usage_note: 'Muncul dalam frasa lesson: "Speaking is my favorite."'
+- word: favorite
+  meaning_id: favorit/paling disukai
+  usage_note: 'Dipakai untuk menyebut pilihan yang paling disukai. Contoh: "Speaking is my favorite."'

@@ -5,3 +5,6 @@ vocabulary:
 - word: student
   meaning_id: 'bagian dari frasa: Saya seorang pelajar.'
   usage_note: 'Muncul dalam frasa lesson: "I''m a student."'
+- word: work
+  meaning_id: bekerja
+  usage_note: 'Dipakai untuk menjelaskan kegiatan kerja. Contoh: "I work in a cafe."'

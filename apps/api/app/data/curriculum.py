@@ -90,6 +90,11 @@ REQUIRED_ROLEPLAY_RUBRIC_KEYS = (
     "grammar",
 )
 
+MIN_VOCABULARY_ITEMS = 3
+MIN_RESPONSE_PROMPTS = 3
+MIN_QUIZ_QUESTIONS = 2
+MIN_QUIZ_OPTIONS = 3
+
 REQUIRED_LEVEL_SPEC_SECTIONS = (
     "## Level Outcome",
     "## Passing Threshold",
@@ -336,6 +341,170 @@ def read_yaml(path: Path) -> dict[str, Any]:
     return data
 
 
+def has_text(value: Any) -> bool:
+    return isinstance(value, str) and bool(value.strip())
+
+
+def normalized_text(value: Any) -> str:
+    return " ".join(str(value or "").split()).casefold()
+
+
+def validate_lesson_practice_files(slug: str, lesson_dir: Path) -> list[str]:
+    issues: list[str] = []
+    issues.extend(validate_vocabulary(slug, lesson_dir / "vocabulary.yaml"))
+    issues.extend(validate_response_prompts(slug, lesson_dir / "response_prompts.yaml"))
+    issues.extend(validate_quiz(slug, lesson_dir / "quiz.yaml"))
+    return issues
+
+
+def validate_vocabulary(slug: str, path: Path) -> list[str]:
+    if not path.exists():
+        return []
+
+    issues: list[str] = []
+    items = read_yaml(path).get("vocabulary")
+    if not isinstance(items, list):
+        return [f"Vocabulary file must contain a vocabulary list: {slug}"]
+    if len(items) < MIN_VOCABULARY_ITEMS:
+        issues.append(
+            f"Lesson vocabulary has fewer than {MIN_VOCABULARY_ITEMS} items: {slug}"
+        )
+
+    seen_words: set[str] = set()
+    for index, item in enumerate(items, start=1):
+        if not isinstance(item, dict):
+            issues.append(f"Vocabulary item {index} must be a mapping: {slug}")
+            continue
+
+        word = item.get("word")
+        if not has_text(word):
+            issues.append(f"Vocabulary item {index} missing word: {slug}")
+        else:
+            normalized_word = normalized_text(word)
+            if normalized_word in seen_words:
+                issues.append(f"Duplicate vocabulary word in lesson: {slug}")
+            seen_words.add(normalized_word)
+
+        for field in ("meaning_id", "usage_note"):
+            if not has_text(item.get(field)):
+                issues.append(f"Vocabulary item {index} missing {field}: {slug}")
+
+    return issues
+
+
+def validate_response_prompts(slug: str, path: Path) -> list[str]:
+    if not path.exists():
+        return []
+
+    issues: list[str] = []
+    prompts = read_yaml(path).get("prompts")
+    if not isinstance(prompts, list):
+        return [f"Response prompts file must contain a prompts list: {slug}"]
+    if len(prompts) < MIN_RESPONSE_PROMPTS:
+        issues.append(
+            f"Lesson response practice has fewer than {MIN_RESPONSE_PROMPTS} prompts: {slug}"
+        )
+
+    seen_prompts: set[str] = set()
+    seen_targets: set[str] = set()
+    for index, item in enumerate(prompts, start=1):
+        if not isinstance(item, dict):
+            issues.append(f"Response prompt {index} must be a mapping: {slug}")
+            continue
+
+        prompt_text = item.get("prompt") or item.get("instruction_id") or item.get("prompt_en")
+        if not has_text(prompt_text):
+            issues.append(f"Response prompt {index} missing prompt text: {slug}")
+        else:
+            normalized_prompt = normalized_text(prompt_text)
+            if normalized_prompt in seen_prompts:
+                issues.append(f"Duplicate response prompt in lesson: {slug}")
+            seen_prompts.add(normalized_prompt)
+
+        target_response = item.get("target_response")
+        if target_response is not None:
+            if not has_text(target_response):
+                issues.append(f"Response prompt {index} missing target response: {slug}")
+                continue
+
+            accepted = item.get("acceptable_responses", item.get("acceptable_variations"))
+            if not isinstance(accepted, list) or not any(has_text(option) for option in accepted):
+                issues.append(f"Response prompt {index} missing acceptable responses: {slug}")
+            elif normalized_text(target_response) not in {
+                normalized_text(option) for option in accepted
+            }:
+                issues.append(
+                    f"Response prompt {index} target response not listed as acceptable: {slug}"
+                )
+
+            normalized_target = normalized_text(target_response)
+            if normalized_target in seen_targets:
+                issues.append(f"Duplicate response target in lesson: {slug}")
+            seen_targets.add(normalized_target)
+            continue
+
+        examples = item.get("expected_response_examples")
+        if not isinstance(examples, list) or not any(has_text(option) for option in examples):
+            issues.append(f"Response prompt {index} missing response examples: {slug}")
+            continue
+
+        normalized_example = normalized_text(next(option for option in examples if has_text(option)))
+        if normalized_example in seen_targets:
+            issues.append(f"Duplicate response target in lesson: {slug}")
+        seen_targets.add(normalized_example)
+
+    return issues
+
+
+def validate_quiz(slug: str, path: Path) -> list[str]:
+    if not path.exists():
+        return []
+
+    issues: list[str] = []
+    questions = read_yaml(path).get("questions")
+    if not isinstance(questions, list):
+        return [f"Quiz file must contain a questions list: {slug}"]
+    if len(questions) < MIN_QUIZ_QUESTIONS:
+        issues.append(f"Lesson quiz has fewer than {MIN_QUIZ_QUESTIONS} questions: {slug}")
+
+    seen_prompts: set[str] = set()
+    for index, item in enumerate(questions, start=1):
+        if not isinstance(item, dict):
+            issues.append(f"Quiz question {index} must be a mapping: {slug}")
+            continue
+
+        prompt = item.get("prompt")
+        if not has_text(prompt):
+            issues.append(f"Quiz question {index} missing prompt: {slug}")
+        else:
+            normalized_prompt = normalized_text(prompt)
+            if normalized_prompt in seen_prompts:
+                issues.append(f"Duplicate quiz question in lesson: {slug}")
+            seen_prompts.add(normalized_prompt)
+
+        options = item.get("options", item.get("choices"))
+        answer = item.get("correct_answer", item.get("answer"))
+        if not isinstance(options, list):
+            issues.append(f"Quiz question {index} missing options: {slug}")
+            continue
+        if len(options) < MIN_QUIZ_OPTIONS:
+            issues.append(
+                f"Quiz question {index} has fewer than {MIN_QUIZ_OPTIONS} options: {slug}"
+            )
+
+        normalized_options = [normalized_text(option) for option in options if has_text(option)]
+        if len(normalized_options) != len(options):
+            issues.append(f"Quiz question {index} has an empty option: {slug}")
+        if len(set(normalized_options)) != len(normalized_options):
+            issues.append(f"Quiz question {index} has duplicate options: {slug}")
+        if not has_text(answer):
+            issues.append(f"Quiz question {index} missing answer: {slug}")
+        elif normalized_text(answer) not in set(normalized_options):
+            issues.append(f"Quiz question {index} answer is not in options: {slug}")
+
+    return issues
+
+
 @lru_cache(maxsize=16)
 def load_final_evaluation(
     level_code: str = LEVEL_CODE, *, language: str = "english"
@@ -507,6 +676,7 @@ def validate_curriculum_content() -> list[str]:
                     file_path = lesson_dir / filename
                     if not file_path.exists():
                         issues.append(f"Missing lesson content file for {slug}: {file_path}")
+                issues.extend(validate_lesson_practice_files(slug, lesson_dir))
 
     issues.extend(validate_production_tracker(load_a1_course()))
     return issues
