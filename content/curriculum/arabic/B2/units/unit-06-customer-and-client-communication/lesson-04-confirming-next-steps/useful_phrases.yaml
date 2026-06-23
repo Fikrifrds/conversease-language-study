@@ -1,16 +1,16 @@
 phrases:
-- phrase: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.
-  meaning_id: Saya ingin memahami kebutuhan klien tentang mengonfirmasi langkah berikutnya.
-  usage_note: Memahami kebutuhan klien.
-- phrase: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  meaning_id: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-  usage_note: Menjelaskan opsi.
-- phrase: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  meaning_id: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-  usage_note: Menangani concern.
-- phrase: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+- phrase: لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.
+  meaning_id: Mari rangkum yang sudah kita sepakati singkat.
+  usage_note: Membuka ringkasan.
+- phrase: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
   meaning_id: Langkah berikutnya adalah meninjau kesepakatan.
-  usage_note: Mengonfirmasi next step.
-- phrase: سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
-  meaning_id: Saya akan mengirim konfirmasi tertulis setelah panggilan ini.
-  usage_note: Menutup dengan profesional.
+  usage_note: Menyebut langkah berikutnya.
+- phrase: أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.
+  meaning_id: Aku sebut dokumen, tenggat, dan pemilik tugas.
+  usage_note: Memperjelas tanggung jawab.
+- phrase: إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.
+  meaning_id: Kalau ada yang belum jelas, kita perjelas sekarang.
+  usage_note: Menutup celah.
+- phrase: سَأُؤَكِّدُ ذَلِكَ كِتَابَةً بَعْدَ خَمْسِ دَقَائِقَ.
+  meaning_id: Aku akan mengonfirmasinya tertulis dalam lima menit.
+  usage_note: Menutup dengan tindak lanjut.

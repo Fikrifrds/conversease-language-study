@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_problem_solving_discussion_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي نِقَاشِ مُشْكِلَةٍ مُعَقَّدَةٍ فِي الْفَرِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: عِنْدَنَا مُشْكِلَةٌ مُعَقَّدَةٌ فِي الْفَرِيقِ. كَيْفَ نَصِلُ إِلَى قَرَارٍ؟
+learner_goal: 'Latih percakapan Arab B2 untuk mengubah masalah kompleks menjadi keputusan: definisi, penyebab,
+  tradeoff, lalu langkah uji.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي نِقَاشِ مُشْكِلَةٍ مُعَقَّدَةٍ فِي الْفَرِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي نِقَاشِ مُشْكِلَةٍ مُعَقَّدَةٍ فِي الْفَرِيقِ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي نِقَاشِ مُشْكِلَةٍ مُعَقَّدَةٍ فِي الْفَرِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Melakukan framing problem.
+- coach: عِنْدَنَا مُشْكِلَةٌ مُعَقَّدَةٌ فِي الْفَرِيقِ. كَيْفَ نَصِلُ إِلَى قَرَارٍ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.'
+  sample_answer: أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
+  focus: Membuka dengan definisi.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - نِقَاشِ
-  - مُشْكِلَةٍ
-  - مُعَقَّدَةٍ
-  indonesian_explanation: Posisi saya adalah bahwa diskusi masalah kompleks dalam tim membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  focus: Menjelaskan cause.
+  - أَبْدَأُ
+  - بِتَعْرِيفِ
+  - الْمُشْكِلَةِ
+  - لَا
+  - بِالْحَلِّ
+  indonesian_explanation: Aku mulai dengan mendefinisikan masalah, bukan solusi.
+- coach: 'استخدم الفكرة: ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.'
+  sample_answer: ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
+  focus: Menggali secara terstruktur.
   expected_keywords:
-  - السَّبَبُ
-  - الْأَسَاسِيُّ
-  - قَدْ
-  - يَكُونُ
-  - ضَعْفَ
-  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
-- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  focus: Membahas tradeoff.
+  - ثُمَّ
+  - أَسْأَلُ
+  - عَنِ
+  - السَّبَبِ
+  - وَالْأَثَرِ
+  indonesian_explanation: Lalu aku tanya penyebab, dampak, dan tradeoff.
+- coach: 'استخدم الفكرة: أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.'
+  sample_answer: أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
+  focus: Menjaga proses.
   expected_keywords:
-  - لِكُلِّ
-  - حَلٍّ
-  - فَائِدَةٌ
-  - وَتَأْثِيرٌ
-  - جَانِبِيٌّ
-  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
-- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-  focus: Memberi rekomendasi.
+  - أُذَكِّرُ
+  - الْفَرِيقَ
+  - أَلَّا
+  - يَقْفِزَ
+  - إِلَى
+  indonesian_explanation: Aku ingatkan tim agar tidak lompat ke rekomendasi cepat.
+- coach: 'استخدم الفكرة: أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.'
+  sample_answer: أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.
+  focus: Memberi fokus keputusan.
   expected_keywords:
-  - أُوصِي
-  - بِحَلٍّ
-  - تَدْرِيجِيٍّ
-  - لِتَقْلِيلِ
-  - الْمَخَاطِرِ
-  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  - أُرَتِّبُ
+  - النِّقَاشَ
+  - حَوْلَ
+  - مِعْيَارٍ
+  - وَاحِدٍ
+  indonesian_explanation: Aku susun diskusi di seputar satu kriteria yang jelas.
 target_phrases:
-- مَوْقِفِي فِي نِقَاشِ مُشْكِلَةٍ مُعَقَّدَةٍ فِي الْفَرِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+- أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
+- ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
+- أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
+- أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.
+- وَنَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ قَابِلَةٍ لِلتَّجْرِبَةِ.
 rubric:
   speaking:
     minimum_score: 72

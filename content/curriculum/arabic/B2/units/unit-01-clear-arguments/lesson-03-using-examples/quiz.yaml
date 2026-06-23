@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Posisi saya adalah bahwa topik menggunakan contoh penting dalam diskusi."?
+  prompt: Frasa mana yang berarti "Untuk memperjelas, aku beri contoh dari pengalaman kita."?
   options:
-  - مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
-  - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  correct_answer: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+  - لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.
+  - مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.
+  - حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.
+  correct_answer: لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saya mendukung pendapat ini dengan dua alasan yang jelas."?
+  prompt: Frasa mana yang berarti "Satu contoh konkret setara penjelasan panjang."?
   options:
-  - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  - مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
-  - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  correct_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+  - مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.
+  - لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.
+  - حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.
+  correct_answer: مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.

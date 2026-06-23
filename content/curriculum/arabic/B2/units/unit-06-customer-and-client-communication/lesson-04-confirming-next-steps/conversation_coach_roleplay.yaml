@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_confirming_next_steps
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: انْتَهَتِ الْمُكَالَمَةُ مَعَ الْعَمِيلِ. مَا الْخُطْوَةُ الْآنَ؟
+learner_goal: Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya di akhir percakapan dengan
+  klien.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Memahami kebutuhan klien.
+- coach: انْتَهَتِ الْمُكَالَمَةُ مَعَ الْعَمِيلِ. مَا الْخُطْوَةُ الْآنَ؟
+  hint: 'Jawab dengan struktur B2 memakai: لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.'
+  sample_answer: لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.
+  focus: Membuka ringkasan.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - تَأْكِيدِ
-  - الْخُطْوَاتِ
-  - بَعْدَ
-  indonesian_explanation: Posisi saya adalah bahwa konfirmasi langkah setelah panggilan membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  focus: Menjelaskan opsi.
-  expected_keywords:
-  - لَدَيْنَا
-  - خِيَارَانِ،
-  - وَكُلُّ
-  - خِيَارٍ
-  - لَهُ
-  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  focus: Menangani concern.
-  expected_keywords:
-  - أَفْهَمُ
-  - هَذَا
-  - الِاهْتِمَامَ،
-  - وَسَأُوَضِّحُ
-  - التَّفَاصِيلَ
-  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-  focus: Mengonfirmasi next step.
+  - لِنُلَخِّصْ
+  - مَا
+  - اتَّفَقْنَا
+  - عَلَيْهِ
+  - بِاخْتِصَارٍ
+  indonesian_explanation: Mari rangkum yang sudah kita sepakati singkat.
+- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
+  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  focus: Menyebut langkah berikutnya.
   expected_keywords:
   - الْخُطْوَةُ
-  - التَّالِيَةُ
+  - التَّالِيَةُ
   - هِيَ
   - مُرَاجَعَةُ
-  - الِاتِّفَاقِ
+  - الِاتِّفَاقِ
   indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+- coach: 'استخدم الفكرة: أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.'
+  sample_answer: أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.
+  focus: Memperjelas tanggung jawab.
+  expected_keywords:
+  - أَذْكُرُ
+  - الْمُسْتَنَدَ
+  - وَالْمَوْعِدَ
+  - وَصَاحِبَ
+  - الْمَهَمَّةِ
+  indonesian_explanation: Aku sebut dokumen, tenggat, dan pemilik tugas.
+- coach: 'استخدم الفكرة: إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.'
+  sample_answer: إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.
+  focus: Menutup celah.
+  expected_keywords:
+  - إِنْ
+  - بَقِيَ
+  - شَيْءٌ
+  - غَيْرُ
+  - وَاضِحٍ
+  indonesian_explanation: Kalau ada yang belum jelas, kita perjelas sekarang.
 target_phrases:
-- مَوْقِفِي فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
+- لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.
+- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+- أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.
+- إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.
+- سَأُؤَكِّدُ ذَلِكَ كِتَابَةً بَعْدَ خَمْسِ دَقَائِقَ.
 rubric:
   speaking:
     minimum_score: 72

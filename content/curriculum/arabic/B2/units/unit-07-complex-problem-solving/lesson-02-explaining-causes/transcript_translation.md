@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** الدَّعْمُ يَتَأَخَّرُ كَثِيرًا هَذَا الشَّهْرَ. لِمَاذَا؟ -> Support sering telat bulan ini. Kenapa?
-- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ: الطَّلَبَاتُ زَادَتْ وَالتَّصْنِيفُ لَمْ يَتَغَيَّرْ. -> Menurutku poin ini bagian dari masalah yang lebih besar: request naik tapi kategorisasinya nggak berubah.
-- **Rami:** فَأَيْنَ يَضِيعُ الْوَقْتُ؟ -> Lalu di mana waktunya terbuang?
-- **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّصْنِيفِ، فَيَضِيعُ الْفَرِيقُ فِي الْفَرْزِ. -> Penyebab utamanya mungkin lemahnya kategorisasi, jadi tim terbuang waktu menyortir.
-- **Rami:** بَعْضُهُمْ يَلُومُ عَدَدَ الْمُوَظَّفِينَ فَقَطْ. -> Sebagian cuma menyalahkan jumlah staf.
-- **Tariq:** لَكِنْ لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ، وَزِيَادَةُ الْفَرِيقِ وَحْدَهَا مُكْلِفَةٌ. -> Tapi tiap solusi punya manfaat dan efek samping, dan menambah tim saja itu mahal.
-- **Rami:** فَمَا الَّذِي تَقْتَرِحُهُ؟ -> Jadi apa usulmu?
-- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: نُجَرِّبُ تَصْنِيفًا أَوْضَحَ قَبْلَ زِيَادَةِ الْفَرِيقِ. -> Aku merekomendasikan solusi bertahap: coba kategorisasi yang lebih jelas sebelum menambah tim.
+- **Rami:** الدَّعْمُ يَتَأَخَّرُ كَثِيرًا. لِمَاذَا؟ -> Support sering telat. Kenapa?
+- **Tariq:** لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ. -> Mari bedakan gejala dan akar penyebab.
+- **Rami:** وَأَيْنَ السَّبَبُ إِذَنْ؟ -> Lalu di mana penyebabnya?
+- **Tariq:** يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ. هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ. -> Keterlambatan itu karena lemahnya kategorisasi. Ini bukan sekadar kurang jumlah.
+- **Rami:** هَلْ عِنْدَكَ دَلِيلٌ؟ -> Ada buktinya?
+- **Tariq:** الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ. -> Buktinya, masalah berulang di langkah yang sama.
+- **Rami:** فَمَا الْحَلُّ؟ -> Jadi solusinya apa?
+- **Tariq:** لِذَلِكَ نُعَالِجُ السَّبَبَ قَبْلَ زِيَادَةِ الْفَرِيقِ. -> Karena itu kita atasi penyebabnya sebelum menambah tim.

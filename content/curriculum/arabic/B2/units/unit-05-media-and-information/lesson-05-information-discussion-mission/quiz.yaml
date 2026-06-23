@@ -1,16 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya memahami dari artikel bahwa topik mengelola diskusi informasi
-    penting."?
+  prompt: Frasa mana yang berarti "Aku mulai dari angka yang paling dekat ke target."?
   options:
-  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
-  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  correct_answer: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+  - أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.
+  - ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.
+  - النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.
+  correct_answer: أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Kita harus memastikan bahwa sumbernya tepercaya."?
+  prompt: Frasa mana yang berarti "Lalu aku sebut apa yang tidak dikatakan data."?
   options:
-  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
-  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  correct_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  - ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.
+  - أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.
+  - النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.
+  correct_answer: ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.

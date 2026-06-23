@@ -4,9 +4,10 @@ title: Confirming Next Steps
 status: published
 estimated_minutes: 16
 conversation_situation: confirming_next_steps
-conversation_goal: Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya dengan alasan, contoh,
-  respons, dan rekomendasi.
-grammar_summary: Gunakan أُرِيدُ أَنْ أَفْهَمَ، لَدَيْنَا، أَفْهَمُ، dan سَأُرْسِلُ untuk komunikasi klien.
+conversation_goal: Latih percakapan Arab B2 untuk mengonfirmasi langkah berikutnya di akhir percakapan
+  dengan klien.
+grammar_summary: Gunakan لِنُلَخِّصْ مَا اتَّفَقْنَا، الْخُطْوَةُ التَّالِيَةُ، dan سَأُؤَكِّدُ كِتَابَةً
+  untuk mengonfirmasi langkah.
 required_sections:
 - conversation_goal
 - situation_setup

@@ -1,66 +1,61 @@
 scenario_key: arabic_b2_explaining_a_viewpoint
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menjelaskan sudut pandang dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: مَا رَأْيُكَ فِي الْإِعْلَانِ الْجَدِيدِ؟
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan sudut pandang dan menopangnya dengan alasan.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Merangkum artikel.
+- coach: مَا رَأْيُكَ فِي الْإِعْلَانِ الْجَدِيدِ؟
+  hint: 'Jawab dengan struktur B2 memakai: فِي رَأْيِي، الْإِعْلَانُ جَذَّابٌ لَكِنَّهُ غَامِضٌ.'
+  sample_answer: فِي رَأْيِي، الْإِعْلَانُ جَذَّابٌ لَكِنَّهُ غَامِضٌ.
+  focus: Menyatakan sudut pandang.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - وِجْهَةِ
-  - نَظَرٍ
-  - حَوْلَ
-  indonesian_explanation: Posisi saya adalah bahwa sudut pandang tentang iklan baru membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  focus: Mengevaluasi sumber.
-  expected_keywords:
-  - يَجِبُ
-  - أَنْ
-  - نَتَأَكَّدَ
-  - مِنْ
-  - أَنَّ
-  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
-- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  focus: Menguji viewpoint.
-  expected_keywords:
-  - وِجْهَةُ
-  - النَّظَرِ
-  - هَذِهِ
-  - تَحْتَاجُ
-  - إِلَى
-  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  focus: Merespons informasi baru.
-  expected_keywords:
-  - بَعْدَ
-  - الْمَعْلُومَاتِ
-  - الْجَدِيدَةِ،
-  - تَغَيَّرَ
+  - فِي
   - رَأْيِي
-  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+  - الْإِعْلَانُ
+  - جَذَّابٌ
+  - لَكِنَّهُ
+  indonesian_explanation: Menurutku, iklannya menarik tapi kabur.
+- coach: 'استخدم الفكرة: أَسْتَنِدُ إِلَى تَجْرِبَةِ الْمُسْتَخْدِمِينَ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَسْتَنِدُ إِلَى تَجْرِبَةِ الْمُسْتَخْدِمِينَ.'
+  sample_answer: أَسْتَنِدُ إِلَى تَجْرِبَةِ الْمُسْتَخْدِمِينَ.
+  focus: Menopang dengan dasar.
+  expected_keywords:
+  - أَسْتَنِدُ
+  - إِلَى
+  - تَجْرِبَةِ
+  - الْمُسْتَخْدِمِينَ
+  indonesian_explanation: Aku bersandar pada pengalaman pengguna.
+- coach: 'استخدم الفكرة: مِنْ زَاوِيَةٍ أُخْرَى، الرِّسَالَةُ تَحْتَاجُ وُضُوحًا.'
+  hint: 'Jawab dengan struktur B2 memakai: مِنْ زَاوِيَةٍ أُخْرَى، الرِّسَالَةُ تَحْتَاجُ وُضُوحًا.'
+  sample_answer: مِنْ زَاوِيَةٍ أُخْرَى، الرِّسَالَةُ تَحْتَاجُ وُضُوحًا.
+  focus: Menambah perspektif.
+  expected_keywords:
+  - مِنْ
+  - زَاوِيَةٍ
+  - أُخْرَى
+  - الرِّسَالَةُ
+  - تَحْتَاجُ
+  indonesian_explanation: Dari sudut lain, pesannya butuh kejelasan.
+- coach: 'استخدم الفكرة: لَا أُعَمِّمُ، فَالذَّوْقُ يَخْتَلِفُ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَا أُعَمِّمُ، فَالذَّوْقُ يَخْتَلِفُ.'
+  sample_answer: لَا أُعَمِّمُ، فَالذَّوْقُ يَخْتَلِفُ.
+  focus: Menahan klaim berlebihan.
+  expected_keywords:
+  - لَا
+  - أُعَمِّمُ
+  - فَالذَّوْقُ
+  - يَخْتَلِفُ
+  indonesian_explanation: Aku tidak menggeneralisasi, selera berbeda-beda.
 target_phrases:
-- مَوْقِفِي فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+- فِي رَأْيِي، الْإِعْلَانُ جَذَّابٌ لَكِنَّهُ غَامِضٌ.
+- أَسْتَنِدُ إِلَى تَجْرِبَةِ الْمُسْتَخْدِمِينَ.
+- مِنْ زَاوِيَةٍ أُخْرَى، الرِّسَالَةُ تَحْتَاجُ وُضُوحًا.
+- لَا أُعَمِّمُ، فَالذَّوْقُ يَخْتَلِفُ.
+- لِذَلِكَ أَقْتَرِحُ أَنْ نَخْتَبِرَ نُسْخَتَيْنِ.
 rubric:
   speaking:
     minimum_score: 72

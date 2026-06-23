@@ -1,65 +1,64 @@
 scenario_key: arabic_b2_stating_your_position
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menentukan posisi dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: سَنُصَوِّتُ عَلَى تَغْيِيرِ الْأَدَاةِ. مَا مَوْقِفُكَ؟
+learner_goal: Latih percakapan Arab B2 untuk menyatakan posisimu dengan jelas, lalu menopangnya dengan
+  sikap yang tegas namun terbuka.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Menyatakan posisi dengan jelas.
+- coach: سَنُصَوِّتُ عَلَى تَغْيِيرِ الْأَدَاةِ. مَا مَوْقِفُكَ؟
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ.'
+  sample_answer: 'مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ.'
+  focus: Menyatakan posisi dengan tegas.
   expected_keywords:
   - مَوْقِفِي
-  - أَنَّ
-  - تَجْرِبَةِ
-  - النِّظَامِ
-  - الْجَدِيدِ
-  indonesian_explanation: Posisi saya adalah bahwa uji coba sistem baru membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  focus: Memberi kerangka argumen.
-  expected_keywords:
-  - أَدْعَمُ
+  - 'وَاضِحٌ:'
+  - أَنَا
+  - مَعَ
   - هَذَا
-  - الرَّأْيَ
-  - بِسَبَبَيْنِ
-  - وَاضِحَيْنِ
-  indonesian_explanation: Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- coach: 'استخدم الفكرة: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  sample_answer: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  focus: Memberi contoh konkret.
+  indonesian_explanation: 'Posisiku jelas: aku mendukung arah ini.'
+- coach: 'استخدم الفكرة: أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.'
+  sample_answer: أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.
+  focus: Mendukung dengan kualifikasi ringan.
   expected_keywords:
-  - مِثَالُ
-  - ذَلِكَ
-  - أَنَّ
-  - الْفَرِيقَ
-  - يَحْتَاجُ
-  indonesian_explanation: Contohnya, tim membutuhkan keputusan yang cepat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-  focus: Merespons counterpoint dengan sopan.
+  - أُؤَيِّدُ
+  - الْفِكْرَةَ
+  - مِنْ
+  - حَيْثُ
+  - الْمَبْدَأُ
+  indonesian_explanation: Aku mendukung idenya secara prinsip.
+- coach: 'استخدم الفكرة: لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.'
+  sample_answer: لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.
+  focus: Menyatakan ketidaksetujuan dengan sopan.
   expected_keywords:
-  - أَفْهَمُ
-  - هَذِهِ
-  - النُّقْطَةَ
-  - الْمُعَارِضَةَ،
-  - وَلَكِنَّ
-  indonesian_explanation: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+  - لَا
+  - أُوَافِقُ
+  - تَمَامًا
+  - وَلِي
+  - رَأْيٌ
+  indonesian_explanation: Aku tidak sepenuhnya setuju, dan punya pandangan berbeda.
+- coach: 'استخدم الفكرة: دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.'
+  sample_answer: دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.
+  focus: Menjembatani ke alasan.
+  expected_keywords:
+  - دَعْنِي
+  - أُوَضِّحُ
+  - سَبَبَ
+  - مَوْقِفِي
+  - بِاخْتِصَارٍ
+  indonesian_explanation: Coba aku jelaskan alasan posisiku singkat.
 target_phrases:
-- مَوْقِفِي فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
+- 'مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ.'
+- أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.
+- لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.
+- دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.
+- بِاخْتِصَارٍ، أَنَا أُفَضِّلُ هَذَا الْخِيَارَ.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,65 +1,61 @@
 scenario_key: arabic_b2_explaining_options
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menjelaskan opsi dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: الْعَمِيلُ يَسْأَلُ عَنْ خِدْمَةِ الدَّعْمِ. مَاذَا نَعْرِضُ؟
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan beberapa opsi ke klien beserta manfaat masing-masing.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Memahami kebutuhan klien.
-  expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - خِيَارَيْنِ
-  - لِخِدْمَةِ
-  - الدَّعْمِ
-  indonesian_explanation: Posisi saya adalah bahwa dua opsi layanan support membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  focus: Menjelaskan opsi.
+- coach: الْعَمِيلُ يَسْأَلُ عَنْ خِدْمَةِ الدَّعْمِ. مَاذَا نَعْرِضُ؟
+  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
+  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  focus: Membuka pilihan.
   expected_keywords:
   - لَدَيْنَا
-  - خِيَارَانِ،
-  - وَكُلُّ
+  - خِيَارَانِ
+  - وَكُلُّ
   - خِيَارٍ
   - لَهُ
-  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  focus: Menangani concern.
+  indonesian_explanation: Kita punya dua opsi, dan tiap opsi punya manfaatnya.
+- coach: 'استخدم الفكرة: الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.'
+  sample_answer: الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.
+  focus: Membandingkan opsi.
   expected_keywords:
-  - أَفْهَمُ
-  - هَذَا
-  - الِاهْتِمَامَ،
-  - وَسَأُوَضِّحُ
-  - التَّفَاصِيلَ
-  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-  focus: Mengonfirmasi next step.
+  - الْأَوَّلُ
+  - أَسْرَعُ
+  - وَالثَّانِي
+  - أَشْمَلُ
+  indonesian_explanation: Yang pertama lebih cepat, yang kedua lebih lengkap.
+- coach: 'استخدم الفكرة: أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.'
+  hint: 'Jawab dengan struktur B2 memakai: أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.'
+  sample_answer: أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.
+  focus: Menjelaskan detail.
   expected_keywords:
-  - الْخُطْوَةُ
-  - التَّالِيَةُ
-  - هِيَ
-  - مُرَاجَعَةُ
-  - الِاتِّفَاقِ
-  indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+  - أُوَضِّحُ
+  - التَّكْلِفَةَ
+  - وَمَا
+  - يَحْصُلُ
+  - عَلَيْهِ
+  indonesian_explanation: Aku jelaskan biaya dan apa yang didapat di tiap opsi.
+- coach: 'استخدم الفكرة: أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟'
+  sample_answer: أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟
+  focus: Mengaitkan ke kebutuhan.
+  expected_keywords:
+  - أَيُّهُمَا
+  - يُنَاسِبُ
+  - حَاجَتَكَ
+  - أَكْثَرَ
+  indonesian_explanation: Mana yang lebih sesuai kebutuhanmu?
 target_phrases:
-- مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
+- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+- الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.
+- أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.
+- أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟
+- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْخِيَارِ الَّذِي تَخْتَارُهُ.
 rubric:
   speaking:
     minimum_score: 72

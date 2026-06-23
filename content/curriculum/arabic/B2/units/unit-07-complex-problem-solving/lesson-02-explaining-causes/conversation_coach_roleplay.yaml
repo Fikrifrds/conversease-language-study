@@ -1,63 +1,63 @@
 scenario_key: arabic_b2_explaining_causes
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menjelaskan penyebab dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: الدَّعْمُ يَتَأَخَّرُ كَثِيرًا. لِمَاذَا؟
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan akar penyebab masalah, bukan gejalanya.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Melakukan framing problem.
+- coach: الدَّعْمُ يَتَأَخَّرُ كَثِيرًا. لِمَاذَا؟
+  hint: 'Jawab dengan struktur B2 memakai: لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.'
+  sample_answer: لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
+  focus: Memisahkan gejala dan sebab.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - أَسْبَابِ
-  - تَأَخُّرِ
-  - الدَّعْمِ
-  indonesian_explanation: Posisi saya adalah bahwa penyebab keterlambatan support membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  focus: Menjelaskan cause.
+  - لِنُفَرِّقْ
+  - بَيْنَ
+  - الْعَرَضِ
+  - وَالسَّبَبِ
+  - الْجَذْرِيِّ
+  indonesian_explanation: Mari bedakan gejala dan akar penyebab.
+- coach: 'استخدم الفكرة: يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.'
+  hint: 'Jawab dengan struktur B2 memakai: يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.'
+  sample_answer: يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
+  focus: Menyebut akar penyebab.
   expected_keywords:
-  - السَّبَبُ
-  - الْأَسَاسِيُّ
-  - قَدْ
-  - يَكُونُ
-  - ضَعْفَ
-  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
-- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  focus: Membahas tradeoff.
+  - يَعُودُ
+  - التَّأَخُّرُ
+  - إِلَى
+  - ضَعْفِ
+  - التَّصْنِيفِ
+  indonesian_explanation: Keterlambatan itu karena lemahnya kategorisasi.
+- coach: 'استخدم الفكرة: هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.'
+  sample_answer: هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
+  focus: Menolak penjelasan dangkal.
   expected_keywords:
-  - لِكُلِّ
-  - حَلٍّ
-  - فَائِدَةٌ
-  - وَتَأْثِيرٌ
-  - جَانِبِيٌّ
-  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
-- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-  focus: Memberi rekomendasi.
+  - هَذَا
+  - لَيْسَ
+  - مُجَرَّدَ
+  - نَقْصٍ
+  - فِي
+  indonesian_explanation: Ini bukan sekadar kurang jumlah.
+- coach: 'استخدم الفكرة: الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.'
+  sample_answer: الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.
+  focus: Menopang dengan pola.
   expected_keywords:
-  - أُوصِي
-  - بِحَلٍّ
-  - تَدْرِيجِيٍّ
-  - لِتَقْلِيلِ
-  - الْمَخَاطِرِ
-  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  - الدَّلِيلُ
+  - أَنَّ
+  - الْمُشْكِلَةَ
+  - تَتَكَرَّرُ
+  - فِي
+  indonesian_explanation: Buktinya, masalah berulang di langkah yang sama.
 target_phrases:
-- مَوْقِفِي فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+- لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
+- يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
+- هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
+- الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.
+- لِذَلِكَ نُعَالِجُ السَّبَبَ قَبْلَ زِيَادَةِ الْفَرِيقِ.
 rubric:
   speaking:
     minimum_score: 72

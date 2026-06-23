@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_recommending_a_solution
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk merekomendasikan solusi dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: تَتَكَرَّرُ الْأَخْطَاءُ قَبْلَ كُلِّ تَسْلِيمٍ. مَا الْحَلُّ؟
+learner_goal: Latih percakapan Arab B2 untuk merekomendasikan solusi yang bisa diuji dan diukur.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Melakukan framing problem.
-  expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - حَلٍّ
-  - لِمُشْكِلَةِ
-  - تَكَرُّرِ
-  indonesian_explanation: Posisi saya adalah bahwa solusi untuk masalah error berulang membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  focus: Menjelaskan cause.
-  expected_keywords:
-  - السَّبَبُ
-  - الْأَسَاسِيُّ
-  - قَدْ
-  - يَكُونُ
-  - ضَعْفَ
-  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
-- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  focus: Membahas tradeoff.
-  expected_keywords:
-  - لِكُلِّ
-  - حَلٍّ
-  - فَائِدَةٌ
-  - وَتَأْثِيرٌ
-  - جَانِبِيٌّ
-  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
-- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-  focus: Memberi rekomendasi.
+- coach: تَتَكَرَّرُ الْأَخْطَاءُ قَبْلَ كُلِّ تَسْلِيمٍ. مَا الْحَلُّ؟
+  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ.'
+  sample_answer: أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ.
+  focus: Memberi rekomendasi konkret.
   expected_keywords:
   - أُوصِي
-  - بِحَلٍّ
-  - تَدْرِيجِيٍّ
-  - لِتَقْلِيلِ
-  - الْمَخَاطِرِ
-  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  - بِقَائِمَةِ
+  - فَحْصٍ
+  - قَصِيرَةٍ
+  - قَبْلَ
+  indonesian_explanation: Aku rekomendasikan checklist singkat sebelum delivery.
+- coach: 'استخدم الفكرة: هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.'
+  sample_answer: هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.
+  focus: Menekankan kelayakan.
+  expected_keywords:
+  - هَذَا
+  - الْحَلُّ
+  - بَسِيطٌ
+  - وَقَابِلٌ
+  - لِلتَّجْرِبَةِ
+  indonesian_explanation: Solusi ini sederhana dan bisa diuji.
+- coach: 'استخدم الفكرة: نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.'
+  hint: 'Jawab dengan struktur B2 memakai: نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.'
+  sample_answer: نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.
+  focus: Menetapkan uji dan ukuran.
+  expected_keywords:
+  - نُجَرِّبُهُ
+  - أُسْبُوعًا
+  - ثُمَّ
+  - نَقِيسُ
+  - عَدَدَ
+  indonesian_explanation: Kita coba sepekan lalu ukur jumlah error.
+- coach: 'استخدم الفكرة: إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.'
+  sample_answer: إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.
+  focus: Menyiapkan rencana cadangan.
+  expected_keywords:
+  - إِنْ
+  - لَمْ
+  - يَنْفَعْ
+  - نُعَدِّلُهُ
+  - بِسُهُولَةٍ
+  indonesian_explanation: Kalau tidak berguna, kita ubah dengan mudah.
 target_phrases:
-- مَوْقِفِي فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+- أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ.
+- هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.
+- نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.
+- إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.
+- لِذَلِكَ أَقْتَرِحُ الْبَدْءَ بِهِ غَدًا.
 rubric:
   speaking:
     minimum_score: 72

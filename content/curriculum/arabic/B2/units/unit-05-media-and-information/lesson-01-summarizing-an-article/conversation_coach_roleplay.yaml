@@ -1,67 +1,64 @@
 scenario_key: arabic_b2_summarizing_an_article
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: قَرَأْتَ الْمَقَالَ عَنْ عَادَاتِ الْمُسْتَخْدِمِينَ. مَا خُلَاصَتُهُ؟
+learner_goal: Latih percakapan Arab B2 untuk merangkum sebuah artikel dan menilai kekuatan kesimpulannya.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-    وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Merangkum artikel.
+- coach: قَرَأْتَ الْمَقَالَ عَنْ عَادَاتِ الْمُسْتَخْدِمِينَ. مَا خُلَاصَتُهُ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ
+    الْأَسْرَعَ.'
+  sample_answer: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ.
+  focus: Merangkum inti artikel.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - مَقَالٍ
-  - عَنْ
-  - تَغَيُّرِ
-  indonesian_explanation: Posisi saya adalah bahwa artikel tentang perubahan kebiasaan pengguna membutuhkan keputusan yang
-    jelas.
-- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  - أَفْهَمُ
+  - مِنَ
+  - الْمَقَالِ
+  - أَنَّ
+  - النَّاسَ
+  indonesian_explanation: Aku paham dari artikel bahwa orang lebih suka layanan yang lebih cepat.
+- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
+  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
+  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
   focus: Mengevaluasi sumber.
   expected_keywords:
   - يَجِبُ
   - أَنْ
-  - نَتَأَكَّدَ
+  - نَتَأَكَّدَ
   - مِنْ
-  - أَنَّ
-  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
-- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  focus: Menguji viewpoint.
+  - أَنَّ
+  indonesian_explanation: Kita harus memastikan sumbernya tepercaya.
+- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
+  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
+  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  focus: Menguji kesimpulan.
   expected_keywords:
   - وِجْهَةُ
-  - النَّظَرِ
+  - النَّظَرِ
   - هَذِهِ
   - تَحْتَاجُ
   - إِلَى
-  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  focus: Merespons informasi baru.
+  indonesian_explanation: Sudut pandang ini butuh bukti yang lebih kuat.
+- coach: 'استخدم الفكرة: حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.'
+  hint: 'Jawab dengan struktur B2 memakai: حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.'
+  sample_answer: حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.
+  focus: Mewaspadai batas data.
   expected_keywords:
-  - بَعْدَ
-  - الْمَعْلُومَاتِ
-  - الْجَدِيدَةِ،
-  - تَغَيَّرَ
-  - رَأْيِي
-  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+  - حَجْمُ
+  - الْعَيِّنَةِ
+  - صَغِيرٌ
+  - فَلَا
+  - نُعَمِّمُ
+  indonesian_explanation: Ukuran sampelnya kecil, jadi belum bisa menggeneralisasi.
 target_phrases:
-- مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ.
+- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+- حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.
+- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,17 +1,18 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami dari artikel bahwa topik merangkum artikel penting.'
-  target_response: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham dari artikel bahwa orang lebih suka layanan yang lebih
+    cepat.'
+  target_response: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ.
   acceptable_responses:
-  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita harus memastikan bahwa sumbernya tepercaya.'
-  target_response: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita harus memastikan sumbernya tepercaya.'
+  target_response: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
   acceptable_responses:
-  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Sudut pandang ini membutuhkan bukti yang lebih kuat.'
-  target_response: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sudut pandang ini butuh bukti yang lebih kuat.'
+  target_response: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
   acceptable_responses:
-  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah informasi baru, pendapat saya sedikit berubah.'
-  target_response: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+- prompt: 'Ucapkan dalam bahasa Arab: Ukuran sampelnya kecil, jadi belum bisa menggeneralisasi.'
+  target_response: حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.
   acceptable_responses:
-  - بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  - حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.

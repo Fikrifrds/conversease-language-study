@@ -1,16 +1,16 @@
 phrases:
-- phrase: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
-  meaning_id: Posisi saya adalah bahwa topik membangun argumen jelas penting dalam diskusi.
-  usage_note: Menyatakan posisi dengan jelas.
-- phrase: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  meaning_id: Saya mendukung pendapat ini dengan dua alasan yang jelas.
-  usage_note: Memberi kerangka argumen.
-- phrase: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  meaning_id: Contohnya, tim membutuhkan keputusan yang cepat.
-  usage_note: Memberi contoh konkret.
-- phrase: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-  meaning_id: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-  usage_note: Merespons counterpoint dengan sopan.
-- phrase: لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
-  meaning_id: Karena itu, saya lebih memilih kita sepakat pada arah ini.
-  usage_note: Menutup argumen dengan rekomendasi.
+- phrase: مَوْقِفِي أَنَّ الْمُورِّدَ الثَّانِيَ أَنْسَبُ.
+  meaning_id: Posisiku, vendor kedua lebih cocok.
+  usage_note: Membuka argumen dengan posisi.
+- phrase: السَّبَبُ الْأَوَّلُ هُوَ سُرْعَةُ الدَّعْمِ.
+  meaning_id: Alasan pertama adalah kecepatan dukungan.
+  usage_note: Memberi alasan utama.
+- phrase: مِثَالُ ذَلِكَ أَنَّهُ رَدَّ عَلَيْنَا فِي سَاعَةٍ.
+  meaning_id: Contohnya, dia menjawab kita dalam sejam.
+  usage_note: Menopang dengan contoh.
+- phrase: أَفْهَمُ أَنَّهُ أَغْلَى، لَكِنَّ الْخِدْمَةَ تُبَرِّرُ ذَلِكَ.
+  meaning_id: Aku paham dia lebih mahal, tapi layanannya sepadan.
+  usage_note: Menanggapi keberatan harga.
+- phrase: لِذَلِكَ أُوصِي بِهِ مَعَ عَقْدٍ تَجْرِيبِيٍّ.
+  meaning_id: Karena itu aku rekomendasikan dia dengan kontrak percobaan.
+  usage_note: Menutup dengan rekomendasi.

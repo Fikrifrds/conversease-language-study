@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_information_discussion_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mengelola diskusi informasi dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: عِنْدَنَا بَيَانَاتُ الْحَمْلَةِ. كَيْفَ نُحَوِّلُهَا إِلَى قَرَارٍ؟
+learner_goal: 'Latih percakapan Arab B2 untuk mengubah data mentah menjadi keputusan: angka kunci, batasnya,
+  lalu langkah.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Merangkum artikel.
+- coach: عِنْدَنَا بَيَانَاتُ الْحَمْلَةِ. كَيْفَ نُحَوِّلُهَا إِلَى قَرَارٍ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.'
+  sample_answer: أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.
+  focus: Memilih angka kunci.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - نِقَاشٍ
-  - عَنْ
-  - بَيَانَاتِ
-  indonesian_explanation: Posisi saya adalah bahwa diskusi tentang data kampanye membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  focus: Mengevaluasi sumber.
-  expected_keywords:
-  - يَجِبُ
-  - أَنْ
-  - نَتَأَكَّدَ
-  - مِنْ
-  - أَنَّ
-  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
-- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  focus: Menguji viewpoint.
-  expected_keywords:
-  - وِجْهَةُ
-  - النَّظَرِ
-  - هَذِهِ
-  - تَحْتَاجُ
+  - أَبْدَأُ
+  - بِالرَّقْمِ
+  - الْأَقْرَبِ
   - إِلَى
-  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  focus: Merespons informasi baru.
+  - هَدَفِنَا
+  indonesian_explanation: Aku mulai dari angka yang paling dekat ke target.
+- coach: 'استخدم الفكرة: ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.'
+  hint: 'Jawab dengan struktur B2 memakai: ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.'
+  sample_answer: ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.
+  focus: Menyebut batas data.
   expected_keywords:
-  - بَعْدَ
-  - الْمَعْلُومَاتِ
-  - الْجَدِيدَةِ،
-  - تَغَيَّرَ
-  - رَأْيِي
-  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+  - ثُمَّ
+  - أَذْكُرُ
+  - مَا
+  - لَا
+  - تَقُولُهُ
+  indonesian_explanation: Lalu aku sebut apa yang tidak dikatakan data.
+- coach: 'استخدم الفكرة: النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.'
+  sample_answer: النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.
+  focus: Mewaspadai salah tafsir.
+  expected_keywords:
+  - النِّسْبَةُ
+  - قَدْ
+  - تُفْهَمُ
+  - خَطَأً
+  - بِدُونِ
+  indonesian_explanation: Persentase bisa salah dipahami tanpa konteks.
+- coach: 'استخدم الفكرة: الرَّقْمُ مُؤَشِّرٌ، لَا دَلِيلٌ نِهَائِيٌّ.'
+  hint: 'Jawab dengan struktur B2 memakai: الرَّقْمُ مُؤَشِّرٌ، لَا دَلِيلٌ نِهَائِيٌّ.'
+  sample_answer: الرَّقْمُ مُؤَشِّرٌ، لَا دَلِيلٌ نِهَائِيٌّ.
+  focus: Menahan klaim berlebihan.
+  expected_keywords:
+  - الرَّقْمُ
+  - مُؤَشِّرٌ
+  - لَا
+  - دَلِيلٌ
+  - نِهَائِيٌّ
+  indonesian_explanation: Angka itu indikasi, bukan bukti final.
 target_phrases:
-- مَوْقِفِي فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+- أَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ إِلَى هَدَفِنَا.
+- ثُمَّ أَذْكُرُ مَا لَا تَقُولُهُ الْبَيَانَاتُ.
+- النِّسْبَةُ قَدْ تُفْهَمُ خَطَأً بِدُونِ سِيَاقٍ.
+- الرَّقْمُ مُؤَشِّرٌ، لَا دَلِيلٌ نِهَائِيٌّ.
+- 'لِذَلِكَ أَخْتِمُ بِسُؤَالٍ: مَا الَّذِي نُغَيِّرُهُ فِعْلًا؟'
 rubric:
   speaking:
     minimum_score: 72

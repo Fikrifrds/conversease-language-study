@@ -4,10 +4,9 @@ title: Summarizing an Article
 status: published
 estimated_minutes: 16
 conversation_situation: summarizing_an_article
-conversation_goal: Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan
-  rekomendasi.
-grammar_summary: Gunakan أَفْهَمُ مِنْ، يَجِبُ أَنْ، تَحْتَاجُ إِلَى، dan بَعْدَ untuk diskusi informasi
-  yang kritis.
+conversation_goal: Latih percakapan Arab B2 untuk merangkum sebuah artikel dan menilai kekuatan kesimpulannya.
+grammar_summary: Gunakan أَفْهَمُ مِنَ الْمَقَالِ، يَجِبُ أَنْ نَتَأَكَّدَ، dan نُوَازِنُ بَيْنَ untuk
+  diskusi informasi.
 required_sections:
 - conversation_goal
 - situation_setup

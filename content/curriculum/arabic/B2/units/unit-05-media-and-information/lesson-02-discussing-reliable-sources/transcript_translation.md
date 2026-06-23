@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** وَجَدْتُ خَبَرًا عَنِ السُّوقِ يَدْعَمُ خُطَّتَنَا. -> Aku nemu berita soal pasar yang mendukung rencana kita.
-- **Hasan:** أَفْهَمُ مِنَ الْخَبَرِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ، لَكِنْ مَنْ كَتَبَهُ؟ -> Aku paham dari beritanya bahwa topik ini penting, tapi siapa yang menulisnya?
-- **Yusuf:** مَوْقِعٌ لَا أَعْرِفُهُ جَيِّدًا. -> Situs yang nggak terlalu aku kenal.
-- **Hasan:** إِذَنْ يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ وَمِنْ تَارِيخِ النَّشْرِ. -> Berarti kita harus memastikan sumbernya tepercaya dan kapan terbitnya.
-- **Yusuf:** الْخَبَرُ قَدِيمٌ قَلِيلًا. -> Beritanya agak lama.
-- **Hasan:** وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى، رُبَّمَا بَيَانَاتٌ لَا مُجَرَّدُ رَأْيٍ. -> Sudut pandang ini butuh bukti yang lebih kuat, mungkin data, bukan sekadar opini.
+- **Yusuf:** وَجَدْتُ خَبَرًا يَدْعَمُ خُطَّتَنَا. -> Aku nemu berita yang mendukung rencana kita.
+- **Hasan:** قَبْلَ أَنْ نَثِقَ، مَنْ كَتَبَ هَذَا الْخَبَرَ؟ -> Sebelum percaya, siapa yang menulis berita ini?
+- **Yusuf:** لَا أَعْرِفُ تَمَامًا. -> Aku nggak tahu persis.
+- **Hasan:** تَارِيخُ النَّشْرِ مُهِمٌّ، فَالْخَبَرُ قَدِيمٌ. وَهَلْ يُوجَدُ دَلِيلٌ أَمْ مُجَرَّدُ رَأْيٍ؟ -> Tanggal terbit penting, beritanya lama. Dan apa ada bukti atau sekadar opini?
+- **Yusuf:** يَبْدُو أَنَّهُ رَأْيٌ. -> Sepertinya opini.
+- **Hasan:** الْمَوْقِعُ غَيْرُ مَعْرُوفٍ، فَلْنَكُنْ حَذِرِينَ. -> Situsnya tidak dikenal, mari hati-hati.
 - **Yusuf:** فَمَاذَا نَفْعَلُ؟ -> Jadi kita harus gimana?
-- **Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ وَنُقَارِنَهُ بِمَصْدَرَيْنِ آخَرَيْنِ. -> Karena itu aku lebih memilih kita menyeimbangkan sumber dan membandingkannya dengan dua sumber lain.
+- **Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُقَارِنَهُ بِمَصْدَرَيْنِ آخَرَيْنِ. -> Karena itu aku lebih memilih membandingkannya dengan dua sumber lain.

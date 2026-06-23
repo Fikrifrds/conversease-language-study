@@ -1,10 +1,10 @@
 # Transcript Translation
 
 - **Rami:** عِنْدَنَا مُشْكِلَةٌ مُعَقَّدَةٌ فِي الْفَرِيقِ. كَيْفَ نَصِلُ إِلَى قَرَارٍ؟ -> Kita punya masalah kompleks di tim. Gimana kita sampai ke keputusan?
-- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ، فَأَبْدَأُ بِتَعْرِيفِهَا لَا بِالْحَلِّ. -> Menurutku ini bagian dari masalah yang lebih besar, jadi aku mulai dengan mendefinisikannya, bukan solusinya.
+- **Tariq:** أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ. -> Aku mulai dengan mendefinisikan masalah, bukan solusi.
 - **Rami:** ثُمَّ؟ -> Lalu?
-- **Tariq:** ثُمَّ أَسْأَلُ: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ كَذَا، وَمَا الْأَثَرُ وَالْمُقَايَضَةُ؟ -> Lalu aku bertanya: penyebab utamanya mungkin ini, dan apa dampak serta tradeoff-nya?
-- **Rami:** بَعْضُهُمْ يَقْفِزُ إِلَى تَوْصِيَةٍ سَرِيعَةٍ. -> Sebagian langsung lompat ke rekomendasi cepat.
-- **Tariq:** لِذَلِكَ أُذَكِّرُهُمْ أَنَّ لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Makanya aku ingatkan mereka bahwa tiap solusi punya manfaat dan efek samping.
-- **Rami:** وَكَيْفَ تَخْتِمُ النِّقَاشَ؟ -> Gimana kamu menutup diskusinya?
-- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ، وَنَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ قَابِلَةٍ لِلتَّجْرِبَةِ. -> Aku merekomendasikan solusi bertahap, dan kita keluar dengan satu langkah yang bisa diuji.
+- **Tariq:** ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ. -> Lalu aku tanya penyebab, dampak, dan tradeoff.
+- **Rami:** بَعْضُهُمْ يَقْفِزُ إِلَى تَوْصِيَةٍ سَرِيعَةٍ. -> Sebagian lompat ke rekomendasi cepat.
+- **Tariq:** لِذَلِكَ أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ، وَأُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ. -> Makanya aku ingatkan tim agar tidak lompat, dan aku susun diskusi di seputar satu kriteria yang jelas.
+- **Rami:** وَكَيْفَ تَخْتِمُ؟ -> Gimana kamu menutupnya?
+- **Tariq:** وَنَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ قَابِلَةٍ لِلتَّجْرِبَةِ. -> Dan kita keluar dengan satu langkah yang bisa diuji.

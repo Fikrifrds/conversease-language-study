@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami kebutuhan klien tentang menjelaskan opsi.'
-  target_response: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua opsi, dan tiap opsi punya manfaatnya.'
+  target_response: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua opsi, dan setiap opsi memiliki manfaat.'
-  target_response: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Yang pertama lebih cepat, yang kedua lebih lengkap.'
+  target_response: الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.
   acceptable_responses:
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.'
-  target_response: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  - الْأَوَّلُ أَسْرَعُ، وَالثَّانِي أَشْمَلُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku jelaskan biaya dan apa yang didapat di tiap opsi.'
+  target_response: أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.
   acceptable_responses:
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Langkah berikutnya adalah meninjau kesepakatan.'
-  target_response: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلٍّ مِنْهُمَا.
+- prompt: 'Ucapkan dalam bahasa Arab: Mana yang lebih sesuai kebutuhanmu?'
+  target_response: أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟
   acceptable_responses:
-  - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - أَيُّهُمَا يُنَاسِبُ حَاجَتَكَ أَكْثَرَ؟

@@ -1,63 +1,63 @@
 scenario_key: arabic_b2_discussing_reliable_sources
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk membahas sumber tepercaya dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: وَجَدْتُ خَبَرًا يَدْعَمُ خُطَّتَنَا.
+learner_goal: Latih percakapan Arab B2 untuk menilai apakah sebuah sumber tepercaya sebelum memakainya.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Merangkum artikel.
+- coach: وَجَدْتُ خَبَرًا يَدْعَمُ خُطَّتَنَا.
+  hint: 'Jawab dengan struktur B2 memakai: قَبْلَ أَنْ نَثِقَ، مَنْ كَتَبَ هَذَا الْخَبَرَ؟'
+  sample_answer: قَبْلَ أَنْ نَثِقَ، مَنْ كَتَبَ هَذَا الْخَبَرَ؟
+  focus: Memeriksa penulis.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - مَصْدَرِ
-  - خَبَرٍ
-  - عَنْ
-  indonesian_explanation: Posisi saya adalah bahwa sumber berita tentang pasar membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  focus: Mengevaluasi sumber.
-  expected_keywords:
-  - يَجِبُ
+  - قَبْلَ
   - أَنْ
-  - نَتَأَكَّدَ
-  - مِنْ
-  - أَنَّ
-  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
-- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  focus: Menguji viewpoint.
+  - نَثِقَ
+  - مَنْ
+  - كَتَبَ
+  indonesian_explanation: Sebelum percaya, siapa yang menulis berita ini?
+- coach: 'استخدم الفكرة: تَارِيخُ النَّشْرِ مُهِمٌّ، فَالْخَبَرُ قَدِيمٌ.'
+  hint: 'Jawab dengan struktur B2 memakai: تَارِيخُ النَّشْرِ مُهِمٌّ، فَالْخَبَرُ قَدِيمٌ.'
+  sample_answer: تَارِيخُ النَّشْرِ مُهِمٌّ، فَالْخَبَرُ قَدِيمٌ.
+  focus: Memeriksa kapan terbit.
   expected_keywords:
-  - وِجْهَةُ
-  - النَّظَرِ
-  - هَذِهِ
-  - تَحْتَاجُ
-  - إِلَى
-  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  focus: Merespons informasi baru.
+  - تَارِيخُ
+  - النَّشْرِ
+  - مُهِمٌّ
+  - فَالْخَبَرُ
+  - قَدِيمٌ
+  indonesian_explanation: Tanggal terbit itu penting, beritanya lama.
+- coach: 'استخدم الفكرة: هَلْ يُوجَدُ دَلِيلٌ أَمْ مُجَرَّدُ رَأْيٍ؟'
+  hint: 'Jawab dengan struktur B2 memakai: هَلْ يُوجَدُ دَلِيلٌ أَمْ مُجَرَّدُ رَأْيٍ؟'
+  sample_answer: هَلْ يُوجَدُ دَلِيلٌ أَمْ مُجَرَّدُ رَأْيٍ؟
+  focus: Membedakan bukti dan opini.
   expected_keywords:
-  - بَعْدَ
-  - الْمَعْلُومَاتِ
-  - الْجَدِيدَةِ،
-  - تَغَيَّرَ
-  - رَأْيِي
-  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+  - هَلْ
+  - يُوجَدُ
+  - دَلِيلٌ
+  - أَمْ
+  - مُجَرَّدُ
+  indonesian_explanation: Apa ada bukti atau sekadar opini?
+- coach: 'استخدم الفكرة: الْمَوْقِعُ غَيْرُ مَعْرُوفٍ، فَلْنَكُنْ حَذِرِينَ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْمَوْقِعُ غَيْرُ مَعْرُوفٍ، فَلْنَكُنْ حَذِرِينَ.'
+  sample_answer: الْمَوْقِعُ غَيْرُ مَعْرُوفٍ، فَلْنَكُنْ حَذِرِينَ.
+  focus: Menilai reputasi sumber.
+  expected_keywords:
+  - الْمَوْقِعُ
+  - غَيْرُ
+  - مَعْرُوفٍ
+  - فَلْنَكُنْ
+  - حَذِرِينَ
+  indonesian_explanation: Situsnya tidak dikenal, mari hati-hati.
 target_phrases:
-- مَوْقِفِي فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+- قَبْلَ أَنْ نَثِقَ، مَنْ كَتَبَ هَذَا الْخَبَرَ؟
+- تَارِيخُ النَّشْرِ مُهِمٌّ، فَالْخَبَرُ قَدِيمٌ.
+- هَلْ يُوجَدُ دَلِيلٌ أَمْ مُجَرَّدُ رَأْيٍ؟
+- الْمَوْقِعُ غَيْرُ مَعْرُوفٍ، فَلْنَكُنْ حَذِرِينَ.
+- لِذَلِكَ أُفَضِّلُ أَنْ نُقَارِنَهُ بِمَصْدَرَيْنِ آخَرَيْنِ.
 rubric:
   speaking:
     minimum_score: 72

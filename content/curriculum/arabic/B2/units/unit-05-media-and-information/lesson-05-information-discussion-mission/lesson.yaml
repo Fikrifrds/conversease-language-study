@@ -4,10 +4,10 @@ title: Information Discussion Mission
 status: published
 estimated_minutes: 16
 conversation_situation: information_discussion_mission
-conversation_goal: Latih percakapan Arab B2 untuk mengelola diskusi informasi dengan alasan, contoh, respons,
-  dan rekomendasi.
-grammar_summary: Gunakan أَفْهَمُ مِنْ، يَجِبُ أَنْ، تَحْتَاجُ إِلَى، dan بَعْدَ untuk diskusi informasi
-  yang kritis.
+conversation_goal: 'Latih percakapan Arab B2 untuk mengubah data mentah menjadi keputusan: angka kunci,
+  batasnya, lalu langkah.'
+grammar_summary: Gabungkan أَبْدَأُ بِالرَّقْمِ، مَا لَا تَقُولُهُ الْبَيَانَاتُ، dan مَا الَّذِي نُغَيِّرُهُ
+  untuk diskusi data.
 required_sections:
 - conversation_goal
 - situation_setup

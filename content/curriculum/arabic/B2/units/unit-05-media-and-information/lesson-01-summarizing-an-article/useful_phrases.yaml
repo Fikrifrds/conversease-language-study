@@ -1,16 +1,16 @@
 phrases:
-- phrase: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
-  meaning_id: Saya memahami dari artikel bahwa topik merangkum artikel penting.
-  usage_note: Merangkum artikel.
-- phrase: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  meaning_id: Kita harus memastikan bahwa sumbernya tepercaya.
+- phrase: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ.
+  meaning_id: Aku paham dari artikel bahwa orang lebih suka layanan yang lebih cepat.
+  usage_note: Merangkum inti artikel.
+- phrase: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  meaning_id: Kita harus memastikan sumbernya tepercaya.
   usage_note: Mengevaluasi sumber.
-- phrase: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  meaning_id: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-  usage_note: Menguji viewpoint.
-- phrase: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  meaning_id: Setelah informasi baru, pendapat saya sedikit berubah.
-  usage_note: Merespons informasi baru.
-- phrase: لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
-  meaning_id: Karena itu, saya lebih memilih kita menyeimbangkan berbagai sumber.
-  usage_note: Menutup diskusi kritis.
+- phrase: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  meaning_id: Sudut pandang ini butuh bukti yang lebih kuat.
+  usage_note: Menguji kesimpulan.
+- phrase: حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ.
+  meaning_id: Ukuran sampelnya kecil, jadi belum bisa menggeneralisasi.
+  usage_note: Mewaspadai batas data.
+- phrase: لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+  meaning_id: Karena itu aku lebih memilih menyeimbangkan berbagai sumber.
+  usage_note: Menutup dengan keseimbangan.

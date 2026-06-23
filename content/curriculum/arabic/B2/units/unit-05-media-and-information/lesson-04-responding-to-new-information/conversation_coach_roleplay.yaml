@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_responding_to_new_information
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menanggapi informasi baru dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: وَصَلَتْنَا مَعْلُومَاتٌ جَدِيدَةٌ عَنِ الْمُنَافِسِ.
+learner_goal: Latih percakapan Arab B2 untuk menyesuaikan pendapat ketika muncul informasi baru, tanpa
+  berlebihan.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Merangkum artikel.
+- coach: وَصَلَتْنَا مَعْلُومَاتٌ جَدِيدَةٌ عَنِ الْمُنَافِسِ.
+  hint: 'Jawab dengan struktur B2 memakai: هَذِهِ الْمَعْلُومَةُ تُغَيِّرُ الصُّورَةَ قَلِيلًا.'
+  sample_answer: هَذِهِ الْمَعْلُومَةُ تُغَيِّرُ الصُّورَةَ قَلِيلًا.
+  focus: Mengakui informasi baru.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - مَعْلُومَاتٍ
-  - جَدِيدَةٍ
-  - عَنْ
-  indonesian_explanation: Posisi saya adalah bahwa informasi baru tentang kompetitor membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
-  sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-  focus: Mengevaluasi sumber.
-  expected_keywords:
-  - يَجِبُ
-  - أَنْ
-  - نَتَأَكَّدَ
-  - مِنْ
-  - أَنَّ
-  indonesian_explanation: Kita harus memastikan bahwa sumbernya tepercaya.
-- coach: 'استخدم الفكرة: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.'
-  sample_answer: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-  focus: Menguji viewpoint.
-  expected_keywords:
-  - وِجْهَةُ
-  - النَّظَرِ
   - هَذِهِ
-  - تَحْتَاجُ
-  - إِلَى
-  indonesian_explanation: Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- coach: 'استخدم الفكرة: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  hint: 'Jawab dengan struktur B2 memakai: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.'
-  sample_answer: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-  focus: Merespons informasi baru.
+  - الْمَعْلُومَةُ
+  - تُغَيِّرُ
+  - الصُّورَةَ
+  - قَلِيلًا
+  indonesian_explanation: Informasi ini sedikit mengubah gambaran.
+- coach: 'استخدم الفكرة: كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.'
+  hint: 'Jawab dengan struktur B2 memakai: كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.'
+  sample_answer: كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.
+  focus: Menyebut asumsi lama.
   expected_keywords:
-  - بَعْدَ
-  - الْمَعْلُومَاتِ
-  - الْجَدِيدَةِ،
-  - تَغَيَّرَ
-  - رَأْيِي
-  indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
+  - كُنَّا
+  - نَظُنُّ
+  - أَنَّ
+  - السِّعْرَ
+  - هُوَ
+  indonesian_explanation: Tadinya kita kira harga penyebabnya.
+- coach: 'استخدم الفكرة: قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.'
+  hint: 'Jawab dengan struktur B2 memakai: قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.'
+  sample_answer: قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
+  focus: Menahan keputusan terburu.
+  expected_keywords:
+  - قَبْلَ
+  - أَنْ
+  - نُقَرِّرَ
+  - نَتَأَكَّدُ
+  - مِنَ
+  indonesian_explanation: Sebelum memutuskan, kita pastikan sumbernya.
+- coach: 'استخدم الفكرة: أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.'
+  sample_answer: أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.
+  focus: Menyesuaikan secukupnya.
+  expected_keywords:
+  - أُعِيدُ
+  - النَّظَرَ
+  - لَكِنْ
+  - لَا
+  - أُغَيِّرُ
+  indonesian_explanation: Aku tinjau ulang, tapi tidak mengubah semuanya.
 target_phrases:
-- مَوْقِفِي فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ.
+- هَذِهِ الْمَعْلُومَةُ تُغَيِّرُ الصُّورَةَ قَلِيلًا.
+- كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.
+- قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
+- أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.
+- لِذَلِكَ أُعِيدُ تَرْتِيبَ التَّوْصِيَةِ بِنَاءً عَلَيْهَا.
 rubric:
   speaking:
     minimum_score: 72

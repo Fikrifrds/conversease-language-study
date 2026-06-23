@@ -1,63 +1,66 @@
 scenario_key: arabic_b2_supporting_with_reasons
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mendukung pendapat dengan alasan dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: سَمِعْتُ أَنَّكَ تُؤَيِّدُ تَغْيِيرَ جَدْوَلِ الْفَرِيقِ. لِمَاذَا؟
+learner_goal: Latih percakapan Arab B2 untuk mendukung pendapat dengan alasan, contoh, respons keberatan,
+  lalu rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
+- coach: سَمِعْتُ أَنَّكَ تُؤَيِّدُ تَغْيِيرَ جَدْوَلِ الْفَرِيقِ. لِمَاذَا؟
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي هُوَ أَنَّ الْجَدْوَلَ الْحَالِيَّ يُرْهِقُ الْفَرِيقَ.'
+  sample_answer: مَوْقِفِي هُوَ أَنَّ الْجَدْوَلَ الْحَالِيَّ يُرْهِقُ الْفَرِيقَ.
   focus: Menyatakan posisi dengan jelas.
   expected_keywords:
   - مَوْقِفِي
-  - أَنَّ
-  - تَغْيِيرِ
-  - جَدْوَلِ
-  - الْفَرِيقِ
-  indonesian_explanation: Posisi saya adalah bahwa perubahan jadwal tim membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+  - هُوَ
+  - أَنَّ
+  - الْجَدْوَلَ
+  - الْحَالِيَّ
+  indonesian_explanation: Posisiku, jadwal sekarang membuat tim kelelahan.
+- coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
+  sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
   focus: Memberi kerangka argumen.
   expected_keywords:
   - أَدْعَمُ
   - هَذَا
-  - الرَّأْيَ
+  - الرَّأْيَ
   - بِسَبَبَيْنِ
   - وَاضِحَيْنِ
-  indonesian_explanation: Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- coach: 'استخدم الفكرة: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  sample_answer: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+  indonesian_explanation: Aku dukung pendapat ini dengan dua alasan jelas.
+- coach: 'استخدم الفكرة: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ كُلَّ يَوْمٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ
+    كُلَّ يَوْمٍ.'
+  sample_answer: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ كُلَّ يَوْمٍ.
   focus: Memberi contoh konkret.
   expected_keywords:
   - مِثَالُ
   - ذَلِكَ
-  - أَنَّ
+  - أَنَّ
   - الْفَرِيقَ
   - يَحْتَاجُ
-  indonesian_explanation: Contohnya, tim membutuhkan keputusan yang cepat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  indonesian_explanation: Contohnya, tim butuh keputusan cepat hampir tiap hari.
+- coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ
+    أَكْبَرُ.'
+  sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
   focus: Merespons counterpoint dengan sopan.
   expected_keywords:
   - أَفْهَمُ
   - هَذِهِ
-  - النُّقْطَةَ
-  - الْمُعَارِضَةَ،
-  - وَلَكِنَّ
-  indonesian_explanation: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+  - النُّقْطَةَ
+  - الْمُعَارِضَةَ
+  - وَلَكِنَّ
+  indonesian_explanation: Aku paham poin lawannya, tapi manfaatnya lebih besar.
 target_phrases:
-- مَوْقِفِي فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
+- مَوْقِفِي هُوَ أَنَّ الْجَدْوَلَ الْحَالِيَّ يُرْهِقُ الْفَرِيقَ.
+- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ كُلَّ يَوْمٍ.
+- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,15 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya ingin memahami kebutuhan klien tentang memahami kebutuhan klien."?
+  prompt: Frasa mana yang berarti "Coba aku pahami dulu apa yang penting bagi klien."?
   options:
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  correct_answer: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.
+  - دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
+  - مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
+  - هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
+  correct_answer: دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Kita punya dua opsi, dan setiap opsi memiliki manfaat."?
+  prompt: Frasa mana yang berarti "Bagian mana yang paling penting untukmu?"?
   options:
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  correct_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  - مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
+  - دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
+  - هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
+  correct_answer: مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟

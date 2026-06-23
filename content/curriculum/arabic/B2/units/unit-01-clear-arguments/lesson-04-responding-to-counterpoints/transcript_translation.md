@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** أَنَا قَلِقٌ مِنْ سِيَاسَةِ الْعَمَلِ عَنْ بُعْدٍ. -> Aku khawatir soal kebijakan kerja remote.
-- **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ، وَأَنَا أُؤَيِّدُهَا. -> Posisi aku, topik ini penting, dan aku mendukungnya.
-- **Ahmad:** لَكِنَّ التَّوَاصُلَ قَدْ يَضْعُفُ. -> Tapi komunikasi bisa melemah.
-- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ مَعَ قَوَاعِدَ وَاضِحَةٍ. -> Aku paham poin lawannya, tapi manfaatnya lebih besar kalau ada aturan yang jelas.
-- **Ahmad:** أَيُّ قَوَاعِدَ؟ -> Aturan kayak apa?
-- **Karim:** أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ: اِجْتِمَاعٌ يَوْمِيٌّ قَصِيرٌ، وَوَقْتُ حُضُورٍ مُشْتَرَكٌ. -> Aku dukung pendapat ini dengan dua alasan jelas: meeting harian singkat, dan jam hadir bersama.
-- **Ahmad:** هَذَا يُطَمْئِنُنِي قَلِيلًا. -> Itu agak menenangkan aku.
-- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ وَنُرَاجِعَهُ بَعْدَ شَهْرٍ. -> Karena itu aku lebih memilih kita sepakat di arah ini dan tinjau lagi setelah sebulan.
+- **Ahmad:** أَخْشَى أَنَّ الْعَمَلَ عَنْ بُعْدٍ يُضْعِفُ التَّوَاصُلَ. -> Aku khawatir kerja remote melemahkan komunikasi.
+- **Karim:** أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ. -> Aku paham kekhawatiranmu, dan itu wajar.
+- **Ahmad:** إِذَنْ أَنْتَ تُوَافِقُنِي. -> Berarti kamu sepakat denganku.
+- **Karim:** هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ. -> Itu sebagian benar, tapi bukan keseluruhan.
+- **Ahmad:** كَيْفَ ذَلِكَ؟ -> Maksudnya?
+- **Karim:** مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ. دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ. -> Meski begitu, manfaatnya tetap lebih besar. Mari kita atasi poin ini dengan rencana.
+- **Ahmad:** أَيُّ خُطَّةٍ؟ -> Rencana apa?
+- **Karim:** اِجْتِمَاعٌ يَوْمِيٌّ قَصِيرٌ. بِهَذَا نَحْتَفِظُ بِالْمِيزَةِ وَنُقَلِّلُ الْخَطَرَ. -> Meeting harian singkat. Dengan begitu kita pertahankan keunggulan dan kurangi risiko.

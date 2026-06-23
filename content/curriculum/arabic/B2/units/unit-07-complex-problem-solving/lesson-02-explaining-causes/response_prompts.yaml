@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat bahwa poin menjelaskan penyebab adalah bagian dari
-    masalah yang lebih besar.'
-  target_response: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mari bedakan gejala dan akar penyebab.'
+  target_response: لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
   acceptable_responses:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penyebab utamanya mungkin lemahnya pengaturan.'
-  target_response: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Keterlambatan itu karena lemahnya kategorisasi.'
+  target_response: يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
   acceptable_responses:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setiap solusi punya manfaat dan efek samping.'
-  target_response: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  - يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Ini bukan sekadar kurang jumlah.'
+  target_response: هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
   acceptable_responses:
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.'
-  target_response: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Buktinya, masalah berulang di langkah yang sama.'
+  target_response: الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.
   acceptable_responses:
-  - أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - الدَّلِيلُ أَنَّ الْمُشْكِلَةَ تَتَكَرَّرُ فِي نَفْسِ الْخُطْوَةِ.

@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_responding_to_counterpoints
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي الِاعْتِرَاضِ عَلَى زِيَادَةِ الْمُرَاجَعَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menanggapi keberatan dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: أَخْشَى أَنَّ الْعَمَلَ عَنْ بُعْدٍ يُضْعِفُ التَّوَاصُلَ.
+learner_goal: 'Latih percakapan Arab B2 untuk menanggapi keberatan dengan tenang: mengakui poin lawan
+  lalu menjawabnya.'
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي الِاعْتِرَاضِ عَلَى زِيَادَةِ الْمُرَاجَعَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي الِاعْتِرَاضِ عَلَى زِيَادَةِ الْمُرَاجَعَةِ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي الِاعْتِرَاضِ عَلَى زِيَادَةِ الْمُرَاجَعَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Menyatakan posisi dengan jelas.
-  expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - الِاعْتِرَاضِ
-  - عَلَى
-  - زِيَادَةِ
-  indonesian_explanation: Posisi saya adalah bahwa keberatan terhadap tambahan review membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  focus: Memberi kerangka argumen.
-  expected_keywords:
-  - أَدْعَمُ
-  - هَذَا
-  - الرَّأْيَ
-  - بِسَبَبَيْنِ
-  - وَاضِحَيْنِ
-  indonesian_explanation: Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- coach: 'استخدم الفكرة: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  sample_answer: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  focus: Memberi contoh konkret.
-  expected_keywords:
-  - مِثَالُ
-  - ذَلِكَ
-  - أَنَّ
-  - الْفَرِيقَ
-  - يَحْتَاجُ
-  indonesian_explanation: Contohnya, tim membutuhkan keputusan yang cepat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-  focus: Merespons counterpoint dengan sopan.
+- coach: أَخْشَى أَنَّ الْعَمَلَ عَنْ بُعْدٍ يُضْعِفُ التَّوَاصُلَ.
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ.'
+  sample_answer: أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ.
+  focus: Mengakui keberatan.
   expected_keywords:
   - أَفْهَمُ
+  - قَلَقَكَ
+  - وَهُوَ
+  - قَلَقٌ
+  - مَشْرُوعٌ
+  indonesian_explanation: Aku paham kekhawatiranmu, dan itu wajar.
+- coach: 'استخدم الفكرة: هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.'
+  sample_answer: هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.
+  focus: Mengakui sebagian, menahan sebagian.
+  expected_keywords:
+  - هَذَا
+  - صَحِيحٌ
+  - جُزْئِيًّا
+  - لَكِنَّهُ
+  - لَيْسَ
+  indonesian_explanation: Itu sebagian benar, tapi bukan keseluruhan.
+- coach: 'استخدم الفكرة: مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.'
+  hint: 'Jawab dengan struktur B2 memakai: مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.'
+  sample_answer: مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.
+  focus: Membalikkan ke manfaat.
+  expected_keywords:
+  - مَعَ
+  - ذَلِكَ
+  - الْفَائِدَةُ
+  - تَبْقَى
+  - أَكْبَرَ
+  indonesian_explanation: Meski begitu, manfaatnya tetap lebih besar.
+- coach: 'استخدم الفكرة: دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.'
+  sample_answer: دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.
+  focus: Mengubah keberatan jadi solusi.
+  expected_keywords:
+  - دَعْنَا
+  - نُعَالِجُ
   - هَذِهِ
-  - النُّقْطَةَ
-  - الْمُعَارِضَةَ،
-  - وَلَكِنَّ
-  indonesian_explanation: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+  - النُّقْطَةَ
+  - بِخُطَّةٍ
+  indonesian_explanation: Mari kita atasi poin ini dengan rencana.
 target_phrases:
-- مَوْقِفِي فِي الِاعْتِرَاضِ عَلَى زِيَادَةِ الْمُرَاجَعَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
+- أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ.
+- هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.
+- مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.
+- دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.
+- بِهَذَا نَحْتَفِظُ بِالْمِيزَةِ وَنُقَلِّلُ الْخَطَرَ.
 rubric:
   speaking:
     minimum_score: 72

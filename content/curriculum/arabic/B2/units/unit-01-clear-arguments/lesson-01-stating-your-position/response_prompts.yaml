@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Posisi saya adalah bahwa topik menentukan posisi penting dalam diskusi.'
-  target_response: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Posisiku jelas: aku mendukung arah ini.'
+  target_response: 'مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ.'
   acceptable_responses:
-  - مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mendukung pendapat ini dengan dua alasan yang jelas.'
-  target_response: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+  - 'مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ.'
+- prompt: 'Ucapkan dalam bahasa Arab: Aku mendukung idenya secara prinsip.'
+  target_response: أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.
   acceptable_responses:
-  - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Contohnya, tim membutuhkan keputusan yang cepat.'
-  target_response: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+  - أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku tidak sepenuhnya setuju, dan punya pandangan berbeda.'
+  target_response: لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.
   acceptable_responses:
-  - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.'
-  target_response: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  - لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Coba aku jelaskan alasan posisiku singkat.'
+  target_response: دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.
   acceptable_responses:
-  - أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  - دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ.

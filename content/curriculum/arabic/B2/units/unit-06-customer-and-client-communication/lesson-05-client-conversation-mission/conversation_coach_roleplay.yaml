@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_client_conversation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: سَتُكَلِّمِينَ عَمِيلًا مُتَرَدِّدًا الْيَوْمَ. مِنْ أَيْنَ تَبْدَئِينَ؟
+learner_goal: Latih percakapan Arab B2 untuk memandu percakapan klien yang ragu dari kebutuhan sampai
+  langkah kecil.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Memahami kebutuhan klien.
+- coach: سَتُكَلِّمِينَ عَمِيلًا مُتَرَدِّدًا الْيَوْمَ. مِنْ أَيْنَ تَبْدَئِينَ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ.'
+  sample_answer: أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ.
+  focus: Membuka dengan kebutuhan.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - حِوَارٍ
-  - كَامِلٍ
-  - مَعَ
-  indonesian_explanation: Posisi saya adalah bahwa percakapan lengkap dengan klien yang ragu membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  focus: Menjelaskan opsi.
+  - أَبْدَأُ
+  - بِسُؤَالٍ
+  - عَنْ
+  - أَوْلَوِيَّةِ
+  - الْعَمِيلِ
+  indonesian_explanation: Aku mulai dengan pertanyaan soal prioritas nyata klien.
+- coach: 'استخدم الفكرة: ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.'
+  hint: 'Jawab dengan struktur B2 memakai: ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.'
+  sample_answer: ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.
+  focus: Menyajikan opsi sambil mendengar.
   expected_keywords:
-  - لَدَيْنَا
-  - خِيَارَانِ،
-  - وَكُلُّ
-  - خِيَارٍ
-  - لَهُ
-  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  focus: Menangani concern.
+  - ثُمَّ
+  - أَعْرِضُ
+  - خِيَارَيْنِ
+  - وَأَسْمَعُ
+  - قَلَقَهُ
+  indonesian_explanation: Lalu aku tawarkan dua opsi dan mendengar kekhawatirannya.
+- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
+  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  focus: Menanggapi keberatan.
   expected_keywords:
   - أَفْهَمُ
   - هَذَا
-  - الِاهْتِمَامَ،
-  - وَسَأُوَضِّحُ
-  - التَّفَاصِيلَ
-  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-  focus: Mengonfirmasi next step.
+  - الِاهْتِمَامَ
+  - وَسَأُوَضِّحُ
+  - التَّفَاصِيلَ
+  indonesian_explanation: Aku paham kekhawatiran ini, dan akan menjelaskan detailnya.
+- coach: 'استخدم الفكرة: أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.'
+  hint: 'Jawab dengan struktur B2 memakai: أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.'
+  sample_answer: أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.
+  focus: Menutup dengan langkah ringan.
   expected_keywords:
-  - الْخُطْوَةُ
-  - التَّالِيَةُ
-  - هِيَ
-  - مُرَاجَعَةُ
-  - الِاتِّفَاقِ
-  indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+  - أَخْتِمُ
+  - بِخُطْوَةٍ
+  - صَغِيرَةٍ
+  - لَا
+  - تُلْزِمُهُ
+  indonesian_explanation: Aku tutup dengan langkah kecil yang tidak terlalu mengikatnya.
 target_phrases:
-- مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
+- أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ.
+- ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.
+- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+- أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.
+- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْخُطْوَةِ الْأُولَى وَالْمَوْعِدِ.
 rubric:
   speaking:
     minimum_score: 72

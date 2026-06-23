@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** أَقْتَرِحُ أَنْ نَتَبَنَّى أَدَاةً جَدِيدَةً لِلْمُتَابَعَةِ. -> Aku usul kita pakai tool baru buat tracking.
-- **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ، لَكِنَّنِي أُرِيدُ دَلِيلًا. -> Posisi aku, topik ini penting, tapi aku mau bukti dulu.
-- **Ahmad:** وَمَا الَّذِي يُقْنِعُكَ؟ -> Apa yang bikin kamu yakin?
-- **Karim:** مِثَالٌ مَلْمُوسٌ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ، وَالْأَدَاةُ تَخْتَصِرُ الْوَقْتَ. -> Contoh nyata. Contohnya, tim butuh keputusan cepat, dan tool-nya memangkas waktu.
-- **Ahmad:** بَعْضُ الْأَدَوَاتِ مُعَقَّدَةٌ. -> Sebagian tool itu rumit.
-- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ مَعَ تَدْرِيبٍ قَصِيرٍ. -> Aku paham poin lawannya, tapi manfaatnya lebih besar kalau ada training singkat.
-- **Ahmad:** كَلَامُكَ مُقْنِعٌ. -> Argumenmu meyakinkan.
-- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ بَعْدَ تَجْرِبَةٍ صَغِيرَةٍ. -> Karena itu aku lebih memilih kita sepakat di arah ini setelah uji coba kecil.
+- **Ahmad:** أَقْتَرِحُ أَدَاةً جَدِيدَةً، لَكِنِّي أُرِيدُ دَلِيلًا. -> Aku usul tool baru, tapi aku mau bukti.
+- **Karim:** لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا. -> Untuk memperjelas, aku beri contoh dari pengalaman kita.
+- **Ahmad:** هَلِ الْمِثَالُ مُهِمٌّ هُنَا؟ -> Apa contoh itu penting di sini?
+- **Karim:** نَعَمْ، مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا. -> Iya, satu contoh konkret setara penjelasan panjang.
+- **Ahmad:** أَعْطِنِي مِثَالًا إِذَنْ. -> Kalau begitu beri aku contoh.
+- **Karim:** حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ، وَهَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ. -> Ini benar-benar terjadi dengan klien bulan lalu, dan contoh ini menunjukkan masalahnya dengan jelas.
+- **Ahmad:** لَكِنْ لَا تَذْكُرِ الْأَسْمَاءَ. -> Tapi jangan sebut nama.
+- **Karim:** بِالطَّبْعِ، وَلِنُبْقِيَ الْمِثَالَ عَامًّا، نُخْفِي اسْمَ الْعَمِيلِ. -> Tentu, dan agar tetap netral, kita sembunyikan nama klien.

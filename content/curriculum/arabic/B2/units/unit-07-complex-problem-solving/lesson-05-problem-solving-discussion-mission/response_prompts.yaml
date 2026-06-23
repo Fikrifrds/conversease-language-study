@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat bahwa poin mendiskusikan solusi masalah kompleks adalah
-    bagian dari masalah yang lebih besar.'
-  target_response: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku mulai dengan mendefinisikan masalah, bukan solusi.'
+  target_response: أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
   acceptable_responses:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penyebab utamanya mungkin lemahnya pengaturan.'
-  target_response: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu aku tanya penyebab, dampak, dan tradeoff.'
+  target_response: ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
   acceptable_responses:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setiap solusi punya manfaat dan efek samping.'
-  target_response: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  - ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku ingatkan tim agar tidak lompat ke rekomendasi cepat.'
+  target_response: أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
   acceptable_responses:
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.'
-  target_response: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku susun diskusi di seputar satu kriteria yang jelas.'
+  target_response: أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.
   acceptable_responses:
-  - أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ.

@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat bahwa poin membahas tradeoff adalah bagian dari masalah
-    yang lebih besar.'
-  target_response: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Tradeoff di sini antara kecepatan dan kualitas.'
+  target_response: الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
   acceptable_responses:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penyebab utamanya mungkin lemahnya pengaturan.'
-  target_response: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di satu sisi, kecepatan memberi peluang.'
+  target_response: مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
   acceptable_responses:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setiap solusi punya manfaat dan efek samping.'
-  target_response: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  - مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
+- prompt: 'Ucapkan dalam bahasa Arab: Di sisi lain, mengancam kepercayaan.'
+  target_response: وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
   acceptable_responses:
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.'
-  target_response: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Keputusan bergantung pada risiko bagian yang dikirim.'
+  target_response: الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.
   acceptable_responses:
-  - أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.

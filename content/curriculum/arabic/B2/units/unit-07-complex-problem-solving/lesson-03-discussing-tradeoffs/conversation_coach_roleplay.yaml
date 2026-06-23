@@ -1,66 +1,63 @@
 scenario_key: arabic_b2_discussing_tradeoffs
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk membahas tradeoff dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: نُرِيدُ التَّسْلِيمَ بِسُرْعَةٍ، لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ.
+learner_goal: Latih percakapan Arab B2 untuk membahas tradeoff antara dua pilihan secara seimbang.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-    وَخُطْوَةٍ تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Melakukan framing problem.
+- coach: نُرِيدُ التَّسْلِيمَ بِسُرْعَةٍ، لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ.
+  hint: 'Jawab dengan struktur B2 memakai: الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
+  sample_answer: الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  focus: Menamai tradeoff.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - الْمُوَازَنَةِ
+  - الْمُقَايَضَةُ
+  - هُنَا
   - بَيْنَ
-  - السُّرْعَةِ
-  indonesian_explanation: Posisi saya adalah bahwa tradeoff antara kecepatan dan kualitas membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  focus: Menjelaskan cause.
+  - السُّرْعَةِ
+  - وَالْجَوْدَةِ
+  indonesian_explanation: Tradeoff di sini antara kecepatan dan kualitas.
+- coach: 'استخدم الفكرة: مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.'
+  hint: 'Jawab dengan struktur B2 memakai: مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.'
+  sample_answer: مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
+  focus: Sisi pertama.
   expected_keywords:
-  - السَّبَبُ
-  - الْأَسَاسِيُّ
-  - قَدْ
-  - يَكُونُ
-  - ضَعْفَ
-  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
-- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  focus: Membahas tradeoff.
+  - مِنْ
+  - نَاحِيَةٍ
+  - السُّرْعَةُ
+  - تُعْطِينَا
+  - فُرْصَةً
+  indonesian_explanation: Di satu sisi, kecepatan memberi peluang.
+- coach: 'استخدم الفكرة: وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.'
+  hint: 'Jawab dengan struktur B2 memakai: وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.'
+  sample_answer: وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
+  focus: Sisi kedua.
   expected_keywords:
-  - لِكُلِّ
-  - حَلٍّ
-  - فَائِدَةٌ
-  - وَتَأْثِيرٌ
-  - جَانِبِيٌّ
-  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
-- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-  focus: Memberi rekomendasi.
+  - وَمِنْ
+  - نَاحِيَةٍ
+  - أُخْرَى
+  - تُهَدِّدُ
+  - الثِّقَةَ
+  indonesian_explanation: Di sisi lain, mengancam kepercayaan.
+- coach: 'استخدم الفكرة: الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.'
+  hint: 'Jawab dengan struktur B2 memakai: الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.'
+  sample_answer: الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.
+  focus: Mengaitkan ke kriteria.
   expected_keywords:
-  - أُوصِي
-  - بِحَلٍّ
-  - تَدْرِيجِيٍّ
-  - لِتَقْلِيلِ
-  - الْمَخَاطِرِ
-  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  - الْقَرَارُ
+  - يَعْتَمِدُ
+  - عَلَى
+  - خَطَرِ
+  - الْجُزْءِ
+  indonesian_explanation: Keputusan bergantung pada risiko bagian yang dikirim.
 target_phrases:
-- مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+- الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+- مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
+- وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
+- الْقَرَارُ يَعْتَمِدُ عَلَى خَطَرِ الْجُزْءِ الْمُرْسَلِ.
+- لِذَلِكَ نَضَعُ حَدًّا زَمَنِيًّا وَمِعْيَارًا لِلْجَوْدَةِ.
 rubric:
   speaking:
     minimum_score: 72

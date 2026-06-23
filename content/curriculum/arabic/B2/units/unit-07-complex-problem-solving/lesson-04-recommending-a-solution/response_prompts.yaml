@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya melihat bahwa poin merekomendasikan solusi adalah bagian dari
-    masalah yang lebih besar.'
-  target_response: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku rekomendasikan checklist singkat sebelum delivery.'
+  target_response: أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ.
   acceptable_responses:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Penyebab utamanya mungkin lemahnya pengaturan.'
-  target_response: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Solusi ini sederhana dan bisa diuji.'
+  target_response: هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.
   acceptable_responses:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Setiap solusi punya manfaat dan efek samping.'
-  target_response: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
+  - هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kita coba sepekan lalu ukur jumlah error.'
+  target_response: نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.
   acceptable_responses:
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.'
-  target_response: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau tidak berguna, kita ubah dengan mudah.'
+  target_response: إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.
   acceptable_responses:
-  - أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
+  - إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ.

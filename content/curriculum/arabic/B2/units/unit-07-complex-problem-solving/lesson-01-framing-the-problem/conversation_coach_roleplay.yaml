@@ -1,66 +1,62 @@
 scenario_key: arabic_b2_framing_the_problem
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-  تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk membingkai masalah dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: انْخَفَضَ اسْتِخْدَامُ التَّطْبِيقِ. هَلْ هِيَ مُشْكِلَةُ تَصْمِيمٍ؟
+learner_goal: Latih percakapan Arab B2 untuk membingkai masalah dengan tepat sebelum melompat ke solusi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
-    وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Melakukan framing problem.
+- coach: انْخَفَضَ اسْتِخْدَامُ التَّطْبِيقِ. هَلْ هِيَ مُشْكِلَةُ تَصْمِيمٍ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.'
+  sample_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  focus: Membingkai masalah lebih luas.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - انْخِفَاضِ
-  - اسْتِخْدَامِ
-  - التَّطْبِيقِ
-  indonesian_explanation: Posisi saya adalah bahwa turunnya penggunaan aplikasi membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
-  sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  focus: Menjelaskan cause.
+  - أَرَى
+  - أَنَّ
+  - هَذِهِ
+  - النُّقْطَةَ
+  - جُزْءٌ
+  indonesian_explanation: Menurutku poin ini bagian dari masalah yang lebih besar.
+- coach: 'استخدم الفكرة: لَا نَبْدَأُ بِالْحَلِّ قَبْلَ تَعْرِيفِ الْمُشْكِلَةِ.'
+  hint: 'Jawab dengan struktur B2 memakai: لَا نَبْدَأُ بِالْحَلِّ قَبْلَ تَعْرِيفِ الْمُشْكِلَةِ.'
+  sample_answer: لَا نَبْدَأُ بِالْحَلِّ قَبْلَ تَعْرِيفِ الْمُشْكِلَةِ.
+  focus: Menahan solusi prematur.
   expected_keywords:
-  - السَّبَبُ
-  - الْأَسَاسِيُّ
-  - قَدْ
-  - يَكُونُ
-  - ضَعْفَ
-  indonesian_explanation: Penyebab utamanya mungkin lemahnya pengaturan.
-- coach: 'استخدم الفكرة: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  hint: 'Jawab dengan struktur B2 memakai: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.'
-  sample_answer: لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  focus: Membahas tradeoff.
+  - لَا
+  - نَبْدَأُ
+  - بِالْحَلِّ
+  - قَبْلَ
+  - تَعْرِيفِ
+  indonesian_explanation: Kita tidak mulai dari solusi sebelum mendefinisikan masalah.
+- coach: 'استخدم الفكرة: نُحَدِّدُ السُّؤَالَ الصَّحِيحَ أَوَّلًا.'
+  hint: 'Jawab dengan struktur B2 memakai: نُحَدِّدُ السُّؤَالَ الصَّحِيحَ أَوَّلًا.'
+  sample_answer: نُحَدِّدُ السُّؤَالَ الصَّحِيحَ أَوَّلًا.
+  focus: Menetapkan pertanyaan inti.
   expected_keywords:
-  - لِكُلِّ
-  - حَلٍّ
-  - فَائِدَةٌ
-  - وَتَأْثِيرٌ
-  - جَانِبِيٌّ
-  indonesian_explanation: Setiap solusi punya manfaat dan efek samping.
-- coach: 'استخدم الفكرة: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.'
-  sample_answer: أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-  focus: Memberi rekomendasi.
+  - نُحَدِّدُ
+  - السُّؤَالَ
+  - الصَّحِيحَ
+  - أَوَّلًا
+  indonesian_explanation: Kita tentukan pertanyaan yang tepat dulu.
+- coach: 'استخدم الفكرة: الْأَعْرَاضُ كَثِيرَةٌ، لَكِنَّ السَّبَبَ وَاحِدٌ غَالِبًا.'
+  hint: 'Jawab dengan struktur B2 memakai: الْأَعْرَاضُ كَثِيرَةٌ، لَكِنَّ السَّبَبَ وَاحِدٌ غَالِبًا.'
+  sample_answer: الْأَعْرَاضُ كَثِيرَةٌ، لَكِنَّ السَّبَبَ وَاحِدٌ غَالِبًا.
+  focus: Membedakan gejala dan sebab.
   expected_keywords:
-  - أُوصِي
-  - بِحَلٍّ
-  - تَدْرِيجِيٍّ
-  - لِتَقْلِيلِ
-  - الْمَخَاطِرِ
-  indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
+  - الْأَعْرَاضُ
+  - كَثِيرَةٌ
+  - لَكِنَّ
+  - السَّبَبَ
+  - وَاحِدٌ
+  indonesian_explanation: Gejalanya banyak, tapi penyebabnya sering satu.
 target_phrases:
-- مَوْقِفِي فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى.
+- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- لَا نَبْدَأُ بِالْحَلِّ قَبْلَ تَعْرِيفِ الْمُشْكِلَةِ.
+- نُحَدِّدُ السُّؤَالَ الصَّحِيحَ أَوَّلًا.
+- الْأَعْرَاضُ كَثِيرَةٌ، لَكِنَّ السَّبَبَ وَاحِدٌ غَالِبًا.
+- لِذَلِكَ نَبْدَأُ بِقِيَاسِ النُّقْطَةِ الْأَهَمِّ.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** تَتَكَرَّرُ الْأَخْطَاءُ نَفْسُهَا قَبْلَ كُلِّ تَسْلِيمٍ. -> Error yang sama berulang sebelum tiap delivery.
-- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ، فَالْأَخْطَاءُ تَحْدُثُ فِي نَفْسِ الْخُطْوَةِ. -> Menurutku poin ini bagian dari masalah yang lebih besar, soalnya error terjadi di langkah yang sama.
-- **Rami:** فَمَا السَّبَبُ؟ -> Lalu penyebabnya apa?
-- **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ غِيَابَ فَحْصٍ أَخِيرٍ قَبْلَ التَّسْلِيمِ. -> Penyebab utamanya mungkin tidak adanya pengecekan akhir sebelum delivery.
-- **Rami:** قَدْ يَرَاهُ الْفَرِيقُ خُطْوَةً إِضَافِيَّةً. -> Tim mungkin menganggapnya langkah tambahan.
-- **Tariq:** أَفْهَمُ، فَلِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ، لَكِنَّ الْقَائِمَةَ قَصِيرَةٌ. -> Aku paham, tiap solusi punya manfaat dan efek samping, tapi checklist-nya singkat.
-- **Rami:** إِذَنْ بِمَ تُوصِي؟ -> Jadi kamu rekomendasi apa?
-- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: قَائِمَةُ فَحْصٍ صَغِيرَةٌ نُجَرِّبُهَا أُسْبُوعًا وَنَقِيسُ عَدَدَ الْأَخْطَاءِ. -> Aku merekomendasikan solusi bertahap: checklist kecil yang kita coba seminggu lalu ukur jumlah error.
+- **Rami:** تَتَكَرَّرُ الْأَخْطَاءُ قَبْلَ كُلِّ تَسْلِيمٍ. مَا الْحَلُّ؟ -> Error berulang sebelum tiap delivery. Apa solusinya?
+- **Tariq:** أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ. -> Aku rekomendasikan checklist singkat sebelum delivery.
+- **Rami:** أَلَنْ تُبْطِئَنَا؟ -> Bukannya itu memperlambat kita?
+- **Tariq:** هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ. نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ. -> Solusi ini sederhana dan bisa diuji. Kita coba sepekan lalu ukur jumlah error.
+- **Rami:** وَإِنْ لَمْ يَنْجَحْ؟ -> Kalau tidak berhasil?
+- **Tariq:** إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ. -> Kalau tidak berguna, kita ubah dengan mudah.
+- **Rami:** مَتَى نَبْدَأُ؟ -> Kapan kita mulai?
+- **Tariq:** لِذَلِكَ أَقْتَرِحُ الْبَدْءَ بِهِ غَدًا. -> Karena itu aku usul mulai besok.

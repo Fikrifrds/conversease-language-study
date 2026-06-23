@@ -4,9 +4,10 @@ title: Client Conversation Mission
 status: published
 estimated_minutes: 16
 conversation_situation: client_conversation_mission
-conversation_goal: Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh,
-  respons, dan rekomendasi.
-grammar_summary: Gunakan أُرِيدُ أَنْ أَفْهَمَ، لَدَيْنَا، أَفْهَمُ، dan سَأُرْسِلُ untuk komunikasi klien.
+conversation_goal: Latih percakapan Arab B2 untuk memandu percakapan klien yang ragu dari kebutuhan sampai
+  langkah kecil.
+grammar_summary: Gabungkan أَبْدَأُ بِالْأَوْلَوِيَّةِ، أَعْرِضُ خِيَارَيْنِ، dan أَخْتِمُ بِخُطْوَةٍ
+  صَغِيرَةٍ untuk percakapan klien utuh.
 required_sections:
 - conversation_goal
 - situation_setup

@@ -1,16 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya melihat bahwa poin membahas tradeoff adalah bagian dari masalah
-    yang lebih besar."?
+  prompt: Frasa mana yang berarti "Tradeoff di sini antara kecepatan dan kualitas."?
   options:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  - الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  - مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
+  - وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
+  correct_answer: الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Penyebab utamanya mungkin lemahnya pengaturan."?
+  prompt: Frasa mana yang berarti "Di satu sisi, kecepatan memberi peluang."?
   options:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.
+  - الْمُقَايَضَةُ هُنَا بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  - وَمِنْ نَاحِيَةٍ أُخْرَى، تُهَدِّدُ الثِّقَةَ.
+  correct_answer: مِنْ نَاحِيَةٍ، السُّرْعَةُ تُعْطِينَا فُرْصَةً.

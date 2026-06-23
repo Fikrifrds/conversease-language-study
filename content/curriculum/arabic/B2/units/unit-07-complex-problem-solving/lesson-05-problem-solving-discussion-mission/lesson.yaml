@@ -4,9 +4,10 @@ title: Problem Solving Discussion Mission
 status: published
 estimated_minutes: 16
 conversation_situation: problem_solving_discussion_mission
-conversation_goal: Latih percakapan Arab B2 untuk mendiskusikan solusi masalah kompleks dengan alasan,
-  contoh, respons, dan rekomendasi.
-grammar_summary: Gunakan أَرَى أَنَّ، قَدْ يَكُونُ، لِكُلِّ، dan أُوصِي بِـ untuk problem solving B2.
+conversation_goal: 'Latih percakapan Arab B2 untuk mengubah masalah kompleks menjadi keputusan: definisi,
+  penyebab, tradeoff, lalu langkah uji.'
+grammar_summary: Gabungkan أَبْدَأُ بِتَعْرِيفِ، أَسْأَلُ عَنِ السَّبَبِ، dan نَخْرُجُ بِخُطْوَةٍ untuk
+  diskusi pemecahan masalah utuh.
 required_sections:
 - conversation_goal
 - situation_setup

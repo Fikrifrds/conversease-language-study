@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami kebutuhan klien tentang mengelola percakapan
-    dengan klien.'
-  target_response: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku mulai dengan pertanyaan soal prioritas nyata klien.'
+  target_response: أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua opsi, dan setiap opsi memiliki manfaat.'
-  target_response: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  - أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Lalu aku tawarkan dua opsi dan mendengar kekhawatirannya.'
+  target_response: ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.
   acceptable_responses:
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.'
-  target_response: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  - ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham kekhawatiran ini, dan akan menjelaskan detailnya.'
+  target_response: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
   acceptable_responses:
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Langkah berikutnya adalah meninjau kesepakatan.'
-  target_response: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku tutup dengan langkah kecil yang tidak terlalu mengikatnya.'
+  target_response: أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.
   acceptable_responses:
-  - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا.

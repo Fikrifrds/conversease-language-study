@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Posisi saya adalah bahwa topik menanggapi keberatan penting dalam
-    diskusi.'
-  target_response: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku paham kekhawatiranmu, dan itu wajar.'
+  target_response: أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ.
   acceptable_responses:
-  - مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mendukung pendapat ini dengan dua alasan yang jelas.'
-  target_response: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
+  - أَفْهَمُ قَلَقَكَ، وَهُوَ قَلَقٌ مَشْرُوعٌ.
+- prompt: 'Ucapkan dalam bahasa Arab: Itu sebagian benar, tapi bukan keseluruhan.'
+  target_response: هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.
   acceptable_responses:
-  - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Contohnya, tim membutuhkan keputusan yang cepat.'
-  target_response: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
+  - هَذَا صَحِيحٌ جُزْئِيًّا، لَكِنَّهُ لَيْسَ كُلَّ الصُّورَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Meski begitu, manfaatnya tetap lebih besar.'
+  target_response: مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.
   acceptable_responses:
-  - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.'
-  target_response: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  - مَعَ ذَلِكَ، الْفَائِدَةُ تَبْقَى أَكْبَرَ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mari kita atasi poin ini dengan rencana.'
+  target_response: دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.
   acceptable_responses:
-  - أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
+  - دَعْنَا نُعَالِجُ هَذِهِ النُّقْطَةَ بِخُطَّةٍ.

@@ -1,67 +1,63 @@
 scenario_key: arabic_b2_handling_concerns
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menangani concern klien dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: الْعَمِيلُ قَلِقٌ مِنْ تَأْخِيرِ التَّسْلِيمِ. كَيْفَ نَرُدُّ؟
+learner_goal: Latih percakapan Arab B2 untuk menangani kekhawatiran klien dengan empati lalu solusi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Memahami kebutuhan klien.
+- coach: الْعَمِيلُ قَلِقٌ مِنْ تَأْخِيرِ التَّسْلِيمِ. كَيْفَ نَرُدُّ؟
+  hint: 'Jawab dengan struktur B2 memakai: أَعْتَرِفُ بِقَلَقِكَ قَبْلَ أَيِّ شَرْحٍ.'
+  sample_answer: أَعْتَرِفُ بِقَلَقِكَ قَبْلَ أَيِّ شَرْحٍ.
+  focus: Mengakui kekhawatiran.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - قَلَقِ
-  - الْعَمِيلِ
+  - أَعْتَرِفُ
+  - بِقَلَقِكَ
+  - قَبْلَ
+  - أَيِّ
+  - شَرْحٍ
+  indonesian_explanation: Aku akui kekhawatiranmu sebelum penjelasan apa pun.
+- coach: 'استخدم الفكرة: التَّأْخِيرُ جَاءَ مِنْ مُرَاجَعَةِ الْأَمَانِ.'
+  hint: 'Jawab dengan struktur B2 memakai: التَّأْخِيرُ جَاءَ مِنْ مُرَاجَعَةِ الْأَمَانِ.'
+  sample_answer: التَّأْخِيرُ جَاءَ مِنْ مُرَاجَعَةِ الْأَمَانِ.
+  focus: Menjelaskan penyebab.
+  expected_keywords:
+  - التَّأْخِيرُ
+  - جَاءَ
   - مِنْ
-  indonesian_explanation: Posisi saya adalah bahwa kekhawatiran klien tentang keterlambatan delivery membutuhkan keputusan
-    yang jelas.
-- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  focus: Menjelaskan opsi.
-  expected_keywords:
-  - لَدَيْنَا
-  - خِيَارَانِ،
-  - وَكُلُّ
-  - خِيَارٍ
-  - لَهُ
-  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  focus: Menangani concern.
+  - مُرَاجَعَةِ
+  - الْأَمَانِ
+  indonesian_explanation: Keterlambatannya karena review keamanan.
+- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ بِهُدُوءٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ بِهُدُوءٍ.'
+  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ بِهُدُوءٍ.
+  focus: Menenangkan dan menjelaskan.
   expected_keywords:
   - أَفْهَمُ
   - هَذَا
-  - الِاهْتِمَامَ،
-  - وَسَأُوَضِّحُ
-  - التَّفَاصِيلَ
-  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-  focus: Mengonfirmasi next step.
+  - الِاهْتِمَامَ
+  - وَسَأُوَضِّحُ
+  - التَّفَاصِيلَ
+  indonesian_explanation: Aku paham kekhawatiran ini, dan akan menjelaskan detailnya dengan tenang.
+- coach: 'استخدم الفكرة: إِلَيْكَ الْحَلُّ: مَوْعِدٌ مُحَافِظٌ مَعَ تَحْدِيثٍ يَوْمِيٍّ.'
+  hint: 'Jawab dengan struktur B2 memakai: إِلَيْكَ الْحَلُّ: مَوْعِدٌ مُحَافِظٌ مَعَ تَحْدِيثٍ يَوْمِيٍّ.'
+  sample_answer: 'إِلَيْكَ الْحَلُّ: مَوْعِدٌ مُحَافِظٌ مَعَ تَحْدِيثٍ يَوْمِيٍّ.'
+  focus: Menawarkan solusi.
   expected_keywords:
-  - الْخُطْوَةُ
-  - التَّالِيَةُ
-  - هِيَ
-  - مُرَاجَعَةُ
-  - الِاتِّفَاقِ
-  indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+  - إِلَيْكَ
+  - 'الْحَلُّ:'
+  - مَوْعِدٌ
+  - مُحَافِظٌ
+  - مَعَ
+  indonesian_explanation: 'Ini solusinya: tenggat konservatif dengan update harian.'
 target_phrases:
-- مَوْقِفِي فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
+- أَعْتَرِفُ بِقَلَقِكَ قَبْلَ أَيِّ شَرْحٍ.
+- التَّأْخِيرُ جَاءَ مِنْ مُرَاجَعَةِ الْأَمَانِ.
+- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ بِهُدُوءٍ.
+- 'إِلَيْكَ الْحَلُّ: مَوْعِدٌ مُحَافِظٌ مَعَ تَحْدِيثٍ يَوْمِيٍّ.'
+- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْمَوْعِدِ وَخُطَّةِ التَّحْدِيثِ.
 rubric:
   speaking:
     minimum_score: 72

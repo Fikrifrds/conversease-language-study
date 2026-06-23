@@ -4,10 +4,10 @@ title: Clear Argument Mission
 status: published
 estimated_minutes: 16
 conversation_situation: clear_argument_mission
-conversation_goal: Latih percakapan Arab B2 untuk membangun argumen jelas dengan alasan, contoh, respons,
-  dan rekomendasi.
-grammar_summary: Gunakan مَوْقِفِي هُوَ، أَدْعَمُ، مِثَالُ ذَلِكَ، dan وَلَكِنَّ untuk membuat argumen
-  B2 yang terstruktur.
+conversation_goal: 'Latih percakapan Arab B2 untuk membangun argumen utuh: posisi, alasan, contoh, respons
+  keberatan, lalu rekomendasi.'
+grammar_summary: Gabungkan مَوْقِفِي، السَّبَبُ، مِثَالُ ذَلِكَ، أَفْهَمُ ... لَكِنَّ، dan أُوصِي بِـ
+  untuk argumen B2 yang lengkap.
 required_sections:
 - conversation_goal
 - situation_setup

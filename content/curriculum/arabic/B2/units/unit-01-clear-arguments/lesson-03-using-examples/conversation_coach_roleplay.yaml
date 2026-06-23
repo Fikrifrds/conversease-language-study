@@ -1,66 +1,64 @@
 scenario_key: arabic_b2_using_examples
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk menggunakan contoh dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: أَقْتَرِحُ أَدَاةً جَدِيدَةً، لَكِنِّي أُرِيدُ دَلِيلًا.
+learner_goal: Latih percakapan Arab B2 untuk memperkuat pendapat dengan contoh konkret dari pengalaman
+  nyata.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ
-    إِلَى قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Menyatakan posisi dengan jelas.
+- coach: أَقْتَرِحُ أَدَاةً جَدِيدَةً، لَكِنِّي أُرِيدُ دَلِيلًا.
+  hint: 'Jawab dengan struktur B2 memakai: لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.'
+  sample_answer: لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.
+  focus: Membuka dengan contoh.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - اِسْتِخْدَامِ
-  - مِثَالٍ
+  - لِأُوَضِّحَ
+  - فِكْرَتِي
+  - سَأُعْطِي
+  - مِثَالًا
   - مِنْ
-  indonesian_explanation: Posisi saya adalah bahwa penggunaan contoh dari klien nyata membutuhkan keputusan yang jelas.
-- coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
-  sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-  focus: Memberi kerangka argumen.
+  indonesian_explanation: Untuk memperjelas, aku beri contoh dari pengalaman kita.
+- coach: 'استخدم الفكرة: مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.'
+  hint: 'Jawab dengan struktur B2 memakai: مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.'
+  sample_answer: مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.
+  focus: Menegaskan nilai contoh.
   expected_keywords:
-  - أَدْعَمُ
+  - مِثَالٌ
+  - وَاحِدٌ
+  - مَلْمُوسٌ
+  - يُسَاوِي
+  - شَرْحًا
+  indonesian_explanation: Satu contoh konkret setara penjelasan panjang.
+- coach: 'استخدم الفكرة: حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.'
+  hint: 'Jawab dengan struktur B2 memakai: حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.'
+  sample_answer: حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.
+  focus: Memberi contoh nyata.
+  expected_keywords:
+  - حَدَثَ
   - هَذَا
-  - الرَّأْيَ
-  - بِسَبَبَيْنِ
-  - وَاضِحَيْنِ
-  indonesian_explanation: Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- coach: 'استخدم الفكرة: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  hint: 'Jawab dengan struktur B2 memakai: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.'
-  sample_answer: مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-  focus: Memberi contoh konkret.
+  - فِعْلًا
+  - مَعَ
+  - عَمِيلٍ
+  indonesian_explanation: Ini benar-benar terjadi dengan klien bulan lalu.
+- coach: 'استخدم الفكرة: هَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ.'
+  hint: 'Jawab dengan struktur B2 memakai: هَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ.'
+  sample_answer: هَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ.
+  focus: Menghubungkan contoh ke poin.
   expected_keywords:
-  - مِثَالُ
-  - ذَلِكَ
-  - أَنَّ
-  - الْفَرِيقَ
-  - يَحْتَاجُ
-  indonesian_explanation: Contohnya, tim membutuhkan keputusan yang cepat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-  focus: Merespons counterpoint dengan sopan.
-  expected_keywords:
-  - أَفْهَمُ
-  - هَذِهِ
-  - النُّقْطَةَ
-  - الْمُعَارِضَةَ،
-  - وَلَكِنَّ
-  indonesian_explanation: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
+  - هَذَا
+  - الْمِثَالُ
+  - يُظْهِرُ
+  - الْمُشْكِلَةَ
+  - بِوُضُوحٍ
+  indonesian_explanation: Contoh ini menunjukkan masalahnya dengan jelas.
 target_phrases:
-- مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ.
+- لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا.
+- مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا.
+- حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ.
+- هَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ.
+- وَلِنُبْقِيَ الْمِثَالَ عَامًّا، نُخْفِي اسْمَ الْعَمِيلِ.
 rubric:
   speaking:
     minimum_score: 72

@@ -1,66 +1,61 @@
 scenario_key: arabic_b2_understanding_client_needs
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا رَأْيُكَ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
-  وَخُطْوَةٍ تَالِيَةٍ.
-learner_goal: Latih percakapan Arab B2 untuk memahami kebutuhan klien dengan alasan, contoh, respons, dan rekomendasi.
+opening_line: الْعَمِيلُ يَطْلُبُ تَقْرِيرًا أَسْرَعَ. كَيْفَ نَبْدَأُ؟
+learner_goal: Latih percakapan Arab B2 untuk menggali kebutuhan klien sebelum menawarkan solusi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا رَأْيُكَ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
-    تَالِيَةٍ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ أَنَّنَا نَحْتَاجُ إِلَى
-    قَرَارٍ وَاضِحٍ.'
-  sample_answer: مَوْقِفِي فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-  focus: Memahami kebutuhan klien.
+- coach: الْعَمِيلُ يَطْلُبُ تَقْرِيرًا أَسْرَعَ. كَيْفَ نَبْدَأُ؟
+  hint: 'Jawab dengan struktur B2 memakai: دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.'
+  sample_answer: دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
+  focus: Membuka dengan menggali kebutuhan.
   expected_keywords:
-  - مَوْقِفِي
-  - أَنَّ
-  - حَاجَةِ
-  - الْعَمِيلِ
-  - إِلَى
-  indonesian_explanation: Posisi saya adalah bahwa kebutuhan klien pada laporan yang lebih cepat membutuhkan keputusan yang
-    jelas.
-- coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
-  sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  focus: Menjelaskan opsi.
-  expected_keywords:
-  - لَدَيْنَا
-  - خِيَارَانِ،
-  - وَكُلُّ
-  - خِيَارٍ
-  - لَهُ
-  indonesian_explanation: Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- coach: 'استخدم الفكرة: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.'
-  sample_answer: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  focus: Menangani concern.
-  expected_keywords:
+  - دَعْنِي
   - أَفْهَمُ
-  - هَذَا
-  - الِاهْتِمَامَ،
-  - وَسَأُوَضِّحُ
-  - التَّفَاصِيلَ
-  indonesian_explanation: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- coach: 'استخدم الفكرة: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  hint: 'Jawab dengan struktur B2 memakai: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.'
-  sample_answer: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
-  focus: Mengonfirmasi next step.
+  - مَا
+  - يَهُمُّ
+  - الْعَمِيلَ
+  indonesian_explanation: Coba aku pahami dulu apa yang penting bagi klien.
+- coach: 'استخدم الفكرة: مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟'
+  hint: 'Jawab dengan struktur B2 memakai: مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟'
+  sample_answer: مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
+  focus: Bertanya prioritas.
   expected_keywords:
-  - الْخُطْوَةُ
-  - التَّالِيَةُ
-  - هِيَ
-  - مُرَاجَعَةُ
-  - الِاتِّفَاقِ
-  indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
+  - مَا
+  - الْجُزْءُ
+  - الْأَهَمُّ
+  - بِالنِّسْبَةِ
+  - لَكَ
+  indonesian_explanation: Bagian mana yang paling penting untukmu?
+- coach: 'استخدم الفكرة: هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟'
+  hint: 'Jawab dengan struktur B2 memakai: هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟'
+  sample_answer: هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
+  focus: Mengonfirmasi pemahaman.
+  expected_keywords:
+  - هَلْ
+  - فَهِمْتُ
+  - طَلَبَكَ
+  - صَحِيحًا
+  indonesian_explanation: Apa aku sudah paham permintaanmu dengan benar?
+- coach: 'استخدم الفكرة: قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.'
+  hint: 'Jawab dengan struktur B2 memakai: قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.'
+  sample_answer: قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.
+  focus: Menyaring kebutuhan.
+  expected_keywords:
+  - قَدْ
+  - لَا
+  - تَحْتَاجُ
+  - إِلَى
+  - كُلِّ
+  indonesian_explanation: Mungkin kamu tidak butuh semua detail sekarang.
 target_phrases:
-- مَوْقِفِي فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+- دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
+- مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
+- هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
+- قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.
 - سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ.
 rubric:
   speaking:

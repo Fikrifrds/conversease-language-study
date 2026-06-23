@@ -1,16 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya melihat bahwa poin mendiskusikan solusi masalah kompleks adalah
-    bagian dari masalah yang lebih besar."?
+  prompt: Frasa mana yang berarti "Aku mulai dengan mendefinisikan masalah, bukan solusi."?
   options:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  - أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
+  - ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
+  - أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
+  correct_answer: أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Penyebab utamanya mungkin lemahnya pengaturan."?
+  prompt: Frasa mana yang berarti "Lalu aku tanya penyebab, dampak, dan tradeoff."?
   options:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.
+  - أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ.
+  - أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ.
+  correct_answer: ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ.

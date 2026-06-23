@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami kebutuhan klien tentang mengonfirmasi langkah
-    berikutnya.'
-  target_response: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Mari rangkum yang sudah kita sepakati singkat.'
+  target_response: لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ تَأْكِيدُ الْخُطْوَاتِ التَّالِيَةِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua opsi, dan setiap opsi memiliki manfaat.'
-  target_response: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-  acceptable_responses:
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.'
-  target_response: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-  acceptable_responses:
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  - لِنُلَخِّصْ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ.
 - prompt: 'Ucapkan dalam bahasa Arab: Langkah berikutnya adalah meninjau kesepakatan.'
-  target_response: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  target_response: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
   acceptable_responses:
-  - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku sebut dokumen, tenggat, dan pemilik tugas.'
+  target_response: أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.
+  acceptable_responses:
+  - أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Kalau ada yang belum jelas, kita perjelas sekarang.'
+  target_response: إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.
+  acceptable_responses:
+  - إِنْ بَقِيَ شَيْءٌ غَيْرُ وَاضِحٍ، نُوَضِّحُهُ الْآنَ.

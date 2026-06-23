@@ -1,18 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami dari artikel bahwa topik menanggapi informasi baru
-    penting.'
-  target_response: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Informasi ini sedikit mengubah gambaran.'
+  target_response: هَذِهِ الْمَعْلُومَةُ تُغَيِّرُ الصُّورَةَ قَلِيلًا.
   acceptable_responses:
-  - أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita harus memastikan bahwa sumbernya tepercaya.'
-  target_response: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
+  - هَذِهِ الْمَعْلُومَةُ تُغَيِّرُ الصُّورَةَ قَلِيلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Tadinya kita kira harga penyebabnya.'
+  target_response: كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.
   acceptable_responses:
-  - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Sudut pandang ini membutuhkan bukti yang lebih kuat.'
-  target_response: وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
+  - كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ السَّبَبُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sebelum memutuskan, kita pastikan sumbernya.'
+  target_response: قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
   acceptable_responses:
-  - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
-- prompt: 'Ucapkan dalam bahasa Arab: Setelah informasi baru, pendapat saya sedikit berubah.'
-  target_response: بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  - قَبْلَ أَنْ نُقَرِّرَ، نَتَأَكَّدُ مِنَ الْمَصْدَرِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Aku tinjau ulang, tapi tidak mengubah semuanya.'
+  target_response: أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.
   acceptable_responses:
-  - بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.
+  - أُعِيدُ النَّظَرَ، لَكِنْ لَا أُغَيِّرُ كُلَّ شَيْءٍ.

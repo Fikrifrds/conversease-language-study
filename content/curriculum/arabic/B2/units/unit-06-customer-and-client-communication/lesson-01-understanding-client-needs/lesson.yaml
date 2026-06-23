@@ -4,9 +4,9 @@ title: Understanding Client Needs
 status: published
 estimated_minutes: 16
 conversation_situation: understanding_client_needs
-conversation_goal: Latih percakapan Arab B2 untuk memahami kebutuhan klien dengan alasan, contoh, respons,
-  dan rekomendasi.
-grammar_summary: Gunakan أُرِيدُ أَنْ أَفْهَمَ، لَدَيْنَا، أَفْهَمُ، dan سَأُرْسِلُ untuk komunikasi klien.
+conversation_goal: Latih percakapan Arab B2 untuk menggali kebutuhan klien sebelum menawarkan solusi.
+grammar_summary: Gunakan مَا الَّذِي يَهُمُّكَ أَكْثَرَ، دَعْنِي أَفْهَمُ، dan هَلْ فَهِمْتُ صَحِيحًا
+  untuk memahami klien.
 required_sections:
 - conversation_goal
 - situation_setup

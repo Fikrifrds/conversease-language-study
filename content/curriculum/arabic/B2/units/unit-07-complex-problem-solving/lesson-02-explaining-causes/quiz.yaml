@@ -1,16 +1,15 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya melihat bahwa poin menjelaskan penyebab adalah bagian dari masalah
-    yang lebih besar."?
+  prompt: Frasa mana yang berarti "Mari bedakan gejala dan akar penyebab."?
   options:
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+  - لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
+  - يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
+  - هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
+  correct_answer: لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Penyebab utamanya mungkin lemahnya pengaturan."?
+  prompt: Frasa mana yang berarti "Keterlambatan itu karena lemahnya kategorisasi."?
   options:
-  - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
-  - أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
-  - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
-  correct_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
+  - يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.
+  - لِنُفَرِّقْ بَيْنَ الْعَرَضِ وَالسَّبَبِ الْجَذْرِيِّ.
+  - هَذَا لَيْسَ مُجَرَّدَ نَقْصٍ فِي الْعَدَدِ.
+  correct_answer: يَعُودُ التَّأَخُّرُ إِلَى ضَعْفِ التَّصْنِيفِ.

@@ -1,17 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya ingin memahami kebutuhan klien tentang memahami kebutuhan klien.'
-  target_response: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Coba aku pahami dulu apa yang penting bagi klien.'
+  target_response: دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
   acceptable_responses:
-  - أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Kita punya dua opsi, dan setiap opsi memiliki manfaat.'
-  target_response: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
+  - دَعْنِي أَفْهَمُ مَا يَهُمُّ الْعَمِيلَ أَوَّلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Bagian mana yang paling penting untukmu?'
+  target_response: مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
   acceptable_responses:
-  - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.'
-  target_response: أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
+  - مَا الْجُزْءُ الْأَهَمُّ بِالنِّسْبَةِ لَكَ؟
+- prompt: 'Ucapkan dalam bahasa Arab: Apa aku sudah paham permintaanmu dengan benar?'
+  target_response: هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
   acceptable_responses:
-  - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
-- prompt: 'Ucapkan dalam bahasa Arab: Langkah berikutnya adalah meninjau kesepakatan.'
-  target_response: الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - هَلْ فَهِمْتُ طَلَبَكَ صَحِيحًا؟
+- prompt: 'Ucapkan dalam bahasa Arab: Mungkin kamu tidak butuh semua detail sekarang.'
+  target_response: قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.
   acceptable_responses:
-  - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.
+  - قَدْ لَا تَحْتَاجُ إِلَى كُلِّ التَّفَاصِيلِ الْآنَ.

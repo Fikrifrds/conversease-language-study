@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** سَمِعْتُ أَنَّ لَدَيْكَ رَأْيًا فِي تَوْظِيفِ مُخْتَبِرٍ جَدِيدٍ. -> Aku dengar kamu punya pendapat soal merekrut tester baru.
-- **Karim:** نَعَمْ. مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Iya. Posisi aku, topik ini penting buat dibahas.
-- **Ahmad:** وَلِمَاذَا الْآنَ تَحْدِيدًا؟ -> Kenapa harus sekarang?
-- **Karim:** لِأَنَّ الْأَخْطَاءَ تَزِيدُ كُلَّ أُسْبُوعٍ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Karena bug-nya nambah tiap minggu. Contohnya, tim butuh keputusan cepat.
-- **Ahmad:** لَكِنَّ التَّوْظِيفَ مُكْلِفٌ. -> Tapi merekrut itu mahal.
-- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Aku paham poin lawannya, tapi manfaatnya lebih besar.
-- **Ahmad:** إِذَنْ مَا اقْتِرَاحُكَ؟ -> Jadi usulmu apa?
-- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ، وَنُجَرِّبَهُ شَهْرًا. -> Karena itu aku lebih memilih kita sepakat di arah ini, dan coba dulu sebulan.
+- **Ahmad:** سَنُصَوِّتُ عَلَى تَغْيِيرِ الْأَدَاةِ. مَا مَوْقِفُكَ؟ -> Kita akan memilih soal ganti tool. Apa posisimu?
+- **Karim:** مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ. -> Posisiku jelas: aku mendukung arah ini.
+- **Ahmad:** بِشَكْلٍ كَامِلٍ؟ -> Sepenuhnya?
+- **Karim:** أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ، لَكِنْ بِشَرْطٍ. -> Aku mendukung idenya secara prinsip, tapi dengan syarat.
+- **Ahmad:** وَمَا رَأْيُكَ فِي الْجَدْوَلِ الْحَالِيِّ؟ -> Bagaimana pendapatmu soal jadwal sekarang?
+- **Karim:** لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ. دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ. -> Aku tidak sepenuhnya setuju, dan punya pandangan berbeda. Coba aku jelaskan alasan posisiku singkat.
+- **Ahmad:** تَفَضَّلْ. -> Silakan.
+- **Karim:** بِاخْتِصَارٍ، أَنَا أُفَضِّلُ هَذَا الْخِيَارَ مَعَ مُرَاجَعَةٍ بَعْدَ أُسْبُوعٍ. -> Singkatnya, aku lebih memilih opsi ini dengan tinjauan setelah sepekan.
