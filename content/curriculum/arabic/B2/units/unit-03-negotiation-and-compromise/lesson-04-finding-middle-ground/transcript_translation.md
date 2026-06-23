@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي الْوُصُولِ إِلَى حَلٍّ وَسَطٍ فِي الْمِيزَانِيَّةِ؟ -> Keberatan apa yang mungkin muncul dalam mencari jalan tengah dalam anggaran?
-- **Omar:** الطَّرَفُ الأَوَّلُ يُرِيدُ تَقْلِيلَ التَّكْلِفَةِ. -> pihak pertama ingin mengurangi biaya
-- **Khalid:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي الْوُصُولِ إِلَى حَلٍّ وَسَطٍ فِي الْمِيزَانِيَّةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam mencari jalan tengah dalam anggaran?
-- **Omar:** وَالطَّرَفُ الثَّانِي يُرِيدُ حِفَاظًا أَكْبَرَ عَلَى الْجَوْدَةِ. -> pihak kedua ingin menjaga kualitas lebih besar
-- **Khalid:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي الْوُصُولِ إِلَى حَلٍّ وَسَطٍ فِي الْمِيزَانِيَّةِ؟ -> Kesulitan apa yang mungkin muncul dalam mencari jalan tengah dalam anggaran?
-- **Omar:** قَدْ لا يَقْبَلُ أَحَدُهُمَا حَلًّا كَامِلًا. -> salah satu pihak mungkin tidak menerima solusi penuh
-- **Khalid:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي الْوُصُولِ إِلَى حَلٍّ وَسَطٍ فِي الْمِيزَانِيَّةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang mencari jalan tengah dalam anggaran berubah menjadi tindakan jelas?
-- **Omar:** نُقَلِّلُ جُزْءًا صَغِيرًا وَنَحْمِي الْمِيزَةَ الأَهَمَّ. -> kita mengurangi bagian kecil dan melindungi fitur paling penting
+- **Khalid:** فَرِيقَانِ يَخْتَلِفَانِ عَلَى الْمِيزَانِيَّةِ. أَحَدُهُمَا يُرِيدُ خَفْضَ التَّكْلِفَةِ. -> Dua tim berbeda pendapat soal anggaran. Yang satu mau menekan biaya.
+- **Omar:** وَالْآخَرُ يُرِيدُ حِمَايَةَ الْجَوْدَةِ. أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ. -> Dan yang lain mau menjaga kualitas. Aku paham kekhawatiranmu, tapi kita punya opsi lain.
+- **Khalid:** هَلْ يُمْكِنُ إِرْضَاءُ الِاثْنَيْنِ؟ -> Bisa memuaskan keduanya?
+- **Omar:** يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ. -> Kita bisa mencapai solusi tengah.
+- **Khalid:** كَيْفَ بِالضَّبْطِ؟ -> Caranya gimana tepatnya?
+- **Omar:** أَوْلَوِيَّتِي هِيَ أَنْ نَحْمِيَ الْمِيزَةَ الْأَهَمَّ، وَنُقَلِّلَ جُزْءًا صَغِيرًا فَقَطْ. -> Prioritas aku adalah melindungi fitur paling penting, dan hanya memangkas bagian kecil.
+- **Khalid:** هَذَا تَوَازُنٌ جَيِّدٌ. -> Itu keseimbangan yang bagus.
+- **Omar:** إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ. -> Kalau kita sepakat soal itu, langkah berikutnya jelas.

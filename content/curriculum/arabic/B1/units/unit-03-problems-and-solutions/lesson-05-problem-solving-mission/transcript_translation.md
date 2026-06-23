@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Omar:** إِذَا سَأَلَكَ شَخْصٌ عَنْ حَلِّ مُشْكِلَةِ الْحُضُورِ فِي الْفَعَالِيَّةِ، مَاذَا تَقُولُ أَوَّلًا؟ -> Jika seseorang bertanya tentang menyelesaikan masalah kehadiran acara, apa yang kamu katakan dulu?
-- **Raka:** بَدَأَ الأَمْرُ عِنْدَمَا عَدَدُ الْحَاضِرِينَ أَقَلُّ مِنَ الْمُتَوَقَّعِ. -> Situasinya mulai ketika jumlah peserta lebih sedikit dari perkiraan.
-- **Omar:** مَا الَّذِي جَعَلَ الْحِوَارَ عَنْ الْفَعَالِيَّةِ أَوْضَحَ؟ -> Apa yang membuat percakapan tentang menyelesaikan masalah kehadiran acara menjadi lebih jelas?
-- **Raka:** كَانَ التَّحَدِّي هَكَذَا: الإِعْلَانُ لَمْ يَصِلْ إِلَى كُلِّ الْمَجْمُوعَاتِ. -> Tantangannya begini: pengumumannya belum sampai ke semua grup.
-- **Omar:** مَا الْجُمْلَةُ الأَخِيرَةُ الَّتِي تُلَخِّصُ حَلِّ مُشْكِلَةِ الْحُضُورِ فِي الْفَعَالِيَّةِ؟ -> Kalimat terakhir apa yang merangkum menyelesaikan masalah kehadiran acara?
-- **Raka:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَنُرْسِلُ تَذْكِيرًا وَنُغَيِّرُ وَقْتَ الْبَدْءِ قَلِيلًا. -> Saya bertindak dengan tenang, dan kita akan mengirim pengingat dan sedikit mengubah waktu mulai.
+- **Omar:** عَدَدُ الْحُضُورِ فِي الْفَعَالِيَّةِ أَقَلُّ مِنَ الْمُتَوَقَّعِ. مَا رَأْيُكَ؟ -> Jumlah hadirin di acara lebih sedikit dari perkiraan. Gimana menurutmu?
+- **Raka:** سَأَشْرَحُ الْمُشْكِلَةَ بِاخْتِصَارٍ: السَّبَبُ غَيْرُ وَاضِحٍ حَتَّى الْآنَ. -> Aku jelaskan masalahnya singkat: penyebabnya belum jelas sampai sekarang.
+- **Omar:** فَمَاذَا نَفْعَلُ؟ -> Jadi kita harus gimana?
+- **Raka:** أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا مُؤَقَّتًا: تَذْكِيرٌ وَتَغْيِيرٌ صَغِيرٌ فِي الْوَقْتِ. -> Aku usul kita coba solusi sementara: pengingat dan sedikit ubah waktunya.
+- **Omar:** وَإِنْ لَمْ يَكْفِ؟ -> Kalau belum cukup?
+- **Raka:** إِذَا نَجَحَ، نُثَبِّتُهُ، وَإِذَا لَمْ يَنْجَحْ، نَبْحَثُ عَنْ خِيَارٍ آخَرَ. -> Kalau berhasil, kita tetapkan, dan kalau tidak, kita cari pilihan lain.

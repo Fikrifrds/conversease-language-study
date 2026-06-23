@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ سَتُحَوِّلُ بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah membangun argumen tentang prioritas menjadi keputusan?
-- **Karim:** أَبْدَأُ بِالْمَوْقِفِ ثُمَّ أُضِيفُ سَبَبَيْنِ. -> saya mulai dengan posisi lalu menambah dua alasan
-- **Ahmad:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam membangun argumen tentang prioritas?
-- **Karim:** الْفَرِيقُ يَحْتَاجُ إِلَى قَرَارٍ لا إِلَى شَرْحٍ طَوِيلٍ. -> tim membutuhkan keputusan, bukan penjelasan panjang
-- **Ahmad:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ؟ -> Kesulitan apa yang mungkin muncul dalam membangun argumen tentang prioritas?
-- **Karim:** قَدْ يَسْأَلُونَ عَنِ الْبَدِيلِ. -> mereka mungkin bertanya tentang alternatif
-- **Ahmad:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang membangun argumen tentang prioritas berubah menjadi tindakan jelas?
-- **Karim:** أُقَدِّمُ بَدِيلًا قَصِيرًا وَتَوْصِيَةً وَاحِدَةً. -> saya memberi alternatif singkat dan satu rekomendasi
+- **Ahmad:** عَلَيْنَا أَنْ نَخْتَارَ مُورِّدًا قَبْلَ نِهَايَةِ الْأُسْبُوعِ. مَا رَأْيُكَ؟ -> Kita harus pilih vendor sebelum akhir minggu. Gimana menurutmu?
+- **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ، وَأَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. -> Posisi aku, topik ini penting buat dibahas, dan aku dukung dengan dua alasan jelas.
+- **Ahmad:** تَفَضَّلْ، مَا هُمَا؟ -> Silakan, apa dua-duanya?
+- **Karim:** الْأَوَّلُ السِّعْرُ، وَالثَّانِي الدَّعْمُ السَّرِيعُ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ عِنْدَ أَيِّ خَلَلٍ. -> Pertama harga, kedua dukungan cepat. Contohnya, tim butuh keputusan cepat saat ada gangguan.
+- **Ahmad:** لَكِنَّ الْمُورِّدَ الْأَرْخَصَ دَعْمُهُ بَطِيءٌ. -> Tapi vendor yang paling murah dukungannya lambat.
+- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ مَعَ الْخِيَارِ الْمُتَوَازِنِ. -> Aku paham poin lawannya, tapi manfaatnya lebih besar dengan pilihan yang seimbang.
+- **Ahmad:** إِذَنْ بِأَيِّهِمَا تُوصِي؟ -> Jadi kamu rekomendasi yang mana?
+- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ: الْمُورِّدُ الثَّانِي مَعَ عَقْدٍ تَجْرِيبِيٍّ. -> Karena itu aku lebih memilih kita sepakat di arah ini: vendor kedua dengan kontrak percobaan.

@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Omar:** أُرِيدُ أَنْ أَفْهَمَ مُشْكِلَةِ الصَّوْتِ فِي الِاجْتِمَاعِ. مَا أَوَّلُ تَفْصِيلٍ؟ -> Aku ingin memahami masalah audio di rapat. Apa detail pertamanya?
-- **Raka:** بَدَأَ الأَمْرُ عِنْدَمَا الصَّوْتُ يَنْقَطِعُ عِنْدَ كُلِّ مُشَارِكٍ. -> Situasinya mulai ketika audio terputus pada setiap peserta.
-- **Omar:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي مُشْكِلَةِ الصَّوْتِ فِي الِاجْتِمَاعِ؟ -> Bagian mana dalam masalah audio di rapat yang perlu kamu jelaskan?
-- **Raka:** كَانَ التَّحَدِّي هَكَذَا: الِاجْتِمَاعُ مُهِمٌّ لِلْقَرَارِ الْيَوْمَ. -> Tantangannya begini: rapatnya penting untuk keputusan hari ini.
-- **Omar:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ مُشْكِلَةِ الصَّوْتِ فِي الِاجْتِمَاعِ؟ -> Bagaimana kamu menutup jawaban tentang masalah audio di rapat?
-- **Raka:** تَصَرَّفْتُ بِهُدُوءٍ، وَنَسْتَخْدِمُ غُرْفَةً أُخْرَى وَنُسَجِّلُ النِّقَاطَ. -> Saya bertindak dengan tenang, dan kita memakai room lain dan mencatat poinnya.
+- **Omar:** الصَّوْتُ يَنْقَطِعُ فِي الِاجْتِمَاعِ. مَا الْحَلُّ؟ -> Audionya putus-putus di rapat. Apa solusinya?
+- **Raka:** أَقْتَرِحُ أَنْ نُجَرِّبَ حَلًّا بَسِيطًا، يُمْكِنُنَا أَنْ نُغَيِّرَ الْخُطَّةَ قَلِيلًا. -> Aku usul kita coba solusi sederhana, kita bisa mengubah rencananya sedikit.
+- **Omar:** هَلْ هَذَا أَفْضَلُ مِنَ التَّأْجِيلِ؟ -> Apa itu lebih baik daripada menunda?
+- **Raka:** هَذَا الْحَلُّ أَسْرَعُ مِنَ الْخِيَارِ الْآخَرِ، لَكِنَّهُ يَحْتَاجُ إِلَى مُرَاجَعَةٍ. -> Solusi ini lebih cepat dari pilihan lain, tapi perlu ditinjau.
+- **Omar:** حَسَنًا، نُجَرِّبُهُ. -> Oke, kita coba.
+- **Raka:** إِذَا نَجَحَ، نَسْتَمِرُّ عَلَيْهِ. -> Kalau berhasil, kita lanjutkan.

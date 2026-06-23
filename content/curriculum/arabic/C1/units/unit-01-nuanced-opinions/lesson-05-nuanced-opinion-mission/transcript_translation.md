@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ رَأْيٍ نِهَائِيٍّ فِي خُطَّةِ الْعَامِ؟ -> Apa standar terpenting untuk keberhasilan opini akhir tentang rencana tahunan?
-- **Karim:** أَبْدَأُ بِمَا أُؤَيِّدُهُ ثُمَّ أُسَمِّي التَّحَفُّظَ بِدِقَّةٍ. -> saya mulai dengan yang saya dukung lalu menyebut catatan secara tepat
-- **Ahmad:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ رَأْيٍ نِهَائِيٍّ فِي خُطَّةِ الْعَامِ؟ -> Pesan apa yang perlu tetap diingat setelah opini akhir tentang rencana tahunan?
-- **Karim:** هَذَا يُظْهِرُ أَنَّ الرَّأْيَ لَيْسَ رَفْضًا بَسِيطًا. -> ini menunjukkan opini bukan penolakan sederhana
-- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي رَأْيٍ نِهَائِيٍّ فِي خُطَّةِ الْعَامِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam opini akhir tentang rencana tahunan?
-- **Karim:** إِذَا طَلَبُوا جَوَابًا مُخْتَصَرًا جِدًّا. -> jika mereka meminta jawaban sangat singkat
-- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي رَأْيٍ نِهَائِيٍّ فِي خُطَّةِ الْعَامِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang opini akhir tentang rencana tahunan dengan jelas?
-- **Karim:** أَقُولُ: أُؤَيِّدُ الِاتِّجَاهَ، لَكِنَّ التَّنْفِيذَ يَحْتَاجُ إِلَى ضَوَابِطَ. -> saya bilang: saya mendukung arahnya, tetapi implementasi perlu kontrol
+- **Ahmad:** أَعْطِنِي رَأْيًا نِهَائِيًّا فِي خُطَّةِ الْعَامِ. -> Beri aku pendapat final soal rencana tahunan.
+- **Karim:** مِنْ حَيْثُ الْمَبْدَأِ، أَمِيلُ إِلَى تَأْيِيدِهَا، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip aku cenderung mendukungnya, tapi ada satu catatan penting.
+- **Ahmad:** اِبْدَأْ بِمَا تُؤَيِّدُهُ. -> Mulai dari yang kamu dukung.
+- **Karim:** أُؤَيِّدُ الِاتِّجَاهَ الْعَامَّ، وَلَسْتُ مُتَيَقِّنًا مِنْ كُلِّ التَّفَاصِيلِ، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى أَنَّهُ مَعْقُولٌ. -> Aku mendukung arah umumnya, dan belum yakin di semua detailnya, tapi buktinya mengarah bahwa ini masuk akal.
+- **Ahmad:** وَالتَّحَفُّظُ؟ -> Catatannya?
+- **Karim:** مِنْ جِهَةٍ الْخُطَّةُ طَمُوحَةٌ، وَمِنْ جِهَةٍ أُخْرَى لَهَا مَخَاطِرُ وَاضِحَةٌ فِي التَّنْفِيذِ. وَأُقَدِّرُ رَأْيَ مَنْ يُرِيدُهَا أَسْرَعَ، غَيْرَ أَنَّنِي أَرَاهَا مِنْ زَاوِيَةِ الضَّوَابِطِ. -> Di satu sisi rencananya ambisius, di sisi lain ada risiko jelas pada eksekusi. Dan aku menghargai pendapat yang mau lebih cepat, tapi aku melihatnya dari sisi kontrol.
+- **Ahmad:** فَمَا خُلَاصَتُكَ؟ -> Jadi apa kesimpulanmu?
+- **Karim:** لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً: أُؤَيِّدُ الِاتِّجَاهَ، لَكِنَّ التَّنْفِيذَ يَحْتَاجُ إِلَى ضَوَابِطَ. -> Karena itu aku lebih memilih rumusan yang lebih tepat: aku mendukung arahnya, tapi eksekusinya butuh kontrol.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** فِي سِيَاقِ رِسَالَةٍ مُخْتَصَرَةٍ مِنْ شَرِيكٍ أَجْنَبِيٍّ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam konteks pesan singkat dari partner asing, di mana kamu membutuhkan presisi paling besar?
-- **Aisha:** لا أَفْتَرِضُ أَنَّ قِصَرَ الرِّسَالَةِ يَعْنِي الْبُرُودَ. -> saya tidak menganggap pesan singkat berarti dingin
-- **Fatimah:** أَيُّ شَرْطٍ فِي سِيَاقِ رِسَالَةٍ مُخْتَصَرَةٍ مِنْ شَرِيكٍ أَجْنَبِيٍّ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam konteks pesan singkat dari partner asing yang membuat opini lebih presisi dan seimbang?
-- **Aisha:** قَدْ تَكُونُ طَرِيقَتُهُمْ فِي الْعَمَلِ أَكْثَرَ مُبَاشَرَةً. -> cara kerja mereka mungkin lebih langsung
-- **Fatimah:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سِيَاقِ رِسَالَةٍ مُخْتَصَرَةٍ مِنْ شَرِيكٍ أَجْنَبِيٍّ؟ -> Kesalahpahaman apa yang mungkin muncul dalam konteks pesan singkat dari partner asing?
-- **Aisha:** إِذَا شَعَرَ فَرِيقُنَا بِالانْزِعَاجِ. -> jika tim kita merasa terganggu
-- **Fatimah:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سِيَاقِ رِسَالَةٍ مُخْتَصَرَةٍ مِنْ شَرِيكٍ أَجْنَبِيٍّ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang konteks pesan singkat dari partner asing dengan jelas?
-- **Aisha:** أَطْلُبُ تَوْضِيحًا مُهَذَّبًا قَبْلَ أَنْ أَحْكُمَ. -> saya meminta klarifikasi sopan sebelum menilai
+- **Fatimah:** وَصَلَتْنَا رِسَالَةٌ مُخْتَصَرَةٌ جِدًّا مِنْ شَرِيكٍ أَجْنَبِيٍّ. -> Kita dapat pesan yang sangat singkat dari partner asing.
+- **Aisha:** قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ؛ فَالْقِصَرُ لَا يَعْنِي الْبُرُودَ. -> Sebelum membalas, kita harus membaca konteksnya dengan cermat; singkat bukan berarti dingin.
+- **Fatimah:** فَرِيقُنَا شَعَرَ بِالِانْزِعَاجِ. -> Tim kita merasa terganggu.
+- **Aisha:** فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ؛ قَدْ تَكُونُ طَرِيقَتُهُمْ أَكْثَرَ مُبَاشَرَةً. -> Di negaraku, norma ini dipahami dengan cara berbeda; cara kerja mereka mungkin lebih langsung.
+- **Fatimah:** فَكَيْفَ نَتَأَكَّدُ؟ -> Jadi gimana kita memastikannya?
+- **Aisha:** هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ أَطْلُبُ تَوْضِيحًا مُهَذَّبًا قَبْلَ أَنْ أَحْكُمَ. -> Bisakah aku bertanya dengan cara yang lebih tactful? Aku minta klarifikasi sopan sebelum menilai.
+- **Fatimah:** وَمَا الْأَصْلُ فِي ذَلِكَ؟ -> Apa prinsipnya?
+- **Aisha:** الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.

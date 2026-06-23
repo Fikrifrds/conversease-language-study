@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** إِذَا تَغَيَّرَ السِّيَاقُ فِي مَخَاطِرِ تَأْخِيرِ الِاعْتِمَادِ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam risiko keterlambatan approval, bagaimana kamu menyesuaikan jawaban?
-- **Noura:** أُسَمِّي الْخَطَرَ بِوُضُوحٍ دُونَ تَهْوِيلٍ. -> saya menyebut risiko dengan jelas tanpa membesar-besarkan
-- **Maryam:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ مَخَاطِرِ تَأْخِيرِ الِاعْتِمَادِ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani risiko keterlambatan approval, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
-- **Noura:** التَّأْخِيرُ قَدْ يُؤَثِّرُ فِي الْإِطْلَاقِ وَثِقَةِ الْعَمِيلِ. -> keterlambatan bisa memengaruhi peluncuran dan kepercayaan klien
-- **Maryam:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي مَخَاطِرِ تَأْخِيرِ الِاعْتِمَادِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam risiko keterlambatan approval?
-- **Noura:** إِذَا طَلَبُوا حَلًّا فَوْرِيًّا. -> jika mereka meminta solusi segera
-- **Maryam:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي مَخَاطِرِ تَأْخِيرِ الِاعْتِمَادِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang risiko keterlambatan approval dengan jelas?
-- **Noura:** أَقْتَرِحُ مَسَارًا مُؤَقَّتًا وَقَرَارًا نِهَائِيًّا غَدًا. -> saya mengusulkan jalur sementara dan keputusan final besok
+- **Maryam:** قَدْ يَتَأَخَّرُ الِاعْتِمَادُ. كَيْفَ نُبَلِّغُ الْإِدَارَةَ؟ -> Approval mungkin terlambat. Gimana kita memberitahu manajemen?
+- **Noura:** نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ لِحَجْمِ الْخَطَرِ. -> Pertama kita perlu menyatukan pemahaman pihak utama soal besarnya risiko.
+- **Maryam:** أَلَا نُهَوِّلُ الْأَمْرَ؟ -> Jangan sampai kita membesar-besarkan?
+- **Noura:** لَا، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ، فَأُسَمِّي الْخَطَرَ بِوُضُوحٍ دُونَ تَهْوِيلٍ. -> Tidak, lebih baik kita kelola ekspektasi sebelum menjanjikan apa pun, jadi aku sebut risikonya dengan jelas tanpa berlebihan.
+- **Maryam:** وَمَا أَثَرُهُ؟ -> Apa dampaknya?
+- **Noura:** سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ: التَّأْخِيرُ قَدْ يُؤَثِّرُ فِي الْإِطْلَاقِ وَثِقَةِ الْعَمِيلِ. -> Aku akan menyampaikan ini dengan sensitif, karena topiknya penting: keterlambatan bisa memengaruhi peluncuran dan kepercayaan klien.
+- **Maryam:** وَإِنْ طَلَبُوا حَلًّا فَوْرِيًّا؟ -> Kalau mereka minta solusi segera?
+- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ: مَسَارٌ مُؤَقَّتٌ وَقَرَارٌ نِهَائِيٌّ غَدًا. -> Ada risiko potensial, tapi bisa kita kurangi dengan rencana jelas: jalur sementara dan keputusan final besok.

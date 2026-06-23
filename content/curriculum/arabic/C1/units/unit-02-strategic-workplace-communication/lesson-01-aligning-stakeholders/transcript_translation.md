@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** فِي مُوَاءَمَةِ فَرِيقِ الْمُنْتَجِ وَالْمَبِيعَاتِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam alignment tim produk dan sales, di mana kamu membutuhkan presisi paling besar?
-- **Noura:** أَبْدَأُ بِمَا يَتَّفِقُ عَلَيْهِ الطَّرَفَانِ. -> saya mulai dari hal yang disetujui kedua pihak
-- **Maryam:** أَيُّ شَرْطٍ فِي مُوَاءَمَةِ فَرِيقِ الْمُنْتَجِ وَالْمَبِيعَاتِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam alignment tim produk dan sales yang membuat opini lebih presisi dan seimbang?
-- **Noura:** الِاخْتِلَافُ الْحَقِيقِيُّ لَيْسَ فِي الْهَدَفِ بَلْ فِي التَّوْقِيتِ. -> perbedaan sebenarnya bukan pada target, tetapi timing
-- **Maryam:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي مُوَاءَمَةِ فَرِيقِ الْمُنْتَجِ وَالْمَبِيعَاتِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam alignment tim produk dan sales?
-- **Noura:** إِذَا شَعَرَ أَحَدُهُمْ أَنَّنَا نُهَمِّشُهُ. -> jika salah satu merasa kita meminggirkannya
-- **Maryam:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي مُوَاءَمَةِ فَرِيقِ الْمُنْتَجِ وَالْمَبِيعَاتِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang alignment tim produk dan sales dengan jelas?
-- **Noura:** أَطْلُبُ مِنْهُ تَحْدِيدَ مَا يَحْتَاجُ إِلَيْهِ لِلِاطْمِئْنَانِ. -> saya memintanya menyebut apa yang dibutuhkan agar tenang
+- **Maryam:** فَرِيقُ الْمُنْتَجِ وَالْمَبِيعَاتِ يَخْتَلِفَانِ. مِنْ أَيْنَ نَبْدَأُ؟ -> Tim produk dan sales berbeda pendapat. Mulai dari mana?
+- **Noura:** نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
+- **Maryam:** وَأَيْنَ الْخِلَافُ الْحَقِيقِيُّ؟ -> Di mana perbedaan sebenarnya?
+- **Noura:** لَيْسَ فِي الْهَدَفِ بَلْ فِي التَّوْقِيتِ، وَمِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. -> Bukan di target tapi di timing, dan lebih baik kita kelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
+- **Maryam:** قَدْ يَشْعُرُ أَحَدُهُمْ أَنَّنَا نُهَمِّشُهُ. -> Salah satunya mungkin merasa dipinggirkan.
+- **Noura:** سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ، وَأَسْأَلُهُ مَا يَحْتَاجُ إِلَيْهِ لِلِاطْمِئْنَانِ. -> Aku akan menyampaikan ini dengan sensitif, karena topiknya penting, dan menanyakan apa yang dia butuhkan agar tenang.
+- **Maryam:** فَكَيْفَ نُنْهِي النِّقَاشَ؟ -> Jadi gimana kita menutup diskusinya?
+- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ، وَإِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Ada risiko potensial, tapi kita bisa menguranginya dengan rencana yang jelas, dan kalau kita sepakat pada kerangka ini eksekusinya akan lebih mudah.

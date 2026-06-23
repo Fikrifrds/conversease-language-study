@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Keberatan apa yang mungkin muncul dalam solusi untuk masalah error berulang?
-- **Tariq:** أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ. -> saya merekomendasikan checklist singkat sebelum delivery
-- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam solusi untuk masalah error berulang?
-- **Tariq:** لِأَنَّ الأَخْطَاءَ تَحْدُثُ فِي نَفْسِ الْخُطْوَةِ غَالِبًا. -> karena error sering terjadi pada langkah yang sama
-- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Kesulitan apa yang mungkin muncul dalam solusi untuk masalah error berulang?
-- **Tariq:** قَدْ يَرَى الْفَرِيقُ أَنَّهَا خُطْوَةٌ إِضَافِيَّةٌ. -> tim mungkin melihatnya sebagai langkah tambahan
-- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang solusi untuk masalah error berulang berubah menjadi tindakan jelas?
-- **Tariq:** نُجَرِّبُهَا أُسْبُوعًا وَنَقِيسُ عَدَدَ الأَخْطَاءِ. -> kita mencobanya seminggu dan mengukur jumlah error
+- **Rami:** تَتَكَرَّرُ الْأَخْطَاءُ نَفْسُهَا قَبْلَ كُلِّ تَسْلِيمٍ. -> Error yang sama berulang sebelum tiap delivery.
+- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ، فَالْأَخْطَاءُ تَحْدُثُ فِي نَفْسِ الْخُطْوَةِ. -> Menurutku poin ini bagian dari masalah yang lebih besar, soalnya error terjadi di langkah yang sama.
+- **Rami:** فَمَا السَّبَبُ؟ -> Lalu penyebabnya apa?
+- **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ غِيَابَ فَحْصٍ أَخِيرٍ قَبْلَ التَّسْلِيمِ. -> Penyebab utamanya mungkin tidak adanya pengecekan akhir sebelum delivery.
+- **Rami:** قَدْ يَرَاهُ الْفَرِيقُ خُطْوَةً إِضَافِيَّةً. -> Tim mungkin menganggapnya langkah tambahan.
+- **Tariq:** أَفْهَمُ، فَلِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ، لَكِنَّ الْقَائِمَةَ قَصِيرَةٌ. -> Aku paham, tiap solusi punya manfaat dan efek samping, tapi checklist-nya singkat.
+- **Rami:** إِذَنْ بِمَ تُوصِي؟ -> Jadi kamu rekomendasi apa?
+- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: قَائِمَةُ فَحْصٍ صَغِيرَةٌ نُجَرِّبُهَا أُسْبُوعًا وَنَقِيسُ عَدَدَ الْأَخْطَاءِ. -> Aku merekomendasikan solusi bertahap: checklist kecil yang kita coba seminggu lalu ukur jumlah error.

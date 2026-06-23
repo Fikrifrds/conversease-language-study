@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ؟ -> Keberatan apa yang mungkin muncul dalam konfirmasi langkah setelah panggilan?
-- **Aisha:** أُعِيدُ ذِكْرَ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ. -> saya mengulang apa yang disepakati secara singkat
-- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam konfirmasi langkah setelah panggilan?
-- **Aisha:** أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ. -> saya menyebut dokumen, tenggat, dan pemilik tugas
-- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ؟ -> Kesulitan apa yang mungkin muncul dalam konfirmasi langkah setelah panggilan?
-- **Aisha:** قَدْ يَكُونُ بَعْضُهُ غَيْرَ وَاضِحٍ فِي الْمُكَالَمَةِ. -> sebagian mungkin belum jelas dalam panggilan
-- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَأْكِيدِ الْخُطْوَاتِ بَعْدَ الْمُكَالَمَةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang konfirmasi langkah setelah panggilan berubah menjadi tindakan jelas?
-- **Aisha:** أُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ خَمْسِ دَقَائِقَ. -> saya mengirim konfirmasi tertulis setelah lima menit
+- **Fatimah:** انْتَهَتِ الْمُكَالَمَةُ مَعَ الْعَمِيلِ. مَا الْخُطْوَةُ الْآنَ؟ -> Panggilan dengan klien sudah selesai. Langkahnya sekarang apa?
+- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ بِدِقَّةٍ، فَأُعِيدُ ذِكْرَ مَا اتَّفَقْنَا عَلَيْهِ بِاخْتِصَارٍ. -> Aku ingin memahami kebutuhan klien dengan tepat, jadi aku mengulang yang disepakati secara singkat.
+- **Fatimah:** وَمَاذَا نَذْكُرُ بِالضَّبْطِ؟ -> Apa yang kita sebut persisnya?
+- **Aisha:** أَذْكُرُ الْمُسْتَنَدَ وَالْمَوْعِدَ وَصَاحِبَ الْمَهَمَّةِ. -> Aku menyebut dokumen, tenggat, dan pemilik tugas.
+- **Fatimah:** بَعْضُ النِّقَاطِ كَانَتْ غَيْرَ وَاضِحَةٍ. -> Beberapa poin tadi belum jelas.
+- **Aisha:** أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ كِتَابَةً حَتَّى لَا يَضِيعَ شَيْءٌ. -> Aku paham kekhawatiran itu, dan aku akan menjelaskan detailnya secara tertulis supaya tidak ada yang hilang.
+- **Fatimah:** مَتَى تُرْسِلِينَهُ؟ -> Kapan kamu mengirimnya?
+- **Aisha:** سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ خَمْسِ دَقَائِقَ. -> Aku akan kirim konfirmasi tertulis dalam lima menit.

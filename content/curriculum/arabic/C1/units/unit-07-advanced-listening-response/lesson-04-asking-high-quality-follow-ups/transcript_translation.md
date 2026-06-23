@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** إِذَا تَغَيَّرَ السِّيَاقُ فِي سُؤَالِ مُتَابَعَةٍ بَعْدَ حَدِيثٍ غَامِضٍ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam follow-up setelah ucapan ambigu, bagaimana kamu menyesuaikan jawaban?
-- **Hasan:** لا أَسْأَلُ سُؤَالًا عَامًّا مِثْلَ: مَاذَا تَقْصِدُ؟ -> saya tidak bertanya umum seperti: maksud Anda apa?
-- **Yusuf:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ سُؤَالِ مُتَابَعَةٍ بَعْدَ حَدِيثٍ غَامِضٍ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani follow-up setelah ucapan ambigu, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
-- **Hasan:** أَسْأَلُ: مَا الْمَعْيَارُ الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> saya bertanya: standar apa yang akan mengubah keputusan ini?
-- **Yusuf:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُؤَالِ مُتَابَعَةٍ بَعْدَ حَدِيثٍ غَامِضٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam follow-up setelah ucapan ambigu?
-- **Hasan:** إِذَا كَانَ الطَّرَفُ الآخَرُ مُتَرَدِّدًا. -> jika pihak lain ragu
-- **Yusuf:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُؤَالِ مُتَابَعَةٍ بَعْدَ حَدِيثٍ غَامِضٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang follow-up setelah ucapan ambigu dengan jelas?
-- **Hasan:** أُعْطِيهِ خِيَارَيْنِ لِيُوَضِّحَ مَوْقِفَهُ. -> saya memberinya dua opsi agar ia menjelaskan posisinya
+- **Yusuf:** الطَّرَفُ الْآخَرُ تَكَلَّمَ بِغُمُوضٍ. كَيْفَ تَسْأَلُ مُتَابَعَةً؟ -> Pihak lain bicara ambigu. Gimana kamu mengajukan follow-up?
+- **Hasan:** لَا أَسْأَلُ سُؤَالًا عَامًّا مِثْلَ "مَاذَا تَقْصِدُ؟"؛ سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الْمِعْيَارُ الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Aku tidak bertanya umum seperti "maksud Anda apa?"; pertanyaan follow-up terbaiknya: standar apa yang akan mengubah keputusan ini?
+- **Yusuf:** لِمَاذَا هَذَا الْأَفْضَلُ؟ -> Kenapa itu lebih baik?
+- **Hasan:** لِأَنَّ الْمَعْنَى الضِّمْنِيَّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا، فَأُسَاعِدُهُ عَلَى التَّحْدِيدِ. -> Karena makna tersiratnya adalah pembicara belum sepenuhnya yakin, jadi aku membantunya menjadi spesifik.
+- **Yusuf:** وَإِنْ بَقِيَ مُتَرَدِّدًا؟ -> Kalau dia tetap ragu?
+- **Hasan:** سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ، فَأُعْطِيهِ خِيَارَيْنِ لِيُوَضِّحَ مَوْقِفَهُ. -> Aku akan menjawab poin utama dulu, lalu kembali ke detail, jadi aku beri dia dua opsi agar memperjelas posisinya.
+- **Yusuf:** فَمَا الْأَصْلُ؟ -> Prinsipnya?
+- **Hasan:** بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Dengan cara ini, aku tidak hanya merespons kata-katanya, tapi maksudnya.

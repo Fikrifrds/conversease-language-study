@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** كَيْفَ تُقَدِّمُ حُجَّةِ أَنَّ الْحَلَّ السَّرِيعَ أَفْضَلُ دَائِمًا مِنْ غَيْرِ أَنْ تَبْدُوَ حَادًّا؟ -> Bagaimana kamu menyampaikan argumen bahwa solusi cepat selalu lebih baik tanpa terdengar keras?
-- **Omar:** أُحَدِّي كَلِمَةَ دَائِمًا بِأَدَبٍ. -> saya menantang kata selalu dengan sopan
-- **Khalid:** أَيُّ عِبَارَةٍ فِي حُجَّةِ أَنَّ الْحَلَّ السَّرِيعَ أَفْضَلُ دَائِمًا قَدْ تُسَاءُ فَهْمًا إِنْ لَمْ تُصَغْ بِدِقَّةٍ؟ -> Ungkapan mana dalam argumen bahwa solusi cepat selalu lebih baik yang bisa disalahpahami jika tidak dirumuskan dengan presisi?
-- **Omar:** هُنَاكَ حَالاتٌ تَجْعَلُ الْحَلَّ السَّرِيعَ مُكْلِفًا لاحِقًا. -> ada kasus yang membuat solusi cepat mahal nantinya
-- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي حُجَّةِ أَنَّ الْحَلَّ السَّرِيعَ أَفْضَلُ دَائِمًا؟ -> Kesalahpahaman apa yang mungkin muncul dalam argumen bahwa solusi cepat selalu lebih baik?
-- **Omar:** إِذَا قَالَ أَحَدٌ إِنَّنِي أُعَقِّدُ الأُمُورَ. -> jika seseorang bilang saya memperumit hal
-- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي حُجَّةِ أَنَّ الْحَلَّ السَّرِيعَ أَفْضَلُ دَائِمًا بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang argumen bahwa solusi cepat selalu lebih baik dengan jelas?
-- **Omar:** أُوَضِّحُ أَنَّنِي أَبْحَثُ عَنْ شَرْطِ النَّجَاحِ لا عَنْ تَأْخِيرٍ. -> saya menjelaskan bahwa saya mencari syarat keberhasilan, bukan penundaan
+- **Khalid:** يُصِرُّ أَحَدُهُمْ أَنَّ الْحَلَّ السَّرِيعَ أَفْضَلُ دَائِمًا. -> Salah satunya bersikeras solusi cepat selalu lebih baik.
+- **Omar:** أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ، وَأُحَدِّي كَلِمَةَ "دَائِمًا" بِأَدَبٍ. -> Menurutku asumsi dasarnya di sini belum jelas, dan aku menantang kata "selalu" dengan sopan.
+- **Khalid:** كَيْفَ تُحَدِّيهَا دُونَ أَنْ تَبْدُوَ مُعَطِّلًا؟ -> Gimana kamu menantangnya tanpa terkesan menghambat?
+- **Omar:** يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ: هُنَاكَ حَالَاتٌ تَجْعَلُ الْحَلَّ السَّرِيعَ مُكْلِفًا لَاحِقًا. -> Kita bisa menantang argumen ini dari sisi bukti: ada kasus yang membuat solusi cepat mahal nantinya.
+- **Khalid:** وَإِنْ قَالُوا إِنَّكَ تُعَقِّدُ الْأُمُورَ؟ -> Kalau mereka bilang kamu memperumit?
+- **Omar:** الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ، فَأَنَا أَبْحَثُ عَنْ شَرْطِ النَّجَاحِ لَا عَنْ تَأْخِيرٍ. -> Bukti paling kuat adalah hasilnya berulang dalam lebih dari satu konteks, jadi aku mencari syarat keberhasilan, bukan penundaan.
+- **Khalid:** فَمَا خُلَاصَتُكَ؟ -> Jadi kesimpulanmu?
+- **Omar:** لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ. -> Karena itu respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.

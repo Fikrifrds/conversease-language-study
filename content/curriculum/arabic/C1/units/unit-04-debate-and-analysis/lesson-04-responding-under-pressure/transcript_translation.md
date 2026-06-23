@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** إِذَا تَغَيَّرَ السِّيَاقُ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam pertanyaan menekan dalam debat umum, bagaimana kamu menyesuaikan jawaban?
-- **Omar:** لا أُجِيبُ بِدِفَاعٍ سَرِيعٍ. -> saya tidak menjawab dengan defensif cepat
-- **Khalid:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani pertanyaan menekan dalam debat umum, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
-- **Omar:** أُعِيدُ السُّؤَالَ بِصِيَاغَةٍ أَهْدَأَ ثُمَّ أُجِيبُ. -> saya mengulang pertanyaan dengan formulasi lebih tenang lalu menjawab
-- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pertanyaan menekan dalam debat umum?
-- **Omar:** إِذَا قَاطَعَنِي شَخْصٌ مَرَّةً أُخْرَى. -> jika seseorang memotong lagi
-- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pertanyaan menekan dalam debat umum dengan jelas?
-- **Omar:** أَطْلُبُ دَقِيقَةً لِإِكْمَالِ النُّقْطَةِ ثُمَّ أَعُودُ إِلَيْهِ. -> saya meminta satu menit untuk menyelesaikan poin lalu kembali padanya
+- **Khalid:** فِي النِّقَاشِ الْعَامِّ، جَاءَكَ سُؤَالٌ ضَاغِطٌ فَجْأَةً. -> Dalam debat umum, tiba-tiba datang pertanyaan yang menekan.
+- **Omar:** لَا أُجِيبُ بِدِفَاعٍ سَرِيعٍ. أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ. -> Aku tidak menjawab dengan defensif cepat. Menurutku asumsi dasarnya di sini belum jelas.
+- **Khalid:** فَكَيْفَ تَرُدُّ؟ -> Jadi gimana kamu merespons?
+- **Omar:** تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ، وَأُعِيدُ السُّؤَالَ بِصِيَاغَةٍ أَهْدَأَ ثُمَّ أُجِيبُ. -> Di bawah tekanan, aku fokus pada poin inti dan tidak berpanjang-panjang, lalu aku ulang pertanyaannya dengan rumusan lebih tenang lalu menjawab.
+- **Khalid:** وَإِنْ قَاطَعَكَ مَرَّةً أُخْرَى؟ -> Kalau dia memotongmu lagi?
+- **Omar:** يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ، فَأَطْلُبُ دَقِيقَةً لِإِكْمَالِ النُّقْطَةِ ثُمَّ أَعُودُ إِلَيْهِ. -> Kita bisa menantang argumen ini dari sisi bukti, jadi aku minta satu menit untuk menyelesaikan poin lalu kembali padanya.
+- **Khalid:** فَمَا الْأَسَاسُ؟ -> Jadi dasarnya apa?
+- **Omar:** لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ. -> Karena itu respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.

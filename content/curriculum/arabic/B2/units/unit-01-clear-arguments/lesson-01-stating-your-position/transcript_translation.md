@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** مَا مَوْقِفُكَ مِنْ تَجْرِبَةِ النِّظَامِ الْجَدِيدِ؟ -> Apa posisimu tentang uji coba sistem baru?
-- **Karim:** أَرَى أَنْ نَبْدَأَ بِفَرِيقٍ صَغِيرٍ. -> saya pikir kita mulai dengan tim kecil
-- **Ahmad:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam uji coba sistem baru?
-- **Karim:** لِأَنَّ الْمَخَاطِرَ مَحْدُودَةٌ وَالنَّتَائِجَ قَابِلَةٌ لِلْقِيَاسِ. -> karena risikonya terbatas dan hasilnya bisa diukur
-- **Ahmad:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ؟ -> Kesulitan apa yang mungkin muncul dalam uji coba sistem baru?
-- **Karim:** قَدْ يَقُولُ بَعْضُهُمْ إِنَّ التَّجْرِبَةَ تُبْطِئُ الْعَمَلَ. -> sebagian mungkin bilang uji coba memperlambat kerja
-- **Ahmad:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَجْرِبَةِ النِّظَامِ الْجَدِيدِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang uji coba sistem baru berubah menjadi tindakan jelas?
-- **Karim:** نُحَدِّدُ مُدَّةَ أُسْبُوعَيْنِ وَمِقْيَاسَيْنِ لِلنَّجَاحِ. -> kita menentukan dua minggu dan dua ukuran keberhasilan
+- **Ahmad:** سَمِعْتُ أَنَّ لَدَيْكَ رَأْيًا فِي تَوْظِيفِ مُخْتَبِرٍ جَدِيدٍ. -> Aku dengar kamu punya pendapat soal merekrut tester baru.
+- **Karim:** نَعَمْ. مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Iya. Posisi aku, topik ini penting buat dibahas.
+- **Ahmad:** وَلِمَاذَا الْآنَ تَحْدِيدًا؟ -> Kenapa harus sekarang?
+- **Karim:** لِأَنَّ الْأَخْطَاءَ تَزِيدُ كُلَّ أُسْبُوعٍ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Karena bug-nya nambah tiap minggu. Contohnya, tim butuh keputusan cepat.
+- **Ahmad:** لَكِنَّ التَّوْظِيفَ مُكْلِفٌ. -> Tapi merekrut itu mahal.
+- **Karim:** أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Aku paham poin lawannya, tapi manfaatnya lebih besar.
+- **Ahmad:** إِذَنْ مَا اقْتِرَاحُكَ؟ -> Jadi usulmu apa?
+- **Karim:** لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ، وَنُجَرِّبَهُ شَهْرًا. -> Karena itu aku lebih memilih kita sepakat di arah ini, dan coba dulu sebulan.

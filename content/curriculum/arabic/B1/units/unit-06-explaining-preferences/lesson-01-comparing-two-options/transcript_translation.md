@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Fatimah:** حَدِّثْنِي عَنْ الِاخْتِيَارِ بَيْنَ دَوْرَتَيْنِ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang pilihan antara dua kursus. Kapan situasinya mulai?
-- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا الدَّوْرَةُ الأُولَى أَقْصَرُ وَأَوْضَحُ. -> Situasinya mulai ketika kursus pertama lebih pendek dan lebih jelas.
-- **Fatimah:** أَيُّ تَفْصِيلٍ فِي الِاخْتِيَارِ بَيْنَ دَوْرَتَيْنِ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam pilihan antara dua kursus yang membuat situasinya lebih sulit?
-- **Noura:** كَانَ التَّحَدِّي هَكَذَا: الدَّوْرَةُ الثَّانِيَةُ فِيهَا مَوَادُّ أَكْثَرُ. -> Tantangannya begini: kursus kedua punya materi lebih banyak.
-- **Fatimah:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي الِاخْتِيَارِ بَيْنَ دَوْرَتَيْنِ؟ -> Apa yang akan kamu lakukan setelah itu dalam pilihan antara dua kursus?
-- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَأُفَضِّلُ الأُولَى لِأَنَّهَا تُنَاسِبُ وَقْتِي. -> Saya bertindak dengan tenang, dan saya memilih yang pertama karena cocok dengan waktu saya.
+- **Fatimah:** عَلَيْنَا أَنْ نَخْتَارَ مَطْعَمًا لِلْغَدَاءِ. -> Kita harus pilih restoran buat makan siang.
+- **Noura:** عِنْدَنَا خِيَارَانِ مُخْتَلِفَانِ. الْخِيَارُ الْأَوَّلُ أَسْرَعُ. -> Kita punya dua pilihan berbeda. Pilihan pertama lebih cepat.
+- **Fatimah:** وَالثَّانِي؟ -> Yang kedua?
+- **Noura:** الْخِيَارُ الثَّانِي أَرْخَصُ، لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ أَيْضًا. -> Pilihan kedua lebih murah, tapi kualitas juga penting.
+- **Fatimah:** فَكَيْفَ نُقَرِّرُ؟ -> Jadi gimana kita memutuskannya?
+- **Noura:** نَحْتَاجُ إِلَى مُقَارَنَةٍ هَادِئَةٍ. -> Kita perlu perbandingan yang tenang.

@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** أُرِيدُ أَنْ أَفْهَمَ تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ. مَا أَوَّلُ تَفْصِيلٍ؟ -> Aku ingin memahami keterlambatan kereta ke kota. Apa detail pertamanya?
-- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا أَعْلَنُوا تَأْخِيرًا لِمُدَّةِ نِصْفِ سَاعَةٍ. -> Situasinya mulai ketika mereka mengumumkan keterlambatan setengah jam.
-- **Ahmad:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ؟ -> Bagian mana dalam keterlambatan kereta ke kota yang perlu kamu jelaskan?
-- **Karim:** كَانَ التَّحَدِّي هَكَذَا: لَدَيَّ مَوْعِدٌ بَعْدَ الظُّهْرِ. -> Tantangannya begini: saya punya janji setelah siang.
-- **Ahmad:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ؟ -> Bagaimana kamu menutup jawaban tentang keterlambatan kereta ke kota?
-- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُرْسِلُ رِسَالَةً وَأَطْلُبُ تَأْخِيرَ الْمَوْعِدِ. -> Saya bertindak dengan tenang, dan saya akan mengirim pesan dan meminta jadwal dimundurkan.
+- **Ahmad:** أَيْنَ أَنْتَ الْآنَ؟ تَأَخَّرْتَ. -> Kamu di mana sekarang? Kamu terlambat.
+- **Karim:** تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا. السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ. -> Perjalanannya sedikit terlambat. Penyebabnya kemacetan di jalan.
+- **Ahmad:** وَمَتَى تَصِلُ؟ -> Kapan kamu tiba?
+- **Karim:** سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً. آسِفٌ عَلَى التَّأْخِيرِ. -> Aku tiba setelah tiga puluh menit. Maaf atas keterlambatannya.
+- **Ahmad:** لَا بَأْسَ، سَنَنْتَظِرُكَ. -> Nggak apa-apa, kita tunggu kamu.
+- **Karim:** سَأُخْبِرُكَ إِذَا تَغَيَّرَ الْوَقْتُ. -> Aku kabari kamu kalau waktunya berubah.

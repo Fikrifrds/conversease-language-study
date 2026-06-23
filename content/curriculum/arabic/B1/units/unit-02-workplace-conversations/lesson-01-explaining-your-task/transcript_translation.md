@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Maryam:** حَدِّثْنِي عَنْ مَهَمَّةِ تَرْتِيبِ مَلَفَّاتِ الْعَمِيلِ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang tugas mengatur file klien. Kapan situasinya mulai?
-- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا أَجْمَعُ الْمَلَفَّاتِ فِي مُجَلَّدٍ وَاحِدٍ. -> Situasinya mulai ketika saya mengumpulkan file dalam satu folder.
-- **Maryam:** أَيُّ تَفْصِيلٍ فِي مَهَمَّةِ تَرْتِيبِ مَلَفَّاتِ الْعَمِيلِ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam tugas mengatur file klien yang membuat situasinya lebih sulit?
-- **Noura:** كَانَ التَّحَدِّي هَكَذَا: بَعْضُ الْأَسْمَاءِ غَيْرُ مُوَحَّدَةٍ. -> Tantangannya begini: beberapa nama belum seragam.
-- **Maryam:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي مَهَمَّةِ تَرْتِيبِ مَلَفَّاتِ الْعَمِيلِ؟ -> Apa yang akan kamu lakukan setelah itu dalam tugas mengatur file klien?
-- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُرَتِّبُهَا ثُمَّ أَطْلُبُ مُرَاجَعَةً قَصِيرَةً. -> Saya bertindak dengan tenang, dan saya akan merapikannya lalu meminta review singkat.
+- **Maryam:** عَلَامَ تَعْمَلِينَ هَذَا الْأُسْبُوعَ؟ -> Kamu lagi ngerjain apa minggu ini?
+- **Noura:** أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ. الْهَدَفُ هُوَ تَحْسِينُ التَّنْظِيمِ. -> Aku ngerjain tugas baru minggu ini. Tujuannya memperbaiki pengaturan.
+- **Maryam:** وَمِنْ أَيْنَ تَبْدَئِينَ؟ -> Mulai dari mana?
+- **Noura:** أَحْتَاجُ إِلَى مُرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا، وَالْخُطْوَةُ التَّالِيَةُ هِيَ إِرْسَالُ مُلَخَّصٍ. -> Aku perlu meninjau detailnya dulu, dan langkah berikutnya mengirim ringkasan.
+- **Maryam:** وَمَتَى تَنْتَهِينَ؟ -> Kapan selesai?
+- **Noura:** سَأُكْمِلُ ذَلِكَ قَبْلَ نِهَايَةِ الْيَوْمِ. -> Aku akan menyelesaikannya sebelum akhir hari.

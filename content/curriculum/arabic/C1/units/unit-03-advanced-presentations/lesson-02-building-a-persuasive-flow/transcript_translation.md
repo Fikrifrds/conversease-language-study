@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ تُقَدِّمُ تَسَلْسُلِ عَرْضٍ عَنْ النُّمُوِّ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادًّا؟ -> Bagaimana kamu menyampaikan alur presentasi tentang pertumbuhan tanpa terdengar keras?
-- **Lina:** أَبْنِي الْحُجَّةَ مِنَ الْمُشْكِلَةِ إِلَى الدَّلِيلِ ثُمَّ الْخِيَارِ. -> saya membangun argumen dari masalah ke bukti lalu opsi
-- **Salma:** أَيُّ عِبَارَةٍ فِي تَسَلْسُلِ عَرْضٍ عَنْ النُّمُوِّ قَدْ تُسَاءُ فَهْمًا إِنْ لَمْ تُصَغْ بِدِقَّةٍ؟ -> Ungkapan mana dalam alur presentasi tentang pertumbuhan yang bisa disalahpahami jika tidak dirumuskan dengan presisi?
-- **Lina:** لا أَبْدَأُ بِالأَرْقَامِ قَبْلَ أَنْ يَفْهَمُوا السُّؤَالَ. -> saya tidak mulai dengan angka sebelum mereka memahami pertanyaan
-- **Salma:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي تَسَلْسُلِ عَرْضٍ عَنْ النُّمُوِّ؟ -> Kesalahpahaman apa yang mungkin muncul dalam alur presentasi tentang pertumbuhan?
-- **Lina:** إِذَا قَاطَعَنِي شَخْصٌ بِسُؤَالٍ مُبَكِّرٍ. -> jika seseorang memotong dengan pertanyaan terlalu awal
-- **Salma:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي تَسَلْسُلِ عَرْضٍ عَنْ النُّمُوِّ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang alur presentasi tentang pertumbuhan dengan jelas?
-- **Lina:** أُجِيبُ بِاخْتِصَارٍ ثُمَّ أَرْبِطُهُ بِالشَّرِيحَةِ التَّالِيَةِ. -> saya menjawab singkat lalu mengaitkannya dengan slide berikutnya
+- **Salma:** عَرْضُ النُّمُوِّ مَلِيءٌ بِالْأَرْقَامِ. كَيْفَ تُرَتِّبِينَهُ؟ -> Presentasi pertumbuhan penuh angka. Gimana kamu menyusunnya?
+- **Lina:** سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ قَبْلَ أَيِّ رَقْمٍ. -> Aku akan membingkai topiknya dulu agar audiens memahami konteksnya sebelum angka apa pun.
+- **Salma:** ثُمَّ؟ -> Lalu?
+- **Lina:** بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً: مِنَ الْمُشْكِلَةِ إِلَى الدَّلِيلِ ثُمَّ الْخِيَارِ. -> Setelah itu, aku akan membangun alur persuasif langkah demi langkah: dari masalah ke bukti lalu opsi.
+- **Salma:** وَإِنْ قَاطَعَكِ أَحَدٌ مُبَكِّرًا؟ -> Kalau ada yang memotong terlalu awal?
+- **Lina:** الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ، فَأُجِيبُ بِاخْتِصَارٍ ثُمَّ أَرْبِطُهُ بِالشَّرِيحَةِ التَّالِيَةِ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak, jadi aku jawab singkat lalu mengaitkannya dengan slide berikutnya.
+- **Salma:** وَالْخِتَامُ؟ -> Penutupnya?
+- **Lina:** فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada akhirnya, aku ingin audiens pulang dengan pesan yang jelas.

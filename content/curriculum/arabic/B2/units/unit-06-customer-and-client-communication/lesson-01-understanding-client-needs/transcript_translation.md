@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا مَوْقِفُكَ مِنْ حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Apa posisimu tentang kebutuhan klien pada laporan yang lebih cepat?
-- **Aisha:** أَسْأَلُ أَيُّ جُزْءٍ مِنَ التَّقْرِيرِ هُوَ الأَهَمُّ. -> saya bertanya bagian laporan mana yang paling penting
-- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Alasan atau detail apa yang mendukung poin ini dalam kebutuhan klien pada laporan yang lebih cepat?
-- **Aisha:** قَدْ لا يَحْتَاجُ الْعَمِيلُ إِلَى كُلِّ التَّفَاصِيلِ الآنَ. -> klien mungkin tidak butuh semua detail sekarang
-- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Kesulitan apa yang mungkin muncul dalam kebutuhan klien pada laporan yang lebih cepat?
-- **Aisha:** قَدْ يَشْعُرُ أَنَّنَا نُقَلِّلُ مِنْ طَلَبِهِ. -> dia mungkin merasa kita mengecilkan permintaannya
-- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang kebutuhan klien pada laporan yang lebih cepat berubah menjadi tindakan jelas?
-- **Aisha:** أُقَدِّمُ نُسْخَةً مُخْتَصَرَةً الْيَوْمَ وَتَفْصِيلًا غَدًا. -> saya menawarkan versi ringkas hari ini dan detail besok
+- **Fatimah:** الْعَمِيلُ يَطْلُبُ تَقْرِيرًا أَسْرَعَ. كَيْفَ نَبْدَأُ؟ -> Klien minta laporan yang lebih cepat. Kita mulai gimana?
+- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ التَّقْرِيرِ: أَيُّ جُزْءٍ هُوَ الْأَهَمُّ؟ -> Aku ingin memahami kebutuhan klien soal laporannya: bagian mana yang paling penting?
+- **Fatimah:** رُبَّمَا لَا يَحْتَاجُ كُلَّ التَّفَاصِيلِ الْآنَ. -> Mungkin dia nggak butuh semua detail sekarang.
+- **Aisha:** بِالضَّبْطِ. لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. -> Tepat. Kita punya dua opsi, dan tiap opsi ada manfaatnya.
+- **Fatimah:** لَكِنَّهُ قَدْ يَشْعُرُ أَنَّنَا نُقَلِّلُ مِنْ طَلَبِهِ. -> Tapi dia mungkin merasa kita mengecilkan permintaannya.
+- **Aisha:** أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ: نُسْخَةٌ مُخْتَصَرَةٌ الْيَوْمَ وَتَفْصِيلٌ غَدًا. -> Aku paham kekhawatiran itu, dan aku akan menjelaskan detailnya: versi ringkas hari ini, detail besok.
+- **Fatimah:** وَمَا الَّذِي نُؤَكِّدُهُ لَهُ؟ -> Apa yang kita konfirmasi ke dia?
+- **Aisha:** سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Aku akan kirim konfirmasi tertulis setelah panggilan ini.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ. -> Beri saya contoh konkret tentang kekhawatiran klien tentang keterlambatan delivery.
-- **Aisha:** أَعْتَرِفُ بِالْقَلَقِ قَبْلَ أَنْ أَشْرَحَ السَّبَبَ. -> saya mengakui kekhawatiran sebelum menjelaskan alasan
-- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam kekhawatiran klien tentang keterlambatan delivery?
-- **Aisha:** التَّأْخِيرُ جَاءَ مِنْ مُرَاجَعَةِ الأَمَانِ. -> keterlambatan terjadi karena review keamanan
-- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ؟ -> Kesulitan apa yang mungkin muncul dalam kekhawatiran klien tentang keterlambatan delivery?
-- **Aisha:** قَدْ يَطْلُبُ الْعَمِيلُ مَوْعِدًا نِهَائِيًّا فَوْرًا. -> klien mungkin meminta deadline final segera
-- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي قَلَقِ الْعَمِيلِ مِنْ تَأْخِيرِ التَّسْلِيمِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang kekhawatiran klien tentang keterlambatan delivery berubah menjadi tindakan jelas?
-- **Aisha:** أُقَدِّمُ مَوْعِدًا مُحَافِظًا وَتَحْدِيثًا يَوْمِيًّا. -> saya memberi tenggat konservatif dan update harian
+- **Fatimah:** الْعَمِيلُ قَلِقٌ مِنْ تَأْخِيرِ التَّسْلِيمِ. كَيْفَ نَرُدُّ؟ -> Klien khawatir soal keterlambatan delivery. Gimana kita merespons?
+- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ، وَأَعْتَرِفُ بِقَلَقِهِ قَبْلَ أَيِّ شَرْحٍ. -> Aku ingin memahami kebutuhan klien, dan mengakui kekhawatirannya sebelum penjelasan apa pun.
+- **Fatimah:** وَمَا سَبَبُ التَّأْخِيرِ؟ -> Apa penyebab keterlambatannya?
+- **Aisha:** جَاءَ مِنْ مُرَاجَعَةِ الْأَمَانِ. أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ بِهُدُوءٍ. -> Karena review keamanan. Aku paham kekhawatiran ini, dan aku akan menjelaskan detailnya dengan tenang.
+- **Fatimah:** قَدْ يَطْلُبُ مَوْعِدًا نِهَائِيًّا فَوْرًا. -> Dia mungkin minta deadline final segera.
+- **Aisha:** لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ: مَوْعِدٌ مُحَافِظٌ مَعَ تَحْدِيثٍ يَوْمِيٍّ. -> Kita punya dua opsi, dan tiap opsi ada manfaatnya: tenggat konservatif dengan update harian.
+- **Fatimah:** وَكَيْفَ نُطَمْئِنُهُ؟ -> Gimana kita menenangkannya?
+- **Aisha:** سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْمَوْعِدِ وَخُطَّةِ التَّحْدِيثِ. -> Aku akan kirim konfirmasi tertulis berisi tenggat dan rencana update.

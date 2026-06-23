@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ حِوَارٍ قِيَادِيٍّ عَنْ أَدَاءِ الْفَرِيقِ؟ -> Apa standar terpenting untuk keberhasilan percakapan leadership tentang performa tim?
-- **Tariq:** أَجْمَعُ الِاتِّجَاهَ وَالسُّؤَالَ وَالتَّغْذِيَةَ الرَّاجِعَةَ. -> saya menggabungkan arah, pertanyaan, dan feedback
-- **Rami:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ حِوَارٍ قِيَادِيٍّ عَنْ أَدَاءِ الْفَرِيقِ؟ -> Pesan apa yang perlu tetap diingat setelah percakapan leadership tentang performa tim?
-- **Tariq:** أُرِيدُ أَنْ يَخْرُجَ كُلُّ شَخْصٍ بِخُطْوَةٍ مَعْرُوفَةٍ. -> saya ingin setiap orang keluar dengan langkah yang diketahui
-- **Rami:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي حِوَارٍ قِيَادِيٍّ عَنْ أَدَاءِ الْفَرِيقِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam percakapan leadership tentang performa tim?
-- **Tariq:** إِذَا تَحَوَّلَ الْحِوَارُ إِلَى شَكْوَى عَامَّةٍ. -> jika percakapan berubah menjadi keluhan umum
-- **Rami:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي حِوَارٍ قِيَادِيٍّ عَنْ أَدَاءِ الْفَرِيقِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang percakapan leadership tentang performa tim dengan jelas?
-- **Tariq:** أُعِيدُهُ إِلَى سُلُوكٍ وَاحِدٍ وَمَوْعِدٍ وَاحِدٍ. -> saya mengembalikannya ke satu perilaku dan satu tenggat
+- **Rami:** سَتُجْرِي حِوَارًا قِيَادِيًّا عَنْ أَدَاءِ الْفَرِيقِ. كَيْفَ تَبْدَأُ؟ -> Kamu akan melakukan percakapan leadership soal performa tim. Gimana kamu memulainya?
+- **Tariq:** أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ، ثُمَّ أَجْمَعُ الِاتِّجَاهَ وَالسُّؤَالَ وَالتَّغْذِيَةَ الرَّاجِعَةَ. -> Hal pertama adalah menetapkan arah dengan jelas, lalu aku menggabungkan arah, pertanyaan, dan feedback.
+- **Rami:** مَا الَّذِي تُرِيدُهُ مِنَ الْحِوَارِ؟ -> Apa yang kamu inginkan dari percakapannya?
+- **Tariq:** أُرِيدُ أَنْ يَخْرُجَ كُلُّ شَخْصٍ بِخُطْوَةٍ مَعْرُوفَةٍ، فَالْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Aku ingin tiap orang keluar dengan langkah yang jelas, karena feedback yang berguna adalah yang berubah jadi langkah yang bisa diterapkan.
+- **Rami:** وَإِنْ تَحَوَّلَ إِلَى شَكْوَى عَامَّةٍ؟ -> Kalau berubah jadi keluhan umum?
+- **Tariq:** بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، أَسْأَلُ عَنْ سُلُوكٍ مُحَدَّدٍ، وَعِنْدَ اتِّخَاذِ الْقَرَارِ نُوَازِنُ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Daripada memberi jawaban langsung, aku tanya soal perilaku spesifik, dan saat mengambil keputusan kita menyeimbangkan kecepatan dan kualitas.
+- **Rami:** فَكَيْفَ تَخْتِمُ؟ -> Gimana kamu menutupnya?
+- **Tariq:** سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ: سُلُوكٌ وَاحِدٌ وَمَوْعِدٌ وَاحِدٌ. -> Aku tutup percakapan dengan memperjelas tanggung jawab dan tenggat: satu perilaku dan satu tenggat.

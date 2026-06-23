@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ مُسَوَّدَةِ الِاقْتِرَاحِ. -> Beri saya contoh konkret tentang draft proposal.
-- **Noura:** الْهَيْكَلُ جَيِّدٌ لَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> strukturnya bagus tetapi pembuka butuh tujuan lebih jelas
-- **Maryam:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam draft proposal?
-- **Noura:** أُرِيدُ أَنْ يَبْدُوَ التَّعْلِيقُ مُسَاعِدًا لا نَاقِدًا فَقَطْ. -> saya ingin feedback terdengar membantu, bukan hanya mengkritik
-- **Maryam:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ -> Kesulitan apa yang mungkin muncul dalam draft proposal?
-- **Noura:** قَدْ يَشْعُرُ صَاحِبُ الْمُسَوَّدَةِ بِالدِّفَاعِيَّةِ. -> pemilik draft mungkin merasa defensif
-- **Maryam:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مُسَوَّدَةِ الِاقْتِرَاحِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang draft proposal berubah menjadi tindakan jelas?
-- **Noura:** أَقْتَرِحُ جُمْلَةً بَدِيلَةً وَأَشْكُرُهُ عَلَى الْعَمَلِ. -> saya mengusulkan kalimat alternatif dan berterima kasih atas pekerjaannya
+- **Maryam:** قَرَأْتُ مُسَوَّدَتَكِ. مَا رَأْيُكِ فِيهَا؟ -> Aku sudah baca draft-mu. Menurutmu gimana?
+- **Noura:** الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> Strukturnya bagus, tapi pembukanya butuh tujuan yang lebih jelas.
+- **Maryam:** كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟ -> Gimana kita menyampaikannya secara konstruktif?
+- **Noura:** نَبْدَأُ بِالْإِيجَابِيِّ: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى. -> Kita mulai dari yang positif: idenya kuat, dan menambah satu tujuan akan membuatnya lebih kuat.
+- **Maryam:** وَمَاذَا عَنِ التَّفَاصِيلِ؟ -> Kalau detailnya gimana?
+- **Noura:** نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ. -> Kita sebutkan bagaimana klien akan mengukur keberhasilan setelah sebulan.
+- **Maryam:** ثُمَّ نُرْسِلُهَا؟ -> Lalu kita kirim?
+- **Noura:** نَعَمْ، أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ. -> Iya, aku kirim komentarnya dengan saran kecil untuk merumuskan ulang.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ؟ -> Mengapa kamu mendukung arah ini dalam penyebab keterlambatan support?
-- **Tariq:** الطَّلَبَاتُ زَادَتْ وَلَكِنَّ التَّصْنِيفَ لَمْ يَتَغَيَّرْ. -> request meningkat tetapi kategorisasi tidak berubah
-- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam penyebab keterlambatan support?
-- **Tariq:** لِذَلِكَ يَضِيعُ الْفَرِيقُ وَقْتًا فِي الْفَرْزِ. -> karena itu tim kehilangan waktu dalam sortir
-- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ؟ -> Kesulitan apa yang mungkin muncul dalam penyebab keterlambatan support?
-- **Tariq:** قَدْ يَلُومُ بَعْضُهُمْ عَدَدَ الْمُوَظَّفِينَ فَقَطْ. -> sebagian mungkin hanya menyalahkan jumlah staf
-- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي أَسْبَابِ تَأَخُّرِ الدَّعْمِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang penyebab keterlambatan support berubah menjadi tindakan jelas?
-- **Tariq:** نُجَرِّبُ تَصْنِيفًا أَوْضَحَ قَبْلَ زِيَادَةِ الْفَرِيقِ. -> kita mencoba kategorisasi lebih jelas sebelum menambah tim
+- **Rami:** الدَّعْمُ يَتَأَخَّرُ كَثِيرًا هَذَا الشَّهْرَ. لِمَاذَا؟ -> Support sering telat bulan ini. Kenapa?
+- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ: الطَّلَبَاتُ زَادَتْ وَالتَّصْنِيفُ لَمْ يَتَغَيَّرْ. -> Menurutku poin ini bagian dari masalah yang lebih besar: request naik tapi kategorisasinya nggak berubah.
+- **Rami:** فَأَيْنَ يَضِيعُ الْوَقْتُ؟ -> Lalu di mana waktunya terbuang?
+- **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّصْنِيفِ، فَيَضِيعُ الْفَرِيقُ فِي الْفَرْزِ. -> Penyebab utamanya mungkin lemahnya kategorisasi, jadi tim terbuang waktu menyortir.
+- **Rami:** بَعْضُهُمْ يَلُومُ عَدَدَ الْمُوَظَّفِينَ فَقَطْ. -> Sebagian cuma menyalahkan jumlah staf.
+- **Tariq:** لَكِنْ لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ، وَزِيَادَةُ الْفَرِيقِ وَحْدَهَا مُكْلِفَةٌ. -> Tapi tiap solusi punya manfaat dan efek samping, dan menambah tim saja itu mahal.
+- **Rami:** فَمَا الَّذِي تَقْتَرِحُهُ؟ -> Jadi apa usulmu?
+- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: نُجَرِّبُ تَصْنِيفًا أَوْضَحَ قَبْلَ زِيَادَةِ الْفَرِيقِ. -> Aku merekomendasikan solusi bertahap: coba kategorisasi yang lebih jelas sebelum menambah tim.

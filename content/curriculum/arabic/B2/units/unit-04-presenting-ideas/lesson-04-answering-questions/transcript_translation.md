@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي أَسْئِلَةِ الْجُمْهُورِ بَعْدَ الْعَرْضِ؟ -> Keberatan apa yang mungkin muncul dalam pertanyaan audiens setelah presentasi?
-- **Lina:** سَأَسْمَعُ السُّؤَالَ كَامِلًا قَبْلَ أَنْ أُجِيبَ. -> saya akan mendengar pertanyaan lengkap sebelum menjawab
-- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي أَسْئِلَةِ الْجُمْهُورِ بَعْدَ الْعَرْضِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam pertanyaan audiens setelah presentasi?
-- **Lina:** إِذَا لَمْ أَعْرِفِ الرَّقْمَ فَسَأَقُولُ ذَلِكَ بِوُضُوحٍ. -> jika saya tidak tahu angkanya, saya akan mengatakannya dengan jelas
-- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي أَسْئِلَةِ الْجُمْهُورِ بَعْدَ الْعَرْضِ؟ -> Kesulitan apa yang mungkin muncul dalam pertanyaan audiens setelah presentasi?
-- **Lina:** قَدْ يَسْأَلُونَ عَنْ شَيْءٍ خَارِجِ النِّطَاقِ. -> mereka mungkin bertanya hal di luar scope
-- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي أَسْئِلَةِ الْجُمْهُورِ بَعْدَ الْعَرْضِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang pertanyaan audiens setelah presentasi berubah menjadi tindakan jelas?
-- **Lina:** أَرْبِطُ الْجَوَابَ بِالْهَدَفِ الأَسَاسِيِّ لِلْعَرْضِ. -> saya menghubungkan jawaban dengan tujuan utama presentasi
+- **Salma:** الْعَرْضُ جَاهِزٌ، لَكِنْ مَاذَا عَنِ الْأَسْئِلَةِ بَعْدَهُ؟ -> Presentasinya siap, tapi gimana sesi tanya jawab setelahnya?
+- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ تُوَضِّحُ أَنِّي سَأُجِيبُ بَعْدَ كُلِّ سُؤَالٍ كَامِلٍ. -> Aku akan mulai dengan pembuka singkat yang menjelaskan kalau aku menjawab setelah tiap pertanyaan selesai.
+- **Salma:** وَإِذَا لَمْ تَعْرِفِي الْجَوَابَ؟ -> Kalau kamu nggak tahu jawabannya?
+- **Lina:** إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ، وَإِنْ جَهِلْتُ رَقْمًا قُلْتُ ذَلِكَ بِصَرَاحَةٍ. -> Kalau ada pertanyaan, aku akan menjawabnya dengan jelas, dan kalau tidak tahu suatu angka, aku bilang terus terang.
+- **Salma:** وَالْأَسْئِلَةُ خَارِجَ الْمَوْضُوعِ؟ -> Kalau pertanyaan di luar topik?
+- **Lina:** مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، فَأَرْبِطُ كُلَّ جَوَابٍ بِهَدَفِ الْعَرْضِ. -> Penting juga menyebut risikonya, jadi aku kaitkan tiap jawaban dengan tujuan presentasi.
+- **Salma:** خِتَامٌ ذَكِيٌّ. -> Penutup yang cerdas.
+- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً تُلَخِّصُ النِّقَاشَ كُلَّهُ. -> Sebagai penutup, aku akan mengusulkan langkah praktis yang merangkum seluruh diskusi.

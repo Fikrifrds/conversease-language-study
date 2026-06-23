@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Maryam:** أُرِيدُ أَنْ أَفْهَمَ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ. مَا أَوَّلُ تَفْصِيلٍ؟ -> Aku ingin memahami instruksi laporan baru. Apa detail pertamanya?
-- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا فَهِمْتُ الْجُزْءَ الأَوَّلَ مِنَ الْمَطْلُوبِ. -> Situasinya mulai ketika saya memahami bagian pertama dari tugasnya.
-- **Maryam:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟ -> Bagian mana dalam instruksi laporan baru yang perlu kamu jelaskan?
-- **Noura:** كَانَ التَّحَدِّي هَكَذَا: مَوْعِدُ التَّسْلِيمِ لَمْ يَكُنْ وَاضِحًا. -> Tantangannya begini: tenggat pengumpulan belum jelas.
-- **Maryam:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟ -> Bagaimana kamu menutup jawaban tentang instruksi laporan baru?
-- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُ عَنْهُ قَبْلَ أَنْ أَبْدَأَ الْكِتَابَةَ. -> Saya bertindak dengan tenang, dan saya akan menanyakannya sebelum mulai menulis.
+- **Maryam:** سَنُقَدِّمُ التَّقْرِيرَ فِي مَوْعِدٍ جَدِيدٍ. -> Kita akan menyerahkan laporan di tenggat baru.
+- **Noura:** هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟ مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟ -> Maksudmu tenggatnya berubah? Apa maksud poin ini?
+- **Maryam:** نَعَمْ، صَارَ يَوْمَ الْخَمِيسِ بَدَلَ الْجُمُعَةِ. -> Iya, jadi hari Kamis, bukan Jumat.
+- **Noura:** أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ. هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟ -> Aku tanya cuma buat memastikan. Bisa kamu ulang penjelasannya singkat?
+- **Maryam:** بِبَسَاطَةٍ: نُسَلِّمُ يَوْمَ الْخَمِيسِ صَبَاحًا. -> Singkatnya: kita kumpulkan Kamis pagi.
+- **Noura:** الْآنَ فَهِمْتُ الْمَطْلُوبَ. -> Sekarang aku paham yang diminta.

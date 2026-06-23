@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** إِذَا تَغَيَّرَ السِّيَاقُ فِي سُؤَالٍ صَعْبٍ عَنْ تَكْلِفَةِ الْخُطَّةِ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam pertanyaan sulit tentang biaya rencana, bagaimana kamu menyesuaikan jawaban?
-- **Lina:** أَعْتَرِفُ أَوَّلًا أَنَّ التَّكْلِفَةَ نُقْطَةٌ حَقِيقِيَّةٌ. -> saya mengakui dulu bahwa biaya adalah poin nyata
-- **Salma:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ سُؤَالٍ صَعْبٍ عَنْ تَكْلِفَةِ الْخُطَّةِ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani pertanyaan sulit tentang biaya rencana, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
-- **Lina:** ثُمَّ أُفَرِّقُ بَيْنَ التَّكْلِفَةِ الْفَوْرِيَّةِ وَتَكْلِفَةِ التَّأْخِيرِ. -> lalu saya membedakan biaya langsung dan biaya keterlambatan
-- **Salma:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُؤَالٍ صَعْبٍ عَنْ تَكْلِفَةِ الْخُطَّةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pertanyaan sulit tentang biaya rencana?
-- **Lina:** إِذَا طَلَبُوا رَقْمًا لا أَمْلِكُهُ. -> jika mereka meminta angka yang tidak saya miliki
-- **Salma:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُؤَالٍ صَعْبٍ عَنْ تَكْلِفَةِ الْخُطَّةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pertanyaan sulit tentang biaya rencana dengan jelas?
-- **Lina:** أُعْطِي مَا أَعْرِفُهُ وَأَعِدُ بِتَحْدِيثٍ مُحَدَّدِ الْوَقْتِ. -> saya memberi yang saya tahu dan menjanjikan update dengan waktu jelas
+- **Salma:** بَعْدَ الْعَرْضِ قَدْ يَسْأَلُونَ عَنِ التَّكْلِفَةِ. كَيْفَ تَرُدِّينَ؟ -> Setelah presentasi mereka mungkin tanya soal biaya. Gimana kamu merespons?
+- **Lina:** سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ، ثُمَّ أَعْتَرِفُ بِأَنَّ التَّكْلِفَةَ نُقْطَةٌ حَقِيقِيَّةٌ. -> Aku akan membingkai topiknya dulu agar audiens memahami konteksnya, lalu mengakui bahwa biaya adalah poin nyata.
+- **Salma:** وَكَيْفَ تُجِيبِينَ؟ -> Gimana kamu menjawabnya?
+- **Lina:** الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ، فَأُفَرِّقُ بَيْنَ تَكْلِفَةِ الْآنَ وَتَكْلِفَةِ التَّأْخِيرِ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak, jadi aku membedakan biaya sekarang dan biaya keterlambatan.
+- **Salma:** وَإِنْ طَلَبُوا رَقْمًا لَا تَمْلِكِينَهُ؟ -> Kalau mereka minta angka yang tidak kamu punya?
+- **Lina:** إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ، وَأَعِدُ بِتَحْدِيثٍ مُحَدَّدِ الْوَقْتِ. -> Kalau ada pertanyaan sulit, aku akan mengakui batas jawaban lalu menjelaskan dasarnya, dan menjanjikan update dengan waktu jelas.
+- **Salma:** وَالْهَدَفُ؟ -> Tujuannya?
+- **Lina:** فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada akhirnya, aku ingin audiens pulang dengan pesan yang jelas.

@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Khalid:** إِذَا سَأَلَكَ شَخْصٌ عَنْ زِيَارَةِ صَدِيقٍ مِنْ ثَقَافَةٍ أُخْرَى، مَاذَا تَقُولُ أَوَّلًا؟ -> Jika seseorang bertanya tentang kunjungan teman dari budaya lain, apa yang kamu katakan dulu?
-- **Zayd:** بَدَأَ الأَمْرُ عِنْدَمَا أُرِيدُ أَنْ أَكُونَ وَاضِحًا وَمُحْتَرِمًا. -> Situasinya mulai ketika saya ingin jelas dan menghormati.
-- **Khalid:** مَا الَّذِي جَعَلَ الْحِوَارَ عَنْ زِيَارَةِ صَدِيقٍ مِنْ ثَقَافَةٍ أُخْرَى أَوْضَحَ؟ -> Apa yang membuat percakapan tentang kunjungan teman dari budaya lain menjadi lebih jelas?
-- **Zayd:** كَانَ التَّحَدِّي هَكَذَا: بَعْضُ الْعَادَاتِ قَدْ تَحْتَاجُ إِلَى شَرْحٍ بَسِيطٍ. -> Tantangannya begini: beberapa kebiasaan mungkin perlu penjelasan sederhana.
-- **Khalid:** مَا الْجُمْلَةُ الأَخِيرَةُ الَّتِي تُلَخِّصُ زِيَارَةِ صَدِيقٍ مِنْ ثَقَافَةٍ أُخْرَى؟ -> Kalimat terakhir apa yang merangkum kunjungan teman dari budaya lain?
-- **Zayd:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُهُ أَيْضًا عَمَّا يُنَاسِبُهُ. -> Saya bertindak dengan tenang, dan saya juga akan bertanya apa yang cocok untuknya.
+- **Khalid:** سَيَزُورُكَ صَدِيقٌ مِنْ ثَقَافَةٍ أُخْرَى. كَيْفَ تَسْتَعِدُّ؟ -> Temanmu dari budaya lain akan berkunjung. Gimana kamu bersiap?
+- **Zayd:** سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ. تُوجَدُ عَادَةٌ مُهِمَّةٌ عِنْدَنَا. -> Aku akan menjelaskan komunitasku singkat. Ada kebiasaan penting di tempat kami.
+- **Khalid:** وَمَاذَا عَنْ عَادَاتِهِ؟ -> Kalau kebiasaannya?
+- **Zayd:** أُرِيدُ أَنْ أَفْهَمَ عَادَتَكُمْ أَيْضًا. -> Aku ingin memahami kebiasaan kalian juga.
+- **Khalid:** وَإِذَا اخْتَلَفَتِ الْعَادَاتُ؟ -> Kalau kebiasaannya berbeda?
+- **Zayd:** إِذَا اخْتَلَفْنَا، نَسْأَلُ بِاحْتِرَامٍ. هَكَذَا يَصِيرُ التَّوَاصُلُ أَفْضَلَ. -> Kalau kita berbeda, kita bertanya dengan hormat. Dengan begitu komunikasi jadi lebih baik.

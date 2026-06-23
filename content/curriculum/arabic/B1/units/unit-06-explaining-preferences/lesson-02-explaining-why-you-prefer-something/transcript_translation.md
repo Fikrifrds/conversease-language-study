@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Fatimah:** أُرِيدُ أَنْ أَفْهَمَ تَفْضِيلِ الْعَمَلِ الصَّبَاحِيِّ. مَا أَوَّلُ تَفْصِيلٍ؟ -> Aku ingin memahami preferensi bekerja pagi. Apa detail pertamanya?
-- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا أَكُونُ أَهْدَأَ فِي الصَّبَاحِ. -> Situasinya mulai ketika saya lebih tenang pada pagi hari.
-- **Fatimah:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَفْضِيلِ الْعَمَلِ الصَّبَاحِيِّ؟ -> Bagian mana dalam preferensi bekerja pagi yang perlu kamu jelaskan?
-- **Noura:** كَانَ التَّحَدِّي هَكَذَا: فِي الْمَسَاءِ أَحْتَاجُ إِلَى وَقْتٍ لِلْعَائِلَةِ. -> Tantangannya begini: pada malam hari saya butuh waktu untuk keluarga.
-- **Fatimah:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَفْضِيلِ الْعَمَلِ الصَّبَاحِيِّ؟ -> Bagaimana kamu menutup jawaban tentang preferensi bekerja pagi?
-- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَخْتَارُ الْمَوْعِدَ الصَّبَاحِيَّ إِذَا أَمْكَنَ. -> Saya bertindak dengan tenang, dan saya akan memilih jadwal pagi jika memungkinkan.
+- **Fatimah:** أَيَّ خِيَارٍ تُفَضِّلِينَ؟ -> Kamu lebih pilih yang mana?
+- **Noura:** أُفَضِّلُ هَذَا الْخِيَارَ لِأَنَّهُ أَوْضَحُ. يُنَاسِبُ هَدَفَنَا أَكْثَرَ. -> Aku lebih pilih ini karena lebih jelas. Lebih cocok dengan tujuan kita.
+- **Fatimah:** لَكِنَّهُ أَغْلَى قَلِيلًا. -> Tapi ini agak lebih mahal.
+- **Noura:** رَغْمَ أَنَّهُ أَغْلَى قَلِيلًا، لَكِنَّهُ يُوَفِّرُ وَقْتًا. -> Meskipun sedikit lebih mahal, ini menghemat waktu.
+- **Fatimah:** وَجْهَةُ نَظَرٍ جَيِّدَةٌ. -> Sudut pandang yang bagus.
+- **Noura:** لِذَلِكَ أَرَاهُ أَفْضَلَ. -> Karena itu aku melihatnya lebih baik.

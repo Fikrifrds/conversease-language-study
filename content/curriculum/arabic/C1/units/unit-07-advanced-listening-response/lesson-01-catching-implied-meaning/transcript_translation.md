@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** فِي الْمَعْنَى الضِّمْنِيِّ فِي جُمْلَةِ الْمُدِيرِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam makna tersirat dalam kalimat manajer, di mana kamu membutuhkan presisi paling besar?
-- **Hasan:** لَمْ يَقُلْ إِنَّهُ رَافِضٌ، لَكِنَّهُ طَلَبَ دَلِيلًا أَقْوَى. -> dia tidak bilang menolak, tetapi meminta bukti lebih kuat
-- **Yusuf:** أَيُّ شَرْطٍ فِي الْمَعْنَى الضِّمْنِيِّ فِي جُمْلَةِ الْمُدِيرِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam makna tersirat dalam kalimat manajer yang membuat opini lebih presisi dan seimbang?
-- **Hasan:** هَذَا يَعْنِي أَنَّهُ غَيْرُ مُقْتَنِعٍ بَعْدُ. -> ini berarti dia belum yakin
-- **Yusuf:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي الْمَعْنَى الضِّمْنِيِّ فِي جُمْلَةِ الْمُدِيرِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam makna tersirat dalam kalimat manajer?
-- **Hasan:** إِذَا أَجَبْنَا كَأَنَّهُ رَفَضَ الْفِكْرَةَ. -> jika kita menjawab seolah ia menolak ide
-- **Yusuf:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي الْمَعْنَى الضِّمْنِيِّ فِي جُمْلَةِ الْمُدِيرِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang makna tersirat dalam kalimat manajer dengan jelas?
-- **Hasan:** سَنَبْدُو دِفَاعِيِّينَ، لِذَلِكَ أَسْأَلُ عَنِ الدَّلِيلِ الْمَطْلُوبِ. -> kita akan tampak defensif, jadi saya bertanya bukti yang dibutuhkan
+- **Yusuf:** قَالَ الْمُدِيرُ إِنَّهُ يُرِيدُ دَلِيلًا أَقْوَى. هَلْ رَفَضَ الْفِكْرَةَ؟ -> Manajer bilang dia mau bukti yang lebih kuat. Apa dia menolak idenya?
+- **Hasan:** الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا، لَا أَنَّهُ رَفَضَ. -> Makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin, bukan menolak.
+- **Yusuf:** كَيْفَ نَرُدُّ؟ -> Gimana kita merespons?
+- **Hasan:** سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. -> Aku akan menjawab poin utama dulu, lalu kembali ke detail.
+- **Yusuf:** وَإِنْ ظَنَنَّاهُ رَافِضًا؟ -> Kalau kita mengira dia menolak?
+- **Hasan:** سَنَبْدُو دِفَاعِيِّينَ، فَسُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الدَّلِيلُ الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Kita akan terlihat defensif, jadi pertanyaan follow-up terbaiknya: bukti apa yang akan mengubah keputusan ini?
+- **Yusuf:** فَمَا الْقَاعِدَةُ؟ -> Jadi prinsipnya apa?
+- **Hasan:** بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Dengan cara ini, aku tidak hanya merespons kata-katanya, tapi maksudnya.

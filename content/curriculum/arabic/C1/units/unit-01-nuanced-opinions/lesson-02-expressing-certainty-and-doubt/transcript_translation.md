@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تُقَدِّمُ نَتَائِجِ اسْتِبْيَانِ الْعَمِيلِ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادًّا؟ -> Bagaimana kamu menyampaikan hasil survei klien tanpa terdengar keras?
-- **Karim:** الأَرْقَامُ مُشَجِّعَةٌ، لَكِنَّهَا لا تُثْبِتُ كُلَّ شَيْءٍ. -> angkanya menjanjikan, tetapi tidak membuktikan semuanya
-- **Ahmad:** أَيُّ عِبَارَةٍ فِي نَتَائِجِ اسْتِبْيَانِ الْعَمِيلِ قَدْ تُسَاءُ فَهْمًا إِنْ لَمْ تُصَغْ بِدِقَّةٍ؟ -> Ungkapan mana dalam hasil survei klien yang bisa disalahpahami jika tidak dirumuskan dengan presisi?
-- **Karim:** حَجْمُ الْعَيِّنَةِ صَغِيرٌ وَالسُّؤَالُ الأَخِيرُ غَيْرُ مُحَدَّدٍ. -> ukuran sampel kecil dan pertanyaan terakhir kurang spesifik
-- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي نَتَائِجِ اسْتِبْيَانِ الْعَمِيلِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam hasil survei klien?
-- **Karim:** إِذَا طَلَبَ الْمُدِيرُ قَرَارًا فَوْرِيًّا. -> jika manajer meminta keputusan segera
-- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي نَتَائِجِ اسْتِبْيَانِ الْعَمِيلِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang hasil survei klien dengan jelas?
-- **Karim:** أَقُولُ إِنَّنَا قَرِيبُونَ مِنَ الثِّقَةِ وَلَكِنْ نَحْتَاجُ إِلَى تَحَقُّقٍ أَخِيرٍ. -> saya bilang kita hampir yakin tetapi butuh verifikasi akhir
+- **Ahmad:** نَتَائِجُ اسْتِبْيَانِ الْعَمِيلِ مُشَجِّعَةٌ. هَلْ نَعْتَمِدُ عَلَيْهَا؟ -> Hasil survei klien menjanjikan. Kita andalkan itu?
+- **Karim:** مِنْ حَيْثُ الْمَبْدَأِ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip aku cenderung setuju, tapi ada satu catatan penting.
+- **Ahmad:** أَيُّ تَحَفُّظٍ؟ -> Catatan apa?
+- **Karim:** لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى الِاتِّجَاهِ؛ غَيْرَ أَنَّ حَجْمَ الْعَيِّنَةِ صَغِيرٌ. -> Aku belum sepenuhnya yakin, buktinya mengarah ke sana; hanya saja ukuran sampelnya kecil.
+- **Ahmad:** الْمُدِيرُ قَدْ يَطْلُبُ قَرَارًا فَوْرِيًّا. -> Manajer mungkin minta keputusan segera.
+- **Karim:** مِنْ جِهَةٍ الْأَرْقَامُ عَمَلِيَّةٌ، وَمِنْ جِهَةٍ أُخْرَى لَهَا مَخَاطِرُ وَاضِحَةٌ إِنْ بَنَيْنَا عَلَيْهَا كُلَّ شَيْءٍ. -> Di satu sisi angkanya praktis, di sisi lain ada risiko jelas kalau kita membangun semuanya di atas itu.
+- **Ahmad:** فَمَاذَا تَقُولُ لَهُ؟ -> Jadi kamu bilang apa ke dia?
+- **Karim:** لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً: نَحْنُ قَرِيبُونَ مِنَ الثِّقَةِ لَكِنْ نَحْتَاجُ إِلَى تَحَقُّقٍ أَخِيرٍ. -> Karena itu aku lebih memilih rumusan yang lebih tepat: kita hampir yakin tapi butuh verifikasi akhir.

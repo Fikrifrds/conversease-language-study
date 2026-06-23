@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** كَيْفَ سَتُحَوِّلُ النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah diskusi akhir B2 menjadi keputusan?
-- **Noura:** سَأَجْمَعُ الرَّأْيَ وَالْمِثَالَ وَالرَّدَّ عَلَى الِاعْتِرَاضِ. -> saya menggabungkan pendapat, contoh, dan respons terhadap keberatan
-- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam diskusi akhir B2?
-- **Noura:** أُرِيدُ أَنْ يَبْقَى الْحِوَارُ مِهَنِيًّا لا مَحْفُوظًا. -> saya ingin percakapan tetap profesional, bukan hafalan
-- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ -> Kesulitan apa yang mungkin muncul dalam diskusi akhir B2?
-- **Noura:** قَدْ يَتَغَيَّرُ السُّؤَالُ فِي وَسَطِ الْحِوَارِ. -> pertanyaan bisa berubah di tengah percakapan
-- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang diskusi akhir B2 berubah menjadi tindakan jelas?
-- **Noura:** سَأُعِيدُ رَبْطَ جَوَابِي بِالْمَوْضُوعِ وَأَخْتِمُ بِخُطْوَةٍ. -> saya akan mengaitkan jawaban lagi ke topik dan menutup dengan langkah
+- **Layla:** هَذَا آخِرُ نِقَاشٍ قَبْلَ الِاخْتِبَارِ. كَيْفَ تَسْتَعِدِّينَ؟ -> Ini diskusi terakhir sebelum ujian. Gimana kamu bersiap?
+- **Noura:** أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى كُلَّهَا. -> Aku mereview diskusi akhir karena itu menggabungkan semua keterampilan level ini.
+- **Layla:** فَكَيْفَ تَجْمَعِينَهَا؟ -> Gimana kamu menggabungkannya?
+- **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ وَمِثَالٍ. -> Aku bisa menyampaikan pendapat dan mendukungnya dengan bukti dan contoh.
+- **Layla:** وَلَوْ تَغَيَّرَ السُّؤَالُ فِي الْوَسَطِ؟ -> Kalau pertanyaannya berubah di tengah?
+- **Noura:** أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ، وَإِذَا ظَهَرَ اِعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Aku juga bisa mengelola percakapan profesional dengan jelas, dan kalau ada keberatan aku menanggapinya dengan tenang.
+- **Layla:** أَنْتِ جَاهِزَةٌ إِذَنْ. -> Berarti kamu sudah siap.
+- **Noura:** فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ وَأَخْتِمُ بِخُطْوَةٍ وَاحِدَةٍ. -> Di ujian akhir, aku akan fokus pada koherensi dan kejelasan lalu menutup dengan satu langkah.

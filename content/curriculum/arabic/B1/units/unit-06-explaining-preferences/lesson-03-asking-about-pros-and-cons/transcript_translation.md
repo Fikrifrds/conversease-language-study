@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Fatimah:** فِي إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟ -> Dalam plus-minus tinggal dekat kantor, apa yang jelas di awal?
-- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا الْقُرْبُ يُوَفِّرُ الْوَقْتَ كَثِيرًا. -> Situasinya mulai ketika jarak dekat sangat menghemat waktu.
-- **Fatimah:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ؟ -> Tantangan kecil apa yang muncul selama plus-minus tinggal dekat kantor?
-- **Noura:** كَانَ التَّحَدِّي هَكَذَا: لَكِنَّ السِّعْرَ أَعْلَى مِنْ مَنَاطِقَ أُخْرَى. -> Tantangannya begini: tetapi harganya lebih tinggi dari area lain.
-- **Fatimah:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ؟ -> Apa langkah praktis setelah plus-minus tinggal dekat kantor?
-- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُقَارِنُ التَّكْلِفَةَ مَعَ وَقْتِ الطَّرِيقِ. -> Saya bertindak dengan tenang, dan saya akan membandingkan biaya dengan waktu perjalanan.
+- **Fatimah:** أَقْتَرِحُ أَنْ نَسْكُنَ قُرْبَ الْعَمَلِ. -> Aku usul kita tinggal dekat kantor.
+- **Noura:** مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟ وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟ -> Apa kelebihan pilihan ini? Dan apa kemungkinan kekurangannya?
+- **Fatimah:** الْقُرْبُ يُوَفِّرُ وَقْتًا، لَكِنَّ السِّعْرَ أَعْلَى. -> Dekat itu menghemat waktu, tapi harganya lebih tinggi.
+- **Noura:** هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟ -> Apa kelebihannya lebih banyak dari masalahnya?
+- **Fatimah:** أَظُنُّ ذَلِكَ، لَكِنْ لِنُفَكِّرْ. -> Kurasa iya, tapi ayo pikirkan.
+- **Noura:** أُرِيدُ أَنْ أَفْهَمَ الصُّورَةَ كَامِلَةً. بَعْدَ ذَلِكَ، نُقَرِّرُ. -> Aku ingin memahami gambaran lengkapnya. Setelah itu, kita putuskan.

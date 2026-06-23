@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** كَيْفَ تُقَدِّمُ سُؤَالٍ عَنْ عَادَةِ الِاجْتِمَاعِ فِي بَلَدٍ آخَرَ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادًّا؟ -> Bagaimana kamu menyampaikan pertanyaan tentang kebiasaan rapat di negara lain tanpa terdengar keras?
-- **Aisha:** أَسْأَلُ بِطَرِيقَةٍ تُظْهِرُ الِاحْتِرَامَ لا الْغَرَابَةَ. -> saya bertanya dengan cara yang menunjukkan hormat, bukan keanehan
-- **Fatimah:** أَيُّ عِبَارَةٍ فِي سُؤَالٍ عَنْ عَادَةِ الِاجْتِمَاعِ فِي بَلَدٍ آخَرَ قَدْ تُسَاءُ فَهْمًا إِنْ لَمْ تُصَغْ بِدِقَّةٍ؟ -> Ungkapan mana dalam pertanyaan tentang kebiasaan rapat di negara lain yang bisa disalahpahami jika tidak dirumuskan dengan presisi?
-- **Aisha:** أَقُولُ إِنَّنِي أُرِيدُ أَنْ أَفْهَمَ السِّيَاقَ أَفْضَلَ. -> saya bilang ingin memahami konteks lebih baik
-- **Fatimah:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُؤَالٍ عَنْ عَادَةِ الِاجْتِمَاعِ فِي بَلَدٍ آخَرَ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pertanyaan tentang kebiasaan rapat di negara lain?
-- **Aisha:** إِذَا بَدَا سُؤَالِي حَسَّاسًا. -> jika pertanyaan saya tampak sensitif
-- **Fatimah:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُؤَالٍ عَنْ عَادَةِ الِاجْتِمَاعِ فِي بَلَدٍ آخَرَ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pertanyaan tentang kebiasaan rapat di negara lain dengan jelas?
-- **Aisha:** أُخَفِّفُهُ وَأَعْطِي الطَّرَفَ الآخَرَ حَقَّ عَدَمِ الإِجَابَةِ. -> saya melembutkannya dan memberi pihak lain hak untuk tidak menjawab
+- **Fatimah:** أُرِيدُ أَنْ أَسْأَلَ عَنْ عَادَةِ الِاجْتِمَاعِ عِنْدَهُمْ، لَكِنِّي أَخْشَى الْإِسَاءَةَ. -> Aku mau tanya soal kebiasaan rapat mereka, tapi takut menyinggung.
+- **Aisha:** قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ، ثُمَّ نَسْأَلُ بِطَرِيقَةٍ تُظْهِرُ الِاحْتِرَامَ لَا الْغَرَابَةَ. -> Sebelum merespons, kita harus membaca konteks dengan cermat, lalu bertanya dengan cara yang menunjukkan hormat, bukan keanehan.
+- **Fatimah:** كَيْفَ أَصُوغُ السُّؤَالَ؟ -> Gimana aku merumuskan pertanyaannya?
+- **Aisha:** هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ أَقُولُ إِنِّي أُرِيدُ أَنْ أَفْهَمَ السِّيَاقَ أَفْضَلَ. -> Bisakah aku bertanya dengan cara yang lebih tactful? Aku bilang aku ingin memahami konteks lebih baik.
+- **Fatimah:** وَإِنْ بَدَا السُّؤَالُ حَسَّاسًا؟ -> Kalau pertanyaannya terkesan sensitif?
+- **Aisha:** فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ، فَأُخَفِّفُهُ وَأُعْطِي الطَّرَفَ الْآخَرَ حَقَّ عَدَمِ الْإِجَابَةِ. -> Di negaraku norma ini dipahami berbeda, jadi aku lembutkan dan beri pihak lain hak untuk tidak menjawab.
+- **Fatimah:** وَالْأَصْلُ؟ -> Prinsipnya?
+- **Aisha:** الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Asumsi apa yang perlu kamu periksa dalam pilihan antara kecepatan dan kualitas?
-- **Karim:** السُّرْعَةُ مُهِمَّةٌ، وَلَكِنَّ الْجَوْدَةَ تَحْمِي الثِّقَةَ. -> kecepatan penting, tetapi kualitas menjaga kepercayaan
-- **Ahmad:** أَيُّ دَلِيلٍ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam pilihan antara kecepatan dan kualitas yang perlu didahulukan?
-- **Karim:** الْقَرَارُ الأَفْضَلُ يَعْتَمِدُ عَلَى مَخَاطِرِ الْجُزْءِ الْمُرْسَلِ. -> keputusan terbaik bergantung pada risiko bagian yang dikirim
-- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pilihan antara kecepatan dan kualitas?
-- **Karim:** إِذَا دَافَعَ كُلُّ طَرَفٍ عَنْ جَانِبِهِ فَقَطْ. -> jika tiap pihak hanya membela sisinya
-- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pilihan antara kecepatan dan kualitas dengan jelas?
-- **Karim:** أَقْتَرِحُ إِطَارًا يُحَدِّدُ مَتَى نُسْرِعُ وَمَتَى نَتَوَقَّفُ. -> saya mengusulkan kerangka kapan kita cepat dan kapan berhenti
+- **Ahmad:** نَخْتَلِفُ حَوْلَ السُّرْعَةِ وَالْجَوْدَةِ. مَا رَأْيُكَ؟ -> Kita beda pendapat soal kecepatan dan kualitas. Gimana menurutmu?
+- **Karim:** مِنْ حَيْثُ الْمَبْدَأِ، أَمِيلُ إِلَى الْجَوْدَةِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip aku cenderung ke kualitas, tapi ada satu catatan penting.
+- **Ahmad:** وَهُوَ؟ -> Yaitu?
+- **Karim:** مِنْ جِهَةٍ السُّرْعَةُ تُعْطِينَا فُرْصَةً فِي السُّوقِ، وَمِنْ جِهَةٍ أُخْرَى لَهَا مَخَاطِرُ وَاضِحَةٌ عَلَى الثِّقَةِ. -> Di satu sisi kecepatan memberi kita peluang di pasar, di sisi lain ada risiko jelas pada kepercayaan.
+- **Ahmad:** كُلُّ طَرَفٍ يُدَافِعُ عَنْ جَانِبِهِ. -> Tiap pihak membela sisinya.
+- **Karim:** لَسْتُ مُتَيَقِّنًا مِنْ حَلٍّ وَاحِدٍ، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى أَنَّ الْقَرَارَ يَعْتَمِدُ عَلَى مَخَاطِرِ الْجُزْءِ الْمُرْسَلِ. -> Aku belum yakin ada satu solusi, tapi buktinya mengarah bahwa keputusannya bergantung pada risiko bagian yang dikirim.
+- **Ahmad:** فَكَيْفَ نَحْسِمُ؟ -> Jadi gimana kita memutuskan?
+- **Karim:** لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً: إِطَارٌ يُحَدِّدُ مَتَى نُسْرِعُ وَمَتَى نَتَوَقَّفُ. -> Karena itu aku lebih memilih rumusan yang lebih tepat: kerangka yang menentukan kapan kita cepat dan kapan berhenti.

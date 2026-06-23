@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** كَيْفَ سَتُحَوِّلُ حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah percakapan lengkap dengan klien yang ragu menjadi keputusan?
-- **Aisha:** أَبْدَأُ بِسُؤَالٍ عَنْ الأَوْلَوِيَّةِ الْحَقِيقِيَّةِ. -> saya mulai dengan pertanyaan tentang prioritas nyata
-- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam percakapan lengkap dengan klien yang ragu?
-- **Aisha:** ثُمَّ أُقَدِّمُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ. -> lalu saya memberi dua opsi dan mendengar kekhawatirannya
-- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ -> Kesulitan apa yang mungkin muncul dalam percakapan lengkap dengan klien yang ragu?
-- **Aisha:** قَدْ يُغَيِّرُ رَأْيَهُ عِنْدَ سَمَاعِ التَّكْلِفَةِ. -> dia mungkin berubah pikiran saat mendengar biaya
-- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang percakapan lengkap dengan klien yang ragu berubah menjadi tindakan jelas?
-- **Aisha:** أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لا تُلْزِمُهُ كَثِيرًا. -> saya menutup dengan langkah kecil yang tidak terlalu mengikatnya
+- **Fatimah:** سَتُكَلِّمِينَ عَمِيلًا مُتَرَدِّدًا الْيَوْمَ. مِنْ أَيْنَ تَبْدَئِينَ؟ -> Hari ini kamu menelepon klien yang ragu. Mulai dari mana?
+- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ، فَأَسْأَلُ عَنْ أَوْلَوِيَّتِهِ الْحَقِيقِيَّةِ. -> Aku ingin memahami kebutuhan klien, jadi aku tanya prioritas sebenarnya.
+- **Fatimah:** ثُمَّ؟ -> Lalu?
+- **Aisha:** لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ، فَأَعْرِضُهُمَا وَأَسْمَعُ قَلَقَهُ. -> Kita punya dua opsi, dan tiap opsi ada manfaatnya, jadi aku tawarkan keduanya dan mendengar kekhawatirannya.
+- **Fatimah:** قَدْ يَتَرَدَّدُ عِنْدَ سَمَاعِ التَّكْلِفَةِ. -> Dia mungkin ragu saat mendengar biayanya.
+- **Aisha:** أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ وَأَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا. -> Aku paham kekhawatiran itu, dan aku akan menjelaskan detailnya lalu menutup dengan langkah kecil yang tidak terlalu mengikatnya.
+- **Fatimah:** وَبَعْدَ أَنْ يَتَّفِقَ؟ -> Setelah dia setuju?
+- **Aisha:** سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْخُطْوَةِ الْأُولَى وَالْمَوْعِدِ. -> Aku akan kirim konfirmasi tertulis berisi langkah pertama dan tenggatnya.

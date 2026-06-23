@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam arah tim yang bingung setelah perubahan rencana, di mana kamu membutuhkan presisi paling besar?
-- **Tariq:** أَبْدَأُ بِتَسْمِيَةِ الأَوْلَوِيَّةِ الْوَاحِدَةِ. -> saya mulai dengan menyebut satu prioritas
-- **Rami:** أَيُّ شَرْطٍ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam arah tim yang bingung setelah perubahan rencana yang membuat opini lebih presisi dan seimbang?
-- **Tariq:** ثُمَّ أُوَضِّحُ مَا سَنُؤَجِّلُهُ حَتَّى لا يَتَشَتَّتَ الْفَرِيقُ. -> lalu saya menjelaskan apa yang ditunda agar tim tidak buyar
-- **Rami:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam arah tim yang bingung setelah perubahan rencana?
-- **Tariq:** إِذَا طَلَبَ أَحَدُهُمْ كُلَّ التَّفَاصِيلِ فَوْرًا. -> jika seseorang meminta semua detail segera
-- **Rami:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang arah tim yang bingung setelah perubahan rencana dengan jelas?
-- **Tariq:** أُعْطِيهِ مَا يَحْتَاجُهُ لِلْعَمَلِ الآنَ وَأَعِدُ بِتَحْدِيثٍ لاحِقٍ. -> saya memberi yang ia butuhkan untuk bekerja sekarang dan menjanjikan update nanti
+- **Rami:** الْفَرِيقُ مُرْتَبِكٌ بَعْدَ تَغَيُّرِ الْخُطَّةِ. مَاذَا تَفْعَلُ؟ -> Tim bingung setelah rencana berubah. Apa yang kamu lakukan?
+- **Tariq:** أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ: أَوْلَوِيَّةٌ وَاحِدَةٌ الْآنَ. -> Hal pertama adalah menetapkan arah dengan jelas: satu prioritas sekarang.
+- **Rami:** وَالْبَاقِي؟ -> Sisanya?
+- **Tariq:** أُوَضِّحُ مَا سَنُؤَجِّلُهُ حَتَّى لَا يَتَشَتَّتَ الْفَرِيقُ، فَالْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Aku jelaskan apa yang ditunda agar tim tidak buyar, karena feedback yang berguna adalah yang berubah jadi langkah yang bisa diterapkan.
+- **Rami:** وَإِنْ طَلَبَ أَحَدُهُمْ كُلَّ التَّفَاصِيلِ فَوْرًا؟ -> Kalau ada yang minta semua detail segera?
+- **Tariq:** عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ، فَأُعْطِيهِ مَا يَحْتَاجُهُ لِلْعَمَلِ الْآنَ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas, jadi aku beri yang dia butuhkan untuk bekerja sekarang.
+- **Rami:** فَكَيْفَ تَخْتِمُ؟ -> Gimana kamu menutupnya?
+- **Tariq:** سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ، وَأَعِدُ بِتَحْدِيثٍ لَاحِقٍ. -> Aku tutup percakapan dengan memperjelas tanggung jawab dan tenggat, dan menjanjikan update nanti.

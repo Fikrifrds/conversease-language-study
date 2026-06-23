@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Keberatan apa yang mungkin muncul dalam latihan ujian akhir?
-- **Noura:** سَأُجِيبُ بِمَوْقِفٍ وَسَبَبٍ وَمِثَالٍ. -> saya menjawab dengan posisi, alasan, dan contoh
-- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Alasan atau detail apa yang mendukung poin ini dalam latihan ujian akhir?
-- **Noura:** إِذَا وَرَدَ اعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> jika ada keberatan, saya menanggapinya dengan tenang
-- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Kesulitan apa yang mungkin muncul dalam latihan ujian akhir?
-- **Noura:** قَدْ أُطِيلُ الْجَوَابَ إِذَا لَمْ أُنَظِّمْهُ. -> saya bisa memanjangkan jawaban jika tidak menyusunnya
-- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang latihan ujian akhir berubah menjadi tindakan jelas?
-- **Noura:** سَأَسْتَخْدِمُ جُمْلَةً خِتَامِيَّةً وَاضِحَةً. -> saya akan memakai kalimat penutup yang jelas
+- **Layla:** لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ. مَا الَّذِي تُرَاجِعِينَهُ؟ -> Ayo coba satu pertanyaan seperti ujian. Apa yang kamu review?
+- **Noura:** أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ. -> Aku mereview latihan ujian akhir karena itu membantu aku bersiap.
+- **Layla:** حَسَنًا: لِمَاذَا تُؤَيِّدِينَ الْعَمَلَ الْمَرِنَ؟ -> Oke: kenapa kamu mendukung kerja fleksibel?
+- **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ، ثُمَّ أُعْطِيَ مِثَالًا. -> Aku bisa menyampaikan pendapat dan mendukungnya dengan bukti, lalu memberi contoh.
+- **Layla:** وَلَوْ قَاطَعْتُكِ بِسُؤَالٍ؟ -> Kalau aku memotong dengan pertanyaan?
+- **Noura:** أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ، وَإِذَا ظَهَرَ اِعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Aku juga bisa mengelola percakapan profesional dengan jelas, dan kalau ada keberatan aku akan menanggapinya dengan tenang.
+- **Layla:** مُمْتَازٌ. وَكَيْفَ تَخْتِمِينَ؟ -> Bagus. Gimana kamu menutupnya?
+- **Noura:** فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ بِجُمْلَةٍ خِتَامِيَّةٍ قَصِيرَةٍ. -> Di ujian akhir, aku akan fokus pada koherensi dan kejelasan dengan kalimat penutup yang singkat.

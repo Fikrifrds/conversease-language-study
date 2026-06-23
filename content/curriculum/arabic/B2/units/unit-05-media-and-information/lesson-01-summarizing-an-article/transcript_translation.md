@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** مَا مَوْقِفُكَ مِنْ مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ -> Apa posisimu tentang artikel tentang perubahan kebiasaan pengguna?
-- **Hasan:** أُلَخِّصُ الْفِكْرَةَ بِأَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الأَسْرَعَ. -> saya merangkum idenya bahwa orang lebih suka layanan yang lebih cepat
-- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ -> Alasan atau detail apa yang mendukung poin ini dalam artikel tentang perubahan kebiasaan pengguna?
-- **Hasan:** الْمَقَالُ يَذْكُرُ دَلِيلًا مِنْ مَسْحٍ قَرِيبٍ. -> artikel menyebut bukti dari survei terbaru
-- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ -> Kesulitan apa yang mungkin muncul dalam artikel tentang perubahan kebiasaan pengguna?
-- **Hasan:** قَدْ لا تَكْفِي عَيِّنَةٌ صَغِيرَةٌ لِلْقَرَارِ. -> sampel kecil mungkin tidak cukup untuk keputusan
-- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang artikel tentang perubahan kebiasaan pengguna berubah menjadi tindakan jelas?
-- **Hasan:** نَسْتَخْدِمُهُ كَإِشَارَةٍ لا كَدَلِيلٍ نِهَائِيٍّ. -> kita menggunakannya sebagai indikasi, bukan bukti final
+- **Yusuf:** قَرَأْتَ الْمَقَالَ عَنْ عَادَاتِ الْمُسْتَخْدِمِينَ. مَا خُلَاصَتُهُ؟ -> Kamu sudah baca artikel soal kebiasaan pengguna. Apa intinya?
+- **Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ: النَّاسُ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ. -> Aku paham dari artikel bahwa topik ini penting: orang lebih suka layanan yang lebih cepat.
+- **Yusuf:** وَهَلْ نَثِقُ بِهَذَا؟ -> Apa kita bisa percaya ini?
+- **Hasan:** يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ، فَهُوَ يَعْتَمِدُ عَلَى مَسْحٍ صَغِيرٍ. -> Kita harus memastikan sumbernya tepercaya, soalnya ini berdasar survei kecil.
+- **Yusuf:** إِذَنِ الِاسْتِنْتَاجُ ضَعِيفٌ؟ -> Berarti kesimpulannya lemah?
+- **Hasan:** وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى قَبْلَ أَيِّ قَرَارٍ. -> Sudut pandang ini butuh bukti yang lebih kuat sebelum ada keputusan apa pun.
+- **Yusuf:** فَكَيْفَ نَسْتَفِيدُ مِنْهُ؟ -> Lalu gimana kita memanfaatkannya?
+- **Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ وَنَسْتَخْدِمَهُ كَإِشَارَةٍ فَقَطْ. -> Karena itu aku lebih memilih kita menyeimbangkan berbagai sumber dan memakainya sebagai indikasi saja.

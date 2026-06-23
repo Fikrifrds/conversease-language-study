@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Omar:** فِي نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟ -> Dalam saran rekan tentang rencana, apa yang jelas di awal?
-- **Raka:** بَدَأَ الأَمْرُ عِنْدَمَا قَالَ إِنَّ الْخُطَّةَ طَوِيلَةٌ جِدًّا. -> Situasinya mulai ketika dia bilang rencananya terlalu panjang.
-- **Omar:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ؟ -> Tantangan kecil apa yang muncul selama saran rekan tentang rencana?
-- **Raka:** كَانَ التَّحَدِّي هَكَذَا: بَعْضُ النِّقَاطِ ضَرُورِيَّةٌ لِلْعَمِيلِ. -> Tantangannya begini: beberapa poin penting untuk klien.
-- **Omar:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ؟ -> Apa langkah praktis setelah saran rekan tentang rencana?
-- **Raka:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُقَصِّرُ الْمُقَدِّمَةَ وَأُبْقِي التَّفَاصِيلَ الْمُهِمَّةَ. -> Saya bertindak dengan tenang, dan saya akan mempersingkat pembuka dan menjaga detail penting.
+- **Omar:** أَنْصَحُكَ بِأَنْ تُقَصِّرَ مُقَدِّمَةَ الْخُطَّةِ. -> Aku saranin kamu persingkat pembuka rencananya.
+- **Raka:** نَصِيحَتُكَ مُفِيدَةٌ. سَأُجَرِّبُ ذَلِكَ الْيَوْمَ. -> Nasihatmu bermanfaat. Aku akan coba itu hari ini.
+- **Omar:** وَأَبْقِ التَّفَاصِيلَ الْمُهِمَّةَ لِلْعَمِيلِ. -> Dan simpan detail penting untuk klien.
+- **Raka:** أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ، لَكِنْ عِنْدِي سُؤَالٌ صَغِيرٌ. -> Aku setuju denganmu soal ini, tapi aku punya pertanyaan kecil.
+- **Omar:** تَفَضَّلْ. -> Silakan.
+- **Raka:** هَلْ أَحْذِفُ الْأَمْثِلَةَ أَيْضًا؟ شُكْرًا عَلَى التَّوْجِيهِ. -> Apa aku hapus contohnya juga? Makasih atas arahannya.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ سَتُحَوِّلُ نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah diskusi tentang data kampanye menjadi keputusan?
-- **Hasan:** أَبْدَأُ بِالرَّقْمِ الأَكْثَرِ صِلَةً بِالْهَدَفِ. -> saya mulai dengan angka yang paling terkait dengan target
-- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam diskusi tentang data kampanye?
-- **Hasan:** ثُمَّ أَذْكُرُ مَا لا تَقُولُهُ الْبَيَانَاتُ. -> lalu saya menyebut apa yang tidak dikatakan data
-- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ -> Kesulitan apa yang mungkin muncul dalam diskusi tentang data kampanye?
-- **Hasan:** قَدْ يُسِيءُ أَحَدٌ فَهْمَ النِّسْبَةِ. -> seseorang mungkin salah memahami persentase
-- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang diskusi tentang data kampanye berubah menjadi tindakan jelas?
-- **Hasan:** أَخْتِمُ بِسُؤَالٍ عَمَلِيٍّ عَمَّا نُغَيِّرُهُ. -> saya menutup dengan pertanyaan praktis tentang apa yang kita ubah
+- **Yusuf:** عِنْدَنَا بَيَانَاتُ الْحَمْلَةِ. كَيْفَ نُحَوِّلُهَا إِلَى قَرَارٍ؟ -> Kita punya data kampanye. Gimana mengubahnya jadi keputusan?
+- **Hasan:** أَفْهَمُ مِنَ الْبَيَانَاتِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ، فَأَبْدَأُ بِالرَّقْمِ الْأَقْرَبِ لِلْهَدَفِ. -> Aku paham dari datanya bahwa topik ini penting, jadi aku mulai dari angka yang paling dekat dengan target.
+- **Yusuf:** وَمَا الَّذِي لَا تَقُولُهُ الْأَرْقَامُ؟ -> Apa yang tidak dikatakan angka-angkanya?
+- **Hasan:** يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ، وَأَنْ نَذْكُرَ مَا لَا تُظْهِرُهُ الْبَيَانَاتُ. -> Kita harus memastikan sumbernya tepercaya, dan menyebut apa yang tidak ditunjukkan datanya.
+- **Yusuf:** قَدْ يُسِيءُ أَحَدٌ فَهْمَ النِّسْبَةِ. -> Seseorang mungkin salah memahami persentasenya.
+- **Hasan:** صَحِيحٌ، فَوِجْهَةُ النَّظَرِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى لَا إِلَى رَقْمٍ وَاحِدٍ. -> Benar, jadi sudut pandang ini butuh bukti yang lebih kuat, bukan satu angka saja.
+- **Yusuf:** فَكَيْفَ نَخْتِمُ؟ -> Jadi gimana kita menutupnya?
+- **Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ وَنَسْأَلَ: مَا الَّذِي نُغَيِّرُهُ فِعْلًا؟ -> Karena itu aku lebih memilih kita menyeimbangkan sumber dan bertanya: apa yang benar-benar kita ubah?

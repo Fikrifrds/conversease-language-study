@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ حِوَارٍ عَبْرَ الثَّقَافَاتِ عَنْ طَرِيقَةِ الْقَرَارِ؟ -> Apa standar terpenting untuk keberhasilan percakapan lintas budaya tentang cara keputusan?
-- **Aisha:** أَجْمَعُ بَيْنَ الْوُضُوحِ وَالْفُضُولِ الْمُحْتَرِمِ. -> saya menggabungkan kejelasan dan rasa ingin tahu yang hormat
-- **Fatimah:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ حِوَارٍ عَبْرَ الثَّقَافَاتِ عَنْ طَرِيقَةِ الْقَرَارِ؟ -> Pesan apa yang perlu tetap diingat setelah percakapan lintas budaya tentang cara keputusan?
-- **Aisha:** لا أَفْتَرِضُ أَنَّ طَرِيقَتَنَا هِيَ الطَّرِيقَةُ الطَّبِيعِيَّةُ لِلْجَمِيعِ. -> saya tidak menganggap cara kita adalah cara alami untuk semua orang
-- **Fatimah:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي حِوَارٍ عَبْرَ الثَّقَافَاتِ عَنْ طَرِيقَةِ الْقَرَارِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam percakapan lintas budaya tentang cara keputusan?
-- **Aisha:** إِذَا تَعَارَضَتِ التَّوَقُّعَاتُ. -> jika ekspektasi bertabrakan
-- **Fatimah:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي حِوَارٍ عَبْرَ الثَّقَافَاتِ عَنْ طَرِيقَةِ الْقَرَارِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang percakapan lintas budaya tentang cara keputusan dengan jelas?
-- **Aisha:** أَقْتَرِحُ قَاعِدَةً مُشْتَرَكَةً لِهَذَا الْمَشْرُوعِ فَقَطْ. -> saya mengusulkan aturan bersama hanya untuk proyek ini
+- **Fatimah:** سَتُدِيرِينَ حِوَارًا عَبْرَ الثَّقَافَاتِ حَوْلَ طَرِيقَةِ اِتِّخَاذِ الْقَرَارِ. -> Kamu akan memimpin percakapan lintas budaya soal cara mengambil keputusan.
+- **Aisha:** قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ، وَأَجْمَعُ بَيْنَ الْوُضُوحِ وَالْفُضُولِ الْمُحْتَرِمِ. -> Sebelum merespons, kita harus membaca konteks dengan cermat, dan aku menggabungkan kejelasan dan rasa ingin tahu yang hormat.
+- **Fatimah:** مَا الَّذِي تَتَجَنَّبِينَهُ؟ -> Apa yang kamu hindari?
+- **Aisha:** لَا أَفْتَرِضُ أَنَّ طَرِيقَتَنَا هِيَ الطَّبِيعِيَّةُ لِلْجَمِيعِ؛ فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ. -> Aku tidak menganggap cara kita adalah cara alami untuk semua; di negaraku norma ini dipahami berbeda.
+- **Fatimah:** وَإِنْ تَعَارَضَتِ التَّوَقُّعَاتُ؟ -> Kalau ekspektasinya bertabrakan?
+- **Aisha:** هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ وَإِنْ ظَهَرَ سُوءُ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ. -> Bisakah aku bertanya dengan cara yang lebih tactful? Dan kalau muncul salah paham, mari kita rumuskan ulang idenya.
+- **Fatimah:** فَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
+- **Aisha:** الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ، فَأَقْتَرِحُ قَاعِدَةً مُشْتَرَكَةً لِهَذَا الْمَشْرُوعِ. -> Tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa, jadi aku usulkan aturan bersama untuk proyek ini.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي دَلِيلٍ مِنْ تَجْرِبَتَيْنِ سَابِقَتَيْنِ؟ -> Asumsi apa yang perlu kamu periksa dalam bukti dari dua eksperimen sebelumnya?
-- **Omar:** أَقْدَمُ الدَّلِيلَ مَعَ حُدُودِهِ لا كَحَقِيقَةٍ مُطْلَقَةٍ. -> saya menyajikan bukti dengan batasannya, bukan sebagai kebenaran mutlak
-- **Khalid:** أَيُّ دَلِيلٍ فِي دَلِيلٍ مِنْ تَجْرِبَتَيْنِ سَابِقَتَيْنِ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam bukti dari dua eksperimen sebelumnya yang perlu didahulukan?
-- **Omar:** النَّتِيجَةُ تَكَرَّرَتْ وَلَكِنْ فِي فَرِيقَيْنِ فَقَطْ. -> hasilnya berulang, tetapi hanya di dua tim
-- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي دَلِيلٍ مِنْ تَجْرِبَتَيْنِ سَابِقَتَيْنِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam bukti dari dua eksperimen sebelumnya?
-- **Omar:** إِذَا طَلَبُوا تَعْمِيمًا أَوْسَعَ. -> jika mereka meminta generalisasi lebih luas
-- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي دَلِيلٍ مِنْ تَجْرِبَتَيْنِ سَابِقَتَيْنِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang bukti dari dua eksperimen sebelumnya dengan jelas?
-- **Omar:** أَقْتَرِحُ تَجْرِبَةً ثَالِثَةً قَبْلَ الْقَرَارِ النِّهَائِيِّ. -> saya mengusulkan eksperimen ketiga sebelum keputusan final
+- **Khalid:** عِنْدَكَ نَتِيجَةٌ مِنْ تَجْرِبَتَيْنِ سَابِقَتَيْنِ. كَيْفَ تَعْرِضُهَا؟ -> Kamu punya hasil dari dua eksperimen sebelumnya. Gimana kamu menyajikannya?
+- **Omar:** أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ، فَأَقْدُمُ الدَّلِيلَ مَعَ حُدُودِهِ. -> Menurutku asumsi dasarnya belum jelas, jadi aku menyajikan bukti dengan batasannya.
+- **Khalid:** مَا أَقْوَى مَا لَدَيْكَ؟ -> Apa yang paling kuat yang kamu punya?
+- **Omar:** الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ، وَإِنْ كَانَ ذَلِكَ فِي فَرِيقَيْنِ فَقَطْ. -> Bukti paling kuat adalah hasilnya berulang dalam lebih dari satu konteks, walau itu cuma di dua tim.
+- **Khalid:** وَإِنْ طَلَبُوا تَعْمِيمًا أَوْسَعَ؟ -> Kalau mereka minta generalisasi lebih luas?
+- **Omar:** يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ، فَأَقْتَرِحُ تَجْرِبَةً ثَالِثَةً قَبْلَ الْقَرَارِ. -> Kita bisa menantang argumen ini dari sisi bukti, jadi aku usul eksperimen ketiga sebelum keputusan.
+- **Khalid:** فَمَا الْقَاعِدَةُ؟ -> Jadi prinsipnya apa?
+- **Omar:** لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ. -> Karena itu respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.

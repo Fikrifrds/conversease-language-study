@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Apa standar terpenting untuk keberhasilan debat analitis tentang keputusan besar?
-- **Omar:** أَبْدَأُ بِتَسْمِيَةِ الِافْتِرَاضِ ثُمَّ أَطْلُبُ الدَّلِيلَ. -> saya mulai dengan menamai asumsi lalu meminta bukti
-- **Khalid:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Pesan apa yang perlu tetap diingat setelah debat analitis tentang keputusan besar?
-- **Omar:** بَعْدَ ذَلِكَ أُفَرِّقُ بَيْنَ الْمَعْلُومَةِ وَالتَّفْسِيرِ. -> setelah itu saya membedakan informasi dan interpretasi
-- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam debat analitis tentang keputusan besar?
-- **Omar:** إِذَا ارْتَفَعَتْ حِدَّةُ النِّقَاشِ. -> jika intensitas debat meningkat
-- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang debat analitis tentang keputusan besar dengan jelas?
-- **Omar:** أُعِيدُهُ إِلَى مِعْيَارِ الْقَرَارِ وَمَا نَعْرِفُهُ فِعْلًا. -> saya mengembalikannya ke standar keputusan dan apa yang benar-benar kita tahu
+- **Khalid:** سَنُنَاقِشُ قَرَارًا كَبِيرًا الْيَوْمَ. كَيْفَ تُدِيرُ التَّحْلِيلَ؟ -> Hari ini kita membahas keputusan besar. Gimana kamu mengelola analisisnya?
+- **Omar:** أَبْدَأُ بِتَسْمِيَةِ الِافْتِرَاضِ، إِذْ أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ. -> Aku mulai dengan menamai asumsinya, karena menurutku asumsi dasarnya belum jelas.
+- **Khalid:** ثُمَّ؟ -> Lalu?
+- **Omar:** أُفَرِّقُ بَيْنَ الْمَعْلُومَةِ وَالتَّفْسِيرِ، وَيُمْكِنُنَا أَنْ نُحَدِّيَ كُلَّ حُجَّةٍ مِنْ جِهَةِ الْأَدِلَّةِ. -> Aku membedakan informasi dan interpretasi, dan kita bisa menantang tiap argumen dari sisi bukti.
+- **Khalid:** وَإِنِ ارْتَفَعَتْ حِدَّةُ النِّقَاشِ؟ -> Kalau intensitas debatnya naik?
+- **Omar:** تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ، وَأَسْتَنِدُ إِلَى الدَّلِيلِ الْأَقْوَى: مَا تَكَرَّرَ فِي أَكْثَرَ مِنْ سِيَاقٍ. -> Di bawah tekanan, aku fokus pada poin inti dan tidak berpanjang-panjang, dan bersandar pada bukti terkuat: yang berulang dalam lebih dari satu konteks.
+- **Khalid:** وَكَيْفَ تَخْتِمُ؟ -> Gimana kamu menutupnya?
+- **Omar:** لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ، فَأُعِيدُهُ إِلَى مِعْيَارِ الْقَرَارِ وَمَا نَعْرِفُهُ فِعْلًا. -> Karena itu respons terkuat adalah memperjelas asumsi lalu memeriksa bukti, jadi aku kembalikan ke standar keputusan dan apa yang benar-benar kita tahu.

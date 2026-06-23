@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Beri saya contoh konkret tentang tradeoff antara kecepatan dan kualitas.
-- **Tariq:** إِذَا أَسْرَعْنَا كَثِيرًا قَدْ نُخْطِئُ فِي التَّفَاصِيلِ. -> jika terlalu cepat, kita bisa salah pada detail
-- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam tradeoff antara kecepatan dan kualitas?
-- **Tariq:** وَإِذَا أَطَلْنَا الْمُرَاجَعَةَ فَقَدْ نَفْقِدُ الْفُرْصَةَ. -> jika review terlalu lama, kita bisa kehilangan peluang
-- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Kesulitan apa yang mungkin muncul dalam tradeoff antara kecepatan dan kualitas?
-- **Tariq:** قَدْ يَتَمَسَّكُ كُلُّ طَرَفٍ بِجَانِبٍ وَاحِدٍ. -> tiap pihak mungkin bertahan pada satu sisi
-- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang tradeoff antara kecepatan dan kualitas berubah menjadi tindakan jelas?
-- **Tariq:** نَضَعُ حَدًّا زَمَنِيًّا لِلْمُرَاجَعَةِ وَمِعْيَارًا لِلْجَوْدَةِ. -> kita menetapkan batas waktu review dan ukuran kualitas
+- **Rami:** نُرِيدُ التَّسْلِيمَ بِسُرْعَةٍ، لَكِنَّ الْجَوْدَةَ مُهِمَّةٌ أَيْضًا. -> Kita mau cepat selesai, tapi kualitas juga penting.
+- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ: مُوَازَنَةُ السُّرْعَةِ وَالْجَوْدَةِ. -> Menurutku poin ini bagian dari masalah yang lebih besar: menyeimbangkan kecepatan dan kualitas.
+- **Rami:** فَإِنْ أَسْرَعْنَا؟ -> Kalau kita terlalu cepat?
+- **Tariq:** لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ: إِنْ أَسْرَعْنَا أَخْطَأْنَا، وَإِنْ أَطَلْنَا فَقَدْنَا الْفُرْصَةَ. -> Tiap solusi punya manfaat dan efek samping: kalau cepat kita salah, kalau lama kita kehilangan peluang.
+- **Rami:** وَكُلُّ طَرَفٍ يَتَمَسَّكُ بِجَانِبٍ. -> Dan tiap pihak bertahan pada satu sisi.
+- **Tariq:** صَحِيحٌ، وَالسَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ غِيَابَ مِعْيَارٍ مُشْتَرَكٍ. -> Benar, dan penyebab utamanya mungkin tidak adanya kriteria bersama.
+- **Rami:** فَمَا الْحَلُّ؟ -> Jadi solusinya apa?
+- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: حَدٌّ زَمَنِيٌّ لِلْمُرَاجَعَةِ وَمِعْيَارٌ وَاضِحٌ لِلْجَوْدَةِ. -> Aku merekomendasikan solusi bertahap: batas waktu untuk review dan ukuran kualitas yang jelas.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** كَيْفَ سَتُحَوِّلُ تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah negosiasi dengan vendor baru menjadi keputusan?
-- **Omar:** أَبْدَأُ بِمَا نَحْتَاجُ إِلَيْهِ لا بِالسِّعْرِ فَقَطْ. -> saya mulai dari kebutuhan kita, bukan hanya harga
-- **Khalid:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam negosiasi dengan vendor baru?
-- **Omar:** إِذَا فَهِمَ الْمُوَرِّدُ الأَوْلَوِيَّةَ فَسَيُقَدِّمُ خِيَارًا أَفْضَلَ. -> jika vendor memahami prioritas, ia akan memberi opsi lebih baik
-- **Khalid:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ؟ -> Kesulitan apa yang mungkin muncul dalam negosiasi dengan vendor baru?
-- **Omar:** قَدْ يَرْفَعُ السِّعْرَ عِنْدَ إِضَافَةِ خِدْمَةٍ. -> ia mungkin menaikkan harga saat menambah layanan
-- **Khalid:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang negosiasi dengan vendor baru berubah menjadi tindakan jelas?
-- **Omar:** أَطْلُبُ عَرْضَيْنِ وَأُقَارِنُهُمَا بِهُدُوءٍ. -> saya meminta dua penawaran dan membandingkannya dengan tenang
+- **Khalid:** سَنُفَاوِضُ مُوَرِّدًا جَدِيدًا الْيَوْمَ. مِنْ أَيْنَ نَبْدَأُ؟ -> Hari ini kita negosiasi dengan vendor baru. Mulai dari mana?
+- **Omar:** أَوْلَوِيَّتِي هِيَ أَنْ نُوَضِّحَ مَا نَحْتَاجُ إِلَيْهِ قَبْلَ السِّعْرِ. -> Prioritas aku adalah memperjelas kebutuhan kita sebelum bicara harga.
+- **Khalid:** وَإِذَا عَرَضَ سِعْرًا مُرْتَفِعًا؟ -> Kalau dia menawarkan harga tinggi?
+- **Omar:** أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ: نَطْلُبُ عَرْضَيْنِ وَنُقَارِنُ. -> Aku ajukan usulan ini sebagai solusi praktis: minta dua penawaran lalu bandingkan.
+- **Khalid:** قَدْ يَرْفَعُ السِّعْرَ عِنْدَ إِضَافَةِ خِدْمَةٍ. -> Dia mungkin menaikkan harga saat menambah layanan.
+- **Omar:** أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ، وَيُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ. -> Aku paham kekhawatiranmu, tapi kita punya opsi lain, dan kita bisa mencapai solusi tengah.
+- **Khalid:** إِذَنْ مَا التَّوْصِيَةُ؟ -> Jadi rekomendasinya apa?
+- **Omar:** إِذَا اتَّفَقْنَا عَلَى الْخِدْمَةِ الْأَسَاسِيَّةِ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ. -> Kalau kita sepakat soal layanan dasarnya, langkah berikutnya jelas.

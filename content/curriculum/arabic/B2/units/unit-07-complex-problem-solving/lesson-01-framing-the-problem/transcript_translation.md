@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** مَا مَوْقِفُكَ مِنْ انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Apa posisimu tentang turunnya penggunaan aplikasi?
-- **Tariq:** لا أَرَاهُ مُشْكِلَةَ تَصْمِيمٍ فَقَطْ. -> saya tidak melihat ini hanya sebagai masalah desain
-- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam turunnya penggunaan aplikasi?
-- **Tariq:** قَدْ يَكُونُ السَّبَبُ مَزِيجًا مِنَ السُّرْعَةِ وَالْمُحْتَوَى. -> penyebabnya mungkin gabungan kecepatan dan konten
-- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Kesulitan apa yang mungkin muncul dalam turunnya penggunaan aplikasi?
-- **Tariq:** قَدْ يُرِيدُ الْفَرِيقُ تَغْيِيرَ الشَّكْلِ فَوْرًا. -> tim mungkin ingin langsung mengubah tampilan
-- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang turunnya penggunaan aplikasi berubah menjadi tindakan jelas?
-- **Tariq:** نَبْدَأُ بِقِيَاسِ نُقْطَةِ خُرُوجِ الْمُسْتَخْدِمِينَ. -> kita mulai dengan mengukur titik pengguna keluar
+- **Rami:** انْخَفَضَ اسْتِخْدَامُ التَّطْبِيقِ. هَلْ هِيَ مُشْكِلَةُ تَصْمِيمٍ؟ -> Penggunaan aplikasi turun. Apa ini masalah desain?
+- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ، لَا التَّصْمِيمَ وَحْدَهُ. -> Menurutku poin ini bagian dari masalah yang lebih besar, bukan desain saja.
+- **Rami:** فَمَا السَّبَبُ فِي رَأْيِكَ؟ -> Lalu penyebabnya apa menurutmu?
+- **Tariq:** السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ مَزِيجًا مِنَ السُّرْعَةِ وَالْمُحْتَوَى. -> Penyebab utamanya mungkin gabungan kecepatan dan konten.
+- **Rami:** الْفَرِيقُ يُرِيدُ تَغْيِيرَ الشَّكْلِ فَوْرًا. -> Tim mau langsung mengubah tampilannya.
+- **Tariq:** لَكِنْ لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ، فَالتَّسَرُّعُ خَطَرٌ. -> Tapi tiap solusi punya manfaat dan efek samping, jadi terburu-buru itu berisiko.
+- **Rami:** إِذَنْ بِمَ تُوصِي؟ -> Jadi kamu rekomendasi apa?
+- **Tariq:** أُوصِي بِحَلٍّ تَدْرِيجِيٍّ: نَبْدَأُ بِقِيَاسِ نُقْطَةِ خُرُوجِ الْمُسْتَخْدِمِينَ. -> Aku merekomendasikan solusi bertahap: mulai dengan mengukur titik pengguna keluar.

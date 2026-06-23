@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** حَدِّثْنِي عَنْ إِجْرَاءِ الدُّخُولِ فِي الْفُنْدُقِ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang proses check-in di hotel. Kapan situasinya mulai?
-- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا وَصَلْتُ بَعْدَ السَّاعَةِ الثَّالِثَةِ. -> Situasinya mulai ketika saya tiba setelah pukul tiga.
-- **Ahmad:** أَيُّ تَفْصِيلٍ فِي إِجْرَاءِ الدُّخُولِ فِي الْفُنْدُقِ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam proses check-in di hotel yang membuat situasinya lebih sulit?
-- **Karim:** كَانَ التَّحَدِّي هَكَذَا: الْغُرْفَةُ لَمْ تَكُنْ جَاهِزَةً بَعْدُ. -> Tantangannya begini: kamarnya belum siap.
-- **Ahmad:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي إِجْرَاءِ الدُّخُولِ فِي الْفُنْدُقِ؟ -> Apa yang akan kamu lakukan setelah itu dalam proses check-in di hotel?
-- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَنْتَظِرُ فِي الرَّدْهَةِ وَأَسْأَلُ عَنِ الْوَقْتِ. -> Saya bertindak dengan tenang, dan saya akan menunggu di lobi dan menanyakan waktunya.
+- **Ahmad:** كَيْفَ سَجَّلْتَ دُخُولَكَ فِي الْفُنْدُقِ؟ -> Gimana kamu check-in di hotelnya?
+- **Karim:** قُلْتُ لِلْمُوَظَّفِ: لَدَيَّ حَجْزٌ بِاسْمِ أَحْمَدَ، وَأُرِيدُ أَنْ أُؤَكِّدَ التَّفَاصِيلَ. -> Aku bilang ke staf: aku punya reservasi atas nama Ahmad, dan aku ingin mengonfirmasi detailnya.
+- **Ahmad:** وَهَلْ كَانَتِ الْغُرْفَةُ جَاهِزَةً؟ -> Kamarnya sudah siap?
+- **Karim:** سَأَلْتُهُ: هَلِ الْغُرْفَةُ جَاهِزَةٌ الْآنَ؟ وَقَالَ بَعْدَ قَلِيلٍ. -> Aku tanya dia: apa kamarnya sudah siap sekarang? Dia bilang sebentar lagi.
+- **Ahmad:** ثُمَّ مَاذَا طَلَبْتَ؟ -> Lalu kamu minta apa?
+- **Karim:** أَحْتَاجُ إِلَى بُطَاقَةِ الدُّخُولِ. شُكْرًا عَلَى الْمُسَاعَدَةِ. -> Aku butuh kartu masuk. Makasih atas bantuannya.

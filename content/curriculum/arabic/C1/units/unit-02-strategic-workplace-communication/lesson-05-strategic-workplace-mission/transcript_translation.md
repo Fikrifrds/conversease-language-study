@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Apa standar terpenting untuk keberhasilan percakapan strategis antara tiga tim?
-- **Noura:** أَجْمَعُ الْمَوْقِفَ وَالتَّوَقُّعَ وَالْخَطَرَ فِي إِطَارٍ وَاحِدٍ. -> saya menggabungkan posisi, ekspektasi, dan risiko dalam satu kerangka
-- **Maryam:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Pesan apa yang perlu tetap diingat setelah percakapan strategis antara tiga tim?
-- **Noura:** هَذَا يَمْنَعُ النِّقَاشَ مِنَ التَّحَوُّلِ إِلَى دِفَاعٍ مُتَبَادَلٍ. -> ini mencegah diskusi berubah menjadi saling defensif
-- **Maryam:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam percakapan strategis antara tiga tim?
-- **Noura:** إِذَا تَغَيَّرَتِ الأَوْلَوِيَّةُ فِي الْمُنْتَصَفِ. -> jika prioritas berubah di tengah
-- **Maryam:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang percakapan strategis antara tiga tim dengan jelas?
-- **Noura:** أُعِيدُ تَرْتِيبَ الْقَرَارِ وَأَطْلُبُ مُوَافَقَةً صَرِيحَةً. -> saya menyusun ulang keputusan dan meminta persetujuan eksplisit
+- **Maryam:** سَتُدِيرِينَ حِوَارًا اِسْتِرَاتِيجِيًّا بَيْنَ ثَلَاثَةِ فِرَقٍ. كَيْفَ تَسْتَعِدِّينَ؟ -> Kamu akan memimpin percakapan strategis antara tiga tim. Gimana kamu bersiap?
+- **Noura:** نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ فِي إِطَارٍ وَاحِدٍ: مَوْقِفٌ وَتَوَقُّعٌ وَخَطَرٌ. -> Pertama kita perlu menyatukan pemahaman pihak utama dalam satu kerangka: posisi, ekspektasi, dan risiko.
+- **Maryam:** لِمَاذَا الْإِطَارُ مُهِمٌّ؟ -> Kenapa kerangkanya penting?
+- **Noura:** لِأَنَّهُ يَمْنَعُ النِّقَاشَ مِنَ التَّحَوُّلِ إِلَى دِفَاعٍ مُتَبَادَلٍ، وَمِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ. -> Karena itu mencegah diskusi berubah jadi saling defensif, dan lebih baik kita kelola ekspektasi sebelum menjanjikan apa pun.
+- **Maryam:** وَإِنْ تَغَيَّرَتِ الْأَوْلَوِيَّةُ فِي الْمُنْتَصَفِ؟ -> Kalau prioritasnya berubah di tengah?
+- **Noura:** سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ، وَأُعِيدُ تَرْتِيبَ الْقَرَارِ بِهُدُوءٍ. -> Aku akan menyampaikan ini dengan sensitif, karena topiknya penting, dan menyusun ulang keputusannya dengan tenang.
+- **Maryam:** فَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
+- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ، وَإِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ، فَأَطْلُبُ مُوَافَقَةً صَرِيحَةً. -> Ada risiko potensial, tapi bisa kita kurangi dengan rencana jelas, dan kalau kita sepakat pada kerangka ini eksekusinya lebih mudah, jadi aku minta persetujuan yang eksplisit.

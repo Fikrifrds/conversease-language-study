@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** مَا مَوْقِفُكَ مِنْ فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Apa posisimu tentang ide dashboard baru?
-- **Lina:** سَأَبْدَأُ بِالْمُشْكِلَةِ الَّتِي يَرَاهَا الْفَرِيقُ كُلَّ يَوْمٍ. -> saya mulai dari masalah yang tim lihat setiap hari
-- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam ide dashboard baru?
-- **Lina:** بَعْدَ ذَلِكَ أُظْهِرُ كَيْفَ تُقَلِّلُ اللَّوْحَةُ الْوَقْتَ. -> setelah itu saya menunjukkan bagaimana dashboard mengurangi waktu
-- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Kesulitan apa yang mungkin muncul dalam ide dashboard baru?
-- **Lina:** قَدْ يَسْأَلُونَ عَنِ الْجُهْدِ الْمَطْلُوبِ. -> mereka mungkin bertanya tentang effort yang dibutuhkan
-- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang ide dashboard baru berubah menjadi tindakan jelas?
-- **Lina:** أَخْتِمُ بِتَجْرِبَةٍ صَغِيرَةٍ لِفَرِيقٍ وَاحِدٍ. -> saya menutup dengan uji coba kecil untuk satu tim
+- **Salma:** عِنْدَكِ عَرْضٌ عَنْ لَوْحَةِ الْمُتَابَعَةِ غَدًا. كَيْفَ سَتُرَتِّبِينَهُ؟ -> Besok kamu presentasi soal dashboard. Gimana kamu menyusunnya?
+- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنِ الْمُشْكِلَةِ الَّتِي يَرَاهَا الْفَرِيقُ كُلَّ يَوْمٍ. -> Aku akan mulai dengan pembuka singkat soal masalah yang tim hadapi tiap hari.
+- **Salma:** ثُمَّ؟ -> Lalu?
+- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ: كَيْفَ تُقَلِّلُ اللَّوْحَةُ الْوَقْتَ. -> Setelah itu, aku akan menjelaskan manfaat utamanya: gimana dashboard menghemat waktu.
+- **Salma:** وَهَلْ تَذْكُرِينَ السَّلْبِيَّاتِ؟ -> Apa kamu menyebutkan kekurangannya?
+- **Lina:** نَعَمْ، مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، مِثْلَ الْجُهْدِ الْأَوَّلِيِّ. -> Iya, penting juga menyebutkan risikonya, seperti effort awal.
+- **Salma:** وَكَيْفَ تُنْهِينَ الْعَرْضَ؟ -> Dan gimana kamu menutup presentasinya?
+- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً: تَجْرِبَةٌ صَغِيرَةٌ لِفَرِيقٍ وَاحِدٍ. -> Sebagai penutup, aku akan mengusulkan langkah praktis: uji coba kecil untuk satu tim.

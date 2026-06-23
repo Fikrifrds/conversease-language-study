@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ. -> Beri saya contoh konkret tentang sudut pandang tentang iklan baru.
-- **Hasan:** أَفْهَمُ أَنَّ الْإِعْلَانَ جَذَّابٌ لَكِنَّهُ قَدْ يَكُونُ غَيْرَ وَاضِحٍ. -> saya paham iklannya menarik tetapi mungkin tidak jelas
-- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam sudut pandang tentang iklan baru?
-- **Hasan:** نَحْتَاجُ إِلَى دَلِيلٍ مِنَ الْمُسْتَخْدِمِينَ. -> kita butuh bukti dari pengguna
-- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ؟ -> Kesulitan apa yang mungkin muncul dalam sudut pandang tentang iklan baru?
-- **Hasan:** قَدْ يَخْتَلِفُ رَأْيُ الْفَرِيقِ الإِبْدَاعِيِّ. -> pendapat tim kreatif mungkin berbeda
-- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي وِجْهَةِ نَظَرٍ حَوْلَ إِعْلَانٍ جَدِيدٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang sudut pandang tentang iklan baru berubah menjadi tindakan jelas?
-- **Hasan:** نَخْتَبِرُ نُسْخَتَيْنِ ثُمَّ نَقْرَأُ النَّتَائِجَ. -> kita menguji dua versi lalu membaca hasilnya
+- **Yusuf:** مَا رَأْيُكَ فِي الْإِعْلَانِ الْجَدِيدِ؟ -> Gimana pendapatmu soal iklan baru itu?
+- **Hasan:** أَفْهَمُ مِنَ الْإِعْلَانِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ، فَهُوَ جَذَّابٌ لَكِنَّهُ غَيْرُ وَاضِحٍ. -> Aku paham dari iklannya bahwa topik ini penting, menarik tapi kurang jelas.
+- **Yusuf:** لِمَاذَا تَقُولُ ذَلِكَ؟ -> Kenapa kamu bilang begitu?
+- **Hasan:** لِأَنَّ الرِّسَالَةَ غَامِضَةٌ، وَيَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ: رَأْيُ الْمُسْتَخْدِمِينَ أَنْفُسِهِمْ. -> Karena pesannya kabur, dan kita harus memastikan sumbernya tepercaya: pendapat pengguna sendiri.
+- **Yusuf:** الْفَرِيقُ الْإِبْدَاعِيُّ يَرَاهُ مُمْتَازًا. -> Tim kreatif menganggapnya bagus.
+- **Hasan:** قَدْ يَكُونُ كَذَلِكَ، لَكِنَّ وِجْهَةَ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Bisa jadi, tapi sudut pandang ini butuh bukti yang lebih kuat.
+- **Yusuf:** كَيْفَ نَحْسِمُ الْخِلَافَ؟ -> Gimana kita menyelesaikan perbedaannya?
+- **Hasan:** لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْآرَاءِ وَنَخْتَبِرَ نُسْخَتَيْنِ. -> Karena itu aku lebih memilih kita menyeimbangkan pendapat dan menguji dua versi.

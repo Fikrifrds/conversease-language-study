@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Khalid:** فِي سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟ -> Dalam pertanyaan tentang kebiasaan lokal, apa yang jelas di awal?
-- **Zayd:** بَدَأَ الأَمْرُ عِنْدَمَا أُرِيدُ أَنْ أَفْهَمَ السَّبَبَ بِدُونِ حُكْمٍ. -> Situasinya mulai ketika saya ingin memahami alasannya tanpa menghakimi.
-- **Khalid:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ؟ -> Tantangan kecil apa yang muncul selama pertanyaan tentang kebiasaan lokal?
-- **Zayd:** كَانَ التَّحَدِّي هَكَذَا: السُّؤَالُ الْمُبَاشِرُ قَدْ يَبْدُو قَاسِيًا. -> Tantangannya begini: pertanyaan langsung bisa terdengar keras.
-- **Khalid:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ؟ -> Apa langkah praktis setelah pertanyaan tentang kebiasaan lokal?
-- **Zayd:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُ بِطَرِيقَةٍ أَلْطَفَ وَأَشْكُرُهُمْ. -> Saya bertindak dengan tenang, dan saya akan bertanya dengan lebih halus dan berterima kasih.
+- **Zayd:** رَأَيْتُ عَادَةً جَدِيدَةً هُنَا. هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟ -> Aku lihat kebiasaan baru di sini. Bolehkah aku bertanya tentang kebiasaan ini?
+- **Khalid:** بِالطَّبْعِ، تَفَضَّلْ. -> Tentu, silakan.
+- **Zayd:** أُرِيدُ أَنْ أَفْهَمَ السِّيَاقَ الثَّقَافِيَّ. هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟ -> Aku ingin memahami konteks budayanya. Apa ini hal resmi atau biasa?
+- **Khalid:** هُوَ أَمْرٌ عَادِيٌّ بَيْنَ الْجِيرَانِ. -> Itu hal biasa antartetangga.
+- **Zayd:** شُكْرًا عَلَى التَّوْضِيحِ، سَأَتَصَرَّفُ بِاحْتِرَامٍ. -> Makasih atas penjelasannya, aku akan bersikap dengan hormat.
+- **Khalid:** عَفْوًا، اِسْأَلْ مَتَى شِئْتَ. -> Sama-sama, tanya kapan saja.

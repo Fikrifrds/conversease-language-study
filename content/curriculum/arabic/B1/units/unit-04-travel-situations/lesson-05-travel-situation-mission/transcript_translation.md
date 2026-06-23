@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** إِذَا سَأَلَكَ شَخْصٌ عَنْ رِحْلَةٍ قَصِيرَةٍ فِي نِهَايَةِ الأُسْبُوعِ، مَاذَا تَقُولُ أَوَّلًا؟ -> Jika seseorang bertanya tentang perjalanan singkat akhir pekan, apa yang kamu katakan dulu?
-- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا حَجَزْتُ التَّذْكِرَةَ وَالْفُنْدُقَ مُبَكِّرًا. -> Situasinya mulai ketika saya memesan tiket dan hotel lebih awal.
-- **Ahmad:** مَا الَّذِي جَعَلَ الْحِوَارَ عَنْ نِهَايَةِ الأُسْبُوعِ أَوْضَحَ؟ -> Apa yang membuat percakapan tentang perjalanan singkat akhir pekan menjadi lebih jelas?
-- **Karim:** كَانَ التَّحَدِّي هَكَذَا: الطَّقْسُ قَدْ يَتَغَيَّرُ فِي الْمَسَاءِ. -> Tantangannya begini: cuaca mungkin berubah pada sore hari.
-- **Ahmad:** مَا الْجُمْلَةُ الأَخِيرَةُ الَّتِي تُلَخِّصُ رِحْلَةٍ قَصِيرَةٍ فِي نِهَايَةِ الأُسْبُوعِ؟ -> Kalimat terakhir apa yang merangkum perjalanan singkat akhir pekan?
-- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَحْمِلُ مِظَلَّةً وَأُبْقِي الْخُطَّةَ مَرِنَةً. -> Saya bertindak dengan tenang, dan saya akan membawa payung dan menjaga rencana tetap fleksibel.
+- **Ahmad:** كَيْفَ كَانَتْ رِحْلَتُكَ الْأَخِيرَةُ؟ -> Gimana perjalananmu yang terakhir?
+- **Karim:** عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ، فَاتَّصَلْتُ وَقُلْتُ: أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ. -> Aku punya reservasi tapi terlambat, jadi aku telepon dan bilang: aku ingin mengonfirmasi kedatangan.
+- **Ahmad:** وَبَعْدَ أَنْ وَصَلْتَ؟ -> Setelah kamu tiba?
+- **Karim:** سَأَلْتُ الْمُوَظَّفَ: هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟ -> Aku tanya staf: kamu rekomendasi tempat makan dekat sini?
+- **Ahmad:** وَهَلْ كَانَ كُلُّ شَيْءٍ جَيِّدًا؟ -> Apa semuanya lancar?
+- **Karim:** لَدَيَّ مُشْكِلَةٌ صَغِيرَةٌ فِي الْغُرْفَةِ، لَكِنَّهُمْ حَلُّوهَا بِسُرْعَةٍ. شُكْرًا عَلَى سُرْعَةِ الْمُسَاعَدَةِ. -> Ada masalah kecil di kamar, tapi mereka cepat menyelesaikannya. Makasih atas cepatnya bantuan.

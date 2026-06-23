@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** فِي مَوْضُوعِ تَغْيِيرِ نِظَامِ الْعَمَلِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam topik perubahan sistem kerja, di mana kamu membutuhkan presisi paling besar?
-- **Lina:** أُؤَطِّرُهُ كَمُشْكِلَةِ تَنْسِيقٍ لا كَمُشْكِلَةِ أَدَاةٍ فَقَطْ. -> saya membingkainya sebagai masalah koordinasi, bukan hanya masalah alat
-- **Salma:** أَيُّ شَرْطٍ فِي مَوْضُوعِ تَغْيِيرِ نِظَامِ الْعَمَلِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam topik perubahan sistem kerja yang membuat opini lebih presisi dan seimbang?
-- **Lina:** هَذَا يُسَاعِدُ الْجُمْهُورَ عَلَى فَهْمِ السِّيَاقِ قَبْلَ الْحَلِّ. -> ini membantu audiens memahami konteks sebelum solusi
-- **Salma:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي مَوْضُوعِ تَغْيِيرِ نِظَامِ الْعَمَلِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam topik perubahan sistem kerja?
-- **Lina:** إِذَا بَدَا الْمَوْضُوعُ وَاسِعًا جِدًّا. -> jika topik tampak terlalu luas
-- **Salma:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي مَوْضُوعِ تَغْيِيرِ نِظَامِ الْعَمَلِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang topik perubahan sistem kerja dengan jelas?
-- **Lina:** أُحَدِّدُ سُؤَالًا مَرْكَزِيًّا وَأَعُودُ إِلَيْهِ فِي كُلِّ جُزْءٍ. -> saya menentukan pertanyaan utama dan kembali padanya di setiap bagian
+- **Salma:** عَرْضُكِ عَنْ تَغْيِيرِ نِظَامِ الْعَمَلِ مُعَقَّدٌ. كَيْفَ تَبْدَئِينَ؟ -> Presentasimu soal perubahan sistem kerja itu kompleks. Gimana kamu memulainya?
+- **Lina:** سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ، كَمُشْكِلَةِ تَنْسِيقٍ لَا أَدَاةٍ. -> Aku akan membingkai topiknya dulu agar audiens memahami konteksnya, sebagai masalah koordinasi, bukan alat.
+- **Salma:** لِمَاذَا التَّأْطِيرُ أَوَّلًا؟ -> Kenapa pembingkaian dulu?
+- **Lina:** بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً، فَالسِّيَاقُ يَأْتِي قَبْلَ الْحَلِّ. -> Setelah itu, aku akan membangun alur persuasif langkah demi langkah, karena konteks datang sebelum solusi.
+- **Salma:** وَإِنْ بَدَا الْمَوْضُوعُ وَاسِعًا جِدًّا؟ -> Kalau topiknya tampak terlalu luas?
+- **Lina:** الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ، وَأَعُودَ إِلَى سُؤَالٍ مَرْكَزِيٍّ فِي كُلِّ جُزْءٍ. -> Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak, dan aku kembali ke satu pertanyaan inti di tiap bagian.
+- **Salma:** وَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
+- **Lina:** فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada akhirnya, aku ingin audiens pulang dengan pesan yang jelas.

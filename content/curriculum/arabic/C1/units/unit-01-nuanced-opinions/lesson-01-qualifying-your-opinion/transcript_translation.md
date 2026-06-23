@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam kebijakan kerja fleksibel, di mana kamu membutuhkan presisi paling besar?
-- **Karim:** أَمِيلُ إِلَى دَعْمِهَا، لَكِنْ لَيْسَ بِشَكْلٍ مُطْلَقٍ. -> saya cenderung mendukungnya, tetapi tidak mutlak
-- **Ahmad:** أَيُّ شَرْطٍ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam kebijakan kerja fleksibel yang membuat opini lebih presisi dan seimbang?
-- **Karim:** الْفَرِيقُ يَحْتَاجُ إِلَى مِعْيَارٍ لِلْحُضُورِ وَالتَّوَاصُلِ. -> tim membutuhkan standar kehadiran dan komunikasi
-- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam kebijakan kerja fleksibel?
-- **Karim:** إِذَا قَالَ أَحَدٌ إِنَّهَا تُقَلِّلُ الِانْضِبَاطَ. -> jika seseorang mengatakan itu mengurangi disiplin
-- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang kebijakan kerja fleksibel dengan jelas?
-- **Karim:** أُفَضِّلُ صِيَاغَةً تَدْعَمُ الْمُرُونَةَ مَعَ مَسْؤُولِيَّةٍ وَاضِحَةٍ. -> saya memilih formulasi yang mendukung fleksibilitas dengan tanggung jawab jelas
+- **Ahmad:** هَلْ تُؤَيِّدُ سِيَاسَةَ الْعَمَلِ الْمَرِنِ؟ -> Kamu mendukung kebijakan kerja fleksibel?
+- **Karim:** مِنْ حَيْثُ الْمَبْدَأِ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Secara prinsip aku cenderung setuju, tapi ada satu catatan penting.
+- **Ahmad:** وَمَا هُوَ؟ -> Apa itu?
+- **Karim:** لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى أَنَّهَا تَنْجَحُ مَعَ مِعْيَارٍ وَاضِحٍ لِلْحُضُورِ. -> Aku belum sepenuhnya yakin, tapi buktinya mengarah bahwa ini berhasil kalau ada standar kehadiran yang jelas.
+- **Ahmad:** بَعْضُهُمْ يَرَى أَنَّهَا تُقَلِّلُ الِانْضِبَاطَ. -> Sebagian menganggapnya mengurangi disiplin.
+- **Karim:** مِنْ جِهَةٍ هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى لَهُ مَخَاطِرُ وَاضِحَةٌ إِنْ غَابَ الْإِطَارُ. -> Di satu sisi opsi ini praktis, di sisi lain ada risiko jelas kalau kerangkanya tidak ada.
+- **Ahmad:** فَكَيْفَ تَصُوغُ مَوْقِفَكَ؟ -> Jadi gimana kamu merumuskan posisimu?
+- **Karim:** لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً: مُرُونَةٌ مَعَ مَسْؤُولِيَّةٍ وَاضِحَةٍ. -> Karena itu aku lebih memilih rumusan yang lebih tepat: fleksibilitas dengan tanggung jawab yang jelas.

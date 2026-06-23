@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Mengapa kamu mendukung arah ini dalam review negosiasi dan presentasi?
-- **Noura:** سَأُحَدِّدُ الأَوْلَوِيَّةَ ثُمَّ أُقَدِّمُ تَنَازُلًا صَغِيرًا. -> saya menentukan prioritas lalu memberi konsesi kecil
-- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam review negosiasi dan presentasi?
-- **Noura:** فِي الْعَرْضِ سَأَرْبِطُ ذَلِكَ بِفَائِدَةٍ وَخَطَرٍ. -> dalam presentasi, saya mengaitkannya dengan manfaat dan risiko
-- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Kesulitan apa yang mungkin muncul dalam review negosiasi dan presentasi?
-- **Noura:** قَدْ يَأْتِي سُؤَالٌ عَنِ الْبَدِيلِ. -> mungkin muncul pertanyaan tentang alternatif
-- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang review negosiasi dan presentasi berubah menjadi tindakan jelas?
-- **Noura:** سَأُجِيبُ بِخِيَارَيْنِ وَأُوصِي بِوَاحِدٍ. -> saya menjawab dengan dua opsi dan merekomendasikan satu
+- **Layla:** وَالْيَوْمَ، أَيُّ مَهَارَةٍ تُرَاجِعِينَ؟ -> Dan hari ini, keterampilan apa yang kamu review?
+- **Noura:** أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ. -> Aku mereview negosiasi dan presentasi karena keduanya penting dalam diskusi.
+- **Layla:** كَيْفَ تَبْدَئِينَ التَّفَاوُضَ؟ -> Gimana kamu memulai negosiasi?
+- **Noura:** أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ، ثُمَّ أُحَدِّدُ الْأَوْلَوِيَّةَ. -> Aku bisa menyampaikan pendapat dan mendukungnya dengan bukti, lalu menentukan prioritas.
+- **Layla:** وَفِي الْعَرْضِ؟ -> Kalau di presentasi?
+- **Noura:** أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ، وَأَرْبِطَ كُلَّ نُقْطَةٍ بِفَائِدَةٍ وَخَطَرٍ. -> Aku juga bisa mengelola percakapan profesional dengan jelas, dan mengaitkan tiap poin dengan manfaat dan risiko.
+- **Layla:** وَإِنْ سَأَلُوا عَنِ الْبَدِيلِ؟ -> Kalau mereka tanya soal alternatif?
+- **Noura:** إِذَا ظَهَرَ اِعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ، وَفِي الِاخْتِبَارِ النِّهَائِيِّ سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Kalau muncul keberatan aku akan menanggapinya dengan tenang, dan di ujian akhir aku fokus pada koherensi dan kejelasan.

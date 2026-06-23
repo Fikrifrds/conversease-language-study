@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** إِذَا سَأَلَكَ شَخْصٌ عَنْ الْمُحَادَثَةِ النِّهَائِيَّةِ فِي مُسْتَوَى بِي وَاحِدٍ، مَاذَا تَقُولُ أَوَّلًا؟ -> Jika seseorang bertanya tentang percakapan akhir level B1, apa yang kamu katakan dulu?
-- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا سَأَجْمَعُ الْقِصَّةَ وَالرَّأْيَ وَالْخُطَّةَ. -> Situasinya mulai ketika saya akan menggabungkan cerita, pendapat, dan rencana.
-- **Ahmad:** مَا الَّذِي جَعَلَ الْحِوَارَ عَنْ مُسْتَوَى بِي وَاحِدٍ أَوْضَحَ؟ -> Apa yang membuat percakapan tentang percakapan akhir level B1 menjadi lebih jelas?
-- **Karim:** كَانَ التَّحَدِّي هَكَذَا: أَحْتَاجُ إِلَى أَنْ أَبْقَى طَبِيعِيًّا. -> Tantangannya begini: saya perlu tetap natural.
-- **Ahmad:** مَا الْجُمْلَةُ الأَخِيرَةُ الَّتِي تُلَخِّصُ الْمُحَادَثَةِ النِّهَائِيَّةِ فِي مُسْتَوَى بِي وَاحِدٍ؟ -> Kalimat terakhir apa yang merangkum percakapan akhir level B1?
-- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْمَعُ السُّؤَالَ جَيِّدًا ثُمَّ أُجِيبُ بِوُضُوحٍ. -> Saya bertindak dengan tenang, dan saya akan mendengarkan pertanyaan baik-baik lalu menjawab jelas.
+- **Ahmad:** هَذِهِ آخِرُ مُحَادَثَةٍ قَبْلَ الِاخْتِبَارِ. كَيْفَ تَسْتَعِدُّ؟ -> Ini percakapan terakhir sebelum ujian. Gimana kamu bersiap?
+- **Karim:** سَأَتَحَدَّثُ عَنْ تَجْرِبَةٍ شَخْصِيَّةٍ، ثُمَّ أَشْرَحُ مُشْكِلَةً وَحَلًّا. -> Aku akan bicara tentang pengalaman pribadi, lalu menjelaskan masalah dan solusi.
+- **Ahmad:** وَهَلْ تُعْطِي رَأْيَكَ؟ -> Apa kamu memberikan pendapatmu?
+- **Karim:** بَعْدَ ذَلِكَ، أُبَيِّنُ رَأْيِي بِسَبَبٍ. -> Setelah itu, aku menjelaskan pendapatku dengan alasan.
+- **Ahmad:** وَكَيْفَ تُبْقِي الْحِوَارَ حَيًّا؟ -> Gimana kamu menjaga percakapan tetap hidup?
+- **Karim:** أَسْأَلُ سُؤَالًا لِأُبْقِيَ الْحِوَارَ حَيًّا، وَفِي النِّهَايَةِ، أُلَخِّصُ النُّقَاطَ الْمُهِمَّةَ. -> Aku bertanya agar percakapan tetap hidup, dan di akhir, aku merangkum poin-poin penting.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا. -> Beri saya contoh konkret tentang penjelasan manfaat dan risiko otomatisasi.
-- **Lina:** الْفَائِدَةُ الأُولَى هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> manfaat pertama adalah mengurangi pekerjaan berulang
-- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ -> Alasan atau detail apa yang mendukung poin ini dalam penjelasan manfaat dan risiko otomatisasi?
-- **Lina:** وَالْمَخَاطِرُ تَظْهَرُ إِذَا لَمْ نُرَاقِبِ النَّتَائِجَ. -> risiko muncul jika kita tidak memantau hasil
-- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ -> Kesulitan apa yang mungkin muncul dalam penjelasan manfaat dan risiko otomatisasi?
-- **Lina:** قَدْ يَخَافُ بَعْضُهُمْ مِنْ تَغْيِيرِ طَرِيقَةِ الْعَمَلِ. -> sebagian mungkin takut perubahan cara kerja
-- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang penjelasan manfaat dan risiko otomatisasi berubah menjadi tindakan jelas?
-- **Lina:** نَبْدَأُ بِخُطْوَةٍ صَغِيرَةٍ وَنَقِيسُ الأَثَرَ. -> kita mulai dengan langkah kecil dan mengukur dampaknya
+- **Salma:** سَتَعْرِضِينَ فِكْرَةَ الْأَتْمَتَةِ. كَيْفَ تُوَازِنِينَ بَيْنَ الْفَائِدَةِ وَالْخَطَرِ؟ -> Kamu akan presentasi ide otomatisasi. Gimana kamu menyeimbangkan manfaat dan risiko?
+- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنِ الْعَمَلِ الْمُكَرَّرِ الَّذِي يُتْعِبُ الْفَرِيقَ. -> Aku akan mulai dengan pembuka singkat soal pekerjaan berulang yang melelahkan tim.
+- **Salma:** وَالْفَائِدَةُ؟ -> Manfaatnya?
+- **Lina:** بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ: تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> Setelah itu, aku akan menjelaskan manfaat utamanya: mengurangi pekerjaan berulang.
+- **Salma:** لَكِنَّ بَعْضَهُمْ يَخَافُ مِنَ الْأَتْمَتَةِ. -> Tapi sebagian takut sama otomatisasi.
+- **Lina:** لِذَلِكَ مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا، مِثْلَ الْحَاجَةِ إِلَى مُرَاقَبَةِ النَّتَائِجِ. -> Makanya penting juga menyebutkan risikonya, seperti perlunya memantau hasil.
+- **Salma:** وَكَيْفَ تُطَمْئِنِينَهُمْ؟ -> Gimana kamu menenangkan mereka?
+- **Lina:** فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً: نَبْدَأُ صَغِيرًا وَنَقِيسُ الْأَثَرَ. -> Sebagai penutup, aku akan mengusulkan langkah praktis: mulai kecil dan ukur dampaknya.

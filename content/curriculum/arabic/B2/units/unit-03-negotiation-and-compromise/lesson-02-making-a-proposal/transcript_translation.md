@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي اِقْتِرَاحِ خُطَّةٍ بَدِيلَةٍ؟ -> Mengapa kamu mendukung arah ini dalam usulan rencana alternatif?
-- **Omar:** أَقْتَرِحُ أَنْ نُقَلِّلَ عَدَدَ الْمَرَاجِعَاتِ. -> saya mengusulkan kita mengurangi jumlah review
-- **Khalid:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي اِقْتِرَاحِ خُطَّةٍ بَدِيلَةٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam usulan rencana alternatif?
-- **Omar:** هَذَا يُحَافِظُ عَلَى السُّرْعَةِ وَيُبْقِي ضَمَانَ الْجَوْدَةِ. -> ini menjaga kecepatan dan tetap ada quality assurance
-- **Khalid:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي اِقْتِرَاحِ خُطَّةٍ بَدِيلَةٍ؟ -> Kesulitan apa yang mungkin muncul dalam usulan rencana alternatif?
-- **Omar:** قَدْ يَقُولُ الْفَرِيقُ إِنَّ الْجَوْدَةَ سَتَنْقُصُ. -> tim mungkin bilang kualitas akan turun
-- **Khalid:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي اِقْتِرَاحِ خُطَّةٍ بَدِيلَةٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang usulan rencana alternatif berubah menjadi tindakan jelas?
-- **Omar:** نُبْقِي مُرَاجَعَةً وَاحِدَةً لِلْجُزْءِ الأَكْثَرِ خَطَرًا. -> kita mempertahankan satu review untuk bagian paling berisiko
+- **Khalid:** الْعَمِيلُ يُرِيدُ التَّسْلِيمَ فِي أُسْبُوعَيْنِ. هَلْ هَذَا مُمْكِنٌ؟ -> Klien mau pengiriman dalam dua minggu. Itu mungkin?
+- **Omar:** أَوْلَوِيَّتِي هِيَ أَنْ نُسَلِّمَ شَيْئًا مُسْتَقِرًّا. -> Prioritas aku adalah mengirim sesuatu yang stabil.
+- **Khalid:** إِذَنْ مَا الَّذِي تَقْتَرِحُهُ؟ -> Jadi apa usulmu?
+- **Omar:** أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ: نِطَاقٌ أَصْغَرُ فِي أُسْبُوعَيْنِ ثُمَّ الْبَاقِي لَاحِقًا. -> Aku ajukan usulan ini sebagai solusi praktis: scope lebih kecil dalam dua minggu lalu sisanya menyusul.
+- **Khalid:** لَكِنَّهُ يُرِيدُ كُلَّ شَيْءٍ مَعًا. -> Tapi dia mau semuanya sekaligus.
+- **Omar:** أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ: نُرِيهِ النَّتِيجَةَ مُبَكِّرًا. -> Aku paham kekhawatiranmu, tapi kita punya opsi lain: tunjukkan hasilnya lebih awal.
+- **Khalid:** فِكْرَةٌ مَعْقُولَةٌ. -> Ide yang masuk akal.
+- **Omar:** إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ. -> Kalau kita sepakat soal itu, langkah berikutnya jelas.

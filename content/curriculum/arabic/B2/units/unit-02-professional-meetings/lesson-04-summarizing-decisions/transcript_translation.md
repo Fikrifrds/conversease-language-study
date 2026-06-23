@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي قَرَارَاتِ الِاجْتِمَاعِ؟ -> Keberatan apa yang mungkin muncul dalam keputusan rapat?
-- **Noura:** اتَّفَقْنَا عَلَى النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ. -> kita sepakat versi pertama pada Kamis
-- **Maryam:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي قَرَارَاتِ الِاجْتِمَاعِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam keputusan rapat?
-- **Noura:** نَحْتَاجُ إِلَى ذِكْرِ الْمَسْؤُولِ وَالْمَوْعِدِ. -> kita perlu menyebut penanggung jawab dan tenggat
-- **Maryam:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي قَرَارَاتِ الِاجْتِمَاعِ؟ -> Kesulitan apa yang mungkin muncul dalam keputusan rapat?
-- **Noura:** قَدْ يَنْسَى الْفَرِيقُ نُقْطَةَ الصُّوَرِ. -> tim mungkin lupa poin gambar
-- **Maryam:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي قَرَارَاتِ الِاجْتِمَاعِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang keputusan rapat berubah menjadi tindakan jelas?
-- **Noura:** أُرْسِلُ مُلَخَّصًا بِثَلَاثِ نِقَاطٍ بَعْدَ الِاجْتِمَاعِ. -> saya mengirim ringkasan tiga poin setelah rapat
+- **Maryam:** قَبْلَ أَنْ نَنْهِيَ، مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟ -> Sebelum kita tutup, apa yang sudah kita sepakati?
+- **Noura:** اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الْأُولَى يَوْمَ الْخَمِيسِ. -> Kita sepakat menyerahkan versi pertama hari Kamis.
+- **Maryam:** وَمَنِ الْمَسْؤُولُ عَنْ كُلِّ جُزْءٍ؟ -> Dan siapa penanggung jawab tiap bagian?
+- **Noura:** أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ. -> Aku meninjau teks, dan Fatimah meninjau desain.
+- **Maryam:** هَلْ نَسِينَا شَيْئًا؟ -> Ada yang kita lupa?
+- **Noura:** نَعَمْ، نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ. -> Iya, kita butuh persetujuan klien untuk gambarnya.
+- **Maryam:** جَيِّدٌ أَنَّكِ تَذَكَّرْتِ. -> Untung kamu ingat.
+- **Noura:** سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ. -> Aku akan tulis tiga poin: keputusan, penanggung jawab, dan tenggat.

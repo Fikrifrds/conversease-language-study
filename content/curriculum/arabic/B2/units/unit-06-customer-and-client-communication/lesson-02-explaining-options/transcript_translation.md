@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Mengapa kamu mendukung arah ini dalam dua opsi layanan support?
-- **Aisha:** الخِيَارُ الأَوَّلُ أَسْرَعُ وَالثَّانِي أَشْمَلُ. -> opsi pertama lebih cepat dan kedua lebih lengkap
-- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam dua opsi layanan support?
-- **Aisha:** أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ الْعَمِيلُ. -> saya menjelaskan biaya dan apa yang didapat klien
-- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Kesulitan apa yang mungkin muncul dalam dua opsi layanan support?
-- **Aisha:** قَدْ يَسْأَلُ عَنِ الْفَرْقِ بَيْنَهُمَا. -> klien mungkin bertanya perbedaan keduanya
-- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang dua opsi layanan support berubah menjadi tindakan jelas?
-- **Aisha:** أَرْبِطُ كُلَّ خِيَارٍ بِحَاجَتِهِ الْفِعْلِيَّةِ. -> saya mengaitkan tiap opsi dengan kebutuhan nyatanya
+- **Fatimah:** الْعَمِيلُ يَسْأَلُ عَنْ خِدْمَةِ الدَّعْمِ. مَاذَا نَعْرِضُ؟ -> Klien tanya soal layanan support. Apa yang kita tawarkan?
+- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ أَوَّلًا: هَلْ يُرِيدُ السُّرْعَةَ أَمِ الشُّمُولَ؟ -> Aku ingin memahami kebutuhan klien dulu: dia mau kecepatan atau kelengkapan?
+- **Fatimah:** قَالَ إِنَّهُ يُرِيدُ الِاثْنَيْنِ. -> Katanya dia mau dua-duanya.
+- **Aisha:** إِذَنْ لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ: الْأَوَّلُ أَسْرَعُ وَالثَّانِي أَشْمَلُ. -> Berarti kita punya dua opsi, dan tiap opsi ada manfaatnya: yang pertama lebih cepat, yang kedua lebih lengkap.
+- **Fatimah:** قَدْ يَسْأَلُ عَنِ الْفَرْقِ فِي السِّعْرِ. -> Dia mungkin tanya soal perbedaan harga.
+- **Aisha:** أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ: التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ فِي كُلِّ خِيَارٍ. -> Aku paham kekhawatiran itu, dan aku akan menjelaskan detailnya: biaya dan apa yang didapat di tiap opsi.
+- **Fatimah:** وَبَعْدَ أَنْ يَخْتَارَ؟ -> Setelah dia memilih?
+- **Aisha:** سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْخِيَارِ الَّذِي اخْتَارَهُ. -> Aku akan kirim konfirmasi tertulis berisi opsi yang dia pilih.

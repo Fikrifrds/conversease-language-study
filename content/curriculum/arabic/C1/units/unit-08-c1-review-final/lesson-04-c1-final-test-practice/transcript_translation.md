@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** إِذَا تَغَيَّرَ السِّيَاقُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam latihan ujian akhir C1, bagaimana kamu menyesuaikan jawaban?
-- **Noura:** أَسْتَخْدِمُ جَوَابًا فِيهِ مَوْقِفٌ وَقَيْدٌ وَخُطْوَةٌ. -> saya memakai jawaban yang berisi posisi, batasan, dan langkah
-- **Layla:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani latihan ujian akhir C1, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
-- **Noura:** لا أَكْتَفِي بِالطَّلَاقَةِ؛ أَحْتَاجُ إِلَى دِقَّةٍ فِي الْمَعْنَى. -> saya tidak cukup hanya fasih; saya butuh presisi makna
-- **Layla:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam latihan ujian akhir C1?
-- **Noura:** إِذَا نَسِيتُ كَلِمَةً مُعَقَّدَةً. -> jika saya lupa kata kompleks
-- **Layla:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang latihan ujian akhir C1 dengan jelas?
-- **Noura:** أُعِيدُ الصِّيَاغَةَ بِجُمْلَةٍ أَبْسَطَ دُونَ فَقْدِ النُّقْطَةِ. -> saya merumuskan ulang dengan kalimat lebih sederhana tanpa kehilangan poin
+- **Layla:** لِنُجَرِّبْ سُؤَالًا كَالِاخْتِبَارِ. كَيْفَ تَسْتَعِدِّينَ؟ -> Ayo coba satu pertanyaan seperti ujian. Gimana kamu bersiap?
+- **Noura:** فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ. -> Dalam latihan tes akhir, aku menggabungkan ketepatan, kefasihan, dan kejelasan.
+- **Layla:** حَسَنًا: لِمَاذَا تُؤَيِّدِينَ هَذَا الْإِطَارَ؟ -> Oke: kenapa kamu mendukung kerangka ini?
+- **Noura:** أُجِيبُ أَوَّلًا عَنِ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا. -> Aku menjawab pertanyaannya dulu, lalu menambah alasan dan contoh singkat.
+- **Layla:** وَإِنْ نَسِيتِ كَلِمَةً؟ -> Kalau kamu lupa satu kata?
+- **Noura:** إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا، وَإِذَا ضَاقَ الْوَقْتُ أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ مُعَقَّدَةٍ. -> Kalau lupa satu kata, aku menyusun ulang kalimat dan tidak berhenti lama, dan kalau waktu sempit aku pilih kalimat jelas daripada yang rumit.
+- **Layla:** وَكَيْفَ تَخْتِمِينَ؟ -> Gimana kamu menutupnya?
+- **Noura:** فِي آخِرِ الْإِجَابَةِ، أَرْبِطُ النُّقْطَةَ بِالْمَهَمَّةِ الْمَطْلُوبَةِ. -> Di akhir jawaban, aku menghubungkan poin dengan tugas yang diminta.
