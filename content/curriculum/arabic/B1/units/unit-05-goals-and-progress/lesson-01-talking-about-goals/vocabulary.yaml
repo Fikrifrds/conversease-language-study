@@ -18,8 +18,8 @@ vocabulary:
   meaning_id: kemajuan
   usage_note: 'Dipakai untuk arti "kemajuan". Contoh: "أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ."'
 - word: مُرَاجَعَةٌ
-  meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ."'
+  meaning_id: peninjauan ulang/tinjauan
+  usage_note: 'Dipakai untuk arti "peninjauan ulang/tinjauan". Contoh: "أَقِيسُ التَّقَدُّمَ بِالْمُرَاجَعَةِ."'
 - word: هَدَفٌ
   meaning_id: tujuan
   usage_note: 'Dipakai untuk arti "tujuan". Contoh: "هَذَا الْهَدَفُ مُهِمٌّ لِي."'

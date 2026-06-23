@@ -15,14 +15,14 @@ turns:
   hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ
     لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.'
   sample_answer: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
-  focus: Membuka review.
+  focus: Membuka sesi peninjauan ulang.
   expected_keywords:
   - أُرَاجِعُ
   - التَّعَامُلَ
   - مَعَ
   - الْمَعْلُومَاتِ
   - وَالْعُمَلَاءِ
-  indonesian_explanation: Saya mereview cara menangani informasi dan klien karena itu penting dalam diskusi.
+  indonesian_explanation: Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

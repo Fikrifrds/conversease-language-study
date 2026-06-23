@@ -1,6 +1,5 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mereview negosiasi dan presentasi karena keduanya penting dalam
-    diskusi.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali negosiasi dan presentasi karena keduanya penting dalam diskusi.'
   target_response: أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.
   acceptable_responses:
   - أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.

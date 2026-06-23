@@ -1,6 +1,6 @@
 # Review Negotiation and Presenting
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk review negosiasi dan presentasi dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk peninjauan ulang negosiasi dan presentasi dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 

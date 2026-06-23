@@ -1,7 +1,6 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya mereview cara menangani informasi dan klien karena itu penting
-    dalam diskusi."?
+  prompt: Frasa mana yang berarti "Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi."?
   options:
   - أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
   - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

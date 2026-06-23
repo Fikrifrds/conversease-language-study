@@ -1,6 +1,5 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mereview cara menangani informasi dan klien karena itu penting
-    dalam diskusi.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.'
   target_response: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
   acceptable_responses:
   - أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.

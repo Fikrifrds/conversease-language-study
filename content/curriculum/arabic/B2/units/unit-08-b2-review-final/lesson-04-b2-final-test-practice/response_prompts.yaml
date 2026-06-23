@@ -1,5 +1,5 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mereview latihan tes akhir karena itu membantu saya bersiap.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali latihan tes akhir karena itu membantu saya bersiap.'
   target_response: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.
   acceptable_responses:
   - أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.

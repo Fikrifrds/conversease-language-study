@@ -2,74 +2,62 @@ scenario_key: arabic_c1_c1_final_test_practice
 mode: lesson_practice_coach
 level_code: C1
 opening_line: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟
-learner_goal: Latih percakapan Arab C1 untuk latihan tes akhir C1 dengan nuansa, struktur, presisi, dan
-  respons profesional.
+learner_goal: Latih percakapan Arab C1 untuk latihan tes akhir C1 dengan nuansa, struktur, presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
 - coach: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أُرَاجِعُ
-    الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.'
-  sample_answer: فِي تَدْرِيبِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ
-    عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-  focus: 'Review nuance. Fokus lesson: latihan tes akhir C1.'
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ.'
+  sample_answer: فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ.
+  focus: Menjawab tes akhir dengan tiga target utama.
   expected_keywords:
   - فِي
   - تَدْرِيبِ
-  - تَدْرِيبِ
   - الِاخْتِبَارِ
-  - النِّهَائِيِّ،
-  indonesian_explanation: Dalam latihan latihan tes akhir C1, saya sedang mereview cara menyampaikan opini
-    yang tepat tanpa berlebihan.
-- coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي الْحِوَارِ الْمِهَنِيِّ،
-    سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي
-    الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
-  sample_answer: عِنْدَ تَطْبِيقِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي الْحِوَارِ الْمِهَنِيِّ،
-    سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-  focus: Review strategy. Hubungkan dengan fokus lesson.
+  - النِّهَائِيِّ
+  - أَجْمَعُ
+  indonesian_explanation: Dalam latihan tes akhir, saya menggabungkan ketepatan, kefasihan, dan kejelasan.
+- coach: 'استخدم الفكرة: أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.'
+  hint: 'Jawab dengan struktur C1 memakai: أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.'
+  sample_answer: أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.
+  focus: Membuat jawaban tes tetap lengkap dan terarah.
   expected_keywords:
-  - عِنْدَ
-  - تَطْبِيقِ
-  - تَدْرِيبِ
-  - الِاخْتِبَارِ
-  - النِّهَائِيِّ،
-  indonesian_explanation: Saat menerapkan latihan tes akhir C1, dalam percakapan profesional, saya akan
-    fokus pada konteks, ekspektasi, dan risiko.
-- coach: 'استخدم الفكرة: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ
-    مُقْنِعٍ.'
-  sample_answer: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-  focus: Review presenting and debate. Pakai sebagai penghubung dalam latihan tes akhir C1.
-  expected_keywords:
-  - عِنْدَ
-  - الْعَرْضِ
-  - أَوِ
-  - النِّقَاشِ،
-  - سَأَبْنِي
-  indonesian_explanation: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
-  sample_answer: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
-  focus: Review cross-cultural repair. Gunakan untuk repair dalam latihan tes akhir C1.
+  - أُجِيبُ
+  - أَوَّلًا
+  - عَنْ
+  - السُّؤَالِ
+  - ثُمَّ
+  indonesian_explanation: Saya menjawab pertanyaan terlebih dahulu, lalu menambahkan alasan dan contoh singkat.
+- coach: 'استخدم الفكرة: إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.'
+  sample_answer: إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.
+  focus: Menjaga kelancaran saat ada kata yang terlupa.
   expected_keywords:
   - إِذَا
-  - ظَهَرَ
-  - سُوءُ
-  - فَهْمٍ،
-  - فَسَأُصْلِحُهُ
-  indonesian_explanation: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
+  - نَسِيتُ
+  - كَلِمَةً
+  - أُعِيدُ
+  - الصِّيَاغَةَ
+  indonesian_explanation: Jika saya lupa satu kata, saya menyusun ulang kalimat dan tidak berhenti terlalu lama.
+- coach: 'استخدم الفكرة: إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.'
+  sample_answer: إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.
+  focus: Memprioritaskan kejelasan saat waktu terbatas.
+  expected_keywords:
+  - إِذَا
+  - ضَاقَ
+  - الْوَقْتُ
+  - أَخْتَارُ
+  - جُمْلَةً
+  indonesian_explanation: Jika waktu sempit, saya memilih kalimat yang jelas daripada kalimat yang rumit.
 target_phrases:
-- فِي تَدْرِيبِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ
-  دُونَ مُبَالَغَةٍ.
-- عِنْدَ تَطْبِيقِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى
-  السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
-- فِي خِتَامِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ
-  وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
+- فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ.
+- أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا.
+- إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا.
+- إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ.
+- فِي آخِرِ الْإِجَابَةِ، أَرْبِطُ النُّقْطَةَ بِالْمَهَمَّةِ الْمَطْلُوبَةِ.
 rubric:
   speaking:
     minimum_score: 76

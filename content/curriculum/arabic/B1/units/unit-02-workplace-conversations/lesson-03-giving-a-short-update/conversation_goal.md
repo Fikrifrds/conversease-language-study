@@ -1,6 +1,6 @@
 # Target Percakapan
 
-Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.
+Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang kemajuan, kendala, dan langkah berikutnya.
 
 Kamu akan berlatih mengatakan:
 

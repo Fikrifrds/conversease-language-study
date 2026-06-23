@@ -1,33 +1,25 @@
 vocabulary:
-- word: تَدْرِيبٌ
-  meaning_id: coaching/latihan
-  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: مُرَاجَعَةٌ
-  meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: عَرْضٌ
-  meaning_id: presentasi/tawaran
-  usage_note: 'Dipakai untuk arti "presentasi/tawaran". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: أُرَاجِعُ
-  meaning_id: saya mengulang/review
-  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ
-    وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: كَيْفَ
-  meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: رَأْيٌ
-  meaning_id: pendapat
-  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ..."'
-- word: تَطْبِيقٌ
-  meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَ..."'
-- word: مِهَنِيٌّ
-  meaning_id: profesional
-  usage_note: 'Dipakai untuk arti "profesional". Contoh: "عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ،
-    فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَ..."'
+- word: ادِّعَاءٌ
+  meaning_id: klaim
+  usage_note: Dipakai untuk posisi utama dalam presentasi atau debat.
+- word: دَلِيلٌ
+  meaning_id: bukti
+  usage_note: Dipakai untuk mendukung klaim agar lebih kuat.
+- word: نُقْطَةٌ رَئِيسِيَّةٌ
+  meaning_id: poin utama
+  usage_note: Dipakai untuk menjaga presentasi tetap fokus.
+- word: تَفَاصِيلُ
+  meaning_id: detail
+  usage_note: Dipakai untuk informasi pendukung setelah poin utama.
+- word: الِاعْتِرَاضُ
+  meaning_id: sanggahan/keberatan
+  usage_note: Dipakai saat merespons counterpoint dalam debat.
+- word: بِهُدُوءٍ
+  meaning_id: dengan tenang
+  usage_note: Dipakai untuk menjaga nada saat menjawab sanggahan.
+- word: قَاطَعَنِي
+  meaning_id: dia memotong saya
+  usage_note: Dipakai saat mengelola interupsi dalam diskusi.
+- word: تَلْخِيصٌ
+  meaning_id: ringkasan
+  usage_note: Dipakai untuk menutup diskusi dengan jelas.

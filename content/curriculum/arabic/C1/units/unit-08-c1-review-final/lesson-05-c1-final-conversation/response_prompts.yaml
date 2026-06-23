@@ -1,25 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan percakapan akhir C1 yang utuh, saya sedang mereview
-    cara menyampaikan opini yang tepat tanpa berlebihan.'
-  target_response: فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ
-    أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam percakapan akhir yang utuh, saya mengelola diskusi dengan jelas dan fleksibel.'
+  target_response: فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
   acceptable_responses:
-  - فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ
-    عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan percakapan akhir C1 yang utuh, dalam percakapan
-    profesional, saya akan fokus pada konteks, ekspektasi, dan risiko.'
-  target_response: عِنْدَ تَطْبِيقِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، فِي الْحِوَارِ الْمِهَنِيِّ،
-    سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+  - فِي الْمُحَادَثَةِ النِّهَائِيَّةِ الْمُتَكَامِلَةِ، أُدِيرُ النِّقَاشَ بِوُضُوحٍ وَمُرُونَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mulai dengan menentukan topik, lalu mengundang pihak lain untuk merespons.'
+  target_response: أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
   acceptable_responses:
-  - عِنْدَ تَطْبِيقِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ مُتَكَامِلَةٍ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ
-    عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan
-    yang persuasif.'
-  target_response: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
+  - أَبْدَأُ بِتَحْدِيدِ الْمَوْضُوعِ، ثُمَّ أَدْعُو الطَّرَفَ الْآخَرَ إِلَى الرَّدِّ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya menghubungkan pendapat, bukti, dan pertanyaan agar percakapan tetap tersambung.'
+  target_response: أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
   acceptable_responses:
-  - عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan
-    kejelasan.'
-  target_response: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  - أَرْبِطُ بَيْنَ الرَّأْيِ وَالدَّلِيلِ وَالسُّؤَالِ حَتَّى يَظَلَّ الْحِوَارُ مُتَّصِلًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika nada percakapan berubah, saya melunakkan bahasa dan mengarahkan ulang diskusi.'
+  target_response: إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.
   acceptable_responses:
-  - إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  - إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، أُخَفِّفُ اللُّغَةَ وَأُعِيدُ تَوْجِيهَ النِّقَاشِ.

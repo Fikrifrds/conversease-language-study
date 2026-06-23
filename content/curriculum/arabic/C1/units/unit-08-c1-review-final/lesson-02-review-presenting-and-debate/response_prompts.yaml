@@ -1,25 +1,17 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan peninjauan presentasi dan debat, saya sedang mereview
-    cara menyampaikan opini yang tepat tanpa berlebihan.'
-  target_response: فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ
-    عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat meninjau presentasi dan debat, saya menetapkan klaim lalu mendukungnya dengan bukti.'
+  target_response: عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.
   acceptable_responses:
-  - فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ
-    دُونَ مُبَالَغَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan peninjauan presentasi dan debat, dalam percakapan
-    profesional, saya akan fokus pada konteks, ekspektasi, dan risiko.'
-  target_response: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ
-    عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
+  - عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya memisahkan poin utama dan detail agar presentasi tetap fokus.'
+  target_response: أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.
   acceptable_responses:
-  - عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى
-    السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan
-    yang persuasif.'
-  target_response: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
+  - أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.
+- prompt: 'Ucapkan dalam bahasa Arab: Saya mengantisipasi sanggahan dan menjawabnya dengan tenang.'
+  target_response: أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.
   acceptable_responses:
-  - عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan
-    kejelasan.'
-  target_response: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  - أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika seseorang memotong saya, saya kembali ke poin utama dengan kalimat singkat.'
+  target_response: إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.
   acceptable_responses:
-  - إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  - إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ.

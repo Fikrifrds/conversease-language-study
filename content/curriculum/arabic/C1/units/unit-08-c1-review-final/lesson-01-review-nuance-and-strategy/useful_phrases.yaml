@@ -1,22 +1,16 @@
 phrases:
-- phrase: فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ
-    عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-  meaning_id: Dalam latihan peninjauan nuansa dan strategi, saya sedang mereview cara menyampaikan opini
-    yang tepat tanpa berlebihan.
-  usage_note: 'Review nuance. Fokus lesson: peninjauan nuansa dan strategi.'
-- phrase: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، فِي الْحِوَارِ الْمِهَنِيِّ،
-    سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
-  meaning_id: Saat menerapkan peninjauan nuansa dan strategi, dalam percakapan profesional, saya akan
-    fokus pada konteks, ekspektasi, dan risiko.
-  usage_note: Review strategy. Hubungkan dengan fokus lesson.
-- phrase: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-  meaning_id: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-  usage_note: Review presenting and debate. Pakai sebagai penghubung dalam peninjauan nuansa dan strategi.
-- phrase: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
-  meaning_id: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
-  usage_note: Review cross-cultural repair. Gunakan untuk repair dalam peninjauan nuansa dan strategi.
-- phrase: فِي خِتَامِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، فِي التَّقْيِيمِ النِّهَائِيِّ،
-    سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
-  meaning_id: Pada bagian akhir peninjauan nuansa dan strategi, dalam tes akhir, saya akan menunjukkan
-    presisi, fleksibilitas, dan listening yang baik.
-  usage_note: Menutup final C1. Tutup percakapan sesuai fokus lesson.
+- phrase: عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
+  meaning_id: Saat meninjau nuansa dan strategi, saya menyeimbangkan keterusterangan dan kesantunan.
+  usage_note: Menempatkan opini dengan presisi tanpa terdengar berlebihan.
+- phrase: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
+  meaning_id: Dalam dialog profesional, saya mengaitkan pendapat dengan konteks dan risiko yang mungkin muncul.
+  usage_note: Menambahkan konteks agar strategi terdengar matang.
+- phrase: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.
+  meaning_id: Saya menyampaikan ide dengan urutan yang memudahkan pihak lain mengikutinya.
+  usage_note: Membangun alur argumentasi yang bisa diikuti.
+- phrase: إِذَا ظَهَرَ سُوءُ فَهْمٍ، أُعِيدُ الصِّيَاغَةَ بِلُطْفٍ وَدِقَّةٍ.
+  meaning_id: Jika muncul salah paham, saya menyusun ulang kalimat dengan lembut dan tepat.
+  usage_note: Memperbaiki miskomunikasi tanpa menaikkan tensi.
+- phrase: فِي النِّهَايَةِ، أُؤَكِّدُ الرِّسَالَةَ بِوُضُوحٍ دُونَ أَنْ أُبَالِغَ.
+  meaning_id: Di akhir, saya menegaskan pesan dengan jelas tanpa melebih-lebihkan.
+  usage_note: Menutup dengan presisi dan kontrol nada.

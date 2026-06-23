@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ. -> Dalam latihan peninjauan presentasi dan debat, saya sedang mereview cara menyampaikan opini yang tepat tanpa berlebihan.
-- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ. -> Saat menerapkan peninjauan presentasi dan debat, dalam percakapan profesional, saya akan fokus pada konteks, ekspektasi, dan risiko.
-- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ. -> Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ. -> Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
-- فِي خِتَامِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ. -> Pada bagian akhir peninjauan presentasi dan debat, dalam tes akhir, saya akan menunjukkan presisi, fleksibilitas, dan listening yang baik.
+- عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ. -> Saat meninjau presentasi dan debat, saya menetapkan klaim lalu mendukungnya dengan bukti.
+- أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا. -> Saya memisahkan poin utama dan detail agar presentasi tetap fokus.
+- أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ. -> Saya mengantisipasi sanggahan dan menjawabnya dengan tenang.
+- إِذَا قَاطَعَنِي أَحَدٌ، أَعُودُ إِلَى النُّقْطَةِ بِجُمْلَةٍ قَصِيرَةٍ. -> Jika seseorang memotong saya, saya kembali ke poin utama dengan kalimat singkat.
+- أَخْتِمُ الْمُنَاقَشَةَ بِتَلْخِيصٍ يُظْهِرُ الْمَوْقِفَ وَالسَّبَبَ. -> Saya menutup diskusi dengan ringkasan yang menunjukkan posisi dan alasannya.

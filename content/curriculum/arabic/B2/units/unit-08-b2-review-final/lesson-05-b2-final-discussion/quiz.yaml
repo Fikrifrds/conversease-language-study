@@ -1,7 +1,6 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya mereview diskusi akhir karena itu menggabungkan keterampilan level
-    ini."?
+  prompt: Frasa mana yang berarti "Saya meninjau kembali diskusi akhir karena itu menggabungkan keterampilan level ini."?
   options:
   - أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
   - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

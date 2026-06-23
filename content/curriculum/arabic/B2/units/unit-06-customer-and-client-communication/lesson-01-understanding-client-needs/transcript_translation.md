@@ -7,4 +7,4 @@
 - **Fatimah:** مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟ -> Bagian mana dari memahami kebutuhan klien yang mungkin dipertanyakan tim?
 - **Aisha:** لِذَلِكَ، الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Karena itu, Langkah berikutnya adalah meninjau kesepakatan.
 - **Fatimah:** مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟ -> Langkah realistis apa setelah membahas memahami kebutuhan klien?
-- **Aisha:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Agar semuanya jelas, Saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- **Aisha:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Agar semuanya jelas, saya akan mengirim konfirmasi tertulis setelah panggilan ini.

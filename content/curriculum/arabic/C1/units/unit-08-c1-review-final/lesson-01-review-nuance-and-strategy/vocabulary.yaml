@@ -1,33 +1,25 @@
 vocabulary:
-- word: تَدْرِيبٌ
-  meaning_id: coaching/latihan
-  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
 - word: مُرَاجَعَةٌ
-  meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
-- word: دِقَّةٌ
-  meaning_id: ketepatan
-  usage_note: 'Dipakai untuk arti "ketepatan". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
-- word: أُرَاجِعُ
-  meaning_id: saya mengulang/review
-  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ
-    وَالِاسْتِرَاتِيجِيَّةِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
-- word: كَيْفَ
-  meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
-- word: رَأْيٌ
-  meaning_id: pendapat
-  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي تَدْرِيبِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ..."'
-- word: تَطْبِيقٌ
-  meaning_id: penerapan
-  usage_note: 'Dipakai untuk arti "penerapan". Contoh: "عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    فِي الْحِوَارِ الْمِهَنِيِّ، سَ..."'
-- word: مِهَنِيٌّ
-  meaning_id: profesional
-  usage_note: 'Dipakai untuk arti "profesional". Contoh: "عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ،
-    فِي الْحِوَارِ الْمِهَنِيِّ، سَ..."'
+  meaning_id: peninjauan/peninjauan ulang
+  usage_note: Dipakai saat menilai ulang kualitas argumen atau strategi.
+- word: الدِّقَّةُ
+  meaning_id: ketepatan/presisi
+  usage_note: Dipakai saat menuntut pilihan kata yang tidak berlebihan.
+- word: الِاسْتِرَاتِيجِيَّةُ
+  meaning_id: strategi
+  usage_note: Dipakai untuk cara menyusun respons profesional.
+- word: أُوَازِنُ
+  meaning_id: saya menyeimbangkan
+  usage_note: 'Contoh: أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.'
+- word: الصَّرَاحَةُ
+  meaning_id: keterusterangan
+  usage_note: Dipakai saat menyampaikan opini secara jelas.
+- word: اللُّبَاقَةُ
+  meaning_id: kesantunan/tact
+  usage_note: Dipakai saat menjaga nada tetap profesional.
+- word: الْمَخَاطِرُ الْمُحْتَمَلَةُ
+  meaning_id: risiko yang mungkin muncul
+  usage_note: Dipakai saat menimbang dampak dari sebuah pilihan.
+- word: أُعِيدُ الصِّيَاغَةَ
+  meaning_id: saya menyusun ulang kalimat
+  usage_note: Dipakai saat memperbaiki salah paham dengan tepat.

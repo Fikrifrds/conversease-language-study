@@ -1,6 +1,6 @@
 # Review Information and Clients
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk review informasi dan klien dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk peninjauan ulang informasi dan klien dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 

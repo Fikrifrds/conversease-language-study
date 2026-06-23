@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- فِي تَدْرِيبِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ. -> Dalam latihan peninjauan kepemimpinan dan listening, saya sedang mereview cara menyampaikan opini yang tepat tanpa berlebihan.
-- عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ. -> Saat menerapkan peninjauan kepemimpinan dan listening, dalam percakapan profesional, saya akan fokus pada konteks, ekspektasi, dan risiko.
-- عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ. -> Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ. -> Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
-- فِي خِتَامِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ. -> Pada bagian akhir peninjauan kepemimpinan dan listening, dalam tes akhir, saya akan menunjukkan presisi, fleksibilitas, dan listening yang baik.
+- عِنْدَ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُصْغِي أَوَّلًا ثُمَّ أُوَجِّهُ الْحِوَارَ. -> Saat meninjau kepemimpinan dan listening, saya mendengarkan dulu lalu mengarahkan percakapan.
+- أَسْأَلُ سُؤَالًا مُفْتُوحًا لِأَفْهَمَ مَا يَحْتَاجُهُ الطَّرَفُ الْآخَرُ. -> Saya mengajukan pertanyaan terbuka untuk memahami kebutuhan pihak lain.
+- أُعِيدُ النُّقْطَةَ بِكَلِمَاتِي لِأَتَأَكَّدَ أَنَّنِي فَهِمْتُهَا. -> Saya mengulang poin dengan kata-kata saya sendiri untuk memastikan saya memahaminya.
+- إِذَا اخْتَلَفَتِ الْآرَاءُ، أُحَافِظُ عَلَى الْهُدُوءِ وَأُوَضِّحُ الْخُطْوَةَ التَّالِيَةَ. -> Jika pendapat berbeda, saya tetap tenang dan menjelaskan langkah berikutnya.
+- أَخْتِمُ الْحِوَارَ بِمَا اتَّفَقْنَا عَلَيْهِ وَمَا يَبْقَى لِلْمُتَابَعَةِ. -> Saya menutup percakapan dengan hal yang sudah disepakati dan yang masih perlu ditindaklanjuti.

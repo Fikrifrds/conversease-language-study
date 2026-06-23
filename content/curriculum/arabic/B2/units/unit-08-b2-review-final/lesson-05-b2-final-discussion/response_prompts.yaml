@@ -1,6 +1,5 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Saya mereview diskusi akhir karena itu menggabungkan keterampilan
-    level ini.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saya meninjau kembali diskusi akhir karena itu menggabungkan keterampilan level ini.'
   target_response: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
   acceptable_responses:
   - أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.

@@ -32,7 +32,7 @@ turns:
 - coach: 'استخدم الفكرة: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.'
   hint: 'Jawab dengan kalimat terhubung memakai: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.'
   sample_answer: أَنْجَزْتُ نِصْفَ الْعَمَلِ حَتَّى الْآنَ.
-  focus: Memberi progress.
+  focus: Memberi kemajuan.
   expected_keywords:
   - أَنْجَزْتُ
   - نِصْفَ

@@ -1,6 +1,6 @@
 # Review Arguments and Meetings
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk review argumen dan rapat dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
+Setelah lesson ini, kamu bisa memakai bahasa Arab B2 untuk peninjauan ulang argumen dan rapat dalam percakapan yang punya arah, alasan, respons, dan tindak lanjut.
 
 ## Situation
 

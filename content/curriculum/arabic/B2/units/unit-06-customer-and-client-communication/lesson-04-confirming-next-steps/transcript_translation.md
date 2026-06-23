@@ -7,4 +7,4 @@
 - **Fatimah:** مَنْ يَحْتَاجُ إِلَى مَعْرِفَةِ هَذَا الْقَرَارِ بَعْدَ الِاجْتِمَاعِ؟ -> Siapa yang perlu mengetahui keputusan ini setelah mengonfirmasi langkah berikutnya?
 - **Aisha:** مِنْ نَاحِيَةِ الْقَرَارِ، الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Dari sisi keputusan, Langkah berikutnya adalah meninjau kesepakatan.
 - **Fatimah:** مَا الصِّيَاغَةُ الْمُخْتَصَرَةُ الَّتِي سَنُرْسِلُهَا؟ -> Rumusan singkat apa yang akan kita kirim tentang mengonfirmasi langkah berikutnya?
-- **Aisha:** وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Dalam pesan setelah rapat, Saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- **Aisha:** وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Dalam pesan setelah rapat, saya akan mengirim konfirmasi tertulis setelah panggilan ini.

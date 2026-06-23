@@ -18,8 +18,8 @@ vocabulary:
   meaning_id: saya butuh
   usage_note: 'Dipakai untuk arti "saya butuh". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ أَوَّلًا."'
 - word: مُرَاجَعَةٌ
-  meaning_id: review/tinjauan
-  usage_note: 'Dipakai untuk arti "review/tinjauan". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ
+  meaning_id: peninjauan ulang/tinjauan
+  usage_note: 'Dipakai untuk arti "peninjauan ulang/tinjauan". Contoh: "أَحْتَاجُ إِلَى مَرَاجَعَةِ التَّفَاصِيلِ
     أَوَّلًا."'
 - word: تَفَاصِيلُ
   meaning_id: detail

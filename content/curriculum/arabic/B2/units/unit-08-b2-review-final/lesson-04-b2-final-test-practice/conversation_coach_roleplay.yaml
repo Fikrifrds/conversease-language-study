@@ -15,14 +15,14 @@ turns:
   hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي
     عَلَى الِاسْتِعْدَادِ.'
   sample_answer: أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ.
-  focus: Membuka review.
+  focus: Membuka sesi peninjauan ulang.
   expected_keywords:
   - أُرَاجِعُ
   - تَدْرِيبَ
   - الِاخْتِبَارِ
   - النِّهَائِيِّ
   - لِأَنَّهُ
-  indonesian_explanation: Saya mereview latihan tes akhir karena itu membantu saya bersiap.
+  indonesian_explanation: Saya meninjau kembali latihan tes akhir karena itu membantu saya bersiap.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

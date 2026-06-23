@@ -1,7 +1,6 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Saya mereview negosiasi dan presentasi karena keduanya penting dalam
-    diskusi."?
+  prompt: Frasa mana yang berarti "Saya meninjau kembali negosiasi dan presentasi karena keduanya penting dalam diskusi."?
   options:
   - أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ.
   - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

@@ -13,14 +13,14 @@ turns:
   hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ
     الْمُسْتَوَى.'
   sample_answer: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
-  focus: Membuka review.
+  focus: Membuka sesi peninjauan ulang.
   expected_keywords:
   - أُرَاجِعُ
   - النِّقَاشَ
   - النِّهَائِيَّ
   - لِأَنَّهُ
   - يَجْمَعُ
-  indonesian_explanation: Saya mereview diskusi akhir karena itu menggabungkan keterampilan level ini.
+  indonesian_explanation: Saya meninjau kembali diskusi akhir karena itu menggabungkan keterampilan level ini.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.

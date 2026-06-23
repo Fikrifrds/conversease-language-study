@@ -4,7 +4,7 @@ Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk jawaban yang lebi
 
 ## Situation
 
-Kamu memberi update singkat tentang progress, kendala, dan langkah berikutnya.
+Kamu memberi update singkat tentang kemajuan, kendala, dan langkah berikutnya.
 
 ## Catatan Belajar
 
