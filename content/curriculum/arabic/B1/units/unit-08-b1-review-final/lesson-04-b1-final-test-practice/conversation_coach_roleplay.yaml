@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_b1_final_test_practice
 mode: lesson_practice_coach
 level_code: B1
-opening_line: كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice,
-  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+opening_line: لِنَتَدَرَّبْ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: b1 final test practice, dengan jawaban
+  yang lebih terhubung dan alasan yang jelas.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟
+- coach: لِنَتَدَرَّبْ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.'
   sample_answer: سَأُجِيبُ بِجُمَلٍ مُتَرَابِطَةٍ.
   focus: Gunakan untuk percakapan B1 yang lebih terhubung.

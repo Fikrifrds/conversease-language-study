@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ تَجْعَلُ جَوَابَكَ فِي اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ مُقْنِعًا وَمُتَوَازِنًا؟ -> Bagaimana kamu membuat jawaban untuk penggunaan transisi yang presisi meyakinkan dan seimbang?
-- **Lina:** فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ. -> Dalam latihan penggunaan transisi yang presisi, saya akan membingkai topiknya dulu agar audiens memahami konteksnya.
-- **Salma:** مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟ -> Informasi apa yang membuat penggunaan transisi yang presisi lebih meyakinkan?
-- **Lina:** عِنْدَ تَطْبِيقِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ خُطْوَةً فَخُطْوَةً. الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ. -> Saat menerapkan penggunaan transisi yang presisi, setelah itu, saya akan membangun alur persuasif langkah demi langkah. Transisi yang lebih tepat di sini adalah berpindah dari sebab ke dampak.
-- **Salma:** إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟ -> Jika pihak lain memahami penggunaan transisi yang presisi terlalu sempit, bagaimana kamu memperluas gambarannya?
-- **Lina:** إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ. -> Jika ada pertanyaan sulit, saya akan mengakui batas jawaban lalu menjelaskan dasarnya.
-- **Salma:** كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟ -> Bagaimana kamu menghubungkan penggunaan transisi yang presisi dengan pesan penutup yang jelas?
-- **Lina:** فِي خِتَامِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ، فِي النِّهَايَةِ، أُرِيدُ أَنْ يَخْرُجَ الْجُمْهُورُ بِرِسَالَةٍ وَاضِحَةٍ. -> Pada bagian akhir penggunaan transisi yang presisi, pada akhirnya, saya ingin audiens pulang dengan pesan yang jelas.
+- **Salma:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي اِنْتِقَالٍ بَيْنَ السَّبَبِ وَالأَثَرِ؟ -> Asumsi apa yang perlu kamu periksa dalam transisi antara sebab dan dampak?
+- **Lina:** أَقُولُ: لِنَنْتَقِلْ مِنْ سَبَبِ الْمُشْكِلَةِ إِلَى أَثَرِهَا الْمَبَاشِرِ. -> saya mengatakan: mari berpindah dari penyebab masalah ke dampak langsungnya
+- **Salma:** أَيُّ دَلِيلٍ فِي اِنْتِقَالٍ بَيْنَ السَّبَبِ وَالأَثَرِ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam transisi antara sebab dan dampak yang perlu didahulukan?
+- **Lina:** الْجُمْلَةُ تُحَضِّرُ الْجُمْهُورَ لِتَغْيِيرِ زَاوِيَةِ النَّظَرِ. -> kalimat itu menyiapkan audiens untuk perubahan sudut pandang
+- **Salma:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي اِنْتِقَالٍ بَيْنَ السَّبَبِ وَالأَثَرِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam transisi antara sebab dan dampak?
+- **Lina:** إِذَا بَدَا الِانْتِقَالُ مُفَاجِئًا. -> jika transisi terasa mendadak
+- **Salma:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي اِنْتِقَالٍ بَيْنَ السَّبَبِ وَالأَثَرِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang transisi antara sebab dan dampak dengan jelas?
+- **Lina:** أُضِيفُ جُمْلَةً وَاحِدَةً تُلَخِّصُ مَا قَبْلَهَا. -> saya menambah satu kalimat yang merangkum bagian sebelumnya

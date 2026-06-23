@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى بِنَاءُ حُجَّةٍ وَاضِحَةٍ. -> Apa posisimu tentang topik ini? Saya ingin fokus pada membangun argumen jelas.
-- **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik membangun argumen jelas penting dalam diskusi.
-- **Ahmad:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan keterampilan unit ini untuk membangun argumen yang jelas dalam konteks ini?
-- **Karim:** لِجَمْعِ الصُّورَةِ كَامِلَةً، أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Untuk menyatukan gambaran utuh, saya mendukung pendapat ini dengan dua alasan yang jelas. Contohnya, tim membutuhkan keputusan yang cepat.
-- **Ahmad:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam membangun argumen jelas?
-- **Karim:** عَلَى مُسْتَوَى التَّنْفِيذِ، أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Pada tahap pelaksanaan, saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- **Ahmad:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari membangun argumen jelas?
-- **Karim:** وَكَخُطْوَةٍ أَخِيرَةٍ، لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Sebagai langkah terakhir, Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- **Ahmad:** كَيْفَ سَتُحَوِّلُ بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah membangun argumen tentang prioritas menjadi keputusan?
+- **Karim:** أَبْدَأُ بِالْمَوْقِفِ ثُمَّ أُضِيفُ سَبَبَيْنِ. -> saya mulai dengan posisi lalu menambah dua alasan
+- **Ahmad:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam membangun argumen tentang prioritas?
+- **Karim:** الْفَرِيقُ يَحْتَاجُ إِلَى قَرَارٍ لا إِلَى شَرْحٍ طَوِيلٍ. -> tim membutuhkan keputusan, bukan penjelasan panjang
+- **Ahmad:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ؟ -> Kesulitan apa yang mungkin muncul dalam membangun argumen tentang prioritas?
+- **Karim:** قَدْ يَسْأَلُونَ عَنِ الْبَدِيلِ. -> mereka mungkin bertanya tentang alternatif
+- **Ahmad:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي بِنَاءِ حُجَّةٍ حَوْلَ الأَوْلَوِيَّةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang membangun argumen tentang prioritas berubah menjadi tindakan jelas?
+- **Karim:** أُقَدِّمُ بَدِيلًا قَصِيرًا وَتَوْصِيَةً وَاحِدَةً. -> saya memberi alternatif singkat dan satu rekomendasi

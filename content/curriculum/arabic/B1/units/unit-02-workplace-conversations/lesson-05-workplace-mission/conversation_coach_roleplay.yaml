@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_workplace_mission
 mode: lesson_practice_coach
 level_code: B1
-opening_line: أَعْطِينِي تَحْدِيثًا عَنِ الْعَمَلِ.
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi,
-  memberi update, dan menutup dengan action point.'
+opening_line: لِنَتَدَرَّبْ عَلَى مَهَمَّةِ الْعَمَلِ الْأُسْبُوعِيَّةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas, meminta klarifikasi, memberi update, dan
+  menutup dengan action point.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: أَعْطِينِي تَحْدِيثًا عَنِ الْعَمَلِ.
+- coach: لِنَتَدَرَّبْ عَلَى مَهَمَّةِ الْعَمَلِ الْأُسْبُوعِيَّةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.'
   sample_answer: أَعْمَلُ عَلَى تَنْظِيمِ الْمَلَفَّاتِ.
   focus: Menjelaskan tugas.

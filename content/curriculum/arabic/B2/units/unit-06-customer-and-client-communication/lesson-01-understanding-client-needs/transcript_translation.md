@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى فَهْمُ اِحْتِيَاجِ الْعَمِيلِ. -> Apa yang dibutuhkan klien? Saya ingin fokus pada memahami kebutuhan klien.
-- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ فَهْمُ اِحْتِيَاجِ الْعَمِيلِ. -> Saya ingin memahami kebutuhan klien tentang memahami kebutuhan klien.
-- **Fatimah:** مَا السَّبَبُ الْأَوَّلُ الَّذِي يَجْعَلُ هَذِهِ النُّقْطَةَ مُهِمَّةً؟ -> Apa alasan pertama yang membuat memahami kebutuhan klien penting di sini?
-- **Aisha:** فِي هَذِهِ الْحَالَةِ، لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Dalam situasi ini, Kita punya dua opsi, dan setiap opsi memiliki manfaat. Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- **Fatimah:** مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟ -> Bagian mana dari memahami kebutuhan klien yang mungkin dipertanyakan tim?
-- **Aisha:** لِذَلِكَ، الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Karena itu, Langkah berikutnya adalah meninjau kesepakatan.
-- **Fatimah:** مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟ -> Langkah realistis apa setelah membahas memahami kebutuhan klien?
-- **Aisha:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Agar semuanya jelas, saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- **Fatimah:** مَا مَوْقِفُكَ مِنْ حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Apa posisimu tentang kebutuhan klien pada laporan yang lebih cepat?
+- **Aisha:** أَسْأَلُ أَيُّ جُزْءٍ مِنَ التَّقْرِيرِ هُوَ الأَهَمُّ. -> saya bertanya bagian laporan mana yang paling penting
+- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Alasan atau detail apa yang mendukung poin ini dalam kebutuhan klien pada laporan yang lebih cepat?
+- **Aisha:** قَدْ لا يَحْتَاجُ الْعَمِيلُ إِلَى كُلِّ التَّفَاصِيلِ الآنَ. -> klien mungkin tidak butuh semua detail sekarang
+- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ؟ -> Kesulitan apa yang mungkin muncul dalam kebutuhan klien pada laporan yang lebih cepat?
+- **Aisha:** قَدْ يَشْعُرُ أَنَّنَا نُقَلِّلُ مِنْ طَلَبِهِ. -> dia mungkin merasa kita mengecilkan permintaannya
+- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حَاجَةِ الْعَمِيلِ إِلَى تَقْرِيرٍ أَسْرَعَ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang kebutuhan klien pada laporan yang lebih cepat berubah menjadi tindakan jelas?
+- **Aisha:** أُقَدِّمُ نُسْخَةً مُخْتَصَرَةً الْيَوْمَ وَتَفْصِيلًا غَدًا. -> saya menawarkan versi ringkas hari ini dan detail besok

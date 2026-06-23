@@ -1,12 +1,12 @@
 # Listening Script
 
-**Omar:** مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟
-**Raka:** نَصِيحَتُكَ مُفِيدَةٌ.
-**Omar:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-**Raka:** سَأُجَرِّبُ ذَلِكَ الْيَوْمَ. أَتَّفِقُ مَعَكَ فِي هَذِهِ النُّقْطَةِ.
-**Omar:** لَكِنْ عِنْدِي سُؤَالٌ صَغِيرٌ.
-**Raka:** شُكْرًا عَلَى التَّوْجِيهِ.
+**Omar:** فِي نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟
+**Raka:** بَدَأَ الأَمْرُ عِنْدَمَا قَالَ إِنَّ الْخُطَّةَ طَوِيلَةٌ جِدًّا.
+**Omar:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ؟
+**Raka:** كَانَ التَّحَدِّي هَكَذَا: بَعْضُ النِّقَاطِ ضَرُورِيَّةٌ لِلْعَمِيلِ.
+**Omar:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ نَصِيحَةِ الزَّمِيلِ حَوْلَ الْخُطَّةِ؟
+**Raka:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُقَصِّرُ الْمُقَدِّمَةَ وَأُبْقِي التَّفَاصِيلَ الْمُهِمَّةَ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_explaining_your_task
 mode: lesson_practice_coach
 level_code: B1
-opening_line: مَا الْمَهَمَّةُ الَّتِي تَعْمَلِينَ عَلَيْهَا؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara
-  jelas: tujuan, langkah, dan hasil yang diharapkan.'
+opening_line: لِنَتَدَرَّبْ عَلَى مَهَمَّةِ تَرْتِيبِ مَلَفَّاتِ الْعَمِيلِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan tugas kerja atau belajar secara jelas: tujuan,
+  langkah, dan hasil yang diharapkan.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الْمَهَمَّةُ الَّتِي تَعْمَلِينَ عَلَيْهَا؟
+- coach: لِنَتَدَرَّبْ عَلَى مَهَمَّةِ تَرْتِيبِ مَلَفَّاتِ الْعَمِيلِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.'
   sample_answer: أَعْمَلُ عَلَى مَهَمَّةٍ جَدِيدَةٍ هَذَا الْأُسْبُوعَ.
   focus: Menjelaskan tugas utama.

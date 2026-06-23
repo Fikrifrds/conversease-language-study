@@ -1,26 +1,27 @@
 scenario_key: arabic_b2_b2_final_discussion
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشِ النِّهَائِيِّ.
-learner_goal: Latih percakapan Arab B2 untuk menjalani diskusi akhir dengan alasan, contoh, respons, dan
-  rekomendasi.
+opening_line: مَا رَأْيُكَ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk menjalani diskusi akhir dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى النِّقَاشِ النِّهَائِيِّ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ
-    الْمُسْتَوَى.'
-  sample_answer: أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
+- coach: مَا رَأْيُكَ فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+    تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى
+    قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Membuka sesi peninjauan ulang.
   expected_keywords:
-  - أُرَاجِعُ
-  - النِّقَاشَ
-  - النِّهَائِيَّ
-  - لِأَنَّهُ
-  - يَجْمَعُ
-  indonesian_explanation: Saya meninjau kembali diskusi akhir karena itu menggabungkan keterampilan level ini.
+  - مَوْقِفِي
+  - أَنَّ
+  - النِّقَاشِ
+  - النِّهَائِيِّ
+  - فِي
+  indonesian_explanation: Posisi saya adalah bahwa diskusi akhir B2 membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
@@ -55,7 +56,7 @@ turns:
   - عَلَيْهِ
   indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
 target_phrases:
-- أُرَاجِعُ النِّقَاشَ النِّهَائِيَّ لِأَنَّهُ يَجْمَعُ مَهَارَاتِ الْمُسْتَوَى.
+- مَوْقِفِي فِي النِّقَاشِ النِّهَائِيِّ فِي بِي اِثْنَيْنِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

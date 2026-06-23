@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_giving_a_short_update
 mode: lesson_practice_coach
 level_code: B1
-opening_line: هَلْ عِنْدَكِ تَحْدِيثٌ قَصِيرٌ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang kemajuan,
-  kendala, dan langkah berikutnya.'
+opening_line: لِنَتَدَرَّبْ عَلَى تَحْدِيثِ الْمَشْرُوعِ الصَّبَاحِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu memberi update singkat tentang kemajuan, kendala, dan langkah
+  berikutnya.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: هَلْ عِنْدَكِ تَحْدِيثٌ قَصِيرٌ؟
+- coach: لِنَتَدَرَّبْ عَلَى تَحْدِيثِ الْمَشْرُوعِ الصَّبَاحِيِّ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.'
   sample_answer: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
   focus: Menyebut kemajuan.

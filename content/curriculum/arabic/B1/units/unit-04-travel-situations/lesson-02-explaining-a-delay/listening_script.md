@@ -1,12 +1,12 @@
 # Listening Script
 
-**Ahmad:** مَا أَوَّلُ تَفْصِيلٍ يَحْتَاجُ إِلَى شَرْحٍ؟
-**Karim:** تَأَخَّرَتِ الرِّحْلَةُ قَلِيلًا.
-**Ahmad:** هَلْ يُمْكِنُ أَنْ تُعْطِيَ مِثَالًا بَسِيطًا؟
-**Karim:** السَّبَبُ هُوَ الِازْدِحَامُ فِي الطَّرِيقِ. سَأَصِلُ بَعْدَ ثَلَاثِينَ دَقِيقَةً.
-**Ahmad:** آسِفٌ عَلَى التَّأْخِيرِ.
-**Karim:** سَأُخْبِرُكَ إِذَا تَغَيَّرَ الْوَقْتُ.
+**Ahmad:** أُرِيدُ أَنْ أَفْهَمَ تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ. مَا أَوَّلُ تَفْصِيلٍ؟
+**Karim:** بَدَأَ الأَمْرُ عِنْدَمَا أَعْلَنُوا تَأْخِيرًا لِمُدَّةِ نِصْفِ سَاعَةٍ.
+**Ahmad:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ؟
+**Karim:** كَانَ التَّحَدِّي هَكَذَا: لَدَيَّ مَوْعِدٌ بَعْدَ الظُّهْرِ.
+**Ahmad:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَأَخُّرِ الْقِطَارِ إِلَى الْمَدِينَةِ؟
+**Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُرْسِلُ رِسَالَةً وَأَطْلُبُ تَأْخِيرَ الْمَوْعِدِ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

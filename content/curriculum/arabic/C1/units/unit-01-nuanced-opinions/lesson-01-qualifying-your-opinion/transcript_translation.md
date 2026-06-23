@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تُطَبِّقُ مَهَارَةَ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan pembatasan opini sebelum menyampaikan klaim dalam percakapan formal?
-- **Karim:** فِي تَدْرِيبِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Dalam latihan pembatasan opini sebelum menyampaikan klaim, secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
-- **Ahmad:** أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Di bagian mana fokus pembatasan opini sebelum menyampaikan klaim membutuhkan presisi lebih besar?
-- **Karim:** عِنْدَ تَطْبِيقِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Saat menerapkan pembatasan opini sebelum menyampaikan klaim, saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini. Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- **Ahmad:** إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟ -> Jika seseorang keberatan pada cara pembatasan opini sebelum menyampaikan klaim, bagaimana kamu menjaga percakapan tetap profesional?
-- **Karim:** أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
-- **Ahmad:** مَا الصِّيَاغَةُ الَّتِي تُظْهِرُ الْفِكْرَةَ مِنْ غَيْرِ مُبَالَغَةٍ؟ -> Formulasi apa yang menunjukkan pembatasan opini sebelum menyampaikan klaim tanpa berlebihan?
-- **Karim:** فِي خِتَامِ تَأْهِيلِ الرَّأْيِ قَبْلَ الْحُكْمِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Pada bagian akhir pembatasan opini sebelum menyampaikan klaim, karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.
+- **Ahmad:** فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam kebijakan kerja fleksibel, di mana kamu membutuhkan presisi paling besar?
+- **Karim:** أَمِيلُ إِلَى دَعْمِهَا، لَكِنْ لَيْسَ بِشَكْلٍ مُطْلَقٍ. -> saya cenderung mendukungnya, tetapi tidak mutlak
+- **Ahmad:** أَيُّ شَرْطٍ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam kebijakan kerja fleksibel yang membuat opini lebih presisi dan seimbang?
+- **Karim:** الْفَرِيقُ يَحْتَاجُ إِلَى مِعْيَارٍ لِلْحُضُورِ وَالتَّوَاصُلِ. -> tim membutuhkan standar kehadiran dan komunikasi
+- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam kebijakan kerja fleksibel?
+- **Karim:** إِذَا قَالَ أَحَدٌ إِنَّهَا تُقَلِّلُ الِانْضِبَاطَ. -> jika seseorang mengatakan itu mengurangi disiplin
+- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سِيَاسَةِ الْعَمَلِ الْمَرِنِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang kebijakan kerja fleksibel dengan jelas?
+- **Karim:** أُفَضِّلُ صِيَاغَةً تَدْعَمُ الْمُرُونَةَ مَعَ مَسْؤُولِيَّةٍ وَاضِحَةٍ. -> saya memilih formulasi yang mendukung fleksibilitas dengan tanggung jawab jelas

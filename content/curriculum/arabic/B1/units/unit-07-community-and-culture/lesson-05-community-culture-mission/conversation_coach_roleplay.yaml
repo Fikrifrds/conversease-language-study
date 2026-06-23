@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_community_culture_mission
 mode: lesson_practice_coach
 level_code: B1
-opening_line: كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission,
-  dengan jawaban yang lebih terhubung dan alasan yang jelas.'
+opening_line: لِنَتَدَرَّبْ عَلَى زِيَارَةِ صَدِيقٍ مِنْ ثَقَافَةٍ أُخْرَى. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu berlatih topik B1: community culture mission, dengan jawaban
+  yang lebih terhubung dan alasan yang jelas.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟
+- coach: لِنَتَدَرَّبْ عَلَى زِيَارَةِ صَدِيقٍ مِنْ ثَقَافَةٍ أُخْرَى. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.'
   sample_answer: سَأَصِفُ مُجْتَمَعِي بِاخْتِصَارٍ.
   focus: Gunakan untuk percakapan B1 yang lebih terhubung.

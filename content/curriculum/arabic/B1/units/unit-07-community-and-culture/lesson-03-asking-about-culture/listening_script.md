@@ -1,12 +1,12 @@
 # Listening Script
 
-**Khalid:** مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟
-**Zayd:** هَلْ يُمْكِنُ أَنْ أَسْأَلَ عَنْ هَذِهِ الْعَادَةِ؟
-**Khalid:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-**Zayd:** أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ الثَّقَافِيَّ. هَلْ هَذَا أَمْرٌ رَسْمِيٌّ أَمْ عَادِيٌّ؟
-**Khalid:** شُكْرًا عَلَى التَّوْضِيحِ.
-**Zayd:** سَأَتَصَرَّفُ بِاحْتِرَامٍ.
+**Khalid:** فِي سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟
+**Zayd:** بَدَأَ الأَمْرُ عِنْدَمَا أُرِيدُ أَنْ أَفْهَمَ السَّبَبَ بِدُونِ حُكْمٍ.
+**Khalid:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ؟
+**Zayd:** كَانَ التَّحَدِّي هَكَذَا: السُّؤَالُ الْمُبَاشِرُ قَدْ يَبْدُو قَاسِيًا.
+**Khalid:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ سُؤَالٍ عَنْ عَادَةٍ مَحَلِّيَّةٍ؟
+**Zayd:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُ بِطَرِيقَةٍ أَلْطَفَ وَأَشْكُرُهُمْ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

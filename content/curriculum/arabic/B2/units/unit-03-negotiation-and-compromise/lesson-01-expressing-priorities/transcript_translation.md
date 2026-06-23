@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الْأَوْلَوِيَّاتِ. -> Apa prioritasmu dalam kesepakatan ini? Saya ingin fokus pada menjelaskan prioritas.
-- **Omar:** أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا. -> Prioritas saya adalah agar menjelaskan prioritas tetap jelas.
-- **Khalid:** مَا السَّبَبُ الْأَوَّلُ الَّذِي يَجْعَلُ هَذِهِ النُّقْطَةَ مُهِمَّةً؟ -> Apa alasan pertama yang membuat menjelaskan prioritas penting di sini?
-- **Omar:** فِي هَذِهِ الْحَالَةِ، أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ. أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ. -> Dalam situasi ini, saya mengajukan usulan berikut sebagai solusi praktis. Saya memahami kekhawatiranmu, tetapi kita punya pilihan lain.
-- **Khalid:** مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟ -> Bagian mana dari menjelaskan prioritas yang mungkin dipertanyakan tim?
-- **Omar:** لِذَلِكَ، يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ. -> Karena itu, Kita bisa mencapai solusi tengah.
-- **Khalid:** مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟ -> Langkah realistis apa setelah membahas menjelaskan prioritas?
-- **Omar:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ. -> Agar semuanya jelas, kalau kita sepakat tentang itu, langkah berikutnya jelas.
+- **Khalid:** مَا مَوْقِفُكَ مِنْ مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ؟ -> Apa posisimu tentang jadwal peluncuran versi uji coba?
+- **Omar:** أَوْلَوِيَّتِي أَنْ نُطْلِقَ شَيْئًا صَغِيرًا وَمُسْتَقِرًّا. -> prioritas saya adalah meluncurkan sesuatu yang kecil dan stabil
+- **Khalid:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam jadwal peluncuran versi uji coba?
+- **Omar:** لِأَنَّ الْفَرِيقَ لا يَسْتَطِيعُ دَعْمَ نُسْخَةٍ كَبِيرَةٍ الآنَ. -> karena tim belum bisa mendukung versi besar sekarang
+- **Khalid:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ؟ -> Kesulitan apa yang mungkin muncul dalam jadwal peluncuran versi uji coba?
+- **Omar:** قَدْ يَطْلُبُ التَّسْوِيقُ مِيزَاتٍ أَكْثَرَ. -> tim marketing mungkin meminta fitur lebih banyak
+- **Khalid:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang jadwal peluncuran versi uji coba berubah menjadi tindakan jelas?
+- **Omar:** نُطْلِقُ الأَسَاسَ وَنُضِيفُ مِيزَةً وَاحِدَةً بَعْدَ أُسْبُوعَيْنِ. -> kita luncurkan dasar lalu menambah satu fitur setelah dua minggu

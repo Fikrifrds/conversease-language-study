@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الرَّدُّ عَلَى مَعْلُومَاتٍ جَدِيدَةٍ. -> Bagaimana kamu merangkum informasi ini? Saya ingin fokus pada menanggapi informasi baru.
-- **Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ. -> Saya memahami dari artikel bahwa topik menanggapi informasi baru penting.
-- **Yusuf:** مَا الْقَرَارُ الَّذِي نَحْتَاجُ إِلَى تَسْمِيَتِهِ بِوُضُوحٍ؟ -> Keputusan apa yang perlu kita sebutkan dengan jelas dalam menanggapi informasi baru?
-- **Hasan:** عِنْدَ نِهَايَةِ الِاجْتِمَاعِ، يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Di akhir rapat, Kita harus memastikan bahwa sumbernya tepercaya. Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- **Yusuf:** مَنْ يَحْتَاجُ إِلَى مَعْرِفَةِ هَذَا الْقَرَارِ بَعْدَ الِاجْتِمَاعِ؟ -> Siapa yang perlu mengetahui keputusan ini setelah menanggapi informasi baru?
-- **Hasan:** مِنْ نَاحِيَةِ الْقَرَارِ، بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا. -> Dari sisi keputusan, Setelah informasi baru, pendapat saya sedikit berubah.
-- **Yusuf:** مَا الصِّيَاغَةُ الْمُخْتَصَرَةُ الَّتِي سَنُرْسِلُهَا؟ -> Rumusan singkat apa yang akan kita kirim tentang menanggapi informasi baru?
-- **Hasan:** وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ، لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ. -> Dalam pesan setelah rapat, Karena itu, saya lebih memilih kita menyeimbangkan berbagai sumber.
+- **Yusuf:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ؟ -> Keberatan apa yang mungkin muncul dalam informasi baru tentang kompetitor?
+- **Hasan:** غَيَّرَتِ الْمَعْلُومَاتُ رَأْيِي قَلِيلًا. -> informasi itu sedikit mengubah pendapat saya
+- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam informasi baru tentang kompetitor?
+- **Hasan:** كُنَّا نَظُنُّ أَنَّ السِّعْرَ هُوَ الْمُشْكِلَةُ الأَكْبَرُ. -> sebelumnya kita kira harga adalah masalah terbesar
+- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ؟ -> Kesulitan apa yang mungkin muncul dalam informasi baru tentang kompetitor?
+- **Hasan:** قَدْ يَكُونُ السَّبَبُ هُوَ سُهُولَةَ الِاسْتِخْدَامِ. -> penyebabnya mungkin kemudahan penggunaan
+- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مَعْلُومَاتٍ جَدِيدَةٍ عَنْ الْمُنَافِسِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang informasi baru tentang kompetitor berubah menjadi tindakan jelas?
+- **Hasan:** أُعِيدُ تَرْتِيبَ التَّوْصِيَةِ بِنَاءً عَلَى ذَلِكَ. -> saya menyusun ulang rekomendasi berdasarkan itu

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ؟ -> Bagaimana kamu menjaga kejelasan saat menerapkan jawaban tenang di bawah tekanan?
-- **Omar:** فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ. -> Dalam latihan jawaban tenang di bawah tekanan, saya pikir asumsi dasarnya di sini belum disebutkan dengan jelas.
-- **Khalid:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam jawaban tenang di bawah tekanan?
-- **Omar:** عِنْدَ تَطْبِيقِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ. الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ. -> Saat menerapkan jawaban tenang di bawah tekanan, kita bisa menantang argumen ini dari sisi bukti. Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- **Khalid:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang jawaban tenang di bawah tekanan saat ada tekanan?
-- **Omar:** تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ. -> Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
-- **Khalid:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah jawaban tenang di bawah tekanan?
-- **Omar:** فِي خِتَامِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ. -> Pada bagian akhir jawaban tenang di bawah tekanan, karena itu, respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.
+- **Khalid:** إِذَا تَغَيَّرَ السِّيَاقُ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam pertanyaan menekan dalam debat umum, bagaimana kamu menyesuaikan jawaban?
+- **Omar:** لا أُجِيبُ بِدِفَاعٍ سَرِيعٍ. -> saya tidak menjawab dengan defensif cepat
+- **Khalid:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani pertanyaan menekan dalam debat umum, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
+- **Omar:** أُعِيدُ السُّؤَالَ بِصِيَاغَةٍ أَهْدَأَ ثُمَّ أُجِيبُ. -> saya mengulang pertanyaan dengan formulasi lebih tenang lalu menjawab
+- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pertanyaan menekan dalam debat umum?
+- **Omar:** إِذَا قَاطَعَنِي شَخْصٌ مَرَّةً أُخْرَى. -> jika seseorang memotong lagi
+- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُؤَالٍ ضَاغِطٍ فِي نِقَاشٍ عَامٍّ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pertanyaan menekan dalam debat umum dengan jelas?
+- **Omar:** أَطْلُبُ دَقِيقَةً لِإِكْمَالِ النُّقْطَةِ ثُمَّ أَعُودُ إِلَيْهِ. -> saya meminta satu menit untuk menyelesaikan poin lalu kembali padanya

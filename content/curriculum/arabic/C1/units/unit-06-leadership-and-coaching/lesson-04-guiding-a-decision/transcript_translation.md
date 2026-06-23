@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ؟ -> Bagaimana kamu menjaga kejelasan saat menerapkan pembimbingan keputusan kelompok?
-- **Tariq:** فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Dalam latihan pembimbingan keputusan kelompok, hal pertama adalah menetapkan arah dengan jelas.
-- **Rami:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam pembimbingan keputusan kelompok?
-- **Tariq:** عِنْدَ تَطْبِيقِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Saat menerapkan pembimbingan keputusan kelompok, daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran. Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- **Rami:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang pembimbingan keputusan kelompok saat ada tekanan?
-- **Tariq:** عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
-- **Rami:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah pembimbingan keputusan kelompok?
-- **Tariq:** فِي خِتَامِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Pada bagian akhir pembimbingan keputusan kelompok, saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.
+- **Rami:** إِذَا تَغَيَّرَ السِّيَاقُ فِي قَرَارٍ بَيْنَ خِيَارَيْنِ صَعْبَيْنِ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam keputusan antara dua opsi sulit, bagaimana kamu menyesuaikan jawaban?
+- **Tariq:** أَطْلُبُ مِنَ الْفَرِيقِ تَسْمِيَةَ الْمِعْيَارِ قَبْلَ الِاخْتِيَارِ. -> saya meminta tim menyebut standar sebelum memilih
+- **Rami:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ قَرَارٍ بَيْنَ خِيَارَيْنِ صَعْبَيْنِ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani keputusan antara dua opsi sulit, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
+- **Tariq:** بِدُونِ مِعْيَارٍ سَنُدَافِعُ عَنْ أَذْوَاقِنَا فَقَطْ. -> tanpa standar kita hanya membela selera
+- **Rami:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي قَرَارٍ بَيْنَ خِيَارَيْنِ صَعْبَيْنِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam keputusan antara dua opsi sulit?
+- **Tariq:** إِذَا انْقَسَمَتِ الآرَاءُ. -> jika pendapat terbagi
+- **Rami:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي قَرَارٍ بَيْنَ خِيَارَيْنِ صَعْبَيْنِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang keputusan antara dua opsi sulit dengan jelas?
+- **Tariq:** أَقْتَرِحُ قَرَارًا مُؤَقَّتًا مَعَ نُقْطَةِ مُرَاجَعَةٍ قَرِيبَةٍ. -> saya mengusulkan keputusan sementara dengan checkpoint dekat

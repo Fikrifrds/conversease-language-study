@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah respons setelah listening lanjutan menjadi langkah praktis?
-- **Hasan:** فِي تَدْرِيبِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا. -> Dalam latihan respons setelah listening lanjutan, makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
-- **Yusuf:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan respons setelah listening lanjutan?
-- **Hasan:** عِنْدَ تَطْبِيقِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ. -> Saat menerapkan respons setelah listening lanjutan, saya akan menjawab poin utama dulu, lalu kembali ke detail. Jika saya merangkum apa yang saya dengar, ide utamanya adalah menunda keputusan.
-- **Yusuf:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan pendekatan dalam respons setelah listening lanjutan?
-- **Hasan:** سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?
-- **Yusuf:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup respons setelah listening lanjutan dengan kalimat yang menunjukkan presisi dan fleksibilitas?
-- **Hasan:** فِي خِتَامِ إِدَارَةِ رَدٍّ بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Pada bagian akhir respons setelah listening lanjutan, dengan cara ini, saya tidak hanya merespons kata-kata, tetapi maksudnya.
+- **Yusuf:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ اِسْتِمَاعٍ مُتَقَدِّمٍ فِي نِقَاشٍ سَرِيعٍ؟ -> Apa standar terpenting untuk keberhasilan advanced listening dalam diskusi cepat?
+- **Hasan:** أُلَخِّصُ أَوَّلًا مَا سَمِعْتُهُ ثُمَّ أَطْلُبُ تَأْكِيدًا. -> saya merangkum dulu yang saya dengar lalu meminta konfirmasi
+- **Yusuf:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ اِسْتِمَاعٍ مُتَقَدِّمٍ فِي نِقَاشٍ سَرِيعٍ؟ -> Pesan apa yang perlu tetap diingat setelah advanced listening dalam diskusi cepat?
+- **Hasan:** بَعْدَ ذَلِكَ أَرُدُّ عَلَى الْمَقْصُودِ لا عَلَى كُلِّ تَفْصِيلٍ. -> setelah itu saya merespons maksudnya, bukan setiap detail
+- **Yusuf:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي اِسْتِمَاعٍ مُتَقَدِّمٍ فِي نِقَاشٍ سَرِيعٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam advanced listening dalam diskusi cepat?
+- **Hasan:** إِذَا كَانَ فِي الْكَلامِ تَلْمِيحٌ. -> jika dalam ucapan ada sindiran halus
+- **Yusuf:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي اِسْتِمَاعٍ مُتَقَدِّمٍ فِي نِقَاشٍ سَرِيعٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang advanced listening dalam diskusi cepat dengan jelas?
+- **Hasan:** أَسْأَلُ عَنْهُ بِلُطْفٍ بَدَلًا مِنْ أَنْ أَفْتَرِضَ الْمَعْنَى. -> saya menanyakannya dengan lembut daripada mengasumsikan makna

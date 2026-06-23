@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Sara:** مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟ -> Pertanyaan apa yang membantumu memahami situasi?
-- **Layla:** أَكْبَرُ تَحَدٍّ هُوَ السُّرْعَةُ. -> Tantangan terbesar adalah kecepatan.
-- **Sara:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟ -> Apa yang terjadi setelah itu?
-- **Layla:** أَحْتَاجُ إِلَى وَقْتٍ لِلتَّفْكِيرِ. أَحْيَانًا أَنْسَى الْكَلِمَاتِ الْمُنَاسِبَةَ. -> Saya butuh waktu untuk berpikir. Kadang saya lupa kata yang cocok.
-- **Sara:** سَأُقَلِّلُ الْجُمَلَ الطَّوِيلَةَ. -> Saya akan mengurangi kalimat panjang.
-- **Layla:** هَذَا يُسَاعِدُنِي عَلَى الطَّلَاقَةِ. -> Ini membantu saya pada kelancaran.
+- **Sara:** فِي تَحَدِّي الْوَقْتِ فِي الدِّرَاسَةِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟ -> Dalam tantangan waktu dalam belajar, apa yang jelas di awal?
+- **Layla:** بَدَأَ الأَمْرُ عِنْدَمَا أَدْرُسُ بَعْدَ الْعَمَلِ وَأَشْعُرُ بِالتَّعَبِ. -> Situasinya mulai ketika saya belajar setelah kerja dan merasa lelah.
+- **Sara:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ تَحَدِّي الْوَقْتِ فِي الدِّرَاسَةِ؟ -> Tantangan kecil apa yang muncul selama tantangan waktu dalam belajar?
+- **Layla:** كَانَ التَّحَدِّي هَكَذَا: الدَّرْسُ الطَّوِيلُ يُصْبِحُ ثَقِيلًا عَلَيَّ. -> Tantangannya begini: pelajaran panjang terasa berat bagi saya.
+- **Sara:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ تَحَدِّي الْوَقْتِ فِي الدِّرَاسَةِ؟ -> Apa langkah praktis setelah tantangan waktu dalam belajar?
+- **Layla:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُقَسِّمُهُ إِلَى عَشْرِ دَقَائِقَ فِي الْيَوْمِ. -> Saya bertindak dengan tenang, dan saya akan membaginya menjadi sepuluh menit per hari.

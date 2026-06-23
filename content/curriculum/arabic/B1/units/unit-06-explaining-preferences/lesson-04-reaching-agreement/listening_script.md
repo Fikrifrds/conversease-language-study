@@ -1,12 +1,12 @@
 # Listening Script
 
-**Fatimah:** كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟
-**Noura:** أَتَّفِقُ مَعَكِ فِي النُّقْطَةِ الْأُولَى.
-**Fatimah:** لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟
-**Noura:** لَكِنَّنِي أَرَى خِيَارًا آخَرَ. مُمْكِنٌ أَنْ نَجْمَعَ بَيْنَ الْفِكْرَتَيْنِ.
-**Fatimah:** هَذَا حَلٌّ مُتَوَازِنٌ.
-**Noura:** إِذَنْ، نَتَّفِقُ عَلَى هَذِهِ الْخُطَّةِ.
+**Fatimah:** لِنَتَدَرَّبْ عَلَى الِاتِّفَاقِ عَلَى مَكَانِ الِاجْتِمَاعِ. كَيْفَ تَفْتَحُ الْقِصَّةَ؟
+**Noura:** بَدَأَ الأَمْرُ عِنْدَمَا أَنَا أُفَضِّلُ الْمَقْهَى الْهَادِئَ.
+**Fatimah:** مَا الرَّابِطُ بَيْنَ تَفْصِيلِ الِاتِّفَاقِ عَلَى مَكَانِ الِاجْتِمَاعِ وَالْخُطْوَةِ التَّالِيَةِ؟
+**Noura:** كَانَ التَّحَدِّي هَكَذَا: زَمِيلِي يُفَضِّلُ الْمَكْتَبَ لِأَنَّهُ أَقْرَبُ.
+**Fatimah:** إِذًا، مَا النَّتِيجَةُ الَّتِي تُرِيدُهَا مِنْ الِاتِّفَاقِ عَلَى مَكَانِ الِاجْتِمَاعِ؟
+**Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَنَخْتَارُ الْمَكْتَبَ هَذِهِ الْمَرَّةَ وَالْمَقْهَى لاحِقًا.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

@@ -1,26 +1,27 @@
 scenario_key: arabic_b2_meeting_participation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟
-learner_goal: Latih percakapan Arab B2 untuk berpartisipasi aktif dalam rapat profesional dari pembuka
-  sampai ringkasan akhir.
+opening_line: مَا رَأْيُكَ فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+  تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk berpartisipasi aktif dalam rapat profesional dari pembuka sampai ringkasan akhir.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟
-  hint: 'Jawab dengan struktur B2 memakai: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ
-    عَنِ النِّطَاقِ.'
-  sample_answer: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
+- coach: مَا رَأْيُكَ فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+    تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
+    وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Memulai bagian rapat.
   expected_keywords:
-  - سَأَفْتَحُ
-  - الْمَوْضُوعَ
-  - بِجُمْلَةٍ
-  - قَصِيرَةٍ
-  - ثُمَّ
-  indonesian_explanation: Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope.
+  - مَوْقِفِي
+  - أَنَّ
+  - إِدَارَةِ
+  - جُزْءٍ
+  - مِنَ
+  indonesian_explanation: Posisi saya adalah bahwa memimpin bagian dari rapat membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.'
   hint: 'Jawab dengan struktur B2 memakai: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.'
   sample_answer: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
@@ -44,8 +45,7 @@ turns:
   - خُطْوَةً
   indonesian_explanation: Saya akan membandingkan dua opsi lalu mengusulkan satu langkah.
 - coach: 'استخدم الفكرة: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.'
-  hint: 'Jawab dengan struktur B2 memakai: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ
-    الِاجْتِمَاعِ.'
+  hint: 'Jawab dengan struktur B2 memakai: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.'
   sample_answer: سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.
   focus: Menutup rapat.
   expected_keywords:
@@ -54,10 +54,9 @@ turns:
   - وَالْمَسْؤُولِيَّاتِ
   - وَأُرْسِلُهَا
   - بَعْدَ
-  indonesian_explanation: Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah
-    rapat.
+  indonesian_explanation: Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah rapat.
 target_phrases:
-- سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
+- مَوْقِفِي فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
 - سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.
 - سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ.

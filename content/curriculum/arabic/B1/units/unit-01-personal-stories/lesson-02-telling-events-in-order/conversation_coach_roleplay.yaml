@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_telling_events_in_order
 mode: lesson_practice_coach
 level_code: B1
-opening_line: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan
-  agar lawan bicara mudah mengikuti alurnya.'
+opening_line: لِنَتَدَرَّبْ عَلَى الطَّرِيقِ إِلَى الْوَرْشَةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menceritakan kejadian secara berurutan agar lawan bicara mudah
+  mengikuti alurnya.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
+- coach: لِنَتَدَرَّبْ عَلَى الطَّرِيقِ إِلَى الْوَرْشَةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.'
   sample_answer: أَوَّلًا، وَصَلْتُ إِلَى الْمَكَانِ مُبَكِّرًا.
   focus: Memulai urutan kejadian.

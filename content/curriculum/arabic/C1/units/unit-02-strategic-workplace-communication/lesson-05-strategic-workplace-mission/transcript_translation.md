@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah pelaksanaan percakapan kerja strategis menjadi langkah praktis?
-- **Noura:** فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam latihan pelaksanaan percakapan kerja strategis, pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- **Maryam:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan pelaksanaan percakapan kerja strategis?
-- **Noura:** عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan pelaksanaan percakapan kerja strategis, lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- **Maryam:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan pendekatan dalam pelaksanaan percakapan kerja strategis?
-- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- **Maryam:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup pelaksanaan percakapan kerja strategis dengan kalimat yang menunjukkan presisi dan fleksibilitas?
-- **Noura:** فِي خِتَامِ إِدَارَةِ حِوَارٍ مِهَنِيٍّ اِسْتِرَاتِيجِيٍّ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Pada bagian akhir pelaksanaan percakapan kerja strategis, jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.
+- **Maryam:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Apa standar terpenting untuk keberhasilan percakapan strategis antara tiga tim?
+- **Noura:** أَجْمَعُ الْمَوْقِفَ وَالتَّوَقُّعَ وَالْخَطَرَ فِي إِطَارٍ وَاحِدٍ. -> saya menggabungkan posisi, ekspektasi, dan risiko dalam satu kerangka
+- **Maryam:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Pesan apa yang perlu tetap diingat setelah percakapan strategis antara tiga tim?
+- **Noura:** هَذَا يَمْنَعُ النِّقَاشَ مِنَ التَّحَوُّلِ إِلَى دِفَاعٍ مُتَبَادَلٍ. -> ini mencegah diskusi berubah menjadi saling defensif
+- **Maryam:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam percakapan strategis antara tiga tim?
+- **Noura:** إِذَا تَغَيَّرَتِ الأَوْلَوِيَّةُ فِي الْمُنْتَصَفِ. -> jika prioritas berubah di tengah
+- **Maryam:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي حِوَارٍ اِسْتِرَاتِيجِيٍّ بَيْنَ ثَلاثَةِ فِرَقٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang percakapan strategis antara tiga tim dengan jelas?
+- **Noura:** أُعِيدُ تَرْتِيبَ الْقَرَارِ وَأَطْلُبُ مُوَافَقَةً صَرِيحَةً. -> saya menyusun ulang keputusan dan meminta persetujuan eksplisit

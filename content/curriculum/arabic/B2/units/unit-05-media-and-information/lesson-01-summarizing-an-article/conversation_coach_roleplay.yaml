@@ -1,24 +1,28 @@
 scenario_key: arabic_b2_summarizing_an_article
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَلْخِيصُ مَقَالٍ.
+opening_line: مَا رَأْيُكَ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk merangkum artikel dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَلْخِيصُ مَقَالٍ.
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.'
-  sample_answer: أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- coach: مَا رَأْيُكَ فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+    وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Merangkum artikel.
   expected_keywords:
-  - أَفْهَمُ
-  - مِنَ
-  - الْمَقَالِ
+  - مَوْقِفِي
   - أَنَّ
-  - هَذَا
-  indonesian_explanation: Saya memahami dari artikel bahwa topik merangkum artikel penting.
+  - مَقَالٍ
+  - عَنْ
+  - تَغَيُّرِ
+  indonesian_explanation: Posisi saya adalah bahwa artikel tentang perubahan kebiasaan pengguna membutuhkan keputusan yang
+    jelas.
 - coach: 'استخدم الفكرة: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
   hint: 'Jawab dengan struktur B2 memakai: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.'
   sample_answer: يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
@@ -53,7 +57,7 @@ turns:
   - رَأْيِي
   indonesian_explanation: Setelah informasi baru, pendapat saya sedikit berubah.
 target_phrases:
-- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ.
+- مَوْقِفِي فِي مَقَالٍ عَنْ تَغَيُّرِ عَادَاتِ الْمُسْتَخْدِمِينَ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ.
 - وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى.
 - بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا.

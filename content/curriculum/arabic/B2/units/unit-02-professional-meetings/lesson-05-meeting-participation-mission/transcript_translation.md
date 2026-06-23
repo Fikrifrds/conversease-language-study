@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** الْيَوْمَ سَتُدِيرِينَ جُزْءًا مِنَ الِاجْتِمَاعِ. كَيْفَ سَتَبْدَئِينَ؟ -> Hari ini kamu akan memimpin sebagian rapat. Bagaimana kamu akan memulai?
-- **Noura:** سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ. -> Saya akan membuka topik dengan kalimat singkat lalu bertanya tentang scope.
-- **Maryam:** وَإِذَا ظَهَرَ اعْتِرَاضٌ؟ -> Jika muncul keberatan?
-- **Noura:** سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا. -> Saya akan berterima kasih kepada pemberi masukan dan meminta contoh spesifik.
-- **Maryam:** كَيْفَ سَتُحَوِّلِينَ النِّقَاشَ إِلَى قَرَارٍ؟ -> Bagaimana kamu akan mengubah diskusi menjadi keputusan?
-- **Noura:** سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً. -> Saya akan membandingkan dua opsi lalu mengusulkan satu langkah.
-- **Maryam:** وَكَيْفَ سَتُغْلِقِينَ الِاجْتِمَاعَ؟ -> Bagaimana kamu akan menutup rapat?
-- **Noura:** سَأُلَخِّصُ الْقَرَارَ وَالْمَسْؤُولِيَّاتِ وَأُرْسِلُهَا بَعْدَ الِاجْتِمَاعِ. -> Saya akan merangkum keputusan dan tanggung jawab lalu mengirimkannya setelah rapat.
+- **Maryam:** كَيْفَ سَتُحَوِّلُ إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah memimpin bagian dari rapat menjadi keputusan?
+- **Noura:** سَأَفْتَحُ الْمَوْضُوعَ ثُمَّ أُحَدِّدُ النِّطَاقَ. -> saya membuka topik lalu menentukan scope
+- **Maryam:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam memimpin bagian dari rapat?
+- **Noura:** لا أُرِيدُ أَنْ يَتَحَوَّلَ النِّقَاشُ إِلَى تَفَاصِيلَ كَثِيرَةٍ. -> saya tidak ingin diskusi berubah menjadi terlalu detail
+- **Maryam:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ؟ -> Kesulitan apa yang mungkin muncul dalam memimpin bagian dari rapat?
+- **Noura:** إِذَا ظَهَرَ اعْتِرَاضٌ فَسَأَطْلُبُ مِثَالًا مُحَدَّدًا. -> jika muncul keberatan, saya akan meminta contoh spesifik
+- **Maryam:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي إِدَارَةِ جُزْءٍ مِنَ الِاجْتِمَاعِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang memimpin bagian dari rapat berubah menjadi tindakan jelas?
+- **Noura:** أَخْتِمُ بِقَرَارٍ وَمَسْؤُولٍ وَمَوْعِدٍ. -> saya menutup dengan keputusan, penanggung jawab, dan tenggat

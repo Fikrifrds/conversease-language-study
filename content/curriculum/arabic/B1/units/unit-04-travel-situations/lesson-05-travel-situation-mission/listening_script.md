@@ -1,12 +1,12 @@
 # Listening Script
 
-**Ahmad:** كَيْفَ تُنْهِي الْحِوَارَ بِخُطْوَةٍ تَالِيَةٍ؟
-**Karim:** عِنْدِي حَجْزٌ وَلَكِنَّنِي تَأَخَّرْتُ.
-**Ahmad:** مَا الْخُطْوَةُ التَّالِيَةُ بَعْدَ ذَلِكَ؟
-**Karim:** أُرِيدُ أَنْ أُؤَكِّدَ الْوُصُولَ. هَلْ تُوصِي بِمَكَانٍ قَرِيبٍ لِلطَّعَامِ؟
-**Ahmad:** لَدَيَّ مُشْكِلَةٌ صَغِيرَةٌ فِي الْغُرْفَةِ.
-**Karim:** شُكْرًا عَلَى سُرْعَةِ الْمُسَاعَدَةِ.
+**Ahmad:** إِذَا سَأَلَكَ شَخْصٌ عَنْ رِحْلَةٍ قَصِيرَةٍ فِي نِهَايَةِ الأُسْبُوعِ، مَاذَا تَقُولُ أَوَّلًا؟
+**Karim:** بَدَأَ الأَمْرُ عِنْدَمَا حَجَزْتُ التَّذْكِرَةَ وَالْفُنْدُقَ مُبَكِّرًا.
+**Ahmad:** مَا الَّذِي جَعَلَ الْحِوَارَ عَنْ نِهَايَةِ الأُسْبُوعِ أَوْضَحَ؟
+**Karim:** كَانَ التَّحَدِّي هَكَذَا: الطَّقْسُ قَدْ يَتَغَيَّرُ فِي الْمَسَاءِ.
+**Ahmad:** مَا الْجُمْلَةُ الأَخِيرَةُ الَّتِي تُلَخِّصُ رِحْلَةٍ قَصِيرَةٍ فِي نِهَايَةِ الأُسْبُوعِ؟
+**Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَحْمِلُ مِظَلَّةً وَأُبْقِي الْخُطَّةَ مَرِنَةً.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

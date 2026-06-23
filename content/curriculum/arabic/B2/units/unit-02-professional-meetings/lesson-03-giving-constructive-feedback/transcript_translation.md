@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟ -> Saya sudah melihat draft proposal. Apa komentar pertamamu?
-- **Noura:** الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
-- **Maryam:** كَيْفَ نَقُولُ ذَلِكَ بِطَرِيقَةٍ بَنَّاءَةٍ؟ -> Bagaimana kita mengatakan itu secara konstruktif?
-- **Noura:** نَقُولُ: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى. -> Kita katakan: idenya kuat, dan menambahkan satu tujuan akan membuatnya lebih kuat.
-- **Maryam:** هَلْ تُضِيفِينَ مِثَالًا؟ -> Apakah kamu akan menambahkan contoh?
-- **Noura:** نَعَمْ، نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ. -> Ya, kita sebutkan bagaimana klien akan mengukur keberhasilan setelah satu bulan.
-- **Maryam:** مَاذَا بَعْدَ ذَلِكَ؟ -> Apa setelah itu?
-- **Noura:** أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ. -> Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.
+- **Maryam:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ مُسَوَّدَةِ الِاقْتِرَاحِ. -> Beri saya contoh konkret tentang draft proposal.
+- **Noura:** الْهَيْكَلُ جَيِّدٌ لَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ. -> strukturnya bagus tetapi pembuka butuh tujuan lebih jelas
+- **Maryam:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam draft proposal?
+- **Noura:** أُرِيدُ أَنْ يَبْدُوَ التَّعْلِيقُ مُسَاعِدًا لا نَاقِدًا فَقَطْ. -> saya ingin feedback terdengar membantu, bukan hanya mengkritik
+- **Maryam:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ -> Kesulitan apa yang mungkin muncul dalam draft proposal?
+- **Noura:** قَدْ يَشْعُرُ صَاحِبُ الْمُسَوَّدَةِ بِالدِّفَاعِيَّةِ. -> pemilik draft mungkin merasa defensif
+- **Maryam:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مُسَوَّدَةِ الِاقْتِرَاحِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang draft proposal berubah menjadi tindakan jelas?
+- **Noura:** أَقْتَرِحُ جُمْلَةً بَدِيلَةً وَأَشْكُرُهُ عَلَى الْعَمَلِ. -> saya mengusulkan kalimat alternatif dan berterima kasih atas pekerjaannya

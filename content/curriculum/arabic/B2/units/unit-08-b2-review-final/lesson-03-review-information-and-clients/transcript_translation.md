@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّعَامُلِ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ. -> Keterampilan terpenting apa yang sedang kamu tinjau kembali sekarang? Saya ingin fokus pada cara menangani informasi dan klien.
-- **Noura:** أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ. -> Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.
-- **Layla:** مَا الْمِثَالُ الْعَمَلِيُّ الَّذِي يُوَضِّحُ الْفِكْرَةَ؟ -> Contoh praktis apa yang menjelaskan cara menangani informasi dan klien?
-- **Noura:** بِطَرِيقَةٍ مِهَنِيَّةٍ، أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Dengan cara profesional, saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
-- **Layla:** كَيْفَ نُقَدِّمُ الْمُلَاحَظَةَ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادَّةً؟ -> Bagaimana memberi masukan tentang cara menangani informasi dan klien tanpa terdengar keras?
-- **Noura:** إِذَا قَبِلَ الْفَرِيقُ التَّعْدِيلَ، إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Jika muncul keberatan setelah tim menerima perubahan, saya akan menanggapinya dengan tenang.
-- **Layla:** مَا التَّعْدِيلُ الصَّغِيرُ الَّذِي يَجْعَلُ الْفِكْرَةَ أَقْوَى؟ -> Perubahan kecil apa yang membuat cara menangani informasi dan klien lebih kuat?
-- **Noura:** ثُمَّ أُوَثِّقُ ذَلِكَ بِاخْتِصَارٍ: فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Lalu saya mendokumentasikannya secara singkat: Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- **Layla:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ. -> Beri saya contoh konkret tentang review informasi dan percakapan klien.
+- **Noura:** سَأَفْحَصُ الْمَصْدَرَ قَبْلَ أَنْ أُقَدِّمَ نَصِيحَةً. -> saya memeriksa sumber sebelum memberi saran
+- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam review informasi dan percakapan klien?
+- **Noura:** ثُمَّ أَسْأَلُ الْعَمِيلَ عَنْ الأَوْلَوِيَّةِ الْحَقِيقِيَّةِ. -> lalu saya bertanya kepada klien tentang prioritas nyata
+- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ؟ -> Kesulitan apa yang mungkin muncul dalam review informasi dan percakapan klien?
+- **Noura:** قَدْ يَكُونُ الْعَمِيلُ قَلِقًا مِنَ الْوَقْتِ. -> klien mungkin khawatir soal waktu
+- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang review informasi dan percakapan klien berubah menjadi tindakan jelas?
+- **Noura:** أُقَدِّمُ خِيَارًا سَرِيعًا وَخِيَارًا أَكْثَرَ أَمَانًا. -> saya memberi opsi cepat dan opsi lebih aman

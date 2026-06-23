@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_joining_a_simple_meeting
 mode: lesson_practice_coach
 level_code: B1
-opening_line: هَلْ تُرِيدِينَ أَنْ تُضِيفِي شَيْئًا؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat,
-  dan menanyakan langkah berikutnya.'
+opening_line: لِنَتَدَرَّبْ عَلَى اِجْتِمَاعِ الْفَرِيقِ الْقَصِيرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu masuk meeting sederhana, memberi pendapat, dan menanyakan
+  langkah berikutnya.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: هَلْ تُرِيدِينَ أَنْ تُضِيفِي شَيْئًا؟
+- coach: لِنَتَدَرَّبْ عَلَى اِجْتِمَاعِ الْفَرِيقِ الْقَصِيرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.'
   sample_answer: أُرِيدُ أَنْ أُضِيفَ نُقْطَةً صَغِيرَةً.
   focus: Masuk diskusi dengan sopan.

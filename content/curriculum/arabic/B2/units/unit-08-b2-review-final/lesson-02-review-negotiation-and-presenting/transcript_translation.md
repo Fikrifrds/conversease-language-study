@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّفَاوُضِ وَالْعَرْضِ. -> Keterampilan terpenting apa yang sedang kamu tinjau kembali sekarang? Saya ingin fokus pada negosiasi dan presentasi.
-- **Noura:** أُرَاجِعُ التَّفَاوُضَ وَالْعَرْضَ لِأَنَّهُمَا مُهِمَّانِ فِي النِّقَاشِ. -> Saya meninjau kembali negosiasi dan presentasi karena keduanya penting dalam diskusi.
-- **Layla:** أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟ -> Bagian mana dari negosiasi dan presentasi yang perlu diperjelas?
-- **Noura:** لِتَجَنُّبِ سُوءِ الْفَهْمِ، أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Untuk menghindari salah paham, saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
-- **Layla:** مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟ -> Batas apa yang tidak ingin kita lewati dalam negosiasi dan presentasi?
-- **Noura:** بَعْدَ هَذَا التَّوْضِيحِ، إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Setelah penjelasan ini, kalau muncul keberatan, saya akan menanggapinya dengan tenang.
-- **Layla:** كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟ -> Bagaimana kita mengunci kesepakatan tentang negosiasi dan presentasi?
-- **Noura:** سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ: فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Saya akan menutup diskusi dengan hal praktis: Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- **Layla:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Mengapa kamu mendukung arah ini dalam review negosiasi dan presentasi?
+- **Noura:** سَأُحَدِّدُ الأَوْلَوِيَّةَ ثُمَّ أُقَدِّمُ تَنَازُلًا صَغِيرًا. -> saya menentukan prioritas lalu memberi konsesi kecil
+- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam review negosiasi dan presentasi?
+- **Noura:** فِي الْعَرْضِ سَأَرْبِطُ ذَلِكَ بِفَائِدَةٍ وَخَطَرٍ. -> dalam presentasi, saya mengaitkannya dengan manfaat dan risiko
+- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ؟ -> Kesulitan apa yang mungkin muncul dalam review negosiasi dan presentasi?
+- **Noura:** قَدْ يَأْتِي سُؤَالٌ عَنِ الْبَدِيلِ. -> mungkin muncul pertanyaan tentang alternatif
+- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مُرَاجَعَةِ التَّفَاوُضِ وَالْعَرْضِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang review negosiasi dan presentasi berubah menjadi tindakan jelas?
+- **Noura:** سَأُجِيبُ بِخِيَارَيْنِ وَأُوصِي بِوَاحِدٍ. -> saya menjawab dengan dua opsi dan merekomendasikan satu

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ تُطَبِّقُ مَهَارَةَ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ فِي حِوَارٍ رَسْمِيٍّ؟ -> Bagaimana kamu menerapkan penetapan arah dengan jelas dalam percakapan formal?
-- **Tariq:** فِي تَدْرِيبِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Dalam latihan penetapan arah dengan jelas, hal pertama adalah menetapkan arah dengan jelas.
-- **Rami:** أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟ -> Di bagian mana fokus penetapan arah dengan jelas membutuhkan presisi lebih besar?
-- **Tariq:** عِنْدَ تَطْبِيقِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Saat menerapkan penetapan arah dengan jelas, daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran. Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- **Rami:** إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟ -> Jika seseorang keberatan pada cara penetapan arah dengan jelas, bagaimana kamu menjaga percakapan tetap profesional?
-- **Tariq:** عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
-- **Rami:** مَا الصِّيَاغَةُ الَّتِي تُظْهِرُ الْفِكْرَةَ مِنْ غَيْرِ مُبَالَغَةٍ؟ -> Formulasi apa yang menunjukkan penetapan arah dengan jelas tanpa berlebihan?
-- **Tariq:** فِي خِتَامِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Pada bagian akhir penetapan arah dengan jelas, saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.
+- **Rami:** فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ، أَيْنَ تَحْتَاجُ إِلَى أَكْبَرِ قَدْرٍ مِنَ الدِّقَّةِ؟ -> Dalam arah tim yang bingung setelah perubahan rencana, di mana kamu membutuhkan presisi paling besar?
+- **Tariq:** أَبْدَأُ بِتَسْمِيَةِ الأَوْلَوِيَّةِ الْوَاحِدَةِ. -> saya mulai dengan menyebut satu prioritas
+- **Rami:** أَيُّ شَرْطٍ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ يَجْعَلُ الرَّأْيَ أَدَقَّ وَأَكْثَرَ تَوَازُنًا؟ -> Syarat mana dalam arah tim yang bingung setelah perubahan rencana yang membuat opini lebih presisi dan seimbang?
+- **Tariq:** ثُمَّ أُوَضِّحُ مَا سَنُؤَجِّلُهُ حَتَّى لا يَتَشَتَّتَ الْفَرِيقُ. -> lalu saya menjelaskan apa yang ditunda agar tim tidak buyar
+- **Rami:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam arah tim yang bingung setelah perubahan rencana?
+- **Tariq:** إِذَا طَلَبَ أَحَدُهُمْ كُلَّ التَّفَاصِيلِ فَوْرًا. -> jika seseorang meminta semua detail segera
+- **Rami:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي اتِّجَاهِ فَرِيقٍ مُرْتَبِكٍ بَعْدَ تَغَيُّرِ الْخُطَّةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang arah tim yang bingung setelah perubahan rencana dengan jelas?
+- **Tariq:** أُعْطِيهِ مَا يَحْتَاجُهُ لِلْعَمَلِ الآنَ وَأَعِدُ بِتَحْدِيثٍ لاحِقٍ. -> saya memberi yang ia butuhkan untuk bekerja sekarang dan menjanjikan update nanti

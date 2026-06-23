@@ -1,12 +1,12 @@
 # Listening Script
 
-**Ahmad:** مَا الْفِكْرَةُ الرَّئِيسِيَّةُ الَّتِي تُرِيدُ بَدْءَ الْحِوَارِ بِهَا؟
-**Karim:** سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ.
-**Ahmad:** مَا التَّفْصِيلُ الْأَهَمُّ فِي هَذِهِ النُّقْطَةِ؟
-**Karim:** بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ. أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ.
-**Ahmad:** سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ.
-**Karim:** هَذَا يُظْهِرُ التَّرَابُطَ فِي الْحِوَارِ.
+**Ahmad:** حَدِّثْنِي عَنْ مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ. مَتَى بَدَأَ الْمَوْقِفُ؟
+**Karim:** بَدَأَ الأَمْرُ عِنْدَمَا سَأَبْدَأُ بِالسِّيَاقِ ثُمَّ أُعْطِي التَّحْدِيثَ.
+**Ahmad:** أَيُّ تَفْصِيلٍ فِي مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ زَادَ صُعُوبَةَ الْمَوْقِفِ؟
+**Karim:** كَانَ التَّحَدِّي هَكَذَا: أَحْتَاجُ إِلَى رَبْطِ الأَحْدَاثِ بِوُضُوحٍ.
+**Ahmad:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ؟
+**Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْتَخْدِمُ ثُمَّ وَبَعْدَ ذَلِكَ بِعِنَايَةٍ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

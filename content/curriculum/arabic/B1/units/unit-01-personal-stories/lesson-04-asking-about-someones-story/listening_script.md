@@ -1,12 +1,12 @@
 # Listening Script
 
-**Ahmad:** كَيْفَ تَسْأَلُ عَنْ قِصَّةِ شَخْصٍ آخَرَ؟
-**Karim:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-**Ahmad:** لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟
-**Karim:** كَيْفَ شَعَرْتَ فِي تِلْكَ اللَّحْظَةِ؟ لِمَاذَا كَانَ ذَلِكَ مُهِمًّا لَكَ؟
-**Ahmad:** أُرِيدُ أَنْ أَفْهَمَ السِّبَاقَ أَكْثَرَ.
-**Karim:** شُكْرًا، أَصْبَحَتِ الْقِصَّةُ أَوْضَحَ.
+**Ahmad:** لِنَتَدَرَّبْ عَلَى قِصَّةِ زَمِيلِكَ عَنِ السَّفَرِ. كَيْفَ تَفْتَحُ الْقِصَّةَ؟
+**Karim:** بَدَأَ الأَمْرُ عِنْدَمَا سَمِعْتُ أَنَّهُ تَأَخَّرَ فِي الْمَطَارِ.
+**Ahmad:** مَا الرَّابِطُ بَيْنَ تَفْصِيلِ قِصَّةِ زَمِيلِكَ عَنِ السَّفَرِ وَالْخُطْوَةِ التَّالِيَةِ؟
+**Karim:** كَانَ التَّحَدِّي هَكَذَا: بَعْضُ التَّفَاصِيلِ لَمْ تَكُنْ وَاضِحَةً.
+**Ahmad:** إِذًا، مَا النَّتِيجَةُ الَّتِي تُرِيدُهَا مِنْ قِصَّةِ زَمِيلِكَ عَنِ السَّفَرِ؟
+**Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَلْتُهُ عَنِ السَّبَبِ وَعَنْ شُعُورِهِ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

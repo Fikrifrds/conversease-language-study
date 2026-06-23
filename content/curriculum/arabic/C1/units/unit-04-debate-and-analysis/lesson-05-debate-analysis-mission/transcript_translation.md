@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟ -> Bagaimana kamu mengubah debat analitis yang seimbang menjadi langkah praktis?
-- **Omar:** فِي تَدْرِيبِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ. -> Dalam latihan debat analitis yang seimbang, saya pikir asumsi dasarnya di sini belum disebutkan dengan jelas.
-- **Khalid:** مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى نَجَاحِ الْحِوَارِ؟ -> Kriteria apa yang akan kamu pakai untuk menilai keberhasilan debat analitis yang seimbang?
-- **Omar:** عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ. الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ. -> Saat menerapkan debat analitis yang seimbang, kita bisa menantang argumen ini dari sisi bukti. Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- **Khalid:** إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟ -> Jika nada percakapan berubah, bagaimana kamu menyesuaikan pendekatan dalam debat analitis yang seimbang?
-- **Omar:** تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ. -> Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
-- **Khalid:** كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟ -> Bagaimana kamu menutup debat analitis yang seimbang dengan kalimat yang menunjukkan presisi dan fleksibilitas?
-- **Omar:** فِي خِتَامِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ. -> Pada bagian akhir debat analitis yang seimbang, karena itu, respons terkuat adalah memperjelas asumsi lalu memeriksa bukti.
+- **Khalid:** مَا الْمِعْيَارُ الأَهَمُّ لِنَجَاحِ نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Apa standar terpenting untuk keberhasilan debat analitis tentang keputusan besar?
+- **Omar:** أَبْدَأُ بِتَسْمِيَةِ الِافْتِرَاضِ ثُمَّ أَطْلُبُ الدَّلِيلَ. -> saya mulai dengan menamai asumsi lalu meminta bukti
+- **Khalid:** مَا الرِّسَالَةُ الَّتِي يَنْبَغِي أَنْ تَبْقَى بَعْدَ نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Pesan apa yang perlu tetap diingat setelah debat analitis tentang keputusan besar?
+- **Omar:** بَعْدَ ذَلِكَ أُفَرِّقُ بَيْنَ الْمَعْلُومَةِ وَالتَّفْسِيرِ. -> setelah itu saya membedakan informasi dan interpretasi
+- **Khalid:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam debat analitis tentang keputusan besar?
+- **Omar:** إِذَا ارْتَفَعَتْ حِدَّةُ النِّقَاشِ. -> jika intensitas debat meningkat
+- **Khalid:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي نِقَاشٍ تَحْلِيلِيٍّ عَنْ قَرَارٍ كَبِيرٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang debat analitis tentang keputusan besar dengan jelas?
+- **Omar:** أُعِيدُهُ إِلَى مِعْيَارِ الْقَرَارِ وَمَا نَعْرِفُهُ فِعْلًا. -> saya mengembalikannya ke standar keputusan dan apa yang benar-benar kita tahu

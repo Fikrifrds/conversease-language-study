@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَنْظِيمُ عَرْضٍ قَصِيرٍ. -> Bagaimana kamu akan mempresentasikan ide ini? Saya ingin fokus pada menyusun presentasi singkat.
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَنْظِيمُ عَرْضٍ قَصِيرٍ. -> Saya akan mulai dengan pembuka singkat tentang menyusun presentasi singkat.
-- **Salma:** مَا السَّبَبُ الْأَوَّلُ الَّذِي يَجْعَلُ هَذِهِ النُّقْطَةَ مُهِمَّةً؟ -> Apa alasan pertama yang membuat menyusun presentasi singkat penting di sini?
-- **Lina:** فِي هَذِهِ الْحَالَةِ، بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Dalam situasi ini, Setelah itu, saya akan menjelaskan manfaat utamanya. Penting juga untuk menyebutkan risikonya.
-- **Salma:** مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟ -> Bagian mana dari menyusun presentasi singkat yang mungkin dipertanyakan tim?
-- **Lina:** لِذَلِكَ، إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Karena itu, kalau ada pertanyaan, saya akan menjawabnya dengan jelas.
-- **Salma:** مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟ -> Langkah realistis apa setelah membahas menyusun presentasi singkat?
-- **Lina:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً. -> Agar semuanya jelas, Sebagai penutup, saya akan mengusulkan langkah praktis.
+- **Salma:** مَا مَوْقِفُكَ مِنْ فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Apa posisimu tentang ide dashboard baru?
+- **Lina:** سَأَبْدَأُ بِالْمُشْكِلَةِ الَّتِي يَرَاهَا الْفَرِيقُ كُلَّ يَوْمٍ. -> saya mulai dari masalah yang tim lihat setiap hari
+- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam ide dashboard baru?
+- **Lina:** بَعْدَ ذَلِكَ أُظْهِرُ كَيْفَ تُقَلِّلُ اللَّوْحَةُ الْوَقْتَ. -> setelah itu saya menunjukkan bagaimana dashboard mengurangi waktu
+- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ؟ -> Kesulitan apa yang mungkin muncul dalam ide dashboard baru?
+- **Lina:** قَدْ يَسْأَلُونَ عَنِ الْجُهْدِ الْمَطْلُوبِ. -> mereka mungkin bertanya tentang effort yang dibutuhkan
+- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي فِكْرَةِ لَوْحَةِ مُتَابَعَةٍ جَدِيدَةٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang ide dashboard baru berubah menjadi tindakan jelas?
+- **Lina:** أَخْتِمُ بِتَجْرِبَةٍ صَغِيرَةٍ لِفَرِيقٍ وَاحِدٍ. -> saya menutup dengan uji coba kecil untuk satu tim

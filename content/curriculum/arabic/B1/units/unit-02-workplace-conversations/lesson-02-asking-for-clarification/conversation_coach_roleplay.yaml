@@ -1,15 +1,14 @@
 scenario_key: arabic_b1_asking_for_clarification
 mode: lesson_practice_coach
 level_code: B1
-opening_line: هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum
-  cukup jelas.'
+opening_line: لِنَتَدَرَّبْ عَلَى تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu meminta klarifikasi ketika instruksi belum cukup jelas.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟
+- coach: لِنَتَدَرَّبْ عَلَى تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟'
   sample_answer: هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
   focus: Mengecek maksud.

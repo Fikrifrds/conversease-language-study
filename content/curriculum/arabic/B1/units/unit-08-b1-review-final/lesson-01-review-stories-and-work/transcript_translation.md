@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** مَا الْفِكْرَةُ الرَّئِيسِيَّةُ الَّتِي تُرِيدُ بَدْءَ الْحِوَارِ بِهَا؟ -> Ide utama apa yang ingin kamu pakai untuk memulai percakapan?
-- **Karim:** سَأَبْدَأُ بِقِصَّةٍ قَصِيرَةٍ. -> Saya akan mulai dengan cerita singkat.
-- **Ahmad:** مَا التَّفْصِيلُ الْأَهَمُّ فِي هَذِهِ النُّقْطَةِ؟ -> Detail paling penting apa dalam poin ini?
-- **Karim:** بَعْدَ ذَلِكَ، أُعْطِي تَحْدِيثًا عَنِ الْعَمَلِ. أَحْتَاجُ إِلَى تَوْضِيحٍ فِي نُقْطَةٍ وَاحِدَةٍ. -> Setelah itu, saya memberi update tentang pekerjaan. Saya butuh klarifikasi pada satu poin.
-- **Ahmad:** سَأُرْسِلُ مُلَخَّصًا فِي النِّهَايَةِ. -> Saya akan mengirim ringkasan di akhir.
-- **Karim:** هَذَا يُظْهِرُ التَّرَابُطَ فِي الْحِوَارِ. -> Ini menunjukkan keterhubungan dalam dialog.
+- **Ahmad:** حَدِّثْنِي عَنْ مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang review cerita dan update kerja. Kapan situasinya mulai?
+- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا سَأَبْدَأُ بِالسِّيَاقِ ثُمَّ أُعْطِي التَّحْدِيثَ. -> Situasinya mulai ketika saya akan mulai dengan konteks lalu memberi update.
+- **Ahmad:** أَيُّ تَفْصِيلٍ فِي مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam review cerita dan update kerja yang membuat situasinya lebih sulit?
+- **Karim:** كَانَ التَّحَدِّي هَكَذَا: أَحْتَاجُ إِلَى رَبْطِ الأَحْدَاثِ بِوُضُوحٍ. -> Tantangannya begini: saya perlu menghubungkan kejadian dengan jelas.
+- **Ahmad:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي مُرَاجَعَةِ قِصَّةٍ وَتَحْدِيثِ عَمَلٍ؟ -> Apa yang akan kamu lakukan setelah itu dalam review cerita dan update kerja?
+- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْتَخْدِمُ ثُمَّ وَبَعْدَ ذَلِكَ بِعِنَايَةٍ. -> Saya bertindak dengan tenang, dan saya akan memakai lalu dan setelah itu dengan hati-hati.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ. -> Bagaimana kamu akan mempresentasikan ide ini? Saya ingin fokus pada menjelaskan manfaat dan risiko.
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ شَرْحُ الْفَوَائِدِ وَالْمَخَاطِرِ. -> Saya akan mulai dengan pembuka singkat tentang menjelaskan manfaat dan risiko.
-- **Salma:** مَا الْمِثَالُ الْعَمَلِيُّ الَّذِي يُوَضِّحُ الْفِكْرَةَ؟ -> Contoh praktis apa yang menjelaskan menjelaskan manfaat dan risiko?
-- **Lina:** بِطَرِيقَةٍ مِهَنِيَّةٍ، بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Dengan cara profesional, Setelah itu, saya akan menjelaskan manfaat utamanya. Penting juga untuk menyebutkan risikonya.
-- **Salma:** كَيْفَ نُقَدِّمُ الْمُلَاحَظَةَ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادَّةً؟ -> Bagaimana memberi masukan tentang menjelaskan manfaat dan risiko tanpa terdengar keras?
-- **Lina:** إِذَا قَبِلَ الْفَرِيقُ التَّعْدِيلَ، إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Jika ada pertanyaan setelah tim menerima perubahan, saya akan menjawabnya dengan jelas.
-- **Salma:** مَا التَّعْدِيلُ الصَّغِيرُ الَّذِي يَجْعَلُ الْفِكْرَةَ أَقْوَى؟ -> Perubahan kecil apa yang membuat menjelaskan manfaat dan risiko lebih kuat?
-- **Lina:** ثُمَّ أُوَثِّقُ ذَلِكَ بِاخْتِصَارٍ: فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً. -> Lalu saya mendokumentasikannya secara singkat: Sebagai penutup, saya akan mengusulkan langkah praktis.
+- **Salma:** أَعْطِنِي مِثَالًا مَلْمُوسًا حَوْلَ شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا. -> Beri saya contoh konkret tentang penjelasan manfaat dan risiko otomatisasi.
+- **Lina:** الْفَائِدَةُ الأُولَى هِيَ تَقْلِيلُ الْعَمَلِ الْمُكَرَّرِ. -> manfaat pertama adalah mengurangi pekerjaan berulang
+- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ -> Alasan atau detail apa yang mendukung poin ini dalam penjelasan manfaat dan risiko otomatisasi?
+- **Lina:** وَالْمَخَاطِرُ تَظْهَرُ إِذَا لَمْ نُرَاقِبِ النَّتَائِجَ. -> risiko muncul jika kita tidak memantau hasil
+- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا؟ -> Kesulitan apa yang mungkin muncul dalam penjelasan manfaat dan risiko otomatisasi?
+- **Lina:** قَدْ يَخَافُ بَعْضُهُمْ مِنْ تَغْيِيرِ طَرِيقَةِ الْعَمَلِ. -> sebagian mungkin takut perubahan cara kerja
+- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي شَرْحِ فَوَائِدِ الْأَتْمَتَةِ وَمَخَاطِرِهَا إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang penjelasan manfaat dan risiko otomatisasi berubah menjadi tindakan jelas?
+- **Lina:** نَبْدَأُ بِخُطْوَةٍ صَغِيرَةٍ وَنَقِيسُ الأَثَرَ. -> kita mulai dengan langkah kecil dan mengukur dampaknya

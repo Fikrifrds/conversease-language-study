@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ تَوْصِيَةٍ بِحَلٍّ. -> Bagaimana kita mendefinisikan masalah ini? Saya ingin fokus pada merekomendasikan solusi.
-- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin merekomendasikan solusi adalah bagian dari masalah yang lebih besar.
-- **Rami:** مَا الْقَرَارُ الَّذِي نَحْتَاجُ إِلَى تَسْمِيَتِهِ بِوُضُوحٍ؟ -> Keputusan apa yang perlu kita sebutkan dengan jelas dalam merekomendasikan solusi?
-- **Tariq:** عِنْدَ نِهَايَةِ الِاجْتِمَاعِ، السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Di akhir rapat, Penyebab utamanya mungkin lemahnya pengaturan. Setiap solusi punya manfaat dan efek samping.
-- **Rami:** مَنْ يَحْتَاجُ إِلَى مَعْرِفَةِ هَذَا الْقَرَارِ بَعْدَ الِاجْتِمَاعِ؟ -> Siapa yang perlu mengetahui keputusan ini setelah merekomendasikan solusi?
-- **Tariq:** مِنْ نَاحِيَةِ الْقَرَارِ، أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ. -> Dari sisi keputusan, saya merekomendasikan solusi bertahap untuk mengurangi risiko.
-- **Rami:** مَا الصِّيَاغَةُ الْمُخْتَصَرَةُ الَّتِي سَنُرْسِلُهَا؟ -> Rumusan singkat apa yang akan kita kirim tentang merekomendasikan solusi?
-- **Tariq:** وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ، بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى. -> Dalam pesan setelah rapat, Setelah percobaan, kita menilai hasilnya lagi.
+- **Rami:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Keberatan apa yang mungkin muncul dalam solusi untuk masalah error berulang?
+- **Tariq:** أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ. -> saya merekomendasikan checklist singkat sebelum delivery
+- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam solusi untuk masalah error berulang?
+- **Tariq:** لِأَنَّ الأَخْطَاءَ تَحْدُثُ فِي نَفْسِ الْخُطْوَةِ غَالِبًا. -> karena error sering terjadi pada langkah yang sama
+- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ؟ -> Kesulitan apa yang mungkin muncul dalam solusi untuk masalah error berulang?
+- **Tariq:** قَدْ يَرَى الْفَرِيقُ أَنَّهَا خُطْوَةٌ إِضَافِيَّةٌ. -> tim mungkin melihatnya sebagai langkah tambahan
+- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حَلٍّ لِمُشْكِلَةِ تَكَرُّرِ الأَخْطَاءِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang solusi untuk masalah error berulang berubah menjadi tindakan jelas?
+- **Tariq:** نُجَرِّبُهَا أُسْبُوعًا وَنَقِيسُ عَدَدَ الأَخْطَاءِ. -> kita mencobanya seminggu dan mengukur jumlah error

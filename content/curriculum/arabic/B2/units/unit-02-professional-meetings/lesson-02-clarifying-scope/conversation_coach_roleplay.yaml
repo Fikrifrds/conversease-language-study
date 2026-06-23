@@ -1,24 +1,25 @@
 scenario_key: arabic_b2_clarifying_scope
 mode: lesson_practice_coach
 level_code: B2
-opening_line: قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟
-learner_goal: Latih percakapan Arab B2 untuk memperjelas scope rapat, menetapkan batasan, dan mengonfirmasi
-  tindak lanjut.
+opening_line: مَا رَأْيُكَ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+  تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk memperjelas scope rapat, menetapkan batasan, dan mengonfirmasi tindak lanjut.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟
-  hint: 'Jawab dengan struktur B2 memakai: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.'
-  sample_answer: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
+- coach: مَا رَأْيُكَ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Membuka klarifikasi scope.
   expected_keywords:
-  - لَيْسَ
-  - النِّطَاقُ
-  - وَاضِحًا
-  - تَمَامًا
-  indonesian_explanation: Cakupannya belum sepenuhnya jelas.
+  - مَوْقِفِي
+  - أَنَّ
+  - نِطَاقِ
+  - الْمَرْحَلَةِ
+  - الأُولَى
+  indonesian_explanation: Posisi saya adalah bahwa scope fase pertama membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.'
   hint: 'Jawab dengan struktur B2 memakai: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.'
   sample_answer: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
@@ -53,7 +54,7 @@ turns:
   - قَصِيرَةٍ
   indonesian_explanation: Saya akan mengonfirmasi itu dalam pesan singkat setelah rapat.
 target_phrases:
-- لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
+- مَوْقِفِي فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
 - هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.
 - سَأُؤَكِّدُ ذَلِكَ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ.

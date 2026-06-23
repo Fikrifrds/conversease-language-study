@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى شَرْحُ الْخِيَارَاتِ. -> Apa yang dibutuhkan klien? Saya ingin fokus pada menjelaskan opsi.
-- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ. -> Saya ingin memahami kebutuhan klien tentang menjelaskan opsi.
-- **Fatimah:** أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟ -> Bagian mana dari menjelaskan opsi yang perlu diperjelas?
-- **Aisha:** لِتَجَنُّبِ سُوءِ الْفَهْمِ، لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Untuk menghindari salah paham, Kita punya dua opsi, dan setiap opsi memiliki manfaat. Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- **Fatimah:** مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟ -> Batas apa yang tidak ingin kita lewati dalam menjelaskan opsi?
-- **Aisha:** بَعْدَ هَذَا التَّوْضِيحِ، الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Setelah penjelasan ini, Langkah berikutnya adalah meninjau kesepakatan.
-- **Fatimah:** كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟ -> Bagaimana kita mengunci kesepakatan tentang menjelaskan opsi?
-- **Aisha:** سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ: سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Saya akan menutup diskusi dengan hal praktis: Saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- **Fatimah:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Mengapa kamu mendukung arah ini dalam dua opsi layanan support?
+- **Aisha:** الخِيَارُ الأَوَّلُ أَسْرَعُ وَالثَّانِي أَشْمَلُ. -> opsi pertama lebih cepat dan kedua lebih lengkap
+- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam dua opsi layanan support?
+- **Aisha:** أُوَضِّحُ التَّكْلِفَةَ وَمَا يَحْصُلُ عَلَيْهِ الْعَمِيلُ. -> saya menjelaskan biaya dan apa yang didapat klien
+- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ -> Kesulitan apa yang mungkin muncul dalam dua opsi layanan support?
+- **Aisha:** قَدْ يَسْأَلُ عَنِ الْفَرْقِ بَيْنَهُمَا. -> klien mungkin bertanya perbedaan keduanya
+- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang dua opsi layanan support berubah menjadi tindakan jelas?
+- **Aisha:** أَرْبِطُ كُلَّ خِيَارٍ بِحَاجَتِهِ الْفِعْلِيَّةِ. -> saya mengaitkan tiap opsi dengan kebutuhan nyatanya

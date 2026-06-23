@@ -1,12 +1,12 @@
 # Listening Script
 
-**Maryam:** هَلْ عِنْدَكِ تَحْدِيثٌ قَصِيرٌ؟
-**Noura:** أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
-**Maryam:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-**Noura:** مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ. لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.
-**Maryam:** سَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ.
-**Noura:** هَذَا هُوَ الْوَضْعُ الْحَالِيُّ.
+**Maryam:** فِي تَحْدِيثِ الْمَشْرُوعِ الصَّبَاحِيِّ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟
+**Noura:** بَدَأَ الأَمْرُ عِنْدَمَا أَنْهَيْتُ مُلَخَّصَ الصَّفْحَةِ الأُولَى.
+**Maryam:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ تَحْدِيثِ الْمَشْرُوعِ الصَّبَاحِيِّ؟
+**Noura:** كَانَ التَّحَدِّي هَكَذَا: بَقِيَتْ أَرْقَامُ الْمَبِيعَاتِ تَحْتَ الْمُرَاجَعَةِ.
+**Maryam:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ تَحْدِيثِ الْمَشْرُوعِ الصَّبَاحِيِّ؟
+**Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُرْسِلُ التَّحْدِيثَ بَعْدَ سَاعَةٍ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

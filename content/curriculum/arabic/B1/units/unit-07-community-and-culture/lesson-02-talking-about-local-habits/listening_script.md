@@ -1,12 +1,12 @@
 # Listening Script
 
-**Khalid:** مَا أَوَّلُ تَفْصِيلٍ يَحْتَاجُ إِلَى شَرْحٍ؟
-**Zayd:** مِنَ الْعَادَةِ أَنْ نُحَيِّيَ الْجِيرَانَ.
-**Khalid:** هَلْ يُمْكِنُ أَنْ تُعْطِيَ مِثَالًا بَسِيطًا؟
-**Zayd:** فِي الصَّبَاحِ، يَكُونُ الشَّارِعُ نَشِيطًا. بَعْضُ النَّاسِ يَفْضِّلُونَ الْهُدُوءَ.
-**Khalid:** هَذِهِ الْعَادَةُ تُسَاعِدُ عَلَى الِاحْتِرَامِ.
-**Zayd:** أَحْتَرِمُ هَذِهِ الطَّرِيقَةَ.
+**Khalid:** أُرِيدُ أَنْ أَفْهَمَ عَادَةِ إِحْضَارِ الطَّعَامِ لِلضُّيُوفِ. مَا أَوَّلُ تَفْصِيلٍ؟
+**Zayd:** بَدَأَ الأَمْرُ عِنْدَمَا بَعْضُ الأُسَرِ تَفْعَلُ ذَلِكَ فِي الْمُنَاسَبَاتِ.
+**Khalid:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي عَادَةِ إِحْضَارِ الطَّعَامِ لِلضُّيُوفِ؟
+**Zayd:** كَانَ التَّحَدِّي هَكَذَا: الضَّيْفُ قَدْ يَشْعُرُ بِالْحَيْرَةِ فِي الْمَرَّةِ الأُولَى.
+**Khalid:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ عَادَةِ إِحْضَارِ الطَّعَامِ لِلضُّيُوفِ؟
+**Zayd:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَقُولُ لَهُ إِنَّهَا عَادَةٌ وُدِّيَّةٌ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

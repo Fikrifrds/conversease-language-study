@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Bagaimana kamu menjaga kejelasan saat menerapkan latihan tes akhir C1?
-- **Noura:** فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ، أَجْمَعُ الدِّقَّةَ وَالطَّلَاقَةَ وَالْوُضُوحَ. -> Dalam latihan tes akhir, saya menggabungkan ketepatan, kefasihan, dan kejelasan.
-- **Layla:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam latihan tes akhir C1?
-- **Noura:** أُجِيبُ أَوَّلًا عَنْ السُّؤَالِ، ثُمَّ أُضِيفُ سَبَبًا وَمِثَالًا قَصِيرًا. إِذَا نَسِيتُ كَلِمَةً، أُعِيدُ الصِّيَاغَةَ وَلَا أَتَوَقَّفُ طَوِيلًا. -> Saya menjawab pertanyaan terlebih dahulu, lalu menambahkan alasan dan contoh singkat. Jika saya lupa satu kata, saya menyusun ulang kalimat dan tidak berhenti terlalu lama.
-- **Layla:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang latihan tes akhir C1 saat ada tekanan?
-- **Noura:** إِذَا ضَاقَ الْوَقْتُ، أَخْتَارُ جُمْلَةً وَاضِحَةً بَدَلًا مِنْ جُمْلَةٍ مُعَقَّدَةٍ. -> Jika waktu sempit, saya memilih kalimat yang jelas daripada kalimat yang rumit.
-- **Layla:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah latihan tes akhir C1?
-- **Noura:** فِي آخِرِ الْإِجَابَةِ، أَرْبِطُ النُّقْطَةَ بِالْمَهَمَّةِ الْمَطْلُوبَةِ. -> Di akhir jawaban, saya menghubungkan poin dengan tugas yang diminta.
+- **Layla:** إِذَا تَغَيَّرَ السِّيَاقُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam latihan ujian akhir C1, bagaimana kamu menyesuaikan jawaban?
+- **Noura:** أَسْتَخْدِمُ جَوَابًا فِيهِ مَوْقِفٌ وَقَيْدٌ وَخُطْوَةٌ. -> saya memakai jawaban yang berisi posisi, batasan, dan langkah
+- **Layla:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani latihan ujian akhir C1, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
+- **Noura:** لا أَكْتَفِي بِالطَّلَاقَةِ؛ أَحْتَاجُ إِلَى دِقَّةٍ فِي الْمَعْنَى. -> saya tidak cukup hanya fasih; saya butuh presisi makna
+- **Layla:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam latihan ujian akhir C1?
+- **Noura:** إِذَا نَسِيتُ كَلِمَةً مُعَقَّدَةً. -> jika saya lupa kata kompleks
+- **Layla:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ فِي سِي وَاحِدٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang latihan ujian akhir C1 dengan jelas?
+- **Noura:** أُعِيدُ الصِّيَاغَةَ بِجُمْلَةٍ أَبْسَطَ دُونَ فَقْدِ النُّقْطَةِ. -> saya merumuskan ulang dengan kalimat lebih sederhana tanpa kehilangan poin

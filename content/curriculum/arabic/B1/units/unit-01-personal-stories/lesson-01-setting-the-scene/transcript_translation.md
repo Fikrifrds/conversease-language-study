@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تَبْدَأُ قِصَّةً شَخْصِيَّةً؟ -> Bagaimana kamu memulai cerita pribadi?
-- **Karim:** فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ. -> Minggu lalu, saya berada di perpustakaan.
-- **Ahmad:** مَا التَّفْصِيلُ الْأَهَمُّ فِي هَذِهِ النُّقْطَةِ؟ -> Detail paling penting apa dalam poin ini?
-- **Karim:** كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ. كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا. -> Saya bersama teman saya pada waktu itu. Tempatnya tenang dan cocok.
-- **Ahmad:** هَذَا يُسَاعِدُ عَلَى فَهْمِ الْقِصَّةِ. -> Ini membantu memahami ceritanya.
-- **Karim:** بَعْدَ ذَلِكَ، بَدَأَ الْحَدَثُ الْأَسَاسِيُّ. -> Setelah itu, kejadian utamanya dimulai.
+- **Ahmad:** حَدِّثْنِي عَنْ زِيَارَةِ الْمَكْتَبَةِ أَمْسِ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang kunjungan ke perpustakaan kemarin. Kapan situasinya mulai?
+- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا وَصَلْتُ قَبْلَ صَدِيقِي بِعَشْرِ دَقَائِقَ. -> Situasinya mulai ketika saya tiba sepuluh menit sebelum teman saya.
+- **Ahmad:** أَيُّ تَفْصِيلٍ فِي زِيَارَةِ الْمَكْتَبَةِ أَمْسِ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam kunjungan ke perpustakaan kemarin yang membuat situasinya lebih sulit?
+- **Karim:** كَانَ التَّحَدِّي هَكَذَا: الْقَاعَةُ كَانَتْ مُزْدَحِمَةً أَكْثَرَ مِمَّا تَوَقَّعْتُ. -> Tantangannya begini: ruangannya lebih ramai dari yang saya duga.
+- **Ahmad:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي زِيَارَةِ الْمَكْتَبَةِ أَمْسِ؟ -> Apa yang akan kamu lakukan setelah itu dalam kunjungan ke perpustakaan kemarin?
+- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَاخْتَرْنَا مَكَانًا أَهْدَأَ لِلْقِرَاءَةِ. -> Saya bertindak dengan tenang, dan kami memilih tempat yang lebih tenang untuk membaca.

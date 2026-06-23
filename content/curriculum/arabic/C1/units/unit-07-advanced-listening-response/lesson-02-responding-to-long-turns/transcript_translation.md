@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ؟ -> Cara paling presisi apa untuk menerapkan respons terhadap giliran bicara yang panjang?
-- **Hasan:** فِي تَدْرِيبِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا. -> Dalam latihan respons terhadap giliran bicara yang panjang, makna tersiratnya di sini adalah pembicara belum sepenuhnya yakin.
-- **Yusuf:** مَا الْفَرْقُ بَيْنَ الصِّيَاغَةِ الْمُبَاشِرَةِ وَالصِّيَاغَةِ الْأَدَقِّ هُنَا؟ -> Apa bedanya formulasi langsung dan formulasi yang lebih presisi saat menerapkan respons terhadap giliran bicara yang panjang?
-- **Hasan:** عِنْدَ تَطْبِيقِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، سَأُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ. إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ. -> Saat menerapkan respons terhadap giliran bicara yang panjang, saya akan menjawab poin utama dulu, lalu kembali ke detail. Jika saya merangkum apa yang saya dengar, ide utamanya adalah menunda keputusan.
-- **Yusuf:** كَيْفَ تُصَحِّحُ سُوءَ فَهْمٍ صَغِيرًا أَثْنَاءَ الْحِوَارِ؟ -> Bagaimana kamu memperbaiki salah paham kecil saat respons terhadap giliran bicara yang panjang?
-- **Hasan:** سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟ -> Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan ini?
-- **Yusuf:** مَا الْقَيْدُ الَّذِي سَتُضِيفُهُ لِجَعْلِ الْجَوَابِ أَكْثَرَ تَوَازُنًا؟ -> Batasan apa yang akan kamu tambahkan agar respons terhadap giliran bicara yang panjang lebih seimbang?
-- **Hasan:** فِي خِتَامِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، بِهَذِهِ الطَّرِيقَةِ، لَا أَرُدُّ عَلَى الْكَلِمَاتِ فَقَطْ، بَلْ عَلَى الْمَقْصُودِ. -> Pada bagian akhir respons terhadap giliran bicara yang panjang, dengan cara ini, saya tidak hanya merespons kata-kata, tetapi maksudnya.
+- **Yusuf:** كَيْفَ تُقَدِّمُ كَلَامٍ طَوِيلٍ عَنْ تَغْيِيرِ الْخُطَّةِ مِنْ غَيْرِ أَنْ تَبْدُوَ حَادًّا؟ -> Bagaimana kamu menyampaikan ujaran panjang tentang perubahan rencana tanpa terdengar keras?
+- **Hasan:** أُجِيبُ أَوَّلًا عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ. -> saya menjawab dulu poin utama
+- **Yusuf:** أَيُّ عِبَارَةٍ فِي كَلَامٍ طَوِيلٍ عَنْ تَغْيِيرِ الْخُطَّةِ قَدْ تُسَاءُ فَهْمًا إِنْ لَمْ تُصَغْ بِدِقَّةٍ؟ -> Ungkapan mana dalam ujaran panjang tentang perubahan rencana yang bisa disalahpahami jika tidak dirumuskan dengan presisi?
+- **Hasan:** ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ الَّتِي تَحْتَاجُ قَرَارًا. -> lalu kembali ke detail yang butuh keputusan
+- **Yusuf:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي كَلَامٍ طَوِيلٍ عَنْ تَغْيِيرِ الْخُطَّةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam ujaran panjang tentang perubahan rencana?
+- **Hasan:** إِذَا حَاوَلْتُ الرَّدَّ عَلَى كُلِّ جُمْلَةٍ. -> jika saya mencoba merespons setiap kalimat
+- **Yusuf:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي كَلَامٍ طَوِيلٍ عَنْ تَغْيِيرِ الْخُطَّةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang ujaran panjang tentang perubahan rencana dengan jelas?
+- **Hasan:** سَأُرْبِكُ الْحِوَارَ، لِذَلِكَ أُرَتِّبُ الرَّدَّ فِي نُقْطَتَيْنِ. -> saya akan membuat percakapan membingungkan, jadi saya susun respons dalam dua poin

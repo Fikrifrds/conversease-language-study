@@ -1,12 +1,12 @@
 # Listening Script
 
-**Fatimah:** مَا السُّؤَالُ الَّذِي يُسَاعِدُكَ عَلَى فَهْمِ الْمَوْقِفِ؟
-**Noura:** مَا إِيجَابِيَّاتُ هَذَا الْخِيَارِ؟
-**Fatimah:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
-**Noura:** وَمَا السَّلْبِيَّاتُ الْمُمْكِنَةُ؟ هَلِ الْمَزَايَا أَكْثَرُ مِنَ الْمَشَاكِلِ؟
-**Fatimah:** أُرِيدُ أَنْ أَفْهَمَ الصُّورَةَ كَامِلَةً.
-**Noura:** بَعْدَ ذَلِكَ، نَقْرِّرُ.
+**Fatimah:** فِي إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟
+**Noura:** بَدَأَ الأَمْرُ عِنْدَمَا الْقُرْبُ يُوَفِّرُ الْوَقْتَ كَثِيرًا.
+**Fatimah:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ؟
+**Noura:** كَانَ التَّحَدِّي هَكَذَا: لَكِنَّ السِّعْرَ أَعْلَى مِنْ مَنَاطِقَ أُخْرَى.
+**Fatimah:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ إِيجَابِيَّاتِ وَسَلْبِيَّاتِ السَّكَنِ قُرْبَ الْعَمَلِ؟
+**Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُقَارِنُ التَّكْلِفَةَ مَعَ وَقْتِ الطَّرِيقِ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

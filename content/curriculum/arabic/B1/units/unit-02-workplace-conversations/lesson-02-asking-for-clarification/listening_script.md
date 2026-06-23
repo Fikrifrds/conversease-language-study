@@ -1,12 +1,12 @@
 # Listening Script
 
-**Maryam:** هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟
-**Noura:** هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟
-**Maryam:** هَلْ يُمْكِنُ أَنْ تُعْطِيَ مِثَالًا بَسِيطًا؟
-**Noura:** مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟ أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ.
-**Maryam:** هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟
-**Noura:** الْآنَ فَهِمْتُ الْمَطْلُوبَ.
+**Maryam:** أُرِيدُ أَنْ أَفْهَمَ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ. مَا أَوَّلُ تَفْصِيلٍ؟
+**Noura:** بَدَأَ الأَمْرُ عِنْدَمَا فَهِمْتُ الْجُزْءَ الأَوَّلَ مِنَ الْمَطْلُوبِ.
+**Maryam:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟
+**Noura:** كَانَ التَّحَدِّي هَكَذَا: مَوْعِدُ التَّسْلِيمِ لَمْ يَكُنْ وَاضِحًا.
+**Maryam:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟
+**Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُ عَنْهُ قَبْلَ أَنْ أَبْدَأَ الْكِتَابَةَ.
 
 ## Audio Direction
 
-Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a calm pace with a short natural pause between speakers. Use distinct voices according to speaker names.
+Use Arabic only. Speaker labels are metadata and must not be spoken. Keep a natural B1 conversation pace with clear pauses between ideas. Use distinct voices according to speaker names and gender.

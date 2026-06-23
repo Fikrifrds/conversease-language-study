@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** كَيْفَ تَجْعَلُ جَوَابَكَ فِي تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ مُقْنِعًا وَمُتَوَازِنًا؟ -> Bagaimana kamu membuat jawaban untuk penanganan masukan sensitif dengan bijak meyakinkan dan seimbang?
-- **Noura:** فِي تَدْرِيبِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam latihan penanganan masukan sensitif dengan bijak, pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- **Maryam:** مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟ -> Informasi apa yang membuat penanganan masukan sensitif dengan bijak lebih meyakinkan?
-- **Noura:** عِنْدَ تَطْبِيقِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan penanganan masukan sensitif dengan bijak, lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- **Maryam:** إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟ -> Jika pihak lain memahami penanganan masukan sensitif dengan bijak terlalu sempit, bagaimana kamu memperluas gambarannya?
-- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- **Maryam:** كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟ -> Bagaimana kamu menghubungkan penanganan masukan sensitif dengan bijak dengan pesan penutup yang jelas?
-- **Noura:** فِي خِتَامِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Pada bagian akhir penanganan masukan sensitif dengan bijak, jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.
+- **Maryam:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي تَعْلِيقٍ حَسَّاسٍ عَلَى أَدَاءِ زَمِيلٍ؟ -> Asumsi apa yang perlu kamu periksa dalam feedback sensitif tentang performa rekan?
+- **Noura:** أَرْبِطُ التَّعْلِيقَ بِالسُّلُوكِ لا بِالشَّخْصِيَّةِ. -> saya mengaitkan feedback dengan perilaku, bukan kepribadian
+- **Maryam:** أَيُّ دَلِيلٍ فِي تَعْلِيقٍ حَسَّاسٍ عَلَى أَدَاءِ زَمِيلٍ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam feedback sensitif tentang performa rekan yang perlu didahulukan?
+- **Noura:** أَذْكُرُ مِثَالًا وَاحِدًا ثُمَّ أَسْأَلُ عَنْ وِجْهَةِ نَظَرِهِ. -> saya menyebut satu contoh lalu bertanya sudut pandangnya
+- **Maryam:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي تَعْلِيقٍ حَسَّاسٍ عَلَى أَدَاءِ زَمِيلٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam feedback sensitif tentang performa rekan?
+- **Noura:** إِذَا أَصْبَحَ دِفَاعِيًّا. -> jika dia menjadi defensif
+- **Maryam:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي تَعْلِيقٍ حَسَّاسٍ عَلَى أَدَاءِ زَمِيلٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang feedback sensitif tentang performa rekan dengan jelas?
+- **Noura:** أُخَفِّفُ النَّبْرَةَ وَأُعِيدُ الْهَدَفَ: دَعْمُهُ لا إِحْرَاجُهُ. -> saya melembutkan nada dan mengulang tujuan: mendukungnya, bukan mempermalukan

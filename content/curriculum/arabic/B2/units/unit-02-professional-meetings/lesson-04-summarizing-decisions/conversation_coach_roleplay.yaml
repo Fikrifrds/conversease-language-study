@@ -1,24 +1,23 @@
 scenario_key: arabic_b2_summarizing_decisions
 mode: lesson_practice_coach
 level_code: B2
-opening_line: قَبْلَ أَنْ نُنْهِيَ الِاجْتِمَاعَ، مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟
+opening_line: مَا رَأْيُكَ فِي قَرَارَاتِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk merangkum keputusan rapat dengan jelas dan bisa ditindaklanjuti.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: قَبْلَ أَنْ نُنْهِيَ الِاجْتِمَاعَ، مَا الَّذِي اتَّفَقْنَا عَلَيْهِ؟
-  hint: 'Jawab dengan struktur B2 memakai: اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.'
-  sample_answer: اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.
+- coach: مَا رَأْيُكَ فِي قَرَارَاتِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي قَرَارَاتِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي قَرَارَاتِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Menyebut keputusan.
   expected_keywords:
-  - اتَّفَقْنَا
-  - عَلَى
-  - تَسْلِيمِ
-  - النُّسْخَةِ
-  - الأُولَى
-  indonesian_explanation: Kita sepakat menyerahkan versi pertama pada hari Kamis.
+  - مَوْقِفِي
+  - أَنَّ
+  - قَرَارَاتِ
+  - الِاجْتِمَاعِ
+  indonesian_explanation: Posisi saya adalah bahwa keputusan rapat membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.'
   hint: 'Jawab dengan struktur B2 memakai: أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.'
   sample_answer: أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.
@@ -53,7 +52,7 @@ turns:
   - الْمَسْؤُولَ،
   indonesian_explanation: 'Saya akan menulis tiga poin: keputusan, penanggung jawab, dan tenggat.'
 target_phrases:
-- اتَّفَقْنَا عَلَى تَسْلِيمِ النُّسْخَةِ الأُولَى يَوْمَ الْخَمِيسِ.
+- مَوْقِفِي فِي قَرَارَاتِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أَنَا أُرَاجِعُ النَّصَّ، وَفَاطِمَةُ تُرَاجِعُ التَّصْمِيمَ.
 - نَحْتَاجُ إِلَى مُوَافَقَةِ الْعَمِيلِ عَلَى الصُّوَرِ.
 - 'سَأَكْتُبُ ثَلَاثَ نِقَاطٍ: الْقَرَارَ، الْمَسْؤُولَ، وَالْمَوْعِدَ.'

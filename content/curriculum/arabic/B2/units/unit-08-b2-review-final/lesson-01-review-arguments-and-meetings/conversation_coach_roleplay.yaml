@@ -1,26 +1,27 @@
 scenario_key: arabic_b2_review_arguments_and_meetings
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْحُجَجِ وَالِاجْتِمَاعَاتِ.
-learner_goal: Latih percakapan Arab B2 untuk meninjau argumen dan rapat dengan alasan, contoh, respons,
-  dan rekomendasi.
+opening_line: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk meninjau argumen dan rapat dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى الْحُجَجِ وَالِاجْتِمَاعَاتِ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ
-    فِي النِّقَاشِ.'
-  sample_answer: أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- coach: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+    وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Membuka sesi peninjauan ulang.
   expected_keywords:
-  - أُرَاجِعُ
-  - الْحُجَجَ
-  - وَالِاجْتِمَاعَاتِ
-  - لِأَنَّهَا
-  - مُهِمَّةٌ
-  indonesian_explanation: Saya meninjau kembali argumen dan rapat karena keduanya penting dalam diskusi.
+  - مَوْقِفِي
+  - أَنَّ
+  - مُرَاجَعَةِ
+  - الْحُجَّةِ
+  - وَمُلَخَّصِ
+  indonesian_explanation: Posisi saya adalah bahwa review argumen dan ringkasan rapat membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
@@ -55,7 +56,7 @@ turns:
   - عَلَيْهِ
   indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
 target_phrases:
-- أُرَاجِعُ الْحُجَجَ وَالِاجْتِمَاعَاتِ لِأَنَّهَا مُهِمَّةٌ فِي النِّقَاشِ.
+- مَوْقِفِي فِي مُرَاجَعَةِ الْحُجَّةِ وَمُلَخَّصِ الِاجْتِمَاعِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

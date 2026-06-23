@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_describing_feelings
 mode: lesson_practice_coach
 level_code: B1
-opening_line: كَيْفَ شَعَرْتَ فِي ذَلِكَ الْمَوْقِفِ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan
-  memberi alasan singkat mengapa merasa begitu.'
+opening_line: لِنَتَدَرَّبْ عَلَى مُقَابَلَةِ الْمُدَرِّسِ الْجَدِيدِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menjelaskan perasaan dalam cerita dan memberi alasan singkat
+  mengapa merasa begitu.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ شَعَرْتَ فِي ذَلِكَ الْمَوْقِفِ؟
+- coach: لِنَتَدَرَّبْ عَلَى مُقَابَلَةِ الْمُدَرِّسِ الْجَدِيدِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.'
   sample_answer: شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ.
   focus: Menyebut perasaan awal.

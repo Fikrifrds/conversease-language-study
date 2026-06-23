@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Salma:** كَيْفَ سَتُقَدِّمِينَ هَذِهِ الْفِكْرَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَقْدِيمُ فِكْرَةٍ وَالدِّفَاعُ عَنْهَا. -> Bagaimana kamu akan mempresentasikan ide ini? Saya ingin fokus pada mempresentasikan dan mempertahankan ide.
-- **Lina:** سَأَبْدَأُ بِمُقَدِّمَةٍ قَصِيرَةٍ عَنْ تَقْدِيمُ فِكْرَةٍ وَالدِّفَاعُ عَنْهَا. -> Saya akan mulai dengan pembuka singkat tentang mempresentasikan dan mempertahankan ide.
-- **Salma:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan keterampilan unit ini untuk mempresentasikan dan mempertahankan ide dalam konteks ini?
-- **Lina:** لِجَمْعِ الصُّورَةِ كَامِلَةً، بَعْدَ ذَلِكَ، سَأَشْرَحُ الْفَائِدَةَ الْأَسَاسِيَّةَ. مِنَ الْمُهِمِّ أَنْ نَذْكُرَ الْمَخَاطِرَ أَيْضًا. -> Untuk menyatukan gambaran utuh, Setelah itu, saya akan menjelaskan manfaat utamanya. Penting juga untuk menyebutkan risikonya.
-- **Salma:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam mempresentasikan dan mempertahankan ide?
-- **Lina:** عَلَى مُسْتَوَى التَّنْفِيذِ، إِذَا كَانَتْ هُنَاكَ أَسْئِلَةٌ، فَسَأُجِيبُ عَنْهَا بِوُضُوحٍ. -> Pada tahap pelaksanaan, kalau ada pertanyaan, saya akan menjawabnya dengan jelas.
-- **Salma:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari mempresentasikan dan mempertahankan ide?
-- **Lina:** وَكَخُطْوَةٍ أَخِيرَةٍ، فِي الْخِتَامِ، سَأَقْتَرِحُ خُطْوَةً عَمَلِيَّةً. -> Sebagai langkah terakhir, Sebagai penutup, saya akan mengusulkan langkah praktis.
+- **Salma:** كَيْفَ سَتُحَوِّلُ تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah presentasi ide di depan manajer menjadi keputusan?
+- **Lina:** سَأَجْعَلُ الرِّسَالَةَ الأُولَى بَسِيطَةً جِدًّا. -> saya membuat pesan pertama sangat sederhana
+- **Salma:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam presentasi ide di depan manajer?
+- **Lina:** أَحْتَاجُ إِلَى دَلِيلٍ وَاحِدٍ وَخُطْوَةٍ وَاحِدَةٍ. -> saya butuh satu bukti dan satu langkah
+- **Salma:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ؟ -> Kesulitan apa yang mungkin muncul dalam presentasi ide di depan manajer?
+- **Lina:** قَدْ يَكُونُ الْوَقْتُ خَمْسَ دَقَائِقَ فَقَطْ. -> waktunya mungkin hanya lima menit
+- **Salma:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَقْدِيمِ فِكْرَةٍ أَمَامَ الْمُدِيرِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang presentasi ide di depan manajer berubah menjadi tindakan jelas?
+- **Lina:** أُرَتِّبُ الْعَرْضَ عَلَى مُشْكِلَةٍ وَحَلٍّ وَطَلَبٍ. -> saya menyusun presentasi menjadi masalah, solusi, dan permintaan

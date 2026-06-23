@@ -1,25 +1,27 @@
 scenario_key: arabic_b2_discussing_tradeoffs
 mode: lesson_practice_coach
 level_code: B2
-opening_line: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُنَاقَشَةُ الْمُوَازَنَاتِ.
+opening_line: مَا رَأْيُكَ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk membahas tradeoff dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُنَاقَشَةُ الْمُوَازَنَاتِ.
-  hint: 'Jawab dengan struktur B2 memakai: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.'
-  sample_answer: أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- coach: مَا رَأْيُكَ فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+    وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Melakukan framing problem.
   expected_keywords:
-  - أَرَى
+  - مَوْقِفِي
   - أَنَّ
-  - هَذِهِ
-  - النُّقْطَةَ
-  - جُزْءٌ
-  indonesian_explanation: Saya melihat bahwa poin membahas tradeoff adalah bagian dari masalah yang lebih
-    besar.
+  - الْمُوَازَنَةِ
+  - بَيْنَ
+  - السُّرْعَةِ
+  indonesian_explanation: Posisi saya adalah bahwa tradeoff antara kecepatan dan kualitas membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
   hint: 'Jawab dengan struktur B2 memakai: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.'
   sample_answer: السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
@@ -54,7 +56,7 @@ turns:
   - الْمَخَاطِرِ
   indonesian_explanation: Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
 target_phrases:
-- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ.
+- مَوْقِفِي فِي الْمُوَازَنَةِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ.
 - لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ.
 - أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ.

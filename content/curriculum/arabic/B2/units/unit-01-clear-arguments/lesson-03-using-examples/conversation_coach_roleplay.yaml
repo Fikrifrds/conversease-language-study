@@ -1,24 +1,27 @@
 scenario_key: arabic_b2_using_examples
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى اِسْتِخْدَامُ الْأَمْثِلَةِ.
+opening_line: مَا رَأْيُكَ فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk menggunakan contoh dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى اِسْتِخْدَامُ الْأَمْثِلَةِ.
-  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.'
-  sample_answer: مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+- coach: مَا رَأْيُكَ فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+    تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Menyatakan posisi dengan jelas.
   expected_keywords:
   - مَوْقِفِي
-  - هُوَ
   - أَنَّ
-  - هَذَا
-  - الْمَوْضُوعَ
-  indonesian_explanation: Posisi saya adalah bahwa topik menggunakan contoh penting dalam diskusi.
+  - اِسْتِخْدَامِ
+  - مِثَالٍ
+  - مِنْ
+  indonesian_explanation: Posisi saya adalah bahwa penggunaan contoh dari klien nyata membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
   hint: 'Jawab dengan struktur B2 memakai: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.'
   sample_answer: أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
@@ -42,8 +45,7 @@ turns:
   - يَحْتَاجُ
   indonesian_explanation: Contohnya, tim membutuhkan keputusan yang cepat.
 - coach: 'استخدم الفكرة: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
-  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ
-    أَكْبَرُ.'
+  hint: 'Jawab dengan struktur B2 memakai: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.'
   sample_answer: أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.
   focus: Merespons counterpoint dengan sopan.
   expected_keywords:
@@ -54,7 +56,7 @@ turns:
   - وَلَكِنَّ
   indonesian_explanation: Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
 target_phrases:
-- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ.
+- مَوْقِفِي فِي اِسْتِخْدَامِ مِثَالٍ مِنْ عَمِيلٍ حَقِيقِيٍّ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ.
 - مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ.
 - أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ.

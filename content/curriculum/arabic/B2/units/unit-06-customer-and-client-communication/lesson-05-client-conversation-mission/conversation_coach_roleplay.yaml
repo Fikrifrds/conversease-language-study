@@ -1,28 +1,27 @@
 scenario_key: arabic_b2_client_conversation_mission
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى إِدَارَةُ حِوَارٍ
-  مَعَ عَمِيلٍ.
-learner_goal: Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh,
-  respons, dan rekomendasi.
+opening_line: مَا رَأْيُكَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+  تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk mengelola percakapan dengan klien dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى إِدَارَةُ حِوَارٍ مَعَ
-    عَمِيلٍ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ
-    حِوَارٍ مَعَ عَمِيلٍ.'
-  sample_answer: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ.
+- coach: مَا رَأْيُكَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+    تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى
+    قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Memahami kebutuhan klien.
   expected_keywords:
-  - أُرِيدُ
-  - أَنْ
-  - أَفْهَمَ
-  - اِحْتِيَاجَ
-  - الْعَمِيلِ
-  indonesian_explanation: Saya ingin memahami kebutuhan klien tentang mengelola percakapan dengan klien.
+  - مَوْقِفِي
+  - أَنَّ
+  - حِوَارٍ
+  - كَامِلٍ
+  - مَعَ
+  indonesian_explanation: Posisi saya adalah bahwa percakapan lengkap dengan klien yang ragu membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
   hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
   sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
@@ -57,7 +56,7 @@ turns:
   - الِاتِّفَاقِ
   indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
 target_phrases:
-- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ.
+- مَوْقِفِي فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
 - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
 - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.

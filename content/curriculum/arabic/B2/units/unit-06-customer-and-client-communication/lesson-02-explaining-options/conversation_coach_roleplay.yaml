@@ -1,25 +1,26 @@
 scenario_key: arabic_b2_explaining_options
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى شَرْحُ الْخِيَارَاتِ.
+opening_line: مَا رَأْيُكَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ
+  تَالِيَةٍ.
 learner_goal: Latih percakapan Arab B2 untuk menjelaskan opsi dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى شَرْحُ الْخِيَارَاتِ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ
-    الْخِيَارَاتِ.'
-  sample_answer: أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ.
+- coach: مَا رَأْيُكَ فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ
+    وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Memahami kebutuhan klien.
   expected_keywords:
-  - أُرِيدُ
-  - أَنْ
-  - أَفْهَمَ
-  - اِحْتِيَاجَ
-  - الْعَمِيلِ
-  indonesian_explanation: Saya ingin memahami kebutuhan klien tentang menjelaskan opsi.
+  - مَوْقِفِي
+  - أَنَّ
+  - خِيَارَيْنِ
+  - لِخِدْمَةِ
+  - الدَّعْمِ
+  indonesian_explanation: Posisi saya adalah bahwa dua opsi layanan support membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
   hint: 'Jawab dengan struktur B2 memakai: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.'
   sample_answer: لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
@@ -54,7 +55,7 @@ turns:
   - الِاتِّفَاقِ
   indonesian_explanation: Langkah berikutnya adalah meninjau kesepakatan.
 target_phrases:
-- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ شَرْحُ الْخِيَارَاتِ.
+- مَوْقِفِي فِي خِيَارَيْنِ لِخِدْمَةِ الدَّعْمِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ.
 - أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ.
 - الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ.

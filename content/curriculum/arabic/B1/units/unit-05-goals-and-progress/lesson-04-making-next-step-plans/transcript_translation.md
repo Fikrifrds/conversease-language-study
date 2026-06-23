@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Sara:** كَيْفَ تَرُدُّ بِطَرِيقَةٍ وَاضِحَةٍ وَمُهَذَّبَةٍ؟ -> Bagaimana kamu merespons dengan jelas dan sopan?
-- **Layla:** الْخُطْوَةُ التَّالِيَةُ هِيَ التَّدْرِيبُ الْيَوْمِيُّ. -> Langkah berikutnya adalah latihan harian.
-- **Sara:** لِمَاذَا هَذَا مُهِمٌّ فِي هَذِهِ الْحَالَةِ؟ -> Mengapa ini penting dalam situasi ini?
-- **Layla:** سَأُرَاجِعُ خَمْسَ عِبَارَاتٍ كُلَّ يَوْمٍ. سَأُسَجِّلُ صَوْتِي مَرَّةً وَاحِدَةً. -> Saya akan meninjau lima frasa setiap hari. Saya akan merekam suara saya satu kali.
-- **Sara:** بَعْدَ أُسْبُوعٍ، سَأُقَيِّمُ النَّتِيجَةَ. -> Setelah seminggu, saya akan menilai hasilnya.
-- **Layla:** إِذَا احْتَجْتُ، سَأُغَيِّرُ الْخُطَّةَ. -> Jika perlu, saya akan mengubah rencana.
+- **Sara:** لِنَتَدَرَّبْ عَلَى خُطَّةِ الأُسْبُوعِ الْقَادِمِ. كَيْفَ تَفْتَحُ الْقِصَّةَ؟ -> Mari latihan rencana minggu depan. Bagaimana kamu membuka ceritanya?
+- **Layla:** بَدَأَ الأَمْرُ عِنْدَمَا سَأُرَاجِعُ الدَّرْسَ الأَوَّلَ يَوْمَ الِاثْنَيْنِ. -> Situasinya mulai ketika saya akan meninjau lesson pertama pada Senin.
+- **Sara:** مَا الرَّابِطُ بَيْنَ تَفْصِيلِ خُطَّةِ الأُسْبُوعِ الْقَادِمِ وَالْخُطْوَةِ التَّالِيَةِ؟ -> Apa penghubung antara detail dalam rencana minggu depan dan langkah berikutnya?
+- **Layla:** كَانَ التَّحَدِّي هَكَذَا: لا أُرِيدُ أَنْ أَتْرُكَ التَّدْرِيبَ إِلَى آخِرِ يَوْمٍ. -> Tantangannya begini: saya tidak ingin menunda latihan sampai hari terakhir.
+- **Sara:** إِذًا، مَا النَّتِيجَةُ الَّتِي تُرِيدُهَا مِنْ خُطَّةِ الأُسْبُوعِ الْقَادِمِ؟ -> Jadi, hasil apa yang kamu inginkan dari rencana minggu depan?
+- **Layla:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَضَعُ تَذْكِيرًا بَعْدَ الْعَشَاءِ. -> Saya bertindak dengan tenang, dan saya akan memasang pengingat setelah makan malam.

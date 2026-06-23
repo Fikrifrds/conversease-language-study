@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Layla:** مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ. -> Keterampilan terpenting apa yang sedang kamu tinjau kembali sekarang? Saya ingin fokus pada latihan tes akhir.
-- **Noura:** أُرَاجِعُ تَدْرِيبَ الِاخْتِبَارِ النِّهَائِيِّ لِأَنَّهُ يُسَاعِدُنِي عَلَى الِاسْتِعْدَادِ. -> Saya meninjau kembali latihan tes akhir karena itu membantu saya bersiap.
-- **Layla:** مَا الْقَرَارُ الَّذِي نَحْتَاجُ إِلَى تَسْمِيَتِهِ بِوُضُوحٍ؟ -> Keputusan apa yang perlu kita sebutkan dengan jelas dalam latihan tes akhir?
-- **Noura:** عِنْدَ نِهَايَةِ الِاجْتِمَاعِ، أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ. أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ. -> Di akhir rapat, saya bisa menyampaikan pendapat dan mendukungnya dengan bukti. Saya juga bisa mengelola percakapan profesional dengan jelas.
-- **Layla:** مَنْ يَحْتَاجُ إِلَى مَعْرِفَةِ هَذَا الْقَرَارِ بَعْدَ الِاجْتِمَاعِ؟ -> Siapa yang perlu mengetahui keputusan ini setelah latihan tes akhir?
-- **Noura:** مِنْ نَاحِيَةِ الْقَرَارِ، إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> Dari sisi keputusan, kalau muncul keberatan, saya akan menanggapinya dengan tenang.
-- **Layla:** مَا الصِّيَاغَةُ الْمُخْتَصَرَةُ الَّتِي سَنُرْسِلُهَا؟ -> Rumusan singkat apa yang akan kita kirim tentang latihan tes akhir?
-- **Noura:** وَفِي الرِّسَالَةِ بَعْدَ الِاجْتِمَاعِ، فِي الِاخْتِبَارِ النِّهَائِيِّ، سَأُرَكِّزُ عَلَى التَّرَابُطِ وَالْوُضُوحِ. -> Dalam tes akhir, saya akan fokus pada koherensi dan kejelasan.
+- **Layla:** مَا الِاعْتِرَاضُ الْمُتَوَقَّعُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Keberatan apa yang mungkin muncul dalam latihan ujian akhir?
+- **Noura:** سَأُجِيبُ بِمَوْقِفٍ وَسَبَبٍ وَمِثَالٍ. -> saya menjawab dengan posisi, alasan, dan contoh
+- **Layla:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Alasan atau detail apa yang mendukung poin ini dalam latihan ujian akhir?
+- **Noura:** إِذَا وَرَدَ اعْتِرَاضٌ فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ. -> jika ada keberatan, saya menanggapinya dengan tenang
+- **Layla:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ؟ -> Kesulitan apa yang mungkin muncul dalam latihan ujian akhir?
+- **Noura:** قَدْ أُطِيلُ الْجَوَابَ إِذَا لَمْ أُنَظِّمْهُ. -> saya bisa memanjangkan jawaban jika tidak menyusunnya
+- **Layla:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَدْرِيبِ الِاخْتِبَارِ النِّهَائِيِّ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang latihan ujian akhir berubah menjadi tindakan jelas?
+- **Noura:** سَأَسْتَخْدِمُ جُمْلَةً خِتَامِيَّةً وَاضِحَةً. -> saya akan memakai kalimat penutup yang jelas

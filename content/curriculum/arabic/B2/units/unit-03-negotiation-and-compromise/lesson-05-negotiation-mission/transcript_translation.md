@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Khalid:** مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ. -> Apa prioritasmu dalam kesepakatan ini? Saya ingin fokus pada mengelola negosiasi jelas.
-- **Omar:** أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى إِدَارَةُ تَفَاوُضٍ وَاضِحٍ وَاضِحًا. -> Prioritas saya adalah agar mengelola negosiasi jelas tetap jelas.
-- **Khalid:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan keterampilan unit ini untuk mengelola negosiasi dengan jelas dalam konteks ini?
-- **Omar:** لِجَمْعِ الصُّورَةِ كَامِلَةً، أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ. أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ. -> Untuk menyatukan gambaran utuh, saya mengajukan usulan berikut sebagai solusi praktis. Saya memahami kekhawatiranmu, tetapi kita punya pilihan lain.
-- **Khalid:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam mengelola negosiasi jelas?
-- **Omar:** عَلَى مُسْتَوَى التَّنْفِيذِ، يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ. -> Pada tahap pelaksanaan, Kita bisa mencapai solusi tengah.
-- **Khalid:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari mengelola negosiasi jelas?
-- **Omar:** وَكَخُطْوَةٍ أَخِيرَةٍ، إِذَا اتَّفَقْنَا عَلَى ذَلِكَ، فَالْخُطْوَةُ التَّالِيَةُ وَاضِحَةٌ. -> Sebagai langkah terakhir, kalau kita sepakat tentang itu, langkah berikutnya jelas.
+- **Khalid:** كَيْفَ سَتُحَوِّلُ تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah negosiasi dengan vendor baru menjadi keputusan?
+- **Omar:** أَبْدَأُ بِمَا نَحْتَاجُ إِلَيْهِ لا بِالسِّعْرِ فَقَطْ. -> saya mulai dari kebutuhan kita, bukan hanya harga
+- **Khalid:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam negosiasi dengan vendor baru?
+- **Omar:** إِذَا فَهِمَ الْمُوَرِّدُ الأَوْلَوِيَّةَ فَسَيُقَدِّمُ خِيَارًا أَفْضَلَ. -> jika vendor memahami prioritas, ia akan memberi opsi lebih baik
+- **Khalid:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ؟ -> Kesulitan apa yang mungkin muncul dalam negosiasi dengan vendor baru?
+- **Omar:** قَدْ يَرْفَعُ السِّعْرَ عِنْدَ إِضَافَةِ خِدْمَةٍ. -> ia mungkin menaikkan harga saat menambah layanan
+- **Khalid:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَفَاوُضٍ مَعَ مُوَرِّدٍ جَدِيدٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang negosiasi dengan vendor baru berubah menjadi tindakan jelas?
+- **Omar:** أَطْلُبُ عَرْضَيْنِ وَأُقَارِنُهُمَا بِهُدُوءٍ. -> saya meminta dua penawaran dan membandingkannya dengan tenang

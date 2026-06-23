@@ -1,28 +1,28 @@
 scenario_key: arabic_b2_review_information_and_clients
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّعَامُلِ مَعَ
-  الْمَعْلُومَاتِ وَالْعُمَلَاءِ.
-learner_goal: Latih percakapan Arab B2 untuk meninjau cara menangani informasi dan klien dengan alasan,
-  contoh, respons, dan rekomendasi.
+opening_line: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk meninjau cara menangani informasi dan klien dengan alasan, contoh, respons, dan
+  rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَهَمُّ مَهَارَةٍ تُرَاجِعِينَها الْآنَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى التَّعَامُلِ مَعَ الْمَعْلُومَاتِ
-    وَالْعُمَلَاءِ.
-  hint: 'Jawab dengan struktur B2 memakai: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ
-    لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.'
-  sample_answer: أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
+- coach: مَا رَأْيُكَ فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+    وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Membuka sesi peninjauan ulang.
   expected_keywords:
-  - أُرَاجِعُ
-  - التَّعَامُلَ
-  - مَعَ
+  - مَوْقِفِي
+  - أَنَّ
+  - مُرَاجَعَةِ
   - الْمَعْلُومَاتِ
-  - وَالْعُمَلَاءِ
-  indonesian_explanation: Saya meninjau kembali cara menangani informasi dan klien karena itu penting dalam diskusi.
+  - وَحَدِيثِ
+  indonesian_explanation: Posisi saya adalah bahwa review informasi dan percakapan klien membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   hint: 'Jawab dengan struktur B2 memakai: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.'
   sample_answer: أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
@@ -57,7 +57,7 @@ turns:
   - عَلَيْهِ
   indonesian_explanation: Jika muncul keberatan, saya akan menanggapinya dengan tenang.
 target_phrases:
-- أُرَاجِعُ التَّعَامُلَ مَعَ الْمَعْلُومَاتِ وَالْعُمَلَاءِ لِأَنَّهُ مُهِمٌّ فِي النِّقَاشِ.
+- مَوْقِفِي فِي مُرَاجَعَةِ الْمَعْلُومَاتِ وَحَدِيثِ الْعَمِيلِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أَسْتَطِيعُ أَنْ أُقَدِّمَ رَأْيًا وَأَدْعَمَهُ بِدَلِيلٍ.
 - أَسْتَطِيعُ أَيْضًا أَنْ أُدِيرَ حِوَارًا مِهَنِيًّا بِوُضُوحٍ.
 - إِذَا ظَهَرَ اِعْتِرَاضٌ، فَسَأَرُدُّ عَلَيْهِ بِهُدُوءٍ.

@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_personal_story_mission
 mode: lesson_practice_coach
 level_code: B1
-opening_line: احْكِ لِي قِصَّةً قَصِيرَةً عَنْ تَجْرِبَتِكَ.
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian,
-  perasaan, dan pertanyaan lanjutan dalam satu cerita.'
+opening_line: لِنَتَدَرَّبْ عَلَى الْمَدِينَةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu menggabungkan konteks, urutan kejadian, perasaan, dan pertanyaan
+  lanjutan dalam satu cerita.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: احْكِ لِي قِصَّةً قَصِيرَةً عَنْ تَجْرِبَتِكَ.
+- coach: لِنَتَدَرَّبْ عَلَى الْمَدِينَةِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.'
   sample_answer: فِي الْبِدَايَةِ، كَانَ الْمَوْقِفُ غَيْرَ وَاضِحٍ.
   focus: Membuka cerita dengan masalah ringan.

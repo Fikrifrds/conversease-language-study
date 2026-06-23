@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Omar:** مَا الْفِكْرَةُ الرَّئِيسِيَّةُ الَّتِي تُرِيدُ بَدْءَ الْحِوَارِ بِهَا؟ -> Ide utama apa yang ingin kamu pakai untuk memulai percakapan?
-- **Raka:** تُوجَدُ مُشْكِلَةٌ فِي الْخِدْمَةِ. -> Ada masalah pada layanan.
-- **Omar:** مَا التَّفْصِيلُ الْأَهَمُّ فِي هَذِهِ النُّقْطَةِ؟ -> Detail paling penting apa dalam poin ini?
-- **Raka:** الْمُشْكِلَةُ بَدَأَتْ مُنْذُ الصَّبَاحِ. أَثَّرَ ذَلِكَ عَلَى الْعَمَلِ. -> Masalahnya mulai sejak pagi. Itu memengaruhi pekerjaan.
-- **Omar:** أَحْتَاجُ إِلَى حَلٍّ سَرِيعٍ. -> Saya butuh solusi cepat.
-- **Raka:** سَأُرَاجِعُ السَّبَبَ أَوَّلًا. -> Saya akan meninjau penyebabnya dulu.
+- **Omar:** حَدِّثْنِي عَنْ تَأَخُّرِ الطَّلَبِ فِي النِّظَامِ. مَتَى بَدَأَ الْمَوْقِفُ؟ -> Ceritakan tentang keterlambatan pesanan di sistem. Kapan situasinya mulai?
+- **Raka:** بَدَأَ الأَمْرُ عِنْدَمَا ظَهَرَتْ رِسَالَةُ خَطَأٍ عِنْدَ التَّأْكِيدِ. -> Situasinya mulai ketika muncul pesan error saat konfirmasi.
+- **Omar:** أَيُّ تَفْصِيلٍ فِي تَأَخُّرِ الطَّلَبِ فِي النِّظَامِ زَادَ صُعُوبَةَ الْمَوْقِفِ؟ -> Detail mana dalam keterlambatan pesanan di sistem yang membuat situasinya lebih sulit?
+- **Raka:** كَانَ التَّحَدِّي هَكَذَا: الْعَمِيلُ يَنْتَظِرُ الرَّدَّ مُنْذُ الصَّبَاحِ. -> Tantangannya begini: klien menunggu jawaban sejak pagi.
+- **Omar:** وَمَا الَّذِي سَتَفْعَلُهُ بَعْدَ ذَلِكَ فِي تَأَخُّرِ الطَّلَبِ فِي النِّظَامِ؟ -> Apa yang akan kamu lakukan setelah itu dalam keterlambatan pesanan di sistem?
+- **Raka:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأُرْسِلُ رَقْمَ الطَّلَبِ إِلَى الدَّعْمِ. -> Saya bertindak dengan tenang, dan saya akan mengirim nomor pesanan ke support.

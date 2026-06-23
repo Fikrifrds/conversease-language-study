@@ -1,29 +1,26 @@
 scenario_key: arabic_b2_giving_constructive_feedback
 mode: lesson_practice_coach
 level_code: B2
-opening_line: رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟
-learner_goal: Latih percakapan Arab B2 untuk memberi feedback konstruktif, menyebut kekuatan, memberi
-  saran, dan menawarkan perbaikan.
+opening_line: مَا رَأْيُكَ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk memberi feedback konstruktif, menyebut kekuatan, memberi saran, dan menawarkan
+  perbaikan.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: رَأَيْتُ مُسَوَّدَةَ الِاقْتِرَاحِ. مَا مُلَاحَظَتُكِ الأُولَى؟
-  hint: 'Jawab dengan struktur B2 memakai: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى
-    هَدَفٍ أَوْضَحَ.'
-  sample_answer: الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+- coach: مَا رَأْيُكَ فِي مُسَوَّدَةِ الِاقْتِرَاحِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مُسَوَّدَةِ الِاقْتِرَاحِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي مُسَوَّدَةِ الِاقْتِرَاحِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Memberi feedback seimbang.
   expected_keywords:
-  - الْهَيْكَلُ
-  - جَيِّدٌ،
-  - وَلَكِنَّ
-  - الْمُقَدِّمَةَ
-  - تَحْتَاجُ
-  indonesian_explanation: Strukturnya bagus, tetapi pembuka membutuhkan tujuan yang lebih jelas.
+  - مَوْقِفِي
+  - أَنَّ
+  - مُسَوَّدَةِ
+  - الِاقْتِرَاحِ
+  indonesian_explanation: Posisi saya adalah bahwa draft proposal membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.'
-  hint: 'Jawab dengan struktur B2 memakai: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا
-    أَقْوَى.'
+  hint: 'Jawab dengan struktur B2 memakai: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.'
   sample_answer: الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
   focus: Membuat feedback konstruktif.
   expected_keywords:
@@ -56,7 +53,7 @@ turns:
   - صَغِيرٍ
   indonesian_explanation: Saya mengirim komentar dengan saran kecil untuk merumuskan ulang.
 target_phrases:
-- الْهَيْكَلُ جَيِّدٌ، وَلَكِنَّ الْمُقَدِّمَةَ تَحْتَاجُ إِلَى هَدَفٍ أَوْضَحَ.
+- مَوْقِفِي فِي مُسَوَّدَةِ الِاقْتِرَاحِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - الْفِكْرَةُ قَوِيَّةٌ، وَإِضَافَةُ هَدَفٍ وَاحِدٍ سَتَجْعَلُهَا أَقْوَى.
 - نَذْكُرُ كَيْفَ سَيَقِيسُ الْعَمِيلُ النَّجَاحَ بَعْدَ شَهْرٍ.
 - أُرْسِلُ التَّعْلِيقَ مَعَ اقْتِرَاحٍ صَغِيرٍ لِإِعَادَةِ الصِّيَاغَةِ.

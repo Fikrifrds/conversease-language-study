@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** مَا مَوْقِفُكَ مِنْ هَذَا الْمَوْضُوعِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى دَعْمُ الرَّأْيِ بِالْأَسْبَابِ. -> Apa posisimu tentang topik ini? Saya ingin fokus pada mendukung pendapat dengan alasan.
-- **Karim:** مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik mendukung pendapat dengan alasan penting dalam diskusi.
-- **Ahmad:** أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟ -> Bagian mana dari mendukung pendapat dengan alasan yang perlu diperjelas?
-- **Karim:** لِتَجَنُّبِ سُوءِ الْفَهْمِ، أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Untuk menghindari salah paham, saya mendukung pendapat ini dengan dua alasan yang jelas. Contohnya, tim membutuhkan keputusan yang cepat.
-- **Ahmad:** مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟ -> Batas apa yang tidak ingin kita lewati dalam mendukung pendapat dengan alasan?
-- **Karim:** بَعْدَ هَذَا التَّوْضِيحِ، أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Setelah penjelasan ini, saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- **Ahmad:** كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟ -> Bagaimana kita mengunci kesepakatan tentang mendukung pendapat dengan alasan?
-- **Karim:** سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ: لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Saya akan menutup diskusi dengan hal praktis: Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- **Ahmad:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ؟ -> Mengapa kamu mendukung arah ini dalam perubahan jadwal tim?
+- **Karim:** أُؤَيِّدُ التَّغْيِيرَ لَكِنْ بِشَرْطٍ وَاضِحٍ. -> saya mendukung perubahan tetapi dengan syarat jelas
+- **Ahmad:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam perubahan jadwal tim?
+- **Karim:** السَّبَبُ الأَوَّلُ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى وَقْتٍ لِلْمُرَاجَعَةِ. -> alasan pertama adalah tim butuh waktu untuk review
+- **Ahmad:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ؟ -> Kesulitan apa yang mungkin muncul dalam perubahan jadwal tim?
+- **Karim:** قَدْ يَتَضَرَّرُ التَّسْلِيمُ إِذَا غَيَّرْنَا كُلَّ شَيْءٍ مَعًا. -> delivery bisa terganggu jika kita mengubah semuanya sekaligus
+- **Ahmad:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي تَغْيِيرِ جَدْوَلِ الْفَرِيقِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang perubahan jadwal tim berubah menjadi tindakan jelas?
+- **Karim:** نُغَيِّرُ يَوْمَيْنِ فَقَطْ ثُمَّ نُقَيِّمُ النَّتِيجَةَ. -> kita ubah dua hari saja lalu mengevaluasi hasilnya

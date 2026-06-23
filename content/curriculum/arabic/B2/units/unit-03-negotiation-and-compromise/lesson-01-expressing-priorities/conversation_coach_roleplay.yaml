@@ -1,26 +1,27 @@
 scenario_key: arabic_b2_expressing_priorities
 mode: lesson_practice_coach
 level_code: B2
-opening_line: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الْأَوْلَوِيَّاتِ.
-learner_goal: Latih percakapan Arab B2 untuk menjelaskan prioritas dengan alasan, contoh, respons, dan
-  rekomendasi.
+opening_line: مَا رَأْيُكَ فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+  وَخُطْوَةٍ تَالِيَةٍ.
+learner_goal: Latih percakapan Arab B2 untuk menjelaskan prioritas dengan alasan, contoh, respons, dan rekomendasi.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا أَوْلَوِيَّتُكَ فِي هَذَا الِاتِّفَاقِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَوْضِيحُ الْأَوْلَوِيَّاتِ.
-  hint: 'Jawab dengan struktur B2 memakai: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ
-    وَاضِحًا.'
-  sample_answer: أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا.
+- coach: مَا رَأْيُكَ فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ؟ دَعْنَا نُدَرِّبْ الْجَوَابَ بِسَبَبٍ وَمِثَالٍ
+    وَخُطْوَةٍ تَالِيَةٍ.
+  hint: 'Jawab dengan struktur B2 memakai: مَوْقِفِي فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ أَنَّنَا نَحْتَاجُ
+    إِلَى قَرَارٍ وَاضِحٍ.'
+  sample_answer: مَوْقِفِي فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
   focus: Menyatakan prioritas.
   expected_keywords:
-  - أَوْلَوِيَّتِي
-  - هِيَ
-  - أَنْ
-  - يَبْقَى
-  - تَوْضِيحُ
-  indonesian_explanation: Prioritas saya adalah agar menjelaskan prioritas tetap jelas.
+  - مَوْقِفِي
+  - أَنَّ
+  - مَوْعِدِ
+  - إِطْلَاقِ
+  - النُّسْخَةِ
+  indonesian_explanation: Posisi saya adalah bahwa jadwal peluncuran versi uji coba membutuhkan keputusan yang jelas.
 - coach: 'استخدم الفكرة: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.'
   hint: 'Jawab dengan struktur B2 memakai: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.'
   sample_answer: أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
@@ -55,7 +56,7 @@ turns:
   - حَلٍّ
   indonesian_explanation: Kita bisa mencapai solusi tengah.
 target_phrases:
-- أَوْلَوِيَّتِي هِيَ أَنْ يَبْقَى تَوْضِيحُ الْأَوْلَوِيَّاتِ وَاضِحًا.
+- مَوْقِفِي فِي مَوْعِدِ إِطْلَاقِ النُّسْخَةِ التَّجْرِيبِيَّةِ أَنَّنَا نَحْتَاجُ إِلَى قَرَارٍ وَاضِحٍ.
 - أُقَدِّمُ الِاقْتِرَاحَ التَّالِيَ كَحَلٍّ عَمَلِيٍّ.
 - أَفْهَمُ قَلَقَكَ، وَلَكِنْ لَدَيْنَا خِيَارٌ آخَرُ.
 - يُمْكِنُنَا أَنْ نَصِلَ إِلَى حَلٍّ وَسَطٍ.

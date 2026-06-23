@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_asking_about_someones_story
 mode: lesson_practice_coach
 level_code: B1
-opening_line: كَيْفَ تَسْأَلُ عَنْ قِصَّةِ شَخْصٍ آخَرَ؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang
-  tanpa memotong alur pembicaraan.'
+opening_line: لِنَتَدَرَّبْ عَلَى قِصَّةِ زَمِيلِكَ عَنِ السَّفَرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu bertanya lanjutan tentang cerita seseorang tanpa memotong
+  alur pembicaraan.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَسْأَلُ عَنْ قِصَّةِ شَخْصٍ آخَرَ؟
+- coach: لِنَتَدَرَّبْ عَلَى قِصَّةِ زَمِيلِكَ عَنِ السَّفَرِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟'
   sample_answer: مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟
   focus: Meminta lanjutan cerita.

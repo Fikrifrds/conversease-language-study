@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى إِدَارَةُ نِقَاشٍ عَنِ الْمَعْلُومَاتِ. -> Bagaimana kamu merangkum informasi ini? Saya ingin fokus pada mengelola diskusi informasi.
-- **Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ. -> Saya memahami dari artikel bahwa topik mengelola diskusi informasi penting.
-- **Yusuf:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan keterampilan unit ini untuk mengelola diskusi informasi dalam konteks ini?
-- **Hasan:** لِجَمْعِ الصُّورَةِ كَامِلَةً، يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Untuk menyatukan gambaran utuh, Kita harus memastikan bahwa sumbernya tepercaya. Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- **Yusuf:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam mengelola diskusi informasi?
-- **Hasan:** عَلَى مُسْتَوَى التَّنْفِيذِ، بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا. -> Pada tahap pelaksanaan, Setelah informasi baru, pendapat saya sedikit berubah.
-- **Yusuf:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari mengelola diskusi informasi?
-- **Hasan:** وَكَخُطْوَةٍ أَخِيرَةٍ، لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ. -> Sebagai langkah terakhir, Karena itu, saya lebih memilih kita menyeimbangkan berbagai sumber.
+- **Yusuf:** كَيْفَ سَتُحَوِّلُ نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah diskusi tentang data kampanye menjadi keputusan?
+- **Hasan:** أَبْدَأُ بِالرَّقْمِ الأَكْثَرِ صِلَةً بِالْهَدَفِ. -> saya mulai dengan angka yang paling terkait dengan target
+- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam diskusi tentang data kampanye?
+- **Hasan:** ثُمَّ أَذْكُرُ مَا لا تَقُولُهُ الْبَيَانَاتُ. -> lalu saya menyebut apa yang tidak dikatakan data
+- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ؟ -> Kesulitan apa yang mungkin muncul dalam diskusi tentang data kampanye?
+- **Hasan:** قَدْ يُسِيءُ أَحَدٌ فَهْمَ النِّسْبَةِ. -> seseorang mungkin salah memahami persentase
+- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي نِقَاشٍ عَنْ بَيَانَاتِ الْحَمْلَةِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang diskusi tentang data kampanye berubah menjadi tindakan jelas?
+- **Hasan:** أَخْتِمُ بِسُؤَالٍ عَمَلِيٍّ عَمَّا نُغَيِّرُهُ. -> saya menutup dengan pertanyaan praktis tentang apa yang kita ubah

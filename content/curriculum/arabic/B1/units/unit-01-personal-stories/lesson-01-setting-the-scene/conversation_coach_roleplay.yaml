@@ -1,15 +1,15 @@
 scenario_key: arabic_b1_setting_the_scene
 mode: lesson_practice_coach
 level_code: B1
-opening_line: كَيْفَ تَبْدَأُ قِصَّةً شَخْصِيَّةً؟
-learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu membuka cerita pendek dengan waktu, tempat,
-  dan orang yang terlibat sebelum masuk ke kejadian utama.'
+opening_line: لِنَتَدَرَّبْ عَلَى زِيَارَةِ الْمَكْتَبَةِ أَمْسِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
+learner_goal: 'Latih percakapan Arab B1 untuk situasi ini: Kamu membuka cerita pendek dengan waktu, tempat, dan orang yang
+  terlibat sebelum masuk ke kejadian utama.'
 max_turns: 6
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَبْدَأُ قِصَّةً شَخْصِيَّةً؟
+- coach: لِنَتَدَرَّبْ عَلَى زِيَارَةِ الْمَكْتَبَةِ أَمْسِ. كَيْفَ تَبْدَأُ الْحِوَارَ؟
   hint: 'Jawab dengan kalimat terhubung memakai: فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.'
   sample_answer: فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.
   focus: Membuka cerita dengan waktu dan tempat.

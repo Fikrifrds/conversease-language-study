@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ إِصْلَاحِ سُوءِ الْفَهْمِ؟ -> Bagaimana kamu menjaga kejelasan saat menerapkan perbaikan salah paham?
-- **Aisha:** فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ. -> Dalam latihan perbaikan salah paham, sebelum merespons, kita harus membaca konteks dengan cermat.
-- **Fatimah:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam perbaikan salah paham?
-- **Aisha:** عِنْدَ تَطْبِيقِ إِصْلَاحِ سُوءِ الْفَهْمِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟ فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ. -> Saat menerapkan perbaikan salah paham, bisakah saya bertanya dengan cara yang lebih tactful? Di negara saya, norma ini dipahami dengan cara yang berbeda.
-- **Fatimah:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang perbaikan salah paham saat ada tekanan?
-- **Aisha:** يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ. -> Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
-- **Fatimah:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah perbaikan salah paham?
-- **Aisha:** فِي خِتَامِ إِصْلَاحِ سُوءِ الْفَهْمِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ. -> Pada bagian akhir perbaikan salah paham, tujuannya adalah kejelasan dengan rasa hormat, bukan sekadar kebenaran bahasa.
+- **Fatimah:** إِذَا تَغَيَّرَ السِّيَاقُ فِي سُوءِ فَهْمٍ حَوْلَ نَبْرَةِ الْبَرِيدِ، كَيْفَ تُعَدِّلُ جَوَابَكَ؟ -> Jika konteks berubah dalam salah paham tentang nada email, bagaimana kamu menyesuaikan jawaban?
+- **Aisha:** أَبْدَأُ بِالِاعْتِرَافِ أَنَّ النَّبْرَةَ قَدْ تُقْرَأُ بِطُرُقٍ مُخْتَلِفَةٍ. -> saya mulai dengan mengakui bahwa nada bisa dibaca berbeda
+- **Fatimah:** مَا النَّبْرَةُ الْأَنْسَبُ لِمُعَالَجَةِ سُوءِ فَهْمٍ حَوْلَ نَبْرَةِ الْبَرِيدِ تَحْتَ الضَّغْطِ؟ -> Nada seperti apa yang paling tepat untuk menangani salah paham tentang nada email, bagaimana kamu menyesuaikan jawaban di bawah tekanan?
+- **Aisha:** ثُمَّ أُوَضِّحُ الْقَصْدَ بِجُمْلَةٍ أَهْدَأَ. -> lalu saya menjelaskan maksud dengan kalimat lebih tenang
+- **Fatimah:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي سُوءِ فَهْمٍ حَوْلَ نَبْرَةِ الْبَرِيدِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam salah paham tentang nada email?
+- **Aisha:** إِذَا شَعَرَ الطَّرَفُ الآخَرُ بِالْإِهَانَةِ. -> jika pihak lain merasa tersinggung
+- **Fatimah:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي سُوءِ فَهْمٍ حَوْلَ نَبْرَةِ الْبَرِيدِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang salah paham tentang nada email dengan jelas?
+- **Aisha:** أَعْتَذِرُ عَنِ الأَثَرِ وَأُعِيدُ صِيَاغَةَ الطَّلَبِ. -> saya meminta maaf atas dampaknya dan merumuskan ulang permintaan

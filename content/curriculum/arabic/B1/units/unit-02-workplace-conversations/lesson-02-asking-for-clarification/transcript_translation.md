@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Maryam:** هَلِ التَّعْلِيمَاتُ وَاضِحَةٌ؟ -> Apakah instruksinya jelas?
-- **Noura:** هَلْ تَقْصِدِينَ أَنَّ الْمَوْعِدَ تَغَيَّرَ؟ -> Apakah maksudmu jadwalnya berubah?
-- **Maryam:** هَلْ يُمْكِنُ أَنْ تُعْطِيَ مِثَالًا بَسِيطًا؟ -> Bisakah kamu memberi contoh sederhana?
-- **Noura:** مَا الْمَقْصُودُ بِهَذِهِ النُّقْطَةِ؟ أَسْأَلُ لِكَيْ أَتَأَكَّدَ فَقَطْ. -> Apa maksud poin ini? Saya bertanya hanya untuk memastikan.
-- **Maryam:** هَلْ يُمْكِنُ أَنْ تُعِيدِي الشَّرْحَ بِاخْتِصَارٍ؟ -> Bisakah kamu mengulang penjelasan dengan singkat?
-- **Noura:** الْآنَ فَهِمْتُ الْمَطْلُوبَ. -> Sekarang saya memahami yang diminta.
+- **Maryam:** أُرِيدُ أَنْ أَفْهَمَ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ. مَا أَوَّلُ تَفْصِيلٍ؟ -> Aku ingin memahami instruksi laporan baru. Apa detail pertamanya?
+- **Noura:** بَدَأَ الأَمْرُ عِنْدَمَا فَهِمْتُ الْجُزْءَ الأَوَّلَ مِنَ الْمَطْلُوبِ. -> Situasinya mulai ketika saya memahami bagian pertama dari tugasnya.
+- **Maryam:** مَا النُّقْطَةُ الَّتِي احْتَجْتَ إِلَى تَوْضِيحِهَا فِي تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟ -> Bagian mana dalam instruksi laporan baru yang perlu kamu jelaskan?
+- **Noura:** كَانَ التَّحَدِّي هَكَذَا: مَوْعِدُ التَّسْلِيمِ لَمْ يَكُنْ وَاضِحًا. -> Tantangannya begini: tenggat pengumpulan belum jelas.
+- **Maryam:** كَيْفَ تُنْهِي الْجَوَابَ عَنْ تَعْلِيمَاتِ التَّقْرِيرِ الْجَدِيدِ؟ -> Bagaimana kamu menutup jawaban tentang instruksi laporan baru?
+- **Noura:** تَصَرَّفْتُ بِهُدُوءٍ، وَسَأَسْأَلُ عَنْهُ قَبْلَ أَنْ أَبْدَأَ الْكِتَابَةَ. -> Saya bertindak dengan tenang, dan saya akan menanyakannya sebelum mulai menulis.

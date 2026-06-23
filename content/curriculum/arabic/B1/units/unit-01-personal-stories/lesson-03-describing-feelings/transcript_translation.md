@@ -1,8 +1,8 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ شَعَرْتَ فِي ذَلِكَ الْمَوْقِفِ؟ -> Bagaimana perasaanmu dalam situasi itu?
-- **Karim:** شَعَرْتُ بِالْقَلَقِ فِي الْبِدَايَةِ. -> Saya merasa khawatir di awal.
-- **Ahmad:** مَاذَا حَدَثَ بَعْدَ ذَلِكَ؟ -> Apa yang terjadi setelah itu?
-- **Karim:** لِأَنَّ الْمَوْقِفَ كَانَ جَدِيدًا عَلَيَّ. بَعْدَ قَلِيلٍ، شَعَرْتُ بِالرَّاحَةِ. -> Karena situasinya baru bagi saya. Setelah sebentar, saya merasa nyaman.
-- **Ahmad:** هَذَا التَّغْيِيرُ كَانَ مُهِمًّا فِي الْقِصَّةِ. -> Perubahan ini penting dalam cerita.
-- **Karim:** فِي النِّهَايَةِ، كُنْتُ سَعِيدًا بِالنَّتِيجَةِ. -> Pada akhirnya, saya senang dengan hasilnya.
+- **Ahmad:** فِي مُقَابَلَةِ الْمُدَرِّسِ الْجَدِيدِ، مَا الَّذِي كَانَ وَاضِحًا أَوَّلًا؟ -> Dalam pertemuan dengan guru baru, apa yang jelas di awal?
+- **Karim:** بَدَأَ الأَمْرُ عِنْدَمَا كُنْتُ قَلِقًا فِي الْبِدَايَةِ. -> Situasinya mulai ketika saya merasa cemas di awal.
+- **Ahmad:** أَيُّ تَحَدٍّ صَغِيرٍ ظَهَرَ أَثْنَاءَ مُقَابَلَةِ الْمُدَرِّسِ الْجَدِيدِ؟ -> Tantangan kecil apa yang muncul selama pertemuan dengan guru baru?
+- **Karim:** كَانَ التَّحَدِّي هَكَذَا: الْمُدَرِّسَ طَلَبَ مِنِّي أَنْ أُقَدِّمَ نَفْسِي. -> Tantangannya begini: guru meminta saya memperkenalkan diri.
+- **Ahmad:** مَا الْخُطْوَةُ الْعَمَلِيَّةُ بَعْدَ مُقَابَلَةِ الْمُدَرِّسِ الْجَدِيدِ؟ -> Apa langkah praktis setelah pertemuan dengan guru baru?
+- **Karim:** تَصَرَّفْتُ بِهُدُوءٍ، وَتَكَلَّمْتُ بِبُطْءٍ ثُمَّ شَعَرْتُ بِرَاحَةٍ. -> Saya bertindak dengan tenang, dan saya berbicara pelan lalu merasa lebih nyaman.

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ تَجْعَلُ جَوَابَكَ فِي تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ مُقْنِعًا وَمُتَوَازِنًا؟ -> Bagaimana kamu membuat jawaban untuk masukan yang bisa ditindaklanjuti meyakinkan dan seimbang?
-- **Tariq:** فِي تَدْرِيبِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ. -> Dalam latihan masukan yang bisa ditindaklanjuti, hal pertama adalah menetapkan arah dengan jelas.
-- **Rami:** مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟ -> Informasi apa yang membuat masukan yang bisa ditindaklanjuti lebih meyakinkan?
-- **Tariq:** عِنْدَ تَطْبِيقِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ. الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ. -> Saat menerapkan masukan yang bisa ditindaklanjuti, daripada memberi jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran. Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- **Rami:** إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟ -> Jika pihak lain memahami masukan yang bisa ditindaklanjuti terlalu sempit, bagaimana kamu memperluas gambarannya?
-- **Tariq:** عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ. -> Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
-- **Rami:** كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟ -> Bagaimana kamu menghubungkan masukan yang bisa ditindaklanjuti dengan pesan penutup yang jelas?
-- **Tariq:** فِي خِتَامِ تَقْدِيمِ تَغْذِيَةٍ رَاجِعَةٍ قَابِلَةٍ لِلْعَمَلِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ وَالْمَوْعِدِ. -> Pada bagian akhir masukan yang bisa ditindaklanjuti, saya akan menutup percakapan dengan memperjelas tanggung jawab dan tenggat.
+- **Rami:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي تَغْذِيَةٍ رَاجِعَةٍ عَنْ عَرْضٍ غَيْرِ وَاضِحٍ؟ -> Asumsi apa yang perlu kamu periksa dalam feedback tentang presentasi yang kurang jelas?
+- **Tariq:** أُسَمِّي السُّلُوكَ: الْمُقَدِّمَةُ طَوِيلَةٌ وَالرِّسَالَةُ تَأَخَّرَتْ. -> saya menyebut perilaku: pembuka terlalu panjang dan pesan terlambat
+- **Rami:** أَيُّ دَلِيلٍ فِي تَغْذِيَةٍ رَاجِعَةٍ عَنْ عَرْضٍ غَيْرِ وَاضِحٍ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam feedback tentang presentasi yang kurang jelas yang perlu didahulukan?
+- **Tariq:** ثُمَّ أُحَوِّلُ التَّعْلِيقَ إِلَى خُطْوَةٍ قَابِلَةٍ لِلْعَمَلِ. -> lalu saya mengubah feedback menjadi langkah yang bisa dilakukan
+- **Rami:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي تَغْذِيَةٍ رَاجِعَةٍ عَنْ عَرْضٍ غَيْرِ وَاضِحٍ؟ -> Kesalahpahaman apa yang mungkin muncul dalam feedback tentang presentasi yang kurang jelas?
+- **Tariq:** إِذَا شَعَرَ بِالإِحْبَاطِ. -> jika ia merasa kecewa
+- **Rami:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي تَغْذِيَةٍ رَاجِعَةٍ عَنْ عَرْضٍ غَيْرِ وَاضِحٍ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang feedback tentang presentasi yang kurang jelas dengan jelas?
+- **Tariq:** أُذَكِّرُهُ بِمَا نَجَحَ ثُمَّ أُحَدِّدُ تَغْيِيرًا وَاحِدًا. -> saya mengingatkannya pada yang berhasil lalu menentukan satu perubahan

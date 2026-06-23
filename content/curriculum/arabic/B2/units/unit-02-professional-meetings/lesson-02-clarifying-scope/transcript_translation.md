@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** قَبْلَ أَنْ نُكْمِلَ، هَلِ النِّطَاقُ وَاضِحٌ؟ -> Sebelum kita lanjut, apakah cakupannya jelas?
-- **Noura:** لَيْسَ تَمَامًا. أُرِيدُ أَنْ نُحَدِّدَ مَا يَدْخُلُ فِي الْمَرْحَلَةِ الأُولَى. -> Belum sepenuhnya. Saya ingin kita menentukan apa yang masuk fase pertama.
-- **Maryam:** مَا الَّذِي تَقْتَرِحِينَ إِدْخَالَهُ؟ -> Apa yang kamu usulkan untuk dimasukkan?
-- **Noura:** نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ إِلَى الْمَرْحَلَةِ الثَّانِيَةِ. -> Kita memasukkan halaman utama dan menunda laporan ke fase kedua.
-- **Maryam:** وَمَا السَّبَبُ؟ -> Apa alasannya?
-- **Noura:** هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ. -> Ini membuat tenggat tetap realistis dan mengurangi risiko.
-- **Maryam:** جَيِّدٌ. مَنْ سَيُؤَكِّدُ هَذَا مَعَ الْعَمِيلِ؟ -> Bagus. Siapa yang akan mengonfirmasi ini dengan klien?
-- **Noura:** سَأُؤَكِّدُهُ فِي رِسَالَةٍ قَصِيرَةٍ بَعْدَ الِاجْتِمَاعِ. -> Saya akan mengonfirmasinya dalam pesan singkat setelah rapat.
+- **Maryam:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى؟ -> Mengapa kamu mendukung arah ini dalam scope fase pertama?
+- **Noura:** نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ. -> kita masukkan halaman utama dan menunda laporan
+- **Maryam:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى؟ -> Alasan atau detail apa yang mendukung poin ini dalam scope fase pertama?
+- **Noura:** هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا. -> ini menjaga tenggat tetap realistis
+- **Maryam:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى؟ -> Kesulitan apa yang mungkin muncul dalam scope fase pertama?
+- **Noura:** قَدْ يَطْلُبُ الْعَمِيلُ كُلَّ شَيْءٍ مَرَّةً وَاحِدَةً. -> klien mungkin meminta semuanya sekaligus
+- **Maryam:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي نِطَاقِ الْمَرْحَلَةِ الأُولَى إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang scope fase pertama berubah menjadi tindakan jelas?
+- **Noura:** نُوَثِّقُ مَا دَاخِلَ النِّطَاقِ وَمَا خَارِجَهُ. -> kita mendokumentasikan apa yang masuk scope dan di luar scope

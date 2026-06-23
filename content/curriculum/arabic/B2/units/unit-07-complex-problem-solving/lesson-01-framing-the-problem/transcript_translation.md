@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Rami:** كَيْفَ نُحَدِّدُ هَذِهِ الْمُشْكِلَةَ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى تَحْدِيدُ إِطَارِ الْمُشْكِلَةِ. -> Bagaimana kita mendefinisikan masalah ini? Saya ingin fokus pada membingkai masalah.
-- **Tariq:** أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin membingkai masalah adalah bagian dari masalah yang lebih besar.
-- **Rami:** مَا السَّبَبُ الْأَوَّلُ الَّذِي يَجْعَلُ هَذِهِ النُّقْطَةَ مُهِمَّةً؟ -> Apa alasan pertama yang membuat membingkai masalah penting di sini?
-- **Tariq:** فِي هَذِهِ الْحَالَةِ، السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Dalam situasi ini, Penyebab utamanya mungkin lemahnya pengaturan. Setiap solusi punya manfaat dan efek samping.
-- **Rami:** مَا النُّقْطَةُ الَّتِي قَدْ يَعْتَرِضُ عَلَيْهَا الْفَرِيقُ؟ -> Bagian mana dari membingkai masalah yang mungkin dipertanyakan tim?
-- **Tariq:** لِذَلِكَ، أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ. -> Karena itu, saya merekomendasikan solusi bertahap untuk mengurangi risiko.
-- **Rami:** مَا الْخُطْوَةُ الْوَاقِعِيَّةُ بَعْدَ هَذَا النِّقَاشِ؟ -> Langkah realistis apa setelah membahas membingkai masalah?
-- **Tariq:** وَلِكَيْ يَكُونَ الْأَمْرُ وَاضِحًا، بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى. -> Agar semuanya jelas, Setelah percobaan, kita menilai hasilnya lagi.
+- **Rami:** مَا مَوْقِفُكَ مِنْ انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Apa posisimu tentang turunnya penggunaan aplikasi?
+- **Tariq:** لا أَرَاهُ مُشْكِلَةَ تَصْمِيمٍ فَقَطْ. -> saya tidak melihat ini hanya sebagai masalah desain
+- **Rami:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam turunnya penggunaan aplikasi?
+- **Tariq:** قَدْ يَكُونُ السَّبَبُ مَزِيجًا مِنَ السُّرْعَةِ وَالْمُحْتَوَى. -> penyebabnya mungkin gabungan kecepatan dan konten
+- **Rami:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ؟ -> Kesulitan apa yang mungkin muncul dalam turunnya penggunaan aplikasi?
+- **Tariq:** قَدْ يُرِيدُ الْفَرِيقُ تَغْيِيرَ الشَّكْلِ فَوْرًا. -> tim mungkin ingin langsung mengubah tampilan
+- **Rami:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي انْخِفَاضِ اسْتِخْدَامِ التَّطْبِيقِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang turunnya penggunaan aplikasi berubah menjadi tindakan jelas?
+- **Tariq:** نَبْدَأُ بِقِيَاسِ نُقْطَةِ خُرُوجِ الْمُسْتَخْدِمِينَ. -> kita mulai dengan mengukur titik pengguna keluar

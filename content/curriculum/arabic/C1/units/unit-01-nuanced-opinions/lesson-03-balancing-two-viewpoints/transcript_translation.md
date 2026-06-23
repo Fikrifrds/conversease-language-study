@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Ahmad:** كَيْفَ تَجْعَلُ جَوَابَكَ فِي الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ مُقْنِعًا وَمُتَوَازِنًا؟ -> Bagaimana kamu membuat jawaban untuk penyeimbangan dua sudut pandang meyakinkan dan seimbang?
-- **Karim:** فِي تَدْرِيبِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ. -> Dalam latihan penyeimbangan dua sudut pandang, secara prinsip, saya cenderung pada pendapat ini, tetapi saya punya satu catatan penting.
-- **Ahmad:** مَا الْمَعْلُومَةُ الَّتِي تَجْعَلُ الْجَوَابَ أَكْثَرَ إِقْنَاعًا؟ -> Informasi apa yang membuat penyeimbangan dua sudut pandang lebih meyakinkan?
-- **Karim:** عِنْدَ تَطْبِيقِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ. مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ. -> Saat menerapkan penyeimbangan dua sudut pandang, saya belum sepenuhnya yakin, tetapi bukti mengarah ke arah ini. Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- **Ahmad:** إِذَا فَهِمَ الطَّرَفُ الآخَرُ النُّقْطَةَ بِطَرِيقَةٍ ضَيِّقَةٍ، كَيْفَ تُوَسِّعُ الصُّورَةَ؟ -> Jika pihak lain memahami penyeimbangan dua sudut pandang terlalu sempit, bagaimana kamu memperluas gambarannya?
-- **Karim:** أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى. -> Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
-- **Ahmad:** كَيْفَ تَرْبِطُ هَذِهِ النُّقْطَةَ بِرِسَالَةٍ خِتَامِيَّةٍ وَاضِحَةٍ؟ -> Bagaimana kamu menghubungkan penyeimbangan dua sudut pandang dengan pesan penutup yang jelas?
-- **Karim:** فِي خِتَامِ الْمُوَازَنَةِ بَيْنَ وِجْهَتَيْ نَظَرٍ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً وَمُرُونَةً. -> Pada bagian akhir penyeimbangan dua sudut pandang, karena itu, saya lebih memilih formulasi yang lebih tepat dan fleksibel.
+- **Ahmad:** مَا الِافْتِرَاضُ الَّذِي يَجِبُ أَنْ تَفْحَصَهُ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Asumsi apa yang perlu kamu periksa dalam pilihan antara kecepatan dan kualitas?
+- **Karim:** السُّرْعَةُ مُهِمَّةٌ، وَلَكِنَّ الْجَوْدَةَ تَحْمِي الثِّقَةَ. -> kecepatan penting, tetapi kualitas menjaga kepercayaan
+- **Ahmad:** أَيُّ دَلِيلٍ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ يَحْتَاجُ إِلَى التَّقْدِيمِ أَوَّلًا؟ -> Bukti mana dalam pilihan antara kecepatan dan kualitas yang perlu didahulukan?
+- **Karim:** الْقَرَارُ الأَفْضَلُ يَعْتَمِدُ عَلَى مَخَاطِرِ الْجُزْءِ الْمُرْسَلِ. -> keputusan terbaik bergantung pada risiko bagian yang dikirim
+- **Ahmad:** مَا سُوءُ الْفَهْمِ الَّذِي قَدْ يَظْهَرُ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ؟ -> Kesalahpahaman apa yang mungkin muncul dalam pilihan antara kecepatan dan kualitas?
+- **Karim:** إِذَا دَافَعَ كُلُّ طَرَفٍ عَنْ جَانِبِهِ فَقَطْ. -> jika tiap pihak hanya membela sisinya
+- **Ahmad:** مَا الْجُمْلَةُ الَّتِي تُنْهِي النِّقَاشَ فِي الِاخْتِيَارِ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ بِوُضُوحٍ؟ -> Kalimat apa yang menutup diskusi tentang pilihan antara kecepatan dan kualitas dengan jelas?
+- **Karim:** أَقْتَرِحُ إِطَارًا يُحَدِّدُ مَتَى نُسْرِعُ وَمَتَى نَتَوَقَّفُ. -> saya mengusulkan kerangka kapan kita cepat dan kapan berhenti

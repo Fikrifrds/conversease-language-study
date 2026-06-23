@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Fatimah:** مَا الَّذِي يَحْتَاجُ إِلَيْهِ الْعَمِيلُ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ. -> Apa yang dibutuhkan klien? Saya ingin fokus pada mengelola percakapan dengan klien.
-- **Aisha:** أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ. -> Saya ingin memahami kebutuhan klien tentang mengelola percakapan dengan klien.
-- **Fatimah:** كَيْفَ تَجْمَعِينَ مَهَارَاتِ الْوَحْدَةِ فِي هَذَا السِّيَاقِ؟ -> Bagaimana kamu menggabungkan keterampilan unit ini untuk mengelola percakapan dengan klien dalam konteks ini?
-- **Aisha:** لِجَمْعِ الصُّورَةِ كَامِلَةً، لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Untuk menyatukan gambaran utuh, Kita punya dua opsi, dan setiap opsi memiliki manfaat. Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- **Fatimah:** إِذَا تَغَيَّرَ السِّيَاقُ، كَيْفَ تُعَدِّلِينَ طَرِيقَتَكِ؟ -> Jika konteks berubah, bagaimana kamu menyesuaikan cara dalam mengelola percakapan dengan klien?
-- **Aisha:** عَلَى مُسْتَوَى التَّنْفِيذِ، الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Pada tahap pelaksanaan, Langkah berikutnya adalah meninjau kesepakatan.
-- **Fatimah:** مَا الْمُخْرَجُ الْمِهَنِيُّ الَّذِي تُرِيدِينَ تَحْقِيقَهُ؟ -> Hasil profesional apa yang ingin kamu capai dari mengelola percakapan dengan klien?
-- **Aisha:** وَكَخُطْوَةٍ أَخِيرَةٍ، سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Sebagai langkah terakhir, saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- **Fatimah:** كَيْفَ سَتُحَوِّلُ حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ إِلَى قَرَارٍ؟ -> Bagaimana kamu mengubah percakapan lengkap dengan klien yang ragu menjadi keputusan?
+- **Aisha:** أَبْدَأُ بِسُؤَالٍ عَنْ الأَوْلَوِيَّةِ الْحَقِيقِيَّةِ. -> saya mulai dengan pertanyaan tentang prioritas nyata
+- **Fatimah:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ -> Alasan atau detail apa yang mendukung poin ini dalam percakapan lengkap dengan klien yang ragu?
+- **Aisha:** ثُمَّ أُقَدِّمُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ. -> lalu saya memberi dua opsi dan mendengar kekhawatirannya
+- **Fatimah:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ؟ -> Kesulitan apa yang mungkin muncul dalam percakapan lengkap dengan klien yang ragu?
+- **Aisha:** قَدْ يُغَيِّرُ رَأْيَهُ عِنْدَ سَمَاعِ التَّكْلِفَةِ. -> dia mungkin berubah pikiran saat mendengar biaya
+- **Fatimah:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي حِوَارٍ كَامِلٍ مَعَ عَمِيلٍ مُتَرَدِّدٍ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang percakapan lengkap dengan klien yang ragu berubah menjadi tindakan jelas?
+- **Aisha:** أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لا تُلْزِمُهُ كَثِيرًا. -> saya menutup dengan langkah kecil yang tidak terlalu mengikatnya

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Yusuf:** كَيْفَ تُلَخِّصُ هَذِهِ الْمَعْلُومَاتِ؟ أُرِيدُ أَنْ أُرَكِّزَ عَلَى مُنَاقَشَةُ الْمَصَادِرِ الْمَوْثُوقَةِ. -> Bagaimana kamu merangkum informasi ini? Saya ingin fokus pada membahas sumber tepercaya.
-- **Hasan:** أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ. -> Saya memahami dari artikel bahwa topik membahas sumber tepercaya penting.
-- **Yusuf:** أَيُّ جُزْءٍ يَحْتَاجُ إِلَى تَوْضِيحٍ أَكْثَرَ؟ -> Bagian mana dari membahas sumber tepercaya yang perlu diperjelas?
-- **Hasan:** لِتَجَنُّبِ سُوءِ الْفَهْمِ، يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Untuk menghindari salah paham, Kita harus memastikan bahwa sumbernya tepercaya. Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- **Yusuf:** مَا الْحَدُّ الَّذِي لَا نُرِيدُ أَنْ نَتَجَاوَزَهُ؟ -> Batas apa yang tidak ingin kita lewati dalam membahas sumber tepercaya?
-- **Hasan:** بَعْدَ هَذَا التَّوْضِيحِ، بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا. -> Setelah penjelasan ini, Setelah informasi baru, pendapat saya sedikit berubah.
-- **Yusuf:** كَيْفَ نُثَبِّتُ الِاتِّفَاقَ بَعْدَ ذَلِكَ؟ -> Bagaimana kita mengunci kesepakatan tentang membahas sumber tepercaya?
-- **Hasan:** سَأُغْلِقُ النِّقَاشَ بِشَيْءٍ عَمَلِيٍّ: لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ. -> Saya akan menutup diskusi dengan hal praktis: Karena itu, saya lebih memilih kita menyeimbangkan berbagai sumber.
+- **Yusuf:** لِمَاذَا تُؤَيِّدُ هَذَا الِاتِّجَاهَ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ؟ -> Mengapa kamu mendukung arah ini dalam sumber berita tentang pasar?
+- **Hasan:** أَفْحَصُ مَنْ كَتَبَ الْخَبَرَ وَمَتَى نُشِرَ. -> saya memeriksa siapa penulis berita dan kapan diterbitkan
+- **Yusuf:** مَا السَّبَبُ أَوِ التَّفْصِيلُ الَّذِي يَدْعَمُ هَذِهِ النُّقْطَةَ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ؟ -> Alasan atau detail apa yang mendukung poin ini dalam sumber berita tentang pasar?
+- **Hasan:** الْمَصْدَرُ الْقَدِيمُ قَدْ لا يَنْفَعُ لِقَرَارٍ سَرِيعٍ. -> sumber lama mungkin tidak berguna untuk keputusan cepat
+- **Yusuf:** مَا الصُّعُوبَةُ الَّتِي قَدْ تَظْهَرُ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ؟ -> Kesulitan apa yang mungkin muncul dalam sumber berita tentang pasar?
+- **Hasan:** قَدْ يَنْشُرُ الْمَوْقِعُ رَأْيًا لا بَيَانَاتٍ. -> situs bisa menerbitkan opini, bukan data
+- **Yusuf:** مَا الْخُطْوَةُ التَّالِيَةُ حَتَّى يَتَحَوَّلَ النِّقَاشُ فِي مَصْدَرِ خَبَرٍ عَنْ السُّوقِ إِلَى عَمَلٍ وَاضِحٍ؟ -> Apa langkah berikutnya agar diskusi tentang sumber berita tentang pasar berubah menjadi tindakan jelas?
+- **Hasan:** أُقَارِنُهُ بِمَصْدَرَيْنِ آخَرَيْنِ قَبْلَ أَنْ أَسْتَخْدِمَهُ. -> saya membandingkannya dengan dua sumber lain sebelum memakainya
