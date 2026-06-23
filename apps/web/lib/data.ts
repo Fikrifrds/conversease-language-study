@@ -5807,6 +5807,7 @@ export const coachTurnsByLessonSlug = {
   "arabic-formal-greetings": [
     { coach: "مرحبًا.", hint: "Jawab sapaan dengan أهلًا وسهلًا.", sampleAnswer: "أهلًا وسهلًا.", focus: "Menjawab sapaan", expectedKeywords: ["أهلًا", "وسهلًا"], indonesianExplanation: "Untuk membalas sapaan formal, gunakan أهلًا وسهلًا." },
     { coach: "كيف حالك اليوم؟", hint: "Jawab kabar dengan أنا بخير، شكرًا.", sampleAnswer: "أنا بخير، شكرًا.", focus: "Menjawab pertanyaan kabar", expectedKeywords: ["أنا", "بخير", "شكرًا"], indonesianExplanation: "Jawaban pendek yang sopan adalah أنا بخير، شكرًا." },
+    { coach: "والآن اسألني عن حالي.", hint: "Tanyakan kabar balik dengan كيف حالك؟", sampleAnswer: "كيف حالك؟", focus: "Bertanya kabar balik", expectedKeywords: ["كيف", "حالك"], indonesianExplanation: "Setelah menjawab sapaan, tanyakan kabar balik agar percakapan terasa utuh." },
   ],
   "arabic-fusha-introduction-mission": [
     { coach: "مرحبًا. ما اسمُكَ؟", hint: "Balas sapaan dan sebutkan nama.", sampleAnswer: "مرحبًا. اسمي أحمد.", focus: "Sapaan dan nama", expectedKeywords: ["مرحبًا", "اسمي"], indonesianExplanation: "Gabungkan sapaan umum dengan اسمي untuk menyebut nama." },
@@ -8366,7 +8367,7 @@ export const courses = [
       languageLabel: "English",
       level: "B2",
       title: "Professional Discussions",
-      outcome: "",
+      outcome: "Learners can participate in structured professional and social discussions: state a clear position, support it with reasons and examples, respond to counterpoints, contribute to meetings, negotiate compromise, present ideas, evaluate information, communicate with clients, and recommend practical next steps.",
       accessTier: "",
       units: [
         {
@@ -8682,7 +8683,7 @@ export const courses = [
       languageLabel: "English",
       level: "C1",
       title: "Advanced Fluency",
-      outcome: "",
+      outcome: "Learners can lead complex professional and social conversations with nuance, precision, strategic framing, persuasive structure, cross-cultural tact, and accurate response to indirect or dense speech.",
       accessTier: "",
       units: [
         {

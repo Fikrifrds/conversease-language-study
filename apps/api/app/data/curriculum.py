@@ -77,6 +77,24 @@ REQUIRED_LESSON_FILES = (
     "visuals.yaml",
 )
 
+REQUIRED_COMPLETION_RULES = (
+    "listening_completed",
+    "quiz_required",
+    "speaking_attempt_required",
+    "minimum_score",
+)
+
+REQUIRED_ROLEPLAY_RUBRIC_KEYS = (
+    "speaking",
+    "relevance",
+    "grammar",
+)
+
+REQUIRED_LEVEL_SPEC_SECTIONS = (
+    "## Level Outcome",
+    "## Passing Threshold",
+)
+
 FINAL_EVALUATION_REQUIRED_FIELDS = (
     "level_code",
     "title",
@@ -429,6 +447,17 @@ def validate_curriculum_content() -> list[str]:
         language = str(course.get("language") or "english")
         level_code = course["level_code"]
         is_production_level = language == "english" and level_code == LEVEL_CODE
+        level_spec_path = level_root(language=language, level_code=level_code) / "LEVEL_SPEC.md"
+        if not level_spec_path.exists():
+            issues.append(f"Missing level spec for {language} level: {level_code}")
+        else:
+            level_spec_content = level_spec_path.read_text(encoding="utf-8")
+            for section_heading in REQUIRED_LEVEL_SPEC_SECTIONS:
+                if section_heading not in level_spec_content:
+                    issues.append(
+                        f"Level spec {language} {level_code} missing section: {section_heading}"
+                    )
+
         evaluation = load_final_evaluation(level_code, language=language)
         if evaluation is None:
             issues.append(f"Missing final evaluation file for {language} level: {level_code}")
@@ -451,8 +480,27 @@ def validate_curriculum_content() -> list[str]:
                 if not lesson.get("sections"):
                     issues.append(f"Lesson has no required sections: {slug}")
 
-                if not lesson.get("roleplay", {}).get("opening_line"):
+                completion_rules = lesson.get("completion_rules", {})
+                for rule_key in REQUIRED_COMPLETION_RULES:
+                    if rule_key not in completion_rules:
+                        issues.append(f"Lesson missing completion rule {rule_key}: {slug}")
+
+                roleplay = lesson.get("roleplay", {})
+                if not roleplay.get("opening_line"):
                     issues.append(f"Lesson has no roleplay opening line: {slug}")
+                if len(roleplay.get("turns", [])) < 3:
+                    issues.append(f"Lesson roleplay has fewer than 3 guided turns: {slug}")
+                if len(roleplay.get("target_phrases", [])) < 3:
+                    issues.append(f"Lesson roleplay has fewer than 3 target phrases: {slug}")
+
+                rubric = roleplay.get("rubric", {})
+                for rubric_key in REQUIRED_ROLEPLAY_RUBRIC_KEYS:
+                    if rubric_key not in rubric:
+                        issues.append(f"Lesson roleplay missing {rubric_key} rubric: {slug}")
+                    elif "minimum_score" not in rubric.get(rubric_key, {}):
+                        issues.append(
+                            f"Lesson roleplay rubric {rubric_key} missing minimum_score: {slug}"
+                        )
 
                 lesson_dir = Path(lesson["content_files"]["lesson"]).parent
                 for filename in REQUIRED_LESSON_FILES:

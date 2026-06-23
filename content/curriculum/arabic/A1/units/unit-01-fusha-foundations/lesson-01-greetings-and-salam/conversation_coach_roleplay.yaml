@@ -25,9 +25,18 @@ turns:
       - بخير
       - شكرًا
     indonesian_explanation: Jawaban pendek yang sopan adalah أنا بخير، شكرًا.
+  - coach: والآن اسألني عن حالي.
+    hint: Tanyakan kabar balik dengan كيف حالك؟
+    sample_answer: كيف حالك؟
+    focus: Bertanya kabar balik
+    expected_keywords:
+      - كيف
+      - حالك
+    indonesian_explanation: Setelah menjawab sapaan, tanyakan kabar balik agar percakapan terasa utuh.
 target_phrases:
   - مرحبًا
   - أهلًا وسهلًا
+  - كيف حالك؟
   - أنا بخير، شكرًا
 rubric:
   speaking:
