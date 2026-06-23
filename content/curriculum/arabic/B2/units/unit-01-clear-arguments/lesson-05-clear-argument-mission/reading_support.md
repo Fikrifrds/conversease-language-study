@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik membangun argumen jelas penting dalam diskusi.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Contohnya, tim membutuhkan keputusan yang cepat.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- مَوْقِفِي أَنَّ الْمُورِّدَ الثَّانِيَ أَنْسَبُ. -> Posisiku, vendor kedua lebih cocok.
+- السَّبَبُ الْأَوَّلُ هُوَ سُرْعَةُ الدَّعْمِ. -> Alasan pertama adalah kecepatan dukungan.
+- مِثَالُ ذَلِكَ أَنَّهُ رَدَّ عَلَيْنَا فِي سَاعَةٍ. -> Contohnya, dia menjawab kita dalam sejam.
+- أَفْهَمُ أَنَّهُ أَغْلَى، لَكِنَّ الْخِدْمَةَ تُبَرِّرُ ذَلِكَ. -> Aku paham dia lebih mahal, tapi layanannya sepadan.
+- لِذَلِكَ أُوصِي بِهِ مَعَ عَقْدٍ تَجْرِيبِيٍّ. -> Karena itu aku rekomendasikan dia dengan kontrak percobaan.

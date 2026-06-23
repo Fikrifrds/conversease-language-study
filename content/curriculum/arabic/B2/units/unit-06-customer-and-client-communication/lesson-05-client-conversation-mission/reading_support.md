@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أُرِيدُ أَنْ أَفْهَمَ اِحْتِيَاجَ الْعَمِيلِ حَوْلَ إِدَارَةُ حِوَارٍ مَعَ عَمِيلٍ. -> Saya ingin memahami kebutuhan klien tentang mengelola percakapan dengan klien.
-- لَدَيْنَا خِيَارَانِ، وَكُلُّ خِيَارٍ لَهُ فَائِدَةٌ. -> Kita punya dua opsi, dan setiap opsi memiliki manfaat.
-- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Saya memahami kekhawatiran ini, dan saya akan menjelaskan detailnya.
-- الْخُطْوَةُ التَّالِيَةُ هِيَ مُرَاجَعَةُ الِاتِّفَاقِ. -> Langkah berikutnya adalah meninjau kesepakatan.
-- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بَعْدَ هَذِهِ الْمُكَالَمَةِ. -> Saya akan mengirim konfirmasi tertulis setelah panggilan ini.
+- أَبْدَأُ بِسُؤَالٍ عَنْ أَوْلَوِيَّةِ الْعَمِيلِ الْحَقِيقِيَّةِ. -> Aku mulai dengan pertanyaan soal prioritas nyata klien.
+- ثُمَّ أَعْرِضُ خِيَارَيْنِ وَأَسْمَعُ قَلَقَهُ. -> Lalu aku tawarkan dua opsi dan mendengar kekhawatirannya.
+- أَفْهَمُ هَذَا الِاهْتِمَامَ، وَسَأُوَضِّحُ التَّفَاصِيلَ. -> Aku paham kekhawatiran ini, dan akan menjelaskan detailnya.
+- أَخْتِمُ بِخُطْوَةٍ صَغِيرَةٍ لَا تُلْزِمُهُ كَثِيرًا. -> Aku tutup dengan langkah kecil yang tidak terlalu mengikatnya.
+- سَأُرْسِلُ تَأْكِيدًا مَكْتُوبًا بِالْخُطْوَةِ الْأُولَى وَالْمَوْعِدِ. -> Aku akan kirim konfirmasi tertulis berisi langkah pertama dan tenggat.

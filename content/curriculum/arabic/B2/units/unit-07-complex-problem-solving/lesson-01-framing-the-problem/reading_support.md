@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin membingkai masalah adalah bagian dari masalah yang lebih besar.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. -> Penyebab utamanya mungkin lemahnya pengaturan.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Setiap solusi punya manfaat dan efek samping.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ. -> Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى. -> Setelah percobaan, kita menilai hasilnya lagi.
+- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Menurutku poin ini bagian dari masalah yang lebih besar.
+- لَا نَبْدَأُ بِالْحَلِّ قَبْلَ تَعْرِيفِ الْمُشْكِلَةِ. -> Kita tidak mulai dari solusi sebelum mendefinisikan masalah.
+- نُحَدِّدُ السُّؤَالَ الصَّحِيحَ أَوَّلًا. -> Kita tentukan pertanyaan yang tepat dulu.
+- الْأَعْرَاضُ كَثِيرَةٌ، لَكِنَّ السَّبَبَ وَاحِدٌ غَالِبًا. -> Gejalanya banyak, tapi penyebabnya sering satu.
+- لِذَلِكَ نَبْدَأُ بِقِيَاسِ النُّقْطَةِ الْأَهَمِّ. -> Karena itu kita mulai dengan mengukur titik terpenting.

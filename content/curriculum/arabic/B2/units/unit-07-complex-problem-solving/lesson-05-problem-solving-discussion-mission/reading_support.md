@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin mendiskusikan solusi masalah kompleks adalah bagian dari masalah yang lebih besar.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. -> Penyebab utamanya mungkin lemahnya pengaturan.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Setiap solusi punya manfaat dan efek samping.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ. -> Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى. -> Setelah percobaan, kita menilai hasilnya lagi.
+- أَبْدَأُ بِتَعْرِيفِ الْمُشْكِلَةِ لَا بِالْحَلِّ. -> Aku mulai dengan mendefinisikan masalah, bukan solusi.
+- ثُمَّ أَسْأَلُ عَنِ السَّبَبِ وَالْأَثَرِ وَالْمُقَايَضَةِ. -> Lalu aku tanya penyebab, dampak, dan tradeoff.
+- أُذَكِّرُ الْفَرِيقَ أَلَّا يَقْفِزَ إِلَى تَوْصِيَةٍ سَرِيعَةٍ. -> Aku ingatkan tim agar tidak lompat ke rekomendasi cepat.
+- أُرَتِّبُ النِّقَاشَ حَوْلَ مِعْيَارٍ وَاحِدٍ وَاضِحٍ. -> Aku susun diskusi di seputar satu kriteria yang jelas.
+- وَنَخْرُجُ بِخُطْوَةٍ وَاحِدَةٍ قَابِلَةٍ لِلتَّجْرِبَةِ. -> Dan kita keluar dengan satu langkah yang bisa diuji.

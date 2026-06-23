@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ. -> Saya memahami dari artikel bahwa topik merangkum artikel penting.
-- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. -> Kita harus memastikan bahwa sumbernya tepercaya.
-- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Sudut pandang ini membutuhkan bukti yang lebih kuat.
-- بَعْدَ الْمَعْلُومَاتِ الْجَدِيدَةِ، تَغَيَّرَ رَأْيِي قَلِيلًا. -> Setelah informasi baru, pendapat saya sedikit berubah.
-- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ. -> Karena itu, saya lebih memilih kita menyeimbangkan berbagai sumber.
+- أَفْهَمُ مِنَ الْمَقَالِ أَنَّ النَّاسَ يُفَضِّلُونَ الْخِدْمَةَ الْأَسْرَعَ. -> Aku paham dari artikel bahwa orang lebih suka layanan yang lebih cepat.
+- يَجِبُ أَنْ نَتَأَكَّدَ مِنْ أَنَّ الْمَصْدَرَ مَوْثُوقٌ. -> Kita harus memastikan sumbernya tepercaya.
+- وِجْهَةُ النَّظَرِ هَذِهِ تَحْتَاجُ إِلَى دَلِيلٍ أَقْوَى. -> Sudut pandang ini butuh bukti yang lebih kuat.
+- حَجْمُ الْعَيِّنَةِ صَغِيرٌ، فَلَا نُعَمِّمُ بَعْدُ. -> Ukuran sampelnya kecil, jadi belum bisa menggeneralisasi.
+- لِذَلِكَ أُفَضِّلُ أَنْ نُوَازِنَ بَيْنَ الْمَصَادِرِ. -> Karena itu aku lebih memilih menyeimbangkan berbagai sumber.

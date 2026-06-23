@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik menggunakan contoh penting dalam diskusi.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Contohnya, tim membutuhkan keputusan yang cepat.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- لِأُوَضِّحَ فِكْرَتِي، سَأُعْطِي مِثَالًا مِنْ تَجْرِبَتِنَا. -> Untuk memperjelas, aku beri contoh dari pengalaman kita.
+- مِثَالٌ وَاحِدٌ مَلْمُوسٌ يُسَاوِي شَرْحًا طَوِيلًا. -> Satu contoh konkret setara penjelasan panjang.
+- حَدَثَ هَذَا فِعْلًا مَعَ عَمِيلٍ الشَّهْرَ الْمَاضِيَ. -> Ini benar-benar terjadi dengan klien bulan lalu.
+- هَذَا الْمِثَالُ يُظْهِرُ الْمُشْكِلَةَ بِوُضُوحٍ. -> Contoh ini menunjukkan masalahnya dengan jelas.
+- وَلِنُبْقِيَ الْمِثَالَ عَامًّا، نُخْفِي اسْمَ الْعَمِيلِ. -> Dan agar tetap netral, kita sembunyikan nama klien.

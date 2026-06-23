@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- أَرَى أَنَّ هَذِهِ النُّقْطَةَ جُزْءٌ مِنْ مُشْكِلَةٍ أَكْبَرَ. -> Saya melihat bahwa poin merekomendasikan solusi adalah bagian dari masalah yang lebih besar.
-- السَّبَبُ الْأَسَاسِيُّ قَدْ يَكُونُ ضَعْفَ التَّنْظِيمِ. -> Penyebab utamanya mungkin lemahnya pengaturan.
-- لِكُلِّ حَلٍّ فَائِدَةٌ وَتَأْثِيرٌ جَانِبِيٌّ. -> Setiap solusi punya manfaat dan efek samping.
-- أُوصِي بِحَلٍّ تَدْرِيجِيٍّ لِتَقْلِيلِ الْمَخَاطِرِ. -> Saya merekomendasikan solusi bertahap untuk mengurangi risiko.
-- بَعْدَ التَّجْرِبَةِ، نُقَيِّمُ النَّتِيجَةَ مَرَّةً أُخْرَى. -> Setelah percobaan, kita menilai hasilnya lagi.
+- أُوصِي بِقَائِمَةِ فَحْصٍ قَصِيرَةٍ قَبْلَ التَّسْلِيمِ. -> Aku rekomendasikan checklist singkat sebelum delivery.
+- هَذَا الْحَلُّ بَسِيطٌ وَقَابِلٌ لِلتَّجْرِبَةِ. -> Solusi ini sederhana dan bisa diuji.
+- نُجَرِّبُهُ أُسْبُوعًا ثُمَّ نَقِيسُ عَدَدَ الْأَخْطَاءِ. -> Kita coba sepekan lalu ukur jumlah error.
+- إِنْ لَمْ يَنْفَعْ، نُعَدِّلُهُ بِسُهُولَةٍ. -> Kalau tidak berguna, kita ubah dengan mudah.
+- لِذَلِكَ أَقْتَرِحُ الْبَدْءَ بِهِ غَدًا. -> Karena itu aku usul mulai besok.

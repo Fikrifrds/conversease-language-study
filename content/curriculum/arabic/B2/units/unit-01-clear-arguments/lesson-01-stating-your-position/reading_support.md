@@ -2,8 +2,8 @@
 
 Baca dialog sebagai rangkaian argumen. Cari posisi utama, alasan, contoh, respons terhadap keberatan, lalu rekomendasi akhir.
 
-- مَوْقِفِي هُوَ أَنَّ هَذَا الْمَوْضُوعَ مُهِمٌّ فِي النِّقَاشِ. -> Posisi saya adalah bahwa topik menentukan posisi penting dalam diskusi.
-- أَدْعَمُ هَذَا الرَّأْيَ بِسَبَبَيْنِ وَاضِحَيْنِ. -> Saya mendukung pendapat ini dengan dua alasan yang jelas.
-- مِثَالُ ذَلِكَ أَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ سَرِيعٍ. -> Contohnya, tim membutuhkan keputusan yang cepat.
-- أَفْهَمُ هَذِهِ النُّقْطَةَ الْمُعَارِضَةَ، وَلَكِنَّ الْفَائِدَةَ أَكْبَرُ. -> Saya memahami poin lawannya, tetapi manfaatnya lebih besar.
-- لِذَلِكَ أُفَضِّلُ أَنْ نَتَّفِقَ عَلَى هَذَا الْمَسَارِ. -> Karena itu, saya lebih memilih kita sepakat pada arah ini.
+- مَوْقِفِي وَاضِحٌ: أَنَا مَعَ هَذَا الِاتِّجَاهِ. -> Posisiku jelas: aku mendukung arah ini.
+- أُؤَيِّدُ الْفِكْرَةَ مِنْ حَيْثُ الْمَبْدَأُ. -> Aku mendukung idenya secara prinsip.
+- لَا أُوَافِقُ تَمَامًا، وَلِي رَأْيٌ مُخْتَلِفٌ. -> Aku tidak sepenuhnya setuju, dan punya pandangan berbeda.
+- دَعْنِي أُوَضِّحُ سَبَبَ مَوْقِفِي بِاخْتِصَارٍ. -> Coba aku jelaskan alasan posisiku singkat.
+- بِاخْتِصَارٍ، أَنَا أُفَضِّلُ هَذَا الْخِيَارَ. -> Singkatnya, aku lebih memilih opsi ini.
