@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_debate_analysis_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-learner_goal: Latih percakapan Arab C1 untuk running a balanced analytical debate dengan nuance, struktur,
-  presisi, dan respons profesional.
+opening_line: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+learner_goal: Latih percakapan Arab C1 untuk debat analitis yang seimbang dengan nuansa, struktur, presisi,
+  dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ
+- coach: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ
     أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.'
-  sample_answer: فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
+  sample_answer: فِي تَدْرِيبِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
     الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  focus: 'Mengidentifikasi asumsi. Fokus lesson: running a balanced analytical debate.'
+  focus: 'Mengidentifikasi asumsi. Fokus lesson: debat analitis yang seimbang.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - إِدَارَةِ
   - نِقَاشٍ
   - تَحْلِيلِيٍّ
-  indonesian_explanation: Dalam skill running a balanced analytical debate, Saya pikir asumsi dasarnya
-    di sini belum disebutkan dengan jelas.
+  indonesian_explanation: Dalam latihan debat analitis yang seimbang, saya pikir asumsi dasarnya di sini
+    belum disebutkan dengan jelas.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ
     نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ،
@@ -36,13 +36,13 @@ turns:
   - إِدَارَةِ
   - نِقَاشٍ
   - تَحْلِيلِيٍّ
-  indonesian_explanation: Saat menerapkan running a balanced analytical debate, Kita bisa menantang argumen
-    ini dari sisi bukti.
+  indonesian_explanation: Saat menerapkan debat analitis yang seimbang, kita bisa menantang argumen ini
+    dari sisi bukti.
 - coach: 'استخدم الفكرة: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.'
   hint: 'Jawab dengan struktur C1 memakai: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي
     أَكْثَرَ مِنْ سِيَاقٍ.'
   sample_answer: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-  focus: Menyajikan evidence. Pakai sebagai penghubung dalam running a balanced analytical debate.
+  focus: Menyajikan evidence. Pakai sebagai penghubung dalam debat analitis yang seimbang.
   expected_keywords:
   - الدَّلِيلُ
   - الْأَقْوَى
@@ -50,30 +50,26 @@ turns:
   - أَنَّ
   - النَّتِيجَةَ
   indonesian_explanation: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى
-    النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ،
-    سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
-    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
-  focus: Merespons under pressure. Gunakan untuk repair dalam running a balanced analytical debate.
+- coach: 'استخدم الفكرة: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
+  hint: 'Jawab dengan struktur C1 memakai: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
+    وَلَا أُطِيلُ.'
+  sample_answer: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  focus: Merespons under pressure. Gunakan untuk repair dalam debat analitis yang seimbang.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan fokus pada
-    poin pusat dan tidak berpanjang-panjang.
+  - تَحْتَ
+  - الضَّغْطِ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  - النُّقْطَةِ
+  indonesian_explanation: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
 target_phrases:
-- فِي مَهَارَةِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+- فِي تَدْرِيبِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
   هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
 - عِنْدَ تَطْبِيقِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ
   مِنْ جِهَةِ الْأَدِلَّةِ.
 - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
-  وَلَا أُطِيلُ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
+- تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- فِي خِتَامِ إِدَارَةِ نِقَاشٍ تَحْلِيلِيٍّ مُتَوَازِنٍ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
   الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
 rubric:
   speaking:

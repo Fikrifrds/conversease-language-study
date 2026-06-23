@@ -1,19 +1,23 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ
+    بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَس..."'
 - word: دَلِيلٌ
   meaning_id: bukti/petunjuk
-  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ
+  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ
     بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَس..."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَس..."'
 - word: اِفْتِرَاضٌ
   meaning_id: asumsi
-  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
+  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَس..."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَس..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: bukti-bukti
   usage_note: 'Dipakai untuk arti "bukti-bukti". Contoh: "عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ
     بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ..."'
-- word: نَتِيجَةٌ
-  meaning_id: hasil
-  usage_note: 'Dipakai untuk arti "hasil". Contoh: "الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ
-    فِي أَكْثَرَ مِنْ سِيَاقٍ."'

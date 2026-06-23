@@ -1,27 +1,27 @@
 scenario_key: arabic_c1_presenting_evidence
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟
-learner_goal: Latih percakapan Arab C1 untuk presenting relevant evidence dengan nuance, struktur, presisi,
+opening_line: كَيْفَ تَجْعَلُ جَوَابَكَ فِي تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ مُقْنِعًا وَمُتَوَازِنًا؟
+learner_goal: Latih percakapan Arab C1 untuk penyajian bukti yang relevan dengan nuansa, struktur, presisi,
   dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
+- coach: كَيْفَ تَجْعَلُ جَوَابَكَ فِي تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ مُقْنِعًا وَمُتَوَازِنًا؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.'
-  sample_answer: فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
+  sample_answer: فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
     الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  focus: 'Mengidentifikasi asumsi. Fokus lesson: presenting relevant evidence.'
+  focus: 'Mengidentifikasi asumsi. Fokus lesson: penyajian bukti yang relevan.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - تَقْدِيمِ
   - دَلِيلٍ
   - مُرْتَبِطٍ
-  indonesian_explanation: Dalam skill presenting relevant evidence, Saya pikir asumsi dasarnya di sini
+  indonesian_explanation: Dalam latihan penyajian bukti yang relevan, saya pikir asumsi dasarnya di sini
     belum disebutkan dengan jelas.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ
     نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
@@ -36,13 +36,13 @@ turns:
   - تَقْدِيمِ
   - دَلِيلٍ
   - مُرْتَبِطٍ
-  indonesian_explanation: Saat menerapkan presenting relevant evidence, Kita bisa menantang argumen ini
+  indonesian_explanation: Saat menerapkan penyajian bukti yang relevan, kita bisa menantang argumen ini
     dari sisi bukti.
 - coach: 'استخدم الفكرة: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.'
   hint: 'Jawab dengan struktur C1 memakai: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي
     أَكْثَرَ مِنْ سِيَاقٍ.'
   sample_answer: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-  focus: Menyajikan evidence. Pakai sebagai penghubung dalam presenting relevant evidence.
+  focus: Menyajikan evidence. Pakai sebagai penghubung dalam penyajian bukti yang relevan.
   expected_keywords:
   - الدَّلِيلُ
   - الْأَقْوَى
@@ -50,30 +50,26 @@ turns:
   - أَنَّ
   - النَّتِيجَةَ
   indonesian_explanation: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى
-    النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ،
-    سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
-    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
-  focus: Merespons under pressure. Gunakan untuk repair dalam presenting relevant evidence.
+- coach: 'استخدم الفكرة: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
+  hint: 'Jawab dengan struktur C1 memakai: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
+    وَلَا أُطِيلُ.'
+  sample_answer: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  focus: Merespons under pressure. Gunakan untuk repair dalam penyajian bukti yang relevan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan fokus pada
-    poin pusat dan tidak berpanjang-panjang.
+  - تَحْتَ
+  - الضَّغْطِ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  - النُّقْطَةِ
+  indonesian_explanation: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
 target_phrases:
-- فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+- فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
   هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
 - عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ
   مِنْ جِهَةِ الْأَدِلَّةِ.
 - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
-  وَلَا أُطِيلُ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
+- تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- فِي خِتَامِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
   الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
 rubric:
   speaking:

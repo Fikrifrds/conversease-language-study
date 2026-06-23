@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_expressing_certainty_and_doubt
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-learner_goal: Latih percakapan Arab C1 untuk separating certainty and doubt dengan nuance, struktur, presisi,
-  dan respons profesional.
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ؟
+learner_goal: Latih percakapan Arab C1 untuk pembedaan kepastian dan keraguan dengan nuansa, struktur,
+  presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ
     حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
-  sample_answer: فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ
+  sample_answer: فِي تَدْرِيبِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ
     إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
-  focus: 'Menyampaikan opini dengan nuance. Fokus lesson: separating certainty and doubt.'
+  focus: 'Menyampaikan opini dengan nuance. Fokus lesson: pembedaan kepastian dan keraguan.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - التَّفْرِيقِ
   - بَيْنَ
   - الْيَقِينِ
-  indonesian_explanation: Dalam skill separating certainty and doubt, Secara prinsip, saya cenderung pada
-    pendapat ini, tetapi saya punya satu catatan penting.
+  indonesian_explanation: Dalam latihan pembedaan kepastian dan keraguan, secara prinsip, saya cenderung
+    pada pendapat ini, tetapi saya punya satu catatan penting.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا
     تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ،
@@ -36,14 +36,14 @@ turns:
   - التَّفْرِيقِ
   - بَيْنَ
   - الْيَقِينِ
-  indonesian_explanation: Saat menerapkan separating certainty and doubt, Saya belum sepenuhnya yakin,
+  indonesian_explanation: Saat menerapkan pembedaan kepastian dan keraguan, saya belum sepenuhnya yakin,
     tetapi bukti mengarah ke arah ini.
 - coach: 'استخدم الفكرة: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ
     وَاضِحَةٌ.'
   hint: 'Jawab dengan struktur C1 memakai: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى،
     لَهُ مَخَاطِرُ وَاضِحَةٌ.'
   sample_answer: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-  focus: Menyeimbangkan dua sudut pandang. Pakai sebagai penghubung dalam separating certainty and doubt.
+  focus: Menyeimbangkan dua sudut pandang. Pakai sebagai penghubung dalam pembedaan kepastian dan keraguan.
   expected_keywords:
   - مِنْ
   - جِهَةٍ،
@@ -51,30 +51,27 @@ turns:
   - الْخِيَارُ
   - عَمَلِيٌّ،
   indonesian_explanation: Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ
-    أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ
-    نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي
-    أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
-  focus: Melunakkan disagreement. Gunakan untuk repair dalam separating certainty and doubt.
+- coach: 'استخدم الفكرة: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ
+    أُخْرَى.'
+  hint: 'Jawab dengan struktur C1 memakai: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
+    مِنْ زَاوِيَةٍ أُخْرَى.'
+  sample_answer: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+  focus: Melunakkan disagreement. Gunakan untuk repair dalam pembedaan kepastian dan keraguan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi
-    saya melihat masalah ini dari sisi lain.
+  - أُقَدِّرُ
+  - وِجْهَةَ
+  - نَظَرِكَ،
+  - غَيْرَ
+  - أَنَّنِي
+  indonesian_explanation: Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
 target_phrases:
-- فِي مَهَارَةِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا
+- فِي تَدْرِيبِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا
   الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
 - عِنْدَ تَطْبِيقِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ
   تُشِيرُ إِلَى هَذَا الْمَسَارِ.
 - مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
-  مِنْ زَاوِيَةٍ أُخْرَى.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً
+- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+- فِي خِتَامِ التَّفْرِيقِ بَيْنَ الْيَقِينِ وَالشَّكِّ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً
   وَمُرُونَةً.
 rubric:
   speaking:

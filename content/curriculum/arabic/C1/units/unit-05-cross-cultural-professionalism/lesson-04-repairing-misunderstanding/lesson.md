@@ -1,10 +1,10 @@
 # Repairing Misunderstanding
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk repairing misunderstanding dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk perbaikan salah paham dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah repairing misunderstanding, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah perbaikan salah paham, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

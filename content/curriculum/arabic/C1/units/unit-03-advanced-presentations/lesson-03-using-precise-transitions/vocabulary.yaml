@@ -1,11 +1,15 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ
+    دَقِيقَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى ي..."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي مَهَارَةِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ،
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى ي..."'
 - word: جُمْهُورٌ
   meaning_id: audiens
-  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي مَهَارَةِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ،
+  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي تَدْرِيبِ اِسْتِخْدَامِ اِنْتِقَالَاتٍ دَقِيقَةٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى ي..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -23,11 +27,7 @@ vocabulary:
   meaning_id: dampak/pengaruh
   usage_note: 'Dipakai untuk arti "dampak/pengaruh". Contoh: "الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ
     نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُو..."'
 - word: صَعْبٌ
   meaning_id: sulit
-  usage_note: 'Dipakai untuk arti "sulit". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا
-    جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُو..."'
+  usage_note: 'Dipakai untuk arti "sulit". Contoh: "إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُودِ
+    الْجَوَابِ ثُمَّ أُوَضِّحُ الْأَسَاسَ."'

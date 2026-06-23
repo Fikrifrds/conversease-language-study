@@ -1,24 +1,23 @@
 phrases:
-- phrase: فِي مَهَارَةِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ
+- phrase: فِي تَدْرِيبِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ
     الْأَطْرَافِ الرَّئِيسِيَّةِ.
-  meaning_id: Dalam skill handling sensitive feedback tactfully, Pertama kita perlu menyatukan pemahaman
+  meaning_id: Dalam latihan penanganan masukan sensitif dengan bijak, pertama kita perlu menyatukan pemahaman
     pihak-pihak utama.
-  usage_note: 'Menyelaraskan stakeholder. Fokus lesson: handling sensitive feedback tactfully.'
+  usage_note: 'Menyelaraskan stakeholder. Fokus lesson: penanganan masukan sensitif dengan bijak.'
 - phrase: عِنْدَ تَطْبِيقِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ
     قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
-  meaning_id: Saat menerapkan handling sensitive feedback tactfully, Lebih baik kita mengelola ekspektasi
+  meaning_id: Saat menerapkan penanganan masukan sensitif dengan bijak, lebih baik kita mengelola ekspektasi
     sebelum menjanjikan sesuatu yang spesifik.
   usage_note: Mengelola ekspektasi. Hubungkan dengan fokus lesson.
 - phrase: سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
   meaning_id: Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-  usage_note: Memberi feedback sensitif. Pakai sebagai penghubung dalam handling sensitive feedback tactfully.
-- phrase: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا
-    تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
-  meaning_id: Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya
-    dengan rencana yang jelas.
-  usage_note: Mengomunikasikan risiko. Gunakan untuk repair dalam handling sensitive feedback tactfully.
-- phrase: فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ،
+  usage_note: Memberi feedback sensitif. Pakai sebagai penghubung dalam penanganan masukan sensitif dengan
+    bijak.
+- phrase: يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ.
+  meaning_id: Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
+  usage_note: Mengomunikasikan risiko. Gunakan untuk repair dalam penanganan masukan sensitif dengan bijak.
+- phrase: فِي خِتَامِ تَقْدِيمِ تَعْلِيقٍ حَسَّاسٍ بِلُطْفٍ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ،
     فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ.
-  meaning_id: Dalam final formulation untuk handling sensitive feedback tactfully, Jika kita sepakat pada
-    kerangka ini, implementasinya akan lebih mudah.
+  meaning_id: Pada bagian akhir penanganan masukan sensitif dengan bijak, jika kita sepakat pada kerangka
+    ini, implementasinya akan lebih mudah.
   usage_note: Menutup dengan alignment. Tutup percakapan sesuai fokus lesson.

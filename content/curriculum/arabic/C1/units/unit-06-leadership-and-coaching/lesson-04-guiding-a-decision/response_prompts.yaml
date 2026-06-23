@@ -1,12 +1,12 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill guiding a group decision, Hal pertama adalah menetapkan
-    arah dengan jelas.'
-  target_response: فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan pembimbingan keputusan kelompok, hal pertama adalah
+    menetapkan arah dengan jelas.'
+  target_response: فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ
     بِصُورَةٍ وَاضِحَةٍ.
   acceptable_responses:
-  - فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan guiding a group decision, Daripada memberi jawaban
-    langsung, saya akan bertanya pertanyaan yang membuka pemikiran.'
+  - فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan pembimbingan keputusan kelompok, daripada memberi
+    jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran.'
   target_response: عِنْدَ تَطْبِيقِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا
     مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
   acceptable_responses:
@@ -17,10 +17,8 @@ prompts:
   target_response: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
   acceptable_responses:
   - الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Saat mengambil keputusan,
-    kita harus menyeimbangkan kecepatan dan kualitas.'
-  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ
-    نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan
+    kualitas.'
+  target_response: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
   acceptable_responses:
-  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ
-    السُّرْعَةِ وَالْجَوْدَةِ.
+  - عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.

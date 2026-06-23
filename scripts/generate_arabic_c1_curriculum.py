@@ -61,6 +61,10 @@ def line(speaker: str, text: str, translation: str) -> tuple[str, str, str]:
     return (speaker, text, translation)
 
 
+def lower_initial(text: str) -> str:
+    return text[:1].lower() + text[1:] if text else text
+
+
 UNIT_PROFILES: dict[str, dict[str, Any]] = {
     "unit-01-nuanced-opinions": {
         "title": "Nuanced Opinions",
@@ -297,11 +301,55 @@ LESSON_FOCUS_BY_KEY: dict[str, tuple[str, str]] = {
 }
 
 
+LESSON_FOCUS_ID_BY_KEY: dict[str, str] = {
+    "lesson-01-qualifying-your-opinion": "pembatasan opini sebelum menyampaikan klaim",
+    "lesson-02-expressing-certainty-and-doubt": "pembedaan kepastian dan keraguan",
+    "lesson-03-balancing-two-viewpoints": "penyeimbangan dua sudut pandang",
+    "lesson-04-softening-disagreement": "pelunakan ketidaksetujuan",
+    "lesson-05-nuanced-opinion-mission": "penyusunan opini bernuansa yang utuh",
+    "lesson-01-aligning-stakeholders": "penyelarasan pihak berkepentingan",
+    "lesson-02-managing-expectations": "pengelolaan ekspektasi realistis",
+    "lesson-03-handling-sensitive-feedback": "penanganan masukan sensitif dengan bijak",
+    "lesson-04-communicating-risk": "penyampaian risiko tanpa berlebihan",
+    "lesson-05-strategic-workplace-mission": "pelaksanaan percakapan kerja strategis",
+    "lesson-01-framing-a-complex-topic": "pembingkaian topik kompleks",
+    "lesson-02-building-a-persuasive-flow": "pembangunan alur persuasif",
+    "lesson-03-using-precise-transitions": "penggunaan transisi yang presisi",
+    "lesson-04-handling-challenging-questions": "penanganan pertanyaan menantang",
+    "lesson-05-advanced-presentation-mission": "presentasi lanjutan yang jelas",
+    "lesson-01-identifying-assumptions": "identifikasi asumsi tersembunyi",
+    "lesson-02-challenging-an-argument": "penantangan argumen dengan sopan",
+    "lesson-03-presenting-evidence": "penyajian bukti yang relevan",
+    "lesson-04-responding-under-pressure": "jawaban tenang di bawah tekanan",
+    "lesson-05-debate-analysis-mission": "debat analitis yang seimbang",
+    "lesson-01-reading-context": "pembacaan konteks sosial",
+    "lesson-02-asking-tactful-questions": "pengajuan pertanyaan dengan taktis",
+    "lesson-03-explaining-local-norms": "penjelasan norma lokal",
+    "lesson-04-repairing-misunderstanding": "perbaikan salah paham",
+    "lesson-05-cross-cultural-mission": "percakapan lintas budaya",
+    "lesson-01-setting-direction": "penetapan arah dengan jelas",
+    "lesson-02-coaching-with-questions": "coaching dengan pertanyaan",
+    "lesson-03-giving-actionable-feedback": "masukan yang bisa ditindaklanjuti",
+    "lesson-04-guiding-a-decision": "pembimbingan keputusan kelompok",
+    "lesson-05-leadership-coaching-mission": "percakapan coaching kepemimpinan",
+    "lesson-01-catching-implied-meaning": "penangkapan makna tersirat",
+    "lesson-02-responding-to-long-turns": "respons terhadap giliran bicara yang panjang",
+    "lesson-03-summarizing-what-you-heard": "rangkuman akurat atas apa yang didengar",
+    "lesson-04-asking-high-quality-follow-ups": "follow-up berkualitas",
+    "lesson-05-advanced-listening-mission": "respons setelah listening lanjutan",
+    "lesson-01-review-nuance-and-strategy": "peninjauan nuansa dan strategi",
+    "lesson-02-review-presenting-and-debate": "peninjauan presentasi dan debat",
+    "lesson-03-review-leadership-and-listening": "peninjauan kepemimpinan dan listening",
+    "lesson-04-c1-final-test-practice": "latihan tes akhir C1",
+    "lesson-05-c1-final-conversation": "percakapan akhir C1 yang utuh",
+}
+
+
 C1_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
     {
         "precision": (
             "أَيْنَ تَحْتَاجُ هَذِهِ الْمَهَارَةُ إِلَى دِقَّةٍ أَكْبَرَ؟",
-            "Di bagian mana skill {focus_id} membutuhkan presisi lebih besar?",
+            "Di bagian mana fokus {focus_id} membutuhkan presisi lebih besar?",
         ),
         "repair": (
             "إِذَا اعْتَرَضَ شَخْصٌ عَلَى الطَّرِيقَةِ، كَيْفَ تُبْقِي الْحِوَارَ مِهَنِيًّا؟",
@@ -315,7 +363,7 @@ C1_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
     {
         "precision": (
             "مَا الْفَرْقُ بَيْنَ الصِّيَاغَةِ الْمُبَاشِرَةِ وَالصِّيَاغَةِ الْأَدَقِّ هُنَا؟",
-            "Apa bedanya formulasi langsung dan formulasi yang lebih presisi dalam {focus_id}?",
+            "Apa bedanya formulasi langsung dan formulasi yang lebih presisi saat menerapkan {focus_id}?",
         ),
         "repair": (
             "كَيْفَ تُصَحِّحُ سُوءَ فَهْمٍ صَغِيرًا أَثْنَاءَ الْحِوَارِ؟",
@@ -361,7 +409,7 @@ C1_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
         ),
         "repair": (
             "إِذَا تَغَيَّرَتْ نَبْرَةُ الْحِوَارِ، كَيْفَ تُعَدِّلُ طَرِيقَتَكَ؟",
-            "Jika nada percakapan berubah, bagaimana kamu menyesuaikan {focus_id}?",
+            "Jika nada percakapan berubah, bagaimana kamu menyesuaikan pendekatan dalam {focus_id}?",
         ),
         "final": (
             "كَيْفَ تُنْهِي الْحِوَارَ بِجُمْلَةٍ تُظْهِرُ الدِّقَّةَ وَالْمُرُونَةَ؟",
@@ -372,11 +420,26 @@ C1_DIALOGUE_MOVES: list[dict[str, tuple[str, str]]] = [
 
 
 C1_OPENING_PROMPTS: list[tuple[str, str]] = [
-    ("كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟", "Bagaimana kamu menerapkan skill ini dalam percakapan formal?"),
-    ("مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟", "Cara paling presisi apa untuk memakai skill ini?"),
-    ("كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟", "Bagaimana kamu membuat jawaban ini meyakinkan dan seimbang?"),
-    ("كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟", "Bagaimana kamu menjaga kejelasan saat ada tekanan?"),
-    ("كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟", "Bagaimana kamu mengubah skill ini menjadi langkah praktis?"),
+    (
+        "كَيْفَ تُطَبِّقُ مَهَارَةَ {focus} فِي حِوَارٍ رَسْمِيٍّ؟",
+        "Bagaimana kamu menerapkan {focus_id} dalam percakapan formal?",
+    ),
+    (
+        "مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ {focus}؟",
+        "Cara paling presisi apa untuk menerapkan {focus_id}?",
+    ),
+    (
+        "كَيْفَ تَجْعَلُ جَوَابَكَ فِي {focus} مُقْنِعًا وَمُتَوَازِنًا؟",
+        "Bagaimana kamu membuat jawaban untuk {focus_id} meyakinkan dan seimbang?",
+    ),
+    (
+        "كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ {focus}؟",
+        "Bagaimana kamu menjaga kejelasan saat menerapkan {focus_id}?",
+    ),
+    (
+        "كَيْفَ تُحَوِّلُ مَهَارَةَ {focus} إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟",
+        "Bagaimana kamu mengubah {focus_id} menjadi langkah praktis?",
+    ),
 ]
 
 
@@ -385,21 +448,27 @@ def format_dialogue_move(move: tuple[str, str], focus: str, focus_id: str) -> tu
     return arabic.format(focus=focus), indonesian.format(focus_id=focus_id)
 
 
+def format_opening_prompt(prompt: tuple[str, str], focus: str, focus_id: str) -> tuple[str, str]:
+    arabic, indonesian = prompt
+    return arabic.format(focus=focus), indonesian.format(focus_id=focus_id)
+
+
 def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, Any]:
     profile = UNIT_PROFILES[unit_key]
     lesson_key, slug, title = lesson_data
     speaker_a, speaker_b = profile["speakers"]
-    focus_ar, focus_id = LESSON_FOCUS_BY_KEY[lesson_key]
+    focus_ar, _focus_en = LESSON_FOCUS_BY_KEY[lesson_key]
+    focus_id = LESSON_FOCUS_ID_BY_KEY[lesson_key]
     base_phrases = profile["phrases"]
     phrases = [
         phrase(
-            f"فِي مَهَارَةِ {focus_ar}، {base_phrases[0]['phrase']}",
-            f"Dalam skill {focus_id}, {base_phrases[0]['meaning']}",
+            f"فِي تَدْرِيبِ {focus_ar}، {base_phrases[0]['phrase']}",
+            f"Dalam latihan {focus_id}, {lower_initial(base_phrases[0]['meaning'])}",
             f"{base_phrases[0]['usage']} Fokus lesson: {focus_id}.",
         ),
         phrase(
             f"عِنْدَ تَطْبِيقِ {focus_ar}، {base_phrases[1]['phrase']}",
-            f"Saat menerapkan {focus_id}, {base_phrases[1]['meaning']}",
+            f"Saat menerapkan {focus_id}, {lower_initial(base_phrases[1]['meaning'])}",
             f"{base_phrases[1]['usage']} Hubungkan dengan fokus lesson.",
         ),
         phrase(
@@ -408,18 +477,18 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
             f"{base_phrases[2]['usage']} Pakai sebagai penghubung dalam {focus_id}.",
         ),
         phrase(
-            f"إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، {base_phrases[3]['phrase']}",
-            f"Jika muncul tantangan dalam skill ini, {base_phrases[3]['meaning']}",
+            base_phrases[3]["phrase"],
+            base_phrases[3]["meaning"],
             f"{base_phrases[3]['usage']} Gunakan untuk repair dalam {focus_id}.",
         ),
         phrase(
-            f"فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، {base_phrases[4]['phrase']}",
-            f"Dalam final formulation untuk {focus_id}, {base_phrases[4]['meaning']}",
+            f"فِي خِتَامِ {focus_ar}، {base_phrases[4]['phrase']}",
+            f"Pada bagian akhir {focus_id}, {lower_initial(base_phrases[4]['meaning'])}",
             f"{base_phrases[4]['usage']} Tutup percakapan sesuai fokus lesson.",
         ),
     ]
     lesson_index = [item[0] for item in LESSONS_BY_UNIT[unit_key]].index(lesson_key)
-    prompt_ar, prompt_id = C1_OPENING_PROMPTS[lesson_index]
+    prompt_ar, prompt_id = format_opening_prompt(C1_OPENING_PROMPTS[lesson_index], focus_ar, focus_id)
     dialogue_move = C1_DIALOGUE_MOVES[lesson_index]
     precision_question = format_dialogue_move(dialogue_move["precision"], focus_ar, focus_id)
     repair_question = format_dialogue_move(dialogue_move["repair"], focus_ar, focus_id)
@@ -442,7 +511,7 @@ def build_lesson(unit_key: str, lesson_data: tuple[str, str, str]) -> dict[str, 
         "focus": focus_ar,
         "focus_id": focus_id,
         "situation": f"{profile['situation']} Fokus lesson ini adalah {focus_id}, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.",
-        "goal": f"Latih percakapan Arab C1 untuk {focus_id} dengan nuance, struktur, presisi, dan respons profesional.",
+        "goal": f"Latih percakapan Arab C1 untuk {focus_id} dengan nuansa, struktur, presisi, dan respons profesional.",
         "grammar": profile["grammar"],
         "patterns": profile["patterns"],
         "phrases": phrases,

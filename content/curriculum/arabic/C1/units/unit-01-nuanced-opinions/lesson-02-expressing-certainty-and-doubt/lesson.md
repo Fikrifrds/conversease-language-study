@@ -1,10 +1,10 @@
 # Expressing Certainty and Doubt
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk separating certainty and doubt dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk pembedaan kepastian dan keraguan dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan. Fokus lesson ini adalah separating certainty and doubt, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan. Fokus lesson ini adalah pembedaan kepastian dan keraguan, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

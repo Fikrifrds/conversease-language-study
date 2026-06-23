@@ -1,11 +1,15 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+    قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
 - word: قِرَاءَةٌ
   meaning_id: membaca
-  usage_note: 'Dipakai untuk arti "membaca". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+  usage_note: 'Dipakai untuk arti "membaca". Contoh: "فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
     قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
 - word: السِّيَاقُ
   meaning_id: konteks
-  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
+  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ،
     قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ ا..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -19,15 +23,11 @@ vocabulary:
   meaning_id: norma/standar
   usage_note: 'Dipakai untuk arti "norma/standar". Contoh: "فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ
     مُخْتَلِفَةٍ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
 - word: سُوءٌ
   meaning_id: keburukan/salah
-  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
+  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
+    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ."'
 - word: فَهْمٌ
   meaning_id: pemahaman
-  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
+    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ."'

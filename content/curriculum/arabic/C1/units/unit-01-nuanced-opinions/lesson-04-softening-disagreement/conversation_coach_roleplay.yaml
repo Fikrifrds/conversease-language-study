@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_softening_disagreement
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟
-learner_goal: Latih percakapan Arab C1 untuk softening disagreement dengan nuance, struktur, presisi,
+opening_line: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ؟
+learner_goal: Latih percakapan Arab C1 untuk pelunakan ketidaksetujuan dengan nuansa, struktur, presisi,
   dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ
+- coach: كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ
     حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.'
-  sample_answer: فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ
+  sample_answer: فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ
     إِلَى هَذَا الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
-  focus: 'Menyampaikan opini dengan nuance. Fokus lesson: softening disagreement.'
+  focus: 'Menyampaikan opini dengan nuance. Fokus lesson: pelunakan ketidaksetujuan.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - تَلْطِيفِ
   - الِاخْتِلَافِ
   - مَعَ
-  indonesian_explanation: Dalam skill softening disagreement, Secara prinsip, saya cenderung pada pendapat
-    ini, tetapi saya punya satu catatan penting.
+  indonesian_explanation: Dalam latihan pelunakan ketidaksetujuan, secara prinsip, saya cenderung pada
+    pendapat ini, tetapi saya punya satu catatan penting.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، لَسْتُ مُتَيَقِّنًا
     تَمَامًا، لَكِنَّ الْأَدِلَّةَ تُشِيرُ إِلَى هَذَا الْمَسَارِ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ،
@@ -36,14 +36,14 @@ turns:
   - تَلْطِيفِ
   - الِاخْتِلَافِ
   - مَعَ
-  indonesian_explanation: Saat menerapkan softening disagreement, Saya belum sepenuhnya yakin, tetapi
+  indonesian_explanation: Saat menerapkan pelunakan ketidaksetujuan, saya belum sepenuhnya yakin, tetapi
     bukti mengarah ke arah ini.
 - coach: 'استخدم الفكرة: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ
     وَاضِحَةٌ.'
   hint: 'Jawab dengan struktur C1 memakai: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى،
     لَهُ مَخَاطِرُ وَاضِحَةٌ.'
   sample_answer: مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-  focus: Menyeimbangkan dua sudut pandang. Pakai sebagai penghubung dalam softening disagreement.
+  focus: Menyeimbangkan dua sudut pandang. Pakai sebagai penghubung dalam pelunakan ketidaksetujuan.
   expected_keywords:
   - مِنْ
   - جِهَةٍ،
@@ -51,30 +51,27 @@ turns:
   - الْخِيَارُ
   - عَمَلِيٌّ،
   indonesian_explanation: Di satu sisi opsi ini praktis, di sisi lain ia punya risiko yang jelas.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ
-    أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ
-    نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي
-    أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
-  focus: Melunakkan disagreement. Gunakan untuk repair dalam softening disagreement.
+- coach: 'استخدم الفكرة: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ
+    أُخْرَى.'
+  hint: 'Jawab dengan struktur C1 memakai: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
+    مِنْ زَاوِيَةٍ أُخْرَى.'
+  sample_answer: أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+  focus: Melunakkan disagreement. Gunakan untuk repair dalam pelunakan ketidaksetujuan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Saya menghargai sudut pandangmu, tetapi
-    saya melihat masalah ini dari sisi lain.
+  - أُقَدِّرُ
+  - وِجْهَةَ
+  - نَظَرِكَ،
+  - غَيْرَ
+  - أَنَّنِي
+  indonesian_explanation: Saya menghargai sudut pandangmu, tetapi saya melihat masalah ini dari sisi lain.
 target_phrases:
-- فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا
+- فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى هَذَا
   الرَّأْيِ، وَلَكِنْ لَدَيَّ تَحَفُّظٌ مُهِمٌّ.
 - عِنْدَ تَطْبِيقِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، لَسْتُ مُتَيَقِّنًا تَمَامًا، لَكِنَّ الْأَدِلَّةَ
   تُشِيرُ إِلَى هَذَا الْمَسَارِ.
 - مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ
-  مِنْ زَاوِيَةٍ أُخْرَى.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً
+- أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى الْمَسْأَلَةَ مِنْ زَاوِيَةٍ أُخْرَى.
+- فِي خِتَامِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ، لِذَلِكَ أُفَضِّلُ صِيَاغَةً أَكْثَرَ دِقَّةً
   وَمُرُونَةً.
 rubric:
   speaking:

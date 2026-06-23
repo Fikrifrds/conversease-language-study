@@ -1,27 +1,27 @@
 scenario_key: arabic_c1_review_presenting_and_debate
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-learner_goal: Latih percakapan Arab C1 untuk reviewing presenting and debate dengan nuance, struktur,
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ؟
+learner_goal: Latih percakapan Arab C1 untuk peninjauan presentasi dan debat dengan nuansa, struktur,
   presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ
     الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.'
-  sample_answer: فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ
+  sample_answer: فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ
     رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-  focus: 'Review nuance. Fokus lesson: reviewing presenting and debate.'
+  focus: 'Review nuance. Fokus lesson: peninjauan presentasi dan debat.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - مُرَاجَعَةِ
   - الْعَرْضِ
   - وَالنِّقَاشِ،
-  indonesian_explanation: Dalam skill reviewing presenting and debate, Saya sedang mereview cara menyampaikan
+  indonesian_explanation: Dalam latihan peninjauan presentasi dan debat, saya sedang mereview cara menyampaikan
     opini yang tepat tanpa berlebihan.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ،
     سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.'
@@ -36,13 +36,13 @@ turns:
   - مُرَاجَعَةِ
   - الْعَرْضِ
   - وَالنِّقَاشِ،
-  indonesian_explanation: Saat menerapkan reviewing presenting and debate, Dalam percakapan profesional,
+  indonesian_explanation: Saat menerapkan peninjauan presentasi dan debat, dalam percakapan profesional,
     saya akan fokus pada konteks, ekspektasi, dan risiko.
 - coach: 'استخدم الفكرة: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ
     مُقْنِعٍ.'
   sample_answer: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-  focus: Review presenting and debate. Pakai sebagai penghubung dalam reviewing presenting and debate.
+  focus: Review presenting and debate. Pakai sebagai penghubung dalam peninjauan presentasi dan debat.
   expected_keywords:
   - عِنْدَ
   - الْعَرْضِ
@@ -50,30 +50,25 @@ turns:
   - النِّقَاشِ،
   - سَأَبْنِي
   indonesian_explanation: Saat presentasi atau diskusi, saya akan membangun ide dengan urutan yang persuasif.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ
-    بِلَبَاقَةٍ وَوُضُوحٍ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ
-    سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ
-    بِلَبَاقَةٍ وَوُضُوحٍ.
-  focus: Review cross-cultural repair. Gunakan untuk repair dalam reviewing presenting and debate.
+- coach: 'استخدم الفكرة: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
+  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.'
+  sample_answer: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+  focus: Review cross-cultural repair. Gunakan untuk repair dalam peninjauan presentasi dan debat.
   expected_keywords:
   - إِذَا
   - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Jika muncul salah paham, saya akan memperbaikinya
-    dengan tact dan kejelasan.
+  - سُوءُ
+  - فَهْمٍ،
+  - فَسَأُصْلِحُهُ
+  indonesian_explanation: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan kejelasan.
 target_phrases:
-- فِي مَهَارَةِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ
+- فِي تَدْرِيبِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ
   دُونَ مُبَالَغَةٍ.
 - عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي الْحِوَارِ الْمِهَنِيِّ، سَأُرَكِّزُ عَلَى
   السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
 - عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ
-  وَوُضُوحٍ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ
+- إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
+- فِي خِتَامِ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، فِي التَّقْيِيمِ النِّهَائِيِّ، سَأُظْهِرُ الدِّقَّةَ
   وَالْمُرُونَةَ وَحُسْنَ الِاسْتِمَاعِ.
 rubric:
   speaking:

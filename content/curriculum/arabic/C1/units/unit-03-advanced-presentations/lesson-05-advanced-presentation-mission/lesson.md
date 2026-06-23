@@ -1,10 +1,10 @@
 # Advanced Presentation Mission
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk delivering an advanced presentation dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk presentasi lanjutan yang jelas dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah delivering an advanced presentation, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah presentasi lanjutan yang jelas, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

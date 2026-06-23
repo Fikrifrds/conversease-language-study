@@ -1,10 +1,10 @@
 # Framing a Complex Topic
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk framing a complex topic dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk pembingkaian topik kompleks dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah framing a complex topic, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah pembingkaian topik kompleks, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

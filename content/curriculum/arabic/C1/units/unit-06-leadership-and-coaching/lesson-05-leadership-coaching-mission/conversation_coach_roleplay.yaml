@@ -1,27 +1,27 @@
 scenario_key: arabic_c1_leadership_coaching_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-learner_goal: Latih percakapan Arab C1 untuk running a leadership coaching conversation dengan nuance,
-  struktur, presisi, dan respons profesional.
+opening_line: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+learner_goal: Latih percakapan Arab C1 untuk percakapan coaching kepemimpinan dengan nuansa, struktur,
+  presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ
+- coach: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ
     شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.'
-  sample_answer: فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ
+  sample_answer: فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ
     الْمَسَارِ بِصُورَةٍ وَاضِحَةٍ.
-  focus: 'Menetapkan direction. Fokus lesson: running a leadership coaching conversation.'
+  focus: 'Menetapkan direction. Fokus lesson: percakapan coaching kepemimpinan.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - إِدَارَةِ
   - حِوَارٍ
   - قِيَادِيٍّ
-  indonesian_explanation: Dalam skill running a leadership coaching conversation, Hal pertama adalah menetapkan
+  indonesian_explanation: Dalam latihan percakapan coaching kepemimpinan, hal pertama adalah menetapkan
     arah dengan jelas.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، بَدَلًا مِنْ أَنْ
     أُعْطِيَ جَوَابًا مُبَاشِرًا، سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.'
@@ -36,14 +36,14 @@ turns:
   - إِدَارَةِ
   - حِوَارٍ
   - قِيَادِيٍّ
-  indonesian_explanation: Saat menerapkan running a leadership coaching conversation, Daripada memberi
-    jawaban langsung, saya akan bertanya pertanyaan yang membuka pemikiran.
+  indonesian_explanation: Saat menerapkan percakapan coaching kepemimpinan, daripada memberi jawaban langsung,
+    saya akan bertanya pertanyaan yang membuka pemikiran.
 - coach: 'استخدم الفكرة: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ
     لِلتَّطْبِيقِ.'
   hint: 'Jawab dengan struktur C1 memakai: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى
     خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.'
   sample_answer: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
-  focus: Memberi actionable feedback. Pakai sebagai penghubung dalam running a leadership coaching conversation.
+  focus: Memberi actionable feedback. Pakai sebagai penghubung dalam percakapan coaching kepemimpinan.
   expected_keywords:
   - الْمُلَاحَظَةُ
   - الْمُفِيدَةُ
@@ -51,30 +51,26 @@ turns:
   - الَّتِي
   - تَتَحَوَّلُ
   indonesian_explanation: Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ
-    أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ
-    الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ
-    نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
-  focus: Membimbing keputusan. Gunakan untuk repair dalam running a leadership coaching conversation.
+- coach: 'استخدم الفكرة: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ
+    وَالْجَوْدَةِ.'
+  sample_answer: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  focus: Membimbing keputusan. Gunakan untuk repair dalam percakapan coaching kepemimpinan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Saat mengambil keputusan, kita harus
-    menyeimbangkan kecepatan dan kualitas.
+  - عِنْدَ
+  - اتِّخَاذِ
+  - الْقَرَارِ،
+  - يَجِبُ
+  - أَنْ
+  indonesian_explanation: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
 target_phrases:
-- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ
+- فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ
   وَاضِحَةٍ.
 - عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا،
   سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
 - الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ
-  السُّرْعَةِ وَالْجَوْدَةِ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ
+- عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+- فِي خِتَامِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ
   وَالْمَوْعِدِ.
 rubric:
   speaking:

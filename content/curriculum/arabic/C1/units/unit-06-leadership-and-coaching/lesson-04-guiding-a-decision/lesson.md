@@ -1,10 +1,10 @@
 # Guiding a Decision
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk guiding a group decision dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk pembimbingan keputusan kelompok dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan. Fokus lesson ini adalah guiding a group decision, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan. Fokus lesson ini adalah pembimbingan keputusan kelompok, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

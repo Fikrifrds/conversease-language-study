@@ -2,8 +2,8 @@
 
 Cari dulu fungsi setiap klausa: qualification, uncertainty, contrast, repair, atau final formulation. Jangan menerjemahkan kata per kata sebelum memahami fungsi kalimat.
 
-- فِي مَهَارَةِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam skill managing realistic expectations, Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- عِنْدَ تَطْبِيقِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. -> Saat menerapkan managing realistic expectations, Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
+- فِي تَدْرِيبِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam latihan pengelolaan ekspektasi realistis, pertama kita perlu menyatukan pemahaman pihak-pihak utama.
+- عِنْدَ تَطْبِيقِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. -> Saat menerapkan pengelolaan ekspektasi realistis, lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik.
 - سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Dalam final formulation untuk managing realistic expectations, Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.
+- يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
+- فِي خِتَامِ إِدَارَةِ التَّوَقُّعَاتِ الْوَاقِعِيَّةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Pada bagian akhir pengelolaan ekspektasi realistis, jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.

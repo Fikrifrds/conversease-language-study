@@ -1,13 +1,13 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill asking high-quality follow-ups, Makna tersiratnya di
-    sini adalah pembicara belum sepenuhnya yakin.'
-  target_response: فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan follow-up berkualitas, makna tersiratnya di sini adalah
+    pembicara belum sepenuhnya yakin.'
+  target_response: فِي تَدْرِيبِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ
     هُنَا هُوَ أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.
   acceptable_responses:
-  - فِي مَهَارَةِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ
+  - فِي تَدْرِيبِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ
     أَنَّ الْمُتَحَدِّثَ غَيْرُ مُتَأَكِّدٍ تَمَامًا.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan asking high-quality follow-ups, Saya akan menjawab
-    poin utama dulu, lalu kembali ke detail.'
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan follow-up berkualitas, saya akan menjawab poin utama
+    dulu, lalu kembali ke detail.'
   target_response: عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةِ مُتَابَعَةٍ عَالِيَةِ الْجَوْدَةِ، سَأُجِيبُ أَوَّلًا
     عَلَى النُّقْطَةِ الْأَسَاسِيَّةِ، ثُمَّ أَعُودُ إِلَى التَّفَاصِيلِ.
   acceptable_responses:
@@ -18,10 +18,8 @@ prompts:
   target_response: إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.
   acceptable_responses:
   - إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Pertanyaan follow-up terbaik
-    adalah: apa yang akan mengubah keputusan ini?'
-  target_response: 'إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ:
-    مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+- prompt: 'Ucapkan dalam bahasa Arab: Pertanyaan follow-up terbaik adalah: apa yang akan mengubah keputusan
+    ini?'
+  target_response: 'سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
   acceptable_responses:
-  - 'إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي
-    سَيُغَيِّرُ هَذَا الْقَرَارَ؟'
+  - 'سُؤَالُ الْمُتَابَعَةِ الْأَفْضَلُ هُوَ: مَا الَّذِي سَيُغَيِّرُ هَذَا الْقَرَارَ؟'

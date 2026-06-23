@@ -1,22 +1,22 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Dalam skill aligning stakeholders, Pertama kita perlu menyatukan pemahaman
-    pihak-pihak utama."?
+  prompt: Frasa mana yang berarti "Dalam latihan penyelarasan pihak berkepentingan, pertama kita perlu
+    menyatukan pemahaman pihak-pihak utama."?
   options:
-  - فِي مَهَارَةِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ
+  - فِي تَدْرِيبِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ
     الرَّئِيسِيَّةِ.
   - عِنْدَ تَطْبِيقِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ
     قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
   - سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
-  correct_answer: فِي مَهَارَةِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ
+  correct_answer: فِي تَدْرِيبِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ
     فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saat menerapkan aligning stakeholders, Lebih baik kita mengelola ekspektasi
-    sebelum menjanjikan sesuatu yang spesifik."?
+  prompt: Frasa mana yang berarti "Saat menerapkan penyelarasan pihak berkepentingan, lebih baik kita
+    mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik."?
   options:
   - عِنْدَ تَطْبِيقِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ
     قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ.
-  - فِي مَهَارَةِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ
+  - فِي تَدْرِيبِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ
     الرَّئِيسِيَّةِ.
   - سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ.
   correct_answer: عِنْدَ تَطْبِيقِ مُوَاءَمَةِ أَصْحَابِ الْمَصْلَحَةِ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ

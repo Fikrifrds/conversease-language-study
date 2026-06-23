@@ -1,10 +1,10 @@
 # Using Precise Transitions
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk using precise transitions dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk penggunaan transisi yang presisi dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah using precise transitions, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membawakan presentasi kompleks, membangun alur persuasif, memakai transisi presisi, dan menjawab pertanyaan sulit. Fokus lesson ini adalah penggunaan transisi yang presisi, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

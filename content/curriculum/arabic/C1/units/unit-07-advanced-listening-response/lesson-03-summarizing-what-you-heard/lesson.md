@@ -1,10 +1,10 @@
 # Summarizing What You Heard
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk summarizing what you heard accurately dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk rangkuman akurat atas apa yang didengar dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas. Fokus lesson ini adalah summarizing what you heard accurately, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas. Fokus lesson ini adalah rangkuman akurat atas apa yang didengar, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

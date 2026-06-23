@@ -1,11 +1,15 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ
+    الْآخَرِينَ، مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى ه..."'
 - word: اِخْتِلَافٌ
   meaning_id: perbedaan
-  usage_note: 'Dipakai untuk arti "perbedaan". Contoh: "فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ،
+  usage_note: 'Dipakai untuk arti "perbedaan". Contoh: "فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ،
     مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى ه..."'
 - word: رَأْيٌ
   meaning_id: pendapat
-  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي مَهَارَةِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ،
+  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي تَدْرِيبِ تَلْطِيفِ الِاخْتِلَافِ مَعَ الْآخَرِينَ،
     مِنْ حَيْثُ الْمَبْدَأُ، أَمِيلُ إِلَى ه..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: risiko
   usage_note: 'Dipakai untuk arti "risiko". Contoh: "مِنْ جِهَةٍ، هَذَا الْخِيَارُ عَمَلِيٌّ، وَمِنْ جِهَةٍ
     أُخْرَى، لَهُ مَخَاطِرُ وَاضِحَةٌ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    أُقَدِّرُ وِجْهَةَ نَظَرِكَ، غَيْرَ أَنَّنِي أَرَى..."'

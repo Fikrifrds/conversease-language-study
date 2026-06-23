@@ -1,19 +1,23 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ
+    بِهُدُوءٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ..."'
 - word: ضَغْطٌ
   meaning_id: tekanan
-  usage_note: 'Dipakai untuk arti "tekanan". Contoh: "فِي مَهَارَةِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
+  usage_note: 'Dipakai untuk arti "tekanan". Contoh: "فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ..."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي مَهَارَةِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ..."'
 - word: اِفْتِرَاضٌ
   meaning_id: asumsi
-  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي مَهَارَةِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
+  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ..."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي مَهَارَةِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي تَدْرِيبِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: bukti-bukti
   usage_note: 'Dipakai untuk arti "bukti-bukti". Contoh: "عِنْدَ تَطْبِيقِ الرَّدِّ تَحْتَ الضَّغْطِ بِهُدُوءٍ،
     يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّ..."'
-- word: دَلِيلٌ
-  meaning_id: bukti/petunjuk
-  usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ
-    تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ."'

@@ -1,15 +1,19 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ
+    مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّر..."'
 - word: أُرَاجِعُ
   meaning_id: saya mengulang/review
-  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "فِي مَهَارَةِ إِدَارَةِ مُحَادَثَةٍ
+  usage_note: 'Dipakai untuk arti "saya mengulang/review". Contoh: "فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ
     نِهَائِيَّةٍ مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّر..."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "فِي مَهَارَةِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ
     مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّر..."'
 - word: رَأْيٌ
   meaning_id: pendapat
-  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي مَهَارَةِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ
+  usage_note: 'Dipakai untuk arti "pendapat". Contoh: "فِي تَدْرِيبِ إِدَارَةِ مُحَادَثَةٍ نِهَائِيَّةٍ
     مُتَكَامِلَةٍ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّر..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: presentasi/tawaran
   usage_note: 'Dipakai untuk arti "presentasi/tawaran". Contoh: "عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي
     الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ."'
-- word: نِقَاشٌ
-  meaning_id: diskusi
-  usage_note: 'Dipakai untuk arti "diskusi". Contoh: "عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ
-    بِتَسَلْسُلٍ مُقْنِعٍ."'

@@ -1,7 +1,11 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ
+    تَوْجِيهِيٍّ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَار..."'
 - word: مَسَارٌ
   meaning_id: jalur/arah
-  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي مَهَارَةِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ،
+  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ قِيَادِيٍّ تَوْجِيهِيٍّ،
     أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَار..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -15,18 +19,14 @@ vocabulary:
   meaning_id: langkah
   usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ
     إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ
+    بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ
-    عَمَلِيَّةٍ؟"'
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ قِيَادِيٍّ
+    تَوْجِيهِيٍّ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟"'
 - word: مِعْيَارٌ
   meaning_id: norma/standar
   usage_note: 'Dipakai untuk arti "norma/standar". Contoh: "مَا الْمِعْيَارُ الَّذِي سَتَحْكُمُ بِهِ عَلَى

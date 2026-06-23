@@ -1,22 +1,22 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Dalam skill building a persuasive flow, Saya akan membingkai topiknya
+  prompt: Frasa mana yang berarti "Dalam latihan pembangunan alur persuasif, saya akan membingkai topiknya
     dulu agar audiens memahami konteksnya."?
   options:
-  - فِي مَهَارَةِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ
+  - فِي تَدْرِيبِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ
     سِيَاقَهُ.
   - عِنْدَ تَطْبِيقِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
     خُطْوَةً فَخُطْوَةً.
   - الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
-  correct_answer: فِي مَهَارَةِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى
+  correct_answer: فِي تَدْرِيبِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى
     يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saat menerapkan building a persuasive flow, Setelah itu, saya akan
+  prompt: Frasa mana yang berarti "Saat menerapkan pembangunan alur persuasif, setelah itu, saya akan
     membangun alur persuasif langkah demi langkah."?
   options:
   - عِنْدَ تَطْبِيقِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
     خُطْوَةً فَخُطْوَةً.
-  - فِي مَهَارَةِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ
+  - فِي تَدْرِيبِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ الْجُمْهُورُ
     سِيَاقَهُ.
   - الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
   correct_answer: عِنْدَ تَطْبِيقِ بِنَاءِ تَسَلْسُلٍ إِقْنَاعِيٍّ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ

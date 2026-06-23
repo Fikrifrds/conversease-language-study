@@ -1,11 +1,15 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ،
+    أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَ..."'
 - word: اِتِّجَاهٌ
   meaning_id: arah
-  usage_note: 'Dipakai untuk arti "arah". Contoh: "فِي مَهَارَةِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ
+  usage_note: 'Dipakai untuk arti "arah". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ
     شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَ..."'
 - word: مَسَارٌ
   meaning_id: jalur/arah
-  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي مَهَارَةِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ،
+  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ،
     أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -19,15 +23,11 @@ vocabulary:
   meaning_id: langkah
   usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ
     إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ
+    بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ
-    رَسْمِيٍّ؟"'
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُطَبِّقُ مَهَارَةَ تَحْدِيدِ الِاتِّجَاهِ
+    بِوُضُوحٍ فِي حِوَارٍ رَسْمِيٍّ؟"'

@@ -1,10 +1,10 @@
 # Identifying Assumptions
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk identifying hidden assumptions dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk identifikasi asumsi tersembunyi dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang. Fokus lesson ini adalah identifying hidden assumptions, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu menganalisis asumsi, menantang argumen, menyajikan bukti, dan merespons tekanan dengan tetap tenang. Fokus lesson ini adalah identifikasi asumsi tersembunyi, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

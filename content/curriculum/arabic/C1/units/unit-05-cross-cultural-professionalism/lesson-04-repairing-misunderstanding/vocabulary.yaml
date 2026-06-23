@@ -1,19 +1,23 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ،
+    قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِ..."'
 - word: إِصْلَاحٌ
   meaning_id: perbaikan
-  usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
+  usage_note: 'Dipakai untuk arti "perbaikan". Contoh: "فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
     أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِ..."'
 - word: سُوءٌ
   meaning_id: keburukan/salah
-  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ،
+  usage_note: 'Dipakai untuk arti "keburukan/salah". Contoh: "فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ،
     قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِ..."'
 - word: فَهْمٌ
   meaning_id: pemahaman
-  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
+  usage_note: 'Dipakai untuk arti "pemahaman". Contoh: "فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
     أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِ..."'
 - word: السِّيَاقُ
   meaning_id: konteks
-  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
+  usage_note: 'Dipakai untuk arti "konteks". Contoh: "فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ
     أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: norma/standar
   usage_note: 'Dipakai untuk arti "norma/standar". Contoh: "فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ
     مُخْتَلِفَةٍ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُع..."'

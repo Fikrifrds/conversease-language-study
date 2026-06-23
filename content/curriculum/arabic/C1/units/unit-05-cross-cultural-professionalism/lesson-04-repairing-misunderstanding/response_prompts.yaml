@@ -1,12 +1,12 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill repairing misunderstanding, Sebelum merespons, kita
-    harus membaca konteks dengan cermat.'
-  target_response: فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan perbaikan salah paham, sebelum merespons, kita harus
+    membaca konteks dengan cermat.'
+  target_response: فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
     السِّيَاقَ بِدِقَّةٍ.
   acceptable_responses:
-  - فِي مَهَارَةِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan repairing misunderstanding, Bisakah saya bertanya
-    dengan cara yang lebih tactful?'
+  - فِي تَدْرِيبِ إِصْلَاحِ سُوءِ الْفَهْمِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan perbaikan salah paham, bisakah saya bertanya dengan
+    cara yang lebih tactful?'
   target_response: عِنْدَ تَطْبِيقِ إِصْلَاحِ سُوءِ الْفَهْمِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ
     أَكْثَرَ لَبَاقَةً؟
   acceptable_responses:
@@ -15,10 +15,7 @@ prompts:
   target_response: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
   acceptable_responses:
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham,
-    jadi mari kita merumuskan ulang idenya.'
-  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
-    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+- prompt: 'Ucapkan dalam bahasa Arab: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.'
+  target_response: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
   acceptable_responses:
-  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ
-    صِيَاغَةَ الْفِكْرَةِ.
+  - يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.

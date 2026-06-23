@@ -1,10 +1,10 @@
 # Qualifying Your Opinion
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk qualifying opinion before making a claim dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk pembatasan opini sebelum menyampaikan klaim dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan. Fokus lesson ini adalah qualifying opinion before making a claim, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu menyampaikan opini yang tidak hitam-putih: ada tingkat keyakinan, sisi lain, batasan, dan penutup yang tetap sopan. Fokus lesson ini adalah pembatasan opini sebelum menyampaikan klaim, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

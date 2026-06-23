@@ -1,12 +1,12 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill presenting relevant evidence, Saya pikir asumsi dasarnya
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan penyajian bukti yang relevan, saya pikir asumsi dasarnya
     di sini belum disebutkan dengan jelas.'
-  target_response: فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
+  target_response: فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
     الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
   acceptable_responses:
-  - فِي مَهَارَةِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+  - فِي تَدْرِيبِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
     هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan presenting relevant evidence, Kita bisa menantang
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan penyajian bukti yang relevan, kita bisa menantang
     argumen ini dari sisi bukti.'
   target_response: عِنْدَ تَطْبِيقِ تَقْدِيمِ دَلِيلٍ مُرْتَبِطٍ بِالْمَوْضُوعِ، يُمْكِنُنَا أَنْ نُحَدِّيَ
     هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.
@@ -18,10 +18,7 @@ prompts:
   target_response: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
   acceptable_responses:
   - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan
-    fokus pada poin pusat dan tidak berpanjang-panjang.'
-  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
-    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- prompt: 'Ucapkan dalam bahasa Arab: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.'
+  target_response: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
   acceptable_responses:
-  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
-    وَلَا أُطِيلُ.
+  - تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.

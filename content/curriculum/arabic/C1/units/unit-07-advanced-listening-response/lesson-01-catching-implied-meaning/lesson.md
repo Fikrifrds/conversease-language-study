@@ -1,10 +1,10 @@
 # Catching Implied Meaning
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk catching implied meaning dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk penangkapan makna tersirat dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas. Fokus lesson ini adalah catching implied meaning, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu mendengar ujaran panjang atau tidak langsung, menangkap makna tersirat, merangkum, dan bertanya follow-up berkualitas. Fokus lesson ini adalah penangkapan makna tersirat, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

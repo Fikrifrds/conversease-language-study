@@ -1,10 +1,10 @@
 # Leadership Coaching Mission
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk running a leadership coaching conversation dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan coaching kepemimpinan dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan. Fokus lesson ini adalah running a leadership coaching conversation, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu memimpin percakapan, menetapkan arah, melatih dengan pertanyaan, memberi feedback yang actionable, dan membimbing keputusan. Fokus lesson ini adalah percakapan coaching kepemimpinan, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

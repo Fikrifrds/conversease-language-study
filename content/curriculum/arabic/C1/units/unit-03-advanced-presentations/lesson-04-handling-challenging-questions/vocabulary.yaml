@@ -1,15 +1,19 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ التَّعَامُلِ مَعَ أَسْئِلَةٍ
+    صَعْبَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَ..."'
 - word: أَسْئِلَةٌ
   meaning_id: pertanyaan-pertanyaan
-  usage_note: 'Dipakai untuk arti "pertanyaan-pertanyaan". Contoh: "فِي مَهَارَةِ التَّعَامُلِ مَعَ أَسْئِلَةٍ
+  usage_note: 'Dipakai untuk arti "pertanyaan-pertanyaan". Contoh: "فِي تَدْرِيبِ التَّعَامُلِ مَعَ أَسْئِلَةٍ
     صَعْبَةٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَ..."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي مَهَارَةِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ،
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي تَدْرِيبِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَ..."'
 - word: جُمْهُورٌ
   meaning_id: audiens
-  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي مَهَارَةِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ،
+  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي تَدْرِيبِ التَّعَامُلِ مَعَ أَسْئِلَةٍ صَعْبَةٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: dampak/pengaruh
   usage_note: 'Dipakai untuk arti "dampak/pengaruh". Contoh: "الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ
     نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    إِذَا جَاءَ سُؤَالٌ صَعْبٌ، فَسَأَعْتَرِفُ بِحُدُو..."'

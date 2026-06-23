@@ -1,22 +1,22 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Dalam skill delivering an advanced presentation, Saya akan membingkai
+  prompt: Frasa mana yang berarti "Dalam latihan presentasi lanjutan yang jelas, saya akan membingkai
     topiknya dulu agar audiens memahami konteksnya."?
   options:
-  - فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
+  - فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
     الْجُمْهُورُ سِيَاقَهُ.
   - عِنْدَ تَطْبِيقِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
     خُطْوَةً فَخُطْوَةً.
   - الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
-  correct_answer: فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا
+  correct_answer: فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا
     حَتَّى يَفْهَمَ الْجُمْهُورُ سِيَاقَهُ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saat menerapkan delivering an advanced presentation, Setelah itu, saya
-    akan membangun alur persuasif langkah demi langkah."?
+  prompt: Frasa mana yang berarti "Saat menerapkan presentasi lanjutan yang jelas, setelah itu, saya akan
+    membangun alur persuasif langkah demi langkah."?
   options:
   - عِنْدَ تَطْبِيقِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ الْإِقْنَاعِيَّ
     خُطْوَةً فَخُطْوَةً.
-  - فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
+  - فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَفْهَمَ
     الْجُمْهُورُ سِيَاقَهُ.
   - الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ.
   correct_answer: عِنْدَ تَطْبِيقِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ، بَعْدَ ذَلِكَ، سَأَبْنِي التَّسَلْسُلَ

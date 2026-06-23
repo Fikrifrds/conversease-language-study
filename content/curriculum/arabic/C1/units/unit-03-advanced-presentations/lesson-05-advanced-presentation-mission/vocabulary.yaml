@@ -1,19 +1,23 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ
+    وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَف..."'
 - word: عَرْضٌ
   meaning_id: presentasi/tawaran
-  usage_note: 'Dipakai untuk arti "presentasi/tawaran". Contoh: "فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ
+  usage_note: 'Dipakai untuk arti "presentasi/tawaran". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ
     وَاضِحٍ، سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَف..."'
 - word: وَاضِحٌ
   meaning_id: jelas
-  usage_note: 'Dipakai untuk arti "jelas". Contoh: "فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
+  usage_note: 'Dipakai untuk arti "jelas". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَف..."'
 - word: أَوَّلًا
   meaning_id: pertama
-  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
+  usage_note: 'Dipakai untuk arti "pertama". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَف..."'
 - word: جُمْهُورٌ
   meaning_id: audiens
-  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي مَهَارَةِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
+  usage_note: 'Dipakai untuk arti "audiens". Contoh: "فِي تَدْرِيبِ تَقْدِيمِ عَرْضٍ مُتَقَدِّمٍ وَاضِحٍ،
     سَأُؤَطِّرُ الْمَوْضُوعَ أَوَّلًا حَتَّى يَف..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: alasan
   usage_note: 'Dipakai untuk arti "alasan". Contoh: "الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ نَنْتَقِلَ
     مِنَ السَّبَبِ إِلَى التَّأْثِيرِ."'
-- word: تَأْثِيرٌ
-  meaning_id: dampak/pengaruh
-  usage_note: 'Dipakai untuk arti "dampak/pengaruh". Contoh: "الِانْتِقَالُ الْأَدَقُّ هُنَا هُوَ أَنْ
-    نَنْتَقِلَ مِنَ السَّبَبِ إِلَى التَّأْثِيرِ."'

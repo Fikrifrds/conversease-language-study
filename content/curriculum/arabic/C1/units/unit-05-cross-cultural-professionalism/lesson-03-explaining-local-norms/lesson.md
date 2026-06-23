@@ -1,10 +1,10 @@
 # Explaining Local Norms
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk explaining local norms dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk penjelasan norma lokal dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah explaining local norms, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah penjelasan norma lokal, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_cross_cultural_mission
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-learner_goal: Latih percakapan Arab C1 untuk running a cross-cultural conversation dengan nuance, struktur,
-  presisi, dan respons profesional.
+opening_line: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+learner_goal: Latih percakapan Arab C1 untuk percakapan lintas budaya dengan nuansa, struktur, presisi,
+  dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُحَوِّلُ هَذِهِ الْمَهَارَةَ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ
+- coach: كَيْفَ تُحَوِّلُ مَهَارَةَ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ إِلَى خُطْوَةٍ عَمَلِيَّةٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ
     أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.'
-  sample_answer: فِي مَهَارَةِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ
+  sample_answer: فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ
     نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
-  focus: 'Membaca konteks. Fokus lesson: running a cross-cultural conversation.'
+  focus: 'Membaca konteks. Fokus lesson: percakapan lintas budaya.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - إِدَارَةِ
   - حِوَارٍ
   - عَبْرَ
-  indonesian_explanation: Dalam skill running a cross-cultural conversation, Sebelum merespons, kita harus
-    membaca konteks dengan cermat.
+  indonesian_explanation: Dalam latihan percakapan lintas budaya, sebelum merespons, kita harus membaca
+    konteks dengan cermat.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ
     بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، هَلْ
@@ -36,12 +36,12 @@ turns:
   - إِدَارَةِ
   - حِوَارٍ
   - عَبْرَ
-  indonesian_explanation: Saat menerapkan running a cross-cultural conversation, Bisakah saya bertanya
-    dengan cara yang lebih tactful?
+  indonesian_explanation: Saat menerapkan percakapan lintas budaya, bisakah saya bertanya dengan cara
+    yang lebih tactful?
 - coach: 'استخدم الفكرة: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
   hint: 'Jawab dengan struktur C1 memakai: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
   sample_answer: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-  focus: Menjelaskan norma lokal. Pakai sebagai penghubung dalam running a cross-cultural conversation.
+  focus: Menjelaskan norma lokal. Pakai sebagai penghubung dalam percakapan lintas budaya.
   expected_keywords:
   - فِي
   - بَلَدِي،
@@ -49,31 +49,27 @@ turns:
   - الْمِعْيَارُ
   - يُفْهَمُ
   indonesian_explanation: Di negara saya, norma ini dipahami dengan cara yang berbeda.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ،
-    فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ
-    هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
-    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
-  focus: Memperbaiki misunderstanding. Gunakan untuk repair dalam running a cross-cultural conversation.
+- coach: 'استخدم الفكرة: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ
+    الْفِكْرَةِ.'
+  sample_answer: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+  focus: Memperbaiki misunderstanding. Gunakan untuk repair dalam percakapan lintas budaya.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham, jadi mari
-    kita merumuskan ulang idenya.
+  - يَبْدُو
+  - أَنَّ
+  - هُنَاكَ
+  - سُوءَ
+  - فَهْمٍ،
+  indonesian_explanation: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
 target_phrases:
-- فِي مَهَارَةِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+- فِي تَدْرِيبِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
   بِدِقَّةٍ.
 - عِنْدَ تَطْبِيقِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
   لَبَاقَةً؟
 - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ
-  صِيَاغَةَ الْفِكْرَةِ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ،
-  لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
+- يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+- فِي خِتَامِ إِدَارَةِ حِوَارٍ عَبْرَ الثَّقَافَاتِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا
+  مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
 rubric:
   speaking:
     minimum_score: 76

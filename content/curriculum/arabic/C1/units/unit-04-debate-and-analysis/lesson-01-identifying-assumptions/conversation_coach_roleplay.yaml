@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_identifying_assumptions
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟
-learner_goal: Latih percakapan Arab C1 untuk identifying hidden assumptions dengan nuance, struktur, presisi,
-  dan respons profesional.
+opening_line: كَيْفَ تُطَبِّقُ مَهَارَةَ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
+learner_goal: Latih percakapan Arab C1 untuk identifikasi asumsi tersembunyi dengan nuansa, struktur,
+  presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تُطَبِّقُ هَذِهِ الْمَهَارَةَ فِي حِوَارٍ رَسْمِيٍّ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ
+- coach: كَيْفَ تُطَبِّقُ مَهَارَةَ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ فِي حِوَارٍ رَسْمِيٍّ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ
     أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.'
-  sample_answer: فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
+  sample_answer: فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ
     الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  focus: 'Mengidentifikasi asumsi. Fokus lesson: identifying hidden assumptions.'
+  focus: 'Mengidentifikasi asumsi. Fokus lesson: identifikasi asumsi tersembunyi.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - تَحْدِيدِ
   - الِافْتِرَاضَاتِ
   - الْخَفِيَّةِ،
-  indonesian_explanation: Dalam skill identifying hidden assumptions, Saya pikir asumsi dasarnya di sini
-    belum disebutkan dengan jelas.
+  indonesian_explanation: Dalam latihan identifikasi asumsi tersembunyi, saya pikir asumsi dasarnya di
+    sini belum disebutkan dengan jelas.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، يُمْكِنُنَا أَنْ نُحَدِّيَ
     هَذِهِ الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، يُمْكِنُنَا
@@ -36,13 +36,13 @@ turns:
   - تَحْدِيدِ
   - الِافْتِرَاضَاتِ
   - الْخَفِيَّةِ،
-  indonesian_explanation: Saat menerapkan identifying hidden assumptions, Kita bisa menantang argumen
+  indonesian_explanation: Saat menerapkan identifikasi asumsi tersembunyi, kita bisa menantang argumen
     ini dari sisi bukti.
 - coach: 'استخدم الفكرة: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.'
   hint: 'Jawab dengan struktur C1 memakai: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي
     أَكْثَرَ مِنْ سِيَاقٍ.'
   sample_answer: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-  focus: Menyajikan evidence. Pakai sebagai penghubung dalam identifying hidden assumptions.
+  focus: Menyajikan evidence. Pakai sebagai penghubung dalam identifikasi asumsi tersembunyi.
   expected_keywords:
   - الدَّلِيلُ
   - الْأَقْوَى
@@ -50,31 +50,27 @@ turns:
   - أَنَّ
   - النَّتِيجَةَ
   indonesian_explanation: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى
-    النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ،
-    سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
-    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
-  focus: Merespons under pressure. Gunakan untuk repair dalam identifying hidden assumptions.
+- coach: 'استخدم الفكرة: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
+  hint: 'Jawab dengan struktur C1 memakai: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
+    وَلَا أُطِيلُ.'
+  sample_answer: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  focus: Merespons under pressure. Gunakan untuk repair dalam identifikasi asumsi tersembunyi.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan fokus pada
-    poin pusat dan tidak berpanjang-panjang.
+  - تَحْتَ
+  - الضَّغْطِ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  - النُّقْطَةِ
+  indonesian_explanation: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
 target_phrases:
-- فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+- فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
   هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
 - عِنْدَ تَطْبِيقِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ
   مِنْ جِهَةِ الْأَدِلَّةِ.
 - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
-  وَلَا أُطِيلُ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
-  الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
+- تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- فِي خِتَامِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ
+  ثُمَّ فَحْصُ الدَّلِيلِ.
 rubric:
   speaking:
     minimum_score: 76

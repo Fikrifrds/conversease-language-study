@@ -1,11 +1,15 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ،
+    الْمَعْنَى الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَ..."'
 - word: طَوِيلٌ
   meaning_id: panjang
-  usage_note: 'Dipakai untuk arti "panjang". Contoh: "فِي مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى
+  usage_note: 'Dipakai untuk arti "panjang". Contoh: "فِي تَدْرِيبِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى
     الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَ..."'
 - word: ضِمْنِيٌّ
   meaning_id: tersirat
-  usage_note: 'Dipakai untuk arti "tersirat". Contoh: "فِي مَهَارَةِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى
+  usage_note: 'Dipakai untuk arti "tersirat". Contoh: "فِي تَدْرِيبِ الرَّدِّ عَلَى كَلَامٍ طَوِيلٍ، الْمَعْنَى
     الضِّمْنِيُّ هُنَا هُوَ أَنَّ الْمُتَحَ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -26,8 +30,4 @@ vocabulary:
 - word: تَأْخِيرٌ
   meaning_id: keterlambatan
   usage_note: 'Dipakai untuk arti "keterlambatan". Contoh: "إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ
-    الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ."'
-- word: قَرَارٌ
-  meaning_id: keputusan
-  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "إِذَا لَخَّصْتُ مَا سَمِعْتُهُ، فَالْفِكْرَةُ
     الرَّئِيسِيَّةُ هِيَ تَأْخِيرُ الْقَرَارِ."'

@@ -1,10 +1,10 @@
 # Transcript Translation
 
-- **Maryam:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ ضَغْطٍ؟ -> Bagaimana kamu menjaga kejelasan saat ada tekanan?
-- **Noura:** فِي مَهَارَةِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam skill communicating risk without exaggeration, Pertama kita perlu menyatukan pemahaman pihak-pihak utama.
-- **Maryam:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam communicating risk without exaggeration?
-- **Noura:** عِنْدَ تَطْبِيقِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan communicating risk without exaggeration, Lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
-- **Maryam:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang communicating risk without exaggeration saat ada tekanan?
-- **Noura:** إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Jika muncul tantangan dalam skill ini, Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
-- **Maryam:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah communicating risk without exaggeration?
-- **Noura:** فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Dalam final formulation untuk communicating risk without exaggeration, Jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.
+- **Maryam:** كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ؟ -> Bagaimana kamu menjaga kejelasan saat menerapkan penyampaian risiko tanpa berlebihan?
+- **Noura:** فِي تَدْرِيبِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، نَحْتَاجُ أَوَّلًا إِلَى تَوْحِيدِ فَهْمِ الْأَطْرَافِ الرَّئِيسِيَّةِ. -> Dalam latihan penyampaian risiko tanpa berlebihan, pertama kita perlu menyatukan pemahaman pihak-pihak utama.
+- **Maryam:** أَيُّ جُمْلَةٍ قَدْ تُسَبِّبُ سُوءَ فَهْمٍ فِي هَذَا السِّيَاقِ؟ -> Kalimat mana yang mungkin menimbulkan salah paham dalam penyampaian risiko tanpa berlebihan?
+- **Noura:** عِنْدَ تَطْبِيقِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، مِنَ الْأَفْضَلِ أَنْ نُدِيرَ التَّوَقُّعَاتِ قَبْلَ أَنْ نَعِدَ بِشَيْءٍ مُحَدَّدٍ. سَأُقَدِّمُ هَذِهِ الْمُلَاحَظَةَ بِحَسَاسِيَّةٍ، لِأَنَّ الْمَوْضُوعَ مُهِمٌّ. -> Saat menerapkan penyampaian risiko tanpa berlebihan, lebih baik kita mengelola ekspektasi sebelum menjanjikan sesuatu yang spesifik. Saya akan menyampaikan feedback ini dengan sensitif karena topiknya penting.
+- **Maryam:** كَيْفَ تُعِيدُ صِيَاغَةَ الْفِكْرَةِ تَحْتَ الضَّغْطِ؟ -> Bagaimana kamu merumuskan ulang penyampaian risiko tanpa berlebihan saat ada tekanan?
+- **Noura:** يُوجَدُ خَطَرٌ مُحْتَمَلٌ، وَلَكِنْ يُمْكِنُنَا تَقْلِيلُهُ بِخُطَّةٍ وَاضِحَةٍ. -> Ada risiko potensial, tetapi kita bisa menguranginya dengan rencana yang jelas.
+- **Maryam:** مَا الْخُطْوَةُ الْمِهَنِيَّةُ الَّتِي تَأْتِي بَعْدَ ذَلِكَ؟ -> Langkah profesional apa setelah penyampaian risiko tanpa berlebihan?
+- **Noura:** فِي خِتَامِ شَرْحِ الْمَخَاطِرِ بِدُونِ تَهْوِيلٍ، إِذَا تَوَافَقْنَا عَلَى هَذَا الْإِطَارِ، فَسَيَكُونُ التَّنْفِيذُ أَسْهَلَ. -> Pada bagian akhir penyampaian risiko tanpa berlebihan, jika kita sepakat pada kerangka ini, implementasinya akan lebih mudah.

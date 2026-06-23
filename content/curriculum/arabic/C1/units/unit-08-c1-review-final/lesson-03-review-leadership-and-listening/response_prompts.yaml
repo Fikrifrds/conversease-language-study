@@ -1,12 +1,12 @@
 prompts:
-- prompt: 'Ucapkan dalam bahasa Arab: Dalam skill reviewing leadership and listening, Saya sedang mereview
-    cara menyampaikan opini yang tepat tanpa berlebihan.'
-  target_response: فِي مَهَارَةِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ
+- prompt: 'Ucapkan dalam bahasa Arab: Dalam latihan peninjauan kepemimpinan dan listening, saya sedang
+    mereview cara menyampaikan opini yang tepat tanpa berlebihan.'
+  target_response: فِي تَدْرِيبِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ
     أُعَبِّرُ عَنْ رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
   acceptable_responses:
-  - فِي مَهَارَةِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ
+  - فِي تَدْرِيبِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، أُرَاجِعُ الْآنَ كَيْفَ أُعَبِّرُ عَنْ
     رَأْيٍ دَقِيقٍ دُونَ مُبَالَغَةٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan reviewing leadership and listening, Dalam percakapan
+- prompt: 'Ucapkan dalam bahasa Arab: Saat menerapkan peninjauan kepemimpinan dan listening, dalam percakapan
     profesional, saya akan fokus pada konteks, ekspektasi, dan risiko.'
   target_response: عِنْدَ تَطْبِيقِ مُرَاجَعَةِ الْقِيَادَةِ وَحُسْنِ الِاسْتِمَاعِ، فِي الْحِوَارِ الْمِهَنِيِّ،
     سَأُرَكِّزُ عَلَى السِّيَاقِ وَالتَّوَقُّعَاتِ وَالْمَخَاطِرِ.
@@ -18,10 +18,8 @@ prompts:
   target_response: عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
   acceptable_responses:
   - عِنْدَ الْعَرْضِ أَوِ النِّقَاشِ، سَأَبْنِي الْفِكْرَةَ بِتَسَلْسُلٍ مُقْنِعٍ.
-- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul tantangan dalam skill ini, Jika muncul salah paham,
-    saya akan memperbaikinya dengan tact dan kejelasan.'
-  target_response: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ
-    بِلَبَاقَةٍ وَوُضُوحٍ.
+- prompt: 'Ucapkan dalam bahasa Arab: Jika muncul salah paham, saya akan memperbaikinya dengan tact dan
+    kejelasan.'
+  target_response: إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.
   acceptable_responses:
-  - إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ
-    وَوُضُوحٍ.
+  - إِذَا ظَهَرَ سُوءُ فَهْمٍ، فَسَأُصْلِحُهُ بِلَبَاقَةٍ وَوُضُوحٍ.

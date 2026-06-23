@@ -1,19 +1,19 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Dalam skill asking tactful questions, Sebelum merespons, kita harus
-    membaca konteks dengan cermat."?
+  prompt: Frasa mana yang berarti "Dalam latihan pengajuan pertanyaan dengan taktis, sebelum merespons,
+    kita harus membaca konteks dengan cermat."?
   options:
-  - فِي مَهَارَةِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+  - فِي تَدْرِيبِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
   - عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-  correct_answer: فِي مَهَارَةِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
+  correct_answer: فِي تَدْرِيبِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
     السِّيَاقَ بِدِقَّةٍ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saat menerapkan asking tactful questions, Bisakah saya bertanya dengan
-    cara yang lebih tactful?"?
+  prompt: Frasa mana yang berarti "Saat menerapkan pengajuan pertanyaan dengan taktis, bisakah saya bertanya
+    dengan cara yang lebih tactful?"?
   options:
   - عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟
-  - فِي مَهَارَةِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
+  - فِي تَدْرِيبِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
   correct_answer: عِنْدَ تَطْبِيقِ طَرْحِ أَسْئِلَةٍ لَبِقَةٍ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ
     أَكْثَرَ لَبَاقَةً؟

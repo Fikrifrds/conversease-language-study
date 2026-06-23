@@ -1,23 +1,21 @@
 phrases:
-- phrase: فِي مَهَارَةِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ
+- phrase: فِي تَدْرِيبِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ
     وَاضِحَةٍ.
-  meaning_id: Dalam skill setting direction clearly, Hal pertama adalah menetapkan arah dengan jelas.
-  usage_note: 'Menetapkan direction. Fokus lesson: setting direction clearly.'
+  meaning_id: Dalam latihan penetapan arah dengan jelas, hal pertama adalah menetapkan arah dengan jelas.
+  usage_note: 'Menetapkan direction. Fokus lesson: penetapan arah dengan jelas.'
 - phrase: عِنْدَ تَطْبِيقِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، بَدَلًا مِنْ أَنْ أُعْطِيَ جَوَابًا مُبَاشِرًا،
     سَأَسْأَلُ سُؤَالًا يُفَتِّحُ التَّفْكِيرَ.
-  meaning_id: Saat menerapkan setting direction clearly, Daripada memberi jawaban langsung, saya akan
+  meaning_id: Saat menerapkan penetapan arah dengan jelas, daripada memberi jawaban langsung, saya akan
     bertanya pertanyaan yang membuka pemikiran.
   usage_note: Coaching dengan pertanyaan. Hubungkan dengan fokus lesson.
 - phrase: الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ.
   meaning_id: Feedback yang berguna adalah yang berubah menjadi langkah yang dapat diterapkan.
-  usage_note: Memberi actionable feedback. Pakai sebagai penghubung dalam setting direction clearly.
-- phrase: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ
-    بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
-  meaning_id: Jika muncul tantangan dalam skill ini, Saat mengambil keputusan, kita harus menyeimbangkan
-    kecepatan dan kualitas.
-  usage_note: Membimbing keputusan. Gunakan untuk repair dalam setting direction clearly.
-- phrase: فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ
+  usage_note: Memberi actionable feedback. Pakai sebagai penghubung dalam penetapan arah dengan jelas.
+- phrase: عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ بَيْنَ السُّرْعَةِ وَالْجَوْدَةِ.
+  meaning_id: Saat mengambil keputusan, kita harus menyeimbangkan kecepatan dan kualitas.
+  usage_note: Membimbing keputusan. Gunakan untuk repair dalam penetapan arah dengan jelas.
+- phrase: فِي خِتَامِ تَحْدِيدِ الِاتِّجَاهِ بِوُضُوحٍ، سَأُغْلِقُ الْحِوَارَ بِتَوْضِيحِ الْمَسْؤُولِيَّةِ
     وَالْمَوْعِدِ.
-  meaning_id: Dalam final formulation untuk setting direction clearly, Saya akan menutup percakapan dengan
-    memperjelas tanggung jawab dan tenggat.
+  meaning_id: Pada bagian akhir penetapan arah dengan jelas, saya akan menutup percakapan dengan memperjelas
+    tanggung jawab dan tenggat.
   usage_note: Menutup leadership conversation. Tutup percakapan sesuai fokus lesson.

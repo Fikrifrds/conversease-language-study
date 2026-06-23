@@ -1,22 +1,22 @@
 questions:
 - key: phrase_1
-  prompt: Frasa mana yang berarti "Dalam skill reading social context, Sebelum merespons, kita harus membaca
-    konteks dengan cermat."?
+  prompt: Frasa mana yang berarti "Dalam latihan pembacaan konteks sosial, sebelum merespons, kita harus
+    membaca konteks dengan cermat."?
   options:
-  - فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+  - فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
     بِدِقَّةٍ.
   - عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
     لَبَاقَةً؟
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-  correct_answer: فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ
+  correct_answer: فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ
     نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.
 - key: phrase_2
-  prompt: Frasa mana yang berarti "Saat menerapkan reading social context, Bisakah saya bertanya dengan
+  prompt: Frasa mana yang berarti "Saat menerapkan pembacaan konteks sosial, bisakah saya bertanya dengan
     cara yang lebih tactful?"?
   options:
   - عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
     لَبَاقَةً؟
-  - فِي مَهَارَةِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+  - فِي تَدْرِيبِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
     بِدِقَّةٍ.
   - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
   correct_answer: عِنْدَ تَطْبِيقِ قِرَاءَةِ السِّيَاقِ الِاجْتِمَاعِيِّ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ

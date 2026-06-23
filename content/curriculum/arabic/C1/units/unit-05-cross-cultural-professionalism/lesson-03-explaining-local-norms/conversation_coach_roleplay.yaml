@@ -1,28 +1,28 @@
 scenario_key: arabic_c1_explaining_local_norms
 mode: lesson_practice_coach
 level_code: C1
-opening_line: كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟
-learner_goal: Latih percakapan Arab C1 untuk explaining local norms dengan nuance, struktur, presisi,
+opening_line: كَيْفَ تَجْعَلُ جَوَابَكَ فِي شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ مُقْنِعًا وَمُتَوَازِنًا؟
+learner_goal: Latih percakapan Arab C1 untuk penjelasan norma lokal dengan nuansa, struktur, presisi,
   dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: كَيْفَ تَجْعَلُ هَذَا الْجَوَابَ مُقْنِعًا وَمُتَوَازِنًا؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ
+- coach: كَيْفَ تَجْعَلُ جَوَابَكَ فِي شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ مُقْنِعًا وَمُتَوَازِنًا؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ
     نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ بِدِقَّةٍ.'
-  sample_answer: فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
+  sample_answer: فِي تَدْرِيبِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ
     السِّيَاقَ بِدِقَّةٍ.
-  focus: 'Membaca konteks. Fokus lesson: explaining local norms.'
+  focus: 'Membaca konteks. Fokus lesson: penjelasan norma lokal.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - شَرْحِ
   - الْأَعْرَافِ
   - الْمَحَلِّيَّةِ،
-  indonesian_explanation: Dalam skill explaining local norms, Sebelum merespons, kita harus membaca konteks
-    dengan cermat.
+  indonesian_explanation: Dalam latihan penjelasan norma lokal, sebelum merespons, kita harus membaca
+    konteks dengan cermat.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ
     بِطَرِيقَةٍ أَكْثَرَ لَبَاقَةً؟'
   hint: 'Jawab dengan struktur C1 memakai: عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، هَلْ
@@ -36,12 +36,12 @@ turns:
   - شَرْحِ
   - الْأَعْرَافِ
   - الْمَحَلِّيَّةِ،
-  indonesian_explanation: Saat menerapkan explaining local norms, Bisakah saya bertanya dengan cara yang
+  indonesian_explanation: Saat menerapkan penjelasan norma lokal, bisakah saya bertanya dengan cara yang
     lebih tactful?
 - coach: 'استخدم الفكرة: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
   hint: 'Jawab dengan struktur C1 memakai: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.'
   sample_answer: فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-  focus: Menjelaskan norma lokal. Pakai sebagai penghubung dalam explaining local norms.
+  focus: Menjelaskan norma lokal. Pakai sebagai penghubung dalam penjelasan norma lokal.
   expected_keywords:
   - فِي
   - بَلَدِي،
@@ -49,31 +49,27 @@ turns:
   - الْمِعْيَارُ
   - يُفْهَمُ
   indonesian_explanation: Di negara saya, norma ini dipahami dengan cara yang berbeda.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ،
-    فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ
-    هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا
-    نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
-  focus: Memperbaiki misunderstanding. Gunakan untuk repair dalam explaining local norms.
+- coach: 'استخدم الفكرة: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.'
+  hint: 'Jawab dengan struktur C1 memakai: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ
+    الْفِكْرَةِ.'
+  sample_answer: يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+  focus: Memperbaiki misunderstanding. Gunakan untuk repair dalam penjelasan norma lokal.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Sepertinya ada salah paham, jadi mari
-    kita merumuskan ulang idenya.
+  - يَبْدُو
+  - أَنَّ
+  - هُنَاكَ
+  - سُوءَ
+  - فَهْمٍ،
+  indonesian_explanation: Sepertinya ada salah paham, jadi mari kita merumuskan ulang idenya.
 target_phrases:
-- فِي مَهَارَةِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
+- فِي تَدْرِيبِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، قَبْلَ أَنْ نَرُدَّ، يَجِبُ أَنْ نَقْرَأَ السِّيَاقَ
   بِدِقَّةٍ.
 - عِنْدَ تَطْبِيقِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، هَلْ يُمْكِنُ أَنْ أَسْأَلَ بِطَرِيقَةٍ أَكْثَرَ
   لَبَاقَةً؟
 - فِي بَلَدِي، هَذَا الْمِعْيَارُ يُفْهَمُ بِطَرِيقَةٍ مُخْتَلِفَةٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ
-  صِيَاغَةَ الْفِكْرَةِ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ،
-  لَا مُجَرَّدُ الصَّحَّةِ اللُّغَوِيَّةِ.
+- يَبْدُو أَنَّ هُنَاكَ سُوءَ فَهْمٍ، فَدَعِينَا نُعِيدُ صِيَاغَةَ الْفِكْرَةِ.
+- فِي خِتَامِ شَرْحِ الْأَعْرَافِ الْمَحَلِّيَّةِ، الْهَدَفُ هُوَ الْوُضُوحُ مَعَ الِاحْتِرَامِ، لَا مُجَرَّدُ
+  الصَّحَّةِ اللُّغَوِيَّةِ.
 rubric:
   speaking:
     minimum_score: 76

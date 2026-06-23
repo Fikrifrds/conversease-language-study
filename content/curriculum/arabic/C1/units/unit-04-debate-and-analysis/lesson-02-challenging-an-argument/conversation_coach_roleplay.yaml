@@ -1,27 +1,27 @@
 scenario_key: arabic_c1_challenging_an_argument
 mode: lesson_practice_coach
 level_code: C1
-opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-learner_goal: Latih percakapan Arab C1 untuk challenging an argument politely dengan nuance, struktur,
+opening_line: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ؟
+learner_goal: Latih percakapan Arab C1 untuk penantangan argumen dengan sopan dengan nuansa, struktur,
   presisi, dan respons profesional.
 max_turns: 8
 feedback_level:
   free: basic
   pro: detailed
 turns:
-- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ هَذِهِ الْمَهَارَةِ؟
-  hint: 'Jawab dengan struktur C1 memakai: فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ
+- coach: مَا الطَّرِيقَةُ الأَدَقُّ لِاسْتِخْدَامِ مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ؟
+  hint: 'Jawab dengan struktur C1 memakai: فِي تَدْرِيبِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ
     الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.'
-  sample_answer: فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
+  sample_answer: فِي تَدْرِيبِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ
     هُنَا غَيْرُ مَذْكُورٍ بِوُضُوحٍ.
-  focus: 'Mengidentifikasi asumsi. Fokus lesson: challenging an argument politely.'
+  focus: 'Mengidentifikasi asumsi. Fokus lesson: penantangan argumen dengan sopan.'
   expected_keywords:
   - فِي
-  - مَهَارَةِ
+  - تَدْرِيبِ
   - مُنَاقَشَةِ
   - حُجَّةٍ
   - بِأَدَبٍ،
-  indonesian_explanation: Dalam skill challenging an argument politely, Saya pikir asumsi dasarnya di
+  indonesian_explanation: Dalam latihan penantangan argumen dengan sopan, saya pikir asumsi dasarnya di
     sini belum disebutkan dengan jelas.
 - coach: 'استخدم الفكرة: عِنْدَ تَطْبِيقِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ
     الْحُجَّةَ مِنْ جِهَةِ الْأَدِلَّةِ.'
@@ -36,13 +36,13 @@ turns:
   - مُنَاقَشَةِ
   - حُجَّةٍ
   - بِأَدَبٍ،
-  indonesian_explanation: Saat menerapkan challenging an argument politely, Kita bisa menantang argumen
+  indonesian_explanation: Saat menerapkan penantangan argumen dengan sopan, kita bisa menantang argumen
     ini dari sisi bukti.
 - coach: 'استخدم الفكرة: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.'
   hint: 'Jawab dengan struktur C1 memakai: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي
     أَكْثَرَ مِنْ سِيَاقٍ.'
   sample_answer: الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-  focus: Menyajikan evidence. Pakai sebagai penghubung dalam challenging an argument politely.
+  focus: Menyajikan evidence. Pakai sebagai penghubung dalam penantangan argumen dengan sopan.
   expected_keywords:
   - الدَّلِيلُ
   - الْأَقْوَى
@@ -50,31 +50,27 @@ turns:
   - أَنَّ
   - النَّتِيجَةَ
   indonesian_explanation: Bukti paling kuat adalah bahwa hasilnya berulang dalam lebih dari satu konteks.
-- coach: 'استخدم الفكرة: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى
-    النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  hint: 'Jawab dengan struktur C1 memakai: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ،
-    سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
-  sample_answer: إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ
-    الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
-  focus: Merespons under pressure. Gunakan untuk repair dalam challenging an argument politely.
+- coach: 'استخدم الفكرة: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.'
+  hint: 'Jawab dengan struktur C1 memakai: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
+    وَلَا أُطِيلُ.'
+  sample_answer: تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+  focus: Merespons under pressure. Gunakan untuk repair dalam penantangan argumen dengan sopan.
   expected_keywords:
-  - إِذَا
-  - ظَهَرَ
-  - تَحَدٍّ
-  - فِي
-  - هَذِهِ
-  indonesian_explanation: Jika muncul tantangan dalam skill ini, Di bawah tekanan, saya akan fokus pada
-    poin pusat dan tidak berpanjang-panjang.
+  - تَحْتَ
+  - الضَّغْطِ،
+  - سَأُرَكِّزُ
+  - عَلَى
+  - النُّقْطَةِ
+  indonesian_explanation: Di bawah tekanan, saya akan fokus pada poin pusat dan tidak berpanjang-panjang.
 target_phrases:
-- فِي مَهَارَةِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ
+- فِي تَدْرِيبِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِيَّ هُنَا غَيْرُ
   مَذْكُورٍ بِوُضُوحٍ.
 - عِنْدَ تَطْبِيقِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، يُمْكِنُنَا أَنْ نُحَدِّيَ هَذِهِ الْحُجَّةَ مِنْ جِهَةِ
   الْأَدِلَّةِ.
 - الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ.
-- إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ، تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ
-  وَلَا أُطِيلُ.
-- فِي الصِّيَاغَةِ النِّهَائِيَّةِ لِهَذِهِ الْمَهَارَةِ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ
-  الِافْتِرَاضِ ثُمَّ فَحْصُ الدَّلِيلِ.
+- تَحْتَ الضَّغْطِ، سَأُرَكِّزُ عَلَى النُّقْطَةِ الْمَرْكَزِيَّةِ وَلَا أُطِيلُ.
+- فِي خِتَامِ مُنَاقَشَةِ حُجَّةٍ بِأَدَبٍ، لِذَلِكَ فَالرَّدُّ الْأَقْوَى هُوَ تَوْضِيحُ الِافْتِرَاضِ
+  ثُمَّ فَحْصُ الدَّلِيلِ.
 rubric:
   speaking:
     minimum_score: 76

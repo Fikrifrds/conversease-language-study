@@ -1,10 +1,10 @@
 # Cross-cultural Mission
 
-Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk running a cross-cultural conversation dengan respons yang halus, strategis, dan presisi.
+Setelah lesson ini, kamu bisa memakai bahasa Arab formal untuk percakapan lintas budaya dengan respons yang halus, strategis, dan presisi.
 
 ## Situation
 
-Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah running a cross-cultural conversation, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
+Kamu membaca konteks lintas budaya, bertanya dengan tact, menjelaskan norma lokal, dan memperbaiki salah paham. Fokus lesson ini adalah percakapan lintas budaya, jadi latihan diarahkan ke situasi C1 yang spesifik, bukan pola umum.
 
 ## Catatan Belajar
 

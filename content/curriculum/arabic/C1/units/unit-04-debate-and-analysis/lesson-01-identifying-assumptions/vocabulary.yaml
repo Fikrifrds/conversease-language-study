@@ -1,15 +1,19 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ
+    الْخَفِيَّةِ، أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِ..."'
 - word: أَعْتَقِدُ
   meaning_id: saya pikir
-  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
+  usage_note: 'Dipakai untuk arti "saya pikir". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِ..."'
 - word: اِفْتِرَاضٌ
   meaning_id: asumsi
-  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
+  usage_note: 'Dipakai untuk arti "asumsi". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِ..."'
 - word: أَسَاسِيٌّ
   meaning_id: utama
-  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي مَهَارَةِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
+  usage_note: 'Dipakai untuk arti "utama". Contoh: "فِي تَدْرِيبِ تَحْدِيدِ الِافْتِرَاضَاتِ الْخَفِيَّةِ،
     أَعْتَقِدُ أَنَّ الِافْتِرَاضَ الْأَسَاسِ..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -27,7 +31,3 @@ vocabulary:
   meaning_id: bukti/petunjuk
   usage_note: 'Dipakai untuk arti "bukti/petunjuk". Contoh: "الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ
     تَكَرَّرَتْ فِي أَكْثَرَ مِنْ سِيَاقٍ."'
-- word: نَتِيجَةٌ
-  meaning_id: hasil
-  usage_note: 'Dipakai untuk arti "hasil". Contoh: "الدَّلِيلُ الْأَقْوَى هُوَ أَنَّ النَّتِيجَةَ تَكَرَّرَتْ
-    فِي أَكْثَرَ مِنْ سِيَاقٍ."'

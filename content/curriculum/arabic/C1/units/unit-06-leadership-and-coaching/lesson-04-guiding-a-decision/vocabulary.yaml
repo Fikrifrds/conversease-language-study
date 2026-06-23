@@ -1,15 +1,19 @@
 vocabulary:
+- word: تَدْرِيبٌ
+  meaning_id: coaching/latihan
+  usage_note: 'Dipakai untuk arti "coaching/latihan". Contoh: "فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ،
+    أَوَّلُ شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ و..."'
 - word: تَوْجِيهٌ
   meaning_id: arahan
-  usage_note: 'Dipakai untuk arti "arahan". Contoh: "فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
+  usage_note: 'Dipakai untuk arti "arahan". Contoh: "فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
     شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ و..."'
 - word: قَرَارٌ
   meaning_id: keputusan
-  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
+  usage_note: 'Dipakai untuk arti "keputusan". Contoh: "فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
     شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ و..."'
 - word: مَسَارٌ
   meaning_id: jalur/arah
-  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي مَهَارَةِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
+  usage_note: 'Dipakai untuk arti "jalur/arah". Contoh: "فِي تَدْرِيبِ تَوْجِيهِ قَرَارٍ جَمَاعِيٍّ، أَوَّلُ
     شَيْءٍ هُوَ تَحْدِيدُ الْمَسَارِ بِصُورَةٍ و..."'
 - word: تَطْبِيقٌ
   meaning_id: penerapan
@@ -23,11 +27,7 @@ vocabulary:
   meaning_id: langkah
   usage_note: 'Dipakai untuk arti "langkah". Contoh: "الْمُلَاحَظَةُ الْمُفِيدَةُ هِيَ الَّتِي تَتَحَوَّلُ
     إِلَى خُطْوَةٍ قَابِلَةٍ لِلتَّطْبِيقِ."'
-- word: تَحَدٍّ
-  meaning_id: tantangan
-  usage_note: 'Dipakai untuk arti "tantangan". Contoh: "إِذَا ظَهَرَ تَحَدٍّ فِي هَذِهِ الْمَهَارَةِ،
-    عِنْدَ اتِّخَاذِ الْقَرَارِ، يَجِبُ أَنْ نُوَازِنَ..."'
 - word: كَيْفَ
   meaning_id: bagaimana
-  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ وُجُودِ
-    ضَغْطٍ؟"'
+  usage_note: 'Dipakai untuk arti "bagaimana". Contoh: "كَيْفَ تُحَافِظُ عَلَى الْوُضُوحِ عِنْدَ تَوْجِيهِ
+    قَرَارٍ جَمَاعِيٍّ؟"'
