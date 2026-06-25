@@ -6,5 +6,5 @@
 - **Dimas:** My goal is to speak more confidently by the end of this month. -> Goal aku adalah ngomong lebih pede paling lambat akhir bulan ini.
 - **Faris:** Any challenges? -> Ada tantangan?
 - **Dimas:** The biggest challenge is staying consistent after work, so I'm keeping sessions short. -> Tantangan terbesarnya tetap konsisten setelah kerja, jadi aku bikin sesi pendek.
-- **Faris:** Which do you prefer for dinner, option A or B? -> Kamu prefer yang mana buat makan malam, opsi A atau B?
+- **Faris:** Last question, a preference one: there are two evening classes, option A or B. Which do you prefer? -> Pertanyaan terakhir, soal preferensi: ada dua kelas malam, opsi A atau B. Kamu prefer yang mana?
 - **Dimas:** I prefer option B because it's cheaper, but it might be crowded. -> Aku prefer opsi B karena lebih murah, tapi mungkin rame.

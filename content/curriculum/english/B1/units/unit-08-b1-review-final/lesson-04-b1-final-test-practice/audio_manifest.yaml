@@ -1,5 +1,5 @@
 lesson_key: lesson-04-b1-final-test-practice
-status: needs_regeneration
+status: not_generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker

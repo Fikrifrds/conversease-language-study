@@ -6,7 +6,7 @@
 **Dimas:** My goal is to speak more confidently by the end of this month.
 **Faris:** Any challenges?
 **Dimas:** The biggest challenge is staying consistent after work, so I'm keeping sessions short.
-**Faris:** Which do you prefer for dinner, option A or B?
+**Faris:** Last question, a preference one: there are two evening classes, option A or B. Which do you prefer?
 **Dimas:** I prefer option B because it's cheaper, but it might be crowded.
 
 ## Audio Direction
