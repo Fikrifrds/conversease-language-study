@@ -25,20 +25,27 @@ export function LevelTestCatalog() {
       setIsLoading(true);
       setError("");
       try {
-        const nextEntries = await Promise.all(
+        const results = await Promise.all(
           COURSE_LANGUAGES.flatMap((language) =>
-            CEFR_LEVELS.map(async (levelCode) => {
-              const test = await getLevelTest(levelCode, language);
-              const attempts = await listMyLevelTestAttempts(test.attemptLevelCode);
-              return {
-                language,
-                levelCode,
-                test,
-                latestAttempt: attempts[0] ?? null
-              };
+            CEFR_LEVELS.map(async (levelCode): Promise<CatalogEntry | null> => {
+              try {
+                const test = await getLevelTest(levelCode, language);
+                const attempts = await listMyLevelTestAttempts(test.attemptLevelCode);
+                return {
+                  language,
+                  levelCode,
+                  test,
+                  latestAttempt: attempts[0] ?? null
+                };
+              } catch {
+                // A missing test for a given language/level (e.g. 404) shouldn't
+                // wipe out the rest of the catalog — skip just this entry.
+                return null;
+              }
             })
           )
         );
+        const nextEntries = results.filter((entry): entry is CatalogEntry => entry !== null);
         if (!ignore) {
           setEntries(nextEntries);
         }
