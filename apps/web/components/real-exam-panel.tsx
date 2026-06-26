@@ -66,6 +66,21 @@ function formatSeconds(totalSeconds: number | null) {
   return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
 }
 
+// Friendly Indonesian label + accent for a raw session status, so the UI never
+// shows the API's bare "in_progress"/"expired" strings.
+function sessionStatusBadge(status: string): { label: string; className: string } {
+  switch (status) {
+    case "in_progress":
+      return { label: "Sedang berlangsung", className: "bg-mint text-leaf" };
+    case "submitted":
+      return { label: "Sudah dikirim", className: "bg-mint text-leaf" };
+    case "expired":
+      return { label: "Waktu habis", className: "bg-[#fde7df] text-coral" };
+    default:
+      return { label: "Tersimpan", className: "bg-paper text-ink/70" };
+  }
+}
+
 function blankCount(text: string | null | undefined) {
   if (!text) {
     return 0;
@@ -259,8 +274,16 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     async function refreshStatus() {
       try {
         const status = await getExamRunnerStatus(sessionId);
-        if (!disposed) {
-          setTimeRemaining(status.timeRemainingSeconds);
+        if (disposed) {
+          return;
+        }
+        setTimeRemaining(status.timeRemainingSeconds);
+        // Time ran out — reflect it in the session state so the badge, timer,
+        // and actions update on load, not only after a failed save.
+        if (status.timeRemainingSeconds === 0) {
+          setManifest((current) =>
+            current && current.status === "in_progress" ? { ...current, status: "expired" } : current
+          );
         }
       } catch {
         if (!disposed) {
@@ -286,6 +309,30 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
     }
     return manifest.sections.findIndex((section) => section.id === content.section.id);
   }, [content, manifest]);
+
+  const isExpired = manifest?.status === "expired" || (Boolean(manifest) && timeRemaining === 0);
+
+  async function restartAfterExpiry() {
+    if (!manifest || !activeTemplate) {
+      return;
+    }
+    setIsStarting(true);
+    setError("");
+    setNotice("");
+    try {
+      // Terminate the expired session server-side (submit flips it to a used
+      // state) so the next start creates a fresh attempt instead of resuming it.
+      await submitRealExam(manifest.sessionId).catch(() => undefined);
+      window.localStorage.removeItem(sessionStorageKey(levelCode));
+      setManifest(null);
+      setContent(null);
+      setTimeRemaining(null);
+      setDrafts({});
+      await startExam();
+    } finally {
+      setIsStarting(false);
+    }
+  }
 
   async function startExam() {
     if (!activeTemplate) {
@@ -496,7 +543,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           {item.options?.map((option) => (
             <label
               key={option.id}
-              className="flex cursor-pointer items-start gap-3 rounded-xl border border-slate-200 px-4 py-3 text-sm text-slate-700"
+              className="flex cursor-pointer items-start gap-3 rounded-lg border border-ink/10 px-4 py-3 text-sm text-ink/70"
             >
               <input
                 type="radio"
@@ -527,7 +574,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 updateDraft(item.id, { textResponse: next.join("\n") });
               }}
               placeholder={`Blank ${index + 1}`}
-              className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none ring-0 focus:border-emerald-500"
+              className="w-full rounded-lg border border-ink/10 px-4 py-3 text-sm outline-none ring-0 focus:border-leaf"
             />
           ))}
         </div>
@@ -547,8 +594,8 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       return (
         <div className="space-y-3">
           {leftItems.map((leftItem) => (
-            <div key={leftItem.id} className="grid gap-3 rounded-xl border border-slate-200 p-4 md:grid-cols-[1fr_220px]">
-              <p className="text-sm text-slate-700">{leftItem.text}</p>
+            <div key={leftItem.id} className="grid gap-3 rounded-lg border border-ink/10 p-4 md:grid-cols-[1fr_220px]">
+              <p className="text-sm text-ink/70">{leftItem.text}</p>
               <select
                 value={draft.matchedPairs?.[leftItem.id] ?? ""}
                 onChange={(event) =>
@@ -559,7 +606,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     }
                   })
                 }
-                className="rounded-xl border border-slate-200 px-3 py-2 text-sm outline-none focus:border-emerald-500"
+                className="rounded-lg border border-ink/10 px-3 py-2 text-sm outline-none focus:border-leaf"
               >
                 <option value="">Pilih pasangan</option>
                 {rightItems.map((rightItem) => (
@@ -586,7 +633,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                 void recorder.start();
               }}
               disabled={recorder.status !== "idle"}
-              className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+              className="inline-flex items-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Mic className="h-4 w-4" />
               {recorder.status === "recording" && activeSpeakingItemId === item.id ? "Merekam..." : "Rekam jawaban"}
@@ -595,7 +642,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
               <button
                 type="button"
                 onClick={() => recorder.stop()}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700"
+                className="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-4 py-3 text-sm font-semibold text-ink/70"
               >
                 <PauseCircle className="h-4 w-4" />
                 Hentikan
@@ -608,7 +655,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             onChange={(event) => updateDraft(item.id, { textResponse: event.target.value })}
             rows={4}
             placeholder="Catatan atau transkrip opsional untuk jawaban lisanmu"
-            className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-emerald-500"
+            className="w-full rounded-lg border border-ink/10 px-4 py-3 text-sm outline-none focus:border-leaf"
           />
         </div>
       );
@@ -620,15 +667,15 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
         onChange={(event) => updateDraft(item.id, { textResponse: event.target.value })}
         rows={6}
         placeholder="Tulis jawaban di sini"
-        className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:border-emerald-500"
+        className="w-full rounded-lg border border-ink/10 px-4 py-3 text-sm outline-none focus:border-leaf"
       />
     );
   }
 
   if (isLoading) {
     return (
-      <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-        <div className="flex items-center gap-3 text-slate-700">
+      <section className="rounded-lg border border-ink/10 bg-white p-8 shadow-sm">
+        <div className="flex items-center gap-3 text-ink/70">
           <Loader2 className="h-5 w-5 animate-spin" />
           <span>Memuat exam...</span>
         </div>
@@ -638,12 +685,12 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
 
   if (!activeTemplate) {
     return (
-      <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-        <div className="flex items-start gap-3 text-slate-700">
-          <AlertCircle className="mt-0.5 h-5 w-5 text-amber-600" />
+      <section className="rounded-lg border border-ink/10 bg-white p-8 shadow-sm">
+        <div className="flex items-start gap-3 text-ink/70">
+          <AlertCircle className="mt-0.5 h-5 w-5 text-coral" />
           <div>
             <p className="font-semibold">Exam aktif untuk {levelCode.toUpperCase()} belum diterbitkan.</p>
-            <p className="mt-1 text-sm text-slate-500">Setelah template exam dipublikasikan, halaman ini akan langsung bisa dipakai.</p>
+            <p className="mt-1 text-sm text-ink/50">Setelah template exam dipublikasikan, halaman ini akan langsung bisa dipakai.</p>
           </div>
         </div>
       </section>
@@ -653,19 +700,21 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
   return (
     <div className="grid gap-6 lg:grid-cols-[minmax(0,1fr)_320px]">
       <section className="space-y-5">
-        <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <p className="text-sm font-semibold uppercase tracking-wide text-emerald-700">
+              <p className="text-sm font-semibold uppercase tracking-wide text-leaf">
                 Exam Resmi {activeTemplate.levelCode}
               </p>
-              <h1 className="mt-2 text-3xl font-semibold text-slate-900">{activeTemplate.title}</h1>
-              <p className="mt-3 max-w-3xl text-sm leading-7 text-slate-600">
+              <h1 className="mt-2 text-3xl font-semibold text-ink">{activeTemplate.title}</h1>
+              <p className="mt-3 max-w-3xl text-sm leading-7 text-ink/65">
                 {activeTemplate.description ?? "Sesi exam resmi untuk level ini."}
               </p>
             </div>
-            <div className="rounded-2xl bg-slate-900 px-5 py-4 text-white">
-              <p className="text-xs uppercase tracking-wide text-slate-300">Sisa Waktu</p>
+            <div className={`rounded-lg px-5 py-4 ${isExpired ? "bg-[#fde7df] text-coral" : "bg-ink text-white"}`}>
+              <p className={`text-xs uppercase tracking-wide ${isExpired ? "text-coral/80" : "text-white/70"}`}>
+                Sisa Waktu
+              </p>
               <p className="mt-2 flex items-center gap-2 text-2xl font-semibold">
                 <Clock3 className="h-5 w-5" />
                 {formatSeconds(timeRemaining)}
@@ -673,70 +722,75 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             </div>
           </div>
           <div className="mt-5 flex flex-wrap items-center gap-3 text-sm">
-            <span className="rounded-full bg-emerald-50 px-3 py-1 font-medium text-emerald-700">
+            <span className="rounded-full bg-mint px-3 py-1 font-medium text-leaf">
               {activeTemplate.durationMinutes} menit
             </span>
-            <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
+            <span className="rounded-full bg-paper px-3 py-1 font-medium text-ink/70">
               Nilai lulus {activeTemplate.passingScorePercent}%
             </span>
             {attemptStatus && attemptStatus.maxAttempts !== null ? (
-              <span className="rounded-full bg-slate-100 px-3 py-1 font-medium text-slate-700">
-                {attemptStatus.hasOpenSession
+              <span className="rounded-full bg-paper px-3 py-1 font-medium text-ink/70">
+                {attemptStatus.hasOpenSession && !isExpired
                   ? "Lanjutkan percobaan"
                   : `${attemptStatus.attemptsRemaining ?? 0} dari ${attemptStatus.maxAttempts} kesempatan tersisa`}
               </span>
             ) : null}
-            {!manifest ? (
+            {manifest ? (
+              <span className={`rounded-full px-3 py-1 font-medium ${sessionStatusBadge(manifest.status).className}`}>
+                {sessionStatusBadge(manifest.status).label}
+              </span>
+            ) : null}
+            {!manifest || isExpired ? (
               <button
                 type="button"
-                onClick={() => void startExam()}
-                disabled={isStarting || (attemptStatus ? !attemptStatus.canStart : false)}
-                className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+                onClick={() => void (isExpired ? restartAfterExpiry() : startExam())}
+                disabled={isStarting || (!isExpired && attemptStatus ? !attemptStatus.canStart : false)}
+                className="focus-ring inline-flex items-center gap-2 rounded-lg bg-leaf px-4 py-3 font-semibold text-white hover:bg-ink disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isStarting ? <Loader2 className="h-4 w-4 animate-spin" /> : <PlayCircle className="h-4 w-4" />}
-                {attemptStatus?.hasOpenSession ? "Lanjutkan exam" : "Mulai exam"}
+                {isExpired
+                  ? "Mulai percobaan baru"
+                  : attemptStatus?.hasOpenSession
+                    ? "Lanjutkan exam"
+                    : "Mulai exam"}
               </button>
-            ) : (
-              <span className="rounded-full bg-blue-50 px-3 py-1 font-medium text-blue-700">
-                Sesi {manifest.status}
-              </span>
-            )}
+            ) : null}
           </div>
         </div>
 
-        {manifest && manifest.status !== "submitted" && timeRemaining === 0 ? (
-          <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
-            Waktu exam sudah habis. Jawaban baru tidak bisa disimpan lagi — mulai percobaan baru untuk mengulang.
+        {isExpired ? (
+          <div className="rounded-lg border border-coral/30 bg-[#fde7df] px-4 py-3 text-sm text-coral">
+            Waktu exam sudah habis. Jawaban baru tidak bisa disimpan lagi — gunakan tombol{" "}
+            <span className="font-semibold">Mulai percobaan baru</span> di atas untuk mengulang.
           </div>
-        ) : null}
-        {error ? (
-          <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">{error}</div>
+        ) : error ? (
+          <div className="rounded-lg border border-coral/30 bg-[#fde7df] px-4 py-3 text-sm text-coral">{error}</div>
         ) : null}
         {notice ? (
-          <div className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">{notice}</div>
+          <div className="rounded-lg border border-leaf/30 bg-mint px-4 py-3 text-sm text-leaf">{notice}</div>
         ) : null}
 
         {!manifest && lastResult ? (
-          <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
             <div className="flex flex-wrap items-start justify-between gap-4">
               <div>
-                <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Hasil exam terakhir</p>
+                <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">Hasil exam terakhir</p>
                 {lastResult.status === "published" ? (
-                  <p className="mt-2 text-2xl font-semibold text-slate-900">
+                  <p className="mt-2 text-2xl font-semibold text-ink">
                     {Math.round(lastResult.scorePercent)}%{" "}
-                    <span className={lastResult.passed ? "text-emerald-600" : "text-rose-600"}>
+                    <span className={lastResult.passed ? "text-leaf" : "text-coral"}>
                       {lastResult.passed ? "Lulus" : "Belum lulus"}
                     </span>
                   </p>
                 ) : (
-                  <p className="mt-2 text-lg font-semibold text-slate-900">
+                  <p className="mt-2 text-lg font-semibold text-ink">
                     Nilai sementara {Math.round(lastResult.scorePercent)}% - jawaban speaking/writing masih direview.
                   </p>
                 )}
               </div>
               <span
                 className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                  lastResult.status === "published" ? "bg-emerald-50 text-emerald-700" : "bg-amber-50 text-amber-700"
+                  lastResult.status === "published" ? "bg-mint text-leaf" : "bg-[#fde7df] text-coral"
                 }`}
               >
                 {lastResult.status === "published" ? "Final" : "Menunggu review"}
@@ -744,18 +798,18 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
             </div>
             <div className="mt-4 grid gap-2 sm:grid-cols-2">
               {Object.entries(lastResult.sectionScores).map(([code, section]) => (
-                <div key={code} className="rounded-xl bg-slate-50 px-4 py-3">
+                <div key={code} className="rounded-lg bg-paper px-4 py-3">
                   <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium capitalize text-slate-700">
+                    <span className="font-medium capitalize text-ink/70">
                       {code.replace(/_/g, " ").toLowerCase()}
                     </span>
-                    <span className="text-slate-600">
+                    <span className="text-ink/65">
                       {section.score}/{section.max} ({Math.round(section.percentage)}%)
                     </span>
                   </div>
-                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-slate-200">
+                  <div className="mt-2 h-1.5 overflow-hidden rounded-full bg-ink/10">
                     <div
-                      className="h-full rounded-full bg-emerald-500"
+                      className="h-full rounded-full bg-leaf"
                       style={{ width: `${Math.min(100, Math.max(0, section.percentage))}%` }}
                     />
                   </div>
@@ -767,47 +821,47 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
 
         {manifest && content ? (
           <div className="space-y-4">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
               <div className="flex flex-wrap items-start justify-between gap-4">
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">
                     Bagian {content.currentSectionNumber} dari {content.totalSections}
                   </p>
-                  <h2 className="mt-2 text-2xl font-semibold text-slate-900">{content.section.title}</h2>
-                  <p className="mt-2 text-sm text-slate-600">{content.section.description}</p>
+                  <h2 className="mt-2 text-2xl font-semibold text-ink">{content.section.title}</h2>
+                  <p className="mt-2 text-sm text-ink/65">{content.section.description}</p>
                 </div>
-                <span className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700">
+                <span className="rounded-full bg-paper px-3 py-1 text-sm font-medium text-ink/70">
                   {content.section.durationMinutes} min
                 </span>
               </div>
             </div>
 
             {content.items.map((item, index) => (
-              <article key={item.id} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <article key={item.id} className="rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
                 <div className="flex items-start justify-between gap-4">
                   <div>
-                    <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-ink/50">
                       Soal {index + 1}
                     </p>
-                    <h3 className="mt-2 text-lg font-semibold text-slate-900">{item.promptText}</h3>
+                    <h3 className="mt-2 text-lg font-semibold text-ink">{item.promptText}</h3>
                   </div>
-                  <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700">
+                  <span className="rounded-full bg-paper px-3 py-1 text-xs font-medium text-ink/70">
                     {item.scorePoints} pts
                   </span>
                 </div>
 
                 {item.stimulusText ? (
-                  <div className="mt-4 rounded-2xl bg-slate-50 p-4">
+                  <div className="mt-4 rounded-lg bg-paper p-4">
                     {/* Hide the listening transcript when real audio exists — reading it would
                         defeat the listening test. Gapped (fill-blank) text stays visible. */}
                     {content.section.code === "LISTENING" &&
                     item.stimulusAudioUrl &&
                     !item.stimulusText.includes("[BLANK]") ? (
-                      <p className="text-sm font-medium text-slate-600">
+                      <p className="text-sm font-medium text-ink/65">
                         Dengarkan audio, lalu jawab. Audio bisa diputar ulang.
                       </p>
                     ) : (
-                      <p className="whitespace-pre-wrap text-sm leading-7 text-slate-700">{item.stimulusText}</p>
+                      <p className="whitespace-pre-wrap text-sm leading-7 text-ink/70">{item.stimulusText}</p>
                     )}
                     <div className="mt-3 flex flex-wrap gap-3">
                       {item.stimulusAudioUrl ? (
@@ -816,7 +870,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                         <button
                           type="button"
                           onClick={() => speakStimulus(item)}
-                          className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700"
+                          className="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-4 py-2 text-sm font-semibold text-ink/70"
                         >
                           <PlayCircle className="h-4 w-4" />
                           Putar audio prompt
@@ -830,12 +884,12 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
               </article>
             ))}
 
-            <div className="flex flex-wrap justify-between gap-3 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="flex flex-wrap justify-between gap-3 rounded-lg border border-ink/10 bg-white p-6 shadow-sm">
               <button
                 type="button"
                 onClick={() => void saveCurrentSection()}
                 disabled={isSaving || isSubmitting}
-                className="inline-flex items-center gap-2 rounded-xl border border-slate-300 px-4 py-3 text-sm font-semibold text-slate-700 disabled:cursor-not-allowed disabled:opacity-60"
+                className="inline-flex items-center gap-2 rounded-lg border border-ink/20 px-4 py-3 text-sm font-semibold text-ink/70 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {isSaving ? <Loader2 className="h-4 w-4 animate-spin" /> : <Save className="h-4 w-4" />}
                 Simpan bagian
@@ -847,7 +901,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     type="button"
                     onClick={() => void saveAndContinue()}
                     disabled={isSaving || isSubmitting}
-                    className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+                    className="inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isSaving ? <Loader2 className="h-4 w-4 animate-spin" /> : <CheckCircle2 className="h-4 w-4" />}
                     Simpan dan lanjut
@@ -857,7 +911,7 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                     type="button"
                     onClick={() => void finishExam()}
                     disabled={isSaving || isSubmitting}
-                    className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+                    className="inline-flex items-center gap-2 rounded-lg bg-leaf px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
                   >
                     {isSubmitting ? <Loader2 className="h-4 w-4 animate-spin" /> : <Send className="h-4 w-4" />}
                     Kirim exam
@@ -870,8 +924,8 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       </section>
 
       <aside className="space-y-4">
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Bagian</h2>
+        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-ink">Bagian</h2>
           <div className="mt-4 space-y-3">
             {(manifest?.sections ?? []).map((section) => {
               const isActive = content?.section.id === section.id;
@@ -881,10 +935,10 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
                   type="button"
                   onClick={() => void openSection(section.id)}
                   disabled={isSaving || isSubmitting}
-                  className={`w-full rounded-2xl border px-4 py-3 text-left ${
+                  className={`w-full rounded-lg border px-4 py-3 text-left ${
                     isActive
-                      ? "border-emerald-500 bg-emerald-50 text-emerald-800"
-                      : "border-slate-200 bg-white text-slate-700"
+                      ? "border-leaf bg-mint text-leaf"
+                      : "border-ink/10 bg-white text-ink/70"
                   } disabled:cursor-not-allowed disabled:opacity-60`}
                 >
                   <p className="text-xs font-semibold uppercase tracking-wide">{section.code}</p>
@@ -895,9 +949,9 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           </div>
         </section>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-semibold text-slate-900">Catatan Penilaian</h2>
-          <ul className="mt-4 space-y-3 text-sm leading-6 text-slate-600">
+        <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+          <h2 className="text-lg font-semibold text-ink">Catatan Penilaian</h2>
+          <ul className="mt-4 space-y-3 text-sm leading-6 text-ink/65">
             <li>Waktu berjalan setelah exam dimulai.</li>
             <li>Jawaban disimpan saat kamu menyimpan atau berpindah bagian.</li>
             <li>Speaking dan writing dapat menunggu review sebelum hasil final diterbitkan.</li>
