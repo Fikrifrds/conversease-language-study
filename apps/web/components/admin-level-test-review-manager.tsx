@@ -5,9 +5,9 @@ import { ClipboardCheck, RefreshCcw, Save, ShieldCheck } from "lucide-react";
 import { CEFR_LEVELS } from "@conversease/shared";
 import {
   listAdminLevelTestAttempts,
-  scoreAdminLevelTestAttempt
+  scoreAdminLevelTestAttempt,
+  type LevelTestAttempt
 } from "@/lib/admin-level-test-api";
-import type { LevelTestAttempt } from "@/lib/learning-api";
 import type { AuthUser } from "@/lib/auth-api";
 
 const levelFilterOptions = [

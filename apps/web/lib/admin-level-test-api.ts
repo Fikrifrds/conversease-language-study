@@ -1,5 +1,53 @@
-import type { LevelTest, LevelTestAttempt } from "@/lib/learning-api";
 import { getAuthToken } from "@/lib/auth-api";
+
+// The legacy self-assessment level test (replaced for students by the real
+// exam) is still reviewed by admins here, so its shapes live with the admin API.
+export type LevelTestSection = {
+  key: string;
+  title: string;
+  weight: number;
+  minimumScore: number;
+  task: {
+    type: string;
+    prompt: string;
+    successCriteria: string[];
+  };
+};
+
+export type LevelTest = {
+  language: string;
+  languageCode: string;
+  levelCode: string;
+  attemptLevelCode: string;
+  title: string;
+  status: string;
+  description: string;
+  overallThreshold: number;
+  lessonCompletionRequiredPercent: number;
+  criticalSkills: string[];
+  sections: LevelTestSection[];
+};
+
+export type LevelTestAttempt = {
+  id: string;
+  userId: string;
+  levelCode: string;
+  status: "in_progress" | "submitted" | "reviewed";
+  lessonCompletionPercent: number | null;
+  scores: Record<string, number>;
+  responses: Record<string, unknown>;
+  evaluationSnapshot: LevelTest;
+  overallScore: number | null;
+  passed: boolean | null;
+  missingRequirements: string[];
+  weakSkills: string[];
+  startedAt: string;
+  submittedAt: string | null;
+  reviewedAt: string | null;
+  reviewedBy: string | null;
+  adminNotes: string | null;
+  updatedAt: string;
+};
 
 type ApiResponse<T> = {
   data: T;

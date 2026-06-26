@@ -223,7 +223,7 @@ export function UserAccountMenu() {
                 Tagihan & Paket
               </MenuLink>
               <MenuLink href={productRoutes.levelTests} icon={Award} onClick={() => setOpen(false)}>
-                Level Tests
+                Exam English
               </MenuLink>
               <MenuLink href="/settings" icon={Settings} onClick={() => setOpen(false)}>
                 Pengaturan

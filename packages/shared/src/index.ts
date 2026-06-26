@@ -35,17 +35,8 @@ export const productRoutes = {
   pricing: "/pricing",
   billing: "/billing",
   progress: "/progress",
-  levelTests: "/level-tests",
-  levelTestA1: "/level-test/A1"
+  levelTests: "/level-tests"
 } as const;
-
-export function levelTestRoute(levelCode: string, language = "english") {
-  const normalizedLanguage = language.toLowerCase();
-  if (normalizedLanguage === "english" || normalizedLanguage === "en") {
-    return `/level-test/${levelCode.toUpperCase()}`;
-  }
-  return `/level-test/${normalizedLanguage}/${levelCode.toUpperCase()}`;
-}
 
 export const a1Thresholds = {
   overall: 70,
