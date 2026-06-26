@@ -12,6 +12,10 @@ export const TRACKS: { language: CourseLanguage; status: TrackStatus }[] = [
   { language: "arabic", status: "coming_soon" }
 ];
 
+// Public production origin, used for metadataBase, canonical URLs, sitemap, and
+// robots. Override with NEXT_PUBLIC_SITE_URL at deploy time if the host changes.
+export const SITE_URL = "https://conversease.com";
+
 export const skillLabels = {
   speaking_conversation: "Speaking",
   listening: "Listening",

@@ -1,12 +1,25 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle2, Play } from "lucide-react";
+import { SITE_URL } from "@conversease/shared";
 import { ActionButton } from "@/components/action-button";
 import { BrandMark } from "@/components/brand-mark";
 import { LandingAuthAction } from "@/components/landing-auth-action";
 import { LandingCoachCta } from "@/components/landing-coach-cta";
 import { SectionHeading } from "@/components/section-heading";
 import { learningLoop, mission, plans } from "@/lib/data";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? SITE_URL;
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Conversease",
+  url: siteUrl,
+  description:
+    "Belajar bahasa Inggris lewat percakapan nyata untuk orang Indonesia, dari level A1 sampai C1.",
+  logo: `${siteUrl}/favicon.ico`
+};
 
 export default function HomePage() {
   const heroStats = [
@@ -17,6 +30,10 @@ export default function HomePage() {
 
   return (
     <main className="bg-paper text-ink">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
       <section className="relative overflow-hidden">
         <Image
           src="/images/hero-realistic.png"

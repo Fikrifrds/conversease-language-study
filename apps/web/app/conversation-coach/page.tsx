@@ -1,6 +1,9 @@
 import { AppShell } from "@/components/app-shell";
 import { ConversationCoachWorkspace } from "@/components/conversation-coach-workspace";
 import { StudyDayMarker } from "@/components/study-day-marker";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Conversation Coach");
 
 export default function ConversationCoachPage() {
   return (

@@ -2,6 +2,9 @@ import Link from "next/link";
 import { AppShell } from "@/components/app-shell";
 import { ReviewWorkspace } from "@/components/review-workspace";
 import { StudyDayMarker } from "@/components/study-day-marker";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Review");
 
 export default function ReviewPage() {
   return (

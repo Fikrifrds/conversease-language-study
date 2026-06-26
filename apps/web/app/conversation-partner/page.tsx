@@ -1,5 +1,8 @@
 import { AppShell } from "@/components/app-shell";
 import { ConversationPartnerWorkspace } from "@/components/conversation-partner-workspace";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Conversation Partner");
 
 export default function ConversationPartnerPage() {
   return (

@@ -1,5 +1,12 @@
+import type { Metadata } from "next";
 import { BrandMark } from "@/components/brand-mark";
 import { LoginForm } from "@/components/login-form";
+
+export const metadata: Metadata = {
+  title: "Masuk",
+  description: "Masuk ke akun Conversease untuk melanjutkan belajar bahasa Inggris lewat percakapan.",
+  alternates: { canonical: "/login" }
+};
 
 export default function LoginPage() {
   return (

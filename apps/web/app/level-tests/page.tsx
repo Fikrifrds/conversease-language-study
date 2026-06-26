@@ -1,5 +1,8 @@
 import { AppShell } from "@/components/app-shell";
 import { LevelTestCatalog } from "@/components/level-test-catalog";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Level Tests");
 
 export default function LevelTestsPage() {
   return (

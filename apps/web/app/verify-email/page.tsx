@@ -1,6 +1,9 @@
 import { Suspense } from "react";
 import { BrandMark } from "@/components/brand-mark";
 import { VerifyEmailPanel } from "@/components/verify-email-panel";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Verifikasi Email");
 
 export default function VerifyEmailPage() {
   return (

@@ -1,5 +1,8 @@
 import { AppShell } from "@/components/app-shell";
 import { OnboardingForm } from "@/components/onboarding-form";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Onboarding");
 
 export default function OnboardingPage() {
   return (

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { AppShell } from "@/components/app-shell";
@@ -19,6 +20,26 @@ const ARABIC_SECTION_LABELS: Record<string, string> = {
 
 export function generateStaticParams() {
   return lessonCatalog.map((lesson) => ({ slug: lesson.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const lesson = lessonsBySlug[params.slug];
+
+  if (!lesson) {
+    return { title: "Lesson tidak ditemukan", robots: { index: false, follow: false } };
+  }
+
+  // Only English lessons are public-facing for now; keep Arabic out of search
+  // results while that track is still in coming-soon.
+  if (lesson.language !== "english") {
+    return { title: lesson.title, robots: { index: false, follow: false } };
+  }
+
+  return {
+    title: lesson.title,
+    description: lesson.conversationGoal,
+    alternates: { canonical: `/lessons/${lesson.slug}` }
+  };
 }
 
 export default function LessonPage({ params }: { params: { slug: string } }) {

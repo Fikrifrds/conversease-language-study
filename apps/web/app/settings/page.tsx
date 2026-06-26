@@ -1,5 +1,8 @@
 import { Bell, ShieldCheck } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Pengaturan");
 
 export default function SettingsPage() {
   return (

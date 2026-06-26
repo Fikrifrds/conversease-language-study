@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -13,6 +14,25 @@ type Course = (typeof courses)[number];
 
 export function generateStaticParams() {
   return courses.map((course) => ({ slug: course.slug }));
+}
+
+export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
+  const course = courses.find((item) => item.slug === params.slug);
+
+  if (!course) {
+    return { title: "Kurikulum tidak ditemukan", robots: { index: false, follow: false } };
+  }
+
+  // Keep Arabic courses out of search results while that track is coming-soon.
+  if (course.language !== "english") {
+    return { title: course.title, robots: { index: false, follow: false } };
+  }
+
+  return {
+    title: `${course.title} (${course.level})`,
+    description: courseMarketingDescription(course.slug, course.outcome),
+    alternates: { canonical: `/courses/${course.slug}` }
+  };
 }
 
 export default function CourseDetailPage({ params }: { params: { slug: string } }) {

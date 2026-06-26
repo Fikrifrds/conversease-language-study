@@ -1,6 +1,9 @@
 import { Suspense } from "react";
 import { AppShell } from "@/components/app-shell";
 import { BillingManager } from "@/components/billing-manager";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Tagihan");
 
 export default function BillingPage() {
   return (

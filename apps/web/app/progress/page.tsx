@@ -4,6 +4,9 @@ import { productRoutes } from "@conversease/shared";
 import { AppShell } from "@/components/app-shell";
 import { LearningProgressReport } from "@/components/learning-progress-report";
 import { PracticeProgressSummary } from "@/components/practice-progress-summary";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Progress");
 
 export default function ProgressPage() {
   return (

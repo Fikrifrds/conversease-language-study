@@ -1,5 +1,8 @@
 import { BrandMark } from "@/components/brand-mark";
 import { ForgotPasswordForm } from "@/components/forgot-password-form";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Lupa Password");
 
 export default function ForgotPasswordPage() {
   return (

@@ -1,6 +1,9 @@
 import { Suspense } from "react";
 import { BrandMark } from "@/components/brand-mark";
 import { ResetPasswordForm } from "@/components/reset-password-form";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Reset Password");
 
 export default function ResetPasswordPage() {
   return (

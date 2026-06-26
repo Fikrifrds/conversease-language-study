@@ -5,6 +5,9 @@ import { DashboardLearningProgress } from "@/components/dashboard-learning-progr
 import { DashboardReviewToday } from "@/components/dashboard-review-today";
 import { DashboardRecommendedLessons } from "@/components/dashboard-recommended-lessons";
 import { PracticeProgressSummary } from "@/components/practice-progress-summary";
+import { noindexMetadata } from "@/lib/seo";
+
+export const metadata = noindexMetadata("Dashboard");
 
 export default function DashboardPage() {
   return (

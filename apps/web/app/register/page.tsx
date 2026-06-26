@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import { BrandMark } from "@/components/brand-mark";
 import { RegisterForm } from "@/components/register-form";
+
+export const metadata: Metadata = {
+  title: "Daftar Gratis",
+  description:
+    "Daftar gratis di Conversease dan mulai belajar bahasa Inggris lewat percakapan nyata, dari level A1 sampai C1.",
+  alternates: { canonical: "/register" }
+};
 
 export default function RegisterPage() {
   return (
