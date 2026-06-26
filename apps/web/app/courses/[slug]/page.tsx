@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, BookOpen, CheckCircle2, MessageCircle, Layers3 } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
 import { CourseProgressList } from "@/components/course-progress-list";
+import { TrackGuard } from "@/components/track-guard";
 import { versionedAssetSrc } from "@/lib/assets";
 import { courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisual } from "@/lib/course-visuals";
@@ -47,6 +48,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
 
   return (
     <AppShell>
+      <TrackGuard language={course.language}>
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
         <div className="overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm">
           <div className="grid gap-0 lg:grid-cols-[minmax(0,1fr)_420px]">
@@ -114,6 +116,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
 
         <CourseProgressList course={course} />
       </section>
+      </TrackGuard>
     </AppShell>
   );
 }

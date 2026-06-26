@@ -12,6 +12,16 @@ export const TRACKS: { language: CourseLanguage; status: TrackStatus }[] = [
   { language: "arabic", status: "coming_soon" }
 ];
 
+export function trackStatus(language: string): TrackStatus {
+  return TRACKS.find((track) => track.language === language.toLowerCase())?.status ?? "active";
+}
+
+// Whether a given course language should be visible/usable for a viewer.
+// Active tracks are open to everyone; coming-soon tracks are admin-only.
+export function isLanguageVisible(language: string, isAdmin: boolean): boolean {
+  return trackStatus(language) === "active" || isAdmin;
+}
+
 // Public production origin, used for metadataBase, canonical URLs, sitemap, and
 // robots. Override with NEXT_PUBLIC_SITE_URL at deploy time if the host changes.
 export const SITE_URL = "https://conversease.com";

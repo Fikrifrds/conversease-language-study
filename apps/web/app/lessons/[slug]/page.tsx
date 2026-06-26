@@ -5,6 +5,7 @@ import { AppShell } from "@/components/app-shell";
 import { LessonGatedBody } from "@/components/lesson-gated-body";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
 import { StudyDayMarker } from "@/components/study-day-marker";
+import { TrackGuard } from "@/components/track-guard";
 import { versionedAssetSrc } from "@/lib/assets";
 import { lessonCatalog, lessonsBySlug, lessonPlacementLabel } from "@/lib/data";
 
@@ -56,6 +57,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
 
   return (
     <AppShell requireAuth>
+      <TrackGuard language={lesson.language}>
       <StudyDayMarker />
       <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
         <div className="grid gap-6 lg:grid-cols-[minmax(0,0.72fr)_minmax(0,0.28fr)]">
@@ -107,6 +109,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
           </aside>
         </div>
       </section>
+      </TrackGuard>
     </AppShell>
   );
 }

@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Languages, Layers3 } from "lucide-react";
+import { isLanguageVisible } from "@conversease/shared";
 import { AppShell } from "@/components/app-shell";
+import { getAuthSession } from "@/lib/auth-api";
 import { versionedAssetSrc } from "@/lib/assets";
 import { courseGroupDescriptions, courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisuals } from "@/lib/course-visuals";
@@ -13,7 +15,7 @@ import { courses } from "@/lib/data";
 type LanguageFilter = "all" | "english" | "arabic";
 type Course = (typeof courses)[number];
 
-const languageFilters: Array<{ key: LanguageFilter; label: string }> = [
+const allLanguageFilters: Array<{ key: LanguageFilter; label: string }> = [
   { key: "all", label: "Semua" },
   { key: "english", label: "English" },
   { key: "arabic", label: "Arabic" }
@@ -21,7 +23,19 @@ const languageFilters: Array<{ key: LanguageFilter; label: string }> = [
 
 export default function CoursesPage() {
   const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
-  const visibleCourseGroups = groupedCourses(languageFilter);
+  const [isAdmin, setIsAdmin] = useState(false);
+
+  useEffect(() => {
+    setIsAdmin(getAuthSession()?.user.role === "admin");
+  }, []);
+
+  // Coming-soon tracks (e.g. Arabic) are admin-only — hide their tab and group.
+  const languageFilters = allLanguageFilters.filter(
+    (item) => item.key === "all" || isLanguageVisible(item.key, isAdmin)
+  );
+  const visibleCourseGroups = groupedCourses(languageFilter).filter((group) =>
+    isLanguageVisible(group.language, isAdmin)
+  );
 
   return (
     <AppShell>
