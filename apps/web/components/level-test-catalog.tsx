@@ -2,8 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ArrowRight, ClipboardCheck, Loader2 } from "lucide-react";
-import { CEFR_LEVELS, COURSE_LANGUAGES, levelTestRoute } from "@conversease/shared";
+import { ArrowRight, ClipboardCheck, Clock, Loader2 } from "lucide-react";
+import { CEFR_LEVELS, TRACKS, levelTestRoute, type TrackStatus } from "@conversease/shared";
+import { getAuthSession } from "@/lib/auth-api";
 import { getLevelTest, listMyLevelTestAttempts, type LevelTest, type LevelTestAttempt } from "@/lib/learning-api";
 
 type CatalogEntry = {
@@ -17,16 +18,26 @@ export function LevelTestCatalog() {
   const [entries, setEntries] = useState<CatalogEntry[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState("");
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     let ignore = false;
+
+    const admin = getAuthSession()?.user.role === "admin";
+    setIsAdmin(admin);
+
+    // Coming-soon tracks are only loaded for admins; regular users see a
+    // disabled "Coming Soon" card instead.
+    const visibleLanguages = TRACKS.filter(
+      (track) => track.status === "active" || admin
+    ).map((track) => track.language);
 
     async function loadCatalog() {
       setIsLoading(true);
       setError("");
       try {
         const results = await Promise.all(
-          COURSE_LANGUAGES.flatMap((language) =>
+          visibleLanguages.flatMap((language) =>
             CEFR_LEVELS.map(async (levelCode): Promise<CatalogEntry | null> => {
               try {
                 const test = await getLevelTest(levelCode, language);
@@ -86,15 +97,28 @@ export function LevelTestCatalog() {
 
   return (
     <div className="space-y-8">
-      {COURSE_LANGUAGES.map((language) => {
+      {TRACKS.map(({ language, status }) => {
         const trackEntries = entries.filter((entry) => entry.language === language);
+        const isComingSoon = status === "coming_soon";
+
+        // Non-admins see coming-soon tracks as a single disabled placeholder.
+        if (isComingSoon && !isAdmin) {
+          return <ComingSoonTrack key={language} language={language} />;
+        }
 
         return (
           <section key={language}>
             <div className="mb-4 flex items-end justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold uppercase text-leaf">Track Level Test</p>
-                <h2 className="mt-1 text-2xl font-semibold">{languageLabel(language)} Track</h2>
+                <h2 className="mt-1 flex items-center gap-2 text-2xl font-semibold">
+                  {languageLabel(language)} Track
+                  {isComingSoon ? (
+                    <span className="rounded-lg bg-paper px-2 py-1 text-xs font-semibold uppercase text-ink/60">
+                      Admin preview
+                    </span>
+                  ) : null}
+                </h2>
               </div>
               <p className="text-sm font-semibold text-ink/45">{trackEntries.length} level test</p>
             </div>
@@ -158,6 +182,30 @@ export function LevelTestCatalog() {
         );
       })}
     </div>
+  );
+}
+
+function ComingSoonTrack({ language }: { language: string }) {
+  return (
+    <section>
+      <div className="mb-4">
+        <p className="text-xs font-semibold uppercase text-leaf">Track Level Test</p>
+        <h2 className="mt-1 text-2xl font-semibold">{languageLabel(language)} Track</h2>
+      </div>
+      <article className="rounded-lg border border-dashed border-ink/15 bg-paper p-6 text-center shadow-sm">
+        <div className="mx-auto grid h-12 w-12 place-items-center rounded-lg bg-white">
+          <Clock className="h-6 w-6 text-ink/50" aria-hidden="true" />
+        </div>
+        <span className="mt-4 inline-block rounded-lg bg-white px-3 py-1 text-xs font-semibold uppercase text-ink/60">
+          Coming Soon
+        </span>
+        <h3 className="mt-3 text-xl font-semibold">{languageLabel(language)} track segera hadir</h3>
+        <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-ink/60">
+          Kami sedang menyempurnakan track {languageLabel(language)}. Untuk sekarang, fokuslah pada
+          English track yang sudah siap penuh.
+        </p>
+      </article>
+    </section>
   );
 }
 

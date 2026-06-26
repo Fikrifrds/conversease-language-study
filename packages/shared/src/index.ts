@@ -1,6 +1,17 @@
 export const CEFR_LEVELS = ["A1", "A2", "B1", "B2", "C1"] as const;
 export const COURSE_LANGUAGES = ["english", "arabic"] as const;
 
+export type CourseLanguage = (typeof COURSE_LANGUAGES)[number];
+
+export type TrackStatus = "active" | "coming_soon";
+
+// Track availability. "coming_soon" tracks are only usable by admins; regular
+// users see a disabled "Coming Soon" card. Flip to "active" to launch a track.
+export const TRACKS: { language: CourseLanguage; status: TrackStatus }[] = [
+  { language: "english", status: "active" },
+  { language: "arabic", status: "coming_soon" }
+];
+
 export const skillLabels = {
   speaking_conversation: "Speaking",
   listening: "Listening",
