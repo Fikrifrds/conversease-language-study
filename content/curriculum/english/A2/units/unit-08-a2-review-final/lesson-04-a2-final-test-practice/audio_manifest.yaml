@@ -1,5 +1,5 @@
 lesson_key: lesson-04-a2-final-test-practice
-status: needs_regeneration
+status: not_generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -13,8 +13,8 @@ assets:
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Coach: English_Trustworth_Man
-    Learner: English_Diligent_Man
+    Faris: English_Trustworth_Man
+    Raka: English_Gentle-voiced_man
   line_count: 8
   audio_format: wav
   storage_key: ''
@@ -26,5 +26,5 @@ assets:
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Reframed as a natural interview (Faris/Raka) instead of Coach/Learner
+  commands; regenerate listening audio.

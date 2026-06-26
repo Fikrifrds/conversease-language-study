@@ -1,17 +1,17 @@
 # Dialogue Script
 
-**Coach:** Let's practice. Ready?  
-**Learner:** Yes, ready.  
-**Coach:** Invite a friend for coffee this weekend.  
-**Learner:** Do you want to grab coffee this weekend?  
-**Coach:** Ask for a USB-C charger.  
-**Learner:** Do you have a USB-C charger?  
-**Coach:** Say a symptom and duration.  
-**Learner:** I've had a cough for two days.  
+**Faris:** Let's do a quick A2 practice. I'll give you three situations, okay?
+**Raka:** Sure, I'm ready.
+**Faris:** First, it's the weekend. Invite me for coffee.
+**Raka:** Do you want to grab coffee this weekend?
+**Faris:** I'd love to. Now you're in a shop and you need a charger.
+**Raka:** Excuse me, do you have a USB-C charger?
+**Faris:** Yes, we do. Last one: you're at the clinic. Tell me what's wrong.
+**Raka:** I've had a cough for two days, and I feel tired.
 
 ## Audio Direction
 
 - Level: A2
 - Speed: slow and natural
 - Tone: friendly, clear, helpful
-- Voices: Coach and Learner
+- Voices: Faris and Raka
