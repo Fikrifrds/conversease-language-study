@@ -18,6 +18,7 @@ from app.data.curriculum import (
     public_course_payload,
     public_final_evaluation_payload,
     public_lesson_payload,
+    track_requires_admin,
 )
 from app.repositories.billing import BillingRepository
 from app.services.lesson_content import build_lesson_body_or_none
@@ -233,8 +234,11 @@ async def get_lesson_full(
     if lesson is None:
         raise HTTPException(status_code=404, detail="Lesson not found")
 
-    if not current_user.is_admin and not BillingRepository(db).is_pro(current_user.id):
-        raise HTTPException(status_code=403, detail="lesson_requires_pro")
+    if not current_user.is_admin:
+        if track_requires_admin(str(lesson.get("language") or "")):
+            raise HTTPException(status_code=403, detail="track_not_available")
+        if not BillingRepository(db).is_pro(current_user.id):
+            raise HTTPException(status_code=403, detail="lesson_requires_pro")
 
     body = build_lesson_body_or_none(slug)
     if body is None:
@@ -272,6 +276,12 @@ async def get_review_content(
 
     content: dict[str, dict] = {}
     for slug in dict.fromkeys(payload.slugs):
+        lesson = get_lesson_or_none(slug)
+        if lesson is None:
+            continue
+        # Skip coming-soon tracks for non-admins, even if they are Pro.
+        if not current_user.is_admin and track_requires_admin(str(lesson.get("language") or "")):
+            continue
         body = build_lesson_body_or_none(slug)
         if body is None:
             continue
@@ -378,10 +388,12 @@ async def get_my_lesson_progress(
 
 
 def ensure_lesson_access(db: Session, user: User, lesson: Optional[dict]) -> None:
-    """Block Pro-tier lessons for non-Pro users (A1 is free). Admins bypass the
-    gate so they can QA every level."""
+    """Block coming-soon tracks and Pro-tier lessons for regular users (A1 is
+    free). Admins bypass both gates so they can QA every track and level."""
     if user.is_admin:
         return
+    if track_requires_admin(str((lesson or {}).get("language") or "")):
+        raise HTTPException(status_code=403, detail="track_not_available")
     level_code = (lesson or {}).get("level_code", "")
     if level_code and lesson_requires_pro(lesson) and not BillingRepository(db).is_pro(user.id):
         raise HTTPException(

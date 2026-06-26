@@ -19,10 +19,18 @@ LANGUAGE_CODES = {"english": "en", "arabic": "ar"}
 LEVEL_TEST_LANGUAGE_PREFIXES = {"arabic": "AR"}
 # Levels free to all users; everything else requires a Pro subscription.
 FREE_LEVEL_CODES = ("A1",)
+# Track availability — must mirror TRACKS in packages/shared. "coming_soon"
+# tracks are admin-only; regular users cannot access their courses/lessons.
+TRACK_STATUS = {"english": "active", "arabic": "coming_soon"}
 
 
 def requires_pro(level_code: str) -> bool:
     return level_code.upper() not in FREE_LEVEL_CODES
+
+
+def track_requires_admin(language: str) -> bool:
+    """Whether a course language is gated to admins (a coming-soon track)."""
+    return TRACK_STATUS.get((language or "").strip().lower(), "active") != "active"
 
 
 def course_requires_pro(course: dict[str, Any]) -> bool:

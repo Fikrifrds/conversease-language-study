@@ -305,12 +305,29 @@ class LearningRoutesTest(unittest.TestCase):
                 db.commit()
             allowed = client.post(f"/api/lessons/{a2_slug}/progress/start", headers=headers, json={})
             self.assertEqual(allowed.status_code, 200)
-            allowed_arabic = client.post(
+            # Arabic is a coming-soon track: Pro is not enough, it stays blocked
+            # for non-admins.
+            still_blocked_arabic = client.post(
                 "/api/lessons/arabic-formal-greetings/progress/start",
                 headers=headers,
                 json={},
             )
-            self.assertEqual(allowed_arabic.status_code, 200)
+            self.assertEqual(still_blocked_arabic.status_code, 403)
+
+            # An admin bypasses the track gate and can access Arabic.
+            with session_local() as db:
+                db.execute(
+                    models.UserModel.__table__.update()
+                    .where(models.UserModel.id == "user-123")
+                    .values(role="admin")
+                )
+                db.commit()
+            admin_arabic = client.post(
+                "/api/lessons/arabic-formal-greetings/progress/start",
+                headers=headers,
+                json={},
+            )
+            self.assertEqual(admin_arabic.status_code, 200)
         finally:
             app.dependency_overrides.clear()
 
@@ -382,6 +399,14 @@ class LearningRoutesTest(unittest.TestCase):
             self.assertTrue(body["dialogue"])
             self.assertEqual(len(body["dialogue"]), len(body["translation"]))
             self.assertTrue(body["quiz"])
+
+            # A Pro user still cannot pull a coming-soon track's full body —
+            # Arabic content never leaves the server for non-admins.
+            arabic_full = client.get(
+                "/api/lessons/arabic-formal-greetings/full", headers=headers
+            )
+            self.assertEqual(arabic_full.status_code, 403)
+            self.assertEqual(arabic_full.json()["detail"], "track_not_available")
 
             # Missing lessons 404 even for Pro users.
             missing = client.get("/api/lessons/not-a-real-lesson/full", headers=headers)
