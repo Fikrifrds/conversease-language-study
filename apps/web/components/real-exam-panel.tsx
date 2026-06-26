@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 
 import {
+  ApiRequestError,
   ExamStartBlockedError,
   getExamAttemptStatus,
   getExamManifest,
@@ -74,6 +75,14 @@ function blankCount(text: string | null | undefined) {
 
 function safeItemDraft(drafts: DraftMap, itemId: string): ItemDraft {
   return drafts[itemId] ?? {};
+}
+
+function isExpiredSessionError(error: unknown): boolean {
+  return (
+    error instanceof ApiRequestError &&
+    error.status === 400 &&
+    error.detail.toLowerCase().includes("expired")
+  );
 }
 
 export function RealExamPanel({ levelCode }: { levelCode: string }) {
@@ -388,8 +397,20 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
       }
       setNotice("Jawaban bagian ini tersimpan.");
       return true;
-    } catch {
-      setError("Jawaban bagian ini belum bisa disimpan.");
+    } catch (saveError) {
+      // An expired session is the common case and needs its own actionable
+      // message — the generic "belum bisa disimpan" hides why saving failed.
+      if (isExpiredSessionError(saveError)) {
+        setManifest((current) => (current ? { ...current, status: "expired" } : current));
+        setTimeRemaining(0);
+        setError(
+          "Waktu exam sudah habis, jadi jawaban tidak bisa disimpan lagi. Mulai percobaan baru untuk mengulang."
+        );
+      } else if (saveError instanceof ApiRequestError && saveError.detail) {
+        setError(`Jawaban bagian ini belum bisa disimpan: ${saveError.detail}`);
+      } else {
+        setError("Jawaban bagian ini belum bisa disimpan. Periksa koneksi lalu coba lagi.");
+      }
       return false;
     } finally {
       setIsSaving(false);
@@ -683,6 +704,11 @@ export function RealExamPanel({ levelCode }: { levelCode: string }) {
           </div>
         </div>
 
+        {manifest && manifest.status !== "submitted" && timeRemaining === 0 ? (
+          <div className="rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">
+            Waktu exam sudah habis. Jawaban baru tidak bisa disimpan lagi — mulai percobaan baru untuk mengulang.
+          </div>
+        ) : null}
         {error ? (
           <div className="rounded-2xl border border-rose-200 bg-rose-50 px-4 py-3 text-sm text-rose-700">{error}</div>
         ) : null}
