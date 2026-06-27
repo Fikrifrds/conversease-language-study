@@ -7,6 +7,7 @@ import {
   Award,
   ChevronDown,
   CreditCard,
+  Crown,
   LogOut,
   Settings,
   ShieldCheck,
@@ -165,7 +166,7 @@ export function UserAccountMenu() {
           href="/pricing"
           className="focus-ring inline-flex h-9 items-center gap-1 rounded-lg bg-ink px-3 text-sm font-semibold text-white hover:bg-leaf"
         >
-          <Sparkles className="h-4 w-4" aria-hidden="true" />
+          <Crown className="h-4 w-4" aria-hidden="true" />
           <span className="hidden sm:inline">Upgrade</span>
         </Link>
       ) : null}

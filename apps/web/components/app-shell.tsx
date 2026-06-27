@@ -15,8 +15,8 @@ import { UserAccountMenu } from "@/components/user-account-menu";
 const navItems = [
   { href: productRoutes.dashboard, label: "Dashboard", shortLabel: "Dashboard", icon: Home },
   { href: productRoutes.courses, label: "Kelas", shortLabel: "Kelas", icon: BookOpen },
-  { href: productRoutes.conversationCoach, label: "Conversation Coach", shortLabel: "Coach", icon: MessageCircle },
-  { href: productRoutes.conversationPartner, label: "Conversation Partner", shortLabel: "Partner", icon: Mic },
+  { href: productRoutes.conversationCoach, label: "Coach", shortLabel: "Coach", icon: MessageCircle },
+  { href: productRoutes.conversationPartner, label: "Partner", shortLabel: "Partner", icon: Mic },
   { href: productRoutes.progress, label: "Progress", shortLabel: "Progress", icon: TrendingUp }
 ];
 
