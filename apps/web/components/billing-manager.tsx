@@ -387,7 +387,7 @@ function TransferInstruction({
   onCopy: (value: string) => void;
 }) {
   const accountNumber = orderMetadata(order, "bank_account_number");
-  const bankName = orderMetadata(order, "bank_name", "Bank Jago");
+  const bankName = orderMetadata(order, "bank_name", "BCA");
   const holder = orderMetadata(order, "bank_account_holder", "Conversease");
   const packageName = orderMetadata(order, "package_name", order.packageKey);
   const canConfirm = order.status === "pending";
@@ -426,10 +426,10 @@ function TransferInstruction({
             <p className="mt-2 text-lg font-semibold">{bankName}</p>
           </div>
           <Image
-            src="/images/bank-jago.png"
-            alt="Bank Jago"
-            width={92}
-            height={30}
+            src="/images/Logo_BCA_Biru.png"
+            alt="BCA"
+            width={140}
+            height={40}
             className="h-7 w-auto"
           />
         </div>

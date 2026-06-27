@@ -315,7 +315,7 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
               <p className="text-sm font-semibold uppercase text-leaf">Admin Access</p>
               <h1 className="mt-1 text-2xl font-semibold">Manual Transfer Approval</h1>
               <p className="mt-2 text-sm leading-6 text-ink/60">
-                Cocokkan nominal unik dengan mutasi Bank Jago sebelum approve.
+                Cocokkan nominal unik dengan mutasi BCA sebelum approve.
               </p>
             </div>
           </div>
@@ -579,7 +579,7 @@ function PaymentDetail({
           onChange={(event) => onNotesChange(event.target.value)}
           rows={3}
           className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-          placeholder="Contoh: cocok dengan mutasi Bank Jago"
+          placeholder="Contoh: cocok dengan mutasi BCA"
         />
       </label>
 

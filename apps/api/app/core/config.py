@@ -48,8 +48,8 @@ class Settings(BaseSettings):
     midtrans_is_production: bool = False
     payment_admin_email: str = "denahku.team@gmail.com"
     payment_admin_api_key: str = ""
-    manual_transfer_bank_name: str = "Bank Jago"
-    manual_transfer_account_number: str = "5001 6527 8492"
+    manual_transfer_bank_name: str = "BCA"
+    manual_transfer_account_number: str = "3300523781"
     manual_transfer_account_holder: str = "Fikri Firdaus"
     manual_transfer_unique_code_min: int = 101
     manual_transfer_unique_code_max: int = 999

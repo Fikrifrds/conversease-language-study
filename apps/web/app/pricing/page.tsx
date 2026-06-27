@@ -360,7 +360,7 @@ function CheckoutModal({
 }) {
   const canConfirm = order?.status === "pending";
   const accountNumber = order ? orderMetadata(order, "bank_account_number") : "";
-  const bankName = order ? orderMetadata(order, "bank_name", "Bank Jago") : "Bank Jago";
+  const bankName = order ? orderMetadata(order, "bank_name", "BCA") : "BCA";
   const holder = order ? orderMetadata(order, "bank_account_holder", "Conversease") : "Conversease";
 
   return (
@@ -427,7 +427,7 @@ function CheckoutModal({
                   <p className="text-sm text-ink/50">Bank tujuan</p>
                   <p className="mt-1 text-lg font-semibold">{bankName}</p>
                 </div>
-                <Image src="/images/bank-jago.png" alt="Bank Jago" width={92} height={30} className="h-7 w-auto" />
+                <Image src="/images/Logo_BCA_Biru.png" alt="BCA" width={140} height={40} className="h-7 w-auto" />
               </div>
               <div className="mt-4 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
                 <p className="flex-1 text-center font-mono text-lg tracking-normal">{accountNumber}</p>

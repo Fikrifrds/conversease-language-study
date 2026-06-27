@@ -146,7 +146,7 @@ def manual_transfer_confirmation_email(current_user: User, order: PaymentOrderMo
         ),
         cta_label="Review Pembayaran",
         cta_url=admin_url,
-        footer_note="Pastikan nominal, kode unik, tanggal, dan nama pengirim cocok dengan mutasi Bank Jago.",
+        footer_note=f"Pastikan nominal, kode unik, tanggal, dan nama pengirim cocok dengan mutasi {settings.manual_transfer_bank_name}.",
     )
     text_body = "\n".join(
         [
