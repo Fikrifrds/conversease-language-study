@@ -6,10 +6,12 @@ import { useEffect, useState } from "react";
 import { CheckCircle2, Clipboard, Landmark, ReceiptText } from "lucide-react";
 import { getAuthSession } from "@/lib/auth-api";
 import {
+  bankLogo,
   confirmManualTransfer,
   createCheckout,
   getBillingAccess,
   getCheckoutOrder,
+  orderBankAccounts,
   type BillingAccess,
   type PaymentKind,
   type PaymentOrder
@@ -386,9 +388,7 @@ function TransferInstruction({
   onConfirm: () => void;
   onCopy: (value: string) => void;
 }) {
-  const accountNumber = orderMetadata(order, "bank_account_number");
-  const bankName = orderMetadata(order, "bank_name", "BCA");
-  const holder = orderMetadata(order, "bank_account_holder", "Conversease");
+  const bankAccounts = orderBankAccounts(order);
   const packageName = orderMetadata(order, "package_name", order.packageKey);
   const canConfirm = order.status === "pending";
 
@@ -419,37 +419,43 @@ function TransferInstruction({
         ) : null}
       </div>
 
-      <div className="mt-4 rounded-lg border border-ink/10 p-4">
-        <div className="flex items-center justify-between gap-4">
-          <div>
-            <p className="text-sm text-ink/50">Bank Tujuan</p>
-            <p className="mt-2 text-lg font-semibold">{bankName}</p>
-          </div>
-          <Image
-            src="/images/Logo_BCA_Biru.png"
-            alt="BCA"
-            width={140}
-            height={40}
-            className="h-7 w-auto"
-          />
-        </div>
-        <div className="mt-4 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
-          <p className="flex-1 text-center font-mono text-lg tracking-normal">{accountNumber}</p>
-          <button
-            type="button"
-            onClick={() => onCopy(accountNumber)}
-            className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
-            aria-label="Salin nomor rekening"
-            title="Salin nomor rekening"
-          >
-            <Clipboard className="h-4 w-4" aria-hidden="true" />
-          </button>
-        </div>
-        <p className="mt-3 text-center text-sm text-ink/60">a.n. {holder}</p>
+      <div className="mt-4 space-y-3">
+        {bankAccounts.length > 1 ? (
+          <p className="text-sm text-ink/60">Transfer ke salah satu rekening berikut:</p>
+        ) : null}
+        {bankAccounts.map((account) => {
+          const logo = bankLogo(account.bankName);
+          return (
+            <div key={`${account.bankName}-${account.accountNumber}`} className="rounded-lg border border-ink/10 p-4">
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm text-ink/50">Bank Tujuan</p>
+                  <p className="mt-2 text-lg font-semibold">{account.bankName}</p>
+                </div>
+                {logo ? (
+                  <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-7 w-auto" />
+                ) : null}
+              </div>
+              <div className="mt-4 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
+                <p className="flex-1 text-center font-mono text-lg tracking-normal">{account.accountNumber}</p>
+                <button
+                  type="button"
+                  onClick={() => onCopy(account.accountNumber)}
+                  className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
+                  aria-label={`Salin nomor rekening ${account.bankName}`}
+                  title="Salin nomor rekening"
+                >
+                  <Clipboard className="h-4 w-4" aria-hidden="true" />
+                </button>
+              </div>
+              <p className="mt-3 text-center text-sm text-ink/60">a.n. {account.accountHolder}</p>
+            </div>
+          );
+        })}
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <Metric label="Bank" value={bankName} />
+        <Metric label="Bank" value={bankAccounts.map((account) => account.bankName).join(" / ") || "-"} />
         <Metric label="Status" value={statusLabel(order.status)} />
         <Metric label="Berlaku sampai" value={formatDateTime(order.expiresAt)} />
       </div>

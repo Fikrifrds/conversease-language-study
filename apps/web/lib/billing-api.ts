@@ -46,6 +46,63 @@ export type PaymentOrder = {
   updatedAt: string;
 };
 
+export type BankAccount = {
+  bankName: string;
+  accountNumber: string;
+  accountHolder: string;
+};
+
+function metadataString(value: PaymentMetadataValue | undefined, fallback = ""): string {
+  if (value === null || value === undefined || value === "") {
+    return fallback;
+  }
+  return typeof value === "string" || typeof value === "number" || typeof value === "boolean"
+    ? String(value)
+    : fallback;
+}
+
+// All destination accounts for a manual-transfer order. Reads the bank_accounts
+// list, falling back to the legacy single bank_* fields for older orders.
+export function orderBankAccounts(order: PaymentOrder): BankAccount[] {
+  const raw = order.metadata["bank_accounts"];
+  if (Array.isArray(raw) && raw.length) {
+    return raw
+      .filter((entry): entry is { [key: string]: PaymentMetadataValue } =>
+        Boolean(entry) && typeof entry === "object" && !Array.isArray(entry)
+      )
+      .map((entry) => ({
+        bankName: metadataString(entry["bank_name"]),
+        accountNumber: metadataString(entry["bank_account_number"]),
+        accountHolder: metadataString(entry["bank_account_holder"]),
+      }))
+      .filter((account) => account.bankName && account.accountNumber);
+  }
+  const bankName = metadataString(order.metadata["bank_name"]);
+  const accountNumber = metadataString(order.metadata["bank_account_number"]);
+  if (!bankName || !accountNumber) {
+    return [];
+  }
+  return [
+    {
+      bankName,
+      accountNumber,
+      accountHolder: metadataString(order.metadata["bank_account_holder"]),
+    },
+  ];
+}
+
+// Logo asset for a bank by name; null when we have no logo to show.
+export function bankLogo(bankName: string): { src: string; width: number; height: number } | null {
+  const name = bankName.trim().toLowerCase();
+  if (name.includes("bca")) {
+    return { src: "/images/Logo_BCA_Biru.png", width: 140, height: 40 };
+  }
+  if (name.includes("jago")) {
+    return { src: "/images/bank-jago.png", width: 92, height: 30 };
+  }
+  return null;
+}
+
 type ApiResponse<T> = {
   data: T;
 };

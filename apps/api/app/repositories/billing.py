@@ -264,6 +264,7 @@ class BillingRepository:
                 "bank_name": settings.manual_transfer_bank_name,
                 "bank_account_number": settings.manual_transfer_account_number,
                 "bank_account_holder": settings.manual_transfer_account_holder,
+                "bank_accounts": settings.manual_transfer_accounts,
                 "admin_email": settings.payment_admin_email,
                 "confirmation_window": f"1x{settings.manual_transfer_expire_hours} jam",
                 "expires_at": expires_at.isoformat(),

@@ -48,9 +48,13 @@ class Settings(BaseSettings):
     midtrans_is_production: bool = False
     payment_admin_email: str = "denahku.team@gmail.com"
     payment_admin_api_key: str = ""
-    manual_transfer_bank_name: str = "BCA"
-    manual_transfer_account_number: str = "3300523781"
+    manual_transfer_bank_name: str = "Bank Jago"
+    manual_transfer_account_number: str = "5001 6527 8492"
     manual_transfer_account_holder: str = "Fikri Firdaus"
+    # Optional second account; leave the bank name blank to disable it.
+    manual_transfer_bank_name_2: str = "BCA"
+    manual_transfer_account_number_2: str = "3300523781"
+    manual_transfer_account_holder_2: str = "Fikri Firdaus"
     manual_transfer_unique_code_min: int = 101
     manual_transfer_unique_code_max: int = 999
     manual_transfer_expire_hours: int = 12
@@ -126,6 +130,27 @@ class Settings(BaseSettings):
     @property
     def assemblyai_speech_models(self) -> List[str]:
         return [model.strip() for model in self.assemblyai_speech_models_raw.split(",") if model.strip()]
+
+    @property
+    def manual_transfer_accounts(self) -> List[dict]:
+        """All configured manual-transfer destination accounts. Users may pay to
+        any of them. The second account is included only when its bank is set."""
+        accounts = [
+            {
+                "bank_name": self.manual_transfer_bank_name,
+                "bank_account_number": self.manual_transfer_account_number,
+                "bank_account_holder": self.manual_transfer_account_holder,
+            }
+        ]
+        if self.manual_transfer_bank_name_2 and self.manual_transfer_account_number_2:
+            accounts.append(
+                {
+                    "bank_name": self.manual_transfer_bank_name_2,
+                    "bank_account_number": self.manual_transfer_account_number_2,
+                    "bank_account_holder": self.manual_transfer_account_holder_2,
+                }
+            )
+        return accounts
 
     @property
     def is_production(self) -> bool:
