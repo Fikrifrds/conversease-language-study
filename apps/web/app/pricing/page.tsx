@@ -181,7 +181,7 @@ export default function PricingPage() {
             <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
             <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih paket yang paling pas</h1>
             <p className="mt-3 leading-7 text-ink/70">
-              Semua paket Pro sudah termasuk English dan Arabic lengkap dalam satu akses. Pembayaran
+              Semua paket Pro membuka English track lengkap A1-C1 dalam satu akses. Pembayaran
               via transfer manual dengan nominal unik agar cepat diverifikasi admin.
             </p>
           </div>
@@ -273,7 +273,7 @@ export default function PricingPage() {
                 Tambahan menit latihan jika kuota bulanan habis.
               </p>
             </div>
-            <p className="text-sm text-ink/55">Bisa dipakai untuk English atau Arabic.</p>
+            <p className="text-sm text-ink/55">Bisa dipakai untuk latihan English track.</p>
           </div>
           <div className="mt-5 grid gap-3 md:grid-cols-3">
             {topupItems.map((topup) => (

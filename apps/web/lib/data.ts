@@ -36,8 +36,8 @@ export const plans = [
     cadence: "1 bulan",
     access: "Pro All Access 1 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Akses penuh ke English dan Arabic, feedback detail, evaluasi level, dan progress report.",
-    features: ["English track lengkap", "Arabic track lengkap", "Detailed Conversation Feedback", "Skill report dan progress"]
+    description: "Akses penuh English track A1-C1, feedback detail, evaluasi level, dan progress report.",
+    features: ["English track lengkap A1-C1", "Exam resmi per level", "Detailed Conversation Feedback", "Skill report dan progress"]
   },
   {
     key: "pro_3_months",
@@ -46,8 +46,8 @@ export const plans = [
     cadence: "3 bulan",
     access: "Pro All Access 3 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Paket lebih hemat untuk menyelesaikan satu track dengan ritme belajar rutin.",
-    features: ["English track lengkap", "Arabic track lengkap", "Detailed Conversation Feedback", "Pengingat renewal"]
+    description: "Paket lebih hemat untuk menyelesaikan English track dengan ritme belajar rutin.",
+    features: ["English track lengkap A1-C1", "Exam resmi per level", "Detailed Conversation Feedback", "Pengingat renewal"]
   },
   {
     key: "pro_12_months",
@@ -56,8 +56,8 @@ export const plans = [
     cadence: "12 bulan",
     access: "Pro All Access 12 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
-    description: "Best value untuk belajar konsisten lintas track, evaluasi level, dan review plan.",
-    features: ["English track lengkap", "Arabic track lengkap", "Skill reports", "Review plan personal"]
+    description: "Best value untuk belajar English konsisten, evaluasi level, dan review plan.",
+    features: ["English track lengkap A1-C1", "Exam resmi per level", "Skill reports", "Review plan personal"]
   }
 ];
 

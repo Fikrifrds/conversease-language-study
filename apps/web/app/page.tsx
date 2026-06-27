@@ -23,8 +23,8 @@ const organizationJsonLd = {
 
 export default function HomePage() {
   const heroStats = [
-    ["400", "lesson terstruktur"],
-    ["2", "track bahasa"],
+    ["200", "lesson terstruktur"],
+    ["5", "level CEFR"],
     ["A1-C1", "jalur bertahap"]
   ];
 
@@ -88,7 +88,7 @@ export default function HomePage() {
               Conversease
             </h1>
             <p className="mt-5 max-w-xl text-base font-medium leading-8 text-white/[0.92] sm:text-lg">
-              Belajar English dan Arabic lewat percakapan terarah: dengarkan dialog, pahami makna,
+              Belajar bahasa Inggris lewat percakapan terarah: dengarkan dialog, pahami makna,
               tirukan frasa, lalu praktik dengan feedback yang jelas.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -158,14 +158,14 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
-        <SectionHeading eyebrow="Learning Tracks" title="Satu alur untuk English dan Arabic">
+        <SectionHeading eyebrow="Learning Path" title="Satu alur belajar bahasa Inggris">
           Conversease tetap conversation-first: dengar, pahami, tirukan, respons, lalu dapat
-          feedback yang jelas untuk setiap track bahasa.
+          feedback yang jelas di setiap lesson.
         </SectionHeading>
         <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-4">
           {[
             ["English Conversation", "Dari greeting dan daily routine sampai diskusi profesional dengan level A1-C1."],
-            ["Arabic Formal", "Dialog berharakat untuk sapaan, instruksi, layanan, presentasi, dan percakapan profesional."],
+            ["Exam Resmi Per Level", "Uji kemampuan dengan exam berbobot: listening, reading, grammar, speaking, dan writing."],
             ["Bicara dengan Jelas", "Ulangi frasa berguna dan bangun rasa percaya diri pelafalan langkah demi langkah."],
             ["Feedback Percakapan", "Versi lebih baik, penjelasan Indonesia, skor, dan latihan berikutnya."]
           ].map(([title, text]) => (
@@ -181,7 +181,7 @@ export default function HomePage() {
       <section className="bg-ink text-white">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 py-16 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <SectionHeading eyebrow="Harga" title="Free + Pro" tone="light">
-            Pro membuka kurikulum English dan Arabic, feedback detail, evaluasi level, laporan
+            Pro membuka kurikulum English lengkap A1-C1, feedback detail, evaluasi level, laporan
             progress, dan latihan Conversation Coach dalam satu akses.
           </SectionHeading>
           <div className="grid gap-3 md:grid-cols-2">

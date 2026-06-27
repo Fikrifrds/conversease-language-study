@@ -333,7 +333,7 @@ export function BillingManager() {
             <h2 className="text-xl font-semibold">Top-up opsional</h2>
             <p className="mt-1 text-sm text-ink/60">Tambahan menit latihan setelah kuota bulanan habis.</p>
           </div>
-          <p className="text-sm text-ink/55">Bisa dipakai untuk English atau Arabic.</p>
+          <p className="text-sm text-ink/55">Bisa dipakai untuk latihan English track.</p>
         </div>
 
         <div className="mt-5 grid gap-3 md:grid-cols-3">
