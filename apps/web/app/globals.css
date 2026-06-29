@@ -44,6 +44,21 @@ textarea {
     linear-gradient(0deg, rgba(28, 25, 23, 0.34), rgba(28, 25, 23, 0.04) 48%, rgba(255, 250, 245, 0.08));
 }
 
+.landing-hero-bg {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(249, 115, 22, 0.18), transparent 30%),
+    radial-gradient(circle at 10% 88%, rgba(250, 204, 21, 0.12), transparent 24%),
+    linear-gradient(180deg, #fffaf5 0%, #fff7ed 100%);
+}
+
+.landing-grid {
+  background-image:
+    linear-gradient(rgba(154, 52, 18, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(154, 52, 18, 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, black, transparent 82%);
+}
+
 @media (max-width: 767px) {
   .hero-mask {
     background:

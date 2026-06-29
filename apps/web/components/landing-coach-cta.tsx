@@ -18,7 +18,7 @@ export function LandingCoachCta({ className = "" }: { className?: string }) {
   }, []);
 
   return (
-    <ActionButton href={authed ? "/conversation-coach" : "/register"} icon={Mic} tone="glass" className={className}>
+    <ActionButton href={authed ? "/conversation-coach" : "/register"} icon={Mic} tone="outline" className={className}>
       {authed ? "Mulai Conversation Coach" : "Coba Conversation Coach"}
     </ActionButton>
   );
