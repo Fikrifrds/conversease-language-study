@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Introductions di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Introductions di Indonesia.
   caption: 'Konteks percakapan nyata: Review Introductions.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: My name is ...
-  alt: Cuplikan visual classroom male untuk frasa My name is ....
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa My name is ....
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: Nice to meet you too.
-  alt: Cuplikan visual classroom male untuk frasa Nice to meet you too..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa Nice to meet you too..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I'm from Indonesia.
-  alt: Cuplikan visual classroom male untuk frasa I'm from Indonesia..
+  alt: Cuplikan visual english test interview untuk frasa I'm from Indonesia..

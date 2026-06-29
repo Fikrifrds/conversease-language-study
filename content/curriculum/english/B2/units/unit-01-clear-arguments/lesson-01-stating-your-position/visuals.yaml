@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Stating Your Position di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Stating Your Position di Indonesia.
   caption: 'Konteks percakapan nyata: Stating Your Position.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: In my view, a written update would be better.
-  alt: Cuplikan visual classroom male untuk frasa In my view, a written update would be better..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa In my view, a written update would be better..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: Because it saves time.
-  alt: Cuplikan visual classroom male untuk frasa Because it saves time..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa Because it saves time..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: I see your point, but...
-  alt: Cuplikan visual classroom male untuk frasa I see your point, but....
+  alt: Cuplikan visual english debate untuk frasa I see your point, but....

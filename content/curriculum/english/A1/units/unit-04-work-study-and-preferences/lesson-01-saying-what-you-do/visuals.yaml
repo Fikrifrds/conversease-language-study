@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Do di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Saying What You Do di Indonesia.
   caption: 'Konteks percakapan nyata: Saying What You Do.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: What do you do?
-  alt: Cuplikan visual workplace male untuk frasa What do you do?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa What do you do?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: I'm a student.
-  alt: Cuplikan visual workplace male untuk frasa I'm a student..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa I'm a student..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: What do you study?
-  alt: Cuplikan visual workplace male untuk frasa What do you study?.
+  alt: Cuplikan visual english workplace meeting untuk frasa What do you study?.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Likes di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks Talking About Likes di Indonesia.
   caption: 'Konteks percakapan nyata: Talking About Likes.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: Do you like English?
-  alt: Cuplikan visual workplace male untuk frasa Do you like English?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa Do you like English?.
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: Yes, I like it.
-  alt: Cuplikan visual workplace male untuk frasa Yes, I like it..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa Yes, I like it..
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: What do you like?
-  alt: Cuplikan visual workplace male untuk frasa What do you like?.
+  alt: Cuplikan visual english classroom untuk frasa What do you like?.

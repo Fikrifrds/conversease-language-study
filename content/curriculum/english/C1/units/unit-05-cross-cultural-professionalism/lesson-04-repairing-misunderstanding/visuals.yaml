@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Repairing Misunderstanding di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Repairing Misunderstanding di Indonesia.
   caption: 'Konteks percakapan nyata: Repairing Misunderstanding.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: I may have misunderstood their tone.
-  alt: Cuplikan visual workplace male untuk frasa I may have misunderstood their tone..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa I may have misunderstood their tone..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: I didn't mean to come across as dismissive.
-  alt: Cuplikan visual workplace male untuk frasa I didn't mean to come across as dismissive..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa I didn't mean to come across as dismissive..
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: Just to clarify, my intent was to confirm the constraints, not reject the request.
-  alt: Cuplikan visual workplace male untuk frasa Just to clarify, my intent was to confirm the constraints,
-    not reject the request..
+  alt: Cuplikan visual english client meeting untuk frasa Just to clarify, my intent was to confirm the
+    constraints, not reject the request..

@@ -1,24 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-leadership-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Guiding a Decision di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam sesi coaching profesional untuk konteks Guiding a Decision di Indonesia.
   caption: 'Konteks percakapan nyata: Guiding a Decision.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-1.png
   width: 1254
   height: 1254
   label: 'We have three options: pilot, phased rollout, or full rollout.'
-  alt: 'Cuplikan visual workplace male untuk frasa We have three options: pilot, phased rollout, or full
-    rollout..'
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: 'Cuplikan visual english leadership coaching untuk frasa We have three options: pilot, phased rollout,
+    or full rollout..'
+- src: /images/lesson-visual-library/english-leadership-coaching/card-2.png
   width: 1254
   height: 1254
   label: The trade-off is speed versus risk and operational load.
-  alt: Cuplikan visual workplace male untuk frasa The trade-off is speed versus risk and operational load..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english leadership coaching untuk frasa The trade-off is speed versus risk and
+    operational load..
+- src: /images/lesson-visual-library/english-leadership-coaching/card-3.png
   width: 1254
   height: 1254
   label: Given our constraints, I'd recommend a phased rollout with clear monitoring.
-  alt: Cuplikan visual workplace male untuk frasa Given our constraints, I'd recommend a phased rollout
-    with clear monitoring..
+  alt: Cuplikan visual english leadership coaching untuk frasa Given our constraints, I'd recommend a
+    phased rollout with clear monitoring..

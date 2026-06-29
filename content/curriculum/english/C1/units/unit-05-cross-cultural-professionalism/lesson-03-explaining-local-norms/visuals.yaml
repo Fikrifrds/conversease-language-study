@@ -1,24 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Local Norms di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Explaining Local Norms di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Local Norms.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: In our context, people tend to be indirect when disagreeing in group settings.
-  alt: Cuplikan visual travel male untuk frasa In our context, people tend to be indirect when disagreeing
-    in group settings..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa In our context, people tend to be indirect when
+    disagreeing in group settings..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: It's generally expected that you raise concerns one-on-one first.
-  alt: Cuplikan visual travel male untuk frasa It's generally expected that you raise concerns one-on-one
-    first..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa It's generally expected that you raise concerns
+    one-on-one first..
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: It might help to start with appreciation, then ask a question.
-  alt: Cuplikan visual travel male untuk frasa It might help to start with appreciation, then ask a question..
+  alt: Cuplikan visual english client meeting untuk frasa It might help to start with appreciation, then
+    ask a question..

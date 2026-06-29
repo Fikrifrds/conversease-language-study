@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Client Conversation Mission di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Client Conversation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Client Conversation Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: Just to clarify, who is the main user group?
-  alt: Cuplikan visual workplace male untuk frasa Just to clarify, who is the main user group?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa Just to clarify, who is the main user group?.
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: 'We have two options: a quick fix or a robust solution.'
-  alt: 'Cuplikan visual workplace male untuk frasa We have two options: a quick fix or a robust solution..'
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: 'Cuplikan visual english client meeting untuk frasa We have two options: a quick fix or a robust
+    solution..'
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: I understand the concern. To reduce the risk, we can run a pilot.
-  alt: Cuplikan visual workplace male untuk frasa I understand the concern. To reduce the risk, we can
-    run a pilot..
+  alt: Cuplikan visual english client meeting untuk frasa I understand the concern. To reduce the risk,
+    we can run a pilot..

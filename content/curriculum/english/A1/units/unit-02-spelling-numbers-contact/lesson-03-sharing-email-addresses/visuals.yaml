@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-registration/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Sharing Email Addresses di Indonesia.
+  alt: Ilustrasi dua perempuan melakukan registrasi kursus untuk konteks Sharing Email Addresses di Indonesia.
   caption: 'Konteks percakapan nyata: Sharing Email Addresses.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-registration/card-1.png
   width: 1254
   height: 1254
   label: What is your email address?
-  alt: Cuplikan visual service male untuk frasa What is your email address?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english registration untuk frasa What is your email address?.
+- src: /images/lesson-visual-library/english-registration/card-2.png
   width: 1254
   height: 1254
   label: It's ben dot rama at example dot com.
-  alt: Cuplikan visual service male untuk frasa It's ben dot rama at example dot com..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english registration untuk frasa It's ben dot rama at example dot com..
+- src: /images/lesson-visual-library/english-registration/card-3.png
   width: 1254
   height: 1254
   label: Can you spell that, please?
-  alt: Cuplikan visual service male untuk frasa Can you spell that, please?.
+  alt: Cuplikan visual english registration untuk frasa Can you spell that, please?.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making a Proposal di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Making a Proposal di Indonesia.
   caption: 'Konteks percakapan nyata: Making a Proposal.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: I propose we do a small pilot first.
-  alt: Cuplikan visual workplace male untuk frasa I propose we do a small pilot first..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa I propose we do a small pilot first..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: How about we run it for two weeks?
-  alt: Cuplikan visual workplace male untuk frasa How about we run it for two weeks?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa How about we run it for two weeks?.
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: Would that work for you?
-  alt: Cuplikan visual workplace male untuk frasa Would that work for you?.
+  alt: Cuplikan visual english client meeting untuk frasa Would that work for you?.

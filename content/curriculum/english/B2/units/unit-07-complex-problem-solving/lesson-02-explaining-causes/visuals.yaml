@@ -1,22 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-problem-solving/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Causes di Indonesia.
+  alt: Ilustrasi tiga laki-laki menyelesaikan masalah di ruang kerja untuk konteks Explaining Causes di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Causes.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-problem-solving/card-1.png
   width: 1254
   height: 1254
   label: One possible cause is the new checkout design.
-  alt: Cuplikan visual service male untuk frasa One possible cause is the new checkout design..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english problem solving untuk frasa One possible cause is the new checkout design..
+- src: /images/lesson-visual-library/english-problem-solving/card-2.png
   width: 1254
   height: 1254
   label: Based on the data, drop-offs increased after the redesign.
-  alt: Cuplikan visual service male untuk frasa Based on the data, drop-offs increased after the redesign..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english problem solving untuk frasa Based on the data, drop-offs increased after
+    the redesign..
+- src: /images/lesson-visual-library/english-problem-solving/card-3.png
   width: 1254
   height: 1254
   label: It might be due to slower load times.
-  alt: Cuplikan visual service male untuk frasa It might be due to slower load times..
+  alt: Cuplikan visual english problem solving untuk frasa It might be due to slower load times..

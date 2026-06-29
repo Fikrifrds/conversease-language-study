@@ -1,25 +1,26 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-presentation/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Framing a Complex Topic di Indonesia.
+  alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Framing a Complex Topic
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Framing a Complex Topic.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.png
   width: 1254
   height: 1254
   label: Today I'd like to walk you through the proposal and why it matters.
-  alt: Cuplikan visual classroom male untuk frasa Today I'd like to walk you through the proposal and
-    why it matters..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english presentation untuk frasa Today I'd like to walk you through the proposal
+    and why it matters..
+- src: /images/lesson-visual-library/english-presentation/card-2.png
   width: 1254
   height: 1254
   label: By 'modular architecture', I mean we separate features into independent components.
-  alt: Cuplikan visual classroom male untuk frasa By 'modular architecture', I mean we separate features
-    into independent components..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english presentation untuk frasa By 'modular architecture', I mean we separate
+    features into independent components..
+- src: /images/lesson-visual-library/english-presentation/card-3.png
   width: 1254
   height: 1254
   label: The purpose of this is to reduce coupling and speed up delivery.
-  alt: Cuplikan visual classroom male untuk frasa The purpose of this is to reduce coupling and speed
-    up delivery..
+  alt: Cuplikan visual english presentation untuk frasa The purpose of this is to reduce coupling and
+    speed up delivery..

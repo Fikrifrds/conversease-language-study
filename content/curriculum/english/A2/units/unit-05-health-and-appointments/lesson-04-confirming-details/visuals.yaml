@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/english-clinic/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Confirming Details di Indonesia.
+  alt: Ilustrasi pasien dan tenaga kesehatan perempuan di klinik untuk konteks Confirming Details di Indonesia.
   caption: 'Konteks percakapan nyata: Confirming Details.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/english-clinic/card-1.png
   width: 1254
   height: 1254
   label: Let me confirm the time.
-  alt: Cuplikan visual health male untuk frasa Let me confirm the time..
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual english clinic untuk frasa Let me confirm the time..
+- src: /images/lesson-visual-library/english-clinic/card-2.png
   width: 1254
   height: 1254
   label: '... right?'
-  alt: Cuplikan visual health male untuk frasa ... right?.
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: Cuplikan visual english clinic untuk frasa ... right?.
+- src: /images/lesson-visual-library/english-clinic/card-3.png
   width: 1254
   height: 1254
   label: My name is ...
-  alt: Cuplikan visual health male untuk frasa My name is ....
+  alt: Cuplikan visual english clinic untuk frasa My name is ....

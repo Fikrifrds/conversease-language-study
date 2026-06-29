@@ -1,22 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-presentation/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Structuring a Short Presentation di Indonesia.
+  alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Structuring a Short
+    Presentation di Indonesia.
   caption: 'Konteks percakapan nyata: Structuring a Short Presentation.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.png
   width: 1254
   height: 1254
   label: Today I'd like to share an idea to improve our onboarding.
-  alt: Cuplikan visual workplace male untuk frasa Today I'd like to share an idea to improve our onboarding..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english presentation untuk frasa Today I'd like to share an idea to improve our
+    onboarding..
+- src: /images/lesson-visual-library/english-presentation/card-2.png
   width: 1254
   height: 1254
   label: The problem is new hires often feel lost.
-  alt: Cuplikan visual workplace male untuk frasa The problem is new hires often feel lost..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english presentation untuk frasa The problem is new hires often feel lost..
+- src: /images/lesson-visual-library/english-presentation/card-3.png
   width: 1254
   height: 1254
   label: My proposal is a simple checklist and a buddy system.
-  alt: Cuplikan visual workplace male untuk frasa My proposal is a simple checklist and a buddy system..
+  alt: Cuplikan visual english presentation untuk frasa My proposal is a simple checklist and a buddy
+    system..

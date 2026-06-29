@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying You Do Not Understand di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks Saying You Do Not Understand di Indonesia.
   caption: 'Konteks percakapan nyata: Saying You Do Not Understand.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: Sorry, I don't understand.
-  alt: Cuplikan visual service male untuk frasa Sorry, I don't understand..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa Sorry, I don't understand..
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: Can you repeat that, please?
-  alt: Cuplikan visual service male untuk frasa Can you repeat that, please?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa Can you repeat that, please?.
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: Open my book?
-  alt: Cuplikan visual service male untuk frasa Open my book?.
+  alt: Cuplikan visual english classroom untuk frasa Open my book?.

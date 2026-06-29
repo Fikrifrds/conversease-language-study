@@ -1,24 +1,26 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Meeting Participation Mission di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Meeting Participation Mission
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Meeting Participation Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: I'd like to bring up the timeline for the next release.
-  alt: Cuplikan visual classroom male untuk frasa I'd like to bring up the timeline for the next release..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa I'd like to bring up the timeline for the
+    next release..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: Just to clarify, does this include the admin dashboard changes?
-  alt: Cuplikan visual classroom male untuk frasa Just to clarify, does this include the admin dashboard
-    changes?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Just to clarify, does this include the admin
+    dashboard changes?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: Overall it was clear. I noticed the introduction was a bit long.
-  alt: Cuplikan visual classroom male untuk frasa Overall it was clear. I noticed the introduction was
-    a bit long..
+  alt: Cuplikan visual english workplace meeting untuk frasa Overall it was clear. I noticed the introduction
+    was a bit long..

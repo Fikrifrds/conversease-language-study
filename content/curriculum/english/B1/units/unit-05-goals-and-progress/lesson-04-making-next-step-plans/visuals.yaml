@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-learning-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making Next-step Plans di Indonesia.
+  alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Making Next-step Plans di Indonesia.
   caption: 'Konteks percakapan nyata: Making Next-step Plans.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
   width: 1254
   height: 1254
   label: My next step is to practice with Conversation Coach.
-  alt: Cuplikan visual workplace male untuk frasa My next step is to practice with Conversation Coach..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english learning coaching untuk frasa My next step is to practice with Conversation
+    Coach..
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
   width: 1254
   height: 1254
   label: I'll do it three times this week.
-  alt: Cuplikan visual workplace male untuk frasa I'll do it three times this week..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english learning coaching untuk frasa I'll do it three times this week..
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
   width: 1254
   height: 1254
   label: I'm going to keep it simple.
-  alt: Cuplikan visual workplace male untuk frasa I'm going to keep it simple..
+  alt: Cuplikan visual english learning coaching untuk frasa I'm going to keep it simple..

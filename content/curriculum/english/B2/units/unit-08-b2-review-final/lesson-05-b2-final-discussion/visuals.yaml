@@ -1,22 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B2 Final Discussion di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks B2 Final Discussion di Indonesia.
   caption: 'Konteks percakapan nyata: B2 Final Discussion.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: Let's define the scope and what success looks like.
-  alt: Cuplikan visual workplace male untuk frasa Let's define the scope and what success looks like..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa Let's define the scope and what success looks
+    like..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: Based on the data, we should address billing first.
-  alt: Cuplikan visual workplace male untuk frasa Based on the data, we should address billing first..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa Based on the data, we should address billing
+    first..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I understand the concern.
-  alt: Cuplikan visual workplace male untuk frasa I understand the concern..
+  alt: Cuplikan visual english test interview untuk frasa I understand the concern..

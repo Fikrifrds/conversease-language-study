@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Qualifying Your Opinion di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Qualifying Your Opinion di Indonesia.
   caption: 'Konteks percakapan nyata: Qualifying Your Opinion.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: To some extent, yes—especially for new projects.
-  alt: Cuplikan visual classroom male untuk frasa To some extent, yes—especially for new projects..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa To some extent, yes—especially for new projects..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: Broadly speaking, I support it.
-  alt: Cuplikan visual classroom male untuk frasa Broadly speaking, I support it..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa Broadly speaking, I support it..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: That said, we need a clear exception for legacy systems.
-  alt: Cuplikan visual classroom male untuk frasa That said, we need a clear exception for legacy systems..
+  alt: Cuplikan visual english debate untuk frasa That said, we need a clear exception for legacy systems..

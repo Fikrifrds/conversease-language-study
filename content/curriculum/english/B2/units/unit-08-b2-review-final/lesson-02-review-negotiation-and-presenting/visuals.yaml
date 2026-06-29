@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Negotiation and Presenting di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Negotiation and Presenting di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Review Negotiation and Presenting.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: 'Here''s my proposal: we deliver a smaller scope next week.'
-  alt: 'Cuplikan visual workplace male untuk frasa Here''s my proposal: we deliver a smaller scope next
-    week..'
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: 'Cuplikan visual english test interview untuk frasa Here''s my proposal: we deliver a smaller scope
+    next week..'
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: The trade-off is speed versus completeness.
-  alt: Cuplikan visual workplace male untuk frasa The trade-off is speed versus completeness..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa The trade-off is speed versus completeness..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: Can we meet in the middle?
-  alt: Cuplikan visual workplace male untuk frasa Can we meet in the middle?.
+  alt: Cuplikan visual english test interview untuk frasa Can we meet in the middle?.

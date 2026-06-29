@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-travel-story/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Past Experience Mission di Indonesia.
+  alt: Ilustrasi dua laki-laki berbagi cerita perjalanan untuk konteks Past Experience Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Past Experience Mission.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-travel-story/card-1.png
   width: 1254
   height: 1254
   label: What did you do yesterday?
-  alt: Cuplikan visual service male untuk frasa What did you do yesterday?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english travel story untuk frasa What did you do yesterday?.
+- src: /images/lesson-visual-library/english-travel-story/card-2.png
   width: 1254
   height: 1254
   label: I went to the museum and took photos.
-  alt: Cuplikan visual service male untuk frasa I went to the museum and took photos..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english travel story untuk frasa I went to the museum and took photos..
+- src: /images/lesson-visual-library/english-travel-story/card-3.png
   width: 1254
   height: 1254
   label: How was it?
-  alt: Cuplikan visual service male untuk frasa How was it?.
+  alt: Cuplikan visual english travel story untuk frasa How was it?.

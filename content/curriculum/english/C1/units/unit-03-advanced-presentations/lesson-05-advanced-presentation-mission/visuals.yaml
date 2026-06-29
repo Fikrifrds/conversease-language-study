@@ -1,23 +1,26 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-presentation/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Presentation Mission di Indonesia.
+  alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Advanced Presentation
+    Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Advanced Presentation Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.png
   width: 1254
   height: 1254
   label: Today I'd like to walk you through the proposal and why it matters.
-  alt: Cuplikan visual classroom male untuk frasa Today I'd like to walk you through the proposal and
-    why it matters..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english presentation untuk frasa Today I'd like to walk you through the proposal
+    and why it matters..
+- src: /images/lesson-visual-library/english-presentation/card-2.png
   width: 1254
   height: 1254
   label: The core claim is that this will improve delivery speed.
-  alt: Cuplikan visual classroom male untuk frasa The core claim is that this will improve delivery speed..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english presentation untuk frasa The core claim is that this will improve delivery
+    speed..
+- src: /images/lesson-visual-library/english-presentation/card-3.png
   width: 1254
   height: 1254
   label: 'That brings me to the key trade-off: speed versus reliability.'
-  alt: 'Cuplikan visual classroom male untuk frasa That brings me to the key trade-off: speed versus reliability..'
+  alt: 'Cuplikan visual english presentation untuk frasa That brings me to the key trade-off: speed versus
+    reliability..'

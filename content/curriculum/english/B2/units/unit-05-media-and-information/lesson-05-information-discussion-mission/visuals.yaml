@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Information Discussion Mission di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Information Discussion Mission di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Information Discussion Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: The article is about ... The main point is ...
-  alt: Cuplikan visual classroom male untuk frasa The article is about ... The main point is ....
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa The article is about ... The main point is ....
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: I'm not sure it's reliable because it doesn't cite data.
-  alt: Cuplikan visual classroom male untuk frasa I'm not sure it's reliable because it doesn't cite data..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa I'm not sure it's reliable because it doesn't cite data..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: From my perspective, ... The reason is ...
-  alt: Cuplikan visual classroom male untuk frasa From my perspective, ... The reason is ....
+  alt: Cuplikan visual english debate untuk frasa From my perspective, ... The reason is ....

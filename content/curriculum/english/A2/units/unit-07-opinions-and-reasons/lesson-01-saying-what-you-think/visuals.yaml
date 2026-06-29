@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Think di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Saying What You Think di Indonesia.
   caption: 'Konteks percakapan nyata: Saying What You Think.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: What did you think?
-  alt: Cuplikan visual classroom male untuk frasa What did you think?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa What did you think?.
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: I think it's really good.
-  alt: Cuplikan visual classroom male untuk frasa I think it's really good..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa I think it's really good..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: The story is simple, but fun.
-  alt: Cuplikan visual classroom male untuk frasa The story is simple, but fun..
+  alt: Cuplikan visual english social cafe untuk frasa The story is simple, but fun..

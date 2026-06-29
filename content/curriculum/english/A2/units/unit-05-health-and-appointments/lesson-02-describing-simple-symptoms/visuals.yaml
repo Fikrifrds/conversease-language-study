@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/english-clinic/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing Simple Symptoms di Indonesia.
+  alt: Ilustrasi pasien dan tenaga kesehatan perempuan di klinik untuk konteks Describing Simple Symptoms
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Describing Simple Symptoms.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/english-clinic/card-1.png
   width: 1254
   height: 1254
   label: What seems to be the problem?
-  alt: Cuplikan visual health male untuk frasa What seems to be the problem?.
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual english clinic untuk frasa What seems to be the problem?.
+- src: /images/lesson-visual-library/english-clinic/card-2.png
   width: 1254
   height: 1254
   label: I've had a sore throat since yesterday.
-  alt: Cuplikan visual health male untuk frasa I've had a sore throat since yesterday..
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: Cuplikan visual english clinic untuk frasa I've had a sore throat since yesterday..
+- src: /images/lesson-visual-library/english-clinic/card-3.png
   width: 1254
   height: 1254
   label: Do you have a fever?
-  alt: Cuplikan visual health male untuk frasa Do you have a fever?.
+  alt: Cuplikan visual english clinic untuk frasa Do you have a fever?.

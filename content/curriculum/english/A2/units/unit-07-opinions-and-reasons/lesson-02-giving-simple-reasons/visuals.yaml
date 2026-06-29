@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Giving Simple Reasons di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Giving Simple Reasons di Indonesia.
   caption: 'Konteks percakapan nyata: Giving Simple Reasons.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: Because the coffee is good.
-  alt: Cuplikan visual service male untuk frasa Because the coffee is good..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa Because the coffee is good..
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: Why?
-  alt: Cuplikan visual service male untuk frasa Why?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa Why?.
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: I agree.
-  alt: Cuplikan visual service male untuk frasa I agree..
+  alt: Cuplikan visual english social cafe untuk frasa I agree..

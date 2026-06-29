@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying Hello and Goodbye di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks Saying Hello and Goodbye di Indonesia.
   caption: 'Konteks percakapan nyata: Saying Hello and Goodbye.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: Good morning
-  alt: Cuplikan visual classroom male untuk frasa Good morning.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa Good morning.
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: How are you?
-  alt: Cuplikan visual classroom male untuk frasa How are you?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa How are you?.
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: I'm good, thank you.
-  alt: Cuplikan visual classroom male untuk frasa I'm good, thank you..
+  alt: Cuplikan visual english classroom untuk frasa I'm good, thank you..

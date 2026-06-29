@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-learning-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Discussing Challenges di Indonesia.
+  alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Discussing Challenges di Indonesia.
   caption: 'Konteks percakapan nyata: Discussing Challenges.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
   width: 1254
   height: 1254
   label: The biggest challenge is staying consistent.
-  alt: Cuplikan visual workplace male untuk frasa The biggest challenge is staying consistent..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english learning coaching untuk frasa The biggest challenge is staying consistent..
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
   width: 1254
   height: 1254
   label: I'm struggling with motivation.
-  alt: Cuplikan visual workplace male untuk frasa I'm struggling with motivation..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english learning coaching untuk frasa I'm struggling with motivation..
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
   width: 1254
   height: 1254
   label: It's hard to stay consistent after work.
-  alt: Cuplikan visual workplace male untuk frasa It's hard to stay consistent after work..
+  alt: Cuplikan visual english learning coaching untuk frasa It's hard to stay consistent after work..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Reaching Agreement di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Reaching Agreement di Indonesia.
   caption: 'Konteks percakapan nyata: Reaching Agreement.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: How about we go with the cheaper one?
-  alt: Cuplikan visual workplace male untuk frasa How about we go with the cheaper one?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa How about we go with the cheaper one?.
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: I'm okay with that.
-  alt: Cuplikan visual workplace male untuk frasa I'm okay with that..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa I'm okay with that..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: That works for me.
-  alt: Cuplikan visual workplace male untuk frasa That works for me..
+  alt: Cuplikan visual english social cafe untuk frasa That works for me..

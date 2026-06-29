@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless perempuan untuk konteks Final Test Practice di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Final Test Practice di Indonesia.
   caption: 'Konteks percakapan nyata: Final Test Practice.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: My name is Alya.
-  alt: Cuplikan visual classroom female untuk frasa My name is Alya..
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa My name is Alya..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: I'm from Indonesia.
-  alt: Cuplikan visual classroom female untuk frasa I'm from Indonesia..
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa I'm from Indonesia..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I study English at seven.
-  alt: Cuplikan visual classroom female untuk frasa I study English at seven..
+  alt: Cuplikan visual english test interview untuk frasa I study English at seven..

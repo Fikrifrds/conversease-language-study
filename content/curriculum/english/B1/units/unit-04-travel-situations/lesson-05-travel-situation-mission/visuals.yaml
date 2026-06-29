@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-hotel/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Travel Situation Mission di Indonesia.
+  alt: Ilustrasi tamu dan resepsionis laki-laki di hotel untuk konteks Travel Situation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Travel Situation Mission.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-hotel/card-1.png
   width: 1254
   height: 1254
   label: I'm running a bit late. My train is delayed.
-  alt: Cuplikan visual service male untuk frasa I'm running a bit late. My train is delayed..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english hotel untuk frasa I'm running a bit late. My train is delayed..
+- src: /images/lesson-visual-library/english-hotel/card-2.png
   width: 1254
   height: 1254
   label: I'll be there in about 20 minutes.
-  alt: Cuplikan visual service male untuk frasa I'll be there in about 20 minutes..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english hotel untuk frasa I'll be there in about 20 minutes..
+- src: /images/lesson-visual-library/english-hotel/card-3.png
   width: 1254
   height: 1254
   label: I have a reservation under Faris Kim.
-  alt: Cuplikan visual service male untuk frasa I have a reservation under Faris Kim..
+  alt: Cuplikan visual english hotel untuk frasa I have a reservation under Faris Kim..

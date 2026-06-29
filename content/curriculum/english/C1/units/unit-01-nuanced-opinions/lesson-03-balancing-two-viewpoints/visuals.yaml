@@ -1,23 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Balancing Two Viewpoints di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Balancing Two Viewpoints di Indonesia.
   caption: 'Konteks percakapan nyata: Balancing Two Viewpoints.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: On the one hand, growth initiatives could unlock new revenue.
-  alt: Cuplikan visual travel male untuk frasa On the one hand, growth initiatives could unlock new revenue..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa On the one hand, growth initiatives could unlock new
+    revenue..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: On the other hand, stability work reduces long-term risk.
-  alt: Cuplikan visual travel male untuk frasa On the other hand, stability work reduces long-term risk..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa On the other hand, stability work reduces long-term
+    risk..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: While it's true that growth matters, the incident rate is concerning.
-  alt: Cuplikan visual travel male untuk frasa While it's true that growth matters, the incident rate
+  alt: Cuplikan visual english debate untuk frasa While it's true that growth matters, the incident rate
     is concerning..

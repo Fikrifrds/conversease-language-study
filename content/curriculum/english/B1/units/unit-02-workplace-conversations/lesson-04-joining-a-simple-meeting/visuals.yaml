@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Joining a Simple Meeting di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Joining a Simple Meeting di Indonesia.
   caption: 'Konteks percakapan nyata: Joining a Simple Meeting.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: I'd like to add one point.
-  alt: Cuplikan visual workplace male untuk frasa I'd like to add one point..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa I'd like to add one point..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: Go ahead.
-  alt: Cuplikan visual workplace male untuk frasa Go ahead..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Go ahead..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: I suggest we move the deadline to Thursday.
-  alt: Cuplikan visual workplace male untuk frasa I suggest we move the deadline to Thursday..
+  alt: Cuplikan visual english workplace meeting untuk frasa I suggest we move the deadline to Thursday..

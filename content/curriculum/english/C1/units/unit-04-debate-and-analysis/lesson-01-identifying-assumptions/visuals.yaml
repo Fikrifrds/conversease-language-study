@@ -1,24 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Identifying Assumptions di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Identifying Assumptions di Indonesia.
   caption: 'Konteks percakapan nyata: Identifying Assumptions.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: It seems you're assuming fewer steps automatically mean better conversion.
-  alt: Cuplikan visual workplace male untuk frasa It seems you're assuming fewer steps automatically mean
+  alt: Cuplikan visual english debate untuk frasa It seems you're assuming fewer steps automatically mean
     better conversion..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: What are we assuming about user trust and clarity?
-  alt: Cuplikan visual workplace male untuk frasa What are we assuming about user trust and clarity?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa What are we assuming about user trust and clarity?.
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: If that's true, then we should see drop-offs mainly on longer forms.
-  alt: Cuplikan visual workplace male untuk frasa If that's true, then we should see drop-offs mainly
+  alt: Cuplikan visual english debate untuk frasa If that's true, then we should see drop-offs mainly
     on longer forms..

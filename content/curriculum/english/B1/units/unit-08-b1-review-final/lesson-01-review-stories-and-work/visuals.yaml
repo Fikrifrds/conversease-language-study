@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Stories and Work di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Stories and Work di Indonesia.
   caption: 'Konteks percakapan nyata: Review Stories and Work.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: Then we grabbed street food.
-  alt: Cuplikan visual travel male untuk frasa Then we grabbed street food..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa Then we grabbed street food..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: What happened after that?
-  alt: Cuplikan visual travel male untuk frasa What happened after that?.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa What happened after that?.
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I'm working on the release checklist.
-  alt: Cuplikan visual travel male untuk frasa I'm working on the release checklist..
+  alt: Cuplikan visual english test interview untuk frasa I'm working on the release checklist..

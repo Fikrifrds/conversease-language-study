@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking Follow-up Questions di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Asking Follow-up Questions di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Asking Follow-up Questions.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: Where is it?
-  alt: Cuplikan visual service male untuk frasa Where is it?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa Where is it?.
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: What did you order?
-  alt: Cuplikan visual service male untuk frasa What did you order?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa What did you order?.
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: Was it good?
-  alt: Cuplikan visual service male untuk frasa Was it good?.
+  alt: Cuplikan visual english social cafe untuk frasa Was it good?.

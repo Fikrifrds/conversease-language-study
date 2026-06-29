@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Routines and Time di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Routines and Time di Indonesia.
   caption: 'Konteks percakapan nyata: Review Routines and Time.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: I wake up at six.
-  alt: Cuplikan visual classroom male untuk frasa I wake up at six..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa I wake up at six..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: I study English at seven.
-  alt: Cuplikan visual classroom male untuk frasa I study English at seven..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa I study English at seven..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: When is our speaking class?
-  alt: Cuplikan visual classroom male untuk frasa When is our speaking class?.
+  alt: Cuplikan visual english test interview untuk frasa When is our speaking class?.

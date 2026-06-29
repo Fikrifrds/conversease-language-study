@@ -1,23 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-learning-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Goals Progress Mission di Indonesia.
+  alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Goals Progress Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Goals Progress Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
   width: 1254
   height: 1254
   label: My goal is to speak more confidently by the end of this month.
-  alt: Cuplikan visual classroom male untuk frasa My goal is to speak more confidently by the end of this
-    month..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english learning coaching untuk frasa My goal is to speak more confidently by the
+    end of this month..
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
   width: 1254
   height: 1254
   label: I'm making progress. I've been practicing every morning.
-  alt: Cuplikan visual classroom male untuk frasa I'm making progress. I've been practicing every morning..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english learning coaching untuk frasa I'm making progress. I've been practicing
+    every morning..
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
   width: 1254
   height: 1254
   label: The biggest challenge is staying consistent after work.
-  alt: Cuplikan visual classroom male untuk frasa The biggest challenge is staying consistent after work..
+  alt: Cuplikan visual english learning coaching untuk frasa The biggest challenge is staying consistent
+    after work..

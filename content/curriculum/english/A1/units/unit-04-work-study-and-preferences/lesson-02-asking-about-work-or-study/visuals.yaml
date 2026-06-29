@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Work or Study di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks Asking About Work or Study di Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Work or Study.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: Do you work or study?
-  alt: Cuplikan visual workplace male untuk frasa Do you work or study?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa Do you work or study?.
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: I work in a small office.
-  alt: Cuplikan visual workplace male untuk frasa I work in a small office..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa I work in a small office..
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: What do you do there?
-  alt: Cuplikan visual workplace male untuk frasa What do you do there?.
+  alt: Cuplikan visual english classroom untuk frasa What do you do there?.

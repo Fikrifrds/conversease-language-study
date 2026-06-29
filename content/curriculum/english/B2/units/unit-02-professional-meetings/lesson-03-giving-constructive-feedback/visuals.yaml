@@ -1,22 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Giving Constructive Feedback di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Giving Constructive Feedback
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Giving Constructive Feedback.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: Overall it was clear.
-  alt: Cuplikan visual workplace male untuk frasa Overall it was clear..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Overall it was clear..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: I noticed the introduction was a bit long.
-  alt: Cuplikan visual workplace male untuk frasa I noticed the introduction was a bit long..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa I noticed the introduction was a bit long..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: Some people lost focus, so the key message came late.
-  alt: Cuplikan visual workplace male untuk frasa Some people lost focus, so the key message came late..
+  alt: Cuplikan visual english workplace meeting untuk frasa Some people lost focus, so the key message
+    came late..

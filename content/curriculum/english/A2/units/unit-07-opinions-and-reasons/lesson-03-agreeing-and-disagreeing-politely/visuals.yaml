@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Agreeing and Disagreeing Politely di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Agreeing and Disagreeing Politely
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Agreeing and Disagreeing Politely.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: I'm not sure.
-  alt: Cuplikan visual travel male untuk frasa I'm not sure..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa I'm not sure..
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: I don't think so.
-  alt: Cuplikan visual travel male untuk frasa I don't think so..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa I don't think so..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: I agree.
-  alt: Cuplikan visual travel male untuk frasa I agree..
+  alt: Cuplikan visual english social cafe untuk frasa I agree..

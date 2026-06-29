@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Aligning Stakeholders di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Aligning Stakeholders di Indonesia.
   caption: 'Konteks percakapan nyata: Aligning Stakeholders.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: To make sure we're aligned, can you share your top priority?
-  alt: Cuplikan visual workplace male untuk frasa To make sure we're aligned, can you share your top priority?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa To make sure we're aligned, can you share your
+    top priority?.
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: From your perspective, what's the biggest constraint?
-  alt: Cuplikan visual workplace male untuk frasa From your perspective, what's the biggest constraint?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa From your perspective, what's the biggest constraint?.
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: The key constraint is capacity.
-  alt: Cuplikan visual workplace male untuk frasa The key constraint is capacity..
+  alt: Cuplikan visual english client meeting untuk frasa The key constraint is capacity..

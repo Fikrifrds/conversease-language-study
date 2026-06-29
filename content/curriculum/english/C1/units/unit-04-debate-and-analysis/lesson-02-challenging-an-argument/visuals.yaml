@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Challenging an Argument di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Challenging an Argument di Indonesia.
   caption: 'Konteks percakapan nyata: Challenging an Argument.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: I'm not sure that follows.
-  alt: Cuplikan visual workplace male untuk frasa I'm not sure that follows..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa I'm not sure that follows..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: What's the evidence for that claim?
-  alt: Cuplikan visual workplace male untuk frasa What's the evidence for that claim?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa What's the evidence for that claim?.
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: Could there be another explanation?
-  alt: Cuplikan visual workplace male untuk frasa Could there be another explanation?.
+  alt: Cuplikan visual english debate untuk frasa Could there be another explanation?.

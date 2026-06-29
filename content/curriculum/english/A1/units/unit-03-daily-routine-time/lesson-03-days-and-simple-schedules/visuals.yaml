@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-online-learning/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Days and Simple Schedules di Indonesia.
+  alt: Ilustrasi dua perempuan belajar bersama dengan laptop untuk konteks Days and Simple Schedules di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Days and Simple Schedules.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-online-learning/card-1.png
   width: 1254
   height: 1254
   label: When is the English class?
-  alt: Cuplikan visual classroom male untuk frasa When is the English class?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english online learning untuk frasa When is the English class?.
+- src: /images/lesson-visual-library/english-online-learning/card-2.png
   width: 1254
   height: 1254
   label: It's on Monday and Wednesday.
-  alt: Cuplikan visual classroom male untuk frasa It's on Monday and Wednesday..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english online learning untuk frasa It's on Monday and Wednesday..
+- src: /images/lesson-visual-library/english-online-learning/card-3.png
   width: 1254
   height: 1254
   label: What time?
-  alt: Cuplikan visual classroom male untuk frasa What time?.
+  alt: Cuplikan visual english online learning untuk frasa What time?.

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-campus-directions/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Simple Place Words di Indonesia.
+  alt: Ilustrasi dua laki-laki membahas arah di pusat belajar untuk konteks Simple Place Words di Indonesia.
   caption: 'Konteks percakapan nyata: Simple Place Words.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-campus-directions/card-1.png
   width: 1254
   height: 1254
   label: Where are you going?
-  alt: Cuplikan visual travel male untuk frasa Where are you going?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english campus directions untuk frasa Where are you going?.
+- src: /images/lesson-visual-library/english-campus-directions/card-2.png
   width: 1254
   height: 1254
   label: I'm going to the cafe.
-  alt: Cuplikan visual travel male untuk frasa I'm going to the cafe..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english campus directions untuk frasa I'm going to the cafe..
+- src: /images/lesson-visual-library/english-campus-directions/card-3.png
   width: 1254
   height: 1254
   label: near here
-  alt: Cuplikan visual travel male untuk frasa near here.
+  alt: Cuplikan visual english campus directions untuk frasa near here.

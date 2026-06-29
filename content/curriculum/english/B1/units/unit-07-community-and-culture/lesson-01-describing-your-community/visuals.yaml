@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-community-culture/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing Your Community di Indonesia.
+  alt: Ilustrasi tiga perempuan berdiskusi di pusat komunitas untuk konteks Describing Your Community
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Describing Your Community.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-community-culture/card-1.png
   width: 1254
   height: 1254
   label: I live in a quiet neighborhood.
-  alt: Cuplikan visual travel male untuk frasa I live in a quiet neighborhood..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english community culture untuk frasa I live in a quiet neighborhood..
+- src: /images/lesson-visual-library/english-community-culture/card-2.png
   width: 1254
   height: 1254
   label: It's known for its food stalls.
-  alt: Cuplikan visual travel male untuk frasa It's known for its food stalls..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english community culture untuk frasa It's known for its food stalls..
+- src: /images/lesson-visual-library/english-community-culture/card-3.png
   width: 1254
   height: 1254
   label: I like it because it's convenient.
-  alt: Cuplikan visual travel male untuk frasa I like it because it's convenient..
+  alt: Cuplikan visual english community culture untuk frasa I like it because it's convenient..

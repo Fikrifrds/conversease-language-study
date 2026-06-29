@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Supporting With Reasons di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Supporting With Reasons di Indonesia.
   caption: 'Konteks percakapan nyata: Supporting With Reasons.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: One reason is it reduces bugs in production.
-  alt: Cuplikan visual service male untuk frasa One reason is it reduces bugs in production..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa One reason is it reduces bugs in production..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: Another reason is it speeds up releases.
-  alt: Cuplikan visual service male untuk frasa Another reason is it speeds up releases..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa Another reason is it speeds up releases..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: That's true, but...
-  alt: Cuplikan visual service male untuk frasa That's true, but....
+  alt: Cuplikan visual english debate untuk frasa That's true, but....

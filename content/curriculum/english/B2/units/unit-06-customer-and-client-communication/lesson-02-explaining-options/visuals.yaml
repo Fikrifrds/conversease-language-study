@@ -1,22 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Options di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Explaining Options di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Options.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: We have two options.
-  alt: Cuplikan visual service male untuk frasa We have two options..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa We have two options..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: Option A is a quick fix we can deliver this week.
-  alt: Cuplikan visual service male untuk frasa Option A is a quick fix we can deliver this week..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa Option A is a quick fix we can deliver this
+    week..
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: Option B is more robust, but it takes two more weeks.
-  alt: Cuplikan visual service male untuk frasa Option B is more robust, but it takes two more weeks..
+  alt: Cuplikan visual english client meeting untuk frasa Option B is more robust, but it takes two more
+    weeks..

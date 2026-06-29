@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-online-learning/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Daily Routines di Indonesia.
+  alt: Ilustrasi dua perempuan belajar bersama dengan laptop untuk konteks Talking About Daily Routines
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Talking About Daily Routines.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-online-learning/card-1.png
   width: 1254
   height: 1254
   label: What do you do in the morning?
-  alt: Cuplikan visual classroom male untuk frasa What do you do in the morning?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english online learning untuk frasa What do you do in the morning?.
+- src: /images/lesson-visual-library/english-online-learning/card-2.png
   width: 1254
   height: 1254
   label: I wake up at six.
-  alt: Cuplikan visual classroom male untuk frasa I wake up at six..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english online learning untuk frasa I wake up at six..
+- src: /images/lesson-visual-library/english-online-learning/card-3.png
   width: 1254
   height: 1254
   label: What do you do after that?
-  alt: Cuplikan visual classroom male untuk frasa What do you do after that?.
+  alt: Cuplikan visual english online learning untuk frasa What do you do after that?.

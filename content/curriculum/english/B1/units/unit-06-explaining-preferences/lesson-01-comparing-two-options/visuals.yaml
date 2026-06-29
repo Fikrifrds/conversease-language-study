@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Comparing Two Options di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Comparing Two Options di Indonesia.
   caption: 'Konteks percakapan nyata: Comparing Two Options.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: We have two options.
-  alt: Cuplikan visual classroom male untuk frasa We have two options..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa We have two options..
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: Option A is nicer, but it's more expensive.
-  alt: Cuplikan visual classroom male untuk frasa Option A is nicer, but it's more expensive..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa Option A is nicer, but it's more expensive..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: It's cheaper and faster.
-  alt: Cuplikan visual classroom male untuk frasa It's cheaper and faster..
+  alt: Cuplikan visual english social cafe untuk frasa It's cheaper and faster..

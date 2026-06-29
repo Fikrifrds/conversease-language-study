@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks First Conversation Mission di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks First Conversation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: First Conversation Mission.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: Good morning. My name is ...
-  alt: Cuplikan visual service male untuk frasa Good morning. My name is ....
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa Good morning. My name is ....
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: Where are you from?
-  alt: Cuplikan visual service male untuk frasa Where are you from?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa Where are you from?.
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: How about you?
-  alt: Cuplikan visual service male untuk frasa How about you?.
+  alt: Cuplikan visual english classroom untuk frasa How about you?.

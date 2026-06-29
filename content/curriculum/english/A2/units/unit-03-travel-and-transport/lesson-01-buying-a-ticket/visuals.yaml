@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-transport/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Buying a Ticket di Indonesia.
+  alt: Ilustrasi petugas dan penumpang laki-laki di stasiun untuk konteks Buying a Ticket di Indonesia.
   caption: 'Konteks percakapan nyata: Buying a Ticket.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-transport/card-1.png
   width: 1254
   height: 1254
   label: I'd like one ticket to Bandung, please.
-  alt: Cuplikan visual service male untuk frasa I'd like one ticket to Bandung, please..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english transport untuk frasa I'd like one ticket to Bandung, please..
+- src: /images/lesson-visual-library/english-transport/card-2.png
   width: 1254
   height: 1254
   label: One-way or round-trip?
-  alt: Cuplikan visual service male untuk frasa One-way or round-trip?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english transport untuk frasa One-way or round-trip?.
+- src: /images/lesson-visual-library/english-transport/card-3.png
   width: 1254
   height: 1254
   label: One-way, please.
-  alt: Cuplikan visual service male untuk frasa One-way, please..
+  alt: Cuplikan visual english transport untuk frasa One-way, please..

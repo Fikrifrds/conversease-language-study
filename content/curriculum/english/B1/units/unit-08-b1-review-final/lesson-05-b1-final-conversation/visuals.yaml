@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Conversation di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks B1 Final Conversation di Indonesia.
   caption: 'Konteks percakapan nyata: B1 Final Conversation.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: At first it was hard, but then it got easier.
-  alt: Cuplikan visual classroom male untuk frasa At first it was hard, but then it got easier..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa At first it was hard, but then it got easier..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: Because I kept sessions short.
-  alt: Cuplikan visual classroom male untuk frasa Because I kept sessions short..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa Because I kept sessions short..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: Sometimes I get distracted, so I leave my phone in another room.
-  alt: Cuplikan visual classroom male untuk frasa Sometimes I get distracted, so I leave my phone in another
-    room..
+  alt: Cuplikan visual english test interview untuk frasa Sometimes I get distracted, so I leave my phone
+    in another room..

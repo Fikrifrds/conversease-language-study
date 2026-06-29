@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Information and Clients di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Information and Clients di Indonesia.
   caption: 'Konteks percakapan nyata: Review Information and Clients.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: Based on the source, it's a partial snapshot.
-  alt: Cuplikan visual classroom male untuk frasa Based on the source, it's a partial snapshot..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa Based on the source, it's a partial snapshot..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: We should verify it with our support data.
-  alt: Cuplikan visual classroom male untuk frasa We should verify it with our support data..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa We should verify it with our support data..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I understand the concern.
-  alt: Cuplikan visual classroom male untuk frasa I understand the concern..
+  alt: Cuplikan visual english test interview untuk frasa I understand the concern..

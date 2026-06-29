@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-travel-story/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying Where You Went di Indonesia.
+  alt: Ilustrasi dua laki-laki berbagi cerita perjalanan untuk konteks Saying Where You Went di Indonesia.
   caption: 'Konteks percakapan nyata: Saying Where You Went.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-travel-story/card-1.png
   width: 1254
   height: 1254
   label: Where did you go?
-  alt: Cuplikan visual travel male untuk frasa Where did you go?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english travel story untuk frasa Where did you go?.
+- src: /images/lesson-visual-library/english-travel-story/card-2.png
   width: 1254
   height: 1254
   label: I went to the museum.
-  alt: Cuplikan visual travel male untuk frasa I went to the museum..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english travel story untuk frasa I went to the museum..
+- src: /images/lesson-visual-library/english-travel-story/card-3.png
   width: 1254
   height: 1254
   label: Did you go anywhere interesting?
-  alt: Cuplikan visual travel male untuk frasa Did you go anywhere interesting?.
+  alt: Cuplikan visual english travel story untuk frasa Did you go anywhere interesting?.

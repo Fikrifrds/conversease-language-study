@@ -1,23 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/english-leadership-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Advanced Listening Mission di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam sesi coaching profesional untuk konteks Advanced Listening Mission
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Advanced Listening Mission.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-1.png
   width: 1254
   height: 1254
   label: It sounds like timing and risk are the main concerns.
-  alt: Cuplikan visual health male untuk frasa It sounds like timing and risk are the main concerns..
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual english leadership coaching untuk frasa It sounds like timing and risk are the
+    main concerns..
+- src: /images/lesson-visual-library/english-leadership-coaching/card-2.png
   width: 1254
   height: 1254
   label: 'Let me make sure I got this: ...'
-  alt: 'Cuplikan visual health male untuk frasa Let me make sure I got this: ....'
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: 'Cuplikan visual english leadership coaching untuk frasa Let me make sure I got this: ....'
+- src: /images/lesson-visual-library/english-leadership-coaching/card-3.png
   width: 1254
   height: 1254
   label: The decision is to propose a phased rollout with clear metrics.
-  alt: Cuplikan visual health male untuk frasa The decision is to propose a phased rollout with clear
-    metrics..
+  alt: Cuplikan visual english leadership coaching untuk frasa The decision is to propose a phased rollout
+    with clear metrics..

@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-presentation/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Handling Challenging Questions di Indonesia.
+  alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Handling Challenging
+    Questions di Indonesia.
   caption: 'Konteks percakapan nyata: Handling Challenging Questions.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.png
   width: 1254
   height: 1254
   label: That's a fair question.
-  alt: Cuplikan visual workplace male untuk frasa That's a fair question..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english presentation untuk frasa That's a fair question..
+- src: /images/lesson-visual-library/english-presentation/card-2.png
   width: 1254
   height: 1254
   label: Let me clarify what risk we're accepting.
-  alt: Cuplikan visual workplace male untuk frasa Let me clarify what risk we're accepting..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english presentation untuk frasa Let me clarify what risk we're accepting..
+- src: /images/lesson-visual-library/english-presentation/card-3.png
   width: 1254
   height: 1254
   label: 'The short answer is: it''s manageable if we pilot first and monitor closely.'
-  alt: 'Cuplikan visual workplace male untuk frasa The short answer is: it''s manageable if we pilot first
-    and monitor closely..'
+  alt: 'Cuplikan visual english presentation untuk frasa The short answer is: it''s manageable if we pilot
+    first and monitor closely..'

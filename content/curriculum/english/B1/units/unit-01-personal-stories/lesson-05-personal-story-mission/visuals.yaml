@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-travel-story/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Personal Story Mission di Indonesia.
+  alt: Ilustrasi dua laki-laki berbagi cerita perjalanan untuk konteks Personal Story Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Personal Story Mission.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-travel-story/card-1.png
   width: 1254
   height: 1254
   label: Tell me about something interesting that happened recently.
-  alt: Cuplikan visual service male untuk frasa Tell me about something interesting that happened recently..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english travel story untuk frasa Tell me about something interesting that happened
+    recently..
+- src: /images/lesson-visual-library/english-travel-story/card-2.png
   width: 1254
   height: 1254
   label: First, we explored the city.
-  alt: Cuplikan visual service male untuk frasa First, we explored the city..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english travel story untuk frasa First, we explored the city..
+- src: /images/lesson-visual-library/english-travel-story/card-3.png
   width: 1254
   height: 1254
   label: Then we got lost for a while.
-  alt: Cuplikan visual service male untuk frasa Then we got lost for a while..
+  alt: Cuplikan visual english travel story untuk frasa Then we got lost for a while..

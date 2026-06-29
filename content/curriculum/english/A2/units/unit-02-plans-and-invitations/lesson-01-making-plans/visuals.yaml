@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making Plans di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Making Plans di Indonesia.
   caption: 'Konteks percakapan nyata: Making Plans.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: Are you free tomorrow?
-  alt: Cuplikan visual classroom male untuk frasa Are you free tomorrow?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa Are you free tomorrow?.
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: Let's get coffee.
-  alt: Cuplikan visual classroom male untuk frasa Let's get coffee..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa Let's get coffee..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: How about 6 pm?
-  alt: Cuplikan visual classroom male untuk frasa How about 6 pm?.
+  alt: Cuplikan visual english social cafe untuk frasa How about 6 pm?.

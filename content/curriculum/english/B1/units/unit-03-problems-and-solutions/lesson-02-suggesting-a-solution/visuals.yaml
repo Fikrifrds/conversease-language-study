@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-problem-solving/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Suggesting a Solution di Indonesia.
+  alt: Ilustrasi tiga laki-laki menyelesaikan masalah di ruang kerja untuk konteks Suggesting a Solution
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Suggesting a Solution.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-problem-solving/card-1.png
   width: 1254
   height: 1254
   label: We could roll back the update.
-  alt: Cuplikan visual workplace male untuk frasa We could roll back the update..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english problem solving untuk frasa We could roll back the update..
+- src: /images/lesson-visual-library/english-problem-solving/card-2.png
   width: 1254
   height: 1254
   label: I suggest we roll it back.
-  alt: Cuplikan visual workplace male untuk frasa I suggest we roll it back..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english problem solving untuk frasa I suggest we roll it back..
+- src: /images/lesson-visual-library/english-problem-solving/card-3.png
   width: 1254
   height: 1254
   label: Because rollback is quick.
-  alt: Cuplikan visual workplace male untuk frasa Because rollback is quick..
+  alt: Cuplikan visual english problem solving untuk frasa Because rollback is quick..

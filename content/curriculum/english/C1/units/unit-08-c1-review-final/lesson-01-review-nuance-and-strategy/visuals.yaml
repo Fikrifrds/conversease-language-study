@@ -1,24 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Nuance and Strategy di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Nuance and Strategy di Indonesia.
   caption: 'Konteks percakapan nyata: Review Nuance and Strategy.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: On balance, I support it, but I'd adjust the scope to reduce risk.
-  alt: Cuplikan visual classroom male untuk frasa On balance, I support it, but I'd adjust the scope to
-    reduce risk..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa On balance, I support it, but I'd adjust the
+    scope to reduce risk..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: To be precise, I'd keep the core workflow and postpone optional add-ons.
-  alt: Cuplikan visual classroom male untuk frasa To be precise, I'd keep the core workflow and postpone
-    optional add-ons..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa To be precise, I'd keep the core workflow and
+    postpone optional add-ons..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: What I can commit to is a pilot next week.
-  alt: Cuplikan visual classroom male untuk frasa What I can commit to is a pilot next week..
+  alt: Cuplikan visual english test interview untuk frasa What I can commit to is a pilot next week..

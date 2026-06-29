@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/english-clinic/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying How You Feel di Indonesia.
+  alt: Ilustrasi pasien dan tenaga kesehatan perempuan di klinik untuk konteks Saying How You Feel di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Saying How You Feel.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/english-clinic/card-1.png
   width: 1254
   height: 1254
   label: I don't feel well.
-  alt: Cuplikan visual health male untuk frasa I don't feel well..
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual english clinic untuk frasa I don't feel well..
+- src: /images/lesson-visual-library/english-clinic/card-2.png
   width: 1254
   height: 1254
   label: What's wrong?
-  alt: Cuplikan visual health male untuk frasa What's wrong?.
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: Cuplikan visual english clinic untuk frasa What's wrong?.
+- src: /images/lesson-visual-library/english-clinic/card-3.png
   width: 1254
   height: 1254
   label: I have a headache.
-  alt: Cuplikan visual health male untuk frasa I have a headache..
+  alt: Cuplikan visual english clinic untuk frasa I have a headache..

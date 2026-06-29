@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Using Examples di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Using Examples di Indonesia.
   caption: 'Konteks percakapan nyata: Using Examples.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: For example, last quarter we had three new joiners who felt lost.
-  alt: Cuplikan visual travel male untuk frasa For example, last quarter we had three new joiners who
+  alt: Cuplikan visual english debate untuk frasa For example, last quarter we had three new joiners who
     felt lost..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: They didn't know which tools to use.
-  alt: Cuplikan visual travel male untuk frasa They didn't know which tools to use..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa They didn't know which tools to use..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: So they kept asking in multiple channels.
-  alt: Cuplikan visual travel male untuk frasa So they kept asking in multiple channels..
+  alt: Cuplikan visual english debate untuk frasa So they kept asking in multiple channels..

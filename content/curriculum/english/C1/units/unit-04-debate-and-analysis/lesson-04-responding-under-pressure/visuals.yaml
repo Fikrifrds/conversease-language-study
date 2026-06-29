@@ -1,24 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Responding Under Pressure di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Responding Under Pressure di Indonesia.
   caption: 'Konteks percakapan nyata: Responding Under Pressure.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: 'Let me be clear: we have indicators, not proof yet.'
-  alt: 'Cuplikan visual workplace male untuk frasa Let me be clear: we have indicators, not proof yet..'
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: 'Cuplikan visual english debate untuk frasa Let me be clear: we have indicators, not proof yet..'
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: I understand the concern. However, the key point is that waiting increases risk.
-  alt: Cuplikan visual workplace male untuk frasa I understand the concern. However, the key point is
+  alt: Cuplikan visual english debate untuk frasa I understand the concern. However, the key point is
     that waiting increases risk..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: If you look at the last four weeks, incident volume has doubled.
-  alt: Cuplikan visual workplace male untuk frasa If you look at the last four weeks, incident volume
+  alt: Cuplikan visual english debate untuk frasa If you look at the last four weeks, incident volume
     has doubled..

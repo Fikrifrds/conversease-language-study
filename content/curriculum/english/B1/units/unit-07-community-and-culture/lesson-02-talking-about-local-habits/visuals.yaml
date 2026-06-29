@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-community-culture/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Local Habits di Indonesia.
+  alt: Ilustrasi tiga perempuan berdiskusi di pusat komunitas untuk konteks Talking About Local Habits
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Talking About Local Habits.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-community-culture/card-1.png
   width: 1254
   height: 1254
   label: People usually eat outside in the evening.
-  alt: Cuplikan visual travel male untuk frasa People usually eat outside in the evening..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english community culture untuk frasa People usually eat outside in the evening..
+- src: /images/lesson-visual-library/english-community-culture/card-2.png
   width: 1254
   height: 1254
   label: In my area, people often grab street food.
-  alt: Cuplikan visual travel male untuk frasa In my area, people often grab street food..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english community culture untuk frasa In my area, people often grab street food..
+- src: /images/lesson-visual-library/english-community-culture/card-3.png
   width: 1254
   height: 1254
   label: Especially on weekends.
-  alt: Cuplikan visual travel male untuk frasa Especially on weekends..
+  alt: Cuplikan visual english community culture untuk frasa Especially on weekends..

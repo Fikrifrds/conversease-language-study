@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-retail-shop/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Size and Color di Indonesia.
+  alt: Ilustrasi dua perempuan berinteraksi di toko untuk konteks Asking About Size and Color di Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Size and Color.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-retail-shop/card-1.png
   width: 1254
   height: 1254
   label: Do you have this in black?
-  alt: Cuplikan visual service male untuk frasa Do you have this in black?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english retail shop untuk frasa Do you have this in black?.
+- src: /images/lesson-visual-library/english-retail-shop/card-2.png
   width: 1254
   height: 1254
   label: We have blue and white.
-  alt: Cuplikan visual service male untuk frasa We have blue and white..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english retail shop untuk frasa We have blue and white..
+- src: /images/lesson-visual-library/english-retail-shop/card-3.png
   width: 1254
   height: 1254
   label: Do you have it in size M?
-  alt: Cuplikan visual service male untuk frasa Do you have it in size M?.
+  alt: Cuplikan visual english retail shop untuk frasa Do you have it in size M?.

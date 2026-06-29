@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-hotel/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Checking In di Indonesia.
+  alt: Ilustrasi tamu dan resepsionis laki-laki di hotel untuk konteks Checking In di Indonesia.
   caption: 'Konteks percakapan nyata: Checking In.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-hotel/card-1.png
   width: 1254
   height: 1254
   label: I'd like to check in.
-  alt: Cuplikan visual travel male untuk frasa I'd like to check in..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english hotel untuk frasa I'd like to check in..
+- src: /images/lesson-visual-library/english-hotel/card-2.png
   width: 1254
   height: 1254
   label: Do you have a reservation?
-  alt: Cuplikan visual travel male untuk frasa Do you have a reservation?.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english hotel untuk frasa Do you have a reservation?.
+- src: /images/lesson-visual-library/english-hotel/card-3.png
   width: 1254
   height: 1254
   label: I have a reservation under Faris Kim.
-  alt: Cuplikan visual travel male untuk frasa I have a reservation under Faris Kim..
+  alt: Cuplikan visual english hotel untuk frasa I have a reservation under Faris Kim..

@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-hotel/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Recommendations di Indonesia.
+  alt: Ilustrasi tamu dan resepsionis laki-laki di hotel untuk konteks Asking for Recommendations di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Recommendations.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-hotel/card-1.png
   width: 1254
   height: 1254
   label: Do you have any recommendations for dinner?
-  alt: Cuplikan visual travel male untuk frasa Do you have any recommendations for dinner?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english hotel untuk frasa Do you have any recommendations for dinner?.
+- src: /images/lesson-visual-library/english-hotel/card-2.png
   width: 1254
   height: 1254
   label: I'm looking for something local.
-  alt: Cuplikan visual travel male untuk frasa I'm looking for something local..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english hotel untuk frasa I'm looking for something local..
+- src: /images/lesson-visual-library/english-hotel/card-3.png
   width: 1254
   height: 1254
   label: Something local would be great.
-  alt: Cuplikan visual travel male untuk frasa Something local would be great..
+  alt: Cuplikan visual english hotel untuk frasa Something local would be great..

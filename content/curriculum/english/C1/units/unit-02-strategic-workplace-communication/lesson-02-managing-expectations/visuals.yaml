@@ -1,24 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Managing Expectations di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Managing Expectations di Indonesia.
   caption: 'Konteks percakapan nyata: Managing Expectations.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: What we can commit to is a smaller release by next week.
-  alt: Cuplikan visual workplace male untuk frasa What we can commit to is a smaller release by next week..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa What we can commit to is a smaller release by
+    next week..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: To avoid surprises, I'd rather under-promise and deliver reliably.
-  alt: Cuplikan visual workplace male untuk frasa To avoid surprises, I'd rather under-promise and deliver
-    reliably..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa To avoid surprises, I'd rather under-promise
+    and deliver reliably..
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: The earliest we can deliver the full scope is two weeks later.
-  alt: Cuplikan visual workplace male untuk frasa The earliest we can deliver the full scope is two weeks
-    later..
+  alt: Cuplikan visual english client meeting untuk frasa The earliest we can deliver the full scope is
+    two weeks later..

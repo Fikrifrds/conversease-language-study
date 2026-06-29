@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Review Problems and Travel di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Problems and Travel di Indonesia.
   caption: 'Konteks percakapan nyata: Review Problems and Travel.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: There's a problem with the meeting link.
-  alt: Cuplikan visual travel male untuk frasa There's a problem with the meeting link..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa There's a problem with the meeting link..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: People can't join, so we need a new link.
-  alt: Cuplikan visual travel male untuk frasa People can't join, so we need a new link..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa People can't join, so we need a new link..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: I'm running a bit late.
-  alt: Cuplikan visual travel male untuk frasa I'm running a bit late..
+  alt: Cuplikan visual english test interview untuk frasa I'm running a bit late..

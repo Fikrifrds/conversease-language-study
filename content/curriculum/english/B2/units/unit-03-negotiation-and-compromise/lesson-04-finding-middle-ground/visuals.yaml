@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-client-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Finding Middle Ground di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Finding Middle Ground di Indonesia.
   caption: 'Konteks percakapan nyata: Finding Middle Ground.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.png
   width: 1254
   height: 1254
   label: Maybe we can find a compromise.
-  alt: Cuplikan visual workplace male untuk frasa Maybe we can find a compromise..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english client meeting untuk frasa Maybe we can find a compromise..
+- src: /images/lesson-visual-library/english-client-meeting/card-2.png
   width: 1254
   height: 1254
   label: A compromise could be launching to 10% of users first.
-  alt: Cuplikan visual workplace male untuk frasa A compromise could be launching to 10% of users first..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english client meeting untuk frasa A compromise could be launching to 10% of users
+    first..
+- src: /images/lesson-visual-library/english-client-meeting/card-3.png
   width: 1254
   height: 1254
   label: If we do a small rollout, can we agree on one extra day?
-  alt: Cuplikan visual workplace male untuk frasa If we do a small rollout, can we agree on one extra
-    day?.
+  alt: Cuplikan visual english client meeting untuk frasa If we do a small rollout, can we agree on one
+    extra day?.

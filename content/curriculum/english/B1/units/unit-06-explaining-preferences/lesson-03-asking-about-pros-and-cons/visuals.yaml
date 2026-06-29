@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking About Pros and Cons di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Asking About Pros and Cons di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Pros and Cons.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: What are the pros and cons?
-  alt: Cuplikan visual travel male untuk frasa What are the pros and cons?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa What are the pros and cons?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: The advantage is you save time.
-  alt: Cuplikan visual travel male untuk frasa The advantage is you save time..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa The advantage is you save time..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: One downside is you might feel isolated.
-  alt: Cuplikan visual travel male untuk frasa One downside is you might feel isolated..
+  alt: Cuplikan visual english workplace meeting untuk frasa One downside is you might feel isolated..

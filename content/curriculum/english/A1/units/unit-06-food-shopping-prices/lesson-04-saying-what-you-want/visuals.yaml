@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-cafe-order/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Saying What You Want di Indonesia.
+  alt: Ilustrasi dua perempuan dalam transaksi di kafe untuk konteks Saying What You Want di Indonesia.
   caption: 'Konteks percakapan nyata: Saying What You Want.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-cafe-order/card-1.png
   width: 1254
   height: 1254
   label: What do you want?
-  alt: Cuplikan visual service male untuk frasa What do you want?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english cafe order untuk frasa What do you want?.
+- src: /images/lesson-visual-library/english-cafe-order/card-2.png
   width: 1254
   height: 1254
   label: I want a sandwich.
-  alt: Cuplikan visual service male untuk frasa I want a sandwich..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english cafe order untuk frasa I want a sandwich..
+- src: /images/lesson-visual-library/english-cafe-order/card-3.png
   width: 1254
   height: 1254
   label: Tea, please.
-  alt: Cuplikan visual service male untuk frasa Tea, please..
+  alt: Cuplikan visual english cafe order untuk frasa Tea, please..

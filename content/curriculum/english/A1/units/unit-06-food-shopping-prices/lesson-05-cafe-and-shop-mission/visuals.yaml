@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-cafe-order/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Cafe and Shop Mission di Indonesia.
+  alt: Ilustrasi dua perempuan dalam transaksi di kafe untuk konteks Cafe and Shop Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Cafe and Shop Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-cafe-order/card-1.png
   width: 1254
   height: 1254
   label: Can I have a coffee and a sandwich, please?
-  alt: Cuplikan visual workplace male untuk frasa Can I have a coffee and a sandwich, please?.
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english cafe order untuk frasa Can I have a coffee and a sandwich, please?.
+- src: /images/lesson-visual-library/english-cafe-order/card-2.png
   width: 1254
   height: 1254
   label: Small or large coffee?
-  alt: Cuplikan visual workplace male untuk frasa Small or large coffee?.
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english cafe order untuk frasa Small or large coffee?.
+- src: /images/lesson-visual-library/english-cafe-order/card-3.png
   width: 1254
   height: 1254
   label: How much is it?
-  alt: Cuplikan visual workplace male untuk frasa How much is it?.
+  alt: Cuplikan visual english cafe order untuk frasa How much is it?.

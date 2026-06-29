@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks A2 Final Conversation di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks A2 Final Conversation di Indonesia.
   caption: 'Konteks percakapan nyata: A2 Final Conversation.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: Would you recommend it?
-  alt: Cuplikan visual classroom male untuk frasa Would you recommend it?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa Would you recommend it?.
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: Yes, because the coffee is good and it is quiet.
-  alt: Cuplikan visual classroom male untuk frasa Yes, because the coffee is good and it is quiet..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa Yes, because the coffee is good and it is quiet..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: Do you want to go there this weekend?
-  alt: Cuplikan visual classroom male untuk frasa Do you want to go there this weekend?.
+  alt: Cuplikan visual english test interview untuk frasa Do you want to go there this weekend?.

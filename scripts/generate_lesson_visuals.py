@@ -20,6 +20,115 @@ CARD_WIDTH = 1254
 CARD_HEIGHT = 1254
 FALLBACK_SCENE_ROTATION = ("classroom", "service", "travel", "workplace", "health")
 
+# English visuals are curated by conversation setting instead of inferred from
+# isolated title keywords. This keeps abstract language functions (for example
+# "setting direction" or "balancing viewpoints") from being mistaken for
+# travel scenes while still allowing a coherent visual library to be reused.
+ENGLISH_UNIT_SCENES: dict[tuple[str, str], str] = {
+    ("A1", "unit-01-greeting-introducing-yourself"): "english-classroom",
+    ("A1", "unit-02-spelling-numbers-contact"): "english-registration",
+    ("A1", "unit-03-daily-routine-time"): "english-online-learning",
+    ("A1", "unit-04-work-study-and-preferences"): "english-classroom",
+    ("A1", "unit-05-places-directions"): "english-campus-directions",
+    ("A1", "unit-06-food-shopping-prices"): "english-cafe-order",
+    ("A1", "unit-07-help-problems-requests"): "english-tech-help",
+    ("A1", "unit-08-a1-review-final"): "english-test-interview",
+    ("A2", "unit-01-social-small-talk"): "english-social-cafe",
+    ("A2", "unit-02-plans-and-invitations"): "english-social-cafe",
+    ("A2", "unit-03-travel-and-transport"): "english-transport",
+    ("A2", "unit-04-shopping-services"): "english-retail-shop",
+    ("A2", "unit-05-health-and-appointments"): "english-clinic",
+    ("A2", "unit-06-past-experiences"): "english-travel-story",
+    ("A2", "unit-07-opinions-and-reasons"): "english-social-cafe",
+    ("A2", "unit-08-a2-review-final"): "english-test-interview",
+    ("B1", "unit-01-personal-stories"): "english-travel-story",
+    ("B1", "unit-02-workplace-conversations"): "english-workplace-meeting",
+    ("B1", "unit-03-problems-and-solutions"): "english-problem-solving",
+    ("B1", "unit-04-travel-situations"): "english-hotel",
+    ("B1", "unit-05-goals-and-progress"): "english-learning-coaching",
+    ("B1", "unit-06-explaining-preferences"): "english-social-cafe",
+    ("B1", "unit-07-community-and-culture"): "english-community-culture",
+    ("B1", "unit-08-b1-review-final"): "english-test-interview",
+    ("B2", "unit-01-clear-arguments"): "english-debate",
+    ("B2", "unit-02-professional-meetings"): "english-workplace-meeting",
+    ("B2", "unit-03-negotiation-and-compromise"): "english-client-meeting",
+    ("B2", "unit-04-presenting-ideas"): "english-presentation",
+    ("B2", "unit-05-media-and-information"): "english-debate",
+    ("B2", "unit-06-customer-and-client-communication"): "english-client-meeting",
+    ("B2", "unit-07-complex-problem-solving"): "english-problem-solving",
+    ("B2", "unit-08-b2-review-final"): "english-test-interview",
+    ("C1", "unit-01-nuanced-opinions"): "english-debate",
+    ("C1", "unit-02-strategic-workplace-communication"): "english-client-meeting",
+    ("C1", "unit-03-advanced-presentations"): "english-presentation",
+    ("C1", "unit-04-debate-and-analysis"): "english-debate",
+    ("C1", "unit-05-cross-cultural-professionalism"): "english-client-meeting",
+    ("C1", "unit-06-leadership-and-coaching"): "english-leadership-coaching",
+    ("C1", "unit-07-advanced-listening-response"): "english-leadership-coaching",
+    ("C1", "unit-08-c1-review-final"): "english-test-interview",
+}
+
+ENGLISH_LESSON_SCENE_OVERRIDES: dict[tuple[str, str, str], str] = {
+    (
+        "A1",
+        "unit-04-work-study-and-preferences",
+        "lesson-01-saying-what-you-do",
+    ): "english-workplace-meeting",
+    (
+        "A1",
+        "unit-07-help-problems-requests",
+        "lesson-01-saying-you-do-not-understand",
+    ): "english-classroom",
+    (
+        "A1",
+        "unit-07-help-problems-requests",
+        "lesson-03-making-simple-requests",
+    ): "english-online-learning",
+    (
+        "A1",
+        "unit-07-help-problems-requests",
+        "lesson-04-apologizing-and-thanking",
+    ): "english-online-learning",
+    (
+        "B1",
+        "unit-03-problems-and-solutions",
+        "lesson-03-responding-to-advice",
+    ): "english-learning-coaching",
+    (
+        "B1",
+        "unit-06-explaining-preferences",
+        "lesson-02-explaining-why-you-prefer-something",
+    ): "english-transport",
+    (
+        "B1",
+        "unit-06-explaining-preferences",
+        "lesson-03-asking-about-pros-and-cons",
+    ): "english-workplace-meeting",
+}
+
+ENGLISH_SCENE_DESCRIPTIONS = {
+    "english-cafe-order": "dua perempuan dalam transaksi di kafe",
+    "english-campus-directions": "dua laki-laki membahas arah di pusat belajar",
+    "english-classroom": "dua perempuan belajar di kelas",
+    "english-client-meeting": "tiga laki-laki dalam pertemuan klien",
+    "english-clinic": "pasien dan tenaga kesehatan perempuan di klinik",
+    "english-community-culture": "tiga perempuan berdiskusi di pusat komunitas",
+    "english-debate": "tiga laki-laki dalam diskusi terarah",
+    "english-hotel": "tamu dan resepsionis laki-laki di hotel",
+    "english-leadership-coaching": "dua laki-laki dalam sesi coaching profesional",
+    "english-learning-coaching": "dua perempuan dalam sesi coaching belajar",
+    "english-online-learning": "dua perempuan belajar bersama dengan laptop",
+    "english-presentation": "presenter dan peserta laki-laki di ruang presentasi",
+    "english-problem-solving": "tiga laki-laki menyelesaikan masalah di ruang kerja",
+    "english-registration": "dua perempuan melakukan registrasi kursus",
+    "english-retail-shop": "dua perempuan berinteraksi di toko",
+    "english-social-cafe": "dua perempuan bercakap di kafe yang ramai",
+    "english-tech-help": "dua laki-laki menyelesaikan masalah teknis",
+    "english-test-interview": "dua laki-laki dalam tes percakapan",
+    "english-transport": "petugas dan penumpang laki-laki di stasiun",
+    "english-travel-story": "dua laki-laki berbagi cerita perjalanan",
+    "english-workplace-meeting": "tiga laki-laki berdiskusi di tempat kerja",
+}
+
 SCENE_RULES: tuple[tuple[str, tuple[str, ...]], ...] = (
     (
         "health",
@@ -203,18 +312,27 @@ def build_visuals_yaml(lesson_dir: Path) -> str:
     language, level, unit_key, lesson_key = lesson_identity(lesson_dir)
     slug = str(lesson.get("slug") or lesson_key)
     title = str(lesson.get("title") or slug.replace("-", " ").title())
-    gender = lesson_visual_gender(lesson_dir, language=language)
+    # Curated English scenes define their own same-gender or group composition.
+    # Speaker-name inference remains relevant only to the legacy Arabic packs.
+    gender = (
+        "curated"
+        if language == "english"
+        else lesson_visual_gender(lesson_dir, language=language)
+    )
     scene = classify_scene(lesson_dir, lesson, language=language, gender=gender)
     labels = phrase_labels(useful_phrases, fallback=title)
     scene_label = scene.replace("-", " ")
-    group_label = "perempuan" if gender == "female" else "laki-laki"
+    if language == "english":
+        group_label = ENGLISH_SCENE_DESCRIPTIONS[scene]
+    else:
+        group_label = f"cartoon faceless {'perempuan' if gender == 'female' else 'laki-laki'}"
 
     data = {
         "hero": {
             "src": f"/images/lesson-visual-library/{scene}/hero.png",
             "width": HERO_WIDTH,
             "height": HERO_HEIGHT,
-            "alt": f"Ilustrasi cartoon faceless {group_label} untuk konteks {title} di Indonesia.",
+            "alt": f"Ilustrasi {group_label} untuk konteks {title} di Indonesia.",
             "caption": f"Konteks percakapan nyata: {title}.",
         },
         "cards": [
@@ -273,6 +391,18 @@ def dialogue_speakers(path: Path) -> list[str]:
 
 
 def classify_scene(lesson_dir: Path, lesson: dict[str, Any], *, language: str, gender: str) -> str:
+    if language == "english":
+        _, level, unit_key, lesson_key = lesson_identity(lesson_dir)
+        override = ENGLISH_LESSON_SCENE_OVERRIDES.get((level, unit_key, lesson_key))
+        if override:
+            return override
+        scene = ENGLISH_UNIT_SCENES.get((level, unit_key))
+        if scene:
+            return scene
+        raise ValueError(
+            f"Missing curated English visual scene for {level}/{unit_key}/{lesson_key}"
+        )
+
     title = str(lesson.get("title") or "")
     slug = str(lesson.get("slug") or "")
     unit = lesson_dir.parent.name

@@ -1,24 +1,25 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-presentation/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Building a Persuasive Flow di Indonesia.
+  alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Building a Persuasive
+    Flow di Indonesia.
   caption: 'Konteks percakapan nyata: Building a Persuasive Flow.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.png
   width: 1254
   height: 1254
   label: The core claim is that modularization will improve delivery speed.
-  alt: Cuplikan visual service male untuk frasa The core claim is that modularization will improve delivery
-    speed..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english presentation untuk frasa The core claim is that modularization will improve
+    delivery speed..
+- src: /images/lesson-visual-library/english-presentation/card-2.png
   width: 1254
   height: 1254
   label: The evidence suggests teams ship faster when ownership is clear.
-  alt: Cuplikan visual service male untuk frasa The evidence suggests teams ship faster when ownership
+  alt: Cuplikan visual english presentation untuk frasa The evidence suggests teams ship faster when ownership
     is clear..
-- src: /images/lesson-visual-library/service-male/card-3.png
+- src: /images/lesson-visual-library/english-presentation/card-3.png
   width: 1254
   height: 1254
   label: A common concern is fragmentation.
-  alt: Cuplikan visual service male untuk frasa A common concern is fragmentation..
+  alt: Cuplikan visual english presentation untuk frasa A common concern is fragmentation..

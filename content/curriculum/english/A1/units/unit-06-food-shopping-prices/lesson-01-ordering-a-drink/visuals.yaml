@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-cafe-order/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Ordering a Drink di Indonesia.
+  alt: Ilustrasi dua perempuan dalam transaksi di kafe untuk konteks Ordering a Drink di Indonesia.
   caption: 'Konteks percakapan nyata: Ordering a Drink.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-cafe-order/card-1.png
   width: 1254
   height: 1254
   label: What would you like?
-  alt: Cuplikan visual service male untuk frasa What would you like?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english cafe order untuk frasa What would you like?.
+- src: /images/lesson-visual-library/english-cafe-order/card-2.png
   width: 1254
   height: 1254
   label: Can I have a tea, please?
-  alt: Cuplikan visual service male untuk frasa Can I have a tea, please?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english cafe order untuk frasa Can I have a tea, please?.
+- src: /images/lesson-visual-library/english-cafe-order/card-3.png
   width: 1254
   height: 1254
   label: Small or large?
-  alt: Cuplikan visual service male untuk frasa Small or large?.
+  alt: Cuplikan visual english cafe order untuk frasa Small or large?.

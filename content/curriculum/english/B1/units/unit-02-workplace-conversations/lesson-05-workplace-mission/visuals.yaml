@@ -1,22 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Workplace Mission di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Workplace Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Workplace Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: I'm making good progress.
-  alt: Cuplikan visual classroom male untuk frasa I'm making good progress..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa I'm making good progress..
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: Could you clarify which risks you want me to focus on?
-  alt: Cuplikan visual classroom male untuk frasa Could you clarify which risks you want me to focus on?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Could you clarify which risks you want me
+    to focus on?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: Just to confirm, you need it by Friday morning, right?
-  alt: Cuplikan visual classroom male untuk frasa Just to confirm, you need it by Friday morning, right?.
+  alt: Cuplikan visual english workplace meeting untuk frasa Just to confirm, you need it by Friday morning,
+    right?.

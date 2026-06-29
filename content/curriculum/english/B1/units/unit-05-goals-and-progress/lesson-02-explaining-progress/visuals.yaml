@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-learning-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Explaining Progress di Indonesia.
+  alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Explaining Progress di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Progress.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
   width: 1254
   height: 1254
   label: I'm making good progress.
-  alt: Cuplikan visual workplace male untuk frasa I'm making good progress..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english learning coaching untuk frasa I'm making good progress..
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
   width: 1254
   height: 1254
   label: I've been practicing every morning.
-  alt: Cuplikan visual workplace male untuk frasa I've been practicing every morning..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english learning coaching untuk frasa I've been practicing every morning..
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
   width: 1254
   height: 1254
   label: I'm about halfway.
-  alt: Cuplikan visual workplace male untuk frasa I'm about halfway..
+  alt: Cuplikan visual english learning coaching untuk frasa I'm about halfway..

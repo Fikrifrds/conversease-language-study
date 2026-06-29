@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-classroom/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking Someone's Name di Indonesia.
+  alt: Ilustrasi dua perempuan belajar di kelas untuk konteks Asking Someone's Name di Indonesia.
   caption: 'Konteks percakapan nyata: Asking Someone''s Name.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-classroom/card-1.png
   width: 1254
   height: 1254
   label: What's your name?
-  alt: Cuplikan visual classroom male untuk frasa What's your name?.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english classroom untuk frasa What's your name?.
+- src: /images/lesson-visual-library/english-classroom/card-2.png
   width: 1254
   height: 1254
   label: May I know your name?
-  alt: Cuplikan visual classroom male untuk frasa May I know your name?.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english classroom untuk frasa May I know your name?.
+- src: /images/lesson-visual-library/english-classroom/card-3.png
   width: 1254
   height: 1254
   label: Is it Raka?
-  alt: Cuplikan visual classroom male untuk frasa Is it Raka?.
+  alt: Cuplikan visual english classroom untuk frasa Is it Raka?.

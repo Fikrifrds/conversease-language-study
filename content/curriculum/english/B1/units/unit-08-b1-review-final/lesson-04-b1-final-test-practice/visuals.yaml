@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B1 Final Test Practice di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks B1 Final Test Practice di Indonesia.
   caption: 'Konteks percakapan nyata: B1 Final Test Practice.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: Let's do a quick practice round.
-  alt: Cuplikan visual classroom male untuk frasa Let's do a quick practice round..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa Let's do a quick practice round..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: The biggest challenge is staying consistent.
-  alt: Cuplikan visual classroom male untuk frasa The biggest challenge is staying consistent..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa The biggest challenge is staying consistent..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: So I'm keeping sessions short.
-  alt: Cuplikan visual classroom male untuk frasa So I'm keeping sessions short..
+  alt: Cuplikan visual english test interview untuk frasa So I'm keeping sessions short..

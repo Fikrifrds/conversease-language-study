@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-tech-help/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Help and Problem Mission di Indonesia.
+  alt: Ilustrasi dua laki-laki menyelesaikan masalah teknis untuk konteks Help and Problem Mission di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Help and Problem Mission.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-tech-help/card-1.png
   width: 1254
   height: 1254
   label: Sorry, I don't understand.
-  alt: Cuplikan visual workplace male untuk frasa Sorry, I don't understand..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english tech help untuk frasa Sorry, I don't understand..
+- src: /images/lesson-visual-library/english-tech-help/card-2.png
   width: 1254
   height: 1254
   label: I can't open this file.
-  alt: Cuplikan visual workplace male untuk frasa I can't open this file..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english tech help untuk frasa I can't open this file..
+- src: /images/lesson-visual-library/english-tech-help/card-3.png
   width: 1254
   height: 1254
   label: Can you wait a minute?
-  alt: Cuplikan visual workplace male untuk frasa Can you wait a minute?.
+  alt: Cuplikan visual english tech help untuk frasa Can you wait a minute?.

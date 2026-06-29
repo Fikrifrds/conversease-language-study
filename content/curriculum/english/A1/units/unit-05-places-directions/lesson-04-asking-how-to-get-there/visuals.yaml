@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-campus-directions/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking How to Get There di Indonesia.
+  alt: Ilustrasi dua laki-laki membahas arah di pusat belajar untuk konteks Asking How to Get There di
+    Indonesia.
   caption: 'Konteks percakapan nyata: Asking How to Get There.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-campus-directions/card-1.png
   width: 1254
   height: 1254
   label: How do I get to the station?
-  alt: Cuplikan visual travel male untuk frasa How do I get to the station?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english campus directions untuk frasa How do I get to the station?.
+- src: /images/lesson-visual-library/english-campus-directions/card-2.png
   width: 1254
   height: 1254
   label: for two minutes
-  alt: Cuplikan visual travel male untuk frasa for two minutes.
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english campus directions untuk frasa for two minutes.
+- src: /images/lesson-visual-library/english-campus-directions/card-3.png
   width: 1254
   height: 1254
   label: at the bank
-  alt: Cuplikan visual travel male untuk frasa at the bank.
+  alt: Cuplikan visual english campus directions untuk frasa at the bank.

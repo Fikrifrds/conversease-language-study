@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Asking for Clarification di Indonesia.
+  alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Asking for Clarification di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Clarification.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
   width: 1254
   height: 1254
   label: Could you clarify which sections you need?
-  alt: Cuplikan visual service male untuk frasa Could you clarify which sections you need?.
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Could you clarify which sections you need?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
   width: 1254
   height: 1254
   label: Just to confirm, you want the latest numbers too, right?
-  alt: Cuplikan visual service male untuk frasa Just to confirm, you want the latest numbers too, right?.
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english workplace meeting untuk frasa Just to confirm, you want the latest numbers
+    too, right?.
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
   width: 1254
   height: 1254
   label: Do you mean the summary or the full report?
-  alt: Cuplikan visual service male untuk frasa Do you mean the summary or the full report?.
+  alt: Cuplikan visual english workplace meeting untuk frasa Do you mean the summary or the full report?.

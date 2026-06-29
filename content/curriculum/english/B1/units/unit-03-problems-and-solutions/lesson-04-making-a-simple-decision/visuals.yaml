@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-male/hero.png
+  src: /images/lesson-visual-library/english-problem-solving/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Making a Simple Decision di Indonesia.
+  alt: Ilustrasi tiga laki-laki menyelesaikan masalah di ruang kerja untuk konteks Making a Simple Decision
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Making a Simple Decision.'
 cards:
-- src: /images/lesson-visual-library/workplace-male/card-1.png
+- src: /images/lesson-visual-library/english-problem-solving/card-1.png
   width: 1254
   height: 1254
   label: We have two options.
-  alt: Cuplikan visual workplace male untuk frasa We have two options..
-- src: /images/lesson-visual-library/workplace-male/card-2.png
+  alt: Cuplikan visual english problem solving untuk frasa We have two options..
+- src: /images/lesson-visual-library/english-problem-solving/card-2.png
   width: 1254
   height: 1254
   label: I'd rather fix it now.
-  alt: Cuplikan visual workplace male untuk frasa I'd rather fix it now..
-- src: /images/lesson-visual-library/workplace-male/card-3.png
+  alt: Cuplikan visual english problem solving untuk frasa I'd rather fix it now..
+- src: /images/lesson-visual-library/english-problem-solving/card-3.png
   width: 1254
   height: 1254
   label: We could do a quick rollback.
-  alt: Cuplikan visual workplace male untuk frasa We could do a quick rollback..
+  alt: Cuplikan visual english problem solving untuk frasa We could do a quick rollback..

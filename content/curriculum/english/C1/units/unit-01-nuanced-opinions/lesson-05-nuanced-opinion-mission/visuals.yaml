@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
+  src: /images/lesson-visual-library/english-debate/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Nuanced Opinion Mission di Indonesia.
+  alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Nuanced Opinion Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Nuanced Opinion Mission.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.png
   width: 1254
   height: 1254
   label: To some extent, yes—especially for new projects.
-  alt: Cuplikan visual health male untuk frasa To some extent, yes—especially for new projects..
-- src: /images/lesson-visual-library/health-male/card-2.png
+  alt: Cuplikan visual english debate untuk frasa To some extent, yes—especially for new projects..
+- src: /images/lesson-visual-library/english-debate/card-2.png
   width: 1254
   height: 1254
   label: I'm fairly confident it will, but I'm not entirely convinced.
-  alt: Cuplikan visual health male untuk frasa I'm fairly confident it will, but I'm not entirely convinced..
-- src: /images/lesson-visual-library/health-male/card-3.png
+  alt: Cuplikan visual english debate untuk frasa I'm fairly confident it will, but I'm not entirely convinced..
+- src: /images/lesson-visual-library/english-debate/card-3.png
   width: 1254
   height: 1254
   label: On balance, I'd prioritize stability with a limited rollout.
-  alt: Cuplikan visual health male untuk frasa On balance, I'd prioritize stability with a limited rollout..
+  alt: Cuplikan visual english debate untuk frasa On balance, I'd prioritize stability with a limited
+    rollout..

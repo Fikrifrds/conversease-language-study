@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-leadership-coaching/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Responding to Long Turns di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam sesi coaching profesional untuk konteks Responding to Long Turns
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Responding to Long Turns.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-1.png
   width: 1254
   height: 1254
   label: 'Let me make sure I got this: ...'
-  alt: 'Cuplikan visual service male untuk frasa Let me make sure I got this: ....'
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: 'Cuplikan visual english leadership coaching untuk frasa Let me make sure I got this: ....'
+- src: /images/lesson-visual-library/english-leadership-coaching/card-2.png
   width: 1254
   height: 1254
   label: 'The key points are: ...'
-  alt: 'Cuplikan visual service male untuk frasa The key points are: ....'
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: 'Cuplikan visual english leadership coaching untuk frasa The key points are: ....'
+- src: /images/lesson-visual-library/english-leadership-coaching/card-3.png
   width: 1254
   height: 1254
   label: If I understand correctly, ...
-  alt: Cuplikan visual service male untuk frasa If I understand correctly, ....
+  alt: Cuplikan visual english leadership coaching untuk frasa If I understand correctly, ....

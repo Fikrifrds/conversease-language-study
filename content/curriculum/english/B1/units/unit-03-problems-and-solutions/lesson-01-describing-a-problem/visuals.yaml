@@ -1,22 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
+  src: /images/lesson-visual-library/english-problem-solving/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Describing a Problem di Indonesia.
+  alt: Ilustrasi tiga laki-laki menyelesaikan masalah di ruang kerja untuk konteks Describing a Problem
+    di Indonesia.
   caption: 'Konteks percakapan nyata: Describing a Problem.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/english-problem-solving/card-1.png
   width: 1254
   height: 1254
   label: There's a problem with the login page.
-  alt: Cuplikan visual service male untuk frasa There's a problem with the login page..
-- src: /images/lesson-visual-library/service-male/card-2.png
+  alt: Cuplikan visual english problem solving untuk frasa There's a problem with the login page..
+- src: /images/lesson-visual-library/english-problem-solving/card-2.png
   width: 1254
   height: 1254
   label: It started this morning.
-  alt: Cuplikan visual service male untuk frasa It started this morning..
-- src: /images/lesson-visual-library/service-male/card-3.png
+  alt: Cuplikan visual english problem solving untuk frasa It started this morning..
+- src: /images/lesson-visual-library/english-problem-solving/card-3.png
   width: 1254
   height: 1254
   label: It happened when we deployed the update.
-  alt: Cuplikan visual service male untuk frasa It happened when we deployed the update..
+  alt: Cuplikan visual english problem solving untuk frasa It happened when we deployed the update..

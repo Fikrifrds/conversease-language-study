@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
+  src: /images/lesson-visual-library/english-social-cafe/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks Talking About Weekends di Indonesia.
+  alt: Ilustrasi dua perempuan bercakap di kafe yang ramai untuk konteks Talking About Weekends di Indonesia.
   caption: 'Konteks percakapan nyata: Talking About Weekends.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/english-social-cafe/card-1.png
   width: 1254
   height: 1254
   label: Any plans for the weekend?
-  alt: Cuplikan visual travel male untuk frasa Any plans for the weekend?.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+  alt: Cuplikan visual english social cafe untuk frasa Any plans for the weekend?.
+- src: /images/lesson-visual-library/english-social-cafe/card-2.png
   width: 1254
   height: 1254
   label: I'm going to visit my parents.
-  alt: Cuplikan visual travel male untuk frasa I'm going to visit my parents..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+  alt: Cuplikan visual english social cafe untuk frasa I'm going to visit my parents..
+- src: /images/lesson-visual-library/english-social-cafe/card-3.png
   width: 1254
   height: 1254
   label: Where do they live?
-  alt: Cuplikan visual travel male untuk frasa Where do they live?.
+  alt: Cuplikan visual english social cafe untuk frasa Where do they live?.

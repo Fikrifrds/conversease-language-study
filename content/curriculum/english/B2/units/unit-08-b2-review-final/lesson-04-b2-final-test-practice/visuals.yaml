@@ -1,23 +1,24 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
+  src: /images/lesson-visual-library/english-test-interview/hero.png
   width: 1672
   height: 941
-  alt: Ilustrasi cartoon faceless laki-laki untuk konteks B2 Final Test Practice di Indonesia.
+  alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks B2 Final Test Practice di Indonesia.
   caption: 'Konteks percakapan nyata: B2 Final Test Practice.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.png
   width: 1254
   height: 1254
   label: My position is that we should run a two-week pilot before a full rollout.
-  alt: Cuplikan visual classroom male untuk frasa My position is that we should run a two-week pilot before
-    a full rollout..
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+  alt: Cuplikan visual english test interview untuk frasa My position is that we should run a two-week
+    pilot before a full rollout..
+- src: /images/lesson-visual-library/english-test-interview/card-2.png
   width: 1254
   height: 1254
   label: Based on the data, drop-offs increased after the redesign.
-  alt: Cuplikan visual classroom male untuk frasa Based on the data, drop-offs increased after the redesign..
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+  alt: Cuplikan visual english test interview untuk frasa Based on the data, drop-offs increased after
+    the redesign..
+- src: /images/lesson-visual-library/english-test-interview/card-3.png
   width: 1254
   height: 1254
   label: The trade-off is speed versus long-term reliability.
-  alt: Cuplikan visual classroom male untuk frasa The trade-off is speed versus long-term reliability..
+  alt: Cuplikan visual english test interview untuk frasa The trade-off is speed versus long-term reliability..
