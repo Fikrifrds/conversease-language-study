@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-options
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-English_expressive_narrator-20260629T011039Z.wav
+  duration_seconds: 23.19
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 7b5a5d1a657e716e79803687d598757495406344945e0a730ca501d409fd26e3
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/listening-English_expressive_narrator-20260629T011039Z.wav
+  trace_id: 0690f8fd3c469f71ca91eb9c06e0cb72,0690f8ffd8f5d042e7eb79c4b7d53ca1,0690f902d2e1babb4f981132eddb9e0c,0690f90410545273bf9c948db75558d9,0690f9063ec1154d36ebdc71f03b35d6,0690f90907fce7eb13cebe0c0df8e9ae,0690f90b44a48e850ea496d2459b8a7e,0690f90dddc476a6916a9a36283d1db1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:10:39.696811+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-presenting-evidence
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-English_expressive_narrator-20260629T012532Z.wav
+  duration_seconds: 51.63
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 08f41439693d702b4f29a4628113d575ac7963a973032a5bd4c120a010af6f56
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/listening-English_expressive_narrator-20260629T012532Z.wav
+  trace_id: 0690fc75fc1269fde49d08456c13c653,0690fc78395f5fd598e2cbeea982b755,0690fc7bbd3ac12cdf704441b10c300d,0690fc7de27d5a91be287c93eccf65f8,0690fc81a9f75acdf2f54b8caa601c08,0690fc83ad32554ccec21921950a663e,0690fc86a3bc30724fe011b214f9af56,0690fc88aaab5d78224b561fe70c9284
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:25:32.267143+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

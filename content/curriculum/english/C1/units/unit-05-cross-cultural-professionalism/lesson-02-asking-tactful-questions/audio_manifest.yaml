@@ -1,5 +1,5 @@
 lesson_key: lesson-02-asking-tactful-questions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/listening-English_expressive_narrator-20260629T012724Z.wav
+  duration_seconds: 27.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 6f861f905cf4a047d559de55ddbbc3991bfb10574eaea17000ea3e177b4ee40f
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/listening-English_expressive_narrator-20260629T012724Z.wav
+  trace_id: 0690fce93bd747c9fd0ffef07e3436e7,0690fcecba6258f651fca5030c9effdc,0690fcee18a51f6a8ad744afd4784511,0690fcf05063df2b4a45b4c9e7fb211f,0690fcf37bdb7da997dadbb85238c381,0690fcf53e563c57831a3ab03ba97250,0690fcf77136040abefd220279954f42,0690fcf9befc3c8a5a86dd44b1f1bfb8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:27:24.040157+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

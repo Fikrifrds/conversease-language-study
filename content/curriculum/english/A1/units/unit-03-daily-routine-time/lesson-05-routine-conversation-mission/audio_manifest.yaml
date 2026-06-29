@@ -1,24 +1,25 @@
 lesson_key: lesson-05-routine-conversation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_expressive_narrator-20260629T001458Z.wav
+  duration_seconds: 19.77
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 8
+  script_content_hash: 383f69fb337231888b0973797ad6d96334553fe496216022065c85cae3bd9030
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/listening-English_expressive_narrator-20260629T001458Z.wav
+  trace_id: 0690ebf055ad064c9cc3dcc7c58c6c6c,0690ebf3e66862a99392601e0dacb117,0690ebf54293239523845e44537cd20f,0690ebf7bc3dbbc69671f8bdeccf402f,0690ebfa800ce460a8a3bd809f7bd4c1,0690ebfce17c8d60999ceac514d6b835,0690ebfe582e795493b0f386b07907b7,0690ec0156f243545a00827465084baf
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:14:58.949844+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

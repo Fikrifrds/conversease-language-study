@@ -1,5 +1,5 @@
 lesson_key: lesson-04-responding-to-new-information
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-04-responding-to-new-information/listening-English_expressive_narrator-20260629T010914Z.wav
+  duration_seconds: 24.4
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 8ead887e4348783263c8cc0840af533d6e8e6ff2d9a3070bec885ef98e7f3496
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-04-responding-to-new-information/listening-English_expressive_narrator-20260629T010914Z.wav
+  trace_id: 0690f8a64be4754c1d395c67fc2916a7,0690f8a9d98e2a43400b01eeebb3d101,0690f8abc714c586c4dc15df1c298932,0690f8aea9d885d38e01a20b7a34d3aa,0690f8b16d11d7bc9659dc22d08374a2,0690f8b3f573f883aa6d8601ace345fe,0690f8b58b9322d3f1a4974ca9f1e20d,0690f8b77fc04cec51d61eb5461c7a23
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:09:14.133456+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

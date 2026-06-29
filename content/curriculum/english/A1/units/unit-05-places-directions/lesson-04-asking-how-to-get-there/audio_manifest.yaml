@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_expressive_narrator-20260629T001757Z.wav
+  duration_seconds: 14.22
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Dimas: English_Diligent_Man
     Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 5c4c0f718ca766ab6b20df92337a0d9a34180fe3489f159ea408f782e24c6d0c
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/listening-English_expressive_narrator-20260629T001757Z.wav
+  trace_id: 0690eca6188f5c653f7a3577cd39a549,0690eca849e53c601edc7ccca81b7998,0690ecaa111a5bb81868dd2c554772a7,0690ecad762d9f050d2aad0b0cb4ed51,0690ecaf199269f202ba6a4774a12032,0690ecb18826f96f6b19bfee7e7f1691,0690ecb340385a3919877bf220014f0d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:17:57.194821+00:00'
 lesson_key: lesson-04-asking-how-to-get-there
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

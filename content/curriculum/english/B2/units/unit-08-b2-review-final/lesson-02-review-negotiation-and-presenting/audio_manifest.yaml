@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-negotiation-and-presenting
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-08-b2-review-final/lesson-02-review-negotiation-and-presenting/listening-English_expressive_narrator-20260629T011518Z.wav
+  duration_seconds: 31.43
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: ddafd08b124e674b91208560e9456b9712ff6fd22179112176c94223c2b0c657
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-08-b2-review-final/lesson-02-review-negotiation-and-presenting/listening-English_expressive_narrator-20260629T011518Z.wav
+  trace_id: 0690fa1384b3a719c27476e4da678178,0690fa16088b1362da56811a15d20472,0690fa186ad0914ca921dddb3c80ef86,0690fa1ae1ed55b077fe120083b9d484,0690fa1dca17ed4b42cb9d728ea72888,0690fa1e4d3a0f9d3718cb2337055061,0690fa21d88ca56c8e03a46469ca31be,0690fa2315c15d9c08d83fa21bdc7bad
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:15:18.662782+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-asking-for-recommendations
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-English_expressive_narrator-20260629T004744Z.wav
+  duration_seconds: 26.79
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 2fbd67fb90436523dd0943e85909f626f4c636ed15cc36b4b4e32d56164a3f57
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/listening-English_expressive_narrator-20260629T004744Z.wav
+  trace_id: 0690f39c93ee965df3256c9fa535f4eb,0690f39f940308f8ad507a45c2192486,0690f3a12ce14ce9856b1784c151f705,0690f3a4dc486613f657046ac4accb19,0690f3a6b7e8c2e66acd3fe833b84c28,0690f3a926efc5c92a37ac374a5771f5,0690f3abadbe79471fb69e315715defb,0690f3adcee92ed509c8fbb49c6b49ad
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:47:44.289933+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

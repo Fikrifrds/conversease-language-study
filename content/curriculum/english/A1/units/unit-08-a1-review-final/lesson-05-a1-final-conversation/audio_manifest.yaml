@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,21 +6,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_expressive_narrator-20260629T002427Z.wav
+  duration_seconds: 42.99
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 15
+  script_content_hash: 483516bd2010fb07ff991a31bd18dae93de0630215aac665cdc41fa2f5e40df1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/listening-English_expressive_narrator-20260629T002427Z.wav
+  trace_id: 0690ee186eb05c10d1cde773f1fa2c97,0690ee1af64dd091b41717be664dd418,0690ee1dae5a339b4720b3268ca13218,0690ee1f596941a94947739026fabcf5,0690ee21a23098872ecea4b1e01f3f02,0690ee248a903a6a1f2a77f3cdb547c3,0690ee263825dc285a347f3b8981d57b,0690ee29b19fa33bd1971144ff563c98,0690ee2bcee698b32353785e91aa32a6,0690ee2d42f25a7138cd96532457a917,0690ee307267a063bde2d286c97fb970,0690ee32334e430c8754f16eb1da9cfc,0690ee34f9afaa9b82bf6aa715e7f1fb,0690ee3605d6f1192e13913691757d19,0690ee38eb18b37bf98f8559ba4e8858
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:24:27.538717+00:00'
 lesson_key: lesson-05-a1-final-conversation
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

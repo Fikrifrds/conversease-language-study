@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-travel-and-shopping
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-02-review-travel-and-shopping/listening-English_expressive_narrator-20260629T003908Z.wav
+  duration_seconds: 20.8
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Staff: English_Diligent_Man
+    Raka: English_Gentle-voiced_man
+    Staff: English_CalmWoman
   line_count: 7
+  script_content_hash: fd092e36e55690cad12cb857f2cd14c669f31d848bb444cd137be63d794d0357
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-02-review-travel-and-shopping/listening-English_expressive_narrator-20260629T003908Z.wav
+  trace_id: 0690f19c07b17d1332b4dcd9b0b4ae5b,0690f19fb687228ca60ba479d5d4efbd,0690f1a186789844302d514241078fc4,0690f1a3b5a08fdeb2396e00101da388,0690f1a5c5285e772172d5f9f5496953,0690f1a8f82ad99b9e6a5178352f1014,0690f1aa1bd9b1a273c80604eef0370e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:39:08.774645+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

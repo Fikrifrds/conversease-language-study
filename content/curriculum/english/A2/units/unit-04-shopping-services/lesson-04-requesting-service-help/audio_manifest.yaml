@@ -1,5 +1,5 @@
 lesson_key: lesson-04-requesting-service-help
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-04-requesting-service-help/listening-English_expressive_narrator-20260629T003212Z.wav
+  duration_seconds: 13.37
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Adi: English_Upbeat_Woman
-    Staff: English_Diligent_Man
+    Adi: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 6
+  script_content_hash: 594da58134098404680734e13c714b0e7a40ab47f63f4a0353224942465e0130
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-04-requesting-service-help/listening-English_expressive_narrator-20260629T003212Z.wav
+  trace_id: 0690f00008d18c8f8073c7e177be93ad,0690f00206f5e7a4556900bf203adf85,0690f0041eadad618487c2db538fe5f7,0690f006c67ccdda0589262f3c3ef137,0690f0098c69691b8e9d934bb2502f4b,0690f00bb21b1143f7e9ffd14e56cf81
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:32:12.761008+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

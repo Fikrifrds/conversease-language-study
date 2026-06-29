@@ -1,5 +1,5 @@
 lesson_key: lesson-05-negotiation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-05-negotiation-mission/listening-English_expressive_narrator-20260629T010455Z.wav
+  duration_seconds: 29.02
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: d62b79aa36df755af1e255d80ff22ccbc07b0d57e01d1213756ba7ed2dca95f1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-05-negotiation-mission/listening-English_expressive_narrator-20260629T010455Z.wav
+  trace_id: 0690f7a402a735695a656d101a762261,0690f7a690613d3513bcd30822f1fdd7,0690f7a9e43d81d588e83864fa486df7,0690f7ab73780fa4d3cbe16aedf7dd7d,0690f7adf5b17813310b8eb4c75a2339,0690f7b017e7cfdae6084b2a71bf37fb,0690f7b2eca89176b97364893b117c9f,0690f7b4e55752cd8d82d71c3ea9eb2c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:04:55.818502+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-05-health-appointment-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-05-health-appointment-mission/listening-English_expressive_narrator-20260629T003442Z.wav
+  duration_seconds: 22.71
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Receptionist: English_Gentle-voiced_man
+    Raka: English_Gentle-voiced_man
+    Receptionist: English_radiant_girl
   line_count: 7
+  script_content_hash: 512f8ec51e5bc1cef9fe69ae7ab8f35c5c0cb272c76bc734a9e4dbd9ea47e597
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-05-health-appointment-mission/listening-English_expressive_narrator-20260629T003442Z.wav
+  trace_id: 0690f090f712fe13d0414e4722affb14,0690f09317401ffd7e2a2de0b17408b2,0690f0955bec2202718b69a2e7e228cb,0690f097a4a281c732924bb388b59aa6,0690f09aa1baae3f6f7ddf29e4b4d25f,0690f09cca9d3bcf22f8a9d69529dd15,0690f09f513e3eaeb99158f925ed3782
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:34:42.005692+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

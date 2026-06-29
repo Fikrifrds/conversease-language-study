@@ -1,12 +1,12 @@
 lesson_key: lesson-03-asking-someones-name
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_expressive_narrator-20260629T001054Z.wav
+  duration_seconds: 10.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Adi: English_Diligent_Man
     Raka: English_Gentle-voiced_man
   line_count: 5
+  script_content_hash: ea2457d3a2cb129265c55277ba051624a8af45ee2c05e44a2bb3a41dcbde6676
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/listening-English_expressive_narrator-20260629T001054Z.wav
+  trace_id: 0690eb0450a9b8b5d92cb6681f59ce32,0690eb066e23ed87b9371bd0e7970b72,0690eb08275bd49521beaca2c44cc89a,0690eb0a427fe77bd549cc0b74aec12f,0690eb0c0474706ce411a94a817a307a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:10:54.468042+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-stating-your-position
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-English_expressive_narrator-20260629T005809Z.wav
+  duration_seconds: 25.82
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: cb21d759bd80d35c101e67d76b35afd3b4bacd0928e3bba0fca7045e2007eafd
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-01-stating-your-position/listening-English_expressive_narrator-20260629T005809Z.wav
+  trace_id: 0690f60e14098a8f47f76be5c2275461,0690f611c261a105cb684d415b46a3d0,0690f613a6dc752aedc909adf2027061,0690f615222296fe159ec1ba7f6e8a0f,0690f6173235f9677de4d0ae5d6a7bde,0690f61af61b92db2e4b825a97d1963c,0690f61cfedfc2e319565b870725de5e,0690f61f741bf3f1c72d63d6f52fad78
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:58:09.232461+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

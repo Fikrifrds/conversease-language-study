@@ -1,5 +1,5 @@
 lesson_key: lesson-04-recommending-a-solution
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-04-recommending-a-solution/listening-English_expressive_narrator-20260629T011355Z.wav
+  duration_seconds: 24.66
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 198e2412a46fc1f8dce36eca20f94cabacc177cd0bdafbccd2ec86afbef784ec
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-04-recommending-a-solution/listening-English_expressive_narrator-20260629T011355Z.wav
+  trace_id: 0690f9c14ccd38b625c59a9a78e5d0bd,0690f9c3dfd2d1da6e2c44ef562db9bd,0690f9c6c416ad5a7cc75424d735aad6,0690f9c8222d7db5739bbafd7fefcb70,0690f9ca98e1a514c80b9329f197fea5,0690f9cc5f1d3a78fbdb34a460e39802,0690f9ce908738b389b378c8b4dea4f8,0690f9d05655bbdf21e5e6c427b0222f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:13:55.455942+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

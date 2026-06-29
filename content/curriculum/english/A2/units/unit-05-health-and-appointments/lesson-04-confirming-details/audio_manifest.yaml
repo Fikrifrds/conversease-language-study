@@ -1,5 +1,5 @@
 lesson_key: lesson-04-confirming-details
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-04-confirming-details/listening-English_expressive_narrator-20260629T003417Z.wav
+  duration_seconds: 30.86
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Receptionist: English_Gentle-voiced_man
+    Raka: English_Gentle-voiced_man
+    Receptionist: English_radiant_girl
   line_count: 7
+  script_content_hash: e958aaec0739aaa9801a5b48e2fbe36f733c4daad30f452d07bf590445a40c14
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-04-confirming-details/listening-English_expressive_narrator-20260629T003417Z.wav
+  trace_id: 0690f0778dca5b3fa196fcb209da3f59,0690f07ab8fc8cee5b3332743e0c81e6,0690f07cf573ee7c0589be5063df2125,0690f07f34201f53e6d74d6572154ef4,0690f08253d5226e9687f2bba2f476f7,0690f084221c0b955fb2dedc62e03e23,0690f0879dad61a58c03f24f073b10a6
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:34:17.856168+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

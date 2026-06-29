@@ -1,24 +1,25 @@
 lesson_key: lesson-04-asking-for-repetition
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_expressive_narrator-20260629T001249Z.wav
+  duration_seconds: 23.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: ddcb0e59dd58a33c809eb13c84f47f82e0e2cba9b67380e30fe0b1500931fa30
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/listening-English_expressive_narrator-20260629T001249Z.wav
+  trace_id: 0690eb71f2994e696d1fab8701e2c5a5,0690eb7488dc46624fdd2ae6d0146824,0690eb7773b6a554660ca16564328544,0690eb7ab097bc14249691460408b2ae,0690eb7c3e88da4cefe454eb3519e583,0690eb7f03ebc7d267b347960cf00cdb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:12:49.282443+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

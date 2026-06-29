@@ -1,5 +1,5 @@
 lesson_key: lesson-04-communicating-risk
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-04-communicating-risk/listening-English_expressive_narrator-20260629T012059Z.wav
+  duration_seconds: 54.61
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: e00fc01a92e55825ea6b02e20864403af8b556ff05d3a1bd41d680b121c2e0ca
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-04-communicating-risk/listening-English_expressive_narrator-20260629T012059Z.wav
+  trace_id: 0690fb64e91a76d37bf83ebeac673bd3,0690fb675b110b960dc0e235531a5404,0690fb69cec978386b9b561bf6d0f280,0690fb6c0fcad100453ba0b2e50ccbe0,0690fb6fabae1e31ddec184c5d0b2086,0690fb718bc16ec23aa4b6979f549517,0690fb74f876aed299f5a054cf1ea580,0690fb77c6e26aef89ecab5c26734cfb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:20:59.314665+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

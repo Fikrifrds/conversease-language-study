@@ -1,5 +1,5 @@
 lesson_key: lesson-05-client-conversation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/listening-English_expressive_narrator-20260629T011207Z.wav
+  duration_seconds: 41.87
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 69e4c423365b8e90b19b870507c2f1a9fa36015cb03110c28b1e396f56c0561e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/listening-English_expressive_narrator-20260629T011207Z.wav
+  trace_id: 0690f9508319d76c1fc81048761704e4,0690f953fb788103d6cb34c450e82985,0690f9554cd1413f000c6151972928ae,0690f9587df6ea32e8b6e580cefe3ed7,0690f95a091dc01f1bfecf19e5316ce1,0690f95de5564d20154e318e3e0596b4,0690f95fc9af3f87a9a0415c54fc635a,0690f9621feb927fed2c080c5b40ebfb,0690f965da65e172229dc8119556f900
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:12:07.593898+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,24 +1,25 @@
 lesson_key: lesson-03-days-and-simple-schedules
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_expressive_narrator-20260629T001412Z.wav
+  duration_seconds: 11.37
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: 437a570f929c62e0ef883e654d91f77a0fe7145c46b02e7a9deb511f5363630d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/listening-English_expressive_narrator-20260629T001412Z.wav
+  trace_id: 0690ebc853a00439756b3940d5963558,0690ebcac194bdaddfc3343c62282bb4,0690ebcc79583dec1498b7775c66318d,0690ebce366cdce3a04f286fd7863571,0690ebd0b8382f034f9ff427564bfa51,0690ebd33a76f3081fd1abba3ce7252e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:14:12.609802+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,24 +1,25 @@
 lesson_key: lesson-01-telling-the-time
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_expressive_narrator-20260629T001334Z.wav
+  duration_seconds: 8.65
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: 3396ab9ad040fd2efd011677aafbc8f34d9c8c40d4210c6fc69a22e1d0afe4bf
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/listening-English_expressive_narrator-20260629T001334Z.wav
+  trace_id: 0690eba34f99a72fd325eb028099bc6a,0690eba5557239d163b005704278ad99,0690eba74b6fa019c194689a07d42b21,0690eba993c301c03229a16253b2596c,0690ebabc5568216cd92644454990c0e,0690ebadda207d3262dac69a66ea15b2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:13:34.879575+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

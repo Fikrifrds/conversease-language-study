@@ -1,5 +1,5 @@
 lesson_key: lesson-02-supporting-with-reasons
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-English_expressive_narrator-20260629T005837Z.wav
+  duration_seconds: 27.81
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 3338e13024dd16aa44ce1f3a03c22f4b255f9ca1d9e8bfe60bf6f6c797911fac
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/listening-English_expressive_narrator-20260629T005837Z.wav
+  trace_id: 0690f629735937f33e74756c9319df3a,0690f62c355fa65732b91cecafe509d5,0690f62e970051f226cae40de2c62048,0690f6309a99a2a68f6d436ca44b3b7f,0690f63388195bd64e4ee1fe5ccba064,0690f636a6361a6edc77f490869c5995,0690f639fbfa6210ad35fed011fd2b52,0690f63b3414ee8344d8e8ed4037f091
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:58:37.802082+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

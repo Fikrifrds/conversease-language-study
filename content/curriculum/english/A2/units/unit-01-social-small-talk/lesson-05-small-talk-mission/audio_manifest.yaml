@@ -1,5 +1,5 @@
 lesson_key: lesson-05-small-talk-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-05-small-talk-mission/listening-English_expressive_narrator-20260629T002640Z.wav
+  duration_seconds: 36.27
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Raka: English_Gentle-voiced_man
   line_count: 12
+  script_content_hash: e39a057d906fa0e2b77ea61fe27baaeb09d998bbefdaf56d1225495098f1d6fe
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-05-small-talk-mission/listening-English_expressive_narrator-20260629T002640Z.wav
+  trace_id: 0690eea30380949119e524aa87fc0701,0690eea6ef6c9b4523fe6942147d81b8,0690eea8c736d4c02884a7c46f7e37eb,0690eeab715fcc358920a90815286dab,0690eeada61c56b8a8891a3983220533,0690eeaff2faef576add466e87a1f49e,0690eeb12c97e43fb0168313b673939f,0690eeb3b2596c451ce2dbe6bdc23bf0,0690eeb6318d6cb71ec1a24d943f9f9e,0690eeb9423d82e9adf7877702e9bfba,0690eebb034753c5bd2431c03942f005,0690eebe72228e34a8048618c0c4d3be
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:26:40.053129+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

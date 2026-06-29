@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_expressive_narrator-20260629T002317Z.wav
+  duration_seconds: 27.05
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 9
+  script_content_hash: 7a0d55ba5312b8e8c80d1b3a84074c307c014305162adcc64edca5136d30d82d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/listening-English_expressive_narrator-20260629T002317Z.wav
+  trace_id: 0690ede147e67802b43d2b96a72b3d1a,0690ede3731029a405687ee09b94b941,0690ede5bff75afd508d0e06d5ff8419,0690ede7e9f5aaebb0c9de6b934f2240,0690edea714c77923617293eb0041354,0690edeca0dcffdacce7373d513814ad,0690edef31c80304d3c1f915961f48e6,0690edf1457fcfb1742710e45b8b4abb,0690edf4d40b1cf9a31a2f26bb233ca2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:23:17.929795+00:00'
 lesson_key: lesson-03-review-places-and-shopping
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

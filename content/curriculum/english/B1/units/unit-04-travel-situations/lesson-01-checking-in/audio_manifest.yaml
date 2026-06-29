@@ -1,5 +1,5 @@
 lesson_key: lesson-01-checking-in
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-01-checking-in/listening-English_expressive_narrator-20260629T004651Z.wav
+  duration_seconds: 25.6
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 7bccf61db124781b25948e8a06286408511575a6d0868428298a6a5daa56be95
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-01-checking-in/listening-English_expressive_narrator-20260629T004651Z.wav
+  trace_id: 0690f3685a4947b638256c1d8944f787,0690f36aca4c35d6084ca36d7aba3358,0690f36c1b73927fc0fcee1291f3d333,0690f36fa3a5c5fc8cef40e9e28e56e5,0690f371ef8edc1eea44c9613e88ce72,0690f37404b9eee191d8318503c2c7f6,0690f376127575baf851d9c3e411f9ca,0690f379d3f39006fef0a69ce783d38d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:46:51.661854+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

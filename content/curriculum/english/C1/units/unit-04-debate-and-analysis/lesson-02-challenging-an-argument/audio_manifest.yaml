@@ -1,5 +1,5 @@
 lesson_key: lesson-02-challenging-an-argument
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-English_expressive_narrator-20260629T012459Z.wav
+  duration_seconds: 56.54
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 9119620de8e63561c47c8dca5d6509caee50ffe77c3897abeea2cda2ac4307ca
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/listening-English_expressive_narrator-20260629T012459Z.wav
+  trace_id: 0690fc544a843a5e6758e1229e8144b0,0690fc57efa45819909801d356b617b0,0690fc59bdfe7fbf8544c4b88577451f,0690fc5c55209eaa0eb2e410d0862483,0690fc5fff6295ccfac15e1ccc4e0dc9,0690fc620a90e71e5e9493d3198bb1cf,0690fc655d362a8b827897ed25930926,0690fc6810cc099c0ca42a5a75d543ff
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:24:59.826438+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

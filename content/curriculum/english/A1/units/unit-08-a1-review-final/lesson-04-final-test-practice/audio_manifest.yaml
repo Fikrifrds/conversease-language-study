@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260612T124543Z.wav
-  duration_seconds: 19.58
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_expressive_narrator-20260629T002346Z.wav
+  duration_seconds: 19.8
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,9 +15,10 @@ assets:
     Alya: English_radiant_girl
     Sara: English_CalmWoman
   line_count: 10
+  script_content_hash: a8cd5524882c87d5ecfb710e2cd4de3a6959dcb8623681d4eb53be13e6986e3a
   audio_format: wav
-  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_Aussie_Bloke-20260612T124543Z.wav
-  trace_id: 067b325ef38f602681b2d2ac08475343,067b3262e6579fc50b6c7b1cc9fabcbe,067b3264ddcd9fb5394a4f607c4c8ec1,067b3266918c181bb3cec60ae05a2d09,067b32688d03ed2b4b2d7a7cb37fe7a7,067b326a1ee1b6452ddec0d2a15785ea,067b326d3da66e36b22eae302dcc99e6,067b326fdbbf6ba6a051edb2ba98a22d,067b3272cf969cf312748bce00bb8a25,067b3275d2d74c4c5cbe5d5dadaec24a
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/listening-English_expressive_narrator-20260629T002346Z.wav
+  trace_id: 0690edfcabf17948af3527135afb222d,0690edfeef110c0f036b39c1d481960a,0690ee0041ad9517e75b2abe6b66017e,0690ee027c6290f1cc86326371232f64,0690ee04c389543b42e4f9aa48367a11,0690ee06832b28408590b1bbf200af04,0690ee09d323ad5d3d50dc9df3b448b8,0690ee0ba33077997375b447db7a72be,0690ee0dcd9eea1d140167cbfef00635,0690ee0ffd63d38592865b2821f1ca07
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:45:43.458270+00:00'
+  generated_at: '2026-06-29T00:23:46.104100+00:00'
 lesson_key: lesson-04-final-test-practice

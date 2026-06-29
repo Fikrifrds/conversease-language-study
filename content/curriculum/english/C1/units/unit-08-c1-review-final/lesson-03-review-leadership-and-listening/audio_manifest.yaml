@@ -1,5 +1,5 @@
 lesson_key: lesson-03-review-leadership-and-listening
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-03-review-leadership-and-listening/listening-English_expressive_narrator-20260629T013512Z.wav
+  duration_seconds: 33.49
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 2aff77001cbbf9ae481a8b072f80f3eedf86a4923cbbeaff9f85697690c2e941
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-03-review-leadership-and-listening/listening-English_expressive_narrator-20260629T013512Z.wav
+  trace_id: 0690febc70e9657a2abd48fea1c56628,0690febeefe56cac3b8a2c97e2a7c861,0690fec10fa713777dffa154089ba828,0690fec3a21320073acc59cd3069d957,0690fec62f2847046646f49fae49d170,0690fec8bead68bc61772a08083a1563,0690fecb776b82fcdc51104b7374a307,0690fecd0bddcb4c432e83f0be9815ae
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:35:12.643292+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

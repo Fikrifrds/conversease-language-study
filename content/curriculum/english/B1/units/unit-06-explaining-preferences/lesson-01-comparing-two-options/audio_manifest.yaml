@@ -1,5 +1,5 @@
 lesson_key: lesson-01-comparing-two-options
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-English_expressive_narrator-20260629T005118Z.wav
+  duration_seconds: 20.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: 86ef4ef859af634b305f95fab6bec6d25c7c7c232f08feb726508a8382481b82
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/listening-English_expressive_narrator-20260629T005118Z.wav
+  trace_id: 0690f474e341860630c250312bb78d22,0690f477a29b7012e273ab4a75398b75,0690f479975f0ffc7c9bd850632050f5,0690f47bd11b88144b1638cf403fed89,0690f47d95e094fc5c019f2c34b700cb,0690f4803e8ec4971d9fdaa550976d33,0690f48242fb33d22ba95e7438a4885b,0690f4845c3cf52214144846daffe717
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:51:18.798284+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

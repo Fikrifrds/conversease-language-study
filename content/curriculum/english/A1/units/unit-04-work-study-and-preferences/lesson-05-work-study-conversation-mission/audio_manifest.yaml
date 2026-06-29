@@ -1,12 +1,12 @@
 lesson_key: lesson-05-work-study-conversation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_expressive_narrator-20260629T001634Z.wav
+  duration_seconds: 21.27
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 33ee47241f0a9f36810ee68af8c0d42534cde9135ebb1990dd92fe7a57830bfb
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/listening-English_expressive_narrator-20260629T001634Z.wav
+  trace_id: 0690ec50220707eb109b75c63e76c411,0690ec5324fe9c7a128423714c8e049f,0690ec55ff2fd8f03e6ddee548756a94,0690ec57ba89260803760cf263fd0464,0690ec59efe6eeadfd71defa9d090e63,0690ec5b12b7d96c31244294cca81a94,0690ec5ece3c76060ab31f8df7f7d0d5,0690ec6015126693ff10457b4d9d0787
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:16:34.735562+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

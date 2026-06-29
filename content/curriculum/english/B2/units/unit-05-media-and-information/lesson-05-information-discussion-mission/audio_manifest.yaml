@@ -1,5 +1,5 @@
 lesson_key: lesson-05-information-discussion-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-English_expressive_narrator-20260629T010945Z.wav
+  duration_seconds: 40.12
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 9
+  script_content_hash: e6e8f6fafc6a81d28d7a630414717e9964a2f4f36868e90cbc5ff31562be62d8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/listening-English_expressive_narrator-20260629T010945Z.wav
+  trace_id: 0690f8c2d95954caa84db6159d8439b2,0690f8c47b112fd555c755d357cd8717,0690f8c70a5c5ca3ef91125670e238be,0690f8caacdc93be8c278e3fc7365d49,0690f8cc88f9e9f651630c8c375ad7c6,0690f8cfad828180b2daab7d96bd5264,0690f8d2d2dca0e0082f5819c2fa0d1d,0690f8d47de0ed18fac7c8a609b71763,0690f8d7f5841bca159858282b038258
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:09:45.893803+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

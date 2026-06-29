@@ -1,5 +1,5 @@
 lesson_key: lesson-01-expressing-priorities
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-English_expressive_narrator-20260629T010302Z.wav
+  duration_seconds: 29.02
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 9
+  script_content_hash: 7c89b7a7bee30558011a7c3983ee3cc3db72cfdfc4e28729d78f4b306a1a1f28
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/listening-English_expressive_narrator-20260629T010302Z.wav
+  trace_id: 0690f730c785fd5e1df2f95fcf94905d,0690f732a05c3e9da0f9c6cff7e32c58,0690f735dd47646e932bca1f05abc0ae,0690f7377a45fa673808139883292b4e,0690f73a27ac9915ff3c708d02e3f64a,0690f73cc0cbb50e4a58e3d7ff91f785,0690f73eab34106f4160a9ae6465be98,0690f741120c559e557546ec7b5cb28a,0690f743f5a14ed435d99c6372356f88
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:03:02.403783+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

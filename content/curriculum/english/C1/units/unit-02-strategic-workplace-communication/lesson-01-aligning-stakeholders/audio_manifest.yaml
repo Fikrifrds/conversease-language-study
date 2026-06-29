@@ -1,5 +1,5 @@
 lesson_key: lesson-01-aligning-stakeholders
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-English_expressive_narrator-20260629T011929Z.wav
+  duration_seconds: 29.1
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 134b581f492ea72ceda676ba1d6afc7b2475c3a9ed4c114af0b05fce8b804312
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/listening-English_expressive_narrator-20260629T011929Z.wav
+  trace_id: 0690fb0e03bed4d192bcbd6a76bc6890,0690fb103846265fee847d4db81b41a3,0690fb13a812e9b48ebbcfa2f0d2498c,0690fb1590defff7a93f08d37c34a0fd,0690fb1827c9d9e6d70bd13bae01368a,0690fb1ad74440cc7b586c80d47f6432,0690fb1db42958690db64d49056c10bd,0690fb1f2b8aadc98cd9f64a664967a7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:19:29.674736+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

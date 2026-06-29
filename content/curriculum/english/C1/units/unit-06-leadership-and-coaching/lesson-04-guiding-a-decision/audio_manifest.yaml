@@ -1,5 +1,5 @@
 lesson_key: lesson-04-guiding-a-decision
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-English_expressive_narrator-20260629T013049Z.wav
+  duration_seconds: 37.48
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 1722d2d0ded99e23e34527628eb5b3291a29eacc32c0e1cf3a99ec3621c9c0fa
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/listening-English_expressive_narrator-20260629T013049Z.wav
+  trace_id: 0690fdb26efa779698bba115e78d92a4,0690fdb5ac499be86c94f8a42e9efb6b,0690fdb7e212fc426710f6fa41c9316c,0690fdb9d8a0c280356c3f93a6b0af29,0690fdbb18534ae82fdac16f3c98ac4b,0690fdbe8e91c62343c70b8773e70e13,0690fdc0fa1576e776b18bf6ed31f7d8,0690fdc333952df331112642cc82208c,0690fdc54944f1e3591603ee3d9ebbd0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:30:49.151312+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

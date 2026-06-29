@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_expressive_narrator-20260629T001842Z.wav
+  duration_seconds: 15.06
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 96f449c8cb79ca5d1d1b05522a813a74ccabfa789da14c67aca769d797398b21
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/listening-English_expressive_narrator-20260629T001842Z.wav
+  trace_id: 0690ecd2f13029f507fc177ee0c46171,0690ecd50e0f8bed806c139d43932d0e,0690ecd7c733b7c06fb402827516231a,0690ecd91132b8d86af17201b5e0a6ef,0690ecdbc6464cb5adccd200bbd072f9,0690ecdd9e16cb391f1ec782e4374c6f,0690ecdf51352aa3cd86f08e98fe7d0e,0690ece15ba9dac280cd57800b865a37
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:18:42.924659+00:00'
 lesson_key: lesson-01-ordering-a-drink
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-giving-actionable-feedback
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-English_expressive_narrator-20260629T013017Z.wav
+  duration_seconds: 27.63
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 5434cfffac9231d574b401683e9764aa0a1328432dbe8a8dbdbe85480471b737
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/listening-English_expressive_narrator-20260629T013017Z.wav
+  trace_id: 0690fd955c41c1350ba2c6fb9db7ffbf,0690fd972f0ec73021b921de0891446e,0690fd9a2bf298c86057678a044cd14f,0690fd9b9864904fc4c748781d765017,0690fd9e25af18382457fc5ebe46f29e,0690fda0fecd3532a1291475f3ae28ad,0690fda2af64b4e64d0097000982469f,0690fda47dad3b32aafa927a06170b95,0690fda64a67a97a2327ce88f1ac65e8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:30:17.485679+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

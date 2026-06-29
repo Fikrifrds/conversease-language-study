@@ -1,5 +1,5 @@
 lesson_key: lesson-03-handling-objections
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-English_expressive_narrator-20260629T010400Z.wav
+  duration_seconds: 25.27
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 792f858733a9a11cdd46fc98b8005efdc5629401d80b8f126a5b608278eda964
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/listening-English_expressive_narrator-20260629T010400Z.wav
+  trace_id: 0690f76c0271d9f45daaff02d69e5313,0690f76f895711874e84f88fd6160050,0690f77277cac74e2982e0e542526a00,0690f774ee106873b71f2b56a6750ca4,0690f77659b7e4efbd1c69e1cfdf7df7,0690f779cabfb095df7236cc2adeb8b1,0690f77cc2a7dcc6d666b28adea1dbd1,0690f77ea3b174993ceb7bbd331cbdba
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:04:00.790326+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

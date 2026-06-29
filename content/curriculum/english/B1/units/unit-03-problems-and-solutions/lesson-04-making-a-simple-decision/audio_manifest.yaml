@@ -1,5 +1,5 @@
 lesson_key: lesson-04-making-a-simple-decision
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-English_expressive_narrator-20260629T004558Z.wav
+  duration_seconds: 19.03
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: e8e0e942a6f43335163023f87ed5c827f256204d061daafef740c75e29e21ba4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/listening-English_expressive_narrator-20260629T004558Z.wav
+  trace_id: 0690f33679c7b84e83cdb0ab310454da,0690f339fd42297b90a8cbba1d1b9de7,0690f33bd630f62dcced38c401c3b606,0690f33e1644350ecfe123aa38bf611d,0690f3409c547ce08ad865190a10add6,0690f342470d37cc9ce8fe5e0bfc7964,0690f3450db67cdafe63cfedbff15cb1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:45:58.639681+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

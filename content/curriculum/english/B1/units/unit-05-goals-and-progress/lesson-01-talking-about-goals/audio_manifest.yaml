@@ -1,5 +1,5 @@
 lesson_key: lesson-01-talking-about-goals
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-01-talking-about-goals/listening-English_expressive_narrator-20260629T004905Z.wav
+  duration_seconds: 19.66
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: 313f619b618bbdbea242d3dbbb7e4caf87ec177304a72db6ecd2bdbb849bb616
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-01-talking-about-goals/listening-English_expressive_narrator-20260629T004905Z.wav
+  trace_id: 0690f3f03dc0b5c1d261a75ae70bc461,0690f3f238486e4fec257c668858a3db,0690f3f4688d3a94bae374a2c1f315e2,0690f3f6faf8f592841522014e3934b4,0690f3f8263e499d37619b78024b544a,0690f3faafe8ab4abc2790a00540cfc8,0690f3fd31da6d89f36d1fbeea2e4b61,0690f3ff7be8baa473ef7a98978124e0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:49:05.822163+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

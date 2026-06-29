@@ -1,5 +1,5 @@
 lesson_key: lesson-04-joining-a-simple-meeting
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-04-joining-a-simple-meeting/listening-English_expressive_narrator-20260629T004401Z.wav
+  duration_seconds: 17.81
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 3a7323c3edf8ec46db7ead40b012bb48a03c4de84b6108c45329b30dfb519ed2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-04-joining-a-simple-meeting/listening-English_expressive_narrator-20260629T004401Z.wav
+  trace_id: 0690f2c1d2fa7985d110fe3f2e0015a9,0690f2c4e948a7a340f6c3cf6eb9d7e0,0690f2c6392b70f34c3820f6bf4fc87d,0690f2c827ac6972cb56a56537c96746,0690f2cba07a551ee622b7d21463a17c,0690f2cdfefbbe05e05aeef1b6241e0b,0690f2cfc15459ce35dc122e3d160134
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:44:01.428200+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

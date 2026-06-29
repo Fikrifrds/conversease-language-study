@@ -1,5 +1,5 @@
 lesson_key: lesson-05-workplace-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-English_expressive_narrator-20260629T004426Z.wav
+  duration_seconds: 24.29
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 232f18fa66ca8954b0e6a4aab0d9c8448a42b6b12caafaf06e382ffd6197bf1a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/listening-English_expressive_narrator-20260629T004426Z.wav
+  trace_id: 0690f2d9008a9e98d9f5bd8ab5f158f9,0690f2db9af206ca9202e9dfa3b7060f,0690f2de110058bebc6f662648137fb6,0690f2e0df190c52de07b8e887e1edc8,0690f2e36c931faadeb7c07bf4e2c13a,0690f2e5154a12195d4111b5aa4d1368,0690f2e8a969c4f90e10bab5b6441c0b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:44:26.567765+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

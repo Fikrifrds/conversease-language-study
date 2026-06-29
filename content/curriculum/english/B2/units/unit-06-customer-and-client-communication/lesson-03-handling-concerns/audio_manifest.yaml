@@ -1,5 +1,5 @@
 lesson_key: lesson-03-handling-concerns
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-English_expressive_narrator-20260629T011105Z.wav
+  duration_seconds: 25.3
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 3f128073d1dda84921274a36fb895b177da5eba4044a42718313f759eccdcc01
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/listening-English_expressive_narrator-20260629T011105Z.wav
+  trace_id: 0690f918d3b193568469cdb8f15240bb,0690f91ae64e6fdc0a062501f4cb9326,0690f91d8ceb749de0a80b177696782f,0690f91fc851f25e38489cda7d49b8a6,0690f921a6d355add91acba7dc55468a,0690f923f93c5802e848d6dd443ad639,0690f925e42972c05348663c76db3335,0690f9273705096d2b80bea09b93d89f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:11:05.597000+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

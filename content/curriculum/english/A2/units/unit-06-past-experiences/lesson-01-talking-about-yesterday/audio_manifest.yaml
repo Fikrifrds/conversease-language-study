@@ -1,5 +1,5 @@
 lesson_key: lesson-01-talking-about-yesterday
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-01-talking-about-yesterday/listening-English_expressive_narrator-20260629T003504Z.wav
+  duration_seconds: 17.14
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 8613641b337c3d8e9b8e84f4a07afb6779b0475fcb45351b1cae32d4bbe001cf
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-01-talking-about-yesterday/listening-English_expressive_narrator-20260629T003504Z.wav
+  trace_id: 0690f0a8ebd5488273a099ee1c63cafc,0690f0aa7c24ce5ed725bd95ce2f6a0e,0690f0ac153d6caa9ddcc0ddad72d678,0690f0aec00cceeb4e4f5eb705edcb5a,0690f0b17aaff27491c7be49b4242a24,0690f0b31a831be7819e11554221a30e,0690f0b602b62026b5b5a1d851bfe0ee
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:35:04.495838+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

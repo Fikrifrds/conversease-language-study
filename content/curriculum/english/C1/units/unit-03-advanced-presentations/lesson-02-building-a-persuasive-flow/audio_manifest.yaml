@@ -1,5 +1,5 @@
 lesson_key: lesson-02-building-a-persuasive-flow
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-English_expressive_narrator-20260629T012225Z.wav
+  duration_seconds: 29.46
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 26a809edf402f0c0607d8c3e60303d001ab67a8a1eda0f21acc0a89343cd97d8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/listening-English_expressive_narrator-20260629T012225Z.wav
+  trace_id: 0690fbbea6cfcc39c10877db3fa1258a,0690fbc1cbca38597fc16c8e9e657df4,0690fbc40ecf964089aa93f9bb90e96b,0690fbc65757b8a395ed392c8cd9c9d3,0690fbc8b00baa9ec9415c9cb9f59e4a,0690fbca356709a3a0a5df58996fba8b,0690fbcd6bfe7453a9e9d1f0855b8bfc,0690fbcf1a78bccf307a52d78603af2c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:22:25.730755+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

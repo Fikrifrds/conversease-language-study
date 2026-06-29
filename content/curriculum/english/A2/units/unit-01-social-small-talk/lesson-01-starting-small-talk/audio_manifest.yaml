@@ -1,5 +1,5 @@
 lesson_key: lesson-01-starting-small-talk
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-01-starting-small-talk/listening-English_expressive_narrator-20260629T002453Z.wav
+  duration_seconds: 20.86
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 1381426a19e63e6a558b872763af5bd2e98651a0cd75ee15dab01c1e47aef056
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-01-starting-small-talk/listening-English_expressive_narrator-20260629T002453Z.wav
+  trace_id: 0690ee43c4a901e154d85b5370cce98b,0690ee45c942efbe3814ce628d94ec4a,0690ee48acf7b76cb94d05d05a7475e1,0690ee4a7ca76afc3eff0f419ca72a68,0690ee4c67e2a9b19fe4510a77537de7,0690ee4e8ee000b9951c9135821c642b,0690ee507ea299fce80f5cf3cc4b287a,0690ee539e9b6f369a3682ebe3af1340
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:24:53.463205+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-giving-a-short-update
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-English_expressive_narrator-20260629T004339Z.wav
+  duration_seconds: 20.02
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: bf78fec202f99140d294bb4cce2f45930d5d3fd8417499f9d547ab35044d1bd4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/listening-English_expressive_narrator-20260629T004339Z.wav
+  trace_id: 0690f2aa80e8cd389825d38f6643b6b6,0690f2adec532112cf7c06d447fcfc09,0690f2b0ac965a89dd2a4a7da2b1d497,0690f2b268f1668c663ddfdcca21b728,0690f2b4c714f6c5d013a0d7a4ee97d6,0690f2b606ec5632120c512c5e890776,0690f2b80cd1db16762951c4d142525d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:43:39.050210+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

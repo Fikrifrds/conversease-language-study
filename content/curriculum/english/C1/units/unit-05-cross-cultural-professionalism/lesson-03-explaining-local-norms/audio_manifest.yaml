@@ -1,5 +1,5 @@
 lesson_key: lesson-03-explaining-local-norms
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-English_expressive_narrator-20260629T012751Z.wav
+  duration_seconds: 29.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 3143c0e7acd5c4f91e0cb11d20881a8144f3ce6e5b00b02f229404327282cfac
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/listening-English_expressive_narrator-20260629T012751Z.wav
+  trace_id: 0690fd041c4a0716daaade0130cd89bf,0690fd07ee3ffece51e791e725f3972b,0690fd09271962971590a9d26a6fd9d3,0690fd0b56ac07c9508098461f33dea8,0690fd0e9d9ed39d347ad89fe110ce3d,0690fd10d23cab3b4abcb474d7c83f89,0690fd13dfff7a95f5969c5e04d4e7f9,0690fd14bf19c6b4cfcae53d10c5130f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:27:51.225311+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

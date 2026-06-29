@@ -1,5 +1,5 @@
 lesson_key: lesson-05-community-culture-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-English_expressive_narrator-20260629T005523Z.wav
+  duration_seconds: 32.47
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 47a5e051408e300809cdc54900bd9aca706f3ce966d889865aeedb10ea1e59f8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/listening-English_expressive_narrator-20260629T005523Z.wav
+  trace_id: 0690f5660b48479f0bae6518f5d5382c,0690f568d6507e5da1083bfb2e2240c2,0690f56bec320bbdba146f6d562d2b6c,0690f56de8ab8ef9c667ce6f9e291dd4,0690f57081f72d8c588d1a027886724f,0690f573c323b443d97132a1a0929a9c,0690f57521f21eaf935bea5aaa7ce841,0690f578faf0813273f411529c6b0b5c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:55:23.453036+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

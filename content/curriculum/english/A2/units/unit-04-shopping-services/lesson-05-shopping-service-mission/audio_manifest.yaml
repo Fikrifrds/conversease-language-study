@@ -1,5 +1,5 @@
 lesson_key: lesson-05-shopping-service-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-English_expressive_narrator-20260629T003243Z.wav
+  duration_seconds: 29.68
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 11
+  script_content_hash: 2d62ccf10d775cb981e66dcd108147f8a914efd59ad4e9454826de54e606203d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/listening-English_expressive_narrator-20260629T003243Z.wav
+  trace_id: 0690f013dcddda086f346eee8496b09b,0690f01533e7a6f446501fb7de5612d4,0690f0174c35e7666f879d6c999b98bd,0690f0195f0a7fc90fe5503b8fbd2080,0690f01b31f8ce7ab6d90558c41eddf6,0690f01d267b9a8a545fae916564b943,0690f01f3a3d978957b2075933bc48df,0690f022ac7ceee42e741e7fb53bf78f,0690f02438ed9d9113b252b2b9a2d427,0690f02782bb1c7ff0cecc81fbf014a7,0690f029931c98d7bc819ff311450f9c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:32:43.753115+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

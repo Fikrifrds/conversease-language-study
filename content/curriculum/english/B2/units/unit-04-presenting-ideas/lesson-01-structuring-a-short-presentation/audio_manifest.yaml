@@ -1,5 +1,5 @@
 lesson_key: lesson-01-structuring-a-short-presentation
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-English_expressive_narrator-20260629T010524Z.wav
+  duration_seconds: 27.78
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: d943b40e8908324f4a7cbf5c3e11a43029a59a1a8faaa12eebc33b66776c4a8a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/listening-English_expressive_narrator-20260629T010524Z.wav
+  trace_id: 0690f7c0a2875b1fb083fc238250c1b3,0690f7c353201103cf7583afebb7a6e3,0690f7c54d0127e9e2b5cc2d14e45714,0690f7c86e72fa144aaed093334439a4,0690f7ca96af9b73ae37539075132387,0690f7cda08faee5ffe8d0f28d779683,0690f7d0df8e7501344f6e9410180faa,0690f7d2150a761305e2987f45a92861
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:05:24.883047+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

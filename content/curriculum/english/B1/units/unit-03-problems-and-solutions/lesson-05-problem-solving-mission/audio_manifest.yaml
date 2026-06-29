@@ -1,5 +1,5 @@
 lesson_key: lesson-05-problem-solving-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-05-problem-solving-mission/listening-English_expressive_narrator-20260629T004625Z.wav
+  duration_seconds: 22.23
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: bf8b165665cd99084568506e7267ac054e77e3c9c3aeffe796a424554c2f72b8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-05-problem-solving-mission/listening-English_expressive_narrator-20260629T004625Z.wav
+  trace_id: 0690f34ecd0e9d01a4af467b5a833f91,0690f3502f0cbf7bb82d7868650a019a,0690f353b27d7f6256476f02f24cef6d,0690f355350522c687bd2347085db6b5,0690f357282fe125f219ff968558b717,0690f359142bc7bab59cda3fc9d2668f,0690f35ce2bae1474626ac688ac7390e,0690f35ec52e34dbe30f2ca44320190a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:46:25.301819+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

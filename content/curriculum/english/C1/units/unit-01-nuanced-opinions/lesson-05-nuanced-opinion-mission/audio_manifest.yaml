@@ -1,5 +1,5 @@
 lesson_key: lesson-05-nuanced-opinion-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening-English_expressive_narrator-20260629T011901Z.wav
+  duration_seconds: 45.31
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: b69b76c02a7c44ea8a572ac5b6dca28bb955c30025ffc994278bade2ae06e5ea
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/listening-English_expressive_narrator-20260629T011901Z.wav
+  trace_id: 0690faef3a44086f558d1285890cc9b9,0690faf2c6b733b1d78977b72c335899,0690faf48ff854ceff99a69b0436026b,0690faf732cbfacfbe5cdfc8b7c569e7,0690faf98e05c6667b3812c2c8cb3127,0690fafcd58dd48ae59789d7a6e32e98,0690fafff5d8ba6cf158a5f3ff3e01d4,0690fb01293b136588f5e9b42ef85725
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:19:01.241765+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

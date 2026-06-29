@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-progress
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-English_expressive_narrator-20260629T004931Z.wav
+  duration_seconds: 21.41
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: a323008436eaa35aabfd2591c8378a6842a0e8fd796ca4c506a454f7bcb64bd1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/listening-English_expressive_narrator-20260629T004931Z.wav
+  trace_id: 0690f409f8628717fb09dacd6f60ca1c,0690f40b71b28aa6323599d78ce042fd,0690f40ddabb149fcdd1b0c0d73be4b9,0690f40f34f57c0321cb7ab88d095cd7,0690f4121448df34468ae07b6a0251b3,0690f414e5ccc6e5fbc7e34d2db8e70c,0690f417105c3c0bde4fb8e4d3c9ec61,0690f419c743438f3ec03dd9ee657582
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:49:31.911514+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

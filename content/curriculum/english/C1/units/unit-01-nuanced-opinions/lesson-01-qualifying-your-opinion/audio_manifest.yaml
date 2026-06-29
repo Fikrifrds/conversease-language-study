@@ -1,5 +1,5 @@
 lesson_key: lesson-01-qualifying-your-opinion
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/listening-English_expressive_narrator-20260629T011709Z.wav
+  duration_seconds: 30.31
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 85f95bdf43918f8f5dbd879746d757494ad03871b4b6ea9c54d1a2bc6ba12cf0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/listening-English_expressive_narrator-20260629T011709Z.wav
+  trace_id: 0690fa81f70192ffbb6852d2110e249b,0690fa8359c4f24b7ca95238a70e0cc1,0690fa86993a05ae8050e4ca52c4eb45,0690fa882faf243745d9c357ba963b52,0690fa8b01529bcdb056f7aef4252bb7,0690fa8e32d861ca3c11c77d12eedddd,0690fa9011261ea3315270ae528443d2,0690fa92ee66969fa667f2837d3e4e44
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:17:09.383521+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

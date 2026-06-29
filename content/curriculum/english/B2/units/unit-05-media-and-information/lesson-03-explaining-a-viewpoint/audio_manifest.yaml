@@ -1,5 +1,5 @@
 lesson_key: lesson-03-explaining-a-viewpoint
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-03-explaining-a-viewpoint/listening-English_expressive_narrator-20260629T010846Z.wav
+  duration_seconds: 51.1
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 02767cf06b8bca4bb9a0fc138c370b588026fcc367a037cf2c0e38d53cdca5b2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-03-explaining-a-viewpoint/listening-English_expressive_narrator-20260629T010846Z.wav
+  trace_id: 0690f8853c2f77f5ddd5a6c83c44cfb7,0690f8882ef8131077f9da0fde9a58f8,0690f88c87012675d60cf86e6b7a5777,0690f88e150880a11a12c74c497dfdd0,0690f892f366dafdd429f5273c562d6b,0690f895a45d5b0c0ff133645b74c0fa,0690f89818cc76eaea17d5b06289fcae,0690f89b2c90c2b4e6fde7c19ee292ed
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:08:46.897009+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

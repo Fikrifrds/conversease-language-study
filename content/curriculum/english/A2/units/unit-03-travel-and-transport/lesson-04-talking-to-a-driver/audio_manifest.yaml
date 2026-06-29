@@ -1,5 +1,5 @@
 lesson_key: lesson-04-talking-to-a-driver
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/listening-English_Aussie_Bloke-20260612T125256Z.wav
-  duration_seconds: 15.29
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/listening-English_expressive_narrator-20260629T003017Z.wav
+  duration_seconds: 16.27
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
+    Adi: English_Diligent_Man
     Driver: English_Diligent_Man
-    Adi: English_Upbeat_Woman
   line_count: 7
+  script_content_hash: b7314b54dac5464164f67ceca72d220899c865dafe1cd84eca6bb82ea0bb7fe0
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/listening-English_Aussie_Bloke-20260612T125256Z.wav
-  trace_id: 067b34181ff273a3f326f0a557fbe387,067b341a0e1d2e7a1f88e706a898f0bf,067b341d20174c73b2a03743f414df82,067b341f8bd6cb7e25c7103f8f78f98d,067b3421fc24d75af0699821c724f9ec,067b342457ec9a8a5cef0db90ab1a4bd,067b342603e3c2d4659d512356405bee
+  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/listening-English_expressive_narrator-20260629T003017Z.wav
+  trace_id: 0690ef89595f1a781f301225d2a4c021,0690ef8ba7281a604a9d5944bfe70012,0690ef8d705d4ac5b79b8d1a5847d8f1,0690ef90795530abb134220feef29524,0690ef92529411fae2ce6c4a1cac742b,0690ef94864d61258082ca2b745fd746,0690ef96981b51d52a60a270dd3a6b74
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T12:52:56.609773+00:00'
+  generated_at: '2026-06-29T00:30:17.043820+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate
-  listening audio.
+stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate listening audio.

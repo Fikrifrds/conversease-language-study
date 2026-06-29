@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_expressive_narrator-20260629T002053Z.wav
+  duration_seconds: 15.72
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Dimas: English_Diligent_Man
     Omar: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 4ed271d9e770c080d0052cee55927b8752b183a0023d6f34f3297eb12e9d86e9
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/listening-English_expressive_narrator-20260629T002053Z.wav
+  trace_id: 0690ed56d0ee2d20fdcfaea274a523a9,0690ed58485b0a93ec7fed2c2027f3c1,0690ed5b8fac6c45943c61b400c092d9,0690ed5d13b629e96bb69c8ac5d8231e,0690ed5f3b6faf4f421b6c44c398c5f1,0690ed61874d5f6de12a3e305dc092e6,0690ed63fab1a039ab58d83d80cec6e3
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:20:53.762085+00:00'
 lesson_key: lesson-02-asking-for-help
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

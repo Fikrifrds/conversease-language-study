@@ -1,5 +1,5 @@
 lesson_key: lesson-01-review-nuance-and-strategy
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-01-review-nuance-and-strategy/listening-English_expressive_narrator-20260629T013410Z.wav
+  duration_seconds: 33.09
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 588fe49e92ad7fa256086f85043eace59dd078e7776deac067706b9280ba4c32
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-01-review-nuance-and-strategy/listening-English_expressive_narrator-20260629T013410Z.wav
+  trace_id: 0690fe7fb5bfe89a7f82ca5b57b9623f,0690fe818882a08b3c619da2d136c79c,0690fe84e7430f4f403ee53d9ec07140,0690fe86ff7f73b4756a0edfd673978f,0690fe8951a0232c99697d6dd419dcf8,0690fe8b4f2a142ed0947161d8a15e3f,0690fe8d173d369959ccb05d68ddda7c,0690fe9011d1f211fb1052ae56f1edb0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:34:10.972524+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

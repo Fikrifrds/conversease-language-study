@@ -1,5 +1,5 @@
 lesson_key: lesson-03-comparing-simple-options
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-English_expressive_narrator-20260629T003153Z.wav
+  duration_seconds: 17.72
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 6
+  script_content_hash: d1b022f6532ff48ab8251dacb515222a1bad758089c040611113ab039df27972
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/listening-English_expressive_narrator-20260629T003153Z.wav
+  trace_id: 0690efeb357080eef821f15e749d60aa,0690efed79ab0e0665c2f1442a58a02e,0690eff0939c3fba87352ceb3b13015d,0690eff2f86f8b95b4f64731123f42e9,0690eff5dd27c7a15dfd0b0cf30b56aa,0690eff782d79381052125e3caac9ab3
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:31:53.706096+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

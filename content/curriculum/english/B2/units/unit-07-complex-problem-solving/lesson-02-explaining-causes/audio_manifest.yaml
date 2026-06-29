@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-causes
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-English_expressive_narrator-20260629T011302Z.wav
+  duration_seconds: 21.55
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: c1a9df214a9b2a868b43006d03ed5844ab89ee55d6216f18185023da2aba21b1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/listening-English_expressive_narrator-20260629T011302Z.wav
+  trace_id: 0690f98c05b5584290e0c7a15d6b0961,0690f98edb554ea5422c57ece74d34cd,0690f9907de41f2e31ad11118211a16e,0690f992f624ec344fc63eb8ee467977,0690f9953ee42b0037d2ff0ad535fad2,0690f997743a4588217fe08c4f8de4da,0690f999f81908e3a5dfa7e5b11cd297,0690f99b27f56f7b0030d0442f505ccb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:13:02.181643+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

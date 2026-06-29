@@ -1,5 +1,5 @@
 lesson_key: lesson-01-framing-the-problem
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening-English_expressive_narrator-20260629T011235Z.wav
+  duration_seconds: 26.65
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 9
+  script_content_hash: e009791dc9f730f1d64662e5f08e31c35d9536e995021ce7d44ddb4bb90b5d56
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-07-complex-problem-solving/lesson-01-framing-the-problem/listening-English_expressive_narrator-20260629T011235Z.wav
+  trace_id: 0690f9705c1fd5585c0de9bf7a4d0694,0690f972cc378e05c928e109505a453d,0690f9742efbc3a86db23497971d0459,0690f9762189af6f73a45367d6906b6b,0690f978cd4980d4224c7dbf1f5cc221,0690f97a4e193beb889d14bfe084ce5d,0690f97d35a1c05eb7ccebc5b60f047f,0690f97fe999581cb3f1f3fe6df9bc96,0690f98142545e029cc7f3e4516072dc
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:12:35.976712+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

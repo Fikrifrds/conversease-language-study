@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_expressive_narrator-20260629T001712Z.wav
+  duration_seconds: 11.06
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Dimas: English_Diligent_Man
     Faris: English_Trustworth_Man
   line_count: 6
+  script_content_hash: 6d77ea347fc7d93c9c510c1dc2cbc0b91c226d74e8d1bb7257c6b2b1a2cf83c2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-02-simple-place-words/listening-English_expressive_narrator-20260629T001712Z.wav
+  trace_id: 0690ec7bf9ac4a7e8c12e68907b1ee08,0690ec7d74bf99411fadcae9c250d280,0690ec80faf954d16758dbece2a145f1,0690ec82ac9cd3137410ba58803b23db,0690ec8489881269203186ff9e82b0fd,0690ec863ea07e5e2c24041339dd01b5
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:17:12.456624+00:00'
 lesson_key: lesson-02-simple-place-words
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-02-giving-simple-reasons
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-02-giving-simple-reasons/listening-English_expressive_narrator-20260629T003716Z.wav
+  duration_seconds: 13.32
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: edfbed28123e1997ba7eb8cd7faa1fc9c7ec0e7e9c9788586d3831c9cc67c178
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-02-giving-simple-reasons/listening-English_expressive_narrator-20260629T003716Z.wav
+  trace_id: 0690f12d5cf381830ccbf44b661c11a4,0690f12f37656cd09a0d58d7d0f678af,0690f1312e9423c8d185bb9366d685c9,0690f13383453947ca8e5b694dbd8936,0690f1354b13449ac796908ec0363128,0690f138b6bef7cd89ce7eeda50174eb,0690f13afdfe008aaf9c86e90ac5631b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:37:16.628336+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

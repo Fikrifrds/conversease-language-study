@@ -1,5 +1,5 @@
 lesson_key: lesson-03-making-an-appointment
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-03-making-an-appointment/listening-English_expressive_narrator-20260629T003352Z.wav
+  duration_seconds: 21.56
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Receptionist: English_Gentle-voiced_man
+    Raka: English_Gentle-voiced_man
+    Receptionist: English_radiant_girl
   line_count: 8
+  script_content_hash: c28f4756d92b0f4771cd6c4c20a74019b0f01891885872e07cdeb505af5fb34a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-03-making-an-appointment/listening-English_expressive_narrator-20260629T003352Z.wav
+  trace_id: 0690f05e4441159396e29a5d7d721128,0690f06098aa274825db612b939b1fc2,0690f0639a8f8a68d8c9d420510f80ca,0690f06524be78012049d3c45c94e608,0690f067eab9ba4f86658172c1c04fd2,0690f0692dd12e6d87d9fc7906ecfb28,0690f06cd3d2f7d2b8a8918ff3fa0490,0690f06ec4f756e9a88ac0bcd465f509
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:33:52.688715+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

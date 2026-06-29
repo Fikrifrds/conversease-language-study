@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-a-delay
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-English_expressive_narrator-20260629T004717Z.wav
+  duration_seconds: 21.28
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 57ebde91e8118fe4db990a2fe9be8083f2a9d41df6d7231f6e07b4d9c650f840
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/listening-English_expressive_narrator-20260629T004717Z.wav
+  trace_id: 0690f382c0f248d9261cc3570e2c3ab7,0690f38599c07e8010fb6bd276b76f65,0690f387802fe61ccf200e72cad84182,0690f38a6995b7021b2a4691b557993e,0690f38c3d33e13a73d410d085159bd2,0690f38e79748b44c1930b2f158f3b52,0690f39099783cf768601d28f5d1adb6,0690f3936c66ec0c252156a657e89d40
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:47:17.825559+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

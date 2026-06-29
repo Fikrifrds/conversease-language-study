@@ -1,5 +1,5 @@
 lesson_key: lesson-02-discussing-reliable-sources
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-English_expressive_narrator-20260629T010814Z.wav
+  duration_seconds: 24.75
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 17f1bb2d520f5bbf5b2a13b3adfa17ec3d1514af883c5dd920d836dca33b8bf2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/listening-English_expressive_narrator-20260629T010814Z.wav
+  trace_id: 0690f86a78076f5b65be29fab0bf00ff,0690f86d789f6834b9abb834cb98dea6,0690f86fbc8ca909d7b202fe84d7cce9,0690f871ab4c5653529f1784a7846745,0690f874bccc1e457667e22260661d55,0690f876f734209e749bc423026e30ed,0690f879730f7f740e5ed2ae8acdc557,0690f87b435910649afecf844154bf3f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:08:14.140627+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

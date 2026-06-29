@@ -1,5 +1,5 @@
 lesson_key: lesson-01-review-social-and-plans
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-English_expressive_narrator-20260629T003845Z.wav
+  duration_seconds: 19.09
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 7af8fa1205650cdd09f6cc47c85cc9331a93e51da0d5591201d0903376417b0b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/listening-English_expressive_narrator-20260629T003845Z.wav
+  trace_id: 0690f185818ca3d58786f6be1a19d7af,0690f187ed9b44c67d2bb57011ec7c55,0690f18a67876e96ed9be16a51428be8,0690f18ce22a45ff106a1c6ed1b9156a,0690f18eabf26f80cddb487d1752711c,0690f191e85ed4a9a2b9f32f0018351f,0690f1936568b72a94b05cd0018f8c2f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:38:45.357205+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

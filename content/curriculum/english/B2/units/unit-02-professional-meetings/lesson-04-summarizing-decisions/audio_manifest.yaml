@@ -1,5 +1,5 @@
 lesson_key: lesson-04-summarizing-decisions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-English_expressive_narrator-20260629T010158Z.wav
+  duration_seconds: 42.32
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 467f7b90b03707fd570e14e32d1e26ce4a7401f56b42d22dbc438cbd59fe5e1e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/listening-English_expressive_narrator-20260629T010158Z.wav
+  trace_id: 0690f6f0d65dfc90d3d71a108e46c922,0690f6f2097be3f40433fb41d6ee0369,0690f6f545eaf04652ea027bc9464c84,0690f6f70ab17acbf2f36880fe3c4515,0690f6fb9427fec3756bb47c0be851d1,0690f6fd25a15188b3cbb3d0bf02bd0b,0690f700ae3ade6208653d67fafcb306,0690f70319ab5179e1f7b8765342a8d9
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:01:58.377080+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

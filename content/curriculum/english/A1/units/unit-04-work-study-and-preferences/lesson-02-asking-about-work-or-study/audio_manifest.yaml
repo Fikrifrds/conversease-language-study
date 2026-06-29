@@ -1,12 +1,12 @@
 lesson_key: lesson-02-asking-about-work-or-study
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_expressive_narrator-20260629T001534Z.wav
+  duration_seconds: 10.57
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 5
+  script_content_hash: 2d91edecd7a9d9f70d2867433784424a6ffe0608e43b31a2e866fc854c3fca5a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/listening-English_expressive_narrator-20260629T001534Z.wav
+  trace_id: 0690ec1b085ccffc5adb420a213b2643,0690ec1e608dad27f0b67e19b56ad7ef,0690ec206b8ecc0f7b3ac76518bad85f,0690ec2250f0f87a7b67f4f64b159d57,0690ec24fa3dbce652598e2c347d088c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:15:34.628075+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

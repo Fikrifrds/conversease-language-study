@@ -1,5 +1,5 @@
 lesson_key: lesson-03-review-information-and-clients
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-08-b2-review-final/lesson-03-review-information-and-clients/listening-English_expressive_narrator-20260629T011546Z.wav
+  duration_seconds: 30.32
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 4fca1c731151776334930b8e471c75db372818130d511d9c23a5d73cdf0bbea0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-08-b2-review-final/lesson-03-review-information-and-clients/listening-English_expressive_narrator-20260629T011546Z.wav
+  trace_id: 0690fa2e8a49b7a63753d5ea855978e7,0690fa318419d2546b2606568f8eae1c,0690fa33f7a469acb0c0f3ee001132d8,0690fa362e6a7fc53632614cb2002431,0690fa38e87b4710b18e87e57ad61b55,0690fa3acfd31570621a70176b123bc7,0690fa3d3f0d008105838fa5f0f47b42,0690fa3f3a13ae56392c630a1a354923
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:15:46.017642+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

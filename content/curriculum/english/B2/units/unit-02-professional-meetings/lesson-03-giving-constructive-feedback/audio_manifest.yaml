@@ -1,5 +1,5 @@
 lesson_key: lesson-03-giving-constructive-feedback
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-03-giving-constructive-feedback/listening-English_expressive_narrator-20260629T010128Z.wav
+  duration_seconds: 26.32
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: e60636907ce8392951605c33841158b097bf12fd396d9cd1f8fe15c0b967fe17
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-03-giving-constructive-feedback/listening-English_expressive_narrator-20260629T010128Z.wav
+  trace_id: 0690f6d5e89d4c366e4a3fe8ad2699bd,0690f6d7d0fa164f8236feb83ae0bbb5,0690f6d93d68ac52b01530a37030d579,0690f6dc2c475190b3360c8e9437ec89,0690f6de6f5acc9b64149c09021485a3,0690f6e14eb74c42bcef92ac3b02120f,0690f6e3520022401adc8790ca2435fd,0690f6e54b4f4d149c32631d25e909e9
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:01:28.439392+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-repairing-misunderstanding
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-04-repairing-misunderstanding/listening-English_expressive_narrator-20260629T012818Z.wav
+  duration_seconds: 28.89
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 3ccbe7028a9a0af38c7cc6f1e686e3c5259a4b028bb235ab7d70394ca1ba0213
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-04-repairing-misunderstanding/listening-English_expressive_narrator-20260629T012818Z.wav
+  trace_id: 0690fd1fc36bb487873431dbefdb6046,0690fd2258ce55468a4bfede8f7a2aac,0690fd24d396cae86825aa32080738fe,0690fd26e1db46a9941a82ff80907f54,0690fd2991b2f5a027eab1e1c335c6db,0690fd2be7eda4d03d808407da554c95,0690fd2e824108e6419a5a6b9daa4ce0,0690fd30cc68757650df7c96f2a13d07
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:28:18.440773+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

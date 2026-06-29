@@ -1,5 +1,5 @@
 lesson_key: lesson-04-making-next-step-plans
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-04-making-next-step-plans/listening-English_expressive_narrator-20260629T005027Z.wav
+  duration_seconds: 18.31
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: 04b5bb5e3773363b151f9faef5ec7079dd6c0daaac1a38e35cb5112a518a67db
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-04-making-next-step-plans/listening-English_expressive_narrator-20260629T005027Z.wav
+  trace_id: 0690f4418f709b8b34beb2d3fb20a7fe,0690f44305fa4ffd00ee0b914ee0926c,0690f4454da9364ee2a39bf21f405b75,0690f448b88a6dda6911b1387eadc535,0690f44ac96074c63e82869184f7f7a7,0690f44c9f197c5811a68f6dbd2505e4,0690f44f1c3adf699f20af55abc3583c,0690f45110d750acf04280a0c9f95389
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:50:27.144571+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

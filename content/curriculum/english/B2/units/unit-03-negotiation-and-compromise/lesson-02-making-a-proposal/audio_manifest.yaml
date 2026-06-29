@@ -1,5 +1,5 @@
 lesson_key: lesson-02-making-a-proposal
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-English_expressive_narrator-20260629T010332Z.wav
+  duration_seconds: 39.94
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: c9d601d60c7016795971ad88beb3f8718c35b9bad47592c76c1ade32c5bf90e2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/listening-English_expressive_narrator-20260629T010332Z.wav
+  trace_id: 0690f74e343db838986020c4949e8d33,0690f7515239a292a8fd729ebc9ffc94,0690f75451349731f6acb900c423b3e3,0690f757fdaad89562987bbd80ad669e,0690f75a75804a19ebf7259ef9e3d080,0690f75c0a4f71d6d6659f2acf221093,0690f760e4ecc0bd5ecf98976b088dd5,0690f7623b3e96e0dd7dac9da161688d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:03:32.984761+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

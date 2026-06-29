@@ -1,5 +1,5 @@
 lesson_key: lesson-01-opening-a-meeting-point
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-English_expressive_narrator-20260629T010032Z.wav
+  duration_seconds: 23.17
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: a7384a16f62e4aee544549f7ec36c7c45ddff7a8f0e7091576534e452f31e1cd
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/listening-English_expressive_narrator-20260629T010032Z.wav
+  trace_id: 0690f69de91b0197bb6f3b294bd3165e,0690f6a0aae6968344d978897c63543e,0690f6a2a17c0d77ed7a50487f8387bd,0690f6a5ea239edb0a64186eb7b19fe8,0690f6a7a2ecbc1400229d00364fcade,0690f6a97d4b7e89d8e0951babd63443,0690f6ab884c8939db19c53b4d93c027,0690f6ae5075d66a5a797988bebbd822
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:00:32.779675+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

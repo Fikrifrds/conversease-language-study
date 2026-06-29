@@ -1,5 +1,5 @@
 lesson_key: lesson-02-explaining-why-you-prefer-something
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-English_expressive_narrator-20260629T005143Z.wav
+  duration_seconds: 16.11
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 1c110d70abeaab8f1c973206e7eeb93f528f749815eb41776ecba18635ded38d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/listening-English_expressive_narrator-20260629T005143Z.wav
+  trace_id: 0690f48eb3677e28805ab5d0d161d71e,0690f4901564a9c470cbe324a5c75941,0690f492d2ee912026d24e7c463a2deb,0690f4944f8174f4251fdb5163c35ba9,0690f4972a2b4aba38c1941f12c49845,0690f49918ef758719e59da658bc383a,0690f49b416ae41fa36d52ad09dcbaea,0690f49d1bdb8b070bf7249f7867541a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:51:43.303800+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

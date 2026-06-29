@@ -1,5 +1,5 @@
 lesson_key: lesson-05-transport-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,25 +7,25 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-05-transport-mission/listening-English_expressive_narrator-20260629T003049Z.wav
+  duration_seconds: 29.4
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_radiant_girl
+    Dimas: English_Diligent_Man
     Driver: English_Diligent_Man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 11
+  script_content_hash: 1e625006891ce3c8109f951dbace70dcde563c7c489036f0dee91ec8dde9ccc3
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-05-transport-mission/listening-English_expressive_narrator-20260629T003049Z.wav
+  trace_id: 0690ef9fc5df2e93ecfac491d6ead913,0690efa176a5f9c30e7ef80e2ee9ea98,0690efa4e687fa2d5f453da9efa33076,0690efa6027ccf26b85b873ee90fdd98,0690efa8c1e0fae19f7af2d11ab52d58,0690efabbeeba788e90598e3e25bb3fd,0690efad76de186f78c154f41aad217e,0690efafa38e9194d9ac336b720e45e7,0690efb22ca6efdc4c05624216045e2d,0690efb4956af12d5985effe6b090384,0690efb6594b33ee4732093f3b0df73c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:30:49.053191+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

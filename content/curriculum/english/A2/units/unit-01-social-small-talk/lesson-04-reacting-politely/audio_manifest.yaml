@@ -1,5 +1,5 @@
 lesson_key: lesson-04-reacting-politely
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-04-reacting-politely/listening-English_expressive_narrator-20260629T002605Z.wav
+  duration_seconds: 20.9
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 5a543263fbf3bca06c6dbe05052621ee35904860153f64941acefeb9f1f6bf48
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-04-reacting-politely/listening-English_expressive_narrator-20260629T002605Z.wav
+  trace_id: 0690ee8b2df13a5d4ec7192609b76c71,0690ee8d33ef2d175966acc82a582af6,0690ee90165c3f4bb682184b1472479c,0690ee92188c5f0427f5af7a4afc1587,0690ee95fe0d6f35e909cbd1bbe2449b,0690ee96df163530ca924d9f97867c14,0690ee995722e91a44405a93be4e4c5d,0690ee9bec867b9ba8d3128c9c68e35c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:26:05.694781+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

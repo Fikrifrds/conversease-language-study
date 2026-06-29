@@ -1,5 +1,5 @@
 lesson_key: lesson-03-discussing-challenges
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-English_expressive_narrator-20260629T005000Z.wav
+  duration_seconds: 26.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 9
+  script_content_hash: c20577b46dd003d00ae5cc1e32777bf23e0ed3d6cf0d6f10cedf1e3acf3e5ea0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/listening-English_expressive_narrator-20260629T005000Z.wav
+  trace_id: 0690f423f670aa775b66ddcd5db30000,0690f426e8b06533136121f418de98cd,0690f4287db637a1919ee7852400b887,0690f42afd67852ecfa942f0c21b0580,0690f42d7db1236eb99edadb5040fa77,0690f42f45103d978a70908ef6ea4992,0690f431f46b8c8996c12d85dcb414c2,0690f43347e75798d31b375e91872596,0690f43514f468b31fa69d06a9dd17e1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:50:00.685046+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

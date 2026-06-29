@@ -1,5 +1,5 @@
 lesson_key: lesson-04-being-polite-with-differences
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-04-being-polite-with-differences/listening-English_expressive_narrator-20260629T005454Z.wav
+  duration_seconds: 27.34
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 21e23407b1a3bcee3ab7c82e185e39ff81e842eaeb869f5a2721f6b20e8f3cc0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-04-being-polite-with-differences/listening-English_expressive_narrator-20260629T005454Z.wav
+  trace_id: 0690f54b1e9f433884b0de5b980c033c,0690f54ec12cbd344fb8e2ef0cc7aae1,0690f550558240d3fd916092e52c144f,0690f553ab6f8b21ada72c74b3f7cbc4,0690f55595e87ae9fc82cd8173b84dee,0690f55743032a49f628d299f6707490,0690f55a2045176fcb69ede430364bc3,0690f55c24434cc52c98e5fc805e709d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:54:54.801346+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

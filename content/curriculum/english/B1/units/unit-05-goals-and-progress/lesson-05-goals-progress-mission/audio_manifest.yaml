@@ -1,5 +1,5 @@
 lesson_key: lesson-05-goals-progress-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-05-goals-and-progress/lesson-05-goals-progress-mission/listening-English_expressive_narrator-20260629T005053Z.wav
+  duration_seconds: 24.91
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: 1821f30942ee7381b914460ad053569d3e9fe8ea88c14b887d04bde6d127675b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-05-goals-and-progress/lesson-05-goals-progress-mission/listening-English_expressive_narrator-20260629T005053Z.wav
+  trace_id: 0690f45a410b122170f645988847075a,0690f45c20c4ed5743f4963b468baaff,0690f45f7efc624f14c0f4ff2b58e97c,0690f461068a6a430ed40299f4c8847f,0690f46413655cd8c8160104ed544fd1,0690f4664dd55f0985f3cf7076fe6b06,0690f468d2eb9648add73e39d8cf28fc,0690f46b410512737b89757de811a14e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:50:53.668654+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

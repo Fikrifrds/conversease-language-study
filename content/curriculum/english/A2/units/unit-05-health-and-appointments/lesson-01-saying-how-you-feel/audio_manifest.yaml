@@ -1,5 +1,5 @@
 lesson_key: lesson-01-saying-how-you-feel
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-01-saying-how-you-feel/listening-English_expressive_narrator-20260629T003305Z.wav
+  duration_seconds: 15.54
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 4e54ba10f46f7977b6b82e125ad78b646dcc7673b18bca576a548a84c92b9cb5
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-01-saying-how-you-feel/listening-English_expressive_narrator-20260629T003305Z.wav
+  trace_id: 0690f032586f215760d5ddaa3f386b19,0690f034c05ec4f4e20e9a378fc4f227,0690f036160b6b70e58bfcb359b1af8a,0690f0389d63f834c2c7b5e76037ecad,0690f03b311343e00a2e8bb6eff23514,0690f03d1a729c1fabf8d006a456e4b5,0690f03f314ce13a867b7aad49907a52
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:33:05.606561+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-about-past-activities
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-English_expressive_narrator-20260629T003611Z.wav
+  duration_seconds: 13.44
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: bdd89a987e25595f252bb8d2f080d16113639221ca75a384c40cd46c93ca2132
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/listening-English_expressive_narrator-20260629T003611Z.wav
+  trace_id: 0690f0ece8282dd1cfc5a7f23f54ed91,0690f0eee1a91a6634f4ce13b888dd25,0690f0f00c86797370c97ba0c37d1ea3,0690f0f28347b69cd7ffc83dda7f8ca9,0690f0f588820a192be80f9401405c12,0690f0f752f0abaad72d08fb53f4456c,0690f0f9246aba7c195b9f9c8718edaa
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:36:11.204124+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-understanding-client-needs
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-English_expressive_narrator-20260629T011012Z.wav
+  duration_seconds: 28.62
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 1d503e80aaff221f1787198ee85899b9f26926d9071cc5caa20888bc929733b0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/listening-English_expressive_narrator-20260629T011012Z.wav
+  trace_id: 0690f8e148a66f29c9451db99ed4e70a,0690f8e435eb00d88c7c70546ec93593,0690f8e6eb8771c71b389e344b052b35,0690f8e92fae280ff7098cfbbbaa8041,0690f8ebde10bb2bc48f0913926314f2,0690f8ed2646acad71630f53d09b911f,0690f8f062f9257953124269057f0d2c,0690f8f2f53255d94563c6eb0d478206
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:10:12.827422+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

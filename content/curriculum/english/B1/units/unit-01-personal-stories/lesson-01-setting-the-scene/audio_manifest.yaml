@@ -1,5 +1,5 @@
 lesson_key: lesson-01-setting-the-scene
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-01-setting-the-scene/listening-English_expressive_narrator-20260629T004054Z.wav
+  duration_seconds: 17.84
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 765a4ed26190dcc514f9d7e56b3503babdd7c2a6ee4864ec15d09506c6366821
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-01-setting-the-scene/listening-English_expressive_narrator-20260629T004054Z.wav
+  trace_id: 0690f206717806e271e195bc16495678,0690f20972d891bc06aed026529353e9,0690f20c38efc2d2353fadebefc9581c,0690f20ec27cfd2ab89573b59a8ec4c5,0690f210f68be81fc83620fd17dacaa1,0690f212ef57056efc9cfdd08c5b62e8,0690f21480b1a2df9c39a5e0e9e0de52
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:40:54.498556+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

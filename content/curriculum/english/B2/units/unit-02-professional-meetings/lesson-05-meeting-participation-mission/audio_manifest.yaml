@@ -1,5 +1,5 @@
 lesson_key: lesson-05-meeting-participation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-English_expressive_narrator-20260629T010232Z.wav
+  duration_seconds: 34.92
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 10
+  script_content_hash: 0a423f8f4d73092a88ecd98e069ee89ff574f898594c658da7ef6ed703debbf9
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/listening-English_expressive_narrator-20260629T010232Z.wav
+  trace_id: 0690f71066ae9fe636722657417c0162,0690f7128a0f0618050474d12110485f,0690f715dfb84b311ebef74c6eab67c4,0690f7173045d982fc48e0e159146328,0690f7194057b90b386281a5b9876897,0690f71ccf1ce99b3cd4b838a00dbf5a,0690f71ee20e674c4e830c2679889a83,0690f720e60cfd4ca397da4fa366ee99,0690f7237bb597b5537239a35641eabc,0690f72505aed8e6db406d3873d92c3e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:02:32.916751+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

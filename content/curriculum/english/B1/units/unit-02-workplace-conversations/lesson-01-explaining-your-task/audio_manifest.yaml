@@ -1,5 +1,5 @@
 lesson_key: lesson-01-explaining-your-task
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-02-workplace-conversations/lesson-01-explaining-your-task/listening-English_expressive_narrator-20260629T004252Z.wav
+  duration_seconds: 18.79
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: f95ee530e6371e3ebe476e3e6b96fa57f5a8712e0793357515b982137ff82dda
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-02-workplace-conversations/lesson-01-explaining-your-task/listening-English_expressive_narrator-20260629T004252Z.wav
+  trace_id: 0690f27cab4afb5c98912878dddd68e5,0690f27f97c2e94bb1f27ae568befa7a,0690f281f605fea95e9b2c7fc7805509,0690f2832fa676181cc34923e6c7bda6,0690f286977ab3afb711cce0a06939ab,0690f28859097cec746c59828b1366ca,0690f28a7272d74428ef11ea624f8c34
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:42:52.781324+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

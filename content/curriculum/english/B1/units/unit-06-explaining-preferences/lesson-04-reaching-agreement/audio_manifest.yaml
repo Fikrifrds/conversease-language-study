@@ -1,5 +1,5 @@
 lesson_key: lesson-04-reaching-agreement
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-English_expressive_narrator-20260629T005236Z.wav
+  duration_seconds: 18.84
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 52ef5d7c6d3fea77bc1db54fcb5011933b55b31bd6090e3c59c2cfa9c9b2a65a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/listening-English_expressive_narrator-20260629T005236Z.wav
+  trace_id: 0690f4c327158c8d26504e8f757edc5b,0690f4c5fbee08dbf373895058ef9194,0690f4c7fa880e415866efb6079d78de,0690f4ca6d25cf7a260c64313b746cd1,0690f4ccf0ae47342228a072d522c56e,0690f4ce1e434b0ddcb5ab800e0224ea,0690f4d02f9ab572dd6f17ea228dae1e,0690f4d20af75d70bb914515a6e89696
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:52:36.338018+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

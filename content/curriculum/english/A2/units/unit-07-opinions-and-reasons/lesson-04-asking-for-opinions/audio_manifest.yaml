@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-for-opinions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-04-asking-for-opinions/listening-English_expressive_narrator-20260629T003758Z.wav
+  duration_seconds: 14.04
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: a308614d4efc349b278dd33a0749ac26e304683ddcbc46a616f502c14f42a9a5
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-04-asking-for-opinions/listening-English_expressive_narrator-20260629T003758Z.wav
+  trace_id: 0690f158f83bb56a92f8741bf08c72fb,0690f15a491b07bd7572abe7f6a0254c,0690f15c3fabddf2088f4489f8c7ef3b,0690f15d6efbedb3b97cbb861de3a63b,0690f1603b49d9a1780b6d3f8d9933f5,0690f162e08c0d555b1745b7dda25660,0690f164a138ee42f0f9cfd879b3c0ef
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:37:58.027263+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

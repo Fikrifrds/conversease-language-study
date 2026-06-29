@@ -1,5 +1,5 @@
 lesson_key: lesson-03-checking-directions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-03-checking-directions/listening-English_expressive_narrator-20260629T002955Z.wav
+  duration_seconds: 18.57
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 7
+  script_content_hash: c582f23f84f061521d8964e16410693c72db28b849411c5d69c1b069b2823bf0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-03-checking-directions/listening-English_expressive_narrator-20260629T002955Z.wav
+  trace_id: 0690ef74064493aaf80a20a0e67f540f,0690ef77b37f60d64101e89fceec8714,0690ef79dbe80508743be1d5f2045043,0690ef7b7a64fccd798fe4b776b2dcbb,0690ef7dc9c1d169c05fbb3ea4da601a,0690ef7f6fd5de9f4dcb1535985d861f,0690ef818cdf4633049b6e926b05b2f2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:29:55.132551+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

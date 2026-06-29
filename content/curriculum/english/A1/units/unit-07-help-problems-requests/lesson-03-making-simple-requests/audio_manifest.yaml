@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_expressive_narrator-20260629T002113Z.wav
+  duration_seconds: 11.9
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: b5092916b57e5e483cc608261d5808869083b10a92f21e26c960afc334641fab
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/listening-English_expressive_narrator-20260629T002113Z.wav
+  trace_id: 0690ed6b40070019066f320f3123f5ac,0690ed6e640af566e9fd368b846ff271,0690ed708484867c75a28b24f66d905d,0690ed723bec45d64b5207ce707c2baf,0690ed736ce3cd939cf05ab58b53d81e,0690ed76ce2166717c353679c6625c51,0690ed78db3f974fa0609f48d133daf8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:21:13.733415+00:00'
 lesson_key: lesson-03-making-simple-requests
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

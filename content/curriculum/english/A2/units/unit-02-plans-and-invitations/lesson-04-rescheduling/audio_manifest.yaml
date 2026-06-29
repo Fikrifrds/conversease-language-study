@@ -1,5 +1,5 @@
 lesson_key: lesson-04-rescheduling
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-04-rescheduling/listening-English_expressive_narrator-20260629T002816Z.wav
+  duration_seconds: 23.08
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: ab2373425f813ec91c46f0fec49c456c1972f9f0c69935c683c8697c455887af
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-04-rescheduling/listening-English_expressive_narrator-20260629T002816Z.wav
+  trace_id: 0690ef0ee3ede09c60e28a2b1583f7ee,0690ef10201f794d19b94321c491dc1c,0690ef126c62698d8ba16f5dd9e8a855,0690ef1499e752ef33c06f339106a291,0690ef1719ef78bf4dfb9ce1a5c86004,0690ef195264d80c04976c6f282031ce,0690ef1b08a0c45fcec7fa8f69a6d67b,0690ef1e9d673b69a78de94f861db3af
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:28:16.833201+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

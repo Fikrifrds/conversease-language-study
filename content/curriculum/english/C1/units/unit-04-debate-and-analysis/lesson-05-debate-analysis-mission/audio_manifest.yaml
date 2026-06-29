@@ -1,5 +1,5 @@
 lesson_key: lesson-05-debate-analysis-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening-English_expressive_narrator-20260629T012630Z.wav
+  duration_seconds: 44.87
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: da7eb47054c9d4359f5187309404a5e54c8a9fcbdf20643b4fad64799823c1f7
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/listening-English_expressive_narrator-20260629T012630Z.wav
+  trace_id: 0690fcb1b7929754f41fa581366badf1,0690fcb3792830a8830b7f535d5e6737,0690fcb67886ca8ddb2494b80f2ae45e,0690fcb8a23665d3e5361af421f6ee77,0690fcbb6e2893b76c8d6f1b719f4786,0690fcbd8a63f35e22cc6e96c94fcca0,0690fcc0f5742e9bde5bbc1a4c0162d7,0690fcc243d5ce3ff5580fcf34cad31d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:26:30.217649+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

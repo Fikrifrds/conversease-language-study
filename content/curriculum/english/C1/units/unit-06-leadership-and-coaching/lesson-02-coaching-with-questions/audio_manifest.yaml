@@ -1,5 +1,5 @@
 lesson_key: lesson-02-coaching-with-questions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/listening-English_expressive_narrator-20260629T012948Z.wav
+  duration_seconds: 31.21
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 10
+  script_content_hash: bf0f9e3075c1756ed5fa9c9f295d3a0b40d7ce7b36a74b7400de06d79f05ac9a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/listening-English_expressive_narrator-20260629T012948Z.wav
+  trace_id: 0690fd767cb94866fc603d184310f20c,0690fd78dbe6a1e0399811e67b7e6568,0690fd7a30a4a68982c1cf49bded28d8,0690fd7da59c79b07eb0620e9b9a1021,0690fd7f94914dbc329e356e60585d28,0690fd810c5a7d6ed886f4c505d6ca88,0690fd83b94b8f27a2233e7b6f5a1a44,0690fd85e9f6acd50a128ad1a559896d,0690fd8748c348c1190fdafa04db7d13,0690fd8ace0a3e47889444f005f1fd2d
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:29:48.975269+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-balancing-two-viewpoints
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/listening-English_expressive_narrator-20260629T011804Z.wav
+  duration_seconds: 28.8
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 3d15e85d1326bdba7839d91c400d27dbbf909804ec4ae9e441449a63154b636d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/listening-English_expressive_narrator-20260629T011804Z.wav
+  trace_id: 0690fab8eab5848e6d5a16eb8c50d247,0690fabbdfcf60ba345f609bbe70f8b0,0690fabdafd665f23dec76cb1fe7b6a4,0690fac0a52d459f47c3b62c25ed7aee,0690fac2ace5ee7b05ab690dc9c48b64,0690fac49e91f39dbf0d698afec42e2b,0690fac7b636fc601eda1cf049820d52,0690fac93f9e8116145cc973cd4b1213
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:18:04.265119+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-handling-a-simple-complaint
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-04-handling-a-simple-complaint/listening-English_expressive_narrator-20260629T004810Z.wav
+  duration_seconds: 22.14
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 6ea43b0e9488eec4af90aad1502402945ee1d927573cbb721d8077a069d9dd7e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-04-handling-a-simple-complaint/listening-English_expressive_narrator-20260629T004810Z.wav
+  trace_id: 0690f3b7058e2592bbcd750b919f7a4f,0690f3b97473cbb05534bc8d85723215,0690f3bc85d6a11f174bccf2ea2d2973,0690f3be2069bb5b0b2a9af15d7a53d4,0690f3c0fa9ff072e2fb75df4fa6c62a,0690f3c3cc9f918cc5b4b24d78e90b4b,0690f3c579683d159a25f1a2c2e6f9f9,0690f3c8251994ccef7346a39ada3a3c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:48:10.091032+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

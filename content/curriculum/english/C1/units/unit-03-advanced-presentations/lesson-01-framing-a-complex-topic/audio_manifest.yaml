@@ -1,5 +1,5 @@
 lesson_key: lesson-01-framing-a-complex-topic
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-01-framing-a-complex-topic/listening-English_expressive_narrator-20260629T012156Z.wav
+  duration_seconds: 27.71
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: c49d5759d6df5152c3b224fbeca4442e9ccdba203f7c04b745fcfb039c7687bf
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-01-framing-a-complex-topic/listening-English_expressive_narrator-20260629T012156Z.wav
+  trace_id: 0690fba37f725db0e1085ee474638034,0690fba5b9501fd7ca8c20b51a50619c,0690fba7600870db86756a73729a8a57,0690fba988c81246b50bd6154e853394,0690fbac2f075e780d5b1f9ca2cfae46,0690fbad7130f60e9fc6afea401ad6e3,0690fbb00e318282d85c52554be75eb9,0690fbb2e51226ff662b7aa64ee926f2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:21:56.526116+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

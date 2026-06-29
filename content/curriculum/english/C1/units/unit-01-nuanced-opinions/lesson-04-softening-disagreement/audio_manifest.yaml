@@ -1,5 +1,5 @@
 lesson_key: lesson-04-softening-disagreement
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-04-softening-disagreement/listening-English_expressive_narrator-20260629T011831Z.wav
+  duration_seconds: 25.32
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 52f1be02cc4424ef2010274104aeb15e4e602ccd451411b096f6efa0824cefec
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-04-softening-disagreement/listening-English_expressive_narrator-20260629T011831Z.wav
+  trace_id: 0690fad51128dc4d261f2a51968c085f,0690fad8e3b6e2b5750654db00ef8b9f,0690fada8e0975b78d87a2fc0446b426,0690fadc2236d651df6bef7cbc9cde95,0690fadeafe658f1f36a738f93feb1bf,0690fae0fca77b2a794a198545728e5d,0690fae30fdf8cc8c0942207e4e8df1f,0690fae50a030b51bf14dffb17a865ce
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:18:31.727335+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-responding-under-pressure
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-English_expressive_narrator-20260629T012559Z.wav
+  duration_seconds: 28.72
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: ff51b463be1fe9488ac10257514216d856a1c45f69d5f699880ae5be444099c0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/listening-English_expressive_narrator-20260629T012559Z.wav
+  trace_id: 0690fc9594bae146194b7d028b3c954f,0690fc9866bd9d4a0ddce07f61d2bffc,0690fc9a8dafae272d1055e9116d46ad,0690fc9c2a8064fd56c4b6c65a66e675,0690fc9fee492f5527b4cf5f4ec5de3f,0690fca098f2c086710071a447d4e37d,0690fca3ef010142c7576663cc4ed159,0690fca5d047e797fbf85e3dcc297d00
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:25:59.896268+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-responding-to-counterpoints
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-English_expressive_narrator-20260629T005935Z.wav
+  duration_seconds: 30.03
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: ec9a5841cd6fdf246ee2f7a6d90bbd64054067e1c2d36e6f28850e9533d53742
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/listening-English_expressive_narrator-20260629T005935Z.wav
+  trace_id: 0690f6639dc71dd2700dcf60d2d34b23,0690f66542a0324236b8bf519bdd04d4,0690f66833b330ce269d3bb1179b6f4d,0690f66adaabe241cf0e72744bb90ad9,0690f66dadc734de8feacb076ebc642b,0690f66f1b434aa0f965c50b85dcb9bd,0690f672f233c876631b5feed50cf71c,0690f67448d2a175518aab2180319ec2
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:59:35.434563+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

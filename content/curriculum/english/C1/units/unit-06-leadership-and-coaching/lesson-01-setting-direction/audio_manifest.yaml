@@ -1,5 +1,5 @@
 lesson_key: lesson-01-setting-direction
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-English_expressive_narrator-20260629T012918Z.wav
+  duration_seconds: 25.23
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 34886dfd115a3ba345b4ee0182a1d653175d420dd457d97c5bcf324758c301d8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/listening-English_expressive_narrator-20260629T012918Z.wav
+  trace_id: 0690fd5b0b2965729b3d0d4ba3c5cc95,0690fd5df9a767862205d55302d69c94,0690fd6039d8209cbf65b430d6127ae1,0690fd62eb0f430ebdfd97ec4146d960,0690fd64af91530b3ab40ad32c662159,0690fd67fe45ab3192f18fb46b13fe01,0690fd693d2875161f1061e8d2477e6e,0690fd6b6b632f125aafa726708b5a8f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:29:18.238241+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

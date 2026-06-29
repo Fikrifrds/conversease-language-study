@@ -1,5 +1,5 @@
 lesson_key: lesson-01-summarizing-an-article
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-05-media-and-information/lesson-01-summarizing-an-article/listening-English_expressive_narrator-20260629T010747Z.wav
+  duration_seconds: 28.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 67f6dc6eda63d0a9d832d283d6d69a4cc0396ac26c9ede93fabf0da7ec9c4985
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-05-media-and-information/lesson-01-summarizing-an-article/listening-English_expressive_narrator-20260629T010747Z.wav
+  trace_id: 0690f84f76f357d1d0fddb01f06b0277,0690f851a3e42890c562d39c3f542ca5,0690f854c95afa101cb599b33bc51b8b,0690f856f5319530e4fcfb2572553d05,0690f859ea6a7cdddbe445fbf8676084,0690f85b5777a35a5769b35498de2b1a,0690f85ee89cd097256a5c0e3ce38b27,0690f8604b482a78dd9a8a5c294abb1c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:07:47.114272+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

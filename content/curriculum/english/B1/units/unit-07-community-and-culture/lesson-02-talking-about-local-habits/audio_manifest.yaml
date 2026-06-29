@@ -1,5 +1,5 @@
 lesson_key: lesson-02-talking-about-local-habits
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-English_expressive_narrator-20260629T005358Z.wav
+  duration_seconds: 21.56
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: bd35c5e8035c9b2e2061a3aab2b0d0f501d1b1f788887a7e40388c73c801ba6d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/listening-English_expressive_narrator-20260629T005358Z.wav
+  trace_id: 0690f514c0729ccf674be7ef4e64ca76,0690f51667107518c5b3494c4397eea3,0690f51982633d97c9f979ed14515965,0690f51b4cefb9224892a7c25232e217,0690f51d2fefff96ee1b36bdcb46348d,0690f51f062e52490799531ee7856f74,0690f52202ebfd67a75ca52c5c1b979d,0690f5243203f336b967169f533ad979
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:53:58.678593+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

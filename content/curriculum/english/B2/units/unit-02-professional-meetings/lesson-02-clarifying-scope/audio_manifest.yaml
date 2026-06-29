@@ -1,5 +1,5 @@
 lesson_key: lesson-02-clarifying-scope
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-English_expressive_narrator-20260629T010059Z.wav
+  duration_seconds: 27.18
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 41d6e442349d1da9a5062c6307cbd88caf6105a65f1c589687b5a996a630eac3
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/listening-English_expressive_narrator-20260629T010059Z.wav
+  trace_id: 0690f6b83a08fe713e9eca9c93da7b72,0690f6ba230f6839738460aa8040be3d,0690f6bdd83bc718d3815903f9061898,0690f6bfff92ba7fb03411051d8b194d,0690f6c11a012977c74acb527dace741,0690f6c46900388bc22b725fccf7da69,0690f6c7501efd992e765b0582ee6e6d,0690f6c9bfbc75b3c66d1250a08d8404
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:00:59.507567+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

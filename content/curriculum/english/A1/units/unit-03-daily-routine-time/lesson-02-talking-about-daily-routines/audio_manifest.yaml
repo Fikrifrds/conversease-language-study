@@ -1,24 +1,25 @@
 lesson_key: lesson-02-talking-about-daily-routines
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-03-daily-routine-time/lesson-02-talking-about-daily-routines/listening-English_expressive_narrator-20260629T001353Z.wav
+  duration_seconds: 12.83
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: 10cb80806cb056420fbd4c1e2066603a7decd2a3786153483702cc749fd0c1d1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-03-daily-routine-time/lesson-02-talking-about-daily-routines/listening-English_expressive_narrator-20260629T001353Z.wav
+  trace_id: 0690ebb40e377944bc997cf548706b08,0690ebb6782e3017bc59a2508efd9164,0690ebb8c2526b99d37817d3497c3ae0,0690ebbb220ee1a508b545a63e45ac94,0690ebbd1270a593197a95a5274b0c5f,0690ebbf4f1a402cb4dd5e529a05fb89
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:13:53.857531+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

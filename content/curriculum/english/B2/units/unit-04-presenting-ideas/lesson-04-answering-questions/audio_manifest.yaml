@@ -1,5 +1,5 @@
 lesson_key: lesson-04-answering-questions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-04-answering-questions/listening-English_expressive_narrator-20260629T010649Z.wav
+  duration_seconds: 27.68
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 1f47232e1a6c188b2153d5534a727d7c49c4630c4b70cda135cfbe5ae22f7456
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-04-answering-questions/listening-English_expressive_narrator-20260629T010649Z.wav
+  trace_id: 0690f814f72214966f3149358e2eeda7,0690f817ee7ab099e87e90f598de8a65,0690f8199217a39a3bad8c7753c10ce5,0690f81bcd1aa107cbd4c43e81d9042e,0690f81d1f02318493c9013e82ebedff,0690f820a6e9380a42cec6265d072e2d,0690f823b4d164e39224f4edf7bb2051,0690f8259de7ad414099ab200b921fbd,0690f827338ef4087640d5ba16b64121
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:06:49.692274+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

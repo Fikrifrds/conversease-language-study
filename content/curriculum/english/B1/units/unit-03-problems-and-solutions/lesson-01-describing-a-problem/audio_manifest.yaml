@@ -1,5 +1,5 @@
 lesson_key: lesson-01-describing-a-problem
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-English_expressive_narrator-20260629T004449Z.wav
+  duration_seconds: 17.21
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 5ae65889ebbc94e2e181533331632ef5c4dbb9677727598ccca96f7a02571c0e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/listening-English_expressive_narrator-20260629T004449Z.wav
+  trace_id: 0690f2f19da99046424ba14c19fdf72a,0690f2f4188137189862334d3f92241c,0690f2f601fe98b494ca26ec6b5a82ff,0690f2f807ffffc5c116dff5476d5002,0690f2faab1fe85fb64c4c36a1ecaa78,0690f2fc4c4618c41688939cec3f9287,0690f2ff33effdb7d85cec427882a14c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:44:49.023975+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

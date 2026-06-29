@@ -1,28 +1,28 @@
 lesson_key: lesson-03-sharing-email-addresses
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_expressive_narrator-20260629T001228Z.wav
+  duration_seconds: 20.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Ben: English_Gentle-voiced_man
-    Officer: English_Trustworth_Man
+    Officer: English_CalmWoman
   line_count: 6
+  script_content_hash: 553fff47459f8921a4e3c47f6d1d7d619b1cfa86d6d0b78cd7a5d93f33926d78
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/listening-English_expressive_narrator-20260629T001228Z.wav
+  trace_id: 0690eb5d8f5e0743854b9df6fbb6a3cc,0690eb5fa34097798627ecf5fe5a63c3,0690eb62418d1c631936bcdf82067ce5,0690eb6406617117eb0c09e7f6ee19f8,0690eb675817d6b37759b809db3cec5d,0690eb6990ff8ea09df9c45daa5735ae
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:12:28.084867+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

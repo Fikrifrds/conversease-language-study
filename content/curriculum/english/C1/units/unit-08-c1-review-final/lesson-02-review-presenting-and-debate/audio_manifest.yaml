@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-presenting-and-debate
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-02-review-presenting-and-debate/listening-English_expressive_narrator-20260629T013443Z.wav
+  duration_seconds: 36.41
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 10
+  script_content_hash: cf7cbcb28b9375fdd5939a37b407fbf12905aaf8608c7f22807362e74aab215f
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-02-review-presenting-and-debate/listening-English_expressive_narrator-20260629T013443Z.wav
+  trace_id: 0690fe9b4f4b5d23aefce92fda8b248d,0690fe9de961af1de20fc57a5b1ed9f4,0690fea0b8500854490479fa5820c4d9,0690fea2e3142e5166c0b242bc93a1a2,0690fea57549f1e91196ae09f5348ab7,0690fea75f8f48dfb6ecfd0ca9ff50ae,0690feaa3f6a673a56d23e135764a0f1,0690feab8b8b4f71070fd9223f2e8104,0690feae2570815829e2de16b109f772,0690feb05d4d7c4491a69934866bd1df
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:34:43.067197+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

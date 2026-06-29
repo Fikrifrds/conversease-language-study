@@ -1,5 +1,5 @@
 lesson_key: lesson-03-asking-about-pros-and-cons
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-06-explaining-preferences/lesson-03-asking-about-pros-and-cons/listening-English_expressive_narrator-20260629T005211Z.wav
+  duration_seconds: 22.04
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 9
+  script_content_hash: 8339a746f3da4d21806797108df39c2a0f5971886a0434715351f1d084682d78
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-06-explaining-preferences/lesson-03-asking-about-pros-and-cons/listening-English_expressive_narrator-20260629T005211Z.wav
+  trace_id: 0690f4a76cac60f2120821de6a946154,0690f4a962f2b0e71363a6f0ddf63a2f,0690f4acb174738504a18b84bafadf59,0690f4ae61542e2fa04c29c983ab5218,0690f4b0b9678e4698ecc0e556a40fce,0690f4b213f784f5e84e38be57a34607,0690f4b5ef84183793bc1627811f4608,0690f4b65e51e0829ec7d3c38f14d11d,0690f4b9d68ef8ea1516e29b781c4a93
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:52:11.684142+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

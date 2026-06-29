@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_expressive_narrator-20260629T002133Z.wav
+  duration_seconds: 11.94
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Omar: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 966be99f5b30afc115e0dcd58cfc1c2e217fad3e84b205fb8d8556bd14e9814d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/listening-English_expressive_narrator-20260629T002133Z.wav
+  trace_id: 0690ed80f1c03be67ecb4b2a77b885d6,0690ed824254d4ecd9c7b921aaded9f6,0690ed8407d9836896993e2af4ad68c0,0690ed8683dac665d9e543d50461ea3e,0690ed887458d4650c1639b2065583af,0690ed8a4821773b23dffe9ad0598f0f,0690ed8c63b02a09cb5b40704d20914f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:21:33.855189+00:00'
 lesson_key: lesson-04-apologizing-and-thanking
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

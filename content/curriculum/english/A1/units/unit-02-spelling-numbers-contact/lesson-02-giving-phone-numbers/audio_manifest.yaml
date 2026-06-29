@@ -1,28 +1,28 @@
 lesson_key: lesson-02-giving-phone-numbers
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_expressive_narrator-20260629T001207Z.wav
+  duration_seconds: 20.63
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Officer: English_Trustworth_Man
+    Officer: English_CalmWoman
   line_count: 6
+  script_content_hash: c0d88b5996a0231a78dd1dba41d3f5015a3dc45792431f03e141f9431ee9c421
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/listening-English_expressive_narrator-20260629T001207Z.wav
+  trace_id: 0690eb4844e8cf539601c11b63e6d0d0,0690eb4ba31a355fe6908abd53a34f53,0690eb4ed4fd6e46e768a46127836a12,0690eb51e0dd888c5ece724b689f8d3e,0690eb5325a2cf65fd8a20ea79e05438,0690eb550af2f8144896922d65123c45
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:12:07.304100+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

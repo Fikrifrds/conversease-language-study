@@ -1,5 +1,5 @@
 lesson_key: lesson-01-catching-implied-meaning
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-English_expressive_narrator-20260629T013148Z.wav
+  duration_seconds: 27.48
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: b004836a14e1eac8c448562fd067eef9be2acb5f08e4fc951f9c59acf35ca24d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/listening-English_expressive_narrator-20260629T013148Z.wav
+  trace_id: 0690fdf14cae93cf923490a59f474531,0690fdf4ca02a7ae846fa1b83da2a77f,0690fdf60471f66d53a2ae65ef5b0d7f,0690fdf8012325f096dd145ca247b19f,0690fdfbed2a795014cc951cfabe427d,0690fdfd82dbdb7457d21ebac377e872,0690fdffc30a89ef9f52b01030f4e057,0690fe01ec9309041068b5ef0f261fcb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:31:48.410515+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

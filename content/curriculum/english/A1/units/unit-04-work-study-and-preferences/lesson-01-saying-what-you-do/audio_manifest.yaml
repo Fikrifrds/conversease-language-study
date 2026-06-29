@@ -1,12 +1,12 @@
 lesson_key: lesson-01-saying-what-you-do
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_expressive_narrator-20260629T001517Z.wav
+  duration_seconds: 10.87
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Dimas: English_Diligent_Man
     Omar: English_Trustworth_Man
   line_count: 6
+  script_content_hash: dbd66ab355bc57c02fe3f621dcc5bc3ba985ce550bdf48e48e9aadca8dd95b7a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/listening-English_expressive_narrator-20260629T001517Z.wav
+  trace_id: 0690ec09b07feae37182bcfde26a7c68,0690ec0aee68d08eeb7f6dce8c130b09,0690ec0c55fd81d4e9b128e134c77135,0690ec0f678f43560ff3e467ced9586e,0690ec11513175a2c118253effeff626,0690ec13c307f2e4aab703480366b600
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:15:17.862914+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

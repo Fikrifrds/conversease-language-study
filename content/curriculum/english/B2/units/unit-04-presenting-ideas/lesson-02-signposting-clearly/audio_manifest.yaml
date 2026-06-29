@@ -1,5 +1,5 @@
 lesson_key: lesson-02-signposting-clearly
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-English_expressive_narrator-20260629T010553Z.wav
+  duration_seconds: 28.27
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 834c441ce3d523580e5409cc426861d74ce3a7efea78d94205394e4aa704dff4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/listening-English_expressive_narrator-20260629T010553Z.wav
+  trace_id: 0690f7dc600d5f4423a66377575e2f13,0690f7dfbb4b033ae730d46ea8670c1d,0690f7e0b0e9b57ad43eb25049c29b1d,0690f7e448a2cc841394cce6f1644956,0690f7e6b1415a8986b3fbc298df3ced,0690f7e85e9404cb07155afcd919bf6b,0690f7eadf987f790fc80da20277a3ab,0690f7edf6aabfba0e308f86c90a0a9b,0690f7ef94b2bbbf2e2ff7d80bffb6ee
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:05:53.511009+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

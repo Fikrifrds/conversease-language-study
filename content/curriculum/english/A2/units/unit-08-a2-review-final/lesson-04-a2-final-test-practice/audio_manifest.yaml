@@ -1,5 +1,5 @@
 lesson_key: lesson-04-a2-final-test-practice
-status: not_generated
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-English_expressive_narrator-20260629T003958Z.wav
+  duration_seconds: 29.52
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,15 +16,16 @@ assets:
     Faris: English_Trustworth_Man
     Raka: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 2dc97815139394e3eaaace29918c42b3ee796f496285e68e7159bbc47213b79d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/listening-English_expressive_narrator-20260629T003958Z.wav
+  trace_id: 0690f1c9879955b208701e150644afb0,0690f1cc1ec74dfdf01c1f981317d35f,0690f1ce89e7c551242d1ce1ed9d05a1,0690f1d111550d885a344a0d892edb66,0690f1d3e5560520d589dbf6f6c074e9,0690f1d613c7e3c3ba61ff03c0cce7db,0690f1d97e20c90567c3f62431f3b46a,0690f1dbcd339e812acc45bda99baf1c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:39:58.669563+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Reframed as a natural interview (Faris/Raka) instead of Coach/Learner
-  commands; regenerate listening audio.
+stale_reason: Reframed as a natural interview (Faris/Raka) instead of Coach/Learner commands; regenerate
+  listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-explaining-benefits-and-risks
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-04-presenting-ideas/lesson-03-explaining-benefits-and-risks/listening-English_expressive_narrator-20260629T010620Z.wav
+  duration_seconds: 22.71
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 6f349ef83be786c5bbb39bc78a67494b42b0c5851264ccadb02c046c68c8957e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-04-presenting-ideas/lesson-03-explaining-benefits-and-risks/listening-English_expressive_narrator-20260629T010620Z.wav
+  trace_id: 0690f7f9616e9ad1065f2ca827be3ab7,0690f7fc9b65b983b7b3da0691d6b247,0690f7fe04bc729871f50ef5ce99012d,0690f800ee43ac8a47137c7ef8d8cb63,0690f80368cea26f11ba87a06f0061d4,0690f805c03580dd0f6a496dfd6c67a7,0690f808e9ae9e5a28d3d938d6089cfb,0690f80a7b50058b1283d6434ff032c0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:06:20.842391+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

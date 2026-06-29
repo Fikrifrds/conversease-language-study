@@ -1,12 +1,12 @@
 lesson_key: lesson-04-saying-where-you-are-from
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_expressive_narrator-20260629T001109Z.wav
+  duration_seconds: 9.78
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Arif: English_Trustworth_Man
     Omar: English_Trustworth_Man
   line_count: 4
+  script_content_hash: 98a871b109077dac77dd5f63768b74278dd247b3e2d6f50a733ce921605fb193
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/listening-English_expressive_narrator-20260629T001109Z.wav
+  trace_id: 0690eb14f8aea250ee25242f331c0d64,0690eb173e207495bead86d4ed8ef7a5,0690eb19c37bfa34be7b7c2a254b6fc6,0690eb1ba78e26f3b07fee51caf221bb
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:11:09.052051+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

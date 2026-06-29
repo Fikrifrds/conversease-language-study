@@ -1,5 +1,5 @@
 lesson_key: lesson-01-buying-a-ticket
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-03-travel-and-transport/lesson-01-buying-a-ticket/listening-English_expressive_narrator-20260629T002909Z.wav
+  duration_seconds: 20.94
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Staff: English_Diligent_Man
+    Staff: English_CalmWoman
   line_count: 8
+  script_content_hash: 6a471c888085b53db411960977057940045d4f5c5ccfe9d86462c510465e935a
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-03-travel-and-transport/lesson-01-buying-a-ticket/listening-English_expressive_narrator-20260629T002909Z.wav
+  trace_id: 0690ef44d6f27630de30175301f454ec,0690ef46013aedb859629f204df63882,0690ef482d616f23675ab7a01f502eac,0690ef4a4b537f26e001d3c23ff6f37f,0690ef4c97af2dae82eb390b08f89efa,0690ef4f7f4340f0a6e1a627638e5c5a,0690ef510c7c41e19e8ec0fdcb6dfbf7,0690ef5301d6980f324809d1b7c0f86e
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:29:09.951915+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

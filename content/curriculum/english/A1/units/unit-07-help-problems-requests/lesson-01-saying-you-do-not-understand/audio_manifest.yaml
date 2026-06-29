@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,19 +6,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_expressive_narrator-20260629T002032Z.wav
+  duration_seconds: 14.9
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 7
+  script_content_hash: 5a4a4d9cae37ee928ac9caa771323e0aff2a07abedbf31a3a0370e61945e7ea4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/listening-English_expressive_narrator-20260629T002032Z.wav
+  trace_id: 0690ed41266cf47d8aaadd7ff14bf6af,0690ed4323e3fd8fffac8f3cce500f5d,0690ed461adb38e8c9e31c7a81b929c0,0690ed47f9b0438c6eb8832c9beed32d,0690ed4ab1143c1dd92ec16b35c6ecac,0690ed4c6789200b00727f404d821299,0690ed4e536c118fa7e5287bf0441113
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:20:32.215236+00:00'
 lesson_key: lesson-01-saying-you-do-not-understand
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

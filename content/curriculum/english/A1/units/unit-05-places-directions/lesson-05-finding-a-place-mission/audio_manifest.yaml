@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_expressive_narrator-20260629T001821Z.wav
+  duration_seconds: 18.04
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Omar: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 4a8eed9f8616153b60dce1cf53630d6dba06b6e5c1438acb544d3d527c8ca045
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/listening-English_expressive_narrator-20260629T001821Z.wav
+  trace_id: 0690ecbbe29ae57ef4c3f53cdfe1df17,0690ecbec3c2af13cf7c548894c33ff0,0690ecc0ca07b886a8fb845d95cc0b8c,0690ecc22990321f2e65fabe483bc68d,0690ecc5bbaefe926e5a30f64e74b7cd,0690ecc7c801a72af910c029591b48b7,0690ecc9520b1a3768041ceefe891ca0,0690eccbf20b98084155d33e7fbbde09
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:18:21.484179+00:00'
 lesson_key: lesson-05-finding-a-place-mission
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-04-handling-challenging-questions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-English_expressive_narrator-20260629T012325Z.wav
+  duration_seconds: 54.61
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: c604a11d77e91ad42ad275d09ff6fdb4ab81ef39912d7850bb0777695cbc7a5e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/listening-English_expressive_narrator-20260629T012325Z.wav
+  trace_id: 0690fbf50cf187e5d159a80abea930b7,0690fbf8b56dfb7deebbf297e7329d1f,0690fbfb8dfef46b6e03eba8fd18469f,0690fbfe22976de0e133c2196ad3ff0a,0690fc013dfe8f48b1f7106daebc1942,0690fc0426c5a6c2253ca3b39d1af0e7,0690fc07e5dee570281030350c6ac1d6,0690fc09a60b693a5fa619917fe7f5d4
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:23:25.060816+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

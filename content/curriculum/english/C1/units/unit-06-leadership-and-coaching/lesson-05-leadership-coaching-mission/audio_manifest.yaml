@@ -1,5 +1,5 @@
 lesson_key: lesson-05-leadership-coaching-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-English_expressive_narrator-20260629T013120Z.wav
+  duration_seconds: 42.39
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: fa4951068a02f36a53b3a91efb9b26c79e5ce1cab9b377993807188b7e0272b8
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/listening-English_expressive_narrator-20260629T013120Z.wav
+  trace_id: 0690fdd263854ac8dc705f36a8b4b7ce,0690fdd48423d640d3bfc01c967716b7,0690fdd609341580129bfe30f4187565,0690fdd9063c3e2757e994ebd65be289,0690fddb8363c1495af71694997331f3,0690fdddfb723ea011b4b60c74401d0c,0690fde029bccd90aa257cb1acf5a6ab,0690fde21f7f0e552e02c6d2101cdb9c,0690fde5a0dd12554afb39d0a5ca3842
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:31:20.720141+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

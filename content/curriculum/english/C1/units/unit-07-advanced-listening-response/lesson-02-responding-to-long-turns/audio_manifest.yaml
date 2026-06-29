@@ -1,5 +1,5 @@
 lesson_key: lesson-02-responding-to-long-turns
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-English_expressive_narrator-20260629T013217Z.wav
+  duration_seconds: 39.34
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: fbefcf0667875fb94df77bca5db12bb22fe9f2507c802054d3993418216bd7e5
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/listening-English_expressive_narrator-20260629T013217Z.wav
+  trace_id: 0690fe0c075347777ea1b42ea9a7d707,0690fe109e3130bfb70d56264024f42a,0690fe121cea48929d84791e1bd93163,0690fe14b8575da5aa36771b4808be0b,0690fe1704bd9b52d3e115726213d31e,0690fe1962cef256466a3bdd1e44c6ee,0690fe1c004197f3936b2de63e0856fb,0690fe1e443c2ecb1f0f470d92f02991
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:32:17.286018+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

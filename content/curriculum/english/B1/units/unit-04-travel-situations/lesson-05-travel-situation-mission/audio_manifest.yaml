@@ -1,5 +1,5 @@
 lesson_key: lesson-05-travel-situation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-English_expressive_narrator-20260629T004841Z.wav
+  duration_seconds: 35.89
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 463e762fdf5fdf0c7f333b68806e2c62ea9f378b1e80201ffe10a2a0f1840c87
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/listening-English_expressive_narrator-20260629T004841Z.wav
+  trace_id: 0690f3d1542ed394230ec6138fbd8ea6,0690f3d30d678934a7aac510dff4e859,0690f3d623a48ae805415cc1bf3e1b61,0690f3d873a4398b685f9568f7e7c81e,0690f3da92ddbd3efe6f3dc2fc410161,0690f3dd3afb801f99c3ee991f3d7740,0690f3df82770a295d244bd8cbd52698,0690f3e214b6e169a61edebcfb011a09,0690f3e60b6e842c75919a73ac1316f5
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:48:41.109259+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

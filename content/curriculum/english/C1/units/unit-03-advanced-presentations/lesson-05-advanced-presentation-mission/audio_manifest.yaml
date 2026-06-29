@@ -1,5 +1,5 @@
 lesson_key: lesson-05-advanced-presentation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-05-advanced-presentation-mission/listening-English_expressive_narrator-20260629T012359Z.wav
+  duration_seconds: 49.86
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 10
+  script_content_hash: 4a9052a2a0db0c625596bdd33d77b6f95de3cda59e3cfa84d1be513130697206
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-05-advanced-presentation-mission/listening-English_expressive_narrator-20260629T012359Z.wav
+  trace_id: 0690fc159a9988efbb743345be9e3fb9,0690fc17414e8372729b5434d621e696,0690fc1bf6c1f55f97e226cedf1f9a4f,0690fc1ce24646463d021bb6dc6e26d3,0690fc1f577c0e8d3de8e40148b3ed87,0690fc21485f06ad6298502c53c7a501,0690fc24c95dcccb7b688a481dba07bb,0690fc26208117a90cc2cfe08564f924,0690fc2961c393901af233b9c3641ba7,0690fc2bbde8baf12bc96c0f8a179e75
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:23:59.312870+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

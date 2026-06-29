@@ -1,5 +1,5 @@
 lesson_key: lesson-05-b2-final-discussion
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-08-b2-review-final/lesson-05-b2-final-discussion/listening-English_expressive_narrator-20260629T011641Z.wav
+  duration_seconds: 40.33
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 4054c5684e5838124a6cc13af6bd03ca4454be073bdc339d70a12023a9a91698
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-08-b2-review-final/lesson-05-b2-final-discussion/listening-English_expressive_narrator-20260629T011641Z.wav
+  trace_id: 0690fa6393a60aa04d654dbf050fd17c,0690fa651f13089d7eee217649aaae93,0690fa68a9f6f6fb0a7b9532ca43f408,0690fa6ad0aef48ad973fdf625bb652c,0690fa6d91360a03725ece30e5f8ab6d,0690fa6f73651efee2a7ffa7eab6bd1d,0690fa73e2369c29366e5fbf5e569491,0690fa75a1997bafe2fe3ea4a1c3891b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:16:41.062074+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

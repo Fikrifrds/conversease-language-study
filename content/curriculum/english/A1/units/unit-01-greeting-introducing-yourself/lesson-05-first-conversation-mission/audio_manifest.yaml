@@ -1,12 +1,12 @@
 lesson_key: lesson-05-first-conversation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_expressive_narrator-20260629T001127Z.wav
+  duration_seconds: 15.85
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -14,11 +14,12 @@ assets:
     Adi: English_Diligent_Man
     Raka: English_Gentle-voiced_man
   line_count: 5
+  script_content_hash: 28d53546f861f3868b9d7f3e127e5227d7bb350d56f8bcaaba29bd56130756e0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/listening-English_expressive_narrator-20260629T001127Z.wav
+  trace_id: 0690eb232043646dea39e1aabd72e821,0690eb25276de0c150c4dad8e2def184,0690eb288a2c9cf44dc585a4112a6a3c,0690eb2a6fe3ce5fe5d06e3ab3c45103,0690eb2d17d34fe3ddf8a47ef360ec52
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:11:27.310519+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

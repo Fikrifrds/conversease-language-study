@@ -1,5 +1,5 @@
 lesson_key: lesson-02-telling-events-in-order
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-English_expressive_narrator-20260629T004118Z.wav
+  duration_seconds: 20.76
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: cfafd771b164355475fd83cf6c955b505af95285562a68d95cc825a96c2ee47e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/listening-English_expressive_narrator-20260629T004118Z.wav
+  trace_id: 0690f21dd82ada41a75e3c957c49f8fe,0690f21faed295b6e9e73768c4ed3340,0690f2219462536b0b5dfcca2dbf962b,0690f223811689e6d51abd5134455ff2,0690f22645c5065b1579eff36bb70856,0690f2281ef77be7ac7861dc92c02fd4,0690f22a8a7e27e6da5f174fdeeeac4f,0690f22c9e32be3618429d7639b17237
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:41:18.906877+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

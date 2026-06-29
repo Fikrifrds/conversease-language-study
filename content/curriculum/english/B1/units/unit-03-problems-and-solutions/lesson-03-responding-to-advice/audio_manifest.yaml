@@ -1,5 +1,5 @@
 lesson_key: lesson-03-responding-to-advice
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-English_expressive_narrator-20260629T004534Z.wav
+  duration_seconds: 18.47
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 270282ad49f3f84a3f60916bf3349e7d3e26078e501bf056cf369b87492ec1b7
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/listening-English_expressive_narrator-20260629T004534Z.wav
+  trace_id: 0690f31e12abe0de5a310e4850778878,0690f321b27aa20364711df37f920dcc,0690f32316dabae18a6c8b6724348f76,0690f3264c9aae134cbae32036153622,0690f328472e82b8842d8979a629f40b,0690f32a1cbcc2dfe911b8c6bf957ca5,0690f32da038dbaaeafbd7110a3ae78c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:45:34.946309+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

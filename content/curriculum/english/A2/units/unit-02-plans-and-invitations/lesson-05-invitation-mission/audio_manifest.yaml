@@ -1,5 +1,5 @@
 lesson_key: lesson-05-invitation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-05-invitation-mission/listening-English_expressive_narrator-20260629T002846Z.wav
+  duration_seconds: 26.9
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 10
+  script_content_hash: df3f8a8569351647479c016424f6086197688f641798efbadc5062dd9e16bb51
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-05-invitation-mission/listening-English_expressive_narrator-20260629T002846Z.wav
+  trace_id: 0690ef263880d789d91d35c779ab0de3,0690ef29a837837a54020e16a4204d7a,0690ef2be5b1c7d03d394ca25171a407,0690ef2e00be36d09ba19df0e3a694b3,0690ef306a4070f79b6955734c34e9f2,0690ef32fb68b14fd25ece618ff4862f,0690ef351912e271ec22e0b20c6126e4,0690ef377024bd148ccfd35e6ef7cc3b,0690ef39bbdc4cf39effed265732f2e1,0690ef3c208e90a45e47e4d42d2bce32
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:28:46.026047+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

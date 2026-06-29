@@ -1,5 +1,5 @@
 lesson_key: lesson-02-suggesting-a-solution
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-02-suggesting-a-solution/listening-English_expressive_narrator-20260629T004511Z.wav
+  duration_seconds: 16.81
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 7
+  script_content_hash: a66fe88fb14bc9ca6186c4a477249e0512f1b9288e08d0176a4fce7165522d98
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-03-problems-and-solutions/lesson-02-suggesting-a-solution/listening-English_expressive_narrator-20260629T004511Z.wav
+  trace_id: 0690f308c7ca1eff8b7aa37a46affe2d,0690f30afc44e97c6da0a4fa28e60112,0690f30c6b482c8b6092387b7fcffa34,0690f30e375a1fd9f2694cf7ba835be6,0690f311b2dba116ce75dd25ee55243b,0690f31373ea96ab395aeb47018140a9,0690f315118673d85072f21ca8cb6aa8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:45:11.705341+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

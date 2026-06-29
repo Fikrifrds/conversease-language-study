@@ -1,5 +1,5 @@
 lesson_key: lesson-04-c1-final-test-practice
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-08-c1-review-final/lesson-04-c1-final-test-practice/listening-English_expressive_narrator-20260629T013542Z.wav
+  duration_seconds: 33.43
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: a4aed30c9476b092e1f3a17cc9ac4c7fc9943d57b6ab7a8984905929400782a4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-08-c1-review-final/lesson-04-c1-final-test-practice/listening-English_expressive_narrator-20260629T013542Z.wav
+  trace_id: 0690feda64da840018ebf6db95dbc1a0,0690fedca3824ff7d14260611cf598de,0690fedf707a3d168398df10ea6676d8,0690fee1631bf1cd665128e7b3a75e5f,0690fee34160d93f86d21a98079321d0,0690fee69d5099a714ab3f5b4d98e5d7,0690fee96b69ca0c0e233e399ba7dc20,0690feeb4565c2e3ba7862279a0bbb68
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:35:42.136767+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

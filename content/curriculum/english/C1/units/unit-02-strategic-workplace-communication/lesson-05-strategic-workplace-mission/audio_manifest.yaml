@@ -1,5 +1,5 @@
 lesson_key: lesson-05-strategic-workplace-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-English_expressive_narrator-20260629T012130Z.wav
+  duration_seconds: 43.31
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 1e22f15a50e3dfd18f5719bb512c406998db6fdff069b51077299620f32998f9
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/listening-English_expressive_narrator-20260629T012130Z.wav
+  trace_id: 0690fb848e48b11b7a324897d53730ef,0690fb87f9bdf4790f369bfd2ec53f00,0690fb891fbc5b008beb9a5e2de6ae2e,0690fb8c6e5ebbde1201462420009876,0690fb8fe9a20767993df34c35caf719,0690fb9110dc6895bf3a3615e094e307,0690fb9525f8b21f1d4eba611774d5ca,0690fb9769e1137e737a14c03366b674
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:21:30.776104+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

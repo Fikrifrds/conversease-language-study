@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-English_expressive_narrator-20260629T002010Z.wav
+  duration_seconds: 18.91
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: ec09e597b612ba1a5e4fe648fdb806c16d3d80381845d326e6eb6e9839cf8043
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/listening-English_expressive_narrator-20260629T002010Z.wav
+  trace_id: 0690ed289c031af6f9a35aca05670f8c,0690ed2b356db1d32fb2690d20a4e373,0690ed2df203eac477ad93ec4b404a33,0690ed2fa6019144de7ee5171f296c5a,0690ed32736637139a460646ec68ecc6,0690ed3435e5063e49d58c3321ea8a7c,0690ed36038e43b2dc4a627b8166dbec,0690ed38e86612a5b1e2171ffd05a52a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:20:10.640855+00:00'
 lesson_key: lesson-05-cafe-and-shop-mission
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

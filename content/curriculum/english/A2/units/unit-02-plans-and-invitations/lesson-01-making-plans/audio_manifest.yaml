@@ -1,5 +1,5 @@
 lesson_key: lesson-01-making-plans
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-01-making-plans/listening-English_expressive_narrator-20260629T002704Z.wav
+  duration_seconds: 20.7
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 9bab01177df77e91a55eb236ef3e9b8695aa152f7567aebd3432d6670d565d8b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-02-plans-and-invitations/lesson-01-making-plans/listening-English_expressive_narrator-20260629T002704Z.wav
+  trace_id: 0690eec65837ca1271e6333de0334598,0690eec86cbe1d11604a8f7494d9f2f6,0690eeca50a52adb392b748d0d426e63,0690eecd3707bef3ee22e1467a00de3e,0690eecf4e0fe57eb8b78c730208939b,0690eed1806c2be43bb563d009241c42,0690eed4b307eb2badb0c387c4e080f8,0690eed6ff133b77be2cd4bf392f593b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:27:04.155766+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

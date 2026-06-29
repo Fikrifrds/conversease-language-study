@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-02-asking-about-prices/listening-English_expressive_narrator-20260629T001904Z.wav
+  duration_seconds: 15.21
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Dimas: English_Diligent_Man
     Omar: English_Trustworth_Man
   line_count: 7
+  script_content_hash: 383ea9b88f463e2f13af4b87c4f7e329b0e4e53064f3e5e9e65a3e5c475d9315
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-02-asking-about-prices/listening-English_expressive_narrator-20260629T001904Z.wav
+  trace_id: 0690ece96dc5bfb6c8e45b89578ab4f5,0690eceb0b10687c0e3f24da0007e23c,0690eced48c324a19cc003099b86cacb,0690ecf04ba9af984fcef460c7b92aff,0690ecf2fe6624ba6296472931a85c06,0690ecf418194be18b174adb8a008e2b,0690ecf6356d72786ab25c10deb44ae1
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:19:04.411685+00:00'
 lesson_key: lesson-02-asking-about-prices
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

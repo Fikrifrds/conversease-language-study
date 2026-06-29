@@ -1,5 +1,5 @@
 lesson_key: lesson-02-managing-expectations
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-English_expressive_narrator-20260629T011958Z.wav
+  duration_seconds: 30.11
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: bf17b02f75bb3aba200fb57a6fa113f3736d3bfe49a90a783fc3e6e66fad8bf4
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/listening-English_expressive_narrator-20260629T011958Z.wav
+  trace_id: 0690fb2a211d49c3b29e9b735f715803,0690fb2c3bca8fcbf5040752074f433e,0690fb2eaa5bc7b7e607881a0545eeb6,0690fb3173cb89b1e591caff766a8ae1,0690fb339a8d558dcf0835eead0a784e,0690fb3567addc7d31102f739fead13b,0690fb397c2a336714993286ed7513e1,0690fb3b02630ef13df88265f647eb8f
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:19:58.320990+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

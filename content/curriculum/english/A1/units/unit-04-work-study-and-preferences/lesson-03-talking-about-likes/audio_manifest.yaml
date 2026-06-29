@@ -1,24 +1,25 @@
 lesson_key: lesson-03-talking-about-likes
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/listening-English_expressive_narrator-20260629T001552Z.wav
+  duration_seconds: 13.13
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: 59d0ff5e0d0c92c93a50c20c0c9afa46b8799905a8cebd7e961ca4ed2073f79b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/listening-English_expressive_narrator-20260629T001552Z.wav
+  trace_id: 0690ec2cfdc9df93e7bc27d96b041dd8,0690ec2e27f2e37cab0278a7a9ecefa8,0690ec301ff816c55b240283c93371a8,0690ec32b231e6f3e5c8f12b3826d2fa,0690ec343930fdcaa9d817be49aed796,0690ec356b4418ec95ef9a5d75ada350
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:15:52.474192+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

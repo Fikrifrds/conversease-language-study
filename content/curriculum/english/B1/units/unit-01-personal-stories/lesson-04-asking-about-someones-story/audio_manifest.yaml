@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-about-someones-story
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-01-personal-stories/lesson-04-asking-about-someones-story/listening-English_expressive_narrator-20260629T004203Z.wav
+  duration_seconds: 17.93
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 4684a509033ff539bfb53b8ce42a4626c9f5661eac6777feebe5496dbf130114
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-01-personal-stories/lesson-04-asking-about-someones-story/listening-English_expressive_narrator-20260629T004203Z.wav
+  trace_id: 0690f24ce19eac60e4de2f004d4b9481,0690f24ea76251fb7127c4fd4f7c5bb3,0690f251f723bdb7bdff3507bd6adf25,0690f253e7cd9edaed7475080486b881,0690f255ac43be76f113191494276c3e,0690f257653a6bea6b460a5649c4822d,0690f25918259ff11ab27e5409c8c7cf
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:42:03.656424+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

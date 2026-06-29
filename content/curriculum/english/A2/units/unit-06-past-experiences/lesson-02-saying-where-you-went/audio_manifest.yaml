@@ -1,5 +1,5 @@
 lesson_key: lesson-02-saying-where-you-went
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-English_expressive_narrator-20260629T003527Z.wav
+  duration_seconds: 17.07
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Staff: English_Diligent_Man
+    Raka: English_Gentle-voiced_man
+    Staff: English_CalmWoman
   line_count: 7
+  script_content_hash: 8661bf880dc554e8fdb92702d2b59479a28d73bc26ae06d45cebfde7b86452b2
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/listening-English_expressive_narrator-20260629T003527Z.wav
+  trace_id: 0690f0bf8762454008e357aa9f67c57c,0690f0c210fd31b31917820f20bc1c13,0690f0c426d7ea9aa7687a73804881a6,0690f0c64c6a430c203c14901d50ba69,0690f0c86330cf6695522f17d296d762,0690f0cb557359b71d6e782b9bb80fb3,0690f0cd8d901b45eff996ba07f036be
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:35:27.067698+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

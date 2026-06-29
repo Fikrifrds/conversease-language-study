@@ -1,28 +1,28 @@
 lesson_key: lesson-05-contact-details-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_expressive_narrator-20260629T001317Z.wav
+  duration_seconds: 28.7
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Officer: English_Trustworth_Man
+    Officer: English_CalmWoman
   line_count: 10
+  script_content_hash: 4620296587894e1d96e1fd7b2477ce7563712fc510b5ae9f42bc0f0d6ecc845d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/listening-English_expressive_narrator-20260629T001317Z.wav
+  trace_id: 0690eb86a83a569cf00d6727b6e02c59,0690eb89a6e32e98244bcebd47470cbf,0690eb8b8fad866e6dc1c941521fa2f6,0690eb8db4c21baa1907e3d7cb2f276f,0690eb9041e659661162d501196d49b2,0690eb9159f6484315447be48db57e7f,0690eb941a0bd26781714a50b09ce9c9,0690eb977f173961b82d58ad1cde037f,0690eb9904bdb27df4f9148761bb474e,0690eb9b795a88cc3a616c4271b91d42
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:13:17.839199+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

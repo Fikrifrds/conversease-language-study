@@ -1,5 +1,5 @@
 lesson_key: lesson-02-expressing-certainty-and-doubt
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-English_expressive_narrator-20260629T011737Z.wav
+  duration_seconds: 26.87
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 5a99d93317f6d9d095871b860c3912b197be5dde1af1c434dc496f552d541718
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/listening-English_expressive_narrator-20260629T011737Z.wav
+  trace_id: 0690fa9fd6d3b5206191353d63fd4907,0690faa1f47164cbe9e7d9d4f48564bd,0690faa37cf08206e53e4c08242ac839,0690faa53e9bb143351d6ce3055a5ac4,0690faa810d2f6c42200ac5aab2babb0,0690faaaf589e9b5f6a8918e48dbb867,0690faac0f2be41433511d11ca617e20,0690faaeddd7edd92bf923cc3bd1ba3b
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:17:37.105055+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-agreeing-and-disagreeing-politely
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-03-agreeing-and-disagreeing-politely/listening-English_expressive_narrator-20260629T003737Z.wav
+  duration_seconds: 19.07
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: 786eda2e542a7219df9501ee59373e79513eb1a1560b9ad61b517086631e1433
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-03-agreeing-and-disagreeing-politely/listening-English_expressive_narrator-20260629T003737Z.wav
+  trace_id: 0690f142b09f361d74cff93f935dc23e,0690f145bf8e0ea83c9c3c1e9c668e7c,0690f147fa4e0a0451a9c8e699cb28e1,0690f1493e8e9d8ebf1ffe493ba332a0,0690f14c7a77235a1cbcf7491e075918,0690f14efa058605742c1b3d129d0aa9,0690f15063d8154c1e3807a1fae47795
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:37:37.970520+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

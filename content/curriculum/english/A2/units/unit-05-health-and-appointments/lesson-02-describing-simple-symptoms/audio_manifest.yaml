@@ -1,5 +1,5 @@
 lesson_key: lesson-02-describing-simple-symptoms
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/listening-English_expressive_narrator-20260629T003327Z.wav
+  duration_seconds: 15.07
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Raka: English_Upbeat_Woman
-    Nurse: English_Trustworth_Man
+    Nurse: English_CalmWoman
+    Raka: English_Gentle-voiced_man
   line_count: 7
+  script_content_hash: b33a00433908a09a6d4edf5102d6bc15056d04a0012e7a892a423c6fdf3a0f4c
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/listening-English_expressive_narrator-20260629T003327Z.wav
+  trace_id: 0690f048316a735fe49d22917e190bf2,0690f04a0e31de164f207e2397c8bf95,0690f04c23df88ead68fff4fc8f97a96,0690f04e9b1360084ea3f6c4cb587b8a,0690f051fc67e879714dce7084a6cacf,0690f0534a6b8ccd99cb25eb7dadb728,0690f05573d82e23772834171c7d4ba8
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:33:27.455494+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

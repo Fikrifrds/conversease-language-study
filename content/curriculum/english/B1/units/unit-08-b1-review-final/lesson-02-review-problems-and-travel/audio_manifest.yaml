@@ -1,5 +1,5 @@
 lesson_key: lesson-02-review-problems-and-travel
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-English_expressive_narrator-20260629T005616Z.wav
+  duration_seconds: 20.06
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: 2f3e99101ac1054d7165fff8fac3f91452be14a67c7d3305d906f693dccbeef6
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/listening-English_expressive_narrator-20260629T005616Z.wav
+  trace_id: 0690f59e7c957a7750a9f98f9df48902,0690f5a04f69b65f06b645f3f06ca537,0690f5a2eaf58e4d75a7dfc4d2931b15,0690f5a476b468f6dce8d5ae0c949416,0690f5a77aa85c98fe096e4cab65a4eb,0690f5a94c4db08f5b0bab158d6cff7f,0690f5acb681e1750eb8fd7f6f91a99d,0690f5aea92da17778dead77087d559a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:56:16.507055+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

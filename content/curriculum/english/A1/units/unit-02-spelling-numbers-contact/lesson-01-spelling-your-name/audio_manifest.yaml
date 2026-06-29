@@ -1,28 +1,28 @@
 lesson_key: lesson-01-spelling-your-name
-status: needs_regeneration
+status: generated
 provider: minimax
 assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_expressive_narrator-20260629T001146Z.wav
+  duration_seconds: 15.48
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Dimas: English_Diligent_Man
-    Officer: English_Trustworth_Man
+    Officer: English_CalmWoman
   line_count: 6
+  script_content_hash: e418ef221fc0337c4ef6fdd8cbac24879df4c4ca91e5ddae32d534a3b668581b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/listening-English_expressive_narrator-20260629T001146Z.wav
+  trace_id: 0690eb353c5f4763d40b79ee62e4ce06,0690eb377db83ab02c1a4273aed902e3,0690eb39bcfbb52cdab7a3c8636961d3,0690eb3baa1e8234f14eb2119c30c12c,0690eb3e706bb87654c244459f6bf2cc,0690eb413c1f608d03a4197718db18d0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:11:46.973068+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate
-  listening audio.
+stale_reason: Dialogue voice mapping changed to avoid mixed-gender role audio; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-reading-context
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-01-reading-context/listening-English_expressive_narrator-20260629T012656Z.wav
+  duration_seconds: 27.62
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 8
+  script_content_hash: aa0909275f5beca68a886af96d01ac9a2c7d6aad2e98fbcb50e9ef1c7d13fddf
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-05-cross-cultural-professionalism/lesson-01-reading-context/listening-English_expressive_narrator-20260629T012656Z.wav
+  trace_id: 0690fcce41b8c12a58a4372fb439ed69,0690fcd10a5a9253162bbc4ffd7fcb82,0690fcd348497099fba717dd79aa336d,0690fcd54bac518c14ef8a2ca0dd39e8,0690fcd84713b6f99553e3b390a6044d,0690fcd9ef64cd544eb27771b34c19c5,0690fcdc6e38de49123b250f6fd6fe86,0690fcde0ff91ad8d0da9b32d5300f08
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:26:56.576211+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

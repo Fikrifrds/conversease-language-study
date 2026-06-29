@@ -1,5 +1,5 @@
 lesson_key: lesson-01-review-arguments-and-meetings
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-08-b2-review-final/lesson-01-review-arguments-and-meetings/listening-English_expressive_narrator-20260629T011451Z.wav
+  duration_seconds: 29.94
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: e7eb3d4046246fad24da32b141de42b03abcd47cece83e62369a618b4600b7ed
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-08-b2-review-final/lesson-01-review-arguments-and-meetings/listening-English_expressive_narrator-20260629T011451Z.wav
+  trace_id: 0690f9f7561e91c44596ef4f2d98edb9,0690f9fa3b381b75985c0cdfae92601d,0690f9fc848e896f22bdf34984c3c5de,0690f9fe68e75246a183665899b1217f,0690fa019edc407b2489a57512875a42,0690fa03524cfe169cb099da7c5696b1,0690fa0674c9f788ce4225d30f0bb049,0690fa08d6a74a84244e6beb0b108fed
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:14:51.327877+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

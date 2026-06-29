@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,8 +6,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_expressive_narrator-20260629T002226Z.wav
+  duration_seconds: 19.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -15,10 +15,11 @@ assets:
     Dimas: English_Diligent_Man
     Omar: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 42e2a9ddc9e3fff6fd669d19fd169eb8db72b9a08d7010b262b9a4302ebcfc3b
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/listening-English_expressive_narrator-20260629T002226Z.wav
+  trace_id: 0690edb0a868e1e420b7ffb3f72beb26,0690edb21732fc9c21571625a971562b,0690edb445dd85fbbec792257ffc7146,0690edb737dc5ed2603b167a433e569e,0690edb97a844314748e911d72ceb438,0690edbb46a09bc2d895b42b53a9cdfc,0690edbecf227ab285ca39a7ca4024e4,0690edc09b974c56ffb19b647b6a05ca
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:22:26.834701+00:00'
 lesson_key: lesson-01-review-introductions
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

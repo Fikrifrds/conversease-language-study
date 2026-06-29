@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,19 +6,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_expressive_narrator-20260629T001653Z.wav
+  duration_seconds: 10.82
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 6
+  script_content_hash: 8f35ec34f38348d08a6ec2246a7c52300c786817e58224d6c58b6668a2d7c297
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/listening-English_expressive_narrator-20260629T001653Z.wav
+  trace_id: 0690ec68719a60b96f610f8a24204f51,0690ec6ae76a4bf76aebca025ae66f94,0690ec6dd0b3ad3004a95b6b868ecda5,0690ec6f966b9a30f191b05603f6c41e,0690ec7259e60f386c724f397714c58d,0690ec73b832abd49379d3b95d4f0a55
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:16:53.408401+00:00'
 lesson_key: lesson-01-asking-where-a-place-is
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

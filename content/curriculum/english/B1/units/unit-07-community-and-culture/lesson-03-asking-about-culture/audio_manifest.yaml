@@ -1,5 +1,5 @@
 lesson_key: lesson-03-asking-about-culture
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-03-asking-about-culture/listening-English_expressive_narrator-20260629T005428Z.wav
+  duration_seconds: 29.26
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 8bdce73e158be1af4c1ab59cde9ba78edc0702f2b9d1c75494f2609678e3b100
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-03-asking-about-culture/listening-English_expressive_narrator-20260629T005428Z.wav
+  trace_id: 0690f52e8dc5d68b08d424524f53021f,0690f531256a16fc4ec5acb8b06d8e2e,0690f533bf7c1d5d6f1181fa0e844625,0690f535b0f58d319256d6a16fb49442,0690f53861d2b18145fae728a4a21d4f,0690f53a275ecfa60e5a41b9f62979f0,0690f53dd35347eaf155b7578d68a27f,0690f53f3985356bb9f31fe38a6e41fb,0690f541bfe43606a85013f1db7c731c
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:54:28.133117+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

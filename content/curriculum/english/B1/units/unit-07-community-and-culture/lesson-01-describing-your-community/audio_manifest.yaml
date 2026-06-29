@@ -1,5 +1,5 @@
 lesson_key: lesson-01-describing-your-community
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B1/unit-07-community-and-culture/lesson-01-describing-your-community/listening-English_expressive_narrator-20260629T005332Z.wav
+  duration_seconds: 21.85
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 8
+  script_content_hash: 773913b10360f03d84a294e4a2fb33d976e2c57103d9718f3b8d8e45ec5d093f
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B1/unit-07-community-and-culture/lesson-01-describing-your-community/listening-English_expressive_narrator-20260629T005332Z.wav
+  trace_id: 0690f4f927cfc1dacfbfc647e062c5a3,0690f4fc6c6e18c7b9a3d1a4f1c33f8d,0690f4fe293d01bff9e2ea884d1c2123,0690f500e93a60ffaa146f702f850ef5,0690f503679103dc045b0a5250a3b8db,0690f505088ec1f9f1950f52e0ffad44,0690f50829bbe66e9bf80aef8d16810a,0690f509d76cedbdd8b660a232ca3125
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:53:32.551898+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

@@ -1,5 +1,5 @@
 lesson_key: lesson-01-saying-what-you-think
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-01-saying-what-you-think/listening-English_expressive_narrator-20260629T003654Z.wav
+  duration_seconds: 15.77
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Hilmi: English_Diligent_Man
     Faris: English_Trustworth_Man
+    Hilmi: English_Diligent_Man
   line_count: 7
+  script_content_hash: b80d6ef40215de2d1e225683634d54ed7375c570e34515842630440c98c30e6d
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-01-saying-what-you-think/listening-English_expressive_narrator-20260629T003654Z.wav
+  trace_id: 0690f1178c5788fb4d75ea0453f43b91,0690f1194b27ea86e7bc2f10aa8b62f4,0690f11b460d95bb43efb284a8eb0260,0690f11e2ac7c44404e482eb7653b2c5,0690f1207a60c1c3eec7954f9424bdd1,0690f12224fc2a14dce4626c0525997c,0690f124829994635c51d8a15567148a
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:36:54.875858+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

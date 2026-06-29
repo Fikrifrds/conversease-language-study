@@ -1,5 +1,5 @@
 lesson_key: lesson-03-talking-about-weekends
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,8 +7,8 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-01-social-small-talk/lesson-03-talking-about-weekends/listening-English_expressive_narrator-20260629T002541Z.wav
+  duration_seconds: 19.97
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
@@ -16,11 +16,12 @@ assets:
     Ben: English_Gentle-voiced_man
     Dimas: English_Diligent_Man
   line_count: 8
+  script_content_hash: 5d3c22174acd834d037916c395d10badd9938b3f36eb54725462d93b07f29372
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A2/unit-01-social-small-talk/lesson-03-talking-about-weekends/listening-English_expressive_narrator-20260629T002541Z.wav
+  trace_id: 0690ee73dbff33074833291b052c20af,0690ee7590e2a1f03f2ada53955d3c36,0690ee78a4577cf133e08d6fc89737ca,0690ee7ae5ca0173b85c98585f5520a2,0690ee7ce79cd7d6a1c5c6b1341d5338,0690ee7ede04ba163fb9f5f9b3d81722,0690ee80c1ff4d5e9d619b1de2c7b841,0690ee83fd0fa2338f1d0d81103d73ac
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:25:41.372903+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

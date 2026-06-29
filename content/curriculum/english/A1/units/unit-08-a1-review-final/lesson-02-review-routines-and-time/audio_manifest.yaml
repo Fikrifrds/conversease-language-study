@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,19 +6,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_expressive_narrator-20260629T002251Z.wav
+  duration_seconds: 20.81
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 8
+  script_content_hash: e837b4beffc2959a98cbea7a3280527232d8315f4181e05b605eedc3c901b504
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/listening-English_expressive_narrator-20260629T002251Z.wav
+  trace_id: 0690edc9c63735c09da172e1a057af81,0690edcb967491e1118664643c6eee87,0690edcd22ef6941576ee2f4fd02137e,0690edcf873a40260e3bfa1dee86d2bc,0690edd2261d32f609edf9a88a5d3476,0690edd4dc18eb0881ea977f029ea0e6,0690edd66113b71960de405e4867ec13,0690edd92296e1ff2801221d7ded1033
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:22:51.162320+00:00'
 lesson_key: lesson-02-review-routines-and-time
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.

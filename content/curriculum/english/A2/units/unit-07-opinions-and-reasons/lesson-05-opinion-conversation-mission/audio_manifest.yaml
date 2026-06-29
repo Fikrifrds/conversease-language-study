@@ -1,5 +1,5 @@
 lesson_key: lesson-05-opinion-conversation-mission
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,24 +7,24 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_Aussie_Bloke-20260612T130129Z.wav
-  duration_seconds: 18.28
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_expressive_narrator-20260629T003822Z.wav
+  duration_seconds: 20.44
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
     Friend: English_Gentle-voiced_man
-    Raka: English_Upbeat_Woman
+    Raka: English_Gentle-voiced_man
   line_count: 7
+  script_content_hash: c29fcd490475452f22384bd768ff5450893d63b2f7a1b87b964e23a319b9513b
   audio_format: wav
-  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_Aussie_Bloke-20260612T130129Z.wav
-  trace_id: 067b3618dc33d86de8b75c335c0e5bb9,067b361a7858d9b8d8d497f4d5042e22,067b361d44fe6e029ff15ed53d979563,067b361f3694da6c8abee6a2f8de9b9c,067b3622e69cfc8fda6bbe9fa29ccae8,067b36253f2c5366d9dab792080a5080,067b362738c179d9f2012cdcdd2eb7e1
+  storage_key: conversease/audio/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/listening-English_expressive_narrator-20260629T003822Z.wav
+  trace_id: 0690f16d8e24721486848aa0e2313b85,0690f16f7ffe087800256680f9be320d,0690f17227f9efb6103abc19df42b41c,0690f1754c08ead2c080cd61c0c51b6d,0690f1774d08708c0948eeb3882f5d56,0690f17aeeaf8c7e4c6bb08476b782db,0690f17c65a9c632a7ccaf6879b039c9
   generated_by: Fikri Firdaus
-  generated_at: '2026-06-12T13:01:29.661249+00:00'
+  generated_at: '2026-06-29T00:38:22.689387+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml
   audio_url: null
   duration_seconds: null
-stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate
-  listening audio.
+stale_reason: Dialogue speakers changed to avoid casual mixed-gender examples; regenerate listening audio.

@@ -1,5 +1,5 @@
 lesson_key: lesson-03-using-precise-transitions
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-03-advanced-presentations/lesson-03-using-precise-transitions/listening-English_expressive_narrator-20260629T012252Z.wav
+  duration_seconds: 28.15
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: 02adb8f1f4abde142a4dd0791af596f0bfc6847589c394d8e182dc13f5e6ffd1
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-03-advanced-presentations/lesson-03-using-precise-transitions/listening-English_expressive_narrator-20260629T012252Z.wav
+  trace_id: 0690fbd94669249f21c25fdf16c8a4be,0690fbdc01dccdade7c34ae094873ee1,0690fbdf9e77ab2d7e370e7ca7efea8b,0690fbe18cd3dafa564a8f7767cf6bdd,0690fbe3614c0f2629df140fb5f9a737,0690fbe528c32ca2c762ac0fee82f08c,0690fbe86ab0eb8f1e3422452cee487e,0690fbe94fb9af415859d007c00b8ef0
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:22:52.896304+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

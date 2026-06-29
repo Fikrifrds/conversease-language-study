@@ -1,5 +1,5 @@
 lesson_key: lesson-04-finding-middle-ground
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/listening-English_expressive_narrator-20260629T010428Z.wav
+  duration_seconds: 22.16
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Faris: English_Trustworth_Man
     Dimas: English_Diligent_Man
+    Faris: English_Trustworth_Man
   line_count: 8
+  script_content_hash: bd636e63c09cbd52c3f6635d4ea52e78b26855cb498a6cbda785b01321d98481
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/B2/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/listening-English_expressive_narrator-20260629T010428Z.wav
+  trace_id: 0690f78886982d4a555cdc461d8e4dcb,0690f78b9720d655971a06f03bc33982,0690f78eb46ef55f2d3a665bbfb46f50,0690f78fc34f87b884f9679a9a33876a,0690f792dca0f5e54c6e00fc384ee9d7,0690f795756ef839eb1850a8e96990e1,0690f7978602fe50c329f96ed1aa8342,0690f799d549509243d7d6b3bbc201b7
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:04:28.291639+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

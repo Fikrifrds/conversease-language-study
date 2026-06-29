@@ -1,5 +1,5 @@
 lesson_key: lesson-04-asking-high-quality-follow-ups
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -7,20 +7,21 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-English_expressive_narrator-20260629T013312Z.wav
+  duration_seconds: 28.53
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Ilham: English_Gentle-voiced_man
     Faris: English_Trustworth_Man
+    Ilham: English_Gentle-voiced_man
   line_count: 9
+  script_content_hash: 7418b3acd25eb1d8955f00e6f3d16ebfb460b7320cde76b7275319cfdcaec48e
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/listening-English_expressive_narrator-20260629T013312Z.wav
+  trace_id: 0690fe44ada43ad545d502fd75f21830,0690fe46612e41bceada284ef5085c7e,0690fe498b549273f4c60f9441e044f7,0690fe4bcceb985e201350ed3a37ec0a,0690fe4d7df267fd2f76d90a46b85b41,0690fe4f62a2fd1bd83692d382537b38,0690fe518d43c80e1211378ad78a88e0,0690fe5318409266165bf9077acea6b6,0690fe558bf55807c859d28c064f2c37
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T01:33:12.391821+00:00'
 - key: phrases
   type: phrase_pronunciation
   source_file: useful_phrases.yaml

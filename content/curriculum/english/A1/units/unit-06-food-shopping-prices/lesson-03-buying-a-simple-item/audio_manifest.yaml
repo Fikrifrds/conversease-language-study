@@ -1,4 +1,4 @@
-status: needs_regeneration
+status: generated
 provider: minimax
 model: speech-2.8-hd
 default_voice_id: multi_speaker
@@ -6,19 +6,20 @@ assets:
 - key: dialogue_main
   type: dialogue
   script_file: listening_script.md
-  audio_url: null
-  duration_seconds: null
+  audio_url: https://conversease-assets.s3.ap-southeast-1.amazonaws.com/conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-English_expressive_narrator-20260629T001924Z.wav
+  duration_seconds: 13.14
   provider: minimax
   model: speech-2.8-hd
   voice_id: multi_speaker
   speaker_voices:
-    Dimas: English_Diligent_Man
     Ben: English_Gentle-voiced_man
+    Dimas: English_Diligent_Man
   line_count: 7
+  script_content_hash: b7b6223be4fc5aa9364e507a0f400fe96bac619fe4c1d0ab8f63628febd1dca0
   audio_format: wav
-  storage_key: ''
-  trace_id: ''
-  generated_by: ''
-  generated_at: ''
+  storage_key: conversease/audio/english/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/listening-English_expressive_narrator-20260629T001924Z.wav
+  trace_id: 0690ecfe1a221d3cd5b018174867dc84,0690ed00a46393e2bd7c36889f21c892,0690ed03a982be85228aa31410f2ea5e,0690ed050f1ee9d5458fb773a7e8dcff,0690ed07c07de8560359dc9c1676027c,0690ed09bcd7536fb5b1bb2d0f25210c,0690ed0b19d9cd0e4c60287b004a7760
+  generated_by: Fikri Firdaus
+  generated_at: '2026-06-29T00:19:24.963722+00:00'
 lesson_key: lesson-03-buying-a-simple-item
 stale_reason: Dialogue speakers changed to same-gender; regenerate listening audio.
