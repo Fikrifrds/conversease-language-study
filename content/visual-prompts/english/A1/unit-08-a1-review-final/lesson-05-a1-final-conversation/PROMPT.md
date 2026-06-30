@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: A1 Final Conversation (A1, Unit 8, Lesson 5)
 Conversation goal: Learners can complete a full A1 conversation with greetings, identity, routine, places, ordering, help language, and polite closing.
 Situation: 
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: an open language assessment studio.
+- Required background cues: one orderly task table holding a blank form, clock hands without numerals, an abstract route map, and one simple shop or café item.
+- Context guardrail: Keep the review in one coherent assessment setting; do not create a collage of unrelated rooms or literal flashbacks.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -80,7 +85,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “My name is Faris.”
 Conversation moment: Faris says “Good morning. My name is Faris.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open language assessment studio.
+- Required background cues: one orderly task table holding a blank form, clock hands without numerals, an abstract route map, and one simple shop or café item.
+- Context guardrail: Keep the review in one coherent assessment setting; do not create a collage of unrelated rooms or literal flashbacks.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -113,7 +122,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'm from Indonesia. How about you?”
 Conversation moment: Faris says “I'm from Indonesia. How about you?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open language assessment studio.
+- Required background cues: one orderly task table holding a blank form, clock hands without numerals, an abstract route map, and one simple shop or café item.
+- Context guardrail: Keep the review in one coherent assessment setting; do not create a collage of unrelated rooms or literal flashbacks.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -146,7 +159,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I study English at seven.”
 Conversation moment: Faris says “I study English at seven. By the way, where is the cafe?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open language assessment studio.
+- Required background cues: one orderly task table holding a blank form, clock hands without numerals, an abstract route map, and one simple shop or café item.
+- Context guardrail: Keep the review in one coherent assessment setting; do not create a collage of unrelated rooms or literal flashbacks.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

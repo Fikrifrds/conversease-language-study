@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Giving Phone Numbers (A1, Unit 2, Lesson 2)
 Conversation goal: Give a phone number clearly and confirm it when someone reads it back.
 Situation: Kamu mengisi formulir kelas online. Petugas meminta nomor teleponmu. Sebutkan angka dengan pelan, lalu konfirmasi saat petugas membacanya kembali.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What is your phone number?”
 Conversation moment: Officer says “What is your phone number?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “It's zero eight one two.”
 Conversation moment: Dimas says “It's zero eight one two, three four five six, seven eight nine zero.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Let me check.”
 Conversation moment: Officer says “Let me check. Zero eight one two, three four five six, seven eight nine zero?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Transport Mission (A2, Unit 3, Lesson 5)
 Conversation goal: Buy a ticket, confirm time and platform, then tell a driver your destination.
 Situation: Ini misi gabungan Unit 3. Kamu beli tiket, tanya jadwal dan platform, lalu lanjut naik taksi/ojek ke hotel.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a single public intermodal terminal forecourt linking a station entrance and taxi rank.
+- Required background cues: a ticket counter visible through the open station entrance, clock hands without numerals, platform arrows, luggage, and one stationary taxi.
+- Context guardrail: Combine the ticket, timing, platform, and taxi steps in one coherent transport hub; do not show the hotel or use a multi-panel montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -80,7 +85,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'd like one ticket to Bandung, please.”
 Conversation moment: Dimas says “Hi. I'd like one ticket to Bandung, please.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a single public intermodal terminal forecourt linking a station entrance and taxi rank.
+- Required background cues: a ticket counter visible through the open station entrance, clock hands without numerals, platform arrows, luggage, and one stationary taxi.
+- Context guardrail: Combine the ticket, timing, platform, and taxi steps in one coherent transport hub; do not show the hotel or use a multi-panel montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -113,7 +122,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “It leaves at 6:30 pm.”
 Conversation moment: Staff says “Okay. It leaves at 6:30 pm from platform 2.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a single public intermodal terminal forecourt linking a station entrance and taxi rank.
+- Required background cues: a ticket counter visible through the open station entrance, clock hands without numerals, platform arrows, luggage, and one stationary taxi.
+- Context guardrail: Combine the ticket, timing, platform, and taxi steps in one coherent transport hub; do not show the hotel or use a multi-panel montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -146,7 +159,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “from platform 2”
 Conversation moment: Staff says “Okay. It leaves at 6:30 pm from platform 2.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a single public intermodal terminal forecourt linking a station entrance and taxi rank.
+- Required background cues: a ticket counter visible through the open station entrance, clock hands without numerals, platform arrows, luggage, and one stationary taxi.
+- Context guardrail: Combine the ticket, timing, platform, and taxi steps in one coherent transport hub; do not show the hotel or use a multi-panel montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

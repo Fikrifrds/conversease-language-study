@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Shopping Service Mission (A2, Unit 4, Lesson 5)
 Conversation goal: Ask for an item, ask about size and color, compare options, and request help politely.
 Situation: Ini misi gabungan Unit 4. Kamu cari barang, tanya warna/ukuran, bandingkan dua opsi, lalu minta staff menunjukkan lokasinya.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public department-store service area beside a comparison display.
+- Required background cues: a requested item, two color or size options, a two-product comparison table, and an abstract aisle guide.
+- Context guardrail: Keep finding, comparing, and requesting help in one store zone; do not create a collage or show a completed purchase at home.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'm looking for a charger.”
 Conversation moment: Ben says “Excuse me. I'm looking for a charger.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public department-store service area beside a comparison display.
+- Required background cues: a requested item, two color or size options, a two-product comparison table, and an abstract aisle guide.
+- Context guardrail: Keep finding, comparing, and requesting help in one store zone; do not create a collage or show a completed purchase at home.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you have it?”
 Conversation moment: Ben says “A USB-C charger. Do you have it?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public department-store service area beside a comparison display.
+- Required background cues: a requested item, two color or size options, a two-product comparison table, and an abstract aisle guide.
+- Context guardrail: Keep finding, comparing, and requesting help in one store zone; do not create a collage or show a completed purchase at home.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Which one is cheaper?”
 Conversation moment: Ben says “Which one is cheaper?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public department-store service area beside a comparison display.
+- Required background cues: a requested item, two color or size options, a two-product comparison table, and an abstract aisle guide.
+- Context guardrail: Keep finding, comparing, and requesting help in one store zone; do not create a collage or show a completed purchase at home.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

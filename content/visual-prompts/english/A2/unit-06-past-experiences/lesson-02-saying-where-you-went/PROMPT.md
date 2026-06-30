@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Saying Where You Went (A2, Unit 6, Lesson 2)
 Conversation goal: Say where you went and ask where someone went.
 Situation: Kamu ngobrol singkat setelah acara. Kamu bilang kamu pergi ke suatu tempat, lalu tanya lawan bicara.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: an open public park pavilion where friends can talk.
+- Required background cues: a bench, small table, travel keepsake, and an object connected to the story such as a plain food container or ticket shape without text.
+- Context guardrail: Show the present conversation about yesterday, not a literal flashback, restaurant recreation, or multiple-event montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Where did you go?”
 Conversation moment: Staff says “Oh nice. Where did you go after that?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open public park pavilion where friends can talk.
+- Required background cues: a bench, small table, travel keepsake, and an object connected to the story such as a plain food container or ticket shape without text.
+- Context guardrail: Show the present conversation about yesterday, not a literal flashback, restaurant recreation, or multiple-event montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I went to the museum.”
 Conversation moment: Raka says “Yes, I went to the museum.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open public park pavilion where friends can talk.
+- Required background cues: a bench, small table, travel keepsake, and an object connected to the story such as a plain food container or ticket shape without text.
+- Context guardrail: Show the present conversation about yesterday, not a literal flashback, restaurant recreation, or multiple-event montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Did you go anywhere interesting?”
 Conversation moment: Staff says “Hi! Did you go anywhere interesting yesterday?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open public park pavilion where friends can talk.
+- Required background cues: a bench, small table, travel keepsake, and an object connected to the story such as a plain food container or ticket shape without text.
+- Context guardrail: Show the present conversation about yesterday, not a literal flashback, restaurant recreation, or multiple-event montage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

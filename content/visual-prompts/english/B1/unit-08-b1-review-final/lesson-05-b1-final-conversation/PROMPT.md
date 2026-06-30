@@ -23,7 +23,7 @@
 Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -37,7 +37,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: B1 Final Conversation (B1, Unit 8, Lesson 5)
 Conversation goal: Hold a connected conversation that includes a story, a plan, a problem, a preference, and a next step.
 Situation: Final conversation: kamu ngobrol panjang (tetap sederhana) mencakup cerita, goal, problem, preferensi, dan kesepakatan next step.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: an open B1 conversation assessment workspace.
+- Required background cues: a story notebook, progress board, problem-and-solution cards, travel bag, and two choice cards arranged around one table.
+- Context guardrail: Keep the connected review in one present conversation; do not make a multi-location montage or literalize every topic mentioned.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -60,7 +65,7 @@ Composition: wide establishing shot, all foreground speakers clearly visible, us
 Create a square companion illustration at 1254×1254 pixels for card 1 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -75,7 +80,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “At first it was hard, but then it got easier.”
 Conversation moment: Faris says “At first it was hard, but then it got easier because I kept sessions short.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open B1 conversation assessment workspace.
+- Required background cues: a story notebook, progress board, problem-and-solution cards, travel bag, and two choice cards arranged around one table.
+- Context guardrail: Keep the connected review in one present conversation; do not make a multi-location montage or literalize every topic mentioned.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -90,7 +99,7 @@ Composition: medium or close conversational shot, clear focus on Faris, all need
 Create a square companion illustration at 1254×1254 pixels for card 2 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -105,7 +114,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Because I kept sessions short.”
 Conversation moment: Faris says “At first it was hard, but then it got easier because I kept sessions short.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open B1 conversation assessment workspace.
+- Required background cues: a story notebook, progress board, problem-and-solution cards, travel bag, and two choice cards arranged around one table.
+- Context guardrail: Keep the connected review in one present conversation; do not make a multi-location montage or literalize every topic mentioned.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -120,7 +133,7 @@ Composition: medium or close conversational shot, clear focus on Faris, all need
 Create a square companion illustration at 1254×1254 pixels for card 3 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Ilham, Faris. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -135,7 +148,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Sometimes I get distracted, so I leave my phone in another room.”
 Conversation moment: Faris says “Sometimes I get distracted, so I leave my phone in another room.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: an open language assessment room with desks and assessment materials visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: an open B1 conversation assessment workspace.
+- Required background cues: a story notebook, progress board, problem-and-solution cards, travel bag, and two choice cards arranged around one table.
+- Context guardrail: Keep the connected review in one present conversation; do not make a multi-location montage or literalize every topic mentioned.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

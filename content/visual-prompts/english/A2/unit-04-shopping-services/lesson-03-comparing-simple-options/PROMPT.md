@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Comparing Simple Options (A2, Unit 4, Lesson 3)
 Conversation goal: Compare two simple options and choose one.
 Situation: Kamu lihat dua produk di toko. Kamu ingin membandingkan harga atau kualitas sederhana, lalu pilih salah satu.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public shop comparison table.
+- Required background cues: exactly two neutral products side by side, blank feature cards, and an undecided shopping basket.
+- Context guardrail: Show comparison before choosing; do not add many products, price numbers, advertising, or a checkout transaction.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Which one is cheaper?”
 Conversation moment: Ben says “Excuse me. Which one is cheaper?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public shop comparison table.
+- Required background cues: exactly two neutral products side by side, blank feature cards, and an undecided shopping basket.
+- Context guardrail: Show comparison before choosing; do not add many products, price numbers, advertising, or a checkout transaction.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “This one is cheaper.”
 Conversation moment: Staff says “This one is cheaper. It's 80,000 rupiah.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public shop comparison table.
+- Required background cues: exactly two neutral products side by side, blank feature cards, and an undecided shopping basket.
+- Context guardrail: Show comparison before choosing; do not add many products, price numbers, advertising, or a checkout transaction.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “The other one”
 Conversation moment: Ben says “And the other one?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public shop comparison table.
+- Required background cues: exactly two neutral products side by side, blank feature cards, and an undecided shopping basket.
+- Context guardrail: Show comparison before choosing; do not add many products, price numbers, advertising, or a checkout transaction.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

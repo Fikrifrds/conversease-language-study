@@ -23,7 +23,7 @@
 Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Driver, Adi. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -37,7 +37,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Talking to a Driver (A2, Unit 3, Lesson 4)
 Conversation goal: Tell a driver where you want to go and ask about the travel time.
 Situation: Kamu naik taksi/ojek online. Kamu mau ke hotel atau stasiun. Kamu menyebutkan tujuan dan tanya berapa lama.
-Scene: a taxi pickup area with the vehicle and public surroundings visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a sheltered public taxi pickup area beside a stationary vehicle.
+- Required background cues: one parked car with an open visible passenger door, luggage, and a generic destination card without words.
+- Context guardrail: Show the conversation before departure while both speakers are safely outside or beside the stationary vehicle; do not depict driving or a private enclosed ride.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Driver: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -60,7 +65,7 @@ Composition: wide establishing shot, all foreground speakers clearly visible, us
 Create a square companion illustration at 1254×1254 pixels for card 1 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Driver, Adi. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -75,7 +80,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Where to?”
 Conversation moment: Driver says “Hi. Where to?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a taxi pickup area with the vehicle and public surroundings visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a sheltered public taxi pickup area beside a stationary vehicle.
+- Required background cues: one parked car with an open visible passenger door, luggage, and a generic destination card without words.
+- Context guardrail: Show the conversation before departure while both speakers are safely outside or beside the stationary vehicle; do not depict driving or a private enclosed ride.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Driver: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -90,7 +99,7 @@ Composition: medium or close conversational shot, clear focus on Driver, all nee
 Create a square companion illustration at 1254×1254 pixels for card 2 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Driver, Adi. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -105,7 +114,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Can you take me to the station?”
 Conversation moment: Adi says “Hi. Can you take me to the station, please?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a taxi pickup area with the vehicle and public surroundings visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a sheltered public taxi pickup area beside a stationary vehicle.
+- Required background cues: one parked car with an open visible passenger door, luggage, and a generic destination card without words.
+- Context guardrail: Show the conversation before departure while both speakers are safely outside or beside the stationary vehicle; do not depict driving or a private enclosed ride.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Driver: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -120,7 +133,7 @@ Composition: medium or close conversational shot, clear focus on Adi, all needed
 Create a square companion illustration at 1254×1254 pixels for card 3 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Driver, Adi. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Driver, Adi. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -135,7 +148,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “How long will it take?”
 Conversation moment: Adi says “Thanks. How long will it take?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a taxi pickup area with the vehicle and public surroundings visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a sheltered public taxi pickup area beside a stationary vehicle.
+- Required background cues: one parked car with an open visible passenger door, luggage, and a generic destination card without words.
+- Context guardrail: Show the conversation before departure while both speakers are safely outside or beside the stationary vehicle; do not depict driving or a private enclosed ride.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Driver: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

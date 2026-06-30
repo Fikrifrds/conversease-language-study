@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Asking About Departure Time (A2, Unit 3, Lesson 2)
 Conversation goal: Ask about a departure time and confirm the platform.
 Situation: Kamu sudah punya tiket. Kamu ingin tahu kereta berangkat jam berapa, dari platform mana, dan berapa lama perjalanan.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public station information point inside the concourse.
+- Required background cues: a clock face with hands but no numerals, abstract platform blocks, a blank ticket, and luggage.
+- Context guardrail: Show checking time and platform before boarding; do not depict the moving train, destination, or arrival.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Excuse me.”
 Conversation moment: Dimas says “Excuse me. What time does the train leave?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station information point inside the concourse.
+- Required background cues: a clock face with hands but no numerals, abstract platform blocks, a blank ticket, and luggage.
+- Context guardrail: Show checking time and platform before boarding; do not depict the moving train, destination, or arrival.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What time does the train leave?”
 Conversation moment: Dimas says “Excuse me. What time does the train leave?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station information point inside the concourse.
+- Required background cues: a clock face with hands but no numerals, abstract platform blocks, a blank ticket, and luggage.
+- Context guardrail: Show checking time and platform before boarding; do not depict the moving train, destination, or arrival.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “It leaves at 6:30.”
 Conversation moment: Staff says “It leaves at 6:30 pm.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station information point inside the concourse.
+- Required background cues: a clock face with hands but no numerals, abstract platform blocks, a blank ticket, and luggage.
+- Context guardrail: Show checking time and platform before boarding; do not depict the moving train, destination, or arrival.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

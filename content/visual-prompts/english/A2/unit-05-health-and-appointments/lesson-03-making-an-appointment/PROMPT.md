@@ -23,14 +23,14 @@
 Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- PEOPLE COUNT — show exactly 1 adult man and 1 adult woman as the named foreground speakers: Receptionist, Raka. Include exactly two additional modestly dressed adult men as small, distant background figures to make the setting clearly public and prevent mixed-gender seclusion. No additional women, children, silhouettes, reflections, portraits, people on screens, or other human figures anywhere.
+- REMOTE MIXED-GENDER SCENE. PEOPLE COUNT — show exactly 1 adult man and 1 adult woman total across the split image: Receptionist, Raka. They are physically separate and are the only human figures allowed anywhere. No additional people, children, staff, customers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Receptionist, Raka. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
 - Every woman wears a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
 - Every man wears modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes.
 - Everyone maintains respectful distance; no touching or handshakes.
-- No private mixed-gender seclusion. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+- The mixed-gender speakers are never together physically. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 - No temple, shrine, church, statue, idol, religious building, or religious symbol.
 - No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
 - Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Making an Appointment (A2, Unit 5, Lesson 3)
 Conversation goal: Ask for an appointment and choose a day and time.
 Situation: Kamu telepon klinik untuk buat janji. Kamu pilih hari dan jam.
-Scene: a bright public clinic reception or consultation area. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+
+Scene and background:
+- Actual conversation location: a clear split scene with the caller in an open home-study corner and the receptionist at a public clinic counter.
+- Required background cues: each speaker holds a phone; the clinic side has a blank appointment grid and clock hands without numerals.
+- Context guardrail: They are in separate locations connected by phone; do not place them together, show a private bedroom, or depict medical treatment.
+- Speaker arrangement: Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -62,14 +67,14 @@ Composition: wide establishing shot, all foreground speakers clearly visible, us
 Create a square companion illustration at 1254×1254 pixels for card 1 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- PEOPLE COUNT — show exactly 1 adult man and 1 adult woman as the named foreground speakers: Receptionist, Raka. Include exactly two additional modestly dressed adult men as small, distant background figures to make the setting clearly public and prevent mixed-gender seclusion. No additional women, children, silhouettes, reflections, portraits, people on screens, or other human figures anywhere.
+- REMOTE MIXED-GENDER SCENE. PEOPLE COUNT — show exactly 1 adult man and 1 adult woman total across the split image: Receptionist, Raka. They are physically separate and are the only human figures allowed anywhere. No additional people, children, staff, customers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Receptionist, Raka. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
 - Every woman wears a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
 - Every man wears modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes.
 - Everyone maintains respectful distance; no touching or handshakes.
-- No private mixed-gender seclusion. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+- The mixed-gender speakers are never together physically. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 - No temple, shrine, church, statue, idol, religious building, or religious symbol.
 - No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
 - Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'd like to make an appointment.”
 Conversation moment: Raka says “Hi. I'd like to make an appointment.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+Scene and background:
+- Actual conversation location: a clear split scene with the caller in an open home-study corner and the receptionist at a public clinic counter.
+- Required background cues: each speaker holds a phone; the clinic side has a blank appointment grid and clock hands without numerals.
+- Context guardrail: They are in separate locations connected by phone; do not place them together, show a private bedroom, or depict medical treatment.
+- Speaker arrangement: Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -94,14 +103,14 @@ Composition: medium or close conversational shot, clear focus on Raka, all neede
 Create a square companion illustration at 1254×1254 pixels for card 2 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- PEOPLE COUNT — show exactly 1 adult man and 1 adult woman as the named foreground speakers: Receptionist, Raka. Include exactly two additional modestly dressed adult men as small, distant background figures to make the setting clearly public and prevent mixed-gender seclusion. No additional women, children, silhouettes, reflections, portraits, people on screens, or other human figures anywhere.
+- REMOTE MIXED-GENDER SCENE. PEOPLE COUNT — show exactly 1 adult man and 1 adult woman total across the split image: Receptionist, Raka. They are physically separate and are the only human figures allowed anywhere. No additional people, children, staff, customers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Receptionist, Raka. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
 - Every woman wears a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
 - Every man wears modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes.
 - Everyone maintains respectful distance; no touching or handshakes.
-- No private mixed-gender seclusion. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+- The mixed-gender speakers are never together physically. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 - No temple, shrine, church, statue, idol, religious building, or religious symbol.
 - No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
 - Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What day works for you?”
 Conversation moment: Receptionist says “Sure. What day works for you?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+Scene and background:
+- Actual conversation location: a clear split scene with the caller in an open home-study corner and the receptionist at a public clinic counter.
+- Required background cues: each speaker holds a phone; the clinic side has a blank appointment grid and clock hands without numerals.
+- Context guardrail: They are in separate locations connected by phone; do not place them together, show a private bedroom, or depict medical treatment.
+- Speaker arrangement: Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -126,14 +139,14 @@ Composition: medium or close conversational shot, clear focus on Receptionist, a
 Create a square companion illustration at 1254×1254 pixels for card 3 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- PEOPLE COUNT — show exactly 1 adult man and 1 adult woman as the named foreground speakers: Receptionist, Raka. Include exactly two additional modestly dressed adult men as small, distant background figures to make the setting clearly public and prevent mixed-gender seclusion. No additional women, children, silhouettes, reflections, portraits, people on screens, or other human figures anywhere.
+- REMOTE MIXED-GENDER SCENE. PEOPLE COUNT — show exactly 1 adult man and 1 adult woman total across the split image: Receptionist, Raka. They are physically separate and are the only human figures allowed anywhere. No additional people, children, staff, customers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Receptionist, Raka. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
 - Every woman wears a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
 - Every man wears modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes.
 - Everyone maintains respectful distance; no touching or handshakes.
-- No private mixed-gender seclusion. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+- The mixed-gender speakers are never together physically. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 - No temple, shrine, church, statue, idol, religious building, or religious symbol.
 - No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
 - Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Is tomorrow afternoon okay?”
 Conversation moment: Raka says “Is tomorrow afternoon okay?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
+Scene and background:
+- Actual conversation location: a clear split scene with the caller in an open home-study corner and the receptionist at a public clinic counter.
+- Required background cues: each speaker holds a phone; the clinic side has a blank appointment grid and clock hands without numerals.
+- Context guardrail: They are in separate locations connected by phone; do not place them together, show a private bedroom, or depict medical treatment.
+- Speaker arrangement: Use a clear split-scene composition: the speakers are in separate appropriate locations connected by phone, not physically together.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

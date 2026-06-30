@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Contact Details Mission (A1, Unit 2, Lesson 5)
 Conversation goal: Share your name, spelling, phone number, and email address in one simple conversation.
 Situation: Ini adalah misi akhir unit. Kamu memberikan detail kontak lengkap untuk pendaftaran kelas: nama, ejaan nama, nomor telepon, dan alamat email.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I need your contact details.”
 Conversation moment: Officer says “Hi. I need your contact details.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “How do you spell your name?”
 Conversation moment: Officer says “How do you spell your name?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “And your email address?”
 Conversation moment: Officer says “And your email address?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

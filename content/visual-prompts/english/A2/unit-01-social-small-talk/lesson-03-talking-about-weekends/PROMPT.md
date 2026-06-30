@@ -23,7 +23,7 @@
 Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Dimas, Ben. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -37,7 +37,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Talking About Weekends (A2, Unit 1, Lesson 3)
 Conversation goal: Ask about weekend plans and answer with simple details.
 Situation: Kamu ngobrol sebentar dengan teman. Kamu ingin tanya rencana akhir pekan, dan kamu juga bisa menjawab dengan rencana sederhana.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a bright open office break area beside a shared corridor.
+- Required background cues: two mugs, a small side table, a blank wall planner, and personal work bags.
+- Context guardrail: This is brief workplace small talk, not a formal meeting, restaurant meal, party, or private home visit.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -60,7 +65,7 @@ Composition: wide establishing shot, all foreground speakers clearly visible, us
 Create a square companion illustration at 1254×1254 pixels for card 1 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Dimas, Ben. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -75,7 +80,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Any plans for the weekend?”
 Conversation moment: Dimas says “Hi Ben. Any plans for the weekend?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright open office break area beside a shared corridor.
+- Required background cues: two mugs, a small side table, a blank wall planner, and personal work bags.
+- Context guardrail: This is brief workplace small talk, not a formal meeting, restaurant meal, party, or private home visit.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -90,7 +99,7 @@ Composition: medium or close conversational shot, clear focus on Dimas, all need
 Create a square companion illustration at 1254×1254 pixels for card 2 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Dimas, Ben. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -105,7 +114,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'm going to visit my parents.”
 Conversation moment: Ben says “Yes. I'm going to visit my parents.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright open office break area beside a shared corridor.
+- Required background cues: two mugs, a small side table, a blank wall planner, and personal work bags.
+- Context guardrail: This is brief workplace small talk, not a formal meeting, restaurant meal, party, or private home visit.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -120,7 +133,7 @@ Composition: medium or close conversational shot, clear focus on Ben, all needed
 Create a square companion illustration at 1254×1254 pixels for card 3 of the same English lesson.
 
 NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
-- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, staff, customers, travelers, background people, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
+- MEN-ONLY SCENE. PEOPLE COUNT — show exactly 2 adult men total in the entire image: Dimas, Ben. They are the only human figures allowed anywhere. No women, girls, children, or additional people such as unnamed staff, customers, travelers, background figures, silhouettes, reflections, portraits, people on screens, or partial human figures. Keep every background seat and area empty.
 - FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
 - The named cast must match the dialogue speakers: Dimas, Ben. Do not change their genders, duplicate them, or replace them with generic people.
 - Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
@@ -135,7 +148,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Where do they live?”
 Conversation moment: Dimas says “Nice. Where do they live?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public travel lounge or café with topic-relevant travel props visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright open office break area beside a shared corridor.
+- Required background cues: two mugs, a small side table, a blank wall planner, and personal work bags.
+- Context guardrail: This is brief workplace small talk, not a formal meeting, restaurant meal, party, or private home visit.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

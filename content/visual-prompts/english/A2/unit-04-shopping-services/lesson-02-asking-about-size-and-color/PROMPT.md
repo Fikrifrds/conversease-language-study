@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Asking About Size and Color (A2, Unit 4, Lesson 2)
 Conversation goal: Ask about size and color and choose one option.
 Situation: Kamu beli baju di toko. Kamu tanya warna dan ukuran yang tersedia, lalu pilih salah satu.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public clothing-store display area.
+- Required background cues: two modest folded garments in distinct muted colors, blank size markers, a mirror showing no reflection, and a service counter.
+- Context guardrail: Show choosing size and color; do not depict a fitting room, exposed body, fashion runway, or branded clothing.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you have this in black?”
 Conversation moment: Dimas says “Excuse me. Do you have this T-shirt in black?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clothing-store display area.
+- Required background cues: two modest folded garments in distinct muted colors, blank size markers, a mirror showing no reflection, and a service counter.
+- Context guardrail: Show choosing size and color; do not depict a fitting room, exposed body, fashion runway, or branded clothing.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “We have blue and white.”
 Conversation moment: Staff says “Sorry, we don't have black. We have blue and white.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clothing-store display area.
+- Required background cues: two modest folded garments in distinct muted colors, blank size markers, a mirror showing no reflection, and a service counter.
+- Context guardrail: Show choosing size and color; do not depict a fitting room, exposed body, fashion runway, or branded clothing.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you have it in size M?”
 Conversation moment: Dimas says “Okay. Do you have it in size M?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clothing-store display area.
+- Required background cues: two modest folded garments in distinct muted colors, blank size markers, a mirror showing no reflection, and a service counter.
+- Context guardrail: Show choosing size and color; do not depict a fitting room, exposed body, fashion runway, or branded clothing.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Dimas: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

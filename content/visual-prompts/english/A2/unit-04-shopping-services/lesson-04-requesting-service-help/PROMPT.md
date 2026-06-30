@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Requesting Service Help (A2, Unit 4, Lesson 4)
 Conversation goal: Ask for simple service help and respond politely.
 Situation: Kamu butuh bantuan di toko. Kamu minta staff menunjukkan lokasi barang, atau membantu cari ukuran.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public store service point opening directly onto the product aisles.
+- Required background cues: an abstract aisle map, a requested item sample, blank size markers, and a clear path toward the relevant shelf.
+- Context guardrail: Show staff guidance inside the store; do not place the speakers at checkout, outside the shop, or in a private fitting room.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Adi: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Could you help me?”
 Conversation moment: Adi says “Excuse me. Could you help me?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public store service point opening directly onto the product aisles.
+- Required background cues: an abstract aisle map, a requested item sample, blank size markers, and a clear path toward the relevant shelf.
+- Context guardrail: Show staff guidance inside the store; do not place the speakers at checkout, outside the shop, or in a private fitting room.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Adi: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What do you need?”
 Conversation moment: Staff says “Sure. What do you need?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public store service point opening directly onto the product aisles.
+- Required background cues: an abstract aisle map, a requested item sample, blank size markers, and a clear path toward the relevant shelf.
+- Context guardrail: Show staff guidance inside the store; do not place the speakers at checkout, outside the shop, or in a private fitting room.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Adi: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Can you show me where the batteries are?”
 Conversation moment: Adi says “Can you show me where the batteries are?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public store service point opening directly onto the product aisles.
+- Required background cues: an abstract aisle map, a requested item sample, blank size markers, and a clear path toward the relevant shelf.
+- Context guardrail: Show staff guidance inside the store; do not place the speakers at checkout, outside the shop, or in a private fitting room.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Adi: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Asking for an Item (A2, Unit 4, Lesson 1)
 Conversation goal: Ask for an item in a shop and check if it is available.
 Situation: Kamu ada di toko. Kamu mencari satu barang, lalu tanya apakah barang itu tersedia.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public retail aisle beside a service counter.
+- Required background cues: an organized shelf with one obvious empty product space, several neutral products, and a blank inventory screen.
+- Context guardrail: Show asking whether an item is available; do not depict checkout, home delivery, or unrelated clothing fitting.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'm looking for a phone charger.”
 Conversation moment: Raka says “Excuse me. I'm looking for a phone charger.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public retail aisle beside a service counter.
+- Required background cues: an organized shelf with one obvious empty product space, several neutral products, and a blank inventory screen.
+- Context guardrail: Show asking whether an item is available; do not depict checkout, home delivery, or unrelated clothing fitting.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What kind?”
 Conversation moment: Staff says “Sure. What kind?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public retail aisle beside a service counter.
+- Required background cues: an organized shelf with one obvious empty product space, several neutral products, and a blank inventory screen.
+- Context guardrail: Show asking whether an item is available; do not depict checkout, home delivery, or unrelated clothing fitting.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you need a cable too?”
 Conversation moment: Staff says “Okay. Do you need a cable too?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public retail aisle beside a service counter.
+- Required background cues: an organized shelf with one obvious empty product space, several neutral products, and a blank inventory screen.
+- Context guardrail: Show asking whether an item is available; do not depict checkout, home delivery, or unrelated clothing fitting.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

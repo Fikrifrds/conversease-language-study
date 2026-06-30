@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Describing Simple Symptoms (A2, Unit 5, Lesson 2)
 Conversation goal: Describe simple symptoms and say how long you have had them.
 Situation: Kamu di klinik. Kamu jelaskan gejala dan bilang sudah berapa lama.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a bright public clinic consultation desk with an open corridor visible.
+- Required background cues: a blank symptom card, clock hands without numerals, tissues, and simple non-graphic medical objects.
+- Context guardrail: Show a calm verbal symptom description; no examination, exposed body, injury, medicine branding, or emergency treatment.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Nurse: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What seems to be the problem?”
 Conversation moment: Nurse says “What seems to be the problem?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright public clinic consultation desk with an open corridor visible.
+- Required background cues: a blank symptom card, clock hands without numerals, tissues, and simple non-graphic medical objects.
+- Context guardrail: Show a calm verbal symptom description; no examination, exposed body, injury, medicine branding, or emergency treatment.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Nurse: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I've had a sore throat since yesterday.”
 Conversation moment: Raka says “I've had a sore throat since yesterday.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright public clinic consultation desk with an open corridor visible.
+- Required background cues: a blank symptom card, clock hands without numerals, tissues, and simple non-graphic medical objects.
+- Context guardrail: Show a calm verbal symptom description; no examination, exposed body, injury, medicine branding, or emergency treatment.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Nurse: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you have a fever?”
 Conversation moment: Nurse says “Do you have a fever?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a bright public clinic consultation desk with an open corridor visible.
+- Required background cues: a blank symptom card, clock hands without numerals, tissues, and simple non-graphic medical objects.
+- Context guardrail: Show a calm verbal symptom description; no examination, exposed body, injury, medicine branding, or emergency treatment.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Nurse: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

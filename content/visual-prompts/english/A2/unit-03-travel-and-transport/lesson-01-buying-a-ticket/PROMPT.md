@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Buying a Ticket (A2, Unit 3, Lesson 1)
 Conversation goal: Buy a simple ticket and confirm the destination.
 Situation: Kamu ada di loket stasiun. Kamu ingin beli tiket ke satu kota, lalu memastikan jenis tiket dan tujuan.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public train-station ticket counter before the journey.
+- Required background cues: a blank ticket card, payment tray, luggage, and a rail symbol made only of abstract shapes.
+- Context guardrail: Show buying the ticket; do not place the speakers on the train, platform, destination city, or hotel.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I'd like one ticket to Bandung, please.”
 Conversation moment: Dimas says “Hi. I'd like one ticket to Bandung, please.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public train-station ticket counter before the journey.
+- Required background cues: a blank ticket card, payment tray, luggage, and a rail symbol made only of abstract shapes.
+- Context guardrail: Show buying the ticket; do not place the speakers on the train, platform, destination city, or hotel.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “One-way or round-trip?”
 Conversation moment: Staff says “One-way or round-trip?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public train-station ticket counter before the journey.
+- Required background cues: a blank ticket card, payment tray, luggage, and a rail symbol made only of abstract shapes.
+- Context guardrail: Show buying the ticket; do not place the speakers on the train, platform, destination city, or hotel.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “One-way, please.”
 Conversation moment: Dimas says “One-way, please.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public train-station ticket counter before the journey.
+- Required background cues: a blank ticket card, payment tray, luggage, and a rail symbol made only of abstract shapes.
+- Context guardrail: Show buying the ticket; do not place the speakers on the train, platform, destination city, or hotel.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Staff: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

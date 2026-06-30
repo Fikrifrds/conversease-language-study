@@ -13,7 +13,8 @@ Workflow:
 
 1. Use `INDEX.csv` to find a lesson.
 2. Open its `PROMPT.md`.
-3. Generate only the hero or cards you want to replace.
-4. Replace and wire the selected assets manually.
+3. Check the `Scene and background` block: it states the actual conversation location, required visual cues, and context guardrail.
+4. Generate only the hero or cards you want to replace.
+5. Replace and wire the selected assets manually.
 
 Existing lesson images and visual mappings are intentionally untouched.

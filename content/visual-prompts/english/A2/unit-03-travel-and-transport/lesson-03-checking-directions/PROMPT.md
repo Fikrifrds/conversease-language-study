@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Checking Directions (A2, Unit 3, Lesson 3)
 Conversation goal: Check directions and confirm you are going the right way.
 Situation: Kamu sedang di stasiun atau terminal. Kamu mau ke gate/platform tertentu, tapi kamu ragu. Kamu minta arahan dan konfirmasi.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a station-concourse junction before the gate or platform.
+- Required background cues: a line-only floor map, directional arrows, branching corridors, and abstract platform shapes without labels.
+- Context guardrail: The gate or platform is still ahead; do not place the speakers at the destination, inside a vehicle, or beside readable signage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Where is platform 2?”
 Conversation moment: Ben says “Excuse me. Where is platform 2?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a station-concourse junction before the gate or platform.
+- Required background cues: a line-only floor map, directional arrows, branching corridors, and abstract platform shapes without labels.
+- Context guardrail: The gate or platform is still ahead; do not place the speakers at the destination, inside a vehicle, or beside readable signage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Go straight.”
 Conversation moment: Staff says “Go straight and turn left at the stairs.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a station-concourse junction before the gate or platform.
+- Required background cues: a line-only floor map, directional arrows, branching corridors, and abstract platform shapes without labels.
+- Context guardrail: The gate or platform is still ahead; do not place the speakers at the destination, inside a vehicle, or beside readable signage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Turn left at the stairs.”
 Conversation moment: Staff says “Go straight and turn left at the stairs.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a clear public train station concourse. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a station-concourse junction before the gate or platform.
+- Required background cues: a line-only floor map, directional arrows, branching corridors, and abstract platform shapes without labels.
+- Context guardrail: The gate or platform is still ahead; do not place the speakers at the destination, inside a vehicle, or beside readable signage.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Ben: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.

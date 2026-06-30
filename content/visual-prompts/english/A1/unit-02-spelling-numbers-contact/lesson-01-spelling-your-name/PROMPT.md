@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Spelling Your Name (A1, Unit 2, Lesson 1)
 Conversation goal: Spell your name clearly when someone needs to write it down.
 Situation: Kamu mendaftar di kelas online dan petugas perlu menulis namamu. Sebutkan namamu, lalu eja huruf demi huruf dengan jelas saat diminta.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “How do you spell it?”
 Conversation moment: Officer says “How do you spell it?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Let me spell it for you.”
 Conversation moment: Dimas says “My name is Dimas.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “It's spelled D-I-M-A-S.”
 Conversation moment: Dimas says “It's spelled D-I-M-A-S.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright open English classroom shortly before or after class. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public language-center registration counter.
+- Required background cues: a blank enrollment form, clipboard, pen, keyboard, and phone placed as registration tools, all without readable characters.
+- Context guardrail: This is course registration, not a bank, post office, immigration desk, or casual phone call.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Officer: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

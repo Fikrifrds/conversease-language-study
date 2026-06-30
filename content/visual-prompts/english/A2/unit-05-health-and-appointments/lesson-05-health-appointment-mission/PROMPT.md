@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Health Appointment Mission (A2, Unit 5, Lesson 5)
 Conversation goal: Check in for an appointment, confirm details, and describe a symptom briefly.
 Situation: Kamu datang ke klinik untuk janji, konfirmasi nama, lalu jelaskan gejala singkat.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public clinic check-in counter opening onto the waiting area.
+- Required background cues: a blank appointment card, check-in clipboard, tissues, and a non-graphic symptom card.
+- Context guardrail: Keep check-in and the short symptom summary at reception; do not move into an examination room or show medical procedures.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I have an appointment at 3:30.”
 Conversation moment: Raka says “Hi. I have an appointment at 3:30.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clinic check-in counter opening onto the waiting area.
+- Required background cues: a blank appointment card, check-in clipboard, tissues, and a non-graphic symptom card.
+- Context guardrail: Keep check-in and the short symptom summary at reception; do not move into an examination room or show medical procedures.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What seems to be the problem?”
 Conversation moment: Receptionist says “Thank you. What seems to be the problem?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clinic check-in counter opening onto the waiting area.
+- Required background cues: a blank appointment card, check-in clipboard, tissues, and a non-graphic symptom card.
+- Context guardrail: Keep check-in and the short symptom summary at reception; do not move into an examination room or show medical procedures.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “I've had a cough for two days.”
 Conversation moment: Raka says “I've had a cough for two days, and I feel tired.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a bright public clinic reception or consultation area. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public clinic check-in counter opening onto the waiting area.
+- Required background cues: a blank appointment card, check-in clipboard, tissues, and a non-graphic symptom card.
+- Context guardrail: Keep check-in and the short symptom summary at reception; do not move into an examination room or show medical procedures.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Receptionist: adult woman wearing an olive full-length khimar covering the chest, a loose opaque abaya, socks, and closed shoes.

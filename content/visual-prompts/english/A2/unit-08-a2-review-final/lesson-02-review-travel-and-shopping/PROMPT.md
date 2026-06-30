@@ -39,7 +39,12 @@ NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 Lesson: Review Travel and Shopping (A2, Unit 8, Lesson 2)
 Conversation goal: Review asking travel questions and shopping requests (tickets, directions, items, sizes).
 Situation: Review: kamu di stasiun lalu mampir toko. Kamu tanya arah/jadwal, lalu tanya barang dan ukuran.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+
+Scene and background:
+- Actual conversation location: a public station retail kiosk beside the concourse.
+- Required background cues: a line-only station map, clock hands without numerals, luggage, one shop item, and blank size options.
+- Context guardrail: Keep the travel question and shopping request in one plausible station kiosk; do not create separate station and store panels.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -79,7 +84,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Where is platform 2?”
 Conversation moment: Raka says “Excuse me. Where is platform 2?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station retail kiosk beside the concourse.
+- Required background cues: a line-only station map, clock hands without numerals, luggage, one shop item, and blank size options.
+- Context guardrail: Keep the travel question and shopping request in one plausible station kiosk; do not create separate station and store panels.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -111,7 +120,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “What time is the next train?”
 Conversation moment: Raka says “Thanks. What time is the next train?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station retail kiosk beside the concourse.
+- Required background cues: a line-only station map, clock hands without numerals, luggage, one shop item, and blank size options.
+- Context guardrail: Keep the travel question and shopping request in one plausible station kiosk; do not create separate station and store panels.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
@@ -143,7 +156,11 @@ Use the completed hero image as the visual reference. Keep exactly the same char
 
 Card focus: “Do you have a phone charger?”
 Conversation moment: Raka says “Great. Also, do you have a phone charger?”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
-Scene: a tidy public retail shop with relevant products visible. The speakers are physically present in the same appropriate scene.
+Scene and background:
+- Actual conversation location: a public station retail kiosk beside the concourse.
+- Required background cues: a line-only station map, clock hands without numerals, luggage, one shop item, and blank size options.
+- Context guardrail: Keep the travel question and shopping request in one plausible station kiosk; do not create separate station and store panels.
+- Speaker arrangement: The speakers are physically present in the same appropriate scene.
 
 Cast and continuity:
 - Raka: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
