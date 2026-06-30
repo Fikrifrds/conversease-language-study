@@ -64,6 +64,11 @@ class Settings(BaseSettings):
     together_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_partner_chat_model: str = "meta-llama/Llama-3.3-70B-Instruct-Turbo"
     together_timeout_seconds: int = 30
+    together_image_model: str = "openai/gpt-image-2"
+    together_image_timeout_seconds: int = 240
+    lesson_visual_overrides_dir: str = str(
+        API_ROOT.parents[1] / "apps" / "web" / "public" / "images" / "lesson-visual-overrides"
+    )
     openai_api_key: str = ""
     openai_api_base_url: str = "https://api.openai.com"
     openai_chat_model: str = "gpt-4.1-mini"

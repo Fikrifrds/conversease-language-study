@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import { AdminRegenerableLessonImage } from "@/components/admin-regenerable-lesson-image";
 import { AppShell } from "@/components/app-shell";
 import { LessonGatedBody } from "@/components/lesson-gated-body";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
@@ -81,14 +82,27 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
             {lesson.visuals ? (
               <section className="mt-6">
                 <figure className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
-                  <Image
-                    src={versionedAssetSrc(lesson.visuals.hero.src)}
-                    alt={lesson.visuals.hero.alt}
-                    width={lesson.visuals.hero.width}
-                    height={lesson.visuals.hero.height}
-                    className="h-auto w-full"
-                    priority
-                  />
+                  {isArabic ? (
+                    <Image
+                      src={versionedAssetSrc(lesson.visuals.hero.src)}
+                      alt={lesson.visuals.hero.alt}
+                      width={lesson.visuals.hero.width}
+                      height={lesson.visuals.hero.height}
+                      className="h-auto w-full"
+                      priority
+                    />
+                  ) : (
+                    <AdminRegenerableLessonImage
+                      lessonSlug={lesson.slug}
+                      slot="hero"
+                      defaultSrc={lesson.visuals.hero.src}
+                      alt={lesson.visuals.hero.alt}
+                      width={lesson.visuals.hero.width}
+                      height={lesson.visuals.hero.height}
+                      className="h-auto w-full"
+                      priority
+                    />
+                  )}
                   {lesson.visuals.hero.caption ? (
                     <figcaption className="px-4 py-3 text-sm leading-6 text-ink/60">
                       {lesson.visuals.hero.caption}

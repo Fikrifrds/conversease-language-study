@@ -7,11 +7,13 @@ import { BookOpen, Headphones, Loader2, Lock, Mic, RotateCcw, Send, Sparkles } f
 import { productRoutes } from "@conversease/shared";
 import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
+import { AdminRegenerableLessonImage } from "@/components/admin-regenerable-lesson-image";
 import { LessonAudioPlayer } from "@/components/lesson-audio-player";
 import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-practice";
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
 import { versionedAssetSrc } from "@/lib/assets";
+import type { LessonVisualSlot } from "@/lib/admin-lesson-visuals-api";
 import { ApiRequestError, getLessonFull, type LessonContent } from "@/lib/learning-api";
 
 const ARABIC_LESSON_COPY = {
@@ -194,15 +196,27 @@ function UnlockedBody({ lesson }: { lesson: LessonContent }) {
         </div>
         {lesson.visuals?.cards?.length ? (
           <div className="mt-4 grid gap-3 md:grid-cols-3">
-            {lesson.visuals.cards.map((visual) => (
+            {lesson.visuals.cards.map((visual, index) => (
               <figure key={visual.src} className="overflow-hidden rounded-lg border border-ink/10 bg-paper">
-                <Image
-                  src={versionedAssetSrc(visual.src)}
-                  alt={visual.alt}
-                  width={visual.width}
-                  height={visual.height}
-                  className="aspect-square w-full object-cover"
-                />
+                {isArabic ? (
+                  <Image
+                    src={versionedAssetSrc(visual.src)}
+                    alt={visual.alt}
+                    width={visual.width}
+                    height={visual.height}
+                    className="aspect-square w-full object-cover"
+                  />
+                ) : (
+                  <AdminRegenerableLessonImage
+                    lessonSlug={lesson.slug}
+                    slot={`card-${index + 1}` as LessonVisualSlot}
+                    defaultSrc={visual.src}
+                    alt={visual.alt}
+                    width={visual.width}
+                    height={visual.height}
+                    className="aspect-square w-full object-cover"
+                  />
+                )}
                 <figcaption
                   dir={isArabic ? "rtl" : "auto"}
                   className={`break-words px-3 py-3 text-sm font-semibold leading-6 text-ink ${isArabic ? "text-right text-base leading-8" : ""}`}

@@ -28,3 +28,7 @@ apps/api/*.db
 test-results/
 playwright-report/
 .playwright/
+
+# Runtime-generated lesson image overrides
+apps/web/public/images/lesson-visual-overrides/*
+!apps/web/public/images/lesson-visual-overrides/.gitkeep

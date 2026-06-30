@@ -6,11 +6,15 @@ admin email diagnostics pattern.
 """
 from fastapi import APIRouter, Depends, HTTPException
 
-from app.api.admin_deps import require_admin_api_key
+from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.core.config import settings
 from app.core.llm_usage import llm_usage_registry
 from app.domain.ai import TASK_MODEL_CONFIGS, ChatMessage
 from app.services.llm import LLMError, get_llm_provider
+from app.services.lesson_visual_regeneration import (
+    LessonVisualRegenerationError,
+    regenerate_lesson_visual,
+)
 
 router = APIRouter()
 
@@ -39,6 +43,11 @@ async def get_ai_status(_: bool = Depends(require_admin_api_key)) -> dict:
             "tts": {
                 "configured": bool(settings.minimax_api_key),
                 "provider": "minimax",
+            },
+            "image": {
+                "configured": bool(settings.together_api_key),
+                "provider": "together",
+                "model": settings.together_image_model,
             },
         }
     }
@@ -78,3 +87,47 @@ async def get_ai_usage(_: bool = Depends(require_admin_api_key)) -> dict:
     In-memory and per-process (resets on restart); for live cost visibility.
     """
     return {"data": llm_usage_registry.snapshot()}
+
+
+@router.post("/admin/lessons/{slug}/visuals/{slot}/regenerate")
+async def regenerate_admin_lesson_visual(
+    slug: str,
+    slot: str,
+    admin: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    """Generate one lesson image from its reviewed prompt and replace its override atomically."""
+    try:
+        result = await regenerate_lesson_visual(slug=slug, slot=slot)
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+
+    return {
+        "data": {
+            "slug": result.slug,
+            "slot": result.slot,
+            "model": result.model,
+            "version": result.version,
+            "byte_count": result.byte_count,
+            "asset_url": f"/lesson-visuals/{result.slug}/{result.slot}?v={result.version}",
+            "generated_by": admin.display_name,
+        }
+    }
+
+
+def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPException:
+    if exc.code in {
+        "invalid_lesson_slug",
+        "invalid_visual_slot",
+        "lesson_visual_prompt_invalid",
+    }:
+        return HTTPException(status_code=400, detail=exc.code)
+    if exc.code in {
+        "lesson_visual_prompt_not_found",
+        "lesson_visual_prompt_section_not_found",
+    }:
+        return HTTPException(status_code=404, detail=exc.code)
+    if exc.code == "together_api_key_missing":
+        return HTTPException(status_code=503, detail=exc.code)
+    if exc.code.startswith("together_") or exc.code.startswith("generated_image_"):
+        return HTTPException(status_code=502, detail=exc.code)
+    return HTTPException(status_code=500, detail="lesson_visual_regeneration_failed")
