@@ -1,7 +1,10 @@
 import base64
+from io import BytesIO
 from pathlib import Path
 import tempfile
 import unittest
+
+from PIL import Image
 
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
@@ -10,6 +13,7 @@ from app.services.lesson_visual_regeneration import (
     image_bytes_from_response,
     image_generation_dimensions,
     lesson_prompt_index,
+    optimize_png,
     regenerate_lesson_visual,
 )
 
@@ -27,7 +31,10 @@ class FakeImageClient:
 class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
     def setUp(self):
         lesson_prompt_index.cache_clear()
-        self.png = PNG_SIGNATURE + b"generated-image"
+        image = Image.new("RGB", (32, 18), (36, 99, 235))
+        output = BytesIO()
+        image.save(output, format="PNG")
+        self.png = output.getvalue()
 
     async def test_regenerates_hero_from_lesson_prompt_into_unique_override(self):
         client = FakeImageClient(self.png)
@@ -41,7 +48,8 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             )
             output = root / "saying-hello-and-goodbye" / "hero.png"
 
-            self.assertEqual(output.read_bytes(), self.png)
+            self.assertTrue(output.read_bytes().startswith(PNG_SIGNATURE))
+            self.assertEqual(result.byte_count, output.stat().st_size)
             self.assertEqual(result.slug, "saying-hello-and-goodbye")
             self.assertEqual(result.slot, "hero")
             self.assertEqual(client.prompts[0][1], "hero")
@@ -84,10 +92,23 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
     def test_dimensions_preserve_required_shapes(self):
         hero_width, hero_height = image_generation_dimensions("hero")
         card_width, card_height = image_generation_dimensions("card-1")
+        self.assertEqual((hero_width, hero_height), (1024, 576))
+        self.assertEqual((card_width, card_height), (1024, 1024))
         self.assertAlmostEqual(hero_width / hero_height, 16 / 9, places=2)
         self.assertEqual(card_width, card_height)
         self.assertEqual(hero_width % 16, 0)
         self.assertEqual(hero_height % 16, 0)
+
+    def test_png_optimization_reduces_size_without_resizing(self):
+        image = Image.effect_noise((640, 360), 80).convert("RGB")
+        source = BytesIO()
+        image.save(source, format="PNG")
+
+        optimized = optimize_png(source.getvalue())
+
+        self.assertLess(len(optimized), len(source.getvalue()))
+        with Image.open(BytesIO(optimized)) as result:
+            self.assertEqual(result.size, (640, 360))
 
     async def test_base64_together_response_is_decoded(self):
         body = {"data": [{"b64_json": base64.b64encode(self.png).decode("ascii")}]}
