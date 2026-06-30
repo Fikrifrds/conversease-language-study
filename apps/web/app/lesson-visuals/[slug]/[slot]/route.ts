@@ -33,7 +33,7 @@ export async function GET(
   return new Response(new Uint8Array(image), {
     headers: {
       "Content-Type": "image/png",
-      "Cache-Control": "no-store, max-age=0",
+      "Cache-Control": "public, max-age=300, stale-while-revalidate=3600",
       "X-Content-Type-Options": "nosniff"
     }
   });

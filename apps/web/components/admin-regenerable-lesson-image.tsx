@@ -78,7 +78,7 @@ export function AdminRegenerableLessonImage({
         height={height}
         className={className}
         priority={priority}
-        unoptimized
+        sizes={slot === "hero" ? "(max-width: 1024px) 100vw, 66vw" : "(max-width: 768px) 100vw, 33vw"}
       />
       {isAdmin ? (
         <button
