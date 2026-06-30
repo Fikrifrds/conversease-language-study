@@ -1,0 +1,143 @@
+# Lesson Visual Prompt
+
+- Level: **C1**
+- Unit 6: **Leadership & Coaching**
+- Lesson 1: **Setting Direction**
+- Lesson key: `lesson-01-setting-direction`
+- Web slug: `setting-direction`
+- Dialogue speakers: **Ilham, Faris**
+- Prompt folder: `content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction`
+
+## Suggested outputs
+
+| File | Size | Purpose |
+|---|---:|---|
+| `hero.png` | 1672×941 | Main lesson image |
+| `card-1.png` | 1254×1254 | The direction I'd like to set is stabilizing the billing flow first. |
+| `card-2.png` | 1254×1254 | Success looks like fewer incidents and faster completion rates. |
+| `card-3.png` | 1254×1254 | I'd like you to own the rollout plan. |
+
+## Hero prompt
+
+```text
+Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
+
+Lesson: Setting Direction (C1, Unit 6, Lesson 1)
+Conversation goal: Set direction by clarifying priorities, success criteria, and ownership.
+Situation: Kamu jadi lead. Kamu perlu set arah kerja: prioritas, definisi sukses, dan siapa yang owning apa.
+Scene: an open public campus or neighborhood information area with clear landmarks. The speakers are physically present in the same appropriate scene.
+
+Cast and continuity:
+- Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
+- Faris: adult man wearing a navy long-sleeved modest shirt, loose beige trousers ending above the ankle bones, visible socks, and closed shoes.
+
+Show the key conversational moment naturally. The body language, props, and background must make the setting and relationship immediately understandable even without text. Use this dialogue only to understand the action; do not render the words in the image:
+- Ilham: What should the team focus on this sprint?
+- Faris: The direction I'd like to set is stabilizing the billing flow first.
+- Ilham: How do we define success?
+- Faris: Success looks like fewer incidents and faster completion rates.
+- Ilham: Who owns what?
+- Faris: I'd like you to own the rollout plan, and I'll own stakeholder updates.
+
+Visual rules:
+- Show exactly 2 adult men in the foreground and no women in the foreground.
+- The foreground cast must match the named dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
+- Clean faceless editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
+- Women, when present, wear a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
+- Men wear modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes. Everyone maintains respectful distance; no touching or handshakes.
+- No private mixed-gender seclusion. The speakers are physically present in the same appropriate scene.
+- No temple, shrine, church, statue, idol, religious building, or religious symbol.
+- No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
+- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
+
+Composition: wide establishing shot, all foreground speakers clearly visible, useful negative space, no cropped hands or feet, and no extra foreground characters.
+```
+
+## Card 1 prompt — The direction I'd like to set is stabilizing the billing flow first.
+
+```text
+Create a square companion illustration at 1254×1254 pixels for card 1 of the same English lesson.
+
+Use the completed hero image as the visual reference. Keep exactly the same characters, clothing colors, room or location, time of day, and illustration style.
+
+Card focus: “The direction I'd like to set is stabilizing the billing flow first.”
+Conversation moment: Faris says “The direction I'd like to set is stabilizing the billing flow first.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
+Scene: an open public campus or neighborhood information area with clear landmarks. The speakers are physically present in the same appropriate scene.
+
+Cast and continuity:
+- Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
+- Faris: adult man wearing a navy long-sleeved modest shirt, loose beige trousers ending above the ankle bones, visible socks, and closed shoes.
+
+Visual rules:
+- Show exactly 2 adult men in the foreground and no women in the foreground.
+- The foreground cast must match the named dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
+- Clean faceless editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
+- Women, when present, wear a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
+- Men wear modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes. Everyone maintains respectful distance; no touching or handshakes.
+- No private mixed-gender seclusion. The speakers are physically present in the same appropriate scene.
+- No temple, shrine, church, statue, idol, religious building, or religious symbol.
+- No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
+- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
+
+Composition: medium or close conversational shot, clear focus on Faris, all needed conversation partners still contextually visible, and no cropped hands.
+```
+
+## Card 2 prompt — Success looks like fewer incidents and faster completion rates.
+
+```text
+Create a square companion illustration at 1254×1254 pixels for card 2 of the same English lesson.
+
+Use the completed hero image as the visual reference. Keep exactly the same characters, clothing colors, room or location, time of day, and illustration style.
+
+Card focus: “Success looks like fewer incidents and faster completion rates.”
+Conversation moment: Faris says “Success looks like fewer incidents and faster completion rates.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
+Scene: an open public campus or neighborhood information area with clear landmarks. The speakers are physically present in the same appropriate scene.
+
+Cast and continuity:
+- Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
+- Faris: adult man wearing a navy long-sleeved modest shirt, loose beige trousers ending above the ankle bones, visible socks, and closed shoes.
+
+Visual rules:
+- Show exactly 2 adult men in the foreground and no women in the foreground.
+- The foreground cast must match the named dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
+- Clean faceless editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
+- Women, when present, wear a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
+- Men wear modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes. Everyone maintains respectful distance; no touching or handshakes.
+- No private mixed-gender seclusion. The speakers are physically present in the same appropriate scene.
+- No temple, shrine, church, statue, idol, religious building, or religious symbol.
+- No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
+- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
+
+Composition: medium or close conversational shot, clear focus on Faris, all needed conversation partners still contextually visible, and no cropped hands.
+```
+
+## Card 3 prompt — I'd like you to own the rollout plan.
+
+```text
+Create a square companion illustration at 1254×1254 pixels for card 3 of the same English lesson.
+
+Use the completed hero image as the visual reference. Keep exactly the same characters, clothing colors, room or location, time of day, and illustration style.
+
+Card focus: “I'd like you to own the rollout plan.”
+Conversation moment: Faris says “I'd like you to own the rollout plan, and I'll own stakeholder updates.”. Show this meaning through natural gesture, attention, and relevant props; do not render the quote or any other words in the image.
+Scene: an open public campus or neighborhood information area with clear landmarks. The speakers are physically present in the same appropriate scene.
+
+Cast and continuity:
+- Ilham: adult man wearing an olive long-sleeved modest shirt, loose dark trousers ending above the ankle bones, visible socks, and closed shoes.
+- Faris: adult man wearing a navy long-sleeved modest shirt, loose beige trousers ending above the ankle bones, visible socks, and closed shoes.
+
+Visual rules:
+- Show exactly 2 adult men in the foreground and no women in the foreground.
+- The foreground cast must match the named dialogue speakers: Ilham, Faris. Do not change their genders, duplicate them, or replace them with generic people.
+- Clean faceless editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
+- Women, when present, wear a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
+- Men wear modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes. Everyone maintains respectful distance; no touching or handshakes.
+- No private mixed-gender seclusion. The speakers are physically present in the same appropriate scene.
+- No temple, shrine, church, statue, idol, religious building, or religious symbol.
+- No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
+- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
+
+Composition: medium or close conversational shot, clear focus on Faris, all needed conversation partners still contextually visible, and no cropped hands.
+```
+
+Use only the prompts you need. Image generation and asset replacement are intentionally manual.

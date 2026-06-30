@@ -1,0 +1,201 @@
+level,unit,lesson,lesson_key,slug,title,prompt_file
+A1,01,01,lesson-01-saying-hello,saying-hello-and-goodbye,Saying Hello and Goodbye,content/visual-prompts/english/A1/unit-01-greeting-introducing-yourself/lesson-01-saying-hello/PROMPT.md
+A1,01,02,lesson-02-saying-your-name,saying-your-name,Saying Your Name,content/visual-prompts/english/A1/unit-01-greeting-introducing-yourself/lesson-02-saying-your-name/PROMPT.md
+A1,01,03,lesson-03-asking-someones-name,asking-someones-name,Asking Someone's Name,content/visual-prompts/english/A1/unit-01-greeting-introducing-yourself/lesson-03-asking-someones-name/PROMPT.md
+A1,01,04,lesson-04-saying-where-you-are-from,saying-where-you-are-from,Saying Where You Are From,content/visual-prompts/english/A1/unit-01-greeting-introducing-yourself/lesson-04-saying-where-you-are-from/PROMPT.md
+A1,01,05,lesson-05-first-conversation-mission,first-conversation-mission,First Conversation Mission,content/visual-prompts/english/A1/unit-01-greeting-introducing-yourself/lesson-05-first-conversation-mission/PROMPT.md
+A1,02,01,lesson-01-spelling-your-name,spelling-your-name,Spelling Your Name,content/visual-prompts/english/A1/unit-02-spelling-numbers-contact/lesson-01-spelling-your-name/PROMPT.md
+A1,02,02,lesson-02-giving-phone-numbers,giving-phone-numbers,Giving Phone Numbers,content/visual-prompts/english/A1/unit-02-spelling-numbers-contact/lesson-02-giving-phone-numbers/PROMPT.md
+A1,02,03,lesson-03-sharing-email-addresses,sharing-email-addresses,Sharing Email Addresses,content/visual-prompts/english/A1/unit-02-spelling-numbers-contact/lesson-03-sharing-email-addresses/PROMPT.md
+A1,02,04,lesson-04-asking-for-repetition,asking-for-repetition,Asking for Repetition,content/visual-prompts/english/A1/unit-02-spelling-numbers-contact/lesson-04-asking-for-repetition/PROMPT.md
+A1,02,05,lesson-05-contact-details-mission,contact-details-mission,Contact Details Mission,content/visual-prompts/english/A1/unit-02-spelling-numbers-contact/lesson-05-contact-details-mission/PROMPT.md
+A1,03,01,lesson-01-telling-the-time,telling-the-time,Telling the Time,content/visual-prompts/english/A1/unit-03-daily-routine-time/lesson-01-telling-the-time/PROMPT.md
+A1,03,02,lesson-02-talking-about-daily-routines,talking-about-daily-routines,Talking About Daily Routines,content/visual-prompts/english/A1/unit-03-daily-routine-time/lesson-02-talking-about-daily-routines/PROMPT.md
+A1,03,03,lesson-03-days-and-simple-schedules,days-and-simple-schedules,Days and Simple Schedules,content/visual-prompts/english/A1/unit-03-daily-routine-time/lesson-03-days-and-simple-schedules/PROMPT.md
+A1,03,04,lesson-04-asking-when-something-happens,asking-when-something-happens,Asking When Something Happens,content/visual-prompts/english/A1/unit-03-daily-routine-time/lesson-04-asking-when-something-happens/PROMPT.md
+A1,03,05,lesson-05-routine-conversation-mission,routine-conversation-mission,Routine Conversation Mission,content/visual-prompts/english/A1/unit-03-daily-routine-time/lesson-05-routine-conversation-mission/PROMPT.md
+A1,04,01,lesson-01-saying-what-you-do,saying-what-you-do,Saying What You Do,content/visual-prompts/english/A1/unit-04-work-study-and-preferences/lesson-01-saying-what-you-do/PROMPT.md
+A1,04,02,lesson-02-asking-about-work-or-study,asking-about-work-or-study,Asking About Work or Study,content/visual-prompts/english/A1/unit-04-work-study-and-preferences/lesson-02-asking-about-work-or-study/PROMPT.md
+A1,04,03,lesson-03-talking-about-likes,talking-about-likes,Talking About Likes,content/visual-prompts/english/A1/unit-04-work-study-and-preferences/lesson-03-talking-about-likes/PROMPT.md
+A1,04,04,lesson-04-saying-what-you-can-do,saying-what-you-can-do,Saying What You Can Do,content/visual-prompts/english/A1/unit-04-work-study-and-preferences/lesson-04-saying-what-you-can-do/PROMPT.md
+A1,04,05,lesson-05-work-study-conversation-mission,work-study-conversation-mission,Work and Study Conversation Mission,content/visual-prompts/english/A1/unit-04-work-study-and-preferences/lesson-05-work-study-conversation-mission/PROMPT.md
+A1,05,01,lesson-01-asking-where-a-place-is,asking-where-a-place-is,Asking Where a Place Is,content/visual-prompts/english/A1/unit-05-places-directions/lesson-01-asking-where-a-place-is/PROMPT.md
+A1,05,02,lesson-02-simple-place-words,simple-place-words,Simple Place Words,content/visual-prompts/english/A1/unit-05-places-directions/lesson-02-simple-place-words/PROMPT.md
+A1,05,03,lesson-03-understanding-simple-directions,understanding-simple-directions,Understanding Simple Directions,content/visual-prompts/english/A1/unit-05-places-directions/lesson-03-understanding-simple-directions/PROMPT.md
+A1,05,04,lesson-04-asking-how-to-get-there,asking-how-to-get-there,Asking How to Get There,content/visual-prompts/english/A1/unit-05-places-directions/lesson-04-asking-how-to-get-there/PROMPT.md
+A1,05,05,lesson-05-finding-a-place-mission,finding-a-place-mission,Finding a Place Mission,content/visual-prompts/english/A1/unit-05-places-directions/lesson-05-finding-a-place-mission/PROMPT.md
+A1,06,01,lesson-01-ordering-a-drink,ordering-a-drink,Ordering a Drink,content/visual-prompts/english/A1/unit-06-food-shopping-prices/lesson-01-ordering-a-drink/PROMPT.md
+A1,06,02,lesson-02-asking-about-prices,asking-about-prices,Asking About Prices,content/visual-prompts/english/A1/unit-06-food-shopping-prices/lesson-02-asking-about-prices/PROMPT.md
+A1,06,03,lesson-03-buying-a-simple-item,buying-a-simple-item,Buying a Simple Item,content/visual-prompts/english/A1/unit-06-food-shopping-prices/lesson-03-buying-a-simple-item/PROMPT.md
+A1,06,04,lesson-04-saying-what-you-want,saying-what-you-want,Saying What You Want,content/visual-prompts/english/A1/unit-06-food-shopping-prices/lesson-04-saying-what-you-want/PROMPT.md
+A1,06,05,lesson-05-cafe-and-shop-mission,cafe-and-shop-mission,Cafe and Shop Mission,content/visual-prompts/english/A1/unit-06-food-shopping-prices/lesson-05-cafe-and-shop-mission/PROMPT.md
+A1,07,01,lesson-01-saying-you-do-not-understand,saying-you-do-not-understand,Saying You Do Not Understand,content/visual-prompts/english/A1/unit-07-help-problems-requests/lesson-01-saying-you-do-not-understand/PROMPT.md
+A1,07,02,lesson-02-asking-for-help,asking-for-help,Asking for Help,content/visual-prompts/english/A1/unit-07-help-problems-requests/lesson-02-asking-for-help/PROMPT.md
+A1,07,03,lesson-03-making-simple-requests,making-simple-requests,Making Simple Requests,content/visual-prompts/english/A1/unit-07-help-problems-requests/lesson-03-making-simple-requests/PROMPT.md
+A1,07,04,lesson-04-apologizing-and-thanking,apologizing-and-thanking,Apologizing and Thanking,content/visual-prompts/english/A1/unit-07-help-problems-requests/lesson-04-apologizing-and-thanking/PROMPT.md
+A1,07,05,lesson-05-help-and-problem-mission,help-and-problem-mission,Help and Problem Mission,content/visual-prompts/english/A1/unit-07-help-problems-requests/lesson-05-help-and-problem-mission/PROMPT.md
+A1,08,01,lesson-01-review-introductions,review-introductions,Review Introductions,content/visual-prompts/english/A1/unit-08-a1-review-final/lesson-01-review-introductions/PROMPT.md
+A1,08,02,lesson-02-review-routines-and-time,review-routines-and-time,Review Routines and Time,content/visual-prompts/english/A1/unit-08-a1-review-final/lesson-02-review-routines-and-time/PROMPT.md
+A1,08,03,lesson-03-review-places-and-shopping,review-places-and-shopping,Review Places and Shopping,content/visual-prompts/english/A1/unit-08-a1-review-final/lesson-03-review-places-and-shopping/PROMPT.md
+A1,08,04,lesson-04-final-test-practice,final-test-practice,Final Test Practice,content/visual-prompts/english/A1/unit-08-a1-review-final/lesson-04-final-test-practice/PROMPT.md
+A1,08,05,lesson-05-a1-final-conversation,a1-final-conversation,A1 Final Conversation,content/visual-prompts/english/A1/unit-08-a1-review-final/lesson-05-a1-final-conversation/PROMPT.md
+A2,01,01,lesson-01-starting-small-talk,starting-small-talk,Starting Small Talk,content/visual-prompts/english/A2/unit-01-social-small-talk/lesson-01-starting-small-talk/PROMPT.md
+A2,01,02,lesson-02-asking-follow-up-questions,asking-follow-up-questions,Asking Follow-up Questions,content/visual-prompts/english/A2/unit-01-social-small-talk/lesson-02-asking-follow-up-questions/PROMPT.md
+A2,01,03,lesson-03-talking-about-weekends,talking-about-weekends,Talking About Weekends,content/visual-prompts/english/A2/unit-01-social-small-talk/lesson-03-talking-about-weekends/PROMPT.md
+A2,01,04,lesson-04-reacting-politely,reacting-politely,Reacting Politely,content/visual-prompts/english/A2/unit-01-social-small-talk/lesson-04-reacting-politely/PROMPT.md
+A2,01,05,lesson-05-small-talk-mission,small-talk-mission,Small Talk Mission,content/visual-prompts/english/A2/unit-01-social-small-talk/lesson-05-small-talk-mission/PROMPT.md
+A2,02,01,lesson-01-making-plans,making-plans,Making Plans,content/visual-prompts/english/A2/unit-02-plans-and-invitations/lesson-01-making-plans/PROMPT.md
+A2,02,02,lesson-02-inviting-someone,inviting-someone,Inviting Someone,content/visual-prompts/english/A2/unit-02-plans-and-invitations/lesson-02-inviting-someone/PROMPT.md
+A2,02,03,lesson-03-accepting-and-declining,accepting-and-declining,Accepting and Declining,content/visual-prompts/english/A2/unit-02-plans-and-invitations/lesson-03-accepting-and-declining/PROMPT.md
+A2,02,04,lesson-04-rescheduling,rescheduling,Rescheduling,content/visual-prompts/english/A2/unit-02-plans-and-invitations/lesson-04-rescheduling/PROMPT.md
+A2,02,05,lesson-05-invitation-mission,invitation-mission,Invitation Mission,content/visual-prompts/english/A2/unit-02-plans-and-invitations/lesson-05-invitation-mission/PROMPT.md
+A2,03,01,lesson-01-buying-a-ticket,buying-a-ticket,Buying a Ticket,content/visual-prompts/english/A2/unit-03-travel-and-transport/lesson-01-buying-a-ticket/PROMPT.md
+A2,03,02,lesson-02-asking-about-departure-time,asking-about-departure-time,Asking About Departure Time,content/visual-prompts/english/A2/unit-03-travel-and-transport/lesson-02-asking-about-departure-time/PROMPT.md
+A2,03,03,lesson-03-checking-directions,checking-directions,Checking Directions,content/visual-prompts/english/A2/unit-03-travel-and-transport/lesson-03-checking-directions/PROMPT.md
+A2,03,04,lesson-04-talking-to-a-driver,talking-to-a-driver,Talking to a Driver,content/visual-prompts/english/A2/unit-03-travel-and-transport/lesson-04-talking-to-a-driver/PROMPT.md
+A2,03,05,lesson-05-transport-mission,transport-mission,Transport Mission,content/visual-prompts/english/A2/unit-03-travel-and-transport/lesson-05-transport-mission/PROMPT.md
+A2,04,01,lesson-01-asking-for-an-item,asking-for-an-item,Asking for an Item,content/visual-prompts/english/A2/unit-04-shopping-services/lesson-01-asking-for-an-item/PROMPT.md
+A2,04,02,lesson-02-asking-about-size-and-color,asking-about-size-and-color,Asking About Size and Color,content/visual-prompts/english/A2/unit-04-shopping-services/lesson-02-asking-about-size-and-color/PROMPT.md
+A2,04,03,lesson-03-comparing-simple-options,comparing-simple-options,Comparing Simple Options,content/visual-prompts/english/A2/unit-04-shopping-services/lesson-03-comparing-simple-options/PROMPT.md
+A2,04,04,lesson-04-requesting-service-help,requesting-service-help,Requesting Service Help,content/visual-prompts/english/A2/unit-04-shopping-services/lesson-04-requesting-service-help/PROMPT.md
+A2,04,05,lesson-05-shopping-service-mission,shopping-service-mission,Shopping Service Mission,content/visual-prompts/english/A2/unit-04-shopping-services/lesson-05-shopping-service-mission/PROMPT.md
+A2,05,01,lesson-01-saying-how-you-feel,saying-how-you-feel,Saying How You Feel,content/visual-prompts/english/A2/unit-05-health-and-appointments/lesson-01-saying-how-you-feel/PROMPT.md
+A2,05,02,lesson-02-describing-simple-symptoms,describing-simple-symptoms,Describing Simple Symptoms,content/visual-prompts/english/A2/unit-05-health-and-appointments/lesson-02-describing-simple-symptoms/PROMPT.md
+A2,05,03,lesson-03-making-an-appointment,making-an-appointment,Making an Appointment,content/visual-prompts/english/A2/unit-05-health-and-appointments/lesson-03-making-an-appointment/PROMPT.md
+A2,05,04,lesson-04-confirming-details,confirming-details,Confirming Details,content/visual-prompts/english/A2/unit-05-health-and-appointments/lesson-04-confirming-details/PROMPT.md
+A2,05,05,lesson-05-health-appointment-mission,health-appointment-mission,Health Appointment Mission,content/visual-prompts/english/A2/unit-05-health-and-appointments/lesson-05-health-appointment-mission/PROMPT.md
+A2,06,01,lesson-01-talking-about-yesterday,talking-about-yesterday,Talking About Yesterday,content/visual-prompts/english/A2/unit-06-past-experiences/lesson-01-talking-about-yesterday/PROMPT.md
+A2,06,02,lesson-02-saying-where-you-went,saying-where-you-went,Saying Where You Went,content/visual-prompts/english/A2/unit-06-past-experiences/lesson-02-saying-where-you-went/PROMPT.md
+A2,06,03,lesson-03-describing-a-simple-experience,describing-a-simple-experience,Describing a Simple Experience,content/visual-prompts/english/A2/unit-06-past-experiences/lesson-03-describing-a-simple-experience/PROMPT.md
+A2,06,04,lesson-04-asking-about-past-activities,asking-about-past-activities,Asking About Past Activities,content/visual-prompts/english/A2/unit-06-past-experiences/lesson-04-asking-about-past-activities/PROMPT.md
+A2,06,05,lesson-05-past-experience-mission,past-experience-mission,Past Experience Mission,content/visual-prompts/english/A2/unit-06-past-experiences/lesson-05-past-experience-mission/PROMPT.md
+A2,07,01,lesson-01-saying-what-you-think,saying-what-you-think,Saying What You Think,content/visual-prompts/english/A2/unit-07-opinions-and-reasons/lesson-01-saying-what-you-think/PROMPT.md
+A2,07,02,lesson-02-giving-simple-reasons,giving-simple-reasons,Giving Simple Reasons,content/visual-prompts/english/A2/unit-07-opinions-and-reasons/lesson-02-giving-simple-reasons/PROMPT.md
+A2,07,03,lesson-03-agreeing-and-disagreeing-politely,agreeing-and-disagreeing-politely,Agreeing and Disagreeing Politely,content/visual-prompts/english/A2/unit-07-opinions-and-reasons/lesson-03-agreeing-and-disagreeing-politely/PROMPT.md
+A2,07,04,lesson-04-asking-for-opinions,asking-for-opinions,Asking for Opinions,content/visual-prompts/english/A2/unit-07-opinions-and-reasons/lesson-04-asking-for-opinions/PROMPT.md
+A2,07,05,lesson-05-opinion-conversation-mission,opinion-conversation-mission,Opinion Conversation Mission,content/visual-prompts/english/A2/unit-07-opinions-and-reasons/lesson-05-opinion-conversation-mission/PROMPT.md
+A2,08,01,lesson-01-review-social-and-plans,review-social-and-plans,Review Social and Plans,content/visual-prompts/english/A2/unit-08-a2-review-final/lesson-01-review-social-and-plans/PROMPT.md
+A2,08,02,lesson-02-review-travel-and-shopping,review-travel-and-shopping,Review Travel and Shopping,content/visual-prompts/english/A2/unit-08-a2-review-final/lesson-02-review-travel-and-shopping/PROMPT.md
+A2,08,03,lesson-03-review-health-and-past,review-health-and-past,Review Health and Past,content/visual-prompts/english/A2/unit-08-a2-review-final/lesson-03-review-health-and-past/PROMPT.md
+A2,08,04,lesson-04-a2-final-test-practice,a2-final-test-practice,A2 Final Test Practice,content/visual-prompts/english/A2/unit-08-a2-review-final/lesson-04-a2-final-test-practice/PROMPT.md
+A2,08,05,lesson-05-a2-final-conversation,a2-final-conversation,A2 Final Conversation,content/visual-prompts/english/A2/unit-08-a2-review-final/lesson-05-a2-final-conversation/PROMPT.md
+B1,01,01,lesson-01-setting-the-scene,setting-the-scene,Setting the Scene,content/visual-prompts/english/B1/unit-01-personal-stories/lesson-01-setting-the-scene/PROMPT.md
+B1,01,02,lesson-02-telling-events-in-order,telling-events-in-order,Telling Events in Order,content/visual-prompts/english/B1/unit-01-personal-stories/lesson-02-telling-events-in-order/PROMPT.md
+B1,01,03,lesson-03-describing-feelings,describing-feelings,Describing Feelings,content/visual-prompts/english/B1/unit-01-personal-stories/lesson-03-describing-feelings/PROMPT.md
+B1,01,04,lesson-04-asking-about-someones-story,asking-about-someones-story,Asking About Someone's Story,content/visual-prompts/english/B1/unit-01-personal-stories/lesson-04-asking-about-someones-story/PROMPT.md
+B1,01,05,lesson-05-personal-story-mission,personal-story-mission,Personal Story Mission,content/visual-prompts/english/B1/unit-01-personal-stories/lesson-05-personal-story-mission/PROMPT.md
+B1,02,01,lesson-01-explaining-your-task,explaining-your-task,Explaining Your Task,content/visual-prompts/english/B1/unit-02-workplace-conversations/lesson-01-explaining-your-task/PROMPT.md
+B1,02,02,lesson-02-asking-for-clarification,asking-for-clarification,Asking for Clarification,content/visual-prompts/english/B1/unit-02-workplace-conversations/lesson-02-asking-for-clarification/PROMPT.md
+B1,02,03,lesson-03-giving-a-short-update,giving-a-short-update,Giving a Short Update,content/visual-prompts/english/B1/unit-02-workplace-conversations/lesson-03-giving-a-short-update/PROMPT.md
+B1,02,04,lesson-04-joining-a-simple-meeting,joining-a-simple-meeting,Joining a Simple Meeting,content/visual-prompts/english/B1/unit-02-workplace-conversations/lesson-04-joining-a-simple-meeting/PROMPT.md
+B1,02,05,lesson-05-workplace-mission,workplace-mission,Workplace Mission,content/visual-prompts/english/B1/unit-02-workplace-conversations/lesson-05-workplace-mission/PROMPT.md
+B1,03,01,lesson-01-describing-a-problem,describing-a-problem,Describing a Problem,content/visual-prompts/english/B1/unit-03-problems-and-solutions/lesson-01-describing-a-problem/PROMPT.md
+B1,03,02,lesson-02-suggesting-a-solution,suggesting-a-solution,Suggesting a Solution,content/visual-prompts/english/B1/unit-03-problems-and-solutions/lesson-02-suggesting-a-solution/PROMPT.md
+B1,03,03,lesson-03-responding-to-advice,responding-to-advice,Responding to Advice,content/visual-prompts/english/B1/unit-03-problems-and-solutions/lesson-03-responding-to-advice/PROMPT.md
+B1,03,04,lesson-04-making-a-simple-decision,making-a-simple-decision,Making a Simple Decision,content/visual-prompts/english/B1/unit-03-problems-and-solutions/lesson-04-making-a-simple-decision/PROMPT.md
+B1,03,05,lesson-05-problem-solving-mission,problem-solving-mission,Problem Solving Mission,content/visual-prompts/english/B1/unit-03-problems-and-solutions/lesson-05-problem-solving-mission/PROMPT.md
+B1,04,01,lesson-01-checking-in,checking-in,Checking In,content/visual-prompts/english/B1/unit-04-travel-situations/lesson-01-checking-in/PROMPT.md
+B1,04,02,lesson-02-explaining-a-delay,explaining-a-delay,Explaining a Delay,content/visual-prompts/english/B1/unit-04-travel-situations/lesson-02-explaining-a-delay/PROMPT.md
+B1,04,03,lesson-03-asking-for-recommendations,asking-for-recommendations,Asking for Recommendations,content/visual-prompts/english/B1/unit-04-travel-situations/lesson-03-asking-for-recommendations/PROMPT.md
+B1,04,04,lesson-04-handling-a-simple-complaint,handling-a-simple-complaint,Handling a Simple Complaint,content/visual-prompts/english/B1/unit-04-travel-situations/lesson-04-handling-a-simple-complaint/PROMPT.md
+B1,04,05,lesson-05-travel-situation-mission,travel-situation-mission,Travel Situation Mission,content/visual-prompts/english/B1/unit-04-travel-situations/lesson-05-travel-situation-mission/PROMPT.md
+B1,05,01,lesson-01-talking-about-goals,talking-about-goals,Talking About Goals,content/visual-prompts/english/B1/unit-05-goals-and-progress/lesson-01-talking-about-goals/PROMPT.md
+B1,05,02,lesson-02-explaining-progress,explaining-progress,Explaining Progress,content/visual-prompts/english/B1/unit-05-goals-and-progress/lesson-02-explaining-progress/PROMPT.md
+B1,05,03,lesson-03-discussing-challenges,discussing-challenges,Discussing Challenges,content/visual-prompts/english/B1/unit-05-goals-and-progress/lesson-03-discussing-challenges/PROMPT.md
+B1,05,04,lesson-04-making-next-step-plans,making-next-step-plans,Making Next-step Plans,content/visual-prompts/english/B1/unit-05-goals-and-progress/lesson-04-making-next-step-plans/PROMPT.md
+B1,05,05,lesson-05-goals-progress-mission,goals-progress-mission,Goals Progress Mission,content/visual-prompts/english/B1/unit-05-goals-and-progress/lesson-05-goals-progress-mission/PROMPT.md
+B1,06,01,lesson-01-comparing-two-options,comparing-two-options,Comparing Two Options,content/visual-prompts/english/B1/unit-06-explaining-preferences/lesson-01-comparing-two-options/PROMPT.md
+B1,06,02,lesson-02-explaining-why-you-prefer-something,explaining-why-you-prefer-something,Explaining Why You Prefer Something,content/visual-prompts/english/B1/unit-06-explaining-preferences/lesson-02-explaining-why-you-prefer-something/PROMPT.md
+B1,06,03,lesson-03-asking-about-pros-and-cons,asking-about-pros-and-cons,Asking About Pros and Cons,content/visual-prompts/english/B1/unit-06-explaining-preferences/lesson-03-asking-about-pros-and-cons/PROMPT.md
+B1,06,04,lesson-04-reaching-agreement,reaching-agreement,Reaching Agreement,content/visual-prompts/english/B1/unit-06-explaining-preferences/lesson-04-reaching-agreement/PROMPT.md
+B1,06,05,lesson-05-preference-discussion-mission,preference-discussion-mission,Preference Discussion Mission,content/visual-prompts/english/B1/unit-06-explaining-preferences/lesson-05-preference-discussion-mission/PROMPT.md
+B1,07,01,lesson-01-describing-your-community,describing-your-community,Describing Your Community,content/visual-prompts/english/B1/unit-07-community-and-culture/lesson-01-describing-your-community/PROMPT.md
+B1,07,02,lesson-02-talking-about-local-habits,talking-about-local-habits,Talking About Local Habits,content/visual-prompts/english/B1/unit-07-community-and-culture/lesson-02-talking-about-local-habits/PROMPT.md
+B1,07,03,lesson-03-asking-about-culture,asking-about-culture,Asking About Culture,content/visual-prompts/english/B1/unit-07-community-and-culture/lesson-03-asking-about-culture/PROMPT.md
+B1,07,04,lesson-04-being-polite-with-differences,being-polite-with-differences,Being Polite With Differences,content/visual-prompts/english/B1/unit-07-community-and-culture/lesson-04-being-polite-with-differences/PROMPT.md
+B1,07,05,lesson-05-community-culture-mission,community-culture-mission,Community Culture Mission,content/visual-prompts/english/B1/unit-07-community-and-culture/lesson-05-community-culture-mission/PROMPT.md
+B1,08,01,lesson-01-review-stories-and-work,review-stories-and-work,Review Stories and Work,content/visual-prompts/english/B1/unit-08-b1-review-final/lesson-01-review-stories-and-work/PROMPT.md
+B1,08,02,lesson-02-review-problems-and-travel,review-problems-and-travel,Review Problems and Travel,content/visual-prompts/english/B1/unit-08-b1-review-final/lesson-02-review-problems-and-travel/PROMPT.md
+B1,08,03,lesson-03-review-goals-and-preferences,review-goals-and-preferences,Review Goals and Preferences,content/visual-prompts/english/B1/unit-08-b1-review-final/lesson-03-review-goals-and-preferences/PROMPT.md
+B1,08,04,lesson-04-b1-final-test-practice,b1-final-test-practice,B1 Final Test Practice,content/visual-prompts/english/B1/unit-08-b1-review-final/lesson-04-b1-final-test-practice/PROMPT.md
+B1,08,05,lesson-05-b1-final-conversation,b1-final-conversation,B1 Final Conversation,content/visual-prompts/english/B1/unit-08-b1-review-final/lesson-05-b1-final-conversation/PROMPT.md
+B2,01,01,lesson-01-stating-your-position,stating-your-position,Stating Your Position,content/visual-prompts/english/B2/unit-01-clear-arguments/lesson-01-stating-your-position/PROMPT.md
+B2,01,02,lesson-02-supporting-with-reasons,supporting-with-reasons,Supporting With Reasons,content/visual-prompts/english/B2/unit-01-clear-arguments/lesson-02-supporting-with-reasons/PROMPT.md
+B2,01,03,lesson-03-using-examples,using-examples,Using Examples,content/visual-prompts/english/B2/unit-01-clear-arguments/lesson-03-using-examples/PROMPT.md
+B2,01,04,lesson-04-responding-to-counterpoints,responding-to-counterpoints,Responding to Counterpoints,content/visual-prompts/english/B2/unit-01-clear-arguments/lesson-04-responding-to-counterpoints/PROMPT.md
+B2,01,05,lesson-05-clear-argument-mission,clear-argument-mission,Clear Argument Mission,content/visual-prompts/english/B2/unit-01-clear-arguments/lesson-05-clear-argument-mission/PROMPT.md
+B2,02,01,lesson-01-opening-a-meeting-point,opening-a-meeting-point,Opening a Meeting Point,content/visual-prompts/english/B2/unit-02-professional-meetings/lesson-01-opening-a-meeting-point/PROMPT.md
+B2,02,02,lesson-02-clarifying-scope,clarifying-scope,Clarifying Scope,content/visual-prompts/english/B2/unit-02-professional-meetings/lesson-02-clarifying-scope/PROMPT.md
+B2,02,03,lesson-03-giving-constructive-feedback,giving-constructive-feedback,Giving Constructive Feedback,content/visual-prompts/english/B2/unit-02-professional-meetings/lesson-03-giving-constructive-feedback/PROMPT.md
+B2,02,04,lesson-04-summarizing-decisions,summarizing-decisions,Summarizing Decisions,content/visual-prompts/english/B2/unit-02-professional-meetings/lesson-04-summarizing-decisions/PROMPT.md
+B2,02,05,lesson-05-meeting-participation-mission,meeting-participation-mission,Meeting Participation Mission,content/visual-prompts/english/B2/unit-02-professional-meetings/lesson-05-meeting-participation-mission/PROMPT.md
+B2,03,01,lesson-01-expressing-priorities,expressing-priorities,Expressing Priorities,content/visual-prompts/english/B2/unit-03-negotiation-and-compromise/lesson-01-expressing-priorities/PROMPT.md
+B2,03,02,lesson-02-making-a-proposal,making-a-proposal,Making a Proposal,content/visual-prompts/english/B2/unit-03-negotiation-and-compromise/lesson-02-making-a-proposal/PROMPT.md
+B2,03,03,lesson-03-handling-objections,handling-objections,Handling Objections,content/visual-prompts/english/B2/unit-03-negotiation-and-compromise/lesson-03-handling-objections/PROMPT.md
+B2,03,04,lesson-04-finding-middle-ground,finding-middle-ground,Finding Middle Ground,content/visual-prompts/english/B2/unit-03-negotiation-and-compromise/lesson-04-finding-middle-ground/PROMPT.md
+B2,03,05,lesson-05-negotiation-mission,negotiation-mission,Negotiation Mission,content/visual-prompts/english/B2/unit-03-negotiation-and-compromise/lesson-05-negotiation-mission/PROMPT.md
+B2,04,01,lesson-01-structuring-a-short-presentation,structuring-a-short-presentation,Structuring a Short Presentation,content/visual-prompts/english/B2/unit-04-presenting-ideas/lesson-01-structuring-a-short-presentation/PROMPT.md
+B2,04,02,lesson-02-signposting-clearly,signposting-clearly,Signposting Clearly,content/visual-prompts/english/B2/unit-04-presenting-ideas/lesson-02-signposting-clearly/PROMPT.md
+B2,04,03,lesson-03-explaining-benefits-and-risks,explaining-benefits-and-risks,Explaining Benefits and Risks,content/visual-prompts/english/B2/unit-04-presenting-ideas/lesson-03-explaining-benefits-and-risks/PROMPT.md
+B2,04,04,lesson-04-answering-questions,answering-questions,Answering Questions,content/visual-prompts/english/B2/unit-04-presenting-ideas/lesson-04-answering-questions/PROMPT.md
+B2,04,05,lesson-05-idea-presentation-mission,idea-presentation-mission,Idea Presentation Mission,content/visual-prompts/english/B2/unit-04-presenting-ideas/lesson-05-idea-presentation-mission/PROMPT.md
+B2,05,01,lesson-01-summarizing-an-article,summarizing-an-article,Summarizing an Article,content/visual-prompts/english/B2/unit-05-media-and-information/lesson-01-summarizing-an-article/PROMPT.md
+B2,05,02,lesson-02-discussing-reliable-sources,discussing-reliable-sources,Discussing Reliable Sources,content/visual-prompts/english/B2/unit-05-media-and-information/lesson-02-discussing-reliable-sources/PROMPT.md
+B2,05,03,lesson-03-explaining-a-viewpoint,explaining-a-viewpoint,Explaining a Viewpoint,content/visual-prompts/english/B2/unit-05-media-and-information/lesson-03-explaining-a-viewpoint/PROMPT.md
+B2,05,04,lesson-04-responding-to-new-information,responding-to-new-information,Responding to New Information,content/visual-prompts/english/B2/unit-05-media-and-information/lesson-04-responding-to-new-information/PROMPT.md
+B2,05,05,lesson-05-information-discussion-mission,information-discussion-mission,Information Discussion Mission,content/visual-prompts/english/B2/unit-05-media-and-information/lesson-05-information-discussion-mission/PROMPT.md
+B2,06,01,lesson-01-understanding-client-needs,understanding-client-needs,Understanding Client Needs,content/visual-prompts/english/B2/unit-06-customer-and-client-communication/lesson-01-understanding-client-needs/PROMPT.md
+B2,06,02,lesson-02-explaining-options,explaining-options,Explaining Options,content/visual-prompts/english/B2/unit-06-customer-and-client-communication/lesson-02-explaining-options/PROMPT.md
+B2,06,03,lesson-03-handling-concerns,handling-concerns,Handling Concerns,content/visual-prompts/english/B2/unit-06-customer-and-client-communication/lesson-03-handling-concerns/PROMPT.md
+B2,06,04,lesson-04-confirming-next-steps,confirming-next-steps,Confirming Next Steps,content/visual-prompts/english/B2/unit-06-customer-and-client-communication/lesson-04-confirming-next-steps/PROMPT.md
+B2,06,05,lesson-05-client-conversation-mission,client-conversation-mission,Client Conversation Mission,content/visual-prompts/english/B2/unit-06-customer-and-client-communication/lesson-05-client-conversation-mission/PROMPT.md
+B2,07,01,lesson-01-framing-the-problem,framing-the-problem,Framing the Problem,content/visual-prompts/english/B2/unit-07-complex-problem-solving/lesson-01-framing-the-problem/PROMPT.md
+B2,07,02,lesson-02-explaining-causes,explaining-causes,Explaining Causes,content/visual-prompts/english/B2/unit-07-complex-problem-solving/lesson-02-explaining-causes/PROMPT.md
+B2,07,03,lesson-03-discussing-tradeoffs,discussing-tradeoffs,Discussing Tradeoffs,content/visual-prompts/english/B2/unit-07-complex-problem-solving/lesson-03-discussing-tradeoffs/PROMPT.md
+B2,07,04,lesson-04-recommending-a-solution,recommending-a-solution,Recommending a Solution,content/visual-prompts/english/B2/unit-07-complex-problem-solving/lesson-04-recommending-a-solution/PROMPT.md
+B2,07,05,lesson-05-problem-solving-discussion-mission,problem-solving-discussion-mission,Problem Solving Discussion Mission,content/visual-prompts/english/B2/unit-07-complex-problem-solving/lesson-05-problem-solving-discussion-mission/PROMPT.md
+B2,08,01,lesson-01-review-arguments-and-meetings,review-arguments-and-meetings,Review Arguments and Meetings,content/visual-prompts/english/B2/unit-08-b2-review-final/lesson-01-review-arguments-and-meetings/PROMPT.md
+B2,08,02,lesson-02-review-negotiation-and-presenting,review-negotiation-and-presenting,Review Negotiation and Presenting,content/visual-prompts/english/B2/unit-08-b2-review-final/lesson-02-review-negotiation-and-presenting/PROMPT.md
+B2,08,03,lesson-03-review-information-and-clients,review-information-and-clients,Review Information and Clients,content/visual-prompts/english/B2/unit-08-b2-review-final/lesson-03-review-information-and-clients/PROMPT.md
+B2,08,04,lesson-04-b2-final-test-practice,b2-final-test-practice,B2 Final Test Practice,content/visual-prompts/english/B2/unit-08-b2-review-final/lesson-04-b2-final-test-practice/PROMPT.md
+B2,08,05,lesson-05-b2-final-discussion,b2-final-discussion,B2 Final Discussion,content/visual-prompts/english/B2/unit-08-b2-review-final/lesson-05-b2-final-discussion/PROMPT.md
+C1,01,01,lesson-01-qualifying-your-opinion,qualifying-your-opinion,Qualifying Your Opinion,content/visual-prompts/english/C1/unit-01-nuanced-opinions/lesson-01-qualifying-your-opinion/PROMPT.md
+C1,01,02,lesson-02-expressing-certainty-and-doubt,expressing-certainty-and-doubt,Expressing Certainty and Doubt,content/visual-prompts/english/C1/unit-01-nuanced-opinions/lesson-02-expressing-certainty-and-doubt/PROMPT.md
+C1,01,03,lesson-03-balancing-two-viewpoints,balancing-two-viewpoints,Balancing Two Viewpoints,content/visual-prompts/english/C1/unit-01-nuanced-opinions/lesson-03-balancing-two-viewpoints/PROMPT.md
+C1,01,04,lesson-04-softening-disagreement,softening-disagreement,Softening Disagreement,content/visual-prompts/english/C1/unit-01-nuanced-opinions/lesson-04-softening-disagreement/PROMPT.md
+C1,01,05,lesson-05-nuanced-opinion-mission,nuanced-opinion-mission,Nuanced Opinion Mission,content/visual-prompts/english/C1/unit-01-nuanced-opinions/lesson-05-nuanced-opinion-mission/PROMPT.md
+C1,02,01,lesson-01-aligning-stakeholders,aligning-stakeholders,Aligning Stakeholders,content/visual-prompts/english/C1/unit-02-strategic-workplace-communication/lesson-01-aligning-stakeholders/PROMPT.md
+C1,02,02,lesson-02-managing-expectations,managing-expectations,Managing Expectations,content/visual-prompts/english/C1/unit-02-strategic-workplace-communication/lesson-02-managing-expectations/PROMPT.md
+C1,02,03,lesson-03-handling-sensitive-feedback,handling-sensitive-feedback,Handling Sensitive Feedback,content/visual-prompts/english/C1/unit-02-strategic-workplace-communication/lesson-03-handling-sensitive-feedback/PROMPT.md
+C1,02,04,lesson-04-communicating-risk,communicating-risk,Communicating Risk,content/visual-prompts/english/C1/unit-02-strategic-workplace-communication/lesson-04-communicating-risk/PROMPT.md
+C1,02,05,lesson-05-strategic-workplace-mission,strategic-workplace-mission,Strategic Workplace Mission,content/visual-prompts/english/C1/unit-02-strategic-workplace-communication/lesson-05-strategic-workplace-mission/PROMPT.md
+C1,03,01,lesson-01-framing-a-complex-topic,framing-a-complex-topic,Framing a Complex Topic,content/visual-prompts/english/C1/unit-03-advanced-presentations/lesson-01-framing-a-complex-topic/PROMPT.md
+C1,03,02,lesson-02-building-a-persuasive-flow,building-a-persuasive-flow,Building a Persuasive Flow,content/visual-prompts/english/C1/unit-03-advanced-presentations/lesson-02-building-a-persuasive-flow/PROMPT.md
+C1,03,03,lesson-03-using-precise-transitions,using-precise-transitions,Using Precise Transitions,content/visual-prompts/english/C1/unit-03-advanced-presentations/lesson-03-using-precise-transitions/PROMPT.md
+C1,03,04,lesson-04-handling-challenging-questions,handling-challenging-questions,Handling Challenging Questions,content/visual-prompts/english/C1/unit-03-advanced-presentations/lesson-04-handling-challenging-questions/PROMPT.md
+C1,03,05,lesson-05-advanced-presentation-mission,advanced-presentation-mission,Advanced Presentation Mission,content/visual-prompts/english/C1/unit-03-advanced-presentations/lesson-05-advanced-presentation-mission/PROMPT.md
+C1,04,01,lesson-01-identifying-assumptions,identifying-assumptions,Identifying Assumptions,content/visual-prompts/english/C1/unit-04-debate-and-analysis/lesson-01-identifying-assumptions/PROMPT.md
+C1,04,02,lesson-02-challenging-an-argument,challenging-an-argument,Challenging an Argument,content/visual-prompts/english/C1/unit-04-debate-and-analysis/lesson-02-challenging-an-argument/PROMPT.md
+C1,04,03,lesson-03-presenting-evidence,presenting-evidence,Presenting Evidence,content/visual-prompts/english/C1/unit-04-debate-and-analysis/lesson-03-presenting-evidence/PROMPT.md
+C1,04,04,lesson-04-responding-under-pressure,responding-under-pressure,Responding Under Pressure,content/visual-prompts/english/C1/unit-04-debate-and-analysis/lesson-04-responding-under-pressure/PROMPT.md
+C1,04,05,lesson-05-debate-analysis-mission,debate-analysis-mission,Debate Analysis Mission,content/visual-prompts/english/C1/unit-04-debate-and-analysis/lesson-05-debate-analysis-mission/PROMPT.md
+C1,05,01,lesson-01-reading-context,reading-context,Reading Context,content/visual-prompts/english/C1/unit-05-cross-cultural-professionalism/lesson-01-reading-context/PROMPT.md
+C1,05,02,lesson-02-asking-tactful-questions,asking-tactful-questions,Asking Tactful Questions,content/visual-prompts/english/C1/unit-05-cross-cultural-professionalism/lesson-02-asking-tactful-questions/PROMPT.md
+C1,05,03,lesson-03-explaining-local-norms,explaining-local-norms,Explaining Local Norms,content/visual-prompts/english/C1/unit-05-cross-cultural-professionalism/lesson-03-explaining-local-norms/PROMPT.md
+C1,05,04,lesson-04-repairing-misunderstanding,repairing-misunderstanding,Repairing Misunderstanding,content/visual-prompts/english/C1/unit-05-cross-cultural-professionalism/lesson-04-repairing-misunderstanding/PROMPT.md
+C1,05,05,lesson-05-cross-cultural-mission,cross-cultural-mission,Cross-cultural Mission,content/visual-prompts/english/C1/unit-05-cross-cultural-professionalism/lesson-05-cross-cultural-mission/PROMPT.md
+C1,06,01,lesson-01-setting-direction,setting-direction,Setting Direction,content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-01-setting-direction/PROMPT.md
+C1,06,02,lesson-02-coaching-with-questions,coaching-with-questions,Coaching with Questions,content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-02-coaching-with-questions/PROMPT.md
+C1,06,03,lesson-03-giving-actionable-feedback,giving-actionable-feedback,Giving Actionable Feedback,content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-03-giving-actionable-feedback/PROMPT.md
+C1,06,04,lesson-04-guiding-a-decision,guiding-a-decision,Guiding a Decision,content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-04-guiding-a-decision/PROMPT.md
+C1,06,05,lesson-05-leadership-coaching-mission,leadership-coaching-mission,Leadership Coaching Mission,content/visual-prompts/english/C1/unit-06-leadership-and-coaching/lesson-05-leadership-coaching-mission/PROMPT.md
+C1,07,01,lesson-01-catching-implied-meaning,catching-implied-meaning,Catching Implied Meaning,content/visual-prompts/english/C1/unit-07-advanced-listening-response/lesson-01-catching-implied-meaning/PROMPT.md
+C1,07,02,lesson-02-responding-to-long-turns,responding-to-long-turns,Responding to Long Turns,content/visual-prompts/english/C1/unit-07-advanced-listening-response/lesson-02-responding-to-long-turns/PROMPT.md
+C1,07,03,lesson-03-summarizing-what-you-heard,summarizing-what-you-heard,Summarizing What You Heard,content/visual-prompts/english/C1/unit-07-advanced-listening-response/lesson-03-summarizing-what-you-heard/PROMPT.md
+C1,07,04,lesson-04-asking-high-quality-follow-ups,asking-high-quality-follow-ups,Asking High-quality Follow-ups,content/visual-prompts/english/C1/unit-07-advanced-listening-response/lesson-04-asking-high-quality-follow-ups/PROMPT.md
+C1,07,05,lesson-05-advanced-listening-mission,advanced-listening-mission,Advanced Listening Mission,content/visual-prompts/english/C1/unit-07-advanced-listening-response/lesson-05-advanced-listening-mission/PROMPT.md
+C1,08,01,lesson-01-review-nuance-and-strategy,review-nuance-and-strategy,Review Nuance and Strategy,content/visual-prompts/english/C1/unit-08-c1-review-final/lesson-01-review-nuance-and-strategy/PROMPT.md
+C1,08,02,lesson-02-review-presenting-and-debate,review-presenting-and-debate,Review Presenting and Debate,content/visual-prompts/english/C1/unit-08-c1-review-final/lesson-02-review-presenting-and-debate/PROMPT.md
+C1,08,03,lesson-03-review-leadership-and-listening,review-leadership-and-listening,Review Leadership and Listening,content/visual-prompts/english/C1/unit-08-c1-review-final/lesson-03-review-leadership-and-listening/PROMPT.md
+C1,08,04,lesson-04-c1-final-test-practice,c1-final-test-practice,C1 Final Test Practice,content/visual-prompts/english/C1/unit-08-c1-review-final/lesson-04-c1-final-test-practice/PROMPT.md
+C1,08,05,lesson-05-c1-final-conversation,c1-final-conversation,C1 Final Conversation,content/visual-prompts/english/C1/unit-08-c1-review-final/lesson-05-c1-final-conversation/PROMPT.md
