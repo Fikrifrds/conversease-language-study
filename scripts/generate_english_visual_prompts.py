@@ -39,23 +39,24 @@ FEMALE_STYLES = (
 )
 
 SETTING_RULES = (
+    (("asking_for_travel_recommendations",), "a bright public hotel concierge corner beside an open lobby entrance, with local dining photo cards, a simple illustrated street map, and luggage nearby"),
     (("clinic", "symptom", "appointment", "health"), "a bright public clinic reception or consultation area"),
     (("hotel", "check_in"), "a well-lit hotel reception lobby"),
     (("shop", "shopping", "store", "item", "size", "color", "price"), "a tidy public retail shop with relevant products visible"),
-    (("cafe", "drink", "food", "small_talk", "invitation", "inviting", "friend"), "a bright public café or community lounge with other visitors visible"),
+    (("cafe", "drink", "food", "small_talk", "invitation", "inviting", "friend"), "a bright public café or community lounge with relevant tables, menus without readable text, and serving props"),
     (("train", "ticket", "station", "gate", "transport"), "a clear public train station concourse"),
     (("taxi", "driver"), "a taxi pickup area with the vehicle and public surroundings visible"),
     (("direction", "place", "neighborhood"), "an open public campus or neighborhood information area with clear landmarks"),
-    (("presentation", "presenting"), "an open professional presentation room with an audience visible"),
-    (("client", "customer", "negotiation", "objection", "middle_ground"), "an open professional client-service area with colleagues visible in the background"),
-    (("article", "source", "media", "information"), "a public library media workspace with reference materials and colleagues visible"),
-    (("community", "culture", "cross_cultural", "local_norm", "tactful", "professionalism"), "a public community or professional training center with other visitors visible"),
-    (("leadership", "coaching", "learning_goal", "learning_progress", "learning_challenge", "goal", "progress", "next_step", "advanced_listening", "listening", "implied", "heard", "long_turn", "follow_up", "followup"), "an open learning and coaching studio with other learners visible in the background"),
+    (("presentation", "presenting"), "an open professional presentation room with a blank presentation screen and neatly arranged audience chairs"),
+    (("client", "customer", "negotiation", "objection", "middle_ground"), "an open professional client-service area with relevant documents and work objects visible"),
+    (("article", "source", "media", "information"), "a public library media workspace with reference materials visible"),
+    (("community", "culture", "cross_cultural", "local_norm", "tactful", "professionalism"), "a public community or professional training center with activity materials visible"),
+    (("leadership", "coaching", "learning_goal", "learning_progress", "learning_challenge", "goal", "progress", "next_step", "advanced_listening", "listening", "implied", "heard", "long_turn", "follow_up", "followup"), "an open learning and coaching studio with study materials visible"),
     (("class", "study", "teacher", "name", "spelling", "contact", "routine", "schedule", "time", "greeting", "introducing"), "a bright open English classroom shortly before or after class"),
-    (("review", "final_test", "final_conversation", "test_practice"), "an open language assessment room with another staff member or learner visible in the background"),
+    (("review", "final_test", "final_conversation", "test_practice"), "an open language assessment room with desks and assessment materials visible"),
     (("help", "request", "apologizing", "understand"), "an open learning-center help desk with relevant task materials visible"),
     (("work", "meeting", "stakeholder", "manager", "argument", "debate", "discussion", "feedback", "proposal", "risk", "problem", "solution", "advice", "decision", "tradeoff", "viewpoint", "opinion", "certainty", "disagree", "pros_cons", "compare", "preference", "priorities"), "an open modern workplace collaboration area with relevant documents or objects visible"),
-    (("travel", "weekend", "yesterday", "story", "experience", "event"), "a bright public travel lounge or café where a personal story is being shared"),
+    (("travel", "weekend", "yesterday", "story", "experience", "event"), "a bright public travel lounge or café with topic-relevant travel props visible"),
 )
 
 
@@ -152,6 +153,8 @@ def build_prompt(lesson_dir: Path) -> str:
 
     hero_prompt = f"""Create a 16:9 hero illustration at 1672×941 pixels for an English lesson.
 
+{shared_rules}
+
 Lesson: {lesson.get('title', lesson_key)} ({level}, Unit {unit_number}, Lesson {lesson_number})
 Conversation goal: {lesson.get('conversation_goal', '')}
 Situation: {situation}
@@ -162,8 +165,6 @@ Cast and continuity:
 
 Show the key conversational moment naturally. The body language, props, and background must make the setting and relationship immediately understandable even without text. Use this dialogue only to understand the action; do not render the words in the image:
 {dialogue_excerpt}
-
-{shared_rules}
 
 Composition: wide establishing shot, all foreground speakers clearly visible, useful negative space, no cropped hands or feet, and no extra foreground characters."""
 
@@ -176,6 +177,8 @@ Composition: wide establishing shot, all foreground speakers clearly visible, us
         card_prompts.append(
             f"""Create a square companion illustration at 1254×1254 pixels for card {index + 1} of the same English lesson.
 
+{shared_rules}
+
 Use the completed hero image as the visual reference. Keep exactly the same characters, clothing colors, room or location, time of day, and illustration style.
 
 Card focus: “{phrase}”
@@ -184,8 +187,6 @@ Scene: {setting} {mode}
 
 Cast and continuity:
 {characters_as_lines(characters)}
-
-{shared_rules}
 
 Composition: medium or close conversational shot, clear focus on {focus_speaker}, all needed conversation partners still contextually visible, and no cropped hands."""
         )
@@ -243,26 +244,63 @@ def shared_visual_rules(
     male_count = genders.count("male")
     female_count = genders.count("female")
     if female_count == 0:
-        cast_rule = f"Show exactly {male_count} adult {'man' if male_count == 1 else 'men'} in the foreground and no women in the foreground."
+        cast_rule = (
+            f"MEN-ONLY SCENE. PEOPLE COUNT — show exactly {male_count} adult "
+            f"{'man' if male_count == 1 else 'men'} total in the entire image: "
+            f"{', '.join(speakers)}. They are the only human figures allowed anywhere. "
+            "No women, girls, children, staff, customers, travelers, background people, "
+            "silhouettes, reflections, portraits, people on screens, or partial human figures. "
+            "Keep every background seat and area empty."
+        )
+        clothing_rules = (
+            "- All depicted people are adult men. They wear modest opaque clothing with loose "
+            "trousers whose hems clearly end above the ankle bones, with socks and closed shoes."
+        )
+        seclusion_rule = ""
     elif male_count == 0:
-        cast_rule = f"Show exactly {female_count} adult {'woman' if female_count == 1 else 'women'} in the foreground and no men in the foreground."
+        cast_rule = (
+            f"WOMEN-ONLY SCENE. PEOPLE COUNT — show exactly {female_count} adult "
+            f"{'woman' if female_count == 1 else 'women'} total in the entire image: "
+            f"{', '.join(speakers)}. They are the only human figures allowed anywhere. "
+            "No men, boys, children, staff, customers, travelers, background people, "
+            "silhouettes, reflections, portraits, people on screens, or partial human figures. "
+            "Keep every background seat and area empty."
+        )
+        clothing_rules = (
+            "- All depicted people are adult women. They wear a long khimar fully covering the "
+            "chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, "
+            "chest, ankles, or feet exposed."
+        )
+        seclusion_rule = ""
     else:
         cast_rule = (
-            f"Show exactly {male_count} adult {'man' if male_count == 1 else 'men'} and "
-            f"{female_count} adult {'woman' if female_count == 1 else 'women'} as the named foreground speakers. "
-            "They must be in an open public or professional setting with other people visible at a respectful distance; never depict one man and one woman secluded together in an enclosed room."
+            f"PEOPLE COUNT — show exactly {male_count} adult "
+            f"{'man' if male_count == 1 else 'men'} and {female_count} adult "
+            f"{'woman' if female_count == 1 else 'women'} as the named foreground speakers: "
+            f"{', '.join(speakers)}. Include exactly two additional modestly dressed adult men "
+            "as small, distant background figures to make the setting clearly public and prevent "
+            "mixed-gender seclusion. No additional women, children, silhouettes, reflections, "
+            "portraits, people on screens, or other human figures anywhere."
         )
+        clothing_rules = (
+            "- Every woman wears a long khimar fully covering the chest, loose opaque full-length "
+            "clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.\n"
+            "- Every man wears modest opaque clothing with loose trousers whose hems clearly end "
+            "above the ankle bones, with socks and closed shoes."
+        )
+        seclusion_rule = f"\n- No private mixed-gender seclusion. {mode}"
 
-    return f"""Visual rules:
+    return f"""NON-NEGOTIABLE VISUAL RULES — follow every rule literally:
 - {cast_rule}
-- The foreground cast must match the named dialogue speakers: {', '.join(speakers)}. Do not change their genders, duplicate them, or replace them with generic people.
-- Clean faceless editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
-- Women, when present, wear a long khimar fully covering the chest, loose opaque full-length clothing, socks, and closed shoes. No hair, neck, chest, ankles, or feet exposed.
-- Men wear modest opaque clothing with loose trousers whose hems clearly end above the ankle bones, with socks and closed shoes. Everyone maintains respectful distance; no touching or handshakes.
-- No private mixed-gender seclusion. {mode}
+- FACELESS MEANS COMPLETELY BLANK FACES. Every visible face must be a smooth, unmarked skin-colored shape with zero facial features: no eyes, pupils, eyelids, eyebrows, eyelashes, nose, nostrils, mouth, lips, teeth, ears, beard, moustache, or feature-like dots, lines, shadows, or indentations. This applies equally to the named speakers and every permitted distant background figure. Hair and headwear may frame the blank face shape, but never draw features inside it.
+- The named cast must match the dialogue speakers: {', '.join(speakers)}. Do not change their genders, duplicate them, or replace them with generic people.
+- Clean editorial illustration with a hand-drawn feel, subtle paper grain, natural proportions, warm daylight, restrained cream/orange/olive/navy palette, and consistent character design.
+{clothing_rules}
+- Everyone maintains respectful distance; no touching or handshakes.{seclusion_rule}
 - No temple, shrine, church, statue, idol, religious building, or religious symbol.
 - No readable text, speech bubbles, captions, logos, flags, watermarks, or branded products.
-- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses."""
+- Avoid glossy 3D rendering, plastic skin, dramatic AI haze, fantasy lighting, distorted anatomy, extra fingers, duplicated limbs, or overly staged poses.
+- Before rendering, verify twice: the total human count is exact, no forbidden person appears anywhere, and every face is completely blank."""
 
 
 def character_profiles(speakers: list[str], voices: dict[str, str]) -> list[str]:
