@@ -34,9 +34,9 @@ class CheckoutPayload(BaseModel):
 
 class TransferConfirmationPayload(BaseModel):
     transfer_date: date
-    sender_name: str = Field(min_length=2, max_length=160)
-    sender_bank: Optional[str] = Field(default=None, max_length=80)
     target_bank: str = Field(min_length=1, max_length=80)
+    sender_name: Optional[str] = Field(default=None, max_length=160)
+    sender_bank: Optional[str] = Field(default=None, max_length=80)
     notes: Optional[str] = Field(default=None, max_length=500)
 
 

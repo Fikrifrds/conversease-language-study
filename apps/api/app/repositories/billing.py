@@ -312,8 +312,8 @@ class BillingRepository:
         user_id: str,
         order_id: str,
         transfer_date: date,
-        sender_name: str,
         target_bank: str,
+        sender_name: Optional[str] = None,
         sender_bank: Optional[str] = None,
         notes: Optional[str] = None,
     ) -> PaymentOrderModel:
@@ -344,7 +344,7 @@ class BillingRepository:
         order.updated_at = now
         order.metadata_json = {
             **metadata,
-            "sender_name": sender_name.strip(),
+            "sender_name": (sender_name or "").strip(),
             "sender_bank": (sender_bank or "").strip(),
             "transfer_date": transfer_date.isoformat(),
             "user_notes": (notes or "").strip(),

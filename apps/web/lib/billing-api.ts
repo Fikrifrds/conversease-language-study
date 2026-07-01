@@ -261,10 +261,7 @@ export async function getCheckoutOrder(orderId: string): Promise<PaymentOrder> {
 export async function confirmManualTransfer(input: {
   orderId: string;
   transferDate: string;
-  senderName: string;
   targetBank: string;
-  senderBank?: string;
-  notes?: string;
 }): Promise<{ order: PaymentOrder; emailSent: boolean }> {
   const response = await requestJson<
     ApiResponse<{ order: ApiPaymentOrder; email: { sent: boolean } }>
@@ -272,10 +269,7 @@ export async function confirmManualTransfer(input: {
     method: "POST",
     body: JSON.stringify({
       transfer_date: input.transferDate,
-      sender_name: input.senderName,
-      sender_bank: input.senderBank ?? "",
-      target_bank: input.targetBank,
-      notes: input.notes ?? ""
+      target_bank: input.targetBank
     })
   });
 

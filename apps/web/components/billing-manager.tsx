@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { CheckCircle2, Clipboard, Landmark, ReceiptText } from "lucide-react";
-import { getAuthSession } from "@/lib/auth-api";
 import {
   bankLogo,
   confirmManualTransfer,
@@ -95,20 +94,12 @@ export function BillingManager() {
   const [checkoutOrder, setCheckoutOrder] = useState<PaymentOrder | null>(null);
   const [activePackage, setActivePackage] = useState<string | null>(null);
   const [transferDate, setTransferDate] = useState(todayInputValue);
-  const [senderName, setSenderName] = useState("");
-  const [senderBank, setSenderBank] = useState("");
   const [targetBank, setTargetBank] = useState("");
-  const [notes, setNotes] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
     let ignore = false;
-    const session = getAuthSession();
-
-    if (session?.user.name) {
-      setSenderName((current) => current || session.user.name);
-    }
 
     async function loadAccess() {
       try {
@@ -213,10 +204,7 @@ export function BillingManager() {
       const result = await confirmManualTransfer({
         orderId: checkoutOrder.id,
         transferDate,
-        senderName,
-        senderBank,
-        targetBank,
-        notes
+        targetBank
       });
       setCheckoutOrder(result.order);
       // Manual-transfer confirmation: payment claimed, pending admin approval.
@@ -224,7 +212,7 @@ export function BillingManager() {
       setMessage("Konfirmasi terkirim. Admin akan mengecek pembayaran dan approve akses.");
       await refreshAccess();
     } catch {
-      setError("Konfirmasi belum bisa dikirim. Pastikan tanggal dan nama pengirim sudah diisi.");
+      setError("Konfirmasi belum bisa dikirim. Pastikan bank tujuan dan tanggal transfer sudah dipilih.");
     } finally {
       setActivePackage(null);
     }
@@ -274,16 +262,10 @@ export function BillingManager() {
         <TransferInstruction
           order={checkoutOrder}
           transferDate={transferDate}
-          senderName={senderName}
-          senderBank={senderBank}
           targetBank={targetBank}
-          notes={notes}
           isSubmitting={activePackage === checkoutOrder.packageKey}
           onTransferDateChange={setTransferDate}
-          onSenderNameChange={setSenderName}
-          onSenderBankChange={setSenderBank}
           onTargetBankChange={setTargetBank}
-          onNotesChange={setNotes}
           onConfirm={handleConfirmTransfer}
           onCopy={handleCopy}
         />
@@ -369,31 +351,19 @@ export function BillingManager() {
 function TransferInstruction({
   order,
   transferDate,
-  senderName,
-  senderBank,
   targetBank,
-  notes,
   isSubmitting,
   onTransferDateChange,
-  onSenderNameChange,
-  onSenderBankChange,
   onTargetBankChange,
-  onNotesChange,
   onConfirm,
   onCopy
 }: {
   order: PaymentOrder;
   transferDate: string;
-  senderName: string;
-  senderBank: string;
   targetBank: string;
-  notes: string;
   isSubmitting: boolean;
   onTransferDateChange: (value: string) => void;
-  onSenderNameChange: (value: string) => void;
-  onSenderBankChange: (value: string) => void;
   onTargetBankChange: (value: string) => void;
-  onNotesChange: (value: string) => void;
   onConfirm: () => void;
   onCopy: (value: string) => void;
 }) {
@@ -500,10 +470,9 @@ function TransferInstruction({
       </div>
 
       {canConfirm ? (
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          <p className="text-sm font-medium text-ink/70 md:col-span-2">2. Isi detail transfer</p>
-          <label className="text-sm font-medium text-ink/70">
-            Tanggal transfer
+        <div className="mt-5 space-y-3">
+          <label className="block text-sm font-medium text-ink/70">
+            2. Tanggal transfer
             <input
               type="date"
               value={transferDate}
@@ -511,41 +480,11 @@ function TransferInstruction({
               className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
             />
           </label>
-          <label className="text-sm font-medium text-ink/70">
-            Nama pengirim
-            <input
-              type="text"
-              value={senderName}
-              onChange={(event) => onSenderNameChange(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              placeholder="Nama di rekening"
-            />
-          </label>
-          <label className="text-sm font-medium text-ink/70">
-            Bank pengirim
-            <input
-              type="text"
-              value={senderBank}
-              onChange={(event) => onSenderBankChange(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              placeholder="Opsional"
-            />
-          </label>
-          <label className="text-sm font-medium text-ink/70">
-            Catatan
-            <input
-              type="text"
-              value={notes}
-              onChange={(event) => onNotesChange(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              placeholder="Opsional"
-            />
-          </label>
           <button
             type="button"
             onClick={onConfirm}
-            disabled={isSubmitting || !targetBank || !transferDate || senderName.trim().length < 2}
-            className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60 md:col-span-2"
+            disabled={isSubmitting || !targetBank || !transferDate}
+            className="focus-ring flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
           >
             <ReceiptText className="h-4 w-4" aria-hidden="true" />
             {isSubmitting ? "Mengirim konfirmasi…" : "Saya Sudah Transfer"}

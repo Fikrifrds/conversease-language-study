@@ -79,10 +79,7 @@ export default function PricingPage() {
   const [checkoutOrder, setCheckoutOrder] = useState<PaymentOrder | null>(null);
   const [activePackage, setActivePackage] = useState<string | null>(null);
   const [transferDate, setTransferDate] = useState(todayInputValue);
-  const [senderName, setSenderName] = useState("");
-  const [senderBank, setSenderBank] = useState("");
   const [targetBank, setTargetBank] = useState("");
-  const [notes, setNotes] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [authPrompt, setAuthPrompt] = useState(false);
@@ -101,7 +98,6 @@ export default function PricingPage() {
     }
 
     setAuthPrompt(false);
-    setSenderName((current) => current || session.user.name);
     setActivePackage(item.key);
 
     try {
@@ -129,16 +125,13 @@ export default function PricingPage() {
       const result = await confirmManualTransfer({
         orderId: checkoutOrder.id,
         transferDate,
-        senderName,
-        senderBank,
-        targetBank,
-        notes
+        targetBank
       });
       setCheckoutOrder(result.order);
       trackEvent("purchase_pending", { package_key: checkoutOrder.packageKey });
       setMessage("Konfirmasi terkirim. Admin akan mengecek transfer dan mengaktifkan akses.");
     } catch {
-      setError("Konfirmasi belum bisa dikirim. Pastikan tanggal dan nama pengirim sudah diisi.");
+      setError("Konfirmasi belum bisa dikirim. Pastikan bank tujuan dan tanggal transfer sudah dipilih.");
     } finally {
       setActivePackage(null);
     }
@@ -234,20 +227,14 @@ export default function PricingPage() {
           order={checkoutOrder}
           authPrompt={authPrompt}
           transferDate={transferDate}
-          senderName={senderName}
-          senderBank={senderBank}
           targetBank={targetBank}
-          notes={notes}
           message={message}
           error={error}
           isSubmitting={activePackage === selectedItem.key}
           onClose={closeModal}
           onCopy={handleCopy}
           onTransferDateChange={setTransferDate}
-          onSenderNameChange={setSenderName}
-          onSenderBankChange={setSenderBank}
           onTargetBankChange={setTargetBank}
-          onNotesChange={setNotes}
           onConfirm={handleConfirmTransfer}
         />
       ) : null}
@@ -260,40 +247,28 @@ function CheckoutModal({
   order,
   authPrompt,
   transferDate,
-  senderName,
-  senderBank,
   targetBank,
-  notes,
   message,
   error,
   isSubmitting,
   onClose,
   onCopy,
   onTransferDateChange,
-  onSenderNameChange,
-  onSenderBankChange,
   onTargetBankChange,
-  onNotesChange,
   onConfirm
 }: {
   item: CheckoutItem;
   order: PaymentOrder | null;
   authPrompt: boolean;
   transferDate: string;
-  senderName: string;
-  senderBank: string;
   targetBank: string;
-  notes: string;
   message: string;
   error: string;
   isSubmitting: boolean;
   onClose: () => void;
   onCopy: (value: string) => void;
   onTransferDateChange: (value: string) => void;
-  onSenderNameChange: (value: string) => void;
-  onSenderBankChange: (value: string) => void;
   onTargetBankChange: (value: string) => void;
-  onNotesChange: (value: string) => void;
   onConfirm: () => void;
 }) {
   const canConfirm = order?.status === "pending";
@@ -423,12 +398,9 @@ function CheckoutModal({
             </div>
 
             {canConfirm ? (
-              <div className="grid gap-3 sm:grid-cols-2">
-                <p className="text-sm font-medium text-ink/70 sm:col-span-2">
-                  2. Isi detail transfer
-                </p>
-                <label className="text-sm font-medium text-ink/70">
-                  Tanggal transfer
+              <div className="space-y-3">
+                <label className="block text-sm font-medium text-ink/70">
+                  2. Tanggal transfer
                   <input
                     type="date"
                     value={transferDate}
@@ -436,41 +408,11 @@ function CheckoutModal({
                     className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
                   />
                 </label>
-                <label className="text-sm font-medium text-ink/70">
-                  Nama pengirim
-                  <input
-                    type="text"
-                    value={senderName}
-                    onChange={(event) => onSenderNameChange(event.target.value)}
-                    className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-                    placeholder="Nama di rekening"
-                  />
-                </label>
-                <label className="text-sm font-medium text-ink/70">
-                  Bank pengirim
-                  <input
-                    type="text"
-                    value={senderBank}
-                    onChange={(event) => onSenderBankChange(event.target.value)}
-                    className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-                    placeholder="Opsional"
-                  />
-                </label>
-                <label className="text-sm font-medium text-ink/70">
-                  Catatan
-                  <input
-                    type="text"
-                    value={notes}
-                    onChange={(event) => onNotesChange(event.target.value)}
-                    className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-                    placeholder="Opsional"
-                  />
-                </label>
                 <button
                   type="button"
                   onClick={onConfirm}
-                  disabled={isSubmitting || !targetBank || !transferDate || senderName.trim().length < 2}
-                  className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60 sm:col-span-2"
+                  disabled={isSubmitting || !targetBank || !transferDate}
+                  className="focus-ring flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   <ReceiptText className="h-4 w-4" aria-hidden="true" />
                   {isSubmitting ? "Mengirim konfirmasi..." : "Saya Sudah Transfer"}
