@@ -17,7 +17,7 @@ from typing import Dict, Optional, Tuple
 from uuid import uuid4
 
 import httpx
-from PIL import Image, UnidentifiedImageError
+from PIL import Image, ImageOps, UnidentifiedImageError
 import yaml
 
 from app.core.config import settings
@@ -164,14 +164,7 @@ async def regenerate_lesson_visual(
     image_client: Optional[TogetherImageClient] = None,
     overrides_dir: Optional[Path] = None,
 ) -> RegeneratedLessonVisual:
-    if slot not in VALID_SLOTS:
-        raise LessonVisualRegenerationError("invalid_visual_slot")
-
-    prompt_path = lesson_prompt_index().get(slug)
-    if prompt_path is None:
-        raise LessonVisualRegenerationError("lesson_visual_prompt_not_found")
-
-    prompt = extract_visual_prompt(prompt_path, slot)
+    prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
     client = image_client or TogetherImageClient(
         api_key=settings.together_api_key,
         base_url=settings.together_api_base_url,
@@ -181,6 +174,51 @@ async def regenerate_lesson_visual(
     image_bytes = await client.generate_png(prompt=prompt, slot=slot)
     validate_png(image_bytes)
     optimized_image_bytes = optimize_png(image_bytes)
+
+    return store_lesson_visual(
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+        image_bytes=optimized_image_bytes,
+        model=settings.together_image_model,
+        archive_reason="new_generation",
+        overrides_dir=overrides_dir,
+    )
+
+
+def upload_lesson_visual(
+    *,
+    slug: str,
+    slot: str,
+    image_bytes: bytes,
+    overrides_dir: Optional[Path] = None,
+) -> RegeneratedLessonVisual:
+    prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
+    normalized_image_bytes = normalize_uploaded_image(image_bytes=image_bytes, slot=slot)
+    return store_lesson_visual(
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+        image_bytes=normalized_image_bytes,
+        model="manual-upload",
+        archive_reason="manual_upload",
+        overrides_dir=overrides_dir,
+    )
+
+
+def store_lesson_visual(
+    *,
+    slug: str,
+    slot: str,
+    prompt_path: Path,
+    prompt: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+    overrides_dir: Optional[Path],
+) -> RegeneratedLessonVisual:
 
     root = overrides_dir or Path(settings.lesson_visual_overrides_dir)
     target_path = override_path(root=root, slug=slug, slot=slot)
@@ -199,31 +237,43 @@ async def regenerate_lesson_visual(
         slot=slot,
         prompt_path=prompt_path,
         prompt=prompt,
-        image_bytes=optimized_image_bytes,
-        model=settings.together_image_model,
-        archive_reason="new_generation",
+        image_bytes=image_bytes,
+        model=model,
+        archive_reason=archive_reason,
     )
-    atomic_write(target_path, optimized_image_bytes)
+    atomic_write(target_path, image_bytes)
     atomic_write(archive_marker_path(target_path), library_asset_id.encode("utf-8"))
     version = str(target_path.stat().st_mtime_ns)
 
     logger.info(
-        "lesson_visual_optimized slug=%s slot=%s original_bytes=%s stored_bytes=%s",
+        "lesson_visual_stored slug=%s slot=%s source=%s bytes=%s",
         slug,
         slot,
+        archive_reason,
         len(image_bytes),
-        len(optimized_image_bytes),
     )
 
     return RegeneratedLessonVisual(
         slug=slug,
         slot=slot,
-        model=settings.together_image_model,
+        model=model,
         version=version,
-        byte_count=len(optimized_image_bytes),
+        byte_count=len(image_bytes),
         library_asset_id=library_asset_id,
         library_relative_path=library_relative_path,
     )
+
+
+def resolve_lesson_visual_prompt(*, slug: str, slot: str) -> Tuple[Path, str]:
+    if slot not in VALID_SLOTS:
+        raise LessonVisualRegenerationError("invalid_visual_slot")
+    if not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", slug):
+        raise LessonVisualRegenerationError("invalid_lesson_slug")
+
+    prompt_path = lesson_prompt_index().get(slug)
+    if prompt_path is None:
+        raise LessonVisualRegenerationError("lesson_visual_prompt_not_found")
+    return prompt_path, extract_visual_prompt(prompt_path, slot)
 
 
 @lru_cache(maxsize=1)
@@ -261,7 +311,13 @@ def extract_visual_prompt(prompt_path: Path, slot: str) -> str:
     prompt = match.group("prompt").strip()
     if not prompt or len(prompt) > 30_000:
         raise LessonVisualRegenerationError("lesson_visual_prompt_invalid")
-    return prompt
+    width, height = image_generation_dimensions(slot)
+    return re.sub(
+        r"\bat \d+[×x]\d+ pixels\b",
+        f"at {width}×{height} pixels",
+        prompt,
+        count=1,
+    )
 
 
 def image_generation_dimensions(slot: str) -> Tuple[int, int]:
@@ -283,6 +339,39 @@ def validate_png(image_bytes: bytes) -> None:
         raise LessonVisualRegenerationError("generated_image_size_invalid")
     if not image_bytes.startswith(PNG_SIGNATURE):
         raise LessonVisualRegenerationError("generated_image_not_png")
+
+
+def normalize_uploaded_image(*, image_bytes: bytes, slot: str) -> bytes:
+    if not image_bytes or len(image_bytes) > MAX_IMAGE_BYTES:
+        raise LessonVisualRegenerationError("uploaded_image_size_invalid")
+
+    try:
+        with Image.open(BytesIO(image_bytes)) as source:
+            source.load()
+            if source.format not in {"PNG", "JPEG", "WEBP"}:
+                raise LessonVisualRegenerationError("uploaded_image_format_invalid")
+
+            source = ImageOps.exif_transpose(source)
+            target_width, target_height = image_generation_dimensions(slot)
+            target_ratio = target_width / target_height
+            source_ratio = source.width / source.height
+            if abs(source_ratio - target_ratio) / target_ratio > 0.05:
+                raise LessonVisualRegenerationError("uploaded_image_aspect_ratio_invalid")
+
+            mode = "RGBA" if "A" in source.getbands() else "RGB"
+            normalized = ImageOps.fit(
+                source.convert(mode),
+                (target_width, target_height),
+                method=Image.Resampling.LANCZOS,
+            )
+            output = BytesIO()
+            normalized.save(output, format="PNG", optimize=True, compress_level=9)
+    except LessonVisualRegenerationError:
+        raise
+    except (OSError, UnidentifiedImageError, ValueError, ZeroDivisionError) as exc:
+        raise LessonVisualRegenerationError("uploaded_image_format_invalid") from exc
+
+    return optimize_png(output.getvalue())
 
 
 def optimize_png(image_bytes: bytes) -> bytes:

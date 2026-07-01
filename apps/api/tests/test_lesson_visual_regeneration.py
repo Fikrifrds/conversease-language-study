@@ -16,6 +16,7 @@ from app.services.lesson_visual_regeneration import (
     lesson_prompt_index,
     optimize_png,
     regenerate_lesson_visual,
+    upload_lesson_visual,
 )
 
 
@@ -59,6 +60,8 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             self.assertEqual(result.slot, "hero")
             self.assertEqual(client.prompts[0][1], "hero")
             self.assertIn("Lesson: Saying Hello", client.prompts[0][0])
+            self.assertIn("1024×576 pixels", client.prompts[0][0])
+            self.assertNotIn("1672×941 pixels", client.prompts[0][0])
 
             library_entry = root / "_library" / result.library_relative_path
             self.assertTrue((library_entry / "image.png").exists())
@@ -131,6 +134,38 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
                 for entry in entries
             }
             self.assertEqual(reasons, {"preserved_existing_override", "new_generation"})
+
+    def test_manual_jpeg_upload_is_normalized_and_archived(self):
+        source = BytesIO()
+        Image.new("RGB", (1600, 900), (245, 158, 11)).save(source, format="JPEG")
+        with tempfile.TemporaryDirectory() as temporary_dir:
+            root = Path(temporary_dir)
+            result = upload_lesson_visual(
+                slug="saying-hello-and-goodbye",
+                slot="hero",
+                image_bytes=source.getvalue(),
+                overrides_dir=root,
+            )
+
+            self.assertEqual(result.model, "manual-upload")
+            output = root / "saying-hello-and-goodbye" / "hero.png"
+            with Image.open(output) as image:
+                self.assertEqual(image.size, (1024, 576))
+            metadata = yaml.safe_load(
+                (root / "_library" / result.library_relative_path / "metadata.yaml").read_text()
+            )
+            self.assertEqual(metadata["archive_reason"], "manual_upload")
+
+    def test_manual_upload_rejects_wrong_aspect_ratio(self):
+        source = BytesIO()
+        Image.new("RGB", (600, 600), (245, 158, 11)).save(source, format="PNG")
+        with self.assertRaises(LessonVisualRegenerationError) as context:
+            upload_lesson_visual(
+                slug="saying-hello-and-goodbye",
+                slot="hero",
+                image_bytes=source.getvalue(),
+            )
+        self.assertEqual(context.exception.code, "uploaded_image_aspect_ratio_invalid")
 
     async def test_invalid_slot_is_rejected_before_generation(self):
         client = FakeImageClient(self.png)

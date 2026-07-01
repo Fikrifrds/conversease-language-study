@@ -87,6 +87,40 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
             "/lesson-visuals/saying-hello-and-goodbye/hero?v=123456",
         )
 
+    def test_lesson_visual_prompt_can_be_copied_by_admin(self):
+        response = self.client.get(
+            "/api/admin/lessons/saying-hello-and-goodbye/visuals/hero/prompt",
+            headers=self.headers,
+        )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()["data"]
+        self.assertIn("Lesson: Saying Hello and Goodbye", data["prompt"])
+        self.assertIn("1024×576 pixels", data["prompt"])
+        self.assertEqual((data["width"], data["height"]), (1024, 576))
+
+    def test_lesson_visual_manual_upload_returns_new_asset(self):
+        result = RegeneratedLessonVisual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            model="manual-upload",
+            version="654321",
+            byte_count=42,
+            library_asset_id="manual-asset",
+            library_relative_path="saying-hello-and-goodbye/hero/manual-asset",
+        )
+        with patch("app.api.routes.admin_ai.upload_lesson_visual", return_value=result):
+            response = self.client.post(
+                "/api/admin/lessons/saying-hello-and-goodbye/visuals/hero/upload",
+                headers=self.headers,
+                files={"image": ("hero.png", b"image-bytes", "image/png")},
+            )
+
+        self.assertEqual(response.status_code, 200)
+        data = response.json()["data"]
+        self.assertEqual(data["model"], "manual-upload")
+        self.assertEqual(data["library_asset_id"], "manual-asset")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -4,7 +4,8 @@ Lets operators verify from production which AI integrations are active:
 LLM feedback (Conversation Coach), speech-to-text, and TTS. Mirrors the
 admin email diagnostics pattern.
 """
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from starlette.concurrency import run_in_threadpool
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.core.config import settings
@@ -13,7 +14,12 @@ from app.domain.ai import TASK_MODEL_CONFIGS, ChatMessage
 from app.services.llm import LLMError, get_llm_provider
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
+    MAX_IMAGE_BYTES,
+    RegeneratedLessonVisual,
+    image_generation_dimensions,
     regenerate_lesson_visual,
+    resolve_lesson_visual_prompt,
+    upload_lesson_visual,
 )
 
 router = APIRouter()
@@ -101,6 +107,52 @@ async def regenerate_admin_lesson_visual(
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
 
+    return lesson_visual_response(result=result, generated_by=admin.display_name)
+
+
+@router.get("/admin/lessons/{slug}/visuals/{slot}/prompt")
+async def get_admin_lesson_visual_prompt(
+    slug: str,
+    slot: str,
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    try:
+        _, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    width, height = image_generation_dimensions(slot)
+    return {
+        "data": {
+            "slug": slug,
+            "slot": slot,
+            "prompt": prompt,
+            "width": width,
+            "height": height,
+        }
+    }
+
+
+@router.post("/admin/lessons/{slug}/visuals/{slot}/upload")
+async def upload_admin_lesson_visual(
+    slug: str,
+    slot: str,
+    image: UploadFile = File(...),
+    admin: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    image_bytes = await image.read(MAX_IMAGE_BYTES + 1)
+    try:
+        result = await run_in_threadpool(
+            upload_lesson_visual,
+            slug=slug,
+            slot=slot,
+            image_bytes=image_bytes,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return lesson_visual_response(result=result, generated_by=admin.display_name)
+
+
+def lesson_visual_response(*, result: RegeneratedLessonVisual, generated_by: str) -> dict:
     return {
         "data": {
             "slug": result.slug,
@@ -111,16 +163,20 @@ async def regenerate_admin_lesson_visual(
             "library_asset_id": result.library_asset_id,
             "library_relative_path": result.library_relative_path,
             "asset_url": f"/lesson-visuals/{result.slug}/{result.slot}?v={result.version}",
-            "generated_by": admin.display_name,
+            "generated_by": generated_by,
         }
     }
 
 
 def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPException:
+    if exc.code == "uploaded_image_size_invalid":
+        return HTTPException(status_code=413, detail=exc.code)
     if exc.code in {
         "invalid_lesson_slug",
         "invalid_visual_slot",
         "lesson_visual_prompt_invalid",
+        "uploaded_image_format_invalid",
+        "uploaded_image_aspect_ratio_invalid",
     }:
         return HTTPException(status_code=400, detail=exc.code)
     if exc.code in {

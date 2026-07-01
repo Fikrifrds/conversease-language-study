@@ -28,6 +28,16 @@ type ApiRegeneratedLessonVisual = {
   };
 };
 
+type ApiLessonVisualPrompt = {
+  data: {
+    slug: string;
+    slot: LessonVisualSlot;
+    prompt: string;
+    width: number;
+    height: number;
+  };
+};
+
 function apiBaseUrl() {
   return process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
 }
@@ -57,6 +67,39 @@ export async function regenerateLessonVisual(
   }
 
   const payload = (await response.json()) as ApiRegeneratedLessonVisual;
+  return mapRegeneratedLessonVisual(payload);
+}
+
+export async function getLessonVisualPrompt(slug: string, slot: LessonVisualSlot) {
+  const response = await adminFetch(
+    `${apiBaseUrl()}/admin/lessons/${encodeURIComponent(slug)}/visuals/${slot}/prompt`
+  );
+  if (!response.ok) {
+    throw new Error(await responseError(response));
+  }
+  return ((await response.json()) as ApiLessonVisualPrompt).data;
+}
+
+export async function uploadLessonVisual(
+  slug: string,
+  slot: LessonVisualSlot,
+  image: File
+): Promise<RegeneratedLessonVisual> {
+  const formData = new FormData();
+  formData.append("image", image);
+  const response = await adminFetch(
+    `${apiBaseUrl()}/admin/lessons/${encodeURIComponent(slug)}/visuals/${slot}/upload`,
+    { method: "POST", body: formData }
+  );
+  if (!response.ok) {
+    throw new Error(await responseError(response));
+  }
+  return mapRegeneratedLessonVisual((await response.json()) as ApiRegeneratedLessonVisual);
+}
+
+function mapRegeneratedLessonVisual(
+  payload: ApiRegeneratedLessonVisual
+): RegeneratedLessonVisual {
   return {
     slug: payload.data.slug,
     slot: payload.data.slot,
@@ -70,6 +113,20 @@ export async function regenerateLessonVisual(
   };
 }
 
+function adminFetch(url: string, init: RequestInit = {}) {
+  const token = getAuthToken();
+  if (!token) {
+    throw new Error("Admin login required");
+  }
+  return fetch(url, {
+    ...init,
+    headers: {
+      ...init.headers,
+      Authorization: `Bearer ${token}`
+    }
+  });
+}
+
 async function responseError(response: Response) {
   const raw = await response.text();
   try {
@@ -77,6 +134,15 @@ async function responseError(response: Response) {
     if (typeof parsed.detail === "string") {
       if (parsed.detail === "together_api_key_missing") {
         return "TOGETHER_API_KEY belum dikonfigurasi.";
+      }
+      if (parsed.detail === "uploaded_image_size_invalid") {
+        return "Ukuran file terlalu besar. Maksimum 30 MB.";
+      }
+      if (parsed.detail === "uploaded_image_format_invalid") {
+        return "Format gambar harus PNG, JPEG, atau WebP.";
+      }
+      if (parsed.detail === "uploaded_image_aspect_ratio_invalid") {
+        return "Rasio gambar tidak sesuai dengan slot ini.";
       }
       return parsed.detail;
     }
