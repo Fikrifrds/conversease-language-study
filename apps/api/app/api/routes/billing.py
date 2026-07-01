@@ -312,6 +312,12 @@ async def create_checkout(
     if payload.package_key == "free":
         raise HTTPException(status_code=422, detail="Free plan does not require checkout")
 
+    if current_user.email_verified_at is None:
+        raise HTTPException(
+            status_code=403,
+            detail="Verify your email before creating a payment order",
+        )
+
     try:
         order = BillingRepository(db).create_manual_transfer_order(
             user_id=current_user.id,

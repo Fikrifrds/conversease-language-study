@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { CheckCircle2, Clipboard, CreditCard, Landmark, ReceiptText, XCircle } from "lucide-react";
+import { CheckCircle2, Clipboard, CreditCard, Landmark, MailWarning, ReceiptText, XCircle } from "lucide-react";
 import { Modal } from "@/components/modal";
 import {
   bankLogo,
@@ -18,6 +18,7 @@ import {
   type PaymentKind,
   type PaymentOrder
 } from "@/lib/billing-api";
+import { getAuthSession, requestEmailVerification } from "@/lib/auth-api";
 import { plans } from "@/lib/data";
 import { trackEvent } from "@/lib/analytics";
 
@@ -114,6 +115,12 @@ export function BillingManager() {
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
   const [showPaymentInstructions, setShowPaymentInstructions] = useState(false);
   const [cancellingOrderId, setCancellingOrderId] = useState<string | null>(null);
+  const [emailVerified, setEmailVerified] = useState(true);
+  const [isSendingVerification, setIsSendingVerification] = useState(false);
+
+  useEffect(() => {
+    setEmailVerified(Boolean(getAuthSession()?.user.emailVerifiedAt));
+  }, []);
 
   useEffect(() => {
     let ignore = false;
@@ -254,6 +261,26 @@ export function BillingManager() {
     }
   }
 
+  async function handleResendVerification() {
+    setIsSendingVerification(true);
+    setError("");
+    setMessage("");
+
+    try {
+      const result = await requestEmailVerification();
+      if (result.alreadyVerified) {
+        setEmailVerified(true);
+        setMessage("Email kamu sudah terverifikasi. Silakan lanjut upgrade.");
+      } else {
+        setMessage(`Link verifikasi dikirim ke ${result.email}. Cek inbox lalu kembali ke sini.`);
+      }
+    } catch {
+      setError("Link verifikasi belum bisa dikirim. Coba ulang sebentar.");
+    } finally {
+      setIsSendingVerification(false);
+    }
+  }
+
   async function handleConfirmTransfer() {
     if (!checkoutOrder) {
       return;
@@ -339,7 +366,7 @@ export function BillingManager() {
             </span>
           ) : hasOpenOrder ? (
             <p className="text-sm text-ink/55">Selesaikan order aktif dulu sebelum membuat order baru.</p>
-          ) : proPlan ? (
+          ) : proPlan && emailVerified ? (
             <button
               type="button"
               onClick={() => handleCheckout(proPlan.key, "subscription")}
@@ -351,6 +378,25 @@ export function BillingManager() {
             </button>
           ) : null}
         </div>
+
+        {!isProActive && !hasOpenOrder && !emailVerified ? (
+          <div className="mt-5 flex flex-col gap-3 rounded-lg border border-coral/25 bg-[#fdf3ef] p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-start gap-3">
+              <MailWarning className="mt-0.5 h-5 w-5 shrink-0 text-coral" aria-hidden="true" />
+              <p className="text-sm leading-6 text-ink/70">
+                Verifikasi email dulu sebelum upgrade. Cek link verifikasi di inbox kamu, atau kirim ulang.
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={handleResendVerification}
+              disabled={isSendingVerification}
+              className="focus-ring inline-flex w-fit shrink-0 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              {isSendingVerification ? "Mengirim…" : "Kirim ulang link verifikasi"}
+            </button>
+          </div>
+        ) : null}
 
         {checkoutOrder && hasOpenOrder ? (
           <ActiveOrderCard

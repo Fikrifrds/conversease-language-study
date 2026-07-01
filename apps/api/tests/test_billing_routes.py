@@ -184,6 +184,50 @@ class BillingRoutesTest(unittest.TestCase):
             "Manual transfer unique codes are temporarily unavailable",
         )
 
+    def test_checkout_blocked_when_email_not_verified(self):
+        client = self.client()
+        with self.SessionLocal() as db:
+            now = datetime.utcnow()
+            db.add(
+                models.UserModel(
+                    id="user-unverified",
+                    name="Unverified",
+                    email="unverified@example.local",
+                    password_hash="hashed",
+                    email_verified_at=None,
+                    created_at=now,
+                    updated_at=now,
+                )
+            )
+            db.commit()
+        token = create_access_token("user-unverified")
+
+        response = client.post(
+            "/api/billing/checkout",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"package_key": "pro_1_month", "payment_kind": "subscription"},
+        )
+
+        client.app.dependency_overrides.clear()
+        self.assertEqual(response.status_code, 403)
+        self.assertEqual(
+            response.json()["detail"], "Verify your email before creating a payment order"
+        )
+
+    def test_checkout_allowed_when_email_verified(self):
+        client = self.client()
+        self.seed_second_user()  # user-456, email_verified_at set
+        token = create_access_token("user-456")
+
+        response = client.post(
+            "/api/billing/checkout",
+            headers={"Authorization": f"Bearer {token}"},
+            json={"package_key": "pro_1_month", "payment_kind": "subscription"},
+        )
+
+        client.app.dependency_overrides.clear()
+        self.assertEqual(response.status_code, 200)
+
     def test_user_can_get_own_manual_transfer_order_from_checkout_url(self):
         client = self.client()
         order_id = self.seed_user_and_manual_order()
