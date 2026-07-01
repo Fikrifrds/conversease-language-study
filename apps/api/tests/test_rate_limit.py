@@ -21,6 +21,7 @@ class RateLimitTest(unittest.TestCase):
         self.original_auth_limit = settings.auth_rate_limit_requests
         self.original_admin_limit = settings.admin_rate_limit_requests
         self.original_conversation_limit = settings.conversation_rate_limit_requests
+        self.original_billing_checkout_limit = settings.billing_checkout_rate_limit_requests
         self.original_email_recipient_limit = settings.email_recipient_rate_limit_requests
         self.original_login_max_failed = settings.login_max_failed_attempts
         rate_limiter.reset()
@@ -32,6 +33,7 @@ class RateLimitTest(unittest.TestCase):
         settings.auth_rate_limit_requests = self.original_auth_limit
         settings.admin_rate_limit_requests = self.original_admin_limit
         settings.conversation_rate_limit_requests = self.original_conversation_limit
+        settings.billing_checkout_rate_limit_requests = self.original_billing_checkout_limit
         settings.email_recipient_rate_limit_requests = self.original_email_recipient_limit
         settings.login_max_failed_attempts = self.original_login_max_failed
         rate_limiter.reset()
@@ -103,6 +105,19 @@ class RateLimitTest(unittest.TestCase):
         # session ids share one bucket per client, so the second turn is blocked.
         first = client.post("/api/conversation-sessions/session-a/turns", json={"transcript": "hi"})
         second = client.post("/api/conversation-sessions/session-b/turns", json={"transcript": "hi"})
+
+        self.assertNotEqual(first.status_code, 429)
+        self.assertEqual(second.status_code, 429)
+        self.assertEqual(second.json()["detail"], "Rate limit exceeded")
+
+    def test_billing_checkout_is_rate_limited_before_auth_check(self):
+        settings.rate_limit_enabled = True
+        settings.rate_limit_window_seconds = 60
+        settings.billing_checkout_rate_limit_requests = 1
+        client = TestClient(create_app())
+
+        first = client.post("/api/billing/checkout", json={"package_key": "pro_1_month", "payment_kind": "subscription"})
+        second = client.post("/api/billing/checkout", json={"package_key": "pro_1_month", "payment_kind": "subscription"})
 
         self.assertNotEqual(first.status_code, 429)
         self.assertEqual(second.status_code, 429)

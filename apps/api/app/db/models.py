@@ -7,6 +7,7 @@ from sqlalchemy import (
     DateTime,
     ForeignKey,
     Float,
+    Index,
     Integer,
     String,
     Text,
@@ -254,6 +255,17 @@ class PaymentOrderModel(Base):
     admin_notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+
+    __table_args__ = (
+        Index(
+            "ix_payment_orders_active_unique_code",
+            "provider",
+            "unique_code",
+            unique=True,
+            sqlite_where=(status.in_(["pending", "confirmed"]) & unique_code.is_not(None)),
+            postgresql_where=(status.in_(["pending", "confirmed"]) & unique_code.is_not(None)),
+        ),
+    )
 
 
 class UserModel(Base):

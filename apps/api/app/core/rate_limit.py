@@ -142,6 +142,11 @@ def rate_limit_rule(request: Request) -> Optional[tuple[str, int]]:
     if path.startswith("/api/admin/"):
         return ("admin", settings.admin_rate_limit_requests)
 
+    # Each checkout mints a pending order and burns one of the ~899 available
+    # manual-transfer unique codes, so throttle it separate from general traffic.
+    if request.method == "POST" and path == "/api/billing/checkout":
+        return ("billing_checkout", settings.billing_checkout_rate_limit_requests)
+
     # Conversation turns each trigger a paid LLM/STT call. Limit POSTs to the
     # turn endpoints so abuse cannot burn provider cost unbounded.
     if request.method == "POST" and _is_conversation_turn_path(path):

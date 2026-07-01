@@ -110,6 +110,9 @@ class Settings(BaseSettings):
     auth_rate_limit_requests: int = 10
     admin_rate_limit_requests: int = 120
     conversation_rate_limit_requests: int = 40
+    # Checkout mints a pending order and burns one of the ~899 available
+    # manual-transfer unique codes, so cap it separately from general traffic.
+    billing_checkout_rate_limit_requests: int = 10
     # Per-recipient cap on transactional emails (password reset, email
     # verification) so abusing forgot-password can't email-bomb a victim from
     # many IPs. Counts emails sent to one address within the window.
@@ -241,6 +244,9 @@ class Settings(BaseSettings):
 
         if self.rate_limit_enabled and self.conversation_rate_limit_requests < 1:
             errors.append("CONVERSATION_RATE_LIMIT_REQUESTS must be positive")
+
+        if self.rate_limit_enabled and self.billing_checkout_rate_limit_requests < 1:
+            errors.append("BILLING_CHECKOUT_RATE_LIMIT_REQUESTS must be positive")
 
         if self.rate_limit_enabled and self.email_recipient_rate_limit_requests < 1:
             errors.append("EMAIL_RECIPIENT_RATE_LIMIT_REQUESTS must be positive")

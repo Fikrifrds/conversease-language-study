@@ -149,7 +149,9 @@ class BillingRoutesTest(unittest.TestCase):
     def test_manual_transfer_checkout_returns_503_when_unique_codes_are_full(self):
         client = self.client()
         self.seed_user_and_sandbox_order()
+        self.seed_second_user()
         token = create_access_token("user-123")
+        other_token = create_access_token("user-456")
         original_min = settings.manual_transfer_unique_code_min
         original_max = settings.manual_transfer_unique_code_max
         settings.manual_transfer_unique_code_min = 101
@@ -161,9 +163,12 @@ class BillingRoutesTest(unittest.TestCase):
                 headers={"Authorization": f"Bearer {token}"},
                 json={"package_key": "pro_1_month", "payment_kind": "subscription"},
             )
+            # A different user competing for the same (single, exhausted) code
+            # range — as opposed to the same user re-checking-out, which now
+            # returns their existing pending order instead of erroring.
             second = client.post(
                 "/api/billing/checkout",
-                headers={"Authorization": f"Bearer {token}"},
+                headers={"Authorization": f"Bearer {other_token}"},
                 json={"package_key": "pro_1_month", "payment_kind": "subscription"},
             )
         finally:

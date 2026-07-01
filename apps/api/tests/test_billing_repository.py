@@ -66,6 +66,50 @@ class BillingRepositoryTest(unittest.TestCase):
             self.assertIsNotNone(order.unique_code)
             self.assertEqual(order.amount_idr, 49000 + order.unique_code)
 
+    def test_repeat_checkout_for_same_pending_package_returns_existing_order(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+
+            first = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            second = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+
+            self.assertEqual(first.id, second.id)
+            self.assertEqual(first.unique_code, second.unique_code)
+
+    def test_concurrent_checkout_cannot_reuse_active_unique_code(self):
+        # Simulates two near-simultaneous checkouts both computing the same
+        # "free" unique code before either commits: the DB constraint should
+        # reject the second insert, and the retry loop should recover with a
+        # different code instead of leaving two active orders with the same
+        # transfer amount.
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            codes = iter([101, 101, 102])
+            repository._next_manual_transfer_unique_code = lambda: next(codes)
+
+            first = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            second = repository.create_manual_transfer_order(
+                user_id="user-456",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+
+            self.assertEqual(first.unique_code, 101)
+            self.assertEqual(second.unique_code, 102)
+            self.assertNotEqual(first.amount_idr, second.amount_idr)
+
     def test_confirm_records_chosen_destination_bank(self):
         with self.SessionLocal() as db:
             repository = BillingRepository(db)

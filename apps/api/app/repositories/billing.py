@@ -3,6 +3,7 @@ from typing import Optional
 from uuid import uuid4
 
 from sqlalchemy import select
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app.core.config import settings
@@ -240,41 +241,68 @@ class BillingRepository:
 
         now = datetime.utcnow()
         self.expire_stale_manual_transfer_orders(now=now, commit=False)
-        order_id = f"order-{uuid4().hex[:16]}"
+
+        # Re-checkout for the same package while a claim is already pending just
+        # returns that order, instead of minting another and burning another of
+        # the ~899 available unique codes.
+        existing = self.db.execute(
+            select(PaymentOrderModel).where(
+                PaymentOrderModel.provider == MANUAL_TRANSFER_PROVIDER,
+                PaymentOrderModel.user_id == user_id,
+                PaymentOrderModel.package_key == package_key,
+                PaymentOrderModel.payment_kind == payment_kind.value,
+                PaymentOrderModel.status == PaymentStatus.PENDING.value,
+            )
+        ).scalars().first()
+        if existing is not None:
+            return existing
+
         base_amount_idr = int(package["price_idr"])
-        unique_code = self._next_manual_transfer_unique_code()
-        amount_idr = base_amount_idr + unique_code
         expires_at = now + timedelta(hours=settings.manual_transfer_expire_hours)
-        order = PaymentOrderModel(
-            id=order_id,
-            user_id=user_id,
-            package_key=package_key,
-            payment_kind=payment_kind.value,
-            status=PaymentStatus.PENDING.value,
-            amount_idr=amount_idr,
-            base_amount_idr=base_amount_idr,
-            unique_code=unique_code,
-            provider=MANUAL_TRANSFER_PROVIDER,
-            provider_reference=f"manual-{unique_code}-{uuid4().hex[:10]}",
-            checkout_url=f"/billing?order_id={order_id}",
-            metadata_json={
-                "package_name": package["name"],
-                "base_amount_idr": base_amount_idr,
-                "unique_code": unique_code,
-                "bank_name": settings.manual_transfer_bank_name,
-                "bank_account_number": settings.manual_transfer_account_number,
-                "bank_account_holder": settings.manual_transfer_account_holder,
-                "bank_accounts": settings.manual_transfer_accounts,
-                "admin_email": settings.payment_admin_email,
-                "confirmation_window": f"1x{settings.manual_transfer_expire_hours} jam",
-                "expires_at": expires_at.isoformat(),
-            },
-            created_at=now,
-            updated_at=now,
-        )
-        self.db.add(order)
-        self.db.commit()
-        return order
+
+        max_attempts = 5
+        for attempt in range(max_attempts):
+            order_id = f"order-{uuid4().hex[:16]}"
+            unique_code = self._next_manual_transfer_unique_code()
+            amount_idr = base_amount_idr + unique_code
+            order = PaymentOrderModel(
+                id=order_id,
+                user_id=user_id,
+                package_key=package_key,
+                payment_kind=payment_kind.value,
+                status=PaymentStatus.PENDING.value,
+                amount_idr=amount_idr,
+                base_amount_idr=base_amount_idr,
+                unique_code=unique_code,
+                provider=MANUAL_TRANSFER_PROVIDER,
+                provider_reference=f"manual-{unique_code}-{uuid4().hex[:10]}",
+                checkout_url=f"/billing?order_id={order_id}",
+                metadata_json={
+                    "package_name": package["name"],
+                    "base_amount_idr": base_amount_idr,
+                    "unique_code": unique_code,
+                    "bank_name": settings.manual_transfer_bank_name,
+                    "bank_account_number": settings.manual_transfer_account_number,
+                    "bank_account_holder": settings.manual_transfer_account_holder,
+                    "bank_accounts": settings.manual_transfer_accounts,
+                    "admin_email": settings.payment_admin_email,
+                    "confirmation_window": f"1x{settings.manual_transfer_expire_hours} jam",
+                    "expires_at": expires_at.isoformat(),
+                },
+                created_at=now,
+                updated_at=now,
+            )
+            self.db.add(order)
+            try:
+                self.db.commit()
+                return order
+            except IntegrityError:
+                # Another concurrent checkout claimed this unique code first; retry with a fresh one.
+                self.db.rollback()
+                if attempt == max_attempts - 1:
+                    raise
+
+        raise ManualTransferCodeUnavailableError("No manual transfer unique codes available")
 
     def create_sandbox_order(
         self,
