@@ -8,6 +8,8 @@ export type RegeneratedLessonVisual = {
   model: string;
   version: string;
   byteCount: number;
+  libraryAssetId: string;
+  libraryRelativePath: string;
   assetUrl: string;
   generatedBy: string;
 };
@@ -19,6 +21,8 @@ type ApiRegeneratedLessonVisual = {
     model: string;
     version: string;
     byte_count: number;
+    library_asset_id: string;
+    library_relative_path: string;
     asset_url: string;
     generated_by: string;
   };
@@ -59,6 +63,8 @@ export async function regenerateLessonVisual(
     model: payload.data.model,
     version: payload.data.version,
     byteCount: payload.data.byte_count,
+    libraryAssetId: payload.data.library_asset_id,
+    libraryRelativePath: payload.data.library_relative_path,
     assetUrl: payload.data.asset_url,
     generatedBy: payload.data.generated_by
   };

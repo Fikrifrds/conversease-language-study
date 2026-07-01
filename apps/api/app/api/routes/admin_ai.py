@@ -108,6 +108,8 @@ async def regenerate_admin_lesson_visual(
             "model": result.model,
             "version": result.version,
             "byte_count": result.byte_count,
+            "library_asset_id": result.library_asset_id,
+            "library_relative_path": result.library_relative_path,
             "asset_url": f"/lesson-visuals/{result.slug}/{result.slot}?v={result.version}",
             "generated_by": admin.display_name,
         }

@@ -66,6 +66,8 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
             model="openai/gpt-image-2",
             version="123456",
             byte_count=42,
+            library_asset_id="20260701T120000000000Z",
+            library_relative_path="saying-hello-and-goodbye/hero/20260701T120000000000Z",
         )
         with patch(
             "app.api.routes.admin_ai.regenerate_lesson_visual",
@@ -79,6 +81,7 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         data = response.json()["data"]
         self.assertEqual(data["model"], "openai/gpt-image-2")
+        self.assertEqual(data["library_asset_id"], "20260701T120000000000Z")
         self.assertEqual(
             data["asset_url"],
             "/lesson-visuals/saying-hello-and-goodbye/hero?v=123456",

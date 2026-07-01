@@ -5,6 +5,7 @@ import tempfile
 import unittest
 
 from PIL import Image
+import yaml
 
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
@@ -49,11 +50,28 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             output = root / "saying-hello-and-goodbye" / "hero.png"
 
             self.assertTrue(output.read_bytes().startswith(PNG_SIGNATURE))
+            self.assertEqual(
+                output.with_suffix(".library-asset-id").read_text(),
+                result.library_asset_id,
+            )
             self.assertEqual(result.byte_count, output.stat().st_size)
             self.assertEqual(result.slug, "saying-hello-and-goodbye")
             self.assertEqual(result.slot, "hero")
             self.assertEqual(client.prompts[0][1], "hero")
             self.assertIn("Lesson: Saying Hello", client.prompts[0][0])
+
+            library_entry = root / "_library" / result.library_relative_path
+            self.assertTrue((library_entry / "image.png").exists())
+            self.assertEqual(library_entry.name, result.library_asset_id)
+            metadata = yaml.safe_load((library_entry / "metadata.yaml").read_text())
+            self.assertEqual(metadata["description"]["setting"], "a bright open English classroom beside the classroom entrance.")
+            self.assertEqual(
+                [person["name"] for person in metadata["description"]["people"]],
+                ["Dimas", "Ben"],
+            )
+            readme = (library_entry / "README.md").read_text()
+            self.assertIn("## Tentang gambar", readme)
+            self.assertIn("## Siapa saja di dalam gambar", readme)
 
     async def test_regenerates_only_requested_card(self):
         client = FakeImageClient(self.png)
@@ -69,6 +87,50 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             self.assertTrue((root / "saying-hello-and-goodbye" / "card-2.png").exists())
             self.assertFalse((root / "saying-hello-and-goodbye" / "hero.png").exists())
             self.assertIn("card 2", client.prompts[0][0].lower())
+
+    async def test_each_regeneration_is_preserved_as_a_separate_library_asset(self):
+        client = FakeImageClient(self.png)
+        with tempfile.TemporaryDirectory() as temporary_dir:
+            root = Path(temporary_dir)
+            first = await regenerate_lesson_visual(
+                slug="saying-hello-and-goodbye",
+                slot="hero",
+                image_client=client,
+                overrides_dir=root,
+            )
+            second = await regenerate_lesson_visual(
+                slug="saying-hello-and-goodbye",
+                slot="hero",
+                image_client=client,
+                overrides_dir=root,
+            )
+
+            self.assertNotEqual(first.library_asset_id, second.library_asset_id)
+            entries = list((root / "_library" / "saying-hello-and-goodbye" / "hero").iterdir())
+            self.assertEqual(len(entries), 2)
+
+    async def test_existing_untracked_override_is_archived_before_replacement(self):
+        client = FakeImageClient(self.png)
+        with tempfile.TemporaryDirectory() as temporary_dir:
+            root = Path(temporary_dir)
+            existing = root / "saying-hello-and-goodbye" / "hero.png"
+            existing.parent.mkdir(parents=True)
+            existing.write_bytes(self.png)
+
+            await regenerate_lesson_visual(
+                slug="saying-hello-and-goodbye",
+                slot="hero",
+                image_client=client,
+                overrides_dir=root,
+            )
+
+            entries = list((root / "_library" / "saying-hello-and-goodbye" / "hero").iterdir())
+            self.assertEqual(len(entries), 2)
+            reasons = {
+                yaml.safe_load((entry / "metadata.yaml").read_text())["archive_reason"]
+                for entry in entries
+            }
+            self.assertEqual(reasons, {"preserved_existing_override", "new_generation"})
 
     async def test_invalid_slot_is_rejected_before_generation(self):
         client = FakeImageClient(self.png)

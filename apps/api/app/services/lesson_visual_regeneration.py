@@ -2,16 +2,19 @@ from __future__ import annotations
 
 import base64
 import binascii
-from io import BytesIO
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from functools import lru_cache
+from io import BytesIO
 import logging
 import os
 from pathlib import Path
 import re
+import shutil
 import tempfile
 import time
 from typing import Dict, Optional, Tuple
+from uuid import uuid4
 
 import httpx
 from PIL import Image, UnidentifiedImageError
@@ -44,6 +47,8 @@ class RegeneratedLessonVisual:
     model: str
     version: str
     byte_count: int
+    library_asset_id: str = ""
+    library_relative_path: str = ""
 
 
 class TogetherImageClient:
@@ -179,7 +184,27 @@ async def regenerate_lesson_visual(
 
     root = overrides_dir or Path(settings.lesson_visual_overrides_dir)
     target_path = override_path(root=root, slug=slug, slot=slot)
+    library_root = root / "_library"
+    archive_existing_override_if_needed(
+        target_path=target_path,
+        library_root=library_root,
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+    )
+    library_asset_id, library_relative_path = archive_lesson_visual(
+        library_root=library_root,
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+        image_bytes=optimized_image_bytes,
+        model=settings.together_image_model,
+        archive_reason="new_generation",
+    )
     atomic_write(target_path, optimized_image_bytes)
+    atomic_write(archive_marker_path(target_path), library_asset_id.encode("utf-8"))
     version = str(target_path.stat().st_mtime_ns)
 
     logger.info(
@@ -196,6 +221,8 @@ async def regenerate_lesson_visual(
         model=settings.together_image_model,
         version=version,
         byte_count=len(optimized_image_bytes),
+        library_asset_id=library_asset_id,
+        library_relative_path=library_relative_path,
     )
 
 
@@ -287,6 +314,219 @@ def optimize_png(image_bytes: bytes) -> bytes:
     optimized_bytes = output.getvalue()
     validate_png(optimized_bytes)
     return optimized_bytes if len(optimized_bytes) < len(image_bytes) else image_bytes
+
+
+def archive_lesson_visual(
+    *,
+    library_root: Path,
+    slug: str,
+    slot: str,
+    prompt_path: Path,
+    prompt: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+) -> Tuple[str, str]:
+    """Preserve every generated visual with searchable human-readable context."""
+    created_at = datetime.now(timezone.utc)
+    asset_id = f"{created_at.strftime('%Y%m%dT%H%M%S%fZ')}-{uuid4().hex[:8]}"
+    relative_dir = Path(slug) / slot / asset_id
+    destination = library_root / relative_dir
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    temporary_dir = Path(tempfile.mkdtemp(dir=destination.parent, prefix=f".{asset_id}."))
+
+    description = visual_description(prompt_path=prompt_path, prompt=prompt, slot=slot)
+    width, height = image_dimensions(image_bytes)
+    try:
+        atomic_write(temporary_dir / "image.png", image_bytes)
+        atomic_write(
+            temporary_dir / "metadata.yaml",
+            yaml.safe_dump(
+                {
+                    "asset_id": asset_id,
+                    "created_at": created_at.isoformat(),
+                    "slug": slug,
+                    "slot": slot,
+                    "model": model,
+                    "archive_reason": archive_reason,
+                    "width": width,
+                    "height": height,
+                    "byte_count": len(image_bytes),
+                    "source_prompt": prompt_source_path(prompt_path),
+                    "description_basis": "reviewed_generation_prompt",
+                    "description": description,
+                    "generation_prompt": prompt,
+                },
+                allow_unicode=True,
+                sort_keys=False,
+            ).encode("utf-8"),
+        )
+        atomic_write(
+            temporary_dir / "README.md",
+            render_library_readme(
+                asset_id=asset_id,
+                created_at=created_at.isoformat(),
+                slug=slug,
+                slot=slot,
+                model=model,
+                archive_reason=archive_reason,
+                width=width,
+                height=height,
+                byte_count=len(image_bytes),
+                description=description,
+            ).encode("utf-8"),
+        )
+        os.replace(temporary_dir, destination)
+    except Exception:
+        shutil.rmtree(temporary_dir, ignore_errors=True)
+        raise
+
+    return asset_id, relative_dir.as_posix()
+
+
+def archive_existing_override_if_needed(
+    *,
+    target_path: Path,
+    library_root: Path,
+    slug: str,
+    slot: str,
+    prompt_path: Path,
+    prompt: str,
+) -> None:
+    """Backfill an override created before library tracking without duplicating tracked assets."""
+    marker_path = archive_marker_path(target_path)
+    if not target_path.exists() or marker_path.exists():
+        return
+
+    existing_bytes = target_path.read_bytes()
+    validate_png(existing_bytes)
+    asset_id, _ = archive_lesson_visual(
+        library_root=library_root,
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+        image_bytes=existing_bytes,
+        model="unknown-pre-library",
+        archive_reason="preserved_existing_override",
+    )
+    atomic_write(marker_path, asset_id.encode("utf-8"))
+
+
+def archive_marker_path(target_path: Path) -> Path:
+    return target_path.with_suffix(".library-asset-id")
+
+
+def visual_description(*, prompt_path: Path, prompt: str, slot: str) -> dict:
+    document = prompt_path.read_text(encoding="utf-8")
+    people = []
+    cast_match = re.search(
+        r"^Cast and continuity:\s*\n(?P<cast>(?:- .*\n?)+)",
+        prompt,
+        re.MULTILINE,
+    )
+    if cast_match:
+        for line in cast_match.group("cast").splitlines():
+            match = re.match(r"-\s+([^:]+):\s*(.+)", line)
+            if match:
+                people.append({"name": match.group(1).strip(), "description": match.group(2).strip()})
+
+    return {
+        "lesson": markdown_numbered_metadata(document, "Lesson") or prompt_value(prompt, "Lesson"),
+        "unit": markdown_numbered_metadata(document, "Unit"),
+        "level": markdown_metadata(document, "Level"),
+        "subject": prompt_value(prompt, "Card focus") or prompt_value(prompt, "Lesson"),
+        "conversation_goal": prompt_value(prompt, "Conversation goal"),
+        "context": prompt_value(prompt, "Situation") or prompt_value(prompt, "Conversation moment"),
+        "setting": prompt_list_value(prompt, "Actual conversation location"),
+        "background": prompt_list_value(prompt, "Required background cues"),
+        "context_guardrail": prompt_list_value(prompt, "Context guardrail"),
+        "people": people,
+        "slot_purpose": "Main lesson image" if slot == "hero" else f"Lesson companion {slot}",
+    }
+
+
+def markdown_metadata(document: str, label: str) -> str:
+    match = re.search(rf"^- {re.escape(label)}:\s+\*\*(.+?)\*\*\s*$", document, re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def markdown_numbered_metadata(document: str, label: str) -> str:
+    match = re.search(
+        rf"^- {re.escape(label)} \d+:\s+\*\*(.+?)\*\*\s*$",
+        document,
+        re.MULTILINE,
+    )
+    return match.group(1).strip() if match else ""
+
+
+def prompt_value(prompt: str, label: str) -> str:
+    match = re.search(rf"^{re.escape(label)}:\s*(.+)$", prompt, re.MULTILINE)
+    return match.group(1).strip().strip("“”\"") if match else ""
+
+
+def prompt_list_value(prompt: str, label: str) -> str:
+    match = re.search(rf"^- {re.escape(label)}:\s*(.+)$", prompt, re.MULTILINE)
+    return match.group(1).strip() if match else ""
+
+
+def prompt_source_path(prompt_path: Path) -> str:
+    try:
+        return prompt_path.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        return str(prompt_path)
+
+
+def image_dimensions(image_bytes: bytes) -> Tuple[int, int]:
+    with Image.open(BytesIO(image_bytes)) as image:
+        return image.size
+
+
+def render_library_readme(
+    *,
+    asset_id: str,
+    created_at: str,
+    slug: str,
+    slot: str,
+    model: str,
+    archive_reason: str,
+    width: int,
+    height: int,
+    byte_count: int,
+    description: dict,
+) -> str:
+    people = description.get("people") or []
+    people_lines = "\n".join(
+        f"- **{person['name']}** — {person['description']}" for person in people
+    ) or "- Tidak ada karakter bernama yang tercatat."
+    return f"""# Generated lesson visual
+
+![Generated visual](./image.png)
+
+- Asset ID: `{asset_id}`
+- Generated: `{created_at}`
+- Lesson: **{description.get('lesson') or slug}**
+- Slot: `{slot}` ({description.get('slot_purpose')})
+- Model: `{model}`
+- Archive reason: `{archive_reason}`
+- Dimensions: `{width}×{height}`
+- File size: `{byte_count}` bytes
+
+## Tentang gambar
+
+- **Subjek:** {description.get('subject') or '-'}
+- **Konteks percakapan:** {description.get('context') or description.get('conversation_goal') or '-'}
+- **Latar:** {description.get('setting') or '-'}
+- **Elemen latar:** {description.get('background') or '-'}
+- **Batas konteks:** {description.get('context_guardrail') or '-'}
+
+## Siapa saja di dalam gambar
+
+{people_lines}
+
+Lihat `metadata.yaml` untuk metadata terstruktur dan prompt generasi lengkap.
+Keterangan isi gambar disusun dari prompt generasi yang telah direview.
+"""
 
 
 def atomic_write(target_path: Path, image_bytes: bytes) -> None:
