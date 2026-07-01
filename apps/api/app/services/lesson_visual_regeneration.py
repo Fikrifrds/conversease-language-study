@@ -1,19 +1,23 @@
 from __future__ import annotations
 
+import asyncio
 import base64
 import binascii
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from functools import lru_cache
 from io import BytesIO
+import ipaddress
 import logging
 import os
 from pathlib import Path
 import re
 import shutil
+import socket
 import tempfile
 import time
 from typing import Dict, Optional, Tuple
+from urllib.parse import urljoin, urlsplit
 from uuid import uuid4
 
 import httpx
@@ -30,6 +34,8 @@ VALID_SLOTS = ("hero", "card-1", "card-2", "card-3")
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 MAX_IMAGE_BYTES = 30 * 1024 * 1024
 PNG_PALETTE_COLORS = 256
+REMOTE_IMAGE_CONTENT_TYPES = {"image/png", "image/jpeg", "image/webp", "application/octet-stream"}
+MAX_REMOTE_IMAGE_REDIRECTS = 4
 
 logger = logging.getLogger(__name__)
 
@@ -194,6 +200,25 @@ def upload_lesson_visual(
     image_bytes: bytes,
     overrides_dir: Optional[Path] = None,
 ) -> RegeneratedLessonVisual:
+    return store_uploaded_lesson_visual(
+        slug=slug,
+        slot=slot,
+        image_bytes=image_bytes,
+        model="manual-upload",
+        archive_reason="manual_upload",
+        overrides_dir=overrides_dir,
+    )
+
+
+def store_uploaded_lesson_visual(
+    *,
+    slug: str,
+    slot: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+    overrides_dir: Optional[Path] = None,
+) -> RegeneratedLessonVisual:
     prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
     normalized_image_bytes = normalize_uploaded_image(image_bytes=image_bytes, slot=slot)
     return store_lesson_visual(
@@ -202,8 +227,27 @@ def upload_lesson_visual(
         prompt_path=prompt_path,
         prompt=prompt,
         image_bytes=normalized_image_bytes,
-        model="manual-upload",
-        archive_reason="manual_upload",
+        model=model,
+        archive_reason=archive_reason,
+        overrides_dir=overrides_dir,
+    )
+
+
+async def import_lesson_visual_from_url(
+    *,
+    slug: str,
+    slot: str,
+    url: str,
+    overrides_dir: Optional[Path] = None,
+) -> RegeneratedLessonVisual:
+    image_bytes = await download_remote_image(url)
+    return await asyncio.to_thread(
+        store_uploaded_lesson_visual,
+        slug=slug,
+        slot=slot,
+        image_bytes=image_bytes,
+        model="url-import",
+        archive_reason="url_import",
         overrides_dir=overrides_dir,
     )
 
@@ -339,6 +383,92 @@ def validate_png(image_bytes: bytes) -> None:
         raise LessonVisualRegenerationError("generated_image_size_invalid")
     if not image_bytes.startswith(PNG_SIGNATURE):
         raise LessonVisualRegenerationError("generated_image_not_png")
+
+
+async def download_remote_image(
+    url: str,
+    *,
+    client: Optional[httpx.AsyncClient] = None,
+) -> bytes:
+    if client is None:
+        timeout = httpx.Timeout(connect=10, read=30, write=10, pool=10)
+        async with httpx.AsyncClient(
+            timeout=timeout,
+            follow_redirects=False,
+            trust_env=False,
+        ) as owned_client:
+            return await download_remote_image(url, client=owned_client)
+
+    current_url = url
+    for _ in range(MAX_REMOTE_IMAGE_REDIRECTS + 1):
+        safe_url = await asyncio.to_thread(validate_remote_image_url, current_url)
+        try:
+            async with client.stream(
+                "GET",
+                safe_url,
+                headers={"Accept": "image/png,image/jpeg,image/webp"},
+            ) as response:
+                if response.is_redirect:
+                    location = response.headers.get("location")
+                    if not location:
+                        raise LessonVisualRegenerationError("remote_image_download_failed")
+                    current_url = urljoin(safe_url, location)
+                    continue
+
+                response.raise_for_status()
+                content_type = response.headers.get("content-type", "").split(";", 1)[0].lower()
+                if content_type not in REMOTE_IMAGE_CONTENT_TYPES:
+                    raise LessonVisualRegenerationError("remote_image_content_type_invalid")
+                content_length = response.headers.get("content-length")
+                if content_length and int(content_length) > MAX_IMAGE_BYTES:
+                    raise LessonVisualRegenerationError("uploaded_image_size_invalid")
+
+                chunks = bytearray()
+                async for chunk in response.aiter_bytes():
+                    chunks.extend(chunk)
+                    if len(chunks) > MAX_IMAGE_BYTES:
+                        raise LessonVisualRegenerationError("uploaded_image_size_invalid")
+                return bytes(chunks)
+        except LessonVisualRegenerationError:
+            raise
+        except (httpx.HTTPError, ValueError) as exc:
+            raise LessonVisualRegenerationError("remote_image_download_failed") from exc
+
+    raise LessonVisualRegenerationError("remote_image_too_many_redirects")
+
+
+def validate_remote_image_url(url: str) -> str:
+    if len(url) > 4096:
+        raise LessonVisualRegenerationError("remote_image_url_invalid")
+    parsed = urlsplit(url)
+    try:
+        port = parsed.port
+    except ValueError as exc:
+        raise LessonVisualRegenerationError("remote_image_url_invalid") from exc
+    if (
+        parsed.scheme != "https"
+        or not parsed.hostname
+        or parsed.username
+        or parsed.password
+        or port not in {None, 443}
+    ):
+        raise LessonVisualRegenerationError("remote_image_url_invalid")
+
+    try:
+        addresses = socket.getaddrinfo(parsed.hostname, 443, type=socket.SOCK_STREAM)
+    except socket.gaierror as exc:
+        raise LessonVisualRegenerationError("remote_image_url_invalid") from exc
+    if not addresses:
+        raise LessonVisualRegenerationError("remote_image_url_invalid")
+
+    for address in addresses:
+        raw_address = address[4][0].split("%", 1)[0]
+        try:
+            if not ipaddress.ip_address(raw_address).is_global:
+                raise LessonVisualRegenerationError("remote_image_url_forbidden")
+        except ValueError as exc:
+            raise LessonVisualRegenerationError("remote_image_url_invalid") from exc
+    return url
 
 
 def normalize_uploaded_image(*, image_bytes: bytes, slot: str) -> bytes:

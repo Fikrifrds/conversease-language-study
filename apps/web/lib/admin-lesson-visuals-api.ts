@@ -97,6 +97,25 @@ export async function uploadLessonVisual(
   return mapRegeneratedLessonVisual((await response.json()) as ApiRegeneratedLessonVisual);
 }
 
+export async function uploadLessonVisualFromUrl(
+  slug: string,
+  slot: LessonVisualSlot,
+  url: string
+): Promise<RegeneratedLessonVisual> {
+  const response = await adminFetch(
+    `${apiBaseUrl()}/admin/lessons/${encodeURIComponent(slug)}/visuals/${slot}/upload-url`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ url })
+    }
+  );
+  if (!response.ok) {
+    throw new Error(await responseError(response));
+  }
+  return mapRegeneratedLessonVisual((await response.json()) as ApiRegeneratedLessonVisual);
+}
+
 function mapRegeneratedLessonVisual(
   payload: ApiRegeneratedLessonVisual
 ): RegeneratedLessonVisual {
@@ -143,6 +162,21 @@ async function responseError(response: Response) {
       }
       if (parsed.detail === "uploaded_image_aspect_ratio_invalid") {
         return "Rasio gambar tidak sesuai dengan slot ini.";
+      }
+      if (parsed.detail === "remote_image_url_invalid") {
+        return "URL gambar tidak valid. Gunakan URL HTTPS langsung.";
+      }
+      if (parsed.detail === "remote_image_url_forbidden") {
+        return "URL menuju alamat jaringan yang tidak diizinkan.";
+      }
+      if (parsed.detail === "remote_image_content_type_invalid") {
+        return "URL tidak mengembalikan file PNG, JPEG, atau WebP.";
+      }
+      if (parsed.detail === "remote_image_download_failed") {
+        return "Gambar gagal diunduh. Link mungkin sudah kedaluwarsa atau tidak dapat diakses server.";
+      }
+      if (parsed.detail === "remote_image_too_many_redirects") {
+        return "URL gambar memiliki terlalu banyak redirect.";
       }
       return parsed.detail;
     }

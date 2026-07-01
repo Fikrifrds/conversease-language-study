@@ -3,7 +3,9 @@ from io import BytesIO
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import AsyncMock, patch
 
+import httpx
 from PIL import Image
 import yaml
 
@@ -11,12 +13,15 @@ from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
     PNG_SIGNATURE,
     extract_visual_prompt,
+    download_remote_image,
     image_bytes_from_response,
     image_generation_dimensions,
+    import_lesson_visual_from_url,
     lesson_prompt_index,
     optimize_png,
     regenerate_lesson_visual,
     upload_lesson_visual,
+    validate_remote_image_url,
 )
 
 
@@ -166,6 +171,57 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
                 image_bytes=source.getvalue(),
             )
         self.assertEqual(context.exception.code, "uploaded_image_aspect_ratio_invalid")
+
+    async def test_remote_image_is_downloaded_as_bytes(self):
+        transport = httpx.MockTransport(
+            lambda request: httpx.Response(
+                200,
+                headers={"content-type": "image/png"},
+                content=self.png,
+                request=request,
+            )
+        )
+        async with httpx.AsyncClient(transport=transport) as client:
+            with patch(
+                "app.services.lesson_visual_regeneration.validate_remote_image_url",
+                return_value="https://example.com/image.png",
+            ):
+                downloaded = await download_remote_image(
+                    "https://example.com/image.png",
+                    client=client,
+                )
+        self.assertEqual(downloaded, self.png)
+
+    async def test_url_import_stores_image_but_not_expiring_source_url(self):
+        expiring_url = "https://chatgpt.com/backend-api/estuary/content?sig=secret-value"
+        with tempfile.TemporaryDirectory() as temporary_dir:
+            root = Path(temporary_dir)
+            with patch(
+                "app.services.lesson_visual_regeneration.download_remote_image",
+                new=AsyncMock(return_value=self.png),
+            ):
+                result = await import_lesson_visual_from_url(
+                    slug="saying-hello-and-goodbye",
+                    slot="hero",
+                    url=expiring_url,
+                    overrides_dir=root,
+                )
+
+            metadata_text = (
+                root / "_library" / result.library_relative_path / "metadata.yaml"
+            ).read_text()
+            self.assertNotIn(expiring_url, metadata_text)
+            self.assertNotIn("secret-value", metadata_text)
+            self.assertIn("archive_reason: url_import", metadata_text)
+
+    def test_remote_image_url_rejects_private_addresses(self):
+        with patch(
+            "app.services.lesson_visual_regeneration.socket.getaddrinfo",
+            return_value=[(2, 1, 6, "", ("127.0.0.1", 443))],
+        ):
+            with self.assertRaises(LessonVisualRegenerationError) as context:
+                validate_remote_image_url("https://example.com/image.png")
+        self.assertEqual(context.exception.code, "remote_image_url_forbidden")
 
     async def test_invalid_slot_is_rejected_before_generation(self):
         client = FakeImageClient(self.png)

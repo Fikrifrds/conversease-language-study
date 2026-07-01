@@ -5,6 +5,7 @@ LLM feedback (Conversation Coach), speech-to-text, and TTS. Mirrors the
 admin email diagnostics pattern.
 """
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from pydantic import BaseModel, Field
 from starlette.concurrency import run_in_threadpool
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
@@ -17,12 +18,17 @@ from app.services.lesson_visual_regeneration import (
     MAX_IMAGE_BYTES,
     RegeneratedLessonVisual,
     image_generation_dimensions,
+    import_lesson_visual_from_url,
     regenerate_lesson_visual,
     resolve_lesson_visual_prompt,
     upload_lesson_visual,
 )
 
 router = APIRouter()
+
+
+class LessonVisualUrlPayload(BaseModel):
+    url: str = Field(min_length=8, max_length=4096)
 
 
 @router.get("/admin/ai/status")
@@ -152,6 +158,24 @@ async def upload_admin_lesson_visual(
     return lesson_visual_response(result=result, generated_by=admin.display_name)
 
 
+@router.post("/admin/lessons/{slug}/visuals/{slot}/upload-url")
+async def upload_admin_lesson_visual_from_url(
+    slug: str,
+    slot: str,
+    payload: LessonVisualUrlPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    try:
+        result = await import_lesson_visual_from_url(
+            slug=slug,
+            slot=slot,
+            url=payload.url,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return lesson_visual_response(result=result, generated_by=admin.display_name)
+
+
 def lesson_visual_response(*, result: RegeneratedLessonVisual, generated_by: str) -> dict:
     return {
         "data": {
@@ -177,6 +201,9 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
         "lesson_visual_prompt_invalid",
         "uploaded_image_format_invalid",
         "uploaded_image_aspect_ratio_invalid",
+        "remote_image_url_invalid",
+        "remote_image_url_forbidden",
+        "remote_image_content_type_invalid",
     }:
         return HTTPException(status_code=400, detail=exc.code)
     if exc.code in {
@@ -186,6 +213,8 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
         return HTTPException(status_code=404, detail=exc.code)
     if exc.code == "together_api_key_missing":
         return HTTPException(status_code=503, detail=exc.code)
+    if exc.code in {"remote_image_download_failed", "remote_image_too_many_redirects"}:
+        return HTTPException(status_code=502, detail=exc.code)
     if exc.code.startswith("together_") or exc.code.startswith("generated_image_"):
         return HTTPException(status_code=502, detail=exc.code)
     return HTTPException(status_code=500, detail="lesson_visual_regeneration_failed")

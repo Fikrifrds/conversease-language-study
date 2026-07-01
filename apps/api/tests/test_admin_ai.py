@@ -121,6 +121,30 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
         self.assertEqual(data["model"], "manual-upload")
         self.assertEqual(data["library_asset_id"], "manual-asset")
 
+    def test_lesson_visual_url_import_downloads_and_returns_new_asset(self):
+        result = RegeneratedLessonVisual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            model="url-import",
+            version="url-version",
+            byte_count=42,
+            library_asset_id="url-asset",
+            library_relative_path="saying-hello-and-goodbye/hero/url-asset",
+        )
+        with patch(
+            "app.api.routes.admin_ai.import_lesson_visual_from_url",
+            new=AsyncMock(return_value=result),
+        ) as importer:
+            response = self.client.post(
+                "/api/admin/lessons/saying-hello-and-goodbye/visuals/hero/upload-url",
+                headers=self.headers,
+                json={"url": "https://chatgpt.com/backend-api/estuary/content?sig=secret"},
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["model"], "url-import")
+        importer.assert_awaited_once()
+
 
 if __name__ == "__main__":
     unittest.main()

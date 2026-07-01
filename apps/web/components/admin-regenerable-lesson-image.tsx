@@ -2,12 +2,13 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import { Check, ClipboardCopy, Loader2, RefreshCw, Upload } from "lucide-react";
+import { Check, ClipboardCopy, Link2, Loader2, RefreshCw, Upload } from "lucide-react";
 import { getAuthSession, onAuthSessionChanged } from "@/lib/auth-api";
 import {
   getLessonVisualPrompt,
   regenerateLessonVisual,
   uploadLessonVisual,
+  uploadLessonVisualFromUrl,
   type LessonVisualSlot
 } from "@/lib/admin-lesson-visuals-api";
 
@@ -36,6 +37,7 @@ export function AdminRegenerableLessonImage({
   const [isGenerating, setIsGenerating] = useState(false);
   const [isCopying, setIsCopying] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
+  const [isImportingUrl, setIsImportingUrl] = useState(false);
   const [copied, setCopied] = useState(false);
   const [version, setVersion] = useState("current");
   const [error, setError] = useState("");
@@ -111,7 +113,27 @@ export function AdminRegenerableLessonImage({
     }
   }
 
-  const isBusy = isGenerating || isCopying || isUploading;
+  async function uploadFromUrl() {
+    const url = window.prompt("Paste URL gambar HTTPS. Gambar akan langsung diunduh dan disimpan.");
+    if (!url?.trim()) {
+      return;
+    }
+
+    setIsImportingUrl(true);
+    setError("");
+    setNotice("");
+    try {
+      const result = await uploadLessonVisualFromUrl(lessonSlug, slot, url.trim());
+      setVersion(result.version);
+      setNotice("Gambar dari URL sudah diunduh, disimpan, dan masuk visual library.");
+    } catch (uploadError) {
+      setError(uploadError instanceof Error ? uploadError.message : "Import URL gagal.");
+    } finally {
+      setIsImportingUrl(false);
+    }
+  }
+
+  const isBusy = isGenerating || isCopying || isUploading || isImportingUrl;
 
   return (
     <div className="relative w-full">
@@ -144,6 +166,15 @@ export function AdminRegenerableLessonImage({
           >
             {isUploading ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Upload className="h-3.5 w-3.5" />}
             {isUploading ? "Uploading..." : "Upload image"}
+          </button>
+          <button
+            type="button"
+            onClick={uploadFromUrl}
+            disabled={isBusy}
+            className="focus-ring inline-flex items-center gap-1.5 rounded-lg border border-white/70 bg-ink/90 px-3 py-2 text-xs font-semibold text-white shadow-soft backdrop-blur transition hover:bg-ink disabled:cursor-wait disabled:opacity-75"
+          >
+            {isImportingUrl ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Link2 className="h-3.5 w-3.5" />}
+            {isImportingUrl ? "Importing..." : "Import URL"}
           </button>
           <input
             ref={uploadInput}
