@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     template: "%s | Conversease"
   },
   description:
-    "Belajar bahasa Inggris lewat percakapan nyata untuk orang Indonesia: dengar dialog, pahami makna, tirukan frasa, lalu praktik dengan feedback yang jelas.",
+    "Belajar bahasa Inggris lewat percakapan nyata. Dengar dialog, praktik bicara, lalu dapat feedback langsung dalam bahasa Indonesia — dari level A1 sampai C1.",
   applicationName: "Conversease",
   alternates: {
     canonical: "/"
