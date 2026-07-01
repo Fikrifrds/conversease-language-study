@@ -2,6 +2,8 @@ import { getAuthToken } from "@/lib/auth-api";
 
 export type LessonVisualSlot = "hero" | "card-1" | "card-2" | "card-3";
 
+const MAX_LESSON_VISUAL_UPLOAD_BYTES = 30 * 1024 * 1024;
+
 export type RegeneratedLessonVisual = {
   slug: string;
   slot: LessonVisualSlot;
@@ -85,6 +87,9 @@ export async function uploadLessonVisual(
   slot: LessonVisualSlot,
   image: File
 ): Promise<RegeneratedLessonVisual> {
+  if (image.size > MAX_LESSON_VISUAL_UPLOAD_BYTES) {
+    throw new Error("Ukuran file terlalu besar. Maksimum 30 MB.");
+  }
   const formData = new FormData();
   formData.append("image", image);
   const response = await adminFetch(
