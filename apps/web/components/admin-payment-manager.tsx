@@ -425,7 +425,12 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
                   <p className="text-2xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
                   <p className="rounded-md bg-white px-2 py-1 font-mono text-sm">#{order.uniqueCode ?? "-"}</p>
                 </div>
-                <p className="mt-3 text-xs text-ink/50">Updated {formatDate(order.updatedAt)}</p>
+                <div className="mt-3 flex items-center justify-between gap-2">
+                  <p className="text-xs text-ink/50">Updated {formatDate(order.updatedAt)}</p>
+                  <p className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-ink/70">
+                    {metadataValue(order, "bank_name")}
+                  </p>
+                </div>
               </button>
             ))}
 
@@ -516,20 +521,13 @@ function PaymentDetail({
       </div>
 
       <dl className="mt-5 grid gap-3 md:grid-cols-2">
-        <DetailItem label="User ID" value={order.userId} />
-        <DetailItem label="Payment kind" value={order.paymentKind} />
-        <DetailItem label="Nama pengirim" value={metadataValue(order, "sender_name")} />
-        <DetailItem label="Bank pengirim" value={metadataValue(order, "sender_bank")} />
-        <DetailItem label="Tanggal transfer" value={order.transferDate ?? metadataValue(order, "transfer_date")} />
-        <DetailItem label="Confirmed at" value={formatDate(order.confirmedAt)} />
         <DetailItem label="Bank tujuan" value={metadataValue(order, "bank_name")} />
         <DetailItem label="Rekening tujuan" value={metadataValue(order, "bank_account_number")} />
+        <DetailItem label="Tanggal transfer" value={order.transferDate ?? metadataValue(order, "transfer_date")} />
+        <DetailItem label="Confirmed at" value={formatDate(order.confirmedAt)} />
+        <DetailItem label="User ID" value={order.userId} />
+        <DetailItem label="Payment kind" value={order.paymentKind} />
       </dl>
-
-      <div className="mt-5 rounded-lg bg-paper p-4">
-        <p className="text-xs font-semibold uppercase text-ink/50">Catatan user</p>
-        <p className="mt-2 text-sm leading-6 text-ink/70">{metadataValue(order, "user_notes", "Tidak ada catatan.")}</p>
-      </div>
 
       {notificationReady ? (
         <div className="mt-5 rounded-lg border border-ink/10 bg-paper p-4">
