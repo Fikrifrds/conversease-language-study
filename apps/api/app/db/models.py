@@ -346,3 +346,47 @@ class AudioVoicePreviewModel(Base):
     generated_by: Mapped[str] = mapped_column(String(160), index=True, nullable=False)
     created_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
     updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+
+
+class LessonVisualAssetModel(Base):
+    __tablename__ = "lesson_visual_assets"
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    content_hash: Mapped[str] = mapped_column(String(64), unique=True, index=True, nullable=False)
+    storage_key: Mapped[str] = mapped_column(Text, unique=True, nullable=False)
+    preview_storage_key: Mapped[str] = mapped_column(Text, nullable=False)
+    mime_type: Mapped[str] = mapped_column(String(64), nullable=False)
+    source_lesson_slug: Mapped[Optional[str]] = mapped_column(
+        String(160), index=True, nullable=True
+    )
+    source_slot: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
+    model: Mapped[str] = mapped_column(String(120), index=True, nullable=False)
+    archive_reason: Mapped[str] = mapped_column(String(64), nullable=False)
+    width: Mapped[int] = mapped_column(Integer, nullable=False)
+    height: Mapped[int] = mapped_column(Integer, nullable=False)
+    byte_count: Mapped[int] = mapped_column(Integer, nullable=False)
+    description_json: Mapped[dict] = mapped_column(JSON, nullable=False)
+    prompt_text: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+
+
+class LessonVisualActiveModel(Base):
+    __tablename__ = "lesson_visual_active"
+    __table_args__ = (
+        UniqueConstraint(
+            "lesson_slug",
+            "slot",
+            name="uq_lesson_visual_active_lesson_slot",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    lesson_slug: Mapped[str] = mapped_column(String(160), index=True, nullable=False)
+    slot: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
+    asset_id: Mapped[str] = mapped_column(
+        String(64),
+        ForeignKey("lesson_visual_assets.id", ondelete="RESTRICT"),
+        index=True,
+        nullable=False,
+    )
+    updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)

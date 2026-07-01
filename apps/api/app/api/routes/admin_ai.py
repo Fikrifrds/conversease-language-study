@@ -6,11 +6,13 @@ admin email diagnostics pattern.
 """
 from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
 from pydantic import BaseModel, Field
+from sqlalchemy.orm import Session
 from starlette.concurrency import run_in_threadpool
 
 from app.api.admin_deps import AdminActor, require_admin_api_key
 from app.core.config import settings
 from app.core.llm_usage import llm_usage_registry
+from app.db.session import get_db
 from app.domain.ai import TASK_MODEL_CONFIGS, ChatMessage
 from app.services.llm import LLMError, get_llm_provider
 from app.services.lesson_visual_regeneration import (
@@ -113,10 +115,11 @@ async def regenerate_admin_lesson_visual(
     slug: str,
     slot: str,
     admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     """Generate one lesson image from its reviewed prompt and replace its override atomically."""
     try:
-        result = await regenerate_lesson_visual(slug=slug, slot=slot)
+        result = await regenerate_lesson_visual(slug=slug, slot=slot, db=db)
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
 
@@ -151,6 +154,7 @@ async def upload_admin_lesson_visual(
     slot: str,
     image: UploadFile = File(...),
     admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     image_bytes = await image.read(MAX_IMAGE_BYTES + 1)
     try:
@@ -159,6 +163,7 @@ async def upload_admin_lesson_visual(
             slug=slug,
             slot=slot,
             image_bytes=image_bytes,
+            db=db,
         )
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
@@ -171,12 +176,14 @@ async def upload_admin_lesson_visual_from_url(
     slot: str,
     payload: LessonVisualUrlPayload,
     admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     try:
         result = await import_lesson_visual_from_url(
             slug=slug,
             slot=slot,
             url=payload.url,
+            db=db,
         )
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
@@ -188,9 +195,12 @@ async def get_admin_lesson_visual_library(
     slug: str,
     slot: str,
     _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     try:
-        library = await run_in_threadpool(list_lesson_visual_library, slug=slug, slot=slot)
+        library = await run_in_threadpool(
+            list_lesson_visual_library, slug=slug, slot=slot, db=db
+        )
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
     return {"data": library}
@@ -202,6 +212,7 @@ async def select_admin_lesson_visual_library_asset(
     slot: str,
     payload: LessonVisualLibrarySelectionPayload,
     admin: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
 ) -> dict:
     try:
         result = await run_in_threadpool(
@@ -209,6 +220,7 @@ async def select_admin_lesson_visual_library_asset(
             slug=slug,
             slot=slot,
             asset_id=payload.asset_id,
+            db=db,
         )
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
@@ -216,9 +228,13 @@ async def select_admin_lesson_visual_library_asset(
 
 
 @router.get("/lesson-visuals/{slug}/{slot}/active")
-async def get_public_active_lesson_visual(slug: str, slot: str) -> dict:
+async def get_public_active_lesson_visual(
+    slug: str, slot: str, db: Session = Depends(get_db)
+) -> dict:
     try:
-        active = await run_in_threadpool(get_active_lesson_visual, slug=slug, slot=slot)
+        active = await run_in_threadpool(
+            get_active_lesson_visual, slug=slug, slot=slot, db=db
+        )
     except LessonVisualRegenerationError as exc:
         raise lesson_visual_http_error(exc) from exc
     if active is None:

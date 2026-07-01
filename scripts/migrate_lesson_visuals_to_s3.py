@@ -13,6 +13,7 @@ from pathlib import Path
 import sys
 
 from app.core.config import settings
+from app.db.session import get_sessionmaker
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
     VALID_SLOTS,
@@ -81,24 +82,29 @@ def migrate(*, source_dir: Path, execute: bool) -> dict:
         return result
 
     ensure_visual_s3_configured()
-    for target in targets:
-        try:
-            stored = store_uploaded_lesson_visual(
-                slug=target["slug"],
-                slot=target["slot"],
-                image_bytes=target["path"].read_bytes(),
-                model=target["model"],
-                archive_reason=target["archive_reason"],
-            )
-            result["migrated_count"] += 1
-            target["new_asset_id"] = stored.library_asset_id
-        except (OSError, LessonVisualRegenerationError) as exc:
-            result["failed"].append(
-                {
-                    "path": str(target["path"]),
-                    "error": str(exc),
-                }
-            )
+    db = get_sessionmaker()()
+    try:
+        for target in targets:
+            try:
+                stored = store_uploaded_lesson_visual(
+                    slug=target["slug"],
+                    slot=target["slot"],
+                    image_bytes=target["path"].read_bytes(),
+                    model=target["model"],
+                    archive_reason=target["archive_reason"],
+                    db=db,
+                )
+                result["migrated_count"] += 1
+                target["new_asset_id"] = stored.library_asset_id
+            except (OSError, LessonVisualRegenerationError) as exc:
+                result["failed"].append(
+                    {
+                        "path": str(target["path"]),
+                        "error": str(exc),
+                    }
+                )
+    finally:
+        db.close()
     return result
 
 

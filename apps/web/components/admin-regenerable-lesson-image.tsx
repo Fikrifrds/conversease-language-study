@@ -292,7 +292,7 @@ export function AdminRegenerableLessonImage({
             <div className="mb-4 flex items-center justify-between gap-4">
               <div>
                 <h2 className="text-lg font-bold text-ink">Visual library</h2>
-                <p className="text-sm text-muted">Pilih gambar yang pernah dibuat untuk slot {slot}.</p>
+                <p className="text-sm text-muted">Pilih gambar dari library global untuk slot {slot}.</p>
               </div>
               <button type="button" onClick={() => setLibraryOpen(false)} className="focus-ring rounded-lg p-2 hover:bg-sand">
                 <X className="h-5 w-5" />

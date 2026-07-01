@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import base64
 import binascii
+import hashlib
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from functools import lru_cache
@@ -23,9 +24,19 @@ from uuid import uuid4
 
 import httpx
 from PIL import Image, ImageOps, UnidentifiedImageError
+from sqlalchemy.orm import Session
 import yaml
 
 from app.core.config import settings
+from app.db.models import LessonVisualAssetModel
+from app.repositories.lesson_visual_library import (
+    activate_visual_asset,
+    get_active_visual_asset,
+    get_visual_asset,
+    get_visual_asset_by_hash,
+    list_visual_assets,
+    register_visual_asset,
+)
 
 
 REPO_ROOT = Path(__file__).resolve().parents[4]
@@ -174,6 +185,7 @@ async def regenerate_lesson_visual(
     slot: str,
     image_client: Optional[TogetherImageClient] = None,
     overrides_dir: Optional[Path] = None,
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
     client = image_client or TogetherImageClient(
@@ -196,6 +208,7 @@ async def regenerate_lesson_visual(
         model=settings.together_image_model,
         archive_reason="new_generation",
         overrides_dir=overrides_dir,
+        db=db,
     )
 
 
@@ -205,6 +218,7 @@ def upload_lesson_visual(
     slot: str,
     image_bytes: bytes,
     overrides_dir: Optional[Path] = None,
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     return store_uploaded_lesson_visual(
         slug=slug,
@@ -213,6 +227,7 @@ def upload_lesson_visual(
         model="manual-upload",
         archive_reason="manual_upload",
         overrides_dir=overrides_dir,
+        db=db,
     )
 
 
@@ -224,6 +239,7 @@ def store_uploaded_lesson_visual(
     model: str,
     archive_reason: str,
     overrides_dir: Optional[Path] = None,
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
     normalized_image_bytes = normalize_uploaded_image(image_bytes=image_bytes, slot=slot)
@@ -236,6 +252,7 @@ def store_uploaded_lesson_visual(
         model=model,
         archive_reason=archive_reason,
         overrides_dir=overrides_dir,
+        db=db,
     )
 
 
@@ -245,6 +262,7 @@ async def import_lesson_visual_from_url(
     slot: str,
     url: str,
     overrides_dir: Optional[Path] = None,
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     image_bytes = await download_remote_image(url)
     return await asyncio.to_thread(
@@ -255,6 +273,7 @@ async def import_lesson_visual_from_url(
         model="url-import",
         archive_reason="url_import",
         overrides_dir=overrides_dir,
+        db=db,
     )
 
 
@@ -268,6 +287,7 @@ def store_lesson_visual(
     model: str,
     archive_reason: str,
     overrides_dir: Optional[Path],
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     if overrides_dir is None:
         return store_lesson_visual_s3(
@@ -278,6 +298,7 @@ def store_lesson_visual(
             image_bytes=image_bytes,
             model=model,
             archive_reason=archive_reason,
+            db=db,
         )
     return store_lesson_visual_local(
         slug=slug,
@@ -608,9 +629,28 @@ def store_lesson_visual_s3(
     image_bytes: bytes,
     model: str,
     archive_reason: str,
+    db: Optional[Session] = None,
 ) -> RegeneratedLessonVisual:
     ensure_visual_s3_configured()
     created_at = datetime.now(timezone.utc)
+    content_hash = hashlib.sha256(image_bytes).hexdigest()
+    if db is not None:
+        existing = get_visual_asset_by_hash(db, content_hash=content_hash)
+        if existing is not None:
+            activate_visual_asset(
+                db,
+                lesson_slug=slug,
+                slot=slot,
+                asset_id=existing.id,
+            )
+            db.commit()
+            entry = visual_asset_entry(existing)
+            visual_s3_put_json(
+                visual_s3_client(),
+                visual_active_manifest_key(slug=slug, slot=slot),
+                entry,
+            )
+            return regenerated_visual_from_asset(existing, slug=slug, slot=slot)
     asset_id = f"{created_at.strftime('%Y%m%dT%H%M%S%fZ')}-{uuid4().hex[:8]}"
     asset_prefix = f"lesson-visuals/library/{slug}/{slot}/{asset_id}"
     image_key = f"{asset_prefix}/image.png"
@@ -622,6 +662,7 @@ def store_lesson_visual_s3(
     canonical_url = f"s3://{settings.s3_bucket}/{image_key}"
     entry = {
         "asset_id": asset_id,
+        "content_hash": content_hash,
         "created_at": created_at.isoformat(),
         "slug": slug,
         "slot": slot,
@@ -692,6 +733,26 @@ def store_lesson_visual_s3(
     library["updated_at"] = created_at.isoformat()
     visual_s3_put_json(client, library_key, library)
     visual_s3_put_json(client, visual_active_manifest_key(slug=slug, slot=slot), entry)
+    if db is not None:
+        asset = register_visual_asset(
+            db,
+            asset_id=asset_id,
+            content_hash=content_hash,
+            storage_key=image_key,
+            preview_storage_key=thumbnail_key,
+            source_lesson_slug=slug,
+            source_slot=slot,
+            model=model,
+            archive_reason=archive_reason,
+            width=width,
+            height=height,
+            byte_count=len(image_bytes),
+            description=description,
+            prompt_text=prompt,
+            created_at=created_at,
+        )
+        activate_visual_asset(db, lesson_slug=slug, slot=slot, asset_id=asset.id)
+        db.commit()
 
     logger.info(
         "lesson_visual_s3_stored slug=%s slot=%s source=%s asset_id=%s bytes=%s",
@@ -712,10 +773,30 @@ def store_lesson_visual_s3(
     )
 
 
-def list_lesson_visual_library(*, slug: str, slot: str) -> dict:
+def list_lesson_visual_library(
+    *, slug: str, slot: str, db: Optional[Session] = None
+) -> dict:
     resolve_lesson_visual_prompt(slug=slug, slot=slot)
     ensure_visual_s3_configured()
     client = visual_s3_client()
+    if db is not None:
+        active = get_active_visual_asset(db, lesson_slug=slug, slot=slot)
+        assets = [
+            {
+                **visual_asset_entry(asset),
+                "is_active": active is not None and asset.id == active.id,
+                "preview_url": visual_s3_playback_url(
+                    asset.preview_storage_key, client=client
+                ),
+            }
+            for asset in list_visual_assets(db, slot=slot)
+        ]
+        return {
+            "slug": slug,
+            "slot": slot,
+            "active_asset_id": active.id if active is not None else None,
+            "assets": assets,
+        }
     library = visual_s3_get_json(client, visual_library_manifest_key(slug=slug, slot=slot)) or {
         "slug": slug,
         "slot": slot,
@@ -739,7 +820,24 @@ def list_lesson_visual_library(*, slug: str, slot: str) -> dict:
     return {"slug": slug, "slot": slot, "active_asset_id": active_id, "assets": assets}
 
 
-def select_lesson_visual_asset(*, slug: str, slot: str, asset_id: str) -> RegeneratedLessonVisual:
+def select_lesson_visual_asset(
+    *, slug: str, slot: str, asset_id: str, db: Optional[Session] = None
+) -> RegeneratedLessonVisual:
+    if db is not None:
+        resolve_lesson_visual_prompt(slug=slug, slot=slot)
+        asset = get_visual_asset(db, asset_id=asset_id)
+        if asset is None or not visual_asset_compatible(asset, slot=slot):
+            raise LessonVisualRegenerationError("lesson_visual_library_asset_not_found")
+        activate_visual_asset(db, lesson_slug=slug, slot=slot, asset_id=asset.id)
+        db.commit()
+        active = visual_asset_entry(asset)
+        visual_s3_put_json(
+            visual_s3_client(),
+            visual_active_manifest_key(slug=slug, slot=slot),
+            active,
+        )
+        return regenerated_visual_from_asset(asset, slug=slug, slot=slot)
+
     library = list_lesson_visual_library(slug=slug, slot=slot)
     selected = next((item for item in library["assets"] if item.get("asset_id") == asset_id), None)
     if selected is None:
@@ -761,10 +859,20 @@ def select_lesson_visual_asset(*, slug: str, slot: str, asset_id: str) -> Regene
     )
 
 
-def get_active_lesson_visual(*, slug: str, slot: str) -> Optional[dict]:
+def get_active_lesson_visual(
+    *, slug: str, slot: str, db: Optional[Session] = None
+) -> Optional[dict]:
     resolve_lesson_visual_prompt(slug=slug, slot=slot)
     ensure_visual_s3_configured()
     client = visual_s3_client()
+    if db is not None:
+        asset = get_active_visual_asset(db, lesson_slug=slug, slot=slot)
+        if asset is not None:
+            return {
+                **visual_asset_entry(asset),
+                "asset_url": visual_s3_playback_url(asset.storage_key, client=client),
+                "version": asset.id,
+            }
     active = visual_s3_get_json(
         client,
         visual_active_manifest_key(slug=slug, slot=slot),
@@ -776,6 +884,45 @@ def get_active_lesson_visual(*, slug: str, slot: str) -> Optional[dict]:
         "asset_url": visual_s3_playback_url(str(active["storage_key"]), client=client),
         "version": str(active.get("asset_id") or ""),
     }
+
+
+def visual_asset_entry(asset: LessonVisualAssetModel) -> dict:
+    return {
+        "asset_id": asset.id,
+        "content_hash": asset.content_hash,
+        "created_at": asset.created_at.isoformat(),
+        "slug": asset.source_lesson_slug or "",
+        "slot": asset.source_slot,
+        "model": asset.model,
+        "archive_reason": asset.archive_reason,
+        "width": asset.width,
+        "height": asset.height,
+        "byte_count": asset.byte_count,
+        "storage_key": asset.storage_key,
+        "preview_storage_key": asset.preview_storage_key,
+        "url": f"s3://{settings.s3_bucket}/{asset.storage_key}",
+        "description": asset.description_json,
+    }
+
+
+def visual_asset_compatible(asset: LessonVisualAssetModel, *, slot: str) -> bool:
+    return (slot == "hero" and asset.source_slot == "hero") or (
+        slot != "hero" and asset.source_slot.startswith("card-")
+    )
+
+
+def regenerated_visual_from_asset(
+    asset: LessonVisualAssetModel, *, slug: str, slot: str
+) -> RegeneratedLessonVisual:
+    return RegeneratedLessonVisual(
+        slug=slug,
+        slot=slot,
+        model=asset.model,
+        version=asset.id,
+        byte_count=asset.byte_count,
+        library_asset_id=asset.id,
+        library_relative_path=asset.storage_key.rsplit("/image.png", 1)[0],
+    )
 
 
 def visual_library_manifest_key(*, slug: str, slot: str) -> str:

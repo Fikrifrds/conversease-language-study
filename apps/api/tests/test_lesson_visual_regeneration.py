@@ -7,9 +7,12 @@ from unittest.mock import AsyncMock, patch
 
 import httpx
 from PIL import Image
+from sqlalchemy import create_engine
+from sqlalchemy.orm import Session
 import yaml
 
 from app.core.config import settings
+from app.db.base import Base
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
     PNG_SIGNATURE,
@@ -251,6 +254,53 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             fake_s3.objects[first_thumbnail_key]["CacheControl"],
             "public, max-age=31536000, immutable",
         )
+
+    def test_database_library_is_global_across_lessons(self):
+        source = BytesIO()
+        Image.new("RGB", (1600, 900), (245, 158, 11)).save(source, format="JPEG")
+        fake_s3 = FakeVisualS3()
+        engine = create_engine("sqlite:///:memory:")
+        Base.metadata.create_all(engine)
+        db = Session(engine)
+        patches = [
+            patch.object(settings, "s3_bucket", "visual-bucket"),
+            patch.object(settings, "aws_access_key_id", "key"),
+            patch.object(settings, "aws_secret_access_key", "secret"),
+            patch.object(settings, "aws_region", "ap-southeast-1"),
+            patch.object(settings, "s3_public_base_url", "https://cdn.example.com"),
+            patch(
+                "app.services.lesson_visual_regeneration.visual_s3_client",
+                return_value=fake_s3,
+            ),
+        ]
+        for active_patch in patches:
+            active_patch.start()
+            self.addCleanup(active_patch.stop)
+        self.addCleanup(engine.dispose)
+        self.addCleanup(db.close)
+
+        stored = upload_lesson_visual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            image_bytes=source.getvalue(),
+            db=db,
+        )
+        other_library = list_lesson_visual_library(
+            slug="saying-your-name", slot="hero", db=db
+        )
+
+        self.assertEqual(len(other_library["assets"]), 1)
+        self.assertEqual(other_library["assets"][0]["asset_id"], stored.library_asset_id)
+        self.assertFalse(other_library["assets"][0]["is_active"])
+
+        select_lesson_visual_asset(
+            slug="saying-your-name",
+            slot="hero",
+            asset_id=stored.library_asset_id,
+            db=db,
+        )
+        active = get_active_lesson_visual(slug="saying-your-name", slot="hero", db=db)
+        self.assertEqual(active["asset_id"], stored.library_asset_id)
 
     async def test_remote_image_is_downloaded_as_bytes(self):
         transport = httpx.MockTransport(

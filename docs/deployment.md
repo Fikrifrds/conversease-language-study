@@ -79,7 +79,16 @@ S3_PUBLIC_BASE_URL=
 S3_PRESIGNED_URL_EXPIRES_SECONDS=3600
 ```
 
-Admin CMS audio generation and lesson visual generation/upload store their binary assets in S3. Lesson visuals also keep per-slot `library.json` and `active.json` manifests in S3; no generated visual is stored on the API or web container filesystem. Each library asset has a small WebP thumbnail, so opening the picker does not download every full-resolution original. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs. Set it to a CloudFront URL when visual and audio assets are delivered through a CDN.
+Admin CMS audio generation and lesson visual generation/upload store their binary assets in S3. The searchable global catalog and per-lesson active selections live in the `lesson_visual_assets` and `lesson_visual_active` database tables; S3 JSON manifests remain compatibility mirrors only. No generated visual is stored on the API or web container filesystem. Each library asset has a small WebP thumbnail, so opening the picker does not download every full-resolution original. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs. Set it to a CloudFront URL when visual and audio assets are delivered through a CDN.
+
+After applying database migrations, seed all bundled lesson visuals once. Dry-run reports 124 unique binaries and 800 lesson/slot assignments without writing anything:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visuals_to_s3.py
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visuals_to_s3.py --execute
+```
+
+The seed is idempotent: SHA-256 deduplication prevents repeat uploads, and assignments are updated in place. It is safe to rerun after adding bundled assets.
 
 Keep S3 cost bounded with these bucket controls:
 
@@ -99,7 +108,7 @@ PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/migrate_lesson_visuals_to_
   --execute
 ```
 
-For a Docker named volume, mount the existing volume read-only at `/legacy-visuals` in a one-off API container and use `--source-dir /legacy-visuals`. Archived assets are migrated first and the current override last, preserving the active selection.
+For a Docker named volume, mount the existing volume read-only at `/legacy-visuals` in a one-off API container and use `--source-dir /legacy-visuals`. Archived assets are migrated first and the current override last, preserving the active selection. Apply Alembic migrations before either visual migration script because both now register assets in the database-backed global library.
 
 Voice preview audio is cached in the database and stored in S3, so admins do not regenerate the same voice sample on every click. After migrations and S3/MiniMax env are ready, seed all available MiniMax voice previews:
 
