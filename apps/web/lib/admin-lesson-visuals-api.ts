@@ -19,6 +19,7 @@ export type RegeneratedLessonVisual = {
 export type LessonVisualLibraryAsset = {
   asset_id: string;
   created_at: string;
+  slot: LessonVisualSlot;
   model: string;
   archive_reason: string;
   width: number;

@@ -27,6 +27,8 @@ type AdminRegenerableLessonImageProps = {
   priority?: boolean;
 };
 
+type LibraryCategory = "hero" | "card";
+
 export function AdminRegenerableLessonImage({
   lessonSlug,
   slot,
@@ -46,6 +48,9 @@ export function AdminRegenerableLessonImage({
   const [libraryOpen, setLibraryOpen] = useState(false);
   const [libraryLoading, setLibraryLoading] = useState(false);
   const [libraryAssets, setLibraryAssets] = useState<LessonVisualLibraryAsset[]>([]);
+  const [libraryCategory, setLibraryCategory] = useState<LibraryCategory>(
+    slot === "hero" ? "hero" : "card"
+  );
   const [version, setVersion] = useState<string | null>(null);
   const [error, setError] = useState("");
   const [notice, setNotice] = useState("");
@@ -162,12 +167,14 @@ export function AdminRegenerableLessonImage({
     }
   }
 
-  async function openLibrary() {
-    setLibraryOpen(true);
+  async function loadLibrary(category: LibraryCategory) {
+    setLibraryCategory(category);
     setLibraryLoading(true);
     setError("");
     try {
-      const result = await getLessonVisualLibrary(lessonSlug, slot);
+      const querySlot: LessonVisualSlot =
+        category === "hero" ? "hero" : slot === "hero" ? "card-1" : slot;
+      const result = await getLessonVisualLibrary(lessonSlug, querySlot);
       setLibraryAssets(result.data.assets);
     } catch (libraryError) {
       setError(libraryError instanceof Error ? libraryError.message : "Visual library gagal dibuka.");
@@ -175,6 +182,13 @@ export function AdminRegenerableLessonImage({
     } finally {
       setLibraryLoading(false);
     }
+  }
+
+  async function openLibrary() {
+    const category: LibraryCategory = slot === "hero" ? "hero" : "card";
+    setLibraryOpen(true);
+    setLibraryAssets([]);
+    await loadLibrary(category);
   }
 
   async function activateLibraryAsset(assetId: string) {
@@ -192,6 +206,8 @@ export function AdminRegenerableLessonImage({
   }
 
   const isBusy = isGenerating || isCopying || isUploading || isImportingUrl;
+  const currentCategory: LibraryCategory = slot === "hero" ? "hero" : "card";
+  const categoryMatchesSlot = libraryCategory === currentCategory;
 
   return (
     <div className="relative w-full">
@@ -288,24 +304,53 @@ export function AdminRegenerableLessonImage({
       ) : null}
       {libraryOpen ? (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4">
-          <div className="max-h-[85vh] w-full max-w-5xl overflow-auto rounded-2xl bg-white p-5 shadow-2xl">
-            <div className="mb-4 flex items-center justify-between gap-4">
-              <div>
-                <h2 className="text-lg font-bold text-ink">Visual library</h2>
-                <p className="text-sm text-muted">Pilih gambar dari library global untuk slot {slot}.</p>
+          <div className="max-h-[85vh] w-full max-w-5xl overflow-auto rounded-2xl bg-white shadow-2xl">
+            <div className="sticky top-0 z-10 border-b border-line bg-white p-5">
+              <div className="flex items-start justify-between gap-4">
+                <div>
+                  <h2 className="text-lg font-bold text-ink">Visual library</h2>
+                  <p className="text-sm text-muted">
+                    Pilih kategori sesuai rasio slot {slot}.
+                  </p>
+                </div>
+                <button type="button" onClick={() => setLibraryOpen(false)} className="focus-ring rounded-lg p-2 hover:bg-sand">
+                  <X className="h-5 w-5" />
+                </button>
               </div>
-              <button type="button" onClick={() => setLibraryOpen(false)} className="focus-ring rounded-lg p-2 hover:bg-sand">
-                <X className="h-5 w-5" />
-              </button>
+              <div className="mt-4 flex gap-2" role="tablist" aria-label="Kategori visual">
+                {(["hero", "card"] as const).map((category) => (
+                  <button
+                    key={category}
+                    type="button"
+                    role="tab"
+                    aria-selected={libraryCategory === category}
+                    onClick={() => void loadLibrary(category)}
+                    disabled={libraryLoading}
+                    className={`focus-ring rounded-lg px-4 py-2 text-sm font-semibold transition ${
+                      libraryCategory === category
+                        ? "bg-ink text-white"
+                        : "border border-line bg-white text-ink hover:bg-sand"
+                    }`}
+                  >
+                    {category === "hero" ? "Hero (16:9)" : "Card (1:1)"}
+                  </button>
+                ))}
+              </div>
+              {!categoryMatchesSlot ? (
+                <p className="mt-3 rounded-lg bg-amber-50 px-3 py-2 text-xs font-medium text-amber-900">
+                  Kategori ini hanya untuk dilihat. Buka Library pada slot {libraryCategory === "hero" ? "hero" : "card"} untuk menggunakannya.
+                </p>
+              ) : null}
             </div>
-            {libraryLoading && libraryAssets.length === 0 ? (
-              <div className="flex justify-center py-16"><Loader2 className="h-7 w-7 animate-spin" /></div>
-            ) : libraryAssets.length === 0 ? (
-              <p className="py-12 text-center text-muted">Belum ada gambar di library.</p>
-            ) : (
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {libraryAssets.map((asset) => (
-                  <article key={asset.asset_id} className={`overflow-hidden rounded-xl border ${asset.is_active ? "border-orange-500 ring-2 ring-orange-200" : "border-line"}`}>
+            <div className="p-5">
+              {libraryLoading && libraryAssets.length === 0 ? (
+                <div className="flex justify-center py-16"><Loader2 className="h-7 w-7 animate-spin" /></div>
+              ) : libraryAssets.length === 0 ? (
+                <p className="py-12 text-center text-muted">Belum ada gambar di kategori ini.</p>
+              ) : (
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  {libraryAssets.map((asset) => (
+                    <article key={asset.asset_id} className={`overflow-hidden rounded-xl border ${asset.is_active ? "border-orange-500 ring-2 ring-orange-200" : "border-line"}`}>
                     <img
                       src={asset.preview_url}
                       alt={asset.description?.subject ?? "Lesson visual"}
@@ -316,22 +361,28 @@ export function AdminRegenerableLessonImage({
                     />
                     <div className="space-y-2 p-3">
                       <p className="line-clamp-2 text-sm font-semibold text-ink">{asset.description?.subject || asset.model}</p>
-                      <p className="text-xs text-muted">{asset.model} · {(asset.byte_count / 1024).toFixed(0)} KB</p>
+                      <p className="text-xs text-muted">
+                        {asset.slot === "hero" ? "Hero 16:9" : "Card 1:1"} · {asset.model} · {(asset.byte_count / 1024).toFixed(0)} KB
+                      </p>
                       <button
                         type="button"
-                        disabled={asset.is_active || libraryLoading}
+                        disabled={!categoryMatchesSlot || asset.is_active || libraryLoading}
                         onClick={() => activateLibraryAsset(asset.asset_id)}
                         className="focus-ring w-full rounded-lg bg-ink px-3 py-2 text-xs font-semibold text-white disabled:opacity-50"
                       >
-                        {asset.is_active ? "Sedang digunakan" : "Gunakan gambar"}
+                        {!categoryMatchesSlot ? "Kategori berbeda" : asset.is_active ? "Sedang digunakan" : "Gunakan gambar"}
                       </button>
                     </div>
-                  </article>
-                ))}
-              </div>
-            )}
+                    </article>
+                  ))}
+                </div>
+              )}
+              {libraryLoading && libraryAssets.length > 0 ? (
+                <div className="flex justify-center py-4"><Loader2 className="h-6 w-6 animate-spin" /></div>
+              ) : null}
+            </div>
+            </div>
           </div>
-        </div>
       ) : null}
     </div>
   );
