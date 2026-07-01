@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import {
   CheckCircle2,
+  ChevronDown,
+  ChevronUp,
   ClipboardCheck,
   MailCheck,
   RefreshCcw,
@@ -188,7 +190,9 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
         limit: 100
       });
       setOrders(nextOrders);
-      setSelectedOrder(nextOrders[0] ?? null);
+      // Auto-expand only a single-result search hit (e.g. by unique code); a
+      // browsed/filtered list should stay collapsed until the admin picks one.
+      setSelectedOrder(nextOrders.length === 1 ? nextOrders[0] : null);
       setMessage(nextOrders.length ? `${nextOrders.length} order dimuat.` : "Tidak ada order pada filter ini.");
     } catch {
       setError("Order belum bisa dimuat. Pastikan akunmu punya role admin atau cek koneksi API.");
@@ -304,9 +308,9 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
   }
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[0.38fr_0.62fr]">
-      <section className="space-y-5">
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+    <section className="space-y-5">
+      <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div className="flex items-start gap-3">
             <div className="grid h-10 w-10 place-items-center rounded-lg bg-mint">
               <ShieldCheck className="h-5 w-5 text-leaf" aria-hidden="true" />
@@ -320,59 +324,22 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
             </div>
           </div>
 
-          <div className="mt-5 grid gap-3">
-            <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
-              Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
-            </div>
-            <label className="text-sm font-medium text-ink/70">
-              Approved by
-              <input
-                type="text"
-                value={adminName}
-                onChange={(event) => setAdminName(event.target.value)}
-                className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-              />
-            </label>
+          <div className="rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">
+            Login sebagai <span className="font-semibold text-ink">{adminUser.email}</span>
           </div>
         </div>
 
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <div className="flex items-center justify-between gap-3">
-            <h2 className="font-semibold">Queue</h2>
-            <button
-              type="button"
-              onClick={() => loadOrders()}
-              disabled={isLoading}
-              className="focus-ring inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-ink px-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
-            >
-              <RefreshCcw className="h-4 w-4" aria-hidden="true" />
-              Refresh
-            </button>
-          </div>
-
-          <div className="mt-4 grid gap-2 sm:grid-cols-2">
-            {statusOptions.map((option) => (
-              <button
-                key={option.label}
-                type="button"
-                onClick={() => {
-                  setStatus(option.value);
-                  void loadOrders({ nextStatus: option.value });
-                }}
-                className={`focus-ring min-h-10 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60 ${
-                  status === option.value ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
-                }`}
-              >
-                {option.label}
-              </button>
-            ))}
-          </div>
-
-          <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+        <div className="mt-5 flex flex-col gap-3 lg:flex-row">
+          <div className="flex flex-1 gap-2">
             <input
               type="text"
               value={query}
               onChange={(event) => setQuery(event.target.value)}
+              onKeyDown={(event) => {
+                if (event.key === "Enter") {
+                  void handleSearch();
+                }
+              }}
               className="focus-ring min-w-0 flex-1 rounded-lg border border-ink/15 bg-white px-3 py-2 text-sm text-ink"
               placeholder="Kode unik atau order id"
             />
@@ -380,114 +347,150 @@ export function AdminPaymentManager({ adminUser }: { adminUser: AuthUser }) {
               type="button"
               onClick={handleSearch}
               disabled={isLoading}
-              className="focus-ring inline-flex h-10 w-10 items-center justify-center rounded-lg bg-mint text-leaf disabled:cursor-not-allowed disabled:opacity-60"
-              aria-label="Cari order"
-              title="Cari order"
+              className="focus-ring inline-flex h-10 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
             >
               <Search className="h-4 w-4" aria-hidden="true" />
+              Cari
             </button>
           </div>
 
-          <div className="mt-4 grid gap-2 text-sm sm:grid-cols-3">
-            <Metric label="Orders" value={totals.count} />
-            <Metric label="Confirmed" value={totals.confirmed} />
-            <Metric label="Amount" value={formatRupiah(totals.amount)} />
-          </div>
-
-          {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
-          {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
+          <button
+            type="button"
+            onClick={() => loadOrders()}
+            disabled={isLoading}
+            className="focus-ring inline-flex h-10 items-center justify-center gap-2 rounded-lg border border-ink/10 bg-white px-4 text-sm font-semibold text-ink disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <RefreshCcw className="h-4 w-4" aria-hidden="true" />
+            Refresh
+          </button>
         </div>
-      </section>
 
-      <section className="grid gap-5 xl:grid-cols-[0.42fr_0.58fr]">
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          <h2 className="font-semibold">Payment Orders</h2>
-          <div className="mt-4 space-y-3">
-            {orders.map((order) => (
-              <button
+        <div className="mt-4 grid gap-2 sm:grid-cols-3 lg:grid-cols-6">
+          {statusOptions.map((option) => (
+            <button
+              key={option.label}
+              type="button"
+              onClick={() => {
+                setStatus(option.value);
+                void loadOrders({ nextStatus: option.value });
+              }}
+              className={`focus-ring min-h-10 rounded-lg px-3 text-sm font-semibold disabled:cursor-not-allowed disabled:opacity-60 ${
+                status === option.value ? "bg-ink text-white" : "bg-paper text-ink/70 hover:bg-mint"
+              }`}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="mt-4 grid gap-2 sm:grid-cols-3">
+          <Metric label="Orders" value={totals.count} />
+          <Metric label="Confirmed" value={totals.confirmed} />
+          <Metric label="Amount" value={formatRupiah(totals.amount)} />
+        </div>
+
+        {message ? <p className="mt-4 rounded-lg bg-mint px-4 py-3 text-sm text-ink/70">{message}</p> : null}
+        {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
+      </div>
+
+      <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
+        <h2 className="font-semibold">Payment Orders</h2>
+        <div className="mt-4 space-y-3">
+          {orders.map((order) => {
+            const isOpen = selectedOrder?.id === order.id;
+
+            return (
+              <article
                 key={order.id}
-                type="button"
-                onClick={() => setSelectedOrder(order)}
-                className={`focus-ring w-full rounded-lg border p-4 text-left ${
-                  selectedOrder?.id === order.id ? "border-leaf bg-mint" : "border-ink/10 bg-paper hover:bg-mint"
+                className={`rounded-lg border transition ${
+                  isOpen ? "border-leaf bg-mint" : "border-ink/10 bg-paper"
                 }`}
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="font-semibold">{metadataValue(order, "package_name", order.packageKey)}</p>
-                    <p className="mt-1 text-xs text-ink/50">{order.id}</p>
+                <button
+                  type="button"
+                  onClick={() => setSelectedOrder(isOpen ? null : order)}
+                  className="focus-ring flex w-full flex-col gap-3 p-4 text-left"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div>
+                      <p className="font-semibold">{metadataValue(order, "package_name", order.packageKey)}</p>
+                      <p className="mt-1 text-xs text-ink/50">{order.id}</p>
+                    </div>
+                    <span className={`rounded-md px-2 py-1 text-xs font-semibold ${statusTone(order.status)}`}>
+                      {order.status}
+                    </span>
                   </div>
-                  <span className={`rounded-md px-2 py-1 text-xs font-semibold ${statusTone(order.status)}`}>
-                    {order.status}
-                  </span>
-                </div>
-                <div className="mt-3 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-                  <p className="text-2xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
-                  <p className="rounded-md bg-white px-2 py-1 font-mono text-sm">#{order.uniqueCode ?? "-"}</p>
-                </div>
-                <div className="mt-3 flex items-center justify-between gap-2">
-                  <p className="text-xs text-ink/50">Updated {formatDate(order.updatedAt)}</p>
-                  <p className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-ink/70">
-                    {metadataValue(order, "bank_name")}
-                  </p>
-                </div>
-              </button>
-            ))}
+                  <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                    <p className="text-2xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
+                    <p className="rounded-md bg-white px-2 py-1 font-mono text-sm">#{order.uniqueCode ?? "-"}</p>
+                  </div>
+                  <div className="flex items-center justify-between gap-2">
+                    <p className="text-xs text-ink/50">Updated {formatDate(order.updatedAt)}</p>
+                    <div className="flex items-center gap-2">
+                      <p className="rounded-md bg-white px-2 py-1 text-xs font-semibold text-ink/70">
+                        {metadataValue(order, "bank_name")}
+                      </p>
+                      {isOpen ? (
+                        <ChevronUp className="h-4 w-4 text-ink/50" aria-hidden="true" />
+                      ) : (
+                        <ChevronDown className="h-4 w-4 text-ink/50" aria-hidden="true" />
+                      )}
+                    </div>
+                  </div>
+                </button>
 
-            {!orders.length ? (
-              <div className="rounded-lg bg-paper p-5 text-sm leading-6 text-ink/60">
-                Klik refresh, atau buka link dari email konfirmasi transfer.
-              </div>
-            ) : null}
-          </div>
-        </div>
+                {isOpen ? (
+                  <div className="border-t border-ink/10 px-4 py-4">
+                    <PaymentDetail
+                      order={order}
+                      adminName={adminName}
+                      notes={notes}
+                      canApprove={Boolean(selectedCanApprove)}
+                      actionOrderId={actionOrderId}
+                      notificationOrderId={notificationOrderId}
+                      onAdminNameChange={setAdminName}
+                      onNotesChange={setNotes}
+                      onApprove={() => handleDecision("approve")}
+                      onReject={() => handleDecision("reject")}
+                      onResendDecisionEmail={handleResendDecisionEmail}
+                    />
+                  </div>
+                ) : null}
+              </article>
+            );
+          })}
 
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-          {selectedOrder ? (
-            <PaymentDetail
-              order={selectedOrder}
-              notes={notes}
-              canApprove={Boolean(selectedCanApprove)}
-              actionOrderId={actionOrderId}
-              notificationOrderId={notificationOrderId}
-              onNotesChange={setNotes}
-              onApprove={() => handleDecision("approve")}
-              onReject={() => handleDecision("reject")}
-              onResendDecisionEmail={handleResendDecisionEmail}
-            />
-          ) : (
-            <div className="grid min-h-[420px] place-items-center rounded-lg bg-paper p-6 text-center">
-              <div>
-                <ShieldCheck className="mx-auto h-8 w-8 text-leaf" aria-hidden="true" />
-                <h2 className="mt-4 text-xl font-semibold">Pilih order</h2>
-                <p className="mt-2 text-sm leading-6 text-ink/60">
-                  Detail transfer dan action approval akan muncul di sini.
-                </p>
-              </div>
+          {!orders.length ? (
+            <div className="rounded-lg bg-paper p-5 text-sm leading-6 text-ink/60">
+              Klik refresh, atau buka link dari email konfirmasi transfer.
             </div>
-          )}
+          ) : null}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 
 function PaymentDetail({
   order,
+  adminName,
   notes,
   canApprove,
   actionOrderId,
   notificationOrderId,
+  onAdminNameChange,
   onNotesChange,
   onApprove,
   onReject,
   onResendDecisionEmail
 }: {
   order: PaymentOrder;
+  adminName: string;
   notes: string;
   canApprove: boolean;
   actionOrderId: string | null;
   notificationOrderId: string | null;
+  onAdminNameChange: (value: string) => void;
   onNotesChange: (value: string) => void;
   onApprove: () => void;
   onReject: () => void;
@@ -570,16 +573,27 @@ function PaymentDetail({
         </div>
       ) : null}
 
-      <label className="mt-5 block text-sm font-medium text-ink/70">
-        Admin notes
-        <textarea
-          value={notes}
-          onChange={(event) => onNotesChange(event.target.value)}
-          rows={3}
-          className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-          placeholder="Contoh: cocok dengan mutasi bank tujuan"
-        />
-      </label>
+      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+        <label className="block text-sm font-medium text-ink/70">
+          Approved by
+          <input
+            type="text"
+            value={adminName}
+            onChange={(event) => onAdminNameChange(event.target.value)}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
+          />
+        </label>
+        <label className="block text-sm font-medium text-ink/70">
+          Admin notes
+          <textarea
+            value={notes}
+            onChange={(event) => onNotesChange(event.target.value)}
+            rows={1}
+            className="focus-ring mt-2 w-full resize-none rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
+            placeholder="Contoh: cocok dengan mutasi bank tujuan"
+          />
+        </label>
+      </div>
 
       <div className="mt-5 grid gap-3 sm:grid-cols-2">
         <button

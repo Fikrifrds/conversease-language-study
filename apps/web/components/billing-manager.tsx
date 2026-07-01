@@ -3,9 +3,11 @@
 import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import { CheckCircle2, Clipboard, Landmark, ReceiptText } from "lucide-react";
+import { CheckCircle2, Clipboard, CreditCard, Landmark, ReceiptText, XCircle } from "lucide-react";
+import { Modal } from "@/components/modal";
 import {
   bankLogo,
+  cancelManualTransfer,
   confirmManualTransfer,
   createCheckout,
   getBillingAccess,
@@ -109,6 +111,9 @@ export function BillingManager() {
   const [targetBank, setTargetBank] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
+  const [showPaymentInstructions, setShowPaymentInstructions] = useState(false);
+  const [cancellingOrderId, setCancellingOrderId] = useState<string | null>(null);
 
   useEffect(() => {
     let ignore = false;
@@ -134,6 +139,20 @@ export function BillingManager() {
       ignore = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (checkoutOrder || deepLinkOrderId) {
+      return;
+    }
+
+    const activeOrder = orders.find((order) => order.status === "pending" || order.status === "confirmed");
+    if (activeOrder) {
+      setCheckoutOrder(activeOrder);
+    }
+    // Runs once orders finish loading; deepLinkOrderId's own effect owns setting
+    // checkoutOrder when a link is present, so this only fills in otherwise.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [orders]);
 
   useEffect(() => {
     if (!deepLinkOrderId) {
@@ -190,6 +209,7 @@ export function BillingManager() {
   async function handleCheckout(packageKey: string, paymentKind: PaymentKind) {
     setActivePackage(packageKey);
     setTargetBank("");
+    setShowPaymentInstructions(false);
     setError("");
     setMessage("");
 
@@ -197,11 +217,40 @@ export function BillingManager() {
       trackEvent("begin_checkout", { package_key: packageKey, payment_kind: paymentKind });
       const order = await createCheckout({ packageKey, paymentKind });
       setCheckoutOrder(order);
+      setIsUpgradeModalOpen(true);
       setMessage("Instruksi transfer sudah dibuat. Gunakan nominal tepat agar mudah diverifikasi.");
     } catch {
       setError("Instruksi transfer belum bisa dibuat. Coba ulang sebentar.");
     } finally {
       setActivePackage(null);
+    }
+  }
+
+  function handleViewPaymentInstructions() {
+    setShowPaymentInstructions(true);
+    setIsUpgradeModalOpen(true);
+  }
+
+  async function handleCancelOrder() {
+    if (!checkoutOrder) {
+      return;
+    }
+
+    setCancellingOrderId(checkoutOrder.id);
+    setError("");
+    setMessage("");
+
+    try {
+      await cancelManualTransfer(checkoutOrder.id);
+      setCheckoutOrder(null);
+      setIsUpgradeModalOpen(false);
+      setShowPaymentInstructions(false);
+      setMessage("Order dibatalkan.");
+      await refreshAccess();
+    } catch {
+      setError("Order belum bisa dibatalkan. Coba ulang sebentar.");
+    } finally {
+      setCancellingOrderId(null);
     }
   }
 
@@ -274,72 +323,69 @@ export function BillingManager() {
         {error ? <p className="mt-4 rounded-lg bg-[#fde7df] px-4 py-3 text-sm text-ink/70">{error}</p> : null}
       </section>
 
-      {checkoutOrder ? (
-        <TransferInstruction
-          order={checkoutOrder}
-          transferDate={transferDate}
-          targetBank={targetBank}
-          isSubmitting={activePackage === checkoutOrder.packageKey}
-          onTransferDateChange={setTransferDate}
-          onTargetBankChange={setTargetBank}
-          onConfirm={handleConfirmTransfer}
-          onCopy={handleCopy}
-        />
-      ) : null}
-
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-semibold uppercase text-leaf">Langganan</p>
-            <h2 className="mt-2 text-2xl font-semibold">Pilih paket Pro</h2>
+            <h2 className="mt-2 text-2xl font-semibold">
+              {isProActive ? proPlan?.name : "Belum ada paket Pro aktif"}
+            </h2>
           </div>
-          {hasOpenOrder ? (
+
+          {isProActive ? (
+            <span className="inline-flex w-fit items-center gap-1 rounded-full bg-mint px-3 py-1 text-xs font-semibold text-leaf">
+              <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+              Aktif
+            </span>
+          ) : hasOpenOrder ? (
             <p className="text-sm text-ink/55">Selesaikan order aktif dulu sebelum membuat order baru.</p>
+          ) : proPlan ? (
+            <button
+              type="button"
+              onClick={() => handleCheckout(proPlan.key, "subscription")}
+              disabled={activePackage !== null}
+              className="focus-ring inline-flex w-fit items-center justify-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <CreditCard className="h-4 w-4" aria-hidden="true" />
+              {activePackage === proPlan.key ? "Menyiapkan…" : `Upgrade ke ${proPlan.name}`}
+            </button>
           ) : null}
         </div>
 
-        {proPlan ? (
-          <div className="mt-5 overflow-hidden rounded-2xl border border-leaf/25">
-            <div className="bg-mint px-5 py-5">
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <p className="text-lg font-semibold">{proPlan.name}</p>
-                  <p className="mt-1 text-sm text-ink/60">Pro All Access {proPlan.cadence}</p>
-                </div>
-                {isProActive ? (
-                  <span className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-semibold text-leaf">
-                    <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
-                    Aktif
-                  </span>
-                ) : null}
-              </div>
-              <p className="mt-4 text-4xl font-semibold">{proPlan.price}</p>
-            </div>
-            <div className="px-5 py-5">
-              <ul className="space-y-2.5">
-                {proPlan.features.map((feature) => (
-                  <li key={feature} className="flex gap-2.5 text-sm text-ink/80">
-                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-              <button
-                type="button"
-                onClick={() => handleCheckout(proPlan.key, "subscription")}
-                disabled={activePackage !== null || Boolean(hasOpenOrder) || isProActive}
-                className="focus-ring mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                {isProActive
-                  ? "Paket aktif"
-                  : activePackage === proPlan.key
-                    ? "Menyiapkan…"
-                    : "Buat Instruksi Transfer"}
-              </button>
-            </div>
-          </div>
+        {checkoutOrder && hasOpenOrder ? (
+          <ActiveOrderCard
+            order={checkoutOrder}
+            isCancelling={cancellingOrderId === checkoutOrder.id}
+            onViewInstructions={handleViewPaymentInstructions}
+            onCancel={handleCancelOrder}
+          />
         ) : null}
       </section>
+
+      {checkoutOrder && isUpgradeModalOpen ? (
+        <Modal
+          eyebrow="Instruksi Pembayaran"
+          title={orderMetadata(checkoutOrder, "package_name", checkoutOrder.packageKey)}
+          size="lg"
+          closeLabel="Tutup instruksi pembayaran"
+          onClose={() => setIsUpgradeModalOpen(false)}
+        >
+          <TransferInstruction
+            order={checkoutOrder}
+            transferDate={transferDate}
+            targetBank={targetBank}
+            showPaymentInstructions={showPaymentInstructions}
+            isSubmitting={activePackage === checkoutOrder.packageKey}
+            isCancelling={cancellingOrderId === checkoutOrder.id}
+            onTransferDateChange={setTransferDate}
+            onTargetBankChange={setTargetBank}
+            onShowPaymentInstructions={() => setShowPaymentInstructions(true)}
+            onConfirm={handleConfirmTransfer}
+            onCancel={handleCancelOrder}
+            onCopy={handleCopy}
+          />
+        </Modal>
+      ) : null}
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
         <h2 className="text-xl font-semibold">Riwayat transaksi</h2>
@@ -375,42 +421,38 @@ function TransferInstruction({
   order,
   transferDate,
   targetBank,
+  showPaymentInstructions,
   isSubmitting,
+  isCancelling,
   onTransferDateChange,
   onTargetBankChange,
+  onShowPaymentInstructions,
   onConfirm,
+  onCancel,
   onCopy
 }: {
   order: PaymentOrder;
   transferDate: string;
   targetBank: string;
+  showPaymentInstructions: boolean;
   isSubmitting: boolean;
+  isCancelling: boolean;
   onTransferDateChange: (value: string) => void;
   onTargetBankChange: (value: string) => void;
+  onShowPaymentInstructions: () => void;
   onConfirm: () => void;
+  onCancel: () => void;
   onCopy: (value: string) => void;
 }) {
   const bankAccounts = orderBankAccounts(order);
-  const packageName = orderMetadata(order, "package_name", order.packageKey);
   const canConfirm = order.status === "pending";
   const recordedBank = orderMetadata(order, "bank_name", "");
   const activeBank = canConfirm ? targetBank : recordedBank;
   const selectedAccount = bankAccounts.find((account) => account.bankName === activeBank) ?? null;
 
   return (
-    <section className="rounded-lg border border-leaf/30 bg-white p-5 shadow-sm">
-      <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-        <div>
-          <p className="text-sm font-semibold uppercase text-leaf">Instruksi Pembayaran</p>
-          <h2 className="mt-2 text-2xl font-semibold">{packageName}</h2>
-          <p className="mt-2 text-sm text-ink/60">Order {order.id}</p>
-        </div>
-        <div className="rounded-lg bg-paper px-3 py-2 text-sm font-semibold text-coral">
-          {statusLabel(order.status)}
-        </div>
-      </div>
-
-      <div className="mt-5 rounded-lg border border-leaf/20 bg-mint p-4">
+    <div>
+      <div className="rounded-lg border border-leaf/20 bg-mint p-4">
         <p className="text-sm text-ink/70">Transfer sesuai nominal berikut</p>
         <p className="mt-2 text-3xl font-semibold text-[#1f3f91]">{formatRupiah(order.amountIdr)}</p>
         <p className="mt-1 text-sm text-[#2563eb]">
@@ -424,104 +466,175 @@ function TransferInstruction({
         ) : null}
       </div>
 
-      <div className="mt-4 space-y-3">
-        {canConfirm ? (
-          <>
-            <p className="text-sm font-medium text-ink/70">
-              {bankAccounts.length > 1 ? "1. Pilih bank tujuan transfer" : "Bank tujuan transfer"}
-            </p>
-            <div className="grid gap-2.5 sm:grid-cols-2">
-              {bankAccounts.map((account) => {
-                const logo = bankLogo(account.bankName);
-                const selected = account.bankName === targetBank;
-                return (
-                  <button
-                    key={`${account.bankName}-${account.accountNumber}`}
-                    type="button"
-                    onClick={() => onTargetBankChange(account.bankName)}
-                    aria-pressed={selected}
-                    className={`focus-ring flex items-center justify-between gap-3 rounded-xl border p-4 text-left transition ${
-                      selected
-                        ? "border-leaf bg-mint ring-1 ring-leaf"
-                        : "border-ink/10 bg-white hover:border-leaf/40"
-                    }`}
-                  >
-                    <div>
-                      <p className="text-xs uppercase tracking-wide text-ink/45">Bank Tujuan</p>
-                      <p className="mt-1 text-base font-semibold">{account.bankName}</p>
-                    </div>
-                    {logo ? (
-                      <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-6 w-auto" />
-                    ) : null}
-                  </button>
-                );
-              })}
+      {showPaymentInstructions ? (
+        <div className="mt-4 space-y-3">
+          {canConfirm ? (
+            <>
+              <p className="text-sm font-medium text-ink/70">
+                {bankAccounts.length > 1 ? "1. Pilih bank tujuan transfer" : "Bank tujuan transfer"}
+              </p>
+              <div className="grid gap-2.5 sm:grid-cols-2">
+                {bankAccounts.map((account) => {
+                  const logo = bankLogo(account.bankName);
+                  const selected = account.bankName === targetBank;
+                  return (
+                    <button
+                      key={`${account.bankName}-${account.accountNumber}`}
+                      type="button"
+                      onClick={() => onTargetBankChange(account.bankName)}
+                      aria-pressed={selected}
+                      className={`focus-ring flex items-center justify-between gap-3 rounded-xl border p-4 text-left transition ${
+                        selected
+                          ? "border-leaf bg-mint ring-1 ring-leaf"
+                          : "border-ink/10 bg-white hover:border-leaf/40"
+                      }`}
+                    >
+                      <div>
+                        <p className="text-xs uppercase tracking-wide text-ink/45">Bank Tujuan</p>
+                        <p className="mt-1 text-base font-semibold">{account.bankName}</p>
+                      </div>
+                      {logo ? (
+                        <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-6 w-auto" />
+                      ) : null}
+                    </button>
+                  );
+                })}
+              </div>
+            </>
+          ) : null}
+
+          {selectedAccount ? (
+            <div className="rounded-xl border border-leaf/25 bg-white p-4">
+              <p className="text-sm text-ink/55">
+                Transfer ke rekening <span className="font-semibold text-ink">{selectedAccount.bankName}</span> berikut:
+              </p>
+              <div className="mt-3 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
+                <p className="flex-1 text-center font-mono text-xl tracking-wide">{selectedAccount.accountNumber}</p>
+                <button
+                  type="button"
+                  onClick={() => onCopy(selectedAccount.accountNumber)}
+                  className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
+                  aria-label={`Salin nomor rekening ${selectedAccount.bankName}`}
+                  title="Salin nomor rekening"
+                >
+                  <Clipboard className="h-4 w-4" aria-hidden="true" />
+                </button>
+              </div>
+              <p className="mt-3 text-center text-sm text-ink/60">a.n. {selectedAccount.accountHolder}</p>
             </div>
-          </>
-        ) : null}
-
-        {selectedAccount ? (
-          <div className="rounded-xl border border-leaf/25 bg-white p-4">
-            <p className="text-sm text-ink/55">
-              Transfer ke rekening <span className="font-semibold text-ink">{selectedAccount.bankName}</span> berikut:
+          ) : canConfirm ? (
+            <p className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/55">
+              Pilih bank tujuan di atas untuk melihat nomor rekening.
             </p>
-            <div className="mt-3 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
-              <p className="flex-1 text-center font-mono text-xl tracking-wide">{selectedAccount.accountNumber}</p>
-              <button
-                type="button"
-                onClick={() => onCopy(selectedAccount.accountNumber)}
-                className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
-                aria-label={`Salin nomor rekening ${selectedAccount.bankName}`}
-                title="Salin nomor rekening"
-              >
-                <Clipboard className="h-4 w-4" aria-hidden="true" />
-              </button>
-            </div>
-            <p className="mt-3 text-center text-sm text-ink/60">a.n. {selectedAccount.accountHolder}</p>
-          </div>
-        ) : canConfirm ? (
-          <p className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/55">
-            Pilih bank tujuan di atas untuk melihat nomor rekening.
-          </p>
-        ) : null}
-      </div>
-
-      <div className="mt-4 grid gap-3 sm:grid-cols-3">
-        <Metric label="Bank" value={bankAccounts.map((account) => account.bankName).join(" / ") || "-"} />
-        <Metric label="Status" value={statusLabel(order.status)} />
-        <Metric label="Berlaku sampai" value={formatDateTime(order.expiresAt)} />
-      </div>
-
-      {canConfirm ? (
-        <div className="mt-5 space-y-3">
-          <label className="block text-sm font-medium text-ink/70">
-            2. Tanggal transfer
-            <input
-              type="date"
-              value={transferDate}
-              onChange={(event) => onTransferDateChange(event.target.value)}
-              className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
-            />
-          </label>
-          <button
-            type="button"
-            onClick={onConfirm}
-            disabled={isSubmitting || !targetBank || !transferDate}
-            className="focus-ring flex min-h-12 w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
-          >
-            <ReceiptText className="h-4 w-4" aria-hidden="true" />
-            {isSubmitting ? "Mengirim konfirmasi…" : "Saya Sudah Transfer"}
-          </button>
+          ) : null}
         </div>
       ) : (
+        <button
+          type="button"
+          onClick={onShowPaymentInstructions}
+          className="focus-ring mt-4 flex min-h-11 w-full items-center justify-center gap-2 rounded-lg border border-ink/15 bg-white px-4 text-sm font-semibold text-ink hover:bg-paper"
+        >
+          <Landmark className="h-4 w-4" aria-hidden="true" />
+          Lihat cara pembayaran
+        </button>
+      )}
+
+      {showPaymentInstructions ? (
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          <Metric label="Status" value={statusLabel(order.status)} />
+          <Metric label="Berlaku sampai" value={formatDateTime(order.expiresAt)} />
+        </div>
+      ) : null}
+
+      {canConfirm && showPaymentInstructions ? (
+        <label className="mt-5 block text-sm font-medium text-ink/70">
+          2. Tanggal transfer
+          <input
+            type="date"
+            value={transferDate}
+            onChange={(event) => onTransferDateChange(event.target.value)}
+            className="focus-ring mt-2 w-full rounded-lg border border-ink/15 bg-white px-3 py-3 text-ink"
+          />
+        </label>
+      ) : null}
+
+      {order.status === "confirmed" ? (
         <div className="mt-5 flex items-start gap-3 rounded-lg bg-paper p-4">
           <Landmark className="mt-0.5 h-5 w-5 text-leaf" aria-hidden="true" />
           <p className="text-sm leading-6 text-ink/65">
             Konfirmasi sudah masuk. Admin akan mencocokkan nominal unik dan mengaktifkan akses setelah transfer valid.
           </p>
         </div>
-      )}
-    </section>
+      ) : null}
+
+      <div className="mt-5 grid gap-3 sm:grid-cols-2">
+        <button
+          type="button"
+          onClick={onCancel}
+          disabled={isCancelling || isSubmitting}
+          className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg border border-coral px-4 text-sm font-semibold text-coral disabled:cursor-not-allowed disabled:opacity-60"
+        >
+          <XCircle className="h-4 w-4" aria-hidden="true" />
+          {isCancelling ? "Membatalkan…" : "Batalkan Order"}
+        </button>
+        {canConfirm ? (
+          <button
+            type="button"
+            onClick={onConfirm}
+            disabled={isSubmitting || isCancelling || !targetBank || !transferDate}
+            className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <ReceiptText className="h-4 w-4" aria-hidden="true" />
+            {isSubmitting ? "Mengirim konfirmasi…" : "Saya Sudah Transfer"}
+          </button>
+        ) : null}
+      </div>
+    </div>
+  );
+}
+
+function ActiveOrderCard({
+  order,
+  isCancelling,
+  onViewInstructions,
+  onCancel
+}: {
+  order: PaymentOrder;
+  isCancelling: boolean;
+  onViewInstructions: () => void;
+  onCancel: () => void;
+}) {
+  return (
+    <div className="mt-5 rounded-lg border border-leaf/25 bg-mint p-4">
+      <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p className="text-sm font-semibold uppercase text-leaf">Order aktif</p>
+          <p className="mt-1 text-xl font-semibold">{formatRupiah(order.amountIdr)}</p>
+          <p className="mt-1 text-sm text-ink/60">
+            {orderMetadata(order, "package_name", order.packageKey)} · {statusLabel(order.status)}
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={onViewInstructions}
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-ink px-4 text-sm font-semibold text-white hover:bg-leaf"
+          >
+            <Landmark className="h-4 w-4" aria-hidden="true" />
+            Lihat cara pembayaran
+          </button>
+          <button
+            type="button"
+            onClick={onCancel}
+            disabled={isCancelling}
+            className="focus-ring inline-flex min-h-11 items-center justify-center gap-2 rounded-lg border border-coral px-4 text-sm font-semibold text-coral disabled:cursor-not-allowed disabled:opacity-60"
+          >
+            <XCircle className="h-4 w-4" aria-hidden="true" />
+            {isCancelling ? "Membatalkan…" : "Batalkan"}
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

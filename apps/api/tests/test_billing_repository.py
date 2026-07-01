@@ -152,6 +152,82 @@ class BillingRepositoryTest(unittest.TestCase):
                     target_bank="Bank Tidak Terdaftar",
                 )
 
+    def test_cancel_pending_order_releases_unique_code(self):
+        original_min = settings.manual_transfer_unique_code_min
+        original_max = settings.manual_transfer_unique_code_max
+        settings.manual_transfer_unique_code_min = 101
+        settings.manual_transfer_unique_code_max = 101
+
+        try:
+            with self.SessionLocal() as db:
+                repository = BillingRepository(db)
+                order = repository.create_manual_transfer_order(
+                    user_id="user-123",
+                    package_key="pro_1_month",
+                    payment_kind=PaymentKind.SUBSCRIPTION,
+                )
+
+                cancelled = repository.cancel_manual_transfer_order(user_id="user-123", order_id=order.id)
+
+                self.assertEqual(cancelled.status, "failed")
+                self.assertTrue(cancelled.metadata_json["cancelled_by_user"])
+
+                # The single available code (101) was cancelled-and-released, so a
+                # brand new order can claim it instead of hitting a 503.
+                replacement = repository.create_manual_transfer_order(
+                    user_id="user-456",
+                    package_key="pro_1_month",
+                    payment_kind=PaymentKind.SUBSCRIPTION,
+                )
+                self.assertEqual(replacement.unique_code, 101)
+        finally:
+            settings.manual_transfer_unique_code_min = original_min
+            settings.manual_transfer_unique_code_max = original_max
+
+    def test_cancel_confirmed_order_before_approval_succeeds(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            order = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            repository.confirm_manual_transfer(
+                user_id="user-123",
+                order_id=order.id,
+                transfer_date=date.today(),
+                target_bank=settings.manual_transfer_bank_name,
+            )
+
+            cancelled = repository.cancel_manual_transfer_order(user_id="user-123", order_id=order.id)
+
+            self.assertEqual(cancelled.status, "failed")
+
+    def test_cancel_approved_order_is_rejected(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            order = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            repository.approve_manual_order(order_id=order.id, approved_by="Admin")
+
+            with self.assertRaises(InvalidPaymentStateError):
+                repository.cancel_manual_transfer_order(user_id="user-123", order_id=order.id)
+
+    def test_cancel_order_owned_by_another_user_raises(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            order = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+
+            with self.assertRaises(KeyError):
+                repository.cancel_manual_transfer_order(user_id="user-999", order_id=order.id)
+
     def test_list_user_payment_orders_scopes_to_user(self):
         with self.SessionLocal() as db:
             repository = BillingRepository(db)

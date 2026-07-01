@@ -394,6 +394,31 @@ class BillingRepository:
                 return account
         raise InvalidPaymentStateError("Selected destination bank is not available for this order")
 
+    def cancel_manual_transfer_order(self, user_id: str, order_id: str) -> PaymentOrderModel:
+        order = self.db.get(PaymentOrderModel, order_id)
+        if order is None or order.user_id != user_id:
+            raise KeyError(order_id)
+
+        if order.provider != MANUAL_TRANSFER_PROVIDER:
+            raise InvalidPaymentStateError("Only manual transfer orders can be cancelled")
+
+        now = datetime.utcnow()
+        if self._expire_pending_manual_transfer_order(order, now):
+            self.db.commit()
+            raise InvalidPaymentStateError("Payment order can no longer be cancelled")
+
+        if order.status not in {PaymentStatus.PENDING.value, PaymentStatus.CONFIRMED.value}:
+            raise InvalidPaymentStateError("Only pending or confirmed orders can be cancelled")
+
+        order.status = PaymentStatus.FAILED.value
+        order.updated_at = now
+        order.metadata_json = {
+            **(order.metadata_json or {}),
+            "cancelled_by_user": True,
+        }
+        self.db.commit()
+        return order
+
     def complete_sandbox_order(self, user_id: str, order_id: str) -> PaymentOrderModel:
         order = self.db.get(PaymentOrderModel, order_id)
         if order is None or order.user_id != user_id:

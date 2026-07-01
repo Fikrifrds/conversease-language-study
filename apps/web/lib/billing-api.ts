@@ -283,3 +283,11 @@ export async function confirmManualTransfer(input: {
     emailSent: response.data.email.sent
   };
 }
+
+export async function cancelManualTransfer(orderId: string): Promise<PaymentOrder> {
+  const response = await requestJson<ApiResponse<ApiPaymentOrder>>(
+    `/billing/checkout/${orderId}/cancel`,
+    { method: "POST" }
+  );
+  return mapOrder(response.data);
+}

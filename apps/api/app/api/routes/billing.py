@@ -376,6 +376,25 @@ async def confirm_manual_transfer(
     return {"data": {"order": order_payload(order), "email": email_payload(email_result)}}
 
 
+@router.post("/billing/checkout/{order_id}/cancel")
+async def cancel_manual_transfer(
+    order_id: str,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        order = BillingRepository(db).cancel_manual_transfer_order(
+            user_id=current_user.id,
+            order_id=order_id,
+        )
+    except KeyError as exc:
+        raise HTTPException(status_code=404, detail="Payment order not found") from exc
+    except InvalidPaymentStateError as exc:
+        raise HTTPException(status_code=409, detail=str(exc)) from exc
+
+    return {"data": order_payload(order)}
+
+
 @router.post("/billing/checkout/{order_id}/sandbox-complete")
 async def complete_sandbox_checkout(
     order_id: str,

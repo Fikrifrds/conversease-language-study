@@ -215,6 +215,34 @@ class BillingRoutesTest(unittest.TestCase):
         client.app.dependency_overrides.clear()
         self.assertEqual(response.status_code, 404)
 
+    def test_user_can_cancel_own_pending_order(self):
+        client = self.client()
+        order_id = self.seed_user_and_manual_order()
+        token = create_access_token("user-123")
+
+        response = client.post(
+            f"/api/billing/checkout/{order_id}/cancel",
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+        client.app.dependency_overrides.clear()
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["status"], "failed")
+
+    def test_user_cannot_cancel_another_users_order(self):
+        client = self.client()
+        order_id = self.seed_user_and_manual_order()
+        self.seed_second_user()
+        token = create_access_token("user-456")
+
+        response = client.post(
+            f"/api/billing/checkout/{order_id}/cancel",
+            headers={"Authorization": f"Bearer {token}"},
+        )
+
+        client.app.dependency_overrides.clear()
+        self.assertEqual(response.status_code, 404)
+
     def test_user_get_manual_transfer_order_expires_stale_pending_order(self):
         client = self.client()
         order_id = self.seed_user_and_manual_order()
