@@ -415,6 +415,8 @@ async def download_remote_image(
                     current_url = urljoin(safe_url, location)
                     continue
 
+                if response.status_code in {401, 403}:
+                    raise LessonVisualRegenerationError("remote_image_auth_required")
                 response.raise_for_status()
                 content_type = response.headers.get("content-type", "").split(";", 1)[0].lower()
                 if content_type not in REMOTE_IMAGE_CONTENT_TYPES:

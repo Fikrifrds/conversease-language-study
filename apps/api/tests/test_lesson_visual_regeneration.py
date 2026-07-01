@@ -192,6 +192,22 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
                 )
         self.assertEqual(downloaded, self.png)
 
+    async def test_remote_image_reports_when_browser_session_is_required(self):
+        transport = httpx.MockTransport(
+            lambda request: httpx.Response(403, json={"detail": "File stream access denied."}, request=request)
+        )
+        async with httpx.AsyncClient(transport=transport) as client:
+            with patch(
+                "app.services.lesson_visual_regeneration.validate_remote_image_url",
+                return_value="https://chatgpt.com/backend-api/estuary/content?sig=secret",
+            ):
+                with self.assertRaises(LessonVisualRegenerationError) as context:
+                    await download_remote_image(
+                        "https://chatgpt.com/backend-api/estuary/content?sig=secret",
+                        client=client,
+                    )
+        self.assertEqual(context.exception.code, "remote_image_auth_required")
+
     async def test_url_import_stores_image_but_not_expiring_source_url(self):
         expiring_url = "https://chatgpt.com/backend-api/estuary/content?sig=secret-value"
         with tempfile.TemporaryDirectory() as temporary_dir:

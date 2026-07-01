@@ -175,6 +175,9 @@ async function responseError(response: Response) {
       if (parsed.detail === "remote_image_download_failed") {
         return "Gambar gagal diunduh. Link mungkin sudah kedaluwarsa atau tidak dapat diakses server.";
       }
+      if (parsed.detail === "remote_image_auth_required") {
+        return "Link ini hanya bisa dibuka dengan sesi login pemiliknya. Download gambar dari ChatGPT, lalu gunakan Upload image.";
+      }
       if (parsed.detail === "remote_image_too_many_redirects") {
         return "URL gambar memiliki terlalu banyak redirect.";
       }

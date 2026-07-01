@@ -213,7 +213,11 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
         return HTTPException(status_code=404, detail=exc.code)
     if exc.code == "together_api_key_missing":
         return HTTPException(status_code=503, detail=exc.code)
-    if exc.code in {"remote_image_download_failed", "remote_image_too_many_redirects"}:
+    if exc.code in {
+        "remote_image_auth_required",
+        "remote_image_download_failed",
+        "remote_image_too_many_redirects",
+    }:
         return HTTPException(status_code=502, detail=exc.code)
     if exc.code.startswith("together_") or exc.code.startswith("generated_image_"):
         return HTTPException(status_code=502, detail=exc.code)
