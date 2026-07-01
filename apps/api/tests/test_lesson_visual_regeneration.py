@@ -9,6 +9,7 @@ import httpx
 from PIL import Image
 import yaml
 
+from app.core.config import settings
 from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
     PNG_SIGNATURE,
@@ -17,12 +18,37 @@ from app.services.lesson_visual_regeneration import (
     image_bytes_from_response,
     image_generation_dimensions,
     import_lesson_visual_from_url,
+    create_visual_thumbnail,
+    get_active_lesson_visual,
     lesson_prompt_index,
+    list_lesson_visual_library,
     optimize_png,
     regenerate_lesson_visual,
+    select_lesson_visual_asset,
     upload_lesson_visual,
     validate_remote_image_url,
 )
+
+
+class FakeS3Missing(Exception):
+    response = {"Error": {"Code": "NoSuchKey"}}
+
+
+class FakeVisualS3:
+    def __init__(self) -> None:
+        self.objects = {}
+
+    def put_object(self, *, Bucket, Key, Body, ContentType, CacheControl):
+        self.objects[Key] = {
+            "Body": bytes(Body),
+            "ContentType": ContentType,
+            "CacheControl": CacheControl,
+        }
+
+    def get_object(self, *, Bucket, Key):
+        if Key not in self.objects:
+            raise FakeS3Missing()
+        return {"Body": BytesIO(self.objects[Key]["Body"])}
 
 
 class FakeImageClient:
@@ -172,6 +198,60 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
             )
         self.assertEqual(context.exception.code, "uploaded_image_aspect_ratio_invalid")
 
+    def test_s3_library_keeps_assets_and_active_pointer_without_local_files(self):
+        source = BytesIO()
+        Image.new("RGB", (1600, 900), (245, 158, 11)).save(source, format="JPEG")
+        fake_s3 = FakeVisualS3()
+        patches = [
+            patch.object(settings, "s3_bucket", "visual-bucket"),
+            patch.object(settings, "aws_access_key_id", "key"),
+            patch.object(settings, "aws_secret_access_key", "secret"),
+            patch.object(settings, "aws_region", "ap-southeast-1"),
+            patch.object(settings, "s3_public_base_url", "https://cdn.example.com"),
+            patch(
+                "app.services.lesson_visual_regeneration.visual_s3_client",
+                return_value=fake_s3,
+            ),
+        ]
+        for active_patch in patches:
+            active_patch.start()
+            self.addCleanup(active_patch.stop)
+
+        first = upload_lesson_visual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            image_bytes=source.getvalue(),
+        )
+        second = upload_lesson_visual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            image_bytes=source.getvalue(),
+        )
+
+        library = list_lesson_visual_library(slug="saying-hello-and-goodbye", slot="hero")
+        self.assertEqual(len(library["assets"]), 2)
+        self.assertEqual(library["active_asset_id"], second.library_asset_id)
+        self.assertTrue(all(item["url"].startswith("s3://visual-bucket/") for item in library["assets"]))
+        select_lesson_visual_asset(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            asset_id=first.library_asset_id,
+        )
+        active = get_active_lesson_visual(slug="saying-hello-and-goodbye", slot="hero")
+        self.assertEqual(active["version"], first.library_asset_id)
+        self.assertTrue(active["asset_url"].startswith("https://cdn.example.com/"))
+        first_image_key = library["assets"][1]["storage_key"]
+        first_thumbnail_key = library["assets"][1]["preview_storage_key"]
+        self.assertEqual(
+            fake_s3.objects[first_image_key]["CacheControl"],
+            "public, max-age=31536000, immutable",
+        )
+        self.assertEqual(fake_s3.objects[first_thumbnail_key]["ContentType"], "image/webp")
+        self.assertEqual(
+            fake_s3.objects[first_thumbnail_key]["CacheControl"],
+            "public, max-age=31536000, immutable",
+        )
+
     async def test_remote_image_is_downloaded_as_bytes(self):
         transport = httpx.MockTransport(
             lambda request: httpx.Response(
@@ -278,6 +358,19 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
         self.assertLess(len(optimized), len(source.getvalue()))
         with Image.open(BytesIO(optimized)) as result:
             self.assertEqual(result.size, (640, 360))
+
+    def test_library_thumbnail_is_small_webp(self):
+        image = Image.effect_noise((1024, 576), 80).convert("RGB")
+        source = BytesIO()
+        image.save(source, format="PNG")
+
+        thumbnail = create_visual_thumbnail(source.getvalue())
+
+        self.assertLess(len(thumbnail), len(source.getvalue()))
+        with Image.open(BytesIO(thumbnail)) as result:
+            self.assertEqual(result.format, "WEBP")
+            self.assertLessEqual(result.width, 384)
+            self.assertLessEqual(result.height, 384)
 
     async def test_base64_together_response_is_decoded(self):
         body = {"data": [{"b64_json": base64.b64encode(self.png).decode("ascii")}]}

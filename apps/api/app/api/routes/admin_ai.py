@@ -17,10 +17,13 @@ from app.services.lesson_visual_regeneration import (
     LessonVisualRegenerationError,
     MAX_IMAGE_BYTES,
     RegeneratedLessonVisual,
+    get_active_lesson_visual,
     image_generation_dimensions,
     import_lesson_visual_from_url,
+    list_lesson_visual_library,
     regenerate_lesson_visual,
     resolve_lesson_visual_prompt,
+    select_lesson_visual_asset,
     upload_lesson_visual,
 )
 
@@ -29,6 +32,10 @@ router = APIRouter()
 
 class LessonVisualUrlPayload(BaseModel):
     url: str = Field(min_length=8, max_length=4096)
+
+
+class LessonVisualLibrarySelectionPayload(BaseModel):
+    asset_id: str = Field(min_length=8, max_length=120)
 
 
 @router.get("/admin/ai/status")
@@ -176,6 +183,49 @@ async def upload_admin_lesson_visual_from_url(
     return lesson_visual_response(result=result, generated_by=admin.display_name)
 
 
+@router.get("/admin/lessons/{slug}/visuals/{slot}/library")
+async def get_admin_lesson_visual_library(
+    slug: str,
+    slot: str,
+    _: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    try:
+        library = await run_in_threadpool(list_lesson_visual_library, slug=slug, slot=slot)
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": library}
+
+
+@router.post("/admin/lessons/{slug}/visuals/{slot}/library/select")
+async def select_admin_lesson_visual_library_asset(
+    slug: str,
+    slot: str,
+    payload: LessonVisualLibrarySelectionPayload,
+    admin: AdminActor = Depends(require_admin_api_key),
+) -> dict:
+    try:
+        result = await run_in_threadpool(
+            select_lesson_visual_asset,
+            slug=slug,
+            slot=slot,
+            asset_id=payload.asset_id,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return lesson_visual_response(result=result, generated_by=admin.display_name)
+
+
+@router.get("/lesson-visuals/{slug}/{slot}/active")
+async def get_public_active_lesson_visual(slug: str, slot: str) -> dict:
+    try:
+        active = await run_in_threadpool(get_active_lesson_visual, slug=slug, slot=slot)
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    if active is None:
+        raise HTTPException(status_code=404, detail="lesson_visual_active_not_found")
+    return {"data": active}
+
+
 def lesson_visual_response(*, result: RegeneratedLessonVisual, generated_by: str) -> dict:
     return {
         "data": {
@@ -209,9 +259,10 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
     if exc.code in {
         "lesson_visual_prompt_not_found",
         "lesson_visual_prompt_section_not_found",
+        "lesson_visual_library_asset_not_found",
     }:
         return HTTPException(status_code=404, detail=exc.code)
-    if exc.code == "together_api_key_missing":
+    if exc.code in {"together_api_key_missing", "s3_config_missing"}:
         return HTTPException(status_code=503, detail=exc.code)
     if exc.code in {
         "remote_image_auth_required",
@@ -220,5 +271,7 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
     }:
         return HTTPException(status_code=502, detail=exc.code)
     if exc.code.startswith("together_") or exc.code.startswith("generated_image_"):
+        return HTTPException(status_code=502, detail=exc.code)
+    if exc.code.startswith("s3_visual_") or exc.code == "boto3_missing":
         return HTTPException(status_code=502, detail=exc.code)
     return HTTPException(status_code=500, detail="lesson_visual_regeneration_failed")

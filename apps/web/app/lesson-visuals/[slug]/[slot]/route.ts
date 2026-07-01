@@ -24,31 +24,60 @@ export async function GET(
     return new Response("Image not found", { status: 404 });
   }
 
-  const override = await readFirst(overrideCandidates(slug, slot));
-  const image = override ?? (await readFallback(request));
+  const requestUrl = new URL(request.url);
+  const active = await readActiveVisual(slug, slot);
+  if (requestUrl.searchParams.get("metadata") === "1") {
+    return Response.json(
+      { version: active?.version ?? "fallback" },
+      { headers: { "Cache-Control": "no-store, max-age=0" } }
+    );
+  }
+
+  const remoteImage = active ? await readRemoteImage(active.asset_url) : null;
+  const image = remoteImage?.bytes ?? (await readFallback(request));
   if (!image) {
     return new Response("Image not found", { status: 404 });
   }
 
   return new Response(new Uint8Array(image), {
     headers: {
-      "Content-Type": "image/png",
-      "Cache-Control": "public, max-age=300, stale-while-revalidate=3600",
+      "Content-Type": remoteImage?.contentType ?? "image/png",
+      "Cache-Control": imageCacheControl(requestUrl.searchParams.get("v")),
       "X-Content-Type-Options": "nosniff"
     }
   });
 }
 
-function overrideCandidates(slug: string, slot: string) {
-  const configuredRoot = process.env.LESSON_VISUAL_OVERRIDES_DIR;
-  const roots = configuredRoot
-    ? [configuredRoot]
-    : [
-        path.join(process.cwd(), "public", "images", "lesson-visual-overrides"),
-        path.join(process.cwd(), "apps", "web", "public", "images", "lesson-visual-overrides")
-      ];
+type ActiveVisual = { version: string; asset_url: string };
 
-  return roots.map((root) => path.join(root, slug, `${slot}.png`));
+async function readActiveVisual(slug: string, slot: string): Promise<ActiveVisual | null> {
+  const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api";
+  const response = await fetch(
+    `${apiBaseUrl}/lesson-visuals/${encodeURIComponent(slug)}/${slot}/active`,
+    { cache: "no-store" }
+  );
+  if (response.status === 404) return null;
+  if (!response.ok) throw new Error(`Active lesson visual lookup failed (${response.status})`);
+  const payload = (await response.json()) as { data?: Partial<ActiveVisual> };
+  return typeof payload.data?.version === "string" && typeof payload.data.asset_url === "string"
+    ? { version: payload.data.version, asset_url: payload.data.asset_url }
+    : null;
+}
+
+async function readRemoteImage(url: string) {
+  if (!url.startsWith("https://")) return null;
+  const response = await fetch(url, { cache: "no-store" });
+  if (!response.ok) throw new Error(`Lesson visual download failed (${response.status})`);
+  return {
+    bytes: Buffer.from(await response.arrayBuffer()),
+    contentType: response.headers.get("content-type") ?? "image/png"
+  };
+}
+
+function imageCacheControl(version: string | null) {
+  return version && version !== "current"
+    ? "public, max-age=31536000, immutable"
+    : "no-store, max-age=0";
 }
 
 async function readFallback(request: Request) {

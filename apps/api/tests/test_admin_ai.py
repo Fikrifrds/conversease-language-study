@@ -145,6 +145,53 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
         self.assertEqual(response.json()["data"]["model"], "url-import")
         importer.assert_awaited_once()
 
+    def test_lesson_visual_library_lists_assets_for_admin(self):
+        library = {
+            "slug": "saying-hello-and-goodbye",
+            "slot": "hero",
+            "active_asset_id": "asset-1",
+            "assets": [{"asset_id": "asset-1", "preview_url": "https://cdn.example/image.png"}],
+        }
+        with patch("app.api.routes.admin_ai.list_lesson_visual_library", return_value=library):
+            response = self.client.get(
+                "/api/admin/lessons/saying-hello-and-goodbye/visuals/hero/library",
+                headers=self.headers,
+            )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["active_asset_id"], "asset-1")
+
+    def test_public_active_lesson_visual_returns_s3_asset(self):
+        active = {
+            "asset_id": "asset-1",
+            "version": "asset-1",
+            "asset_url": "https://cdn.example/image.png",
+        }
+        with patch("app.api.routes.admin_ai.get_active_lesson_visual", return_value=active):
+            response = self.client.get(
+                "/api/lesson-visuals/saying-hello-and-goodbye/hero/active"
+            )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["version"], "asset-1")
+
+    def test_admin_can_select_a_visual_library_asset(self):
+        result = RegeneratedLessonVisual(
+            slug="saying-hello-and-goodbye",
+            slot="hero",
+            model="manual-upload",
+            version="asset-001",
+            byte_count=123,
+            library_asset_id="asset-001",
+            library_relative_path="lesson-visuals/library/example/image.png",
+        )
+        with patch("app.api.routes.admin_ai.select_lesson_visual_asset", return_value=result):
+            response = self.client.post(
+                "/api/admin/lessons/saying-hello-and-goodbye/visuals/hero/library/select",
+                headers=self.headers,
+                json={"asset_id": "asset-001"},
+            )
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["library_asset_id"], "asset-001")
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from functools import lru_cache
 from io import BytesIO
 import ipaddress
+import json
 import logging
 import os
 from pathlib import Path
@@ -17,7 +18,7 @@ import socket
 import tempfile
 import time
 from typing import Dict, Optional, Tuple
-from urllib.parse import urljoin, urlsplit
+from urllib.parse import quote, urljoin, urlsplit
 from uuid import uuid4
 
 import httpx
@@ -34,6 +35,8 @@ VALID_SLOTS = ("hero", "card-1", "card-2", "card-3")
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 MAX_IMAGE_BYTES = 30 * 1024 * 1024
 PNG_PALETTE_COLORS = 256
+VISUAL_THUMBNAIL_MAX_WIDTH = 384
+VISUAL_THUMBNAIL_WEBP_QUALITY = 70
 REMOTE_IMAGE_CONTENT_TYPES = {"image/png", "image/jpeg", "image/webp", "application/octet-stream"}
 MAX_REMOTE_IMAGE_REDIRECTS = 4
 
@@ -82,7 +85,9 @@ class TogetherImageClient:
             "width": width,
             "height": height,
             "n": 1,
-            "response_format": "base64",
+            # Together-hosted URLs avoid inflating the API response by roughly
+            # one third with base64 and keep peak memory lower for 1K images.
+            "response_format": "url",
             "output_format": "png",
         }
         headers = {
@@ -179,9 +184,10 @@ async def regenerate_lesson_visual(
     )
     image_bytes = await client.generate_png(prompt=prompt, slot=slot)
     validate_png(image_bytes)
-    optimized_image_bytes = optimize_png(image_bytes)
+    optimized_image_bytes = await asyncio.to_thread(optimize_png, image_bytes)
 
-    return store_lesson_visual(
+    return await asyncio.to_thread(
+        store_lesson_visual,
         slug=slug,
         slot=slot,
         prompt_path=prompt_path,
@@ -263,8 +269,41 @@ def store_lesson_visual(
     archive_reason: str,
     overrides_dir: Optional[Path],
 ) -> RegeneratedLessonVisual:
+    if overrides_dir is None:
+        return store_lesson_visual_s3(
+            slug=slug,
+            slot=slot,
+            prompt_path=prompt_path,
+            prompt=prompt,
+            image_bytes=image_bytes,
+            model=model,
+            archive_reason=archive_reason,
+        )
+    return store_lesson_visual_local(
+        slug=slug,
+        slot=slot,
+        prompt_path=prompt_path,
+        prompt=prompt,
+        image_bytes=image_bytes,
+        model=model,
+        archive_reason=archive_reason,
+        overrides_dir=overrides_dir,
+    )
 
-    root = overrides_dir or Path(settings.lesson_visual_overrides_dir)
+
+def store_lesson_visual_local(
+    *,
+    slug: str,
+    slot: str,
+    prompt_path: Path,
+    prompt: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+    overrides_dir: Path,
+) -> RegeneratedLessonVisual:
+
+    root = overrides_dir
     target_path = override_path(root=root, slug=slug, slot=slot)
     library_root = root / "_library"
     archive_existing_override_if_needed(
@@ -535,6 +574,300 @@ def optimize_png(image_bytes: bytes) -> bytes:
     optimized_bytes = output.getvalue()
     validate_png(optimized_bytes)
     return optimized_bytes if len(optimized_bytes) < len(image_bytes) else image_bytes
+
+
+def create_visual_thumbnail(image_bytes: bytes) -> bytes:
+    """Create a small WebP used only by the visual-library picker."""
+    try:
+        with Image.open(BytesIO(image_bytes)) as source:
+            source.load()
+            source = ImageOps.exif_transpose(source)
+            thumbnail = source.convert("RGB")
+            thumbnail.thumbnail(
+                (VISUAL_THUMBNAIL_MAX_WIDTH, VISUAL_THUMBNAIL_MAX_WIDTH),
+                Image.Resampling.LANCZOS,
+            )
+            output = BytesIO()
+            thumbnail.save(
+                output,
+                format="WEBP",
+                quality=VISUAL_THUMBNAIL_WEBP_QUALITY,
+                method=6,
+            )
+    except (OSError, UnidentifiedImageError, ValueError) as exc:
+        raise LessonVisualRegenerationError("generated_image_not_png") from exc
+    return output.getvalue()
+
+
+def store_lesson_visual_s3(
+    *,
+    slug: str,
+    slot: str,
+    prompt_path: Path,
+    prompt: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+) -> RegeneratedLessonVisual:
+    ensure_visual_s3_configured()
+    created_at = datetime.now(timezone.utc)
+    asset_id = f"{created_at.strftime('%Y%m%dT%H%M%S%fZ')}-{uuid4().hex[:8]}"
+    asset_prefix = f"lesson-visuals/library/{slug}/{slot}/{asset_id}"
+    image_key = f"{asset_prefix}/image.png"
+    thumbnail_key = f"{asset_prefix}/thumbnail.webp"
+    metadata_key = f"{asset_prefix}/metadata.yaml"
+    readme_key = f"{asset_prefix}/README.md"
+    description = visual_description(prompt_path=prompt_path, prompt=prompt, slot=slot)
+    width, height = image_dimensions(image_bytes)
+    canonical_url = f"s3://{settings.s3_bucket}/{image_key}"
+    entry = {
+        "asset_id": asset_id,
+        "created_at": created_at.isoformat(),
+        "slug": slug,
+        "slot": slot,
+        "model": model,
+        "archive_reason": archive_reason,
+        "width": width,
+        "height": height,
+        "byte_count": len(image_bytes),
+        "storage_key": image_key,
+        "preview_storage_key": thumbnail_key,
+        "url": canonical_url,
+        "description": description,
+    }
+    metadata = {
+        **entry,
+        "source_prompt": prompt_source_path(prompt_path),
+        "description_basis": "reviewed_generation_prompt",
+        "generation_prompt": prompt,
+    }
+    client = visual_s3_client()
+    thumbnail_bytes = create_visual_thumbnail(image_bytes)
+    visual_s3_put(
+        client,
+        image_key,
+        image_bytes,
+        "image/png",
+        cache_control="public, max-age=31536000, immutable",
+    )
+    visual_s3_put(
+        client,
+        thumbnail_key,
+        thumbnail_bytes,
+        "image/webp",
+        cache_control="public, max-age=31536000, immutable",
+    )
+    visual_s3_put(
+        client,
+        metadata_key,
+        yaml.safe_dump(metadata, allow_unicode=True, sort_keys=False).encode("utf-8"),
+        "application/yaml; charset=utf-8",
+    )
+    visual_s3_put(
+        client,
+        readme_key,
+        render_library_readme(
+            asset_id=asset_id,
+            created_at=created_at.isoformat(),
+            slug=slug,
+            slot=slot,
+            model=model,
+            archive_reason=archive_reason,
+            width=width,
+            height=height,
+            byte_count=len(image_bytes),
+            description=description,
+        ).encode("utf-8"),
+        "text/markdown; charset=utf-8",
+    )
+
+    library_key = visual_library_manifest_key(slug=slug, slot=slot)
+    library = visual_s3_get_json(client, library_key) or {
+        "slug": slug,
+        "slot": slot,
+        "assets": [],
+    }
+    assets = [item for item in library.get("assets", []) if item.get("asset_id") != asset_id]
+    library["assets"] = [entry, *assets]
+    library["updated_at"] = created_at.isoformat()
+    visual_s3_put_json(client, library_key, library)
+    visual_s3_put_json(client, visual_active_manifest_key(slug=slug, slot=slot), entry)
+
+    logger.info(
+        "lesson_visual_s3_stored slug=%s slot=%s source=%s asset_id=%s bytes=%s",
+        slug,
+        slot,
+        archive_reason,
+        asset_id,
+        len(image_bytes),
+    )
+    return RegeneratedLessonVisual(
+        slug=slug,
+        slot=slot,
+        model=model,
+        version=asset_id,
+        byte_count=len(image_bytes),
+        library_asset_id=asset_id,
+        library_relative_path=asset_prefix,
+    )
+
+
+def list_lesson_visual_library(*, slug: str, slot: str) -> dict:
+    resolve_lesson_visual_prompt(slug=slug, slot=slot)
+    ensure_visual_s3_configured()
+    client = visual_s3_client()
+    library = visual_s3_get_json(client, visual_library_manifest_key(slug=slug, slot=slot)) or {
+        "slug": slug,
+        "slot": slot,
+        "assets": [],
+    }
+    active = visual_s3_get_json(client, visual_active_manifest_key(slug=slug, slot=slot))
+    active_id = active.get("asset_id") if active else None
+    assets = []
+    for item in library.get("assets", []):
+        storage_key = str(item.get("storage_key") or "")
+        if not storage_key:
+            continue
+        preview_storage_key = str(item.get("preview_storage_key") or storage_key)
+        assets.append(
+            {
+                **item,
+                "is_active": item.get("asset_id") == active_id,
+                "preview_url": visual_s3_playback_url(preview_storage_key, client=client),
+            }
+        )
+    return {"slug": slug, "slot": slot, "active_asset_id": active_id, "assets": assets}
+
+
+def select_lesson_visual_asset(*, slug: str, slot: str, asset_id: str) -> RegeneratedLessonVisual:
+    library = list_lesson_visual_library(slug=slug, slot=slot)
+    selected = next((item for item in library["assets"] if item.get("asset_id") == asset_id), None)
+    if selected is None:
+        raise LessonVisualRegenerationError("lesson_visual_library_asset_not_found")
+    active = {key: value for key, value in selected.items() if key not in {"is_active", "preview_url"}}
+    visual_s3_put_json(
+        visual_s3_client(),
+        visual_active_manifest_key(slug=slug, slot=slot),
+        active,
+    )
+    return RegeneratedLessonVisual(
+        slug=slug,
+        slot=slot,
+        model=str(active.get("model") or "library"),
+        version=asset_id,
+        byte_count=int(active.get("byte_count") or 0),
+        library_asset_id=asset_id,
+        library_relative_path=str(active.get("storage_key") or ""),
+    )
+
+
+def get_active_lesson_visual(*, slug: str, slot: str) -> Optional[dict]:
+    resolve_lesson_visual_prompt(slug=slug, slot=slot)
+    ensure_visual_s3_configured()
+    client = visual_s3_client()
+    active = visual_s3_get_json(
+        client,
+        visual_active_manifest_key(slug=slug, slot=slot),
+    )
+    if not active or not active.get("storage_key"):
+        return None
+    return {
+        **active,
+        "asset_url": visual_s3_playback_url(str(active["storage_key"]), client=client),
+        "version": str(active.get("asset_id") or ""),
+    }
+
+
+def visual_library_manifest_key(*, slug: str, slot: str) -> str:
+    return f"lesson-visuals/library/{slug}/{slot}/library.json"
+
+
+def visual_active_manifest_key(*, slug: str, slot: str) -> str:
+    return f"lesson-visuals/active/{slug}/{slot}.json"
+
+
+def ensure_visual_s3_configured() -> None:
+    if not (
+        settings.s3_bucket
+        and settings.aws_access_key_id
+        and settings.aws_secret_access_key
+        and settings.aws_region
+    ):
+        raise LessonVisualRegenerationError("s3_config_missing")
+
+
+@lru_cache(maxsize=1)
+def visual_s3_client():
+    try:
+        import boto3
+    except ImportError as exc:
+        raise LessonVisualRegenerationError("boto3_missing") from exc
+    return boto3.client(
+        "s3",
+        region_name=settings.aws_region,
+        aws_access_key_id=settings.aws_access_key_id,
+        aws_secret_access_key=settings.aws_secret_access_key,
+    )
+
+
+def visual_s3_put(
+    client,
+    key: str,
+    body: bytes,
+    content_type: str,
+    *,
+    cache_control: str = "no-cache",
+) -> None:
+    try:
+        client.put_object(
+            Bucket=settings.s3_bucket,
+            Key=key,
+            Body=body,
+            ContentType=content_type,
+            CacheControl=cache_control,
+        )
+    except Exception as exc:
+        raise LessonVisualRegenerationError("s3_visual_write_failed") from exc
+
+
+def visual_s3_put_json(client, key: str, value: dict) -> None:
+    visual_s3_put(
+        client,
+        key,
+        json.dumps(value, ensure_ascii=False, separators=(",", ":")).encode("utf-8"),
+        "application/json",
+    )
+
+
+def visual_s3_get_json(client, key: str) -> Optional[dict]:
+    try:
+        response = client.get_object(Bucket=settings.s3_bucket, Key=key)
+    except Exception as exc:
+        code = str(getattr(exc, "response", {}).get("Error", {}).get("Code", ""))
+        if code in {"NoSuchKey", "404", "NotFound"}:
+            return None
+        raise LessonVisualRegenerationError("s3_visual_read_failed") from exc
+    try:
+        value = json.loads(response["Body"].read().decode("utf-8"))
+    except (KeyError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        raise LessonVisualRegenerationError("s3_visual_manifest_invalid") from exc
+    if not isinstance(value, dict):
+        raise LessonVisualRegenerationError("s3_visual_manifest_invalid")
+    return value
+
+
+def visual_s3_playback_url(storage_key: str, *, client=None) -> str:
+    if settings.s3_public_base_url:
+        return f"{settings.s3_public_base_url.rstrip('/')}/{quote(storage_key)}"
+    try:
+        signer = client or visual_s3_client()
+        return signer.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": settings.s3_bucket, "Key": storage_key},
+            ExpiresIn=settings.s3_presigned_url_expires_seconds,
+        )
+    except Exception as exc:
+        raise LessonVisualRegenerationError("s3_visual_url_failed") from exc
 
 
 def archive_lesson_visual(

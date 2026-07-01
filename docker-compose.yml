@@ -24,15 +24,12 @@ services:
     environment:
       DATABASE_URL: postgresql+psycopg://conversease:conversease@postgres:5432/conversease_db
       REDIS_URL: redis://redis:6379/0
-      LESSON_VISUAL_OVERRIDES_DIR: /app/apps/web/public/images/lesson-visual-overrides
     command: sh -c "alembic -c alembic.ini upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000"
     ports:
       - "8000:8000"
     depends_on:
       - postgres
       - redis
-    volumes:
-      - lesson-visual-overrides:/app/apps/web/public/images/lesson-visual-overrides
 
   web:
     build:
@@ -42,14 +39,10 @@ services:
         NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api
     environment:
       NEXT_PUBLIC_API_BASE_URL: http://localhost:8000/api
-      LESSON_VISUAL_OVERRIDES_DIR: /app/apps/web/public/images/lesson-visual-overrides
     ports:
       - "3000:3000"
     depends_on:
       - api
-    volumes:
-      - lesson-visual-overrides:/app/apps/web/public/images/lesson-visual-overrides
 
 volumes:
   postgres-data:
-  lesson-visual-overrides:

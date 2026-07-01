@@ -79,7 +79,27 @@ S3_PUBLIC_BASE_URL=
 S3_PRESIGNED_URL_EXPIRES_SECONDS=3600
 ```
 
-Admin CMS audio generation uses MiniMax T2A and uploads generated files to S3. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs for CMS previews and lesson listening audio. Use `S3_PUBLIC_BASE_URL` only when audio is served through a public bucket or CDN.
+Admin CMS audio generation and lesson visual generation/upload store their binary assets in S3. Lesson visuals also keep per-slot `library.json` and `active.json` manifests in S3; no generated visual is stored on the API or web container filesystem. Each library asset has a small WebP thumbnail, so opening the picker does not download every full-resolution original. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs. Set it to a CloudFront URL when visual and audio assets are delivered through a CDN.
+
+Keep S3 cost bounded with these bucket controls:
+
+- Put CloudFront in `S3_PUBLIC_BASE_URL`; immutable image and thumbnail objects are emitted with a one-year cache policy.
+- Add an AWS Budget alert for S3 storage and data transfer before production rollout.
+- If bucket versioning is enabled, add a lifecycle rule scoped to `lesson-visuals/` that expires noncurrent versions after 7 days. This only removes superseded `library.json`/active-pointer versions; unique library images remain available.
+- Do not add an expiration rule for current objects under `lesson-visuals/library/`, because those files are the reusable visual library.
+
+Before removing a legacy `lesson-visual-overrides` volume, migrate its images once. Run without `--execute` first and inspect the JSON target list:
+
+```bash
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/migrate_lesson_visuals_to_s3.py \
+  --source-dir apps/web/public/images/lesson-visual-overrides
+
+PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/migrate_lesson_visuals_to_s3.py \
+  --source-dir apps/web/public/images/lesson-visual-overrides \
+  --execute
+```
+
+For a Docker named volume, mount the existing volume read-only at `/legacy-visuals` in a one-off API container and use `--source-dir /legacy-visuals`. Archived assets are migrated first and the current override last, preserving the active selection.
 
 Voice preview audio is cached in the database and stored in S3, so admins do not regenerate the same voice sample on every click. After migrations and S3/MiniMax env are ready, seed all available MiniMax voice previews:
 

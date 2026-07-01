@@ -16,6 +16,19 @@ export type RegeneratedLessonVisual = {
   generatedBy: string;
 };
 
+export type LessonVisualLibraryAsset = {
+  asset_id: string;
+  created_at: string;
+  model: string;
+  archive_reason: string;
+  width: number;
+  height: number;
+  byte_count: number;
+  preview_url: string;
+  is_active: boolean;
+  description?: { subject?: string; context?: string; setting?: string };
+};
+
 type ApiRegeneratedLessonVisual = {
   data: {
     slug: string;
@@ -121,6 +134,33 @@ export async function uploadLessonVisualFromUrl(
   return mapRegeneratedLessonVisual((await response.json()) as ApiRegeneratedLessonVisual);
 }
 
+export async function getLessonVisualLibrary(slug: string, slot: LessonVisualSlot) {
+  const response = await adminFetch(
+    `${apiBaseUrl()}/admin/lessons/${encodeURIComponent(slug)}/visuals/${slot}/library`
+  );
+  if (!response.ok) throw new Error(await responseError(response));
+  return (await response.json()) as {
+    data: { active_asset_id: string | null; assets: LessonVisualLibraryAsset[] };
+  };
+}
+
+export async function selectLessonVisualLibraryAsset(
+  slug: string,
+  slot: LessonVisualSlot,
+  assetId: string
+): Promise<RegeneratedLessonVisual> {
+  const response = await adminFetch(
+    `${apiBaseUrl()}/admin/lessons/${encodeURIComponent(slug)}/visuals/${slot}/library/select`,
+    {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ asset_id: assetId })
+    }
+  );
+  if (!response.ok) throw new Error(await responseError(response));
+  return mapRegeneratedLessonVisual((await response.json()) as ApiRegeneratedLessonVisual);
+}
+
 function mapRegeneratedLessonVisual(
   payload: ApiRegeneratedLessonVisual
 ): RegeneratedLessonVisual {
@@ -158,6 +198,9 @@ async function responseError(response: Response) {
     if (typeof parsed.detail === "string") {
       if (parsed.detail === "together_api_key_missing") {
         return "TOGETHER_API_KEY belum dikonfigurasi.";
+      }
+      if (parsed.detail === "s3_config_missing") {
+        return "Konfigurasi S3 belum lengkap.";
       }
       if (parsed.detail === "uploaded_image_size_invalid") {
         return "Ukuran file terlalu besar. Maksimum 30 MB.";
