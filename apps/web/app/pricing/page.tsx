@@ -15,7 +15,7 @@ import {
   type PaymentKind,
   type PaymentOrder
 } from "@/lib/billing-api";
-import { plans, topups } from "@/lib/data";
+import { plans } from "@/lib/data";
 import { trackEvent } from "@/lib/analytics";
 
 type CheckoutItem = {
@@ -81,23 +81,16 @@ export default function PricingPage() {
   const [transferDate, setTransferDate] = useState(todayInputValue);
   const [senderName, setSenderName] = useState("");
   const [senderBank, setSenderBank] = useState("");
+  const [targetBank, setTargetBank] = useState("");
   const [notes, setNotes] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [authPrompt, setAuthPrompt] = useState(false);
 
-  const topupItems: CheckoutItem[] = topups.map((topup) => ({
-    key: topup.key,
-    name: topup.name,
-    price: topup.price,
-    cadence: `${topup.minutes} menit tambahan`,
-    access: "Top-up Conversation Coach",
-    paymentKind: "topup"
-  }));
-
   async function handleChoose(item: CheckoutItem) {
     setSelectedItem(item);
     setCheckoutOrder(null);
+    setTargetBank("");
     setMessage("");
     setError("");
 
@@ -138,6 +131,7 @@ export default function PricingPage() {
         transferDate,
         senderName,
         senderBank,
+        targetBank,
         notes
       });
       setCheckoutOrder(result.order);
@@ -163,131 +157,75 @@ export default function PricingPage() {
     setSelectedItem(null);
     setCheckoutOrder(null);
     setAuthPrompt(false);
+    setTargetBank("");
     setMessage("");
     setError("");
   }
 
+  const proPlan = plans.find((plan) => plan.key === "pro_3_months")!;
+  const proItem: CheckoutItem = {
+    key: proPlan.key,
+    name: proPlan.name,
+    price: proPlan.price,
+    cadence: proPlan.cadence,
+    access: proPlan.access,
+    paymentKind: "subscription"
+  };
+  const preparing = activePackage === proPlan.key;
+
   return (
     <AppShell>
-      <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
-        <div className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-7">
-          <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase text-leaf">Harga</p>
-            <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Pilih paket yang paling pas</h1>
-            <p className="mt-3 leading-7 text-ink/70">
-              Semua paket Pro membuka English track lengkap A1-C1 dalam satu akses. Pembayaran
-              via transfer manual dengan nominal unik agar cepat diverifikasi admin.
+      <section className="mx-auto max-w-2xl px-4 pb-16 pt-10 sm:px-6">
+        <div className="text-center">
+          <p className="text-sm font-semibold uppercase tracking-wide text-leaf">Pro All Access</p>
+          <h1 className="mt-3 text-3xl font-semibold sm:text-4xl">Satu paket, akses penuh 3 bulan</h1>
+          <p className="mx-auto mt-3 max-w-md leading-7 text-ink/65">
+            Buka English track lengkap A1–C1 dengan feedback percakapan detail dan exam resmi tiap level.
+          </p>
+        </div>
+
+        <section className="mt-8 overflow-hidden rounded-2xl border border-leaf/25 bg-white shadow-sm">
+          <div className="bg-mint px-6 py-7 text-center sm:px-8">
+            <span className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold text-leaf">
+              Best value
+            </span>
+            <p className="mt-4 text-5xl font-semibold text-ink">{proPlan.price}</p>
+            <p className="mt-1 text-sm text-ink/60">untuk {proPlan.cadence} akses penuh</p>
+          </div>
+
+          <div className="px-6 py-7 sm:px-8">
+            <ul className="space-y-3">
+              {proPlan.features.map((feature) => (
+                <li key={feature} className="flex gap-3 text-sm text-ink/80">
+                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            <p className="mt-5 text-xs leading-5 text-ink/55">{proPlan.coachAllowance}</p>
+
+            <button
+              type="button"
+              onClick={() => handleChoose(proItem)}
+              disabled={preparing}
+              className="focus-ring mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+            >
+              <CreditCard className="h-4 w-4" aria-hidden="true" />
+              {preparing ? "Menyiapkan..." : "Pilih Paket Ini"}
+            </button>
+
+            <p className="mt-4 text-center text-xs text-ink/55">
+              Pembayaran via transfer manual dengan nominal unik — diverifikasi admin dalam waktu singkat.
             </p>
           </div>
-
-          <div className="mt-5 grid gap-3 text-sm text-ink/70 md:grid-cols-3">
-            <div className="rounded-lg bg-paper p-4">
-              <p className="font-semibold text-ink">Pilih paket</p>
-              <p className="mt-1">Klik paket Pro atau top-up.</p>
-            </div>
-            <div className="rounded-lg bg-mint p-4">
-              <p className="font-semibold text-ink">Transfer nominal unik</p>
-              <p className="mt-1">Nominal termasuk kode 3 digit.</p>
-            </div>
-            <div className="rounded-lg bg-paper p-4">
-              <p className="font-semibold text-ink">Konfirmasi</p>
-              <p className="mt-1">Admin approve setelah transfer valid.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-6 grid gap-4 lg:grid-cols-4">
-          {plans.map((plan) => {
-            const item: CheckoutItem = {
-              key: plan.key,
-              name: plan.name,
-              price: plan.price,
-              cadence: plan.cadence,
-              access: plan.access,
-              paymentKind: "subscription"
-            };
-            const isFree = plan.key === "free";
-            const highlighted = plan.key === "pro_3_months";
-
-            return (
-              <section
-                key={plan.key}
-                className={`flex min-h-[330px] flex-col rounded-lg border p-5 shadow-sm ${
-                  highlighted ? "border-leaf bg-mint" : "border-ink/10 bg-white"
-                }`}
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <h2 className="text-xl font-semibold">{plan.name}</h2>
-                  {highlighted ? (
-                    <span className="rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-leaf">
-                      Best value
-                    </span>
-                  ) : null}
-                </div>
-                <p className="mt-4 text-3xl font-semibold">{plan.price}</p>
-                <p className="mt-1 text-sm text-ink/60">{plan.cadence}</p>
-                <p className="mt-4 rounded-lg bg-paper px-3 py-2 text-sm font-semibold">{plan.access}</p>
-                <ul className="mt-5 space-y-2.5">
-                  {plan.features.map((feature) => (
-                    <li key={feature} className="flex gap-2 text-sm">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <p className="mt-5 text-xs leading-5 text-ink/60">{plan.coachAllowance}</p>
-                {isFree ? (
-                  <Link
-                    href="/register"
-                    className="focus-ring mt-auto inline-flex w-full items-center justify-center gap-2 rounded-lg border border-ink/15 bg-white px-4 py-3 text-sm font-semibold text-ink hover:bg-mint"
-                  >
-                    Mulai Gratis
-                  </Link>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => handleChoose(item)}
-                    disabled={activePackage === plan.key}
-                    className="focus-ring mt-auto inline-flex w-full items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-                  >
-                    <CreditCard className="h-4 w-4" aria-hidden="true" />
-                    {activePackage === plan.key ? "Menyiapkan..." : "Pilih Paket"}
-                  </button>
-                )}
-              </section>
-            );
-          })}
-        </div>
-
-        <section className="mt-8 rounded-lg border border-ink/10 bg-white p-5 shadow-sm md:p-6">
-          <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-            <div>
-              <h2 className="text-xl font-semibold">Top-up opsional</h2>
-              <p className="mt-1 text-sm text-ink/60">
-                Tambahan menit latihan jika kuota bulanan habis.
-              </p>
-            </div>
-            <p className="text-sm text-ink/55">Bisa dipakai untuk latihan English track.</p>
-          </div>
-          <div className="mt-5 grid gap-3 md:grid-cols-3">
-            {topupItems.map((topup) => (
-              <button
-                key={topup.key}
-                type="button"
-                onClick={() => handleChoose(topup)}
-                disabled={activePackage === topup.key}
-                className="focus-ring rounded-lg border border-ink/10 bg-paper p-4 text-left transition hover:border-leaf/40 hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-              >
-                <p className="font-semibold">{topup.name}</p>
-                <p className="mt-1 text-sm text-ink/60">{topup.cadence}</p>
-                <p className="mt-3 text-2xl font-semibold text-coral">{topup.price}</p>
-                <p className="mt-3 text-xs font-semibold uppercase text-leaf">
-                  {activePackage === topup.key ? "Menyiapkan..." : "Pilih top-up"}
-                </p>
-              </button>
-            ))}
-          </div>
         </section>
+
+        <p className="mt-6 text-center text-sm text-ink/55">
+          Belum siap upgrade?{" "}
+          <Link href="/register" className="font-semibold text-leaf hover:underline">
+            Mulai gratis dulu
+          </Link>
+        </p>
       </section>
 
       {selectedItem ? (
@@ -298,6 +236,7 @@ export default function PricingPage() {
           transferDate={transferDate}
           senderName={senderName}
           senderBank={senderBank}
+          targetBank={targetBank}
           notes={notes}
           message={message}
           error={error}
@@ -307,6 +246,7 @@ export default function PricingPage() {
           onTransferDateChange={setTransferDate}
           onSenderNameChange={setSenderName}
           onSenderBankChange={setSenderBank}
+          onTargetBankChange={setTargetBank}
           onNotesChange={setNotes}
           onConfirm={handleConfirmTransfer}
         />
@@ -322,6 +262,7 @@ function CheckoutModal({
   transferDate,
   senderName,
   senderBank,
+  targetBank,
   notes,
   message,
   error,
@@ -331,6 +272,7 @@ function CheckoutModal({
   onTransferDateChange,
   onSenderNameChange,
   onSenderBankChange,
+  onTargetBankChange,
   onNotesChange,
   onConfirm
 }: {
@@ -340,6 +282,7 @@ function CheckoutModal({
   transferDate: string;
   senderName: string;
   senderBank: string;
+  targetBank: string;
   notes: string;
   message: string;
   error: string;
@@ -349,11 +292,15 @@ function CheckoutModal({
   onTransferDateChange: (value: string) => void;
   onSenderNameChange: (value: string) => void;
   onSenderBankChange: (value: string) => void;
+  onTargetBankChange: (value: string) => void;
   onNotesChange: (value: string) => void;
   onConfirm: () => void;
 }) {
   const canConfirm = order?.status === "pending";
   const bankAccounts = order ? orderBankAccounts(order) : [];
+  const recordedBank = order ? String(order.metadata["bank_name"] ?? "") : "";
+  const activeBank = canConfirm ? targetBank : recordedBank;
+  const selectedAccount = bankAccounts.find((account) => account.bankName === activeBank) ?? null;
 
   return (
     <Modal
@@ -414,42 +361,72 @@ function CheckoutModal({
             </div>
 
             <div className="space-y-3">
-              {bankAccounts.length > 1 ? (
-                <p className="text-sm text-ink/60">Transfer ke salah satu rekening berikut:</p>
-              ) : null}
-              {bankAccounts.map((account) => {
-                const logo = bankLogo(account.bankName);
-                return (
-                  <div key={`${account.bankName}-${account.accountNumber}`} className="rounded-lg border border-ink/10 p-4">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <p className="text-sm text-ink/50">Bank tujuan</p>
-                        <p className="mt-1 text-lg font-semibold">{account.bankName}</p>
-                      </div>
-                      {logo ? (
-                        <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-7 w-auto" />
-                      ) : null}
-                    </div>
-                    <div className="mt-4 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
-                      <p className="flex-1 text-center font-mono text-lg tracking-normal">{account.accountNumber}</p>
-                      <button
-                        type="button"
-                        onClick={() => onCopy(account.accountNumber)}
-                        className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
-                        aria-label={`Salin nomor rekening ${account.bankName}`}
-                        title="Salin nomor rekening"
-                      >
-                        <Clipboard className="h-4 w-4" aria-hidden="true" />
-                      </button>
-                    </div>
-                    <p className="mt-3 text-center text-sm text-ink/60">a.n. {account.accountHolder}</p>
+              {canConfirm ? (
+                <>
+                  <p className="text-sm font-medium text-ink/70">
+                    {bankAccounts.length > 1 ? "1. Pilih bank tujuan transfer" : "Bank tujuan transfer"}
+                  </p>
+                  <div className="grid gap-2.5 sm:grid-cols-2">
+                    {bankAccounts.map((account) => {
+                      const logo = bankLogo(account.bankName);
+                      const selected = account.bankName === targetBank;
+                      return (
+                        <button
+                          key={`${account.bankName}-${account.accountNumber}`}
+                          type="button"
+                          onClick={() => onTargetBankChange(account.bankName)}
+                          aria-pressed={selected}
+                          className={`focus-ring flex items-center justify-between gap-3 rounded-xl border p-4 text-left transition ${
+                            selected
+                              ? "border-leaf bg-mint ring-1 ring-leaf"
+                              : "border-ink/10 bg-white hover:border-leaf/40"
+                          }`}
+                        >
+                          <div>
+                            <p className="text-xs uppercase tracking-wide text-ink/45">Bank tujuan</p>
+                            <p className="mt-1 text-base font-semibold">{account.bankName}</p>
+                          </div>
+                          {logo ? (
+                            <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-6 w-auto" />
+                          ) : null}
+                        </button>
+                      );
+                    })}
                   </div>
-                );
-              })}
+                </>
+              ) : null}
+
+              {selectedAccount ? (
+                <div className="rounded-xl border border-leaf/25 bg-white p-4">
+                  <p className="text-sm text-ink/55">
+                    Transfer ke rekening <span className="font-semibold text-ink">{selectedAccount.bankName}</span> berikut:
+                  </p>
+                  <div className="mt-3 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
+                    <p className="flex-1 text-center font-mono text-xl tracking-wide">{selectedAccount.accountNumber}</p>
+                    <button
+                      type="button"
+                      onClick={() => onCopy(selectedAccount.accountNumber)}
+                      className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
+                      aria-label={`Salin nomor rekening ${selectedAccount.bankName}`}
+                      title="Salin nomor rekening"
+                    >
+                      <Clipboard className="h-4 w-4" aria-hidden="true" />
+                    </button>
+                  </div>
+                  <p className="mt-3 text-center text-sm text-ink/60">a.n. {selectedAccount.accountHolder}</p>
+                </div>
+              ) : canConfirm ? (
+                <p className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/55">
+                  Pilih bank tujuan di atas untuk melihat nomor rekening.
+                </p>
+              ) : null}
             </div>
 
             {canConfirm ? (
               <div className="grid gap-3 sm:grid-cols-2">
+                <p className="text-sm font-medium text-ink/70 sm:col-span-2">
+                  2. Isi detail transfer
+                </p>
                 <label className="text-sm font-medium text-ink/70">
                   Tanggal transfer
                   <input
@@ -492,7 +469,7 @@ function CheckoutModal({
                 <button
                   type="button"
                   onClick={onConfirm}
-                  disabled={isSubmitting || !transferDate || senderName.trim().length < 2}
+                  disabled={isSubmitting || !targetBank || !transferDate || senderName.trim().length < 2}
                   className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60 sm:col-span-2"
                 >
                   <ReceiptText className="h-4 w-4" aria-hidden="true" />

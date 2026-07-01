@@ -97,6 +97,7 @@ export function BillingManager() {
   const [transferDate, setTransferDate] = useState(todayInputValue);
   const [senderName, setSenderName] = useState("");
   const [senderBank, setSenderBank] = useState("");
+  const [targetBank, setTargetBank] = useState("");
   const [notes, setNotes] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
@@ -183,6 +184,7 @@ export function BillingManager() {
 
   async function handleCheckout(packageKey: string, paymentKind: PaymentKind) {
     setActivePackage(packageKey);
+    setTargetBank("");
     setError("");
     setMessage("");
 
@@ -213,6 +215,7 @@ export function BillingManager() {
         transferDate,
         senderName,
         senderBank,
+        targetBank,
         notes
       });
       setCheckoutOrder(result.order);
@@ -273,11 +276,13 @@ export function BillingManager() {
           transferDate={transferDate}
           senderName={senderName}
           senderBank={senderBank}
+          targetBank={targetBank}
           notes={notes}
           isSubmitting={activePackage === checkoutOrder.packageKey}
           onTransferDateChange={setTransferDate}
           onSenderNameChange={setSenderName}
           onSenderBankChange={setSenderBank}
+          onTargetBankChange={setTargetBank}
           onNotesChange={setNotes}
           onConfirm={handleConfirmTransfer}
           onCopy={handleCopy}
@@ -366,11 +371,13 @@ function TransferInstruction({
   transferDate,
   senderName,
   senderBank,
+  targetBank,
   notes,
   isSubmitting,
   onTransferDateChange,
   onSenderNameChange,
   onSenderBankChange,
+  onTargetBankChange,
   onNotesChange,
   onConfirm,
   onCopy
@@ -379,11 +386,13 @@ function TransferInstruction({
   transferDate: string;
   senderName: string;
   senderBank: string;
+  targetBank: string;
   notes: string;
   isSubmitting: boolean;
   onTransferDateChange: (value: string) => void;
   onSenderNameChange: (value: string) => void;
   onSenderBankChange: (value: string) => void;
+  onTargetBankChange: (value: string) => void;
   onNotesChange: (value: string) => void;
   onConfirm: () => void;
   onCopy: (value: string) => void;
@@ -391,6 +400,9 @@ function TransferInstruction({
   const bankAccounts = orderBankAccounts(order);
   const packageName = orderMetadata(order, "package_name", order.packageKey);
   const canConfirm = order.status === "pending";
+  const recordedBank = orderMetadata(order, "bank_name", "");
+  const activeBank = canConfirm ? targetBank : recordedBank;
+  const selectedAccount = bankAccounts.find((account) => account.bankName === activeBank) ?? null;
 
   return (
     <section className="rounded-lg border border-leaf/30 bg-white p-5 shadow-sm">
@@ -420,38 +432,65 @@ function TransferInstruction({
       </div>
 
       <div className="mt-4 space-y-3">
-        {bankAccounts.length > 1 ? (
-          <p className="text-sm text-ink/60">Transfer ke salah satu rekening berikut:</p>
-        ) : null}
-        {bankAccounts.map((account) => {
-          const logo = bankLogo(account.bankName);
-          return (
-            <div key={`${account.bankName}-${account.accountNumber}`} className="rounded-lg border border-ink/10 p-4">
-              <div className="flex items-center justify-between gap-4">
-                <div>
-                  <p className="text-sm text-ink/50">Bank Tujuan</p>
-                  <p className="mt-2 text-lg font-semibold">{account.bankName}</p>
-                </div>
-                {logo ? (
-                  <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-7 w-auto" />
-                ) : null}
-              </div>
-              <div className="mt-4 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
-                <p className="flex-1 text-center font-mono text-lg tracking-normal">{account.accountNumber}</p>
-                <button
-                  type="button"
-                  onClick={() => onCopy(account.accountNumber)}
-                  className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
-                  aria-label={`Salin nomor rekening ${account.bankName}`}
-                  title="Salin nomor rekening"
-                >
-                  <Clipboard className="h-4 w-4" aria-hidden="true" />
-                </button>
-              </div>
-              <p className="mt-3 text-center text-sm text-ink/60">a.n. {account.accountHolder}</p>
+        {canConfirm ? (
+          <>
+            <p className="text-sm font-medium text-ink/70">
+              {bankAccounts.length > 1 ? "1. Pilih bank tujuan transfer" : "Bank tujuan transfer"}
+            </p>
+            <div className="grid gap-2.5 sm:grid-cols-2">
+              {bankAccounts.map((account) => {
+                const logo = bankLogo(account.bankName);
+                const selected = account.bankName === targetBank;
+                return (
+                  <button
+                    key={`${account.bankName}-${account.accountNumber}`}
+                    type="button"
+                    onClick={() => onTargetBankChange(account.bankName)}
+                    aria-pressed={selected}
+                    className={`focus-ring flex items-center justify-between gap-3 rounded-xl border p-4 text-left transition ${
+                      selected
+                        ? "border-leaf bg-mint ring-1 ring-leaf"
+                        : "border-ink/10 bg-white hover:border-leaf/40"
+                    }`}
+                  >
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-ink/45">Bank Tujuan</p>
+                      <p className="mt-1 text-base font-semibold">{account.bankName}</p>
+                    </div>
+                    {logo ? (
+                      <Image src={logo.src} alt={account.bankName} width={logo.width} height={logo.height} className="h-6 w-auto" />
+                    ) : null}
+                  </button>
+                );
+              })}
             </div>
-          );
-        })}
+          </>
+        ) : null}
+
+        {selectedAccount ? (
+          <div className="rounded-xl border border-leaf/25 bg-white p-4">
+            <p className="text-sm text-ink/55">
+              Transfer ke rekening <span className="font-semibold text-ink">{selectedAccount.bankName}</span> berikut:
+            </p>
+            <div className="mt-3 flex items-center gap-3 rounded-lg bg-paper px-4 py-3">
+              <p className="flex-1 text-center font-mono text-xl tracking-wide">{selectedAccount.accountNumber}</p>
+              <button
+                type="button"
+                onClick={() => onCopy(selectedAccount.accountNumber)}
+                className="focus-ring rounded-md p-2 text-ink/60 hover:bg-white hover:text-ink"
+                aria-label={`Salin nomor rekening ${selectedAccount.bankName}`}
+                title="Salin nomor rekening"
+              >
+                <Clipboard className="h-4 w-4" aria-hidden="true" />
+              </button>
+            </div>
+            <p className="mt-3 text-center text-sm text-ink/60">a.n. {selectedAccount.accountHolder}</p>
+          </div>
+        ) : canConfirm ? (
+          <p className="rounded-lg bg-paper px-4 py-3 text-sm text-ink/55">
+            Pilih bank tujuan di atas untuk melihat nomor rekening.
+          </p>
+        ) : null}
       </div>
 
       <div className="mt-4 grid gap-3 sm:grid-cols-3">
@@ -462,6 +501,7 @@ function TransferInstruction({
 
       {canConfirm ? (
         <div className="mt-5 grid gap-4 md:grid-cols-2">
+          <p className="text-sm font-medium text-ink/70 md:col-span-2">2. Isi detail transfer</p>
           <label className="text-sm font-medium text-ink/70">
             Tanggal transfer
             <input
@@ -504,7 +544,7 @@ function TransferInstruction({
           <button
             type="button"
             onClick={onConfirm}
-            disabled={isSubmitting || !transferDate || senderName.trim().length < 2}
+            disabled={isSubmitting || !targetBank || !transferDate || senderName.trim().length < 2}
             className="focus-ring flex min-h-12 items-center justify-center gap-2 rounded-lg bg-ink px-4 py-3 text-sm font-semibold text-white disabled:cursor-not-allowed disabled:opacity-60 md:col-span-2"
           >
             <ReceiptText className="h-4 w-4" aria-hidden="true" />

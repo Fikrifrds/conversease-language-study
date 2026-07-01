@@ -66,6 +66,48 @@ class BillingRepositoryTest(unittest.TestCase):
             self.assertIsNotNone(order.unique_code)
             self.assertEqual(order.amount_idr, 49000 + order.unique_code)
 
+    def test_confirm_records_chosen_destination_bank(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            order = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            target = settings.manual_transfer_accounts[-1]
+
+            repository.confirm_manual_transfer(
+                user_id="user-123",
+                order_id=order.id,
+                transfer_date=date.today(),
+                sender_name="QA Sender",
+                target_bank=target["bank_name"],
+            )
+
+            self.assertEqual(order.status, "confirmed")
+            self.assertEqual(order.metadata_json["bank_name"], target["bank_name"])
+            self.assertEqual(
+                order.metadata_json["bank_account_number"], target["bank_account_number"]
+            )
+
+    def test_confirm_rejects_unknown_destination_bank(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            order = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+
+            with self.assertRaises(InvalidPaymentStateError):
+                repository.confirm_manual_transfer(
+                    user_id="user-123",
+                    order_id=order.id,
+                    transfer_date=date.today(),
+                    sender_name="QA Sender",
+                    target_bank="Bank Tidak Terdaftar",
+                )
+
     def test_manual_transfer_unique_code_skips_active_orders(self):
         original_min = settings.manual_transfer_unique_code_min
         original_max = settings.manual_transfer_unique_code_max
@@ -199,6 +241,7 @@ class BillingRepositoryTest(unittest.TestCase):
                     order_id=order.id,
                     transfer_date=date.today(),
                     sender_name="QA Sender",
+                    target_bank="Bank Jago",
                 )
 
             self.assertEqual(order.status, "expired")

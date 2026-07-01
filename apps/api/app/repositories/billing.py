@@ -313,6 +313,7 @@ class BillingRepository:
         order_id: str,
         transfer_date: date,
         sender_name: str,
+        target_bank: str,
         sender_bank: Optional[str] = None,
         notes: Optional[str] = None,
     ) -> PaymentOrderModel:
@@ -334,19 +335,36 @@ class BillingRepository:
         if order.status in {PaymentStatus.FAILED.value, PaymentStatus.EXPIRED.value}:
             raise InvalidPaymentStateError("Payment order can no longer be confirmed")
 
+        metadata = order.metadata_json or {}
+        chosen = self._resolve_target_account(metadata, target_bank)
+
         order.status = PaymentStatus.CONFIRMED.value
         order.transfer_date = datetime.combine(transfer_date, time.min)
         order.confirmed_at = order.confirmed_at or now
         order.updated_at = now
         order.metadata_json = {
-            **(order.metadata_json or {}),
+            **metadata,
             "sender_name": sender_name.strip(),
             "sender_bank": (sender_bank or "").strip(),
             "transfer_date": transfer_date.isoformat(),
             "user_notes": (notes or "").strip(),
+            "bank_name": chosen["bank_name"],
+            "bank_account_number": chosen["bank_account_number"],
+            "bank_account_holder": chosen["bank_account_holder"],
         }
         self.db.commit()
         return order
+
+    @staticmethod
+    def _resolve_target_account(metadata: dict, target_bank: str) -> dict:
+        """Match the user-chosen bank against the order's stored destination
+        accounts, so the confirmed order records where the money was actually sent."""
+        accounts = metadata.get("bank_accounts") or []
+        wanted = target_bank.strip().casefold()
+        for account in accounts:
+            if str(account.get("bank_name", "")).strip().casefold() == wanted:
+                return account
+        raise InvalidPaymentStateError("Selected destination bank is not available for this order")
 
     def complete_sandbox_order(self, user_id: str, order_id: str) -> PaymentOrderModel:
         order = self.db.get(PaymentOrderModel, order_id)

@@ -36,6 +36,7 @@ class TransferConfirmationPayload(BaseModel):
     transfer_date: date
     sender_name: str = Field(min_length=2, max_length=160)
     sender_bank: Optional[str] = Field(default=None, max_length=80)
+    target_bank: str = Field(min_length=1, max_length=80)
     notes: Optional[str] = Field(default=None, max_length=500)
 
 
@@ -352,6 +353,7 @@ async def confirm_manual_transfer(
             transfer_date=payload.transfer_date,
             sender_name=payload.sender_name,
             sender_bank=payload.sender_bank,
+            target_bank=payload.target_bank,
             notes=payload.notes,
         )
     except KeyError as exc:

@@ -262,6 +262,7 @@ export async function confirmManualTransfer(input: {
   orderId: string;
   transferDate: string;
   senderName: string;
+  targetBank: string;
   senderBank?: string;
   notes?: string;
 }): Promise<{ order: PaymentOrder; emailSent: boolean }> {
@@ -273,6 +274,7 @@ export async function confirmManualTransfer(input: {
       transfer_date: input.transferDate,
       sender_name: input.senderName,
       sender_bank: input.senderBank ?? "",
+      target_bank: input.targetBank,
       notes: input.notes ?? ""
     })
   });
