@@ -108,6 +108,29 @@ class BillingRepositoryTest(unittest.TestCase):
                     target_bank="Bank Tidak Terdaftar",
                 )
 
+    def test_list_user_payment_orders_scopes_to_user(self):
+        with self.SessionLocal() as db:
+            repository = BillingRepository(db)
+            mine_first = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            mine_second = repository.create_manual_transfer_order(
+                user_id="user-123",
+                package_key="pro_3_months",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+            repository.create_manual_transfer_order(
+                user_id="user-999",
+                package_key="pro_1_month",
+                payment_kind=PaymentKind.SUBSCRIPTION,
+            )
+
+            orders = repository.list_user_payment_orders("user-123")
+
+            self.assertEqual([order.id for order in orders], [mine_second.id, mine_first.id])
+
     def test_manual_transfer_unique_code_skips_active_orders(self):
         original_min = settings.manual_transfer_unique_code_min
         original_max = settings.manual_transfer_unique_code_max

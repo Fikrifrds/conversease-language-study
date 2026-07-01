@@ -258,6 +258,11 @@ export async function getCheckoutOrder(orderId: string): Promise<PaymentOrder> {
   return mapOrder(response.data);
 }
 
+export async function getBillingOrders(): Promise<PaymentOrder[]> {
+  const response = await requestJson<ApiResponse<ApiPaymentOrder[]>>("/me/billing/orders");
+  return response.data.map(mapOrder);
+}
+
 export async function confirmManualTransfer(input: {
   orderId: string;
   transferDate: string;

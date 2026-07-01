@@ -294,6 +294,15 @@ async def get_my_billing_access(
     return {"data": access}
 
 
+@router.get("/me/billing/orders")
+async def list_my_billing_orders(
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> dict:
+    orders = BillingRepository(db).list_user_payment_orders(current_user.id)
+    return {"data": [order_payload(order) for order in orders]}
+
+
 @router.post("/billing/checkout")
 async def create_checkout(
     payload: CheckoutPayload,

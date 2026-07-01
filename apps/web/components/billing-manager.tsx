@@ -9,13 +9,14 @@ import {
   confirmManualTransfer,
   createCheckout,
   getBillingAccess,
+  getBillingOrders,
   getCheckoutOrder,
   orderBankAccounts,
   type BillingAccess,
   type PaymentKind,
   type PaymentOrder
 } from "@/lib/billing-api";
-import { plans, topups } from "@/lib/data";
+import { plans } from "@/lib/data";
 import { trackEvent } from "@/lib/analytics";
 
 function formatDate(value: string | null) {
@@ -87,10 +88,21 @@ function statusLabel(status: string) {
   return status;
 }
 
+function statusBadgeClass(status: string) {
+  if (status === "success") {
+    return "bg-mint text-leaf";
+  }
+  if (status === "failed" || status === "expired") {
+    return "bg-[#fde7df] text-coral";
+  }
+  return "bg-paper text-ink/60";
+}
+
 export function BillingManager() {
   const searchParams = useSearchParams();
   const deepLinkOrderId = searchParams.get("order_id") ?? "";
   const [access, setAccess] = useState<BillingAccess | null>(null);
+  const [orders, setOrders] = useState<PaymentOrder[]>([]);
   const [checkoutOrder, setCheckoutOrder] = useState<PaymentOrder | null>(null);
   const [activePackage, setActivePackage] = useState<string | null>(null);
   const [transferDate, setTransferDate] = useState(todayInputValue);
@@ -101,12 +113,13 @@ export function BillingManager() {
   useEffect(() => {
     let ignore = false;
 
-    async function loadAccess() {
+    async function loadBilling() {
       try {
-        const nextAccess = await getBillingAccess();
+        const [nextAccess, nextOrders] = await Promise.all([getBillingAccess(), getBillingOrders()]);
 
         if (!ignore) {
           setAccess(nextAccess);
+          setOrders(nextOrders);
         }
       } catch {
         if (!ignore) {
@@ -115,7 +128,7 @@ export function BillingManager() {
       }
     }
 
-    loadAccess();
+    loadBilling();
 
     return () => {
       ignore = true;
@@ -169,8 +182,9 @@ export function BillingManager() {
   }, [deepLinkOrderId]);
 
   async function refreshAccess() {
-    const nextAccess = await getBillingAccess();
+    const [nextAccess, nextOrders] = await Promise.all([getBillingAccess(), getBillingOrders()]);
     setAccess(nextAccess);
+    setOrders(nextOrders);
   }
 
   async function handleCheckout(packageKey: string, paymentKind: PaymentKind) {
@@ -228,6 +242,8 @@ export function BillingManager() {
   }
 
   const hasOpenOrder = checkoutOrder && ["pending", "confirmed"].includes(checkoutOrder.status);
+  const proPlan = plans.find((plan) => plan.key === "pro_3_months");
+  const isProActive = access?.planKey === proPlan?.key;
 
   return (
     <div className="space-y-5">
@@ -282,67 +298,74 @@ export function BillingManager() {
           ) : null}
         </div>
 
-        <div className="mt-5 grid gap-3 md:grid-cols-3">
-          {plans.filter((plan) => plan.key !== "free").map((plan) => (
-            <button
-              key={plan.key}
-              type="button"
-              onClick={() => handleCheckout(plan.key, "subscription")}
-              disabled={activePackage !== null || Boolean(hasOpenOrder) || access?.planKey === plan.key}
-              className={`focus-ring rounded-lg border p-4 text-left transition hover:border-leaf disabled:cursor-not-allowed disabled:opacity-60 ${
-                access?.planKey === plan.key ? "border-leaf bg-mint" : "border-ink/10 bg-paper"
-              }`}
-            >
+        {proPlan ? (
+          <div className="mt-5 overflow-hidden rounded-2xl border border-leaf/25">
+            <div className="bg-mint px-5 py-5">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="font-semibold">{plan.name}</p>
-                  <p className="mt-1 text-sm text-ink/60">{plan.cadence}</p>
+                  <p className="text-lg font-semibold">{proPlan.name}</p>
+                  <p className="mt-1 text-sm text-ink/60">Pro All Access {proPlan.cadence}</p>
                 </div>
-                {access?.planKey === plan.key ? (
-                  <CheckCircle2 className="h-5 w-5 text-leaf" aria-hidden="true" />
+                {isProActive ? (
+                  <span className="inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-xs font-semibold text-leaf">
+                    <CheckCircle2 className="h-4 w-4" aria-hidden="true" />
+                    Aktif
+                  </span>
                 ) : null}
               </div>
-              <p className="mt-4 text-2xl font-semibold">{plan.price}</p>
-              <p className="mt-2 text-sm text-ink/60">{plan.access}</p>
-              <p className="mt-4 text-xs font-semibold uppercase text-coral">
-                {access?.planKey === plan.key
-                  ? "Aktif"
-                  : activePackage === plan.key
+              <p className="mt-4 text-4xl font-semibold">{proPlan.price}</p>
+            </div>
+            <div className="px-5 py-5">
+              <ul className="space-y-2.5">
+                {proPlan.features.map((feature) => (
+                  <li key={feature} className="flex gap-2.5 text-sm text-ink/80">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <button
+                type="button"
+                onClick={() => handleCheckout(proPlan.key, "subscription")}
+                disabled={activePackage !== null || Boolean(hasOpenOrder) || isProActive}
+                className="focus-ring mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+              >
+                {isProActive
+                  ? "Paket aktif"
+                  : activePackage === proPlan.key
                     ? "Menyiapkan…"
-                    : "Buat instruksi transfer"}
-              </p>
-            </button>
-          ))}
-        </div>
+                    : "Buat Instruksi Transfer"}
+              </button>
+            </div>
+          </div>
+        ) : null}
       </section>
 
       <section className="rounded-lg border border-ink/10 bg-white p-5 shadow-sm">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-          <div>
-            <h2 className="text-xl font-semibold">Top-up opsional</h2>
-            <p className="mt-1 text-sm text-ink/60">Tambahan menit latihan setelah kuota bulanan habis.</p>
-          </div>
-          <p className="text-sm text-ink/55">Bisa dipakai untuk latihan English track.</p>
-        </div>
-
-        <div className="mt-5 grid gap-3 md:grid-cols-3">
-          {topups.map((topup) => (
-            <button
-              key={topup.key}
-              type="button"
-              onClick={() => handleCheckout(topup.key, "topup")}
-              disabled={activePackage !== null || Boolean(hasOpenOrder)}
-              className="focus-ring rounded-lg border border-ink/10 bg-paper p-4 text-left transition hover:border-leaf hover:bg-mint disabled:cursor-not-allowed disabled:opacity-60"
-            >
-              <p className="font-semibold">{topup.name}</p>
-              <p className="mt-1 text-sm text-ink/60">{topup.minutes} menit tambahan</p>
-              <p className="mt-3 text-2xl font-semibold text-coral">{topup.price}</p>
-              <p className="mt-3 text-xs font-semibold uppercase text-leaf">
-                {activePackage === topup.key ? "Menyiapkan…" : "Buat instruksi transfer"}
-              </p>
-            </button>
-          ))}
-        </div>
+        <h2 className="text-xl font-semibold">Riwayat transaksi</h2>
+        {orders.length === 0 ? (
+          <p className="mt-3 rounded-lg bg-paper px-4 py-3 text-sm text-ink/55">
+            Belum ada transaksi. Order akan muncul di sini setelah kamu membuat instruksi transfer.
+          </p>
+        ) : (
+          <ul className="mt-4 divide-y divide-ink/10">
+            {orders.map((order) => (
+              <li key={order.id} className="flex flex-wrap items-center justify-between gap-3 py-3">
+                <div>
+                  <p className="font-semibold">{orderMetadata(order, "package_name", order.packageKey)}</p>
+                  <p className="mt-1 text-sm text-ink/55">
+                    {formatDate(order.createdAt)} · {formatRupiah(order.amountIdr)}
+                  </p>
+                </div>
+                <span
+                  className={`rounded-full px-3 py-1 text-xs font-semibold ${statusBadgeClass(order.status)}`}
+                >
+                  {statusLabel(order.status)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
       </section>
     </div>
   );

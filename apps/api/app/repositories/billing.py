@@ -507,6 +507,19 @@ class BillingRepository:
             .all()
         )
 
+    def list_user_payment_orders(self, user_id: str, limit: int = 50) -> list[PaymentOrderModel]:
+        self.expire_stale_manual_transfer_orders()
+        query = (
+            select(PaymentOrderModel)
+            .where(
+                PaymentOrderModel.provider == MANUAL_TRANSFER_PROVIDER,
+                PaymentOrderModel.user_id == user_id,
+            )
+            .order_by(PaymentOrderModel.created_at.desc())
+            .limit(limit)
+        )
+        return self.db.execute(query).scalars().all()
+
     def _activate_subscription(self, user_id: str, plan_key: str, now: datetime) -> None:
         plan = plan_by_key(plan_key)
         if plan is None:
