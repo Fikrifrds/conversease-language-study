@@ -31,7 +31,7 @@ Production env must include:
 - `GOOGLE_OAUTH_CLIENT_ID` and `GOOGLE_OAUTH_CLIENT_SECRET`
 - `RESEND_API_KEY`
 - `PAYMENT_ADMIN_API_KEY`
-- Bank Jago manual-transfer account details
+- Manual-transfer destination bank account details (Bank Jago, plus BCA if the second account is enabled)
 - Rate limit env values, unless using the documented defaults
 
 Production secrets must be real values. Do not deploy with `.env.production.example` placeholders such as `replace-with...` or `<...>`.
@@ -123,6 +123,27 @@ BACKUP_FILE=/secure/backups/conversease-YYYYMMDDTHHMMSSZ.dump \
   bash scripts/verify_postgres_backup.sh
 ```
 
+## Manual Payment Approval SOP
+
+This is the routine, proactive procedure for clearing the `confirmed` queue in `/admin/payments`. Run it at least twice a day during paid beta (more often if volume grows) — do not wait for a user to complain. See "Manual Payment Incident" below for reactive, user-reported cases.
+
+Why this matters: checkout only asks the user to pick a destination bank and a transfer date. There is no uploaded receipt and no sender name/bank captured. The unique 3-digit code baked into the transfer amount (e.g. `Rp129.000 + 338 = Rp129.338`) and the destination bank the user picked are the *only* signals tying a claimed transfer to a real bank mutation. Approving on trust alone, without checking the actual mutation, hands out paid access for free.
+
+1. Log in to both destination bank accounts (Bank Jago and BCA, or whichever banks are configured) and open today's mutation list before touching `/admin/payments`.
+2. Open `/admin/payments` and filter the queue to `Confirmed`.
+3. For each order card, note the exact amount (`#<unique_code>` is the last 3 digits) and the `Bank tujuan` badge shown on the card — this tells you which of the two bank mutation lists to check.
+4. In that bank's mutation list, find an incoming transfer for the exact amount on or near the order's transfer date.
+   - If no matching mutation exists yet, leave the order pending approval and re-check on the next pass (the user may not have transferred yet, or the bank hasn't posted it). Do not approve speculatively.
+   - If a mutation with that exact amount already matched a different order today, stop and investigate before approving either — do not approve on amount alone if there is any ambiguity (see Ambiguous Match below).
+5. Open the order detail and confirm `Tanggal transfer` roughly matches the mutation date.
+6. Approve only when the amount, destination bank, and date all line up with a real, unmatched mutation. Add a short admin note recording what you matched, e.g. `Matched BCA mutation 2026-07-01, Rp129.338`.
+7. Reject (with a note) if the confirmation window (`MANUAL_TRANSFER_EXPIRE_HOURS`) has passed with no matching mutation, or if the user's claimed date/bank clearly does not match any mutation.
+8. Mark the mutation itself (e.g. highlight or annotate in the bank's own interface/export) once matched, so the same mutation is not reused for a later order.
+
+**Ambiguous match:** two different pending/confirmed orders should never carry the same exact amount for the same bank at the same time — the API enforces unique codes per active order. If you do see two orders with an identical amount, do not approve either from amount alone: open both orders, compare transfer dates, and cross-check the account name/number the mutation came from if the bank's mutation view exposes it. If you cannot confidently tell them apart, reject both and ask the affected users to reconfirm with a screenshot of their transfer.
+
+**Never approve based only on the user's word or a screenshot without cross-checking the actual bank mutation.** Screenshots can be edited; the mutation list is the source of truth.
+
 ## Manual Payment Incident
 
 If a user says payment is not active:
@@ -132,7 +153,7 @@ If a user says payment is not active:
 3. Open `/admin/payments`.
 4. Search by unique code or order id.
 5. Confirm the order status is `confirmed`; pending orders older than `MANUAL_TRANSFER_EXPIRE_HOURS` are expired by the API when opened/listed and should not be approved.
-6. Match exact amount, transfer date, and sender name against Bank Jago mutation.
+6. Match exact amount and transfer date against the mutation for the order's `Bank tujuan` (destination bank) — see the Manual Payment Approval SOP above for the full matching procedure.
 7. Approve only after the mutation matches.
 8. Confirm the order detail shows `Email user` as sent. If email delivery fails, the order can still be approved; check `RESEND_API_KEY`, Resend logs, and `/api/admin/test-email/send`, then use Resend from `/admin/payments`.
 9. Copy the API `x-request-id` if an approval fails.

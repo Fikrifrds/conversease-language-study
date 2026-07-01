@@ -62,7 +62,7 @@
 
 ## Remaining Before Production Integrations
 
-1. Configure production manual-transfer env: Resend key, payment admin key, admin email, and Bank Jago account details.
+1. Configure production manual-transfer env: Resend key, payment admin key, admin email, and destination bank account details (Bank Jago, plus BCA if the second account is enabled).
 2. Configure Google OAuth client credentials in the production platform.
 3. Conversation Coach feedback is LLM-backed with deterministic fallback (configure `TOGETHER_API_KEY` or `OPENAI_API_KEY`; verify via `/api/admin/ai/status`). Remaining: production AI grading jobs for fully automated official speaking assessment.
 4. Extend Admin CMS for media/audio uploads and draft approval before full editorial production use.

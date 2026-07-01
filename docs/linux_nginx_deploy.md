@@ -573,7 +573,7 @@ Script ini mengecek:
 - security headers web
 - admin email template list/render
 
-## Human UAT Manual Transfer Bank Jago
+## Human UAT Manual Transfer
 
 Setelah smoke otomatis pass:
 
@@ -583,14 +583,14 @@ Setelah smoke otomatis pass:
 4. Login.
 5. Buka Billing.
 6. Pilih paket Pro.
-7. Pastikan instruksi Bank Jago muncul.
+7. Pilih salah satu bank tujuan (Bank Jago atau BCA) dan pastikan instruksinya muncul.
 8. Pastikan amount berisi unique code 3 digit.
-9. Transfer tepat sesuai nominal.
+9. Transfer tepat sesuai nominal ke bank yang dipilih.
 10. User klik konfirmasi pembayaran.
 11. Pastikan email masuk ke `PAYMENT_ADMIN_EMAIL`.
 12. Login dengan email yang ada di `ADMIN_EMAILS_RAW`.
 13. Buka `/admin/payments`.
-14. Cocokkan exact amount, unique code, tanggal, dan sender dengan mutasi Bank Jago.
+14. Cocokkan exact amount, unique code, dan tanggal dengan mutasi bank tujuan yang tercatat di order (lihat SOP di `docs/operations_runbook.md`).
 15. Approve.
 16. Pastikan akses user aktif.
 17. Pastikan user menerima email approval.

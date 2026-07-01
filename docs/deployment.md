@@ -39,6 +39,10 @@ PAYMENT_ADMIN_API_KEY=<at-least-24-random-characters>
 MANUAL_TRANSFER_BANK_NAME="Bank Jago"
 MANUAL_TRANSFER_ACCOUNT_NUMBER="5001 6527 8492"
 MANUAL_TRANSFER_ACCOUNT_HOLDER="Fikri Firdaus"
+# Optional second destination account; leave the bank name blank to disable it.
+MANUAL_TRANSFER_BANK_NAME_2="BCA"
+MANUAL_TRANSFER_ACCOUNT_NUMBER_2="3300523781"
+MANUAL_TRANSFER_ACCOUNT_HOLDER_2="Fikri Firdaus"
 MANUAL_TRANSFER_UNIQUE_CODE_MIN=101
 MANUAL_TRANSFER_UNIQUE_CODE_MAX=999
 MANUAL_TRANSFER_EXPIRE_HOURS=12
@@ -130,13 +134,13 @@ User checkout creates a `manual_transfer` order with:
 
 The API keeps unique codes unique across active manual-transfer orders (`pending` and `confirmed`). Pending orders automatically expire after `MANUAL_TRANSFER_EXPIRE_HOURS`; expiration is applied when creating/listing/opening manual payment orders and when a stale order is confirmed or approved. Expired, failed, or success order codes can be reused later. If every configured code is currently active, checkout returns `503` so the user is not given a confusing duplicate transfer amount.
 
-After the user confirms transfer, the API stores transfer date/sender details, changes status to `confirmed`, and emails `PAYMENT_ADMIN_EMAIL` with a deep link to:
+Users choose one of the configured destination banks (e.g. Bank Jago or BCA, when `MANUAL_TRANSFER_BANK_NAME_2` is set) at checkout. After the user confirms transfer, the API stores the transfer date and chosen destination bank, changes status to `confirmed`, and emails `PAYMENT_ADMIN_EMAIL` with a deep link to:
 
 ```text
 https://app.conversease.com/admin/payments?order_id=<order-id>&unique_code=<code>
 ```
 
-The admin logs in with an account whose email is listed in `ADMIN_EMAILS_RAW`, opens that page, matches the exact amount against the Bank Jago mutation, then approves or rejects the order. Approval activates the subscription/top-up immediately and is idempotent: approving the same successful order again does not grant duplicate subscription or minutes. Approve/reject decisions send a user email (`payment_manual_approved` or `payment_manual_rejected`) so the user gets confirmation without refreshing billing manually. The delivery result is stored in order metadata under `customer_decision_email` and shown in `/admin/payments`. If `RESEND_API_KEY` is missing or Resend is down, the order decision still completes; fix email delivery, then use **Resend** from the order detail.
+The admin logs in with an account whose email is listed in `ADMIN_EMAILS_RAW`, opens that page, matches the exact amount and the order's recorded destination bank (shown as `Bank tujuan` on the order card and detail view) against that bank's mutation, then approves or rejects the order. See the Manual Payment Approval SOP in `docs/operations_runbook.md` for the day-to-day matching procedure. Approval activates the subscription/top-up immediately and is idempotent: approving the same successful order again does not grant duplicate subscription or minutes. Approve/reject decisions send a user email (`payment_manual_approved` or `payment_manual_rejected`) so the user gets confirmation without refreshing billing manually. The delivery result is stored in order metadata under `customer_decision_email` and shown in `/admin/payments`. If `RESEND_API_KEY` is missing or Resend is down, the order decision still completes; fix email delivery, then use **Resend** from the order detail.
 
 The user can reopen `/billing?order_id=<order-id>` while logged in to the same account to recover the exact transfer instructions and current status after refresh, browser close, or email follow-up. The API returns `404` for orders owned by another user.
 
@@ -164,6 +168,8 @@ curl -X POST https://api.conversease.com/api/admin/payment-orders/<order-id>/app
   -H "x-admin-api-key: $PAYMENT_ADMIN_API_KEY" \
   -d '{"approved_by":"Admin","notes":"Matched Bank Jago mutation"}'
 ```
+
+(Substitute the actual destination bank from the order's `bank_name` field, e.g. BCA, when applicable.)
 
 Before opening paid beta, render and send a test email to confirm templates, Resend, and admin delivery:
 
@@ -381,7 +387,7 @@ Then finish the human smoke flow:
 11. Start and submit an A1 test attempt, then confirm the saved report appears.
 12. Run the A1 readiness preview and confirm a passing score shows when all skill scores meet the thresholds.
 13. Open billing and verify current access loads.
-14. Create a manual transfer checkout and verify the Bank Jago instructions show exact amount and unique code.
+14. Create a manual transfer checkout, choose a destination bank, and verify the instructions show the exact amount and unique code.
 15. Reload `/billing?order_id=<order-id>` and verify the same instructions/status are restored for the same logged-in user.
 16. Confirm transfer and verify the order status changes to `confirmed`.
 17. Approve the order from `/admin/payments`, verify the quota/access updates, verify the user receives the approval email, and use Resend if the order detail shows email delivery failed.

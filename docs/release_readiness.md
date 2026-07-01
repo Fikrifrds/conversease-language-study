@@ -11,7 +11,7 @@ This document tracks the Conversease MVP release candidate.
 - Conversation Coach roleplay prompts and replies are lesson-specific; feedback is LLM-backed (Together/OpenAI via `LLM_DEFAULT_PROVIDER` + API key) with a deterministic keyword fallback when the LLM is not configured or fails.
 - Onboarding and lesson progress persistence.
 - Billing access model with subscription, payment order, top-up, and minute ledger tables.
-- Manual transfer Bank Jago checkout with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
+- Manual transfer checkout (Bank Jago and, optionally, a second bank such as BCA) with unique payment code, enforced confirmation expiry, user confirmation, admin email notification, admin approval UI, and admin approval endpoints.
 - Admin email diagnostics can list, render, and send test emails through `/api/admin/email-templates`, `/api/admin/test-email/render`, and `/api/admin/test-email/send`.
 - Admin AI diagnostics report provider configuration and live LLM health at `/api/admin/ai/status` and `/api/admin/ai/test-llm`, and aggregated LLM token usage with estimated cost at `/api/admin/ai/usage` (in-memory, per-process; resets on restart).
 - Web analytics: Google Analytics 4 loads when `NEXT_PUBLIC_GA_MEASUREMENT_ID` is set (no-op otherwise), tracks SPA pageviews, and emits funnel events `sign_up`, `exam_start`, `exam_submit`, `begin_checkout`, and `purchase_pending`.
@@ -64,7 +64,7 @@ CI runs the static and database-backed release gates through `.github/workflows/
 
 ## Production Blockers
 
-- Manual transfer can support controlled paid beta after `RESEND_API_KEY`, `PAYMENT_ADMIN_API_KEY`, admin email, and Bank Jago account details are configured. Admin approval/rejection sends a user email, records delivery status, and supports resend from the payment detail.
+- Manual transfer can support controlled paid beta after `RESEND_API_KEY`, `PAYMENT_ADMIN_API_KEY`, admin email, and destination bank account details are configured. Admin approval/rejection sends a user email, records delivery status, and supports resend from the payment detail. Follow the Manual Payment Approval SOP in `docs/operations_runbook.md` — checkout has no receipt upload, so cross-checking the actual bank mutation before approving is the only fraud control.
 - Manual transfer checkout links can be reopened by the owning user through `/billing?order_id=<order-id>` to recover instructions and current order status.
 - Midtrans automatic checkout/webhook is not required for beta, but remains a blocker for fully automated public paid checkout.
 - Full public English A1 release still needs the remaining 39 English A1 lessons audio-ready (text and visuals are complete for all 40).
