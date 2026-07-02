@@ -420,7 +420,7 @@ class VisualPlacementModel(Base):
     owner_key: Mapped[str] = mapped_column(String(240), index=True, nullable=False)
     slot: Mapped[str] = mapped_column(String(64), index=True, nullable=False)
     mode: Mapped[str] = mapped_column(
-        String(32), nullable=False, default="follow_lesson", server_default="follow_lesson"
+        String(32), nullable=False, default="pinned", server_default="pinned"
     )
     source_lesson_slug: Mapped[Optional[str]] = mapped_column(
         String(160), index=True, nullable=True

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, BookOpen, CheckCircle2, MessageCircle, Layers3 } from "lucide-react";
 import { AppShell } from "@/components/app-shell";
+import { AdminEditablePlacementVisual } from "@/components/admin-editable-placement-visual";
 import { CourseProgressList } from "@/components/course-progress-list";
 import { TrackGuard } from "@/components/track-guard";
 import { versionedAssetSrc } from "@/lib/assets";
@@ -11,12 +12,13 @@ import { courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisual } from "@/lib/course-visuals";
 import { getVisualPlacementManifest } from "@/lib/course-visual-placement-api";
 import { courses } from "@/lib/data";
+import { placementVisualPrompt } from "@/lib/visual-placement-prompt";
 
 type Course = (typeof courses)[number];
 
-export function generateStaticParams() {
-  return courses.map((course) => ({ slug: course.slug }));
-}
+// Visual placement metadata is lightweight and must be current on every visit.
+// The image binaries remain immutable and CDN/browser cached.
+export const dynamic = "force-dynamic";
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const course = courses.find((item) => item.slug === params.slug);
@@ -47,6 +49,12 @@ export default async function CourseDetailPage({ params }: { params: { slug: str
   const visualManifest = await getVisualPlacementManifest();
   const visual = courseHeroVisual(course, visualManifest);
   const summaryItems = courseDetailSummary(course);
+  const visualPrompt = placementVisualPrompt({
+    label: course.title,
+    context: courseMarketingDescription(course.slug, course.outcome),
+    language: course.languageLabel,
+    kind: "Course detail hero"
+  });
 
   return (
     <AppShell>
@@ -102,16 +110,27 @@ export default async function CourseDetailPage({ params }: { params: { slug: str
               </dl>
             </div>
             {visual ? (
-              <div className="relative min-h-[240px] bg-paper lg:min-h-full">
-                <Image
-                  src={versionedAssetSrc(visual.src)}
-                  alt={visual.alt}
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 420px, 100vw"
-                  className="object-cover"
-                />
-              </div>
+              <AdminEditablePlacementVisual
+                ownerType="course"
+                ownerKey={course.slug}
+                slot="detail-hero"
+                label={`${course.title} — detail hero`}
+                prompt={visualPrompt}
+                wrapperClassName="min-h-[240px] lg:min-h-full"
+                replacementClassName="h-full min-h-[240px] lg:min-h-full"
+                sizes="(min-width: 1024px) 420px, 100vw"
+              >
+                <div className="relative min-h-[240px] bg-paper lg:min-h-full">
+                  <Image
+                    src={versionedAssetSrc(visual.src)}
+                    alt={visual.alt}
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 420px, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+              </AdminEditablePlacementVisual>
             ) : null}
           </div>
         </div>

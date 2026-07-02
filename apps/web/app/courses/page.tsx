@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, BookOpen, CheckCircle2, Languages, Layers3 } from "lucide-react";
 import { isLanguageVisible } from "@conversease/shared";
 import { AppShell } from "@/components/app-shell";
+import { AdminEditablePlacementVisual } from "@/components/admin-editable-placement-visual";
 import { getAuthSession } from "@/lib/auth-api";
 import { versionedAssetSrc } from "@/lib/assets";
 import { courseGroupDescriptions, courseMarketingDescription } from "@/lib/course-marketing-copy";
@@ -15,6 +16,7 @@ import {
   type VisualPlacementManifest
 } from "@/lib/course-visual-placement-api";
 import { courses } from "@/lib/data";
+import { placementVisualPrompt } from "@/lib/visual-placement-prompt";
 
 type LanguageFilter = "all" | "english" | "arabic";
 type Course = (typeof courses)[number];
@@ -29,10 +31,13 @@ export default function CoursesPage() {
   const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
   const [isAdmin, setIsAdmin] = useState(false);
   const [visualManifest, setVisualManifest] = useState<VisualPlacementManifest | null>(null);
+  const [visualManifestLoaded, setVisualManifestLoaded] = useState(false);
 
   useEffect(() => {
     setIsAdmin(getAuthSession()?.user.role === "admin");
-    void getVisualPlacementManifest().then(setVisualManifest);
+    void getVisualPlacementManifest()
+      .then(setVisualManifest)
+      .finally(() => setVisualManifestLoaded(true));
   }, []);
 
   // Coming-soon tracks (e.g. Arabic) are admin-only — hide their tab and group.
@@ -93,7 +98,12 @@ export default function CoursesPage() {
 
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.courses.map((course) => (
-                  <CourseCard key={course.slug} course={course} visualManifest={visualManifest} />
+                  <CourseCard
+                    key={course.slug}
+                    course={course}
+                    visualManifest={visualManifest}
+                    visualManifestLoaded={visualManifestLoaded}
+                  />
                 ))}
               </div>
             </section>
@@ -109,24 +119,44 @@ export default function CoursesPage() {
 
 function CourseCard({
   course,
-  visualManifest
+  visualManifest,
+  visualManifestLoaded
 }: {
   course: Course;
   visualManifest: VisualPlacementManifest | null;
+  visualManifestLoaded: boolean;
 }) {
   const badgeTone = course.language === "arabic" ? "bg-[#fff2dc] text-coral" : "bg-mint text-leaf";
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
   const visuals = courseHeroVisuals(course, 3, visualManifest);
+  const visualPrompt = placementVisualPrompt({
+    label: course.title,
+    context: courseMarketingDescription(course.slug, course.outcome),
+    language: course.languageLabel,
+    kind: "Course catalogue cover"
+  });
 
   return (
-    <Link
-      href={`/courses/${course.slug}`}
-      className="focus-ring group flex min-h-[390px] flex-col overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition hover:border-leaf/40 hover:shadow-soft"
-    >
-      {visuals.length ? (
-        <CourseVisualMosaic visuals={visuals} />
-      ) : null}
-      <div className="flex flex-1 flex-col p-5">
+    <article className="group flex min-h-[390px] flex-col overflow-hidden rounded-lg border border-ink/10 bg-white shadow-sm transition hover:border-leaf/40 hover:shadow-soft">
+      <AdminEditablePlacementVisual
+        ownerType="course"
+        ownerKey={course.slug}
+        slot="cover"
+        label={`${course.title} — course list`}
+        prompt={visualPrompt}
+        replacementClassName="aspect-[16/9]"
+        sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+        href={`/courses/${course.slug}`}
+      >
+        {!visualManifestLoaded ? (
+          <div className="aspect-[16/9] animate-pulse bg-sand/40" />
+        ) : visuals.length ? (
+          <CourseVisualMosaic visuals={visuals} />
+        ) : (
+          <div className="aspect-[16/9] bg-paper" />
+        )}
+      </AdminEditablePlacementVisual>
+      <Link href={`/courses/${course.slug}`} className="focus-ring flex flex-1 flex-col p-5">
         <CourseCardHeader course={course} badgeTone={badgeTone} />
         <p className="mt-3 text-sm leading-6 text-ink/70">
           {courseMarketingDescription(course.slug, course.outcome)}
@@ -151,8 +181,8 @@ function CourseCard({
             <ArrowRight className="h-5 w-5 transition group-hover:translate-x-0.5" aria-hidden="true" />
           </span>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </article>
   );
 }
 

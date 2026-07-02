@@ -225,6 +225,41 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()["data"]["preview_url"], asset["preview_url"])
 
+    def test_admin_can_regenerate_a_pinned_course_visual(self):
+        asset = {
+            "asset_id": "placement-asset",
+            "owner_type": "course",
+            "owner_key": "english-a1-start-simple-conversations",
+            "placement_slot": "cover",
+        }
+        with patch(
+            "app.api.routes.admin_ai.regenerate_visual_placement",
+            new=AsyncMock(return_value=asset),
+        ) as regenerate:
+            response = self.client.post(
+                "/api/admin/visual-placements/course/english-a1-start-simple-conversations/cover/regenerate",
+                headers=self.headers,
+                json={"prompt": "Create a stable course cover illustration with two adult learners."},
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["asset_id"], "placement-asset")
+        regenerate.assert_awaited_once()
+
+    def test_admin_can_list_unit_visual_library_with_colon_owner_key(self):
+        library = {"current_asset_id": "asset-1", "assets": [{"asset_id": "asset-1"}]}
+        with patch(
+            "app.api.routes.admin_ai.list_visual_placement_library",
+            return_value=library,
+        ):
+            response = self.client.get(
+                "/api/admin/visual-placements/unit/english-a1%3Aunit-01/thumbnail/library",
+                headers=self.headers,
+            )
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"], library)
+
 
 if __name__ == "__main__":
     unittest.main()

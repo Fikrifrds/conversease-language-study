@@ -4,7 +4,7 @@ Lets operators verify from production which AI integrations are active:
 LLM feedback (Conversation Coach), speech-to-text, and TTS. Mirrors the
 admin email diagnostics pattern.
 """
-from fastapi import APIRouter, Depends, File, HTTPException, Response, UploadFile
+from fastapi import APIRouter, Depends, File, Form, HTTPException, Response, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from starlette.concurrency import run_in_threadpool
@@ -25,10 +25,15 @@ from app.services.lesson_visual_regeneration import (
     image_generation_dimensions,
     import_lesson_visual_from_url,
     list_lesson_visual_library,
+    list_visual_placement_library,
+    import_visual_placement_from_url,
+    pin_visual_placement_asset,
     regenerate_lesson_visual,
+    regenerate_visual_placement,
     resolve_lesson_visual_prompt,
     select_lesson_visual_asset,
     upload_lesson_visual,
+    store_visual_placement_image,
 )
 
 router = APIRouter()
@@ -40,6 +45,14 @@ class LessonVisualUrlPayload(BaseModel):
 
 class LessonVisualLibrarySelectionPayload(BaseModel):
     asset_id: str = Field(min_length=8, max_length=120)
+
+
+class VisualPlacementPromptPayload(BaseModel):
+    prompt: str = Field(min_length=20, max_length=30_000)
+
+
+class VisualPlacementUrlPayload(VisualPlacementPromptPayload):
+    url: str = Field(min_length=8, max_length=4096)
 
 
 @router.get("/admin/ai/status")
@@ -266,6 +279,125 @@ async def get_public_visual_placement_manifest(
     return {"data": manifest}
 
 
+@router.post(
+    "/admin/visual-placements/{owner_type}/{owner_key}/{slot}/regenerate"
+)
+async def regenerate_admin_visual_placement(
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    payload: VisualPlacementPromptPayload,
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        asset = await regenerate_visual_placement(
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            prompt=payload.prompt,
+            db=db,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": asset}
+
+
+@router.post("/admin/visual-placements/{owner_type}/{owner_key}/{slot}/upload")
+async def upload_admin_visual_placement(
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    image: UploadFile = File(...),
+    prompt: str = Form(..., min_length=20, max_length=30_000),
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    image_bytes = await image.read(MAX_IMAGE_BYTES + 1)
+    try:
+        asset = await run_in_threadpool(
+            store_visual_placement_image,
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            prompt=prompt,
+            image_bytes=image_bytes,
+            model="manual-upload",
+            archive_reason="placement_manual_upload",
+            db=db,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": asset}
+
+
+@router.post("/admin/visual-placements/{owner_type}/{owner_key}/{slot}/upload-url")
+async def upload_admin_visual_placement_from_url(
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    payload: VisualPlacementUrlPayload,
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        asset = await import_visual_placement_from_url(
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            prompt=payload.prompt,
+            url=payload.url,
+            db=db,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": asset}
+
+
+@router.get("/admin/visual-placements/{owner_type}/{owner_key}/{slot}/library")
+async def get_admin_visual_placement_library(
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        library = await run_in_threadpool(
+            list_visual_placement_library,
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            db=db,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": library}
+
+
+@router.post("/admin/visual-placements/{owner_type}/{owner_key}/{slot}/library/select")
+async def select_admin_visual_placement_library_asset(
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    payload: LessonVisualLibrarySelectionPayload,
+    _: AdminActor = Depends(require_admin_api_key),
+    db: Session = Depends(get_db),
+) -> dict:
+    try:
+        asset = await run_in_threadpool(
+            pin_visual_placement_asset,
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            asset_id=payload.asset_id,
+            db=db,
+        )
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    return {"data": asset}
+
+
 def lesson_visual_response(*, result: RegeneratedLessonVisual, generated_by: str) -> dict:
     return {
         "data": {
@@ -288,7 +420,10 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
     if exc.code in {
         "invalid_lesson_slug",
         "invalid_visual_slot",
+        "invalid_visual_placement_owner",
+        "invalid_visual_placement_slot",
         "lesson_visual_prompt_invalid",
+        "visual_placement_prompt_invalid",
         "uploaded_image_format_invalid",
         "uploaded_image_aspect_ratio_invalid",
         "remote_image_url_invalid",
@@ -300,6 +435,7 @@ def lesson_visual_http_error(exc: LessonVisualRegenerationError) -> HTTPExceptio
         "lesson_visual_prompt_not_found",
         "lesson_visual_prompt_section_not_found",
         "lesson_visual_library_asset_not_found",
+        "visual_placement_asset_not_found",
     }:
         return HTTPException(status_code=404, detail=exc.code)
     if exc.code in {"together_api_key_missing", "s3_config_missing"}:

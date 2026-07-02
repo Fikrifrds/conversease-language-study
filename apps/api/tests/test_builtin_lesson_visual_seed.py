@@ -24,7 +24,7 @@ class BuiltinLessonVisualSeedTest(unittest.TestCase):
         self.assertEqual(result["placement_count"], 280)
         self.assertEqual(result["failed"], [])
 
-    def test_every_course_placement_follows_a_lesson_slot(self):
+    def test_every_seeded_course_placement_has_a_source_lesson_slot(self):
         placements = course_placement_sources()
 
         self.assertEqual(len(placements), 280)

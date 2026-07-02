@@ -15,7 +15,7 @@ Conversease memakai content file-backed:
 - Lesson text tersimpan di repo: `content/curriculum/...`
 - Audio file tersimpan di S3.
 - Generated/uploaded lesson visual binaries and thumbnails are stored in S3 under `lesson-visuals/`; the global library index, active lesson/slot assignments, and reusable course/unit placements are stored in PostgreSQL. Containers do not retain visual binaries locally.
-- Course and unit placements default to `follow_lesson`: changing the referenced lesson slot synchronizes them immediately without runtime image selection. Use `pinned` only for deliberately curated placements that must not follow lesson changes.
+- Course covers, course-detail heroes, and unit thumbnails use stable `pinned` placements. Admins edit each placement directly from the course UI using Generate, Upload, Import URL, or Library; changing a lesson image does not replace course artwork.
 - Metadata audio wajib tersimpan di repo lewat `audio_manifest.yaml`.
 - Checklist release tersimpan di `content/production_tracker.csv`.
 

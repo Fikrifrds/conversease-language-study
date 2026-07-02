@@ -185,9 +185,10 @@ def assign_visual_placement(
     owner_key: str,
     slot: str,
     asset_id: str,
-    mode: str = "follow_lesson",
+    mode: str = "pinned",
     source_lesson_slug: Optional[str] = None,
     source_slot: Optional[str] = None,
+    only_if_missing: bool = False,
 ) -> None:
     placement = db.scalar(
         select(VisualPlacementModel).where(
@@ -212,6 +213,8 @@ def assign_visual_placement(
             )
         )
     else:
+        if only_if_missing:
+            return
         if placement.mode == "pinned" and mode == "follow_lesson":
             return
         placement.asset_id = asset_id
@@ -219,6 +222,22 @@ def assign_visual_placement(
         placement.source_lesson_slug = source_lesson_slug
         placement.source_slot = source_slot
         placement.updated_at = now
+
+
+def get_visual_placement(
+    db: Session,
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+) -> Optional[VisualPlacementModel]:
+    return db.scalar(
+        select(VisualPlacementModel).where(
+            VisualPlacementModel.owner_type == owner_type,
+            VisualPlacementModel.owner_key == owner_key,
+            VisualPlacementModel.slot == slot,
+        )
+    )
 
 
 def list_visual_placements(

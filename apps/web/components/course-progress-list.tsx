@@ -7,12 +7,14 @@ import { useRouter } from "next/navigation";
 import { ArrowRight, CheckCircle2, CircleDot, Loader2, PlayCircle } from "lucide-react";
 import { LoginForm } from "@/components/login-form";
 import { Modal } from "@/components/modal";
+import { AdminEditablePlacementVisual } from "@/components/admin-editable-placement-visual";
 import { versionedAssetSrc } from "@/lib/assets";
 import { getAuthSession } from "@/lib/auth-api";
 import { courseUnitVisuals } from "@/lib/course-visuals";
 import type { VisualPlacementManifest } from "@/lib/course-visual-placement-api";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
+import { placementVisualPrompt } from "@/lib/visual-placement-prompt";
 
 type Course = (typeof courses)[number];
 
@@ -98,6 +100,13 @@ export function CourseProgressList({
         {course.units.map((unit, unitIndex) => {
           const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
           const unitVisuals = courseUnitVisuals(course, unit, unitIndex, 3, visualManifest);
+          const unitOwnerKey = `${course.slug}:${unit.slug}`;
+          const unitVisualPrompt = placementVisualPrompt({
+            label: unit.title,
+            context: unit.outcome,
+            language: course.languageLabel,
+            kind: `Unit ${unitIndex + 1} thumbnail for ${course.title}`
+          });
           const completedLessons = activeLessons.filter(
             (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
           ).length;
@@ -119,7 +128,18 @@ export function CourseProgressList({
             >
               <div className="flex flex-col gap-5 lg:flex-row lg:items-start lg:justify-between">
                 <div className="flex min-w-0 flex-col gap-4 sm:flex-row">
-                  <UnitVisualMosaic visuals={unitVisuals} variant={unitIndex} />
+                  <AdminEditablePlacementVisual
+                    ownerType="unit"
+                    ownerKey={unitOwnerKey}
+                    slot="thumbnail"
+                    label={`${course.title} · Unit ${unitIndex + 1}: ${unit.title}`}
+                    prompt={unitVisualPrompt}
+                    wrapperClassName="w-full sm:w-52 sm:shrink-0 md:w-56"
+                    replacementClassName="aspect-[16/9] w-full rounded-lg"
+                    sizes="(min-width: 768px) 224px, (min-width: 640px) 208px, 100vw"
+                  >
+                    <UnitVisualMosaic visuals={unitVisuals} variant={unitIndex} />
+                  </AdminEditablePlacementVisual>
                   <div className="min-w-0">
                     <span className="text-xs font-semibold uppercase text-coral">Unit {unitIndex + 1}</span>
                     <h2 className="mt-2 break-words text-xl font-semibold">{unit.title}</h2>

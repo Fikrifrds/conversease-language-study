@@ -31,9 +31,11 @@ from app.core.config import settings
 from app.db.models import LessonVisualAssetModel
 from app.repositories.lesson_visual_library import (
     activate_visual_asset,
+    assign_visual_placement,
     get_active_visual_asset,
     get_visual_asset,
     get_visual_asset_by_hash,
+    get_visual_placement,
     list_visual_assets,
     list_visual_placements,
     register_visual_asset,
@@ -44,6 +46,9 @@ REPO_ROOT = Path(__file__).resolve().parents[4]
 CURRICULUM_ROOT = REPO_ROOT / "content" / "curriculum" / "english"
 PROMPT_ROOT = REPO_ROOT / "content" / "visual-prompts" / "english"
 VALID_SLOTS = ("hero", "card-1", "card-2", "card-3")
+VALID_PLACEMENT_OWNER_TYPES = ("course", "unit")
+VALID_PLACEMENT_SLOTS = ("cover", "detail-hero", "thumbnail")
+PLACEMENT_PROMPT_PATH = REPO_ROOT / "content" / "visual-prompts" / "PLACEMENT.md"
 PNG_SIGNATURE = b"\x89PNG\r\n\x1a\n"
 MAX_IMAGE_BYTES = 30 * 1024 * 1024
 PNG_PALETTE_COLORS = 256
@@ -969,6 +974,186 @@ def get_visual_placement_manifest(*, db: Session) -> dict:
             ),
         }
     return {"version": latest_version or "empty", "placements": placements}
+
+
+def validate_visual_placement(*, owner_type: str, owner_key: str, slot: str) -> None:
+    if owner_type not in VALID_PLACEMENT_OWNER_TYPES:
+        raise LessonVisualRegenerationError("invalid_visual_placement_owner")
+    if slot not in VALID_PLACEMENT_SLOTS:
+        raise LessonVisualRegenerationError("invalid_visual_placement_slot")
+    if not re.fullmatch(r"[a-z0-9]+(?:[a-z0-9:-]*[a-z0-9])?", owner_key):
+        raise LessonVisualRegenerationError("invalid_visual_placement_owner")
+
+
+def placement_storage_slug(*, owner_type: str, owner_key: str, slot: str) -> str:
+    digest = hashlib.sha256(f"{owner_type}:{owner_key}:{slot}".encode("utf-8")).hexdigest()[:20]
+    return f"placement-{digest}"
+
+
+def placement_visual_entry(
+    asset: LessonVisualAssetModel,
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    current: bool = True,
+) -> dict:
+    client = visual_s3_client()
+    return {
+        **visual_asset_entry(asset),
+        "owner_type": owner_type,
+        "owner_key": owner_key,
+        "placement_slot": slot,
+        "is_current": current,
+        "asset_url": visual_s3_playback_url(asset.storage_key, client=client),
+        "preview_url": visual_s3_playback_url(asset.preview_storage_key, client=client),
+    }
+
+
+def pin_visual_placement_asset(
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    asset_id: str,
+    db: Session,
+) -> dict:
+    validate_visual_placement(owner_type=owner_type, owner_key=owner_key, slot=slot)
+    asset = get_visual_asset(db, asset_id=asset_id)
+    if asset is None or asset.source_slot != "hero":
+        raise LessonVisualRegenerationError("visual_placement_asset_not_found")
+    assign_visual_placement(
+        db,
+        owner_type=owner_type,
+        owner_key=owner_key,
+        slot=slot,
+        asset_id=asset.id,
+        mode="pinned",
+        source_lesson_slug=None,
+        source_slot=None,
+    )
+    db.commit()
+    return placement_visual_entry(
+        asset,
+        owner_type=owner_type,
+        owner_key=owner_key,
+        slot=slot,
+    )
+
+
+def store_visual_placement_image(
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    prompt: str,
+    image_bytes: bytes,
+    model: str,
+    archive_reason: str,
+    db: Session,
+) -> dict:
+    validate_visual_placement(owner_type=owner_type, owner_key=owner_key, slot=slot)
+    prompt = prompt.strip()
+    if not prompt or len(prompt) > 30_000:
+        raise LessonVisualRegenerationError("visual_placement_prompt_invalid")
+    normalized_image = normalize_uploaded_image(image_bytes=image_bytes, slot="hero")
+    result = store_lesson_visual(
+        slug=placement_storage_slug(owner_type=owner_type, owner_key=owner_key, slot=slot),
+        slot="hero",
+        prompt_path=PLACEMENT_PROMPT_PATH,
+        prompt=prompt,
+        image_bytes=normalized_image,
+        model=model,
+        archive_reason=archive_reason,
+        overrides_dir=None,
+        db=db,
+        activate=False,
+    )
+    return pin_visual_placement_asset(
+        owner_type=owner_type,
+        owner_key=owner_key,
+        slot=slot,
+        asset_id=result.library_asset_id,
+        db=db,
+    )
+
+
+async def regenerate_visual_placement(
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    prompt: str,
+    db: Session,
+    image_client: Optional[TogetherImageClient] = None,
+) -> dict:
+    validate_visual_placement(owner_type=owner_type, owner_key=owner_key, slot=slot)
+    prompt = prompt.strip()
+    if not prompt or len(prompt) > 30_000:
+        raise LessonVisualRegenerationError("visual_placement_prompt_invalid")
+    client = image_client or TogetherImageClient(
+        api_key=settings.together_api_key,
+        base_url=settings.together_image_base_url,
+        model=settings.together_image_model,
+        timeout_seconds=settings.together_image_timeout_seconds,
+    )
+    generated = await client.generate_png(prompt=prompt, slot="hero")
+    optimized = await asyncio.to_thread(optimize_png, generated)
+    return await asyncio.to_thread(
+        store_visual_placement_image,
+        owner_type=owner_type,
+        owner_key=owner_key,
+        slot=slot,
+        prompt=prompt,
+        image_bytes=optimized,
+        model=settings.together_image_model,
+        archive_reason="placement_generation",
+        db=db,
+    )
+
+
+async def import_visual_placement_from_url(
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    prompt: str,
+    url: str,
+    db: Session,
+) -> dict:
+    image_bytes = await download_remote_image(url)
+    return await asyncio.to_thread(
+        store_visual_placement_image,
+        owner_type=owner_type,
+        owner_key=owner_key,
+        slot=slot,
+        prompt=prompt,
+        image_bytes=image_bytes,
+        model="url-import",
+        archive_reason="placement_url_import",
+        db=db,
+    )
+
+
+def list_visual_placement_library(
+    *, owner_type: str, owner_key: str, slot: str, db: Session
+) -> dict:
+    validate_visual_placement(owner_type=owner_type, owner_key=owner_key, slot=slot)
+    placement = get_visual_placement(
+        db, owner_type=owner_type, owner_key=owner_key, slot=slot
+    )
+    current_id = placement.asset_id if placement is not None else None
+    assets = [
+        placement_visual_entry(
+            asset,
+            owner_type=owner_type,
+            owner_key=owner_key,
+            slot=slot,
+            current=asset.id == current_id,
+        )
+        for asset in list_visual_assets(db, slot="hero")
+    ]
+    return {"current_asset_id": current_id, "assets": assets}
 
 
 def visual_library_manifest_key(*, slug: str, slot: str) -> str:

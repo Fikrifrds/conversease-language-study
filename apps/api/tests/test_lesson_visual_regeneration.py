@@ -25,9 +25,11 @@ from app.services.lesson_visual_regeneration import (
     get_active_lesson_visual,
     lesson_prompt_index,
     list_lesson_visual_library,
+    list_visual_placement_library,
     optimize_png,
     regenerate_lesson_visual,
     select_lesson_visual_asset,
+    store_visual_placement_image,
     upload_lesson_visual,
     validate_remote_image_url,
 )
@@ -301,6 +303,51 @@ class LessonVisualRegenerationTest(unittest.IsolatedAsyncioTestCase):
         )
         active = get_active_lesson_visual(slug="saying-your-name", slot="hero", db=db)
         self.assertEqual(active["asset_id"], stored.library_asset_id)
+
+    def test_manual_course_visual_is_stored_in_s3_and_pinned(self):
+        source = BytesIO()
+        Image.new("RGB", (1600, 900), (80, 110, 70)).save(source, format="JPEG")
+        fake_s3 = FakeVisualS3()
+        engine = create_engine("sqlite:///:memory:")
+        Base.metadata.create_all(engine)
+        db = Session(engine)
+        patches = [
+            patch.object(settings, "s3_bucket", "visual-bucket"),
+            patch.object(settings, "aws_access_key_id", "key"),
+            patch.object(settings, "aws_secret_access_key", "secret"),
+            patch.object(settings, "aws_region", "ap-southeast-1"),
+            patch.object(settings, "s3_public_base_url", "https://cdn.example.com"),
+            patch(
+                "app.services.lesson_visual_regeneration.visual_s3_client",
+                return_value=fake_s3,
+            ),
+        ]
+        for active_patch in patches:
+            active_patch.start()
+            self.addCleanup(active_patch.stop)
+        self.addCleanup(engine.dispose)
+        self.addCleanup(db.close)
+
+        stored = store_visual_placement_image(
+            owner_type="course",
+            owner_key="english-a1-start-simple-conversations",
+            slot="cover",
+            prompt="Lesson: Start Simple Conversations\nSituation: Stable course cover illustration.",
+            image_bytes=source.getvalue(),
+            model="manual-upload",
+            archive_reason="placement_manual_upload",
+            db=db,
+        )
+        library = list_visual_placement_library(
+            owner_type="course",
+            owner_key="english-a1-start-simple-conversations",
+            slot="cover",
+            db=db,
+        )
+
+        self.assertEqual(library["current_asset_id"], stored["asset_id"])
+        self.assertTrue(library["assets"][0]["is_current"])
+        self.assertEqual(stored["placement_slot"], "cover")
 
     async def test_remote_image_is_downloaded_as_bytes(self):
         transport = httpx.MockTransport(

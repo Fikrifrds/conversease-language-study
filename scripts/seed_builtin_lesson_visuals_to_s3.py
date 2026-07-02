@@ -308,9 +308,10 @@ def seed(*, execute: bool) -> dict:
                 owner_key=placement["owner_key"],
                 slot=placement["slot"],
                 asset_id=asset_id,
-                mode="follow_lesson",
+                mode="pinned",
                 source_lesson_slug=placement["source_lesson_slug"],
                 source_slot=placement["source_slot"],
+                only_if_missing=True,
             )
         db.commit()
     except Exception:

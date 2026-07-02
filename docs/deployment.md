@@ -92,7 +92,7 @@ PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visual
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visuals_to_s3.py --execute
 ```
 
-The seed is idempotent: SHA-256 deduplication prevents repeat uploads, existing active lesson choices are preserved, and assignments are updated in place. It is safe to rerun after adding bundled assets or after introducing new course/unit placement types. Course cards, course-detail heroes, and unit mosaics read one cacheable placement manifest; they do not select images again per page request. Seeded placements use `follow_lesson`, so selecting, uploading, or regenerating their source lesson image updates the related course/unit placements in the same database transaction. A future/manual `pinned` placement remains unchanged.
+The seed is idempotent: SHA-256 deduplication prevents repeat uploads, existing active lesson choices are preserved, and existing course/unit placements are never overwritten. It is safe to rerun after adding bundled assets or after introducing new placement types. Course cards, course-detail heroes, and unit thumbnails read one lightweight placement manifest; no image selection or generation runs per page request. Seeded and manually edited placements use `pinned`, so changing a lesson image never replaces course artwork. Admins can edit each placement directly from the course list or detail page using Generate, Upload, Import URL, or Library.
 
 Keep S3 cost bounded with these bucket controls:
 

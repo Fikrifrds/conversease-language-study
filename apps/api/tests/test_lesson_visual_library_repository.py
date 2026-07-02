@@ -80,6 +80,7 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
             owner_key="english-a1",
             slot="detail-hero",
             asset_id=asset.id,
+            mode="follow_lesson",
             source_lesson_slug="source-lesson",
             source_slot="hero",
         )
@@ -89,6 +90,7 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
             owner_key="english-a1:unit-01",
             slot="thumbnail-1",
             asset_id=asset.id,
+            mode="follow_lesson",
             source_lesson_slug="source-lesson",
             source_slot="hero",
         )
@@ -139,6 +141,46 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
         placement, _ = list_visual_placements(self.db)[0]
         self.assertEqual(placement.asset_id, pinned.id)
         self.assertEqual(placement.mode, "pinned")
+
+    def test_visual_placements_are_pinned_by_default(self):
+        asset = self.register(asset_id="default-pinned", content_hash="4" * 64, slot="hero")
+        assign_visual_placement(
+            self.db,
+            owner_type="unit",
+            owner_key="english-a1:unit-01",
+            slot="thumbnail",
+            asset_id=asset.id,
+        )
+        self.db.commit()
+
+        placement, _ = list_visual_placements(self.db)[0]
+        self.assertEqual(placement.mode, "pinned")
+
+    def test_seed_style_assignment_does_not_replace_manual_placement(self):
+        manual = self.register(asset_id="manual-placement", content_hash="5" * 64, slot="hero")
+        builtin = self.register(asset_id="builtin-placement", content_hash="6" * 64, slot="hero")
+        assign_visual_placement(
+            self.db,
+            owner_type="course",
+            owner_key="english-a1",
+            slot="cover",
+            asset_id=manual.id,
+            mode="pinned",
+        )
+        self.db.flush()
+        assign_visual_placement(
+            self.db,
+            owner_type="course",
+            owner_key="english-a1",
+            slot="cover",
+            asset_id=builtin.id,
+            mode="pinned",
+            only_if_missing=True,
+        )
+        self.db.commit()
+
+        placement, _ = list_visual_placements(self.db)[0]
+        self.assertEqual(placement.asset_id, manual.id)
 
     def test_seed_style_activation_preserves_existing_lesson_choice(self):
         selected = self.register(

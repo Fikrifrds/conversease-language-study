@@ -310,8 +310,17 @@ function placementVisuals(
 ): CourseVisual[] {
   const owner = manifest?.placements[ownerType]?.[ownerKey];
   if (!owner) return [];
+  const exact = owner[slotPrefix];
+  if (exact) {
+    return [{
+      src: `/visual-assets/${exact.asset_id}?variant=${variant}`,
+      width: exact.width,
+      height: exact.height,
+      alt: exact.alt
+    }];
+  }
   return Object.entries(owner)
-    .filter(([slot]) => slot === slotPrefix || slot.startsWith(`${slotPrefix}-`))
+    .filter(([slot]) => slot.startsWith(`${slotPrefix}-`))
     .sort(([left], [right]) => left.localeCompare(right))
     .slice(0, maxCount)
     .map(([, asset]) => ({
