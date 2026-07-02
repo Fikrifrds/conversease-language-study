@@ -85,14 +85,14 @@ S3_PRESIGNED_URL_EXPIRES_SECONDS=3600
 
 Admin CMS audio generation and lesson visual generation/upload store their binary assets in S3. The searchable global catalog and per-lesson active selections live in the `lesson_visual_assets` and `lesson_visual_active` database tables; S3 JSON manifests remain compatibility mirrors only. No generated visual is stored on the API or web container filesystem. Each library asset has a small WebP thumbnail, so opening the picker does not download every full-resolution original. Leave `S3_PUBLIC_BASE_URL` empty for a private bucket; the API will generate temporary signed playback URLs. Set it to a CloudFront URL when visual and audio assets are delivered through a CDN.
 
-After applying database migrations, seed all bundled lesson visuals once. Dry-run reports 124 unique binaries and 800 lesson/slot assignments without writing anything:
+After applying database migrations, seed all bundled lesson visuals once. Dry-run reports 124 unique binaries, 800 lesson/slot assignments, and 280 reusable course/unit placements without writing anything:
 
 ```bash
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visuals_to_s3.py
 PYTHONPATH=apps/api apps/api/.venv/bin/python scripts/seed_builtin_lesson_visuals_to_s3.py --execute
 ```
 
-The seed is idempotent: SHA-256 deduplication prevents repeat uploads, and assignments are updated in place. It is safe to rerun after adding bundled assets.
+The seed is idempotent: SHA-256 deduplication prevents repeat uploads, and assignments are updated in place. It is safe to rerun after adding bundled assets or after introducing new course/unit placement types. Course cards, course-detail heroes, and unit mosaics read one cacheable placement manifest; they do not select images again per page request.
 
 Keep S3 cost bounded with these bucket controls:
 

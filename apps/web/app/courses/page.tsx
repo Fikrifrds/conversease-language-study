@@ -10,6 +10,10 @@ import { getAuthSession } from "@/lib/auth-api";
 import { versionedAssetSrc } from "@/lib/assets";
 import { courseGroupDescriptions, courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisuals } from "@/lib/course-visuals";
+import {
+  getVisualPlacementManifest,
+  type VisualPlacementManifest
+} from "@/lib/course-visual-placement-api";
 import { courses } from "@/lib/data";
 
 type LanguageFilter = "all" | "english" | "arabic";
@@ -24,9 +28,11 @@ const allLanguageFilters: Array<{ key: LanguageFilter; label: string }> = [
 export default function CoursesPage() {
   const [languageFilter, setLanguageFilter] = useState<LanguageFilter>("all");
   const [isAdmin, setIsAdmin] = useState(false);
+  const [visualManifest, setVisualManifest] = useState<VisualPlacementManifest | null>(null);
 
   useEffect(() => {
     setIsAdmin(getAuthSession()?.user.role === "admin");
+    void getVisualPlacementManifest().then(setVisualManifest);
   }, []);
 
   // Coming-soon tracks (e.g. Arabic) are admin-only — hide their tab and group.
@@ -87,7 +93,7 @@ export default function CoursesPage() {
 
               <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
                 {group.courses.map((course) => (
-                  <CourseCard key={course.slug} course={course} />
+                  <CourseCard key={course.slug} course={course} visualManifest={visualManifest} />
                 ))}
               </div>
             </section>
@@ -102,13 +108,15 @@ export default function CoursesPage() {
 }
 
 function CourseCard({
-  course
+  course,
+  visualManifest
 }: {
   course: Course;
+  visualManifest: VisualPlacementManifest | null;
 }) {
   const badgeTone = course.language === "arabic" ? "bg-[#fff2dc] text-coral" : "bg-mint text-leaf";
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
-  const visuals = courseHeroVisuals(course);
+  const visuals = courseHeroVisuals(course, 3, visualManifest);
 
   return (
     <Link

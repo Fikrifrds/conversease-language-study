@@ -7,7 +7,9 @@ from sqlalchemy.orm import Session
 from app.db.base import Base
 from app.repositories.lesson_visual_library import (
     activate_visual_asset,
+    assign_visual_placement,
     get_active_visual_asset,
+    list_visual_placements,
     list_visual_assets,
     register_visual_asset,
 )
@@ -69,3 +71,25 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
 
         self.assertEqual(second.id, first.id)
         self.assertEqual(len(list_visual_assets(self.db, slot="hero")), 1)
+
+    def test_visual_placements_reuse_assets_without_copying_binary(self):
+        asset = self.register(asset_id="shared", content_hash="d" * 64, slot="hero")
+        assign_visual_placement(
+            self.db,
+            owner_type="course",
+            owner_key="english-a1",
+            slot="detail-hero",
+            asset_id=asset.id,
+        )
+        assign_visual_placement(
+            self.db,
+            owner_type="unit",
+            owner_key="english-a1:unit-01",
+            slot="thumbnail-1",
+            asset_id=asset.id,
+        )
+        self.db.commit()
+
+        placements = list_visual_placements(self.db)
+        self.assertEqual(len(placements), 2)
+        self.assertEqual({item[1].id for item in placements}, {asset.id})

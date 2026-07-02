@@ -17,6 +17,7 @@ class BuiltinLessonVisualSeedTest(unittest.TestCase):
         self.assertTrue(result["dry_run"])
         self.assertEqual(result["assignment_count"], 800)
         self.assertEqual(result["unique_asset_count"], 124)
+        self.assertEqual(result["placement_count"], 280)
         self.assertEqual(result["failed"], [])
 
 

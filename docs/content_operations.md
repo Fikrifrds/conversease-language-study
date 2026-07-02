@@ -14,7 +14,7 @@ Conversease memakai content file-backed:
 
 - Lesson text tersimpan di repo: `content/curriculum/...`
 - Audio file tersimpan di S3.
-- Generated/uploaded lesson visual binaries and thumbnails are stored in S3 under `lesson-visuals/`; the global library index and active lesson/slot assignments are stored in PostgreSQL. Containers do not retain visual binaries locally.
+- Generated/uploaded lesson visual binaries and thumbnails are stored in S3 under `lesson-visuals/`; the global library index, active lesson/slot assignments, and reusable course/unit placements are stored in PostgreSQL. Containers do not retain visual binaries locally.
 - Metadata audio wajib tersimpan di repo lewat `audio_manifest.yaml`.
 - Checklist release tersimpan di `content/production_tracker.csv`.
 

@@ -4,7 +4,7 @@ Lets operators verify from production which AI integrations are active:
 LLM feedback (Conversation Coach), speech-to-text, and TTS. Mirrors the
 admin email diagnostics pattern.
 """
-from fastapi import APIRouter, Depends, File, HTTPException, UploadFile
+from fastapi import APIRouter, Depends, File, HTTPException, Response, UploadFile
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 from starlette.concurrency import run_in_threadpool
@@ -20,6 +20,8 @@ from app.services.lesson_visual_regeneration import (
     MAX_IMAGE_BYTES,
     RegeneratedLessonVisual,
     get_active_lesson_visual,
+    get_public_visual_asset,
+    get_visual_placement_manifest,
     image_generation_dimensions,
     import_lesson_visual_from_url,
     list_lesson_visual_library,
@@ -240,6 +242,28 @@ async def get_public_active_lesson_visual(
     if active is None:
         raise HTTPException(status_code=404, detail="lesson_visual_active_not_found")
     return {"data": active}
+
+
+@router.get("/visual-assets/{asset_id}")
+async def get_public_visual_asset_route(asset_id: str, db: Session = Depends(get_db)) -> dict:
+    if len(asset_id) > 64:
+        raise HTTPException(status_code=404, detail="visual_asset_not_found")
+    try:
+        asset = await run_in_threadpool(get_public_visual_asset, asset_id=asset_id, db=db)
+    except LessonVisualRegenerationError as exc:
+        raise lesson_visual_http_error(exc) from exc
+    if asset is None:
+        raise HTTPException(status_code=404, detail="visual_asset_not_found")
+    return {"data": asset}
+
+
+@router.get("/visual-placements/manifest")
+async def get_public_visual_placement_manifest(
+    response: Response, db: Session = Depends(get_db)
+) -> dict:
+    manifest = await run_in_threadpool(get_visual_placement_manifest, db=db)
+    response.headers["Cache-Control"] = "public, max-age=60, stale-while-revalidate=300"
+    return {"data": manifest}
 
 
 def lesson_visual_response(*, result: RegeneratedLessonVisual, generated_by: str) -> dict:

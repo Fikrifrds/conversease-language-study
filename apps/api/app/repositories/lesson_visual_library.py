@@ -8,7 +8,11 @@ from sqlalchemy import select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
-from app.db.models import LessonVisualActiveModel, LessonVisualAssetModel
+from app.db.models import (
+    LessonVisualActiveModel,
+    LessonVisualAssetModel,
+    VisualPlacementModel,
+)
 
 
 def register_visual_asset(
@@ -137,4 +141,55 @@ def get_active_visual_asset(
             LessonVisualActiveModel.lesson_slug == lesson_slug,
             LessonVisualActiveModel.slot == slot,
         )
+    )
+
+
+def assign_visual_placement(
+    db: Session,
+    *,
+    owner_type: str,
+    owner_key: str,
+    slot: str,
+    asset_id: str,
+) -> None:
+    placement = db.scalar(
+        select(VisualPlacementModel).where(
+            VisualPlacementModel.owner_type == owner_type,
+            VisualPlacementModel.owner_key == owner_key,
+            VisualPlacementModel.slot == slot,
+        )
+    )
+    now = datetime.now(timezone.utc)
+    if placement is None:
+        db.add(
+            VisualPlacementModel(
+                id=uuid4().hex,
+                owner_type=owner_type,
+                owner_key=owner_key,
+                slot=slot,
+                asset_id=asset_id,
+                updated_at=now,
+            )
+        )
+    else:
+        placement.asset_id = asset_id
+        placement.updated_at = now
+
+
+def list_visual_placements(
+    db: Session,
+) -> list[tuple[VisualPlacementModel, LessonVisualAssetModel]]:
+    return list(
+        db.execute(
+            select(VisualPlacementModel, LessonVisualAssetModel)
+            .join(
+                LessonVisualAssetModel,
+                LessonVisualAssetModel.id == VisualPlacementModel.asset_id,
+            )
+            .order_by(
+                VisualPlacementModel.owner_type,
+                VisualPlacementModel.owner_key,
+                VisualPlacementModel.slot,
+            )
+        ).all()
     )

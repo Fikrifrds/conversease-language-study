@@ -9,6 +9,7 @@ import { TrackGuard } from "@/components/track-guard";
 import { versionedAssetSrc } from "@/lib/assets";
 import { courseMarketingDescription } from "@/lib/course-marketing-copy";
 import { courseHeroVisual } from "@/lib/course-visuals";
+import { getVisualPlacementManifest } from "@/lib/course-visual-placement-api";
 import { courses } from "@/lib/data";
 
 type Course = (typeof courses)[number];
@@ -36,14 +37,15 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function CourseDetailPage({ params }: { params: { slug: string } }) {
+export default async function CourseDetailPage({ params }: { params: { slug: string } }) {
   const course = courses.find((item) => item.slug === params.slug);
 
   if (!course) {
     notFound();
   }
   const lessonCount = course.units.reduce((sum, unit) => sum + unit.lessons.length, 0);
-  const visual = courseHeroVisual(course);
+  const visualManifest = await getVisualPlacementManifest();
+  const visual = courseHeroVisual(course, visualManifest);
   const summaryItems = courseDetailSummary(course);
 
   return (
@@ -114,7 +116,7 @@ export default function CourseDetailPage({ params }: { params: { slug: string } 
           </div>
         </div>
 
-        <CourseProgressList course={course} />
+        <CourseProgressList course={course} visualManifest={visualManifest} />
       </section>
       </TrackGuard>
     </AppShell>

@@ -192,6 +192,39 @@ class AdminAiDiagnosticsTest(unittest.TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertEqual(response.json()["data"]["library_asset_id"], "asset-001")
 
+    def test_public_visual_placement_manifest_is_cacheable(self):
+        manifest = {
+            "version": "2026-07-02T00:00:00+00:00",
+            "placements": {
+                "course": {
+                    "english-a1": {
+                        "detail-hero": {"asset_id": "asset-1", "width": 1024, "height": 576}
+                    }
+                }
+            },
+        }
+        with patch(
+            "app.api.routes.admin_ai.get_visual_placement_manifest",
+            return_value=manifest,
+        ):
+            response = self.client.get("/api/visual-placements/manifest")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["version"], manifest["version"])
+        self.assertIn("max-age=60", response.headers["cache-control"])
+
+    def test_public_visual_asset_returns_playback_metadata(self):
+        asset = {
+            "asset_id": "asset-1",
+            "asset_url": "https://cdn.example/image.png",
+            "preview_url": "https://cdn.example/thumbnail.webp",
+        }
+        with patch("app.api.routes.admin_ai.get_public_visual_asset", return_value=asset):
+            response = self.client.get("/api/visual-assets/asset-1")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.json()["data"]["preview_url"], asset["preview_url"])
+
 
 if __name__ == "__main__":
     unittest.main()

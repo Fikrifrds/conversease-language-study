@@ -35,6 +35,7 @@ from app.repositories.lesson_visual_library import (
     get_visual_asset,
     get_visual_asset_by_hash,
     list_visual_assets,
+    list_visual_placements,
     register_visual_asset,
 )
 
@@ -923,6 +924,41 @@ def regenerated_visual_from_asset(
         library_asset_id=asset.id,
         library_relative_path=asset.storage_key.rsplit("/image.png", 1)[0],
     )
+
+
+def get_public_visual_asset(*, asset_id: str, db: Session) -> Optional[dict]:
+    asset = get_visual_asset(db, asset_id=asset_id)
+    if asset is None:
+        return None
+    client = visual_s3_client()
+    return {
+        **visual_asset_entry(asset),
+        "version": asset.id,
+        "asset_url": visual_s3_playback_url(asset.storage_key, client=client),
+        "preview_url": visual_s3_playback_url(
+            asset.preview_storage_key, client=client
+        ),
+    }
+
+
+def get_visual_placement_manifest(*, db: Session) -> dict:
+    placements: dict[str, dict[str, dict[str, dict]]] = {}
+    latest_version = ""
+    for placement, asset in list_visual_placements(db):
+        latest_version = max(latest_version, placement.updated_at.isoformat())
+        owner = placements.setdefault(placement.owner_type, {}).setdefault(
+            placement.owner_key, {}
+        )
+        owner[placement.slot] = {
+            "asset_id": asset.id,
+            "width": asset.width,
+            "height": asset.height,
+            "alt": str(
+                asset.description_json.get("subject")
+                or "Conversease course visual"
+            ),
+        }
+    return {"version": latest_version or "empty", "placements": placements}
 
 
 def visual_library_manifest_key(*, slug: str, slot: str) -> str:

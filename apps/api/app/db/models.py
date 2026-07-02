@@ -402,3 +402,27 @@ class LessonVisualActiveModel(Base):
         nullable=False,
     )
     updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)
+
+
+class VisualPlacementModel(Base):
+    __tablename__ = "visual_placements"
+    __table_args__ = (
+        UniqueConstraint(
+            "owner_type",
+            "owner_key",
+            "slot",
+            name="uq_visual_placements_owner_slot",
+        ),
+    )
+
+    id: Mapped[str] = mapped_column(String(64), primary_key=True)
+    owner_type: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
+    owner_key: Mapped[str] = mapped_column(String(240), index=True, nullable=False)
+    slot: Mapped[str] = mapped_column(String(64), index=True, nullable=False)
+    asset_id: Mapped[str] = mapped_column(
+        String(64),
+        ForeignKey("lesson_visual_assets.id", ondelete="RESTRICT"),
+        index=True,
+        nullable=False,
+    )
+    updated_at: Mapped[datetime] = mapped_column(DateTime, index=True, nullable=False)

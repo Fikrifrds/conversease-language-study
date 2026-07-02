@@ -10,12 +10,19 @@ import { Modal } from "@/components/modal";
 import { versionedAssetSrc } from "@/lib/assets";
 import { getAuthSession } from "@/lib/auth-api";
 import { courseUnitVisuals } from "@/lib/course-visuals";
+import type { VisualPlacementManifest } from "@/lib/course-visual-placement-api";
 import { getCourseProgress, type LearningProgressSummary } from "@/lib/learning-api";
 import { course as defaultCourse, type courses } from "@/lib/data";
 
 type Course = (typeof courses)[number];
 
-export function CourseProgressList({ course = defaultCourse }: { course?: Course }) {
+export function CourseProgressList({
+  course = defaultCourse,
+  visualManifest = null
+}: {
+  course?: Course;
+  visualManifest?: VisualPlacementManifest | null;
+}) {
   const router = useRouter();
   const [summary, setSummary] = useState<LearningProgressSummary | null>(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -90,7 +97,7 @@ export function CourseProgressList({ course = defaultCourse }: { course?: Course
       <div className="mt-8 space-y-5">
         {course.units.map((unit, unitIndex) => {
           const activeLessons = unit.lessons.filter((lesson) => ["published", "beta"].includes(lesson.status));
-          const unitVisuals = courseUnitVisuals(course, unit, unitIndex);
+          const unitVisuals = courseUnitVisuals(course, unit, unitIndex, 3, visualManifest);
           const completedLessons = activeLessons.filter(
             (lesson) => progressBySlug.get(lesson.slug)?.progressStatus === "completed"
           ).length;

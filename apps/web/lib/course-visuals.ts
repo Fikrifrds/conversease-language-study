@@ -1,10 +1,12 @@
 import { lessonsBySlug } from "@/lib/data";
+import type { VisualPlacementManifest } from "@/lib/course-visual-placement-api";
 
 type LessonRef = {
   slug: string;
 };
 
 type UnitRef = {
+  slug?: string;
   title?: string;
   outcome?: string;
   lessons: LessonRef[];
@@ -170,7 +172,23 @@ export function unitHeroVisual(unit: UnitRef) {
   return unitHeroVisuals(unit, 1)[0] ?? null;
 }
 
-export function courseUnitVisuals(course: CourseRef, unit: UnitRef, unitIndex: number, maxCount = 3) {
+export function courseUnitVisuals(
+  course: CourseRef,
+  unit: UnitRef,
+  unitIndex: number,
+  maxCount = 3,
+  manifest?: VisualPlacementManifest | null
+) {
+  const placedVisuals = placementVisuals(
+    manifest,
+    "unit",
+    `${course.slug}:${unit.slug}`,
+    "thumbnail",
+    maxCount
+  );
+  if (placedVisuals.length) {
+    return placedVisuals;
+  }
   const lessonVisuals = unitHeroVisuals(unit, maxCount, unitIndex);
   if (lessonVisuals.length) {
     return lessonVisuals;
@@ -219,7 +237,21 @@ export function unitHeroVisuals(unit: UnitRef, maxCount = 3, seed = 0) {
   return visuals;
 }
 
-export function courseHeroVisuals(course: CourseRef, maxCount = 3) {
+export function courseHeroVisuals(
+  course: CourseRef,
+  maxCount = 3,
+  manifest?: VisualPlacementManifest | null
+) {
+  const placedVisuals = placementVisuals(
+    manifest,
+    "course",
+    course.slug ?? "",
+    "cover",
+    maxCount
+  );
+  if (placedVisuals.length) {
+    return placedVisuals;
+  }
   const curatedVisuals = curatedCourseVisuals(course.slug);
   if (curatedVisuals.length) {
     return curatedVisuals.slice(0, maxCount);
@@ -243,15 +275,51 @@ export function courseHeroVisuals(course: CourseRef, maxCount = 3) {
   return visuals;
 }
 
-export function courseHeroVisual(course: CourseRef) {
+export function courseHeroVisual(
+  course: CourseRef,
+  manifest?: VisualPlacementManifest | null
+) {
+  const placedVisual = placementVisuals(
+    manifest,
+    "course",
+    course.slug ?? "",
+    "detail-hero",
+    1,
+    "original"
+  )[0];
+  if (placedVisual) {
+    return placedVisual;
+  }
   for (const [unitIndex, unit] of course.units.entries()) {
-    const visual = courseUnitVisuals(course, unit, unitIndex, 1)[0];
+    const visual = courseUnitVisuals(course, unit, unitIndex, 1, manifest)[0];
     if (visual) {
       return visual;
     }
   }
 
-  return courseHeroVisuals(course, 1)[0] ?? null;
+  return courseHeroVisuals(course, 1, manifest)[0] ?? null;
+}
+
+function placementVisuals(
+  manifest: VisualPlacementManifest | null | undefined,
+  ownerType: string,
+  ownerKey: string,
+  slotPrefix: string,
+  maxCount: number,
+  variant: "thumbnail" | "original" = "thumbnail"
+): CourseVisual[] {
+  const owner = manifest?.placements[ownerType]?.[ownerKey];
+  if (!owner) return [];
+  return Object.entries(owner)
+    .filter(([slot]) => slot === slotPrefix || slot.startsWith(`${slotPrefix}-`))
+    .sort(([left], [right]) => left.localeCompare(right))
+    .slice(0, maxCount)
+    .map(([, asset]) => ({
+      src: `/visual-assets/${asset.asset_id}?variant=${variant}`,
+      width: asset.width,
+      height: asset.height,
+      alt: asset.alt
+    }));
 }
 
 function curatedCourseVisuals(slug?: string): CourseVisual[] {
