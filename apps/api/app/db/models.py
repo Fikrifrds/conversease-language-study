@@ -419,6 +419,13 @@ class VisualPlacementModel(Base):
     owner_type: Mapped[str] = mapped_column(String(32), index=True, nullable=False)
     owner_key: Mapped[str] = mapped_column(String(240), index=True, nullable=False)
     slot: Mapped[str] = mapped_column(String(64), index=True, nullable=False)
+    mode: Mapped[str] = mapped_column(
+        String(32), nullable=False, default="follow_lesson", server_default="follow_lesson"
+    )
+    source_lesson_slug: Mapped[Optional[str]] = mapped_column(
+        String(160), index=True, nullable=True
+    )
+    source_slot: Mapped[Optional[str]] = mapped_column(String(32), index=True, nullable=True)
     asset_id: Mapped[str] = mapped_column(
         String(64),
         ForeignKey("lesson_visual_assets.id", ondelete="RESTRICT"),

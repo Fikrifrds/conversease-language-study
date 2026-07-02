@@ -241,6 +241,7 @@ def store_uploaded_lesson_visual(
     archive_reason: str,
     overrides_dir: Optional[Path] = None,
     db: Optional[Session] = None,
+    activate: bool = True,
 ) -> RegeneratedLessonVisual:
     prompt_path, prompt = resolve_lesson_visual_prompt(slug=slug, slot=slot)
     normalized_image_bytes = normalize_uploaded_image(image_bytes=image_bytes, slot=slot)
@@ -254,6 +255,7 @@ def store_uploaded_lesson_visual(
         archive_reason=archive_reason,
         overrides_dir=overrides_dir,
         db=db,
+        activate=activate,
     )
 
 
@@ -289,6 +291,7 @@ def store_lesson_visual(
     archive_reason: str,
     overrides_dir: Optional[Path],
     db: Optional[Session] = None,
+    activate: bool = True,
 ) -> RegeneratedLessonVisual:
     if overrides_dir is None:
         return store_lesson_visual_s3(
@@ -300,6 +303,7 @@ def store_lesson_visual(
             model=model,
             archive_reason=archive_reason,
             db=db,
+            activate=activate,
         )
     return store_lesson_visual_local(
         slug=slug,
@@ -631,6 +635,7 @@ def store_lesson_visual_s3(
     model: str,
     archive_reason: str,
     db: Optional[Session] = None,
+    activate: bool = True,
 ) -> RegeneratedLessonVisual:
     ensure_visual_s3_configured()
     created_at = datetime.now(timezone.utc)
@@ -638,19 +643,20 @@ def store_lesson_visual_s3(
     if db is not None:
         existing = get_visual_asset_by_hash(db, content_hash=content_hash)
         if existing is not None:
-            activate_visual_asset(
-                db,
-                lesson_slug=slug,
-                slot=slot,
-                asset_id=existing.id,
-            )
-            db.commit()
-            entry = visual_asset_entry(existing)
-            visual_s3_put_json(
-                visual_s3_client(),
-                visual_active_manifest_key(slug=slug, slot=slot),
-                entry,
-            )
+            if activate:
+                activate_visual_asset(
+                    db,
+                    lesson_slug=slug,
+                    slot=slot,
+                    asset_id=existing.id,
+                )
+                db.commit()
+                entry = visual_asset_entry(existing)
+                visual_s3_put_json(
+                    visual_s3_client(),
+                    visual_active_manifest_key(slug=slug, slot=slot),
+                    entry,
+                )
             return regenerated_visual_from_asset(existing, slug=slug, slot=slot)
     asset_id = f"{created_at.strftime('%Y%m%dT%H%M%S%fZ')}-{uuid4().hex[:8]}"
     asset_prefix = f"lesson-visuals/library/{slug}/{slot}/{asset_id}"
@@ -733,7 +739,10 @@ def store_lesson_visual_s3(
     library["assets"] = [entry, *assets]
     library["updated_at"] = created_at.isoformat()
     visual_s3_put_json(client, library_key, library)
-    visual_s3_put_json(client, visual_active_manifest_key(slug=slug, slot=slot), entry)
+    if activate:
+        visual_s3_put_json(
+            client, visual_active_manifest_key(slug=slug, slot=slot), entry
+        )
     if db is not None:
         asset = register_visual_asset(
             db,
@@ -752,7 +761,8 @@ def store_lesson_visual_s3(
             prompt_text=prompt,
             created_at=created_at,
         )
-        activate_visual_asset(db, lesson_slug=slug, slot=slot, asset_id=asset.id)
+        if activate:
+            activate_visual_asset(db, lesson_slug=slug, slot=slot, asset_id=asset.id)
         db.commit()
 
     logger.info(

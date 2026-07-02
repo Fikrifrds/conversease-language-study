@@ -1,6 +1,10 @@
 import unittest
 
-from scripts.seed_builtin_lesson_visuals_to_s3 import seed, seed_targets
+from scripts.seed_builtin_lesson_visuals_to_s3 import (
+    course_placement_sources,
+    seed,
+    seed_targets,
+)
 
 
 class BuiltinLessonVisualSeedTest(unittest.TestCase):
@@ -19,6 +23,15 @@ class BuiltinLessonVisualSeedTest(unittest.TestCase):
         self.assertEqual(result["unique_asset_count"], 124)
         self.assertEqual(result["placement_count"], 280)
         self.assertEqual(result["failed"], [])
+
+    def test_every_course_placement_follows_a_lesson_slot(self):
+        placements = course_placement_sources()
+
+        self.assertEqual(len(placements), 280)
+        self.assertTrue(all(item["source_lesson_slug"] for item in placements))
+        self.assertTrue(
+            all(item["source_slot"] in {"hero", "card-1", "card-2", "card-3"} for item in placements)
+        )
 
 
 if __name__ == "__main__":

@@ -19,6 +19,7 @@ from app.db.session import get_sessionmaker
 from app.repositories.lesson_visual_library import (
     activate_visual_asset,
     assign_visual_placement,
+    get_active_visual_asset,
     get_visual_asset,
 )
 from app.services.lesson_visual_regeneration import (
@@ -98,7 +99,7 @@ def course_placement_sources() -> list[dict]:
         if not course_slug or not isinstance(units, list):
             continue
 
-        course_visuals: list[str] = []
+        course_visuals: list[dict] = []
         for unit in units:
             if not isinstance(unit, dict):
                 continue
@@ -109,31 +110,46 @@ def course_placement_sources() -> list[dict]:
                 for item in lessons
                 if isinstance(item, dict) and item.get("slug")
             ]
-            sources: list[str] = []
+            sources: list[dict] = []
+            seen_urls: set[str] = set()
             for lesson_slug in lesson_slugs:
                 hero_source = visuals_by_slug.get(lesson_slug, {}).get("hero", "")
-                if hero_source and hero_source not in sources:
-                    sources.append(hero_source)
+                if hero_source and hero_source not in seen_urls:
+                    sources.append(
+                        {
+                            "source_url": hero_source,
+                            "source_lesson_slug": lesson_slug,
+                            "source_slot": "hero",
+                        }
+                    )
+                    seen_urls.add(hero_source)
                 if len(sources) == 3:
                     break
             if lesson_slugs and len(sources) < 3:
                 first_visuals = visuals_by_slug.get(lesson_slugs[0], {})
                 for card_slot in ("card-1", "card-2", "card-3"):
                     source = first_visuals.get(card_slot, "")
-                    if source and source not in sources:
-                        sources.append(source)
+                    if source and source not in seen_urls:
+                        sources.append(
+                            {
+                                "source_url": source,
+                                "source_lesson_slug": lesson_slugs[0],
+                                "source_slot": card_slot,
+                            }
+                        )
+                        seen_urls.add(source)
                     if len(sources) == 3:
                         break
             if not unit_key or not sources:
                 continue
             owner_key = f"{course_slug}:{unit_key}"
-            for index, source_url in enumerate(sources[:3], start=1):
+            for index, source in enumerate(sources[:3], start=1):
                 placements.append(
                     {
                         "owner_type": "unit",
                         "owner_key": owner_key,
                         "slot": f"thumbnail-{index}",
-                        "source_url": source_url,
+                        **source,
                     }
                 )
             if not course_visuals:
@@ -145,16 +161,16 @@ def course_placement_sources() -> list[dict]:
                     "owner_type": "course",
                     "owner_key": course_slug,
                     "slot": "detail-hero",
-                    "source_url": course_visuals[0],
+                    **course_visuals[0],
                 }
             )
-            for index, source_url in enumerate(course_visuals[:3], start=1):
+            for index, source in enumerate(course_visuals[:3], start=1):
                 placements.append(
                     {
                         "owner_type": "course",
                         "owner_key": course_slug,
                         "slot": f"cover-{index}",
-                        "source_url": source_url,
+                        **source,
                     }
                 )
     return placements
@@ -225,6 +241,7 @@ def seed(*, execute: bool) -> dict:
                     model="builtin-static",
                     archive_reason="builtin_asset_seed",
                     db=db,
+                    activate=False,
                 )
                 asset_ids[content_hash] = stored.library_asset_id
                 if not target["referenced"]:
@@ -262,10 +279,21 @@ def seed(*, execute: bool) -> dict:
                 lesson_slug=target["slug"],
                 slot=target["slot"],
                 asset_id=asset_id,
+                only_if_missing=True,
             )
             result["activated_count"] += 1
+        db.flush()
         for placement in placement_sources:
-            asset_id = asset_ids_by_url.get(placement["source_url"])
+            active_asset = get_active_visual_asset(
+                db,
+                lesson_slug=placement["source_lesson_slug"],
+                slot=placement["source_slot"],
+            )
+            asset_id = (
+                active_asset.id
+                if active_asset is not None
+                else asset_ids_by_url.get(placement["source_url"])
+            )
             if not asset_id:
                 result["failed"].append(
                     {
@@ -280,6 +308,9 @@ def seed(*, execute: bool) -> dict:
                 owner_key=placement["owner_key"],
                 slot=placement["slot"],
                 asset_id=asset_id,
+                mode="follow_lesson",
+                source_lesson_slug=placement["source_lesson_slug"],
+                source_slot=placement["source_slot"],
             )
         db.commit()
     except Exception:

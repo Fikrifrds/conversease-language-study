@@ -80,6 +80,8 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
             owner_key="english-a1",
             slot="detail-hero",
             asset_id=asset.id,
+            source_lesson_slug="source-lesson",
+            source_slot="hero",
         )
         assign_visual_placement(
             self.db,
@@ -87,9 +89,81 @@ class LessonVisualLibraryRepositoryTest(unittest.TestCase):
             owner_key="english-a1:unit-01",
             slot="thumbnail-1",
             asset_id=asset.id,
+            source_lesson_slug="source-lesson",
+            source_slot="hero",
         )
         self.db.commit()
 
         placements = list_visual_placements(self.db)
         self.assertEqual(len(placements), 2)
         self.assertEqual({item[1].id for item in placements}, {asset.id})
+
+        replacement = self.register(
+            asset_id="replacement", content_hash="e" * 64, slot="hero"
+        )
+        activate_visual_asset(
+            self.db,
+            lesson_slug="source-lesson",
+            slot="hero",
+            asset_id=replacement.id,
+        )
+        self.db.commit()
+        self.assertEqual(
+            {item[0].asset_id for item in list_visual_placements(self.db)},
+            {replacement.id},
+        )
+
+    def test_pinned_placement_does_not_follow_lesson_changes(self):
+        pinned = self.register(asset_id="pinned", content_hash="f" * 64, slot="hero")
+        replacement = self.register(
+            asset_id="next", content_hash="1" * 64, slot="hero"
+        )
+        assign_visual_placement(
+            self.db,
+            owner_type="course",
+            owner_key="english-a1",
+            slot="detail-hero",
+            asset_id=pinned.id,
+            mode="pinned",
+            source_lesson_slug="source-lesson",
+            source_slot="hero",
+        )
+        activate_visual_asset(
+            self.db,
+            lesson_slug="source-lesson",
+            slot="hero",
+            asset_id=replacement.id,
+        )
+        self.db.commit()
+
+        placement, _ = list_visual_placements(self.db)[0]
+        self.assertEqual(placement.asset_id, pinned.id)
+        self.assertEqual(placement.mode, "pinned")
+
+    def test_seed_style_activation_preserves_existing_lesson_choice(self):
+        selected = self.register(
+            asset_id="selected", content_hash="2" * 64, slot="hero"
+        )
+        builtin = self.register(
+            asset_id="builtin", content_hash="3" * 64, slot="hero"
+        )
+        activate_visual_asset(
+            self.db,
+            lesson_slug="source-lesson",
+            slot="hero",
+            asset_id=selected.id,
+        )
+        self.db.flush()
+        activate_visual_asset(
+            self.db,
+            lesson_slug="source-lesson",
+            slot="hero",
+            asset_id=builtin.id,
+            only_if_missing=True,
+        )
+        self.db.commit()
+
+        active = get_active_visual_asset(
+            self.db, lesson_slug="source-lesson", slot="hero"
+        )
+        self.assertEqual(active.id, selected.id)

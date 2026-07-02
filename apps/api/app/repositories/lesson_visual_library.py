@@ -80,6 +80,7 @@ def activate_visual_asset(
     lesson_slug: str,
     slot: str,
     asset_id: str,
+    only_if_missing: bool = False,
 ) -> None:
     active = db.scalar(
         select(LessonVisualActiveModel).where(
@@ -99,8 +100,41 @@ def activate_visual_asset(
             )
         )
     else:
+        if only_if_missing:
+            return
         active.asset_id = asset_id
         active.updated_at = now
+    sync_following_visual_placements(
+        db,
+        lesson_slug=lesson_slug,
+        slot=slot,
+        asset_id=asset_id,
+        updated_at=now,
+    )
+
+
+def sync_following_visual_placements(
+    db: Session,
+    *,
+    lesson_slug: str,
+    slot: str,
+    asset_id: str,
+    updated_at: Optional[datetime] = None,
+) -> int:
+    placements = list(
+        db.scalars(
+            select(VisualPlacementModel).where(
+                VisualPlacementModel.mode == "follow_lesson",
+                VisualPlacementModel.source_lesson_slug == lesson_slug,
+                VisualPlacementModel.source_slot == slot,
+            )
+        ).all()
+    )
+    now = updated_at or datetime.now(timezone.utc)
+    for placement in placements:
+        placement.asset_id = asset_id
+        placement.updated_at = now
+    return len(placements)
 
 
 def list_visual_assets(db: Session, *, slot: str) -> list[LessonVisualAssetModel]:
@@ -151,6 +185,9 @@ def assign_visual_placement(
     owner_key: str,
     slot: str,
     asset_id: str,
+    mode: str = "follow_lesson",
+    source_lesson_slug: Optional[str] = None,
+    source_slot: Optional[str] = None,
 ) -> None:
     placement = db.scalar(
         select(VisualPlacementModel).where(
@@ -167,12 +204,20 @@ def assign_visual_placement(
                 owner_type=owner_type,
                 owner_key=owner_key,
                 slot=slot,
+                mode=mode,
+                source_lesson_slug=source_lesson_slug,
+                source_slot=source_slot,
                 asset_id=asset_id,
                 updated_at=now,
             )
         )
     else:
+        if placement.mode == "pinned" and mode == "follow_lesson":
+            return
         placement.asset_id = asset_id
+        placement.mode = mode
+        placement.source_lesson_slug = source_lesson_slug
+        placement.source_slot = source_slot
         placement.updated_at = now
 
 
