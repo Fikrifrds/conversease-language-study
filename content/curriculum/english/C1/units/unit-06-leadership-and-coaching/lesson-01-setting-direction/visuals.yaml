@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-leadership-coaching/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-leadership-coaching/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam sesi coaching profesional untuk konteks Setting Direction di Indonesia.
   caption: 'Konteks percakapan nyata: Setting Direction.'
 cards:
-- src: /images/lesson-visual-library/english-leadership-coaching/card-1.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-1.webp
   width: 1254
   height: 1254
   label: The direction I'd like to set is stabilizing the billing flow first.
   alt: Cuplikan visual english leadership coaching untuk frasa The direction I'd like to set is stabilizing
     the billing flow first..
-- src: /images/lesson-visual-library/english-leadership-coaching/card-2.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-2.webp
   width: 1254
   height: 1254
   label: Success looks like fewer incidents and faster completion rates.
   alt: Cuplikan visual english leadership coaching untuk frasa Success looks like fewer incidents and
     faster completion rates..
-- src: /images/lesson-visual-library/english-leadership-coaching/card-3.png
+- src: /images/lesson-visual-library/english-leadership-coaching/card-3.webp
   width: 1254
   height: 1254
   label: I'd like you to own the rollout plan.

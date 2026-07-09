@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/health-male/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/health-male/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Invitation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Invitation Mission.'
 cards:
-- src: /images/lesson-visual-library/health-male/card-1.png
+- src: /images/lesson-visual-library/health-male/card-1.webp
   width: 1254
   height: 1254
   label: هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟
   alt: Cuplikan visual health male untuk frasa هَلْ تُرِيدُ أَنْ تَدْرُسَ مَعِي؟.
-- src: /images/lesson-visual-library/health-male/card-2.png
+- src: /images/lesson-visual-library/health-male/card-2.webp
   width: 1254
   height: 1254
   label: لِأَنَّ الِاخْتِبَارَ قَرِيبٌ.
   alt: Cuplikan visual health male untuk frasa لِأَنَّ الِاخْتِبَارَ قَرِيبٌ..
-- src: /images/lesson-visual-library/health-male/card-3.png
+- src: /images/lesson-visual-library/health-male/card-3.webp
   width: 1254
   height: 1254
   label: هَلْ يُمْكِنُ أَنْ نُغَيِّرَ الْمَوْعِدَ؟

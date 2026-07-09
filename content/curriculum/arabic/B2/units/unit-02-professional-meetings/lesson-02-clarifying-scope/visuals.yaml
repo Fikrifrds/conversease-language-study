@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/workplace-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Clarifying Scope di Indonesia.
   caption: 'Konteks percakapan nyata: Clarifying Scope.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.webp
   width: 1254
   height: 1254
   label: لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا.
   alt: Cuplikan visual workplace female untuk frasa لَيْسَ النِّطَاقُ وَاضِحًا تَمَامًا..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+- src: /images/lesson-visual-library/workplace-female/card-2.webp
   width: 1254
   height: 1254
   label: نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ.
   alt: Cuplikan visual workplace female untuk frasa نُدْخِلُ الصَّفْحَةَ الرَّئِيسِيَّةَ وَنُؤَجِّلُ التَّقَارِيرَ..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+- src: /images/lesson-visual-library/workplace-female/card-3.webp
   width: 1254
   height: 1254
   label: هَذَا يُبْقِي الْمَوْعِدَ وَاقِعِيًّا وَيُقَلِّلُ الْمَخَاطِرَ.

@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-client-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-client-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Handling Objections di Indonesia.
   caption: 'Konteks percakapan nyata: Handling Objections.'
 cards:
-- src: /images/lesson-visual-library/english-client-meeting/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.webp
   width: 1254
   height: 1254
   label: I understand the concern.
   alt: Cuplikan visual english client meeting untuk frasa I understand the concern..
-- src: /images/lesson-visual-library/english-client-meeting/card-2.png
+- src: /images/lesson-visual-library/english-client-meeting/card-2.webp
   width: 1254
   height: 1254
   label: What part feels risky to you?
   alt: Cuplikan visual english client meeting untuk frasa What part feels risky to you?.
-- src: /images/lesson-visual-library/english-client-meeting/card-3.png
+- src: /images/lesson-visual-library/english-client-meeting/card-3.webp
   width: 1254
   height: 1254
   label: Would it help if we limit reviews to high-risk changes only?

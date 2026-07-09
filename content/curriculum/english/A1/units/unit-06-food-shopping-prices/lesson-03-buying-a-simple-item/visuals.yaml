@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-cafe-order/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-cafe-order/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan dalam transaksi di kafe untuk konteks Buying a Simple Item di Indonesia.
   caption: 'Konteks percakapan nyata: Buying a Simple Item.'
 cards:
-- src: /images/lesson-visual-library/english-cafe-order/card-1.png
+- src: /images/lesson-visual-library/english-cafe-order/card-1.webp
   width: 1254
   height: 1254
   label: Can I have this pen?
   alt: Cuplikan visual english cafe order untuk frasa Can I have this pen?.
-- src: /images/lesson-visual-library/english-cafe-order/card-2.png
+- src: /images/lesson-visual-library/english-cafe-order/card-2.webp
   width: 1254
   height: 1254
   label: How much is it?
   alt: Cuplikan visual english cafe order untuk frasa How much is it?.
-- src: /images/lesson-visual-library/english-cafe-order/card-3.png
+- src: /images/lesson-visual-library/english-cafe-order/card-3.webp
   width: 1254
   height: 1254
   label: Here you go.

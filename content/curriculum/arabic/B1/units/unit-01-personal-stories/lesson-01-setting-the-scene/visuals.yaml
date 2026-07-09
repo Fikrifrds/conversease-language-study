@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/travel-male/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Setting the Scene di Indonesia.
   caption: 'Konteks percakapan nyata: Setting the Scene.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.webp
   width: 1254
   height: 1254
   label: فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ.
   alt: Cuplikan visual travel male untuk frasa فِي الْأُسْبُوعِ الْمَاضِي، كُنْتُ فِي الْمَكْتَبَةِ..
-- src: /images/lesson-visual-library/travel-male/card-2.png
+- src: /images/lesson-visual-library/travel-male/card-2.webp
   width: 1254
   height: 1254
   label: كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ.
   alt: Cuplikan visual travel male untuk frasa كُنْتُ مَعَ صَدِيقِي فِي ذَلِكَ الْوَقْتِ..
-- src: /images/lesson-visual-library/travel-male/card-3.png
+- src: /images/lesson-visual-library/travel-male/card-3.webp
   width: 1254
   height: 1254
   label: كَانَ الْمَكَانُ هَادِئًا وَمُنَاسِبًا.

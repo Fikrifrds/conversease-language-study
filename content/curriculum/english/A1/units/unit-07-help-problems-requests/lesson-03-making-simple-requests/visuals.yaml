@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-online-learning/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-online-learning/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan belajar bersama dengan laptop untuk konteks Making Simple Requests di Indonesia.
   caption: 'Konteks percakapan nyata: Making Simple Requests.'
 cards:
-- src: /images/lesson-visual-library/english-online-learning/card-1.png
+- src: /images/lesson-visual-library/english-online-learning/card-1.webp
   width: 1254
   height: 1254
   label: Can you send me the link, please?
   alt: Cuplikan visual english online learning untuk frasa Can you send me the link, please?.
-- src: /images/lesson-visual-library/english-online-learning/card-2.png
+- src: /images/lesson-visual-library/english-online-learning/card-2.webp
   width: 1254
   height: 1254
   label: Yes, of course.
   alt: Cuplikan visual english online learning untuk frasa Yes, of course..
-- src: /images/lesson-visual-library/english-online-learning/card-3.png
+- src: /images/lesson-visual-library/english-online-learning/card-3.webp
   width: 1254
   height: 1254
   label: Can you wait a minute?

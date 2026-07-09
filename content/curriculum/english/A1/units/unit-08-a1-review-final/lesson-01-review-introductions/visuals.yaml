@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Introductions di Indonesia.
   caption: 'Konteks percakapan nyata: Review Introductions.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: My name is ...
   alt: Cuplikan visual english test interview untuk frasa My name is ....
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: Nice to meet you too.
   alt: Cuplikan visual english test interview untuk frasa Nice to meet you too..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: I'm from Indonesia.

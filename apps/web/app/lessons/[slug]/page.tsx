@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AdminRegenerableLessonImage } from "@/components/admin-regenerable-lesson-image";
 import { AppShell } from "@/components/app-shell";
 import { LessonGatedBody } from "@/components/lesson-gated-body";
+import { LessonPreviewBody } from "@/components/lesson-preview-body";
 import { LessonProgressPanel } from "@/components/lesson-progress-panel";
 import { StudyDayMarker } from "@/components/study-day-marker";
 import { TrackGuard } from "@/components/track-guard";
@@ -37,10 +38,26 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     return { title: lesson.title, robots: { index: false, follow: false } };
   }
 
+  const description = lesson.conversationGoal;
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://conversease.com";
+
   return {
-    title: lesson.title,
-    description: lesson.conversationGoal,
-    alternates: { canonical: `/lessons/${lesson.slug}` }
+    title: `${lesson.title} | Conversease`,
+    description,
+    alternates: { canonical: `/lessons/${lesson.slug}` },
+    openGraph: {
+      title: `${lesson.title} | Conversease`,
+      description,
+      url: `${siteUrl}/lessons/${lesson.slug}`,
+      siteName: "Conversease",
+      type: "website",
+      images: lesson.visuals?.hero?.src ? [{ url: lesson.visuals.hero.src, width: 1200, height: 676 }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${lesson.title} | Conversease`,
+      description,
+    },
   };
 }
 
@@ -57,7 +74,7 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
   );
 
   return (
-    <AppShell requireAuth>
+    <AppShell>
       <TrackGuard language={lesson.language}>
       <StudyDayMarker />
       <section className="mx-auto max-w-7xl px-4 pb-8 pt-8 md:pb-0 sm:px-6 lg:px-8">
@@ -112,6 +129,43 @@ export default function LessonPage({ params }: { params: { slug: string } }) {
               </section>
             ) : null}
 
+            {/* JSON-LD Structured Data */}
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@type": "LearningResource",
+                  "name": lesson.title,
+                  "description": lesson.conversationGoal,
+                  "educationalLevel": lesson.unit?.includes("A1") ? "Beginner" : lesson.unit?.includes("A2") ? "Elementary" : "Intermediate",
+                  "learningResourceType": "Lesson",
+                  "inLanguage": "en",
+                  "teaches": lesson.conversationGoal,
+                  "provider": {
+                    "@type": "Organization",
+                    "name": "Conversease",
+                    "url": "https://conversease.com"
+                  },
+                  "isPartOf": {
+                    "@type": "Course",
+                    "name": `English ${lesson.unit}`,
+                    "provider": {
+                      "@type": "Organization",
+                      "name": "Conversease"
+                    }
+                  }
+                })
+              }}
+            />
+
+            {/* Public preview for SEO, gated full content for authenticated users */}
+            <LessonPreviewBody
+              slug={lesson.slug}
+              title={lesson.title}
+              conversationGoal={lesson.conversationGoal}
+              language={lesson.language}
+            />
             <LessonGatedBody slug={lesson.slug} />
           </article>
 

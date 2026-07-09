@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-workplace-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-workplace-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki berdiskusi di tempat kerja untuk konteks Summarizing Decisions di Indonesia.
   caption: 'Konteks percakapan nyata: Summarizing Decisions.'
 cards:
-- src: /images/lesson-visual-library/english-workplace-meeting/card-1.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-1.webp
   width: 1254
   height: 1254
   label: To summarize, we agreed to keep scope limited to the core feature.
   alt: Cuplikan visual english workplace meeting untuk frasa To summarize, we agreed to keep scope limited
     to the core feature..
-- src: /images/lesson-visual-library/english-workplace-meeting/card-2.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-2.webp
   width: 1254
   height: 1254
   label: 'Action items are: I''ll update the tickets, and you''ll confirm the design handoff.'
   alt: 'Cuplikan visual english workplace meeting untuk frasa Action items are: I''ll update the tickets,
     and you''ll confirm the design handoff..'
-- src: /images/lesson-visual-library/english-workplace-meeting/card-3.png
+- src: /images/lesson-visual-library/english-workplace-meeting/card-3.webp
   width: 1254
   height: 1254
   label: Ilham will review QA coverage.

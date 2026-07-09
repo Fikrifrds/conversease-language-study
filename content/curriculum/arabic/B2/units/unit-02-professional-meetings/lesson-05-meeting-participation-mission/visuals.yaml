@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/classroom-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Meeting Participation Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Meeting Participation Mission.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/classroom-female/card-1.webp
   width: 1254
   height: 1254
   label: سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ أَسْأَلُ عَنِ النِّطَاقِ.
   alt: Cuplikan visual classroom female untuk frasa سَأَفْتَحُ الْمَوْضُوعَ بِجُمْلَةٍ قَصِيرَةٍ ثُمَّ
     أَسْأَلُ عَنِ النِّطَاقِ..
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+- src: /images/lesson-visual-library/classroom-female/card-2.webp
   width: 1254
   height: 1254
   label: سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا مُحَدَّدًا.
   alt: Cuplikan visual classroom female untuk frasa سَأَشْكُرُ صَاحِبَ الْمُلَاحَظَةِ وَأَطْلُبُ مِثَالًا
     مُحَدَّدًا..
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+- src: /images/lesson-visual-library/classroom-female/card-3.webp
   width: 1254
   height: 1254
   label: سَأُقَارِنُ الْخِيَارَيْنِ ثُمَّ أَقْتَرِحُ خُطْوَةً وَاحِدَةً.

@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Information and Clients di Indonesia.
   caption: 'Konteks percakapan nyata: Review Information and Clients.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: Based on the source, it's a partial snapshot.
   alt: Cuplikan visual english test interview untuk frasa Based on the source, it's a partial snapshot..
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: We should verify it with our support data.
   alt: Cuplikan visual english test interview untuk frasa We should verify it with our support data..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: I understand the concern.

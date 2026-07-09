@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-debate/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-debate/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Information Discussion Mission di
     Indonesia.
   caption: 'Konteks percakapan nyata: Information Discussion Mission.'
 cards:
-- src: /images/lesson-visual-library/english-debate/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.webp
   width: 1254
   height: 1254
   label: The article is about ... The main point is ...
   alt: Cuplikan visual english debate untuk frasa The article is about ... The main point is ....
-- src: /images/lesson-visual-library/english-debate/card-2.png
+- src: /images/lesson-visual-library/english-debate/card-2.webp
   width: 1254
   height: 1254
   label: I'm not sure it's reliable because it doesn't cite data.
   alt: Cuplikan visual english debate untuk frasa I'm not sure it's reliable because it doesn't cite data..
-- src: /images/lesson-visual-library/english-debate/card-3.png
+- src: /images/lesson-visual-library/english-debate/card-3.webp
   width: 1254
   height: 1254
   label: From my perspective, ... The reason is ...

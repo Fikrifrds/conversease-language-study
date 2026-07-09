@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Leadership and Listening di Indonesia.
   caption: 'Konteks percakapan nyata: Review Leadership and Listening.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: What I'm hearing is there's some concern under the surface.
   alt: Cuplikan visual english test interview untuk frasa What I'm hearing is there's some concern under
     the surface..
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: When you say X, do you mean Y or Z?
   alt: Cuplikan visual english test interview untuk frasa When you say X, do you mean Y or Z?.
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: What would success look like in the next two weeks?

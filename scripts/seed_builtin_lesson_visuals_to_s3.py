@@ -188,7 +188,7 @@ def seed(*, execute: bool) -> dict:
 
     fallback_by_slot = {target["slot"]: target["slug"] for target in targets}
     for source_path in sorted(
-        (PUBLIC_ROOT / "images" / "lesson-visual-library").glob("*/*.png")
+        (PUBLIC_ROOT / "images" / "lesson-visual-library").glob("*/*.webp")
     ):
         slot = source_path.stem
         if slot not in fallback_by_slot:

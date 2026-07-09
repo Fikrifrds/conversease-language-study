@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks A2 Final Conversation di Indonesia.
   caption: 'Konteks percakapan nyata: A2 Final Conversation.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: Would you recommend it?
   alt: Cuplikan visual english test interview untuk frasa Would you recommend it?.
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: Yes, because the coffee is good and it is quiet.
   alt: Cuplikan visual english test interview untuk frasa Yes, because the coffee is good and it is quiet..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: Do you want to go there this weekend?

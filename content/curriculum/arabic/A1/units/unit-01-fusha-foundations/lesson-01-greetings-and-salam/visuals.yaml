@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/classroom-male/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/classroom-male/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Formal Greetings di Indonesia.
   caption: 'Konteks percakapan nyata: Formal Greetings.'
 cards:
-- src: /images/lesson-visual-library/classroom-male/card-1.png
+- src: /images/lesson-visual-library/classroom-male/card-1.webp
   width: 1254
   height: 1254
   label: مرحبًا
   alt: Cuplikan visual classroom male untuk frasa مرحبًا.
-- src: /images/lesson-visual-library/classroom-male/card-2.png
+- src: /images/lesson-visual-library/classroom-male/card-2.webp
   width: 1254
   height: 1254
   label: أهلًا وسهلًا
   alt: Cuplikan visual classroom male untuk frasa أهلًا وسهلًا.
-- src: /images/lesson-visual-library/classroom-male/card-3.png
+- src: /images/lesson-visual-library/classroom-male/card-3.webp
   width: 1254
   height: 1254
   label: كيف حالك؟

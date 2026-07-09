@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-learning-coaching/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-learning-coaching/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Talking About Goals di Indonesia.
   caption: 'Konteks percakapan nyata: Talking About Goals.'
 cards:
-- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.webp
   width: 1254
   height: 1254
   label: My goal is to speak more confidently.
   alt: Cuplikan visual english learning coaching untuk frasa My goal is to speak more confidently..
-- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.webp
   width: 1254
   height: 1254
   label: By the end of this month.
   alt: Cuplikan visual english learning coaching untuk frasa By the end of this month..
-- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.webp
   width: 1254
   height: 1254
   label: Because I want to join meetings without feeling nervous.

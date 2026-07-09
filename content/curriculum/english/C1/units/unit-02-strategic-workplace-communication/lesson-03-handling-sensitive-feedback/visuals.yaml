@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-client-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-client-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Handling Sensitive Feedback di Indonesia.
   caption: 'Konteks percakapan nyata: Handling Sensitive Feedback.'
 cards:
-- src: /images/lesson-visual-library/english-client-meeting/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.webp
   width: 1254
   height: 1254
   label: I wanted to flag one point about the messaging.
   alt: Cuplikan visual english client meeting untuk frasa I wanted to flag one point about the messaging..
-- src: /images/lesson-visual-library/english-client-meeting/card-2.png
+- src: /images/lesson-visual-library/english-client-meeting/card-2.webp
   width: 1254
   height: 1254
   label: The impact is that some teams interpreted it as a hard deadline.
   alt: Cuplikan visual english client meeting untuk frasa The impact is that some teams interpreted it
     as a hard deadline..
-- src: /images/lesson-visual-library/english-client-meeting/card-3.png
+- src: /images/lesson-visual-library/english-client-meeting/card-3.webp
   width: 1254
   height: 1254
   label: I appreciate the intent, and I think we can make it clearer.

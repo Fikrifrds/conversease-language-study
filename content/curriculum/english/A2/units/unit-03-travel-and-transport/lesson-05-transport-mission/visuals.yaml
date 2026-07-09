@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-transport/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-transport/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi petugas dan penumpang laki-laki di stasiun untuk konteks Transport Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Transport Mission.'
 cards:
-- src: /images/lesson-visual-library/english-transport/card-1.png
+- src: /images/lesson-visual-library/english-transport/card-1.webp
   width: 1254
   height: 1254
   label: I'd like one ticket to Bandung, please.
   alt: Cuplikan visual english transport untuk frasa I'd like one ticket to Bandung, please..
-- src: /images/lesson-visual-library/english-transport/card-2.png
+- src: /images/lesson-visual-library/english-transport/card-2.webp
   width: 1254
   height: 1254
   label: It leaves at 6:30 pm.
   alt: Cuplikan visual english transport untuk frasa It leaves at 6:30 pm..
-- src: /images/lesson-visual-library/english-transport/card-3.png
+- src: /images/lesson-visual-library/english-transport/card-3.webp
   width: 1254
   height: 1254
   label: from platform 2

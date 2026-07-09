@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/service-male/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/service-male/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Arabic Introduction Mission di Indonesia.
   caption: 'Konteks percakapan nyata: Arabic Introduction Mission.'
 cards:
-- src: /images/lesson-visual-library/service-male/card-1.png
+- src: /images/lesson-visual-library/service-male/card-1.webp
   width: 1254
   height: 1254
   label: مرحبًا
   alt: Cuplikan visual service male untuk frasa مرحبًا.
-- src: /images/lesson-visual-library/service-male/card-2.png
+- src: /images/lesson-visual-library/service-male/card-2.webp
   width: 1254
   height: 1254
   label: اسمي ...
   alt: Cuplikan visual service male untuk frasa اسمي ....
-- src: /images/lesson-visual-library/service-male/card-3.png
+- src: /images/lesson-visual-library/service-male/card-3.webp
   width: 1254
   height: 1254
   label: أنا من إندونيسيا

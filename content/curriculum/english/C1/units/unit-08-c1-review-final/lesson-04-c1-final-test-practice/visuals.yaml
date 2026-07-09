@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks C1 Final Test Practice di Indonesia.
   caption: 'Konteks percakapan nyata: C1 Final Test Practice.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: 'Let me frame this: we need reliability and stakeholder confidence before scaling.'
   alt: 'Cuplikan visual english test interview untuk frasa Let me frame this: we need reliability and
     stakeholder confidence before scaling..'
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: On balance, I support the rollout, but only after we validate pilot metrics.
   alt: Cuplikan visual english test interview untuk frasa On balance, I support the rollout, but only
     after we validate pilot metrics..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: The decision is to run a two-week pilot.

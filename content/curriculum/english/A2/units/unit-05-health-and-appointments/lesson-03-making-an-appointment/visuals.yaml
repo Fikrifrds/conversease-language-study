@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-clinic/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-clinic/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi pasien dan tenaga kesehatan perempuan di klinik untuk konteks Making an Appointment di
     Indonesia.
   caption: 'Konteks percakapan nyata: Making an Appointment.'
 cards:
-- src: /images/lesson-visual-library/english-clinic/card-1.png
+- src: /images/lesson-visual-library/english-clinic/card-1.webp
   width: 1254
   height: 1254
   label: I'd like to make an appointment.
   alt: Cuplikan visual english clinic untuk frasa I'd like to make an appointment..
-- src: /images/lesson-visual-library/english-clinic/card-2.png
+- src: /images/lesson-visual-library/english-clinic/card-2.webp
   width: 1254
   height: 1254
   label: What day works for you?
   alt: Cuplikan visual english clinic untuk frasa What day works for you?.
-- src: /images/lesson-visual-library/english-clinic/card-3.png
+- src: /images/lesson-visual-library/english-clinic/card-3.webp
   width: 1254
   height: 1254
   label: Is tomorrow afternoon okay?

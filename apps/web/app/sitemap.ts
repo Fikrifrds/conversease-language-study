@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((course) => ({
       url: `${siteUrl}/courses/${course.slug}`,
       changeFrequency: "monthly" as const,
-      priority: 0.7
+      priority: 0.8
     }));
 
   const lessonEntries = lessonCatalog
@@ -28,7 +28,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     .map((lesson) => ({
       url: `${siteUrl}/lessons/${lesson.slug}`,
       changeFrequency: "monthly" as const,
-      priority: 0.6
+      priority: 0.9
     }));
 
   return [...staticEntries, ...courseEntries, ...lessonEntries];

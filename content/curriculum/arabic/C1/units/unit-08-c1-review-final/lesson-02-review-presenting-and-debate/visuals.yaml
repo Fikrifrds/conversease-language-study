@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/workplace-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Review Presenting and Debate di Indonesia.
   caption: 'Konteks percakapan nyata: Review Presenting and Debate.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.webp
   width: 1254
   height: 1254
   label: عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ.
   alt: Cuplikan visual workplace female untuk frasa عِنْدَ مُرَاجَعَةِ الْعَرْضِ وَالنِّقَاشِ، أُحَدِّدُ ادِّعَائِي ثُمَّ أَدْعَمُهُ بِدَلِيلٍ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+- src: /images/lesson-visual-library/workplace-female/card-2.webp
   width: 1254
   height: 1254
   label: أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا.
   alt: Cuplikan visual workplace female untuk frasa أَفْصِلُ بَيْنَ النُّقْطَةِ الرَّئِيسِيَّةِ وَالتَّفَاصِيلِ حَتَّى يَبْقَى الْعَرْضُ مُرَكَّزًا..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+- src: /images/lesson-visual-library/workplace-female/card-3.webp
   width: 1254
   height: 1254
   label: أَتَوَقَّعُ الِاعْتِرَاضَ، وَأُجِيبُ عَنْهُ بِهُدُوءٍ.

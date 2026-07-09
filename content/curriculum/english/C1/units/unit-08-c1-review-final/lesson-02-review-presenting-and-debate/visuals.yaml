@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Presenting and Debate di Indonesia.
   caption: 'Konteks percakapan nyata: Review Presenting and Debate.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: 'Let me frame this: the goal is reliability, not just speed.'
   alt: 'Cuplikan visual english test interview untuk frasa Let me frame this: the goal is reliability,
     not just speed..'
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: The core assumption is that incidents cost more than delay.
   alt: Cuplikan visual english test interview untuk frasa The core assumption is that incidents cost more
     than delay..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: If we accept speed as the priority, then we should time-box a pilot and limit scope.

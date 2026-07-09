@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-registration/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-registration/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan melakukan registrasi kursus untuk konteks Sharing Email Addresses di Indonesia.
   caption: 'Konteks percakapan nyata: Sharing Email Addresses.'
 cards:
-- src: /images/lesson-visual-library/english-registration/card-1.png
+- src: /images/lesson-visual-library/english-registration/card-1.webp
   width: 1254
   height: 1254
   label: What is your email address?
   alt: Cuplikan visual english registration untuk frasa What is your email address?.
-- src: /images/lesson-visual-library/english-registration/card-2.png
+- src: /images/lesson-visual-library/english-registration/card-2.webp
   width: 1254
   height: 1254
   label: It's ben dot rama at example dot com.
   alt: Cuplikan visual english registration untuk frasa It's ben dot rama at example dot com..
-- src: /images/lesson-visual-library/english-registration/card-3.png
+- src: /images/lesson-visual-library/english-registration/card-3.webp
   width: 1254
   height: 1254
   label: Can you spell that, please?

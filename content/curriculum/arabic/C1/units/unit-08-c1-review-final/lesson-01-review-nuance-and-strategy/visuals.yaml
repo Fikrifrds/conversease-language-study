@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/classroom-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/classroom-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Review Nuance and Strategy di Indonesia.
   caption: 'Konteks percakapan nyata: Review Nuance and Strategy.'
 cards:
-- src: /images/lesson-visual-library/classroom-female/card-1.png
+- src: /images/lesson-visual-library/classroom-female/card-1.webp
   width: 1254
   height: 1254
   label: عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ.
   alt: Cuplikan visual classroom female untuk frasa عِنْدَ مُرَاجَعَةِ الدِّقَّةِ وَالِاسْتِرَاتِيجِيَّةِ، أُوَازِنُ بَيْنَ الصَّرَاحَةِ وَاللُّبَاقَةِ..
-- src: /images/lesson-visual-library/classroom-female/card-2.png
+- src: /images/lesson-visual-library/classroom-female/card-2.webp
   width: 1254
   height: 1254
   label: فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ.
   alt: Cuplikan visual classroom female untuk frasa فِي الْحِوَارِ الْمِهَنِيِّ، أَرْبِطُ الرَّأْيَ بِالسِّيَاقِ وَالْمَخَاطِرِ الْمُحْتَمَلَةِ..
-- src: /images/lesson-visual-library/classroom-female/card-3.png
+- src: /images/lesson-visual-library/classroom-female/card-3.webp
   width: 1254
   height: 1254
   label: أُقَدِّمُ الْفِكْرَةَ بِتَسَلْسُلٍ يُسَهِّلُ عَلَى الطَّرَفِ الآخَرِ مُتَابَعَتَهَا.

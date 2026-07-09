@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/workplace-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Giving a Short Update di Indonesia.
   caption: 'Konteks percakapan nyata: Giving a Short Update.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.webp
   width: 1254
   height: 1254
   label: أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ.
   alt: Cuplikan visual workplace female untuk frasa أَنْجَزْتُ الْجُزْءَ الْأَوَّلَ مِنَ الْمَهَمَّةِ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+- src: /images/lesson-visual-library/workplace-female/card-2.webp
   width: 1254
   height: 1254
   label: مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ.
   alt: Cuplikan visual workplace female untuk frasa مَا زِلْتُ أَعْمَلُ عَلَى التَّفَاصِيلِ..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+- src: /images/lesson-visual-library/workplace-female/card-3.webp
   width: 1254
   height: 1254
   label: لَا تُوجَدُ مُشْكِلَةٌ كَبِيرَةٌ حَتَّى الْآنَ.

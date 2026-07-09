@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/workplace-female/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/workplace-female/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless perempuan untuk konteks Opening a Meeting Point di Indonesia.
   caption: 'Konteks percakapan nyata: Opening a Meeting Point.'
 cards:
-- src: /images/lesson-visual-library/workplace-female/card-1.png
+- src: /images/lesson-visual-library/workplace-female/card-1.webp
   width: 1254
   height: 1254
   label: أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ الْمَشْرُوعِ.
   alt: Cuplikan visual workplace female untuk frasa أَوَدُّ أَنْ أَفْتَحَ النِّقَاشَ حَوْلَ مَوْعِدِ تَسْلِيمِ
     الْمَشْرُوعِ..
-- src: /images/lesson-visual-library/workplace-female/card-2.png
+- src: /images/lesson-visual-library/workplace-female/card-2.webp
   width: 1254
   height: 1254
   label: لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ نِهَايَةِ الْيَوْمِ.
   alt: Cuplikan visual workplace female untuk frasa لِأَنَّ الْفَرِيقَ يَحْتَاجُ إِلَى قَرَارٍ قَبْلَ
     نِهَايَةِ الْيَوْمِ..
-- src: /images/lesson-visual-library/workplace-female/card-3.png
+- src: /images/lesson-visual-library/workplace-female/card-3.webp
   width: 1254
   height: 1254
   label: نُحَدِّدُ الْمَوْعِدَ النِّهَائِيَّ وَمَنْ سَيُرَاجِعُ النُّسْخَةَ الأَخِيرَةَ.

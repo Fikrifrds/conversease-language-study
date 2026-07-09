@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-tech-help/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-tech-help/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki menyelesaikan masalah teknis untuk konteks Asking for Help di Indonesia.
   caption: 'Konteks percakapan nyata: Asking for Help.'
 cards:
-- src: /images/lesson-visual-library/english-tech-help/card-1.png
+- src: /images/lesson-visual-library/english-tech-help/card-1.webp
   width: 1254
   height: 1254
   label: Can you help me?
   alt: Cuplikan visual english tech help untuk frasa Can you help me?.
-- src: /images/lesson-visual-library/english-tech-help/card-2.png
+- src: /images/lesson-visual-library/english-tech-help/card-2.webp
   width: 1254
   height: 1254
   label: What is the problem?
   alt: Cuplikan visual english tech help untuk frasa What is the problem?.
-- src: /images/lesson-visual-library/english-tech-help/card-3.png
+- src: /images/lesson-visual-library/english-tech-help/card-3.webp
   width: 1254
   height: 1254
   label: I can't open this file.

@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-learning-coaching/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-learning-coaching/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Responding to Advice di Indonesia.
   caption: 'Konteks percakapan nyata: Responding to Advice.'
 cards:
-- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.webp
   width: 1254
   height: 1254
   label: Maybe you should set a small daily goal.
   alt: Cuplikan visual english learning coaching untuk frasa Maybe you should set a small daily goal..
-- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.webp
   width: 1254
   height: 1254
   label: That sounds good.
   alt: Cuplikan visual english learning coaching untuk frasa That sounds good..
-- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.webp
   width: 1254
   height: 1254
   label: You're right.

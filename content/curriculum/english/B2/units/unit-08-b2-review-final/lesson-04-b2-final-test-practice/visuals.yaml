@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks B2 Final Test Practice di Indonesia.
   caption: 'Konteks percakapan nyata: B2 Final Test Practice.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: My position is that we should run a two-week pilot before a full rollout.
   alt: Cuplikan visual english test interview untuk frasa My position is that we should run a two-week
     pilot before a full rollout..
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: Based on the data, drop-offs increased after the redesign.
   alt: Cuplikan visual english test interview untuk frasa Based on the data, drop-offs increased after
     the redesign..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: The trade-off is speed versus long-term reliability.

@@ -74,7 +74,7 @@ export function LessonGatedBody({ slug }: { slug: string }) {
         if (ignore) {
           return;
         }
-        if (error instanceof ApiRequestError && error.status === 403) {
+        if (error instanceof ApiRequestError && (error.status === 403 || error.status === 401)) {
           setState({ status: "locked" });
         } else {
           setState({ status: "error" });

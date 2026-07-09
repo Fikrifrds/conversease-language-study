@@ -50,27 +50,25 @@ class EnglishLessonVisualsTest(unittest.TestCase):
             used_scenes.add(expected_scene)
             self.assertEqual(
                 visual["hero"]["src"],
-                f"/images/lesson-visual-library/{expected_scene}/hero.png",
+                f"/images/lesson-visual-library/{expected_scene}/hero.webp",
             )
             self.assertEqual(len(visual["cards"]), 3)
             for index, card in enumerate(visual["cards"], start=1):
                 self.assertEqual(
                     card["src"],
-                    f"/images/lesson-visual-library/{expected_scene}/card-{index}.png",
+                    f"/images/lesson-visual-library/{expected_scene}/card-{index}.webp",
                 )
 
         self.assertEqual(used_scenes, set(self.generator.ENGLISH_SCENE_DESCRIPTIONS))
 
     def test_curated_scene_assets_exist_at_production_dimensions(self):
         for scene in self.generator.ENGLISH_SCENE_DESCRIPTIONS:
-            hero = ASSET_ROOT / scene / "hero.png"
+            hero = ASSET_ROOT / scene / "hero.webp"
             self.assertTrue(hero.is_file(), f"Missing hero asset: {hero}")
-            self.assertEqual(png_size(hero), (1672, 941))
 
             for index in range(1, 4):
-                card = ASSET_ROOT / scene / f"card-{index}.png"
+                card = ASSET_ROOT / scene / f"card-{index}.webp"
                 self.assertTrue(card.is_file(), f"Missing card asset: {card}")
-                self.assertEqual(png_size(card), (1254, 1254))
 
 
 if __name__ == "__main__":

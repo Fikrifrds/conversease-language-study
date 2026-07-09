@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-test-interview/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-test-interview/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki dalam tes percakapan untuk konteks Review Problems and Travel di Indonesia.
   caption: 'Konteks percakapan nyata: Review Problems and Travel.'
 cards:
-- src: /images/lesson-visual-library/english-test-interview/card-1.png
+- src: /images/lesson-visual-library/english-test-interview/card-1.webp
   width: 1254
   height: 1254
   label: There's a problem with the meeting link.
   alt: Cuplikan visual english test interview untuk frasa There's a problem with the meeting link..
-- src: /images/lesson-visual-library/english-test-interview/card-2.png
+- src: /images/lesson-visual-library/english-test-interview/card-2.webp
   width: 1254
   height: 1254
   label: People can't join, so we need a new link.
   alt: Cuplikan visual english test interview untuk frasa People can't join, so we need a new link..
-- src: /images/lesson-visual-library/english-test-interview/card-3.png
+- src: /images/lesson-visual-library/english-test-interview/card-3.webp
   width: 1254
   height: 1254
   label: I'm running a bit late.

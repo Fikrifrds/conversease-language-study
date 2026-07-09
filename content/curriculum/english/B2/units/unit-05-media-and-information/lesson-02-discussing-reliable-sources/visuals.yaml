@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-debate/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-debate/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Discussing Reliable Sources di Indonesia.
   caption: 'Konteks percakapan nyata: Discussing Reliable Sources.'
 cards:
-- src: /images/lesson-visual-library/english-debate/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.webp
   width: 1254
   height: 1254
   label: I'm not sure that source is reliable.
   alt: Cuplikan visual english debate untuk frasa I'm not sure that source is reliable..
-- src: /images/lesson-visual-library/english-debate/card-2.png
+- src: /images/lesson-visual-library/english-debate/card-2.webp
   width: 1254
   height: 1254
   label: Because it doesn't cite data or mention the author.
   alt: Cuplikan visual english debate untuk frasa Because it doesn't cite data or mention the author..
-- src: /images/lesson-visual-library/english-debate/card-3.png
+- src: /images/lesson-visual-library/english-debate/card-3.webp
   width: 1254
   height: 1254
   label: I'd check official reports.

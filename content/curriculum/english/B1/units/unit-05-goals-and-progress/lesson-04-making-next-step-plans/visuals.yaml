@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-learning-coaching/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-learning-coaching/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua perempuan dalam sesi coaching belajar untuk konteks Making Next-step Plans di Indonesia.
   caption: 'Konteks percakapan nyata: Making Next-step Plans.'
 cards:
-- src: /images/lesson-visual-library/english-learning-coaching/card-1.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-1.webp
   width: 1254
   height: 1254
   label: My next step is to practice with Conversation Coach.
   alt: Cuplikan visual english learning coaching untuk frasa My next step is to practice with Conversation
     Coach..
-- src: /images/lesson-visual-library/english-learning-coaching/card-2.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-2.webp
   width: 1254
   height: 1254
   label: I'll do it three times this week.
   alt: Cuplikan visual english learning coaching untuk frasa I'll do it three times this week..
-- src: /images/lesson-visual-library/english-learning-coaching/card-3.png
+- src: /images/lesson-visual-library/english-learning-coaching/card-3.webp
   width: 1254
   height: 1254
   label: I'm going to keep it simple.

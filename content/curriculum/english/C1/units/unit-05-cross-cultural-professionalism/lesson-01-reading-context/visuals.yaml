@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-client-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-client-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Reading Context di Indonesia.
   caption: 'Konteks percakapan nyata: Reading Context.'
 cards:
-- src: /images/lesson-visual-library/english-client-meeting/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.webp
   width: 1254
   height: 1254
   label: My sense is that they're signaling concern without saying no directly.
   alt: Cuplikan visual english client meeting untuk frasa My sense is that they're signaling concern without
     saying no directly..
-- src: /images/lesson-visual-library/english-client-meeting/card-2.png
+- src: /images/lesson-visual-library/english-client-meeting/card-2.webp
   width: 1254
   height: 1254
   label: Before we decide, can we clarify what their priority is—speed or risk reduction?
   alt: Cuplikan visual english client meeting untuk frasa Before we decide, can we clarify what their
     priority is—speed or risk reduction?.
-- src: /images/lesson-visual-library/english-client-meeting/card-3.png
+- src: /images/lesson-visual-library/english-client-meeting/card-3.webp
   width: 1254
   height: 1254
   label: It may be worth considering a phased plan.

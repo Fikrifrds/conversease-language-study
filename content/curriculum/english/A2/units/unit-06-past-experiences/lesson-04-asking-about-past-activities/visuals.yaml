@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-travel-story/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-travel-story/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi dua laki-laki berbagi cerita perjalanan untuk konteks Asking About Past Activities di
     Indonesia.
   caption: 'Konteks percakapan nyata: Asking About Past Activities.'
 cards:
-- src: /images/lesson-visual-library/english-travel-story/card-1.png
+- src: /images/lesson-visual-library/english-travel-story/card-1.webp
   width: 1254
   height: 1254
   label: What did you do yesterday evening?
   alt: Cuplikan visual english travel story untuk frasa What did you do yesterday evening?.
-- src: /images/lesson-visual-library/english-travel-story/card-2.png
+- src: /images/lesson-visual-library/english-travel-story/card-2.webp
   width: 1254
   height: 1254
   label: Did you cook at home?
   alt: Cuplikan visual english travel story untuk frasa Did you cook at home?.
-- src: /images/lesson-visual-library/english-travel-story/card-3.png
+- src: /images/lesson-visual-library/english-travel-story/card-3.webp
   width: 1254
   height: 1254
   label: Yes, I did.

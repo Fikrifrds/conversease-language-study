@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-debate/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-debate/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam diskusi terarah untuk konteks Summarizing an Article di Indonesia.
   caption: 'Konteks percakapan nyata: Summarizing an Article.'
 cards:
-- src: /images/lesson-visual-library/english-debate/card-1.png
+- src: /images/lesson-visual-library/english-debate/card-1.webp
   width: 1254
   height: 1254
   label: The article is about how remote work affects productivity.
   alt: Cuplikan visual english debate untuk frasa The article is about how remote work affects productivity..
-- src: /images/lesson-visual-library/english-debate/card-2.png
+- src: /images/lesson-visual-library/english-debate/card-2.webp
   width: 1254
   height: 1254
   label: The main point is productivity improves with clear rules.
   alt: Cuplikan visual english debate untuk frasa The main point is productivity improves with clear rules..
-- src: /images/lesson-visual-library/english-debate/card-3.png
+- src: /images/lesson-visual-library/english-debate/card-3.webp
   width: 1254
   height: 1254
   label: It mentions isolation as a downside.

@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-presentation/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-presentation/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi presenter dan peserta laki-laki di ruang presentasi untuk konteks Idea Presentation Mission
     di Indonesia.
   caption: 'Konteks percakapan nyata: Idea Presentation Mission.'
 cards:
-- src: /images/lesson-visual-library/english-presentation/card-1.png
+- src: /images/lesson-visual-library/english-presentation/card-1.webp
   width: 1254
   height: 1254
   label: Today I'd like to propose a shared onboarding checklist.
   alt: Cuplikan visual english presentation untuk frasa Today I'd like to propose a shared onboarding
     checklist..
-- src: /images/lesson-visual-library/english-presentation/card-2.png
+- src: /images/lesson-visual-library/english-presentation/card-2.webp
   width: 1254
   height: 1254
   label: First... Next... Finally...
   alt: Cuplikan visual english presentation untuk frasa First... Next... Finally....
-- src: /images/lesson-visual-library/english-presentation/card-3.png
+- src: /images/lesson-visual-library/english-presentation/card-3.webp
   width: 1254
   height: 1254
   label: The main benefit is ... Another benefit is ...

@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/travel-male/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/travel-male/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi cartoon faceless laki-laki untuk konteks Name and Origin di Indonesia.
   caption: 'Konteks percakapan nyata: Name and Origin.'
 cards:
-- src: /images/lesson-visual-library/travel-male/card-1.png
+- src: /images/lesson-visual-library/travel-male/card-1.webp
   width: 1254
   height: 1254
   label: ما اسمُكَ؟
   alt: Cuplikan visual travel male untuk frasa ما اسمُكَ؟.
-- src: /images/lesson-visual-library/travel-male/card-2.png
+- src: /images/lesson-visual-library/travel-male/card-2.webp
   width: 1254
   height: 1254
   label: اسمي ...
   alt: Cuplikan visual travel male untuk frasa اسمي ....
-- src: /images/lesson-visual-library/travel-male/card-3.png
+- src: /images/lesson-visual-library/travel-male/card-3.webp
   width: 1254
   height: 1254
   label: من أين أنتَ؟

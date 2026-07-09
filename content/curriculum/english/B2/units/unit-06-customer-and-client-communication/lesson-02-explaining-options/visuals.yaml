@@ -1,22 +1,22 @@
 hero:
-  src: /images/lesson-visual-library/english-client-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-client-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Explaining Options di Indonesia.
   caption: 'Konteks percakapan nyata: Explaining Options.'
 cards:
-- src: /images/lesson-visual-library/english-client-meeting/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.webp
   width: 1254
   height: 1254
   label: We have two options.
   alt: Cuplikan visual english client meeting untuk frasa We have two options..
-- src: /images/lesson-visual-library/english-client-meeting/card-2.png
+- src: /images/lesson-visual-library/english-client-meeting/card-2.webp
   width: 1254
   height: 1254
   label: Option A is a quick fix we can deliver this week.
   alt: Cuplikan visual english client meeting untuk frasa Option A is a quick fix we can deliver this
     week..
-- src: /images/lesson-visual-library/english-client-meeting/card-3.png
+- src: /images/lesson-visual-library/english-client-meeting/card-3.webp
   width: 1254
   height: 1254
   label: Option B is more robust, but it takes two more weeks.

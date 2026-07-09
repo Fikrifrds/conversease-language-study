@@ -1,21 +1,21 @@
 hero:
-  src: /images/lesson-visual-library/english-client-meeting/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-client-meeting/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki dalam pertemuan klien untuk konteks Confirming Next Steps di Indonesia.
   caption: 'Konteks percakapan nyata: Confirming Next Steps.'
 cards:
-- src: /images/lesson-visual-library/english-client-meeting/card-1.png
+- src: /images/lesson-visual-library/english-client-meeting/card-1.webp
   width: 1254
   height: 1254
   label: To confirm, we'll start with a two-week pilot.
   alt: Cuplikan visual english client meeting untuk frasa To confirm, we'll start with a two-week pilot..
-- src: /images/lesson-visual-library/english-client-meeting/card-2.png
+- src: /images/lesson-visual-library/english-client-meeting/card-2.webp
   width: 1254
   height: 1254
   label: 'Next steps are: I''ll send the draft plan today.'
   alt: 'Cuplikan visual english client meeting untuk frasa Next steps are: I''ll send the draft plan today..'
-- src: /images/lesson-visual-library/english-client-meeting/card-3.png
+- src: /images/lesson-visual-library/english-client-meeting/card-3.webp
   width: 1254
   height: 1254
   label: You'll review it by Friday.

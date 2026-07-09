@@ -1,23 +1,23 @@
 hero:
-  src: /images/lesson-visual-library/english-problem-solving/hero.png
-  width: 1672
-  height: 941
+  src: /images/lesson-visual-library/english-problem-solving/hero.webp
+  width: 1200
+  height: 676
   alt: Ilustrasi tiga laki-laki menyelesaikan masalah di ruang kerja untuk konteks Discussing Tradeoffs
     di Indonesia.
   caption: 'Konteks percakapan nyata: Discussing Tradeoffs.'
 cards:
-- src: /images/lesson-visual-library/english-problem-solving/card-1.png
+- src: /images/lesson-visual-library/english-problem-solving/card-1.webp
   width: 1254
   height: 1254
   label: The trade-off is speed versus long-term reliability.
   alt: Cuplikan visual english problem solving untuk frasa The trade-off is speed versus long-term reliability..
-- src: /images/lesson-visual-library/english-problem-solving/card-2.png
+- src: /images/lesson-visual-library/english-problem-solving/card-2.webp
   width: 1254
   height: 1254
   label: If we optimize for speed, we might introduce more bugs.
   alt: Cuplikan visual english problem solving untuk frasa If we optimize for speed, we might introduce
     more bugs..
-- src: /images/lesson-visual-library/english-problem-solving/card-3.png
+- src: /images/lesson-visual-library/english-problem-solving/card-3.webp
   width: 1254
   height: 1254
   label: On the other hand, the slower option reduces risk.
