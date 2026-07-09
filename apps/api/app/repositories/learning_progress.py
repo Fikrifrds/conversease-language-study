@@ -17,6 +17,31 @@ from app.db.models import LessonProgressModel, UserOnboardingProfileModel
 DEFAULT_COURSE_SLUG = A1_COURSE["course_slug"]
 DEFAULT_LEVEL_CODE = A1_COURSE["level_code"]
 
+CONFIDENCE_TO_LEVEL = {
+    "saya malu bicara": "A1",
+    "saya paham sedikit tapi sulit merespons": "A1",
+    "saya bisa membaca tapi sulit speaking": "A2",
+}
+
+
+def _recommended_level(confidence_level: str) -> tuple[str, str]:
+    """Map onboarding confidence to a recommended level and course slug."""
+    normalized = confidence_level.strip().lower()
+    level_code = CONFIDENCE_TO_LEVEL.get(normalized, DEFAULT_LEVEL_CODE)
+    course = get_course_by_slug(f"english-{level_code.lower()}-{_slug_suffix(level_code)}")
+    course_slug = course["course_slug"] if course else DEFAULT_COURSE_SLUG
+    return course_slug, level_code
+
+
+def _slug_suffix(level_code: str) -> str:
+    return {
+        "A1": "start-simple-conversations",
+        "A2": "everyday-conversations",
+        "B1": "confident-everyday-speaking",
+        "B2": "professional-discussions",
+        "C1": "advanced-fluency",
+    }.get(level_code, "start-simple-conversations")
+
 
 class LearningProgressRepository:
     def __init__(self, db: Session) -> None:
@@ -31,6 +56,7 @@ class LearningProgressRepository:
     ) -> UserOnboardingProfileModel:
         now = datetime.utcnow()
         profile = self.db.get(UserOnboardingProfileModel, user_id)
+        rec_slug, rec_level = _recommended_level(confidence_level)
 
         if profile is None:
             profile = UserOnboardingProfileModel(
@@ -38,8 +64,8 @@ class LearningProgressRepository:
                 primary_goal=primary_goal,
                 confidence_level=confidence_level,
                 daily_target_minutes=daily_target_minutes,
-                recommended_course_slug=DEFAULT_COURSE_SLUG,
-                recommended_level_code=DEFAULT_LEVEL_CODE,
+                recommended_course_slug=rec_slug,
+                recommended_level_code=rec_level,
                 completed=True,
                 created_at=now,
                 updated_at=now,
@@ -49,8 +75,8 @@ class LearningProgressRepository:
             profile.primary_goal = primary_goal
             profile.confidence_level = confidence_level
             profile.daily_target_minutes = daily_target_minutes
-            profile.recommended_course_slug = DEFAULT_COURSE_SLUG
-            profile.recommended_level_code = DEFAULT_LEVEL_CODE
+            profile.recommended_course_slug = rec_slug
+            profile.recommended_level_code = rec_level
             profile.completed = True
             profile.updated_at = now
 

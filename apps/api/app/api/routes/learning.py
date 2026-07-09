@@ -497,7 +497,7 @@ async def list_my_level_test_attempts(
 
 @router.get("/admin/level-test-attempts")
 async def list_admin_level_test_attempts(
-    level_code: Optional[str] = Query(default="A1", max_length=16),
+    level_code: Optional[str] = Query(default=None, max_length=16),
     status: Optional[str] = Query(default=None, max_length=32),
     limit: int = Query(default=50, ge=1, le=100),
     _: AdminActor = Depends(require_admin_api_key),

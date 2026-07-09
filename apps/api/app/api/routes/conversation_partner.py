@@ -20,6 +20,7 @@ from app.domain.conversation_partner import (
 from app.domain.users import User
 from app.repositories.billing import BillingRepository, InsufficientMinutesError
 from app.repositories.conversation_partner import ConversationPartnerRepository
+from app.repositories.learning_progress import LearningProgressRepository
 from app.services.audio_generation import synthesize_partner_reply_audio
 from app.services.conversation_partner_chat import (
     generate_partner_reply,
@@ -57,9 +58,16 @@ def get_repository(db: Session = Depends(get_db)) -> ConversationPartnerReposito
 
 @router.get("/conversation-partner/topics")
 async def list_partner_topics(
-    level_code: str = DEFAULT_LEVEL,
+    level_code: Optional[str] = None,
     current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
 ) -> dict:
+    if level_code is None:
+        repo = LearningProgressRepository(db)
+        course_slug = repo.current_course_slug(current_user.id)
+        from app.data.curriculum import get_course_by_slug
+        course = get_course_by_slug(course_slug)
+        level_code = (course or {}).get("level_code", DEFAULT_LEVEL)
     topics = topics_for_level(level_code)
     return {"data": [topic_payload(topic) for topic in topics]}
 

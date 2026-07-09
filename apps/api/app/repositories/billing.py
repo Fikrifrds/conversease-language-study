@@ -604,12 +604,13 @@ class BillingRepository:
 
         monthly_minutes = int(plan["monthly_minutes"])
         if monthly_minutes:
+            total_minutes = monthly_minutes * duration_months
             self._add_minute_entry(
                 user_id=user_id,
-                amount_minutes=monthly_minutes,
+                amount_minutes=total_minutes,
                 source=MinuteSource.SUBSCRIPTION_GRANT,
                 balance_type=BalanceType.SUBSCRIPTION,
-                expires_at=now + timedelta(days=30),
+                expires_at=now + timedelta(days=max(duration_months, 1) * 30),
                 created_at=now,
             )
 

@@ -62,11 +62,12 @@ async def create_conversation_session(
             )
 
     try:
+        resolved_level = (lesson or {}).get("level_code") or payload.level_code
         session = repository.create_session(
             demo_user_id=current_user.id,
             user_id=current_user.id,
             language_code=payload.language_code,
-            level_code=payload.level_code,
+            level_code=resolved_level,
             mode=payload.mode,
             scenario_key=payload.scenario_key,
             lesson_slug=payload.lesson_slug,

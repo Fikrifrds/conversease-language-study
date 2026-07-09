@@ -11,6 +11,7 @@ from app.domain.conversation_practice import (
     evaluate_answer,
     roleplay_turns_for_lesson,
 )
+from app.data.curriculum import get_lesson_or_none
 from app.services.llm import LLMError, get_llm_provider
 
 logger = logging.getLogger(__name__)
@@ -59,8 +60,11 @@ async def generate_conversation_feedback(
     safe_index = min(turn_index, len(turns) - 1)
     target = turns[safe_index]
 
+    lesson = get_lesson_or_none(lesson_slug)
+    level_code = (lesson or {}).get("level_code", "A1")
+
     messages = [
-        ChatMessage(role="system", content=_system_prompt()),
+        ChatMessage(role="system", content=_system_prompt(level_code)),
         ChatMessage(
             role="user",
             content=_user_prompt(
@@ -102,9 +106,19 @@ async def generate_conversation_feedback(
         return keyword_feedback
 
 
-def _system_prompt() -> str:
+LEVEL_GUIDANCE = {
+    "A1": "The learner is an A1 beginner. Use very simple vocabulary and short sentences. Focus on basic communication.",
+    "A2": "The learner is at A2 elementary level. They can handle everyday conversations. Encourage simple past tense and connected ideas.",
+    "B1": "The learner is at B1 intermediate level. They can express opinions and tell stories. Expect some complexity but allow errors.",
+    "B2": "The learner is at B2 upper-intermediate level. They can discuss professional topics. Evaluate fluency, coherence, and nuance.",
+    "C1": "The learner is at C1 advanced level. They can handle complex discussions. Evaluate precision, register, and sophisticated vocabulary.",
+}
+
+
+def _system_prompt(level_code: str = "A1") -> str:
+    guidance = LEVEL_GUIDANCE.get(level_code.upper(), LEVEL_GUIDANCE["A1"])
     return (
-        "You are an English conversation coach for Indonesian A1 beginners. "
+        f"You are an English conversation coach for an Indonesian learner. {guidance} "
         "Give short, encouraging, accurate feedback. "
         "If the learner's answer does not answer the coach question (e.g. they say 'No.'), say so clearly and provide a correct short answer. "
         "Write better_version in natural English. "
