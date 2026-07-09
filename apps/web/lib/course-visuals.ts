@@ -30,8 +30,8 @@ type CourseVisual = {
   alt: string;
 };
 
-const HERO_WIDTH = 1672;
-const HERO_HEIGHT = 941;
+const HERO_WIDTH = 1200;
+const HERO_HEIGHT = 676;
 const CARD_SIZE = 1254;
 
 const COURSE_VISUAL_SETS: Record<string, VisualSpec[]> = {
@@ -379,7 +379,7 @@ function preferredGenderForCourse(course: CourseRef): "female" | "male" {
 
 function visualFromSpec([scene, asset]: VisualSpec, purpose: string): CourseVisual {
   const isHero = asset === "hero";
-  const filename = isHero ? "hero.png" : `${asset}.png`;
+  const filename = isHero ? "hero.webp" : `${asset}.webp`;
   const sceneLabel = scene.replace("-", " ");
   return {
     src: `/images/lesson-visual-library/${scene}/${filename}`,
@@ -390,7 +390,7 @@ function visualFromSpec([scene, asset]: VisualSpec, purpose: string): CourseVisu
 }
 
 function cardVisualsForHero(hero: CourseVisual): CourseVisual[] {
-  const basePath = hero.src.replace(/\/hero\.png$/, "");
+  const basePath = hero.src.replace(/\/hero\.webp$/, "");
   if (basePath === hero.src) {
     return [];
   }

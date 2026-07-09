@@ -33,15 +33,15 @@
 - Persistent database-backed flows:
   - Google OAuth login with one-time callback session token
   - Email/password auth with email verification and reset password tokens
-  - Authenticated Conversation Coach sessions with lesson-specific A1 roleplay scripts
-  - Onboarding profile
-  - Lesson progress
-  - Subscription access
+  - Authenticated Conversation Coach sessions with lesson-specific roleplay scripts (A1-C1)
+  - Onboarding profile with confidence-to-level mapping
+  - Lesson progress with dynamic level detection
+  - Subscription access (A1 free, A2-C1 Pro)
   - Manual-transfer payment order records with unique code confirmation and admin approval UI
-  - Conversation Coach minute ledger
-  - A1 final test attempts, submitted reports, and admin-reviewed official reports
-- Full A1 curriculum (40 published lessons across 8 units) loaded from `content/curriculum` YAML files; A2-C1 curriculum text complete but unpublished (no audio yet).
-- Real Exam system: exam templates/sections/items/sessions/responses/results/review-queue tables, exam runner endpoints, automatic objective scoring (MCQ, fill-blank, matching) with weighted section results on submit, admin review queue endpoints for speaking/writing scoring, and A1 seed script with 32 PRD-aligned items (`apps/api/scripts/seed_a1_exam.py`).
+  - Conversation Coach minute ledger (900 minutes for Pro 3-month plan)
+  - Level test attempts for all levels A1-C1, submitted reports, and admin-reviewed official reports
+- Full English curriculum A1-C1 (200 published lessons across 40 units) loaded from `content/curriculum` YAML files. All lessons are audio-ready and published in production tracker.
+- Real Exam system: exam templates/sections/items/sessions/responses/results/review-queue tables, exam runner endpoints, automatic objective scoring (MCQ, fill-blank, matching) with weighted section results on submit, admin review queue endpoints for speaking/writing scoring. Seed scripts: `apps/api/scripts/seed_a1_exam.py` (A1, 32 items) and `apps/api/scripts/seed_all_exams.py` (A2-C1, 20-23 items each).
 - Published A1 lessons include listening scripts, transcript translations, conversation goals, grammar notes, pronunciation drills, reading support, writing support, quizzes, roleplay configs, and production tracker rows for release auditing.
 - Published A1 final conversation test with weighted skill sections, task prompts, readiness preview scoring, persisted submitted reports, and admin manual review for beta official scores.
 - Curriculum release validation via `scripts/validate_curriculum.py`, including published lesson support files and `content/production_tracker.csv`.
