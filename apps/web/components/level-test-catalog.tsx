@@ -6,8 +6,8 @@ import { ArrowRight, Clock, Loader2, ShieldCheck } from "lucide-react";
 import { CEFR_LEVELS } from "@conversease/shared";
 import { listExamTemplatesByLevel, type ExamTemplateSummary } from "@/lib/learning-api";
 
-// Only A1 has a published, graded exam today. The rest render as coming-soon.
-const AVAILABLE_EXAM_LEVELS = new Set(["A1"]);
+// All CEFR levels have published, graded exams.
+const AVAILABLE_EXAM_LEVELS = new Set(["A1", "A2", "B1", "B2", "C1"]);
 
 export function LevelTestCatalog() {
   const [templatesByLevel, setTemplatesByLevel] = useState<Record<string, ExamTemplateSummary | null>>({});

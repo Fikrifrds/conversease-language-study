@@ -13,7 +13,7 @@ export default function LevelTestsPage() {
           <h1 className="mt-2 text-3xl font-semibold sm:text-4xl">Exam English</h1>
           <p className="mt-3 leading-7 text-ink/70">
             Exam resmi menilai listening, reading, grammar, speaking, dan writing dengan bobot per
-            section. Saat ini exam A1 sudah tersedia; level berikutnya menyusul.
+            section. Exam tersedia untuk semua level A1 sampai C1.
           </p>
         </div>
 

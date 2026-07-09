@@ -2,9 +2,8 @@ import Link from "next/link";
 import { AppShell } from "@/components/app-shell";
 import { RealExamPanel } from "@/components/real-exam-panel";
 
-// Only A1 has a published, graded exam today. Other levels render a
-// coming-soon notice instead of an empty exam runner.
-const AVAILABLE_EXAM_LEVELS = new Set(["A1"]);
+// All CEFR levels have published, graded exams.
+const AVAILABLE_EXAM_LEVELS = new Set(["A1", "A2", "B1", "B2", "C1"]);
 
 export default function LevelTestPage({ params }: { params: { params?: string[] } }) {
   const segments = params.params ?? [];
