@@ -396,7 +396,7 @@ function cardVisualsForHero(hero: CourseVisual): CourseVisual[] {
   }
 
   return [1, 2, 3].map((index) => ({
-    src: `${basePath}/card-${index}.png`,
+    src: `${basePath}/card-${index}.webp`,
     width: CARD_SIZE,
     height: CARD_SIZE,
     alt: hero.alt

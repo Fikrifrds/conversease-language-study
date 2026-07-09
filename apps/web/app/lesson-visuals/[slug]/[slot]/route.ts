@@ -85,7 +85,7 @@ async function readFallback(request: Request) {
   if (
     !fallback ||
     !fallback.startsWith("/images/") ||
-    !fallback.toLowerCase().endsWith(".png") ||
+    !fallback.toLowerCase().endsWith(".webp") ||
     fallback.includes("\\") ||
     fallback.includes("\0")
   ) {
