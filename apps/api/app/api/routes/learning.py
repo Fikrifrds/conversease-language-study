@@ -358,7 +358,9 @@ async def get_my_learning_progress(
     current_user: User = Depends(get_current_user),
     db: Session = Depends(get_db),
 ) -> dict:
-    summary = LearningProgressRepository(db).summary(current_user.id)
+    repo = LearningProgressRepository(db)
+    course_slug = repo.current_course_slug(current_user.id)
+    summary = repo.summary(current_user.id, course_slug=course_slug)
     onboarding = summary["onboarding"]
     return {
         "data": {

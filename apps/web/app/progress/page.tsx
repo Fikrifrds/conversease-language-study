@@ -47,9 +47,9 @@ export default function ProgressPage() {
               <CheckCircle2 className="h-5 w-5 text-leaf" aria-hidden="true" />
               <h2 className="mt-4 font-semibold">Rencana Review</h2>
               <div className="mt-3 space-y-3 text-sm text-ink/70">
-                <p>Ulangi Unit 1 Lesson 1.</p>
-                <p>Latih roleplay greeting selama 10 menit.</p>
-                <p>Simpan 5 useful phrases.</p>
+                <p>Ulangi lesson terakhir yang belum selesai.</p>
+                <p>Latih roleplay selama 10 menit.</p>
+                <p>Simpan 5 useful phrases baru.</p>
               </div>
             </section>
           </aside>

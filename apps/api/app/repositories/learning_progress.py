@@ -177,6 +177,23 @@ class LearningProgressRepository:
             "lessons": [lesson_summary(lesson, progress_by_lesson) for lesson in lessons],
         }
 
+    def current_course_slug(self, user_id: str) -> str:
+        """Determine the user's current course from onboarding or most recent progress."""
+        profile = self.get_onboarding(user_id)
+        if profile and profile.recommended_course_slug:
+            return profile.recommended_course_slug
+
+        most_recent = self.db.execute(
+            select(LessonProgressModel)
+            .where(LessonProgressModel.user_id == user_id)
+            .order_by(LessonProgressModel.updated_at.desc())
+            .limit(1)
+        ).scalar_one_or_none()
+        if most_recent and most_recent.course_slug:
+            return most_recent.course_slug
+
+        return DEFAULT_COURSE_SLUG
+
     def completed_lesson_slugs(self, user_id: str) -> set[str]:
         return {
             progress.lesson_slug

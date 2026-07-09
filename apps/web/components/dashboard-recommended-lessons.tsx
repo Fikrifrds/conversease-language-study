@@ -18,6 +18,7 @@ function statusLabel(status: LearningLessonSummary["progressStatus"]) {
 
 export function DashboardRecommendedLessons() {
   const [lessons, setLessons] = useState<LearningLessonSummary[] | null>(null);
+  const [levelCode, setLevelCode] = useState("A1");
 
   useEffect(() => {
     let ignore = false;
@@ -28,6 +29,9 @@ export function DashboardRecommendedLessons() {
 
         if (!ignore) {
           setLessons(summary.lessons);
+          if (summary.course?.levelCode) {
+            setLevelCode(summary.course.levelCode);
+          }
         }
       } catch {
         if (!ignore) {
@@ -58,9 +62,9 @@ export function DashboardRecommendedLessons() {
         <p className="mt-4 text-sm leading-6 text-ink/60">Rekomendasi lesson sedang dimuat.</p>
       ) : recommended.length === 0 ? (
         <div className="mt-4 rounded-lg bg-mint p-4 text-sm leading-6 text-ink/70">
-          Semua lesson aktif sudah selesai. Lanjut ke A1 Test untuk evaluasi level.
-          <Link href="/level-test/A1" className="focus-ring mt-3 inline-flex items-center gap-2 font-semibold text-leaf hover:text-ink">
-            Mulai A1 Test
+          Semua lesson aktif sudah selesai. Lanjut ke {levelCode} Test untuk evaluasi level.
+          <Link href={`/level-test/${levelCode}`} className="focus-ring mt-3 inline-flex items-center gap-2 font-semibold text-leaf hover:text-ink">
+            Mulai {levelCode} Test
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
           </Link>
         </div>

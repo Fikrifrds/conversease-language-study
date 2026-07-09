@@ -2,6 +2,10 @@
 
 Behavioral guidelines to reduce common LLM coding mistakes. Merge with project-specific instructions as needed.
 
+## Confidential Files
+
+Never read, edit, create, or reference confidential/secret files including but not limited to `.env`, `.env.local`, `.env.*`, `*.pem`, `*.key`, `credentials.*`, `secrets.*`, and any file containing API keys, tokens, or passwords.
+
 **Tradeoff:** These guidelines bias toward caution over speed. For trivial tasks, use judgment.
 
 > **Creating or regenerating learning content (dialogues, lessons, audio)?**

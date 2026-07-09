@@ -44,7 +44,7 @@ export function LearningProgressReport() {
       <div className="mt-6">
         <div className="mb-2 flex items-center justify-between text-sm">
           <span className="min-w-0 flex-1 truncate pr-3 font-medium">
-            {summary?.course.title ?? "Start Simple Conversations"}
+            {summary?.course.title ?? "Memuat\u2026"}
           </span>
           <span className="shrink-0">{completionPercent}%</span>
         </div>

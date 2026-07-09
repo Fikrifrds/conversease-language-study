@@ -62,7 +62,7 @@ export function DashboardLearningProgress() {
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-sm font-semibold text-coral">
-              {lessonPlacementLabel(currentMission.slug) ?? "A1 Unit 1"}
+              {lessonPlacementLabel(currentMission.slug) ?? `${summary?.course.levelCode ?? "A1"} Unit 1`}
             </p>
             <h2 className="mt-2 text-2xl font-semibold">{currentMission.title}</h2>
             {primaryGoal ? (
