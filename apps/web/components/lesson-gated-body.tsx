@@ -3,12 +3,12 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BookOpen, Headphones, Loader2, Lock, Mic, RotateCcw, Send, Sparkles } from "lucide-react";
+import { BookOpen, Loader2, Lock, Mic, RotateCcw, Send, Sparkles } from "lucide-react";
 import { productRoutes } from "@conversease/shared";
 import { ConversationCheck } from "@/components/conversation-check";
 import { ConversationCoachPractice } from "@/components/conversation-coach-practice";
 import { AdminRegenerableLessonImage } from "@/components/admin-regenerable-lesson-image";
-import { LessonAudioPlayer } from "@/components/lesson-audio-player";
+import { ListeningPractice } from "@/components/listening-practice";
 import { PronunciationRepeatPractice } from "@/components/pronunciation-repeat-practice";
 import { SimpleMarkdown } from "@/components/simple-markdown";
 import { SpeakClearlyPractice } from "@/components/speak-clearly-practice";
@@ -60,6 +60,7 @@ type GateState =
  */
 export function LessonGatedBody({ slug }: { slug: string }) {
   const [state, setState] = useState<GateState>({ status: "loading" });
+  const [attempt, setAttempt] = useState(0);
 
   useEffect(() => {
     let ignore = false;
@@ -87,7 +88,7 @@ export function LessonGatedBody({ slug }: { slug: string }) {
     return () => {
       ignore = true;
     };
-  }, [slug]);
+  }, [slug, attempt]);
 
   if (state.status === "loading") {
     return (
@@ -100,8 +101,21 @@ export function LessonGatedBody({ slug }: { slug: string }) {
 
   if (state.status === "error") {
     return (
-      <div className="mt-8 rounded-lg border border-ink/10 bg-white p-6 text-center text-sm text-ink/60">
-        Materi lesson gagal dimuat. Coba muat ulang halaman.
+      <div className="mt-8 rounded-lg border border-leaf/20 bg-mint p-6 text-center">
+        <p className="text-sm leading-6 text-ink/70">
+          Preview lesson tetap tersedia. Materi lengkap sedang belum tersambung.
+        </p>
+        <button
+          type="button"
+          onClick={() => {
+            setState({ status: "loading" });
+            setAttempt((value) => value + 1);
+          }}
+          className="focus-ring mt-4 inline-flex items-center gap-2 rounded-lg bg-ink px-4 py-2.5 text-sm font-semibold text-white hover:bg-leaf"
+        >
+          <RotateCcw className="h-4 w-4" aria-hidden="true" />
+          Coba lagi
+        </button>
       </div>
     );
   }
@@ -175,25 +189,9 @@ function UnlockedBody({ lesson }: { lesson: LessonContent }) {
         <p className="mt-2 leading-7 text-ink/70">{lesson.setup}</p>
       </section>
 
+      <ListeningPractice lessonSlug={lesson.slug} dialogue={lesson.dialogue} translation={lesson.translation} />
+
       <section className="mt-8">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
-            <Headphones className="h-5 w-5 text-leaf" aria-hidden="true" />
-            <h2 className="text-xl font-semibold">{copy.listenToDialogue}</h2>
-          </div>
-          <LessonAudioPlayer lessonSlug={lesson.slug} />
-        </div>
-        <div className="mt-4 space-y-3">
-          {lesson.dialogue.map((line, index) => (
-            <div key={`${line.speaker}-${index}`} className="grid gap-2 rounded-lg bg-paper p-4 lg:grid-cols-[120px_1fr_1fr]">
-              <span className="font-semibold text-leaf">{line.speaker}</span>
-              <p dir={isArabic ? "rtl" : "auto"} className={isArabic ? "text-right leading-8" : undefined}>
-                {line.text}
-              </p>
-              <p className="text-ink/60">{lesson.translation[index]}</p>
-            </div>
-          ))}
-        </div>
         {lesson.visuals?.cards?.length ? (
           <div className="mt-4 grid gap-3 md:grid-cols-3">
             {lesson.visuals.cards.map((visual, index) => (

@@ -27,6 +27,9 @@ test("register page renders", async ({ page }) => {
 test("pricing page shows IDR plan prices", async ({ page }) => {
   await page.goto("/pricing");
   await expect(page.getByText(/Rp/).first()).toBeVisible();
+  await expect(page.getByText("Pro 1 Month", { exact: true })).toBeVisible();
+  await expect(page.getByText("Pro 3 Months", { exact: true })).toBeVisible();
+  await expect(page.getByText("Pro 12 Months", { exact: true })).toBeVisible();
 });
 
 test("protected dashboard redirects unauthenticated users to login", async ({ page }) => {

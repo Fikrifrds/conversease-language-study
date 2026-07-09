@@ -7,7 +7,7 @@ from datetime import datetime
 from typing import Optional
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
@@ -66,8 +66,7 @@ class ExamTemplateResponse(BaseModel):
     created_at: datetime
     updated_at: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class ExamSectionCreate(BaseModel):
@@ -93,8 +92,7 @@ class ExamSectionResponse(BaseModel):
     score_weight_percent: int
     item_types_allowed: list[str]
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class ExamItemCreate(BaseModel):
@@ -127,8 +125,7 @@ class ExamItemResponse(BaseModel):
     options_json: Optional[dict]
     status: str
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class ExamSessionCreate(BaseModel):
@@ -149,8 +146,7 @@ class ExamSessionResponse(BaseModel):
     submitted_at: Optional[datetime]
     created_at: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class ItemResponseCreate(BaseModel):
@@ -180,8 +176,7 @@ class ItemResponseResponse(BaseModel):
     is_correct: Optional[bool]
     created_at: datetime
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class SubmitExamResponse(BaseModel):
@@ -209,8 +204,7 @@ class ExamResultResponse(BaseModel):
     recommendations_json: list
     published_at: Optional[datetime]
 
-    class Config:
-        from_attributes = True
+    model_config = ConfigDict(from_attributes=True)
 
 
 class ReviewQueueEntryResponse(BaseModel):

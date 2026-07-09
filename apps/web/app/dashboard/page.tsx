@@ -6,6 +6,7 @@ import { DashboardLearningProgress } from "@/components/dashboard-learning-progr
 import { DashboardReviewToday } from "@/components/dashboard-review-today";
 import { DashboardRecommendedLessons } from "@/components/dashboard-recommended-lessons";
 import { PracticeProgressSummary } from "@/components/practice-progress-summary";
+import { SpeakingSkillSummary } from "@/components/speaking-skill-summary";
 import { noindexMetadata } from "@/lib/seo";
 
 export const metadata = noindexMetadata("Dashboard");
@@ -25,6 +26,7 @@ export default function DashboardPage() {
         </div>
 
         <DashboardLearningProgress />
+        <SpeakingSkillSummary />
 
         <div className="mt-5 grid items-start gap-5 lg:grid-cols-3">
           <PracticeProgressSummary />

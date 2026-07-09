@@ -197,9 +197,10 @@ export function ConversationCoachPractice({
       totalTurns,
       completed,
       lastScore: score,
+      lastSkillScores: feedback?.scores,
       updatedAt: new Date().toISOString()
     }),
-    [completed, completedTurns, score, sessionId, totalTurns]
+    [completed, completedTurns, feedback?.scores, score, sessionId, totalTurns]
   );
 
   useEffect(() => {
@@ -566,13 +567,17 @@ export function ConversationCoachPractice({
         </div>
 
         <form onSubmit={handleSubmit} className="border-t border-ink/10 p-5">
+          <div className="mb-3 flex items-start gap-2 rounded-lg bg-mint px-3 py-2 text-sm leading-6 text-ink/70">
+            <Mic className="mt-0.5 h-4 w-4 shrink-0 text-leaf" aria-hidden="true" />
+            <p><span className="font-semibold text-ink">Mode utama: jawab dengan suara.</span> Menulis tersedia bila mikrofon belum bisa digunakan.</p>
+          </div>
           <textarea
             value={answer}
             onChange={(event) => setAnswer(event.target.value)}
             disabled={completed || isSubmitting || isRecording || isProcessingRecording}
             rows={compact ? 2 : 3}
             className="focus-ring min-h-24 w-full resize-none rounded-lg border border-ink/10 bg-paper px-4 py-3 text-sm leading-6 text-ink placeholder:text-ink/40 disabled:opacity-60"
-            placeholder={completed ? "Roleplay selesai" : "Tulis jawabanmu dalam bahasa Inggris..."}
+            placeholder={completed ? "Roleplay selesai" : "Atau tulis jawabanmu dalam bahasa Inggris..."}
           />
           <div className="mt-3 grid gap-2 sm:flex sm:flex-wrap sm:items-center">
             <button
@@ -588,7 +593,7 @@ export function ConversationCoachPractice({
               ) : (
                 <Mic className="h-4 w-4" aria-hidden="true" />
               )}
-              {isProcessingRecording ? "Memproses" : isRecording ? "Berhenti" : "Rekam"}
+              {isProcessingRecording ? "Memproses" : isRecording ? "Berhenti" : "Jawab dengan suara"}
             </button>
             {isRecording ? <VoiceWaveform level={recorder.micLevel} label="" /> : null}
             <button

@@ -6,6 +6,11 @@ export type SavedPractice = {
   totalTurns: number;
   completed: boolean;
   lastScore: number;
+  lastSkillScores?: {
+    speaking: number;
+    grammar: number;
+    fluency: number;
+  };
   updatedAt: string;
 };
 
@@ -59,6 +64,12 @@ export function readSavedPractice(baseKey = defaultPracticeStorageKey): SavedPra
       totalTurns: value.totalTurns,
       completed: value.completed,
       lastScore: value.lastScore,
+      lastSkillScores:
+        typeof value.lastSkillScores?.speaking === "number" &&
+        typeof value.lastSkillScores?.grammar === "number" &&
+        typeof value.lastSkillScores?.fluency === "number"
+          ? value.lastSkillScores
+          : undefined,
       updatedAt: value.updatedAt
     };
   } catch {

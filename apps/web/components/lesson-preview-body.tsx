@@ -100,7 +100,7 @@ export function LessonPreviewBody({ slug, title, conversationGoal, language }: L
         </h2>
         <p className="mt-2 text-white/70">
           {isEnglish
-            ? "Join thousands of Indonesian learners improving their English through conversation-first practice."
+            ? "Bangun kebiasaan speaking dengan latihan English berbasis percakapan."
             : "Bergabung dengan ribuan pelajar Indonesia yang meningkatkan bahasa Inggris mereka melalui latihan berbasis percakapan."}
         </p>
         <Link

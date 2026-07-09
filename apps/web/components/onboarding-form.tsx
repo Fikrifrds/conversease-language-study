@@ -26,6 +26,24 @@ const targetOptions = [
   { label: "30 menit/hari", minutes: 30 }
 ];
 
+const recommendationByConfidence: Record<string, { level: string; title: string; mission: string }> = {
+  [confidenceOptions[0]]: {
+    level: "A1",
+    title: "A1 - Start Simple Conversations",
+    mission: "Misi Hari Ini: Greeting & Introducing Yourself"
+  },
+  [confidenceOptions[1]]: {
+    level: "A1",
+    title: "A1 - Start Simple Conversations",
+    mission: "Misi Hari Ini: Greeting & Introducing Yourself"
+  },
+  [confidenceOptions[2]]: {
+    level: "A2",
+    title: "A2 - Everyday Conversations",
+    mission: "Misi Hari Ini: Everyday Conversation Practice"
+  }
+};
+
 export function OnboardingForm() {
   const router = useRouter();
   const [primaryGoal, setPrimaryGoal] = useState(goalOptions[0]);
@@ -34,6 +52,7 @@ export function OnboardingForm() {
   const [isLoading, setIsLoading] = useState(true);
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState("");
+  const recommendation = recommendationByConfidence[confidenceLevel] ?? recommendationByConfidence[confidenceOptions[0]];
 
   useEffect(() => {
     let ignore = false;
@@ -110,9 +129,10 @@ export function OnboardingForm() {
 
       <section className="rounded-lg bg-ink p-5 text-white">
         <p className="text-sm text-white/70">Jalur Rekomendasi</p>
-        <h2 className="mt-2 text-2xl font-semibold">A1 - Start Simple Conversations</h2>
-        <p className="mt-2 text-white/75">
-          Misi Hari Ini: Greeting &amp; Introducing Yourself
+        <h2 className="mt-2 text-2xl font-semibold">{recommendation.title}</h2>
+        <p className="mt-2 text-white/75">{recommendation.mission}</p>
+        <p className="mt-2 text-sm text-white/55">
+          Rekomendasi berdasarkan jawaban confidence-mu: mulai dari {recommendation.level}.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <button

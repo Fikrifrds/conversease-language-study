@@ -155,16 +155,15 @@ export default function PricingPage() {
     setError("");
   }
 
-  const proPlan = plans.find((plan) => plan.key === "pro_3_months")!;
-  const proItem: CheckoutItem = {
-    key: proPlan.key,
-    name: proPlan.name,
-    price: proPlan.price,
-    cadence: proPlan.cadence,
-    access: proPlan.access,
+  const proPlans = plans.filter((plan) => plan.key.startsWith("pro_"));
+  const checkoutItems: CheckoutItem[] = proPlans.map((plan) => ({
+    key: plan.key,
+    name: plan.name,
+    price: plan.price,
+    cadence: plan.cadence,
+    access: plan.access,
     paymentKind: "subscription"
-  };
-  const preparing = activePackage === proPlan.key;
+  }));
 
   return (
     <AppShell>
@@ -177,41 +176,46 @@ export default function PricingPage() {
           </p>
         </div>
 
-        <section className="mt-8 overflow-hidden rounded-2xl border border-leaf/25 bg-white shadow-sm">
-          <div className="bg-mint px-6 py-7 text-center sm:px-8">
-            <span className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold text-leaf">
-              Best value
-            </span>
-            <p className="mt-4 text-5xl font-semibold text-ink">{proPlan.price}</p>
-            <p className="mt-1 text-sm text-ink/60">untuk {proPlan.cadence} akses penuh</p>
-          </div>
-
-          <div className="px-6 py-7 sm:px-8">
-            <ul className="space-y-3">
-              {proPlan.features.map((feature) => (
-                <li key={feature} className="flex gap-3 text-sm text-ink/80">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-            <p className="mt-5 text-xs leading-5 text-ink/55">{proPlan.coachAllowance}</p>
-
-            <button
-              type="button"
-              onClick={() => handleChoose(proItem)}
-              disabled={preparing}
-              className="focus-ring mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
-            >
-              <CreditCard className="h-4 w-4" aria-hidden="true" />
-              {preparing ? "Menyiapkan..." : "Pilih Paket Ini"}
-            </button>
-
-            <p className="mt-4 text-center text-xs text-ink/55">
-              Pembayaran via transfer manual dengan nominal unik — diverifikasi admin dalam waktu singkat.
-            </p>
-          </div>
-        </section>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {proPlans.map((plan, index) => {
+            const item = checkoutItems[index];
+            const preparing = activePackage === item.key;
+            const highlighted = plan.key === "pro_3_months";
+            return (
+              <section key={plan.key} className={`flex flex-col overflow-hidden rounded-2xl border bg-white shadow-sm ${highlighted ? "border-leaf/40 ring-1 ring-leaf/20" : "border-ink/10"}`}>
+                <div className={`px-5 py-6 text-center ${highlighted ? "bg-mint" : "bg-paper"}`}>
+                  {highlighted ? <span className="inline-flex rounded-full bg-white px-3 py-1 text-xs font-semibold text-leaf">Best value</span> : null}
+                  <h2 className="mt-3 text-xl font-semibold">{plan.name}</h2>
+                  <p className="mt-4 text-4xl font-semibold text-ink">{plan.price}</p>
+                  <p className="mt-1 text-sm text-ink/60">untuk {plan.cadence}</p>
+                </div>
+                <div className="flex flex-1 flex-col px-5 py-6">
+                  <ul className="space-y-3">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex gap-3 text-sm text-ink/80">
+                        <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-leaf" aria-hidden="true" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-5 text-xs leading-5 text-ink/55">{plan.coachAllowance}</p>
+                  <button
+                    type="button"
+                    onClick={() => handleChoose(item)}
+                    disabled={preparing}
+                    className="focus-ring mt-auto inline-flex w-full items-center justify-center gap-2 rounded-xl bg-ink px-4 py-3.5 text-sm font-semibold text-white transition hover:bg-leaf disabled:cursor-not-allowed disabled:opacity-60"
+                  >
+                    <CreditCard className="h-4 w-4" aria-hidden="true" />
+                    {preparing ? "Menyiapkan..." : "Pilih Paket"}
+                  </button>
+                </div>
+              </section>
+            );
+          })}
+        </div>
+        <p className="mt-5 text-center text-xs text-ink/55">
+          Pembayaran via transfer manual dengan nominal unik — diverifikasi admin dalam waktu singkat.
+        </p>
 
         <p className="mt-6 text-center text-sm text-ink/55">
           Belum siap upgrade?{" "}

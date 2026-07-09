@@ -73,6 +73,7 @@ export function PracticeProgressSummary({
           totalTurns: apiPractice.totalTurns,
           completed: apiPractice.completed,
           lastScore: apiPractice.lastScore,
+          lastSkillScores: local.practice.lastSkillScores,
           updatedAt: apiPractice.updatedAt
         };
         saveSavedPractice(nextPractice, practiceStorageKeyForLesson(local.lessonSlug));
