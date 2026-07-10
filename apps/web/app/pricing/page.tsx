@@ -237,7 +237,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid items-stretch gap-5 pt-2 md:grid-cols-3 md:gap-4 lg:gap-6">
+          <div className="mt-12 grid items-stretch gap-5 md:grid-cols-3 md:gap-4 lg:gap-6">
             {proPlans.map((plan, index) => {
               const item = checkoutItems[index];
               const preparing = activePackage === item.key;
@@ -248,19 +248,19 @@ export default function PricingPage() {
               return (
                 <section
                   key={plan.key}
-                  className={`relative flex flex-col rounded-3xl transition duration-300 ${
+                  className={`relative flex flex-col overflow-hidden rounded-3xl transition duration-300 ${
                     highlighted
                       ? "z-10 border-2 border-leaf bg-white shadow-soft md:-mt-3 md:mb-[-0.75rem] md:scale-[1.03]"
-                      : "border border-ink/10 bg-white/90 shadow-sm hover:-translate-y-1 hover:border-leaf/30 hover:shadow-soft"
+                      : "border border-ink/10 bg-white shadow-sm hover:-translate-y-1 hover:border-leaf/30 hover:shadow-soft"
                   }`}
                 >
                   {highlighted ? (
-                    <div className="absolute inset-x-0 top-0 h-1 rounded-t-3xl bg-gradient-to-r from-leaf via-sun to-leaf" aria-hidden="true" />
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-leaf via-sun to-leaf" aria-hidden="true" />
                   ) : null}
 
                   <div
                     className={`px-6 pb-5 pt-6 text-center ${
-                      highlighted ? "rounded-t-[1.35rem] bg-gradient-to-b from-mint via-mint/80 to-white" : "rounded-t-3xl bg-gradient-to-b from-paper to-white"
+                      highlighted ? "bg-gradient-to-b from-mint via-mint/80 to-white" : "bg-gradient-to-b from-paper to-white"
                     }`}
                   >
                     {plan.badge ? (
