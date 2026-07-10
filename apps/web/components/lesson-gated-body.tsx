@@ -48,6 +48,7 @@ const DEFAULT_LESSON_COPY = {
 
 type GateState =
   | { status: "loading" }
+  | { status: "auth_required" }
   | { status: "locked" }
   | { status: "error" }
   | { status: "unlocked"; lesson: LessonContent };
@@ -75,7 +76,9 @@ export function LessonGatedBody({ slug }: { slug: string }) {
         if (ignore) {
           return;
         }
-        if (error instanceof ApiRequestError && (error.status === 403 || error.status === 401)) {
+        if (error instanceof ApiRequestError && error.status === 401) {
+          setState({ status: "auth_required" });
+        } else if (error instanceof ApiRequestError && error.status === 403) {
           setState({ status: "locked" });
         } else {
           setState({ status: "error" });
@@ -120,11 +123,43 @@ export function LessonGatedBody({ slug }: { slug: string }) {
     );
   }
 
+  if (state.status === "auth_required") {
+    return <LessonAuthGate />;
+  }
+
   if (state.status === "locked") {
     return <LessonPaywall />;
   }
 
   return <UnlockedBody lesson={state.lesson} />;
+}
+
+function LessonAuthGate() {
+  return (
+    <div className="relative mt-8 rounded-lg border border-leaf/20 bg-mint p-6 text-center sm:p-8">
+      <div className="mx-auto grid h-12 w-12 place-items-center rounded-lg bg-white">
+        <Lock className="h-6 w-6 text-leaf" aria-hidden="true" />
+      </div>
+      <h2 className="mt-5 text-2xl font-semibold">Masuk untuk melanjutkan</h2>
+      <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-ink/65">
+        Preview lesson ini gratis. Buat akun atau masuk untuk menyimpan progress dan melihat akses lesson-mu.
+      </p>
+      <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+        <Link
+          href="/register"
+          className="focus-ring inline-flex items-center justify-center rounded-lg bg-leaf px-5 py-3 text-sm font-semibold text-white hover:bg-ink"
+        >
+          Daftar gratis
+        </Link>
+        <Link
+          href="/login"
+          className="focus-ring inline-flex items-center justify-center rounded-lg border border-ink/15 bg-white px-5 py-3 text-sm font-semibold hover:bg-paper"
+        >
+          Masuk
+        </Link>
+      </div>
+    </div>
+  );
 }
 
 function LessonPaywall() {

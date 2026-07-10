@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@conversease/shared";
 import { courses, lessonCatalog } from "@/lib/data";
+import { englishSpeakingPages } from "@/lib/english-speaking-pages";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? SITE_URL;
 
@@ -31,5 +32,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9
     }));
 
-  return [...staticEntries, ...courseEntries, ...lessonEntries];
+  const editorialEntries = englishSpeakingPages.map((page) => ({
+    url: `${siteUrl}/english-speaking/${page.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8
+  }));
+
+  return [...staticEntries, ...courseEntries, ...lessonEntries, ...editorialEntries];
 }

@@ -32,6 +32,16 @@ test("pricing page shows IDR plan prices", async ({ page }) => {
   await expect(page.getByText("Pro 12 Months", { exact: true })).toBeVisible();
 });
 
+test("English speaking editorial page renders its practice path", async ({ page }) => {
+  await page.goto("/english-speaking/introduce-yourself-in-english");
+  await expect(page.getByRole("heading", { name: "How to Introduce Yourself in English" })).toBeVisible();
+  await expect(page.getByText("Speaking challenge", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Buka lesson dan latihan" })).toHaveAttribute(
+    "href",
+    "/lessons/first-conversation-mission"
+  );
+});
+
 test("protected dashboard redirects unauthenticated users to login", async ({ page }) => {
   await page.goto("/dashboard");
   await page.waitForURL(/\/login/, { timeout: 15_000 });
