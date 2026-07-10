@@ -223,9 +223,9 @@ export default function PricingPage() {
 
           <div className="mx-auto mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {[
-              { icon: Zap, label: "Aktif setelah diverifikasi" },
-              { icon: ShieldCheck, label: "Transfer manual aman" },
-              { icon: Star, label: "Track lengkap A1–C1" }
+              { icon: Zap, label: "Aktif cepat setelah diverifikasi" },
+              { icon: Star, label: "Track lengkap A1–C1" },
+              { icon: Sparkles, label: "Feedback percakapan detail" }
             ].map(({ icon: Icon, label }) => (
               <div
                 key={label}
@@ -237,7 +237,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid items-stretch gap-5 md:grid-cols-3 md:gap-4 lg:gap-6">
+          <div className="mt-12 grid items-stretch gap-5 pt-2 md:grid-cols-3 md:gap-4 lg:gap-6">
             {proPlans.map((plan, index) => {
               const item = checkoutItems[index];
               const preparing = activePackage === item.key;
@@ -248,31 +248,35 @@ export default function PricingPage() {
               return (
                 <section
                   key={plan.key}
-                  className={`relative flex flex-col overflow-hidden rounded-3xl transition duration-300 ${
+                  className={`relative flex flex-col rounded-3xl transition duration-300 ${
                     highlighted
                       ? "z-10 border-2 border-leaf bg-white shadow-soft md:-mt-3 md:mb-[-0.75rem] md:scale-[1.03]"
                       : "border border-ink/10 bg-white/90 shadow-sm hover:-translate-y-1 hover:border-leaf/30 hover:shadow-soft"
                   }`}
                 >
                   {highlighted ? (
-                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-leaf via-sun to-leaf" aria-hidden="true" />
+                    <div className="absolute inset-x-0 top-0 h-1 rounded-t-3xl bg-gradient-to-r from-leaf via-sun to-leaf" aria-hidden="true" />
                   ) : null}
 
                   <div
-                    className={`relative px-6 pb-5 pt-7 text-center ${
-                      highlighted ? "bg-gradient-to-b from-mint via-mint/80 to-white" : "bg-gradient-to-b from-paper to-white"
+                    className={`px-6 pb-5 pt-6 text-center ${
+                      highlighted ? "rounded-t-[1.35rem] bg-gradient-to-b from-mint via-mint/80 to-white" : "rounded-t-3xl bg-gradient-to-b from-paper to-white"
                     }`}
                   >
                     {plan.badge ? (
                       <span
-                        className={`absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 inline-flex items-center gap-1 rounded-full px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-wide shadow-sm ${
+                        className={`mb-3 inline-flex items-center gap-1 rounded-full px-3.5 py-1 text-[0.7rem] font-bold uppercase tracking-wide ${
                           highlighted ? "bg-ink text-white" : "bg-sun text-ink"
                         }`}
                       >
                         {highlighted ? <Star className="h-3 w-3 fill-sun text-sun" aria-hidden="true" /> : null}
                         {plan.badge}
                       </span>
-                    ) : null}
+                    ) : (
+                      <span className="mb-3 inline-flex h-6 items-center text-[0.7rem] opacity-0" aria-hidden="true">
+                        —
+                      </span>
+                    )}
 
                     <p className="text-sm font-medium text-ink/50">{plan.cadence}</p>
                     <h2 className="mt-1 text-xl font-semibold tracking-tight">{plan.name}</h2>
@@ -336,23 +340,7 @@ export default function PricingPage() {
             })}
           </div>
 
-          <div className="mx-auto mt-12 max-w-3xl rounded-2xl border border-ink/8 bg-white/70 p-5 shadow-sm backdrop-blur sm:p-6">
-            <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex gap-3">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-mint text-leaf">
-                  <ShieldCheck className="h-5 w-5" aria-hidden="true" />
-                </div>
-                <div>
-                  <p className="text-sm font-semibold text-ink">Pembayaran transfer manual</p>
-                  <p className="mt-0.5 text-sm leading-6 text-ink/60">
-                    Nominal unik tiap order — diverifikasi admin dalam waktu singkat. Akses aktif setelah disetujui.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <p className="mt-8 text-center text-sm text-ink/55">
+          <p className="mt-10 text-center text-sm text-ink/55">
             Belum siap upgrade?{" "}
             <Link href="/register" className="font-semibold text-leaf underline-offset-2 hover:underline">
               Mulai gratis dulu
