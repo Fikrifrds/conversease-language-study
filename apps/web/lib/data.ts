@@ -23,41 +23,73 @@ export const plans = [
     key: "free",
     name: "Free",
     price: "Rp0",
+    priceIdr: 0,
+    months: 0,
     cadence: "Selamanya",
     access: "Akses terbatas",
     coachAllowance: "Termasuk sesi coba Conversation Coach",
     description: "Coba beberapa lesson awal dan feedback dasar sebelum upgrade.",
+    badge: null as string | null,
     features: ["Lesson pilihan", "Conversation Check dasar", "Progress belajar dasar", "Coba praktik speaking"]
   },
   {
     key: "pro_1_month",
     name: "Pro 1 Month",
     price: "Rp49.000",
+    priceIdr: 49_000,
+    months: 1,
     cadence: "1 bulan",
     access: "Pro All Access 1 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Akses penuh English track A1-C1, feedback detail, evaluasi level, dan progress report.",
-    features: ["English track lengkap A1-C1", "Exam resmi per level", "Detailed Conversation Feedback", "Skill report dan progress"]
+    badge: null as string | null,
+    features: [
+      "English track lengkap A1–C1",
+      "Exam resmi per level",
+      "Detailed Conversation Feedback",
+      "Skill report & progress",
+      "Conversation Coach bulanan"
+    ]
   },
   {
     key: "pro_3_months",
     name: "Pro 3 Months",
     price: "Rp129.000",
+    priceIdr: 129_000,
+    months: 3,
     cadence: "3 bulan",
     access: "Pro All Access 3 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Paket lebih hemat untuk menyelesaikan English track dengan ritme belajar rutin.",
-    features: ["English track lengkap A1-C1", "Exam resmi per level", "Detailed Conversation Feedback", "Pengingat renewal"]
+    badge: "Paling populer",
+    features: [
+      "English track lengkap A1–C1",
+      "Exam resmi per level",
+      "Detailed Conversation Feedback",
+      "Skill report & progress",
+      "Conversation Coach bulanan",
+      "Hemat vs bayar bulanan"
+    ]
   },
   {
     key: "pro_12_months",
     name: "Pro 12 Months",
     price: "Rp399.000",
+    priceIdr: 399_000,
+    months: 12,
     cadence: "12 bulan",
     access: "Pro All Access 12 bulan",
     coachAllowance: "Termasuk kuota pendamping Conversation Coach bulanan",
     description: "Best value untuk belajar English konsisten, evaluasi level, dan review plan.",
-    features: ["English track lengkap A1-C1", "Exam resmi per level", "Skill reports", "Review plan personal"]
+    badge: "Paling hemat",
+    features: [
+      "English track lengkap A1–C1",
+      "Exam resmi per level",
+      "Detailed Conversation Feedback",
+      "Skill report & progress",
+      "Conversation Coach bulanan",
+      "Review plan personal"
+    ]
   }
 ];
 
