@@ -194,10 +194,10 @@ export default function PricingPage() {
 
   return (
     <AppShell>
-      <section className="relative overflow-hidden">
+      <section className="relative">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10"
+          className="pointer-events-none absolute inset-0 overflow-hidden"
           style={{
             background:
               "radial-gradient(ellipse 70% 50% at 50% -10%, rgba(249,115,22,0.16), transparent 55%), radial-gradient(ellipse 40% 40% at 90% 20%, rgba(250,204,21,0.12), transparent 50%), radial-gradient(ellipse 35% 35% at 8% 60%, rgba(249,115,22,0.08), transparent 45%)"
@@ -237,7 +237,7 @@ export default function PricingPage() {
             ))}
           </div>
 
-          <div className="mt-12 grid items-stretch gap-5 md:grid-cols-3 md:gap-4 lg:gap-6">
+          <div className="mt-12 grid items-stretch gap-5 rounded-[2rem] bg-paper p-4 md:grid-cols-3 md:gap-4 md:p-5 lg:gap-6">
             {proPlans.map((plan, index) => {
               const item = checkoutItems[index];
               const preparing = activePackage === item.key;
